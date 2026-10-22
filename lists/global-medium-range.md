@@ -5,7 +5,7 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/global-medium-range/)
 
-306 papers (19 ⭐). Newest first.
+306 papers (18 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -17,7 +17,7 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 | 2026-10-02 | [AIGFS v1.1 Development and Performance](https://doi.org/10.25923/ypcz-c273)<br><sub>Linlin Cui, Jun Wang, Jianjun Liu et al. · NOAA Institutional Repository</sub> |  |  |
 | 2026-09-30 | [Sensitivity analysis of fine-tuning GraphCast with adjusted mean squared error using GDAS data: A case study of Hurricane Ian](https://doi.org/10.25923/3whq-ee74)<br><sub>Xiao Luo, Jun Wang, Linlin Cui et al. · NOAA Institutional Repository</sub> |  |  |
 | 2026-09-09 | [Aries: A Proprietary Medium-Range Weather Prediction Model for the Energy Industry](https://arxiv.org/abs/2609.13292)<br><sub>Lukas Hedegaard Morsing, Arian Bakhtiarnia, Jonas Lynge Olesen et al.</sub> |  |  |
-| 2026-09-03 | ⭐ [WeatherNext 3: Increasing resolution and performance of global weather models with raw observations](https://arxiv.org/abs/2609.03582)<br><sub>Stephan Rasp, Boris Babenko, Dominic Masters et al.</sub> |  |  |
+| 2026-09-03 | [WeatherNext 3: Increasing resolution and performance of global weather models with raw observations](https://arxiv.org/abs/2609.03582)<br><sub>Stephan Rasp, Boris Babenko, Dominic Masters et al.</sub> |  |  |
 | 2026-09-02 | ⭐ [Improving global precipitation forecasts with an AI weather model trained on satellite observations](https://arxiv.org/abs/2609.03210)<br><sub>Julian F. Schmitt, Bertrand Delorme, Robert C. King et al.</sub> | California Institute of Technology (Caltech), Google Research, Stanford University |  |
 | 2026-09-01 | [Skill assessment of AI-based weather model in heavy precipitation prediction over South Korea](https://doi.org/10.1007/s00704-026-06536-w)<br><sub>Seong-Ho Hong, Kyeongjoo Park, Dong-Hwi Kim et al. · Theoretical and Applied Climatology</sub> |  |  |
 | 2026-08-27 | [Climate Physics Dynamic Matching](https://arxiv.org/abs/2608.26907)<br><sub>Gurjeet Sangra Singh, Frantzeska Lavda, Alexandros Kalousis</sub> |  |  |
@@ -80,7 +80,7 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 | 2026-03-16 | [AGCD: Agent-Guided Cross-Modal Decoding for Weather Forecasting](https://arxiv.org/abs/2603.15260)<br><sub>Jing Wu, Yang Liu, Lin Zhang et al.</sub> |  |  |
 | 2026-03-15 | [Climavision: Deep Learning for Short-Term Atmospheric Forecasting](https://doi.org/10.26634/jit.15.1.1348)<br><sub>Sai Charani Sannapureddy, Vutukuru Sathya Sai Harshit, Harshita Handa et al. · i-manager s Journal on Information Technology</sub> |  |  |
 | 2026-03-11 | [Improving multi-variable weather forecasting with spatiotemporal feature interaction and large-kernel modeling](https://doi.org/10.1038/s41598-026-42553-5)<br><sub>Yuankang Ye, Jiaen Fei, Feng Gao · Scientific Reports</sub> |  |  |
-| 2026-03-11 | ⭐ [Improving renewable energy forecasting with FuXi-Energy](https://doi.org/10.1016/j.apenergy.2026.127657)<br><sub>Xiaohui Zhong, Lei Chen, Hao Li et al. · Applied Energy</sub> | Fudan University (FuXi) |  |
+| 2026-03-11 | [Improving renewable energy forecasting with FuXi-Energy](https://doi.org/10.1016/j.apenergy.2026.127657)<br><sub>Xiaohui Zhong, Lei Chen, Hao Li et al. · Applied Energy</sub> | Fudan University (FuXi) |  |
 | 2026-03-03 | [A physics-guided machine learning framework for enhancing dust storm visibility prediction in arid and semi-arid regions](https://doi.org/10.1038/s41598-026-39766-z)<br><sub>Chang Xu, Henggang Zhang, Kaiyue Luo et al. · Scientific Reports</sub> |  |  |
 | 2026-02-27 | [Data-driven forecasts of extreme weather in East Asia: feasibility of operational use](https://doi.org/10.1016/j.wace.2026.100875)<br><sub>Seok-Geun Oh, Young-Jun Bae, Seok‐Woo Son et al. · Weather and Climate Extremes</sub> | Korea Meteorological Administration (KMA) |  |
 | 2026-02-26 | [Scaling Laws of Global Weather Models](https://arxiv.org/abs/2602.22962)<br><sub>Yuejiang Yu, Langwen Huang, Alexandru Calotoiu et al.</sub> |  |  |
@@ -158,7 +158,7 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 | 2025-03-25 | [AI-Based Predictive Weather Modeling Using Neural Networks](https://doi.org/10.5281/zenodo.21451692)<br><sub>Dr. Surender Singh · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
 | 2025-03-14 | [GMG: A Video Prediction Method Based on Global Focus and Motion Guided](https://doi.org/10.1109/tcsvt.2026.3657055)<br><sub>Yuhao Du, Hui Liu, Haoxiang Peng et al. · IEEE Transactions on Circuits and Systems for Video Technology</sub> |  |  |
 | 2025-03-10 | [REVOLUTIONIZING NUMERICAL WEATHER PREDICTION MODELS WITH MACHINE LEARNING INNOVATIONS](https://doi.org/10.48047/7gy3es52)<br><sub>Atagara Jayasree Rani, Y. Narasimha Reddy · Cuestiones de Fisioterapia</sub> |  |  |
-| 2025-03-03 | [A Comparison of AI Weather Prediction and Numerical Weather Prediction Models for 1–7-Day Precipitation Forecasts](https://doi.org/10.1175/waf-d-24-0081.1)<br><sub>Jacob T Radford, Imme Ebert-Uphoff, Jebb Q. Stewart · Weather and Forecasting</sub> | Colorado State University (incl. CIRA), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
+| 2025-03-03 | ⭐ [A Comparison of AI Weather Prediction and Numerical Weather Prediction Models for 1–7-Day Precipitation Forecasts](https://doi.org/10.1175/waf-d-24-0081.1)<br><sub>Jacob T Radford, Imme Ebert-Uphoff, Jebb Q. Stewart · Weather and Forecasting</sub> | Colorado State University (incl. CIRA), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
 | 2025-03-01 | [Investigating the use of terrain-following coordinates in AI-driven precipitation forecasts](https://doi.org/10.1029/2025gl118478)<br><sub>Yingkai Sha, John S. Schreck, William Chapman et al. · Geophysical Research Letters</sub> | NSF NCAR / UCAR |  |
 | 2025-02-19 | [A Deep auto encoder based Framework for efficient weather forecasting](https://doi.org/10.22399/ijcesen.429)<br><sub>Kotoju Rajitha, B.N.V. Uma Shankar, Ravinder Reddy Baireddy et al. · International Journal of Computational and Experimental Science and Engineering</sub> |  |  |
 | 2025-02-16 | [ClimateLLM: Efficient Weather Forecasting via Frequency-Aware Large Language Models](https://arxiv.org/abs/2502.11059)<br><sub>Shixuan Li, Wei Yang, Peiyu Zhang et al.</sub> |  |  |

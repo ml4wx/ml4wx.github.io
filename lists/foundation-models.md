@@ -5,7 +5,7 @@ Large pretrained models for the atmosphere or Earth system that are fine-tuned f
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/foundation-models/)
 
-51 papers (3 ⭐). Newest first.
+51 papers (2 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -16,7 +16,7 @@ Large pretrained models for the atmosphere or Earth system that are fine-tuned f
 | 2026-09-01 | [PhyTTA: Physics-Informed Test-Time Adaptation of Foundation Models for Regional Drought Prediction](https://doi.org/10.24963/ijcai.2026/795)<br><sub>Wen-Tao Gao, Jiu-Yong Li, Lin Liu et al. · Proceedings of the Thirty-Fifth International Joint Conference on Artificial Intelligence</sub> |  |  |
 | 2026-08-18 | [Bridging the weather and climate divide with artificial intelligence](https://doi.org/10.1038/s41467-026-75787-y)<br><sub>G. Camps-Valls, A. Carrassi, F. de Melo Viríssimo et al. · Nature Communications</sub> | Columbia University (LEAP, Lamont-Doherty), Max Planck Institute for Biogeochemistry, Potsdam Institute for Climate Impact Research (PIK), Technical University of Munich (TUM), University of Reading |  |
 | 2026-08-14 | [Catching the Imposter: Self-Supervised Learning of Physical Coherence with Cross-Entity Feature Permutations](https://arxiv.org/abs/2608.14372)<br><sub>Aleksei Rozanov, Arvind Renganathan, Vipin Kumar</sub> |  |  |
-| 2026-08-04 | ⭐ [Prithvi-Precip: Integrating Satellite Observations into an Atmospheric AI Foundation Model for Precipitation Forecasting](https://arxiv.org/abs/2608.03959)<br><sub>Simon Pfreundschuh, Christian D. Kummerow, Johannes Schmude et al.</sub> | Colorado State University (incl. CIRA), IBM Research, NASA, Oak Ridge National Laboratory |  |
+| 2026-08-04 | [Prithvi-Precip: Integrating Satellite Observations into an Atmospheric AI Foundation Model for Precipitation Forecasting](https://arxiv.org/abs/2608.03959)<br><sub>Simon Pfreundschuh, Christian D. Kummerow, Johannes Schmude et al.</sub> | Colorado State University (incl. CIRA), IBM Research, NASA, Oak Ridge National Laboratory |  |
 | 2026-08-01 | [Arbitrary-Rate Zero-Shot Interpolation and Prediction of ERA5 2-m Temperature Fields with Pre-Trained Video Models](https://doi.org/10.1109/aann71145.2026.11709157)<br><sub>Juxihong Julaiti, Dan-Yue Zhi, Jia-Nan Rong et al. · 2026 6th International Conference on Advanced Algorithms and Neural Networks (AANN)</sub> |  |  |
 | 2026-07-31 | [TerraNova: A Foundation Model for the Anthropocene](https://arxiv.org/abs/2607.29527)<br><sub>Carlos Rodriguez-Pardo, Massimo Tavoni</sub> |  |  |
 | 2026-07-17 | [Monkey King Bang: A Unified Scientific Multimodal Foundation Model](https://arxiv.org/abs/2607.20557)<br><sub>Hesen Chen, Xinyu Su, Xiaomeng Yang et al.</sub> |  | [code](https://github.com/Shanghai-Academy-of-AI-For-Science/MKB) |

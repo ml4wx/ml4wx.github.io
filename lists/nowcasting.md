@@ -5,7 +5,7 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/nowcasting/)
 
-841 papers (5 ⭐). Newest first.
+841 papers (6 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -510,7 +510,7 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 | 2023-12-31 | [MSLKNet: A Multi-Scale Large Kernel Convolutional Network for Radar Extrapolation](https://doi.org/10.3390/atmos15010052)<br><sub>Wei Tian, Chunlin Wang, Kailing Shen et al. · Atmosphere</sub> | Nanjing University of Information Science & Technology (NUIST) |  |
 | 2023-12-22 | [STPF-Net: Short-Term Precipitation Forecast Based on a Recurrent Neural Network](https://doi.org/10.3390/rs16010052)<br><sub>Jingnan Wang, Xiaodong Wang, Jiping Guan et al. · Remote Sensing</sub> |  |  |
 | 2023-12-20 | [Combining Deep Learning and Physical Models: A Benchmark Study on All‐Sky Imager‐Based Solar Nowcasting Systems](https://doi.org/10.1002/solr.202300808)<br><sub>Yann Fabel, Bijan Nouri, Stefan Wilbert et al. · Solar RRL</sub> | Technical University of Munich (TUM) |  |
-| 2023-12-19 | [Extending intraday solar forecast horizons with deep generative models](https://doi.org/10.1016/j.apenergy.2024.124186)<br><sub>Alberto Carpentieri, Doris Folini, Jussi Leinonen et al. · Applied Energy</sub> | ETH Zurich, MeteoSwiss |  |
+| 2023-12-19 | ⭐ [Extending intraday solar forecast horizons with deep generative models](https://doi.org/10.1016/j.apenergy.2024.124186)<br><sub>Alberto Carpentieri, Doris Folini, Jussi Leinonen et al. · Applied Energy</sub> | ETH Zurich, MeteoSwiss |  |
 | 2023-12-18 | [DNI Nowcasting Applying a Differential Approach Method Into Sky Camera Images](https://doi.org/10.1109/tgrs.2023.3344119)<br><sub>Román D. Mondragón-Rodríguez, David Riveros-Rosas, Carlos Gay-García et al. · IEEE Transactions on Geoscience and Remote Sensing</sub> |  |  |
 | 2023-12-11 | [Advanced Learning Techniques for Short-Term Atmospheric Predictions: An Overview](https://doi.org/10.1109/icacrs58579.2023.10405022)<br><sub>Sachin Kanubhai Patel, Sandipkumar R. Panchal, Sweta S. Panchal · 2023 2nd International Conference on Automation, Computing and Renewable Systems (ICACRS)</sub> |  |  |
 | 2023-12-11 | [DiffCast: A Unified Framework via Residual Diffusion for Precipitation Nowcasting](https://arxiv.org/abs/2312.06734)<br><sub>Demin Yu, Xutao Li, Yunming Ye et al. · 2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</sub> |  | [code](https://github.com/DeminYu98/DiffCast) |

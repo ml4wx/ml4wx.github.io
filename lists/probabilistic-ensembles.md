@@ -5,7 +5,7 @@ ML models that produce ensembles or full forecast distributions: generative mode
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/probabilistic-ensembles/)
 
-103 papers (14 ⭐). Newest first.
+103 papers (16 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -24,7 +24,7 @@ ML models that produce ensembles or full forecast distributions: generative mode
 | 2026-08-08 | [RainCast: A High-Resolution 72-Hour Short-Term Precipitation Forecasting Model](https://doi.org/10.1145/3770855.3818880)<br><sub>Guanlong Ma, Weiqiu Chen, Yang Zhao et al. · Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2</sub> | Alibaba (DAMO Academy) |  |
 | 2026-07-21 | [On the sensitivity of machine-learned probabilistic weather forecast models to scale-aware scoring rules](https://arxiv.org/abs/2607.19161)<br><sub>Simon Lang, Martin Leutbecher, Sam Hatfield</sub> |  |  |
 | 2026-07-11 | [TSCoNet: A Two-Stage Copula CNN-LSTM for Uncertainty-Aware Spatio-Temporal Forecasting](https://arxiv.org/abs/2607.10410)<br><sub>Jongwook Kim, Jong-Min Kim</sub> |  |  |
-| 2026-07-07 | [Evaluation of AI-based seasonal weather ensembles as input for fluvial flood risk estimation: a case study over the Elbe basin](https://doi.org/10.5194/nhess-26-3129-2026)<br><sub>J. Ashcroft, Alison Poulston, Marius K. Koch et al. · Natural Hazards and Earth System Sciences</sub> | NVIDIA |  |
+| 2026-07-07 | ⭐ [Evaluation of AI-based seasonal weather ensembles as input for fluvial flood risk estimation: a case study over the Elbe basin](https://doi.org/10.5194/nhess-26-3129-2026)<br><sub>J. Ashcroft, Alison Poulston, Marius K. Koch et al. · Natural Hazards and Earth System Sciences</sub> | NVIDIA |  |
 | 2026-07-04 | [Event-Timing Priors: Temporal Point Process Likelihoods Correct the Long-Horizon Extreme-Event Statistics of Generative Surrogates](https://doi.org/10.5281/zenodo.21194880)<br><sub>G W O Howe · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
 | 2026-07-01 | [Decision-Aware Training for Sample-Based Generative Models](https://arxiv.org/abs/2607.01171)<br><sub>Kornelius Raeth, Nicole Ludwig</sub> |  |  |
 | 2026-06-29 | [Diffusion Fine-tuning with Rewarded Moment Matching Distillation](https://arxiv.org/abs/2606.30414)<br><sub>Alexis Jacq, Guillaume Couairon, Valentin De Bortoli et al.</sub> |  |  |
@@ -73,7 +73,7 @@ ML models that produce ensembles or full forecast distributions: generative mode
 | 2025-04-01 | [Toward Calibrated Ensembles of Neural Weather Model Forecasts](https://doi.org/10.1029/2024ms004734)<br><sub>Jorge Baño‐Medina, Agniv Sengupta, Duncan Watson‐Parris et al. · Journal of Advances in Modeling Earth Systems</sub> |  |  |
 | 2025-03-29 | ⭐ [A fast physics-based perturbation generator of machine learning weather model for efficient ensemble forecasts of tropical cyclone track](https://doi.org/10.1038/s41612-025-01009-9)<br><sub>Jingchen Pu, Mu Mu, Jie Feng et al. · npj Climate and Atmospheric Science</sub> | Fudan University (FuXi) |  |
 | 2025-01-06 | [Skillful High-Resolution Ensemble Precipitation Forecasting with an Integrated Deep Learning Framework](https://arxiv.org/abs/2501.02905)<br><sub>Shuangshuang He, Hongli Liang, Yuanting Zhang et al.</sub> |  |  |
-| 2025-01-01 | [Enriching Operational High-Resolution Ensemble Forecasts with StyleGAN-2](https://doi.org/10.1175/aies-d-24-0058.1)<br><sub>Clément Brochet, Gabriel Ionut Moldovan, Julien Rabault et al. · Artificial Intelligence for the Earth Systems</sub> | ECMWF, Météo-France (incl. CNRM) |  |
+| 2025-01-01 | ⭐ [Enriching Operational High-Resolution Ensemble Forecasts with StyleGAN-2](https://doi.org/10.1175/aies-d-24-0058.1)<br><sub>Clément Brochet, Gabriel Ionut Moldovan, Julien Rabault et al. · Artificial Intelligence for the Earth Systems</sub> | ECMWF, Météo-France (incl. CNRM) |  |
 | 2024-12-20 | ⭐ [AIFS-CRPS: Ensemble forecasting using a model trained with a loss function based on the Continuous Ranked Probability Score](https://arxiv.org/abs/2412.15832)<br><sub>Simon Lang, Mihai Alexe, Mariana C. A. Clare et al. · npj Artificial Intelligence</sub> | ECMWF |  |
 | 2024-12-17 | ⭐ [ArchesWeather & ArchesWeatherGen: a deterministic and generative model for efficient ML weather forecasting](https://arxiv.org/abs/2412.12971)<br><sub>Guillaume Couairon, Renu Singh, Anastase Charantonis et al. · Science Advances</sub> | ECMWF, Inria | [code](https://github.com/INRIA/geoarches) |
 | 2024-12-11 | [Boosting weather forecast via generative superensemble](https://doi.org/10.1038/s41612-025-01255-x)<br><sub>Congyi Nai, Xi Chen, Shangshang Yang et al. · npj Climate and Atmospheric Science</sub> | Institute of Atmospheric Physics, Chinese Academy of Sciences, Potsdam Institute for Climate Impact Research (PIK), Technical University of Munich (TUM) |  |

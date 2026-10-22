@@ -5,7 +5,7 @@ Limited-area and regional ML weather models, convection-permitting and km-scale 
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/regional-km-scale/)
 
-84 papers (4 ⭐). Newest first.
+84 papers (6 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -41,7 +41,7 @@ Limited-area and regional ML weather models, convection-permitting and km-scale 
 | 2026-01-01 | [PINA-Net: Physics-Constrained Nonautoregressive Network for Spatiotemporal Meteorological Forecasting in Complex Maritime Environments](https://doi.org/10.1109/tgrs.2026.3713650)<br><sub>Yi Yan, Jiang-Ting Li, Yuxuan Wang et al. · IEEE Transactions on Geoscience and Remote Sensing</sub> |  |  |
 | 2025-12-31 | [Spatio-Temporal Weather Prediction with Graph Neural Networks](https://doi.org/10.3126/jonc.v1i1-2.89125)<br><sub>Siddhartha Devkota, Avinab Khadka, Yagya Raj Pandeya · Journal of NAST College</sub> |  |  |
 | 2025-12-15 | [Evaluating Adversarial Attacks on Federated Learning for Temperature Forecasting](https://arxiv.org/abs/2512.13207)<br><sub>Karina Chichifoi, Fabio Merizzi, Michele Colajanni</sub> |  |  |
-| 2025-12-01 | [A regional high resolution AI weather model for the prediction of atmospheric rivers and extreme precipitation](https://doi.org/10.1038/s41612-025-01265-9)<br><sub>J. Baño-Medina, A. Sengupta, Daniel F. Steinhoff et al. · npj Climate and Atmospheric Science</sub> | ECMWF, MET Norway (Norwegian Meteorological Institute) |  |
+| 2025-12-01 | ⭐ [A regional high resolution AI weather model for the prediction of atmospheric rivers and extreme precipitation](https://doi.org/10.1038/s41612-025-01265-9)<br><sub>J. Baño-Medina, A. Sengupta, Daniel F. Steinhoff et al. · npj Climate and Atmospheric Science</sub> | ECMWF, MET Norway (Norwegian Meteorological Institute) |  |
 | 2025-11-28 | [High-Resolution Probabilistic Data-Driven Weather Modeling with a Stretched-Grid](https://arxiv.org/abs/2511.23043)<br><sub>Even Marius Nordhagen, Håvard Homleid Haugen, Magnus Sikora Ingstad et al.</sub> |  |  |
 | 2025-10-19 | [Short-term forecasting of 3D wind field based on deep learning and water vapor](https://doi.org/10.22541/essoar.176087128.81306828/v1)<br><sub>Yuchen Ye, Chaoxia Yuan, Mingyu Li et al.</sub> | Huawei (Huawei Cloud), Nanjing University of Information Science & Technology (NUIST) |  |
 | 2025-10-17 | [Sensitivity of WRF Operational Forecasting to AIFS Initialisation: A Case Study on the Implications for Air Pollutant Dispersion](https://doi.org/10.3390/earth6040132)<br><sub>Raúl Arasa, Matilde García‐Valdecasas Ojeda, Miquel Picanyol et al. · Earth</sub> |  |  |
@@ -49,7 +49,7 @@ Limited-area and regional ML weather models, convection-permitting and km-scale 
 | 2025-10-03 | [Machine Learning-Based Temperature Prediction for European Climate Change Adaptation: A ConvLSTM Approach Using ERA5 Reanalysis Data](https://doi.org/10.21203/rs.3.rs-7199339/v1)<br><sub>Mayowa Benjamen Lateef · Research Square</sub> |  |  |
 | 2025-10-01 | [Enhancing Short-Range Weather Forecasts through Temporal Variation Encoding: A Multiperiod Embedding Approach](https://doi.org/10.1175/aies-d-24-0119.1)<br><sub>Ming Fan, Hyun‐Gyu Kang, Wei Zhang et al. · Artificial Intelligence for the Earth Systems</sub> | Oak Ridge National Laboratory |  |
 | 2025-09-21 | [STCast: Adaptive Boundary Alignment for Global and Regional Weather Forecasting](https://arxiv.org/abs/2509.25210)<br><sub>Hao Chen, Tao Han, Jie Zhang et al.</sub> |  | [code](https://github.com/chenhao-zju/STCast) |
-| 2025-07-24 | [A comparison of stretched-grid and limited-area modelling for data-driven regional weather forecasting](https://doi.org/10.1016/j.mlwa.2026.100887)<br><sub>Jasper S. Wijnands, Michiel Van Ginderachter, Bastien François et al. · Machine Learning with Applications</sub> | KNMI (Royal Netherlands Meteorological Institute) |  |
+| 2025-07-24 | ⭐ [A comparison of stretched-grid and limited-area modelling for data-driven regional weather forecasting](https://doi.org/10.1016/j.mlwa.2026.100887)<br><sub>Jasper S. Wijnands, Michiel Van Ginderachter, Bastien François et al. · Machine Learning with Applications</sub> | KNMI (Royal Netherlands Meteorological Institute) |  |
 | 2025-07-08 | [HRRRCast: a data-driven emulator for regional weather forecasting at convection allowing scales](https://arxiv.org/abs/2507.05658)<br><sub>Daniel Abdi, Isidora Jankov, Paul Madden et al. · Artificial Intelligence for the Earth Systems, Vol. 5, No. 2, 2026, Article 250061</sub> | Colorado State University (incl. CIRA), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), University of Oklahoma (AI2ES) |  |
 | 2025-07-01 | [Innovative Short-Term Weather Forecasting System Combining Data-Driven and Dynamic Downscaling Approaches](https://doi.org/10.1175/aies-d-24-0125.1)<br><sub>Yubin Jin, Zhenzhong Zeng, Yuntian Chen et al. · Artificial Intelligence for the Earth Systems</sub> |  |  |
 | 2025-06-24 | [Implementation and Evaluation of a Limited-Area Artificial Intelligence Wind Speed Forecasting Model](https://doi.org/10.1109/iccep65222.2025.11143679)<br><sub>D. J. van der Bank, A. Dalton, Bernard Bekker · 2025 International Conference on Clean Electrical Power (ICCEP)</sub> |  |  |

@@ -5,7 +5,7 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/benchmarks-data-eval/)
 
-196 papers (10 ⭐). Newest first.
+196 papers (9 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -74,7 +74,7 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 | 2026-01-01 | [Artificial Intelligence Techniques for Climate Change Prediction and Mitigation: A Systematic Review](https://doi.org/10.47001/irjiet/2026.103014)<br><sub>Prestone Jeremaih Simiyu, Gitonga Stephen Ngure · International Research Journal of Innovations in Engineering and Technology</sub> |  |  |
 | 2026-01-01 | [Machine Learning and Deep Learning in Weather Forecasting: A Systematic Review of Models, Data Sources, Validation Practices, and Operational Challenges](https://doi.org/10.17605/osf.io/9sbgz)<br><sub>Fikadu Wayesa Gemeda, Bekele,, Gizaw Tadele, Jingming Xia</sub> |  |  |
 | 2026-01-01 | [A Regional Benchmark for Deep Learning-Based Hourly Precipitation Nowcasting in Latin America](https://doi.org/10.1109/access.2026.3670767)<br><sub>Adriano Pereira Almeida, Henrique M. J. Barbosa, Sâmia R. Garcia et al. · IEEE Access</sub> | China Meteorological Administration (CMA), Colorado State University (incl. CIRA), NSF NCAR / UCAR |  |
-| 2025-12-26 | ⭐ [The Global Kilometric Tropical Cyclone Wind Database (CyclObs) Enabling High-Resolution Data-Driven Studies](https://doi.org/10.22541/essoar.176676860.01253431/v1)<br><sub>Arthur Avenas, Taiga Tsukada, Théo Cévaër et al.</sub> | Colorado State University (incl. CIRA), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
+| 2025-12-26 | [The Global Kilometric Tropical Cyclone Wind Database (CyclObs) Enabling High-Resolution Data-Driven Studies](https://doi.org/10.22541/essoar.176676860.01253431/v1)<br><sub>Arthur Avenas, Taiga Tsukada, Théo Cévaër et al.</sub> | Colorado State University (incl. CIRA), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
 | 2025-12-16 | [Forecast Skill Is Not Decision Skill: Evidence from Weather-Dependent Decision Tasks](https://doi.org/10.1002/met.70260)<br><sub>Kornelius Raeth, Nicole Ludwig · Meteorological Applications</sub> |  |  |
 | 2025-12-08 | [A curated UK rain radar data set for training and benchmarking nowcasting models](https://arxiv.org/abs/2512.17924)<br><sub>Viv Atureta, Rifki Priansyah Jasin, Stefan Siegert</sub> |  |  |
 | 2025-12-01 | [A Workflow for Benchmarking Added Value by New Statistical Downscaling Methods](https://doi.org/10.1142/s2345737625400020)<br><sub>Robert Leonard Wilby, Biljana Basarin, Daniel Boateng et al. · Journal of Extreme Events</sub> |  |  |
