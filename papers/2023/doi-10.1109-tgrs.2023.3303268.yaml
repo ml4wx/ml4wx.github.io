@@ -1,0 +1,59 @@
+id: doi-10.1109-tgrs.2023.3303268
+title: A Feedforward Neural Network Approach for the Detection of Optically Thin Cirrus From IASI-NG
+authors:
+- Elisabetta Ricciardelli
+- Francesco Di Paola
+- Domenico Cimini
+- Salvatore Larosa
+- Pietro Mastro
+- Guido Masiello
+- Carmine Serio
+- Tim Hultberg
+- Thomas August
+- Filomena Romano
+date: '2023-01-01'
+year: 2023
+venue: IEEE Transactions on Geoscience and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/tgrs.2023.3303268
+  openalex: W4385626792
+links:
+  paper: https://doi.org/10.1109/tgrs.2023.3303268
+  pdf: https://ieeexplore.ieee.org/ielx7/36/4358825/10210600.pdf
+topic: observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- global
+data:
+- satellite
+- era5
+status: research
+summary: Feedforward neural network detects optically thin cirrus in IASI-NG simulations, improving detection
+  probability by 3% over IASI with false alarm ratio falling to 0.01.
+abstract: The identification of optically thin cirrus is crucial for their accurate parameterization in
+  climate and Earth’s system models. This study exploits the characteristics of the infrared atmospheric
+  sounding interferometer—new generation (IASI-NG) to develop an algorithm for the detection of optically
+  thin cirrus. IASI-NG has been designed for the European Organization for the Exploitation of Meteorological
+  Satellites (EUMETSAT) polar system second-generation program to continue the service of its predecessor
+  IASI from 2024 onward. A thin-cirrus detection algorithm (TCDA) is presented here, as developed for
+  IASI-NG, but also in parallel for IASI to evaluate its performance on currently available real observations.
+  TCDA uses a feedforward neural network (NN) approach to detect thin cirrus eventually misidentified
+  as clear sky by a previously applied cloud detection algorithm. TCDA also estimates the uncertainty
+  of “clear-sky” or “thin-cirrus” detection. NN is trained and tested on a dataset of IASI-NG (or IASI)
+  simulations obtained by processing ECMWF 5-generation reanalysis (ERA5) data with the$\sigma $-IASI
+  radiative transfer model. TCDA validation against an independent simulated dataset provides a quantitative
+  statistical assessment of the improvements brought by IASI-NG with respect to IASI. In fact, IASI-NG
+  TCDA outperforms IASI TCDA by 3% in probability of detection (POD), 1% in bias, and 2% in accuracy,
+  and the false alarm ratio (FAR) passes from 0.02 to 0.01. Moreover, IASI TCDA validation against state-of-the-art
+  cloud products from Cloudsat/CPR and CALIPSO/Cloud-Aerosol Lidar with Orthogonal Polarization (CALIOP)
+  real observations reveals a tendency for IASI TCDA to underestimate the presence of thin cirrus (POD
+  = 0.47) but with a low FAR (0.07), which drops to 0.0 for very thin cirrus.
+significance: 3
+cited_by: 5
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,75 @@
+id: doi-10.5194-hess-2022-348
+title: Machine Learning and Committee Models for Improving ECMWF Subseasonal to Seasonal (S2S) Precipitation
+  Forecast
+authors:
+- Mohamed Elneel Elshaikh Eltayeb Elbasheer
+- Gerald Corzo
+- DIMITRI P. SOLOMATINE
+- Emmanouil Α. Varouchakis
+date: '2022-11-03'
+year: 2022
+venue_type: other
+ids:
+  doi: 10.5194/hess-2022-348
+  openalex: W4307995081
+links:
+  paper: https://doi.org/10.5194/hess-2022-348
+topic: post-processing
+topics:
+- s2s-seasonal
+type: model
+method:
+- classical-ml
+- rnn
+timescale:
+- s2s
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: Machine learning classifiers and committee models correct ECMWF S2S precipitation category forecasts
+  over three regions, improving on the raw ECMWF baseline.
+abstract: 'Abstract. The European Centre for Medium-Range Weather Forecasts (ECMWF) provides subseasonal
+  to seasonal (S2S) precipitation forecasts; S2S forecasts extend from two weeks to two months ahead;
+  however, the accuracy of S2S precipitation forecasting is still underdeveloped, and a lot of research
+  and competitions have been proposed to study how machine learning (ML) can be used to improve forecast
+  performance. This research explores the use of machine learning techniques to improve the ECMWF S2S
+  precipitation forecast, here following the AI competition guidelines proposed by the S2S project and
+  the World Meteorological Organisation (WMO). A baseline analysis of the ECMWF S2S precipitation hindcasts
+  (2000–2019) targeting three categories (above normal, near normal and below normal) was performed the
+  ranked probability skill score (RPSS) and the receiver operating characteristic curve (ROC). A regional
+  analysis of a time series was done to group similar (correlated) hydrometeorological time series variables.
+  Three regions were finally selected based on their spatial and temporal correlations. The methodology
+  first replicated the performance of the ECMWF forecast data available and used it as a reference for
+  the experiments (baseline analysis). Two approaches were followed to build categorical classification
+  correction models: (1) using ML and (2) using a committee model. The aim of both was to correct the
+  categorical classifications (above normal, near normal and below normal) of the ECMWF S2S precipitation
+  forecast. In the first approach, the ensemble mean was used as the input, and five ML techniques were
+  trained and compared: k-nearest neighbours (k-NN), logistic regression (LR), artificial neural network
+  multilayer perceptron (ANN-MLP), random forest (RF) and long–short-term memory (LSTM). Here, we have
+  proposed a gridded spatial and temporal correlation analysis (autocorrelation, cross-correlation and
+  semivariogram) for the input variable selection, allowing us to explore neighbours’ time series and
+  their lags as inputs. These results provided the final data sets that were used for the training and
+  validation of the machine learning models. The total precipitation (tp), two-metre temperature (t2m)
+  and time series with a resolution of 1.5 by 1.5 degrees were the main variables used, and these two
+  variables were provided as the global ECMWF S2S real-time forecasts, ECMWF S2S reforecasts/hindcasts
+  and observation data from the National Oceanic and Atmospheric Administration (Climate Prediction Centre,
+  CPC). The forecasting skills of the ML models were compared against a reference model (ECMWF S2S precipitation
+  hindcasts and climatology) using RPSS, and the results from the first approach showed that LR and MLP
+  were the best ML models in terms of RPSS values. In addition, a positive RPSS value with respect to
+  climatology was obtained using MLP. It is important to highlight that LSTM models performed quite similarly
+  to MLP yet had slightly lower scores overall. In the second approach, the committee model (CM) was used,
+  in which, instead of using one ECMWF hindcast (ensemble mean), the problem is divided into many ANN-MLP
+  models (train each ensemble member independently) that are later combined in a smart ensemble model
+  (trained with LR). The cross-validation and testing of the CMs showed positive RPSS values regarding
+  climatology, which can be interpreted as improved ECMWF on the three climatological regions. In conclusion,
+  ML models have very low—if any—improvement, but by using a CM, the RPSS values are all better than the
+  reference forecast. This study was done only on random samples over three global regions; a more comprehensive
+  study should be performed to explore the whole range of possibilities.'
+significance: 3
+cited_by: 5
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

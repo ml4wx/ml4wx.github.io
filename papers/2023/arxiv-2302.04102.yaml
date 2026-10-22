@@ -1,0 +1,45 @@
+id: arxiv-2302.04102
+title: 'WF-UNet: Weather Fusion UNet for Precipitation Nowcasting'
+authors:
+- Christos Kaparakis
+- Siamak Mehrkanoon
+date: '2023-02-08'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2302.04102'
+links:
+  paper: https://arxiv.org/abs/2302.04102
+  pdf: https://arxiv.org/pdf/2302.04102
+topic: nowcasting
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- era5
+status: research
+summary: WF-UNet fuses precipitation radar with wind fields to nowcast western European precipitation
+  1 to 3 hours ahead, giving 6 to 22% lower MSE than radar-only UNets.
+abstract: Designing early warning systems for harsh weather and its effects, such as urban flooding or
+  landslides, requires accurate short-term forecasts (nowcasts) of precipitation. Nowcasting is a significant
+  task with several environmental applications, such as agricultural management or increasing flight safety.
+  In this study, we investigate the use of a UNet core-model and its extension for precipitation nowcasting
+  in western Europe for up to 3 hours ahead. In particular, we propose the Weather Fusion UNet (WF-UNet)
+  model, which utilizes the Core 3D-UNet model and integrates precipitation and wind speed variables as
+  input in the learning process and analyze its influences on the precipitation target task. We have collected
+  six years of precipitation and wind radar images from Jan 2016 to Dec 2021 of 14 European countries,
+  with 1-hour temporal resolution and 31 square km spatial resolution based on the ERA5 dataset, provided
+  by Copernicus, the European Union's Earth observation programme. We compare the proposed WF-UNet model
+  to persistence model as well as other UNet based architectures that are trained only using precipitation
+  radar input data. The obtained results show that WF-UNet outperforms the other examined best-performing
+  architectures by 22%, 8% and 6% lower MSE at a horizon of 1, 2 and 3 hours respectively.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

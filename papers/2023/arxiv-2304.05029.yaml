@@ -1,0 +1,45 @@
+id: arxiv-2304.05029
+title: 'Turbulence closure with small, local neural networks: Forced two-dimensional and $β$-plane flows'
+authors:
+- Kaushik Srinivasan
+- Mickael D. Chekroun
+- James C. McWilliams
+date: '2023-04-11'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2304.05029'
+links:
+  paper: https://arxiv.org/abs/2304.05029
+  pdf: https://arxiv.org/pdf/2304.05029
+topic: hybrid-parameterization
+type: model
+method:
+- cnn
+data:
+- km-scale-sim
+status: research
+summary: Two-layer CNNs with about 1000 parameters learn subgrid stresses for forced 2D beta-plane turbulence,
+  giving stable online LES at 16x downscaling. Idealized geophysical flow.
+abstract: We parameterize sub-grid scale (SGS) fluxes in sinusoidally forced two-dimensional turbulence
+  on the $β$-plane at high Reynolds numbers (Re$\sim$25000) using simple 2-layer Convolutional Neural
+  Networks (CNN) having only O(1000)parameters, two orders of magnitude smaller than recent studies employing
+  deeper CNNs with 8-10 layers; we obtain stable, accurate, and long-term online or a posteriori solutions
+  at 16X downscaling factors. Our methodology significantly improves training efficiency and speed of
+  online Large Eddy Simulations (LES) runs, while offering insights into the physics of closure in such
+  turbulent flows. Our approach benefits from extensive hyperparameter searching in learning rate and
+  weight decay coefficient space, as well as the use of cyclical learning rate annealing, which leads
+  to more robust and accurate online solutions compared to fixed learning rates. Our CNNs use either the
+  coarse velocity or the vorticity and strain fields as inputs, and output the two components of the deviatoric
+  stress tensor. We minimize a loss between the SGS vorticity flux divergence (computed from the high-resolution
+  solver) and that obtained from the CNN-modeled deviatoric stress tensor, without requiring energy or
+  enstrophy preserving constraints. The success of shallow CNNs in accurately parameterizing this class
+  of turbulent flows implies that the SGS stresses have a weak non-local dependence on coarse fields;
+  it also aligns with our physical conception that small-scales are locally controlled by larger scales
+  such as vortices and their strained filaments. Furthermore, 2-layer CNN-parameterizations are more likely
+  to be interpretable and generalizable because of their intrinsic low dimensionality.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,55 @@
+id: arxiv-2304.14131
+title: 'TempEE: Temporal–Spatial Parallel Transformer for Radar Echo Extrapolation Beyond Autoregression'
+authors:
+- Shengchao Chen
+- Ting Shu
+- Huan Qi Zhao
+- Guo Zhong
+- Xunlai Chen
+date: '2023-01-01'
+year: 2023
+venue: IEEE Transactions on Geoscience and Remote Sensing
+venue_type: journal
+ids:
+  arxiv: '2304.14131'
+  doi: 10.1109/tgrs.2023.3311510
+  openalex: W4386432115
+links:
+  paper: https://doi.org/10.1109/tgrs.2023.3311510
+  pdf: https://arxiv.org/pdf/2304.14131
+topic: nowcasting
+type: model
+method:
+- transformer
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: TempEE uses a parallel spatio-temporal transformer with one-step forecasting instead of autoregression
+  to avoid error accumulation in radar echo extrapolation.
+abstract: 'Meteorological radar reflectivity data (i.e. radar echo) significantly influences precipitation
+  prediction. It can facilitate accurate and expeditious forecasting of short-term heavy rainfall bypassing
+  the need for complex Numerical Weather Prediction (NWP) models. In comparison to conventional models,
+  Deep Learning (DL)-based radar echo extrapolation algorithms exhibit higher effectiveness and efficiency.
+  Nevertheless, the development of reliable and generalized echo extrapolation algorithm is impeded by
+  three primary challenges: cumulative error spreading, imprecise representation of sparsely distributed
+  echoes, and inaccurate description of non-stationary motion processes. To tackle these challenges, this
+  paper proposes a novel radar echo extrapolation algorithm called Temporal-Spatial Parallel Transformer,
+  referred to asTempEE.TempEEavoids using auto-regression and instead employs a one-step forward strategy
+  to prevent cumulative error spreading during the extrapolation process. Additionally, we propose the
+  incorporation of a Multi-level Temporal-Spatial Attention mechanism to improve the algorithm’s capability
+  of capturing both global and local information while emphasizing task-related regions, including sparse
+  echo representations, in an efficient manner. Furthermore, the algorithm extracts spatio-temporal representations
+  from continuous echo images using a parallel encoder to model the non-stationary motion process for
+  echo extrapolation. The superiority of ourTempEEhas been demonstrated in the context of the classic
+  radar echo extrapolation task, utilizing a real-world dataset. Extensive experiments have further validated
+  the efficacy and indispensability of various components withinTempEE.'
+significance: 4
+cited_by: 30
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

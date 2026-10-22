@@ -1,0 +1,51 @@
+id: doi-10.1175-aies-d-22-0031.1
+title: Bias Correcting Climate Model Simulations Using Unpaired Image-to-Image Translation Networks
+authors:
+- D. James Fulton
+- Ben J. Clarke
+- Gabriele Clarissa Hegerl
+date: '2023-02-22'
+year: 2023
+venue: Artificial Intelligence for the Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1175/aies-d-22-0031.1
+  openalex: W4321490771
+links:
+  paper: https://doi.org/10.1175/aies-d-22-0031.1
+  pdf: https://journals.ametsoc.org/downloadpdf/journals/aies/2/2/AIES-D-22-0031.1.pdf
+orgs:
+- university-of-oxford
+topic: post-processing
+topics:
+- extremes-hazards
+type: model
+method:
+- gan-vae
+- cnn
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+- era5
+status: research
+summary: Applies unpaired UNIT image-to-image translation, combined with quantile mapping, to bias-correct
+  HadGEM3 monsoon simulations toward ERA5, preserving cross-variable correlations and spatial structure.
+abstract: Abstract We assess the suitability of unpaired image-to-image translation networks for bias
+  correcting data simulated by global atmospheric circulation models. We use the Unsupervised Image-to-Image
+  Translation (UNIT) neural network architecture to map between data from the HadGEM3-A-N216 model and
+  ERA5 reanalysis data in a geographical area centered on the South Asian monsoon, which has well-documented
+  serious biases in this model. The UNIT network corrects cross-variable correlations and spatial structures
+  but creates bias corrections with less extreme values than the target distribution. By combining the
+  UNIT neural network with the classical technique of quantile mapping (QM), we can produce bias corrections
+  that are better than either alone. The UNIT+QM scheme is shown to correct cross-variable correlations,
+  spatial patterns, and all marginal distributions of single variables. The careful correction of such
+  joint distributions is of high importance for compound extremes research.
+significance: 4
+cited_by: 17
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

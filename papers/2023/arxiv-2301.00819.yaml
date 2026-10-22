@@ -1,0 +1,57 @@
+id: arxiv-2301.00819
+title: A Concurrent CNN-RNN Approach for Multi-Step Wind Power Forecasting
+authors:
+- Syed Kazmi
+- Berk Gorgulu
+- Mucahit Cevik
+- Mustafa Gokce Baydogan
+date: '2023-01-02'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2301.00819'
+  openalex: W4313529674
+links:
+  paper: https://arxiv.org/abs/2301.00819
+  pdf: https://arxiv.org/pdf/2301.00819
+topic: applications-impacts
+topics:
+- post-processing
+type: model
+method:
+- cnn
+- rnn
+- classical-ml
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: A CNN-RNN model combining multi-NWP grid inputs with farm histories improves day-ahead wind power
+  forecasts over LightGBM when trained globally across farms.
+abstract: Wind power forecasting helps with the planning for the power systems by contributing to having
+  a higher level of certainty in decision-making. Due to the randomness inherent to meteorological events
+  (e.g., wind speeds), making highly accurate long-term predictions for wind power can be extremely difficult.
+  One approach to remedy this challenge is to utilize weather information from multiple points across
+  a geographical grid to obtain a holistic view of the wind patterns, along with temporal information
+  from the previous power outputs of the wind farms. Our proposed CNN-RNN architecture combines convolutional
+  neural networks (CNNs) and recurrent neural networks (RNNs) to extract spatial and temporal information
+  from multi-dimensional input data to make day-ahead predictions. In this regard, our method incorporates
+  an ultra-wide learning view, combining data from multiple numerical weather prediction models, wind
+  farms, and geographical locations. Additionally, we experiment with global forecasting approaches to
+  understand the impact of training the same model over the datasets obtained from multiple different
+  wind farms, and we employ a method where spatial information extracted from convolutional layers is
+  passed to a tree ensemble (e.g., Light Gradient Boosting Machine (LGBM)) instead of fully connected
+  layers. The results show that our proposed CNN-RNN architecture outperforms other models such as LGBM,
+  Extra Tree regressor and linear regression when trained globally, but fails to replicate such performance
+  when trained individually on each farm. We also observe that passing the spatial information from CNN
+  to LGBM improves its performance, providing further evidence of CNN's spatial feature extraction capabilities.
+significance: 2
+cited_by: 3
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

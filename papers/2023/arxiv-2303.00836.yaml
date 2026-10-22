@@ -1,0 +1,50 @@
+id: arxiv-2303.00836
+title: Ensemble flow reconstruction in the atmospheric boundary layer from spatially limited measurements
+  through latent diffusion models
+authors:
+- Alex Rybchuk
+- Malik Hassanaly
+- Nicholas Hamilton
+- Paula Doubrawa
+- Mitchell J. Fulton
+- Luis A. Martínez-Tossas
+date: '2023-03-01'
+year: 2023
+venue: Physics of Fluids, 35, 12 (2023) 126604
+venue_type: journal
+ids:
+  arxiv: '2303.00836'
+  doi: 10.1063/5.0172559
+links:
+  paper: https://arxiv.org/abs/2303.00836
+  pdf: https://arxiv.org/pdf/2303.00836
+topic: data-assimilation
+type: model
+method:
+- diffusion
+spatial:
+- regional
+data:
+- km-scale-sim
+status: research
+summary: Latent diffusion model inpaints 3D atmospheric boundary-layer LES flow from observations covering
+  under 1% of the volume, producing diverse physically plausible turbulent samples usable as LES initial
+  conditions.
+abstract: Due to costs and practical constraints, field campaigns in the atmospheric boundary layer typically
+  only measure a fraction of the atmospheric volume of interest. Machine learning techniques have previously
+  successfully reconstructed unobserved regions of flow in canonical fluid mechanics problems and two-dimensional
+  geophysical flows, but these techniques have not yet been demonstrated in the three-dimensional atmospheric
+  boundary layer. Here, we conduct a numerical analogue of a field campaign with spatially limited measurements
+  using large-eddy simulation. We pose flow reconstruction as an inpainting problem, and reconstruct realistic
+  samples of turbulent, three-dimensional flow with the use of a latent diffusion model. The diffusion
+  model generates physically plausible turbulent structures on larger spatial scales, even when input
+  observations cover less than 1% of the volume. Through a combination of qualitative visualization and
+  quantitative assessment, we demonstrate that the diffusion model generates meaningfully diverse samples
+  when conditioned on just one observation. These samples successfully serve as initial conditions for
+  a large-eddy simulation code. We find that diffusion models show promise and potential for other applications
+  for other turbulent flow reconstruction problems.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

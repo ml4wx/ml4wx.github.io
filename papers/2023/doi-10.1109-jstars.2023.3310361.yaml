@@ -1,0 +1,61 @@
+id: doi-10.1109-jstars.2023.3310361
+title: A Heterogeneous Spatiotemporal Attention Fusion Prediction Network for Precipitation Nowcasting
+authors:
+- Dan Niu
+- Hongshu Che
+- Chunlei Shi
+- Zengliang Zang
+- Hongbin Wang
+- Xunlai Chen
+- Qunbo Huang
+date: '2023-01-01'
+year: 2023
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2023.3310361
+  openalex: W4386275821
+links:
+  paper: https://doi.org/10.1109/jstars.2023.3310361
+  pdf: https://ieeexplore.ieee.org/ielx7/4609443/4609444/10234590.pdf
+orgs:
+- cma
+topic: nowcasting
+type: model
+method:
+- cnn
+- rnn
+- transformer
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- nwp-analysis
+status: research
+summary: HST-AFP fuses radar echoes with NWP data via attention-based multi-encoder and fusion decoder,
+  outperforming RNN and U-Net nowcasting baselines in South China.
+abstract: Precipitation nowcasting underlying various public services from rainstorm warning to flight
+  safety, is quite important and remains challenging due to the fast change in convective weather. Although
+  some deep learning models have been proposed to make prediction automatically, most of them just deal
+  with a single radar echo data source, making them hard to adapt to heterogeneous and diverse data in
+  practice. In this work, a heterogeneous spatiotemporal attention fusion prediction network (HST-AFP)
+  is proposed for radar echo extrapolatio(deterministic output) and further precipitation nowcasting,
+  which deals with mining and fusing knowledge from multiple heterogeneous spatiotemporal (ST) data sources,
+  including history radar echo observations and numerical weather prediction (NWP) data. With the help
+  of the proposed attention-based ST diffusion module (ASTD), the multi-encoder is designed to extract
+  information from both dense ST tensor and sparse ST tensor. On the other hand, the fusion-decoder achieves
+  very deep trainable residual fusion prediction by integrating scale-wise attention fusion module (SWAF)
+  and deep residual spatial and temporal attention mechanism (DRSTA). It can adaptively blend multi-source
+  ST features and rescale the multi-scale temporal-wise and spatial-wise features for better prediction.
+  Experiments in a real-world dataset of South China show that compared with the ingenious RNN-based methods
+  and newly proposed Unet-based methods, our HST-AFP network can handle complex input with heterogeneity
+  in both space and time domains, and performs better on the precipitation nowcasting metrics, as well
+  as requires remarkable shorter forecast time.
+significance: 3
+cited_by: 17
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

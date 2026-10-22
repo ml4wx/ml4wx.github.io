@@ -1,0 +1,54 @@
+id: doi-10.3390-info13120577
+title: 'SWAR: A Deep Multi-Model Ensemble Forecast Method with Spatial Grid and 2-D Time Structure Adaptability
+  for Sea Level Pressure'
+authors:
+- Jingyun Zhang
+- Lingyu Xu
+- Baogang Jin
+date: '2022-12-12'
+year: 2022
+venue: Information
+venue_type: journal
+ids:
+  doi: 10.3390/info13120577
+  openalex: W4311372923
+links:
+  paper: https://doi.org/10.3390/info13120577
+  pdf: https://www.mdpi.com/2078-2489/13/12/577/pdf?version=1670844699
+topic: post-processing
+topics:
+- global-medium-range
+type: model
+method:
+- transformer
+- rnn
+timescale:
+- short
+- medium
+spatial:
+- global
+data:
+- nwp-analysis
+status: research
+summary: Deep multi-model ensemble method combining NWP outputs with window attention and a rolling recurrent
+  network for the two-dimensional initial-lead time structure, applied to sea level pressure.
+abstract: The multi-model ensemble (MME) forecast for meteorological elements has been proved many times
+  to be more skillful than the single model. It improves the forecast quality by integrating multiple
+  sets of numerical forecast results with different spatial-temporal characteristics. Currently, the main
+  numerical forecast results present a grid structure formed by longitude and latitude lines in space
+  and a special two-dimensional time structure in time, namely the initial time and the lead time, compared
+  with the traditional one-dimensional time. These characteristics mean that many MME methods have limitations
+  in further improving forecast quality. Focusing on this problem, we propose a deep MME forecast method
+  that suits the special structure. At spatial level, our model uses window self-attention and shifted
+  window attention to aggregate information. At temporal level, we propose a recurrent like neural network
+  with rolling structure (Roll-RLNN) which is more suitable for two-dimensional time structure that widely
+  exists in the institutions of numerical weather prediction (NWP) with running service. In this paper,
+  we test the MME forecast for sea level pressure as the forecast characteristics of the essential meteorological
+  element vary clearly across institutions, and the results show that our model structure is effective
+  and can make significant forecast improvements.
+significance: 3
+cited_by: 4
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,54 @@
+id: doi-10.1007-s00704-022-04242-x
+title: Forecasting seasonal to sub-seasonal rainfall in Great Britain using convolutional-neural networks
+authors:
+- Andrew Paul Barnes
+- Nick McCullen
+- Thomas Kjeldsen
+date: '2022-11-19'
+year: 2022
+venue: Theoretical and Applied Climatology
+venue_type: journal
+ids:
+  doi: 10.1007/s00704-022-04242-x
+  openalex: W4309582575
+links:
+  paper: https://doi.org/10.1007/s00704-022-04242-x
+  pdf: https://link.springer.com/content/pdf/10.1007/s00704-022-04242-x.pdf
+topic: s2s-seasonal
+topics:
+- post-processing
+type: model
+method:
+- cnn
+timescale:
+- seasonal
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: CNN using ECMWF SEAS5 pressure and temperature forecasts beats the raw ECMWF output for monthly
+  regional rainfall in Great Britain at 1 to 6 month leads.
+abstract: 'Abstract Traditional weather forecasting approaches use various numerical simulations and empirical
+  models to produce a gridded estimate of rainfall, often spanning multiple regions but struggling to
+  capture extreme events. The approach presented here combines modern meteorological forecasts from the
+  ECMWF SEAS5 seasonal forecasts with convolutional neural networks (CNNs) to improve the forecasting
+  of total monthly regional rainfall across Great Britain. The CNN is trained using mean sea-level pressure
+  and 2-m air temperature forecasts from the ECMWF C3S service using three lead-times: 1 month, 3 months
+  and 6 months. The training is supervised using the equivalent benchmark rainfall data provided by the
+  CEH-GEAR (Centre for Ecology and Hydrology, gridded estimates of areal rainfall). Comparing the CNN
+  to the ECMWF predictions shows the CNN out-performs the ECMWF across all three lead times. This is done
+  using an unseen validation dataset and based on the root mean square error (RMSE) between the predicted
+  rainfall values for each region and benchmark values from the CEH-GEAR dataset. The largest improvement
+  is at a 1-month lead time where the CNN model scores a RMSE 6.89 mm lower than the ECMWF. However, these
+  differences are exacerbated at the extremes with the CNN producing, at a 1-month lead time, RMSEs which
+  are 28.19 mm lower than the corresponding predictions from the ECMWF. Following this, a sensitivity
+  analysis shows the CNN model predicts increased rainfall values in the presence of a low sea-level pressure
+  anomaly around Iceland, followed by a high sea-level pressure anomaly south of Greenland.'
+significance: 3
+cited_by: 12
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

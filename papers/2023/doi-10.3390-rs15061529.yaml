@@ -1,0 +1,53 @@
+id: doi-10.3390-rs15061529
+title: '3D-UNet-LSTM: A Deep Learning-Based Radar Echo Extrapolation Model for Convective Nowcasting'
+authors:
+- Shiqing Guo
+- Nengli Sun
+- Yanle Pei
+- Qian Li
+date: '2023-03-10'
+year: 2023
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs15061529
+  openalex: W4324067684
+links:
+  paper: https://doi.org/10.3390/rs15061529
+  pdf: https://www.mdpi.com/2072-4292/15/6/1529/pdf?version=1678443694
+topic: nowcasting
+type: model
+method:
+- cnn
+- rnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: A 3D-UNet-LSTM extractor-forecaster for 0-1 h radar echo extrapolation on MeteoNet outperforms
+  baselines in quantitative and case-study evaluation.
+abstract: Radar echo extrapolation is a commonly used approach for convective nowcasting. The evolution
+  of convective systems over a very short term can be foreseen according to the extrapolated reflectivity
+  images. Recently, deep neural networks have been widely applied to radar echo extrapolation and have
+  achieved better forecasting performance than traditional approaches. However, it is difficult for existing
+  methods to combine predictive flexibility with the ability to capture temporal dependencies at the same
+  time. To leverage the advantages of the previous networks while avoiding the mentioned limitations,
+  a 3D-UNet-LSTM model, which has an extractor-forecaster architecture, is proposed in this paper. The
+  extractor adopts 3D-UNet to extract comprehensive spatiotemporal features from the input radar images.
+  In the forecaster, a newly designed Seq2Seq network exploits the extracted features and uses different
+  convolutional long short-term memory (ConvLSTM) layers to iteratively generate hidden states for different
+  future timestamps. Finally, the hidden states are transformed into predicted radar images through a
+  convolutional layer. We conduct 0–1 h convective nowcasting experiments on the public MeteoNet dataset.
+  Quantitative evaluations demonstrate the effectiveness of the 3D-UNet extractor, the newly designed
+  forecaster, and their combination. In addition, case studies qualitatively demonstrate that the proposed
+  model has a better spatiotemporal modeling ability for the complex nonlinear processes of convective
+  echoes.
+significance: 3
+cited_by: 40
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

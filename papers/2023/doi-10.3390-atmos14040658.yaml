@@ -1,0 +1,58 @@
+id: doi-10.3390-atmos14040658
+title: Physics-Informed Deep Learning for Reconstruction of Spatial Missing Climate Information in the
+  Antarctic
+authors:
+- Ziqiang Yao
+- Tao Zhang
+- Li Wu
+- Xiaoying Wang
+- Jianqiang Huang
+date: '2023-03-31'
+year: 2023
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos14040658
+  openalex: W4362472222
+links:
+  paper: https://doi.org/10.3390/atmos14040658
+  pdf: https://www.mdpi.com/2073-4433/14/4/658/pdf?version=1680242120
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+- physics-constrained
+spatial:
+- regional
+data:
+- stations
+- cmip
+status: research
+summary: A physics-initialized inpainting network (PI-RFR) fills large gaps in Antarctic temperature and
+  wind fields, improving on Kriging and IDW by 63 to 74 percent.
+abstract: Understanding the influence of the Antarctic on the global climate is crucial for the prediction
+  of global warming. However, due to very few observation sites, it is difficult to reconstruct the rational
+  spatial pattern by filling in the missing values from the limited site observations. To tackle this
+  challenge, regional spatial gap-filling methods, such as Kriging and inverse distance weighted (IDW),
+  are regularly used in geoscience. Nevertheless, the reconstructing credibility of these methods is undesirable
+  when the spatial structure has massive missing pieces. Inspired by image inpainting, we propose a novel
+  deep learning method that demonstrates a good effect by embedding the physics-aware initialization of
+  deep learning methods for rapid learning and capturing the spatial dependence for the high-fidelity
+  imputation of missing areas. We create the benchmark dataset that artificially masks the Antarctic region
+  with ratios of 30%, 50% and 70%. The reconstructing monthly mean surface temperature using the deep
+  learning image inpainting method RFR (Recurrent Feature Reasoning) exhibits an average of 63% and 71%
+  improvement of accuracy over Kriging and IDW under different missing rates. With regard to wind speed,
+  there are still 36% and 50% improvements. In particular, the achieved improvement is even better for
+  the larger missing ratio, such as under the 70% missing rate, where the accuracy of RFR is 68% and 74%
+  higher than Kriging and IDW for temperature and also 38% and 46% higher for wind speed. In addition,
+  the PI-RFR (Physics-Informed Recurrent Feature Reasoning) method we proposed is initialized using the
+  spatial pattern data simulated by the numerical climate model instead of the unified average. Compared
+  with RFR, PI-RFR has an average accuracy improvement of 10% for temperature and 9% for wind speed. When
+  applied to reconstruct the spatial pattern based on the Antarctic site observations, where the missing
+  rate is over 90%, the proposed method exhibits more spatial characteristics than Kriging and IDW.
+significance: 3
+cited_by: 13
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

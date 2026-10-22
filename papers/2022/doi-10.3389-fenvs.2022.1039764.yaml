@@ -1,0 +1,58 @@
+id: doi-10.3389-fenvs.2022.1039764
+title: Spatiotemporal model based on transformer for bias correction and temporal downscaling of forecasts
+authors:
+- Xiang Li
+- Jiping Guan
+- Jie Xiang
+- Lifeng Zhang
+- Fuhan Zhang
+date: '2022-11-25'
+year: 2022
+venue: Frontiers in Environmental Science
+venue_type: journal
+ids:
+  doi: 10.3389/fenvs.2022.1039764
+  openalex: W4310039988
+links:
+  paper: https://doi.org/10.3389/fenvs.2022.1039764
+  pdf: https://www.frontiersin.org/articles/10.3389/fenvs.2022.1039764/pdf
+topic: post-processing
+topics:
+- downscaling
+type: model
+method:
+- transformer
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: Swin-transformer U-Net corrects NWP 2 m temperature and 10 m wind biases and produces hourly
+  temporal downscaling, cutting RMSE by 0.78 versus the original forecasts.
+abstract: Numerical weather prediction (NWP) provides the future state of the atmosphere and is a major
+  tool for weather forecasting. However, NWP has inevitable errors and requires bias correction to obtain
+  more accurate forecasts. NWP is based on discrete numerical calculations, which inevitably result in
+  a loss in resolution, and downscaling provides important support for obtaining detailed weather forecasts.
+  In this paper, based on the spatio-temporal modeling approach, the Spatio-Temporal Transformer U-Net
+  (ST-UNet) is constructed based on the U-net framework using the swin transformer and convolution to
+  perform bias correction and temporal downscaling. The encoder part extracts features from the multi-time
+  forecasts, and the decoder part uses the features from the encoder part and the constructed query vector
+  for feature reconstruction. Besides, the query builder block generates different query vectors to accomplish
+  different tasks. Multi-time bias correction was conducted for the 2-m temperature and the 10-m wind
+  component. The results showed that the deep learning model significantly outperformed the anomaly numerical
+  correction with observations, and ST-UNet also outperformed the U-Net model for single-time bias correction
+  and the 3-dimensional U-Net (3D-UNet) model for multi-time bias correction. Forecasts from ST-UNet obtained
+  the smallest root mean square error and the largest accuracy and correlation coefficient on both the
+  2-m temperature and 10-m wind component experiments. Meanwhile, temporal downscaling was performed to
+  obtain hourly forecasts based on ST-UNet, which increased the temporal resolution and reduced the root
+  mean square error by 0.78 compared to the original forecasts. Therefore, our proposed model can be applied
+  to both bias correction and temporal downscaling tasks and achieve good accuracy.
+significance: 3
+cited_by: 21
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

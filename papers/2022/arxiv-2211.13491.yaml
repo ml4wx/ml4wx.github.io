@@ -1,0 +1,43 @@
+id: arxiv-2211.13491
+title: Spatial Mixture-of-Experts
+authors:
+- Nikoli Dryden
+- Torsten Hoefler
+date: '2022-11-24'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2211.13491'
+links:
+  paper: https://arxiv.org/abs/2211.13491
+  pdf: https://arxiv.org/pdf/2211.13491
+topic: global-medium-range
+topics:
+- post-processing
+type: model
+method:
+- other
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: Spatial Mixture-of-Experts layer routes experts by location and sets new state of the art for
+  medium-range weather prediction and ensemble post-processing.
+abstract: Many data have an underlying dependence on spatial location; it may be weather on the Earth,
+  a simulation on a mesh, or a registered image. Yet this feature is rarely taken advantage of, and violates
+  common assumptions made by many neural network layers, such as translation equivariance. Further, many
+  works that do incorporate locality fail to capture fine-grained structure. To address this, we introduce
+  the Spatial Mixture-of-Experts (SMoE) layer, a sparsely-gated layer that learns spatial structure in
+  the input domain and routes experts at a fine-grained level to utilize it. We also develop new techniques
+  to train SMoEs, including a self-supervised routing loss and damping expert errors. Finally, we show
+  strong results for SMoEs on numerous tasks, and set new state-of-the-art results for medium-range weather
+  prediction and post-processing ensemble weather forecasts.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

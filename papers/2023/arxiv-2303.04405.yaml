@@ -1,0 +1,59 @@
+id: arxiv-2303.04405
+title: Intermediate and Future Frame Prediction of Geostationary Satellite Imagery With Warp and Refine
+  Network
+authors:
+- Minseok Seo
+- Yeji Choi
+- Hyungon Ry
+- Heesun Park
+- Hyungkun Bae
+- Hyesook Lee
+- Wanseok Seo
+date: '2023-03-08'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2303.04405'
+  openalex: W4323710166
+links:
+  paper: https://arxiv.org/abs/2303.04405
+  pdf: https://arxiv.org/pdf/2303.04405
+orgs:
+- nvidia
+- kma
+topic: nowcasting
+topics:
+- observations-remote-sensing
+type: model
+method:
+- cnn
+- other
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: WR-Net combines TV-L1 optical flow warping with a refinement network to interpolate and predict
+  GK2A geostationary imagery from 4- to 2-minute intervals.
+abstract: Geostationary satellite imagery has applications in climate and weather forecasting, planning
+  natural energy resources, and predicting extreme weather events. For precise and accurate prediction,
+  higher spatial and temporal resolution of geostationary satellite imagery is important. Although recent
+  geostationary satellite resolution has improved, the long-term analysis of climate applications is limited
+  to using multiple satellites from the past to the present due to the different resolutions. To solve
+  this problem, we proposed warp and refine network (WR-Net). WR-Net is divided into an optical flow warp
+  component and a warp image refinement component. We used the TV-L1 algorithm instead of deep learning-based
+  approaches to extract the optical flow warp component. The deep-learning-based model is trained on the
+  human-centric view of the RGB channel and does not work on geostationary satellites, which is gray-scale
+  one-channel imagery. The refinement network refines the warped image through a multi-temporal fusion
+  layer. We evaluated WR-Net by interpolation of temporal resolution at 4 min intervals to 2 min intervals
+  in large-scale GK2A geostationary meteorological satellite imagery. Furthermore, we applied WR-Net to
+  the future frame prediction task and showed that the explicit use of optical flow can help future frame
+  prediction.
+significance: 3
+cited_by: 2
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

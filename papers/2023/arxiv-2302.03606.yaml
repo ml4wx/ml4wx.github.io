@@ -1,0 +1,54 @@
+id: arxiv-2302.03606
+title: Merging satellite and gauge-measured precipitation using LightGBM with an emphasis on extreme quantiles
+authors:
+- Hristos Tyralis
+- Georgia Papacharalampous
+- Nikolaos Doulamis
+- Anastasios Doulamis
+date: '2023-02-02'
+year: 2023
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing 16 (2023) 6969-6979
+venue_type: journal
+ids:
+  arxiv: '2302.03606'
+  doi: 10.1109/jstars.2023.3297013
+links:
+  paper: https://arxiv.org/abs/2302.03606
+  pdf: https://arxiv.org/pdf/2302.03606
+topic: observations-remote-sensing
+topics:
+- post-processing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- stations
+status: research
+summary: Applies LightGBM to probabilistically merge contiguous-US gauge data with PERSIANN and IMERG
+  satellite precipitation, outperforming quantile regression forests at extreme quantiles.
+abstract: Knowing the actual precipitation in space and time is critical in hydrological modelling applications,
+  yet the spatial coverage with rain gauge stations is limited due to economic constraints. Gridded satellite
+  precipitation datasets offer an alternative option for estimating the actual precipitation by covering
+  uniformly large areas, albeit related estimates are not accurate. To improve precipitation estimates,
+  machine learning is applied to merge rain gauge-based measurements and gridded satellite precipitation
+  products. In this context, observed precipitation plays the role of the dependent variable, while satellite
+  data play the role of predictor variables. Random forests is the dominant machine learning algorithm
+  in relevant applications. In those spatial predictions settings, point predictions (mostly the mean
+  or the median of the conditional distribution) of the dependent variable are issued. The aim of the
+  manuscript is to solve the problem of probabilistic prediction of precipitation with an emphasis on
+  extreme quantiles in spatial interpolation settings. Here we propose, issuing probabilistic spatial
+  predictions of precipitation using Light Gradient Boosting Machine (LightGBM). LightGBM is a boosting
+  algorithm, highlighted by prize-winning entries in prediction and forecasting competitions. To assess
+  LightGBM, we contribute a large-scale application that includes merging daily precipitation measurements
+  in contiguous US with PERSIANN and GPM-IMERG satellite precipitation data. We focus on extreme quantiles
+  of the probability distribution of the dependent variable, where LightGBM outperforms quantile regression
+  forests (QRF, a variant of random forests) in terms of quantile score at extreme quantiles. Our study
+  offers understanding of probabilistic predictions in spatial settings using machine learning.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

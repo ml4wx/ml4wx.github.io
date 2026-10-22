@@ -1,0 +1,45 @@
+id: arxiv-2211.16824
+title: 'WeatherFusionNet: Predicting Precipitation from Satellite Data'
+authors:
+- Jiří Pihrt
+- Rudolf Raevskiy
+- Petr Šimánek
+- Matej Choma
+date: '2022-11-30'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2211.16824'
+links:
+  paper: https://arxiv.org/abs/2211.16824
+  pdf: https://arxiv.org/pdf/2211.16824
+  code: https://github.com/Datalab-FIT-CTU/weather4cast-2022
+topic: nowcasting
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+- short
+spatial:
+- regional
+data:
+- satellite
+- radar
+status: research
+summary: U-Net fusing satellite frame prediction and rain extraction won the NeurIPS 2022 Weather4Cast
+  challenge, forecasting severe rain up to eight hours ahead.
+abstract: The short-term prediction of precipitation is critical in many areas of life. Recently, a large
+  body of work was devoted to forecasting radar reflectivity images. The radar images are available only
+  in areas with ground weather radars. Thus, we aim to predict high-resolution precipitation from lower-resolution
+  satellite radiance images. A neural network called WeatherFusionNet is employed to predict severe rain
+  up to eight hours in advance. WeatherFusionNet is a U-Net architecture that fuses three different ways
+  to process the satellite data; predicting future satellite frames, extracting rain information from
+  the current frames, and using the input sequence directly. Using the presented method, we achieved 1st
+  place in the NeurIPS 2022 Weather4Cast Core challenge. The code and trained parameters are available
+  at \url{https://github.com/Datalab-FIT-CTU/weather4cast-2022}.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

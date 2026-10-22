@@ -1,0 +1,54 @@
+id: doi-10.3389-fmars.2022.1077901
+title: Tropical cyclone size estimation based on deep learning using infrared and microwave satellite
+  data
+authors:
+- Jianbo Xu
+- Xiang Wang
+- Haiqi Wang
+- Haiqi Wang
+- Chengwu Zhao
+- Huizan Wang
+- Huizan Wang
+- Junxing Zhu
+date: '2023-01-31'
+year: 2023
+venue: Frontiers in Marine Science
+venue_type: journal
+ids:
+  doi: 10.3389/fmars.2022.1077901
+  openalex: W4318828913
+links:
+  paper: https://doi.org/10.3389/fmars.2022.1077901
+  pdf: https://www.frontiersin.org/articles/10.3389/fmars.2022.1077901/pdf
+topic: observations-remote-sensing
+topics:
+- extremes-hazards
+type: model
+method:
+- cnn
+spatial:
+- global
+data:
+- satellite
+status: research
+summary: TC-Resnet estimates tropical cyclone 34-kt wind radii from infrared and microwave satellite data
+  with MAE of 11.3 nmi and r of 0.907.
+abstract: Tropical cyclone (TC) size is an important parameter for estimating TC risks such as wind damage,
+  rainfall distribution, and storm surge. Satellite observation data are the primary data used to estimate
+  TC size. Traditional methods of TC size estimation rely on a priori knowledge of the meteorological
+  domain and emerging deep learning-based methods do not consider the considerable blurring and background
+  noise in TC cloud systems and the application of multisource observation data. In this paper, we propose
+  TC-Resnet, a deep learning-based model that estimates 34-kt wind radii (R34, commonly used as a measure
+  of TC size) objectively by combining infrared and microwave satellite data. We regarded the resnet-50
+  model as the basic framework and embedded a convolution layer with a 5 × 5 convolution kernel on the
+  shortcut branch in its residual block for downsampling to avoid the information loss problem of the
+  original model. We also introduced a combined channel-spatial dual attention mechanism to suppress the
+  background noise of TC cloud systems. In an R34 estimation experiment based on a global TC dataset containing
+  2003–2017 data, TC-Resnet outperformed existing methods of TC size estimation, obtaining a mean absolute
+  error of 11.287 nmi and a Pearson correlation coefficient of 0.907.
+significance: 3
+cited_by: 10
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,53 @@
+id: doi-10.3390-atmos14020215
+title: Tropical Cyclone Detection from the Thermal Infrared Sensor IASI Data Using the Deep Learning Model
+  YOLOv3
+authors:
+- Lisa Lam
+- Maya George
+- Sébastien Gardoll
+- Sarah A. Safieddine
+- Simon Whitburn
+- Cathy Clerbaux
+date: '2023-01-19'
+year: 2023
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos14020215
+  openalex: W4317623132
+links:
+  paper: https://doi.org/10.3390/atmos14020215
+  pdf: https://www.mdpi.com/2073-4433/14/2/215/pdf?version=1675239007
+topic: observations-remote-sensing
+topics:
+- extremes-hazards
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: YOLOv3 detects tropical cyclones in IASI infrared sounder radiances over the North Atlantic,
+  a proof of concept with AP 78.3% at IoU 0.1.
+abstract: Tropical cyclone (TC) detection is essential to mitigate natural disasters, as TCs can cause
+  significant damage to life, infrastructure and economy. In this study, we applied the deep learning
+  object detection model YOLOv3 to detect TCs in the North Atlantic Basin, using data from the Thermal
+  InfraRed (TIR) Atmospheric Sounding Interferometer (IASI) onboard the Metop satellites. IASI measures
+  the outgoing TIR radiation of the Earth-Atmosphere. For the first time, we provide a proof of concept
+  of the possibility of constructing images required by YOLOv3 from a TIR remote sensor that is not an
+  imager. We constructed a dataset by selecting 50 IASI radiance channels and using them to create images,
+  which we labeled by constructing bounding boxes around TCs using the hurricane database HURDAT2. We
+  trained the YOLOv3 on two settings, first with three “best” selected channels, then using an autoencoder
+  to exploit all 50 channels. We assessed its performance with the Average Precision (AP) metric at two
+  different intersection over union (IoU) thresholds (0.1 and 0.5). The model achieved promising results
+  with AP at IoU threshold 0.1 of 78.31%. Lower performance was achieved with IoU threshold 0.5 (31.05%),
+  showing the model lacks precision regarding the size and position of the predicted boxes. Despite that,
+  we show YOLOv3 demonstrates great potential for TC detection using TIR instruments data.
+significance: 2
+cited_by: 20
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

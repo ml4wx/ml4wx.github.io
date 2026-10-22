@@ -1,0 +1,56 @@
+id: arxiv-2301.01252
+title: Comparison of machine learning algorithms for merging gridded satellite and earth-observed precipitation
+  data
+authors:
+- Georgia Papacharalampous
+- Hristos Tyralis
+- Anastasios Doulamis
+- Nikolaos Doulamis
+date: '2022-12-17'
+year: 2022
+venue: Water 15 (2023) 634
+venue_type: journal
+ids:
+  arxiv: '2301.01252'
+  doi: 10.3390/w15040634
+links:
+  paper: https://arxiv.org/abs/2301.01252
+  pdf: https://arxiv.org/pdf/2301.01252
+topic: observations-remote-sensing
+topics:
+- post-processing
+type: evaluation
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- stations
+status: research
+summary: Comparison of eight machine learning algorithms correcting PERSIANN satellite precipitation against
+  GHCN gauges over CONUS finds XGBoost and random forests most accurate.
+abstract: 'Gridded satellite precipitation datasets are useful in hydrological applications as they cover
+  large regions with high density. However, they are not accurate in the sense that they do not agree
+  with ground-based measurements. An established means for improving their accuracy is to correct them
+  by adopting machine learning algorithms. This correction takes the form of a regression problem, in
+  which the ground-based measurements have the role of the dependent variable and the satellite data are
+  the predictor variables, together with topography factors (e.g., elevation). Most studies of this kind
+  involve a limited number of machine learning algorithms, and are conducted for a small region and for
+  a limited time period. Thus, the results obtained through them are of local importance and do not provide
+  more general guidance and best practices. To provide results that are generalizable and to contribute
+  to the delivery of best practices, we here compare eight state-of-the-art machine learning algorithms
+  in correcting satellite precipitation data for the entire contiguous United States and for a 15-year
+  period. We use monthly data from the PERSIANN (Precipitation Estimation from Remotely Sensed Information
+  using Artificial Neural Networks) gridded dataset, together with monthly earth-observed precipitation
+  data from the Global Historical Climatology Network monthly database, version 2 (GHCNm). The results
+  suggest that extreme gradient boosting (XGBoost) and random forests are the most accurate in terms of
+  the squared error scoring function. The remaining algorithms can be ordered as follows from the best
+  to the worst: Bayesian regularized feed-forward neural networks, multivariate adaptive polynomial splines
+  (poly-MARS), gradient boosting machines (gbm), multivariate adaptive regression splines (MARS), feed-forward
+  neural networks, linear regression.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,53 @@
+id: doi-10.1109-jstars.2023.3238016
+title: Advection-Free Convolutional Neural Network for Convective Rainfall Nowcasting
+authors:
+- Jenna Ritvanen
+- Bent Harnist
+- Miguel Aldana
+- Terhi Mäkinen
+- Seppo Pulkkinen
+date: '2023-01-01'
+year: 2023
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2023.3238016
+  openalex: W4317437760
+links:
+  paper: https://doi.org/10.1109/jstars.2023.3238016
+  pdf: https://ieeexplore.ieee.org/ielx7/4609443/9973430/10021317.pdf
+topic: nowcasting
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Lagrangian CNN models rainfall growth and decay from advected radar differences, improving heavy-rain
+  nowcast POD over RainNet and LINDA on Finnish radar.
+abstract: Nowcasts (i.e., short-term forecasts from 5 min to 6 h) of heavy rainfall are important for
+  applications such as flash flood predictions. However, current precipitation nowcasting methods based
+  on the extrapolation of radar echoes have a limited ability to predict the growth and decay of rainfall.
+  While deep learning applications have recently shown improvement compared to extrapolation-based methods,
+  they still struggle to correctly nowcast small-scale high-intensity rainfall. To address this issue,
+  we present a novel model called the Lagrangian convolutional neural network (L-CNN) that separates the
+  growth and decay of rainfall from motion using the advection equation. In the model, differences between
+  consecutive rain rate fields in Lagrangian coordinates are fed into a U-Net-based CNN, known as RainNet,
+  that was trained with the root-mean-squared-error loss function. This results in a better representation
+  of rainfall temporal evolution compared to the RainNet and the extrapolation-based LINDA model that
+  were used as reference models. On Finnish weather radar data, the L-CNN underestimates rainfall less
+  than RainNet, demonstrated by greater POD (29% at 30 min at 1 mm·h$^{-1}$threshold) and smaller bias
+  (98% at 15 min). The increased ETS values over LINDA for leadtimes under 15 min, with maximum increases
+  of 7% (5 mm·h$^{-1}$threshold) and 10% (10 mm·h$^{-1}$), show that the L-CNN represents the growth and
+  decay of heavy rainfall more accurately than LINDA. This implies that nowcasting of heavy rainfall is
+  improved when growth and decay are predicted using a deep learning model.
+significance: 3
+cited_by: 41
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

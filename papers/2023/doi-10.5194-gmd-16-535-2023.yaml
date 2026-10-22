@@ -1,0 +1,57 @@
+id: doi-10.5194-gmd-16-535-2023
+title: Customized deep learning for precipitation bias correction and downscaling
+authors:
+- Fang Wang
+- Di Tian
+- Mark Carroll
+date: '2023-01-25'
+year: 2023
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-16-535-2023
+  openalex: W4317936154
+links:
+  paper: https://doi.org/10.5194/gmd-16-535-2023
+  pdf: https://gmd.copernicus.org/articles/16/535/2023/gmd-16-535-2023.pdf
+orgs:
+- nasa
+topic: downscaling
+topics:
+- post-processing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- era5
+- radar
+status: research
+summary: Customized deep learning with weighted losses, multitask learning and covariates improves hourly
+  precipitation bias correction and downscaling, better capturing extremes than quantile mapping.
+abstract: Abstract. Systematic biases and coarse resolutions are major limitations of current precipitation
+  datasets. Many deep learning (DL) based studies have been conducted for precipitation bias correction
+  and downscaling. However, it is still challenging for the current approaches to handle complex features
+  of hourly precipitation, resulting in incapability of reproducing small scale features, such as extreme
+  events. This study developed a customized DL model by incorporating customized loss functions, multitask
+  learning, and physically relevant covariates to bias correct and downscale hourly precipitation data.
+  We designed six scenarios to systematically evaluate the added values of weighted loss functions, multi-task
+  learning, and atmospheric covariates compared to the regular DL and statistical approaches. The model
+  was trained and tested using the Modern-Era Retrospective analysis for Research and Applications version
+  2 (MERRA2) reanalysis and the Stage IV radar observations over northern coastal region of Gulf of Mexico.
+  We found that all the scenarios with weighted loss functions performed notably better than the other
+  scenarios with conventional loss functions and a quantile mapping-based approach at hourly, daily, and
+  monthly time scales as well as extremes. Multitask learning showed improved performance on capturing
+  hourly precipitation climatology, aggregated precipitation at daily and monthly scales, and detailed
+  features of extreme events, while the improvement is not as large as from weighted loss functions. Accounting
+  for atmospheric covariates further improved the model performance for capturing extreme events. We show
+  that the customized DL model can better downscale and bias correct precipitation datasets and provide
+  improved precipitation estimates at fine spatial and temporal resolutions where regular DL and statistical
+  methods experiencing challenges.
+significance: 4
+cited_by: 70
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

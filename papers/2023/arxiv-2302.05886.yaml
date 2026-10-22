@@ -1,0 +1,55 @@
+id: arxiv-2302.05886
+title: An unsupervised learning approach for predicting wind farm power and downstream wakes using weather
+  patterns
+authors:
+- Mariana C A Clare
+- Simon C Warder
+- Robert Neal
+- B Bhaskaran
+- Matthew D Piggott
+date: '2023-02-12'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2302.05886'
+links:
+  paper: https://arxiv.org/abs/2302.05886
+  pdf: https://arxiv.org/pdf/2302.05886
+topic: applications-impacts
+topics:
+- climate-analysis-attribution
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- era5
+- nwp-analysis
+status: research
+summary: Unsupervised clustering of ERA5 wind patterns drives a few WRF runs, reproducing a year of wind
+  farm power and wake predictions at under 2% of the compute.
+abstract: Wind energy resource assessment typically requires numerical models, but such models are too
+  computationally intensive to consider multi-year timescales. Increasingly, unsupervised machine learning
+  techniques are used to identify a small number of representative weather patterns to simulate long-term
+  behaviour. Here we develop a novel wind energy workflow that for the first time combines weather patterns
+  derived from unsupervised clustering techniques with numerical weather prediction models (here WRF)
+  to obtain efficient and accurate long-term predictions of power and downstream wakes from an entire
+  wind farm. We use ERA5 reanalysis data clustering not only on low altitude pressure but also, for the
+  first time, on the more relevant variable of wind velocity. We also compare the use of large-scale and
+  local-scale domains for clustering. A WRF simulation is run at each of the cluster centres and the results
+  are aggregated using a novel post-processing technique. By applying our workflow to two different regions,
+  we show that our long-term predictions agree with those from a year of WRF simulations but require less
+  than 2% of the computational time. The most accurate results are obtained when clustering on wind velocity.
+  Moreover, clustering over the Europe-wide domain is sufficient for predicting wind farm power output,
+  but downstream wake predictions benefit from the use of smaller domains. Finally, we show that these
+  downstream wakes can affect the local weather patterns. Our approach facilitates multi-year predictions
+  of power output and downstream farm wakes, by providing a fast, accurate and flexible methodology that
+  is applicable to any global region. Moreover, these accurate long-term predictions of downstream wakes
+  provide the first tool to help mitigate the effects of wind energy loss downstream of wind farms, since
+  they can be used to determine optimum wind farm locations.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

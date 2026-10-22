@@ -1,0 +1,52 @@
+id: arxiv-2302.03845
+title: 'Two-step hyperparameter optimization method: Accelerating hyperparameter search by using a fraction
+  of a training dataset'
+authors:
+- Sungduk Yu
+- Mike Pritchard
+- Po-Lun Ma
+- Balwinder Singh
+- Sam Silva
+date: '2023-02-08'
+year: 2023
+venue: Artificial Intelligence for the Earth Systems, 3(1), 2024, e230013
+venue_type: journal
+ids:
+  arxiv: '2302.03845'
+  doi: 10.1175/aies-d-23-0013.1
+links:
+  paper: https://arxiv.org/abs/2302.03845
+  pdf: https://arxiv.org/pdf/2302.03845
+topic: hybrid-parameterization
+type: model
+method:
+- classical-ml
+data:
+- other
+status: research
+summary: A two-step hyperparameter search tuned on a tiny data fraction gives up to 135x speedup, demonstrated
+  on neural emulators of aerosol activation in climate models.
+abstract: Hyperparameter optimization (HPO) is an important step in machine learning (ML) model development,
+  but common practices are archaic -- primarily relying on manual or grid searches. This is partly because
+  adopting advanced HPO algorithms introduces added complexity to the workflow, leading to longer computation
+  times. This poses a notable challenge to ML applications, as suboptimal hyperparameter selections curtail
+  the potential of ML model performance, ultimately obstructing the full exploitation of ML techniques.
+  In this article, we present a two-step HPO method as a strategic solution to curbing computational demands
+  and wait times, gleaned from practical experiences in applied ML parameterization work. The initial
+  phase involves a preliminary evaluation of hyperparameters on a small subset of the training dataset,
+  followed by a re-evaluation of the top-performing candidate models post-retraining with the entire training
+  dataset. This two-step HPO method is universally applicable across HPO search algorithms, and we argue
+  it has attractive efficiency gains. As a case study, we present our recent application of the two-step
+  HPO method to the development of neural network emulators for aerosol activation. Although our primary
+  use case is a data-rich limit with many millions of samples, we also find that using up to 0.0025% of
+  the data (a few thousand samples) in the initial step is sufficient to find optimal hyperparameter configurations
+  from much more extensive sampling, achieving up to 135-times speedup. The benefits of this method materialize
+  through an assessment of hyperparameters and model performance, revealing the minimal model complexity
+  required to achieve the best performance. The assortment of top-performing models harvested from the
+  HPO process allows us to choose a high-performing model with a low inference cost for efficient use
+  in global climate models (GCMs).
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

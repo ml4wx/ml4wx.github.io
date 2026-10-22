@@ -1,0 +1,58 @@
+id: doi-10.3389-fmars.2022.956813
+title: Typhoon cloud image prediction based on enhanced multi-scale deep neural network
+authors:
+- Xin Wang
+- Mengjiao Qin
+- Zhe Zhang
+- Yuanyuan Wang
+- Zhenhong Du
+- Nan Wang
+date: '2023-01-11'
+year: 2023
+venue: Frontiers in Marine Science
+venue_type: journal
+ids:
+  doi: 10.3389/fmars.2022.956813
+  openalex: W4315650665
+links:
+  paper: https://doi.org/10.3389/fmars.2022.956813
+  pdf: https://www.frontiersin.org/articles/10.3389/fmars.2022.956813/pdf
+topic: nowcasting
+topics:
+- extremes-hazards
+type: model
+method:
+- cnn
+- rnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Enhanced multi-scale ConvLSTM network predicts typhoon cloud images three hours ahead from satellite
+  sequences with sharper detail than prior methods.
+abstract: 'Typhoons threaten individuals’ lives and property. The accurate prediction of typhoon activity
+  is crucial for reducing those threats and for risk assessment. Satellite images are widely used in typhoon
+  research because of their wide coverage, timeliness, and relatively convenient acquisition. They are
+  also important data sources for typhoon cloud image prediction. Studies on typhoon cloud image prediction
+  have rarely used multi-scale features, which cause significant information loss and lead to fuzzy predictions
+  with insufficient detail. Therefore, we developed an enhanced multi-scale deep neural network (EMSN)
+  to predict a 3-hour-advance typhoon cloud image, which has two parts: a feature enhancement module and
+  a feature encode-decode module. The inputs of the EMSN were eight consecutive images, and a feature
+  enhancement module was applied to extract features from the historical inputs. To consider that the
+  images of different time steps had different contributions to the output result, we used channel attention
+  in this module to enhance important features. Because of the spatially correlated and spatially heterogeneous
+  information at different scales, the feature encode-decode module used ConvLSTMs to capture spatiotemporal
+  features at different scales. In addition, to reduce information loss during downsampling, skip connections
+  were implemented to maintain more low-level information. To verify the effectiveness and applicability
+  of our proposed EMSN, we compared various algorithms and explored the strengths and limitations of the
+  model. The experimental results demonstrated that the EMSN efficiently and accurately predicted typhoon
+  cloud images with higher quality than in the literature.'
+significance: 2
+cited_by: 5
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

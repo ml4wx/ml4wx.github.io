@@ -1,0 +1,45 @@
+id: arxiv-2211.14434
+title: Multi-Step Short-Term Wind Speed Prediction with Rank Pooling and Fast Fourier Transformation
+authors:
+- Hailong Shu
+date: '2022-11-23'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2211.14434'
+links:
+  paper: https://arxiv.org/abs/2211.14434
+  pdf: https://arxiv.org/pdf/2211.14434
+topic: local-forecasting
+type: model
+method:
+- rnn
+- other
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: A hybrid rank-pooling and FFT model with MLP or LSTM heads improves multi-step station wind speed
+  forecasts over single and hybrid baselines using 2010-2020 data.
+abstract: Short-term wind speed prediction is essential for economical wind power utilization. The real-world
+  wind speed data is typically intermittent and fluctuating, presenting great challenges to existing shallow
+  models. In this paper, we present a novel deep hybrid model for multi-step wind speed prediction, namely
+  LR-FFT-RP-MLP/LSTM (Linear Fast Fourier Transformation Rank Pooling Multiple-Layer Perception/Long Short-Term
+  Memory). Our hybrid model processes the local and global input features simultaneously. We leverage
+  Rank Pooling (RP) for the local feature extraction to capture the temporal structure while maintaining
+  the temporal order. Besides, to understand the wind periodic patterns, we exploit Fast Fourier Transformation
+  (FFT) to extract global features and relevant frequency components in the wind speed data. The resulting
+  local and global features are respectively integrated with the original data and are fed into an MLP/LSTM
+  layer for the initial wind speed predictions. Finally, we leverage a linear regression layer to collaborate
+  these initial predictions to produce the final wind speed prediction. The proposed hybrid model is evaluated
+  using real wind speed data collected from 2010 to 2020, demonstrating superior forecasting capabilities
+  when compared to state-of-the-art single and hybrid models. Overall, this study presents a promising
+  approach for improving the accuracy of wind speed forecasting.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,49 @@
+id: arxiv-2211.04392
+title: Reduced Order Probabilistic Emulation for Physics-Based Thermosphere Models
+authors:
+- Richard J. Licata
+- Piyush M. Mehta
+date: '2022-11-08'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2211.04392'
+  doi: 10.1029/2022sw003345
+links:
+  paper: https://arxiv.org/abs/2211.04392
+  pdf: https://arxiv.org/pdf/2211.04392
+topic: climate-emulation
+topics:
+- extremes-hazards
+type: model
+method:
+- rnn
+timescale:
+- short
+spatial:
+- global
+data:
+- other
+status: research
+summary: Builds a PCA plus LSTM probabilistic surrogate for the TIE-GCM thermosphere model, giving density
+  distributions with under 5 km satellite position bias in the 2003 storm.
+abstract: The geospace environment is volatile and highly driven. Space weather has effects on Earth's
+  magnetosphere that cause a dynamic and enigmatic response in the thermosphere, particularly on the evolution
+  of neutral mass density. Many models exist that use space weather drivers to produce a density response,
+  but these models are typically computationally expensive or inaccurate for certain space weather conditions.
+  In response, this work aims to employ a probabilistic machine learning (ML) method to create an efficient
+  surrogate for the Thermosphere Ionosphere Electrodynamics General Circulation Model (TIE-GCM), a physics-based
+  thermosphere model. Our method leverages principal component analysis to reduce the dimensionality of
+  TIE-GCM and recurrent neural networks to model the dynamic behavior of the thermosphere much quicker
+  than the numerical model. The newly developed reduced order probabilistic emulator (ROPE) uses Long-Short
+  Term Memory neural networks to perform time-series forecasting in the reduced state and provide distributions
+  for future density. We show that across the available data, TIE-GCM ROPE has similar error to previous
+  linear approaches while improving storm-time modeling. We also conduct a satellite propagation study
+  for the significant November 2003 storm which shows that TIE-GCM ROPE can capture the position resulting
+  from TIE-GCM density with < 5 km bias. Simultaneously, linear approaches provide point estimates that
+  can result in biases of 7 - 18 km.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

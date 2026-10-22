@@ -1,0 +1,53 @@
+id: doi-10.1109-access.2023.3337998
+title: Sub-Seasonal Precipitation Bias-Correction in Thailand Using Attention U-Net With Seasonal and
+  Meteorological Effects
+authors:
+- Tanatorn Faijaroenmongkol
+- Kanoksri Sarinnapakorn
+- Peerapon Vateekul
+date: '2023-01-01'
+year: 2023
+venue: IEEE Access
+venue_type: journal
+ids:
+  doi: 10.1109/access.2023.3337998
+  openalex: W4389164251
+links:
+  paper: https://doi.org/10.1109/access.2023.3337998
+  pdf: https://ieeexplore.ieee.org/ielx7/6287639/6514899/10335653.pdf
+topic: post-processing
+topics:
+- s2s-seasonal
+type: model
+method:
+- cnn
+timescale:
+- s2s
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Attention U-Net with multi-scale residual blocks bias-corrects CFSv2 sub-seasonal rainfall over
+  Thailand, improving RMSE by 8.65% over linear downscaling.
+abstract: 'There have been many attempts to forecast sub-seasonal to seasonal (S2S) precipitation. One
+  of them is the Climate Forecast System version 2 (CFSv2) model; however, a bias correction must be applied
+  before CFSv2 data can be used in each local region. In this research, we aim to address the S2S precipitation
+  forecasting using our new bias correction on CFSv2 data. Our model is based on the deep learning model:
+  Attention U-Net having two proposed enhancements: (i) a multi-scale residual block to learn patterns
+  on different scales and (ii) a combination of customized regression loss and classification loss. Further,
+  we apply a log scaler to reduce the impact of skewness in the data. Finally, seasonal and meteorological
+  effects are provided as additional input for our model. CFSv2 is employed as a dataset to be corrected
+  in our study, while rainfall data from Thailand’s Hydro-Informatics Institute (HII) is served as the
+  ground truth. In the result, it demonstrates that our model outperforms two baseline models: namely,
+  a linear-downscaling technique (traditional approach) and a traditional Attention U-Net model. Our model’s
+  root mean square error (RMSE) and temporal correlation coefficient (TCC) improve about 8.65% and 13.77%
+  respectively, over the linear-downscaling technique. Besides the results of the Attention U-Net model
+  reveal that our model’s RMSE and TCC improve by about 15.56% and 12.06%, respectively.'
+significance: 3
+cited_by: 12
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

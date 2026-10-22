@@ -1,0 +1,60 @@
+id: doi-10.3390-s23052609
+title: 'Pred-SF: A Precipitation Prediction Model Based on Deep Neural Networks'
+authors:
+- Rongnian Tang
+- Pu Zhang
+- Jingjin Wu
+- Youlong Chen
+- Lingyu Dong
+- Song Tang
+- Chuang Li
+date: '2023-02-27'
+year: 2023
+venue: Sensors
+venue_type: journal
+ids:
+  doi: 10.3390/s23052609
+  openalex: W4322501642
+links:
+  paper: https://doi.org/10.3390/s23052609
+  pdf: https://www.mdpi.com/1424-8220/23/5/2609/pdf?version=1677487599
+topic: nowcasting
+topics:
+- observations-remote-sensing
+type: model
+method:
+- rnn
+- transformer
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- era5
+- satellite
+status: research
+summary: Pred-SF combines PredRNN-V2 with a stepwise refinement network to predict 4-hour precipitation
+  for a target area from ERA5 multivariate fields and GPM data.
+abstract: How to predict precipitation accurately and efficiently is the key and difficult problem in
+  the field of weather forecasting. At present, we can obtain accurate meteorological data through many
+  high-precision weather sensors and use them to forecast precipitation. However, the common numerical
+  weather forecasting methods and radar echo extrapolation methods have insurmountable defects. Based
+  on some common characteristics of meteorological data, this paper proposes a Pred-SF model for precipitation
+  prediction in target areas. The model focuses on the combination of multiple meteorological modal data
+  to carry out self-cyclic prediction and a step-by-step prediction structure. The model divides the precipitation
+  prediction into two steps. In the first step, the spatial encoding structure and PredRNN-V2 network
+  are used to construct the autoregressive spatio-temporal prediction network for the multi-modal data,
+  and the preliminary predicted value of the multi-modal data is generated frame by frame. In the second
+  step, the spatial information fusion network is used to further extract and fuse the spatial characteristics
+  of the preliminary predicted value and, finally, output the predicted precipitation value of the target
+  region. In this paper, ERA5 multi-meteorological mode data and GPM precipitation measurement data are
+  used for testing to predict the continuous precipitation of a specific area for 4 h. The experimental
+  results show that Pred-SF has strong precipitation prediction ability. Some comparative experiments
+  were also set up for comparison to demonstrate the advantages of the combined prediction method of multi-modal
+  data and the stepwise prediction method of Pred-SF.
+significance: 3
+cited_by: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

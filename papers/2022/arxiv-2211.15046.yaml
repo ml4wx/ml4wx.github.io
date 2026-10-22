@@ -1,0 +1,50 @@
+id: arxiv-2211.15046
+title: 'PCT-CycleGAN: Paired Complementary Temporal Cycle-Consistent Adversarial Networks for Radar-Based
+  Precipitation Nowcasting'
+authors:
+- Jaeho Choi
+- Yura Kim
+- Kwang-Ho Kim
+- Sung-Hwa Jung
+- Ikhyun Cho
+date: '2022-11-28'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2211.15046'
+links:
+  paper: https://arxiv.org/abs/2211.15046
+  pdf: https://arxiv.org/pdf/2211.15046
+topic: nowcasting
+type: model
+method:
+- gan-vae
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: CycleGAN-style model with forward and backward temporal cycles generates radar precipitation
+  10 minutes ahead and rolls out 2-hour nowcasts with a heavy-rain loss.
+abstract: The precipitation nowcasting methods have been elaborated over the centuries because rain has
+  a crucial impact on human life. Not only quantitative precipitation forecast (QPF) models and convolutional
+  long short-term memory (ConvLSTM), but also various sophisticated methods such as the latest MetNet-2
+  are emerging. In this paper, we propose a paired complementary temporal cycle-consistent adversarial
+  networks (PCT-CycleGAN) for radar-based precipitation nowcasting, inspired by cycle-consistent adversarial
+  networks (CycleGAN), which shows strong performance in image-to-image translation. PCT-CycleGAN generates
+  temporal causality using two generator networks with forward and backward temporal dynamics in paired
+  complementary cycles. Each generator network learns a huge number of one-to-one mappings about time-dependent
+  radar-based precipitation data to approximate a mapping function representing the temporal dynamics
+  in each direction. To create robust temporal causality between paired complementary cycles, novel connection
+  loss is proposed. And torrential loss to cover exceptional heavy rain events is also proposed. The generator
+  network learning forward temporal dynamics in PCT-CycleGAN generates radar-based precipitation data
+  10 minutes from the current time. Also, it provides a reliable prediction of up to 2 hours with iterative
+  forecasting. The superiority of PCT-CycleGAN is demonstrated through qualitative and quantitative comparisons
+  with several previous methods.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,60 @@
+id: arxiv-2212.14160
+title: A Deep Learning Method for Real-time Bias Correction of Wind Field Forecasts in the Western North
+  Pacific
+authors:
+- Wei Zhang
+- Yueyue Jiang
+- Junyu Dong
+- Xiaojiang Song
+- Renbo Pang
+- Boyu Guoan
+- Hui Yu
+date: '2022-12-22'
+year: 2022
+venue: Atmospheric Research, Volume 284, 15 March, 2023
+venue_type: journal
+ids:
+  arxiv: '2212.14160'
+  doi: 10.1016/j.atmosres.2022.106586
+  openalex: W4313399947
+links:
+  paper: https://arxiv.org/abs/2212.14160
+  pdf: https://arxiv.org/pdf/2212.14160
+topic: post-processing
+topics:
+- global-medium-range
+type: model
+method:
+- rnn
+timescale:
+- medium
+spatial:
+- regional
+data:
+- nwp-analysis
+- era5
+status: pre-operational
+summary: A multi-task double-encoder TrajGRU corrects ECMWF 10-day wind forecasts over the western North
+  Pacific in real time, cutting speed and direction biases by 8-11% and 9-14%.
+abstract: Forecasts by the European Centre for Medium-Range Weather Forecasts (ECMWF; EC for short) can
+  provide a basis for the establishment of maritime-disaster warning systems, but they contain some systematic
+  biases.The fifth-generation EC atmospheric reanalysis (ERA5) data have high accuracy, but are delayed
+  by about 5 days. To overcome this issue, a spatiotemporal deep-learning method could be used for nonlinear
+  mapping between EC and ERA5 data, which would improve the quality of EC wind forecast data in real time.
+  In this study, we developed the Multi-Task-Double Encoder Trajectory Gated Recurrent Unit (MT-DETrajGRU)
+  model, which uses an improved double-encoder forecaster architecture to model the spatiotemporal sequence
+  of the U and V components of the wind field; we designed a multi-task learning loss function to correct
+  wind speed and wind direction simultaneously using only one model. The study area was the western North
+  Pacific (WNP), and real-time rolling bias corrections were made for 10-day wind-field forecasts released
+  by the EC between December 2020 and November 2021, divided into four seasons. Compared with the original
+  EC forecasts, after correction using the MT-DETrajGRU model the wind speed and wind direction biases
+  in the four seasons were reduced by 8-11% and 9-14%, respectively. In addition, the proposed method
+  modelled the data uniformly under different weather conditions. The correction performance under normal
+  and typhoon conditions was comparable, indicating that the data-driven mode constructed here is robust
+  and generalizable.
+significance: 3
+cited_by: 44
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

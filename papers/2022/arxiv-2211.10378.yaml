@@ -1,0 +1,50 @@
+id: arxiv-2211.10378
+title: 'Comparing Explanation Methods for Traditional Machine Learning Models Part 2: Quantifying Model
+  Explainability Faithfulness and Improvements with Dimensionality Reduction'
+authors:
+- Montgomery Flora
+- Corey Potvin
+- Amy McGovern
+- Shawn Handler
+date: '2022-11-18'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2211.10378'
+links:
+  paper: https://arxiv.org/abs/2211.10378
+  pdf: https://arxiv.org/pdf/2211.10378
+topic: xai-uq-physics
+type: evaluation
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- stations
+- other
+status: research
+summary: Tests explanation faithfulness on weather ML models, showing that reducing correlated features
+  shrinks ranking uncertainty 2-10x and favors permutation importance.
+abstract: Machine learning (ML) models are becoming increasingly common in the atmospheric science community
+  with a wide range of applications. To enable users to understand what an ML model has learned, ML explainability
+  has become a field of active research. In Part I of this two-part study, we described several explainability
+  methods and demonstrated that feature rankings from different methods can substantially disagree with
+  each other. It is unclear, though, whether the disagreement is overinflated due to some methods being
+  less faithful in assigning importance. Herein, "faithfulness" or "fidelity" refer to the correspondence
+  between the assigned feature importance and the contribution of the feature to model performance. In
+  the present study, we evaluate the faithfulness of feature ranking methods using multiple methods. Given
+  the sensitivity of explanation methods to feature correlations, we also quantify how much explainability
+  faithfulness improves after correlated features are limited. Before dimensionality reduction, the feature
+  relevance methods [e.g., SHAP, LIME, ALE variance, and logistic regression (LR) coefficients] were generally
+  more faithful than the permutation importance methods due to the negative impact of correlated features.
+  Once correlated features were reduced, traditional permutation importance became the most faithful method.
+  In addition, the ranking uncertainty (i.e., the spread in rank assigned to a feature by the different
+  ranking methods) was reduced by a factor of 2-10, and excluding less faithful feature ranking methods
+  reduces it further. This study is one of the first to quantify the improvement in explainability from
+  limiting correlated features and knowing the relative fidelity of different explainability methods.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

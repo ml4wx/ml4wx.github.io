@@ -1,0 +1,59 @@
+id: doi-10.5194-gmd-16-1467-2023
+title: Deep learning models for generation of precipitation maps based on numerical weather prediction
+authors:
+- Adrian Rojas-Campos
+- Michael Langguth
+- Martin Wittenbrink
+- Gordon Pipa
+date: '2023-03-08'
+year: 2023
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-16-1467-2023
+  openalex: W4323556541
+links:
+  paper: https://doi.org/10.5194/gmd-16-1467-2023
+  pdf: https://gmd.copernicus.org/articles/16/1467/2023/gmd-16-1467-2023.pdf
+orgs:
+- dwd
+- juelich
+topic: downscaling
+topics:
+- post-processing
+type: model
+method:
+- cnn
+- gan-vae
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: Conditional GAN and U-Net generate high-resolution short-range precipitation maps from full NWP
+  variables, reducing over-forecast bias; CGAN gives the most realistic output.
+abstract: 'Abstract. Numerical Weather Prediction models (NWP) are atmospheric simulations that imitate
+  the dynamics of the atmosphere and provide high-quality forecasts. One of the most significant limitations
+  of NWP is the elevated amount of computational resources required for its functioning, which limits
+  the spatial and temporal resolution of the outputs. Traditional meteorological techniques to increase
+  the resolution are based uniquely on information from a limited group of interest variables. In this
+  study, we offer an alternative approach to the task where we generate precipitation maps based on the
+  complete set of variables of the NWP to generate high-resolution and short-time precipitation predictions.
+  To achieve this, five different deep learning models were trained and evaluated: baseline, U-Net, two
+  deconvolutional networks, and one conditional generative model (CGAN). A total of 20 independent random
+  initializations were performed for each of the models. The predictions were evaluated using MAE and
+  LEPS-based skill scores, ETS, CSI, and frequency bias after applying several thresholds. The models
+  showed a significant improvement in predicting precipitation showing the benefits of including the complete
+  information from the NWP. The algorithms increased the resolution of the predictions and corrected an
+  over-forecast bias from the input information. However, some new models presented new types of bias:
+  U-Net tended to mid-range precipitation events, and the deconvolutional models favored low rain events
+  and generated some spatial smoothing. The CGAN offered the highest quality precipitation forecast generating
+  realistic outputs and indicating possible future research paths.'
+significance: 3
+cited_by: 22
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

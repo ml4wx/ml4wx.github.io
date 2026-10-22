@@ -1,0 +1,63 @@
+id: doi-10.4236-ajcc.2023.124027
+title: Segmentation and Classification of Individual Clouds in Images Captured with Horizon-Aimed Cameras
+  for Nowcasting of Solar Irradiance Absorption
+authors:
+- Bruno Juncklaus Martins
+- Juliana Marian Arrais
+- Allan Cerentini
+- Aldo von Wangenheim
+- Gilberto Perello Ricci Neto
+- Sylvio Luiz Mantelli Neto
+date: '2023-01-01'
+year: 2023
+venue: American Journal of Climate Change
+venue_type: journal
+ids:
+  doi: 10.4236/ajcc.2023.124027
+  openalex: W4389318333
+links:
+  paper: https://doi.org/10.4236/ajcc.2023.124027
+  pdf: http://www.scirp.org/journal/PaperDownload.aspx?paperID=129625
+topic: observations-remote-sensing
+topics:
+- applications-impacts
+type: application
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- stations
+status: research
+summary: U-Net with ResNet18 segments clouds in horizon-camera images for solar irradiance nowcasting,
+  reaching mean IoU 0.6 with class imbalance limiting performance.
+abstract: One important aspect of solar energy generation especially in inter-tropical sites is the local
+  variability of clouds. Satellite images do not have temporal resolution enough to nowcast its impacts
+  on solar plants, this monitoring is made by local cameras. However, cloud detection and monitoring are
+  not trivial due to cloud shape dynamics, the camera is a linear and self-adjusting device, with fish-eye
+  lenses generating a flat image that distorts images near the horizon. The present work focuses on cloud
+  identification to predict its effects on solar plants that are distinct for every site’s climatology
+  and geography. We used RASPBERY-PI-based cameras pointed at the horizon to allow observation of clouds’
+  vertical distribution, not possible with a unique fish-eye lens. A large number of cloud image identification
+  analyses led the researchers to use deep learning methods such as U-net, HRnet, and Detectron. We use
+  transfer learning with weights trained over the “2012 ILSVRC ImageNet” data set and architecture configurations
+  like Resnet, Efficient, and Detectron2. While cloud identification proved a difficult task, we achieved
+  the best results by using Jaccard Coefficient as a validation metric, with the best model being a U-net
+  with Resnet18 using 486 × 648 resolution. This model had an average IoU of 0.6, indicating a satisfactory
+  performance in cloud segmentation. We also observed that the data imbalance affected the overall performance
+  of all models, with the tree class creating a favorable bias. The HRNet model, which works with different
+  resolutions, showed promising results with a more refined segmentation at the pixel level, but it was
+  not necessary to detect the most predominant clouds in the sky. We are currently working on balancing
+  the dataset and mapping out data augmentation transformations for our next experiments. Our ultimate
+  goal is to use such models to predict cloud motion and forecast the impact it will have on solar power
+  generation. The present work has contributed to a better understanding of what techniques work best
+  for cloud identification and paves the way for future studies on the development of a better overall
+  cloud classification model.
+significance: 2
+cited_by: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

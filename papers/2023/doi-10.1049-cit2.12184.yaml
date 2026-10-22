@@ -1,0 +1,51 @@
+id: doi-10.1049-cit2.12184
+title: Multi‐task framework of precipitation nowcasting
+authors:
+- Zheng Zhang
+- Chuyao Luo
+- Baoquan Zhang
+- Hao Jiang
+- Bowen Zhang
+date: '2023-01-26'
+year: 2023
+venue: CAAI Transactions on Intelligence Technology
+venue_type: journal
+ids:
+  doi: 10.1049/cit2.12184
+  openalex: W4318192412
+links:
+  paper: https://doi.org/10.1049/cit2.12184
+topic: nowcasting
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: GCMT-ConvRNN adds motion-field and sub-regression auxiliary tasks with a gradient-correlation
+  loss to improve radar-based precipitation nowcasting.
+abstract: Abstract Precipitation forecasting plays an important role in disaster warning, agricultural
+  production, and other fields. To solve this issue, some deep learning methods are proposed to forecast
+  future radar echo images and convert them into rainfall distributions. Prevailing spatiotemporal sequence
+  prediction methods are usually based on a ConvRNN structure that combines a Convolutional Neural Network
+  and Recurrent Neural Network. However, these existing methods ignore the image change prediction, which
+  causes the coherence of the predicted image has deteriorated. Moreover, these approaches mainly focus
+  on complicating model structure to exploit more historical spatiotemporal representations. Nevertheless,
+  they ignore introducing other valuable information to improve predictions. To tackle these two issues,
+  we propose GCMT‐ConvRNN, a multi‐ask framework of ConvRNN. Except for precipitation nowcasting as the
+  main task, it combines the motion field estimation and sub‐regression as auxiliary tasks. In this framework,
+  the motion field estimation task can provide motion information, and the sub‐regression task offers
+  future information. Besides, to reduce the negative transfer between the auxiliary tasks and the main
+  task, we propose a new loss function based on the correlation of gradients in different tasks. The experiments
+  show that all models applied in our framework achieve stable and effective improvement.
+significance: 3
+cited_by: 6
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

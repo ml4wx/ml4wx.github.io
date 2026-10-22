@@ -1,0 +1,53 @@
+id: doi-10.3390-app13042646
+title: Comparison of Artificial Neural Network and Regression Models for Filling Temporal Gaps of Meteorological
+  Variables Time Series
+authors:
+- Egor Dyukarev
+date: '2023-02-18'
+year: 2023
+venue: Applied Sciences
+venue_type: journal
+ids:
+  doi: 10.3390/app13042646
+  openalex: W4321374616
+links:
+  paper: https://doi.org/10.3390/app13042646
+  pdf: https://www.mdpi.com/2076-3417/13/4/2646/pdf?version=1676712351
+topic: observations-remote-sensing
+topics:
+- post-processing
+type: evaluation
+method:
+- classical-ml
+spatial:
+- local
+data:
+- era5
+- stations
+status: research
+summary: Neural network and Gaussian process models fill gaps and bias-correct ERA5-Land meteorological
+  series against station data, reducing NRMSE to 2–11%.
+abstract: Continuous meteorological variable time series are highly demanded for various climate related
+  studies. Five statistical models were tested for application of temporal gaps filling in time series
+  of surface air pressure, air temperature, relative air humidity, incoming solar radiation, net radiation,
+  and soil temperature. A bilayer artificial neural network, linear regression, linear regression with
+  interactions, and the Gaussian process regression models with exponential and rational quadratic kernel
+  were used to fill the gaps. Models were driven by continuous time series of meteorological variables
+  from the ECMWF (European Centre for Medium-range Weather Forecasts) ERA5-Land reanalysis. Raw ECMWF
+  ERA5-Land reanalysis data are not applicable for characterization of specific local weather conditions.
+  The linear correlation coefficients (CC) between ERA5-Land data and in situ observations vary from 0.61
+  (for wind direction) to 0.99 (for atmospheric pressure). The mean difference is high and estimated at
+  3.2 °C for air temperature and 3.5 hPa for atmospheric pressure. The normalized root-mean-square error
+  (NRMSE) is 5–13%, except for wind direction (NRMSE = 49%). The linear bias correction of ERA5-Land data
+  improves matching between the local and reanalysis data for all meteorological variables. The Gaussian
+  process regression model with an exponential kernel based or bilayered artificial neural network trained
+  on ERA5-Land data significantly shifts raw ERA5-Land data toward the observed values. The NRMSE values
+  reduce to 2–11% for all variables, except wind direction (NRMSE = 22%). CC for the model is above 0.87,
+  except for wind characteristics. The suggested model calibrated against in situ observations can be
+  applied for gap-filling of time series of meteorological variables.
+significance: 3
+cited_by: 15
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,50 @@
+id: arxiv-2303.09200
+title: Reduction of rain-induced errors for wind speed estimation on SAR observations using convolutional
+  neural networks
+authors:
+- Aurélien Colin
+- Pierre Tandeo
+- Charles Peureux
+- Romain Husson
+- Ronan Fablet
+date: '2023-03-16'
+year: 2023
+venue: In IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (2023), Vol.
+  16, pp. 8586-8594
+venue_type: journal
+ids:
+  arxiv: '2303.09200'
+  doi: 10.1109/jstars.2023.3291236
+links:
+  paper: https://arxiv.org/abs/2303.09200
+  pdf: https://arxiv.org/pdf/2303.09200
+orgs:
+- inria
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- satellite
+- nwp-analysis
+- stations
+status: research
+summary: CNN wind-speed estimator for Sentinel-1 SAR reduces rain-induced errors by 27% and 45% under
+  rain above 1 and 3 mm/h, validated against buoy measurements.
+abstract: Synthetic Aperture Radar is known to be able to provide high-resolution estimates of surface
+  wind speed. These estimates usually rely on a Geophysical Model Function (GMF) that has difficulties
+  accounting for non-wind processes such as rain events. Convolutional neural network, on the other hand,
+  have the capacity to use contextual information and have demonstrated their ability to delimit rainfall
+  areas. By carefully building a large dataset of SAR observations from the Copernicus Sentinel-1 mission,
+  collocated with both GMF and atmospheric model wind speeds as well as rainfall estimates, we were able
+  to train a wind speed estimator with reduced errors under rain. Collocations with in-situ wind speed
+  measurements from buoys show a root mean square error that is reduced by 27% (resp. 45%) under rainfall
+  estimated at more than 1 mm/h (resp. 3 mm/h). These results demonstrate the capacity of deep learning
+  models to correct rain-related errors in SAR products.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

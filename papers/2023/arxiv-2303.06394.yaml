@@ -1,0 +1,48 @@
+id: arxiv-2303.06394
+title: A Novel Method Combines Moving Fronts, Data Decomposition and Deep Learning to Forecast Intricate
+  Time Series
+authors:
+- Debdarsan Niyogi
+date: '2023-03-11'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2303.06394'
+links:
+  paper: https://arxiv.org/abs/2303.06394
+  pdf: https://arxiv.org/pdf/2303.06394
+topic: s2s-seasonal
+type: model
+method:
+- rnn
+- other
+timescale:
+- seasonal
+spatial:
+- regional
+data:
+- stations
+status: research
+summary: EWT-MF-LSTM avoids decomposition data leakage and forecasts Indian Summer Monsoon Rainfall with
+  performance parameter 0.86 to 0.95 across phases.
+abstract: A univariate time series with high variability can pose a challenge even to Deep Neural Network
+  (DNN). To overcome this, a univariate time series is decomposed into simpler constituent series, whose
+  sum equals the original series. As demonstrated in this article, the conventional one-time decomposition
+  technique suffers from a leak of information from the future, referred to as a data leak. In this work,
+  a novel Moving Front (MF) method is proposed to prevent data leakage, so that the decomposed series
+  can be treated like other time series. Indian Summer Monsoon Rainfall (ISMR) is a very complex time
+  series, which poses a challenge to DNN and is therefore selected as an example. From the many signal
+  processing tools available, Empirical Wavelet Transform (EWT) was chosen for decomposing the ISMR into
+  simpler constituent series, as it was found to be more effective than the other popular algorithm, Complete
+  Ensemble Empirical Mode Decomposition with Adaptive Noise (CEEMDAN). The proposed MF method was used
+  to generate the constituent leakage-free time series. Predictions and forecasts were made by state-of-the-art
+  Long and Short-Term Memory (LSTM) network architecture, especially suitable for making predictions of
+  sequential patterns. The constituent MF series has been divided into training, testing, and forecasting.
+  It has been found that the model (EWT-MF-LSTM) developed here made exceptionally good train and test
+  predictions, as well as Walk-Forward Validation (WFV), forecasts with Performance Parameter ($PP$) values
+  of 0.99, 0.86, and 0.95, respectively, where $PP$ = 1.0 signifies perfect reproduction of the data.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

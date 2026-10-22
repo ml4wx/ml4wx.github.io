@@ -1,0 +1,48 @@
+id: arxiv-2303.01220
+title: Evaluation of drain, a deep-learning approach to rain retrieval from gpm passive microwave radiometer
+authors:
+- Nicolas Viltard
+- Vibolroth Sambath
+- Pierre Lepetit
+- Audrey Martini
+- Laurent Barthès
+- Cécile Mallet
+date: '2023-03-02'
+year: 2023
+venue: IEEE Transactions on Geoscience and Remote Sensing, In press
+venue_type: journal
+ids:
+  arxiv: '2303.01220'
+links:
+  paper: https://arxiv.org/abs/2303.01220
+  pdf: https://arxiv.org/pdf/2303.01220
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- global
+data:
+- satellite
+- radar
+status: research
+summary: DRAIN, a U-Net on GPM passive microwave brightness temperatures, retrieves rain rates with performance
+  similar to or slightly better than the official GPROF algorithm.
+abstract: 'Retrieval of rain from Passive Microwave radiometers data has been a challenge ever since the
+  launch of the first Defense Meteorological Satellite Program in the late 70s. Enormous progress has
+  been made since the launch of the Tropical Rainfall Measuring Mission (TRMM) in 1997 but until recently
+  the data were processed pixel-by-pixel or taking a few neighboring pixels into account. Deep learning
+  has obtained remarkable improvement in the computer vision field, and offers a whole new way to tackle
+  the rain retrieval problem. The Global Precipitation Measurement (GPM) Core satellite carries similarly
+  to TRMM, a passive microwave radiometer and a radar that share part of their swath. The brightness temperatures
+  measured in the 37 and 89 GHz channels are used like the RGB components of a regular image while rain
+  rate from Dual Frequency radar provides the surface rain. A U-net is then trained on these data to develop
+  a retrieval algorithm: Deep-learning RAIN (DRAIN). With only four brightness temperatures as an input
+  and no other a priori information, DRAIN is offering similar or slightly better performances than GPROF,
+  the GPM official algorithm, in most situations. These performances are assumed to be due to the fact
+  that DRAIN works on an image basis instead of the classical pixel-by-pixel basis.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

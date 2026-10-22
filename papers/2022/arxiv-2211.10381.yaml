@@ -1,0 +1,53 @@
+id: arxiv-2211.10381
+title: Environmental Sensor Placement with Convolutional Gaussian Neural Processes
+authors:
+- Tom R. Andersson
+- Wessel P. Bruinsma
+- Stratis Markou
+- James Requeima
+- Alejandro Coca-Castro
+- Anna Vaughan
+- Anna-Louise Ellis
+- Matthew A. Lazzara
+- Dani Jones
+- J. Scott Hosking
+- Richard E. Turner
+date: '2022-11-18'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2211.10381'
+links:
+  paper: https://arxiv.org/abs/2211.10381
+  pdf: https://arxiv.org/pdf/2211.10381
+topic: observations-remote-sensing
+type: model
+method:
+- other
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Convolutional Gaussian neural processes outperform non-stationary GPs for Antarctic air-temperature
+  sensor placement, giving more informative station siting in a simulated experiment.
+abstract: Environmental sensors are crucial for monitoring weather conditions and the impacts of climate
+  change. However, it is challenging to place sensors in a way that maximises the informativeness of their
+  measurements, particularly in remote regions like Antarctica. Probabilistic machine learning models
+  can suggest informative sensor placements by finding sites that maximally reduce prediction uncertainty.
+  Gaussian process (GP) models are widely used for this purpose, but they struggle with capturing complex
+  non-stationary behaviour and scaling to large datasets. This paper proposes using a convolutional Gaussian
+  neural process (ConvGNP) to address these issues. A ConvGNP uses neural networks to parameterise a joint
+  Gaussian distribution at arbitrary target locations, enabling flexibility and scalability. Using simulated
+  surface air temperature anomaly over Antarctica as training data, the ConvGNP learns spatial and seasonal
+  non-stationarities, outperforming a non-stationary GP baseline. In a simulated sensor placement experiment,
+  the ConvGNP better predicts the performance boost obtained from new observations than GP baselines,
+  leading to more informative sensor placements. We contrast our approach with physics-based sensor placement
+  methods and propose future steps towards an operational sensor placement recommendation system. Our
+  work could help to realise environmental digital twins that actively direct measurement sampling to
+  improve the digital representation of reality.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

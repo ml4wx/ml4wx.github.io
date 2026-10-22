@@ -1,0 +1,58 @@
+id: doi-10.1007-s10546-022-00779-6
+title: Machine Learning Weather Analogs for Near-Surface Variables
+authors:
+- Weiming Hu
+- Guido Cervone
+- George S. Young
+- Luca Delle Monache
+date: '2023-01-12'
+year: 2023
+venue: Boundary-Layer Meteorology
+venue_type: journal
+ids:
+  doi: 10.1007/s10546-022-00779-6
+  openalex: W4315651797
+links:
+  paper: https://doi.org/10.1007/s10546-022-00779-6
+  pdf: https://link.springer.com/content/pdf/10.1007/s10546-022-00779-6.pdf
+topic: post-processing
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: Deep-learning latent space replaces hand-tuned similarity weights in analog ensembles for near-surface
+  wind and solar forecasts, improving RMSE in Pennsylvania.
+abstract: Abstract Numerical weather prediction models and high-performance computing have significantly
+  improved our ability to model near-surface variables, but their uncertainty quantification still remains
+  a challenging task. Ensembles are usually produced to depict a series of possible future states of the
+  atmosphere, as a means to quantify the prediction uncertainty, but this requires multiple instantiation
+  of the model, leading to an increased computational cost. Weather analogs, alternatively, can be used
+  to generate ensembles without repeated model runs. The analog ensemble (AnEn) is a technique to identify
+  similar weather patterns for near-surface variables and quantify forecast uncertainty. Analogs are chosen
+  based on a similarity metric that calculates the weighted multivariate Euclidean distance. However,
+  identifying optimal weights for similarity metric becomes a bottleneck because it involves performing
+  a constrained exhaustive search. As a result, only a few predictors were selected and optimized in previous
+  AnEn studies. A new machine learning similarity metric is proposed to improve the theoretical framework
+  on how weather analogs are identified. First, a deep learning network is trained to generate latent
+  features using all the temporal multivariate input predictors. Analogs are then selected in this latent
+  space, rather than the original predictor space. The proposed method does not require prior predictor
+  selection and an exhaustive search, thus presenting a significant computational benefit and scalability.
+  It is tested for surface wind speed and solar irradiance forecasts in Pennsylvania from 2017 to 2019.
+  Results show that the proposed method is capable of handling a large number of predictors, and it outperforms
+  the original similarity metric in RMSE, bias, and CRPS. Since the data-driven transformation network
+  is trained using the historical record, the proposed method has been found to be more flexible for searching
+  through a longer record.
+significance: 3
+cited_by: 11
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

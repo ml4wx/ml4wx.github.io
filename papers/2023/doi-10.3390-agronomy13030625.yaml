@@ -1,0 +1,59 @@
+id: doi-10.3390-agronomy13030625
+title: 'BMAE-Net: A Data-Driven Weather Prediction Network for Smart Agriculture'
+authors:
+- Jianlei Kong
+- Xiaomeng Fan
+- Xuebo Jin
+- Tingli Su
+- Yuting Bai
+- Huijun Ma
+- Min Zuo
+date: '2023-02-22'
+year: 2023
+venue: Agronomy
+venue_type: journal
+ids:
+  doi: 10.3390/agronomy13030625
+  openalex: W4321496041
+links:
+  paper: https://doi.org/10.3390/agronomy13030625
+  pdf: https://www.mdpi.com/2073-4395/13/3/625/pdf?version=1677060244
+topic: local-forecasting
+topics:
+- applications-impacts
+type: model
+method:
+- rnn
+- other
+timescale:
+- medium
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Bayesian-GRU encoder-decoder with multi-head attention forecasts station temperature and humidity
+  for agriculture, reporting R of 0.80–0.90 at three sites.
+abstract: Weather is an essential component of natural resources that affects agricultural production
+  and plays a decisive role in deciding the type of agricultural production, planting structure, crop
+  quality, etc. In field agriculture, medium- and long-term predictions of temperature and humidity are
+  vital for guiding agricultural activities and improving crop yield and quality. However, existing intelligent
+  models still have difficulties dealing with big weather data in predicting applications, such as striking
+  a balance between prediction accuracy and learning efficiency. Therefore, a multi-head attention encoder-decoder
+  neural network optimized via Bayesian inference strategy (BMAE-Net) is proposed herein to predict weather
+  time series changes accurately. Firstly, we incorporate Bayesian inference into the gated recurrent
+  unit to construct a Bayesian-gated recurrent units (Bayesian-GRU) module. Then, a multi-head attention
+  mechanism is introduced to design the network structure of each Bayesian layer, improving the prediction
+  applicability to time-length changes. Subsequently, an encoder-decoder framework with Bayesian hyperparameter
+  optimization is designed to infer intrinsic relationships among big time-series data for high prediction
+  accuracy. For example, the R-evaluation metrics for temperature prediction in the three locations are
+  0.9, 0.804, and 0.892, respectively, while the RMSE is reduced to 2.899, 3.011, and 1.476, as seen in
+  Case 1 of the temperature data. Extensive experiments subsequently demonstrated that the proposed BMAE-Net
+  has overperformed on three location weather datasets, which provides an effective solution for prediction
+  applications in the smart agriculture system.
+significance: 2
+cited_by: 58
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

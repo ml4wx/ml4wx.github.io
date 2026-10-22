@@ -1,0 +1,61 @@
+id: arxiv-2304.02117
+title: Statistics of extreme events in coarse-scale climate simulations via machine learning correction
+  operators trained on nudged datasets
+authors:
+- Alexis-Tzianni Charalampopoulos
+- Shixuan Zhang
+- Bryce Harrop
+- Lai-yung Ruby Leung
+- Themistoklis Sapsis
+date: '2023-04-04'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2304.02117'
+  openalex: W4362702126
+links:
+  paper: https://arxiv.org/abs/2304.02117
+  pdf: https://arxiv.org/pdf/2304.02117
+orgs:
+- mit
+topic: climate-emulation
+topics:
+- extremes-hazards
+type: model
+method:
+- other
+timescale:
+- climate
+spatial:
+- global
+data:
+- era5
+- other
+status: research
+summary: Machine-learned correction operator, trained on nudged coarse E3SM runs against ERA5, makes free-running
+  climate statistics and extreme-event frequencies resemble observations.
+abstract: This work presents a systematic framework for improving the predictions of statistical quantities
+  for turbulent systems, with a focus on correcting climate simulations obtained by coarse-scale models.
+  While high resolution simulations or reanalysis data are available, they cannot be directly used as
+  training datasets to machine learn a correction for the coarse-scale climate model outputs, since chaotic
+  divergence, inherent in the climate dynamics, makes datasets from different resolutions incompatible.
+  To overcome this fundamental limitation we employ coarse-resolution model simulations nudged towards
+  high quality climate realizations, here in the form of ERA5 reanalysis data. The nudging term is sufficiently
+  small to not pollute the coarse-scale dynamics over short time scales, but also sufficiently large to
+  keep the coarse-scale simulations close to the ERA5 trajectory over larger time scales. The result is
+  a compatible pair of the ERA5 trajectory and the weakly nudged coarse-resolution E3SM output that is
+  used as input training data to machine learn a correction operator. Once training is complete, we perform
+  free-running coarse-scale E3SM simulations without nudging and use those as input to the machine-learned
+  correction operator to obtain high-quality (corrected) outputs. The model is applied to atmospheric
+  climate data with the purpose of predicting global and local statistics of various quantities of a time-period
+  of a decade. Using datasets that are not employed for training, we demonstrate that the produced datasets
+  from the ML-corrected coarse E3SM model have statistical properties that closely resemble the observations.
+  Furthermore, the corrected coarse-scale E3SM output for the frequency of occurrence of extreme events,
+  such as tropical cyclones and atmospheric rivers are presented. We present thorough comparisons and
+  discuss limitations of the approach.
+significance: 4
+cited_by: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill
