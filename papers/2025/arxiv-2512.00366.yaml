@@ -1,0 +1,51 @@
+id: arxiv-2512.00366
+title: 'S^2-KD: Semantic-Spectral Knowledge Distillation Spatiotemporal Forecasting'
+authors:
+- Wenshuo Wang
+- Yaomin Shen
+- Ying Tan
+- Yi-Hao Chen
+date: '2025-11-29'
+year: 2025
+venue: ArXiv
+venue_type: conference
+ids:
+  arxiv: '2512.00366'
+links:
+  paper: https://arxiv.org/abs/2512.00366
+topic: global-medium-range
+type: model
+method:
+- transformer
+- cnn
+timescale:
+- short
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Semantic-spectral knowledge distillation from a multimodal teacher to a lightweight vision-only
+  student for spatiotemporal forecasting, tested on WeatherBench and TaxiBJ+.
+abstract: Spatiotemporal forecasting often relies on computationally intensive models to capture complex
+  dynamics. Knowledge distillation (KD) has emerged as a key technique for creating lightweight student
+  models, with recent advances like frequency-aware KD successfully preserving spectral properties (i.e.,
+  high-frequency details and low-frequency trends). However, these methods are fundamentally constrained
+  by operating on pixel-level signals, leaving them blind to the rich semantic and causal context behind
+  the visual patterns. To overcome this limitation, we introduce S2-KD, a novel framework that unifies
+  Semantic priors with Spectral representations for distillation. Our approach begins by training a privileged,
+  multimodal teacher model. This teacher leverages textual narratives from a Large Multimodal Model (LMM)
+  to reason about the underlying causes of events, while its architecture simultaneously decouples spectral
+  components in its latent space. The core of our framework is a new distillation objective that transfers
+  this unified semantic-spectral knowledge into a lightweight, vision-only student. Consequently, the
+  student learns to make predictions that are not only spectrally accurate but also semantically coherent,
+  without requiring any textual input or architectural overhead at inference. Extensive experiments on
+  benchmarks like WeatherBench and TaxiBJ+ show that S2-KD significantly boosts the performance of simple
+  student models, enabling them to outperform state-of-the-art methods, particularly in long-horizon and
+  complex non-stationary scenarios.
+significance: 3
+cited_by: 7
+score: 12
+highlight: false
+added: '2026-10-22'
+source: snowball

@@ -1,0 +1,47 @@
+id: arxiv-2601.08663
+title: Efficient Parameter Calibration of Numerical Weather Prediction Models via Evolutionary Sequential
+  Transfer Optimization
+authors:
+- Heping Fang
+- Bing Li
+- Peng Yang
+date: '2026-01-13'
+year: 2026
+venue: ArXiv
+venue_type: journal
+ids:
+  arxiv: '2601.08663'
+links:
+  paper: https://arxiv.org/abs/2601.08663
+topic: hybrid-parameterization
+type: model
+method:
+- classical-ml
+data:
+- other
+status: research
+summary: SEETO transfer optimization reuses calibration knowledge across NWP tasks via meteorological
+  state embeddings, improving early calibration efficiency under limited evaluation budgets.
+abstract: The configuration of physical parameterization schemes in Numerical Weather Prediction (NWP)
+  models plays a critical role in determining the accuracy of the forecast. However, existing parameter
+  calibration methods typically treat each calibration task as an isolated optimization problem. This
+  approach suffers from prohibitive computational costs and necessitates performing iterative searches
+  from scratch for each task, leading to low efficiency in sequential calibration scenarios. To address
+  this issue, we propose the SEquential Evolutionary Transfer Optimization (SEETO) algorithm driven by
+  the representations of the meteorological state. First, to accurately measure the physical similarity
+  between calibration tasks, a meteorological state representation extractor is introduced to map high-dimensional
+  meteorological fields into latent representations. Second, given the similarity in the latent space,
+  a bi-level adaptive knowledge transfer mechanism is designed. At the solution level, superior populations
+  from similar historical tasks are reused to achieve a"warm start"for optimization. At the model level,
+  an ensemble surrogate model based on source task data is constructed to assist the search, employing
+  an adaptive weighting mechanism to dynamically balance the contributions of source domain knowledge
+  and target domain data. Experiments on multiple calibration tasks with varying source--target similarities
+  demonstrate that SEETO consistently improves early-stage calibration efficiency under limited expensive
+  evaluation budgets, while maintaining competitive overall optimization performance. This provides a
+  practical approach for efficient automated calibration of NWP model parameters.
+significance: 3
+cited_by: 2
+score: 12
+highlight: false
+added: '2026-10-22'
+source: snowball

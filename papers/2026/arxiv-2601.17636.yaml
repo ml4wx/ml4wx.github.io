@@ -1,0 +1,60 @@
+id: arxiv-2601.17636
+title: 'HealDA: Highlighting the importance of initial errors in end-to-end AI weather forecasts'
+authors:
+- Aayush Gupta
+- Akshay Subramaniam
+- Michael S. Pritchard
+- K. Kashinath
+- Sergey Frolov
+- Kelsey Lieberman
+- Christopher D. Miller
+- Nicholas P. Silverman
+- N. D. B. N. Corporation
+- Noaa
+- Mitre Corporation
+date: '2026-01-25'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2601.17636'
+links:
+  paper: https://arxiv.org/abs/2601.17636
+topic: data-assimilation
+topics:
+- global-medium-range
+type: model
+timescale:
+- medium
+spatial:
+- global
+data:
+- satellite
+- era5
+status: research
+summary: HealDA is an ML data assimilation system from satellite and conventional observations; off-the-shelf
+  forecasts lose under one day of effective lead time versus NWP-initialized runs.
+abstract: 'AI weather models now rival leading numerical weather prediction (NWP) systems in medium-range
+  skill. However, almost all still rely on NWP data assimilation (DA) to provide initial conditions, tying
+  them to expensive infrastructure and limiting the practical speed and accuracy gains of ML. More recently,
+  ML-based DA systems have been proposed, which are often trained and evaluated end-to-end with a forecast
+  model, making it difficult to assess the quality of their analysis fields. We introduce HealDA, a global
+  ML-based DA system that maps a short window of satellite and conventional observations directly to a
+  1{\deg} atmospheric state on the HEALPix grid, using a smaller sensor suite than operational NWP. We
+  treat HealDA strictly as a DA module: its analyses are used to initialize off-the-shelf ML forecast
+  models without any fine-tuning of either. For a variety of off-the-shelf ML forecast models, including
+  FourCastNet3 (FCN3), Aurora, and FengWu, HealDA-initialized forecasts lose less than one day of effective
+  lead time when scored against ERA5. HealDA-initialized FCN3 ensembles similarly trail those of the ECMWF
+  IFS ENS system by<24 h. We find that forecast error growth in these models is unchanged from HealDA
+  initialization, and the skill gap primarily arises from the larger initial error of the HealDA analysis.
+  Spectral analysis reveals that this stems from overfitting to the large scales and upper-tropospheric
+  fields. We also demonstrate that small changes in the verification setup can shift apparent skill by
+  12--24h, underscoring the need for consistent scoring. Taken together, these results clarify the current
+  performance of ML-based DA systems and show that a relatively simple, direct observation-to-state network
+  can already provide initial conditions that are usable by state-of-the-art ML forecast models with only
+  modest loss in medium-range skill.'
+significance: 6
+cited_by: 11
+score: 24
+highlight: false
+added: '2026-10-22'
+source: snowball

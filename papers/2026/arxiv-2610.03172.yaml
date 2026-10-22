@@ -1,0 +1,54 @@
+id: arxiv-2610.03172
+title: Domain-Adaptive Data Assimilation for Global AI Weather Forecasting
+authors:
+- Minseok Seo
+- Noah D. Brenowitz
+- Do-Yun Kim
+- Hyesook Lee
+- Changick Kim
+date: '2026-10-02'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.03172'
+links:
+  paper: https://arxiv.org/abs/2610.03172
+topic: data-assimilation
+topics:
+- global-medium-range
+type: model
+method:
+- differentiable
+timescale:
+- short
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+- other
+status: research
+summary: DADA optimizes an initial-state perturbation through frozen AI forecast models using a learned
+  observation operator, substantially reducing skill loss from changed initial-condition sources across
+  five models.
+abstract: AI weather forecasting models are commonly trained on the ERA5 reanalysis, which is unavailable
+  in real time. Operational deployment therefore relies on initial conditions produced by numerical or
+  AI analysis systems that differ from those encountered during training. This mismatch can degrade forecast
+  skill, while retraining for every analysis system is costly. Here, we present Domain-Adaptive Data Assimilation
+  (DADA), an observation-guided framework that adapts external analyses to pretrained AI weather models.
+  Starting from a background state, DADA optimizes only an initial-state perturbation while keeping the
+  forecast model frozen. The perturbed state is propagated through the model, and its short-range trajectory
+  is constrained by real-world observations through a learned observation operator. The resulting initial
+  condition is shaped jointly by observational constraints and the dynamics learned by the target model.
+  We evaluate DADA across five global AI weather models using backgrounds from the Global Forecast System
+  and the AI-based HealDA. Across deterministic and probabilistic forecasts, DADA substantially reduces
+  short-range skill loss caused by changes in the initial-condition source. More broadly, DADA turns observations
+  into a common interface between independently developed analysis and forecasting systems, enabling pretrained
+  AI weather models to accommodate evolving operational initial conditions without reconstructing ERA5
+  or retraining the forecast model.
+significance: 5
+cited_by: 0
+score: 20
+highlight: false
+added: '2026-10-22'
+source: snowball

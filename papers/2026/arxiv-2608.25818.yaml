@@ -1,0 +1,56 @@
+id: arxiv-2608.25818
+title: 'WaveOp-LiteFM: Lightweight Neural-Operator Flow Matching for Satellite-to-Radar Precipitation
+  Retrieval'
+authors:
+- Chun-Lei Shi
+- Yecheng Zhang
+- Yu-Feng Zhu
+- Dan Niu
+- Yichao Dong
+- Yong-Chao Feng
+- Junming Hou
+date: '2026-08-26'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2608.25818'
+links:
+  paper: https://arxiv.org/abs/2608.25818
+topic: observations-remote-sensing
+type: model
+method:
+- neural-operator
+- diffusion
+spatial:
+- regional
+data:
+- satellite
+- radar
+status: research
+summary: Lightweight neural-operator flow matching in pixel space retrieves radar precipitation from geostationary
+  satellite data, reaching state-of-the-art accuracy at lower compute.
+abstract: 'Satellite-to-radar (S2R) retrieval refers to estimating ground-based radar precipitation from
+  geostationary satellite observations, enabling precipitation monitoring in regions with limited radar
+  coverage. While recent generative flow matching models have greatly advanced retrieval quality, they
+  face a critical trade-off: pixel-space formulations suffer from the prohibitive computational costs
+  of attention-based U-Net velocity networks, whereas latent-space modeling often sacrifices fine precipitation
+  details or struggles with sparse targets. To address this dilemma, we propose WaveOp-LiteFM, a lightweight
+  neural operator flow matching framework for S2R retrieval. Our approach introduces a novel velocity
+  backbone built upon the spectral-local-wavelet (SLW) block, enabling efficient and stable flow matching
+  in pixel space. Specifically, the SLW block disentangles precipitation features into three distinct
+  frequency regimes: (i) the spectral branch captures large-scale stratiform organization; (ii) the local
+  branch models short-range interactions; and (iii) the wavelet branch enhances sharp structures while
+  suppressing noisy high-frequency responses. Building on this design, an input-adaptive gating mechanism
+  dynamically fuses features from the three functional branches. Furthermore, a skip gate efficiently
+  reintegrates encoder features through additive fusion within the decoder, avoiding the costly channel
+  concatenation used in conventional U-Net architectures. Experiments on the SEVIR and Southeast China
+  datasets show that WaveOp-LiteFM achieves state-of-the-art retrieval performance while substantially
+  reducing computational costs. Beyond benchmark evaluation, large-area inference over China, including
+  a recent Typhoon Bavi case, demonstrates that WaveOp-LiteFM maintains reliable retrieval quality in
+  large-scale real-world scenarios.'
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: snowball

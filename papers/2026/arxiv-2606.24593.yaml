@@ -1,0 +1,49 @@
+id: arxiv-2606.24593
+title: Data-Driven Flux Parameterization for the Atmospheric Boundary Layer
+authors:
+- Abed Hammoud
+- Edriss S. Titi Mitchell Bushuk
+- M. Calaf
+- K. Ghannam
+- E. Bou-Zeid
+date: '2026-06-23'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.24593'
+links:
+  paper: https://arxiv.org/abs/2606.24593
+topic: hybrid-parameterization
+type: model
+method:
+- classical-ml
+- physics-constrained
+spatial:
+- local
+data:
+- km-scale-sim
+status: research
+summary: Learned linear convolution flux closure trained on LES outperforms K-profile closure for boundary-layer
+  heat and momentum fluxes and remains stable in single-column tests.
+abstract: Turbulent fluxes in the atmospheric boundary layer (ABL) govern exchanges of momentum, heat,
+  and mass between the surface and atmosphere, shaping boundary layer structure and influencing weather,
+  climate, and engineering applications. Yet their representation in coarse resolution models remains
+  challenging, particularly under unstable conditions with strongly nonlocal transport and stable conditions
+  with intermittent turbulence. Here, we develop a data driven turbulent flux parameterization in which
+  nondimensional fluxes are represented by a linearized convolution operator acting on nondimensional
+  mean state profiles. We train and evaluate the closure using high resolution large eddy simulations
+  (LES) of idealized flow over homogeneous surfaces spanning multiple stability regimes. Several first
+  order closure variants are constructed from different combinations of mean temperature and velocity
+  profiles to predict heat and momentum fluxes, and the best model is selected by minimizing mean squared
+  error across training and unseen test cases. The resulting parameterization improves predictive skill
+  relative to a standard K-profile closure while retaining an interpretable operator form. Its learned
+  kernels expose the locality and nonlocality of turbulent transport across stability regimes, linking
+  empirical performance to physically inspectable flux--profile relationships. In a posteriori single
+  column simulations, the closure remains stable and produces state profiles that closely match LES, demonstrating
+  its potential as an accurate and transparent ABL flux parameterization.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: snowball

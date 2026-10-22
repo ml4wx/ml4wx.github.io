@@ -1,0 +1,53 @@
+id: arxiv-2509.22474
+title: Generative Multi-Scale Modeling via Spatial Autoregressive Transport Maps
+authors:
+- Alejandro Calle-Saldarriaga
+- Paul F. V. Wiemann
+- Matthias Katzfuss
+date: '2025-09-26'
+year: 2025
+venue: Technometrics
+venue_type: journal
+ids:
+  arxiv: '2509.22474'
+  doi: 10.1080/00401706.2026.2689970
+links:
+  paper: https://arxiv.org/abs/2509.22474
+  pdf: https://arxiv.org/pdf/2509.22474
+topic: downscaling
+topics:
+- climate-emulation
+type: model
+method:
+- classical-ml
+timescale:
+- climate
+spatial:
+- regional
+- global
+data:
+- cmip
+status: research
+summary: A scalable Bayesian autoregressive Gaussian process method downscales coarse GCM fields to fine
+  scale with closed-form posteriors. It outperforms existing statistical downscaling methods on climate
+  fields.
+abstract: Abstract Spatial fields in the Earth and environmental sciences are often available at multiple
+  scales or resolutions. While coarse-scale data (e.g., from global circulation models) are often abundant,
+  they lack the local detail provided by fine-scale data (e.g., from regional climate models), which are
+  typically computationally expensive to generate. Statistical downscaling and multi-scale data fusion
+  address this challenge by predicting high-resolution fields from low-resolution or related inputs. We
+  propose a highly scalable Bayesian approach that can learn the joint non-Gaussian distribution and nonlinear
+  dependence structure of nonstationary spatial fields across multiple scales from a small number of training
+  samples. Our method employs scale-aware autoregressive Gaussian processes with suitably chosen regularization-inducing
+  priors to model the conditional distribution of fine-scale fields given coarse-scale data. Exploiting
+  conjugacy, the integrated likelihood is available in closed form, enabling efficient parameter optimization
+  via stochastic gradient descent. Once trained, the method provides a closed-form characterization of
+  the posterior distribution of fine-scale fields given coarse-scale inputs. In numerical comparisons,
+  we demonstrate that our approach substantially outperforms existing methods and effectively characterizes
+  and simulates fine-scale climate behavior based on output from coarse global circulation models.
+significance: 3
+cited_by: 2
+score: 12
+highlight: false
+added: '2026-10-22'
+source: snowball

@@ -1,0 +1,50 @@
+id: arxiv-2602.03609
+title: Scalable non-separable spatio-temporal Gaussian process models for large-scale short-term weather
+  prediction
+authors:
+- Tim Gyger
+- Reinhard Furrer
+- Fabio Sigrist
+date: '2026-02-03'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2602.03609'
+links:
+  paper: https://arxiv.org/abs/2602.03609
+topic: local-forecasting
+topics:
+- s2s-seasonal
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- regional
+data:
+- stations
+status: research
+summary: Scalable space-time Gaussian process methods (Vecchia, inducing points, GPU) forecast daily temperature
+  and precipitation over the conterminous US using over one million NOAA station observations.
+abstract: 'Monitoring daily weather fields is critical for climate science, agriculture, and environmental
+  planning, yet fully probabilistic spatio-temporal models become computationally prohibitive at continental
+  scale. We present a case study on short-term forecasting of daily maximum temperature and precipitation
+  across the conterminous United States using novel scalable spatio-temporal Gaussian process methodology.
+  Building on three approximation families - inducing-point methods (FITC), Vecchia approximations, and
+  a hybrid Vecchia-inducing-point full-scale approach (VIF) - we introduce three extensions that address
+  key bottlenecks in large space-time settings: (i) a scalable correlation-based neighbor selection strategy
+  for Vecchia approximations with point-referenced data, enabling accurate conditioning under complex
+  dependence structures, (ii) a space-time kMeans++ inducing-point selection algorithm, and (iii) GPU-accelerated
+  implementations of computationally expensive operations, including matrix operations and neighbor searches.
+  Using both synthetic experiments and a large NOAA station dataset containing more than one million space-time
+  observations, we analyze the models with respect to predictive performance, parameter estimation, and
+  computational efficiency. Our results demonstrate that scalable Gaussian process models can yield accurate
+  continental-scale forecasts while remaining computationally feasible, offering practical tools for weather
+  applications.'
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: snowball

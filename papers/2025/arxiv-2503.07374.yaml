@@ -1,0 +1,56 @@
+id: arxiv-2503.07374
+title: Improving Statistical Postprocessing for Extreme Wind Speeds using Tuned Weighted Scoring Rules
+authors:
+- Simon Hakvoort
+- Bastien François
+- K. Whan
+- Sjoerd Dirksen
+date: '2025-03-10'
+year: 2025
+venue: Monthly Weather Review
+venue_type: journal
+ids:
+  arxiv: '2503.07374'
+  doi: 10.1175/mwr-d-25-0051.1
+links:
+  paper: https://arxiv.org/abs/2503.07374
+  pdf: https://arxiv.org/pdf/2503.07374
+topic: post-processing
+topics:
+- extremes-hazards
+type: model
+method:
+- cnn
+- classical-ml
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: Tuned weighted CRPS loss with CNNs improves 48-hour probabilistic post-processing of Harmonie-Arome
+  wind speeds for extremes without degrading the bulk distribution.
+abstract: "\n Recent statistical postprocessing methods for wind speed forecasts have used linear models\
+  \ and neural networks to produce more skillful probabilistic forecasts in the low-to-medium wind speed\
+  \ range. However, these methods struggle in the high-to-extreme wind speed range. In this work, we aim\
+  \ to improve performance in this range by training a weighted version of the continuous ranked probability\
+  \ score (wCRPS) as a loss function. In the wCRPS we use shifted Gaussian CDF weight functions, whose\
+  \ parameters are tuned using a multi-objective hyperparameter tuning algorithm that balances performance\
+  \ on low and high wind speed ranges. We explore this approach for both linear models and convolutional\
+  \ neural networks (CNNs) combined with various parametric forecast distributions, namely the truncated\
+  \ normal, log-normal, and generalized extreme value distributions, as well as adaptive mixtures. We\
+  \ apply these methods to post-process forecasts from KNMI’s deterministic Harmonie-Arome numerical weather\
+  \ prediction model to obtain probabilistic wind speed forecasts in the Netherlands for 48 hours ahead.\
+  \ For linear models we observe that with a tuned weight function, training using the wCRPS produces\
+  \ a strong body-tail trade-off, where increased performance on extremes comes at the price of lower\
+  \ performance for the bulk of the distribution. For models using CNNs, we find that using a tuned weight\
+  \ function the performance on extremes can be increased without significant deterioration in performance\
+  \ on the bulk. The best-performing weight function is shown to be model-specific. Finally, the choice\
+  \ of the forecast distribution has no significant impact on the performance of our models."
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: snowball

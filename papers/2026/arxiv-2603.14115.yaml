@@ -1,0 +1,50 @@
+id: arxiv-2603.14115
+title: A Lagrangian Conditional Gaussian Koopman Network for Data Assimilation and Prediction
+authors:
+- Zhong-Rui Wang
+- Chuanqi Chen
+- Jin-Long Wu
+- Nan Chen
+date: '2026-03-14'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2603.14115'
+links:
+  paper: https://arxiv.org/abs/2603.14115
+topic: data-assimilation
+type: model
+method:
+- other
+spatial:
+- regional
+data:
+- other
+status: research
+summary: LaCGKN is a Koopman-based network that assimilates Lagrangian tracer observations of quasi-geostrophic
+  flow, enabling analytic posterior updates without ensembles.
+abstract: 'Lagrangian data assimilation aims to recover hidden Eulerian flow fields from sparse, indirect
+  observations of moving tracers. This problem is challenging because tracer trajectories are nonlinearly
+  coupled with the underlying flow, making posterior inference computationally intractable in realistic,
+  high-dimensional systems. In this work, we develop a Lagrangian conditional Gaussian Koopman network
+  (LaCGKN), a structure-preserving, data-driven framework for joint data assimilation and prediction from
+  Lagrangian observations. LaCGKN embeds Eulerian flow dynamics into a low-dimensional latent space governed
+  by a nonlinear stochastic system with conditional Gaussian structure, enabling analytic posterior updates
+  without ensemble forecasting. Unlike existing conditional Gaussian Koopman formulations that assume
+  direct Eulerian observations, the Lagrangian setting imposes additional demands on the latent representation,
+  which must simultaneously encode the flow dynamics and mediate nonlinear tracer-flow interactions. To
+  address these challenges, the LaCGKN incorporates three key components: (i) tracer homogenization to
+  enforce permutation equivariance and generalize across varying numbers of tracers; (ii) Fourier positional
+  encoding to capture spatial dependence and reconstruct local flow features at moving tracer locations;
+  and (iii) an SVD-inspired low-rank parameterization of the latent transition operator, which reduces
+  model complexity while retaining expressiveness. An application to a two-layer quasi-geostrophic flow
+  with surface tracer observations shows that LaCGKN achieves accurate and efficient Lagrangian data assimilation
+  and prediction, without reliance on ensemble methods or the governing physical model. These results
+  establish the LaCGKN as a unified and computationally tractable alternative to both traditional model-based
+  approaches and purely black-box data-driven methods.'
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: snowball

@@ -1,0 +1,47 @@
+id: arxiv-2609.12496
+title: 'TailWeather: from tail to extremes, a global climatological dataset for machine-learning weather
+  forecasting'
+authors:
+- Zhi-Song Liu
+- Michael Boy
+- R. Makkonen
+date: '2026-09-11'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.12496'
+links:
+  paper: https://arxiv.org/abs/2609.12496
+topic: benchmarks-data-eval
+topics:
+- extremes-hazards
+type: benchmark
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- other
+status: research
+summary: Global 0.25-degree ERA5-derived dataset labels heatwaves, cold and heavy-rain events, extreme
+  wind and drought with severity scores, 1981-2022, for evaluating ML forecasts.
+abstract: Weather forecasting models commonly use the average forecast skill for short-range forecasts.
+  However, it does not necessarily imply skill in the tails of the weather distribution. Evaluating tail
+  events requires a consistently defined target with broad spatial and temporal coverage. Disaster catalogs
+  record societal consequences, but are sparse and reporting-dependent; climatological tails describe
+  unusual weather without necessarily implying harm. We present TailWeather, a global 0.25-degree, land-only
+  dataset derived from ERA5, covering 1981-2022 and extending into January 2023. It labels heatwaves,
+  cold waves, heavy precipitation, and extreme wind daily, and meteorological drought monthly. Each event
+  has an ordinal severity tier and a numerical intensity score referenced to the local 1991-2020 climate.
+  The scores support alternative thresholds within their stored resolution and valid domain. Comparison
+  with documented disasters shows greater impact enrichment towards stricter tails, with differences among
+  hazards and substantial gaps in catalog coverage. Forecast examples illustrate how low average errors
+  can coexist with weak event detection, particularly for wind. TailWeather provides a reusable physical
+  target for studying and evaluating extremes, while complementing the information in disaster catalogs.
+significance: 5
+cited_by: 1
+score: 20
+highlight: false
+added: '2026-10-22'
+source: snowball

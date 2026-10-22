@@ -1,0 +1,54 @@
+id: arxiv-2606.00710
+title: Structural Causal Discovery and Predictive Sufficiency in High-Dimensional Dynamical Systems
+authors:
+- Abd AlRahman R. AlMomani
+- Curtis N. James
+- Christopher C. Hennon
+- R. Schroeder
+date: '2026-05-30'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.00710'
+links:
+  paper: https://arxiv.org/abs/2606.00710
+topic: climate-analysis-attribution
+topics:
+- nowcasting
+type: model
+method:
+- classical-ml
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- nwp-analysis
+- radar
+status: research
+summary: Entropic regression finds a compact, recurrent causal structure for precipitation using HRRR
+  and MRMS data, with AUC 0.948 for one-hour occurrence prediction.
+abstract: 'High-dimensional environmental systems contain variables that may be predictive, causally informative,
+  physically coupled, or redundant, and these roles need not coincide. We study this distinction in precipitation
+  dynamics using High-Resolution Rapid Refresh atmospheric fields and Multi-Radar Multi-Sensor precipitation
+  observations over the Southwestern United States. We introduce a projection-based, variable-level formulation
+  of entropic regression that identifies candidate causal parents without constructing a global nonlinear
+  expansion library. Ten physical variables are selected sequentially by conditional-information forward
+  selection using linear regression projections. A quadratic library is then formed only over those variables,
+  followed by two sequential variable-block eliminations that produce an eight-variable local representation.
+  Applied across 1227 precipitation-guided superpixels, the method recovers a compact and spatially recurrent
+  causal structure. Under the same final cardinality, entropic regression yields a substantially more
+  concentrated recurrence profile than transfer entropy and causation entropy. Six variables exceed a
+  recurrence threshold of 0.25: land-surface moisture availability, composite reflectivity, geometric
+  vertical velocity, wind speed, convective available potential energy, and maximum upward vertical velocity.
+  Predictive models restricted to these variables achieve strong one-hour discrimination of precipitation
+  occurrence, with an area under the receiver operating characteristic curve of 0.948, while pointwise
+  intensity prediction remains more limited. The results provide a scalable variable-level procedure for
+  high-dimensional causal discovery and show that recurrent causal relevance and predictive sufficiency
+  are distinct properties of a reduced dynamical representation.'
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: snowball

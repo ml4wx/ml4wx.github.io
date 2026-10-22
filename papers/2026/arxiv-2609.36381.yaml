@@ -1,0 +1,45 @@
+id: arxiv-2609.36381
+title: 'Su\^etes: An end-to-end differentiable non-hydrostatic limited-area dynamical core'
+authors:
+- Tim Whittaker
+- Seth Taylor
+- E. Cardoso-Bihlo
+- A. Di Luca
+- Alex Bihlo
+date: '2026-09-28'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.36381'
+links:
+  paper: https://arxiv.org/abs/2609.36381
+topic: hybrid-parameterization
+type: model
+method:
+- differentiable
+- physics-constrained
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: Fully differentiable JAX non-hydrostatic limited-area dynamical core enables gradient-based sensitivity,
+  topography and boundary optimization for regional and convection-permitting simulations.
+abstract: We present Su\^etes, a fully differentiable, non-hydrostatic, limited-area atmospheric dynamical
+  core implemented in JAX. Su\^etes includes both a semi-implicit semi-Lagrangian scheme and a Split-Explicit
+  Runge-Kutta scheme with acoustic substepping, enabling applications from coarse regional simulations
+  to convection-permitting dynamics. Its terrain-following geometry, spatial discretization, time integration,
+  initial conditions, lateral boundary treatment, and included physical parameterizations are all compatible
+  with reverse-mode automatic differentiation. A single reverse-mode pass can therefore compute sensitivities
+  of forecast diagnostics to selected initial and boundary fields, physical parameters, topography, and
+  computational geometry. We provide a series of numerical experiments---including a tracer-source inverse
+  problem, a sensitivity analysis of a three-dimensional squall-line, adversarial perturbation construction
+  an ERA5-driven downslope hurricane force wind event, topography optimization, and terrain-following
+  coordinate optimization---demonstrating the versatility of Su\^etes as a framework for gradient-based
+  diagnosis and model development at regional and convection-permitting scale.
+significance: 4
+cited_by: 0
+score: 16
+highlight: false
+added: '2026-10-22'
+source: snowball
