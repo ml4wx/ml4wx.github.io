@@ -5,7 +5,7 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/benchmarks-data-eval/)
 
-16 papers (5 ⭐). Newest first.
+17 papers (5 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -25,6 +25,7 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 | 2022-01-01 | [ENS-10: A Dataset For Post-Processing Ensemble Weather Forecasts](https://arxiv.org/abs/2206.14786)<br><sub>Saleh Ashkboos, Langwen Huang, Nikoli Dryden et al. · Advances in Neural Information Processing Systems 35</sub> | ETH Zurich |  |
 | 2021-11-29 | [ClimART: A Benchmark Dataset for Emulating Atmospheric Radiative Transfer in Weather and Climate Models](https://arxiv.org/abs/2111.14671)<br><sub>Salva Rühling Cachay, Venkatesh Ramesh, Jason N. S. Cole et al. · 35th Conference on Neural Information Processing Systems (NeurIPS 2021) Track on Datasets and Benchmarks</sub> | Environment and Climate Change Canada (ECCC) | [code](https://github.com/RolnickLab/climart) |
 | 2020-02-02 | ⭐ [WeatherBench: A benchmark dataset for data-driven weather forecasting](https://arxiv.org/abs/2002.00469)<br><sub>Stephan Rasp, Peter D. Dueben, Sebastian Scher et al. · Journal of Advances in Modeling Earth Systems</sub> | ECMWF, Technical University of Munich (TUM), University of Washington | [code](https://github.com/pangeo-data/WeatherBench) |
+| 2018-03-14 | [Scientific Visualization of Climate Simulation Data for Deep Convolutional Neural Network](https://confit.atlas.jp/guide/event/jpgu2018/subject/MAG32-04/detail)<br><sub>Daisuke Matsuoka · Japan Geoscience Union</sub> |  |  |
 
 ## Also relevant
 
@@ -46,5 +47,12 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 - [Data-driven medium-range weather prediction with a Resnet pretrained on climate simulations: A new model for WeatherBench](https://arxiv.org/abs/2008.08626) (2020)
 - [Configuration and intercomparison of deep learning neural models for statistical downscaling](https://doi.org/10.5194/gmd-13-2109-2020) (2020)
 - [Causal networks for climate model evaluation and constrained projections](https://doi.org/10.1038/s41467-020-15195-y) (2020)
+- [Benchmarking Tropical Cyclone Rapid Intensification with Satellite Images and Attention-based Deep Models](https://arxiv.org/abs/1909.11616) (2019)
+- [Gauge Equivariant Convolutional Networks and the Icosahedral CNN](https://arxiv.org/abs/1902.04615) (2019)
+- [Machine Learning techniques to evaluate reproducibility of climate model simulations on hybrid architectures.](http://ui.adsabs.harvard.edu/abs/2018AGUFMIN13C0687M/abstract) (2018)
+- [A test case for application of convolutional neural networks to spatio-temporal climate data: Re-identifying clustered weather patterns](https://arxiv.org/abs/1811.04817) (2018)
+- [Intercomparison of machine learning methods for statistical downscaling: the case of daily and extreme precipitation](https://doi.org/10.1007/s00704-018-2613-3) (2018)
+- [Cluster-based analysis of multi-model climate ensembles](https://doi.org/10.5194/gmd-11-2033-2018) (2018)
+- [Machine Learning Predictions of a Multiresolution Climate Model Ensemble](https://doi.org/10.1029/2018gl077049) (2018)
 - [Deep Learning for Precipitation Nowcasting: A Benchmark and A New Model](https://arxiv.org/abs/1706.03458) (2017)
 

@@ -5,7 +5,7 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/xai-uq-physics/)
 
-16 papers (3 ⭐). Newest first.
+20 papers (3 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -25,6 +25,10 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 | 2019-12-04 | [Physically Interpretable Neural Networks for the Geosciences: Applications to Earth System Variability](https://arxiv.org/abs/1912.01752)<br><sub>Benjamin A. Toms, Elizabeth A. Barnes, Imme Ebert-Uphoff · Journal of Advances in Modeling Earth Systems</sub> | Colorado State University (incl. CIRA) |  |
 | 2019-11-01 | [Making the Black Box More Transparent: Understanding the Physical Implications of Machine Learning](https://doi.org/10.1175/bams-d-18-0195.1)<br><sub>Amy McGovern, Ryan Lagerquist, David John Gagne et al. · Bulletin of the American Meteorological Society</sub> | NSF NCAR / UCAR, NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), University of Oklahoma (AI2ES) |  |
 | 2019-09-03 | [Enforcing Analytic Constraints in Neural-Networks Emulating Physical Systems](https://arxiv.org/abs/1909.00912)<br><sub>Tom Beucler, Michael Pritchard, Stephan Rasp et al. · Phys. Rev. Lett. 126, 098302 (2021)</sub> | Columbia University (LEAP, Lamont-Doherty), Technical University of Munich (TUM) |  |
+| 2019-05-15 | [Machine Learning Techniques for Global Sensitivity Analysis in Earth System Models.](https://www.osti.gov/biblio/1512022)<br><sub>Cosmin Safta · OSTI OAI (U.S. Department of Energy Office of Scientific and Technical Information)</sub> |  |  |
+| 2019-02-12 | [Testing the Reliability of Interpretable Neural Networks in Geoscience Using the Madden-Julian Oscillation](https://arxiv.org/abs/1902.04621)<br><sub>Benjamin A. Toms, Karthik Kashinath, Prabhat et al.</sub> |  |  |
+| 2018-06-29 | [Visualization of Neural Network Predictions for Weather Forecasting](https://doi.org/10.1111/cgf.13453)<br><sub>Isabelle Roesch, Tobias Günther · Computer Graphics Forum</sub> | ETH Zurich |  |
+| 2018-02-20 | [A Learning Based Approach for Uncertainty Analysis in Numerical Weather Prediction Models](https://arxiv.org/abs/1802.08055)<br><sub>Azam Moosavi, Vishwas Rao, Adrian Sandu</sub> |  |  |
 
 ## Also relevant
 
@@ -37,5 +41,7 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 - [Subseasonal Forecasts of Opportunity Identified by an Explainable Neural Network](https://doi.org/10.1029/2020gl092092) (2021)
 - [Viewing Forced Climate Patterns Through an AI Lens](https://doi.org/10.1029/2019gl084944) (2019)
 - [Interpretable Deep Learning for Spatial Analysis of Severe Hailstorms](https://doi.org/10.1175/mwr-d-18-0316.1) (2019)
+- [Confidence‐aware deep learning forecasting system for daily solar irradiance](https://doi.org/10.1049/iet-rpg.2018.5354) (2019)
 - [A neural network approach to estimating a posteriori distributions of Bayesian retrieval problems](https://doi.org/10.5194/amt-11-4627-2018) (2018)
+- [Quantifying Uncertainty in Discrete-Continuous and Skewed Data with Bayesian Deep Learning](https://arxiv.org/abs/1802.04742) (2018)
 

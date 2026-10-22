@@ -5,7 +5,7 @@ ML for data assimilation and state estimation, learned observation operators, an
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/data-assimilation/)
 
-16 papers (4 ⭐). Newest first.
+21 papers (4 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -25,6 +25,11 @@ ML for data assimilation and state estimation, learned observation operators, an
 | 2021-02-15 | [Learning earth system models from observations: machine learning or data assimilation?](https://doi.org/10.1098/rsta.2020.0089)<br><sub>A. J. Geer · Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences</sub> | ECMWF |  |
 | 2020-11-30 | [Machine Learning for Model Error Inference and Correction](https://doi.org/10.1029/2020ms002232)<br><sub>Massimo Bonavita, Patrick Laloyaux · Journal of Advances in Modeling Earth Systems</sub> | ECMWF |  |
 | 2020-01-06 | [Combining data assimilation and machine learning to emulate a dynamical model from sparse and noisy observations: a case study with the Lorenz 96 model](https://arxiv.org/abs/2001.01520)<br><sub>Julien Brajard, Alberto Carassi, Marc Bocquet et al. · Journal of Computational Science, Volume 44, 2020</sub> | University of Reading | [code](https://github.com/brajard/GMD-code) |
+| 2019-06-03 | [SMOS Neural Network Soil Moisture Data Assimilation in a Land Surface Model and Atmospheric Impact](https://doi.org/10.3390/rs11111334)<br><sub>Nemesio Jose Rodríguez-Fernández, Patricia de Rosnay, Clément Albergel et al. · Remote Sensing</sub> | ECMWF, Météo-France (incl. CNRM) |  |
+| 2019-03-28 | [An Artificial Neural Networks‐Based Tree Ring Width Proxy System Model for Paleoclimate Data Assimilation](https://doi.org/10.1029/2018ms001525)<br><sub>Miao Fang, Xin Li · Journal of Advances in Modeling Earth Systems</sub> |  |  |
+| 2018-05-14 | [Ingesting microwave sounder radiances for improvement in track forecast of cyclone Vardah](https://doi.org/10.1117/1.jrs.12.026015)<br><sub>Krishnamoorthy Chandramouli, Chakravarthy Balaji · Journal of Applied Remote Sensing</sub> |  |  |
+| 2018-05-02 | [Precipitation Data Assimilation System Based on a Neural Network and Case-Based Reasoning System](https://doi.org/10.3390/info9050106)<br><sub>Jing Lu, Wei Hu, Xiakun Zhang · Information</sub> |  |  |
+| 2018-01-02 | [A Machine Learning Approach to Adaptive Covariance Localization](https://arxiv.org/abs/1801.00548)<br><sub>Azam Moosavi, Ahmed Attia, Adrian Sandu</sub> | Argonne National Laboratory |  |
 
 ## Also relevant
 
@@ -34,5 +39,6 @@ ML for data assimilation and state estimation, learned observation operators, an
 - [Can deep learning beat numerical weather prediction?](https://doi.org/10.1098/rsta.2020.0097) (2021)
 - [Development and Interpretation of a Neural Network-Based Synthetic Radar Reflectivity Estimator Using GOES-R Satellite Observations](https://arxiv.org/abs/2004.07906) (2020)
 - [Leveraging Modern Artificial Intelligence for Remote Sensing and NWP: Benefits and Challenges](https://doi.org/10.1175/bams-d-18-0324.1) (2019)
+- [Atmospheric Retrievals and Assessment for Microwave Observations from Chinese FY-3C Satellite during Hurricane Matthew](https://doi.org/10.3390/rs11080896) (2019)
 - [Earth System Modeling 2.0: A Blueprint for Models That Learn From Observations and Targeted High-Resolution Simulations](https://arxiv.org/abs/1709.00037) (2017)
 

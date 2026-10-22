@@ -5,7 +5,7 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/nowcasting/)
 
-32 papers (5 ⭐). Newest first.
+62 papers (5 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -39,6 +39,36 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 | 2020-06-11 | [RainNet v1.0: a convolutional neural network for radar-based precipitation nowcasting](https://doi.org/10.5194/gmd-13-2631-2020)<br><sub>Georgy Ayzel, Tobias Scheffer, Maik Heistermann · Geoscientific Model Development</sub> |  |  |
 | 2020-03-24 | ⭐ [MetNet: A Neural Weather Model for Precipitation Forecasting](https://arxiv.org/abs/2003.12140)<br><sub>Casper Kaae Sønderby, Lasse Espeholt, Jonathan Heek et al.</sub> | Google Research |  |
 | 2019-12-11 | ⭐ [Machine Learning for Precipitation Nowcasting from Radar Images](https://arxiv.org/abs/1912.12132)<br><sub>Shreya Agrawal, Luke Barrington, Carla Bromberg et al.</sub> | Google Research |  |
+| 2019-09-15 | [MLC-LSTM: Exploiting the Spatiotemporal Correlation between Multi-Level Weather Radar Echoes for Echo Sequence Extrapolation](https://doi.org/10.3390/s19183988)<br><sub>Jinrui Jing, Qian Li, Xuan Peng · Sensors</sub> |  |  |
+| 2019-08-28 | [Distributed Deep Learning for Precipitation Nowcasting](https://arxiv.org/abs/1908.10964)<br><sub>Siddharth Samsi, Christopher J. Mattioli, Mark S. Veillette</sub> |  |  |
+| 2019-07-26 | [A Generative Adversarial Gated Recurrent Unit Model for Precipitation Nowcasting](https://doi.org/10.1109/lgrs.2019.2926776)<br><sub>Lin Tian, Xutao Li, Yunming Ye et al. · IEEE Geoscience and Remote Sensing Letters</sub> |  |  |
+| 2019-07-25 | [Using a 10-Year Radar Archive for Nowcasting Precipitation Growth and Decay: A Probabilistic Machine Learning Approach](https://doi.org/10.1175/waf-d-18-0206.1)<br><sub>Loris Foresti, Ioannis Vasileios Sideris, Daniele Nerini et al. · Weather and Forecasting</sub> | MeteoSwiss, ETH Zurich |  |
+| 2019-07-18 | [Precipitation Nowcasting with Star-Bridge Networks](https://arxiv.org/abs/1907.08069)<br><sub>Yuan Cao, Qiuying Li, Hongming Shan et al.</sub> |  |  |
+| 2019-07-07 | [Learning to Generate Radar Image Sequences Using Two-Stage Generative Adversarial Networks](https://doi.org/10.1109/lgrs.2019.2922326)<br><sub>Chenyang Zhang, Xuebing Yang, Yongqiang Tang et al. · IEEE Geoscience and Remote Sensing Letters</sub> |  |  |
+| 2019-06-05 | [Estimating rainfall using machine learning strategies based on weather radar data](https://doi.org/10.1002/dac.3999)<br><sub>T. Aditya Sai Srinivas, Somula Ramasubbareddy, K. Govinda et al. · International Journal of Communication Systems</sub> |  |  |
+| 2019-05-23 | [Precipitation Nowcasting with Satellite Imagery](https://arxiv.org/abs/1905.09932)<br><sub>Vadim Lebedev, Vladimir Ivashkin, Irina Rudenko et al. · in Proceedings of The 25th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, KDD 2019</sub> |  |  |
+| 2019-05-19 | [FORECAST-CLSTM: A New Convolutional LSTM Network for Cloudage Nowcasting](https://arxiv.org/abs/1905.07700)<br><sub>Chao Tan, Xin Feng, Jianwu Long et al. · IEEE Conference of Visual Communications and Image Processing 2018</sub> |  |  |
+| 2019-05-13 | [Precipitation nowcasting using a stochastic variational frame predictor with learned prior distribution](https://arxiv.org/abs/1905.05037)<br><sub>Alexander Bihlo</sub> |  |  |
+| 2019-05-02 | [Computer Vision in Precipitation Nowcasting: Applying Image Quality Assessment Metrics for Training Deep Neural Networks](https://doi.org/10.3390/atmos10050244)<br><sub>Quang-Khai Tran, Sa-Kwang Song · Atmosphere</sub> |  |  |
+| 2019-04-23 | [Neural Network Approach to Forecast Hourly Intense Rainfall Using GNSS Precipitable Water Vapor and Meteorological Sensors](https://doi.org/10.3390/rs11080966)<br><sub>Pedro José Benevides, João Catalão, Giovanni Nico · Remote Sensing</sub> |  |  |
+| 2019-03-14 | [Application of deep learning techniques to precipitation guidance in short-term weather predictions](https://confit.atlas.jp/guide/event/jpgu2019/subject/E_ACG36-P05/detail)<br><sub>Takeru Kurakami, Kazuyoshi Souma, Takashi Miyamoto et al. · Japan Geoscience Union</sub> |  |  |
+| 2019-01-15 | [A deep learning approach to solar-irradiance forecasting in sky-videos](https://arxiv.org/abs/1901.04881)<br><sub>Talha A. Siddiqui, Samarth Bharadwaj, Shivkumar Kalyanaraman</sub> |  |  |
+| 2019-01-08 | [Application of Optical Flow and Machine Learning Methods in Nowcasting and Early Warning of Strong Convective Weather](https://ams.confex.com/ams/2019Annual/webprogram/Paper351174.html)<br><sub>Yungang Chen · 99th American Meteorological Society Annual Meeting</sub> |  |  |
+| 2019-01-01 | [An Advanced Deep Learning Framework For Short-Term Precipitation Forecasting FromSatellite Information](https://escholarship.org/content/qt39s3w73k/qt39s3w73k.pdf?t=pukryh)<br><sub>Ata Akbari Asanjan</sub> |  |  |
+| 2019-01-01 | [Improvements of short-term solar radiation forecasting techniques based on satellite and sky-camera imagery](https://dialnet.unirioja.es/servlet/tesis?codigo=267006)<br><sub>Francisco Javier Rodríguez Benítez · Dialnet (Universidad de la Rioja)</sub> |  |  |
+| 2019-01-01 | [Development and interpretation of deep-learning models for nowcasting convective hazards](https://doi.org/10.13140/rg.2.2.22218.82885)<br><sub>Ryan Lagerquist, Homeyer, Cameron, Mcgovern, Amy et al.</sub> |  |  |
+| 2018-12-28 | [Spatiotemporal Data Fusion for Precipitation Nowcasting](https://arxiv.org/abs/1812.10915)<br><sub>Vladimir Ivashkin, Vadim Lebedev</sub> |  |  |
+| 2018-11-29 | [Application of machine learning to an early warning system for very short-term heavy rainfall](https://doi.org/10.1016/j.jhydrol.2018.11.060)<br><sub>Seung‐Hyun Moon, Yong-Hyuk Kim, Yong Hee Lee et al. · Journal of Hydrology</sub> | Korea Meteorological Administration (KMA) |  |
+| 2018-11-23 | [The Error is the Feature: how to Forecast Lightning using a Model Prediction Error](https://arxiv.org/abs/1811.09496)<br><sub>Christian Schön, Jens Dittrich, Richard Müller</sub> | Deutscher Wetterdienst (DWD) |  |
+| 2018-10-29 | [Short‐Term Precipitation Forecast Based on the PERSIANN System and LSTM Recurrent Neural Networks](https://doi.org/10.1029/2018jd028375)<br><sub>Ata Akbari Asanjan, Tiantian Yang, Kuolin Hsu et al. · Journal of Geophysical Research Atmospheres</sub> | University of Oklahoma (AI2ES) |  |
+| 2018-10-24 | [Precipitation Nowcasting: Leveraging bidirectional LSTM and 1D CNN](http://arxiv.org/abs/1810.10485)<br><sub>Maitreya Patel, Anery Patel, Ranendu Ghosh</sub> |  |  |
+| 2018-03-14 | [Developping New Nowcasting Method by Using Convolution Neural Network](https://confit.atlas.jp/guide/event/jpgu2018/subject/MIS19-05/detail)<br><sub>Taku Suezawa, Tomoaki Mega, Hiroshi Kikuchi et al. · Japan Geoscience Union</sub> |  |  |
+| 2018-02-12 | [Short-term Precipitation Prediction Based on a Neural Network Method from Radar Observations](https://doi.org/10.12783/dtcse/aiie2017/18223)<br><sub>Yan Ji · DEStech Transactions on Computer Science and Engineering</sub> |  |  |
+| 2018-01-10 | [Precipitation Nowcasting Leveraging Deep Learning and HPC Systems to Optimize the Data Pipeline](https://ams.confex.com/ams/98Annual/webprogram/Paper327679.html)<br><sub>Alexander Douglas Heye · 98th American Meteorological Society Annual Meeting</sub> |  |  |
+| 2018-01-10 | [Convolutional Neural Networks Applied on Weather Radar Echo Extrapolation](https://doi.org/10.12783/dtcse/csae2017/17544)<br><sub>En Shi, Qian Li, Daquan Gu et al. · DEStech Transactions on Computer Science and Engineering</sub> |  |  |
+| 2018-01-09 | [A Machine Learning Approach to Severe Weather Nowcasting using Weather Radar Data](https://ams.confex.com/ams/98Annual/webprogram/Paper333598.html)<br><sub>César Beneti · 98th American Meteorological Society Annual Meeting</sub> |  |  |
+| 2018-01-01 | [Precipitation Nowcasting using Residual Networks](http://www.diva-portal.org/smash/record.jsf?pid=diva2:1216196)<br><sub>Emilio Vega Ezpeleta</sub> |  |  |
+| 2018-01-01 | [3D Convolutional Neural Network for Regional Precipitation Nowcasting](https://doi.org/10.12677/jisp.2018.74023)<br><sub>昆 吴 · Journal of Image and Signal Processing</sub> |  |  |
 | 2017-06-12 | [Deep Learning for Precipitation Nowcasting: A Benchmark and A New Model](https://arxiv.org/abs/1706.03458)<br><sub>Xingjian Shi, Zhihan Gao, Leonard Lausen et al.</sub> |  |  |
 | 2015-06-13 | [Convolutional LSTM Network: A Machine Learning Approach for Precipitation Nowcasting](https://arxiv.org/abs/1506.04214)<br><sub>Xingjian Shi, Zhourong Chen, Hao Wang et al.</sub> |  |  |
 
@@ -48,5 +78,16 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 - [Application of Cloudburst Prediction System: A Review](https://doi.org/10.36893/iej.2022.v51i7.032-037) (2022)
 - [Modelling the ZR Relationship of Precipitation Nowcasting Based on Deep Learning](https://doi.org/10.32604/cmc.2022.025206) (2022)
 - [Deep Learning on Three-Dimensional Multiscale Data for Next-Hour Tornado Prediction](https://doi.org/10.1175/mwr-d-19-0372.1) (2020)
+- [Using a Coevolutionary Postprocessor to Improve Skill for Both Forecasts of Surface Temperature and Nowcasts of Convection Occurrence](https://doi.org/10.1175/mwr-d-19-0063.1) (2019)
+- [Temporal Interpolation of Geostationary Satellite Imagery with Task Specific Optical Flow](https://arxiv.org/abs/1907.12013) (2019)
+- [Quasi-Operational Testing of Real-Time Storm-Longevity Prediction via Machine Learning](https://doi.org/10.1175/waf-d-18-0141.1) (2019)
+- [Machine Learning Nowcasting of PV Energy Using Satellite Data](https://doi.org/10.1007/s11063-018-09969-1) (2019)
+- [A DEEP-LEARNING METHOD TO CORRECT THE OUTPUT OF A NUMERICAL WEATHER PREDICTION MODEL USED FOR SHORT-TERM PRECIPITATION FORECAST](https://doi.org/10.2208/jscejer.75.i_33) (2019)
+- [Development of a system for collecting and processing sky images and meteorological data used for weather prediction](https://doi.org/10.1016/j.trpro.2019.07.214) (2019)
+- [Prediction of typhoon tracks using a generative adversarial network with observational and meteorological data](https://arxiv.org/abs/1812.01943) (2018)
+- [Deep Photovoltaic Nowcasting](https://arxiv.org/abs/1810.06327) (2018)
+- [Typhoon track prediction using satellite images in a Generative Adversarial Network](https://doi.org/10.1038/s41598-019-42339-y) (2018)
+- [Satellite-Based Rainfall Retrieval: From Generalized Linear Models to Artificial Neural Networks](https://doi.org/10.3390/rs10060939) (2018)
+- [A nowcasting model for the prediction of typhoon tracks based on a long short term memory neural network](https://doi.org/10.1007/s13131-018-1219-z) (2018)
 - [A Neural Network for Tornado Prediction Based on Doppler Radar-Derived Attributes](https://doi.org/10.1175/1520-0450(1996)035<0617:annftp>2.0.co;2) (1996)
 

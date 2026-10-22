@@ -5,7 +5,7 @@ ML models that produce ensembles or full forecast distributions: generative mode
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/probabilistic-ensembles/)
 
-13 papers (7 ⭐). Newest first.
+15 papers (7 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -22,6 +22,8 @@ ML models that produce ensembles or full forecast distributions: generative mode
 | 2023-06-24 | ⭐ [SEEDS: Emulation of Weather Forecast Ensembles with Diffusion Models](https://arxiv.org/abs/2306.14066)<br><sub>Lizao Li, Rob Carver, Ignacio Lopez-Gomez et al. · Science Advances</sub> | Google Research |  |
 | 2022-05-26 | [SwinVRNN: A Data-Driven Ensemble Forecasting Model via Learned Distribution Perturbation](https://arxiv.org/abs/2205.13158)<br><sub>Yuan Hu, Lei Chen, Zhibin Wang et al. · Journal of Advances in Modeling Earth Systems</sub> | Alibaba (DAMO Academy), Fudan University (FuXi) |  |
 | 2020-02-13 | [Ensemble methods for neural network-based weather forecasts](https://arxiv.org/abs/2002.05398)<br><sub>Sebastian Scher, Gabriele Messori · Journal of Advances in Modeling Earth Systems</sub> |  |  |
+| 2018-10-01 | [Predicting weather forecast uncertainty with machine learning](https://doi.org/10.1002/qj.3410)<br><sub>Sebastian Scher, Gabriele Messori · Quarterly Journal of the Royal Meteorological Society</sub> |  |  |
+| 2018-01-01 | [Deep Uncertainty Learning: A Machine Learning Approach for Weather Forecasting.](https://arxiv.org/pdf/1812.09467.pdf)<br><sub>Bin Wang, Zheng Yan, Huaishao Luo et al.</sub> |  |  |
 
 ## Also relevant
 
@@ -40,4 +42,9 @@ ML models that produce ensembles or full forecast distributions: generative mode
 - [Convolutional conditional neural processes for local climate downscaling](https://doi.org/10.5194/gmd-15-251-2022) (2022)
 - [Skillful Precipitation Nowcasting using Deep Generative Models of Radar](https://arxiv.org/abs/2104.00954) (2021)
 - [Sub-seasonal forecasting with a large ensemble of deep-learning weather prediction models](https://arxiv.org/abs/2102.05107) (2021)
+- [Probabilistic Forecasting using Deep Generative Models](https://arxiv.org/abs/1909.11865) (2019)
+- [Machine Learning for Stochastic Parameterization: Generative Adversarial Networks in the Lorenz '96 Model](https://arxiv.org/abs/1909.04711) (2019)
+- [Using a 10-Year Radar Archive for Nowcasting Precipitation Growth and Decay: A Probabilistic Machine Learning Approach](https://doi.org/10.1175/waf-d-18-0206.1) (2019)
+- [A High-Performance Computing System for Probabilistic Weather Forecasts](https://doi.org/10.1002/essoar.10500383.1) (2019)
+- [Probabilistic short term wind power forecasts using deep neural networks with discrete target classes](https://doi.org/10.5194/adgeo-45-13-2018) (2018)
 

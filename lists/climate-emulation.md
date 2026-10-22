@@ -5,7 +5,7 @@ Emulators of climate models and long stable rollouts (decades to centuries), sce
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/climate-emulation/)
 
-14 papers (3 ⭐). Newest first.
+30 papers (3 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -22,7 +22,23 @@ Emulators of climate models and long stable rollouts (decades to centuries), sce
 | 2022-01-01 | [Statistical mechanics in climate emulation: Challenges and perspectives](https://doi.org/10.1017/eds.2022.15)<br><sub>Ivan Sudakow, Michael Pokojovy, Dmitry A. Lyakhov · Environmental Data Science</sub> |  |  |
 | 2020-11-19 | [Predicting global patterns of long-term climate change from short-term simulations using machine learning](https://doi.org/10.1038/s41612-020-00148-5)<br><sub>L. A. Mansfield, P. J. Nowack, M. Kasoar et al. · npj Climate and Atmospheric Science</sub> | University of Reading |  |
 | 2020-02-17 | [Emulating Earth system model temperatures with MESMER: from global mean temperature trajectories to grid-point-level realizations on land](https://doi.org/10.5194/esd-11-139-2020)<br><sub>Lea Beusch, Lukas Gudmundsson, Sonia I. Seneviratne · Earth System Dynamics</sub> | ETH Zurich |  |
+| 2019-08-01 | [A comprehensive history of climate and habitat stability of the last 800&thinsp,000 years](https://doi.org/10.5194/cp-2019-91)<br><sub>Mario Krapp, Robert M. Beyer, Stephen L. Edmundson et al.</sub> | University of Cambridge (Aardvark) |  |
+| 2019-07-17 | [Reducing climate model biases by exploring parameter space with large ensembles of climate model simulations and statistical emulation](https://doi.org/10.5194/gmd-12-3017-2019)<br><sub>Sihan Li, David E. Rupp, Linnia Hawkins et al. · Geoscientific model development</sub> | Met Office, University of Oxford |  |
 | 2019-07-10 | [Weather and climate forecasting with neural networks: using general circulation models (GCMs) with different complexity as a study ground](https://doi.org/10.5194/gmd-12-2797-2019)<br><sub>Sebastian Scher, Gabriele Messori · Geoscientific Model Development</sub> |  |  |
+| 2019-06-20 | [Data-driven prediction of a multi-scale Lorenz 96 chaotic system using deep learning methods: Reservoir computing, ANN, and RNN-LSTM](https://arxiv.org/abs/1906.08829)<br><sub>Ashesh Chattopadhyay, Pedram Hassanzadeh, Devika Subramanian · Nonlin. Processes Geophys. 2020</sub> |  |  |
+| 2019-05-30 | [Statistical approximation of high-dimensional climate models](https://doi.org/10.1016/j.jeconom.2019.05.005)<br><sub>Alena Miftakhova, Kenneth L. Judd, Thomas S. Lontzek et al. · Journal of Econometrics</sub> | Stanford University |  |
+| 2019-05-17 | [Stratospheric Aerosol Injection as a Deep Reinforcement Learning Problem](https://arxiv.org/abs/1905.07366)<br><sub>Christian Schroeder de Witt, Thomas Hornigold</sub> |  |  |
+| 2019-04-26 | [Forecasting Climatic Trends Using Neural Networks: An Experimental Study Using Global Historical Data](https://doi.org/10.3389/frobt.2019.00032)<br><sub>Takeshi Ise, Yurika Oba · Frontiers in Robotics and AI</sub> |  |  |
+| 2019-04-12 | [Fldgen v1.0: an emulator with internal variability and space–time correlation for Earth system models](https://doi.org/10.5194/gmd-12-1477-2019)<br><sub>Robert P. Link, Abigail Snyder, Cary Lynch et al. · Geoscientific model development</sub> |  |  |
+| 2019-02-08 | [Differentiable Physics-informed Graph Networks](https://arxiv.org/abs/1902.02950)<br><sub>Sungyong Seo, Yan Liu</sub> |  |  |
+| 2019-01-16 | [Efficient surrogate modeling methods for large-scale Earth system models based on machine learning techniques](https://doi.org/10.5194/gmd-12-1791-2019)<br><sub>Dan Lu, Daniel Ricciuto · Geoscientific model development</sub> | Oak Ridge National Laboratory |  |
+| 2019-01-01 | [Stilt: Easy Emulation of Time Series AR(1) Computer Model Output in Multidimensional Parameter Space](https://doi.org/10.32614/rj-2018-049)<br><sub>Roman Olson, Kelsey L. Ruckert, Won Chang et al. · The R Journal</sub> |  |  |
+| 2018-12-17 | [Exploring How Eruption Source Parameters Affect Volcanic Radiative Forcing Using Statistical Emulation](https://doi.org/10.1029/2018jd028675)<br><sub>Lauren Marshall, Jill S. Johnson, Graham W. Mann et al. · Journal of Geophysical Research Atmospheres</sub> | University of Cambridge (Aardvark) |  |
+| 2018-11-12 | [Toward Data‐Driven Weather and Climate Forecasting: Approximating a Simple General Circulation Model With Deep Learning](https://doi.org/10.1029/2018gl080704)<br><sub>Sebastian Scher · Geophysical Research Letters</sub> |  |  |
+| 2018-08-27 | [Dimensionality-Reduction of Climate Data using Deep Autoencoders](https://arxiv.org/abs/1809.00027)<br><sub>J. A. Saenz, N. Lubbers, N. M. Urban</sub> |  |  |
+| 2018-04-19 | [Machine Learning Predictions of a Multiresolution Climate Model Ensemble](https://doi.org/10.1029/2018gl077049)<br><sub>Gemma J. Anderson, Donald D. Lucas · Geophysical Research Letters</sub> |  |  |
+| 2018-04-16 | [Multi-level emulation of complex climate model responses to boundary forcing data](https://doi.org/10.1007/s00382-018-4205-4)<br><sub>Giang Tran, K. I. C. Oliver, Philip B. Holden et al. · Climate Dynamics</sub> |  |  |
+| 2018-01-02 | [The Climate Generator: Stochastic climate representation for glacial cycle integration](https://doi.org/10.5194/gmd-2017-276)<br><sub>Mohammad Hizbul Bahar Arif, Lev Tarasov, Tristan Hauser</sub> |  |  |
 
 ## Also relevant
 
@@ -47,6 +63,13 @@ Emulators of climate models and long stable rollouts (decades to centuries), sce
 - [Physics-informed machine learning: case studies for weather and climate modelling](https://doi.org/10.1098/rsta.2020.0093) (2021)
 - [Stable machine-learning parameterization of subgrid processes for climate modeling at a range of resolutions](https://arxiv.org/abs/2001.03151) (2020)
 - [Combining data assimilation and machine learning to emulate a dynamical model from sparse and noisy observations: a case study with the Lorenz 96 model](https://arxiv.org/abs/2001.01520) (2020)
+- [Single‐Column Emulation of Reanalysis of the Northeast Pacific Marine Boundary Layer](https://doi.org/10.1029/2019gl083646) (2019)
+- [Using Deep Neural Networks as Cost‐Effective Surrogate Models for Super‐Parameterized E3SM Radiative Transfer](https://doi.org/10.1029/2018gl081646) (2019)
+- [Applying machine learning to improve simulations of a chaotic dynamical system using empirical error correction](https://arxiv.org/abs/1904.10904) (2019)
+- [Artificial Neural Network Technique for Statistical Downscaling of Global Climate Model](https://doi.org/10.1007/s12647-018-00299-0) (2019)
+- [Using machine learning to build temperature-based ozone parameterizations for climate sensitivity simulations](https://doi.org/10.1088/1748-9326/aae2be) (2018)
 - [Deep learning to represent sub-grid processes in climate models](https://arxiv.org/abs/1806.04731) (2018)
+- [Next-Generation Climate Models Could Learn, Improve on the Fly](https://doi.org/10.1029/2018eo093857) (2018)
+- [Could machine learning break the convection parametrization deadlock?](https://doi.org/10.31223/osf.io/hv95e) (2018)
 - [New Approach to Calculation of Atmospheric Model Physics: Accurate and Fast Neural Network Emulation of Longwave Radiation in a Climate Model](https://doi.org/10.1175/mwr2923.1) (2005)
 

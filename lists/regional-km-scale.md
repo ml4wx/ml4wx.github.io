@@ -22,4 +22,5 @@ Limited-area and regional ML weather models, convection-permitting and km-scale 
 
 - [Generative Data Assimilation of Sparse Weather Station Observations at Kilometer Scales](https://arxiv.org/abs/2406.16947) (2024)
 - [FengWu-GHR: Learning the Kilometer-scale Medium-range Global Weather Forecasting](https://arxiv.org/abs/2402.00059) (2024)
+- [Super-Resolution Simulation for Real-Time Prediction of Urban Micrometeorology](https://doi.org/10.2151/sola.2019-032) (2019)
 

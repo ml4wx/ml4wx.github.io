@@ -5,7 +5,7 @@ Forecasts from 2 weeks to about a year: sub-seasonal, seasonal and ENSO/MJO pred
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/s2s-seasonal/)
 
-16 papers (5 ⭐). Newest first.
+31 papers (5 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -22,9 +22,24 @@ Forecasts from 2 weeks to about a year: sub-seasonal, seasonal and ENSO/MJO pred
 | 2021-08-10 | [Training machine learning models on climate model output yields skillful interpretable seasonal precipitation forecasts](https://doi.org/10.1038/s43247-021-00225-4)<br><sub>Peter B. Gibson, William E. Chapman, Alphan Altinok et al. · Communications Earth &amp; Environment</sub> | California Institute of Technology (Caltech), NASA |  |
 | 2021-05-13 | [Subseasonal Forecasts of Opportunity Identified by an Explainable Neural Network](https://doi.org/10.1029/2020gl092092)<br><sub>Kirsten J. Mayer, Elizabeth A. Barnes · Geophysical Research Letters</sub> | Colorado State University (incl. CIRA) |  |
 | 2021-02-09 | ⭐ [Sub-seasonal forecasting with a large ensemble of deep-learning weather prediction models](https://arxiv.org/abs/2102.05107)<br><sub>Jonathan A. Weyn, Dale R. Durran, Rich Caruana et al. · Sub-Seasonal Forecasting With a Large Ensemble of Deep-Learning Weather Prediction Models. Journal of Advances in Modeling Earth Systems, 2021</sub> | Microsoft Research (AI for Science), University of Washington |  |
+| 2019-09-28 | [Development of Precipitation Forecast Model Based on Artificial Intelligence and Subseasonal Clustering](https://doi.org/10.1061/(asce)he.1943-5584.0001862)<br><sub>Laleh Parviz, Kabir Rasouli · Journal of Hydrologic Engineering</sub> |  |  |
 | 2019-09-18 | ⭐ [Deep learning for multi-year ENSO forecasts](https://doi.org/10.1038/s41586-019-1559-7)<br><sub>Yoo-Geun Ham, Jeong-Hwan Kim, Jing-Jia Luo · Nature</sub> | Nanjing University of Information Science & Technology (NUIST) |  |
+| 2019-08-15 | [Prediction of the ENSO and EQUINOO indices during June–September using a deep learning method](https://doi.org/10.1002/met.1826)<br><sub>Moumita Saha, Ravi Shankar Nanjundiah · Meteorological Applications</sub> |  |  |
+| 2019-07-30 | [Prediction and Validation of Rainfall Classes for Vaigai River Catchment using El Nino](https://doi.org/10.35940/ijrte.b2078.078219)<br><sub>Mahadevan Palanichamy, Ramaswamy Sankaralingam Narayanasamy · International Journal of Recent Technology and Engineering (IJRTE)</sub> |  |  |
+| 2019-06-29 | [Seasonal Predictions of the Number of Tropical Cyclones in the Vietnam East Sea Using Statistical Models](https://doi.org/10.25073/2588-1094/vnuees.4379)<br><sub>Ba Duy Dinh, Thanh Ngo‐Duc, Tran Quang Duc et al. · VNU Journal of Science Earth and Environmental Sciences</sub> |  |  |
+| 2019-06-22 | [Extended-range statistical ENSO prediction through operator-theoretic techniques for nonlinear dynamics](https://arxiv.org/abs/1906.09492)<br><sub>Xinyang Wang, Joanna Slawinska, Dimitrios Giannakis</sub> |  |  |
+| 2019-06-04 | [El Niño-Southern Oscillation forecasting using complex networks analysis of LSTM neural networks](https://doi.org/10.1007/s10015-019-00540-2)<br><sub>Clifford Broni-Bedaiko, Ferdinand Apietu Katsriku, Tatsuo Unemi et al. · Artificial Life and Robotics</sub> |  |  |
+| 2019-05-07 | [Prediction of North Atlantic Oscillation Index with Convolutional LSTM Based on Ensemble Empirical Mode Decomposition](https://doi.org/10.3390/atmos10050252)<br><sub>Shijin Yuan, Xiaodan Luo, Bin Mu et al. · Atmosphere</sub> | Fudan University (FuXi) |  |
+| 2019-04-30 | [IMPLEMENTATION OF ARTIFICIAL NEURAL NETWORK FOR MONTHLY RAIN ATTACKS IN SOUTH KALIMANTAN](https://doi.org/10.20527/jtiulm.v4i1.36)<br><sub>Nur Arminarahmah, Miftahul Munir · Jurnal Teknologi Informasi Universitas Lambung Mangkurat (JTIULM)</sub> |  |  |
+| 2019-01-14 | [Analyzing El Niño–Southern Oscillation Predictability Using Long‐Short‐Term‐Memory Models](https://doi.org/10.1029/2018ea000423)<br><sub>Andrew Huang, Ben Vega‐Westhoff, Ryan L. Sriver · Earth and Space Science</sub> |  |  |
+| 2019-01-01 | [DEVELOPMENT OF A SEASONAL FORECAST MODEL OF PRECIPITATION USING GLOBAL SURFACE TEMPERATURE IMAGES BY DEEP LEARNING](https://doi.org/10.2208/jscejhe.75.2_i_1207)<br><sub>Shingo Zenkoji, Taichi TEBAKARI, Kazutoshi Sakakibara et al. · Journal of Japan Society of Civil Engineers Ser B1 (Hydraulic Engineering)</sub> |  |  |
 | 2018-12-18 | [S2S reboot: An argument for greater inclusion of machine learning in subseasonal to seasonal forecasts](https://doi.org/10.1002/wcc.567)<br><sub>Judah Cohen, Dim Coumou, Jessica Hwang et al. · WIREs Climate Change</sub> | Microsoft Research (AI for Science), Massachusetts Institute of Technology (MIT), Potsdam Institute for Climate Impact Research (PIK), Stanford University |  |
+| 2018-09-21 | [Seasonal prediction of high‐resolution temperature at 2‐m height over Mongolia during boreal winter using both coupled general circulation model and artificial neural network](https://doi.org/10.1002/joc.5848)<br><sub>Gerelchuluun Bayasgalan, Joong‐Bae Ahn · International Journal of Climatology</sub> |  |  |
 | 2018-09-19 | [Improving Subseasonal Forecasting in the Western U.S. with Machine Learning](https://arxiv.org/abs/1809.07394)<br><sub>Jessica Hwang, Paulo Orenstein, Judah Cohen et al. · Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining</sub> | Microsoft Research (AI for Science), Stanford University |  |
+| 2018-08-01 | [Kinetic Studies of Fenton Oxidation Reaction by UV-VIS Spectroscopy](https://doi.org/10.5923/s.ajee.201601.14)<br><sub>Zhongde Dai, Gøril Flatberg, Heinz A. Preisig et al. · Journal of Laboratory Chemical Education</sub> |  |  |
+| 2018-06-29 | [Forecasting Seasonal Rainfall in Zambia – An Artificial Neural Network Approach](https://doi.org/10.33260/zictjournal.v2i1.46)<br><sub>Lillian Mzyece, Mayumbo Nyirenda, Monde M.K Kabemba et al. · Zambia ICT Journal</sub> |  |  |
+| 2018-04-18 | [Analyzing el nino southern oscillation predictions from long-short-merm-memory models](http://hdl.handle.net/2142/101011)<br><sub>Andrew Huang · Illinois Digital Environment for Access to Learning and Scholarship (University of Illinois at Urbana-Champaign)</sub> |  |  |
+| 2018-03-27 | [Using Network Theory and Machine Learning to predict El Niño](https://arxiv.org/abs/1803.10076)<br><sub>Peter D. Nooteboom, Qing Yi Feng, Cristóbal López et al. · Earth System Dynamics 9, 969-983 (2018)</sub> |  |  |
 
 ## Also relevant
 
@@ -36,5 +51,12 @@ Forecasts from 2 weeks to about a year: sub-seasonal, seasonal and ENSO/MJO pred
 - [Advancing interpretability of machine-learning prediction models](https://doi.org/10.1017/eds.2022.13) (2022)
 - [Video-Based Convolutional Neural Networks Forecasting for Rainfall Forecasting](https://doi.org/10.1109/lgrs.2022.3167456) (2022)
 - [Using Artificial Neural Networks for Generating Probabilistic Subseasonal Precipitation Forecasts over California](https://doi.org/10.1175/mwr-d-20-0096.1) (2020)
+- [Improving seasonal forecasts of air temperature using a genetic algorithm](https://doi.org/10.1038/s41598-019-49281-z) (2019)
 - [Analog forecasting of extreme-causing weather patterns using deep learning](https://arxiv.org/abs/1907.11617) (2019)
+- [Seasonal prediction of climate-driven fire risk for decision-making and operational applications in a Mediterranean region](https://arxiv.org/abs/1905.01110) (2019)
+- [Prediction of agricultural drought in Chile from multiple spatio-temporal data sources](https://doi.org/10.1002/essoar.10500350.1) (2019)
+- [Improving the North American multi-model ensemble (NMME) precipitation forecasts at local areas using wavelet and machine learning](https://doi.org/10.1007/s00382-018-04605-z) (2019)
+- [Monthly rainfall prediction using artificial neural network: A case study of Kano, Nigeria](https://doi.org/10.18280/eesrj.050201) (2018)
+- [A Scalable Machine Learning System for Pre-Season Agriculture Yield Forecast](https://arxiv.org/abs/1806.09244) (2018)
+- [Drought Prediction for Areas with Sparse Monitoring Networks: A Case Study for Fiji](https://doi.org/10.3390/w10060788) (2018)
 

@@ -5,7 +5,7 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/global-medium-range/)
 
-23 papers (10 ⭐). Newest first.
+27 papers (10 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -30,7 +30,11 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 | 2020-08-19 | [Data-driven medium-range weather prediction with a Resnet pretrained on climate simulations: A new model for WeatherBench](https://arxiv.org/abs/2008.08626)<br><sub>Stephan Rasp, Nils Thuerey · Journal of Advances in Modeling Earth Systems</sub> | Technical University of Munich (TUM) |  |
 | 2020-03-15 | ⭐ [Improving data-driven global weather prediction using deep convolutional neural networks on a cubed sphere](https://arxiv.org/abs/2003.11927)<br><sub>Jonathan A. Weyn, Dale R. Durran, Rich Caruana · Journal of Advances in Modeling Earth Systems</sub> | Microsoft Research (AI for Science), University of Washington |  |
 | 2019-08-17 | [Can Machines Learn to Predict Weather? Using Deep Learning to Predict Gridded 500‐hPa Geopotential Height From Historical Weather Data](https://doi.org/10.1029/2019ms001705)<br><sub>Jonathan A. Weyn, Dale R. Durran, Rich Caruana · Journal of Advances in Modeling Earth Systems</sub> | Microsoft Research (AI for Science), University of Washington |  |
+| 2019-08-10 | [Deep Learning in Data Science](https://doi.org/10.35940/ijrte.b1117.0782s319)<br><sub>UJ Exam Papers Admin · International Journal of Recent Technology and Engineering (IJRTE)</sub> |  |  |
+| 2019-08-01 | [Artificial Intelligence May Be Key to Better Weather Forecasts](https://doi.org/10.1029/2019eo129967)<br><sub>Sid‐Ahmed Boukabara, Vladimir M. Krasnopolsky, Jebb Q. Stewart et al. · Eos</sub> |  |  |
+| 2019-01-01 | [Weather Forecasting using Machine Learning Techniques](https://doi.org/10.2139/ssrn.3350281)<br><sub>Siddharth Singh, Mayank Kaushik, Ambuj Gupta et al. · SSRN Electronic Journal</sub> |  |  |
 | 2018-10-01 | ⭐ [Challenges and design choices for global weather and climate models based on machine learning](https://doi.org/10.5194/gmd-11-3999-2018)<br><sub>Peter D. Dueben, Peter Bauer · Geoscientific Model Development</sub> | ECMWF |  |
+| 2018-01-10 | [Opportunities for Machine Learning in Weather Forecasting](https://ams.confex.com/ams/98Annual/webprogram/Paper328573.html)<br><sub>Rachel Prudden · 98th American Meteorological Society Annual Meeting</sub> | Met Office |  |
 | 1998-09-01 | [Applying Neural Network Models to Prediction and Data Analysis in Meteorology and Oceanography](https://doi.org/10.1175/1520-0477(1998)079<1855:annmtp>2.0.co;2)<br><sub>William W. Hsieh, Benyang Tang · Bulletin of the American Meteorological Society</sub> |  |  |
 
 ## Also relevant
@@ -76,5 +80,9 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 - [Dual-Branched Spatio-Temporal Fusion Network for Multihorizon Tropical Cyclone Track Forecast](https://doi.org/10.1109/jstars.2022.3170299) (2022)
 - [Machine learning emulation of gravity wave drag in numerical weather forecasting](https://arxiv.org/abs/2101.08195) (2021)
 - [WeatherBench: A benchmark dataset for data-driven weather forecasting](https://arxiv.org/abs/2002.00469) (2020)
+- [Toward Data‐Driven Weather and Climate Forecasting: Approximating a Simple General Circulation Model With Deep Learning](https://doi.org/10.1029/2018gl080704) (2018)
+- [Fused Deep Learning for Hurricane Track Forecast from Reanalysis Data](https://hal.archives-ouvertes.fr/hal-01851001) (2018)
+- [Precipitation Data Assimilation System Based on a Neural Network and Case-Based Reasoning System](https://doi.org/10.3390/info9050106) (2018)
+- [Machine Learning Approaches to Reducing Tropical Cyclone Prediction Errors](https://ams.confex.com/ams/98Annual/webprogram/Paper335042.html) (2018)
 - [Complex hybrid models combining deterministic and machine learning components for numerical climate modeling and weather prediction](https://doi.org/10.1016/j.neunet.2006.01.002) (2006)
 
