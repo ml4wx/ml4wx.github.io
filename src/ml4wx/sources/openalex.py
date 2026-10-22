@@ -16,7 +16,7 @@ log = logging.getLogger(__name__)
 API = "https://api.openalex.org/works"
 SELECT = (
     "id,doi,title,publication_date,type,primary_location,best_oa_location,locations,"
-    "authorships,abstract_inverted_index,cited_by_count"
+    "authorships,abstract_inverted_index,cited_by_count,is_retracted"
 )
 OPEN_LICENSES = ("cc-by", "cc0", "public-domain")
 _client = Client(min_interval=0.12)
@@ -98,6 +98,7 @@ def parse_work(w: dict, source: str) -> Candidate | None:
         ),
         affiliations=[s for a in authorships for s in a.get("raw_affiliation_strings") or []],
         cited_by=w.get("cited_by_count"),
+        retracted=bool(w.get("is_retracted")),
         source=source,
     )
 

@@ -71,25 +71,46 @@ def paper_id(arxiv: str | None, doi: str | None, openalex: str | None) -> str:
     raise ValueError("work has no identifier")
 
 
+_RETRACTED = re.compile(r"^\s*retracted(\s+article)?\s*:\s*", re.I)
+# British/American variants that differ between preprint and journal titles.
+_SPELLING = [(r"parametri[sz]ation|parameteri[sz]ation", "parameterization"), (r"modell", "model")]
+
+
+def is_retracted_title(t: str) -> bool:
+    return bool(_RETRACTED.match(t))
+
+
 def norm_title(t: str) -> str:
     t = re.sub(r"[‐-―−]", "-", t)  # Unicode dashes (Wiley uses U+2010)
-    t = unicodedata.normalize("NFKD", t).encode("ascii", "ignore").decode()
-    return re.sub(r"[^a-z0-9]+", " ", t.lower()).strip()
+    t = unicodedata.normalize("NFKD", t).encode("ascii", "ignore").decode().lower()
+    t = _RETRACTED.sub("", t)
+    for pattern, repl in _SPELLING:
+        t = re.sub(pattern, repl, t)
+    return re.sub(r"[^a-z0-9]+", " ", t).strip()
+
+
+def title_key(t: str) -> str:
+    """Letters and digits only: 'data set' == 'dataset', 'heat wave' == 'heatwave'."""
+    return norm_title(t).replace(" ", "")
 
 
 def title_words(t: str) -> set[str]:
-    return {w for w in norm_title(t).split() if len(w) > 2}
+    """Words for overlap checks. Numbers always count, so 'EPT-1.5' != 'EPT-2'."""
+    return {w for w in norm_title(t).split() if len(w) > 2 or w.isdigit()}
+
+
+def word_overlap(a: str, b: str) -> float:
+    wa, wb = title_words(a), title_words(b)
+    return len(wa & wb) / len(wa | wb) if wa and wb else 0.0
 
 
 def same_title(a: str, b: str, threshold: float = 0.8) -> bool:
-    """Exact normalized match, or high word overlap (preprint vs journal titles differ a bit)."""
-    na, nb = norm_title(a), norm_title(b)
-    if na == nb:
+    """Same title key, or high word overlap (preprint vs journal titles differ a bit)."""
+    if title_key(a) == title_key(b):
         return True
-    wa, wb = title_words(a), title_words(b)
-    if len(wa) < 4 or len(wb) < 4:
+    if len(title_words(a)) < 4 or len(title_words(b)) < 4:
         return False
-    return len(wa & wb) / len(wa | wb) >= threshold
+    return word_overlap(a, b) >= threshold
 
 
 def surname(name: str) -> str:

@@ -260,6 +260,15 @@ def cmd_enrich(args) -> int:
     return 0
 
 
+def cmd_dedupe(args) -> int:
+    from . import dedupe
+
+    merged, retracted = dedupe.run(Archive(), load(), dry_run=args.dry_run)
+    print(f"dedupe: {merged} duplicates merged, {retracted} retracted papers removed"
+          + (" (dry run)" if args.dry_run else ""))  # fmt: skip
+    return 0
+
+
 def cmd_judge(args) -> int:
     """Re-score highlights for papers added by a source (e.g. after a backfill)."""
     cfg, archive = load(), Archive()
@@ -279,6 +288,9 @@ def cmd_weekly(args) -> int:
     since = today - dt.timedelta(days=cfg.settings["weekly_lookback_days"])
     cands = fetch.recent(cfg, since, today)
     rep = ingest.ingest(cands, archive, cfg, source="weekly", today=today, html_affiliations=True)
+    from . import dedupe
+
+    dedupe.run(archive, cfg)  # journal versions of preprints that slipped through matching
     export.write_all(archive, cfg)
     rels = feeds.releases(cfg, today - dt.timedelta(days=7))
     path, _ = digest.build(
@@ -362,6 +374,10 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--days", type=int, default=None, help="only papers added in the last N days")
     p.add_argument("--missing-orgs", action="store_true", help="only papers without labs")
     p.set_defaults(fn=cmd_enrich)
+
+    p = sub.add_parser("dedupe", help="merge duplicate papers, remove retracted ones")
+    p.add_argument("--dry-run", action="store_true")
+    p.set_defaults(fn=cmd_dedupe)
 
     p = sub.add_parser("judge", help="second-opinion significance for likely highlights")
     p.add_argument("--source", nargs="*", default=None, help="only papers from these sources")
