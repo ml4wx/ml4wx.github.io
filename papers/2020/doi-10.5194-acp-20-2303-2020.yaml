@@ -1,0 +1,49 @@
+id: doi-10.5194-acp-20-2303-2020
+title: 'Technical note: Deep learning for creating surrogate models of precipitation in Earth system models'
+authors:
+- Theodore Weber
+- Austin Corotan
+- Brian Hutchinson
+- Ben Kravitz
+- Robert Link
+date: '2020-02-26'
+year: 2020
+venue: Atmospheric chemistry and physics
+venue_type: journal
+ids:
+  doi: 10.5194/acp-20-2303-2020
+  openalex: W2937082058
+links:
+  paper: https://doi.org/10.5194/acp-20-2303-2020
+  pdf: https://acp.copernicus.org/articles/20/2303/2020/acp-20-2303-2020.pdf
+topic: climate-emulation
+type: model
+method:
+- cnn
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: A CNN surrogate trained on CanESM2 monthly precipitation outperforms persistence and stays skillful
+  over 120-month rollouts, with scheduled sampling and preforecasting documented.
+abstract: Abstract. We investigate techniques for using deep neural networks to produce surrogate models
+  for short term climate forecasts. A convolutional neural network is trained on 97 years of monthly precipitation
+  output from the 1pctCO2 run (the CO2 concentration increases by 1 % per year) simulated by the CanESM2
+  Earth System Model. The neural network clearly outperforms a persistence forecast and does not show
+  substantially degraded performance even when the forecast length is extended to 120 months. The model
+  is prone to underpredicting precipitation in areas characterized by intense precipitation events. Scheduled
+  sampling (forcing the model to gradually use its own past predictions rather than ground truth) is essential
+  for avoiding amplification of early forecasting errors. However, the use of scheduled sampling also
+  necessitates preforecasting (generating forecasts prior to the first forecast date) to obtain adequate
+  performance for the first few prediction time steps. We document the training procedures and hyperparameter
+  optimization process for researchers who wish to extend the use of neural networks in developing surrogate
+  models.
+significance: 3
+cited_by: 33
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

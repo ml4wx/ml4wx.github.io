@@ -1,0 +1,60 @@
+id: doi-10.1002-joc.6570
+title: Estimating near‐surface air temperature across Israel using a machine learning based hybrid approach
+authors:
+- Bin Zhou
+- Evyatar Erell
+- Ian Hough
+- Jonathan D. Rosenblatt
+- Allan C. Just
+- Victor Novack
+- Itai Kloog
+date: '2020-03-29'
+year: 2020
+venue: International Journal of Climatology
+venue_type: journal
+ids:
+  doi: 10.1002/joc.6570
+  openalex: W3013449388
+links:
+  paper: https://doi.org/10.1002/joc.6570
+  pdf: https://rmets.onlinelibrary.wiley.com/doi/pdfdirect/10.1002/joc.6570
+orgs:
+- pik
+topic: observations-remote-sensing
+topics:
+- downscaling
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- era5
+- stations
+status: research
+summary: Two-stage random forest hybrid estimates gridded 1 km intra-daily near-surface air temperature
+  over Israel from satellite skin temperature, with out-of-sample R2 of 0.96 for air temperature.
+abstract: 'Abstract Rising global temperatures over the last decades have increased heat exposure among
+  populations worldwide. An accurate estimate of the resulting impacts on human health demands temporally
+  explicit and spatially resolved monitoring of near‐surface air temperature (Ta). Neither ground‐based
+  nor satellite‐borne observations can achieve this individually, but the combination of the two provides
+  synergistic opportunities. In this study, we propose a two‐stage machine learning‐based hybrid model
+  to estimate 1 × 1 km2 gridded intra‐daily Ta from surface skin temperature (Ts) across the complex terrain
+  of Israel during 2004–2016. We first applied a random forest (RF) regression model to impute missing
+  Ts from the Moderate Resolution Imaging Spectroradiometer (MODIS) Aqua and Terra satellites, integrating
+  Ts from the geostationary Spinning Enhanced Visible and InfraRed Imager (SEVIRI) satellite and synoptic
+  variables from European Centre for Medium‐Range Weather Forecasts'' (ECMWF) ERA5 reanalysis data sets.
+  The imputed Ts are in turn fed into the Stage 2 RF‐based model to estimate Ta at the satellite overpass
+  hours of each day. We evaluated the model''s performance applying out‐of‐sample fivefold cross validation.
+  Both stages of the hybrid model perform very well with out‐of‐sample fivefold cross validated R2 of
+  0.99 and 0.96, MAE of 0.42°C and 1.12°C, and RMSE of 0.65°C and 1.58°C (Stage 1: imputation of Ts, and
+  Stage 2: estimation of Ta from Ts, respectively). The newly proposed model provides excellent computationally
+  efficient estimation of near‐surface air temperature at high resolution in both space and time, which
+  helps further minimize exposure misclassification in epidemiological studies.'
+significance: 3
+cited_by: 49
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

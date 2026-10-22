@@ -1,0 +1,57 @@
+id: doi-10.3390-rs12050896
+title: Estimation of Hourly Rainfall during Typhoons Using Radar Mosaic-Based Convolutional Neural Networks
+authors:
+- Chih‐Chiang Wei
+- Po-Yu Hsieh
+date: '2020-03-10'
+year: 2020
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs12050896
+  openalex: W3012459813
+links:
+  paper: https://doi.org/10.3390/rs12050896
+  pdf: https://www.mdpi.com/2072-4292/12/5/896/pdf?version=1583979900
+topic: observations-remote-sensing
+topics:
+- nowcasting
+type: model
+method:
+- cnn
+spatial:
+- local
+data:
+- radar
+- stations
+status: research
+summary: Proposes a radar-mosaic CNN for estimating hourly typhoon rainfall in Taiwan, outperforming Z-R
+  relationships at three stations; it reduces relative RMSE to 0.713 at Hualien.
+abstract: 'Taiwan is located at the junction of the tropical and subtropical climate zones adjacent to
+  the Eurasian continent and Pacific Ocean. The island frequently experiences typhoons that engender severe
+  natural disasters and damage. Therefore, efficiently estimating typhoon rainfall in Taiwan is essential.
+  This study examined the efficacy of typhoon rainfall estimation. Radar images released by the Central
+  Weather Bureau were used to estimate instantaneous rainfall. Additionally, two proposed neural network-based
+  architectures, namely a radar mosaic-based convolutional neural network (RMCNN) and a radar mosaic-based
+  multilayer perceptron (RMMLP), were used to estimate typhoon rainfall, and the commonly applied Marshall–Palmer
+  Z-R relationship (Z-R_MP) and a reformulated Z-R relationship at each site (Z-R_station) were adopted
+  to construct benchmark models. Monitoring stations in Hualien, Sun Moon Lake, and Taichung were selected
+  as the experimental stations in Eastern, Central, and Western Taiwan, respectively. This study compared
+  the performance of the models in predicting rainfall at the three stations, and the results are outlined
+  as follows: at the Hualien station, the estimations of the RMCNN, RMMLP, Z-R_MP, and Z-R_station models
+  were mostly identical to the observed rainfall, and all models estimated an increase during peak rainfall
+  on the hyetographs, but the peak values were underestimated. At the Sun Moon Lake and Taichung stations,
+  however, the estimations of the four models were considerably inconsistent in terms of overall rainfall
+  rates, peak rainfall, and peak rainfall arrival times on the hyetographs. The relative root mean squared
+  error for overall rainfall rates of all stations was smallest when computed using RMCNN (0.713), followed
+  by those computed using RMMLP (0.848), Z-R_MP (1.030), and Z-R_station (1.392). Moreover, RMCNN yielded
+  the smallest relative error for peak rainfall (0.316), followed by RMMLP (0.379), Z-R_MP (0.402), and
+  Z-R_station (0.688). RMCNN computed the smallest relative error for the peak rainfall arrival time (1.507
+  h), followed by RMMLP (2.673 h), Z-R_MP (2.917 h), and Z-R_station (3.250 h). The results revealed that
+  the RMCNN model in combination with radar images could efficiently estimate typhoon rainfall.'
+significance: 3
+cited_by: 19
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

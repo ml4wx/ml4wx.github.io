@@ -1,0 +1,55 @@
+id: doi-10.1080-16000870.2019.1696142
+title: Probabilistic thunderstorm forecasting by blending multiple ensembles
+authors:
+- François Bouttier
+- Hugo Marchal
+date: '2020-01-01'
+year: 2020
+venue: Tellus A Dynamic Meteorology and Oceanography
+venue_type: journal
+ids:
+  doi: 10.1080/16000870.2019.1696142
+  openalex: W3000473633
+links:
+  paper: https://doi.org/10.1080/16000870.2019.1696142
+orgs:
+- meteo-france
+topic: post-processing
+topics:
+- extremes-hazards
+- probabilistic-ensembles
+type: model
+method:
+- classical-ml
+timescale:
+- short
+- medium
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: ML-tuned blending of multiple ensembles gives probabilistic thunderstorm forecasts from 9 hours
+  to 4 days, clearly better than raw ensemble output.
+abstract: 'In numerical weather prediction models, point thunderstorm forecasts tend to have little predictive
+  value beyond a few hours. Thunderstorms are difficult to predict due largely to their typically small
+  size and correspondingly limited intrinsic predictability. We present an algorithm that predicts the
+  probability of thunderstorm occurrence by blending multiple ensemble predictions. It combines several
+  post-processing steps: spatial neighbourhood smoothing, dressing of probability density functions, adjusting
+  sensitivity to model output, ensemble weighting, and calibration of the output probabilities. These
+  operators are tuned using a machine learning technique that optimizes forecast value measured by event
+  detection and false alarm rates. An evaluation during summer 2018 over western Europe demonstrates that
+  the method can be deployed using about a month of historical data. Post-processed thunderstorm probabilities
+  are substantially better than raw ensemble output. Forecast ranges from 9 hours to 4 days are studied
+  using four ensembles: a three-member lagged ensemble, a 12-member non-lagged limited area ensemble,
+  and two global ensembles including the recently implemented ECMWF thunderstorm diagnostic. The ensembles
+  are combined in order to produce forecasts at all ranges. In most tested configurations, the combination
+  of two ensembles outperforms single-ensemble output. The performance of the combination is degraded
+  if one of the ensembles used is much worse than the other. These results provide measures of thunderstorm
+  predictability in terms of effective resolution, diurnal variability and maximum forecast horizon.'
+significance: 4
+cited_by: 31
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

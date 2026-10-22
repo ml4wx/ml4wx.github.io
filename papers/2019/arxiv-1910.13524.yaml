@@ -1,0 +1,51 @@
+id: arxiv-1910.13524
+title: Deep Integro-Difference Equation Models for Spatio-Temporal Forecasting
+authors:
+- Andrew Zammit-Mangion
+- Christopher K. Wikle
+date: '2019-10-29'
+year: 2019
+venue: Spatial Statistics
+venue_type: journal
+ids:
+  arxiv: '1910.13524'
+  doi: 10.1016/j.spasta.2020.100408
+  openalex: W2982441595
+links:
+  paper: https://doi.org/10.1016/j.spasta.2020.100408
+  pdf: https://arxiv.org/pdf/1910.13524
+topic: nowcasting
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: CNN-based deep integro-difference model with an ensemble Kalman filter gives calibrated SST forecasts
+  and 10-minute Sydney radar nowcasts, reusing the ocean-trained model.
+abstract: Integro-difference equation (IDE) models describe the conditional dependence between the spatial
+  process at a future time point and the process at the present time point through an integral operator.
+  Nonlinearity or temporal dependence in the dynamics is often captured by allowing the operator parameters
+  to vary temporally, or by re-fitting a model with a temporally-invariant linear operator in a sliding
+  window. Both procedures tend to be excellent for prediction purposes over small time horizons, but are
+  generally time-consuming and, crucially, do not provide a global prior model for the temporally-varying
+  dynamics that is realistic. Here, we tackle these two issues by using a deep convolution neural network
+  (CNN) in a hierarchical statistical IDE framework, where the CNN is designed to extract process dynamics
+  from the process' most recent behaviour. Once the CNN is fitted, probabilistic forecasting can be done
+  extremely quickly online using an ensemble Kalman filter with no requirement for repeated parameter
+  estimation. We conduct an experiment where we train the model using 13 years of daily sea-surface temperature
+  data in the North Atlantic Ocean. Forecasts are seen to be accurate and calibrated. A key advantage
+  of our approach is that the CNN provides a global prior model for the dynamics that is realistic, interpretable,
+  and computationally efficient. We show the versatility of the approach by successfully producing 10-minute
+  nowcasts of weather radar reflectivities in Sydney using the same model that was trained on daily sea-surface
+  temperature data in the North Atlantic Ocean.
+significance: 3
+cited_by: 48
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,52 @@
+id: arxiv-2003.06549
+title: Interpreting and Stabilizing Machine-learning Parametrizations of Convection
+authors:
+- Noah D. Brenowitz
+- Tom Beucler
+- Michael Pritchard
+- Christopher S. Bretherton
+date: '2020-03-14'
+year: 2020
+venue_type: preprint
+ids:
+  arxiv: '2003.06549'
+  doi: 10.1175/jas-d-20-0082.1
+links:
+  paper: https://arxiv.org/abs/2003.06549
+  pdf: https://arxiv.org/pdf/2003.06549
+topic: hybrid-parameterization
+topics:
+- xai-uq-physics
+type: model
+method:
+- other
+spatial:
+- global
+data:
+- km-scale-sim
+status: research
+summary: Introduces tools to interpret neural convection parameterizations and diagnose gravity-wave instability
+  when coupled to climate models, using SPCAM and cloud-resolving training data.
+abstract: Neural networks are a promising technique for parameterizing sub-grid-scale physics (e.g. moist
+  atmospheric convection) in coarse-resolution climate models, but their lack of interpretability and
+  reliability prevents widespread adoption. For instance, it is not fully understood why neural network
+  parameterizations often cause dramatic instability when coupled to atmospheric fluid dynamics. This
+  paper introduces tools for interpreting their behavior that are customized to the parameterization task.
+  First, we assess the nonlinear sensitivity of a neural network to lower-tropospheric stability and the
+  mid-tropospheric moisture, two widely-studied controls of moist convection. Second, we couple the linearized
+  response functions of these neural networks to simplified gravity-wave dynamics, and analytically diagnose
+  the corresponding phase speeds, growth rates, wavelengths, and spatial structures. To demonstrate their
+  versatility, these techniques are tested on two sets of neural networks, one trained with a super-parametrized
+  version of the Community Atmosphere Model (SPCAM) and the second with a near-global cloud-resolving
+  model (GCRM). Even though the SPCAM simulation has a warmer climate than the cloud-resolving model,
+  both neural networks predict stronger heating/drying in moist and unstable environments, which is consistent
+  with observations. Moreover, the spectral analysis can predict that instability occurs when GCMs are
+  coupled to networks that support gravity waves that are unstable and have phase speeds larger than 5
+  m/s. In contrast, standing unstable modes do not cause catastrophic instability. Using these tools,
+  differences between the SPCAM- vs. GCRM- trained neural networks are analyzed, and strategies to incrementally
+  improve both of their coupled online performance unveiled.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

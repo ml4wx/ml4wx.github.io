@@ -1,0 +1,60 @@
+id: doi-10.3390-atmos10110718
+title: Temperature Prediction Using the Missing Data Refinement Model Based on a Long Short-Term Memory
+  Neural Network
+authors:
+- Inyoung Park
+- Hyun Soo Kim
+- Jiwon Lee
+- Joon Ha Kim
+- Chul Han Song
+- Hong Kook Kim
+date: '2019-11-16'
+year: 2019
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos10110718
+  openalex: W2988847054
+links:
+  paper: https://doi.org/10.3390/atmos10110718
+  pdf: https://www.mdpi.com/2073-4433/10/11/718/pdf?version=1574330647
+topic: local-forecasting
+type: model
+method:
+- rnn
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: LSTM with a missing-data refinement step forecasts station temperature at 6 to 24 hours and 7
+  to 14 days ahead, with lowest RMSE among compared models.
+abstract: 'In this paper, we propose a new temperature prediction model based on deep learning by using
+  real observed weather data. To this end, a huge amount of model training data is needed, but these data
+  should not be defective. However, there is a limitation in collecting weather data since it is not possible
+  to measure data that have been missed. Thus, the collected data are apt to be incomplete, with random
+  or extended gaps. Therefore, the proposed temperature prediction model is used to refine missing data
+  in order to restore missed weather data. In addition, since temperature is seasonal, the proposed model
+  utilizes a long short-term memory (LSTM) neural network, which is a kind of recurrent neural network
+  known to be suitable for time-series data modeling. Furthermore, different configurations of LSTMs are
+  investigated so that the proposed LSTM-based model can reflect the time-series traits of the temperature
+  data. In particular, when a part of the data is detected as missing, it is restored by using the proposed
+  model’s refinement function. After all the missing data are refined, the LSTM-based model is retrained
+  using the refined data. Finally, the proposed LSTM-based temperature prediction model can predict the
+  temperature through three time steps: 6, 12, and 24 h. Furthermore, the model is extended to predict
+  7 and 14 day future temperatures. The performance of the proposed model is measured by its root-mean-squared
+  error (RMSE) and compared with the RMSEs of a feedforward deep neural network, a conventional LSTM neural
+  network without any refinement function, and a mathematical model currently used by the meteorological
+  office in Korea. Consequently, it is shown that the proposed LSTM-based model employing LSTM-refinement
+  achieves the lowest RMSEs for 6, 12, and 24 h temperature prediction as well as for 7 and 14 day temperature
+  prediction, compared to other DNN-based and LSTM-based models with either no refinement or linear interpolation.
+  Moreover, the prediction accuracy of the proposed model is higher than that of the Unified Model (UM)
+  Local Data Assimilation and Prediction System (LDAPS) for 24 h temperature predictions.'
+significance: 2
+cited_by: 76
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

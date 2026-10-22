@@ -1,0 +1,53 @@
+id: arxiv-1912.09425
+title: Precipitation Forecasting via Multi-Scale Deconstructed ConvLSTM
+authors:
+- Xinyu Xiao
+- Qiuming Kuang
+- Shiming Xiang
+- Junnan Hu
+- Chunhong Pan
+date: '2019-12-15'
+year: 2019
+venue_type: preprint
+ids:
+  arxiv: '1912.09425'
+  openalex: W2995770089
+links:
+  paper: http://arxiv.org/abs/1912.09425
+  pdf: https://arxiv.org/pdf/1912.09425
+orgs:
+- cma
+topic: nowcasting
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: A multi-scale deconstructed ConvLSTM encoder-decoder forecasts precipitation from multiple meteorological
+  fields on EC and CM datasets, combining NWP data with deep learning.
+abstract: Numerical Weather Prediction (NWP), is widely used in precipitation forecasting, based on complex
+  equations of atmospheric motion requires supercomputers to infer the state of the atmosphere. Due to
+  the complexity of the task and the huge computation, this methodology has the problems of inefficiency
+  and non-economic. With the rapid development of meteorological technology, the collection of plentiful
+  numerical meteorological data offers opportunities to develop data-driven models for NMP task. In this
+  paper, we consider to combine NWP with deep learning. Firstly, to improve the spatiotemporal modeling
+  of meteorological elements, a deconstruction mechanism and the multi-scale filters are composed to propose
+  a multi-scale deconstructed ConvLSTM (MSD-ConvLSTM). The MSD-ConvLSTM captures and fuses the contextual
+  information by multi-scale filters with low parameter consumption. Furthermore, an encoder-decoder is
+  constructed to encode the features of multiple meteorological elements by deep CNN and decode the spatiotemporal
+  information from different elements by the MSD-ConvLSTM. Our method demonstrates the data-driven way
+  is significance for the weather prediction, which can be confirmed from the experimental results of
+  precipitation forecasting on the European Centre Weather Forecasts (EC) and China Meteorological Forecasts
+  (CM) datasets.
+significance: 3
+cited_by: 5
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

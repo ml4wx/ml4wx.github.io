@@ -1,0 +1,52 @@
+id: doi-10.1002-essoar.10501903.1
+title: Analog Ensemble Probabilistic Forecasting using Deep Generative Models
+authors:
+- Alessandro Fanfarillo
+date: '2020-01-16'
+year: 2020
+venue_type: other
+ids:
+  doi: 10.1002/essoar.10501903.1
+  openalex: W3198046156
+links:
+  paper: https://doi.org/10.1002/essoar.10501903.1
+orgs:
+- ncar
+topic: probabilistic-ensembles
+topics:
+- post-processing
+type: model
+method:
+- gan-vae
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: A conditional VAE replaces the historical archive in analog ensemble wind speed correction for
+  NAM, matching AnEn skill with up to 25x less memory.
+abstract: Deterministic Numerical Weather Prediction (NWP) models are the state-of-the-science models
+  to provide reliable weather forecasts that provide indispensable actionable data to society. However,
+  each NWP model run carry uncertainty caused by errors in initial conditions and assumptions in the model.
+  As a result, probabilistic forecasts can be used to quantify and even correct the model bias. The Analog
+  Ensemble (AnEn) technique uses a historical dataset of past deterministic forecasts and their associated
+  observations to generate an ensemble of future outcomes. One of the main advantages of the AnEn technique,
+  along with other related statistical ensemble techniques, is that it is not necessary to run multiple
+  NWP runs by varying initial conditions or model settings. However, all these techniques require access
+  to the entire historical dataset to generate analogs. Moreover, these techniques require reading the
+  dataset for every forecast which is computationally expensive. In this work, the whole historical dataset
+  is replaced by a model that has the capability to learn the Probability Density Function (PDF) of that
+  dataset. Specifically, we utilize a Conditional Variational Autoencoder (CVAE) deep generative machine
+  learning model in order to correct the wind speed forecasts of North American Mesoscale (NAM) forecasting
+  system. As a result, we feed the values forecasted by the NWP model as a condition to our CVAE and generate
+  an ensemble used to correct the forecasted value in constant time and with small memory usage. Initial
+  results show that CVAE probabilistic performance is comparable to AnEn while CVAE can be up to 25 and
+  2 times smaller in memory and runtime, respectively, for 5 years of historical data.
+significance: 3
+cited_by: 1
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

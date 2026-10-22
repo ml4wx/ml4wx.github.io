@@ -1,0 +1,62 @@
+id: doi-10.1002-essoar.10501494.1
+title: Towards data-driven approaches for simulating rainfall in climate models
+authors:
+- Ramalingam Saravanan
+- Junho Yang
+- Mikyoung Jun
+- Courtney Schumacher
+- Jiayi Wang
+- Raymond Wong
+date: '2019-12-24'
+year: 2019
+venue_type: other
+ids:
+  doi: 10.1002/essoar.10501494.1
+  openalex: W2999638341
+links:
+  paper: https://doi.org/10.1002/essoar.10501494.1
+topic: hybrid-parameterization
+topics:
+- observations-remote-sensing
+type: model
+method:
+- classical-ml
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- era5
+- satellite
+status: research
+summary: Statistical models predict tropical rainfall type and amount over the next 6 hours from MERRA-2
+  atmospheric profiles, trained on TRMM data, capturing time-mean spatial patterns.
+abstract: 'Climate model simulations of rainfall in the tropics suffer from pervasive biases, and that
+  can lead to degraded climate simulations in other regions as well. Over the past two decades, high-resolution
+  satellite measurements of tropical rainfall have become available. These data are most commonly used
+  to constrain physics-based climate models by validating statistical properties of rainfall such as means
+  and variances. However, the satellite data contain a wealth of spatiotemporal information on sub-diurnal
+  timescales that can be used to construct predictive models. This study explores the feasibility of predicting
+  rainfall from atmospheric state using a hierarchy of empirical models. Our empirical approach is similar
+  to the physics-based approach in that vertical profiles of atmospheric state at a particular instant
+  of time serve as the predictors, and rainfall over a subsequent time period is the predictand. However,
+  we allow the empirical model to “learn” from data to determine the model parameters. Empirical Orthogonal
+  Function (EOF) decomposition is applied to vertical profiles from NASA MERRA-2 reanalysis to select
+  the dominant predictor modes at analysis time 00 UTC. Rain predictions for the subsequent 6-hour period
+  (00-06 UTC) are separated into different types from TRMM satellite data: stratiform, deep convective,
+  and shallow convective. For each rain type, two generalized linear statistical models (logistic regression
+  for rain occurrence and gamma regression for rain amount) are trained on 2003 data and used to predict
+  during 2004. The results show that the statistical approach can predict spatial patterns and amplitudes
+  of tropical rainfall in the time-averaged sense. The first EOF of humidity and the second EOF of temperature
+  contribute most to prediction. In addition to generalized linear models, other common machine learning
+  techniques (support vector machine and random forest) are compared. Furthermore, marginal nonlinear
+  relationships between predictand and individual predictor are explored via a nonparametric regression
+  technique. Interestingly, incorporating the identified marginal nonlinear relationship into the generalized
+  linear model does not improve the prediction, suggesting that these marginal nonlinear effects are explained
+  by other predictors in the model.'
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill
