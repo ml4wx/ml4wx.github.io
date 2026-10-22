@@ -99,8 +99,6 @@ Language models and agents for weather and climate science: QA, data analysis, m
 
 ## Also relevant
 
-- [Advanced meteorological modeling framework integrating quantum computing and machine learning for hurricane track prediction beyond traditional forecasting limitations](https://doi.org/10.3389/fenvs.2026.1939822) (2026)
-- [Spatiotemporal Conditional Diffusion with a Vision-Language Model: Spatial Quality Modeling for Adaptive Fusion of Radar Forecasts](https://doi.org/10.3390/atmos17101005) (2026)
 - [Evaluating LLMs for Translating Legacy Fortran Atmospheric Physics to GPU-Accelerated JAX](https://arxiv.org/abs/2610.12662) (2026)
 - [WeatherDiagFlow: Evidence-Grounded Radar Nowcasting with Diagnostic Flow Refinement](https://arxiv.org/abs/2609.29772) (2026)
 - [A Hybrid AI–Ontology Framework for Tropical Cyclone Forecasting, Risk Assessment, and Intelligent Disaster Decision Support](https://doi.org/10.21203/rs.3.rs-10728416/v1) (2026)
@@ -117,12 +115,12 @@ Language models and agents for weather and climate science: QA, data analysis, m
 - [Solar-VLM: Multimodal Vision-Language Models for Augmented Solar Power Forecasting](https://arxiv.org/abs/2604.04145) (2026)
 - [AGCD: Agent-Guided Cross-Modal Decoding for Weather Forecasting](https://arxiv.org/abs/2603.15260) (2026)
 - [WildfireVLM: AI-powered Analysis for Early Wildfire Detection and Risk Assessment Using Satellite Imagery](https://arxiv.org/abs/2602.13305) (2026)
+- [The Role of AI in Climate Change Prediction: Analysing Machine Learning Models for Extreme Weather Forecasting](https://doi.org/10.1109/idciot67589.2026.11455751) (2026)
 - [A Generative AI-Driven Reliability Layer for Action-Oriented Disaster Resilience](https://arxiv.org/abs/2601.18308) (2026)
 - [Agentic-AI Driven System for Real-Time Disaster Alerts](https://doi.org/10.56726/irjmets86671) (2026)
 - [Proof of Concept: Multi-Target Wildfire Risk Prediction and Large Language Model Synthesis](https://arxiv.org/abs/2601.11686) (2026)
 - [A unified multimodal understanding and generation model for cross-disciplinary scientific research](https://arxiv.org/abs/2601.01363) (2026)
 - [LangPrecip: Language-Aware Multimodal Precipitation Nowcasting](https://arxiv.org/abs/2512.22317) (2025)
-- [Comprehensive Survey of Big Data Analytics with Generative AI for Climate Change](https://doi.org/10.1109/bigdata66926.2025.11401987) (2025)
 - [Application of Artificial Intelligence in ENSO Prediction Research](https://doi.org/10.54254/2753-8818/2026.pj30146) (2025)
 - [Agentic AI Framework for Cloudburst Prediction and Coordinated Response](https://arxiv.org/abs/2511.22767) (2025)
 - [FireScope: Wildfire Risk Raster Prediction with a Chain-of-Thought Oracle](https://arxiv.org/abs/2511.17171) (2025)

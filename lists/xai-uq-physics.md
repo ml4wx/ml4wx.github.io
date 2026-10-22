@@ -5,7 +5,7 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/xai-uq-physics/)
 
-191 papers (4 ⭐). Newest first.
+192 papers (4 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -31,6 +31,7 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 | 2026-08-26 | [Missing the Butterfly and Predicting the Past: Features or Bugs of Accurate AI Weather Models?](https://arxiv.org/abs/2608.25835)<br><sub>Pedram Hassanzadeh, Weidong Li, Y. Qiang Sun et al.</sub> | New York University (M2LInES), University of Chicago |  |
 | 2026-08-20 | [SAE-Xplainers: Rule-Based Feature Interpretation for Extreme Earth Events](https://arxiv.org/abs/2608.20117)<br><sub>Hugo Porta, Emanuele Dalsasso, Chang Xu et al.</sub> | Inria | [code](https://github.com/freddy0218/ClimateInformatics2026) |
 | 2026-08-07 | [Evaluating Explainable AI Methods for Geoscientific Regression: Insights from Applications and the Lorenz-63 System](https://arxiv.org/abs/2608.07406)<br><sub>Ieuan Higgs, Todd Jones, Kieran Hunt et al.</sub> |  |  |
+| 2026-07-26 | [AI Model Performances Depend on Adequate Training Data Representing Diverse Physical Mechanisms](https://doi.org/10.1029/2025gl121196)<br><sub>M. Mu, Bo Qin, G. Dai · Geophysical Research Letters</sub> |  |  |
 | 2026-07-23 | [Explaining Weather Bulletins via ILP](https://arxiv.org/abs/2607.21184)<br><sub>Enrico Santi, Alessandro Dal Palù, Agostino Dovier et al. · EPTCS 450, 2026, pp. 15-28</sub> |  |  |
 | 2026-07-22 | [Spatial Generalization Tests for Machine Learning-based Weather Models to Assess Physical Consistency](https://arxiv.org/abs/2607.20716)<br><sub>Maren Höver, Milan Klöwer, Christian Schroeder de Witt et al.</sub> |  |  |
 | 2026-07-20 | [Hard conservation correctors can hide a degrading model when training autoregressive emulators](https://arxiv.org/abs/2607.18416)<br><sub>William E. Chapman, John Schreck, Yingkai Sha</sub> | NSF NCAR / UCAR |  |
@@ -59,12 +60,12 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 | 2026-04-22 | [Mechanistic Interpretability Tool for AI Weather Models](https://arxiv.org/abs/2604.20467)<br><sub>Kirsten I. Tempest, Matthias Beylich, George C. Craig</sub> |  |  |
 | 2026-04-21 | [Calibrating Scientific Foundation Models with Inference-Time Stochastic Attention](https://arxiv.org/abs/2604.19530)<br><sub>Akash Yadav, Taiwo A. Adebiyi, Ruda Zhang</sub> |  |  |
 | 2026-04-21 | [Connecting the forward problem to the inverse problem in uncertainty quantification of Earth system models using fast emulators](https://arxiv.org/abs/2604.19500)<br><sub>Ethan YoungIn Shin, Baris Kale, Michael F. Howland</sub> | Massachusetts Institute of Technology (MIT) |  |
+| 2026-04-16 | [Explainable AI for Regional Climate and Extreme Rainfall Analysis in Karnataka](https://doi.org/10.1109/aimla67915.2026.11522410)<br><sub>A. M, M. S, K. C. Gouda · 2026 4th International Conference on Artificial Intelligence and Machine Learning Applications Theme: Healthcare and Internet of Things (AIMLA)</sub> |  |  |
 | 2026-03-31 | [PHYSICS-INFORMED ARTIFICIAL INTELLIGENCE FOR EARTH SYSTEM SCIENCE: APPLICATIONS IN CLIMATE MODELING, NATURAL HAZARD PREDICTION, AND SUSTAINABLE RESOURCE MANAGEMENT](https://doi.org/10.5281/zenodo.21294805)<br><sub>Afra Sayab · Policy Research Journal</sub> |  |  |
 | 2026-03-28 | [A visual analytics approach to exploring regional physical processes reflected in generative climate downscaling models](https://doi.org/10.1177/14738716261434910)<br><sub>Pei-Chen Chang, Zheng-Han Huang, Wan‐Ling Tseng et al. · Information Visualization</sub> |  |  |
 | 2026-03-27 | [Error Growth Dynamic and Predictability of Tropical Cyclone in Machine Learning Weather Prediction Model](https://doi.org/10.1002/qj.70257)<br><sub>Jingchen Pu, Mu Mu, Jie Feng et al. · Quarterly Journal of the Royal Meteorological Society</sub> | Fudan University (FuXi) |  |
 | 2026-03-20 | [Watch an AI Weather Model Learn (and Unlearn) Tropical Cyclones](https://arxiv.org/abs/2603.20541)<br><sub>Rebecca Baiman, Ankur Mahesh, Elizabeth A. Barnes</sub> | Colorado State University (incl. CIRA), Lawrence Berkeley National Laboratory / NERSC, University of California, Berkeley |  |
 | 2026-03-18 | [A spectral test of the butterfly effect and physical consistency in the diffusion-based GenCast’s ensembles](https://doi.org/10.1038/s41612-026-01380-1)<br><sub>Hisu Kim, Jihun Ryu, Seok‐Woo Son et al. · npj Climate and Atmospheric Science</sub> |  |  |
-| 2026-03-12 | [Assessing Subseasonal Predictions of Stratosphere‐Troposphere Coupling of GraphCast](https://doi.org/10.1029/2025jd044852)<br><sub>Zheng Wu · Journal of Geophysical Research: Atmospheres</sub> |  |  |
 | 2026-02-18 | [Interpreting Environmental Dynamics through Machine Learning: A Multi-Scale Analytical Framework.](https://doi.org/10.5281/zenodo.18680148)<br><sub>Dr. Sarah J. Mitchell, Harshavardhana Doddamani, Dr.Sudhakara Reddy M et al. · Zenodo (CERN European Organization for Nuclear Research)</sub> | Stanford University |  |
 | 2026-02-02 | [Role of the ocean for fast atmospheric evolution revealed by machine learning](https://arxiv.org/abs/2602.01904)<br><sub>Bobby Antonio, Kristian Strommen, Hannah M. Christensen</sub> |  |  |
 | 2026-01-31 | ["What is a realistic forecast?" Assessing data-driven weather forecasts, a journey from verification to falsification](https://doi.org/10.1088/2515-7620/ae9f1f)<br><sub>Zied Ben Bouallègue · Environmental Research Communications</sub> | ECMWF |  |
@@ -117,6 +118,7 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 | 2024-10-21 | [Observation impact explanation in atmospheric state estimation using hierarchical message-passing graph neural networks*](https://doi.org/10.1088/2632-2153/ad8981)<br><sub>Hyeon-Ju Jeon, Jeon-ho Kang, In‐Hyuk Kwon et al. · Machine Learning Science and Technology</sub> |  |  |
 | 2024-09-27 | ⭐ [Robustness of AI-based weather forecasts in a changing climate](https://arxiv.org/abs/2409.18529)<br><sub>Thomas Rackow, Nikolay Koldunov, Christian Lessig et al.</sub> | ECMWF |  |
 | 2024-09-10 | [Deep Learning for Koopman Operator Estimation in Idealized Atmospheric Dynamics](https://arxiv.org/abs/2409.06522)<br><sub>David Millard, Arielle Carr, Stéphane Gaudreault</sub> | Environment and Climate Change Canada (ECCC) |  |
+| 2024-08-28 | [Evaluating AI’s capability to reflect physical mechanisms: a case study of tropical cyclone impacts on extreme rainfall](https://doi.org/10.1088/1748-9326/ad6fbb)<br><sub>Hong-Xiong Xu, Yihong Duan, Xiang-De Xu · Environmental Research Letters</sub> |  |  |
 | 2024-07-09 | [Exploring NWS Forecasters’ Assessment of AI Guidance Trustworthiness](https://doi.org/10.1175/waf-d-23-0180.1)<br><sub>Mariana Goodall Cains, Christopher D. Wirz, Julie L. Demuth et al. · Weather and Forecasting</sub> | NSF NCAR / UCAR, University of Oklahoma (AI2ES), University of Washington |  |
 | 2024-07-01 | [The value of convergence research for developing trustworthy AI for weather, climate, and ocean hazards](https://doi.org/10.1038/s44304-024-00014-x)<br><sub>Amy McGovern, Julie L. Demuth, A. Bostrom et al. · npj Natural Hazards</sub> |  |  |
 | 2024-07-01 | [How Interpretable Machine Learning Can Benefit Process Understanding in the Geosciences](https://doi.org/10.1029/2024ef004540)<br><sub>Shi-Jie Jiang, Lily-belle Sweet, Georgios Blougouras et al. · Earth's Future</sub> |  |  |
@@ -133,9 +135,7 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 | 2024-03-12 | [Applying ranking techniques for estimating influence of Earth variables on temperature forecast error](https://arxiv.org/abs/2403.07966)<br><sub>M. Julia Flores, Melissa Ruiz-Vásquez, Ana Bastos et al.</sub> |  |  |
 | 2024-02-21 | [CloudNine: Analyzing Meteorological Observation Impact on Weather Prediction Using Explainable Graph Neural Networks](https://arxiv.org/abs/2402.14861)<br><sub>Hyeon-Ju Jeon, Jeon-Ho Kang, In-Hyuk Kwon et al.</sub> |  |  |
 | 2024-02-15 | [Using Grouped Features to Improve Explainable AI Results for Atmospheric AI Models that use Gridded Spatial Data and Complex Machine Learning Technique](https://doi.org/10.22541/essoar.170800910.02052685/v1)<br><sub>Evan Krell, Philippe E. Tissot, Antonios Mamalakis et al.</sub> |  |  |
-| 2024-02-14 | [AI2ES: The NSF AI Institute for Research on Trustworthy AI for Weather, Climate, and Coastal Oceanography](https://doi.org/10.1002/aaai.12160)<br><sub>Amy McGovern, Imme Ebert-Uphoff, Elizabeth A. Barnes et al. · AI Mag.</sub> |  |  |
 | 2024-02-08 | [Constraining the carbon cycle in JULES-ES-1.0](https://doi.org/10.5194/gmd-17-1059-2024)<br><sub>Doug McNeall, Eddy Robertson, Andy Wiltshire · Geoscientific model development</sub> | Met Office |  |
-| 2024-01-22 | [Identifying and Categorizing Bias in AI/ML for Earth Sciences](https://doi.org/10.1175/bams-d-23-0196.1)<br><sub>Amy McGovern, A. Bostrom, Marie McGraw et al. · Bulletin of the American Meteorological Society</sub> |  |  |
 | 2024-01-01 | [Prévisions météorologiques reposant sur l'intelligence artificielle : Une révolution peut en cacher une autre](https://doi.org/10.37053/lameteorologie-2024-0058)<br><sub>Zied Ben Bouallègue, Mariana Clare, Matthieu Chevallier · La Météorologie</sub> |  |  |
 | 2023-12-05 | [Machine Learning Driven Sensitivity Analysis of E3SM Land Model Parameters for Wetland Methane Emissions](https://doi.org/10.1029/2023ms004115)<br><sub>Sandeep Chinta, Xiang Gao, Qing Zhu · Journal of Advances in Modeling Earth Systems</sub> | Lawrence Berkeley National Laboratory / NERSC, Massachusetts Institute of Technology (MIT) |  |
 | 2023-11-09 | [A Machine Learning Explainability Tutorial for Atmospheric Sciences](https://doi.org/10.1175/aies-d-23-0018.1)<br><sub>Montgomery L. Flora, Corey K. Potvin, Amy McGovern et al. · Artificial Intelligence for the Earth Systems</sub> | NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), University of Oklahoma (AI2ES) |  |
@@ -163,6 +163,7 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 | 2022-10-18 | [Layer-wise Relevance Propagation for Echo State Networks applied to Earth System Variability](https://arxiv.org/abs/2210.09958)<br><sub>Marco Landt-Hayen, Peer Kröger, Martin Claus et al.</sub> |  |  |
 | 2022-09-01 | [Ensemble‐Based Experimental Design for Targeting Data Acquisition to Inform Climate Models](https://doi.org/10.1029/2022ms002997)<br><sub>Oliver R. A. Dunbar, Michael F. Howland, Tapio Schneider et al. · Journal of Advances in Modeling Earth Systems</sub> | California Institute of Technology (Caltech), Massachusetts Institute of Technology (MIT) |  |
 | 2022-08-19 | [Carefully choose the baseline: Lessons learned from applying XAI attribution methods for regression tasks in geoscience](https://doi.org/10.1175/aies-d-22-0058.1)<br><sub>Antonios Mamalakis, Elizabeth A. Barnes, Imme Ebert-Uphoff · Artificial Intelligence for the Earth Systems</sub> | Colorado State University (incl. CIRA) |  |
+| 2022-08-14 | [Analysis of the Atmospheric Duct Existence Factors in Tropical Cyclones Based on the SHAP Interpretation of Extreme Gradient Boosting Predictions](https://doi.org/10.3390/rs14163952)<br><sub>Lan Huang, Xiaofeng Zhao, Yu-Di Liu et al. · Remote. Sens.</sub> |  |  |
 | 2022-06-12 | [Calibration and Uncertainty Quantification of Gravity Wave Parameterization in an Intermediate Complexity Climate Model](https://doi.org/10.1002/essoar.10511598.1)<br><sub>Laura Mansfield, Aditi Sheshadri</sub> | Stanford University |  |
 | 2022-06-07 | [Physics captured by data-based methods in El Niño prediction](https://doi.org/10.1063/5.0101668)<br><sub>G. Lancia, I. J. Goede, C. Spitoni et al. · Chaos An Interdisciplinary Journal of Nonlinear Science</sub> |  |  |
 | 2022-04-14 | [Physics-aware nonparametric regression models for Earth data analysis](https://doi.org/10.1088/1748-9326/ac6762)<br><sub>Jordi Cortés-Andrés, Gustau Camps-Valls, S. Sippel et al. · Environmental Research Letters</sub> |  |  |
@@ -203,8 +204,11 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 
 ## Also relevant
 
+- [From prediction to resilience: transferable and equitable AI for climate extremes in a data-unequal Anthropocene](https://doi.org/10.1016/j.cosust.2026.101734) (2026)
 - [Application of physically interpretable deep learning in ENSO prediction: status, challenges, and future directions](https://doi.org/10.1007/s12145-026-02273-w) (2026)
+- [Spatiotemporal coherent displacements for ensemble-based neural data assimilation](https://doi.org/10.1017/eds.2026.10058) (2026)
 - [Forest and bioenergy expansion amplifies climate warming by accelerating regional cloud loss](https://doi.org/10.5194/acp-26-14133-2026) (2026)
+- [Predicting regional gray swans via translocation: AI weather models and Dubai’s unprecedented 2024 rainfall](https://doi.org/10.1126/sciadv.ady9406) (2026)
 - [AI Emulation of Stochastic Sudden Stratospheric Warming with Interpretable Latent Structure](https://doi.org/10.1029/2026jh001387) (2026)
 - [Transferability of ML emulators for polar RCM surface melt under different forcings: Limitations and recommendations](https://doi.org/10.31223/x5cr59) (2026)
 - [Counterfactual Predictions in Scientific Emulators Without Controlled Experiments](https://arxiv.org/abs/2610.02252) (2026)
@@ -228,24 +232,27 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 - [Optimizing Gaussian process emulation and generalized additive model fitting for rapid, reproducible earth system model analysis](https://doi.org/10.5194/gmd-19-7767-2026) (2026)
 - [Beyond isotropic uncertainty in tropical cyclone tracks with adaptive conformal prediction](https://doi.org/10.1038/s44304-026-00254-z) (2026)
 - [Interpretable AI predicts a 2026 summer dry anomaly in central China](https://arxiv.org/abs/2608.19163) (2026)
+- [Interpretable Machine Learning for Monthly Mean Air Temperature Modeling Under Correlated Meteorological Predictors: A Single-Station Case Study in Zonguldak, Türkiye](https://doi.org/10.3390/su18168458) (2026)
 - [Momentum Decoupling Drives Low‐Wind Events During Heatwaves in China: A Hybrid Explainable Machine Learning and Dynamical Modeling Approach](https://doi.org/10.1029/2026gl123286) (2026)
 - [Geospatial deep learning and SHAP-based explainable AI for wildfire susceptibility and exposure mapping in Western Canada](https://doi.org/10.1016/j.ecoinf.2026.103996) (2026)
 - [Skillful and interpretable ENSO prediction via a glass-box dynamical-deep learning model](https://doi.org/10.1038/s41612-026-01513-6) (2026)
 - [Machine learning correction of satellite precipitation is governed by mechanism purity, not algorithmic complexity: a proof-of-concept study in Hunan, China, with pre-registered cross-regional validation](https://arxiv.org/abs/2608.12988) (2026)
 - [On the role of radiative forcing in inference of tropical modes of variability using a neural operator climate emulator](https://doi.org/10.22541/essoar.15007200/v1) (2026)
+- [GRASP: Manifold-Aware Structural Guidance for Generative Atmospheric Super-Resolution](https://doi.org/10.1145/3770855.3819047) (2026)
 - [Quantifying predictor contributions to tropical cyclone intensity forecasting using Kolmogorov–Arnold Networks](https://doi.org/10.1016/j.aosl.2026.100898) (2026)
 - [Summer precipitation prediction in North China based on interpretable Random Forest](https://doi.org/10.1007/s00382-026-08325-7) (2026)
+- [Explainable Machine Learning for Long-Term Monthly Hydroclimatic Forecasting and Extreme-Event Detection](https://doi.org/10.61628/jsce.v7i3.2741) (2026)
 - [The Modèle Atmosphérique Régional – Intelligence Artificielle (MAR-IA): surface meltwater over Greenland](https://doi.org/10.5194/tc-20-4235-2026) (2026)
 - [Machine Learning for Optimized Tuning of the Simple Cloud-Resolving Earth Atmosphere Model (SCREAM)](https://doi.org/10.22541/essoar.15006793/v1) (2026)
-- [AI Model Performances Depend on Adequate Training Data Representing Diverse Physical Mechanisms](https://doi.org/10.1029/2025gl121196) (2026)
 - [On the sensitivity of machine-learned probabilistic weather forecast models to scale-aware scoring rules](https://arxiv.org/abs/2607.19161) (2026)
 - [Physics-Informed Super-Resolution of Atmospheric Data](https://arxiv.org/abs/2607.18877) (2026)
 - [Nonlinear and interactive effects of compound heatwaves on urban nighttime economic activities revealed by explainable machine learning](https://doi.org/10.1016/j.uclim.2026.103055) (2026)
 - [TSCoNet: A Two-Stage Copula CNN-LSTM for Uncertainty-Aware Spatio-Temporal Forecasting](https://arxiv.org/abs/2607.10410) (2026)
 - [Advanced Explainable AI Framework for Dew Point Forecasting with Attention-Assisted Temporal Convolutional Networks](https://doi.org/10.21275/sr26707214952) (2026)
-- [Exploring Physical Mechanisms for Superior Tropical Cyclone Track Forecasting in AI‐Based Ensemble Weather Prediction Models](https://doi.org/10.1029/2025jd046208) (2026)
 - [Event-Timing Priors: Temporal Point Process Likelihoods Correct the Long-Horizon Extreme-Event Statistics of Generative Surrogates](https://doi.org/10.5281/zenodo.21194880) (2026)
 - [Pre-training for deep statistical climate downscaling: enhancing consistency and robustness across regional datasets](https://doi.org/10.5194/gmd-19-5781-2026) (2026)
+- [Rainfall Field Reconstruction From Commercial Microwave Links via a Conditional Diffusion Model](https://doi.org/10.1029/2025wr042876) (2026)
+- [Statistical Equivalence of AI Emulators and Earth System Models: A Large Ensemble Study with Ultra-Low-Resolution E3SM](https://doi.org/10.1145/3815572.3815761) (2026)
 - [Diagnosing Evaporation–Soil Moisture Regimes in CESM: Conditions Associated with Discrepancies from Observations](https://doi.org/10.22541/essoar.15005202/v1) (2026)
 - [Explainable machine learning for climate change attribution and hotspot identification: spatial cross-validation analysis in South Asian Region](https://doi.org/10.1038/s41598-026-57382-9) (2026)
 - [Pattern Recognition of West African Monsoon Extreme Rainfall Events Using Convolutional Neural Networks](https://doi.org/10.1029/2026gl124425) (2026)
@@ -269,8 +276,6 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 - [Advanced Deep Learning Combined with Contribution Analysis for Interpretable ENSO Forecasting](https://doi.org/10.3390/jmse14090806) (2026)
 - [Amplified Urban Climate Extremes from Global Warming-Urbanization Synergy: A Physics-Informed Intelligence Paradigm](https://arxiv.org/abs/2604.24333) (2026)
 - [Instability-Aware Steering of an Extreme Atmospheric River in an AI Weather Foundation Model](https://arxiv.org/abs/2604.18906) (2026)
-- [Potential Applications of Machine Learning in Marine Climate Prediction](https://doi.org/10.1109/icgmrs70230.2026.11542363) (2026)
-- [Explainable AI for Regional Climate and Extreme Rainfall Analysis in Karnataka](https://doi.org/10.1109/aimla67915.2026.11522410) (2026)
 - [Artificial Intelligence Identifies Shortwave Troughs as an Important Local Feature of Extreme Precipitation](https://doi.org/10.22541/essoar.15001928/v1) (2026)
 - [Predicting the distance of the AMOC to its tipping point using CNNs](https://doi.org/10.5194/egusphere-2026-1872) (2026)
 - [Post‐Hiatus Enhancement of ENSO Forecast Skill via Salinity‐Mediated Indo‐Pacific Inter‐Basin Coupling](https://doi.org/10.1029/2025gl119444) (2026)
@@ -280,10 +285,12 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 - [Unraveling Winter Precipitation Predictability over CONUS via Deep Learning and Explainable Artificial Intelligence](https://doi.org/10.1175/aies-d-25-0105.1) (2026)
 - [Assessing the ability of a stretched-grid deep-learning weather prediction model to capture physical balances](https://doi.org/10.1002/qj.70315) (2026)
 - [The Recipe Matters More Than the Kitchen:Mathematical Foundations of the AI Weather Prediction Pipeline](https://arxiv.org/abs/2604.01215) (2026)
+- [Physics‐informed ensemble forecasts in data‐driven models](https://doi.org/10.1002/qj.70183) (2026)
 - [START: A Hybrid Spatio-Temporal Attention ResNet Transformer for Explainable Multivariable Meteorological Bias-correction](https://doi.org/10.1007/s41748-026-01132-4) (2026)
 - [On the Stable Integration of Neural Network Parameterization in Numerical Models](https://doi.org/10.3390/atmos17030306) (2026)
 - [Target Concept Tuning Improves Extreme Weather Forecasting](https://arxiv.org/abs/2603.19325) (2026)
 - [OMNIFLOW: A Physics-Grounded Multimodal Agent for Generalized Scientific Reasoning](https://arxiv.org/abs/2603.15797) (2026)
+- [Assessing Subseasonal Predictions of Stratosphere‐Troposphere Coupling of GraphCast](https://doi.org/10.1029/2025jd044852) (2026)
 - [DeepCut: adaptive neural network thresholds for precipitation phase partitioning](https://doi.org/10.1088/3049-4753/ae5066) (2026)
 - [Estimating Mediterranean Cyclone Activity via Explainable Machine Learning](https://doi.org/10.1029/2025jh000807) (2026)
 - [Distinguishing Between the Short‐Term Climate Responses to Different Stratospheric Aerosol Injection Latitudes With Explainable Artificial Intelligence](https://doi.org/10.1029/2025jd045560) (2026)
@@ -314,6 +321,7 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 - [Trustworthy Data-Driven Wildfire Risk Prediction and Understanding in Western Canada](https://arxiv.org/abs/2601.01677) (2026)
 - [Subseasonal precipitation forecasting in Southeastern Brazil using machine learning with explainable artificial intelligence](http://urlib.net/sid.inpe.br/plutao/2026/08.27.14.57.19) (2026)
 - [ClimateXAI: An Explainable Hybrid Deep Learning Framework For Climate Trend Analysis And Extreme Weather Prediction](https://doi.org/10.61137/ijsret.vol.12.issue3.194) (2026)
+- [Improving Tropical Cyclone Intensity Forecast Through Uncertainty Estimation and Long-Term Priors](https://doi.org/10.1109/tgrs.2026.3704473) (2026)
 - [SPPM-FT: Multiscale Decoupled Transformer for Station-Specific Precipitation Forecasting](https://doi.org/10.1109/tgrs.2026.3683153) (2026)
 - [Refining Clear-Sky AI Radiative Transfer Model Forward Predictions and Jacobian Accuracy for ATMS Using a ResNet and Physical Constraints](https://doi.org/10.1109/tgrs.2026.3665759) (2026)
 - [DiffShadow-AI: A Novel Differentiable Geometry-Aware Framework for Joint Cloud Shadow Detection and Cloud Height Estimation From Satellite Imagery](https://doi.org/10.1109/jstars.2026.3734833) (2026)
@@ -322,6 +330,7 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 - [Emulating non-differentiable metrics via knowledge-guided learning: Introducing the Minkowski image loss](https://doi.org/10.1017/eds.2026.10048) (2026)
 - [Advancing fire weather forecasting: deep learning with Kolmogorov–Arnold and Fourier networks across Italy](https://doi.org/10.1007/s11069-025-07815-x) (2026)
 - [Breaking the Heat Code with Transparent AI Models for Predicting Extreme Temperatures](https://doi.org/10.37394/23205.2025.24.25) (2025)
+- [GNADET: A geospatial neural advection–diffusion equation framework with graph transformer for surface temperature forecasting](https://doi.org/10.1088/2632-2153/ae2f8b) (2025)
 - [Learning vertical coordinates via automatic differentiation of a dynamical core](https://arxiv.org/abs/2512.17877) (2025)
 - [An Interpretable Latent Space reveals changing dynamics of European heatwaves](https://doi.org/10.1088/3049-4753/ae6e42) (2025)
 - [Exploring Machine Learning, Deep Learning, and Explainable AI Methods for Seasonal Precipitation Prediction in South America](https://arxiv.org/abs/2512.13910) (2025)
@@ -365,6 +374,7 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 - [Impact of Physical Constraints on Deep Learning-Based Downscaling Prediction of Temperature](https://doi.org/10.1007/s13351-025-4061-1) (2025)
 - [Multi-Hazard Early Warning Systems for Agriculture with Featural-Temporal Explanations](https://arxiv.org/abs/2507.22962) (2025)
 - [Implementing Weather Prediction Using Physics Informed Neural Networks (PINNS)](https://doi.org/10.55041/isjem04872) (2025)
+- [NS-QPE: A Neuro-Symbolic Approach Towards Accurate and Interpretable Quantitative Precipitation Estimation Using Polarimetric Radar Data](https://doi.org/10.1109/amlds63918.2025.11159351) (2025)
 - [Quantifying the Roles for Structural Uncertainty and Intrinsic Climate Variability in Determining the Atmosphere–Ocean Conditions That Drive a Persistent and Severe Drought in Western and Central North America](https://doi.org/10.1175/jcli-d-24-0560.1) (2025)
 - [Interpretable Machine Learning for Urban Heat Mitigation: Attribution and Weighting of Multi-Scale Drivers](https://doi.org/10.1088/2515-7620/aea054) (2025)
 - [Explaining the high skill of reservoir computing methods in El Niño prediction](https://doi.org/10.5194/npg-32-201-2025) (2025)
@@ -391,7 +401,6 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 - [Leveraging AI for Climate Action: Enhancing Predictive Models for Extreme Weather Events](https://doi.org/10.71097/ijsat.v16.i2.3934) (2025)
 - [Assessing the performance and explainability of an avalanche danger forecast model](https://doi.org/10.5194/nhess-25-1331-2025) (2025)
 - [Characterizing Uncertainty in Deep Convection Triggering Using Explainable Machine Learning](https://doi.org/10.1175/jas-d-24-0085.1) (2025)
-- [PiCNet: Physics-infused Convolution Network for Radar-Based Precipitation Nowcasting](https://doi.org/10.1109/icassp49660.2025.10890850) (2025)
 - [Using Machine Learning to Generate a GISS ModelE Calibrated Physics Ensemble (CPE)](https://doi.org/10.1029/2024ms004713) (2025)
 - [Potential for equation discovery with AI in the climate sciences](https://doi.org/10.5194/esd-16-475-2025) (2025)
 - [Towards Long-Range ENSO Prediction with an Explainable Deep Learning Model](https://arxiv.org/abs/2503.19502) (2025)
@@ -404,7 +413,6 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 - [Fixing the Double Penalty in Data-Driven Weather Forecasting Through a Modified Spherical Harmonic Loss Function](https://arxiv.org/abs/2501.19374) (2025)
 - [Toward Spatio‐Temporally Consistent Multi‐Site Fire Danger Downscaling With Explainable Deep Learning](https://doi.org/10.1029/2024jh000331) (2025)
 - [Improving AI weather prediction models using global mass and energy conservation schemes](https://doi.org/10.1029/2025ms005138) (2025)
-- [RELIABILITY ESTIMATION OF 6-MONTH PRECIPITATION PREDICTION IN ASIAN MONSOON REGION USING DEEP LEARNING](https://doi.org/10.2208/jscejj.24-16104) (2025)
 - [An Explainable Deep Learning Framework for Sub-Seasonal to Seasonal Agricultural Drought Prediction Over India](https://doi.org/10.1016/j.agwat.2026.110597) (2025)
 - [Diurnal Land Surface Temperature Responses to Urban Morphology During Heatwaves: Insights from Sdgsat-1 and Explainable Machine Learning](https://doi.org/10.1080/17538947.2026.2693363) (2025)
 - [An Explainable Framework for Optimizing Input-Output Model Configuration in Deep Learning-Based Rainfall Nowcasting](https://doi.org/10.2139/ssrn.5298333) (2025)
@@ -437,7 +445,6 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 - [Deep Learning for predicting rate-induced tipping](https://arxiv.org/abs/2409.07590) (2024)
 - [Incorporating heat budget dynamics in a Transformer-based deep learning model for skillful ENSO prediction](https://doi.org/10.1038/s41612-024-00741-y) (2024)
 - [The role of sea surface salinity in ENSO forecasting in the 21st century](https://doi.org/10.1038/s41612-024-00763-6) (2024)
-- [Evaluating AI’s capability to reflect physical mechanisms: a case study of tropical cyclone impacts on extreme rainfall](https://doi.org/10.1088/1748-9326/ad6fbb) (2024)
 - [Fingerprints of past volcanic eruptions can be detected in historical climate records using machine learning](https://doi.org/10.1038/s43247-024-01617-y) (2024)
 - [Quantifying spatially explicit uncertainty in empirically downscaled climate data](https://doi.org/10.1002/joc.8596) (2024)
 - [Accurate deep learning-based filtering for chaotic dynamics by identifying instabilities without an ensemble](https://doi.org/10.1063/5.0230837) (2024)
@@ -454,8 +461,10 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 - [Valid Error Bars for Neural Weather Models using Conformal Prediction](https://arxiv.org/abs/2406.14483) (2024)
 - [Opinion: Why all emergent constraints are wrong but some are useful – a machine learning perspective](https://doi.org/10.5194/acp-25-2365-2025) (2024)
 - [Improving Explainability of Deep Learning for Polarimetric Radar Rainfall Estimation](https://doi.org/10.1029/2023gl107898) (2024)
+- [Understanding the Low Predictability of the 2015/16 El Niño Event Based on a Deep Learning Model](https://doi.org/10.1007/s00376-024-3238-3) (2024)
 - [Gaussian Framework and Optimal Projection of Weather Fields for Prediction of Extreme Events](https://doi.org/10.1029/2024ms004487) (2024)
 - [Beyond the Horizon: A Critical Analysis of AI-based Weather Forecasting Models](https://doi.org/10.22541/essoar.171632600.06154714/v1) (2024)
+- [Unveiling Climate Drivers via Feature Importance Shift Analysis in New Zealand](https://doi.org/10.1145/3589334.3648147) (2024)
 - [High-resolution ensemble retrieval of cloud properties for all-day based on geostationary satellite](https://doi.org/10.1038/s41612-025-01263-x) (2024)
 - [Enhancing tropical cyclone intensity forecasting with explainable deep learning integrating satellite observations and numerical model outputs](https://doi.org/10.1016/j.isci.2024.109905) (2024)
 - [Machine Learning Investigation of Downburst-Prone Environments in Canada](https://doi.org/10.1175/jamc-d-23-0178.1) (2024)
@@ -500,6 +509,7 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 - [Explainable Offline-Online Training of Neural Networks for Parameterizations: A 1D Gravity Wave-QBO Testbed in the Small-data Regime](https://doi.org/10.1029/2023gl106324) (2023)
 - [Anthropogenic fingerprints in daily precipitation revealed by deep learning](https://doi.org/10.1038/s41586-023-06474-x) (2023)
 - [Assessing decadal variability of subseasonal forecasts of opportunity using explainable AI](https://doi.org/10.1088/2752-5295/aced60) (2023)
+- [Uncertainty Calibration of Passive Microwave Brightness Temperatures Predicted by Bayesian Deep Learning Models](https://doi.org/10.1175/aies-d-22-0056.1) (2023)
 - [Diagnosing Tropical Cyclone Intensity Variations from the Surface Wind Field Evolution](https://doi.org/10.1175/jas-d-22-0208.1) (2023)
 - [Toward machine-assisted tuning avoiding the underestimation of uncertainty in climate change projections](https://doi.org/10.1126/sciadv.adf2758) (2023)
 - [Uncertainty Quantification of Deep Learning–Based Statistical Downscaling of Climatic Parameters](https://doi.org/10.1175/jamc-d-23-0057.1) (2023)
@@ -508,6 +518,7 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 - [Efficient Super‐Resolution of Near‐Surface Climate Modeling Using the Fourier Neural Operator](https://doi.org/10.1029/2023ms003800) (2023)
 - [Unpacking the black box of deep learning for identifying El Niño-Southern oscillation](https://doi.org/10.1088/1572-9494/ace17d) (2023)
 - [Learning Atmospheric Boundary Layer Turbulence](https://doi.org/10.22541/essoar.168748456.60017486/v1) (2023)
+- [A Transformer‐Based Deep Learning Model for Successful Predictions of the 2021 Second‐Year La Niña Condition](https://doi.org/10.1029/2023gl104034) (2023)
 - [Quantifying “climate distinguishability” after stratospheric aerosol injection using explainable artificial intelligence](https://doi.org/10.1029/2023gl106137) (2023)
 - [Deep Ensembles to Improve Uncertainty Quantification of Statistical Downscaling Models under Climate Change Conditions](https://arxiv.org/abs/2305.00975) (2023)
 - [Causally-informed deep learning to improve climate models and projections](https://arxiv.org/abs/2304.12952) (2023)
@@ -524,6 +535,7 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 - [Spring Regional Sea Surface Temperatures as a Precursor of European Summer Heatwaves](https://doi.org/10.1029/2022gl100727) (2023)
 - [Identifying the regional emergence of climate patterns in the ARISE-SAI-1.5 simulations](https://doi.org/10.1088/1748-9326/acc81a) (2023)
 - [An Interpretable Deep Learning ENSO Forecasting Model](https://doi.org/10.34133/olar.0012) (2023)
+- [Deep Learning–Based Parameter Transfer in Meteorological Data](https://doi.org/10.1175/aies-d-22-0024.1) (2023)
 - [Toward Physics-Informed Neural Networks for 3-D Multilayer Cloud Mask Reconstruction](https://doi.org/10.1109/tgrs.2023.3329649) (2023)
 - [Sinh-arcsinh-normal distributions to add uncertainty to neural network regression tasks: Applications to tropical cyclone intensity forecasts](https://doi.org/10.1017/eds.2023.7) (2023)
 - [Using Machine Learning with Partial Dependence Analysis to Investigate Land-Atmosphere Coupling](https://doi.org/10.22541/essoar.167117448.86075329/v1) (2022)
@@ -539,8 +551,8 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 - [Kernel Learning for Explainable Climate Science](https://arxiv.org/abs/2209.04947) (2022)
 - [Learning the Indicative Patterns of Simulated Force Changes in Soil Moisture by BP Neural Networks and Finding Differences with SMAP Observations](https://doi.org/10.3390/su141811310) (2022)
 - [Wildfire Danger Prediction and Understanding With Deep Learning](https://doi.org/10.1029/2022gl099368) (2022)
+- [The Prediction of the Tibetan Plateau Thermal Condition with Machine Learning and Shapley Additive Explanation](https://doi.org/10.3390/rs14174169) (2022)
 - [Interpretable Deep Learning for Probabilistic MJO Prediction](https://doi.org/10.1029/2022gl098566) (2022)
-- [Analysis of the Atmospheric Duct Existence Factors in Tropical Cyclones Based on the SHAP Interpretation of Extreme Gradient Boosting Predictions](https://doi.org/10.3390/rs14163952) (2022)
 - [Incorporating Uncertainty Into a Regression Neural Network Enables Identification of Decadal State‐Dependent Predictability in CESM2](https://doi.org/10.1029/2022gl098635) (2022)
 - [Application of Deep Learning to Understanding ENSO Dynamics](https://doi.org/10.1175/aies-d-21-0011.1) (2022)
 - [Explainable deep learning powered building risk assessment model for proactive hurricane response](https://doi.org/10.1111/risa.13990) (2022)
@@ -562,11 +574,10 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 - [Detecting Climate Signals Using Explainable AI With Single‐Forcing Large Ensembles](https://doi.org/10.1029/2021ms002464) (2021)
 - [Assessing Decadal Predictability in an Earth‐System Model Using Explainable Neural Networks](https://doi.org/10.1029/2021gl093842) (2021)
 - [Subseasonal Forecasts of Opportunity Identified by an Explainable Neural Network](https://doi.org/10.1029/2020gl092092) (2021)
-- [Machine Learning for Clouds and Climate (Invited Chapter for the AGU Geophysical Monograph Series "Clouds and Climate")](https://doi.org/10.1002/essoar.10506925.1) (2021)
 - [Machine learning feature analysis illuminates disparity between E3SM climate models and observed climate change](https://doi.org/10.1016/j.cam.2021.113451) (2021)
 - [Robustness of Neural Network Emulations of Radiative Transfer Parameterizations in a State-of-the-Art General Circulation Model](https://doi.org/10.5194/gmd-14-7425-2021) (2021)
+- [Structurally flexible cloud microphysics, observationally constrained at all scales via ML-accelerated Bayesian inference](https://doi.org/10.2172/1769779) (2021)
 - [Predicting the MJO using interpretable machine-learning models](https://doi.org/10.1002/essoar.10506356.1) (2021)
-- [A Conformal Regressor with Random Forests for Tropical Cyclone Intensity Estimation](https://doi.org/10.1109/tgrs.2021.3139930) (2021)
 - [Examining the operational use of avalanche problems with decision trees and model-generated weather and snowpack variables](https://doi.org/10.5194/nhess-20-3551-2020) (2020)
 - [Process‐Based Climate Model Development Harnessing Machine Learning: I. A Calibration Tool for Parameterization Improvement](https://doi.org/10.1029/2020ms002217) (2020)
 - [Graph Neural Networks for Improved El Niño Forecasting](https://arxiv.org/abs/2012.01598) (2020)
@@ -583,7 +594,6 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 - [Viewing Forced Climate Patterns Through an AI Lens](https://doi.org/10.1029/2019gl084944) (2019)
 - [Generalization properties of feed-forward neural networks trained on Lorenz systems](https://doi.org/10.5194/npg-26-381-2019) (2019)
 - [Interpretable Deep Learning for Spatial Analysis of Severe Hailstorms](https://doi.org/10.1175/mwr-d-18-0316.1) (2019)
-- [Inferring causation from time series in Earth system sciences](https://doi.org/10.1038/s41467-019-10105-3) (2019)
 - [Confidence‐aware deep learning forecasting system for daily solar irradiance](https://doi.org/10.1049/iet-rpg.2018.5354) (2019)
 - [A neural network approach to estimating a posteriori distributions of Bayesian retrieval problems](https://doi.org/10.5194/amt-11-4627-2018) (2018)
 - [Quantifying Uncertainty in Discrete-Continuous and Skewed Data with Bayesian Deep Learning](https://arxiv.org/abs/1802.04742) (2018)

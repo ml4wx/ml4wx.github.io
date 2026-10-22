@@ -149,6 +149,7 @@ ML inside physical models: subgrid parameterizations (convection, clouds, radiat
 | 2025-01-25 | [A Multilevel Surrogate Model-Based Precipitation Parameter Tuning Method for CAM5 Using Remote Sensing Data for Validation](https://doi.org/10.3390/rs17030408)<br><sub>Xianwei Wu, Liang Hu, Juepeng Zheng et al. · Remote Sensing</sub> |  |  |
 | 2025-01-15 | [Physically Interpretable Emulation of a Moist Convecting Atmosphere with a Recurrent Neural Network](https://doi.org/10.1029/2025gl114794)<br><sub>Qiyu Song, Zhiming Kuang · Geophysical Research Letters</sub> |  |  |
 | 2025-01-08 | [Utilization of a Lightweight 3D U-Net Model for Reducing Execution Time of Numerical Weather Prediction Models](https://doi.org/10.3390/atmos16010060)<br><sub>H. W. Park, Sungwook Chung · Atmosphere</sub> |  |  |
+| 2025-01-01 | [Learning Urban Climate Dynamics via Physics-Guided Urban Surface-Atmosphere Interactions](https://doi.org/10.52202/085713-4194)<br><sub>Jiyang Xia, Feng-Hua Ling, Z. Li et al. · Advances in Neural Information Processing Systems 38</sub> |  |  |
 | 2025-01-01 | [Unveiling the Role of Multiscale Environmental Forcing in Deep Convection Growth with Machine Learning: Implications for Closure of Cumulus Parameterization](https://doi.org/10.2139/ssrn.5316473)<br><sub>Fuchang Wang, Leiming Ma, Hai Chu · SSRN Electronic Journal</sub> |  |  |
 | 2025-01-01 | [Machine Learning for Explanation of Subgrid Convective Precipitation: A Case Study over CONUS Using a Convection-Allowing Model and SHAP Analysis](https://doi.org/10.1175/aies-d-24-0062.1)<br><sub>Hyoungseok Kang, Ardeshir Mohammad Ebtehaj · Artificial Intelligence for the Earth Systems</sub> |  |  |
 | 2025-01-01 | [A physics-informed machine learning parameterization for cloud microphysics in ICON](https://doi.org/10.1017/eds.2025.10016)<br><sub>Ellen Sarauer, Mierk Schwabe, Philipp Weiss et al. · Environmental Data Science</sub> | University of Oxford |  |
@@ -189,7 +190,6 @@ ML inside physical models: subgrid parameterizations (convection, clouds, radiat
 | 2024-07-07 | [On the importance of learning non-local dynamics for stable data-driven climate modeling: A 1D gravity wave-QBO testbed](https://doi.org/10.1029/2024gl114136)<br><sub>Hamid A. Pahlavan, Pedram Hassanzadeh, M. Joan Alexander · Geophysical Research Letters</sub> | University of Chicago |  |
 | 2024-07-01 | [Uncertainty Quantification of a Machine Learning Subgrid‐Scale Parameterization for Atmospheric Gravity Waves](https://doi.org/10.1029/2024ms004292)<br><sub>Laura Mansfield, Aditi Sheshadri · Journal of Advances in Modeling Earth Systems</sub> | Stanford University |  |
 | 2024-07-01 | [Regression Forest Approaches to Gravity Wave Parameterization for Climate Projection](https://doi.org/10.1029/2023ms004184)<br><sub>David S. Connelly, Edwin Paul Gerber · Journal of Advances in Modeling Earth Systems</sub> | New York University (M2LInES) |  |
-| 2024-07-01 | [On the deep learning approach for improving the representation of urban climate: The Paris urban heat island and temperature extremes](https://doi.org/10.1016/j.uclim.2024.102039)<br><sub>Frederico Johannsen, Pedro M. M. Soares, Gaby S. Langendijk · Urban Climate</sub> |  |  |
 | 2024-06-28 | [Reduced‐Order Modeling for Linearized Representations of Microphysical Process Rates](https://doi.org/10.1029/2023ms003918)<br><sub>Kara D. Lamb, Marcus van Lier‐Walqui, Sean Patrick Santos et al. · Journal of Advances in Modeling Earth Systems</sub> | Columbia University (LEAP, Lamont-Doherty), NASA, NSF NCAR / UCAR |  |
 | 2024-06-28 | ⭐ [Stable Machine-Learning Parameterization of Subgrid Processes in a Comprehensive Atmospheric Model Learned From Embedded Convection-Permitting Simulations](https://arxiv.org/abs/2407.00124)<br><sub>Zeyuan Hu, Akshay Subramaniam, Zhiming Kuang et al. · Journal of Advances in Modeling Earth Systems</sub> | NVIDIA |  |
 | 2024-06-21 | [A parameterization scheme for the floating wind farm in a coupled atmosphere–wave model (COAWST v3.7)](https://doi.org/10.5194/gmd-17-4891-2024)<br><sub>Shaokun Deng, Shengmu Yang, Shengli Chen et al. · Geoscientific model development</sub> | Tsinghua University (NowcastNet) |  |
@@ -352,7 +352,6 @@ ML inside physical models: subgrid parameterizations (convection, clouds, radiat
 | 2021-06-26 | [Stochastic Parameterization using Compressed Sensing: Application to the Lorenz-96 Atmospheric Model](https://doi.org/10.16993/tellusa.42)<br><sub>Amartya Mukherjee, Yusuf Aydogdu, Thambirajah Ravichandran et al. · Tellus A Dynamic Meteorology and Oceanography</sub> |  |  |
 | 2021-06-24 | [Development of a large-eddy simulation subgrid model based on artificial neural networks: a case study of turbulent channel flow](https://doi.org/10.5194/gmd-14-3769-2021)<br><sub>Robin Stoffer, Caspar M. van Leeuwen, Damian Podareanu et al. · Geoscientific model development</sub> |  |  |
 | 2021-06-20 | [Deep learning for improved global precipitation in numerical weather prediction systems](https://arxiv.org/abs/2106.12045)<br><sub>Manmeet Singh, Bipin Kumar, Suryachandra Rao et al.</sub> |  |  |
-| 2021-06-07 | [Deep Emulators for Differentiation, Forecasting, and Parametrization in Earth Science Simulators](https://doi.org/10.1029/2021ms002554)<br><sub>Marcel Nonnenmacher, D. Greenberg · Journal of Advances in Modeling Earth Systems</sub> |  |  |
 | 2021-05-28 | [Physically regularized machine learning emulators of aerosol activation](https://doi.org/10.5194/gmd-14-3067-2021)<br><sub>Sam James Silva, Po‐Lun Ma, Joseph Clinton Hardin et al. · Geoscientific model development</sub> | Tomorrow.io |  |
 | 2021-05-28 | [Predicting Urban Surface Roughness Aerodynamic Parameters Using Random Forest](https://doi.org/10.1175/jamc-d-20-0266.1)<br><sub>G. Duan, T. Takemi · Journal of Applied Meteorology and Climatology</sub> |  |  |
 | 2021-05-04 | [A Neural Network Model for Shortwave Radiative Feedback Quantification](https://doi.org/10.1002/essoar.10506957.1)<br><sub>Aliia Shakirova, Yi Huang</sub> |  |  |
@@ -383,6 +382,7 @@ ML inside physical models: subgrid parameterizations (convection, clouds, radiat
 | 2020-10-06 | [Machine-Learned Preconditioners for Linear Solvers in Geophysical Fluid Flows](https://arxiv.org/abs/2010.02866)<br><sub>Jan Ackmann, Peter D. Düben, Tim N. Palmer et al.</sub> | ECMWF, NSF NCAR / UCAR, University of Oxford |  |
 | 2020-09-22 | [A two-moment machine learning parameterization of the autoconversion process](https://doi.org/10.1016/j.atmosres.2020.105269)<br><sub>Léster Alfonso, José María Zamora · Atmospheric Research</sub> |  |  |
 | 2020-09-21 | [RadNet 1.0: exploring deep learning architectures for longwave radiative transfer](https://doi.org/10.5194/gmd-13-4399-2020)<br><sub>Ying Liu, Rodrigo Caballero, Joy Merwin Monteiro · Geoscientific model development</sub> |  |  |
+| 2020-09-17 | [Boosting performance in machine learning of geophysical flows via scale separation](https://doi.org/10.5194/npg-2020-39)<br><sub>Davide Faranda, M. Vrac, P. Yiou et al.</sub> |  |  |
 | 2020-09-16 | [Can machine learning improve the model representation of turbulent kinetic energy dissipation rate in the boundary layer for complex terrain?](https://doi.org/10.5194/gmd-13-4271-2020)<br><sub>Nicola Bodini, Julie K. Lundquist, Mike Optis · Geoscientific model development</sub> |  |  |
 | 2020-08-12 | [Machine Learning for Robust Identification of Complex Nonlinear Dynamical Systems: Applications to Earth Systems Modeling](https://arxiv.org/abs/2008.05590)<br><sub>Nishant Yadav, Sai Ravela, Auroop R. Ganguly</sub> | Massachusetts Institute of Technology (MIT) |  |
 | 2020-08-08 | [A Moist Physics Parameterization Based on Deep Learning](https://doi.org/10.1029/2020ms002076)<br><sub>Yilun Han, Guang Jun Zhang, Xiaomeng Huang et al. · Journal of Advances in Modeling Earth Systems</sub> | Tsinghua University (NowcastNet) |  |
@@ -439,7 +439,6 @@ ML inside physical models: subgrid parameterizations (convection, clouds, radiat
 - [Unmasking Compensating Errors in Numerical Weather Models: A Process-Additive Neural Network Approach](https://arxiv.org/abs/2610.19772) (2026)
 - [Evaluating LLMs for Translating Legacy Fortran Atmospheric Physics to GPU-Accelerated JAX](https://arxiv.org/abs/2610.12662) (2026)
 - [legoESM: a modular, differentiable, multiscale, AI-ready Earth system model built with AI agents](https://arxiv.org/abs/2610.11883) (2026)
-- [HeatPre: Efficient Diffusion-Inspired Precipitation Nowcasting for Edge Weather Intelligence](https://doi.org/10.1109/jiot.2026.3718038) (2026)
 - [Physics-Informed Liquid Neural Network Emulator for CRTM with Atmospheric-Layer Jacobian Capability](https://doi.org/10.3390/rs18193325) (2026)
 - [Sparse-Observation Atmospheric Thermal Forecasting with Physics-Informed Neural Networks for Climate-Aware Digital Twins](https://arxiv.org/abs/2609.27290) (2026)
 - [FAST-ML: A Hybrid Physics-Machine Learning Framework for Tropical Cyclone Intensity Forecasting](https://arxiv.org/abs/2609.25505) (2026)
@@ -453,6 +452,7 @@ ML inside physical models: subgrid parameterizations (convection, clouds, radiat
 - [Hybrid Physics-Informed and Data-Driven Framework for Reduced-Order Weather Prediction](https://doi.org/10.5281/zenodo.20453635) (2026)
 - [GCODS: A hybrid geometric-convolutional ode framework with dynamic spectral modeling for surface temperature forecasting](https://doi.org/10.1007/s44443-026-00823-2) (2026)
 - [From Physics to AI: A Multidisciplinary Review of Contrail Prediction Models](https://doi.org/10.5194/egusphere-2026-799) (2026)
+- [Global Diurnal Precipitation Cycle in the AI Model GraphCast and a 5‐km Unified Model: Challenges and Opportunities](https://doi.org/10.1029/2025gl120961) (2026)
 - [DJ4Earth: Differentiable, and Performance‐Portable Earth System Modeling via Program Transformations](https://doi.org/10.1029/2025ms005615) (2026)
 - [A Fast Calculation Scheme for Microwave Gas Absorption and Atmospheric Transmittance With Coupled Physical Constraints Deep Learning Method](https://doi.org/10.1029/2025ea004906) (2026)
 - [PINN-Cast: Exploring the Role of Continuous-Depth NODE in Transformers and Physics Informed Loss as Soft Physical Constraints in Short-term Weather Forecasting](https://arxiv.org/abs/2604.27313) (2026)
@@ -466,9 +466,10 @@ ML inside physical models: subgrid parameterizations (convection, clouds, radiat
 - [On the role of radiative forcing in inference of tropical convection using a neural operator climate emulator](https://doi.org/10.22541/essoar.177024078.89023797/v1) (2026)
 - [Achieving Explainable ENSO Prediction Using Small Data Training](https://doi.org/10.1029/2025gl117573) (2026)
 - [Urban Air Temperature Modeling: Combining Physical Simulation and Data-Driven Fine-Tuning](https://doi.org/10.5194/isprs-archives-xlviii-4-w17-2025-151-2026) (2026)
+- [PINA-Net: Physics-Constrained Nonautoregressive Network for Spatiotemporal Meteorological Forecasting in Complex Maritime Environments](https://doi.org/10.1109/tgrs.2026.3713650) (2026)
 - [Calibrated conformal prediction intervals for microphysical process rates](https://doi.org/10.1017/eds.2026.10051) (2026)
-- [GNADET: A geospatial neural advection–diffusion equation framework with graph transformer for surface temperature forecasting](https://doi.org/10.1088/2632-2153/ae2f8b) (2025)
 - [Reflections on cross-cutting software tools born out of project work](https://doi.org/10.5281/zenodo.17968146) (2025)
+- [A physics-embedded deep learning method for short-term precipitation prediction using infrared image and atmospheric vertical profile](https://doi.org/10.1117/12.3073979) (2025)
 - [Epistemic and Aleatoric Uncertainty Quantification in Weather and Climate Models](https://doi.org/10.1002/qj.70219) (2025)
 - [Retrospective ENSO predictions using an intermediate ocean-atmosphere coupled model by integrating deep-learning sea surface wind stress](https://doi.org/10.1007/s00343-025-5166-1) (2025)
 - [IDOL: Meeting Diverse Distribution Shifts with Prior Physics for Tropical Cyclone Multi-Task Estimation](https://arxiv.org/abs/2511.11750) (2025)
@@ -537,11 +538,11 @@ ML inside physical models: subgrid parameterizations (convection, clouds, radiat
 - [Building Tangent‐Linear and Adjoint Models for Data Assimilation With Neural Networks](https://doi.org/10.1029/2021ms002521) (2021)
 - [Calibration and Uncertainty Quantification of Convective Parameters in an Idealized GCM](https://doi.org/10.1029/2020ms002454) (2021)
 - [First Application of Artificial Neural Networks to Estimate 21st Century Greenland Ice Sheet Surface Melt](https://doi.org/10.1029/2021gl092449) (2021)
+- [Deep Emulators for Differentiation, Forecasting, and Parametrization in Earth Science Simulators](https://doi.org/10.1029/2021ms002554) (2021)
 - [Can Machines Learn How Clouds Work? The Epistemic Implications of Machine Learning Methods in Climate Science](https://doi.org/10.1086/714877) (2021)
 - [A Toy Model to Investigate Stability of AI‐Based Dynamical Systems](https://doi.org/10.1029/2020gl092133) (2021)
 - [Machine Learning for Model Error Inference and Correction](https://doi.org/10.1029/2020ms002232) (2020)
 - [Using machine learning to correct model error in data assimilation and forecast applications](https://doi.org/10.1002/qj.4116) (2020)
-- [Training a convolutional neural network to conserve mass in data assimilation](https://doi.org/10.5194/npg-28-111-2021) (2020)
 - [Combining data assimilation and machine learning to infer unresolved scale parametrisation](https://doi.org/10.1098/rsta.2020.0086) (2020)
 - [Physics-inspired adaptions to low-parameter neural network weather forecasts systems](https://doi.org/10.1175/aies-d-23-0046.1) (2020)
 - [A Fortran-Keras Deep Learning Bridge for Scientific Computing](https://doi.org/10.1155/2020/8888811) (2020)

@@ -5,7 +5,7 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/observations-remote-sensing/)
 
-1132 papers (0 ⭐). Newest first.
+1135 papers (0 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -106,6 +106,7 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 | 2026-06-19 | [Machine Learning-Based Fusion of Multi-Source Daily Precipitation Products for the Tibetan Plateau Rainy Season](https://doi.org/10.5194/essd-2026-278)<br><sub>Zuo Wen, Baiquan Zhou, Panmao Zhai · Earth System Science Data Discussions</sub> | China Meteorological Administration (CMA), Fudan University (FuXi) |  |
 | 2026-06-19 | [Using Distributional Regression Networks to Retrieve Cloud Properties from Solar Satellite Channels for Data Assimilation](https://arxiv.org/abs/2606.21294)<br><sub>Stefano Franzoni, Christopher Bülte, Leonhard Scheck et al.</sub> | Deutscher Wetterdienst (DWD) |  |
 | 2026-06-18 | [SIMBA: ABidirectional Retrieval Forward Simulation Framework for Modeling FY-4A GIIRS Hyperspectral Infrared Radiances Toward NWP Applications](https://doi.org/10.3390/rs18132129)<br><sub>Jingdong Shen, Fu Wang*, Qifeng Lu et al. · Remote Sensing</sub> | China Meteorological Administration (CMA) |  |
+| 2026-06-17 | [Machine Learning-Based Weather Classification over Morocco Using Multi-Station METAR Observations](https://doi.org/10.3390/earth7030104)<br><sub>Samir Saadane, Lahcen Hassine, H. K. Aroussi et al. · Earth</sub> |  |  |
 | 2026-06-17 | [Integrating cloud motion information: A deep learning approach for real-time wind field retrieval using geostationary satellite imagery](https://doi.org/10.1016/j.isprsjprs.2026.05.029)<br><sub>Wei Zhang, Zhilin Xu, Yanhai Gan et al. · ISPRS Journal of Photogrammetry and Remote Sensing</sub> | China Meteorological Administration (CMA) |  |
 | 2026-06-14 | [Neighbourhood-scale estimation of air temperature in complex urban areas using a multistep machine learning-based data fusion approach](https://doi.org/10.1016/j.uclim.2026.103002)<br><sub>Naveed Ahmad, Kimberly Tasha Jiayi Tang, Jimmy W.M. Chan et al. · Urban Climate</sub> |  |  |
 | 2026-06-13 | [Machine learning for reconstructing meteorological data using ERA5](https://doi.org/10.1016/j.rineng.2026.111512)<br><sub>Abdullah Kaviani Rad, Mohammad Javad Nematollahi, Yousefali Abedini · Results in Engineering</sub> |  |  |
@@ -118,6 +119,7 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 | 2026-06-02 | [RIFTES: An RTM- and iteration-free temperature-emissivity separation framework for accurate and efficient clear-sky land surface temperature retrieval](https://arxiv.org/abs/2606.03025)<br><sub>Huanyu Zhang, Bo-Hui Tang, Yun Jiang et al.</sub> | Karlsruhe Institute of Technology (KIT) |  |
 | 2026-06-01 | [Fusion of FY-4B Land Surface Temperature Based on XGBoost Algorithm： A Case Study of Shaanxi Province](https://doi.org/10.7522/j.issn.1000-0534.2025.00095)<br><sub>Xuting ZHANG, Wenting QUAN, Hui ZHOU, Yuying PAN, Weidong WANG, Meirong LI, Zhao WANG · DOAJ (DOAJ: Directory of Open Access Journals)</sub> | China Meteorological Administration (CMA) |  |
 | 2026-06-01 | [A Comparative Study of Deep Learning-Based QPE Correction Models for X-Band Phased-Array Radar](https://doi.org/10.3390/rs18111779)<br><sub>Xinyang Yu, Xintong Zhao, Yiheng Li et al. · Remote Sensing</sub> | China Meteorological Administration (CMA), Nanjing University of Information Science & Technology (NUIST) |  |
+| 2026-06-01 | [Bridge Your Fields: Meteonet for Efficient Non-Uniform Meteorological Field Reconstruction](https://doi.org/10.1109/cvprf71909.2026.00159)<br><sub>Xuanming Jiang, Bao-Yi An, Ding-Yu Nie et al. · 2026 IEEE/CVF Conference on Computer Vision and Pattern Recognition- FINDINGS Track (CVPRF)</sub> |  |  |
 | 2026-06-01 | [New Insights From TRMM Legacy: Stage‐Dependent Relationships Between Lightning and Convective Structure in Thunderstorms Over Tropical Africa](https://doi.org/10.1029/2026jd046836)<br><sub>Xueke Wu, yihang Lyu, Xiaoqun Hu et al. · Journal of Geophysical Research Atmospheres</sub> |  |  |
 | 2026-06-01 | [Uncertainty-Aware Graph Neural Reconstruction of Urban Temperature Fields from Sparse Sensors under Deployment Constraints](https://arxiv.org/abs/2606.02038)<br><sub>Reda Snaiki, Abdelatif Merabtine</sub> |  |  |
 | 2026-05-31 | [A Comprehensive Study of Estimating Atmospheric Cloud Microphysical Properties Using Deep Learning Techniques](https://doi.org/10.3390/rs18111755)<br><sub>Zahid Hassan Tushar, Adeleke Ademakinwa, Jianwu Wang et al. · Remote Sensing</sub> |  |  |
@@ -139,11 +141,13 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 | 2026-05-08 | [Cloud-top infrared observations reveal the four-dimensional precipitation structure](https://arxiv.org/abs/2605.07499)<br><sub>Tianchi Xu, Ziqiang Ma, Andrea Marinoni et al.</sub> |  |  |
 | 2026-05-08 | [GPROF-IR: An Improved Single-Channel Infrared Precipitation Retrieval for Merged Satellite Precipitation Products](https://arxiv.org/abs/2605.07167)<br><sub>Simon Pfreundschuh, Christian D. Kummerow, Jackson Tan et al.</sub> |  |  |
 | 2026-05-07 | [From Drops to Grid: Noise-Aware Spatio-Temporal Neural Process for Rainfall Estimation](https://arxiv.org/abs/2605.05912)<br><sub>Rafael Pablos Sarabia, Joachim Nyborg, Morten Birk et al.</sub> |  |  |
+| 2026-05-06 | [Deep Learning for Sustainable Engineering in Environmental Climate and Ecosystem Monitoring: A Comprehensive Review](https://doi.org/10.1109/icpcsn68523.2026.11543768)<br><sub>Simar Singh Rayat, Manisha Aeri, Susheela Dahiya · 2026 6th International Conference on Pervasive Computing and Social Networking (ICPCSN)</sub> |  |  |
 | 2026-05-06 | [Pseudo‐Radar Reflectivity by Applying U‐Net Models to Global Passive Microwave Brightness Temperatures](https://doi.org/10.1029/2026jd046570)<br><sub>Florian Morvais, Chuntao Liu · Journal of Geophysical Research Atmospheres</sub> |  |  |
 | 2026-05-06 | [Bayesian Rain Field Reconstruction using Commercial Microwave Links and Diffusion Model Priors](https://arxiv.org/abs/2605.05520)<br><sub>Badr Moufad, Albina Ilina, Hai Victor Habi et al. · ICML 2026</sub> |  |  |
 | 2026-05-04 | [Harnessing Artificial Intelligence, Machine Learning, and Drone Technologies for Climate Change Monitoring and Mitigation](https://doi.org/10.5281/zenodo.20025981)<br><sub>Mala C. Patil, A M Nageswara Yogi · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
 | 2026-05-01 | [A Fast Calculation Scheme for Microwave Gas Absorption and Atmospheric Transmittance With Coupled Physical Constraints Deep Learning Method](https://doi.org/10.1029/2025ea004906)<br><sub>H. Y. Huang, Yi‐Ning Shi, Yang Han et al. · Earth and Space Science</sub> | China Meteorological Administration (CMA) |  |
 | 2026-05-01 | [Improved Tropical Cyclone Wind Estimation Using Dual‐Polarization C‐Band SAR and Machine Learning](https://doi.org/10.1029/2025ea004823)<br><sub>Chaogang Guo, Weihua Ai, Xianbin Zhao et al. · Earth and Space Science</sub> | China Meteorological Administration (CMA) |  |
+| 2026-05-01 | [Artificial neural networks in the monthly air temperature estimation for the Central-West Region of Brazil](https://doi.org/10.1007/s00521-026-12122-y)<br><sub>F. F. Capuchinho, Francisco Ramos de Melo, Kedinna Dias de Sousa et al. · Neural Computing and Applications</sub> |  |  |
 | 2026-04-28 | [Integrating Thermodynamic Priors and Spatiotemporal Features into a Physics-Guided Deep Learning Framework for Cloud Radar Clear-Air Echo Identification](https://doi.org/10.3390/rs18091348)<br><sub>Jiapeng Wang, Shu-Zhen Hu, Jie Huang et al. · Remote Sensing</sub> |  |  |
 | 2026-04-27 | [All-weather LST retrieval at 1 km resolution: a multistage spatiotemporal fusion framework integrating FY-3D MWRI microwave observations and deep learning](https://doi.org/10.1117/1.jrs.20.028501)<br><sub>Jianhua Qu, Junjie Yan, Zhiqiang Li et al. · Journal of Applied Remote Sensing</sub> |  |  |
 | 2026-04-25 | [Below‐Cloud CCN Concentrations Provide Better Constraints on the Twomey Effect Than Aerosol Optical Properties](https://doi.org/10.1029/2026gl122006)<br><sub>Lan Gao, Jens Redemann, Emily D. Lenhardt et al. · Geophysical Research Letters</sub> | NASA, University of Oklahoma (AI2ES) |  |
@@ -183,7 +187,6 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 | 2026-03-23 | [Global-ABLWind: a global atmospheric boundary layer wind speed profile dataset derived from Aeolus and surface ancillary information](https://doi.org/10.5194/essd-2026-73)<br><sub>Zhe Tong, Boming Liu, Xin Ma et al. · Earth System Science Data Discussions</sub> | China Meteorological Administration (CMA) |  |
 | 2026-03-23 | [PERSIANN-U-Net: A Global Deep Learning Framework for Near-Real-Time Precipitation Estimation Using Infrared Data](https://doi.org/10.1175/jhm-d-25-0162.1)<br><sub>Phu Nguyen, Vu Dao, Tu Thanh Ung et al. · Journal of Hydrometeorology</sub> | NASA |  |
 | 2026-03-18 | [Enhancing weather radar data by removing non-meteorological echoes, using neural networks trained on synthetic weather data](https://doi.org/10.5194/egusphere-2026-992)<br><sub>Richard Bölz, Tom Kirstein, Lukas Fuchs et al.</sub> | Deutscher Wetterdienst (DWD) |  |
-| 2026-03-18 | [Estimation of location-specific precipitation using Deep Neural Networks](https://doi.org/10.1007/s00704-026-06185-z)<br><sub>Bipin Kumar, Bhvisy Kumar Yadav, Soumyodeep Mukhopadhyay et al. · Theoretical and Applied Climatology</sub> |  |  |
 | 2026-03-16 | [Application of Neural Network for Estimating Mean Monthly Rainfall in the State of Ceará, Brazilian Northeast](https://doi.org/10.21203/rs.3.rs-9020912/v1)<br><sub>Luigi Pereira de Paiva, Benito Moreira de Azevedo, Aldeney Andrade Soares Filho et al. · Research Square</sub> |  |  |
 | 2026-03-12 | [Quality assessment and control of urban environmental sensors using physical thresholding and machine learning-based probabilities](https://doi.org/10.1080/20964471.2026.2623720)<br><sub>Jangho Lee, Max Berkelhammer, Anna E. S. Vincent et al. · Big Earth Data</sub> | Argonne National Laboratory |  |
 | 2026-03-11 | [DeepCut: adaptive neural network thresholds for precipitation phase partitioning](https://doi.org/10.1088/3049-4753/ae5066)<br><sub>Maha Moussa, Cody Ratterman, Wei Zhang et al. · Machine Learning Earth</sub> |  |  |
@@ -324,6 +327,7 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 | 2025-11-11 | [Fog Monitoring through Machine Learning of Signal Attenuation Data from Microwave Links from Cellular Communication Networks](https://doi.org/10.5194/egusphere-2025-2634)<br><sub>Indy van Grinsven, Meiert W. Grootes, Remko Uijlenhoet et al.</sub> |  |  |
 | 2025-11-11 | [Attention enhanced ResNet for ocean surface wind speed retrieval using CYGNSS observables](https://doi.org/10.1016/j.asr.2025.11.023)<br><sub>Yongchao Zhu, Qiuling Lu, Maorong Ge et al. · Advances in Space Research</sub> |  |  |
 | 2025-11-08 | [Temporal super-resolution reconstruction of weather radar echoes using a deep learning approach](https://doi.org/10.1016/j.eswa.2025.130189)<br><sub>Hua Wang, Qiangyu Zeng, Hao Wang et al. · Expert Systems with Applications</sub> |  | [code](https://github.com/whua68010/EMAIRA-VFI) |
+| 2025-11-07 | [Self-Supervised Weather Pattern Prediction with Temporal Contrastive Learning from Multi-Spectral Satellite Imagery](https://doi.org/10.1109/icrm66809.2025.11349060)<br><sub>K. Madhavan, V. Revathy, V. Govarthanan · 2025 International Conference on Robotics and Mechatronics (ICRM)</sub> |  |  |
 | 2025-11-07 | [ML-driven cross-calibration of microwave and infrared instruments](https://doi.org/10.1088/3049-4753/ae1cce)<br><sub>Isaac Moradi, Satya N. V. Kalluri · Machine Learning Earth</sub> |  |  |
 | 2025-11-06 | [Global 3D Reconstruction of Clouds & Tropical Cyclones](https://arxiv.org/abs/2511.04773)<br><sub>Shirin Ermis, Cesar Aybar, Lilli Freischem et al.</sub> |  |  |
 | 2025-11-02 | [Machine Learning-Based Sea Surface Wind Speed Retrieval from Dual-Polarized Sentinel-1 SAR During Tropical Cyclones](https://doi.org/10.3390/rs17213626)<br><sub>Peng Yu, Yanyan Lin, Yunxuan Zhou et al. · Remote Sensing</sub> |  |  |
@@ -348,6 +352,7 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 | 2025-09-22 | [Remotely Sensed Precipitation Estimates Using Hyrbid Machine Learning Models in a Monsoon-Dominated Climate](https://doi.org/10.21203/rs.3.rs-7652794/v1)<br><sub>Swaranjit Roy, Md. Helal Ahmmed, Susmith Kundu et al. · Research Square</sub> |  |  |
 | 2025-09-22 | [A New Machine Learning Retrieval of Liquid Water Path Optimized for Mixed-Phase Cold-Air Outbreaks Using Radiometer and Radar Observations](https://doi.org/10.1175/jtech-d-24-0132.1)<br><sub>S. Daniel Ephraim, Paquita Zuidema, Timothy W. Juliano et al. · Journal of Atmospheric and Oceanic Technology</sub> | Argonne National Laboratory, NSF NCAR / UCAR |  |
 | 2025-09-20 | [TropoDeep: a deep learning-based model for InSAR tropospheric correction on large-scale interferograms using GNSS and WRF outputs](https://doi.org/10.1007/s00190-025-02001-0)<br><sub>Saeid Haji-Aghajany, Melika Tasan, Saeed Izanlou et al. · Journal of Geodesy</sub> |  |  |
+| 2025-09-19 | [Artificial intelligence in meteorological observation and forecasting: a survey](https://doi.org/10.1117/12.3077439)<br><sub>Zhongkai Guo, Xin Liu · International Conference on Machine Vision, Automatic Identification and Detection</sub> |  |  |
 | 2025-09-19 | [SGMAGNet: A Baseline Model for 3D Cloud Phase Structure Reconstruction on a New Passive Active Satellite Benchmark](https://arxiv.org/abs/2509.15706)<br><sub>Chi Yang, Fu Wang, Xiaofei Yang et al.</sub> |  |  |
 | 2025-09-17 | [Ripple Identification in OH Airglow Images Using YOLO](https://doi.org/10.1109/earthsense66084.2025.11297316)<br><sub>R. Prasad, O. Bandyopadhyay, Ravindra P. Singh et al. · 2025 IEEE International Conference on Next-Gen Technologies of Artificial Intelligence and Geoscience Remote Sensing (EarthSense)</sub> |  |  |
 | 2025-09-16 | [MCSeg (v1.0): A Deep Learning Framework for Long-Term Large-Scale Mesoscale Convective Systems Identification and Precipitation Event Analysis](https://doi.org/10.5194/egusphere-2025-3622)<br><sub>Peng Li, Zhanao Huang, Yongqiang Yu et al.</sub> | Institute of Atmospheric Physics, Chinese Academy of Sciences, Tsinghua University (NowcastNet) |  |
@@ -520,6 +525,7 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 | 2025-01-01 | [The Accuracy of Different Methods in Improving Quantitative Snowfall Estimation Based on Dual-Frequency Dual-Polarization Doppler Radar](https://doi.org/10.1109/tgrs.2025.3629129)<br><sub>Tiantian Yu, V. Chandrasekar, Hao Wang et al. · IEEE Transactions on Geoscience and Remote Sensing</sub> | Colorado State University (incl. CIRA) |  |
 | 2025-01-01 | [Insights Into Turbulence Estimated Using S–T Radar: A Machine Learning Approach With XGBoost and SHAP](https://doi.org/10.1109/tgrs.2025.3608479)<br><sub>K. K. Ahana, Amal Joy, Avinash Paul et al. · IEEE Transactions on Geoscience and Remote Sensing</sub> |  |  |
 | 2025-01-01 | [Ocean Surface Wind Speed Estimation From GNSS-R Data Using Physics-Informed Attention-Aided Convolutional Neural Network](https://doi.org/10.1109/tgrs.2025.3594633)<br><sub>Xin Qiao, Weimin Huang · IEEE Transactions on Geoscience and Remote Sensing</sub> |  |  |
+| 2025-01-01 | [Impact of VAEformer Compression Algorithm Precision Loss on the Tropospheric Delays for Microwave Remote Sensing](https://doi.org/10.1109/tgrs.2025.3587944)<br><sub>Jun-Sheng Ding, Cancan Xu, Wu Chen et al. · IEEE Transactions on Geoscience and Remote Sensing</sub> |  |  |
 | 2025-01-01 | [KAN-Enhanced Transformer for Wind Profile Retrieval From Lidar Spectra](https://doi.org/10.1109/tgrs.2025.3586114)<br><sub>Ran Tao, Chong Wang, Hao Chen et al. · IEEE Transactions on Geoscience and Remote Sensing</sub> | Shanghai Artificial Intelligence Laboratory |  |
 | 2025-01-01 | [Bridging Time-Delayed Microwave Radiometric Observations and Deep Convection Characteristics: A Machine Learning Approach for the C²OMODO Mission](https://doi.org/10.1109/tgrs.2025.3583571)<br><sub>Thomas Lefebvre, Hélène Brogniez, Ilhem Gharbi et al. · IEEE Transactions on Geoscience and Remote Sensing</sub> | Inria, Météo-France (incl. CNRM) |  |
 | 2025-01-01 | [SU3plus: An Enhanced Swin-UNet for Synthesizing Vertically Integrated Liquid From Multiple Meteorological Satellite Data](https://doi.org/10.1109/tgrs.2025.3582165)<br><sub>Jingtao Li, Zhixuan Zhou, Xintong Zhao et al. · IEEE Transactions on Geoscience and Remote Sensing</sub> |  |  |
@@ -719,7 +725,6 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 | 2023-11-11 | [Improving the Estimation of the Diffuse Component of Photosynthetically Active Radiation (PAR)](https://doi.org/10.1029/2023jd039256)<br><sub>Ismael L. Lozano, I. Alados, Guadalupe Sánchez-Hernández et al. · Journal of Geophysical Research Atmospheres</sub> |  |  |
 | 2023-11-09 | [Adaptive-Labeling for Enhancing Remote Sensing Cloud Understanding](https://arxiv.org/abs/2311.05198)<br><sub>Jay Gala, Sauradip Nag, Huichou Huang et al.</sub> |  |  |
 | 2023-11-01 | [Development of the SURface Fast Emissivity Model for Ocean (SURFEM‐Ocean) Based on the PARMIO Radiative Transfer Model](https://doi.org/10.1029/2022ea002785)<br><sub>Lise Kilic, Catherine Prigent, Carlos Jiménez et al. · Earth and Space Science</sub> | ECMWF, Met Office, NASA |  |
-| 2023-11-01 | [Objective Satellite Methods including AI algorithms reviewed for the Tenth International Workshop on Tropical Cyclones (IWTC-10)](https://doi.org/10.1016/j.tcrr.2023.11.001)<br><sub>Quoc-Phi Duong, Anthony Wimmers, Derrick Herndon et al. · Tropical Cyclone Research and Review</sub> |  |  |
 | 2023-10-30 | [Using GNSS Observations for Tropospheric Delay Prediction Using Artificial Intelligence](https://doi.org/10.21608/pserj.2023.242830.1270)<br><sub>Ahmed A. Sedeek · Port-Said Engineering Research Journal</sub> |  |  |
 | 2023-10-30 | [Sim2Real for Environmental Neural Processes](https://arxiv.org/abs/2310.19932)<br><sub>Jonas Scholz, Tom R. Andersson, Anna Vaughan et al.</sub> | Microsoft Research (AI for Science), University of Cambridge (Aardvark) |  |
 | 2023-10-20 | [All-weather precipitable water vapor map reconstruction using data fusion and machine learning-based spatial downscaling](https://doi.org/10.1016/j.atmosres.2023.107068)<br><sub>Yongchao Ma, Tong Liu, Zhibin Yu et al. · Atmospheric Research</sub> |  |  |
@@ -734,6 +739,7 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 | 2023-10-01 | [Deep convolutional neural network for meteorology target detection in airborne weather radar images](https://doi.org/10.23919/jsee.2023.000142)<br><sub>Chao-Peng Yu, Xiong Wei, Xiaoqin Li et al. · Journal of Systems Engineering and Electronics</sub> |  |  |
 | 2023-09-29 | [“Seeing” beneath the clouds - machine-learning-based reconstruction of North African dust events](https://doi.org/10.1029/2023av001042)<br><sub>Franz Kanngießer, Stephanie Fiedler · AGU Advances</sub> |  |  |
 | 2023-09-26 | [Espresso: A Global Deep Learning Model to Estimate Precipitation from Satellite Observations](https://doi.org/10.3390/meteorology2040025)<br><sub>Léa Berthomier, Laurent Perier · Meteorology</sub> |  |  |
+| 2023-09-25 | [Meta-Learning and Self-Supervised Pretraining for Storm Event Imagery Translation](https://doi.org/10.1109/hpec58863.2023.10363448)<br><sub>Ileana Rugina, Rumen Dangovski, M. Veillette et al. · 2023 IEEE High Performance Extreme Computing Conference (HPEC)</sub> |  | [code](https://github.com/irugina/meta-image-translation) |
 | 2023-09-23 | [Prediction of Tropical Pacific Rain Rates with Over-parameterized Neural Networks](https://doi.org/10.1175/aies-d-23-0083.1)<br><sub>Hojun You, Jiayi Wang, Raymond K. W. Wong et al. · Artificial Intelligence for the Earth Systems</sub> |  |  |
 | 2023-09-19 | [Retrieval of surface solar irradiance from satellite imagery using machine learning: pitfalls and perspectives](https://doi.org/10.5194/amt-16-4165-2023)<br><sub>Hadrien Verbois, Yves‐Marie Saint‐Drenan, Vadim Becquet et al. · Atmospheric measurement techniques</sub> |  |  |
 | 2023-09-15 | [Machine Learning-Based Estimation of Hourly GNSS Precipitable Water Vapour](https://doi.org/10.3390/rs15184551)<br><sub>Zohreh Adavi, Babak Ghassemi, Robert Weber et al. · Remote Sensing</sub> |  |  |
@@ -766,7 +772,6 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 | 2023-06-12 | [Radar Echo Reconstruction in Oceanic Area via Deep Learning of Satellite Data](https://doi.org/10.3390/rs15123065)<br><sub>Xiaoqi Yu, Xiao Lou, Yan Yan et al. · Remote Sensing</sub> | Alibaba (DAMO Academy), Institute of Atmospheric Physics, Chinese Academy of Sciences |  |
 | 2023-06-10 | [A novel artificial neural network methodology to produce high-resolution bioclimatic maps using Earth Observation data: A case study for Cyprus](https://doi.org/10.1016/j.scitotenv.2023.164734)<br><sub>Kostas Philippopoulos, Katerina G. Pantavou, Constantinos Cartalis et al. · The Science of The Total Environment</sub> |  |  |
 | 2023-06-05 | [ARMing the Edge: Designing Edge Computing–Capable Machine Learning Algorithms to Target ARM Doppler Lidar Processing](https://doi.org/10.1175/aies-d-22-0062.1)<br><sub>Robert C. Jackson, Bhupendra Raut, Darío Demattíes et al. · Artificial Intelligence for the Earth Systems</sub> | Argonne National Laboratory |  |
-| 2023-06-01 | [Scalable Lightweight IoT-Based Smart Weather Measurement System](https://doi.org/10.3390/s23125569)<br><sub>A. Albuali, Ramasamy Srinivasagan, A. Aljughaiman et al. · Sensors (Basel, Switzerland)</sub> |  |  |
 | 2023-05-31 | [Toward Operational Real-Time Identification of Frontal Boundaries Using Machine Learning](https://doi.org/10.1175/aies-d-22-0052.1)<br><sub>Andrew D. Justin, Colin Willingham, Amy McGovern et al. · Artificial Intelligence for the Earth Systems</sub> | University of Oklahoma (AI2ES) |  |
 | 2023-05-31 | [Transformer Aided Construction of a Long-term Tropical Cyclone Concentric Eyewalls Dataset](https://doi.org/10.1109/jstars.2023.3281727)<br><sub>Xing Ling Huang, Ping Lu, Bo Zhang et al. · IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</sub> | Tsinghua University (NowcastNet) |  |
 | 2023-05-26 | [Convective organization and 3D structure of tropical cloud systems deduced from synergistic A-Train observations and machine learning](https://doi.org/10.5194/acp-23-5867-2023)<br><sub>Claudia J. Stubenrauch, Giulio Mandorli, Elizabeth Lemaitre · Atmospheric chemistry and physics</sub> |  |  |
@@ -946,7 +951,6 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 | 2021-09-13 | [Planetary Boundary Layer Height Estimates From ICESat-2 and CATS Backscatter Measurements](https://doi.org/10.3389/frsen.2021.716951)<br><sub>Stephen P. Palm, Patrick A. Selmer, John E. Yorks et al. · Frontiers in Remote Sensing</sub> | NASA |  |
 | 2021-08-27 | [Machine learning-based aerosol characterization using OCO-2 O2 A-band observations](https://doi.org/10.1016/j.jqsrt.2021.108049)<br><sub>Sihe Chen, Vijay Natraj, Zhao-Cheng Zeng et al. · Journal of Quantitative Spectroscopy and Radiative Transfer</sub> | California Institute of Technology (Caltech), NASA, University of California, Los Angeles (UCLA) |  |
 | 2021-08-26 | [Deep Learning for Bias Correction of Satellite Retrievals of Orographic Precipitation](https://doi.org/10.1109/tgrs.2021.3105438)<br><sub>Haonan Chen, Luyao Sun, Robert C. Cifelli et al. · IEEE Transactions on Geoscience and Remote Sensing</sub> | Colorado State University (incl. CIRA), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
-| 2021-08-23 | [GPRChinaTemp1km: a high-resolution monthly air temperature dataset for China (1951–2020) based on machine learning](https://doi.org/10.5194/essd-2021-267)<br><sub>Qian He, Ming Wang, Kai Liu et al. · Earth System Science Data</sub> |  |  |
 | 2021-08-23 | [Reconstruction of the Radar Reflectivity of Convective Storms Based on Deep Learning and Himawari-8 Observations](https://doi.org/10.3390/rs13163330)<br><sub>Mingshan Duan, Jiangjiang Xia, Zhongwei Yan et al. · Remote Sensing</sub> | China Meteorological Administration (CMA), Institute of Atmospheric Physics, Chinese Academy of Sciences |  |
 | 2021-08-23 | [High Wind Speed Inversion Model of CYGNSS Sea Surface Data Based on Machine Learning](https://doi.org/10.3390/rs13163324)<br><sub>Yun Zhang, Jiwei Yin, Shuhu Yang et al. · Remote Sensing</sub> |  |  |
 | 2021-08-19 | [Rainrate Estimation from FY-4A Cloud Top Temperature for Mesoscale Convective Systems by Using Machine Learning Algorithm](https://doi.org/10.3390/rs13163273)<br><sub>Ping Lao, Qi Liu, Yuhao Ding et al. · Remote Sensing</sub> |  |  |
@@ -1091,7 +1095,6 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 | 2019-09-16 | [Generative Adversarial Networks Capabilities for Super-Resolution Reconstruction of Weather Radar Echo Images](https://doi.org/10.3390/atmos10090555)<br><sub>Hongguang Chen, Xing Zhang, Yintian Liu et al. · Atmosphere</sub> | China Meteorological Administration (CMA) |  |
 | 2019-09-06 | [Nighttime Reflectance Generation in the Visible Band of Satellites](https://doi.org/10.3390/rs11182087)<br><sub>Kimoon Kim, Ji-Hye Kim, Yong‐Jae Moon et al. · Remote Sensing</sub> |  |  |
 | 2019-09-03 | [Intelligent Wind Retrieval from Chinese Gaofen-3 SAR Imagery in Quad Polarization](https://doi.org/10.1175/jtech-d-19-0048.1)<br><sub>Weizeng Shao, Shuai Zhu, Xiaopeng Zhang et al. · Journal of Atmospheric and Oceanic Technology</sub> |  |  |
-| 2019-09-02 | [Quantifying hail size distributions from the sky – application of drone aerial photogrammetry](https://doi.org/10.5194/amt-2019-281)<br><sub>J. Soderholm, M. Kumjian, Nicholas McCarthy et al. · Atmospheric Measurement Techniques</sub> |  |  |
 | 2019-08-01 | [A real-time typhoon eye detection method based on deep learning for meteorological information forensics](https://doi.org/10.1007/s11554-019-00899-2)<br><sub>Liling Zhao, Yifei Chen, Victor S. Sheng · Journal of Real-Time Image Processing</sub> | Nanjing University of Information Science & Technology (NUIST) |  |
 | 2019-07-28 | [Temporal Interpolation of Geostationary Satellite Imagery with Task Specific Optical Flow](https://arxiv.org/abs/1907.12013)<br><sub>Thomas Vandal, Ramakrishna Nemani</sub> | NASA |  |
 | 2019-07-24 | [Retrieval of Total Precipitable Water from Himawari-8 AHI Data: A Comparison of Random Forest, Extreme Gradient Boosting, and Deep Neural Network](https://doi.org/10.3390/rs11151741)<br><sub>Yeonjin Lee, Daehyeon Han, Myoung‐Hwan Ahn et al. · Remote Sensing</sub> |  |  |
@@ -1157,6 +1160,7 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 - [Physics-Informed Deep Learning for Precipitation Estimation and Forecasting: Methods, Applications, and Challenges](https://doi.org/10.3390/atmos17100955) (2026)
 - [Spatiotemporal variation characteristics and multi-combination modeling assessment of fire weather index in Shanxi Province](https://doi.org/10.3389/ffgc.2026.1892417) (2026)
 - [Geospatial modeling of urban lake cooling based on morphometric and urban contexts using tree ensembles and SHAP interpretability](https://doi.org/10.1007/s44327-026-00373-2) (2026)
+- [Performance of deep learning based long-term CHIRPS rainfall prediction using CNN and LSTM models in Karnataka State, India](https://doi.org/10.1007/s12040-026-02931-z) (2026)
 - [ESA CCI 0.1 degree soil moisture: evaluation and applications for precipitation verification and storm nowcasting](https://doi.org/10.5194/egusphere-2026-4687) (2026)
 - [A compiled dataset of Greenland weather station observations and reconstructed surface air temperature](https://doi.org/10.5194/essd-2026-449) (2026)
 - [UniGIO: Unified Generative Global In-situ Weather Modeling from Spatiotemporal Incomplete Observations](https://arxiv.org/abs/2609.22217) (2026)
@@ -1180,6 +1184,7 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 - [A Physics-Informed, Rotation-Equivariant Model with Multiscale Fusion for Multitask Tropical Cyclone Analysis](https://doi.org/10.1175/waf-d-25-0255.1) (2026)
 - [An Integrated Process‐Based Approach for Interpreting Precipitation Isotopes Using North‐Central Texas as a Testbed](https://doi.org/10.1029/2026jd047020) (2026)
 - [Deep Learning Imputation of Missing Radius of Maximum Winds (Rmax) Values in Tropical Cyclone Best-Track Data](https://arxiv.org/abs/2608.09683) (2026)
+- [Improving Global Precipitation Forecast using NASA Imerg in a Deep Learning Framework](https://doi.org/10.1109/igarss60577.2026.11730956) (2026)
 - [Tropical Cyclone Forecasting via Latent Rectified Flow using Satellite Imagery and Atmospheric Fields](https://arxiv.org/abs/2608.08354) (2026)
 - [Reducing grid artifacts in air temperature downscaling with a Volume-Preserving interpolation preprocessing step](https://doi.org/10.1016/j.jag.2026.105515) (2026)
 - [Dense-Cast: A lightweight ensemble of deep learning architectures for precipitation nowcasting](https://arxiv.org/abs/2608.06082) (2026)
@@ -1228,7 +1233,6 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 - [From data fusion to ecosystem response: Evaluating merged precipitation products for multi-threshold meteorological drought monitoring and vegetation impact](https://doi.org/10.1016/j.agwat.2026.110338) (2026)
 - [A High-Accuracy U-Net Deep Learning Method for Identifying Typhoon-Induced Precipitation](https://doi.org/10.1175/aies-d-25-0079.1) (2026)
 - [Superresolution Statistical Downscaling from Sparse Observations with Deep Learning for Monthly Rainfall Projections in Hawai‘i](https://doi.org/10.1175/aies-d-24-0128.1) (2026)
-- [CT-3DUNet-GAN: A Spatiotemporal-Integrated 3D U-Net with Adversarial Learning for Infrared Cloud Image Prediction](https://doi.org/10.1109/icccs69761.2026.11613230) (2026)
 - [PhySCAT‐Net: A Physics‐Informed Deep Learning Framework for Optimizing Hydrometeor Bulk Scattering Properties Using Satellite Observations](https://doi.org/10.1029/2025ms005318) (2026)
 - [Deep-Learned Observation Operators for Artificial Intelligence Weather Forecasting Models](https://arxiv.org/abs/2604.00082) (2026)
 - [DP-STNet: A Dual-Polarization Spatiotemporal Network for Heavy Precipitation Nowcasting](https://doi.org/10.1145/3817124.3817354) (2026)
@@ -1267,18 +1271,17 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 - [Pyrocumulonimbus Prediction through Machine Learning](https://doi.org/10.1175/aies-d-24-0126.1) (2026)
 - [Improved Tropical Cyclone Size Estimation Model Using Deep Learning and Multisource Data Fusion](https://doi.org/10.1109/tgrs.2026.3728796) (2026)
 - [DeepTomo: An Explainable Physics-Informed Deep Learning Framework for Troposphere Tomography, Toward AI-Based GNSS Data Assimilation](https://doi.org/10.1109/tgrs.2026.3714111) (2026)
-- [An Online Interactive and Self-Adaptive Network Incorporating Domain Knowledge for Tropical Cyclone Intensity Prediction](https://doi.org/10.1109/tgrs.2026.3705735) (2026)
-- [A Lightweight Multimodal Spatiotemporal Learning Framework for Precipitation Nowcasting](https://doi.org/10.1109/jstars.2026.3729834) (2026)
+- [GeoAttX: A Novel Framework for Cloud Image Forecasting Using Geostationary Satellite Observations](https://doi.org/10.1109/tgrs.2026.3702248) (2026)
 - [ARIMA-KOA-CNN-GRU-Attention Model for Improving GNSS Water Vapor Prediction](https://doi.org/10.1109/jstars.2026.3719342) (2026)
 - [Accurate and Realistic Nowcasting Geo-Kompsat-2A Level-1 Infrared Observation With SimVP-GAN](https://doi.org/10.1109/jstars.2026.3708145) (2026)
 - [A Multitask Learning Embedded Parameterization Method for Downward Shortwave Radiation Estimation Under Cloudy-Sky Conditions](https://doi.org/10.1109/jstars.2026.3690513) (2026)
 - [Causality-Inspired Cross-Satellite Continual Learning for Tropical Cyclone Intensity Prediction](https://doi.org/10.1109/jstars.2026.3663606) (2026)
 - [A Deep Learning-Based Model for Nowcasting of Convective Initiation Using Infrared Observations](https://doi.org/10.1109/jstars.2025.3650686) (2026)
 - [A Machine Learning Approach to Cloud Cover Forecasting Using Lagrangian Air Mass History](https://doi.org/10.1029/2025ms004972) (2026)
+- [Advances in Tropical Cyclone Monitoring and Forecasting in Hong Kong Using Ensemble Predictions and Artificial Intelligence](https://doi.org/10.1016/j.tcrr.2026.01.002) (2026)
 - [Real-Time Flash-Flood Prediction Using GNSS Water Vapor Observations and Deep Learning](https://doi.org/10.22541/essoar.176677195.53603556/v1) (2025)
 - [Towards More Reliable Gridded Precipitation Estimates: Gauge-Based Multi-Scale Evaluation and Machine Learning Bias Correction](https://doi.org/10.1007/s41748-025-01000-7) (2025)
 - [CastDiffuser: Cascaded latent diffusion framework for high-resolution precipitation nowcasting via multi source fusion](https://doi.org/10.1016/j.neucom.2025.132435) (2025)
-- [A physics-embedded deep learning method for short-term precipitation prediction using infrared image and atmospheric vertical profile](https://doi.org/10.1117/12.3073979) (2025)
 - [Machine learning land surface temperature downscaling method based on Landsat 9 and Sentinel-2 satellite feature interaction](https://doi.org/10.1080/10095020.2025.2598526) (2025)
 - [Neural network–enhanced calibration of ERA5 wind speeds in the northwestern Indian Ocean using 32 years of satellite observations](https://doi.org/10.1016/j.rsase.2025.101826) (2025)
 - [ConvLSTM-based tropical cyclone intensity estimation and classification using satellite imagery over the North Indian ocean](https://doi.org/10.1371/journal.pone.0330705) (2025)
@@ -1294,9 +1297,7 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 - [Coupling strategies for precipitation nowcasting in China](https://doi.org/10.1080/02626667.2025.2587687) (2025)
 - [SynWeather: Weather Observation Data Synthesis across Multiple Regions and Variables via a General Diffusion Transformer](https://arxiv.org/abs/2511.08291) (2025)
 - [PGDM: Physically guided diffusion model for land surface temperature downscaling](https://doi.org/10.1016/j.rse.2026.115432) (2025)
-- [Self-Supervised Weather Pattern Prediction with Temporal Contrastive Learning from Multi-Spectral Satellite Imagery](https://doi.org/10.1109/icrm66809.2025.11349060) (2025)
 - [Precipitation nowcasting of satellite data using physically-aligned neural networks](https://arxiv.org/abs/2511.05471) (2025)
-- [PiMMNet: Introducing Multi-Modal Precipitation Nowcasting via a Physics-informed Perspective](https://doi.org/10.1145/3746027.3755436) (2025)
 - [AI-Based Downscaling of MODIS LST Using SRDA-Net Model for High-Resolution Data Generation](https://doi.org/10.3390/rs17213510) (2025)
 - [Multi-Resolution Analysis of the Convective Structure of Tropical Cyclones for Short-Term Intensity Guidance](https://arxiv.org/abs/2510.19854) (2025)
 - [Development of a Drought Assessment Index Coupling Physically Based Constraints and Data-Driven Approaches](https://doi.org/10.3390/rs17203452) (2025)
@@ -1323,6 +1324,7 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 - [Research on Intelligent Weather Forecasting Based on Cloud Radar and Weather Sensor Data Fusion](https://doi.org/10.70517/ijhsa463662) (2025)
 - [High-resolution GNSS troposphere tomography through explainable deep learning-based downscaling framework](https://doi.org/10.1186/s43020-025-00177-6) (2025)
 - [A derecho climatology (2004–2021) in the United States based on machine learning identification of bow echoes](https://doi.org/10.5194/essd-17-3721-2025) (2025)
+- [Investigation of Impact of Satellite Remote Sensing Data on the AI Weather Prediction Coupling with Physics-Based Data Assimilation](https://doi.org/10.1109/igarss55030.2025.11242424) (2025)
 - [Study on the adjustment of maximum sustained wind speed based on the LightGBM Model](https://doi.org/10.12170/20240718005) (2025)
 - [Predicting Tropical Cyclone Intensity Using a Convolutional Neural Network and 20 Years of IMERG Satellite Rainfall Data](https://doi.org/10.1175/waf-d-24-0196.1) (2025)
 - [Using Deep Learning to Identify Tropical Easterly Waves, the Intertropical Convergence Zone, and the Monsoon Trough](https://doi.org/10.1175/mwr-d-24-0195.1) (2025)
@@ -1333,7 +1335,6 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 - [TCIE-Net: Physics-Guided Neural Networks for Tropical Cyclone Intensity Estimation](https://doi.org/10.3724/j.1006-8775.2025.025) (2025)
 - [Identification of severe convective clouds and analysis of their relationship with severe convective weather based on Himawari-8/9 geostationary satellite](https://doi.org/10.1016/j.atmosres.2025.108349) (2025)
 - [Do Echo Top Heights Improve Deep Learning Nowcasts?](https://arxiv.org/abs/2507.00845) (2025)
-- [Atmospheric Data Compression and Reconstruction Using Spherical GANs](https://doi.org/10.1109/ijcnn64981.2025.11227156) (2025)
 - [Multimodal Atmospheric Super-Resolution With Deep Generative Models](https://doi.org/10.1088/3049-4753/ae286e) (2025)
 - [A Comprehensive Report on Tropical Cyclone Intensity Prediction Using Deep Learning Techniques](https://doi.org/10.1109/icirca65293.2025.11089892) (2025)
 - [Intelligent Nowcasting of Convection Initiation Using a Special Ring‐Like Warmer Environment Implied in Fengyun‐4B AGRI Data](https://doi.org/10.1029/2024jd042526) (2025)
@@ -1342,7 +1343,8 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 - [MODS: Multi-source Observations Conditional Diffusion Model for Meteorological State Downscaling](https://arxiv.org/abs/2506.14798) (2025)
 - [GAIA: A Foundation Model for Operational Atmospheric Dynamics](https://arxiv.org/abs/2505.18179) (2025)
 - [Research on Monitoring Oceanic Precipitable Water Vapor and Short-Term Rainfall Forecasting Using Low-Cost Global Navigation Satellite System Buoy](https://doi.org/10.3390/rs17091630) (2025)
-- [Spatiotemporal inhomogeneity of accuracy degradation in AI weather forecast foundation models: A GNSS perspective](https://doi.org/10.1016/j.jag.2025.104473) (2025)
+- [A Multi-Features-Based Model for Tropical Cyclone Intensity Estimation with Infrared Remote Sensing Observations](https://doi.org/10.1109/piers-spring66516.2025.11276260) (2025)
+- [Enhancing Cyclonic Intensity Identification through Deep Learning Methodology](https://doi.org/10.52783/jisem.v10i41s.8005) (2025)
 - [AI-ready Snow Radar Echogram Dataset (SRED) for climate change monitoring](https://arxiv.org/abs/2505.00786) (2025)
 - [Probabilistic Emulation of the Community Radiative Transfer Model Using Machine Learning](https://doi.org/10.1175/aies-d-24-0109.1) (2025)
 - [Cyclone Intensity Prediction Using Deep Learning on INSAT-3D IR Imagery: A Comparative Analysis](https://doi.org/10.55041/ijsrem45392) (2025)
@@ -1357,9 +1359,7 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 - [Exploring machine learning approaches for precipitation downscaling](https://doi.org/10.1080/10095020.2025.2477547) (2025)
 - [Diatom‐Based Climate Reconstruction and Modeling: Modern Calibration Set and Paleodata](https://doi.org/10.1029/2024pa005006) (2025)
 - [Evaluating the intensity of Typhoons over the West Pacific basin](https://doi.org/10.1088/1402-4896/adc3d5) (2025)
-- [Improvement of Summer Precipitation Simulation Over the Tibetan Plateau: Implications for Assimilating Pseudo Soundings Generated by Machine Learning](https://doi.org/10.1029/2024jd042551) (2025)
 - [Towards a Unified Copernicus Foundation Model for Earth Vision](https://arxiv.org/abs/2503.11849) (2025)
-- [A machine learning model for the prediction of hail-affected area in Germany](https://doi.org/10.3389/feart.2025.1527391) (2025)
 - [Machine learning for improvement of upper-tropospheric relative humidity in ERA5 weather model data](https://doi.org/10.5194/acp-25-2845-2025) (2025)
 - [Radiosonde-constrained reconstructions reveal a weakening Northern Hadley circulation](https://arxiv.org/abs/2503.05331) (2025)
 - [Rainfall nowcasting by integrating radar and rain gauge data with machine learning for Ischia Island, Italy](https://doi.org/10.1016/j.ejrh.2025.102273) (2025)
@@ -1371,6 +1371,7 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 - [Satellite Image-Based Surveillance and Early Wildfire Smoke Detection Using a Multiattention Interlaced Network](https://doi.org/10.1109/tii.2025.3528549) (2025)
 - [Satellite Observations Guided Diffusion Model for Accurate Meteorological States at Arbitrary Resolution](https://arxiv.org/abs/2502.07814) (2025)
 - [Spatial Downscaling of Satellite Sea Surface Wind with Soft-Sharing Multi-Task Learning](https://doi.org/10.3390/rs17040587) (2025)
+- [Comparative Analysis of AI based Model for Cyclone Intensity Estimation](https://doi.org/10.1109/iciscn64258.2025.10934419) (2025)
 - [Vapor pressure deficit (VPD) downscaling based on multi-source remote sensing, in-situ observation, and machine learning in China](https://doi.org/10.1016/j.ejrh.2025.102192) (2025)
 - [PrecipDiff: Leveraging image diffusion models to enhance satellite-based precipitation observations](https://arxiv.org/abs/2501.07447) (2025)
 - [Enhancing Precipitation Nowcasting Through Dual-Attention RNN: Integrating Satellite Infrared and Radar VIL Data](https://doi.org/10.3390/rs17020238) (2025)
@@ -1384,7 +1385,6 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 - [Enhancing Intensification Forecast of Tropical Cyclones in the North Indian Ocean Basin Using Fused Vision Transformer and Convolutional Block Attention With ResNet Model](https://doi.org/10.1109/tgrs.2025.3621322) (2025)
 - [Tropical Cyclone Intensity Forecasting Using Multimodal Data Fusion Guided by Sequential Infrared Satellite Images](https://doi.org/10.1109/tgrs.2025.3616026) (2025)
 - [Downscaling CLDAS Land Surface Temperature Using MODIS Data and a Multiattention Multiresidual Super-Resolution Network](https://doi.org/10.1109/tgrs.2025.3588692) (2025)
-- [Impact of VAEformer Compression Algorithm Precision Loss on the Tropospheric Delays for Microwave Remote Sensing](https://doi.org/10.1109/tgrs.2025.3587944) (2025)
 - [RSG-GAN: A GAN-Based Precipitation Nowcasting Model Integrating Radar QPE, GOES-16 SWD, and GNSS ZTDs](https://doi.org/10.1109/tgrs.2025.3587883) (2025)
 - [Reduction of Persistent Stress-Equivalent Wind Biases With Machine Learning and Scatterometer Data](https://doi.org/10.1109/tgrs.2025.3586375) (2025)
 - [Sequence-Aware Reanalysis Encoding for Typhoon Wind Speed Estimation](https://doi.org/10.1109/lgrs.2025.3612296) (2025)
@@ -1395,6 +1395,7 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 - [Enhancing Urban Heat Island Analysis Through Multisensor Data Fusion and GRU-Based Deep Learning Approaches for Climate Modeling](https://doi.org/10.1109/jstars.2025.3554529) (2025)
 - [Multimodal Fusion Learning for Predicting Tropical Cyclone Intensity Over Western North Pacific](https://doi.org/10.1109/jstars.2025.3544865) (2025)
 - [Deep Learning and Wavelet Transform Combined With Multichannel Satellite Images for Tropical Cyclone Intensity Estimation](https://doi.org/10.1109/jstars.2025.3531448) (2025)
+- [A Gaussian Process Regression Method to Nowcast Cloud-to-Ground Lightning From Remote Sensing and Numerical Weather Modeling Data](https://doi.org/10.1109/jstars.2024.3501976) (2025)
 - [A Learning on Intensity Prediction of Tropical Cyclone Infrared Images by Gabor Filter on Binary and Multi Class Approach](https://doi.org/10.14445/23488379/ijeee-v11i12p124) (2024)
 - [Estimation of Tropical Cyclone Size by Combining Sequential Infrared Satellite Images With Multitask Deep Learning](https://doi.org/10.1109/tgrs.2024.3522582) (2024)
 - [Cross-basin incremental learning for tropical cyclone intensity estimation](https://doi.org/10.1016/j.atmosres.2024.107887) (2024)
@@ -1409,10 +1410,8 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 - [Short-Term Rolling Prediction of Tropical Cyclone Intensity Based on Multi-Task Learning with Fusion of Deviation-Angle Variance and Satellite Imagery](https://doi.org/10.1007/s00376-024-3301-0) (2024)
 - [Vision Transformer for Extracting Tropical Cyclone Intensity from Satellite Images](https://doi.org/10.1007/s00376-024-3191-1) (2024)
 - [All‐Sky Microwave Radiance Observation Operator Based on Deep Learning With Physical Constraints](https://doi.org/10.1029/2024jd042436) (2024)
-- [Harnessing Futuregans For High-Resolution Thunderstorm And Lightning Nowcasting Over Bhopal Region](https://doi.org/10.1109/ingarss61818.2024.10984120) (2024)
 - [DYffCast: Regional Precipitation Nowcasting Using IMERG Satellite Data. A case study over South America](https://arxiv.org/abs/2412.02723) (2024)
 - [A conditional Generative Adversarial network model for the Weather4Cast 2024 Challenge](https://arxiv.org/abs/2412.00451) (2024)
-- [Tropical Cyclone Intensity Prediction Using Deep Learning Techniques- A Survey](https://doi.org/10.1109/aespc63931.2024.10872136) (2024)
 - [Benchmark Dataset Applied to Quantitative Precipitation Estimation and Forecasting of Qinghai](https://doi.org/10.54097/cy1qj729) (2024)
 - [Severe-hail detection with C-band dual-polarisation radars using convolutional neural networks](https://doi.org/10.5194/amt-17-6707-2024) (2024)
 - [DaYu: Data-Driven Model for Geostationary Satellite Observed Cloud Images Forecasting](https://arxiv.org/abs/2411.10144) (2024)
@@ -1433,8 +1432,6 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 - [Deep-TCP: Multi-source data fusion for deep learning-powered tropical cyclone intensity prediction to enhance urban sustainability](https://doi.org/10.1016/j.inffus.2024.102670) (2024)
 - [LEVERAGING DEEP LEARNING FOR IMPROVED CYCLONE FORCASTING](https://doi.org/10.36713/epra18147) (2024)
 - [A Systematic Framework for Data Augmentation for Tropical Cyclone Intensity Estimation Using Deep Learning](https://doi.org/10.1029/2024jh000206) (2024)
-- [Domain knowledge-driven variational recurrent networks for drought monitoring](https://doi.org/10.1016/j.rse.2024.114252) (2024)
-- [An LSTM Deep Learning Framework for History-Based Tornado Prediction Using Meteorological Data and Damage Assessment Using NDVI Anomalies](https://doi.org/10.1016/j.rines.2024.100040) (2024)
 - [Tropical cyclone tracking from geostationary infrared satellite images using deep learning techniques](https://doi.org/10.1080/01431161.2024.2388876) (2024)
 - [Assessing a machine learning-based downscaling framework for obtaining 1km daily precipitation from GPM data](https://doi.org/10.1016/j.heliyon.2024.e36368) (2024)
 - [Enhancing Extreme Precipitation Forecasts through Machine Learning Quality Control of Precipitable Water Data from Satellite FengYun-2E: A Comparative Study of Minimum Covariance Determinant and Isolation Forest Methods](https://doi.org/10.3390/rs16163104) (2024)
@@ -1451,7 +1448,6 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 - [A GRNN-Based Model for ERA5 PWV Adjustment with GNSS Observations Considering Seasonal and Geographic Variations](https://doi.org/10.3390/rs16132424) (2024)
 - [Development of Methods and Technologies for Operational Assimilation of Meteorological Observations at the Hydrometcenter of Russia](https://doi.org/10.3103/s1068373924070082) (2024)
 - [Physically‐Informed Super‐Resolution Downscaling of Antarctic Surface Melt](https://doi.org/10.1029/2023ms004212) (2024)
-- [A review of distributed solar forecasting with remote sensing and deep learning](https://doi.org/10.1016/j.rser.2024.114391) (2024)
 - [A Downscaling Method of TRMM Satellite Precipitation Based on Geographically Neural Network Weighted Regression: A Case Study in Sichuan Province, China](https://doi.org/10.3390/atmos15070792) (2024)
 - [Augmenting Efficacy of Global Climate Model Forecasts: Machine Learning Appraisal of Remote Sensing Data](https://doi.org/10.14445/22315381/ijett-v72i6p139) (2024)
 - [Improving Short-Term Prediction of Ocean Fog Using Numerical Weather Forecasts and Geostationary Satellite-Derived Ocean Fog Data Based on AutoML](https://doi.org/10.3390/rs16132348) (2024)
@@ -1474,6 +1470,8 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 - [Spatial Downscaling of Precipitation Data in Arid Regions Based on the XGBoost-MGWR Model: A Case Study of the Turpan–Hami Region](https://doi.org/10.3390/land13040448) (2024)
 - [Wildfire danger prediction optimization with transfer learning](https://arxiv.org/abs/2403.12871) (2024)
 - [Short-Term Intensity Prediction of Tropical Cyclones Based on Multi-Source Data Fusion with Adaptive Weight Learning](https://doi.org/10.3390/rs16060984) (2024)
+- [Improving Precipitation Forecasting through Early Fusion and Spatiotemporal Prediction: A Case Study Using the MultiPred Model](https://doi.org/10.3390/atmos15030329) (2024)
+- [A dataset for predicting cloud cover over Europe](https://doi.org/10.1038/s41597-024-03062-0) (2024)
 - [Land, jet stream, and other atmospheric effects on burned area estimation during the South Asian heatwave of 2022](https://doi.org/10.1016/j.jag.2024.103720) (2024)
 - [Recent warming trends of the Greenland ice sheet documented by historical firn and ice temperature observations and machine learning](https://doi.org/10.5194/tc-18-609-2024) (2024)
 - [Machine Learning–Based Lightning Parameterizations for the CONUS](https://doi.org/10.1175/aies-d-23-0024.1) (2024)
@@ -1484,12 +1482,11 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 - [A Benchmark Dataset for Tornado Detection and Prediction using Full-Resolution Polarimetric Weather Radar Data](https://doi.org/10.1175/aies-d-24-0006.1) (2024)
 - [Predicting Cyclone Michaung's Wrath: Leveraging Deep Learning Technique for Intensity and Track Forecasting](https://doi.org/10.36948/ijfmr.2024.v06i01.12263) (2024)
 - [Tropical cyclone intensity estimation through convolutional neural network transfer learning using two geostationary satellite datasets](https://doi.org/10.3389/feart.2023.1285138) (2024)
-- [Transformer-based nowcasting model of severe convective weather](https://doi.org/10.1117/12.3020861) (2024)
 - [Estimation of Solar Irradiance Using a Neural Network Based on the Combination of Sky Camera Images and Meteorological Data](https://doi.org/10.3390/en17020438) (2024)
 - [Spatiotemporal fusion convolutional neural network: tropical cyclone intensity estimation from multisource remote sensing images](https://doi.org/10.1117/1.jrs.18.018501) (2024)
 - [Accurate nowcasting of cloud cover at solar photovoltaic plants using geostationary satellite images](https://doi.org/10.1038/s41467-023-44666-1) (2024)
 - [MT-GN: Multi-Task-Learning-Based Graph Residual Network for Tropical Cyclone Intensity Estimation](https://doi.org/10.3390/rs16020215) (2024)
-- [Enhancing Radar Echo Extrapolation by ConvLSTM2D for Precipitation Nowcasting](https://doi.org/10.3390/s24020459) (2024)
+- [Phy-CoCo: Physical Constraint-Based Correlation Learning for Tropical Cyclone Intensity and Size Estimation](https://doi.org/10.3233/faia240744) (2024)
 - [Enhancing Bob Cyclone Precipitation Nowcasting with Deep Learning: A Convolutional Lstm Approach Using Insat 3d Data](https://doi.org/10.1016/j.jhydrol.2025.133911) (2024)
 - [Fireformer: A Novel Deep Learning Model for Himawari-8 Wildfire Detection with Consideration of Spatiotemporal Variation Information](https://doi.org/10.2139/ssrn.4934097) (2024)
 - [Development of a new automatic method for reconstructing the intensity of tropical cyclones from multispectral satellite Earth observations using artificial neural networks](https://doi.org/10.21046/2070-7401-2024-21-2-336-349) (2024)
@@ -1510,13 +1507,16 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 - [Wildfire Detection With Deep Learning—A Case Study for the CICLOPE Project](https://doi.org/10.1109/access.2024.3406215) (2024)
 - [Enhancing Few-Shot Learning for Tropical Cyclone Severity Prediction: A Deep Learning Approach](https://doi.org/10.18280/mmep.100639) (2023)
 - [Research on Hail Mechanism Features Based on Dual-Polarization Radar Data](https://doi.org/10.3390/atmos14121827) (2023)
+- [Cyclone Intensity Estimation Based on Deep - Learning Using Insat 3D IR Imagery](https://doi.org/10.1109/icemce57940.2023.10434169) (2023)
 - [Multi-Modal Learning-based Reconstruction of High-Resolution Spatial Wind Speed Fields](https://doi.org/10.1017/eds.2024.34) (2023)
 - [COMPARISON AND EVALUATION OF MACHINE-LEARNING-BASED SPATIAL DOWNSCALING APPROACHES ON SATELLITE-DERIVED PRECIPITATION DATA](https://doi.org/10.5194/isprs-annals-x-1-w1-2023-919-2023) (2023)
 - [Predicting Short-Term Intensity Change in Tropical Cyclones Using a Convolutional Neural Network](https://doi.org/10.1175/waf-d-23-0085.1) (2023)
 - [Typhoon Intensity Prediction with Vision Transformer](https://arxiv.org/abs/2311.16450) (2023)
+- [Objective Satellite Methods including AI algorithms reviewed for the Tenth International Workshop on Tropical Cyclones (IWTC-10)](https://doi.org/10.1016/j.tcrr.2023.11.001) (2023)
 - [Transformer-based nowcasting of radar composites from satellite images for severe weather](https://doi.org/10.1175/aies-d-23-0041.1) (2023)
 - [Exploring the Use of Machine Learning to Improve Vertical Profiles of Temperature and Moisture](https://doi.org/10.1175/aies-d-22-0090.1) (2023)
 - [Hybrid Optical Turbulence Models Using Machine Learning and Local Measurements](https://arxiv.org/abs/2310.17829) (2023)
+- [Nowcast-to-Forecast: Token-Based Multiple Remote Sensing Data Fusion for Precipitation Forecast](https://doi.org/10.1145/3583780.3614702) (2023)
 - [Neural network tasks for short-term forecasting according to results of microwave radiometric sounding of the atmosphere](https://doi.org/10.66032/2221-2574-2023-1-3-20-28) (2023)
 - [Identifying and characterising trapped lee waves using deep learning techniques](https://doi.org/10.1002/qj.4592) (2023)
 - [Deep Learning Model for Estimating Predicting and Forecasting of Tropical Cyclone Intensity using Satellite Images](https://doi.org/10.1109/discover58830.2023.10316711) (2023)
@@ -1550,6 +1550,7 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 - [Estimation of Tropical Cyclone Intensity Using Multi-Platform Remote Sensing and Deep Learning with Environmental Field Information](https://doi.org/10.3390/rs15082085) (2023)
 - [A Comprehensive Review of Environmental Weather Monitoring and Prediction System Using IoT and Multi-Model Progressive Dense Self-Attention](https://doi.org/10.65521/intjournalrecadvengtech.v12i1.2201) (2023)
 - [Forecasting Precipitation from Radar Wind Profiler Mesonet and Reanalysis Using the Random Forest Algorithm](https://doi.org/10.3390/rs15061635) (2023)
+- [Cyclone Intensity Estimation on INSAT 3D IR Imagery Using Deep Learning](https://doi.org/10.1109/icidca56705.2023.10099964) (2023)
 - [Machine learning-assisted mapping of city-scale air temperature: Using sparse meteorological data for urban climate modeling and adaptation](https://doi.org/10.1016/j.buildenv.2023.110211) (2023)
 - [Intermediate and Future Frame Prediction of Geostationary Satellite Imagery With Warp and Refine Network](https://arxiv.org/abs/2303.04405) (2023)
 - [Tropical Cyclone Wind Speed Estimation: A Large Scale Training Data Set and Community Benchmarking](https://doi.org/10.1029/2022ea002693) (2023)
@@ -1562,6 +1563,7 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 - [Nomadic people optimisation based Bi-LSTM for detection and tracking of tropical cyclone](https://doi.org/10.1007/s12040-022-02028-3) (2023)
 - [Toward Foundation Models for Earth Monitoring: Generalizable Deep Learning Models for Natural Hazard Segmentation](https://arxiv.org/abs/2301.09318) (2023)
 - [A Novel Framework for Correcting Satellite-Based Precipitation Products for Watersheds with Discontinuous Observed Data, Case Study in Mekong River Basin](https://doi.org/10.3390/rs15030630) (2023)
+- [Long lead-time radar rainfall nowcasting method incorporating atmospheric conditions using long short-term memory networks](https://doi.org/10.3389/fenvs.2022.1054235) (2023)
 - [Convective-Scale Assimilation of Cloud Cover from Photographs Using a Machine Learning Forward Operator](https://doi.org/10.1175/aies-d-22-0025.1) (2023)
 - [Convective Storm VIL and Lightning Nowcasting Using Satellite and Weather Radar Measurements Based on Multi-Task Learning Models](https://doi.org/10.1007/s00376-022-2082-6) (2023)
 - [The Role of Mesoscale Cloud Morphology in the Shortwave Cloud Feedback](https://doi.org/10.1029/2022gl101042) (2023)
@@ -1576,7 +1578,6 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 - [A Combined Model to Predict GNSS Precipitable Water Vapor Based on Deep Learning](https://doi.org/10.1109/jstars.2023.3278381) (2023)
 - [Toward a Deep-Learning-Network-Based Convective Weather Initiation Algorithm From the Joint Observations of Fengyun-4A Geostationary Satellite and Radar for 0–1h Nowcasting](https://doi.org/10.1109/jstars.2023.3262557) (2023)
 - [Neural style transfer between observed and simulated cloud images to improve the detection performance of tropical cyclone precursors](https://doi.org/10.1017/eds.2023.15) (2023)
-- [ConvSNow: A tailored Conv-LSTM architecture for weather nowcasting based on satellite imagery](https://doi.org/10.1016/j.procs.2023.10.014) (2023)
 - [Understanding cirrus clouds using explainable machine learning](https://doi.org/10.1017/eds.2023.14) (2023)
 - [Multimodal Wildland Fire Smoke Detection](https://arxiv.org/abs/2212.14143) (2022)
 - [TSRC: A Deep Learning Model for Precipitation Short-Term Forecasting over China Using Radar Echo Data](https://doi.org/10.3390/rs15010142) (2022)
@@ -1605,6 +1606,7 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 - [Application of artificial intelligence technology in typhoon monitoring and forecasting](https://doi.org/10.3389/feart.2022.974497) (2022)
 - [Urban precipitation downscaling using deep learning: a smart city application over Austin, Texas, USA](https://arxiv.org/abs/2209.06848) (2022)
 - [Tropical cyclone detection in South Pacific and Atlantic coastal area using optical flow estimation and RESNET deep learning model](https://doi.org/10.1007/s11600-022-00849-w) (2022)
+- [Creating Interpretable Data-Driven Approaches for Tropical Cyclones Forecasting](https://doi.org/10.1609/aaai.v36i11.21583) (2022)
 - [Omnivision forecasting: combining satellite observations with sky images for improved intra-hour solar energy predictions](https://arxiv.org/abs/2206.03207) (2022)
 - [Tropical Cyclone Track Prediction with an Encoding-to-Forecasting Deep Learning Model](https://doi.org/10.1175/waf-d-21-0116.1) (2022)
 - [ProbSevere LightningCast: A Deep-Learning Model for Satellite-Based Lightning Nowcasting](https://doi.org/10.1175/waf-d-22-0019.1) (2022)
@@ -1640,11 +1642,11 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 - [Investigation of Machine Learning Using Satellite-Based Advanced Dvorak Technique Analysis Parameters to Estimate Tropical Cyclone Intensity](https://doi.org/10.1175/waf-d-20-0234.1) (2021)
 - [Generating 1 km Spatially Seamless and Temporally Continuous Air Temperature Based on Deep Learning over Yangtze River Basin, China](https://doi.org/10.3390/rs13193904) (2021)
 - [Using Deep Learning to Nowcast the Spatial Coverage of Convection from Himawari-8 Satellite Data](https://doi.org/10.1175/mwr-d-21-0096.1) (2021)
+- [GPRChinaTemp1km: a high-resolution monthly air temperature dataset for China (1951–2020) based on machine learning](https://doi.org/10.5194/essd-2021-267) (2021)
 - [Lightning flash rate nowcasting based on polarimetric radar data and machine learning](https://doi.org/10.1080/01431161.2021.1933243) (2021)
 - [IowaRain: A Statewide Rain Event Dataset Based on Weather Radars and Quantitative Precipitation Estimation](https://arxiv.org/abs/2107.03432) (2021)
 - [DR-Transformer: A Multi-Features Fusion Framework for Tropical Cyclones Intensity Estimation](https://doi.org/10.3390/app11136208) (2021)
 - [Integrated meteorological drought monitoring framework using multi-sensor and multi-temporal earth observation datasets and machine learning algorithms: A case study of central India](https://doi.org/10.1016/j.jhydrol.2021.126638) (2021)
-- [Climatology of Linear Mesoscale Convective System Morphology in the United States based on Random Forests Method](https://doi.org/10.1175/jcli-d-20-0862.1) (2021)
 - [A Downscaling–Merging Scheme for Improving Daily Spatial Precipitation Estimates Based on Random Forest and Cokriging](https://doi.org/10.3390/rs13112040) (2021)
 - [NDFTC: A New Detection Framework of Tropical Cyclones from Meteorological Satellite Images with Deep Transfer Learning](https://doi.org/10.3390/rs13091860) (2021)
 - [Deep learning model for predicting daily IGS zenith tropospheric delays in West Africa using TensorFlow and Keras](https://doi.org/10.1016/j.asr.2021.04.039) (2021)
@@ -1657,9 +1659,10 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 - [Using Video Recognition to Identify Tropical Cyclone Positions](https://doi.org/10.1029/2020gl091912) (2021)
 - [Random Forest Model to Assess Predictor Importance and Nowcast Severe Storms using High-Resolution Radar–GOES Satellite–Lightning Observations](https://doi.org/10.1175/mwr-d-19-0274.1) (2021)
 - [Creating 1-km long-term (1980–2014) daily average air temperatures over the Tibetan Plateau by integrating eight types of reanalysis and land data assimilation products downscaled with MODIS-estimated temperature lapse rates based on machine learning](https://doi.org/10.1016/j.jag.2021.102295) (2021)
+- [A Conformal Regressor with Random Forests for Tropical Cyclone Intensity Estimation](https://doi.org/10.1109/tgrs.2021.3139930) (2021)
 - [Tropical Cyclone Intensity Classification and Estimation Using Infrared Satellite Images With Deep Learning](https://doi.org/10.1109/jstars.2021.3050767) (2021)
+- [DeePS at: A deep learning model for prediction of satellite images for nowcasting purposes](https://doi.org/10.1016/j.procs.2021.08.064) (2021)
 - [Research on downscaling of TRMM precipitation products based on deep learning: Exemplified by northeast China](https://doi.org/10.6046/gtzyyg.2020.04.19) (2020)
-- [MSDM: a machine learning model for precipitation nowcasting over east China using multi-source data](https://doi.org/10.5194/gmd-2020-363) (2020)
 - [Physics-augmented Deep Learning to Improve Tropical Cyclone Intensity and Size Estimation from Satellite Imagery](https://agu.confex.com/agu/fm20/webprogram/Paper690714.html) (2020)
 - [Understanding Climate Impacts on Vegetation with Gaussian Processes in Granger Causality](https://arxiv.org/abs/2012.03338) (2020)
 - [Downscaling Satellite and Reanalysis Precipitation Products Using Attention-Based Deep Convolutional Neural Nets](https://doi.org/10.3389/frwa.2020.536743) (2020)
@@ -1670,6 +1673,7 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 - [Real-time Tropical Cyclone Intensity Estimation by Handling Temporally Heterogeneous Satellite Data](https://arxiv.org/abs/2010.14977) (2020)
 - [A Multi-task Two-stream Spatiotemporal Convolutional Neural Network for Convective Storm Nowcasting](https://arxiv.org/abs/2010.14100) (2020)
 - [Prediction of Short-Time Cloud Motion Using a Deep-Learning Model](https://doi.org/10.3390/atmos11111151) (2020)
+- [A Deep-Learning Model for Automated Detection of Intense Midlatitude Convection Using Geostationary Satellite Images](https://doi.org/10.1175/waf-d-20-0028.1) (2020)
 - [Radar Super Resolution Using a Deep Convolutional Neural Network](https://doi.org/10.1175/jtech-d-20-0074.1) (2020)
 - [Estimation of Hurricane Intensity from ATMS-Derived Temperature Anomaly using Machine Learning](https://doi.org/10.34257/gjsfrhvol20is4pg5) (2020)
 - [TCLNet: Learning to Locate Typhoon Center Using Deep Neural Network](https://arxiv.org/abs/2010.01282) (2020)
@@ -1717,6 +1721,7 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 - [Artificial Intelligence Based Cloud Distributor (AI-CD): Probing Low Cloud Distribution with a Conditional Generative Adversarial Network](https://arxiv.org/abs/1905.08700) (2019)
 - [Machine Learning Approaches for Detecting Tropical Cyclone Formation Using Satellite Data](https://doi.org/10.3390/rs11101195) (2019)
 - [Comparison of statistical post-processing methods for probabilistic NWP forecasts of solar radiation](https://arxiv.org/abs/1904.07192) (2019)
+- [Classifying Convective Storms Using Machine Learning](https://doi.org/10.1175/waf-d-19-0170.1) (2019)
 - [Volumetric Detection of Tornadic Vortices Associated with Typhoon Nanmadol (2017) Using PAWR and Deep Learning](https://confit.atlas.jp/guide/event/jpgu2019/subject/AAS02-11/detail) (2019)
 - [Estimating Tropical Cyclone Intensity by Satellite Imagery Utilizing Convolutional Neural Networks](https://doi.org/10.1175/waf-d-18-0136.1) (2019)
 - [Integrating precipitation zoning with random forest regression for the spatial downscaling of satellite‐based precipitation: A case study of the Lancang–Mekong River basin](https://doi.org/10.1002/joc.6050) (2019)

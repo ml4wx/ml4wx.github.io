@@ -25,33 +25,32 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 | 2026-09-08 | [EastAsiaClimateExtremes: An AI-Ready Dataset of Weekly Atmospheric and Oceanic Extremes over East Asia for Subseasonal Prediction Research](https://arxiv.org/abs/2609.08241)<br><sub>Miae Kim, Yun-Young Lee, U. Chung</sub> |  |  |
 | 2026-09-05 | [SolarBench: A global solar energy nowcasting benchmark](https://arxiv.org/abs/2609.06187)<br><sub>Yuhao Nie, Stephen Campbell, Quentin Paletta et al.</sub> |  |  |
 | 2026-09-02 | [A compiled dataset of Greenland weather station observations and reconstructed surface air temperature](https://doi.org/10.5194/essd-2026-449)<br><sub>Shujing Wang, Yetang Wang, Yulun Zhang et al. · Earth System Science Data Discussions</sub> |  |  |
-| 2026-09-01 | [Skill assessment of AI-based weather model in heavy precipitation prediction over South Korea](https://doi.org/10.1007/s00704-026-06536-w)<br><sub>Seong-Ho Hong, Kyeongjoo Park, Dong-Hwi Kim et al. · Theoretical and Applied Climatology</sub> |  |  |
 | 2026-08-27 | [Dandelion: A Spherical Flower for Neural Simulation of Planetary Dynamics](https://arxiv.org/abs/2608.27521)<br><sub>Till Muser, Giovanni Abati, Ivan Dokmanić</sub> |  |  |
 | 2026-08-24 | [UHI-Bench: Benchmarking Dual-Source Urban Heat Island Modeling Across Cities in Diverse Climate Regimes](https://arxiv.org/abs/2608.23857)<br><sub>Wanyun Ling, Chenxi Liu, Yi Xie et al.</sub> | Technical University of Munich (TUM) |  |
 | 2026-07-31 | [Assessing the real-world economic value of weather forecasts for compounding extremes](https://doi.org/10.1088/1748-9326/ae9327)<br><sub>Leonardo Olivetti, Gabriele Messori, Paolo Avner et al. · Environmental Research Letters</sub> |  |  |
 | 2026-07-31 | [Do AI weather models miss extremes?](https://arxiv.org/abs/2608.09972)<br><sub>Marvin Vincent Gabler, Roberto Molinaro, Niall Siegenheim et al.</sub> |  |  |
 | 2026-07-30 | [Class Imbalance in Machine Learning for Weather and Rainfall Prediction: A PRISMA-Aligned Systematic Review](https://doi.org/10.5281/zenodo.21709950)<br><sub>Paul Joseph Agada, Ahmad Abubakar Yusuf, Joseph Ubah Adah et al. · International Journal of Scientific Research in Science and Technology</sub> |  |  |
 | 2026-07-29 | [Benchmarking ConvLSTM for One-Day-Ahead IMDAA Rainfall-Field Prediction across Four Indian Cities](https://arxiv.org/abs/2607.26581)<br><sub>Tanmay Ghosh, Shaurabh Anand, Rakesh Gomaji Nannewar et al.</sub> |  |  |
-| 2026-07-26 | [AI Model Performances Depend on Adequate Training Data Representing Diverse Physical Mechanisms](https://doi.org/10.1029/2025gl121196)<br><sub>M. Mu, Bo Qin, G. Dai · Geophysical Research Letters</sub> |  |  |
 | 2026-07-08 | [A self-supervised precipitation forecast verification based on contrastive learning](https://doi.org/10.5194/gmd-19-6027-2026)<br><sub>Yanwen Wang, Shuwen Huang, Qian Li et al. · Geoscientific model development</sub> | China Meteorological Administration (CMA) |  |
 | 2026-07-06 | [Community Participation as a Pathway to Strengthen National Precipitation Isotope Products in New Zealand](https://doi.org/10.1002/snz2.70061)<br><sub>Bruce Dudley, Alice F. Hill, Andy McKenzie et al. · Journal of the Royal Society of New Zealand</sub> |  |  |
 | 2026-07-05 | [U3DWind: A Low Altitude Wind Field Dataset and Benchmark for Urban Air Mobility](https://doi.org/10.1016/j.ast.2026.114092)<br><sub>Shixiong Zhou, Huanxia Wei, Chao Xia et al. · Aerospace Science and Technology</sub> |  |  |
 | 2026-07-03 | [A harmonised dataset for Earth system foundation models](https://arxiv.org/abs/2607.03298)<br><sub>Carlos Rodriguez-Pardo, Massimo Tavoni</sub> |  |  |
-| 2026-06-28 | [Statistical Equivalence of AI Emulators and Earth System Models: A Large Ensemble Study with Ultra-Low-Resolution E3SM](https://doi.org/10.1145/3815572.3815761)<br><sub>S. Mahajan, Michael E. Kelleher, Ming Fan · Platform for Advanced Scientific Computing Conference</sub> |  |  |
 | 2026-06-28 | [CORDEX-ML-Bench: A Benchmark for Data-Driven Regional Climate Downscaling -Experiment Design and Overview](https://arxiv.org/abs/2606.29172)<br><sub>Neelesh Rampal, José González-Abad, Henry Addison et al.</sub> |  |  |
 | 2026-06-24 | [Obshazard-bench: Benchmarking Multimodal Foundation Models for Real-Time Disaster Intelligence from Raw Earth Observation Streams](https://arxiv.org/abs/2608.00012)<br><sub>Fengxiang Wang, Qiuyang Yu, Yueying Li et al.</sub> |  |  |
 | 2026-06-19 | [Towards Fair Comparisons of AI- and Physics-Based Weather Models for Extreme Events via the Weighted Potential CRPS](https://arxiv.org/abs/2606.21170)<br><sub>Tobias Biegert, Sam Allen, Annika Alber et al.</sub> |  |  |
 | 2026-06-16 | [ThousandWorlds: A benchmark for climate emulation of potentially habitable exoplanets](https://arxiv.org/abs/2606.18338)<br><sub>Edward T. Stevenson, Mei Ting Mak, Eric Wolf et al.</sub> | University of Cambridge (Aardvark), University of Oxford | [code](https://github.com/edstevenson/ThousandWorlds) |
-| 2026-06-12 | [Climate Change Prediction Using Machine Learning Models](https://doi.org/10.1109/cicn70047.2026.11594335)<br><sub>Vedhanshu Singh, Abhay Singh Tomar, Ramneet · 2026 IEEE 18th International Conference on Computational Intelligence and Communication Networks (CICN)</sub> |  |  |
+| 2026-06-01 | [Collection and Proposal of an Actual Meteorological Dataset from the Indian Meteorological Department for Forecasting Weather Parameters: A Comprehensive Study of Pune Region (2004-2024)](https://doi.org/10.1109/ignite69592.2026.11706527)<br><sub>Anup G. Dakre, Chaya R. Jadhav · 2026 1st International Conference on Innovation & Growth in Next-Gen Intelligent Technology & Engineering (IGNITE)</sub> |  |  |
 | 2026-06-01 | [An AI Training Dataset for Monitoring and Forecasting of Short-Duration Heavy Rainfall in China](https://doi.org/10.1007/s13351-026-5350-z)<br><sub>Na Liu, Wen-Yi Xiao, Anyuan Xiong et al. · Journal of Meteorological Research</sub> |  |  |
 | 2026-05-28 | [Can AI Weather Models Predict Beyond Two Weeks? A Quantitative Benchmark and Analysis of Long Rollouts](https://arxiv.org/abs/2605.30184)<br><sub>Fanny Lehmann, Firat Ozdemir, Yun Cheng et al.</sub> |  |  |
 | 2026-05-27 | [AtmosGen: Condition-Aware Synthetic Atmospheric Data and Image Generation for Aviation Applications](https://doi.org/10.51583/ijltemas.2026.1501300004)<br><sub>Pradeep Shirvi, Srushti Patil, Aakashi Jangam · International Journal of Latest Technology in Engineering Management & Applied Science</sub> |  |  |
 | 2026-05-24 | [RealBench: Benchmarking Data-Driven Numerical Weather Forecasting Under Operational Conditions and Extreme Event Challenges](https://arxiv.org/abs/2605.24945)<br><sub>Ruize Li, Zhibin Wen, Tao Han et al.</sub> |  | [code](https://github.com/lixruize-del/NWP-Benchmark) |
 | 2026-05-23 | [The Perception-Physics Paradox: Probing Scientific Alignment with TC-Bench](https://arxiv.org/abs/2605.24782)<br><sub>Dingling Yao, Andrea Polesello, Adeel Pervez et al.</sub> |  |  |
+| 2026-05-22 | [Evaluating the Performance of AI in Crisis Detection: A Multi-Scenario Hindcast of Extreme Precipitation Forecasts](https://doi.org/10.59297/sfbr7n23)<br><sub>Feng Huang, Guofeng Su, Li-Da Huang et al. · Proceedings of the International ISCRAM Conference</sub> |  |  |
 | 2026-05-19 | [FLUXtrapolation: A benchmark on extrapolating ecosystem fluxes](https://arxiv.org/abs/2605.19812)<br><sub>Anya Fries, Jacob A Nelson, Martin Jung et al.</sub> |  |  |
 | 2026-05-13 | [Advances in artificial intelligence for climate science methods applications and evaluation challenges](https://doi.org/10.1007/s44163-026-01262-8)<br><sub>Essam Halim Houssein, Mahmoud Dirar, Abdelmaged A. Ali et al. · Discover Artificial Intelligence</sub> |  |  |
 | 2026-05-09 | [METBRA25Y: Brazil Surface Meteorology Archive with Harmonized Variables and Quality Control](https://arxiv.org/abs/2605.08701)<br><sub>Matheus Lima Castro, William Dantas Vichete, Leopoldo Lusquino Filho</sub> |  |  |
 | 2026-05-07 | [AIMIP Phase 1: systematic evaluations of AI weather and climate models](https://arxiv.org/abs/2605.06944)<br><sub>B. Henn, C. Bretherton, Nikolay Koldunov et al.</sub> |  |  |
+| 2026-05-01 | [A 3-km high-resolution daily temperature dataset over the Tibetan Plateau (1993–2023) based on artificial intelligence downscaling and station calibration](https://doi.org/10.1016/j.atmosres.2026.109100)<br><sub>Jian-Yu Wang, Yong Feng, Xing-Wen Jiang · Atmospheric Research</sub> |  |  |
 | 2026-05-01 | [A Dataset of Tropical Cyclones in the Western North Pacific from Chinese Fengyun Geostationary Meteorological Satellite Observations over the Past Two Decades](https://doi.org/10.1007/s00376-025-5573-4)<br><sub>Xiaoqin Lu, Johnny C. L. Chan, Jie Tang et al. · Advances in Atmospheric Sciences</sub> | China Meteorological Administration (CMA) |  |
 | 2026-05-01 | [Extreme Weather Bench: A framework and benchmark for evaluation of high-impact weather](https://arxiv.org/abs/2605.01126)<br><sub>Amy McGovern, Taylor Mandelbaum, Daniel Rothenberg et al.</sub> |  |  |
 | 2026-04-22 | [On the Representation of Convectively Coupled Kelvin Waves in Operational Forecast Models: An Object-Tracking Perspective](https://doi.org/10.1175/waf-d-25-0182.1)<br><sub>Quinton A. Lawton, Rosimar Rios‐Berrios, Falko Judt et al. · Weather and Forecasting</sub> | Deutscher Wetterdienst (DWD), ECMWF, NSF NCAR / UCAR |  |
@@ -81,6 +80,7 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 | 2025-12-01 | [A Workflow for Benchmarking Added Value by New Statistical Downscaling Methods](https://doi.org/10.1142/s2345737625400020)<br><sub>Robert Leonard Wilby, Biljana Basarin, Daniel Boateng et al. · Journal of Extreme Events</sub> |  |  |
 | 2025-11-26 | [Climatological Benchmarking of AI‐Generated Tropical Cyclones](https://arxiv.org/abs/2511.21792)<br><sub>Yanmo Weng, A. Gori · Journal of Geophysical Research: Atmospheres</sub> |  |  |
 | 2025-11-20 | [Whose weather is it? A fairness framework for data-driven weather forecasting](https://doi.org/10.1088/1748-9326/ae21f5)<br><sub>Leonardo Olivetti, Gabriele Messori · Environmental Research Letters</sub> |  |  |
+| 2025-11-13 | [Global performance benchmarking of artificial intelligence models in atmospheric river forecasting](https://doi.org/10.1038/s43247-025-02823-y)<br><sub>Lu-Jia Zhang, M. Lu, Qing Bao et al. · Communications Earth & Environment</sub> |  |  |
 | 2025-11-12 | [A Comparative Analysis of Statistical Techniques, Data Mining Techniques, Machine Learning Techniques](https://doi.org/10.5281/zenodo.17587339)<br><sub>Prof.S.Sabeena, Girinath T · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
 | 2025-11-12 | [IMPMCT: a dataset of Integrated Multi-source Polar Mesoscale Cyclone Tracks in the Nordic Seas](https://doi.org/10.5194/essd-17-6049-2025)<br><sub>Runzhuo Fang, Jinfeng Ding, Wenjuan Gao et al. · Earth system science data</sub> | China Meteorological Administration (CMA) |  |
 | 2025-11-11 | [SynWeather: Weather Observation Data Synthesis across Multiple Regions and Variables via a General Diffusion Transformer](https://arxiv.org/abs/2511.08291)<br><sub>Kaiyi Xu, Junchao Gong, Zhiwang Zhou et al.</sub> |  |  |
@@ -116,11 +116,11 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 | 2025-05-23 | [X-MethaneWet: A Cross-scale Global Wetland Methane Emission Benchmark Dataset for Advancing Science Discovery with AI](https://arxiv.org/abs/2505.18355)<br><sub>Yiming Sun, Shuo Chen, Shengyu Chen et al.</sub> | NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
 | 2025-05-15 | [GeoGrid-Bench: Can Foundation Models Understand Multimodal Gridded Geo-Spatial Data?](https://arxiv.org/abs/2505.10714)<br><sub>Bowen Jiang, Yangxinyu Xie, Xiaomeng Wang et al.</sub> |  |  |
 | 2025-05-13 | [ExEBench: Benchmarking Foundation Models on Extreme Earth Events](https://arxiv.org/abs/2505.08529)<br><sub>Shan Zhao, Zhitong Xiong, Jie Zhao et al.</sub> |  | [code](https://github.com/zhaoshan2/EarthExtreme-Bench) |
+| 2025-05-01 | [Spatiotemporal inhomogeneity of accuracy degradation in AI weather forecast foundation models: A GNSS perspective](https://doi.org/10.1016/j.jag.2025.104473)<br><sub>Jun-Sheng Ding, Wu Chen, Jun-Ping Chen et al. · Int. J. Appl. Earth Obs. Geoinformation</sub> |  |  |
 | 2025-05-01 | [IberFire -- a detailed creation of a spatio-temporal dataset for wildfire risk assessment in Spain](https://arxiv.org/abs/2505.00837)<br><sub>Julen Erzibengoa, Meritxell Gómez-Omella, Izaro Goienetxea</sub> |  |  |
 | 2025-05-01 | [AI-ready Snow Radar Echogram Dataset (SRED) for climate change monitoring](https://arxiv.org/abs/2505.00786)<br><sub>Oluwanisola Ibikunle, Hara Talasila, Debvrat Varshney et al.</sub> |  |  |
 | 2025-04-10 | [ClimateBench-M: A Multi-Modal Climate Data Benchmark with a Simple Generative Method](https://arxiv.org/abs/2504.07394)<br><sub>Dongqi Fu, Yada Zhu, Zhining Liu et al.</sub> |  | [code](https://github.com/iDEA-iSAIL-Lab-UIUC/ClimateBench-M) |
 | 2025-03-18 | [Cell-tracking-based framework for assessing nowcasting model skill in reproducing growth and decay of convective rainfall](https://doi.org/10.5194/gmd-18-1851-2025)<br><sub>Jenna Ritvanen, Seppo Pulkkinen, Dmitri N. Moisseev et al. · Geoscientific model development</sub> | MeteoSwiss |  |
-| 2025-03-03 | [A Comparison of AI Weather Prediction and Numerical Weather Prediction Models for 1–7-Day Precipitation Forecasts](https://doi.org/10.1175/waf-d-24-0081.1)<br><sub>Jacob T Radford, Imme Ebert-Uphoff, Jebb Q. Stewart · Weather and Forecasting</sub> |  |  |
 | 2025-01-01 | [SeasonBench-EA: A Multi-Source Benchmark for Seasonal Prediction and Numerical Model Post-Processing in East Asia](https://doi.org/10.52202/085713-4977)<br><sub>Meng-Xuan Chen, Guo-Wen Li, Ziheng Zou et al. · Advances in Neural Information Processing Systems 38</sub> |  |  |
 | 2025-01-01 | [Trends and Contributions in AI-Based Weather Forecasting: A Bibliometric Analysis](https://doi.org/10.2139/ssrn.5062441)<br><sub>Shawn Clyde Diares, Michael Kenn Tafere · SSRN Electronic Journal</sub> |  |  |
 | 2025-01-01 | [A Strategy to set up Test Dataset and Evaluation Benchmark for Radar Nowcasting of Precipitation in Italy](https://doi.org/10.1109/jstars.2025.3568185)<br><sub>Clizia Annella, Edoardo Raparelli, Gianfranco Vulpiani et al. · IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</sub> |  |  |
@@ -131,6 +131,7 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 | 2024-11-26 | [Benchmark Dataset Applied to Quantitative Precipitation Estimation and Forecasting of Qinghai](https://doi.org/10.54097/cy1qj729)<br><sub>Yanping Li, Qing-Jun Yang, Zhiyu Lai et al. · Frontiers in Computing and Intelligent Systems</sub> |  |  |
 | 2024-11-25 | [Machine Learning for the Digital Typhoon Dataset: Extensions to Multiple Basins and New Developments in Representations and Tasks](https://arxiv.org/abs/2411.16421)<br><sub>Asanobu Kitamoto, Erwan Dzik, Gaspar Faure</sub> |  | [code](https://github.com/kitamoto-lab/digital-typhoon) |
 | 2024-10-24 | [Recommendations for Comprehensive and Independent Evaluation of Machine Learning-Based Earth System Models](https://arxiv.org/abs/2410.19882)<br><sub>Paul A. Ullrich, Elizabeth A. Barnes, William D. Collins et al. · Journal of Geophysical Research: Machine Learning and Computation</sub> | Colorado State University (incl. CIRA), Lawrence Berkeley National Laboratory / NERSC, NSF NCAR / UCAR, Oak Ridge National Laboratory, University of California, Berkeley |  |
+| 2024-09-28 | [Climate change and artificial intelligence: assessing the global research landscape](https://doi.org/10.1007/s44163-024-00170-z)<br><sub>Joanna I. Lewis, Autumn Toney, Xinglan Shi · Discover Artificial Intelligence</sub> |  |  |
 | 2024-09-27 | [HR-Extreme: A High-Resolution Dataset for Extreme Weather Forecasting](https://arxiv.org/abs/2409.18885)<br><sub>Nian Ran, Peng Xiao, Yue Wang et al.</sub> | Microsoft Research (AI for Science) |  |
 | 2024-09-14 | [WeatherReal: A Benchmark Based on In-Situ Observations for Evaluating Weather Models](https://arxiv.org/abs/2409.09371)<br><sub>Weixin Jin, Jonathan Weyn, Pengcheng Zhao et al.</sub> |  |  |
 | 2024-08-28 | [ClimDetect: A Benchmark Dataset for Climate Change Detection and Attribution](https://arxiv.org/abs/2408.15993)<br><sub>Sungduk Yu, Brian L. White, Anahita Bhiwandiwalla et al.</sub> | University of California, Los Angeles (UCLA) |  |
@@ -147,17 +148,16 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 | 2024-02-27 | [A dataset for predicting cloud cover over Europe](https://doi.org/10.1038/s41597-024-03062-0)<br><sub>Hanna Svennevik, Steven Hicks, M. Riegler et al. · Scientific Data</sub> |  |  |
 | 2024-01-26 | [A Benchmark Dataset for Tornado Detection and Prediction using Full-Resolution Polarimetric Weather Radar Data](https://doi.org/10.1175/aies-d-24-0006.1)<br><sub>Mark S. Veillette, James M. Kurdzo, Phillip M. Stepanian et al. · Artificial Intelligence for the Earth Systems</sub> | Massachusetts Institute of Technology (MIT) |  |
 | 2024-01-26 | [Validating Climate Models with Spherical Convolutional Wasserstein Distance](https://arxiv.org/abs/2401.14657)<br><sub>Robert C. Garrett, Trevor Harris, Bo Li et al.</sub> |  |  |
+| 2024-01-22 | [Identifying and Categorizing Bias in AI/ML for Earth Sciences](https://doi.org/10.1175/bams-d-23-0196.1)<br><sub>Amy McGovern, A. Bostrom, Marie McGraw et al. · Bulletin of the American Meteorological Society</sub> |  |  |
 | 2024-01-08 | [Lessons Learned: Reproducibility, Replicability, and When to Stop](https://arxiv.org/abs/2401.03736)<br><sub>Milton S. Gomez, Tom Beucler</sub> |  |  |
 | 2024-01-07 | [Effective Benchmarks for Optical Turbulence Modeling](https://doi.org/10.1175/aies-d-24-0003.1)<br><sub>Christopher Jellen, Charles Nelson, Cody Brownell et al. · Artificial Intelligence for the Earth Systems</sub> |  | [code](https://github.com/cdjellen/otbench) |
 | 2024-01-04 | [A bibliometric analysis of deep learning applications in climate change research using CiteSpace](https://doi.org/10.18686/jaoe.v11i1.10456)<br><sub>Ghania Benm’barek, Redouane Larbi Boufeniza, Karam Alsafadi · J of Atmosphere and Oceanography Environment</sub> | Nanjing University of Information Science & Technology (NUIST) |  |
-| 2024-01-01 | [Evaluation of Different Deep Learning Methods for Meteorological Element Forecasting](https://doi.org/10.1109/access.2024.3411109)<br><sub>Ruibo Qiu, Wen Dai, Guojie Wang et al. · IEEE Access</sub> |  |  |
 | 2024-01-01 | [ChaosBench: A Multi-Channel, Physics-Based Benchmark for Subseasonal-to-Seasonal Climate Prediction](https://arxiv.org/abs/2402.00712)<br><sub>Juan Nathaniel, Yongquan Qu, Tung Nguyen et al. · Advances in Neural Information Processing Systems 37</sub> |  |  |
 | 2023-12-12 | [SeasFire as a Multivariate Earth System Datacube for Wildfire Dynamics](https://arxiv.org/abs/2312.07199)<br><sub>Ilektra Karasante, Lazaro Alonso, Ioannis Prapas et al.</sub> | Max Planck Institute for Biogeochemistry, University of Cambridge (Aardvark) |  |
 | 2023-11-29 | [SAIBench: A Structural Interpretation of AI for Science Through Benchmarks](https://arxiv.org/abs/2311.17869)<br><sub>Yatao Li, Jianfeng Zhan</sub> |  |  |
 | 2023-11-07 | [ClimateSet: A Large-Scale Climate Model Dataset for Machine Learning](https://arxiv.org/abs/2311.03721)<br><sub>Julia Kaltenborn, Charlotte E. E. Lange, Venkatesh Ramesh et al.</sub> |  |  |
 | 2023-11-05 | [Digital Typhoon: Long-term Satellite Image Dataset for the Spatio-Temporal Modeling of Tropical Cyclones](https://arxiv.org/abs/2311.02665)<br><sub>Asanobu Kitamoto, Jared Hwang, Bastien Vuillod et al.</sub> |  | [code](https://github.com/kitamoto-lab/digital-typhoon) |
 | 2023-09-26 | [Intercomparison of Deep Learning Architectures for the Prediction of Precipitation Fields With a Focus on Extremes](https://doi.org/10.1029/2023wr035088)<br><sub>Noelia Otero, Pascal Horton · Water Resources Research</sub> |  |  |
-| 2023-09-25 | [Meta-Learning and Self-Supervised Pretraining for Storm Event Imagery Translation](https://doi.org/10.1109/hpec58863.2023.10363448)<br><sub>Ileana Rugina, Rumen Dangovski, M. Veillette et al. · 2023 IEEE High Performance Extreme Computing Conference (HPEC)</sub> |  | [code](https://github.com/irugina/meta-image-translation) |
 | 2023-08-29 | ⭐ [WeatherBench 2: A benchmark for the next generation of data-driven global weather models](https://arxiv.org/abs/2308.15560)<br><sub>Stephan Rasp, Stephan Hoyer, Alexander Merose et al. · Journal of Advances in Modeling Earth Systems</sub> | ECMWF, Google DeepMind, Google Research |  |
 | 2023-07-19 | ⭐ [The rise of data-driven weather forecasting](https://arxiv.org/abs/2307.10128)<br><sub>Zied Ben-Bouallegue, Mariana C A Clare, Linus Magnusson et al. · Bulletin of the American Meteorological Society</sub> | ECMWF |  |
 | 2023-06-28 | ⭐ [The EUPPBench postprocessing benchmark dataset v1.0](https://doi.org/10.5194/essd-15-2635-2023)<br><sub>Jonathan Demaeyer, Jonas Bhend, Sebastian Lerch et al. · Earth System Science Data</sub> | Deutscher Wetterdienst (DWD), ECMWF, Karlsruhe Institute of Technology (KIT), Met Office, Météo-France (incl. CNRM), MeteoSwiss | [code](https://github.com/EUPP-benchmark/climetlab-eumetnet-postprocessing-benchmark) |
@@ -190,7 +190,7 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 | 2021-09-21 | [SubseasonalClimateUSA: A Dataset for Subseasonal Forecasting and Benchmarking](https://arxiv.org/abs/2109.10399)<br><sub>Soukayna Mouatadid, Paulo Orenstein, Genevieve Flaspohler et al.</sub> |  | [code](https://github.com/microsoft/subseasonal_data) |
 | 2021-09-19 | [Towards Representation Learning for Atmospheric Dynamics](https://arxiv.org/abs/2109.09076)<br><sub>Sebastian Hoffmann, Christian Lessig · NEURIPS 2021 workshop on Tackling Climate Change with Machine Learning (poster)</sub> |  |  |
 | 2021-09-11 | [RAIN-F+: The Data-Driven Precipitation Prediction Model for Integrated Weather Observations](https://doi.org/10.3390/rs13183627)<br><sub>Yeji Choi, Keumgang Cha, Minyoung Back et al. · Remote Sensing</sub> |  |  |
-| 2021-07-11 | [Rain-F: A Fusion Dataset for Rainfall Prediction Using Convolutional Neural Network](https://doi.org/10.1109/igarss47720.2021.9555094)<br><sub>Yeji Choi, Keumgang Cha, Minyoung Back et al. · 2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS</sub> |  |  |
+| 2021-08-23 | [GPRChinaTemp1km: a high-resolution monthly air temperature dataset for China (1951–2020) based on machine learning](https://doi.org/10.5194/essd-2021-267)<br><sub>Qian He, Ming Wang, Kai Liu et al. · Earth System Science Data</sub> |  |  |
 | 2021-07-07 | [IowaRain: A Statewide Rain Event Dataset Based on Weather Radars and Quantitative Precipitation Estimation](https://arxiv.org/abs/2107.03432)<br><sub>Muhammed Sit, Bong-Chul Seo, Ibrahim Demir</sub> |  |  |
 | 2021-06-17 | [CIRA Guide to Custom Loss Functions for Neural Networks in Environmental Sciences -- Version 1](https://arxiv.org/abs/2106.09757)<br><sub>Imme Ebert-Uphoff, Ryan Lagerquist, Kyle Hilburn et al.</sub> | Colorado State University (incl. CIRA), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
 | 2021-04-16 | [EarthNet2021: A large-scale dataset and challenge for Earth surface forecasting as a guided video prediction task](https://arxiv.org/abs/2104.10066)<br><sub>Christian Requena-Mesa, Vitus Benson, Markus Reichstein et al.</sub> | Max Planck Institute for Biogeochemistry |  |
@@ -209,6 +209,7 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 ## Also relevant
 
 - [MJO Predictability: Its Sources and Limits](https://doi.org/10.1175/bams-d-25-0345.1) (2026)
+- [Spatio-temporal graph foundation models for earth system intelligence: an end-to-end, continual, and multimodal learning framework](https://doi.org/10.1007/s12145-026-02264-x) (2026)
 - [EarthAlign: Learning Language-Aligned Representations of Earth System Data](https://arxiv.org/abs/2610.14624) (2026)
 - [SciExam for ENSO: Can AI Agents Build Climate Models?](https://arxiv.org/abs/2610.10513) (2026)
 - [Generative and deterministic deep learning models comparison for fine-scale precipitation retrievals from infrared brightness temperature](https://arxiv.org/abs/2610.09859) (2026)
@@ -219,6 +220,7 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 - [Evaluating Dynamical Fidelity through Predictive Structure in Physical Representations](https://arxiv.org/abs/2609.34627) (2026)
 - [Global Evaluation of AI and NWP Precipitation Forecasts During Atmospheric River Events](https://arxiv.org/abs/2610.03758) (2026)
 - [ClimTip-GML: A global bias-corrected and downscaled dataset for assessing impacts of climate tipping events](https://arxiv.org/abs/2609.23149) (2026)
+- [Benchmarking Model Complexity for Short-Term Surrogate Forecasting of High-Resolution Urban WRF Outputs During an Extreme Heatwave in Chongqing](https://doi.org/10.3390/land15091726) (2026)
 - [Butterfly Effect and the Kinetic Energy Cascade in Probabilistic Machine Learning Weather Prediction Models](https://arxiv.org/abs/2609.18489) (2026)
 - [TPHH: a long-term (1901–2023) high-resolution (1∕30°) near-surface humidity dataset for the Tibetan Plateau generated via spatial downscaling based on hybrid-structure deep learning](https://doi.org/10.5194/essd-18-6763-2026) (2026)
 - [Physically Typed and Geometry-Aware Representations for Earth Foundation Models](https://arxiv.org/abs/2609.13868) (2026)
@@ -239,6 +241,7 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 - [Machine learning techniques for rainfall prediction: a systematic literature review](https://doi.org/10.11591/ijai.v15.i4.pp3441-3451) (2026)
 - [Dynamical-bridge fidelity as a pre-release standard for hybrid seasonal tropical-cyclone forecasts](https://doi.org/10.1088/2515-7620/ae9468) (2026)
 - [CMIP6-MedPlus dataset: climate projections for the Mediterranean region using statistical downscaling](https://doi.org/10.5194/essd-2026-337) (2026)
+- [AI Model Performances Depend on Adequate Training Data Representing Diverse Physical Mechanisms](https://doi.org/10.1029/2025gl121196) (2026)
 - [Machine Learning for Heatwave Prediction: A Global Scoping Review of Environmental Predictors and Modelling Practices](https://doi.org/10.3390/forecast8040063) (2026)
 - [Review article: A decadal review (2015–2025) of machine learning models applied for satellite-based snow depth retrieval](https://doi.org/10.5194/egusphere-2026-2859) (2026)
 - [Multimodal Deep Learning in Precipitation Nowcasting: A Review from a Geometric Evolution](https://doi.org/10.1080/02564602.2026.2704967) (2026)
@@ -261,17 +264,14 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 - [PhysMetrics.Weather: An Evaluation Framework for Physical Consistency in ML Weather Models](https://arxiv.org/abs/2606.10642) (2026)
 - [MMClima: A Framework for Multimodal Climate Science Data and Evaluation](https://arxiv.org/abs/2606.10194) (2026)
 - [Temporal Coverage over Density: Parsimonious Training-Set Design for ML Climate Downscaling](https://arxiv.org/abs/2606.07898) (2026)
-- [Collection and Proposal of an Actual Meteorological Dataset from the Indian Meteorological Department for Forecasting Weather Parameters: A Comprehensive Study of Pune Region (2004-2024)](https://doi.org/10.1109/ignite69592.2026.11706527) (2026)
 - [Advancing the Scenario-to-Climate Link with Spatial Emulators in the FASTMIP Pilot Experiment](https://doi.org/10.5194/egusphere-2026-2253) (2026)
 - [Evaluating the skill of AI and physics-based models for February 2020 North Atlantic storm hazards](https://doi.org/10.1038/s44304-026-00223-6) (2026)
 - [Deep learning-based downscaling of ERA5-Land temperature to 250 m resolution over the Trentino–South Tyrol Alpine region](https://doi.org/10.1016/j.aiig.2026.100226) (2026)
-- [Evaluating the Performance of AI in Crisis Detection: A Multi-Scenario Hindcast of Extreme Precipitation Forecasts](https://doi.org/10.59297/sfbr7n23) (2026)
 - [Challenges in reliable bias correction of hydro-climatic and energy data: Towards a reconstruction of datasets](https://doi.org/10.1016/j.jag.2026.105362) (2026)
 - [Bowen ratio-constrained global dataset of bulk air–sea turbulent heat fluxes from 1993 to 2017](https://doi.org/10.5194/essd-18-3391-2026) (2026)
 - [Does Your Wildfire Prediction Model Actually Work, or Just Score Well?](https://arxiv.org/abs/2605.18911) (2026)
 - [Set Prediction for Next-Day Active Fire Forecasting](https://arxiv.org/abs/2605.10298) (2026)
-- [Global Diurnal Precipitation Cycle in the AI Model GraphCast and a 5‐km Unified Model: Challenges and Opportunities](https://doi.org/10.1029/2025gl120961) (2026)
-- [A 3-km high-resolution daily temperature dataset over the Tibetan Plateau (1993–2023) based on artificial intelligence downscaling and station calibration](https://doi.org/10.1016/j.atmosres.2026.109100) (2026)
+- [Deep Learning for Sustainable Engineering in Environmental Climate and Ecosystem Monitoring: A Comprehensive Review](https://doi.org/10.1109/icpcsn68523.2026.11543768) (2026)
 - [K-MetBench: A Multi-Dimensional Benchmark for Fine-Grained Evaluation of Expert Reasoning, Locality, and Multimodality in Meteorology](https://arxiv.org/abs/2604.24645) (2026)
 - [Deep Clustering for Climate: Analyzing Teleconnections through Learned Categorical States](https://arxiv.org/abs/2604.22909) (2026)
 - [FireSenseNet: A Dual-Branch CNN with Cross-Attentive Feature Interaction for Next-Day Wildfire Spread Prediction](https://arxiv.org/abs/2604.07675) (2026)
@@ -304,6 +304,8 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 - [Artificial intelligence and downscaling global climate model future projections](https://arxiv.org/abs/2601.00629) (2026)
 - [Creation of a Public Dataspace for Earth System Data at Jülich Supercomputing Centre](https://doi.org/10.34734/fzj-2026-02476) (2026)
 - [The AI Weather Quest: spotlighting the best of machine learning sub-seasonal prediction](https://doi.org/10.21957/0fddea4898) (2026)
+- [Evaluation of Numerical and AI Models for Forecasting Regional Flood‐Inducing Extreme Precipitation During the Meiyu Season](https://doi.org/10.1155/adme/9373465) (2026)
+- [Height-Aware Fourier Neural Operator for Near-Space Short-Term Wind Field Prediction: A Systematic Neural Operator Benchmark](https://doi.org/10.1109/tgrs.2026.3724650) (2026)
 - [Bridging Global Climate Solutions and Local Realities: Evaluating Neural Networks for High-Resolution Downscaling](https://doi.org/10.1109/access.2026.3673693) (2026)
 - [Decadal All-sky Terrestrial Precipitable Water Vapor Dataset from FengYun Microwave Imagers](https://doi.org/10.1007/s00376-025-5101-6) (2025)
 - [Applying a Standardized Benchmarking Framework to Evaluate AI Methods for Precipitation Downscaling over Australia](https://doi.org/10.1175/aies-d-25-0048.1) (2025)
@@ -313,7 +315,6 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 - [Using artificial intelligence to identify CMIP6 models from daily SLP maps](https://doi.org/10.1038/s41612-025-01246-y) (2025)
 - [BCWildfire: A Long-term Multi-factor Dataset and Deep Learning Benchmark for Boreal Wildfire Risk Prediction](https://arxiv.org/abs/2511.17597) (2025)
 - [Climate modeling for South Asia: statistical and deep learning for rainfall and temperature prediction](https://doi.org/10.1038/s41598-025-22149-1) (2025)
-- [AI-Driven Climate Forecasting: Performance Assessment and Hybrid Modeling Using AIML](https://doi.org/10.1109/iccica67008.2025.11337338) (2025)
 - [CLINB: A Climate Intelligence Benchmark for Foundational Models](https://arxiv.org/abs/2511.11597) (2025)
 - [Signature Kernel Scoring Rule: A Spatio-Temporal Diagnostic for Probabilistic Weather Forecasting](https://arxiv.org/abs/2510.19110) (2025)
 - [Assessing the Geographic Generalization and Physical Consistency of Generative Models for Climate Downscaling](https://arxiv.org/abs/2510.13722) (2025)
@@ -341,6 +342,7 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 - [RainShift: A Benchmark for Precipitation Downscaling Across Geographies](https://arxiv.org/abs/2507.04930) (2025)
 - [Covariance-informed spatiotemporal clustering improves the detection of hazardous weather events](https://doi.org/10.5194/egusphere-2025-2870) (2025)
 - [Benchmark dataset and deep learning method for global tropical cyclone forecasting](https://doi.org/10.1038/s41467-025-61087-4) (2025)
+- [Atmospheric Data Compression and Reconstruction Using Spherical GANs](https://doi.org/10.1109/ijcnn64981.2025.11227156) (2025)
 - [AIR-VIEW: The Aviation Image Repository for Visibility Estimation of Weather, A Dataset and Benchmark](https://arxiv.org/abs/2506.20939) (2025)
 - [CanadaFireSat: Toward high-resolution wildfire forecasting with multiple modalities](https://arxiv.org/abs/2506.08690) (2025)
 - [Spatiotemporal deep learning models for detection of rapid intensification in cyclones](https://arxiv.org/abs/2506.08397) (2025)
@@ -351,26 +353,32 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 - [Deep learning super-resolution for temperature data downscaling: a comprehensive study using residual networks](https://doi.org/10.3389/fclim.2025.1572428) (2025)
 - [Deep learning based reconstructions of the Atlantic meridional overturning circulation confirm twenty-first century decline](https://doi.org/10.1088/1748-9326/add7f0) (2025)
 - [Exploring Design Choices for Autoregressive Deep Learning Climate Models](https://arxiv.org/abs/2505.02506) (2025)
+- [Exploring the differences in atmospheric mesoscale kinetic energy spectra between AI based and physics based models](https://doi.org/10.1038/s41598-025-99815-x) (2025)
 - [Spatially inhomogeneous response of precipitation δ18O in China to ENSO cycles](https://doi.org/10.1038/s41612-025-01057-1) (2025)
-- [A Visual Analysis Approach for Deep Learning-based Precipitation Forecasting](https://doi.org/10.1109/pacificvis64226.2025.00047) (2025)
 - [Towards LLM Agents for Earth Observation](https://arxiv.org/abs/2504.12110) (2025)
 - [Rainy: Unlocking Satellite Calibration for Deep Learning in Precipitation](https://arxiv.org/abs/2504.10776) (2025)
+- [Construction and analysis of atmospheric visibility and fog-haze datasets in China (2001−2023) based on machine learning models](https://doi.org/10.1016/j.atmosres.2025.108160) (2025)
 - [Using large language models to produce literature reviews: Usages and systematic biases of microphysics parametrizations in 2699 publications](https://arxiv.org/abs/2503.21352) (2025)
 - [MTBench: A Multimodal Time Series Benchmark for Temporal Reasoning and Question Answering](https://arxiv.org/abs/2503.16858) (2025)
 - [Transforming Weather Data from Pixel to Latent Space](https://arxiv.org/abs/2503.06623) (2025)
+- [Forecasting drought using machine learning: a systematic literature review](https://doi.org/10.1007/s11069-025-07195-2) (2025)
 - [All-day cloud property and occurrence probability dataset based on satellite remote sensing data](https://doi.org/10.1038/s41597-025-04659-9) (2025)
+- [A Comparison of AI Weather Prediction and Numerical Weather Prediction Models for 1–7-Day Precipitation Forecasts](https://doi.org/10.1175/waf-d-24-0081.1) (2025)
 - [Selecting Observationally Constrained Global Climate Model Ensembles Using Autoencoders and Transfer Learning](https://doi.org/10.1029/2024jh000528) (2025)
 - [Assessment of machine learning-based approaches to improve sub-seasonal to seasonal forecasting of precipitation in Senegal](https://doi.org/10.5194/egusphere-2024-4040) (2025)
 - [Advancing Eurasia Fire Understanding Through Machine Learning Techniques](https://arxiv.org/abs/2502.17023) (2025)
 - [AtmosSci-Bench: Evaluating the Recent Advance of Large Language Model for Atmospheric Science](https://arxiv.org/abs/2502.01159) (2025)
 - [Using Generative Models to Produce Realistic Populations of UK Windstorms](https://arxiv.org/abs/2501.16110) (2025)
+- [Short- to Medium-Term Weather Forecast Skill of the AI-Based Pangu-Weather Model Using Automatic Weather Stations in China](https://doi.org/10.3390/rs17020191) (2025)
 - [Brief communication: Training of AI-based nowcasting models for rainfall early warning should take into account user requirements](https://doi.org/10.5194/nhess-25-41-2025) (2025)
 - [Soil surface temperature modelling under current and future climates: intercomparison of linear, sigmoid, deep learning, hybrid, and physically-based approaches at the Villars site (France)](https://doi.org/10.2139/ssrn.5761431) (2025)
 - [Artificial Intelligence-Enhanced CMIP6 Climate Projections Across the Conterminous United States](https://doi.org/10.13139/olcf/2530405) (2025)
+- [Impact of VAEformer Compression Algorithm Precision Loss on the Tropospheric Delays for Microwave Remote Sensing](https://doi.org/10.1109/tgrs.2025.3587944) (2025)
 - [Hybrid Cloud-Integrated and GAN-Based Deep Learning Framework for Prediction of Environmental Time Series](https://doi.org/10.1109/access.2025.3644389) (2025)
 - [Paraformer: Parameterization of Sub-grid Scale Processes Using Transformers](https://arxiv.org/abs/2412.16763) (2024)
 - [Deep Learning for Spatio-Temporal Fusion in Land Surface Temperature Estimation: A Comprehensive Survey, Experimental Analysis, and Future Trends](https://doi.org/10.3390/rs18020289) (2024)
 - [Global tropical cyclone size and intensity reconstruction dataset for 1959–2022 based on IBTrACS and ERA5 data](https://doi.org/10.5194/essd-16-5753-2024) (2024)
+- [Novel Insights in Deep Learning for Predicting Climate Phenomena](https://doi.org/10.1109/iccke65377.2024.10874569) (2024)
 - [Advanced Wildfire Prediction in Morocco: Developing a Deep Learning Dataset from Multisource Observations](https://arxiv.org/abs/2411.06202) (2024)
 - [Do data-driven models beat numerical models in forecasting weather extremes? A comparison of IFS HRES, Pangu-Weather, and GraphCast](https://doi.org/10.5194/gmd-17-7915-2024) (2024)
 - [Are Deep Learning Methods Suitable for Downscaling Global Climate Projections? An Intercomparison for Temperature and Precipitation over Spain](https://doi.org/10.1175/aies-d-24-0121.1) (2024)
@@ -416,10 +424,11 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 - [Sim2Real for Environmental Neural Processes](https://arxiv.org/abs/2310.19932) (2023)
 - [A Distributed Approach to Meteorological Predictions: Addressing Data Imbalance in Precipitation Prediction Models through Federated Learning and GANs](https://doi.org/10.1007/s10287-024-00504-3) (2023)
 - [CCClim - A machine-learning powered cloud class climatology](https://doi.org/10.5281/zenodo.8369201) (2023)
+- [Comparison of deep learning-based models for forecasting precipitation using era-5 and radar images](https://doi.org/10.1117/12.2679973) (2023)
+- [Meta-Learning and Self-Supervised Pretraining for Storm Event Imagery Translation](https://doi.org/10.1109/hpec58863.2023.10363448) (2023)
 - [Retrieval of surface solar irradiance from satellite imagery using machine learning: pitfalls and perspectives](https://doi.org/10.5194/amt-16-4165-2023) (2023)
 - [Finding the Perfect Fit: Applying Regression Models to ClimateBench v1.0](https://arxiv.org/abs/2308.11854) (2023)
 - [Connecting Large‐Scale Meteorological Patterns to Extratropical Cyclones in CMIP6 Climate Models Using Self‐Organizing Maps](https://doi.org/10.1029/2022ef003211) (2023)
-- [Machine learning approaches for reconstructing gridded precipitation based on multiple source products](https://doi.org/10.1016/j.ejrh.2023.101475) (2023)
 - [Comparison of machine learning statistical downscaling and regional climate models for temperature, precipitation, wind speed, humidity and radiation over Europe under present conditions](https://doi.org/10.1002/joc.8190) (2023)
 - [The skill of statistical downscaling in future climate with high-resolution climate models as pseudo-reality](https://doi.org/10.1016/j.ejrh.2023.101477) (2023)
 - [Hierarchical Autoencoder-based Lossy Compression for Large-scale High-resolution Scientific Data](https://arxiv.org/abs/2307.04216) (2023)
@@ -461,12 +470,13 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 - [Model Evaluation and Intercomparison of Marine Warm Low Cloud Fractions With Neural Network Ensembles](https://doi.org/10.1029/2021ms002625) (2021)
 - [Exploring the tropical Pacific manifold in models and observations](https://doi.org/10.1103/physrevx.12.021054) (2021)
 - [Learning and Dynamical Models for Sub-seasonal Climate Forecasting: Comparison and Collaboration](https://arxiv.org/abs/2110.05196) (2021)
-- [GPRChinaTemp1km: a high-resolution monthly air temperature dataset for China (1951–2020) based on machine learning](https://doi.org/10.5194/essd-2021-267) (2021)
 - [A Benchmark to Test Generalization Capabilities of Deep Learning Methods to Classify Severe Convective Storms in a Changing Climate](https://doi.org/10.1029/2020ea001490) (2021)
+- [Rain-F: A Fusion Dataset for Rainfall Prediction Using Convolutional Neural Network](https://doi.org/10.1109/igarss47720.2021.9555094) (2021)
 - [An Evaluation of Machine Learning and Deep Learning Models for Drought Prediction using Weather Data](https://arxiv.org/abs/2107.02517) (2021)
 - [A Comparative Study on the Skill of CMIP6 Models to Preserve Daily Spatial Patterns of Monsoon Rainfall Over India](https://doi.org/10.3389/fclim.2021.654763) (2021)
 - [Basic Statistical Estimation Outperforms Machine Learning in Monthly Prediction of Seasonal Climatic Parameters](https://doi.org/10.3390/atmos12050539) (2021)
 - [Towards a Collective Agenda on AI for Earth Science Data Analysis](https://doi.org/10.1109/mgrs.2020.3043504) (2021)
+- [Machine Learning for Earth System Observation and Prediction](https://doi.org/10.1175/bams-d-20-0307.1) (2021)
 - [Towards implementing artificial intelligence post-processing in weather and climate: proposed actions from the Oxford 2019 workshop](https://doi.org/10.1098/rsta.2020.0091) (2021)
 - [Storm-scale Ensemble-based Severe Weather Guidance: Development of an Object-based Verification Framework and Applications of Machine Learning](https://hdl.handle.net/11244/326598) (2020)
 - [Copula-based synthetic data augmentation for machine-learning emulators](https://arxiv.org/abs/2012.09037) (2020)
@@ -483,6 +493,7 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 - [Causal networks for climate model evaluation and constrained projections](https://doi.org/10.1038/s41467-020-15195-y) (2020)
 - [Image Labeler: Label Earth Science Images for Machine Learning](https://ntrs.nasa.gov/api/citations/20190033505/downloads/20190033505.pdf) (2019)
 - [Benchmarking Tropical Cyclone Rapid Intensification with Satellite Images and Attention-based Deep Models](https://arxiv.org/abs/1909.11616) (2019)
+- [Inferring causation from time series in Earth system sciences](https://doi.org/10.1038/s41467-019-10105-3) (2019)
 - [Gauge Equivariant Convolutional Networks and the Icosahedral CNN](https://arxiv.org/abs/1902.04615) (2019)
 - [Machine Learning techniques to evaluate reproducibility of climate model simulations on hybrid architectures.](http://ui.adsabs.harvard.edu/abs/2018AGUFMIN13C0687M/abstract) (2018)
 - [A test case for application of convolutional neural networks to spatio-temporal climate data: Re-identifying clustered weather patterns](https://arxiv.org/abs/1811.04817) (2018)

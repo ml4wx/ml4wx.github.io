@@ -8,7 +8,7 @@ updated every week from arXiv, journals and lab blogs.
 
 | Papers | ⭐ Highlights | Topics | Last update |
 |---:|---:|---:|---|
-| 9938 | 156 | 20 | 2026-10-22 |
+| 9922 | 156 | 20 | 2026-10-22 |
 
 ## Topics
 
@@ -16,44 +16,44 @@ updated every week from arXiv, journals and lab blogs.
 
 | Topic | Papers | ⭐ |
 |---|---:|---:|
-| [Nowcasting](lists/nowcasting.md) | 843 | 5 |
-| [Global medium-range NWP](lists/global-medium-range.md) | 309 | 19 |
-| [Probabilistic & ensemble forecasting](lists/probabilistic-ensembles.md) | 106 | 14 |
-| [Regional & km-scale models](lists/regional-km-scale.md) | 83 | 4 |
-| [Local & station forecasting](lists/local-forecasting.md) | 1144 | 0 |
-| [Sub-seasonal to seasonal](lists/s2s-seasonal.md) | 519 | 17 |
-| [Climate emulation](lists/climate-emulation.md) | 239 | 10 |
+| [Nowcasting](lists/nowcasting.md) | 841 | 5 |
+| [Global medium-range NWP](lists/global-medium-range.md) | 306 | 19 |
+| [Probabilistic & ensemble forecasting](lists/probabilistic-ensembles.md) | 103 | 14 |
+| [Regional & km-scale models](lists/regional-km-scale.md) | 84 | 4 |
+| [Local & station forecasting](lists/local-forecasting.md) | 1143 | 0 |
+| [Sub-seasonal to seasonal](lists/s2s-seasonal.md) | 521 | 17 |
+| [Climate emulation](lists/climate-emulation.md) | 238 | 10 |
 
 **Modelling chain**
 
 | Topic | Papers | ⭐ |
 |---|---:|---:|
 | [Hybrid physics-ML & parameterization](lists/hybrid-parameterization.md) | 424 | 33 |
-| [Data assimilation](lists/data-assimilation.md) | 248 | 11 |
-| [Downscaling & super-resolution](lists/downscaling.md) | 833 | 5 |
-| [Post-processing & calibration](lists/post-processing.md) | 676 | 6 |
-| [Foundation models](lists/foundation-models.md) | 50 | 3 |
+| [Data assimilation](lists/data-assimilation.md) | 249 | 11 |
+| [Downscaling & super-resolution](lists/downscaling.md) | 832 | 5 |
+| [Post-processing & calibration](lists/post-processing.md) | 679 | 6 |
+| [Foundation models](lists/foundation-models.md) | 51 | 3 |
 
 **Hazards & observations**
 
 | Topic | Papers | ⭐ |
 |---|---:|---:|
-| [Extremes & hazards](lists/extremes-hazards.md) | 1371 | 6 |
-| [Observations & remote sensing](lists/observations-remote-sensing.md) | 1132 | 0 |
+| [Extremes & hazards](lists/extremes-hazards.md) | 1366 | 6 |
+| [Observations & remote sensing](lists/observations-remote-sensing.md) | 1135 | 0 |
 
 **Science & cross-cutting**
 
 | Topic | Papers | ⭐ |
 |---|---:|---:|
-| [Climate analysis & attribution](lists/climate-analysis-attribution.md) | 573 | 4 |
-| [Explainability, uncertainty & physics](lists/xai-uq-physics.md) | 191 | 4 |
+| [Climate analysis & attribution](lists/climate-analysis-attribution.md) | 562 | 4 |
+| [Explainability, uncertainty & physics](lists/xai-uq-physics.md) | 192 | 4 |
 | [Benchmarks, datasets & evaluation](lists/benchmarks-data-eval.md) | 196 | 10 |
-| [Software, scaling & compression](lists/infra-software.md) | 86 | 4 |
+| [Software, scaling & compression](lists/infra-software.md) | 85 | 4 |
 | [Applications & impacts](lists/applications-impacts.md) | 828 | 1 |
 | [LLMs & agents](lists/llms-agents.md) | 87 | 0 |
 
 Coming later: Ocean & sea ice, Hydrology & floods, Atmospheric composition & air quality.
-Papers for these topics are collected in [`parked/`](parked/) (3320 so far) and will be
+Papers for these topics are collected in [`parked/`](parked/) (3324 so far) and will be
 classified when the topics are switched on.
 
 ## Latest highlights

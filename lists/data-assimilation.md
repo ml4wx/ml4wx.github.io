@@ -5,7 +5,7 @@ ML for data assimilation and state estimation, learned observation operators, an
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/data-assimilation/)
 
-248 papers (11 ⭐). Newest first.
+249 papers (11 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -229,6 +229,7 @@ ML for data assimilation and state estimation, learned observation operators, an
 | 2021-08-19 | [Building Tangent‐Linear and Adjoint Models for Data Assimilation With Neural Networks](https://doi.org/10.1029/2021ms002521)<br><sub>Sam Hatfield, Matthew Chantry, Peter Dominik Dueben et al. · Journal of Advances in Modeling Earth Systems</sub> | ECMWF, University of Oxford |  |
 | 2021-07-23 | [A comparison of combined data assimilation and machine learning methods for offline and online model error correction](https://doi.org/10.1016/j.jocs.2021.101468)<br><sub>Alban Farchi, Marc Bocquet, Patrick Laloyaux et al. · Journal of Computational Science</sub> | ECMWF |  |
 | 2021-07-16 | [Auto-differentiable Ensemble Kalman Filters](https://doi.org/10.1137/21m1434477)<br><sub>Yuming Chen, Daniel Sanz-Alonso, Rebecca Willett · SIAM Journal on Mathematics of Data Science</sub> |  |  |
+| 2021-06-07 | [Deep Emulators for Differentiation, Forecasting, and Parametrization in Earth Science Simulators](https://doi.org/10.1029/2021ms002554)<br><sub>Marcel Nonnenmacher, D. Greenberg · Journal of Advances in Modeling Earth Systems</sub> |  |  |
 | 2021-04-01 | [Latent Space Data Assimilation by using Deep Learning](https://doi.org/10.1002/qj.4153)<br><sub>Mathis Peyron, Anthony Fillion, Selime Gürol et al. · Quarterly Journal of the Royal Meteorological Society</sub> | NVIDIA |  |
 | 2021-03-16 | [Towards physically consistent data-driven weather forecasting: Integrating data assimilation with equivariance-preserving deep spatial transformers](https://arxiv.org/abs/2103.09360)<br><sub>Ashesh Chattopadhyay, Mustafa Mustafa, Pedram Hassanzadeh et al. · Geoscientific Model Development, 15(5), 2022, 2221-2237</sub> | Lawrence Berkeley National Laboratory / NERSC |  |
 | 2021-02-27 | [Machine Learning Techniques to Construct Patched Analog Ensembles for Data Assimilation](https://doi.org/10.1016/j.jcp.2021.110532)<br><sub>Lucia Minah Yang, Ian Grooms · Journal of Computational Physics</sub> |  |  |
@@ -265,6 +266,7 @@ ML for data assimilation and state estimation, learned observation operators, an
 - [Uncertainty-Aware End-to-End AI Weather Forecasting: Disentangling Observation and Model Contributions](https://arxiv.org/abs/2608.30795) (2026)
 - [Var-ANN Calibration of FY-3C VASS Temperature Profiles: Evaluation over the Tibetan Plateau and Application to WRF Precipitation Simulation](https://doi.org/10.3390/rs18162746) (2026)
 - [New classes of climate model emulators to improve paleoclimate reconstructions](https://doi.org/10.5194/gmd-19-7135-2026) (2026)
+- [Physics‐Aware AI‐Driven 4D Temperature Reconstruction With Enhanced Non‐Uniform Vertical Resolution in Near Space (20–80 km)](https://doi.org/10.1029/2026gl123655) (2026)
 - [Physics-informed neural networks and variants in weather and hydrological modeling: a systematic review](https://doi.org/10.1016/j.nhres.2026.07.003) (2026)
 - [Uncertainty quantification via conformal prediction in data assimilation](https://arxiv.org/abs/2606.27001) (2026)
 - [Using Distributional Regression Networks to Retrieve Cloud Properties from Solar Satellite Channels for Data Assimilation](https://arxiv.org/abs/2606.21294) (2026)
@@ -275,7 +277,6 @@ ML for data assimilation and state estimation, learned observation operators, an
 - [Towards a Foundation Model for the Martian Atmosphere](https://arxiv.org/abs/2605.28851) (2026)
 - [A robust framework for estimating precipitable water vapor based on near-infrared remote sensing data and reanalysis data fusion (NRF) method](https://doi.org/10.1016/j.jag.2026.105305) (2026)
 - [Earth-o1: A Grid-free Observation-native Atmospheric World Model](https://arxiv.org/abs/2605.06337) (2026)
-- [Physically constrained AI-driven initial conditions enhance refined weather forecasting over the Tibetan Plateau](https://doi.org/10.1016/j.aosl.2026.100831) (2026)
 - [Implementation of tangent linear and adjoint models for neural networks based on a compiler library tool](https://arxiv.org/abs/2603.16976) (2026)
 - [From Satellites to Sensors: Harnessing AI to Unify Multi-Scale Data in Modern Atmospheric Monitoring](https://doi.org/10.30564/jees.v8i2.12929) (2026)
 - [AI for atmosphere–ocean sciences: advancements, challenges and ways forward](https://doi.org/10.1093/nsr/nwag063) (2026)
@@ -309,6 +310,7 @@ ML for data assimilation and state estimation, learned observation operators, an
 - [Machine Learning-Based Algorithm for Gaofen-3 Wind Vector Retrieval With Assimilation by COAWST in China Seas](https://doi.org/10.1109/jstars.2025.3625629) (2025)
 - [Next-Generation Satellite Architecture Planning-Scientific Arguments for Fusing Hyperspectral Microwave/Infrared Data Using Machine Learning](https://doi.org/10.1109/jstars.2025.3605021) (2025)
 - [Reconstruction of tropical cyclone boundary layer wind field using physics-informed machine learning](https://doi.org/10.1063/5.0234728) (2024)
+- [Artificial Intelligence and Numerical Weather Prediction Models: A Technical Survey](https://doi.org/10.1016/j.nhres.2024.11.004) (2024)
 - [A physics-aware data-driven surrogate approach for fast atmospheric radiative transfer inversion](https://arxiv.org/abs/2410.22609) (2024)
 - [Observation impact explanation in atmospheric state estimation using hierarchical message-passing graph neural networks*](https://doi.org/10.1088/2632-2153/ad8981) (2024)
 - [Exploration of Deep-Learning-Based Error-Correction Methods for Meteorological Remote-Sensing Data: A Case Study of Atmospheric Motion Vectors](https://doi.org/10.3390/rs16183522) (2024)

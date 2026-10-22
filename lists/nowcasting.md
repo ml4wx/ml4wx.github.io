@@ -5,7 +5,7 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/nowcasting/)
 
-843 papers (5 ⭐). Newest first.
+841 papers (5 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -56,7 +56,6 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 | 2026-08-06 | [Dense-Cast: A lightweight ensemble of deep learning architectures for precipitation nowcasting](https://arxiv.org/abs/2608.06082)<br><sub>Gourav Jyoti Kalita, Hidam Kumarjit Singh</sub> |  |  |
 | 2026-08-03 | [Precipitation nowcasting based on convolutional LSTM with spatio-temporal information transformation using multi-meteorological factors](https://doi.org/10.5194/gmd-19-7089-2026)<br><sub>Dufu Liu, Feihu Huang, Peng Zheng et al. · Geoscientific model development</sub> | Tsinghua University (NowcastNet) |  |
 | 2026-08-02 | [A Dual-Branch LSTM Model for Short-Term Rainfall Forecasting Integrating GNSS-Derived PWV and Surface Meteorological Parameters](https://doi.org/10.3390/geosciences16080309)<br><sub>Mingfang Lin, Liang Zhang, Yang Liu et al. · Geosciences</sub> |  |  |
-| 2026-08-01 | [Bridging Learning and Forecasting: An Analytical Study of LSTM and CNN Machine Learning Techniques for Weather Prediction](https://doi.org/10.1109/icsist70215.2026.11706384)<br><sub>Ishant Bharol, Anita Goyal, Anmol Goyal · 2026 International Conference on Secure Information Systems and Technologies (ICSIST)</sub> |  |  |
 | 2026-08-01 | [MultiPredNet: Multi-Source Fusion and Multi-Objective Learning for Radar Echo Extrapolation](https://doi.org/10.1109/ccris71163.2026.11721786)<br><sub>Ran Zong, Jian-Hong Gan, Jun-Tao Li et al. · 2026 7th International Conference on Control, Robotics and Intelligent System (CCRIS)</sub> |  |  |
 | 2026-07-29 | [Skillful forecasting of offshore winds from satellite scatterometer constellations](https://arxiv.org/abs/2607.27152)<br><sub>Francesco Pinto, Luca Lanzilao, Paco Lopez Dekker et al.</sub> |  |  |
 | 2026-07-28 | [ConvScaleCast: a physics-informed scale-bridging framework for 0–24 h urban convective precipitation forecasting](https://doi.org/10.1038/s44304-026-00249-w)<br><sub>Leiming Ma, Hai Chu, Rui Wang et al. · npj natural hazards.</sub> |  |  |
@@ -236,7 +235,6 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 | 2025-11-12 | [Coupling strategies for precipitation nowcasting in China](https://doi.org/10.1080/02626667.2025.2587687)<br><sub>Qun Luo, Ding-Zhi Peng, Yu Gu et al. · Hydrological Sciences Journal</sub> |  |  |
 | 2025-11-12 | [FlowCast: Advancing Precipitation Nowcasting with Conditional Flow Matching](https://arxiv.org/abs/2511.09731)<br><sub>Bernardo Perrone Ribeiro, Jana Faganeli Pucer</sub> |  |  |
 | 2025-11-08 | [TA-LSTM: Temporal Attention LSTM for spatiotemporal weather prediction](https://doi.org/10.1007/s00530-025-02054-3)<br><sub>Jing Dong, Jinxiong Fan, Junzhuo Zhang et al. · Multimedia Systems</sub> |  |  |
-| 2025-11-07 | [Self-Supervised Weather Pattern Prediction with Temporal Contrastive Learning from Multi-Spectral Satellite Imagery](https://doi.org/10.1109/icrm66809.2025.11349060)<br><sub>K. Madhavan, V. Revathy, V. Govarthanan · 2025 International Conference on Robotics and Mechatronics (ICRM)</sub> |  |  |
 | 2025-11-07 | [Precipitation nowcasting of satellite data using physically-aligned neural networks](https://arxiv.org/abs/2511.05471)<br><sub>Antônio Catão, Melvin Poveda, Leonardo Voltarelli et al. · Environmental Data Science, 5 (2026), e13</sub> |  |  |
 | 2025-11-06 | [Nowcast3D: Reliable precipitation nowcasting via gray-box learning](https://arxiv.org/abs/2511.04659)<br><sub>Huaguan Chen, Wei Han, Haofei Sun et al.</sub> |  |  |
 | 2025-10-27 | [PiMMNet: Introducing Multi-Modal Precipitation Nowcasting via a Physics-informed Perspective](https://doi.org/10.1145/3746027.3755436)<br><sub>Demin Yu, Wenchuan Du, Keng-Hong Lin et al. · Proceedings of the 33rd ACM International Conference on Multimedia</sub> |  | [code](https://github.com/DeminYu98/PiMMNet) |
@@ -396,7 +394,6 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 | 2024-10-08 | [PostCast: Generalizable Postprocessing for Precipitation Nowcasting via Unsupervised Blurriness Modeling](https://arxiv.org/abs/2410.05805)<br><sub>Junchao Gong, Siwei Tu, Weidong Yang et al.</sub> |  |  |
 | 2024-10-05 | [A Hybrid Spatial Fuzzy Inference and CNN Approach for Forecasting Changes in Remote Sensing](https://doi.org/10.32913/mic-ict-research-vn.v2024.n2.1300)<br><sub>Hoang-Le Minh · Journal on Information Technologies & Communications</sub> |  |  |
 | 2024-09-26 | [MAFNet: Multimodal Asymmetric Fusion Network for Radar Echo Extrapolation](https://doi.org/10.3390/rs16193597)<br><sub>Yanle Pei, Qian Li, Yayi Wu et al. · Remote Sensing</sub> | China Meteorological Administration (CMA) |  |
-| 2024-09-22 | [Augmenting the real-time rainfall forecast skills over odisha using deep learning technique](https://doi.org/10.1007/s00477-024-02825-w)<br><sub>Omveer Sharma, D. Trivedi, S. Pattnaik et al. · Stochastic Environmental Research and Risk Assessment</sub> |  |  |
 | 2024-09-19 | [LLMDiff: Diffusion Model Using Frozen LLM Transformers for Precipitation Nowcasting](https://doi.org/10.3390/s24186049)<br><sub>Lei She, Cheng Zhang, Xin Man et al. · Sensors</sub> | China Meteorological Administration (CMA) |  |
 | 2024-09-19 | [Recurrent Convolutional Neural Networks Applied to Short-Term Weather Forecasting by Radar Images](https://doi.org/10.20944/preprints202408.1766.v1)<br><sub>Felipe Copceski Rossatto, Fabrício Pereira Härter, Elcio Hideiti Shiguemori et al. · Preprints.org</sub> |  |  |
 | 2024-09-15 | [Enhanced rainfall nowcasting of tropical cyclone by an interpretable deep learning model and its application in real-time flood forecasting](https://doi.org/10.1016/j.jhydrol.2024.131993)<br><sub>Li Liu, Xiao Liang, Yue‐Ping Xu et al. · Journal of Hydrology</sub> |  |  |
@@ -742,6 +739,7 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 | 2021-07-14 | [AutoNowP: An Approach Using Deep Autoencoders for Precipitation Nowcasting Based on Weather Radar Reflectivity Prediction](https://doi.org/10.3390/math9141653)<br><sub>G. Czibula, A. Mihai, Alexandra-Ioana Albu et al. · Mathematics</sub> |  |  |
 | 2021-07-14 | [Lightning flash rate nowcasting based on polarimetric radar data and machine learning](https://doi.org/10.1080/01431161.2021.1933243)<br><sub>Yunish Shrestha, Yan Rockee Zhang, Richard J. Doviak et al. · International Journal of Remote Sensing</sub> | NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), University of Oklahoma (AI2ES) |  |
 | 2021-07-12 | [Use of Deep Learning for Weather Radar Nowcasting](https://doi.org/10.1175/jtech-d-21-0012.1)<br><sub>Joaquin Cuomo, V. Chandrasekar · Journal of Atmospheric and Oceanic Technology</sub> | Colorado State University (incl. CIRA) |  |
+| 2021-07-11 | [Rain-F: A Fusion Dataset for Rainfall Prediction Using Convolutional Neural Network](https://doi.org/10.1109/igarss47720.2021.9555094)<br><sub>Yeji Choi, Keumgang Cha, Minyoung Back et al. · 2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS</sub> |  |  |
 | 2021-06-29 | [MSDM v1.0: A machine learning model for precipitation nowcasting over eastern China using multisource data](https://doi.org/10.5194/gmd-14-4019-2021)<br><sub>Dawei Li, Yudi Liu, Chaohui Chen · Geoscientific model development</sub> |  |  |
 | 2021-06-18 | [Modular Neural Networks with Fully Convolutional Networks for Typhoon-Induced Short-Term Rainfall Predictions](https://doi.org/10.3390/s21124200)<br><sub>Chih‐Chiang Wei, Tzu-Heng Huang · Sensors</sub> |  |  |
 | 2021-05-13 | [Precipitation Nowcasting using Data-driven Reduced-order Model](https://doi.org/10.36227/techrxiv.14540343)<br><sub>Divya S Vidyadharan, Aaron Xavier, Blossom Treesa Bastian et al.</sub> |  |  |
@@ -887,7 +885,6 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 - [Pseudo‐Radar Reflectivity by Applying U‐Net Models to Global Passive Microwave Brightness Temperatures](https://doi.org/10.1029/2026jd046570) (2026)
 - [Advances in deep learning applications to severe convective weather forecasting: rainstorms, hail, thunderstorm winds and tornadoes](https://doi.org/10.3389/feart.2026.1787965) (2026)
 - [Interpretable rainfall modelling reveals rapid reorganisation of Amazonian rainfall under vegetation loss](https://arxiv.org/abs/2605.10948) (2026)
-- [Cloudburst Prediction System using Real-Time Data and Machine Learning](https://doi.org/10.1109/icoei68323.2026.11542017) (2026)
 - [Review of Research on Multimodal Data Fusion Methods in Meteorology](https://doi.org/10.3778/j.issn.1673-9418.2508007) (2026)
 - [Characterization and forecasting of national-scale solar power ramp events](https://doi.org/10.1016/j.egyai.2026.100918) (2026)
 - [A coupled rainfall prediction model based on Hybrid CNN-Differential Transformer](https://doi.org/10.21203/rs.3.rs-8945635/v1) (2026)
@@ -896,12 +893,14 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 - [A Short-Term Photovoltaic Power Prediction Based on Multidimensional Feature Fusion of Satellite Cloud Images](https://doi.org/10.3390/pr14050846) (2026)
 - [A physics-informed machine learning method for short-term solar radiation forecast with satellite-derived cloud optical depth](https://doi.org/10.1016/j.apenergy.2025.127284) (2026)
 - [Station2Radar: query conditioned gaussian splatting for precipitation field](https://arxiv.org/abs/2603.00418) (2026)
+- [Cost‐effective hybrid EnVar for convective‐scale data assimilation through machine‐learning‐aided background error covariances](https://doi.org/10.1002/qj.70152) (2026)
 - [Meteorological data and Sky Images meets Neural Models for Photovoltaic Power Forecasting](https://arxiv.org/abs/2602.15782) (2026)
 - [Snow or rain? hybrid AI deciphers surface precipitation phase from satellite observations](https://doi.org/10.1038/s41467-026-69487-w) (2026)
 - [A variable-resolution unstructured spatio-temporal graph neural network: an application to very short-range weather forecasting in Guangdong, China](https://doi.org/10.1186/s40562-026-00460-7) (2026)
 - [SynQPF‐Net: Short‐Term Precipitation Forecasts by Integrating GraphCast Predictions and High‐Resolution Observational Analyses](https://doi.org/10.1029/2025jh000907) (2026)
 - [A comprehensive review of deep learning for solar nowcasting: Enhancing accuracy, reliability, and interpretability](https://doi.org/10.1016/j.apenergy.2026.127378) (2026)
 - [Intraday spatiotemporal PV power prediction at national scale using satellite-based solar forecast models](https://doi.org/10.1016/j.egyai.2026.100786) (2026)
+- [Local Precipitation Forecasting Using Observation Feedback from IoT Rain Gauge](https://doi.org/10.1145/3737611.3776615) (2026)
 - [Enhancing Short-Term Precipitation Forecasting Using Graph Neural Network Based Weather Prediction with Machine Learning Based Post-Processing](https://doi.org/10.2139/ssrn.7308276) (2026)
 - [CycloneSTGNN: A Physics-Informed Spatio-Temporal Graph Neural Network for Tropical Cyclone Intensity Prediction and Rapid Intensification Detection](https://doi.org/10.2139/ssrn.6438462) (2026)
 - [Segmentation of Convective Initiation Based on Spatio-Temporal Feature Joint Modeling](https://doi.org/10.14569/ijacsa.2026.0170331) (2026)
@@ -909,21 +908,24 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 - [Physics-Data-Coupled Network for Typhoon Satellite Cloud Image Sequence Prediction](https://doi.org/10.1109/tgrs.2026.3736649) (2026)
 - [Physics-Enhanced Multistage Tornado Prediction Network Using Doppler Radar Data](https://doi.org/10.1109/tgrs.2026.3705532) (2026)
 - [SRDiff: A Cross-Modal Diffusion Model for Satellite-to-Radar Translation in Precipitation Nowcasting](https://doi.org/10.1109/tgrs.2026.3686188) (2026)
+- [Self-Supervised Temporal Super-Resolution Framework With METEOR-Net for Enhancing Convective Process Reconstruction in Geostationary Satellite Cloud Data](https://doi.org/10.1109/tgrs.2026.3677111) (2026)
 - [Attention-Based Deep Fusion Convolutional Neural Network for Geostationary Satellite Rainfall Estimates Over Taiwan: Model Development](https://doi.org/10.1109/jstars.2026.3715818) (2026)
 - [Direct Normal Irradiance Nowcasting Using Deep Learning Networks With All-Sky Infrared Images](https://doi.org/10.1109/access.2026.3700958) (2026)
 - [A Regional Benchmark for Deep Learning-Based Hourly Precipitation Nowcasting in Latin America](https://doi.org/10.1109/access.2026.3670767) (2026)
 - [A Hybrid Spatio‐Temporal Deep Learning Framework for Short‐Term Solar Power Forecasting Using Satellite Imagery Data: A Case Study in Hanoi, Vietnam](https://doi.org/10.1049/rpg2.70250) (2026)
 - [Competitive Multi‐Agent Graph Modelling and Fuzzy Decision Control for Thunderstorm Gale Forecasting](https://doi.org/10.1049/cth2.70162) (2026)
-- [Advances in Tropical Cyclone Monitoring and Forecasting in Hong Kong Using Ensemble Predictions and Artificial Intelligence](https://doi.org/10.1016/j.tcrr.2026.01.002) (2026)
 - [Lightweight Spatiotemporal Network With Channel Attention and Multi‐Branch Fusion for Short‐Term Typhoon Wind Field Prediction](https://doi.org/10.1002/met.70153) (2026)
 - [Omni-Weather: A Unified Multimodal Model for Weather Radar Understanding and Generation](https://arxiv.org/abs/2512.21643) (2025)
+- [Artificial Intelligence-Based Large Weather Models: Advances, Comparisons, and Prospects](https://doi.org/10.1145/3788731.3788761) (2025)
 - [Hybrid EfficientNet-B0 and Bidirectional LSTM Framework for Solar Irradiance Nowcasting and Multi-Step Forecasting Using Advanced Infrared Image Preprocessing](https://doi.org/10.56726/irjmets86986) (2025)
 - [A systematic review of solar irradiance forecasting across time horizons using physical, satellite, and AI-based methods](https://doi.org/10.1016/j.solcom.2025.100154) (2025)
 - [Interpretable transformer based intra-day solar forecasting with spatiotemporal satellite and numerical weather prediction inputs](https://doi.org/10.1016/j.egyai.2025.100667) (2025)
 - [A curated UK rain radar data set for training and benchmarking nowcasting models](https://arxiv.org/abs/2512.17924) (2025)
 - [Enhancing Production of Synthetic Radar Images from Geostationary Satellite Observations through Generative Diffusion Models](https://doi.org/10.1175/aies-d-25-0016.1) (2025)
+- [A Multitropical Cyclone Trajectory Prediction Method Based on Density Maps With Memory and Data Fusion](https://doi.org/10.1109/tai.2025.3564911) (2025)
 - [Fog Monitoring through Machine Learning of Signal Attenuation Data from Microwave Links from Cellular Communication Networks](https://doi.org/10.5194/egusphere-2025-2634) (2025)
 - [Temporal super-resolution reconstruction of weather radar echoes using a deep learning approach](https://doi.org/10.1016/j.eswa.2025.130189) (2025)
+- [Self-Supervised Weather Pattern Prediction with Temporal Contrastive Learning from Multi-Spectral Satellite Imagery](https://doi.org/10.1109/icrm66809.2025.11349060) (2025)
 - [Artificial Intelligence for Climate Action: Opportunities and Challenges](https://doi.org/10.1109/aipe67885.2025.00015) (2025)
 - [Learning to Predict the Unpredictable: Deep Models for Severe Convective Weather](https://doi.org/10.61173/sqngs438) (2025)
 - [A hybrid deep learning and rule-based model for smart weather forecasting and crop recommendation using satellite imagery](https://doi.org/10.1038/s41598-025-21506-4) (2025)
@@ -933,6 +935,7 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 - [Probability calibration for precipitation nowcasting](https://arxiv.org/abs/2510.00594) (2025)
 - [An In-Depth Analysis of Approaches for Forecasting Extreme Rainfall Events Leveraging Artificial Intelligence, Machine Learning, and Deep Learning Techniques](https://doi.org/10.1007/s41748-025-00813-w) (2025)
 - [Unsupervised concept discovery for deep weather forecast models with high-resolution radar data](https://doi.org/10.1371/journal.pclm.0000633) (2025)
+- [Spatiotemporal solar radiation forecasting driven by satellite-based and reanalysis data for distributed PV integration using fully-convolutional neural network](https://doi.org/10.1016/j.renene.2025.124556) (2025)
 - [Evaluating wind persistence and nowcasting of wind in aviation services: Harnessing deep learning for enhanced terminal aerodrome forecast](https://doi.org/10.1007/s00704-025-05698-3) (2025)
 - [Exploring Multimodal AI Reasoning for Meteorological Forecasting from Skew-T Diagrams](https://arxiv.org/abs/2508.12198) (2025)
 - [Divergent Sounding‐Derived Precursor Pathways Enable Discrimination of Dry Versus Wet Severe Convective Winds](https://doi.org/10.1029/2025gl117491) (2025)
@@ -948,10 +951,12 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 - [Lighting the Night with Generative Artificial Intelligence](https://arxiv.org/abs/2506.22511) (2025)
 - [Forecasting Intense Radar Reflectivity Using Machine Learning and Deep Learning Algorithms](https://doi.org/10.1002/joc.8919) (2025)
 - [Ultra-Short-Term Solar Power Prediction Using Sky Image Sequences by a Residual Vision Reformer](https://doi.org/10.1109/tste.2025.3575520) (2025)
+- [Improving Doppler Radar Precipitation Prediction with Citizen Science Rain Gauges and Deep Learning](https://doi.org/10.3390/s25123719) (2025)
 - [WoFSCast: A Machine Learning Model for Predicting Thunderstorms at Watch‐to‐Warning Scales](https://doi.org/10.1029/2024gl112383) (2025)
 - [Transformers Applied to Short-term Solar PV Power Output Forecasting](http://arxiv.org/abs/2505.03188) (2025)
 - [Precipitation Spatio-Temporal Forecasting in China via DC-CNN-BiLSTM](https://doi.org/10.3390/w17091381) (2025)
 - [WaveHiTS: Wavelet-Enhanced Hierarchical Time Series Modeling for Wind Direction Nowcasting in Eastern Inner Mongolia](https://arxiv.org/abs/2504.06532) (2025)
+- [Advancing timely satellite precipitation for IMERG-ER using GOES-16 data and a U-net convolutional neural network modelling approach](https://doi.org/10.1016/j.envsoft.2025.106457) (2025)
 - [Deep learning-based identification of precipitation clouds from all-sky camera data for observatory safety](https://arxiv.org/abs/2503.18670) (2025)
 - [Cell-tracking-based framework for assessing nowcasting model skill in reproducing growth and decay of convective rainfall](https://doi.org/10.5194/gmd-18-1851-2025) (2025)
 - [Real-time temperature nowcasting using deep learning models across multiple locations](https://doi.org/10.1007/s40808-025-02353-8) (2025)
@@ -967,7 +972,6 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 - [Su3plus: An Enhanced Swin-Unet Architecture for Synthesizing Vertically Integrated Liquid from Multiple Meteorological Satellites](https://doi.org/10.2139/ssrn.5079409) (2025)
 - [FEMUS‐Nowcast: A Robust Deep Learning Model for Sky Image–Based Short‐Term Solar Forecasting Under Adversarial Attacks](https://doi.org/10.1155/er/8286945) (2025)
 - [SU3plus: An Enhanced Swin-UNet for Synthesizing Vertically Integrated Liquid From Multiple Meteorological Satellite Data](https://doi.org/10.1109/tgrs.2025.3582165) (2025)
-- [IMERG-Like Precipitation Retrieval From Geo-Kompsat-2A Observations Using Conditional Generative Adversarial Networks](https://doi.org/10.1109/jstars.2025.3575763) (2025)
 - [A Strategy to set up Test Dataset and Evaluation Benchmark for Radar Nowcasting of Precipitation in Italy](https://doi.org/10.1109/jstars.2025.3568185) (2025)
 - [An object‐based method to study the life cycle of mesoscale convective systems and their environment from cloud‐resolving AROME‐France simulations](https://doi.org/10.1002/qj.4919) (2025)
 - [Forecasting of Local Lightning Using Spatial–Channel-Enhanced Recurrent Convolutional Neural Network](https://doi.org/10.3390/atmos15121478) (2024)
@@ -979,7 +983,9 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 - [Supervised Learning-Based Prediction of Lightning Probability in the Warm Season](https://doi.org/10.3390/rs16193621) (2024)
 - [A U-Net Retrieval of Tropical Cyclone Inner-Core Wind Fields from Microwave and Infrared Satellite Imagery](https://doi.org/10.1175/aies-d-23-0084.1) (2024)
 - [Machine learning forecast of surface solar irradiance from meteo satellite data](https://doi.org/10.1016/j.rse.2024.114431) (2024)
+- [Augmenting the real-time rainfall forecast skills over odisha using deep learning technique](https://doi.org/10.1007/s00477-024-02825-w) (2024)
 - [Data interpolation methods with the UNet-based model for weather forecast](https://doi.org/10.1007/s41060-024-00611-z) (2024)
+- [A review of distributed solar forecasting with remote sensing and deep learning](https://doi.org/10.1016/j.rser.2024.114391) (2024)
 - [SRViT: Vision Transformers for Estimating Radar Reflectivity from Satellite Observations at Scale](https://arxiv.org/abs/2406.16955) (2024)
 - [M4Fog: A Global Multi-Regional, Multi-Modal, and Multi-Stage Dataset for Marine Fog Detection and Forecasting to Bridge Ocean and Atmosphere](https://arxiv.org/abs/2406.13317) (2024)
 - [Time-Series Embeddings from Language Models: A Tool for Wind Direction Nowcasting](https://doi.org/10.1007/s13351-024-3151-9) (2024)
@@ -997,13 +1003,13 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 - [Solar PV Generation Prediction Based on Multisource Data Using ROI and Surrounding Area](https://doi.org/10.1109/tgrs.2024.3392337) (2024)
 - [Temporal Super-Resolution, Ground Adjustment, and Advection Correction of Radar Rainfall Using 3-D-Convolutional Neural Networks](https://doi.org/10.1109/tgrs.2024.3371577) (2024)
 - [Radar-SR3: A Weather Radar Image Super-Resolution Generation Model Based on SR3](https://doi.org/10.3390/atmos15010040) (2023)
-- [Improving Radar Reflectivity Reconstruction with Himawari-9 and UNet++ for Off-Shore Weather Monitoring](https://doi.org/10.20944/preprints202310.0956.v1) (2023)
 - [SAIBench: A Structural Interpretation of AI for Science Through Benchmarks](https://arxiv.org/abs/2311.17869) (2023)
 - [Machine Learning Methods Based on Storm Surge Disaster Loss in Computing Applications](https://ijisae.org/index.php/IJISAE/article/view/3900) (2023)
 - [Improving classification‐based nowcasting of radiation fog with machine learning based on filtered and preprocessed temporal data](https://doi.org/10.1002/qj.4619) (2023)
 - [Evaluation of a Probabilistic Subfreezing Road Temperature Nowcast System Based on Machine Learning](https://doi.org/10.1175/waf-d-23-0137.1) (2023)
 - [RLNformer: A Rainfall Levels Nowcasting Model Based on Conv1D_Transformer for the Northern Xinjiang Area of China](https://doi.org/10.3390/w15203650) (2023)
 - [Forecasting Tropical Cyclones with Cascaded Diffusion Models](https://arxiv.org/abs/2310.01690) (2023)
+- [Espresso: A Global Deep Learning Model to Estimate Precipitation from Satellite Observations](https://doi.org/10.3390/meteorology2040025) (2023)
 - [Balancing Computational Efficiency and Forecast Error in Machine Learning-based Time-Series Forecasting: Insights from Live Experiments on Meteorological Nowcasting](https://arxiv.org/abs/2309.15207) (2023)
 - [Advances in solar forecasting: Computer vision with deep learning](https://doi.org/10.1016/j.adapen.2023.100150) (2023)
 - [A Deep Learning-Based Algorithm for Identifying Precipitation Clouds Using Fengyun-4A Satellite Observation Data](https://doi.org/10.3390/s23156832) (2023)
@@ -1012,20 +1018,19 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 - [Unsupervised Clustering of Geostationary Satellite Cloud Properties for Estimating Precipitation Probabilities of Tropical Convective Clouds](https://doi.org/10.1175/jamc-d-22-0175.1) (2023)
 - [Multiscale Representation of Radar Echo Data Retrieved through Deep Learning from Numerical Model Simulations and Satellite Images](https://doi.org/10.3390/rs15143466) (2023)
 - [Improving Solar Radiation Nowcasts by Blending Data-Driven, Satellite-Images-Based and All-Sky-Imagers-Based Models Using Machine Learning Techniques](https://doi.org/10.3390/rs15092328) (2023)
-- [STACnovGRU: weather forecasting based on spatio-temporal adaptive convolutional GRU](https://doi.org/10.1117/12.2671060) (2023)
 - [Tropical Cyclone Identification and Alert System using AlexNet and Deep CNN](https://doi.org/10.36948/ijfmr.2023.v05i02.2581) (2023)
 - [End-to-End Learning with Multiple Modalities for System-Optimised Renewables Nowcasting](https://arxiv.org/abs/2304.07151) (2023)
 - [Structural Forecasting for Short-Term Tropical Cyclone Intensity Guidance](https://doi.org/10.1175/waf-d-22-0111.1) (2023)
 - [ST-GRF: Spatiotemporal graph neural networks for rainfall forecasting](https://doi.org/10.1016/j.dsp.2023.103989) (2023)
 - [Xây dựng công cụ ước lượng mưa từ độ phản hồi radar bằng công nghệ AI](https://doi.org/10.36335/vnjhm.2023(747).70-80) (2023)
 - [Photovoltaic power electricity generation nowcasting combining sky camera images and learning supervised algorithms in the Southern Spain](https://doi.org/10.1016/j.renene.2023.01.111) (2023)
-- [Comprehensive Transformer-Based Model Architecture for Real-World Storm Prediction](https://doi.org/10.1007/978-3-031-43430-3_4) (2023)
 - [Tools for Extracting Spatio-Temporal Patterns in Meteorological Image Sequences: From Feature Engineering to Attention-Based Neural Networks](https://arxiv.org/abs/2210.12310) (2022)
 - [Inference from Real-World Sparse Measurements](https://arxiv.org/abs/2210.11269) (2022)
 - [Machine Learning-Based Fog Nowcasting for Aviation with the Aid of Camera Observations](https://doi.org/10.3390/atmos13101684) (2022)
 - [Comparing the carbon costs and benefits of low-resource solar nowcasting](https://arxiv.org/abs/2210.04554) (2022)
 - [Adaptive Blending of Probabilistic Precipitation Forecasts with Emphasis on Calibration and Temporal Forecast Consistency](https://doi.org/10.1175/aies-d-22-0020.1) (2022)
 - [An Improved Cluster‐Wise Typhoon Rainfall Forecasting Model Based on Machine Learning and Deep Learning Models Over the Northwestern Pacific Ocean](https://doi.org/10.1029/2022jd036603) (2022)
+- [Quantitative Precipitation Estimation Model Integrating Meteorological and Geographical Factors at Multiple Spatial Scales](https://doi.org/10.3389/feart.2022.908869) (2022)
 - [FC-ZSM: Spatiotemporal Downscaling of Rain Radar Data Using a Feature Constrained Zooming Slow-Mo Network](https://doi.org/10.3389/feart.2022.887842) (2022)
 - [Hourly rolling correction of precipitation forecast via convolutional and long short‐term memory networks](https://doi.org/10.1002/asl.1100) (2022)
 - [Combining LSTM statistical analysis with dynamical models to investigate Typhoon Mangkhut (2018)](https://doi.org/10.1002/essoar.10510756.1) (2022)
@@ -1044,9 +1049,9 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 - [Evaluation of Deep Learning-Based Neural Network Methods for Cloud Detection and Segmentation](https://doi.org/10.3390/en14196156) (2021)
 - [RAIN-F+: The Data-Driven Precipitation Prediction Model for Integrated Weather Observations](https://doi.org/10.3390/rs13183627) (2021)
 - [Reconstruction of the Radar Reflectivity of Convective Storms Based on Deep Learning and Himawari-8 Observations](https://doi.org/10.3390/rs13163330) (2021)
+- [Temperature Forecasting using Tower Networks](https://doi.org/10.1145/3463944.3469099) (2021)
 - [Deep Learning for Polarimetric Radar Quantitative Precipitation Estimation during Landfalling Typhoons in South China](https://doi.org/10.3390/rs13163157) (2021)
 - [Forecasting of Typhoon-Induced Wind-Wave by Using Convolutional Deep Learning on Fused Data of Remote Sensing and Ground Measurements](https://doi.org/10.3390/s21155234) (2021)
-- [Rain-F: A Fusion Dataset for Rainfall Prediction Using Convolutional Neural Network](https://doi.org/10.1109/igarss47720.2021.9555094) (2021)
 - [Deep Learning Based Forecasting of Indian Summer Monsoon Rainfall](https://arxiv.org/abs/2107.04270) (2021)
 - [Rainfall Rate Prediction Based on Artificial Neural Networks](https://www.jetir.org/papers/JETIR2107445.pdf) (2021)
 - [HPC cluster-based user-defined data integration platform for deep learning in geoscience applications](https://doi.org/10.1016/j.cageo.2021.104868) (2021)
@@ -1055,12 +1060,10 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 - [Estimation of Precipitation Area Using S-Band Dual-Polarization Radar Measurements](https://doi.org/10.3390/rs13112039) (2021)
 - [An investigation on deep learning and wavelet transform to nowcast wind power and wind power ramp: A case study in Brazil and Uruguay](https://doi.org/10.1016/j.energy.2021.120842) (2021)
 - [Applying machine learning methods to detect convection using Geostationary Operational Environmental Satellite-16 (GOES-16) advanced baseline imager (ABI) data](https://doi.org/10.5194/amt-14-2699-2021) (2021)
+- [PrecipGAN: Merging Microwave and Infrared Data for Satellite Precipitation Estimation Using Generative Adversarial Network](https://doi.org/10.1029/2020gl092032) (2021)
 - [Using machine learning to improve vertical profiles of temperature and moisture for severe weather nowcasting](https://doi.org/10.25675/3.04699) (2021)
-- [Applying machine learning methods to detect convection using GOES-16 ABI data](https://doi.org/10.5194/amt-2020-420) (2020)
 - [Precipitation Nowcasting Using Grid-based Data in South Korea Region](https://doi.org/10.1109/icdmw51313.2020.00099) (2020)
-- [Application of random forest algorithm in hail forecasting over Shandong Peninsula](https://doi.org/10.1016/j.atmosres.2020.105093) (2020)
 - [T$^2$-Net: A Semi-supervised Deep Model for Turbulence Forecasting](https://arxiv.org/abs/2010.13903) (2020)
-- [A Deep-Learning Model for Automated Detection of Intense Midlatitude Convection Using Geostationary Satellite Images](https://doi.org/10.1175/waf-d-20-0028.1) (2020)
 - [AI in Weather Radars](https://doi.org/10.1109/radarconf2043947.2020.9266442) (2020)
 - [Compute, Time and Energy Characterization of Encoder-Decoder Networks with Automatic Mixed Precision Training](https://arxiv.org/abs/2008.08062) (2020)
 - [CloudCast: A Satellite-Based Dataset and Baseline for Forecasting Clouds](https://arxiv.org/abs/2007.07978) (2020)

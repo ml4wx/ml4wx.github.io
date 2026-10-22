@@ -5,7 +5,7 @@ Forecasts from 2 weeks to about a year: sub-seasonal, seasonal and ENSO/MJO pred
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/s2s-seasonal/)
 
-519 papers (17 ⭐). Newest first.
+521 papers (17 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -27,7 +27,6 @@ Forecasts from 2 weeks to about a year: sub-seasonal, seasonal and ENSO/MJO pred
 | 2026-09-01 | [Extended‐Range Forecasting Experiments Basedon Multi‐Intelligent Models for Regional Precipitation Process](https://doi.org/10.1002/met.70245)<br><sub>Lingling Zeng, Xianyun Wu, Bin Zhu et al. · Meteorological Applications</sub> | Nanjing University of Information Science & Technology (NUIST) |  |
 | 2026-08-27 | [Enhanced Informer-Based Deep Learning for Three-Year ENSO Forecasting](https://doi.org/10.20944/preprints202608.1982.v1)<br><sub>Saghar Ganji, Mohammad Naisipour, Iraj Saeedpanah et al. · Preprints.org</sub> |  |  |
 | 2026-08-27 | [SimCast-S2S: A Computationally Efficient Diffusion Model for Subseasonal Precipitation Forecasting](https://arxiv.org/abs/2608.26594)<br><sub>Hiep V. Dang, Antonios Mamalakis</sub> |  |  |
-| 2026-08-25 | [Hybrid Swin Transformer–U‐Net Improves Subseasonal Maritime Wind Forecasts in China's Coastal Waters](https://doi.org/10.1029/2025jd045366)<br><sub>Dianhewen Liu, Wen-Yu Huang, Yong-Qian Liu et al. · Journal of Geophysical Research: Atmospheres</sub> |  |  |
 | 2026-08-19 | [Interpretable AI predicts a 2026 summer dry anomaly in central China](https://arxiv.org/abs/2608.19163)<br><sub>Anran Wang, Wen Shi, Yong Luo et al.</sub> | China Meteorological Administration (CMA), Microsoft Research (AI for Science), Tsinghua University (NowcastNet) |  |
 | 2026-08-17 | [Subseasonal forecasts of the MJO and convectively coupled equatorial waves in ACCESS‐S2 and GraphCast: A multi‐year analysis](https://doi.org/10.1002/qj.70293)<br><sub>Beata Latos, Hanh Nguyen, Matthew C. Wheeler et al. · Quarterly Journal of the Royal Meteorological Society</sub> | Bureau of Meteorology (Australia) |  |
 | 2026-08-14 | [Skillful and interpretable ENSO prediction via a glass-box dynamical-deep learning model](https://doi.org/10.1038/s41612-026-01513-6)<br><sub>Mingyu Wang, Jianping Li · npj Climate and Atmospheric Science</sub> |  |  |
@@ -89,6 +88,7 @@ Forecasts from 2 weeks to about a year: sub-seasonal, seasonal and ENSO/MJO pred
 | 2026-03-18 | [Hybrid Deep Learning Architectures for Multi-Horizon Precipitation Forecasting in Mountainous Regions: Systematic Comparison of Component-Combination Models in the Colombian Andes](https://doi.org/10.3390/hydrology13030098)<br><sub>Manuel Ricardo Pérez Reyes, Marco Javier Suárez Barón, Oscar García-Cabrejo · Hydrology</sub> |  |  |
 | 2026-03-16 | [Identifying key convection-sensitive oceanic regions to weaken the ENSO spring predictability barrier](https://doi.org/10.1073/pnas.2512725123)<br><sub>Zepeng Mei, Shuheng Lin, Keyan Fang et al. · Proceedings of the National Academy of Sciences</sub> | Tsinghua University (NowcastNet) |  |
 | 2026-03-16 | ⭐ [Seasonal forecasting using the GenCast probabilistic machine learning model](https://doi.org/10.1007/s00382-026-08077-4)<br><sub>Bobby Antonio, Kristian Strømmen, Hannah M. Christensen · Climate Dynamics</sub> | ECMWF, University of Oxford |  |
+| 2026-03-12 | [Assessing Subseasonal Predictions of Stratosphere‐Troposphere Coupling of GraphCast](https://doi.org/10.1029/2025jd044852)<br><sub>Zheng Wu · Journal of Geophysical Research: Atmospheres</sub> |  |  |
 | 2026-03-06 | [Assessing seasonal climate predictability using a deep learning application: NN4CAST](https://doi.org/10.5194/gmd-19-1917-2026)<br><sub>Víctor Galván Fraile, Belén Rodríguez‐Fonseca, Irene Polo et al. · Geoscientific model development</sub> |  |  |
 | 2026-03-01 | [Improving seasonal prediction skill for South China heatwaves based on circulation classification and machine learning](https://doi.org/10.1016/j.aosl.2026.100812)<br><sub>Yuan Niu, Hongyun Ma, Tingting Han et al. · Atmospheric and Oceanic Science Letters</sub> | Nanjing University of Information Science & Technology (NUIST) |  |
 | 2026-02-15 | [Distillation and Interpretability of Ensemble Forecasts of ENSO Phase using Entropic Learning](https://arxiv.org/abs/2602.16857)<br><sub>Michael Groom, Davide Bassetti, Illia Horenko et al.</sub> |  |  |
@@ -147,6 +147,7 @@ Forecasts from 2 weeks to about a year: sub-seasonal, seasonal and ENSO/MJO pred
 | 2025-11-04 | [Machine learning prediction of summer extreme precipitation days in the middle and lower Yangtze River with SHAP explanation](https://doi.org/10.1016/j.atmosres.2025.108614)<br><sub>Chunyan Xiao, Anmin Duan, Yuheng Tang et al. · Atmospheric Research</sub> |  |  |
 | 2025-11-03 | [Diffusion Models Bridge Deep Learning and Physics in ENSO Forecasting](https://arxiv.org/abs/2511.01214)<br><sub>Weifeng Xu, Xiang Zhu, Xiaoyong Li et al.</sub> |  |  |
 | 2025-11-01 | [Sub-seasonal prediction of extreme high temperature over the Yangtze River Basin based on deep learning](https://doi.org/10.1016/j.atmosres.2025.108602)<br><sub>Shifeng Pan, Zhicong Yin, Yi Fan et al. · Atmospheric Research</sub> | Institute of Atmospheric Physics, Chinese Academy of Sciences, Nanjing University of Information Science & Technology (NUIST) |  |
+| 2025-10-30 | [AI-Driven Climate Forecasting: Performance Assessment and Hybrid Modeling Using AIML](https://doi.org/10.1109/iccica67008.2025.11337338)<br><sub>Kamini Tanwar, K. Agarwal, Suman Mann · 2025 2nd International Conference on Computational Intelligence and Computing Applications (ICCICA)</sub> |  |  |
 | 2025-10-27 | [Analyzing the Indonesian Monsoon Index: A Combined Statistical and Machine Learning Approach](https://doi.org/10.18517/ijaseit.15.5.20539)<br><sub>Joko Wiratmo, Eddy Hermawan, Kristy Natasha Yohanesa et al. · International Journal on Advanced Science Engineering and Information Technology</sub> |  |  |
 | 2025-10-25 | [Overview of Brihat Samhita rainfall prediction methodology over the Indian region and its utilization by machine learning technique](https://doi.org/10.1007/s12040-025-02672-5)<br><sub>Jaya Yadav, Ashim Kumar Mitra, Kailash Chandra Tiwari · Journal of Earth System Science</sub> |  |  |
 | 2025-10-20 | [A Physics-Guided AI Cascaded Corrector Model Significantly Extends Madden-Julian Oscillation Prediction Skill](https://arxiv.org/abs/2510.21796)<br><sub>Xiao Zhou, Yuze Sun, Jie Wu et al.</sub> | China Meteorological Administration (CMA), Tsinghua University (NowcastNet) |  |
@@ -161,6 +162,7 @@ Forecasts from 2 weeks to about a year: sub-seasonal, seasonal and ENSO/MJO pred
 | 2025-10-01 | [DUNE: A Machine Learning Deep U-Net++-Based Intrinsic Forecast Approach to Monthly, Seasonal, and Annual Climate Forecasting](https://doi.org/10.1175/aies-d-24-0073.1)<br><sub>Pratik Shukla, Milton Halem · Artificial Intelligence for the Earth Systems</sub> |  |  |
 | 2025-10-01 | [Application of an Interpretable Prototypical-Part Network to Subseasonal to Seasonal Climate Prediction over North America](https://doi.org/10.1175/aies-d-24-0021.1)<br><sub>Nicolas J. Gordillo, Elizabeth A. Barnes · Artificial Intelligence for the Earth Systems</sub> | Colorado State University (incl. CIRA) |  |
 | 2025-09-25 | ⭐ [Relaxation experiments in ML-based weather prediction models to study subseasonal predictability](https://doi.org/10.22541/essoar.175883412.26972897/v1)<br><sub>Siyu Li, Juliana Dias, Benjamin John Moore et al.</sub> | Karlsruhe Institute of Technology (KIT), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
+| 2025-09-23 | [Precipitation prediction over the upper Indus Basin from large-scale circulation patterns using Gaussian processes](https://doi.org/10.1017/eds.2025.10020)<br><sub>K. Tazi, Andrew Orr, J. Hosking et al. · Environmental Data Science</sub> |  |  |
 | 2025-09-22 | [An AutoML Framework using AutoGluonTS for Forecasting Seasonal Extreme Temperatures](https://arxiv.org/abs/2509.17734)<br><sub>Pablo Rodríguez-Bocca, Guillermo Pereira, Diego Kiedanski et al.</sub> | Inria |  |
 | 2025-09-17 | [Refine Extreme Hot Day Predictions With the Sea Surface Temperature Tendency](https://doi.org/10.1029/2025gl116339)<br><sub>Tan Hui, Zhiwei Zhu, Fenghua Ling et al. · Geophysical Research Letters</sub> | Nanjing University of Information Science & Technology (NUIST), Shanghai Artificial Intelligence Laboratory |  |
 | 2025-09-16 | [Improving Indian summer monsoon rainfall prediction using deep learning up to two years in advance](https://doi.org/10.1002/qj.70023)<br><sub>Devabrat Sharma, Santu Das, Deepayan Chakraborty et al. · Quarterly Journal of the Royal Meteorological Society</sub> |  |  |
@@ -258,7 +260,6 @@ Forecasts from 2 weeks to about a year: sub-seasonal, seasonal and ENSO/MJO pred
 | 2024-10-28 | [A probabilistic forecast for multi-year ENSO using Bayesian convolutional neural network](https://doi.org/10.1088/1748-9326/ad8be1)<br><sub>P. Sreeraj, Balaji Baduru, Arya Paul et al. · Environmental Research Letters</sub> |  |  |
 | 2024-10-23 | [Advancing Subseasonal Surface Air Temperature and Heat Wave Prediction Skill in China by Incorporating Scale Interaction in a Deep Learning Model](https://doi.org/10.1029/2024gl111076)<br><sub>Jiehong Xie, Pang‐Chi Hsu, Yamin Hu et al. · Geophysical Research Letters</sub> | China Meteorological Administration (CMA) |  |
 | 2024-10-22 | [Current progress in subseasonal-to-decadal prediction based on machine learning](https://doi.org/10.1016/j.acags.2024.100201)<br><sub>Zixiong Shen, Qiming Sun, Xinyu Lu et al. · Applied Computing and Geosciences</sub> | Nanjing University of Information Science & Technology (NUIST), Shanghai Artificial Intelligence Laboratory |  |
-| 2024-10-17 | [Seasonal prediction of North Atlantic sea surface temperature anomalies using the LSTM machine learning method](https://doi.org/10.1088/1748-9326/ad880a)<br><sub>Chang Xu, Xiaoqin Yan, You-Min Tang · Environmental Research Letters</sub> |  |  |
 | 2024-10-16 | [Data-driven investigation on the boreal summer MJO predictability](https://doi.org/10.1038/s41612-024-00799-8)<br><sub>Na-Yeon Shin, Daehyun Kang, Daehyun Kim et al. · npj Climate and Atmospheric Science</sub> |  |  |
 | 2024-10-09 | [Real-time predictions of the 2023–2024 climate conditions in the tropical Pacific using a purely data-driven Transformer model](https://doi.org/10.1007/s11430-024-1396-x)<br><sub>Rong‐Hua Zhang, Lu Zhou, Chuan Gao et al. · Science China Earth Sciences</sub> | Nanjing University of Information Science & Technology (NUIST) |  |
 | 2024-10-03 | [Enhancing El Niño-Southern oscillation prediction using an attention-based sequence-to-sequence architecture](https://doi.org/10.11591/ijece.v14i6.pp7057-7066)<br><sub>Karli Eka Setiawan, Renaldy Fredyan, Islam Nur Alam · International Journal of Power Electronics and Drive Systems/International Journal of Electrical and Computer Engineering</sub> |  |  |
@@ -315,6 +316,7 @@ Forecasts from 2 weeks to about a year: sub-seasonal, seasonal and ENSO/MJO pred
 | 2024-02-06 | [Prediction of seasonal sea surface temperature based on temperature and salinity of subsurface ocean using machine learning](https://doi.org/10.1002/joc.8384)<br><sub>Sentao Wei, Chenghai Wang, Feimin Zhang et al. · International Journal of Climatology</sub> |  |  |
 | 2024-01-31 | [ML-based regionalization of climate variables to forecast seasonal precipitation for water resources management](https://doi.org/10.1088/2632-2153/ad1d04)<br><sub>Taesam Lee, Chang-Hee Won, Vijay P. Singh · Machine Learning Science and Technology</sub> |  |  |
 | 2024-01-31 | [Efficient Subseasonal Weather Forecast using Teleconnection-informed Transformers](https://arxiv.org/abs/2401.17870)<br><sub>Shan Zhao, Zhitong Xiong, Xiao Xiang Zhu</sub> | Technical University of Munich (TUM) |  |
+| 2024-01-30 | [Application of a weighted ensemble forecasting method based on online learning in subseasonal forecast in the South China](https://doi.org/10.1186/s40562-024-00319-9)<br><sub>Fei Xin, Yichen Shen, Chuhan Lu · Geoscience Letters</sub> |  |  |
 | 2024-01-17 | [Artificial intelligence predicts normal summer monsoon rainfall for India in 2023](https://doi.org/10.1038/s41598-023-44284-3)<br><sub>U. Narang, Kushal Juneja, Pankaj Upadhyaya et al. · Scientific Reports</sub> |  |  |
 | 2024-01-16 | [Rainfall forecasting at long lead times for eastern Australia using artificial neural networks](https://doi.org/10.1007/s00521-023-09386-z)<br><sub>J. Abbot · Neural Computing and Applications</sub> |  |  |
 | 2024-01-15 | [Improved prediction of extreme ENSO events using an artificial neural network with weighted loss functions](https://doi.org/10.3389/fmars.2023.1309609)<br><sub>Dong‐Hoon Kim, Il‐Ju Moon, Chaewook Lim et al. · Frontiers in Marine Science</sub> |  |  |
@@ -539,6 +541,7 @@ Forecasts from 2 weeks to about a year: sub-seasonal, seasonal and ENSO/MJO pred
 - [Stress-Testing Dynamical and Generative Downscaling Using Subseasonal Extreme Precipitation Forecasts](https://arxiv.org/abs/2609.11696) (2026)
 - [EastAsiaClimateExtremes: An AI-Ready Dataset of Weekly Atmospheric and Oceanic Extremes over East Asia for Subseasonal Prediction Research](https://arxiv.org/abs/2609.08241) (2026)
 - [Comparative Assessment of Post‐Processing Approaches for GEFSv12 Summer Maximum Temperature and Heat Extreme Forecasts Over CONUS](https://doi.org/10.1002/met.70232) (2026)
+- [Hybrid Swin Transformer–U‐Net Improves Subseasonal Maritime Wind Forecasts in China's Coastal Waters](https://doi.org/10.1029/2025jd045366) (2026)
 - [Multi-decadal evolution of ocean–monsoon teleconnections and the resurgence of ENSO influence on Indian summer monsoon rainfall](https://doi.org/10.1038/s41612-026-01497-3) (2026)
 - [Understanding and Predicting Precipitation Characteristics in the United States Through Machine Learning, Numerical Modeling and Measurements](https://doi.org/10.26076/tkqg-k909) (2026)
 - [Enhancing subseasonal 2 m temperature forecast correction and downscaling over north China based on terrain-informed deep learning](https://doi.org/10.1088/2515-7620/ae9705) (2026)
@@ -548,10 +551,10 @@ Forecasts from 2 weeks to about a year: sub-seasonal, seasonal and ENSO/MJO pred
 - [Unified Attention Recurrent Neural Network for Bias Correction of MJO Prediction](https://doi.org/10.1029/2025ms005359) (2026)
 - [NIVA: A Multimodal Foundation Model for Actionable Earth System Intelligence](https://arxiv.org/abs/2606.28546) (2026)
 - [Subseasonal Rainfall Forecasting Skill of S2S-ECMWF and Its Potential for Bias Correction Using ANN over the Central Highlands of Vietnam During the Transition from the Dry to the Rainy Season](https://doi.org/10.25073/2588-1094/vnuees.5524) (2026)
-- [A nonlinear explainable method for data-driven forecasting models in Earth system science](https://doi.org/10.1038/s41612-026-01464-y) (2026)
 - [Deep learning reveals enhanced ENSO predictability under historical anthropogenic forcing](https://doi.org/10.1126/sciadv.aec9518) (2026)
 - [Complex networks reveal oceanic drivers and extended predictability of terrestrial heat extremes](https://doi.org/10.1088/1748-9326/ae7b5b) (2026)
 - [AI輔助氣象預報——從技術革新邁入決策共生](https://doi.org/10.53106/025400022026065401002) (2026)
+- [Causal Graph Neural Networks for robust wildfire forecasting across geographic shifts](https://doi.org/10.1016/j.isprsjprs.2026.03.018) (2026)
 - [The three causal pathways of ENSO teleconnections to High Mountain Asia winter precipitation](https://doi.org/10.1007/s00382-026-08198-w) (2026)
 - [Deep learning-based forecasting provides a pathway to closing wildfire information gaps in underserved regions](https://doi.org/10.1038/s43247-026-03692-9) (2026)
 - [Gradient boosting machine for enhancing global forecast data products of seasonal precipitation: Hirmand river basin experience](https://doi.org/10.1016/j.ejrh.2026.103561) (2026)
@@ -563,7 +566,6 @@ Forecasts from 2 weeks to about a year: sub-seasonal, seasonal and ENSO/MJO pred
 - [Toward early warning of drought impacts: a framework for predicting drought impacts in the UK](https://doi.org/10.5194/nhess-26-1515-2026) (2026)
 - [Improved seasonal precipitation forecasts for the Blue Nile Basin: a deep learning approach](https://doi.org/10.3389/fclim.2026.1691030) (2026)
 - [Climate Prompting: Generating the Madden-Julian Oscillation using Video Diffusion and Low-Dimensional Conditioning](https://arxiv.org/abs/2603.21856) (2026)
-- [Assessing Subseasonal Predictions of Stratosphere‐Troposphere Coupling of GraphCast](https://doi.org/10.1029/2025jd044852) (2026)
 - [Designing probabilistic AI monsoon forecasts to inform agricultural decision-making](https://arxiv.org/abs/2603.07893) (2026)
 - [On the seasonal predictability of the 2020 North Atlantic tropical cyclone season](https://doi.org/10.1175/mwr-d-26-0045.1) (2026)
 - [Disentangling regional impacts of joint teleconnections using causal representation learning](https://doi.org/10.1175/jcli-d-25-0700.1) (2026)
@@ -581,7 +583,6 @@ Forecasts from 2 weeks to about a year: sub-seasonal, seasonal and ENSO/MJO pred
 - [Subseasonal precipitation prediction over East Asia using an adaptive bias correction model: methodology and evaluation](https://doi.org/10.1186/s40562-026-00457-2) (2026)
 - [Integrated region-specific modeling of H5 avian influenza in Asia using ENSO-based forecasts](https://doi.org/10.1016/j.onehlt.2026.101322) (2026)
 - [Explore the Ideology of Deep Learning in ENSO Forecasts](https://doi.org/10.1186/s40562-026-00504-y) (2026)
-- [Collaborative Spatio-Temporal Graph Reinforcement Learning for Multivariate Drought Forecasting](https://doi.org/10.5220/0014454700004052) (2026)
 - [Gradient boosting correction of SEAS5 monthly rainfall forecasts for 38 provinces in Indonesia: A comparison with quantile mapping](https://doi.org/10.2139/ssrn.7641892) (2026)
 - [A Global Early-Warning System for Wildfires Based on Subseasonal Climate Forecasts and Machine Learning](https://doi.org/10.13140/rg.2.2.18042.76486) (2026)
 - [Deep Learning-Based Correction of Decadal Predictions of the PDO and TAG Indices](https://doi.org/10.1109/lgrs.2026.3662257) (2026)
@@ -596,17 +597,20 @@ Forecasts from 2 weeks to about a year: sub-seasonal, seasonal and ENSO/MJO pred
 - [Compound Climate Drivers: ENSO, MJO, IOD, and NAO Synergies in Shaping Monsoon Extremes](https://doi.org/10.5281/zenodo.17841685) (2025)
 - [U-NET Deep Learning-based Downscaling to Generate High-resolution Seasonal Forecasts for Small Watersheds: A Case Study of the Nouhao Sub-basin, Burkina Faso](https://doi.org/10.9734/ijecc/2025/v15i125156) (2025)
 - [Cross-Basin Teleconnections: ENSO, MJO, IOD, and NAO as Drivers of Global Monsoon Extremes](https://doi.org/10.5281/zenodo.17729403) (2025)
+- [Climate Pattern Detection and Prediction Using Deep Learning](https://doi.org/10.1109/icstsn67075.2025.11397949) (2025)
 - [Enhancing long-lead rainfall forecasting in data-scarce large watersheds using multi-model fusion](https://doi.org/10.1016/j.ejrh.2025.102936) (2025)
 - [Emulating chemistry-climate dynamics with a linear inverse model](https://doi.org/10.5194/acp-25-15033-2025) (2025)
 - [Efficient Generative AI Boosts Probabilistic Forecasting of Sudden Stratospheric Warmings](https://arxiv.org/abs/2510.26376) (2025)
 - [Improving Subseasonal Typhoon Forecasts Using Global Ensemble Models and a Probabilistic Formation Index from Deep Learning](https://tkuir.lib.tku.edu.tw/dspace/handle/987654321/129214) (2025)
 - [OmniCast: A Masked Latent Diffusion Model for Weather Forecasting Across Time Scales](https://arxiv.org/abs/2510.18707) (2025)
+- [ViT-Koop: Vision-Transformer–Koopman Operators for Efficient Time-Series Forecasting of Earth-Observation Data](https://doi.org/10.1109/iccvw69036.2025.00296) (2025)
 - [Quantile Regression, Variational Autoencoders, and Diffusion Models for Uncertainty Quantification: A Spatial Analysis of Sub-seasonal Wind Speed Prediction](https://arxiv.org/abs/2510.16958) (2025)
 - [Season‐Net: A Deep Learning Framework for Bias Correction of Seasonal Forecasting Models](https://doi.org/10.1029/2025jh000957) (2025)
 - [Kernel And Tree-Based Time Series Forecasting Of Monthly Rainfall Using Large-Scale Climate Indices](https://doi.org/10.64252/my9n9w82) (2025)
 - [Deep learning for flash drought forecasting and interpretation](https://arxiv.org/abs/2510.02576) (2025)
 - [Fuzzy postprocessing of seasonal climate forecasts for semiarid river basins](https://doi.org/10.1002/qj.70050) (2025)
 - [Swift: An Autoregressive Consistency Model for Efficient Weather Forecasting](https://doi.org/10.1088/3049-4753/ae802a) (2025)
+- [Deep Learning Based Statistical Downscaling for Enhanced Representation of Indian Monsoon Rainfall With Subseasonal Variability and Extremes](https://doi.org/10.1029/2025jd044167) (2025)
 - [Advances in artificial intelligence to model the impact of El Niño–Southern Oscillation on crop yield variability](https://doi.org/10.1016/j.mex.2025.103650) (2025)
 - [Learning predictable and informative dynamical drivers of extreme precipitation using variational autoencoders](https://doi.org/10.5194/wcd-6-995-2025) (2025)
 - [Use of Machine Learning Techniques for Monthly Precipitation and Air Temperature Forecasting in Different Climate Regions Across Brazil](https://doi.org/10.1002/joc.70098) (2025)
@@ -664,7 +668,6 @@ Forecasts from 2 weeks to about a year: sub-seasonal, seasonal and ENSO/MJO pred
 - [Multivariate post‐processing of probabilistic sub‐seasonal weather regime forecasts](https://arxiv.org/abs/2404.01895) (2024)
 - [Efficient inference and learning of a generative model for ENSO predictions from large multi-model datasets](https://doi.org/10.1007/s00382-024-07162-w) (2024)
 - [Machine learning–based prediction of agricultural drought using global climatic indices for the Palakkad district in India](https://doi.org/10.1007/s00704-024-04883-0) (2024)
-- [Application of a weighted ensemble forecasting method based on online learning in subseasonal forecast in the South China](https://doi.org/10.1186/s40562-024-00319-9) (2024)
 - [Improving Boreal Summer Precipitation Predictions From the Global NMME Through Res34‐Unet](https://doi.org/10.1029/2023gl106391) (2024)
 - [Downscaling Seasonal Precipitation Forecasts over East Africa with Deep Convolutional Neural Networks](https://doi.org/10.1007/s00376-023-3029-2) (2024)
 - [Bias Correction of Seasonal Precipitation Prediction in Southern China: Pointwise and Spatial Corrections Using Deep Learning Methods](https://doi.org/10.1016/j.ejrh.2025.102737) (2024)

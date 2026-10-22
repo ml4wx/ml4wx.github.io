@@ -5,7 +5,7 @@ Frameworks, training and inference at scale, HPC, and compression of weather and
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/infra-software/)
 
-86 papers (4 ⭐). Newest first.
+85 papers (4 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -55,7 +55,6 @@ Frameworks, training and inference at scale, HPC, and compression of weather and
 | 2025-02-06 | [Learning low-dimensional representations of ensemble forecast fields using autoencoder-based methods](https://doi.org/10.1029/2025jh000819)<br><sub>Jieyu Chen, Kevin Höhlein, Sebastian Lerch · Journal of Geophysical Research Machine Learning and Computation</sub> | Karlsruhe Institute of Technology (KIT), Nanjing University of Information Science & Technology (NUIST), Technical University of Munich (TUM) |  |
 | 2025-01-01 | [Hymeshai: Deep Learning Enabled Three-Dimensional Adaptive Mesh Generator for High-Resolution Atmospheric Simulations](https://doi.org/10.1016/j.jcp.2026.114760)<br><sub>Ping Gan, Jinxi Li, Fangxin Fang et al. · Journal of Computational Physics</sub> | Institute of Atmospheric Physics, Chinese Academy of Sciences |  |
 | 2025-01-01 | [A NEUROMORPHIC ANALYSIS OF CLIMATE PATTERNS FOR COMPLEX ENVIRONMENTAL FRACTAL MODELING](https://doi.org/10.1142/s0218348x25401048)<br><sub>Shadi Mahmoud Faleh AlZu’bi, Tarek Ghazi Kanan, Mohammed W. Elbes et al. · Fractals</sub> |  |  |
-| 2025-01-01 | [Impact of VAEformer Compression Algorithm Precision Loss on the Tropospheric Delays for Microwave Remote Sensing](https://doi.org/10.1109/tgrs.2025.3587944)<br><sub>Jun-Sheng Ding, Cancan Xu, Wu Chen et al. · IEEE Transactions on Geoscience and Remote Sensing</sub> |  |  |
 | 2024-11-09 | [HiHa: Introducing Hierarchical Harmonic Decomposition to Implicit Neural Compression for Atmospheric Data](https://doi.org/10.1016/j.cageo.2025.106078)<br><sub>Zhewen Xu, Baoxiang Pan, Hongliang Li et al. · Computers & Geosciences</sub> | China Meteorological Administration (CMA), Institute of Atmospheric Physics, Chinese Academy of Sciences |  |
 | 2024-10-10 | [Compressing high-resolution data through latent representation encoding for downscaling large-scale AI weather forecast model](https://arxiv.org/abs/2410.09109)<br><sub>Qian Liu, Bing Gong, Xiaoran Zhuang et al.</sub> |  |  |
 | 2024-10-09 | [Exploring the design space of deep-learning-based weather forecasting systems](https://arxiv.org/abs/2410.07472)<br><sub>Shoaib Ahmed Siddiqui, Jean Kossaifi, Boris Bonev et al.</sub> | NVIDIA, University of Cambridge (Aardvark) |  |
@@ -100,6 +99,7 @@ Frameworks, training and inference at scale, HPC, and compression of weather and
 
 - [Building AI–Physics Digital Twins for Hurricanes With FourCastNet v2 and ERF](https://doi.org/10.5281/zenodo.23327490) (2026)
 - [AIGFS v1.1 Development and Performance](https://doi.org/10.25923/ypcz-c273) (2026)
+- [HeatPre: Efficient Diffusion-Inspired Precipitation Nowcasting for Edge Weather Intelligence](https://doi.org/10.1109/jiot.2026.3718038) (2026)
 - [4D Parallelism Unlocks Exascale Bayesian Neural Networks for High-Fidelity Atmospheric Modeling](https://arxiv.org/abs/2609.12815) (2026)
 - [Development and tests of machine-learned cloud droplet number concentration in a next-generation bulk microphysics scheme for operational applications](https://doi.org/10.5194/egusphere-2026-4026) (2026)
 - [A Low-Cost IoT Architecture for Micro-Zone Climate Prediction and Meteorological Forecasting](https://doi.org/10.3390/electronics15143102) (2026)
@@ -113,9 +113,11 @@ Frameworks, training and inference at scale, HPC, and compression of weather and
 - [Big Data–Enabled Early Warning Systems for Extreme Weather Events in the United States: A Deep Learning Approach](https://doi.org/10.21590/ijhit.08.01.07) (2026)
 - [Animating Petascale Time-varying Data on Commodity Hardware with LLM-assisted Scripting](https://arxiv.org/abs/2603.07053) (2026)
 - [Machine learning based radiative parameterization scheme and its performance in operational reforecast experiments](https://arxiv.org/abs/2601.13592) (2026)
+- [Integrasi Sistem IoT untuk Pemantauan Cuaca Real-Time dan Prediksi Curah Hujan berbasis LSTM](https://doi.org/10.29408/edumatic.v9i3.32425) (2025)
 - [Hyperspectral Variational Autoencoders for Joint Data Compression and Component Extraction](https://arxiv.org/abs/2511.18521) (2025)
 - [Oya: Deep Learning for Accurate Global Precipitation Estimation](https://arxiv.org/abs/2511.10562) (2025)
 - [A Python interface to the Fortran-based Parallel Data Assimilation Framework: pyPDAF v1.0.2](https://doi.org/10.5194/gmd-18-8235-2025) (2025)
+- [HOPE: an arbitrary-order non-oscillatory finite-volume shallow water dynamical core with automatic differentiation](https://doi.org/10.5194/gmd-18-8175-2025) (2025)
 - [AutoClimDS: Climate Data Science Agentic AI -- A Knowledge Graph is All You Need](https://arxiv.org/abs/2509.21553) (2025)
 - [INTERNET OF THINGS SENSOR DATA AND META-ALGORITHMIC APPROACHES FOR ADVANCED CLIMATE CHANGE-RELATED NATURAL DISASTER PREDICTION](https://doi.org/10.47163/agrociencia.v59i6.3427) (2025)
 - [CROMES v1.0: a flexible CROp Model Emulator Suite for climate impact assessment](https://doi.org/10.5194/gmd-18-5759-2025) (2025)
@@ -127,6 +129,7 @@ Frameworks, training and inference at scale, HPC, and compression of weather and
 - [ORBIT-2: Scaling Exascale Vision Foundation Models for Weather and Climate Downscaling](https://arxiv.org/abs/2505.04802) (2025)
 - [MMST-LSTM: Leveraging Radar Echo Prediction for Emerging Consumer Applications in Edge Computing](https://doi.org/10.1109/tce.2025.3566725) (2025)
 - [Integrating Machine Learning in IoT Solutions for Real-Time Weather Forecasting Systems](https://doi.org/10.18280/i2m.240203) (2025)
+- [Big Data-Driven Weather Forecasting using PySpark with AWS and ARGS Integration](https://doi.org/10.1109/scse65633.2025.11031021) (2025)
 - [WeatherMesh-3: Fast and accurate operational global weather forecasting](https://arxiv.org/abs/2503.22235) (2025)
 - [ML-AMPSIT: Machine Learning-based Automated Multi-method Parameter Sensitivity and Importance analysis Tool](https://doi.org/10.5194/gmd-18-433-2025) (2025)
 - [Utilization of a Lightweight 3D U-Net Model for Reducing Execution Time of Numerical Weather Prediction Models](https://doi.org/10.3390/atmos16010060) (2025)
@@ -136,15 +139,18 @@ Frameworks, training and inference at scale, HPC, and compression of weather and
 - [Implicit Neural Representations for Simultaneous Reduction and Continuous Reconstruction of Multi-Altitude Climate Data](https://arxiv.org/abs/2409.17367) (2024)
 - [TorchClim v1.0: a deep-learning plugin for climate model physics](https://doi.org/10.5194/gmd-17-5459-2024) (2024)
 - [A Scalable Real-Time Data Assimilation Framework for Predicting Turbulent Atmosphere Dynamics](https://arxiv.org/abs/2407.12168) (2024)
+- [A Neural-network-based Alternative Scheme to Include Nonhydrostatic Processes in an Atmospheric Dynamical Core](https://doi.org/10.1007/s00376-023-3119-1) (2024)
 - [Efficient and stable coupling of the SuperdropNet deep-learning-based cloud microphysics (v0.1.0) with the ICON climate and weather model (v2.6.5)](https://doi.org/10.5194/gmd-17-4017-2024) (2024)
 - [ORBIT: Oak Ridge Base Foundation Model for Earth System Predictability](https://arxiv.org/abs/2404.14712) (2024)
 - [HEAL-ViT: Vision Transformers on a spherical mesh for medium-range weather forecasting](https://arxiv.org/abs/2403.17016) (2024)
+- [Developing intelligent Earth System Models: An AI framework for replacing sub-modules based on incremental learning and its application](https://doi.org/10.1016/j.atmosres.2024.107306) (2024)
 - [FourCastNeXt: Optimizing FourCastNet Training for Limited Compute](https://arxiv.org/abs/2401.05584) (2024)
 - [pnnl/NEURALMIE](https://doi.org/10.11578/dc.20241111.2) (2024)
 - [Data-Driven Parameterization for A Subgrid-Scale Model: Methods for Improving Model Efficiency](https://doi.org/10.1088/3049-4753/ae6dbe) (2023)
 - [pyESDv1.0.1: an open-source Python framework for empirical-statistical downscaling of climate information](https://doi.org/10.5194/gmd-16-6479-2023) (2023)
 - [Sistem Prakiraan Cuaca Berbasis Android dengan Metode Jaringan Syaraf Tiruan Backpropagation](https://doi.org/10.37595/mediainfo.v22i2.180) (2023)
 - [A radiative transfer deep learning model coupled into WRF with a generic fortran torch adaptor](https://doi.org/10.3389/feart.2023.1149566) (2023)
+- [Implementation of a machine-learned gas optics parameterization in the ECMWF Integrated Forecasting System: RRTMGP-NN 2.0](https://doi.org/10.5194/gmd-16-3241-2023) (2023)
 - [ARMing the Edge: Designing Edge Computing–Capable Machine Learning Algorithms to Target ARM Doppler Lidar Processing](https://doi.org/10.1175/aies-d-22-0062.1) (2023)
 - [Federated Prompt Learning for Weather Foundation Models on Devices](https://arxiv.org/abs/2305.14244) (2023)
 - [WRF–ML v1.0: a bridge between WRF v4.3 and machine learning parameterizations and its application to atmospheric radiative transfer](https://doi.org/10.5194/gmd-16-199-2023) (2023)
