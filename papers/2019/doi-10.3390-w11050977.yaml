@@ -1,0 +1,65 @@
+id: doi-10.3390-w11050977
+title: Improving Monsoon Precipitation Prediction Using Combined Convolutional and Long Short Term Memory
+  Neural Network
+authors:
+- Qinghua Miao
+- Baoxiang Pan
+- Hao Eric Wang
+- Kuolin Hsu
+- Soroosh Sorooshian
+date: '2019-05-09'
+year: 2019
+venue: Water
+venue_type: journal
+ids:
+  doi: 10.3390/w11050977
+  openalex: W2928248204
+links:
+  paper: https://doi.org/10.3390/w11050977
+  pdf: https://www.mdpi.com/2073-4441/11/5/977/pdf?version=1557412675
+orgs:
+- tsinghua-university
+topic: downscaling
+topics:
+- post-processing
+type: model
+method:
+- cnn
+- rnn
+timescale:
+- medium
+spatial:
+- regional
+data:
+- era5
+- cmip
+- nwp-analysis
+status: research
+summary: CNN-LSTM statistical downscaling of ECMWF precipitation over a monsoon basin beats quantile mapping
+  and SVM, with gains up to two-week lead times.
+abstract: Precipitation downscaling is widely employed for enhancing the resolution and accuracy of precipitation
+  products from general circulation models (GCMs). In this study, we propose a novel statistical downscaling
+  method to foster GCMs’ precipitation prediction resolution and accuracy for the monsoon region. We develop
+  a deep neural network composed of a convolution and Long Short Term Memory (LSTM) recurrent module to
+  estimate precipitation based on well-resolved atmospheric dynamical fields. The proposed model is compared
+  against the GCM precipitation product and classical downscaling methods in the Xiangjiang River Basin
+  in South China. Results show considerable improvement compared to the European Centre for Medium-Range
+  Weather Forecasts (ECMWF)-Interim reanalysis precipitation. Also, the model outperforms benchmark downscaling
+  approaches, including (1) quantile mapping, (2) the support vector machine, and (3) the convolutional
+  neural network. To test the robustness of the model and its applicability in practical forecasting,
+  we apply the trained network for precipitation prediction forced by retrospective forecasts from the
+  ECMWF model. Compared to the ECMWF precipitation forecast, our model makes better use of the resolved
+  dynamical field for more accurate precipitation prediction at lead times from 1 day up to 2 weeks. This
+  superiority decreases with the forecast lead time, as the GCM’s skill in predicting atmospheric dynamics
+  is diminished by the chaotic effect. Finally, we build a distributed hydrological model and force it
+  with different sources of precipitation inputs. Hydrological simulation forced with the neural network
+  precipitation estimation shows significant advantage over simulation forced with the original ERA-Interim
+  precipitation (with NSE value increases from 0.06 to 0.64), and the performance is only slightly worse
+  than the observed precipitation forced simulation (NSE = 0.82). This further proves the value of the
+  proposed downscaling method, and suggests its potential for hydrological forecasts.
+significance: 3
+cited_by: 142
+score: 32
+highlight: false
+added: '2026-10-22'
+source: backfill

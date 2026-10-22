@@ -1,0 +1,56 @@
+id: doi-10.3390-rs11080966
+title: Neural Network Approach to Forecast Hourly Intense Rainfall Using GNSS Precipitable Water Vapor
+  and Meteorological Sensors
+authors:
+- Pedro José Benevides
+- João Catalão
+- Giovanni Nico
+date: '2019-04-23'
+year: 2019
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs11080966
+  openalex: W2941056923
+links:
+  paper: https://doi.org/10.3390/rs11080966
+  pdf: https://www.mdpi.com/2072-4292/11/8/966/pdf?version=1555999290
+topic: nowcasting
+topics:
+- extremes-hazards
+type: model
+method:
+- rnn
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- satellite
+- stations
+status: research
+summary: NARX network fuses GNSS precipitable water and station data to forecast hourly intense rain in
+  Lisbon, cutting false-positive rate to 21–36%.
+abstract: This work presents a methodology for the short-term forecast of intense rainfall based on a
+  neural network and the integration of Global Navigation and Positioning System (GNSS) and meteorological
+  data. Precipitable water vapor (PWV) derived from GNSS is combined with surface pressure, surface temperature
+  and relative humidity obtained continuously from a ground-based meteorological station. Five years of
+  GNSS data from one station in Lisbon, Portugal, are processed. Data for precipitation forecast are also
+  collected from the meteorological station. Spaceborne Spinning Enhanced Visible and Infrared Imager
+  (SEVIRI) data of cloud top measurements are also gathered, providing collocated information on an hourly
+  basis. In previous studies it was found that the time-varying PWV is correlated with rainfall and can
+  be used to detected heavy rain. However, a significant number of false positives were found, meaning
+  that the evolution of PWV does not contain enough information to infer future rain. In this work, a
+  nonlinear autoregressive exogenous neural network model (NARX) is used to process the GNSS and meteorological
+  data to forecast the hourly precipitation. The proposed methodology improves the detection of intense
+  rainfall events and reduces the number of false positives, with a good classification score varying
+  from 63% up to 72% and a false positive rate of 36% down to 21%, for the tested years in the dataset.
+  A score of 64% for intense rain events classification with 22% false positive rate is obtained for the
+  most recent years. The method also achieves an almost 100% hit rate for the rain vs no rain detection,
+  with close to no false alarms.
+significance: 3
+cited_by: 96
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

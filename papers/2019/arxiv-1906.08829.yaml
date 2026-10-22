@@ -1,0 +1,51 @@
+id: arxiv-1906.08829
+title: 'Data-driven prediction of a multi-scale Lorenz 96 chaotic system using deep learning methods:
+  Reservoir computing, ANN, and RNN-LSTM'
+authors:
+- Ashesh Chattopadhyay
+- Pedram Hassanzadeh
+- Devika Subramanian
+date: '2019-06-20'
+year: 2019
+venue: Nonlin. Processes Geophys. 2020
+venue_type: journal
+ids:
+  arxiv: '1906.08829'
+  doi: 10.5194/npg-27-373-2020
+links:
+  paper: https://arxiv.org/abs/1906.08829
+  pdf: https://arxiv.org/pdf/1906.08829
+topic: climate-emulation
+type: evaluation
+method:
+- rnn
+- classical-ml
+timescale:
+- short
+- climate
+spatial:
+- global
+data:
+- other
+status: research
+summary: Compares echo state networks, feed-forward ANNs and LSTMs on a multi-scale Lorenz 96 system;
+  reservoir computing forecasts hundreds of steps and matches PDF tails.
+abstract: 'In this paper, the performance of three deep learning methods for predicting short-term evolution
+  and for reproducing the long-term statistics of a multi-scale spatio-temporal Lorenz 96 system is examined.
+  The methods are: echo state network (a type of reservoir computing, RC-ESN), deep feed-forward artificial
+  neural network (ANN), and recurrent neural network with long short-term memory (RNN-LSTM). This Lorenz
+  96 system has three tiers of nonlinearly interacting variables representing slow/large-scale ($X$),
+  intermediate ($Y$), and fast/small-scale ($Z$) processes. For training or testing, only $X$ is available;
+  $Y$ and $Z$ are never known or used. We show that RC-ESN substantially outperforms ANN and RNN-LSTM
+  for short-term prediction, e.g., accurately forecasting the chaotic trajectories for hundreds of numerical
+  solver''s time steps, equivalent to several Lyapunov timescales. The RNN-LSTM and ANN show some prediction
+  skills as well; RNN-LSTM bests ANN. Furthermore, even after losing the trajectory, data predicted by
+  RC-ESN and RNN-LSTM have probability density functions (PDFs) that closely match the true PDF, even
+  at the tails. The PDF of the data predicted using ANN, however, deviates from the true PDF. Implications,
+  caveats, and applications to data-driven and data-assisted surrogate modeling of complex nonlinear dynamical
+  systems such as weather/climate are discussed.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

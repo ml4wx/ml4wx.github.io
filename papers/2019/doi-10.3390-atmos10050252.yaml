@@ -1,0 +1,57 @@
+id: doi-10.3390-atmos10050252
+title: Prediction of North Atlantic Oscillation Index with Convolutional LSTM Based on Ensemble Empirical
+  Mode Decomposition
+authors:
+- Shijin Yuan
+- Xiaodan Luo
+- Bin Mu
+- Jing Li
+- Guokun Dai
+date: '2019-05-07'
+year: 2019
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos10050252
+  openalex: W2944278636
+links:
+  paper: https://doi.org/10.3390/atmos10050252
+  pdf: https://www.mdpi.com/2073-4433/10/5/252/pdf?version=1558076231
+orgs:
+- fudan-university
+topic: s2s-seasonal
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- seasonal
+spatial:
+- regional
+data:
+- other
+- nwp-analysis
+status: research
+summary: EEMD-decomposed ConvLSTM forecasts the NAO index and outperforms six benchmarks and NOAA GFS
+  and MRF ensemble-mean forecasts in the reported tests.
+abstract: The North Atlantic Oscillation (NAO) is the most significant mode of the atmosphere in the North
+  Atlantic, and it plays an important role in regulating the local weather and climate and even those
+  of the entire Northern Hemisphere. Therefore, it is vital to predict NAO events. Since the NAO event
+  can be quantified by the NAO index, an effective neural network model EEMD-ConvLSTM, which is based
+  on Convolutional Long Short-Term Memory (ConvLSTM) with Ensemble Empirical Mode Decomposition (EEMD),
+  is proposed for NAO index prediction in this paper. EEMD is applied to preprocess NAO index data, which
+  are issued by the National Oceanic and Atmospheric Administration (NOAA), and NAO index data are decomposed
+  into several Intrinsic Mode Functions (IMFs). After being filtered by the energy threshold, the remaining
+  IMFs are used to reconstruct new NAO index data as the input of ConvLSTM. In order to evaluate the performance
+  of EEMD-ConvLSTM, six methods were selected as the benchmark, which included traditional models, machine
+  learning algorithms, and other deep neural networks. Furthermore, we forecast the NAO index with EEMD-ConvLSTM
+  and the Rolling Forecast (RF) and compared the results with those of Global Forecast System (GFS) and
+  the averaging of 11 Medium Range Forecast (MRF) model ensemble members (ENSM) provided by the NOAA Climate
+  Prediction Center. The experimental results show that EEMD-ConvLSTM not only has the highest reliability
+  from evaluation metrics, but also can better capture the variation trend of the NAO index data.
+significance: 3
+cited_by: 29
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill
