@@ -1,0 +1,41 @@
+[project]
+name = "ml4wx"
+version = "0.1.0"
+description = "Pipeline and site generator for ML4WX, the archive of machine learning research for weather and climate"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12"
+dependencies = [
+    "feedparser>=6.0",
+    "httpx>=0.27",
+    "jinja2>=3.1",
+    "markdown-it-py>=3.0",
+    "pydantic>=2.7",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+site = ["pagefind[extended]>=1.5"]
+
+[project.scripts]
+ml4wx = "ml4wx.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ml4wx"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,272 @@
+# Topics and facet vocabularies.
+#
+# Every paper has exactly one primary `topic` and up to two secondary `topics`.
+# Slugs are stable: never rename one, add a new topic instead.
+# `enabled: false` topics are "later": papers found for them go to parked/ without
+# LLM classification, so they can be classified when the topic is switched on.
+
+groups:
+  forecasting: Forecasting
+  chain: Modelling chain
+  hazards: Hazards & observations
+  cross: Science & cross-cutting
+  later: Later
+
+topics:
+  # --- Forecasting, by time scale -------------------------------------------
+  - slug: nowcasting
+    name: Nowcasting
+    group: forecasting
+    enabled: true
+    description: >-
+      Forecasts from minutes to about 6 hours, mostly precipitation and convection,
+      learned from radar, satellite or station data.
+    examples: [DGMR, NowcastNet, MetNet-3]
+
+  - slug: global-medium-range
+    name: Global medium-range NWP
+    group: forecasting
+    enabled: true
+    description: >-
+      Data-driven global weather models for 1 to 15 days, usually trained on reanalysis
+      (ERA5), deterministic or with a single best estimate.
+    examples: [FourCastNet, Pangu-Weather, GraphCast, FengWu, FuXi, AIFS, Aurora]
+
+  - slug: probabilistic-ensembles
+    name: Probabilistic & ensemble forecasting
+    group: forecasting
+    enabled: true
+    description: >-
+      ML models that produce ensembles or full forecast distributions: generative models
+      (diffusion, flow matching), CRPS-trained models, learned perturbations.
+    examples: [GenCast, AIFS-CRPS, FGN]
+
+  - slug: regional-km-scale
+    name: Regional & km-scale models
+    group: forecasting
+    enabled: true
+    description: >-
+      Limited-area and regional ML weather models, convection-permitting and km-scale
+      emulators, including boundary handling and stretched grids.
+    examples: [Neural-LAM, StormCast]
+
+  - slug: s2s-seasonal
+    name: Sub-seasonal to seasonal
+    group: forecasting
+    enabled: true
+    description: >-
+      Forecasts from 2 weeks to about a year: sub-seasonal, seasonal and ENSO/MJO prediction.
+    examples: [Ham et al. 2019 ENSO, FuXi-S2S]
+
+  - slug: climate-emulation
+    name: Climate emulation
+    group: forecasting
+    enabled: true
+    description: >-
+      Emulators of climate models and long stable rollouts (decades to centuries), scenario
+      emulation, emulators of the coupled climate system.
+    examples: [ACE2, ClimateBench, cBottle, NeuralGCM climate runs]
+
+  # --- Modelling chain --------------------------------------------------------
+  - slug: hybrid-parameterization
+    name: Hybrid physics-ML & parameterization
+    group: chain
+    enabled: true
+    description: >-
+      ML inside physical models: subgrid parameterizations (convection, clouds, radiation,
+      turbulence, gravity waves), online coupling, differentiable dynamical cores.
+    examples: [NeuralGCM, ClimSim, Rasp et al. 2018]
+
+  - slug: data-assimilation
+    name: Data assimilation
+    group: chain
+    enabled: true
+    description: >-
+      ML for data assimilation and state estimation, learned observation operators, and
+      end-to-end models that forecast directly from observations.
+    examples: [FengWu-4DVar, Aardvark Weather, GraphDOP]
+
+  - slug: downscaling
+    name: Downscaling & super-resolution
+    group: chain
+    enabled: true
+    description: >-
+      Statistical and generative downscaling of weather or climate fields to higher
+      resolution, including bias-aware downscaling of climate projections.
+    examples: [CorrDiff, DeepSD]
+
+  - slug: post-processing
+    name: Post-processing & calibration
+    group: chain
+    enabled: true
+    description: >-
+      Statistical post-processing of NWP or ML forecasts: bias correction, ensemble
+      calibration, distributional regression, station forecasts.
+    examples: [Rasp & Lerch 2018]
+
+  - slug: foundation-models
+    name: Foundation models
+    group: chain
+    enabled: true
+    description: >-
+      Large pretrained models for the atmosphere or Earth system that are fine-tuned for
+      many tasks (forecasting, downscaling, other variables).
+    examples: [ClimaX, Aurora, Prithvi WxC]
+
+  # --- Hazards & observations -------------------------------------------------
+  - slug: extremes-hazards
+    name: Extremes & hazards
+    group: hazards
+    enabled: true
+    description: >-
+      Prediction and detection of extremes: tropical cyclones, heatwaves, heavy rain,
+      severe convection, hail, tornadoes, fire weather, atmospheric rivers, cold spells.
+    examples: []
+
+  - slug: observations-remote-sensing
+    name: Observations & remote sensing
+    group: hazards
+    enabled: true
+    description: >-
+      ML on satellite, radar and in-situ observations for weather and climate: retrievals,
+      precipitation estimation, cloud detection, gap filling of observations.
+    examples: []
+
+  # --- Science & cross-cutting ------------------------------------------------
+  - slug: climate-analysis-attribution
+    name: Climate analysis & attribution
+    group: cross
+    enabled: true
+    description: >-
+      ML for climate science questions: causal discovery, teleconnections, pattern
+      detection, detection and attribution, climate model evaluation.
+    examples: []
+
+  - slug: xai-uq-physics
+    name: Explainability, uncertainty & physics
+    group: cross
+    enabled: true
+    description: >-
+      Explainable AI for weather/climate, uncertainty quantification, and tests of
+      physical consistency, balance, spectra and stability of AI models.
+    examples: []
+
+  - slug: benchmarks-data-eval
+    name: Benchmarks, datasets & evaluation
+    group: cross
+    enabled: true
+    description: >-
+      Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
+    examples: [WeatherBench 2, ClimateBench, ClimSim, ChaosBench]
+
+  - slug: infra-software
+    name: Software, scaling & compression
+    group: cross
+    enabled: true
+    description: >-
+      Frameworks, training and inference at scale, HPC, and compression of weather and
+      climate data with ML.
+    examples: [Anemoi, Earth2Studio]
+
+  - slug: applications-impacts
+    name: Applications & impacts
+    group: cross
+    enabled: true
+    description: >-
+      ML weather or climate models applied to a sector: renewable energy, agriculture,
+      health, insurance, aviation. The ML-for-weather part must be central.
+    examples: []
+
+  - slug: llms-agents
+    name: LLMs & agents
+    group: cross
+    enabled: true
+    description: >-
+      Language models and agents for weather and climate science: QA, data analysis,
+      model-running agents, multimodal models that read weather fields.
+    examples: [ClimateGPT]
+
+  # --- Later (parked, not classified yet) ------------------------------------
+  - slug: ocean-seaice
+    name: Ocean & sea ice
+    group: later
+    enabled: false
+    description: Ocean-only forecasting and emulation, sea-ice prediction.
+    examples: [WenHai, XiHe, IceNet]
+
+  - slug: hydrology-floods
+    name: Hydrology & floods
+    group: later
+    enabled: false
+    description: Rainfall-runoff, streamflow, flood inundation, land hydrology.
+    examples: []
+
+  - slug: atmos-composition
+    name: Atmospheric composition & air quality
+    group: later
+    enabled: false
+    description: Air quality, aerosols and chemistry as the main target.
+    examples: []
+
+# Scope rule given to the classifier, word for word.
+scope_rule: >-
+  A paper is IN SCOPE if machine learning / AI is a main contribution AND its main target
+  is the atmosphere or the climate system (weather, climate, their extremes and
+  observations). Coupled models where the ocean is part of a weather/climate forecast
+  (e.g. ENSO, S2S) are in scope. Multi-domain models that include the atmosphere (e.g.
+  Aurora) are in scope. Fire weather and heavy-rain extremes are in scope.
+  A paper is LATER if ML is central but the main target is the ocean or sea ice only,
+  hydrology/floods/river flow, or air quality/chemistry only.
+  A paper is OUT if ML is not a main contribution (e.g. classic NWP or climate studies
+  that only mention ML), or if it is not about weather or climate at all (e.g. image
+  de-raining, "weather" in other senses, generic time series).
+
+facets:
+  type:
+    model: New model or method
+    benchmark: Benchmark or dataset
+    review: Review, survey or tutorial
+    application: Application study
+    evaluation: Evaluation or intercomparison of existing models
+    operational: Operational implementation report
+    position: Position or perspective paper
+  method:
+    transformer: Transformer / ViT
+    gnn: Graph neural network
+    neural-operator: Neural operator (FNO, SFNO, ...)
+    diffusion: Diffusion / flow matching / score-based
+    cnn: CNN / U-Net
+    rnn: RNN / LSTM / ConvLSTM
+    gan-vae: GAN or VAE
+    classical-ml: Classical ML (trees, GP, linear, kernels)
+    llm: Language model
+    physics-constrained: Physics-informed / physics-constrained
+    differentiable: Differentiable physical model
+    reinforcement-learning: Reinforcement learning
+    other: Other
+  timescale:
+    nowcast: 0–6 h
+    short: 6 h–3 days
+    medium: 3–15 days
+    s2s: 2 weeks–2 months
+    seasonal: Seasonal to annual
+    decadal: Decadal
+    climate: Climate projections / centennial
+    none: Not a forecasting paper
+  spatial:
+    global: Global
+    regional: Regional
+    local: Local / station
+  data:
+    era5: ERA5 / reanalysis
+    cmip: CMIP / climate model output
+    nwp-analysis: NWP analysis or forecasts (IFS, GFS, ...)
+    radar: Radar
+    satellite: Satellite
+    stations: Station / in-situ
+    km-scale-sim: km-scale or high-res simulation
+    other: Other
+  status:
+    research: Research
+    pre-operational: Pre-operational / experimental
+    operational: Operational

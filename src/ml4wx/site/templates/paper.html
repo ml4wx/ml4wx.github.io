@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% from "macros.html" import org_names %}
+{% block title %}{{ p.title }} · {{ site.title }}{% endblock %}
+{% block description %}{{ p.summary }}{% endblock %}
+{% block main %}
+<article class="paper" data-pagefind-body>
+  {# Search filters, sort keys and result metadata for Pagefind. Values go in the element text,
+     not the attribute, because Pagefind splits attribute values at commas. data-pagefind-ignore
+     keeps this text out of the full-text index; filters, meta and sorts are still read. #}
+  <div hidden data-pagefind-ignore>
+    <span data-pagefind-filter="kind">paper</span>
+    <span data-pagefind-filter="year">{{ p.year }}</span>
+    <span data-pagefind-filter="topic">{{ topics[p.topic].name if p.topic in topics else p.topic }}</span>
+    {% for t in p.topics if t in topics %}<span data-pagefind-filter="topic">{{ topics[t].name }}</span>{% endfor %}
+    <span data-pagefind-filter="type">{{ facets.type.get(p.type, p.type) }}</span>
+    {% for m in p.method %}<span data-pagefind-filter="method">{{ facets.method.get(m, m) }}</span>{% endfor %}
+    {% for t in p.timescale %}<span data-pagefind-filter="timescale">{{ facets.timescale.get(t, t) }}</span>{% endfor %}
+    {% for o in p.orgs if o in orgs %}<span data-pagefind-filter="lab">{{ orgs[o].name }}</span>{% endfor %}
+    <span data-pagefind-filter="venue">{{ p.venue_type | capitalize }}</span>
+    {% if p.links.code %}<span data-pagefind-filter="open">Code available</span>{% endif %}
+    {% if p.highlight %}<span data-pagefind-filter="highlight">★ Highlight</span>{% endif %}
+    <span data-pagefind-sort="date">{{ p.date }}</span>
+    <span data-pagefind-sort="score">{{ '%03d' % p.score }}</span>
+    <span data-pagefind-meta="date">{{ p.date.strftime('%b %Y') }}</span>
+    <span data-pagefind-meta="authors">{{ p.authors | authors_short }}</span>
+    <span data-pagefind-meta="venue">{{ p.venue or ('arXiv' if p.ids.arxiv else 'preprint') }}</span>
+    <span data-pagefind-meta="orgs">{{ org_names(p) }}</span>
+    <span data-pagefind-meta="summary">{{ p.summary }}</span>
+    {% if p.highlight %}<span data-pagefind-meta="star">1</span>{% endif %}
+  </div>
+
+  <p class="crumbs" data-pagefind-ignore>
+    {% if p.topic in topics %}<a href="/topics/{{ p.topic }}/">{{ topics[p.topic].name }}</a>{% endif %}
+    {% if p.highlight %}<span class="badge-hl">★ Highlight</span>{% endif %}
+    {% if p.classic %}<span class="badge">Classic</span>{% endif %}
+  </p>
+  <h1 data-pagefind-meta="title">{{ p.title }}</h1>
+  <p class="authors">{{ p.authors | join(", ") if p.authors | length <= 12 else (p.authors[:12] | join(", ")) ~ " et al." }}</p>
+  <p class="paper-meta" data-pagefind-ignore>
+    {{ p.venue or ("arXiv preprint" if p.ids.arxiv else "Preprint") }} · <time datetime="{{ p.date }}">{{ p.date.strftime("%d %B %Y") }}</time>
+    {% if p.orgs %} · {{ org_names(p) }}{% endif %}
+  </p>
+
+  <p class="actions" data-pagefind-ignore>
+    {% if p.links.paper %}<a class="btn" href="{{ p.links.paper }}">Paper</a>{% endif %}
+    {% if p.links.pdf %}<a class="btn" href="{{ p.links.pdf }}">PDF</a>{% endif %}
+    {% if p.links.code %}<a class="btn" href="{{ p.links.code }}">Code</a>{% endif %}
+    {% if p.links.weights %}<a class="btn" href="{{ p.links.weights }}">Weights</a>{% endif %}
+    {% if p.links.project %}<a class="btn" href="{{ p.links.project }}">Project</a>{% endif %}
+  </p>
+
+  {% if p.highlight and p.highlight_reason %}
+  <p class="why"><b data-pagefind-ignore>Why it matters.</b> {{ p.highlight_reason }}</p>
+  {% endif %}
+  <p class="tldr"><b data-pagefind-ignore>In one sentence.</b> {{ p.summary }}</p>
+  {% if p.abstract %}
+  <h2 data-pagefind-ignore>Abstract</h2>
+  <p class="abstract">{{ p.abstract }}</p>
+  {% endif %}
+
+  <h2 data-pagefind-ignore>Labels</h2>
+  <dl class="facets" data-pagefind-ignore>
+    <dt>Topic</dt><dd>{% for t in [p.topic] + p.topics if t in topics %}<a href="/topics/{{ t }}/">{{ topics[t].name }}</a>{{ ", " if not loop.last }}{% endfor %}</dd>
+    <dt>Type</dt><dd>{{ facets.type.get(p.type, p.type) }}</dd>
+    {% if p.method %}<dt>Method</dt><dd>{% for m in p.method %}{{ facets.method.get(m, m) }}{{ ", " if not loop.last }}{% endfor %}</dd>{% endif %}
+    {% if p.timescale %}<dt>Time scale</dt><dd>{% for t in p.timescale %}{{ facets.timescale.get(t, t) }}{{ ", " if not loop.last }}{% endfor %}</dd>{% endif %}
+    {% if p.spatial %}<dt>Domain</dt><dd>{% for s in p.spatial %}{{ facets.spatial.get(s, s) }}{{ ", " if not loop.last }}{% endfor %}</dd>{% endif %}
+    {% if p.data %}<dt>Data</dt><dd>{% for d in p.data %}{{ facets.data.get(d, d) }}{{ ", " if not loop.last }}{% endfor %}</dd>{% endif %}
+    <dt>Status</dt><dd>{{ facets.status.get(p.status, p.status) }}</dd>
+    <dt>Identifiers</dt><dd>
+      {% if p.ids.arxiv %}arXiv:<a href="https://arxiv.org/abs/{{ p.ids.arxiv }}">{{ p.ids.arxiv }}</a> {% endif %}
+      {% if p.ids.doi %}DOI:<a href="https://doi.org/{{ p.ids.doi }}">{{ p.ids.doi }}</a> {% endif %}
+      {% if p.ids.openalex %}OpenAlex:<a href="https://openalex.org/{{ p.ids.openalex }}">{{ p.ids.openalex }}</a>{% endif %}
+    </dd>
+    <dt>Added</dt><dd>{{ p.added }}</dd>
+  </dl>
+  <p class="fineprint" data-pagefind-ignore>Labels and summary are generated by Claude and reviewed weekly.
+    Wrong? <a href="https://github.com/{{ site.repo }}/edit/main/papers/{{ p.year }}/{{ p.id }}.yaml">Edit this entry</a>.</p>
+</article>
+{% endblock %}

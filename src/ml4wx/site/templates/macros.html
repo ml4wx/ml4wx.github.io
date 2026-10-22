@@ -1,0 +1,23 @@
+{% macro org_names(p) -%}
+{%- for o in p.orgs if o in orgs %}{{ orgs[o].name }}{{ ", " if not loop.last }}{% endfor -%}
+{%- endmacro %}
+
+{% macro card(p, show_topic=True) %}
+<article class="card{{ ' is-hl' if p.highlight }}">
+  <h3 class="card-title">
+    {% if p.highlight %}<span class="star" title="Highlight">★</span>{% endif %}
+    <a href="/papers/{{ p.id }}/">{{ p.title }}</a>
+  </h3>
+  <p class="card-meta">
+    {{ p.authors | authors_short }}
+    <span class="dot">·</span> {{ p.venue or ("arXiv" if p.ids.arxiv else "preprint") }}
+    <span class="dot">·</span> <time datetime="{{ p.date }}">{{ p.date.strftime("%b %Y") }}</time>
+  </p>
+  <p class="card-summary">{{ p.summary }}</p>
+  <p class="chips">
+    {% if show_topic and p.topic in topics %}<a class="chip chip-topic" href="/topics/{{ p.topic }}/">{{ topics[p.topic].name }}</a>{% endif %}
+    {% for o in p.orgs if o in orgs %}<a class="chip chip-org{{ ' tier1' if orgs[o].tier == 1 }}" href="/orgs/{{ o }}/">{{ orgs[o].name }}</a>{% endfor %}
+    {% if p.links.code %}<a class="chip chip-code" href="{{ p.links.code }}">code</a>{% endif %}
+  </p>
+</article>
+{% endmacro %}

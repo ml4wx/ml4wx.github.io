@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% from "macros.html" import card %}
+{% block main %}
+<section class="hero">
+  <h1>Machine learning for weather&nbsp;&amp;&nbsp;climate</h1>
+  <p class="lede">A living archive of ML and AI research for weather and climate, from nowcasting to
+    climate emulation. Searchable, filterable, and updated every week.</p>
+  <form class="hero-search" action="/explore/" role="search">
+    <label class="sr-only" for="q">Search papers</label>
+    <input id="q" name="q" type="search" placeholder="Search papers, e.g. diffusion ensemble, tropical cyclone, GraphCast" autocomplete="off">
+    <button type="submit">Search</button>
+  </form>
+  <dl class="stats">
+    <div><dt>Papers</dt><dd>{{ st.n_papers }}</dd></div>
+    <div><dt>Highlights</dt><dd>{{ st.n_highlights }}</dd></div>
+    <div><dt>Topics</dt><dd>{{ by_topic | length }}</dd></div>
+    <div><dt>Last update</dt><dd>{{ latest_added.strftime("%d %b %Y") if latest_added else "–" }}</dd></div>
+  </dl>
+</section>
+
+{% if digest %}
+<p class="notice">This week: <a href="/digests/{{ digest.week }}/">digest {{ digest.week }}</a>
+  ({{ digest.meta.papers or "?" }} new papers, {{ digest.meta.highlights or 0 }} highlights)</p>
+{% endif %}
+
+{% if highlights %}
+<section>
+  <div class="sec-head"><h2>★ Latest highlights</h2><a href="/highlights/">All highlights →</a></div>
+  <div class="grid">
+    {% for p in highlights %}{{ card(p) }}{% endfor %}
+  </div>
+</section>
+{% endif %}
+
+<section>
+  <div class="sec-head"><h2>Topics</h2><a href="/topics/">All topics →</a></div>
+  {% for gslug, gname in groups.items() if gslug != "later" %}
+  <h3 class="group">{{ gname }}</h3>
+  <ul class="topic-grid">
+    {% for t in topics.values() if t.group == gslug and t.enabled %}
+    <li><a href="/topics/{{ t.slug }}/"><span>{{ t.name }}</span><b>{{ by_topic.get(t.slug, []) | length }}</b></a></li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+</section>
+
+<section>
+  <div class="sec-head"><h2>Newest papers</h2><a href="/explore/">Explore all →</a></div>
+  <div class="list">
+    {% for p in latest %}{{ card(p) }}{% endfor %}
+  </div>
+</section>
+{% endblock %}

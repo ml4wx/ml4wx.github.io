@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ site.title }}{% endblock %}</title>
+  <meta name="description" content="{% block description %}{{ site.tagline }}{% endblock %}">
+  <link rel="icon" href="/static/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="alternate" type="application/rss+xml" title="ML4WX new papers" href="/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="ML4WX highlights" href="/highlights.xml">
+  <script>
+    try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  {% block head %}{% endblock %}
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="top">
+    <div class="wrap top-inner">
+      <a class="brand" href="/">
+        <img src="/static/icon.svg" alt="" width="26" height="26">
+        <span>ML4WX</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="/explore/" {% if nav == "explore" %}aria-current="page"{% endif %}>Explore</a>
+        <a href="/topics/" {% if nav == "topics" %}aria-current="page"{% endif %}>Topics</a>
+        <a href="/highlights/" {% if nav == "highlights" %}aria-current="page"{% endif %}>Highlights</a>
+        <a href="/orgs/" {% if nav == "orgs" %}aria-current="page"{% endif %}>Labs</a>
+        <a href="/digests/" {% if nav == "digests" %}aria-current="page"{% endif %}>Digests</a>
+        <a href="/about/" {% if nav == "about" %}aria-current="page"{% endif %}>About</a>
+      </nav>
+      <button class="theme" type="button" aria-label="Switch light or dark theme" title="Theme">
+        <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z"/></svg>
+      </button>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    {% block main %}{% endblock %}
+  </main>
+  <footer class="foot">
+    <div class="wrap foot-inner">
+      <span>ML4WX · machine learning for weather &amp; climate</span>
+      <span>
+        <a href="https://github.com/{{ site.repo }}">GitHub</a> ·
+        <a href="/feed.xml">RSS</a> ·
+        <a href="https://github.com/{{ site.repo }}/issues/new">Report a missing paper</a>
+      </span>
+    </div>
+  </footer>
+  <script>
+    document.querySelector(".theme").addEventListener("click", () => {
+      const root = document.documentElement;
+      const dark = root.dataset.theme ? root.dataset.theme === "dark"
+        : matchMedia("(prefers-color-scheme: dark)").matches;
+      root.dataset.theme = dark ? "light" : "dark";
+      try { localStorage.setItem("theme", root.dataset.theme); } catch (e) {}
+    });
+  </script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

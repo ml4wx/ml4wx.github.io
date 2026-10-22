@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% from "macros.html" import card %}
+{% set nav = "topics" %}
+{% block title %}{{ topic.name }} · {{ site.title }}{% endblock %}
+{% block description %}{{ topic.description }}{% endblock %}
+{% block main %}
+<p class="crumbs"><a href="/topics/">Topics</a></p>
+<h1 class="page-title">{{ topic.name }}</h1>
+<p class="lede">{{ topic.description }}</p>
+<p class="actions">
+  <a class="btn" href="/explore/?topic={{ topic.name | urlencode }}">Search and filter this topic</a>
+  <a class="btn" href="https://github.com/{{ site.repo }}/blob/main/lists/{{ topic.slug }}.md">Plain list on GitHub</a>
+</p>
+{% if years %}
+{% set peak = years | map(attribute=1) | max %}
+<figure class="years" aria-label="Papers per year">
+  {% for y, n in years %}
+  <div class="bar" title="{{ y }}: {{ n }} papers"><span style="height: {{ (100 * n / peak) | round(1) }}%"></span><small>{{ "'" ~ (y % 100) if years | length > 6 else y }}</small></div>
+  {% endfor %}
+  <figcaption class="muted">{{ papers | length }} papers per year</figcaption>
+</figure>
+{% endif %}
+{% set hl = papers | selectattr("highlight") | list %}
+{% if hl %}
+<h2>★ Highlights</h2>
+<div class="grid">{% for p in hl[:9] %}{{ card(p, show_topic=False) }}{% endfor %}</div>
+{% endif %}
+<h2>All papers <span class="muted">({{ papers | length }})</span></h2>
+<div class="list">{% for p in papers %}{{ card(p, show_topic=False) }}{% endfor %}</div>
+{% if also %}
+<h2>Also relevant <span class="muted">({{ also | length }})</span></h2>
+<div class="list">{% for p in also %}{{ card(p) }}{% endfor %}</div>
+{% endif %}
+{% endblock %}

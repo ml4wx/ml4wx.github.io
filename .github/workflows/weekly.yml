@@ -1,0 +1,85 @@
+name: Weekly update
+
+# Monday morning: crawl the last days, classify, open a PR with the new papers,
+# and post the digest as an issue (watchers get it by email).
+on:
+  schedule:
+    - cron: "30 7 * * 1"
+      timezone: "Europe/Zurich"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: archive-write
+  cancel-in-progress: false
+
+jobs:
+  weekly:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v7
+      - uses: ./.github/actions/setup
+        with:
+          claude: "true"
+
+      - name: Crawl, classify, export, write digest
+        id: run
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          S2_API_KEY: ${{ secrets.S2_API_KEY }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: uv run ml4wx weekly
+
+      - run: uv run ml4wx validate
+
+      - name: Open or update the pull request
+        id: pr
+        env:
+          GH_TOKEN: ${{ github.token }}
+          WEEK: ${{ steps.run.outputs.week }}
+          ADDED: ${{ steps.run.outputs.added }}
+          DIGEST: ${{ steps.run.outputs.digest }}
+        run: |
+          branch="weekly/$WEEK"
+          git config user.name "ml4wx-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$branch"
+          git add -A papers parked state lists exports digests README.md
+          if git diff --cached --quiet; then
+            echo "No changes this week."
+            exit 0
+          fi
+          git commit -q -m "Weekly update $WEEK: +$ADDED papers"
+          git push -q -f origin "$branch"
+          awk 'NR==1 && /^---$/ {fm=1; next} fm && /^---$/ {fm=0; next} !fm' "$DIGEST" | head -c 60000 > /tmp/pr-body.md
+          url=$(gh pr view "$branch" --json url -q .url 2>/dev/null || true)
+          if [ -z "$url" ]; then
+            url=$(gh pr create --base main --head "$branch" \
+              --title "Weekly update $WEEK: +$ADDED papers" --body-file /tmp/pr-body.md)
+          fi
+          echo "url=$url" >> "$GITHUB_OUTPUT"
+
+      - name: Post the digest issue
+        if: steps.pr.outputs.url != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          WEEK: ${{ steps.run.outputs.week }}
+          DIGEST: ${{ steps.run.outputs.digest }}
+          PR_URL: ${{ steps.pr.outputs.url }}
+        run: |
+          gh label create digest --color 0b6aa2 --description "Weekly digest" --force
+          title="🌦️ Weekly digest $WEEK"
+          if gh issue list --label digest --state all --search "\"$WEEK\" in:title" --json number -q '.[0].number' | grep -q .; then
+            echo "Digest issue for $WEEK exists."
+            exit 0
+          fi
+          # Drop the YAML front matter (first block between --- lines), keep the Markdown.
+          { awk 'NR==1 && /^---$/ {fm=1; next} fm && /^---$/ {fm=0; next} !fm' "$DIGEST" | head -c 60000; \
+            printf '\n\n**Review and merge:** %s\n' "$PR_URL"; } > /tmp/issue-body.md
+          gh issue create --title "$title" --label digest --body-file /tmp/issue-body.md

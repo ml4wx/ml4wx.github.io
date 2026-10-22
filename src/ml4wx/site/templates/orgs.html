@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% set nav = "orgs" %}
+{% block title %}Labs · {{ site.title }}{% endblock %}
+{% block main %}
+<h1 class="page-title">Labs and organizations</h1>
+<p class="lede">Organizations on the watchlist. Papers from tier-1 labs get a same-day alert when they
+  look important. Detection uses OpenAlex affiliations, ROR ids and affiliation text.</p>
+<ul class="org-list">
+  {% for o in org_list %}
+  <li><a href="/orgs/{{ o.slug }}/"><span>{{ o.name }}{% if o.tier == 1 %} <small class="tier">tier 1</small>{% endif %}</span>
+    <b>{{ by_org[o.slug] | length }}</b></a></li>
+  {% endfor %}
+</ul>
+{% endblock %}

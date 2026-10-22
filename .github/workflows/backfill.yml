@@ -1,0 +1,98 @@
+name: Backfill
+
+# Manual, resumable historical search. Every run continues on the `backfill` branch and keeps
+# one pull request open; merge it when the backfill is complete.
+on:
+  workflow_dispatch:
+    inputs:
+      task:
+        description: What to run
+        type: choice
+        options: [seed, backfill, snowball, judge]
+        default: backfill
+      start:
+        description: "backfill: first month (YYYY-MM-DD)"
+        default: "2018-01-01"
+      end:
+        description: "backfill: last day (YYYY-MM-DD, empty = today)"
+        default: ""
+      max_months:
+        description: "backfill: at most this many months in this run"
+        default: "120"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: archive-write
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - name: Continue on the backfill branch
+        run: |
+          git config user.name "ml4wx-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin backfill >/dev/null; then
+            git checkout -B backfill origin/backfill
+            if ! git merge -q --no-edit origin/main; then
+              # Generated files are rebuilt by `ml4wx export` at the end, and a paper added on
+              # both sides is the same paper: take main's copy for these conflicts.
+              git diff --name-only --diff-filter=U | grep -E '^(README\.md|lists/|exports/|papers/)' \
+                | xargs -r git checkout --theirs --
+              git diff --name-only --diff-filter=U | grep -E '^(README\.md|lists/|exports/|papers/)' \
+                | xargs -r git add --
+              if git diff --name-only --diff-filter=U | grep -q .; then
+                echo "::error::unresolved conflicts:"; git diff --name-only --diff-filter=U; exit 1
+              fi
+              git -c core.editor=true merge --continue
+            fi
+          else
+            git checkout -B backfill
+          fi
+      - uses: ./.github/actions/setup
+        with:
+          claude: "true"
+
+      - name: Run ${{ inputs.task }}
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          S2_API_KEY: ${{ secrets.S2_API_KEY }}
+          TASK: ${{ inputs.task }}
+          START: ${{ inputs.start }}
+          END: ${{ inputs.end }}
+          MAX_MONTHS: ${{ inputs.max_months }}
+        run: |
+          case "$TASK" in
+            seed)     uv run ml4wx seed config/seeds.json ;;
+            backfill) uv run ml4wx backfill --start "$START" ${END:+--end "$END"} --max-months "$MAX_MONTHS" --max-minutes 300 ;;
+            snowball) uv run ml4wx snowball --max-minutes 300 ;;
+            judge)    uv run ml4wx judge ;;
+          esac
+
+      - name: Export, commit, push, open PR
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TASK: ${{ inputs.task }}
+        run: |
+          uv run ml4wx export
+          uv run ml4wx validate || echo "::warning::validation errors, see log"
+          git add -A papers parked state lists exports README.md
+          if git diff --cached --quiet; then echo "Nothing new."; exit 0; fi
+          n=$(git diff --cached --name-only --diff-filter=A -- papers | wc -l | tr -d ' ')
+          git commit -q -m "Backfill ($TASK): +$n papers"
+          git push -q origin backfill
+          if ! gh pr view backfill --json url >/dev/null 2>&1; then
+            gh pr create --base main --head backfill --title "Backfill: historical papers" \
+              --body "Historical papers from the backfill runs (seeds, arXiv/OpenAlex month by month, citation snowballing). Merge when the backfill is complete."
+          fi
+          echo "Total papers on branch: $(find papers -name '*.yaml' | wc -l)" >> "$GITHUB_STEP_SUMMARY"

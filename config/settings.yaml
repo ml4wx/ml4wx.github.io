@@ -1,0 +1,52 @@
+site:
+  title: ML4WX
+  tagline: Machine learning for weather & climate, tracked every week
+  url: https://ml4wx.github.io
+  repo: ml4wx/ml4wx.github.io
+
+# Full coverage starts here; older papers enter only as curated classics.
+start_year: 2018
+
+# Claude models used through `claude -p` (aliases resolve to the latest version).
+llm:
+  classify_model: haiku     # relevance, topic and facets, many abstracts per call
+  judge_model: sonnet       # significance of watchlist / top-venue candidates
+  digest_model: sonnet      # weekly digest text
+  batch_size: 20            # abstracts per classification call
+  timeout_s: 600
+
+# Highlight (⭐) score, 0–100. A paper is highlighted at or above `threshold`.
+highlight:
+  threshold: 60
+  weights:
+    org_tier1: 35
+    org_tier2: 10
+    top_venue: 20
+    open_code: 10           # code or weights link found
+    operational: 10
+    significance: 4         # multiplied by the LLM significance (0–10)
+  # [min citations, points]: the first matching row (highest) counts. Mostly for the backfill.
+  citations: [[100, 10], [500, 20]]
+
+# Exact venue names (case-insensitive), as arXiv journal-refs or OpenAlex write them.
+top_venues:
+  - Nature
+  - Science
+  - Nature Machine Intelligence
+  - Nature Geoscience
+  - Nature Climate Change
+  - Nature Communications
+  - Science Advances
+  - Proceedings of the National Academy of Sciences
+  - Proceedings of the National Academy of Sciences of the United States of America
+  - NeurIPS
+  - ICML
+  - ICLR
+  - Neural Information Processing Systems
+  - Advances in Neural Information Processing Systems
+  - International Conference on Machine Learning
+  - International Conference on Learning Representations
+
+# Weekly crawl looks back this many days (overlap protects against late indexing).
+weekly_lookback_days: 10
+daily_lookback_days: 3

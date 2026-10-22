@@ -1,0 +1,104 @@
+# Where candidates come from. Queries are deliberately broad: the classifier decides
+# relevance. To save Claude calls, a candidate must first pass a cheap prefilter: one ML
+# pattern and one weather/climate pattern in title + abstract (case-insensitive regex).
+# Keep the prefilter generous: a missed paper is worse than one extra classification.
+
+ml_patterns:
+  - '\bai\b'
+  - 'artificial intelligence'
+  - 'machine[- ]learn'
+  - 'deep[- ]learn'
+  - '\blearn(ed|ing|able|s)?\b'
+  - 'neural'
+  - 'transformer'
+  - 'diffusion model|score-based|flow matching|denoising'
+  - 'generative'
+  - 'graph neural|\bgnns?\b'
+  - 'convolutional|\bcnns?\b|u-?net'
+  - '\blstm|recurrent'
+  - 'random forest|gradient boost|xgboost|lightgbm|support vector|decision tree'
+  - 'gaussian process'
+  - 'data[- ]driven'
+  - 'emulat'
+  - 'surrogate'
+  - 'foundation model|language model|\bllms?\b|\bagents?\b'
+  - 'self-supervised|contrastive|autoencoder|variational'
+  - 'reinforcement learning'
+  - 'differentiable'
+
+wx_patterns:
+  - 'weather'
+  - 'climat'
+  - 'precipitation|rainfall|\brain\b'
+  - 'atmospher'
+  - 'meteorolog'
+  - 'reanalys'
+  - '\bera-?5\b'
+  - 'nowcast'
+  - 'tropical cyclone|hurricane|typhoon'
+  - 'heat ?wave|cold spell|drought|wildfire|fire weather'
+  - 'extreme events?'
+  - 'sub-?seasonal|seasonal (forecast|predict)|\benso\b|el ni[nñ]o|\bmjo\b|monsoon'
+  - 'circulation model|earth system|\bcmip'
+  - 'data assimilation'
+  - 'downscal'
+  - 'parameteri[sz]ation|parametri[sz]ation|sub-?grid'
+  - 'convect'
+  - '\bclouds?\b'
+  - 'radar'
+  - '\bwinds?\b'
+  - 'solar (power|irradiance|radiation|forecast)|photovoltaic|irradiance'
+  - '(surface|air|2 ?m) temperature|temperature forecast'
+  - 'storm|lightning|\bhail\b|tornado|snow'
+  - 'sea ice|ocean|flood|streamflow|runoff|aerosol|ozone|air quality'
+  - '\bnwp\b|\bifs\b|ecmwf|\bgfs\b'
+
+arxiv:
+  # Each query is ANDed with a submittedDate range. arXiv allows 1 request / 3 s.
+  queries:
+    - name: ao-ph-ml
+      query: >-
+        cat:physics.ao-ph AND (abs:"machine learning" OR abs:"deep learning" OR
+        abs:"neural network" OR abs:"neural networks" OR abs:"data-driven" OR
+        abs:transformer OR abs:diffusion OR abs:emulator OR abs:"artificial intelligence"
+        OR abs:"neural operator" OR abs:"graph neural" OR abs:"foundation model")
+    - name: ml-cats-weather
+      query: >-
+        (cat:cs.LG OR cat:cs.AI OR cat:stat.ML OR cat:cs.CV OR cat:physics.comp-ph OR
+        cat:physics.geo-ph OR cat:cs.CL) AND (abs:weather OR abs:climate OR
+        abs:precipitation OR abs:rainfall OR abs:atmospheric OR abs:meteorological OR
+        abs:reanalysis OR abs:ERA5 OR abs:nowcasting OR abs:"tropical cyclone" OR
+        abs:hurricane OR abs:typhoon OR abs:subseasonal OR abs:ENSO OR abs:"earth system"
+        OR abs:"data assimilation" OR abs:downscaling)
+
+openalex:
+  # Boolean search over title + abstract. Results are restricted to these work types.
+  types: [article, preprint, review]
+  queries:
+    - name: weather-forecast-ml
+      search: >-
+        ("weather forecasting" OR "weather prediction" OR "numerical weather prediction"
+        OR "medium-range forecast" OR nowcasting OR "precipitation forecasting") AND
+        ("deep learning" OR "machine learning" OR "neural network" OR "data-driven" OR
+        transformer OR "graph neural network" OR "diffusion model")
+    - name: climate-ml
+      search: >-
+        ("climate model" OR "climate simulation" OR "climate projection" OR "earth system
+        model" OR "general circulation model" OR "climate emulator" OR "climate
+        prediction") AND ("deep learning" OR "machine learning" OR "neural network" OR
+        emulator OR "data-driven")
+    - name: chain-ml
+      search: >-
+        ("data assimilation" OR downscaling OR "super-resolution" OR "post-processing" OR
+        "bias correction" OR parameterization OR parametrization) AND ("deep learning" OR
+        "machine learning" OR "neural network") AND (weather OR climate OR atmospheric OR
+        precipitation OR meteorological)
+    - name: s2s-extremes-ml
+      search: >-
+        (subseasonal OR "sub-seasonal" OR "seasonal forecast" OR ENSO OR "tropical
+        cyclone" OR hurricane OR typhoon OR heatwave OR "heat wave" OR "extreme
+        precipitation" OR "atmospheric river" OR "severe convection") AND ("deep learning"
+        OR "machine learning" OR "neural network")
+
+# Polled daily for big releases (see watchlist.yaml for org feeds and repos).
+feeds: []

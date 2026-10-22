@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% set nav = "digests" %}
+{% block title %}Weekly digests · {{ site.title }}{% endblock %}
+{% block main %}
+<h1 class="page-title">Weekly digests</h1>
+<p class="lede">Every Monday: the new papers of the week, grouped by topic, highlights first.
+  Watch the <a href="https://github.com/{{ site.repo }}">GitHub repo</a> to get each digest by email.</p>
+{% if digests %}
+<ul class="digest-list">
+  {% for d in digests %}
+  <li><a href="/digests/{{ d.week }}/">{{ d.week }}</a>
+    <span class="muted">{{ d.meta.date }} · {{ d.meta.papers }} papers · {{ d.meta.highlights }} highlights</span></li>
+  {% endfor %}
+</ul>
+{% else %}
+<p class="muted">The first digest appears after the first weekly run.</p>
+{% endif %}
+{% endblock %}

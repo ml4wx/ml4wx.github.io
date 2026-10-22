@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% set nav = "explore" %}
+{% block title %}Explore · {{ site.title }}{% endblock %}
+{% block main %}
+<h1 class="page-title">Explore the archive</h1>
+<form class="search-row" role="search" onsubmit="return false">
+  <label class="sr-only" for="q">Search</label>
+  <input id="q" type="search" placeholder="Search titles, abstracts, summaries, authors…" autocomplete="off" autofocus>
+  <label class="sort">Sort
+    <select id="sort">
+      <option value="relevance">Relevance</option>
+      <option value="date">Newest</option>
+      <option value="score">Most important</option>
+    </select>
+  </label>
+</form>
+<div class="explore">
+  <aside class="facets-panel" aria-label="Filters">
+    <div class="facets-head">
+      <h2>Filters</h2>
+      <button type="button" class="link" id="clear">Clear all</button>
+    </div>
+    <div id="facets"><p class="muted">Loading filters…</p></div>
+  </aside>
+  <section class="results" aria-live="polite">
+    <p id="count" class="muted"></p>
+    <div id="results" class="list"></div>
+    <button type="button" id="more" class="btn" hidden>Show more</button>
+  </section>
+</div>
+<noscript><p>Search needs JavaScript. You can also browse by <a href="/topics/">topic</a> or
+  download the <a href="https://github.com/{{ site.repo }}/blob/main/exports/papers.csv">CSV</a>.</p></noscript>
+{% endblock %}
+{% block scripts %}
+<script type="module" src="/static/explore.js"></script>
+{% endblock %}

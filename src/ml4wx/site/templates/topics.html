@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% set nav = "topics" %}
+{% block title %}Topics · {{ site.title }}{% endblock %}
+{% block main %}
+<h1 class="page-title">Topics</h1>
+<p class="lede">Every paper has one primary topic and up to two secondary topics.</p>
+{% for gslug, gname in groups.items() %}
+<h2 class="group">{{ gname }}</h2>
+<div class="topic-cards">
+  {% for t in topics.values() if t.group == gslug %}
+  <article class="topic-card{{ ' is-later' if not t.enabled }}">
+    <h3>{% if t.enabled %}<a href="/topics/{{ t.slug }}/">{{ t.name }}</a>{% else %}{{ t.name }}{% endif %}</h3>
+    <p>{{ t.description }}</p>
+    <p class="muted">
+      {% if t.enabled %}{{ by_topic.get(t.slug, []) | length }} papers · {{ st.hl_topic[t.slug] }} ★
+      {% else %}Coming later: papers are collected but not labeled yet.{% endif %}
+    </p>
+  </article>
+  {% endfor %}
+</div>
+{% endfor %}
+{% endblock %}

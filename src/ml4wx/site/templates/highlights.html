@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% from "macros.html" import card %}
+{% set nav = "highlights" %}
+{% block title %}Highlights · {{ site.title }}{% endblock %}
+{% block main %}
+<h1 class="page-title">★ Highlights</h1>
+<p class="lede">Papers with a high importance score: watchlist labs, top venues, open code, operational
+  use, citations, and a significance judgment by Claude. See <a href="/about/#highlights">how the score works</a>.
+  <a href="/highlights.xml">RSS</a>.</p>
+{% for year, items in papers | groupby("year") | reverse %}
+<h2>{{ year }}</h2>
+<div class="list">{% for p in items | sort(attribute="date", reverse=True) %}{{ card(p) }}{% endfor %}</div>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,34 @@
+---
+week: {{ week }}
+since: {{ since }}
+date: {{ today }}
+papers: {{ papers | length }}
+highlights: {{ highlights | length }}
+---
+# 🌦️ ML4WX weekly digest · {{ week }}
+
+**{{ papers | length }} new papers** · **{{ highlights | length }} highlights** · {{ since }} to {{ today }}
+
+{{ intro }}
+{% if highlights %}
+## ⭐ Highlights
+{% for p in highlights %}
+**[{{ p.title }}]({{ p.links.paper or (site ~ "/papers/" ~ p.id ~ "/") }})**{% if p.orgs %} · {{ p.orgs | org_names }}{% endif %}{% if p.venue %} · {{ p.venue }}{% endif %}{% if p.links.code %} · [code]({{ p.links.code }}){% endif %}
+{{ p.highlight_reason or p.summary }}
+{% endfor %}
+{%- endif %}
+{% for t, ps in by_topic %}
+## {{ t.name }} ({{ ps | length }})
+{% for p in ps %}
+- {{ "⭐ " if p.highlight }}**[{{ p.title }}]({{ p.links.paper or (site ~ "/papers/" ~ p.id ~ "/") }})**{% if p.orgs %} · {{ p.orgs | org_names }}{% endif %}{% if p.links.code %} · [code]({{ p.links.code }}){% endif %}
+  {{ p.summary }}
+{%- endfor %}
+{% endfor %}
+{%- if releases %}
+## 📦 Software releases
+{% for r in releases %}
+- [{{ r.repo }} {{ r.tag }}]({{ r.url }}) ({{ r.date }}){% if r.name and r.name != r.tag %}: {{ r.name }}{% endif %}
+{%- endfor %}
+{% endif %}
+---
+{% if pr_url %}Review and merge this week's additions: {{ pr_url }} · {% endif %}[All digests]({{ site }}/digests/) · [Search the archive]({{ site }}/explore/)

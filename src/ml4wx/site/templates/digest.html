@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% set nav = "digests" %}
+{% block title %}Digest {{ d.week }} · {{ site.title }}{% endblock %}
+{% block main %}
+<p class="crumbs"><a href="/digests/">Digests</a></p>
+<article class="prose">{{ d.html | safe }}</article>
+{% endblock %}

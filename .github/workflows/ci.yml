@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: ./.github/actions/setup
+        with:
+          extras: --extra site
+      - run: uv run ruff check src tests
+      - run: uv run pytest -q
+      - name: Validate papers against taxonomy and watchlist
+        run: uv run ml4wx validate
+      - name: Site builds
+        run: uv run ml4wx site --out _site
