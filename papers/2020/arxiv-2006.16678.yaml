@@ -1,0 +1,55 @@
+id: arxiv-2006.16678
+title: ARPEGE Cloud Cover Forecast Post-Processing with Convolutional Neural Network
+authors:
+- Florian Dupuy
+- Olivier Mestre
+- Mathieu Serrurier
+- Mohamed Chafik Bakkay
+- Valentin Kivachuk Burdá
+- Naty Citlali Cabrera-Gutiérrez
+- Jean-Christophe Jouhaud
+- Maud-Alix Mader
+- Guillaume Oller
+- Michaël Zamo
+date: '2020-06-30'
+year: 2020
+venue_type: preprint
+ids:
+  arxiv: '2006.16678'
+links:
+  paper: https://arxiv.org/abs/2006.16678
+  pdf: https://arxiv.org/pdf/2006.16678
+topic: post-processing
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- satellite
+status: research
+summary: A U-Net with a learned predictor-weighting layer post-processes ARPEGE cloud cover forecasts
+  over Europe, outperforming random forests and logistic quantile regression.
+abstract: Cloud cover is crucial information for many applications such as planning land observation missions
+  from space. It remains however a challenging variable to forecast, and Numerical Weather Prediction
+  (NWP) models suffer from significant biases, hence justifying the use of statistical post-processing
+  techniques. In this study, ARPEGE (Météo-France global NWP) cloud cover is post-processed using a convolutional
+  neural network (CNN). CNN is the most popular machine learning tool to deal with images. In our case,
+  CNN allows the integration of spatial information contained in NWP outputs. We use a gridded cloud cover
+  product derived from satellite observations over Europe as ground truth, and predictors are spatial
+  fields of various variables produced by ARPEGE at the corresponding lead time. We show that a simple
+  U-Net architecture produces significant improvements over Europe. Moreover, the U-Net outclasses more
+  traditional machine learning methods used operationally such as a random forest and a logistic quantile
+  regression. We introduced a weighting predictor layer prior to the traditional U-Net architecture which
+  produces a ranking of predictors by importance, facilitating the interpretation of the results. Using
+  $N$ predictors, only $N$ additional weights are trained which does not impact the computational time,
+  representing a huge advantage compared to traditional methods of ranking (permutation importance, sequential
+  selection, ...).
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

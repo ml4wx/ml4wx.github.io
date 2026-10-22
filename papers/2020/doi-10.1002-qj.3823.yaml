@@ -1,0 +1,53 @@
+id: doi-10.1002-qj.3823
+title: Texture‐based classification of high‐resolution precipitation forecasts with machine‐learning methods
+authors:
+- Yamina Hamidi
+- Laure Raynaud
+- Lucie Rottner
+- Philippe Arbogast
+date: '2020-05-16'
+year: 2020
+venue: Quarterly Journal of the Royal Meteorological Society
+venue_type: journal
+ids:
+  doi: 10.1002/qj.3823
+  openalex: W3025663580
+links:
+  paper: https://doi.org/10.1002/qj.3823
+orgs:
+- meteo-france
+topic: benchmarks-data-eval
+topics:
+- post-processing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: Random forests classify continuous versus intermittent precipitation textures in AROME high-resolution
+  forecasts, outperforming other classifiers and transferring to gridded observations for verification.
+abstract: Abstract Object‐based methods are commonly used for verification and postprocessing of high‐resolution
+  precipitation forecasts. They usually detect objects based on intensity criteria only, without considering
+  the spatial organization of rainfall, known as texture. This article evaluates the performance of several
+  machine‐learning methods to detect “continuous” and “intermittent” rainfall patterns in the forecasts
+  of the French convective‐scale Arome model. A sliding‐window segmentation algorithm, which applies a
+  classification model at each grid point, is implemented. Several classifiers and input textural features
+  are compared. Overall, intermittent precipitation is the most difficult to detect. The random forest
+  classifier is shown to provide the best classification results independently of the predictor used,
+  with a surprising ability to extract a relevant signal from a synthetic descriptor such as the rainfall
+  cumulative distribution function, as well as from the large amount of unprocessed information provided
+  by neighbouring grid points. On the other hand, the logistic regression classifier needs a texture‐oriented
+  predictor, such as the statistics derived from the grey‐level co‐occurrence matrix, to perform well.
+  Global insight into model behaviour is then obtained by examining the importance of input features.
+  Finally, we show that random forests trained on Arome deterministic forecasts can be applied successfully
+  to discriminate between precipitation textures in different Arome configuration outputs and gridded
+  observations.
+significance: 3
+cited_by: 2
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

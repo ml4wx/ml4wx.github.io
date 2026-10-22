@@ -1,0 +1,61 @@
+id: doi-10.3390-s20082343
+title: Modeling and Forecasting the GPS Zenith Troposphere Delay in West Antarctica Based on Different
+  Blind Source Separation Methods and Deep Learning
+authors:
+- Qingchuan Zhang
+- Fei Li
+- Shengkai Zhang
+- Wenhao Li
+date: '2020-04-20'
+year: 2020
+venue: Sensors
+venue_type: journal
+ids:
+  doi: 10.3390/s20082343
+  openalex: W3017112758
+links:
+  paper: https://doi.org/10.3390/s20082343
+  pdf: https://www.mdpi.com/1424-8220/20/8/2343/pdf?version=1587390553
+topic: local-forecasting
+topics:
+- observations-remote-sensing
+type: model
+method:
+- rnn
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: PCA/ICA with BP network and LSTM model GPS zenith tropospheric delay in West Antarctica; six-hour
+  forecasts reach 7.2 mm RMS.
+abstract: Tropospheric delay is an important error source in global positioning systems (GPS), and the
+  water vapor retrieved from the tropospheric delay is widely used in meteorological research such as
+  climate analysis and weather forecasting. Most zenith tropospheric delay (ZTD) models are presently
+  used as positioning corrections, and few models are used for the estimation of water vapor, especially
+  in Antarctica. Through two blind source separation algorithms (principal component analysis (PCA) and
+  independent component analysis (ICA)), a back-propagation (BP) neural network and a deep learning technique
+  (long short-term memory (LSTM) network), we establish an hourly high-accuracy ZTD model for GPS meteorology
+  using the GPS-ZTD from 52 GPS stations in West Antarctica. Our results show that under the condition
+  in which the principal components (PCs) and independent components (ICs) remain fixed after decomposition,
+  the mean accuracy of the models for West Antarctica using PCA or ICA are better than 10 mm. Compared
+  with the ZTDs from the nonmodeling stations, the mean root mean square (RMS) of the PCA and ICA models
+  are 9.3 and 8.9 mm, respectively, and the correlation coefficients between the GPS-ZTD and model-ZTDs
+  all exceed 90%. The accuracy of the ICA model is slightly higher than that of the PCA model, and the
+  ICs of the ICA model show more consistent spatial responses. The six-hour forecast is the best among
+  the forecast results, with a mean correlation coefficient of 90.6% and a mean RMS of 7.2 mm using GPS-ZTD.
+  The long-term forecast result is significantly inaccurate, as the correlation coefficient between the
+  24-h forecast and GPS-ZTD is only 63.2%. Generally modest results have been achieved (HSS ≤ 0.38). Furthermore,
+  the forecast accuracy in coastal areas is lower than that in inland areas. Our study confirms that the
+  combined use of ICA and deep learning in ZTD modeling can effectively restore the original signals,
+  and short-term forecasting can be effectively used in GPS meteorology. However, further development
+  of the technology is necessary.
+significance: 2
+cited_by: 35
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

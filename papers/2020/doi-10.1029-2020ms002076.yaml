@@ -1,0 +1,55 @@
+id: doi-10.1029-2020ms002076
+title: A Moist Physics Parameterization Based on Deep Learning
+authors:
+- Yilun Han
+- Guang Jun Zhang
+- Xiaomeng Huang
+- Yong Wang
+date: '2020-08-08'
+year: 2020
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2020ms002076
+  openalex: W3047833863
+links:
+  paper: https://doi.org/10.1029/2020ms002076
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2020MS002076
+orgs:
+- tsinghua-university
+topic: hybrid-parameterization
+topics:
+- climate-emulation
+type: model
+method:
+- cnn
+spatial:
+- global
+data:
+- km-scale-sim
+status: research
+summary: ResCu, a residual CNN trained on SPCAM output, parameterizes moist convection and clouds with
+  moist-static-energy conservation, outperforming conventional schemes in single-column tests.
+abstract: Abstract Current moist physics parameterization schemes in general circulation models (GCMs)
+  are the main source of biases in simulated precipitation and atmospheric circulation. Recent advances
+  in machine learning make it possible to explore data‐driven approaches to developing parameterization
+  for moist physics processes such as convection and clouds. This study aims to develop a new moist physics
+  parameterization scheme based on deep learning. We use a residual convolutional neural network (ResNet)
+  for this purpose. It is trained with 1‐year simulation from a superparameterized GCM, SPCAM. An independent
+  year of SPCAM simulation is used for evaluation. In the design of the neural network, referred to as
+  ResCu, the moist static energy conservation during moist processes is considered. In addition, the past
+  history of the atmospheric states, convection, and clouds is also considered. The predicted variables
+  from the neural network are GCM grid‐scale heating and drying rates by convection and clouds, and cloud
+  liquid and ice water contents. Precipitation is derived from predicted moisture tendency. In the independent
+  data test, ResCu can accurately reproduce the SPCAM simulation in both time mean and temporal variance.
+  Comparison with other neural networks demonstrates the superior performance of ResNet architecture.
+  ResCu is further tested in a single‐column model for both continental midlatitude warm season convection
+  and tropical monsoonal convection. In both cases, it simulates the timing and intensity of convective
+  events well. In the prognostic test of tropical convection case, the simulated temperature and moisture
+  biases with ResCu are smaller than those using conventional convection and cloud parameterizations.
+significance: 4
+cited_by: 156
+score: 36
+highlight: false
+added: '2026-10-22'
+source: backfill

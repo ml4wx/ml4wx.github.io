@@ -1,0 +1,73 @@
+id: doi-10.5194-gmd-13-2487-2020
+title: Correcting a bias in a climate model with an augmented emulator
+authors:
+- Doug McNeall
+- Jonny Williams
+- Richard Betts
+- Ben B. B. Booth
+- Peter Challenor
+- Peter Good
+- Andy Wiltshire
+date: '2020-05-29'
+year: 2020
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-13-2487-2020
+  openalex: W2964730897
+links:
+  paper: https://doi.org/10.5194/gmd-13-2487-2020
+  pdf: https://gmd.copernicus.org/articles/13/2487/2020/gmd-13-2487-2020.pdf
+orgs:
+- met-office
+topic: climate-analysis-attribution
+topics:
+- climate-emulation
+type: model
+method:
+- classical-ml
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+status: research
+summary: A Gaussian process emulator with an augmented bias term corrects Amazon climate biases in a land-surface
+  model and identifies plausible parameter values despite structural error.
+abstract: A key challenge in developing flagship climate model configurations is the process of setting
+  uncertain input parameters at values that lead to credible climate simulations. Setting these parameters
+  traditionally relies heavily on insights from those involved in parameterisation of the underlying climate
+  processes. Given the many degrees of freedom and computational expense involved in evaluating such a
+  selection, this can be imperfect leaving open questions about whether any subsequent simulated biases
+  result from mis-set parameters or wider structural model errors (such as missing or partially parameterised
+  processes). Here, we present a complementary approach to identifying plausible climate model parameters,
+  with a method of bias correcting subcomponents of a climate model using a Gaussian process emulator
+  that allows credible values of model input parameters to be found even in the presence of a significant
+  model bias. A previous study (McNeall et al., 2016) found that a climate model had to be run using land
+  surface input parameter values from very different, almost non-overlapping, parts of parameter space
+  to satisfactorily simulate the Amazon and other forests respectively. As the forest fraction of modelled
+  non-Amazon forests was broadly correct at the default parameter settings and the Amazon too low, that
+  study suggested that the problem most likely lay in the model's treatment of non-plant processes in
+  the Amazon region. This might be due to modelling errors such as missing deep rooting in the Amazon
+  in the land surface component of the climate model, to a warm–dry bias in the Amazon climate of the
+  model or a combination of both. In this study, we bias correct the climate of the Amazon in the climate
+  model from McNeall et al. (2016) using an “augmented” Gaussian process emulator, where temperature and
+  precipitation, variables usually regarded as model outputs, are treated as model inputs alongside land
+  surface input parameters. A sensitivity analysis finds that the forest fraction is nearly as sensitive
+  to climate variables as it is to changes in its land surface parameter values. Bias correcting the climate
+  in the Amazon region using the emulator corrects the forest fraction to tolerable levels in the Amazon
+  at many candidates for land surface input parameter values, including the default ones, and increases
+  the valid input space shared with the other forests. We need not invoke a structural model error in
+  the land surface model, beyond having too dry and hot a climate in the Amazon region. The augmented
+  emulator allows bias correction of an ensemble of climate model runs and reduces the risk of choosing
+  poor parameter values because of an error in a subcomponent of the model. We discuss the potential of
+  the augmented emulator to act as a translational layer between model subcomponents, simplifying the
+  process of model tuning when there are compensating errors and helping model developers discover and
+  prioritise model errors to target.
+significance: 3
+cited_by: 14
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

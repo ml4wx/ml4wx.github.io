@@ -1,0 +1,42 @@
+id: arxiv-2007.01444
+title: Generative Modeling for Atmospheric Convection
+authors:
+- Griffin Mooers
+- Jens Tuyls
+- Stephan Mandt
+- Michael Pritchard
+- Tom Beucler
+date: '2020-07-03'
+year: 2020
+venue_type: preprint
+ids:
+  arxiv: '2007.01444'
+links:
+  paper: https://arxiv.org/abs/2007.01444
+  pdf: https://arxiv.org/pdf/2007.01444
+topic: hybrid-parameterization
+topics:
+- climate-emulation
+type: model
+method:
+- gan-vae
+timescale:
+- climate
+data:
+- km-scale-sim
+status: research
+summary: A VAE trained on about 6 million high-resolution vertical velocity samples reconstructs convection
+  and clusters organization regimes, supporting stochastic convection parameterizations.
+abstract: While cloud-resolving models can explicitly simulate the details of small-scale storm formation
+  and morphology, these details are often ignored by climate models for lack of computational resources.
+  Here, we explore the potential of generative modeling to cheaply recreate small-scale storms by designing
+  and implementing a Variational Autoencoder (VAE) that performs structural replication, dimensionality
+  reduction, and clustering of high-resolution vertical velocity fields. Trained on ~6*10^6 samples spanning
+  the globe, the VAE successfully reconstructs the spatial structure of convection, performs unsupervised
+  clustering of convective organization regimes, and identifies anomalous storm activity, confirming the
+  potential of generative modeling to power stochastic parameterizations of convection in climate models.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,61 @@
+id: doi-10.3390-s20113167
+title: A Regional NWP Tropospheric Delay Inversion Method Based on a General Regression Neural Network
+  Model
+authors:
+- Lei Li
+- Ying Xu
+- Lizi Yan
+- Shengli Wang
+- Guolin Liu
+- Fan Liu
+date: '2020-06-03'
+year: 2020
+venue: Sensors
+venue_type: journal
+ids:
+  doi: 10.3390/s20113167
+  openalex: W3033309374
+links:
+  paper: https://doi.org/10.3390/s20113167
+  pdf: https://www.mdpi.com/1424-8220/20/11/3167/pdf?version=1591243990
+topic: post-processing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- era5
+- stations
+status: research
+summary: A general regression neural network corrects zenith tropospheric delay from ECMWF and NCEP reanalysis
+  over Japan, improving accuracy for GNSS positioning.
+abstract: Tropospheric delay is a major error source that affects the initialization and re-initialization
+  speed of the Global Navigation Satellite System's (GNSS) medium-/long-range baseline in Network Real-Time
+  Kinematic (NRTK) positioning. Fusing the meteorological data from the Numerical Weather Prediction (NWP)
+  model to estimate the zenith tropospheric delay (ZTD) is one of the current research hotspots. However,
+  research has shown that the ZTD derived from NWP models is still not accurate enough for high-precision
+  GNSS positioning applications without the estimation of the residual tropospheric delay. To date, General
+  Regression Neural Network (GRNN) has been applied in many fields. It has a high learning speed and simple
+  structure, and can approximate any function with arbitrary precision. In this study, we developed a
+  regional NWP tropospheric delay inversion method based on a GRNN model to improve the accuracy of the
+  tropospheric delay derived from the NWP model. The accuracy of the tropospheric delays derived from
+  reanalysis data of the European Center for Medium-Range Weather Forecasts (ECMWF) and the US National
+  Centers for Environmental Prediction (NCEP) was assessed through comparisons with the results of the
+  International GPS Service (IGS). The variation characteristics of the residual of the ZTD inverted by
+  NWP data were analyzed considering the factors of temperature, humidity, latitude, and season. To evaluate
+  the performance of this new method, the National Center Atmospheric Research (NCAR) troposphere data
+  of 650 stations in Japan in 2005 were collected as a reference to compare the accuracy of the ZTD before
+  and after using the new method. The experimental results showed that the GRNN model has obvious advantages
+  in fitting the NWP ZTD residual. The mean residual and the root mean square deviation (RMSD) of the
+  ZTD inverted using the method of this study were 9.5 mm and 12.7 mm, respectively, showing reductions
+  of 20.8% and 19.1%, respectively, as compared to the standard NWP model. For long-range baseline (155
+  km and 207 km), the corrected NWP-constrained RTK showed a reduction of over 43% in the initialization
+  time compared with the standard RTK, and showed a reduction of over 24% in the initialization time compared
+  with the standard NWP-constrained RTK.
+significance: 2
+cited_by: 18
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

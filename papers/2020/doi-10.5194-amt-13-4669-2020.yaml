@@ -1,0 +1,62 @@
+id: doi-10.5194-amt-13-4669-2020
+title: Gradient boosting machine learning to improve satellite-derived column water vapor measurement
+  error
+authors:
+- Allan C. Just
+- Yang Liu
+- Meytar Sorek‐Hamer
+- Johnathan Rush
+- Michael Dorman
+- Robert B. Chatfield
+- Yujie Wang A
+- Alexei Lyapustin
+- Itai Kloog
+date: '2020-09-02'
+year: 2020
+venue: Atmospheric measurement techniques
+venue_type: journal
+ids:
+  doi: 10.5194/amt-13-4669-2020
+  openalex: W2996781720
+links:
+  paper: https://doi.org/10.5194/amt-13-4669-2020
+  pdf: https://amt.copernicus.org/articles/13/4669/2020/amt-13-4669-2020.pdf
+orgs:
+- nasa
+topic: observations-remote-sensing
+topics:
+- post-processing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- stations
+status: research
+summary: XGBoost corrects MAIAC satellite column water vapor errors, cutting RMSE by 26.9% for Terra and
+  16.5% for Aqua against AERONET sites.
+abstract: Abstract. The atmospheric products of the Multi-Angle Implementation of Atmospheric Correction
+  (MAIAC) algorithm include column water vapor (CWV) at 1 km resolution, derived from daily overpasses
+  of NASA’s Moderate Resolution Imaging Spectroradiometer (MODIS) instruments aboard the Aqua and Terra
+  satellites. We have recently shown that machine learning using extreme gradient boosting (XGBoost) can
+  improve the estimation of MAIAC aerosol optical depth (AOD). Although MAIAC CWV is generally well validated
+  (Pearson’s R > 0.97 versus CWV from AERONET sun photometers), it has not yet been assessed whether machine-learning
+  approaches can further improve CWV. Using a novel spatiotemporal cross-validation approach to avoid
+  overfitting, our XGBoost model with nine features derived from land use terms, date, and ancillary variables
+  from the MAIAC retrieval, quantifies and can correct a substantial portion of measurement error relative
+  to collocated measures at AERONET sites (26.9 % and 16.5 % decrease in Root Mean Square Error (RMSE)
+  for Terra and Aqua datasets, respectively) in the Northeastern USA, 2000–2015. We use machine-learning
+  interpretation tools to illustrate complex patterns of measurement error and describe a positive bias
+  in MAIAC Terra CWV worsening in recent summertime conditions. We validate our predictive model on MAIAC
+  CWV estimates at independent stations from the SuomiNet GPS network where our corrections decrease the
+  RMSE by 19.7 % and 9.5 % for Terra and Aqua MAIAC CWV. Empirically correcting for measurement error
+  with machine-learning algorithms is a post-processing opportunity to improve satellite-derived CWV data
+  for Earth science and remote sensing applications.
+significance: 3
+cited_by: 33
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

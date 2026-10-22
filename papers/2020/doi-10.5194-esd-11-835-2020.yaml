@@ -1,0 +1,58 @@
+id: doi-10.5194-esd-11-835-2020
+title: Reconstructing coupled time series in climate systems using three kinds of machine-learning methods
+authors:
+- Yu Huang
+- Lichao Yang
+- Zuntao Fu
+date: '2020-09-18'
+year: 2020
+venue: Earth System Dynamics
+venue_type: journal
+ids:
+  doi: 10.5194/esd-11-835-2020
+  openalex: W3087389050
+links:
+  paper: https://doi.org/10.5194/esd-11-835-2020
+  pdf: https://esd.copernicus.org/articles/11/835/2020/esd-11-835-2020.pdf
+topic: climate-analysis-attribution
+type: model
+method:
+- rnn
+- other
+data:
+- other
+status: research
+summary: Reservoir computing and LSTM learn coupling relations among toy climate variables and reconstruct
+  one series from another; convergent cross mapping guides input selection.
+abstract: 'Abstract. Despite the great success of machine learning, its applications in climate dynamics
+  have not been well developed. One concern might be how well the trained neural networks could learn
+  a dynamical system and what can be the potential applications of this kind of learning. Detailed studies
+  show that the coupling relations or dynamics among variables in linear or nonlinear systems can be well
+  learnt by reservoir computer (RC) and long short-term memory (LSTM) machine learning, and these learnt
+  coupling relations can be further applied to reconstruct one series from the other dominated by common
+  coupling dynamics. In order to validate the above conclusions, toy models are applied to address the
+  following three questions: (i) what can be learnt from different dynamical time series by machine learning;
+  (ii) what factors significantly influence machine learning reconstruction; and (iii) how to select suitable
+  explanatory or input variables for the reconstructed variable for machine learning. The results from
+  these toy models show that both of RC and LSTM can indeed learn coupling relations among variables,
+  and the learnt implicit coupling relation can be applied to accurately reconstruct one series from the
+  other. Both of linear and nonlinear coupling relations between variables can influence the quality of
+  the reconstructed series. If there is a strong linear coupling between variables, all of variables can
+  be taken as explanatory variables for the reconstructed variable, and the reconstruction can be bi-directional.
+  However, when the linear coupling among variables is much weaker, but with stronger nonlinear causality
+  among variables, the reconstruction quality is direction-dependent and it may be only uni-directional.
+  We propose using convergent cross mapping causality (CCM) index ρa→b to determine which variable can
+  be taken as the reconstructed one and which can be taken as the explanatory variable. For example, the
+  Pearson correlation between the average Tropical Surface Air Temperature (TSAT) and the average Northern
+  Hemispheric SAT (NHSAT) is as weak as 0.08, but the CCM index of that NHSAT cross maps TSAT is ρN→T
+  = 0.70, it means that NHSAT could be taken as the explanatory variable. Then we find that TSAT can be
+  well reconstructed from NHSAT by means of RC. However, the reconstruction quality in the opposite direction
+  is poor, because the CCM index of that TSAT cross maps NHSAT is only ρT→N = 0.24. These results also
+  provide insights on machine learning approaches for paleoclimate reconstruction, parameterization scheme,
+  and prediction in related climate studies.'
+significance: 3
+cited_by: 30
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

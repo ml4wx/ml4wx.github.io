@@ -1,0 +1,41 @@
+id: arxiv-2006.07718
+title: A generative adversarial network approach to (ensemble) weather prediction
+authors:
+- Alexander Bihlo
+date: '2020-06-13'
+year: 2020
+venue_type: preprint
+ids:
+  arxiv: '2006.07718'
+links:
+  paper: https://arxiv.org/abs/2006.07718
+  pdf: https://arxiv.org/pdf/2006.07718
+topic: probabilistic-ensembles
+type: model
+method:
+- gan-vae
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: A conditional convolutional GAN forecasts 500 hPa height, 2 m temperature and precipitation over
+  Europe for 24 h, and MC dropout yields a deep learning ensemble.
+abstract: We use a conditional deep convolutional generative adversarial network to predict the geopotential
+  height of the 500 hPa pressure level, the two-meter temperature and the total precipitation for the
+  next 24 hours over Europe. The proposed models are trained on 4 years of ERA5 reanalysis data from 2015-2018
+  with the goal to predict the associated meteorological fields in 2019. The forecasts show a good qualitative
+  and quantitative agreement with the true reanalysis data for the geopotential height and two-meter temperature,
+  while failing for total precipitation, thus indicating that weather forecasts based on data alone may
+  be possible for specific meteorological parameters. We further use Monte-Carlo dropout to develop an
+  ensemble weather prediction system based purely on deep learning strategies, which is computationally
+  cheap and further improves the skill of the forecasting model, by allowing to quantify the uncertainty
+  in the current weather forecast as learned by the model.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

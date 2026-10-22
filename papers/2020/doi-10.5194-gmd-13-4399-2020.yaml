@@ -1,0 +1,53 @@
+id: doi-10.5194-gmd-13-4399-2020
+title: 'RadNet 1.0: exploring deep learning architectures for longwave radiative transfer'
+authors:
+- Ying Liu
+- Rodrigo Caballero
+- Joy Merwin Monteiro
+date: '2020-09-21'
+year: 2020
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-13-4399-2020
+  openalex: W3001673168
+links:
+  paper: https://doi.org/10.5194/gmd-13-4399-2020
+  pdf: https://gmd.copernicus.org/articles/13/4399/2020/gmd-13-4399-2020.pdf
+topic: hybrid-parameterization
+type: model
+method:
+- cnn
+spatial:
+- global
+data:
+- other
+status: research
+summary: Neural network emulators replace longwave radiative transfer in a climate model, giving up to
+  370x GPU speedup with under 0.1 K/day heating-rate error.
+abstract: Abstract. Simulating global and regional climate at high resolution is essential to study the
+  effects of climate change and capture extreme events affecting human populations. To achieve this goal,
+  the scalability of climate models and the efficiency of individual model components are both important.
+  Radiative transfer is among the most computationally expensive components in a typical climate model.
+  Here we attempt to model this component using a neural network. We aim to study the feasibility of replacing
+  an explicit, physics-based computation of longwave radiative transfer by a neural network emulator,
+  and assessing the resultant performance gains. We compare multiple neural-network architectures, including
+  a convolutional neural network and our results suggest that the performance loss from the use of convolutional
+  networks is not offset by gains in accuracy. We train the networks with and without noise added to the
+  input profiles and find that adding noise improves the ability of the networks to generalise beyond
+  the training set. Prediction of radiative heating rates using our neural network models achieve up to
+  370x speedup on a GTX 1080 GPU setup and 11x speedup on a Xeon CPU setup compared to the a state of
+  the art radiative transfer library running on the same Xeon CPU. Furthermore, our neural network models
+  yield less than 0.1 Kelvin per day mean squared error across all pressure levels. Upon introducing this
+  component into a single column model, we find that the time evolution of the temperature and humidity
+  profiles are physically reasonable, though the model is conservative in its prediction of heating rates
+  in regions where the optical depth changes quickly. Differences exist in the equilibrium climate simulated
+  when using the neural networks, which are attributed to small systematic errors that accumulate over
+  time. Thus, we find that the accuracy of the neural network in the "offline" mode does not reflect its
+  performance when coupled with other components.
+significance: 4
+cited_by: 34
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,47 @@
+id: arxiv-2009.08454
+title: 'ExGAN: Adversarial Generation of Extreme Samples'
+authors:
+- Siddharth Bhatia
+- Arjit Jain
+- Bryan Hooi
+date: '2020-09-17'
+year: 2020
+venue_type: preprint
+ids:
+  arxiv: '2009.08454'
+links:
+  paper: https://arxiv.org/abs/2009.08454
+  pdf: https://arxiv.org/pdf/2009.08454
+topic: extremes-hazards
+topics:
+- benchmarks-data-eval
+type: model
+method:
+- gan-vae
+- physics-constrained
+spatial:
+- regional
+data:
+- stations
+- other
+status: research
+summary: GAN combined with extreme value theory generates realistic extreme samples, evaluated on US precipitation,
+  with constant-time generation at a given extremeness probability.
+abstract: Mitigating the risk arising from extreme events is a fundamental goal with many applications,
+  such as the modelling of natural disasters, financial crashes, epidemics, and many others. To manage
+  this risk, a vital step is to be able to understand or generate a wide range of extreme scenarios. Existing
+  approaches based on Generative Adversarial Networks (GANs) excel at generating realistic samples, but
+  seek to generate typical samples, rather than extreme samples. Hence, in this work, we propose ExGAN,
+  a GAN-based approach to generate realistic and extreme samples. To model the extremes of the training
+  distribution in a principled way, our work draws from Extreme Value Theory (EVT), a probabilistic approach
+  for modelling the extreme tails of distributions. For practical utility, our framework allows the user
+  to specify both the desired extremeness measure, as well as the desired extremeness probability they
+  wish to sample at. Experiments on real US Precipitation data show that our method generates realistic
+  samples, based on visual inspection and quantitative measures, in an efficient manner. Moreover, generating
+  increasingly extreme examples using ExGAN can be done in constant time (with respect to the extremeness
+  probability $τ$), as opposed to the $\mathcal{O}(\frac{1}τ)$ time required by the baseline approach.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

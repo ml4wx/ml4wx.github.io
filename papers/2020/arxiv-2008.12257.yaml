@@ -1,0 +1,49 @@
+id: arxiv-2008.12257
+title: A comparative study of convolutional neural network models for wind field downscaling
+authors:
+- Kevin Höhlein
+- Michael Kern
+- Timothy Hewson
+- Rüdiger Westermann
+date: '2020-08-18'
+year: 2020
+venue: Meteorol Appl. 2020; 27:e1961
+venue_type: journal
+ids:
+  arxiv: '2008.12257'
+  doi: 10.1002/met.1961
+links:
+  paper: https://arxiv.org/abs/2008.12257
+  pdf: https://arxiv.org/pdf/2008.12257
+topic: downscaling
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+- nwp-analysis
+status: research
+summary: Compares CNN architectures and proposes DeepRU, a U-Net variant, to downscale ERA5-driven 100
+  m wind forecasts from 31 km to 9 km over the Alps.
+abstract: We analyze the applicability of convolutional neural network (CNN) architectures for downscaling
+  of short-range forecasts of near-surface winds on extended spatial domains. Short-range wind field forecasts
+  (at the 100 m level) from ECMWF ERA5 reanalysis initial conditions at 31 km horizontal resolution are
+  downscaled to mimic HRES (deterministic) short-range forecasts at 9 km resolution. We evaluate the downscaling
+  quality of four exemplary model architectures and compare these against a multi-linear regression model.
+  We conduct a qualitative and quantitative comparison of model predictions and examine whether the predictive
+  skill of CNNs can be enhanced by incorporating additional atmospheric variables, such as geopotential
+  height and forecast surface roughness, or static high-resolution fields, like land-sea mask and topography.
+  We further propose DeepRU, a novel U-Net-based CNN architecture, which is able to infer situation-dependent
+  wind structures that cannot be reconstructed by other models. Inferring a target 9 km resolution wind
+  field from the low-resolution input fields over the Alpine area takes less than 10 milliseconds on our
+  GPU target architecture, which compares favorably to an overhead in simulation time of minutes or hours
+  between low- and high-resolution forecast simulations.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

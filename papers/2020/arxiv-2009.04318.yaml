@@ -1,0 +1,50 @@
+id: arxiv-2009.04318
+title: Combining data assimilation and machine learning to infer unresolved scale parametrisation
+authors:
+- Julien Brajard
+- Alberto Carrassi
+- Marc Bocquet
+- Laurent Bertino
+date: '2020-09-09'
+year: 2020
+venue_type: preprint
+ids:
+  arxiv: '2009.04318'
+links:
+  paper: https://arxiv.org/abs/2009.04318
+  pdf: https://arxiv.org/pdf/2009.04318
+topic: data-assimilation
+topics:
+- hybrid-parameterization
+type: model
+method:
+- other
+timescale:
+- short
+spatial:
+- global
+data:
+- other
+status: research
+summary: Ensemble Kalman filter estimates model error from sparse noisy observations to train a neural
+  parametrisation, yielding hybrid forecasts with better skill on Lorenz and a coupled ocean-atmosphere
+  model.
+abstract: In recent years, machine learning (ML) has been proposed to devise data-driven parametrisations
+  of unresolved processes in dynamical numerical models. In most cases, the ML training leverages high-resolution
+  simulations to provide a dense, noiseless target state. Our goal is to go beyond the use of high-resolution
+  simulations and train ML-based parametrisation using direct data, in the realistic scenario of noisy
+  and sparse observations. The algorithm proposed in this work is a two-step process. First, data assimilation
+  (DA) techniques are applied to estimate the full state of the system from a truncated model. The unresolved
+  part of the truncated model is viewed as a model error in the DA system. In a second step, ML is used
+  to emulate the unresolved part, a predictor of model error given the state of the system. Finally, the
+  ML-based parametrisation model is added to the physical core truncated model to produce a hybrid model.
+  The DA component of the proposed method relies on an ensemble Kalman filter while the ML parametrisation
+  is represented by a neural network. The approach is applied to the two-scale Lorenz model and to MAOOAM,
+  a reduced-order coupled ocean-atmosphere model. We show that in both cases the hybrid model yields forecasts
+  with better skill than the truncated model. Moreover, the attractor of the system is significantly better
+  represented by the hybrid model than by the truncated model.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill
