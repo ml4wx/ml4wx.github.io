@@ -8,7 +8,7 @@ updated every week from arXiv, journals and lab blogs.
 
 | Papers | ⭐ Highlights | Topics | Last update |
 |---:|---:|---:|---|
-| 9256 | 157 | 20 | 2026-10-22 |
+| 9240 | 156 | 20 | 2026-10-22 |
 
 ## Topics
 
@@ -16,29 +16,29 @@ updated every week from arXiv, journals and lab blogs.
 
 | Topic | Papers | ⭐ |
 |---|---:|---:|
-| [Nowcasting](lists/nowcasting.md) | 755 | 5 |
-| [Global medium-range NWP](lists/global-medium-range.md) | 267 | 19 |
+| [Nowcasting](lists/nowcasting.md) | 754 | 5 |
+| [Global medium-range NWP](lists/global-medium-range.md) | 265 | 19 |
 | [Probabilistic & ensemble forecasting](lists/probabilistic-ensembles.md) | 94 | 14 |
 | [Regional & km-scale models](lists/regional-km-scale.md) | 68 | 4 |
-| [Local & station forecasting](lists/local-forecasting.md) | 1086 | 0 |
-| [Sub-seasonal to seasonal](lists/s2s-seasonal.md) | 484 | 17 |
+| [Local & station forecasting](lists/local-forecasting.md) | 1084 | 0 |
+| [Sub-seasonal to seasonal](lists/s2s-seasonal.md) | 482 | 17 |
 | [Climate emulation](lists/climate-emulation.md) | 224 | 10 |
 
 **Modelling chain**
 
 | Topic | Papers | ⭐ |
 |---|---:|---:|
-| [Hybrid physics-ML & parameterization](lists/hybrid-parameterization.md) | 401 | 33 |
+| [Hybrid physics-ML & parameterization](lists/hybrid-parameterization.md) | 399 | 33 |
 | [Data assimilation](lists/data-assimilation.md) | 225 | 11 |
-| [Downscaling & super-resolution](lists/downscaling.md) | 794 | 5 |
-| [Post-processing & calibration](lists/post-processing.md) | 644 | 6 |
+| [Downscaling & super-resolution](lists/downscaling.md) | 791 | 5 |
+| [Post-processing & calibration](lists/post-processing.md) | 643 | 6 |
 | [Foundation models](lists/foundation-models.md) | 45 | 3 |
 
 **Hazards & observations**
 
 | Topic | Papers | ⭐ |
 |---|---:|---:|
-| [Extremes & hazards](lists/extremes-hazards.md) | 1259 | 6 |
+| [Extremes & hazards](lists/extremes-hazards.md) | 1257 | 6 |
 | [Observations & remote sensing](lists/observations-remote-sensing.md) | 1067 | 0 |
 
 **Science & cross-cutting**
@@ -47,7 +47,7 @@ updated every week from arXiv, journals and lab blogs.
 |---|---:|---:|
 | [Climate analysis & attribution](lists/climate-analysis-attribution.md) | 536 | 4 |
 | [Explainability, uncertainty & physics](lists/xai-uq-physics.md) | 171 | 4 |
-| [Benchmarks, datasets & evaluation](lists/benchmarks-data-eval.md) | 178 | 11 |
+| [Benchmarks, datasets & evaluation](lists/benchmarks-data-eval.md) | 177 | 10 |
 | [Software, scaling & compression](lists/infra-software.md) | 81 | 4 |
 | [Applications & impacts](lists/applications-impacts.md) | 795 | 1 |
 | [LLMs & agents](lists/llms-agents.md) | 82 | 0 |

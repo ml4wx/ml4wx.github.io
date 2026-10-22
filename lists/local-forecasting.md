@@ -5,7 +5,7 @@ ML forecasts for a point, station, city or small area, mostly from observed time
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/local-forecasting/)
 
-1086 papers (0 ⭐). Newest first.
+1084 papers (0 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -906,7 +906,6 @@ ML forecasts for a point, station, city or small area, mostly from observed time
 | 2021-07-29 | [Weather Forecasting using Advanced Techniques](https://thedesignengineering.com/index.php/DE/article/view/3005)<br><sub>Nitish Deolia, Mohit Kumar, Rahul Rajawat</sub> |  |  |
 | 2021-07-23 | [Precipitation forecast based on CEEMD–LSTM coupled model](https://doi.org/10.2166/ws.2021.237)<br><sub>Xianqi Zhang, Xilong Wu, Shaoyu He et al. · Water Science & Technology Water Supply</sub> |  |  |
 | 2021-07-23 | [Improving prediction of surface solar irradiance variability by integrating observed cloud characteristics and machine learning](https://doi.org/10.1016/j.solener.2021.07.047)<br><sub>Laura Riihimaki, Xinya Li, Zhangshuan Hou et al. · Solar Energy</sub> | NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
-| 2021-07-23 | [RETRACTED ARTICLE: Rainfall forecast and computer data algorithm optimization in coastal areas based on improved neural network](https://doi.org/10.1007/s12517-021-07579-1)<br><sub>Jingzhu Wu, Xiuzhi Xing · Arabian Journal of Geosciences</sub> |  |  |
 | 2021-07-21 | [Examining the Applicability of Wavelet Packet Decomposition on Different Forecasting Models in Annual Rainfall Prediction](https://doi.org/10.3390/w13151997)<br><sub>Hua Wang, Wenchuan Wang, Yujin Du et al. · Water</sub> |  |  |
 | 2021-07-20 | [Bagging Machine Learning Algorithms: A Generic Computing Framework Based on Machine-Learning Methods for Regional Rainfall Forecasting in Upstate New York](https://doi.org/10.3390/informatics8030047)<br><sub>Ning Yu, Timothy Haskins · Informatics</sub> |  |  |
 | 2021-07-17 | [Comparative study of three stochastic future weather forecast approaches: a case study](https://doi.org/10.1016/j.dsm.2021.07.002)<br><sub>Vinay Kellengere Shankarnarayan, Hombaliah Ramakrishna · Data Science and Management</sub> |  |  |
@@ -930,7 +929,6 @@ ML forecasts for a point, station, city or small area, mostly from observed time
 | 2021-05-01 | [Weather prediction using random forest machine learning model](https://doi.org/10.11591/ijeecs.v22.i2.pp1208-1215)<br><sub>Rajasekaran Meenal, Prawin Angel Michael, D. Pamela et al. · Indonesian Journal of Electrical Engineering and Computer Science</sub> |  |  |
 | 2021-04-30 | [Personalized Weather Station With Machine Learning Based Rainfall Predictor](https://doi.org/10.48175/ijarsct-1075)<br><sub>A Agathiyan, Naresh Kumar K. M, Mr. K. Immanuel · International Journal of Advanced Research in Science Communication and Technology</sub> |  |  |
 | 2021-04-19 | [Evaporation Duct Height Nowcasting in China’s Yellow Sea Based on Deep Learning](https://doi.org/10.3390/rs13081577)<br><sub>Jie Han, Jiaji Wu, Qinglin Zhu et al. · Remote Sensing</sub> |  |  |
-| 2021-04-15 | [Retracted: Weather forecasting and prediction using hybrid C5.0 machine learning algorithm](https://doi.org/10.1002/dac.4805)<br><sub>Sudhan M.B, Anitha Thavasimuthu, Aruna Murugesan et al. · International Journal of Communication Systems</sub> |  |  |
 | 2021-04-10 | [Using Deep Learning Technique to Predict the Weather Forecasting](https://doi.org/10.5281/zenodo.21559358)<br><sub>Dr. A. C. Subhajini · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
 | 2021-04-02 | [Rainfall Forecasting in Sub-Sahara Africa-Ghana using LSTM Deep Learning Approach](https://doi.org/10.5281/zenodo.18629902)<br><sub>Charity Oseiwah Adjei, Wei Tian, Bernard-Marie Onzo et al. · Zenodo (CERN European Organization for Nuclear Research)</sub> | Nanjing University of Information Science & Technology (NUIST) |  |
 | 2021-04-01 | [A Precipitation forecasting in central ecotone region in Brazil using artificial neural networks and public climatic data](https://doi.org/10.47236/2594-7036.2021.v5.i2.131-146p)<br><sub>Tiago da Silva Almeida, Hudson Pena Magalhães · Revista Sítio Novo</sub> |  |  |

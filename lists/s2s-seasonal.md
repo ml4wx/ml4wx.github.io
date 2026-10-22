@@ -5,7 +5,7 @@ Forecasts from 2 weeks to about a year: sub-seasonal, seasonal and ENSO/MJO pred
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/s2s-seasonal/)
 
-484 papers (17 ⭐). Newest first.
+482 papers (17 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -413,7 +413,6 @@ Forecasts from 2 weeks to about a year: sub-seasonal, seasonal and ENSO/MJO pred
 | 2022-01-01 | [Medium- and Long-Term Precipitation Forecasting Method Based on Data Augmentation and Machine Learning Algorithms](https://doi.org/10.1109/jstars.2022.3140442)<br><sub>Tiantian Tang, Donglai Jiao, Tao Chen et al. · IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</sub> |  |  |
 | 2022-01-01 | [Improving Subseasonal-to-Seasonal Forecasts in Predicting the Occurrence of Extreme Precipitation Events Over the Contiguous U.S. Using Machine Learning Models](https://doi.org/10.1016/j.atmosres.2022.106502)<br><sub>Lujun Zhang, Tiantian Yang, Shang Gao et al. · Atmospheric Research</sub> | NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), University of Oklahoma (AI2ES) |  |
 | 2021-12-10 | [Addressing Deep Learning Model Uncertainty in Long-Range Climate Forecasting with Late Fusion](https://arxiv.org/abs/2112.05254)<br><sub>Ken C. L. Wong, Hongzhi Wang, Etienne E. Vos et al.</sub> |  |  |
-| 2021-11-25 | [RETRACTED ARTICLE: Machine learning prediction of the Madden-Julian oscillation](https://doi.org/10.1038/s41612-021-00214-6)<br><sub>Riccardo Silini, Marcelo Barreiro, Cristina Masoller · npj Climate and Atmospheric Science</sub> |  |  |
 | 2021-11-25 | [Deep Residual Convolutional Neural Network Combining Dropout and Transfer Learning for ENSO Forecasting](https://doi.org/10.1029/2021gl093531)<br><sub>Jie Hu, Bin Weng, Tianqiang Huang et al. · Geophysical Research Letters</sub> | China Meteorological Administration (CMA) |  |
 | 2021-11-21 | [Seasonal Prediction of Summer Precipitation in the Middle and Lower Reaches of the Yangtze River Valley: Comparison of Machine Learning and Climate Model Predictions](https://doi.org/10.3390/w13223294)<br><sub>Chentao He, Jiangfeng Wei, Yuanyuan Song et al. · Water</sub> | Nanjing University of Information Science & Technology (NUIST) |  |
 | 2021-11-17 | [ENSO-ASC 1.0.0: ENSO deep learning forecast model with a multivariate air–sea coupler](https://doi.org/10.5194/gmd-14-6977-2021)<br><sub>Bin Mu, Bo Qin, Shijin Yuan · Geoscientific model development</sub> |  |  |
@@ -441,7 +440,6 @@ Forecasts from 2 weeks to about a year: sub-seasonal, seasonal and ENSO/MJO pred
 | 2021-04-11 | [The World as a Graph: Improving El Niño Forecasts with Graph Neural Networks](https://arxiv.org/abs/2104.05089)<br><sub>Salva Rühling Cachay, Emma Erickson, Arthur Fender C. Bucker et al.</sub> |  |  |
 | 2021-04-06 | [Long-term hydrometeorological time-series analysis over the central highlands of West Papua](https://doi.org/10.18517/ijods.4.2.84-96.2023)<br><sub>Sandy Herho · International Journal on Data Science</sub> |  |  |
 | 2021-04-03 | [A Bayesian Machine Learning Algorithm for Predicting ENSO Using Short Observational Time Series](https://doi.org/10.1029/2021gl093704)<br><sub>Nan Chen, Faheem Gilani, John Harlim · Geophysical Research Letters</sub> |  |  |
-| 2021-03-18 | [Machine learning prediction of the Madden-Julian Oscillation](https://doi.org/10.1002/essoar.10506533.1)<br><sub>Riccardo Silini, Marcelo Barreiro, Cristina Masoller</sub> |  |  |
 | 2021-03-17 | [Improving annual precipitation prediction using extreme learning machine with wavelet packet decomposition](https://doi.org/10.21203/rs.3.rs-317538/v1)<br><sub>Hua Wang, Wenchuan Wang, Yujin Du et al. · Research Square</sub> |  |  |
 | 2021-03-14 | [Unified deep learning model for El Niño/Southern Oscillation forecasts by incorporating seasonality in climate data](https://doi.org/10.1016/j.scib.2021.03.009)<br><sub>Yoo‐Geun Ham, Jeong-Hwan Kim, Eun-Sol Kim et al. · 中国科学通报：英文版</sub> |  |  |
 | 2021-03-11 | [Principle of Machine Learning and Its Potential Application in Cli-mate Prediction](https://doi.org/10.32629/jai.v4i1.483)<br><sub>Shengping He, Huijun Wang, Hua Li et al. · Journal of Autonomous Intelligence</sub> |  |  |

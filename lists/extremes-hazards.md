@@ -5,7 +5,7 @@ Prediction and detection of extremes: tropical cyclones, heatwaves, heavy rain, 
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/extremes-hazards/)
 
-1259 papers (6 ⭐). Newest first.
+1257 papers (6 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -811,7 +811,6 @@ Prediction and detection of extremes: tropical cyclones, heatwaves, heavy rain, 
 | 2024-01-01 | [Rapid Weakening Tropical Cyclone Intensity Estimation Based on Deep Learning Using Infrared Satellite Images and Reanalysis Data](https://doi.org/10.1109/jstars.2024.3465829)<br><sub>Changjiang Zhang, Yu Wang, Xiaoqin Lu et al. · IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</sub> | China Meteorological Administration (CMA) |  |
 | 2024-01-01 | [Czekanowsky Hypergraph-Based Deep Learning Classifier for Precision Cyclone Forecasting](https://doi.org/10.1109/access.2024.3433425)<br><sub>Kandala N. V. P. S. Rajesh, Logesh Ravi, Nalluri Madhusudana Rao et al. · IEEE Access</sub> |  |  |
 | 2024-01-01 | [Wildfire Detection With Deep Learning—A Case Study for the CICLOPE Project](https://doi.org/10.1109/access.2024.3406215)<br><sub>Afonso M. Gonçalves, Tomás Brandão, João C. Ferreira · IEEE Access</sub> |  |  |
-| 2024-01-01 | [Extreme heat wave sampling and prediction with analog Markov chain and comparisons with deep learning](https://doi.org/10.1017/eds.2024.7)<br><sub>George Miloshevich, Dario Lucente, Pascal Yiou et al. · Environmental Data Science</sub> |  |  |
 | 2023-12-29 | [Short-term prediction of tropical cyclone track and intensity via four mainstream deep learning techniques](https://doi.org/10.1016/j.jweia.2023.105633)<br><sub>S.L. Gan, Jiyang Fu, Gao‐Feng Zhao et al. · Journal of Wind Engineering and Industrial Aerodynamics</sub> |  |  |
 | 2023-12-21 | [Enhancing Few-Shot Learning for Tropical Cyclone Severity Prediction: A Deep Learning Approach](https://doi.org/10.18280/mmep.100639)<br><sub>Harshal Patil, Snehal Bhosale · Mathematical Modelling and Engineering Problems</sub> |  |  |
 | 2023-12-18 | [A Machine Learning Approach to Model Over-Ocean Tropical Cyclone Precipitation](https://doi.org/10.1175/jhm-d-23-0065.1)<br><sub>Joseph W. Lockwood, Thomas Loridan, Ning Lin et al. · Journal of Hydrometeorology</sub> | Princeton University |  |
@@ -859,7 +858,7 @@ Prediction and detection of extremes: tropical cyclones, heatwaves, heavy rain, 
 | 2023-07-21 | [Spatiotemporal Variations of Global Human-Perceived Heatwave Risks and their Driving Factors Based on Machine Learning](https://doi.org/10.3390/rs15143627)<br><sub>Yuwei Wang, Na Zhao · Remote Sensing</sub> |  |  |
 | 2023-07-20 | [Improved forecasting of extreme hurricane events by integrating spatio-temporal CNN-RF learning of tropical cyclone characteristics](https://doi.org/10.3389/feart.2023.1223154)<br><sub>Javier Martínez-Amaya, Nicolas Longépé, Verònica Nieves et al. · Frontiers in Earth Science</sub> |  |  |
 | 2023-07-20 | [Diagnosing Tropical Cyclone Intensity Variations from the Surface Wind Field Evolution](https://doi.org/10.1175/jas-d-22-0208.1)<br><sub>Léo Vinour, Swen Jullien, Alexis Aurelien Mouche · Journal of the Atmospheric Sciences</sub> |  |  |
-| 2023-07-18 | [Extreme heatwave sampling and prediction with analog Markov chain and comparisons with deep learning](https://arxiv.org/abs/2307.09060)<br><sub>George Miloshevich, Dario Lucente, Pascal Yiou et al.</sub> |  |  |
+| 2023-07-18 | [Extreme heatwave sampling and prediction with analog Markov chain and comparisons with deep learning](https://doi.org/10.1017/eds.2024.7)<br><sub>George Miloshevich, Dario Lucente, Pascal Yiou et al. · Environmental Data Science</sub> |  |  |
 | 2023-07-13 | [Comparison of data-driven methods for linking extreme precipitation events to local and large-scale meteorological variables](https://doi.org/10.1007/s00477-023-02511-3)<br><sub>Nafsika Antoniadou, Hjalte Jomo Danielsen Sørup, Jonas Wied Pedersen et al. · Stochastic Environmental Research and Risk Assessment</sub> |  |  |
 | 2023-07-12 | [A CatBoost-Based Model for the Intensity Detection of Tropical Cyclones over the Western North Pacific Based on Satellite Cloud Images](https://doi.org/10.3390/rs15143510)<br><sub>Wei Zhong, Deyuan Zhang, Yuan Sun et al. · Remote Sensing</sub> |  |  |
 | 2023-07-06 | [Projection of Future Fire Emissions Over the Contiguous US Using Explainable Artificial Intelligence and CMIP6 Models](https://doi.org/10.1029/2023jd039154)<br><sub>Sing‐Chun Wang, Lai-Yung Ruby Leung, Yun Qian · Journal of Geophysical Research Atmospheres</sub> |  |  |
@@ -1137,8 +1136,7 @@ Prediction and detection of extremes: tropical cyclones, heatwaves, heavy rain, 
 | 2021-01-01 | [Tropical Cyclone Intensity Classification and Estimation Using Infrared Satellite Images With Deep Learning](https://doi.org/10.1109/jstars.2021.3050767)<br><sub>Changjiang Zhang, Xiaojie Wang, Leiming Ma et al. · IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</sub> | China Meteorological Administration (CMA) |  |
 | 2021-01-01 | [Machine Learning with Feature Importance Analysis for Tornado Prediction from Environmental Sounding Data](https://doi.org/10.1002/pamm.202000112)<br><sub>Brice E. Coffer, Michaela Kubacki, Yixin Wen et al. · PAMM</sub> | NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), University of Oklahoma (AI2ES) |  |
 | 2020-12-18 | [Storm-scale Ensemble-based Severe Weather Guidance: Development of an Object-based Verification Framework and Applications of Machine Learning](https://hdl.handle.net/11244/326598)<br><sub>Montgomery L. Flora · SHAREOK (University of Oklahoma; Oklahoma State University; Central Oklahoma University)</sub> |  |  |
-| 2020-12-17 | [Deep Learning for Climate Science and Extreme Weather Prediction I](https://agu.confex.com/agu/fm20/webprogram/Session107145.html)<br><sub>Gemma J. Anderson · AGU Fall Meeting 2020</sub> |  |  |
-| 2020-12-16 | [Deep Learning for Climate Science and Extreme Weather Prediction II Posters](https://agu.confex.com/agu/fm20/webprogram/Session104665.html)<br><sub>Gemma J. Anderson · AGU Fall Meeting 2020</sub> |  |  |
+| 2020-12-16 | [Deep Learning for Climate Science and Extreme Weather Prediction I](https://agu.confex.com/agu/fm20/webprogram/Session107145.html)<br><sub>Gemma J. Anderson · AGU Fall Meeting 2020</sub> |  |  |
 | 2020-12-15 | [Using Deep Learning and Machine Learning Methods to Diagnose Hailstorms in Large-Scale Thermodynamic Environments](https://doi.org/10.3390/su122410499)<br><sub>Farha Pulukool, Longzhuang Li, Chuntao Liu · Sustainability</sub> |  |  |
 | 2020-12-12 | [Physics-Informed Machine Learning Simulator for Wildfire Propagation](https://arxiv.org/abs/2012.06825)<br><sub>Luca Bottero, Francesco Calisto, Giovanni Graziano et al.</sub> |  |  |
 | 2020-12-11 | [Physics-augmented Deep Learning to Improve Tropical Cyclone Intensity and Size Estimation from Satellite Imagery](https://agu.confex.com/agu/fm20/webprogram/Paper690714.html)<br><sub>Jing‐Yi Zhuo · AGU Fall Meeting 2020</sub> |  |  |
@@ -1705,7 +1703,6 @@ Prediction and detection of extremes: tropical cyclones, heatwaves, heavy rain, 
 - [Unveiling the Role of Weighted Loss Functions in Deep Learning-Based Nowcasting of Extreme Rainfall Events](https://doi.org/10.1109/tgrs.2025.3592853) (2025)
 - [Bridging Time-Delayed Microwave Radiometric Observations and Deep Convection Characteristics: A Machine Learning Approach for the C²OMODO Mission](https://doi.org/10.1109/tgrs.2025.3583571) (2025)
 - [Retrieval of Tropical Cyclone Sea-Level Pressure Fields From the MWTS-2 and MWHS-2 Onboard the FengYun-3D Satellite](https://doi.org/10.1109/tgrs.2025.3574455) (2025)
-- [Extreme Precipitation Nowcasting Using Multitask Latent Diffusion Models](https://doi.org/10.1109/tgrs.2025.3564916) (2025)
 - [Knowledge-Guided Prompt Learning for Tropical Cyclone Intensity Estimation](https://doi.org/10.1109/tgrs.2025.3539823) (2025)
 - [Synchronous Wind and Wave Monitoring by Gaofen-3 SAR During Tropical Cyclones](https://doi.org/10.1109/lgrs.2025.3586710) (2025)
 - [PSRGAN: Generative Adversarial Networks for Precipitation Downscaling](https://doi.org/10.1109/lgrs.2025.3528018) (2025)
@@ -1746,7 +1743,7 @@ Prediction and detection of extremes: tropical cyclones, heatwaves, heavy rain, 
 - [Neural network based estimates of the climate impact on mortality in Germany: application to storyline climate simulations](https://doi.org/10.1038/s41598-024-77398-3) (2024)
 - [Advancing Subseasonal Surface Air Temperature and Heat Wave Prediction Skill in China by Incorporating Scale Interaction in a Deep Learning Model](https://doi.org/10.1029/2024gl111076) (2024)
 - [Heavy-Tailed Diffusion Models](https://arxiv.org/abs/2410.14171) (2024)
-- [Extreme Precipitation Nowcasting using Multi-Task Latent Diffusion Models](https://arxiv.org/abs/2410.14103) (2024)
+- [Extreme Precipitation Nowcasting using Multi-Task Latent Diffusion Models](https://doi.org/10.1109/tgrs.2025.3564916) (2024)
 - [Monitoring tropical cyclone using multi-source data and deep learning: a review](https://doi.org/10.1080/19479832.2024.2411677) (2024)
 - [Explainable Earth Surface Forecasting under Extreme Events](https://doi.org/10.1029/2024ef005446) (2024)
 - [Detecting Spatiotemporal Dynamics of Western European Heatwaves Using Deep Learning](https://doi.org/10.1175/aies-d-23-0107.1) (2024)

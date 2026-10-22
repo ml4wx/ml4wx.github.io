@@ -5,7 +5,7 @@ Statistical post-processing of NWP or ML forecasts: bias correction, ensemble ca
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/post-processing/)
 
-644 papers (6 ⭐). Newest first.
+643 papers (6 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -594,7 +594,6 @@ Statistical post-processing of NWP or ML forecasts: bias correction, ensemble ca
 | 2020-08-01 | [Using Artificial Neural Networks for Generating Probabilistic Subseasonal Precipitation Forecasts over California](https://doi.org/10.1175/mwr-d-20-0096.1)<br><sub>Michael Scheuerer, Matthew B. Switanek, Rochelle P. Worsnop et al. · Monthly Weather Review</sub> | NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
 | 2020-07-23 | [Development of Stacked Long Short-Term Memory Neural Networks with Numerical Solutions for Wind Velocity Predictions](https://doi.org/10.1155/2020/5462040)<br><sub>Chih‐Chiang Wei · Advances in Meteorology</sub> |  |  |
 | 2020-07-23 | [Improving Wind Forecasts in the Lower Stratosphere by Distilling an Analog Ensemble Into a Deep Neural Network](https://doi.org/10.1029/2020gl089098)<br><sub>Salvatore Candido, Aakanksha Singh, Luca Delle Monache · Geophysical Research Letters</sub> |  |  |
-| 2020-07-08 | [Improving machine learning-based weather forecast 1 post-processing with clustering and transfer learning](https://doi.org/10.1002/essoar.10503602.1)<br><sub>Xiaomeng Huang, Xiaomeng Huang, Yuwen Chen et al.</sub> | Tsinghua University (NowcastNet) |  |
 | 2020-07-03 | [Validation of GFS day-ahead solar irradiance forecasts in China](https://arxiv.org/abs/2007.01639)<br><sub>Yue Zhang, Yanbo Shen, Xiangao Xia et al.</sub> |  |  |
 | 2020-07-01 | [Improving machine learning-based weather forecast post-processing with clustering and transfer learning](https://doi.org/10.1002/essoar.10503549.1)<br><sub>Xiaomeng Huang, Xiaomeng Huang, Yuwen Chen et al.</sub> | Tsinghua University (NowcastNet) |  |
 | 2020-06-30 | [ARPEGE Cloud Cover Forecast Post-Processing with Convolutional Neural Network](https://doi.org/10.1175/waf-d-20-0093.1)<br><sub>Florian Dupuy, Olivier Mestre, Mathieu Serrurier et al. · Weather and Forecasting</sub> | Météo-France (incl. CNRM) |  |
@@ -838,7 +837,6 @@ Statistical post-processing of NWP or ML forecasts: bias correction, ensemble ca
 - [Bias Correction of Satellite Precipitation Estimation Using Deep Neural Networks and Topographic Information Over the Western U.S.](https://doi.org/10.1029/2024jd042181) (2025)
 - [A Comparative Approach to Understand the Performance of CMIP6 Models for Maximum Temperature near Tropic of Cancer Using Multiple Machine Learning Ensembles](https://doi.org/10.1007/s11269-025-04137-2) (2025)
 - [From bias to accuracy: Transforming satellite precipitation data in arid regions with machine learning and topographical insights](https://doi.org/10.1016/j.jhydrol.2025.132801) (2025)
-- [Kolmogorov Arnold Neural Interpolator for Downscaling and Correcting Meteorological Fields from In-Situ Observations](https://arxiv.org/abs/2501.14404) (2025)
 - [Improving tropical cyclone rapid intensification forecasts with satellite measurements of sea surface salinity and calibrated machine learning](https://doi.org/10.1088/1748-9326/adac7f) (2025)
 - [Research on Typhoon Prediction by Integrating Numerical Simulation and Deep Learning Methods](https://doi.org/10.3390/atmos16010111) (2025)
 - [Subseasonal prediction of weekly precipitation anomalies over Southern China during early summer based on predictability analysis and machine learning](https://doi.org/10.1016/j.atmosres.2025.107927) (2025)
@@ -846,10 +844,10 @@ Statistical post-processing of NWP or ML forecasts: bias correction, ensemble ca
 - [Machine Learning Applications for Atmospheric Retrieval from Earth Observing Spectroscopy with Robust Uncertainty Quantification](https://shareok.org//handle/11244/341664) (2025)
 - [Advancing Subseasonal Extreme Rainfall Forecasting in Vietnam Using Machine Learning](https://doi.org/10.2151/sola.2025-034) (2025)
 - [Latent-Space Data Assimilation and Bias Correction via a Conditional Denoising Diffusion Probabilistic Model](https://doi.org/10.2139/ssrn.5778461) (2025)
-- [Topographic Informed Kolmogorov-Arnold Neural Interpolator for Downscaling and Correcting Meteorological Fields From In Situ Observations](https://doi.org/10.1109/tgrs.2025.3578701) (2025)
 - [MMF-RNN: A Multimodal Fusion Model for Precipitation Nowcasting Using Radar and Ground Station Data](https://doi.org/10.1109/tgrs.2025.3528423) (2025)
 - [Advanced Machine Learning Ensembles for Improved Precipitation Forecasting: The Modified Stacking Ensemble Strategy in China](https://doi.org/10.1109/jstars.2025.3528475) (2025)
 - [A novel early‐warning standardized indicator for drought preparedness and management under multiple climate model projections](https://doi.org/10.1002/met.70014) (2025)
+- [Kolmogorov Arnold Neural Interpolator for Downscaling and Correcting Meteorological Fields from In-Situ Observations](https://doi.org/10.1109/tgrs.2025.3578701) (2025)
 - [Estimating and forecasting daily reference crop evapotranspiration in China with temperature-driven deep learning models](https://doi.org/10.1016/j.agwat.2024.109268) (2024)
 - [Continuous latent representations for modeling precipitation with deep learning](https://arxiv.org/abs/2412.14620) (2024)
 - [Bias correction of satellite precipitation estimates using Mumbai-MESONET observations: A Random Forest approach](https://doi.org/10.1016/j.atmosres.2024.107858) (2024)

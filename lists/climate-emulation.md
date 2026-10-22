@@ -358,7 +358,6 @@ Emulators of climate models and long stable rollouts (decades to centuries), sce
 - [Technical note: Emulation of a large-eddy simulator for stratocumulus clouds in a general circulation model](https://doi.org/10.5194/acp-24-869-2024) (2024)
 - [Comparing Data-Driven and Mechanistic Models for Predicting Phenology in Deciduous Broadleaf Forests](https://arxiv.org/abs/2401.03960) (2024)
 - [Stress-testing the coupled behavior of hybrid physics-machine learning climate simulations on an unseen, warmer climate](https://arxiv.org/abs/2401.02098) (2024)
-- [Extreme heat wave sampling and prediction with analog Markov chain and comparisons with deep learning](https://doi.org/10.1017/eds.2024.7) (2024)
 - [The statistical emulators of GGCMI phase 2: responses of year-to-year variation of crop yield to CO 2 , temperature, water, and nitrogen perturbations](https://doi.org/10.5194/gmd-16-7203-2023) (2023)
 - [Machine learning for numerical weather and climate modelling: a review](https://doi.org/10.5194/gmd-16-6433-2023) (2023)
 - [Neural General Circulation Models for Weather and Climate](https://arxiv.org/abs/2311.07222) (2023)
@@ -371,7 +370,7 @@ Emulators of climate models and long stable rollouts (decades to centuries), sce
 - [HurriCast: Synthetic Tropical Cyclone Track Generation for Hurricane Forecasting](https://doi.org/10.1609/aaaiss.v5i1.35581) (2023)
 - [Advancing Parsimonious Deep Learning Weather Prediction using the HEALPix Mesh](https://arxiv.org/abs/2311.06253) (2023)
 - [Harnessing AI and computing to advance climate modelling and prediction](https://doi.org/10.1038/s41558-023-01769-3) (2023)
-- [Extreme heatwave sampling and prediction with analog Markov chain and comparisons with deep learning](https://arxiv.org/abs/2307.09060) (2023)
+- [Extreme heatwave sampling and prediction with analog Markov chain and comparisons with deep learning](https://doi.org/10.1017/eds.2024.7) (2023)
 - [SEEDS: Emulation of Weather Forecast Ensembles with Diffusion Models](https://arxiv.org/abs/2306.14066) (2023)
 - [Earth Virtualization Engines: A Technical Perspective](https://doi.org/10.1109/mcse.2023.3311148) (2023)
 - [Using Machine Learning to Cut the Cost of Dynamical Downscaling](https://doi.org/10.1029/2022ef003291) (2023)
@@ -417,6 +416,5 @@ Emulators of climate models and long stable rollouts (decades to centuries), sce
 - [Using machine learning to build temperature-based ozone parameterizations for climate sensitivity simulations](https://doi.org/10.1088/1748-9326/aae2be) (2018)
 - [Deep learning to represent sub-grid processes in climate models](https://arxiv.org/abs/1806.04731) (2018)
 - [Next-Generation Climate Models Could Learn, Improve on the Fly](https://doi.org/10.1029/2018eo093857) (2018)
-- [Could machine learning break the convection parametrization deadlock?](https://doi.org/10.31223/osf.io/hv95e) (2018)
 - [New Approach to Calculation of Atmospheric Model Physics: Accurate and Fast Neural Network Emulation of Longwave Radiation in a Climate Model](https://doi.org/10.1175/mwr2923.1) (2005)
 

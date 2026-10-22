@@ -5,7 +5,7 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/nowcasting/)
 
-755 papers (5 ⭐). Newest first.
+754 papers (5 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -309,7 +309,6 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 | 2025-01-01 | [RSG-GAN: A GAN-Based Precipitation Nowcasting Model Integrating Radar QPE, GOES-16 SWD, and GNSS ZTDs](https://doi.org/10.1109/tgrs.2025.3587883)<br><sub>Cuixian Lu, Xindi Luo, Yuxin Zheng et al. · IEEE Transactions on Geoscience and Remote Sensing</sub> |  |  |
 | 2025-01-01 | [Precipitation Nowcasting Based on Radar Echo Images via Multiscale Spatiotemporal LSTM](https://doi.org/10.1109/tgrs.2025.3584824)<br><sub>Yueting Wang, Ling Yao, Hou Jiang et al. · IEEE Transactions on Geoscience and Remote Sensing</sub> |  |  |
 | 2025-01-01 | [MMPFormer: A Memory-Aware Multiscale Predictive Transformer for Precipitation Nowcasting](https://doi.org/10.1109/tgrs.2025.3572487)<br><sub>Dan Song, Dehan Wang, Wenhui Li et al. · IEEE Transactions on Geoscience and Remote Sensing</sub> |  |  |
-| 2025-01-01 | [Extreme Precipitation Nowcasting Using Multitask Latent Diffusion Models](https://doi.org/10.1109/tgrs.2025.3564916)<br><sub>Chaorong Li, Xudong Ling, Qiang Yang et al. · IEEE Transactions on Geoscience and Remote Sensing</sub> |  |  |
 | 2025-01-01 | [A Hybrid Approach to Physical and Deep Learning Models for Radar-Based Precipitation Nowcasting](https://doi.org/10.1109/tgrs.2025.3560454)<br><sub>Ho-Jun Kim, Seong-Sim Yoon, Yeong Hyeon Gu et al. · IEEE Transactions on Geoscience and Remote Sensing</sub> |  |  |
 | 2025-01-01 | [A Deep Learning-Based Precipitation Nowcasting Model Fusing GNSS-PWV and Radar Echo Observations](https://doi.org/10.1109/tgrs.2025.3554745)<br><sub>Mengjie Liu, Weixing Zhang, Yidong Lou et al. · IEEE Transactions on Geoscience and Remote Sensing</sub> | ETH Zurich |  |
 | 2025-01-01 | [SCECA-Net: A Deep Learning-Based Model for Precipitation Nowcasting](https://doi.org/10.1109/tgrs.2025.3534278)<br><sub>Liangzhi Li, Xu Zhang, Ling Han · IEEE Transactions on Geoscience and Remote Sensing</sub> |  |  |
@@ -340,7 +339,7 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 | 2024-10-27 | [CloudCast -- Total Cloud Cover Nowcasting with Machine Learning](https://doi.org/10.1175/aies-d-24-0104.1)<br><sub>Mikko Partio, Leila Hieta, Anniina Kokkonen · Artificial Intelligence for the Earth Systems</sub> |  | [code](https://github.com/fmidev/cloudcast) |
 | 2024-10-24 | [MBFE-UNet: A Multi-Branch Feature Extraction UNet with Temporal Cross Attention for Radar Echo Extrapolation](https://doi.org/10.3390/rs16213956)<br><sub>Huantong Geng, Han Qing Zhao, Zhanpeng Shi et al. · Remote Sensing</sub> | China Meteorological Administration (CMA), Nanjing University of Information Science & Technology (NUIST) |  |
 | 2024-10-18 | [DiffREE: feature-conditioned diffusion model for radar echo extrapolation](https://doi.org/10.1007/s11227-024-06577-w)<br><sub>Wu Qi-liang, Xing Wang, Zhang Tong et al. · The Journal of Supercomputing</sub> | Nanjing University of Information Science & Technology (NUIST) |  |
-| 2024-10-18 | [Extreme Precipitation Nowcasting using Multi-Task Latent Diffusion Models](https://arxiv.org/abs/2410.14103)<br><sub>Li Chaorong, Ling Xudong, Yang Qiang et al.</sub> |  |  |
+| 2024-10-18 | [Extreme Precipitation Nowcasting using Multi-Task Latent Diffusion Models](https://doi.org/10.1109/tgrs.2025.3564916)<br><sub>Li Chaorong, Ling Xudong, Yang Qiang et al. · IEEE Transactions on Geoscience and Remote Sensing</sub> |  |  |
 | 2024-10-11 | [Multi-Source Temporal Attention Network for Precipitation Nowcasting](https://arxiv.org/abs/2410.08641)<br><sub>Rafael Pablos Sarabia, Joachim Nyborg, Morten Birk et al.</sub> |  |  |
 | 2024-10-10 | [Enhanced oceanic fog nowcasting through satellite-based recurrent neural networks](https://doi.org/10.1080/20964471.2024.2412379)<br><sub>Sahel Mahdavi, Meisam Amani, Terry W. Bullock et al. · Big Earth Data</sub> |  |  |
 | 2024-10-08 | [PostCast: Generalizable Postprocessing for Precipitation Nowcasting via Unsupervised Blurriness Modeling](https://arxiv.org/abs/2410.05805)<br><sub>Junchao Gong, Siwei Tu, Weidong Yang et al.</sub> |  |  |

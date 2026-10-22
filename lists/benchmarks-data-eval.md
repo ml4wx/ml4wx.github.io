@@ -5,7 +5,7 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/benchmarks-data-eval/)
 
-178 papers (11 ⭐). Newest first.
+177 papers (10 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -183,8 +183,7 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 | 2020-11-25 | [Boosting Weather Prediction with Machine Learning](https://doi.org/10.1029/2020eo149637)<br><sub>Sarah Stanley · Eos</sub> |  |  |
 | 2020-07-15 | [CloudCast: A Satellite-Based Dataset and Baseline for Forecasting Clouds](https://arxiv.org/abs/2007.07978)<br><sub>A. H. Nielsen, A. Iosifidis, H. Karstoft · IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, vol. 14, pp. 3485-3494, 2021</sub> |  |  |
 | 2020-05-16 | [Texture‐based classification of high‐resolution precipitation forecasts with machine‐learning methods](https://doi.org/10.1002/qj.3823)<br><sub>Yamina Hamidi, Laure Raynaud, Lucie Rottner et al. · Quarterly Journal of the Royal Meteorological Society</sub> | Météo-France (incl. CNRM) |  |
-| 2020-02-02 | ⭐ [WeatherBench: A benchmark dataset for data-driven weather forecasting](https://arxiv.org/abs/2002.00469)<br><sub>Stephan Rasp, Peter D. Dueben, Sebastian Scher et al. · Journal of Advances in Modeling Earth Systems</sub> | ECMWF, Technical University of Munich (TUM), University of Washington | [code](https://github.com/pangeo-data/WeatherBench) |
-| 2020-01-01 | ⭐ [WeatherBench: A Benchmark Data Set for Data-Driven Weather Forecasting](https://doi.org/10.23689/fidgeo-4726)<br><sub>Stephan Rasp, Peter Dominik Dueben, Sebastian Scher et al. · arXiv (Cornell University)</sub> | ECMWF, Technical University of Munich (TUM), University of Washington | [code](https://github.com/pangeo-data/WeatherBench) |
+| 2020-01-01 | ⭐ [WeatherBench: A benchmark dataset for data-driven weather forecasting](https://arxiv.org/abs/2002.00469)<br><sub>Stephan Rasp, Peter D. Dueben, Sebastian Scher et al. · Journal of Advances in Modeling Earth Systems</sub> | ECMWF, Technical University of Munich (TUM), University of Washington | [code](https://github.com/pangeo-data/WeatherBench) |
 | 2019-11-05 | [Cumulo: A Dataset for Learning Cloud Classes](https://arxiv.org/abs/1911.04227)<br><sub>Valentina Zantedeschi, Fabrizio Falasca, Alyson Douglas et al. · Tackling Climate Change with Machine Learning Workshop, 33rd Conference on Neural Information Processing Systems (NeurIPS 2019), Vancouver, Canada</sub> | The Alan Turing Institute, University of Oxford |  |
 | 2018-03-14 | [Scientific Visualization of Climate Simulation Data for Deep Convolutional Neural Network](https://confit.atlas.jp/guide/event/jpgu2018/subject/MAG32-04/detail)<br><sub>Daisuke Matsuoka · Japan Geoscience Union</sub> |  |  |
 
