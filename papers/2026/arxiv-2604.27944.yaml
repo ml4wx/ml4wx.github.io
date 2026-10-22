@@ -1,0 +1,44 @@
+id: arxiv-2604.27944
+title: Calibrating Attribution Proxies for Reward Allocation in Participatory Weather Sensing
+authors:
+- Mark C. Ballandies
+- Michael T. C. Chiu
+- Claudio J. Tessone
+date: '2026-04-30'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2604.27944'
+  openalex: W7159569377
+links:
+  paper: https://arxiv.org/abs/2604.27944
+  pdf: https://arxiv.org/pdf/2604.27944
+topic: applications-impacts
+topics:
+- observations-remote-sensing
+type: model
+method:
+- differentiable
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Uses gradients of differentiable AI weather models to attribute value to IoT weather sensor data
+  for reward allocation, with 400+ configurations tested.
+abstract: Large-scale IoT weather sensing networks require incentive mechanisms to sustain participation,
+  yet determining how much value individual data contributions bring to the network remains an open problem.
+  Existing approaches address data quality but not data valuation; in operational meteorology, adjoint-based
+  methods derive value from the forecast model itself but require full data assimilation infrastructure.
+  We propose to utilise differentiable AI weather models to fill this gap and characterise gradient-based
+  attribution on gridded GFS analysis inputs as a candidate value signal, evaluating fidelity, calibration,
+  cost, and gaming vulnerability across more than 400 configurations. Attribution captures near-optimal
+  sensor placement utility with monotonically faithful payments, but can be inflated by adversarial inputs,
+  with detection requiring external baseline data. These findings establish gradient attribution as a
+  computationally validated signal for model-informed reward allocation in participatory weather sensing.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

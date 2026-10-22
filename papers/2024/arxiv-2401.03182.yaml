@@ -1,0 +1,56 @@
+id: arxiv-2401.03182
+title: Distribution-aware Interactive Attention Network and Large-scale Cloud Recognition Benchmark on
+  FY-4A Satellite Image
+authors:
+- Jiaqing Zhang
+- Jie Lei
+- Weiying Xie
+- Kai Jiang
+- Xin Zhang
+- Mingxiang Cao
+- Yunsong Li
+date: '2024-01-01'
+year: 2024
+venue: IEEE Transactions on Geoscience and Remote Sensing
+venue_type: journal
+ids:
+  arxiv: '2401.03182'
+  doi: 10.1109/tgrs.2024.3453376
+  openalex: W4402661219
+links:
+  paper: https://arxiv.org/abs/2401.03182
+  pdf: https://arxiv.org/pdf/2401.03182
+  code: https://github.com/icey-zhang/DIAnet
+topic: observations-remote-sensing
+type: benchmark
+method:
+- cnn
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Introduces FYH cloud-recognition dataset of 70,419 FY-4A/Himawari-8 image pairs and a distribution-aware
+  attention network that improves mIoU across nine cloud classes.
+abstract: Accurate cloud recognition and warning are crucial for various applications, including in-flight
+  support, weather forecasting, and climate research. However, recent deep learning algorithms have predominantly
+  focused on detecting cloud regions in satellite imagery, with insufficient attention to the specificity
+  required for accurate cloud recognition. This limitation inspired us to develop the novel FY-4A-Himawari-8
+  (FYH) dataset, which includes nine distinct cloud categories and uses precise domain adaptation methods
+  to align 70,419 image-label pairs in terms of projection, temporal resolution, and spatial resolution,
+  thereby facilitating the training of supervised deep learning networks. Given the complexity and diversity
+  of cloud formations, we have thoroughly analyzed the challenges inherent to cloud recognition tasks,
+  examining the intricate characteristics and distribution of the data. To effectively address these challenges,
+  we designed a Distribution-aware Interactive-Attention Network (DIAnet), which preserves pixel-level
+  details through a high-resolution branch and a parallel multi-resolution cross-branch. We also integrated
+  a distribution-aware loss (DAL) to mitigate the imbalance across cloud categories. An Interactive Attention
+  Module (IAM) further enhances the robustness of feature extraction combined with spatial and channel
+  information. Empirical evaluations on the FYH dataset demonstrate that our method outperforms other
+  cloud recognition networks, achieving superior performance in terms of mean Intersection over Union
+  (mIoU). The code for implementing DIAnet is available at https://github.com/icey-zhang/DIAnet.
+significance: 4
+cited_by: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

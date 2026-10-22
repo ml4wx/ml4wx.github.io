@@ -1,0 +1,55 @@
+id: arxiv-2312.00907
+title: Extreme Event Prediction with Multi-agent Reinforcement Learning-based Parametrization of Atmospheric
+  and Oceanic Turbulence
+authors:
+- Rambod Mojgani
+- Daniel Waelchli
+- Yifei Guan
+- Petros Koumoutsakos
+- Pedram Hassanzadeh
+date: '2023-12-01'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2312.00907'
+  openalex: W4389362628
+links:
+  paper: https://arxiv.org/abs/2312.00907
+  pdf: https://arxiv.org/pdf/2312.00907
+orgs:
+- eth-zurich
+topic: hybrid-parameterization
+type: model
+method:
+- reinforcement-learning
+data:
+- other
+status: research
+summary: Multi-agent reinforcement learning learns turbulence closures for atmospheric and oceanic prototypes
+  from enstrophy spectra alone, giving stable low-resolution simulations that match high-fidelity statistics
+  at a fraction of the cost.
+abstract: Global climate models (GCMs) are the main tools for understanding and predicting climate change.
+  However, due to limited numerical resolutions, these models suffer from major structural uncertainties;
+  e.g., they cannot resolve critical processes such as small-scale eddies in atmospheric and oceanic turbulence.
+  Thus, such small-scale processes have to be represented as a function of the resolved scales via closures
+  (parametrization). The accuracy of these closures is particularly important for capturing climate extremes.
+  Traditionally, such closures are based on heuristics and simplifying assumptions about the unresolved
+  physics. Recently, supervised-learned closures, trained offline on high-fidelity data, have been shown
+  to outperform the classical physics-based closures. However, this approach requires a significant amount
+  of high-fidelity training data and can also lead to instabilities. Reinforcement learning is emerging
+  as a potent alternative for developing such closures as it requires only low-order statistics and leads
+  to stable closures. In Scientific Multi-Agent Reinforcement Learning (SMARL) computational elements
+  serve a dual role of discretization points and learning agents. We leverage SMARL and fundamentals of
+  turbulence physics to learn closures for prototypes of atmospheric and oceanic turbulence. The policy
+  is trained using only the enstrophy spectrum, which is nearly invariant and can be estimated from a
+  few high-fidelity samples (these few samples are far from enough for supervised/offline learning). We
+  show that these closures lead to stable low-resolution simulations that, at a fraction of the cost,
+  can reproduce the high-fidelity simulations' statistics, including the tails of the probability density
+  functions. The results demonstrate the high potential of SMARL for closure modeling for GCMs, especially
+  in the regime of scarce data and indirect observations.
+significance: 4
+cited_by: 1
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

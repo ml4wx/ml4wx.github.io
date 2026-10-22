@@ -1,0 +1,63 @@
+id: arxiv-2401.04125
+title: 'DeepPhysiNet: Bridging Deep Learning and Atmospheric Physics for Accurate and Continuous Weather
+  Modeling'
+authors:
+- Wenyuan Li
+- Zili Liu
+- Keyan Chen
+- Hao Chen
+- Shunlin Liang
+- Zhengxia Zou
+- Zhenwei Shi
+date: '2024-01-04'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2401.04125'
+  openalex: W4390783887
+links:
+  paper: https://arxiv.org/abs/2401.04125
+  pdf: https://arxiv.org/pdf/2401.04125
+orgs:
+- shanghai-ai-lab
+topic: global-medium-range
+topics:
+- hybrid-parameterization
+type: model
+method:
+- physics-constrained
+- other
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: DeepPhysiNet couples MLP physics networks with hypernetworks, embedding PDE losses to link coordinates
+  and weather variables for continuous forecasting.
+abstract: 'Accurate weather forecasting holds significant importance to human activities. Currently, there
+  are two paradigms for weather forecasting: Numerical Weather Prediction (NWP) and Deep Learning-based
+  Prediction (DLP). NWP utilizes atmospheric physics for weather modeling but suffers from poor data utilization
+  and high computational costs, while DLP can learn weather patterns from vast amounts of data directly
+  but struggles to incorporate physical laws. Both paradigms possess their respective strengths and weaknesses,
+  and are incompatible, because physical laws adopted in NWP describe the relationship between coordinates
+  and meteorological variables, while DLP directly learns the relationships between meteorological variables
+  without consideration of coordinates. To address these problems, we introduce the DeepPhysiNet framework,
+  incorporating physical laws into deep learning models for accurate and continuous weather system modeling.
+  First, we construct physics networks based on multilayer perceptrons (MLPs) for individual meteorological
+  variable, such as temperature, pressure, and wind speed. Physics networks establish relationships between
+  variables and coordinates by taking coordinates as input and producing variable values as output. The
+  physical laws in the form of Partial Differential Equations (PDEs) can be incorporated as a part of
+  loss function. Next, we construct hyper-networks based on deep learning methods to directly learn weather
+  patterns from a large amount of meteorological data. The output of hyper-networks constitutes a part
+  of the weights for the physics networks. Experimental results demonstrate that, upon successful integration
+  of physical laws, DeepPhysiNet can accomplish multiple tasks simultaneously, not only enhancing forecast
+  accuracy but also obtaining continuous spatiotemporal resolution results, which is unattainable by either
+  the NWP or DLP.'
+significance: 5
+cited_by: 8
+score: 55
+highlight: false
+added: '2026-10-22'
+source: backfill

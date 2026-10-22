@@ -1,0 +1,57 @@
+id: doi-10.5194-amt-17-3029-2024
+title: 'Deep-Pathfinder: a boundary layer height detection algorithm based on image segmentation'
+authors:
+- Jasper S. Wijnands
+- Arnoud Apituley
+- Diego Alvés Gouveia
+- Jan Willem Noteboom
+date: '2024-05-17'
+year: 2024
+venue: Atmospheric measurement techniques
+venue_type: journal
+ids:
+  doi: 10.5194/amt-17-3029-2024
+  openalex: W4397004525
+links:
+  paper: https://doi.org/10.5194/amt-17-3029-2024
+orgs:
+- knmi
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Deep-Pathfinder, a U-Net segmentation model, detects boundary layer height from ceilometer lidar
+  in near real time, with competitive accuracy against two reference algorithms.
+abstract: 'A novel atmospheric layer detection approach has been developed based on deep learning techniques
+  for image segmentation. Our proof of concept estimated the layering in the atmosphere, distinguishing
+  between pollution-rich layers closer to the surface and cleaner layers aloft. Knowledge of the spatio-temporal
+  development of atmospheric layers, such as the mixing boundary layer height (MBLH), is important for
+  the dispersion of air pollutants and greenhouse gases, as well as for assessing the performance of numerical
+  weather prediction systems. Existing lidar-based layer detection algorithms typically do not use the
+  full resolution of the available data, require manual feature engineering, often do not enforce temporal
+  consistency of the layers, and lack the ability to be applied in near-real time. To address these limitations,
+  our Deep-Pathfinder algorithm represents the MBLH profile as a mask and directly predicts it from an
+  image with backscatter lidar observations. Deep-Pathfinder was applied to range-corrected signal data
+  from Lufft CHM15k ceilometers at five locations of the operational ceilometer network in the Netherlands.
+  Input samples of 224 × 224 px were extracted, each covering a 45 min observation period. A customised
+  U-Net architecture was developed with a nighttime indicator and MobileNetV2 encoder for fast inference
+  times. The model was pre-trained on 19.4×10 6 samples of unlabelled data and fine-tuned using 50 d of
+  high-resolution annotations. Qualitative and quantitative results showed competitive performance compared
+  to two reference methods: the Lufft and STRATfinder algorithms, applied to the same dataset. Deep-Pathfinder
+  enhances temporal consistency and provides near-real-time estimates at full spatial and temporal resolution.
+  These properties make our approach valuable for application in operational networks, as near-real-time
+  and high-resolution MBLH detection better meets the requirements of users, such as in aviation, weather
+  forecasting, and air quality monitoring.'
+significance: 4
+cited_by: 4
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

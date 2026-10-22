@@ -1,0 +1,51 @@
+id: doi-10.65737-airmcs2026405
+title: 'ICL Characterization of Climate Foundation Models: When Can Transformers Learn Weather and Climate?'
+authors:
+- Mosab Hawarey
+date: '2026-03-04'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.65737/airmcs2026405
+  openalex: W7133481632
+links:
+  paper: https://doi.org/10.65737/airmcs2026405
+topic: foundation-models
+topics:
+- xai-uq-physics
+type: position
+method:
+- transformer
+timescale:
+- medium
+- climate
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Theory proves climate tasks split into in-context-learnable and hard classes, predicting why
+  transformer foundation models forecast weather well but miss extreme events.
+abstract: 'Climate foundation models (FMs) have achieved remarkable success in weather forecasting, yet
+  exhibit puzzling performance gaps between tasks: deterministic field prediction rivals operational numerical
+  weather prediction, while extreme event detection lags significantly behind. We provide a theoretical
+  explanation through the lens of in-context learning (ICL). Extending the ICL characterization framework
+  to spatiotemporal climate data, we prove the Climate Prediction Dichotomy Theorem: every natural climate
+  task falls into exactly one of two complexity categories. Type A (ICL-Easy) tasks—including temperature,
+  pressure, and wind field prediction—admit additive sufficient statistics enabling attention-based computation
+  with sample complexity nICL = Θ(nERM). Type C (ICL-Hard) tasks—including extreme event detection, tipping
+  point identification, and compound event localization—require combinatorial sufficient statistics that
+  provably exceed the computational capacity of constant-depth polynomial-size transformers when the number
+  of simultaneous events J exceeds a threshold J* = O(log log n) ≈ 3–5. We establish the predictability
+  horizon constraint: weather forecasting is ICL-Easy for lead times τ < τL ≈ 14 days, while climate statistics
+  remain ICL-accessible but individual trajectories are fundamentally unpredictable. Our analysis yields
+  six testable predictions about climate FM behavior and five deployment guidelines distinguishing when
+  ICL suffices versus when fine-tuning is required. The dichotomy provides a principled foundation for
+  understanding why Pangu-Weather and GraphCast excel at field prediction while struggling with event
+  detection—and guides the design of next-generation climate AI systems.'
+significance: 4
+cited_by: 7
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

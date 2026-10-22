@@ -1,0 +1,65 @@
+id: arxiv-2505.04396
+title: Supporting renewable energy planning and operation with data-driven high-resolution ensemble weather
+  forecast
+authors:
+- Jingnan Wang
+- Jie Chao
+- Shangshang Yang
+- Kaijun Ren
+- Kefeng Deng
+- Xi Chen
+- Yaxin Liu
+- Hanqiuzi Wen
+- Ziniu Xiao
+- Lifeng Zhang
+- Xiaodong Wang
+- Jiping Guan
+- Baoxiang Pan
+date: '2025-05-07'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2505.04396'
+  openalex: W4416013669
+links:
+  paper: https://arxiv.org/abs/2505.04396
+  pdf: https://arxiv.org/pdf/2505.04396
+orgs:
+- iap-cas
+- tum
+topic: downscaling
+topics:
+- probabilistic-ensembles
+- applications-impacts
+type: model
+method:
+- other
+timescale:
+- medium
+spatial:
+- local
+data:
+- nwp-analysis
+- km-scale-sim
+status: pre-operational
+summary: Combines a learned high-resolution wind-farm climatological prior with coarse forecasts to produce
+  a 1 km, 100-member, 10-day ensemble in under an hour on one GPU.
+abstract: The planning and operation of renewable energy, especially wind power, depend crucially on accurate,
+  timely, and high-resolution weather information. Coarse-grid global numerical weather forecasts are
+  typically downscaled to meet these requirements, introducing challenges of scale inconsistency, process
+  representation error, computation cost, and entanglement of distinct uncertainty sources from chaoticity,
+  model bias, and large-scale forcing. We address these challenges by learning the climatological distribution
+  of a target wind farm using its high-resolution numerical weather simulations. An optimal combination
+  of this learned high-resolution climatological prior with coarse-grid large scale forecasts yields highly
+  accurate, fine-grained, full-variable, large ensemble of weather pattern forecasts. Using observed meteorological
+  records and wind turbine power outputs as references, the proposed methodology verifies advantageously
+  compared to existing numerical/statistical forecasting-downscaling pipelines, regarding either deterministic/probabilistic
+  skills or economic gains. Moreover, a 100-member, 10-day forecast with spatial resolution of 1 km and
+  output frequency of 15 min takes < 1 hour on a moderate-end GPU, as contrast to $\mathcal{O}(10^3)$
+  CPU hours for conventional numerical simulation. By drastically reducing computational costs while maintaining
+  accuracy, our method paves the way for more efficient and reliable renewable energy planning and operation.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

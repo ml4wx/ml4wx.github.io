@@ -1,0 +1,48 @@
+id: doi-10.1016-j.procs.2023.08.160
+title: 'WF-UNet: Weather Data Fusion using 3D-UNet for Precipitation Nowcasting'
+authors:
+- Christos Kaparakis
+- S. Mehrkanoon
+date: '2023-01-01'
+year: 2023
+venue: Procedia Computer Science
+venue_type: journal
+ids:
+  doi: 10.1016/j.procs.2023.08.160
+  openalex: W4386336931
+links:
+  paper: https://doi.org/10.1016/j.procs.2023.08.160
+  pdf: https://doi.org/10.1016/j.procs.2023.08.160
+topic: nowcasting
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- era5
+status: research
+summary: WF-UNet fuses precipitation and wind radar fields in a 3D-UNet for 1–3 hour nowcasts over western
+  Europe, with MSE 22% lower at 1 hour.
+abstract: Designing early warning systems for harsh weather and its effects, such as urban flooding or
+  landslides, requires accurate short-term forecasts (nowcasts) of precipitation. Nowcasting is a significant
+  task with several environmental applications, such as agricultural management or increasing flight safety.
+  In this study, we investigate the use of a UNet core model and its extension for precipitation nowcasting
+  in western Europe for up to 3 hours ahead. In particular, we propose the Weather Fusion UNet (WF-UNet)
+  model, which utilizes the Core 3D-UNet model and integrates precipitation and wind speed variables as
+  input in the learning process and analyzes its influences on the precipitation target task. We have
+  collected six years of precipitation and wind radar images from Jan 2016 to Dec 2021 of 14 European
+  countries, with 1-hour temporal resolution and 31 square km spatial resolution based on the ERA5 dataset,
+  provided by Copernicus, the European Union's Earth observation programme. We compare the proposed WF-UNet
+  model to the persistence model as well as other UNet-based architectures that are trained only using
+  precipitation radar input data. The obtained results show that WF-UNet outperforms the other examined
+  best-performing architectures by 22%, 8% and 3% lower MSE at a horizon of 1, 2 and 3 hours respectively.
+significance: 2
+cited_by: 39
+score: 8
+highlight: false
+added: '2026-10-22'
+source: snowball

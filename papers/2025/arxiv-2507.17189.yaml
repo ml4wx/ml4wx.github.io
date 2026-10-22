@@ -1,0 +1,49 @@
+id: arxiv-2507.17189
+title: 'Met$^2$Net: A Decoupled Two-Stage Spatio-Temporal Forecasting Model for Complex Meteorological
+  Systems'
+authors:
+- Shaohan Li
+- Hao Yang
+- Min Chen
+- Xiaolin Qin
+date: '2025-07-23'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2507.17189'
+  openalex: W4414879437
+links:
+  paper: https://arxiv.org/abs/2507.17189
+  pdf: https://arxiv.org/pdf/2507.17189
+  code: https://github.com/ShremG/Met2Net
+topic: global-medium-range
+type: model
+method:
+- transformer
+timescale:
+- short
+data:
+- era5
+status: research
+summary: Two-stage Met2Net with per-variable encoders and self-attention cuts near-surface temperature
+  MSE by 28.8% and humidity MSE by 23.4% versus baselines.
+abstract: The increasing frequency of extreme weather events due to global climate change urges accurate
+  weather prediction. Recently, great advances have been made by the \textbf{end-to-end methods}, thanks
+  to deep learning techniques, but they face limitations of \textit{representation inconsistency} in multivariable
+  integration and struggle to effectively capture the dependency between variables, which is required
+  in complex weather systems. Treating different variables as distinct modalities and applying a \textbf{two-stage
+  training approach} from multimodal models can partially alleviate this issue, but due to the inconformity
+  in training tasks between the two stages, the results are often suboptimal. To address these challenges,
+  we propose an implicit two-stage training method, configuring separate encoders and decoders for each
+  variable. In detailed, in the first stage, the Translator is frozen while the Encoders and Decoders
+  learn a shared latent space, in the second stage, the Encoders and Decoders are frozen, and the Translator
+  captures inter-variable interactions for prediction. Besides, by introducing a self-attention mechanism
+  for multivariable fusion in the latent space, the performance achieves further improvements. Empirically,
+  extensive experiments show the state-of-the-art performance of our method. Specifically, it reduces
+  the MSE for near-surface air temperature and relative humidity predictions by 28.82\% and 23.39\%, respectively.
+  The source code is available at https://github.com/ShremG/Met2Net.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

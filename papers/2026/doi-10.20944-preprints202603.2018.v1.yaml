@@ -1,0 +1,56 @@
+id: doi-10.20944-preprints202603.2018.v1
+title: 'AGToLightM: A Deep Learning Model for 60-Minute Thunderstorm Probability Nowcasting by Fusing
+  FY-4B Satellite Infrared and Ground-Based Lightning Data'
+authors:
+- Junjie Yan
+- Jun Liu
+- Jianhua Qu
+- Runjia Li
+date: '2026-03-25'
+year: 2026
+venue: Preprints.org
+venue_type: preprint
+ids:
+  doi: 10.20944/preprints202603.2018.v1
+  openalex: W7140317247
+links:
+  paper: https://doi.org/10.20944/preprints202603.2018.v1
+  pdf: https://www.preprints.org/frontend/manuscript/e9e6ba98535ca52d9d8c131250985a84/download_pub
+orgs:
+- cma
+topic: nowcasting
+topics:
+- extremes-hazards
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+- stations
+status: research
+summary: CBAM-enhanced CNN fuses FY-4B infrared and lightning data for 60-minute thunderstorm probability
+  nowcasts, with best CSI 0.327 across three Chinese regions.
+abstract: Lightning activity reflects the occurrence of severe convective events and represents the most
+  prominent physical feature of thunderstorm weather. This study utilizes FY-4B/AGRI multi-channel infrared
+  brightness temperature data (with a temporal resolution of 15 minutes and spatial resolution of 4 km)
+  combined with ground-based lightning observation data to construct the AGToLightM model for predicting
+  the probability of thunderstorm occurrence within the next 60 minutes. Based on lightning event characteristics,
+  the model incorporates a Convolutional Block Attention Mechanism (CBAM) to enhance its ability to extract
+  key spatial and spectral features at cloud tops. An adaptive weighted loss function is employed to address
+  the class imbalance issue caused by sparse positive lightning samples. Three study regions—North China,
+  East China, and South China—were selected, utilizing summer 2025 data for model training and validation.
+  Results demonstrate that AGToLightM effectively captures the spatial distribution and evolution trends
+  of thunderstorms, achieving a best Critical Success Index (CSI) of 0.327. In case studies, areas with
+  forecast probabilities exceeding 60% showed spatial consistency with regions exhibiting radar echoes
+  above 50 dBZ. This study validates the effectiveness of the AGToLightM model in integrating multi-source
+  meteorological data for severe convective forecasting, providing technical guidance for enhancing the
+  reliability of short-term thunderstorm forecasts.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

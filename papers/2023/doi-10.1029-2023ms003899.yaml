@@ -1,0 +1,55 @@
+id: doi-10.1029-2023ms003899
+title: A Variational LSTM Emulator of Sea Level Contribution From the Antarctic Ice Sheet
+authors:
+- Peter L. Vankatwyk
+- B. Fox-Kemper
+- H. Seroussi
+- S. Nowicki
+- K. Bergen
+date: '2023-12-01'
+year: 2023
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2023ms003899
+  openalex: W4390140373
+links:
+  paper: https://doi.org/10.1029/2023ms003899
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2023MS003899
+topic: climate-emulation
+type: model
+method:
+- rnn
+- classical-ml
+timescale:
+- climate
+spatial:
+- global
+data:
+- other
+status: research
+summary: Variational LSTM emulator of ISMIP6 Antarctic ice sheet sea level projections beats a Gaussian
+  process emulator, with 0.46 mm SLE versus 0.73 mm SLE mean absolute error.
+abstract: 'Abstract The Antarctic ice sheet (AIS) will be a dominant contributor to global mean sea level
+  rise in the 21st century but remains a major source of uncertainty. The Ice Sheet Model Intercomparison
+  for CMIP6 (ISMIP6) is an ensemble of continental‐scale models for studying the evolution of the AIS
+  and projecting its future contribution to sea level. Due to their complexity and computational cost,
+  ISMIP6 simulations are sparse and generated infrequently. Emulators are smaller‐scale models that approximate
+  ISMs and enable experimentation and exploration into the drivers of sea level change. We introduce a
+  neural network (NN) emulator to approximate the ISMIP6 ensemble, using a variational Long Short‐Term
+  Memory (LSTM) with Monte Carlo dropout to quantify single‐projection uncertainty. The proposed NN emulator
+  is compared to a Gaussian Process (GP) emulator on four criteria: accuracy of point estimates and predictive
+  distributions of individual model projections, approximation of the ensemble projections, and model
+  training time. The NN predicts more accurately on single projections, with a mean absolute error of
+  0.46 mm Sea Level Equivalent (SLE) versus 0.73 mm SLE for the GP, and has more accurate uncertainty
+  estimates. The NN emulator also better approximates the ensemble distribution of ISMIP6 model projections,
+  with a Kullback‐Leibler divergence of 18.26 versus 199.14 for GP at the projection year 2100. The NN
+  enables more accurate experimentation with a reduced runtime, offering a new tool for understanding
+  the important role of regional precipitation, ice sheet drainage systems, and interannual and longer
+  timescale dynamics.'
+significance: 3
+cited_by: 25
+score: 12
+highlight: false
+added: '2026-10-22'
+source: snowball

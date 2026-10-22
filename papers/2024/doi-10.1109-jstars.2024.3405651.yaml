@@ -1,0 +1,57 @@
+id: doi-10.1109-jstars.2024.3405651
+title: Warm-Season Microwave Integrated Retrieval System Precipitation Improvement Using Machine Learning
+  Methods
+authors:
+- Shu-Yan Liu
+- C. Grassotti
+- Q. Liu
+date: '2024-01-01'
+year: 2024
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2024.3405651
+  openalex: W4399039646
+links:
+  paper: https://doi.org/10.1109/jstars.2024.3405651
+  pdf: https://doi.org/10.1109/jstars.2024.3405651
+orgs:
+- colorado-state-university
+- noaa
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- radar
+status: research
+summary: U-Net models correct MiRS satellite precipitation over the continental US, raising spatial correlation
+  from 0.75 to 0.89 and reducing bias from 11.95% to -6.33%.
+abstract: This study compares the performance of five selected machine learning models regarding precipitation
+  climatology during the warm season in 2022 and 2023 over the Continental U.S. Input features included
+  retrieved products from the Microwave Integrated Retrieval System (MiRS) based on NOAA-20 ATMS data.
+  The radar-based instantaneous Multi-Radar Multi-Sensor System precipitation was used for model training
+  and validation. Among the models, three used a U-Net architecture and two used a Deep Neural Network
+  (DNN) architecture. The U-Net models all significantly outperformed DNN models for the evaluated metrics.
+  While the DNN architecture can only learn from local inputs, the U-Net also has the capability to learn
+  from neighborhood spatial patterns. As such, the DNN overcorrected the precipitation amounts that MiRS
+  had overestimated, leading to net underestimation, but also failed to improve the overall performance
+  relative to the original MiRS estimates. The U-Net not only corrected MiRS overestimation in the central
+  U.S., but also improved the MiRS dry bias over the Southeast. Of the five experiments, that which used
+  the MiRS retrieved column-integrated hydrometeors of graupel water path, rain water path, cloud liquid
+  water, total precipitable water and geolocation information demonstrated the best performance, improving
+  the MiRS spatial correlation coefficient from 0.75 to 0.89 and reducing the mean bias percentage from
+  11.95% to -6.33% for 2022 accumulated precipitation. This suggests that applying an appropriate architecture
+  and input features provides an opportunity to determine more accurate physical and statistical relationships
+  which can include spatial and regional dependence, leading to improved microwave-based precipitation
+  estimates.
+significance: 3
+cited_by: 2
+score: 47
+highlight: false
+added: '2026-10-22'
+source: snowball

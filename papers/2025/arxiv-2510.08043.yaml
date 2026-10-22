@@ -1,0 +1,56 @@
+id: arxiv-2510.08043
+title: Climate Knowledge in Large Language Models
+authors:
+- Ivan Kuznetsov
+- Jacopo Grassi
+- Dmitrii Pantiukhin
+- Boris Shapkin
+- Thomas Jung
+- Nikolay Koldunov
+date: '2025-10-09'
+year: 2025
+venue: Artificial Intelligence for the Earth Systems
+venue_type: journal
+ids:
+  arxiv: '2510.08043'
+  doi: 10.1175/aies-d-26-0017.1
+  openalex: W4416401421
+links:
+  paper: https://doi.org/10.1175/aies-d-26-0017.1
+  pdf: https://arxiv.org/pdf/2510.08043
+topic: llms-agents
+topics:
+- benchmarks-data-eval
+type: evaluation
+method:
+- llm
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Evaluates LLMs' parametric recall of July 2-m temperature normals against ERA5, finding 3-6 °C
+  RMSE and failure to reproduce regional warming patterns.
+abstract: 'Large language models (LLMs) are increasingly deployed for climate-related applications, where
+  understanding internal climatological knowledge is crucial for reliability and misinformation risk assessment.
+  Despite growing adoption, the capacity of LLMs to recall climate normals from parametric knowledge remains
+  largely uncharacterized. We investigate the capacity of contemporary LLMs to recall climate normals
+  without external retrieval, focusing on a prototypical query: mean July 2-m air temperature 1991-2020
+  at specified locations. We construct a global grid of queries at 1° resolution land points, providing
+  coordinates and location descriptors, and validate responses against ERA5 reanalysis. Results show that
+  LLMs encode non-trivial climate structure, capturing latitudinal and topographic patterns, with root-mean-square
+  errors of 3-6 °C and biases of $\pm$1 °C. However, spatially coherent errors remain, particularly in
+  mountains and high latitudes. Performance degrades sharply above 1500 m, where RMSE reaches 5-13 °C
+  compared to 2-4 °C at lower elevations. We find that including geographic context (country, city, region)
+  reduces errors by 27% on average, with larger models being most sensitive to location descriptors. While
+  models capture the global mean magnitude of observed warming between 1950-1974 and 2000-2024, they fail
+  to reproduce spatial patterns of temperature change, which directly relate to assessing climate change.
+  This limitation highlights that while LLMs may capture present-day climate distributions, they struggle
+  to represent the regional and local expression of long-term shifts in temperature essential for understanding
+  climate dynamics. Our evaluation framework provides a reproducible benchmark for quantifying parametric
+  climate knowledge in LLMs and complements existing climate communication assessments.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,50 @@
+id: arxiv-2508.16686
+title: Multidimensional Distributional Neural Network Output Demonstrated in Super-Resolution of Surface
+  Wind Speed
+authors:
+- Harrison J. Goldwyn
+- Mitchell Krock
+- Johann Rudi
+- Daniel Getter
+- Julie Bessac
+date: '2025-08-21'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2508.16686'
+links:
+  paper: https://arxiv.org/abs/2508.16686
+  pdf: https://arxiv.org/pdf/2508.16686
+topic: downscaling
+topics:
+- xai-uq-physics
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- other
+status: research
+summary: A neural network trained with a closed-form multidimensional Gaussian loss gives spatially correlated,
+  heteroscedastic uncertainty for surface wind speed super-resolution downscaling.
+abstract: Accurate quantification of uncertainty in neural network predictions remains a central challenge
+  for scientific applications involving high-dimensional, correlated data. While existing methods capture
+  either aleatoric or epistemic uncertainty, few offer closed-form, multidimensional distributions that
+  preserve spatial correlation while remaining computationally tractable. In this work, we present a framework
+  for training neural networks with a multidimensional Gaussian loss, generating closed-form predictive
+  distributions over outputs with non-identically distributed and heteroscedastic structure. Our approach
+  captures aleatoric uncertainty by iteratively estimating the means and covariance matrices, and is demonstrated
+  on a super-resolution example. We leverage a Fourier representation of the covariance matrix to stabilize
+  network training and preserve spatial correlation. We introduce a novel regularization strategy -- referred
+  to as information sharing -- that interpolates between image-specific and global covariance estimates,
+  enabling convergence of the super-resolution downscaling network trained on image-specific distributional
+  loss functions. This framework allows for efficient sampling, explicit correlation modeling, and extensions
+  to more complex distribution families all without disrupting prediction performance. We demonstrate
+  the method on a surface wind speed downscaling task and discuss its broader applicability to uncertainty-aware
+  prediction in scientific models.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

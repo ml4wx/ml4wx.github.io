@@ -1,0 +1,64 @@
+id: arxiv-2504.09940
+title: 'TianQuan-S2S: A Subseasonal-to-Seasonal Global Weather Model via Incorporate Climatology State'
+authors:
+- Guowen Li
+- Xintong Liu
+- Yang Liu
+- Mengxuan Chen
+- Shilei Cao
+- Xuehe Wang
+- Juepeng Zheng
+- Jinxiao Zhang
+- Haoyuan Liang
+- Lixian Zhang
+- Jiuke Wang
+- Meng Jin
+- Hong Cheng
+- Haohuan Fu
+date: '2025-04-14'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2504.09940'
+  openalex: W4415158912
+links:
+  paper: https://arxiv.org/abs/2504.09940
+  pdf: https://arxiv.org/pdf/2504.09940
+  code: https://github.com/zhangminglang42/TianQuan
+orgs:
+- tsinghua-university
+topic: s2s-seasonal
+topics:
+- global-medium-range
+- probabilistic-ensembles
+type: model
+method:
+- transformer
+timescale:
+- s2s
+spatial:
+- global
+data:
+- era5
+status: research
+summary: TianQuan-S2S adds climatology to patch embeddings and uses an uncertainty-augmented Transformer,
+  beating ECMWF-S2S and FuXi-S2S on ERA5 in key variables.
+abstract: Accurate Subseasonal-to-Seasonal (S2S) forecasting is vital for decision-making in agriculture,
+  energy production, and emergency management. However, it remains a challenging and underexplored problem
+  due to the chaotic nature of the weather system. Recent data-driven studies have shown promising results,
+  but their performance is limited by the inadequate incorporation of climate states and a model tendency
+  to degrade, progressively losing fine-scale details and yielding over-smoothed forecasts. To overcome
+  these limitations, we propose TianQuan-S2S, a global S2S forecasting model that integrates initial weather
+  states with climatological means via incorporating climatology into patch embedding and enhancing variability
+  capture through an uncertainty-augmented Transformer. Extensive experiments on the Earth Reanalysis
+  5 (ERA5) reanalysis dataset demonstrate that our model yields a significant improvement in both deterministic
+  and ensemble forecasting over the climatology mean, traditional numerical methods, and data-driven models.
+  Ablation studies empirically show the effectiveness of our model designs. Remarkably, our model outperforms
+  skillful numerical ECMWF-S2S and advanced data-driven Fuxi-S2S in key meteorological variables. The
+  code implementation can be found in https://github.com/zhangminglang42/TianQuan.
+significance: 5
+cited_by: 1
+score: 40
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,49 @@
+id: arxiv-2603.00109
+title: 'CASCADE: Cross-scale Advective Super-resolution with Climate Assimilation and Downscaling Evolution'
+authors:
+- Alexander Kovalenko
+date: '2026-02-18'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2603.00109'
+  openalex: W7133328987
+links:
+  paper: https://arxiv.org/abs/2603.00109
+  pdf: https://arxiv.org/pdf/2603.00109
+topic: downscaling
+topics:
+- extremes-hazards
+type: model
+method:
+- other
+- physics-constrained
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: CASCADE reframes radar super-resolution as flow-conditioned semi-Lagrangian advection, improving
+  PSNR, CSI and HSS for 4x severe convective storm reconstruction on SEVIR.
+abstract: 'Super-resolution of geophysical fields presents unique challenges beyond natural image enhancement:
+  fine-scale structures must respect physical dynamics, conserve mass and energy, and evolve coherently
+  in time. These constraints are especially critical for extreme events, where rare, localized, high-intensity
+  features drive impacts and where temporally inconsistent "hallucinated" detail can misrepresent hazards.
+  We introduce CASCADE (Cross-scale Advective Super-resolution with Climate Assimilation and Downscaling
+  Evolution), a framework that reframes spatiotemporal super-resolution as an explicit transport process
+  across scales. Rather than hallucinating high-frequency content per pixel, CASCADE reconstructs fine
+  structure by iteratively advecting coarse information along learned, flow-conditioned velocity fields
+  through semi-Lagrangian warping. The architecture decomposes motion into resolved (large-scale) and
+  subgrid (unresolved) components, mirroring the closure problem in numerical weather prediction, and
+  enforces low-resolution consistency through an assimilation-style innovation step. Evaluated on SEVIR
+  radar data for 4x super-resolution of severe convective storms, CASCADE outperforms strong baselines
+  across both continuous metrics (PSNR, SSIM, MAE) and threshold-based skill scores (CSI, HSS, POD) while
+  providing interpretable diagnostics through visualizable velocity and correction fields. By encoding
+  advection as the fundamental operator rather than learning it implicitly, CASCADE produces temporally
+  coherent, physically consistent, and mass-conserving reconstructions well suited to advection-dominated
+  extremes in atmospheric and oceanic applications.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

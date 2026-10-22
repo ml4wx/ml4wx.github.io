@@ -1,0 +1,61 @@
+id: doi-10.1016-j.cageo.2025.105992
+title: Uncertainty-aware methods for enhancing rainfall prediction with deep-learning based post-processing
+  segmentation
+authors:
+- Simone Monaco
+- Luca Monaco
+- Daniele Apiletti
+- Roberto Cremonini
+- Secondo Barbero
+date: '2025-07-15'
+year: 2025
+venue: Computers & Geosciences
+venue_type: journal
+ids:
+  doi: 10.1016/j.cageo.2025.105992
+  openalex: W4412422747
+links:
+  paper: https://doi.org/10.1016/j.cageo.2025.105992
+topic: post-processing
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- cnn
+- other
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: SDE U-Net, a neural SDE segmentation model, post-processes NWP daily precipitation in NW Italy
+  and gives the lowest RMSE for intense events.
+abstract: Precipitation forecast is critical in flood management, agricultural planning, water resource
+  allocation, and weather warnings. Despite significant advancements in Numerical Weather Prediction (NWP)
+  models, these systems often exhibit substantial biases and errors, particularly at high spatial and
+  temporal resolutions. To address these limitations, we develop and evaluate uncertainty-aware deep learning
+  ensemble architectures, focusing on characterizing forecast uncertainties while achieving high accuracy
+  and an optimal balance between sharpness and reliability. This study presents SDE U-Net, a novel adaptation
+  of SDE-Net designed specifically for segmentation tasks in precipitation forecasting. We conduct a comprehensive
+  evaluation of state-of-the-art ensemble architectures, including SDE U-Net, and compare their forecast
+  uncertainty against that of a Poor Man’s Ensemble (PME, i.e. NWPs forecast average) across diverse meteorological
+  conditions, ranging from non-intense precipitation patterns to intense weather events. As an example
+  case, we focus on predicting daily cumulative precipitation in northwest Italy, though our approach
+  is broadly generalizable. Our findings demonstrate that all the evaluated probabilistic deep learning
+  models outperform the PME benchmark in terms of median RMSE for both non-intense and intense precipitation
+  events. Among them, SDE U-Net achieves the best overall performance, delivering the lowest RMSE for
+  intense events ( 2 . 637 × 1 0 − 2 ) and demonstrating a more stable error distribution compared to
+  other models. For non-intense events, SDE U-Net perform comparably to other deep learning models, still
+  notably surpassing the baselines. Moreover, SDE U-Net effectively balances sharpness and reliability,
+  making it particularly suitable for operational forecasting of extreme weather. Integrating uncertainty-aware
+  models like SDE U-Net into forecasting workflows can enhance decision-making and preparedness for weather-related
+  hazards.
+significance: 3
+cited_by: 4
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

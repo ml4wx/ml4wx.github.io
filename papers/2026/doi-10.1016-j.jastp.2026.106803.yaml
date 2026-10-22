@@ -1,0 +1,60 @@
+id: doi-10.1016-j.jastp.2026.106803
+title: Integrating satellite-based atmospheric soundings and machine learning to correct radiosonde temperature
+  biases
+authors:
+- Frederick Mokibelo Mashao
+- Danitza Klopper
+- Yehenew G. Kifle
+- Hector Chikoore
+- Ricardo K. Sakai
+- Kingsley Kwabena Ayisi
+- Belay Demoz
+date: '2026-04-06'
+year: 2026
+venue: Journal of Atmospheric and Solar-Terrestrial Physics
+venue_type: journal
+ids:
+  doi: 10.1016/j.jastp.2026.106803
+  openalex: W7149934770
+links:
+  paper: https://doi.org/10.1016/j.jastp.2026.106803
+topic: observations-remote-sensing
+topics:
+- post-processing
+type: model
+method:
+- classical-ml
+spatial:
+- local
+data:
+- satellite
+- era5
+- stations
+status: research
+summary: Random Forest uses COSMIC-2 and NOAA satellite soundings with ERA5 to correct radiosonde temperature
+  biases, reducing RMSE by 0.56 to 1.25 K.
+abstract: Upper-air temperature is essential for assimilation in Numerical Weather Prediction systems
+  and climate change detection, yet radiosonde (RS) measurements often contain systematic biases that
+  compromise long-term consistency. Conventional approaches to bias characterization and correction in
+  inverse modelling remain limited, relying heavily on model assumptions, expert judgment, and efficiency-driven
+  simplifications. This study develops a data-driven framework to characterise and correct RS temperature
+  biases by integrating satellite-based atmospheric soundings (COSMIC-2, Suomi-NPP, NOAA-20), ERA5 reanalysis
+  data and machine-learning methods during the 2023/2024 seasons. The objectives are to quantify RS temperature
+  biases at Beltsville using Sterling and satellite data as references and implement a transferable correction
+  model for improved upper-air consistency. A Random Forest model is used to identify and predict systematic
+  bias structures, while uncertainty characteristics are evaluated using Gaussian Mixture Model clustering
+  based on Sterling data. The trained model is then applied to independent Beltsville RS datasets to evaluate
+  its generalization performance. Raw RS profiles exhibited substantial mean biases of -1K to 3K and RMSE
+  values of 1.1 K to 3.9 K across all seasons. After correction, systematic biases were substantially
+  reduced, with mean errors constrained between 0.3 K and 1 K, standard deviations ranging from 0.19 K
+  to 1.20 K, and RMSE improvements of 0.56–1.25 K in the mid-to upper troposphere, relative to independent
+  RS41-GDP.1 GRUAN observations. While the current framework demonstrates robust performance at the tested
+  stations and seasons, further evaluation across additional geographic regions, seasons, and satellite
+  instruments is required to fully assess its potential for broader spatiotemporal application and operational
+  integration.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

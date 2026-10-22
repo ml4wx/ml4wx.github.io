@@ -1,0 +1,61 @@
+id: arxiv-2505.11511
+title: Predicting temperatures in Brazilian states capitals via Machine Learning
+authors:
+- Sidney T. da Silva
+- Enrique C. Gabrick
+- Ana Luiza R. de Moraes
+- Ricardo L. Viana
+- Antonio M. Batista
+- Iberê L. Caldas
+- Jürgen Kurths
+date: '2025-05-02'
+year: 2025
+venue: The European Physical Journal Special Topics
+venue_type: journal
+ids:
+  arxiv: '2505.11511'
+  doi: 10.1140/epjs/s11734-025-01710-z
+  openalex: W4410951295
+links:
+  paper: https://doi.org/10.1140/epjs/s11734-025-01710-z
+  pdf: https://arxiv.org/pdf/2505.11511
+orgs:
+- pik
+topic: local-forecasting
+topics:
+- climate-analysis-attribution
+type: application
+method:
+- classical-ml
+timescale:
+- seasonal
+spatial:
+- local
+data:
+- stations
+- other
+status: research
+summary: Random forests forecast monthly temperatures for 27 Brazilian state capitals using past temperatures
+  and CO2, CH4 and N2O emissions, with NRMSE below 0.083.
+abstract: 'Climate change refers to substantial long-term variations in weather patterns. In this work,
+  we employ a Machine Learning (ML) technique, the Random Forest (RF) algorithm, to forecast the monthly
+  average temperature for Brazilian''s states capitals (27 cities) and the whole country, from January
+  1961 until December 2022. To forecast the temperature at $k$-month, we consider as features in RF: $i)$
+  global emissions of carbon dioxide (CO$_2$), methane (CH$_4$), and nitrous oxide (N$_2$O) at $k$-month;
+  $ii)$ temperatures from the previous three months, i.e., $(k-1)$, $(k-2)$ and $(k-3)$-month; $iii)$
+  combination of $i$ and $ii$. By investigating breakpoints in the time series, we discover that 24 cities
+  and the gases present breakpoints in the 80''s and 90''s. After the breakpoints, we find an increase
+  in the temperature and the gas emission. Thereafter, we separate the cities according to their geographical
+  position and employ the RF algorithm to forecast the temperature from 2010-08 until 2022-12. Based on
+  $i$, $ii$, and $iii$, we find that the three inputs result in a very precise forecast, with a normalized
+  root mean squared error (NMRSE) less than 0.083 for the considered cases. From our simulations, the
+  better forecasted region is Northeast through $iii$ (NMRSE = 0.012). Furthermore, we also investigate
+  the forecasting of anomalous temperature data by removing the annual component of each time series.
+  In this case, the best forecasting is obtained with strategy $i$, with the best region being Northeast
+  (NRMSE = 0.090).'
+significance: 2
+cited_by: 2
+score: 18
+highlight: false
+added: '2026-10-22'
+source: backfill

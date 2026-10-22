@@ -1,0 +1,60 @@
+id: doi-10.1029-2025ea004853
+title: Machine Learning‐Based Swath Bias Correction for OCO‐3 Snapshot Area Mapping Mode Observations
+authors:
+- Steffen Mauceri
+- Robert Nelson
+- C. O’Dell
+- Thomas E. Taylor
+- Matthäus Kiel
+- Steven T. Massie
+- Vivienne H. Payne
+- Abhishek Chatterjee
+date: '2026-07-01'
+year: 2026
+venue: Earth and Space Science
+venue_type: journal
+ids:
+  doi: 10.1029/2025ea004853
+  openalex: W7170135374
+links:
+  paper: https://doi.org/10.1029/2025ea004853
+orgs:
+- caltech
+- colorado-state-university
+- nasa
+topic: observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Random forest identifies and corrects swath-based XCO2 biases in 19,839 OCO-3 SAM scenes, with
+  79% precision and 63% recall; about 9% of scenes flagged.
+abstract: 'Abstract Space‐based monitoring of urban carbon dioxide (CO 2 ) emissions is essential for
+  climate policy, but systematic measurement biases can compromise emission quantification accuracy. NASA''s
+  Orbiting Carbon Observatory‐3 (OCO‐3) provides unique Snapshot Area Mapping (SAM) mode observations
+  that can capture city‐scale CO 2 plumes in single overpasses, yet some SAMs exhibit swath‐based XCO
+  2 biases of 1–3 ppm that can mask or artificially enhance true emission signals. Here, we develop a
+  machine learning framework to identify and correct these artifacts while preserving genuine atmospheric
+  CO 2 variations. We trained a random forest classifier on 1,723 manually labeled SAMs spanning August
+  2019 to February 2025 to distinguish scenes requiring bias correction from those with legitimate spatial
+  gradients in XCO 2 . The model uses five key diagnostic features identified through systematic feature
+  selection: inter‐swath XCO 2 discontinuity, scene homogeneity, coarse‐ and fine‐mode aerosol optical
+  depths, and spectral alignment corrections. A median‐alignment algorithm then removes detected biases
+  by adjusting swath‐level offsets while conserving total column CO 2 . The classifier achieves a precision
+  and recall of 79% and 63%, respectively, prioritizing the avoidance of false corrections that could
+  otherwise remove true atmospheric signals. Applied to the complete OCO‐3 SAM record, consisting of 19,839
+  unique SAMs, we estimate that approximately 9% have an identifiable swath bias. This work addresses
+  a critical OCO‐3 data quality issue that has hindered the operational use of OCO‐3 SAMs for urban fossil
+  fuel emissions monitoring. The proposed correction framework enhances OCO‐3 data reliability for use
+  in updating emission inventories and provides methodological insights for future greenhouse gas satellite
+  missions.'
+significance: 3
+cited_by: 0
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,55 @@
+id: doi-10.1029-2023ms004184
+title: Regression Forest Approaches to Gravity Wave Parameterization for Climate Projection
+authors:
+- David S. Connelly
+- Edwin Paul Gerber
+date: '2024-07-01'
+year: 2024
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2023ms004184
+  openalex: W4400971669
+links:
+  paper: https://doi.org/10.1029/2023ms004184
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2023MS004184
+orgs:
+- nyu-m2lines
+topic: hybrid-parameterization
+topics:
+- xai-uq-physics
+type: model
+method:
+- classical-ml
+timescale:
+- climate
+spatial:
+- global
+data:
+- other
+status: research
+summary: Boosted and random regression forests emulate a gravity wave parameterization; the boosted forest
+  matches a neural network offline and gives lower control-climate biases when coupled.
+abstract: Abstract We train random and boosted forests, two machine learning architectures based on regression
+  trees, to emulate a physics‐based parameterization of atmospheric gravity wave momentum transport. We
+  compare the forests to a neural network benchmark, evaluating both offline errors and online performance
+  when coupled to an atmospheric model under the present day climate and in 800 and 1,200 ppm CO 2 global
+  warming scenarios. Offline, the boosted forest exhibits similar skill to the neural network, while the
+  random forest scores significantly lower. Both forest models couple stably to the atmospheric model,
+  and control climate integrations with the boosted forest exhibit lower biases than those with the neural
+  network. Integrations with all three data‐driven emulators successfully capture the Quasi‐Biennial Oscillation
+  (QBO) and sudden stratospheric warmings, key modes of stratospheric variability, with the boosted forest
+  more accurate than the random forest in replicating their statistics across our range of carbon dioxide
+  perturbations. The boosted forest and neural network capture the sign of the QBO period response to
+  increased CO 2 , though both struggle with the magnitude of this response under the more extreme 1,200
+  ppm scenario. To investigate the connection between performance in the control climate and the ability
+  to generalize, we use techniques from interpretable machine learning to understand how the data‐driven
+  methods use physical information. We leverage this understanding to develop a retraining procedure that
+  improves the coupled performance of the boosted forest in the control climate and under the 800 ppm
+  CO 2 scenario.
+significance: 5
+cited_by: 9
+score: 30
+highlight: false
+added: '2026-10-22'
+source: backfill

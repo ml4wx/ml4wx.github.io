@@ -1,0 +1,53 @@
+id: arxiv-2605.12762
+title: Multi-Quantile Regression for Extreme Precipitation Downscaling
+authors:
+- Hamed Najafi
+- Gareth Lagerwall
+- Jayantha Obeysekera
+- Jason Liu
+date: '2026-05-12'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.12762'
+  openalex: W7161140839
+links:
+  paper: https://arxiv.org/abs/2605.12762
+  pdf: https://arxiv.org/pdf/2605.12762
+topic: downscaling
+topics:
+- extremes-hazards
+type: model
+method:
+- cnn
+- gan-vae
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Q-SRDRN multi-quantile downscaling network raises extreme precipitation detection at 200 mm/day
+  by 18x over a deterministic baseline in Florida.
+abstract: 'Deep super-resolution networks for precipitation downscaling achieve strong bulk skill yet
+  systematically under-predict the heavy-tail events that drive flood risk. We demonstrate that the primary
+  obstacle is the loss function, not the data: under intensity-weighted MAE, real and synthetic labels
+  at the same input are simply averaged, meaning data augmentation shifts the predicted mean rather than
+  the conditional distribution. We resolve this with Q-SRDRN, a multi-quantile super-resolution network
+  trained with pinball loss at tau in 0.50, 0.95, 0.99, 0.999. Two CNN-specific design choices make this
+  practical: IncrementBound enforces monotonicity while preserving each quantile channel''s gradient identity,
+  and separate per-quantile output heads provide independent filter banks for bulk and tail detection.
+  Under this design, data augmentation via cVAE becomes complementary: the median head absorbs synthetic
+  patterns without contaminating upper quantiles. Empirically, on Florida (convective/tropical-cyclone
+  dominated), the un-augmented Q-SRDRN P999 head detects 1,598 of 2,111 events at 200 mm/day versus 88
+  for the deterministic baseline--an 18x detection-rate gain (4.2% to 75.7%)--with 63% lower KL divergence
+  and 3.9% lower RMSE. Adding cVAE-generated samples lifts the P50 channel from 14 to 1,038 hits at 200
+  mm/day. On California (atmospheric-river dominated), the architecture reaches near-perfect detection
+  (P999 SEDI >= 0.996 through 300 mm/day). On Texas, the baseline catches only 2 of 10,720 events at 200
+  mm/day while the P999 head catches 8,776 (81.9%). While the cVAE does not transfer across regions, multi-quantile
+  regression captures extremes wherever the large-scale signal is strong, while augmentation rescues the
+  median where it is not.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

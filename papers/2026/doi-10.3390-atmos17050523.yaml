@@ -1,0 +1,49 @@
+id: doi-10.3390-atmos17050523
+title: A Case Study on the Stability of Neural Network Climate Prediction Models with Different Training
+  Stop Criteria
+authors:
+- Xiangjun Shi
+- Ping Zhou
+- Sirui He
+date: '2026-05-20'
+year: 2026
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos17050523
+  openalex: W7161785360
+links:
+  paper: https://doi.org/10.3390/atmos17050523
+orgs:
+- nuist
+topic: xai-uq-physics
+type: evaluation
+method:
+- classical-ml
+spatial:
+- global
+data:
+- other
+status: research
+summary: Shows neural climate prediction model stability depends on initialization and stop criteria;
+  scaling initial weights by 0.1 and ensembling improve skill.
+abstract: 'Due to randomness factors in the machine learning model construction process, reproducibility
+  is compromised. This study investigates the impact of randomness on model stability and evaluates techniques
+  for reducing this impact, using the widely adopted shallow neural network (NN) model as a testbed. Randomness
+  in this NN model arises from three events: randomly initializing model parameters, randomly selecting
+  a validation subset, and randomly sampling batches for parameter updates. Among these, batch randomness
+  exerts a significantly weaker impact than the other two factors. In this study, the model training is
+  stopped when the validation performance fails to improve or when a preset threshold for loss or epoch-number
+  is met. The final model stability is significantly better using threshold criteria than using validation
+  criterion, as the former avoids the randomness associated with validation subset. Sensitivity experiments
+  show that scaling the model''s initial parameters to 0.1 times their original values can mitigate the
+  impact of initialization randomness, thereby significantly improving model stability while also markedly
+  enhancing predictive skill. Furthermore, weight decay and multi-model ensembles, which are two commonly
+  used techniques, can also significantly enhance model stability. Moreover, the inherent instability
+  of individual sub-models may actually benefit the overall predictive skill of a multi-model ensemble.'
+significance: 2
+cited_by: 1
+score: 18
+highlight: false
+added: '2026-10-22'
+source: backfill

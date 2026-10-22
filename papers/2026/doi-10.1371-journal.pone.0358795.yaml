@@ -1,0 +1,65 @@
+id: doi-10.1371-journal.pone.0358795
+title: Station-specific thunderstorm forecasting using climate predictors with seasonal decomposition
+  analysis in Bangladesh’s most vulnerable regions
+authors:
+- Mohammad Mahboob Hussain Khan
+- Amrin Binte Ahmed
+- Adisha Dulmini
+- Rawfun Nahin Kowbi
+- Dulsaba Azmain
+- Muhammad Abu Sufian
+- Md. Mahin Uddin Qureshi
+- Mustafizur Rahman
+- Rumana Rois
+date: '2026-09-24'
+year: 2026
+venue: PLoS ONE
+venue_type: journal
+ids:
+  doi: 10.1371/journal.pone.0358795
+  openalex: W7214176510
+links:
+  paper: https://doi.org/10.1371/journal.pone.0358795
+  pdf: https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0358795&type=printable
+topic: local-forecasting
+type: model
+method:
+- classical-ml
+- rnn
+timescale:
+- seasonal
+spatial:
+- local
+data:
+- stations
+status: research
+summary: STL-XGBoost with climate predictors cuts monthly thunderstorm frequency errors by over 80% at
+  three Bangladesh stations versus univariate baselines.
+abstract: 'Thunderstorms pose significant threats to life, agriculture, and infrastructure in Bangladesh,
+  particularly in the northeastern regions of Sylhet, Sreemangal, and Mymensingh. This study develops
+  and rigorously evaluates localized thunderstorm frequency forecasting models for these high-risk stations
+  using 40 years (1985-2024) of monthly data and thirty six modeling approaches encompassing classical
+  time series (SARIMA/SARIMAX, ETS/ETSX), machine learning (ANN/ANNX, SVR/SVRX, XGBoost/XGBoostX), and
+  deep learning (LSTM/LSTMX) architectures, applied to raw and seasonally adjusted (X-11, STL) data under
+  both univariate and exogenous frameworks incorporating five climatic variables (temperature, relative
+  humidity, cloud cover, rainfall, atmospheric pressure). Correlation analysis identified cloud cover
+  (r = 0.83-0.88), atmospheric pressure (r = -0.79 to -0.85), temperature (r = 0.77-0.79), and rainfall
+  (r = 0.74-0.78) as dominant meteorological drivers of thunderstorm activity. Seasonal pre-adjustment
+  using STL substantially improved forecast accuracy, with STL-XGBoost achieving the lowest univariate
+  errors (Sylhet: RMSE = 2.53; Sreemangal: 2.09; Mymensingh: 2.08). Inclusion of exogenous variables dramatically
+  enhanced predictive skill with tree-based and kernel methods: STL-XGBoostX with climate predictors proved
+  optimal for Sylhet (MASE = 0.22), while STL-SVRX with climate predictors was optimal for Sreemangal
+  and Mymensingh (MASE = 0.17), representing over 80% improvement compared to univariate benchmarks. Seasonal
+  forecasts (2025-2028) project peak monsoon activity reaching 100.5 frequency at Sreemangal and identify
+  April-August as the critical preparedness window for these stations. This study provides the Bangladesh
+  Meteorological Department with a validated, operational framework for station-specific thunderstorm
+  frequency forecasting, demonstrating that explicit seasonal decomposition combined with tree-based ensemble
+  and kernel methods offers robust accuracy for early warning systems. The methodology can be extended
+  to additional stations and integrated with socio-economic data to enhance disaster preparedness and
+  climate adaptation strategies for Bangladesh''s most thunderstorm-vulnerable communities.'
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

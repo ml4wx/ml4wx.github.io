@@ -1,0 +1,60 @@
+id: doi-10.31891-2307-5732-2026-361-56
+title: РОЗРОБКА СИСТЕМИ ПРОГНОЗУВАННЯ МЕТЕОРОЛОГІЧНИХ УМОВ З ВИКОРИСТАННЯМ МОДЕЛІ LSTM ДЛЯ СМАРТ-СИСТЕМ
+  РОЗУМНОГО БУДИНКУ
+authors:
+- ІВАН ТЕПЛЯКОВ
+- ЯРОСЛАВ ДИХАНОВ
+- I. V. Gado
+- ВІКТОР ЗВАРИЧ
+date: '2026-01-29'
+year: 2026
+venue: Herald of Khmelnytskyi National University Technical sciences
+venue_type: journal
+ids:
+  doi: 10.31891/2307-5732-2026-361-56
+  openalex: W7128681095
+links:
+  paper: https://doi.org/10.31891/2307-5732-2026-361-56
+  pdf: https://heraldts.khmnu.edu.ua/index.php/heraldts/article/download/2312/2375
+topic: local-forecasting
+type: model
+method:
+- rnn
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: pre-operational
+summary: A multitask LSTM with attention predicts five meteorological variables plus precipitation probability
+  for smart-home use, evaluated with MAE and RMSE.
+abstract: Due to rapidly increasing demands for energy efficiency and the growing level of automation
+  in household and industrial systems, highly accurate meteorological forecasting is becoming particularly
+  important. Traditional statistical methods are often insufficient for modeling local weather processes,
+  underscoring the need to employ recurrent neural networks and other deep learning approaches capable
+  of capturing complex temporal dependencies in the data. The study conducted in the paper includes an
+  analysis of scientific sources related to the research topic, which indicates that deep learning methods
+  have been actively employed in recent years for various forecasting tasks, including weather prediction,
+  and this area continues to attract considerable attention from researchers. To implement the LSTM model,
+  the mathematical foundations of the core architecture of this recurrent neural network were examined,
+  incorporating an attention mechanism to enhance forecasting accuracy by enabling the model to focus
+  on the most informative segments of the input time series. The model proposed in this paper is multitasking,
+  as it produces six independent meteorological outputs – five regression variables (temperature, pressure,
+  humidity, wind speed, and cloudiness) and one classification variable. In this study, the precipitation
+  probability is implemented as a binary classification feature indicating the presence or absence of
+  precipitation, which enables a comprehensive assessment of the multitask architecture. Algorithms for
+  meteorological data preprocessing and model training are proposed, while forecast accuracy is evaluated
+  using the standard MAE and RMSE metrics. The authors developed software based on the Python programming
+  language, the Flask framework, and the TensorFlow and Keras libraries to provide convenient user interaction
+  with the proposed LSTM model. The conducted experimental studies and comparative analysis of the obtained
+  results demonstrated that the LSTM architecture with an attention mechanism achieved the best error
+  metrics compared to the forecasting results produced by the Random Forest and Ridge Regression models.
+  This confirms that the advantages of the LSTM model lie not only in its nonlinear modeling capability
+  but also in its inherent temporal memory, which is critical for accurate modeling of weather processes.
+significance: 1
+cited_by: 0
+score: 4
+highlight: false
+added: '2026-10-22'
+source: backfill

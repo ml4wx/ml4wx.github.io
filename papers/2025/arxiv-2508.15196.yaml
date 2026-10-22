@@ -1,0 +1,52 @@
+id: arxiv-2508.15196
+title: 'GEN2: A Generative Prediction-Correction Framework for Long-time Emulations of Spatially-Resolved
+  Climate Extremes'
+authors:
+- Mengze Wang
+- Benedikt Barthel Sorensen
+- Themistoklis Sapsis
+date: '2025-08-21'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2508.15196'
+  doi: 10.21203/rs.3.rs-7394591/v1
+  openalex: W4416050711
+links:
+  paper: https://arxiv.org/abs/2508.15196
+  pdf: https://arxiv.org/pdf/2508.15196
+orgs:
+- mit
+topic: climate-emulation
+topics:
+- extremes-hazards
+type: model
+method:
+- other
+timescale:
+- climate
+spatial:
+- global
+data:
+- era5
+- cmip
+status: research
+summary: GEN2 couples a conditional Gaussian emulator with an ML correction step to emulate climate extremes
+  over long runs, extrapolating to unseen warming scenarios from one training realization.
+abstract: Accurately quantifying the increased risks of climate extremes requires generating large ensembles
+  of climate realization across a wide range of emissions scenarios, which is computationally challenging
+  for conventional Earth System Models. We propose GEN2, a generative prediction-correction framework
+  for an efficient and accurate forecast of the extreme event statistics. The prediction step is constructed
+  as a conditional Gaussian emulator, followed by a non-Gaussian machine-learning (ML) correction step.
+  The ML model is trained on pairs of the reference data and the emulated fields nudged towards the reference,
+  to ensure the training is robust to chaos. We first validate the accuracy of our model on historical
+  ERA5 data and then demonstrate the extrapolation capabilities on various future climate change scenarios.
+  When trained on a single realization of one warming scenario, our model accurately predicts the statistics
+  of extreme events in different scenarios, successfully extrapolating beyond the distribution of training
+  data.
+significance: 4
+cited_by: 1
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

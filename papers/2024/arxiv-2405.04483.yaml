@@ -1,0 +1,64 @@
+id: arxiv-2405.04483
+title: High-resolution ensemble retrieval of cloud properties for all-day based on geostationary satellite
+authors:
+- Haixia Xiao
+- Feng Zhang
+- Lingxiao Wang
+- Baoxiang Pan
+- Yannian Zhu
+- Minghuai Wang
+- Wenwen Li
+- Bin Guo
+- Jun Li
+date: '2024-05-07'
+year: 2024
+venue: npj Climate and Atmospheric Science
+venue_type: journal
+ids:
+  arxiv: '2405.04483'
+  doi: 10.1038/s41612-025-01263-x
+  openalex: W4417271249
+links:
+  paper: https://doi.org/10.1038/s41612-025-01263-x
+  pdf: https://arxiv.org/pdf/2405.04483
+orgs:
+- cma
+- fudan-university
+- iap-cas
+topic: observations-remote-sensing
+topics:
+- xai-uq-physics
+type: model
+method:
+- diffusion
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: CloudDiff uses a diffusion model to retrieve Himawari-8 cloud properties at 1 km from 2 km thermal
+  infrared data, day and night, with ensemble-based uncertainty.
+abstract: Clouds play a critical role in Earth's hydrological and energy cycles, and accurately representing
+  their properties is essential for effective numerical modeling and weather forecasting. Machine learning
+  methods have been widely used for cloud property retrieval; however, most existing techniques are deterministic
+  and do not incorporate uncertainty quantification. Generative machine learning has made significant
+  advances in various domains, including natural language processing, image generation, and notably weather
+  forecasting, where it has enabled ensemble predictions and the quantification of forecast uncertainty.
+  This ability to quantify uncertainty offers valuable opportunities for cloud remote sensing. In this
+  study, we propose a novel cloud property retrieval method, CloudDiff, based on a generative diffusion
+  model. By leveraging thermal infrared observations from the Himawari-8 Advanced Himawari Imager (AHI),
+  CloudDiff generates high spatiotemporal resolution cloud properties for both daytime and nighttime conditions,
+  increasing the resolution of Himawari-8/AHI cloud retrievals from 2 km to 1 km. Unlike deterministic
+  retrieval methods, CloudDiff generates multiple samples from the underlying probability distribution,
+  allowing for a diverse range of plausible retrievals and taking steps towards providing uncertainty
+  assessment. Additionally, CloudDiff produces sharper samples and better captures fine local features,
+  enhancing the precision of cloud property retrieval. By averaging over the ensemble of generated samples,
+  we demonstrate that both the accuracy and reliability of the retrievals are significantly improved.
+  These high-resolution cloud properties have been successfully applied to analyze extreme weather events,
+  such as typhoons, providing potentially valuable insights into atmospheric processes.
+significance: 4
+cited_by: 7
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

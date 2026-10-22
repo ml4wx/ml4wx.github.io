@@ -1,0 +1,58 @@
+id: arxiv-2401.11679
+title: Simulating Nighttime Visible Satellite Imagery of Tropical Cyclones Using Conditional Generative
+  Adversarial Networks
+authors:
+- Jinghuai Yao
+- Puyuan Du
+- Yucheng Zhao
+- Yubo Wang
+date: '2024-01-22'
+year: 2024
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  arxiv: '2401.11679'
+  doi: 10.1109/jstars.2025.3567074
+  openalex: W4410115329
+links:
+  paper: https://doi.org/10.1109/jstars.2025.3567074
+  pdf: https://arxiv.org/pdf/2401.11679
+orgs:
+- ucla
+topic: observations-remote-sensing
+topics:
+- extremes-hazards
+type: model
+method:
+- gan-vae
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: pre-operational
+summary: A conditional GAN with SSIM loss simulates nighttime visible tropical cyclone imagery from infrared
+  bands, reaching SSIM 0.923 and is applied operationally.
+abstract: Visible (VIS) imagery is important for monitoring Tropical Cyclones (TCs) but is unavailable
+  at night. This study presents a Conditional Generative Adversarial Networks (CGAN) model to generate
+  nighttime VIS imagery with significantly enhanced accuracy and spatial resolution. Our method offers
+  three key improvements compared to existing models. First, we replaced the L1 loss in the pix2pix framework
+  with the Structural Similarity Index Measure (SSIM) loss, which significantly reduced image blurriness.
+  Second, we selected multispectral infrared (IR) bands as input based on a thorough examination of their
+  spectral properties, providing essential physical information for accurate simulation. Third, we incorporated
+  the direction parameters of the sun and the satellite, which addressed the dependence of VIS images
+  on sunlight directions and enabled a much larger training set from continuous daytime data. The model
+  was trained and validated using data from the Advanced Himawari Imager (AHI) in the daytime, achieving
+  statistical results of SSIM = 0.923 and Root Mean Square Error (RMSE) = 0.0299, which significantly
+  surpasses existing models. We also performed a cross-satellite nighttime model validation using the
+  Day/Night Band (DNB) of the Visible/Infrared Imager Radiometer Suite (VIIRS), which yields outstanding
+  results compared to existing models. Our model is operationally applied to generate accurate VIS imagery
+  with arbitrary virtual sunlight directions, significantly contributing to the nighttime monitoring of
+  various meteorological phenomena.
+significance: 4
+cited_by: 3
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

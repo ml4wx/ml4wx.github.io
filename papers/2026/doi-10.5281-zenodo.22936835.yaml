@@ -1,0 +1,50 @@
+id: doi-10.5281-zenodo.22936835
+title: Modélisation Prévisionnelle Hybride v7.0 (Architecture Deep Learning LSTM)
+authors:
+- Fabien Walesch
+date: '2026-09-24'
+year: 2026
+venue: Zenodo (CERN European Organization for Nuclear Research)
+venue_type: preprint
+ids:
+  doi: 10.5281/zenodo.22936835
+  openalex: W7214186297
+links:
+  paper: https://doi.org/10.5281/zenodo.22936835
+topic: s2s-seasonal
+topics:
+- xai-uq-physics
+type: model
+method:
+- rnn
+- physics-constrained
+timescale:
+- seasonal
+spatial:
+- global
+data:
+- other
+status: research
+summary: LSTM hybrid model adds astronomical forcings to ENSO and blocking predictors for thermal tipping
+  points, reporting 1.59 °C RMSE; claims are speculative and lack rigorous validation.
+abstract: 'Le document détaille la conception et l''évaluation d''un modèle climatique prévisionnel hybride
+  (LSTM v7.0) visant à anticiper les points de bascule thermiques complexes. Architecture holistique :
+  Le réseau ingère des séquences continues de 24 mois pour modéliser l''inertie thermodynamique globale.
+  Son originalité repose sur le couplage de variables océano-atmosphériques classiques (ENSO, blocages)
+  avec des forçages astrophysiques de long terme (cycles nodaux lunaires, rotation terrestre, rayons cosmiques).
+  Adaptation en temps réel : Face aux anomalies climatiques récentes (test hors-échantillon sur 2024-2025),
+  le modèle déploie une assimilation séquentielle douce (online learning). Cette mécanique lui permet
+  d''atteindre une précision déterministe de 1,59 °C (RMSE), surpassant la climatologie historique de
+  +7,13 %. Découverte par explicabilité (XAI) : L''algorithme Integrated Gradients révèle une véritable
+  hiérarchie physique interne. Si l''océan pilote la prévision de fond, le réseau déplace massivement
+  son attention vers la mécanique céleste lors des canicules extrêmes (+2,85 points d''influence pour
+  les rayons cosmiques), validant l''hypothèse que ces forçages agissent comme des déclencheurs. Perspectives
+  et limites : Si le prototype démontre une forte résilience déterministe, il souffre encore d''une sous-dispersion
+  lors de l''évaluation probabiliste (MC-Dropout). La calibration stricte des intervalles de confiance
+  constitue l''obstacle majeur à lever avant un déploiement institutionnel.'
+significance: 1
+cited_by: 0
+score: 4
+highlight: false
+added: '2026-10-22'
+source: backfill

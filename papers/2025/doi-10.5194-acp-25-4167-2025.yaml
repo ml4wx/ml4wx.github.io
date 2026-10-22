@@ -1,0 +1,52 @@
+id: doi-10.5194-acp-25-4167-2025
+title: A new aggregation and riming discrimination algorithm based on polarimetric weather radars
+authors:
+- Armin Blanke
+- Mathias Gergely
+- Silke Trömel
+date: '2025-04-11'
+year: 2025
+venue: Atmospheric chemistry and physics
+venue_type: journal
+ids:
+  doi: 10.5194/acp-25-4167-2025
+  openalex: W4409366192
+links:
+  paper: https://doi.org/10.5194/acp-25-4167-2025
+  pdf: https://acp.copernicus.org/articles/25/4167/2025/acp-25-4167-2025.pdf
+orgs:
+- dwd
+topic: observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Gradient-boosted classifier detects riming from German polarimetric radar quasi-vertical profiles,
+  correctly identifying 74% of riming features in a validation event.
+abstract: Abstract. The distinction between riming and aggregation is of high relevance for model microphysics,
+  data assimilation and warnings of potential aircraft hazards due to the link between riming and updrafts
+  and the presence of supercooled liquid water in the atmosphere. Even though the polarimetric fingerprints
+  for aggregation and riming are similar qualitatively, we hypothesize that it is feasible to implement
+  an area-wide discrimination algorithm based on national polarimetric weather radar networks only. Quasi-vertical
+  profiles (QVPs) of reflectivity (ZH), differential reflectivity (ZDR) and estimated depolarization ratio
+  (DR) are utilized to learn about the information content of each individual polarimetric variable and
+  their combinations for riming detection. High-resolution Doppler spectra from the vertical (birdbath)
+  scans of the C-band radar network of the German Meteorological Service serve as input and ground-truth
+  for algorithm development. Mean isolated spectra profiles (MISPs) of the Doppler velocity are used to
+  infer regions with frozen hydrometeors falling faster than 1.5 ms-1 and accordingly associated with
+  significant riming. Several machine learning methods have been tested to detect riming from the corresponding
+  QVPs of polarimetric variables. The best performing algorithm is a fine-tuned gradient boosting model
+  based on decision trees. The precipitation event on 14 July 2021, which led to a catastrophic flooding
+  in the Ahr valley in western Germany, was selected to validate the performance. Considering balanced
+  accuracy, the algorithm is able to correctly predict 74 % of the observed riming features and thus,
+  the feasibility of reliable riming detection with national radar networks has been successfully demonstrated.
+significance: 4
+cited_by: 3
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

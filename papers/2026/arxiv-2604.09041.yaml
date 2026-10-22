@@ -1,0 +1,48 @@
+id: arxiv-2604.09041
+title: 'U-Cast: A Surprisingly Simple and Efficient Frontier Probabilistic AI Weather Forecaster'
+authors:
+- Salva Rühling Cachay
+- Duncan Watson-Parris
+- Rose Yu
+date: '2026-04-10'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2604.09041'
+  openalex: W7154173042
+links:
+  paper: https://arxiv.org/abs/2604.09041
+  pdf: https://arxiv.org/pdf/2604.09041
+  code: https://github.com/Rose-STL-Lab/u-cast
+topic: probabilistic-ensembles
+topics:
+- global-medium-range
+type: model
+method:
+- cnn
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Plain U-Net trained with MAE then CRPS fine-tuning and Monte Carlo dropout matches GenCast and
+  IFS ENS at 1.5 degrees with over 10x less training compute.
+abstract: 'AI-based weather forecasting now rivals traditional physics-based ensembles, but state-of-the-art
+  (SOTA) models rely on specialized architectures and massive computational budgets, creating a high barrier
+  to entry. We demonstrate that such complexity is unnecessary for frontier performance. We introduce
+  \ours, a probabilistic forecaster built on a standard U-Net backbone trained with a simple recipe: deterministic
+  pre-training on Mean Absolute Error followed by short probabilistic fine-tuning on the Continuous Ranked
+  Probability Score (CRPS) using Monte Carlo Dropout for stochasticity. As a result, our model matches
+  or exceeds the probabilistic skill of GenCast and IFS ENS at $1.5^\circ$ resolution while reducing training
+  compute by over $10\times$ compared to leading CRPS-based models and inference latency by over $10\times$
+  compared to diffusion-based models. U-Cast trains in under 12 H200 GPU-days and generates a 15-day ensemble
+  forecast in 3 seconds. These results suggest that scalable, general-purpose architectures paired with
+  efficient training curricula can match complex domain-specific designs at a fraction of the cost, opening
+  the training of frontier probabilistic weather models to the broader community.'
+significance: 5
+score: 30
+highlight: false
+added: '2026-10-22'
+source: backfill

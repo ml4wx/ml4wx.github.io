@@ -1,0 +1,59 @@
+id: doi-10.5281-zenodo.22864317
+title: Mitigating Numerical Climate Drift in Long-Horizon Atmospheric Neural Surrogates via Post-Hoc Energy
+  and Enstrophy Manifold Projections
+authors:
+- A. Emre Cetin
+date: '2026-09-20'
+year: 2026
+venue: Zenodo (CERN European Organization for Nuclear Research)
+venue_type: preprint
+ids:
+  doi: 10.5281/zenodo.22864317
+  openalex: W7213762946
+links:
+  paper: https://doi.org/10.5281/zenodo.22864317
+topic: climate-emulation
+topics:
+- xai-uq-physics
+type: model
+method:
+- neural-operator
+- physics-constrained
+timescale:
+- climate
+spatial:
+- global
+data:
+- other
+status: research
+summary: Post-hoc energy and enstrophy manifold projections stop FNO climate drift in 500-step barotropic
+  rollouts, conserving invariants and halving relative L2 vorticity error.
+abstract: 'Data-driven neural operators and autoregressive dynamical cores have demonstrated remarkable
+  skill in medium-range weather forecasting over 10–14 days. However, when deployed for long-horizon climate
+  rollouts requiring hundreds of sequential autoregressive steps, neural PDE surrogates suffer from severe
+  numerical climate drift. Small per-step truncation and subgrid errors compound secularly, causing kinetic
+  energy to collapse (E(t) → 0) due to spectral dissipation, or enstrophy to explode (Z(t) → ∞) due to
+  unresolved high-frequency noise blowout. While classical numerical models introduce artificial hyper-viscosity
+  (ν4 ∇4) to stabilize integrations, this non-physical dissipation damps planetary jet streams and disrupts
+  Kraichnan''s k-3 turbulent enstrophy cascade. In this paper, we investigate a post-hoc geometric correction
+  framework based on Idempotent Energy and Enstrophy Manifold Projections (Πgeo2 = Πgeo) in the Sobolev
+  space Ḣ2(Τ2). To rigorously evaluate the method under authentic machine learning conditions, a 2D Fourier
+  Neural Operator (FNO-2D) is trained on physical barotropic vorticity trajectories. Over a 500-step sequential
+  autoregressive rollout on the m = 4 Rossby-Haurwitz planetary wave: Unconstrained FNO suffers severe
+  climate drift, dissipating 72.4% of kinetic energy (E/E0 = 0.27631) while spuriously growing enstrophy
+  by +207.8% (Z/Z0 = 3.07827), accompanied by a collapse in spatial pattern correlation (PCC → 0.004,
+  mean 0.092) and 203.0% relative L2 vorticity field error; IdemSolver FNO (&text{FNO} → Πgeo) maintains
+  invariant conservation (E/E0 ≡ 1.00000, Z/Z0 ≡ 1.00000), cuts relative L2 field error in half (0.929
+  vs 2.030), and sustains persistent spatial correlation (PCC = 0.568, mean 0.510); although point-wise
+  trajectory tracking incurs substantial residual error (ΕL2 ≈ 0.93) due to chaotic phase drift along
+  the wave orbit, coherent wave morphology and climate statistics are robustly preserved; and The spectral
+  projection executes in 0.39 ms (4.87 ms total per-step latency on CPU) with zero gradient graph retention.
+  We provide an explicit, monotonically converging 1D root-finding algorithm for the dual-invariant Lagrange
+  multipliers and delineate scope boundaries for extending geometric projections to 3D baroclinic primitive-equation
+  models.'
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

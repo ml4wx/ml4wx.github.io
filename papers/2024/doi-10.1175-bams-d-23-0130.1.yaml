@@ -1,0 +1,67 @@
+id: doi-10.1175-bams-d-23-0130.1
+title: Geostationary Satellite–Derived Positioning of a Tropical Cyclone Center Using Artificial Intelligence
+  Algorithms over the Western North Pacific
+authors:
+- Chang-Hoi Ho
+- Donggyu Hyeon
+- Minhee Chang
+- Greg M. McFarquhar
+- Seong‐Hee Won
+date: '2024-01-31'
+year: 2024
+venue: Bulletin of the American Meteorological Society
+venue_type: journal
+ids:
+  doi: 10.1175/bams-d-23-0130.1
+  openalex: W4391387359
+links:
+  paper: https://doi.org/10.1175/bams-d-23-0130.1
+  pdf: https://journals.ametsoc.org/downloadpdf/view/journals/bams/105/3/BAMS-D-23-0130.1.pdf
+orgs:
+- kma
+- university-of-oklahoma
+topic: extremes-hazards
+topics:
+- observations-remote-sensing
+type: model
+method:
+- cnn
+- rnn
+spatial:
+- regional
+data:
+- satellite
+- nwp-analysis
+status: research
+summary: CNN and ConvLSTM models locate western North Pacific tropical cyclone centres from Himawari-8
+  imagery with 20–50 km errors, comparable to or better than ARCHER.
+abstract: 'Abstract Artificial intelligence (AI) models were developed to determine the center of tropical
+  cyclones (TCs) in the western North Pacific. These models integrated information from six channels of
+  geostationary satellite imagery: the brightness temperature of four infrared (IR) and one shortwave
+  IR channels, as well as the reflectivity of one visible channel. The first model is a convolutional
+  neural network designed for spatial data processing, and the second is a convolutional long short-term
+  memory model that effectively captures spatiotemporal information. For training, verification, and testing
+  purposes, spatial images from six channels were obtained from the Japanese Himawari-8 satellite from
+  2016 to 2021. The position of the European Centre for Medium-Range Weather Forecasts 6- or 12-h prediction
+  was assigned as an initial value to the AI models. Errors in the initial value were 20–50 km compared
+  to the Joint Typhoon Warning Center best track, depending on TC intensity. Weak (strong) TCs exhibited
+  large (small) errors. This error dependency was found in Automated Rotational Center Hurricane Eye Retrieval
+  (ARCHER) product, which is currently used by several operational organizations. ARCHER errors were typically
+  small when observations from both geostationary and polar-orbiting satellites were included. Significant
+  errors remained in the absence of microwave channel information from polar-orbiting satellites. This
+  study successfully developed two AI models that consistently determined the location of the TC center
+  using only six-channel images from geostationary satellites. These models exhibited comparable or better
+  performance than the ARCHER products. The newly developed AI models can potentially be implemented for
+  operational use. Signicance Statement This study has developed AI models that can determine the center
+  of TCs in the western North Pacific, which can be applied to meteorological organizations that have
+  limited access to real-time polar-orbiting satellite data. The newly developed AI models derived positions
+  comparable to or better than ARCHER, which is currently one of the most precise systems for determining
+  the position of the TC center. The successful development of these AI models is very opportune as it
+  was only possible thanks to the recent availability of high-frequency data observed from geostationary
+  satellite, coupled with the rapid technological advances in AI algorithms.'
+significance: 3
+cited_by: 7
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

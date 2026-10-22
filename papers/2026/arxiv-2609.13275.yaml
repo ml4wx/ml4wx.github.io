@@ -1,0 +1,46 @@
+id: arxiv-2609.13275
+title: 'A Physics--ML Multi-Fidelity Strategy for Earth System Model Parameter Optimization: A QG Proof-of-Concept'
+authors:
+- Abdullah A. Fahad
+- Manmeet Singh
+- Donifan Barahona
+- Anton Darmenov
+- Andrea Molod
+date: '2026-09-07'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.13275'
+  openalex: W7213340357
+links:
+  paper: https://arxiv.org/abs/2609.13275
+  pdf: https://arxiv.org/pdf/2609.13275
+orgs:
+- nasa
+topic: hybrid-parameterization
+type: model
+method:
+- classical-ml
+data:
+- other
+status: research
+summary: Green's-function screening with GP or neural surrogates tunes quasi-geostrophic model parameters,
+  reaching 64.6-65.2% improvement with fewer simulation-days than standalone surrogates.
+abstract: Earth System Models rely on tunable subgrid-scale parameterizations, but optimizing these parameters
+  is computationally expensive, particularly when nonlinear interactions require many simulations. We
+  present a hybrid Physics-ML multi-fidelity framework that combines Green's Function Optimization (GFO)
+  with Gaussian Process or Neural Network surrogate optimization. Using a quasi-geostrophic turbulence
+  model, GFO first ranks parameter sensitivities in normalized coordinates and selects a reduced active
+  subset. Nonlinear surrogates then explore this subset using inexpensive 30-day simulations before refining
+  promising candidates with 180-day simulations. Across seven strategies and a 35-member ensemble, GFO-MultiGP
+  and GFO-MultiNN achieved mean improvements of 64.6 percent and 65.2 percent, respectively, while reaching
+  practical saturation after 3,060 and 2,520 simulation-days. The corresponding standalone GP and NN achieved
+  61.1 percent and 42.0 percent improvements and required 7,740 and 6,660 simulation-days. These results
+  demonstrate an end-to-end sample-efficiency advantage for the tested hybrid pipelines. Because screening,
+  dimensionality reduction, initialization, and fidelity scheduling change simultaneously, their individual
+  contributions are not isolated.
+significance: 3
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

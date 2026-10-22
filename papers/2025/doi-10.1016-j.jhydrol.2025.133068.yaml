@@ -1,0 +1,63 @@
+id: doi-10.1016-j.jhydrol.2025.133068
+title: Bias correcting the precipitation dynamics of regional climate models via kernel-aware 2D convolutional-long
+  short-term memory
+authors:
+- Vahid Nourani
+- Aida Hosseini Baghanam
+- Hadi Pourali
+- Mohammad Bejani
+- Mekonnen Gebremichael
+date: '2025-03-14'
+year: 2025
+venue: Journal of Hydrology
+venue_type: journal
+ids:
+  doi: 10.1016/j.jhydrol.2025.133068
+  openalex: W4408392341
+links:
+  paper: https://doi.org/10.1016/j.jhydrol.2025.133068
+orgs:
+- ucla
+topic: post-processing
+topics:
+- downscaling
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+status: research
+summary: A kernel-aware ConvLSTM bias-corrects and refines CMIP5 regional climate model precipitation
+  over Southern Alberta, with RMSE of 14.74 mm and better results than a feed-forward network.
+abstract: • Novel kernel-aware 2D Conv-LSTM network enhances spatial resolution via RCMs. • Model effectively
+  captures adjacent precipitation impacts and temporal dependencies. • Pre-bias correction via Empirical
+  Quantile Mapping improved quality of RCM data. • Project future precipitation to improve understanding
+  of adjacent precipitation impacts. • Model led to RMSE and DC values of 14.74 mm and 0.85 under normal
+  conditions. Some climate models face challenges covering the globe on a finer spatial scale. As a result,
+  local studies are hindered by this limitation. This study introduces a novel spatial-based (kernel-aware)
+  2D Convolutional-Long Short-Term Memory (Conv-LSTM) network to enhance and bias correct spatial dynamics
+  and generate precipitation products from Regional Climate Models (RCMs). The proposed network used 3
+  × 3 kernels, known as pixels that comprise nine grids for each specific point, which conduct convolutional
+  layers to extract the features from the broad area (75 × 75 km), and LSTM networks for handling temporal
+  dependencies. In this way, the RCM-based precipitation data were used as reference inputs, and gridded
+  precipitation observation as target values. Since the precipitation products from the Coupled Model
+  Intercomparison Project Phase 5 (CMIP5) of RCMs consisted of systematic biases, Empirical Quantile Mapping
+  (EQM) was first used as the bias correction method as the pre-bias correction. This study applied 360
+  monthly observation precipitation and 460 bias-corrected RCM grid points covering Southern Alberta spanning
+  from 1962 to 2006. Moreover, the proposed model was compared with the classical Feed Forward Neural
+  Network (FFNN). Furthermore, the network’s capability spanned to the future, using Representative Concentration
+  Pathway 4.5 till the end of this century. The results demonstrated that the proposed novel network could
+  capture adjacent precipitation impacts on the target point and produce observation-like products with
+  more precision by the Root Mean Squared Error (RMSE) and Determination Coefficient (DC) of 17.65 mm,
+  17.07 mm, 14.74 mm, and 0.60, 0.71 and 0.85 for high, low, and normal precipitation conditions, respectively.
+significance: 3
+cited_by: 9
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

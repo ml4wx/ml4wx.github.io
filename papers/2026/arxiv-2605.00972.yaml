@@ -1,0 +1,57 @@
+id: arxiv-2605.00972
+title: 'Toward a Scientific Discovery Engine for Weather and Climate Data: A Visual Analytics Workbench
+  for Embedding-Based Exploration'
+authors:
+- Nihanth W. Cherukuru
+- Matt Rehme
+- Kirsten J. Mayer
+- David John Gagne
+- John Schreck
+- John Clyne
+- Charlie Becker
+date: '2026-05-01'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.00972'
+  openalex: W7160248490
+links:
+  paper: https://arxiv.org/abs/2605.00972
+  pdf: https://arxiv.org/pdf/2605.00972
+orgs:
+- ncar
+topic: infra-software
+topics:
+- extremes-hazards
+type: application
+method:
+- transformer
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Open-source visual analytics workbench for provenance-aware retrieval over DINOv3 embeddings
+  of ERA5, demonstrated on tropical cyclone analog search over tens of millions of embeddings.
+abstract: Earth system science is producing increasingly large, high-dimensional datasets from both physics-based
+  and AI-driven models. While embedding-based representations make these data searchable and serve as
+  foundational building blocks for AI-driven discovery engines, nearest neighbors in latent spaces are
+  not automatically scientifically meaningful. They may reflect real meteorological structures, or simply
+  artifacts of preprocessing, geography, or model bias. Researchers therefore need visual tools to inspect
+  latent space organization, trace search results back to physical evidence, and evaluate candidate representations
+  against one another. We present an open source visual analytics workbench designed to support this provenance-aware
+  scientific retrieval workflow. The system links distinct embedding experiments to shared source data,
+  metadata, spatial contexts, and model configurations. It enables interactive retrieval strategy design
+  by allowing users to issue image-level and localized patch-level queries, apply multi-constraint filters,
+  and inspect analogs through familiar meteorological views. This facilitates a discovery loop where scientists
+  characterize a phenomenon in a well-understood dataset and use its latent signature to probe larger
+  archives. While we demonstrate the workbench through a tropical cyclone retrieval scenario using a vision
+  foundation model (DINOv3) on ERA5 data, the framework is model-agnostic and designed to integrate with
+  other embedding architectures in the future. Finally, we evaluate its out-of-core retrieval backend,
+  demonstrating that interactive visual search over tens of millions of embeddings is highly scalable
+  on commodity hardware.
+significance: 3
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

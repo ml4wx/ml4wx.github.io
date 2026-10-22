@@ -1,0 +1,53 @@
+id: doi-10.1007-s44393-026-00019-x
+title: 1DVAR-Like Machine Learning for Water Vapor Profile Retrieval Using Ground-Based Microwave Radiometer
+  and Numerical Weather Prediction Data
+authors:
+- 健太郎 荒木
+- Yuya Takashima
+date: '2026-04-10'
+year: 2026
+venue: SOLA
+venue_type: journal
+ids:
+  doi: 10.1007/s44393-026-00019-x
+  openalex: W7153186373
+links:
+  paper: https://doi.org/10.1007/s44393-026-00019-x
+  pdf: https://link.springer.com/content/pdf/10.1007/s44393-026-00019-x.pdf
+orgs:
+- jma
+topic: observations-remote-sensing
+topics:
+- post-processing
+type: model
+method:
+- classical-ml
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: pre-operational
+summary: 1DVAR-like machine learning retrieves water vapour profiles from microwave radiometers and JMA
+  MSM data, reducing RMSE versus conventional ML at all altitudes.
+abstract: Abstract This study developed two one-dimensional variational technique-like machine learning
+  (1DVAR-like ML) methods utilizing the Japan Meteorological Agency Meso-Scale Model (MSM) data to improve
+  water vapor profile estimation from ground-based microwave radiometers (MWRs). The first method corrects
+  systematic errors in the MSM (ML-CM), while the second incorporates MSM forecasts as explanatory variables
+  in ML training (ML-MT). Validation using seven months of data from Tsukuba demonstrated that both methods
+  significantly reduced root-mean-square error across all altitudes compared to conventional ML methods
+  trained on reanalysis data. ML-CM effectively corrected MSM systematic biases, while ML-MT showed superior
+  accuracy in the lowest atmospheric layer (below 500 m). Case studies confirmed that the proposed methods
+  can reproduce water vapor inversions and sharp vertical gradients. However, ML-CM’s performance for
+  capturing temporal variation was limited by its high dependency on the MSM. In contrast, ML-MT effectively
+  combined MWR observations with the MSM vertical structure as a guide. This enabled accurate estimations
+  even when the MSM was erroneous, capturing short-term variations at 1-minute intervals that 3-hourly
+  MSM updates could not resolve. Consequently, we achieved 1DVAR-like ML methods with much higher accuracy
+  than conventional techniques and lower retrieval costs than physical 1DVAR estimation for water vapor
+  profile.
+significance: 3
+cited_by: 1
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

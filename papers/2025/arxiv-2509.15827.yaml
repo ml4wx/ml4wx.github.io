@@ -1,0 +1,56 @@
+id: arxiv-2509.15827
+title: 'SolarCrossFormer: Improving day-ahead Solar Irradiance Forecasting by Integrating Satellite Imagery
+  and Ground Sensors'
+authors:
+- Baptiste Schubnel
+- Jelena Simeunović
+- Corentin Tissier
+- Pierre-Jean Alet
+- Rafael E. Carrillo
+date: '2025-09-19'
+year: 2025
+venue: IEEE Transactions on Sustainable Energy
+venue_type: journal
+ids:
+  arxiv: '2509.15827'
+  doi: 10.1109/tste.2025.3624044
+  openalex: W4415444111
+links:
+  paper: https://doi.org/10.1109/tste.2025.3624044
+  pdf: https://arxiv.org/pdf/2509.15827
+topic: local-forecasting
+topics:
+- applications-impacts
+type: model
+method:
+- gnn
+- transformer
+timescale:
+- short
+spatial:
+- regional
+data:
+- satellite
+- stations
+status: pre-operational
+summary: Graph-based fusion of satellite images and ground stations gives probabilistic day-ahead irradiance
+  forecasts across Switzerland at 6.1% NMAE, competitive with commercial NWP.
+abstract: Accurate day-ahead forecasts of solar irradiance are required for the large-scale integration
+  of solar photovoltaic (PV) systems into the power grid. However, current forecasting solutions lack
+  the temporal and spatial resolution required by system operators. In this paper, we introduce SolarCrossFormer,
+  a novel deep learning model for day-ahead irradiance forecasting, that combines satellite images and
+  time series from a ground-based network of meteorological stations. SolarCrossFormer uses novel graph
+  neural networks to exploit the inter- and intra-modal correlations of the input data and improve the
+  accuracy and resolution of the forecasts. It generates probabilistic forecasts for any location in Switzerland
+  with a 15-minute resolution for horizons up to 24 hours ahead. One of the key advantages of SolarCrossFormer
+  its robustness in real life operations. It can incorporate new time-series data without retraining the
+  model and, additionally, it can produce forecasts for locations without input data by using only their
+  coordinates. Experimental results over a dataset of one year and 127 locations across Switzerland show
+  that SolarCrossFormer yield a normalized mean absolute error of 6.1 % over the forecasting horizon.
+  The results are competitive with those achieved by a commercial numerical weather prediction service.
+significance: 3
+cited_by: 2
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,57 @@
+id: doi-10.1029-2025jh000907
+title: 'SynQPF‐Net: Short‐Term Precipitation Forecasts by Integrating GraphCast Predictions and High‐Resolution
+  Observational Analyses'
+authors:
+- Dandan Chen
+- Dan Yao
+- Yaqiang Wang
+date: '2026-01-18'
+year: 2026
+venue: Journal of Geophysical Research Machine Learning and Computation
+venue_type: journal
+ids:
+  doi: 10.1029/2025jh000907
+  openalex: W7124715203
+links:
+  paper: https://doi.org/10.1029/2025jh000907
+orgs:
+- cma
+topic: post-processing
+topics:
+- nowcasting
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+- nwp-analysis
+- stations
+status: research
+summary: SynQPF-Net fuses GraphCast forecasts with CLDAS precipitation analyses, raising CSI for ≥10 mm
+  rain at 6 h from 0.151 to 0.314 over Southern China.
+abstract: Abstract While data‐driven global weather models (e.g., GraphCast) excel at large‐scale circulation
+  forecasts, they exhibit systematic biases in heavy precipitation prediction due to European Centre for
+  Medium‐Range Weather Forecasts Reanalysis (ERA5) uncertainties and neural networks' tendency to over‐smooth
+  rainfall fields. To improve short‐term precipitation forecasts, we introduce SynQPF‐Net, a deep‐learning
+  framework that fuses GraphCast outputs with high‐resolution observations. The network employs a dual‐stream
+  spatiotemporal encoder and a U‐Net decoder to merge 0.25° GraphCast forecasts with 0.0625° precipitation
+  analyses from the China Meteorological Administration (CMA) Land Data Assimilation System (CLDAS), optimized
+  with a hybrid classification–regression loss that jointly learns exceedance probabilities and quantitative
+  amounts for the different lead times (6–36 hr). Hindcasts over Southern China on the 2021 warm‐season
+  test set show that for ≥10 mm rainfall, SynQPF‐Net raises the Critical Success Index from GraphCast's
+  score of 0.151–0.314 at the 6 hr lead time, and from 0.146 to 0.211 at the 36 hr lead time. Interpretability
+  analysis indicates that the model draws chiefly on CLDAS observations at short leads and increasingly
+  on GraphCast circulation forecasts such as 700‐hPa specific humidity at longer leads, in line with physical
+  reasoning. These results demonstrate that SynQPF‐Net generates rainfall forecasts with finer spatial
+  structure and good physical realism, providing a new pathway for correcting data‐driven weather models
+  through the integration of observation‐based analyses.
+significance: 3
+cited_by: 1
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

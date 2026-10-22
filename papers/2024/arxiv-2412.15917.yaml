@@ -1,0 +1,47 @@
+id: arxiv-2412.15917
+title: Self-supervised Spatial-Temporal Learner for Precipitation Nowcasting
+authors:
+- Haotian Li
+- Arno Siebes
+- Siamak Mehrkanoon
+date: '2024-12-20'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2412.15917'
+  doi: 10.1109/cism64958.2025.11060868
+  openalex: W4412109175
+links:
+  paper: https://arxiv.org/abs/2412.15917
+  pdf: https://arxiv.org/pdf/2412.15917
+topic: nowcasting
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: SpaT-SparK pretrains a CNN encoder-decoder with masked image modeling for precipitation nowcasting,
+  outperforming supervised SmaAt-UNet on NL-50.
+abstract: Nowcasting, the short-term prediction of weather, is essential for making timely and weather-dependent
+  decisions. Specifically, precipitation nowcasting aims to predict precipitation at a local level within
+  a 6-hour time frame. This task can be framed as a spatial-temporal sequence forecasting problem, where
+  deep learning methods have been particularly effective. However, despite advancements in self-supervised
+  learning, most successful methods for nowcasting remain fully supervised. Self-supervised learning is
+  advantageous for pretraining models to learn representations without requiring extensive labeled data.
+  In this work, we leverage the benefits of self-supervised learning and integrate it with spatial-temporal
+  learning to develop a novel model, SpaT-SparK. SpaT-SparK comprises a CNN-based encoder-decoder structure
+  pretrained with a masked image modeling (MIM) task and a translation network that captures temporal
+  relationships among past and future precipitation maps in downstream tasks. We conducted experiments
+  on the NL-50 dataset to evaluate the performance of SpaT-SparK. The results demonstrate that SpaT-SparK
+  outperforms existing baseline supervised models, such as SmaAt-UNet, providing more accurate nowcasting
+  predictions.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,60 @@
+id: arxiv-2407.05224
+title: 'On the importance of learning non-local dynamics for stable data-driven climate modeling: A 1D
+  gravity wave-QBO testbed'
+authors:
+- Hamid A. Pahlavan
+- Pedram Hassanzadeh
+- M. Joan Alexander
+date: '2024-07-07'
+year: 2024
+venue: Geophysical Research Letters
+venue_type: journal
+ids:
+  arxiv: '2407.05224'
+  doi: 10.1029/2024gl114136
+  openalex: W4410442483
+links:
+  paper: https://doi.org/10.1029/2024gl114136
+  pdf: https://arxiv.org/pdf/2407.05224
+orgs:
+- university-of-chicago
+topic: hybrid-parameterization
+topics:
+- xai-uq-physics
+type: model
+method:
+- cnn
+- neural-operator
+timescale:
+- climate
+spatial:
+- global
+data:
+- other
+status: research
+summary: Shows that neural gravity-wave parameterizations need large receptive fields to stay stable in
+  a 1D QBO testbed, and that effective receptive field can flag instability before running simulations.
+abstract: Machine learning (ML) techniques, especially neural networks (NNs), have shown promise in learning
+  subgrid-scale parameterizations for climate models. However, a major problem with data-driven parameterizations,
+  particularly those learned with supervised algorithms, is model instability. Current remedies are often
+  ad-hoc and lack a theoretical foundation. Here, we combine ML theory and climate physics to address
+  a source of instability in NN-based parameterization. We demonstrate the importance of learning spatially
+  $\textit{non-local}$ dynamics using a 1D model of the quasi-biennial oscillation (QBO) with gravity
+  wave (GW) parameterization as a testbed. While common offline metrics fail to identify shortcomings
+  in learning non-local dynamics, we show that the concept of receptive field (RF) can identify instability
+  a-priori. We find that NN-based parameterizations that seem to accurately predict GW forcings from wind
+  profiles ($\mathbf{R^2 \approx 0.99}$) cause unstable simulations when RF is too small to capture the
+  non-local dynamics, while NNs of the same size but large-enough RF are stable. We examine three broad
+  classes of architectures, namely convolutional NNs, Fourier neural operators, and fully-connected NNs;
+  the latter two have inherently large RFs. We also demonstrate that learning non-local dynamics is crucial
+  for the stability and accuracy of a data-driven spatiotemporal emulator of the zonal wind field. Given
+  the ubiquity of non-local dynamics in the climate system, we expect the use of effective RF, which can
+  be computed for any NN architecture, to be important for many applications. This work highlights the
+  necessity of integrating ML theory with physics to design and analyze data-driven algorithms for weather
+  and climate modeling.
+significance: 5
+cited_by: 4
+score: 30
+highlight: false
+added: '2026-10-22'
+source: backfill

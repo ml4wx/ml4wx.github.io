@@ -1,0 +1,58 @@
+id: doi-10.3390-su18042000
+title: 'Enhancing Sustainable Disaster Resilience: A Physics-Informed Spatial Attention Network for Wind
+  Gust Forecast Correction at Sparse Stations'
+authors:
+- Mengyu Li
+- Chi Yang
+- Hao Huang
+- Xiaofang Liu
+date: '2026-02-15'
+year: 2026
+venue: Sustainability
+venue_type: journal
+ids:
+  doi: 10.3390/su18042000
+  openalex: W7128953288
+links:
+  paper: https://doi.org/10.3390/su18042000
+  pdf: https://www.mdpi.com/2071-1050/18/4/2000/pdf
+topic: post-processing
+topics:
+- extremes-hazards
+type: model
+method:
+- transformer
+- physics-constrained
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: PISA-Net Transformer corrects WRF wind-gust forecasts at sparse stations with a physical prior,
+  reducing MAE to 1.75 m/s with calibrated 95% prediction intervals.
+abstract: Wind gusts pose an increasing threat to sustainable development, damaging resilient infrastructure
+  (SDG 9), disrupting clean energy systems (SDG 7), and endangering community safety (SDG 11). However,
+  the reliability of early warning systems remains limited by systematic biases in Numerical Weather Prediction
+  (NWP) models and insufficient uncertainty quantification, particularly in regions with sparse monitoring
+  networks. To address these challenges in sustainable disaster risk reduction, this study proposes a
+  physics-informed deep learning framework—the Physics-Informed Spatial Attention Network (PISA-Net).
+  The model integrates high-resolution WRF-UPP forecasts as a physical prior within a Transformer-based
+  architecture, enabling effective bias correction and spatial dependency learning under data-sparse conditions.
+  A hybrid probabilistic learning objective is employed to simultaneously improve deterministic gust predictions
+  and provide calibrated uncertainty estimates. Evaluated on 61 extratropical cyclone events in the northeastern
+  United States, PISA-Net substantially outperforms baseline NWP and conventional deep learning models,
+  reducing the mean absolute error and root mean square error to 1.75 m/s and 2.26 m/s, respectively.
+  In addition, the resulting 95% prediction intervals are well calibrated and offer reliable risk-based
+  guidance. By improving both the accuracy and credibility of wind gust forecasts, PISA-Net provides a
+  practical decision-support tool for infrastructure maintenance, wind farm operations, and public safety
+  planning. This work demonstrates the potential of physics-informed deep learning to strengthen sustainable
+  early warning systems in data-sparse regions.
+significance: 3
+cited_by: 2
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

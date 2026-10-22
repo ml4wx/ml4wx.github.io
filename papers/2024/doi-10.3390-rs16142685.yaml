@@ -1,0 +1,59 @@
+id: doi-10.3390-rs16142685
+title: Spatiotemporal Feature Fusion Transformer for Precipitation Nowcasting via Feature Crossing
+authors:
+- Taisong Xiong
+- Weiping Wang
+- Jianxin He
+- Rui Su
+- Hao Wang
+- Jinrong Hu
+date: '2024-07-22'
+year: 2024
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs16142685
+  openalex: W4400873121
+links:
+  paper: https://doi.org/10.3390/rs16142685
+orgs:
+- cma
+topic: nowcasting
+type: model
+method:
+- transformer
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: A U-Net-like spatiotemporal transformer with cross-feature fusion attention improves 0–2 h precipitation
+  nowcasting, especially at high-intensity radar echo levels.
+abstract: Precipitation nowcasting plays an important role in mitigating the damage caused by severe weather.
+  The objective of precipitation nowcasting is to forecast the weather conditions 0–2 h ahead. Traditional
+  models based on numerical weather prediction and radar echo extrapolation obtain relatively better results.
+  In recent years, models based on deep learning have also been applied to precipitation nowcasting and
+  have shown improvement. However, the forecast accuracy is decreased with longer forecast times and higher
+  intensities. To mitigate the shortcomings of existing models for precipitation nowcasting, we propose
+  a novel model that fuses spatiotemporal features for precipitation nowcasting. The proposed model uses
+  an encoder–forecaster framework that is similar to U-Net. First, in the encoder, we propose a spatial
+  and temporal multi-head squared attention module based on MaxPool and AveragePool to capture every independent
+  sequence feature, as well as a global spatial and temporal feedforward network, to learn the global
+  and long-distance relationships between whole spatiotemporal sequences. Second, we propose a cross-feature
+  fusion strategy to enhance the interactions between features. This strategy is applied to the components
+  of the forecaster. Based on the cross-feature fusion strategy, we constructed a novel multi-head squared
+  cross-feature fusion attention module and cross-feature fusion feedforward network in the forecaster.
+  Comprehensive experimental results demonstrated that the proposed model more effectively forecasted
+  high-intensity levels than other models. These results prove the effectiveness of the proposed model
+  in terms of predicting convective weather. This indicates that our proposed model provides a feasible
+  solution for precipitation nowcasting. Extensive experiments also proved the effectiveness of the components
+  of the proposed model.
+significance: 3
+cited_by: 11
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

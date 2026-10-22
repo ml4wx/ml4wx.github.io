@@ -1,0 +1,51 @@
+id: doi-10.5194-egusphere-2026-915
+title: A comparative analysis of deep learning models for classifying shallow mesoscale cloud patterns
+  in satellite images
+authors:
+- Anna Granberg
+- Vilma Lundholm
+- Pouria Khalaj
+- Manu Anna Thomas
+- Yifan Ding
+- D. Simon H. Jonsson
+- Abhay Devasthale
+date: '2026-04-09'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.5194/egusphere-2026-915
+  openalex: W7152577813
+links:
+  paper: https://doi.org/10.5194/egusphere-2026-915
+topic: observations-remote-sensing
+type: evaluation
+method:
+- transformer
+- cnn
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Compares CNN, ResNet and DINOv2 vision transformer for classifying mesoscale low-cloud patterns
+  in SEVIRI imagery; DINOv2 with an MLP gives the best accuracy.
+abstract: Abstract. Representation of clouds in climate models is challenging, not the least due to their
+  heterogeneous spatial structures and dynamic behavior. In this study, the potential of advanced machine
+  learning (ML) techniques to identify and categorize mesoscale low-level cloud structures in satellite
+  imagery is explored, with particular emphasis on those patterns that are frequently observed over the
+  trade wind regions of the south Atlantic Ocean. Rectified Level 1.5 satellite images from the spinning
+  enhanced visible and infrared imager (SEVIRI) for the year 2021 are used for the analysis. To assess
+  the potential gains in classification accuracy under limited labeled datasets, several deep learning
+  approaches are evaluated. The analysis considers a custom-built convolutional neural network, a pre-trained
+  50-layer residual neural network adapted through transfer learning using EuroSat, and a self-supervised
+  vision transformer framework known as DINOv2 (self-distillation with no labels version 2). The embeddings,
+  i.e. the feature representations yielded by DINOv2 are used in two separate approaches, one based on
+  manually-labeled data and the other using the k-means clustering algorithm. The results show that combining
+  the DINOv2 model with a multilayer perceptron and training on labeled data achieves the highest cloud
+  pattern classification accuracy among the evaluated ML approaches.
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

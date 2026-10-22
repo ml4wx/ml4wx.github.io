@@ -1,0 +1,55 @@
+id: arxiv-2601.04751
+title: Intraday spatiotemporal PV power prediction at national scale using satellite-based solar forecast
+  models
+authors:
+- Luca Lanzilao
+- Angela Meyer
+date: '2026-01-08'
+year: 2026
+venue: Energy and AI
+venue_type: journal
+ids:
+  arxiv: '2601.04751'
+  doi: 10.1016/j.egyai.2026.100786
+  openalex: W7119747771
+links:
+  paper: https://doi.org/10.1016/j.egyai.2026.100786
+  pdf: https://arxiv.org/pdf/2601.04751
+topic: applications-impacts
+topics:
+- nowcasting
+type: evaluation
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+- stations
+status: pre-operational
+summary: Compares seven satellite-based and NWP intraday models for national PV nowcasting across 6434
+  Swiss stations; SolarSTEPS and SHADECast lead, beating IFS-ENS at short lead times.
+abstract: We present a novel framework for spatiotemporal photovoltaic (PV) power forecasting and use
+  it to evaluate the reliability, sharpness, and overall performance of seven intraday PV power nowcasting
+  models. The model suite includes satellite-based deep learning and optical-flow approaches and physics-based
+  numerical weather prediction models, covering both deterministic and probabilistic formulations. Forecasts
+  are first validated against satellite-derived surface solar irradiance (SSI). Irradiance fields are
+  then converted into PV power using station-specific machine learning models, enabling comparison with
+  production data from 6434 PV stations across Switzerland. To our knowledge, this is the first study
+  to investigate spatiotemporal PV forecasting at a national scale. We additionally provide the first
+  visualizations of how mesoscale cloud systems shape national PV production on hourly and sub-hourly
+  timescales. Our results show that satellite-based approaches outperform the Integrated Forecast System
+  (IFS-ENS), particularly at short lead times. Among them, SolarSTEPS and SHADECast deliver the most accurate
+  SSI and PV power predictions, with SHADECast providing the most reliable ensemble spread. The deterministic
+  model IrradianceNet achieves the lowest root mean square error, while probabilistic forecasts of SolarSTEPS
+  and SHADECast provide better-calibrated uncertainty. Forecast skill generally decreases with elevation.
+  At a national scale, satellite-based models forecast the daily total PV generation with relative errors
+  below 10% for 82% of the days in 2019-2020, demonstrating robustness and their potential for operational
+  use.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

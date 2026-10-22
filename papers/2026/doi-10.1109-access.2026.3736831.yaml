@@ -1,0 +1,59 @@
+id: doi-10.1109-access.2026.3736831
+title: Ultra-Short-Term Photovoltaic Power Forecasting Via a Hybrid Physics-Guided and Data-Driven Model
+  With Dynamic NWP Correction
+authors:
+- Yahui Wang
+- Shibo Zhang
+- Rui Chang
+- Lingling Lv
+- Meijun Duan
+- Yan Dong
+- Bo Gu
+date: '2026-01-01'
+year: 2026
+venue: IEEE Access
+venue_type: journal
+ids:
+  doi: 10.1109/access.2026.3736831
+  openalex: W7214078082
+links:
+  paper: https://doi.org/10.1109/access.2026.3736831
+topic: applications-impacts
+topics:
+- post-processing
+type: model
+method:
+- cnn
+- physics-constrained
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- other
+status: research
+summary: PGD3-Net adds physics-guided solar features, dynamic NWP correction and asymmetric loss, cutting
+  ultra-short-term PV forecast MAE by up to 23.26%.
+abstract: 'The integration of photovoltaic (PV) power into grids is hampered by its intermittency, necessitating
+  highly accurate ultra-short-term forecasting. The quality of numerical weather prediction (NWP) data
+  is a critical bottleneck. Current approaches often treat NWP as static inputs or apply offline corrections,
+  failing to address systematic biases in real-time. Furthermore, the lack of robust physical priors and
+  the misalignment between symmetric loss functions and asymmetric market penalties limit both accuracy
+  and economic utility. To address these challenges, this paper proposes PGD3-Net, a novel hybrid physics-guided
+  and data-driven model with dynamic NWP correction for ultra-short-term PV power forecasting. PGD3-Net
+  synergistically integrates three key innovations: 1) a physics-guided feature enhancement (PGFE) module
+  that encodes solar altitude, azimuth, and precise sunrise-sunset offsets to provide strong astronomical
+  priors; 2) a dynamic NWP correction (D-NWP-C) module that employs multi-scale parallel convolutions
+  and channel attention to adaptively refine future NWP sequences online; and 3) an adaptive asymmetric
+  L1 loss that imposes a heavier penalty on over-estimation errors, aligning model training with grid
+  operation economics. Evaluated on real-world data across four seasons, PGD3-Net significantly outperforms
+  state-of-the-art baseline methods. Compared to the optimal baseline, it reduces the MAE by up to 23.26%
+  and the RMSE by up to 9.72%, while improving the R2 by up to 2.83% across different seasons, demonstrating
+  its effectiveness in leveraging physical knowledge and correcting meteorological uncertainties to deliver
+  reliable and economically aligned forecasts.'
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,50 @@
+id: arxiv-2603.24744
+title: Contrastive Learning Boosts Deterministic and Generative Models for Weather Data
+authors:
+- Nathan Bailey
+date: '2026-03-25'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2603.24744'
+  openalex: W7140979844
+links:
+  paper: https://arxiv.org/abs/2603.24744
+  pdf: https://arxiv.org/pdf/2603.24744
+topic: foundation-models
+topics:
+- observations-remote-sensing
+type: model
+method:
+- other
+- gnn
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Contrastive embeddings (SPARTA) of ERA5 that align sparse and complete samples, outperforming
+  autoencoders for compressed weather representations on downstream tasks.
+abstract: Weather data, comprising multiple variables, poses significant challenges due to its high dimensionality
+  and multimodal nature. Creating low-dimensional embeddings requires compressing this data into a compact,
+  shared latent space. This compression is required to improve the efficiency and performance of downstream
+  tasks, such as forecasting or extreme-weather detection. Self-supervised learning, particularly contrastive
+  learning, offers a way to generate low-dimensional, robust embeddings from unlabelled data, enabling
+  downstream tasks when labelled data is scarce. Despite initial exploration of contrastive learning in
+  weather data, particularly with the ERA5 dataset, the current literature does not extensively examine
+  its benefits relative to alternative compression methods, notably autoencoders. Moreover, current work
+  on contrastive learning does not investigate how these models can incorporate sparse data, which is
+  more common in real-world data collection. It is critical to explore and understand how contrastive
+  learning contributes to creating more robust embeddings for sparse weather data, thereby improving performance
+  on downstream tasks. Our work extensively explores contrastive learning on the ERA5 dataset, aligning
+  sparse samples with complete ones via a contrastive loss term to create SPARse-data augmented conTRAstive
+  spatiotemporal embeddings (SPARTA). We introduce a temporally aware batch sampling strategy and a cycle-consistency
+  loss to improve the structure of the latent space. Furthermore, we propose a novel graph neural network
+  fusion technique to inject domain-specific physical knowledge. Ultimately, our results demonstrate that
+  contrastive learning is a feasible and advantageous compression method for sparse geoscience data, thereby
+  enhancing performance in downstream tasks.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

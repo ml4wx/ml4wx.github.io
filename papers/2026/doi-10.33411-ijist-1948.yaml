@@ -1,0 +1,60 @@
+id: doi-10.33411-ijist-1948
+title: A Machine Learning-Based Early Warning System for Rainfall Level and Cloudburst Prediction
+authors:
+- Basharat Ahmad Hassan
+- Nadeem Khan
+- Muhammad Zubair
+- Muqaddas M
+date: '2026-07-09'
+year: 2026
+venue: International Journal of Innovations in Science and Technology
+venue_type: journal
+ids:
+  doi: 10.33411/ijist/1948
+  openalex: W7202194497
+links:
+  paper: https://doi.org/10.33411/ijist/1948
+  pdf: https://journal.50sea.com/index.php/IJIST/article/download/1948/2842
+topic: extremes-hazards
+topics:
+- local-forecasting
+type: model
+method:
+- rnn
+- cnn
+- classical-ml
+timescale:
+- short
+spatial:
+- regional
+data:
+- stations
+- other
+status: research
+summary: A CNN-LSTM early warning system classifies cloudbursts and rainfall levels in northern Pakistan
+  with 99.1% accuracy, but it is trained on a physically informed simulator rather than observations.
+abstract: Extreme rainfall events and cloudbursts pose a severe threat to human life, infrastructure,
+  agriculture and environmental sustainability particularly in regions of complex terrain such as northern
+  Pakistan. Traditional Numerical Weather Prediction (NWP) systems struggle to resolve localized short-duration
+  convective events because of their coarse spatial resolution and high computational latency leaving
+  vulnerable populations with little lead time to respond. This study presents a full- stack machine learning
+  -based Early Warning System (EWS) for predicting rainfall levels and detecting potential cloudburst
+  events. To overcome the scarcity of high resolution localized meteorological records a physically informed
+  data simulator was engineered to generate more than 145000 daily observations spanning nine years across
+  49 distinct locations covering temperature, humidity, pressure and wind parameters. Four predictive
+  models Random Forest, Support Vector Machine (SVM), Logistic Regression and a hybrid Convolutional Neural
+  Network with Bidirectional Long Short-Term Memory (CNN-LSTM) were trained and benchmarked on both rainfall
+  magnitude regression and cloudburst classification. The CNN-LSTM model delivered the best performance
+  with 99.1% accuracy, 98.5% precision, 97.2% recall, a 97.8% F1 score and an AUC of 0.99 while maintaining
+  a low false negative rate. The trained intelligence was deployed through a Python Flask REST API for
+  real time inference and a Risk Rating Score (RRS) algorithm was introduced to translate raw model outputs
+  into four actionable color-coded alert levels (Green, Yellow, Orange, Red). An interactive React dashboard
+  lets disaster management officials enter live weather metrics and instantly receive visual warnings.
+  The proposed system provides a practical link between complex meteorological artificial intelligence
+  and user-friendly emergency response platform synoptic macro scale forecasting.
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

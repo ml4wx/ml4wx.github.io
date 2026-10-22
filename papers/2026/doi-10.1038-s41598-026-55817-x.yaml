@@ -1,0 +1,58 @@
+id: doi-10.1038-s41598-026-55817-x
+title: Spatiotemporal cross-attention hybrid network for weather forecasting in complex terrain
+authors:
+- Zongyun Yang
+- Haiwei Sang
+- Yongtao Wang
+- Qiao Wang
+- J Liu
+- 杜凯音
+- LianYan Mou
+- YuLing Chen
+date: '2026-06-10'
+year: 2026
+venue: Scientific Reports
+venue_type: journal
+ids:
+  doi: 10.1038/s41598-026-55817-x
+  openalex: W7164191156
+links:
+  paper: https://doi.org/10.1038/s41598-026-55817-x
+topic: local-forecasting
+topics:
+- regional-km-scale
+type: model
+method:
+- transformer
+- rnn
+- cnn
+timescale:
+- short
+spatial:
+- regional
+- local
+data:
+- stations
+status: research
+summary: Hybrid ConvLSTM-Transformer with cross-attention for station forecasts in Guizhou karst terrain,
+  cutting LSTM temperature RMSE by 18.99% and precipitation RMSE by 27.74%.
+abstract: 'Weather forecasting in complex terrain, such as the karst landscapes of Guizhou, faces the
+  dual challenge of capturing microscale topographic effects and macroscale atmospheric dynamics. Existing
+  models often struggle to balance local spatiotemporal patterns with long-range dependencies. To address
+  this, we present a novel hybrid architecture that integrates ConvLSTM and Transformer via a Spatiotemporal
+  Cross-Attention (STCA) mechanism. Our approach utilizes an STL-VMD preprocessing pipeline to decompose
+  non-stationary meteorological signals into stationary subsequences, effectively separating trend and
+  seasonal components. The architecture synergizes ConvLSTM''s local feature extraction with Transformer''s
+  global correlation modeling, while the STCA module dynamically bridges spatial and temporal information
+  through multi-scale convolution and adaptive gating. Validated across 33 meteorological stations in
+  Guizhou over a 51-year period (1961-2011), our model demonstrates superior performance. Compared to
+  baseline LSTM models, temperature forecasting achieves an 18.99% reduction in RMSE ([Formula: see text]),
+  and notably, precipitation forecasting achieves a 27.74% reduction in RMSE with a substantial 54.08%
+  improvement in [Formula: see text]. The results confirm the model''s robustness and generalization capability
+  for operational forecasting in topographically complex regions.'
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,54 @@
+id: doi-10.1016-j.isci.2024.111574
+title: A deep-learning-based consistency test approach for Earth system models on HPC systems
+authors:
+- Yangyang Yu
+- Shaoqing Zhang
+- Haohuan Fu
+- Dexun Chen
+- Yang Gao
+- Xiaopei Lin
+- Zhao Liu
+- Xiaojing Lv
+date: '2024-12-12'
+year: 2024
+venue: iScience
+venue_type: journal
+ids:
+  doi: 10.1016/j.isci.2024.111574
+  openalex: W4405337015
+links:
+  paper: https://doi.org/10.1016/j.isci.2024.111574
+orgs:
+- tsinghua-university
+topic: benchmarks-data-eval
+topics:
+- infra-software
+type: model
+method:
+- rnn
+- gan-vae
+spatial:
+- global
+data:
+- km-scale-sim
+- other
+status: research
+summary: A BiGRU autoencoder consistency test flags whether Earth system model runs on new HPC hardware
+  are statistically distinguishable from trusted CESM ensembles.
+abstract: Evaluating climate consistency is a critically important step in the development and optimization
+  of Earth system models (ESMs) on the high-performance computing (HPC) systems. We have developed an
+  Earth system model deep-learning consistency test, referred to as ESM-DCT. The ESM-DCT is based on the
+  unsupervised bidirectional gate recurrent unit-autoencoder (BGRU-AE) model to study the features from
+  the ESM simulation ensembles and adopts the reconstruction errors to evaluate the consistency. We use
+  the Community Earth System Model (CESM) on the new Sunway heterogeneous system to evaluate the ESM-DCT.
+  The results show that the ESM-DCT can determine whether or not the new model simulations are statistically
+  distinguishable from the original trusted ensembles in the case of the heterogeneous computing environment,
+  compiling optimization option changes, and model parameter changes. Our ESM-DCT tool provides an efficient
+  and objective approach for verifying the reliability of the development and optimization of ESMs on
+  HPC systems.
+significance: 3
+cited_by: 1
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

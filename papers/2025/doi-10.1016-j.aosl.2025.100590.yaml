@@ -1,0 +1,62 @@
+id: doi-10.1016-j.aosl.2025.100590
+title: Skillful bias correction of offshore near-surface wind field forecasting based on a multi-task
+  machine learning model
+authors:
+- Qiyang Liu
+- Anboyu Guo
+- Fengxue Qiao
+- Xinjian Ma
+- Yanan Liu
+- Yong Huang
+- Rui Wang
+- Chunyan Sheng
+date: '2025-01-06'
+year: 2025
+venue: Atmospheric and Oceanic Science Letters
+venue_type: journal
+ids:
+  doi: 10.1016/j.aosl.2025.100590
+  openalex: W4406098126
+links:
+  paper: https://doi.org/10.1016/j.aosl.2025.100590
+orgs:
+- fudan-university
+topic: post-processing
+topics:
+- local-forecasting
+type: model
+method:
+- other
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: research
+summary: A multi-task TabNet corrects ECMWF-IFS offshore wind forecasts at 14 stations, cutting wind speed
+  RMSE from 2.20 to 1.25 m/s.
+abstract: Accurate short-term forecast of offshore wind fields is still challenging for numerical weather
+  prediction models. Based on three years of 48-hour forecast data from the European Centre for Medium-Range
+  Weather Forecasts Integrated Forecasting System global model (ECMWF-IFS) over 14 offshore weather stations
+  along the coast of Shandong Province, this study introduces a multi-task learning (MTL) model (TabNet-MTL),
+  which significantly improves the forecast bias of near-surface wind direction and speed simultaneously.
+  TabNet-MTL adopts the feature engineering method, utilizes mean square error as the loss function, and
+  employs the 5-fold cross validation method to ensure the generalization ability of the trained model.
+  It demonstrates superior skills in wind field correction across different forecast lead times over all
+  stations compared to its single-task version (TabNet-STL) and three other popular single-task learning
+  models (Random Forest, LightGBM, and XGBoost). Results show that it significantly reduces root mean
+  square error of the ECMWF-IFS wind speed forecast from 2.20 to 1.25 m s −1 , and increases the forecast
+  accuracy of wind direction from 50 % to 65 %. As an explainable deep learning model, the weather stations
+  and long-term temporal statistics of near-surface wind speed are identified as the most influential
+  variables for TabNet-MTL in constructing its feature engineering. 摘要 目前, 数值业务预报模式对沿海站点短期风场的准确预报仍存在挑战.
+  本研究基于欧洲中期天气预报中心ECMWF-IFS的高分辨率模式未来48小时的预报数据, 构建适用于沿海风场订正的热动力特征, 关键变量的短期和长期统计特征, 引入多任务深度学习模型 (TabNet-MTL)
+  对山东省14个沿海气象站的风向和风速预报同时进行订正. 相比于多个单任务学习模型 (随机森林, LightGBM, XGBoost和TabNet-STL) , TabNet-MTL模型具有显著的偏差订正优势,
+  风速预报的均方根误差从2.20 m s −1 降低到 1.25 m s −1 , 风向预报准确率从50 %提高到65 %.此外, TabNet-MTL模型具有可解释性, 特征重要性表明气象站点和近地面风速统计特征对风场订正的改善具有较大贡献.
+significance: 3
+cited_by: 4
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

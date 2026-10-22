@@ -1,0 +1,56 @@
+id: arxiv-2606.02886
+title: Scalable Uncertainty Quantification for Extreme Weather Forecasting via Empirical Neural Tangent
+  Kernels
+authors:
+- Jose Marie Antonio Miñoza
+- Rex Gregor Laylo
+- Sebastian C. Ibañez
+date: '2026-06-01'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.02886'
+  doi: 10.1145/3770855.3818106
+  openalex: W7163687479
+links:
+  paper: https://arxiv.org/abs/2606.02886
+  pdf: https://arxiv.org/pdf/2606.02886
+topic: xai-uq-physics
+topics:
+- extremes-hazards
+- global-medium-range
+type: model
+method:
+- classical-ml
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Neural tangent kernel uncertainty quantification with ICA decomposition gives 31–37% sharper
+  90% intervals than conformal prediction, with severity-adaptive intervals and no retraining.
+abstract: 'Deep learning weather models now match numerical weather prediction accuracy while running
+  orders of magnitude faster, but produce deterministic forecasts without uncertainty estimates, a critical
+  gap for high-stakes decisions during extreme weather events. This paper proposes Neural Tangent Kernel-based
+  uncertainty quantification (NTK-UQ) using last-layer empirical features. Theoretical analysis predicts
+  that UQ quality is architecture-dependent through two mechanisms. First, a variance collapse mechanism
+  explains when UQ fails: when the eigenvalue truncation rank approaches the effective rank of the feature
+  space, the GP correction term consumes nearly all prior variance, destroying discrimination between
+  tropical cyclones and routine conditions; architectures with concentrated spectra (spectral operators)
+  require aggressive truncation ($k \leq 10$), while attention-based models tolerate full-rank computation.
+  Second, decomposition performance depends on the non-Gaussian, heavy-tailed structure of extreme weather:
+  Independent Component Analysis exploits higher-order statistics (kurtosis, negentropy) to isolate heavy-tailed
+  extreme-event features, achieving higher discrimination than singular value decomposition, which captures
+  only second-order variance. A data-driven selection rule chooses ICA or SVD from the feature eigenspectrum
+  concentration ratio, correctly prescribing the superior decomposition for all four evaluated architectures.
+  Compared to split conformal prediction (the natural post-hoc baseline), NTK-UQ achieves 31--37\% sharper
+  prediction intervals at 90\% coverage, and uniquely produces \emph{adaptive} intervals that scale with
+  extreme event severity, which conformal prediction cannot achieve by construction. The framework requires
+  no retraining; inference-time uncertainty requires only a single matrix-vector product per sample.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

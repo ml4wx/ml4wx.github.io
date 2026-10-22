@@ -1,0 +1,65 @@
+id: doi-10.5194-egusphere-2026-5300
+title: Physics-Guided Diagnosis of CYGNSS Wind Mismatch under Tropical-Cyclone Wind–Wave Disequilibrium
+authors:
+- S M Injamamul Haque Masum
+- Ahmed Wasiu Akande
+- Dongkai Yang
+- Mohammad Shohidul Islam
+- Syed Shahid Shah
+date: '2026-09-11'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.5194/egusphere-2026-5300
+  openalex: W7212321468
+links:
+  paper: https://doi.org/10.5194/egusphere-2026-5300
+topic: observations-remote-sensing
+topics:
+- extremes-hazards
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- era5
+- other
+status: research
+summary: Supervised physics-guided wind-wave disequilibrium index explains CYGNSS wind mismatch in tropical
+  cyclones, with cross-basin Spearman correlations of 0.22 to 0.38.
+abstract: Abstract. The Cyclone Global Navigation Satellite System (CYGNSS) provides extensive ocean-surface
+  wind observations within tropical cyclones, yet its reference-relative mismatch can vary systematically
+  with storm structure and the evolving sea state. This study develops a physics-guided diagnostic framework
+  using 212,697 unique CYGNSS–tropical-cyclone matchups from 147 storms during 2022–2024 across the western
+  North Pacific, Bay of Bengal, and North Atlantic. CYGNSS observations are combined with ERA5 atmospheric
+  and wave fields and IBTrACS best-track information to construct six descriptors of derived wave-height
+  departure, young-wave state, bulk wave steepness, transient wind forcing, transient sea-state response,
+  and storm-relative proximity. A supervised Wind–Wave Disequilibrium Index (WWDI∗) is derived using training-only
+  robust normalization and leave-one-component-out evidence weighting, with all parameters frozen before
+  temporal and geographical evaluation. Across four storm-independent and observation-independent cross-basin
+  transfers, WWDI∗ retains positive associations with absolute CYGNSS–IBTrACS mismatch. Observation-level
+  Spearman correlations range from 0.219 to 0.381, whereas 10-bin regime-scale R2 values range from 0.639
+  to 0.753. Wave steepness receives the largest training-derived weight in both development basins, followed
+  by young-wave state and transient significant-wave-height response. Permutation testing, storm-wise
+  bootstrap resampling, and sensitivity experiments confirm the persistence of the regime-scale relationships.
+  After controlling for ranked tropical-cyclone intensity, storm-relative radius, their quadratic terms,
+  and their interaction, the residual association reverses sign in all four transfers, with residual Spearman
+  coefficients from −0.645 to −0.543. This shows that the positive unconditional relationship is embedded
+  within the joint storm-intensity–radius structure rather than representing an independent monotonic
+  effect. Independent comparison with 5,771 CMEMS significant-wave-height matchups gives an ERA5 RMSE
+  of 0.631 m and Pearson correlation of 0.942. Diagnostic machine-learning experiments further show that
+  local atmospheric wind provides substantial transferable information beyond tropical-cyclone intensity
+  and radial position, with additional benefit from bulk wave-state variables in three of the four transfers.
+  A training-derived WWDI∗-conditioned adjustment reduces raw external RMSE by 29.8–40.4 %; relative to
+  a simpler global training-bias correction, the additional point-estimate improvement is 1.7–13.0 %,
+  with storm-wise bootstrap support for the reciprocal WP–BOB transfers. These results identify transferable
+  tropical-cyclone wind–wave regimes associated with systematic changes in reference- relative CYGNSS
+  mismatch. WWDI∗ is therefore interpreted as a supervised physical diagnostic of mismatch-prone storm
+  environments rather than as a causal index or an operational wind-retrieval correction.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

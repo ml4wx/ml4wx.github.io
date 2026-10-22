@@ -1,0 +1,46 @@
+id: arxiv-2601.10181
+title: Reinforcement Learning to Discover a North-East Monsoon Index for Rainfall Prediction in Thailand
+authors:
+- Kiattikun Chobtham
+date: '2026-01-15'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2601.10181'
+  openalex: W7124422808
+links:
+  paper: https://arxiv.org/abs/2601.10181
+  pdf: https://arxiv.org/pdf/2601.10181
+topic: s2s-seasonal
+topics:
+- climate-analysis-attribution
+type: model
+method:
+- reinforcement-learning
+- rnn
+timescale:
+- seasonal
+spatial:
+- regional
+data:
+- stations
+- other
+status: research
+summary: A Deep Q-Network selects sea surface temperature rectangles to build a north-east monsoon index
+  that improves LSTM 12-month-ahead rainfall forecasts across Thai station clusters.
+abstract: Accurately predicting long-term rainfall is challenging. Global climate indices, such as the
+  El Niño-Southern Oscillation, are standard input features for machine learning. However, a significant
+  gap persists regarding local-scale indices capable of improving predictive accuracy in specific regions
+  of Thailand. This paper introduces a novel North-East monsoon climate index calculated from sea surface
+  temperature to reflect the climatology of the boreal winter monsoon. To optimise the calculated areas
+  used for this index, a Deep Q-Network reinforcement learning agent explores and selects the most effective
+  rectangles based on their correlation with seasonal rainfall. Rainfall stations were classified into
+  12 distinct clusters to distinguish rainfall patterns between southern and upper Thailand. Experimental
+  results show that incorporating the optimised index into Long Short-Term Memory models significantly
+  improves long-term monthly rainfall prediction skill in most cluster areas. This approach effectively
+  reduces the Root Mean Square Error for 12-month-ahead forecasts.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

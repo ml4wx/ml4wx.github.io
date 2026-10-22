@@ -1,0 +1,58 @@
+id: doi-10.5194-gmd-19-8895-2026
+title: A deep learning framework for gridding daily climate variables from a sparse station network
+authors:
+- Alexandru Dumitrescu
+date: '2026-09-21'
+year: 2026
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-19-8895-2026
+  openalex: W7213937235
+links:
+  paper: https://doi.org/10.5194/gmd-19-8895-2026
+  pdf: https://gmd.copernicus.org/articles/19/8895/2026/gmd-19-8895-2026.pdf
+topic: observations-remote-sensing
+topics:
+- downscaling
+type: model
+method:
+- transformer
+- other
+spatial:
+- regional
+data:
+- stations
+- other
+status: research
+summary: Attention-based conditional neural process (SMACNP) grids daily temperature and precipitation
+  from sparse Romanian stations, beating regression kriging on MAE in most seasons.
+abstract: Abstract. High-resolution gridded climate datasets are essential for Earth system modelling
+  and impact assessments, yet generating them from sparse, irregularly distributed station networks remains
+  a significant challenge, particularly in regions with complex topography. This study evaluates the Spatial
+  Multi-Attention Conditional Neural Process (SMACNP), a probabilistic deep learning framework, for the
+  daily spatial interpolation of air temperature and precipitation, marking the first application of its
+  localized encoder variant to the challenge of gridding climate data from a sparse station network. We
+  investigate two distinct encoder configurations—Global and Localized—to determine the optimal structural
+  prior for capturing spatial dependencies in data-scarce regimes. The models were developed and evaluated
+  using data from a sparse network of meteorological stations in Romania from 2020 to 2023. To ensure
+  applicability for long-term historical reconstruction, the input features were restricted to static
+  topographic predictors derived from a Digital Elevation Model (DEM). Performance was benchmarked against
+  Regression Kriging (RK), a standard geostatistical baseline that incorporates these same topographic
+  covariates. Results demonstrate that the SMACNP architectures substantially outperform the RK baseline
+  for both variables. The SMACNP (Localized) configuration, which utilizes an attention mechanism, emerged
+  as the most robust model, achieving the lowest Mean Absolute Error (MAE) and the highest correlation
+  across the majority of seasons. The performance gains were particularly pronounced for precipitation,
+  where the deep learning models effectively captured fine-scale spatial heterogeneity and non-linearities
+  that traditional methods tended to over-smooth. Furthermore, the SMACNP framework demonstrated superior
+  uncertainty quantification; while RK exhibited significant overconfidence in precipitation estimates,
+  the SMACNP (Localized) model produced well-calibrated probabilistic predictions with near-ideal empirical
+  coverage. These findings indicate that localized neural process-based models offer a powerful, scalable,
+  and physically plausible alternative to geostatistical methods for generating high-quality gridded climate
+  datasets in complex, data-sparse environments.
+significance: 4
+cited_by: 0
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

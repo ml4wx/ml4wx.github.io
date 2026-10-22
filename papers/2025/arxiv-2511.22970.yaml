@@ -1,0 +1,51 @@
+id: arxiv-2511.22970
+title: 'Technical Report: Towards Unified Diffusion Models for Multi-Model Climate Emulation at Scale'
+authors:
+- Francesco Immorlano
+- Elijah Tavares
+- Felix Draxler
+- Padhraic Smyth
+- Pierre Gentine
+- Stephan Mandt
+date: '2025-11-28'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2511.22970'
+  openalex: W4416949815
+links:
+  paper: https://arxiv.org/abs/2511.22970
+  pdf: https://arxiv.org/pdf/2511.22970
+topic: climate-emulation
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: One conditional diffusion model emulates daily temperature across nine CMIP6 models and scenarios,
+  enabling cheap large ensembles and generalization to unseen future climates.
+abstract: 'Large ensembles of climate projections are essential for characterizing uncertainty in future
+  climate and extreme weather events, yet computational constraints of numerical climate models limit
+  ensemble sizes to a small number of realizations per model. We present a unified conditional diffusion
+  model that dramatically reduces this computational barrier by learning shared distributional patterns
+  across multiple Coupled Model Intercomparison Project phase 6 models and emission scenarios. Rather
+  than training separate emulators for each model-scenario combination, our approach captures the common
+  statistical structures underlying nine CMIP6 models, generating daily temperature maps with a global
+  coverage for historical and future periods. This unified framework enables: (i) efficient probabilistic
+  sampling for comprehensive uncertainty quantification across models and scenarios; (ii) rapid generation
+  of large ensembles that would be computationally intractable with traditional climate models; (iii)
+  variance-reduced treatment effect analysis via fixed-seed generation that disentangles forced climate
+  responses from internal variability. Evaluations on held-out models demonstrate reliable generalization
+  to unseen future climates, enabling rapid exploration of different emission pathways.'
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

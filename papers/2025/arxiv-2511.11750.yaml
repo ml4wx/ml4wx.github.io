@@ -1,0 +1,56 @@
+id: arxiv-2511.11750
+title: 'IDOL: Meeting Diverse Distribution Shifts with Prior Physics for Tropical Cyclone Multi-Task Estimation'
+authors:
+- Hanting Yan
+- Pan Mu
+- Shiqi Zhang
+- Yuchao Zhu
+- Jinglin Zhang
+- Cong Bai
+date: '2025-11-13'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2511.11750'
+  doi: 10.52202/085713-3660
+  openalex: W4416350384
+links:
+  paper: https://arxiv.org/abs/2511.11750
+  pdf: https://arxiv.org/pdf/2511.11750
+  code: https://github.com/Zjut-MultimediaPlus/IDOL
+topic: extremes-hazards
+topics:
+- hybrid-parameterization
+type: model
+method:
+- physics-constrained
+- cnn
+spatial:
+- global
+data:
+- satellite
+- other
+status: research
+summary: Physics-guided identity tokens (wind field model) improve tropical cyclone wind, pressure and
+  size estimation under distribution shifts, a multi-task setup.
+abstract: Tropical Cyclone (TC) estimation aims to accurately estimate various TC attributes in real time.
+  However, distribution shifts arising from the complex and dynamic nature of TC environmental fields,
+  such as varying geographical conditions and seasonal changes, present significant challenges to reliable
+  estimation. Most existing methods rely on multi-modal fusion for feature extraction but overlook the
+  intrinsic distribution of feature representations, leading to poor generalization under out-of-distribution
+  (OOD) scenarios. To address this, we propose an effective Identity Distribution-Oriented Physical Invariant
+  Learning framework (IDOL), which imposes identity-oriented constraints to regulate the feature space
+  under the guidance of prior physical knowledge, thereby dealing distribution variability with physical
+  invariance. Specifically, the proposed IDOL employs the wind field model and dark correlation knowledge
+  of TC to model task-shared and task-specific identity tokens. These tokens capture task dependencies
+  and intrinsic physical invariances of TC, enabling robust estimation of TC wind speed, pressure, inner-core,
+  and outer-core size under distribution shifts. Extensive experiments conducted on multiple datasets
+  and tasks demonstrate the outperformance of the proposed IDOL, verifying that imposing identity-oriented
+  constraints based on prior physical knowledge can effectively mitigates diverse distribution shifts
+  in TC estimation.Code is available at https://github.com/Zjut-MultimediaPlus/IDOL.
+significance: 4
+cited_by: 1
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

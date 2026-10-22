@@ -1,0 +1,49 @@
+id: arxiv-2401.07604
+title: Data Assimilation using ERA5, ASOS, and the U-STN model for Weather Forecasting over the UK
+authors:
+- Wenqi Wang
+- Jacob Bieker
+- Rossella Arcucci
+- César Quilodrán-Casas
+date: '2024-01-15'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2401.07604'
+  openalex: W4391009475
+links:
+  paper: https://arxiv.org/abs/2401.07604
+  pdf: https://arxiv.org/pdf/2401.07604
+topic: data-assimilation
+topics:
+- global-medium-range
+type: model
+method:
+- transformer
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+- stations
+status: research
+summary: Combines kriged ASOS surface temperatures and ERA5 850 hPa data with a U-STN transformer, showing
+  assimilation improves UK forecast accuracy.
+abstract: In recent years, the convergence of data-driven machine learning models with Data Assimilation
+  (DA) offers a promising avenue for enhancing weather forecasting. This study delves into this emerging
+  trend, presenting our methodologies and outcomes. We harnessed the UK's local ERA5 850 hPa temperature
+  data and refined the U-STN12 global weather forecasting model, tailoring its predictions to the UK's
+  climate nuances. From the ASOS network, we sourced T2m data, representing ground observations across
+  the UK. We employed the advanced kriging method with a polynomial drift term for consistent spatial
+  resolution. Furthermore, Gaussian noise was superimposed on the ERA5 T850 data, setting the stage for
+  ensuing multi-time step synthetic observations. Probing into the assimilation impacts, the ASOS T2m
+  data was integrated with the ERA5 T850 dataset. Our insights reveal that while global forecast models
+  can adapt to specific regions, incorporating atmospheric data in DA significantly bolsters model accuracy.
+  Conversely, the direct assimilation of surface temperature data tends to mitigate this enhancement,
+  tempering the model's predictive prowess.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

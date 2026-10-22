@@ -1,0 +1,58 @@
+id: doi-10.1007-s44443-026-00823-2
+title: 'GCODS: A hybrid geometric-convolutional ode framework with dynamic spectral modeling for surface
+  temperature forecasting'
+authors:
+- Yucong Lu
+- Xinyue Mo
+- Huan Li
+date: '2026-05-25'
+year: 2026
+venue: Journal of King Saud University - Computer and Information Sciences
+venue_type: journal
+ids:
+  doi: 10.1007/s44443-026-00823-2
+  openalex: W7162323766
+links:
+  paper: https://doi.org/10.1007/s44443-026-00823-2
+topic: global-medium-range
+topics:
+- hybrid-parameterization
+type: model
+method:
+- other
+- physics-constrained
+- cnn
+timescale:
+- short
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: GCODS hybrid neural ODE on WeatherBench reaches 0.92 K 6-h and 2.52 K 144-h RMSE, simulating
+  the 2017–2018 Australian heatwave and La Niña teleconnection.
+abstract: Abstract Accurate surface temperature forecasting is a critical necessity for adaptation and
+  risk management amid intensifying climate change and extreme weather events. While deep learning methods
+  have shown significant potential in this domain, current deep learning models for physical forecasting
+  are often constrained by inadequate representation of intrinsic data properties, reliance on static
+  spatial dependencies, and a lack of deeply-integrated physical constraints. To address these limitations,
+  this study introduces Geometric-Convolutional ODE with Dynamic Spectral modeling (GCODS), a novel hybrid
+  framework, which synergistically integrates a Hybrid Geometric-Convolutional Encoder (HGCE) to enhance
+  input physical fidelity, with a hybrid continuous-time dynamics solver. Its core is the Moore-constrained
+  Continuous Dynamics Parameterization Network (MCDP-Net), which provides a generalizable, PDE-based modeling
+  approach combining state-adaptivity and dynamic topology to learn the spatio-temporal evolution of physical
+  operators. This design allows the physically informed, state-adaptive dynamics to model local processes,
+  while the global residual corrections, driven by a spectral module, capture large-scale atmospheric
+  phenomena. Evaluated on the WeatherBench dataset, GCODS quantitatively outperforms existing baselines,
+  achieving a global 6-h forecast latitude-weighted Root Mean Square Error (RMSE) of 0.92 K and an Anomaly
+  Correlation Coefficient (ACC) of 0.99, alongside a 144-h RMSE of 2.52 K and an ACC of 0.91. Furthermore,
+  diagnostic experiments confirm its ability to generate physically plausible forecasts of complex phenomena,
+  simulating the 2017–2018 Southeast Australia heatwave and capturing the large-scale patterns of the
+  2017–2018 La Niña teleconnection. This work provides a structured framework for integrating learnable,
+  state-adaptive physical operators into data-driven models for computational physics modeling.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

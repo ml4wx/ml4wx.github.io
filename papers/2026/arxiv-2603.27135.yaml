@@ -1,0 +1,47 @@
+id: arxiv-2603.27135
+title: Spectral-Aware Text-to-Time Series Generation with Billion-Scale Multimodal Meteorological Data
+authors:
+- Shijie Zhang
+date: '2026-03-28'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2603.27135'
+  doi: 10.1109/ijcnn69854.2026.11729135
+  openalex: W7147155512
+links:
+  paper: https://arxiv.org/abs/2603.27135
+  pdf: https://arxiv.org/pdf/2603.27135
+topic: benchmarks-data-eval
+topics:
+- probabilistic-ensembles
+type: benchmark
+method:
+- diffusion
+- transformer
+spatial:
+- global
+data:
+- era5
+- other
+status: research
+summary: MeteoCap-3B, a billion-scale captioned weather dataset, supports a spectral-aware diffusion transformer
+  that generates meteorological time series from text descriptions.
+abstract: Text-to-time-series generation is particularly important in meteorology, where natural language
+  offers intuitive control over complex, multi-scale atmospheric dynamics. Existing approaches are constrained
+  by the lack of large-scale, physically grounded multimodal datasets and by architectures that overlook
+  the spectral-temporal structure of weather signals. We address these challenges with a unified framework
+  for text-guided meteorological time-series generation. First, we introduce MeteoCap-3B, a billion-scale
+  weather dataset paired with expert-level captions constructed via a Multi-agent Collaborative Captioning
+  (MACC) pipeline, yielding information-dense and physically consistent annotations. Building on this
+  dataset, we propose MTransformer, a diffusion-based model that enables precise semantic control by mapping
+  textual descriptions into multi-band spectral priors through a Spectral Prompt Generator, which guides
+  generation via frequency-aware attention. Extensive experiments on real-world benchmarks demonstrate
+  state-of-the-art generation quality, accurate cross-modal alignment, strong semantic controllability,
+  and substantial gains in downstream forecasting under data-sparse and zero-shot settings. Additional
+  results on general time-series benchmarks indicate that the proposed framework generalizes beyond meteorology.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

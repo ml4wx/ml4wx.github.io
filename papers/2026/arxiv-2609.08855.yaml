@@ -1,0 +1,56 @@
+id: arxiv-2609.08855
+title: 'Earth System World Model for What-If Simulations: A Case Study for Terrestrial Ecosystems'
+authors:
+- Zhihao Wang
+- Ruichen Wang
+- Ruohan Li
+- Lei Ma
+- George Hurtt
+- Xiaowei Jia
+- Gengchen Mai
+- Shaowen Wang
+- Yiqun Xie
+date: '2026-09-08'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.08855'
+  openalex: W7211993219
+links:
+  paper: https://arxiv.org/abs/2609.08855
+  pdf: https://arxiv.org/pdf/2609.08855
+topic: climate-emulation
+topics:
+- xai-uq-physics
+type: model
+method:
+- transformer
+timescale:
+- climate
+spatial:
+- global
+data:
+- other
+status: research
+summary: Action-conditioned world model emulates terrestrial ecosystem dynamics across six global regions,
+  enabling what-if interventions while keeping competitive long-horizon accuracy.
+abstract: 'Machine learning emulators have become essential for accelerating expensive Earth-system simulations,
+  but most existing approaches remain passive forecasters: they reproduce simulator trajectories under
+  prescribed forcings without an explicit interaction mechanism for user-specified interventions. This
+  limits their use in interactive scientific workflows and Earth-system digital twins, where users often
+  need to explore how a system would respond if selected state components were changed. We propose an
+  action-conditioned world-modeling framework for Earth-system emulation that reformulates simulator trajectories
+  as supervision for controllable state-transition learning. The key idea is transition-action pretraining:
+  naturally observed state changes are treated as label-free action supervision, allowing the model to
+  learn both prescribed dynamics and action-conditioned responses without manually annotated interventions.
+  We further introduce masked response learning to infer unobserved variables under partial state edits
+  and learn coupled system dependencies. We test this framework on ecosystem dynamics across six global
+  regions and multiple stand ages. Experiments show that the model preserves competitive long-horizon
+  emulation accuracy while enabling controllable structural interventions and coherent responses in coupled
+  ecosystem-cycle variables. These results suggest a practical route from passive Earth-system emulators
+  toward interactive, intervention-aware scientific surrogates.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

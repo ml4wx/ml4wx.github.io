@@ -1,0 +1,59 @@
+id: arxiv-2505.11750
+title: Improving Medium Range Severe Weather Prediction through Transformer Post-processing of AI Weather
+  Forecasts
+authors:
+- Zhanxiang Hua
+- Ryan Sobash
+- David John Gagne
+- Yingkai Sha
+- Alexandra Anderson-Frey
+date: '2025-05-16'
+year: 2025
+venue: 'Artificial Intelligence for the Earth Systems 5.1 (2026): 250045'
+venue_type: journal
+ids:
+  arxiv: '2505.11750'
+  doi: 10.1175/aies-d-25-0045.1
+  openalex: W4416667943
+links:
+  paper: https://arxiv.org/abs/2505.11750
+  pdf: https://arxiv.org/pdf/2505.11750
+orgs:
+- ncar
+- university-of-washington
+topic: extremes-hazards
+topics:
+- post-processing
+type: model
+method:
+- transformer
+timescale:
+- medium
+spatial:
+- regional
+data:
+- nwp-analysis
+status: pre-operational
+summary: A transformer post-processes Pangu-Weather forecasts for 3-8 day severe weather, outperforming
+  dense networks and GFS-based guidance in skill and reliability.
+abstract: Improving the skill of medium-range (3-8 day) severe weather prediction is crucial for mitigating
+  societal impacts. This study introduces a novel approach leveraging decoder-only transformer networks
+  to post-process AI-based weather forecasts, specifically from the Pangu-Weather model, for improved
+  severe weather guidance. Unlike traditional post-processing methods that use a dense neural network
+  to predict the probability of severe weather using discrete forecast samples, our method treats forecast
+  lead times as sequential ``tokens'', enabling the transformer to learn complex temporal relationships
+  within the evolving atmospheric state. We compare this approach against post-processing of the Global
+  Forecast System (GFS) using both a traditional dense neural network and our transformer, as well as
+  configurations that exclude convective parameters to fairly evaluate the impact of using the Pangu-Weather
+  AI model. Results demonstrate that the transformer-based post-processing significantly enhances forecast
+  skill compared to dense neural networks. Furthermore, AI-driven forecasts, particularly Pangu-Weather
+  initialized from high resolution analysis, exhibit superior performance to GFS in the medium-range,
+  even without explicit convective parameters. Our approach offers improved accuracy, and reliability,
+  which also provides interpretability through feature attribution analysis, advancing medium-range severe
+  weather prediction capabilities.
+significance: 5
+cited_by: 3
+score: 55
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,71 @@
+id: doi-10.1109-jstars.2026.3716473
+title: 'RDSRNet: A Recursive Decoupling Super-Resolution Network for Meteorological Remote Sensing Data'
+authors:
+- Zhiren Zhou
+- Ziqi Zhao
+- Chunxu Duan
+- Q P Zhang
+- Lin Song
+- Richard Mitchell
+date: '2026-01-01'
+year: 2026
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2026.3716473
+  openalex: W7170195304
+links:
+  paper: https://doi.org/10.1109/jstars.2026.3716473
+orgs:
+- nuist
+- university-of-reading
+topic: observations-remote-sensing
+topics:
+- downscaling
+type: model
+method:
+- cnn
+- transformer
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- satellite
+status: research
+summary: RDSRNet recursively decouples structure and detail to super-resolve radar and satellite meteorological
+  data, claiming gains across both data types.
+abstract: 'Deep-learning super-resolution (SR) methods can improve the spatial resolution of meteorological
+  remote sensing data. However, existing studies have two limitations: First, meteorological remote sensing
+  data suffer from imbalanced feature distribution: structural components (clear-sky or weak-echo regions)
+  are spatially more extensive and continuous than detail components (strong convective regions). Under
+  such circumstances, existing methods that directly learn the mapping from LR to HR in a unified feature
+  space inevitably bias the optimization process toward structural components, ultimately leading to insufficient
+  reconstruction quality of detail components; and second, most existing methods are only validated on
+  a single type of meteorological data (e.g., radar or satellite), and their cross-data-type effectiveness
+  remains insufficiently explored. To address these issues, this article proposes a recursive decoupling
+  super-resolution network (RDSRNet). The recursive decoupling algorithm decomposes the original features
+  into structural components and detail components, whose decoupling and reconstruction rely on subproblems
+  of the same form but smaller scale. The SR result is finally obtained through the recursive reconstruction
+  of subproblems at all levels. To better reconstruct the structural and detail components, a structural–detail
+  feature reconstruction module is designed, which uses a dual-branch network for targeted reconstruction
+  of the two components, alleviating the problem of poor reconstruction effect in detail regions caused
+  by imbalanced feature distribution. Finally, the omni self-attention block is employed to complete feature
+  fusion along both spatial and channel dimensions. In addition, a composite interaction connection is
+  designed in the dual-branch network to amplify the differences between the two components, avoiding
+  an average solution while ensuring the integrity of the structural component and improving the reconstruction
+  accuracy of the detail component. Experiments on radar composite reflectivity and Himawari-9 satellite
+  data demonstrate that RDSRNet outperforms the existing advanced methods across peak signal-to-noise
+  ratio, structural similarity index measure, spectral angle mapper, and root-mean-square error metrics,
+  especially achieving remarkable improvements in structural fidelity and detail clarity for convective
+  regions. Information entropy and mean gradient magnitude are employed to analyze the two components
+  from global and local dimensions, revealing that the detail components obtained through recursive decoupling
+  possess richer information than the structural components; ablation studies further validate the performance
+  contributions of our core designs.'
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,67 @@
+id: arxiv-2610.12976
+title: Diffusion Precipitation Generation with Medium-range Weather Forecasting
+authors:
+- Guowen Li
+- Yang Liu
+- Mengxuan Chen
+- Jiashun Cheng
+- Haoyuan Liang
+- Shilei Cao
+- Yujie Wang
+- Juepeng Zheng
+- Fang Wang
+- Yerong Feng
+- Meng Jin
+- Hong Cheng
+- Yutong Lu
+- Haohuan Fu
+date: '2026-10-09'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.12976'
+  openalex: W7221552901
+links:
+  paper: https://arxiv.org/abs/2610.12976
+  pdf: https://arxiv.org/pdf/2610.12976
+topic: post-processing
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+- rnn
+- transformer
+timescale:
+- medium
+spatial:
+- global
+- regional
+data:
+- era5
+- nwp-analysis
+- satellite
+- stations
+status: research
+summary: Plug-and-play diffusion generator maps frozen weather-model forecasts to observation-aligned
+  daily precipitation, lowering CRPS and Brier scores versus ENS and GenCast.
+abstract: Accurate daily precipitation forecasts are important for weather-sensitive decisions. Although
+  recent Weather Foundation Models (WFMs) have achieved significant progress, they are trained on reanalysis
+  data, which exhibit regional and intensity-dependent biases. Since retraining WFMs on observation-based
+  targets is costly, we study Dynamics-Precipitation Decoupling, a plug-and-play framework that uses a
+  separately trained generator to map non-precipitation forecasts from a frozen weather model to observation-aligned
+  daily precipitation. Its key challenges are to capture heterogeneous rainfall distributions and align
+  daily accumulations with atmospheric signals that evolve across space and time. To address them, we
+  train a diffusion generator conditional on atmospheric states and satellite-gauge estimates of precipitation.
+  A multi-scale recurrent encoder summarizes atmospheric evolution, while cross-attention aligns atmospheric
+  and precipitation features during denoising. Extensive evaluation of various backbones, including Pangu-Weather,
+  GraphCast, and HRES, on global and regional forecasting shows improved daily precipitation accuracy
+  and event detection, with better representation of localized accumulation patterns. Global ensemble
+  evaluation shows lower Brier scores than ENS and training-from-scratch GenCast at all reported lead
+  times, with lower CRPS in most comparisons. Remarkably, a heavy-rainfall case study using 2,288 stations
+  in China further supports improved daily accumulation patterns and event detection against ground observations.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

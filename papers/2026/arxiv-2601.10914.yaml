@@ -1,0 +1,48 @@
+id: arxiv-2601.10914
+title: 'FAConvLSTM: Factorized-Attention ConvLSTM for Efficient Feature Extraction in Multivariate Climate
+  Data'
+authors:
+- Francis Ndikum Nji
+- Jianwu Wang
+date: '2026-01-16'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2601.10914'
+  openalex: W7124771388
+links:
+  paper: https://arxiv.org/abs/2601.10914
+  pdf: https://arxiv.org/pdf/2601.10914
+topic: climate-analysis-attribution
+type: model
+method:
+- cnn
+- rnn
+- transformer
+data:
+- other
+status: research
+summary: FAConvLSTM, a factorized-attention drop-in ConvLSTM replacement that cuts cost while learning
+  long-range teleconnection-scale representations from multivariate climate fields.
+abstract: Learning physically meaningful spatiotemporal representations from high-resolution multivariate
+  Earth observation data is challenging due to strong local dynamics, long-range teleconnections, multi-scale
+  interactions, and nonstationarity. While ConvLSTM2D is a commonly used baseline, its dense convolutional
+  gating incurs high computational cost and its strictly local receptive fields limit the modeling of
+  long-range spatial structure and disentangled climate dynamics. To address these limitations, we propose
+  FAConvLSTM, a Factorized-Attention ConvLSTM layer designed as a drop-in replacement for ConvLSTM2D that
+  simultaneously improves efficiency, spatial expressiveness, and physical interpretability. FAConvLSTM
+  factorizes recurrent gate computations using lightweight [1 times 1] bottlenecks and shared depthwise
+  spatial mixing, substantially reducing channel complexity while preserving recurrent dynamics. Multi-scale
+  dilated depthwise branches and squeeze-and-excitation recalibration enable efficient modeling of interacting
+  physical processes across spatial scales, while peephole connections enhance temporal precision. To
+  capture teleconnection-scale dependencies without incurring global attention cost, FAConvLSTM incorporates
+  a lightweight axial spatial attention mechanism applied sparsely in time. A dedicated subspace head
+  further produces compact per timestep embeddings refined through temporal self-attention with fixed
+  seasonal positional encoding. Experiments on multivariate spatiotemporal climate data shows superiority
+  demonstrating that FAConvLSTM yields more stable, interpretable, and robust latent representations than
+  standard ConvLSTM, while significantly reducing computational overhead.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

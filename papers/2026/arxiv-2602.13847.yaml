@@ -1,0 +1,56 @@
+id: arxiv-2602.13847
+title: 'Physics constraints and response validation in discrete-time reduced-order modeling: from idealized
+  turbulent systems to climate dynamics'
+authors:
+- Fabrizio Falasca
+- Laure Zanna
+date: '2026-02-14'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2602.13847'
+  openalex: W7129382563
+links:
+  paper: https://arxiv.org/abs/2602.13847
+  pdf: https://arxiv.org/pdf/2602.13847
+orgs:
+- nyu-m2lines
+topic: climate-analysis-attribution
+topics:
+- climate-emulation
+- xai-uq-physics
+type: model
+method:
+- physics-constrained
+timescale:
+- seasonal
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Physics-constrained neural reduced-order models, validated with the fluctuation-dissipation theorem,
+  reproduce ENSO statistics and identify its causal drivers from reanalysis.
+abstract: 'A central challenge across science and engineering is to build data-driven reduced-order models
+  of turbulent dynamical systems that reproduce stationary statistics, predict responses to external perturbations,
+  and remain practical for real-world applications. To this end, we introduce an abstract discrete-time
+  formulation of turbulent dynamical systems with exact energy-conserving nonlinearities. Parameterizing
+  this structure with neural networks yields stable, physics-constrained reduced-order models. We then
+  use the fluctuation-dissipation theorem (FDT) to validate the emulators'' forced responses from unperturbed
+  data alone, testing models beyond stationary statistics. The FDT also identifies candidate direct causal
+  links, which are used as regularization terms only when they pass validation. We first test the framework
+  on two idealized models of geophysical turbulence: the proposed emulators reproduce stationary statistics
+  and accurately predict responses to weak and strong forcings, despite being trained solely on unperturbed
+  data. We then move beyond idealized systems to model tropical climate dynamics from reanalysis data,
+  where data scarcity, partial observability, and sensitivity to choices of stochastic parameterizations
+  become central challenges. The resulting physics-constrained model reproduces key statistics of the
+  El Niño-Southern Oscillation (ENSO) and qualitatively captures its cumulative responses to perturbations;
+  augmenting it with a non-Markovian stochastic closure substantially improves quantitative agreement
+  with the FDT benchmark. This response-validated model is then used to characterize long-term causal
+  drivers of ENSO variability. The proposed methodology establishes a modular framework for stable reduced-order
+  models capable of probing causal mechanisms in realistic, partially observed turbulent systems.'
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

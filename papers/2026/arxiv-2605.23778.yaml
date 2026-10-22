@@ -1,0 +1,47 @@
+id: arxiv-2605.23778
+title: The physics of AI weather models
+authors:
+- George Craig
+- Tobias Selz
+- Matthias Beylich
+- Kirsten I. Tempest
+date: '2026-05-22'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.23778'
+  openalex: W7162305009
+links:
+  paper: https://arxiv.org/abs/2605.23778
+  pdf: https://arxiv.org/pdf/2605.23778
+orgs:
+- kit
+topic: xai-uq-physics
+topics:
+- global-medium-range
+type: evaluation
+method:
+- other
+timescale:
+- medium
+spatial:
+- global
+status: research
+summary: Shows AI weather models like GraphCast and Aurora share similar internal representations via
+  CKA, and proposes a gradient-flow particle view of their physics.
+abstract: Could it be that AI weather models are solving physical equations, although they may not be
+  the equations used by conventional NWP models? We compute correlations of forecast skill and Centered
+  Kernel Alignment, providing evidence that different AI weather models represent the atmosphere in similar
+  ways, despite differences in architecture and capacity. We argue that the architecture and training
+  of the AI models constrains the form of the physical laws that they might simulate. In particular, we
+  propose that the models implement a particle description of the atmosphere, where the latent variables
+  at each mesh point correspond to the position of a particle in the high dimensional latent space. We
+  hypothesize that the movement of the particles follows a gradient flow in the latent space towards a
+  minimum of a learned free energy functional. Analysis of the GraphCast and Aurora models show that they
+  make changes on large spatial scales in the early processor layers and move to smaller scale with increasing
+  layer depth, consistent with the gradient flow hypothesis.
+significance: 5
+score: 30
+highlight: false
+added: '2026-10-22'
+source: backfill

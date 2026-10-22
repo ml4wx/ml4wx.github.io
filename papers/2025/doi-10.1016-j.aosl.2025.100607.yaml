@@ -1,0 +1,63 @@
+id: doi-10.1016-j.aosl.2025.100607
+title: Nowcasting of cloud-to-ground lightning location and frequency based on a deep learning technique
+authors:
+- Fengquan Li
+- Jianping Li
+- Shanqiang Gu
+- Yu Ting Wang
+- Zhe Li
+- Lei Zhang
+- Ze Liu
+- Bingjie Bai
+- Zhibo Jiang
+date: '2025-02-20'
+year: 2025
+venue: Atmospheric and Oceanic Science Letters
+venue_type: journal
+ids:
+  doi: 10.1016/j.aosl.2025.100607
+  openalex: W4407777833
+links:
+  paper: https://doi.org/10.1016/j.aosl.2025.100607
+orgs:
+- cma
+topic: nowcasting
+topics:
+- extremes-hazards
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: A convolutional GRU with attention nowcasts cloud-to-ground lightning locations and frequency
+  up to 120 min ahead from Himawari data, with POD of 0.439.
+abstract: Predicting lightning that can cause power grid trips is significant for disaster prevention.
+  This paper integrates cloud-to-ground lightning detection, water vapor and infrared channel as well
+  as channel differences from the Himawari satellite, to nowcast lightning locations and frequencies in
+  Central China based on deep learning. The model utilized is Convolutional Gated Recurrent Unit with
+  attention mechanisms. Unlike previous studies that typically predict lightning locations and probabilities,
+  this study forecasts both lightning locations and frequencies. Evaluation of the model test set shows
+  that (1) within a lead time of 0 to 120 min, the average probability of detection (POD) is 0.439 and
+  the average critical success index (CSI) is 0.207; (2) as the lead time extends from 10 to 120 min,
+  the performance gradually declines, with the accuracy (ACC) decreasing from 0.993 to 0.987, POD decreasing
+  from 0.586 to 0.371, false alarm rate (FAR) increasing from 0.543 to 0.771, CSI decreasing from 0.336
+  to 0.132, and mean absolute error (MAE) increasing from 0.01 to 0.014; and (3) the model performs well
+  for organized storms but faces challenges with isolated cells or new cells near the domain boundary.
+  The constructed warm-season lightning nowcasting model for Central China is tested with a winter thunderstorm
+  in Central China and a spring tornadic storm in South China that caused transmission line trip incidents.
+  The model has strong generalization capabilities over time and space, providing practical value in mitigating
+  lightning-induced power grid trips. 摘要 目前针对地闪频次临近预报的研究相对较少, 本研究基于国家电网广域雷电地闪监测数据与葵花8/9卫星云图, 利用结合注意力机制的卷积-门控循环单元网络对华中地区暖季雷电落区与频次进行临近预报,
+  所建立深度学习雷电预报模型平均命中率为0.439, 关键成功指数为0.207, 可有效预测组织性雷暴的雷电落区与频次发展趋势, 模型具有较强泛化能力, 在导致电网雷击跳闸的华中地区冬季雷暴与华南地区春季龙卷母体雷暴预测上取得较好效果,
+  有助于降低电网雷击跳闸风险.
+significance: 3
+cited_by: 6
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

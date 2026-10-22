@@ -1,0 +1,55 @@
+id: arxiv-2508.16851
+title: 'Intelligent Shanghai Typhoon Model (ISTM): A generative probabilistic emulator for typhoon hybrid
+  modeling'
+authors:
+- Zeyi Niu
+- Wei Huang
+- Sirong Huang
+- Bo Qin
+- Mengqi Yang
+- Haofei Sun
+- Zhaoyang Huo
+- Haixia Xiao
+date: '2025-08-23'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2508.16851'
+links:
+  paper: https://arxiv.org/abs/2508.16851
+  pdf: https://arxiv.org/pdf/2508.16851
+topic: extremes-hazards
+topics:
+- downscaling
+type: model
+method:
+- diffusion
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+- nwp-analysis
+status: research
+summary: Two-stage UNet-diffusion downscaler maps 25 km ERA5 and AIFS forecasts to 9 km typhoon fields,
+  better capturing surface winds, precipitation and intensity than UNet regression.
+abstract: 'To address the systematic underestimation of typhoon intensity in artificial intelligence weather
+  prediction (AIWP) models, we propose the Intelligent Shanghai Typhoon Model (ISTM): a unified regional-to-typhoon
+  generative probabilistic forecasting system based on a two-stage UNet-Diffusion framework. ISTM learns
+  a downscaling mapping from 4 years of 25 km ERA5 reanalysis to a 9 km high resolution typhoon reanalysis
+  dataset, enabling the generation of kilometer-scale near-surface variables and maximum radar reflectivity
+  from coarse resolution fields. The evaluation results show that the two-stage UNet-Diffusion model significantly
+  outperforms both ERA5 and the baseline UNet regression in capturing the structure and intensity of surface
+  winds and precipitation. After fine-tuning, ISTM can effectively map AIFS forecasts, an advanced AIWP
+  model, to high-resolution forecasts from AI-physics hybrid Shanghai Typhoon Model, substantially enhancing
+  typhoon intensity predictions while preserving track accuracy. This positions ISTM as an efficient AI
+  emulator of hybrid modeling system, achieving fast and physically consistent downscaling. The proposed
+  framework establishes a unified pathway for the co-evolution of AIWP and physics-based numerical models,
+  advancing next-generation typhoon forecasting capabilities.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

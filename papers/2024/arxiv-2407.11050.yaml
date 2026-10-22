@@ -1,0 +1,47 @@
+id: arxiv-2407.11050
+title: Graph Neural Networks and Spatial Information Learning for Post-Processing Ensemble Weather Forecasts
+authors:
+- Moritz Feik
+- Sebastian Lerch
+- Jan Stühmer
+date: '2024-07-08'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2407.11050'
+  openalex: W4403753270
+links:
+  paper: https://arxiv.org/abs/2407.11050
+  pdf: https://arxiv.org/pdf/2407.11050
+orgs:
+- kit
+topic: post-processing
+type: model
+method:
+- gnn
+timescale:
+- medium
+spatial:
+- regional
+- local
+data:
+- nwp-analysis
+- stations
+status: research
+summary: A graph neural network with attention shares information across neighbouring stations to post-process
+  European 2-m temperature ensembles, improving on a strong neural baseline.
+abstract: Ensemble forecasts from numerical weather prediction models show systematic errors that require
+  correction via post-processing. While there has been substantial progress in flexible neural network-based
+  post-processing methods over the past years, most station-based approaches still treat every input data
+  point separately which limits the capabilities for leveraging spatial structures in the forecast errors.
+  In order to improve information sharing across locations, we propose a graph neural network architecture
+  for ensemble post-processing, which represents the station locations as nodes on a graph and utilizes
+  an attention mechanism to identify relevant predictive information from neighboring locations. In a
+  case study on 2-m temperature forecasts over Europe, the graph neural network model shows substantial
+  improvements over a highly competitive neural network-based post-processing method.
+significance: 4
+cited_by: 1
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

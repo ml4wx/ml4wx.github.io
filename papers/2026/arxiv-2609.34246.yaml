@@ -1,0 +1,46 @@
+id: arxiv-2609.34246
+title: 'CasEm: A Cascade Architecture for Long-Horizon Neural Emulation'
+authors:
+- Zhaoyi Li
+- Jingtao Ding
+- Shihua Li
+date: '2026-09-28'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.34246'
+  openalex: W7214732266
+links:
+  paper: https://arxiv.org/abs/2609.34246
+  pdf: https://arxiv.org/pdf/2609.34246
+topic: climate-emulation
+type: model
+method:
+- neural-operator
+- diffusion
+timescale:
+- climate
+spatial:
+- global
+data:
+- era5
+status: research
+summary: CasEm cascades a physical-aggregate model to correct full-state emulators, cutting 10-year global
+  climate time-mean error by 66.6% for frozen ACE backbones.
+abstract: Autoregressive neural emulators can drift or diverge over long rollouts despite accurate short-term
+  predictions. We introduce Cascaded Emulation (CasEm), a one-way rollout architecture that augments an
+  existing full-state backbone with an independently evolving model of physically specified aggregates.
+  Its forecasts guide corrections to full-state predictions, without feedback from the backbone to the
+  aggregate model. Effective guidance requires aggregates that cover substantial backbone error, remain
+  accurately predictable, and support useful full-state corrections. We derive a finite-horizon error
+  bound that clarifies these three factors and use empirical diagnostics to guide subsystem selection.
+  Across four ODE/PDE benchmarks, CasEm reduces long-horizon rollout errors across diverse backbones and
+  suppresses the trend toward error divergence in both diffusion tasks using Fourier neural operator backbones.
+  In global climate emulation, CasEm with a regional total-water subsystem reduces 10-year full-state
+  time-mean error by 66.6% and 46.3% for frozen ACE and Spherical DYffusion backbones, respectively, while
+  adding less than 3% to inference time.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

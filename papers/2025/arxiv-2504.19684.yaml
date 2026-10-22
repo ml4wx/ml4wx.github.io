@@ -1,0 +1,53 @@
+id: arxiv-2504.19684
+title: 'ClearVision: Leveraging CycleGAN and SigLIP-2 for Robust All-Weather Classification in Traffic
+  Camera Imagery'
+authors:
+- Anush Lakshman Sivaraman
+- Kojo Adu-Gyamfi
+- Ibne Farabi Shihab
+- Anuj Sharma
+date: '2025-04-28'
+year: 2025
+venue: 2025 IEEE 28th International Conference on Intelligent Transportation
+venue_type: journal
+ids:
+  arxiv: '2504.19684'
+  doi: 10.1109/itsc60802.2025.11423656
+  openalex: W7136154643
+links:
+  paper: https://arxiv.org/abs/2504.19684
+  pdf: https://arxiv.org/pdf/2504.19684
+topic: observations-remote-sensing
+type: model
+method:
+- transformer
+- gan-vae
+spatial:
+- local
+data:
+- other
+status: research
+summary: CycleGAN-enhanced SigLIP-2 classifies rain, snow and clear conditions in nighttime traffic camera
+  images, reaching 85.9% nighttime accuracy.
+abstract: Adverse weather conditions challenge safe transportation, necessitating robust real-time weather
+  detection from traffic camera imagery. We propose a novel framework combining CycleGAN-based domain
+  adaptation with efficient contrastive learning to enhance weather classification, particularly in low-light
+  nighttime conditions. Our approach leverages the lightweight SigLIP-2 model, which employs pairwise
+  sigmoid loss to reduce computational demands, integrated with CycleGAN to transform nighttime images
+  into day-like representations while preserving weather cues. Evaluated on an Iowa Department of Transportation
+  dataset, the baseline EVA-02 model with CLIP achieves a per-class overall accuracy of 96.55\% across
+  three weather conditions (No Precipitation, Rain, Snow) and a day/night overall accuracy of 96.55\%,
+  but shows a significant day-night gap (97.21\% day vs.\ 63.40\% night). With CycleGAN, EVA-02 improves
+  to 97.01\% per-class accuracy and 96.85\% day/night accuracy, boosting nighttime performance to 82.45\%.
+  Our Vision-SigLIP-2 + Text-SigLIP-2 + CycleGAN + Contrastive configuration excels in nighttime scenarios,
+  achieving the highest nighttime accuracy of 85.90\%, with 94.00\% per-class accuracy and 93.35\% day/night
+  accuracy. This model reduces training time by 89\% (from 6 hours to 40 minutes) and inference time by
+  80\% (from 15 seconds to 3 seconds) compared to EVA-02. By narrowing the day-night performance gap from
+  33.81 to 8.90 percentage points, our framework provides a scalable, efficient solution for all-weather
+  classification using existing camera infrastructure.
+significance: 2
+cited_by: 1
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

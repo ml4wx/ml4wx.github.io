@@ -1,0 +1,57 @@
+id: doi-10.1088-2515-7620-ae8153
+title: Meteosat third generation (MTG) cloud mask for high-resolution cloud cover nowcasting with artificial
+  intelligence
+authors:
+- Décio Alves
+date: '2026-06-23'
+year: 2026
+venue: Environmental Research Communications
+venue_type: journal
+ids:
+  doi: 10.1088/2515-7620/ae8153
+  openalex: W7165666098
+links:
+  paper: https://doi.org/10.1088/2515-7620/ae8153
+  pdf: https://iopscience.iop.org/article/10.1088/2515-7620/ae8153/pdf
+topic: nowcasting
+topics:
+- observations-remote-sensing
+type: model
+method:
+- transformer
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: U-Net+Transformer on 16-channel MTG-FCI cloud masks forecasts two-hour cloud cover at 10-minute
+  steps, reaching 0.74 accuracy over Madeira.
+abstract: Abstract Background. High-resolution cloud-cover nowcasting remains difficult for conventional
+  numerical weather prediction due to latency constraints and the challenge of representing rapidly evolving
+  small-scale cloud processes. Meteosat third generation (MTG) provides a new opportunity for observation-driven
+  nowcasting through the flexible combined imager (FCI) Cloud Mask product, which offers dedicated cloud
+  classification at high spatial and temporal resolution. Methods. A database of 58,760 MTG-FCI Cloud
+  Mask scenes over Madeira Island was constructed on the native geostationary grid. Temporally complete
+  samples were extracted using 12 past frames and 12 future frames, corresponding to 2 h of history and
+  a 2 h forecast horizon at 10 min resolution. Five deep learning architectures were evaluated with both
+  3-channel and 16-channel input configurations. Model performance was assessed on an independent test
+  set using accuracy, macro- F 1, weighted- F 1, and mean intersection over union (mIoU), and the selected
+  model was compared with a persistence benchmark. Results. The best results were obtained with the 16-channel
+  U-Net+Transformer, which achieved an accuracy of 0.740, a macro- F 1 of 0.718, a weighted- F 1 of 0.737,
+  and an mIoU of 0.567. Full-scene spatio-temporal encoder–decoder models consistently outperformed latent-sequence
+  approaches, and the richer 16-channel input improved performance across all model families. The selected
+  model showed strongest performance for cloud-free and cloud-opaque conditions, while most errors were
+  associated with confusion between cloud-contaminated and cloud-opaque states. When these two classes
+  were merged into a single cloudy category, recall reached 93.3%. Conclusions. These results indicate
+  that native MTG-FCI Cloud Mask data provide a strong basis for high-resolution short-range cloud nowcasting
+  and that MTG-based deep learning can serve as an effective observation-driven complement during the
+  first forecast hours.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,55 @@
+id: doi-10.1038-s41598-025-17867-5
+title: A deep learning approach for improving spatiotemporal resolution of numerical weather prediction
+  forecasts
+authors:
+- Décio Alves
+- Fábio Mendonça
+- Sheikh Shanawaz Mostafa
+- Fernando Morgado‐Dias
+date: '2025-09-25'
+year: 2025
+venue: Scientific Reports
+venue_type: journal
+ids:
+  doi: 10.1038/s41598-025-17867-5
+  openalex: W4414528698
+links:
+  paper: https://doi.org/10.1038/s41598-025-17867-5
+  pdf: https://www.nature.com/articles/s41598-025-17867-5.pdf
+topic: post-processing
+topics:
+- applications-impacts
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+- era5
+status: research
+summary: Deep spatiotemporal fusion of GFS and ERA5 with a CNN-BiLSTM raises wind forecasts from 3-hourly
+  to hourly and cuts MAE by over 50% for aviation at Madeira airport.
+abstract: This study addresses the limitations of traditional numerical weather prediction models in wind
+  forecasting for aviation operations by introducing a deep learning approach based on a spatiotemporal
+  fusion model that enhances the temporal resolution and accuracy of wind forecasts. Specifically, the
+  model integrates Global Forecast System (GFS) with European Centre for Medium-Range Weather Forecasts
+  Reanalysis v5 (ERA5) data, employing a 1-dimensional convolutional layer for spatial data fusion and
+  a bidirectional long short-term memory network for spatiotemporal pattern recognition. The presented
+  approach considerably improves upon the numeric model, increasing temporal resolution from 3-hour to
+  1-hour intervals and reducing mean absolute error by over 50% for wind speed and direction forecasts.
+  The proposed model achieves 82.85% accuracy in wind direction predictions within a 20° angle, compared
+  to 64.46% for the GFS model forecasts. Case studies demonstrate the proposed model's superior performance
+  in capturing wind variability, particularly in complex topographical settings like Madeira International
+  Airport. These improvements have relevant implications for aviation safety, flight planning, and fuel
+  consumption optimization. The geographic independence of the proposed approach suggests potential applicability
+  across diverse regions.
+significance: 3
+cited_by: 4
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

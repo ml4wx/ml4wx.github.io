@@ -1,0 +1,56 @@
+id: arxiv-2509.06311
+title: 'WindFM: An Open-Source Foundation Model for Zero-Shot Wind Power Forecasting'
+authors:
+- Hang Fan
+- Yu Shi
+- Zongliang Fu
+- Shuo Chen
+- Wei Wei
+- Wei Xu
+- Jian Li
+date: '2025-09-08'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2509.06311'
+  openalex: W4415055516
+links:
+  paper: https://arxiv.org/abs/2509.06311
+  pdf: https://arxiv.org/pdf/2509.06311
+  code: https://github.com/shiyu-coder/WindFM
+topic: applications-impacts
+topics:
+- local-forecasting
+type: model
+method:
+- transformer
+timescale:
+- short
+spatial:
+- regional
+data:
+- other
+status: research
+summary: WindFM, an 8.1M-parameter generative transformer foundation model, gives zero-shot probabilistic
+  wind power forecasts across 126,000 sites.
+abstract: High-quality wind power forecasting is crucial for the operation of modern power grids. However,
+  prevailing data-driven paradigms either train a site-specific model which cannot generalize to other
+  locations or rely on fine-tuning of general-purpose time series foundation models which are difficult
+  to incorporate domain-specific data in the energy sector. This paper introduces WindFM, a lightweight
+  and generative Foundation Model designed specifically for probabilistic wind power forecasting. WindFM
+  employs a discretize-and-generate framework. A specialized time-series tokenizer first converts continuous
+  multivariate observations into discrete, hierarchical tokens. Subsequently, a decoder-only Transformer
+  learns a universal representation of wind generation dynamics by autoregressively pre-training on these
+  token sequences. Using the comprehensive WIND Toolkit dataset comprising approximately 150 billion time
+  steps from more than 126,000 sites, WindFM develops a foundational understanding of the complex interplay
+  between atmospheric conditions and power output. Extensive experiments demonstrate that our compact
+  8.1M parameter model achieves state-of-the-art zero-shot performance on both deterministic and probabilistic
+  tasks, outperforming specialized models and larger foundation models without any fine-tuning. In particular,
+  WindFM exhibits strong adaptiveness under out-of-distribution data from a different continent, demonstrating
+  the robustness and transferability of its learned representations. Our pre-trained model is publicly
+  available at https://github.com/shiyu-coder/WindFM.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

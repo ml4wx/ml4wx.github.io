@@ -1,0 +1,46 @@
+id: arxiv-2507.20478
+title: Conditional Diffusion Models for Global Precipitation Map Inpainting
+authors:
+- Daiko Kishikawa
+- Yuka Muto
+- Shunji Kotsuki
+date: '2025-07-28'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2507.20478'
+links:
+  paper: https://arxiv.org/abs/2507.20478
+  pdf: https://arxiv.org/pdf/2507.20478
+topic: observations-remote-sensing
+topics:
+- downscaling
+type: model
+method:
+- diffusion
+- cnn
+spatial:
+- global
+data:
+- era5
+- satellite
+status: research
+summary: Conditional diffusion 3D U-Net inpaints gaps in GSMaP satellite precipitation maps using infrared
+  imagery, trained on ERA5, giving more consistent fields than conventional methods.
+abstract: Incomplete satellite-based precipitation presents a significant challenge in global monitoring.
+  For example, the Global Satellite Mapping of Precipitation (GSMaP) from JAXA suffers from substantial
+  missing regions due to the orbital characteristics of satellites that have microwave sensors, and its
+  current interpolation methods often result in spatial discontinuities. In this study, we formulate the
+  completion of the precipitation map as a video inpainting task and propose a machine learning approach
+  based on conditional diffusion models. Our method employs a 3D U-Net with a 3D condition encoder to
+  reconstruct complete precipitation maps by leveraging spatio-temporal information from infrared images,
+  latitude-longitude grids, and physical time inputs. Training was carried out on ERA5 hourly precipitation
+  data from 2020 to 2023. We generated a pseudo-GSMaP dataset by randomly applying GSMaP masks to ERA
+  maps. Performance was evaluated for the calendar year 2024, and our approach produces more spatio-temporally
+  consistent inpainted precipitation maps compared to conventional methods. These results indicate the
+  potential to improve global precipitation monitoring using the conditional diffusion models.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

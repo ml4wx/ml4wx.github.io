@@ -1,0 +1,55 @@
+id: arxiv-2601.13592
+title: Machine learning based radiative parameterization scheme and its performance in operational reforecast
+  experiments
+authors:
+- Hao Jing
+- Sa Xiao
+- Haoyu Li
+- Huadong Xiao
+- Wei Xue
+date: '2026-01-20'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2601.13592'
+  openalex: W7125198726
+links:
+  paper: https://arxiv.org/abs/2601.13592
+  pdf: https://arxiv.org/pdf/2601.13592
+orgs:
+- cma
+topic: hybrid-parameterization
+topics:
+- infra-software
+type: model
+method:
+- cnn
+timescale:
+- medium
+spatial:
+- global
+data:
+- other
+status: pre-operational
+summary: Residual CNN emulates RRTMG radiation in CMA's operational global model, giving ~8x speedup with
+  accuracy comparable to physics in two-month reforecasts.
+abstract: 'Radiation is typically the most time-consuming physical process in numerical models. One solution
+  is to use machine learning methods to simulate the radiation process to improve computational efficiency.
+  From an operational standpoint, this study investigates critical limitations inherent to hybrid forecasting
+  frameworks that embed deep neural networks into numerical prediction models, with a specific focus on
+  two fundamental bottlenecks: coupling compatibility and long-term integration stability. A residual
+  convolutional neural network is employed to approximate the Rapid Radiative Transfer Model for General
+  Circulation Models (RRTMG) within the global operational system of China Meteorological Administration.
+  We adopted an offline training and online coupling approach. First, a comprehensive dataset is generated
+  through model simulations, encompassing all atmospheric columns both with and without cloud cover. To
+  ensure the stability of the hybrid model, the dataset is enhanced via experience replay, and additional
+  output constraints based on physical significance are imposed. Meanwhile, a LibTorch-based coupling
+  method is utilized, which is more suitable for real-time operational computations. The hybrid model
+  is capable of performing ten-day integrated forecasts as required. A two-month operational reforecast
+  experiment demonstrates that the machine learning emulator achieves accuracy comparable to that of the
+  traditional physical scheme, while accelerating the computation speed by approximately eightfold.'
+significance: 5
+score: 30
+highlight: false
+added: '2026-10-22'
+source: backfill

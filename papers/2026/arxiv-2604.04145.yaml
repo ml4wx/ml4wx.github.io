@@ -1,0 +1,59 @@
+id: arxiv-2604.04145
+title: 'Solar-VLM: Multimodal Vision-Language Models for Augmented Solar Power Forecasting'
+authors:
+- Hang Fan
+- Haoran Pei
+- Runze Liang
+- Weican Liu
+- Long Cheng
+- Wei Wei
+date: '2026-04-05'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2604.04145'
+  openalex: W7151392764
+links:
+  paper: https://arxiv.org/abs/2604.04145
+  pdf: https://arxiv.org/pdf/2604.04145
+  code: https://github.com/rhp413/Solar-VLM
+topic: applications-impacts
+topics:
+- llms-agents
+type: model
+method:
+- llm
+- transformer
+- gnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- satellite
+- stations
+- other
+status: research
+summary: Solar-VLM fuses time series, satellite cloud images and weather text with LLM-based encoders
+  and graph attention for PV power forecasting across eight stations.
+abstract: Photovoltaic (PV) power forecasting plays a critical role in power system dispatch and market
+  participation. Because PV generation is highly sensitive to weather conditions and cloud motion, accurate
+  forecasting requires effective modeling of complex spatiotemporal dependencies across multiple information
+  sources. Although recent studies have advanced AI-based forecasting methods, most fail to fuse temporal
+  observations, satellite imagery, and textual weather information in a unified framework. This paper
+  proposes Solar-VLM, a large-language-model-driven framework for multimodal PV power forecasting. First,
+  modality-specific encoders are developed to extract complementary features from heterogeneous inputs.
+  The time-series encoder adopts a patch-based design to capture temporal patterns from multivariate observations
+  at each site. The visual encoder, built upon a Qwen-based vision backbone, extracts cloud-cover information
+  from satellite images. The text encoder distills historical weather characteristics from textual descriptions.
+  Second, to capture spatial dependencies across geographically distributed PV stations, a cross-site
+  feature fusion mechanism is introduced. Specifically, a Graph Learner models inter-station correlations
+  through a graph attention network constructed over a K-nearest-neighbor (KNN) graph, while a cross-site
+  attention module further facilitates adaptive information exchange among sites. Finally, experiments
+  conducted on data from eight PV stations in a northern province of China demonstrate the effectiveness
+  of the proposed framework. Our proposed model is publicly available at https://github.com/rhp413/Solar-VLM.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,53 @@
+id: doi-10.1029-2025gl119402
+title: 'Evaluating Machine Learning Weather Models for Data Assimilation: Fundamental Limitations in Tangent
+  Linear and Adjoint Properties'
+authors:
+- Xiaoxu Tian
+- Daniel Holdaway
+- Daryl T. Kleist
+date: '2026-01-24'
+year: 2026
+venue: Geophysical Research Letters
+venue_type: journal
+ids:
+  doi: 10.1029/2025gl119402
+  openalex: W7125627641
+links:
+  paper: https://doi.org/10.1029/2025gl119402
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2025GL119402
+orgs:
+- noaa
+topic: data-assimilation
+topics:
+- xai-uq-physics
+type: evaluation
+method:
+- other
+spatial:
+- global
+data:
+- other
+status: research
+summary: Tangent-linear and adjoint tests show GraphCast and NeuralGCM give unphysical sensitivities versus
+  MPAS-A, so they are not yet reliable for 4DVar or ensemble DA.
+abstract: Abstract Machine learning (ML) weather models like GraphCast and NeuralGCM show forecasting
+  promise but face fundamental limitations for data assimilation (DA) integration. This study reveals
+  critical problems in error covariance representation and adjoint sensitivity patterns challenging their
+  operational viability. We evaluate tangent linear and adjoint models of GraphCast and NeuralGCM by comparing
+  perturbation responses with MPAS‐A, a well‐established numerical weather prediction model. ML models
+  exhibit unphysical adjoint sensitivities, including persistent localized responses and excessive noise
+  at various atmospheric levels, contrasting sharply with physically consistent MPAS‐A patterns and indicating
+  fundamental error covariance representation issues. Implications extend across DA methodologies. Unrealistic
+  sensitivity patterns would generate distorted error covariances in ensemble systems and unphysical analysis
+  increments in variational approaches like 4DVar. Assimilating single observations could create spurious
+  corrections far from observation locations, degrading forecast skill. Despite forecasting capabilities,
+  current ML weather models require significant improvements in linearization properties before reliable
+  operational DA integration.
+significance: 6
+cited_by: 1
+score: 59
+highlight: true
+highlight_reason: Shows GraphCast and NeuralGCM adjoints and tangent linear are unphysical versus MPAS-A,
+  a key caveat for ML models in data assimilation.
+added: '2026-10-22'
+source: backfill

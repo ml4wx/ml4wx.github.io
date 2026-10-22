@@ -1,0 +1,75 @@
+id: doi-10.1016-j.neucom.2025.132435
+title: 'CastDiffuser: Cascaded latent diffusion framework for high-resolution precipitation nowcasting
+  via multi source fusion'
+authors:
+- Dan Niu
+- Dan Niu
+- Daben Niu
+- Daben Niu
+- Yong Li
+- Yilin Wei
+- Hongbin Wang
+- Zengliang Zang
+- Jun Yang
+date: '2025-12-23'
+year: 2025
+venue: Neurocomputing
+venue_type: journal
+ids:
+  doi: 10.1016/j.neucom.2025.132435
+  openalex: W7116933758
+links:
+  paper: https://doi.org/10.1016/j.neucom.2025.132435
+orgs:
+- cma
+topic: nowcasting
+topics:
+- observations-remote-sensing
+type: model
+method:
+- diffusion
+- gan-vae
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- satellite
+status: research
+summary: CastDiffuser fuses satellite and radar in a cascaded latent diffusion model for high-resolution
+  precipitation nowcasting, improving heavy-rain and convection-initiation skill over baselines.
+abstract: Precipitation nowcasting is critical for meteorological disaster warning, water resource management,
+  and severe rainfall prediction, directly impacting public safety and daily operations. Existing methods
+  based on discriminative modeling tend to produce ambiguous extrapolation maps. While generative models
+  have improved perceptual metrics, they still suffer from limited prediction accuracy (e.g., skills scores
+  such as Critical Success Index (CSI) and Fractions Skill Score (FSS)), high computational costs, and
+  inadequate convective initiation prediction-with the latter stemming from constraints of single-source
+  data. To address these challenges, we propose CastDiffuser, a cascaded latent diffusion framework for
+  high-resolution and high-precision precipitation nowcasting. The framework performs cascaded modeling
+  in the latent space and leverages complementary satellite and radar data, enabling both enhanced predictive
+  accuracy and reduced computational cost. Specifically, CastDiffuser downscales and reconstructs high-resolution
+  radar by variational autocoders. Then we utilize a spatio-temporal translator (ST-Translator) to model
+  the deterministic components of precipitation evolution. Subsequently, a satellite-guided diffusion
+  model is introduced to refine these deterministic features, which are then used to generate high-resolution
+  radar predictions. Experiments on Jiangsu provincial meteorological datasets show CastDiffuser outperforms
+  state-of-the-art methods in prediction accuracy and fine-detail preservation, particularly for heavy
+  rainfall and convective initiation events. • We propose CastDiffuser, a Cascaded Latent Diffusion Framework
+  thatintegrates radar and satellite data in latent space for precipitation forecasting.By modeling in
+  a low-dimensional latent space with a cascaded design, CastDiffuser achieves superior spatio-temporal
+  prediction accuracy while significantly reducing the computational cost of high-resolution forecasting.
+  • We design the Spatio-Temporal Translator composed of hierarchical ST-Inception modules for robust
+  multi-scale feature extraction. This module provides stable and structured representations for subsequent
+  diffusion learning, thereby addressing the issue of unstable input features and improving forecast accuracy.
+  • We introduce FsrFormer, a multi-source fusion denoising network acting as a spatial refinement module.
+  FsrFormer adaptively modulates the influence of satellite-derived features during the diffusion process
+  across different time steps, facilitating efficient and dynamic fusion of multi-source information.
+  • Experimental results on real-world datasets show that the proposed CastDiffuser significantly improves
+  the prediction performance of heavy precipitation and maintains this accuracy over a longer forecast
+  period, especially in the convective incipient prediction task.
+significance: 4
+cited_by: 0
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

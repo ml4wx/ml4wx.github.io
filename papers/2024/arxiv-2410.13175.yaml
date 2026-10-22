@@ -1,0 +1,55 @@
+id: arxiv-2410.13175
+title: 'TCP-Diffusion: A Multi-modal Diffusion Model for Global Tropical Cyclone Precipitation Forecasting
+  with Change Awareness'
+authors:
+- Cheng Huang
+- Pan Mu
+- Cong Bai
+- Peter AG Watson
+date: '2024-10-17'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2410.13175'
+  openalex: W4403579365
+links:
+  paper: https://arxiv.org/abs/2410.13175
+  pdf: https://arxiv.org/pdf/2410.13175
+topic: extremes-hazards
+topics:
+- nowcasting
+type: model
+method:
+- diffusion
+- transformer
+timescale:
+- short
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: Multimodal diffusion model with residual-trend targets forecasts global tropical cyclone rainfall
+  12 hours ahead, outperforming deep learning baselines and ECMWF NWP.
+abstract: Precipitation from tropical cyclones (TCs) can cause disasters such as flooding, mudslides,
+  and landslides. Predicting such precipitation in advance is crucial, giving people time to prepare and
+  defend against these precipitation-induced disasters. Developing deep learning (DL) rainfall prediction
+  methods offers a new way to predict potential disasters. However, one problem is that most existing
+  methods suffer from cumulative errors and lack physical consistency. Second, these methods overlook
+  the importance of meteorological factors in TC rainfall and their integration with the numerical weather
+  prediction (NWP) model. Therefore, we propose Tropical Cyclone Precipitation Diffusion (TCP-Diffusion),
+  a multi-modal model for global tropical cyclone precipitation forecasting. It forecasts TC rainfall
+  around the TC center for the next 12 hours at 3 hourly resolution based on past rainfall observations
+  and multi-modal environmental variables. Adjacent residual prediction (ARP) changes the training target
+  from the absolute rainfall value to the rainfall trend and gives our model the ability of rainfall change
+  awareness, reducing cumulative errors and ensuring physical consistency. Considering the influence of
+  TC-related meteorological factors and the useful information from NWP model forecasts, we propose a
+  multi-model framework with specialized encoders to extract richer information from environmental variables
+  and results provided by NWP models. The results of extensive experiments show that our method outperforms
+  other DL methods and the NWP method from the European Centre for Medium-Range Weather Forecasts (ECMWF).
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

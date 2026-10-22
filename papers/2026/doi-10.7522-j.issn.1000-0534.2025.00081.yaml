@@ -1,0 +1,66 @@
+id: doi-10.7522-j.issn.1000-0534.2025.00081
+title: Research on Daily Maximum and Minimum Temperature Forecasts by Integrating Terrain Features and
+  Neural Networks
+authors:
+- Shu LU, Lin XU, Xue GU, Yue ZHOU, Zejun DAI, Yaqing TAO
+date: '2026-04-01'
+year: 2026
+venue: 'DOAJ (DOAJ: Directory of Open Access Journals)'
+venue_type: preprint
+ids:
+  doi: 10.7522/j.issn.1000-0534.2025.00081
+  openalex: W7134071080
+links:
+  paper: https://doi.org/10.7522/j.issn.1000-0534.2025.00081
+orgs:
+- cma
+topic: post-processing
+topics:
+- local-forecasting
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: CNN with K-means terrain clustering corrects ECMWF 72-hour Tmax and Tmin forecasts over Hunan,
+  cutting MAE by 23.5% to 37.3%.
+abstract: Accurate forecasting of daily maximum （T max） and minimum （T min） temperatures is essential
+  for meteorological operational， as enhanced precision safeguards socioeconomic stability in agriculture，
+  transportation and public health.To address pronounced systematic biases in numerical weather prediction
+  models over complex terrain-particularly regions with heterogeneous underlying surfaces-this study develops
+  an advanced deep learning framework integrating geographic feature clustering.The study focuses on China’s
+  Hunan Province， characterized by a distinctive concave-shaped， three-tiered topography encompassing
+  mountains， hills， basins， and plains.A baseline convolutional neural network （CNN） was constructed using
+  ECMWF forecast fields， high-resolution CLDAS （China Land Data Assimilation System） reanalysis data，
+  and multi-dimensional geographic variables （elevation， slope， aspect， terrain roughness index）.Three
+  comparative experiments rigorously evaluated terrain-processing efficacy： Method 1 （K-means clustered
+  geographic variables delineating topographic regimes）， Method 2 （Conventionally standardized non-clustered
+  geographic variables）， and Method 3 （Geographic variable exclusion as terrain-agnostic control）.Validation
+  confirmed Method 1's superiority， achieving 24-hour mean absolute error （MAE） reductions of 4.7% for
+  T max and 9.4% for T min relative to Method 3， while improving forecast skill by 2.5% （T max） and 1.4%
+  （T min） compared to Method 2.These statistically significant gains validate the benefits of explicit
+  terrain feature clustering.Building on this approach， the CNN-Terrain Correction （CNN-TC） model was
+  developed for 72-hour Tmax/T min predictions.CNN-TC framework delivers transformative improvements.Versus
+  ECMWF outputs， T max MAE decreased by 23.5%~37.3% and T min MAE by 20.8%~26.9% across 24~72 hour lead
+  times.Compared to operational SCMOC products， errors reduced 18.7%~27.6% （T max） and 26.8%~32.3% （T
+  min）.Critically， the model compresses spatial error dispersion， narrowing 24-hour MAE ranges from 1.2~5.8
+  ℃/0.8~5.9 ℃ （ECMWF） to a stable 0.9~1.7 ℃/0.8~1.7 ℃ for T max/T min-demonstrating breakthrough operational
+  stability.Monthly verification confirmed persistent superiority， with T max MAE reductions of 5.6%~59.1%
+  and T min improvements of 6.3% to 47.8% relative to ECMWF.During the November 2022 cold-air outbreak，
+  the model captured intricate spatiotemporal cooling patterns， outperforming ECMWF and SCMOC with over
+  30% error reduction， underscoring its capability in extreme weather.This study verifies that deep learning
+  combined with terrain clustering effectively mitigates systematic biases over complex terrain.The CNN-TC
+  framework establishes a robust solution for refined meteorological services in mountainous regions.Cross-regional
+  implementation requires localized hyperparameter optimization and cluster retraining to address spatial
+  heterogeneity in climate regimes and surface properties.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,53 @@
+id: arxiv-2503.01412
+title: Entropic learning enables skilful forecasts of ENSO phase at up to two years lead time
+authors:
+- Michael Groom
+- Davide Bassetti
+- Illia Horenko
+- Terence J. O'Kane
+date: '2025-03-03'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2503.01412'
+  openalex: W4415084911
+links:
+  paper: https://arxiv.org/abs/2503.01412
+  pdf: https://arxiv.org/pdf/2503.01412
+topic: s2s-seasonal
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- classical-ml
+timescale:
+- seasonal
+spatial:
+- global
+data:
+- other
+status: research
+summary: Entropy-optimal sparse probabilistic models with meta-learned ensembling give ENSO phase forecasts
+  skilful to 22-24 months lead, comparable to the IRI plume at lower cost.
+abstract: This paper extends previous work (Groom et al., \emph{Artif. Intell. Earth Syst.}, 2024) in
+  applying the entropy-optimal Sparse Probabilistic Approximation (eSPA) algorithm to predict ENSO phase,
+  defined by thresholding the Niño3.4 index. Only satellite-era observational datasets are used for training
+  and validation, while retrospective forecasts from 2012 to 2022 are used to assess out-of-sample skill
+  at lead times up to 24 months. Rather than train a single eSPA model per lead, we introduce an ensemble
+  approach in which multiple eSPA models are aggregated via a novel meta-learning strategy. The features
+  used include the leading principal components from a delay-embedded EOF analysis of global sea surface
+  temperature, vertical temperature gradient (a thermocline proxy), and tropical Pacific wind stresses.
+  Crucially, the data is processed to prevent any form of information leakage from the future, ensuring
+  realistic real-time forecasting conditions. Despite the limited number of training instances, eSPA avoids
+  overfitting and produces probabilistic forecasts with skill comparable to the International Research
+  Institute for Climate and Society (IRI) ENSO prediction plume. Beyond the IRI's lead times, eSPA maintains
+  skill out to 22 months for the ranked probability skill score and 24 months for accuracy and area under
+  the ROC curve, all at a fraction of the computational cost of a fully-coupled dynamical model. Furthermore,
+  eSPA successfully forecasts the 2015/16 and 2018/19 El Niño events at 24 months lead, the 2016/17, 2017/18
+  and 2020/21 La Niña events at 24 months lead and the 2021/22 and 2022/23 La Niña events at 12 and 8
+  months lead.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

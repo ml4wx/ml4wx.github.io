@@ -1,0 +1,85 @@
+id: doi-10.1007-s41748-026-01122-6
+title: 'AI-Based Anomaly Detection for Extreme Event Attribution: An Analysis of European Heatwaves'
+authors:
+- Pablo G. Zaninelli
+- David Barriopedro
+- Jorge Pérez-Aracil
+- Marie Drouard
+date: '2026-03-31'
+year: 2026
+venue: Earth Systems and Environment
+venue_type: journal
+ids:
+  doi: 10.1007/s41748-026-01122-6
+  openalex: W7144065937
+links:
+  paper: https://doi.org/10.1007/s41748-026-01122-6
+  pdf: https://link.springer.com/content/pdf/10.1007/s41748-026-01122-6.pdf
+topic: climate-analysis-attribution
+topics:
+- extremes-hazards
+type: model
+method:
+- gan-vae
+- classical-ml
+spatial:
+- regional
+data:
+- cmip
+- era5
+status: research
+summary: Convolutional VAE anomaly metrics with a Bayesian MLP give near-real-time exceedance probabilities
+  for European heatwaves, matching grid-point values with spatial correlation 0.92.
+abstract: Formal extreme event attribution traditionally relies on large, computationally intensive climate-model
+  ensembles, which often hampers the provision of information in real-time attribution. To overcome this,
+  we propose a lightweight, interpretable framework that couples unsupervised anomaly detection with Bayesian
+  deep learning enabling near-real-time attribution without statistical assumptions or costly climate
+  model simulations. A convolutional variational autoencoder (VAE) is trained on daily 2 m temperature
+  fields from the CMIP6 HadGEM3-GC31-LL Hist-NAT experiment (1850–2020) and early ERA5 reanalysis (1940–1980).
+  The VAE achieves a spatial-mean correlation of $$\sim 0.9$$ over land and exhibits robust skill in discriminating
+  warm days from non-extreme conditions across the full domain. Spatial gradients of the VAE’s reconstruction
+  mean-squared error and Kullback–Leibler divergence yield three threshold-free metrics quantifying local
+  departures from pre-industrial conditions. We examine their relationship with more statistical metrics
+  like the counterfactual exceedance probability $$p_{ex}$$ , which measures the chance that an event
+  drawn from the factual climate exceeds any event expected under the counterfactual scenario. Across
+  the training period, these metrics exhibit a strong monotonic anti-correlation with $$p_{ex}$$ , demonstrating
+  that VAE loss gradients encode meaningful dynamical–thermodynamic information. A Bayesian multi-layer
+  perceptron calibrated solely on these metrics reproduces grid-point $$p_{ex}$$ with a mean spatial correlation
+  of 0.92, delivering exceedance probabilities alongside interquartile ranges. Case studies of four exceptional
+  European heatwave summers (2010, 2018, 2019, and 2022) show that our framework accurately captures spatio-temporal
+  patterns, assigns near-zero probabilities ( $$\hat{p}_{ex}<0.05$$ ) to record-breaking temperatures,
+  and yields return-period estimates consistent with large-ensemble attribution studies–all without assuming
+  a parametric distribution or using global-mean temperature predictors. This novel approach provides
+  an efficient tool for operational attribution of extreme events under a changing climate by quantifying
+  changes in the probability of occurrence on daily maps, which would offer valuable insights for the
+  development of proactive regional planning and effective adaptive strategies. Motivated by the growing
+  demand for actionable climate-risk information, the proposed protocol-ready framework supports decision-making
+  by delivering quantitative, uncertainty-aware estimates of changing current risk levels. The graphical
+  abstract presents a novel methodology for attributing extreme weather events to anthropogenic climate
+  change using Variational Autoencoder-based anomaly detection (AI-Attribution Metrics). Three attribution
+  metrics ( $$\xi _{\nabla L_{\text {KLD}}}$$ , $$\xi _{\nabla L_{\text {MSE}}}$$ , and $$\xi _{\text
+  {Total}}$$ ), derived from the spatial gradients of the VAE loss functions ( $$L_{\text {KLD}}$$ and
+  $$L_{\text {MSE}}$$ ), are introduced. These metrics exhibit a strong anti-correlation with the counterfactual
+  exceedance probability ( $$p_{ex}$$ ), indicating that higher metric values correspond to a lower likelihood
+  that an event from the factual climate exceeds any event under the counterfactual scenario, and vice
+  versa. A Bayesian multi-layer perceptron (MLP) is then employed to estimate the parameters of a beta
+  distribution and predict $$\hat{p}_{ex}$$ across spatial grids. The framework is applied to four major
+  European heatwave events (2010, 2018, 2019, and 2022), successfully capturing spatio-temporal patterns,
+  assigning near-zero probabilities ( $$\hat{p}_{ex} < 0.05$$ ) to record-breaking temperatures, and producing
+  return-period estimates aligned with large-ensemble studies, all without assuming parametric distributions
+  or relying on global-mean temperature predictors. The paper introduces a lightweight and interpretable
+  framework combining unsupervised anomaly detection with Bayesian deep learning to perform near-real-time
+  attribution of extreme climate events, reducing the reliance on computationally heavy climate-model
+  ensembles. A convolutional VAE is trained on historical temperature data to detect anomalies via reconstruction
+  errors and Kullback–Leibler divergence, yielding three threshold free metrics that quantify local deviations
+  from pre-industrial climate conditions. The VAE-derived metrics show a strong monotonic anti-correlation
+  with the counterfactual exceedance probability pex, with |r| > 0.85 and the Maximal Information Coefficient
+  (MIC) ≈ 1, indicating that they encode robust dynamical and thermodynamical information. Applied to
+  four major European heatwaves (2010, 2018, 2019, 2022), the framework accurately reproduces spatio-temporal
+  heatwave patterns, estimates near-zero probabilities for record-breaking events, and aligns with results
+  from large ensembles, without relying on global-mean temperature predictors or parametric assumptions.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

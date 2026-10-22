@@ -1,0 +1,53 @@
+id: arxiv-2503.02690
+title: Generative Modeling of Microweather Wind Velocities for Urban Air Mobility
+authors:
+- Tristan A. Shah
+- Michael C. Stanley
+- James E. Warner
+date: '2025-03-04'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2503.02690'
+links:
+  paper: https://arxiv.org/abs/2503.02690
+  pdf: https://arxiv.org/pdf/2503.02690
+topic: applications-impacts
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+- gan-vae
+spatial:
+- local
+data:
+- other
+- nwp-analysis
+status: research
+summary: Diffusion and flow-matching models map regional forecasts to local SoDAR wind measurements, giving
+  probabilistic microweather winds for urban air mobility safety.
+abstract: 'Motivated by the pursuit of safe, reliable, and weather-tolerant urban air mobility (UAM) solutions,
+  this work proposes a generative modeling approach for characterizing microweather wind velocities. Microweather,
+  or the weather conditions in highly localized areas, is particularly complex in urban environments owing
+  to the chaotic and turbulent nature of wind flows. Furthermore, traditional means of assessing local
+  wind fields are not generally viable solutions for UAM applications: 1) field measurements that would
+  rely on permanent wind profiling systems in operational air space are not practical, 2) physics-based
+  models that simulate fluid dynamics at a sufficiently high resolution are not computationally tractable,
+  and 3) data-driven modeling approaches that are largely deterministic ignore the inherent variability
+  in turbulent flows that dictates UAM reliability. Thus, advancements in predictive capabilities are
+  needed to help mitigate the unique operational safety risks that microweather winds pose for smaller,
+  lighter weight UAM aircraft. This work aims to model microweather wind velocities in a manner that is
+  computationally-efficient, captures random variability, and would only require a temporary, rather than
+  permanent, field measurement campaign. Inspired by recent breakthroughs in conditional generative AI
+  such as text-to-image generation, the proposed approach learns a probabilistic macro-to-microweather
+  mapping between regional weather forecasts and measured local wind velocities using generative modeling
+  (denoising diffusion probabilistic models, flow matching, and Gaussian mixture models). A simple proof
+  of concept was implemented using a dataset comprised of local (micro) measurements from a Sonic Detection
+  and Ranging (SoDAR) wind profiler along with (macro) forecast data from a nearby weather station over
+  the same time period.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

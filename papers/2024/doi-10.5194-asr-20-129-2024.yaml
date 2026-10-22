@@ -1,0 +1,54 @@
+id: doi-10.5194-asr-20-129-2024
+title: Probabilistic end-to-end irradiance forecasting through pre-trained deep learning models using
+  all-sky-images
+authors:
+- Samer Chaaraoui
+- Sebastian Houben
+- Stefanie Meilinger
+date: '2024-01-02'
+year: 2024
+venue: Advances in science and research
+venue_type: journal
+ids:
+  doi: 10.5194/asr-20-129-2024
+  openalex: W4390508735
+links:
+  paper: https://doi.org/10.5194/asr-20-129-2024
+  pdf: https://asr.copernicus.org/articles/20/129/2024/asr-20-129-2024.pdf
+topic: nowcasting
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- stations
+- other
+status: research
+summary: Pretrained CNN from all-sky images gives probabilistic irradiance nowcasts up to 30 min, reaching
+  18.6% skill over smart persistence.
+abstract: This work proposes a novel approach for probabilistic end-to-end all-sky imager-based nowcasting
+  with horizons of up to 30 min using an ImageNet pre-trained deep neural network. The method involves
+  a two-stage approach. First, a backbone model is trained to estimate the irradiance from all-sky imager
+  (ASI) images. The model is then extended and retrained on image and parameter sequences for forecasting.
+  An open access data set is used for training and evaluation. We investigated the impact of simultaneously
+  considering global horizontal (GHI), direct normal (DNI), and diffuse horizontal irradiance (DHI) on
+  training time and forecast performance as well as the effect of adding parameters describing the irradiance
+  variability proposed in the literature. The backbone model estimates current GHI with an RMSE and MAE
+  of 58.06 and 29.33 W m −2 , respectively. When extended for forecasting, the model achieves an overall
+  positive skill score reaching 18.6 % compared to a smart persistence forecast. Minor modifications to
+  the deterministic backbone and forecasting models enables the architecture to output an asymmetrical
+  probability distribution and reduces training time while leading to similar errors for the backbone
+  models. Investigating the impact of variability parameters shows that they reduce training time but
+  have no significant impact on the GHI forecasting performance for both deterministic and probabilistic
+  forecasting while simultaneously forecasting GHI, DNI, and DHI reduces the forecast performance.
+significance: 3
+cited_by: 4
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

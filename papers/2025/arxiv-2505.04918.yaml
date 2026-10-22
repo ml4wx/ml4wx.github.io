@@ -1,0 +1,52 @@
+id: arxiv-2505.04918
+title: Physics-Assisted and Topology-Informed Deep Learning for Weather Prediction
+authors:
+- Jiaqi Zheng
+- Qing Ling
+- Yerong Feng
+date: '2025-05-08'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2505.04918'
+  doi: 10.24963/ijcai.2025/885
+  openalex: W4414360247
+links:
+  paper: https://arxiv.org/abs/2505.04918
+  pdf: https://arxiv.org/pdf/2505.04918
+  code: https://github.com/Yumenomae/PASSAT_5p625
+topic: global-medium-range
+type: model
+method:
+- gnn
+- physics-constrained
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: PASSAT combines advection and Navier-Stokes solvers with a spherical GNN for global ERA5 forecasts,
+  outperforming ML baselines and operational IFS T42 at 5.625° resolution.
+abstract: 'Although deep learning models have demonstrated remarkable potential in weather prediction,
+  most of them overlook either the \textbf{physics} of the underlying weather evolution or the \textbf{topology}
+  of the Earth''s surface. In light of these disadvantages, we develop PASSAT, a novel Physics-ASSisted
+  And Topology-informed deep learning model for weather prediction. PASSAT attributes the weather evolution
+  to two key factors: (i) the advection process that can be characterized by the advection equation and
+  the Navier-Stokes equation; (ii) the Earth-atmosphere interaction that is difficult to both model and
+  calculate. PASSAT also takes the topology of the Earth''s surface into consideration, other than simply
+  treating it as a plane. With these considerations, PASSAT numerically solves the advection equation
+  and the Navier-Stokes equation on the spherical manifold, utilizes a spherical graph neural network
+  to capture the Earth-atmosphere interaction, and generates the initial velocity fields that are critical
+  to solving the advection equation from the same spherical graph neural network. In the $5.625^\circ$-resolution
+  ERA5 data set, PASSAT outperforms both the state-of-the-art deep learning-based weather prediction models
+  and the operational numerical weather prediction model IFS T42. Code and checkpoint are available at
+  https://github.com/Yumenomae/PASSAT_5p625.'
+significance: 4
+cited_by: 2
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

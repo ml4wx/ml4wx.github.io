@@ -1,0 +1,65 @@
+id: doi-10.3390-rs18193325
+title: Physics-Informed Liquid Neural Network Emulator for CRTM with Atmospheric-Layer Jacobian Capability
+authors:
+- Feng Zhang
+- Changyong Cao
+- Yong Chen
+- Xi Shao
+- Tung-Chang Liu
+date: '2026-09-27'
+year: 2026
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs18193325
+  openalex: W7214672058
+links:
+  paper: https://doi.org/10.3390/rs18193325
+orgs:
+- noaa
+topic: observations-remote-sensing
+topics:
+- hybrid-parameterization
+type: model
+method:
+- other
+- differentiable
+- physics-constrained
+spatial:
+- global
+data:
+- satellite
+- nwp-analysis
+status: research
+summary: Physics-informed liquid neural network emulates CRTM radiative transfer up to 18x faster, with
+  brightness-temperature biases under 0.1 K and smoother Jacobians.
+abstract: Physics-based fast radiative transfer models (RTMs), such as the Community Radiative Transfer
+  Model (CRTM), face increasing computational demands from growing satellite data volumes and model complexity.
+  We developed a physics-informed Liquid Neural Network emulator for CRTM (CRTM-LNN) that draws on continuous
+  dynamical-system concepts while retaining physical interpretability. The framework combines an Ordinary
+  Differential Equation (ODE)-inspired Liquid Neural Network for layer-by-layer optical-depth modeling
+  with an analytic, differentiable radiative-transfer solver. This design preserves the explicit optical-depth-to-radiance
+  pathway and incorporates physical constraints directly into the forward calculation. In the implementation
+  evaluated in this study, the LNN uses discrete hidden-state updates on the fixed European Centre for
+  Medium-Range Weather 91-layer (ECMWF91L) grid under clear-sky, absorption-only assumptions. Evaluation
+  using Infrared Atmospheric Sounding Interferometer (IASI) observations and ECMWF91L forecast profiles
+  shows that CRTM–LNN closely reproduces the reference CRTM simulations, with global, channel-mean brightness-temperature
+  biases below 0.1 K in magnitude. Regional bias magnitudes nevertheless reach approximately 0.2–0.4 K
+  for selected channels and latitude bands. Correlations with CRTM exceed 0.97 for cumulative optical
+  depth, transmittance, and weighting functions in regimes with cumulative optical depth below five. It
+  accelerates forward calculations by up to 18-fold and efficiently generates Jacobians through automatic
+  differentiation. Compared with a conventional multilayer perceptron CRTM emulator, CRTM-LNN produces
+  smoother and more physically consistent Jacobians, with improved vertical localization and fewer spurious
+  oscillations. Absolute centroid-pressure errors for temperature Jacobians are reduced across all evaluated
+  channels, ranging from 1.77 to 5.01 hPa for CRTM-LNN versus 5.88–8.17 hPa for CRTM–MLP, although the
+  magnitude of improvement varies by channel. These results highlight the potential of the integrated
+  CRTM–LNN framework, which combines ODE-driven neural emulation with physics-based radiative-transfer
+  modeling, to provide a scalable foundation for atmospheric retrievals, satellite data assimilation,
+  and near-real-time radiative-transfer applications. Current limitations and opportunities for extension
+  to more complex radiative processes are also discussed.
+significance: 3
+cited_by: 0
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

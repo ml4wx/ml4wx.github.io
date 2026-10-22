@@ -1,0 +1,42 @@
+id: arxiv-2509.21751
+title: On the Effect of Neural Field Reparameterization for 4DVAR
+authors:
+- Jaemin Oh
+date: '2025-09-26'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2509.21751'
+links:
+  paper: https://arxiv.org/abs/2509.21751
+  pdf: https://arxiv.org/pdf/2509.21751
+topic: data-assimilation
+topics:
+- hybrid-parameterization
+type: model
+method:
+- physics-constrained
+- other
+data:
+- other
+status: research
+summary: Neural-field reparameterization of 4DVAR yields more accurate initial conditions than classical
+  4DVAR on chaotic toy flows, without ground-truth training data; the NWP link is motivational.
+abstract: Four-dimensional variational data assimilation (4DVAR) is a cornerstone of numerical weather
+  prediction, yet it remains computationally intensive and sensitive to initialization due to the non-convexity
+  of its objective function. We propose a neural field-based reformulation of 4DVAR in which the spatiotemporal
+  state is represented as a continuous function parameterized by a neural network. We demonstrate that
+  optimizing in parameter space leverages the spectral bias of neural fields, acting as an implicit regularizer
+  that stabilizes state estimation and suppresses spurious high-frequency oscillations without requiring
+  explicit background error covariance information. Furthermore, by parameterizing the full spatiotemporal
+  trajectory, our framework enables parallel-in-time optimization and incorporates physical constraints
+  directly through physics-informed losses. Evaluations on chaotic benchmarks, including 2D Kolmogorov
+  flow and 3D Taylor-Green vortices, show that neural reparameterization produces more accurate initial
+  conditions than classical 4DVAR. When combined with separable neural architectures (SPINNs), the method
+  achieves substantial speedups. Unlike many machine learning approaches, this framework requires no ground-truth
+  training data, offering a robust and scalable alternative for operational data assimilation.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,55 @@
+id: arxiv-2605.00398
+title: 'M-CaStLe: Uncovering Local Causal Structures in Multivariate Space-Time Gridded Data'
+authors:
+- J. Jake Nichol
+- Michael Weylandt
+- G. Matthew Fricke
+- Jhayron Perez-Carrasquilla
+- Melanie E. Moses
+date: '2026-05-01'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.00398'
+  openalex: W7160184988
+links:
+  paper: https://arxiv.org/abs/2605.00398
+  pdf: https://arxiv.org/pdf/2605.00398
+orgs:
+- noaa
+topic: climate-analysis-attribution
+type: model
+method:
+- classical-ml
+- other
+spatial:
+- global
+- regional
+data:
+- era5
+- other
+status: research
+summary: M-CaStLe extends local causal stencil discovery to multivariate gridded data, recovering cross-variable
+  structures and ENSO ocean-atmosphere coupling with grid-level interpretability.
+abstract: 'Causal graph discovery for space-time systems is challenging in high-dimensional gridded data,
+  which often has many more grid cells than temporal observations per cell. The Causal Space-Time Stencil
+  Learning (CaStLe) meta-algorithm was developed to address that niche under space-time locality and stationarity
+  assumptions, but it is currently limited to univariate analyses. In this work, we present M-CaStLe.
+  M-CaStLe generalizes the local embedding and parent-identification phases of CaStLe to jointly model
+  local within-variable and cross-variable space-time causal structures in gridded data. Like CaStLe,
+  by constraining candidate parents to a constant-size space-time neighborhood and pooling spatial replicates,
+  M-CaStLe increases effective sample size to make discovery tractable in high-dimensional settings. We
+  further decompose the resulting multivariate stencil graph into reaction and spatial graphs to aid interpretation
+  in complex settings. We study M-CaStLe in four settings: a multivariate space-time vector autoregression
+  benchmark with known ground truth, an advective-diffusive-reaction partial differential equation verification
+  problem with derived physical reference structure, an atmospheric chemistry case study in a low-temporal-sample
+  regime, and an El Niño Southern Oscillation study on reanalysis data, identifying phase-dependent ocean--atmosphere
+  coupling. Across these settings, M-CaStLe more accurately recovers multivariate causal structure in
+  controlled settings and identifies important physical dynamics in real-world case studies. Overall,
+  M-CaStLe advances causal discovery for multivariate space-time systems while retaining interpretability
+  at the grid level.'
+significance: 3
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

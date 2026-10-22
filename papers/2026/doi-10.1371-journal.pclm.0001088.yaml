@@ -1,0 +1,57 @@
+id: doi-10.1371-journal.pclm.0001088
+title: Comparison of data-driven and numerical weather prediction models for rainfall nowcasting in major
+  cities of Bangladesh
+authors:
+- Sumia Akter
+- Jayeef Rahman Muaz
+- Rabiul Awal
+date: '2026-10-09'
+year: 2026
+venue: PLOS Climate
+venue_type: journal
+ids:
+  doi: 10.1371/journal.pclm.0001088
+  openalex: W7221083929
+links:
+  paper: https://doi.org/10.1371/journal.pclm.0001088
+  pdf: https://journals.plos.org/climate/article/file?id=10.1371/journal.pclm.0001088&type=printable
+topic: local-forecasting
+topics:
+- nowcasting
+type: evaluation
+method:
+- rnn
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- era5
+- stations
+status: research
+summary: Simple LSTM explains about 88% of ERA5 rainfall variance one hour ahead at six Bangladesh stations,
+  beating WRF which overestimates and displaces peaks.
+abstract: Flood-prone Bangladesh requires accurate short-term rainfall prediction, yet conventional numerical
+  weather prediction (NWP) models remain computationally intensive and regionally limited in skill. This
+  study evaluates and compares four deep learning (DL) architectures — Simple Long Short-Term Memory (LSTM),
+  Stacked LSTM, Bidirectional LSTM (BiLSTM), and Gated Recurrent Unit (GRU) — against the physics-based
+  Weather Research and Forecasting (WRF) model for one-hour-ahead rainfall forecasting across six climatologically
+  diverse stations in Bangladesh. Each model was trained independently per station using hourly ERA5 reanalysis
+  data spanning 2018–2024, and performance was assessed using both regression and binary detection metrics.
+  Across the full test period, Simple LSTM achieved the strongest overall performance, explaining approximately
+  88% of ERA5 rainfall variance with the lowest prediction errors, while GRU produced nearly comparable
+  results. Performance was consistently stronger at wetter stations such as Chittagong and Sylhet than
+  at drier northwestern stations such as Rajshahi and Rangpur, where class imbalance and rainfall intermittency
+  limited model skill. Event-category analysis across 10 WRF simulation events — spanning extreme, moderate,
+  and weak rainfall regimes — showed that DL models demonstrated closest agreement with ERA5 reference
+  values during extreme events, while skill declined notably during weak events due to near-zero rainfall
+  conditions. WRF exhibited systematic overestimation, temporal displacement of peak rainfall, and strongly
+  negative R² values across all event categories and stations. A Friedman test confirmed statistically
+  significant differences in RMSE ranks among the four DL architectures (χ² = 10.60, p = 0.014), with
+  a Nemenyi post-hoc test showing Simple LSTM significantly outperformed Stacked LSTM (p = 0.0095).
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

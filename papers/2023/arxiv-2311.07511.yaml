@@ -1,0 +1,56 @@
+id: arxiv-2311.07511
+title: Uncertainty estimation of machine learning spatial precipitation predictions from satellite data
+authors:
+- Georgia Papacharalampous
+- Hristos Tyralis
+- Nikolaos Doulamis
+- Anastasios Doulamis
+date: '2023-11-13'
+year: 2023
+venue: 'Machine Learning: Science and Technology 5 (2024) 035044'
+venue_type: journal
+ids:
+  arxiv: '2311.07511'
+  doi: 10.1088/2632-2153/ad63f3
+  openalex: W4400673012
+links:
+  paper: https://arxiv.org/abs/2311.07511
+  pdf: https://arxiv.org/pdf/2311.07511
+topic: observations-remote-sensing
+topics:
+- post-processing
+type: evaluation
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- stations
+status: research
+summary: Benchmarks six quantile ML methods for uncertainty in satellite-gauge merged monthly CONUS precipitation;
+  LightGBM beats quantile regression by 11.1% on the quantile scoring rule.
+abstract: Merging satellite and gauge data with machine learning produces high-resolution precipitation
+  datasets, but uncertainty estimates are often missing. We addressed the gap of how to optimally provide
+  such estimates by benchmarking six algorithms, mostly novel even for the more general task of quantifying
+  predictive uncertainty in spatial prediction settings. On 15 years of monthly data from over the contiguous
+  United States (CONUS), we compared quantile regression (QR), quantile regression forests (QRF), generalized
+  random forests (GRF), gradient boosting machines (GBM), light gradient boosting machine (LightGBM),
+  and quantile regression neural networks (QRNN). Their ability to issue predictive precipitation quantiles
+  at nine quantile levels (0.025, 0.050, 0.100, 0.250, 0.500, 0.750, 0.900, 0.950, 0.975), approximating
+  the full probability distribution, was evaluated using quantile scoring functions and the quantile scoring
+  rule. Predictors at a site were nearby values from two satellite precipitation retrievals, namely PERSIANN
+  (Precipitation Estimation from Remotely Sensed Information using Artificial Neural Networks) and IMERG
+  (Integrated Multi-satellitE Retrievals), and the site's elevation. The dependent variable was the monthly
+  mean gauge precipitation. With respect to QR, LightGBM showed improved performance in terms of the quantile
+  scoring rule by 11.10%, also surpassing QRF (7.96%), GRF (7.44%), GBM (4.64%) and QRNN (1.73%). Notably,
+  LightGBM outperformed all random forest variants, the current standard in spatial prediction with machine
+  learning. To conclude, we propose a suite of machine learning algorithms for estimating uncertainty
+  in spatial data prediction, supported with a formal evaluation framework based on scoring functions
+  and scoring rules.
+significance: 3
+cited_by: 11
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

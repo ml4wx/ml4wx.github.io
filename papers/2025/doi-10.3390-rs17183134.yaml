@@ -1,0 +1,64 @@
+id: doi-10.3390-rs17183134
+title: 'CycloneWind: A Dynamics-Constrained Deep Learning Model for Tropical Cyclone Wind Field Downscaling
+  Using Satellite Observations'
+authors:
+- Yuxiang Hu
+- Ke Deng
+- Qingguo Su
+- Di Zhang
+- Xinjie Shi
+- Kaijun Ren
+date: '2025-09-10'
+year: 2025
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs17183134
+  openalex: W4414099621
+links:
+  paper: https://doi.org/10.3390/rs17183134
+topic: downscaling
+topics:
+- extremes-hazards
+type: model
+method:
+- transformer
+- physics-constrained
+spatial:
+- regional
+data:
+- satellite
+- era5
+status: research
+summary: CycloneWind is a dynamics-constrained Transformer that downscales tropical cyclone surface winds
+  using Cyclobs satellite data and ERA5 fields.
+abstract: 'Tropical cyclones (TCs) rank among the most destructive natural hazards globally, with core
+  damaging potential originating from regions of intense wind shear and steep wind speed gradients within
+  the eyewall and spiral rainbands. Accurately characterizing these fine-scale structural features is
+  therefore critical for understanding TC intensity evolution, wind hazard distribution, and disaster
+  mitigation. Recently, the deep learning-based downscaling methods have shown significant advantages
+  in efficiently obtaining high-resolution wind field distributions. However, existing methods are mainly
+  used to downscale general wind fields, and research on downscaling extreme wind field events remains
+  limited. There are two main difficulties in downscaling TC wind fields. The first one is that high-quality
+  datasets for TC wind fields are scarce; the other is that general deep learning frameworks lack the
+  ability to capture the dynamic characteristics of TCs. Consequently, this study proposes a novel deep
+  learning framework, CycloneWind, for downscaling TC surface wind fields: (1) a high-quality dataset
+  is constructed by integrating Cyclobs satellite observations with ERA5 reanalysis data, incorporating
+  auxiliary variables like low cloud cover, surface pressure, and top-of-atmosphere incident solar radiation;
+  (2) we propose CycloneWind, a dynamically constrained Transformer-based architecture incorporating three
+  wind field dynamical operators, along with a wind dynamics-constrained loss function formulated to enforce
+  consistency in wind divergence and vorticity; (3) an Adaptive Dynamics-Guided Block (ADGB) is designed
+  to explicitly encode TC rotational dynamics using wind shear detection and wind vortex diffusion operators;
+  (4) Filtering Transformer Layers (FTLs) with high-frequency filtering operators are used for modeling
+  wind field small-scale details. Experimental results demonstrate that CycloneWind successfully achieves
+  an 8-fold spatial resolution reconstruction in TC regions. Compared to the best-performing baseline
+  model, CycloneWind reduces the Root Mean Square Error (RMSE) for the U and V wind components by 9.6%
+  and 4.9%, respectively. More significantly, it achieves substantial improvements of 23.0%, 22.6%, and
+  20.5% in key dynamical metrics such as divergence difference, vorticity difference, and direction cosine
+  dissimilarity.'
+significance: 3
+cited_by: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

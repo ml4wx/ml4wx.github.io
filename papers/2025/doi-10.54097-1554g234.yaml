@@ -1,0 +1,47 @@
+id: doi-10.54097-1554g234
+title: Day-Ahead Photovoltaic Power Forecasting Using Multi-Source Data Fusion
+authors:
+- Maoyuan Li
+- Sudi Xu
+- Mijia Song
+date: '2025-10-09'
+year: 2025
+venue: Mathematical Modeling and Algorithm Application
+venue_type: journal
+ids:
+  doi: 10.54097/1554g234
+  openalex: W4415215056
+links:
+  paper: https://doi.org/10.54097/1554g234
+  pdf: https://drpress.org/ojs/index.php/mmaa/article/download/32024/31351
+topic: applications-impacts
+topics:
+- local-forecasting
+type: application
+method:
+- rnn
+- cnn
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+status: research
+summary: Attention-LSTM with NWP inputs forecasts day-ahead PV power with 5.2 kW MAE, with CNN and BiLSTM
+  refinements and XGBoost downscaling; the weather part is secondary to the energy target.
+abstract: This study proposes a day-ahead forecasting framework for photovoltaic power generation, integrating
+  numerical weather prediction and deep learning to enhance prediction accuracy and optimize grid scheduling.
+  Using 15-minute resolution data from August 2018 to June 2019, a comprehensive model was developed to
+  analyze PV power characteristics, extracting seasonal and diurnal patterns via solar irradiance theory
+  and Fast Fourier Transform. An Attention-based Long Short-Term Memory model, combined with NWP data,
+  predicts 24-hour power curves with a mean absolute error of 5.2 kW. Further enhancements using Convolutional
+  Neural Networks and Bidirectional LSTM, alongside spatial downscaling with XGBoost and Kriging interpolation,
+  improve accuracy in complex terrains, reducing wind speed prediction MAE by 69.93%. The framework performs
+  robustly across sunny, cloudy, and extreme weather scenarios, offering reliable support for grid operations
+  and renewable energy integration.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

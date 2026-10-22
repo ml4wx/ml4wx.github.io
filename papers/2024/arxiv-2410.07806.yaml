@@ -1,0 +1,57 @@
+id: arxiv-2410.07806
+title: Deep and Probabilistic Solar Irradiance Forecast at the Arctic Circle
+authors:
+- Niklas Erdmann
+- Lars Ø. Bentsen
+- Roy Stenbro
+- Heine N. Riise
+- Narada Warakagoda
+- Paal Engelstad
+date: '2024-10-10'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2410.07806'
+  doi: 10.1109/pvsc57443.2024.10748862
+  openalex: W4404411469
+links:
+  paper: https://arxiv.org/abs/2410.07806
+  pdf: https://arxiv.org/pdf/2410.07806
+topic: local-forecasting
+topics:
+- applications-impacts
+type: application
+method:
+- rnn
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: LSTMs with probabilistic heads forecast 36-hour day-ahead solar irradiance at Norwegian Arctic
+  sites, beating smart persistence and an MLP on RMSE and uncertainty calibration.
+abstract: Solar irradiance forecasts can be dynamic and unreliable due to changing weather conditions.
+  Near the Arctic circle, this also translates into a distinct set of further challenges. This work is
+  forecasting solar irradiance with Norwegian data using variations of Long-Short-Term Memory units (LSTMs).
+  In order to gain more trustworthiness of results, the probabilistic approaches Quantile Regression (QR)
+  and Maximum Likelihood (MLE) are optimized on top of the LSTMs, providing measures of uncertainty for
+  the results. MLE is further extended by using a Johnson's SU distribution, a Johnson's SB distribution,
+  and a Weibull distribution in addition to a normal Gaussian to model parameters. Contrary to a Gaussian,
+  Weibull, Johnson's SU and Johnson's SB can return skewed distributions, enabling it to fit the non-normal
+  solar irradiance distribution more optimally. The LSTMs are compared against each other, a simple Multi-layer
+  Perceptron (MLP), and a smart-persistence estimator. The proposed LSTMs are found to be more accurate
+  than smart persistence and the MLP for a multi-horizon, day-ahead (36 hours) forecast. The deterministic
+  LSTM showed better root mean squared error (RMSE), but worse mean absolute error (MAE) than a MLE with
+  Johnson's SB distribution. Probabilistic uncertainty estimation is shown to fit relatively well across
+  the distribution of observed irradiance. While QR shows better uncertainty estimation calibration, MLE
+  with Johnson's SB, Johnson's SU, or Gaussian show better performance in the other metrics employed.
+  Optimizing and comparing the models against each other reveals a seemingly inherent trade-off between
+  point-prediction and uncertainty estimation calibration.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

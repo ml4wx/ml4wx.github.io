@@ -1,0 +1,60 @@
+id: arxiv-2312.11966
+title: Extending intraday solar forecast horizons with deep generative models
+authors:
+- Alberto Carpentieri
+- Doris Folini
+- Jussi Leinonen
+- Angela Meyer
+date: '2023-12-19'
+year: 2023
+venue: Applied Energy
+venue_type: journal
+ids:
+  arxiv: '2312.11966'
+  doi: 10.2139/ssrn.4775280
+  openalex: W4390046147
+links:
+  paper: https://doi.org/10.1016/j.apenergy.2024.124186
+  pdf: https://arxiv.org/pdf/2312.11966
+orgs:
+- eth-zurich
+- meteoswiss
+topic: nowcasting
+topics:
+- applications-impacts
+type: model
+method:
+- diffusion
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Diffusion-based probabilistic nowcast of surface solar irradiance from satellite data improves
+  CRPS by 15% over state of the art for 15–120 minute lead times.
+abstract: Surface solar irradiance (SSI) plays a crucial role in tackling climate change - as an abundant,
+  non-fossil energy source, exploited primarily via photovoltaic (PV) energy production. With the growing
+  contribution of SSI to total energy production, the stability of the latter is challenged by the intermittent
+  character of the former, arising primarily from cloud effects. Mitigating this stability challenge requires
+  accurate, uncertainty-aware, near real-time, regional-scale SSI forecasts with lead times of minutes
+  to a few hours, enabling robust real-time energy grid management. State-of-the-art nowcasting methods
+  typically meet only some of these requirements. Here we present SHADECast, a deep generative diffusion
+  model for the probabilistic spatiotemporal nowcasting of SSI, conditioned on deterministic aspects of
+  cloud evolution to guide the probabilistic ensemble forecast, and based on near real-time satellite
+  data. We demonstrate that SHADECast provides improved forecast quality, reliability, and accuracy in
+  different weather scenarios. Our model produces realistic and spatiotemporally consistent predictions
+  outperforming the state of the art by 15% in the continuous ranked probability score (CRPS) over different
+  regions up to 512 km x 512 km with lead times of 15-120 min. Conditioning the ensemble generation on
+  deterministic forecasts improves reliability and performance by more than 7% on CRPS. Our approach empowers
+  grid operators and energy traders to make informed decisions, ensuring stability and facilitating the
+  seamless integration of PV energy across multiple locations simultaneously.
+significance: 6
+cited_by: 23
+score: 59
+highlight: true
+highlight_reason: SHADECast, a diffusion model for probabilistic solar irradiance nowcasting, improves
+  CRPS by 15% over the state of the art; a strong application of generative models.
+added: '2026-10-22'
+source: backfill

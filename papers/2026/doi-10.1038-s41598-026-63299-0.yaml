@@ -1,0 +1,53 @@
+id: doi-10.1038-s41598-026-63299-0
+title: A unified deep learning framework for subseasonal wind forecast post-processing
+authors:
+- A. Damiani
+- Y. Miyazawa
+- M. Nonaka
+- J. V. Ratnam
+- K. R. Patil
+date: '2026-07-22'
+year: 2026
+venue: Scientific Reports
+venue_type: journal
+ids:
+  doi: 10.1038/s41598-026-63299-0
+  openalex: W7170064869
+links:
+  paper: https://doi.org/10.1038/s41598-026-63299-0
+  pdf: https://www.nature.com/articles/s41598-026-63299-0_reference.pdf
+topic: post-processing
+topics:
+- s2s-seasonal
+type: model
+method:
+- cnn
+timescale:
+- s2s
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: 3D U-Net post-processing of SINTEX-F2 North Pacific wind forecasts out to 12 weeks cuts week-3
+  to 4 RMSE and CRPS by 13% and 15%.
+abstract: Skillful subseasonal-to-seasonal (S2S) wind forecasts are critical for optimizing marine operations,
+  renewable energy management, and climate risk assessment, but their skill at these lead times is often
+  modest. Here, we develop a unified deep learning–based post-processing framework to improve near-surface
+  SINTEX-F2 wind forecasts over the North Pacific, built on a 3D U-Net backbone. The framework is configured
+  for bias correction, statistical downscaling, and probabilistic prediction at lead times of up to 12
+  weeks. Compared to statistical and machine-learning baselines, the U-Net removed systematic bias, consistently
+  reduced RMSE, improved correlation, and provided a more realistic representation of forecast variability
+  and wind-speed distributions. Downscaling enhanced spatial coherence at higher resolution without degrading
+  deterministic skill. The framework also improved probabilistic performance, reduced the Continuous Ranked
+  Probability Score (CRPS), and increased the Ranked Probability Skill Score (RPSS) across all tested
+  seasons and lead times. An ordinal classification approach provided the highest categorical skill, whereas
+  regression-based ensemble correction recovered most of the probabilistic gain and retained physically
+  coherent wind fields for downstream applications. In an additional benchmark across five forecast systems,
+  the U-Net reduced week-3–4 North Pacific RMSE and CRPS by 13% and 15%, respectively. These results show
+  that a unified deep learning framework can improve the skill and usability of S2S wind forecasts.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

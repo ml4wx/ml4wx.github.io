@@ -1,0 +1,47 @@
+id: arxiv-2401.09424
+title: Precipitation Prediction Using an Ensemble of Lightweight Learners
+authors:
+- Xinzhe Li
+- Sun Rui
+- Yiming Niu
+- Yao Liu
+date: '2023-11-30'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2401.09424'
+  openalex: W4391046575
+links:
+  paper: https://arxiv.org/abs/2401.09424
+  pdf: https://arxiv.org/pdf/2401.09424
+  code: https://github.com/lxz1217/weather4cast-2023-lxz
+orgs:
+- alibaba-damo
+topic: nowcasting
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Ensemble of lightweight prediction heads with a learned controller ranks first on Weather4Cast
+  2023 core and nowcasting tests for satellite-based precipitation prediction.
+abstract: 'Precipitation prediction plays a crucial role in modern agriculture and industry. However,
+  it poses significant challenges due to the diverse patterns and dynamics in time and space, as well
+  as the scarcity of high precipitation events. To address this challenge, we propose an ensemble learning
+  framework that leverages multiple learners to capture the diverse patterns of precipitation distribution.
+  Specifically, the framework consists of a precipitation predictor with multiple lightweight heads (learners)
+  and a controller that combines the outputs from these heads. The learners and the controller are separately
+  optimized with a proposed 3-stage training scheme. By utilizing provided satellite images, the proposed
+  approach can effectively model the intricate rainfall patterns, especially for high precipitation events.
+  It achieved 1st place on the core test as well as the nowcasting leaderboards of the Weather4Cast 2023
+  competition. For detailed implementation, please refer to our GitHub repository at: https://github.com/lxz1217/weather4cast-2023-lxz.'
+significance: 3
+score: 32
+highlight: false
+added: '2026-10-22'
+source: backfill

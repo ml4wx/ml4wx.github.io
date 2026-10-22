@@ -1,0 +1,54 @@
+id: arxiv-2601.03633
+title: 'MFC-RFNet: A Multi-scale Guided Rectified Flow Network for Radar Sequence Prediction'
+authors:
+- Wenjie Luo
+- Chuanhu Deng
+- Chaorong Li
+- Rongyao Deng
+- Qiang Yang
+date: '2026-01-07'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2601.03633'
+  openalex: W7119491863
+links:
+  paper: https://arxiv.org/abs/2601.03633
+  pdf: https://arxiv.org/pdf/2601.03633
+topic: nowcasting
+type: model
+method:
+- diffusion
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Rectified-flow radar echo nowcasting with wavelet-guided skips and displacement-aligned fusion;
+  improves on baselines across four public radar datasets at higher rain thresholds.
+abstract: Accurate and high-resolution precipitation nowcasting from radar echo sequences is crucial for
+  disaster mitigation and economic planning, yet it remains a significant challenge. Key difficulties
+  include modeling complex multi-scale evolution, correcting inter-frame feature misalignment caused by
+  displacement, and efficiently capturing long-range spatiotemporal context without sacrificing spatial
+  fidelity. To address these issues, we present the Multi-scale Feature Communication Rectified Flow (RF)
+  Network (MFC-RFNet), a generative framework that integrates multi-scale communication with guided feature
+  fusion. To enhance multi-scale fusion while retaining fine detail, a Wavelet-Guided Skip Connection
+  (WGSC) preserves high-frequency components, and a Feature Communication Module (FCM) promotes bidirectional
+  cross-scale interaction. To correct inter-frame displacement, a Condition-Guided Spatial Transform Fusion
+  (CGSTF) learns spatial transforms from conditioning echoes to align shallow features. The backbone adopts
+  rectified flow training to learn near-linear probability-flow trajectories, enabling few-step sampling
+  with stable fidelity. Additionally, lightweight Vision-RWKV (RWKV) blocks are placed at the encoder
+  tail, the bottleneck, and the first decoder layer to capture long-range spatiotemporal dependencies
+  at low spatial resolutions with moderate compute. Evaluations on four public datasets (SEVIR, MeteoNet,
+  Shanghai, and CIKM) demonstrate consistent improvements over strong baselines, yielding clearer echo
+  morphology at higher rain-rate thresholds and sustained skill at longer lead times. These results suggest
+  that the proposed synergy of RF training with scale-aware communication, spatial alignment, and frequency-aware
+  fusion presents an effective and robust approach for radar-based nowcasting.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

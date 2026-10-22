@@ -1,0 +1,65 @@
+id: arxiv-2407.11317
+title: Hybrid physics-AI outperforms numerical weather prediction for extreme precipitation nowcasting
+authors:
+- Puja Das
+- August Posch
+- Nathan Barber
+- Michael Hicks
+- Thomas J. Vandal
+- Kate Duffy
+- Debjani Singh
+- Katie van Werkhoven
+- Auroop R. Ganguly
+date: '2024-07-16'
+year: 2024
+venue: npj Climate and Atmospheric Science
+venue_type: journal
+ids:
+  arxiv: '2407.11317'
+  doi: 10.1038/s41612-024-00834-8
+  openalex: W4404482519
+links:
+  paper: https://doi.org/10.1038/s41612-024-00834-8
+  pdf: https://arxiv.org/pdf/2407.11317
+orgs:
+- ornl
+topic: nowcasting
+topics:
+- extremes-hazards
+type: evaluation
+method:
+- physics-constrained
+- gan-vae
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- nwp-analysis
+status: research
+summary: Physics-embedded generative nowcasting model NowcastNet beats NWP model HRRR on heavy rain, with
+  median CSI 0.30 versus 0.04 above 16 mm/h, though long-lead totals are overestimated.
+abstract: Precipitation nowcasting, critical for flood emergency and river management, has remained challenging
+  for decades, although recent developments in deep generative modeling (DGM) suggest the possibility
+  of improvements. River management centers, such as the Tennessee Valley Authority, have been using Numerical
+  Weather Prediction (NWP) models for nowcasting but have struggled with missed detections even from best-in-class
+  NWP models. While decades of prior research achieved limited improvements beyond advection and localized
+  evolution, recent attempts have shown progress from physics-free machine learning (ML) methods and even
+  greater improvements from physics-embedded ML approaches. Developers of DGM for nowcasting have compared
+  their approaches with optical flow (a variant of advection) and meteorologists' judgment but not with
+  NWP models. Further, they have not conducted independent co-evaluations with water resources and river
+  managers. Here, we show that the state-of-the-art physics-embedded deep generative model, specifically
+  NowcastNet, outperforms the High-Resolution Rapid Refresh (HRRR) model, the latest generation of NWP,
+  along with advection and persistence, especially for heavy precipitation events. For grid-cell extremes
+  over 16 mm/h, NowcastNet demonstrated a median critical success index (CSI) of 0.30, compared with a
+  median CSI of 0.04 for HRRR. However, despite hydrologically relevant improvements in point-by-point
+  forecasts from NowcastNet, caveats include the overestimation of spatially aggregated precipitation
+  over longer lead times. Our co-evaluation with ML developers, hydrologists, and river managers suggests
+  the possibility of improved flood emergency response and hydropower management.
+significance: 5
+cited_by: 48
+score: 30
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,53 @@
+id: arxiv-2408.06262
+title: 'DUNE: A Machine Learning Deep UNet++ based Ensemble Approach to Monthly, Seasonal and Annual Climate
+  Forecasting'
+authors:
+- Pratik Shukla
+- Milton Halem
+date: '2024-08-12'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2408.06262'
+links:
+  paper: https://arxiv.org/abs/2408.06262
+  pdf: https://arxiv.org/pdf/2408.06262
+topic: s2s-seasonal
+topics:
+- global-medium-range
+type: model
+method:
+- cnn
+timescale:
+- seasonal
+spatial:
+- global
+data:
+- era5
+status: research
+summary: DUNE, a Deep UNet++ ensemble trained on ERA5 monthly means, produces global monthly and seasonal
+  T2m and SST forecasts matching NOAA operational outlook skill.
+abstract: Capitalizing on the recent availability of ERA5 monthly averaged long-term data records of mean
+  atmospheric and climate fields based on high-resolution reanalysis, deep-learning architectures offer
+  an alternative to physics-based daily numerical weather predictions for subseasonal to seasonal (S2S)
+  and annual means. A novel Deep UNet++-based Ensemble (DUNE) neural architecture is introduced, employing
+  multi-encoder-decoder structures with residual blocks. When initialized from a prior month or year,
+  this architecture produced the first AI-based global monthly, seasonal, or annual mean forecast of 2-meter
+  temperatures (T2m) and sea surface temperatures (SST). ERA5 monthly mean data is used as input for T2m
+  over land, SST over oceans, and solar radiation at the top of the atmosphere for each month of 40 years
+  to train the model. Validation forecasts are performed for an additional two years, followed by five
+  years of forecast evaluations to account for natural annual variability. AI-trained inference forecast
+  weights generate forecasts in seconds, enabling ensemble seasonal forecasts. Root Mean Squared Error
+  (RMSE), Anomaly Correlation Coefficient (ACC), and Heidke Skill Score (HSS) statistics are presented
+  globally and over specific regions. These forecasts outperform persistence, climatology, and multiple
+  linear regression for all domains. DUNE forecasts demonstrate comparable statistical accuracy to NOAA's
+  operational monthly and seasonal probabilistic outlook forecasts over the US but at significantly higher
+  resolutions. RMSE and ACC error statistics for other recent AI-based daily forecasts also show superior
+  performance for DUNE-based forecasts. The DUNE model's application to an ensemble data assimilation
+  cycle shows comparable forecast accuracy with a single high-resolution model, potentially eliminating
+  the need for retraining on extrapolated datasets.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

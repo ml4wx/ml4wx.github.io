@@ -1,0 +1,59 @@
+id: doi-10.1029-2026jh001526
+title: A Hybrid Deep Learning Framework for Tropical Cyclone Intensity Estimation With Spatiotemporal
+  Features and Physical‐Persistence Adjustment
+authors:
+- Yue Wang
+- Xiaoqin Lu
+- Xinyan Lyu
+- Lin Dong
+date: '2026-10-01'
+year: 2026
+venue: Journal of Geophysical Research Machine Learning and Computation
+venue_type: journal
+ids:
+  doi: 10.1029/2026jh001526
+  openalex: W7220665130
+links:
+  paper: https://doi.org/10.1029/2026jh001526
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2026JH001526
+orgs:
+- cma
+topic: extremes-hazards
+topics:
+- observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- satellite
+status: pre-operational
+summary: SOPHIENet, a CNN with attention and Dvorak-inspired persistence constraints, estimates western
+  North Pacific tropical cyclone intensity from FY-4B IR imagery with 2.8 m/s MAE.
+abstract: Abstract This study proposes SOPHIENet (TC Satellite‐Observed Physical‐Persistence and Spatiotemporal
+  Hybrid Intensity Estimation Network), a hybrid framework for Tropical Cyclone (TC) intensity estimation.
+  SOPHIENet integrates a convolutional neural network, the Convolutional Block Attention Module, and a
+  physical‐persistence adjustment mechanism. By extracting spatiotemporal features from multi‐temporal
+  satellite infrared (IR) imagery, SOPHIENet captures TC cloud‐structure evolution. The embedded attention
+  module refines channel‐wise and spatial representations, improving the feature‐learning capability of
+  the deep learning (DL) component. A key innovation is the physical‐persistence adjustment mechanism
+  inspired by the Dvorak technique, which converts historical TC intensity‐evolution characteristics over
+  the Western North Pacific (WNP) into multi‐timescale constraints on intensity change. These constraints
+  suppress physically unreasonable short‐term fluctuations in the initial DL estimates, improving the
+  temporal consistency, physical plausibility, and reliability. In an independent operational evaluation
+  using FY‐4B IR observations for 43 TCs (20,144 samples) over the WNP during 2023–2024, SOPHIENet achieved
+  a mean absolute error (MAE) of 2.8 m/s. A temporally collocated comparison of 1,841 samples from 26
+  TCs in 2024 yielded an MAE of 2.7 m/s for SOPHIENet against China Meteorological Administration best‐track
+  2‐min maximum sustained wind (MSW), compared with 3.4, 3.6, and 4.0 m/s for D‐PRINT, AiDT, and Advanced
+  Dvorak Technique v9.0, respectively, against Joint Typhoon Warning Center best‐track 1‐min MSW. The
+  comparison is not strictly homogeneous because of differences in wind‐averaging conventions, best‐track
+  references and TC center inputs. More broadly, SOPHIENet also showed competitive performance relative
+  to existing DL approaches and stable performance across TC intensity categories, with slight underestimation
+  for super typhoons and greater uncertainty during rapid intensity evolution.
+significance: 4
+cited_by: 0
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

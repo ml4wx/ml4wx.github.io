@@ -1,0 +1,54 @@
+id: arxiv-2509.23453
+title: 'PHASE: Physics-Integrated, Heterogeneity-Aware Surrogates for Scientific Simulations'
+authors:
+- Dawei Gao
+- Dali Wang
+- Zhuowei Gu
+- Qinglei Cao
+- Xiao Wang
+- Peter Thornton
+- Dan Ricciuto
+- Yunhe Feng
+date: '2025-09-27'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2509.23453'
+  openalex: W4415332370
+links:
+  paper: https://arxiv.org/abs/2509.23453
+  pdf: https://arxiv.org/pdf/2509.23453
+topic: climate-emulation
+type: model
+method:
+- physics-constrained
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+- other
+status: pre-operational
+summary: PHASE, a physics-constrained surrogate for the E3SM land model biogeochemical spin-up, reaches
+  near-equilibrium from 20 simulated years, cutting required integration length at least 60-fold.
+abstract: Large-scale numerical simulations underpin modern scientific discovery but remain constrained
+  by prohibitive computational costs. AI surrogates offer acceleration, yet adoption in mission-critical
+  settings is limited by concerns over physical plausibility, trustworthiness, and the fusion of heterogeneous
+  data. We introduce PHASE, a modular deep-learning framework for physics-integrated, heterogeneity-aware
+  surrogates in scientific simulations. PHASE combines data-type-aware encoders for heterogeneous inputs
+  with multi-level physics-based constraints that promote consistency from local dynamics to global system
+  behavior. We validate PHASE on the biogeochemical (BGC) spin-up workflow of the U.S. Department of Energy's
+  Energy Exascale Earth System Model (E3SM) Land Model (ELM), presenting-to our knowledge-the first scientifically
+  validated AI-accelerated solution for this task. Using only the first 20 simulation years, PHASE infers
+  a near-equilibrium state that otherwise requires more than 1,200 years of integration, yielding an effective
+  reduction in required integration length by at least 60x. The framework is enabled by a pipeline for
+  fusing heterogeneous scientific data and demonstrates strong generalization to higher spatial resolutions
+  with minimal fine-tuning. These results indicate that PHASE captures governing physical regularities
+  rather than surface correlations, enabling practical, physically consistent acceleration of land-surface
+  modeling and other complex scientific workflows.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

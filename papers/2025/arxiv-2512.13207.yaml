@@ -1,0 +1,53 @@
+id: arxiv-2512.13207
+title: Evaluating Adversarial Attacks on Federated Learning for Temperature Forecasting
+authors:
+- Karina Chichifoi
+- Fabio Merizzi
+- Michele Colajanni
+date: '2025-12-15'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2512.13207'
+  openalex: W4417462455
+links:
+  paper: https://arxiv.org/abs/2512.13207
+  pdf: https://arxiv.org/pdf/2512.13207
+topic: regional-km-scale
+topics:
+- xai-uq-physics
+type: evaluation
+method:
+- other
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: Shows a single compromised federated client can shift regional surface temperature forecasts
+  by up to -1.7 K, and trimmed mean aggregation fails against spatial patch attacks.
+abstract: Deep learning and federated learning (FL) are becoming powerful partners for next-generation
+  weather forecasting. Deep learning enables high-resolution spatiotemporal forecasts that can surpass
+  traditional numerical models, while FL allows institutions in different locations to collaboratively
+  train models without sharing raw data, addressing efficiency and security concerns. While FL has shown
+  promise across heterogeneous regions, its distributed nature introduces new vulnerabilities. In particular,
+  data poisoning attacks, in which compromised clients inject manipulated training data, can degrade performance
+  or introduce systematic biases. These threats are amplified by spatial dependencies in meteorological
+  data, allowing localized perturbations to influence broader regions through global model aggregation.
+  In this study, we investigate how adversarial clients distort federated surface temperature forecasts
+  trained on the Copernicus European Regional ReAnalysis (CERRA) dataset. We simulate geographically distributed
+  clients and evaluate patch-based and global biasing attacks on regional temperature forecasts. Our results
+  show that even a small fraction of poisoned clients can mislead predictions across large, spatially
+  connected areas. A global temperature bias attack from a single compromised client shifts predictions
+  by up to -1.7 K, while coordinated patch attacks more than triple the mean squared error and produce
+  persistent regional anomalies exceeding +3.5 K. Finally, we assess trimmed mean aggregation as a defense
+  mechanism, showing that it successfully defends against global bias attacks (2-13% degradation) but
+  fails against patch attacks (281-603% amplification), exposing limitations of outlier-based defenses
+  for spatially correlated data.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

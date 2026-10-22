@@ -1,0 +1,63 @@
+id: arxiv-2512.13987
+title: An intercomparison of generative machine learning methods for downscaling precipitation at fine
+  spatial scales
+authors:
+- Neelesh Rampal
+- Bryn Ward-Leikis
+- Yun Sing Koh
+- Peter B. Gibson
+- Hong-Yang Liu
+- Vassili Kitsios
+- Tristan Meyers
+- Jeff Adie
+- Yang Juntao
+- Steven C. Sherwood
+date: '2025-12-16'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2512.13987'
+  openalex: W4417465457
+links:
+  paper: https://arxiv.org/abs/2512.13987
+  pdf: https://arxiv.org/pdf/2512.13987
+topic: downscaling
+topics:
+- probabilistic-ensembles
+type: evaluation
+method:
+- gan-vae
+- diffusion
+timescale:
+- climate
+spatial:
+- regional
+data:
+- km-scale-sim
+status: research
+summary: Compares GANs, flow matching and diffusion for New Zealand precipitation downscaling; diffusion
+  and flow matching give better-calibrated ensembles.
+abstract: Machine learning (ML) offers a computationally efficient approach for generating large ensembles
+  of high-resolution climate projections, but deterministic ML methods often smooth fine-scale structures
+  and underestimate extremes. While stochastic generative models show promise, few studies have compared
+  their skill under both present-day and future climates. This study compares Generative Adversarial Networks
+  (GANs), flow matching and diffusion models across multiple configurations for downscaling daily precipitation
+  from a regional climate model (RCM) over New Zealand. Model skill is assessed across spatial structure,
+  distributional metrics, climatological means, extremes, ensemble calibration, and climate change signals.
+  Unlike GANs, diffusion and flow matching models generate predictions through many sequential steps.
+  Here we show that using higher-order differential equation solvers, the number of steps required can
+  be reduced with only a minor reduction in skill, heavily reducing the computational burden for downscaling
+  large ensembles, which may have otherwise prevented their use in operational settings. Overall, GANs,
+  flow matching and diffusion perform competitively across most metrics, except that diffusion and flow
+  matching produce higher-fidelity predictions and better-calibrated ensembles compared to GANs -which
+  are under-dispersive. Most approaches capture mean precipitation signals reasonably well, but underestimate
+  end-of-century climate change signals of extreme precipitation, despite being trained on RCM simulations
+  spanning the future period. Only one GAN and one flow matching configuration can reproduce this change
+  signal reliably. These results highlight the importance of evaluating model performance across a comprehensive
+  set of metrics, and that neither visual realism nor good skill on standard metrics guarantee skill in
+  predicting climate change signals.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

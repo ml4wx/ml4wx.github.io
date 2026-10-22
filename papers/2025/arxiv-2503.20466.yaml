@@ -1,0 +1,65 @@
+id: arxiv-2503.20466
+title: Data-driven Seasonal Climate Predictions via Variational Inference and Transformers
+authors:
+- Lluís Palma
+- Alejandro Peraza
+- David Civantos
+- Amanda Duarte
+- Stefano Materia
+- Ángel G. Muñoz
+- Jesús Peña-Izquierdo
+- Laia Romero
+- Albert Soret
+- Markus G. Donat
+date: '2025-03-26'
+year: 2025
+venue: npj Climate and Atmospheric Science
+venue_type: journal
+ids:
+  arxiv: '2503.20466'
+  doi: 10.1038/s41612-026-01320-z
+  openalex: W7124308650
+links:
+  paper: https://doi.org/10.1038/s41612-026-01320-z
+  pdf: https://arxiv.org/pdf/2503.20466
+topic: s2s-seasonal
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- transformer
+timescale:
+- seasonal
+spatial:
+- global
+- regional
+data:
+- cmip
+- era5
+status: research
+summary: A transformer with variational inference trained on CMIP6 predicts seasonal anomalies, adding
+  skill over climatology in extratropical inland regions tested on ERA5.
+abstract: Most operational climate services providers base their seasonal predictions on initialised general
+  circulation models (GCMs) or statistical techniques that fit past observations. GCMs require substantial
+  computational resources, which limits their capacity. In contrast, statistical methods often lack robustness
+  due to short historical records. Recent works propose machine learning methods trained on climate model
+  output, leveraging larger sample sizes and simulated scenarios. Yet, many of these studies focus on
+  prediction tasks that might be restricted in spatial extent or temporal coverage, opening a gap with
+  existing operational predictions. Thus, the present study evaluates the effectiveness of a methodology
+  that combines variational inference with transformer models to predict fields of seasonal anomalies.
+  The predictions cover all four seasons and are initialised one month before the start of each season.
+  The model was trained on climate model output from CMIP6 and tested using ERA5 reanalysis data. We analyse
+  the method's performance in predicting interannual anomalies beyond the climate change-induced trend.
+  We also test the proposed methodology in a regional context with a use case focused on Europe. While
+  climate change trends dominate the skill of temperature predictions, the method presents additional
+  skill over the climatological forecast in regions influenced by known teleconnections. We reach similar
+  conclusions based on the validation of precipitation predictions. Despite underperforming SEAS5 in most
+  tropics, our model offers added value in numerous extratropical inland regions. This work demonstrates
+  the effectiveness of training generative models on climate model output for seasonal predictions, providing
+  skilful predictions beyond the induced climate change trend at time scales and lead times relevant for
+  user applications.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

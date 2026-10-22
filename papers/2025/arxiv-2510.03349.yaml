@@ -1,0 +1,49 @@
+id: arxiv-2510.03349
+title: 'AgentCaster: Reasoning-Guided Tornado Forecasting'
+authors:
+- Michael K. Chen
+date: '2025-10-02'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2510.03349'
+  openalex: W4416372121
+links:
+  paper: https://arxiv.org/abs/2510.03349
+topic: llms-agents
+topics:
+- extremes-hazards
+- benchmarks-data-eval
+type: benchmark
+method:
+- llm
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: AgentCaster benchmarks multimodal LLM agents on 12-36 h tornado risk forecasting; human experts
+  clearly outperform models, which hallucinate and overpredict risk.
+abstract: There is a growing need to evaluate Large Language Models (LLMs) on complex, high-impact, real-world
+  tasks to assess their true readiness as reasoning agents. To address this gap, we introduce AgentCaster,
+  a contamination-free framework employing multimodal LLMs end-to-end for the challenging, long-horizon
+  task of tornado forecasting. Within AgentCaster, models interpret heterogeneous spatiotemporal data
+  from a high-resolution convection-allowing forecast archive. We assess model performance over a 40-day
+  period featuring diverse historical data, spanning several major tornado outbreaks and including over
+  500 tornado reports. Each day, models query interactively from a pool of 3,625 forecast maps and 40,125
+  forecast soundings for a forecast horizon of 12-36 hours. Probabilistic tornado-risk polygon predictions
+  are verified against ground truths derived from geometric comparisons across disjoint risk bands in
+  projected coordinate space. To quantify accuracy, we propose domain-specific TornadoBench and TornadoHallucination
+  metrics, with TornadoBench highly challenging for both LLMs and domain expert human forecasters. Notably,
+  human experts significantly outperform state-of-the-art models, which demonstrate a strong tendency
+  to hallucinate and overpredict risk intensity, struggle with precise geographic placement, and exhibit
+  poor spatiotemporal reasoning in complex, dynamically evolving systems. AgentCaster aims to advance
+  research on improving LLM agents for challenging reasoning tasks in critical domains.
+significance: 4
+cited_by: 1
+score: 16
+highlight: false
+added: '2026-10-22'
+source: snowball

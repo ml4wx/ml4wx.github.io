@@ -1,0 +1,55 @@
+id: arxiv-2608.11515
+title: Long-window 4DVar for reanalysis using a differentiable weather model
+authors:
+- Gregory J. Hakim
+- Jeffrey S. Whitaker
+- Bo Huang
+- Sergey Frolov
+date: '2026-08-12'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2608.11515'
+  openalex: W7202376300
+links:
+  paper: https://arxiv.org/abs/2608.11515
+orgs:
+- ncar
+- noaa
+- university-of-washington
+topic: data-assimilation
+topics:
+- global-medium-range
+type: model
+method:
+- differentiable
+spatial:
+- global
+data:
+- era5
+- stations
+- other
+status: research
+summary: Long-window 4D-Var using automatic differentiation through NeuralGCM yields a stable three-month
+  reanalysis with 500-hPa errors about 55% smaller than 20CRv3 in four-day windows.
+abstract: Atmospheric reanalyses combine observations with model forecasts using complex data assimilation
+  systems. We test whether a differentiable weather model permits a simpler and more accurate method based
+  on a long-window four-dimensional variational data assimilation (4D-Var) formulation that omits the
+  conventional background-error term. The method uses automatic differentiation to find optimal NeuralGCM
+  initial conditions that minimize the misfit to real surface-pressure observations distributed across
+  overlapping windows of two to seven days, assuming no model error. Cycling at 6-hour intervals for three
+  months beginning 1 January 2015 yields a stable reanalysis with smaller error relative to ERA5 in 500-hPa
+  geopotential height than the Twentieth Century Reanalysis version 3 (20CRv3), which uses an ensemble
+  Kalman filter to assimilate the same observations. Every window produces smaller errors than 20CRv3,
+  with analysis error for the four-day window approximately 55% smaller than for 20CRv3. At the end of
+  the four-day window, which does not benefit from future observations, error remains approximately 38%
+  smaller than 20CRv3. Analyses degrade slightly beyond four days, which we attribute to the increasing
+  importance of model error.
+significance: 6
+cited_by: 0
+score: 59
+highlight: true
+highlight_reason: Long-window 4DVar with differentiable NeuralGCM produces reanalysis from surface pressure
+  that beats 20CRv3; promising direction for ML-based reanalysis.
+added: '2026-10-22'
+source: snowball

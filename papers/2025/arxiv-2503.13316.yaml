@@ -1,0 +1,49 @@
+id: arxiv-2503.13316
+title: 'RainScaleGAN: a Conditional Generative Adversarial Network for Rainfall Downscaling'
+authors:
+- Marcello Iotti
+- Paolo Davini
+- Jost von Hardenberg
+- Giuseppe Zappa
+date: '2025-03-17'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2503.13316'
+links:
+  paper: https://arxiv.org/abs/2503.13316
+  pdf: https://arxiv.org/pdf/2503.13316
+topic: downscaling
+type: model
+method:
+- gan-vae
+- cnn
+spatial:
+- regional
+data:
+- other
+status: research
+summary: RainScaleGAN, a conditional GAN, downscales precipitation 8x (2 to 0.25 degrees) with realistic
+  extremes and distributions matching ground truth in a perfect-model test.
+abstract: To this day, accurately simulating local-scale precipitation and reliably reproducing its distribution
+  remains a challenging task. The limited horizontal resolution of Global Climate Models is among the
+  primary factors undermining their skill in this context. The physical mechanisms driving the onset and
+  development of precipitation, especially in extreme events, operate at spatio-temporal scales smaller
+  than those numerically resolved, thus struggling to be captured accurately. In order to circumvent this
+  limitation, several downscaling approaches have been developed over the last decades to address the
+  discrepancy between the spatial resolution of models output and the resolution required by local-scale
+  applications. In this paper, we introduce RainScaleGAN, a conditional deep convolutional Generative
+  Adversarial Network (GAN) for precipitation downscaling. GANs have been effectively used in image super-resolution,
+  an approach highly relevant for downscaling tasks. RainScaleGAN's capabilities are tested in a perfect-model
+  setup, where the spatial resolution of a precipitation dataset is artificially degraded from 0.25$^{\circ}\times$0.25$^{\circ}$
+  to 2$^{\circ}\times$2$^\circ$, and RainScaleGAN is used to restore it. The developed model outperforms
+  one of the leading precipitation downscaling method found in the literature. RainScaleGAN not only generates
+  a synthetic dataset featuring plausible high-resolution spatial patterns and intensities, but also produces
+  a precipitation distribution with statistics closely mirroring those of the ground-truth dataset. Given
+  that RainScaleGAN's approach is agnostic with respect to the underlying physics, the method has the
+  potential to be applied to other physical variables such as surface winds or temperature.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

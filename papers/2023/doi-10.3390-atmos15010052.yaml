@@ -1,0 +1,52 @@
+id: doi-10.3390-atmos15010052
+title: 'MSLKNet: A Multi-Scale Large Kernel Convolutional Network for Radar Extrapolation'
+authors:
+- Wei Tian
+- Chunlin Wang
+- Kailing Shen
+- Lixia Zhang
+- Kenny Thiam Choy Lim Kam Sian
+date: '2023-12-31'
+year: 2023
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos15010052
+  openalex: W4390459411
+links:
+  paper: https://doi.org/10.3390/atmos15010052
+  pdf: https://www.mdpi.com/2073-4433/15/1/52/pdf?version=1704011356
+orgs:
+- nuist
+topic: nowcasting
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Proposes MSLKNet, a fully convolutional multi-input multi-output radar echo extrapolation network
+  that reduces cumulative error and cuts compute cost on Shijiazhuang and Nanjing radar data.
+abstract: Radar echo extrapolation provides important information for precipitation nowcasting. Existing
+  mainstream radar echo extrapolation methods are based on the Single-Input-Single-Output (SISO) architecture.
+  These approaches of recursively predicting the predictive echo image with the current echo image as
+  input often results in error accumulation, leading to severe performance degradation. In addition, the
+  echo motion variations are extremely complex. Different regions of strong or weak echoes should receive
+  different degrees of attention. Previous methods have not been specifically designed for this aspect.
+  This paper proposes a new radar echo extrapolation network based entirely on a convolutional neural
+  network (CNN). The network uses a Multi-Input-Multi-Output (MIMO) architecture to mitigate cumulative
+  errors. It incorporates a multi-scale, large kernel convolutional attention module that enhances the
+  extraction of both local and global information. This design results in improved performance while significantly
+  reducing training costs. Experiments on dual-polarization radar echo datasets from Shijiazhuang and
+  Nanjing show that the proposed fully CNN-based model can achieve better performance while reducing computational
+  cost.
+significance: 3
+cited_by: 9
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

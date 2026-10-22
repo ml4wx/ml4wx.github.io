@@ -1,0 +1,57 @@
+id: doi-10.1029-2022ms003521
+title: 'ResU‐Deep: Improving the Trigger Function of Deep Convection in Tropical Regions With Deep Learning'
+authors:
+- Meng-Xuan Chen
+- Hao-Huan Fu
+- Tao Zhang
+- Lan-Ning Wang
+date: '2023-11-01'
+year: 2023
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2022ms003521
+  openalex: W4388730416
+links:
+  paper: https://doi.org/10.1029/2022ms003521
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2022MS003521
+orgs:
+- tsinghua-university
+topic: hybrid-parameterization
+topics:
+- extremes-hazards
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- era5
+- satellite
+status: research
+summary: ResU-Deep, a residual U-Net convection trigger, reaches F1 scores of 53–63% across four tropical
+  regions and better captures diurnal cycles than CAPE triggers.
+abstract: 'Abstract Modeling deep convection accurately in tropical regions is important. However, biases
+  remain in current trigger functions. To alleviate the overestimation of frequency and wrong depiction
+  of the diurnal cycle, we propose a deep convection trigger function, ResU‐Deep, based on the framework
+  of U‐net with three modifications to better suit the problem of deep convection identification: (a)
+  adding the upsampling process into the encoder part, (b) replacing the double convolution block with
+  a residual‐convolutional block, and (c) adding a dynamic weight into the loss function. Thirty‐three
+  environmental variables within tropical regions are used in ResU‐Deep, including 31 features from ECMWF
+  atmospheric reanalysis (ERA5) data set, and two historical convection fields. Tropical Rainfall Measuring
+  Mission 3B42 data set is used as the precipitation observation. Central America, North Africa, South
+  and East Asia, and West Pacific Ocean within 0°∼30°N are selected as the study regions for the high
+  frequency of deep convection activities. ResU‐Deep, incorporating the surrounding information, is separately
+  trained and evaluated in four regions and has the F1‐scores of 58%, 53%, 60%, and 63% for the occurrence,
+  outperforming the single‐column‐based machine learning methods. Also, a unified model has similar performance
+  in four regions. Further comparisons are made with convective available potential energy‐based trigger
+  functions in Southern Great Plains. Results show that ResU‐Deep can capture the trends and peaks of
+  diurnal cycles on complex terrains in large regions. According to feature importance test, the contribution
+  levels of environmental features are different in four regions, indicating the model can learn the mechanisms
+  of deep convection in specific region, thus improving the prediction accuracy.'
+significance: 3
+cited_by: 6
+score: 22
+highlight: false
+added: '2026-10-22'
+source: snowball

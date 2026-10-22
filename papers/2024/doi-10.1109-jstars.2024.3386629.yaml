@@ -1,0 +1,61 @@
+id: doi-10.1109-jstars.2024.3386629
+title: Wind Speed Downscaling of the WRF Model at Subkilometer Scale in Complex Terrain for Wind Power
+  Applications
+authors:
+- Francesco Di Paola
+- Domenico Cimini
+- Maria Pia De Natale
+- Donatello Gallucci
+- Sabrina Gentile
+- Edoardo Geraldi
+- Salvatore Larosa
+- Saverio Teodosio Nilo
+- Elisabetta Ricciardelli
+- Ermann Ripepi
+- Mariassunta Viggiano
+- Filomena Romano
+date: '2024-01-01'
+year: 2024
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2024.3386629
+  openalex: W4394627384
+links:
+  paper: https://doi.org/10.1109/jstars.2024.3386629
+  pdf: https://ieeexplore.ieee.org/ielx7/4609443/4609444/10495130.pdf
+topic: downscaling
+topics:
+- applications-impacts
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- km-scale-sim
+status: research
+summary: Neural networks downscale WRF wind fields from 1.2 km to 240 m over complex terrain, reaching
+  0.5 m/s RMSD over land, better than spline interpolation.
+abstract: Mesoscale Numerical Weather Prediction Models (NWPMs) are frequently utilized for wind speed
+  analysis and forecasting in the planning and supporting of wind power generation. However, high computational
+  costs only allow for routine use up to kilometer scale which is sometimes too coarse to support onshore
+  wind power generation in areas with complex orography. To address this, an algorithm was developed in
+  southern Italy to downscale the wind fields output using the Weather Research and Forecasting (WRF)
+  model for the first 250 meters above ground level. The algorithm is based on Artificial Neural Networks
+  (ANNs) and uses the WRF model outputs on a 1.2 km regular grid, and the land surface height and orientation
+  on a 240 m regular grid to downscale wind fields to a 240 m regular grid. To train the ANNs, a WRF simulation
+  dataset in Large Eddy Simulation (LES) mode was developed. Particular attention was paid to defining
+  the ANN architectures and analyzing inputs to mitigate overfitting risk while maintaining manageable
+  computation costs. The evaluation of outcomes conducted using an independent test datasets from WRF-LES
+  simulations reveals that the wind speed Root Mean Square Difference (RMSD) is 0.5 m/s over land and
+  0.2 m/s over the sea surface, respectively, at a spatial resolution of approximately 800 m. These figures
+  are lower than the RMSD values of 1.6 m/s over land and 1.0 m/s over the sea surface, accompanied by
+  a spatial resolution of 1.8 km, which were obtained through comparison with the Spline interpolation
+  method.
+significance: 3
+cited_by: 10
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,56 @@
+id: doi-10.3390-atmos15101176
+title: 'STFM: Accurate Spatio-Temporal Fusion Model for Weather Forecasting'
+authors:
+- Jun Liu
+- Li Wu
+- Tao Zhang
+- Jianqiang Huang
+- Xiaoying Wang
+- Fang Tian
+date: '2024-09-30'
+year: 2024
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos15101176
+  openalex: W4402986181
+links:
+  paper: https://doi.org/10.3390/atmos15101176
+topic: global-medium-range
+type: model
+method:
+- cnn
+- rnn
+timescale:
+- short
+spatial:
+- global
+data:
+- era5
+status: research
+summary: STFM combines CNN-RNN encoding with dual spatial-channel attention on ERA5, reporting 3–7% gains
+  over baselines for temperature and wind predictions.
+abstract: 'Meteorological prediction is crucial for various sectors, including agriculture, navigation,
+  daily life, disaster prevention, and scientific research. However, traditional numerical weather prediction
+  (NWP) models are constrained by their high computational resource requirements, while the accuracy of
+  deep learning models remains suboptimal. In response to these challenges, we propose a novel deep learning-based
+  model, the Spatiotemporal Fusion Model (STFM), designed to enhance the accuracy of meteorological predictions.
+  Our model leverages Fifth-Generation ECMWF Reanalysis (ERA5) data and introduces two key components:
+  a spatiotemporal encoder module and a spatiotemporal fusion module. The spatiotemporal encoder integrates
+  the strengths of convolutional neural networks (CNNs) and recurrent neural networks (RNNs), effectively
+  capturing both spatial and temporal dependencies. Meanwhile, the spatiotemporal fusion module employs
+  a dual attention mechanism, decomposing spatial attention into global static attention and channel dynamic
+  attention. This approach ensures comprehensive extraction of spatial features from meteorological data.
+  The combination of these modules significantly improves prediction performance. Experimental results
+  demonstrate that STFM excels in extracting spatiotemporal features from reanalysis data, yielding predictions
+  that closely align with observed values. In comparative studies, STFM outperformed other models, achieving
+  a 7% improvement in ground and high-altitude temperature predictions, a 5% enhancement in the prediction
+  of the u/v components of 10 m wind speed, and an increase in the accuracy of potential height and relative
+  humidity predictions by 3% and 1%, respectively. This enhanced performance highlights STFM’s potential
+  to advance the accuracy and reliability of meteorological forecasting.'
+significance: 3
+cited_by: 4
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

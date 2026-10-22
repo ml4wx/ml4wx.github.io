@@ -1,0 +1,54 @@
+id: arxiv-2605.12435
+title: 'PyroAdapt: Adapting Wildfire Prediction under Spatial Heterogeneity and Temporal Shift'
+authors:
+- Enyi Jiang
+- Wu Sun
+date: '2026-05-12'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.12435'
+  openalex: W7160985980
+links:
+  paper: https://arxiv.org/abs/2605.12435
+orgs:
+- stanford
+topic: extremes-hazards
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- other
+timescale:
+- short
+spatial:
+- regional
+data:
+- other
+status: research
+summary: PyroAdapt retrieves similar historical conditions and fine-tunes a risk-ranking model, raising
+  California daily fire-prediction average precision from 21.6% to about 24.5%.
+abstract: Prediction of wildfire occurrence is a rare-event problem compounded by spatial heterogeneity
+  and temporal distribution shift, as fire occurrences are vastly outnumbered by non-occurrences, and
+  predictor--fire relationship varies across space and time. Models trained on historical fire data may
+  perform poorly under new conditions and require adaptation to the target distribution before operational
+  use. We propose PyroAdapt, a pretrain--retrieve--rank framework that adapts a pretrained model to target
+  conditions by retrieving historical locations with similar conditions and fine-tuning on the retrievals
+  through risk ranking. For spatial adaptation, we condition risk on terrain, ecoregion embeddings, and
+  fire rates, accounting for spatial context in the retrieval, and learn risk ordering from same-day fire--nonfire
+  cell pairs. We compare direct ranking, residual pairwise DPO (RDPO), and selective ranking through a
+  unified score-gap formulation that characterizes their gradient allocation. Over California (discretized
+  into 666 0.25x0.25 grid cells), these objectives raise daily average precision from 21.62% for continued
+  focal fine-tuning to 24.35--24.57%, and Top5% recall from 18.70% to 22.11--22.79%. Under a fixed daily
+  detection budget of 34 cells (5% area), selective ranking captures 344 additional positive cell--days.
+  For fires in the top 5%/10%/20% of dry matter consumption, selective ranking raises recall by 39.70/28.18/20.50
+  percentage points, respectively. Furthermore, rolling evaluations over Yosemite show that the gains
+  from ranking persist under temporal distribution shift. Together, these results show that PyroAdapt
+  prioritizes the most fire-prone locations under a daily budget constraint and detects more extreme fire
+  events.
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-10-22'
+source: snowball

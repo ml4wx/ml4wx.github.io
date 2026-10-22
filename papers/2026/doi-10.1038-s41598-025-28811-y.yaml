@@ -1,0 +1,62 @@
+id: doi-10.1038-s41598-025-28811-y
+title: A machine learning-based short-term forecasting method for heavy fog in Anhui Province of China
+authors:
+- Yan Sun
+- Chuanhui Wang
+- Yeqing Yao
+- Fei Wang
+- Jianping Zhou
+- Xiang Wang
+date: '2026-01-13'
+year: 2026
+venue: Scientific Reports
+venue_type: journal
+ids:
+  doi: 10.1038/s41598-025-28811-y
+  openalex: W7123818987
+links:
+  paper: https://doi.org/10.1038/s41598-025-28811-y
+  pdf: https://www.nature.com/articles/s41598-025-28811-y_reference.pdf
+topic: extremes-hazards
+topics:
+- local-forecasting
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+- nwp-analysis
+- stations
+status: pre-operational
+summary: Random forest using ERA5 and station predictors forecasts heavy fog across seven Anhui zones,
+  outperforming ECMWF visibility and SCMOC guidance in 2023 tests.
+abstract: Based on hourly observations from expressway meteorological stations across Anhui Province and
+  the fifth-generation atmospheric reanalysis (ERA5) data from the European Centre for Medium-Range Weather
+  Forecasts (ECMWF) spanning from January 2011 to December 2023, 340 typical cases of regional heavy fog
+  in Anhui Province were identified. The rotated empirical orthogonal function (REOF) method was then
+  employed to objectively divide the province into seven distinct fog zones. Using five categories of
+  forecasting factors (local water vapor, thermodynamics, stability, temporal variations, and upstream-downstream
+  effects), heavy fog forecasting models were developed based on multiple machine learning algorithms,
+  including random forest (RF), logistic regression, K-nearest neighbors, Gaussian Naive Bayes, and decision
+  tree. With daily meteorological observations at 1600 Beijing Standard Time (BST) and corresponding ECMWF
+  forecast data as inputs, the models generated forecasts for fog occurrence from 20 BST on the same day
+  to 08 BST the following day. The results indicate that Anhui Province can be objectively categorized
+  into seven fog zones using the REOF approach. All five machine learning algorithms demonstrated skill
+  in short-term heavy fog forecasting, with the RF algorithm achieving the highest threat score (TS) and
+  accuracy. Water vapor, thermodynamic conditions, and upstream-downstream effects were identified as
+  the most important predictors for the RF model. Consequently, the RF model was selected as the preferred
+  forecasting method and was further evaluated using operational data from 2023. Comparative analysis
+  against visibility forecasts from ECMWF and the National Meteorological Centre's gridded forecast guidance
+  product (SCMOC) showed that the RF-based model achieved the highest TS values and the lowest missing
+  alarm rates across all seven fog zones. Although the false alarm rates of the RF model were lower than
+  those of SCMOC, they were slightly higher than those of ECMWF.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

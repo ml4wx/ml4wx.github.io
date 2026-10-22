@@ -1,0 +1,54 @@
+id: arxiv-2609.35675
+title: Explainable Deep Learning for Probabilistic Nowcasting of Radar Reflectivity in Tornadic Storms
+authors:
+- Nathan Erickson
+- Amy McGovern
+- Aaron Hill
+date: '2026-09-28'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.35675'
+  openalex: W7214720832
+links:
+  paper: https://arxiv.org/abs/2609.35675
+  pdf: https://arxiv.org/pdf/2609.35675
+topic: nowcasting
+topics:
+- extremes-hazards
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- nwp-analysis
+status: research
+summary: U-Net with SHASH outputs gives 30-minute probabilistic radar reflectivity nowcasts after tornadogenesis,
+  with skill comparable to HRRR next-hour forecasts and explainability tools.
+abstract: Tornadoes pose substantial risk to human life and property in the United States, causing more
+  than 50 fatalities and \$100 million of property damage on average annually. When tornadoes are likely,
+  weather radar provides critical information for forecasters by providing information on storm morphology,
+  storm motion, and intensity trends. Additional tools such as satellite and numerical weather prediction
+  model runs can provide useful short-term information for understanding changes in storm characteristics.
+  This work demonstrates a U-Net deep-learning system for nowcasting the evolution of radar reflectivity
+  following tornadogenesis, which can provide value to forecasters by synthesizing large amounts of input
+  data (e.g., radar imagery, near-storm environment data) and generating predictions of radar reflectivity
+  from its inputs. Inputs to the model are radar imagery from the Multi-Radar Multi-Sensor (MRMS) dataset
+  and near-storm environment data from the High-Resolution Rapid Refresh (HRRR) numerical weather prediction
+  model. The U-Net is trained on a dataset of tornadic storms to produce 30 minutes of probabilistic predictions
+  of radar reflectivity following tornadogenesis, with probabilistic predictions obtained by predicting
+  parameters of the SinhArcSinh, or SHASH, distribution. The model produces physically realistic predictions
+  of radar evolution, achieves comparable skill to next-hour forecasts from the HRRR, demonstrates reasonable
+  probabilistic calibration and is accompanied by a variety of explainability methods to improve understanding
+  by end users. Additionally, predictions from the model can be obtained much more quickly than those
+  from a numerical weather prediction model. With further development, this model could be extended to
+  nowcast radar reflectivity evolution in an operational setting.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

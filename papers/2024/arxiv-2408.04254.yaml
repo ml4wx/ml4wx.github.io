@@ -1,0 +1,53 @@
+id: arxiv-2408.04254
+title: Generating Fine-Grained Causality in Climate Time Series Data for Forecasting and Anomaly Detection
+authors:
+- Dongqi Fu
+- Yada Zhu
+- Hanghang Tong
+- Kommy Weldemariam
+- Onkar Bhardwaj
+- Jingrui He
+date: '2024-08-08'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2408.04254'
+  openalex: W4403966589
+links:
+  paper: https://arxiv.org/abs/2408.04254
+  pdf: https://arxiv.org/pdf/2408.04254
+topic: climate-analysis-attribution
+topics:
+- extremes-hazards
+type: model
+method:
+- rnn
+- gnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+- other
+status: research
+summary: TacSas learns fine-grained Granger-style causal structure in climate sensor time series, improving
+  ERA5 forecasting and extreme weather alert detection.
+abstract: Understanding the causal interaction of time series variables can contribute to time series
+  data analysis for many real-world applications, such as climate forecasting and extreme weather alerts.
+  However, causal relationships are difficult to be fully observed in real-world complex settings, such
+  as spatial-temporal data from deployed sensor networks. Therefore, to capture fine-grained causal relations
+  among spatial-temporal variables for further a more accurate and reliable time series analysis, we first
+  design a conceptual fine-grained causal model named TBN Granger Causality, which adds time-respecting
+  Bayesian Networks to the previous time-lagged Neural Granger Causality to offset the instantaneous effects.
+  Second, we propose an end-to-end deep generative model called TacSas, which discovers TBN Granger Causality
+  in a generative manner to help forecast time series data and detect possible anomalies during the forecast.
+  For evaluations, besides the causality discovery benchmark Lorenz-96, we also test TacSas on climate
+  benchmark ERA5 for climate forecasting and the extreme weather benchmark of NOAA for extreme weather
+  alerts.
+significance: 2
+cited_by: 3
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

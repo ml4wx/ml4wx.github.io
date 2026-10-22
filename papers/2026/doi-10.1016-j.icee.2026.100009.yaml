@@ -1,0 +1,54 @@
+id: doi-10.1016-j.icee.2026.100009
+title: 'MMWSTM-ADRAN+: Site-specific one-day-ahead maximum temperature forecasting in baghdad with classical,
+  neural, and extreme-tail benchmarks'
+authors:
+- Shaheen Mohammed Saleh Ahmed
+- Hakan Güneyli
+date: '2026-06-27'
+year: 2026
+venue: Intelligent Climate and Eco-Environment
+venue_type: journal
+ids:
+  doi: 10.1016/j.icee.2026.100009
+  openalex: W7166338140
+links:
+  paper: https://doi.org/10.1016/j.icee.2026.100009
+topic: post-processing
+topics:
+- local-forecasting
+type: model
+method:
+- other
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Site-specific post-processing of blended NWP for Baghdad daily maximum temperature reaches RMSE
+  1.706 °C, though multiple linear regression scores better overall.
+abstract: Accurate one-day-ahead prediction of daily maximum temperature is important for local heat-risk
+  management, energy planning, and public-health preparedness. This revised manuscript explicitly frames
+  MMWSTM-ADRAN+ as a site-specific statistical post-processing and autoregressive forecasting framework
+  for a blended numerical weather prediction (NWP)-derived daily product for Baghdad, Iraq (2019–2024),
+  rather than as a general climate-scale forecasting system. At prediction time, the model uses a 30-day
+  historical window of variables available up to day t, including lagged daily maximum temperature and
+  causal derived features; it does not use future observations or raw NWP ensemble forecasts for day t
+  + 1. In response to the reviewers, the evaluation now includes persistence, seasonal climatology, AR(1)+seasonal
+  linear regression, and multiple linear regression baselines, together with the neural baselines Temporal
+  Transformer, TCN, and N-BEATS. On the held-out test window (2023–10–26–2024–12–31), MMWSTM-ADRAN+ achieved
+  RMSE = 1.706 °C, MAE = 1.312 °C, R² = 0.973 and RMSE skill = 23.8% relative to persistence. The multiple
+  linear regression baseline achieved the lowest overall RMSE (1.384 °C), showing that much of the predictability
+  arises from lagged thermal persistence and engineered predictors. MMWSTM-ADRAN+ nevertheless achieved
+  the lowest hot-tail RMSE among the reported models (1.172 °C). The manuscript therefore presents the
+  model as a competitive extreme-tail diagnostic architecture, not as a universally superior climate-forecasting
+  system. Claims are restricted to a single site, one variable, one-day lead time, and a blended NWP-derived
+  reference product; independent station-observation validation remains a necessary next step.
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

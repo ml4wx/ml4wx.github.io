@@ -1,0 +1,56 @@
+id: doi-10.1088-1361-6420-adf3dd
+title: A data-driven approach for fast atmospheric radiative transfer inversion
+authors:
+- Cristina Sgattoni
+- Luca Sgheri
+- Matthias Chung
+date: '2025-07-24'
+year: 2025
+venue: Inverse Problems
+venue_type: journal
+ids:
+  doi: 10.1088/1361-6420/adf3dd
+  openalex: W4412625188
+links:
+  paper: https://doi.org/10.1088/1361-6420/adf3dd
+topic: observations-remote-sensing
+topics:
+- data-assimilation
+type: model
+method:
+- other
+spatial:
+- global
+data:
+- satellite
+status: research
+summary: A neural network approximates the inverse retrieval for the FORUM far-infrared satellite mission,
+  using climatological priors and learned regularization parameters.
+abstract: Abstract Far-infrared Outgoing Radiation Understanding and Monitoring (FORUM) was selected in
+  2019 as the ninth Earth Explorer mission by the European Space Agency. Its primary objective is to collect
+  interferometric measurements in the far-infrared (FIR) spectral range, which accounts for 50% of Earth’s
+  outgoing longwave radiation emitted into space, and will be observed from space for the first time.
+  Accurate measurements of the FIR at the top of the atmosphere are crucial for improving climate models.
+  Current instruments are insufficient, necessitating the development of advanced computational techniques.
+  FORUM will provide unprecedented insights into key atmospheric parameters, such as surface emissivity,
+  water vapor, and ice cloud properties, through the use of a Fourier transform spectrometer. To ensure
+  the quality of the mission’s data, an end-to-end simulator was developed to simulate the measurement
+  process and evaluate the effects of instrument characteristics and environmental factors. The core challenge
+  of the mission is solving the retrieval problem, which involves estimating atmospheric properties from
+  the radiance spectra observed by the satellite. This problem is ill-posed and regularization techniques
+  are necessary to stabilize the solution. In this work, we present a data-driven approach to approximate
+  the inverse mapping in the retrieval problem, aiming to achieve a solution that is both computationally
+  efficient and accurate. In the first phase, we generate an initial approximation of the inverse mapping
+  using only simulated FORUM data. In the second phase, we improve this approximation by introducing climatological
+  data as a priori information and using a neural network to estimate the optimal regularization parameters
+  during the retrieval process. While our approach does not match the precision of full-physics retrieval
+  methods, its key advantage is the ability to deliver results almost instantaneously, making it highly
+  suitable for real-time applications. Furthermore, the proposed method can provide more accurate a priori
+  estimates for full-physics methods, thereby improving the overall accuracy of the retrieved atmospheric
+  profiles.
+significance: 3
+cited_by: 4
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

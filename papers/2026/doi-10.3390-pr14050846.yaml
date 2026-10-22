@@ -1,0 +1,63 @@
+id: doi-10.3390-pr14050846
+title: A Short-Term Photovoltaic Power Prediction Based on Multidimensional Feature Fusion of Satellite
+  Cloud Images
+authors:
+- Lingling Xie
+- Chunhui Li
+- Yanjing Luo
+- Long Li
+date: '2026-03-05'
+year: 2026
+venue: Processes
+venue_type: journal
+ids:
+  doi: 10.3390/pr14050846
+  openalex: W7134053604
+links:
+  paper: https://doi.org/10.3390/pr14050846
+  pdf: https://www.mdpi.com/2227-9717/14/5/846/pdf?version=1772725969
+topic: applications-impacts
+topics:
+- nowcasting
+type: model
+method:
+- cnn
+- rnn
+- transformer
+timescale:
+- short
+spatial:
+- local
+data:
+- satellite
+- nwp-analysis
+- stations
+status: research
+summary: Fusing multi-wavelength satellite cloud images with a CNN-LSTM and attention model, plus NWP
+  features, improves short-term PV power forecasts at a Hebei plant.
+abstract: Clouds are a key factor affecting solar radiation, and their dynamic variations directly cause
+  uncertainty and fluctuations in photovoltaic (PV) power output. To improve PV power prediction accuracy,
+  this paper proposes an enhanced short-term photovoltaic power forecasting approach based on a hybrid
+  neural network architecture using features extracted from satellite cloud images. First, a dual-layer
+  image fusion method is developed for satellite cloud images from different wavelengths and spectral
+  bands, effectively improving fusion accuracy. Second, texture descriptors derived from the Gray-Level
+  Co-occurrence Matrix and multiscale information obtained via the wavelet transform are employed for
+  feature extraction from fused images. Combined with a residual network (ResNet), an optical flow method,
+  as well as an LSTM-based temporal modeling module, multidimensional features of the predicted cloud
+  images are obtained. An improved Bayesian optimization (IBO) algorithm is then employed to derive the
+  optimal fused features, thereby improving the matching between cloud image features and PV power. Third,
+  an enhanced hybrid architecture integrating a convolutional neural network and long short-term memory
+  units with a multi-head self-attention mechanism is developed. Numerical weather prediction (NWP) meteorological
+  features are incorporated, and a tilted irradiance model is introduced to calculate the solar irradiance
+  received by PV modules for use in near-term photovoltaic power forecasting. Finally, measurements collected
+  at a photovoltaic power plant located in Hebei Province are used to validate the proposed method. The
+  results show that, relative to the SA-CNN-MSA-LSTM and BO-CNN-LSTM models, the developed approach lowers
+  the RMSE to an extent of 22.56% and 4.32%, while decreasing the MAE by 24.84% and 5.91%, respectively.
+  Overall, the proposed model accurately captures the characteristics of predicted cloud images and effectively
+  improves PV power prediction accuracy.
+significance: 2
+cited_by: 1
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

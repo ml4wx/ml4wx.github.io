@@ -1,0 +1,59 @@
+id: doi-10.3390-en18112809
+title: A Day-Ahead PV Power Forecasting Method Based on Irradiance Correction and Weather Mode Reliability
+  Decision
+authors:
+- Haonan Dai
+- Yumo Zhang
+- Fei Wang
+date: '2025-05-28'
+year: 2025
+venue: Energies
+venue_type: journal
+ids:
+  doi: 10.3390/en18112809
+  openalex: W4410825172
+links:
+  paper: https://doi.org/10.3390/en18112809
+  pdf: https://www.mdpi.com/1996-1073/18/11/2809/pdf?version=1748431077
+topic: applications-impacts
+topics:
+- post-processing
+type: model
+method:
+- transformer
+- cnn
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+status: research
+summary: Day-ahead PV method combines GCN irradiance correction, CNN weather-mode reliability and transformer
+  forecasts for unreliable and credible modes.
+abstract: 'Accurate day-ahead photovoltaics (PV) power forecasting results are significant for power grid
+  operation. According to different weather modes, the existing research has established a classification
+  forecast framework to improve the accuracy of day-ahead forecasts. However, the existing framework still
+  has the following two problems: (1) weather mode prediction and power forecasting are highly dependent
+  on the accuracy of numerical weather prediction (NWP), but the existing classification forecasting framework
+  ignores the impact from NWP errors; (2) the validity of the classification forecasting framework comes
+  from the accurate prediction of weather modes, but the existing framework lacks the analysis and decision-making
+  mechanism of the reliability of weather mode prediction results, which will lead to a significant decline
+  in the overall accuracy when weather modes are wrongly predicted. Therefore, this paper proposes a day-ahead
+  PV power forecasting method based on irradiance correction and weather mode reliability decision. Firstly,
+  based on the measured irradiance, K-means clustering method is used to obtain the daily actual weather
+  mode labels; secondly, considering the coupling relationship of meteorological elements, the graph convolutional
+  network (GCN) model is used to correct the predicted irradiance by using multiple meteorological elements
+  of NWP data; thirdly, the weather mode label is converted into one-heat code, and a weather mode reliability
+  prediction model based on a convolutional neural network (CNN) is constructed, and then the prediction
+  strategy of the day to be forecasted is decided; finally, based on the weather mode reliability prediction
+  results, transformer model are established for unreliable weather and credible weather respectively.
+  The simulation results of the ablation experiments show that classification prediction is an effective
+  strategy to improve the forecasting accuracy of day-ahead PV output, which can be further improved by
+  adding irradiance correction and weather mode reliability prediction modules.'
+significance: 2
+cited_by: 8
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

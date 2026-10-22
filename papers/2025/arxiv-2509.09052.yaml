@@ -1,0 +1,50 @@
+id: arxiv-2509.09052
+title: 'MoWE : A Mixture of Weather Experts'
+authors:
+- Dibyajyoti Chakraborty
+- Romit Maulik
+- Peter Harrington
+- Dallas Foster
+- Mohammad Amin Nabian
+- Sanjay Choudhry
+date: '2025-09-10'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2509.09052'
+links:
+  paper: https://arxiv.org/abs/2509.09052
+  pdf: https://arxiv.org/pdf/2509.09052
+topic: post-processing
+topics:
+- global-medium-range
+type: model
+method:
+- transformer
+timescale:
+- short
+spatial:
+- global
+data:
+- nwp-analysis
+- era5
+status: research
+summary: MoWE uses a ViT gating network to combine existing AI weather models per grid point, achieving
+  up to 10% lower RMSE than the best single model at 2 days.
+abstract: Data-driven weather models have recently achieved state-of-the-art performance, yet progress
+  has plateaued in recent years. This paper introduces a Mixture of Experts (MoWE) approach as a novel
+  paradigm to overcome these limitations, not by creating a new forecaster, but by optimally combining
+  the outputs of existing models. The MoWE model is trained with significantly lower computational resources
+  than the individual experts. Our model employs a Vision Transformer-based gating network that dynamically
+  learns to weight the contributions of multiple "expert" models at each grid point, conditioned on forecast
+  lead time. This approach creates a synthesized deterministic forecast that is more accurate than any
+  individual component in terms of Root Mean Squared Error (RMSE). Our results demonstrate the effectiveness
+  of this method, achieving up to a 10% lower RMSE than the best-performing AI weather model on a 2-day
+  forecast horizon, significantly outperforming individual experts as well as a simple average across
+  experts. This work presents a computationally efficient and scalable strategy to push the state of the
+  art in data-driven weather prediction by making the most out of leading high-quality forecast models.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

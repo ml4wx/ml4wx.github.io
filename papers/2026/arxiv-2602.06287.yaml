@@ -1,0 +1,56 @@
+id: arxiv-2602.06287
+title: Toward generative machine learning for boosting ensembles of climate simulations
+authors:
+- Parsa Gooya
+- Reinel Sospedra-Alfonso
+- Johannes Exenberger
+date: '2026-02-06'
+year: 2026
+venue: Journal of Geophysical Research Machine Learning and Computation
+venue_type: journal
+ids:
+  arxiv: '2602.06287'
+  doi: 10.1029/2026jh001281
+  openalex: W7128408328
+links:
+  paper: https://doi.org/10.1029/2026jh001281
+  pdf: https://arxiv.org/pdf/2602.06287
+orgs:
+- eccc
+topic: climate-emulation
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- gan-vae
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: A conditional VAE generates large CanESM5 climate ensembles that reproduce extremes and teleconnections;
+  added output noise corrects underdispersion and spectral bias.
+abstract: Accurately quantifying uncertainty in predictions and projections arising from irreducible internal
+  climate variability is critical for informed decision making. Such uncertainty is typically assessed
+  using ensembles produced with physics based climate models. However, computational constraints impose
+  a trade off between generating the large ensembles required for robust uncertainty estimation and increasing
+  model resolution to better capture fine scale dynamics. Generative machine learning offers a promising
+  pathway to alleviate these constraints. We develop a conditional Variational Autoencoder (cVAE) trained
+  on a limited sample of climate simulations to generate arbitrary large ensembles. The approach is applied
+  to output from monthly CMIP6 historical and future scenario experiments produced with the Canadian Centre
+  for Climate Modelling and Analysis' (CCCma's) Earth system model CanESM5. We show that the cVAE model
+  learns the underlying distribution of the data and generates physically consistent samples that reproduce
+  realistic low and high moment statistics, including extremes. Compared with more sophisticated generative
+  architectures, cVAEs offer a mathematically transparent, interpretable, and computationally efficient
+  framework. Their simplicity lead to some limitations, such as overly smooth outputs, spectral bias,
+  and underdispersion, that we discuss along with strategies to mitigate them. Specifically, we show that
+  incorporating output noise improves the representation of climate relevant multiscale variability, and
+  we propose a simple method to achieve this. Finally, we show that cVAE-enhanced ensembles capture realistic
+  global teleconnection patterns, even under climate conditions absent from the training data.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

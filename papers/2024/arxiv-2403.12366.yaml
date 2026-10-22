@@ -1,0 +1,45 @@
+id: arxiv-2403.12366
+title: 'U-Net Kalman Filter (UNetKF): An Example of Machine Learning-assisted Ensemble Data Assimilation'
+authors:
+- Feiyu Lu
+date: '2024-03-19'
+year: 2024
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  arxiv: '2403.12366'
+  doi: 10.1029/2023ms003979
+  openalex: W4393027204
+links:
+  paper: https://doi.org/10.1029/2023ms003979
+  pdf: https://arxiv.org/pdf/2403.12366
+orgs:
+- ncar
+- noaa
+- princeton-university
+topic: data-assimilation
+type: model
+method:
+- cnn
+data:
+- other
+status: research
+summary: A U-Net predicts flow-dependent localized covariances for the Ensemble Kalman Filter, matching
+  or exceeding 3DVar and EnKF in a quasi-geostrophic model.
+abstract: Machine learning techniques have seen a tremendous rise in popularity in weather and climate
+  sciences. Data assimilation (DA), which combines observations and numerical models, has great potential
+  to incorporate machine learning and artificial intelligence (ML/AI) techniques. In this paper, we use
+  U-Net, a type of convolutional neutral network (CNN), to predict the localized ensemble covariances
+  for the Ensemble Kalman Filter (EnKF) algorithm. Using a 2-layer quasi-geostrophic model, U-Nets are
+  trained using data from EnKF DA experiments. The trained U-Nets are then used to predict the flow-dependent
+  localized error covariance matrices in U-Net Kalman Filter (UNetKF) experiments, which are compared
+  to traditional 3-dimensional variational (3DVar), ensemble 3DVar (En3DVar) and EnKF methods. The performance
+  of UNetKF can match or exceed that of 3DVar, En3DVar or EnKF. We also demonstrate that trained U-Nets
+  can be transferred to a higher-resolution model for UNetKF implementation, which again performs competitively
+  to 3DVar and EnKF, particularly for small ensemble sizes.
+significance: 4
+cited_by: 3
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,46 @@
+id: arxiv-2607.10008
+title: Manifold Constrained Conformal Prediction for Spatial Events
+authors:
+- Collin Nill
+- Trevor Harris
+- Jason Adams
+date: '2026-07-10'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2607.10008'
+  openalex: W7168274243
+links:
+  paper: https://arxiv.org/abs/2607.10008
+  pdf: https://arxiv.org/pdf/2607.10008
+topic: xai-uq-physics
+topics:
+- extremes-hazards
+type: model
+method:
+- diffusion
+spatial:
+- global
+data:
+- other
+status: research
+summary: Manifold-constrained conformal prediction with flow-based sampling yields near-nominal coverage
+  for tropical cyclone genesis and earthquake locations, beating HDR and generative baselines.
+abstract: We introduce a new conformal prediction method that constructs calibrated prediction sets over
+  collections of spatial events, such as tropical cyclone genesis and earthquake locations. Forecasting
+  natural hazards has become increasingly important, due to their significant economic impact, and quantifying
+  the uncertainty of predictions is critical for accurate risk assessment. Our approach works by representing
+  spatial point clouds as empirical measures so that we can score them using (sliced) Wasserstein distance,
+  then constraining the resulting distribution-valued prediction set to be supported only near the training
+  data manifold. We derive a coverage lower bound for the intersected sets and show that, in practice,
+  this gap can be made small through a simple data-adaptive selection criterion. Because the resulting
+  set is not analytically tractable, we introduce a modified flow-based sampling procedure, which allows
+  us to represent and apply these prediction sets in practice as ensembles. Numerical experiments on synthetic
+  data, tropical cyclone genesis, and earthquake occurrences show that our method achieves near-nominal
+  coverage, with significantly lower energy distance and manifold distance than highest predictive density
+  region (HDR) baselines along with generative model baselines.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,59 @@
+id: doi-10.5194-amt-18-5393-2025
+title: Classifying thermodynamic cloud phase using machine learning models
+authors:
+- Lexie Goldberger
+- Maxwell Levin
+- Carlandra Harris
+- Andrew Geiss
+- M. Shupe
+- Da-Mao Zhang
+date: '2025-10-16'
+year: 2025
+venue: Atmospheric Measurement Techniques
+venue_type: journal
+ids:
+  doi: 10.5194/amt-18-5393-2025
+  openalex: W4415238602
+links:
+  paper: https://doi.org/10.5194/amt-18-5393-2025
+  pdf: https://amt.copernicus.org/articles/18/5393/2025/amt-18-5393-2025.pdf
+orgs:
+- noaa
+topic: observations-remote-sensing
+type: model
+method:
+- classical-ml
+- cnn
+spatial:
+- local
+data:
+- radar
+- other
+status: research
+summary: Trains random forest, MLP and U-Net CNN models on ARM remote sensing to classify thermodynamic
+  cloud phase, with the CNN performing best and transferring to Norway.
+abstract: 'Abstract. Vertically resolved thermodynamic cloud phase classifications are essential for studies
+  of atmospheric cloud and precipitation processes. The Department of Energy (DOE) Atmospheric Radiation
+  Measurement (ARM) THERMOCLDPHASE Value-Added Product (VAP) uses a multi-sensor approach to classify
+  thermodynamic cloud phase by combining lidar backscatter and depolarization, radar reflectivity, Doppler
+  velocity, spectral width, microwave radiometer-derived liquid water path, and radiosonde temperature
+  measurements. The measured voxels are classified as ice, snow, mixed-phase, liquid (cloud water), drizzle,
+  rain, and liq_driz (liquid+drizzle). We use this product as the ground truth to train three machine
+  learning (ML) models to predict the thermodynamic cloud phase from multi-sensor remote sensing measurements
+  taken at the ARM North Slope of Alaska (NSA) observatory: a random forest (RF), a multilayer perceptron
+  (MLP), and a convolutional neural network (CNN) with a U-Net architecture. Evaluations against the outputs
+  of the THERMOCLDPHASE VAP with one year of data show that the CNN outperforms the other two models,
+  achieving the highest test accuracy, F1-score, and mean Intersection over Union (IOU). Analysis of ML
+  confidence scores shows ice, rain, and snow have higher confidence scores, followed by liquid, while
+  mixed, drizzle, and liq_driz have lower scores. Feature importance analysis reveals that the mean Doppler
+  velocity and vertically resolved temperature are the most influential datastreams for ML thermodynamic
+  cloud phase predictions. The ML models’ generalization capacity is further evaluated by applying them
+  at another Arctic ARM site in Norway using data taken during the ARM Cold-Air Outbreaks in the Marine
+  Boundary Layer Experiment (COMBLE) field campaign. Finally, we evaluate the ML models’ response to simulated
+  instrument outages and signal degradation.'
+significance: 4
+cited_by: 2
+score: 51
+highlight: false
+added: '2026-10-22'
+source: snowball

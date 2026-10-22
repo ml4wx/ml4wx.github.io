@@ -1,0 +1,55 @@
+id: arxiv-2510.22562
+title: 'LO-SDA: Latent Optimization for Score-based Atmospheric Data Assimilation'
+authors:
+- Jing-An Sun
+- Hang Fan
+- Junchao Gong
+- Ben Fei
+- Kun Chen
+- Fenghua Ling
+- Wenlong Zhang
+- Wanghan Xu
+- Li Yan
+- Pierre Gentine
+- Lei Bai
+date: '2025-10-26'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2510.22562'
+links:
+  paper: https://arxiv.org/abs/2510.22562
+  pdf: https://arxiv.org/pdf/2510.22562
+topic: data-assimilation
+type: model
+method:
+- diffusion
+- gan-vae
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Latent-space diffusion data assimilation with observation-consistent latent optimization beats
+  traditional methods in idealized global atmosphere experiments, a first for diffusion-based DA.
+abstract: Data assimilation (DA) plays a pivotal role in numerical weather prediction by systematically
+  integrating sparse observations with model forecasts to estimate optimal atmospheric initial condition
+  for forthcoming forecasts. Traditional Bayesian DA methods adopt a Gaussian background prior as a practical
+  compromise for the curse of dimensionality in atmospheric systems, that simplifies the nonlinear nature
+  of atmospheric dynamics and can result in biased estimates. To address this limitation, we propose a
+  novel generative DA method, LO-SDA. First, a variational autoencoder is trained to learn compact latent
+  representations that disentangle complex atmospheric correlations. Within this latent space, a background-conditioned
+  diffusion model is employed to directly learn the conditional distribution from data, thereby generalizing
+  and removing assumptions in the Gaussian prior in traditional DA methods. Most importantly, we introduce
+  latent optimization during the reverse process of the diffusion model to ensure strict consistency between
+  the generated states and sparse observations. Idealized experiments demonstrate that LO-SDA not only
+  outperforms score-based DA methods based on diffusion posterior sampling but also surpasses traditional
+  DA approaches. To our knowledge, this is the first time that a diffusion-based DA method demonstrates
+  the potential to outperform traditional approaches on high-dimensional global atmospheric systems. These
+  findings suggest that long-standing reliance on Gaussian priors-a foundational assumption in operational
+  atmospheric DA-may no longer be necessary in light of advances in generative modeling.
+significance: 6
+score: 24
+highlight: false
+added: '2026-10-22'
+source: backfill

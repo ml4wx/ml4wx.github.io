@@ -1,0 +1,64 @@
+id: doi-10.1016-j.geosus.2026.100513
+title: A physics-informed geospatial machine-learning downscaling framework for improving extreme rainfall
+authors:
+- Kunlong He
+- Dongmei Zhao
+- Xiaohong Chen
+- Qingsong Xu
+- Wei Zhao
+- Qiuhua Liang
+- Yanhui Zheng
+- Quanxi Shao
+date: '2026-06-13'
+year: 2026
+venue: Geography and sustainability
+venue_type: journal
+ids:
+  doi: 10.1016/j.geosus.2026.100513
+  openalex: W7164501218
+links:
+  paper: https://doi.org/10.1016/j.geosus.2026.100513
+orgs:
+- tum
+topic: downscaling
+topics:
+- extremes-hazards
+type: model
+method:
+- classical-ml
+- physics-constrained
+spatial:
+- regional
+data:
+- satellite
+- era5
+- stations
+status: research
+summary: Physics-informed machine-learning downscaling produces 1 km daily China rainfall from GPM IMERG,
+  cutting heavy-rain RMSE by 36% and improving extreme-event bias.
+abstract: 'Reliable high-resolution precipitation is essential for monitoring hydrologic extremes and
+  informing climate-risk decisions, yet satellite precipitation products often show biases and remain
+  too coarse (5–25 km) to resolve localized processes. Conventional downscaling also tends to overlook
+  dynamic moisture–cloud mechanisms that drive precipitation variability. We develop a Physics-Informed
+  Geospatial Machine-Learning Downscaling rainfall model (PIGMLD) to produce 1-km daily precipitation
+  over China (2000–2020) by combining the 10-km Global Precipitation Measurement (GPM) Integrated Multi-satellitE
+  Retrievals for GPM (IMERG) (GPM IMERG) product with rare ground observations, ERA5-Land precipitation,
+  and physically traceable covariates describing moisture, clouds, and land–atmosphere coupling. Evaluation
+  against independent gauges across China and nine major river basins shows broad skill gains: 84.1 %
+  of stations achieve KGE > 0.60, with improved event detection and reduced systematic bias. Gains are
+  constrained by complex topography and sparse in-situ stations in the Northwest and Southwest basins
+  (median RMSE = 1.18 mm; KGE = 0.45). For heavy and torrential rainfall, RMSE decreases by 36.1 % and
+  28.3 %, respectively. Relative threshold assessments indicate robust corrections under dry and wet extremes:
+  for events below the 10th percentile, BIAS is reduced by ∼66.7 % at >90 % of stations; for events ≥90th
+  percentile, underestimation is substantially alleviated, with BIAS typically reduced by ∼50.1 %. XGBoost–SHAP
+  attribution reveals scale-dependent controls: 10-km estimates are dominated by cloud and column moisture,
+  whereas 1-km estimates are more sensitive to near-surface humidity and land-surface states, and heavy
+  rainfall reflects coupled moisture–dynamics–thermodynamics interactions. Overall, PIGMLD provides a
+  mechanism-aware pathway for producing and interpreting 1-km precipitation fields and clarifies when
+  finer-scale information improves extreme-event characterization.'
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

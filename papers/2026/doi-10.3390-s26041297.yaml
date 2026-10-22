@@ -1,0 +1,56 @@
+id: doi-10.3390-s26041297
+title: AI-Driven Weather Data Superresolution via Data Fusion for Precision Agriculture
+authors:
+- Jiri Pihrt
+- Petr Šimánek
+- Miroslav Čepek
+- Karel Charvát
+- Alexander Kovalenko
+- Šárka Horáková
+- Michal Kepka
+date: '2026-02-17'
+year: 2026
+venue: Sensors
+venue_type: journal
+ids:
+  doi: 10.3390/s26041297
+  openalex: W7129568826
+links:
+  paper: https://doi.org/10.3390/s26041297
+  pdf: https://www.mdpi.com/1424-8220/26/4/1297/pdf
+topic: downscaling
+topics:
+- applications-impacts
+type: model
+method:
+- transformer
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: research
+summary: TabPFN-KNN fuses GFS and station data to predict 24 h 2 m temperature, reducing MAE 24% to 1.26
+  °C at unseen stations for precision agriculture.
+abstract: Accurate field-scale meteorological information is required for precision agriculture, but operational
+  numerical weather prediction products remain spatially coarse and cannot resolve local microclimate
+  variability. This study proposes a data fusion superresolution workflow that combines global GFS predictors
+  (0.25°), regional station observations from Southern Moravia (Czech Republic), and static physiographic
+  descriptors (elevation and terrain gradients) to predict the 2 m air temperature 24 h ahead and to generate
+  spatially continuous high-resolution temperature fields. Several model families (LightGBM, TabPFN, Transformer,
+  and Bayesian neural fields) are evaluated under spatiotemporal splits designed to test generalization
+  to unseen time periods and unseen stations; spatial mapping is implemented via a KNN interpolation layer
+  in the physiographic feature space. All learned configurations reduce the mean absolute error relative
+  to raw GFS across splits. In the most operationally relevant regime (unseen stations and unseen future
+  period), TabPFN-KNN achieves the lowest MAE (1.26 °C), corresponding to an ≈24% reduction versus GFS
+  (1.66 °C). The results support the feasibility of an operational, sensor-infrastructure-compatible pipeline
+  for high-resolution temperature superresolution in agricultural landscapes.
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,53 @@
+id: arxiv-2610.12662
+title: Evaluating LLMs for Translating Legacy Fortran Atmospheric Physics to GPU-Accelerated JAX
+authors:
+- Iris Linck
+- John Dennis
+- John Schreck
+- Karen Stengel
+- David John Gagne
+date: '2026-10-08'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.12662'
+  openalex: W7221527707
+links:
+  paper: https://arxiv.org/abs/2610.12662
+  pdf: https://arxiv.org/pdf/2610.12662
+orgs:
+- ncar
+topic: infra-software
+topics:
+- llms-agents
+- hybrid-parameterization
+type: model
+method:
+- llm
+data:
+- other
+status: research
+summary: Agentic LLM framework that translates Fortran atmospheric physics into GPU-accelerated JAX, with
+  one generated version reaching 357x speedup over serial Fortran.
+abstract: 'Legacy Fortran physics packages in atmospheric models such as CESM, WRF, and E3SM pose a barrier
+  to GPU modernization, while manual porting requires accelerator-programming expertise. We present LAFT
+  (LLM-Assisted Fortran Translation), an agentic framework for converting Fortran atmospheric physics
+  parameterizations into GPU-accelerated JAX while preserving numerical agreement with the Fortran reference.
+  LAFT coordinates source-code analysis, translation, repair, runtime validation, and performance profiling.
+  It combines a deterministic front end for metadata extraction and bridge generation, structured translation
+  prompts, numerical validation, and profiling-guided feedback to identify inefficient execution patterns.
+  The bridge handles array-layout conversion separately from scientific computation. We evaluate LAFT
+  using the Kessler warm-rain microphysics scheme and four LLMs: Claude, GPT, Gemini, and Qwen. All four
+  validated translations reproduce the Fortran reference outputs to near floating-point precision for
+  the evaluated case, but their GPU performance differs substantially with execution design. The Gemini-generated
+  implementation achieves up to a 357-fold speedup over serial Fortran in cached execution at 1,000,000
+  atmospheric columns, excluding compilation and host-device transfers. The results demonstrate that numerical
+  agreement alone does not ensure efficient GPU execution and motivate combining numerical validation
+  with hardware-aware performance analysis. LAFT provides a practical workflow for modernizing legacy
+  atmospheric physics code through LLM-assisted translation, deterministic interface generation, automated
+  validation and repair, and reproducible profiling.'
+significance: 5
+score: 55
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,46 @@
+id: arxiv-2405.13711
+title: 'VAE-Var: Variational-Autoencoder-Enhanced Variational Assimilation'
+authors:
+- Yi Xiao
+- Qilong Jia
+- Wei Xue
+- Lei Bai
+date: '2024-05-22'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2405.13711'
+  openalex: W4398795943
+links:
+  paper: https://arxiv.org/abs/2405.13711
+  pdf: https://arxiv.org/pdf/2405.13711
+orgs:
+- shanghai-ai-lab
+- tsinghua-university
+topic: data-assimilation
+type: model
+method:
+- gan-vae
+data:
+- other
+status: research
+summary: VAE-Var replaces the Gaussian background error in variational assimilation with a learned non-Gaussian
+  VAE model, outperforming classical variational methods on chaotic low-dimensional systems.
+abstract: Data assimilation refers to a set of algorithms designed to compute the optimal estimate of
+  a system's state by refining the prior prediction (known as background states) using observed data.
+  Variational assimilation methods rely on the maximum likelihood approach to formulate a variational
+  cost, with the optimal state estimate derived by minimizing this cost. Although traditional variational
+  methods have achieved great success and have been widely used in many numerical weather prediction centers,
+  they generally assume Gaussian errors in the background states, which limits the accuracy of these algorithms
+  due to the inherent inaccuracies of this assumption. In this paper, we introduce VAE-Var, a novel variational
+  algorithm that leverages a variational autoencoder (VAE) to model a non-Gaussian estimate of the background
+  error distribution. We theoretically derive the variational cost under the VAE estimation and present
+  the general formulation of VAE-Var; we implement VAE-Var on low-dimensional chaotic systems and demonstrate
+  through experimental results that VAE-Var consistently outperforms traditional variational assimilation
+  methods in terms of accuracy across various observational settings.
+significance: 4
+cited_by: 1
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

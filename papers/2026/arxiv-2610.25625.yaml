@@ -1,0 +1,63 @@
+id: arxiv-2610.25625
+title: 'Zephyrus-R1: Agentic Reinforcement Learning for Weather Reporting'
+authors:
+- Feng-Fei Yu
+- Marshall Fisher
+- Isadora White
+- Sumanth Varambally
+- Yasaman Jafari
+- Shivam Yadav
+- S. M. Bartlett
+- S. Roj
+- Benjamin Moore
+- Michael D. Warner
+- Lu-Yu Han
+- Zhi-Rui Xia
+- Duncan Watson-Parris
+- Taylor Berg-Kirkpatrick
+- Yian Ma
+- Rose Yu
+date: '2026-10-19'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.25625'
+  openalex: W7223021826
+links:
+  paper: https://arxiv.org/abs/2610.25625
+topic: llms-agents
+type: model
+method:
+- llm
+- reinforcement-learning
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Zephyrus-R1 applies agentic reinforcement learning with a meteorological rubric reward to train
+  vision-language models that write weather forecast reports, improving judged scores by 26%.
+abstract: 'Reinforcement learning (RL) has emerged as a key method for training AI models in scientific
+  applications, but RL remains difficult when outputs cannot easily be verified against a known ground-truth
+  answer. Natural-language weather forecast reports are one such domain: they translate atmospheric data
+  into assessments of weather evolution, hazards, and uncertainty for both the general public and key
+  decision-makers. Unlike numerical weather-analysis questions, they admit many valid outputs, which limits
+  deterministic verification. To address this, we develop Zephyrus-R1, a practical framework for RL on
+  scientific weather forecast reporting. We focus on three key components of the agentic RL pipeline:
+  reward design, curriculum learning, and an analysis of human-expert alignment. To encourage both report
+  legibility and factual accuracy, we design a reward function that combines a meteorological rubric with
+  bidirectional claim entailment, both evaluated against National Weather Service reference reports. Our
+  framework optimizes this reward in a simulated tool-calling environment, enabling vision-language agents
+  to gather and analyze forecast evidence across regions and lead times before producing a report. We
+  use annotations from three meteorologists to audit the claim labels produced by our LLM judges. Finally,
+  a curriculum helps small models first develop tool use and scientific reasoning through RL on verifiable
+  weather-analysis questions, then optimize the open-ended report reward. After training Qwen3.5-4B with
+  Zephyrus-R1, we improve the mean across six judge-metric scores by 26% over the base model and achieve
+  results competitive with frontier open-weight models. For Qwen3.8-27B, we improve the same mean by 13%
+  over the base model, by 6.7% over Kimi-K3, and by 2.7% over GPT-5.6-Luna.'
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: snowball

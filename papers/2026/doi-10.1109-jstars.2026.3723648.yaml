@@ -1,0 +1,58 @@
+id: doi-10.1109-jstars.2026.3723648
+title: An Attention Entropy-Driven Fusion Model for Sea Surface Wind Speed Retrieval
+authors:
+- Rui Sun
+- Enhong Liu
+- Lei Jiang
+- Yuanyuan Wang
+- Hanzhi Chen
+- Rui Shang
+date: '2026-01-01'
+year: 2026
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2026.3723648
+  openalex: W7202298363
+links:
+  paper: https://doi.org/10.1109/jstars.2026.3723648
+topic: observations-remote-sensing
+topics:
+- post-processing
+type: model
+method:
+- transformer
+- classical-ml
+spatial:
+- global
+data:
+- satellite
+- era5
+status: research
+summary: Attention-entropy fusion of GNSS-R observations with Pangu-Weather lowers sea surface wind RMSE
+  to 1.27 m/s, a 17% gain over the baseline.
+abstract: 'Sea surface wind speed is a critical indicator of ocean–atmosphere interactions and climate
+  change prediction. Global navigation satellite system reflectometry (GNSS-R) has been widely applied
+  for wind speed retrieval, yet its accuracy is constrained by two key challenges: anomalous or contaminated
+  satellite observations, and physical sensitivity saturation of GNSS observables at high wind speeds.
+  Existing quality control strategies mitigate the first issue but reduce sample utilization and model
+  generalization. Artificial intelligence-based meteorological foundation models offer an alternative,
+  but suffer from limited spatiotemporal resolution and systematic underestimation bias at high wind speeds.
+  This article proposes an attention entropy-driven fusion model that fuses cyclone GNSS satellite observations
+  with Pangu-Weather predictions to improve the precision and spatiotemporal resolution of sea surface
+  wind speed retrieval. To address anomalous observations, the proposed model introduces attention entropy
+  features derived from bidirectional cross-attention to assess observation validity at the sample level,
+  enabling discrimination between reliable and contaminated data. To overcome physical sensitivity saturation,
+  two differentiated expert models are constructed: an observation fusion expert that leverages satellite
+  observables to correct prediction errors in low wind speed regimes and a statistical correction expert
+  that compensates for systematic underestimation bias in high wind speed regimes. A meta-strategy router
+  based on entropy features dynamically fuses the two expert outputs at the sample level. Validation against
+  ERA5 reference wind speeds yielded an RMSE of 1.27 m/s, a 17% improvement over the Pangu-Weather baseline,
+  and accuracy improvements of up to 37% over existing physical and machine learning models, demonstrating
+  strong robustness across global domains.'
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

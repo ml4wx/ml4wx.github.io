@@ -1,0 +1,55 @@
+id: arxiv-2509.25268
+title: A Weather Foundation Model for the Power Grid
+authors:
+- Cristian Bodnar
+- Raphaël Rousseau-Rizzi
+- Nikhil Shankar
+- James Merleau
+- Stylianos Flampouris
+- Guillem Candille
+- Slavica Antic
+- François Miralles
+- Jayesh K. Gupta
+date: '2025-09-28'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2509.25268'
+  openalex: W4415338056
+links:
+  paper: https://arxiv.org/abs/2509.25268
+  pdf: https://arxiv.org/pdf/2509.25268
+topic: applications-impacts
+topics:
+- foundation-models
+type: application
+method:
+- transformer
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+- nwp-analysis
+status: pre-operational
+summary: A fine-tuned 1.5B-parameter weather foundation model gives asset-level power-grid forecasts that
+  cut temperature MAE by 15% and reach 0.72 precision for day-ahead rime-ice detection.
+abstract: 'Weather foundation models (WFMs) have recently set new benchmarks in global forecast skill,
+  yet their concrete value for the weather-sensitive infrastructure that powers modern society remains
+  largely unexplored. In this study, we fine-tune Silurian AI''s 1.5B-parameter WFM, Generative Forecasting
+  Transformer (GFT), on a rich archive of Hydro-Québec asset observations--including transmission-line
+  weather stations, wind-farm met-mast streams, and icing sensors--to deliver hyper-local, asset-level
+  forecasts for five grid-critical variables: surface temperature, precipitation, hub-height wind speed,
+  wind-turbine icing risk, and rime-ice accretion on overhead conductors. Across 6-72 h lead times, the
+  tailored model surpasses state-of-the-art NWP benchmarks, trimming temperature mean absolute error (MAE)
+  by 15%, total-precipitation MAE by 35%, and lowering wind speed MAE by 15%. Most importantly, it attains
+  an average precision score of 0.72 for day-ahead rime-ice detection, a capability absent from existing
+  operational systems, which affords several hours of actionable warning for potentially catastrophic
+  outage events. These results show that WFMs, when post-trained with small amounts of high-fidelity,
+  can serve as a practical foundation for next-generation grid-resilience intelligence.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

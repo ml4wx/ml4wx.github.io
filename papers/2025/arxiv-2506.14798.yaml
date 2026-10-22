@@ -1,0 +1,59 @@
+id: arxiv-2506.14798
+title: 'MODS: Multi-source Observations Conditional Diffusion Model for Meteorological State Downscaling'
+authors:
+- Siwei Tu
+- Jingyi Xu
+- Weidong Yang
+- Lei Bai
+- Ben Fei
+date: '2025-06-02'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2506.14798'
+  openalex: W4415332885
+links:
+  paper: https://arxiv.org/abs/2506.14798
+  pdf: https://arxiv.org/pdf/2506.14798
+topic: downscaling
+topics:
+- observations-remote-sensing
+type: model
+method:
+- diffusion
+- transformer
+spatial:
+- regional
+- local
+data:
+- era5
+- satellite
+- stations
+- other
+status: research
+summary: Conditional diffusion model fuses GridSat, polar-orbiter satellite and topography data with ERA5
+  to downscale surface meteorology to station locations.
+abstract: Accurate acquisition of high-resolution surface meteorological conditions is critical for forecasting
+  and simulating meteorological variables. Directly applying spatial interpolation methods to derive meteorological
+  values at specific locations from low-resolution grid fields often yields results that deviate significantly
+  from the actual conditions. Existing downscaling methods primarily rely on the coupling relationship
+  between geostationary satellites and ERA5 variables as a condition. However, using brightness temperature
+  data from geostationary satellites alone fails to comprehensively capture all the changes in meteorological
+  variables in ERA5 maps. To address this limitation, we can use a wider range of satellite data to make
+  more full use of its inversion effects on various meteorological variables, thus producing more realistic
+  results across different meteorological variables. To further improve the accuracy of downscaling meteorological
+  variables at any location, we propose the Multi-source Observation Down-Scaling Model (MODS). It is
+  a conditional diffusion model that fuses data from multiple geostationary satellites GridSat, polar-orbiting
+  satellites (AMSU-A, HIRS, and MHS), and topographic data (GEBCO), as conditions, and is pre-trained
+  on the ERA5 reanalysis dataset. During training, latent features from diverse conditional inputs are
+  extracted separately and fused into ERA5 maps via a multi-source cross-attention module. By exploiting
+  the inversion relationships between reanalysis data and multi-source atmospheric variables, MODS generates
+  atmospheric states that align more closely with real-world conditions. During sampling, MODS enhances
+  downscaling consistency by incorporating low-resolution ERA5 maps and station-level meteorological data
+  as guidance. Experimental results demonstrate that MODS achieves higher fidelity when downscaling ERA5
+  maps to a 6.25 km resolution.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

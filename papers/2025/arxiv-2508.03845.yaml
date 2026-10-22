@@ -1,0 +1,63 @@
+id: arxiv-2508.03845
+title: Operational convection-permitting COSMO/ICON ensemble predictions at observation sites (CIENS)
+authors:
+- Sebastian Lerch
+- Benedikt Schulz
+- Reinhold Hess
+- Annette Möller
+- Cristina Primo
+- Sebastian Trepte
+- Susanne Theis
+date: '2025-08-05'
+year: 2025
+venue: Geoscience Data Journal
+venue_type: journal
+ids:
+  arxiv: '2508.03845'
+  doi: 10.1002/gdj3.70051
+  openalex: W7117468070
+links:
+  paper: https://doi.org/10.1002/gdj3.70051
+  pdf: https://arxiv.org/pdf/2508.03845
+orgs:
+- dwd
+- kit
+topic: benchmarks-data-eval
+topics:
+- post-processing
+type: benchmark
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: New dataset of convection-permitting COSMO/ICON ensemble forecasts mapped to 170 German stations
+  (2010–2023), with a post-processing use case showing gains from richer predictors.
+abstract: 'We present the CIENS dataset, which contains ensemble weather forecasts from the operational
+  convection-permitting numerical weather prediction model of the German Weather Service. It comprises
+  forecasts for 55 meteorological variables mapped to the locations of synoptic stations, as well as additional
+  spatially aggregated forecasts from surrounding grid points, available for a subset of these variables.
+  Forecasts are available at hourly lead times from 0 to 21 hours for two daily model runs initialized
+  at 00 and 12 UTC, covering the period from December 2010 to June 2023. Additionally, the dataset provides
+  station observations for six key variables at 170 locations across Germany: pressure, temperature, hourly
+  precipitation accumulation, wind speed, wind direction, and wind gusts. Since the forecast are mapped
+  to the observed locations, the data is delivered in a convenient format for analysis. The CIENS dataset
+  complements the growing collection of benchmark datasets for weather and climate modeling. A key distinguishing
+  feature is its long temporal extent, which encompasses multiple updates to the underlying numerical
+  weather prediction model and thus supports investigations into how forecasting methods can account for
+  such changes. In addition to detailing the design and contents of the CIENS dataset, we outline potential
+  applications in ensemble post-processing, forecast verification, and related research areas. A use case
+  focused on ensemble post-processing illustrates the benefits of incorporating the rich set of available
+  model predictors into machine learning-based forecasting models.'
+significance: 4
+cited_by: 1
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

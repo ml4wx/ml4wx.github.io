@@ -5,22 +5,217 @@ Limited-area and regional ML weather models, convection-permitting and km-scale 
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/regional-km-scale/)
 
-8 papers (2 ⭐). Newest first.
+84 papers (6 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-10-08 | [Learning Kilometer-Scale Weather Prediction with Global-Regional Alignment](https://arxiv.org/abs/2610.12401)<br><sub>Guowen Li, Yang Liu, Yujie Wang et al.</sub> |  |  |
+| 2026-10-08 | [Event-Aware Spatiotemporal Precipitation Forecasting with Geographic Context and Physics-Guided Regularization](https://arxiv.org/abs/2610.11211)<br><sub>Yiping Hong, Xinyu Wang, Sameh Abdulah</sub> |  |  |
+| 2026-10-04 | [Shaping the Wind: Nested Potentials for Kinematically Admissible Urban Wind Prediction](https://arxiv.org/abs/2610.07033)<br><sub>Yidi Wang, Yunhe Zhang, Jiawei Gu et al.</sub> |  |  |
+| 2026-10-01 | ⭐ [Varda-single-1.0: deterministic data-driven weather forecasting at 1 km resolution over Switzerland's complex topography](https://arxiv.org/abs/2610.01835)<br><sub>Alberto Pennino, Francesco Zanetta, Michele Cattaneo et al.</sub> | ECMWF, ETH Zurich, KNMI (Royal Netherlands Meteorological Institute), MET Norway (Norwegian Meteorological Institute), MeteoSwiss, Swiss Data Science Center (SDSC) |  |
+| 2026-09-28 | [FiLMeR (v1.0): a FiLM-conditioned machine-learning emulator for multi-domain regional WRF-scale surface weather fields](https://doi.org/10.5194/egusphere-2026-4377)<br><sub>Balbir Prasad, Deena Lad, Mohammad Rafiuddin et al.</sub> |  |  |
+| 2026-09-22 | [West-WRF AI 2-km: High-Resolution Prediction of Integrated Vapor Transport and Precipitation](https://arxiv.org/abs/2609.25512)<br><sub>Nazak Rouzegari, Vesta Afzali Gorooh, Agniv Sengupta et al.</sub> |  |  |
+| 2026-09-16 | [Benchmarking Model Complexity for Short-Term Surrogate Forecasting of High-Resolution Urban WRF Outputs During an Extreme Heatwave in Chongqing](https://doi.org/10.3390/land15091726)<br><sub>Ya-Nan Liu, Mao-Yuan Chai, Run-Jie Xie et al. · Land</sub> |  |  |
+| 2026-09-02 | [Kilometer-Scale AI Downscaling of Atlantic Hurricanes with Generative Ensembles](https://arxiv.org/abs/2609.02034)<br><sub>Yingkai Sha, Talea L. Mayo, Ethan D. Gutmann et al.</sub> | NSF NCAR / UCAR |  |
+| 2026-08-26 | [Learning Continuous Regional Temperature Fields with Lead-Time and Resolution Queries](https://arxiv.org/abs/2608.25823)<br><sub>Chunlei Shi, Jiong Wang, Yi-Lin Wei et al.</sub> |  |  |
+| 2026-07-02 | [Enhancing a high resolution data-driven weather prediction model with surface descriptors](https://arxiv.org/abs/2607.02824)<br><sub>Åsmund Bakketun, Håvard Homleid Haugen, Jostein Blyverket et al.</sub> |  |  |
+| 2026-06-30 | [Scaling Storm-Resolving Atmospheric AI Simulation to the Entire Planet](https://arxiv.org/abs/2606.31248)<br><sub>Zeyuan Hu, Akshay Subramaniam, Noel Keen et al.</sub> |  |  |
+| 2026-06-22 | [Toward spatially sharper precipitation prediction via global-local frequency guidance](https://doi.org/10.1038/s41612-026-01472-y)<br><sub>Su-Bin An, Youngwook Kim, Dongjin Cho et al. · npj Climate and Atmospheric Science</sub> |  |  |
+| 2026-06-16 | [Skillful regional NWP forecasts of tropical cyclones driven by fully AI-generated boundary conditions](https://doi.org/10.1088/1748-9326/ae7e0a)<br><sub>Hongxiong Xu, Hongyu Qu, Da-Jun Zhao et al. · Environmental Research Letters</sub> | China Meteorological Administration (CMA) |  |
+| 2026-05-09 | [Impact of AIFS and GFS Initialization on WRF Operational Forecasts During High-Impact Storms in Spain (2025)](https://doi.org/10.3390/earth7030077)<br><sub>Raúl Arasa, Matilde García‐Valdecasas Ojeda, Miquel Picanyol et al. · Earth</sub> |  |  |
+| 2026-04-18 | [Unraveling the intractable trilemma in urban weather and climate modeling](https://doi.org/10.1038/s42949-026-00388-z)<br><sub>Peiyuan Li, Ashish Sharma, Rao Kotamarthi et al. · npj Urban Sustainability</sub> | Argonne National Laboratory, University of Chicago |  |
+| 2026-04-15 | [ST-SwinUNet: Real-time image-to-image reconstruction and multi-step forecasting of multi-height urban wind fields](https://doi.org/10.1016/j.buildenv.2026.114593)<br><sub>Hang Du, Yi‐Qing Ni, Zhengwei Chen et al. · Building and Environment</sub> |  |  |
+| 2026-04-01 | [Physically constrained AI-driven initial conditions enhance refined weather forecasting over the Tibetan Plateau](https://doi.org/10.1016/j.aosl.2026.100831)<br><sub>Bingliang He, Can Wang, Hong-Qin Zhang et al. · Atmospheric and Oceanic Science Letters</sub> | Institute of Atmospheric Physics, Chinese Academy of Sciences |  |
+| 2026-04-01 | [Assessing the ability of a stretched-grid deep-learning weather prediction model to capture physical balances](https://doi.org/10.1002/qj.70315)<br><sub>Francesco Pasquini, Michiel Baatsen, Bastien François et al. · Quarterly Journal of the Royal Meteorological Society</sub> | KNMI (Royal Netherlands Meteorological Institute) |  |
+| 2026-03-30 | [Skillful Kilometer-Scale Regional Weather Forecasting via Global and Regional Coupling](https://arxiv.org/abs/2603.28173)<br><sub>Weiqi Chen, Wenwei Wang, Qilong Yuan et al.</sub> |  |  |
+| 2026-03-18 | [End-to-end data-driven prediction of urban airflow and pollutant dispersion](https://arxiv.org/abs/2603.17606)<br><sub>Nishant Kumar, Franck Kerhervé, Lionel Agostini et al.</sub> |  |  |
+| 2026-03-16 | [A Data-Driven Regional Model for Skillful Medium-Range Typhoon Prediction](https://arxiv.org/abs/2603.15127)<br><sub>Zeyi Niu, Wei Huang, Sirong Huang et al.</sub> |  |  |
+| 2026-03-13 | [MR-GNF: Multi-Resolution Graph Neural Forecasting on Ellipsoidal Meshes for Efficient Regional Weather Prediction](https://arxiv.org/abs/2603.13563)<br><sub>Andrii Shchur, Inna Skarga-Bandurova</sub> |  | [code](https://github.com/AndriiShchur/MR-GNF) |
+| 2026-03-11 | [Deep Learning for Short-Term Rainfall Forecasting in Indian Subcontinent Using ERA5-Land Data](https://doi.org/10.1109/icmlas67792.2026.11483717)<br><sub>Priyobrata Chatterjee, Saurabh Bilgaiyan, M. Gourisaria et al. · 2026 International Conference on Machine Learning and Autonomous Systems (ICMLAS)</sub> |  |  |
+| 2026-03-11 | [Tibetan Plateau Mountain Wave Simulation Using AI‐Driven 3D Adaptive Mesh Refinement](https://doi.org/10.1029/2025jd045585)<br><sub>Pu Gan, Jinxi Li, Xiaofei Wu et al. · Journal of Geophysical Research Atmospheres</sub> | Institute of Atmospheric Physics, Chinese Academy of Sciences |  |
+| 2026-02-20 | [AI‐Based Regional Emulation for Kilometer‐Scale Dynamical Downscaling](https://arxiv.org/abs/2602.18646)<br><sub>Ying-Kai Sha, Tracy Hertneky, Ethan D. Gutmann et al. · Journal of Geophysical Research: Machine Learning and Computation</sub> | NSF NCAR / UCAR |  |
+| 2026-02-09 | [A variable-resolution unstructured spatio-temporal graph neural network: an application to very short-range weather forecasting in Guangdong, China](https://doi.org/10.1186/s40562-026-00460-7)<br><sub>Delin Li, Zhiqiang Chen, Gang Huang et al. · Geoscience Letters</sub> | China Meteorological Administration (CMA), Institute of Atmospheric Physics, Chinese Academy of Sciences |  |
+| 2026-01-25 | [CityScaleCast: Spatiotemporal GNN for City-Scale Weather Prediction with GraphCast-Guided Parallel Modeling and Multi-Step Forecasting in Sendai](https://doi.org/10.1145/3784828.3785258)<br><sub>Xuanwen Pan, Yoichi Shimomura, Si-Chen Tao et al. · Proceedings of the Supercomputing Asia and International Conference on High Performance Computing in Asia Pacific Region Workshops</sub> |  |  |
+| 2026-01-16 | [Enhancing Regional Machine Learning Weather Prediction Using Tailored Loss Functions and High-Resolution RRJ-ClimCORE Reanalysis](https://doi.org/10.1007/s44393-025-00006-8)<br><sub>Hiroki Ikeuchi, Tsuyoshi Thomas Sekiyama, Takafumi Miyasaka et al. · SOLA</sub> | Japan Meteorological Agency (JMA) |  |
+| 2026-01-01 | [Height-Aware Fourier Neural Operator for Near-Space Short-Term Wind Field Prediction: A Systematic Neural Operator Benchmark](https://doi.org/10.1109/tgrs.2026.3724650)<br><sub>Yang Wu, Q. Liao, Tian Tian et al. · IEEE Transactions on Geoscience and Remote Sensing</sub> |  |  |
+| 2026-01-01 | [PINA-Net: Physics-Constrained Nonautoregressive Network for Spatiotemporal Meteorological Forecasting in Complex Maritime Environments](https://doi.org/10.1109/tgrs.2026.3713650)<br><sub>Yi Yan, Jiang-Ting Li, Yuxuan Wang et al. · IEEE Transactions on Geoscience and Remote Sensing</sub> |  |  |
+| 2025-12-31 | [Spatio-Temporal Weather Prediction with Graph Neural Networks](https://doi.org/10.3126/jonc.v1i1-2.89125)<br><sub>Siddhartha Devkota, Avinab Khadka, Yagya Raj Pandeya · Journal of NAST College</sub> |  |  |
+| 2025-12-15 | [Evaluating Adversarial Attacks on Federated Learning for Temperature Forecasting](https://arxiv.org/abs/2512.13207)<br><sub>Karina Chichifoi, Fabio Merizzi, Michele Colajanni</sub> |  |  |
+| 2025-12-01 | ⭐ [A regional high resolution AI weather model for the prediction of atmospheric rivers and extreme precipitation](https://doi.org/10.1038/s41612-025-01265-9)<br><sub>J. Baño-Medina, A. Sengupta, Daniel F. Steinhoff et al. · npj Climate and Atmospheric Science</sub> | ECMWF, MET Norway (Norwegian Meteorological Institute) |  |
+| 2025-11-28 | [High-Resolution Probabilistic Data-Driven Weather Modeling with a Stretched-Grid](https://arxiv.org/abs/2511.23043)<br><sub>Even Marius Nordhagen, Håvard Homleid Haugen, Magnus Sikora Ingstad et al.</sub> |  |  |
+| 2025-10-19 | [Short-term forecasting of 3D wind field based on deep learning and water vapor](https://doi.org/10.22541/essoar.176087128.81306828/v1)<br><sub>Yuchen Ye, Chaoxia Yuan, Mingyu Li et al.</sub> | Huawei (Huawei Cloud), Nanjing University of Information Science & Technology (NUIST) |  |
+| 2025-10-17 | [Sensitivity of WRF Operational Forecasting to AIFS Initialisation: A Case Study on the Implications for Air Pollutant Dispersion](https://doi.org/10.3390/earth6040132)<br><sub>Raúl Arasa, Matilde García‐Valdecasas Ojeda, Miquel Picanyol et al. · Earth</sub> |  |  |
+| 2025-10-10 | [CRPS-LAM: Probabilistic Regional Weather Forecasting with Continuous Ranked Probability Score](https://arxiv.org/abs/2510.09484)<br><sub>Erik Larsson, Joel Oskarsson, Tomas Landelius et al.</sub> |  |  |
+| 2025-10-03 | [Machine Learning-Based Temperature Prediction for European Climate Change Adaptation: A ConvLSTM Approach Using ERA5 Reanalysis Data](https://doi.org/10.21203/rs.3.rs-7199339/v1)<br><sub>Mayowa Benjamen Lateef · Research Square</sub> |  |  |
+| 2025-10-01 | [Enhancing Short-Range Weather Forecasts through Temporal Variation Encoding: A Multiperiod Embedding Approach](https://doi.org/10.1175/aies-d-24-0119.1)<br><sub>Ming Fan, Hyun‐Gyu Kang, Wei Zhang et al. · Artificial Intelligence for the Earth Systems</sub> | Oak Ridge National Laboratory |  |
+| 2025-09-21 | [STCast: Adaptive Boundary Alignment for Global and Regional Weather Forecasting](https://arxiv.org/abs/2509.25210)<br><sub>Hao Chen, Tao Han, Jie Zhang et al.</sub> |  | [code](https://github.com/chenhao-zju/STCast) |
+| 2025-07-24 | ⭐ [A comparison of stretched-grid and limited-area modelling for data-driven regional weather forecasting](https://doi.org/10.1016/j.mlwa.2026.100887)<br><sub>Jasper S. Wijnands, Michiel Van Ginderachter, Bastien François et al. · Machine Learning with Applications</sub> | KNMI (Royal Netherlands Meteorological Institute) |  |
 | 2025-07-08 | [HRRRCast: a data-driven emulator for regional weather forecasting at convection allowing scales](https://arxiv.org/abs/2507.05658)<br><sub>Daniel Abdi, Isidora Jankov, Paul Madden et al. · Artificial Intelligence for the Earth Systems, Vol. 5, No. 2, 2026, Article 250061</sub> | Colorado State University (incl. CIRA), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), University of Oklahoma (AI2ES) |  |
+| 2025-07-01 | [Innovative Short-Term Weather Forecasting System Combining Data-Driven and Dynamic Downscaling Approaches](https://doi.org/10.1175/aies-d-24-0125.1)<br><sub>Yubin Jin, Zhenzhong Zeng, Yuntian Chen et al. · Artificial Intelligence for the Earth Systems</sub> |  |  |
+| 2025-06-24 | [Implementation and Evaluation of a Limited-Area Artificial Intelligence Wind Speed Forecasting Model](https://doi.org/10.1109/iccep65222.2025.11143679)<br><sub>D. J. van der Bank, A. Dalton, Bernard Bekker · 2025 International Conference on Clean Electrical Power (ICCEP)</sub> |  |  |
+| 2025-05-26 | [A novel deep learning-based framework for five‐day regional weather forecasting](https://doi.org/10.1016/j.aosl.2025.100653)<br><sub>Congqi Cao, Ze Yu Sun, Lu Hu et al. · Atmospheric and Oceanic Science Letters</sub> |  |  |
+| 2025-05-19 | ⭐ [WoFSCast: A Machine Learning Model for Predicting Thunderstorms at Watch‐to‐Warning Scales](https://doi.org/10.1029/2024gl112383)<br><sub>Montgomery L. Flora, Corey K. Potvin · Geophysical Research Letters</sub> | NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), University of Oklahoma (AI2ES) |  |
+| 2025-05-17 | [Improving regional weather forecasts with neural interpolation](https://arxiv.org/abs/2505.12040)<br><sub>James Jackaman, Oliver Sutton</sub> |  |  |
+| 2025-05-12 | [A novel deep learning approach for regional high-resolution spatio-temporal wind speed forecasting for energy applications](https://doi.org/10.1016/j.energy.2025.136356)<br><sub>Sofien Resifi, Elissar Al Aawar, Hari Prasad Dasari et al. · Energy</sub> |  |  |
+| 2025-04-14 | [Improved deep learning method and high-resolution reanalysis model-based intelligent marine navigation](https://doi.org/10.3389/fmars.2025.1495822)<br><sub>Zeguo Zhang, Liang Cao, Jianchuan Yin · Frontiers in Marine Science</sub> |  |  |
 | 2025-04-12 | [Building Machine Learning Limited Area Models: Kilometer-Scale Weather Forecasting in Realistic Settings](https://arxiv.org/abs/2504.09340)<br><sub>Simon Adamov, Joel Oskarsson, Leif Denby et al.</sub> |  | [code](https://github.com/joeloskarsson/neural-lam-dev) |
+| 2025-03-17 | [Development of a Data-driven weather forecasting system over India with Pangu-Weather architecture and IMDAA reanalysis Data](https://arxiv.org/abs/2503.12956)<br><sub>Animesh Choudhury, Jagabandhu Panda</sub> |  |  |
+| 2025-03-16 | [CNCast: Leveraging 3D Swin Transformer and DiT for Enhanced Regional Weather Forecasting](https://arxiv.org/abs/2503.13546)<br><sub>Hongli Liang, Yuanting Zhang, Qingye Meng et al.</sub> |  |  |
 | 2025-02-11 | [Diffusion-LAM: Probabilistic Limited Area Weather Forecasting with Diffusion](https://arxiv.org/abs/2502.07532)<br><sub>Erik Larsson, Joel Oskarsson, Tomas Landelius et al.</sub> |  |  |
+| 2025-01-01 | [Data-Driven Mesoscale Weather Forecasting Combining Swin-Unet and Diffusion Models](https://doi.org/10.2151/sola.2025-062)<br><sub>Yuta Hirabayashi, Daisuke Matsuoka · SOLA</sub> |  |  |
+| 2024-12-23 | [Hybrid Numerical Weather Prediction: Downscaling GraphCast AI Forecasts for Downslope Windstorms](https://doi.org/10.1175/waf-d-24-0097.1)<br><sub>Matthew J. Brewer, Robert G. Fovell, Scott B. Capps · Weather and Forecasting</sub> |  |  |
+| 2024-12-22 | [DFMM-Precip: Deep Fusion of Multi-Modal Data for Accurate Precipitation Forecasting](https://doi.org/10.3390/w16243702)<br><sub>Jinwen Li, Wu Li, Jiarui Liu et al. · Water</sub> | Tsinghua University (NowcastNet) |  |
+| 2024-12-04 | [A Lightweight Transformer-Based Spatiotemporal Analysis Prediction Algorithm for High-Dimensional Meteorological Data](https://doi.org/10.3390/rs16234545)<br><sub>Y. H. Tan, Junfeng Wu, Yihang Liu et al. · Remote Sensing</sub> |  |  |
+| 2024-10-17 | [Data-driven rainfall prediction at a regional scale: a case study with Ghana](https://doi.org/10.1175/aies-d-24-0116.1)<br><sub>Indrajit Kalita, Lucia Vilallonga, Yves Atchade · Artificial Intelligence for the Earth Systems</sub> |  |  |
+| 2024-09-11 | [Efficient Localized Adaptation of Neural Weather Forecasting: A Case Study in the MENA Region](https://arxiv.org/abs/2409.07585)<br><sub>Muhammad Akhtar Munir, Fahad Shahbaz Khan, Salman Khan</sub> |  | [code](https://github.com/akhtarvision/weather-regional) |
 | 2024-09-04 | ⭐ [Regional data-driven weather modeling with a global stretched-grid](https://arxiv.org/abs/2409.02891)<br><sub>Thomas Nils Nipen, Håvard Homleid Haugen, Magnus Sikora Ingstad et al. · Artificial Intelligence for the Earth Systems</sub> | ECMWF, MET Norway (Norwegian Meteorological Institute) |  |
 | 2024-08-20 | ⭐ [Kilometer-Scale Convection Allowing Model Emulation using Generative Diffusion Modeling](https://arxiv.org/abs/2408.10958)<br><sub>Jaideep Pathak, Yair Cohen, Piyush Garg et al. · Science Advances</sub> | NVIDIA |  |
 | 2024-08-12 | [MetMamba: Regional Weather Forecasting with Spatial-Temporal Mamba Model](https://arxiv.org/abs/2408.06400)<br><sub>Haoyu Qin, Yungang Chen, Qianchuan Jiang et al.</sub> |  |  |
+| 2024-08-03 | [Accelerating regional weather forecasting by super-resolution and data-driven methods](https://doi.org/10.1515/jiip-2023-0078)<br><sub>Artem Mikhaylov, Fedor Pavlovich Meshchaninov, Vasily Ivanov et al. · Journal of Inverse and Ill-Posed Problems</sub> |  |  |
+| 2024-06-24 | [Developing an Explainable Variational Autoencoder (VAE) Framework for Accurate Representation of Local Circulation in Taiwan](https://doi.org/10.1029/2024jd041167)<br><sub>Min‐Ken Hsieh, Chien-Ming Wu · Journal of Geophysical Research: Atmospheres</sub> |  |  |
+| 2024-05-31 | [Maximum Temperature Prediction Using Remote Sensing Data Via Convolutional Neural Network](https://arxiv.org/abs/2405.20731)<br><sub>Lorenzo Innocenti, Giacomo Blanco, Luca Barco et al.</sub> |  |  |
+| 2024-02-02 | [LPS Neural Operator (LPSNO): A Novel Deep Learning Framework to Predict the Indian Monsoon Low-Pressure Systems](https://doi.org/10.22541/essoar.170689130.02457809/v1)<br><sub>K. S. S. Sai Srujan, S. Sandeep, Hariprasad Kodamana</sub> |  |  |
 | 2024-01-29 | [YingLong-weather: AI-Based Limited Area Models for Forecasting of Non-precipitation Surface Meteorological Variables](https://arxiv.org/abs/2401.16254)<br><sub>Pengbo Xu, Xiaogu Zheng, Tianyan Gao et al. · Communications Earth &amp; Environment</sub> | Baidu, China Meteorological Administration (CMA) |  |
+| 2024-01-18 | [WindSeer: Real-time volumetric wind prediction over complex terrain aboard a small UAV](https://arxiv.org/abs/2401.09944)<br><sub>Florian Achermann, Thomas Stastny, Bogdan Danciu et al.</sub> |  |  |
+| 2024-01-01 | [Innovating Graph Representation for Dynamic Weather Forecasting](https://doi.org/10.22457/apam.v29n2a04938)<br><sub>Harish Chandra Bhandari, Yagya Raj Pandeya, Kanhaıya Jha · Annals of Pure and Applied Mathematics</sub> |  |  |
+| 2024-01-01 | [Towards a Dynamic Data Driven AI Regional Weather Forecast Model](https://doi.org/10.1007/978-3-031-94895-4_13)<br><sub>Sophia Hamer, Jennifer Sleeman, Milton Halem · DDDAS/Infosymbiotics</sub> |  |  |
+| 2023-11-21 | [Classification of Warm-Season Precipitation in High-Resolution Rapid Refresh (HRRR) Model Forecasts over the Contiguous United States](https://doi.org/10.1175/mwr-d-23-0108.1)<br><sub>I-Han Chen, Judith Berner, Christian Keil et al. · Monthly Weather Review</sub> | NSF NCAR / UCAR |  |
+| 2023-11-13 | [High‐Precision and Fast Prediction of Regional Wind Fields in Near Space Using Neural‐Network Approximation of Operators](https://doi.org/10.1029/2023gl106115)<br><sub>Biao Chen, Zheng Sheng, Yang He · Geophysical Research Letters</sub> |  |  |
+| 2023-10-05 | [A comparison of data-driven reduced order models for the simulation of mesoscale atmospheric flow](https://doi.org/10.1016/j.finel.2023.104050)<br><sub>Arash Hajisharifi, Michele Girfoglio, Annalisa Quaini et al. · Finite Elements in Analysis and Design</sub> |  |  |
 | 2023-09-29 | [Graph-based Neural Weather Prediction for Limited Area Modeling](https://arxiv.org/abs/2309.17370)<br><sub>Joel Oskarsson, Tomas Landelius, Fredrik Lindsten</sub> |  | [code](https://github.com/joeloskarsson/neural-lam) |
+| 2023-09-13 | [Multivariate emulation of kilometer-scale numerical weather predictions with generative adversarial networks: a proof-of-concept](https://doi.org/10.1175/aies-d-23-0006.1)<br><sub>Clément Brochet, L. Raynaud, Nicolas Thome et al. · Artificial Intelligence for the Earth Systems</sub> | Météo-France (incl. CNRM) |  |
+| 2023-03-29 | [Data Driven Regional Weather Forecasting: Example using the Shallow Water Equations](http://arxiv.org/abs/2303.16363)<br><sub>Clark, Randall, Henry D. I. Abarbanel, Luke C. Fairbanks et al.</sub> |  |  |
+| 2023-01-10 | [Adapting a deep convolutional RNN model with imbalanced regression loss for improved spatio-temporal forecasting of extreme wind speed events in the short to medium range](https://doi.org/10.5194/gmd-16-251-2023)<br><sub>D. Scheepens, I. Schicker, Katerina Hlaváčková-Schindler et al. · Geoscientific Model Development</sub> |  |  |
+| 2022-11-21 | [Data Driven Regional Weather Forecasting](https://doi.org/10.5194/egusphere-2022-1222)<br><sub>Randall Clark, Luke C. Fairbanks, Ramon A. Sanchez et al.</sub> |  |  |
+| 2022-09-29 | [A case study of spatiotemporal forecasting techniques for weather forecasting](https://arxiv.org/abs/2209.14782)<br><sub>Shakir Showkat Sofi, Ivan Oseledets · Geoinformatica 2024</sub> |  |  |
+| 2021-10-05 | [Short-term precipitation prediction using deep learning](https://arxiv.org/abs/2110.01843)<br><sub>Guoxing Chen, Wei-Chyung Wang · Geophysical Research Letters, 49 (2022)</sub> | Fudan University (FuXi) |  |
+| 2021-07-09 | [Deep Learning Based Forecasting of Indian Summer Monsoon Rainfall](https://arxiv.org/abs/2107.04270)<br><sub>Bipin Kumar, Namit Abhishek, Rajib Chattopadhyay et al. · Geocarto International, 2022</sub> |  |  |
+| 2021-06-24 | [Machine Learning for Climate Precipitation Prediction Modeling over South America](https://doi.org/10.3390/rs13132468)<br><sub>Juliana Aparecida Anochi, Vinícius Albuquerque de Almeida, Haroldo Fraga de Campos Velho · Remote Sensing</sub> |  |  |
+| 2020-11-06 | [Deep coastal sea elements forecasting using U-Net based models](https://doi.org/10.1016/j.knosys.2022.109445)<br><sub>Jesús García Fernández, Ismail Alaoui Abdellaoui, Siamak Mehrkanoon · Knowledge-Based Systems</sub> |  |  |
+| 2019-11-30 | [STConvS2S: Spatiotemporal Convolutional Sequence to Sequence Network for Weather Forecasting](https://doi.org/10.1016/j.neucom.2020.09.060)<br><sub>Rafaela Castro, Yania M. Souto, Eduardo Ogasawara et al. · Neurocomputing</sub> |  |  |
 
 ## Also relevant
 
+- [Spatio-temporal precipitation downscaling at hourly resolution based on km-scale regional simulations](https://arxiv.org/abs/2610.26145) (2026)
+- [Building AI–Physics Digital Twins for Hurricanes With FourCastNet v2 and ERF](https://doi.org/10.5281/zenodo.23327490) (2026)
+- [Statistical Downscaling of Daily Precipitation from ERA5 Atmospheric Fields to IMERG over West Africa](https://arxiv.org/abs/2610.16816) (2026)
+- [LoRA Adaptation Strength in Aurora-WRF: Trade-offs in Regional Heavy-Rainfall Forecasting](https://arxiv.org/abs/2610.03747) (2026)
+- [Convection-permitting scales break climate invariance in machine-learned precipitation downscaling](https://doi.org/10.21203/rs.3.rs-10899014/v1) (2026)
+- [Efficient Analog-Initialized Latent Transport for Spatially Coherent Probabilistic Downscaling from Global to Kilometer Scales](https://arxiv.org/abs/2610.03736) (2026)
+- [Fast High-Resolution Wind-Field Prediction over Complex Terrain Using WRF-CFD Simulations and a Time-Aware Neural Network](https://doi.org/10.3390/atmos17090849) (2026)
+- [Bridging short- and medium-range weather forecasting with machine learning](https://arxiv.org/abs/2608.26822) (2026)
+- [Convolution neural network-based estimation of high-resolution urban canopy parameters for urban climate modelling](https://doi.org/10.1016/j.uclim.2026.103098) (2026)
+- [Frequency-aware forecasting for short-term typhoon gust prediction](https://arxiv.org/abs/2608.25604) (2026)
+- [Spatio-Temporal Hypergraph Neural Network for Regional Meteorological Forecasting with Sparse Observation Stations](https://doi.org/10.1109/igarss60577.2026.11731388) (2026)
+- [RainCast: A High-Resolution 72-Hour Short-Term Precipitation Forecasting Model](https://doi.org/10.1145/3770855.3818880) (2026)
+- [Deep learning for multi-step forecasting of stratospheric wind and temperature profiles over the Tibetan plateau](https://doi.org/10.3389/fspas.2026.1892441) (2026)
+- [Benchmarking ConvLSTM for One-Day-Ahead IMDAA Rainfall-Field Prediction across Four Indian Cities](https://arxiv.org/abs/2607.26581) (2026)
+- [Physics-Aware AI-Initialized Dynamical Downscaling for Regional Extreme-Weather Forecasting with Open Climate Data](https://doi.org/10.58776/ijitcsa.v4i2.256) (2026)
+- [MAPCast: A Convection Allowing MPAS Emulator for Ensemble-based Background Error Covariance Estimation Toward Multi-Scale Data Assimilation](https://arxiv.org/abs/2607.21917) (2026)
+- [Diffusion posterior sampling enables zero shot kilometre scale wind forecasting over complex terrain](https://arxiv.org/abs/2607.21460) (2026)
+- [Lead-conditioned direct forecasting of daily air–sea interface variables over the Tropical Pacific ocean with soft physical regularization](https://doi.org/10.1016/j.ocemod.2026.102803) (2026)
+- [A Terrain-Aware Residual U-Net Framework for Hourly Kilometre-Scale 2 m Temperature Downscaling over Austria](https://doi.org/10.5194/egusphere-2026-4059) (2026)
+- [Apeliotes: A Diffusion-Based Modeling Framework for km-scale Multi-Level Atmospheric Fields](https://arxiv.org/abs/2607.17037) (2026)
+- [HourGlass: A probabilistic data-driven temporal downscaler for global and regional weather forecasting](https://arxiv.org/abs/2607.11457) (2026)
+- [A Hybrid Machine Learning–numerical Coupling Method for Regional Typhoon Forecasting](https://doi.org/10.3724/j.1006-8775.2026.030) (2026)
+- [Invariance-Embedded Machine Learning Sub-Grid-Scale Stress Models for Meso-Scale Hurricane Boundary Layer Simulations: model development, a priori assessment, and a posteriori tests WRF](https://doi.org/10.13016/m2lwcb-xt3w) (2026)
+- [Spatiotemporal Dual-Stream Transformers for Cloud Microphysical Parameterization](https://doi.org/10.5194/egusphere-2026-3243) (2026)
+- [Spatiotemporal cross-attention hybrid network for weather forecasting in complex terrain](https://doi.org/10.1038/s41598-026-55817-x) (2026)
+- [Accelerating regional wind energy assessment with deep-learning surrogates of WRF wind farm simulations](https://doi.org/10.5194/wes-2026-87) (2026)
+- [On the phenomena-oriented validation of spatial neural-network based surface wind downscaling over the Arctic seas](https://doi.org/10.3389/fmars.2026.1765713) (2026)
+- [AMU-Net: Physics-Aware Adaptive Mamba U-Net for Efficient Multi-Lead Time Precipitation Nowcasting](https://doi.org/10.1109/ijcnn69854.2026.11729473) (2026)
+- [Skillful high-resolution weather forecasting independent of physical models](https://arxiv.org/abs/2605.28153) (2026)
+- [Global‐Frequency Synergy: A Novel Paradigm for Radar Echo Extrapolation via Attention and Fourier Convolution](https://doi.org/10.1029/2025jd045579) (2026)
+- [A regional artificial intelligence model for skillful typhoon prediction](https://doi.org/10.1038/s44304-026-00219-2) (2026)
+- [High‐resolution spatiotemporal rainfall forecasting using an attention‐based deep‐learning model integrating multiphysics WRF output](https://doi.org/10.1002/qj.70216) (2026)
+- [Neural network atmospheric bias correction on heterogeneous data with fine‐scale dynamics preservation](https://doi.org/10.1002/qj.70209) (2026)
+- [Applicability Study of a Diffusion Transformer Forecasting Model in the Complex Terrain of Guizhou](https://doi.org/10.1002/met.70186) (2026)
+- [Bridging physics and machine learning: AI-enhanced WRF ensemble approach to extreme rainfall prediction](https://doi.org/10.1016/j.asoc.2026.115212) (2026)
+- [StretchCast: Global-Regional AI Weather Forecasting on Stretched Cubed-Sphere Mesh](https://arxiv.org/abs/2603.27288) (2026)
+- [Accurate Precipitation Forecast by Efficiently Learning from Massive Atmospheric Variables and Unbalanced Distribution](https://arxiv.org/abs/2603.26108) (2026)
+- [Deep Learning for Offshore Wind Intensity Forecasting in the South Atlantic: A ConvLSTM Approach Using ERA5 Data](https://doi.org/10.55592/cilamce2025.v5i.14019) (2026)
+- [Hybrid Deep Learning Architectures for Multi-Horizon Precipitation Forecasting in Mountainous Regions: Systematic Comparison of Component-Combination Models in the Colombian Andes](https://doi.org/10.3390/hydrology13030098) (2026)
+- [Trustworthy Precipitation Prediction via Communication-Efficient Lightweight Trend Perception Network](https://doi.org/10.1109/jiot.2025.3581429) (2026)
+- [Direct assimilation of ground-based microwave radiometer observations with machine learning bias correction based on developments of RTTOV-gb v1.0 and WRFDA v4.5](https://doi.org/10.5194/gmd-19-731-2026) (2026)
+- [REE-TTT: Highly Adaptive Radar Echo Extrapolation Based on Test-Time Training](https://arxiv.org/abs/2601.01605) (2026)
+- [Conditional diffusion denoising probabilistic model for super-resolution of atmospheric boundary layer large eddy simulation](https://doi.org/10.2139/ssrn.7030619) (2026)
+- [A Multiscale-Enhanced U-Net-Based Diffusion Model for Precipitation Nowcasting](https://doi.org/10.1109/jstars.2026.3717287) (2026)
+- [Enhanced Radar Quantitative Precipitation Estimation in South China Through Deep Learning Methods With Global Features](https://doi.org/10.1109/jstars.2026.3689581) (2026)
+- [A Neural-Network Model-Measurement-Based Observation Operator For Weather Radar Reflectivity Assimilation](https://arxiv.org/abs/2512.18289) (2025)
+- [A Diffusion-Based Framework for High-Resolution Precipitation Forecasting over CONUS](https://doi.org/10.1175/aies-d-26-0067.1) (2025)
+- [China Regional 3km Downscaling Based on Residual Corrective Diffusion Model](https://doi.org/10.5194/gmd-19-9235-2026) (2025)
+- [A novel spatiotemporal transformer network with multivariate fusion for short-term precipitation forecasting](https://doi.org/10.1038/s41598-025-29415-2) (2025)
+- [Evaluation of WRF Cloud Properties of Typhoon Hato Based on Forward Radiative Transfer Simulation and Machine Learning](https://doi.org/10.1175/waf-d-24-0205.1) (2025)
+- [Next-Hour Lake-Effect Quantitative Precipitation Forecasts over the Great Lakes with Deep Learning](https://doi.org/10.1175/aies-d-25-0009.1) (2025)
+- [Unraveling spatiotemporal distribution of extreme precipitation in the southern Tibetan Plateau: Synergistic effects between atmospheric circulation and topography](https://doi.org/10.1016/j.ejrh.2025.102809) (2025)
+- [Learning Regional Monsoon Patterns with a Multimodal Attention U-Net](https://arxiv.org/abs/2509.23267) (2025)
+- [A U-LSGAN Network for Downscaling Mesoscale Outputs to LES Simulation](https://doi.org/10.1175/aies-d-24-0105.1) (2025)
+- [Towards Skillful Tropical Cyclone Forecasting by AI‐Model‐Driven High‐Resolution Regional Coupled Model](https://doi.org/10.1002/met.70109) (2025)
+- [IndiaWeatherBench: A Dataset and Benchmark for Data-Driven Regional Weather Forecasting over India](https://arxiv.org/abs/2509.00653) (2025)
+- [Observation-guided Interpolation Using Graph Neural Networks for High-Resolution Nowcasting in Switzerland](https://doi.org/10.1175/aies-d-25-0081.1) (2025)
+- [RadarDiT: An advanced radar echo extrapolation model for three gorges reservoir area via diffusion transformer](https://doi.org/10.1016/j.ejrh.2025.102703) (2025)
+- [SolarSeer: Ultrafast and accurate 24-hour solar irradiance forecasts outperforming numerical weather prediction across the USA](https://arxiv.org/abs/2508.03590) (2025)
+- [A climatology of trapped lee waves over Britain and Ireland obtained using deep learning on high‐resolution model output](https://doi.org/10.1002/qj.5037) (2025)
+- [CPrecNet: Enhanced Nowcast of High‐Resolution Short‐Term Precipitation Using Deep Learning](https://doi.org/10.1029/2024gl113907) (2025)
+- [Postprocessing of convection permitting precipitation forecast using UNets](https://doi.org/10.1016/j.ecoinf.2025.103255) (2025)
+- [Enhanced rainfall forecasting for Mumbai using data-driven ConvLSTM2D models at fine spatial and temporal scales](https://doi.org/10.1007/s11069-025-07267-3) (2025)
+- [A machine learning model for hub-height short-term wind speed prediction](https://doi.org/10.1038/s41467-025-58456-4) (2025)
+- [Fast localized urban microclimate emulator: wind and temperatures in unseen urban morphologies](https://arxiv.org/abs/2503.19708) (2025)
+- [Deep Learning Model for Precipitation Nowcasting Based on Residual and Attention Mechanisms](https://doi.org/10.3390/rs17071123) (2025)
+- [Adjusting Soil Temperatures with a Physics-Informed Deep Learning Model for a High-Resolution Numerical Weather Prediction System](https://doi.org/10.3390/atmos16020207) (2025)
+- [Complementing Dynamical Downscaling With Super‐Resolution Convolutional Neural Networks](https://doi.org/10.1029/2024gl111828) (2025)
+- [Exploring the typhoon intensity forecasting through integrating AI weather forecasting with regional numerical weather model](https://doi.org/10.1038/s41612-025-00926-z) (2025)
+- [Coupled Lake‐Atmosphere‐Land Physics Uncertainties in a Great Lakes Regional Climate Model](https://doi.org/10.1029/2024ms004337) (2025)
+- [OneForecast: A Universal Framework for Global and Regional Weather Forecasting](https://arxiv.org/abs/2502.00338) (2025)
+- [EMULATION OF A NUMERICAL URBAN MODEL TO CREATE HIGH-RESOLUTION NEAR SURFACE AIR TEMPERATURE OVER EUROPEAN CITIES](https://doi.org/10.22541/essoar.173671231.11835703/v1) (2025)
+- [Skillful High-Resolution Ensemble Precipitation Forecasting with an Integrated Deep Learning Framework](https://arxiv.org/abs/2501.02905) (2025)
+- [Hymeshai: Deep Learning Enabled Three-Dimensional Adaptive Mesh Generator for High-Resolution Atmospheric Simulations](https://doi.org/10.1016/j.jcp.2026.114760) (2025)
+- [Enriching Operational High-Resolution Ensemble Forecasts with StyleGAN-2](https://doi.org/10.1175/aies-d-24-0058.1) (2025)
+- [A Patch-Wise Mechanism for Enhancing Sparse Radar Echo Extrapolation in Precipitation Nowcasting](https://doi.org/10.1109/jstars.2025.3543386) (2025)
+- [OMG-HD: A High-Resolution AI Weather Model for End-to-End Forecasts from Observations](https://arxiv.org/abs/2412.18239) (2024)
+- [TAUDiff: Highly efficient kilometer-scale downscaling using generative diffusion models](https://arxiv.org/abs/2412.13627) (2024)
+- [Approximation of Spatial and Temporal Variability of the Urban Heat Island in Moscow Using Machine Learning](https://doi.org/10.3103/s0027134924702254) (2024)
+- [ADAF: An Artificial Intelligence Data Assimilation Framework for Weather Forecasting](https://doi.org/10.1029/2024ms004839) (2024)
+- [Exploring Topography Downscaling Methods for Hyper‐Resolution Land Surface Modeling](https://doi.org/10.1029/2024jd041338) (2024)
+- [Kilometer-Scale Precipitation Forecasting Utilizing Convolutional Neural Networks: A Case Study of Jiangsu’s Coastal Regions](https://doi.org/10.3390/hydrology11100173) (2024)
+- [HR-Extreme: A High-Resolution Dataset for Extreme Weather Forecasting](https://arxiv.org/abs/2409.18885) (2024)
+- [Application of deep learning in summer climate prediction over northwestern China based on CWRF model](https://doi.org/10.1016/j.atmosres.2024.107694) (2024)
+- [Personalized Federated Learning for improving radar based precipitation nowcasting on heterogeneous areas](https://doi.org/10.1007/s12145-024-01438-9) (2024)
+- [MGCPN: An Efficient Deep Learning Model for Tibetan Plateau Precipitation Nowcasting Based on the IMERG Data](https://doi.org/10.1007/s13351-024-3211-1) (2024)
+- [Numerical Simulation of Terrain-Adaptive Wind Field Model Under Complex Terrain Conditions](https://doi.org/10.3390/w16152138) (2024)
+- [Valid Error Bars for Neural Weather Models using Conformal Prediction](https://arxiv.org/abs/2406.14483) (2024)
 - [Generative Data Assimilation of Sparse Weather Station Observations at Kilometer Scales](https://arxiv.org/abs/2406.16947) (2024)
+- [Deep-Learning Correction Methods for Weather Research and Forecasting (WRF) Model Precipitation Forecasting: A Case Study over Zhengzhou, China](https://doi.org/10.3390/atmos15060631) (2024)
+- [Exploring the Usefulness of Machine Learning Severe Weather Guidance in the Warn-on-Forecast System: Results from the 2022 NOAA Hazardous Weather Testbed Spring Forecasting Experiment](https://doi.org/10.1175/waf-d-24-0038.1) (2024)
+- [Using Machine Learning to Predict Convection-Allowing Ensemble Forecast Skill: Evaluation with the NSSL Warn-on-Forecast System](https://doi.org/10.1175/aies-d-23-0106.1) (2024)
+- [Machine learning parameterization of the multi-scale Kain–Fritsch (MSKF) convection scheme and stable simulation coupled in the Weather Research and Forecasting (WRF) model using WRF–ML v1.0](https://doi.org/10.5194/gmd-17-3667-2024) (2024)
+- [A Convolutional Neural Network for Tropical Cyclone Wind Structure Identification in Kilometer-Scale Forecasts](https://doi.org/10.1175/aies-d-23-0059.1) (2024)
+- [Improving precipitation estimates for Turkey with multimodel ensemble: a comparison of nonlinear artificial neural network method with linear methods](https://doi.org/10.1007/s00521-024-09598-x) (2024)
+- [Revised Test of Precipitation Forecasting Product of RMAPS-ST System Based on U-Net](https://doi.org/10.14738/aivp.121.16248) (2024)
+- [Research on Short-Term Prediction Methods for Small-Scale Three-Dimensional Wind Fields](https://doi.org/10.3390/app14051871) (2024)
 - [FengWu-GHR: Learning the Kilometer-scale Medium-range Global Weather Forecasting](https://arxiv.org/abs/2402.00059) (2024)
+- [Realistic tropical cyclone wind and pressure fields can be reconstructed from sparse data using deep learning](https://doi.org/10.1038/s43247-023-01144-2) (2024)
+- [A 3D super-resolution of wind fields via physics-informed pixel-wise self-attention generative adversarial network](https://arxiv.org/abs/2312.13212) (2023)
+- [Machine learning based post‐processing of model‐derived near‐surface air temperature – A multimodel approach](https://doi.org/10.1002/qj.4613) (2023)
+- [Post-processing using deep learning to create operational, high-resolution, and probabilistic weather forecasts](https://doi.org/10.22541/essoar.169841550.08343114/v1) (2023)
+- [Enhancing wind field resolution in complex terrain through a knowledge-driven machine learning approach](https://doi.org/10.1016/j.engappai.2024.109167) (2023)
+- [DSRSS-Net: Improved-Resolution Snow Cover Mapping from FY-4A Satellite Images Using the Dual-Branch Super-Resolution Semantic Segmentation Network](https://doi.org/10.3390/rs15184431) (2023)
+- [A high-precision prediction method for coarse grids based on deep learning and the Weather Research and Forecasting model](https://doi.org/10.1007/s00704-023-04592-0) (2023)
+- [Using CNN framework to improve multi-GCM ensemble predictions of monthly precipitation at local areas: An application over China and comparison with other methods](https://doi.org/10.1016/j.jhydrol.2023.129866) (2023)
+- [Research on Radar Echo Extrapolation Method by Fusing Environment Grid Point Field Information](https://doi.org/10.3390/atmos14060980) (2023)
+- [Impact of Horizontal Resolution on the Robustness of Radiation Emulators in a Numerical Weather Prediction Model](https://doi.org/10.3390/rs15102637) (2023)
+- [Improving regional climate simulations based on a hybrid data assimilation and machine learning method](https://doi.org/10.5194/hess-27-1583-2023) (2023)
+- [Downscaling of Historical Wind Fields over Switzerland Using Generative Adversarial Networks](https://doi.org/10.1175/aies-d-22-0018.1) (2022)
+- [Using machine learning to produce a cost-effective national building height map of Ireland to categorise local climate zones](https://doi.org/10.5194/asr-19-13-2022) (2022)
+- [Wind‐Topo: Downscaling near‐surface wind fields to high‐resolution topography in highly complex terrain with deep learning](https://doi.org/10.1002/qj.4265) (2022)
+- [Use of artificial neural network for generation of ultra-high resolution meteorological fields over Chowkibal-Tangdhar region of North-West Himalaya](https://doi.org/10.21203/rs.3.rs-1339694/v1) (2022)
+- [Combining computational fluid dynamics and neural networks to characterize microclimate extremes: Learning the complex interactions between meso-climate and urban morphology](https://doi.org/10.1016/j.scitotenv.2022.154223) (2022)
+- [Detection of Bow Echoes in Kilometer-Scale Forecasts Using a Convolutional Neural Network](https://doi.org/10.1175/aies-d-21-0010.1) (2022)
+- [Addressing up-scaling methodologies for convection-permitting EPSs using statistical and machine learning tools](https://doi.org/10.5194/asr-18-145-2021) (2021)
+- [Modeling high-resolution precipitation by coupling a regional climate model with a machine learning model: an application to Sai Gon–Dong Nai Rivers Basin in Vietnam](https://doi.org/10.1007/s00382-021-05833-6) (2021)
+- [Statistical Post-Processing for Gridded Temperature Prediction Using Encoder-Decoder-Based Deep Convolutional Neural Networks](https://doi.org/10.2151/jmsj.2022-011) (2021)
+- [Valley Winds at the Local Scale: Correcting Routine Weather Forecast Using Artificial Neural Networks](https://doi.org/10.3390/atmos12020128) (2021)
+- [Fast and accurate learned multiresolution dynamical downscaling for precipitation](https://doi.org/10.5194/gmd-14-6355-2021) (2021)
+- [Deep Learning for Climate Model Output Statistics](https://arxiv.org/abs/2012.10394) (2020)
 - [Super-Resolution Simulation for Real-Time Prediction of Urban Micrometeorology](https://doi.org/10.2151/sola.2019-032) (2019)
 

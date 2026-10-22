@@ -1,0 +1,60 @@
+id: doi-10.1029-2024jh000501
+title: Interpretable Machine Learning‐Based Radiation Emulation for ICON
+authors:
+- Katharina Hafner
+- Fernando Iglesias‐Suarez
+- Sara Shamekh
+- Pierre Gentine
+- M. A. Giorgetta
+- Robert L. Pincus
+- Veronika Eyring
+date: '2025-09-30'
+year: 2025
+venue: Journal of Geophysical Research Machine Learning and Computation
+venue_type: journal
+ids:
+  doi: 10.1029/2024jh000501
+  openalex: W4414671449
+links:
+  paper: https://doi.org/10.1029/2024jh000501
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2024JH000501
+orgs:
+- columbia-leap
+- mpi-meteorology
+- nyu-m2lines
+topic: hybrid-parameterization
+topics:
+- xai-uq-physics
+type: model
+method:
+- rnn
+spatial:
+- global
+data:
+- other
+status: research
+summary: Bidirectional LSTM emulates ICON radiative heating rates accurately, and SHAP analysis shows
+  the learned relationships match radiative physics.
+abstract: Abstract The radiation parameterization is one of the computationally most expensive components
+  of Earth system models (ESMs). To reduce computational cost, radiation is often calculated on coarser
+  spatial or temporal scales, or both, than other physical processes in ESMs, leading to uncertainties
+  in cloud‐radiation interactions and thereby in radiative temperature tendencies. One way to address
+  this issue is to emulate the radiation parameterization using machine learning (ML), which is typically
+  faster and has good accuracy in high‐dimensional parameter spaces. This study investigates the development
+  and interpretation of an ML‐based radiation emulator using the ICOsahedral Non‐hydrostatic model with
+  the RTE+RRTMGP radiation code, which calculates radiative fluxes based on the atmospheric state and
+  its optical properties. With a Bidirectional Long Short‐Term Memory architecture, which can account
+  for vertical bidirectional auto‐correlation, we can accurately emulate shortwave and longwave heating
+  rates with a mean absolute error of and , respectively. Further, we analyze the trained neural networks
+  using Shapley Additive exPlanations and confirm that the networks have learned physically meaningful
+  relationships among the inputs and outputs. It is worth noting that we observe that the local temperature
+  is used as a predictive source for the longwave heating, consistent with physical models of radiation.
+  For shortwave heating, we find that clouds reflect radiation, leading to reduced heating below the cloud.
+  In contrast, an architecture that is not inspired by the underlying physics, such as a multilayer perceptron,
+  tends to rely on spurious or less physically meaningful correlations to make its predictions.
+significance: 4
+cited_by: 3
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

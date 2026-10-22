@@ -1,0 +1,56 @@
+id: arxiv-2406.13627
+title: Can AI be enabled to dynamical downscaling? A Latent Diffusion Model to mimic km-scale COSMO5.0\_CLM9
+  simulations
+authors:
+- Elena Tomasi
+- Gabriele Franch
+- Marco Cristoforetti
+date: '2024-06-19'
+year: 2024
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  arxiv: '2406.13627'
+  doi: 10.5194/gmd-18-2051-2025
+  openalex: W4409069769
+links:
+  paper: https://doi.org/10.5194/gmd-18-2051-2025
+  pdf: https://arxiv.org/pdf/2406.13627
+topic: downscaling
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+- cnn
+spatial:
+- regional
+data:
+- era5
+- km-scale-sim
+status: research
+summary: A latent diffusion model with a residual UNET downscales ERA5 to 2 km over Italy, reproducing
+  COSMO-CLM 2-m temperature and wind fields with realistic spectra.
+abstract: 'Downscaling techniques are one of the most prominent applications of Deep Learning (DL) in
+  Earth System Modeling. A robust DL downscaling model can generate high-resolution fields from coarse-scale
+  numerical model simulations, saving the timely and resourceful applications of regional/local models.
+  Additionally, generative DL models have the potential to provide uncertainty information, by generating
+  ensemble-like scenario pools, a task that is computationally prohibitive for traditional numerical simulations.
+  In this study, we apply a Latent Diffusion Model (LDM) to downscale ERA5 data over Italy up to a resolution
+  of 2 km. The high-resolution target data consists of 2-m temperature and 10-m horizontal wind components
+  from a dynamical downscaling performed with COSMO_CLM. Our goal is to demonstrate that recent advancements
+  in generative modeling enable DL to deliver results comparable to those of numerical dynamical models,
+  given the same input data, preserving the realism of fine-scale features and flow characteristics. A
+  selection of predictors from ERA5 is used as input to the LDM, and a residual approach against a reference
+  UNET is leveraged in applying the LDM. The performance of the generative LDM is compared with reference
+  baselines of increasing complexity: quadratic interpolation of ERA5, a UNET, and a Generative Adversarial
+  Network (GAN) built on the same reference UNET. Results highlight the improvements introduced by the
+  LDM architecture and the residual approach over these baselines. The models are evaluated on a yearly
+  test dataset, assessing the models'' performance through deterministic metrics, spatial distribution
+  of errors, and reconstruction of frequency and power spectra distributions.'
+significance: 4
+cited_by: 24
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

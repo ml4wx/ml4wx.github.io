@@ -1,0 +1,51 @@
+id: arxiv-2604.21127
+title: 'HyperFM: An Efficient Hyperspectral Foundation Model with Spectral Grouping'
+authors:
+- Zahid Hassan Tushar
+- Sanjay Purushotham
+date: '2026-04-22'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2604.21127'
+  openalex: W7155566721
+links:
+  paper: https://arxiv.org/abs/2604.21127
+  pdf: https://arxiv.org/pdf/2604.21127
+  code: https://github.com/umbc-sanjaylab/HyperFM
+topic: observations-remote-sensing
+topics:
+- foundation-models
+type: model
+method:
+- transformer
+spatial:
+- global
+data:
+- satellite
+status: research
+summary: HyperFM, a parameter-efficient hyperspectral foundation model for NASA PACE, improves atmospheric
+  cloud property retrieval and releases a 250K-sample dataset.
+abstract: The NASA PACE mission provides unprecedented hyperspectral observations of ocean color, aerosols,
+  and clouds, offering new insights into how these components interact and influence Earth's climate and
+  air quality. Its Ocean Color Instrument measures light across hundreds of finely spaced wavelength bands,
+  enabling detailed characterization of features such as phytoplankton composition, aerosol properties,
+  and cloud microphysics. However, hyperspectral data of this scale is large, complex, and difficult to
+  label, requiring specialized processing and analysis techniques. Existing foundation models, which have
+  transformed computer vision and natural language processing, are generally trained on standard RGB imagery
+  and therefore struggle to interpret the continuous spectral signatures captured by PACE. While recent
+  advances have introduced hyperspectral foundation models, they are typically trained on cloud-free observations
+  and often remain limited to single-sensor datasets due to spectral inconsistencies across instruments.
+  Moreover, existing models tend to be parameter-heavy and computationally expensive, limiting scalability
+  and adoption in operational settings. To address these challenges, we introduce HyperFM, a parameter-efficient
+  hyperspectral foundation model that leverages intra-group and inter-group spectral attention along with
+  hybrid parameter decomposition to better capture spectral spatial relationships while reducing computational
+  cost. HyperFM demonstrates consistent performance improvements over existing hyperspectral foundation
+  models and task-specific state-of-the-art methods across four benchmark downstream atmospheric cloud
+  property retrieval tasks. To support further research, we additionally release HyperFM250K, a large-scale
+  hyperspectral dataset from the PACE mission that includes both clear and cloudy scenes.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

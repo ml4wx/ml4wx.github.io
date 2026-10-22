@@ -1,0 +1,47 @@
+id: arxiv-2606.09313
+title: 'Machine-Learning Emulation of Satellite Greenhouse Gas Retrievals: Stability over Time'
+authors:
+- Nugzar Gognadze
+- Motonobu Kanagawa
+- Yu Someya
+- Hisashi Yashiro
+date: '2026-06-08'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.09313'
+  openalex: W7163992264
+links:
+  paper: https://arxiv.org/abs/2606.09313
+  pdf: https://arxiv.org/pdf/2606.09313
+topic: observations-remote-sensing
+type: evaluation
+method:
+- classical-ml
+spatial:
+- global
+data:
+- satellite
+- stations
+status: research
+summary: Shows ML emulators of GOSAT greenhouse gas retrievals degrade over time; a time-augmented Lasso
+  is most stable and matches TCCON-GOSAT disagreement.
+abstract: Retrieval algorithms are used to estimate atmospheric concentrations of greenhouse gases (GHGs),
+  such as carbon dioxide (CO2) and methane (CH4), by solving inverse problems from high-spectral-resolution
+  satellite radiance measurements. However, these algorithms are computationally expensive, which makes
+  real-time estimation at scale difficult. Machine-learning models have therefore been proposed as fast
+  emulators of retrieval algorithms. Most existing studies, however, evaluate them only on test data from
+  the same period as the training data. We study the stability over time of such emulators using data
+  from the Greenhouse Gases Observing SATellite (GOSAT). We show that prediction accuracy generally deteriorates
+  when the test period moves away from the training period. We also show that including time as an input
+  feature substantially improves XCH4 prediction for Lasso and neural-network models. Among the methods
+  considered, a simple Lasso model performs as well as or better than more complex methods such as neural
+  networks, and yields more stable predictions over time. We further validate the results using the Total
+  Carbon Column Observing Network (TCCON), a ground-based observation network. On the TCCON-matched dataset,
+  the time-augmented Lasso achieves errors against TCCON that are comparable to the disagreement between
+  GOSAT and TCCON for both XCO2 and XCH4.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

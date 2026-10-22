@@ -1,0 +1,62 @@
+id: doi-10.5194-gmd-18-5759-2025
+title: 'CROMES v1.0: a flexible CROp Model Emulator Suite for climate impact assessment'
+authors:
+- Christian Folberth
+- Artem Baklanov
+- Nikolay Khabarov
+- Thomas Oberleitner
+- Juraj Balkovič
+- Rastislav Skalský
+date: '2025-09-08'
+year: 2025
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-18-5759-2025
+  openalex: W4414068057
+links:
+  paper: https://doi.org/10.5194/gmd-18-5759-2025
+  pdf: https://gmd.copernicus.org/articles/18/5759/2025/gmd-18-5759-2025.pdf
+topic: applications-impacts
+topics:
+- infra-software
+type: model
+method:
+- classical-ml
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+- other
+status: research
+summary: Open pipeline trains machine-learning emulators of crop models on climate projections, reaching
+  R² of 0.97–0.98 for maize yield.
+abstract: Abstract. Global gridded crop models (GGCMs) are simulation tools designed for global, spatially
+  explicit estimation of crop productivity and associated externalities. Key areas for their application
+  are climate impact and adaptation studies. As GGCMs are typically computationally costly and require
+  comprehensive data pre- and post-processing, GGCM emulators are gaining increasing popularity. Earlier
+  emulators have typically been published pre-trained on synthetic weather and management combinations.
+  Here, we present a novel computational pipeline CROp Model Emulator Suite (CROMES) v1.0 that serves
+  for flexibly training GGCM emulators on data commonly available from GGCM simulations. Essentially,
+  CROMES consists of modules to (1) process climate data from daily resolution netCDF files to (sub-)growing
+  season aggregates as climate features, (2) combine various feature types (climate, soil, crop management),
+  (3) train emulators using machine-learning algorithms, and (4) produce predictions. Exemplary, we apply
+  CROMES to train emulators on simulations for rainfed maize from the GGCM EPIC-IIASA and climate projections
+  from a single GCM to subsequently test their skill in predicting crop yields for unseen climate projections
+  from other GCMs. Depending on the training and target data, the regression statistics between GGCM simulations
+  and predictions across all points in time and space are in the ranges R2=0.97 to 0.98, slope=0.99 to
+  1.01, and intercept=-0.06 to +0.06. The RMSE ranges between 0.49 and 0.65 t ha-1. Spatially, patterns
+  are evident with lowest performance in (semi-)arid regions where aggregation of weather data may result
+  in higher information loss while permanent crop growth limitations may hamper evaluation statistics
+  as well. The gain in computational speed for predictions is at more than an order of magnitude with
+  time required to produce target features and subsequent predictions at about 30min on common hardware.
+  We expect CROMES to be of utility in covering more comprehensively uncertainty in climate impact projections,
+  evaluations of adaptation options, and spatio-temporal assessments of crop productivity.
+significance: 3
+cited_by: 2
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,47 @@
+id: arxiv-2512.01062
+title: 'PIANO: Physics-informed Dual Neural Operator for Precipitation Nowcasting'
+authors:
+- Seokhyun Chin
+- Junghwan Park
+- Woojin Cho
+date: '2025-11-30'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2512.01062'
+  openalex: W4416994441
+links:
+  paper: https://arxiv.org/abs/2512.01062
+  pdf: https://arxiv.org/pdf/2512.01062
+topic: nowcasting
+type: model
+method:
+- neural-operator
+- physics-constrained
+- diffusion
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+- radar
+status: research
+summary: Physics-informed dual neural operator enforces advection-diffusion on satellite imagery, then
+  a generative model maps to radar for precipitation nowcasting with better 4 and 8 mm/h skill.
+abstract: Precipitation nowcasting, key for early warning of disasters, currently relies on computationally
+  expensive and restrictive methods that limit access to many countries. To overcome this challenge, we
+  propose precipitation nowcasting using satellite imagery with physics constraints for improved accuracy
+  and physical consistency. We use a novel physics-informed dual neural operator (PIANO) structure to
+  enforce the fundamental equation of advection-diffusion during training to predict satellite imagery
+  using a PINN loss. Then, we use a generative model to convert satellite images to radar images, which
+  are used for precipitation nowcasting. Compared to baseline models, our proposed model shows a notable
+  improvement in moderate (4mm/h) precipitation event prediction alongside short-term heavy (8mm/h) precipitation
+  event prediction. It also demonstrates low seasonal variability in predictions, indicating robustness
+  for generalization. This study suggests the potential of the PIANO and serves as a good baseline for
+  physics-informed precipitation nowcasting.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

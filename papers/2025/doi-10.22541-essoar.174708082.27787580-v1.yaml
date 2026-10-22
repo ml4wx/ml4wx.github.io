@@ -1,0 +1,55 @@
+id: doi-10.22541-essoar.174708082.27787580-v1
+title: Stable Machine Learning based Radiation Emulation for ICON
+authors:
+- Katharina Hafner
+- Fernando Iglesias‐Suarez
+- Sara Shamekh
+- Pierre Gentine
+- M. A. Giorgetta
+- Robert L. Pincus
+- Veronika Eyring
+date: '2025-05-12'
+year: 2025
+venue_type: other
+ids:
+  doi: 10.22541/essoar.174708082.27787580/v1
+  openalex: W4410293101
+links:
+  paper: https://doi.org/10.22541/essoar.174708082.27787580/v1
+  pdf: https://essopenarchive.org/doi/pdf/10.22541/essoar.174708082.27787580/v1
+orgs:
+- columbia-leap
+- mpi-meteorology
+topic: hybrid-parameterization
+type: model
+method:
+- other
+timescale:
+- climate
+spatial:
+- global
+data:
+- other
+status: pre-operational
+summary: An ML radiation emulator in ICON runs four times faster than RRTMGP and stays stable over 10-year
+  AMIP-like runs and +4 K SST warming.
+abstract: To enhance both accuracy and computational efficiency in Earth system models, machine learning
+  (ML)-based parameterizations are increasingly being developed as alternatives to traditional physics-based
+  schemes, particularly for subgrid-scale processes. In the context of radiation parameterization, where
+  computational demands are high, ML-based emulators offer a significant speed advantage, which is crucial
+  for reducing uncertainties associated with infrequent radiation calls. Despite promising offline performance,
+  these ML-based radiation emulators have been minimally tested in online settings. In this study, we
+  implement an ML-based radiation emulator into the ICOsahedral Non-hydrostatic (ICON) model and assess
+  its online performance in an AMIP-like simulation with prescribed sea surface temperatures, sea ice
+  concentrations, and constant greenhouse gas, excluding aerosol forcings. Our results show that the ML-based
+  emulator runs four times faster on CPU compared to the traditional RTE+RRTMGP parameterization using
+  the same radiation time step. The coupled simulation reaches a new equilibrium with a slightly altered
+  cloud distribution, but remains stable for a 10-year period tested here with no increasing divergence
+  from the reference simulations over time. The ML-based radiation scheme even runs stable in an experiment
+  in which the sea surface temperature is increased by $4~K$.
+significance: 4
+cited_by: 2
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

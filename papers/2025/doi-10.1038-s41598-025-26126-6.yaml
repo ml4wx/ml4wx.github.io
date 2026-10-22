@@ -1,0 +1,55 @@
+id: doi-10.1038-s41598-025-26126-6
+title: 'ThoR: A Motion-Dependent Physics-Informed Deep Learning Framework with Constraint-Centric Theory
+  of Functional Connections for Rainfall Nowcasting'
+authors:
+- Khang Ta Gia
+- Hoat Nguyen Van
+- Phan Thanh An
+- Nhat Phan Minh
+date: '2025-11-26'
+year: 2025
+venue: Scientific Reports
+venue_type: journal
+ids:
+  doi: 10.1038/s41598-025-26126-6
+  openalex: W4416720835
+links:
+  paper: https://doi.org/10.1038/s41598-025-26126-6
+  pdf: https://www.nature.com/articles/s41598-025-26126-6.pdf
+topic: nowcasting
+type: model
+method:
+- physics-constrained
+- diffusion
+- transformer
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: ThoR combines attention-based spatiotemporal modeling with an advection-diffusion PDE constraint
+  for radar rainfall nowcasting, outperforming baselines especially at longer lead times.
+abstract: Accurate precipitation nowcasting is crucial for mitigating the impacts of extreme weather,
+  especially as climate change increases their frequency and severity. Traditional methods, such as numerical
+  weather prediction and radar extrapolation, face limitations in short-term and high-resolution forecasting.
+  Recently, while deep learning approaches have advanced nowcasting by learning spatiotemporal patterns
+  from radar data, they often suffer from blurry results due to uncertainty predictions and limited physical
+  consistency. To deal with these challenges, we propose ThoR, a Motion-Dependent Physics-Informed Deep
+  Learning Framework with Constraint-Centric Theory of Functional Connections for Rainfall Nowcasting.
+  ThoR integrates attention-centric spatio-temporal modeling with explicit physical constraints derived
+  from partial differential equations (PDEs) for forward simulation, which employs a cascaded-branch architecture
+  that integrates an attention-driven generator with an unsupervised, lead-time-conditioned module for
+  motion field extraction. Physical consistency is enforced by weighted embedding the advection-diffusion
+  equation directly into the optimization objective, establishing a Theory of Functional Connections (TFC)
+  framework tailored for precipitation nowcasting. Extensive experiments on real-world radar datasets
+  demonstrate that ThoR consistently outperforms existing methods in deterministic metrics, particularly
+  at longer lead times and during extreme weather events, highlighting the potential of physics-informed
+  deep learning for operational nowcasting.
+significance: 3
+cited_by: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

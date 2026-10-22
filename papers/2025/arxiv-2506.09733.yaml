@@ -1,0 +1,50 @@
+id: arxiv-2506.09733
+title: 'AtmosMJ: Revisiting Gating Mechanism for AI Weather Forecasting Beyond the Year Scale'
+authors:
+- Minjong Cheon
+date: '2025-06-11'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2506.09733'
+  openalex: W4417308590
+links:
+  paper: https://arxiv.org/abs/2506.09733
+  pdf: https://arxiv.org/pdf/2506.09733
+topic: global-medium-range
+topics:
+- climate-emulation
+type: model
+method:
+- cnn
+timescale:
+- medium
+- s2s
+spatial:
+- global
+data:
+- era5
+status: research
+summary: AtmosMJ, a convolutional network on the latitude-longitude grid with gated residual fusion, gives
+  stable ERA5 forecasts for about 500 days with competitive 10-day skill.
+abstract: The advent of Large Weather Models (LWMs) has marked a turning point in data-driven forecasting,
+  with many models now outperforming traditional numerical systems in the medium range. However, achieving
+  stable, long-range autoregressive forecasts beyond a few weeks remains a significant challenge. Prevailing
+  state-of-the-art models that achieve year-long stability, such as SFNO and DLWP-HPX, have relied on
+  transforming input data onto non-standard spatial domains like spherical harmonics or HEALPix meshes.
+  This has led to the prevailing assumption that such representations are necessary to enforce physical
+  consistency and long-term stability. This paper challenges that assumption by investigating whether
+  comparable long-range performance can be achieved on the standard latitude-longitude grid. We introduce
+  AtmosMJ, a deep convolutional network that operates directly on ERA5 data without any spherical remapping.
+  The model's stability is enabled by a novel Gated Residual Fusion (GRF) mechanism, which adaptively
+  moderates feature updates to prevent error accumulation over long recursive simulations. Our results
+  demonstrate that AtmosMJ produces stable and physically plausible forecasts for about 500 days. In quantitative
+  evaluations, it achieves competitive 10-day forecast accuracy against models like Pangu-Weather and
+  GraphCast, all while requiring a remarkably low training budget of 5.7 days on a V100 GPU. Our findings
+  suggest that efficient architectural design, rather than non-standard data representation, can be the
+  key to unlocking stable and computationally efficient long-range weather prediction.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

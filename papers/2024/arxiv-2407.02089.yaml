@@ -1,0 +1,53 @@
+id: arxiv-2407.02089
+title: 'GPTCast: a weather language model for precipitation nowcasting'
+authors:
+- Gabriele Franch
+- Elena Tomasi
+- Rishabh Wanjari
+- Virginia Poli
+- Chiara Cardinali
+- Pier Paolo Alberoni
+- Marco Cristoforetti
+date: '2024-07-02'
+year: 2024
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  arxiv: '2407.02089'
+  doi: 10.5194/gmd-18-5351-2025
+  openalex: W4413766817
+links:
+  paper: https://doi.org/10.5194/gmd-18-5351-2025
+  pdf: https://arxiv.org/pdf/2407.02089
+topic: nowcasting
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- transformer
+- gan-vae
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: GPTCast tokenizes radar images with a VQ-VAE and forecasts ensembles with a GPT model, outperforming
+  extrapolation baselines on six years of Emilia-Romagna precipitation data.
+abstract: This work introduces GPTCast, a generative deep-learning method for ensemble nowcast of radar-based
+  precipitation, inspired by advancements in large language models (LLMs). We employ a GPT model as a
+  forecaster to learn spatiotemporal precipitation dynamics using tokenized radar images. The tokenizer
+  is based on a Quantized Variational Autoencoder featuring a novel reconstruction loss tailored for the
+  skewed distribution of precipitation that promotes faithful reconstruction of high rainfall rates. The
+  approach produces realistic ensemble forecasts and provides probabilistic outputs with accurate uncertainty
+  estimation. The model is trained without resorting to randomness, all variability is learned solely
+  from the data and exposed by model at inference for ensemble generation. We train and test GPTCast using
+  a 6-year radar dataset over the Emilia-Romagna region in Northern Italy, showing superior results compared
+  to state-of-the-art ensemble extrapolation methods.
+significance: 4
+cited_by: 10
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

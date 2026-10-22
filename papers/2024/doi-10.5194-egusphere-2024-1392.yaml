@@ -1,0 +1,58 @@
+id: doi-10.5194-egusphere-2024-1392
+title: Infilling of Missing Rainfall Radar Data with a Memory-Assisted Deep Learning Approach
+authors:
+- Johannes Meuer
+- Laurens M. Bouwer
+- Frank Kaspar
+- Roman Lehmann
+- Wolfgang Karl
+- Thomas G. Ludwig
+- Christopher Kadow
+date: '2024-07-22'
+year: 2024
+venue: Hydrology and earth system sciences
+venue_type: journal
+ids:
+  doi: 10.5194/egusphere-2024-1392
+  openalex: W4400886965
+links:
+  paper: https://doi.org/10.5194/hess-29-3687-2025
+orgs:
+- dwd
+- kit
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+- rnn
+spatial:
+- regional
+data:
+- radar
+- stations
+status: research
+summary: A CNN with a temporal memory component infills gaps in the 1 km RADKLIM radar-station rainfall
+  dataset over Germany, including during the 2021 Ahr flood event.
+abstract: Abstract. Incomplete spatio-temporal meteorological observations can result in misinterpretations
+  of the current climate state, uncertainties in early warning systems, or inaccuracies in nowcasting
+  models and can thereby pose signficant challanges in hydrology research or similar applications. Traditional
+  statistical methods for infilling missing precipitation data demand substantial computational resources
+  and fail over large areas with sparse data – like temporary outages of weather radars. Although recent
+  machine learning advancements have shown promise in addressing missing meteorological or satellite observations,
+  they typically focus on spatial aspects, overlooking the complex spatio-temporal variability characteristic
+  of precipitation, especially during extreme events. We propose a deep convolutional neural network enhanced
+  with a temporal memory component to better account for temporal changes in precipitation fields. This
+  approach can analyse arbitrary sequences from before and/or after the incomplete observation of interest.
+  Our model is trained and evaluated on the hourly RADKLIM dataset, which features 1-km resolution precipitation
+  derived from combined radar and weather station data across Germany. By infilling both synthetic and
+  actual data gaps of RADKLIM, the study demonstrates the model's effectiveness, providing detailed insights
+  into its capabilities during significant rainfall events, such as those in May 2012 and July 2021, including
+  those responsible for the Ahrtal flood. This novel approach represents a step forward in hydrological
+  applications, potentially improving the way we predict and manage water-related events by increasing
+  the accuracy and reliability of precipitation data analysis.
+significance: 3
+cited_by: 5
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

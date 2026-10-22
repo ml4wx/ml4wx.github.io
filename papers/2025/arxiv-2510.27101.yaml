@@ -1,0 +1,53 @@
+id: arxiv-2510.27101
+title: A Hierarchical Deep Learning Model for Predicting Pedestrian-Level Urban Winds
+authors:
+- Reda Snaiki
+- Jiachen Lu
+- Shaopeng Li
+- Negin Nazarian
+date: '2025-10-31'
+year: 2025
+venue: Building and Environment
+venue_type: journal
+ids:
+  arxiv: '2510.27101'
+  doi: 10.1016/j.buildenv.2026.114354
+  openalex: W7128536758
+links:
+  paper: https://doi.org/10.1016/j.buildenv.2026.114354
+  pdf: https://arxiv.org/pdf/2510.27101
+topic: applications-impacts
+type: model
+method:
+- cnn
+- gan-vae
+spatial:
+- local
+data:
+- km-scale-sim
+status: research
+summary: A U-Net predictor followed by a multi-scale cGAN refiner restores high-frequency detail in pedestrian-level
+  urban wind fields, cutting validation RMSE by 60% versus the baseline.
+abstract: Deep learning-based surrogate models offer a computationally efficient alternative to high-fidelity
+  computational fluid dynamics (CFD) simulations for predicting urban wind flow. However, conventional
+  approaches usually only yield low-frequency predictions (essentially averaging values from proximate
+  pixels), missing critical high-frequency details such as sharp gradients and peak wind speeds. This
+  study proposes a hierarchical approach for accurately predicting pedestrian-level urban winds, which
+  adopts a two-stage predictor-refiner framework. In the first stage, a U-Net architecture generates a
+  baseline prediction from urban geometry. In the second stage, a conditional Generative Adversarial Network
+  (cGAN) refines this baseline by restoring the missing high-frequency content. The cGAN's generator incorporates
+  a multi-scale architecture with stepwise kernel sizes, enabling simultaneous learning of global flow
+  structures and fine-grained local features. Trained and validated on the UrbanTALES dataset with comprehensive
+  urban configurations, the proposed hierarchical framework significantly outperforms the baseline predictor.
+  With a marked qualitative improvement in resolving high-speed wind jets and complex turbulent wakes
+  as well as wind statistics, the results yield quantitative enhancement in prediction accuracy (e.g.,
+  RMSE reduced by 76% for the training set and 60% for the validation set). This work presents an effective
+  and robust methodology for enhancing the prediction fidelity of surrogate models in urban planning,
+  pedestrian comfort assessment, and wind safety analysis. The proposed model will be integrated into
+  an interactive web platform as Feilian Version 2.
+significance: 3
+cited_by: 8
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

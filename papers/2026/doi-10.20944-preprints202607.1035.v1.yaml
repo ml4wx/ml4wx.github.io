@@ -1,0 +1,58 @@
+id: doi-10.20944-preprints202607.1035.v1
+title: 'Why Deterministic AI Weather Models Fail at Extremes and Physical Conservation: From the Perspective
+  of Probabilistic Mean Field'
+authors:
+- Yihui Ding
+- Baoheng Yao
+- Jie Yang
+- Wenlei Peng
+date: '2026-07-15'
+year: 2026
+venue: Preprints.org
+venue_type: preprint
+ids:
+  doi: 10.20944/preprints202607.1035.v1
+  openalex: W7169795284
+links:
+  paper: https://doi.org/10.20944/preprints202607.1035.v1
+topic: xai-uq-physics
+topics:
+- probabilistic-ensembles
+type: position
+method:
+- cnn
+- diffusion
+timescale:
+- short
+spatial:
+- global
+data:
+- other
+status: research
+summary: Argues via a Markov framework that MSE-trained deterministic AI weather models over-smooth and
+  violate conservation, while diffusion models recover the transition law.
+abstract: 'Abstract Deterministic AI weather and ocean models are far more computationally efficient and
+  achieve lower mean-square error than state-of-the-art operational forecasts, yet they are widely criticized
+  for smoothing small scales, underestimating extremes, and violating physical constraints. We offer a
+  unified Markov-Process explanation: MSE-trained deterministic models learn the conditional mean E[x_{t+Δt}
+  | x_t] rather than the full transition law P(x_{t+Δt} | x_t), which links low RMSE to over-smoothing
+  and underestimation of extremes. Moreover, this conditional mean represents a linear combination of
+  potential physical states, and thus violates the basic property of nonlinear dynamics that linear combinations
+  of solutions are in general not solutions of the governing equations, which accounts for the fundamental
+  origin of physical-conservation violations in deterministic models. We first establish the corresponding
+  mathematical analysis, and then support the theory with a finite-state Markov experiment and a stochastically
+  perturbed Kelvin-Helmholtz fluid experiment using matched U-Net backbones. Both experiments show that
+  deterministic models can attain lower next-step RMSE, but at the cost of almost completely discarding
+  next-step distributional information relative to models that recover the full transition law. Although
+  our analysis focuses on deterministic models trained with an RMSE loss as a representative case, the
+  conclusions apply to deterministic forecasting models more generally. From an information-entropy perspective,
+  deterministic forecasts are low-entropy at each step and overconfident relative to atmospheric and oceanic
+  variability, whereas diffusion models sample from conditional transition distributions and better match
+  intrinsic complexity. Accordingly, distributional generative methods may be better suited to future
+  AI weather prediction, reconstruction, and bias correction.'
+significance: 4
+cited_by: 0
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

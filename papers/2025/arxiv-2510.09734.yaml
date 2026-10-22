@@ -1,0 +1,51 @@
+id: arxiv-2510.09734
+title: 'ARROW: An Adaptive Rollout and Routing Method for Global Weather Forecasting'
+authors:
+- Jindong Tian
+- Yifei Ding
+- Ronghui Xu
+- Hao Miao
+- Chenjuan Guo
+- Bin Yang
+date: '2025-10-10'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2510.09734'
+links:
+  paper: https://arxiv.org/abs/2510.09734
+  pdf: https://arxiv.org/pdf/2510.09734
+topic: global-medium-range
+type: model
+method:
+- reinforcement-learning
+- other
+timescale:
+- short
+- medium
+spatial:
+- global
+status: research
+summary: ARROW combines multi-interval mixture-of-experts forecasting with an RL-based adaptive rollout
+  scheduler and ring positional encoding for global weather forecasts up to 5 days.
+abstract: 'Weather forecasting is a fundamental task in spatiotemporal data analysis, with broad applications
+  across a wide range of domains. Existing data-driven forecasting methods typically model atmospheric
+  dynamics over a fixed short time interval, e.g., 6 hours, and rely on naive autoregression-based rollout
+  for long-term forecasting, e.g., 5 days. However, this paradigm suffers from two key limitations: (1)
+  it often inadequately models the spatial and multi-scale temporal dependencies inherent in global weather
+  systems, and (2) the rollout strategy struggles to balance error accumulation with the capture of fine-grained
+  atmospheric variations. In this study, we propose ARROW, an Adaptive-Rollout Multi-scale temporal Routing
+  method for Global Weather Forecasting. To contend with the first limitation, we construct a multi-interval
+  forecasting model that forecasts weather across different time intervals. Within the model, the Shared-Private
+  Mixture-of-Experts captures both shared patterns and specific characteristics of atmospheric dynamics
+  across different time scales, while Ring Positional Encoding accurately encodes the circular latitude
+  structure of the Earth when representing spatial information. For the second limitation, we develop
+  an adaptive rollout scheduler based on reinforcement learning, which selects the most suitable time
+  interval to forecast according to the current weather state. Experimental results demonstrate that ARROW
+  achieves state-of-the-art performance in global weather forecasting, establishing a promising paradigm
+  in this field.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

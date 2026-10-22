@@ -1,0 +1,56 @@
+id: arxiv-2401.00035
+title: Learning About Structural Errors in Models of Complex Dynamical Systems
+authors:
+- Jin-Long Wu
+- Matthew E. Levine
+- Tapio Schneider
+- Andrew Stuart
+date: '2023-12-29'
+year: 2023
+venue: Journal of Computational Physics
+venue_type: journal
+ids:
+  arxiv: '2401.00035'
+  doi: 10.1016/j.jcp.2024.113157
+  openalex: W4399244200
+links:
+  paper: https://doi.org/10.1016/j.jcp.2024.113157
+  pdf: https://arxiv.org/pdf/2401.00035
+orgs:
+- caltech
+topic: hybrid-parameterization
+topics:
+- data-assimilation
+type: model
+method:
+- other
+data:
+- other
+status: research
+summary: Framework for learning structural-error closure models with derivative-free Kalman inversion
+  and sparsity constraints, illustrated on complex systems motivated by climate cloud processes.
+abstract: Complex dynamical systems are notoriously difficult to model because some degrees of freedom
+  (e.g., small scales) may be computationally unresolvable or are incompletely understood, yet they are
+  dynamically important. For example, the small scales of cloud dynamics and droplet formation are crucial
+  for controlling climate, yet are unresolvable in global climate models. Semi-empirical closure models
+  for the effects of unresolved degrees of freedom often exist and encode important domain-specific knowledge.
+  Building on such closure models and correcting them through learning the structural errors can be an
+  effective way of fusing data with domain knowledge. Here we describe a general approach, principles,
+  and algorithms for learning about structural errors. Key to our approach is to include structural error
+  models inside the models of complex systems, for example, in closure models for unresolved scales. The
+  structural errors then map, usually nonlinearly, to observable data. As a result, however, mismatches
+  between model output and data are only indirectly informative about structural errors, due to a lack
+  of labeled pairs of inputs and outputs of structural error models. Additionally, derivatives of the
+  model may not exist or be readily available. We discuss how structural error models can be learned from
+  indirect data with derivative-free Kalman inversion algorithms and variants, how sparsity constraints
+  enforce a "do no harm" principle, and various ways of modeling structural errors. We also discuss the
+  merits of using non-local and/or stochastic error models. In addition, we demonstrate how data assimilation
+  techniques can assist the learning about structural errors in non-ergodic systems. The concepts and
+  algorithms are illustrated in two numerical examples based on the Lorenz-96 system and a human glucose-insulin
+  model.
+significance: 3
+cited_by: 26
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

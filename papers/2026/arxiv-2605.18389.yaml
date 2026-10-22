@@ -1,0 +1,44 @@
+id: arxiv-2605.18389
+title: 'Spherical Harmonic Optimal Transport: Application to Climate Models Comparisons'
+authors:
+- Pierre Houédry
+- Iskander Legheraba
+- Léo Buecher
+- Nicolas Courty
+date: '2026-05-18'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.18389'
+  openalex: W7161727963
+links:
+  paper: https://arxiv.org/abs/2605.18389
+  pdf: https://arxiv.org/pdf/2605.18389
+topic: climate-analysis-attribution
+type: model
+method:
+- classical-ml
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: Fast spherical Sinkhorn optimal transport with heat-kernel convergence guarantees, applied to
+  compare global climate model outputs across space and season.
+abstract: Optimal transport provides a powerful framework for comparing measures while respecting the
+  geometry of their support, but comes with an expensive computational cost, hindering its potential application
+  to real world use cases. On manifolds, convolutional algorithms based on the heat kernel have been proposed
+  to alleviate this cost, but their theoretical properties remain largely unexplored. We establish that
+  the heat kernel cost converges to the optimal transport cost as time vanishes in the balanced and unbalanced
+  cases. In the specific case of the 2-sphere $\mathbb{S}^2$, we ensure that the associated Sinkhorn divergences
+  retains the desirable geometric and analytic properties of classical optimal transport discrepancies.
+  Moreover, we leverage the harmonic structure of the sphere to derive a fast Sinkhorn algorithm, requiring
+  only $\mathcal{O}(n)$ memory and $\mathcal{O}(n^{3/2})$ time per iteration, with fully dense GPU-friendly
+  operations. We validate its computational efficiency on synthetic data, and discuss its potential use
+  in the evaluation of global climate models, providing both spatial and seasonal insights into models
+  performances.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

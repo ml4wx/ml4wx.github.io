@@ -1,0 +1,41 @@
+id: arxiv-2511.13935
+title: 'Weather Maps as Tokens: Transformers for Renewable Energy Forecasting'
+authors:
+- Federico Battini
+date: '2025-11-17'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2511.13935'
+  openalex: W4417209623
+links:
+  paper: https://arxiv.org/abs/2511.13935
+  pdf: https://arxiv.org/pdf/2511.13935
+topic: applications-impacts
+type: model
+method:
+- transformer
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+status: pre-operational
+summary: Hourly weather maps encoded by a CNN and modelled by a transformer cut wind and solar forecast
+  RMSE by about 60% and 20% versus ENTSO-E operational forecasts.
+abstract: 'Accurate renewable energy forecasting is essential to reduce dependence on fossil fuels and
+  enabling grid decarbonization. However, current approaches fail to effectively integrate the rich spatial
+  context of weather patterns with their temporal evolution. This work introduces a novel approach that
+  treats weather maps as tokens in transformer sequences to predict renewable energy. Hourly weather maps
+  are encoded as spatial tokens using a lightweight convolutional neural network, and then processed by
+  a transformer to capture temporal dynamics across a 45-hour forecast horizon. Despite disadvantages
+  in input initialization, evaluation against ENTSO-E operational forecasts shows a reduction in RMSE
+  of about 60% and 20% for wind and solar respectively. A live dashboard showing daily forecasts is available
+  at: https://www.sardiniaforecast.ifabfoundation.it.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,59 @@
+id: doi-10.1109-jstars.2026.3718414
+title: Two-Stage Physics-Informed Neural Network for 4-D Wind Field Reconstruction From Single-Doppler
+  Phased-Array Radar Observations
+authors:
+- Youcao Wu
+- Yunli Peng
+- Rongchi Liang
+- Lang Huang
+- Yifu Zhang
+- Jingyi Sun
+- Pak Wai Chan
+- Hai Li
+- Chun Shen
+- Jianbing Li
+date: '2026-01-01'
+year: 2026
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2026.3718414
+  openalex: W7172050623
+links:
+  paper: https://doi.org/10.1109/jstars.2026.3718414
+topic: observations-remote-sensing
+topics:
+- data-assimilation
+- xai-uq-physics
+type: model
+method:
+- physics-constrained
+spatial:
+- local
+data:
+- radar
+- km-scale-sim
+status: research
+summary: Two-stage physics-informed neural network reconstructs 4-D wind fields from single-Doppler radar,
+  cutting wind-speed RMSE by 30% versus 3D-VAR.
+abstract: While physics-informed neural networks (PINNs) provide a robust framework for integrating observational
+  data with physical laws, their application to Doppler radar wind field reconstruction is frequently
+  hindered by nonconvex optimization and peak velocity underestimation. To address these limitations,
+  this article proposes a two-stage PINN (TS-PINN) framework incorporating proxy background initialization
+  and physics-informed regularization for four-dimensional (4-D) wind field reconstruction from single-Doppler
+  radar observations. The first stage employs an orthogonal basis function expansion retrieval method
+  to generate a proxy background wind field for pretraining, effectively guiding the optimization trajectory
+  away from spurious local minima. In the second stage, the network is fine-tuned against radial observations
+  and the anelastic Navier–Stokes equations to resolve complex nonlinear dynamics and achieve physics-based
+  field completion within the sampled spatiotemporal domain. Simulations of a mesoscale typhoon and a
+  fine-scale microburst demonstrate that TS-PINN accurately reconstructs 4-D velocity fields, achieving
+  reductions of 30.36% and 39.98% in the root mean square error of wind speed and direction, respectively,
+  compared to traditional three-dimensional variational method (3D-VAR) and basic PINN baselines. Field
+  experiments further validate that TS-PINN successfully retrieves full wind vectors from single-radar
+  data, showing good agreement with triple-radar variational retrieval products within observable regions.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

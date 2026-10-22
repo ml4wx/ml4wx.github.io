@@ -1,0 +1,60 @@
+id: doi-10.5194-amt-17-6707-2024
+title: Severe-hail detection with C-band dual-polarisation radars using convolutional neural networks
+authors:
+- V. Forcadell
+- C. Augros
+- O. Caumont
+- Kévin Dedieu
+- Maxandre Ouradou
+- Cloé David
+- J. F. I. Ventura
+- Olivier Laurantin
+- H. Al-Sakka
+date: '2024-11-26'
+year: 2024
+venue: Atmospheric Measurement Techniques
+venue_type: journal
+ids:
+  doi: 10.5194/amt-17-6707-2024
+  openalex: W4404729138
+links:
+  paper: https://doi.org/10.5194/amt-17-6707-2024
+  pdf: https://amt.copernicus.org/articles/17/6707/2024/amt-17-6707-2024.pdf
+orgs:
+- meteo-france
+topic: extremes-hazards
+topics:
+- observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: CNN on C-band dual-polarisation radar images detects severe hail at the ground, outperforming
+  existing radar hail proxies on a 2018–2023 test set.
+abstract: Abstract. Radar has consistently proven to be the most reliable source of information for the
+  remote detection of hail within storms in real-time. Currently, existing hail detection techniques have
+  limited ability to clearly distinguish storms that produce severe hail from those that do not. This
+  often results in a prohibitive number of false alarms that hamper real-time decision-making. This study
+  utilises convolutional neural network (CNN) models trained on dual-polarisation radar data to detect
+  severe hail occurrence on the ground. The morphology of the storms is studied by leveraging the capabilities
+  of a CNN. A database of images of 60 km x 60 km containing 19 different radar-derived features is built
+  above severe hail reports (above 2 cm) and above rain or small hail reports (rain or hail below 2 cm)
+  created for the occasion with the help of a cell-identification algorithm. After a tuning phase on the
+  CNN architecture and its input size, the CNN is trained to output one probability of severe hail on
+  the ground per image of 30 km x 30 km. A test set of 1396 images between 2018 and 2023 demonstrates
+  that the CNN method outperforms state-of-the-art methods according to various metrics. A feature importance
+  study indicates that existing hail proxies as input features are beneficial to the CNN, particularly
+  the maximum estimated size of hail (MESH). The study demonstrates that many of the existing radar hail
+  proxies can be adjusted using a threshold value and a threshold area to achieve similar performance
+  to that of the CNN for severe hail detection. Finally, the output of ten fitted CNN models in inference
+  mode on a hail event is shown.
+significance: 4
+cited_by: 11
+score: 51
+highlight: false
+added: '2026-10-22'
+source: snowball

@@ -1,0 +1,52 @@
+id: doi-10.11922-11-6035.csd.2025.0136.zh
+title: A dataset of 1-km daily precipitation over the Yanshan-Taihang Mountains from 2001 to 2024
+authors:
+- Ziliang CHEN
+- Yan Nana
+- Qifeng Zhuang
+- Liu Xinhan
+date: '2026-06-01'
+year: 2026
+venue: China Scientific Data
+venue_type: journal
+ids:
+  doi: 10.11922/11-6035.csd.2025.0136.zh
+  openalex: W7164030943
+links:
+  paper: https://doi.org/10.11922/11-6035.csd.2025.0136.zh
+  pdf: https://www.sciengine.com/doi/pdf/E9578B6C830947DFB7593D2407A40CB3
+topic: downscaling
+type: benchmark
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- other
+status: pre-operational
+summary: XGBoost downscales GPM IMERG to a 1-km daily precipitation dataset for 2001–2024 over Yanshan-Taihang,
+  with MAE of 1.51 mm.
+abstract: Yanshan-Taihang Mountains are located in the central and northern part of North China. The precipitation
+  distribution in this mountainous area is influenced by various factors such as terrain and landform.
+  While precipitation exhibits large spatial variability, extreme weather events occur frequently, showing
+  significant spatial and temporal changes. This dataset is based on GPM IMERG V07 precipitation product,
+  combined with multi-source remote sensing environmental variables (vegetation index, land surface temperature,
+  slope, etc.), and a machine-learning-based statistical downscaling approach using XGBoost was employed
+  to generate a dataset of 1-km annual precipitation over the Yanshan-Taihang Mountains in China from
+  2001 to 2024; through geo-weighted proportional decomposition and sliding window techniques, multi-level
+  downscaling from annual precipitation to monthly and daily scales was conducted, resulting in a dataset
+  of 1 km monthly and daily precipitation over Yanshan-Taihang Mountains, thereby improving the spatial
+  and temporal accuracy of regional precipitation estimates. The dataset spans from January 1, 2001 to
+  December 31, 2024, covering a spatial extent of 36°–42°N and 113°–120°E. It is provided in GeoTIFF format
+  under the WGS-84 coordinate system, with precipitation units in millimeters (mm). This dataset features
+  high spatiotemporal resolution and reliability. After rigorous validation (MAE=1.51 mm、KGE=0.58), it
+  can be applied to meteorological disaster assessment, ecological environment evaluation, and extreme
+  climate monitoring and analysis. It provides related modeling studies with high-resolution and high-accuracy
+  precipitation data support.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

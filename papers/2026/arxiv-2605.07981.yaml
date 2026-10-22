@@ -1,0 +1,50 @@
+id: arxiv-2605.07981
+title: 'Learning from Translation: Seasonal Errors and Feature Importance of the ERA5 Turbulence Predictions'
+authors:
+- Arial Tolentino
+- Markus Petters
+- Luat T. Vuong
+date: '2026-05-08'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.07981'
+  openalex: W7160826265
+links:
+  paper: https://arxiv.org/abs/2605.07981
+  pdf: https://arxiv.org/pdf/2605.07981
+topic: applications-impacts
+type: application
+method:
+- classical-ml
+spatial:
+- local
+data:
+- era5
+- stations
+status: research
+summary: Machine learning predicts near-surface optical turbulence from ERA5 inputs, with solar radiation
+  the dominant feature and performance strongest in summer across two sites.
+abstract: Turbulence is a phenomena that is {\it locally} and statistically characterized by measurements,
+  but it is caused by {\it nonlocal} energy cascades associated with the environment. The presence of
+  turbulence coincides with fluctuations in the refractive index, which impact optical sensing, imaging,
+  and signaling applications. Here, we study the machine learning models that predict near-surface optical
+  turbulence strength $C_n^2$, derived from anemometer-based surface flux measurements through Monin-Obukhov
+  similarity theory, using ERA5 reanalysis data as model inputs. We evaluate the model's ability to perform
+  temporal extrapolation by training on one year of co-located $C_n^2$ observations and ERA5 data, and
+  applying the model to ERA5 data from other years at the same site to reconstruct a multi-year time series.
+  We compare the predictions across Southern California and New York. In spite of varying weather and
+  terrain, the ML models show consistent performance and seasonal behavior across training years. All
+  models show greater correlation, faster convergence, and lower prediction errors in the summer. However,
+  some ERA5 features drive predictions in New York but not California and vice versa, and such feature
+  dependence depends on the season. Seasonal error and feature trends suggest that turbulence is affected
+  by atmospheric composition or other seasonal environmental considerations that are not currently monitored
+  by ERA5. We find, regardless of terrain, the primary feature of importance to turbulence prediction
+  is solar radiation, which underlines the central role of radiative energy transfer in driving atmospheric
+  turbulence. We point toward physics-informed ML translation and feature selection as tools for improving
+  the generalizability of data-driven models.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

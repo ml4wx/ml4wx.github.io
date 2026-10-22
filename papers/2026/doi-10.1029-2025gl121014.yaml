@@ -1,0 +1,51 @@
+id: doi-10.1029-2025gl121014
+title: CNN‐Based Retrieval of 3D Cloud Structures Solely From Geostationary Satellite Imagery
+authors:
+- Chi Yang
+- Fu Wang
+- Qifeng Lu
+- Ruixia Liu
+- Xiaofei Yang
+- Jiaxin Cheng
+- Yong Cao
+- Zhuoya Ni
+date: '2026-03-03'
+year: 2026
+venue: Geophysical Research Letters
+venue_type: journal
+ids:
+  doi: 10.1029/2025gl121014
+  openalex: W7134169771
+links:
+  paper: https://doi.org/10.1029/2025gl121014
+orgs:
+- cma
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: A compact 1D CNN reconstructs 38-layer 3D cloud masks from Himawari-8 imagery alone, reaching
+  IoU 0.873 against CALIPSO/CloudSat profiles.
+abstract: Abstract The cloud vertical structure (CVS) is important, yet operational CVS products depend
+  on active observation or reanalysis fields, limiting high‐frequency monitoring. In this study, we propose
+  a lightweight and satellite‐only model that reconstructs volumetric cloud masks from geostationary multispectral
+  imagery. This method employs a compact one‐dimensional convolutional neural network that combines three
+  convolutional layers, channel attention and L1 regularization, which is trained on CALIPSO/CloudSat
+  joint profiles and Himawari‐8 multispectral observations. The network produces per‐pixel 38‐layer cloud
+  masks at 500 m vertical resolution and attains strong performance (Intersection over Union = 0.8730;
+  mean absolute error of cloud thicknes = 0.4651 km; cloud top height bias ≈453.25 m). Ablation experiments
+  demonstrate that the chosen architecture and regularization considerably improve layer discrimination.
+  A case study of Typhoon Yutu shows that the reconstructed three‐dimensional structure is consistent
+  with active‐sensor profiles. This observation‐only retrieval reconstructs CVS independent of meteorological
+  inputs, avoiding potential double‐use of geostationary data.
+significance: 4
+cited_by: 1
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

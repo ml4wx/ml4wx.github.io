@@ -1,0 +1,57 @@
+id: arxiv-2602.12117
+title: 'KAN-FIF: Spline-Parameterized Lightweight Physics-based Tropical Cyclone Estimation on Meteorological
+  Satellite'
+authors:
+- Jiakang Shen
+- Qinghui Chen
+- Runtong Wang
+- Chenrui Xu
+- Jinglin Zhang
+- Cong Bai
+- Feng Zhang
+date: '2026-02-12'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2602.12117'
+  openalex: W7128836081
+links:
+  paper: https://arxiv.org/abs/2602.12117
+  pdf: https://arxiv.org/pdf/2602.12117
+  code: https://github.com/Jinglin-Zhang/KAN-FIF
+orgs:
+- fudan-university
+topic: extremes-hazards
+topics:
+- observations-remote-sensing
+type: model
+method:
+- other
+- cnn
+spatial:
+- regional
+data:
+- satellite
+status: pre-operational
+summary: Lightweight KAN-based network estimates tropical cyclone maximum wind from FY-4 satellite data,
+  cutting parameters 94.8% and running on edge hardware.
+abstract: Tropical cyclones (TC) are among the most destructive natural disasters, causing catastrophic
+  damage to coastal regions through extreme winds, heavy rainfall, and storm surges. Timely monitoring
+  of tropical cyclones is crucial for reducing loss of life and property, yet it is hindered by the computational
+  inefficiency and high parameter counts of existing methods on resource-constrained edge devices. Current
+  physics-guided models suffer from linear feature interactions that fail to capture high-order polynomial
+  relationships between TC attributes, leading to inflated model sizes and hardware incompatibility. To
+  overcome these challenges, this study introduces the Kolmogorov-Arnold Network-based Feature Interaction
+  Framework (KAN-FIF), a lightweight multimodal architecture that integrates MLP and CNN layers with spline-parameterized
+  KAN layers. For Maximum Sustained Wind (MSW) prediction, experiments demonstrate that the KAN-FIF framework
+  achieves a $94.8\%$ reduction in parameters (0.99MB vs 19MB) and $68.7\%$ faster inference per sample
+  (2.3ms vs 7.35ms) compared to baseline model Phy-CoCo, while maintaining superior accuracy with $32.5\%$
+  lower MAE. The offline deployment experiment of the FY-4 series meteorological satellite processor on
+  the Qingyun-1000 development board achieved a 14.41ms per-sample inference latency with the KAN-FIF
+  framework, demonstrating promising feasibility for operational TC monitoring and extending deployability
+  to edge-device AI applications. The code is released at https://github.com/Jinglin-Zhang/KAN-FIF.
+significance: 2
+score: 53
+highlight: false
+added: '2026-10-22'
+source: backfill

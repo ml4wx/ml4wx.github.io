@@ -1,0 +1,55 @@
+id: arxiv-2508.07410
+title: Leveraging GNN to Enhance MEF Method in Predicting ENSO
+authors:
+- Saghar Ganji
+- Ahmad Reza Labibzadeh
+- Alireza Hassani
+- Mohammad Naisipour
+date: '2025-08-10'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2508.07410'
+  openalex: W4416242141
+links:
+  paper: https://arxiv.org/abs/2508.07410
+  pdf: https://arxiv.org/pdf/2508.07410
+topic: s2s-seasonal
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- gnn
+- cnn
+timescale:
+- seasonal
+spatial:
+- global
+data:
+- other
+status: research
+summary: Graph-based selection of 20 of 80 ensemble members from the MEF ENSO model via community detection
+  improves long-lead ENSO skill and yields more stable forecasts.
+abstract: 'Reliable long-lead forecasting of the El Nino Southern Oscillation (ENSO) remains a long-standing
+  challenge in climate science. The previously developed Multimodal ENSO Forecast (MEF) model uses 80
+  ensemble predictions by two independent deep learning modules: a 3D Convolutional Neural Network (3D-CNN)
+  and a time-series module. In their approach, outputs of the two modules are combined using a weighting
+  strategy wherein one is prioritized over the other as a function of global performance. Separate weighting
+  or testing of individual ensemble members did not occur, however, which may have limited the model to
+  optimize the use of high-performing but spread-out forecasts. In this study, we propose a better framework
+  that employs graph-based analysis to directly model similarity between all 80 members of the ensemble.
+  By constructing an undirected graph whose vertices are ensemble outputs and whose weights on edges measure
+  similarity (via RMSE and correlation), we identify and cluster structurally similar and accurate predictions.
+  From which we obtain an optimized subset of 20 members using community detection methods. The final
+  prediction is then obtained by averaging this optimized subset. This method improves the forecast skill
+  through noise removal and emphasis on ensemble coherence. Interestingly, our graph-based selection shows
+  robust statistical characteristics among top performers, offering new ensemble behavior insights. In
+  addition, we observe that while the GNN-based approach does not always outperform the baseline MEF under
+  every scenario, it produces more stable and consistent outputs, particularly in compound long-lead situations.
+  The approach is model-agnostic too, suggesting that it can be applied directly to other forecasting
+  models with gargantuan ensemble outputs, such as statistical, physical, or hybrid models.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

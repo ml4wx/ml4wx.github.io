@@ -1,0 +1,58 @@
+id: arxiv-2507.19759
+title: A Machine Learning Framework for Predicting Microphysical Properties of Ice Crystals from Cloud
+  Particle Imagery
+authors:
+- Joseph Ko
+- Jerry Harrington
+- Kara Sulia
+- Vanessa Przybylo
+- Marcus van Lier-Walqui
+- Kara Lamb
+date: '2025-07-26'
+year: 2025
+venue: Journal of Geophysical Research Machine Learning and Computation
+venue_type: journal
+ids:
+  arxiv: '2507.19759'
+  doi: 10.1029/2025jh000905
+  openalex: W4417031313
+links:
+  paper: https://doi.org/10.1029/2025jh000905
+  pdf: https://arxiv.org/pdf/2507.19759
+orgs:
+- columbia-leap
+- nasa
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- local
+data:
+- other
+status: research
+summary: ResNet-18 models predict 3D ice crystal density, surface area and bullet count from 2D cloud-particle
+  imagery, reaching R² of 0.99 and reducing RMSE by 40% with stereo views.
+abstract: The microphysical properties of ice crystals are important because they significantly alter
+  the radiative properties and spatiotemporal distributions of clouds, which in turn strongly affect Earth's
+  climate. However, it is challenging to measure key properties of ice crystals, such as mass or morphological
+  features. Here, we present a framework for predicting three-dimensional (3D) microphysical properties
+  of ice crystals from in situ two-dimensional (2D) imagery. First, we computationally generate synthetic
+  ice crystals using 3D modeling software along with geometric parameters estimated from the 2021 Ice
+  Cryo-Encapsulation Balloon (ICEBall) field campaign. Then, we use synthetic crystals to train machine
+  learning (ML) models to predict effective density ($ρ_{e}$), effective surface area ($A_e$), and number
+  of bullets ($N_b$) from synthetic rosette imagery. When tested on unseen synthetic images, we find that
+  our ML models can predict microphysical properties with high accuracy. For $ρ_{e}$ and $A_e$, respectively,
+  our best-performing single view models achieved $R^2$ values of 0.99 and 0.98. For $N_b$, our best single
+  view model achieved a balanced accuracy and F1 score of 0.91. We also quantify the marginal prediction
+  improvements from incorporating a second view. A stereo view ResNet-18 model reduced RMSE by 40% for
+  both $ρ_e$ and $A_e$, relative to a single view ResNet-18 model. For $N_b$, we find that a stereo view
+  ResNet-18 model improved the F1 score by 8%. This work provides a novel ML-driven framework for estimating
+  ice microphysical properties from in situ imagery, which will allow for downstream constraints on microphysical
+  parameterizations, such as the mass-size relationship.
+significance: 3
+cited_by: 1
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

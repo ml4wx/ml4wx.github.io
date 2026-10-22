@@ -1,0 +1,54 @@
+id: arxiv-2610.21639
+title: 'DIAL: Dynamic and Informed Adjustment of the Native Stochastic Law for Reliable Weather Ensembles'
+authors:
+- Yucheng Wang
+- Haonan Guo
+- Tianhao Zhao
+- Di Wang
+- Yu Wu
+- Zengmao Wang
+- Bo Du
+date: '2026-10-15'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.21639'
+  openalex: W7222483571
+links:
+  paper: https://arxiv.org/abs/2610.21639
+  pdf: https://arxiv.org/pdf/2610.21639
+topic: probabilistic-ensembles
+topics:
+- global-medium-range
+type: model
+method:
+- other
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Learns to adjust FourCastNet 3's native noise per variable and scale at inference, improving
+  CRPS by 8.27% over the unmodified model without retraining.
+abstract: Ensemble weather forecasts can look reliable in global averages while hiding too little spread
+  in some cases and too much in others. These errors vary across variables, spatial scales, lead times,
+  and weather states. Adapting randomness during forecasting can correct these errors, but training fixes
+  stochastic behavior beforehand and output calibration acts afterward. Inference guidance also acts during
+  forecasting, but typically scores ensemble members separately rather than the ensemble as a whole. Reliability
+  feedback arrives at the end, and tracing it backward through many chaotic forecast steps is expensive
+  and unstable. We therefore introduce Dynamic and Informed Adjustment of the Native Stochastic Law (DIAL),
+  which controls a frozen model's native stochasticity. DIAL learns from past forecasts to predict whether
+  each variable and scale needs more or less spread. As a forecast develops, it estimates how possible
+  noise changes will affect later forecast accuracy and reliability. It combines these predictions to
+  make small noise updates at each step. This loop avoids retraining the weather model and full backpropagation
+  through the forecast. We evaluate DIAL on FourCastNet 3 (FCN3) using later ERA5 years unseen during
+  training. DIAL provides better scale-resolved reliability than learned postprocessing and reward-based
+  control baselines. Relative to the unmodified Native FCN3 reference, DIAL achieves an 8.27% improvement
+  in the primary multiscale continuous ranked probability score (CRPS).
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

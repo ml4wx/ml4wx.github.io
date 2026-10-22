@@ -1,0 +1,47 @@
+id: arxiv-2606.04658
+title: U-Net-Accelerated Quality-Diversity Optimization for Climate-Adaptive Urban Layouts
+authors:
+- Alexander Hagg
+- Tania Guerrero
+- Dirk Reith
+date: '2026-06-03'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.04658'
+  doi: 10.1007/978-3-032-36229-2_22
+  openalex: W7163569196
+links:
+  paper: https://arxiv.org/abs/2606.04658
+  pdf: https://arxiv.org/pdf/2606.04658
+topic: applications-impacts
+type: model
+method:
+- cnn
+- classical-ml
+spatial:
+- local
+data:
+- km-scale-sim
+status: research
+summary: A U-Net surrogate for cold-air ventilation simulation enables MAP-Elites optimization of urban
+  layouts, reaching R² of 0.996 from only random training samples.
+abstract: Optimizing urban layouts for climate adaptation requires balancing building density with cold-air
+  ventilation. Because physics-based climate simulations are computationally expensive, planners typically
+  evaluate fewer than ten manual designs. \gls{qd} algorithms offer a way to systematically illuminate
+  the design space, but they require surrogate models to be practical. In this paper, we replace a slow,
+  regulatory physics simulator with a spatial deep-learning surrogate (U-Net) inside an offline MAP-Elites
+  loop. We systematically compare this spatial approach with a traditional \gls{gp} surrogate across different
+  training-data strategies (quasi-random Sobol sampling vs.\ active \gls{qd} bootstrapping). Our results
+  reveal that scalar \gls{gp} surrogates fail catastrophically when trained on random samples, requiring
+  expensive, actively generated \gls{qd} archives to generalize. In contrast, the spatial inductive bias
+  of the U-Net allows it to learn the underlying physics mapping robustly ($R^2 = 0.996$), completely
+  independent of the training data source. This allows offline \gls{qd} optimization to achieve highly
+  accurate fitness rankings ($ρ= 0.994$) using only a one-time batch of random training samples. The resulting
+  pipeline, deployed in the open-source OpenSKIZZE tool, generates thousands of diverse, climate-evaluated
+  building layouts in under ten minutes.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

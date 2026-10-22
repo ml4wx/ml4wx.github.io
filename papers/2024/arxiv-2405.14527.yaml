@@ -1,0 +1,48 @@
+id: arxiv-2405.14527
+title: 'ArchesWeather: An efficient AI weather forecasting model at 1.5° resolution'
+authors:
+- Guillaume Couairon
+- Christian Lessig
+- Anastase Charantonis
+- Claire Monteleoni
+date: '2024-05-23'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2405.14527'
+  openalex: W4398811367
+links:
+  paper: https://arxiv.org/abs/2405.14527
+  pdf: https://arxiv.org/pdf/2405.14527
+  code: https://github.com/gcouairon/ArchesWeather
+topic: global-medium-range
+type: model
+method:
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: ArchesWeather pairs 2D attention with column-wise feature interaction at 1.5° resolution; a four-model
+  ensemble beats IFS HRES RMSE at a few GPU-days of training.
+abstract: One of the guiding principles for designing AI-based weather forecasting systems is to embed
+  physical constraints as inductive priors in the neural network architecture. A popular prior is locality,
+  where the atmospheric data is processed with local neural interactions, like 3D convolutions or 3D local
+  attention windows as in Pangu-Weather. On the other hand, some works have shown great success in weather
+  forecasting without this locality principle, at the cost of a much higher parameter count. In this paper,
+  we show that the 3D local processing in Pangu-Weather is computationally sub-optimal. We design ArchesWeather,
+  a transformer model that combines 2D attention with a column-wise attention-based feature interaction
+  module, and demonstrate that this design improves forecasting skill. ArchesWeather is trained at 1.5°
+  resolution and 24h lead time, with a training budget of a few GPU-days and a lower inference cost than
+  competing methods. An ensemble of four of our models shows better RMSE scores than the IFS HRES and
+  is competitive with the 1.4° 50-members NeuralGCM ensemble for one to three days ahead forecasting.
+  Our code and models are publicly available at https://github.com/gcouairon/ArchesWeather.
+significance: 6
+cited_by: 4
+score: 34
+highlight: false
+added: '2026-10-22'
+source: backfill

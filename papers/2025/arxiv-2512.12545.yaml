@@ -1,0 +1,53 @@
+id: arxiv-2512.12545
+title: Skillful Subseasonal-to-Seasonal Forecasting of Extreme Events with a Multi-Sphere Coupled Probabilistic
+  Model
+authors:
+- Bin Mu
+- Yuxuan Chen
+- Shijin Yuan
+- Bo Qin
+- Hao Guo
+date: '2025-12-14'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2512.12545'
+  openalex: W4417449791
+links:
+  paper: https://arxiv.org/abs/2512.12545
+  pdf: https://arxiv.org/pdf/2512.12545
+topic: s2s-seasonal
+topics:
+- probabilistic-ensembles
+- extremes-hazards
+type: model
+method:
+- diffusion
+timescale:
+- s2s
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: TianXing-S2S, a diffusion-based multi-sphere coupled ensemble, beats ECMWF S2S and FuXi-S2S for
+  45-day forecasts and rolls out stably to 180 days.
+abstract: Accurate subseasonal-to-seasonal (S2S) prediction of extreme events is critical for resource
+  planning and disaster mitigation under accelerating climate change. However, such predictions remain
+  challenging due to complex multi-sphere interactions and intrinsic atmospheric uncertainty. Here we
+  present TianXing-S2S, a multi-sphere coupled probabilistic model for global S2S daily ensemble forecast.
+  TianXing-S2S first encodes diverse multi-sphere predictors into a compact latent space, then employs
+  a diffusion model to generate daily ensemble forecasts. A novel coupling module based on optimal transport
+  (OT) is incorporated in the denoiser to optimize the interactions between atmospheric and multi-sphere
+  boundary conditions. Across key atmospheric variables, TianXing-S2S outperforms both the European Centre
+  for Medium-Range Weather Forecasts (ECMWF) S2S system and FuXi-S2S in 45-day daily-mean ensemble forecasts
+  at 1.5 resolution. Our model achieves skillful subseasonal prediction of extreme events including heat
+  waves and anomalous precipitation, identifying soil moisture as a critical precursor signal. Furthermore,
+  we demonstrate that TianXing-S2S can generate stable rollout forecasts up to 180 days, establishing
+  a robust framework for S2S research in a warming world.
+significance: 6
+score: 24
+highlight: false
+added: '2026-10-22'
+source: backfill

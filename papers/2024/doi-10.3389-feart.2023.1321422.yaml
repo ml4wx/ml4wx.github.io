@@ -1,0 +1,66 @@
+id: doi-10.3389-feart.2023.1321422
+title: Machine learning analysis and nowcasting of marine fog visibility using FATIMA Grand Banks campaign
+  measurements
+authors:
+- Eren Gultepe
+- Sen Wang
+- Byron W. Blomquist
+- Harindra J. S. Fernando
+- O. Patrick Kreidl
+- David James Delene
+- Ismail Gültepe
+date: '2024-02-07'
+year: 2024
+venue: Frontiers in Earth Science
+venue_type: journal
+ids:
+  doi: 10.3389/feart.2023.1321422
+  openalex: W4391609951
+links:
+  paper: https://doi.org/10.3389/feart.2023.1321422
+orgs:
+- noaa
+topic: local-forecasting
+topics:
+- observations-remote-sensing
+type: application
+method:
+- classical-ml
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Least-squares gradient boosting gives the best 60-minute marine fog visibility nowcasts from
+  ship measurements, beating persistence and other ML baselines.
+abstract: 'Introduction: This study presents the application of machine learning (ML) to evaluate marine
+  fog visibility conditions and nowcasting of visibility based on the FATIMA (Fog and turbulence interactions
+  in the marine atmosphere) campaign observations collected during July 2022 in the North Atlantic in
+  the Grand Banks area and vicinity of Sable Island, northeast of Canada. Methods: The measurements were
+  collected using instrumentation mounted on the Research Vessel Atlantic Condor. The collected meteorological
+  parameters were: visibility (Vis), precipitation rate, air temperature, relative humidity with respect
+  to water, pressure, wind speed, and direction. Using all variables, the droplet number concentration
+  was used to qualitatively indicate and assess characteristics of the fog using the t-distributed stochastic
+  neighbor embedding projection method (t-SNE), which clustered the data into groups. Following t-SNE
+  analysis, a correlation heatmap was used to select relevant meteorological variables for visibility
+  nowcasting, which were wind speed, relative humidity, and dew point depression. Prior to nowcasting,
+  the input variables were preprocessed to generate additional time-lagged variables using a 120-minute
+  lookback window in order to take advantage of the intrinsic time-varying features of the time series
+  data. Nowcasting of Vis time series for lead times of 30 and 60 minutes was performed using the ML regression
+  methods of support vector regression (SVR), least-squares gradient boosting (LSB), and deep learning
+  at visibility thresholds of Vis < 1 km and < 10 km. Results: Vis nowcasting at the 60 min lead time
+  was best with LSB and was significantly more skillful than persistence analysis. Specifically, using
+  LSB the overall nowcasts at Vis 1 < km and Vis 10 < km were RMSE = 0.172 km and RMSE = 2.924 km, respectively.
+  The nowcasting skill of SVR for dense fog (Vis ≤ 400 m) was significantly better than persistence at
+  all Vis thresholds and lead times, even when it was less skillful than persistence at predicting high
+  visibility. Discussion: Thus, ML techniques can significantly improve Vis prediction when either observations
+  or modelbased accurate time-dependent variables are available. The results suggest that there is potential
+  for future ML analysis that focuses on modeling the underlying factors of fog formation.'
+significance: 2
+cited_by: 13
+score: 43
+highlight: false
+added: '2026-10-22'
+source: backfill

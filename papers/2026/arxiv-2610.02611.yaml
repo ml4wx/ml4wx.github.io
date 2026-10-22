@@ -1,0 +1,47 @@
+id: arxiv-2610.02611
+title: Scale-Recursive Rectified Flows for Few-Step Precipitation Ensembles
+authors:
+- Shunya Nagashima
+- Takumi Bannai
+date: '2026-10-02'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.02611'
+  openalex: W7220442055
+links:
+  paper: https://arxiv.org/abs/2610.02611
+  pdf: https://arxiv.org/pdf/2610.02611
+topic: downscaling
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+spatial:
+- regional
+data:
+- satellite
+- radar
+status: research
+summary: Scale-recursive rectified flow allocates sampling steps to coarse scales, keeping ensemble spread
+  for satellite-to-radar precipitation downscaling over the US with fewer steps.
+abstract: Fine-resolution precipitation estimates support flood risk assessment and water management,
+  but coarse satellite products cannot resolve rainfall within each grid cell. Generative models address
+  this ambiguity by producing ensembles of plausible high-resolution rainfall fields. Among these models,
+  rectified flows generate samples by iteratively transforming random noise into rainfall fields. Reducing
+  the number of sampling steps accelerates generation but can make ensemble members too similar, understating
+  uncertainty. We propose a scale-recursive rectified flow that generates broad patterns before local
+  details and guides sampling-step allocation by comparing ensemble variability with prediction error
+  across spatial scales. Validation scores and rainfall power spectra constrain the allocation to avoid
+  excessive amplification. In satellite-to-radar downscaling over the contiguous United States, our analysis
+  identified broad rainfall patterns as the main source of insufficient ensemble variability under reduced
+  sampling budgets. Allocating more steps to the coarse flow improved probabilistic accuracy and rain
+  detection across training seeds at fixed architecture and computational cost. The proposed model also
+  achieved better probabilistic accuracy with shorter sampling time than a nonrecursive flow using more
+  steps.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,60 @@
+id: arxiv-2412.08377
+title: Boosting weather forecast via generative superensemble
+authors:
+- Congyi Nai
+- Xi Chen
+- Shangshang Yang
+- Yuan Liang
+- Ziniu Xiao
+- Baoxiang Pan
+date: '2024-12-11'
+year: 2024
+venue: npj Climate and Atmospheric Science
+venue_type: journal
+ids:
+  arxiv: '2412.08377'
+  doi: 10.1038/s41612-025-01255-x
+  openalex: W4416413302
+links:
+  paper: https://doi.org/10.1038/s41612-025-01255-x
+  pdf: https://arxiv.org/pdf/2412.08377
+orgs:
+- iap-cas
+- pik
+- tum
+topic: probabilistic-ensembles
+topics:
+- global-medium-range
+type: model
+method:
+- other
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: GenEPS turns deterministic data-driven models into ensembles and a super-ensemble, reaching Z500
+  ACC 0.679 versus 0.646 for ECMWF ENS.
+abstract: Accurate weather forecasting is essential for socioeconomic activities. While data-driven forecasting
+  demonstrates superior predictive capabilities over traditional Numerical Weather Prediction (NWP) with
+  reduced computational demands, its deterministic nature and limited advantages over physics-based ensemble
+  predictions restrict operational applications. We introduce the generative ensemble prediction system
+  (GenEPS) framework to address these limitations by randomizing and mitigating both random errors and
+  systematic biases. GenEPS provides a plug-and-play ensemble forecasting capability for deterministic
+  models to eliminate random errors, while incorporating cross-model integration for cross-model ensembles
+  to address systematic biases. The framework culminates in a super-ensemble approach utilizing all available
+  data-driven models to further minimize systematic biases. GenEPS achieves an Anomaly Correlation Coefficient
+  (ACC) of 0.679 for 500hPa geopotential (Z500), exceeding the ECMWF Ensemble Prediction System's (ENS)
+  ACC of 0.646. Integration of the ECMWF ensemble mean further improves the ACC to 0.683. The framework
+  also enhances extreme event representation and produces energy spectra more consistent with ERA5 reanalysis.
+  GenEPS establishes a new paradigm in ensemble forecasting by enabling the integration of multiple data-driven
+  models into a high-performing super-ensemble system.
+significance: 4
+cited_by: 6
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

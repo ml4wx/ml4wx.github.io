@@ -1,0 +1,56 @@
+id: arxiv-2509.11459
+title: Knowledge-Guided Adaptive Mixture of Experts for Precipitation Prediction
+authors:
+- Chen Jiang
+- Kofi Osei
+- Sai Deepthi Yeddula
+- Dongji Feng
+- Wei-Shinn Ku
+date: '2025-09-14'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2509.11459'
+  openalex: W4415088435
+links:
+  paper: https://arxiv.org/abs/2509.11459
+  pdf: https://arxiv.org/pdf/2509.11459
+topic: nowcasting
+topics:
+- extremes-hazards
+type: model
+method:
+- transformer
+- classical-ml
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- satellite
+- stations
+status: research
+summary: A mixture-of-experts with a dynamic router fuses radar, satellite and station data for precipitation
+  rate prediction, outperforming baselines on Hurricane Ian data.
+abstract: Accurate precipitation forecasting is indispensable in agriculture, disaster management, and
+  sustainable strategies. However, predicting rainfall has been challenging due to the complexity of climate
+  systems and the heterogeneous nature of multi-source observational data, including radar, satellite
+  imagery, and surface-level measurements. The multi-source data vary in spatial and temporal resolution,
+  and they carry domain-specific features, making it challenging for effective integration in conventional
+  deep learning models. Previous research has explored various machine learning techniques for weather
+  prediction; however, most struggle with the integration of data with heterogeneous modalities. To address
+  these limitations, we propose an Adaptive Mixture of Experts (MoE) model tailored for precipitation
+  rate prediction. Each expert within the model specializes in a specific modality or spatio-temporal
+  pattern. We also incorporated a dynamic router that learns to assign inputs to the most relevant experts.
+  Our results show that this modular design enhances predictive accuracy and interpretability. In addition
+  to the modeling framework, we introduced an interactive web-based visualization tool that enables users
+  to intuitively explore historical weather patterns over time and space. The tool was designed to support
+  decision-making for stakeholders in climate-sensitive sectors. We evaluated our approach using a curated
+  multimodal climate dataset capturing real-world conditions during Hurricane Ian in 2022. The benchmark
+  results show that the Adaptive MoE significantly outperformed all the baselines.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

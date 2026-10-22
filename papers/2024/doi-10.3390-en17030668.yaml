@@ -1,0 +1,57 @@
+id: doi-10.3390-en17030668
+title: Photovoltaic Power Generation Forecasting with Hidden Markov Model and Long Short-Term Memory in
+  MISO and SISO Configurations
+authors:
+- Carlos J. Delgado
+- Estefanía Alfaro-Mejía
+- Vidya B. Manian
+- Efraín O’Neill-Carrillo
+- Fabio Andrade
+date: '2024-01-30'
+year: 2024
+venue: Energies
+venue_type: journal
+ids:
+  doi: 10.3390/en17030668
+  openalex: W4391346530
+links:
+  paper: https://doi.org/10.3390/en17030668
+  pdf: https://www.mdpi.com/1996-1073/17/3/668/pdf?version=1706627088
+topic: applications-impacts
+type: model
+method:
+- rnn
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Hidden Markov model preprocessing plus an LSTM forecasts PV power from multiple weather variables
+  at Alice Springs, beating SVM and other baselines on error metrics.
+abstract: Photovoltaic (PV) power generation forecasting is an important research topic, aiming to mitigate
+  variability caused by weather conditions and improve power generation planning. Climate factors, including
+  solar irradiance, temperature, and cloud cover, influence the energy conversion achieved by PV systems.
+  Long-term weather forecasting improves PV power generation planning, while short-term forecasting enhances
+  control methods, such as managing ramp rates. The stochastic nature of weather variables poses a challenge
+  for linear regression methods. Consequently, advanced, state-of-the-art machine learning (ML) approaches
+  capable of handling non-linear data, such as long short-term memory (LSTM), have emerged. This paper
+  introduces the implementation of a multivariate machine learning model to forecast PV power generation,
+  considering multiple weather variables. A deep learning solution was implemented to analyze weather
+  variables in a short time horizon. Utilizing a hidden Markov model for data preprocessing, an LSTM model
+  was trained using the Alice Spring dataset provided by DKA Solar Center. The proposed workflow demonstrated
+  superior performance compared to the results obtained by state-of-the-art methods, including support
+  vector machine, radiation classification coordinate with LSTM (RCC-LSTM), and ESNCNN specifically concerning
+  the proposed multi-input single-output LSTM model. This improvement is attributed to incorporating input
+  features such as active power, temperature, humidity, horizontal and diffuse irradiance, and wind direction,
+  with active power serving as the output variable. The proposed workflow achieved a mean square error
+  (MSE) of 2.17×10−7, a root mean square error (RMSE) of 4.65×10−4, and a mean absolute error (MAE) of
+  4.04×10−4.
+significance: 2
+cited_by: 20
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

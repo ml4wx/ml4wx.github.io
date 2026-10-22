@@ -1,0 +1,56 @@
+id: doi-10.3390-w18060757
+title: Application and Comparison of Two Transformer-Based Deep Learning Models in Short-Term Precipitation
+  Nowcasting
+authors:
+- Chuhan Lu
+- Qilong Pan
+date: '2026-03-23'
+year: 2026
+venue: Water
+venue_type: journal
+ids:
+  doi: 10.3390/w18060757
+  openalex: W7140123971
+links:
+  paper: https://doi.org/10.3390/w18060757
+orgs:
+- cma
+- nuist
+topic: nowcasting
+topics:
+- probabilistic-ensembles
+type: evaluation
+method:
+- transformer
+- diffusion
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Compares Earthformer and diffusion-based LLMDiff on SEVIR precipitation nowcasting; Earthformer
+  wins early leads, LLMDiff wins beyond 60 minutes.
+abstract: Against the background of intensifying global climate change, extreme precipitation events have
+  become increasingly frequent. Improving the accuracy of short-term precipitation nowcasting is therefore
+  essential for disaster prevention and mitigation. Traditional numerical weather prediction (NWP) approaches
+  are constrained by computational latency and errors arising from physical parameterizations, making
+  it difficult to satisfy real-time forecasting requirements at high spatiotemporal resolution. Using
+  the SEVIR dataset, this study conducts a systematic comparison of two Transformer-based deep learning
+  models—Earthformer and LLMDiff—for short-term extreme precipitation nowcasting. Model performance is
+  evaluated using the Critical Success Index (CSI), Probability of Detection (POD), and Success Ratio
+  (SUCR). Results indicate that, for 0–30 min lead times, Earthformer more efficiently captures both local
+  and long-range spatiotemporal dependencies via its Cuboid Attention mechanism and shows a slight advantage
+  for low-intensity precipitation. As the lead time extends to 60 min, LLMDiff demonstrates stronger longer-horizon
+  skill due to its diffusion-based probabilistic modeling and a frozen large language model (LLM) module,
+  which enhance the representation of uncertainty and longer-term evolution of precipitation systems.
+  However, LLMDiff tends to produce a higher false-alarm rate. Overall, Earthformer is better suited for
+  rapid early warning of light precipitation, whereas LLMDiff is more appropriate for high-accuracy nowcasting
+  of heavy precipitation, offering useful insights for intelligent forecasting of extreme weather.
+significance: 2
+cited_by: 1
+score: 18
+highlight: false
+added: '2026-10-22'
+source: backfill

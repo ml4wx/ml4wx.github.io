@@ -1,0 +1,54 @@
+id: arxiv-2609.29772
+title: 'WeatherDiagFlow: Evidence-Grounded Radar Nowcasting with Diagnostic Flow Refinement'
+authors:
+- Chunlei Shi
+- Yufeng Zhu
+- Yixiao Liang
+- Dan Niu
+- Yongchao Feng
+- Qiliang Wu
+- Jiong Wang
+date: '2026-09-24'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.29772'
+  openalex: W7214348050
+links:
+  paper: https://arxiv.org/abs/2609.29772
+  pdf: https://arxiv.org/pdf/2609.29772
+orgs:
+- fudan-university
+topic: nowcasting
+topics:
+- llms-agents
+type: model
+method:
+- other
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: WeatherDiagFlow adds motion, heavy-echo risk and uncertainty heads to radar nowcasting, plus
+  a multi-agent bulletin and audit layer, on FJRADAR data.
+abstract: Radar nowcasting is essential for short-term warning and emergency response, yet conventional
+  systems mainly return future radar fields and provide limited support for operational communication
+  and post-event verification. We formulate radar nowcasting as an evidence-grounded forecast--bulletin--audit
+  task, in which a numerical forecaster produces both future radar fields and structured diagnostic evidence.
+  Forecast-time bulletins use only model-available evidence, whereas post-event audits incorporate future
+  radar truth only after the forecast horizon is observed. Based on this task formulation, WeatherDiagFlow
+  predicts motion, growth and decay, heavy-echo risk, and uncertainty to condition rolling flow refinement,
+  while frozen-scaffold residual calibration improves long-lead strong-echo preservation. A multi-agent
+  layer converts the structured evidence into operational bulletins and independently generates verification
+  audits without feeding textual outputs back into the forecaster. Experiments on FJRADAR demonstrate
+  competitive overall performance and improved strong-echo event skill. WeatherDiagFlow therefore connects
+  numerical prediction, evidence-grounded reporting, and auditable verification under a leakage-controlled
+  protocol.
+significance: 3
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

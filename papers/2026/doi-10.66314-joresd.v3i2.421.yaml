@@ -1,0 +1,56 @@
+id: doi-10.66314-joresd.v3i2.421
+title: Comparative Analysis of GRU and MLP Models for Extreme Rainfall Nowcasting Using AWS
+authors:
+- Hartanto
+- Sajarwo Sanggai
+- Taswanda Taryo
+- Naufal Ananda
+date: '2026-04-19'
+year: 2026
+venue: Journal of Renewable Energy and Smart Device
+venue_type: journal
+ids:
+  doi: 10.66314/joresd.v3i2.421
+  openalex: W7155702504
+links:
+  paper: https://doi.org/10.66314/joresd.v3i2.421
+  pdf: https://journal.globresco.com/index.php/JORESD/article/download/421/471
+topic: nowcasting
+topics:
+- extremes-hazards
+type: evaluation
+method:
+- rnn
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Compares GRU and MLP on three years of Indonesian AWS rainfall data; GRU wins (96.49% accuracy,
+  1.51 mm RMSE) but both underestimate extremes.
+abstract: 'Accurate forecasting of rainfall intensity is critical for hydrometeorological disaster mitigation
+  in tropical regions like Indonesia. While high-resolution AWS data provides an opportunity to improve
+  forecasting over conventional manual gauges, processing this volatile time-series data requires advanced
+  computational models. This study comparatively evaluates predictive performance of static feed-forward
+  MLP and sequential memory GRU deep learning architecture. Utilizing a three-year dataset (2022–2024)
+  from three stations representing coastal, lowland, and mountainous topographies, the study reconstructed
+  minute-aggregated AWS data using a sliding window algorithm. This successfully validated the digital
+  sensors against manual Hellmann-type rain gauges, achieving a strong correlation (R > 0.80) for hourly
+  accumulations. Both deep learning models were then trained using historical rainfall, temperature differences,
+  and humidity differences. The empirical results demonstrate that the GRU model quantitatively outperforms
+  the MLP, achieving a higher average classification accuracy of 96.49% (compared to 95.49%) and a lower
+  RMSE of 1.51 mm (compared to 1.59 mm). The GRU’s gating mechanism proved significantly more robust in
+  handling sharp data fluctuations across diverse terrains. However, the analysis revealed a shared structural
+  limitation: both architectures severely underestimated extreme peak rainfall amplitudes. This anomaly
+  stems from the inherent sparsity of extreme weather data and the mathematical conservatism induced by
+  MSE loss function. Ultimately, while the GRU is highly recommended as a reliable frontline trigger for
+  early warning systems, estimating absolute extreme rainfall magnitudes necessitates future exploration
+  of non-standard loss functions and spatial data integration.'
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

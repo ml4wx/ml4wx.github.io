@@ -1,0 +1,64 @@
+id: doi-10.1029-2025jh000792
+title: Deep Learning‐Based MultiSource Satellite Data Fusion and Downscaling for Tropical Cyclone Wind
+  Fields
+authors:
+- Enze Zhang
+- Hui Su
+- Pak Wai Chan
+- Chengxing Zhai
+- Wensheng Zhou
+- Weifan Xu
+- Mingyuan Hu
+- Xingyi Li
+- Yuming Jia
+- Yinyu Song
+date: '2025-09-30'
+year: 2025
+venue: Journal of Geophysical Research Machine Learning and Computation
+venue_type: journal
+ids:
+  doi: 10.1029/2025jh000792
+  openalex: W4414673225
+links:
+  paper: https://doi.org/10.1029/2025jh000792
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2025JH000792
+topic: observations-remote-sensing
+topics:
+- downscaling
+- extremes-hazards
+type: model
+method:
+- transformer
+- cnn
+spatial:
+- regional
+data:
+- satellite
+- era5
+status: research
+summary: TransUNet fuses CCMP winds with SAR observations, cutting tropical cyclone maximum-wind errors
+  by 47% and radius-of-maximum-wind errors by 74%.
+abstract: 'Abstract High‐resolution observations of ocean surface wind (OSW) are crucial for analyzing
+  and forecasting tropical cyclones; however, current data are insufficient. While data sets such as the
+  Cross‐Calibrated Multiplatform (CCMP) and ERA5 provide gap‐free wind fields, their 25 km resolution
+  and tendency to underestimate cyclone wind speeds limit their utility. In contrast, synthetic aperture
+  radar (SAR)‐derived OSW offers high‐resolution observations but suffers from sparse spatiotemporal coverage.
+  To bridge this gap, we develop a new deep learning‐based method to fuse CCMP and globally sourced SAR‐derived
+  OSW, combining the strengths of both data sets. SAR‐derived OSW from Sentinel‐1, RADARSAT Constellation
+  Mission, and RADARSAT‐2 satellites are used as ground truth, with corresponding CCMP data as input for
+  training. We evaluate deep learning architectures including UNet, DeepLabV3+, and TransUNet, finding
+  that TransUNet offers superior performance. TransUNet reduces CCMP errors by 50% in root mean square
+  deviation for wind speeds above 20 m/s, 51% in maximum wind speed, and 62% in the radius of maximum
+  wind (RMW) compared with SAR wind. Against IBTrACS data, TransUNet decreases CCMP errors in maximum
+  wind speed by 47% and in RMW by 74%. Our method accomplishes three objectives simultaneously: downscaling
+  CCMP, filling SAR''s spatial and temporal gaps, and correcting CCMP biases. By producing uniformly distributed,
+  gap‐free, high‐accuracy, and fine‐resolution OSW for tropical cyclones, our method can benefit multiple
+  areas of tropical cyclone research, such as rapid intensification, hindcasting, and forecasting. Furthermore,
+  this method can be adapted to downscale other geophysical variables, paving the way for high‐resolution
+  climate modeling and analysis.'
+significance: 4
+cited_by: 7
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,65 @@
+id: doi-10.1088-2515-7620-ae9705
+title: Enhancing subseasonal 2 m temperature forecast correction and downscaling over north China based
+  on terrain-informed deep learning
+authors:
+- Xinyu Liu
+- Junjie Ma
+- Qiyu Zhang
+- Xiaoyun Su
+- Xuan Tong
+- Peng Wang
+date: '2026-08-01'
+year: 2026
+venue: Environmental Research Communications
+venue_type: journal
+ids:
+  doi: 10.1088/2515-7620/ae9705
+  openalex: W7203611709
+links:
+  paper: https://doi.org/10.1088/2515-7620/ae9705
+  pdf: https://iopscience.iop.org/article/10.1088/2515-7620/ae9705/pdf
+orgs:
+- nuist
+topic: downscaling
+topics:
+- post-processing
+- s2s-seasonal
+type: model
+method:
+- cnn
+timescale:
+- s2s
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: TRU-Net, a terrain-aware U-Net, downscales and bias-corrects subseasonal 2 m temperature forecasts
+  from 0.5° to 0.1°, cutting RMSE by 22.97% over North China.
+abstract: Abstract Accurate high-resolution temperature predictions at the subseasonal-to-seasonal (S2S)
+  timescale are vital for applications in agriculture, energy management, and disaster mitigation. However,
+  current S2S forecasting capacity is hindered by declining predictive skill with increasing lead time
+  and limited capability in capturing extreme events and fine-scale spatial variability, particularly
+  over regions with complex terrain. To bridge this gap, this study develops a deep learning (DL)-based
+  framework, termed Terrain-ResNet-U-Net (TRU-Net), for the downscaling (from 0.5 ∘ to 0.1 ∘ resolution)
+  and bias correction of 2 m air temperature forecasts over North China. Unlike existing approaches that
+  treat topographic information as auxiliary input, TRU-Net integrates terrain information through a dedicated
+  feature extraction module and incorporates it into a U-Net architecture with a ResNet34 backbone and
+  a spatial attention mechanism, enabling enhanced nonlinear feature learning and improved representation
+  of terrain-induced spatial heterogeneity. Comparative experiments show that TRU-Net consistently outperforms
+  the original forecasts for daily 2 m temperature prediction at the S2S timescale. Averaged across the
+  six lead times, TRU-Net reduces the root mean squared error by 22.97% and increases the Pearson correlation
+  coefficient and Accuracy by 25.16% and 24.48%, respectively, relative to the original forecasts. It
+  also outperforms representative baseline methods, including Linear Regression, U-Net, and several DL
+  baselines. The largest overall improvements are observed at lead times of 3–5 weeks, while the ablation
+  results confirm the contributions of terrain information and the proposed multi-scale terrain feature
+  extraction and fusion strategy. Similar advantages are maintained for representative high-impact events,
+  where the proposed framework also provides positive correction and downscaling effects under these challenging
+  conditions. These results indicate that an effective terrain-aware framework can substantially improve
+  S2S temperature bias correction and downscaling over North China.
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,64 @@
+id: doi-10.31224-4479
+title: Wind Field Reconstruction and Uncertainty Quantification at Wildland Fires Based on Sparse UAV-based
+  Wind Measurements
+authors:
+- Mohammad Tavakol Sadrabadi
+- Mauro S. Innocente
+date: '2025-03-28'
+year: 2025
+venue_type: other
+ids:
+  doi: 10.31224/4479
+  openalex: W4408940656
+links:
+  paper: https://doi.org/10.31224/4479
+topic: extremes-hazards
+type: model
+method:
+- cnn
+spatial:
+- local
+data:
+- other
+status: research
+summary: CNN reconstructs fire-induced near-surface wind fields from sparse UAV measurements, with uncertainty,
+  to feed decoupled wildfire spread models.
+abstract: Wildfire behaviour is highly influenced by weather, fuel and topography, resulting in highly
+  dynamic propagation patterns. However, a detailed physics-based simulation of this dynamic behaviour
+  can be computationally expensive and time-consuming even on small scales, particularly when accounting
+  for fire-wind interactions. To overcome this limitation, a series of models are developed to provide
+  rapid estimations of fire behaviour by simplifying or ignoring certain physical laws–albeit at the cost
+  of accuracy. These models are often decoupled from the atmosphere to reduce the computational demands,
+  which leads to increased uncertainty in their predictions. Additionally, efforts to improve model reliability
+  by incorporating near-surface wind fields into the model using statistical and dynamical downscaling
+  methods face two challenges, including the failure to account for fire-wind interaction and the high
+  computational demand of dynamical methods. Consequently, this study introduces a novel framework that
+  combines UAV-swarm-based wind and temperature measurements with convolutional neural networks (CNN),
+  to estimate the fire-induced near-surface wind field, aiming to capture the fire-wind interaction and
+  its effect on the fire propagation dynamics in a grassland fire without solving the complete set of
+  Navier-Stokes equations. The framework includes a two-step process for wind field estimation, including
+  (i) super-resolution reconstruction of the high-altitude wind field from sparse UAV-based measurements,
+  and (ii) high-resolution estimation of the near- surface wind field based on the reconstructed high-altitude
+  wind field. The estimated wind field could then be fed into decoupled wildfire models to replicate the
+  effect of fire-wind interaction on fire propagation. Given the extensive data requirement of deep learning
+  models and lack of access to real-world measured data, this study utilizes synthetic data generated
+  from executing 150 three- dimensional Large Eddy simulations of wildfire propagation in grasslands with
+  varying wind speeds, terrain slopes, vegetation types, and height. The accuracy and uncertainty levels
+  of the trained models are evaluated for different UAV swarm sizes, ranging from 100 to 9 UAVs, as well
+  as various sampling strategies, focusing on the spatial distribution of UAVs above the field. Additionally,
+  the models’ reliability are tested under different wind measurement errors by UAV-mounted sensors, varying
+  from 0 to 50%. The obtained results indicate that the developed framework is capable of providing accurate
+  estimations from the near-surface wind field, even under scenarios with a limited number of UAVs, demonstrated
+  through average MAE and RMSE values equal to 0.849 and 1.323 for the U, 0.672 and 1.022 for the V, and
+  0.551 and 1.01 for the W component of velocity. Uncertainty analysis indicates that even though the
+  average performance of the model remains stable, model uncertainty increases with reducing the size
+  of the swarm. Finally, the investigation of the effect of wind measurement errors on model accuracy
+  and reliability indicates that increased noise levels significantly impact the model’s accuracy and
+  uncertainty. However, increasing the swarm size helps to mitigate the effects of measurement noise to
+  a certain extent.
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

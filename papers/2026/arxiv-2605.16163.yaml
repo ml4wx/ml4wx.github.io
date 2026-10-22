@@ -1,0 +1,66 @@
+id: arxiv-2605.16163
+title: 'SwAIther-Precip: Lead-Time-Aware Bias Correction Enables Kilometer-Scale Downscaling of Global
+  AI Precipitation Forecasts over Switzerland'
+authors:
+- Dan Assouline
+- Erwan Koch
+- Federico Amato
+- Filippo Quarenghi
+- Daniele Nerini
+- Thibaut Loiseau
+- Kyle van de Langemheen
+- Tom Beucler
+date: '2026-05-15'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.16163'
+  openalex: W7161569248
+links:
+  paper: https://arxiv.org/abs/2605.16163
+  pdf: https://arxiv.org/pdf/2605.16163
+topic: downscaling
+topics:
+- post-processing
+- probabilistic-ensembles
+type: model
+method:
+- cnn
+- diffusion
+timescale:
+- short
+- medium
+spatial:
+- regional
+- local
+data:
+- nwp-analysis
+- radar
+- stations
+status: research
+summary: SwAIther-Precip downscales AIFS forecasts to 1 km probabilistic precipitation over Switzerland
+  with lead-time-aware bias correction, cutting CRPS by 48% versus raw AIFS.
+abstract: Skillful medium-range precipitation forecasting at kilometer scale remains challenging over
+  complex terrain because precipitation arises from multiscale nonlinear processes that global models
+  cannot explicitly resolve at affordable cost. Global AI weather models can produce skillful medium-range
+  forecasts, but their native 0.25 degrees resolution limits direct use for local hazard applications.
+  Statistical downscaling can help bridge this gap, yet existing approaches often struggle with state-dependent,
+  and especially lead-time-dependent, biases in global forecasts. We introduce SwAIther-Precip, a lead-time-aware
+  downscaling framework that converts coarse-resolution AIFS forecasts into probabilistic km-scale precipitation
+  fields over Switzerland. First, a U-Net conditioned on lead time via feature-wise linear modulation
+  deterministically corrects systematic biases at coarse resolution. This targeted correction enables
+  a cheaper super-resolution stage conditioned only on corrected precipitation, allowing direct training
+  on observations rather than on the full atmospheric state. A diffusion-based model then generates fine-scale
+  spatial variability independently of lead time. Using AIFS forecasts and CombiPrecip radar-gauge observations,
+  SwAIther-Precip reduces CRPS by 48% relative to raw AIFS. The generated fields reproduce observed spatial
+  variability with spectral fidelity above 0.85 at large scales and 0.88 at small scales, corresponding
+  to an effective resolution of approximately 4 km on a 1 km grid for lead times up to 5 days. Training
+  across lead times further improves long-range performance, yielding a 13% CRPS reduction at 6 days relative
+  to lead-time-specific models. These results show that explicitly correcting lead-time-dependent biases
+  before generative super-resolution is key to efficient km-scale probabilistic downscaling of global
+  AI precipitation forecasts.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,66 @@
+id: doi-10.1029-2025jh000896
+title: A New Approach to Nowcasting Thunderstorm Gusts Based on a Spatiotemporal Decoupling Architecture
+  and Multi‐Scale Feature Learning
+authors:
+- Xinze Li
+- Lu Yang
+- Mingxuan Chen
+- Lei Han
+- Linye Song
+- Feng Han
+- Ruiting Liu
+- S. Z. Chen
+- Jingya Wu
+date: '2026-04-01'
+year: 2026
+venue: Journal of Geophysical Research Machine Learning and Computation
+venue_type: journal
+ids:
+  doi: 10.1029/2025jh000896
+  openalex: W7153526918
+links:
+  paper: https://doi.org/10.1029/2025jh000896
+orgs:
+- cma
+- iap-cas
+topic: nowcasting
+topics:
+- extremes-hazards
+type: model
+method:
+- transformer
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+- local
+data:
+- nwp-analysis
+- stations
+status: research
+summary: G-Net, a Swin Transformer-U-Net, forecasts Beijing–Tianjin–Hebei thunderstorm gusts 0–2 h ahead,
+  outperforming ConvLSTM and PredRNN-V2 on CSI and FAR.
+abstract: 'Abstract Accurate short‐term forecasting of thunderstorm gusts remains a major challenge in
+  the Beijing–Tianjin–Hebei region due to limited temporal resolution, the lack of vertical velocity and
+  thermodynamic data, and the difficulty of coupling multi‐scale features. To address these issues, we
+  propose a deep learning model suite called Thunderstorm Gusts Swin Transformer U‐Net (G‐Net), designed
+  to integrate multi‐source meteorological data and capture multi‐scale gust structures. G‐Net includes:
+  (a) a data fusion strategy incorporating 16 key surface and upper‐air variables with 3D vertical profiles;
+  (b) a hybrid Swin Transformer‐U‐Net architecture to extract both global and local features; and (c)
+  a progressive spatiotemporal decoupling architecture, including three functionally distinct model variants:
+  G‐Net1H (1 hr forecast) and G‐Net2H (2 hr forecast) with a Feature Bridging Layer (FBL) designed for
+  minute‐level average wind predictions, and G‐NetG for gust mapping. Results show that G‐Net1H surpasses
+  the baseline models ConvLSTM, TG‐TransUNet, and PredRNN‐V2 in CSI and FAR across all wind speed thresholds
+  within the 0–1 hr forecast. The introduction of spatiotemporal supplementary information and the efficient
+  integration of the FBL enable G‐Net2H to achieve improved 2‐hr forecasts, reducing mean absolute and
+  root mean square errors and enhancing overall predictive performance. G‐NetG further outperforms traditional
+  gust factor methods and deep learning baselines. Evaluation during the 2024 thunderstorm season demonstrates
+  that G‐Net provides the most accurate 0–2 hr forecasts, improving both the timeliness and spatial precision
+  of weather warnings.'
+significance: 3
+cited_by: 1
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,46 @@
+id: arxiv-2605.17493
+title: 'Beyond Linear Superposition: Discovering Climate Features in AI Weather Models with KAN-SAE'
+authors:
+- Minjong Cheon
+date: '2026-05-17'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.17493'
+  openalex: W7161676309
+links:
+  paper: https://arxiv.org/abs/2605.17493
+  pdf: https://arxiv.org/pdf/2605.17493
+topic: xai-uq-physics
+topics:
+- extremes-hazards
+type: model
+method:
+- other
+- neural-operator
+spatial:
+- global
+data:
+- era5
+status: research
+summary: KAN-SAE, a sparse autoencoder with learnable B-spline activations, finds 72% more interpretable
+  features in an AI weather model, including a European heatwave and a typhoon tracker.
+abstract: 'Deep learning weather prediction models achieve remarkable predictive skill yet remain largely
+  opaque: we know little about how they represent physical climate phenomena internally. Mechanistic interpretability
+  through Sparse Autoencoders (SAEs) offers a principled route to decomposing these representations, but
+  existing SAEs assume strictly linear feature superposition - a constraint ill-suited for the highly
+  nonlinear atmospheric dynamics encoded in modern transformers. We introduce KAN-SAE, a sparse autoencoder
+  whose encoder replaces the standard ReLU with learnable per-feature B-spline activations drawn from
+  Kolmogorov-Arnold Networks (KANs), allowing each latent dimension to develop its own nonlinear gating
+  profile. Applied to Sonny, KAN-SAE discovers 975 alive features (vs. 566 for a linear baseline, a 72%
+  improvement) with 20% lower inter-feature redundancy and comparable reconstruction fidelity. Without
+  any climate supervision, KAN-SAE identifies an interpretable European heatwave feature spatially concentrated
+  over western Europe, and a western Pacific typhoon tracker confirmed by causal steering experiments.
+  Our results demonstrate that nonlinear activations are essential for mechanistic interpretability of
+  deep learning weather prediction models, recovering climate features that remain invisible to linear
+  baselines.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

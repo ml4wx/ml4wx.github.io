@@ -1,0 +1,63 @@
+id: arxiv-2606.07928
+title: Disentangling the effects of sea surface temperature and CO$_2$ in global machine learned weather-climate
+  emulators
+authors:
+- Spencer K. Clark
+- Troy Arcomano
+- James P. C. Duncan
+- Brian Henn
+- Anna Kwa
+- Jeremy McGibbon
+- W. Andre Perkins
+- Elynn Wu
+- Lucas M. Harris
+- Oliver Watt-Meyer
+- Christopher S. Bretherton
+date: '2026-06-06'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.07928'
+  openalex: W7163995211
+links:
+  paper: https://arxiv.org/abs/2606.07928
+  pdf: https://arxiv.org/pdf/2606.07928
+orgs:
+- ai2
+- noaa
+topic: climate-emulation
+topics:
+- xai-uq-physics
+type: model
+method:
+- neural-operator
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: Ai2 Climate Emulator trained on independently varying CO2 and SST, with an energy conservation
+  constraint, stays accurate in AMIP +4 K and abrupt 4xCO2 runs where earlier versions failed.
+abstract: While previous versions of the Ai2 Climate Emulator (ACE) have been trained with CO$_2$ as a
+  forcing, they are only accurate within a narrow range of scenarios, for example climate over the last
+  80 years forced by observed sea surface temperature (SST), sea ice, and CO$_2$ (AMIP), or equilibrium
+  or near-equilibrium climates with CO$_2$ concentrations ranging from 1x to 4x that of the present day.
+  Attempting to simulate climate forced by AMIP SST perturbed by +4 K or the response to an abrupt quadrupling
+  of CO$_2$, results in unphysical behavior. We attribute this to these models being trained on datasets
+  where the SST and CO$_2$ are correlated, limiting their ability to accurately learn their separate effects.
+  In this study we introduce a new class of "random-CO$_2$" reference simulations where the SST and CO$_2$
+  are prescribed to vary independently. Trained on a balance of AMIP, equilibrium-climate, and random-CO$_2$
+  data, and including a total energy conservation constraint for improved interpretability, we present
+  a more data-efficient model that not only accurately emulates its reference model in scenarios in which
+  previous models excelled, but also scenarios like AMIP +4 K and slab-ocean-coupled abrupt 4xCO$_2$ where
+  they did not. Limitations are that it has simplified or prescribed representations of other Earth system
+  components like the ocean, land, and sea ice; does not expose other known climate drivers as forcings;
+  and relies solely on physics-based model output for training data, inheriting the biases relative to
+  observations thereof. Each of these represent opportunities for future work.
+significance: 5
+score: 55
+highlight: false
+added: '2026-10-22'
+source: backfill

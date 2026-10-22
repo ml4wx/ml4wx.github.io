@@ -1,0 +1,50 @@
+id: doi-10.5281-zenodo.17861004
+title: Probabilistic Regime-Aware Mixture-of-Experts for Convective Precipitation Forecasting in Thailand
+authors:
+- Janya, Apichet
+date: '2025-12-08'
+year: 2025
+venue: Zenodo (CERN European Organization for Nuclear Research)
+venue_type: preprint
+ids:
+  doi: 10.5281/zenodo.17861004
+  openalex: W7111030984
+links:
+  paper: https://doi.org/10.5281/zenodo.17861004
+topic: nowcasting
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- other
+- gan-vae
+timescale:
+- nowcast
+- short
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: A regime-aware probabilistic Mixture-of-Experts forecasts 3-hour convective rainfall over Thailand
+  from ERA5, with hybrid NLL-MSE training giving the best uncertainty calibration.
+abstract: 'Short-range precipitation forecasting in tropical regions remains one of the most persistent
+  open problems in atmospheric prediction. Rapid moisture convergence, unstable thermodynamic profiles,
+  and abrupt convective regime transitions introduce highly nonlinear structures that degrade the performance
+  of monolithic neural networks. This work proposes a regime-aware Mixture-of-Experts (MoE) architecture
+  and systematically evaluates three variants: (1) a deterministic regime-supervised MoE, (2) a probabilistic
+  MoE trained solely via Gaussian negative log-likelihood, and (3) a hybrid probabilistic MoE combining
+  NLL, MSE, and regime constraints. Using ERA5 hourly data over Thailand for 2020, comprising 568k sequences
+  of 24-hour windows with 3-hour rainfall horizons, we quantify forecasting skill, structural alignment,
+  transition detection, and uncertainty calibration. Results show that the deterministic variant remains
+  the strongest predictor of convective onset (RMSE = 0.000518 mm; Stransition=0.779S_{\text{transition}}
+  = 0.779Stransition=0.779), whereas the hybrid probabilistic model provides the most meaningful predictive
+  uncertainty (σ–error correlation = 0.49). The probabilistic NLL-only training destabilizes the gate,
+  amplifies mean drift, and weakens regime structure. These findings clarify the operational tradeoff
+  between deterministic regime modeling and probabilistic uncertainty estimation.'
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

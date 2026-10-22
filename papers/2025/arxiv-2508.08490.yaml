@@ -1,0 +1,55 @@
+id: arxiv-2508.08490
+title: Knowledge-guided machine learning for disentangling Pacific sea surface temperature variability
+  across timescales
+authors:
+- Kyle J. C. Hall
+- Maria J. Molina
+- Emily F. Wisinski
+- Gerald A. Meehl
+- Antonietta Capotondi
+date: '2025-08-11'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2508.08490'
+links:
+  paper: https://arxiv.org/abs/2508.08490
+  pdf: https://arxiv.org/pdf/2508.08490
+topic: climate-analysis-attribution
+type: model
+method:
+- other
+timescale:
+- seasonal
+- decadal
+spatial:
+- global
+data:
+- cmip
+- era5
+status: research
+summary: Knowledge-guided autoencoder separates ENSO, decadal PDO/PMM-like and quasibiennial Pacific SST
+  modes, and reveals model-specific ENSO diversity biases in climate model output.
+abstract: Global weather and climate patterns are strongly influenced by dominant modes of anomalous Pacific
+  sea surface temperature (SST) variability, including the El Niño-Southern Oscillation (ENSO), Pacific
+  Meridional Mode (PMM), and Pacific Decadal Oscillation (PDO). However, disentangling these modes of
+  variability remains challenging due to their spatial overlap and nonlinear coupling, which violate the
+  assumptions of traditional linear methods. We develop a Knowledge-Guided AutoEncoder (KGAE) that uses
+  spatiotemporal constraints and a gradient-based sparsity incentive to identify physically interpretable
+  modes of detrended SST variability, each defined by a single broad characteristic timescale, without
+  the need for predefined temporal filters or thresholds. The KGAE separates ENSO-like modes on 2- and
+  3-7-year timescales, as well as a decadal mode with characteristics reminiscent of the PDO and PMM,
+  each with distinct spatial patterns. We perturb each latent dimension and use finite differences to
+  characterize the state-independent and state-dependent sensitivities. We demonstrate that the decadal
+  mode modulates ENSO diversity (central versus eastern Pacific) through both interference and nonlinear
+  state dependence, and that a quasibiennial mode interacts with the interannual mode to characterize
+  ENSO onset and decay. We assess the robustness of the KGAEs to random initialization and training stochasticity,
+  to sampling bias induced by a time-stratified cross-validation scheme, and to unseen data (generalization).
+  When applied to climate model output, KGAEs reveal model-specific biases in ENSO diversity and seasonal
+  timing. Our results highlight how machine learning can uncover physically meaningful modes of Earth
+  system variability and characterize their complex interactions across models and timescales.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

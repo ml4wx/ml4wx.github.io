@@ -1,0 +1,58 @@
+id: arxiv-2404.16037
+title: 'VN-Net: Vision-Numerical Fusion Graph Convolutional Network for Sparse Spatio-Temporal Meteorological
+  Forecasting'
+authors:
+- Yutong Xiong
+- Xun Zhu
+- Ming Wu
+- Weiqing Li
+- Fanbin Mo
+- Chuang Zhang
+- Bin Zhang
+date: '2024-01-26'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2404.16037'
+  openalex: W4395686519
+links:
+  paper: https://arxiv.org/abs/2404.16037
+  pdf: https://arxiv.org/pdf/2404.16037
+topic: local-forecasting
+topics:
+- observations-remote-sensing
+type: model
+method:
+- gnn
+- rnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- stations
+- satellite
+status: research
+summary: VN-Net fuses satellite image sequences with station data in a graph network, outperforming prior
+  methods on hourly temperature, humidity and visibility forecasts in Weather2k.
+abstract: 'Sparse meteorological forecasting is indispensable for fine-grained weather forecasting and
+  deserves extensive attention. Recent studies have highlighted the potential of spatio-temporal graph
+  convolutional networks (ST-GCNs) in predicting numerical data from ground weather stations. However,
+  as one of the highest fidelity and lowest latency data, the application of the vision data from satellites
+  in ST-GCNs remains unexplored. There are few studies to demonstrate the effectiveness of combining the
+  above multi-modal data for sparse meteorological forecasting. Towards this objective, we introduce Vision-Numerical
+  Fusion Graph Convolutional Network (VN-Net), which mainly utilizes: 1) Numerical-GCN (N-GCN) to adaptively
+  model the static and dynamic patterns of spatio-temporal numerical data; 2) Vision-LSTM Network (V-LSTM)
+  to capture multi-scale joint channel and spatial features from time series satellite images; 4) a GCN-based
+  decoder to generate hourly predictions of specified meteorological factors. As far as we know, VN-Net
+  is the first attempt to introduce GCN method to utilize multi-modal data for better handling sparse
+  spatio-temporal meteorological forecasting. Our experiments on Weather2k dataset show VN-Net outperforms
+  state-of-the-art by a significant margin on mean absolute error (MAE) and root mean square error (RMSE)
+  for temperature, relative humidity, and visibility forecasting. Furthermore, we conduct interpretation
+  analysis and design quantitative evaluation metrics to assess the impact of incorporating vision data.'
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

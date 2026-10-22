@@ -1,0 +1,48 @@
+id: arxiv-2609.37499
+title: Who Warmed the Archives? LLMs Overestimate Historical Warmth
+authors:
+- Claudiu Creanga
+- Liviu P. Dinu
+date: '2026-09-27'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.37499'
+  openalex: W7214968214
+links:
+  paper: https://arxiv.org/abs/2609.37499
+  pdf: https://arxiv.org/pdf/2609.37499
+topic: llms-agents
+topics:
+- climate-analysis-attribution
+type: evaluation
+method:
+- llm
+- transformer
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Six LLMs extracting German historical temperature signals from archives show a warm bias growing
+  with calendar year, undermining cross-century climate comparisons.
+abstract: Historical archives are an under-used source for extending the instrumental climate record backward
+  in time, and LLMs offer a way to extract the indices climatologists derive by hand. Beyond measuring
+  how well systems extract this signal, we check whether their errors are safe to use for cross-century
+  comparison, since a good correlation score does not rule out systematic, era-linked bias. Comparing
+  lexical baselines, fine-tuned historical transformers, and LLM prompting on the Pfister temperature
+  index across five centuries of German text, lexical methods beat every fine-tuned transformer we test,
+  including one pretrained from scratch on historical German (r=-0.016). All six LLMs we test (Gemini
+  2.5 Flash, GPT-5-mini, DeepSeek v4 Flash, Claude Sonnet 4.6, Qwen3.7-Plus, Kimi-K2.6-Fast) show a warm
+  bias that grows with calendar year, with the same sign in every model (slopes +0.13 to +0.34/century,
+  p<0.01). The effect is modest in size (r-squared approx equal to 0.01 to 0.05) but consistent across
+  six independently developed models. The best-correlated of the six, Gemini 2.5 Flash, matches the best
+  lexical correlation (r=0.32) at double the error. An ablation stripping explicit dates and calendar-era
+  markers from the quotes leaves this trend essentially unchanged, favoring an anachronistic present-day
+  prior over the model correctly inferring the quote's era. Correlation alone is thus insufficient for
+  vetting an LLM as a historical-climate-index oracle.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

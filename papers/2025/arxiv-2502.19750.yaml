@@ -1,0 +1,53 @@
+id: arxiv-2502.19750
+title: 'CirT: Global Subseasonal-to-Seasonal Forecasting with Geometry-inspired Transformer'
+authors:
+- Yang Liu
+- Zinan Zheng
+- Jiashun Cheng
+- Fugee Tsung
+- Deli Zhao
+- Yu Rong
+- Jia Li
+date: '2025-02-27'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2502.19750'
+  openalex: W4416045151
+links:
+  paper: https://arxiv.org/abs/2502.19750
+  pdf: https://arxiv.org/pdf/2502.19750
+topic: s2s-seasonal
+topics:
+- global-medium-range
+type: model
+method:
+- transformer
+timescale:
+- s2s
+spatial:
+- global
+data:
+- era5
+status: research
+summary: A latitude-circular Transformer with Fourier attention improves global S2S ERA5 forecasts over
+  Pangu-Weather, GraphCast and ECMWF systems, with gains reported across space and time.
+abstract: 'Accurate Subseasonal-to-Seasonal (S2S) climate forecasting is pivotal for decision-making including
+  agriculture planning and disaster preparedness but is known to be challenging due to its chaotic nature.
+  Although recent data-driven models have shown promising results, their performance is limited by inadequate
+  consideration of geometric inductive biases. Usually, they treat the spherical weather data as planar
+  images, resulting in an inaccurate representation of locations and spatial relations. In this work,
+  we propose the geometric-inspired Circular Transformer (CirT) to model the cyclic characteristic of
+  the graticule, consisting of two key designs: (1) Decomposing the weather data by latitude into circular
+  patches that serve as input tokens to the Transformer; (2) Leveraging Fourier transform in self-attention
+  to capture the global information and model the spatial periodicity. Extensive experiments on the Earth
+  Reanalysis 5 (ERA5) reanalysis dataset demonstrate our model yields a significant improvement over the
+  advanced data-driven models, including PanguWeather and GraphCast, as well as skillful ECMWF systems.
+  Additionally, we empirically show the effectiveness of our model designs and high-quality prediction
+  over spatial and temporal dimensions.'
+significance: 4
+cited_by: 1
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

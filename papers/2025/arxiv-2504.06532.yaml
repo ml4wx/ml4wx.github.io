@@ -1,0 +1,55 @@
+id: arxiv-2504.06532
+title: 'WaveHiTS: Wavelet-Enhanced Hierarchical Time Series Modeling for Wind Direction Nowcasting in
+  Eastern Inner Mongolia'
+authors:
+- Hailong Shu
+- Weiwei Song
+- Yue Wang
+- Jiping Zhang
+date: '2025-04-09'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2504.06532'
+  doi: 10.21203/rs.3.rs-9578764/v1
+  openalex: W4417244082
+links:
+  paper: https://arxiv.org/abs/2504.06532
+  pdf: https://arxiv.org/pdf/2504.06532
+topic: local-forecasting
+topics:
+- nowcasting
+type: model
+method:
+- rnn
+- transformer
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- stations
+status: research
+summary: WaveHiTS combines wavelet transforms with hierarchical interpolation to nowcast wind direction
+  up to 60 minutes ahead, cutting RMSE to about 19 degrees versus 56-64 for recurrent baselines.
+abstract: Wind direction forecasting plays a crucial role in optimizing wind energy production, but faces
+  significant challenges due to the circular nature of directional data, error accumulation in multi-step
+  forecasting, and complex meteorological interactions. This paper presents a novel model, WaveHiTS, which
+  integrates wavelet transform with Neural Hierarchical Interpolation for Time Series to address these
+  challenges. Our approach decomposes wind direction into U-V components, applies wavelet transform to
+  capture multi-scale frequency patterns, and utilizes a hierarchical structure to model temporal dependencies
+  at multiple scales, effectively mitigating error propagation. Experiments conducted on real-world meteorological
+  data from Inner Mongolia, China demonstrate that WaveHiTS significantly outperforms deep learning models
+  (RNN, LSTM, GRU), transformer-based approaches (TFT, Informer, iTransformer), and hybrid models (EMD-LSTM).
+  The proposed model achieves RMSE values of approximately 19.2°-19.4° compared to 56°-64° for deep learning
+  recurrent models, maintaining consistent accuracy across all forecasting steps up to 60 minutes ahead.
+  Moreover, WaveHiTS demonstrates superior robustness with vector correlation coefficients (VCC) of 0.985-0.987
+  and hit rates of 88.5%-90.1%, substantially outperforming baseline models. Ablation studies confirm
+  that each component-wavelet transform, hierarchical structure, and U-V decomposition-contributes meaningfully
+  to overall performance. These improvements in wind direction nowcasting have significant implications
+  for enhancing wind turbine yaw control efficiency and grid integration of wind energy.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,45 @@
+id: arxiv-2409.20117
+title: Masked Autoregressive Model for Weather Forecasting
+authors:
+- Doyi Kim
+- Minseok Seo
+- Hakjin Lee
+- Junghoon Seo
+date: '2024-09-30'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2409.20117'
+  openalex: W4403815010
+links:
+  paper: https://arxiv.org/abs/2409.20117
+  pdf: https://arxiv.org/pdf/2409.20117
+topic: global-medium-range
+type: model
+method:
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: MAM4WF combines masked modeling with autoregressive and lead-time embedding to reduce error accumulation
+  in data-driven weather forecasts.
+abstract: The growing impact of global climate change amplifies the need for accurate and reliable weather
+  forecasting. Traditional autoregressive approaches, while effective for temporal modeling, suffer from
+  error accumulation in long-term prediction tasks. The lead time embedding method has been suggested
+  to address this issue, but it struggles to maintain crucial correlations in atmospheric events. To overcome
+  these challenges, we propose the Masked Autoregressive Model for Weather Forecasting (MAM4WF). This
+  model leverages masked modeling, where portions of the input data are masked during training, allowing
+  the model to learn robust spatiotemporal relationships by reconstructing the missing information. MAM4WF
+  combines the advantages of both autoregressive and lead time embedding methods, offering flexibility
+  in lead time modeling while iteratively integrating predictions. We evaluate MAM4WF across weather,
+  climate forecasting, and video frame prediction datasets, demonstrating superior performance on five
+  test datasets.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

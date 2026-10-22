@@ -1,0 +1,54 @@
+id: arxiv-2407.11666
+title: Neural Compression of Atmospheric States
+authors:
+- Piotr Mirowski
+- David Warde-Farley
+- Mihaela Rosca
+- Matthew Koichi Grimes
+- Yana Hasson
+- Hyunjik Kim
+- Mélanie Rey
+- Simon Osindero
+- Suman Ravuri
+- Shakir Mohamed
+date: '2024-07-16'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2407.11666'
+  openalex: W4403755124
+links:
+  paper: https://arxiv.org/abs/2407.11666
+  pdf: https://arxiv.org/pdf/2407.11666
+topic: infra-software
+type: model
+method:
+- gan-vae
+- cnn
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Neural compressors on HEALPix-projected reanalysis reach over 1000x compression while preserving
+  hurricanes, heatwaves and spectra, at about one second per global state.
+abstract: 'Atmospheric states derived from reanalysis comprise a substantial portion of weather and climate
+  simulation outputs. Many stakeholders -- such as researchers, policy makers, and insurers -- use this
+  data to better understand the earth system and guide policy decisions. Atmospheric states have also
+  received increased interest as machine learning approaches to weather prediction have shown promising
+  results. A key issue for all audiences is that dense time series of these high-dimensional states comprise
+  an enormous amount of data, precluding all but the most well resourced groups from accessing and using
+  historical data and future projections. To address this problem, we propose a method for compressing
+  atmospheric states using methods from the neural network literature, adapting spherical data to processing
+  by conventional neural architectures through the use of the area-preserving HEALPix projection. We investigate
+  two model classes for building neural compressors: the hyperprior model from the neural image compression
+  literature and recent vector-quantised models. We show that both families of models satisfy the desiderata
+  of small average error, a small number of high-error reconstructed pixels, faithful reproduction of
+  extreme events such as hurricanes and heatwaves, preservation of the spectral power distribution across
+  spatial scales. We demonstrate compression ratios in excess of 1000x, with compression and decompression
+  at a rate of approximately one second per global atmospheric state.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,61 @@
+id: doi-10.3390-atmos15010104
+title: A Radar Echo Extrapolation Model Based on a Dual-Branch Encoder–Decoder and Spatiotemporal GRU
+authors:
+- Yong Cheng
+- Haifeng Qu
+- Jun Wang
+- Kun Qian
+- Wei Li
+- Ling Xiao Yang
+- Xiaodong Han
+- Min Liu
+date: '2024-01-14'
+year: 2024
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos15010104
+  openalex: W4390881565
+links:
+  paper: https://doi.org/10.3390/atmos15010104
+  pdf: https://www.mdpi.com/2073-4433/15/1/104/pdf?version=1705231390
+orgs:
+- nuist
+topic: nowcasting
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Dual-branch encoder-decoder with spatiotemporal attention GRU extrapolates radar echoes, improving
+  short-range precipitation forecast accuracy over existing models on real radar datasets.
+abstract: Precipitation forecasting is an immensely significant aspect of meteorological prediction. Accurate
+  weather predictions facilitate services in sectors such as transportation, agriculture, and tourism.
+  In recent years, deep learning-based radar echo extrapolation techniques have found effective applications
+  in precipitation forecasting. However, the ability of existing methods to extract and characterize complex
+  spatiotemporal features from radar echo images remains insufficient, resulting in suboptimal forecasting
+  accuracy. This paper proposes a novel extrapolation algorithm based on a dual-branch encoder–decoder
+  and spatiotemporal Gated Recurrent Unit. In this model, the dual-branch encoder–decoder structure independently
+  encodes radar echo images in the temporal and spatial domains, thereby avoiding interference between
+  spatiotemporal information. Additionally, we introduce a Multi-Scale Channel Attention Module (MSCAM)
+  to learn global and local feature information from each encoder layer, thereby enhancing focus on radar
+  image details. Furthermore, we propose a Spatiotemporal Attention Gated Recurrent Unit (STAGRU) that
+  integrates attention mechanisms to handle temporal evolution and spatial relationships within radar
+  data, enabling the extraction of spatiotemporal information from a broader receptive field. Experimental
+  results demonstrate the model’s ability to accurately predict morphological changes and motion trajectories
+  of radar images on real radar datasets, exhibiting superior performance compared to existing models
+  in terms of various evaluation metrics. This study effectively improves the accuracy of precipitation
+  forecasting in radar echo images, provides technical support for the short-range forecasting of precipitation,
+  and has good application prospects.
+significance: 3
+cited_by: 5
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

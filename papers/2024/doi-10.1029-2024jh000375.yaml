@@ -1,0 +1,54 @@
+id: doi-10.1029-2024jh000375
+title: A Generative Super‐Resolution Model for Enhancing Tropical Cyclone Wind Field Intensity and Resolution
+authors:
+- Joseph W. Lockwood
+- Avantika Gori
+- Pierre Gentine
+date: '2024-11-20'
+year: 2024
+venue: Journal of Geophysical Research Machine Learning and Computation
+venue_type: journal
+ids:
+  doi: 10.1029/2024jh000375
+  openalex: W4404600844
+links:
+  paper: https://doi.org/10.1029/2024jh000375
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2024JH000375
+orgs:
+- columbia-leap
+topic: extremes-hazards
+topics:
+- downscaling
+type: model
+method:
+- diffusion
+- cnn
+spatial:
+- regional
+data:
+- era5
+- other
+status: research
+summary: A debiasing network and conditional diffusion model downscale ERA5 tropical cyclone winds from
+  0.25° to 0.05° with -3.7% mean bias and ensemble outputs.
+abstract: Abstract Extreme winds associated with tropical cyclones (TCs) can cause significant loss of
+  life and economic damage globally, highlighting the need for accurate, high‐resolution modeling and
+  forecasting for wind. However, due to their coarse horizontal resolution, most global climate and weather
+  models suffer from chronic underprediction of TC wind speeds, limiting their use for impact analysis
+  and energy modeling. In this study, we introduce a cascading deep learning framework designed to downscale
+  high‐resolution TC wind fields given low‐resolution data. Our approach maps 85 TC events from ERA5 data
+  (0.25° resolution) to high‐resolution (0.05° resolution) observations at 6‐hr intervals. The initial
+  component is a debiasing neural network designed to model accurate wind speed observations using ERA5
+  data. The second component employs a generative super‐resolution strategy based on a conditional denoising
+  diffusion probabilistic model (DDPM) to enhance the spatial resolution and to produce ensemble estimates.
+  The model is able to accurately model intensity and produce realistic radial profiles and fine‐scale
+  spatial structures of wind fields, with a percentage mean bias of −3.74% compared to the high‐resolution
+  observations. Our downscaling framework enables the prediction of high‐resolution wind fields using
+  widely available low‐resolution and intensity wind data, allowing for the modeling of past events and
+  the assessment of future TC risks.
+significance: 4
+cited_by: 13
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

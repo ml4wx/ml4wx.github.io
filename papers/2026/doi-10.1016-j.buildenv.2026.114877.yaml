@@ -1,0 +1,56 @@
+id: doi-10.1016-j.buildenv.2026.114877
+title: 3D high resolution urban microclimate reconstruction and sensor placement optimization based on
+  diffusion-based deep learning
+authors:
+- Youmin Xu
+- Xu Han
+- Shaoxiang Qin
+- Liangzhu Leon Wang
+date: '2026-06-15'
+year: 2026
+venue: Building and Environment
+venue_type: journal
+ids:
+  doi: 10.1016/j.buildenv.2026.114877
+  openalex: W7164804993
+links:
+  paper: https://doi.org/10.1016/j.buildenv.2026.114877
+topic: downscaling
+topics:
+- data-assimilation
+type: model
+method:
+- diffusion
+- cnn
+spatial:
+- local
+data:
+- km-scale-sim
+- stations
+status: research
+summary: Diffusion-plus-CNN framework reconstructs 4 m urban microclimate wind and temperature fields
+  from sparse sensors in about 90–120 s, with RMSE near 0.3 m/s.
+abstract: 3D high resolution urban microclimate is essential for optimizing sustainable city design and
+  operation, pedestrian thermal and wind comfort, and district-scale energy resilience. However, real-world
+  microclimate sensing is limited by sparse measurements, and high-fidelity computational fluid dynamics
+  (CFD) simulations are computationally expensive. To overcome these challenges, this study proposes a
+  hierarchical generative-refinement (HGR) framework for urban microclimate modeling with limited computing
+  resources. In Step 1, an initial diffusion-based generative model is trained to predict low-resolution
+  flow and temperature fields, which is enhanced through maximum a posterior gradient ascent (MAP-GA)
+  to incorporate sparse measurements as conditional constraints. To enable a more efficient and explainable
+  selection of locations for measurements (virtual measurements) in MAP-GA, a spatiotemporal variability
+  analysis combined with SHAP-based sensitivity evaluation is conducted. In Step 2, a CNN-based model
+  refines the low-resolution predictions in Step 1 into high-resolution microclimate fields by integrating
+  urban morphology information, allowing the model to reconstruct fine-scale circulation patterns around
+  complex urban geometries. On a 4 m × 4 m resolution dataset, the proposed framework achieves reconstruction
+  errors on unseen test dataset (RMSEs) of 0.32 m/s, 0.28 m/s, 0.34 m/s, and 0.41°C for U, V, W, and T,
+  respectively, while requiring approximately 90-120 seconds of computation. The results demonstrate that,
+  for the tested Montréal heat-wave case, the HGR framework can efficiently reproduce high-resolution
+  microclimate fields from limited measurements, supporting its potential for fast urban microclimate
+  reconstruction.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,49 @@
+id: arxiv-2604.10328
+title: A Diffusion-Contrastive Graph Neural Network with Virtual Nodes for Wind Nowcasting in Unobserved
+  Regions
+authors:
+- Jie Shi
+- Siamak Mehrkanoon
+date: '2026-04-11'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2604.10328'
+  openalex: W7154313846
+links:
+  paper: https://arxiv.org/abs/2604.10328
+  pdf: https://arxiv.org/pdf/2604.10328
+topic: nowcasting
+topics:
+- local-forecasting
+type: model
+method:
+- gnn
+- diffusion
+timescale:
+- nowcast
+spatial:
+- regional
+- local
+data:
+- stations
+status: research
+summary: Graph neural network with virtual nodes and diffusion-contrastive learning nowcasts wind speed,
+  gusts and direction in unobserved Dutch regions, cutting MAE by 30-46% versus interpolation.
+abstract: Accurate weather nowcasting remains one of the central challenges in atmospheric science, with
+  critical implications for climate resilience, energy security, and disaster preparedness. Since it is
+  not feasible to deploy observation stations everywhere, some regions lack dense observational networks,
+  resulting in unreliable short-term wind predictions across those unobserved areas. Here we present a
+  deep graph self-supervised framework that extends nowcasting capability into such unobserved regions
+  without requiring new sensors. Our approach introduces "virtual nodes" into a diffusion and contrastive-based
+  graph neural network, enabling the model to learn wind condition (i.e., speed, direction and gusts)
+  in places with no direct measurements. Using high-temporal resolution weather station data across the
+  Netherlands, we demonstrate that this approach reduces nowcast mean absolute error (MAE) of wind speed,
+  gusts, and direction in unobserved regions by more than 30% - 46% compared with interpolation and regression
+  methods. By enabling localized nowcasts where no measurements exist, this method opens new pathways
+  for renewable energy integration, agricultural planning, and early-warning systems in data-sparse regions.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

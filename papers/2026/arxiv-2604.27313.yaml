@@ -1,0 +1,52 @@
+id: arxiv-2604.27313
+title: 'PINN-Cast: Exploring the Role of Continuous-Depth NODE in Transformers and Physics Informed Loss
+  as Soft Physical Constraints in Short-term Weather Forecasting'
+authors:
+- Hira Saleem
+- Flora Salim
+- Cormac Purcell
+date: '2026-04-30'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2604.27313'
+  openalex: W7159891350
+links:
+  paper: https://arxiv.org/abs/2604.27313
+  pdf: https://arxiv.org/pdf/2604.27313
+topic: global-medium-range
+topics:
+- hybrid-parameterization
+type: model
+method:
+- transformer
+- physics-constrained
+- differentiable
+timescale:
+- short
+spatial:
+- global
+data:
+- era5
+status: research
+summary: PINN-Cast combines a Neural-ODE continuous-depth transformer with a physics-informed loss for
+  short-term weather forecasting, improving over a discrete transformer baseline.
+abstract: Operational weather prediction has long relied on physics-based numerical weather prediction
+  (NWP), whose accuracy comes at the cost of substantial compute and complex simulation workflows. Recent
+  transformer-based forecasters offer efficient data-driven alternatives, however transformers are physics-agnostic
+  models. Additionally, standard transformer encoders evolve representations through discrete layer updates
+  that may be less suited to modeling smooth latent dynamics. In this work, we propose a continuous-depth
+  transformer encoder for weather forecasting that integrates Neural Ordinary Differential Equation (Neural
+  ODE) dynamics within each encoder block. Specifically, we replace discrete residual updates with ODE-based
+  updates solved using adaptive numerical integration. We also introduce a two-branch attention module
+  that combines conventional patch-wise self-attention with an auxiliary branch that applies a derivative
+  operator to attention logits, providing an additional change-sensitive interaction signal. To further
+  align forecasts with governing principles, we propose a customized physics-informed training objective
+  that enforces physical consistency as a soft constraint. We evaluate the proposed method against a standard
+  discrete transformer baseline and an existing continuous-time Neural ODE forecasting variant, demonstrating
+  the importance of PINN-Cast in short term weather forecasting.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

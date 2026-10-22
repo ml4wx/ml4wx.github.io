@@ -1,0 +1,51 @@
+id: arxiv-2311.15530
+title: 'SSIN: Self-Supervised Learning for Rainfall Spatial Interpolation'
+authors:
+- Jia Li
+- Yanyan Shen
+- Lei Chen
+- Charles Wang Wai NG
+date: '2023-11-27'
+year: 2023
+venue: Proceedings of the ACM on Management of Data
+venue_type: journal
+ids:
+  arxiv: '2311.15530'
+  doi: 10.1145/3589321
+  openalex: W4381326860
+links:
+  paper: https://doi.org/10.1145/3589321
+  pdf: https://arxiv.org/pdf/2311.15530
+  code: https://github.com/jlidw/SSIN
+topic: observations-remote-sensing
+type: model
+method:
+- transformer
+spatial:
+- regional
+data:
+- stations
+status: research
+summary: SSIN uses a masked-pretraining Transformer (SpaFormer) to interpolate rain-gauge rainfall in
+  space without hand-set spatial assumptions, outperforming prior methods on two datasets.
+abstract: 'The acquisition of accurate rainfall distribution in space is an important task in hydrological
+  analysis and natural disaster pre-warning. However, it is impossible to install rain gauges on every
+  corner. Spatial interpolation is a common way to infer rainfall distribution based on available raingauge
+  data. However, the existing works rely on some unrealistic pre-settings to capture spatial correlations,
+  which limits their performance in real scenarios. To tackle this issue, we propose the SSIN, which is
+  a novel data-driven self-supervised learning framework for rainfall spatial interpolation by mining
+  latent spatial patterns from historical observation data. Inspired by the Cloze task and BERT, we fully
+  consider the characteristics of spatial interpolation and design the SpaFormer model based on the Transformer
+  architecture as the core of SSIN. Our main idea is: by constructing rich self-supervision signals via
+  random masking, SpaFormer can learn informative embeddings for raw data and then adaptively model spatial
+  correlations based on rainfall spatial context. Extensive experiments on two real-world raingauge datasets
+  show that our method outperforms the state-of-the-art solutions. In addition, we take traffic spatial
+  interpolation as another use case to further explore the performance of our method, and SpaFormer achieves
+  the best performance on one large real-world traffic dataset, which further confirms the effectiveness
+  and generality of our method.'
+significance: 3
+cited_by: 6
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

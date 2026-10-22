@@ -1,0 +1,53 @@
+id: arxiv-2506.00033
+title: Probabilistic Spatial Interpolation of Sparse Data using Diffusion Models
+authors:
+- Valerie Tsao
+- Nathaniel W. Chaney
+- Manolis Veveakis
+date: '2025-05-26'
+year: 2025
+venue: Artificial Intelligence for the Earth Systems
+venue_type: journal
+ids:
+  arxiv: '2506.00033'
+  doi: 10.1175/aies-d-25-0049.1
+  openalex: W7116981401
+links:
+  paper: https://doi.org/10.1175/aies-d-25-0049.1
+  pdf: https://arxiv.org/pdf/2506.00033
+topic: observations-remote-sensing
+topics:
+- data-assimilation
+type: model
+method:
+- diffusion
+spatial:
+- regional
+data:
+- stations
+- satellite
+status: research
+summary: Diffusion-based imputation reconstructs full temperature fields over the Southern Great Plains
+  from as little as 1% observational coverage, aiding gap filling.
+abstract: 'The large underlying assumption of climate models today relies on the basis of a "confident"
+  initial condition, a reasonably plausible snapshot of the Earth for which all future predictions depend
+  on. However, given the inherently chaotic nature of our system, this assumption is complicated by sensitive
+  dependence, where small uncertainties in initial conditions can lead to exponentially diverging outcomes
+  over time. This challenge is particularly salient at global spatial scales and over centennial timescales,
+  where data gaps are not just common but expected. The source of uncertainty is two-fold: (1) sparse,
+  noisy observations from satellites and ground stations, and (2) internal variability stemming from the
+  simplifying approximations within the models themselves. In practice, data assimilation methods are
+  used to reconcile this missing information by conditioning model states on partial observations. Our
+  work builds on this idea but operates at the extreme end of sparsity. We propose a conditional data
+  imputation framework that reconstructs full temperature fields from as little as 1% observational coverage.
+  The method leverages a diffusion model guided by a prekriged mask, effectively inferring the full-state
+  fields from minimal data points. We validate our framework over the Southern Great Plains, focusing
+  on afternoon (12:00-6:00 PM) temperature fields during the summer months of 2018-2020. Across varying
+  observational densities--from swath data to isolated in-situ sensors--our model achieves strong reconstruction
+  accuracy, highlighting its potential to fill in critical data gaps in both historical reanalysis and
+  real-time forecasting pipelines.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

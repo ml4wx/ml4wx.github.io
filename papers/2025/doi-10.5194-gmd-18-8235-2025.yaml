@@ -1,0 +1,57 @@
+id: doi-10.5194-gmd-18-8235-2025
+title: 'A Python interface to the Fortran-based Parallel Data Assimilation Framework: pyPDAF v1.0.2'
+authors:
+- Yumeng Chen
+- Lars Nerger
+- Amos S. Lawless
+date: '2025-11-05'
+year: 2025
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-18-8235-2025
+  openalex: W4415926202
+links:
+  paper: https://doi.org/10.5194/gmd-18-8235-2025
+  pdf: https://gmd.copernicus.org/articles/18/8235/2025/gmd-18-8235-2025.pdf
+orgs:
+- university-of-reading
+topic: data-assimilation
+topics:
+- infra-software
+type: model
+method:
+- other
+spatial:
+- global
+data:
+- other
+status: research
+summary: Python interface pyPDAF to the Fortran PDAF data assimilation framework, demonstrated for coupled
+  atmosphere-ocean assimilation in the MAOOAM model.
+abstract: Abstract. Data assimilation (DA) is an essential component of numerical weather and climate
+  prediction. Efficient implementation of DA benefits both operational prediction and research. Currently,
+  a variety of DA software programs are available. One of the notable DA libraries is the Parallel Data
+  Assimilation Framework (PDAF) designed for ensemble data assimilation. The DA framework is widely used
+  with complex high-dimensional climate models and is applied for research on atmosphere, ocean, sea ice
+  and marine ecosystem modelling, as well as operational ocean forecasting. Meanwhile, there exists increasing
+  need for flexible and efficient DA implementations using Python due to the increasing amount of intermediate
+  complexity models as well as machine learning based models coded in Python. To accommodate for such
+  needs, here, we introduce a Python interface to PDAF, pyPDAF. The Python interface allows for flexible
+  DA system development while retaining the efficient implementation of the core DA algorithms in the
+  Fortran-based PDAF. The ideal use-case of pyPDAF is a DA system where the model integration is independent
+  from the DA program, which reads the model forecast ensemble, produces a model analysis and update the
+  restart files of the model, or a DA system where the model can be used in Python. With implementations
+  of both PDAF and pyPDAF, this study demonstrates the use of pyPDAF and PDAF for coupled data assimilation
+  (CDA) in a coupled atmosphere and ocean model, the Modular Arbitrary-Order Ocean-Atmosphere Model (MAOOAM).
+  Using both weakly and strongly CDA, we demonstrate that pyPDAF allows for the utilisation of Python-based
+  user-supplied functions in the Fortran-based DA framework. We also show that the Python-based user-supplied
+  routine can be a main reason for the slow-down of the DA system based on pyPDAF. Our CDA experiments
+  confirm the benefit of strongly coupled data assimilation compared to the weakly coupled data assimilation.
+  We also demonstrate that the CDA not only improves the instantaneous analysis but also the long-term
+  trend of the coupled dynamical system.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

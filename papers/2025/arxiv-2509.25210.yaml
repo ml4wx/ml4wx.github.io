@@ -1,0 +1,52 @@
+id: arxiv-2509.25210
+title: 'STCast: Adaptive Boundary Alignment for Global and Regional Weather Forecasting'
+authors:
+- Hao Chen
+- Tao Han
+- Jie Zhang
+- Song Guo
+- Lei Bai
+date: '2025-09-21'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2509.25210'
+links:
+  paper: https://arxiv.org/abs/2509.25210
+  pdf: https://arxiv.org/pdf/2509.25210
+  code: https://github.com/chenhao-zju/STCast
+topic: regional-km-scale
+topics:
+- global-medium-range
+type: model
+method:
+- transformer
+timescale:
+- medium
+spatial:
+- global
+- regional
+data:
+- era5
+status: research
+summary: STCast uses spatial-aligned attention to adaptively optimize regional boundaries and a temporal
+  mixture-of-experts for monthly routing, outperforming baselines on global, regional, extreme and ensemble
+  tasks.
+abstract: 'To gain finer regional forecasts, many works have explored the regional integration from the
+  global atmosphere, e.g., by solving boundary equations in physics-based methods or cropping regions
+  from global forecasts in data-driven methods. However, the effectiveness of these methods is often constrained
+  by static and imprecise regional boundaries, resulting in poor generalization ability. To address this
+  issue, we propose Spatial-Temporal Weather Forecasting (STCast), a novel AI-driven framework for adaptive
+  regional boundary optimization and dynamic monthly forecast allocation. Specifically, our approach employs
+  a Spatial-Aligned Attention (SAA) mechanism, which aligns global and regional spatial distributions
+  to initialize boundaries and adaptively refines them based on attention-derived alignment patterns.
+  Furthermore, we design a Temporal Mixture-of-Experts (TMoE) module, where atmospheric variables from
+  distinct months are dynamically routed to specialized experts using a discrete Gaussian distribution,
+  enhancing the model''s ability to capture temporal patterns. Beyond global and regional forecasting,
+  we evaluate our STCast on extreme event prediction and ensemble forecasting. Experimental results demonstrate
+  consistent superiority over state-of-the-art methods across all four tasks. Code: https://github.com/chenhao-zju/STCast'
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

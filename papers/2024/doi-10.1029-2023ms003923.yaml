@@ -1,0 +1,52 @@
+id: doi-10.1029-2023ms003923
+title: 'RaFSIP: Parameterizing Ice Multiplication in Models Using a Machine Learning Approach'
+authors:
+- Paraskevi Georgakaki
+- Athanasios Nenes
+date: '2024-06-01'
+year: 2024
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2023ms003923
+  openalex: W4399676953
+links:
+  paper: https://doi.org/10.1029/2023ms003923
+topic: hybrid-parameterization
+type: model
+method:
+- classical-ml
+timescale:
+- climate
+spatial:
+- global
+- regional
+data:
+- km-scale-sim
+status: research
+summary: Random Forest parameterization RaFSIP reproduces secondary ice production in mixed-phase clouds
+  within a factor of 3 when online-coupled to WRF at 50 km.
+abstract: Abstract Accurately representing mixed‐phase clouds (MPCs) in global climate models (GCMs) is
+  critical for capturing climate sensitivity and Arctic amplification. Secondary ice production (SIP),
+  can significantly increase ice crystal number concentration (ICNC) in MPCs, affecting cloud properties
+  and processes. Here, we introduce a machine‐learning (ML) approach, called Random Forest SIP (RaFSIP),
+  to parameterize SIP in stratiform MPCs. RaFSIP is trained on 16 grid points with 10‐km horizontal spacing
+  derived from a 2‐year simulation with the Weather Research and Forecasting (WRF) model, including explicit
+  SIP microphysics. Designed for a temperature range of 0 to −25°C, RaFSIP simplifies the description
+  of rime splintering, ice‐ice collisional break‐up, and droplet‐shattering using only a limited set of
+  inputs. RaFSIP was evaluated offline before being integrated into WRF, demonstrating its stable online
+  performance in a 1‐year simulation keeping the same model setup as during training. Even when coupled
+  with the 50‐km grid spacing domain of WRF, RaFSIP reproduces ICNC predictions within a factor of 3 when
+  compared to simulations with explicit SIP microphysics. The coupled WRF‐RaFSIP scheme replicates regions
+  of enhanced SIP and accurately maps ICNCs and liquid water content, particularly at temperatures above
+  −10°C. Uncertainties in RaFSIP minimally impact surface cloud radiative forcing in the Arctic, resulting
+  in radiative biases under 3 Wm −2 compared to simulations with detailed microphysics. Although the performance
+  of RaFSIP in convective clouds remains untested, its adaptable nature allows for data set augmentation
+  to address this aspect. This framework opens possibilities for GCM simplification and process description
+  through physics‐guided ML algorithms.
+significance: 4
+cited_by: 15
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

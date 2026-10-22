@@ -1,0 +1,49 @@
+id: arxiv-2403.18438
+title: Global Vegetation Modeling with Pre-Trained Weather Transformers
+authors:
+- Pascal Janetzky
+- Florian Gallusser
+- Simon Hentschel
+- Andreas Hotho
+- Anna Krause
+date: '2024-03-27'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2403.18438'
+  openalex: W4393300251
+links:
+  paper: https://arxiv.org/abs/2403.18438
+  pdf: https://arxiv.org/pdf/2403.18438
+topic: applications-impacts
+topics:
+- foundation-models
+type: application
+method:
+- transformer
+spatial:
+- global
+data:
+- other
+status: research
+summary: Transfers pretrained FourCastNet weather representations to predict global NDVI vegetation at
+  0.25°, improving on models trained from scratch using only meteorological inputs.
+abstract: Accurate vegetation models can produce further insights into the complex interaction between
+  vegetation activity and ecosystem processes. Previous research has established that long-term trends
+  and short-term variability of temperature and precipitation affect vegetation activity. Motivated by
+  the recent success of Transformer-based Deep Learning models for medium-range weather forecasting, we
+  adapt the publicly available pre-trained FourCastNet to model vegetation activity while accounting for
+  the short-term dynamics of climate variability. We investigate how the learned global representation
+  of the atmosphere's state can be transferred to model the normalized difference vegetation index (NDVI).
+  Our model globally estimates vegetation activity at a resolution of \SI{0.25}{\degree} while relying
+  only on meteorological data. We demonstrate that leveraging pre-trained weather models improves the
+  NDVI estimates compared to learning an NDVI model from scratch. Additionally, we compare our results
+  to other recent data-driven NDVI modeling approaches from machine learning and ecology literature. We
+  further provide experimental evidence on how much data and training time is necessary to turn FourCastNet
+  into an effective vegetation model. Code and models will be made available upon publication.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

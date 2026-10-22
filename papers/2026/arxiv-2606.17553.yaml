@@ -1,0 +1,45 @@
+id: arxiv-2606.17553
+title: SpatioTemporal Causal Network Diagnostics for Geographic Tipping Point Early Warning
+authors:
+- Zhaoyuan Yu
+- Zhangyong Liang
+date: '2026-06-16'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.17553'
+  openalex: W7165007939
+links:
+  paper: https://arxiv.org/abs/2606.17553
+  pdf: https://arxiv.org/pdf/2606.17553
+topic: climate-analysis-attribution
+type: model
+method:
+- classical-ml
+spatial:
+- global
+data:
+- other
+status: research
+summary: Transfer-entropy causal networks with dynamic mode decomposition give localized early warning
+  of AMOC and SST tipping, reaching AUROC 0.783 on the AMOC task.
+abstract: 'Geographic tipping points in ecosystems, climate subsystems, or ice sheets pose severe challenges
+  for localized early warning. Classical spatial indicators such as Moran''s I summarize global spatial
+  structure, but they struggle with three issues: spatial dilution, Euclidean assumptions, and correlated
+  noise. This paper introduces SpatioTemporal Causal Network Diagnostics (ST-CND), a framework that addresses
+  these three issues by representing the geographic field as a time-evolving directed causal network.
+  The core workflow is as follows: (1) infer which spatial nodes help predict other nodes via transfer
+  entropy, replacing fixed Euclidean neighborhoods with data-driven information-flow topology; (2) estimate
+  local recovery rates within each candidate subnetwork via dynamic mode decomposition; and (3) identify
+  the most vulnerable subnetwork by combining three signals, namely high internal fluctuation, high internal
+  synchronization, and low external coupling, thereby suppressing false alarms from spatially correlated
+  noise. Validated on synthetic bifurcations and two observational sea-surface temperature benchmarks,
+  namely Indo-Pacific SST and North Atlantic AMOC, ST-CND delivers localized and interpretable warnings.
+  On the AMOC task, it achieves an AUROC of 0.783 and a critical-subnetwork IoU of 0.378, outperforming
+  recurrence-network and lambda-AR1 baselines. The framework provides an interpretable and scalable pipeline
+  for spatial early warning in Earth system science.'
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

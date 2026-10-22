@@ -1,0 +1,54 @@
+id: doi-10.5194-gmd-19-1103-2026
+title: 'LEX v1.6.0: a new large-eddy simulation model in JAX with GPU acceleration and automatic differentiation'
+authors:
+- Xingyu Zhu
+- Yongquan Qu
+- Xiaoming Shi
+date: '2026-02-03'
+year: 2026
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-19-1103-2026
+  openalex: W7127137291
+links:
+  paper: https://doi.org/10.5194/gmd-19-1103-2026
+  pdf: https://gmd.copernicus.org/articles/19/1103/2026/gmd-19-1103-2026.pdf
+orgs:
+- columbia-leap
+topic: hybrid-parameterization
+type: model
+method:
+- cnn
+- differentiable
+- physics-constrained
+spatial:
+- local
+data:
+- km-scale-sim
+status: research
+summary: GPU-accelerated JAX large-eddy model with a CNN subgrid turbulence closure trained by autodiff,
+  reproducing gray-zone warm bubble dynamics better than Smagorinsky.
+abstract: Abstract. Large-eddy simulations (LESs) are essential tools for studies on atmospheric turbulence
+  and clouds and play critical roles in the development of turbulence and convection parameterizations.
+  Current numerical weather models have approached kilometer-scale resolution as supercomputing facilities
+  advance. However, this resolution range is in the so-called gray zone, where subgrid-scale (SGS) turbulence
+  actively interacts with resolved motion and significantly influences the large-scale characteristics
+  of simulated weather systems. Thus, developing SGS turbulence models for the gray zone requires new
+  LES models, which must run sufficiently fast when simulating large domains and enable new approaches
+  to develop SGS models. Here we used the Python library JAX to develop a new LES model. It is based on
+  the generalized pseudo-incompressible equations formulated by Durran (2008). The new LES model is capable
+  of adequate parallelism and can run at a fast speed with GPU acceleration. For a classic warm bubble
+  case, the traditional Smagorinsky model fails to reproduce the correct structure evolution of the warm
+  bubble, though it can modestly correct the rising speed in gray-zone resolution simulations. Utilizing
+  the capability of JAX for automatic differentiation, we trained a deep learning-based SGS turbulence
+  model for the same case. The trained deep learning SGS model, based on simple three-dimensional convolutional
+  neural networks (CNNs), enables this physics-deep learning hybrid model to accurately simulate the expansion
+  of the thermal bubble and the development of rotors surrounding the center of the bubble at a gray-zone
+  resolution. The gray-zone simulation results are comparable to that of the benchmark LES resolution.
+significance: 4
+cited_by: 1
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,58 @@
+id: arxiv-2602.11807
+title: 'PuYun-LDM: A Latent Diffusion Model for High-Resolution Ensemble Weather Forecasts'
+authors:
+- Lianjun Wu
+- Shengchen Zhu
+- Yuxuan Liu
+- Liuyu Kai
+- Xiaoduan Feng
+- Duomin Wang
+- Wenshuo Liu
+- Jingxuan Zhang
+- Kelvin Li
+- Bin Wang
+date: '2026-02-12'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2602.11807'
+  openalex: W7128781072
+links:
+  paper: https://arxiv.org/abs/2602.11807
+  pdf: https://arxiv.org/pdf/2602.11807
+topic: probabilistic-ensembles
+topics:
+- global-medium-range
+type: model
+method:
+- diffusion
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: Latent diffusion ensemble model with 3D masked autoencoder and variable-aware frequency regularization;
+  15-day global 0.25° forecasts in five minutes on one GPU.
+abstract: Latent diffusion models (LDMs) suffer from limited diffusability in high-resolution (<=0.25°)
+  ensemble weather forecasting, where diffusability characterizes how easily a latent data distribution
+  can be modeled by a diffusion process. Unlike natural image fields, meteorological fields lack task-agnostic
+  foundation models and explicit semantic structures, making VFM-based regularization inapplicable. Moreover,
+  existing frequency-based approaches impose identical spectral regularization across channels under a
+  homogeneity assumption, which leads to uneven regularization strength under the inter-variable spectral
+  heterogeneity in multivariate meteorological data. To address these challenges, we propose a 3D Masked
+  AutoEncoder (3D-MAE) that encodes weather-state evolution features as an additional conditioning for
+  the diffusion model, together with a Variable-Aware Masked Frequency Modeling (VA-MFM) strategy that
+  adaptively selects thresholds based on the spectral energy distribution of each variable. Together,
+  we propose PuYun-LDM, which enhances latent diffusability and achieves superior performance to ENS at
+  short lead times while remaining comparable to ENS at longer horizons. PuYun-LDM generates a 15-day
+  global forecast with a 6-hour temporal resolution in five minutes on a single NVIDIA H200 GPU, while
+  ensemble forecasts can be efficiently produced in parallel.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

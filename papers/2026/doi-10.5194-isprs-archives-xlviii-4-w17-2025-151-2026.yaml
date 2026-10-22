@@ -1,0 +1,51 @@
+id: doi-10.5194-isprs-archives-xlviii-4-w17-2025-151-2026
+title: 'Urban Air Temperature Modeling: Combining Physical Simulation and Data-Driven Fine-Tuning'
+authors:
+- Hiba Hamdi
+- Thomas Corpetti
+- Laure Roupioz
+- Xavier Briottet
+date: '2026-01-15'
+year: 2026
+venue: "\x98The \x9Cinternational archives of the photogrammetry, remote sensing and spatial information\
+  \ sciences/International archives of the photogrammetry, remote sensing and spatial information sciences"
+venue_type: journal
+ids:
+  doi: 10.5194/isprs-archives-xlviii-4-w17-2025-151-2026
+  openalex: W7124313520
+links:
+  paper: https://doi.org/10.5194/isprs-archives-xlviii-4-w17-2025-151-2026
+  pdf: https://isprs-archives.copernicus.org/articles/XLVIII-4-W17-2025/151/2026/isprs-archives-XLVIII-4-W17-2025-151-2026.pdf
+topic: local-forecasting
+topics:
+- hybrid-parameterization
+type: model
+method:
+- physics-constrained
+spatial:
+- local
+data:
+- stations
+- km-scale-sim
+status: research
+summary: A neural model trained on Urban Weather Generator simulations and fine-tuned with station data
+  predicts urban air temperature across Toulouse local climate zones.
+abstract: 'Abstract. Accurate urban climate modeling is crucial for addressing the growing impacts of
+  urban heat islands (UHI) and climate change. Physics-based tools such as the Urban Weather Generator
+  (UWG) are widely used but often limited by high parameterization needs and a lack of specialized data.
+  In this study, we develop a hybrid framework combining UWG simulations with deep learning, introducing
+  two models: NUWG-Sim (Neural Urban Weather Generator on Simulations), trained solely on simulated data,
+  and NUWG-city, which is fine-tuned with ground weather station data. To systematically evaluate model
+  performance across heterogeneous urban contexts, we structure our experiments around Local Climate Zones
+  (LCZs) in Toulouse, France. Our methodology involves generating over 3400 UWG initialization files,
+  simulating urban air temperatures time series for diverse surface parameters, and training a neural
+  model on these series. We then fine-tune the model with observed data from selected weather stations,
+  analyzing how the number and diversity of stations environments impact performance on unseen stations
+  from different LCZs. Results show that even limited fine-tuning significantly improves performance,
+  particularly when training includes stations from LCZs similar to the test set. The approach highlights
+  the potential of physics-informed neural models for city-specific urban climate monitoring.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

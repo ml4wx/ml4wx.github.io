@@ -1,0 +1,47 @@
+id: arxiv-2501.14822
+title: 'Controlling Ensemble Variance in Diffusion Models: An Application for Reanalyses Downscaling'
+authors:
+- Fabio Merizzi
+- Davide Evangelista
+- Harilaos Loukos
+date: '2025-01-21'
+year: 2025
+venue: Neural Computing and Applications
+venue_type: journal
+ids:
+  arxiv: '2501.14822'
+  doi: 10.1007/s00521-025-11709-1
+  openalex: W7130504224
+links:
+  paper: https://doi.org/10.1007/s00521-025-11709-1
+  pdf: https://arxiv.org/pdf/2501.14822
+topic: downscaling
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+spatial:
+- regional
+data:
+- era5
+- other
+status: research
+summary: Shows DDIM step count controls ensemble variance, and builds a diffusion model downscaling ERA5
+  wind to CERRA with calibrated spread.
+abstract: In recent years, diffusion models have emerged as powerful tools for generating ensemble members
+  in meteorology. In this work, we demonstrate how a Denoising Diffusion Implicit Model (DDIM) can effectively
+  control ensemble variance by varying the number of diffusion steps. Introducing a theoretical framework,
+  we relate diffusion steps to the variance expressed by the reverse diffusion process. Focusing on reanalysis
+  downscaling, we propose an ensemble diffusion model for the full ERA5-to-CERRA domain, generating variance-calibrated
+  ensemble members for wind speed at full spatial and temporal resolution. Our method aligns global mean
+  variance with a reference ensemble dataset and ensures spatial variance is distributed in accordance
+  with observed meteorological variability. Additionally, we address the lack of ensemble information
+  in the CARRA dataset, showcasing the utility of our approach for efficient, high-resolution ensemble
+  generation.
+significance: 4
+cited_by: 3
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

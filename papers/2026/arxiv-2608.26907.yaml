@@ -1,0 +1,46 @@
+id: arxiv-2608.26907
+title: Climate Physics Dynamic Matching
+authors:
+- Gurjeet Sangra Singh
+- Frantzeska Lavda
+- Alexandros Kalousis
+date: '2026-08-27'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2608.26907'
+  openalex: W7204559736
+links:
+  paper: https://arxiv.org/abs/2608.26907
+  pdf: https://arxiv.org/pdf/2608.26907
+topic: global-medium-range
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- physics-constrained
+timescale:
+- short
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: ClimPhyDM combines an advection physics prior with variational, simulation-free learning to forecast
+  ERA5 weather, outperforming ClimODE and GB-DM at extended horizons.
+abstract: Deep generative models such as flow matching and diffusion models have shown potential for learning
+  complex dynamical systems, but typically act as black boxes that neglect underlying physical structure,
+  while physics-based models governed by partial differential equations are often incomplete due to missing
+  source terms, or uncertain parametrisations. We present Climate Physics Dynamic Matching (ClimPhyDM),
+  a variational simulation-free dynamics informed framework for weather forecasting that combines an advection-type
+  physics prior with data-driven components in a variational framework. % to capture the stochasticity
+  and multi-modality of unresolved atmospheric dynamics. On the ERA5 benchmark at hourly (42-hour) and
+  monthly (5-month) resolutions, ClimPhyDM outperforms ClimODE, and GB-DM, keeping the lower error at
+  extended horizon, indicating improved temporal stability and resistance to error accumulation, while
+  its simulation-free paradigm also enables training on a single modest 12 GB consumer GPU.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

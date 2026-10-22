@@ -1,0 +1,55 @@
+id: arxiv-2606.02508
+title: 'AI and physics-based weather forecasting: A comparative study'
+authors:
+- Mátyás Kocsis
+- Sándor Baran
+date: '2026-06-01'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.02508'
+  openalex: W7163170856
+links:
+  paper: https://arxiv.org/abs/2606.02508
+  pdf: https://arxiv.org/pdf/2606.02508
+topic: post-processing
+topics:
+- global-medium-range
+type: evaluation
+method:
+- classical-ml
+timescale:
+- medium
+spatial:
+- global
+data:
+- nwp-analysis
+- stations
+status: operational
+summary: Compares raw and EMOS/quantile-regression post-processed 10 m wind ensembles from operational
+  IFS and AIFS over 9000+ stations; raw IFS remains more skilful.
+abstract: In the last few years, AI-based models have become the centre of attention in weather forecasting
+  due to their increasing accuracy and efficiency. Pioneering among weather services, ECMWF has developed
+  its Artificial Intelligence Forecasting System (AIFS) model, which was first to provide data-driven
+  ensemble forecasts in June 2024. Since July 2025, the AIFS ensemble model has been operational and runs
+  in parallel with ECMWF's physics-based Integrated Forecasting System (IFS), which is considered the
+  gold standard in weather prediction. The new AIFS model can generate forecasts ten times faster than
+  the classical numerical weather prediction model, while consuming approximately a thousand times less
+  energy. We present the results of our systematic assessment of the performance of the IFS and AIFS models
+  by comparing the accuracy of raw and post-processed medium-range 10-m wind-speed ensemble forecasts
+  generated operationally by the two models for the period between July and November 2025 for more than
+  9000 synoptic observation stations across the globe. The post-processed case involves the parametric
+  ensemble model output statistics (EMOS) as well as the non-parametric quantile regression (QR) approach
+  to correct any systematic inaccuracies in the raw forecasts. The predictive performance of raw IFS ensemble
+  forecasts proves to be substantially superior to the skill of the raw AIFS predictions for all investigated
+  forecast horizons. As expected, post-processing significantly improves the skill of both IFS and AIFS
+  predictions, and, across most verification metrics, EMOS is superior to QR, especially for short lead
+  times. Compared to the raw ensemble, the differences in skill between the matching IFS and AIFS predictions
+  are substantially decreased by post-processing and are mostly significant at short lead times, when
+  the IFS forecasts outperform their AIFS counterparts.
+significance: 4
+cited_by: 0
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

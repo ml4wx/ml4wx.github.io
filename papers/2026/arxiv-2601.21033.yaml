@@ -1,0 +1,46 @@
+id: arxiv-2601.21033
+title: 'Predict-Project-Renoise: Sampling Diffusion Models under Hard Constraints'
+authors:
+- Omer Rochman-Sharabi
+- Gilles Louppe
+date: '2026-01-28'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2601.21033'
+  openalex: W7126153211
+links:
+  paper: https://arxiv.org/abs/2601.21033
+  pdf: https://arxiv.org/pdf/2601.21033
+topic: probabilistic-ensembles
+topics:
+- foundation-models
+type: model
+method:
+- diffusion
+- physics-constrained
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- other
+status: research
+summary: Predict-Project-Renoise samples pretrained diffusion models under hard constraints, including
+  a 10^8-dimensional global weather forecasting experiment.
+abstract: 'Diffusion models cannot enforce hard constraints, yet applications in the physical sciences
+  demand exact satisfaction of conservation laws, boundary conditions, and observational consistency.
+  In this work, we identify a corrector kernel whose unique stationary distribution is the constrained
+  marginal at each noise level, and approximate it by iteratively projecting through the denoiser and
+  renoising via the forward kernel. The resulting Predict-Project-Renoise (PPR) algorithm enables sampling
+  from pretrained diffusion models under hard constraints. Its three components are each necessary: projecting
+  through the denoiser keeps samples close to the data manifold, while renoising and iterating drive samples
+  toward the constrained marginal. On 2D distributions, the Kuramoto-Sivashinsky equation, and global
+  weather forecasting with a $10^8$-dimensional atmospheric model, PPR simultaneously achieves low constraint
+  violations and high distributional fidelity, a combination that existing methods fail to deliver.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

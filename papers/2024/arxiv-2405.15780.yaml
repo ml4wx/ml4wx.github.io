@@ -1,0 +1,53 @@
+id: arxiv-2405.15780
+title: Sequence Length Scaling in Vision Transformers for Scientific Images on Frontier
+authors:
+- Aristeidis Tsaris
+- Chengming Zhang
+- Xiao Wang
+- Junqi Yin
+- Siyan Liu
+- Moetasim Ashfaq
+- Ming Fan
+- Jong Youl Choi
+- Mohamed Wahib
+- Dan Lu
+- Prasanna Balaprakash
+- Feiyi Wang
+date: '2024-04-17'
+year: 2024
+venue: The International Journal of High Performance Computing Applications
+venue_type: journal
+ids:
+  arxiv: '2405.15780'
+  doi: 10.1177/10943420251394758
+  openalex: W4416369015
+links:
+  paper: https://doi.org/10.1177/10943420251394758
+  pdf: https://arxiv.org/pdf/2405.15780
+orgs:
+- ornl
+topic: infra-software
+type: model
+method:
+- transformer
+data:
+- other
+status: research
+summary: Sequence parallelism lets Vision Transformers handle 1M-token inputs on 2,048 GPUs at 94% scaling
+  efficiency, improving climate temperature prediction accuracy by 20%.
+abstract: Vision Transformers (ViTs) are pivotal for foundational models in scientific imagery, including
+  Earth science applications, due to their capability to process large sequence lengths. While transformers
+  for text has inspired scaling sequence lengths in ViTs, yet adapting these for ViTs introduces unique
+  challenges. We develop distributed sequence parallelism for ViTs, enabling them to handle up to 1M tokens.
+  Our approach, leveraging DeepSpeed-Ulysses and Long-Sequence-Segmentation with model sharding, is the
+  first to apply sequence parallelism in ViT training, achieving a 94% batch scaling efficiency on 2,048
+  AMD-MI250X GPUs. Evaluating sequence parallelism in ViTs, particularly in models up to 10B parameters,
+  highlighted substantial bottlenecks. We countered these with hybrid sequence, pipeline, tensor parallelism,
+  and flash attention strategies, to scale beyond single GPU memory limits. Our method significantly enhances
+  climate modeling accuracy by 20% in temperature predictions, marking the first training of a transformer
+  model on a full-attention matrix over 188K sequence length.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

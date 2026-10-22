@@ -1,0 +1,55 @@
+id: arxiv-2509.25631
+title: 'Swift: An Autoregressive Consistency Model for Efficient Weather Forecasting'
+authors:
+- Jason Stock
+- Troy Arcomano
+- Rao Kotamarthi
+date: '2025-09-30'
+year: 2025
+venue: Machine Learning Earth
+venue_type: journal
+ids:
+  arxiv: '2509.25631'
+  doi: 10.1088/3049-4753/ae802a
+  openalex: W7165531483
+links:
+  paper: https://doi.org/10.1088/3049-4753/ae802a
+  pdf: https://arxiv.org/pdf/2509.25631
+orgs:
+- ai2
+- argonne
+topic: probabilistic-ensembles
+topics:
+- s2s-seasonal
+type: model
+method:
+- diffusion
+timescale:
+- medium
+- s2s
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: Swift, a single-step consistency model trained with CRPS, produces 6-hourly ensemble forecasts
+  stable for 75 days, 39 times faster than diffusion baselines and competitive with IFS ENS.
+abstract: Diffusion models offer a physically grounded framework for probabilistic weather forecasting,
+  but their typical reliance on slow, iterative solvers during inference makes them impractical for subseasonal-to-seasonal
+  (S2S) applications where long lead-times and domain-driven calibration are essential. To address this,
+  we introduce Swift, a single-step consistency model that, for the first time, enables autoregressive
+  finetuning of a probability flow model with a continuous ranked probability score (CRPS) objective.
+  This eliminates the need for multi-model ensembling or parameter perturbations. Results show that Swift
+  produces skillful 6-hourly forecasts that remain stable for up to 75 days, running $39\times$ faster
+  than state-of-the-art diffusion baselines while achieving forecast skill competitive with the numerical-based,
+  operational IFS ENS. This marks a step toward efficient and reliable ensemble forecasting from medium-range
+  to seasonal-scales.
+significance: 6
+cited_by: 1
+score: 59
+highlight: true
+highlight_reason: Single-step consistency model with CRPS autoregressive finetuning gives stable 75-day
+  ensembles, 39x faster than diffusion and competitive with IFS ENS.
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,51 @@
+id: arxiv-2608.06241
+title: Timestep-Conditioned Transformers for Global Weather Forecasting
+authors:
+- Sam Levang
+- Fran Bartolic
+- Ty Dickinson
+- Chase Dwelle
+- Paulius Rauba
+- Viktor Cikojevic
+date: '2026-08-06'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2608.06241'
+  openalex: W7201834324
+links:
+  paper: https://arxiv.org/abs/2608.06241
+  pdf: https://arxiv.org/pdf/2608.06241
+topic: global-medium-range
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: GEM-3 is a probabilistic global transformer with a single set of weights supporting configurable
+  inference timesteps, improving rollout stability across horizons.
+abstract: 'Existing machine-learning weather forecasting models rely on predetermined and fixed autoregressive
+  timesteps. The choice of model timestep involves a fundamental trade-off: shorter timesteps (e.g. 1
+  to 6 hours) finely resolve atmospheric dynamics within the diurnal cycle but increase error accumulation
+  for a given forecast horizon, while longer timesteps (e.g. 24 hours) reduce error accumulation but limit
+  the usability of short-range forecasts where sub-daily predictability is high. In this work, we present
+  GEM-3, a probabilistic global weather model that addresses this trade-off through explicit multi-timestep
+  inference. With a single set of trained weights, the model timestep can be configured at inference time
+  to balance predictability and usability across a broad forecast horizon. Additionally, we find that
+  mixed-timestep training consistently improves rollout stability relative to timestep-specialist models.
+  Under the hood, GEM-3 is a lightweight neighborhood-attention transformer with ~134M parameters on an
+  equirectangular grid with a number of architectural advancements beyond its predecessor GEM-2. The result
+  is a practical forecasting system that couples near-SOTA medium-range probabilistic skill, stable extended-range
+  rollouts, efficient training and inference, and decision-relevant diagnostics.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

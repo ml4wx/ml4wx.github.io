@@ -1,0 +1,55 @@
+id: arxiv-2406.10108
+title: Precipitation Nowcasting Using Physics Informed Discriminator Generative Models
+authors:
+- Junzhe Yin
+- Cristian Meo
+- Ankush Roy
+- Zeineh Bou Cher
+- Yanbo Wang
+- Ruben Imhoff
+- Remko Uijlenhoet
+- Justin Dauwels
+date: '2024-06-14'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2406.10108'
+  doi: 10.23919/eusipco63174.2024.10715141
+  openalex: W4404609153
+links:
+  paper: https://arxiv.org/abs/2406.10108
+  pdf: https://arxiv.org/pdf/2406.10108
+topic: nowcasting
+topics:
+- extremes-hazards
+type: model
+method:
+- gan-vae
+- transformer
+- physics-constrained
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- stations
+status: research
+summary: Physics-informed GAN with VQ-GAN and transformer generator for KNMI precipitation nowcasting;
+  reports outperformance over PySTEPS and deep generative baselines.
+abstract: Nowcasting leverages real-time atmospheric conditions to forecast weather over short periods.
+  State-of-the-art models, including PySTEPS, encounter difficulties in accurately forecasting extreme
+  weather events because of their unpredictable distribution patterns. In this study, we design a physics-informed
+  neural network to perform precipitation nowcasting using the precipitation and meteorological data from
+  the Royal Netherlands Meteorological Institute (KNMI). This model draws inspiration from the novel Physics-Informed
+  Discriminator GAN (PID-GAN) formulation, directly integrating physics-based supervision within the adversarial
+  learning framework. The proposed model adopts a GAN structure, featuring a Vector Quantization Generative
+  Adversarial Network (VQ-GAN) and a Transformer as the generator, with a temporal discriminator serving
+  as the discriminator. Our findings demonstrate that the PID-GAN model outperforms numerical and SOTA
+  deep generative models in terms of precipitation nowcasting downstream metrics.
+significance: 4
+cited_by: 9
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

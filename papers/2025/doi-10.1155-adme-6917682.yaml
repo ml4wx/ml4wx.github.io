@@ -1,0 +1,63 @@
+id: doi-10.1155-adme-6917682
+title: Prediction of Monthly Temperature Over China Based on a Machine Learning Method
+authors:
+- Ping Mei
+- Zixin Yin
+- Haoyu Wang
+- Changzheng Liu
+- Yaoming Liao
+- Qiang Zhang
+- Liping Yin
+date: '2025-01-01'
+year: 2025
+venue: Advances in Meteorology
+venue_type: journal
+ids:
+  doi: 10.1155/adme/6917682
+  openalex: W4406223175
+links:
+  paper: https://doi.org/10.1155/adme/6917682
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1155/adme/6917682
+orgs:
+- nuist
+topic: s2s-seasonal
+type: model
+method:
+- classical-ml
+timescale:
+- seasonal
+spatial:
+- regional
+data:
+- nwp-analysis
+- other
+status: research
+summary: Sliding-window machine learning predicts monthly China temperature anomalies, reforecasting 2012–2021
+  and benchmarked against ECMWF, NCEP and BCC operational models.
+abstract: 'Machine learning has achieved significant success in many statistical application scenarios,
+  but has yet to be fully successful in monthly and seasonal predictions. We identified three statistical
+  challenges in climate prediction: instability of statistical models, complexity of feature factors,
+  and the nonlinearity of the relationship between predictors and predictands. These characteristics limit
+  both traditional empirical forecasting and machine learning methods. This paper proposes a novel method
+  called dynamically modeled machine learning to predict monthly temperature anomalies over China. The
+  core idea of dynamic modeling is that the machine learning model is trained using a sliding time window,
+  so that the relationship between predictors and predictands is optimized for a specific and recent period
+  rather than for the entire time span. One hundred thirty indices related to atmospheric and oceanic
+  circulation and other climatic events from the Beijing Climate Center are used as the feature set. After
+  feature engineering, including feature selection and dimensionality reduction, the predictors are generated
+  and input into a regressor. Five machine learning algorithms are employed as regressors one by one:
+  linear regression (LR), ridge regression (RR), random forest (RF), support vector machine (SVM), and
+  gradient boosting decision trees (GBDTs). The method performs reforecasting for 2012–2021 and compares
+  the results with the output of operational climate models from ECMWF, NCEP, and the Beijing Climate
+  Center. Three quantitative evaluation metrics—predictive score (PS), anomaly correlation coefficient
+  (ACC), and anomaly sign agreement rate—were used to assess the prediction performance of each machine
+  learning regressor, the ensemble model, and three dynamic models. The results demonstrate that the method
+  using GBDTs as the regressor achieves the best predictive performance compared to other methods and
+  operational models, with a monthly average PS score of 84, an ACC value of 0.27, and an anomaly sign
+  agreement rate of 74%.'
+significance: 3
+cited_by: 2
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

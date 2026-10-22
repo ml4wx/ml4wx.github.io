@@ -1,0 +1,50 @@
+id: arxiv-2606.02661
+title: 'Learning to Refine: Spectral-Decoupled Iterative Refinement Framework for Precipitation Nowcasting'
+authors:
+- Yunlong Zhou
+- Chen Zhao
+- Danyang Peng
+- Fanfan Ji
+- Xiao-Tong Yuan
+date: '2026-06-01'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.02661'
+  openalex: W7163404018
+links:
+  paper: https://arxiv.org/abs/2606.02661
+  pdf: https://arxiv.org/pdf/2606.02661
+  code: https://github.com/RuntimeWarning/SDIR
+topic: nowcasting
+type: model
+method:
+- transformer
+- neural-operator
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: SDIR refines precipitation nowcasts coarse-to-fine with a transformer for synoptic structure
+  and Fourier neural operators for residuals, matching diffusion-level spectral fidelity without hallucinations.
+abstract: 'Accurate precipitation nowcasting is vital for disaster mitigation, but deep learning methods
+  face a key trade-off: regression models produce over-smoothed, spectrally decaying predictions that
+  blur convective details and violate turbulence power laws; diffusion models generate realistic yet unanchored
+  hallucinations lacking physical grounding. We propose Spectral-Decoupled Iterative Refinement (SDIR),
+  a deterministic framework that reformulates nowcasting as progressive frequency-decoupled refinement.
+  SDIR first extracts a stable low-frequency synoptic skeleton, then iteratively refines high-frequency
+  textures under physical constraints, eliminating both blurring and hallucinations. It features a dual-path
+  design: the Synoptic Frequency-Guided Former (SFG-Former) with Scale-Adaptive Transformers for global
+  structure, and the Fourier Residual Refiner (FR-Refiner) with Scale-Conditioned Fourier Neural Operators
+  for fine residuals. A Physically Consistent Power Spectral Density (PCPSD) loss with dynamic masking
+  enforces a turbulence-consistent spectral distribution. Experiments on three benchmarks show SDIR significantly
+  outperforms SOTA methods in spatial accuracy while achieving spectral fidelity competitive with diffusion-based
+  methods, enabling reliable high-resolution operational nowcasting. Code link: https://github.com/RuntimeWarning/SDIR.'
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

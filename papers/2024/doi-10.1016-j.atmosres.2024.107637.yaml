@@ -1,0 +1,65 @@
+id: doi-10.1016-j.atmosres.2024.107637
+title: Bias correction of the hourly satellite precipitation product using machine learning methods enhanced
+  with high-resolution WRF meteorological simulations
+authors:
+- Yao Nan
+- Jinyin Ye
+- Shuai Wang
+- Shuai Yang
+- Yang Lu
+- Hongliang Zhang
+- Xiaoying Yang
+date: '2024-08-13'
+year: 2024
+venue: Atmospheric Research
+venue_type: journal
+ids:
+  doi: 10.1016/j.atmosres.2024.107637
+  openalex: W4401538532
+links:
+  paper: https://doi.org/10.1016/j.atmosres.2024.107637
+orgs:
+- fudan-university
+topic: observations-remote-sensing
+topics:
+- post-processing
+type: model
+method:
+- classical-ml
+- rnn
+spatial:
+- regional
+data:
+- satellite
+- nwp-analysis
+- stations
+status: research
+summary: Random Forest and Bi-LSTM bias correction of hourly IMERG-E precipitation, with WRF covariates
+  raising CC from 0.43 to 0.60.
+abstract: Accurate precipitation data are crucial in atmospheric and hydrological studies, especially
+  for water resource management and disaster early warning. Satellite precipitation product (SPP) with
+  high spatiotemporal resolution has been regarded as a valuable alternative precipitation source to ground
+  observations. However, the hourly SPP generally performs poorly compared to daily SPP, thereby bias
+  correction is urgently required. This study investigates the viability of utilizing machine learning
+  methods to correct the bias of the hourly Integrated Multi-satellitE Retrievals for Global Precipitation
+  Measurement-Early (IMERG-E) product. Meanwhile, the Weather Research and Forecasting (WRF) model is
+  utilized to generate high-resolution fields of four hourly meteorological variables, namely, temperature
+  at 2 m (TEMP2), specific humidity at 2 m (Q2), wind direction at 10 m (WDIR10), and wind speed at 10
+  m (WSPD10), which further serve as covariates in machine learning models to enhance the correction process.
+  Four machine learning models were developed, i.e., Random Forest (RF) and Bidirectional Long Short-Term
+  Memory Networks (Bi-LSTM) without WRF-simulated covariates, and RF-WRF and Bi-LSTM-WRF with meteorological
+  covariates. The results demonstrated that incorporating WRF-simulated meteorological covariates improved
+  model performance. Specifically, correlation coefficient (CC) values increased from 0.47 (RF) to 0.51
+  (RF-WRF) and rose from 0.55 (Bi-LSTM) to 0.60 (Bi-LSTM-WRF), along with reduced root mean square error
+  (RMSE) and increased critical success index (CSI) values. Furthermore, two Bi-LSTM models consistently
+  outperformed two RF models. Overall, the Bi-LSTM-WRF model emerged as the most effective correction
+  method, which increased CC from 0.43 (IMERG-E) to 0.60, reduced RMSE from 1.91 mm to 1.08 mm, and enhanced
+  CSI from 0.34 to 0.41. This study underscores the potential of integrating high-resolution WRF meteorological
+  outputs into machine learning frameworks for correcting hourly SPPs, contributing significantly to the
+  advancement of precipitation estimation in meteorological and hydrological applications.
+significance: 3
+cited_by: 30
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

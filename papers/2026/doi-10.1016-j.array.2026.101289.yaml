@@ -1,0 +1,47 @@
+id: doi-10.1016-j.array.2026.101289
+title: 'ST-RadGAN: A novel spatiotemporal generative adversarial network for high-resolution surface solar
+  radiation downscaling'
+authors:
+- Xiaojuan Zhang
+- Xinyue Mo
+- Huan Li
+date: '2026-09-24'
+year: 2026
+venue: Array
+venue_type: journal
+ids:
+  doi: 10.1016/j.array.2026.101289
+  openalex: W7214236601
+links:
+  paper: https://doi.org/10.1016/j.array.2026.101289
+  pdf: https://www.sciencedirect.com/science/article/pii/S2590005626006120/pdf
+topic: downscaling
+type: model
+method:
+- gan-vae
+- gnn
+- transformer
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: ST-RadGAN combines graph attention, temporal transformer and adversarial training to downscale
+  ERA5-Land surface solar radiation, reaching R² 0.87 and beating six baselines.
+abstract: Global horizontal irradiance (GHI) is an important variable in surface-energy studies, solar-resource
+  assessment, environmental meteorology, and eco-hydrological applications. Gridded reanalysis products
+  provide spatially continuous radiation information, but their native resolution can limit localized
+  analyses. This study presents ST-RadGAN, a deep learning framework for reconstructing a finer-grid ERA5-Land
+  GHI reference from coarse-resolution meteorological inputs. The framework combines a Graph Attention
+  Network (GAT) for feature-dependent aggregation over a fixed local grid neighborhood, a Temporal Transformer
+  for integrating historical input representations, and conditional adversarial supervision alongside
+  pixel-wise reconstruction. The implemented model performs deterministic conditional reconstruction of
+  the terminal input time. Across three independent runs, ST-RadGAN achieved an RMSE of 1.6453 ± 0.0570,
+  an MAE of 1.0481 ± 0.0140, and an R 2 of 0.8726 ± 0.0088 on the held-out test segment. Under the common
+  repeated-run protocol, it obtained lower mean point-wise errors than the six compared baseline models.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

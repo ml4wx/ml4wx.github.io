@@ -1,0 +1,57 @@
+id: doi-10.18280-mmep.130603
+title: Hybrid Stacking Framework Integrating Attention-Enhanced Temporal BiLSTM and Tree-Based Learners
+  for Climate-Resilient Multi-Class Rainfall Intensity Early Warning
+authors:
+- Muhammad Rizal H
+- Muhajirin
+- Elly Warni
+- Djarot Hindarto
+- First Wanita
+- Abd Rahman
+- Sitti Suhada
+date: '2026-07-15'
+year: 2026
+venue: Mathematical Modelling and Engineering Problems
+venue_type: journal
+ids:
+  doi: 10.18280/mmep.130603
+  openalex: W7204795887
+links:
+  paper: https://doi.org/10.18280/mmep.130603
+  pdf: https://iieta.org/download/file/fid/198043
+topic: local-forecasting
+type: model
+method:
+- rnn
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Stacked attention-BiLSTM and tree ensemble classify multi-class daily rainfall intensity at Australian
+  stations, reaching 0.9077 macro AUC-ROC.
+abstract: Multi-class rainfall intensity classification underpins graduated early-warning protocols.Yet,
+  most data-driven studies remain confined to binary rain/no-rain prediction and to single-day tabular
+  representations that forfeit the temporal evolution of weather systems.This study proposes a hybrid
+  stacking framework that couples an attention-enhanced temporal bidirectional long short-term memory
+  (AE-BiLSTM) network with four tree-based learners (Light Gradient Boosting Machine (LightGBM), Extreme
+  Gradient Boosting (XGBoost), random forest, and extra trees) via a classweighted logistic regression
+  meta-learner.Daily observations from the Australian Bureau of Meteorology are reorganised into seven-day
+  per-station sliding windows, rendering the bidirectional recurrence meaningful; wind direction is cyclically
+  encoded; and an ordinal-aware adaptive focal loss with learnable class-specific focusing parameters
+  is combined with two-stage training and per-class threshold calibration to confront severe class imbalance.Across
+  stratified three-fold cross-validation on 144,137 temporal windows, the proposed framework attains an
+  accuracy of 0.7391, a macro F1-score of 0.5163, a macro Area Under the Receiver Operating Characteristic
+  Curve (AUC-ROC) of 0.9077, and a Cohen's kappa of 0.5001, surpassing every individual baseline on all
+  metrics, with the most pronounced gains on under-represented heavy and very-heavy classes.The results
+  demonstrate that fusing complementary temporal-deep and gradient-boosted learners yields a robust, imbalance-resilient
+  classifier for intensity-aware precipitation nowcasting.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

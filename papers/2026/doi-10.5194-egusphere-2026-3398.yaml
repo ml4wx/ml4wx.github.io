@@ -1,0 +1,61 @@
+id: doi-10.5194-egusphere-2026-3398
+title: 'Mamba-Stormer v1.0: A Bidirectional Vision Mamba Backbone for Accurate and Scalable Global Weather
+  Forecasting'
+authors:
+- Jiayou Chao
+- Guanchao Tong
+- Zhenhua Liu
+- Wuyin Lin
+- Minghua Zhang
+- Merry Ma
+- Wei Zhu
+date: '2026-08-13'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.5194/egusphere-2026-3398
+  openalex: W7202395108
+links:
+  paper: https://doi.org/10.5194/egusphere-2026-3398
+  pdf: https://egusphere.copernicus.org/preprints/2026/egusphere-2026-3398/egusphere-2026-3398.pdf
+orgs:
+- nyu-m2lines
+topic: global-medium-range
+type: model
+method:
+- transformer
+- other
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Mamba-Stormer swaps Stormer's attention for bidirectional Vision Mamba, improving WeatherBench
+  2 RMSE by 2.7% at 6 h and 1.1% at 120 h while cutting compute cost.
+abstract: 'Abstract. Accurate global weather forecasting at increasing spatial resolution is a central
+  challenge in atmospheric science. Machine learning models have recently matched or exceeded numerical
+  weather prediction systems on standard medium-range benchmarks, with transformer-based architectures
+  at their core. However, the self-attention mechanism underlying these models scales quadratically in
+  memory and compute with sequence length — a critical bottleneck as training and inference resolutions
+  approach operational standards. We describe Mamba-Stormer, which replaces the transformer backbone in
+  the Stormer architecture with a bidirectional Vision Mamba (BiMamba) backbone. Our key design contributions
+  are: (1) bidirectional Mamba scanning applied in an alternating horizontal–vertical pattern across 14
+  layers to capture 2D atmospheric structure, and (2) the integration of bidirectional SSMs into Stormer’s
+  adaLN-Zero residual block by replacing the self-attention sub-block while retaining the feed-forward
+  sub-block and zero-initialized lead-time conditioning. In a controlled local comparison on ERA5 WeatherBench
+  2 (240x121 grid, 69 atmospheric variables, multi-step finetuned), Mamba-Stormer outperforms the 24-layer
+  Transformer baseline: +2.73 % mean per-variable RMSE improvement at 6h, +2.34 % at 72 h, and +1.07 %
+  at 120 h (all p < 0.01), with BiMamba winning on 67/69, 69/69, and 66/69 variables respectively. Simultaneously,
+  its O(L) backbone delivers a 1.10x computational throughput speedup at the WeatherBench 2 1.5° training
+  resolution (121x240), growing to 2.59x at 512x512 as the O(L²) attention cost increasingly dominates.
+  These results suggest that bidirectional Vision Mamba is a strong backbone for neural weather prediction
+  — achieving better accuracy and growing computational efficiency, consistent with a more suitable spatial
+  inductive bias for atmospheric modeling.'
+significance: 4
+cited_by: 0
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,51 @@
+id: arxiv-2608.20540
+title: GOES-East full-disk AI nowcasting of cloud evolution in observation space
+authors:
+- Dhamma Kimpara
+- Omid Bagheri
+- Ivette Hernandez Banos
+- Byoung-Joo Jung
+- Chris Snyder
+date: '2026-08-20'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2608.20540'
+  openalex: W7204146131
+links:
+  paper: https://arxiv.org/abs/2608.20540
+  pdf: https://arxiv.org/pdf/2608.20540
+topic: nowcasting
+topics:
+- observations-remote-sensing
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+- short
+spatial:
+- regional
+data:
+- satellite
+- nwp-analysis
+status: research
+summary: DOP+ forecasts GOES-East full-disk infrared brightness temperatures at 10-minute resolution,
+  beating persistence and NWP for 0-6 h cloud evolution via meteorological conditioning.
+abstract: Clouds affect aviation, solar energy, remote sensing, and storm prediction, yet they remain
+  among the hardest atmospheric features to forecast, particularly at convective scales. Because clouds
+  are shaped by processes spanning a wide range of space and time scales, numerical weather prediction,
+  extrapolation methods, and existing machine learning (ML) approaches are each limited by some combination
+  of accuracy, domain size, and temporal resolution. We present DOP+, an ML approach for clouds that forecasts
+  GOES-East full-disk infrared brightness temperatures by extending direct observation prediction (DOP)
+  with conditioning on meteorological fields. The domain covers tropical, midlatitude, and marine regimes
+  across $\sim 10^8 ~ km^2$, roughly a fifth of Earth's surface. DOP+ forecasts cloud evolution at 10-minute
+  resolution and outperforms persistence, synoptic-scale NWP, and a pure DOP baseline across 0-6 h lead
+  times in fractions skill score and mean absolute error skill score. Convective structure is retained
+  out to 2-3 h. DOP+ thus achieves a state-of-the-art combination of accuracy, temporal resolution, and
+  spatial coverage. Our work lays the foundation for fully global cloud nowcasting at convective timescales.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

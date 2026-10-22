@@ -1,0 +1,59 @@
+id: doi-10.5194-gmd-19-7767-2026
+title: Optimizing Gaussian process emulation and generalized additive model fitting for rapid, reproducible
+  earth system model analysis
+authors:
+- Kunal Ghosh
+- Leighton A. Regayre
+date: '2026-08-21'
+year: 2026
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-19-7767-2026
+  openalex: W4417539322
+links:
+  paper: https://doi.org/10.5194/gmd-19-7767-2026
+  pdf: https://gmd.copernicus.org/articles/19/7767/2026/gmd-19-7767-2026.pdf
+orgs:
+- met-office
+topic: infra-software
+topics:
+- xai-uq-physics
+type: model
+method:
+- classical-ml
+spatial:
+- global
+data:
+- other
+status: research
+summary: A parallel pipeline cuts Gaussian process and GAM training for UKESM grid-box perturbed-parameter
+  ensembles by about 96% of runtime, with identical outputs.
+abstract: Abstract. Causes of model uncertainty in complex modeling systems can be identified using large
+  perturbed-parameter ensembled (PPEs), combined with statistical emulators to increase sample size and
+  enable variance-based sensitivity analyses and observational constraint. In global climate models such
+  as the UK Earth System Model (UKESM), these approaches are typically applied at the global or regional
+  mean scales for a limited set of variables. To accelerate progress in understanding the multi-faceted
+  causes of climate model uncertainty, requires implementing such workflows at the model grid box scale,
+  to enable analyses across variables that reveal how uncertainties propagate and interact spatially.
+  However, this approach requires training millions of Gaussian process (GP) emulators and fitting an
+  equal number of generalized additive models (GAMs) – a major computational bottleneck. We present a
+  high-performance, open-source pipeline that introduces optimisations for this workflow. For GP emulation,
+  we implement task-level parallelism and streamlined data handling on high-performance computing systems.
+  For GAM fitting, we integrate a parallelized pyGAM interface with R's mgcv::bam() back end, using fast
+  fREML estimation with discrete smoothing, memory-efficient batching, and improved input–output routines.
+  These changes reduce GP training time by 97.5 % (6177 → 154 s) and GAM fitting time by 95.2 % (10623
+  → 511 s), yielding a ~ 25 times faster end-to-end workflow (96 % total runtime reduction) and cutting
+  peak memory use by a factor of 12. Outputs are numerically identical to the baseline implementation
+  (Pearson correlation = 1.00 for both GP and GAM predictions). We demonstrate the approach using a UKESM
+  PPE comprising 221 members scaled up to 1 million using GP emulators, and GAM fits applied to output
+  for a single target variable, to show that the improved performance enables multi-variable, higher-resolution,
+  and potentially multi-model analyses that were previously impractical. These improvements pave the way
+  for PPE studies to scale in scope without compromising statistical fidelity, enabling more comprehensive
+  exploration of model parameter uncertainty within feasible HPC budgets.
+significance: 4
+cited_by: 0
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

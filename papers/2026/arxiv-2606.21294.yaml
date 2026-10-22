@@ -1,0 +1,58 @@
+id: arxiv-2606.21294
+title: Using Distributional Regression Networks to Retrieve Cloud Properties from Solar Satellite Channels
+  for Data Assimilation
+authors:
+- Stefano Franzoni
+- Christopher Bülte
+- Leonhard Scheck
+- Christian Keil
+- George C. Craig
+date: '2026-06-19'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.21294'
+  openalex: W7165656408
+links:
+  paper: https://arxiv.org/abs/2606.21294
+  pdf: https://arxiv.org/pdf/2606.21294
+orgs:
+- dwd
+topic: observations-remote-sensing
+topics:
+- data-assimilation
+type: model
+method:
+- other
+spatial:
+- regional
+data:
+- satellite
+- nwp-analysis
+status: research
+summary: A distributional regression network retrieves uncertainty-quantified cloud properties from six
+  joint solar channels of Meteosat FCI, yielding well-calibrated Gaussian estimates usable for data assimilation.
+abstract: 'Satellite observations in the solar spectrum (including visible and near-infrared channels)
+  offer high-resolution information on clouds and atmospheric properties valuable for data assimilation.
+  While forward operators for a direct assimilation of solar images have become available recently and
+  a first visible channel is already used operationally, their assimilation remains challenging due to
+  strong non-linearities, ambiguities and high inter-channel correlations. This study addresses two central
+  questions: what is the potential impact of assimilating multiple solar channels jointly, and can observed
+  reflectances be transformed into physically meaningful, uncertainty-quantified variables better suited
+  to assimilation than the raw reflectances themselves? As a proof of concept, we assess the joint information
+  content of six solar channels from the Flexible Combined Imager (FCI) onboard Meteosat Third Generation
+  and introduce a novel "Backward Operator" (BO) for probabilistic retrievals of cloud-related variables.
+  The BO is implemented in a machine learning approach as a distributional regression network that is
+  trained on synthetic images from a NWP regional model run and produces multivariate Gaussian estimates
+  of total optical thickness, column cloud fraction, ice fraction, and effective radii of water and ice.
+  The BO predictions are unbiased and well-calibrated, with realistic, situation-dependent and non-trivial
+  covariance structures. The retrieved variables can be overall usefully constrained. Despite strong inter-channel
+  correlations, combining multiple channels yields substantial performance improvements. As the BO does
+  not require prior information, is consistent with an existing forward operator, and yields cloud variables
+  more linearly related to the NWP model state, assimilating these variables could be a viable alternative
+  to direct reflectance assimilation.'
+significance: 4
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

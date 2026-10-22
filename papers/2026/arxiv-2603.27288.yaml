@@ -1,0 +1,49 @@
+id: arxiv-2603.27288
+title: 'StretchCast: Global-Regional AI Weather Forecasting on Stretched Cubed-Sphere Mesh'
+authors:
+- Jin Feng
+date: '2026-03-28'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2603.27288'
+  openalex: W7146976401
+links:
+  paper: https://arxiv.org/abs/2603.27288
+  pdf: https://arxiv.org/pdf/2603.27288
+topic: global-medium-range
+topics:
+- regional-km-scale
+type: model
+method:
+- other
+timescale:
+- medium
+spatial:
+- global
+- regional
+data:
+- era5
+status: pre-operational
+summary: StretchCast uses a stretched cubed-sphere mesh for global forecasts with regional refinement,
+  and its 83M-parameter model is competitive at medium range over the target region.
+abstract: Global AI weather forecasting still relies mainly on uniform-resolution models, making it hard
+  to combine regional refinement, two-way regional-global coupling, and affordable training cost. We introduce
+  StretchCast, a global-regional AI forecasting framework built on a variable-resolution stretched cubed-sphere
+  (SCS) mesh that preserves a closed global domain while concentrating resolution over a target region.
+  Within this framework, we develop a one-step predictor, SCS_Base Model, and a rollout-oriented multistep
+  predictor, SCS_FCST4 Model, to test the feasibility of SCS-based forecasting and the benefit of joint
+  multistep training. Experiments use ERA5 with 69 variables over 1998-2022. Because training compute
+  remains limited, this study uses a coarse-resolution proof-of-concept configuration rather than a final
+  high-resolution system. Even with only about 7,776 effective global grid cells and roughly 0.875 degree
+  resolution over the center-refined face, the 23M-parameter SCS_Base Model yields stable multivariate
+  forecasts. With 83M parameters and training cost on the order of hours, SCS_FCST4 Model delivers competitive
+  medium-range anomaly-correlation evolution over the target region after unified reprojection, especially
+  for geopotential height, specific humidity, and part of the lower-tropospheric winds, while maintaining
+  smooth cross-face continuity and realistic multiscale structure in typhoon and spectral analyses. These
+  results support StretchCast as a practical lightweight foundation for global-regional AI weather forecasting.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

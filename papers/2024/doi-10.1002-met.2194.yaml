@@ -1,0 +1,62 @@
+id: doi-10.1002-met.2194
+title: Deep learning‐based postprocessing for hourly temperature forecasting
+authors:
+- Li Zhou
+- He Chen
+- Lin Xu
+- Rong‐Hui Cai
+- Dong Chen
+date: '2024-03-01'
+year: 2024
+venue: Meteorological Applications
+venue_type: journal
+ids:
+  doi: 10.1002/met.2194
+  openalex: W4395479471
+links:
+  paper: https://doi.org/10.1002/met.2194
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/met.2194
+orgs:
+- cma
+topic: post-processing
+topics:
+- local-forecasting
+type: model
+method:
+- cnn
+- rnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- other
+status: research
+summary: Res-STS residual spatiotemporal model post-processes ECMWF-IFS hourly temperature over China,
+  cutting RMSE by 24.5% versus IFS.
+abstract: 'Abstract In this article, a prediction model based on spatiotemporal stacked ResNet (Res‐STS)
+  for hourly temperature prediction is designed. On the timescale, the Res‐STS removes the gate structure
+  of the long short‐term memory (LSTM) model, and the data of multiple consecutive time nodes are stacked
+  together to preserve all temporal characteristics of the data. A point‐to‐point data mapping relationship
+  is developed on the spatial scale to maximize the impact of large‐scale environmental background field
+  characteristics on a single grid point. Based on the historical gridded data from the China Meteorological
+  Administration land data assimilation system (CLDAS) and the optimal factor dataset of the European
+  Centre for Medium‐Range Weather Forecasts Integrated Forecasting System (ECMWF‐IFS) from 2017 to 2020,
+  hourly temperature prediction models based on convolutional long short‐term memory (ConvLSTM) and Res‐STS
+  model are developed, respectively. Furthermore, the prediction results of the two models in 2021 are
+  compared with the ECMWF‐IFS. The results show that the root mean square error (RMSE) of the prediction
+  results by ConvLSTM and Res‐STS models are both smaller than that of ECMWF‐IFS. Specially, the Res‐STS
+  model performs best: it reduces the RMSE by 20.8% (24.5%) compared with the ConvLSTM (ECMWF‐IFS). Specifically,
+  the RMSE peaks in the afternoon when the daily maximum temperature occurs, while it is relatively smaller
+  at night. Res‐STS demonstrates a significant improvement in forecast performance compared with ECMWF‐IFS,
+  while ConvLSTM''s correction during the period of maximum temperature occurrence has been enhanced.
+  Moreover, the forecast performance of the Res‐STS model is least affected by terrain compared with those
+  of the ConvLSTM and ECMWF‐IFS. For the regions with terrain height greater than 1 km, the model Res‐STS
+  evidently improves the RMSE.'
+significance: 3
+cited_by: 5
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

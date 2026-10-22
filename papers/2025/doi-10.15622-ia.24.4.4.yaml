@@ -1,0 +1,60 @@
+id: doi-10.15622-ia.24.4.4
+title: 'RainCast: A Hybrid Precipitation Nowcasting Algorithm Using the Himawari-8/9 Satellite Measurements'
+authors:
+- Alexander I. Andreev
+- Кучма Михаил Олегович
+- Sergey I. Malkovsky
+- A. A. Filei
+date: '2025-08-19'
+year: 2025
+venue: Informatics and Automation
+venue_type: journal
+ids:
+  doi: 10.15622/ia.24.4.4
+  openalex: W4413316712
+links:
+  paper: https://doi.org/10.15622/ia.24.4.4
+  pdf: https://ia.spcras.ru/index.php/sp/article/download/17060/15507
+topic: nowcasting
+type: model
+method:
+- diffusion
+- transformer
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: RainCast combines a NowcastNet variant with a diffusion-based CasFormer refiner to nowcast 2
+  km rain rate up to 2 h from Himawari-8/9 infrared data.
+abstract: This paper proposes an algorithm for short-term rain rate forecasting, RainCast (Rain Rate NowCast),
+  for up to two hours. This area of meteorology, known as 'nowcasting', is one of the most important tools
+  in many areas of human activity. However, its availability may be severely limited by existing ground
+  infrastructure. In this paper, the authors aim to create a precipitation forecasting algorithm for one
+  such territory using the Asia-Pacific region as an example, based on satellite measurements from the
+  Himawari-8/9 spacecraft. The algorithm combines the advantages of deterministic and statistical approaches
+  to solve the forecasting problem and is based on two neural networks. The first model, a modified version
+  of the physically constrained neural network NowcastNet, generates a preliminary forecast of the general
+  direction of precipitation movement at the mesoscale level. The second model, based on the CasFormer
+  architecture, employs diffusion methods to post-process the initial forecast, refining fine-scale details.
+  The resulting hybrid algorithm, named RainCast, enables short-term precipitation forecasting (up to
+  2 hours) with high spatiotemporal resolution (2 km, updated every 10 minutes), utilizing solely infrared
+  satellite measurements. Satellite data are converted into precipitation intensity using the algorithm
+  previously developed by the authors. Based on precipitation maps, training, validation, and test datasets
+  were compiled for the algorithm development and forecast quality assessment. The proposed RainCast algorithm
+  was trained on these datasets and compared with other state-of-the-art solutions such as NowcastNet,
+  Casformer, and Earthformer. Analysis of performance metrics demonstrated that the hybrid RainCast algorithm
+  achieves comparable accuracy. For a 2-hour forecast, the Root Mean Square Error (RMSE) was 0.88, the
+  Probability of Detection (POD) was 0.78, the Pearson Correlation Coefficient (PCC) was 0.75, the Structural
+  Similarity Index Measure (SSIM) was 0.91, and the Peak Signal-to-Noise Ratio (PSNR) was 36.63. Visual
+  analysis of the forecasts confirmed that RainCast produces results closest to actual observations, primarily
+  due to the diffusion model's ability to refine fine-scale spatial and temporal precipitation patterns.
+significance: 4
+cited_by: 2
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,50 @@
+id: arxiv-2503.02665
+title: Weakly-Constrained 4D Var for Downscaling with Uncertainty using Data-Driven Surrogate Models
+authors:
+- Philip Dinenis
+- Vishwas Rao
+- Mihai Anitescu
+date: '2025-03-04'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2503.02665'
+  openalex: W4415335326
+links:
+  paper: https://arxiv.org/abs/2503.02665
+  pdf: https://arxiv.org/pdf/2503.02665
+topic: data-assimilation
+topics:
+- downscaling
+type: model
+method:
+- physics-constrained
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: Weak-constrained 4DVar stabilizes FourCastNet for hurricane downscaling, outperforming EnKF and
+  unstabilized FourCastNet on ERA5 in accuracy and uncertainty.
+abstract: Dynamic downscaling typically involves using numerical weather prediction (NWP) solvers to refine
+  coarse data to higher spatial resolutions. Data-driven models such as FourCastNet have emerged as a
+  promising alternative to the traditional NWP models for forecasting. Once these models are trained,
+  they are capable of delivering forecasts in a few seconds, thousands of times faster compared to classical
+  NWP models. However, as the lead times, and, therefore, their forecast window, increase, these models
+  show instability in that they tend to diverge from reality. In this paper, we propose to use data assimilation
+  approaches to stabilize them when used for downscaling tasks. Data assimilation uses information from
+  three different sources, namely an imperfect computational model based on partial differential equations
+  (PDE), from noisy observations, and from an uncertainty-reflecting prior. In this work, when carrying
+  out dynamic downscaling, we replace the computationally expensive PDE-based NWP models with FourCastNet
+  in a ``weak-constrained 4DVar framework" that accounts for the implied model errors. We demonstrate
+  the efficacy of this approach for a hurricane-tracking problem; moreover, the 4DVar framework naturally
+  allows the expression and quantification of uncertainty. We demonstrate, using ERA5 data, that our approach
+  performs better than the ensemble Kalman filter (EnKF) and the unstabilized FourCastNet model, both
+  in terms of forecast accuracy and forecast uncertainty.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

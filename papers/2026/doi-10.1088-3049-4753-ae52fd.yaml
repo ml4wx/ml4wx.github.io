@@ -1,0 +1,62 @@
+id: doi-10.1088-3049-4753-ae52fd
+title: Predictability of precipitation extremes in the Western United States and the U.S. Gulf Coast using
+  AI weather models
+authors:
+- Anton Petry
+- Weiming Hu
+- Alpaslan Yörük
+date: '2026-03-17'
+year: 2026
+venue: Machine Learning Earth
+venue_type: journal
+ids:
+  doi: 10.1088/3049-4753/ae52fd
+  openalex: W7138237205
+links:
+  paper: https://doi.org/10.1088/3049-4753/ae52fd
+  pdf: https://iopscience.iop.org/article/10.1088/3049-4753/ae52fd/pdf
+topic: extremes-hazards
+topics:
+- global-medium-range
+- benchmarks-data-eval
+type: evaluation
+method:
+- transformer
+- cnn
+- other
+timescale:
+- medium
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Evaluates Pangu-Weather, GraphCast and FourCastNet for extreme precipitation over the US; GraphCast
+  cuts RMSE about 15% versus IFS through seven days.
+abstract: 'Extreme precipitation events, such as those caused by hurricanes and atmospheric rivers, pose
+  significant risks to infrastructure and human populations. Accurate forecasting is essential for effective
+  disaster preparedness and long-term climate adaptation, particularly in regions prone to intense rainfall.
+  While numerical weather prediction (NWP) models are the current standard, they are computationally expensive.
+  Recent progress in artificial intelligence (AI) offers a promising alternative through fast, data-driven
+  AI-based weather prediction (AIWP) models. This study evaluates the performance of four advanced AIWP
+  models: Pangu-Weather, GraphCast, FourCastNet version 1, and FourCastNet version 2. The models are assessed
+  in their ability to forecast extreme precipitation across the Contiguous United States (CONUS), with
+  particular focus on the Western United States and the U.S. Gulf Coast region. In a first step, performance
+  is evaluated based on native model output, with historical data from the PRISM Climate Group and forecasts
+  from the state-of-the-art NWP model, the Medium-Range Weather Forecasts’s Integrated Forecasting System
+  (IFS), serving as references. In a second step, all models are subjected to a neural network-based post-processing
+  procedure. This step aims to improve the raw precipitation forecasts and, for models that do not natively
+  predict precipitation, to generate it from other output variables. Results show that the model performance
+  depends on region, lead time, and precipitation intensity. In several cases, the AIWP models matched
+  or exceeded the performance of the IFS. GraphCast showed particularly strong and consistent performance,
+  reducing RMSE by approximately 15% over CONUS across lead times of up to seven days compared to IFS.
+  Post-processing improved some forecasts and enabled precipitation prediction for models lacking native
+  output, though postprocessed forecasts generally exhibit reduced spatial detail relative to native precipitation
+  outputs. The study highlights AI’s potential to complement traditional NWP systems, offering a path
+  toward faster and more efficient weather prediction.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

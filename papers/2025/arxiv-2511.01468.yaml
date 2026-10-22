@@ -1,0 +1,57 @@
+id: arxiv-2511.01468
+title: 'DAMBench: A Multi-Modal Benchmark for Deep Learning-based Atmospheric Data Assimilation'
+authors:
+- Hao Wang
+- Zixuan Weng
+- Jindong Han
+- Wei Fan
+- Hao Liu
+date: '2025-11-03'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2511.01468'
+  openalex: W4416437322
+links:
+  paper: https://arxiv.org/abs/2511.01468
+  pdf: https://arxiv.org/pdf/2511.01468
+  code: https://github.com/figerhaowang/DAMBench
+topic: benchmarks-data-eval
+topics:
+- data-assimilation
+type: benchmark
+method:
+- gan-vae
+- other
+spatial:
+- global
+data:
+- stations
+- satellite
+- nwp-analysis
+status: research
+summary: A multi-modal benchmark pairs forecast backgrounds with real weather-station and satellite observations
+  for deep-learning data assimilation, with standardized protocols and baselines.
+abstract: 'Data Assimilation is a cornerstone of atmospheric system modeling, tasked with reconstructing
+  system states by integrating sparse, noisy observations with prior estimation. While traditional approaches
+  like variational and ensemble Kalman filtering have proven effective, recent advances in deep learning
+  offer more scalable, efficient, and flexible alternatives better suited for complex, real-world data
+  assimilation involving large-scale and multi-modal observations. However, existing deep learning-based
+  DA research suffers from two critical limitations: (1) reliance on oversimplified scenarios with synthetically
+  perturbed observations, and (2) the absence of standardized benchmarks for fair model comparison. To
+  address these gaps, in this work, we introduce DAMBench, the first large-scale multi-modal benchmark
+  designed to evaluate data-driven DA models under realistic atmospheric conditions. DAMBench integrates
+  high-quality background states from state-of-the-art forecasting systems and real-world multi-modal
+  observations (i.e., real-world weather stations and satellite imagery). All data are resampled to a
+  common grid and temporally aligned to support systematic training, validation, and testing. We provide
+  unified evaluation protocols and benchmark representative data assimilation approaches, including latent
+  generative models and neural process frameworks. Additionally, we propose a lightweight multi-modal
+  plugin to demonstrate how integrating realistic observations can enhance even simple baselines. Through
+  comprehensive experiments, DAMBench establishes a rigorous foundation for future research, promoting
+  reproducibility, fair comparison, and extensibility to real-world multi-modal scenarios. Our dataset
+  and code are publicly available at https://github.com/figerhaowang/DAMBench.'
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

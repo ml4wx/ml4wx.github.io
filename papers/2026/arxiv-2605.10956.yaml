@@ -1,0 +1,53 @@
+id: arxiv-2605.10956
+title: Acceleration of horizontal numerical advection for atmospheric modeling through surrogate modeling
+  with temporal coarse-graining
+authors:
+- Manho Park
+- Christopher V. Rackauckas
+- Christopher W. Tessum
+date: '2026-04-30'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.10956'
+  openalex: W7161046915
+links:
+  paper: https://arxiv.org/abs/2605.10956
+  pdf: https://arxiv.org/pdf/2605.10956
+orgs:
+- mit
+topic: hybrid-parameterization
+topics:
+- infra-software
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- other
+status: research
+summary: CNN surrogate for atmospheric horizontal advection uses temporal coarse-graining to reach 92x
+  speedup at r²=0.60, trained on one month of wind data.
+abstract: Machine-learned surrogate modeling of advection may accelerate geoscientific models, but existing
+  approaches have either achieved limited speedup or have sacrificed spatial resolution compared to the
+  model they are trained to emulate. We developed a machine-learned solver that speeds up advection simulations
+  without sacrificing spatial resolution through the use of temporal coarse-graining, where the model
+  is trained to take larger integration steps than dictated by the Courant-Friedrich-Lewy (CFL) condition.
+  Our solver framework includes a convolutional neural network that takes concentrations and CFL numbers
+  as inputs and outputs mass flux. Our solvers emulate 10-day ground-level horizontal advection simulations
+  with r$^2$ values against the baseline ranging from 0.60--0.98 with temporal coarsening factors of 4
+  to 32 times the baseline integration time step. Speed increases and accuracy decreases with increased
+  coarsening, with $r^2 = 0.24$ in accuracy lost for every factor of 10 gained in speed, reaching a maximum
+  92$\times$ speedup while maintaining $r^2 = 0.60$. We deliberately trained our solvers only on January
+  ground-level wind data to examine their ability to generalize across seasons and vertical heights. The
+  4$\times$-coarsened learned solver successfully reproduces simulations over 72 vertical levels. The
+  8$\times$--16$\times$ solvers (but not 32$\times$) emulate most vertical levels. The learned solvers
+  also generalize well across seasons, except for instabilities in June and October. With additional fine-tuning,
+  these learned solvers could be appropriate for operational use where trading accuracy for speed could
+  be advantageous, such as in screening tools, in ensemble simulations, or with data assimilation.
+significance: 2
+score: 18
+highlight: false
+added: '2026-10-22'
+source: backfill

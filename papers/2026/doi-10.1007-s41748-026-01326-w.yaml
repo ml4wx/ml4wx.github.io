@@ -1,0 +1,78 @@
+id: doi-10.1007-s41748-026-01326-w
+title: 'ClimDiT: A Generative Latent Diffusion Transformer Framework for Multivariate Climate Downscaling'
+authors:
+- Marcos Esquivel-González
+- Albano González
+- J. P. Díaz
+- J. C. Pérez
+- Jose González-Abad
+- Samuel Márquez-Cubas
+date: '2026-08-03'
+year: 2026
+venue: Earth Systems and Environment
+venue_type: journal
+ids:
+  doi: 10.1007/s41748-026-01326-w
+  openalex: W7172261914
+links:
+  paper: https://doi.org/10.1007/s41748-026-01326-w
+  pdf: https://doi.org/10.1007/s41748-026-01326-w
+topic: downscaling
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+- transformer
+spatial:
+- regional
+data:
+- era5
+- other
+status: research
+summary: Latent diffusion transformer downscales daily Tmax, Tmin and precipitation to 5 km over Iberia,
+  giving probabilistic ensembles with competitive accuracy and joint calibration.
+abstract: 'Abstract Accurate, high-resolution local climate projections are essential for climate adaptation
+  and impact assessment. Most statistical downscaling approaches rely on regression-based models that
+  produce single deterministic estimates, thereby limiting their ability to capture the inherent variability
+  and multivariate dependencies of the climate system. To address this limitation, ClimDiT is introduced,
+  a generative multivariate statistical downscaling framework based on latent diffusion transformer models.
+  Thus, instead of a single expected result, it estimates the full conditional distribution of high-resolution
+  climate fields. The proposed system operates within a compressed, autoencoded latent space, enabling
+  computationally efficient sampling while implicitly capturing inter-variable dependencies. In this work,
+  ClimDiT simultaneously downscales daily maximum temperature, minimum temperature, and accumulated precipitation
+  to approximately 5 km resolution over the Iberian Peninsula. It is trained using ERA5 predictors and
+  ROCIO-IBEB high-resolution targets and its performance is evaluated using metrics aligned with the VALUE
+  framework. ClimDiT attains deterministic accuracy comparable to, or moderately superior to, state-of-the-art
+  regression networks, while improving spatial coherence. Although specialised stochastic baselines, which
+  suffer from high deterministic errors, retain an edge in univariate and multivariate probabilistic scores,
+  a ClimDiT ensemble generated from 50 samples demonstrates reasonable probabilistic skill and joint calibration
+  of the three target variables (evaluated with CRPS, Brier, Energy and Variogram scores). Overall, ClimDiT
+  demonstrates that latent diffusion models enable a generative pathway toward coherent, probabilistic,
+  and physically consistent regional climate downscaling, advancing beyond the limitations of traditional
+  regression-based AI systems. Graphical Abstract This graphical abstract provides a concise visual overview
+  of ClimDiT: A Generative Latent Diffusion Transformer Framework for Multivariate Climate Downscaling.
+  It summarizes the study objectives, methods, and main findings. At the top, the Data section illustrates
+  the statistical downscaling approach, by linking coarse-resolution ERA5 predictors with high-resolution
+  ROCIO-IBEB climate targets over the Iberian Peninsula. It highlights the three downscaled variables—maximum
+  temperature, minimum temperature, and precipitation—as well as the corresponding training and testing
+  periods. The Methods panel presents the core innovation: the ClimDiT model. It combines an autoencoder,
+  which compresses climate fields into a latent space, with a latent diffusion transformer that progressively
+  reconstructs high-resolution fields from Gaussian noise, conditioned on large-scale predictors. This
+  reflects the proposed use of generative models, rather than the widely used regression-based AI approaches,
+  as they allow the generation of multiple outputs for the same synoptic state. A benchmark comparison
+  box displays the univariate state-of-the-art (SOTA) methods (DeepESD and U-Net) used as references,
+  along with the tested loss functions (MSE, ASYM, and STO). STO refers to stochastic models, which use
+  a Bernoulli–Gamma distribution for precipitation and a Gaussian distribution for temperature, trained
+  using the negative log-likelihood loss. Additionally, a deterministic multivariate baseline (DeepESD-MULT,
+  trained with MSE) is included to directly evaluate the impact of joint variable modeling within a traditional
+  regression framework. The Results section visualizes performance across spectral, deterministic, and
+  probabilistic metrics (RAPSD, MAE, CRPS, Variogram Score), emphasizing ClimDiT superior spatial coherence
+  and balanced probabilistic skill. The Highlights box succinctly reinforces these contributions: a generative,
+  latent-space-based approach that enables coherent multivariate downscaling.'
+significance: 4
+cited_by: 0
+score: 16
+highlight: false
+added: '2026-10-22'
+source: snowball

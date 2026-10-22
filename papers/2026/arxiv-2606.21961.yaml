@@ -1,0 +1,51 @@
+id: arxiv-2606.21961
+title: 'VegSim: A Geospatial World Model for Scenario-Conditioned Vegetation Simulation'
+authors:
+- Irene Iele
+- Elena Mulero Ayllón
+- Paolo Soda
+- Matteo Tortora
+date: '2026-06-20'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.21961'
+  openalex: W7165629066
+links:
+  paper: https://arxiv.org/abs/2606.21961
+  pdf: https://arxiv.org/pdf/2606.21961
+  code: https://github.com/arco-group/vegsim
+topic: applications-impacts
+type: model
+method:
+- rnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- satellite
+- other
+status: research
+summary: VegSim is a recurrent latent world model that simulates NDVI vegetation quantiles under user-defined
+  weather scenarios, showing negative vegetation response to summer drought across Europe.
+abstract: Vegetation monitoring under climate stress requires answering not only how it will evolve given
+  the expected weather, but how it would respond to alternative meteorological conditions. Forecasting
+  models return the expected vegetation state for the observed weather and cannot answer these scenario-conditioned
+  questions, because future weather is fixed to the recorded trajectory. We present VegSim, a geospatial
+  world model for scenario-conditioned vegetation simulation. VegSim infers a latent vegetation state
+  from sparse satellite-derived NDVI histories, past meteorological covariates, and static spatial context,
+  propagates it forward under future weather forcing through recurrent latent dynamics, and decodes predictive
+  NDVI quantiles at each lead time. Because future forcing enters as a controllable input, the same trained
+  model supports probabilistic forecasting under observed weather and conditional simulation under user-defined
+  meteorological forcing, without supervision on scenario responses. We evaluate VegSim on GreenEarthNet
+  across in-distribution data and spatial, temporal, and joint spatio-temporal shifts, where it achieves
+  strong point and probabilistic accuracy against time series and Earth Observation forecasting baselines
+  while using a compact architecture. We then simulate vegetation responses across Europe under two contrasting
+  meteorological scenarios, obtaining a weak but broadly positive response under winter wet warming and
+  a widespread negative response under summer drought. The code is available at https://github.com/arco-group/vegsim.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

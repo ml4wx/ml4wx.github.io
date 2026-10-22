@@ -1,0 +1,45 @@
+id: arxiv-2606.16342
+title: 'When the Past Matters: FlashBack Memory for Precipitation Nowcasting'
+authors:
+- Yuhao Du
+- Boxiao Huang
+- Chengrong Wu
+- Jiankai Zhang
+date: '2026-06-15'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.16342'
+  openalex: W7164913181
+links:
+  paper: https://arxiv.org/abs/2606.16342
+  pdf: https://arxiv.org/pdf/2606.16342
+topic: nowcasting
+type: model
+method:
+- rnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: FlashBack Memory retrieves historical states to boost recurrent precipitation nowcasting models
+  like PredRNN, improving CSI and reducing false alarms on CIKM2017, Shanghai2020 and SEVIR.
+abstract: Accurate precipitation nowcasting is crucial for disaster mitigation and socio-economic planning,
+  yet existing methods often struggle with false alarms, missed events, and long range dependency modeling
+  at high spatiotemporal resolution. To address these challenges, we propose FlashBack Memory (FB), a
+  module that dynamically retrieves key historical states and integrates them via an adaptive fusion gate,
+  enhancing the spatiotemporal representation capability of recurrent-based models. We incorporate FB
+  into PredRNN, PredRNNpp, MIM, MotionRNN, and PredRNN-V2, and evaluate on CIKM2017, Shanghai2020, and
+  SEVIR datasets. Experimental results demonstrate that FB significantly improves MSE, MAE, SSIM, and
+  CSI metrics, particularly for high-intensity rainfall and long-sequence predictions, while reducing
+  false alarms and missed events and enhancing temporal consistency and spatial localization. The proposed
+  method provides a general and efficient memory enhancement mechanism, improving the overall performance
+  of recurrent-based precipitation nowcasting models.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

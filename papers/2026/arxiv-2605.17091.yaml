@@ -1,0 +1,48 @@
+id: arxiv-2605.17091
+title: 'Mechanism Learning: Prototype-Anchored Mechanism Inference for Scientific Forecasting'
+authors:
+- Qianpeng Jiang
+- Liping Sun
+date: '2026-05-16'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.17091'
+  openalex: W7161728516
+links:
+  paper: https://arxiv.org/abs/2605.17091
+topic: global-medium-range
+type: model
+method:
+- other
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Mechanism learning forecasts by inferring active local evolution rules via prototype anchors,
+  reporting state-of-the-art scarce-data WeatherBench2 results alongside Burgers and Lorenz96 tests.
+abstract: 'Scientific forecasting typically relies on direct state prediction, an approach that grows
+  brittle under data scarcity, extended horizons, non-stationary dynamics, or high-dimensional complexity.
+  While raw state trajectories are highly sensitive in these regimes, underlying local evolution rules
+  often exhibit robust reusability. We introduce mechanism learning, a framework that forecasts future
+  states by estimating the currently active local mechanism. Our method compresses local spatiotemporal
+  fragments into mechanism descriptors, forming a data-driven, structured mechanism space where proximity
+  reflects similar local evolution rules. To ground these estimates in observed data, we utilize prototype
+  anchors, a set of representative mechanisms that sparsely cover the space of local rules. We evaluate
+  this approach on Burgers dynamics, WeatherBench2, and Lorenz96. Empirically, the learned mechanism spaces
+  resist collapse and maintain strong local consistency. Compared to direct prediction and other models
+  including FNO, NODE, LSTM, and reservoir-family methods, our framework demonstrates predictive gains
+  in fragile regimes: it significantly improves switching stability in Burgers dynamics and achieves state-of-the-art
+  performance both under the scarce-data fixed-horizon WeatherBench2 protocol and in intermediate-complexity
+  Lorenz96. Ablation studies and drift diagnostics confirm that these improvements are driven by finite
+  prototype anchoring rather than sheer latent capacity. Together, these results establish mechanism learning
+  as a principled, robust alternative to direct state prediction in forecasting complex systems.'
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: snowball

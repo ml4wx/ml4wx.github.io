@@ -1,0 +1,53 @@
+id: arxiv-2509.15481
+title: 'Solar Forecasting with Causality: A Graph-Transformer Approach to Spatiotemporal Dependencies'
+authors:
+- Yanan Niu
+- Demetri Psaltis
+- Christophe Moser
+- Luisa Lambertini
+date: '2025-09-18'
+year: 2025
+venue: Proceedings of the 34th ACM International Conference on Information and Knowledge Management (CIKM
+  '25), November 10--14, 2025, Seoul, Republic of Korea
+venue_type: journal
+ids:
+  arxiv: '2509.15481'
+  doi: 10.1145/3746252.3760905
+  openalex: W4414697136
+links:
+  paper: https://arxiv.org/abs/2509.15481
+  pdf: https://arxiv.org/pdf/2509.15481
+topic: local-forecasting
+topics:
+- applications-impacts
+type: model
+method:
+- gnn
+- transformer
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: SolarCAST uses causally structured graph and gated transformer components on station GHI data
+  alone, cutting error 25.9% versus Solcast for solar forecasting.
+abstract: 'Accurate solar forecasting underpins effective renewable energy management. We present SolarCAST,
+  a causally informed model predicting future global horizontal irradiance (GHI) at a target site using
+  only historical GHI from site X and nearby stations S - unlike prior work that relies on sky-camera
+  or satellite imagery requiring specialized hardware and heavy preprocessing. To deliver high accuracy
+  with only public sensor data, SolarCAST models three classes of confounding factors behind X-S correlations
+  using scalable neural components: (i) observable synchronous variables (e.g., time of day, station identity),
+  handled via an embedding module; (ii) latent synchronous factors (e.g., regional weather patterns),
+  captured by a spatio-temporal graph neural network; and (iii) time-lagged influences (e.g., cloud movement
+  across stations), modeled with a gated transformer that learns temporal shifts. It outperforms leading
+  time-series and multimodal baselines across diverse geographical conditions, and achieves a 25.9% error
+  reduction over the top commercial forecaster, Solcast. SolarCAST offers a lightweight, practical, and
+  generalizable solution for localized solar forecasting.'
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

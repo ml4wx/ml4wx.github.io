@@ -1,0 +1,52 @@
+id: arxiv-2411.16728
+title: 'Maximizing the Impact of Deep Learning on Subseasonal-to-Seasonal Climate Forecasting: The Essential
+  Role of Optimization'
+authors:
+- Yizhen Guo
+- Tian Zhou
+- Wanyi Jiang
+- Bo Wu
+- Liang Sun
+- Rong Jin
+date: '2024-11-23'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2411.16728'
+  openalex: W4404988098
+links:
+  paper: https://arxiv.org/abs/2411.16728
+  pdf: https://arxiv.org/pdf/2411.16728
+topic: s2s-seasonal
+topics:
+- global-medium-range
+type: model
+method:
+- transformer
+timescale:
+- s2s
+spatial:
+- global
+data:
+- nwp-analysis
+status: research
+summary: Shows that multi-stage optimization, not network structure, closes the S2S skill gap, beating
+  ECMWF-S2S by 19-91% on PCC and TCC with the same backbone.
+abstract: Weather and climate forecasting is vital for sectors such as agriculture and disaster management.
+  Although numerical weather prediction (NWP) systems have advanced, forecasting at the subseasonal-to-seasonal
+  (S2S) scale, spanning 2 to 6 weeks, remains challenging due to the chaotic and sparse atmospheric signals
+  at this interval. Even state-of-the-art deep learning models struggle to outperform simple climatology
+  models in this domain. This paper identifies that optimization, instead of network structure, could
+  be the root cause of this performance gap, and then we develop a novel multi-stage optimization strategy
+  to close the gap. Extensive empirical studies demonstrate that our multi-stage optimization approach
+  significantly improves key skill metrics, PCC and TCC, while utilizing the same backbone structure,
+  surpassing the state-of-the-art NWP systems (ECMWF-S2S) by over \textbf{19-91\%}. Our research contests
+  the recent study that direct forecasting outperforms rolling forecasting for S2S tasks. Through theoretical
+  analysis, we propose that the underperformance of rolling forecasting may arise from the accumulation
+  of Jacobian matrix products during training. Our multi-stage framework can be viewed as a form of teacher
+  forcing to address this issue. Code is available at \url{https://anonymous.4open.science/r/Baguan-S2S-23E7/}
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

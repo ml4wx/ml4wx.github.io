@@ -1,0 +1,56 @@
+id: doi-10.5281-zenodo.21194880
+title: 'Event-Timing Priors: Temporal Point Process Likelihoods Correct the Long-Horizon Extreme-Event
+  Statistics of Generative Surrogates'
+authors:
+- G W O Howe
+date: '2026-07-04'
+year: 2026
+venue: Zenodo (CERN European Organization for Nuclear Research)
+venue_type: preprint
+ids:
+  doi: 10.5281/zenodo.21194880
+  openalex: W7167348989
+links:
+  paper: https://doi.org/10.5281/zenodo.21194880
+topic: probabilistic-ensembles
+topics:
+- extremes-hazards
+- xai-uq-physics
+type: model
+method:
+- diffusion
+- rnn
+timescale:
+- medium
+spatial:
+- global
+data:
+- other
+status: research
+summary: Adds a temporal point process likelihood as fine-tuning prior so flow-matching emulators reproduce
+  extreme-event timing statistics on Lorenz-96 testbed.
+abstract: 'Generative surrogates of chaotic dynamical systems — including modern diffusion-basedweather
+  and climate emulators — are routinely evaluated on extreme events but never trained ontheir timing.
+  We show that this omission is consequential and correctable. Working with a twoscale Lorenz-96 testbed
+  observed under realistic conditions (coarse emulator timestep, observationnoise), we find that a conditional
+  flow-matching surrogate reproduces marginal statistics wellwhile systematically corrupting the temporal
+  statistics of threshold-crossing extreme events in longrollouts: event rates inflate, inter-event-time
+  distributions distort, and return periods drift. Weintroduce an event-timing prior: a neural temporal
+  point process (TPP) fit to the event timingsof a curated catalog, whose likelihood — evaluated on soft,
+  differentiable events extracted fromshort surrogate rollouts — serves as an auxiliary fine-tuning signal.
+  Naive likelihood maximizationis mode-seeking and collapses the event rate; we instead use a likelihood-ratio
+  objective against aco-trained “self-TPP” (the point-process analog of variational score distillation),
+  whose gradientvanishes exactly when the surrogate’s event process matches the catalog’s. Across seeds,
+  TPP-auxfine-tuning recovers inter-event-time distributions, burstiness, and return-period curves thatinvariant-measure
+  matching [7] provably leaves unconstrained, while a rate-matched Poissoncontrol shows the gains require
+  the prior’s temporal structure, not merely its rate. A secondsystem (Kuramoto–Sivashinsky) maps the
+  method’s boundary: when rollout dynamics are deeplycorrupted, a timing-only prior collapses the event
+  rate rather than repairing it — a characteristic,easily monitored failure signature whose mechanism
+  we analyze. Event-timing structure is thusa distinct, directly controllable axis of surrogate quality
+  — one that complements, and does notsubstitute for, dynamics-level training signals.'
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

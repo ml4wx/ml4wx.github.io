@@ -1,0 +1,52 @@
+id: doi-10.5194-egusphere-2026-992
+title: Enhancing weather radar data by removing non-meteorological echoes, using neural networks trained
+  on synthetic weather data
+authors:
+- Richard Bölz
+- Tom Kirstein
+- Lukas Fuchs
+- Lukas Josipovic
+- Annette Böhm
+- Ulrich Blahak
+- Volker Schmidt
+date: '2026-03-18'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.5194/egusphere-2026-992
+  openalex: W7138913323
+links:
+  paper: https://doi.org/10.5194/egusphere-2026-992
+  pdf: https://egusphere.copernicus.org/preprints/2026/egusphere-2026-992/egusphere-2026-992.pdf
+orgs:
+- dwd
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- radar
+status: pre-operational
+summary: A U-Net trained on synthetic radar data removes non-meteorological echoes from DWD polarimetric
+  radar, outperforming the operational classification algorithm and preserving precipitation edges.
+abstract: Abstract. Meteorological weather radars are essential for atmospheric research, weather forecasting
+  and aviation safety, but they often detect non-meteorological echoes from scatterers such as insects,
+  birds, and ground clutter. These non-meteorological echoes can then lead to misinterpretations in quantitative
+  precipitation estimation and hydrometeor classification, which cause difficulties for atmospheric research
+  and weather forecasting. This paper introduces a novel AI-based approach to identify such non-meteorological
+  echoes in polarimetric radar data using a convolutional neural network. More specifically, we utilize
+  a so-called U-net, which relies on large amounts of labeled radar data for training. To address the
+  challenge of acquiring labeled radar data consisting of meteorological and non-meteorological echoes,
+  we generate synthetic training samples by combining preprocessed winter data (meteorological echoes)
+  with cluttered summer data (non-meteorological echoes) provided by Deutscher Wetterdienst (DWD). After
+  training on synthetic data, evaluation of the U-net approach on operationally measured radar data shows
+  that it outperforms the state-of-the-art DWD classification algorithm overall. This is particularly
+  evident in the preservation of precipitation signals at the boundaries of larger weather events.
+significance: 4
+cited_by: 0
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

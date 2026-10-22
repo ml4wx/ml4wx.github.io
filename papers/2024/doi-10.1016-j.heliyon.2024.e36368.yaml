@@ -1,0 +1,58 @@
+id: doi-10.1016-j.heliyon.2024.e36368
+title: Assessing a machine learning-based downscaling framework for obtaining 1km daily precipitation
+  from GPM data
+authors:
+- Tao Sun
+- Nana Yan
+- Weiwei Zhu
+- Qifeng Zhuang
+date: '2024-08-23'
+year: 2024
+venue: Heliyon
+venue_type: journal
+ids:
+  doi: 10.1016/j.heliyon.2024.e36368
+  openalex: W4401824222
+links:
+  paper: https://doi.org/10.1016/j.heliyon.2024.e36368
+topic: downscaling
+topics:
+- observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- stations
+status: research
+summary: XGBoost downscaling of GPM precipitation to 1 km over the Hai River Basin, with gauge calibration,
+  achieving 14% annual MAE improvement.
+abstract: Hydro-meteorological monitoring through satellites in arid and semi-arid regions is constrained
+  by the coarse spatial resolution of precipitation data, which impedes detailed analyses. The objective
+  of this study is to evaluate various machine learning techniques for developing a downscaling framework
+  that generates high spatio-temporal resolution precipitation products. Focusing on the Hai River Basin,
+  we evaluated three machine learning approaches-Extreme Gradient Boosting (XGBoost), Random Forest (RF),
+  and Back Propagation (BP) neural networks. These methods integrate environmental variables including
+  land surface temperature (LST), Normalized Difference Vegetation Index (NDVI), Digital Elevation Model
+  (DEM), Precipitable Water Vapor (PWV), and albedo, to downscale the 0.1° spatial resolution Global Precipitation
+  Measurement (GPM) product to a 1 km resolution. We further refined the results with residual correction
+  and calibration using terrestrial rain gauge data. Subsequently, utilizing the 1 km annual precipitation,
+  we employed the moving average window method to derive monthly and daily precipitation. The results
+  demonstrated that the XGBoost method, calibrated with Geographical Difference Analysis (GDA) and Kriging
+  spatial interpolation, proved to be the most accurate, achieving a Mean Absolute Error (MAE) of 58.40
+  mm for the annual product, representing a 14 % improvement over the original data. The monthly and daily
+  products achieved MAE values of 11.61 mm and 1.79 mm, respectively, thus enhancing spatial resolution
+  while maintaining accuracy comparable to the original product. In the Hai River Basin, key factors including
+  longitude, latitude, DEM, LST_night, and PWV demonstrated greater importance and stability than other
+  factors, thereby enhancing the model's precipitation prediction capabilities. This study provides a
+  comprehensive assessment of the annual, monthly, and daily high-temporal and high-spatial resolution
+  downscaling processes of precipitation, serving as an important reference for hydrology and related
+  fields.
+significance: 3
+cited_by: 12
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

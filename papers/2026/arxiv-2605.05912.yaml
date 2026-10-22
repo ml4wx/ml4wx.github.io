@@ -1,0 +1,49 @@
+id: arxiv-2605.05912
+title: 'From Drops to Grid: Noise-Aware Spatio-Temporal Neural Process for Rainfall Estimation'
+authors:
+- Rafael Pablos Sarabia
+- Joachim Nyborg
+- Morten Birk
+- Ira Assent
+date: '2026-05-07'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.05912'
+  openalex: W7204510794
+links:
+  paper: https://arxiv.org/abs/2605.05912
+  pdf: https://arxiv.org/pdf/2605.05912
+topic: observations-remote-sensing
+topics:
+- downscaling
+type: model
+method:
+- other
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- stations
+status: research
+summary: Neural process model fuses noisy private weather station time series with radar to produce dense,
+  uncertainty-aware rainfall maps, outperforming operational and deep learning baselines.
+abstract: High-resolution rainfall observations are crucial for weather forecasting, water management,
+  and hazard mitigation. Traditional operational measurements are often biased and low-resolution, limiting
+  their ability to capture local rainfall. Accurate high-resolution rainfall maps require integrating
+  sparse surface observations, yet existing deep learning densification methods are hindered by rainfall's
+  skewed, localized nature, noise, and limited spatio-temporal fusion. We present DropsToGrid, a Neural
+  Process-based method that generates dense rainfall fields by fusing temporal sequences from noisy, irregularly
+  distributed private weather stations with spatial context from radar. Leveraging multi-scale feature
+  extraction, temporal attention, and multi-modal fusion, the model produces stochastic, continuous rainfall
+  estimates and explicitly quantifies uncertainty. Evaluations on real-world datasets demonstrate that
+  DropsToGrid outperforms both operational and deep learning baselines, generating accurate high-resolution
+  rainfall maps with well-calibrated uncertainty, even when only few stations are available and in cross-regional
+  scenarios.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

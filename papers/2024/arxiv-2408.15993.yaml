@@ -1,0 +1,60 @@
+id: arxiv-2408.15993
+title: 'ClimDetect: A Benchmark Dataset for Climate Change Detection and Attribution'
+authors:
+- Sungduk Yu
+- Brian L. White
+- Anahita Bhiwandiwalla
+- Musashi Hinck
+- Matthew Lyle Olson
+- Yaniv Gurwicz
+- Raanan Y. Rohekar
+- Tung Nguyen
+- Vasudev Lal
+date: '2024-08-28'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2408.15993'
+  openalex: W4402706168
+links:
+  paper: https://arxiv.org/abs/2408.15993
+  pdf: https://arxiv.org/pdf/2408.15993
+orgs:
+- ucla
+topic: benchmarks-data-eval
+topics:
+- climate-analysis-attribution
+type: benchmark
+method:
+- transformer
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+- era5
+status: research
+summary: Introduces ClimDetect, a 1.17M-snapshot benchmark from CMIP6 and reanalyses for deep-learning
+  climate change detection and attribution, and tests vision transformers on it.
+abstract: 'Detecting and attributing temperature increases driven by climate change is crucial for understanding
+  global warming and informing adaptation strategies. However, distinguishing human-induced climate signals
+  from natural variability remains challenging for traditional detection and attribution (D&A) methods,
+  which rely on identifying specific "fingerprints" -- spatial patterns expected to emerge from external
+  forcings such as greenhouse gas emissions. Deep learning offers promise in discerning these complex
+  patterns within expansive spatial datasets, yet the lack of standardized protocols has hindered consistent
+  comparisons across studies. To address this gap, we introduce ClimDetect, a standardized dataset comprising
+  1.17M daily climate snapshots paired with target climate change indicator variables. The dataset is
+  curated from both CMIP6 climate model simulations and real-world observation-assimilated reanalysis
+  datasets (ERA5, JRA-3Q, and MERRA-2), and is designed to enhance model accuracy in detecting climate
+  change signals. ClimDetect integrates various input and target variables used in previous research,
+  ensuring comparability and consistency across studies. We also explore the application of vision transformers
+  (ViT) to climate data -- a novel approach that, to our knowledge, has not been attempted before for
+  climate change detection tasks. Our open-access data serve as a benchmark for advancing climate science
+  by enabling end-to-end model development and evaluation. ClimDetect is publicly accessible via Hugging
+  Face dataset repository at: https://huggingface.co/datasets/ClimDetect/ClimDetect.'
+significance: 5
+score: 30
+highlight: false
+added: '2026-10-22'
+source: backfill

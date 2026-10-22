@@ -1,0 +1,60 @@
+id: arxiv-2605.25679
+title: Transformer-based neural operators for 3D wind field prediction over complex mountainous terrain
+authors:
+- Yu-Jia Zhang
+- Jia-Xing Qi
+- Ruiyang Chen
+- Yong Liu
+- Yu-Zhou Zhang
+- Lyulin Kuang
+- Ri Zhang
+- Sheng-Ze Cai
+date: '2026-05-25'
+year: 2026
+venue: Communications Physics
+venue_type: journal
+ids:
+  arxiv: '2605.25679'
+  doi: 10.1038/s42005-026-02770-w
+  openalex: W7169758733
+links:
+  paper: https://arxiv.org/abs/2605.25679
+  pdf: https://doi.org/10.1038/s42005-026-02770-w
+orgs:
+- nvidia
+topic: applications-impacts
+type: model
+method:
+- transformer
+- neural-operator
+spatial:
+- local
+data:
+- other
+status: research
+summary: Transformer-based neural operators predict 3D wind fields over mountainous terrain from CFD data,
+  with zero-shot transfer to real sites and 10% lower error than baselines.
+abstract: 'Accurate prediction of three-dimensional (3D) wind fields over complex mountainous terrain
+  is essential for renewable energy deployment and regional weather modeling. Traditional computational
+  fluid dynamics (CFD) simulations face two fundamental bottlenecks: expert-intensive mesh generation
+  around irregular topography, and iterative solvers that require hours to days even on high-performance
+  clusters. Recent neural operator approaches accelerate inference, but typically fail to resolve the
+  sharp, localized velocity gradients induced by complex terrain features. Here, we present a transformer-based
+  dual-attention neural-operator framework for 3D wind field prediction over complex mountainous terrain,
+  and validate its effectiveness through two instantiations on representative point-based (mesh-free)
+  and graph-based neural-operator architectures, namely Patch-solver and Patch-GTO. Trained on a large
+  CFD-generated dataset spanning diverse terrain geometries and inflow conditions, the framework enables
+  rapid prediction of steady-state wind field while maintaining competitive accuracy. It also demonstrates
+  robust zero-shot transfer to real-world mountainous sites across several diverse locations, outperforming
+  existing neural operator baselines by 10% in relative error. We further verify that incorporating sparse
+  observational data (1% spatial coverage) reduces prediction error by 16.89% relative to the corresponding
+  model without sparse data input and by 32.75% relative to advanced neural operator baselines on unseen
+  terrains. This framework establishes a generalizable computational paradigm across domains, promising
+  to be a real-time tool for wind resource assessment over complex mountainous terrain and related atmosphere-surface
+  interaction studies.'
+significance: 3
+cited_by: 0
+score: 47
+highlight: false
+added: '2026-10-22'
+source: snowball

@@ -1,0 +1,48 @@
+id: arxiv-2607.11470
+title: Climate-Invariant Conformal Prediction Intervals for Multi-Horizon Solar and Wind Forecasting
+authors:
+- Shreedhar Gangwar
+- Abhinav Bains
+- Banalaxmi Brahma
+date: '2026-07-13'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2607.11470'
+  openalex: W7168292412
+links:
+  paper: https://arxiv.org/abs/2607.11470
+  pdf: https://arxiv.org/pdf/2607.11470
+topic: local-forecasting
+topics:
+- applications-impacts
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+- other
+status: research
+summary: Climate-invariant conformal prediction intervals with bootstrap XGBoost give near-nominal coverage
+  for 1-12 h solar irradiance and wind speed at four sites, cutting Interval Score up to 35%.
+abstract: Reliable uncertainty quantification is essential for integrating solar and wind generation into
+  modern power systems, where operators must weigh risk rather than act on point forecasts alone. Existing
+  probabilistic methods, however, often either lack finite-sample validity or require per-site recalibration,
+  so a single model rarely transfers across the diverse climates of a dispersed generation fleet. This
+  paper proposes a heteroscedastic, asymmetric, group-conditional split-conformal framework built on a
+  bootstrap-diverse XGBoost ensemble, producing prediction intervals that adapt in width to local difficulty
+  while retaining distribution-free coverage guarantees. A single fixed specification, with no per-site
+  or per-horizon tuning, is evaluated across four climatologically distinct sites spanning both hemispheres,
+  at horizons of 1 to 12 hours, for both solar irradiance and wind speed. The framework holds near-nominal
+  coverage on both targets and reduces the Interval Score by up to 35% relative to competitive baselines,
+  with the calibration and sharpness of its intervals shown to be properties of the method rather than
+  of site-specific tuning.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

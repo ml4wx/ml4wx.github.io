@@ -1,0 +1,45 @@
+id: arxiv-2608.22454
+title: A score-based particle flow filter for non-Gaussian data assimilation in high-dimensional chaotic
+  systems
+authors:
+- Zheqi Shen
+- Youmin Tang
+- Yuewei Fang
+date: '2026-08-23'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2608.22454'
+  openalex: W7204154808
+links:
+  paper: https://arxiv.org/abs/2608.22454
+  pdf: https://arxiv.org/pdf/2608.22454
+topic: data-assimilation
+type: model
+method:
+- classical-ml
+- physics-constrained
+spatial:
+- global
+data:
+- other
+status: research
+summary: A score-based particle flow filter with learned non-Gaussian priors cuts RMSE 49.5% over PFF
+  on 1000-dimensional Lorenz-96, a toy geophysical testbed.
+abstract: Current particle flow filters rely on Gaussian prior assumptions that fail to capture the non-Gaussian
+  attractor structure of chaotic systems. This study proposes a Score-based Particle Flow Filter (Score-PFF)
+  that replaces the parametric prior gradient with a neural network-learned score function via denoising
+  score matching. This enables flexible characterization of multimodal, skewed, and complex prior distributions
+  in chaotic dynamics. Pure prior adjustment experiments demonstrate correct gradient directions toward
+  the attractor (26.9%-29.0% error reduction over Gaussian priors). Under linear observations, Score-PFF
+  significantly outperforms both Gaussian PFF and EAKF (Cohen's d = 1.03 and 1.40), preserving non-Gaussian
+  structure that EAKF progressively Gaussianizes. Under nonlinear observation operators, Score-PFF maintains
+  robust performance with up to 60% RMSE reduction in strongly non-Gaussian regimes. On the 1000-dimensional
+  Lorenz-96 system, Score-PFF achieves 49.5% RMSE reduction over PFF while reducing per-assimilation cost
+  by replacing SVD-based covariance inversion with neural network inference. Score-PFF establishes a computationally
+  tractable, non-Gaussian data assimilation framework suitable for high-dimensional geophysical systems.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

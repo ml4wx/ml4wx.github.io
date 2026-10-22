@@ -1,0 +1,52 @@
+id: arxiv-2410.23159
+title: 'Fourier Amplitude and Correlation Loss: Beyond Using L2 Loss for Skillful Precipitation Nowcasting'
+authors:
+- Chiu-Wai Yan
+- Shi Quan Foo
+- Van Hoan Trinh
+- Dit-Yan Yeung
+- Ka-Hing Wong
+- Wai-Kin Wong
+date: '2024-10-30'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2410.23159'
+  openalex: W4404343177
+links:
+  paper: https://arxiv.org/abs/2410.23159
+  pdf: https://arxiv.org/pdf/2410.23159
+  code: https://github.com/argenycw/FACL
+topic: nowcasting
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Proposes Fourier amplitude and correlation losses to replace MSE for radar precipitation nowcasting,
+  reducing blurry outputs while improving perceptual and skill scores with a small pixel-accuracy trade-off.
+abstract: 'Deep learning approaches have been widely adopted for precipitation nowcasting in recent years.
+  Previous studies mainly focus on proposing new model architectures to improve pixel-wise metrics. However,
+  they frequently result in blurry predictions which provide limited utility to forecasting operations.
+  In this work, we propose a new Fourier Amplitude and Correlation Loss (FACL) which consists of two novel
+  loss terms: Fourier Amplitude Loss (FAL) and Fourier Correlation Loss (FCL). FAL regularizes the Fourier
+  amplitude of the model prediction and FCL complements the missing phase information. The two loss terms
+  work together to replace the traditional $L_2$ losses such as MSE and weighted MSE for the spatiotemporal
+  prediction problem on signal-based data. Our method is generic, parameter-free and efficient. Extensive
+  experiments using one synthetic dataset and three radar echo datasets demonstrate that our method improves
+  perceptual metrics and meteorology skill scores, with a small trade-off to pixel-wise accuracy and structural
+  similarity. Moreover, to improve the error margin in meteorological skill scores such as Critical Success
+  Index (CSI) and Fractions Skill Score (FSS), we propose and adopt the Regional Histogram Divergence
+  (RHD), a distance metric that considers the patch-wise similarity between signal-based imagery patterns
+  with tolerance to local transforms. Code is available at https://github.com/argenycw/FACL'
+significance: 4
+cited_by: 1
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

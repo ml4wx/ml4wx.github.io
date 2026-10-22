@@ -1,0 +1,56 @@
+id: doi-10.1007-s00190-025-02001-0
+title: 'TropoDeep: a deep learning-based model for InSAR tropospheric correction on large-scale interferograms
+  using GNSS and WRF outputs'
+authors:
+- Saeid Haji-Aghajany
+- Melika Tasan
+- Saeed Izanlou
+- Witold Rohm
+date: '2025-09-20'
+year: 2025
+venue: Journal of Geodesy
+venue_type: journal
+ids:
+  doi: 10.1007/s00190-025-02001-0
+  openalex: W4414374044
+links:
+  paper: https://doi.org/10.1007/s00190-025-02001-0
+  pdf: https://link.springer.com/content/pdf/10.1007/s00190-025-02001-0.pdf
+topic: observations-remote-sensing
+topics:
+- downscaling
+type: model
+method:
+- gan-vae
+- cnn
+spatial:
+- regional
+data:
+- satellite
+- other
+status: research
+summary: TropoDeep uses SRGAN to downscale WRF tropospheric delays for InSAR, improving RMSE by about
+  21% on average over GACOS across California and Nevada.
+abstract: Abstract This study introduces TropoDeep, an advanced model based on Super-Resolution Generative
+  Adversarial Networks (SRGAN), developed to downscale the outputs of the Weather Research and Forecasting
+  (WRF) model in order to improve displacement measurements from Interferometric Synthetic Aperture Radar
+  (InSAR) in California and Nevada. TropoDeep improves differential Slant Tropospheric Delay (dSTD) resolution
+  by leveraging High-Resolution Sentinel-1 InSAR interferograms (IFGs) and Low-Resolution (LR) WRF dSTD
+  data, while reducing the temporal mismatch between atmospheric model outputs and SAR acquisition times.
+  It employs SRGAN’s generator and discriminator framework, supported by Visual Geometry Group-19 (VGG19)
+  model to ensure high perceptual quality. Performance evaluation shows that TropoDeep significantly enhances
+  InSAR data quality, achieving a root-mean-square error (RMSE) improvement of up to approximately 40%,
+  with an average improvement of 21% compared to the Global Atmospheric Correction Online Service (GACOS).
+  Validation of time-series displacement fields demonstrated that InSAR results corrected with TropoDeep
+  align more closely with Global Navigation Satellite Systems (GNSS) measurements compared to those corrected
+  with GACOS. RMSE improvements for InSAR time-series data corrected with TropoDeep ranged from approximately
+  10% to 29% at nearly 84% of the GNSS stations. In addition, applying the proposed model to the subsidence
+  signal in California shows that TropoDeep can reduce the intruder tropospheric effect in subsidence
+  time series by up to 66% compared to GACOS, illustrating TropoDeep’s enhanced capability in refining
+  tropospheric corrections.
+significance: 2
+cited_by: 10
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,80 @@
+id: arxiv-2509.17658
+title: Technical overview and architecture of the FastNet Machine Learning weather prediction model, version
+  1.0
+authors:
+- Eric G. Daub
+- Tom Dunstan
+- Thusal Bennett
+- Matthew Burnand
+- James Chappell
+- Alejandro Coca-Castro
+- Noushin Eftekhari
+- J. Scott Hosking
+- Manvendra Janmaijaya
+- Jon Lillis
+- David Salvador-Jasin
+- Nathan Simpson
+- Oliver T Strickson
+- Ryan Sze-Yin Chan
+- Mohamad Elmasri
+- Lydia Allegranza France
+- Sam Madge
+- Aled Owen
+- James Robinson
+- Adam A. Scaife
+- David Walters
+- Peter Yatsyshin
+- Theo McCaie
+- Levan Bokeria
+- Hannah Brown
+- Tom Dodds
+- David Llewellyn-Jones
+- Sophia Moreton
+- Tom Potter
+- Iain Stenson
+- Louisa van Zeeland
+- Karina Bett-Williams
+- Kirstine Ida Dale
+date: '2025-09-22'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2509.17658'
+  openalex: W4416366294
+links:
+  paper: https://arxiv.org/abs/2509.17658
+  pdf: https://arxiv.org/pdf/2509.17658
+topic: global-medium-range
+type: model
+method:
+- gnn
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: pre-operational
+summary: FastNet v1.0, a Met Office and Turing GNN producing 10-day global forecasts at 1 and 0.25 degrees,
+  outperforms the Met Office Global Model on many variables in 2022.
+abstract: We present FastNet version 1.0, a data-driven medium range numerical weather prediction (NWP)
+  model based on a Graph Neural Network architecture, developed jointly between the Alan Turing Institute
+  and the Met Office. FastNet uses an encode-process-decode structure to produce deterministic global
+  weather predictions out to 10 days. The architecture is independent of spatial resolution and we have
+  trained models at 1$^{\circ}$ and 0.25$^{\circ}$ resolution, with a six hour time step. FastNet uses
+  a multi-level mesh in the processor, which is able to capture both short-range and long-range patterns
+  in the spatial structure of the atmosphere. The model is pre-trained on ECMWF's ERA5 reanalysis data
+  and then fine-tuned on additional autoregressive rollout steps, which improves accuracy over longer
+  time horizons. We evaluate the model performance at 1.5$^{\circ}$ resolution using 2022 as a hold-out
+  year and compare with the Met Office Global Model, finding that FastNet surpasses the skill of the current
+  Met Office Global Model NWP system using a variety of evaluation metrics on a number of atmospheric
+  variables. Our results show that both our 1$^{\circ}$ and 0.25$^{\circ}$ FastNet models outperform the
+  current Global Model and produce results with predictive skill approaching those of other data-driven
+  models trained on 0.25$^{\circ}$ ERA5.
+significance: 5
+cited_by: 1
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

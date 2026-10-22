@@ -1,0 +1,61 @@
+id: doi-10.1080-19942060.2026.2658296
+title: Typhoon wave height prediction based on BO-LSTM and Pangu-Weather models
+authors:
+- Yongping Chen
+- Zhipeng Qin
+- Zhenshan Xu
+- Xiaowu Xu
+- Shunqi Pan
+- J Wang
+date: '2026-04-22'
+year: 2026
+venue: Engineering Applications of Computational Fluid Mechanics
+venue_type: journal
+ids:
+  doi: 10.1080/19942060.2026.2658296
+  openalex: W7155197804
+links:
+  paper: https://doi.org/10.1080/19942060.2026.2658296
+  pdf: https://www.tandfonline.com/doi/pdf/10.1080/19942060.2026.2658296?needAccess=true
+topic: extremes-hazards
+topics:
+- global-medium-range
+type: model
+method:
+- rnn
+timescale:
+- short
+- medium
+spatial:
+- regional
+- local
+data:
+- nwp-analysis
+status: research
+summary: Combines BO-LSTM trained on synthetic typhoon wave data with Pangu-Weather wind fields to predict
+  typhoon wave heights, reaching 0.76 m RMSE at 7-day lead.
+abstract: Under the impacts of climate change, such as rising sea levels and intensifying storms, disasters
+  caused by extreme waves are becoming increasingly severe, necessitating in-depth research on intelligent
+  methods for typhoon wave forecasting. This study proposes two intelligent wave height prediction schemes
+  tailored for two specific temporal scales. The first is a short-term forecasting scheme based on the
+  TCWiSE model to generate numerous synthetic typhoons, and then provide surface forcing for the SWAN
+  model to calculate significant wave height at monitoring stations during typhoon events. The results
+  are used to construct a typhoon wave sample database. Subsequently, the BO-LSTM machine-learning model
+  is trained and tested using this database. It is demonstrated that this proposed short-term scheme is
+  capable of predicting the typhoon waves at a single station highly efficiently (within seconds), delivering
+  accurate results with RMSE of 0.02, 0.09, 0.19, and 0.42 m for 1, 3, 6, and 12 h forecasts, respectively,
+  highlighting its advantages of high accuracy and computational efficiency. The second scheme is to further
+  extend the forecast horizon, for a longer term forecasting approach. This method uses the Pangu-Weather
+  model to predict longer term typhoon wind fields, using empirical correction, and then use the SWAN
+  model to calculate the corresponding typhoon waves. The results indicate that this scheme is capable
+  of predicting 7-day typhoon wave heights with a minute-level computational efficiency at an RMSE of
+  0.76 m. While maintaining reasonable accuracy and efficiency, this approach significantly enhances the
+  forecast horizon compared to conventional methods.HighlightsUse synthetic typhoons to build a large-scale
+  training database.A BO-LSTM model predicts typhoon wave heights with second-level efficiency.Pangu-Weather
+  with wind correction enables 7-day typhoon wave predictions.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

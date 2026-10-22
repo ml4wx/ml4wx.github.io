@@ -1,0 +1,61 @@
+id: doi-10.31223-x5sb81
+title: 'Early warning signals of tipping points: A deep learning approach to direction and timing'
+authors:
+- Chris A. Boulton
+- Muhammed Fadera
+date: '2026-08-24'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.31223/x5sb81
+  openalex: W7204116630
+links:
+  paper: https://doi.org/10.31223/x5sb81
+  pdf: https://eartharxiv.org/repository/object/14610/download/25429/
+topic: climate-analysis-attribution
+type: model
+method:
+- cnn
+- rnn
+spatial:
+- global
+data:
+- cmip
+- other
+status: research
+summary: A CNN-GRU classifies bifurcation forcing direction with 67% accuracy (78% on long series) and
+  flags the forced AMOC collapse run from GCM output.
+abstract: The crossing of climate tipping points poses serious risk to life on Earth due to the impacts
+  they cause, and their irreversibility. These systems generally exhibit critical slowing down on their
+  approach to tipping point, or bifurcation, which can be detected by looking for changes in statistical
+  properties of a time series from the system, such as an increasing lag-1 autocorrelation or variance.
+  Recently, there has been interest in the use of deep learning in tipping point detection. However, there
+  has been a strong focus on predicting the movement towards tipping only. Here, we present results from
+  a CNN-GRU architecture, trained on 3 normal forms of bifurcation, linearly forced either towards or
+  away from the bifurcation point, or remaining a constant distance away. Predicting these 3 categories
+  yields an overall accuracy of 67%, increasing to 78% for the longest time series, outperforming traditional
+  early warning signals in a number of ROC tests. A complementary time-to-tip model predicts the distance
+  to tipping should the linear forcing be extrapolated towards the tipping point, with a mean absolute
+  error of 241 time steps which decreases as the time series lengthens. Using AMOC collapse output from
+  a GCM, the categorical model is able to correctly identify which run is forced towards tipping, and
+  which is the control, unforced run, with the time-to-tip model able to predict a decrease in the time
+  to tip for the forced run, and a relatively stable distance in the control run. Although it overestimates
+  tipping distance, we attribute this to struggles the model has with the saddle-node bifurcation type
+  of which the collapse is likely to be. Attention weight analysis of the DL model shows clear, interpretable
+  behaviour; the categorical model searches for signals at the beginning and end of the series to determine
+  direction, whereas the time-to-tip model uses the beginning to ascertain distance from tipping. Testing
+  with red noise data suggests there is a ceiling to improvements due to some reliance on critical slowing
+  down indicators. Our work presents a novel framework that adds considerations of time series moving
+  away from tipping as part of the null category. Although this makes our model more general than those
+  in the literature in dealing with false positives, it also highlights the limitation of classification-based
+  DL models – a rich set of nulls are needed to help them capture more features of tipping trajectories
+  that distinguish it from non-tipping trajectories. Together with our complementary time to tip model,
+  these new additions have policy relevancy regarding monitoring such as intervention or planning strategies.
+  We hope this framework can be built upon, by exploring training sets that could reduce false positives,
+  and use output from more complex climate models to aid in the prediction of real world climate systems.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

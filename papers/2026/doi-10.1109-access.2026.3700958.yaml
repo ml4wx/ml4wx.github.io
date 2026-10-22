@@ -1,0 +1,59 @@
+id: doi-10.1109-access.2026.3700958
+title: Direct Normal Irradiance Nowcasting Using Deep Learning Networks With All-Sky Infrared Images
+authors:
+- Binh Nam Nguyen
+- Sonia Leva
+- Giampaolo Manzolini
+- Cody  Blain Anderson
+- Emanuèle Ogliari
+date: '2026-01-01'
+year: 2026
+venue: IEEE Access
+venue_type: journal
+ids:
+  doi: 10.1109/access.2026.3700958
+  openalex: W7163883543
+links:
+  paper: https://doi.org/10.1109/access.2026.3700958
+topic: applications-impacts
+topics:
+- nowcasting
+type: application
+method:
+- cnn
+- rnn
+- transformer
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- other
+- stations
+status: pre-operational
+summary: CNN-LSTM on thermal all-sky infrared images with meteorological inputs nowcasts direct normal
+  irradiance 10–15 minutes ahead with R² near 0.80 for concentrating solar plants.
+abstract: 'Accurate very short-term Direct Normal Irradiance (DNI) nowcasting is essential for the operational
+  efficiency of Concentrating Solar Power (CSP) plants, where rapid sun–cloud occlusions can lead to significant
+  thermal stress and energy losses. This study proposes a multi-modal nowcasting framework that combines
+  thermal All-Sky Infrared (ASI) image sequences with synchronous meteorological data to predict DNI at
+  10- and 15-minute horizons. Four advanced deep learning architectures are systematically benchmarked:
+  baseline Convolutional Neural Network (CNN) and Residual Network (ResNet) for deep spatial encoding,
+  CNN-Long Short-Term Memory (CNN-LSTM) for spatiotemporal dynamics, and CNN-Transformer for long-range
+  attention-based dependencies. Evaluated on a rigorously selected 33-day test set, the hybrid CNN-LSTM
+  architecture emerged as the most robust model, achieving a coefficient of determination ( $R^{2}$ )
+  of 0.7998 and 0.7688 for the 10- and 15-minute horizons, respectively, and reaching peak daily forecast
+  skill (FS) values exceeding 50%. Crucially, targeted evaluation of high-volatility transients demonstrated
+  the model’s superior ability to proactively anticipate severe irradiance ramps (> 100 W/m2/min). The
+  statistical robustness of these predictive gains over the persistence baseline was strictly validated
+  via the Wilcoxon signed-rank test ( $p \lt 10^{-140}$ ). Furthermore, modality comparisons confirmed
+  that thermal infrared imaging effectively mitigates solar glare, providing significantly higher predictive
+  accuracy than standard multi-channel visible-light (RGB) cameras. These findings demonstrate a promising,
+  statistically validated framework that, upon further validation in operational climates, could support
+  the optimization of heliostat aim-point strategies and real-time solar resource management in CSP facilities.'
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

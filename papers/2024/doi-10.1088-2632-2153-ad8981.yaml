@@ -1,0 +1,59 @@
+id: doi-10.1088-2632-2153-ad8981
+title: Observation impact explanation in atmospheric state estimation using hierarchical message-passing
+  graph neural networks*
+authors:
+- Hyeon-Ju Jeon
+- Jeon-ho Kang
+- In‐Hyuk Kwon
+- O‐Joun Lee
+date: '2024-10-21'
+year: 2024
+venue: Machine Learning Science and Technology
+venue_type: journal
+ids:
+  doi: 10.1088/2632-2153/ad8981
+  openalex: W4403589974
+links:
+  paper: https://doi.org/10.1088/2632-2153/ad8981
+topic: xai-uq-physics
+topics:
+- data-assimilation
+type: model
+method:
+- gnn
+- transformer
+spatial:
+- global
+data:
+- satellite
+- stations
+- nwp-analysis
+status: research
+summary: Hierarchical message-passing GNN with gradient-based explainability quantifies how individual
+  satellite and in-situ observations affect atmospheric state estimation, independent of the forecast
+  system.
+abstract: Abstract The impact of meteorological observations on weather forecasting varies with the sensor
+  type, location, time, and other environmental factors. Thus, the quantitative analysis of observation
+  impacts is crucial for the effective and efficient development of weather forecasting systems. However,
+  existing impact analysis methods are dependent on specific forecast systems, because system-specific
+  adjoint models are used and the sensitivity of the observation to the forecast is measured. This study
+  investigates the impact of observations on atmospheric state estimation in weather forecasting systems
+  by developing a novel graph neural network (GNN) model specialized for analyzing the heterogeneous relations
+  between observations and atmospheric states. The observation impact can then be assessed by applying
+  explainable methods to the proposed GNN model, which is independent of forecasting systems. Further,
+  we develop a novel application called ‘CloudNine,’ a system that provides impact analysis for individual
+  observations with visualization. Our GNN model comprises hierarchical message-passing modules that separately
+  analyze spatial correlations between observations at close locations and atmospheric states at close
+  locations and then examine correlations between observations and atmospheric states. To consider the
+  different factors influencing these correlations, we utilized geo-coordinates and types of observations
+  in the attention mechanism of the modules with their feature vectors. We then applied gradient-based
+  explainability methods to quantify the significance of the different observations in the estimation.
+  Evaluated using data from 11 satellites and land-based observations, the results highlight the effectiveness
+  of the proposed model and the visualization of observation impacts, enhancing the understanding and
+  optimization of observational data in weather forecasting.
+significance: 4
+cited_by: 1
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

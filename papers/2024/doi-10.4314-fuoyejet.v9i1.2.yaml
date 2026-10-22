@@ -1,0 +1,60 @@
+id: doi-10.4314-fuoyejet.v9i1.2
+title: Mixed-Input Residual Network for Air Temperature Forecasting by Low-Power Embedded Devices
+authors:
+- Kayode P. Ayodele
+- Faruk Adekola
+- Abiodun Alani Ogunseye
+- Adedayo Abiona
+- Olawale Babatunde Akinwale
+- Oladoyin Arewa
+- Funmilayo B. Offiong
+- Akinbode A. Olawole
+- Vincent Ajayi
+date: '2024-05-01'
+year: 2024
+venue: FUOYE Journal of Engineering and Technology
+venue_type: journal
+ids:
+  doi: 10.4314/fuoyejet.v9i1.2
+  openalex: W4396773905
+links:
+  paper: https://doi.org/10.4314/fuoyejet.v9i1.2
+  pdf: https://www.ajol.info/index.php/fuoyejet/article/download/269561/254439
+topic: local-forecasting
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: pre-operational
+summary: MIRNet, a compact BiLSTM and convolutional network, forecasts station temperature up to 24 hours
+  ahead and runs on a Raspberry Pi 4 with MSE 1.23e-4 on Jena.
+abstract: 'Accuracy and model compactness are essential requirements for weather forecasting models designed
+  for operation on low-power embedded devices. This study developed Mixed-Input Residual Network (MIRNet),
+  a compact temperature-forecasting deep neural network model. MIRNet integrates stacked bidirectional
+  long short-term memory layers using concatenated 1-dimensional and 2-dimensional convolutional layers
+  to improve model accuracy. MIRNet was trained and tested on two datasets: one, IfeData, comprising historical
+  weather data from Ile-Ife, Nigeria and the other a standard weather forecasting dataset called the Jena
+  dataset. Training was carried out using 100 epochs of data partitioned in the standard 80:20 ratio,
+  with an adaptable learning rate strategy. The model was tested for Nth-hour-ahead prediction for 1N24;
+  where N are natural numbers, and performance quantified using metrics such as mean absolute percentage
+  error (MAPE) and mean square error (MSE). The model was also implemented on a Raspberry Pi 4 device
+  with a 1.8 GHz 64-bit quad-core ARM Cortex-A72 processor. The model achieved a MSE of 1.00 x 10-3 on
+  the IfeData dataset, and 1.23x10-4 on the Jena dataset for 1-hour ahead forecasting. This is currently
+  the best verifiable result achieved on the Jena dataset by any prediction model globally. For Nth hour
+  ahead forecasting, MIRNet achieved an MSE generally below 2.0x10-3 for all values of N on the standard
+  Jena dataset. The MSE of MIRNet for N-sequential 1-hour ahead and single Nth hour predictions using
+  the Jena dataset reveal quadratic and linear relationships with N respectively. The model compares favourably
+  with existing models for multi-hour predictions. The developed model is compact and has good forecasting
+  properties.'
+significance: 2
+cited_by: 1
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

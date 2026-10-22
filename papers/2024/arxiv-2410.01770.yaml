@@ -1,0 +1,61 @@
+id: arxiv-2410.01770
+title: Explainable Earth Surface Forecasting under Extreme Events
+authors:
+- Oscar J. Pellicer-Valero
+- Miguel-Ángel Fernández-Torres
+- Chaonan Ji
+- Miguel D. Mahecha
+- Gustau Camps-Valls
+date: '2024-10-02'
+year: 2024
+venue: Earth s Future
+venue_type: journal
+ids:
+  arxiv: '2410.01770'
+  doi: 10.1029/2024ef005446
+  openalex: W4414518876
+links:
+  paper: https://doi.org/10.1029/2024ef005446
+  pdf: https://arxiv.org/pdf/2410.01770
+  code: https://github.com/DeepExtremes/txyXAI
+topic: applications-impacts
+topics:
+- extremes-hazards
+type: benchmark
+method:
+- rnn
+- cnn
+- other
+timescale:
+- short
+spatial:
+- regional
+data:
+- satellite
+- era5
+- other
+status: research
+summary: A ConvLSTM forecasts vegetation response to compound heatwave-drought extremes on a new Sentinel-2
+  dataset, with XAI attributing drivers to meteorological variables.
+abstract: With climate change-related extreme events on the rise, high dimensional Earth observation data
+  presents a unique opportunity for forecasting and understanding impacts on ecosystems. This is, however,
+  impeded by the complexity of processing, visualizing, modeling, and explaining this data. To showcase
+  how this challenge can be met, here we train a convolutional long short-term memory-based architecture
+  on the novel DeepExtremeCubes dataset. DeepExtremeCubes includes around 40,000 long-term Sentinel-2
+  minicubes (January 2016-October 2022) worldwide, along with labeled extreme events, meteorological data,
+  vegetation land cover, and topography map, sampled from locations affected by extreme climate events
+  and surrounding areas. When predicting future reflectances and vegetation impacts through kernel normalized
+  difference vegetation index, the model achieved an R$^2$ score of 0.9055 in the test set. Explainable
+  artificial intelligence was used to analyze the model's predictions during the October 2020 Central
+  South America compound heatwave and drought event. We chose the same area exactly one year before the
+  event as counterfactual, finding that the average temperature and surface pressure are generally the
+  best predictors under normal conditions. In contrast, minimum anomalies of evaporation and surface latent
+  heat flux take the lead during the event. A change of regime is also observed in the attributions before
+  the event, which might help assess how long the event was brewing before happening. The code to replicate
+  all experiments and figures in this paper is publicly available at https://github.com/DeepExtremes/txyXAI
+significance: 3
+cited_by: 5
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

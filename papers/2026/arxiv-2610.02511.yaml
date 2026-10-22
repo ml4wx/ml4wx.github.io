@@ -1,0 +1,49 @@
+id: arxiv-2610.02511
+title: Post-Training Quantization of Autoregressive Weather Models
+authors:
+- Ananyo Bhattacharya
+- Swastik Bhattacharya
+- Christiane Jablonowski
+date: '2026-10-01'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.02511'
+  openalex: W7220359252
+links:
+  paper: https://arxiv.org/abs/2610.02511
+  pdf: https://arxiv.org/pdf/2610.02511
+topic: infra-software
+topics:
+- global-medium-range
+type: evaluation
+method:
+- other
+timescale:
+- short
+spatial:
+- global
+status: research
+summary: First benchmark of post-training quantization for autoregressive weather emulators, applied to
+  DLWP and FourCastNet over short-range forecasts, with simulated quantization evaluated.
+abstract: Advancements in high-resolution numerical weather prediction (NWP) and data assimilation (DA)
+  have shaped the developments in deep learning (DL) architectures emulating atmospheric dynamics. Emulators
+  for weather forecasting exhibit forecast quality comparable to physics based models at forecast horizon
+  scaling from few days to subseasonal time scales. The emulators are driven by hardware-accelerated matrix
+  multiplication in autoregressive inferences, significantly reducing the computation time and resources
+  required for NWP. Optimization of the matrix multiplication processes in GPU architectures provides
+  opportunities to scale towards high-resolution domain, and offers implementation of out of the box solutions.
+  Post-training quantization (PTQ) has been demonstrated across multiple DL architectures to accelerate
+  and increase the number of computations in unit time while consuming less power, enabling applications
+  on edge hardware. In this study, we investigate the effect of PTQ on pre-trained AI emulators for global-scale
+  weather forecasting. We implement PTQ algorithms in Deep Learning Weather Prediction (DLWP) and FourCastNet
+  (FCN) models as a proof of concept for geophysical fluid dynamics applications. We systematically investigate
+  the effect of PTQ on emulator inferences over short-range forecast horizons. Evaluation of PTQ configurations
+  using simulated quantization hints at qualitatively meaningful forecasts over short-time horizons. These
+  results provide a first benchmark of PTQ for autoregressive weather emulators and a basis for quantization-based
+  optimization of DL models for dynamical systems.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

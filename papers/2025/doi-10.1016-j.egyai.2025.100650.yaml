@@ -1,0 +1,64 @@
+id: doi-10.1016-j.egyai.2025.100650
+title: Dual-channel representation learning with wind speed correction factor for enhanced wind power
+  forecasting
+authors:
+- Yanbo Chen
+- Qintao Du
+- Tuben Qiang
+- Liangcheng Cheng
+- Yongkang She
+- Zhi Zhang
+date: '2025-11-25'
+year: 2025
+venue: Energy and AI
+venue_type: journal
+ids:
+  doi: 10.1016/j.egyai.2025.100650
+  openalex: W4416612029
+links:
+  paper: https://doi.org/10.1016/j.egyai.2025.100650
+topic: post-processing
+topics:
+- applications-impacts
+type: model
+method:
+- gan-vae
+- other
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Corrects NWP wind speed with a GAN-learned correction factor and dual-branch network to improve
+  short-term wind power forecasts, targeting wind-farm applications.
+abstract: • A correction factor is constructed to describe the prediction error between the measured WS
+  and NWP WS, and to characterize the transfer relationship in the measured WS sequence. • A self-correction
+  method based on correction factor is proposed to correct NWP WS. • CFRM is established to address the
+  problem of short-term scale performance degradation in existing wind speed correction algorithms. •
+  A dual-channel mechanism based on important features is proposed, which upgrades the single-channel
+  architecture of traditional neural networks to a dual-branch structure to enhance the model's ability
+  to learn important features. Wind power forecasting (WPF) accuracy is fundamentally constrained by two
+  critical challenges. First, the high-order nonlinear relationship between wind speed (WS) and power
+  (WP) substantially amplifies errors inherent in numerical weather prediction (NWP) data. Second, conventional
+  models process all input features uniformly, failing to distinguish the dominant role of the primary
+  driving feature from the complementary roles of auxiliary features. To decouple and address these challenges,
+  this paper proposes a novel forecasting method (CFRM-DCM) that integrates a Correction Factor Representation
+  Model (CFRM) and a Dual-Channel Mechanism (DCM). The CFRM is first employed to address the NWP error.
+  It describes the complex correlation and forecasting error between measured WS and NWP WS as correction
+  factors. A generative adversarial network (GAN) is then utilized to learn the distribution of these
+  factors and output a corrected, more accurate WS. This corrected data is then fed into the DCM, a dual-branch
+  architecture designed to enhance complex feature extraction, overcoming the limitations of traditional
+  single-channel structures. The proposed method is validated on four wind farms. Simulation results demonstrate
+  that the CFRM-DCM method achieves significant improvements in WPF accuracy, with error reductions ranging
+  from 3.9% to 9.4% across ultra-short-term and short-term timescales. This enhanced WPF performance is
+  directly attributed to the model's ability to first improve WS accuracy, with gains of 8.8%, 7.6%, 8.3%,
+  and 8.8% for the respective farms.
+significance: 3
+cited_by: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

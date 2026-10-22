@@ -1,0 +1,65 @@
+id: doi-10.1017-eds.2026.10047
+title: Joint bias correction and downscaling of subseasonal forecasts via diffusion models
+authors:
+- Maria Pyrina
+- Adel Imamovic
+- Dominik Büeler
+- Christoph Spirig
+- Daniela I. V. Domeisen
+date: '2026-01-01'
+year: 2026
+venue: Environmental Data Science
+venue_type: journal
+ids:
+  doi: 10.1017/eds.2026.10047
+  openalex: W7168424399
+links:
+  paper: https://doi.org/10.1017/eds.2026.10047
+  pdf: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/6824ADAF5E96F1D8593F11F6E7337F97/S2634460226100478a.pdf/div-class-title-joint-bias-correction-and-downscaling-of-subseasonal-forecasts-via-diffusion-models-div.pdf
+orgs:
+- ecmwf
+- eth-zurich
+- meteoswiss
+topic: downscaling
+topics:
+- post-processing
+- s2s-seasonal
+type: model
+method:
+- diffusion
+timescale:
+- s2s
+spatial:
+- regional
+data:
+- nwp-analysis
+- other
+status: research
+summary: Conditional diffusion model jointly bias-corrects and downscales ECMWF subseasonal temperature
+  forecasts from 36 km to 2 km, but gives lower CRPS skill than quantile mapping.
+abstract: Abstract Subseasonal forecasts provide valuable guidance for decision-making but remain limited
+  by systematic biases and coarse spatial resolution, particularly over regions with complex orography.
+  Quantile mapping (QM) is widely used for post-processing because it enables effective bias correction
+  and downscaling, yet it applies a distributional correction and therefore neglects the case-specific
+  dependence between forecasts and observations. To move toward a more integrated approach, we explore
+  a diffusion-based generative framework for simultaneous probabilistic bias correction and high-resolution
+  downscaling, with lead time explicitly included as a conditioning variable. We employ a conditional
+  denoising diffusion model (DM) trained on high-resolution gridded observations (2 km) and conditioned
+  on coarse-resolution ensemble-mean subseasonal forecasts (36 km) from the European Centre for Medium-Range
+  Weather Forecasts (ECMWF) Integrated Forecasting System (IFS) subseasonal system. We focus here on a
+  univariate temperature model and on training strategies. By learning conditional distributions of observations
+  given forecasts and lead time, diffusion-based generative models enable case-dependent corrections that
+  exploit forecast–observation relationships. Two training configurations are examined to assess how lead-time
+  conditioning and data availability influence the learning of biases. Results show that the DM recovers
+  realistic fine-scale temperature patterns and achieves meaningful lead-time-dependent bias correction
+  across subseasonal lead times, even when trained on relatively limited datasets. However, compared to
+  QM, the diffusion-based forecasts exhibit lower skill in probabilistic metrics such as the continuous
+  ranked probability score (CRPS) and discrimination for extremes. Overall, this work represents a first
+  step toward lead-time-aware subseasonal post-processing using DMs and highlights directions for future
+  methodological development.
+significance: 5
+cited_by: 1
+score: 55
+highlight: false
+added: '2026-10-22'
+source: backfill

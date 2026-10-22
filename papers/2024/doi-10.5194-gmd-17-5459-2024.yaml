@@ -1,0 +1,54 @@
+id: doi-10.5194-gmd-17-5459-2024
+title: 'TorchClim v1.0: a deep-learning plugin for climate model physics'
+authors:
+- David Fuchs
+- Steven C. Sherwood
+- Abhnil Amtesh Prasad
+- Kirill Trapeznikov
+- Jim Gimlett
+date: '2024-07-22'
+year: 2024
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-17-5459-2024
+  openalex: W4400886734
+links:
+  paper: https://doi.org/10.5194/gmd-17-5459-2024
+  pdf: https://gmd.copernicus.org/articles/17/5459/2024/gmd-17-5459-2024.pdf
+topic: hybrid-parameterization
+topics:
+- infra-software
+type: model
+method:
+- other
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+- km-scale-sim
+status: research
+summary: TorchClim plugin swaps CAM moist and radiation physics for a neural network inside CESM, producing
+  a stable climate that reproduces the original model with some biases.
+abstract: Abstract. Climate models are hindered by the need to conceptualize and then parameterize complex
+  physical processes that are not explicitly numerically resolved and for which no rigorous theory exists.
+  Machine learning and artificial intelligence methods (ML/AI) offer a promising paradigm that can augment
+  or replace the traditional parametrized approach with models trained on empirical process data. We offer
+  a flexible and efficient framework, TorchClim, for inserting ML/AI physics surrogates that respect the
+  parallelization of the climate model. A reference implementation of this approach is presented for the
+  Community Earth System Model (CESM), where the authors substitute moist physics and radiative parametrization
+  of the Community Atmospheric Model (CAM) with an ML/AI model. We show that a deep neural network surrogate
+  trained on data from CAM itself can produce a stable model that reproduces the climate and variability
+  of the original model, albeit with some biases. This framework is offered to the research community
+  as an open-source project. The new framework seamlessly integrates into CAM's workflow and code-base
+  and runs with negligible added computational cost, allowing rapid testing of various ML physics surrogates.
+  The efficiency and flexibility of this framework open up new possibilities for using physics surrogates
+  trained on offline data to improve climate model performance and better understand model physical processes.
+significance: 4
+cited_by: 9
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

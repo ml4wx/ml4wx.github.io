@@ -1,0 +1,45 @@
+id: doi-10.22541-essoar.171707818.82890231-v1
+title: 'Physically-Informed Video Inpainting: A Deep Learning Approach for Historical Weather Reconstruction'
+authors:
+- Yannis Valentin Schmutz
+- Noemi Imfeld
+- Stefan Brönnimann
+- Erik Graf
+date: '2024-05-30'
+year: 2024
+venue_type: other
+ids:
+  doi: 10.22541/essoar.171707818.82890231/v1
+  openalex: W4399174504
+links:
+  paper: https://doi.org/10.22541/essoar.171707818.82890231/v1
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: WeRec3D, a video-inpainting-inspired 3D CNN, reconstructs missing daily European surface temperature
+  and pressure from ERA5, cutting validation error to 48% of baseline.
+abstract: We investigate the applicability of deep learning methods for reconstructing daily weather data.
+  Inspired by video inpainting, we propose a novel method, WeRec3D, which utilizes a three-dimensional
+  convolutional neural network. Our approach was developed iteratively by evaluating six modeling improvement
+  techniques. The resulting method reduces the validation error to 48% compared to the baseline. Additionally,
+  we demonstrate the impact of the spatial distribution of observations on reconstruction accuracy and
+  propose a potential integration with the analogue resampling method. WeRec3D is trained and validated
+  in a self-supervised manner using ERA5’s surface temperature and pressure data over Europe. On a hold-out
+  set from 1950 to 1954, the validation results in an MAE of 1.11 °C and 199 Pa. As a case study, we reconstruct
+  the 1807 heat wave and validate it using a leave-one-out method in space. Compared to the original data,
+  the reconstructed time series exhibit a correlation of at least 0.91, with a maximum normalized RMSE
+  and standard deviation delta of 0.58 and 0.51 respectively. To the best of our knowledge, this is the
+  first study to investigate weather reconstruction using deep learning algorithms, proposing video inpainting
+  as a novel approach for reconstructing missing weather information.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

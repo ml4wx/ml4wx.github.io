@@ -1,0 +1,69 @@
+id: doi-10.5194-amt-18-6659-2025
+title: A feasibility study to reconstruct atmospheric rivers using space- and ground-based GNSS observations
+authors:
+- Endrit Shehaj
+- S. S. Leroy
+- Kerri Cahoy
+- Juliana Chew
+- Benedikt S. Soja
+date: '2025-11-18'
+year: 2025
+venue: Atmospheric measurement techniques
+venue_type: journal
+ids:
+  doi: 10.5194/amt-18-6659-2025
+  openalex: W4409364057
+links:
+  paper: https://doi.org/10.5194/amt-18-6659-2025
+orgs:
+- eth-zurich
+- mit
+topic: observations-remote-sensing
+type: evaluation
+method:
+- other
+spatial:
+- global
+data:
+- satellite
+status: research
+summary: Neural networks trained on simulated GNSS radio occultation constellations assess how many LEO
+  satellites are needed to resolve atmospheric river structure over oceans.
+abstract: Abstract. Atmospheric rivers (ARs) are long filaments that transport large amounts of water
+  vapor from the Tropics to mid- and high latitudes. They are directly related to heavy precipitation
+  and extreme weather leading to flooding and mud slides. Accurate identification of AR structures over
+  the ocean is important to improve the forecast of their landfall location and timing. GNSS radio occultation
+  (RO) is a space-based technique that can measure meteorological variables with high vertical resolution.
+  While RO can observe structures like ARs in individual RO profiles, RO observations have non-uniform
+  and sparse spatial and temporal sampling, so it is not yet possible to fully characterize AR morphology
+  using RO alone. In this work, we use previous research in which we applied machine learning (ML) to
+  enhance the spatial and temporal resolution of RO observations. Here, we train neural networks (NNs)
+  to map RO observations and help resolve ARs. Analyses using existing RO data, such as from the COSMIC-2
+  mission, showed that the sampling density is insufficient to resolve and geo-locate ARs. Adding observations
+  from the other available missions (for example METOP) improved matters, but was still insufficient to
+  reliably reconstruct AR structure. We undertake a study to determine how many LEO RO satellites would
+  be needed to quantify the structure, location, and timing of ARs. We simulate RO observations as would
+  be obtained with Walker constellations of 12, 24, 36, 48 and 60 LEO RO satellites. First, we investigate
+  possible constellations for proper AR monitoring. We aim for constellations that lead to hourly RO counts
+  that change as little as possible during the AR (up to several days). This allows us to resolve ARs
+  with similar accuracy during the scenario. We conclude that 3 or 6 orbital planes and inclinations between
+  85° and 90° perform best. Second, we make use of 12-h forecasts of the European Centre for Medium-range
+  Weather Forecasts (ECMWF) system to interpolate the forecasts to the simulated RO constellation sampling
+  coordinates. Third, we use the ECMWF-based RO observations to train ML models and map them to the ECMWF
+  grid. We compare ML-mapped RO sampled grids to ECMWF products in a closed-loop validation. Initially,
+  we map RO refractivity at 2 km geopotential height, where small-scale structures related to water vapor
+  are visible. We find that at least 36 RO satellites are needed to characterize the morphology of ARs
+  in the Pacific basin with useful precision and accuracy (from the ML produced maps). Then, we use a
+  framework with two consecutive NNs to map column-integrated water vapor (IWV) from profiles of RO. The
+  first NN maps the refractivity into IWV, and the second NN maps the IWV spatially. In this case, we
+  find that a constellation of 48 satellites is needed to continuously map IWV fields accurately and thus
+  reconstruct the morphology of ARs with useful precision and accuracy. Finally, when using RO, we find
+  that mapping refractivity into IWV is less accurate over land than over oceans. To further improve the
+  AR mapping over land, we made use of IWV from ground-based (GB) GNSS. The significantly higher spatial
+  and temporal resolutions of GB data compared to RO lead to much improved IWV fields and thus AR path
+  and shape over land.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

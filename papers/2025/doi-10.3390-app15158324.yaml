@@ -1,0 +1,63 @@
+id: doi-10.3390-app15158324
+title: 'HyMePre: A Spatial–Temporal Pretraining Framework with Hypergraph Neural Networks for Short-Term
+  Weather Forecasting'
+authors:
+- Fei Wang
+- Dawei Lin
+- Baojun Chen
+- Guodong Jing
+- Yi Geng
+- Xudong Ge
+- Daoming Wei
+- Ning Zhang
+date: '2025-07-26'
+year: 2025
+venue: Applied Sciences
+venue_type: journal
+ids:
+  doi: 10.3390/app15158324
+  openalex: W4412695121
+links:
+  paper: https://doi.org/10.3390/app15158324
+  pdf: https://www.mdpi.com/2076-3417/15/15/8324/pdf?version=1753517176
+orgs:
+- cma
+topic: local-forecasting
+topics:
+- foundation-models
+type: model
+method:
+- gnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+- stations
+status: research
+summary: Self-supervised hypergraph pretraining for station-based short-term weather forecasting, improving
+  temperature, humidity and wind prediction over standard GNNs on reanalysis data.
+abstract: Accurate short-term weather forecasting plays a vital role in disaster response, agriculture,
+  and energy management, where timely and reliable predictions are essential for decision-making. Graph
+  neural networks (GNNs), known for their ability to model complex spatial structures and relational data,
+  have achieved remarkable success in meteorological forecasting by effectively capturing spatial dependencies
+  among distributed weather stations. However, most existing GNN-based approaches rely on pairwise station
+  connections, limiting their capacity to represent higher-order spatial interactions. Moreover, their
+  dependence on supervised learning makes them vulnerable to spatial heterogeneity and temporal non-stationarity.
+  This paper introduces a novel spatial–temporal pretraining framework, Hypergraph-enhanced Meteorological
+  Pretraining (HyMePre), which combines hypergraph neural networks with self-supervised learning to model
+  high-order spatial dependencies and improve generalization across diverse climate regimes. HyMePre employs
+  a two-stage masking strategy, applying spatial and temporal masking separately, to learn disentangled
+  representations from unlabeled meteorological time series. During forecasting, dynamic hypergraphs group
+  stations based on meteorological similarity, explicitly capturing high-order dependencies. Extensive
+  experiments on large-scale reanalysis datasets show that HyMePre outperforms conventional GNN models
+  in predicting temperature, humidity, and wind speed. The integration of pretraining and hypergraph modeling
+  enhances robustness to noisy data and improves generalization to unseen climate patterns, offering a
+  scalable and effective solution for operational weather forecasting.
+significance: 3
+cited_by: 2
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

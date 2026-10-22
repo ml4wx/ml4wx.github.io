@@ -1,0 +1,57 @@
+id: arxiv-2410.03945
+title: Interpolation-Free Deep Learning for Meteorological Downscaling on Unaligned Grids Across Multiple
+  Domains with Application to Wind Power
+authors:
+- Jean-Sébastien Giroux
+- Simon-Philippe Breton
+- Julie Carreau
+date: '2024-10-04'
+year: 2024
+venue: Artificial Intelligence for the Earth Systems
+venue_type: journal
+ids:
+  arxiv: '2410.03945'
+  doi: 10.1175/aies-d-24-0097.1
+  openalex: W4403929259
+links:
+  paper: https://doi.org/10.1175/aies-d-24-0097.1
+  pdf: https://arxiv.org/pdf/2410.03945
+orgs:
+- eccc
+topic: downscaling
+topics:
+- applications-impacts
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: A U-Net wind downscaling model with learned grid alignment and multi-level predictors, transferred
+  across Canada, improves wind power ramp detection.
+abstract: As climate change intensifies, the shift to cleaner energy sources becomes increasingly urgent.
+  With wind energy production set to accelerate, reliable wind probabilistic forecasts are essential to
+  ensure its efficient use. However, since numerical weather prediction models are computationally expensive,
+  probabilistic forecasts are produced at resolutions too coarse to capture all mesoscale wind behaviors.
+  Statistical downscaling, typically applied to enchance the resolution of climate model simulations,
+  presents a viable solution with lower computational costs by learning a mapping from low-resolution
+  (LR) variables to high-resolution (HR) meteorological variables. Leveraging deep learning, we evaluate
+  a downscaling model based on a state-of-the-art U-Net architecture, applied to an ensemble member from
+  a coarse-scale probabilistic forecast of wind velocity. The architecture is modified to incorporate
+  (1) a learned grid alignment strategy to resolve LR-HR grid mismatches and (2) a processing module for
+  multi-level atmospheric predictors. To extend the downscaling model's applicability from fixed spatial
+  domains to the entire Canadian region, we assess a transfer learning approach. Our results show that
+  the learned grid alignment strategy performs as well as conventional pre-processing interpolation steps
+  and that LR wind speed at multiple levels is sufficient as a predictor, enabling a more compact architecture.
+  Additionally, they suggest that extending to new spatial domains using transfer learning is promising,
+  and that downscaled wind velocities demonstrate potential in improving the detection of wind power ramps,
+  a critical phenomenon for wind energy.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

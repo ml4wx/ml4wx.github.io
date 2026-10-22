@@ -1,0 +1,49 @@
+id: arxiv-2507.01354
+title: Efficient Kilometer-Scale Precipitation Downscaling with Conditional Wavelet Diffusion
+authors:
+- Chugang Yi
+- Minghan Yu
+- Weikang Qian
+- Yixin Wen
+- Haizhao Yang
+date: '2025-07-02'
+year: 2025
+venue: 'Journal of Geophysical Research: Machine Learning and Computation, 3(2), e2025JH000941 (2026)'
+venue_type: journal
+ids:
+  arxiv: '2507.01354'
+  doi: 10.1029/2025jh000941
+  openalex: W4417182885
+links:
+  paper: https://arxiv.org/abs/2507.01354
+  pdf: https://arxiv.org/pdf/2507.01354
+topic: downscaling
+topics:
+- extremes-hazards
+type: model
+method:
+- diffusion
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Wavelet diffusion model downscales MRMS radar precipitation to 1 km, a 10x super-resolution with
+  9x faster sampling than pixel-space diffusion and sharper, artifact-free fields.
+abstract: Effective hydrological modeling and extreme weather analysis demand precipitation data at a
+  kilometer-scale resolution, which is significantly finer than the 10 km scale offered by standard global
+  products like IMERG. To address this, we propose the Wavelet Diffusion Model (WDM), a generative framework
+  that achieves 10x spatial super-resolution (downscaling to 1 km) and delivers a 9x inference speedup
+  over pixel-based diffusion models. WDM is a conditional diffusion model that learns the learns the complex
+  structure of precipitation from MRMS radar data directly in the wavelet domain. By focusing on high-frequency
+  wavelet coefficients, it generates exceptionally realistic and detailed 1-km precipitation fields. This
+  wavelet-based approach produces visually superior results with fewer artifacts than pixel-space models,
+  and delivers a significant gains in sampling efficiency. Our results demonstrate that WDM provides a
+  robust solution to the dual challenges of accuracy and speed in geoscience super-resolution, paving
+  the way for more reliable hydrological forecasts.
+significance: 4
+cited_by: 1
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

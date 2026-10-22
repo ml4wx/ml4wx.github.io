@@ -1,0 +1,51 @@
+id: arxiv-2610.06540
+title: 'WaveGSSM: Graph Wave State Space Models for Propagating Spatio-Temporal Patterns'
+authors:
+- Junyou Zhu
+- Fenying Cai
+- Ping Xiong
+- Christian Nauck
+- Langzhou He
+- Chao Gao
+- Jürgen Kurths
+- Frank Hellmann
+date: '2026-10-05'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.06540'
+  openalex: W7220747439
+links:
+  paper: https://arxiv.org/abs/2610.06540
+  pdf: https://arxiv.org/pdf/2610.06540
+topic: global-medium-range
+type: model
+method:
+- gnn
+- other
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Second-order graph state-space model tracks both pattern and motion states; it cuts 1-5 day geopotential
+  RMSE by 20.2% versus a snapshot baseline.
+abstract: Spatio-temporal graph models typically encode each snapshot with a GNN and then connect the
+  resulting representations through a temporal module. This space-then-time design is effective, yet it
+  does not explicitly represent how a pattern moves across the graph. We show empirically that, for a
+  propagating process, the same present field can lead to different futures when its recent rate of change
+  differs, motivating an explicit representation of motion in the predictive state. We introduce WaveGSSM,
+  a second-order graph state-space model that maintains two coupled latent states at each node, one for
+  the current pattern and one for its temporal rate of change. A graph-wave transition updates the motion
+  state through graph interactions and uses it to advance the pattern state, coupling spatial propagation
+  and temporal evolution within a single rollout. We evaluate WaveGSSM on four temporal-graph benchmarks
+  and global weather forecasting. It consistently achieves the best mean performance across the temporal-graph
+  benchmarks and reduces the geopotential RMSE by 20.2% on average for 1- to 5-day weather forecasts relative
+  to a backbone-matched snapshot model, while better preserving large-scale atmospheric patterns.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

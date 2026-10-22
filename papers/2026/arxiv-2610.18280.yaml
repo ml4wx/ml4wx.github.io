@@ -1,0 +1,54 @@
+id: arxiv-2610.18280
+title: 'PING: physics informed graph neural network for advection-diffusion processes with applications
+  to solar power forecasting'
+authors:
+- Jelena Simeunović
+- Baptiste Schubnel
+- Pierre-Jean Alet
+- Pascal Frossard
+- Rafael E. Carrillo
+date: '2026-10-13'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.18280'
+  openalex: W7221776652
+links:
+  paper: https://arxiv.org/abs/2610.18280
+  pdf: https://arxiv.org/pdf/2610.18280
+topic: nowcasting
+topics:
+- applications-impacts
+type: model
+method:
+- gnn
+- physics-constrained
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+- satellite
+status: research
+summary: A physics-informed graph network forecasts advection-diffusion cloud motion on weather station
+  networks, improving intra-day PV power forecasts from satellite and ground data.
+abstract: Advection-diffusion plays an essential role in transport phenomena such as atmospheric and cloud
+  dynamics. Improved forecasting of cloud motion, in turn, enhances solar power production forecasts and
+  facilitates the integration of additional photovoltaic (PV) sources into the power grid. However, both
+  classical numerical models and emerging deep learning approaches face challenges when applied to spatially
+  irregular sensor networks such as those formed by weather stations. In this work, we adopt a graph signal
+  processing perspective and model advection-diffusion particles as signals on a graph to capture the
+  dynamics of these processes. We introduce a Physics-Informed Graph Neural Network (PING) for forecasting
+  future advection-diffusion particle concentrations on irregular grids. The model incorporates a discretized
+  advection-diffusion equation as a soft constraint in the loss function to guide learning toward physically
+  consistent solutions. This model is on par with state of the art models on synthetic and real transport
+  phenomena datasets, including sea surface temperature and cloud index datasets. Furthermore, the PING
+  model is successfully coupled with models for forecasting PV power production. This hybrid approach
+  leverages data fusion from ground-based sensors at PV stations and satellite images with cloud concentration
+  to improve the accuracy of intra-day PV power production.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

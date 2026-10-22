@@ -1,0 +1,57 @@
+id: doi-10.1088-3049-4753-ae7114
+title: How far can we downscale? Resolution limits and physical interpretability of diffusion models for
+  African precipitation
+authors:
+- Jangho Lee
+- Sara Shamekh
+date: '2026-05-21'
+year: 2026
+venue: Machine Learning Earth
+venue_type: journal
+ids:
+  doi: 10.1088/3049-4753/ae7114
+  openalex: W7162011481
+links:
+  paper: https://doi.org/10.1088/3049-4753/ae7114
+  pdf: https://iopscience.iop.org/article/10.1088/3049-4753/ae7114/pdf
+orgs:
+- nyu-m2lines
+topic: downscaling
+topics:
+- xai-uq-physics
+type: model
+method:
+- diffusion
+- cnn
+spatial:
+- regional
+data:
+- era5
+- other
+status: research
+summary: A conditional diffusion model downscales African precipitation and preserves extremes and variance
+  that deterministic networks smooth out; a 0.5° input is found optimal.
+abstract: Accurate high-resolution precipitation data is critical for climate risk assessment in Sub-Saharan
+  Africa, yet global climate models operate at coarse resolutions, failing to capture localized extremes.
+  While deterministic deep learning models offer efficient downscaling, our evaluation shows that minimizing
+  pointwise error inherently penalizes high-frequency features, artificially smoothing precipitation fields
+  and suppressing extremes regardless of architectural complexity. Here, we propose a conditional denoising
+  diffusion model for precipitation downscaling, evaluating its structural realism, physical interpretability,
+  and resolution limits against deterministic baselines. The diffusion model successfully recovers sub-grid
+  variability, preserving near-perfect spatial variance and heavy-tailed extreme event distributions where
+  deterministic approaches fail. Through perturbation-based feature importance analysis, we demonstrate
+  the generative framework acts as a context-aware emulator of atmospheric physics. It dynamically shifts
+  predictor reliance, prioritizing low-level moisture convergence in rugged terrain and dry seasons, while
+  favoring mid-tropospheric dynamic forcing during monsoons. Furthermore, by progressively coarsening
+  inputs from 0.25° to 1.0°, we interrogate generative downscaling limits. As spatial constraints weaken
+  at 1.0°, the model generates unconstrained stochastic false alarms, and the resulting ensemble smoothing
+  directly quantifies predictive spatial uncertainty under severe information loss. A moderate 0.5° input
+  emerges as an optimal balance, providing sufficient structural anchors to maintain both deterministic
+  accuracy and extreme event preservation. Ultimately, this work provides a physically interpretable,
+  resolution-aware framework for generative downscaling, offering a robust strategy for translating coarse
+  climate projections into localized risk assessments.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

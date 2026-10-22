@@ -1,0 +1,59 @@
+id: arxiv-2510.21847
+title: 'SynCast: Synergizing Contradictions in Precipitation Nowcasting via Diffusion Sequential Preference
+  Optimization'
+authors:
+- Kaiyi Xu
+- Junchao Gong
+- Wenlong Zhang
+- Ben Fei
+- Lei Bai
+- Wanli Ouyang
+date: '2025-10-22'
+year: 2025
+venue: IEEE Transactions on Circuits and Systems for Video Technology
+venue_type: journal
+ids:
+  arxiv: '2510.21847'
+  doi: 10.1109/tcsvt.2026.3660882
+  openalex: W7127425107
+links:
+  paper: https://doi.org/10.1109/tcsvt.2026.3660882
+  pdf: https://arxiv.org/pdf/2510.21847
+orgs:
+- shanghai-ai-lab
+topic: nowcasting
+type: model
+method:
+- diffusion
+- other
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: SynCast applies diffusion preference optimization to radar precipitation nowcasting, cutting
+  false alarms first then raising CSI, to resolve the CSI-FAR trade-off.
+abstract: Precipitation nowcasting based on radar echoes plays a crucial role in monitoring extreme weather
+  and supporting disaster prevention. Although deep learning approaches have achieved significant progress,
+  they still face notable limitations. For example, deterministic models tend to produce over-smoothed
+  predictions, which struggle to capture extreme events and fine-scale precipitation patterns. Probabilistic
+  generative models, due to their inherent randomness, often show fluctuating performance across different
+  metrics and rarely achieve consistently optimal results. Furthermore, precipitation nowcasting is typically
+  evaluated using multiple metrics, some of which are inherently conflicting. For instance, there is often
+  a trade-off between the Critical Success Index (CSI) and the False Alarm Ratio (FAR), making it challenging
+  for existing models to deliver forecasts that perform well on both metrics simultaneously. To address
+  these challenges, we introduce preference optimization into precipitation nowcasting for the first time,
+  motivated by the success of reinforcement learning from human feedback in large language models. Specifically,
+  we propose SynCast, a method that employs the two-stage post-training framework of Diffusion Sequential
+  Preference Optimization (Diffusion-SPO), to progressively align conflicting metrics and consistently
+  achieve superior performance. In the first stage, the framework focuses on reducing FAR, training the
+  model to effectively suppress false alarms. Building on this foundation, the second stage further optimizes
+  CSI with constraints that preserve FAR alignment, thereby achieving synergistic improvements across
+  these conflicting metrics.
+significance: 4
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

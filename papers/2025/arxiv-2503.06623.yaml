@@ -1,0 +1,56 @@
+id: arxiv-2503.06623
+title: Transforming Weather Data from Pixel to Latent Space
+authors:
+- Sijie Zhao
+- Feng Liu
+- Xueliang Zhang
+- Hao Chen
+- Tao Han
+- Junchao Gong
+- Ran Tao
+- Pengfeng Xiao
+- Lei Bai
+- Wanli Ouyang
+date: '2025-03-09'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2503.06623'
+links:
+  paper: https://arxiv.org/abs/2503.06623
+  pdf: https://arxiv.org/pdf/2503.06623
+topic: infra-software
+topics:
+- benchmarks-data-eval
+type: model
+method:
+- cnn
+- gan-vae
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Weather Latent Autoencoder compresses ERA5 from 244 TB to 0.43 TB and enables downstream weather
+  tasks in latent space that outperform pixel-space models.
+abstract: The increasing impact of climate change and extreme weather events has spurred growing interest
+  in deep learning for weather research. However, existing studies often rely on weather data in pixel
+  space, which presents several challenges such as smooth outputs in model outputs, limited applicability
+  to a single pressure-variable subset (PVS), and high data storage and computational costs. To address
+  these challenges, we propose a novel Weather Latent Autoencoder (WLA) that transforms weather data from
+  pixel space to latent space, enabling efficient weather task modeling. By decoupling weather reconstruction
+  from downstream tasks, WLA improves the accuracy and sharpness of weather task model results. The incorporated
+  Pressure-Variable Unified Module transforms multiple PVS into a unified representation, enhancing the
+  adaptability of the model in multiple weather scenarios. Furthermore, weather tasks can be performed
+  in a low-storage latent space of WLA rather than a high-storage pixel space, thus significantly reducing
+  data storage and computational costs. Through extensive experimentation, we demonstrate its superior
+  compression and reconstruction performance, enabling the creation of the ERA5-latent dataset with unified
+  representations of multiple PVS from ERA5 data. The compressed full PVS in the ERA5-latent dataset reduces
+  the original 244.34 TB of data to 0.43 TB. The downstream task further demonstrates that task models
+  can apply to multiple PVS with low data costs in latent space and achieve superior performance compared
+  to models in pixel space. Code, ERA5-latent data, and pre-trained models are available at https://anonymous.4open.science/r/Weather-Latent-Autoencoder-8467.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

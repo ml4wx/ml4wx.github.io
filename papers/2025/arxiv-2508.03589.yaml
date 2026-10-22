@@ -1,0 +1,48 @@
+id: arxiv-2508.03589
+title: 'VITA: Variational Pretraining of Transformers for Climate-Robust Crop Yield Forecasting'
+authors:
+- Adib Hasan
+- Mardavij Roozbehani
+- Munther Dahleh
+date: '2025-08-05'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2508.03589'
+links:
+  paper: https://arxiv.org/abs/2508.03589
+  pdf: https://arxiv.org/pdf/2508.03589
+topic: applications-impacts
+type: model
+method:
+- transformer
+timescale:
+- seasonal
+spatial:
+- regional
+data:
+- satellite
+- stations
+status: research
+summary: VITA pretrains transformers on satellite weather data to improve US Corn Belt crop yield forecasts,
+  particularly in extreme years.
+abstract: Accurate crop yield forecasting is essential for global food security. However, current AI models
+  systematically underperform when yields deviate from historical trends. We attribute this to the lack
+  of rich, physically grounded datasets directly linking atmospheric states to yields. To address this,
+  we introduce VITA (Variational Inference Transformer for Asymmetric Data), a variational pretraining
+  framework that learns representations from large satellite-based weather datasets and transfers to the
+  ground-based limited measurements available for yield prediction. VITA is trained using detailed meteorological
+  variables as proxy targets during pretraining and learns to predict latent atmospheric states under
+  a seasonality-aware sinusoidal prior. This allows the model to be fine-tuned using limited weather statistics
+  during deployment. Applied to 763 counties in the US Corn Belt, VITA achieves state-of-the-art performance
+  in predicting corn and soybean yields across all evaluation scenarios, particularly during extreme years,
+  with statistically significant improvements (paired t-test, p < 0.0001). Importantly, VITA outperforms
+  prior frameworks like GNN-RNN without soil data, and larger foundational models (e.g., Chronos-Bolt)
+  with less compute, making it practical for real-world use, especially in data-scarce regions. This work
+  highlights how domain-aware AI design can overcome data limitations and support resilient agricultural
+  forecasting in a changing climate.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

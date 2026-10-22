@@ -1,0 +1,64 @@
+id: arxiv-2507.18378
+title: A comparison of stretched-grid and limited-area modelling for data-driven regional weather forecasting
+authors:
+- Jasper S. Wijnands
+- Michiel Van Ginderachter
+- Bastien François
+- Sophie Buurman
+- Piet Termonia
+- Dieter Van den Bleeken
+date: '2025-07-24'
+year: 2025
+venue: Machine Learning with Applications
+venue_type: journal
+ids:
+  arxiv: '2507.18378'
+  doi: 10.1016/j.mlwa.2026.100887
+  openalex: W7140327015
+links:
+  paper: https://doi.org/10.1016/j.mlwa.2026.100887
+  pdf: https://arxiv.org/pdf/2507.18378
+orgs:
+- knmi
+topic: regional-km-scale
+topics:
+- global-medium-range
+type: evaluation
+method:
+- gnn
+timescale:
+- medium
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: Compares stretched-grid and limited-area graph neural network models in Anemoi for European regional
+  forecasts, finding comparable skill with the stretched grid generalizing better in time.
+abstract: Regional machine learning weather prediction (MLWP) models based on graph neural networks have
+  recently demonstrated remarkable predictive accuracy, outperforming numerical weather prediction models
+  at lower computational costs. In particular, limited-area model (LAM) and stretched-grid model (SGM)
+  approaches have emerged for generating high-resolution regional forecasts, based on initial conditions
+  from a regional (re)analysis. While LAM uses lateral boundaries from an external global model, SGM incorporates
+  a global domain at lower resolution. This study aims to understand how the differences in model design
+  impact relative performance and potential applications. Specifically, the strengths and weaknesses of
+  these two approaches are identified for generating deterministic regional forecasts over Europe. Using
+  the Anemoi framework, models of both types are built by minimally adapting a shared architecture and
+  trained using global and regional reanalyses in a near-identical setup. Several inference experiments
+  have been conducted to explore their relative performance and highlight key differences. Results show
+  that both LAM and SGM are competitive deterministic MLWP models with generally accurate and comparable
+  forecasting performance over the regional domain. Various differences were identified in the performance
+  of the models across applications. LAM is able to successfully exploit high-quality boundary forcings
+  to make predictions within the regional domain and is suitable in contexts where global data is difficult
+  to acquire. SGM is fully self-contained for easier operationalisation, can take advantage of more training
+  data and significantly surpasses LAM in terms of (temporal) generalisability. Our paper can serve as
+  a starting point for meteorological institutes to guide their choice between LAM and SGM in developing
+  an operational data-driven forecasting system.
+significance: 6
+cited_by: 2
+score: 59
+highlight: true
+highlight_reason: Direct comparison of stretched-grid and limited-area GNN regional forecasting in Anemoi;
+  useful guidance for regional MLWP design.
+added: '2026-10-22'
+source: backfill

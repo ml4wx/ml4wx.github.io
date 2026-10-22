@@ -1,0 +1,57 @@
+id: doi-10.3390-app14051871
+title: Research on Short-Term Prediction Methods for Small-Scale Three-Dimensional Wind Fields
+authors:
+- Yuzhao Ma
+- Haoran Han
+- Xu Tang
+- Pak Wai Chan
+date: '2024-02-24'
+year: 2024
+venue: Applied Sciences
+venue_type: journal
+ids:
+  doi: 10.3390/app14051871
+  openalex: W4392163795
+links:
+  paper: https://doi.org/10.3390/app14051871
+  pdf: https://www.mdpi.com/2076-3417/14/5/1871/pdf?version=1708942014
+topic: downscaling
+topics:
+- regional-km-scale
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+- other
+status: research
+summary: ConvLSTM-DSConvGRU predicts mesoscale WRF inflow boundaries that drive CFD, giving short-term
+  small-scale 3D wind field forecasts validated against stations.
+abstract: 'The accurate prediction of small-scale three-dimensional wind fields is of great practical
+  significance for aviation safety, wind power generation, and related fields. This study proposes a novel
+  method for predicting small-scale three-dimensional wind fields by combining the mesoscale Weather Research
+  and Forecasting (WRF) model with Computational Fluid Dynamics (CFD). The method consists of three components:
+  the WRF module, the hybrid neural network prediction module, and the CFD module. First, mesoscale meteorological
+  fields are simulated using the WRF module to establish a historical inflow boundary dataset for the
+  CFD domain. Next, deep separable convolutions are incorporated, and convolutional long short-term memory
+  (ConvLSTM) is combined with a deep separable convolution-gated recurrent unit (DSConvGRU) to construct
+  a hybrid neural network prediction module named ConvLSTM-DSConvGRU. This module is employed for predicting
+  inflow boundary data. Finally, the predicted inflow boundary conditions drive the CFD module to predict
+  small-scale three-dimensional wind fields. The effectiveness of the WRF and CFD downscaling coupling
+  method was validated using observed data from meteorological stations within the simulated domain, along
+  with statistical indicators of errors. Additionally, a comparative evaluation was conducted between
+  the proposed hybrid network model and the four commonly used spatiotemporal prediction models to assess
+  its prediction performance. The results demonstrate that our proposed wind field prediction method achieves
+  accurate simulation and short-term prediction of small-scale three-dimensional wind fields, and the
+  hybrid network model exhibits comprehensive advantages in terms of model complexity and prediction accuracy.'
+significance: 2
+cited_by: 4
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

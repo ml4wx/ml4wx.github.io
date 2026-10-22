@@ -1,0 +1,55 @@
+id: arxiv-2311.16450
+title: Typhoon Intensity Prediction with Vision Transformer
+authors:
+- Huanxin Chen
+- Pengshuai Yin
+- Huichou Huang
+- Qingyao Wu
+- Ruirui Liu
+- Xiatian Zhu
+date: '2023-11-28'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2311.16450'
+  openalex: W4389156618
+links:
+  paper: https://arxiv.org/abs/2311.16450
+  pdf: https://arxiv.org/pdf/2311.16450
+  code: https://github.com/chen-huanxin/Tint
+topic: extremes-hazards
+topics:
+- observations-remote-sensing
+type: model
+method:
+- transformer
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Tint, a vision transformer on satellite images, estimates typhoon intensity with global receptive
+  fields and outperforms CNN baselines on a public typhoon benchmark.
+abstract: Predicting typhoon intensity accurately across space and time is crucial for issuing timely
+  disaster warnings and facilitating emergency response. This has vast potential for minimizing life losses
+  and property damages as well as reducing economic and environmental impacts. Leveraging satellite imagery
+  for scenario analysis is effective but also introduces additional challenges due to the complex relations
+  among clouds and the highly dynamic context. Existing deep learning methods in this domain rely on convolutional
+  neural networks (CNNs), which suffer from limited per-layer receptive fields. This limitation hinders
+  their ability to capture long-range dependencies and global contextual knowledge during inference. In
+  response, we introduce a novel approach, namely "Typhoon Intensity Transformer" (Tint), which leverages
+  self-attention mechanisms with global receptive fields per layer. Tint adopts a sequence-to-sequence
+  feature representation learning perspective. It begins by cutting a given satellite image into a sequence
+  of patches and recursively employs self-attention operations to extract both local and global contextual
+  relations between all patch pairs simultaneously, thereby enhancing per-patch feature representation
+  learning. Extensive experiments on a publicly available typhoon benchmark validate the efficacy of Tint
+  in comparison with both state-of-the-art deep learning and conventional meteorological methods. Our
+  code is available at https://github.com/chen-huanxin/Tint.
+significance: 4
+cited_by: 2
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

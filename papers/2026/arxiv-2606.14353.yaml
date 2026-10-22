@@ -1,0 +1,56 @@
+id: arxiv-2606.14353
+title: Can Deep Neural Networks Improve Compression of Very Large Scientific Data?
+authors:
+- Muhannad Alhumaidi
+- Guozhong Li
+- Spiros Skiadopoulos
+- Panos Kalnis
+date: '2026-06-12'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.14353'
+  openalex: W7164866460
+links:
+  paper: https://arxiv.org/abs/2606.14353
+  pdf: https://arxiv.org/pdf/2606.14353
+topic: infra-software
+topics:
+- foundation-models
+- benchmarks-data-eval
+type: evaluation
+method:
+- transformer
+- gnn
+- gan-vae
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Tests ML forecasters (CRA5, GraphCast, Aurora) as predictors in error-bounded ERA5 compression;
+  they improve accuracy but not overall compression ratio.
+abstract: 'Error-bounded lossy compression is a fundamental technique for managing the rapidly growing
+  volumes of scientific data produced by modern simulations and observational instruments. Most state-of-the-art-compressors
+  follow a prediction-residual paradigm, where compression effectiveness depends on the quality of the
+  predictor: more accurate predictions generate smaller residuals that are easier to compress. This observation
+  raises a question: can modern machine learning models serve as superior predictors for scientific data
+  compression? Answering this question directly is challenging because developing compression-specific
+  ML predictors requires substantial resources. Instead, we leverage the climate domain where highly accurate
+  pretrained weather forecasting foundation models already exist, making them an ideal testbed. We present
+  a framework that integrates spatial and temporal deep learning models into a conventional error-bounded
+  compression pipeline. The framework supports auto-regressive forecasting models and avoids error accumulation.
+  Using ERA5 climate data as a representative large-scale scientific dataset, we evaluate three distinct
+  ML predictors: a VAEformer-based codec (CRA5), a graph neural network forecaster (GraphCast), and a
+  vision-transformer forecaster (Aurora), against the state-of-the-art compressor SZ3.1 under identical
+  quantization and entropy-coding backends. Our evaluation over approximately 1.7 TB of data reveals a
+  surprising result: although ML predictors generate more accurate predictions and can improve reconstruction
+  quality by up to 91% while achieving up to 9.6x higher compression ratios for highly predictable variables,
+  they do not improve overall dataset-level compression ratio. We show that prediction accuracy alone
+  is insufficient: the spatial structure of the resulting residuals plays a decisive role in entropy coding
+  efficiency.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

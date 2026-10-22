@@ -1,0 +1,44 @@
+id: arxiv-2610.09715
+title: 'EC-EarthFlow: Probabilistic emulation of daily transient global climate model simulations with
+  flow matching'
+authors:
+- Kirien Whan
+- Nikolaj T. Mücke
+- Karin van der Wiel
+date: '2026-10-07'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.09715'
+  openalex: W7221035641
+links:
+  paper: https://arxiv.org/abs/2610.09715
+  pdf: https://arxiv.org/pdf/2610.09715
+topic: climate-emulation
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: A flow matching emulator of daily EC-Earth3 temperature reproduces variability, annual cycle
+  and trends at lower cost and remains stable over long autoregressive rollouts.
+abstract: We introduce EC-EarthFlow, a generative flow matching model that emulates simulations from the
+  physical climate model EC-Earth3. The model is trained on transient simulations from EC-Earth3 (1950-2166,
+  SSP2-4.5) to predict the day ahead temperature field from the previous days temperature as well as annual
+  mean temperature. Predictions are made auto-regressively with rollout periods of between a month and
+  an extended season. Using only this variable of interest, we are able to reproduce the daily variability,
+  spatial patterns, annual cycle and long-term trend from EC-Earth3 at a substantially lower computational
+  cost than the physical model. We demonstrate that EC-EarthFlow is stable for long inference periods,
+  and that it can learn the physical relationships as simulated in EC-Earth3.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

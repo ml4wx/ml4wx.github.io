@@ -1,0 +1,54 @@
+id: doi-10.3390-meteorology5030026
+title: Deep Learning for CAPE Bias Correction in the NOAA Global Forecast System
+authors:
+- Wei Li
+- Linlin Cui
+- Jun Wang
+- Fanglin Yang
+- Jongil Han
+date: '2026-09-05'
+year: 2026
+venue: Meteorology
+venue_type: journal
+ids:
+  doi: 10.3390/meteorology5030026
+  openalex: W7211914663
+links:
+  paper: https://doi.org/10.3390/meteorology5030026
+orgs:
+- noaa
+topic: post-processing
+topics:
+- extremes-hazards
+type: model
+method:
+- diffusion
+- cnn
+timescale:
+- medium
+spatial:
+- global
+data:
+- nwp-analysis
+status: research
+summary: CorrDiff diffusion bias correction removes the GFS low-CAPE bias up to 120 h, producing sharper
+  extremes than a U-Net that over-smooths.
+abstract: Accurate forecasting of Convective Available Potential Energy (CAPE) is critical for severe
+  weather prediction. However, the operational GFS model exhibits a persistent low-CAPE bias. In this
+  work, we apply a two-step regression–diffusion model (NVIDIA CorrDiff) to address this issue. Our results
+  indicate that while a standard U-Net can successfully reduce the bulk systematic bias, the generated
+  output remains overly smoothed. This occurs because, for data with long-tailed statistical distributions
+  such as CAPE, standard models trained on mean squared error fail to capture rare, high-magnitude events.
+  In contrast, generative diffusion models can reproduce realistic, small-scale features similar to the
+  ground truth by learning to reverse a noise-corruption process through a series of iterative denoising
+  steps. Our study begins with bias correction for the 24 h forecast. We then extend this by applying
+  the model—trained solely on 24 h data—to correct forecasts of up to 120 h. This strategy leverages our
+  finding that the GFS forecast bias is highly persistent over time. Furthermore, our examination of CAPE’s
+  joint Probability Density Functions emphasizes the necessity of matching machine learning models to
+  the target variable’s statistical properties. Ultimately, the effectiveness of CorrDiff highlights its
+  potential for other challenging applications involving small-scale phenomena with long-tailed distributions.
+significance: 3
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

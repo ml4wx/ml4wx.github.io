@@ -1,0 +1,46 @@
+id: arxiv-2604.13947
+title: Heuristic Style Transfer for Real-Time, Efficient Weather Attribute Detection
+authors:
+- Hamed Ouattara
+- Pierre Duthon
+- Pascal Houssam Salmane
+- Frédéric Bernardin
+- Omar Ait Aider
+date: '2026-04-15'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2604.13947'
+  openalex: W7154585141
+links:
+  paper: https://arxiv.org/abs/2604.13947
+  pdf: https://arxiv.org/pdf/2604.13947
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+data:
+- other
+status: research
+summary: Lightweight multi-task CNN and PatchGAN models classify weather type and 11 attributes from RGB
+  images, with a released 503,875-image dataset and F1 above 96%.
+abstract: 'We present lightweight and efficient architectures to detect weather conditions from RGB images,
+  predicting the weather type (sunny, rain, snow, fog) and 11 complementary attributes such as intensity,
+  visibility, and ground condition, for a total of 53 classes across the tasks. This work examines to
+  what extent weather conditions manifest as variations in visual style. We investigate style-inspired
+  techniques, including Gram matrices, a truncated ResNet-50 targeting lower and intermediate layers,
+  and PatchGAN-style architectures, within a multi-task framework with attention mechanisms. Two families
+  are introduced: RTM (ResNet50-Truncated-MultiTasks) and PMG (PatchGAN-MultiTasks-Gram), together with
+  their variants. Our contributions include automation of Gram-matrix computation, integration of PatchGAN
+  into supervised multi-task learning, and local style capture through local Gram for improved spatial
+  coherence. We also release a dataset of 503,875 images annotated with 12 weather attributes under a
+  Creative Commons Attribution (CC-BY) license. The models achieve F1 scores above 96 percent on our internal
+  test set and above 78 percent in zero-shot evaluation on several external datasets, confirming their
+  generalization ability. The PMG architecture, with fewer than 5 million parameters, runs in real time
+  with a small memory footprint, making it suitable for embedded systems. The modular design of the models
+  also allows style-related or weather-related tasks to be added or removed as needed.'
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

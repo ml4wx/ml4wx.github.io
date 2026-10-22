@@ -1,0 +1,56 @@
+id: arxiv-2402.07851
+title: Comparing skill of historical rainfall data based monsoon rainfall prediction in India with NWP
+  forecasts
+authors:
+- Apoorva Narula
+- Aastha Jain
+- Jatin Batra
+- MN Rajeevan
+- Sandeep Juneja
+date: '2024-02-12'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2402.07851'
+  openalex: W4391801237
+links:
+  paper: https://arxiv.org/abs/2402.07851
+  pdf: https://arxiv.org/pdf/2402.07851
+topic: local-forecasting
+type: model
+method:
+- transformer
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+- nwp-analysis
+- stations
+status: research
+summary: Transformer Autoformers forecast daily gridded Indian rainfall at 1 and 3 days, reporting about
+  22% and 43% lower error than ECMWF HRES and NCEP for one-day forecasts.
+abstract: The Indian summer monsoon is a highly complex and critical weather system that directly affects
+  the livelihoods of over a billion people across the Indian subcontinent. Accurate short-term forecasting
+  remains a major scientific challenge due to the monsoon's intrinsic nonlinearity and its sensitivity
+  to multi-scale drivers, including local land-atmosphere interactions and large-scale ocean-atmosphere
+  phenomena. In this study, we address the problem of forecasting daily rainfall across India during the
+  summer months, focusing on both one-day and three-day lead times. We use Autoformers - deep learning
+  transformer-based architectures designed for time series forecasting. These are trained on historical
+  gridded precipitation data from the Indian Meteorological Department (1901--2023) at spatial resolutions
+  of $0.25^\circ \times 0.25^\circ$, as well as $1^\circ \times 1^\circ$. The models also incorporate
+  auxiliary meteorological variables from ECMWFs reanalysis datasets, namely, cloud cover, humidity, temperature,
+  soil moisture, vorticity, and wind speed. Forecasts at $0.25^\circ \times 0.25^\circ$ are benchmarked
+  against ECMWFs High-Resolution Ensemble System (HRES), widely regarded as the most accurate numerical
+  weather predictor, and at $1^\circ \times 1^\circ $ with those from National Centre for Environmental
+  Prediction (NCEP). We conduct both nationwide evaluations and localized analyses for major Indian cities.
+  Our results indicate that transformer-based deep learning models consistently outperform both HRES and
+  NCEP, as well as other climatological baselines. Specifically, compared to our model, forecasts from
+  HRES and NCEP model have about 22\% and 43\% higher error, respectively, for a single day prediction,
+  and over 27\% and 66\% higher error respectively, for a three day prediction.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

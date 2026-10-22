@@ -1,0 +1,57 @@
+id: arxiv-2510.21796
+title: A Physics-Guided AI Cascaded Corrector Model Significantly Extends Madden-Julian Oscillation Prediction
+  Skill
+authors:
+- Xiao Zhou
+- Yuze Sun
+- Jie Wu
+- Xiaomeng Huang
+date: '2025-10-20'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2510.21796'
+  doi: 10.21203/rs.3.rs-9352677/v1
+  openalex: W7154939015
+links:
+  paper: https://arxiv.org/abs/2510.21796
+  pdf: https://arxiv.org/pdf/2510.21796
+orgs:
+- cma
+- tsinghua-university
+topic: s2s-seasonal
+topics:
+- post-processing
+type: model
+method:
+- cnn
+- rnn
+- physics-constrained
+timescale:
+- s2s
+spatial:
+- global
+data:
+- nwp-analysis
+- era5
+status: research
+summary: Physics-guided U-Net and LSTM post-processor extends MJO bivariate skill above 0.5 by 2-8 days
+  across CMA, ECMWF and NCEP forecasts.
+abstract: The Madden-Julian Oscillation (MJO) is an important driver of global weather and climate extremes,
+  but its prediction in operational dynamical models remains challenging, with skillful forecasts typically
+  limited to 3-4 weeks. Here, we introduce a novel deep learning framework, the Physics-guided Cascaded
+  Corrector for MJO (PCC-MJO), which acts as a universal post-processor to correct MJO forecasts from
+  dynamical models. This two-stage model first employs a physics-informed 3D U-Net to correct spatial-temporal
+  field errors, then refines the MJO's RMM index using an LSTM optimized for forecast skill. When applied
+  to three different operational forecasts from CMA, ECMWF and NCEP, our unified framework consistently
+  extends the skillful forecast range (bivariate correlation > 0.5) by 2-8 days. Crucially, the model
+  effectively mitigates the "Maritime Continent barrier", enabling more realistic eastward propagation
+  and amplitude. Explainable AI analysis quantitatively confirms that the model's decision-making is spatially
+  congruent with observed MJO dynamics (correlation > 0.93), demonstrating that it learns physically meaningful
+  features rather than statistical fittings. Our work provides a promising physically consistent, computationally
+  efficient, and highly generalizable pathway to break through longstanding barriers in subseasonal forecasting.
+significance: 5
+score: 30
+highlight: false
+added: '2026-10-22'
+source: backfill

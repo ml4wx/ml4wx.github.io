@@ -1,0 +1,62 @@
+id: arxiv-2402.18484
+title: A non-intrusive machine learning framework for debiasing long-time coarse resolution climate simulations
+  and quantifying rare events statistics
+authors:
+- Benedikt Barthel Sorensen
+- Alexis Charalampopoulos
+- Shixuan Zhang
+- Bryce Harrop
+- Ruby Leung
+- Themistoklis Sapsis
+date: '2024-02-28'
+year: 2024
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  arxiv: '2402.18484'
+  doi: 10.1029/2023ms004122
+  openalex: W4393203640
+links:
+  paper: https://doi.org/10.1029/2023ms004122
+  pdf: https://arxiv.org/pdf/2402.18484
+orgs:
+- mit
+topic: post-processing
+topics:
+- climate-emulation
+type: model
+method:
+- other
+timescale:
+- climate
+spatial:
+- global
+data:
+- era5
+- cmip
+status: research
+summary: Neural-network correction operators, trained on nudged coarse-model runs, debias E3SM climate
+  output to match 36-year ERA5 statistics and extend rare-event quantification beyond the training record.
+abstract: Due to the rapidly changing climate, the frequency and severity of extreme weather is expected
+  to increase over the coming decades. As fully-resolved climate simulations remain computationally intractable,
+  policy makers must rely on coarse-models to quantify risk for extremes. However, coarse models suffer
+  from inherent bias due to the ignored "sub-grid" scales. We propose a framework to non-intrusively debias
+  coarse-resolution climate predictions using neural-network (NN) correction operators. Previous efforts
+  have attempted to train such operators using loss functions that match statistics. However, this approach
+  falls short with events that have longer return period than that of the training data, since the reference
+  statistics have not converged. Here, the scope is to formulate a learning method that allows for correction
+  of dynamics and quantification of extreme events with longer return period than the training data. The
+  key obstacle is the chaotic nature of the underlying dynamics. To overcome this challenge, we introduce
+  a dynamical systems approach where the correction operator is trained using reference data and a coarse
+  model simulation nudged towards that reference. The method is demonstrated on debiasing an under-resolved
+  quasi-geostrophic model and the Energy Exascale Earth System Model (E3SM). For the former, our method
+  enables the quantification of events that have return period two orders longer than the training data.
+  For the latter, when trained on 8 years of ERA5 data, our approach is able to correct the coarse E3SM
+  output to closely reflect the 36-year ERA5 statistics for all prognostic variables and significantly
+  reduce their spatial biases.
+significance: 4
+cited_by: 13
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

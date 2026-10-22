@@ -1,0 +1,60 @@
+id: arxiv-2407.04882
+title: Improving ensemble extreme precipitation forecasts using generative artificial intelligence
+authors:
+- Yingkai Sha
+- Ryan A. Sobash
+- David John Gagne
+date: '2024-07-05'
+year: 2024
+venue: Artificial Intelligence for the Earth Systems, 4(2), p.e240063 (2025)
+venue_type: journal
+ids:
+  arxiv: '2407.04882'
+  doi: 10.1175/aies-d-24-0063.1
+  openalex: W4410115988
+links:
+  paper: https://arxiv.org/abs/2407.04882
+  pdf: https://arxiv.org/pdf/2407.04882
+orgs:
+- ncar
+topic: post-processing
+topics:
+- extremes-hazards
+- probabilistic-ensembles
+type: model
+method:
+- transformer
+- diffusion
+timescale:
+- short
+- medium
+spatial:
+- regional
+data:
+- nwp-analysis
+- other
+status: research
+summary: A ViT bias-correction stage plus latent diffusion model enlarges GEFS precipitation ensembles
+  over CONUS, improving CRPSS and Brier skill for extreme precipitation out to day 6.
+abstract: An ensemble post-processing method is developed to improve the probabilistic forecasts of extreme
+  precipitation events across the conterminous United States (CONUS). The method combines a 3-D Vision
+  Transformer (ViT) for bias correction with a Latent Diffusion Model (LDM), a generative Artificial Intelligence
+  (AI) method, to post-process 6-hourly precipitation ensemble forecasts and produce an enlarged generative
+  ensemble that contains spatiotemporally consistent precipitation trajectories. These trajectories are
+  expected to improve the characterization of extreme precipitation events and offer skillful multi-day
+  accumulated and 6-hourly precipitation guidance. The method is tested using the Global Ensemble Forecast
+  System (GEFS) precipitation forecasts out to day 6 and is verified against the Climate-Calibrated Precipitation
+  Analysis (CCPA) data. Verification results indicate that the method generated skillful ensemble members
+  with improved Continuous Ranked Probabilistic Skill Scores (CRPSSs) and Brier Skill Scores (BSSs) over
+  the raw operational GEFS and a multivariate statistical post-processing baseline. It showed skillful
+  and reliable probabilities for events at extreme precipitation thresholds. Explainability studies were
+  further conducted, which revealed the decision-making process of the method and confirmed its effectiveness
+  on ensemble member generation. This work introduces a novel, generative-AI-based approach to address
+  the limitation of small numerical ensembles and the need for larger ensembles to identify extreme precipitation
+  events.
+significance: 5
+cited_by: 3
+score: 55
+highlight: false
+added: '2026-10-22'
+source: backfill

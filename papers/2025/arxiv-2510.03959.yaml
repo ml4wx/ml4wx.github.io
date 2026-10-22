@@ -1,0 +1,53 @@
+id: arxiv-2510.03959
+title: 'Operational early warning of thunderstorm-driven power outages from open data: a two-stage machine
+  learning approach'
+authors:
+- Iryna Stanishevska
+- Seth Guikema
+date: '2025-10-04'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2510.03959'
+  openalex: W4414970509
+links:
+  paper: https://arxiv.org/abs/2510.03959
+  pdf: https://arxiv.org/pdf/2510.03959
+  code: https://github.com/IrynaStanishevska/peak-outage-forecasting-
+topic: applications-impacts
+topics:
+- extremes-hazards
+type: model
+method:
+- rnn
+- classical-ml
+timescale:
+- short
+spatial:
+- regional
+data:
+- stations
+- other
+status: research
+summary: A two-stage logistic-gate and LSTM model using only public METAR and outage data gives 48-hour
+  warnings of Michigan thunderstorm outages, detecting more peaks with one extra false alarm.
+abstract: Thunderstorm-driven power outages are difficult to predict because most storms do not cause
+  damage, convective processes occur rapidly and chaotically, and the available public data are noisy
+  and incomplete. Severe convective storms now account for a large and rising share of U.S. weather losses,
+  yet thunderstorm-induced outages remain understudied. We develop a 48-hour early-warning model for summer
+  thunderstorm-related outages in Michigan using only open-source outage (EAGLE-I) and weather (METAR)
+  data. Relative to prior work, we (i) rely solely on public data, (ii) preserve convective extremes from
+  a sparse station network via parameter-specific kriging and causal spatiotemporal features, and (iii)
+  use a multi-level LSTM-based architecture evaluated on event-centric peak metrics. The pipeline builds
+  rolling and k-NN inverse-distance aggregates to capture moisture advection, wind shifts, and pressure
+  drops. A two-stage design uses a logistic gate followed by a long short-term memory (LSTM) regressor
+  to filter routine periods and limit noise exposure. Evaluation focuses on state-level peaks of at least
+  50,000 customers without power, using hits, misses, false alarms, and peak-conditional MASE (cMASE)
+  within 48-hour windows, with uncertainty quantified by block bootstrapping. On the test sample, the
+  Two-Stage model detects more peaks with only one additional false alarm and reduces cMASE near peaks,
+  providing event-focused early warnings without the utility-specific data.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

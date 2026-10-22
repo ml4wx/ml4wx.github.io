@@ -1,0 +1,56 @@
+id: arxiv-2411.10010
+title: 'DeepMedcast: A Deep Learning Method for Generating Intermediate Weather Forecasts among Multiple
+  NWP Models'
+authors:
+- Atsushi Kudo
+date: '2024-11-15'
+year: 2024
+venue: Journal of the Meteorological Society of Japan Ser II
+venue_type: journal
+ids:
+  arxiv: '2411.10010'
+  doi: 10.2151/jmsj.2025-031
+  openalex: W4411631678
+links:
+  paper: https://doi.org/10.2151/jmsj.2025-031
+  pdf: https://arxiv.org/pdf/2411.10010
+orgs:
+- jma
+topic: post-processing
+topics:
+- global-medium-range
+type: model
+method:
+- cnn
+timescale:
+- short
+- medium
+spatial:
+- global
+data:
+- nwp-analysis
+status: pre-operational
+summary: DeepMedcast generates intermediate NWP forecasts that keep cyclones and fronts aligned with the
+  multi-model mean, and is more accurate than the input models.
+abstract: 'Numerical weather prediction (NWP) centers around the world operate a variety of NWP models.
+  In addition, recent advances in AI-driven NWP models have further increased the availability of NWP
+  outputs. While this expansion holds the potential to improve forecast accuracy, it raises a critical
+  question: which prediction is the most plausible? If the NWP models have comparable accuracy, it is
+  impossible to determine in advance which one is the best. Traditional approaches, such as ensemble or
+  weighted averaging, combine multiple NWP outputs to produce a single forecast with improved accuracy.
+  However, they often result in meteorologically unrealistic and uninterpretable outputs, such as the
+  splitting of tropical cyclone centers or frontal boundaries into multiple distinct systems. To address
+  this issue, we propose DeepMedcast, a deep learning method that generates intermediate forecasts between
+  two or more NWP outputs. Unlike averaging, DeepMedcast provides predictions in which meteorologically
+  significant features -- such as the locations of tropical cyclones, extratropical cyclones, fronts,
+  and shear lines -- approximately align with the arithmetic mean of the corresponding features predicted
+  by the input NWP models, without distorting meteorological structures. We demonstrate the capability
+  of DeepMedcast through case studies and verification results, showing that it produces realistic and
+  interpretable forecasts with higher accuracy than the input NWP models. By providing plausible intermediate
+  forecasts, DeepMedcast can significantly contribute to the efficiency and standardization of operational
+  forecasting tasks, including general, marine, and aviation forecasts.'
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

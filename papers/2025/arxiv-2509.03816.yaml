@@ -1,0 +1,65 @@
+id: arxiv-2509.03816
+title: 'Finetuning AI Foundation Models to Develop Subgrid-Scale Parameterizations: A Case Study on Atmospheric
+  Gravity Waves'
+authors:
+- Aman Gupta
+- Aditi Sheshadri
+- Sujit Roy
+- Johannes Schmude
+- Vishal Gaur
+- Wei Ji Leong
+- Manil Maskey
+- Rahul Ramachandran
+date: '2025-09-04'
+year: 2025
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  arxiv: '2509.03816'
+  doi: 10.1029/2025ms005075
+  openalex: W4416244145
+links:
+  paper: https://doi.org/10.1029/2025ms005075
+  pdf: https://arxiv.org/pdf/2509.03816
+orgs:
+- ibm-research
+- nasa
+- stanford
+topic: hybrid-parameterization
+topics:
+- foundation-models
+type: model
+method:
+- transformer
+- cnn
+timescale:
+- climate
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Fine-tunes the Prithvi WxC foundation model into a gravity-wave subgrid parameterization that
+  beats an Attention U-Net baseline, with Hellinger distance 0.06 versus 0.11.
+abstract: Global climate models parameterize a range of atmospheric-oceanic processes like gravity waves,
+  clouds, moist convection, and turbulence that cannot be sufficiently resolved. These subgrid-scale closures
+  for unresolved processes are a leading source of model uncertainty. Here, we present a new approach
+  to developing machine learning parameterizations of small-scale climate processes by fine-tuning a pre-trained
+  AI foundation model (FM). FMs are largely unexplored in climate research. A pre-trained encoder-decoder
+  from a 2.3 billion parameter FM (NASA and IBM Research's Prithvi WxC) -- which contains a latent probabilistic
+  representation of atmospheric evolution -- is fine-tuned (or reused) to create a deep learning parameterization
+  for atmospheric gravity waves (GWs). The parameterization captures GW effects for a coarse-resolution
+  climate model by learning the fluxes from an atmospheric reanalysis with 10 times finer resolution.
+  A comparison of monthly averages and instantaneous evolution with a machine learning model baseline
+  (an Attention U-Net) reveals superior predictive performance of the FM parameterization throughout the
+  atmosphere, even in regions excluded from pre-training. This performance boost is quantified using the
+  Hellinger distance, which is 0.11 for the baseline and 0.06 for the fine-tuned model. Our findings emphasize
+  the versatility and reusability of FMs, which could be used to accomplish a range of atmosphere- and
+  climate-related applications, leading the way for the creation of observations-driven and physically
+  accurate parameterizations for more earth-system processes.
+significance: 5
+cited_by: 3
+score: 55
+highlight: false
+added: '2026-10-22'
+source: backfill

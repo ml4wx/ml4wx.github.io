@@ -1,0 +1,51 @@
+id: arxiv-2606.06348
+title: Performance Evaluation of GraphCast for Medium-Range Weather Forecasting over Brazil
+authors:
+- Wolfgang R. Rowell
+- Lucas S. Kupssinskü
+date: '2026-06-04'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.06348'
+  openalex: W7163678882
+links:
+  paper: https://arxiv.org/abs/2606.06348
+  pdf: https://arxiv.org/pdf/2606.06348
+topic: global-medium-range
+type: evaluation
+method:
+- gnn
+timescale:
+- medium
+- short
+spatial:
+- regional
+data:
+- era5
+- nwp-analysis
+status: pre-operational
+summary: Evaluates operational GraphCast against ECMWF IFS HRES over four Brazilian sub-regions, finding
+  GraphCast lags at days 2-7 for Z500 in winter but leads in extended range.
+abstract: The paradigm of global weather forecasting is rapidly shifting with the emergence of Machine
+  Learning Weather Prediction models (MLWP). While these data-driven architectures demonstrate remarkable
+  global skill, regional benchmarks in the Global South remain scarce, leaving their efficacy in complex,
+  highly convective environments largely unverified. This study evaluates the performance of GraphCast
+  operational against the deterministic ECMWF IFS HRES as baseline across four distinct Brazilian climatic
+  sub-regions. Utilizing a scalable, cloud-native pipeline and the WeatherBench-X framework for benchmarking
+  weather models, we assess selected tropospheric variables ($T_{850}$, $Q_{850}$, $Z_{500}$) over four
+  selected seasonal windows, employing the operational IFS analysis as the ground truth to calculate the
+  statistical metrics for both models. Results reveal a regime-dependent skill profile. During the austral
+  winter, GraphCast underperforms in the medium range (lead days 2-7) for $Z_{500}$ when resolving fast-propagating
+  baroclinic systems over southern Brazil, but regains an advantage in the extended range, where its inherent
+  smoothing of chaotic small-scale variability becomes beneficial under deterministic skill metrics. Conversely,
+  during the austral summer wet season, GraphCast accurately captures large-scale moisture transport while
+  intrinsically dampening the high-frequency convective variability that degrades deterministic NWP temperature
+  forecasts. These findings establish a baseline for Brazil and define the specific physical boundaries
+  that will guide future ``tropicalization'' efforts, aiming to optimize these foundational AI models
+  for regional resilience.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

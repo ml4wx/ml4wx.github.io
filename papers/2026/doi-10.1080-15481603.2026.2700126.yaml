@@ -1,0 +1,57 @@
+id: doi-10.1080-15481603.2026.2700126
+title: Integrating local spatial outliers into context-aware spatial prediction models
+authors:
+- JINYU MENG
+- Ziqin Zheng
+- Yongze Song
+date: '2026-07-24'
+year: 2026
+venue: GIScience & Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1080/15481603.2026.2700126
+  openalex: W7171133418
+links:
+  paper: https://doi.org/10.1080/15481603.2026.2700126
+orgs:
+- nuist
+topic: downscaling
+topics:
+- post-processing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- era5
+- other
+status: research
+summary: LOCA combines local spatial outliers with stratified machine-learning models for precipitation
+  prediction in Qinghai, reaching R² 0.858 in block cross-validation.
+abstract: 'Improving spatial prediction remains a key challenge in geographical and environmental modeling,
+  particularly in regions with strong spatial heterogeneity. This study proposes a local-outlier-based
+  context-aware model, named LOCA, for precipitation spatial prediction. The novelty of LOCA lies not
+  in spatial stratification or local modeling alone, but in formalizing local outliers of explanatory
+  variables as continuous spatial contextual predictors and integrating them with spatial stratification
+  and stratum-specific machine-learning models. Unlike conventional approaches that mainly treat outliers
+  as errors or noise, LOCA uses positive and negative departures from the surrounding spatial background
+  to represent local anomaly information. The model was evaluated through a case study of precipitation
+  prediction in Qinghai Province, China, using CRU TS precipitation data, ERA5 meteorological variables,
+  and topographic data for 2022. Because the target precipitation product was derived from CRU TS at 0.5°
+  resolution, this case study should be interpreted as a statistical downscaling and fine-resolution spatial
+  prediction experiment rather than direct validation against independent 1 km precipitation observations.
+  K-means, Gaussian mixture model, and spectral clustering were used for spatial stratification, and multiple
+  machine-learning models were compared within different strata. Model performance was assessed using
+  spatial block cross-validation and compared with global machine-learning models, stratified context-aware
+  models without local outlier features, and additional spatial reference models. The best-performing
+  configuration, GMM-based LOCA, achieved an R2 of 0.858 ± 0.125, RMSE of 77.67 ± 15.43, and MAE of 57.12
+  ± 14.44. The improvement was associated with two complementary mechanisms: spatial stratification enhanced
+  regional adaptability, while local outlier-derived features provided supplementary information on local
+  spatial contrasts. These findings suggest that explanatory-variable local outliers can provide useful
+  contextual information for statistical downscaling and spatial prediction in heterogeneous environments.'
+significance: 2
+score: 18
+highlight: false
+added: '2026-10-22'
+source: backfill

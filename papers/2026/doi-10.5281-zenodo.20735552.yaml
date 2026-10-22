@@ -1,0 +1,77 @@
+id: doi-10.5281-zenodo.20735552
+title: MOIRAI Deliverable 2.1 Statistical downscaling of climate projections (REVIEW PENDING )
+authors:
+- Konstantinos V. Varotsos
+- Ioannis Lemesios
+- Georgios Katavouta
+- Myrto Gratsea
+- Christos Giannakopoulos
+date: '2026-06-17'
+year: 2026
+venue: Zenodo (CERN European Organization for Nuclear Research)
+venue_type: preprint
+ids:
+  doi: 10.5281/zenodo.20735552
+  openalex: W7165169686
+links:
+  paper: https://doi.org/10.5281/zenodo.20735552
+topic: downscaling
+type: model
+method:
+- classical-ml
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+- other
+status: research
+summary: Statistical downscaling framework bias-adjusts MPI-ESM CMIP6 fields with CDF-t and disaggregates
+  them to 3-hourly using XGBoost, producing atmospheric forcing for regional ocean models.
+abstract: This deliverable presents the statistical downscaling framework developed in MOIRAI Task 2.1
+  for the generation of climate-scale atmospheric forcing and ocean boundarycondition datasets from coarse-resolution
+  CMIP6 climate projections. The work addresses the need for high-resolution climate information suitable
+  for driving the regional ocean model configurations of the project across the Mediterranean/Black Sea,
+  Baltic/North Sea, and Arctic/North Atlantic domains. Because raw global climate-model output is too
+  coarse in space and too limited in temporal detail for direct regional application, the deliverable
+  focuses on the development of a statistically robust and operationally feasible framework for translating
+  global climate projections into datasets that are structurally compatible with regional ocean modelling
+  requirements. The methodology consists of two complementary branches. For the atmospheric component,
+  daily fields from the CMIP6 model MPI-ESM1-2-LR are first spatially regridded and bias-adjusted against
+  high-resolution regional reanalyses using the CDF-t method. They are then temporally disaggregated to
+  a 3-hourly resolution using a machine-learning framework based on XGBoost, trained on regional reanalysis
+  data. This branch was developed for 2 m air temperature, relative humidity, precipitation, mean sea
+  level pressure, downward shortwave radiation, downward longwave radiation, and 10 m wind components.
+  For the ocean component, monthly CMIP6 fields of temperature, salinity, sea surface height, and current
+  components are horizontally regridded, vertically mapped where needed to the target depth structure,
+  and bias-adjusted against regional Copernicus Marine reanalysis products. The results presented in the
+  report indicate that the atmospheric downscaling framework can generate high-resolution 3-hourly forcing
+  fields with coherent spatial structure, seasonally plausible behaviour, and physically consistent variable-specific
+  characteristics. The illustrative results shown in the deliverable correspond to one representative
+  test year, 2014, selected to demonstrate the behaviour of the framework across the three MOIRAI domains.
+  These examples show that the method is capable of preserving the large-scale daily climate signal while
+  reconstructing plausible sub-daily variability suitable for climate-scale ocean-forcing applications.
+  At the same time, the results make clear that the atmospheric products are not intended to reproduce
+  the exact chronology of short-lived weather events, especially for variables whose sub-daily variability
+  is dominated by synoptic dynamics, such as mean sea level pressure. For the ocean branch, the indicative
+  examples show that the downscaling framework can generate monthly boundary-condition datasets that preserve
+  the broad temporal evolution of the original climate projections while improving consistency with the
+  target regional reference products and depth structure. The results for temperature and salinity indicate
+  that the CDF-t adjustment modifies the mean state while retaining the long-term projected tendency.
+  For ocean the current components, the adjustment is also applied consistently across depth levels, although
+  the interpretation of annual mean signals is less direct because of their smaller magnitude and stronger
+  interannual variability. Unlike the atmospheric illustrations, which are shown for a single test year,
+  the statistically downscaled ocean datasets are available for the full 1971–2100 period through the
+  MOIRAI data portal. Overall, this deliverable establishes the current scientific and technical basis
+  for statistical downscaling within MOIRAI. The developed framework is designed to provide climate-scale
+  initial conditions, boundary conditions, and atmospheric surface forcing for regional ocean modelling
+  related to climate change. Its purpose is not to replace reanalysis-based reconstructions, but to produce
+  physically plausible, bias-adjusted, and structurally compatible input datasets that preserve the projected
+  large-scale climate signal and can support the simulation of future marine conditions and climate risks
+  across the main MOIRAI domains.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

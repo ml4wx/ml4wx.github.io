@@ -1,0 +1,58 @@
+id: doi-10.5194-egusphere-2025-6551
+title: 'GraphIDW: Incorporating spatial autocorrelation in satellite–gauge precipitation merging using
+  graph neural networks over a tropical region'
+authors:
+- Nadee Peiris
+- Chamal Perera
+- Nimal Wijayaratna
+- Lalith Rajapakse
+- A. L. K. Wijemannage
+date: '2026-02-13'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.5194/egusphere-2025-6551
+  openalex: W7128787336
+links:
+  paper: https://doi.org/10.5194/egusphere-2025-6551
+  pdf: https://egusphere.copernicus.org/preprints/2026/egusphere-2025-6551/egusphere-2025-6551.pdf
+topic: observations-remote-sensing
+type: model
+method:
+- gnn
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- stations
+status: research
+summary: GraphIDW couples graph neural networks with inverse distance weighting to merge satellite and
+  gauge rainfall in Sri Lanka, reaching POD 0.97 and cutting RMSE 13–41%.
+abstract: Abstract. Ground-based rain gauges remain the benchmark for accurate precipitation measurement;
+  however, their sparse spatial distribution limits the representation of rainfall heterogeneity. Satellite-based
+  Precipitation Products (SPPs) provide consistent spatial coverage but are often affected by retrieval
+  errors and regional biases, restricting their direct use in local-scale hydrological applications. To
+  overcome these limitations, Precipitation Data Merging (PDM) techniques integrating gauge and satellite
+  observations have gained prominence. This study introduces a novel Machine Learning (ML) framework,
+  GraphIDW, which combines Graph Neural Networks (GNNs) with Inverse Distance Weighting (IDW) interpolation
+  to explicitly incorporate spatial autocorrelation into the merging process, addressing a major limitation
+  of traditional ML-based PDM approaches. The framework was evaluated across the Wet Zone of Sri Lanka
+  from 2001 to 2015 using two state-of-the-art SPPs (IMERG and CHIRPS) together with ground observations.
+  IMERG data (0.1°) were first downscaled to 0.05° using CHIRPS, after which the downscaled product was
+  merged with gauge observations through GraphIDW. A total of 60 gauges (70 %) were used for training
+  and 28 (30 %) for validation. Results show that GraphIDW outperforms conventional ML algorithms, including
+  Random Forest, Artificial Neural Network, Support Vector Regression, and XGBoost. It achieved the highest
+  probability of detection (0.97) and reduced root mean square error (RMSE) and mean absolute error (MAE)
+  by 13 %–41 % and 9 %–36 %, respectively, compared with the original SPPs. The results demonstrate that
+  explicitly accounting for spatial dependence through graph-based learning significantly improves precipitation
+  estimation, particularly in regions characterized by strong spatial heterogeneity. By embedding spatial
+  autocorrelation directly into the merging process, GraphIDW provides a robust and computationally efficient
+  framework for generating high-resolution rainfall datasets that are better suited for hydrological analysis
+  in complex climatic and topographic settings.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

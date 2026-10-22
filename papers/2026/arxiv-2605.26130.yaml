@@ -1,0 +1,66 @@
+id: arxiv-2605.26130
+title: 'AirCast-SR: A Foundation Model for Kilometer-Scale Atmospheric Super-Resolution via Latent Consistency
+  Diffusion'
+authors:
+- Somnath Luitel
+- Manmeet Singh
+- Joshua Durkee
+- Abdullah Al Fahad
+- Naveen Sudharsan
+- Prabhjot Singh
+- Cenlin He
+- Harsh Kamath
+- Zong-Liang Yang
+- Krishnagopal Halder
+- Sandeep Juneja
+- Parthasarathi Mukhopadhyay
+- Saptarishi Dhanuka
+- Amit Kumar Srivastava
+date: '2026-05-20'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.26130'
+  openalex: W7162542053
+links:
+  paper: https://arxiv.org/abs/2605.26130
+  pdf: https://arxiv.org/pdf/2605.26130
+topic: downscaling
+topics:
+- foundation-models
+type: model
+method:
+- cnn
+- diffusion
+timescale:
+- short
+spatial:
+- regional
+- local
+data:
+- nwp-analysis
+- other
+status: pre-operational
+summary: AirCast-SR uses latent consistency diffusion to downscale GraphCast forecasts to 1 km hourly
+  surface fields over CONUS, with zero-shot transfer to India and Germany.
+abstract: Operational weather prediction at kilometer scales remains computationally prohibitive for traditional
+  numerical weather prediction (NWP) models, limiting forecast access for applications in energy, agriculture,
+  and disaster management that require fine-grained spatiotemporal detail. Here we introduce AirCast-SR,
+  a foundation model for atmospheric super-resolution that downscales global AI weather forecasts from
+  0.25 degree (~28 km) to 1 km horizontal resolution at hourly temporal resolution, producing 67-hour
+  forecasts of eight coupled surface variables simultaneously. EarthMind-SR employs a three-dimensional
+  U-Net conditioned within a Latent Consistency Model (LCM) diffusion framework, trained on patch-based
+  samples over the contiguous United States (CONUS) using GraphCast forecasts as input and NOAA's Analysis
+  of Record for Calibration (AORC) as the target. The model achieves near-zero bias across all variables
+  and lead times, and its radial power spectral density analysis demonstrates preservation of fine-scale
+  atmospheric structure at wavelengths of 10 km to 100 km where coarser models lose spectral power. We
+  validate EarthMind-SR across three CONUS case studies spanning winter, summer, and spring seasons, and
+  demonstrate zero-shot global transferability over India and Germany using independent surface station
+  observations without any retraining or fine-tuning. As an open-weights foundation model, EarthMind-SR
+  establishes a new paradigm for kilometer-scale AI weather prediction and provides a platform for regional
+  fine-tuning, distillation, and downstream applications in climate services and hazard forecasting.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

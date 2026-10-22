@@ -1,0 +1,53 @@
+id: arxiv-2603.13818
+title: 'PA-Net: Precipitation-Adaptive Mixture-of-Experts for Long-Tail Rainfall Nowcasting'
+authors:
+- Xinyu Xiao
+- Sen Lei
+- Eryun Liu
+- Shiming Xiang
+- Hao Li
+- Cheng Yuan
+- Yuan Qi
+- Qizhao Jin
+date: '2026-03-14'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2603.13818'
+  openalex: W7137819757
+links:
+  paper: https://arxiv.org/abs/2603.13818
+  pdf: https://arxiv.org/pdf/2603.13818
+topic: nowcasting
+topics:
+- extremes-hazards
+type: model
+method:
+- transformer
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: Transformer with precipitation-adaptive mixture-of-experts allocates compute by rainfall intensity,
+  improving heavy-rain and rainstorm forecasts on ERA5 over baselines.
+abstract: 'Precipitation nowcasting is vital for flood warning, agricultural management, and emergency
+  response, yet two bottlenecks persist: the prohibitive cost of modeling million-scale spatiotemporal
+  tokens from multi-variate atmospheric fields, and the extreme long-tailed rainfall distribution where
+  heavy-to-torrential events -- those of greatest societal impact -- constitute fewer than 0.1% of all
+  samples. We propose the Precipitation-Adaptive Network (PA-Net), a Transformer framework whose computational
+  budget is explicitly governed by rainfall intensity. Its core component, Precipitation-Adaptive MoE
+  (PA-MoE), dynamically scales the number of activated experts per token according to local precipitation
+  magnitude, channeling richer representational capacity toward the rare yet critical heavy-rainfall tail.
+  A Dual-Axis Compressed Latent Attention mechanism factorizes spatiotemporal attention with convolutional
+  reduction to manage massive context lengths, while an intensity-aware training protocol progressively
+  amplifies learning signals from extreme-rainfall samples. Experiment on ERA5 demonstrate consistent
+  improvements over state-of-the-art baselines, with particularly significant gains in heavy-rain and
+  rainstorm regimes.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

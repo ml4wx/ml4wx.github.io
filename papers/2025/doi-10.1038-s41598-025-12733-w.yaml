@@ -1,0 +1,63 @@
+id: doi-10.1038-s41598-025-12733-w
+title: Multi-heat keypoint incorporation in deep learning model to tropical cyclone centering and intensity
+  classifying from geostationary satellite images
+authors:
+- Thanh Ha Do
+- Son-The Phan
+- Duc Tien Du
+- Dujun Dang
+- Khanh-Hung Mai
+- Lars Robert Hole
+date: '2025-07-31'
+year: 2025
+venue: Scientific Reports
+venue_type: journal
+ids:
+  doi: 10.1038/s41598-025-12733-w
+  openalex: W4412787074
+links:
+  paper: https://doi.org/10.1038/s41598-025-12733-w
+  pdf: https://www.nature.com/articles/s41598-025-12733-w.pdf
+orgs:
+- met-norway
+topic: observations-remote-sensing
+topics:
+- extremes-hazards
+type: model
+method:
+- cnn
+- other
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Multi-head keypoint deep network with attention locates tropical cyclone centers from Himawari
+  imagery to within about 34 km and classifies grades.
+abstract: Hydrometeorological forecasting and early warning involve many hazardous elements, with the
+  estimation of intensity and center location of tropical cyclones (TCs) being key. This paper proposes
+  a new multitask deep learning model with attention gate mechanisms to work with satellite images and
+  construct heatmaps for TC's centering and classification. The multi-head keypoint design (MHKD) with
+  the spatial attention mechanism (SAM) is fitted to the decoder layer using multi-resolution inputs from
+  the encoder. In addition, the new loss function is employed with an Euclidean distance to guide centers
+  of heatmaps from lower decoder layers toward higher ones, thereby refining keypoints during the early
+  decoding stage. Experimental results, done on a constructed dataset for the Western North Pacific for
+  2015-2023 collected from the Japanese Himawari 8/9 geostationary satellite and the best track of the
+  World Meteorological Organization (WMO) Regional Specialized Meteorological Center (RSMC) Tokyo - Typhoon
+  Center, indicate that the proposed model successfully detects most TC existences on combined images
+  from three infrared channels. The model's accuracy can reach over 72% of the Tropical Depression (TD)
+  grade and over 90% for really strong TCs (Severe Tropical Storm (STS) and Typhoon (TY)). Compared to
+  a typical detecting object problem, the main issues come from the complexity of TC cloud patterns, which
+  are nonlinear with actual TC grades or discrimination between TC grades (transition between TD to Tropical
+  Storm (TS), TS to STS, and upgrading and progress of TCs). The proposed MHKD can help reduce the over-estimate
+  rate for the TD grade and under-estimate rates for TS and STS grades, and most notably, the TC center
+  localization yielded an average error of approximately 34 km with a single keypoint or one head attention
+  network (One ATTN) and around 27 km when using three head attention network (Three ATTN).
+significance: 2
+cited_by: 3
+score: 43
+highlight: false
+added: '2026-10-22'
+source: backfill

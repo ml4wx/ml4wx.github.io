@@ -1,0 +1,49 @@
+id: arxiv-2608.09971
+title: 'Rescene: stable century-long climate emulation from a frozen weather model'
+authors:
+- Minjong Cheon
+date: '2026-07-30'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2608.09971'
+  openalex: W7202294601
+links:
+  paper: https://arxiv.org/abs/2608.09971
+  pdf: https://arxiv.org/pdf/2608.09971
+topic: climate-emulation
+topics:
+- global-medium-range
+type: model
+method:
+- other
+timescale:
+- climate
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Rescene wraps a frozen weather model with a 0.4M-parameter slow clock and band-limited AR(1)
+  perturbation, giving a 100-year ensemble with no detectable drift and calibrated spread.
+abstract: Machine-learning weather models now match or exceed operational numerical prediction in the
+  medium range, but when they are run freely for years they drift, blow up or lose their variability,
+  and dedicated climate emulators are expensive to train. Here we present Rescene, a 0.4 M-parameter wrapper
+  that turns a frozen 1.5$^\circ$, 6-hourly, 69-variable weather model into a stochastic climate emulator.
+  A deterministic slow clock anchors the frozen model to a calendar climatology, and a band-limited AR(1)
+  perturbation, whose spectral envelope is fixed to the observed anomaly spectrum, restores the weather
+  that anchoring removes. A 100-year, 8-member Rescene run shows no detectable drift ($-0.004 \pm 0.014$
+  K per 100 years), and on the 2022 test year the 16-member ensemble is calibrated (spread/skill 0.89,
+  0.97 and 0.93 for Z500, T2m and MSLP) with an extratropical synoptic amplitude of 97% of ERA5 on the
+  tuning year. The free run reproduces the geography of day-to-day variability (pattern correlation 0.83
+  for Z500) and 71% of the observed blocking frequency, where the deterministic wrapper alone has none.
+  Interventions on the frozen operator show a scale-local, approximately linear response in which Z500
+  perturbations grow upscale 6--14 times more than downscale per 6 h. All constants are fitted on a training
+  year against a rule declared beforehand, and we show that common evaluation shortcuts would have overstated
+  variability and skill. Rescene makes an existing weather model usable for century-long ensembles at
+  negligible training cost.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

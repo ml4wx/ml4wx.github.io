@@ -1,0 +1,52 @@
+id: arxiv-2604.11909
+title: 'Thermodynamic Liquid Manifold Networks: Physics-Bounded Deep Learning for Solar Forecasting in
+  Autonomous Off-Grid Microgrids'
+authors:
+- Mohammed Ezzaldin Babiker Abdullah
+date: '2026-04-13'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2604.11909'
+  openalex: W7154485940
+links:
+  paper: https://arxiv.org/abs/2604.11909
+  pdf: https://arxiv.org/pdf/2604.11909
+  code: https://github.com/Marco9249/TLMN-Thermodynamic-Solar-Microgrids
+topic: local-forecasting
+topics:
+- applications-impacts
+type: model
+method:
+- physics-constrained
+- other
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: pre-operational
+summary: Koopman-based network with clear-sky gating forecasts off-grid solar irradiance in a semi-arid
+  site, reaching RMSE 18.31 Wh/m2 with zero nocturnal error over 1826 test days.
+abstract: The stable operation of autonomous off-grid photovoltaic systems requires solar forecasting
+  algorithms that respect atmospheric thermodynamics. Contemporary deep learning models consistently exhibit
+  critical anomalies, primarily severe temporal phase lags during cloud transients and physically impossible
+  nocturnal power generation. To resolve this divergence between data-driven modeling and deterministic
+  celestial mechanics, this research introduces the Thermodynamic Liquid Manifold Network. The methodology
+  projects 22 meteorological and geometric variables into a Koopman-linearized Riemannian manifold to
+  systematically map complex climatic dynamics. The architecture integrates a Spectral Calibration unit
+  and a multiplicative Thermodynamic Alpha-Gate. This system synthesizes real-time atmospheric opacity
+  with theoretical clear-sky boundary models, structurally enforcing strict celestial geometry compliance.
+  This completely neutralizes phantom nocturnal generation while maintaining zero-lag synchronization
+  during rapid weather shifts. Validated against a rigorous five-year testing horizon in a severe semi-arid
+  climate, the framework achieves an RMSE of 18.31 Wh/m2 and a Pearson correlation of 0.988. The model
+  strictly maintains a zero-magnitude nocturnal error across all 1826 testing days and exhibits a sub-30-minute
+  phase response during high-frequency optical transients. Comprising exactly 63,458 trainable parameters,
+  this ultra-lightweight design establishes a robust, thermodynamically consistent standard for edge-deployable
+  microgrid controllers.
+significance: 2
+score: 18
+highlight: false
+added: '2026-10-22'
+source: backfill

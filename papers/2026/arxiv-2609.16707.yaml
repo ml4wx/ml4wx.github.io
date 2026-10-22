@@ -1,0 +1,48 @@
+id: arxiv-2609.16707
+title: Predictability-Guided Multiscale Probabilistic Forecasting of Wind Direction under Extreme Shear
+authors:
+- Hailong Shu
+date: '2026-09-15'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.16707'
+  openalex: W7213392533
+links:
+  paper: https://arxiv.org/abs/2609.16707
+  pdf: https://arxiv.org/pdf/2609.16707
+topic: local-forecasting
+topics:
+- applications-impacts
+type: model
+method:
+- diffusion
+- other
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: A predictability-guided hybrid of regression, latent flows and residual diffusion forecasts wind
+  direction under extreme shear, cutting extreme-turning error versus zero-shot foundation models.
+abstract: 'Accurate multi-horizon wind direction forecasting is critical for turbine yaw control and grid
+  security. Rapid directional shear (turning $\ge 90^\circ$) challenges models via non-Euclidean geometry
+  on $S^1$, multiscale dynamics, and regime-dependent uncertainty. Conventional discrete models and foundation
+  models suffer from mid-frequency phase lag and turning misalignments. We show that directional predictability
+  decays at disparate rates across frequency subbands, rendering monolithic mechanisms suboptimal. We
+  propose a predictability-guided paradigm: slow synoptic drift $\to$ deterministic regression; intermediate
+  turning $\to$ continuous latent differential flows; unresolved turbulence $\to$ conditional residual
+  diffusion; followed by causal recalibration. On a 10,000-sequence multi-year benchmark, our framework
+  maintains calm-weather accuracy (Test MCE $38.48^\circ$) while reducing extreme-turning error (Case
+  1 MCE $60.69^\circ$ vs $70.42^\circ$ for zero-shot foundation models). The circular CRPS reaches $22.36^\circ$,
+  with 93.88\% coverage at nominal 95\% (91.01\% out-of-distribution). Density estimation further reveals
+  near-antipodal bimodal structure under severe shear (13.39\%--15.43\% tail mass $\ge 135^\circ$), exposing
+  a geometric bound where single-center calibration under-covers (81.56\%), motivating multimodal circular
+  manifold learning.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

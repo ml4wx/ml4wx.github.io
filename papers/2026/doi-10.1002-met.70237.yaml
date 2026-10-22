@@ -1,0 +1,61 @@
+id: doi-10.1002-met.70237
+title: Joint Postprocessing of Air and Dew Point Temperature Ensemble Forecasts With Machine Learning
+authors:
+- Enric Casellas
+- Josep Ramón Miró
+- María Cortès
+- Vicent Altava‐Ortiz
+- Jordi Moré
+date: '2026-09-01'
+year: 2026
+venue: Meteorological Applications
+venue_type: journal
+ids:
+  doi: 10.1002/met.70237
+  openalex: W7210267418
+links:
+  paper: https://doi.org/10.1002/met.70237
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/met.70237
+topic: post-processing
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: pre-operational
+summary: Bivariate distributional regression networks jointly post-process air and dew point ensembles,
+  improving multivariate skill over DRN with ECC and bivariate EMOS.
+abstract: 'ABSTRACT Estimation of forecast uncertainty is essential for operational meteorology, especially
+  in the context of global warming, where the frequency and intensity of extreme events such as heat waves
+  are increasing. Ensemble prediction systems are widely used to represent forecast uncertainty, but their
+  raw output typically requires statistical postprocessing to improve reliability and correct systematic
+  errors. This study focuses on the joint probabilistic postprocessing of air temperature () and dew point
+  temperature (), two closely related variables that are key inputs for the estimation of humidity‐related
+  variables and thermal comfort indices. Two postprocessing frameworks are compared. The first is a two‐step
+  approach based on univariate calibration using Distributional Regression Networks (DRN), combined with
+  Ensemble Copula Coupling (ECC) to reconstruct the dependence structure between the two variables. The
+  second is a one‐step multivariate approach in which marginal distributions and their dependence structure
+  are modelled simultaneously. Within this framework, two alternative parametrisation are compared: a
+  bivariate DRN, which estimates all parameters through a neural network, and a classical bivariate Ensemble
+  Model Output Statistics (EMOS) model, in which the same parameters are estimated as affine functions
+  of the raw ensemble. The methods are evaluated using a 10‐member multi‐model ensemble and observations
+  from an automatic weather station network. Results indicate that the bivariate DRN approach improves
+  performance in terms of both univariate and multivariate verification metrics. Compared with the DRN‐Univariate
+  + ECC approach, the bivariate DRN achieves improved multivariate skill while maintaining similar marginal
+  performance, highlighting the benefit of explicitly modelling inter‐variable dependence rather than
+  reconstructing it from the raw ensemble. Compared with Bivariate EMOS, which adopts the same one‐step
+  bivariate Gaussian formulation, the bivariate DRN consistently achieves better univariate and multivariate
+  skill, suggesting that the flexibility of the neural network implementation provides additional predictive
+  skill. Rank histograms, however, show similar calibration performance for both approaches. Overall,
+  the results suggest that a bivariate DRN approach is a promising option for operational implementation.'
+significance: 4
+cited_by: 0
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,57 @@
+id: arxiv-2603.03669
+title: Automated Detection and Climatological Analysis of Ripple-Scale Gravity Wave Instabilities Using
+  a Squeeze-and-Excitation Convolutional Neural Network
+authors:
+- Jiahui Hu
+- Alan Liu
+- Adriana Feener
+- Jing Li
+- Tao Li
+- Wenjun Dong
+date: '2026-03-04'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2603.03669'
+  openalex: W7133651776
+links:
+  paper: https://arxiv.org/abs/2603.03669
+  pdf: https://arxiv.org/pdf/2603.03669
+orgs:
+- cma
+topic: observations-remote-sensing
+topics:
+- climate-analysis-attribution
+type: model
+method:
+- cnn
+spatial:
+- local
+data:
+- other
+status: research
+summary: A squeeze-and-excitation CNN automatically detects ripple-scale gravity wave instabilities in
+  airglow images, reaching 92% patch F1 and recovering about 90% of manually identified events.
+abstract: All-sky OH airglow imaging provides two-dimensional observations of mesospheric gravity wave
+  structure near ~87 km altitude. Ripple-scale instability signatures, characterized by 5-15 km horizontal
+  wavelengths and short lifetimes, are particularly difficult to identify consistently using manual inspection.
+  In this study, we develop a reproducible, automated detection framework based on a squeeze-and-excitation
+  convolutional neural network (SE-CNN) trained on 41 x 41 pixel image patches, to identify ripple-scale
+  structures in 512 x 512 pixel all-sky airglow images acquired at Yucca Ridge Field Station (40.7o N,
+  104.9o W). The time-differenced images are normalized using a robust median-absolute-deviation (MAD)
+  scaling procedure to mitigate star contamination and background variability. The model is trained and
+  validated on manually annotated ripple and non-ripple patches, then evaluated using independent test
+  subsets. The automated detection is performed using a sliding-window approach with spatial and temporal
+  clustering criteria for event definition. At the patch level, the classifier achieves 92\% F1-score
+  with high precision and recall. At the event level, automated detections recover approximately 90\%
+  of manually identified ripple events while identifying additional low-amplitude occurrences. Validated
+  against previous manual identification study, the automated detection catalog enables objective quantification
+  of ripple occurrence frequency, seasonal modulation, and lifetime distributions. By emphasizing methodological
+  transparency, calibration considerations, and validation metrics, this framework establishes a scalable
+  measurement technique for systematic detection of mesospheric instability signatures in long-term airglow
+  image archives.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

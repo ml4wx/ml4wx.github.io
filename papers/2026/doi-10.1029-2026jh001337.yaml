@@ -1,0 +1,49 @@
+id: doi-10.1029-2026jh001337
+title: 'TITAN‐LSTM: A Weather Radar Nowcasting Tool'
+authors:
+- Andrea Salomé Viteri López
+- Carlos Augusto Morales
+date: '2026-07-14'
+year: 2026
+venue: Journal of Geophysical Research Machine Learning and Computation
+venue_type: journal
+ids:
+  doi: 10.1029/2026jh001337
+  openalex: W4409660825
+links:
+  paper: https://doi.org/10.1029/2026jh001337
+topic: nowcasting
+type: model
+method:
+- rnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Hybrid TITAN tracking with an LSTM predicts radar rain area and rain rate for 5–30 min, reaching
+  POD above 0.70 at 15 min and cutting rain-area RMSE by 60–80%.
+abstract: Abstract Precipitation nowcasting is essential for a wide range of meteorological and hydrological
+  applications, and weather radar plays a central role in this task. Extrapolation algorithms such as
+  TITAN (Thunderstorm Identification, Tracking, Analysis and Nowcasting) provide efficient storm tracking
+  but do not directly use rainfall rate fields, while deep learning models capture storm dynamics using
+  gridded radar images, resulting in extensive preprocessing and high computational cost. To bridge this
+  gap, we have introduced TITAN‐LSTM, a hybrid radar nowcasting algorithm that combines TITAN with a Long
+  Short‐Term Memory (LSTM) network. TITAN identifies and tracks rainstorm life histories and predicts
+  their displacements, while LSTM forecasts rain area and precipitation intensity based on TITAN tracking.
+  The algorithm was trained and validated using data from the DAEE‐SPOL weather radar from 2016 to 2019,
+  generating 5–30 min forecasts. Compared to the TITAN standalone version, TITAN‐LSTM improved rainfall
+  prediction skill, achieving POD > 0.70 and FAR < 0.20 at 15 min and substantially reducing rain‐area
+  errors by decreasing RMSE between 60% and 80% when longer storm histories were used as input. Rainfall‐rate
+  errors increased slightly with lead time, from about 3 mm/hr at 5 min to 4 mm/hr at 30 min. TITAN‐LSTM
+  performed comparably to more complex deep learning architectures reported in the literature, which reported
+  POD values between 66% and 90% at short lead times but with the advantage of directly using rainfall
+  rate fields and rain area time series instead of 2D images.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

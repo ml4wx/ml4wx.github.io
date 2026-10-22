@@ -1,0 +1,52 @@
+id: doi-10.3390-w18111261
+title: 'CSPP-RNN: A Precipitation Nowcasting Approach That Couples Similar Precipitation Processes with
+  Sequence-to-Sequence RNNs'
+authors:
+- Jiachang Tian
+- Chunxiao Zhang
+- Yuxuan Wang
+- Zuhao Zhang
+date: '2026-05-22'
+year: 2026
+venue: Water
+venue_type: journal
+ids:
+  doi: 10.3390/w18111261
+  openalex: W7162120127
+links:
+  paper: https://doi.org/10.3390/w18111261
+topic: nowcasting
+type: model
+method:
+- rnn
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- radar
+status: research
+summary: Coupling retrieved similar precipitation processes with a seq2seq RNN improves 36–60 min POD
+  and CSI over ConvLSTM on Beijing radar data, limiting error accumulation.
+abstract: 'Accurate precipitation nowcasting is critical for many aspects of human life. A recurrent neural
+  network (RNN) has demonstrated strong and relatively mature performance in machine learning approaches
+  for precipitation nowcasting. However, their inherent recursive prediction structure leads to error
+  accumulation, causing progressively blurred outputs and limiting practical applicability. To address
+  this issue, we propose CSPP-RNN (Coupling-Similar-Precipitation-Processes RNN), a net that couples similar
+  precipitation processes with a sequence-to-sequence RNN. For each prediction timestep, similar precipitation
+  processes are retrieved, and their segments are then input into the encoder to obtain the corresponding
+  hidden states. These hidden states replace the ones influenced by earlier predicted results in the recursive
+  structure. Based on radar data from Beijing Daxing station, the comparison experiments of CSPP-RNN and
+  ConvLSTM indicate that: (1) Over the 36–60 min lead time across the 0.1, 5.0, and 20.0 mm/h thresholds,
+  the POD and CSI improved by 0.0334, 0.0170 on average, respectively, whereas the FAR degraded by 0.0586;
+  (2) error accumulation was mitigated, retaining richer fine-scale structures in the predicted images;
+  (3) the extra computational cost of coupling was controlled within an acceptable range. In conclusion,
+  CSPP-RNN mitigates the error accumulation problem in RNN by coupling similar precipitation processes
+  as part of the modification of the recursive prediction structure. This provides a potential new direction
+  for optimizing the application of RNN in precipitation nowcasting.'
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

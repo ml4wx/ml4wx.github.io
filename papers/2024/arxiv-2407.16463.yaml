@@ -1,0 +1,63 @@
+id: arxiv-2407.16463
+title: 'Advances in Land Surface Model-based Forecasting: A comparative study of LSTM, Gradient Boosting,
+  and Feedforward Neural Network Models as prognostic state emulators'
+authors:
+- Marieke Wesselkamp
+- Matthew Chantry
+- Ewan Pinnington
+- Margarita Choulga
+- Souhail Boussetta
+- Maria Kalweit
+- Joschka Boedecker
+- Carsten F. Dormann
+- Florian Pappenberger
+- Gianpaolo Balsamo
+date: '2024-07-23'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2407.16463'
+  openalex: W4406073921
+links:
+  paper: https://arxiv.org/abs/2407.16463
+  pdf: https://arxiv.org/pdf/2407.16463
+topic: hybrid-parameterization
+type: evaluation
+method:
+- rnn
+- classical-ml
+timescale:
+- short
+- medium
+spatial:
+- regional
+- global
+data:
+- other
+status: research
+summary: Compares LSTM, XGBoost and MLP emulators of the IFS ECLand land-surface scheme, finding large
+  runtime reductions with high accuracy for near-surface forecasting.
+abstract: Most useful weather prediction for the public is near the surface. The processes that are most
+  relevant for near-surface weather prediction are also those that are most interactive and exhibit positive
+  feedback or have key role in energy partitioning. Land surface models (LSMs) consider these processes
+  together with surface heterogeneity and forecast water, carbon and energy fluxes, and coupled with an
+  atmospheric model provide boundary and initial conditions. This numerical parametrization of atmospheric
+  boundaries being computationally expensive, statistical surrogate models are increasingly used to accelerated
+  progress in experimental research. We evaluated the efficiency of three surrogate models in speeding
+  up experimental research by simulating land surface processes, which are integral to forecasting water,
+  carbon, and energy fluxes in coupled atmospheric models. Specifically, we compared the performance of
+  a Long-Short Term Memory (LSTM) encoder-decoder network, extreme gradient boosting, and a feed-forward
+  neural network within a physics-informed multi-objective framework. This framework emulates key states
+  of the ECMWF's Integrated Forecasting System (IFS) land surface scheme, ECLand, across continental and
+  global scales. Our findings indicate that while all models on average demonstrate high accuracy over
+  the forecast period, the LSTM network excels in continental long-range predictions when carefully tuned,
+  the XGB scores consistently high across tasks and the MLP provides an excellent implementation-time-accuracy
+  trade-off. The runtime reduction achieved by the emulators in comparison to the full numerical models
+  are significant, offering a faster, yet reliable alternative for conducting numerical experiments on
+  land surfaces.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

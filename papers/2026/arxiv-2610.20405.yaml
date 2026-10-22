@@ -1,0 +1,56 @@
+id: arxiv-2610.20405
+title: Improved Precipitation Variability in the Community Atmosphere Model through Implementation of
+  a Neural-Network Deep Convection Scheme
+authors:
+- Xavier J. Levine
+- Griffin Mooers
+- Judith Berner
+- Jack W. Atkinson
+- Marat F. Khairoutdinov
+- Janni Yuval
+- Dominic Orchard
+- Paul A. O'Gorman
+date: '2026-10-14'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.20405'
+  openalex: W7222338359
+links:
+  paper: https://arxiv.org/abs/2610.20405
+  pdf: https://arxiv.org/pdf/2610.20405
+topic: hybrid-parameterization
+topics:
+- climate-emulation
+type: model
+method:
+- other
+timescale:
+- climate
+spatial:
+- global
+data:
+- km-scale-sim
+status: research
+summary: A neural network deep convection scheme trained on storm-resolving gSAM output runs stably in
+  CAM6 for over a decade, reducing light and extreme precipitation biases.
+abstract: Conventional deep convection schemes remain a primary source of uncertainty in global climate
+  models, yet replacing them with data-driven alternatives while maintaining physical consistency and
+  numerical stability is an open challenge. We present a hybrid configuration of the Community Atmosphere
+  Model version 6 (CAM6), in which a fully connected deep neural network replaces the Zhang-McFarlane
+  deep convection scheme (ZM), while radiation, turbulence, and other cloud processes are left unchanged.
+  The network is trained on output from a storm-resolving global model - the global System for Atmospheric
+  Modeling (gSAM) - using a coarse-graining approach to derive subgrid-scale convective fluxes and tendencies.
+  This data-driven parameterization is ported to CAM6 and found to run stably for more than a decade while
+  conserving energy and moisture. It produces a broadly realistic climatology without retuning the remaining
+  parameterizations. Relative to the default Zhang-McFarlane scheme, the neural network parameterization
+  substantially improves some long-standing model deficiencies. In particular, the biases in light precipitation
+  and extreme precipitation are markedly reduced, and the diurnal cycle of tropical land precipitation
+  shifts from a spurious midday peak over many regions to the observed late-afternoon peak. These results
+  support targeted ML-based convection schemes as a viable path toward reducing systematic model errors
+  in next-generation climate models.
+significance: 6
+score: 24
+highlight: false
+added: '2026-10-22'
+source: backfill

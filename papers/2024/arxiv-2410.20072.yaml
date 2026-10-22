@@ -1,0 +1,55 @@
+id: arxiv-2410.20072
+title: 'CGKN: A Deep Learning Framework for Modeling Complex Dynamical Systems and Efficient Data Assimilation'
+authors:
+- Chuanqi Chen
+- Nan Chen
+- Yinling Zhang
+- Jin-Long Wu
+date: '2024-10-26'
+year: 2024
+venue: Journal of Computational Physics Volume 532, 1 July 2025, 113950
+venue_type: journal
+ids:
+  arxiv: '2410.20072'
+  doi: 10.1016/j.jcp.2025.113950
+  openalex: W4408784699
+links:
+  paper: https://arxiv.org/abs/2410.20072
+  pdf: https://arxiv.org/pdf/2410.20072
+topic: data-assimilation
+topics:
+- xai-uq-physics
+type: model
+method:
+- other
+timescale:
+- short
+data:
+- other
+status: research
+summary: CGKN is a Koopman-inspired neural model with conditional Gaussian structure enabling analytic
+  data assimilation, tested on Lorenz 96 and ENSO.
+abstract: 'Deep learning is widely used to predict complex dynamical systems in many scientific and engineering
+  areas. However, the black-box nature of these deep learning models presents significant challenges for
+  carrying out simultaneous data assimilation (DA), which is a crucial technique for state estimation,
+  model identification, and reconstructing missing data. Integrating ensemble-based DA methods with nonlinear
+  deep learning models is computationally expensive and may suffer from large sampling errors. To address
+  these challenges, we introduce a deep learning framework designed to simultaneously provide accurate
+  forecasts and efficient DA. It is named Conditional Gaussian Koopman Network (CGKN), which transforms
+  general nonlinear systems into nonlinear neural differential equations with conditional Gaussian structures.
+  CGKN aims to retain essential nonlinear components while applying systematic and minimal simplifications
+  to facilitate the development of analytic formulae for nonlinear DA. This allows for seamless integration
+  of DA performance into the deep learning training process, eliminating the need for empirical tuning
+  as required in ensemble methods. CGKN compensates for structural simplifications by lifting the dimension
+  of the system, which is motivated by Koopman theory. Nevertheless, CGKN exploits special nonlinear dynamics
+  within the lifted space. This enables the model to capture extreme events and strong non-Gaussian features
+  in joint and marginal distributions with appropriate uncertainty quantification. We demonstrate the
+  effectiveness of CGKN for both prediction and DA on three strongly nonlinear and non-Gaussian turbulent
+  systems: the projected stochastic Burgers-Sivashinsky equation, the Lorenz 96 system, and the El Niño-Southern
+  Oscillation. The results justify the robustness and computational efficiency of CGKN.'
+significance: 4
+cited_by: 11
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

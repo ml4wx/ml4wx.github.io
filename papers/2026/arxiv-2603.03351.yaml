@@ -1,0 +1,58 @@
+id: arxiv-2603.03351
+title: Prediction of Extreme Events in Multiscale Simulations of Geophysical Turbulence using Reinforcement
+  Learning
+authors:
+- Yifei Guan
+- Lucas Amoudruz
+- Sergey Litvinov
+- Karan Jakhar
+- Rambod Mojgani
+- Petros Koumoutsakos
+- Pedram Hassanzadeh
+date: '2026-02-26'
+year: 2026
+venue: Journal of Computational Science
+venue_type: journal
+ids:
+  arxiv: '2603.03351'
+  doi: 10.1016/j.jocs.2026.103022
+  openalex: W7133762021
+links:
+  paper: https://doi.org/10.1016/j.jocs.2026.103022
+  pdf: https://arxiv.org/pdf/2603.03351
+orgs:
+- university-of-chicago
+topic: hybrid-parameterization
+topics:
+- extremes-hazards
+type: model
+method:
+- reinforcement-learning
+timescale:
+- climate
+spatial:
+- global
+data:
+- km-scale-sim
+status: research
+summary: SMARL learns subgrid turbulence closures with reinforcement learning using only enstrophy spectra
+  as reward, yielding stable reduced models that capture atmospheric and oceanic extremes.
+abstract: Accurate subgrid-scale closures are essential for weather/climate models, where predicting extreme
+  events is critical. Traditional closures have structural errors, e.g., producing excessive diffusion
+  that dampens extremes. Artificial intelligence has gained attention for closure modeling, but the prediction
+  of extreme events remains challenging. Supervised offline learning needs abundant high-fidelity training
+  data and can lead to instabilities. Online learning algorithms are emerging as an alternative, but reliance
+  on differentiable numerical solvers or scalable optimizers hinders broad use. Here, we introduce SMARL
+  to develop closures for canonical prototypes of atmospheric/oceanic turbulence, using only the enstrophy
+  spectrum, estimated from a few high-fidelity samples, as reward. This reward ensures that the model
+  captures the cascades of scales in these simulations. These online-learned closures enable stable simulations,
+  with up to five orders of magnitude fewer degrees of freedom, that reproduce high-fidelity simulation
+  statistics and capture in particular extremes. We interpret the closures by analyzing the SMARL policy
+  and demonstrate generalization to other flows. The results highlight SMARL as a potent tool for developing
+  closures capable of capturing extremes in atmospheric/oceanic flows, opening new capabilities for effective
+  climate modeling.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

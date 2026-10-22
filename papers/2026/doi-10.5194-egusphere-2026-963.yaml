@@ -1,0 +1,59 @@
+id: doi-10.5194-egusphere-2026-963
+title: A Two-Stage Bias-Correction and Super-Resolution Framework for Post-Processing Climate Model Outputs
+authors:
+- Abba Ibrahim
+- Aimrun Wayayok
+- Helmi Zulhaidi Mohd Shafri
+- Noorellimia Mat Toridi
+- Wada Idris Muhammad
+date: '2026-05-19'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.5194/egusphere-2026-963
+  openalex: W7161642499
+links:
+  paper: https://doi.org/10.5194/egusphere-2026-963
+  pdf: https://egusphere.copernicus.org/preprints/2026/egusphere-2026-963/egusphere-2026-963.pdf
+topic: downscaling
+topics:
+- post-processing
+type: model
+method:
+- gan-vae
+- classical-ml
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+status: research
+summary: Quantile Delta Mapping followed by a conditional GAN super-resolves CMIP6 precipitation from
+  ~250 km to 14 km over a Nigerian river basin, lowering RMSE.
+abstract: Abstract. General circulation models (GCMs) underpin climate change assessments, yet their coarse
+  spatial resolution and systematic biases constrain their direct use in regional applications. Post-processing
+  approaches such as bias correction and statistical downscaling are therefore widely applied, yet these
+  steps are often implemented independently, leading to inconsistencies between corrected statistics and
+  spatial structure. This study presents a reproducible two-stage framework that integrates Quantile Delta
+  Mapping (QDM) for bias correction with a deep learning-based super-resolution method to improve the
+  statistical fidelity and spatial detail of climate model outputs. The framework is evaluated using precipitation,
+  runoff, and evapotranspiration from three Coupled Model Intercomparison Project Phase 6 (CMIP6) GCMs
+  (Canadian Earth System Model (CanESM5), Hadley Centre Global Environment Model (HadGEM3‐GC31‐LL), and
+  Max Planck Institute Earth System Model (MPI‐ESM1‐2‐HR)), over the Hadejia-Jama'are River Basin in northern
+  Nigeria. We first demonstrate that raw model outputs exhibit substantial biases, with domain-averaged
+  root mean square errors (RMSE) of 48.6–57.3 mm month⁻¹ for precipitation, 0.93–7.51 mm month⁻¹ for runoff,
+  and 33.8–58.7 mm month⁻¹ for evapotranspiration. QDM substantially reduces systematic errors, lowering
+  precipitation RMSE to 23.8–27.8 mm month⁻¹, runoff RMSE to 0.24–1.85 mm month⁻¹, and evapotranspiration
+  RMSE to 3.7–4.3 mm month⁻¹, while preserving projected distributional changes, as confirmed by Kolmogorov-Smirnov
+  (D ≤ 0.072) and Wasserstein (≤ 11.86) metrics. In the second stage, a conditional Generative Adversarial
+  Network (GAN) super-resolves the bias-corrected precipitation fields from ~250 km to 14 km (regridded
+  to 1 km), outperforming bilinear and bicubic interpolation in terms of structural similarity and spatial
+  coherence. The proposed QDM-GAN framework is fully documented and reproducible, with openly available
+  code and data sources, and is intended as a modular post-processing tool that can support downstream
+  modeling applications requiring bias-corrected, high-resolution climate inputs.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

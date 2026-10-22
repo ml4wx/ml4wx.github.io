@@ -1,0 +1,49 @@
+id: arxiv-2512.00252
+title: 'DAISI: Data Assimilation with Inverse Sampling using Stochastic Interpolants'
+authors:
+- Martin Andrae
+- Erik Wikingsson
+- So Takao
+- Tomas Landelius
+- Fredrik Lindsten
+date: '2025-11-29'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2512.00252'
+  openalex: W4416933220
+links:
+  paper: https://arxiv.org/abs/2512.00252
+  pdf: https://arxiv.org/pdf/2512.00252
+  code: https://github.com/Erik-Wikingsson/DAISI
+orgs:
+- caltech
+topic: data-assimilation
+type: model
+method:
+- gan-vae
+spatial:
+- global
+data:
+- other
+status: research
+summary: Flow-based generative priors with inverse sampling perform nonlinear data assimilation with any
+  forecast model, outperforming classical filters under sparse, noisy observations; atmospheric focus
+  is not explicit.
+abstract: Data assimilation (DA) is a cornerstone of scientific and engineering applications, combining
+  model forecasts with sparse and noisy observations to estimate latent system states. Classical high-dimensional
+  DA methods, such as the ensemble Kalman filter, rely on Gaussian approximations that are violated for
+  complex dynamics or observation operators. To address this limitation, we introduce DAISI, a scalable
+  filtering algorithm built on flow-based generative models that enables flexible probabilistic inference
+  using data-driven priors. The core idea is to use a stationary, pre-trained generative prior that first
+  incorporates forecast information through a novel inverse-sampling step, before assimilating observations
+  via guidance-based conditional sampling. This allows us to leverage any forecasting model as part of
+  the DA pipeline without having to retrain or fine-tune the generative prior at each assimilation step.
+  Experiments on challenging nonlinear systems show that DAISI achieves accurate filtering results in
+  regimes with sparse, noisy, and nonlinear observations where traditional methods struggle. The code
+  for DAISI is available at https://github.com/Erik-Wikingsson/DAISI.
+significance: 4
+score: 36
+highlight: false
+added: '2026-10-22'
+source: backfill

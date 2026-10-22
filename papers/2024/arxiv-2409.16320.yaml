@@ -1,0 +1,57 @@
+id: arxiv-2409.16320
+title: Developing a Thailand solar irradiance map using Himawari-8 satellite imageries and deep learning
+  models
+authors:
+- Suwichaya Suwanwimolkul
+- Natanon Tongamrak
+- Nuttamon Thungka
+- Naebboon Hoonchareon
+- Jitkomut Songsiri
+date: '2024-09-21'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2409.16320'
+  openalex: W4403788997
+links:
+  paper: https://arxiv.org/abs/2409.16320
+  pdf: https://arxiv.org/pdf/2409.16320
+topic: applications-impacts
+topics:
+- observations-remote-sensing
+type: application
+method:
+- classical-ml
+- transformer
+- rnn
+spatial:
+- regional
+data:
+- satellite
+- stations
+- era5
+status: pre-operational
+summary: Online Thailand solar irradiance map from Himawari-8 cloud index and ML models; LightGBM achieves
+  78.58 W/sqm MAE against 53 ground stations.
+abstract: This paper presents an online platform showing Thailand solar irradiance map every 30 minutes,
+  available at https://www.cusolarforecast.com. The methodology for estimating global horizontal irradiance
+  (GHI) across Thailand relies on cloud index extracted from Himawari-8 satellite imagery, Ineichen clear-sky
+  model with locally-tuned Linke turbidity, and machine learning models. The methods take clear-sky irradiance,
+  cloud index, re-analyzed GHI and temperature data from the MERRA-2 database, and date-time as inputs
+  for GHI estimation models, including LightGBM, LSTM, Informer, and Transformer. These are benchmarked
+  with the estimate from a commercial service X by evaluation of 15-minute ground GHI data from 53 ground
+  stations over 1.5 years during 2022-2023. The results show that the four models exhibit comparable overall
+  MAE performance to the service X. The best model is LightGBM with an overall MAE of 78.58 W/sqm and
+  RMSE of 118.97 W/sqm, while the service X achieves the lowest MAE, RMSE, and MBE in cloudy condition.
+  Obtaining re-analyzed MERRA-2 data for the whole Thailand region is not economically feasible for deployment.
+  When removing these features, the Informer model has a winning performance in MAE of 78.67 W/sqm. The
+  obtained performance aligns with existing literature by taking the climate zone and time granularity
+  of data into consideration. As the map shows an estimate of GHI over 93,000 grids with a frequent update,
+  the paper also describes a computational framework for displaying the entire map. It tests the runtime
+  performance of deep learning models in the GHI estimation process.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

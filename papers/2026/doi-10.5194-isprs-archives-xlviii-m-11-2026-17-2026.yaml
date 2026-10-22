@@ -1,0 +1,55 @@
+id: doi-10.5194-isprs-archives-xlviii-m-11-2026-17-2026
+title: Cloud-Gap Filtering for Reliable MSG-SEVIRI-Based Snow Cover Records
+authors:
+- Semih Kuter
+- Cagri Hasan Karaman
+- Mustafa Berkay AKPINAR
+- Sevda Zuhal Akyürek
+date: '2026-03-03'
+year: 2026
+venue: "\x98The \x9Cinternational archives of the photogrammetry, remote sensing and spatial information\
+  \ sciences/International archives of the photogrammetry, remote sensing and spatial information sciences"
+venue_type: journal
+ids:
+  doi: 10.5194/isprs-archives-xlviii-m-11-2026-17-2026
+  openalex: W7133354545
+links:
+  paper: https://doi.org/10.5194/isprs-archives-xlviii-m-11-2026-17-2026
+  pdf: https://isprs-archives.copernicus.org/articles/XLVIII-M-11-2026/17/2026/isprs-archives-XLVIII-M-11-2026-17-2026.pdf
+topic: observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- nwp-analysis
+- stations
+status: research
+summary: XGBoost using IFS snow and skin temperature fills cloud gaps in MSG-SEVIRI snow cover records,
+  improving detection under cloud over the European Alps.
+abstract: Abstract. Snow cover is a key variable for climate monitoring and hydrological applications,
+  yet optical satellite observations are strongly limited by cloud contamination, particularly during
+  winter. The EUMETSAT H SAF H34 snow product derived from MSG-SEVIRI uses the unique 15-minute temporal
+  resolution over the full SEVIRI disc to clear the clouds, but persistent clouds still cause substantial
+  data gaps. In this study, we present a cloud-gap reconstruction framework that combines Numerical Weather
+  Prediction data with machine learning to infer snow presence beneath cloud-covered pixels in the H34
+  product. Skin temperature, snow depth, and snow temperature fields from the Integrated Forecast System
+  (IFS) were used as physically consistent predictors and resampled to the H34 grid, together with elevation
+  information from SRTM. An XGBoost-based model was trained using cloud-free H34 snow observations and
+  applied exclusively to cloud-contaminated pixels to estimate the probability of underlying snow presence.
+  Pixels exceeding an 80% probability threshold were reclassified as snow. The approach was applied to
+  the winter seasons of 2024 and 2025 and validated over the European Alps using in-situ snow observations
+  from World Meteorological Organization (WMO) stations. Evaluation using probability of detection (POD),
+  false alarm ratio (FAR), and overall accuracy (ACC) shows a clear improvement in snow detection under
+  cloudy conditions, with a significant reduction in missing observations. Compared to conventional temporal
+  gap-filling methods, the proposed framework reduces reliance on temporal interpolation by directly exploiting
+  physically meaningful meteorological information, while preserving the high temporal resolution advantage
+  of MSG-SEVIRI.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

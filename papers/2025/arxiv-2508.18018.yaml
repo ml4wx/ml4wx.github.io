@@ -1,0 +1,55 @@
+id: arxiv-2508.18018
+title: 'Learning from nature: insights into GraphDOP''s representations of the Earth System'
+authors:
+- Peter Lean
+- Mihai Alexe
+- Eulalie Boucher
+- Ewan Pinnington
+- Simon Lang
+- Patrick Laloyaux
+- Niels Bormann
+- Anthony McNally
+date: '2025-08-25'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2508.18018'
+links:
+  paper: https://arxiv.org/abs/2508.18018
+  pdf: https://arxiv.org/pdf/2508.18018
+topic: xai-uq-physics
+topics:
+- data-assimilation
+type: evaluation
+method:
+- gnn
+spatial:
+- global
+data:
+- satellite
+- stations
+status: research
+summary: Analysis shows GraphDOP, trained only on observations, learns a unified Earth-state latent representation,
+  learned observation operators, and unobserved structures such as jet streams.
+abstract: Through a series of experiments, we provide evidence that the GraphDOP model - trained solely
+  on meteorological observations, using no prior knowledge - develops internal representations of the
+  Earth System state, structure and dynamics as well as the characteristics of different observing systems.
+  Firstly, we demonstrate that the network constructs a unified latent representation of the Earth System
+  state which is common across different observation types. For example, cloud structures maintain physical
+  consistency whether viewed in predictions for satellite radiances from different sensors, or for direct
+  in-situ measurements of the cloud fraction. Secondly, we show examples that suggest that the network
+  learns to emulate viewing effects - learned observation operators that map from the unified state representation
+  to observed properties. Microwave sounder limb effects and geometric viewing effects, such as sunglint
+  in visible imagery, are both well captured. Finally, we demonstrate that the model develops rich internal
+  representations of the structure of meteorological systems and their dynamics. For instance, when the
+  network is only provided with observations from a single infrared instrument, it is able to infer unobserved,
+  non-local structures such as jet streams, surface pressure patterns and warm and cold air masses associated
+  with synoptic systems. This work provides insights into how neural networks trained solely on observations
+  of the Earth System spontaneously develop coherent internal representations of the physical world in
+  order to meet the training objective - enhancing our understanding and guiding future development of
+  these models.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

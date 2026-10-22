@@ -1,0 +1,55 @@
+id: doi-10.1016-j.uclim.2026.102995
+title: 'Hyperlocal urban extreme rainfall forecast system: A convolutional neural network-transfer learning-based
+  downscaling approach'
+authors:
+- Puja Tripathy
+- Raghu G. Murtugudde
+- Vikram Chandel
+- P. E. Zope
+- Subimal Ghosh
+date: '2026-06-18'
+year: 2026
+venue: Urban Climate
+venue_type: journal
+ids:
+  doi: 10.1016/j.uclim.2026.102995
+  openalex: W7165128224
+links:
+  paper: https://doi.org/10.1016/j.uclim.2026.102995
+topic: downscaling
+topics:
+- extremes-hazards
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: research
+summary: CNN statistical downscaling of GFS to 36 Mumbai stations, with transfer learning on heavy rain,
+  raised extreme-event threat scores by up to 616% at day 2.
+abstract: Global warming has intensified extreme precipitation globally, stressing urban infrastructure.
+  While Numerical Weather Prediction (NWP) models have improved, they remain inadequate for forecasting
+  extreme events at local scales, especially in the tropical urban regions. Mumbai, a coastal Indian city
+  with 21 million residents, experiences multiple extreme precipitation events with significant spatial
+  variability during the monsoon season (June to September). The Global Forecast System (GFS) model struggles
+  to forecast extreme rainfall in Mumbai, resulting in low hit rates and high false alarms in predictions.
+  To address this, we performed statistical downscaling of GFS output to 36 stations across Mumbai using
+  a Convolutional Neural Network (CNN). While the CNN improved overall GFS skill, improvements for extreme
+  events were minimal due to their rarity in training data. We enhanced this using CNN-Transfer Learning
+  (CNN-TL), pre-training the model on the full rainfall dataset and fine-tuning it on heavy rainfall events.
+  This approach improved threat scores (TS) by 12.94% to 498.92% and 76.47% to 616.67% for Lead Days 1
+  and 2, respectively, at the 95th percentile across different stations. On Lead Day 3, the CNN-TL model
+  achieved TS ≥ 0.2 for most stations at the 95th percentile, while GFS forecasts failed to capture extreme
+  rainfall events at this lead time. Correlation coefficients also showed significant improvements. The
+  CNN-TL approach outperformed Mumbai's operational forecast model. This method is replicable in other
+  cities with available long-term station data.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

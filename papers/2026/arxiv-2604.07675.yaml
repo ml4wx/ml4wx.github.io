@@ -1,0 +1,54 @@
+id: arxiv-2604.07675
+title: 'FireSenseNet: A Dual-Branch CNN with Cross-Attentive Feature Interaction for Next-Day Wildfire
+  Spread Prediction'
+authors:
+- Jinzhen Han
+- JinByeong Lee
+- Hak Han
+- YeonJu Na
+- Jae-Joon Lee
+date: '2026-04-09'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2604.07675'
+  openalex: W7153067314
+links:
+  paper: https://arxiv.org/abs/2604.07675
+  pdf: https://arxiv.org/pdf/2604.07675
+topic: extremes-hazards
+topics:
+- benchmarks-data-eval
+type: model
+method:
+- cnn
+- transformer
+timescale:
+- short
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Dual-branch CNN with cross-attention for next-day wildfire spread reaches F1 0.4176, and shows
+  common evaluation shortcuts inflate reported F1 by over 44%.
+abstract: Accurate prediction of next-day wildfire spread is critical for disaster response and resource
+  allocation. Existing deep learning approaches typically concatenate heterogeneous geospatial inputs
+  into a single tensor, ignoring the fundamental physical distinction between static fuel/terrain properties
+  and dynamic meteorological conditions. We propose FireSenseNet, a dual-branch convolutional neural network
+  equipped with a novel Cross-Attentive Feature Interaction Module (CAFIM) that explicitly models the
+  spatially varying interaction between fuel and weather modalities through learnable attention gates
+  at multiple encoder scales. Through a systematic comparison of seven architectures -- spanning pure
+  CNNs, Vision Transformers, and hybrid designs -- on the Google Next-Day Wildfire Spread benchmark, we
+  demonstrate that FireSenseNet achieves an F1 of 0.4176 and AUC-PR of 0.3435, outperforming all alternatives
+  including a SegFormer with 3.8* more parameters (F1 = 0.3502). Ablation studies confirm that CAFIM provides
+  a 7.1% relative F1 gain over naive concatenation, and channel-wise feature importance analysis reveals
+  that the previous-day fire mask dominates prediction while wind speed acts as noise at the dataset's
+  coarse temporal resolution. We further incorporate Monte Carlo Dropout for pixel-level uncertainty quantification
+  and present a critical analysis showing that common evaluation shortcuts inflate reported F1 scores
+  by over 44%.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

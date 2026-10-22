@@ -1,0 +1,69 @@
+id: doi-10.1002-qj.70111
+title: Assimilation of solar‐induced fluorescence satellite observations in the European Centre for Medium‐Range
+  Weather Forecasts integrated forecast system
+authors:
+- Sébastien Garrigues
+- Patricia de Rosnay
+- Peter Weston
+- Christoph Rüdiger
+- Cédric Bacour
+- David Fairbairn
+- Pierre Vanderbecken
+- Oscar Javier Rojas Muñoz
+- Ewan Pinnington
+- Anna Agustí‐Panareda
+- Souhail Boussetta
+- Jean‐Christophe Calvet
+- Richard J. Engelen
+date: '2026-02-10'
+year: 2026
+venue: Quarterly Journal of the Royal Meteorological Society
+venue_type: journal
+ids:
+  doi: 10.1002/qj.70111
+  openalex: W7128466644
+links:
+  paper: https://doi.org/10.1002/qj.70111
+orgs:
+- ecmwf
+- meteo-france
+topic: data-assimilation
+type: model
+method:
+- classical-ml
+spatial:
+- global
+data:
+- satellite
+- nwp-analysis
+status: research
+summary: XGBoost-based ML observation operator assimilates TROPOMI solar-induced fluorescence into the
+  IFS, improving leaf area index and gross primary productivity over cropland.
+abstract: 'Abstract The objective of this work is to assess the potential of the assimilation of satellite
+  solar‐induced fluorescence (SIF) retrievals at eight‐day and 0.1° resolutions, derived from the TROPOMI
+  instrument on board Copernicus Sentinel‐5P, in the integrated forecast system (IFS) developed at the
+  European Centre for Medium‐Range Weather Forecasts (ECMWF), to update the IFS leaf area index (LAI)
+  climatology and improve the IFS forecasts of gross primary productivity (GPP). This work represents
+  a first attempt to assimilate SIF in a numerical weather prediction (NWP) framework at global scale
+  by leveraging a machine‐learning (ML)‐based observation operator. Two configurations of the ML‐based
+  observation operator, based on the XGBoost gradient‐boosted trees technique, were assessed: one trained
+  using the IFS model fields which include the IFS LAI climatology, and one trained using only the actual
+  satellite LAI observations along with spatiotemporal localization variables. The model directly trained
+  on the satellite LAI shows the highest prediction scores. Besides, it produces more meaningful spatial
+  patterns of LAI increments in response to climate anomalies compared to the model trained using the
+  IFS predictors which do not include vegetation interannual variability. A key outcome is that the assimilation
+  of SIF in the IFS improves LAI over cropland, which is promising for the monitoring of anthropogenic
+  emissions over agriculture regions. However, at these spatial and temporal resolutions, the SIF ML model
+  mainly resolves the seasonal variability of LAI which explains the degradations of LAI over tropical
+  rainforests where the SIF signal is mainly driven by the variability in light use efficiency and the
+  satellite LAI retrievals are more uncertain. Finally, the use of the updated LAI in the IFS coupled
+  model leads to limited improvement of GPP forecasts, which is likely due to the prevailing effects of
+  other sources of biases in the coupled IFS model.'
+significance: 6
+cited_by: 1
+score: 59
+highlight: true
+highlight_reason: First global SIF assimilation attempt in ECMWF IFS using an ML observation operator;
+  relevant to land DA and carbon-cycle forecasting.
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,61 @@
+id: doi-10.3390-rs18193362
+title: Multi-Lead Forecasting of Precipitable Water Vapor over Xinjiang Using Fengyun-4B Satellite and
+  GNSS Observations
+authors:
+- Xinghui Liu
+- Qing He
+- Cheng Long
+- Shujie Yuan
+- Yiwen Shi
+- Ning Yang
+- Gejie Zhu
+date: '2026-10-01'
+year: 2026
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs18193362
+  openalex: W7215051621
+links:
+  paper: https://doi.org/10.3390/rs18193362
+orgs:
+- cma
+topic: local-forecasting
+topics:
+- observations-remote-sensing
+type: model
+method:
+- classical-ml
+timescale:
+- nowcast
+- short
+spatial:
+- regional
+data:
+- satellite
+- stations
+status: research
+summary: LightGBM models fuse FY-4B imagery with GNSS data to forecast Xinjiang precipitable water vapor
+  1-72 h ahead, with R2 of 0.92 at 1 h and 0.47 at 12 h.
+abstract: Atmospheric water vapor is a key driver of weather variability, and accurate forecasts of precipitable
+  water vapor (PWV) can support quantitative precipitation forecasting. Existing PWV forecasting studies
+  have relied mainly on Global Navigation Satellite System (GNSS) observations, which provide high temporal
+  resolution but limited spatial coverage. This study develops a regional multi-lead PWV forecasting framework
+  for Xinjiang, China, by combining Fengyun-4B (FY-4B) Advanced Geosynchronous Radiation Imager (AGRI)
+  observations with ground-based GNSS PWV measurements. FY-4B gridded observations were collocated with
+  34 GNSS stations using a KD-tree search followed by a Haversine distance calculation, yielding 332,115
+  valid hourly samples from June 2023 to August 2024. Predictors included geographic and calendar variables,
+  AGRI thermal-infrared brightness temperatures, Level-2 cloud products, physically derived water-vapor
+  features, and multiscale lagged variables. Twenty-four independent LightGBM regressors were trained
+  for lead times from 1 to 72 h, avoiding the error accumulation inherent in autoregressive forecasting.
+  At T + 1 h, the model achieved a mean absolute error (MAE) of 0.72 mm and a coefficient of determination
+  (R2) of 0.92. At T + 12 h, MAE increased to 2.45 mm while R2 remained 0.47. Forecast skill declined
+  further at T + 24 h (MAE = 5.10 mm; R2 = 0.23) and was limited at T + 72 h (MAE = 6.22 mm; R2 = 0.04).
+  The results demonstrate that satellite-driven machine learning can provide useful very-short-range PWV
+  guidance, particularly within the first 12 h.
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

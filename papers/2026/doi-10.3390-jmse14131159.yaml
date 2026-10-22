@@ -1,0 +1,62 @@
+id: doi-10.3390-jmse14131159
+title: A Three-Stage Deep Learning Framework for Short-Term Tropical Cyclone Track Prediction
+authors:
+- Haocheng Shi
+- Dan Song
+- Guijing Yang
+- Longyu Jiang
+- Xuezhu Wang
+- Shuangyan He
+date: '2026-06-23'
+year: 2026
+venue: Journal of Marine Science and Engineering
+venue_type: journal
+ids:
+  doi: 10.3390/jmse14131159
+  openalex: W7165667244
+links:
+  paper: https://doi.org/10.3390/jmse14131159
+topic: extremes-hazards
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- cnn
+- gan-vae
+- diffusion
+timescale:
+- short
+spatial:
+- regional
+data:
+- other
+- nwp-analysis
+status: research
+summary: TCN-GAN-DM generates candidate tropical cyclone tracks then refines them by diffusion, matching
+  CMA-GFS at 6 h (49.1 km) and beating FuXi, though it lags beyond 12 h.
+abstract: Accurate tropical cyclone (TC) track prediction remains challenging, as numerical models suffer
+  from high computational cost, substantial storage requirements, and physical parameterization uncertainties,
+  while data-driven large AI models depend heavily on training data volume and high-resolution inputs,
+  resulting in prohibitive computational overhead. To address these issues, this paper proposes TCN-GAN-DM,
+  a three-stage deep learning framework based on the China Meteorological Administration (CMA) Tropical
+  Cyclone Best Track Dataset. Specifically, a dual-stream temporal convolutional network (TCN) first extracts
+  temporal features from track and meteorological sequences, respectively. A generative adversarial network
+  (GAN) then takes these features and produces multiple physically plausible candidate tracks via noise
+  injection. Finally, a conditional diffusion model (DM) refines the predicted positions through progressive
+  denoising. Experimental results for TCs in 2024 show that under the fair deterministic comparison using
+  a single fixed candidate, the model achieves a 6 h track error of 49.10 km, which is comparable to CMA-GFS
+  (49.75 km) and HWRF (44.34 km), and substantially lower than the large AI model FuXi (120.44 km). When
+  evaluating the oracle metric (best-of-K, K = 6) as an upper bound of coverage, the model achieves the
+  smallest errors among all models at 6 h (24.04 km) and 12 h (55.81 km). In addition, the proposed model
+  has advantages over CMA-GFS, HWRF, and FuXi in terms of computational resource consumption and hardware
+  deployment cost. However, its mean track error increases more rapidly beyond 12 h, and at lead times
+  of 18 h and 24 h the model is outperformed by HWRF, FuXi, and CMA-GFS, indicating that its current strength
+  lies primarily in short-term prediction. Consequently, the practical utility of TCN-GAN-DM is currently
+  demonstrated for 6–12 h TC track prediction, offering a new solution for disaster prevention and mitigation
+  that balances accuracy and deployment cost at these specific time scales.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

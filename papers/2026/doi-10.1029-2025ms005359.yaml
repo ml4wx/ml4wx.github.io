@@ -1,0 +1,57 @@
+id: doi-10.1029-2025ms005359
+title: Unified Attention Recurrent Neural Network for Bias Correction of MJO Prediction
+authors:
+- Yiyi Guo
+- Vassili Kitsios
+- Tingru Cui
+- Liuhua Peng
+- Feng Liu
+date: '2026-06-26'
+year: 2026
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2025ms005359
+  openalex: W7166032212
+links:
+  paper: https://doi.org/10.1029/2025ms005359
+topic: post-processing
+topics:
+- s2s-seasonal
+type: model
+method:
+- rnn
+- transformer
+timescale:
+- s2s
+spatial:
+- global
+data:
+- nwp-analysis
+status: research
+summary: Attention-RNN with masked lead-time inputs and a phase-regulated loss corrects MJO forecast bias
+  across all lead times in operational S2S reforecasts.
+abstract: 'Abstract In global subseasonal forecasting using dynamical models, correcting the systematic
+  biases of Madden–Julian Oscillation (MJO) predictions has proven critical, particularly due to issues
+  of rapid amplitude damping and phase distortion. To address these biases, recent studies have demonstrated
+  that deep learning offers a promising solution by learning mappings that directly translate biased dynamical
+  model outputs to ground truth MJO indices, effectively serving as post‐processing bias correctors. These
+  approaches implicitly assume that a single neural network can extract all relevant features necessary
+  for bias correction across different forecast time steps. However, we observe that the relationships
+  between forecast lead times and their corresponding corrections are more intricate: features relevant
+  to short range forecasting error differ significantly from those that govern long range forecasting
+  errors. Consequently, direct mapping strategies often result in suboptimal performance, excelling in
+  either short or long range forecasts, but rarely both. To address this challenge, we propose a unified
+  attention recurrent neural network framework that processes the full sequence of dynamical forecasts
+  using a masked input tensor, enabling the model to extract temporally contextualized features across
+  all lead times. Additionally, we introduce a phase regulated loss function that explicitly penalizes
+  errors in both amplitude and phase, capturing the cyclical structure of MJO more effectively than traditional
+  mean squared error based objectives. Comprehensive evaluations on operational subseasonal to seasonal
+  reforecast data sets demonstrate that our method significantly improves forecast accuracy and lead‐time
+  consistency.'
+significance: 4
+cited_by: 0
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

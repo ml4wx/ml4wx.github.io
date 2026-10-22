@@ -1,0 +1,47 @@
+id: arxiv-2501.19374
+title: Fixing the Double Penalty in Data-Driven Weather Forecasting Through a Modified Spherical Harmonic
+  Loss Function
+authors:
+- Christopher Subich
+- Syed Zahid Husain
+- Leo Separovic
+- Jing Yang
+date: '2025-01-31'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2501.19374'
+  openalex: W4407091855
+links:
+  paper: https://arxiv.org/abs/2501.19374
+  pdf: https://arxiv.org/pdf/2501.19374
+topic: global-medium-range
+topics:
+- xai-uq-physics
+type: model
+method:
+- gnn
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: A parameter-free spherical harmonic loss fine-tunes GraphCast to raise effective resolution from
+  1,250 km to 160 km while keeping sharp forecasts and better cyclone strength.
+abstract: Recent advancements in data-driven weather forecasting models have delivered deterministic models
+  that outperform the leading operational forecast systems based on traditional, physics-based models.
+  However, these data-driven models are typically trained with a mean squared error loss function, which
+  causes smoothing of fine scales through a "double penalty" effect. We develop a simple, parameter-free
+  modification to this loss function that avoids this problem by separating the loss attributable to decorrelation
+  from the loss attributable to spectral amplitude errors. Fine-tuning the GraphCast model with this new
+  loss function results in sharp deterministic weather forecasts, an increase of the model's effective
+  resolution from 1,250km to 160km, improvements to ensemble spread, and improvements to predictions of
+  tropical cyclone strength and surface wind extremes.
+significance: 5
+cited_by: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

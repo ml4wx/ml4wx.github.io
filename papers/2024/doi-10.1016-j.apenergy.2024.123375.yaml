@@ -1,0 +1,54 @@
+id: doi-10.1016-j.apenergy.2024.123375
+title: A hybrid physics-based and data-driven model for intra-day and day-ahead wind power forecasting
+  considering a drastically expanded predictor search space
+authors:
+- Nicolas Kirchner-Bossi
+- Gabriel Kathari
+- Fernando Porté‐Agel
+date: '2024-05-11'
+year: 2024
+venue: Applied Energy
+venue_type: journal
+ids:
+  doi: 10.1016/j.apenergy.2024.123375
+  openalex: W4396842144
+links:
+  paper: https://doi.org/10.1016/j.apenergy.2024.123375
+topic: applications-impacts
+topics:
+- post-processing
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+status: research
+summary: Genetic algorithm selects from many COSMO-1 predictors for neural-network wind power forecasts,
+  reaching about 11% normalized RMSE at 12–24 h, roughly 16% better than standard predictor sets.
+abstract: 'This work presents a novel hybrid (physics- and data-driven) model for short-term (intra-day
+  and day-ahead, 3h-24h) wind power forecasting (STWPF). Traditionally, STWPF predictors admitted very
+  few meteorological variables only from the grid points closest to the turbines. Here, with the aim to
+  further capture the underlying atmospheric processes ruling the wind variability in the wind farm, the
+  approach relies on drastically expanding the predictor space, composed of numerous meteorological variables
+  throughout a large geographical domain, retrieved from a weather forecasting model (COSMO-1). An ad-hoc
+  genetic algorithm that optimizes the selection of predictors is designed and combined with feed-forward
+  artificial neural networks for its cost function evaluation. The introduced model is compared to multiple
+  benchmark models in a 16-turbine wind farm in the Swiss Jura mountains. For +12h and +24h lead times,
+  the new approach shows a root-mean squared error normalized to the installed wind farm capacity of 11%
+  and 11.6%, respectively. These values entail ∼16% higher forecasting skill compared to state-of-the-art
+  predictor frameworks. Results highlight the ability of the presented approach to systematically select
+  as predictors different variables with a well-known impact on the wind farm performance, such as the
+  turbulent kinetic energy or the vertical wind shear. Clustering the data according to the wind direction
+  provides substantial benefit. In addition, it provides a better understanding of the attained improvement:
+  largest performances occur in those wind directions affected by highly complex terrain. This indicates
+  that the proposed model can be especially suitable for wind farms in complex terrain.'
+significance: 3
+cited_by: 30
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

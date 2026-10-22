@@ -1,0 +1,60 @@
+id: doi-10.3390-atmos16101188
+title: CHIRTS Gridded Air Temperature Downscaling Integrating MODIS Land Surface Temperature Estimates
+  in Machine-Learning Models
+authors:
+- Elvis Uscamayta-Ferrano
+- Frédéric Satgé
+- Ramiro Pillco Zolá
+- Henrique Llacer Roig
+- Diego Tola
+- Mayra Perez-Flores
+- Lautaro Bustillos
+- Fara Pascale Rakotomandrindra
+- Zo Rabefitia
+- Simon Carrière
+date: '2025-10-15'
+year: 2025
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos16101188
+  openalex: W4415195547
+links:
+  paper: https://doi.org/10.3390/atmos16101188
+  pdf: https://www.mdpi.com/2073-4433/16/10/1188/pdf?version=1760536843
+topic: downscaling
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- other
+status: research
+summary: Random Forest and XGBoost with MODIS land surface temperature downscale CHIRTS air temperature
+  from 5 km to 1 km, improving Tn accuracy most.
+abstract: 'Due to its sensitivity to topographic and land use land cover features, air temperature (maximum,
+  minimum, and mean—Tx, Tn, and Tmean) is extremely variable in space and time. The sparse and unevenly
+  distributed meteorological stations observed across remote regions cannot monitor such variability.
+  Freely available, gridded temperature datasets (T-datasets) are positioned as an opportunity to overcome
+  this issue. Still, their coarse spatial resolution (i.e., ≥5 km) does not allow for the observation
+  of air temperature variations on a fine spatial scale. In this context, a set of variables that have
+  a close relationship with daily air temperature (MODIS maximum, minimum, and mean Land Surface Temperature—LSTx,
+  LSTn, and LSTmean; MODIS NDVI; SRTM topographic features—elevation, slope, and aspect) are integrated
+  in three regression machine-learning models (Random Forest—RF, eXtreme Gradient Boosting—XGB, Multiple
+  Linear Regression—MLR) to propose a T-dataset estimates (Tx, Tn, and Tmean) spatial resolution downscaling
+  framework. The approach consists of two main steps: firstly, the machine-learning models are trained
+  at the native 5 km spatial resolution of the studied T-dataset (i.e., CHIRTS); secondly, the application
+  of the trained machine-learning models at a 1 km spatial resolution to downscale CHIRTS from 5 km to
+  1 km. The results show that the method not only improves the spatial resolution of the CHIRTS dataset,
+  but also its accuracy, with higher improvements for Tn than for Tx and Tmean. Among the considered models,
+  RF performs the best, with an R2, RMSE, and MAE improvement of 2.6% (0%), 47.1% (6.1%), and 55.3% (7%)
+  for Tn (Tx). These results will support air temperature monitoring and related extreme events such as
+  heat and cold waves, which are of prime importance in the actual climate change context.'
+significance: 2
+cited_by: 1
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

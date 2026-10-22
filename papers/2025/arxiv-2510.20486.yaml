@@ -1,0 +1,54 @@
+id: arxiv-2510.20486
+title: 'Hurdle-RMIL: Addressing Zero Inflation and Long-Tailed Imbalance in Infrared Rainfall Retrieval'
+authors:
+- Fangjian Zhang
+- Xiaoyong Zhuge
+- Wenlan Wang
+- Haixia Xiao
+- Yuying Zhu
+- Siyang Cheng
+- Ali Mamtimin
+date: '2025-10-23'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2510.20486'
+  openalex: W4417077329
+links:
+  paper: https://arxiv.org/abs/2510.20486
+  pdf: https://arxiv.org/pdf/2510.20486
+topic: observations-remote-sensing
+type: model
+method:
+- other
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Hurdle-RMIL separates zero inflation from long-tailed rain distributions in infrared retrieval,
+  reaching ETS 0.051 at 30 mm/h versus 0.015 for the best baseline.
+abstract: Imbalanced labels can cause frequent samples to dominate AI-based quantitative remote sensing,
+  degrading rare-event retrieval. In rain-rate retrieval based on satellite infrared brightness temperatures,
+  this imbalance leads to systematic underestimation of rare high-intensity rainfall. In this study, Hurdle-Retrieval
+  Model Imbalanced Learning (RMIL) is proposed. Following a divide-and-conquer strategy, Hurdle-RMIL separates
+  zero inflation from the long-tailed distribution of positive rain. A hurdle model handles zero inflation,
+  whereas RMIL exploits invariance under fixed observation conditions of the rainfall-to-satellite forward
+  process to derive a Bayes-based transformation linking conditional distributions under naturally long-tailed
+  and hypothetical balanced rainfall. This transformation enables the balanced-distribution model to be
+  learned from natural samples without constructing a balanced dataset. Comparisons with conventional
+  learning, classification-regression modeling, cost-sensitive learning, and generative learning using
+  test data from multiple regions in China show that Hurdle-RMIL mitigates systematic underestimation
+  and improves detection of rare high-intensity and extreme rainfall without markedly degrading lower-threshold
+  accuracy. At 0.1-10 mm per hour, its root mean square error remains close to those of the best baselines,
+  and it yields the highest equitable threat score (ETS) at most evaluated thresholds, with its advantage
+  becoming more pronounced at high thresholds. At 30 mm per hour, its ETS is 0.051 versus 0.015 for the
+  best baseline, and its mean error is -25.41 mm per hour versus -28.98 mm per hour. Case studies further
+  show improved representations of rainfall intensity and spatial extent, demonstrating that Hurdle-RMIL
+  effectively addresses rainfall-distribution imbalance and improves the retrieval of rare high-intensity
+  rainfall.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

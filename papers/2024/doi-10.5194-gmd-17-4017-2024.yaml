@@ -1,0 +1,54 @@
+id: doi-10.5194-gmd-17-4017-2024
+title: Efficient and stable coupling of the SuperdropNet deep-learning-based cloud microphysics (v0.1.0)
+  with the ICON climate and weather model (v2.6.5)
+authors:
+- Caroline Arnold
+- Shivani Sharma
+- Tobias Weigel
+- David S. Greenberg
+date: '2024-05-16'
+year: 2024
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-17-4017-2024
+  openalex: W4396970369
+links:
+  paper: https://doi.org/10.5194/gmd-17-4017-2024
+orgs:
+- mpi-meteorology
+topic: hybrid-parameterization
+topics:
+- infra-software
+type: model
+method:
+- other
+spatial:
+- global
+data:
+- km-scale-sim
+status: pre-operational
+summary: SuperdropNet, a neural emulator of warm-rain microphysics, is coupled into the ICON model via
+  three strategies, with stable, physically consistent warm-bubble results.
+abstract: 'Abstract. Machine learning (ML) algorithms can be used in Earth System models (ESMs) to emulate
+  sub-grid-scale processes. Due to the statistical nature of ML algorithms and the high complexity of
+  ESMs, these hybrid ML-ESMs require careful validation. Simulation stability needs to be monitored in
+  fully coupled simulations, and the plausibility of results needs to be evaluated in suitable experiments.
+  We present the coupling of SuperdropNet, a machine learning model for emulating warm rain processes
+  in cloud microphysics, into ICON~2.6.5. SuperdropNet is trained on superdroplet simulations and predicts
+  updates of the bulk moments for cloud and rain. It replaces the accretion, autoconversion, and self-collection
+  of rain and cloud droplets in two-moment cloud microphysics. We address the technical challenge of integrating
+  SuperdropNet, developed in Python and PyTorch, into ICON, written in Fortran, by implementing three
+  different coupling strategies: embedded Python via the C Foreign Function Interface, pipes, and coupling
+  of program components via YetAnotherCoupler (YAC). We validate the emulator in the warm bubble scenario
+  and find that SuperdropNet runs stable within the experiment. In comparing experiment outcomes from
+  the bulk moment scheme and SuperdropNet, we find that the results are physically consistent, and discuss
+  differences that are observed for several diagnostic variables. In addition, we provide a quantitative
+  and qualitative computational benchmark for three different coupling strategies—embedded Python, coupler
+  YAC, and pipes—and find that embedded Python is a useful software tool for validating hybrid ML-ESMs.'
+significance: 4
+cited_by: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

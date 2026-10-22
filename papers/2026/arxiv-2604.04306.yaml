@@ -1,0 +1,52 @@
+id: arxiv-2604.04306
+title: 'HighFM: Towards a Foundation Model for Learning Representations from High-Frequency Earth Observation
+  Data'
+authors:
+- Stella Girtsou
+- Konstantinos Alexis
+- Giorgos Giannopoulos
+- Charalambos Kontoes
+date: '2026-04-05'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2604.04306'
+  doi: 10.24963/ijcai.2026/796
+  openalex: W7151616842
+links:
+  paper: https://arxiv.org/abs/2604.04306
+  pdf: https://arxiv.org/pdf/2604.04306
+topic: observations-remote-sensing
+topics:
+- foundation-models
+- extremes-hazards
+type: model
+method:
+- transformer
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: HighFM pretrains masked-autoencoder ViTs on 2 TB of SEVIRI geostationary imagery, improving cloud
+  masking and active fire detection over baselines.
+abstract: The increasing frequency and severity of climate related disasters have intensified the need
+  for real time monitoring, early warning, and informed decision-making. Earth Observation (EO), powered
+  by satellite data and Machine Learning (ML), offers powerful tools to meet these challenges. Foundation
+  Models (FMs) have revolutionized EO ML by enabling general-purpose pretraining on large scale remote
+  sensing datasets. However most existing models rely on high-resolution satellite imagery with low revisit
+  rates limiting their suitability for fast-evolving phenomena and time critical emergency response. In
+  this work, we present HighFM, a first cut approach towards a FM for high temporal resolution, multispectral
+  EO data. Leveraging over 2 TB of SEVIRI imagery from the Meteosat Second Generation (MSG) platform,
+  we adapt the SatMAE masked autoencoding framework to learn robust spatiotemporal representations. To
+  support real time monitoring, we enhance the original architecture with fine grained temporal encodings
+  to capture short term variability. The pretrained models are then finetuned on cloud masking and active
+  fire detection tasks. We benchmark our SEVIRI pretrained Vision Transformers against traditional baselines
+  and recent geospatial FMs, demonstrating consistent gains across both balanced accuracy and IoU metrics.
+  Our results highlight the potential of temporally dense geostationary data for real-time EO, offering
+  a scalable path toward foundation models for disaster detection and tracking.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

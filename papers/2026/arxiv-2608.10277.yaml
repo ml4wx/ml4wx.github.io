@@ -1,0 +1,62 @@
+id: arxiv-2608.10277
+title: Stochastic Emulation of a Fully Coupled Preindustrial E3SMv3 Simulation
+authors:
+- Elynn Wu
+- James P. C. Duncan
+- Troy Arcomano
+- Jeremy McGibbon
+- Oliver Watt-Meyer
+- Christopher S. Bretherton
+- Naser Mahfouz
+- Claudia Tebaldi
+- Luke Van Roekel
+- Andrew Roberts
+- Wuyin Lin
+- Finn Rebassoo
+- Jean-Christophe Golaz
+- Peter M. Caldwell
+date: '2026-08-10'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2608.10277'
+  openalex: W7202287106
+links:
+  paper: https://arxiv.org/abs/2608.10277
+  pdf: https://arxiv.org/pdf/2608.10277
+orgs:
+- ai2
+topic: climate-emulation
+topics:
+- hybrid-parameterization
+type: model
+method:
+- other
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: A stochastic coupled emulator, ACE2S plus Samudra, reproduces a 400-year preindustrial E3SMv3
+  control with small biases and retains ENSO and sea-ice variability.
+abstract: We present a stochastic coupled emulator of E3SM version 3, built on the SamudrACE framework,
+  which couples an atmosphere emulator (ACE2) with a full-depth ocean emulator (Samudra). We replace the
+  deterministic atmosphere emulator with its stochastic counterpart, ACE2S, and fine-tune the coupled
+  system with a probabilistic objective, so that the atmosphere acts as a source of internal variability
+  for the ocean. Trained on 105 years of a pre-industrial control simulation and evaluated on an independent
+  400 years, the emulator reproduces E3SMv3's mean climate state with biases much smaller than existing
+  model-to-observation differences. Relative to a deterministic baseline, stochastic training maintains
+  internal variability across timescales, most notably in the ENSO power spectrum, eddy-rich SST anomalies,
+  and sea ice variability in the marginal ice zone. The emulator captures daily precipitation accurately
+  up to the 99.99th percentile, but underestimates the rarest tropical extremes. These results show that
+  stochastic coupled emulators can reproduce long-timescale variability with high fidelity, while extrapolation
+  to unseen extremes remains a key challenge.
+significance: 6
+score: 59
+highlight: true
+highlight_reason: Stochastic coupled atmosphere-ocean emulator (SamudrACE with ACE2S) preserves ENSO and
+  internal variability over 400 years; a meaningful step for climate emulation.
+added: '2026-10-22'
+source: backfill

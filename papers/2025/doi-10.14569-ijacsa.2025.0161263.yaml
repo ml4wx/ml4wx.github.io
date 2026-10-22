@@ -1,0 +1,58 @@
+id: doi-10.14569-ijacsa.2025.0161263
+title: Deep Learning Approach for Solar Radiation Forecasting in a Tropical Region Using LSTM Networks
+authors:
+- Manuel Alejandro Ospina Alarcón
+- Gabriel Chanchí
+- Álvaro Realpe
+date: '2025-01-01'
+year: 2025
+venue: International Journal of Advanced Computer Science and Applications
+venue_type: journal
+ids:
+  doi: 10.14569/ijacsa.2025.0161263
+  openalex: W7117976105
+links:
+  paper: https://doi.org/10.14569/ijacsa.2025.0161263
+  pdf: https://thesai.org/Downloads/Volume16No12/Paper_63-Deep_Learning_Approach_for_Solar_Radiation_Forecasting.pdf
+topic: local-forecasting
+type: model
+method:
+- rnn
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: LSTM networks forecast hourly solar radiation in tropical Mompox, Colombia; a 720-hour input
+  window gives the lowest RMSE across 2023–2024 validation years.
+abstract: Solar radiation forecasting is a key task for energy planning, grid management, and photovoltaic
+  deployment, especially in tropical regions where weather variability reduces operational reliability.
+  This work applies deep learning techniques to forecast hourly solar radiation in Mompox, Colombia, using
+  Long Short-Term Memory (LSTM) neural networks. Three temporal windows were studied (5, 24, and 720 hours)
+  to examine how sequence length affects prediction accuracy and model behavior. Hourly radiation data
+  from 2021 to 2022 were used for training, and independent datasets from 2023 to 2024 were used for external
+  validation to ensure long-term assessment and reproducibility. Most existing studies use short input
+  windows designed for mid-latitude environments (5–24 hours), which do not capture multi-day tropical
+  cloud persistence or sub-seasonal radiation variability. This gap limits forecasting accuracy and restricts
+  practical use in tropical energy planning. To address this issue, this study introduces a long temporal
+  input design that allows the model to learn month-scale variability more effectively. The three network
+  configurations were trained under the same settings, allowing a direct comparison between short, daily,
+  and long input memories. The LSTM-720 model performed best, achieving the lowest RMSE and the most stable
+  predictions across all validation years, showing its ability to reconstruct both diurnal cycles and
+  broader seasonal dynamics. Unlike most solar forecasting work, which treats window size as a tuning
+  parameter, this study introduces a long-context LSTM design based on a 720-hour sequence. This allowed
+  the model to learn intra-month atmospheric persistence—an essential tropical feature that short windows
+  cannot represent—positioning the approach as a methodological contribution that expands the temporal
+  learning paradigm rather than a configuration adjustment. Time-series comparisons revealed close agreement
+  between measured and predicted radiation, particularly during stable climate periods. The proposed framework
+  can support practical applications in solar plant design, renewable energy scheduling, and operational
+  grid strategies in tropical regions. Future work will integrate satellite information and hybrid deep
+  learning architectures to enhance spatial transferability and long-term forecasting accuracy.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

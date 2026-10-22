@@ -1,0 +1,54 @@
+id: arxiv-2501.13312
+title: 'Tensor-Var: Efficient Four-Dimensional Variational Data Assimilation'
+authors:
+- Yiming Yang
+- Xiaoyuan Cheng
+- Daniel Giles
+- Sibo Cheng
+- Yi He
+- Xiao Xue
+- Boli Chen
+- Yukun Hu
+date: '2025-01-23'
+year: 2025
+venue: Proceedings of the Forty-second International Conference on Machine Learning (ICML), 2025
+venue_type: journal
+ids:
+  arxiv: '2501.13312'
+  openalex: W4406785400
+links:
+  paper: https://arxiv.org/abs/2501.13312
+  pdf: https://arxiv.org/pdf/2501.13312
+topic: data-assimilation
+topics:
+- global-medium-range
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- global
+data:
+- other
+status: research
+summary: Tensor-Var embeds kernel conditional mean embeddings in 4D-Var for convex assimilation, reporting
+  10-20 times speedup over deep-learning hybrid baselines on global weather prediction.
+abstract: Variational data assimilation estimates the dynamical system states by minimizing a cost function
+  that fits the numerical models with the observational data. Although four-dimensional variational assimilation
+  (4D-Var) is widely used, it faces high computational costs in complex nonlinear systems and depends
+  on imperfect state-observation mappings. Deep learning (DL) offers more expressive approximators, while
+  integrating DL models into 4D-Var is challenging due to their nonlinearities and lack of theoretical
+  guarantees in assimilation results. In this paper, we propose Tensor-Var, a novel framework that integrates
+  kernel conditional mean embedding (CME) with 4D-Var to linearize nonlinear dynamics, achieving convex
+  optimization in a learned feature space. Moreover, our method provides a new perspective for solving
+  4D-Var in a linear way, offering theoretical guarantees of consistent assimilation results between the
+  original and feature spaces. To handle large-scale problems, we propose a method to learn deep features
+  using neural networks within the Tensor-Var framework. Experiments on chaotic systems and global weather
+  prediction with real-time observations show that Tensor-Var outperforms conventional and DL hybrid 4D-Var
+  baselines in accuracy while achieving a 10- to 20-fold speed improvement.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

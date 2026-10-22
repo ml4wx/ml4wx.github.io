@@ -1,0 +1,52 @@
+id: doi-10.5194-egusphere-2026-3243
+title: Spatiotemporal Dual-Stream Transformers for Cloud Microphysical Parameterization
+authors:
+- Yijun Huang
+- Qi Zhang
+- Hoiio Kong
+- Chanseng Wong
+- Huan Qi Zhao
+- Ting Shu
+date: '2026-06-18'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.5194/egusphere-2026-3243
+  openalex: W7165156282
+links:
+  paper: https://doi.org/10.5194/egusphere-2026-3243
+  pdf: https://egusphere.copernicus.org/preprints/2026/egusphere-2026-3243/egusphere-2026-3243.pdf
+topic: hybrid-parameterization
+topics:
+- regional-km-scale
+type: model
+method:
+- transformer
+- cnn
+spatial:
+- regional
+data:
+- km-scale-sim
+status: research
+summary: LMP-Tr hybrid CNN-Transformer learns cloud microphysics from WRF simulations, aiming to replace
+  NWP microphysics schemes with better accuracy and physical consistency.
+abstract: Abstract. Accurate precipitation forecasting is essential for mitigating weather-related disasters.
+  Numerical Weather Prediction (NWP) precipitation forecasting accuracy is largely constrained by microphysical
+  parameterization schemes, which rely on simplifying assumptions that introduce uncertainties. Deep learning
+  provides a promising approach for data-driven modeling of complex microphysical relationships. We propose
+  to model the cloud microphysical process via the Learned Microphysics Transformer (LMP-Tr). LMP-Tr employs
+  a hybrid Convolutional Neural Network (CNN)–Transformer architecture that alternately integrates multi-scale
+  convolutional modules and dual-pathway attention modules to capture both local cloud-scale features
+  and long-range atmospheric dependencies. The key innovation lies in the systematic alternation of multi-scale
+  convolutional modules for local feature extraction and dual-pathway attention modules for global dependency
+  modeling. The proposed model enables progressive refinement of atmospheric representations through height-variable
+  attention pathways and cross-module attention mechanisms. Extensive evaluation on a WRF simulation dataset
+  demonstrates superior performance of the proposed method. LMP-Tr provides a practical and effective
+  solution for enhancing cloud microphysics representation in operational NWP systems, offering improved
+  accuracy and physical consistency compared to other Artificial Intelligence (AI)-based parameterization
+  approaches.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

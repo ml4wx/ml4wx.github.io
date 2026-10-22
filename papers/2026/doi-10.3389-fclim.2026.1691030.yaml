@@ -1,0 +1,64 @@
+id: doi-10.3389-fclim.2026.1691030
+title: 'Improved seasonal precipitation forecasts for the Blue Nile Basin: a deep learning approach'
+authors:
+- Rebecca Wiegels
+- Christian Chwala
+- Julius Polz
+- Luca Glawion
+- Christof Lorenz
+- Tanja C. Schober
+- Harald Günter Kunstmann
+date: '2026-03-24'
+year: 2026
+venue: Frontiers in Climate
+venue_type: journal
+ids:
+  doi: 10.3389/fclim.2026.1691030
+  openalex: W7140162012
+links:
+  paper: https://doi.org/10.3389/fclim.2026.1691030
+orgs:
+- kit
+topic: post-processing
+topics:
+- s2s-seasonal
+type: model
+method:
+- neural-operator
+timescale:
+- seasonal
+spatial:
+- regional
+data:
+- cmip
+- nwp-analysis
+status: research
+summary: Seasonal AFNOCast, an adaptive Fourier neural operator, bias-corrects and downscales SEAS5 precipitation
+  for the Blue Nile, matching BCSD skill at 5–20× speed.
+abstract: 'Seasonal precipitation forecasts are essential for climate-sensitive sectors such as agriculture
+  and water management in East Africa. However, the application of seasonal forecasts at regional scales
+  requires post-processing due to systematic errors and insufficient spatial resolution to capture local
+  characteristics. Yet current statistical methods have remaining limitations in terms of spatial consistency
+  and the representation of extreme events. Here, we propose a deep learning approach, Seasonal AFNOCast,
+  based on an adaptive Fourier Neural Operator architecture, to bias-correct and downscale SEAS5 precipitation
+  forecasts for the Blue Nile Basin, a transboundary catchment in Ethiopia and Sudan. We evaluate Seasonal
+  AFNOCast alongside the established statistical method, Bias Correction and Spatial Disaggregation (BCSD),
+  using forecasts from 2017–2023. Results show that both methods substantially improve precipitation distributions,
+  spatial patterns, and the Continuous Ranked Probability Skill Score (CRPSS) of approx. 0.3 compared
+  to raw SEAS5. Despite only modest improvements over climatology across the entire evaluation period
+  (CRPSS approx. 0.03), both methods show clear skill enhancements during the months March to May (MAM),
+  a highly variable yet operationally critical season for decision-making. While onset predictability
+  remains challenging at a seasonal scale, even after post-processing, this study identifies key differences
+  in the application of the post-processing methods: BCSD performs best at short lead times, whereas Seasonal
+  AFNOCast maintains higher skill at longer leads and indicates an improved representation of high-intensity
+  rainfall and spatial frequency characteristics. Moreover, Seasonal AFNOCast generates forecasts 5–20
+  times faster than BCSD, making it particularly suitable for operational contexts. Our findings show
+  that deep learning can complement and extend conventional post-processing, improving seasonal forecasts
+  for subsequent applications and supporting hydrological and agricultural decision-making where representation
+  of extreme events and spatial consistency, as well as computational efficiency, are critical.'
+significance: 3
+cited_by: 2
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,47 @@
+id: arxiv-2603.25936
+title: Do Climate Models Need Microphysical and Convective Parameterizations to Generate Accurate Precipitation
+  Fields?
+authors:
+- Raul Moreno
+- Dale Durran
+date: '2026-03-26'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2603.25936'
+  openalex: W7143421882
+links:
+  paper: https://arxiv.org/abs/2603.25936
+  pdf: https://arxiv.org/pdf/2603.25936
+topic: observations-remote-sensing
+topics:
+- hybrid-parameterization
+type: model
+method:
+- other
+spatial:
+- global
+data:
+- era5
+- satellite
+status: research
+summary: ML diagnoses surface precipitation from 13 ERA5 fields; an IMERG-trained variant better matches
+  satellite diurnal cycles and extremes and reduces ERA5 light-rain overproduction.
+abstract: Accurately representing surface precipitation is crucial for the operational use of weather
+  and climate models. Presently, global numerical weather prediction (NWP) models struggle to accurately
+  generate precipitation due to their parametrization of unresolved deep convective clouds and, in regions
+  of grid-resolved ascent, inadequate parameterizations of cloud microphysics. Here we bypass these parameterizations
+  with a machine learning model that diagnoses precipitation from 13 ERA5 fields that are easily observed
+  and assimilated, as opposed for example, to fields like rain or cloud liquid water. We train a pair
+  of models; ML_ERA5 using ERA5 precipitation as the target, and ML_IMERG using a satellite based precipitation
+  product. ML_ERA5 closely reproduces the ERA5 precipitation at all intensities. When evaluated against
+  the satellite dataset, ML_IMERG closely matches observations, notably reproducing the diurnal cycle
+  of the satellite product. ML_IMERG generally captures extremes better than ERA5 while also reducing
+  ERA5's overproduction of light precipitation. When evaluated against a third ground-and-radar-based
+  dataset, ML_IMERG inherits the strengths of the satellite dataset which is superior to ERA5 in the summer
+  months.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

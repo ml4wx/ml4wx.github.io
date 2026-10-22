@@ -1,0 +1,54 @@
+id: doi-10.5194-egusphere-2026-2027
+title: 'A Deep Convolutional Neural Network for Retrieving Tropospheric Temperature and Moisture Profiles
+  from Refractivity over Tropical Oceans: Framework Development and Characterization'
+authors:
+- Santosh Muralidharan
+- Harris John
+- Deepak Mishra
+date: '2026-05-29'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.5194/egusphere-2026-2027
+  openalex: W7162774778
+links:
+  paper: https://doi.org/10.5194/egusphere-2026-2027
+  pdf: https://egusphere.copernicus.org/preprints/2026/egusphere-2026-2027/egusphere-2026-2027.pdf
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- satellite
+- stations
+status: research
+summary: A CNN retrieves tropical ocean temperature and humidity profiles from refractivity without NWP
+  priors, with about 1.5 K near-surface temperature error and 0.5 hPa vapour error.
+abstract: Abstract. Retrieving profiles of temperature and water vapor from atmospheric refractivity over
+  tropical oceans constitutes an inherently underdetermined problem. Conventional one-dimensional variational
+  methods resolve this through numerical weather prediction (NWP) priors, potentially propagating model
+  biases into retrieved profiles and limiting the independence desirable for climate monitoring applications.
+  We present a deep learning retrieval that substitutes learned statistical constraints for model-dependent
+  priors. A convolutional neural network, trained on approximately 20,800 high resolution radiosonde profiles
+  —combining reference-grade GCOS Reference Upper-Air Network (GRUAN) measurements with quality-controlled
+  operational GCOS Upper Air Network (GUAN) and field campaign data— predicts dry refractivity and partial
+  pressure of dry air as intermediate targets; temperature, water vapor pressure, and relative humidity
+  are derived analytically. The model achieves water vapor pressure root-mean-squared errors of ~0.5 hPa
+  near the surface (decreasing with height) and relative humidity errors below 6 % from 100 m to 10 km,
+  performance comparable in magnitude to the mean measurement uncertainty of state-of-the-art radiosondes.
+  Temperature errors are ~1.5 K near the surface, improving to ~0.5 K in the 10–15 km range where dry
+  refractivity dominates. Evaluation against more than 27,400 geographically independent radiosonde ascents
+  across the tropical Pacific, Indian Ocean, and Atlantic—including observations from the 1992–93 TOGA-COARE
+  field campaign, two decades predating the training period—demonstrates robust generalization within
+  the tropical marine atmosphere. The framework accepts only refractivity vertical structure as input,
+  with no dependence on geographic coordinates or NWP background states. This paper establishes the retrieval
+  framework and characterizes performance under ideal input conditions; Part 2 addresses application to
+  satellite observations.
+significance: 4
+cited_by: 0
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

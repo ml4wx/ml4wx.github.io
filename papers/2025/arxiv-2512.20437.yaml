@@ -1,0 +1,49 @@
+id: arxiv-2512.20437
+title: Quantum Bayesian Optimization for the Automatic Tuning of Lorenz-96 as a Surrogate Climate Model
+authors:
+- Paul J. Christiansen
+- Daniel Ohl de Mello
+- Cedric Brügmann
+- Steffen Hien
+- Felix Herbort
+- Martin Kiffner
+- Lorenzo Pastori
+- Veronika Eyring
+- Mierk Schwabe
+date: '2025-12-23'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2512.20437'
+  openalex: W7117255232
+links:
+  paper: https://arxiv.org/abs/2512.20437
+  pdf: https://arxiv.org/pdf/2512.20437
+topic: climate-emulation
+type: model
+method:
+- classical-ml
+- other
+data:
+- other
+status: research
+summary: Quantum-kernel Gaussian process emulators automate history-matching tuning of the Lorenz-96 toy
+  atmosphere, with two quantum kernels outperforming the classical RBF kernel in simulation.
+abstract: In this work, we propose a hybrid quantum-inspired heuristic for automatically tuning the Lorenz-96
+  model -- a simple proxy to describe atmospheric dynamics, yet exhibiting chaotic behavior. Building
+  on the history matching framework by Lguensat et al. (2023), we fully automate the tuning process with
+  a new convergence criterion and propose replacing classical Gaussian process emulators with quantum
+  counterparts. We benchmark three quantum kernel architectures, distinguished by their quantum feature
+  map circuits. A dimensionality argument implies, in principle, an increased expressivity of the quantum
+  kernels over their classical competitors. For each kernel type, we perform an extensive hyperparameter
+  optimization of our tuning algorithm. We confirm the validity of a quantum-inspired approach based on
+  statevector simulation by numerically demonstrating the superiority of two studied quantum kernels over
+  the canonical classical RBF kernel. Finally, we discuss the pathway towards real quantum hardware, mainly
+  driven by a transition to shot-based simulations and evaluating quantum kernels via randomized measurements,
+  which can mitigate the effect of gate errors. The very low qubit requirements and moderate circuit depths,
+  together with a minimal number of trainable circuit parameters, make our method particularly NISQ-friendly.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

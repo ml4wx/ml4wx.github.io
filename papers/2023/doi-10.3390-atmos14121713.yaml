@@ -1,0 +1,52 @@
+id: doi-10.3390-atmos14121713
+title: Lightning Nowcasting Using Solely Lightning Data
+authors:
+- Ehsan Mansouri
+- Amirhossein Mostajabi
+- Chong Tong
+- Marcos Rubinstein
+- Farhad Rachidi
+date: '2023-11-21'
+year: 2023
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos14121713
+  openalex: W4388866225
+links:
+  paper: https://doi.org/10.3390/atmos14121713
+  pdf: https://www.mdpi.com/2073-4433/14/12/1713/pdf?version=1700571040
+topic: nowcasting
+topics:
+- extremes-hazards
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+data:
+- satellite
+status: research
+summary: Residual U-Net trained only on geostationary satellite lightning data forecasts lightning 15-60
+  min ahead, beating persistence by 4-22% without numerical weather models.
+abstract: Lightning is directly or indirectly responsible for significant human casualties and property
+  damage worldwide. A timely prediction of its occurrence can enable authorities and the public to take
+  necessary precautionary actions resulting in diminishing the potential hazards caused by lightning.
+  In this paper, based on the assumption that atmospheric phenomena behave in a continuous manner, we
+  present a model based on residual U-nets where the network architecture leverages this inductive bias
+  by combining information passing directly from the input to the output with the necessary required changes
+  to the former, predicted by a neural network. Our model is trained solely on lightning data from geostationary
+  weather satellites and can be used to predict the occurrence of future lightning. Our model has the
+  advantage of not relying on numerical weather models, which are inherently slow due to their sequential
+  nature, enabling it to be used for near-future prediction (nowcasting). Moreover, our model has similar
+  performance compared to other machine learning based lightning predictors in the literature while using
+  significantly less amount of data for training, limited to lightning data. Our model, which is trained
+  for four different lead times of 15, 30, 45, and 60 min, outperforms the traditional persistence baseline
+  by 4%, 12%, and 22% for lead times of 30, 45, and 60 min, respectively, and has comparable accuracy
+  for 15 min lead time.
+significance: 3
+cited_by: 12
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

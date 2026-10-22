@@ -1,0 +1,58 @@
+id: arxiv-2511.05964
+title: 'PGDM: Physically guided diffusion model for land surface temperature downscaling'
+authors:
+- Huanyu Zhang
+- Bo-Hui Tang
+- Tian Hu
+- Yun Jiang
+- Zhao-Liang Li
+date: '2025-11-08'
+year: 2025
+venue: Remote Sensing of Environment
+venue_type: journal
+ids:
+  arxiv: '2511.05964'
+  doi: 10.1016/j.rse.2026.115432
+  openalex: W4416156980
+links:
+  paper: https://doi.org/10.1016/j.rse.2026.115432
+  pdf: https://arxiv.org/pdf/2511.05964
+topic: downscaling
+topics:
+- observations-remote-sensing
+type: model
+method:
+- diffusion
+- physics-constrained
+spatial:
+- regional
+data:
+- satellite
+- other
+status: research
+summary: Physically guided diffusion model (PGDM) downscales land surface temperature using surface energy
+  balance priors and a new 22,909-patch benchmark, with uncertainty correlated to error.
+abstract: Land surface temperature (LST) is a fundamental parameter in thermal infrared remote sensing,
+  while current LST products are often constrained by the trade-off between spatial and temporal resolutions.
+  To mitigate this limitation, numerous studies have been conducted to enhance the resolutions of LST
+  data, with a particular emphasis on the spatial dimension (commonly known as LST downscaling). Nevertheless,
+  a comprehensive benchmark dataset tailored for this task remains scarce. In addition, existing downscaling
+  models face challenges related to accuracy, practical usability, and the capability to self-evaluate
+  their uncertainties. To overcome these challenges, this study first compiled three representative datasets,
+  including one dataset over mainland China containing 22,909 image patches for model training and evaluation,
+  as well as two datasets covering 40 heterogeneous regions worldwide for external evaluation. Subsequently,
+  grounded in the surface energy balance (SEB)-based geophysical reasoning, we proposed the physically
+  guided diffusion model (PGDM) for LST downscaling. In this framework, the downscaling task was formulated
+  as an inference problem, aiming to sample from the posterior distribution of high-spatial-resolution
+  (HR) LST conditioned on low-spatial-resolution (LR) LST observations and a suite of HR geophysical priors.
+  Comprehensive evaluations demonstrate the effectiveness of PGDM, which generates high-quality downscaling
+  results and outperforms existing representative interpolation, kernel-driven, hybrid, and deep learning
+  approaches. Finally, by exploiting the inherent stochasticity of PGDM, the scene-level standard deviation
+  of multiple generations was computed, revealing a strong positive linear correlation with the actual
+  downscaling error...
+significance: 4
+cited_by: 3
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

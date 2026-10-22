@@ -1,0 +1,61 @@
+id: doi-10.3390-cli14090190
+title: 'Physics-Guided Neural Networks for Physically Consistent SPEI: A Bias Correction Framework for
+  Drought Monitoring over Southern Africa'
+authors:
+- Gizaw Mengistu Tsidu
+date: '2026-09-10'
+year: 2026
+venue: Climate
+venue_type: journal
+ids:
+  doi: 10.3390/cli14090190
+  openalex: W7212177687
+links:
+  paper: https://doi.org/10.3390/cli14090190
+topic: post-processing
+topics:
+- extremes-hazards
+type: model
+method:
+- physics-constrained
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: Physics-guided neural network corrects ERA5-Land precipitation and PET jointly under a water-balance
+  constraint, cutting precipitation RMSE by 32% for drought monitoring.
+abstract: 'The Standardised Precipitation-Evapotranspiration Index (SPEI) is widely used for drought monitoring,
+  but reanalysis datasets like ERA5-Land contain biases that affect its reliability. Conventional bias
+  correction, which adjusts variables independently, can violate the physical relationship between precipitation
+  and PET. We introduce a Physics-Guided Neural Network (PGNN) that corrects both variables simultaneously
+  while enforcing a water-balance constraint within the loss function. Using a rigorous temporal split
+  (training 1950–2010, validation 2011–2018, testing 2019–2025), the PGNN framework shows improved performance
+  compared with quantile distribution mapping (QDM). On the validation period (2011–2018), the correction
+  reduces precipitation RMSE by 32% (from 40.4 to 27.6 mm month−1) and increases PET R2 from −2.820 to
+  0.890, compared with QDM’s 0.326. For the 3-month agricultural drought index, PGNN reduces RMSE by 27%
+  (from 0.440 to 0.320), increases R2 from 0.737 to 0.857, and improves correlation from 0.890 to 0.943,
+  whereas QDM shows only marginal improvement (R2 = 0.715). Consistent gains are observed across all timescales,
+  with PGNN-corrected SPEI achieving R2 exceeding 0.78 for the 1-, 3-, and 6-month agricultural indices.
+  At longer timescales, PGNN shows improved skill, achieving R2 = 0.101 and 0.113 for 12- and 24-month
+  SPEI, respectively—outperforming QDM (R2 = 0.043 and 0.032). The period-specific analysis reveals two
+  distinct degradation mechanisms: error accumulation in the water balance explains the decline from short
+  to long timescales, while climate non-stationarity explains the degradation from the validation period
+  to the test period. In the independent test period (2019–2025), both methods show substantial degradation:
+  PGNN precipitation RMSE increases from 27.6 to 32.0 mm month−1 (+16%), PET R2 drops from 0.890 to 0.458
+  (−49%), and longer timescales (9–24 months) yield negative R2 values. Categorical metrics for extreme
+  drought detection show mixed results on the validation period: the Critical Success Index (CSI) for
+  Extreme Dry conditions (3-month SPEI) decreases from 0.269 (raw) to 0.164 for PGNN, while QDM achieves
+  0.277. This unexpected behaviour is attributed to the differing event distribution in the validation
+  period. However, PGNN improves detection for severe and moderate dry classes, and Cohen’s Kappa increases
+  from 0.552 (raw) to 0.646 (PGNN) compared with QDM’s 0.493. The water-balance constraint ensures climatic
+  consistency and preserves the annual cycle (PET peaks in October at 148.1 mm month−1, close to the CRU
+  reference of 152.2 mm month−1), while QDM introduces a two-month phase shift. The framework offers a
+  potential scalable pathway for operational drought monitoring, but the test-period degradation suggests
+  a need for adaptive correction methods that can track evolving climate baselines.'
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

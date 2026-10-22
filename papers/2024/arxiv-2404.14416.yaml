@@ -1,0 +1,58 @@
+id: arxiv-2404.14416
+title: Conditional diffusion models for downscaling and bias correction of Earth system model precipitation
+authors:
+- Michael Aich
+- Philipp Hess
+- Baoxiang Pan
+- Sebastian Bathiany
+- Yu Huang
+- Niklas Boers
+date: '2024-04-05'
+year: 2024
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  arxiv: '2404.14416'
+  doi: 10.5194/gmd-19-1791-2026
+  openalex: W7133311194
+links:
+  paper: https://doi.org/10.5194/gmd-19-1791-2026
+  pdf: https://arxiv.org/pdf/2404.14416
+orgs:
+- iap-cas
+- pik
+- tum
+topic: downscaling
+topics:
+- post-processing
+type: model
+method:
+- diffusion
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+- other
+status: research
+summary: Conditional diffusion model jointly bias-corrects and downscales Earth system model precipitation
+  via a shared embedding, outperforming statistical and deep learning baselines, especially for extremes.
+abstract: Climate change exacerbates extreme weather events like heavy rainfall and flooding. As these
+  events cause severe socioeconomic damage, accurate high-resolution simulation of precipitation is imperative.
+  However, existing Earth System Models (ESMs) struggle to resolve small-scale dynamics and suffer from
+  biases. Traditional statistical bias correction and downscaling methods fall short in improving spatial
+  structure, while recent deep learning methods lack controllability and suffer from unstable training.
+  Here, we propose a machine learning framework for simultaneous bias correction and downscaling. We first
+  map observational and ESM data to a shared embedding space, where both are unbiased towards each other,
+  and then train a conditional diffusion model to reverse the mapping. Only observational data is used
+  for the training, so that the diffusion model can be employed to correct and downscale any ESM field
+  without need for retraining. Our approach ensures statistical fidelity and preserves spatial patterns
+  larger than a chosen spatial correction scale. We demonstrate that our approach outperforms existing
+  statistical and deep learning methods especially regarding extreme events.
+significance: 4
+cited_by: 21
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

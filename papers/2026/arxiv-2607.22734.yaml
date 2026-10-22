@@ -1,0 +1,49 @@
+id: arxiv-2607.22734
+title: Fast Fourier Convolutional GAN for 30 m Clear-Sky Land Surface Temperature Gap-Free Reconstruction
+authors:
+- Marwa Alfouly
+- Smajil Halilovic
+- Nils Bochow
+- Thomas Hamacher
+- Niklas Boers
+- Konrad Schindler
+date: '2026-07-22'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2607.22734'
+  openalex: W7171541795
+links:
+  paper: https://arxiv.org/abs/2607.22734
+  pdf: https://arxiv.org/pdf/2607.22734
+topic: observations-remote-sensing
+type: model
+method:
+- gan-vae
+- cnn
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Fourier-convolution GAN reconstructing cloud-gapped 30 m Landsat land surface temperature using
+  SAR guidance, with RMSE of 0.8 to 1.8 K.
+abstract: Satellite-derived Land Surface Temperature (LST) provides spatially comprehensive data that
+  ground stations cannot match. However, its utility is frequently limited by severe data gaps due to
+  the presence of clouds. As LST is essential for understanding land-atmosphere interactions, numerous
+  methods have been proposed to address this challenge. Yet, the development of a scalable and adaptable
+  pipeline for generating gap-free LST datasets and reconstructing cloud-contaminated pixels remains challenging.
+  Moreover, the reconstruction of extensive missing regions in fine-spatial-resolution observations is
+  particularly difficult. To address this challenge, we propose a Multimodal Fast Fourier Convolutional
+  GAN for reconstructing cloud-contaminated pixels in fine-resolution (30 m) Landsat imagery to generate
+  gap-free clear-sky LST products. The method leverages Fast Fourier Convolution to enable a global receptive
+  field across the image, and is guided by a stack of data consisting of satellite observations and Synthetic
+  Aperture Radar (SAR) data. Across all LST quantiles, the interquartile range of scene-averaged RMSE
+  (computed over reconstructed pixels) is consistently between 0.8 K and 1.8 K. The proposed approach
+  enables the recovery of extensive missing regions, including scenes with more than 70% cloud-induced
+  gaps, while relying on auxiliary data that are readily available at a near-global scale.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

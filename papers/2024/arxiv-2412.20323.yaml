@@ -1,0 +1,53 @@
+id: arxiv-2412.20323
+title: 'When the whole is greater than the sum of its parts: Scaling black-box inference to large data
+  settings through divide-and-conquer'
+authors:
+- Emily C. Hector
+- Amanda Lenzi
+date: '2024-12-29'
+year: 2024
+venue: Statistics and Computing
+venue_type: journal
+ids:
+  arxiv: '2412.20323'
+  doi: 10.1007/s11222-026-10910-z
+  openalex: W4405955718
+links:
+  paper: https://doi.org/10.1007/s11222-026-10910-z
+  pdf: https://arxiv.org/pdf/2412.20323
+topic: climate-analysis-attribution
+topics:
+- extremes-hazards
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- cmip
+- stations
+status: research
+summary: Divide-and-conquer black-box inference scales max-stable process fitting to tens of thousands
+  of locations, applied to extremal temperature from a climate model and NOAA observations.
+abstract: Black-box methods such as deep neural networks are exceptionally fast at obtaining point estimates
+  of model parameters due to their amortisation of the loss function computation, but are currently restricted
+  to settings for which simulating training data is inexpensive. When simulating data is computationally
+  expensive, both the training and uncertainty quantification, which typically relies on a parametric
+  bootstrap, become intractable. We propose a black-box divide-and-conquer estimation and inference framework
+  when data simulation is computationally expensive that trains a black-box estimation method on a partition
+  of the multivariate data domain, estimates and bootstraps on the partitioned data, and combines estimates
+  and inferences across data partitions. Through the divide step, only small training data need be simulated,
+  substantially accelerating the training. Further, the estimation and bootstrapping can be conducted
+  in parallel across multiple computing nodes to further speed up the procedure. Finally, the conquer
+  step accounts for any dependence between data partitions through a statistically and computationally
+  efficient weighted average. We illustrate the implementation of our framework in high-dimensional spatial
+  settings with Gaussian and max-stable processes. Applications to modeling extremal temperature data
+  from both a climate model and observations from the National Oceanic and Atmospheric Administration
+  highlight the feasibility of estimation and inference of max-stable process parameters with tens of
+  thousands of locations.
+significance: 2
+cited_by: 1
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

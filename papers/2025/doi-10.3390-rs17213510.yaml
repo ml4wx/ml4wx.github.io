@@ -1,0 +1,66 @@
+id: doi-10.3390-rs17213510
+title: AI-Based Downscaling of MODIS LST Using SRDA-Net Model for High-Resolution Data Generation
+authors:
+- Hongxia Ma
+- Kebiao Mao
+- Zijin Yuan
+- Lingling Xu
+- Jiancheng Shi
+- Zhonghua Guo
+- Zhihao Qin
+date: '2025-10-22'
+year: 2025
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs17213510
+  openalex: W4415452055
+links:
+  paper: https://doi.org/10.3390/rs17213510
+  pdf: https://www.mdpi.com/2072-4292/17/21/3510/pdf?version=1761135021
+topic: downscaling
+topics:
+- observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: SRDA-Net attention network downscales daily MODIS land surface temperature from 1 km to 250 m
+  using a composite physics-based loss.
+abstract: 'Land surface temperature (LST) is a critical parameter in agricultural drought monitoring,
+  crop growth analysis, and climate change research. However, the challenge of acquiring high-resolution
+  LST data with both fine spatial and temporal scales remains a significant obstacle in remote sensing
+  applications. Despite the high temporal resolution afforded by daily MODIS LST observations, the coarse
+  (1 km) spatial scale of these data restricts their applicability for studies demanding finer spatial
+  resolution. To address this challenge, a novel deep learning-based approach is proposed for LST downscaling:
+  the spatial resolution downscaling attention network (SRDA-Net). The model is designed to upscale the
+  resolution of MODIS LST from 1000 m to 250 m, overcoming the shortcomings of traditional interpolation
+  techniques in reconstructing spatial details, as well as reducing the reliance on linear models and
+  multi-source high-temporal LST data typical of conventional fusion approaches. SRDA-Net captures the
+  feature interaction between MODIS LST and auxiliary data through global resolution attention to address
+  spatial heterogeneity. It further enhances the feature representation ability under heterogeneous surface
+  conditions by optimizing multi-source features to handle heterogeneous data. Additionally, it strengthens
+  the model of spatial dependency relationships through a multi-level feature refinement module. Moreover,
+  this study constructs a composite loss function system that integrates physical mechanisms and data
+  characteristics, ensuring the improvement of reconstruction details while maintaining numerical accuracy
+  and model interpret-ability through a triple collaborative constraint mechanism. Experimental results
+  show that the proposed model performs excellently in the simulation experiment (from 2000 m to 1000
+  m), with an MAE of 0.928 K and an R2 of 0.95. In farmland areas, the model performs particularly well
+  (MAE = 0.615 K, R2 = 0.96, RMSE = 0.823 K), effectively supporting irrigation scheduling and crop health
+  monitoring. It also maintains good vegetation heterogeneity expression ability in grassland areas, making
+  it suitable for drought monitoring tasks. In the target downscaling experiment (from 1000 m to 500 m
+  and 250 m), the model achieved an RMSE of 1.804 K, an MAE of 1.587 K, and an R2 of 0.915, confirming
+  its stable generalization ability across multiple scales. This study supports agricultural drought warning
+  and precise irrigation and provides data support for interdisciplinary applications such as climate
+  change research and ecological monitoring, while offering a new approach to generating high spatio-temporal
+  resolution LST.'
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

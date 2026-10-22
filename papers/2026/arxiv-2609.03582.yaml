@@ -1,0 +1,77 @@
+id: arxiv-2609.03582
+title: 'WeatherNext 3: Increasing resolution and performance of global weather models with raw observations'
+authors:
+- Stephan Rasp
+- Boris Babenko
+- Dominic Masters
+- Andrew El-Kadi
+- Samier Merchant
+- Guy Shalev
+- Ilan Price
+- Fred Zyda
+- Remi Lam
+- Sasha Shysheya
+- Matthew Willson
+- Stratis Markou
+- Shreya Agrawal
+- Suhani Vora
+- Mohammed Alewi Hassen
+- Sunny Mak
+- Tom R. Andersson
+- Megan Bela
+- Akib Uddin
+- Nofar Peled Levi
+- Ben Gaiarin
+- Ferran Alet
+- Aaron Bell
+- Peter Battaglia
+- Alvaro Sanchez-Gonzalez
+date: '2026-09-03'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.03582'
+  openalex: W7208717596
+links:
+  paper: https://arxiv.org/abs/2609.03582
+  pdf: https://arxiv.org/pdf/2609.03582
+topic: global-medium-range
+topics:
+- probabilistic-ensembles
+- data-assimilation
+type: model
+timescale:
+- short
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+- satellite
+- stations
+status: operational
+summary: Probabilistic global model ingests geostationary satellite and raw observations for hourly 0.1-degree
+  forecasts, predicting precipitation and station 2m temperature with state-of-the-art medium-range skill.
+abstract: 'State-of-the-art AI weather models have shown impressive medium-range forecast skill and computational
+  efficiency, but suffer two key shortcomings: their forecasts have lower spatial and temporal resolution
+  than the best physics-based models and they are exclusively initialized with and trained on analysis
+  data. As a result, they cannot directly make use of observations, and any biases in the analysis are
+  inherited by the forecast. WeatherNext 3 addresses these shortcomings and establishes a new state-of-the-art
+  for probabilistic medium-range forecasting skill. First, WeatherNext 3 generates new forecasts every
+  hour (rather than every 6 hours like traditional global models) by ingesting low-latency geostationary
+  satellite data. Second, WeatherNext 3''s temporal and spatial resolution are on par with physics-based
+  global models, with hourly time steps and 0.1 degree resolution for single-level variables, including
+  solar radiation and cloud cover. Third, WeatherNext 3 moves beyond traditional analysis variables by
+  learning to predict satellite-derived precipitation estimates, as well as tropical cyclone and station
+  observations. Modelling sparse station data allows WeatherNext 3 to make 2m temperature and dewpoint
+  predictions at any location and time, conditioned on local geographical features, with substantially
+  lower error than competing global models, even when evaluated against unseen stations. Together, WeatherNext
+  3''s capabilities move operational AI-based weather forecasting beyond emulating the traditionally distinct
+  stages of data assimilation, forecasting and post-processing, which helps to further push the frontier
+  of performance and granularity for global weather prediction.'
+significance: 8
+score: 42
+highlight: false
+added: '2026-10-22'
+source: backfill

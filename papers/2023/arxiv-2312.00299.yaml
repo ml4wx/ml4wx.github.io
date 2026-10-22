@@ -1,0 +1,54 @@
+id: arxiv-2312.00299
+title: 'QIENet: Quantitative irradiance estimation network using recurrent neural network based on satellite
+  remote sensing data'
+authors:
+- Longfeng Nie
+- Yuntian Chen
+- Dongxiao Zhang
+- Xinyue Liu
+- Wentian Yuan
+date: '2023-12-01'
+year: 2023
+venue: International Journal of Applied Earth Observation and Geoinformation
+venue_type: journal
+ids:
+  arxiv: '2312.00299'
+  doi: 10.1016/j.jag.2023.103584
+  openalex: W4390628404
+links:
+  paper: https://doi.org/10.1016/j.jag.2023.103584
+  pdf: https://arxiv.org/pdf/2312.00299
+topic: observations-remote-sensing
+topics:
+- applications-impacts
+type: model
+method:
+- rnn
+- cnn
+spatial:
+- regional
+data:
+- satellite
+- era5
+status: research
+summary: RNN-CNN network estimates hourly surface irradiance at 2 km from Himawari-8 data, cutting RMSE
+  18–28% against ERA5 and NSRDB.
+abstract: Global horizontal irradiance (GHI) plays a vital role in estimating solar energy resources,
+  which are used to generate sustainable green energy. In order to estimate GHI with high spatial resolution,
+  a quantitative irradiance estimation network, named QIENet, is proposed. Specifically, the temporal
+  and spatial characteristics of remote sensing data of the satellite Himawari-8 are extracted and fused
+  by recurrent neural network (RNN) and convolution operation, respectively. Not only remote sensing data,
+  but also GHI-related time information (hour, day, and month) and geographical information (altitude,
+  longitude, and latitude), are used as the inputs of QIENet. The satellite spectral channels B07 and
+  B11 - B15 and time are recommended as model inputs for QIENet according to the spatial distributions
+  of annual solar energy. Meanwhile, QIENet is able to capture the impact of various clouds on hourly
+  GHI estimates. More importantly, QIENet does not overestimate ground observations and can also reduce
+  RMSE by 27.51%/18.00%, increase R2 by 20.17%/9.42%, and increase r by 8.69%/3.54% compared with ERA5/NSRDB.
+  Furthermore, QIENet is capable of providing a high-fidelity hourly GHI database with spatial resolution
+  0.02° * 0.02°(approximately 2km * 2km) for many applied energy fields.
+significance: 3
+cited_by: 7
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

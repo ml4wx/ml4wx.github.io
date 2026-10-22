@@ -1,0 +1,53 @@
+id: arxiv-2610.22555
+title: Atmospheric Chemistry-Climate Modeling with an AI Foundation Model
+authors:
+- James Weber
+- Makoto Kelp
+date: '2026-10-15'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.22555'
+  openalex: W7222972239
+links:
+  paper: https://arxiv.org/abs/2610.22555
+  pdf: https://arxiv.org/pdf/2610.22555
+topic: foundation-models
+topics:
+- climate-emulation
+type: model
+method:
+- transformer
+timescale:
+- climate
+spatial:
+- global
+data:
+- other
+- satellite
+status: research
+summary: Fine-tunes the Aurora foundation model on UKCA chemistry-climate runs, emulating ozone, aerosols
+  and radiation about 100 times faster and stable over 50 years.
+abstract: Atmospheric composition and chemistry-climate interactions are central to predicting future
+  climate change. Yet simulating chemical and aerosol processes is typically the most expensive component
+  of an atmospheric model and is often highly simplified or prescribed entirely. AI weather forecasting
+  foundation models have shown skill rivalling process-based models and are increasingly fine-tuned for
+  new atmospheric tasks. Here, we present the first foundation model to capture interactions between emissions,
+  atmospheric composition, and radiation. We fine-tune the Aurora Earth system foundation model on simulations
+  from the chemistry-climate model UKCA. Our model reproduces daily meteorology, composition, aerosol,
+  and radiation fields of the coupled system with 23 of 27 predicted fields achieving $R^2$ above 0.85
+  in both the troposphere and stratosphere. It reproduces ozone, CO, and temperature with annual mean
+  biases below 4% and the downwelling shortwave and longwave fluxes to within 6%. Our model remains stable
+  in autoregressive simulation over 50 years while running ~$100\times$ faster than UKCA. By training
+  on paired emissions scenarios, our model learns responses to perturbations by capturing tropospheric
+  ozone's response to changes in NO and CO emissions and surface radiation's response to aerosol. We further
+  show that incorporating MLS satellite ozone retrievals into training corrects biases in the underlying
+  UKCA fields, reducing zonal mean ozone error against collocated observations by 23% between 250 and
+  20 hPa. Our approach does not suggest process-based modeling can be replaced but demonstrates that a
+  foundation model can be adapted to respond to forcings and learn from observations at a relatively small
+  computational cost.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

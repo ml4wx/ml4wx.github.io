@@ -1,0 +1,48 @@
+id: arxiv-2608.09948
+title: An adaptive and evolvable deep reinforcement learning framework for weather prediction
+authors:
+- Qiang Wu
+- Han Li
+- Jianping Huang
+date: '2026-07-07'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2608.09948'
+  openalex: W7202279778
+links:
+  paper: https://arxiv.org/abs/2608.09948
+  pdf: https://arxiv.org/pdf/2608.09948
+topic: post-processing
+topics:
+- global-medium-range
+type: model
+method:
+- reinforcement-learning
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Deep RL agents learn variable- and lead-time-specific weights for fusing an open pool of pretrained
+  AI forecasters, cutting RMSE 17-78% versus the best single model.
+abstract: No single AI weather model excels at all variables, pressure levels, and lead times. Rather
+  than building yet another architecture, we reframe the forecasting problem as one of coordination. Here
+  we present Feitian Adaptive Ensemble Weather (FTAE-Weather), a lightweight framework that learns, through
+  deep reinforcement learning, when and where to trust each member of an open pool of pretrained forecasters.
+  A tactical Weight-Agent reads the current atmospheric state and assigns variable- and horizon-specific
+  fusion weights, while a strategic Evolve-Agent periodically prunes underperforming models and absorbs
+  newly released ones. Asynchronous prediction caching keeps training cost independent of the slowest
+  constituent model. Adding fewer than 0.01 percent extra parameters, FTAE-Weather reduces RMSE by from
+  17.2 percent to 78.3 percent over the best individual model in 10 atmospheric variables and outperforms
+  conventional ensemble baselines across lead times from 72 to 360 hours. The framework thus converts
+  a growing, fragmented inventory of specialist models into a single prediction system that strengthens
+  as the field of AI weather forecasting releases new architectures-turning model diversity from a coordination
+  challenge into a compounding scientific advantage.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

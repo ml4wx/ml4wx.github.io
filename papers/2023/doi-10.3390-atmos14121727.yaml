@@ -1,0 +1,63 @@
+id: doi-10.3390-atmos14121727
+title: A Refined Zenith Tropospheric Delay Model Based on a Generalized Regression Neural Network and
+  the GPT3 Model in Europe
+authors:
+- Min Wei
+- Xuexiang Yu
+- Fuyang Ke
+- Xiangxiang He
+- Keli Xu
+date: '2023-11-24'
+year: 2023
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos14121727
+  openalex: W4388971329
+links:
+  paper: https://doi.org/10.3390/atmos14121727
+  pdf: https://www.mdpi.com/2073-4433/14/12/1727/pdf?version=1700821630
+orgs:
+- nuist
+topic: observations-remote-sensing
+topics:
+- post-processing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- stations
+- era5
+status: research
+summary: A GRNN refines GPT3 zenith tropospheric delay for 53 European GNSS stations, cutting RMSE 63.4%
+  versus GPT3 and 19.5% versus ERA5.
+abstract: An accurate model of the Zenith Tropospheric Delay (ZTD) plays a crucial role in Global Navigation
+  Satellite System (GNSS) precise positioning, water vapor retrieval, and meteorological research. Current
+  empirical models (such as the GPT3 model) can only reflect the approximate change trend of ZTD but cannot
+  accurately reflect nonlinear changes such as rapid fluctuations in ZTD. In recent years, the application
+  of machine learning methods in the modeling and prediction of ZTD has gained prominence, yielding commendable
+  results. Utilizing the ZTD products from 53 International GNSS Service (IGS) stations in Europe during
+  the year 2021 as a foundational dataset, a Generalized Regression Neural Network (GRNN) is employed
+  to model IGS ZTD while considering spatiotemporal factors and its association with GPT3 ZTD. This endeavor
+  culminates in the development of a refined GRNN model. To verify the performance of the model, the prediction
+  results are compared with two other ZTD values. One is obtained based on the European Centre for Medium-Range
+  Weather Forecasts Reanalysis 5 (ERA5) data, and the other is obtained by the GPT3 model. The results
+  show that the bias of the GRNN refined model is almost 0 mm, and the average Root-Mean-Square Error
+  (RMSE) and Mean Absolute Error (MAE) are 18.33 mm and 14.08 mm, respectively. Compared with ERA5 ZTD
+  and GPT3 ZTD, the RMSE of GRNN ZTD has decreased by 19.5% and 63.4%, respectively, and the MAE of GRNN
+  ZTD has decreased by 24.8% and 67.1%. Compared with the other two models, the GRNN refined model has
+  better performance in reflecting the rapid fluctuations of ZTD. In addition, also discussed is the impact
+  of spatial factors and time factors on modeling. The findings indicate that modeling accuracy within
+  the central region of the modeling area surpasses that at the periphery by approximately 17.8%. The
+  period from June to October is associated with the lowest accuracy, whereas the optimal accuracy is
+  typically observed from January to April. The most substantial differences in accuracy were observed
+  at station OP71 (Paris, France), with the highest accuracy recorded (9.51 mm) in April and the lowest
+  (24.00 mm) in September.
+significance: 3
+cited_by: 11
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

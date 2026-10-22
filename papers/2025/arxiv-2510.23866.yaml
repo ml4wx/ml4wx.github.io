@@ -1,0 +1,46 @@
+id: arxiv-2510.23866
+title: A PDE-Informed Latent Diffusion Model for 2-m Temperature Downscaling
+authors:
+- Paul Rosu
+- Muchang Bahng
+- Erick Jiang
+- Rico Zhu
+- Vahid Tarokh
+date: '2025-10-27'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2510.23866'
+links:
+  paper: https://arxiv.org/abs/2510.23866
+  pdf: https://arxiv.org/pdf/2510.23866
+topic: downscaling
+topics:
+- xai-uq-physics
+type: model
+method:
+- diffusion
+- physics-constrained
+- cnn
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Adds an advection-diffusion PDE loss to a latent diffusion model downscaling 2-m temperature,
+  improving physical plausibility of generated fields.
+abstract: This work presents a physics-conditioned latent diffusion model tailored for dynamical downscaling
+  of atmospheric data, with a focus on reconstructing high-resolution 2-m temperature fields. Building
+  upon a pre-existing diffusion architecture and employing a residual formulation against a reference
+  UNet, we integrate a partial differential equation (PDE) loss term into the model's training objective.
+  The PDE loss is computed in the full resolution (pixel) space by decoding the latent representation
+  and is designed to enforce physical consistency through a finite-difference approximation of an effective
+  advection-diffusion balance. Empirical observations indicate that conventional diffusion training already
+  yields low PDE residuals, and we investigate how fine-tuning with this additional loss further regularizes
+  the model and enhances the physical plausibility of the generated fields. The entirety of our codebase
+  is available on Github, for future reference and development.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

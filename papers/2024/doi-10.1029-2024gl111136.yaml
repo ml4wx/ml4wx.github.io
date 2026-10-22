@@ -1,0 +1,60 @@
+id: doi-10.1029-2024gl111136
+title: 'FuXi‐En4DVar: An Assimilation System Based on Machine Learning Weather Forecasting Model Ensuring
+  Physical Constraints'
+authors:
+- Yonghui Li
+- Wei Han
+- Hao Li
+- Wansuo Duan
+- Lei Chen
+- Xiaohui Zhong
+- Jincheng Wang
+- Yongzhu Liu
+- Xiuyu Sun
+date: '2024-11-14'
+year: 2024
+venue: Geophysical Research Letters
+venue_type: journal
+ids:
+  doi: 10.1029/2024gl111136
+  openalex: W4404361819
+links:
+  paper: https://doi.org/10.1029/2024gl111136
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2024GL111136
+orgs:
+- cma
+- fudan-university
+- iap-cas
+topic: data-assimilation
+topics:
+- global-medium-range
+type: model
+method:
+- differentiable
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: FuXi-En4DVar is an ensemble 4DVar system built on the FuXi ML forecast model that produces physically
+  balanced analyses using automatic differentiation gradients.
+abstract: Abstract Recent machine learning (ML)‐based weather forecasting models have improved the accuracy
+  and efficiency of forecasts while minimizing computational resources, yet still depend on traditional
+  data assimilation (DA) systems to generate analysis fields. Four dimensional variational data assimilation
+  (4DVar) enhances model states, relying on the prediction model to propagate observation to the initial
+  field. Consequently, the initial fields from traditional DA are not optimal for ML‐based models, necessitating
+  a customized DA system. This paper introduces an ensemble 4DVar system integrated with the FuXi model
+  (FuXi‐En4DVar), which can independently generate accurate analysis fields. It utilizes automatic differentiation
+  to compute gradients, and demonstrates the equivalence of these gradients with those derived from adjoint
+  models. Experimental results indicate that this system preserves the physical balance of the analysis
+  field and exhibits flow‐dependent characteristics. These features enhance the propagation and assimilation
+  of observation into the initial analysis field, thereby improving the accuracy of the analysis fields.
+significance: 6
+cited_by: 20
+score: 59
+highlight: true
+highlight_reason: FuXi-based ensemble 4DVar using automatic differentiation is a step toward ML-native
+  data assimilation independent of traditional analyses; important direction.
+added: '2026-10-22'
+source: backfill

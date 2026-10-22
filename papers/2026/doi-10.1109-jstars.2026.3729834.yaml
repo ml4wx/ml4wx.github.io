@@ -1,0 +1,61 @@
+id: doi-10.1109-jstars.2026.3729834
+title: A Lightweight Multimodal Spatiotemporal Learning Framework for Precipitation Nowcasting
+authors:
+- Nan Zhi
+- Zhu-Wang Lv
+- Feng Xu
+- Shao-Jun Feng
+date: '2026-01-01'
+year: 2026
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2026.3729834
+  openalex: W7206184479
+links:
+  paper: https://doi.org/10.1109/jstars.2026.3729834
+  pdf: https://doi.org/10.1109/jstars.2026.3729834
+orgs:
+- fudan-university
+topic: nowcasting
+topics:
+- local-forecasting
+type: model
+method:
+- rnn
+- other
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- stations
+- satellite
+status: research
+summary: A lightweight GNSS-PWV multimodal model gives probabilistic 1-hour station precipitation nowcasts
+  across 100+ Chinese stations, with AUC above 91% in the best settings.
+abstract: 'Accurate and timely precipitation nowcasting is essential for meteorological hazard mitigation,
+  particularly at monitored sites with limited sensing inputs. Capturing the nonlinear, regime-dependent
+  relationship between precipitable water vapor (PWV) and rainfall remains challenging. This study proposes
+  a lightweight multimodal spatiotemporal learning framework with physics-aware inductive biases for station-centered,
+  short-horizon nowcasting within an existing or deployable monitoring network. The framework combines
+  global navigation satellite system-derived PWV with environmental-condition variables to generate probabilistic
+  forecasts of threshold-based precipitation events. Its architecture integrates a spatially aware multimodal
+  module, an efficient fusion stage, and a receptance weighted key-value-based temporal dynamical module
+  to capture spatial correlation, multimodal complementarity, and long-history temporal dependencies under
+  practical computational constraints. Evaluation involved more than 100 stations across three climatically
+  distinct Chinese provinces: Zhejiang, Hubei, and Sichuan. Experiments focused on 1-hour nowcasting,
+  with extensions to 3-hour forecasts. Ablation studies confirmed the contributions of multimodal integration,
+  long-temporal modeling, and spatial correlation modeling. Compared with the iTransformer baseline under
+  matched evaluation conditions, the framework consistently achieved better discrimination and lower false
+  positive rates. Area under the receiver operating characteristic curve values exceeded 91% in the best-performing
+  settings, while the false positive rate for heavy-rain events was approximately 21% at a true positive
+  rate near 87%. Strong first-hour-of-rain accuracy further supports its potential for early warning.
+  These results demonstrate an efficient approach to station-centered precipitation nowcasting from sparse
+  observations.'
+significance: 2
+cited_by: 0
+score: 43
+highlight: false
+added: '2026-10-22'
+source: snowball

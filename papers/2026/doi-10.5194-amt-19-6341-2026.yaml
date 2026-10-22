@@ -1,0 +1,58 @@
+id: doi-10.5194-amt-19-6341-2026
+title: Research on deep learning-based missing echo restoration method for weather radar mosaic data
+authors:
+- Husong Guo
+- Muyun Du
+- Xiangyu Fan
+- Cuihong Wu
+- Anwei Lai
+- Hedi Ma
+date: '2026-10-06'
+year: 2026
+venue: Atmospheric measurement techniques
+venue_type: journal
+ids:
+  doi: 10.5194/amt-19-6341-2026
+  openalex: W7220664423
+links:
+  paper: https://doi.org/10.5194/amt-19-6341-2026
+  pdf: https://amt.copernicus.org/articles/19/6341/2026/amt-19-6341-2026.pdf
+orgs:
+- cma
+topic: observations-remote-sensing
+topics:
+- nowcasting
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: BiConvLSTM-UNet restores missing regions in weather radar mosaics without a mask, learning spatiotemporal
+  echo patterns and outperforming traditional and other deep learning baselines.
+abstract: Abstract. Radar mosaic data represent a critical and widely utilized resource in weather forecasting.
+  Nevertheless, the frequent occurrence of regional radar echo gaps, caused by factors including radar
+  hardware malfunctions, data delivery delays, and software processing errors—each contributing to substantial
+  spatial uncertainty in the missing areas—significantly constrains its quantitative application. To address
+  this issue, we propose BiConvLSTM-UNet, a sequence reconstruction model designed to restore missing
+  radar echoes. The model operates without relying on a missing-value mask during both training and inference,
+  learning the inherent spatiotemporal variation patterns of radar echoes to reconstruct complete sequences.
+  A post-processing procedure is implemented to minimize the impact of reconstruction on areas without
+  missing data. Furthermore, multiple missing scenarios are synthetically generated to improve the model’s
+  robustness and repair performance across diverse missing-data conditions. Comparative assessments against
+  traditional and other deep learning approaches demonstrate the superior inpainting performance of the
+  proposed BiConvLSTM-UNet across multiple missing-data scenarios. The method introduces minimal artifact
+  to non-missing regions, and subsequent post-processing further diminishes reconstruction errors. Moreover,
+  the model sustains consistent performance across varying missing data lengths and continuity patterns,
+  indicating robust generalization capabilities. Consequently, the BiConvLSTM-UNet is more adept at addressing
+  the intricate and varied scenarios of incomplete radar mosaic data encountered in practical applications.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

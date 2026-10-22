@@ -1,0 +1,48 @@
+id: doi-10.5281-zenodo.21329280
+title: Pairwise Convolutional Relationship Modeling with Learned and Fixed Weighted Aggregation for Multi-Horizon
+  Temperature Forecasting
+authors:
+- Xia Song
+- Adriel Becerra
+- Aaron Qiu
+date: '2026-07-13'
+year: 2026
+venue: Zenodo (CERN European Organization for Nuclear Research)
+venue_type: preprint
+ids:
+  doi: 10.5281/zenodo.21329280
+  openalex: W7168161968
+links:
+  paper: https://doi.org/10.5281/zenodo.21329280
+orgs:
+- uc-berkeley
+topic: local-forecasting
+type: model
+method:
+- cnn
+timescale:
+- medium
+spatial:
+- local
+status: research
+summary: Pairwise 1D-convolutional models link temperature to each secondary variable, combined by weighted
+  sum, to produce one- to seven-day temperature forecasts.
+abstract: In weather forecasting, secondary variables such as humidity, wind speed, pressure, solar ra-diation,
+  and cloud amount contain distinct relationships with and predictive information about aprimary target
+  such as temperature. Rather than immediately combining all variables into a sin-gle global representation,
+  this study proposes first learning the temporal relationship betweentemperature and each secondary meteorological
+  variable independently. Each temperature–secondary-variable pair is processed by a one-dimensional convolutional
+  network over a fixedhistorical window and produces an intermediate temperature forecast. The individual
+  pairwiseforecasts are then combined through a weighted sum, allowing the final prediction to incorpo-rate
+  information learned from every target-specific relationship. Inspired by relational multi-variate forecasting
+  methods such as MTGNN(Multivariate Time Series Graph Neural Network),the proposed architecture replaces
+  global all-to-all interaction modeling with target-conditionedpairwise relationship extraction. Separate
+  direct models are trained for forecast horizons fromone to seven days, and both learned and fixed aggregation
+  weights are examined to distinguishthe contribution of the pairwise models from that of the final combination
+  mechanism
+significance: 2
+cited_by: 0
+score: 18
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,66 @@
+id: doi-10.3390-w18050574
+title: Research on Random Forest-Based Downscaling Inversion Techniques for Numerical Precipitation Prediction
+  Guided by Integrated Physical Mechanisms
+authors:
+- Haoshuang Liao
+- Shengchu Zhang
+- Jun Guo
+- Qiukuan Zhou
+- Xinyu Chang
+- Xinyi Liu
+date: '2026-02-27'
+year: 2026
+venue: Water
+venue_type: journal
+ids:
+  doi: 10.3390/w18050574
+  openalex: W7131870931
+links:
+  paper: https://doi.org/10.3390/w18050574
+  pdf: https://www.mdpi.com/2073-4441/18/5/574/pdf?version=1772533642
+topic: downscaling
+topics:
+- extremes-hazards
+type: model
+method:
+- classical-ml
+- physics-constrained
+spatial:
+- regional
+data:
+- stations
+- radar
+- other
+status: research
+summary: Physics-constrained random forest with MS-SSIM loss downscales hourly precipitation over Jiangxi
+  to R² 0.9465 using 2,252 stations and Z-R consistency.
+abstract: Numerical weather prediction (NWP) models are essential for precipitation forecasting but are
+  constrained by coarse spatial resolutions (10–50 km), which fail to capture fine-scale variations required
+  for regional disaster prevention, particularly in complex terrain. While statistical and machine learning
+  downscaling methods have been developed to bridge this resolution gap, they predominantly operate as
+  “black boxes” without explicit physical guidance, leading to predictions that violate meteorological
+  principles and systematic underestimation of extreme precipitation events. To address these limitations,
+  this study aims to develop a Physics-Informed Machine Learning framework that explicitly integrates
+  multi-scale topographic modulation and physical consistency constraints into precipitation downscaling.
+  Specifically, a Random Forest model enhanced with Multi-Scale Structural Similarity (MS-SSIM) loss and
+  Physical Constraint Enhancement (MSSSIM-PCE-RF) was constructed. The model introduces elevation gradient
+  weights at low-resolution layers and micro-topographic parameters (slope, surface roughness) at high-resolution
+  layers, while enforcing physical consistency between precipitation intensity, radar reflectivity, and
+  ground observations via the Z-R relationship. Based on hourly data from 2252 meteorological stations
+  in Jiangxi Province (2021–2022), coupled with topographic factors (DEM, slope, aspect) and Normalized
+  Difference Vegetation Index (NDVI), a technical framework of “data fusion–feature synergy–machine learning–spatial
+  reconstruction” was established. Results demonstrate that the MSSSIM-PCE-RF model achieves a validation
+  R2 of 0.9465 and RMSE of 0.1865 mm, significantly outperforming the conventional RF model (R2 = 0.9272).
+  Notably, errors in high-altitude, steep-slope, and high-vegetation areas are reduced by 45.3%, 42.0%,
+  and 43.1%, respectively, with peak precipitation period errors decreasing by 37.2%. Multi-scale topographic
+  analysis reveals significant orographic lifting effects at 250–1000 m elevations, peak precipitation
+  at 12–15° slopes, and abundant precipitation on south/southeast aspects. By explicitly embedding topographic
+  modulation and physical consistency constraints, the model effectively alleviates systematic underestimation
+  of extreme precipitation in complex terrain, providing high-resolution data support for transmission
+  line disaster prevention and micro-meteorological risk assessment.
+significance: 2
+cited_by: 1
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

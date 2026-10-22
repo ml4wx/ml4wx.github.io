@@ -1,0 +1,52 @@
+id: arxiv-2605.26401
+title: Small-Area Precipitation Forecasting and Drought--Flood Early Warning with Reverse-Martingale Regularized
+  Recurrent Networks
+authors:
+- Foo Hui-Mean
+- Yuan‐chin Ivan Chang
+date: '2026-05-26'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.26401'
+  openalex: W7162496367
+links:
+  paper: https://arxiv.org/abs/2605.26401
+  pdf: https://arxiv.org/pdf/2605.26401
+topic: local-forecasting
+topics:
+- extremes-hazards
+type: model
+method:
+- rnn
+- other
+timescale:
+- short
+spatial:
+- local
+- regional
+data:
+- stations
+- satellite
+status: research
+summary: Reverse-martingale regularized RNN gives probabilistic small-area rainfall forecasts; its SR
+  detector cuts false alarms three- to five-fold and flags Taiwan drought 8–12 days earlier.
+abstract: Small-area precipitation forecasts support real-time decisions for reservoir operation, irrigation
+  planning, drought monitoring, and flash-flood response. Operational value depends not only on point
+  accuracy, but also on calibrated exceedance probabilities and warning rules that remain stable when
+  local weather regimes depart from the training climatology. We evaluate a reverse-martingale regularized
+  recurrent neural network (\RMRNN) for probabilistic precipitation forecasting and sequential early warning.
+  A backward-coherence penalty is added to the recurrent hidden state; the resulting residual process
+  drives a Shiryaev--Roberts (SR) detector, so the same latent trajectory that produces the forecast also
+  supplies a continuously updated drought or flood-regime indicator. The framework is tested on the Taiwan
+  CWA dense rain-gauge network, CHIRPS v2 daily gridded precipitation over Taiwan and the Horn of Africa,
+  and NOAA GHCN-Daily stations over the Texas Hill Country. Across 1{,}000 replications, \RMRNN{} matches
+  or slightly improves the GRU baseline in RMSE, MAE, and CRPS at 1~h--72~h lead while substantially improving
+  alarm characteristics. The SR detector reduces false-alarm ratios by a factor of three to five at matched
+  detection power. In the 2020--2021 Taiwan drought, onset is flagged 8--12 days earlier than SPI-3 thresholding;
+  in the 2023 Typhoon Haikui flood, flash-flood risk is signalled 4~h before the CWA operational alert.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

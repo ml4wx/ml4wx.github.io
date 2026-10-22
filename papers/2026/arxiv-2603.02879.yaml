@@ -1,0 +1,63 @@
+id: arxiv-2603.02879
+title: Disentangling regional impacts of joint teleconnections using causal representation learning
+authors:
+- Fiona R. Spuler
+- Marlene Kretschmer
+- Magdalena Alonso Balmaseda
+- Masilin Gudoshava
+- Theodore G. Shepherd
+date: '2026-03-03'
+year: 2026
+venue: Journal of Climate
+venue_type: journal
+ids:
+  arxiv: '2603.02879'
+  doi: 10.1175/jcli-d-25-0700.1
+  openalex: W7166025335
+links:
+  paper: https://doi.org/10.1175/jcli-d-25-0700.1
+  pdf: https://arxiv.org/pdf/2603.02879
+orgs:
+- ecmwf
+- university-of-reading
+topic: climate-analysis-attribution
+topics:
+- s2s-seasonal
+type: model
+method:
+- gan-vae
+- physics-constrained
+timescale:
+- seasonal
+spatial:
+- regional
+data:
+- nwp-analysis
+- era5
+status: research
+summary: DAG-VAE embeds a causal graph in a VAE latent space to disentangle Pacific and Indian Ocean influences
+  on East African short rains, validated against SST-replacement experiments.
+abstract: Understanding teleconnections of large-scale modes of climate variability is relevant for seasonal
+  predictability and support a dynamical understanding of climatic changes. While numerical model experiments
+  are the most common approach for investigating counterfactual climate responses, their conclusions are
+  subject to model biases. Data-driven approaches offer a complementary perspective. Deep learning can
+  extract reduced-dimensional patterns but usually lacks causal interpretability, while causal methods
+  can disentangle signals in the presence of confounding yet are typically based on simple indices. Treating
+  dimensionality reduction and causal inference separately thereby risks losing the teleconnection signal
+  of interest. This paper introduces DAG-VAE, a causal representation learning approach that embeds a
+  physics-informed directed acyclic graph in the latent space of a variational autoencoder. Combining
+  deep learning with causal inference, the method jointly learns nonlinear reduced representations of
+  large-scale modes of variability and their causal interactions. We apply DAG-VAE to disentangle the
+  influences of the Pacific and Indian Oceans on the short rains over the Greater Horn of Africa. Trained
+  on seasonal hindcasts, the method identifies dynamically meaningful representations and recovers spatial
+  response patterns consistent with SST-replacement experiments. Trained on reanalysis data, DAG-VAE identifies
+  a different response pattern to direct influence of the tropical Pacific, highlighting potential model
+  biases and the value of DAG-VAE as a complementary, data-driven approach for estimating spatial causal
+  response patterns from observations. Finally, we demonstrate the ability of the method to generate data-driven
+  counterfactuals of extreme short rain seasons, with potential applications for forecast-based early
+  action and scenario planning.
+significance: 3
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

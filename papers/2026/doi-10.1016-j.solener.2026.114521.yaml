@@ -1,0 +1,54 @@
+id: doi-10.1016-j.solener.2026.114521
+title: Advanced predictor selection for post-processing of global horizontal irradiance forecasts with
+  stepwise machine learning regression
+authors:
+- Dávid Markovics
+- Viktória Soós
+- Martin János Mayer
+date: '2026-03-26'
+year: 2026
+venue: Solar Energy
+venue_type: journal
+ids:
+  doi: 10.1016/j.solener.2026.114521
+  openalex: W7140765101
+links:
+  paper: https://doi.org/10.1016/j.solener.2026.114521
+topic: post-processing
+topics:
+- applications-impacts
+type: evaluation
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Stepwise regression ranks 33 predictors for post-processing ECMWF GHI forecasts, cutting RMSE
+  by 10.7% using 15 predictors, outperforming SHAP and tree-based importance.
+abstract: Statistical post-processing utilizing historical data for conditional bias reduction is an essential
+  step in most forecasting workflows. The development of new methods, especially at the advent of advanced
+  machine learning models (ML), is a recurring topic of many post-processing papers. In contrast, little
+  attention is paid to selecting the most informative predictors, even though the accuracy gain achieved
+  through post-processing ultimately depends on the information that the input variables contain regarding
+  the bias of the forecasts. This study compares multiple approaches for ranking 33 potential predictors
+  based on their explanatory power for post-processing the global horizontal irradiance (GHI) forecasts
+  of the European Centre for Medium-Range Weather Forecasts (ECMWF). The proposed stepwise regression
+  (SWR) method is found to be the most reliable feature selection approach, outperforming the Shapley
+  additive explanations method and the feature importance calculations of three tree-based ensemble learning
+  models. Using only the 15 most informative predictors identified by the SWR, a 10.7% reduction in the
+  root mean square error of the already well-calibrated GHI forecasts of the ECMWF has been achieved.
+  Interestingly, the most important predictors are largely different from those commonly used in literature.
+  The SWR process shows great variance over the locations, and proves that a subset of predictors, which
+  provides even greater improvement, exists and can be identified ex post, however, because of year-to-year
+  variability, it cannot be found ex ante. Aggregating the results over the locations improves the generalizability
+  of the feature selection.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

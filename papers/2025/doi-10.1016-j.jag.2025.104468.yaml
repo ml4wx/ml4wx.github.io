@@ -1,0 +1,63 @@
+id: doi-10.1016-j.jag.2025.104468
+title: 'Improved hourly all-sky land surface temperature estimation: Incorporating the temporal variability
+  of cloud-radiation interactions'
+authors:
+- Dukwon Bae
+- Dongjin Cho
+- Jungho Im
+- Cheolhee Yoo
+- Yeonsu Lee
+- Siwoo Lee
+date: '2025-03-09'
+year: 2025
+venue: International Journal of Applied Earth Observation and Geoinformation
+venue_type: journal
+ids:
+  doi: 10.1016/j.jag.2025.104468
+  openalex: W4408264332
+links:
+  paper: https://doi.org/10.1016/j.jag.2025.104468
+topic: observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- era5
+- satellite
+- stations
+status: research
+summary: LightGBM reconstructs all-sky hourly 2 km land surface temperature from GK2A satellite and ERA5-Land,
+  using accumulated radiation to model cloud effects, with R² 0.97–0.99 under clear skies.
+abstract: • Hourly all-sky LST was reconstructed using machine learning. • The proposed method accounted
+  for the temporal variability of cloud effects. • The reconstructed hourly all-sky LST showed robust
+  performance and reliability. • The use of accumulated radiation was effective in reconstructing cloudy-sky
+  LST. Land surface temperature (LST) is an indispensable factor for comprehending of surface equilibrium
+  state on the Earth. In particular, satellites can continuously provide LST data and support the large-scale
+  monitoring of LST with a high temporal resolution; however, satellite data may be easily contaminated
+  by clouds. Previous satellite-based all-sky LST reconstruction approaches have inherent limitations,
+  such as low temporal resolution and insufficient consideration of cloud effects. Therefore, this study
+  aims to propose a novel methodology for all-sky 2-km hourly LST reconstruction from GEO-KOMPSAT-2A (GK2A)
+  using machine learning and timely weighted accumulated radiation to reflect the temporal variation of
+  cloud effects. The light gradient boosting machine approach used the European Center for Medium-Range
+  Weather Forecasts Reanalysis-Land variables (i.e., LST, 2 m air temperature, evaporation, and wind),
+  GK2A products (i.e., short and longwave radiation, and binary cloud cover), and auxiliary variables
+  including geographic variables as independent variables. The GK2A LST and in situ measurements were
+  used as dependent variables. The proposed model showed robust spatial agreement with GK2A LST under
+  clear-sky conditions when conducting five-fold spatial cross-validation, with coefficient of determination
+  (R 2 ) values of 0.97–0.99. In the leave one station-out cross-validation using 36 in situ data under
+  all-sky conditions, the proposed model showed high performance with R 2 values of 0.86–0.97, root mean
+  square error values of 1.42–2.60 °C, and bias values of −0.49–0.23 °C. In a comparison of the proposed
+  model with two scenarios and previous research investigating the effect of accumulated radiation, we
+  demonstrated that the use of accumulated radiation was effective in reconstructing cloudy-sky LST, particularly
+  during the daytime, as evident from the variable analysis conducted through Shapley additive explanations.
+  Using the proposed model, we successfully reconstructed a spatiotemporally seamless LST, which can serve
+  as a fundamental dataset for hourly heat-related research, such as hourly heat flow estimation and urban
+  heat island analysis.
+significance: 3
+cited_by: 2
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

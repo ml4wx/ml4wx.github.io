@@ -1,0 +1,66 @@
+id: doi-10.5194-gmd-19-7089-2026
+title: Precipitation nowcasting based on convolutional LSTM with spatio-temporal information transformation
+  using multi-meteorological factors
+authors:
+- Dufu Liu
+- Feihu Huang
+- Peng Zheng
+- Xiaomeng Huang
+- Xi Wu
+- Yuan Xia
+- Jiafeng Zheng
+- Xiaojie Li
+- Jing Fang Hu
+date: '2026-08-03'
+year: 2026
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-19-7089-2026
+  openalex: W4412384295
+links:
+  paper: https://doi.org/10.5194/gmd-19-7089-2026
+  pdf: https://gmd.copernicus.org/articles/19/7089/2026/gmd-19-7089-2026.pdf
+orgs:
+- tsinghua-university
+topic: nowcasting
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- satellite
+status: research
+summary: Dual encoder-decoder ConvLSTM with a new adaptive gradient loss produces 1-hour precipitation
+  nowcasts on SEVIR, reducing underestimation of intense rain.
+abstract: Abstract. Precipitation nowcasting is vital for protecting lives and economic activities, yet
+  accurate forecasts based solely on past precipitation remain elusive. Conventional numerical weather
+  prediction (NWP) models offer a solution but incur substantial computational costs. Moreover, due to
+  the rapid pace of climate change, long-term time series data are often inadequate for accurately addressing
+  precipitation forecasting for extreme weather events, as past meteorological time series data may not
+  accurately reflect current atmospheric conditions. There is an urgent need to rely on short-term time
+  series for prediction tasks. Existing studies have employed Spatio-Temporal Information Transformation(STI)
+  equations with iterative solutions for shortterm time series prediction. However, the solution process
+  involves relatively simple nonlinear operations, which are prone to cumulative errors and can result
+  in inaccurate forecasts. In response, the present work proposes a dual encoder-decoder training framework
+  that maps multi-dimensional spatial features into temporal projections of future precipitation variables.
+  This architecture addresses the limitations of inaccurate predictions for short-term time series data.
+  Additionally, an adaptive weighted gradient loss (ADGLoss) is proposed to mitigate error accumulation
+  in long-term forecasts and rectify systematic underestimation of high-intensity precipitation regions.
+  Leveraging the U.S.-based SEVIR dataset, the proposed model integrates multiple meteorological variables
+  to generate 1-hour precipitation forecasts. Experimental results demonstrate that the STI-driven framework
+  achieves superior predictive accuracy and reduced error rates in multi-step forecasting compared to
+  state-of-the-art deep learning benchmarks. The model effectively captures the spatio-temporal dependencies
+  between heterogeneous meteorological variables and precipitation patterns, offering a novel pathway
+  for advancing spatio-temporal prediction tasks in climate informatics.
+significance: 3
+cited_by: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

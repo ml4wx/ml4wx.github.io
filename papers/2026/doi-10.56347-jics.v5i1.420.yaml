@@ -1,0 +1,52 @@
+id: doi-10.56347-jics.v5i1.420
+title: 'Perbandingan Kinerja Algoritma Machine Learning untuk Prediksi Cuaca di Wilayah Tropis Indonesia:
+  Studi Komparatif Random Forest, SVM, LSTM, XGBoost, dan LightGBM'
+authors:
+- Nofirman Nofirman
+- Munawir Munawir
+- Fegie Yoanti Wattimena
+date: '2026-05-30'
+year: 2026
+venue: Journal Innovations Computer Science
+venue_type: journal
+ids:
+  doi: 10.56347/jics.v5i1.420
+  openalex: W7163018230
+links:
+  paper: https://doi.org/10.56347/jics.v5i1.420
+  pdf: https://journal.kawanad.com/index.php/jics/article/download/420/339
+topic: local-forecasting
+type: evaluation
+method:
+- classical-ml
+- rnn
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+- era5
+- other
+status: research
+summary: Compares RF, SVM, LSTM, XGBoost and LightGBM for Indonesian daily rainfall; LSTM performs best
+  with RMSE 3.94 mm and R2 0.891.
+abstract: 'Weather prediction in tropical Indonesia faces complex challenges due to high climate variability,
+  persistent El Niño–Southern Oscillation (ENSO) influence, and uneven observational coverage. This study
+  compared five machine learning algorithms — Random Forest (RF), Support Vector Machine (SVM), Long Short-Term
+  Memory (LSTM), XGBoost, and LightGBM — using 187,320 daily records from BMKG stations, ERA5 reanalysis,
+  and TRMM satellite data (2000–2023). Preprocessing included MMDIF-RF imputation, Z-score normalization,
+  and SMOTE for class imbalance correction. Models were evaluated on RMSE, MAE, R², Accuracy, Precision,
+  Recall, F1-Score, and AUC-ROC. LSTM achieved the best performance (RMSE = 3.94 mm; R² = 0.891; F1-Score
+  = 0.887; AUC-ROC = 0.941), reflecting its capacity to capture long-range temporal dependencies. XGBoost
+  and LightGBM delivered competitive accuracy at 8–18 times lower training cost, while SVM recorded the
+  lowest accuracy with the highest computational demand. Regional analysis showed station density and
+  data completeness were more consequential than algorithm choice — LSTM RMSE ranged from 3.61 mm in West
+  Java to 5.43 mm in East Nusa Tenggara. A tiered hybrid approach is recommended: LightGBM or XGBoost
+  for routine forecasting and LSTM for extreme event detection, alongside expanded BMKG coverage in eastern
+  Indonesia.'
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

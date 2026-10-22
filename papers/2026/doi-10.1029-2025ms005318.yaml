@@ -1,0 +1,58 @@
+id: doi-10.1029-2025ms005318
+title: 'PhySCAT‐Net: A Physics‐Informed Deep Learning Framework for Optimizing Hydrometeor Bulk Scattering
+  Properties Using Satellite Observations'
+authors:
+- Zeting Li
+- Wei Han
+- Hejun Xie
+- Xiaoze Xu
+- Lei Bi
+- Xiuyu Sun
+- Hao Li
+date: '2026-04-01'
+year: 2026
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2025ms005318
+  openalex: W7154964454
+links:
+  paper: https://doi.org/10.1029/2025ms005318
+orgs:
+- cma
+topic: data-assimilation
+topics:
+- observations-remote-sensing
+type: model
+method:
+- physics-constrained
+spatial:
+- global
+data:
+- satellite
+status: research
+summary: Physics-informed network embeds radiative transfer operators to correct snow scattering properties,
+  bringing GPM radiance O-B biases within ±1 K for all-sky assimilation.
+abstract: Abstract Accurate modeling of hydrometeor bulk scattering properties (BSPs) is essential for
+  the effective assimilation of satellite microwave observations in cloudy and precipitating conditions.
+  Nevertheless, current radiative transfer models use oversimplified hydrometeor BSP parameterizations,
+  leading to significant simulation errors and biases that limit the full potential of all‐sky assimilation.
+  To address this challenge, this study developed PhySCAT‐Net, a physics‐informed deep learning (DL) framework
+  that integrates forward and Jacobian operators of a physical radiative transfer model into the neural
+  network training, enabling efficient optimization of the BSP models against satellite observations.
+  Applied to vertically and horizontally polarized radiances from the Global Precipitation Measurement
+  Microwave Imager 166.5 GHz channels, the framework selectively fine‐tunes the snow BSP model while temporarily
+  fixing other hydrometeor types. Results demonstrate that the optimized DL model substantially improves
+  agreement between simulated and observed brightness temperatures. Across most regions globally, mean
+  observation‐minus‐background (O‐B) biases are reduced to within ±1K, and the Jensen‐Shannon divergence
+  decreases by orders of magnitude. The error distributions, which were previously highly skewed and therefore
+  problematic for data assimilation, are now roughly symmetrical. Furthermore, PhySCAT‐Net enables the
+  DL model to extract polarimetric information of non‐spherical ice particles directly from observed radiances,
+  demonstrating superior performance compared to existing empirical schemes. It successfully reproduces
+  the distributions of polarization differences and their non‐monotonic relationship with brightness temperature.
+significance: 4
+cited_by: 1
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

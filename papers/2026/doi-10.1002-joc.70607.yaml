@@ -1,0 +1,51 @@
+id: doi-10.1002-joc.70607
+title: Improving Daily Rainfall Downscaling Over Taiwan's Complex Terrain With Surface‐Wind‐Informed Deep
+  Learning Model
+authors:
+- Yi‐Chi Wang
+- Chia‐Hao Chiang
+- Chiung-Jui Su
+- Ko‐Chih Wang
+- Wan‐Ling Tseng
+- Hsin‐Chien Liang
+date: '2026-10-04'
+year: 2026
+venue: International Journal of Climatology
+venue_type: journal
+ids:
+  doi: 10.1002/joc.70607
+  openalex: W7219859232
+links:
+  paper: https://doi.org/10.1002/joc.70607
+topic: downscaling
+topics:
+- post-processing
+type: model
+method:
+- transformer
+spatial:
+- regional
+data:
+- era5
+- stations
+status: research
+summary: Attention-based encoder-decoder bias-corrects and downscales ERA5 daily rainfall over Taiwan,
+  improving extremes and orographic rainfall over BCSD benchmark.
+abstract: ABSTRACT This study evaluates whether an encoder‐decoder deep neural network with multi‐head
+  attention can bias‐correct and downscale ERA5 daily rainfall to Taiwan's 5‐km TCCIP gridded observations.
+  The Encoder–Decoder with Attention (EDA) model ingests ERA5 rainfall, 10‐m winds, coarsened TCCIP rainfall,
+  and 5‐km topography, is trained with consecutive‐year splits and a weighted MSE loss, and is benchmarked
+  against bias correction spatial disaggregation (BCSD) and a rainfall‐only variant. Across Taiwan's five
+  seasonal rainfall regimes, EDA improves the placement of orographic rainfall, reduces the low‐intensity
+  wet bias in ERA5, and better reproduces RX1day (annual maximum 1‐day precipitation), RX10mm (number
+  of days with daily precipitation ≥ 10 mm), CDD (maximum number of consecutive dry days), and interannual
+  variability than BCSD. The largest gains occur in seasons dominated by monsoon and typhoon forcing,
+  indicating that auxiliary wind information helps the network learn the statistical relationships that
+  better reproduce rainfall patterns associated with synoptic flow interacting with complex topography.
+  The results show that attention‐based statistical downscaling can improve the reproduction of high‐resolution
+  gridded rainfall fields for regions with steep terrain.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,58 @@
+id: doi-10.5194-gmd-2024-10
+title: A Deep Learning-Based Consistency Test Approach for Earth System Models on Heterogeneous Many-Core
+  Systems
+authors:
+- Yangyang Yu
+- Shaoqing Zhang
+- Haohuan Fu
+- Dexun Chen
+- Yang Gao
+- Xiaopei Lin
+- Zhao Liu
+- Xiaojing Lv
+date: '2024-01-29'
+year: 2024
+venue: Geoscientific Model Development Discussions
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-2024-10
+  openalex: W4391317904
+links:
+  paper: https://doi.org/10.5194/gmd-2024-10
+orgs:
+- tsinghua-university
+topic: infra-software
+type: model
+method:
+- rnn
+spatial:
+- global
+data:
+- other
+status: research
+summary: Bidirectional GRU autoencoder consistency test detects software errors in CESM on the Sunway
+  system despite hardware-induced perturbations.
+abstract: Abstract. Physical and heat limits of the semiconductor technology require the adaptation of
+  heterogeneous architectures in supercomputers to maintain a continuous increase of computing performance.
+  The coexistence of general-purpose cores and accelerator cores, which usually employ different hardware
+  architectures, can lead to bit-level differences, especially when we try to maximize the performance
+  on both kinds of cores. Such differences further lead to unavoidable computational perturbations through
+  temporal integration, which can blend with software or human errors. Software correctness verification
+  in the form of quality assurance is a critically important step in the development and optimization
+  of Earth system models (ESMs) on heterogeneous many-core systems with mixed perturbations of software
+  changes and hardware updates. We have developed a deep learning-based consistency test approach for
+  Earth System Models referred to as ESM-DCT. The ESM-DCT is based on the unsupervised bidirectional gate
+  recurrent unit-autoencoder (BGRU-AE) model, which can still detect the existence of software or human
+  errors when taking hardware-related perturbations into account. We use the Community Earth System Model
+  (CESM) on the new Sunway system as an example of large-scale ESMs to evaluate the ESM-DCT. The results
+  show that facing with the mixed perturbations caused by hardware designs and software changes in heterogeneous
+  computing, the ESM-DCT can detect software or human errors when determining whether or not the model
+  simulation is consistent with the original results in homogeneous computing. Our ESM-DCT tool provides
+  an efficient and objective approach for verifying the reliability of the development and optimization
+  of scientific computing models on the heterogeneous many-core systems.
+significance: 2
+cited_by: 0
+score: 18
+highlight: false
+added: '2026-10-22'
+source: backfill

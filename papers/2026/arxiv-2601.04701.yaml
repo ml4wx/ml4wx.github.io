@@ -1,0 +1,60 @@
+id: arxiv-2601.04701
+title: Error in ERA5 2m Temperature identified using GraphCast
+authors:
+- Hannah M. Christensen
+- Jack Barker
+- Bobby Antonio
+- Massimo Bonavita
+- Mohamed Dahoui
+- Patricia de Rosnay
+date: '2026-01-08'
+year: 2026
+venue: Quarterly Journal of the Royal Meteorological Society
+venue_type: journal
+ids:
+  arxiv: '2601.04701'
+  doi: 10.1002/qj.70309
+  openalex: W7119887891
+links:
+  paper: https://doi.org/10.1002/qj.70309
+  pdf: https://arxiv.org/pdf/2601.04701
+orgs:
+- ecmwf
+- university-of-oxford
+topic: benchmarks-data-eval
+topics:
+- observations-remote-sensing
+type: evaluation
+method:
+- other
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+- nwp-analysis
+status: research
+summary: Using GraphCast forecasts, the authors trace a recurrent 2m temperature error over Ethiopia in
+  ERA5 to optimal-interpolation analysis increments at 0600 UTC.
+abstract: Reanalyses such as ERA5 have long been foundational for weather and climate science. They have
+  also found a new use case, as training and verification data for machine-learnt weather prediction (MLWP)
+  models. Here we compare short-lead time (6h) forecasts from the MLWP model GraphCast against ERA5. In
+  doing so, we identify a recurrent, spatially coherent error in 2m Temperature centred on the Ethiopian
+  Highlands, that occurs predominantly at 0600 UTC. We show that these error events are not an error in
+  the forecast from GraphCast, but are in fact an error in ERA5, and are also present in the ECMWF operational
+  analysis. They arise from the 2D optimal interpolation procedure, when surface reports are assimilated
+  that are temporally displaced compared to the background forecast. This produces spuriously warm analysis
+  increments over Ethiopia on approximately 7\% of dates at 0600 UTC across the reanalysis record. The
+  spread from the ensemble of data assimilation partially flags these cases but is underdispersive. We
+  assess the impact on GraphCast, which was trained on ERA5. While GraphCast can largely ignore these
+  unphysical error events, a small systematic degradation in forecast skill over the region is observed.
+  We discuss implications for using reanalysis as truth in machine learning training and verification,
+  and recommend simple changes to reduce such artefacts in future analyses.
+significance: 6
+score: 59
+highlight: true
+highlight_reason: Shows a recurrent ERA5 2m temperature error found via GraphCast; important for anyone
+  using reanalysis as ML training and verification truth.
+added: '2026-10-22'
+source: backfill

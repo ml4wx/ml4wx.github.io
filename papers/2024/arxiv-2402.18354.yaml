@@ -1,0 +1,51 @@
+id: arxiv-2402.18354
+title: 'SuperdropNet: a Stable and Accurate Machine Learning Proxy for Droplet-based Cloud Microphysics'
+authors:
+- Shivani Sharma
+- David Greenberg
+date: '2024-02-28'
+year: 2024
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  arxiv: '2402.18354'
+  doi: 10.1029/2024ms004279
+  openalex: W4410919034
+links:
+  paper: https://doi.org/10.1029/2024ms004279
+  pdf: https://arxiv.org/pdf/2402.18354
+topic: hybrid-parameterization
+type: model
+method:
+- physics-constrained
+- other
+timescale:
+- short
+spatial:
+- local
+data:
+- km-scale-sim
+status: research
+summary: SuperdropNet, an ML emulator of Lagrangian superdroplet microphysics, uses multistep autoregressive
+  training and physical constraints to match or beat bulk moment schemes in many cases.
+abstract: Cloud microphysics has important consequences for climate and weather phenomena, and inaccurate
+  representations can limit forecast accuracy. While atmospheric models increasingly resolve storms and
+  clouds, the accuracy of the underlying microphysics remains limited by computationally expedient bulk
+  moment schemes based on simplifying assumptions. Droplet-based Lagrangian schemes are more accurate
+  but are underutilized due to their large computational overhead. Machine learning (ML) based schemes
+  can bridge this gap by learning from vast droplet-based simulation datasets, but have so far struggled
+  to match the accuracy and stability of bulk moment schemes. To address this challenge, we developed
+  SuperdropNet, an ML-based emulator of the Lagrangian superdroplet simulations. To improve accuracy and
+  stability, we employ multi-step autoregressive prediction during training, impose physical constraints,
+  and carefully control stochasticity in the training data. Superdropnet predicted hydrometeor states
+  and cloud-to-rain transition times more accurately than previous ML emulators, and matched or outperformed
+  bulk moment schemes in many cases. We further carried out detailed analyses to reveal how multistep
+  autoregressive training improves performance, and how the performance of SuperdropNet and other microphysical
+  schemes hydrometeors' mass, number and size distribution. Together our results suggest that ML models
+  can effectively emulate cloud microphysics, in a manner consistent with droplet-based simulations.
+significance: 3
+cited_by: 8
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

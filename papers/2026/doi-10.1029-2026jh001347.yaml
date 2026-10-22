@@ -1,0 +1,62 @@
+id: doi-10.1029-2026jh001347
+title: Improving Extreme Precipitation Forecasts via Cascade Binary Classification With Diffusion Post‐Processing
+authors:
+- Leyan Dai
+- Huiling Yuan
+- Yiheng Liu
+- Xinyue Li
+- Xuanhao Gu
+- Jiajun Li
+- Yang Zhao
+date: '2026-07-31'
+year: 2026
+venue: Journal of Geophysical Research Machine Learning and Computation
+venue_type: journal
+ids:
+  doi: 10.1029/2026jh001347
+  openalex: W7171936111
+links:
+  paper: https://doi.org/10.1029/2026jh001347
+topic: extremes-hazards
+topics:
+- post-processing
+- downscaling
+type: model
+method:
+- cnn
+- diffusion
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+- other
+status: research
+summary: Fifteen threshold-specific U-Nets plus diffusion post-processing downscale 0.25° extreme rainfall
+  to 0.1° over eastern China, improving CSI by 25–54% over baselines.
+abstract: Abstract Accurate forecasting of extreme precipitation remains a critical challenge, owing to
+  its heavy‐tailed distribution and severe class imbalance that limit conventional deep learning approaches.
+  This study presents a two‐stage cascade‐diffusion framework for extreme precipitation forecasting over
+  eastern China (110°–130°E, 20°–40°N). The first stage employs a cascade binary classification module
+  comprising 15 independent U‐Net models. Each model was trained for a specific precipitation threshold
+  and integrated via hierarchical stacking, producing a coarse‐resolution (0.25°) diagnostic field with
+  reliable spatial localization across intensity levels. The second stage employs a diffusion‐based post‐processing
+  module for simultaneous bias correction and probabilistic spatial downscaling from 0.25° to 0.1°. This
+  step recovers distributional continuity and preserves the heavy‐precipitation tail via higher‐percentile
+  ensemble aggregation (P80, P90). The framework uses ERA5 reanalysis and GPM IMERG over 2013–2023, with
+  2023 as an independent test year. Results demonstrate that the cascade module achieves Critical Success
+  Index (CSI) improvements of 25%–54% over regression and multi‐task learning baselines at the 50–100
+  mm 6h −1 thresholds. The diffusion post‐processing module further improves the distributional fidelity,
+  with P80 and P90 aggregation both achieving strong detection skill at high thresholds. While P90 attains
+  the highest CSI at extreme thresholds, P80 provides a more balanced performance with better‐controlled
+  frequency bias. Variable importance analysis via sequential feature selection reveals physically interpretable
+  threshold‐dependent pressure‐level contributions. Near‐surface levels dominate across all intensities,
+  while upper‐tropospheric levels provide progressively greater marginal skill for extreme events. These
+  results establish the cascade‐diffusion framework as a practically viable approach for operational extreme
+  precipitation forecasting.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

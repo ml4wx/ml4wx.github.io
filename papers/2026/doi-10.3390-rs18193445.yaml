@@ -1,0 +1,59 @@
+id: doi-10.3390-rs18193445
+title: Bias Assessment and Correction of Atmospheric Temperature and Vapor Density Profiles from Six Ground-Based
+  Microwave Radiometers over Wuhan
+authors:
+- Aning Gou
+- Weifa Yang
+- Kangyi Zhu
+- Guirong Xu
+date: '2026-10-08'
+year: 2026
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs18193445
+  openalex: W7220990136
+links:
+  paper: https://doi.org/10.3390/rs18193445
+orgs:
+- cma
+topic: observations-remote-sensing
+topics:
+- post-processing
+type: model
+method:
+- classical-ml
+- other
+spatial:
+- local
+data:
+- stations
+- other
+status: research
+summary: ANN-based bias correction of six ground microwave radiometers at Wuhan cuts temperature RMSE
+  by 18.5% and vapor density RMSE by 36.8% versus radiosondes.
+abstract: Ground-based microwave radiometers (MWRs) continuously retrieve atmospheric temperature and
+  vapor density profiles, but systematic biases relative to radiosonde observations limit their quantitative
+  application in nowcasting and data assimilation. In this study, we matched temperature and vapor density
+  profiles from six ground-based MWRs with L-band radiosonde observations at Wuhan to evaluate data quality
+  for 2025 and analyze the sources of station-to-station bias differences. We established linear regression,
+  random forest (RF), and artificial neural network (ANN) models to correct biases by height group and
+  sky condition, respectively, and compared the corrected data with the original data. The results show
+  that, compared with radiosonde data, the MWR temperature was generally cold-biased under clear (−0.895
+  °C), cloudy (−0.729 °C), and rainy (−0.188 °C) skies, whereas the vapor density was moist-biased under
+  all three conditions (+0.417, +0.209, and +0.47 g/m3). The per-station biases differed markedly and
+  could not be explained by spatial separation alone, indicating station-specific environmental and representativeness
+  differences rather than instrument differences. All three correction methods significantly reduced the
+  deviations; taking the RMSE together with the residual bias as the joint criterion, the ANN was selected
+  as the best method, reducing the test set temperature RMSE from 2.802 °C to 2.284 °C (−18.5%) and the
+  vapor density RMSE from 2.764 g/m3 to 1.746 g/m3 (−36.8%), followed by random forest (−17% and −35.9%)
+  and linear regression (−6.8% and −6.8%). After removing the small constant residual bias, the ANN is
+  both the most accurate and effectively unbiased. The corrected profiles brought the thermodynamic instability
+  parameters to a usable level for severe-convection nowcasting and provided an early-warning signal in
+  the pre-onset period of gale and short-duration heavy rain, which also provide a reference for the quantitative
+  application of microwave radiometer data.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

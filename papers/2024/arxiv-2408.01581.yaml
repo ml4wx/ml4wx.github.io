@@ -1,0 +1,73 @@
+id: arxiv-2408.01581
+title: 'Huge Ensembles Part II: Properties of a Huge Ensemble of Hindcasts Generated with Spherical Fourier
+  Neural Operators'
+authors:
+- Ankur Mahesh
+- William Collins
+- Boris Bonev
+- Noah Brenowitz
+- Yair Cohen
+- Peter Harrington
+- Karthik Kashinath
+- Thorsten Kurth
+- Joshua North
+- Travis OBrien
+- Michael Pritchard
+- David Pruitt
+- Mark Risser
+- Shashank Subramanian
+- Jared Willard
+date: '2024-08-02'
+year: 2024
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  arxiv: '2408.01581'
+  doi: 10.5194/gmd-18-5605-2025
+  openalex: W4413992144
+links:
+  paper: https://doi.org/10.5194/gmd-18-5605-2025
+  pdf: https://arxiv.org/pdf/2408.01581
+orgs:
+- lbnl-nersc
+- nvidia
+- uc-berkeley
+topic: probabilistic-ensembles
+topics:
+- extremes-hazards
+- global-medium-range
+type: evaluation
+method:
+- neural-operator
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: A 7,424-member Spherical Fourier Neural Operator huge ensemble samples events 4 sigma from the
+  mean and improves extreme-weather uncertainty quantification for summer 2023 forecasts.
+abstract: 'In Part I, we created an ensemble based on Spherical Fourier Neural Operators. As initial condition
+  perturbations, we used bred vectors, and as model perturbations, we used multiple checkpoints trained
+  independently from scratch. Based on diagnostics that assess the ensemble''s physical fidelity, our
+  ensemble has comparable performance to operational weather forecasting systems. However, it requires
+  orders of magnitude fewer computational resources. Here in Part II, we generate a huge ensemble (HENS),
+  with 7,424 members initialized each day of summer 2023. We enumerate the technical requirements for
+  running huge ensembles at this scale. HENS precisely samples the tails of the forecast distribution
+  and presents a detailed sampling of internal variability. HENS has two primary applications: (1) as
+  a large dataset with which to study the statistics and drivers of extreme weather and (2) as a weather
+  forecasting system. For extreme climate statistics, HENS samples events 4$σ$ away from the ensemble
+  mean. At each grid cell, HENS increases the skill of the most accurate ensemble member and enhances
+  coverage of possible future trajectories. As a weather forecasting model, HENS issues extreme weather
+  forecasts with better uncertainty quantification. It also reduces the probability of outlier events,
+  in which the verification value lies outside the ensemble forecast distribution.'
+significance: 7
+cited_by: 15
+score: 63
+highlight: true
+highlight_reason: Generates 7,424-member SFNO ensemble, showing ML can sample extreme tails cheaply; important
+  for extremes and ensemble forecasting research.
+added: '2026-10-22'
+source: backfill

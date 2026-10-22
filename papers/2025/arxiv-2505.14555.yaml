@@ -1,0 +1,51 @@
+id: arxiv-2505.14555
+title: Physics-Guided Learning of Meteorological Dynamics for Weather Downscaling and Forecasting
+authors:
+- Yingtao Luo
+- Shikai Fang
+- Binqing Wu
+- Qingsong Wen
+- Liang Sun
+date: '2025-05-20'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2505.14555'
+  doi: 10.1145/3711896.3737081
+  openalex: W4412877169
+links:
+  paper: https://arxiv.org/abs/2505.14555
+  pdf: https://arxiv.org/pdf/2505.14555
+orgs:
+- alibaba-damo
+- microsoft-research
+topic: downscaling
+topics:
+- global-medium-range
+type: model
+method:
+- physics-constrained
+- other
+timescale:
+- medium
+data:
+- era5
+status: research
+summary: PhyDL-NWP embeds atmospheric equations in a continuous-coordinate network for resolution-free
+  downscaling and forecasting, with 55K parameters and 170x faster inference.
+abstract: Weather forecasting is essential but remains computationally intensive and physically incomplete
+  in traditional numerical weather prediction (NWP) methods. Deep learning (DL) models offer efficiency
+  and accuracy but often ignore physical laws, limiting interpretability and generalization. We propose
+  PhyDL-NWP, a physics-guided deep learning framework that integrates physical equations with latent force
+  parameterization into data-driven models. It predicts weather variables from arbitrary spatiotemporal
+  coordinates, computes physical terms via automatic differentiation, and uses a physics-informed loss
+  to align predictions with governing dynamics. PhyDL-NWP enables resolution-free downscaling by modeling
+  weather as a continuous function and fine-tunes pre-trained models with minimal overhead, achieving
+  up to 170x faster inference with only 55K parameters. Experiments show that PhyDL-NWP improves both
+  forecasting performance and physical consistency.
+significance: 4
+cited_by: 9
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

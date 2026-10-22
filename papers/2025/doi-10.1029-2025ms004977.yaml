@@ -1,0 +1,58 @@
+id: doi-10.1029-2025ms004977
+title: Offline Performance of a Nonlocal Deep Learning Parameterization for Climate Model Representation
+  of Atmospheric Gravity Waves
+authors:
+- Aman Gupta
+- Aditi Sheshadri
+- Sujit Roy
+- Valentine G. Anantharaj
+date: '2025-10-01'
+year: 2025
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2025ms004977
+  openalex: W4415458196
+links:
+  paper: https://doi.org/10.1029/2025ms004977
+orgs:
+- nasa
+- ornl
+- stanford
+topic: hybrid-parameterization
+topics:
+- downscaling
+type: model
+method:
+- cnn
+spatial:
+- global
+data:
+- era5
+- km-scale-sim
+status: research
+summary: Nonlocal neural network gravity-wave flux parameterizations, with Attention UNet best, are trained
+  on ERA5 and transfer-learned to a 1.4 km model for climate use.
+abstract: 'Abstract Gravity waves (GWs) make crucial contributions to the middle atmospheric circulation.
+  Yet, their climate model representation remains inaccurate, leading to key circulation biases. This
+  study introduces a set of three neural networks (NNs) that learn to predict GW fluxes (GWFs) from multiple
+  years of high‐resolution ERA5 reanalysis. The three NNs: a ANN, a ANN‐CNN, and an Attention UNet embed
+  different levels of horizontal nonlocality in their architecture and are capable of representing nonlocal
+  GW effects that are missing from current operational GW parameterizations. The NNs are evaluated offline
+  on both time‐averaged statistics and time‐evolving flux variability. All NNs, especially the Attention
+  UNet, accurately recreate the global GWF distribution in both the troposphere and the stratosphere.
+  Moreover, the Attention UNet most skillfully predicts the transient evolution of GWFs over prominent
+  orographic and nonorographic hotspots, with the model being a close second. Since even ERA5 does not
+  resolve a substantial portion of GWFs, this deficiency is compensated by subsequently applying transfer
+  learning on the ERA5‐trained ML models for GWFs from a 1.4 km global climate model. It is found that
+  the re‐trained models both (a) preserve their learning from ERA5, and (b) learn to appropriately scale
+  the predicted fluxes to account for ERA5''s limited resolution. Our results highlight the importance
+  of embedding nonlocal information for a more accurate GWF prediction and establish strategies to complement
+  abundant reanalysis data with limited high‐resolution data to develop machine learning‐driven parameterizations
+  for missing mesoscale processes in climate models.'
+significance: 4
+cited_by: 3
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

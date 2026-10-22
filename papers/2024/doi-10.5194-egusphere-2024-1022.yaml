@@ -1,0 +1,56 @@
+id: doi-10.5194-egusphere-2024-1022
+title: Using Multi-Head Attention Deep Neural Network for Bias Correction and Downscaling for Daily Rainfall
+  Pattern of a Subtropical Island
+authors:
+- Yi‐Chi Wang
+- Chia-Hao Chiang
+- Chiung-Jui Su
+- Ko-Chih Wang
+- Wan‐Ling Tseng
+- Cheng‐Ta Chen
+- Hsin‐Chien Liang
+date: '2024-04-29'
+year: 2024
+venue_type: other
+ids:
+  doi: 10.5194/egusphere-2024-1022
+  openalex: W4396222454
+links:
+  paper: https://doi.org/10.5194/egusphere-2024-1022
+topic: downscaling
+topics:
+- post-processing
+type: model
+method:
+- transformer
+spatial:
+- regional
+data:
+- era5
+- stations
+status: research
+summary: Multi-head attention DNN corrects bias and downscales ERA5 daily rainfall to 5 km over Taiwan,
+  outperforming quantile mapping on orographic rainfall.
+abstract: Abstract. This study investigates the capability of a deep learning approach, employing a multi-head
+  attention mechanism within a deep neural network (DNN) framework, aimed at refining the bias correction
+  and downscaling process for the fifth generation European Centre for Medium-Range Weather Forecasts
+  reanalysis rainfall datasets to provide local-scale daily rainfall data across Taiwan, a mountainous
+  subtropical island. Leveraging gridded 5-km daily rainfall observations across Taiwan, the proposed
+  DNN model, the Encoder-Decoder with multi-head Attention for auxiliary channels (EDA) model, can adeptly
+  correct biases and downscale rainfall statistics from coarse-resolution reanalysis data by incorporating
+  auxiliary inputs, such as surface wind information, and invariant data, such as high-resolution topography
+  data. Our evaluation, centred on the distinct seasonal rainfall characteristics of Taiwan, uses mean
+  rainfall patterns, rainfall statistics, extreme climate indices, and their interannual variation for
+  the rainy seasons. The findings show the EDA model's ability to correct for overestimated low-intensity
+  rainfall and inaccurately positioned orographic rainfall in reanalysis datasets, achieving better accuracy
+  than conventional quantile-mapping methods. Further analysis reveals the critical role of auxiliary
+  information of surface winds used by the EDA to enhance the downscaling accuracy across various performance
+  metrics. This study underscores the significant potential of DNN architectures for statistical bias
+  correction and downscaling in regions with complex terrains, by effectively integrating auxiliary data
+  to capture the interplay between synoptic and local circulations influenced by topography.
+significance: 3
+cited_by: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,77 @@
+id: doi-10.5281-zenodo.21894995
+title: Using ML to Identify Surface Features Involved in Convection Initiation over the Houston Area
+authors:
+- Michael Self
+- Christopher J. Nowotarski
+- Bobak J. Mortazavi
+- Sicong Huang
+- Milind Sharma
+- Anita D. Rapp
+- Sarah Dickerson Brooks
+date: '2026-08-11'
+year: 2026
+venue: Zenodo (CERN European Organization for Nuclear Research)
+venue_type: preprint
+ids:
+  doi: 10.5281/zenodo.21894995
+  openalex: W7202196665
+links:
+  paper: https://doi.org/10.5281/zenodo.21894995
+topic: nowcasting
+topics:
+- observations-remote-sensing
+type: application
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- satellite
+status: research
+summary: Machine learning classifies convection initiation mechanisms such as sea-breeze fronts and outflow
+  boundaries from GOES-16 and KHGX radar imagery over Houston.
+abstract: 'Identifying surface features that provide convergence needed for convection initiation is crucial
+  for forecasting severe convection. By automatically categorizing images using satellite and radar imagery,
+  a large dataset of nascent cells, or early-stage convection and their initiation mechanisms can be created
+  in conjunction with cell tracking. Better understanding how the initiation mechanism affects the evolution
+  of the convection also increases our ability to forecast convective hazards, like wind, hail, and tornadoes.
+  This project aims to use machine learning to detect and categorize different air mass boundaries and
+  convective features, such as fields of horizontal convective rolls, sea-breeze fronts, outflow boundaries,
+  unorganized shallow convection, and deep convection over the Houston, TX area using radar and satellite
+  observations. Automation via ML is expected to ultimately increase efficiency in the identification
+  of initiation mechanisms over manual methods. The end goal is to analyze how the initiation mechanism
+  affects the evolution of summertime convective storms in the Houston area and how this may be expanded
+  to other initiation mechanisms in areas/regimes more prone to severe convection. In order to train and
+  test machine learning models, a training dataset of manually labeled images was created. To do this,
+  daytime radar reflectivity and true-color satellite imagery (from the KHGX WSR-88D and GOES-16, respectively)
+  during the TRacking Aerosol Convection interactions ExpeRiment (TRACER) intensive operative period during
+  the summer of 2022, were preprocessed and matched to the same spatial domain. This dataset was then
+  limited to days where active convection occurred in the domain, which narrowed it down to 97 of the
+  122 total days (~80%), leaving more than 11,000 pairs (frames) of visible satellite and radar reflectivity
+  imagery. In order to obtain a representative random sample of regimes for training, first a cloud-cover
+  clustering algorithm was created and applied to every satellite image. Images were then divided into
+  eight cloud-cover percent “bins”, from which 1% of the frames were “pseudo-randomly” selected, with
+  half of them being from the 15 days with a defined sea-breeze front studied previously. Using the LabelMe
+  software, the following labels were drawn for each frame, if present: LAND (for clear air land, default),
+  OCEAN (clear air ocean, default), OBSCR (for upper-level clouds/smoke obscuring the surface), SHALLOW
+  (for shallow, unorganized surface based convection), HCRF (for fields of horizontal convective rolls),
+  OUTFLOW (for outflow from thunderstorms), DEEP (for deep convection, ~35+ dBZ on radar), and SBF (for
+  sea-breeze front). Using the PyTorch package, a UNet was constructed and trained on the manually labeled
+  frames. Unlabeled “context images”, or frames from before and after the predicted frame, were fed into
+  the model in an effort to improve the performance on our target dataset. Other machine learning models
+  are currently being explored, such as DinoV2, a self-supervised vision transformer. In this presentation,
+  we present analysis of the sensitivity of the machine learning model performance based on the percentage
+  of pixels correctly classified based on manually labelled verification data. We explore the sensitivity
+  of the model performance to model architecture and hyper parameters, including the relative importance
+  of radar versus satellite data and the inclusion of “context images”. We will conclude with a discussion
+  of applications beyond the Houston region and for boundaries that may initiate severe convective storms
+  (e.g., synoptic fronts, dry lines).'
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

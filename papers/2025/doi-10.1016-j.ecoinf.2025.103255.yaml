@@ -1,0 +1,57 @@
+id: doi-10.1016-j.ecoinf.2025.103255
+title: Postprocessing of convection permitting precipitation forecast using UNets
+authors:
+- Marcos Esquivel-González
+- Albano González
+- Juan C. Pérez
+- Juan P. Díaz
+date: '2025-06-19'
+year: 2025
+venue: Ecological Informatics
+venue_type: journal
+ids:
+  doi: 10.1016/j.ecoinf.2025.103255
+  openalex: W4411449263
+links:
+  paper: https://doi.org/10.1016/j.ecoinf.2025.103255
+topic: post-processing
+topics:
+- regional-km-scale
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: UNet postprocessing of 25 km convection-permitting WRF ensembles improves hourly precipitation
+  probability forecasts over the Canary Islands, performing comparably or better than EMOS.
+abstract: 'Reliable precipitation forecasting is crucial in sectors like public safety, agriculture and
+  water management. Although Numerical Weather Prediction (NWP) models form the backbone of modern forecasting,
+  their inherent limitations and the chaotic behavior of atmospheric equations often result in errors,
+  requiring postprocessing to improve accuracy and quantify uncertainties. This study assesses hourly
+  precipitation probabilistic postprocessing models tailored for the Canary Islands, aiming to improve
+  ensemble forecasting accuracy. UNet-based models were explored using two strategies: one incorporating
+  all 25 km-scale convection-permitting ensemble forecast simulations as input, and another applying dimensionality
+  reduction techniques to reduce input complexity. These models were compared to traditional benchmarks
+  like the Censored Shifted Gamma Distribution (CSGD) with Ensemble Model Output Statistics (EMOS), the
+  Analog Ensemble method and deep learning strategies through MLP architectures. In the analysis of the
+  results, not only the reliability of the predictions for the set of available meteorological stations
+  was considered, but also the generalization capacity of the UNet models to obtain precipitation predictions
+  for the whole region. UNet models generally improved the raw WRF ensemble and performed comparably or
+  better than traditional approaches. Probabilistic (CRPSS, BSS) and deterministic (MAESS, RMSESS, Relative
+  Bias) skill scores demonstrated improvements, particularly in forecasting light-to-moderate rainfall.
+  The Integrated Gradients technique revealed that incorporating a height terrain map significantly influenced
+  UNet’s outputs, emphasizing the critical role of topographic data in rainfall forecasting. Furthermore,
+  UNet models demonstrated strong spatial generalization, showcasing their potential for operational forecasting
+  in areas with limited observational networks.'
+significance: 3
+cited_by: 2
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,48 @@
+id: arxiv-2602.17726
+title: 'Closing Africa''s Early Warning Gap: AI Weather Forecasting for Disaster Prevention'
+authors:
+- Qness Ndlovu
+date: '2026-02-18'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2602.17726'
+  openalex: W7131120300
+links:
+  paper: https://arxiv.org/abs/2602.17726
+topic: applications-impacts
+topics:
+- global-medium-range
+type: application
+method:
+- other
+timescale:
+- medium
+spatial:
+- global
+data:
+- other
+status: pre-operational
+summary: A low-cost deployment architecture serves NVIDIA Earth-2 15-day global forecasts for South African
+  early warning via WhatsApp, with sub-200 ms query latency and a claimed 2,000x cost advantage over radar.
+abstract: 'In January 2026, torrential rains killed 200-300 people across Southern Africa, exposing a
+  critical reality: 60% of the continent lacks effective early warning systems due to infrastructure costs.
+  Traditional radar stations exceed USD 1 million each, leaving Africa with an 18x coverage deficit compared
+  to the US and EU. We present a production-grade architecture for deploying NVIDIA Earth-2 AI weather
+  models at USD 1,430-1,730/month for national-scale deployment - enabling coverage at 2,000-4,545x lower
+  cost than radar. The system generates 15-day global atmospheric forecasts, cached in PostgreSQL to enable
+  user queries under 200 milliseconds without real-time inference. Deployed in South Africa in February
+  2026, our system demonstrates three technical contributions: (1) a ProcessPoolExecutor-based event loop
+  isolation pattern that resolves aiobotocore session lifecycle conflicts in async Python applications;
+  (2) a database-backed serving architecture where the GPU writes global forecasts directly to PostgreSQL,
+  eliminating HTTP transfer bottlenecks for high-resolution tensors; and (3) an automated coordinate management
+  pattern for multi-step inference across 61 timesteps. Forecasts are delivered via WhatsApp, leveraging
+  80%+ market penetration. This architecture makes continent-scale early warning systems economically
+  viable, supporting UNDRR findings that such systems reduce disaster death rates by 6x. All architectural
+  details are documented inline for full reproducibility.'
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: snowball

@@ -1,0 +1,54 @@
+id: doi-10.3389-ffgc.2026.1892417
+title: Spatiotemporal variation characteristics and multi-combination modeling assessment of fire weather
+  index in Shanxi Province
+authors:
+- Zhu-Mao Lu
+- Ji-Zhong Liang
+- Jin-Song Li
+- Hui Yuan
+- Shuai Wang
+- Zhi-Xin Duan
+date: '2026-09-30'
+year: 2026
+venue: Frontiers in Forests and Global Change
+venue_type: journal
+ids:
+  doi: 10.3389/ffgc.2026.1892417
+  openalex: W7214967285
+links:
+  paper: https://doi.org/10.3389/ffgc.2026.1892417
+  pdf: https://www.frontiersin.org/journals/forests-and-global-change/articles/10.3389/ffgc.2026.1892417/pdf
+topic: extremes-hazards
+topics:
+- observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- era5
+- stations
+- satellite
+status: research
+summary: XGBoost with ERA5-Land and SMAP/AMSR2 soil moisture estimates fire weather index components in
+  Shanxi, reaching R² 0.43 for FWI and 0.77 for DC.
+abstract: Introduction Accurate estimation of fire-weather indices in complex mountainous terrain is limited
+  by biases in reanalysis meteorology and incomplete representation of surface-moisture heterogeneity.
+  Methods We developed a station-supervised framework that combines ground meteorological observations,
+  ERA5-Land variables, terrain information, and microwave soil-moisture products from SMAP, AMSR2, and
+  FY-3 sensors. XGBoost was used to estimate FFMC, DMC, and DC, after which ISI, BUI, and FWI were derived
+  using the standard FWI equations. Three schemes were compared on a chronological validation set. Results
+  The ERA5 + SMC + XGBoost scheme achieved R² values of 0.69, 0.63, 0.77, and 0.43 for FFMC, DMC, DC,
+  and FWI, respectively, and improved overall agreement relative to the ERA5-driven baseline. Study-period
+  mean patterns indicated higher fire-weather potential in central-southern and southwestern mountainous
+  areas, with the highest seasonal potential from spring to early summer. Discussion Satellite-derived
+  soil moisture improved regional agreement with station-derived targets for several FWI components, but
+  spatial extrapolation to unsampled mountainous locations remains uncertain because no spatially independent
+  or high-resolution dynamical validation was performed.
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: snowball

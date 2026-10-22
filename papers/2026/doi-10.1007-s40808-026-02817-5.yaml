@@ -1,0 +1,64 @@
+id: doi-10.1007-s40808-026-02817-5
+title: A VMD–PSO hybrid framework with machine and deep learning for Aaccurate spatial–temporal daily
+  rainfall occurrence prediction in Pakistan’s diverse climatic regions
+authors:
+- Hira Farman
+- Muhammad Arif Hussain
+- Sarang Shaikh
+- Saif Hassan
+date: '2026-05-13'
+year: 2026
+venue: Modeling Earth Systems and Environment
+venue_type: journal
+ids:
+  doi: 10.1007/s40808-026-02817-5
+  openalex: W7161060329
+links:
+  paper: https://doi.org/10.1007/s40808-026-02817-5
+  pdf: https://link.springer.com/content/pdf/10.1007/s40808-026-02817-5.pdf
+topic: local-forecasting
+type: model
+method:
+- rnn
+- classical-ml
+- other
+timescale:
+- short
+spatial:
+- regional
+- local
+data:
+- stations
+status: research
+summary: VMD-PSO hybrid models forecast daily rainfall occurrence at 34 Pakistani stations; PSO-tuned
+  gradient boosting reaches PR-AUC 0.9954, and VMD-PSO GRU is best among deep models.
+abstract: Rainfall accuracy is a critical aspect of climate modeling, agricultural design, disaster management,
+  and urban water resource allocation. However, successful forecasting is a problematic issue due to the
+  non-linear, non-stationary, and complex nature of rainfall time series. Classical statistical algorithms
+  do not identify long-term correlations and time variance, whereas the individual machine learning (ML)
+  and deep learning (DL) algorithms have certain weaknesses, including noise, vanishing gradient, and
+  hyperparameter optimization. To overcome such weaknesses, this study introduces a hybrid architecture
+  that integrates both Variational Mode Decomposition (VMD) and Particle Swarm Optimization (PSO) together
+  with both ML and DL models in a systematic way. VMD breaks down raw rainfall signals into intrinsic
+  mode functions (IMFs), improving the quality of temporal features by isolating short-term variations,
+  seasonal cycles, and long-term trends and reducing noise. PSO optimizes the hyperparameters, including
+  thresholds, learning rate, dropout, sequence window, and balances underfitting and overfitting. The
+  model is tested using rainfall data of 34 cities of five Pakistani provinces that are varied in terms
+  of climatic regimes, including arid deserts and highlands with monsoon. In experiments, a 3-fold TimeSeriesSplit
+  with 3 random seeds (41, 42, 43) was used, resulting in 95% confidence intervals within folds and seeds
+  to guarantee reproducibility and strength. SMOTE and adaptive class weights were used to deal with the
+  issue of class balancing. Findings sustain that the PSO-optimized Gradient Boosting (ML baseline) obtained
+  the highest classical performance (PR-AUC = 0.9954, F1 = 0.9659), whereas among the DL models, the VMD
+  + PSO-enhanced GRU had the best overall outcome (PR-AUC = 0.9846 [0.9806–0.9886], F1 = 0.9321 [0.9215–0.9428])
+  and achieved statistically significant superiority over its BASE and PSO-only counterparts (Wilcoxon
+  p = 0.001953). In LSTM, BiLSTM, and GRU, VMD + PSO hybrids constantly enhanced the balance between precision
+  and recall and sensitivity to minority rainy-day classes. The proposed VMD + PSO hybrid framework has
+  greater generalizability, strength, and reproducibility, which can enhance the state of rainfall forecasting
+  today by providing a data-driven, scalable tool that can be tailored to different climatic zones to
+  support early warning systems, agricultural planning, and urban flood control.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

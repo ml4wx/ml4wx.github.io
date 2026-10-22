@@ -1,0 +1,50 @@
+id: arxiv-2410.12728
+title: 'Transformer based super-resolution downscaling for regional reanalysis: Full domain vs tiling
+  approaches'
+authors:
+- Antonio Pérez
+- Mario Santa Cruz
+- Daniel San Martín
+- José Manuel Gutiérrez
+date: '2024-10-16'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2410.12728'
+  openalex: W4403581946
+links:
+  paper: https://arxiv.org/abs/2410.12728
+  pdf: https://arxiv.org/pdf/2410.12728
+topic: downscaling
+type: model
+method:
+- transformer
+- cnn
+spatial:
+- regional
+data:
+- era5
+- other
+status: research
+summary: Swin transformer super-resolution downscales CERRA regional reanalysis temperature from ERA5
+  inputs; tiling enables pan-European scale at some accuracy cost versus full-domain models.
+abstract: Super-resolution (SR) is a promising cost-effective downscaling methodology for producing high-resolution
+  climate information from coarser counterparts. A particular application is downscaling regional reanalysis
+  outputs (predictand) from the driving global counterparts (predictor). This study conducts an intercomparison
+  of various SR downscaling methods focusing on temperature and using the CERRA reanalysis (5.5 km resolution,
+  produced with a regional atmospheric model driven by ERA5) as example. The method proposed in this work
+  is the Swin transformer and two alternative methods are used as benchmark (fully convolutional U-Net
+  and convolutional and dense DeepESD) as well as the simple bicubic interpolation. We compare two approaches,
+  the standard one using the full domain as input and a more scalable tiling approach, dividing the full
+  domain into tiles that are used as input. The methods are trained to downscale CERRA surface temperature,
+  based on temperature information from the driving ERA5; in addition, the tiling approach includes static
+  orographic information. We show that the tiling approach, which requires spatial transferability, comes
+  at the cost of a lower performance (although it outperforms some full-domain benchmarks), but provides
+  an efficient scalable solution that allows SR reduction on a pan-European scale and is valuable for
+  real-time applications.
+significance: 4
+cited_by: 2
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

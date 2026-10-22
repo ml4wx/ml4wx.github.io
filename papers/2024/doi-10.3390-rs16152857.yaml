@@ -1,0 +1,55 @@
+id: doi-10.3390-rs16152857
+title: Hybrid CMOD-Diffusion Algorithm Applied to Sentinel-1 for More Robust and Precise Wind Retrieval
+authors:
+- Qi Zhou
+- Huiming Chai
+- Xiaolei Lv
+date: '2024-08-05'
+year: 2024
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs16152857
+  openalex: W4401337170
+links:
+  paper: https://doi.org/10.3390/rs16152857
+topic: observations-remote-sensing
+type: model
+method:
+- diffusion
+spatial:
+- regional
+data:
+- satellite
+- nwp-analysis
+status: research
+summary: Hybrid CMOD-DDPM model retrieves ocean surface wind from Sentinel-1 SAR, improving high-wind
+  and tropical cyclone retrieval using ECMWF collocations.
+abstract: Synthetic Aperture Radar (SAR) imagery presents significant advantages for observing ocean surface
+  winds owing to its high spatial resolution and low sensitivity to extreme weather conditions. Nevertheless,
+  signal noise poses a challenge, hindering precise wind retrieval from SAR imagery. Moreover, traditional
+  geophysical model functions (GMFs) often falter, particularly in accurately estimating high wind speeds,
+  notably during extreme weather phenomena like tropical cyclones (TCs). To address these limitations,
+  this study proposes a novel hybrid model, CMOD-Diffusion, which integrates the strengths of GMFs with
+  data-driven deep learning methods, thereby achieving enhanced accuracy and robustness in wind retrieval.
+  Based on the coarse estimation of wind speed by the traditional GMF CMOD5.N, we introduce the recently
+  developed data-driven method Denoising Diffusion Probabilistic Model (DDPM). It transforms an image
+  from one domain to another domain by gradually adding Gaussian noise, thus achieving denoising and image
+  synthesis. By introducing the DDPM, the noise from the observed normalized radar cross-section (NRCS)
+  and the residual of the GMF methods can be largely compensated. Specifically, for wind speeds within
+  the low-to-medium range, a DDPM is employed before proceeding to another CMOD iteration to recalibrate
+  the observed NRCS. Conversely, a posterior-placed DDPM is applied after CMOD to reconstruct high-wind-speed
+  regions or TC-affected areas, with the prior information from regions characterized by low wind speeds
+  and recalibrated NRCS values. The efficacy of the proposed model is evaluated by using Sentinel-1 SAR
+  imagery in vertical–vertical (VV) polarization, collocated with data from the European Centre for Medium-Range
+  Weather Forecasts (ECMWF). Experimental results based on validation sets demonstrate significant improvements
+  over CMOD5.N, particularly in low-to-medium wind speed regions, with the Structural Similarity Index
+  (SSIM) increasing from 0.76 to 0.98 and the Root Mean Square Error (RMSE) decreasing from 1.98 to 0.63.
+  Across the entire wind field, including regions with high wind speeds, the validation data obtained
+  through the proposed method exhibit an RMSE of 2.39 m/s, with a correlation coefficient of 0.979.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

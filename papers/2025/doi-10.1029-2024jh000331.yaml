@@ -1,0 +1,55 @@
+id: doi-10.1029-2024jh000331
+title: Toward Spatio‐Temporally Consistent Multi‐Site Fire Danger Downscaling With Explainable Deep Learning
+authors:
+- Óscar Mirones
+- Jorge Baño‐Medina
+- Swen Brands
+- Joaquín Bedia
+date: '2025-01-21'
+year: 2025
+venue: Journal of Geophysical Research Machine Learning and Computation
+venue_type: journal
+ids:
+  doi: 10.1029/2024jh000331
+  openalex: W4406676835
+links:
+  paper: https://doi.org/10.1029/2024jh000331
+topic: downscaling
+topics:
+- extremes-hazards
+- xai-uq-physics
+type: model
+method:
+- rnn
+- cnn
+spatial:
+- regional
+data:
+- stations
+- era5
+status: research
+summary: ConvLSTM with multivariate-Gaussian outputs downscales daily Fire Weather Index at Spanish stations,
+  cutting correlation-length bias by over 50% with explainable AI analysis.
+abstract: Abstract This study introduces a novel Convolutional Long Short‐Term Memory neural networks
+  (ConvLSTM)‐based multi‐site downscaling approach for fire danger prediction, that leverages the properties
+  of Long‐Short Term Memory (LSTM) Recursive Neural Networks and Convolutional Neural Networks (CNNs)
+  by learning daily Multivariate‐Gaussian distributions conditioned on large‐scale atmospheric predictors.
+  The ConvLSTM‐Multivariate‐Gaussian (MG) model enhances the predictive accuracy, spatial coherence, and
+  temporal alignment of the downscaled Fire Weather Index (FWI). We compared its performance with Generalized
+  Linear Models and a CNN‐based benchmark across multiple locations in Spain, focusing on extreme FWI
+  events. Our findings show that ConvLSTM‐MG outperforms in predictive accuracy and distributional consistency,
+  effectively capturing spatial and temporal variability. It reduces correlation length bias by over 50%
+  and mutual information error in 90th percentile of FWI by over 80%, demonstrating robustness in representing
+  spatial correlations under extreme conditions. The model's temporal performance aligns closely with
+  observed data as measured by the autocorrelation function, making it a promising tool for multi‐site
+  downscaling. Additionally, the use of eXplainable Artificial Intelligence techniques enhances model
+  interpretability, providing insights into influential variables. Unlike other deep learning models,
+  ConvLSTM‐MG prioritizes simplicity and ease of training, making it accessible and practical for regional
+  weather station networks. This approach offers significant improvements in fire danger prediction, crucial
+  for climate impact assessment and fire prevention.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

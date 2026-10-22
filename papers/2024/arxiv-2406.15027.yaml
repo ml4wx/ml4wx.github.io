@@ -1,0 +1,45 @@
+id: arxiv-2406.15027
+title: Using Neural Networks for Data Cleaning in Weather Datasets
+authors:
+- Jack R. P. Hanslope
+- Laurence Aitchison
+date: '2024-06-21'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2406.15027'
+  openalex: W4399991000
+links:
+  paper: https://arxiv.org/abs/2406.15027
+  pdf: https://arxiv.org/pdf/2406.15027
+topic: benchmarks-data-eval
+topics:
+- extremes-hazards
+type: application
+method:
+- other
+spatial:
+- global
+data:
+- era5
+- other
+status: research
+summary: Neural network trained on noisy IBTrACS labels maps ERA5 wind fields to tropical cyclone locations,
+  denoising labels and outperforming the original tracks by human preference.
+abstract: In climate science, we often want to compare across different datasets. Difficulties can arise
+  in doing this due to inevitable mismatches that arise between observational and reanalysis data, or
+  even between different reanalyses. This misalignment can raise problems for any work that seeks to make
+  inferences about one dataset from another. We considered tropical cyclone location as an example task
+  with one dataset providing atmospheric conditions (ERA5) and another providing storm tracks (IBTrACS).
+  We found that while the examples often aligned well, there were a considerable proportion (around 25%)
+  which were not well aligned. We trained a neural network to map from the wind field to the storm location;
+  in this setting misalignment in the datasets appears as "label noise" (i.e. the labelled storm location
+  does not correspond to the underlying wind field). We found that this neural network trained only on
+  the often noisy labels from IBTrACS had a denoising effect, and performed better than the IBTrACS labels
+  themselves, as measured by human preferences. Remarkably, this even held true for training points, on
+  which we might have expected the network to overfit to the IBTrACS predictions.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

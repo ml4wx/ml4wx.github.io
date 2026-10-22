@@ -1,0 +1,51 @@
+id: arxiv-2410.18904
+title: Modulated Adaptive Fourier Neural Operators for Temporal Interpolation of Weather Forecasts
+authors:
+- Jussi Leinonen
+- Boris Bonev
+- Thorsten Kurth
+- Yair Cohen
+date: '2024-10-24'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2410.18904'
+  openalex: W4404307524
+links:
+  paper: https://arxiv.org/abs/2410.18904
+  pdf: https://arxiv.org/pdf/2410.18904
+orgs:
+- nvidia
+topic: downscaling
+type: model
+method:
+- neural-operator
+spatial:
+- global
+data:
+- era5
+status: research
+summary: ModAFNO interpolates atmospheric states to 1-hour resolution from 6-hourly data, halving RMSE
+  versus linear interpolation and reproducing extreme-event statistics.
+abstract: Weather and climate data are often available at limited temporal resolution, either due to storage
+  limitations, or in the case of weather forecast models based on deep learning, their inherently long
+  time steps. The coarse temporal resolution makes it difficult to capture rapidly evolving weather events.
+  To address this limitation, we introduce an interpolation model that reconstructs the atmospheric state
+  between two points in time for which the state is known. The model makes use of a novel network layer
+  that modifies the adaptive Fourier neural operator (AFNO), which has been previously used in weather
+  prediction and other applications of machine learning to physics problems. The modulated AFNO (ModAFNO)
+  layer takes an embedding, here computed from the interpolation target time, as an additional input and
+  applies a learned shift-scale operation inside the AFNO layers to adapt them to the target time. Thus,
+  one model can be used to produce all intermediate time steps. Trained to interpolate between two time
+  steps 6 h apart, the ModAFNO-based interpolation model produces 1 h resolution intermediate time steps
+  that are visually nearly indistinguishable from the actual corresponding 1 h resolution data. The model
+  reduces the RMSE loss of reconstructing the intermediate steps by approximately 50% compared to linear
+  interpolation. We also demonstrate its ability to reproduce the statistics of extreme weather events
+  such as hurricanes and heat waves better than 6 h resolution data. The ModAFNO layer is generic and
+  is expected to be applicable to other problems, including weather forecasting with tunable lead time.
+significance: 4
+cited_by: 1
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,53 @@
+id: doi-10.1080-10095020.2023.2295467
+title: Analysis of wave breaking on synthetic aperture radar at C-band during tropical cyclones
+authors:
+- Yuyi Hu
+- Weizeng Shao
+- Xiaoqing Wang
+- Juncheng Zuo
+- Xingwei Jiang
+date: '2024-02-01'
+year: 2024
+venue: Geo-spatial Information Science
+venue_type: journal
+ids:
+  doi: 10.1080/10095020.2023.2295467
+  openalex: W4391449719
+links:
+  paper: https://doi.org/10.1080/10095020.2023.2295467
+topic: observations-remote-sensing
+topics:
+- extremes-hazards
+type: model
+method:
+- classical-ml
+spatial:
+- global
+data:
+- satellite
+status: research
+summary: AdaBoost estimates wave-breaking contribution to C-band SAR backscatter during tropical cyclones,
+  reducing RMSE to 1.95 dB from 2.83 dB for the empirical model.
+abstract: The purpose of our work is to analyze the effect of wave breaking on dual-polarized (vertical-vertical
+  (VV) and vertical-horizontal (VH)) synthetic aperture radar (SAR) image in the C-band during tropical
+  cyclones (TCs) based on the machine learning method. In this study, more than 1300 Sentinel-1 (S-1)
+  interferometric-wide (IW) and extra wide (EW) mode SAR images are collocated with wave simulations from
+  the WAVEWATCH-III (WW3) model during 400 TCs. The validation of the significant wave height (SWH) simulated
+  using the WW3 model against Jason-2 altimeter data. The winds for S-1 SAR images are reconstructed using
+  wind retrievals in VV and VH polarization. The non-polarized (NP) contribution σwb caused by wave breaking
+  is assumed to be the result of the SAR-measured normalized radar cross-section (NRCS) σ0 minus the Bragg
+  resonant roughness σbr without the distortion of rain cells during TCs. The σbr is simulated by imputing
+  wave spectra from the WW3 model into the theoretical backscattering model. It is found that the ratio
+  (σwb/σ0) in VV polarization is related to the wind speed, the wind direction relative with the flight
+  orientation, and radar incidence angle. Following this rationale, the Adaptive Boosting (AdaBoost) model
+  was used for the estimation of NP contribution σwb during TCs and are implemented for more than 300
+  dual-polarized S-1 images to validate the model. It is found that for the comparison between the sum
+  of simulation NRCS and SAR observations, the root mean squared error (RMSE) is 1.95 dB and the coefficient
+  (COR) is 0.86, which is better than a 2.83 dB RMSE and a 0.67 COR by empirical model. It is concluded
+  that the AdaBoost model has a good performance on NP component simulation during TCs.
+significance: 2
+cited_by: 16
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

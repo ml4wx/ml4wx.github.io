@@ -1,0 +1,55 @@
+id: arxiv-2603.13752
+title: 'MeTok: An Efficient Meteorological Tokenization with Hyper-Aligned Group Learning for Precipitation
+  Nowcasting'
+authors:
+- Qizhao Jin
+- Xianhuang Xu
+- Yong Cao
+- Shiming Xiang
+- Xinyu Xiao
+date: '2026-03-14'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2603.13752'
+  openalex: W7138428966
+links:
+  paper: https://arxiv.org/abs/2603.13752
+  pdf: https://arxiv.org/pdf/2603.13752
+orgs:
+- cma
+topic: nowcasting
+topics:
+- extremes-hazards
+type: model
+method:
+- transformer
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: Distribution-centric meteorological tokenizer with grouping transformer improves extreme precipitation
+  IoU by at least 8.2% on ERA5 6-hour forecasts.
+abstract: 'Recently, Transformer-based architectures have advanced meteorological prediction. However,
+  this position-centric tokenizer conflicts with the core principle of meteorological systems, where the
+  weather phenomena undoubtedly involve synergistic interactions among multiple elements while positional
+  information constitutes merely a component of the boundary conditions. This paper focuses primarily
+  on the task of precipitation nowcasting and develops an efficient distribution-centric Meteorological
+  Tokenization (MeTok) scheme, which spatially sequences to group similar meteorological features. Based
+  on the rearrangement, realigned group learning enhances robustness across precipitation patterns, especially
+  extreme ones. Specifically, we introduce the Hyper-Aligned Grouping Transformer (HyAGTransformer) with
+  two key improvements: 1) The Grouping Attention (GA) mechanism uses MeTok to enable self-aligned learning
+  of features from different precipitation patterns; 2) The Neighborhood Feed-Forward Network (N-FFN)
+  integrates adjacent group features, aggregating contextual information to boost patch embedding discriminability.
+  Experiments on the ERA5 dataset for 6-hour forecasts show our method improves the IoU metric by at least
+  8.2% in extreme precipitation prediction compared to other methods. Additionally, it gains performance
+  with more training data and increased parameters, demonstrating scalability, stability, and superiority
+  over traditional methods.'
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

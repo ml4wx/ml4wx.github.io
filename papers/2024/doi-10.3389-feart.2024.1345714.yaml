@@ -1,0 +1,55 @@
+id: doi-10.3389-feart.2024.1345714
+title: Deep learning-based spatial downscaling and its application for tropical cyclone detection in the
+  western North Pacific
+authors:
+- Anqi Chen
+- Chaoxia Yuan
+date: '2024-03-06'
+year: 2024
+venue: Frontiers in Earth Science
+venue_type: journal
+ids:
+  doi: 10.3389/feart.2024.1345714
+  openalex: W4392535926
+links:
+  paper: https://doi.org/10.3389/feart.2024.1345714
+orgs:
+- nuist
+topic: downscaling
+topics:
+- extremes-hazards
+type: model
+method:
+- gan-vae
+- cnn
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+status: research
+summary: MSG-SE-GAN achieves 10x downscaling of GCM fields and reproduces western North Pacific tropical
+  cyclone activity from low-resolution HadGEM3 and EC-Earth3P outputs.
+abstract: Resolution of global climate models (GCMs) significantly influences their capacity to simulate
+  extreme weather such as tropical cyclones (TCs). However, improving the GCM resolution is computationally
+  expensive and time-consuming, making it challenging for many research organizations worldwide. Here,
+  we develop a downscaling model, MSG-SE-GAN, based on the Generative Adversarial Networks (GAN) together
+  with Multiscale Gradient (MSG) technique and a Squeeze-and-Excitation (SE) Net, to achieve 10-folded
+  downscaling. GANs consist of a generator and a discriminator network that are trained adversarially,
+  and are often used for generating new data that resembles a given dataset. MSG enables generation and
+  discrimination of multi-scale images within a single model. Inclusion of an attention layer of SE captures
+  better underlying spatial structure while preserving accuracy. The MSG-SE-GAN is stable and fast converging.
+  It outperforms traditional bilinear interpolation and other deep-learning methods such as Super-Resolution
+  Convolutional Neural Networks (SRCNN) and MSG-GAN in downscaling low-resolution meteorological data
+  in assessment metrics and power spectral density. The MSG-SE-GAN has been used to downscale the TC-related
+  variables in the western North Pacific in the low-resolution GCMs of HadGEM3-GC31 and EC-Earth3P, respectively.
+  The downscaled data show highly similar TC activities to the direct outputs of the high-resolution HadGEM3-GC31
+  and EC-Earth3P, respectively. These results not only suggest the validity of the MSG-SE-GAN but also
+  indicate its possible portability among low-resolution GCMs.
+significance: 3
+cited_by: 4
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

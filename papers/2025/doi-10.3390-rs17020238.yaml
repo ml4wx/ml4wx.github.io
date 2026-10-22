@@ -1,0 +1,60 @@
+id: doi-10.3390-rs17020238
+title: 'Enhancing Precipitation Nowcasting Through Dual-Attention RNN: Integrating Satellite Infrared
+  and Radar VIL Data'
+authors:
+- Hao Wang
+- Rong Yang
+- Jianxin He
+- Qiangyu Zeng
+- Taisong Xiong
+- Zhihao Liu
+- Hongfei Jin
+date: '2025-01-10'
+year: 2025
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs17020238
+  openalex: W4406233720
+links:
+  paper: https://doi.org/10.3390/rs17020238
+  pdf: https://www.mdpi.com/2072-4292/17/2/238/pdf?version=1736519056
+orgs:
+- cma
+topic: nowcasting
+topics:
+- observations-remote-sensing
+type: model
+method:
+- rnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+- radar
+status: research
+summary: DA-RNN fuses satellite infrared and radar VIL inputs for nowcasting, cutting MSE by 9.3% and
+  MAE by 6.4% versus TrajGRU on SEVIR.
+abstract: Traditional deep learning-based prediction methods predominantly rely on weather radar data
+  to quantify precipitation, often neglecting the integration of the thermal processes involved in the
+  formation and dissipation of precipitation, which leads to reduced prediction accuracy. To address this
+  limitation, we introduce the Dual-Attention Recurrent Neural Network (DA-RNN), a model that combines
+  satellite infrared (IR) data with radar-derived vertically integrated liquid (VIL) content. This model
+  leverages the fundamental physical relationship between temperature and precipitation in a predictive
+  framework that captures thermal and water vapor dynamics, thereby enhancing prediction accuracy. The
+  results of experimental evaluations on the SEVIR dataset demonstrate that the DA-RNN model surpasses
+  traditional methods on the test set. Notably, the DA-TrajGRU model achieves reductions in mean squared
+  error (MSE) and mean absolute error (MAE) of 30 (9.3%) and 89 (6.4%), respectively, compared with those
+  of the conventional TrajGRU model. Furthermore, our DA-RNN exhibits robust false alarm rates (FAR) for
+  various thresholds, with only slight decreases in the critical success index (CSI) and Heidke skill
+  score (HSS) when increasing the threshold. Additionally, we present a visualization of precipitation
+  nowcasting, illustrating that the integration of multiple data sources effectively avoids overestimation
+  of VIL values, further increasing the precision of precipitation forecasts.
+significance: 3
+cited_by: 2
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

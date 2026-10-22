@@ -1,0 +1,60 @@
+id: doi-10.1109-access.2026.3730270
+title: 'GenLUPIN: Physics-Informed Score-Based Diffusion in a Lagrangian Framework for Spectrally Consistent
+  Precipitation Nowcasting'
+authors:
+- Muhammad Farras Archi
+- Ajib Setyo Arifin
+- Dadang Gunawan
+date: '2026-01-01'
+year: 2026
+venue: IEEE Access
+venue_type: journal
+ids:
+  doi: 10.1109/access.2026.3730270
+  openalex: W7206154647
+links:
+  paper: https://doi.org/10.1109/access.2026.3730270
+topic: nowcasting
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+- physics-constrained
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Physics-informed Lagrangian diffusion cuts spectral log-error 98% versus pure Eulerian diffusion
+  for convective precipitation nowcasting using only 18 sampling steps.
+abstract: 'Nowcasting extreme convective precipitation at the meso- $\gamma $ scale presents a fundamental
+  generative trilemma: balancing morphological realism, probabilistic reliability, and advective kinematics.
+  Conventional deterministic Eulerian models suffer from numerical dissipation, producing blurred forecasts,
+  whereas pure Eulerian generative diffusion models restore perceptual sharpness but exhibit unconstrained
+  advective spatial displacement, exposing both paradigms to the Double Penalty Effect. To resolve this,
+  we propose GenLUPIN (Generative Lagrangian U-Net for Physics-Informed Nowcasting), which explicitly
+  decouples deterministic advective kinematics from stochastic thermodynamic evolution using a Probability
+  Flow Ordinary Differential Equation (PF-ODE) with Elucidated Diffusion Models (EDM) preconditioning.
+  Guided by a frozen Lagrangian advection manifold, GenLUPIN maps stochastic priors into high-fidelity
+  convective residuals within 18 sampling steps, achieving a 92.7% parameter reduction compared to unconstrained
+  diffusion architectures. Benchmarked on high-resolution radar data against deterministic (LUPIN, LINDA),
+  stochastic (STEPS), and diffusion (DiffCast) baselines, GenLUPIN resolves both numerical dissipation
+  and kinematic tracking errors. Quantitative evaluations reveal a 52.1% reduction in perceptual error
+  and a 98.0% reduction in spectral log-error over pure Eulerian diffusion, strictly adhering to the Kolmogorov
+  energy cascade. By preserving sharp precipitation boundaries at correct physical coordinates, it maintains
+  resilient spatial skill for extreme events ( $30~\mathrm {mm~h^{-1}}$ at $T+30$ min), outperforming
+  LUPIN by 62.2% and completely bypassing the advective collapse of DiffCast. Furthermore, GenLUPIN achieves
+  superior probabilistic calibration, suppressing unphysical hallucinations and temporal error compounding.
+  Executing a 30-member ensemble in 228.5 seconds, GenLUPIN secures a 71.5-second operational safety buffer
+  within the 5-minute radar scan cycle, establishing an efficient, physics-compliant paradigm for real-time
+  early warning systems.'
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

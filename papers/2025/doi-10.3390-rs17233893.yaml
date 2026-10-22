@@ -1,0 +1,57 @@
+id: doi-10.3390-rs17233893
+title: A Deep Learning Approach to Downscaling Microwave Land Surface Temperatures for a Clear-Sky Merged
+  Infrared-Microwave Product
+authors:
+- Abigail Marie Waring
+- Darren Ghent
+- Moffat David
+- Carlos Jiménez
+- John Remedios
+date: '2025-11-30'
+year: 2025
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs17233893
+  openalex: W7108330509
+links:
+  paper: https://doi.org/10.3390/rs17233893
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- satellite
+- stations
+status: research
+summary: Modified U-Net downscales AMSR microwave land surface temperature with MODIS, creating a 2004-2021
+  clear-sky 5 km merged product with R2 of 0.80 by day.
+abstract: Reliable land surface temperature (LST) data are required for monitoring climate variability,
+  hydrological processes, and land–atmosphere interactions. Yet existing satellite-derived LST products,
+  such as those from thermal infrared (TIR) sensors, are limited by gaps due to clouds, while passive
+  microwave (PMW) observations, though less affected by atmospheric interference, suffer from coarse resolution
+  and larger uncertainty. This study presents the first validated clear-sky merged LST product for the
+  USA and combines downscaled PMW data from AMSR-E and AMSR2 with MODIS TIR observations, using a modified
+  U-Net deep learning network. The merged dataset covers 2004–2021 at 5 km resolution, providing a compromise
+  between spatial detail and robustness. The model performs well, with low mean squared errors and R2
+  values of 0.80 (day) and 0.75 (night). The merged time series captures seasonal trends and shows a marked
+  reduction in cloud-contamination artefacts compared to MODIS and AMSR signals. Spatially, the product
+  is consistent across sensor transitions and reduces artefacts from TIR cloud contamination. Validation
+  against ground stations shows results between those of TIR and PMW, with better accuracy at night and
+  moderate positive biases influenced by land cover and terrain. Although the merged product does not
+  match the fine resolution of TIR data by choice, it enhances spatial coverage over AMSR alone and temporal
+  completeness over MODIS alone, where single-sensor products are limited. Residual temporal and seasonal
+  biases are moderate, with systematic warm and cold deviations linked to land cover, propagation of emissivity
+  errors, and sampling differences. Strong positive biases remain over terrain with complex surface properties
+  as the downscaled AMSR is closer to MODIS temperatures. Results demonstrate the combined benefits of
+  PMW’s broader coverage and cloud tolerance with TIR’s spatial detail. Overall, results demonstrate the
+  potential of sensor fusion for producing spatially consistent LST records suitable for long-term environmental
+  and climate monitoring.
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

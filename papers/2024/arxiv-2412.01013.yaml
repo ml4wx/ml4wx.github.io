@@ -1,0 +1,50 @@
+id: arxiv-2412.01013
+title: Jacobian-Enforced Neural Networks (JENN) for Improved Data Assimilation Consistency in Dynamical
+  Models
+authors:
+- Xiaoxu Tian
+date: '2024-12-02'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2412.01013'
+  openalex: W4405033798
+links:
+  paper: https://arxiv.org/abs/2412.01013
+  pdf: https://arxiv.org/pdf/2412.01013
+topic: data-assimilation
+topics:
+- xai-uq-physics
+type: model
+method:
+- physics-constrained
+spatial:
+- global
+data:
+- other
+status: research
+summary: Adds a Jacobian-consistency loss to neural emulators so tangent-linear and adjoint outputs are
+  accurate for data assimilation, tested on Lorenz 96 with pretrained-model adaptation proposed.
+abstract: 'Machine learning-based weather models have shown great promise in producing accurate forecasts
+  but have struggled when applied to data assimilation tasks, unlike traditional numerical weather prediction
+  (NWP) models. This study introduces the Jacobian-Enforced Neural Network (JENN) framework, designed
+  to enhance DA consistency in neural network (NN)-emulated dynamical systems. Using the Lorenz 96 model
+  as an example, the approach demonstrates improved applicability of NNs in DA through explicit enforcement
+  of Jacobian relationships. The NN architecture includes an input layer of 40 neurons, two hidden layers
+  with 256 units each employing hyperbolic tangent activation functions, and an output layer of 40 neurons
+  without activation. The JENN framework employs a two-step training process: an initial phase using standard
+  prediction-label pairs to establish baseline forecast capability, followed by a secondary phase incorporating
+  a customized loss function to enforce accurate Jacobian relationships. This loss function combines root
+  mean square error (RMSE) between predicted and true state values with additional RMSE terms for tangent
+  linear (TL) and adjoint (AD) emulation results, weighted to balance forecast accuracy and Jacobian sensitivity.
+  To ensure consistency, the secondary training phase uses additional pairs of TL/AD inputs and labels
+  calculated from the physical models. Notably, this approach does not require starting from scratch or
+  structural modifications to the NN, making it readily applicable to pretrained models such as GraphCast,
+  NeuralGCM, Pangu, or FuXi, facilitating their adaptation for DA tasks with minimal reconfiguration.
+  Experimental results demonstrate that the JENN framework preserves nonlinear forecast performance while
+  significantly reducing noise in the TL and AD components, as well as in the overall Jacobian matrix.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

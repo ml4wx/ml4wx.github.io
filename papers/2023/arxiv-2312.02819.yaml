@@ -1,0 +1,55 @@
+id: arxiv-2312.02819
+title: Deterministic Guidance Diffusion Model for Probabilistic Weather Forecasting
+authors:
+- Donggeun Yoon
+- Minseok Seo
+- Doyi Kim
+- Yeji Choi
+- Donghyeon Cho
+date: '2023-12-05'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2312.02819'
+  openalex: W4389421909
+links:
+  paper: https://arxiv.org/abs/2312.02819
+  pdf: https://arxiv.org/pdf/2312.02819
+  code: https://github.com/DongGeun-Yoon/DGDM
+topic: probabilistic-ensembles
+topics:
+- global-medium-range
+type: model
+method:
+- diffusion
+timescale:
+- medium
+spatial:
+- global
+- regional
+data:
+- era5
+- satellite
+status: research
+summary: DGDM fuses a deterministic forecaster with a diffusion model, reaching state-of-the-art WeatherBench
+  global and PNW-Typhoon regional forecasts while giving probabilistic output.
+abstract: 'Weather forecasting requires not only accuracy but also the ability to perform probabilistic
+  prediction. However, deterministic weather forecasting methods do not support probabilistic predictions,
+  and conversely, probabilistic models tend to be less accurate. To address these challenges, in this
+  paper, we introduce the \textbf{\textit{D}}eterministic \textbf{\textit{G}}uidance \textbf{\textit{D}}iffusion
+  \textbf{\textit{M}}odel (DGDM) for probabilistic weather forecasting, integrating benefits of both deterministic
+  and probabilistic approaches. During the forward process, both the deterministic and probabilistic models
+  are trained end-to-end. In the reverse process, weather forecasting leverages the predicted result from
+  the deterministic model, using as an intermediate starting point for the probabilistic model. By fusing
+  deterministic models with probabilistic models in this manner, DGDM is capable of providing accurate
+  forecasts while also offering probabilistic predictions. To evaluate DGDM, we assess it on the global
+  weather forecasting dataset (WeatherBench) and the common video frame prediction benchmark (Moving MNIST).
+  We also introduce and evaluate the Pacific Northwest Windstorm (PNW)-Typhoon weather satellite dataset
+  to verify the effectiveness of DGDM in high-resolution regional forecasting. As a result of our experiments,
+  DGDM achieves state-of-the-art results not only in global forecasting but also in regional forecasting.
+  The code is available at: \url{https://github.com/DongGeun-Yoon/DGDM}.'
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

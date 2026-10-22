@@ -1,0 +1,56 @@
+id: arxiv-2409.19835
+title: 'MoCoLSK: Modality Conditioned High-Resolution Downscaling for Land Surface Temperature'
+authors:
+- Qun Dai
+- Chunyang Yuan
+- Yimian Dai
+- Yuxuan Li
+- Xiang Li
+- Kang Ni
+- Jianhui Xu
+- Xiangbo Shu
+- Jian Yang
+date: '2024-09-30'
+year: 2024
+venue: IEEE Transactions on Geoscience and Remote Sensing
+venue_type: journal
+ids:
+  arxiv: '2409.19835'
+  doi: 10.1109/tgrs.2025.3547945
+  openalex: W4408145413
+links:
+  paper: https://doi.org/10.1109/tgrs.2025.3547945
+  pdf: https://arxiv.org/pdf/2409.19835
+  code: https://github.com/GrokCV/GrokLST
+topic: downscaling
+topics:
+- observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: MoCoLSK downscales satellite land surface temperature using modality-conditioned fusion, with
+  a new open benchmark and toolkit; LST is a borderline climate-system variable.
+abstract: Land Surface Temperature (LST) is a critical parameter for environmental studies, but directly
+  obtaining high spatial resolution LST data remains challenging due to the spatio-temporal trade-off
+  in satellite remote sensing. Guided LST downscaling has emerged as an alternative solution to overcome
+  these limitations, but current methods often neglect spatial non-stationarity, and there is a lack of
+  an open-source ecosystem for deep learning methods. In this paper, we propose the Modality-Conditional
+  Large Selective Kernel (MoCoLSK) Network, a novel architecture that dynamically fuses multi-modal data
+  through modality-conditioned projections. MoCoLSK achieves a confluence of dynamic receptive field adjustment
+  and multi-modal feature fusion, leading to enhanced LST prediction accuracy. Furthermore, we establish
+  the GrokLST project, a comprehensive open-source ecosystem featuring the GrokLST dataset, a high-resolution
+  benchmark, and the GrokLST toolkit, an open-source PyTorch-based toolkit encapsulating MoCoLSK alongside
+  40+ state-of-the-art approaches. Extensive experimental results validate MoCoLSK's effectiveness in
+  capturing complex dependencies and subtle variations within multispectral data, outperforming existing
+  methods in LST downscaling. Our code, dataset, and toolkit are available at https://github.com/GrokCV/GrokLST.
+significance: 3
+cited_by: 4
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

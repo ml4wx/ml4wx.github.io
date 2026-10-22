@@ -1,0 +1,48 @@
+id: doi-10.3390-atmos17030306
+title: On the Stable Integration of Neural Network Parameterization in Numerical Models
+authors:
+- Yifan Wang
+- Weizhi Huang
+- Hao Geng
+- Yi Ma
+- Leyi Wang
+date: '2026-03-17'
+year: 2026
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos17030306
+  openalex: W7138337687
+links:
+  paper: https://doi.org/10.3390/atmos17030306
+  pdf: https://www.mdpi.com/2073-4433/17/3/306/pdf?version=1773751841
+topic: hybrid-parameterization
+topics:
+- xai-uq-physics
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Fully connected networks stably replace a CNN boundary-layer scheme in WRF for tropical cyclones,
+  with noise augmentation and spectral regularization curbing instability.
+abstract: Deep learning-based parameterizations of subgrid-scale processes have become a major research
+  focus in recent years, offering the potential to remedy inaccuracies inherent in traditional physics-based
+  schemes. However, their integral stability within numerical models remains insufficiently explored.
+  In this study, we develop deep learning parameterizations for the tropical cyclone boundary layer and
+  implement them in the WRF model. We find that one-dimensional convolutional neural network fails to
+  integrate stably, whereas a fully connected network succeeds. Further analysis shows that the limited
+  receptive field of the convolutional network makes its outputs overly sensitive to certain input perturbations,
+  ultimately causing integral instability. We examine three stabilization strategies—training data augmentation
+  with Gaussian noise, spectral norm regularization, and L2 regularization—and find that all three methods
+  effectively mitigate the network’s output sensitivity to input perturbations, enabling stable integration
+  in WRF and yielding physically reasonable tropical cyclone simulations.
+significance: 4
+cited_by: 1
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

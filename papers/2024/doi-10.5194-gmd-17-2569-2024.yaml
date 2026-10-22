@@ -1,0 +1,55 @@
+id: doi-10.5194-gmd-17-2569-2024
+title: A grid model for vertical correction of precipitable water vapor over the Chinese mainland and
+  surrounding areas using random forest
+authors:
+- Jun-Yu Li
+- Yuxin Wang
+- Li-Long Liu
+- Yibin Yao
+- Liang-Ke Huang
+- Feijuan Li
+date: '2024-04-09'
+year: 2024
+venue: Geoscientific Model Development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-17-2569-2024
+  openalex: W4394615226
+links:
+  paper: https://doi.org/10.5194/gmd-17-2569-2024
+  pdf: https://gmd.copernicus.org/articles/17/2569/2024/gmd-17-2569-2024.pdf
+topic: observations-remote-sensing
+topics:
+- post-processing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- era5
+- stations
+status: research
+summary: Random forest RF-PWV grid model corrects precipitable water vapour with height over China, cutting
+  bias against ERA5 profiles by 99.8% using only time and height.
+abstract: Abstract. Various ground-based observing techniques provide precipitable water vapor (PWV) products
+  with different spatial resolutions. To effectively integrate these products, especially in terms of
+  vertical orientation, spatial interpolation is essential. In this context, we have developed a model
+  to characterize PWV variation with altitude in the study area. Our model, known as RF-PWV (a PWV vertical
+  correction grid model with a 1° x 1° resolution), is constructed using random forest based on the relationship
+  between PWV differences from the fifth-generation European Centre for Medium-Range Weather Forecasts
+  reanalysis (ERA5) monthly average hourly data and height differences and time. When validated against
+  1-h ERA5 PWV profiles, RF-PWV exhibits a 99.84 % reduction in Bias and a 63.41 % decrease in RMSE compared
+  to the most recent model, C-PWVC1. Furthermore, when validated against radiosonde data, RF-PWV shows
+  a 96.36 % reduction in Bias and a 5 % decrease in RMSE compared to C-PWVC1. Additionally, RF-PWV outperforms
+  C-PWVC1 in terms of resistance to seasonal and height differences interference. The model eliminates
+  the need for meteorological parameters, allowing for high-precision PWV vertical correction by inputting
+  only time and height differences. Consequently, RF-PWV can significantly reduce errors in vertical correction,
+  enhance PWV fusion product accuracy, and provide insights into PWV vertical distribution, thereby contributing
+  to climate research.
+significance: 2
+cited_by: 12
+score: 8
+highlight: false
+added: '2026-10-22'
+source: snowball

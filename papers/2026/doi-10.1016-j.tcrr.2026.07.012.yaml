@@ -1,0 +1,57 @@
+id: doi-10.1016-j.tcrr.2026.07.012
+title: Adaptive Multi-Branch Generative Adversarial Network With Parallel Attention for Robust Tropical
+  Cyclone Forecasting
+authors:
+- Guangxin He
+- Xiaoyu Li
+- Xiaoyu Li
+- Jie Feng
+- Jingjia Luo
+- Xun Li
+- Xun Li
+date: '2026-07-31'
+year: 2026
+venue: Tropical Cyclone Research and Review
+venue_type: journal
+ids:
+  doi: 10.1016/j.tcrr.2026.07.012
+  openalex: W7171969173
+links:
+  paper: https://doi.org/10.1016/j.tcrr.2026.07.012
+orgs:
+- fudan-university
+- nuist
+topic: extremes-hazards
+type: model
+method:
+- gan-vae
+- transformer
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+- other
+status: research
+summary: MAST-GAN fuses environmental fields and storm attributes with parallel attention to improve tropical
+  cyclone wind field forecasts, especially for extreme typhoons.
+abstract: Accurate prediction of tropical cyclone (TC) wind fields is crucial for disaster mitigation,
+  yet remains challenging, particularly for extreme events. Existing deep learning models often struggle
+  to capture the diverse dynamics across the TC lifecycle and tend to under-predict intense storms. To
+  address these issues, we propose a Multi-Attention Spatio-Temporal Generative Adversarial Network (MAST-GAN),
+  which couples a multi-source feature encoder that jointly processes environmental fields via an CNN,Transformer
+  backbone and TC attributes via an MLP, then fuses them with adaptive gating, a triple parallel attention
+  fusion module that simultaneously emphasizes channel, spatial and temporal cues, and a multi-branch
+  dynamic prediction head that adapts across the lifecycle by balancing global and TC-core forecasts while
+  using an auxiliary branch to enhance extreme-event prediction. Experiments on a large dataset built
+  from ERA5 and IBTrACS show that MAST-GAN improves TC wind field reconstruction and forecasting accuracy
+  over strong baselines, with clear gains on an extreme-typhoon test set measured by RMSE and MAE, and
+  case studies on Typhoons Bebinca and Pulasan further confirm realistic and robust wind field evolution.
+significance: 3
+cited_by: 0
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,47 @@
+id: arxiv-2412.13627
+title: 'TAUDiff: Highly efficient kilometer-scale downscaling using generative diffusion models'
+authors:
+- Rahul Sundar
+- Yucong Hu
+- Nishant Parashar
+- Antoine Blanchard
+- Boyko Dodov
+date: '2024-12-18'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2412.13627'
+  openalex: W4405626332
+links:
+  paper: https://arxiv.org/abs/2412.13627
+  pdf: https://arxiv.org/pdf/2412.13627
+topic: downscaling
+topics:
+- regional-km-scale
+type: model
+method:
+- diffusion
+spatial:
+- regional
+data:
+- cmip
+- km-scale-sim
+status: research
+summary: TAUDiff pairs a deterministic downscaler with a small diffusion corrector to produce fast kilometre-scale
+  wind-field downscaling from coarse GCM output.
+abstract: Deterministic regression-based downscaling models for climate variables often suffer from spectral
+  bias, which can be mitigated by generative models like diffusion models. To enable efficient and reliable
+  simulation of extreme weather events, it is crucial to achieve rapid turnaround, dynamical consistency,
+  and accurate spatio-temporal spectral recovery. We propose an efficient correction diffusion model,
+  TAUDiff, that combines a deterministic spatio-temporal model for mean field downscaling with a smaller
+  generative diffusion model for recovering the fine-scale stochastic features. We demonstrate the efficacy
+  of this approach on downscaling atmospheric wind velocity fields obtained from coarse GCM simulations.
+  We then extend TAUDiff for computationally efficient kilometer-scale downscaling of atmospheric wind
+  velocity fields. Owing to low inference times, our approach can ensure quicker simulation of extreme
+  events necessary for estimating associated risks and economic losses.
+significance: 4
+cited_by: 1
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

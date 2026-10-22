@@ -1,0 +1,43 @@
+id: arxiv-2609.20594
+title: Recursive Quantum Long Short-Term Memory for Stable Short-Horizon Temperature Forecasting
+authors:
+- Mu-En Lee
+- Yen-Ku Liu
+- Samuel Yen-Chi Chen
+- Yun-Cheng Tsai
+date: '2026-09-17'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.20594'
+  openalex: W7213610937
+links:
+  paper: https://arxiv.org/abs/2609.20594
+  pdf: https://arxiv.org/pdf/2609.20594
+topic: local-forecasting
+type: model
+method:
+- rnn
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Recursive quantum LSTM forecasts next-day minimum and maximum temperature in Toronto with lower
+  error and a smaller generalization gap than standard QLSTM over 20 seeds.
+abstract: Quantum long short-term memory (QLSTM) models extend recurrent sequence learning with variational
+  quantum circuits, but their optimization behavior can vary substantially across random initializations
+  and temporal contexts. This paper evaluates a recursive QLSTM architecture against a standard QLSTM
+  for one-step-ahead prediction of daily minimum and maximum temperature. Using daily weather observations
+  from Toronto and identical training settings, we compare convergence, predictive accuracy, and generalization
+  across input windows of 8, 16, and 32 days over 20 random seeds. The recursive model consistently reaches
+  a near-optimal test loss earlier, reduces mean absolute error and root mean squared error, and exhibits
+  a smaller generalization gap. These results indicate that recursive quantum feature transformations
+  can improve stability and out-of-sample performance for compact hybrid quantum--classical temporal models.
+significance: 1
+score: 4
+highlight: false
+added: '2026-10-22'
+source: backfill

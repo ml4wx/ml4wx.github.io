@@ -1,0 +1,56 @@
+id: arxiv-2603.29407
+title: Hybrid Quantum-Classical Spatiotemporal Forecasting for 3D Cloud Fields
+authors:
+- Fu Wang
+- Qifeng Lu
+- Xinyu Long
+- Meng Zhang
+- Xiaofei Yang
+- Weijia Cao
+- Xiaowen Chu
+date: '2026-03-31'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2603.29407'
+  openalex: W7147295089
+links:
+  paper: https://arxiv.org/abs/2603.29407
+  pdf: https://arxiv.org/pdf/2603.29407
+topic: nowcasting
+type: model
+method:
+- transformer
+- rnn
+timescale:
+- nowcast
+- short
+spatial:
+- regional
+data:
+- satellite
+- other
+status: research
+summary: Quantum-inspired hybrid spatiotemporal model (QENO) forecasts 3D cloud fields on CMA-MESO data,
+  beating ConvLSTM, PredRNN++ and Earthformer on MSE and SSIM.
+abstract: 'Accurate forecasting of three-dimensional (3D) cloud fields is important for atmospheric analysis
+  and short-range numerical weather prediction, yet it remains challenging because cloud evolution involves
+  cross-layer interactions, nonlocal dependencies, and multiscale spatiotemporal dynamics. Existing spatiotemporal
+  prediction models based on convolutions, recurrence, or attention often rely on locality-biased representations
+  and therefore struggle to preserve fine cloud structures in volumetric forecasting tasks. To address
+  this issue, we propose QENO, a hybrid quantum-inspired spatiotemporal forecasting framework for 3D cloud
+  fields. The proposed architecture consists of four components: a classical spatiotemporal encoder for
+  compact latent representation, a topology-aware quantum enhancement block for modeling nonlocal couplings
+  in latent space, a dynamic fusion temporal unit for integrating measurement-derived quantum features
+  with recurrent memory, and a decoder for reconstructing future cloud volumes. Experiments on CMA-MESO
+  3D cloud fields show that QENO consistently outperforms representative baselines, including ConvLSTM,
+  PredRNN++, Earthformer, TAU, and SimVP variants, in terms of MSE, MAE, RMSE, SSIM, and threshold-based
+  detection metrics. In particular, QENO achieves an MSE of 0.2038, an RMSE of 0.4514, and an SSIM of
+  0.6291, while also maintaining a compact parameter budget. These results indicate that topology-aware
+  hybrid quantum-classical feature modeling is a promising direction for 3D cloud structure forecasting
+  and atmospheric Earth observation data analysis.'
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

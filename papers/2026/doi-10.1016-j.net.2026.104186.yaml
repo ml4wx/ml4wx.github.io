@@ -1,0 +1,47 @@
+id: doi-10.1016-j.net.2026.104186
+title: Deep learning approaches for high-resolution wind data enhancement around a nuclear power plant
+authors:
+- Dakyoung Lee
+- Juryong Park
+- Eung Soo Kim
+date: '2026-02-10'
+year: 2026
+venue: Nuclear Engineering and Technology
+venue_type: journal
+ids:
+  doi: 10.1016/j.net.2026.104186
+  openalex: W7128492825
+links:
+  paper: https://doi.org/10.1016/j.net.2026.104186
+topic: downscaling
+type: model
+method:
+- transformer
+spatial:
+- regional
+data:
+- km-scale-sim
+status: research
+summary: A Uformer transformer super-resolves WRF winds near a Korean nuclear plant from 1.5 km to 300
+  m, with SVD compression cutting data volume by about 32%.
+abstract: When radioactive materials are released near nuclear power plants, local wind fields control
+  the dispersion path and concentration distribution. In Korea, complex terrain, sea–land breezes, and
+  seasonal variability amplify prediction uncertainty, underscoring the need for high-resolution wind
+  data. This study proposes and validates a framework that combines physics-based Weather Research and
+  Forecasting (WRF) modeling with deep learning to generate high-resolution winds while lowering computational
+  cost. We employ a Transformer-based Uformer trained on WRF-generated datasets to perform super-resolution
+  of wind fields, addressing the limitations of simple interpolation. To curb storage and data processing
+  burdens from finer grids, we apply Singular Value Decomposition (SVD) for compact, low-loss compression.
+  The super-resolved winds are coupled to a Lagrangian Patricle Dispersion Model (LPDM) to assess dispersion
+  sensitivity and evaluate Uformer fidelity and SVD effectiveness. Experiments show horizontal resolution
+  improved from 1.5 km to 300 m, capturing local flows dominating near-field transport. With SVD, data
+  volume decreases by ∼32% with negligible reconstruction error ( , enabling faster storage and reuse.
+  Overall, the pipeline delivers high-resolution winds more quickly and efficiently than physical modeling,
+  strengthening atmospheric dispersion predictions in complex meteorology typical of Korean nuclear power
+  plant regions and enhancing the timeliness of radiological emergency decision support.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,63 @@
+id: arxiv-2501.04018
+title: 'MERCURY: A fast and versatile multi-resolution based global emulator of compound climate hazards'
+authors:
+- Shruti Nath
+- Julie Carreau
+- Kai Kornhuber
+- Peter Pfleiderer
+- Carl-Friedrich Schleussner
+- Philippe Naveau
+date: '2024-12-24'
+year: 2024
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  arxiv: '2501.04018'
+  doi: 10.1029/2024ms004905
+  openalex: W4406231038
+links:
+  paper: https://doi.org/10.1029/2024ms004905
+  pdf: https://arxiv.org/pdf/2501.04018
+orgs:
+- columbia-leap
+- university-of-oxford
+topic: climate-emulation
+topics:
+- extremes-hazards
+type: model
+method:
+- other
+timescale:
+- climate
+spatial:
+- global
+- regional
+data:
+- cmip
+status: research
+summary: MERCURY emulates multiple climate variables and wet-bulb globe temperature from global mean temperature
+  using multi-resolution lifting, matching ESM spatial correlations and quantiles within about 5%.
+abstract: 'High-impact climate damages are often driven by compounding climate conditions. For example,
+  elevated heat stress conditions can arise from a combination of high humidity and temperature. To explore
+  future changes in compounding hazards under a range of climate scenarios and with large ensembles, climate
+  emulators can provide light-weight, data-driven complements to Earth System Models. Yet, only a few
+  existing emulators can jointly emulate multiple climate variables. In this study, we present the Multi-resolution
+  EmulatoR for CompoUnd climate Risk analYsis: MERCURY. MERCURY extends multi-resolution analysis to a
+  spatio-temporal framework for versatile emulation of multiple variables. MERCURY leverages data-driven,
+  image compression techniques to generate emulations in a memory-efficient manner. MERCURY consists of
+  a regional component that represents the monthly, regional response of a given variable to yearly Global
+  Mean Temperature (GMT) using a probabilistic regression based additive model, resolving regional cross-correlations.
+  It then adapts a reverse lifting-scheme operator to jointly spatially disaggregate regional, monthly
+  values to grid-cell level. We demonstrate MERCURY''s capabilities on representing the humid-heat metric,
+  Wet Bulb Globe Temperature, as derived from temperature and relative humidity emulations. The emulated
+  WBGT spatial correlations correspond well to those of ESMs and the 95% and 97.5% quantiles of WBGT distributions
+  are well captured, with an average of 5% deviation. MERCURY''s setup allows for region-specific emulations
+  from which one can efficiently "zoom" into the grid-cell level across multiple variables by means of
+  the reverse lifting-scheme operator. This circumvents the traditional problem of having to emulate complete,
+  global-fields of climate data and resulting storage requirements.'
+significance: 4
+cited_by: 2
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

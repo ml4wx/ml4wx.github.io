@@ -1,0 +1,68 @@
+id: doi-10.3389-fclim.2026.1776202
+title: A physical-environment-driven multi-stream deep neural network for short-term heavy precipitation
+  potential identification
+authors:
+- Jie Liu
+- Jingjing An
+- Chen Yao
+- Zhaoye Wu
+- Huimin Li
+- Xiaoye Zhou
+- Gaoping Liu
+- Ruijiao Wu
+date: '2026-03-04'
+year: 2026
+venue: Frontiers in Climate
+venue_type: journal
+ids:
+  doi: 10.3389/fclim.2026.1776202
+  openalex: W7133486599
+links:
+  paper: https://doi.org/10.3389/fclim.2026.1776202
+topic: extremes-hazards
+topics:
+- xai-uq-physics
+type: model
+method:
+- other
+timescale:
+- short
+spatial:
+- regional
+data:
+- stations
+- era5
+status: research
+summary: Physics-grouped multi-stream neural network identifies short-term heavy precipitation in Anhui
+  using 976 stations and ERA5, reaching threat score 0.851 and beating LightGBM and single-branch DNNs.
+abstract: 'Accurate identification of short-term heavy precipitation (STHP), governed by multiscale atmospheric
+  processes, is critical for effective disaster prevention and mitigation. Conventional statistical methods
+  often fail to capture the complex nonlinear relationships inherent in multidimensional atmospheric systems,
+  whereas deep learning (DL) approaches exhibit significant advantages in multi-factor fusion. However,
+  existing DL architectures typically process heterogeneous inputs through single-branch networks, resulting
+  in feature redundancy, and suffer from limited interpretability—the “black box” problem—that undermines
+  operational reliability. To address these challenges, this study proposes a physics-driven multi-stream
+  deep neural network (MSDNN) framework, complemented by interpretability analysis using the integrated
+  gradients (IG) method. Using observational data from 976 meteorological stations in Anhui Province and
+  ERA5 reanalysis data from 2021 to 2024, we categorized 71 environmental physical variables into five
+  distinct input streams according to physical characteristics: water vapor conditions, dynamic conditions,
+  thermal instability, composite indices, and height layer properties. The split-merge architecture of
+  MSDNN enables integrated processing of these five feature categories, achieving accurate identification
+  of STHP. Results show that the MSDNN model achieved a threat score (TS) of 0.851 and a Matthews correlation
+  coefficient (MCC) of 0.844 on the test set, significantly outperforming both conventional ensemble learning
+  methods (LightGBM, Random forest) and single-branch deep neural network (DNN). IG-based attribution
+  analysis revealed that dynamic factors contributed most substantially to model performance (45%), followed
+  by thermal (25%), vertical structure (15%), moisture-related (10%), and composite indices (5%). Furthermore,
+  this study identified critical nonlinear thresholds: contribution polarity reversal at 80% relative
+  humidity (700 hPa), strong sensitivity to upward vertical velocity (500 hPa). These quantified feature
+  interactions provide data-driven physical insights into precipitation triggering mechanisms, elucidating
+  the synergistic roles of moisture transport, dynamic lifting, and thermal instability. The MSDNN-IG
+  framework establishes a technical pathway for severe convective weather identification that harmonizes
+  accuracy with physical transparency, enhancing both the credibility and practical utility of AI methods
+  in operational warning systems.'
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

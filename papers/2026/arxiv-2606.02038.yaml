@@ -1,0 +1,52 @@
+id: arxiv-2606.02038
+title: Uncertainty-Aware Graph Neural Reconstruction of Urban Temperature Fields from Sparse Sensors under
+  Deployment Constraints
+authors:
+- Reda Snaiki
+- Abdelatif Merabtine
+date: '2026-06-01'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.02038'
+  openalex: W7163129193
+links:
+  paper: https://arxiv.org/abs/2606.02038
+  pdf: https://arxiv.org/pdf/2606.02038
+topic: observations-remote-sensing
+topics:
+- applications-impacts
+type: model
+method:
+- gnn
+spatial:
+- local
+data:
+- stations
+- other
+status: research
+summary: An uncertainty-aware graph attention network reconstructs daily maximum temperature fields over
+  Montreal from 10 to 40 sensors, outperforming kriging and IDW on held-out nodes.
+abstract: 'Reconstructing spatially continuous daily temperature fields from sparse observations is important
+  for urban climate monitoring and heat-risk analysis, but practical deployments are limited by sensor
+  budgets and spacing constraints. This study proposes an uncertainty-aware graph neural network (GNN)
+  framework for reconstructing daily maximum temperature fields from sparse sensors while supporting distance-constrained
+  sensor placement and probabilistic exceedance mapping. The model predicts both the temperature field
+  and a spatially varying predictive uncertainty field using a graph-attention-based mean-residual architecture
+  trained with a Gaussian negative log-likelihood. Sensor placement is addressed using a Proper Orthogonal
+  Decomposition with QR factorization (POD-QR) strategy with a 4 km minimum inter-sensor distance constraint
+  and is compared with random feasible placement and farthest-point sampling. The framework is evaluated
+  over a Montreal-area polygon using Daymet v4.1 daily temperature data (1 km resolution) under a strict
+  temporal hold-out protocol (training: 2020-2023; testing: 2024). Across sensor budgets (10-40 sensors),
+  the proposed GNN consistently outperforms inverse distance weighting and ordinary kriging in RMSE and
+  MAE on unobserved nodes. Sensor-placement effects are most pronounced at low budgets and diminish at
+  higher budgets, with a practical saturation regime emerging around 30 sensors under the imposed spacing
+  constraint. Probabilistic evaluation further shows improved uncertainty calibration with increasing
+  sensor density and a better sharpness-calibration trade-off than kriging. These results support the
+  proposed framework as an effective tool for uncertainty-aware temperature field reconstruction and decision-oriented
+  heat-risk mapping.'
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

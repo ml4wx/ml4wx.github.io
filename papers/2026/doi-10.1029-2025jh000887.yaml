@@ -1,0 +1,49 @@
+id: doi-10.1029-2025jh000887
+title: 'PrecipFusionNet: A Unified Deep Learning Model for Improving Numerical Precipitation Prediction'
+authors:
+- Ziyi Zhang
+- Huiling Yuan
+date: '2026-01-30'
+year: 2026
+venue: Journal of Geophysical Research Machine Learning and Computation
+venue_type: journal
+ids:
+  doi: 10.1029/2025jh000887
+  openalex: W7126217554
+links:
+  paper: https://doi.org/10.1029/2025jh000887
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2025JH000887
+topic: post-processing
+topics:
+- extremes-hazards
+type: model
+method:
+- cnn
+timescale:
+- short
+- medium
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: PrecipFusionNet, an Att-UKAN U-Net variant, corrects GFS heavy-rain biases, raising extreme-rain
+  skill 50.42% and China-wide ETS 35.03% at 1-4 days.
+abstract: Abstract Numerical weather prediction (NWP) often suffers from substantial biases when forecasting
+  extreme rainfall. Traditional corrections tend to underuse spatial information, while deep learning
+  approaches typically struggle with data imbalance for rare events. In this study, we propose PrecipFusionNet,
+  a novel deep learning framework designed to better capture localized heavy rainfall, which combines
+  an Att‐UKAN architecture, a U‐Net‐derived design integrating convolutional, Kolmogorov‐Arnold Network,
+  and attention modules, with a fusion loss function. PrecipFusionNet improves the prediction skill for
+  extreme events (≥50 mm/day) by 50.42%. For short‐ to medium‐range forecasts (1–4 days), it increases
+  the average Equitable Threat Score (ETS) over China by 35.03% compared to the Global Forecast System
+  (GFS). At longer forecast lead times (72 and 96 hr), it matches the ETS performance of GFS forecasts
+  at 24 and 48 hr. In addition, our data augmentation strategy improves robustness across different lead
+  times and regions, maintaining high accuracy in cross‐domain evaluations (e.g., over North America)
+  and demonstrating strong spatiotemporal generalization.
+significance: 4
+cited_by: 2
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,65 @@
+id: doi-10.7522-j.issn.1000-0534.2025.00067
+title: Nowcasting of Airport Low Visibility Based on Machine Learning
+authors:
+- Qi'e YIN, Changjian NI, An XIAO
+date: '2026-04-01'
+year: 2026
+venue: 'DOAJ (DOAJ: Directory of Open Access Journals)'
+venue_type: preprint
+ids:
+  doi: 10.7522/j.issn.1000-0534.2025.00067
+  openalex: W7134038377
+links:
+  paper: https://doi.org/10.7522/j.issn.1000-0534.2025.00067
+topic: local-forecasting
+type: model
+method:
+- classical-ml
+timescale:
+- nowcast
+- short
+spatial:
+- local
+data:
+- stations
+- nwp-analysis
+status: research
+summary: XGBoost and LightGBM nowcast airport low visibility from station and ECMWF data, reaching AUC
+  0.98 after feature screening.
+abstract: In order to reduce the rate of flight diversion and return caused by low visibility， this study
+  has established a short-term and nowcasting model of low visibility using ground observation data and
+  the upper-air and surface forecast data of the ECMWF at Jingdezhen Airport based on machine learning
+  algorithms.Comparing the evaluation indicators， the results find that the XGBoost and LightGBM machine
+  learning algorithms outperform the SVM machine learning algorithm in nowcasting of the airport low visibility.A
+  detailed comparison of the evaluation metrics was conducted both before and after feature screening
+  in the same machine learning algorithms.The study highlights that feature screening significantly boosts
+  the effectiveness of both models.Furthermore， the SHAP （SHapley Additive exPlanations） method elucidates
+  the contribution of each feature to the LightGBM model's output.The main conclusions are as follows：
+  （1） The machine learning models established by LightGBM and XGBoost perform well in airport low visibility
+  forecasting， with the AUC reaching up to 0.98， and the F1_score for the prediction of current low visibility
+  and the low visibility in the next one hour can reach up to 0.92.（2）Data cleaning and feature screening
+  is conducive to improving the prediction accuracy of the XGBoost algorithm for low visibility in the
+  next hour， according to the principle that "feature engineering in machine learning requires features
+  to be mutually independent".Moreover the LightGBM model with feature screening has a lower false negative
+  rate than the LightGBM model without feature selection when forecasting the current and future one-hour
+  low visibility.For the forecast of the current low visibility， the LightGBM_24_0h model is the best.For
+  the forecast of low visibility in the next one hour， the XGBoost_24_1h model is the best.And feature
+  selection has a greater improvement on the performance of the XGBoost algorithm.（3） The splitting times
+  and SHAP values are used respectively to analyze the feature importance of the LightGBM algorithm model.It
+  shows that under different feature importance criteria， nine features， namely the measured relative
+  humidity， air temperature， wind， sea level pressure at the airport， and the relative humidity at 1000
+  hPa， vertical velocity and divergence at 925 hPa， and divergence at 850 hPa predicted by ECMWF， are
+  more important for the prediction of low visibility at the airport.And divergence， as an input feature
+  of the machine learning model， can greatly improve the performance of the machine learning model.（4）
+  When explaining feature importance based on SHAP values， the cumulative proportion of the top ten feature
+  importance accounts for 80%.This indicates that in the nowcasting of low visibility at Jingdezhen Airport
+  where fog is the main factor， the LightGBM model can output prediction results according to key forecast
+  factors，.And when forecasting whether the low visibility in the next one hour will continue， more attention
+  should be paid to the changes in 850 hPa divergence， 1000 hPa relative humidity， airport sea level pressure
+  and wind direction.
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

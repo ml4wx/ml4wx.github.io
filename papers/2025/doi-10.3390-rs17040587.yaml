@@ -1,0 +1,53 @@
+id: doi-10.3390-rs17040587
+title: Spatial Downscaling of Satellite Sea Surface Wind with Soft-Sharing Multi-Task Learning
+authors:
+- Yinlei Yue
+- Jia Liu
+- Yongjian Sun
+- Kaijun Ren
+- Kefeng Deng
+- Ke Deng
+date: '2025-02-08'
+year: 2025
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs17040587
+  openalex: W4407388576
+links:
+  paper: https://doi.org/10.3390/rs17040587
+topic: downscaling
+topics:
+- observations-remote-sensing
+type: model
+method:
+- gan-vae
+spatial:
+- regional
+data:
+- satellite
+- other
+status: research
+summary: Multi-task GAN with soft-sharing downscales WindSat sea surface wind using SST and water vapour
+  as auxiliary tasks, validated against buoys.
+abstract: Sea surface wind (SSW) plays a pivotal role in numerous research endeavors pertaining to meteorology
+  and oceanography. SSW fields derived from remote sensing have been widely applied; however, regional
+  and local studies require higher-spatial-resolution SSW fields to identify refined details. Most of
+  the existing studies based on deep learning have constructed mappings from low-resolution inputs to
+  high-resolution downscaled estimates. However, these methods have failed to capture the relationships
+  between multiple variables as revealed by physical processes. Therefore, this paper proposes a spatial
+  downscaling approach for satellite sea surface wind that employs soft-sharing multi-task learning. Sea
+  surface temperature and water vapor are included as auxiliary variables for SSW, considering the close
+  correlation revealed by physical principles and data availability. The spatial downscaling of auxiliary
+  variables is designed as an auxiliary task and integrated into a multi-task learning network with generative
+  adversarial network and dual regression structures. The proposed multi-task downscaling network achieves
+  flexible parameter sharing and information exchange between tasks through a soft-sharing mechanism and
+  bridge modules. Comprehensive experiments were conducted with WindSat SSW products at 0.25° from Remote
+  Sensing Systems. The experimental results validate the outstanding downscaling capability of the proposed
+  methodology with respect to precision in comparison with buoy measurements and reconstruction quality.
+significance: 2
+cited_by: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

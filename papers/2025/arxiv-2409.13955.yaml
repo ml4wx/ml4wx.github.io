@@ -1,0 +1,56 @@
+id: arxiv-2409.13955
+title: On the effectiveness of neural operators at zero-shot weather downscaling
+authors:
+- Saumya Sinha
+- Brandon Benton
+- Patrick Emami
+date: '2025-01-01'
+year: 2025
+venue: Environmental Data Science
+venue_type: journal
+ids:
+  arxiv: '2409.13955'
+  doi: 10.1017/eds.2025.11
+  openalex: W4408910809
+links:
+  paper: https://doi.org/10.1017/eds.2025.11
+  pdf: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/70E4F46811337C0DF5BC99AEEB696544/S2634460225000111a.pdf/div-class-title-on-the-effectiveness-of-neural-operators-at-zero-shot-weather-downscaling-div.pdf
+topic: downscaling
+type: evaluation
+method:
+- neural-operator
+- transformer
+- gan-vae
+- cnn
+spatial:
+- regional
+data:
+- era5
+- other
+status: research
+summary: Tests neural operators for zero-shot weather downscaling at 8x and 15x; a Swin-Transformer with
+  interpolation mostly beats neural operator models on average error.
+abstract: 'Abstract Machine-learning (ML) methods have shown great potential for weather downscaling.
+  These data-driven approaches provide a more efficient alternative for producing high-resolution weather
+  datasets and forecasts compared to physics-based numerical simulations. Neural operators, which learn
+  solution operators for a family of partial differential equations, have shown great success in scientific
+  ML applications involving physics-driven datasets. Neural operators are grid-resolution-invariant and
+  are often evaluated on higher grid resolutions than they are trained on, i.e., zero-shot super-resolution.
+  Given their promising zero-shot super-resolution performance on dynamical systems emulation, we present
+  a critical investigation of their zero-shot weather downscaling capabilities, which is when models are
+  tasked with producing high-resolution outputs using higher upsampling factors than are seen during training.
+  To this end, we create two realistic downscaling experiments with challenging upsampling factors (e.g.,
+  8x and 15x) across data from different simulations: the European Centre for Medium-Range Weather Forecasts
+  Reanalysis version 5 (ERA5) and the Wind Integration National Dataset Toolkit. While neural operator-based
+  downscaling models perform better than interpolation and a simple convolutional baseline, we show the
+  surprising performance of an approach that combines a powerful transformer-based model with parameter-free
+  interpolation at zero-shot weather downscaling. We find that this Swin-Transformer-based approach mostly
+  outperforms models with neural operator layers in terms of average error metrics, whereas an Enhanced
+  Super-Resolution Generative Adversarial Network-based approach is better than most models in terms of
+  capturing the physics of the ground truth data. We suggest their use in future work as strong baselines.'
+significance: 4
+cited_by: 10
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

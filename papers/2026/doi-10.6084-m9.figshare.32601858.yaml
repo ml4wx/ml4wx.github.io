@@ -1,0 +1,62 @@
+id: doi-10.6084-m9.figshare.32601858
+title: 'Efficient 3D convolutional framework for rainfall nowcasting: performance–efficiency trade-offs
+  and adaptation to data scarcity'
+authors:
+- Ahmed Abdelhalim
+- Miguel A. Rico‐Ramirez
+- Weiru Liu
+- Dawei Han
+date: '2026-06-07'
+year: 2026
+venue: GIScience & Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.6084/m9.figshare.32601858
+  openalex: W7163880350
+links:
+  paper: https://doi.org/10.6084/m9.figshare.32601858
+  pdf: https://www.tandfonline.com/doi/pdf/10.1080/15481603.2026.2683939?needAccess=true
+topic: nowcasting
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Efficient residual 3D encoder-decoder with Ghost and Shift convolutions reduces radar rainfall
+  nowcasting cost while preserving accuracy under data scarcity.
+abstract: 'Rapid and accurate short-term (0 to 6 h) radar-based rainfall forecasting (nowcasting) is essential
+  for flash-flood forecasting, urban flood mitigation, transport safety, and severe-weather alerting.
+  Operational methods either extrapolate radar scans without modelling storm evolution or rely on numerical
+  weather prediction at latencies and resolutions unsuitable for real-time use. Deep learning methods
+  have been developed for nowcasting applications, but many approaches rely on using 2D CNNs (Convolutional
+  Neural Networks) that encode time by stacking frames, limiting temporal modelling. While 3D CNNs better
+  capture spatiotemporal dynamics, their computational cost hinders deployment in data- and resource-limited
+  settings. We propose an efficiency-oriented residual 3D encoder–decoder framework for radar rainfall
+  nowcasting, within which a family of efficient 3D convolutional designs are integrated, adapted and
+  systematically evaluated to ensure both predictive accuracy and deployment efficiency in data- and resource-constrained
+  environments. These replace standard 3D kernels with efficient alternatives that reduce computations
+  through channel separation, grouped operations, kernel factorisation, spatial shifting, and feature
+  reuse. Importantly, we introduce and evaluate Ghost and Shift convolutions for rainfall nowcasting for
+  the first time within the proposed unified framework. We systematically investigate: (1) input–output
+  configuration, (2) comparison of 2D and 3D CNN backbones performance, (3) trade-offs between accuracy
+  and efficiency across six efficient 3D convolutional designs, and (4) robustness under data scarcity.
+  Results show that a 4-frame input/12-frame output sequence-to-sequence design at 5-min time steps yields
+  the most reliable forecasts across different lead times. The 3D U-Net model significantly outperforms
+  its 2D counterpart. Compared with a standard 3D U-Net, Ghost-U-Net3D reduces parameters from 22.23 M
+  to 5.77 M (reduction of 74%), lowers inference latency from 97.5 ms to 68.2 ms (reduction of 29%), and
+  improves pixel-wise error (lower MAE and RMSE), while maintaining competitive prediction skill. Shift-U-Net3D
+  achieves a simple model (1.84 M parameters) and fast inference (68.6 ms), offering an ultra-lightweight
+  option with a modest accuracy trade-off. Under 10% training data, efficient variants retain stronger
+  performance than the baseline, indicating improved generalization when observations are scarce. Overall,
+  efficient 3D CNNs can deliver accurate, real-time radar-based rainfall nowcasts with practical deployment
+  potential in data-scarce and resource-limited environments.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

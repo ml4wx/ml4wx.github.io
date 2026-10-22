@@ -1,0 +1,53 @@
+id: doi-10.3390-atmos15091125
+title: Calibration of Typhoon Track Forecasts Based on Deep Learning Methods
+authors:
+- Chengchen Tao
+- Zhizu Wang
+- Yilun Tian
+- Yaoyao Han
+- Keke Wang
+- Qiang Li
+- Juncheng Zuo
+date: '2024-09-17'
+year: 2024
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos15091125
+  openalex: W4402615699
+links:
+  paper: https://doi.org/10.3390/atmos15091125
+topic: post-processing
+topics:
+- extremes-hazards
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- medium
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: BiLSTM+ConvLSTM+WDL corrects WRF typhoon track forecasts, cutting 72 h track error from 255 to
+  159 km, a 37.6% improvement over the raw model.
+abstract: An accurate forecast of typhoon tracks is crucial for disaster warning and mitigation. However,
+  existing numerical weather prediction models, such as the Weather Research and Forecasting (WRF) model,
+  still exhibit significant errors in track forecasts. This study aims to improve forecast accuracy by
+  correcting WRF-forecasted tracks using deep learning models, including Bidirectional Long Short-Term
+  Memory (BiLSTM) + Convolutional Long Short-Term Memory (ConvLSTM) + Wide and Deep Learning (WDL), BiLSTM
+  + Convolutional Gated Recurrent Unit (ConvGRU) + WDL, and BiLSTM + ConvLSTM + Extreme Deep Factorization
+  Machine (xDeepFM), with a comparison to the Kalman Filter. The results demonstrate that the BiLSTM +
+  ConvLSTM + WDL model reduces the 72 h track prediction error (TPE) from 255.18 km to 159.23 km, representing
+  a 37.6% improvement over the original WRF model, and exhibits significant advantages across all evaluation
+  metrics, particularly in key indicators such as Bias2, Mean Squared Error (MSE), and Sequence. The decomposition
+  of MSE further validates the importance of the BiLSTM, ConvLSTM, WDL, and Temporal Normalization (TN)
+  layers in enhancing the model’s spatio-temporal feature-capturing ability.
+significance: 3
+cited_by: 7
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

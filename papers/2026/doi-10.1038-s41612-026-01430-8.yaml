@@ -1,0 +1,48 @@
+id: doi-10.1038-s41612-026-01430-8
+title: Deep learning with spatio-temporal conditioning improves global subseasonal precipitation forecasts
+authors:
+- Gyu‐Ho Noh
+- Kuk‐Hyun Ahn
+date: '2026-05-07'
+year: 2026
+venue: npj Climate and Atmospheric Science
+venue_type: journal
+ids:
+  doi: 10.1038/s41612-026-01430-8
+  openalex: W7160504332
+links:
+  paper: https://doi.org/10.1038/s41612-026-01430-8
+  pdf: https://www.nature.com/articles/s41612-026-01430-8_reference.pdf
+topic: post-processing
+topics:
+- s2s-seasonal
+type: model
+method:
+- cnn
+timescale:
+- s2s
+spatial:
+- global
+data:
+- nwp-analysis
+- stations
+status: research
+summary: ReST U-Net with SPADE and FiLM conditioning corrects GEFSv12 subseasonal precipitation forecasts
+  against 63,588 stations, with gains largest in weeks 1–2.
+abstract: Accurate precipitation forecasts at subseasonal lead times (1–5 weeks) remain challenging because
+  numerical weather prediction (NWP) models exhibit systematic biases and limited predictability. Here
+  we introduce ReST, a deep-learning-based post-processing framework that improves global subseasonal
+  precipitation forecasts by explicitly incorporating geographic and seasonal conditioning. The model
+  integrates Spatially Adaptive Denormalization (SPADE) and Feature-wise Linear Modulation (FiLM) within
+  a unified spatio-temporal adaptive modulation architecture embedded in a U-Net backbone. ReST is trained
+  using 20 years (2000–2019) of GEFSv12 reforecasts and evaluated against a global station-based precipitation
+  dataset derived from 63,588 stations. Compared with raw forecasts and conventional post-processing approaches,
+  including quantile mapping, random forest, and a Res34-Unet model, ReST consistently improves forecast
+  skill and produces more spatially coherent precipitation fields. Skill gains are largest during Weeks
+  1–2, while predictability declines rapidly beyond Week 2. These results highlight the importance of
+  spatially explicit conditioning for correcting global precipitation forecast biases at subseasonal timescales.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

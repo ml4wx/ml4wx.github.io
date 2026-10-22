@@ -1,0 +1,48 @@
+id: arxiv-2312.00290
+title: Learning to forecast diagnostic parameters using pre-trained weather embedding
+authors:
+- Peetak P. Mitra
+- Vivek Ramavajjala
+date: '2023-12-01'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2312.00290'
+  openalex: W4389325700
+links:
+  paper: https://arxiv.org/abs/2312.00290
+  pdf: https://arxiv.org/pdf/2312.00290
+topic: global-medium-range
+topics:
+- foundation-models
+type: model
+method:
+- other
+timescale:
+- medium
+spatial:
+- global
+status: research
+summary: Two-stage approach uses a frozen autoencoder of prognostic variables so new diagnostic variables
+  can be forecast without retraining, with accuracy comparable to bespoke models.
+abstract: Data-driven weather prediction (DDWP) models are increasingly becoming popular for weather forecasting.
+  However, while operational weather forecasts predict a wide variety of weather variables, DDWPs currently
+  forecast a specific set of key prognostic variables. Non-prognostic ("diagnostic") variables are sometimes
+  modeled separately as dependent variables of the prognostic variables (c.f. FourCastNet), or by including
+  the diagnostic variable as a target in the DDWP. However, the cost of training and deploying bespoke
+  models for each diagnostic variable can increase dramatically with more diagnostic variables, and limit
+  the operational use of such models. Likewise, retraining an entire DDWP each time a new diagnostic variable
+  is added is also cost-prohibitive. We present an two-stage approach that allows new diagnostic variables
+  to be added to an end-to-end DDWP model without the expensive retraining. In the first stage, we train
+  an autoencoder that learns to embed prognostic variables into a latent space. In the second stage, the
+  autoencoder is frozen and "downstream" models are trained to predict diagnostic variables using only
+  the latent representations of prognostic variables as input. Our experiments indicate that models trained
+  using the two-stage approach offer accuracy comparable to training bespoke models, while leading to
+  significant reduction in resource utilization during training and inference. This approach allows for
+  new "downstream" models to be developed as needed, without affecting existing models and thus reducing
+  the friction in operationalizing new models.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

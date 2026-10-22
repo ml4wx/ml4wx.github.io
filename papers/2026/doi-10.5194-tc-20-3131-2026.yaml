@@ -1,0 +1,64 @@
+id: doi-10.5194-tc-20-3131-2026
+title: 'PIXAL: a physics-inspired explainable machine learning architecture for Greenland ice albedo modeling'
+authors:
+- Raf Antwerpen
+- Marco Tedesco
+- Pierre Gentine
+- Willem Jan van de Berg
+- Xavier Fettweis
+date: '2026-05-29'
+year: 2026
+venue: "\x98The \x9Ccryosphere"
+venue_type: journal
+ids:
+  doi: 10.5194/tc-20-3131-2026
+  openalex: W7162800211
+links:
+  paper: https://doi.org/10.5194/tc-20-3131-2026
+  pdf: https://tc.copernicus.org/articles/20/3131/2026/tc-20-3131-2026.pdf
+orgs:
+- columbia-leap
+- nasa
+topic: climate-emulation
+topics:
+- xai-uq-physics
+type: model
+method:
+- classical-ml
+- physics-constrained
+spatial:
+- regional
+data:
+- satellite
+- other
+status: research
+summary: Explainable XGBoost model trained on MAR outputs and MODIS data emulates Greenland ice albedo
+  far better than the regional climate model (R² 0.563 vs 0.062).
+abstract: Abstract. The Greenland ice sheet (GrIS) is a major contributor to global sea level rise. A
+  significant portion of the GrIS’ contribution can be attributed to increased ice surface melting, which
+  is strongly controlled by ice albedo, a property that regulates the amount of absorbed solar radiation
+  that leads to surface melting. Yet, we lack a comprehensive understanding of the complex and nonlinear
+  relationships ice albedo has with its environment and is, therefore, often simplified or crudely parameterized
+  in climate models. However, an accurate representation of future ice albedo evolution is essential for
+  reducing uncertainties in sea level rise projections. This study presents PIXAL, a physics-informed
+  explainable machine learning architecture that significantly outperforms the Modèle Atmosphérique Régional
+  (MAR), a state-of-the-art regional climate model, in modeling ice albedo on the southwestern GrIS. PIXAL
+  is based on an Extreme Gradient Boosting (XGBoost) model and is trained on a suite of modeled topographic,
+  atmospheric, radiative, and glaciologic variables from MAR to capture the complex and nonlinear relationships
+  with ice albedo observations obtained from the Moderate Resolution Imaging Spectroradiometer (MODIS).
+  Performance metrics show that PIXAL achieves an R2 of 0.563, a structural similarity index measure (SSIM)
+  of 0.620, a mean squared error (MSE) of 0.005, and a mean absolute percentage error (MAPE) of 14.699
+  %, compared to MAR’s R2 of 0.062, SSIM of 0.112, MSE of 0.032, and MAPE of 46.202 %. Explainable artificial
+  intelligence analysis reveals that topographic features, specifically ice sheet surface height and slope,
+  are the most important drivers of ice albedo variability due to their relationships with ice exposure
+  duration and the effectiveness in accumulating meltwater and light-absorbing constituents (LACs) on
+  flat ice surfaces. Near-surface air temperature and runoff further significantly impact ice albedo variability
+  by affecting the ice metamorphic state and accumulation of meltwater and LACs. These findings highlight
+  that understanding the complex physical processes underlying ice albedo variability is essential for
+  accurate climate modeling and sea level rise predictions. PIXAL represents a crucial advancement in
+  ice albedo modeling and paves the way for improved representation of ice sheets in Earth system models.
+significance: 4
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

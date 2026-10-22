@@ -1,0 +1,53 @@
+id: arxiv-2606.08563
+title: Physics-Guided Dual Decoding and Spectral Supervision for Global 3D Hydrometeor Prediction
+authors:
+- Dandan Chen
+- Yaqiang Wang
+date: '2026-06-07'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.08563'
+  openalex: W7163985956
+links:
+  paper: https://arxiv.org/abs/2606.08563
+  pdf: https://arxiv.org/pdf/2606.08563
+orgs:
+- cma
+topic: global-medium-range
+topics:
+- extremes-hazards
+type: model
+method:
+- gan-vae
+- cnn
+timescale:
+- medium
+spatial:
+- global
+data:
+- nwp-analysis
+- satellite
+status: research
+summary: Physics-guided dual-decoder with spectral matching and adversarial training produces 72-hour
+  3D hydrometeor forecasts that beat GFS on extreme-event detection and spectral fidelity.
+abstract: While global data-driven models excel at predicting continuous atmospheric variables, three-dimensional
+  hydrometeor forecasting remains challenging due to the zero-inflated, long-tailed distributions of these
+  variables. Standard deep learning optimization often yields overly smooth forecasts, attenuating extreme
+  events and spatial textures. We propose PredHydro-Net, a physics-guided dual-decoding framework that
+  mitigates this smoothing. To resolve multi-variable optimization conflicts, it employs a decoupled architecture
+  where macroscopic thermodynamic and dynamic fields unidirectionally modulate hydrometeor generation.
+  By integrating wavelet-based frequency decoupling, spectral amplitude matching, and adversarial training,
+  the model achieves a favorable trade-off between quantitative accuracy and spatial fidelity. In a 72-h
+  global evaluation, PredHydro-Net outperforms both spatiotemporal deep learning baselines (Earthformer
+  and PredRNNv2) and the operational Global Forecast System (GFS) in extreme-event detection and spectral
+  representation. Furthermore, it demonstrates strong climatological consistency with Global Precipitation
+  Measurement (GPM) satellite retrievals. The model reasonably reproduces the three-dimensional cloud
+  structures in extreme weather events, such as Hurricane Ian. Feature attribution confirms its dependence
+  on physical precursors such as relative humidity and wind convergence, offering a robust, physics-informed
+  approach to long-tailed atmospheric prediction.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

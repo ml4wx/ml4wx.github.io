@@ -1,0 +1,44 @@
+id: arxiv-2512.12276
+title: 'Balancing Accuracy and Speed: A Multi-Fidelity Ensemble Kalman Filter with a Machine Learning
+  Surrogate Model'
+authors:
+- Jeffrey van der Voort
+- Martin Verlaan
+- Hanne Kekkonen
+date: '2025-12-13'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2512.12276'
+  openalex: W4417448163
+links:
+  paper: https://arxiv.org/abs/2512.12276
+  pdf: https://arxiv.org/pdf/2512.12276
+topic: data-assimilation
+type: model
+method:
+- other
+data:
+- other
+status: research
+summary: Multi-fidelity ensemble Kalman filter uses an ML surrogate as cheap low-fidelity model, improving
+  accuracy at fixed compute on Lorenz-2005 and QG tests.
+abstract: Currently, more and more machine learning (ML) surrogates are being developed for computationally
+  expensive physical models. In this work we investigate the use of a Multi-Fidelity Ensemble Kalman Filter
+  (MF-EnKF) in which the low-fidelity model is such a machine learning surrogate model, instead of a traditional
+  low-resolution or reduced-order model. The idea behind this is to use an ensemble of a few expensive
+  full model runs, together with an ensemble of many cheap but less accurate ML model runs. In this way
+  we hope to reach increased accuracy within the same computational budget. We investigate the performance
+  by testing the approach on two common test problems, namely the Lorenz-2005 model and the Quasi-Geostrophic
+  model. By keeping the original physical model in place, we obtain a higher accuracy than when we completely
+  replace it by the ML model. Furthermore, the MF-EnKF reaches improved accuracy within the same computational
+  budget. The ML surrogate has similar or improved accuracy compared to the low-resolution one, but it
+  can provide a larger speed-up. Our method contributes to increasing the effective ensemble size in the
+  EnKF, which improves the estimation of the initial condition and hence accuracy of the predictions in
+  fields such as meteorology and oceanography.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

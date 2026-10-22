@@ -1,0 +1,57 @@
+id: doi-10.1109-jstars.2024.3507692
+title: Emulation of Forward Modeled Top-of-Atmosphere MODIS-Based Spectral Channels Using Machine Learning
+authors:
+- Jessenia Gonzalez
+- Sudhakar Dipu
+- Odran Sourdeval
+- Alexandre Siméon
+- Gustau Camps‐Valls
+- Johannes Quaas
+date: '2024-11-28'
+year: 2024
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2024.3507692
+  openalex: W4404809312
+links:
+  paper: https://doi.org/10.1109/jstars.2024.3507692
+topic: observations-remote-sensing
+type: model
+method:
+- classical-ml
+- cnn
+spatial:
+- regional
+data:
+- satellite
+- km-scale-sim
+status: research
+summary: Random forest, neural network and CNN emulators reproduce RTTOV MODIS radiances across 36 channels
+  with R² near 0.9 in seconds.
+abstract: 'Satellites provide invaluable data regarding climate and weather patterns on a global scale.
+  Satellite observations are crucial in studies aimed at understanding and monitoring the Earth''s atmosphere
+  and surface properties. The forward modeling problem computes radiances or reflectances based on surface
+  and atmospheric state knowledge using radiative transfer modeling (RTM). RTTOV, a widely utilized RTM,
+  serves both operational and research applications. This study presents a machine learning (ML) emulator
+  designed to significantly accelerate the acquisition of satellite observations across 36 spectral channels.
+  The ML model predicted 369 303 points across these 36 channels in less than 14 s, showcasing its potential
+  over the much more costly RTTOV emulations. We employ supervised learning to compare the performance
+  of three ML models: Random forest (RF), neural networks (NN), and convolutional neural network (CNN).
+  These models were trained on high-resolution large-eddy simulations in a realistic weather prediction
+  setting over Germany and forward-simulated MODIS-based spectral channels. Our approach achieves strong
+  correlations between predicted and reference data across most of the 36 channels in the test dataset.
+  The$R^{2}$metric averaged across the 36 channels is 0.91 for the RF model, 0.93 for the NN model, and
+  0.90 for the CNN model. The normalized RMSE averaged across the 36 channels is 4.07% for the RF model,
+  3.69% for the NN model, and 4.35% for the CNN model. We discuss the performance of the models in the
+  validation and combined test dataset, as well as in independent channels and timesteps to understand
+  how robust the model is to different data distributions. Overall, the results highlight the potential
+  of ML to replace costly RTM models while maintaining high accuracy in emulating radiance and reflectance.
+  In addition, we generated visible satellite images from the predictions to qualitatively inspect the
+  models'' performance.'
+significance: 3
+cited_by: 6
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

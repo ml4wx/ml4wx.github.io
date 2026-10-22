@@ -1,0 +1,53 @@
+id: doi-10.3390-en18092300
+title: Nowcasting Solar Irradiance Components Using a Vision Transformer and Multimodal Data from All-Sky
+  Images and Meteorological Observations
+authors:
+- Onon Bayasgalan
+- Atsushi Akisawa
+date: '2025-04-30'
+year: 2025
+venue: Energies
+venue_type: journal
+ids:
+  doi: 10.3390/en18092300
+  openalex: W4409964339
+links:
+  paper: https://doi.org/10.3390/en18092300
+topic: nowcasting
+topics:
+- applications-impacts
+type: model
+method:
+- transformer
+- cnn
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- other
+- stations
+status: research
+summary: Vision transformer fuses all-sky images with meteorological records to nowcast solar irradiance
+  components, reaching MAE of 15–33 W/m² in Mongolia.
+abstract: As the solar share in energy generation is expanding globally, solar nowcasting is becoming
+  increasingly important for the efficient and economical management of the power grid. This study leveraged
+  the spatial context provided by all-sky images (ASI) in addition to the meteorological records for improved
+  nowcasting of global, direct, and diffuse irradiance components. The proposed methodology consists of
+  two branches for processing the multimodal data of ASIs and meteorological data. Due to its capability
+  of understanding the overall characteristics of the image through self-attention, a vision transformer
+  is utilized for the image branch while normal dense layers process the tabular meteorological data.
+  The proposed architecture is compared against the baselines of the Ineichen clear sky model, a feedforward
+  neural network (FFNN) where cloud coverage is computed from the ASIs by a simple color-channel threshold
+  algorithm, and a hybrid of FFNN and U-Net model, which replaces the color threshold algorithm with fully
+  convolutional layers for cloud segmentation. The models are trained, validated, and tested using the
+  quality-assured ground-truth data collected in Ulaanbaatar, Mongolia, from May to August 2024, under
+  one-minute intervals with a random split of 70%, 15%, and 15%. Our approach exhibits superior performance
+  to baselines with a significantly lower mean absolute error (MAE) of 15–33 W/m2 and root mean square
+  error (RMSE) of 26–72 W/m2, thus potentially aiding grid operators’ decision-making in real-time.
+significance: 2
+cited_by: 8
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

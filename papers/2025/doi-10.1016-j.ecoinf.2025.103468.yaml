@@ -1,0 +1,72 @@
+id: doi-10.1016-j.ecoinf.2025.103468
+title: Advancing long-term precipitation pattern forecasting in Atlantic Canada using successive variational
+  mode decomposition, recursive LSTM, and graph-based feature selection
+authors:
+- Mehdi Jamei
+- Mumtaz Ali
+- Masoud Karbasi
+- Aitazaz A. Farooque
+- Saad Javed Cheema
+- Gurjit S. Randhawa
+- Syed Zubair Habib Gilani
+- Zaher Mundher Yaseen‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬
+date: '2025-10-09'
+year: 2025
+venue: Ecological Informatics
+venue_type: journal
+ids:
+  doi: 10.1016/j.ecoinf.2025.103468
+  openalex: W4414997109
+links:
+  paper: https://doi.org/10.1016/j.ecoinf.2025.103468
+topic: local-forecasting
+type: model
+method:
+- rnn
+- classical-ml
+timescale:
+- seasonal
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Hybrid SVMD, recursive LSTM and graph feature selection forecast monthly precipitation at two
+  Atlantic Canada stations, outperforming CNN-LSTM, RVFL and LightGBM baselines.
+abstract: Precipitation forecasting is crucial in Canada's Maritime provinces, given their unique geography
+  and susceptibility to precipitation impacts. Accurate forecasts aid farmers, transportation authorities,
+  and climate change adaptation efforts, ecosystems, and infrastructure. This study introduces a groundbreaking
+  multi-temporal deep-learning framework for forecasting monthly precipitation in Canada's Maritime region,
+  encompassing Charlottetown and St. John's, distinguishing it as a trailblazing innovation among cutting-edge
+  complementary deep-learning algorithms. This pioneering research unveils, for the first time, a cutting-edge
+  hybrid framework that synergizes successive variational mode decomposition (SVMD), recursive long short-term
+  memory (RLSTM), graph feature selection, and Borda count-based multi-criteria decision-making (BORDA).
+  The innovative aspect lies in the recursive architecture of RLSTM, which sets it apart from traditional
+  SVMD-LSTM hybrids by enabling multi-horizon memory feedback loops that improve long-range temporal learning.
+  Integrating graph-based feature selection with partial autocorrelation function (PACF) analysis enhances
+  the extraction of the most informative SVMD components, enhancing prediction accuracy and reducing model
+  complexity. Furthermore, the framework is distinguished by its precise and efficient performance, facilitated
+  by intuitive hyperparameter configurations during both the decomposition and training stages. It provides
+  a pragmatic and scalable alternative to other leading complementary deep-learning methods. To benchmark
+  the performance of the primary model, it is compared against a convolutional neural network-long short-term
+  memory (CNN-LSTM), random vector functional link (RVFL), and a light gradient-boosting machine (LightGBM),
+  with a rigorous evaluation of both standalone and hybrid counterparts. To assess the accuracy of the
+  model, a single metric comprising six statistical indices, including correlation coefficient (R), Nash–Sutcliffe
+  efficiency (NSE), and Kling–Gupta efficiency (KGE), consolidated via BORDA, was employed to simplify
+  the identification of superior frameworks. An accuracy assessment in Charlottetown reveals that SVMD–RLSTM,
+  owing to optimal metrics (BORDA 0.95, R = 0.9508, and RMSE = 15.6567 mm|T + 1; BORDA = 0.7834, R = 0.9297,
+  and RMSE = 18.7170; |T + 3, BORDA = 0.6855, R = 0.906, and RMSE = 21.3539|T + 7), outperformed SVMD–RVFL
+  (BORDA|T + 1 = 0.927 and BORDA), SVMD-CNN-LSTM (BORDA|T + 1 = 0.8037), and SVMD-LightGBM (BORDA|T +
+  1 = 0.713); whereas a diagnostic assessment in St. John's station confirms the superiority of SVMD–RLSTM
+  (BORDA = 0.9171, R = 0.9337, and RMSE = 19.0093 mm|T + 1; BORDA = 0.5951, R = 0.9251, and RMSE = 23.6887;
+  |T + 3, BORDA = 0.6898, R = 0.9157, and RMSE = 21.3299 mm|T + 7) over the other hybrid frameworks. •
+  A new SVMD-RLSTM model improves precipitation forecasting in Atlantic Canada • Graph feature selection
+  enhances prediction by finding key rainfall patterns • Hybrid model surpasses CNN-LSTM and RVFL in multi-temporal
+  forecasting • Easy-to-tune parameters for both decomposition and training phases • First use of SVMD
+  for Maritime precipitation forecast yields superior results
+significance: 2
+cited_by: 3
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

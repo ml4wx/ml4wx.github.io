@@ -1,0 +1,49 @@
+id: arxiv-2509.14775
+title: 'FlowCast-ODE: Continuous Hourly Weather Forecasting with Dynamic Flow Matching and ODE Solver'
+authors:
+- Shuangshuang He
+- Yuanting Zhang
+- Hongli Liang
+- Qingye Meng
+- Xingyuan Yuan
+- Shuo Wang
+date: '2025-09-18'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2509.14775'
+links:
+  paper: https://arxiv.org/abs/2509.14775
+  pdf: https://arxiv.org/pdf/2509.14775
+topic: global-medium-range
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Dynamic flow matching with an ODE solver produces temporally continuous hourly ERA5 forecasts
+  up to 120 hours, avoiding error accumulation from the 12-hour assimilation artifact.
+abstract: Data-driven hourly weather forecasting models often face the challenge of error accumulation
+  in long-term predictions. The problem is exacerbated by non-physical temporal discontinuities present
+  in widely-used training datasets such as ECMWF Reanalysis v5 (ERA5), which stem from its 12-hour assimilation
+  cycle. Such artifacts lead hourly autoregressive models to learn spurious dynamics and rapidly accumulate
+  errors. To address this, we introduce FlowCast-ODE, a novel framework that treats atmospheric evolution
+  as a continuous flow to ensure temporal coherence. Our method employs dynamic flow matching to learn
+  the instantaneous velocity field from data and an ordinary differential equation (ODE) solver to generate
+  smooth and temporally continuous hourly predictions. By pre-training on 6-hour intervals to sidestep
+  data discontinuities and fine-tuning on hourly data, FlowCast-ODE produces seamless forecasts for up
+  to 120 hours with a single lightweight model. It achieves competitive or superior skill on key meteorological
+  variables compared to baseline models, preserves fine-grained spatial details, and demonstrates strong
+  performance in forecasting extreme events, such as tropical cyclone tracks.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

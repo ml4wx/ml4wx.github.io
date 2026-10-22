@@ -1,0 +1,67 @@
+id: doi-10.1029-2024jh000136
+title: Application of the AI2 Climate Emulator to E3SMv2's Global Atmosphere Model, With a Focus on Precipitation
+  Fidelity
+authors:
+- James Duncan
+- Elynn Wu
+- Jean‐Christophe Golaz
+- Peter Caldwell
+- Oliver Watt‐Meyer
+- Spencer Koncius Clark
+- Jeremy McGibbon
+- Gideon Dresdner
+- Karthik Kashinath
+- Boris Bonev
+- Michael S. Pritchard
+- Christopher S. Bretherton
+date: '2024-09-01'
+year: 2024
+venue: Journal of Geophysical Research Machine Learning and Computation
+venue_type: journal
+ids:
+  doi: 10.1029/2024jh000136
+  openalex: W4402480959
+links:
+  paper: https://doi.org/10.1029/2024jh000136
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2024JH000136
+orgs:
+- ai2
+- noaa
+- nvidia
+- uc-berkeley
+topic: climate-emulation
+topics:
+- hybrid-parameterization
+type: evaluation
+method:
+- transformer
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: Shows the AI2 Climate Emulator (ACE) can be trained on E3SMv2/EAMv2 output, giving stable 10-year
+  runs with small biases and fast fine-tuning to new models.
+abstract: Abstract Can the current successes of global machine learning‐based weather simulators be generalized
+  beyond 2‐week forecasts to stable and accurate multiyear runs? The recently developed AI2 Climate Emulator
+  (ACE) suggests this is feasible, based upon 10‐year simulations with a network trained on output from
+  a physics‐based global atmosphere model using a grid spacing of approximately 110 km and forced by a
+  repeating annual cycle of sea‐surface temperature. Here we show that ACE, without modification, can
+  be trained to emulate another major atmospheric model, EAMv2, run at a comparable grid spacing for at
+  least 10 years with similarly small climate biases—a prerequisite to wider applicability. With an analysis
+  that combines multiple temporal, spatial, and frequency domain perspectives, we show that ACE faithfully
+  represents the spatiotemporal structure of EAMv2 precipitation and related variables. Finally, we show
+  that a pretrained ACE network is able to adapt to a new global climate model simulation data set with
+  10 fewer training steps than when starting from random initialization, all while still maintaining low
+  levels of climate bias. Further analysis of these fine‐tuning experiments reveal ACE's intriguing ability
+  to interpolate between distinct global climate models.
+significance: 6
+cited_by: 10
+score: 59
+highlight: true
+highlight_reason: Shows the ACE climate emulator transfers to another GCM (E3SM) with low biases and fine-tunes
+  efficiently; relevant to ML climate emulation.
+added: '2026-10-22'
+source: backfill

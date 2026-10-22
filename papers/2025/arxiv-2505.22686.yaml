@@ -1,0 +1,50 @@
+id: arxiv-2505.22686
+title: Localized Weather Prediction Using Kolmogorov-Arnold Network-Based Models and Deep RNNs
+authors:
+- Ange-Clement Akazan
+- Verlon Roel Mbingui
+- Gnankan Landry Regis N'guessan
+- Issa Karambal
+date: '2025-05-27'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2505.22686'
+  openalex: W4416600548
+links:
+  paper: https://arxiv.org/abs/2505.22686
+  pdf: https://arxiv.org/pdf/2505.22686
+topic: local-forecasting
+type: evaluation
+method:
+- rnn
+- other
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Benchmarks LSTM, GRU, and KAN-based models, plus two TKAN variants, for daily station temperature,
+  rainfall, and pressure in two African cities; KAN leads on temperature.
+abstract: 'Weather forecasting is crucial for managing risks and economic planning, particularly in tropical
+  Africa, where extreme events severely impact livelihoods. Yet, existing forecasting methods often struggle
+  with the region''s complex, non-linear weather patterns. This study benchmarks deep recurrent neural
+  networks such as $\texttt{LSTM, GRU, BiLSTM, BiGRU}$, and Kolmogorov-Arnold-based models $(\texttt{KAN}
+  and \texttt{TKAN})$ for daily forecasting of temperature, precipitation, and pressure in two tropical
+  cities: Abidjan, Cote d''Ivoire (Ivory Coast) and Kigali (Rwanda). We further introduce two customized
+  variants of $ \texttt{TKAN}$ that replace its original $\texttt{SiLU}$ activation function with $ \texttt{GeLU}$
+  and \texttt{MiSH}, respectively. Using station-level meteorological data spanning from 2010 to 2024,
+  we evaluate all the models on standard regression metrics. $\texttt{KAN}$ achieves temperature prediction
+  ($R^2=0.9986$ in Abidjan, $0.9998$ in Kigali, $\texttt{MSE} < 0.0014~^\circ C ^2$), while $\texttt{TKAN}$
+  variants minimize absolute errors for precipitation forecasting in low-rainfall regimes. The customized
+  $\texttt{TKAN}$ models demonstrate improvements over the standard $\texttt{TKAN}$ across both datasets.
+  Classical \texttt{RNNs} remain highly competitive for atmospheric pressure ($R^2 \approx 0.83{-}0.86$),
+  outperforming $\texttt{KAN}$-based models in this task. These results highlight the potential of spline-based
+  neural architectures for efficient and data-efficient forecasting.'
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

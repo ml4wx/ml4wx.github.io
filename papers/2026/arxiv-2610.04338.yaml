@@ -1,0 +1,51 @@
+id: arxiv-2610.04338
+title: 'S$^3$N: A Spherical Spiral Scanning Network for Weather Forecasting'
+authors:
+- Fan Yan
+- Chen Hui
+- Weisi Lin
+- Haiqi Zhu
+- Feng Jiang
+- Sun-Yuan Kung
+- Wei Zhang
+date: '2026-10-03'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.04338'
+  openalex: W7220710465
+links:
+  paper: https://arxiv.org/abs/2610.04338
+  pdf: https://arxiv.org/pdf/2610.04338
+orgs:
+- nuist
+- princeton-university
+topic: global-medium-range
+type: model
+method:
+- other
+timescale:
+- medium
+spatial:
+- global
+status: research
+summary: S3N uses an L2 projection between latitude-longitude and HEALPix grids and spiral state-space
+  scanning to forecast weather at 4, 7 and 10 days with slower error growth.
+abstract: Machine learning-based weather prediction (MLWP) has achieved strong performance in global weather
+  forecasting. Recent Hierarchical Equal Area isoLatitude Pixelation (HEALPix)-based methods use the HEALPix
+  (HP) grid to avoid area distortion near the poles of conventional latitude-longitude (LL) grids. However,
+  existing HP-based approaches often use pointwise mapping methods and process HP pixels within separate
+  base faces or local windows. Consequently, the mapping may introduce reconstruction errors and cross-face
+  communication depends on handcrafted boundary handling or shifted windows. We propose the Spherical
+  Spiral Scanning Network (S$^3$N) to address both limitations. First, L2Proj provides a bidirectional
+  method for mapping atmospheric fields between the LL and HP grids through an $L^2$ projection of their
+  continuous finite-element representations. Second, the Attention-Guided Quad-Spiral State-Space Scanning
+  (AQSS) block uses cross-latitude attention to guide selective state-space updates along four global
+  pole-to-pole spiral paths. This design enables continuous information propagation across HP base-face
+  boundaries without additional boundary-processing mechanisms. Experiments show that S$^3$N achieves
+  better results at 4-, 7-, and 10-day lead times, and exhibits slower error growth in long-range forecasting.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

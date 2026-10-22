@@ -1,0 +1,50 @@
+id: arxiv-2606.24263
+title: 'MotifGen: Spatiotemporal interpolation of misaligned satellite images via multi-source generative
+  modeling, in an application to tropical cyclones'
+authors:
+- Clément Dauvilliers
+- Claire Monteleoni
+date: '2026-06-23'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.24263'
+  openalex: W7165806238
+links:
+  paper: https://arxiv.org/abs/2606.24263
+  pdf: https://arxiv.org/pdf/2606.24263
+orgs:
+- inria
+topic: observations-remote-sensing
+topics:
+- extremes-hazards
+type: model
+method:
+- other
+spatial:
+- global
+data:
+- satellite
+status: research
+summary: MotifGen is a multi-source generative model that interpolates misaligned tropical cyclone microwave
+  and infrared satellite images, matching a deterministic ensemble mean with better spectra.
+abstract: Microwave satellite imagery plays a crucial role in monitoring tropical cyclone precipitation
+  and intensity worldwide, but suffers from long revisit times, potentially missing rapid storm evolution
+  phases. While this raises the need for an interpolation method, it is made challenging by the high level
+  of heterogeneity of microwave data coming from different instruments. In this work, we introduce the
+  first generative model that can be applied to multiple geospatial sources that change across samples,
+  occur at irregular time intervals, are misaligned geographically, and come from instruments with varying
+  characteristics. We apply this model to the case of spatio-temporal interpolation of tropical cyclone
+  microwave images from other microwave and infrared instruments. We train using a self-supervised task
+  in which a random source is masked and reconstructed, and show that it leads to a significant decrease
+  in Continuous Ranked Probability Score over supervised training. We show a further improvement by combining
+  infrared and microwave data compared to microwave only. Using these improvements, the generative model
+  produces an ensemble mean on par with that of a deterministic model, while generating a power spectrum
+  significantly closer to that of true observations. To the best of our knowledge, this is the first generative
+  model that interpolates microwave images of cyclones by combining multiple microwave instruments and
+  infrared observations at irregular time intervals.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

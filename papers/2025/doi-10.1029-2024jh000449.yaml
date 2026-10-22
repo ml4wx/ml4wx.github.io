@@ -1,0 +1,59 @@
+id: doi-10.1029-2024jh000449
+title: A Machine Learning‐Based Observation Operator for FY‐4B GIIRS Brightness Temperatures Considering
+  the Uncertainty of Label Data
+authors:
+- Yonghui Li
+- Wei Han
+- Wansuo Duan
+- Zeting Li
+- Hao Li
+date: '2025-03-01'
+year: 2025
+venue: Journal of Geophysical Research Machine Learning and Computation
+venue_type: journal
+ids:
+  doi: 10.1029/2024jh000449
+  openalex: W4408632502
+links:
+  paper: https://doi.org/10.1029/2024jh000449
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2024JH000449
+orgs:
+- cma
+- fudan-university
+- iap-cas
+topic: observations-remote-sensing
+topics:
+- data-assimilation
+type: model
+method:
+- other
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: End-to-end neural radiative transfer observation operator for FY-4B GIIRS radiances, trained
+  with maximum likelihood to handle label uncertainty; matches RTTOV Jacobians.
+abstract: Abstract The increasing volume of satellite data, particularly hyperspectral infrared data,
+  combined with the real‐time monitoring requirements of numerical weather prediction (NWP) systems, has
+  heightened the demand for computational efficiency and accuracy in radiative transfer models (RTM).
+  Machine learning (ML) offers a promising approach, and numerous studies on ML‐based RTM have emerged
+  recently. However, existing ML‐based RTMs for hyperspectral infrared were not end‐to‐end. Moreover,
+  since the label data do not represent truth, models trained with loss functions like mean squared error
+  (MSE) or mean absolute error (MAE) fail to account for its uncertainty. This limitation can lead to
+  suboptimal model parameters, as training may assign higher weights to labels with larger errors. This
+  study construct an end‐to‐end ML‐based RTM focused on clear sky conditions over the ocean for the FengYun‐4B
+  satellite (FY‐4B) Geostationary Interferometric Infrared Sounder (GIIRS), using maximum likelihood estimation
+  (MLE) and MSE for training, respectively. MLE accounts for the uncertainty of labels. The results indicate
+  both models achieve high accuracy, with mean errors within 0.1 K (K) and standard deviation (STD) of
+  errors within 0.04 K compared to the labels. The model trained with MLE exhibits a mean error closer
+  to 0 and a STD similar to the error STD of labels, suggesting better parameter configurations to reflect
+  the actual error distribution of the labels. Additionally, the temperature and water vapor Jacobian
+  computed by both models are comparable to those obtained from RTTOV, highlighting their potential for
+  application as observational operator in satellite data assimilation for hyperspectral infrared sounder.
+significance: 4
+cited_by: 3
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

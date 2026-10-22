@@ -1,0 +1,43 @@
+id: arxiv-2511.11090
+title: A Space-Time Transformer for Precipitation Nowcasting
+authors:
+- Levi Harris
+- Tianlong Chen
+date: '2025-11-14'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2511.11090'
+  openalex: W4416331211
+links:
+  paper: https://arxiv.org/abs/2511.11090
+  pdf: https://arxiv.org/pdf/2511.11090
+topic: nowcasting
+type: model
+method:
+- transformer
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+- radar
+status: research
+summary: SaTformer, a video transformer that frames precipitation nowcasting as classification with frequency-weighted
+  loss, ranked first in the Weather4cast 2025 cumulative rainfall challenge.
+abstract: 'Until recently, numerical weather prediction (NWP) models have stood rivalless in operational
+  forecasting despite a few limitations. Namely, physically-based models are computationally demanding
+  and struggle at short lead times, reducing their utility for nowcasting. Motivated by these shortcomings,
+  recent work proposes AI-weather prediction (AI-WP) alternatives that emulate analysis data with neural
+  networks. While these data-driven approaches have achieved high skill for medium-range forecasting-applications
+  of AI-WP to precipitation and to nowcasting are less explored. To these ends, this paper discusses \textit{SaTformer}:
+  a video transformer adapted for precipitation nowcasting. To ameliorate some problems related to what
+  is essentially a fat-tailed regression task, we find it prudent to formulate nowcasting as a classification
+  problem and employ a frequency-weighted loss. This straightforward approach scored first on the NeurIPS
+  Weather4Cast 2025 ``Cumulative Rainfall'''' challenge. Code and model weights are available: \texttt{\href{github.com/leharris3/w4c-25}{github.com/leharris3/satformer}}.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

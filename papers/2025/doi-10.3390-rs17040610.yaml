@@ -1,0 +1,53 @@
+id: doi-10.3390-rs17040610
+title: A Multi-Scale Fusion Deep Learning Approach for Wind Field Retrieval Based on Geostationary Satellite
+  Imagery
+authors:
+- Wei Zhang
+- Yapeng Wu
+- Kunkun Fan
+- Xiaojiang Song
+- Renbo Pang
+- Boyu Guoan
+date: '2025-02-11'
+year: 2025
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs17040610
+  openalex: W4407408498
+links:
+  paper: https://doi.org/10.3390/rs17040610
+topic: observations-remote-sensing
+type: model
+method:
+- transformer
+- cnn
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Multi-scale transformer and U-Net model retrieves Himawari-8 wind fields in seconds, reaching
+  0.97 m/s wind speed MAE and beating CFOSAT and HY-2B products.
+abstract: Wind field retrieval, a crucial component of weather forecasting, has been significantly enhanced
+  by recent advances in deep learning. However, existing approaches that are primarily focused on wind
+  speed retrieval are limited by their inability to achieve real-time, full-coverage retrievals at large
+  scales. To address this problem, we propose a novel multi-scale fusion retrieval (MFR) method, leveraging
+  geostationary observation satellites. At the mesoscale, MFR incorporates a cloud-to-wind transformer
+  model, which employs local self-attention mechanisms to extract detailed wind field features. At large
+  scales, MFR incorporates a multi-encoder coordinate U-net model, which incorporates multiple encoders
+  and utilises coordinate information to fuse meso- to large-scale features, enabling accurate and regionally
+  complete wind field retrievals, while reducing the computational resources required. The MFR method
+  was validated using Level 1 data from the Himawari-8 satellite, covering a geographic range of 0–60°N
+  and 100–160°E, at a resolution of 0.25°. Wind field retrieval was accomplished within seconds using
+  a single graphics processing unit. The mean absolute error of wind speed obtained by the MFR was 0.97
+  m/s, surpassing the accuracy of the CFOSAT and HY-2B Level 2B wind field products. The mean absolute
+  error for wind direction achieved by the MFR was 23.31°, outperforming CFOSAT Level 2B products and
+  aligning closely with HY-2B Level 2B products. The MFR represents a pioneering approach for generating
+  initial fields for large-scale grid forecasting models.
+significance: 4
+cited_by: 5
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

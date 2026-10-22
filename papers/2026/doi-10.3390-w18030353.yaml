@@ -1,0 +1,59 @@
+id: doi-10.3390-w18030353
+title: A High-Resolution Daily Precipitation Fusion Framework Integrating Radar, Satellite, and NWP Data
+  Using Machine Learning over South Korea
+authors:
+- H. D. Park
+- Hiroyuki Miyazaki
+- Menas Kafatos
+- Seung Hee Kim
+- Yangwon Lee
+date: '2026-01-30'
+year: 2026
+venue: Water
+venue_type: journal
+ids:
+  doi: 10.3390/w18030353
+  openalex: W7126174702
+links:
+  paper: https://doi.org/10.3390/w18030353
+  pdf: https://www.mdpi.com/2073-4441/18/3/353/pdf?version=1769783741
+topic: observations-remote-sensing
+topics:
+- downscaling
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- radar
+- satellite
+- nwp-analysis
+- stations
+status: research
+summary: Random forest fuses radar, IMERG and LDAPS into ~500 m daily precipitation over South Korea,
+  reaching r = 0.935 against ASOS observations.
+abstract: Accurate precipitation mapping is essential for effective disaster management; however, individual
+  radar, satellite, and numerical weather prediction products often struggle in the topographically complex
+  terrain of South Korea. This study proposes a high-resolution (~500 m) daily precipitation fusion framework
+  that integrates Korea Meteorological Administration (KMA) radar, Global Precipitation Measurement (GPM)
+  Integrated Multi-Satellite Retrievals for GPM (IMERG), and Local Data Assimilation and Prediction System
+  (LDAPS) data. The framework employs a Random Forest model augmented with a monthly Empirical Cumulative
+  Distribution Function (ECDF) correction. Auxiliary predictors are incorporated to enhance physical interpretability
+  and stability, including terrain attributes to represent orographic effects, land-cover information
+  to account for surface-related modulation of precipitation, and seasonal cyclic signals to capture regime-dependent
+  variability. These predictors complement dynamic precipitation inputs and enable the model to effectively
+  capture nonlinear spatiotemporal patterns, resulting in improved performance relative to individual
+  radar, IMERG, and LDAPS products. Evaluation against Automated Synoptic Observing System (ASOS) observations
+  yielded a correlation coefficient of 0.935 and a mean absolute error of 3.304 mm day−1 in a Leave-One-Year-Out
+  (LOYO) validation for 2024. Regional analyses further indicate substantial performance gains in complex
+  mountainous areas, including the Yeongdong–Yeongseo region, where the proposed framework markedly reduces
+  estimation errors under challenging winter conditions. Overall, the results demonstrate the potential
+  of the proposed fusion framework to provide robust, high-resolution precipitation estimates in regions
+  characterized by strong topographic and seasonal heterogeneity, supporting applications related to hazard
+  analysis and hydrometeorological assessment.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

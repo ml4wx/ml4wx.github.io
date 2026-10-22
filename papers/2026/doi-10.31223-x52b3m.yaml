@@ -1,0 +1,54 @@
+id: doi-10.31223-x52b3m
+title: 'Proof-of-Concept: Vertical Wind Profile Reconstruction from Ground-Based Optical Sensors Using
+  Machine Learning'
+authors:
+- Wolfgang Schneider
+date: '2026-03-01'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.31223/x52b3m
+  openalex: W7133122005
+links:
+  paper: https://doi.org/10.31223/x52b3m
+  pdf: https://eartharxiv.org/repository/object/11982/download/21511/
+topic: observations-remote-sensing
+topics:
+- local-forecasting
+type: model
+method:
+- classical-ml
+spatial:
+- local
+data:
+- satellite
+- stations
+status: research
+summary: Low-cost ground optical sensors with Random Forest estimate upper-air wind speeds across four
+  layers (training R² 0.75–0.91), though test performance overfits on 21 samples.
+abstract: 'Vertical wind profiles are critical for weather forecasting, aviation safety, and atmospheric
+  research, yet remain sparsely observed due to the high cost of radiosondes (€100–200 per launch) and
+  wind profiler radars (€100,000–1,000,000). We present a proof-of-concept demonstrating that ground-based
+  optical measurements from low-cost amateur radio sensors can predict upper-air wind speeds across multiple
+  atmospheric layers using machine learning. Two monitoring stations (DG2MCM-15 and DG2MCM-16) near Kempten,
+  Germany (47.73°N, 10.32°E, 686 m ASL) measured infrared sky temperature (MLX90614, €15), multi-channel
+  spectral radiance (AS7341, €8), and RGB photometry every 5 minutes during 15–21 February 2026. Random
+  Forest regression models trained on 21 coincident samples with EUMETSAT Meteosat Third Generation (MTG)
+  Atmospheric Motion Vectors achieved training R²=0.75–0.91 for wind speeds in the lower troposphere (1–3
+  km), middle troposphere (3–6 km), upper troposphere (6–9 km), and jetstream (9–12 km) layers. Feature
+  importance analysis revealed that infrared-derived cloud base height was the strongest predictor for
+  upper tropospheric winds (28% importance), while the spectral aerosol Ångström exponent ranked among
+  the top features (10% overall), validating the hypothesis that atmospheric optical properties encode
+  information about vertical structure and synoptic forcing. Surface wind speed contributed minimal predictive
+  power (4%), indicating decoupling between 10 m winds and upper-air flows. Test set performance showed
+  severe overfitting (R²_test = −2.59) due to small sample size, confirming that operational deployment
+  requires larger training datasets. However, the proof-of-concept successfully demonstrates feasibility:
+  total hardware cost of €250 per station enables dense observational networks impossible with traditional
+  instrumentation. A follow-up 6-month validation study (Paper 2b) is planned to assess generalizability
+  across seasons and weather regimes.'
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

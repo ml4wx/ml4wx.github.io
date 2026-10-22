@@ -1,0 +1,53 @@
+id: arxiv-2609.22126
+title: 'SolarFlowRefiner: Refinement-Aware Flow Matching for Surface Solar Radiation Downscaling'
+authors:
+- Udbhav Srivastava
+- Antonita Racheal
+- Yiheng Chen
+- Runlong Yu
+- Xinyue Ye
+date: '2026-08-21'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.22126'
+  openalex: W7214013718
+links:
+  paper: https://arxiv.org/abs/2609.22126
+  pdf: https://arxiv.org/pdf/2609.22126
+topic: downscaling
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+- cnn
+spatial:
+- regional
+data:
+- era5
+- satellite
+status: research
+summary: SolarFlowRefiner couples flow-matching generation with a refiner, jointly optimized, to downscale
+  ERA5 surface solar radiation using satellite channels on a day-blocked benchmark.
+abstract: 'High-resolution surface solar radiation (SSR) is important for solar forecasting and grid operation.
+  However, physically consistent reanalysis products are too coarse to resolve localized cloud-driven
+  variability. In this paper, we study a multisource downscaling task that reconstructs high-resolution
+  SolarCube SSR fields from coarse ERA5 radiative variables and co-registered satellite channels. The
+  task is challenging because a single ERA5 grid cell may contain both sunlit and cloud-shadowed regions.
+  As a result, the missing high-resolution correction can be spatially sharp and inherently ambiguous.
+  One-stage predictors often oversmooth these structures. Post-hoc refinement also introduces a stage-wise
+  mismatch: the generator is optimized independently, even though its output determines the refiner''s
+  initial state. We introduce SolarFlowRefiner, a refinement-aware flow-matching framework for SSR downscaling.
+  A conditional FlowMatch generator first predicts a normalized correction to an upsampled ERA5 baseline.
+  The refiner is then trained on prediction-conditioned states between the current FlowMatch output and
+  the target residual. This exposes the refiner to the structured errors produced by the generator. The
+  refinement objective is also backpropagated through the FlowMatch sampler, allowing generation and correction
+  to be jointly optimized for the final reconstruction. Experiments on a day-blocked ERA5--SolarCube benchmark
+  show consistent improvements over standalone generation and post-hoc refinement. More broadly, SolarFlowRefiner
+  provides a general strategy for coupling generative predictors with iterative correctors.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,61 @@
+id: arxiv-2409.16507
+title: Center-fixing of tropical cyclones using uncertainty-aware deep learning applied to high-temporal-resolution
+  geostationary satellite imagery
+authors:
+- Ryan Lagerquist
+- Galina Chirokova
+- Robert DeMaria
+- Mark DeMaria
+- Imme Ebert-Uphoff
+date: '2024-09-24'
+year: 2024
+venue: Weather and Forecasting
+venue_type: journal
+ids:
+  arxiv: '2409.16507'
+  doi: 10.1175/waf-d-24-0187.1
+  openalex: W4414736080
+links:
+  paper: https://doi.org/10.1175/waf-d-24-0187.1
+  pdf: https://arxiv.org/pdf/2409.16507
+orgs:
+- colorado-state-university
+- noaa
+topic: extremes-hazards
+topics:
+- observations-remote-sensing
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- global
+data:
+- satellite
+status: pre-operational
+summary: GeoCenter uses uncertainty-aware deep learning on geostationary IR animations to locate tropical
+  cyclone centers with 26.6 km mean error, matching microwave-based ARCHER-2 performance.
+abstract: Determining the location of a tropical cyclone's (TC) surface circulation center -- "center-fixing"
+  -- is a critical first step in the TC-forecasting process, affecting current/future estimates of track,
+  intensity, and structure. Despite a recent increase in automated center-fixing methods, only one such
+  method (ARCHER-2) is operational, and its best performance is achieved when using microwave or scatterometer
+  data, which are often unavailable. We develop a deep-learning algorithm called GeoCenter; besides a
+  few scalars in the operational Automated Tropical Cyclone Forecasting System, it relies only on geostationary
+  infrared (IR) satellite imagery, which is available for all TC basins at high frequency (10 min) and
+  low latency (< 10 min) during both day and night. GeoCenter ingests an animation (time series) of IR
+  images, including 9 channels at lag times up to 4 hours. The animation is centered at a "first guess"
+  location, offset from the true TC-center location by 48 km on average and sometimes > 100 km; GeoCenter
+  is tasked with correcting this offset. On an independent testing dataset, GeoCenter achieves a mean/median/RMS
+  (root mean square) error of 26.6/22.2/32.4 km for all systems, 24.7/20.8/30.0 km for tropical systems,
+  and 14.6/12.5/17.3 km for category-2--5 hurricanes. These values are similar to ARCHER-2 errors with
+  microwave or scatterometer data, and better than ARCHER-2 errors when only IR data are available. GeoCenter
+  also performs skillful uncertainty quantification, producing a well calibrated ensemble of 150 TC-center
+  locations. Furthermore, all predictors used by GeoCenter are available in real time, which would make
+  GeoCenter easy to implement operationally every 10 min.
+significance: 4
+cited_by: 2
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

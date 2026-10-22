@@ -1,0 +1,47 @@
+id: doi-10.1038-s41598-026-42553-5
+title: Improving multi-variable weather forecasting with spatiotemporal feature interaction and large-kernel
+  modeling
+authors:
+- Yuankang Ye
+- Jiaen Fei
+- Feng Gao
+date: '2026-03-11'
+year: 2026
+venue: Scientific Reports
+venue_type: journal
+ids:
+  doi: 10.1038/s41598-026-42553-5
+  openalex: W7135030420
+links:
+  paper: https://doi.org/10.1038/s41598-026-42553-5
+  pdf: https://www.nature.com/articles/s41598-026-42553-5_reference.pdf
+topic: global-medium-range
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- short
+data:
+- other
+status: research
+summary: NLKRNN combines large-kernel convolutions and branch-crossing attention to jointly forecast temperature,
+  dew point and winds on a custom dataset, beating spatiotemporal baselines.
+abstract: Accurate and timely weather forecasting is vital for sectors such as agriculture, aviation,
+  and disaster response. While recent advances in deep learning have enabled data-driven forecasting models,
+  most existing methods rely on autoregressive prediction of single variables, overlooking complex interdependencies
+  among multiple meteorological factors. To address this limitation, we propose a novel multi-variable
+  coupled forecasting model that captures both nonlinear interactions and spatiotemporal dynamics. Specifically,
+  we introduce a Branch-Crossing Attention Fusion strategy within a Multi-factor Fusion Network to enhance
+  feature integration. To better model long-range dependencies and differentiate regional weather patterns,
+  we design a Novel Large Kernel Convolution module as a substitute for traditional convolutions in recurrent
+  networks. Built upon these innovations, we develop NLKRNN, a spatiotemporal prediction network based
+  on the NLK-LSTM unit. Experiments on a custom meteorological dataset covering temperature, dew point,
+  and U/V wind components demonstrate that our approach achieves consistently improved performance compared
+  with representative spatiotemporal forecasting baselines in multi-variable weather forecasting.
+significance: 2
+cited_by: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

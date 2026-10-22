@@ -1,0 +1,56 @@
+id: doi-10.3390-atmos16080941
+title: Estimating Planetary Boundary Layer Height over Central Amazonia Using Random Forest
+authors:
+- Paulo R. P. Silva
+- Rayonil Gomes Carneiro
+- Alison de Oliveira Moraes
+- Cléo Quaresma Dias‐Júnior
+- Gilberto Fisch
+date: '2025-08-05'
+year: 2025
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos16080941
+  openalex: W4413039245
+links:
+  paper: https://doi.org/10.3390/atmos16080941
+  pdf: https://www.mdpi.com/2073-4433/16/8/941/pdf?version=1754407473
+topic: observations-remote-sensing
+type: application
+method:
+- classical-ml
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Random Forest estimates Amazon boundary-layer height from surface meteorology alone with RMSE
+  375.9 m, outperforming five other models; SHAP shows hour and temperature matter most.
+abstract: This study investigates the use of a Random Forest (RF), an artificial intelligence (AI) model,
+  to estimate the planetary boundary layer height (PBLH) over Central Amazonia from climatic elements
+  data collected during the GoAmazon experiment, held in 2014 and 2015, as it is a key metric for air
+  quality, weather forecasting, and climate modeling. The novelty of this study lies in estimating PBLH
+  using only surface-based meteorological observations. This approach is validated against remote sensing
+  measurements (e.g., LIDAR, ceilometer, and wind profilers), which are seldom available in the Amazon
+  region. The dataset includes various meteorological features, though substantial missing data for the
+  latent heat flux (LE) and net radiation (Rn) measurements posed challenges. We addressed these gaps
+  through different data-cleaning strategies, such as feature exclusion, row removal, and imputation techniques,
+  assessing their impact on model performance using the Root Mean Square Error (RMSE), Mean Absolute Error
+  (MAE), and r2 metrics. The best-performing strategy achieved an RMSE of 375.9 m. In addition to the
+  RF model, we benchmarked its performance against Linear Regression, Support Vector Regression, LightGBM,
+  XGBoost, and a Deep Neural Network. While all models showed moderate correlation with observed PBLH,
+  the RF model outperformed all others with statistically significant differences confirmed by paired
+  t-tests. SHAP (SHapley Additive exPlanations) values were used to enhance model interpretability, revealing
+  hour of the day, air temperature, and relative humidity as the most influential predictors for PBLH,
+  underscoring their critical role in atmospheric dynamics in Central Amazonia. Despite these optimizations,
+  the model underestimates the PBLH values—by an average of 197 m, particularly in the spring and early
+  summer austral seasons when atmospheric conditions are more variable. These findings emphasize the importance
+  of robust data preprocessing and higtextight the potential of ML models for improving PBLH estimation
+  in data-scarce tropical environments.
+significance: 2
+cited_by: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

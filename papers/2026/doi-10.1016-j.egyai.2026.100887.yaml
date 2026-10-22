@@ -1,0 +1,59 @@
+id: doi-10.1016-j.egyai.2026.100887
+title: Improving day-ahead probabilistic solar irradiance forecasting via shape-prior flow matching for
+  numerical weather prediction downscaling
+authors:
+- Jing Tao
+- Shanlin Chen
+- Jinqing Peng
+- Mengying Li
+date: '2026-09-04'
+year: 2026
+venue: Energy and AI
+venue_type: journal
+ids:
+  doi: 10.1016/j.egyai.2026.100887
+  openalex: W7208768616
+links:
+  paper: https://doi.org/10.1016/j.egyai.2026.100887
+  pdf: https://www.sciencedirect.com/science/article/pii/S2666546826002132/pdf
+topic: downscaling
+topics:
+- probabilistic-ensembles
+- applications-impacts
+type: model
+method:
+- diffusion
+- transformer
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+- satellite
+- stations
+status: research
+summary: Shape-prior conditional flow matching turns hourly NWP into probabilistic 15-min solar irradiance
+  trajectories, cutting CRPS by up to 10.9% versus the strongest baseline.
+abstract: Accurate day-ahead solar irradiance forecasting is essential for photovoltaic integration, reserve
+  scheduling, and energy storage operation. However, operational Numerical Weather Prediction (NWP) products
+  are commonly available at hourly resolution, which limits their ability to represent sub-hourly irradiance
+  ramps and cloud-induced fluctuations relevant to power system operation. To address this limitation,
+  this study proposes Shape-Prior conditional Flow Matching (SPFlow), a probabilistic temporal-downscaling
+  framework that converts hourly NWP forecasts into 15-min irradiance trajectories. SPFlow first employs
+  a deterministic SPTransformer to construct a physically informed high-resolution shape prior from coarse
+  NWP forecasts, satellite-derived meteorological variables, clear-sky irradiance, and site information.
+  Conditioned on this informative prior, a conditional flow-matching model probabilistically refines the
+  deterministic trajectory to represent unresolved sub-hourly variability and forecast uncertainty. Experiments
+  on the SURFRAD dataset show that SPFlow consistently outperforms statistical, deterministic deep-learning,
+  and probabilistic generative baselines. It reduces the continuous ranked probability score by up to
+  10.9% relative to the strongest probabilistic baseline, improves sub-hourly ramp representation, produces
+  prediction intervals with near-nominal empirical coverage, and demonstrates promising zero-shot transferability
+  to unseen locations. These results indicate that combining physically informed shape-prior construction
+  with conditional flow-based probabilistic refinement provides an effective approach for converting coarse
+  NWP forecasts into operationally useful sub-hourly probabilistic solar forecasts.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

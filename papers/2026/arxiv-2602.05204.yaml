@@ -1,0 +1,53 @@
+id: arxiv-2602.05204
+title: Extreme Weather Nowcasting via Local Precipitation Pattern Prediction
+authors:
+- Changhoon Song
+- Teng Yuan Chang
+- Youngjoon Hong
+date: '2026-02-05'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2602.05204'
+  openalex: W7127914628
+links:
+  paper: https://arxiv.org/abs/2602.05204
+  pdf: https://arxiv.org/pdf/2602.05204
+  code: https://github.com/tony890048/exPreCast
+topic: nowcasting
+topics:
+- extremes-hazards
+type: model
+method:
+- transformer
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: exPreCast is an efficient deterministic radar nowcasting model with a balanced Korean extreme-rainfall
+  dataset, achieving state-of-the-art results on SEVIR, MeteoNet and KMA data.
+abstract: Accurate forecasting of extreme weather events such as heavy rainfall or storms is critical
+  for risk management and disaster mitigation. Although high-resolution radar observations have spurred
+  extensive research on nowcasting models, precipitation nowcasting remains particularly challenging due
+  to pronounced spatial locality, intricate fine-scale rainfall structures, and variability in forecasting
+  horizons. While recent diffusion-based generative ensembles show promising results, they are computationally
+  expensive and unsuitable for real-time applications. In contrast, deterministic models are computationally
+  efficient but remain biased toward normal rainfall. Furthermore, the benchmark datasets commonly used
+  in prior studies are themselves skewed--either dominated by ordinary rainfall events or restricted to
+  extreme rainfall episodes--thereby hindering general applicability in real-world settings. In this paper,
+  we propose exPreCast, an efficient deterministic framework for generating finely detailed radar forecasts,
+  and introduce a newly constructed balanced radar dataset from the Korea Meteorological Administration
+  (KMA), which encompasses both ordinary precipitation and extreme events. Our model integrates local
+  spatiotemporal attention, a texture-preserving cubic dual upsampling decoder, and a temporal extractor
+  to flexibly adjust forecasting horizons. Experiments on established benchmarks (SEVIR and MeteoNet)
+  as well as on the balanced KMA dataset demonstrate that our approach achieves state-of-the-art performance,
+  delivering accurate and reliable nowcasts across both normal and extreme rainfall regimes.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

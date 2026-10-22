@@ -1,0 +1,54 @@
+id: arxiv-2410.04135
+title: 'IceCloudNet: 3D reconstruction of cloud ice from Meteosat SEVIRI'
+authors:
+- Kai Jeggle
+- Mikolaj Czerkawski
+- Federico Serva
+- Bertrand Le Saux
+- David Neubauer
+- Ulrike Lohmann
+date: '2024-10-05'
+year: 2024
+venue: Artificial Intelligence for the Earth Systems
+venue_type: journal
+ids:
+  arxiv: '2410.04135'
+  doi: 10.1175/aies-d-24-0098.1
+  openalex: W4414122897
+links:
+  paper: https://doi.org/10.1175/aies-d-24-0098.1
+  pdf: https://arxiv.org/pdf/2410.04135
+orgs:
+- eth-zurich
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+- gan-vae
+spatial:
+- regional
+data:
+- satellite
+- other
+status: research
+summary: ConvNeXt U-Net with PatchGAN predicts vertical ice water content from SEVIRI, producing a decade-long
+  3D cloud ice dataset beyond DARDAR's lifetime.
+abstract: IceCloudNet is a novel method based on machine learning able to predict high-quality vertically
+  resolved cloud ice water contents (IWC) and ice crystal number concentrations (N$_\textrm{ice}$). The
+  predictions come at the spatio-temporal coverage and resolution of geostationary satellite observations
+  (SEVIRI) and the vertical resolution of active satellite retrievals (DARDAR). IceCloudNet consists of
+  a ConvNeXt-based U-Net and a 3D PatchGAN discriminator model and is trained by predicting DARDAR profiles
+  from co-located SEVIRI images. Despite the sparse availability of DARDAR data due to its narrow overpass,
+  IceCloudNet is able to predict cloud occurrence, spatial structure, and microphysical properties with
+  high precision. The model has been applied to ten years of SEVIRI data, producing a dataset of vertically
+  resolved IWC and N$_\textrm{ice}$ of clouds containing ice with a 3 kmx3 kmx240 mx15 minute resolution
+  in a spatial domain of 30°W to 30°E and 30°S to 30°N. The produced dataset increases the availability
+  of vertical cloud profiles, for the period when DARDAR is available, by more than six orders of magnitude
+  and moreover, IceCloudNet is able to produce vertical cloud profiles beyond the lifetime of the recently
+  ended satellite missions underlying DARDAR.
+significance: 4
+cited_by: 2
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

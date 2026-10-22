@@ -1,0 +1,48 @@
+id: doi-10.5515-kjkiees.2025.36.11.1063
+title: Modeling of Atmospheric Refractivity Using Deep Learning-Based Data Assimilation
+authors:
+- Jun‐Mo Yang
+- Do Hyeon Lee
+- Changseong Kim
+- Won Gu Seo
+- Seul-Gi Park
+- Yong Bae Park
+date: '2025-11-01'
+year: 2025
+venue: The Journal of Korean Institute of Electromagnetic Engineering and Science
+venue_type: journal
+ids:
+  doi: 10.5515/kjkiees.2025.36.11.1063
+  openalex: W4417224988
+links:
+  paper: https://doi.org/10.5515/kjkiees.2025.36.11.1063
+  pdf: http://www.jkiees.org/download/download_pdf?pid=jkiees-36-11-1063
+topic: data-assimilation
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- era5
+- stations
+status: research
+summary: A 3D U-Net reconstructs Korean atmospheric refractivity from 11 radiosonde stations (r=0.846),
+  running in 0.3 s, thousands of times faster than 4D-Var.
+abstract: In this study, we propose a deep learning-based data assimilation method for the real-time reconstruction
+  of 3D atmospheric refractivity over the Korean Peninsula from radiosonde observations. Using a 3D U-Net-based
+  CNN model, we reconstructed the atmospheric state across the entire Korean Peninsula on a 53×43×37 grid
+  using data from only 11 observation stations (0.48 % of the total grid points). The model, trained on
+  394,488 ERA5 reanalysis datasets from 1980 to 2024, achieved an average correlation coefficient of 0.846
+  for five meteorological variables, outperforming traditional spatial interpolation methods. Notably,
+  relative humidity, crucial for atmospheric refractivity calculations, achieved an RMSE of 14.8 %, meeting
+  practical requirements. Furthermore, the model performs inference within 0.3 seconds—thousands of times
+  faster than 4D-Var—even with limited computing resources (4 GB memory). Based on this performance and
+  computational efficiency, the proposed model provides a practical solution for applications requiring
+  real-time atmospheric environment, such as electronic warfare and radar operations.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

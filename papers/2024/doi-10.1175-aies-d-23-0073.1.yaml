@@ -1,0 +1,63 @@
+id: doi-10.1175-aies-d-23-0073.1
+title: A Data-Driven Probabilistic Network Approach to Assess Model Similarity in CMIP Ensembles
+authors:
+- Catharina Elisabeth Graafland
+- Swen Brands
+- José Manuel Gutiérrez
+date: '2024-03-14'
+year: 2024
+venue: Artificial Intelligence for the Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1175/aies-d-23-0073.1
+  openalex: W4392817900
+links:
+  paper: https://doi.org/10.1175/aies-d-23-0073.1
+  pdf: https://journals.ametsoc.org/downloadpdf/view/journals/aies/3/2/AIES-D-23-0073.1.pdf
+topic: climate-analysis-attribution
+topics:
+- benchmarks-data-eval
+type: model
+method:
+- classical-ml
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+- era5
+status: research
+summary: Probabilistic network models trained on CMIP5 surface temperature provide a data-driven measure
+  of model similarity that matches traditional expert-based results.
+abstract: Abstract The different phases of the Coupled Model Intercomparison Project (CMIP) provide ensembles
+  of past, present, and future climate simulations crucial for climate change impact and adaptation activities.
+  These ensembles are produced using multiple global climate models (GCMs) from different modeling centers
+  with some shared building blocks and interdependencies. Applications typically follow the “model democracy”
+  approach which might have significant implications in the resulting products (e.g., large bias and low
+  spread). Thus, quantifying model similarity within ensembles is crucial for interpreting model agreement
+  and multimodel uncertainty in climate change studies. The classical methods used for assessing GCM similarity
+  can be classified into two groups. The a priori approach relies on expert knowledge about the components
+  of these models, while the a posteriori approach seeks similarity in the GCMs’ output variables and
+  is thus data-driven. In this study, we apply probabilistic network models (PNMs), a well-established
+  machine learning technique, as a new a posteriori method to measure intermodel similarities. The proposed
+  methodology is applied to surface temperature fields of the historical experiments from the CMIP5 multimodel
+  ensemble and different reanalysis gridded datasets. PNMs are able to learn the complex spatial dependency
+  structures present in climate data, including teleconnections operating on multiple spatial scales,
+  characteristic of the underlying GCM. A distance metric building on the resulting PNMs is applied to
+  characterize GCM model dependencies. The results of this approach are in line with those obtained with
+  more traditional methods but have further explanatory potential building on probabilistic model querying.
+  Significance Statement The present study proposes the use of probabilistic network models (PNMs) to
+  quantify model similarity within ensembles of global climate models (GCMs). This is crucial for interpreting
+  model agreement and multimodel uncertainty in climate change studies. When applied to climate data (gridded
+  global surface temperature in this study), PNMs encode the relevant spatial dependencies (local and
+  remote connections). Similarities among the PNMs resulting from different GCMs can be quantified and
+  are shown to capture similar GCM formulations reported in previous studies. Differently to other machine
+  learning methods previously applied to this problem, PNMs are fully explainable (allowing probabilistic
+  querying) and are applicable to high-dimensional gridded raw data.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

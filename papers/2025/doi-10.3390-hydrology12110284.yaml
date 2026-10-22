@@ -1,0 +1,55 @@
+id: doi-10.3390-hydrology12110284
+title: Tail-Aware Forecasting of Precipitation Extremes Using STL-GEV and LSTM Neural Networks
+authors:
+- Haoyu Niu
+- Samantha Murray
+- Fouad H. Jaber
+- Bardia Heidari Haratmeh
+- Nick G. Duffield
+date: '2025-10-30'
+year: 2025
+venue: Hydrology
+venue_type: journal
+ids:
+  doi: 10.3390/hydrology12110284
+  openalex: W4415719964
+links:
+  paper: https://doi.org/10.3390/hydrology12110284
+  pdf: https://www.mdpi.com/2306-5338/12/11/284/pdf?version=1761828008
+topic: extremes-hazards
+topics:
+- local-forecasting
+type: model
+method:
+- rnn
+- classical-ml
+timescale:
+- seasonal
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Hybrid GEV-LSTM model with a tail-weighted loss forecasts monthly maximum precipitation extremes
+  via CDF values, aimed at identifying anomalously high precipitation months.
+abstract: Accurate prediction of extreme precipitation events remains a critical challenge in hydrological
+  forecasting due to their rare occurrence and complex statistical behavior. These extreme events are
+  becoming more frequent and intense under the influence of climate change. Their unpredictability not
+  only hampers water resource management and disaster preparedness but also leads to disproportionate
+  impacts on vulnerable communities and critical infrastructure. Therefore, in this article, we introduce
+  a hybrid modeling framework that combines Generalized Extreme Value (GEV) distribution fitting with
+  deep learning models to forecast monthly maximum precipitation extremes. Long Short-term Memory models
+  (LSTMs) are proposed to predict the cumulative distribution (CDF) values of the GEV-fitted remainder
+  series. This approach transforms the forecasting problem into a bounded probabilistic learning task,
+  improving model stability and interpretability. Crucially, a tail-weighted loss function is designed
+  to emphasize rare but high-impact events in the training process, addressing the inherent class imbalance
+  in extreme precipitation predictions. Results demonstrate strong predictive performance in both the
+  CDF and residual domains, with the proposed model accurately identifying anomalously high precipitation
+  months. This hybrid GEV–deep learning approach offers a promising solution for early warning systems
+  and long-term climate resilience planning in hydrologically sensitive regions.
+significance: 3
+cited_by: 4
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

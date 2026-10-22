@@ -1,0 +1,49 @@
+id: arxiv-2504.14473
+title: 'Invariance-embedded Machine Learning Sub-grid-scale Stress Models for Meso-scale Hurricane Boundary
+  Layer Flow Simulation I: Model Development and $\textit{a priori}$ Studies'
+authors:
+- Md Badrul Hasan
+- Meilin Yu
+- Tim Oates
+date: '2025-04-20'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2504.14473'
+links:
+  paper: https://arxiv.org/abs/2504.14473
+  pdf: https://arxiv.org/pdf/2504.14473
+topic: hybrid-parameterization
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- km-scale-sim
+status: research
+summary: Invariance-embedded ML subgrid-scale stress models with TKE backscatter improve LES of hurricane
+  boundary layers, boosting classification F1 by about 17% and beating the dynamic Smagorinsky model a
+  priori.
+abstract: 'This study develops invariance-embedded machine learning sub-grid-scale (SGS) stress models
+  admitting turbulence kinetic energy (TKE) backscatter towards more accurate large eddy simulation (LES)
+  of meso-scale turbulent hurricane boundary layer flows. The new machine learning SGS model consists
+  of two parts: a classification model used to distinguish regions with either strong energy cascade or
+  energy backscatter from those with mild TKE transfer and a regression model used to calculate SGS stresses
+  in regions with strong TKE transfer. To ease model implementation in computational fluid dynamics (CFD)
+  solvers, the Smagorinsky model with a signed coefficient $C_s$, where a positive value indicates energy
+  cascade while a negative one indicates energy backscatter, is employed as the carrier of the machine
+  learning model. To improve its robustness and generality, both physical invariance and geometric invariance
+  features of turbulent flows are embedded into the model input for classification and regression, and
+  the signed Smagorinsky model coefficient is used as the output of the regression model. Different machine-learning
+  methods and input setups have been used to test the classification model''s performance. The F1-scores,
+  which measure balanced precision and recall of a model, of the classification models with physical and
+  geometric invariance embedded can be improved by about $17\%$ over those without considering geometric
+  invariance. Regression models based on ensemble neural networks have demonstrated superior performance
+  in predicting the signed Smagorinsky model coefficient, exceeding that of the dynamic Smagorinsky model
+  in $\textit{a priori}$ tests.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,55 @@
+id: arxiv-2609.17175
+title: 'IRENE: A Convolutional GRU Ensemble Model for Radar Precipitation Nowcasting over Italy'
+authors:
+- Alessandro Camilletti
+- Gabriele Franch
+- Elena Tomasi
+- Marco Cristoforetti
+date: '2026-09-15'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.17175'
+  openalex: W7213408118
+links:
+  paper: https://arxiv.org/abs/2609.17175
+  pdf: https://arxiv.org/pdf/2609.17175
+topic: nowcasting
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- rnn
+- gan-vae
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: pre-operational
+summary: IRENE, a ConvGRU ensemble with GAN and spectral variants, beats STEPS and DGMR on CRPS at all
+  lead times for 1 km Italian radar nowcasting.
+abstract: 'We present IRENE (Italian Radar Ensemble Nowcasting Experiment), a deep learning model for
+  probabilistic short-range precipitation nowcasting over the Italian domain at \SI{1}{km} spatial and
+  5 min temporal resolution. IRENE adopts an encoder--forecaster architecture built on multi-scale Convolutional
+  Gated Recurrent Units (ConvGRUs), trained on the national radar composite produced by the Italian Civil
+  Protection Department (DPC). An importance-sampling scheme focuses training on precipitation-relevant
+  events, while the almost-fair Continuous Ranked Probability Score (afCRPS) is adopted as the primary
+  probabilistic loss function. Two additional training configurations are proposed: an adversarial (GAN)
+  variant, IRENE-GAN, designed to improve the spatial sharpness of the generated forecasts, and a spectrally
+  constrained variant, IRENE-GAN-RAPSD, in which the adversarial objective is complemented by an explicit
+  penalty on the radially averaged power spectral density. The three configurations are evaluated against
+  the stochastic extrapolation method STEPS and the pre-trained deep learning model DGMR. All IRENE configurations
+  attain a lower Continuous Ranked Probability Score than both benchmarks at every lead time and rank
+  histograms closer to uniformity, indicating better probabilistic skill and ensemble calibration. In
+  terms of ensemble-mean mean absolute error the advantage is confined to the first 90 min, beyond which
+  the strongly damped DGMR fields and, to a lesser extent, STEPS become competitive. Spectral analysis
+  shows that the adversarial training removes the progressive loss of small-scale variance exhibited by
+  IRENE, at the cost of an excess of fine-scale power at long lead times that the spectral penalty only
+  partially controls.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

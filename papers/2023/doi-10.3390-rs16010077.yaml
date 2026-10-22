@@ -1,0 +1,53 @@
+id: doi-10.3390-rs16010077
+title: Machine Learning-Based Estimation of Tropical Cyclone Intensity from Advanced Technology Microwave
+  Sounder Using a U-Net Algorithm
+authors:
+- Zichao Liang
+- Yong‐Keun Lee
+- Christopher Grassotti
+- Lin Lin
+- Quanhua Liu
+date: '2023-12-24'
+year: 2023
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs16010077
+  openalex: W4390175147
+links:
+  paper: https://doi.org/10.3390/rs16010077
+  pdf: https://www.mdpi.com/2072-4292/16/1/77/pdf?version=1703410902
+orgs:
+- noaa
+topic: observations-remote-sensing
+topics:
+- extremes-hazards
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- satellite
+- era5
+status: research
+summary: U-Net retrieves ocean surface pressure and wind speed in tropical cyclones from NOAA-20 ATMS
+  microwave sounder, with wind-speed bias of 0.15 m/s against ERA5.
+abstract: A U-Net algorithm was used to retrieve surface pressure and wind speed over the ocean within
+  tropical cyclones (TCs) and their neighboring areas using NOAA-20 Advanced Technology Microwave Sounder
+  (ATMS) reprocessed Sensor Data Record (SDR) brightness temperatures (TBs) and geolocation information.
+  For TC locations, International Best Track Archive for Climate Stewardship (IBTrACS) data have been
+  used over the North Atlantic Ocean and West Pacific Ocean between 2018 and 2021. The European Centre
+  for Medium-Range Weather Forecasts (ECMWF) Reanalysis v5 (ERA5) surface pressure and wind speed were
+  employed as reference labels. Preliminary results demonstrated that the visualizations for wind speed
+  and pressure matched the prediction and ERA5 location. The residual biases and standard deviations between
+  the predicted and reference labels were about 0.15 m/s and 1.95 m/s, respectively, for wind speed and
+  0.48 hPa and 2.67 hPa, respectively, for surface pressure, after applying cloud screening for each ATMS
+  pixel. This indicates that the U-Net model is effective for surface wind speed and surface pressure
+  estimates over general ocean conditions.
+significance: 3
+cited_by: 4
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

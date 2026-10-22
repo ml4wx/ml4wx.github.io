@@ -1,0 +1,52 @@
+id: doi-10.5194-essd-2026-337
+title: 'CMIP6-MedPlus dataset: climate projections for the Mediterranean region using statistical downscaling'
+authors:
+- Valeria Todaro
+- Daniele Secci
+- Marco D’Oria
+- Maria Giovanna Tanda
+date: '2026-07-28'
+year: 2026
+venue: Earth System Science Data Discussions
+venue_type: journal
+ids:
+  doi: 10.5194/essd-2026-337
+  openalex: W7171511561
+links:
+  paper: https://doi.org/10.5194/essd-2026-337
+topic: downscaling
+topics:
+- benchmarks-data-eval
+type: benchmark
+method:
+- cnn
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+- era5
+status: research
+summary: CMIP6-MedPlus provides 0.25° daily Mediterranean projections from CNN super-resolution plus quantile
+  delta mapping bias correction of five GCMs under two SSPs.
+abstract: 'Abstract. Global climate-model projections are often too coarse to represent the spatial variability
+  required for regional assessments. This study presents CMIP6-MedPlus, an open-access climate projection
+  dataset for an extended Mediterranean region, available at https://doi.org/10.5281/zenodo.17898529 (Todaro
+  et al., 2025). It provides daily precipitation and near-surface air temperature at 0.25° spatial resolution
+  for the period 1985–2100, based on five Coupled Model Intercomparison Project Phase 6 (CMIP6) Global
+  Climate Models (GCMs) and two Shared Socioeconomic Pathways (SSP1-2.6 and SSP3-7.0). CMIP6-MedPlus was
+  generated using a statistical downscaling framework that combines deep learning–based spatial refinement
+  with bias correction. First, a Convolutional Neural Network (CNN)-based method was applied to enhance
+  spatial resolution: ERA5 reanalysis fields were upscaled to the GCM resolution and used to train the
+  CNN to learn the mapping between coarse- and fine-scale representations of the same variable. The trained
+  CNN was then applied to GCM outputs to generate more spatially detailed fields. Second, quantile delta
+  mapping was applied to the CNN-refined fields to correct systematic biases relative to ERA5 while preserving
+  climate change signals. The resulting dataset provides spatially consistent regional climate information
+  suitable for climate-impact across Mediterranean and neighbouring areas and serves as a basis for subsequent
+  refinement at basin and local scales.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

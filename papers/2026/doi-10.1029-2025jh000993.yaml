@@ -1,0 +1,70 @@
+id: doi-10.1029-2025jh000993
+title: 'Distribution‐Guided Ensemble Postprocessing for S2S Precipitation Forecasts: A Seamless Pathway
+  Using Deep Generative Models'
+authors:
+- Wen Shi
+- Baoxiang Pan
+- J Huang
+- Tingfeng Dou
+- Jie Feng
+- Huihui Yuan
+- Anran Wang
+- Xin Xia
+- Lei Huang
+- Yong Luo
+date: '2026-05-06'
+year: 2026
+venue: Journal of Geophysical Research Machine Learning and Computation
+venue_type: journal
+ids:
+  doi: 10.1029/2025jh000993
+  openalex: W7160395968
+links:
+  paper: https://doi.org/10.1029/2025jh000993
+orgs:
+- cma
+- fudan-university
+- iap-cas
+- tsinghua-university
+topic: post-processing
+topics:
+- s2s-seasonal
+type: model
+method:
+- gan-vae
+timescale:
+- s2s
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: GAN-based post-processing of ECMWF S2S hindcasts over Southern China extends skillful probabilistic
+  precipitation forecasts to week 3, improving CRPS and Brier score.
+abstract: Abstract Atmosphere‐ocean‐land coupled forecasting systems, despite their comprehensiveness,
+  face substantial challenges in the “predictability desert” at subseasonal to seasonal (S2S) timescales,
+  particularly for precipitation—a variable crucial for socioeconomic activities yet of stunning spatiotemporal
+  variance. Post‐processing methods developed for numerical weather prediction and climate projections
+  are not directly applicable to S2S forecasting, as they cannot distinctively address initialization
+  errors, chaos‐induced state uncertainty growth, and model systematic biases. Additionally, regression‐based
+  deep learning corrections introduce smoothing artifacts and ensemble under‐dispersion, limiting their
+  ability to capture key processes and extreme events. We propose an integrated framework using Generative
+  Adversarial Networks (GANs) for ensemble post‐processing. The approach exploits the ability of deep
+  generative models to represent high‐dimensional distributions, combining trajectory constraints from
+  short‐term forecasts with distributional constraints from long‐term climatology. In a case study using
+  ECMWF hindcasts over Southern China, our model calibrates ensemble forecasts while enhancing both ensemble
+  size and spatial resolution. The post‐processed forecasts maintain deterministic skill (anomaly correlation
+  coefficient) while showing improved probabilistic forecast metrics, such as Continuous Ranked Probability
+  Score (CRPS) and Brier score, extending the skillful probabilistic forecast horizon to week 3. The predicted
+  fields demonstrate improved spatial distribution matching and maintain linear covariance across variables.
+  The framework demonstrates strong spread‐error correlations for effective advance error estimation,
+  and helps disentangle forecast uncertainties into propagated dynamical and post‐processing components,
+  each with distinct lead‐time dependencies. This unified framework demonstrates the potential to advance
+  seamless forecast capabilities while addressing the growing demand for high‐resolution, physically consistent
+  S2S products.
+significance: 4
+cited_by: 1
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

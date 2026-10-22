@@ -1,0 +1,60 @@
+id: doi-10.3390-atmos17101005
+title: 'Spatiotemporal Conditional Diffusion with a Vision-Language Model: Spatial Quality Modeling for
+  Adaptive Fusion of Radar Forecasts'
+authors:
+- Xin-Wei Qian
+- Yun-Fei Zhang
+- Lu Peng
+- Xing-Hai Zhang
+- Xin-Jue Peng
+- Jun-Kai Liu
+date: '2026-10-13'
+year: 2026
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos17101005
+  openalex: W7221709805
+links:
+  paper: https://doi.org/10.3390/atmos17101005
+  pdf: https://doi.org/10.3390/atmos17101005
+orgs:
+- cma
+topic: nowcasting
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+- llm
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Adaptive fusion of diffusion-generated radar candidates via a VLM-conditioned quality network
+  improves CSI at 30 dBZ to 0.259 versus max aggregation.
+abstract: Combining diffusion forecasts requires decisions about which candidates to retain and how to
+  preserve strong echoes. We propose STCD-VLM, which learns candidate subset quality for adaptive fusion
+  of radar nowcasts. Six observations condition spatiotemporal conditional diffusion (STCD) to generate
+  five candidate sequences covering 120 min. Radar descriptors and representations from a frozen Gemma
+  4 31B vision-language model (VLM) condition a shared quality network. The network evaluates all 31 nonempty
+  subsets and selects one for the complete sequence, combining its mean and pixelwise maximum. Evaluation
+  on 256 event groups from eight Chinese S-band radar collections yields critical success indices of 0.25871
+  and 0.12712 at 30 and 40 dBZ. Relative to five-candidate maximum aggregation, these scores increase
+  by 0.04108 and 0.02185, while false alarm ratios decrease by 0.08070 and 0.08203; 15 km fractions skill
+  scores improve by 0.08433 and 0.07822. Fixed five-candidate fusion accounts for most of the mean CSI
+  improvement over maximum aggregation. Adaptive selection adds 0.00170 to this mean under the same fusion
+  rule, with higher CSI30, lower false alarm ratios and slightly lower CSI40. A matched zero-VLM control
+  has similar principal score estimates, leaving the independent benefit of VLM inputs to be established.
+  These comparisons support a quality-guided fusion framework that improves strong-echo overlap and neighborhood
+  coverage agreement relative to maximum aggregation, while producing an event-specific forecast through
+  one sequence-wide subset decision.
+significance: 2
+cited_by: 0
+score: 18
+highlight: false
+added: '2026-10-22'
+source: snowball

@@ -1,0 +1,59 @@
+id: doi-10.3390-atmos17010061
+title: A Deep Learning Approach to Detecting Atmospheric Rivers in the Arctic
+authors:
+- Sinéad McGetrick
+- Hua Lu
+- Grzegorz Muszyński
+- Oscar Martínez‐Alvarado
+- Matthew Osman
+- Kyle S. Mattingly
+- Daniel Galea
+date: '2026-01-01'
+year: 2026
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos17010061
+  openalex: W7118032348
+links:
+  paper: https://doi.org/10.3390/atmos17010061
+orgs:
+- university-of-cambridge
+- university-of-reading
+topic: extremes-hazards
+topics:
+- observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- cmip
+- era5
+status: research
+summary: Trains a U-Net to detect Arctic atmospheric rivers in CANARI large-ensemble simulations, removing
+  threshold tuning and matching a rule-based detector's threshold sensitivity.
+abstract: The Arctic is warming rapidly, with atmospheric rivers (ARs) amplifying ice melt, extreme precipitation,
+  and abrupt temperature shifts. Detecting ARs in the Arctic remains challenging, because AR detection
+  algorithms designed for mid-latitudes perform poorly in polar regions. This study introduces a regional
+  deep learning (DL) image segmentation model for Arctic AR detection, leveraging large-ensemble (LE)
+  climate simulations. We analyse historical simulations from the Climate Change in the Arctic and North
+  Atlantic Region and Impacts on the UK (CANARI) project, which provides a large, internally consistent
+  sample of AR events at 6-hourly resolution and enables a close comparison of AR climatology across model
+  and reanalysis data. A polar-specific, rule-based AR detection algorithm was adapted to label ARs in
+  simulated data using multiple thresholds, providing training data for the segmentation model and supporting
+  sensitivity analyses. U-Net-based models are trained on integrated water vapour transport, total column
+  water vapour, and 850 hPa wind speed fields. We quantify how AR identification depends on threshold
+  choices in the rule-based algorithm and show how these propagate to the U-Net-based models. This study
+  represents the first use of the CANARI-LE for Arctic AR detection and introduces a unified framework
+  combining rule-based and DL methods to evaluate model sensitivity and detection robustness. Our results
+  demonstrate that DL segmentation achieves robust skill and eliminates the need for threshold tuning,
+  providing a consistent and transferable framework for detecting Arctic ARs. This unified approach advances
+  high-latitude moisture transport assessment and supports improved evaluation of Arctic extremes under
+  climate change.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,58 @@
+id: arxiv-2610.19994
+title: 'PrecipCorrDiff: A Deep Learning Framework for Generating 0.0625$^\circ$ High-Resolution IMD Gridded
+  Precipitation Data'
+authors:
+- Bipin Kumar
+- Rajib Chattopadhyay
+- Harsh P. Bachhav
+- Jannu
+- Bhupendra Bahadur Singh
+- Ramesh Ragala
+- Ananda Kumar Das
+- Manish Modani
+- Thara Prabhakaran
+- Mrutyunjay Mohapatra
+date: '2026-10-14'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.19994'
+  openalex: W7222189279
+links:
+  paper: https://arxiv.org/abs/2610.19994
+  pdf: https://arxiv.org/pdf/2610.19994
+orgs:
+- nvidia
+topic: downscaling
+topics:
+- extremes-hazards
+type: model
+method:
+- diffusion
+spatial:
+- regional
+data:
+- stations
+status: research
+summary: PrecipCorrDiff downscales 0.25-degree gridded precipitation to 0.0625-degree IMD fields, removing
+  the SRGAN negative bias and improving extreme rainfall representation over India.
+abstract: High-resolution precipitation datasets are essential for weather forecasting, hydrological modeling,
+  and climate risk assessment, yet observation-based gridded products often lack the spatial detail required
+  for regional applications. Here we present PrecipCorrDiff, a diffusion-based downscaling framework built
+  by modifying the original corrector diffusion based archetecture that incorporates a customized loss
+  function and a multi-scale residual generation strategy to improve the precipitation especially the
+  representation of extremes. PrecipCorrDiff generates 0.0625° resolution India Meteorological Department
+  (IMD) precipitation fields from 0.25° gridded data while preserving precipitation statistics and reconstructing
+  fine-scale spatial variability. Validation against independent IMD station observations, comparing the
+  proposed framework with the SRGAN-based model and the original CorrDiff model, indicates that the proposed
+  framework substantially improves the representation of spatial precipitation patterns, rainfall intensity
+  distributions, and extreme rainfall events, while eliminating the systematic negative bias present in
+  the previously developed SRGAN-based model. Across four climatologically distinct homogeneous Indian
+  monsoon regions, PrecipCorrDiff reproduces observed precipitation characteristics with near-zero spatial
+  bias, demonstrating the potential of diffusion-based downscaling for generating physically consistent,
+  high-resolution precipitation datasets for hydrological, meteorological, and climate applications.
+significance: 3
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

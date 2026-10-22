@@ -1,0 +1,50 @@
+id: arxiv-2402.17966
+title: 'STC-ViT: Spatio Temporal Continuous Vision Transformer for Medium-range Global Weather Forecasting'
+authors:
+- Hira Saleem
+- Flora Salim
+- Cormac Purcell
+date: '2024-02-28'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2402.17966'
+  openalex: W4399061540
+links:
+  paper: https://arxiv.org/abs/2402.17966
+  pdf: https://arxiv.org/pdf/2402.17966
+topic: global-medium-range
+type: model
+method:
+- transformer
+- neural-operator
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: STC-ViT combines a Fourier neural operator with a transformer-based Neural ODE for continuous
+  medium-range forecasting, reaching competitive WeatherBench 2 skill with a single-layer encoder and
+  0.125 s inference.
+abstract: Operational Numerical Weather Prediction (NWP) system relies on computationally expensive physics-based
+  models. Recently, transformer models have shown remarkable potential in weather forecasting achieving
+  state-of-the-art results. However, traditional transformers discretize spatio-temporal dimensions, limiting
+  their ability to model continuous dynamical weather processes. Moreover, their reliance on increased
+  depth to capture complex dependencies results in higher computational cost and parameter redundancy.
+  We address these issues with STC-ViT, a Spatio-Temporal Continuous Vision Transformer for weather forecasting.
+  STC-ViT integrates a Fourier Neural Operator (FNO) for global spatial operators with a transformer parameterised
+  Neural ODE for continuous-time dynamics, yielding a space-time continuous model for weather forecasting.
+  Our proposed method achieves competitive forecasting performance even with a shallow, single-layer transformer
+  encoder mitigating the reliance on deeper networks. STC-ViT generates complete forecast trajectories
+  with an inference speed of only 0.125 seconds and achieves strong medium-range forecasting skill on
+  1.5-degree WeatherBench 2 as compared to state-of-the-art data-driven and NWP models trained on higher-resolution
+  data, with substantially lower data and compute costs. We also provide detailed empirical analysis on
+  model's performance with respect to denser time grids, higher-accuracy ODE solvers, and deeper transformer
+  stacks.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

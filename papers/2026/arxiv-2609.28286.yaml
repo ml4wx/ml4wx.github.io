@@ -1,0 +1,52 @@
+id: arxiv-2609.28286
+title: PBLH Estimation from Satellite Radiances via a Dual-Encoder Transformer
+authors:
+- Lorenzo Innocenti
+- Luca Catalano
+- Edoardo Arnaudo
+- Claudio Rossi
+- Salvatore Larosa
+- Domenico Cimini
+- Paolo Garza
+date: '2026-09-23'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.28286'
+  openalex: W7214164874
+links:
+  paper: https://arxiv.org/abs/2609.28286
+  pdf: https://arxiv.org/pdf/2609.28286
+  code: https://github.com/links-ads/pblh-transformer
+topic: observations-remote-sensing
+type: model
+method:
+- transformer
+- cnn
+spatial:
+- global
+data:
+- satellite
+- era5
+status: research
+summary: A dual-encoder Transformer retrieves planetary boundary layer height from MetOp radiances with
+  155.8 m MAE, working in all weather and beating pixel-wise baselines.
+abstract: 'Estimating the Planetary Boundary Layer Height (PBLH) from satellite observations is a challenging
+  regression problem due to the indirect relationship between top-of-atmosphere radiances and near-surface
+  atmospheric structure. Progress has been limited both by the lack of architectures capable of handling
+  the multimodal, spatially incomplete nature of satellite overpasses, and by the scarcity of suitable
+  datasets. In this paper, we build upon the large-scale dataset pairing MetOp radiances with ERA5 PBLH
+  labels that we introduced in our previous work, making three contributions. First, we establish a benchmark
+  across eight approaches spanning pixel-wise regression, swath-wise sequence models, and convolutional
+  and Transformer models operating on the full orbital passage. Second, we quantify what the resulting
+  model actually relies on, using grouped Shapley decomposition over the input blocks. Third, we present
+  the best-performing architecture found: a dual-encoder Transformer whose masked-input handling lets
+  it operate in all weather conditions. The proposed model achieves MAE = 155.8 m on the held-out global
+  test set, outperforming all baselines on every evaluation subset. On 30 out-of-distribution granules
+  acquired on two days overlapping the TEAMx observational campaign, it achieves MAE = 165.3 m, outperforming
+  a pixel-wise baseline trained on the same data (MAE = 197 m).'
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

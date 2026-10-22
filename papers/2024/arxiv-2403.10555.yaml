@@ -1,0 +1,52 @@
+id: arxiv-2403.10555
+title: 'KARINA: An Efficient Deep Learning Model for Global Weather Forecast'
+authors:
+- Minjong Cheon
+- Yo-Hwan Choi
+- Seon-Yu Kang
+- Yumi Choi
+- Jeong-Gil Lee
+- Daehyun Kang
+date: '2024-03-13'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2403.10555'
+  openalex: W4392971845
+links:
+  paper: https://arxiv.org/abs/2403.10555
+  pdf: https://arxiv.org/pdf/2403.10555
+topic: global-medium-range
+type: model
+method:
+- cnn
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: KARINA, a ConvNext-based global forecaster with geocyclic padding, trains in under 12 hours on
+  four A100 GPUs and beats ECMWF S2S reforecasts out to 7 days.
+abstract: Deep learning-based, data-driven models are gaining prevalence in climate research, particularly
+  for global weather prediction. However, training the global weather data at high resolution requires
+  massive computational resources. Therefore, we present a new model named KARINA to overcome the substantial
+  computational demands typical of this field. This model achieves forecasting accuracy comparable to
+  higher-resolution counterparts with significantly less computational resources, requiring only 4 NVIDIA
+  A100 GPUs and less than 12 hours of training. KARINA combines ConvNext, SENet, and Geocyclic Padding
+  to enhance weather forecasting at a 2.5° resolution, which could filter out high-frequency noise. Geocyclic
+  Padding preserves pixels at the lateral boundary of the input image, thereby maintaining atmospheric
+  flow continuity in the spherical Earth. SENet dynamically improves feature response, advancing atmospheric
+  process modeling, particularly in the vertical column process as numerous channels. In this vein, KARINA
+  sets new benchmarks in weather forecasting accuracy, surpassing existing models like the ECMWF S2S reforecasts
+  at a lead time of up to 7 days. Remarkably, KARINA achieved competitive performance even when compared
+  to the recently developed models (Pangu-Weather, GraphCast, ClimaX, and FourCastNet) trained with high-resolution
+  data having 100 times larger pixels. Conclusively, KARINA significantly advances global weather forecasting
+  by efficiently modeling Earth's atmosphere with improved accuracy and resource efficiency.
+significance: 3
+cited_by: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

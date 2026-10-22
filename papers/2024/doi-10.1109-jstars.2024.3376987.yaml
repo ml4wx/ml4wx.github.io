@@ -1,0 +1,59 @@
+id: doi-10.1109-jstars.2024.3376987
+title: 'FsrGAN: A Satellite and Radar-Based Fusion Prediction Network for Precipitation Nowcasting'
+authors:
+- Dan Niu
+- Yinghao Li
+- Hongbin Wang
+- Zengliang Zang
+- Mingbo Jiang
+- Xunlai Chen
+- Qunbo Huang
+date: '2024-01-01'
+year: 2024
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2024.3376987
+  openalex: W4392902727
+links:
+  paper: https://doi.org/10.1109/jstars.2024.3376987
+  pdf: https://ieeexplore.ieee.org/ielx7/4609443/4609444/10472033.pdf
+orgs:
+- cma
+topic: nowcasting
+type: model
+method:
+- cnn
+- gan-vae
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+- radar
+status: research
+summary: FsrGAN fuses satellite and radar data with attention and a GAN refinement stage for 0-2 h precipitation
+  nowcasts, including convective initiation.
+abstract: Precipitation nowcasting refers to the prediction of small-scale precipitation events at minute
+  and kilometer scales within the upcoming 0 to 2 hours, which significantly impacts both human activities
+  and daily life. However, prevailing deep learning models have primarily focused on a single radar echo
+  data source, limiting their ability to effectively capture intricate and rapidly evolving precipitation
+  patterns. Thus, meteorological satellite is considered to supplement radar echo data. To achieve a comprehensive
+  integration of multi-source data with enhanced details, a two-stage fusion satellite and radar GAN-based
+  prediction network (named FsrGAN) is proposed. In the first stage, we design a satellite-radar fusion
+  prediction network known as FsrNet. This network employs an encoder-fusion-decoder architecture, where
+  a novel spatial-channel attention (SCA) is proposed to enhance the filtering and fusion of multi-source
+  and multi-scale features. In the second stage, we introduce a GAN-based network (FusionGAN) that also
+  mines the complementary information of satellite images to sharpen the first-stage predicted radar maps
+  with more details. Experiments are conducted on meteorological dataset in the Yangtze River Delta (YRD)
+  region. The test results exhibit the notably superior performance of our model in terms of image quality
+  and precipitation forecasting metrics in comparison to traditional optical flow-based methods and some
+  well-known deep learning methods (ConvLSTM, ConvGRU, TrajGRU and PredRNN++). More importantly, our fusion
+  model using satellite and radar data demonstrates the ability to predict convective initiation.
+significance: 3
+cited_by: 31
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

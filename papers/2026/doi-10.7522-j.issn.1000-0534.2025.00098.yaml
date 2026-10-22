@@ -1,0 +1,60 @@
+id: doi-10.7522-j.issn.1000-0534.2025.00098
+title: A Deep Learning-Based Precipitation Downscaling Models with Terrain-Guided Attention
+authors:
+- Lei Fan
+date: '2026-06-01'
+year: 2026
+venue: 'DOAJ (DOAJ: Directory of Open Access Journals)'
+venue_type: preprint
+ids:
+  doi: 10.7522/j.issn.1000-0534.2025.00098
+  openalex: W7162336629
+links:
+  paper: https://doi.org/10.7522/j.issn.1000-0534.2025.00098
+topic: downscaling
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- era5
+- satellite
+status: research
+summary: Terrain-guided attention CNN with Laplacian pyramid downscales ERA5 to 0.1° precipitation over
+  the Yellow River, improving daily RMSE to 5.10 mm/d versus a conventional CNN.
+abstract: As a powerful deep-learning downscaling technique， convolutional neural networks （CNN） are widely
+  utilized to generate high-resolution precipitation data from low-resolution global climate models through
+  data-driven approaches， playing a critical role in assessing the impacts of climate change at both regional
+  and local scales.This study proposes a CNN-based precipitation downscaling model， the Topography-Guided
+  Attention Network （TGAN）， which downscales coarse-resolution （2°） atmospheric variables to produce high-resolution
+  precipitation fields at 0.1°.The model adopts a Laplacian pyramid as a progressive， multi-level downscaling
+  framework， in which the spatial resolution of precipitation fields is incrementally enhanced and precipitation
+  structures are reconstructed through successive stages.In addition， a topography-guided attention module
+  is incorporated， which leverages an attention mechanism to integrate atmospheric variables with elevation
+  data at corresponding spatial scales.By combining these multi-scale features， the module strengthens
+  the network’s capacity for feature representation and learning， thereby improving the accuracy and reliability
+  of simulated precipitation.Focusing on the middle reaches of the Yellow River， TGAN is trained on daily
+  ERA5 atmospheric variables， GPM IMERG daily precipitation data from 2001 to 2010， together with static
+  elevation data， and validated using data from 2011 to 2020.The results indicate that， compared with
+  a conventional CNN model， TGAN achieves higher accuracy in spatiotemporal precipitation simulations
+  at daily， monthly， and annual scales.At the daily scale， TGAN achieves a lower average root mean square
+  error （5.10 mm·d-1） and a higher average correlation coefficient （0.42） compared with the conventional
+  CNN model.Additionally， TGAN more accurately captures extreme precipitation events （95th and 99th percentiles）
+  and better aligns with GPM IMERG observations in probability density distribution， particularly for
+  heavy precipitation range.This study further investigates the impact of different loss functions on
+  the downscaling performance of TGAN.Using the RMSE loss function improves overall predictive accuracy
+  but leads to underestimation of extreme precipitation events， whereas the Bernoulli-Gamma loss function，
+  although slightly less accurate overall， more faithfully reproduces extreme precipitation events.Its
+  probability density distributions are highly consistent with both GPM IMERG data and station observations，
+  indicating that the model has an enhanced capability to capture extreme precipitation events， thereby
+  better reproducing the distribution characteristics of precipitation frequency.Overall， by combining
+  the topography-guided attention mechanism with the Bernoulli-Gamma loss function， TGAN demonstrates
+  clear advantages in downscaling precipitation over the middle reaches of the Yellow River， not only
+  improving overall simulation accuracy but also better representing extreme precipitation events， providing
+  a robust and reliable tool for high-resolution precipitation modeling in complex terrain regions.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

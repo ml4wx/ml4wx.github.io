@@ -1,0 +1,61 @@
+id: doi-10.3390-rs17071123
+title: Deep Learning Model for Precipitation Nowcasting Based on Residual and Attention Mechanisms
+authors:
+- Zhang Zhan
+- Qingping Song
+- Minzheng Duan
+- Hailei Liu
+- Juan Huo
+- Congzheng Han
+date: '2025-03-21'
+year: 2025
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs17071123
+  openalex: W4408691237
+links:
+  paper: https://doi.org/10.3390/rs17071123
+orgs:
+- iap-cas
+topic: nowcasting
+topics:
+- regional-km-scale
+type: model
+method:
+- cnn
+- other
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: RA-UNet adds residual blocks, CBAM attention and depthwise convolutions to U-Net for 3-hour radar
+  echo extrapolation over China, cutting MAE about 7% and FAR about 20%.
+abstract: 'Nowcasting is a critical technology for disaster prevention and mitigation, and the accuracy
+  of radar echo extrapolation directly impacts forecasting performance. In most deep learning-based models,
+  accurately predicting heavy precipitation remains a challenging task. Focusing on the region of China,
+  this study proposes an improved model based on residual and attention mechanisms—RA-UNet—for precipitation
+  nowcasting with a lead time of 3 h. The model introduces the residual neural network (ResNet) and the
+  convolutional block attention module (CBAM) to integrate multi-scale features into the U-Net encoder–decoder
+  architecture, enhancing its ability to capture the spatiotemporal evolution of precipitation systems.
+  Meanwhile, depthwise separable convolutions are employed to replace conventional convolutions, significantly
+  improving computational efficiency while preserving model performance. To evaluate the model’s performance,
+  experiments were conducted using 6 min resolution radar echo data from China in 2024, with comparisons
+  made against the optical flow (OF) method and the U-Net model. The experimental results show that RA-UNet
+  demonstrates significant advantages in 3 h forecasting: its mean absolute error (MAE) is reduced by
+  approximately 7%, the false alarm rate (FAR) decreases by about 20%, and it outperforms the comparison
+  models in metrics such as the critical success index (CSI) and structural similarity index (SSIM). Notably,
+  RA-UNet effectively mitigates intensity degradation in long-term forecasts, successfully predicting
+  the trend of >40 dBZ strong echo cores in two typical cases and significantly improving the premature
+  dissipation problem of precipitation fields. This study provides a new approach to refined forecasting
+  of complex precipitation systems, and future work will combine multi-source data fusion with physical
+  constraint mechanisms to further enhance precipitation event prediction capabilities.'
+significance: 4
+cited_by: 22
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

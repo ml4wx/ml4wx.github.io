@@ -1,0 +1,51 @@
+id: doi-10.1029-2025ms005306
+title: Nudging‐Based Data Assimilation Method for Error Correction Coupled With Huber Loss Functions and
+  BiLSTM‐GRU Hybrids
+authors:
+- Yingjun Peng
+- Yu-Long Bai
+- Xu-Feng Wang
+- Qing-He Yu
+- Xiaoxin Yue
+date: '2025-11-27'
+year: 2025
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2025ms005306
+  openalex: W4416764373
+links:
+  paper: https://doi.org/10.1029/2025ms005306
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2025MS005306
+topic: data-assimilation
+type: model
+method:
+- rnn
+spatial:
+- global
+data:
+- other
+status: research
+summary: A BiLSTM-GRU hybrid learns EnKF analysis errors to correct data assimilation for chaotic systems,
+  robust across noise and observation densities.
+abstract: Abstract In machine learning (ML) algorithms, neural networks (NNs) can effectively learn the
+  mapping between initial condition errors and system states through training. To reduce model errors
+  in data assimilation, this work proposes an optimization strategy for the data assimilation (DA) process
+  based on ML methods. A novel hybrid deep learning approach is introduced, which combines bidirectional
+  long short‐term memory (BiLSTM) networks and gated recurrent units (GRUs) in a serial processing manner.
+  First, the BiLSTM‐GRU hybrid method is trained by modeling the residuals between the system's observational
+  data and the ensemble Kalman filter (EnKF) assimilation results, which are used as inputs to learn the
+  error correction process. Second, the Huber loss function is used to quantify the error, and the network
+  model's parameters are updated on the basis of the loss feedback to correct model errors in the data
+  assimilation system. Additionally, the hybrid model incorporates nudging by introducing a certain amount
+  of “relaxation” in each iteration, gradually approaching the actual solution. Ultimately, comprehensive
+  experiments demonstrate that the BiLSTM‐GRU hybrid, even after strengthening traditional EnKF with inflation,
+  localization, and stabilization, consistently achieves superior robustness across varying dynamical
+  regimes, ensemble sizes, observation densities, and noise levels, highlighting its scalability for nonlinear
+  chaotic systems.
+significance: 3
+cited_by: 2
+score: 12
+highlight: false
+added: '2026-10-22'
+source: snowball

@@ -1,0 +1,49 @@
+id: arxiv-2606.27094
+title: 'Learning Climate Variability from Scarce Data with Diffusion Models: A Test Case for ENSO'
+authors:
+- Lluis Palma
+- Vincent Verjans
+- Amanda Duarte
+- Albert Soret
+- Markus Donat
+date: '2026-06-25'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.27094'
+  openalex: W7166166816
+links:
+  paper: https://arxiv.org/abs/2606.27094
+  pdf: https://arxiv.org/pdf/2606.27094
+topic: climate-emulation
+type: model
+method:
+- diffusion
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+- other
+status: research
+summary: Diffusion models trained on synthetic Pacific SST from linear inverse models need about 7,000
+  samples to converge, and CMIP6 pre-training with fine-tuning reproduces ERSSTv5 ENSO statistics better
+  than LIMs.
+abstract: Diffusion models are increasingly applied to climate emulation, but whether they capture the
+  correct modes of variability remains unclear, a concern amplified by data scarcity at longer timescales.
+  We investigate this using synthetic tropical Pacific SST fields from Linear Inverse Models (LIMs), whose
+  known low-order structure bypasses the overlapping and confounding modes of real observations. With
+  sufficient training data, our model recovers the correct structure of both Gaussian and non-Gaussian
+  LIMs, including ENSO's Eastern/Central Pacific asymmetry. Yet an ablation study on the number of monthly
+  training samples reveals that the 700 observations in ERSSTv5 fall an order of magnitude short of the
+  7,000 samples needed for convergence, and that not all diffusion parameterisations recover the correct
+  low-order structure. Pre-training on CMIP6 with a learned model embedding, followed by fine-tuning on
+  scarce observations, closes this gap, reproducing observed statistics more faithfully than both Gaussian
+  and non-Gaussian LIMs.
+significance: 4
+cited_by: 1
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

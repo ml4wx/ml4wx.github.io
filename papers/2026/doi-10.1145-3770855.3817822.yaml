@@ -1,0 +1,61 @@
+id: doi-10.1145-3770855.3817822
+title: 'AeroWF: A Geometric Spectral-Temporal Dual-Stream Learning Framework for Aerodrome Weather Forecasting'
+authors:
+- Xinyu Li
+- Yunyi Huang
+- Quan Fang
+- Yang Yang
+- Can Zhao
+- Kai-Quan Cai
+date: '2026-08-08'
+year: 2026
+venue: Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2
+venue_type: other
+ids:
+  doi: 10.1145/3770855.3817822
+  openalex: W7196996578
+links:
+  paper: https://doi.org/10.1145/3770855.3817822
+  pdf: https://doi.org/10.1145/3770855.3817822
+  code: https://github.com/MKC-Lab/AeroWF
+topic: local-forecasting
+topics:
+- applications-impacts
+type: model
+method:
+- transformer
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: AeroWF combines spectral and temporal branches with METAR context to forecast airport weather
+  across four Chinese hubs, reporting state-of-the-art results.
+abstract: 'Accurate and reliable aerodrome weather forecasting is essential for aerodrome safety and efficiency.
+  However, existing approaches often fail to effectively capture the multi-scale dynamics and structural
+  heterogeneity inherent in airport meteorological data, which involves variable numbers of runways, entangled
+  high-frequency sensor streams, and low-frequency environmental contexts. In this paper, we propose AeroWF,
+  a novel geometrically aware spectral-temporal dual-stream learning framework designed to address these
+  challenges. Our approach integrates: (1) a macroscopic context injection module, which explicitly grounds
+  transient micro-scale sensor observations within slow-varying macro-scale meteorological reports (METAR),
+  improving consistency between micro-scale observations and macro-scale environmental states; (2) a spectral-temporal
+  dual-stream encoder that disentangles transient temporal patterns and global spectral periodicities
+  via a transformer-based temporal branch and a complex-valued frequency-domain branch; (3) a structure-adaptive
+  hierarchical aggregator that unifies variable-cardinality runway observations through bidirectional
+  interaction, without relying on predefined topological assumptions; and (4) a geometrically consistent
+  pre-training strategy that combines hybrid masked reconstruction with intrinsic metric alignment, encouraging
+  the learned representations to preserve both local fidelity and the temporal-shape/spectral-distribution
+  structure of weather evolution. Extensive experiments on a new curated real-world multi-airport dataset
+  consisting of 248K samples from four major international hubs (ZBAA, ZBAD, ZSPD, ZSSS) demonstrate that
+  AeroWF achieves state-of-the-art performance across forecasting, imputation, and classification tasks.
+  Furthermore, the model exhibits superior few-shot transferability to unseen airports, establishing a
+  robust foundation for next-generation intelligent aviation meteorology. The source code and datasets
+  are available at:~https://github.com/MKC-Lab/AeroWF.'
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-10-22'
+source: snowball

@@ -1,0 +1,57 @@
+id: doi-10.1109-jstars.2026.3734833
+title: 'DiffShadow-AI: A Novel Differentiable Geometry-Aware Framework for Joint Cloud Shadow Detection
+  and Cloud Height Estimation From Satellite Imagery'
+authors:
+- Baya Cherif
+- Mahmoud Ayyad
+- Marouane Temimi
+date: '2026-01-01'
+year: 2026
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2026.3734833
+  openalex: W7214207331
+links:
+  paper: https://doi.org/10.1109/jstars.2026.3734833
+topic: observations-remote-sensing
+topics:
+- xai-uq-physics
+type: model
+method:
+- cnn
+- differentiable
+- physics-constrained
+spatial:
+- regional
+data:
+- satellite
+- nwp-analysis
+status: research
+summary: DiffShadow-AI jointly detects cloud shadows and retrieves cloud height from VIIRS imagery using
+  a differentiable geometric projection, with outputs checked against HRRR and CSPP.
+abstract: Cloud shadow detection in moderate-resolution satellite imagery remains an open problem, as
+  coarser pixel spacing blurs shadow boundaries and increases spectral confusion with dark surfaces such
+  as open water and bare land. This study introduces DiffShadow-AI, the first differentiable, geometry-aware
+  deep learning framework to jointly detect cloud shadows and retrieve cloud height from a single end-to-end
+  trainable pipeline applied to Visible Infrared Imaging Radiometer Suite (VIIRS) imagery. Unlike existing
+  approaches that treat shadow detection and height retrieval as independent tasks, DiffShadow-AI embeds
+  a differentiable geometric projection module based on soft rasterization directly into the learning
+  pipeline, enabling cloud height to emerge as a physically constrained by-product of shadow delineation
+  rather than requiring a separate retrieval step. The framework combines a Lightweight ResNet18 encoder
+  for multiscale spectral and geometric feature extraction with a joint regression and segmentation objective,
+  ensuring that predicted shadow extents and cloud heights remain mutually consistent throughout training.
+  Evaluated over Alaska under diverse seasonal and illumination conditions, DiffShadow-AI achieves a relaxed
+  intersection-over-union of 85.3%, with Grad-CAM visualizations confirming that the model attends to
+  geometrically meaningful regions at cloud bases and edges. Cloud-top height estimates are physically
+  consistent with both high-resolution rapid refresh (HRRR) numerical weather prediction outputs and Community
+  Satellite Processing Package (CSPP) operational retrievals, with discrepancies in deep convective scenes
+  attributed to differences between the shadow-casting layer and the cloud top. These results demonstrate
+  that embedding differentiable physics into deep learning pipelines is an effective strategy for simultaneous
+  cloud shadow delineation and height inference from moderate-resolution optical imagery.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

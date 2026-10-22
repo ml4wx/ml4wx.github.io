@@ -1,0 +1,61 @@
+id: doi-10.1002-met.70174
+title: Fine‐Tuning Lightning Nowcasting for a New Domain
+authors:
+- Aurelienne A. S. Jorge
+- John L. Cintineo
+- I. C. Costa
+- Leonardo B. L. Santos
+date: '2026-03-01'
+year: 2026
+venue: Meteorological Applications
+venue_type: journal
+ids:
+  doi: 10.1002/met.70174
+  openalex: W7142366545
+links:
+  paper: https://doi.org/10.1002/met.70174
+  pdf: https://doi.org/10.1002/met.70174
+orgs:
+- noaa
+topic: nowcasting
+topics:
+- foundation-models
+type: application
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Transfer learning adapts the LightningCast U-Net to Brazil, improving CSI by 12.8% and AUC-PR
+  by 9.3% over training from scratch and matching the original with 10% of data.
+abstract: ABSTRACT Accurate lightning nowcasting is critical for mitigating weather‐related risks, yet
+  adapting existing predictive models to new spatial domains remains challenging due to computational
+  demands and data requirements. Transfer learning offers a promising solution, but its application in
+  weather nowcasting, particularly for tasks framed as semantic segmentation problems, is still underexplored.
+  In this study, we employed transfer learning techniques to fine‐tune the U‐Net architecture of LightningCast,
+  originally developed for the contiguous United States (CONUS) region, to predict lightning for the Brazilian
+  domain. Given the distinct meteorological characteristics of Brazil, particularly in regions dominated
+  by tropical systems, there is a compelling motivation to explore fine‐tuning LightningCast for this
+  new spatial domain. The methodology involved investigating the impact of fine‐tuning different architectural
+  components, comparing fine‐tuned models with those trained from scratch, and analyzing the benefits
+  of transfer learning across varying data availability scenarios. The fine‐tuned model consistently outperformed
+  the model trained from scratch, achieving superior performance even with limited data—surpassing the
+  original model's results with just 10% of the available training data—9.3% of improvement in the Area
+  Under the Curve for Precision and Recall (AUC‐PR) and 12.8% in the Critical Success Index (CSI) at a
+  35% probability. Spatial analysis revealed improvements in the Critical Success Index (CSI) across most
+  regions, with an average of 5.2%, and significant reductions in false alarms—with a mean decrease of
+  10.5%, addressing the original model's overestimation issue. These findings highlight the effectiveness
+  of transfer learning in adapting a lightning nowcasting model to new domains, reducing computational
+  demands while improving performance. The publicly available fine‐tuning framework developed in this
+  study offers a versatile tool for extending LightningCast or similar U‐Net‐based models to other spatial
+  regions.
+significance: 3
+cited_by: 0
+score: 47
+highlight: false
+added: '2026-10-22'
+source: snowball

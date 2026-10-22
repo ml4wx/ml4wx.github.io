@@ -1,0 +1,66 @@
+id: doi-10.3390-rs18193440
+title: 'PLUME: Staged Fusion of FY-4A AGRI and Rain-Gauge Observations for Bidirectional Refinement of
+  Short-Duration Heavy-Rainfall Warnings'
+authors:
+- Xiang Lin
+- Yunying Li
+date: '2026-10-08'
+year: 2026
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs18193440
+  openalex: W7220932072
+links:
+  paper: https://doi.org/10.3390/rs18193440
+orgs:
+- cma
+topic: nowcasting
+topics:
+- extremes-hazards
+- observations-remote-sensing
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+- stations
+status: research
+summary: PLUME fuses FY-4A imagery with rain-gauge residual updates to improve 0-3 h heavy-rainfall warning
+  CSI over matched satellite-grid baselines in China.
+abstract: Local short-duration heavy-rainfall warning requires early assessment of hazardous rainfall
+  within a specified neighborhood. Geostationary meteorological satellites provide frequent, spatially
+  continuous observations of cloud systems and storm evolution, but only indirectly reflect surface rainfall.
+  Rain gauges measure surface accumulation directly, but only at irregular locations. Deep learning fusion
+  methods commonly convert gauge observations to gridded representations before combining them with satellite
+  observations. This treatment merges gauge measurements and local gauge support into a single representation,
+  limiting how local surface conditions inform warning decisions and increasing the likelihood that local
+  heavy-rainfall risk is underestimated or overestimated. We present PLUME (Precipitation Nowcasting with
+  Late-Stage Residual Updates from Rain-Gauge Measurements for Short-Duration Heavy-Rainfall Events),
+  a staged fusion model with gridded and point-origin gauge pathways. PLUME first combines a gauge-derived
+  gridded rainfall background with FY-4A AGRI observations to form a base rainfall representation. The
+  point-origin pathway uses local gauge features and observation support to update this representation
+  through signed residuals, which the station decoder then maps to neighborhood-event probabilities. This
+  staged design preserves the complementary roles of continuous spatial context, local rainfall measurements,
+  and gauge availability. We evaluated PLUME for 0–3 h local short-duration heavy-rainfall warning over
+  central and eastern China using an independent test set from May to September 2023. Across Barnes analysis,
+  inverse distance weighting, and kriging, PLUME consistently improved the critical success index (CSI)
+  over matched satellite–grid baselines. Relative CSI gains were 2.6–3.3% under complete gauge input and
+  3.6–5.9% under simulated gauge missingness. PLUME also reduced the associated CSI loss by 45.8–67.4%.
+  Analysis of the variant with frozen batch normalization (BN) statistics showed that, under all three
+  backgrounds and both input conditions, the largest positive probability updates were concentrated among
+  baseline misses and converted some to hits, whereas the largest negative probability updates were concentrated
+  among baseline false alarms and converted some to correct negatives. The dominant conditional CSI contribution
+  shifted from false-alarm suppression at 0–1 h to missed-event recovery at 1–3 h. By using gridded and
+  point-origin gauge information at different fusion stages, PLUME improves local heavy-rainfall warning
+  through lead-dependent bidirectional refinement.
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

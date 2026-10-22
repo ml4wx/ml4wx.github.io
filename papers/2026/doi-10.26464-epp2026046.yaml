@@ -1,0 +1,54 @@
+id: doi-10.26464-epp2026046
+title: A transfer learning framework for the real-time detection of atmospheric gravity waves from All-Sky
+  Airglow Imager
+authors:
+- He YuBin
+- Xu QingChen
+- Zhu YaJun
+- Li QinZeng
+- Tu Cui
+- Cai Bing
+- Yuan Wei
+- Wang XinYing
+- Wei Feng
+date: '2026-01-01'
+year: 2026
+venue: Earth and Planetary Physics
+venue_type: journal
+ids:
+  doi: 10.26464/epp2026046
+  openalex: W7155404298
+links:
+  paper: https://doi.org/10.26464/epp2026046
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- other
+status: pre-operational
+summary: A transfer-learned EfficientNet-B3 with deformable convolutions detects gravity waves in airglow
+  images at 91.2% accuracy and 23 ms per frame.
+abstract: 'Atmospheric gravity waves (AGWs) observed by the All-Sky Airglow Imager (ASAI) require accurate
+  identification for the study of atmospheric coupling mechanisms and space weather prediction. However,
+  the traditional manual screening methods and existing machine learning approaches do not meet the demands
+  of practical station monitoring, which has significantly impeded climatological statistical research
+  based on AGWs. Therefore, a real-time detection framework for ground-based airglow gravity waves that
+  integrates transfer learning with adaptive image preprocessing has been proposed. By employing wavelength-adaptive
+  median filtering and multiscale fusion, the framework effectively suppresses stellar noise while preserving
+  weak gravity wave features. The model utilizes an EfficientNet-B3 (convolutional neural network) backbone
+  enhanced with a deformable convolutional layer, trained via a two-stage strategy: A frozen phase prevents
+  overfitting by locking the lower level feature extractor, and a fine-tuning phase optimizes the deformable
+  convolution through cosine annealing and layered optimization. This approach improves both feature transfer
+  efficiency and gravity wave detection sensitivity. The resulting lightweight model achieves 91.2% accuracy
+  with millisecond-level inference speed (23 ms per frame).'
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

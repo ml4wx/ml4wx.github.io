@@ -1,0 +1,65 @@
+id: doi-10.1175-aies-d-25-0117.1
+title: An NWP-Free, Observation-Driven Deep Learning Approach to Heavy-Rainfall Nowcasting beyond the
+  Three-Hour Limit
+authors:
+- Ryu Shimabukuro
+- Tomohiko Tomita
+- Tsuyoshi Yamaura
+- Ken–ichi Fukui
+date: '2026-09-02'
+year: 2026
+venue: Artificial Intelligence for the Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1175/aies-d-25-0117.1
+  openalex: W7135243437
+links:
+  paper: https://doi.org/10.1175/aies-d-25-0117.1
+topic: nowcasting
+topics:
+- extremes-hazards
+type: model
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- satellite
+- stations
+status: research
+summary: FlowsNet, an NWP-free multisensor deep-learning model, extends heavy-rain nowcasts over Kyushu
+  to 6 h with nonzero C4 skill, matching or beating JMA at 4–6 h.
+abstract: 'Abstract Quasi-stationary convective bands over Kyushu, Japan, frequently trigger rainy-season
+  disasters, and hours with ≥50 mm h −1 rainfall are increasing. However, skillful nowcasts beyond 3 h
+  remain limited. This study presents the Fused Lattice of Observation-Based Weather Sensors Network (FlowsNet),
+  an observation-based multisensor fusion model that learns directly from radar/rain gauge–analyzed precipitation,
+  surface variables from ground stations, geostationary satellite imagery, and satellite-derived precipitation
+  context. The model targets category-4 (C4; ≥50 mm h −1 ) rainfall and incorporates two attention mechanisms:
+  a channelwise module that weights informative modalities and a spatial module that aligns features with
+  banded structures at multihour leads. Training uses a tail-aware ordinal loss that couples focal reweighting
+  with an Earth mover’s distance–based ordinal penalty to emphasize rare extremes. FlowsNet maintains
+  a nonzero C4 critical success index through 6 h. From 4 to 6 h, it matches or exceeds the Japan Meteorological
+  Agency’s very-short-range forecast, and it outperforms a leading extrapolation-based method and state-of-the-art
+  deep learning nowcasting models. Case studies show preserved band geometry and corridor placement at
+  long lead over complex terrain. Ablation experiments identify satellite water vapor context and near-surface
+  humidity as key for long-lead C4 prediction; combining satellite context with surface observations stabilizes
+  placement and reduces false alarms. By avoiding numerical weather prediction model state and objective
+  analyses/reanalyzes, the approach reduces latency and hardware demand, improves portability and resilience
+  when model cycles degrade, and offers a practical route to earlier and more transferable warnings for
+  extreme-rainfall events. Significance Statement Quasi-stationary convective bands (QSCBs) often trigger
+  floods and landslides in Japan, yet useful warnings usually diminish after 3 h. The Fused Lattice of
+  Observation-Based Weather Sensors Network (FlowsNet) is an observation-based nowcasting system that
+  learns from radar, satellite, and surface networks while avoiding numerical model outputs and assimilated
+  data. It produces moderate-rain maps beyond 3 h and retains usable skill for very heavy rain at 4–6
+  h, capturing band geometry and corridor placement and often matching or exceeding Japan’s operational
+  guidance. Experiments show that satellite water vapor signals and near-surface humidity reduce false
+  alarms while preserving structure. Running on a single non–data center NVIDIA RTX 4090 GPU with ∼12
+  ms forward latency, FlowsNet enables earlier, portable warnings for QSCB-related floods and landslides
+  where comparable observing networks are available.'
+significance: 5
+cited_by: 0
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

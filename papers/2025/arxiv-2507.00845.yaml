@@ -1,0 +1,50 @@
+id: arxiv-2507.00845
+title: Do Echo Top Heights Improve Deep Learning Nowcasts?
+authors:
+- Peter Pavlík
+- Marc Schleiss
+- Anna Bou Ezzeddine
+- Viera Rozinajová
+date: '2025-07-01'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2507.00845'
+  openalex: W4416888618
+links:
+  paper: https://arxiv.org/abs/2507.00845
+  pdf: https://arxiv.org/pdf/2507.00845
+topic: nowcasting
+topics:
+- observations-remote-sensing
+type: evaluation
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Adds echo top height as a second input to a 3D U-Net for radar nowcasting; it helps at low rain
+  rates but underestimates higher intensities, with inconsistent gains.
+abstract: Precipitation nowcasting -- the short-term prediction of rainfall using recent radar observations
+  -- is critical for weather-sensitive sectors such as transportation, agriculture, and disaster mitigation.
+  While recent deep learning models have shown promise in improving nowcasting skill, most approaches
+  rely solely on 2D radar reflectivity fields, discarding valuable vertical information available in the
+  full 3D radar volume. In this work, we explore the use of Echo Top Height (ETH), a 2D projection indicating
+  the maximum altitude of radar reflectivity above a given threshold, as an auxiliary input variable for
+  deep learning-based nowcasting. We examine the relationship between ETH and radar reflectivity, confirming
+  its relevance for predicting rainfall intensity. We implement a single-pass 3D U-Net that processes
+  both the radar reflectivity and ETH as separate input channels. While our models are able to leverage
+  ETH to improve skill at low rain-rate thresholds, results are inconsistent at higher intensities and
+  the models with ETH systematically underestimate precipitation intensity. Three case studies are used
+  to illustrate how ETH can help in some cases, but also confuse the models and increase the error variance.
+  Nonetheless, the study serves as a foundation for critically assessing the potential contribution of
+  additional variables to nowcasting performance.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

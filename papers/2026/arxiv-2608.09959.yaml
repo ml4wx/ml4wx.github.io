@@ -1,0 +1,58 @@
+id: arxiv-2608.09959
+title: 'AIFS-TC: A simple correction competitive with the operational frontier for tropical cyclone intensity
+  forecasting'
+authors:
+- Anna Allen
+- Wessel P. Bruinsma
+- Michael Maier-Gerber
+- Harrison Cook
+- Matthew Chantry
+- Richard E. Turner
+date: '2026-07-24'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2608.09959'
+  openalex: W7202295762
+links:
+  paper: https://arxiv.org/abs/2608.09959
+  pdf: https://arxiv.org/pdf/2608.09959
+orgs:
+- ecmwf
+- university-of-cambridge
+topic: extremes-hazards
+topics:
+- post-processing
+- llms-agents
+type: model
+method:
+- other
+timescale:
+- short
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: pre-operational
+summary: Simple learned correction to AIFS-Single that matches operational skill for tropical cyclone
+  intensity from 12 h to 7 days; the system was built by an LLM.
+abstract: AI weather models are in the process of revolutionising weather forecasting. While these models
+  have been shown to achieve superior performance to physics-based NWP in forecasting tropical cyclone
+  (TC) tracks, they tend to dramatically underestimate intensity. Here we present AIFS-TC, a simple correction
+  to the AIFS-Single model that is competitive with the operational state-of-the-art for forecasting maximum
+  wind speed and minimum central pressure at lead times of 12 h to seven days. This performance also holds
+  for rapid intensification events. Notably, the entire system was autonomously designed and built by
+  a large language model (Claude Fable 5) in a few hours, directed through a small number of natural-language
+  prompts by a single domain scientist. That the operational frontier can be reached with an open-source
+  AI forecast model (AIFS-Single) and relatively simple, cheap post-processing is significant for TC science,
+  and points to agentic coding as a route to rapid exploration and progress in life-saving early-warning
+  systems in other domains.
+significance: 6
+score: 59
+highlight: true
+highlight_reason: Simple post-hoc correction to AIFS-Single reaches operational-level TC intensity skill,
+  addressing a key AI weakness; the LLM-built workflow is notable.
+added: '2026-10-22'
+source: backfill

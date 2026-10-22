@@ -1,0 +1,49 @@
+id: arxiv-2507.10893
+title: Modernizing CNN-based Weather Forecast Model towards Higher Computational Efficiency
+authors:
+- Minjong Cheon
+- Eunhan Goo
+- Su-Hyeon Shin
+- Muhammad Ahmed
+- Hyungjun Kim
+date: '2025-07-15'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2507.10893'
+  openalex: W4414943781
+links:
+  paper: https://arxiv.org/abs/2507.10893
+  pdf: https://arxiv.org/pdf/2507.10893
+topic: global-medium-range
+type: model
+method:
+- cnn
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: KAI-a is a modernized CNN global forecaster with about 7 million parameters, trained in 12 hours
+  on one GPU, matching state-of-the-art medium-range skill at a fraction of the cost.
+abstract: Recently, AI-based weather forecast models have achieved impressive advances. These models have
+  reached accuracy levels comparable to traditional NWP systems, marking a significant milestone in data-driven
+  weather prediction. However, they mostly leverage Transformer-based architectures, which often leads
+  to high training complexity and resource demands due to the massive parameter sizes. In this study,
+  we introduce a modernized CNN-based model for global weather forecasting that delivers competitive accuracy
+  while significantly reducing computational requirements. To present a systematic modernization roadmap,
+  we highlight key architectural enhancements across multiple design scales from an earlier CNN-based
+  approach. KAI-a incorporates a scale-invariant architecture and InceptionNeXt-based blocks within a
+  geophysically-aware design, tailored to the structure of Earth system data. Trained on the ERA5 daily
+  dataset with 67 atmospheric variables, the model contains about 7 million parameters and completes training
+  in just 12 hours on a single NVIDIA L40s GPU. Our evaluation shows that KAI-a matches the performance
+  of state-of-the-art models in medium-range weather forecasting, while offering a significantly lightweight
+  design. Furthermore, case studies on the 2018 European heatwave and the East Asian summer monsoon demonstrate
+  KAI-a's robust skill in capturing extreme events, reinforcing its practical utility.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

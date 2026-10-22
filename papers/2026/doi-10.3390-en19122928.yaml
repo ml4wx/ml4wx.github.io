@@ -1,0 +1,55 @@
+id: doi-10.3390-en19122928
+title: A Hybrid Wind Speed Forecasting Framework Based on Downscaled Multi-Model Forecasts and Machine
+  Learning for Day-Ahead Wind Power Applications
+authors:
+- Donggun Oh
+- Minkyu Lee
+- Myeongchan Oh
+- Chang Ki Kim
+- Jin-Young Kim
+date: '2026-06-21'
+year: 2026
+venue: Energies
+venue_type: journal
+ids:
+  doi: 10.3390/en19122928
+  openalex: W7165684541
+links:
+  paper: https://doi.org/10.3390/en19122928
+  pdf: https://www.mdpi.com/1996-1073/19/12/2928/pdf?version=1782032952
+topic: post-processing
+topics:
+- applications-impacts
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: LightGBM synthesis of GFS, IFS and downscaled NWP members cuts day-ahead wind speed MAE to 0.90
+  m/s at 31 Jeju sites, a 39% gain over the best member.
+abstract: Accurate day-ahead wind speed forecasting is essential for wind power forecasting and electricity
+  market participation under increasing renewable energy penetration. This study proposes a hybrid forecasting
+  framework that combines raw global forecasts from GFS and IFS, the KMA KIM-RDAPS regional forecast,
+  and dynamically downscaled GFS/IFS forecasts generated with alternative boundary-layer physics. Seven
+  forecast members were synthesized using arithmetic averaging, performance-weighted averaging, and LightGBM-based
+  machine learning (ML) regression. The framework was evaluated over Jeju Island, Republic of Korea, using
+  10 m Automatic Weather Station observations from 2023 to 2024 and 80 m meteorological mast observations
+  from 2023. For the AWS evaluation, 2023 was used for training and validation, and 2024 was reserved
+  for independent testing. The site-specific LightGBM synthesis achieved the most consistent improvement,
+  reducing the median site-wise MAE across 31 AWS sites to 0.90 m s−1, corresponding to a 39.2% improvement
+  relative to the best non-downscaled member and 47.2% relative to the unweighted multi-model mean. In
+  the 80 m mast-based diagnostic assessment, the same approach reduced derived normalized power MAE to
+  11.4%. These results indicate that ML synthesis of multi-source NWP forecasts can improve day-ahead
+  wind speed and power-oriented forecast information over complex island terrain.
+significance: 3
+cited_by: 2
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

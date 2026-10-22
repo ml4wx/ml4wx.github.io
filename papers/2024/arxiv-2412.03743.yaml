@@ -1,0 +1,54 @@
+id: arxiv-2412.03743
+title: A Hybrid Deep-Learning Model for El Niño Southern Oscillation in the Low-Data Regime
+authors:
+- Jakob Schloer
+- Matthew Newman
+- Jannik Thuemmel
+- Antonietta Capotondi
+- Bedartha Goswami
+date: '2024-12-04'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2412.03743'
+  openalex: W4405094375
+links:
+  paper: https://arxiv.org/abs/2412.03743
+  pdf: https://arxiv.org/pdf/2412.03743
+orgs:
+- ecmwf
+- noaa
+topic: s2s-seasonal
+topics:
+- hybrid-parameterization
+type: model
+method:
+- classical-ml
+timescale:
+- seasonal
+spatial:
+- global
+data:
+- cmip
+- other
+status: research
+summary: A hybrid model adds a deep-learning non-Markovian correction to a Linear Inverse Model trained
+  on short observational records, beating both the LIM and a full deep-learning model for ENSO up to 1
+  year.
+abstract: While deep-learning models have demonstrated skillful El Niño Southern Oscillation (ENSO) forecasts
+  up to one year in advance, they are predominantly trained on climate model simulations that provide
+  thousands of years of training data at the expense of introducing climate model biases. Simpler Linear
+  Inverse Models (LIMs) trained on the much shorter observational record also make skillful ENSO predictions
+  but do not capture predictable nonlinear processes. This motivates a hybrid approach, combining the
+  LIMs modest data needs with a deep-learning non-Markovian correction of the LIM. For O(100 yr) datasets,
+  our resulting Hybrid model is more skillful than the LIM while also exceeding the skill of a full deep-learning
+  model. Additionally, while the most predictable ENSO events are still identified in advance by the LIM,
+  they are better predicted by the Hybrid model, especially in the western tropical Pacific for leads
+  beyond about 9 months, by capturing the subsequent asymmetric (warm versus cold phases) evolution of
+  ENSO.
+significance: 5
+cited_by: 2
+score: 55
+highlight: false
+added: '2026-10-22'
+source: backfill

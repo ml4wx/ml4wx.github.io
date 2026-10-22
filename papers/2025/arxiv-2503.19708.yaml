@@ -1,0 +1,52 @@
+id: arxiv-2503.19708
+title: 'Fast localized urban microclimate emulator: wind and temperatures in unseen urban morphologies'
+authors:
+- Shaoxiang Qin
+- Theodore Potsis
+- Dongxue Zhan
+- Xue Liu
+- Ted Stahopoulos
+- Liangzhu Leon Wang
+date: '2025-03-25'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2503.19708'
+links:
+  paper: https://arxiv.org/abs/2503.19708
+  pdf: https://arxiv.org/pdf/2503.19708
+topic: applications-impacts
+topics:
+- regional-km-scale
+type: model
+method:
+- neural-operator
+spatial:
+- local
+data:
+- km-scale-sim
+status: research
+summary: A Fourier neural operator emulates CFD wind and temperature fields around unseen urban blocks,
+  reaching 0.2 m/s and 0.19°C mean absolute error.
+abstract: Urban microclimate, encompassing wind and temperature fields shaped by building geometry, strongly
+  affects building energy use, pedestrian wind comfort, pollutant dispersion, the urban heat island, and
+  public health. Conventional Computational Fluid Dynamics (CFD) is computationally prohibitive for rapid
+  assessments, while many deep learning approaches require extensive training data and struggle with generalization
+  to unseen configurations. In this work, we present the Fast Localized Urban Microclimate Emulator (FLUME),
+  a rapid, data-efficient, and geometry-aware framework based on a Fourier neural operator for predicting
+  three-dimensional wind and temperature fields. FLUME assumes that, under prescribed inflow and thermal
+  forcing, much of the spatial variation of these mean fields is controlled by surrounding building geometry.
+  The framework introduces a Multi-Directional Distance Feature (MDDF), which captures geometry over adaptive,
+  visibility-defined spatial scales. By decomposing simulations of only 23 urban blocks into smaller 3D
+  patches enriched with precomputed MDDF information, FLUME enables learning from limited CFD data. The
+  model achieves mean absolute errors of 0.2 m/s for streamwise velocity and 0.19$^{\circ}$C for temperature
+  on unseen urban configurations. A deep ensemble provides a practical proxy for epistemic uncertainty,
+  and conformal prediction transforms these estimates into calibrated prediction intervals. Ensemble spread
+  is positively related to local prediction error, with greater uncertainty in roof-level shear layers,
+  building wakes, and vertical velocity near the ground. These results indicate FLUME's potential for
+  rapid scenario assessment in urban design and urban climate studies.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

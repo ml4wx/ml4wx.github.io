@@ -1,0 +1,67 @@
+id: doi-10.1007-s11430-025-1638-8
+title: A gated spatiotemporal fusion network for lightning forecasting based on weather foundation models
+authors:
+- Yiran Li
+- Qingyong Li
+- Dong Zheng
+- Yangli‐ao Geng
+- Zhiqing Guo
+- Liangtao Xu
+- Wen Yao
+- Weitao Lyu
+date: '2025-08-08'
+year: 2025
+venue: Science China Earth Sciences
+venue_type: journal
+ids:
+  doi: 10.1007/s11430-025-1638-8
+  openalex: W4413184819
+links:
+  paper: https://doi.org/10.1007/s11430-025-1638-8
+orgs:
+- cma
+topic: extremes-hazards
+topics:
+- foundation-models
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- other
+- satellite
+status: research
+summary: gSTFNet fuses weather foundation model features with recent lightning observations to produce
+  fine-scale lightning forecasts, aiming to beat NWP-based approaches at lower compute.
+abstract: 'Lightning is a significant natural hazard that poses considerable risks to both human safety
+  and industrial operations. Accurate, fine-scale lightning forecasting is crucial for effective disaster
+  prevention. Traditional forecasting methods primarily rely on numerical weather prediction (NWP), which
+  demands substantial computational resources to solve complex atmospheric evolution equations. Recently,
+  deep learning-based weather prediction models—particularly weather foundation models (WFMs)—have demonstrated
+  promising results, achieving performance comparable to NWP while requiring substantially fewer computational
+  resources. However, existing WFMs are unable to directly generate lightning forecasts and struggle to
+  satisfy the high spatial resolution required for fine-scale prediction. To address these limitations,
+  this paper investigates a fine-scale lightning forecasting approach based on WFMs and proposes a dual-source
+  data-driven forecasting framework that integrates the strengths of both WFMs and recent lightning observations
+  to enhance predictive performance. Furthermore, a gated spatio-temporal fusion network (gSTFNet) is
+  designed to address the challenges of cross-temporal and cross-modal fusion inherent in dual-source
+  data integration. gSTFNet employs a dual-encoding structure to separately encode features from WFMs
+  and lightning observations, effectively narrowing the modal gap in the latent feature space. A gated
+  spatiotemporal fusion module is then introduced to model the spatiotemporal correlations between the
+  two types of features, facilitating seamless cross-temporal fusion. The fused features are subsequently
+  processed by a deconvolutional network to generate accurate lightning forecasts. We evaluate the proposed
+  gSTFNet using real-world lightning observation data collected in Guangdong from 2018 to 2022. Experimental
+  results demonstrate that: (1) In terms of the ETS score, the dual-source framework achieves a 50% improvement
+  over models trained solely on WFMs, and a 300% improvement over the HRES lightning forecasting product
+  released by the European Centre for Medium-Range Weather Forecasts (ECMWF); (2) gSTFNet outperforms
+  several state-of-the-art deep learning baselines that utilize dual-source inputs, clearly demonstrating
+  superior forecasting accuracy.'
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

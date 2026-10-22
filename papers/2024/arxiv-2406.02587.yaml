@@ -1,0 +1,53 @@
+id: arxiv-2406.02587
+title: 'Capturing Climatic Variability: Using Deep Learning for Stochastic Downscaling'
+authors:
+- Kiri Daust
+- Adam Monahan
+date: '2024-05-31'
+year: 2024
+venue: Artificial Intelligence for the Earth Systems
+venue_type: journal
+ids:
+  arxiv: '2406.02587'
+  doi: 10.1175/aies-d-24-0044.1
+  openalex: W4409812880
+links:
+  paper: https://doi.org/10.1175/aies-d-24-0044.1
+  pdf: https://arxiv.org/pdf/2406.02587
+topic: downscaling
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- gan-vae
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Adds in-network noise, adjusted training and a probabilistic loss to GAN downscaling, improving
+  calibration of wind-field downscaling, though wind fields remain harder than synthetic data.
+abstract: 'Adapting to the changing climate requires accurate local climate information, a computationally
+  challenging problem. Recent studies have used Generative Adversarial Networks (GANs), a type of deep
+  learning, to learn complex distributions and downscale climate variables efficiently. Capturing variability
+  while downscaling is crucial for estimating uncertainty and characterising extreme events - critical
+  information for climate adaptation. Since downscaling is an undetermined problem, many fine-scale states
+  are physically consistent with the coarse-resolution state. To quantify this ill-posed problem, downscaling
+  techniques should be stochastic, able to sample realisations from a high-resolution distribution conditioned
+  on low-resolution input. Previous stochastic downscaling attempts have found substantial underdispersion,
+  with models failing to represent the full distribution. We propose approaches to improve the stochastic
+  calibration of GANs in three ways: a) injecting noise inside the network, b) adjusting the training
+  process to explicitly account for the stochasticity, and c) using a probabilistic loss metric. We tested
+  our models first on a synthetic dataset with known distributional properties, and then on a realistic
+  downscaling scenario, predicting high-resolution wind components from low-resolution climate covariates.
+  Injecting noise, on its own, substantially improved the quality of conditional and full distributions
+  in tests with synthetic data, but performed less well for wind field downscaling, where models remained
+  underdispersed. For wind downscaling, we found that adjusting the training method and including the
+  probabilistic loss improved calibration. The best model, with all three changes, showed much improved
+  skill at capturing the full variability of the high-resolution distribution and thus at characterising
+  extremes.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

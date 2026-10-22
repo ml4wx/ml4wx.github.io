@@ -1,0 +1,41 @@
+id: arxiv-2605.08379
+title: Transfer Learning for Dead Fuel Moisture Prediction Using Time-Warping Recurrent Neural Networks
+authors:
+- Jonathon Hirschi
+- Jan Mandel
+- Adam Kochanski
+date: '2026-05-08'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.08379'
+  openalex: W7160931386
+links:
+  paper: https://arxiv.org/abs/2605.08379
+  pdf: https://arxiv.org/pdf/2605.08379
+topic: extremes-hazards
+type: model
+method:
+- rnn
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Time-warping transfer learning adapts an LSTM pretrained on 10h fuel moisture to 1h, 100h and
+  1000h fuels, validated on Oklahoma field data.
+abstract: This paper proposes a time-warping transfer learning method, a technique for temporally rescaling
+  the learned dynamics of a recurrent neural network (RNN) with a Long Short-Term Memory (LSTM) layer
+  to enable task transfer across fuel moisture classes. Fuel moisture content (FMC) is divided into idealized
+  classes based on characteristic lag time. Large quantities of real-time data are available for 10h fuels
+  from sensors on weather stations, but observations of other fuel classes are sparse in space and time.
+  We use transfer learning to adapt an RNN pretrained on 10h FMC to predict FMC for 1h, 100h, and 1000h
+  fuels. We validate this method using data from a landmark field study conducted in Oklahoma that was
+  used to calibrate the state-of-the-art Nelson fuel moisture model.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

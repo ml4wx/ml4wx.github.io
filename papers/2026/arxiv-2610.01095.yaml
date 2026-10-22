@@ -1,0 +1,55 @@
+id: arxiv-2610.01095
+title: Explaining El Niño Forecasts with the Average Gradient Outer Product
+authors:
+- Yuan Hui
+- Dorian S. Abbot
+- Robert J. Webber
+date: '2026-10-01'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.01095'
+  openalex: W7215983027
+links:
+  paper: https://arxiv.org/abs/2610.01095
+  pdf: https://arxiv.org/pdf/2610.01095
+  code: https://github.com/rjwebber/agop-xai
+orgs:
+- university-of-chicago
+topic: xai-uq-physics
+topics:
+- s2s-seasonal
+type: model
+method:
+- other
+timescale:
+- seasonal
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Introduces AGOP XAI and benchmarks it against gradient-based methods on neural ENSO forecasts
+  from the Zebiak-Cane model, scoring highest on attribution, robustness and coherence.
+abstract: 'An important and unresolved problem in the physical sciences is explaining the predictions
+  made by neural networks. Several explainable artificial intelligence (XAI) methods have been proposed
+  to address this problem, including gradient XAI, Integrated Gradients, and GradientSHAP. We evaluate
+  the baseline XAI methods according to four scores: sensitivity (XAI patterns strongly affect predictions),
+  attribution (XAI patterns reproduce the change in prediction relative to a baseline), robustness (XAI
+  patterns remain stable for nearby inputs), and coherence (XAI patterns are spatially smooth). We also
+  introduce a new method, average gradient outer product (AGOP) XAI, that uses global gradient information
+  to identify an important direction for a specific input. We apply XAI to neural network predictions
+  of the El Niño-Southern Oscillation (ENSO) based on data from the Zebiak-Cane model. AGOP XAI achieves
+  the highest attribution, robustness, and coherence scores in the architecture and lead-time comparisons
+  reported here. Its sensitivity is surpassed by gradient XAI, which is maximally sensitive by definition.
+  Beyond diagnosing neural-network behavior, AGOP XAI can generate candidate hypotheses about physical
+  mechanisms. The method highlights an equatorial thermocline-depth signal consistent with recharge oscillator
+  physics, together with a southeastern-Pacific lobe that may be specific to the Zebiak-Cane model. Finally,
+  we test the physical relevance of AGOP using optimized perturbations that move the Zebiak-Cane model
+  along AGOP explanation coordinates. Such perturbations can suppress the selected extreme events or,
+  from a near-neutral ensemble, generate strong El Niño or La Niña events 10 months later.'
+significance: 4
+score: 36
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,58 @@
+id: doi-10.1175-jas-d-24-0085.1
+title: Characterizing Uncertainty in Deep Convection Triggering Using Explainable Machine Learning
+authors:
+- Greta Miller
+- Philip Stier
+- Hannah M. Christensen
+date: '2025-04-07'
+year: 2025
+venue: Journal of the Atmospheric Sciences
+venue_type: journal
+ids:
+  doi: 10.1175/jas-d-24-0085.1
+  openalex: W4409217392
+links:
+  paper: https://doi.org/10.1175/jas-d-24-0085.1
+  pdf: https://journals.ametsoc.org/downloadpdf/view/journals/atsc/aop/JAS-D-24-0085.1/JAS-D-24-0085.1.pdf
+orgs:
+- university-of-oxford
+topic: hybrid-parameterization
+topics:
+- xai-uq-physics
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Random forest predicts deep convection triggering with SHAP clustering to characterize uncertainty,
+  outperforming conventional triggers and suggesting use as a stochastic parameterization.
+abstract: Abstract Realistically representing deep atmospheric convection is important for accurate numerical
+  weather and climate simulations. However, parameterizing where and when deep convection occurs (“triggering”)
+  is a well-known source of model uncertainty. Most triggers parameterize convection deterministically,
+  without considering the uncertainty in the convective state as a stochastic process. In this study,
+  we develop a machine learning model, a random forest, that predicts the probability of deep convection,
+  and then apply clustering of Shapley additive explanations (SHAP) values, an explainable machine learning
+  method, to characterize the uncertainty of convective events. The model uses observed large-scale atmospheric
+  variables from the Atmospheric Radiation Measurement constrained variational analysis dataset over the
+  Southern Great Plains, United States. The analysis of feature importance shows which mechanisms driving
+  convection are most important, with large-scale vertical velocity providing the highest predictive power
+  for more certain, or easier to predict, convective events, followed by the dynamic generation rate of
+  dilute convective available potential energy. Predictions of uncertain, or harder to predict, convective
+  events instead rely more on other features such as precipitable water or low-level temperature. The
+  model outperforms conventional convective triggers. This suggests that probabilistic machine learning
+  models can be used as stochastic parameterizations to improve the occurrence of convection in weather
+  and climate models in the future. Significance Statement Convective storms, which produce clouds and
+  precipitation, are difficult to represent in models since they occur at scales smaller than a model
+  grid box. The purpose of this study is to better understand why convection is sometimes easier or harder
+  to predict with certainty. This is important because predicting where and when convection occurs in
+  atmospheric models affects the energy, moisture, and momentum processes in these models, which is known
+  to lead to errors in weather forecasts and climate projections. This work highlights the importance
+  of representing uncertainty in processes like convection.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

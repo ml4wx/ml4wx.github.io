@@ -1,0 +1,49 @@
+id: arxiv-2604.16429
+title: '(Sparse) Attention to the Details: Preserving Spectral Fidelity in ML-based Weather Forecasting
+  Models'
+authors:
+- Maksim Zhdanov
+- Ana Lucic
+- Max Welling
+- Jan-Willem van de Meent
+date: '2026-04-06'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2604.16429'
+  openalex: W7155046255
+links:
+  paper: https://arxiv.org/abs/2604.16429
+  pdf: https://arxiv.org/pdf/2604.16429
+  code: https://github.com/maxxxzdn/mosaic
+topic: probabilistic-ensembles
+topics:
+- global-medium-range
+type: model
+method:
+- transformer
+- other
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Mosaic, a 214M-parameter 1.5° probabilistic forecaster with learned perturbations and sparse
+  attention, matches 6x finer models and gives spectrally aligned ensembles.
+abstract: 'We introduce Mosaic, a probabilistic weather forecasting model that addresses three failure
+  modes of spectral degradation in ML-based weather prediction: spectral damping (statistical), high-frequency
+  aliasing (architectural), and residual high-frequency leakage (parametric). Mosaic generates ensemble
+  members through learned functional perturbations and operates on native-resolution grids via mesh-aligned
+  block-sparse attention, a hardware-aligned mechanism that captures long-range dependencies at linear
+  cost by sharing keys and values across spatially adjacent queries. At 1.5° resolution with 214M parameters,
+  Mosaic matches or outperforms models trained on 6$\times$ finer resolution on key variables and achieves
+  state-of-the-art results among 1.5° models, producing well-calibrated ensembles whose individual members
+  exhibit near-perfect spectral alignment across all resolved frequencies. A 24-member, 10-day forecast
+  takes under 12s on a single H100~GPU. Code is available at https://github.com/maxxxzdn/mosaic.'
+significance: 5
+score: 30
+highlight: false
+added: '2026-10-22'
+source: backfill

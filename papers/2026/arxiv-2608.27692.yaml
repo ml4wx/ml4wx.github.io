@@ -1,0 +1,52 @@
+id: arxiv-2608.27692
+title: Application of the latent twins approach for clear sky retrieval from IASI observations
+authors:
+- Michele Martinazzo
+- Cristina Sgattoni
+- Marco Menarini
+- Chiara Zugarini
+- Tiziano Maestri
+- Luca Sgheri
+date: '2026-08-27'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2608.27692'
+  openalex: W7204755933
+links:
+  paper: https://arxiv.org/abs/2608.27692
+  pdf: https://arxiv.org/pdf/2608.27692
+topic: observations-remote-sensing
+type: model
+method:
+- other
+spatial:
+- global
+data:
+- satellite
+- nwp-analysis
+status: research
+summary: A latent-twin autoencoder retrieves clear-sky atmospheric profiles and surface variables from
+  IASI spectra, validated on synthetic radiances before applying to real observations.
+abstract: In recent years, data-driven approaches emerged as alternatives to traditional physics-based
+  retrievals, taking advantage of machine learning techniques such as learnable pseudoinverse, random
+  forests, or deep learning architectures. Classical data-driven models generalize poorly to out-of-sample
+  regimes, as they optimize over finite datasets without incorporating underlying physical laws. This
+  often requires large models and extensive data to achieve reliability. Physics-Informed Neural Networks
+  address this by embedding physical constraints into the learning process, enabling improved extrapolation.
+  However, they requires substantial computational cost due to the need to solve governing equations at
+  each training step. In this work, we introduce a novel deep learning architecture, based on latent twin
+  approach, that balances model complexity, dataset size, and training cost, while providing a quantitative
+  measure of data quality. This architecture is applied to IASI spectra, with the goal to assess the robustness
+  of this method for retrieving atmospheric profiles, including temperature, water vapor, ozone, surface
+  emissivity, and surface temperature, in real-world clear-sky conditions. The algorithm is first applied
+  on synthetic radiances derived from the NWP SAF database using the fast radiative transfer code sigma-IASI/F2N.
+  After validating the architecture on synthetic data, the algorithm is applied to IASI Level 1C observations,
+  along with their corresponding Level 2 products which serve as reference to evaluate the reconstruction
+  accuracy of the autoencoder-based retrieval. The retrieval performances are discussed along with possible
+  strategies to provide an error analysis for the reconstructed thermodynamical profiles.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

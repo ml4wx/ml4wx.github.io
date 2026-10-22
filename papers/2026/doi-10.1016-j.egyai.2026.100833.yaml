@@ -1,0 +1,58 @@
+id: doi-10.1016-j.egyai.2026.100833
+title: 'A unified benchmark of deep learning and classical machine learning models for weather-based solar
+  power forecasting: Balancing complexity and skill'
+authors:
+- Dávid Markovics
+- Gergő Bendegúz Békési
+- Martin János Mayer
+date: '2026-07-01'
+year: 2026
+venue: Energy and AI
+venue_type: journal
+ids:
+  doi: 10.1016/j.egyai.2026.100833
+  openalex: W7166808708
+links:
+  paper: https://doi.org/10.1016/j.egyai.2026.100833
+  pdf: https://www.sciencedirect.com/science/article/pii/S266654682600159X/pdf
+topic: applications-impacts
+topics:
+- benchmarks-data-eval
+type: benchmark
+method:
+- rnn
+- transformer
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+status: research
+summary: Benchmarks twelve ML models on ECMWF forecasts for PV power at seven sites; RNNs lead with 46.7-47.7%
+  skill over persistence, versus 40.3% for physical chains.
+abstract: Numerical weather prediction (NWP) is the primary input for forecasting photovoltaic (PV) power
+  generation for lead times ranging from a few hours to several days. Data-driven and hybrid irradiance-to-power
+  methods are considered state-of-the-art; however, it remains unclear whether the latest improvements
+  in machine learning (ML) hold significant potential for this domain. A comparison of 12 classical ML
+  and deep learning (DL) models is presented to compare sequence-to-sequence architectures with feature-engineered
+  tabular regression models from various aspects. All models are implemented and optimized for seven locations,
+  using four years of measured PV power and ECMWF weather forecasts. Results reveal that after careful
+  implementation and proper optimization, each considered ML model is capable of achieving a skill score
+  of 46.7-47.7% over persistence, outperforming the 40.3% skill of reference physical model chains. The
+  most accurate forecasts are created by recurrent neural networks (RNN), including long short-term memory
+  and gated recurrent unit setups, closely followed by Pyraformer, Informer, and Autoformer transformer
+  variants. However, classical multilayer perceptrons (MLP) and kernel ridge regression are also great
+  alternatives, and even easy-to-use ensemble learning algorithms, such as ExtraTrees (ET), can catch
+  up if expert inputs with physical hybridization and temporal feature engineering are provided. The similar
+  forecast quality suggests that model selection should rely on the joint consideration of multiple factors,
+  including the significant computational complexity of DL models and the large sensitivity of ensemble
+  and transformer models to their hyperparameters. Overall, physical modeling, ET, MLP, and RNN are emerging
+  as Pareto-optimal trade-offs of accuracy and runtime.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

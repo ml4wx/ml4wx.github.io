@@ -1,0 +1,64 @@
+id: doi-10.1145-3770854.3783935
+title: 'ASTAFN: Bridging the Gap Between Weather Foundation Models and Accurate Station-Level Forecasting'
+authors:
+- Bi-He Xu
+- Zhicheng Yan
+- Qingyong Li
+- Zhi-Qing Guo
+- D. Zheng
+- Wen Yao
+- Bo Wang
+- Zhao Wang
+- Yangli-Ao Geng
+date: '2026-04-20'
+year: 2026
+venue: Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.1
+venue_type: conference
+ids:
+  doi: 10.1145/3770854.3783935
+  openalex: W7171983792
+links:
+  paper: https://doi.org/10.1145/3770854.3783935
+  pdf: https://doi.org/10.1145/3770854.3783935
+orgs:
+- cma
+topic: post-processing
+topics:
+- local-forecasting
+- foundation-models
+type: model
+method:
+- other
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+- nwp-analysis
+status: operational
+summary: ASTAFN fuses weather foundation model forecasts with station observations, cutting station wind-speed
+  MAE by 20–35% and deployed in CAMS.
+abstract: 'Weather Foundation Models (WFMs) have recently attracted significant attention for their exceptional
+  performance and inference efficiency in global-scale weather forecasting. However, their coarse spatial
+  resolution and inherent biases constrain their utility for station-level forecasting, which is crucial
+  for applications such as renewable energy management and aviation safety. To address these limitations,
+  we propose the Adaptive Spatiotemporal Alignment Fusion Network (ASTAFN), a novel framework designed
+  for accurate station-level weather forecasting through the synergistic integration of WFMs and station
+  observations. ASTAFN incorporates two complementary data sources: (1) recent station observations, which
+  offer fine-grained local trend information, and (2) WFM-generated forecasts, which provide broad-scale
+  weather patterns. The core innovation of ASTAFN lies in its proxy station learning mechanism, which
+  aligns the spatial structure and corrects the biases of WFMs relative to actual station data, facilitating
+  the extraction of homogeneous spatiotemporal features from both sources. These features are dynamically
+  fused at each forecasting step using an adaptive strategy, effectively compensating for WFM biases and
+  enhancing predictive accuracy. Experimental evaluations on three real-world datasets demonstrate that
+  ASTAFN reduces mean absolute error by 20%–35% compared to baseline WFMs for station-level wind speed
+  forecasting. ASTAFN has been deployed on the regional station-level weather forecasting and analysis
+  platform of the Chinese Academy of Meteorological Sciences, currently serving the Guangdong and Yunnan
+  provinces in southern China.'
+significance: 4
+cited_by: 2
+score: 36
+highlight: false
+added: '2026-10-22'
+source: snowball

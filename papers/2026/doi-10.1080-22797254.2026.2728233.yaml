@@ -1,0 +1,55 @@
+id: doi-10.1080-22797254.2026.2728233
+title: Implementation of machine learning for wind speed retrieval from HY-2B altimeter
+authors:
+- Mengyu Hao
+- Weizeng Shao
+- Jiale Chen
+- Xingwei Jiang
+- Guanyin Lin
+date: '2026-09-18'
+year: 2026
+venue: European Journal of Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1080/22797254.2026.2728233
+  openalex: W7213661773
+links:
+  paper: https://doi.org/10.1080/22797254.2026.2728233
+  pdf: https://www.tandfonline.com/doi/pdf/10.1080/22797254.2026.2728233?needAccess=true
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- nwp-analysis
+status: research
+summary: ResNet retrieves ocean wind speed from HY-2B altimeter data, reaching RMSE 1.60 m/s versus 2.52
+  m/s for the operational product against buoys.
+abstract: This study presents a novel machine learning algorithm for wind speed retrieval using the Haiyang-2B
+  (HY-2B) altimeter. To construct a high-fidelity reference dataset, a wind field over the Northwest Pacific
+  Ocean with a spatial resolution of 0.05° and an hourly temporal resolution was hindcast by the Weather
+  Research and Forecasting (WRF) model for the period from 2022 to 2024. Data from multiple active and
+  passive sensors, specifically the Haiyang-2 (HY-2) constellation, the advanced scatterometer (ASCAT),
+  the soil moisture active passive (SMAP) radiometer and the Advanced Microwave Scanning Radiometer 2
+  (AMSR-2), were assimilated into the WRF simulation. Validation of the atmospheric simulations against
+  moored buoy observations yielded a root mean square error (RMSE) of 2.06 m/s, a correlation coefficient
+  (r) of 0.73 and a scatter index (SI) of 0.42. Subsequently, the normalized radar cross section (NRCS)
+  and significant wave height (SWH) from the HY-2B altimeter were collocated with the simulated wind speeds
+  to train four machine learning models, namely the light gradient boosting machine (LightGBM), random
+  forest (RF), eXtreme Gradient Boosting (XGBoost) and residual network (ResNet). The ResNet model demonstrated
+  superior performance, achieving an RMSE of 1.60 m/s, an r of 0.86 and an SI of 0.32. This significantly
+  outperforms the operational HY-2B product, which exhibited an RMSE of 2.52 m/s, an r of 0.69 and an
+  SI of 0.50 when validated against independent moored buoy observations in 2025. These results indicate
+  that the proposed algorithm substantially enhances the accuracy of altimeter-derived wind speeds. Furthermore,
+  when applied specifically to tropical cyclones (TCs), the method demonstrated robust capabilities by
+  achieving an RMSE of 4.72 m/s, an r of 0.84 and an SI of 0.44.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

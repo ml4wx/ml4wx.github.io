@@ -1,0 +1,62 @@
+id: doi-10.5194-egusphere-2026-4059
+title: A Terrain-Aware Residual U-Net Framework for Hourly Kilometre-Scale 2 m Temperature Downscaling
+  over Austria
+authors:
+- Kelsey Ennis
+- Sebastian Scher
+date: '2026-07-21'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.5194/egusphere-2026-4059
+  openalex: W7170043888
+links:
+  paper: https://doi.org/10.5194/egusphere-2026-4059
+  pdf: https://egusphere.copernicus.org/preprints/2026/egusphere-2026-4059/egusphere-2026-4059.pdf
+topic: downscaling
+topics:
+- regional-km-scale
+type: model
+method:
+- cnn
+spatial:
+- regional
+- local
+data:
+- era5
+- other
+status: research
+summary: A terrain-aware residual U-Net downscales hourly ERA5 to kilometre-scale 2 m temperature over
+  Austria, cutting RMSE to 1.22 °C versus 2.39 °C for interpolated ERA5.
+abstract: 'Abstract. High-resolution hourly 2 m air temperature fields are essential for weather, climate,
+  and impact applications in complex terrain, but coarse atmospheric products cannot directly resolve
+  the local thermal structure produced by Alpine topography. This study develops and evaluates a terrain-aware
+  residual U-Net for kilometre-scale hourly 2 m temperature downscaling over Austria and the surrounding
+  Alpine region. The model learns the correction between bilinearly interpolated ERA5 reanalysis and the
+  Integrated Nowcasting through Comprehensive Analysis (INCA) high-resolution temperature analysis using
+  dynamic atmospheric predictors, digital elevation model-derived terrain descriptors, and cyclical time
+  features. Performance is evaluated over an independent 2023–2025 test period against INCA and compared
+  with two reference approaches: 1) interpolated ERA5 and 2) a physically interpretable lapse rate baseline
+  with monthly orographic and bias corrections. In addition to conventional deterministic skill metrics,
+  the evaluation examines whether the downscaled fields reproduce physically meaningful Alpine temperature
+  structure, including spatial error patterns, hourly lapse rate variability, elevation-dependent diurnal
+  cycles, high-frequency spatial variability, ridge-valley temperature contrasts, and heat- and cold-event
+  biases. The residual U-Net substantially improves predictive skill relative to both reference methods.
+  It reduces root-mean-square error from 2.39 °C for interpolated ERA5 and 1.97 °C for the lapse rate
+  baseline to 1.22 °C and reduces mean absolute error from 1.69 °C and 1.37 °C for ERA5 and the lapse
+  rate baseline, respectively, to 0.89 °C. These improvements correspond to root-mean-square error reductions
+  of approximately 49 % relative to ERA5 and 38 % relative to the baseline. The model also weakens terrain-locked
+  error structures, produces smaller and less spatially coherent biases, and better reproduces observed
+  lapse rate variability, high-elevation diurnal cycles, small-scale temperature variability, nocturnal
+  ridge-valley contrasts, and event-scale warm and cold biases. A source-transfer experiment using the
+  NASA MERRA-2 reanalysis predictors without retraining shows that the learned correction remains beneficial
+  relative to raw MERRA-2, but with reduced skill compared to the ERA5-driven model, indicating sensitivity
+  to the driving reanalysis distribution. Overall, the results demonstrate that residual deep-learning
+  downscaling can generate physically realistic INCA-scale hourly temperature fields in Alpine terrain,
+  while also highlighting the need to treat such products as high-resolution emulations of the reference
+  analysis rather than direct observations.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

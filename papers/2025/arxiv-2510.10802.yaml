@@ -1,0 +1,48 @@
+id: arxiv-2510.10802
+title: 'MSCloudCAM: Multi-Scale Context Adaptation with Convolutional Cross-Attention for Multispectral
+  Cloud Segmentation'
+authors:
+- Md Abdullah Al Mazid
+- Liangdong Deng
+- Naphtali Rishe
+date: '2025-10-12'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2510.10802'
+  openalex: W4415854773
+links:
+  paper: https://arxiv.org/abs/2510.10802
+  pdf: https://arxiv.org/pdf/2510.10802
+topic: observations-remote-sensing
+type: model
+method:
+- transformer
+- cnn
+spatial:
+- global
+data:
+- satellite
+status: research
+summary: MSCloudCAM is a multi-scale cross-attention segmentation network for cloud masking in multispectral
+  Sentinel-2 and Landsat-8 imagery, with competitive class-wise accuracy.
+abstract: Clouds remain a major obstacle in optical satellite imaging, limiting accurate environmental
+  and climate analysis. To address the strong spectral variability and the large scale differences among
+  cloud types, we propose MSCloudCAM, a novel multi-scale context adapter network with convolution based
+  cross-attention tailored for multispectral and multi-sensor cloud segmentation. A key contribution of
+  MSCloudCAM is the explicit modeling of multiple complementary multi-scale context extractors. And also,
+  rather than simply stacking or concatenating their outputs, our formulation uses one extractor's fine-resolution
+  features and the other extractor's global contextual representations enabling dynamic, scale-aware feature
+  selection. Building on this idea, we design a new convolution-based cross attention adapter that effectively
+  fuses localized, detailed information with broader multi-scale context. Integrated with a hierarchical
+  vision backbone and refined through channel and spatial attention mechanisms, MSCloudCAM achieves strong
+  spectral-spatial discrimination. Experiments on various multisensor datatsets e.g. CloudSEN12 (Sentinel-2)
+  and L8Biome (Landsat-8), demonstrate that MSCloudCAM achieves superior overall segmentation performance
+  and competitive class-wise accuracy compared to recent state-of-the-art models, while maintaining competitive
+  model complexity, highlighting the novelty and effectiveness of the proposed design for large-scale
+  Earth observation.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

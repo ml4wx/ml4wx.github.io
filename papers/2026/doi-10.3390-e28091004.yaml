@@ -1,0 +1,57 @@
+id: doi-10.3390-e28091004
+title: 'TF-STNet: A Time–Frequency Dual-Branch Spatiotemporal Network for NWP-to-Station Bias Correction'
+authors:
+- Zhao Wang
+- Shuai Chen
+- Yun-Bo Yang
+- Bo Wang
+- Bi-He Xu
+- Yang-Liao Geng
+date: '2026-09-01'
+year: 2026
+venue: Entropy
+venue_type: journal
+ids:
+  doi: 10.3390/e28091004
+  openalex: W7211966803
+links:
+  paper: https://doi.org/10.3390/e28091004
+  pdf: https://doi.org/10.3390/e28091004
+topic: post-processing
+type: model
+method:
+- gnn
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: TF-STNet fuses time- and frequency-domain branches with a station graph to correct NWP at 455
+  stations, winning MAE in 15 of 16 region-variable tasks.
+abstract: Accurate station-scale weather forecasts support renewable-energy and transportation operations,
+  yet gridded numerical weather prediction (NWP) is affected by representativeness errors and regional
+  biases when transferred to irregularly distributed stations. We propose TF-STNet, a time-frequency dual-branch
+  spatiotemporal network for NWP-to-station bias correction. A station-centered K-nearest-neighbor (KNN)
+  operator retains multiple local NWP trajectories. The time-domain pathway separately encodes recent
+  observations and future NWP, aligns them over the forecast horizon using gated dilated causal convolutions,
+  and propagates lead-resolved states through a coordinate-conditioned directed station graph. The frequency-domain
+  pathway learns spectral weights and applies separate attention to amplitude and phase across neighboring
+  NWP cells. Prediction-level fusion combines the two station forecasts by variable, station, and lead
+  time. The evaluation uses hourly data for wind speed, pressure, relative humidity, and temperature from
+  455 stations in Hebei, Shandong, Fujian, and Sichuan. Across five independent runs on 16 region-variable
+  tasks, TF-STNet achieves the lowest mean absolute error (MAE) in 15 tasks and the highest Pearson correlation
+  coefficient (PCC) in 15 tasks; its pressure MAE reduction relative to the strongest learned comparator
+  ranges from 16.2% to 57.4% across the four regions. It has lower MAE than raw NWP in seven of eight
+  high-wind or rapid-change event tests and than simple pressure model-output-statistics corrections in
+  all four regions. The Shandong-temperature task and the Hebei-high-wind case illustrate the limits of
+  the present point-forecast formulation.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: snowball

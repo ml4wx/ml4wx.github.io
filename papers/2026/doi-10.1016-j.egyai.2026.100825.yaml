@@ -1,0 +1,53 @@
+id: doi-10.1016-j.egyai.2026.100825
+title: Bounded residual Temporal Convolutional Network for multi-site day-ahead numerical weather prediction
+  global horizontal irradiance correction
+authors:
+- Christa Elena Blandina Bire
+- Haiyan Lu
+- Fahimeh Ramezani
+date: '2026-06-29'
+year: 2026
+venue: Energy and AI
+venue_type: journal
+ids:
+  doi: 10.1016/j.egyai.2026.100825
+  openalex: W7166547790
+links:
+  paper: https://doi.org/10.1016/j.egyai.2026.100825
+topic: post-processing
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Bounded-residual temporal convolutional network corrects day-ahead NWP GHI forecasts at four
+  sites, cutting RMSE from 78.38 to 74.68 W/m² versus a clustered benchmark.
+abstract: Day-ahead numerical weather prediction (NWP) forecasts of global horizontal irradiance (GHI)
+  often exhibit systematic errors. A common correction strategy assumes that NWP forecast error behaviour
+  is sky-type-specific, with errors being relatively homogeneous within a given sky type and sufficiently
+  distinct across different sky types. Previous work has shown that sky-type-based grouping can support
+  targeted correction. However, through a cross-site diagnostic analysis, this study finds that the assumed
+  error structure is not consistently observed across locations. To address this limitation, a bounded-residual
+  Temporal Convolutional Network (BRTCN) is proposed for post-processing day-ahead NWP GHI forecasts.
+  The model learns constrained residual adjustments relative to the original forecast using NWP GHI, near-surface
+  air temperature, relative humidity, and time-of-day context, producing a corrected 24-hour GHI sequence
+  for the target day. Experiments are conducted using four years of hourly data from multiple sites, with
+  forecasts from two NWP models and evaluation against ground observations. All methods are evaluated
+  on identical prediction days, including the proposed model, raw NWP forecasts, statistical and machine-learning
+  baselines, plain deep-learning baselines, and benchmark methods. On average across four sites, BRTCN
+  reduces root mean square error from 78.38 to 74.68 W/m 2 and mean daily root mean square error from
+  66.28 to 61.31 W/m 2 relative to the clustered benchmark. It achieves the lowest errors at all sites
+  across all comparison methods. These results show that clustering can improve correction performance
+  at selected sites, but its benefit is not consistent across locations. BRTCN provides a robust alternative
+  by maintaining consistent gains without requiring a clustering stage.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

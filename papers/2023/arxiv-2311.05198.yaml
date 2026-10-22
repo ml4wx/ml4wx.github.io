@@ -1,0 +1,46 @@
+id: arxiv-2311.05198
+title: Adaptive-Labeling for Enhancing Remote Sensing Cloud Understanding
+authors:
+- Jay Gala
+- Sauradip Nag
+- Huichou Huang
+- Ruirui Liu
+- Xiatian Zhu
+date: '2023-11-09'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2311.05198'
+  openalex: W4388585878
+links:
+  paper: https://arxiv.org/abs/2311.05198
+  pdf: https://arxiv.org/pdf/2311.05198
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- global
+data:
+- satellite
+status: research
+summary: Model-agnostic iterative adaptive-labeling method corrects noisy cloud segmentation annotations
+  in remote sensing imagery, reaching state-of-the-art on standard cloud benchmarks.
+abstract: Cloud analysis is a critical component of weather and climate science, impacting various sectors
+  like disaster management. However, achieving fine-grained cloud analysis, such as cloud segmentation,
+  in remote sensing remains challenging due to the inherent difficulties in obtaining accurate labels,
+  leading to significant labeling errors in training data. Existing methods often assume the availability
+  of reliable segmentation annotations, limiting their overall performance. To address this inherent limitation,
+  we introduce an innovative model-agnostic Cloud Adaptive-Labeling (CAL) approach, which operates iteratively
+  to enhance the quality of training data annotations and consequently improve the performance of the
+  learned model. Our methodology commences by training a cloud segmentation model using the original annotations.
+  Subsequently, it introduces a trainable pixel intensity threshold for adaptively labeling the cloud
+  training images on the fly. The newly generated labels are then employed to fine-tune the model. Extensive
+  experiments conducted on multiple standard cloud segmentation benchmarks demonstrate the effectiveness
+  of our approach in significantly boosting the performance of existing segmentation models. Our CAL method
+  establishes new state-of-the-art results when compared to a wide array of existing alternatives.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,51 @@
+id: arxiv-2410.21920
+title: Online Test of a Neural Network Deep Convection Parameterization in ARP-GEM1
+authors:
+- Blanka Balogh
+- David Saint-Martin
+- Olivier Geoffroy
+date: '2024-10-29'
+year: 2024
+venue: Artificial Intelligence for the Earth Systems
+venue_type: journal
+ids:
+  arxiv: '2410.21920'
+  doi: 10.1175/aies-d-24-0100.1
+  openalex: W4410616429
+links:
+  paper: https://doi.org/10.1175/aies-d-24-0100.1
+  pdf: https://arxiv.org/pdf/2410.21920
+orgs:
+- meteo-france
+topic: hybrid-parameterization
+topics:
+- infra-software
+type: application
+method:
+- other
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+status: pre-operational
+summary: A neural network emulator of the deep convection scheme runs online in the ARP-GEM1 global model
+  via OASIS coupling, with a 5-year simulation matching the physics-based reference.
+abstract: In this study, we present the integration of a neural network-based parameterization into the
+  global atmospheric model ARP-GEM1, leveraging the Python interface of the OASIS coupler. This approach
+  facilitates the exchange of fields between the Fortran-based ARP-GEM1 model and a Python component responsible
+  for neural network inference. As a proof-of-concept experiment, we trained a neural network to emulate
+  the deep convection parameterization of ARP-GEM1. Using the flexible Fortran/Python interface, we have
+  successfully replaced ARP-GEM1's deep convection scheme with a neural network emulator. To assess the
+  performance of the neural network deep convection scheme, we have run a 5-years ARP-GEM1 simulation
+  using the neural network emulator. The evaluation of averaged fields showed good agreement with output
+  from an ARP-GEM1 simulation using the physics-based deep convection scheme. The Python component was
+  deployed on a separate partition from the general circulation model, using GPUs to increase inference
+  speed of the neural network.
+significance: 4
+cited_by: 2
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

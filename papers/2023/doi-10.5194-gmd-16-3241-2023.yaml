@@ -1,0 +1,67 @@
+id: doi-10.5194-gmd-16-3241-2023
+title: 'Implementation of a machine-learned gas optics parameterization in the ECMWF Integrated Forecasting
+  System: RRTMGP-NN 2.0'
+authors:
+- P. Ukkonen
+- R. Hogan
+date: '2023-06-09'
+year: 2023
+venue: Geoscientific Model Development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-16-3241-2023
+  openalex: W4379986030
+links:
+  paper: https://doi.org/10.5194/gmd-16-3241-2023
+  pdf: https://gmd.copernicus.org/articles/16/3241/2023/gmd-16-3241-2023.pdf
+orgs:
+- ecmwf
+- university-of-reading
+topic: hybrid-parameterization
+topics:
+- infra-software
+type: model
+method:
+- classical-ml
+timescale:
+- medium
+spatial:
+- global
+data:
+- nwp-analysis
+status: operational
+summary: Neural-network gas optics (RRTMGP-NN 2.0) is implemented in ECMWF's IFS radiation scheme, matching
+  RRTMGP accuracy while speeding up radiation.
+abstract: Abstract. Radiation schemes are physically important but computationally expensive components
+  of weather and climate models. This has spurred efforts to replace them with a cheap emulator based
+  on neural networks (NN), obtaining large speed-ups, but at the expense of accuracy, energy conservation
+  and generalization. An alternative approach which is slower but more robust than full emulation is to
+  use NNs to predict optical properties, but keep the radiative transfer equations. Recently, NNs were
+  developed to replace the RRTMGP gas optics scheme, and shown to be accurate while improving speed.However,
+  the evaluations were based solely on offline radiation computations. In this paper, we describe the
+  implementation and prognostic evaluation of RRTMGP-NN in the Integrated Forecasting System (IFS) of
+  the European Centre for Medium-Range Weather Forecasts (ECMWF). The new gas optics scheme was incorporated
+  into ecRad, the modular ECMWF radiation scheme. Using a hybrid loss function designed to reduce radiative
+  forcing errors, and an early stopping method based on monitoring fluxes and heating rates with respect
+  to a line-by-line benchmark, new NN models were trained on RRTMGP k-distributions with reduced spectral
+  resolutions. Offline evaluation of the new NN gas optics, RRTMGP-NN 2.0, shows a very high level of
+  accuracy for clear-sky fluxes and heating rates; for instance the RMSE in shortwave surface downwelling
+  flux is 0.78 W m−2 for RRTMGP and 0.80 W m−2 for RRTMGP-NN in a present-day scenario, while upwelling
+  flux errors are actually smaller for the NN. Because our approach does not affect the treatment of clouds,
+  no additional errors will be introduced for cloudy profiles. RRTMGP-NN closely reproduces radiative
+  forcings for 5 important greenhouse gases across a wide range of concentrations such as 8x CO2. To assess
+  the impact of different gas optics schemes in the IFS, four 1-year coupled ocean-atmosphere simulations
+  were performed for each configuration. The results show that RRTMGP-NN and RRTMGP produce very similar
+  model climates, with the differences being smaller than those between existing schemes, and statistically
+  insignificant for zonal means of single-level quantities such as surface temperature. The use of RRTMGP-NN
+  speeds up ecRad by a factor of 1.5 compared to RRTMGP (the gas optics being almost 3 times faster),
+  and is also faster than the older and less accurate RRTMG which is used in the current operational cycle
+  of the IFS.
+significance: 6
+cited_by: 10
+score: 69
+highlight: true
+highlight_reason: Implements and tests NN gas optics (RRTMGP-NN) inside ECMWF IFS; a rare prognostic evaluation
+  of ML in an operational model.
+added: '2026-10-22'
+source: snowball

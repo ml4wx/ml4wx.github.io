@@ -1,0 +1,65 @@
+id: doi-10.3390-atmos17080766
+title: Regional Lightning Occurrence Probability Forecasting and Risk Identification Based on Resampling
+  Ensemble Machine Learning
+authors:
+- Zhoulong Wang
+- Wenjie Chen
+- Yuan Niu
+- Chen Wang
+- 陶彦岑
+- Jiahua Li
+- Songtai Wu
+- Guiting Song
+date: '2026-08-06'
+year: 2026
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos17080766
+  openalex: W7196923060
+links:
+  paper: https://doi.org/10.3390/atmos17080766
+topic: extremes-hazards
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: Resampling stacking ensemble of LightGBM and CatBoost gives regional grid-hour lightning probability
+  forecasts from ERA5, reaching ROC-AUC 0.945 on the 2025 test set.
+abstract: Accurate regional lightning-occurrence prediction is important for operational weather-risk
+  management, but its development is challenged by the severe class imbalance of grid-hour lightning samples.
+  This study proposes a repeated random undersampling (RUS) stacking ensemble that combines heterogeneous
+  machine-learning models and produces probabilistic lightning-occurrence forecasts using atmospheric
+  variables from the European Centre for Medium-Range Weather Forecasts (ECMWF) fifth-generation reanalysis
+  (ERA5), together with spatial and temporal predictors. The effects of the undersampling ratio, ensemble
+  size, and positive-class weighting were systematically evaluated, and a configuration with a RUS ratio
+  of 1:15, 20 ensemble members, and a positive-class weight of 2 was selected. Using an operational threshold
+  of 0.591 selected exclusively on the 2024 validation set, the final model achieved an area under the
+  receiver operating characteristic curve (ROC-AUC) of 0.945, an area under the precision–recall curve
+  (PR-AUC) of 0.235, a probability of detection (POD) of 0.521, and an F1-score of 0.302 on the independent
+  2025 test set. Physical-variable-group ablation and aggregated TreeSHAP (tree-based Shapley additive
+  explanations) analyses were further conducted to interpret the predictions. Removing the spatiotemporal
+  predictors produced the largest reduction in performance, followed by removing cloud and microphysical
+  variables. Both the Light Gradient Boosting Machine (LightGBM) and categorical boosting (CatBoost) models
+  consistently identified longitude, latitude, total-column cloud ice water, and convective available
+  potential energy as the leading predictors, while higher cloud-ice-water content and stronger convective-instability
+  indices generally shifted model outputs towards lightning occurrence. Direct transfer of the ERA5-trained
+  ensemble to corresponding ECMWF forecast fields without retraining retained useful predictive skill
+  and substantially outperformed the operational ECMWF lightning product over the collocated evaluation
+  samples, although performance degradation indicated a cross-dataset distribution shift. These results
+  demonstrate the value of combining imbalance-aware ensemble learning with physically interpretable predictors
+  for regional lightning-risk forecasting, while the strong influence of geographic variables indicates
+  that external validation and local recalibration or retraining are required before application to other
+  regions.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

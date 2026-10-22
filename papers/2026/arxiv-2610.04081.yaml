@@ -1,0 +1,49 @@
+id: arxiv-2610.04081
+title: 'AEGIS: Differentiable Mars Climate Model with Neural Closures'
+authors:
+- Sameera S Kashyap
+- Victor Cruz
+- Angel Yepez
+- Razvan Marinescu
+date: '2026-10-02'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.04081'
+  openalex: W7220671180
+links:
+  paper: https://arxiv.org/abs/2610.04081
+  pdf: https://arxiv.org/pdf/2610.04081
+topic: hybrid-parameterization
+type: model
+method:
+- differentiable
+timescale:
+- climate
+spatial:
+- global
+data:
+- other
+status: research
+summary: AEGIS is a differentiable Mars climate model with neural-closure interfaces that runs stable
+  ten-Mars-year simulations reproducing the seasonal CO2 cycle and conserving CO2 inventory.
+abstract: General circulation models (GCMs) are the primary tool for simulating planetary atmospheres.
+  They play a vital role in understanding Mars's atmosphere, as forecasting its unique weather is mission-critical
+  for operations such as entry, descent, and landing. Mars poses unusual challenges for these models,
+  as observations are sparse compared to Earth. In addition, a thin \co{} atmosphere alongside a radiatively
+  active dust cycle creates a volatile atmosphere with large diurnal temperature swings and no true terrestrial
+  analog for validation. Existing Mars GCMs, including the LMD PCM, the NASA Ames Mars GCM, and PlanetWRF,
+  are mature and physically detailed but are implemented in legacy Fortran with finite-difference or finite-volume
+  solvers, and they do not expose gradients for calibration or machine learning. Here we present AEGIS,
+  a modular differentiable Mars climate model that couples Mars's unique atmospheric physics to the Dinosaur
+  dynamical core, with interfaces for neural closures. We showcase stable ten-Mars-year simulations that
+  reproduce the seasonal \co{} cycle while conserving the total \co{} inventory, capture realistic large-scale
+  surface-temperature structure, and produce surface pressure that follows Mars Orbiter Laser Altimeter
+  (MOLA) topography. Gradients through coupled trajectories agree with finite differences and support
+  physical calibration and neural training. We compare with conventional GCMs, highlighting the framework's
+  computational efficiency and differentiability.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

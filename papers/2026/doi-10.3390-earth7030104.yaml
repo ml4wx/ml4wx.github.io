@@ -1,0 +1,59 @@
+id: doi-10.3390-earth7030104
+title: Machine Learning-Based Weather Classification over Morocco Using Multi-Station METAR Observations
+authors:
+- Samir Saadane
+- Lahcen Hassine
+- H. K. Aroussi
+- Rachid Saadane
+date: '2026-06-17'
+year: 2026
+venue: Earth
+venue_type: journal
+ids:
+  doi: 10.3390/earth7030104
+  openalex: W7164990639
+links:
+  paper: https://doi.org/10.3390/earth7030104
+  pdf: https://doi.org/10.3390/earth7030104
+topic: observations-remote-sensing
+topics:
+- applications-impacts
+type: application
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- stations
+status: research
+summary: Boosted trees classify Moroccan weather regimes from 22 stations of hourly METAR data, with XGBoost
+  reaching 95.1% test accuracy.
+abstract: Accurate weather-regime classification is increasingly important for climate-sensitive decision-making
+  in agriculture, aviation, disaster preparedness, and territorial planning, particularly in regions where
+  strong climatic heterogeneity complicates conventional operational workflows. This study proposes a
+  machine learning-based framework for broad-regime weather classification over Morocco using hourly METAR
+  observations collected from 22 meteorological stations between July 2022 and February 2024. The proposed
+  workflow integrates data cleaning, missing-value imputation, feature transformation, categorical encoding,
+  class-imbalance handling, and model optimization under a leakage-safe experimental protocol. To preserve
+  temporal integrity, observations were chronologically split into training, validation, and independent
+  test subsets; SMOTE and random undersampling were applied exclusively to the training subset, whereas
+  the validation and test subsets retained their original class distributions. Seven classifiers were
+  evaluated, including XGBoost, LightGBM, CatBoost, Random Forest, Gradient Boosting, Support Vector Machine,
+  and Logistic Regression, with hyperparameters optimized using Optuna. The results show that optimized
+  boosting models are particularly effective for Moroccan station-based weather classification. XGBoost
+  achieved the highest test-set accuracy of 95.1%, followed by LightGBM at 94.7% and CatBoost at 93.8%,
+  with optimization improving accuracy by approximately 8–12 percentage points compared with baseline
+  configurations. Because the dataset exhibits class imbalance, macro-averaged precision, recall, and
+  F1-score were emphasized alongside accuracy to provide a more reliable assessment across weather classes.
+  Confusion-matrix analysis indicates improved recognition of underrepresented regimes, especially Dust/Sand
+  events, while residual confusion between Fog/Haze and Rain/Storm reflects both physical overlap and
+  the limits of a four-class METAR taxonomy. Overall, the findings demonstrate that optimized ensemble
+  learning can provide a robust, computationally efficient, and operationally relevant classification
+  layer for regional meteorological decision support in Morocco, while future work should extend the framework
+  to longer time series, finer weather taxonomies, and external regional validation.
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: snowball

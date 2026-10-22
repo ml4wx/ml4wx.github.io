@@ -1,0 +1,64 @@
+id: doi-10.1088-1361-6501-aeacbb
+title: Distributed photovoltaic power forecasting based on dynamic fusion of physical priors and numerical
+  weather prediction
+authors:
+- Shuyan Liu
+- Wei Huang
+- mingkang li
+- Jiangyan Sang
+- Di Hai
+- Zhang Shu
+- Peng Li
+date: '2026-09-28'
+year: 2026
+venue: Measurement Science and Technology
+venue_type: journal
+ids:
+  doi: 10.1088/1361-6501/aeacbb
+  openalex: W7214664745
+links:
+  paper: https://doi.org/10.1088/1361-6501/aeacbb
+  pdf: https://iopscience.iop.org/article/10.1088/1361-6501/aeacbb/pdf
+topic: applications-impacts
+topics:
+- post-processing
+type: model
+method:
+- transformer
+- physics-constrained
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Fuses physical PV power priors with NWP meteorological sequences via dual-branch TimeMixer and
+  physics-constrained losses; R2 reaches 0.898 across three sites.
+abstract: Abstract Distributed photovoltaic (PV) power forecasting remains difficult because existing
+  data-driven methods mainly learn statistical correlations from historical samples and often produce
+  physically inconsistent outputs under rapidly changing weather. From a measurement perspective, this
+  task requires reliable inference of an unobserved future power quantity from heterogeneous and uncertain
+  inputs, including historical power measurements and numerical weather predictions. To address this issue,
+  this paper proposes a forecasting framework that dynamically fuses physical priors and forecast meteorological
+  information. Its novelty lies in treating the physical power envelope and baseline as interpretable
+  measurement references rather than merely concatenating them with data-driven features. A physical power
+  upper bound and a physical baseline power are first constructed from irradiance, temperature, wind speed,
+  and humidity. A dual-branch TimeMixer encoder separately models the forecast meteorological and physical-prior
+  sequences, while multi-scale cross attention and dynamic gating adaptively fuse weather evolution with
+  physical power evolution. Residual correction around the physical baseline is further combined with
+  physics-constrained losses to suppress over-bound and nighttime-positive predictions. Experiments on
+  three distributed PV sites show that the proposed method achieves R 2 values of 0.874, 0.898, and 0.766
+  and root mean square error (RMSE) values of 5.603, 9.854, and 6.423 kW, respectively, with a false alarm
+  rate (FAR) of 0 across all sites. Compared with the best-performing baseline at each site, it reduces
+  RMSE by up to 35.8% under normal conditions and by up to 37.7% under complex weather; even in complex-weather
+  scenarios, it maintains R 2 values of 0.679–0.801 and a FAR of 0. These results demonstrate improved
+  accuracy, traceability to physically meaningful reference quantities, and robustness under challenging
+  weather, with broader relevance to measurement-informed monitoring, grid operation, and energy management.
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

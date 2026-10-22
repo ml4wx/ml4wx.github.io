@@ -1,0 +1,54 @@
+id: doi-10.3390-forecast6010004
+title: Predictive Analytics of Air Temperature in Alaskan Permafrost Terrain Leveraging Two-Level Signal
+  Decomposition and Deep Learning
+authors:
+- Mohamed Aymane Ahajjam
+- Jaakko K. Putkonen
+- Emmanuel Chukwuemeka
+- Robert Chance
+- Timothy J. Pasch
+date: '2024-01-09'
+year: 2024
+venue: Forecasting
+venue_type: journal
+ids:
+  doi: 10.3390/forecast6010004
+  openalex: W4390707269
+links:
+  paper: https://doi.org/10.3390/forecast6010004
+  pdf: https://www.mdpi.com/2571-9394/6/1/4/pdf?version=1704805373
+topic: local-forecasting
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: A VMD-WT-InceptionTime hybrid forecasts seven-day air temperature at three Alaskan sites from
+  35 years of data, beating transformer and LSTM baselines.
+abstract: 'Local weather forecasts in the Arctic outside of settlements are challenging due to the dearth
+  of ground-level observation stations and high computational costs. During winter, these forecasts are
+  critical to help prepare for potentially hazardous weather conditions, while in spring, these forecasts
+  may be used to determine flood risk during annual snow melt. To this end, a hybrid VMD-WT-InceptionTime
+  model is proposed for multi-horizon multivariate forecasting of remote-region temperatures in Alaska
+  over short-term horizons (the next seven days). First, the Spearman correlation coefficient is employed
+  to analyze the relationship between each input variable and the forecast target temperature. The most
+  output-correlated input sequences are decomposed using variational mode decomposition (VMD) and, ultimately,
+  wavelet transform (WT) to extract time-frequency patterns intrinsic in the raw inputs. The resulting
+  sequences are fed into a deep InceptionTime model for short-term forecasting. This hybrid technique
+  has been developed and evaluated using 35+ years of data from three locations in Alaska. Different experiments
+  and performance benchmarks are conducted using deep learning models (e.g., Time Series Transformers,
+  LSTM, MiniRocket), and statistical and conventional machine learning baselines (e.g., GBDT, SVR, ARIMA).
+  All forecasting performances are assessed using four metrics: the root mean squared error, the mean
+  absolute percentage error, the coefficient of determination, and the mean directional accuracy. Superior
+  forecasting performance is achieved consistently using the proposed hybrid technique.'
+significance: 3
+cited_by: 6
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

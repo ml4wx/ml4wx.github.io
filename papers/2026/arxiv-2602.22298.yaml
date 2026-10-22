@@ -1,0 +1,52 @@
+id: arxiv-2602.22298
+title: 'AviaSafe: A Physics-Informed Data-Driven Model for Aviation Safety-Critical Cloud Forecasts'
+authors:
+- Zijian Zhu
+- Qiusheng Huang
+- Anboyu Guo
+- Xiaohui Zhong
+- Hao Li
+date: '2026-02-25'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2602.22298'
+  openalex: W7131852003
+links:
+  paper: https://arxiv.org/abs/2602.22298
+  pdf: https://arxiv.org/pdf/2602.22298
+topic: global-medium-range
+topics:
+- applications-impacts
+type: model
+method:
+- transformer
+- physics-constrained
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: Physics-informed global model forecasts four cloud hydrometeor species up to 7 days for aviation
+  icing risk, outperforming operational NWP on some variables at day 7.
+abstract: 'Current AI weather forecasting models predict conventional atmospheric variables but cannot
+  distinguish between cloud microphysical species critical for aviation safety. We introduce AviaSafe,
+  a hierarchical, physics-informed neural forecaster that produces global, six-hourly predictions of these
+  four hydrometeor species for lead times up to 7 days. Our approach addresses the unique challenges of
+  cloud prediction: extreme sparsity, discontinuous distributions, and complex microphysical interactions
+  between species. We integrate the Icing Condition (IC) index from aviation meteorology as a physics-based
+  constraint that identifies regions where supercooled water fuels explosive ice crystal growth. The model
+  employs a hierarchical architecture that first predicts cloud spatial distribution through masked attention,
+  then quantifies species concentrations within identified regions. Training on ERA5 reanalysis data,
+  our model achieves lower RMSE for cloud species compared to baseline and outperforms operational numerical
+  models on certain key variables at 7-day lead times. The ability to forecast individual cloud species
+  enables new applications in aviation route optimization where distinguishing between ice and liquid
+  water determines engine icing risk.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

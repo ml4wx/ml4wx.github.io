@@ -1,0 +1,47 @@
+id: arxiv-2610.04034
+title: 'LD-EnFF: Latent-Dynamics Ensemble Flow Filtering for Data Assimilation with Sparse Observations'
+authors:
+- Ziyu Tian
+- Kaichen Shen
+- Wenbo Hao
+- Phillip Si
+- Peng Chen
+- Wei Zhu
+date: '2026-10-02'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.04034'
+  openalex: W7220676259
+links:
+  paper: https://arxiv.org/abs/2610.04034
+  pdf: https://arxiv.org/pdf/2610.04034
+topic: data-assimilation
+type: model
+method:
+- gan-vae
+- diffusion
+data:
+- other
+status: research
+summary: Latent-dynamics ensemble flow filter with a VAE observation model and flow-matching update outperforms
+  standard assimilation on Kolmogorov flow, tsunami and atmospheric benchmarks.
+abstract: 'Data assimilation combines model forecasts with noisy, incomplete observations to estimate
+  the evolving state of a dynamical system. Existing methods face two compounding challenges: high-dimensional
+  nonlinear dynamics make repeated forward simulation computationally expensive, while sparse observations
+  provide limited direct information about the full state. To address these challenges, we propose the
+  Latent-Dynamics Ensemble Flow Filter (LD-EnFF), a sequential Bayesian filtering framework that performs
+  both forecast propagation and filtering updates in a compact latent space. LD-EnFF combines a latent
+  dynamics surrogate for ensemble propagation with a variational autoencoder (VAE)-based observation model
+  that evaluates a state-dependent observation likelihood in latent space. At each assimilation step,
+  an ensemble filtering update based on flow matching uses the forecast ensemble and this likelihood to
+  generate posterior samples, jointly updating latent states and uncertain parameters. This design avoids
+  repeated full-state simulation during forecasting and full-field reconstruction during likelihood evaluation.
+  LD-EnFF substantially outperforms a broad range of data assimilation algorithms on benchmarks spanning
+  Kolmogorov flow, tsunami propagation, and atmospheric modeling, all featuring complex dynamics and sparse,
+  noisy observations.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

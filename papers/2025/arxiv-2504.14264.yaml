@@ -1,0 +1,48 @@
+id: arxiv-2504.14264
+title: Generative emulation of chaotic dynamics with coherent prior
+authors:
+- Juan Nathaniel
+- Pierre Gentine
+date: '2025-04-19'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2504.14264'
+  doi: 10.1016/j.cma.2025.118410
+links:
+  paper: https://arxiv.org/abs/2504.14264
+  pdf: https://arxiv.org/pdf/2504.14264
+topic: s2s-seasonal
+type: model
+method:
+- diffusion
+timescale:
+- s2s
+spatial:
+- global
+data:
+- other
+status: research
+summary: Diffusion emulator guided by Koopman-based coherent priors improves long-range forecasts of chaotic
+  flows, including subseasonal-to-seasonal climate dynamics.
+abstract: 'Data-driven emulation of nonlinear dynamics is challenging due to long-range skill decay that
+  often produces physically unrealistic outputs. Recent advances in generative modeling aim to address
+  these issues by providing uncertainty quantification and correction. However, the quality of generated
+  simulation remains heavily dependent on the choice of conditioning priors. In this work, we present
+  an efficient generative framework for dynamics emulation, unifying principles of turbulence with diffusion-based
+  modeling: Cohesion. Specifically, our method estimates large-scale coherent structure of the underlying
+  dynamics as guidance during the denoising process, where small-scale fluctuation in the flow is then
+  resolved. These coherent priors are efficiently approximated using reduced-order models, such as deep
+  Koopman operators, that allow for rapid generation of long prior sequences while maintaining stability
+  over extended forecasting horizon. With this gain, we can reframe forecasting as trajectory planning,
+  a common task in reinforcement learning, where conditional denoising is performed once over entire sequences,
+  minimizing the computational cost of autoregressive-based generative methods. Empirical evaluations
+  on chaotic systems of increasing complexity, including Kolmogorov flow, shallow water equations, and
+  subseasonal-to-seasonal climate dynamics, demonstrate Cohesion superior long-range forecasting skill
+  that can efficiently generate physically-consistent simulations, even in the presence of partially-observed
+  guidance.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

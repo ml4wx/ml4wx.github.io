@@ -1,0 +1,58 @@
+id: arxiv-2401.17001
+title: A Framework of Data Assimilation for Wind Flow Fields by Physics-informed Neural Networks
+authors:
+- Chang Feng Yan
+- Shengfeng Xu
+- Zhenxu Sun
+- Thorsten Lutz
+- Dilong Guo
+- Guowei Yang
+date: '2024-01-01'
+year: 2024
+venue: Applied Energy
+venue_type: journal
+ids:
+  arxiv: '2401.17001'
+  doi: 10.2139/ssrn.4743074
+  openalex: W4391421318
+links:
+  paper: https://doi.org/10.1016/j.apenergy.2024.123719
+  pdf: https://arxiv.org/pdf/2401.17001
+topic: data-assimilation
+topics:
+- applications-impacts
+type: model
+method:
+- physics-constrained
+spatial:
+- local
+data:
+- other
+status: research
+summary: Physics-informed neural networks assimilate lidar, anemometer and pressure data into wind fields
+  at turbine sites, reaching 3.7% error in real-time demonstrations.
+abstract: Various types of measurement techniques, such as Light Detection and Ranging (LiDAR) devices,
+  anemometers, and wind vanes, are extensively utilized in wind energy to characterize the inflow. However,
+  these methods typically gather data at limited points within local wind fields, capturing only a fraction
+  of the wind field's characteristics at wind turbine sites, thus hindering detailed wind field analysis.
+  This study introduces a framework using Physics-informed Neural Networks to assimilate diverse sensor
+  data types. This includes line-of-sight wind speed, velocity magnitude and direction, velocity components,
+  and pressure. Moreover, the parameterized Navier-Stokes equations are integrated as physical constraints,
+  ensuring that the neural networks accurately represent atmospheric flow dynamics. The framework accounts
+  for the turbulent nature of atmospheric boundary layer flow by including artificial eddy viscosity in
+  the network outputs, enhancing the model's ability to learn and accurately depict large-scale flow structures.
+  The reconstructed flow field and the effective wind speed are in good agreement with the actual data.
+  Furthermore, a transfer learning strategy is employed for the online deployment of pre-trained PINN,
+  which requires less time than that of the actual physical flow. This capability allows the framework
+  to reconstruct wind flow fields in real time based on live data. In the demo cases, the maximum error
+  between the effective wind speed reconstructed online and the actual value at the wind turbine site
+  is only 3.7%. The proposed data assimilation framework provides a universal tool for reconstructing
+  spatiotemporal wind flow fields using various measurement data. Additionally, it presents a viable approach
+  for the online assimilation of real-time measurements. To facilitate the utilization of wind energy,
+  our framework's source code is openly accessible.
+significance: 3
+cited_by: 30
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

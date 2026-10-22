@@ -1,0 +1,46 @@
+id: arxiv-2502.12427
+title: Frequency-Aware Vision Transformers for High-Fidelity Super-Resolution of Earth System Models
+authors:
+- Ehsan Zeraatkar
+- Salah A Faroughi
+- Jelena Tešić
+date: '2025-02-18'
+year: 2025
+venue: Scientific Reports
+venue_type: journal
+ids:
+  arxiv: '2502.12427'
+  doi: 10.1038/s41598-026-41020-5
+  openalex: W7131262840
+links:
+  paper: https://doi.org/10.1038/s41598-026-41020-5
+  pdf: https://arxiv.org/pdf/2502.12427
+topic: downscaling
+type: model
+method:
+- transformer
+spatial:
+- global
+data:
+- km-scale-sim
+status: research
+summary: Frequency-aware vision transformers ViSIR and ViFOR super-resolve E3SM Earth system model fields,
+  gaining up to 2.6 dB PSNR over CNN, generative and transformer baselines.
+abstract: Super-resolution can play an essential role in enhancing the spatial fidelity of Earth System
+  Model outputs, allowing fine-scale structures highly beneficial to climate science to be recovered from
+  coarse simulations. However, traditional deep super-resolution methods, including convolutional and
+  transformer based models, tend to exhibit spectral bias, reconstructing low-frequency content more readily
+  than valuable high-frequency details. In this work, we introduce ViSIR and ViFOR, two frequency-aware
+  frameworks. ViSIR stands for the Vision Transformer-Tuned Sinusoidal Implicit Representation. ViSIR
+  combines vision transformers with sinusoidal activations to mitigate spectral bias. ViFOR stands for
+  the Vision Transformer Fourier Representation Network. ViFOR integrates explicit Fourier based filtering
+  for independent low- and high-frequency learning. Evaluated on the E3SM-HR Earth system dataset across
+  surface temperature, shortwave, and longwave fluxes, these models outperform leading Convolutional NN,
+  Generative Networks, and vanilla transformer baselines, with ViFOR demonstrating up to 2.6~dB improvements
+  in Peak Signal to Noise Ratio and higher Structural Similarity.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

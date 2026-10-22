@@ -1,0 +1,57 @@
+id: doi-10.3390-s24186049
+title: 'LLMDiff: Diffusion Model Using Frozen LLM Transformers for Precipitation Nowcasting'
+authors:
+- Lei She
+- Cheng Zhang
+- Xin Man
+- Jie Shao
+date: '2024-09-19'
+year: 2024
+venue: Sensors
+venue_type: journal
+ids:
+  doi: 10.3390/s24186049
+  openalex: W4402648489
+links:
+  paper: https://doi.org/10.3390/s24186049
+  pdf: https://www.mdpi.com/1424-8220/24/18/6049/pdf?version=1726719869
+orgs:
+- cma
+topic: nowcasting
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+- transformer
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- satellite
+status: research
+summary: Diffusion-based probabilistic precipitation nowcasting that uses a frozen pretrained LLM transformer
+  block as a visual encoder, evaluated on SEVIR radar and satellite data.
+abstract: 'Precipitation nowcasting, which involves the short-term, high-resolution prediction of rainfall,
+  plays a crucial role in various real-world applications. In recent years, researchers have increasingly
+  utilized deep learning-based methods in precipitation nowcasting. The exponential growth of spatiotemporal
+  observation data has heightened interest in recent advancements such as denoising diffusion models,
+  which offer appealing prospects due to their inherent probabilistic nature that aligns well with the
+  complexities of weather forecasting. Successful application of diffusion models in rainfall prediction
+  tasks requires relevant conditions and effective utilization to direct the forecasting process of the
+  diffusion model. In this paper, we propose a probabilistic spatiotemporal model for precipitation nowcasting,
+  named LLMDiff. The architecture of LLMDiff includes two networks: a conditional encoder-decoder network
+  and a denoising network. The conditional network provides conditional information to guide the denoising
+  network for high-quality predictions related to real-world earth systems. Additionally, we utilize a
+  frozen transformer block from pre-trained large language models (LLMs) in the denoising network as a
+  universal visual encoder layer, which enables the accurate estimation of motion trend by considering
+  long-term temporal context information and capturing temporal dependencies within the frame sequence.
+  Our experimental results demonstrate that LLMDiff outperforms state-of-the-art models on the SEVIR dataset.'
+significance: 4
+cited_by: 9
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

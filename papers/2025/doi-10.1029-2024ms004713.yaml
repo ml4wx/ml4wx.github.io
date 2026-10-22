@@ -1,0 +1,71 @@
+id: doi-10.1029-2024ms004713
+title: Using Machine Learning to Generate a GISS ModelE Calibrated Physics Ensemble (CPE)
+authors:
+- G. Elsaesser
+- M. van Lier-Walqui
+- Qing-Yuan Yang
+- M. Kelley
+- A. Ackerman
+- A. Fridlind
+- G. Cesana
+- G. Schmidt
+- Jingbo Wu
+- A. Behrangi
+- S. Camargo
+- B. De
+- Kuniaki Inoue
+- Nicolas M. Leitmann-Niimi
+- J. D. Strong
+date: '2025-04-01'
+year: 2025
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2024ms004713
+  openalex: W4409358942
+links:
+  paper: https://doi.org/10.1029/2024ms004713
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2024MS004713
+orgs:
+- columbia-leap
+- nasa
+topic: climate-emulation
+topics:
+- xai-uq-physics
+type: model
+method:
+- classical-ml
+timescale:
+- climate
+spatial:
+- global
+data:
+- satellite
+- other
+status: research
+summary: A neural-network surrogate of GISS ModelE enables MCMC calibration of 45 physics parameters,
+  improving shallow cumulus and Amazon rainfall.
+abstract: A neural network (NN) surrogate of the NASA GISS ModelE atmosphere (version E3) is trained on
+  a perturbed parameter ensemble (PPE) spanning 45 physics parameters and 36 outputs. The NN is leveraged
+  in a Markov Chain Monte Carlo (MCMC) Bayesian parameter inference framework to generate a second posterior
+  constrained ensemble coined a “calibrated physics ensemble”, or CPE. The CPE members are characterized
+  by diverse parameter combinations and are, by definition, close to top-of-atmosphere radiative balance,
+  and must broadly agree with numerous hydrologic, energy cycle and radiative forcing metrics simultaneously.
+  Global observations of numerous cloud, environment, and radiation properties (provided by global satellite
+  products) are crucial for CPE generation. The inference framework explicitly accounts for discrepancies
+  (or biases) in satellite products during CPE generation. We demonstrate that product discrepancies strongly
+  impact calibration of important model parameter settings (e.g., convective plume entrainment rates;
+  fall speed for cloud ice). Structural improvements new to E3 are retained across CPE members (e.g.,
+  stratocumulus simulation). Notably, the framework improved the simulation of shallow cumulus and Amazon
+  rainfall while not degrading radiation fields, an upgrade that neither default parameters nor Latin
+  Hypercube parameter searching achieved. Analyses of the initial PPE suggested several parameters were
+  unimportant for output variation. However, many “unimportant” parameters were needed for CPE generation,
+  a result that brings to the forefront how parameter importance should be determined in PPEs. From the
+  CPE, two diverse 45-dimensional parameter configurations are retained to generate radiatively-balanced,
+  auto-tuned atmospheres that were used in two E3 submissions to CMIP6
+significance: 5
+cited_by: 26
+score: 55
+highlight: false
+added: '2026-10-22'
+source: snowball

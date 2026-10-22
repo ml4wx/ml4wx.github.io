@@ -1,0 +1,46 @@
+id: arxiv-2604.25172
+title: Conditional Flow Matching for Probabilistic Downscaling of Maximum 3-day Snowfall in Alaska
+authors:
+- Douglas Brinkerhoff
+- Elizabeth Fischer
+date: '2026-04-28'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2604.25172'
+  openalex: W7158406004
+links:
+  paper: https://arxiv.org/abs/2604.25172
+  pdf: https://arxiv.org/pdf/2604.25172
+  code: https://github.com/glide-ism/wrf-flow
+topic: downscaling
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+spatial:
+- regional
+data:
+- cmip
+- km-scale-sim
+status: research
+summary: WxFlow, a flow-matching generative model, downscales coarse climate output to 4 km snowfall ensembles
+  in Alaska, with 87.8% spectral fidelity gain over lapse-rate bicubic.
+abstract: Precipitation in complex terrain is governed by orographic processes operating at scales of
+  a few kilometers, yet climate models typically run at resolutions of 50--100~km where this topographic
+  detail is absent. Dynamical downscaling with high-resolution regional models such as WRF can resolve
+  these processes, but the computational cost -- months of wall-clock time per scenario -- precludes the
+  large ensembles needed for uncertainty quantification. We present WxFlow, a conditional generative model
+  based on flow matching that learns to map coarse-resolution climate model output and high-resolution
+  topography to calibrated probabilistic ensembles of fine-scale precipitation fields. Applied to 4~km
+  WRF simulations of maximum 3-day snowfall over southeast Alaska, WxFlow achieves 87.8\% improvement
+  in spectral fidelity and dramatically lower Continuous Ranked Probability Scores relative to conventional
+  lapse-rate-corrected bicubic downscaling, while generating 50-member ensembles in seconds on a laptop.
+  Ensemble spread is spatially coherent and governed by topography, reflecting physically plausible uncertainty
+  structure. All code is available at https://github.com/glide-ism/wrf-flow.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

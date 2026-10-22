@@ -1,0 +1,69 @@
+id: arxiv-2402.03079
+title: Simulating Atmospheric Processes in Earth System Models and Quantifying Uncertainties with Deep
+  Learning Multi-Member and Stochastic Parameterizations
+authors:
+- Gunnar Behrens
+- Tom Beucler
+- Fernando Iglesias-Suarez
+- Sungduk Yu
+- Pierre Gentine
+- Michael Pritchard
+- Mierk Schwabe
+- Veronika Eyring
+date: '2024-02-05'
+year: 2024
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  arxiv: '2402.03079'
+  doi: 10.1029/2024ms004272
+  openalex: W4409405065
+links:
+  paper: https://doi.org/10.1029/2024ms004272
+  pdf: https://arxiv.org/pdf/2402.03079
+orgs:
+- columbia-leap
+- nvidia
+topic: hybrid-parameterization
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- gan-vae
+- other
+timescale:
+- climate
+spatial:
+- global
+data:
+- km-scale-sim
+status: research
+summary: Stochastic deep learning parameterizations with multi-member and VAE designs emulate superparameterized
+  convection in an Earth system model, enabling hybrid runs stable for 5 months.
+abstract: 'Deep learning is a powerful tool to represent subgrid processes in climate models, but many
+  application cases have so far used idealized settings and deterministic approaches. Here, we develop
+  stochastic parameterizations with calibrated uncertainty quantification to learn subgrid convective
+  and turbulent processes and surface radiative fluxes of a superparameterization (SP) embedded in an
+  Earth System Model (ESM). We explore three methods to construct stochastic parameterizations: 1) a single
+  Deep Neural Network (DNN) with Monte Carlo Dropout; 2) a multi-member parameterization; and 3) a Variational
+  Encoder Decoder with latent space perturbation. We show that the multi-member (MM) parameterization
+  improves the representation of convective processes, especially in the planetary boundary layer, compared
+  to individual DNNs. The respective uncertainty quantification illustrates that methods 2) and 3) are
+  advantageous compared to a dropout-based DNN parameterization regarding the spread of convective processes.
+  Hybrid simulations with our best-performing MM parameterizations remained challenging and crash within
+  the first days. Therefore, we develop a pragmatic partial coupling strategy relying on the SP for condensate
+  emulation. Partial coupling reduces the computational efficiency of hybrid Earth-like simulations but
+  enables model stability over 5 months with our MM parameterizations. However, our hybrid simulations
+  exhibit biases in thermodynamic fields and differences in precipitation patterns. Despite this, the
+  MM parameterizations enable improvements in reproducing tropical extreme precipitation compared to a
+  traditional convection parameterization. Despite these challenges, our results indicate the potential
+  of a new generation of MM machine learning parameterizations leveraging uncertainty quantification to
+  improve the representation of stochasticity of subgrid effects.'
+significance: 6
+cited_by: 14
+score: 59
+highlight: true
+highlight_reason: Stochastic multi-member NN parameterizations in a superparameterized ESM with honest
+  reporting of hybrid instability; valuable for hybrid climate modeling.
+added: '2026-10-22'
+source: backfill

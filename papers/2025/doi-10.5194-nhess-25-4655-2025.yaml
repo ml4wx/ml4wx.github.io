@@ -1,0 +1,59 @@
+id: doi-10.5194-nhess-25-4655-2025
+title: Ensemble random forest for tropical cyclone tracking
+authors:
+- Pradeebane Vaittinada Ayar
+- Stella Bourdin
+- Davide Faranda
+- Mathieu Vrac
+date: '2025-11-24'
+year: 2025
+venue: Natural hazards and earth system sciences
+venue_type: journal
+ids:
+  doi: 10.5194/nhess-25-4655-2025
+  openalex: W4416594236
+links:
+  paper: https://doi.org/10.5194/nhess-25-4655-2025
+  pdf: https://nhess.copernicus.org/articles/25/4655/2025/nhess-25-4655-2025.pdf
+orgs:
+- university-of-oxford
+topic: extremes-hazards
+topics:
+- observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: Random forest classifier tracks tropical cyclones from ERA5 aggregated predictors over the Eastern
+  North Pacific and North Atlantic, a lighter alternative to deep learning trackers.
+abstract: Abstract. Even though tropical cyclones (TCs) are well documented during the intense part of
+  their lifecycle until they start to evanesce, many physical and statistical properties governing them
+  are not well captured by gridded reanalysis or simulated by earth system models. Thus, the tracking
+  of TCs remains a matter of interest for the investigation of observed and simulated tropical cyclones.
+  Two types of cyclone tracking schemes are available. On the one hand, there are trackers that rely on
+  physical and dynamical properties of the TCs and user-prescribed thresholds, which make them rigid.
+  They need numerous variables that are not always available in the models. On the other hand, there are
+  trackers leaning on deep learning which, by nature, need large amounts of data and computing power.
+  Besides, given the number of physical variables needed for the tracking, they can be prone to overfitting,
+  which hinders their transferability to climate models. In this study, the ability of a Random Forest
+  (RF) approach to track TCs with a limited number of aggregated variables is explored. Hence, the tracking
+  is considered as a binary supervised classification problem of TC-free (zero) and TC (one) situations.
+  Our analysis focuses on the Eastern North Pacific and North Atlantic basins, for which, respectively,
+  514 and 431 observed tropical cyclone track records are available from the IBTrACS database during the
+  1980–2021 period. For each 6-hourly time step, RF associates TC occurrence or absence (1 or 0) to atmospheric
+  situations described by predictors extracted from the ERA5 reanalysis. Then situations with TC occurrences
+  are joined for reconstructing TC trajectories. Results show the ability and performance of this method
+  for tracking tropical cyclones over both basins, and good temporal and spatial generalization as well.
+  RF has a similar TC detection rate as trackers based on TCs' properties and significantly lower false
+  alarm rate. RF allows us to detect TC situations for a range of predictor combinations, which brings
+  more flexibility than threshold based trackers. Last but not least, this study shed light on the most
+  relevant variables allowing to detect tropical cyclone.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

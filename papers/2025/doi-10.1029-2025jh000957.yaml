@@ -1,0 +1,56 @@
+id: doi-10.1029-2025jh000957
+title: 'Season‐Net: A Deep Learning Framework for Bias Correction of Seasonal Forecasting Models'
+authors:
+- Zahir Nikraftar
+- Rendani Mbuvha
+- Mojtaba Sadegh
+- Willem Adolf Landman
+date: '2025-10-17'
+year: 2025
+venue: Journal of Geophysical Research Machine Learning and Computation
+venue_type: journal
+ids:
+  doi: 10.1029/2025jh000957
+  openalex: W4415278026
+links:
+  paper: https://doi.org/10.1029/2025jh000957
+topic: post-processing
+topics:
+- s2s-seasonal
+type: model
+method:
+- cnn
+- rnn
+timescale:
+- seasonal
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: Season-Net, a U-Net plus ConvLSTM hybrid trained with a sliding-window quantile mapping loss,
+  bias-corrects GloSea6 and System 8 seasonal temperature forecasts, outperforming quantile mapping.
+abstract: Abstract Seasonal climate forecasts play a crucial role in decision‐making across sectors like
+  agriculture, energy, and disaster management. However, these forecasts often exhibit spatially structured
+  biases that undermine their reliability, but this structure also enables more effective bias correction,
+  particularly improving performance in predicting temperature extremes. Traditional bias correction methods
+  such as quantile mapping (QM) and linear scaling (LS) are limited by assumptions of stationarity and
+  their inability to capture complex spatiotemporal patterns. To address these challenges, we introduce
+  Season‐Net, a hybrid deep learning framework combining U‐Net and ConvLSTM architectures. Season‐Net
+  is used to perform bias correction on seasonal daily temperature forecasts from the Met Office (GloSea6)
+  and Météo‐France (System 8) by learning season‐specific spatial and temporal dependencies in a unified
+  architecture. The model is trained with a novel sliding‐window quantile mapping loss function that introduces
+  temporal awareness into the quantile mapping process, enhancing its ability to capture temperature distribution
+  and evolution. Evaluations across North America and Africa show that Season‐Net consistently outperforms
+  QM and LS in both deterministic (e.g., RMSE and Kendall's Tau) and probabilistic (e.g., Brier skill
+  score and CRPSS) metrics. Furthermore, Season‐Net excels in impact‐based evaluations, significantly
+  improving the prediction of extreme temperature events. These results highlight the superior capability
+  of deep learning methods in correcting spatially structured seasonal forecast biases and enhancing the
+  utility of climate predictions for climate‐sensitive applications. Season‐Net offers a promising pathway
+  for advancing seasonal forecast postprocessing with high accuracy and impact relevance.
+significance: 4
+cited_by: 1
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

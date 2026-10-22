@@ -1,0 +1,67 @@
+id: arxiv-2609.12815
+title: 4D Parallelism Unlocks Exascale Bayesian Neural Networks for High-Fidelity Atmospheric Modeling
+authors:
+- Deifilia Kieckhefen
+- Juan Pedro Gutiérrez Hermosillo Muriedas
+- Lars Helge Heyen
+- Mathis Bode
+- Iida Hakulinen
+- Andreas Herten
+- Chelsea Maria John
+- Thorsten Kurth
+- Anni Moisala
+- Asena Karolin Özdemir
+- Kaleb Phipps
+- Oskar Taubert
+- Arvid Weyrauch
+- Markus Götz
+- Charlotte Debus
+date: '2026-09-11'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.12815'
+  openalex: W7212485227
+links:
+  paper: https://arxiv.org/abs/2609.12815
+  pdf: https://arxiv.org/pdf/2609.12815
+orgs:
+- juelich
+- kit
+- nvidia
+topic: probabilistic-ensembles
+topics:
+- infra-software
+- global-medium-range
+type: model
+method:
+- transformer
+- other
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: BEAST is a Bayesian Swin Transformer for 0.25° global forecasts with a 4D parallelism scheme
+  reaching 3.96 EFLOP/s on 20,480 GPUs, enabling large uncertainty-aware ensembles.
+abstract: We present BEAST, the first-ever Bayesian Swin Transformer for atmospheric forecasting on 0.25$^\circ$
+  global resolution able to accurately quantify both aleatoric and epistemic uncertainty. To overcome
+  the associated computational bottlenecks, we devise an orthogonal 4D-parallelization scheme that introduces
+  a unique domain-tensor-parallelism strategy and a novel uncertainty parallel method, enabling us to
+  fully leverage GPU capacity and efficiently scale model training. For a 2.4-billion-parameter model,
+  we achieve a peak performance of 3.96 EFLOP/s on 20,480 NVIDIA GH200 GPUs on the JUPITER supercomputer.
+  We train BEAST as a 700-million-parameter model with 96 random weight samples on 384 nodes on 40 years
+  of data for nearly one million gradient updates. This model achieves predictive skill scores competitive
+  with state-of-the-art probabilistic atmospheric AI models and numerical models, and can predict extreme
+  events with exceptional skill, while generating large ensembles 3 to 4 times faster than the current-best
+  AI model. Our contribution unlocks the potential of high-fidelity uncertainty quantification in atmospheric
+  AI models, heralding a new era for AI-based models in climate and Earth system sciences.
+significance: 7
+score: 63
+highlight: true
+highlight_reason: Exascale Bayesian Swin Transformer at 0.25° with 4D parallelism on JUPITER; 3.96 EFLOP/s
+  and fast large ensembles with epistemic uncertainty.
+added: '2026-10-22'
+source: backfill

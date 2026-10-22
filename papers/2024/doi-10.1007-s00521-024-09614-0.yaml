@@ -1,0 +1,53 @@
+id: doi-10.1007-s00521-024-09614-0
+title: Operational wind and turbulence nowcasting capability for advanced air mobility
+authors:
+- Mounir Chrit
+- Marwa Majdi
+date: '2024-03-27'
+year: 2024
+venue: Neural Computing and Applications
+venue_type: journal
+ids:
+  doi: 10.1007/s00521-024-09614-0
+  openalex: W4393227429
+links:
+  paper: https://doi.org/10.1007/s00521-024-09614-0
+  pdf: https://link.springer.com/content/pdf/10.1007/s00521-024-09614-0.pdf
+topic: nowcasting
+topics:
+- applications-impacts
+type: model
+method:
+- rnn
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- stations
+- km-scale-sim
+status: pre-operational
+summary: LSTM-based WindAware nowcasts wind and turbulence every 5 min up to 6 h over a Chicago airway,
+  matching XGBoost and beating an MLP.
+abstract: Abstract The present study introduces “WindAware”, a wind and turbulence prediction system that
+  provides nowcasts of wind and turbulence parameters every 5 min up to 6 h over a predetermined airway
+  over Chicago, Illinois, USA, based on 100 m high-resolution simulations (HRSs). This system is a long
+  short-term memory-based recurrent neural network (LSTM-RNN) that uses existing ground-based wind data
+  to provide nowcasts (forecasts up to 6 h every 5 min) of wind speed, wind direction, wind gust, and
+  eddy dissipation rate to support the Uncrewed Aircraft Systems (UASs) safe integration into the National
+  Airspace System (NAS). These HRSs are validated using both ground-based measurements over airports and
+  upper-air radiosonde observations and their skill is illustrated during lake-breeze events. A reasonable
+  agreement is found between measured and simulated winds especially when the boundary layer is convective,
+  but the timing and inland penetration of lake-breeze events are overall slightly misrepresented. The
+  WindAware model is compared with the classic multilayer perceptron (MLP) and the eXtreme Gradient Boosting
+  (XGBoost) models. It is demonstrated by comparison to high-resolution simulations that WindAware provides
+  more accurate predictions than the MLP over the 6 h lead times and has almost similar performance as
+  the XGBoost model although the XGBoost’s training is the fastest using its parallelized implementation.
+  WindAware also has higher prediction errors when validated against lake-breeze events data due to their
+  under-representation in the training dataset.
+significance: 3
+cited_by: 9
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

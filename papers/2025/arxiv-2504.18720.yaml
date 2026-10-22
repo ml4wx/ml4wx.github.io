@@ -1,0 +1,50 @@
+id: arxiv-2504.18720
+title: 'Appa: Bending Weather Dynamics with Latent Diffusion Models for Global Data Assimilation'
+authors:
+- Gérôme Andry
+- Sacha Lewin
+- François Rozet
+- Omer Rochman
+- Victor Mangeleer
+- Matthias Pirlet
+- Elise Faulx
+- Marilaure Grégoire
+- Gilles Louppe
+date: '2025-04-25'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2504.18720'
+  openalex: W4416358264
+links:
+  paper: https://arxiv.org/abs/2504.18720
+  pdf: https://arxiv.org/pdf/2504.18720
+topic: data-assimilation
+topics:
+- global-medium-range
+type: model
+method:
+- diffusion
+timescale:
+- short
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Appa is a 565M-parameter latent diffusion model that performs score-based global data assimilation
+  at 0.25° and hourly resolution, conditioning on arbitrary observations without retraining.
+abstract: Deep learning has advanced weather forecasting, but accurate predictions first require identifying
+  the current state of the atmosphere from observational data. In this work, we introduce Appa, a score-based
+  data assimilation model generating global atmospheric trajectories at 0.25\si{\degree} resolution and
+  1-hour intervals. Powered by a 565M-parameter latent diffusion model trained on ERA5, Appa can be conditioned
+  on arbitrary observations to infer plausible trajectories, without retraining. Our probabilistic framework
+  handles reanalysis, filtering, and forecasting, within a single model, producing physically consistent
+  reconstructions from various inputs. Results establish latent score-based data assimilation as a promising
+  foundation for future global atmospheric modeling systems.
+significance: 5
+cited_by: 1
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,59 @@
+id: doi-10.3390-rs17233805
+title: Physics-Informed Transformer Networks for Interpretable GNSS-R Wind Speed Retrieval
+authors:
+- Zao Zhang
+- Jingru Xu
+- Guifei Jing
+- Dongkai Yang
+- Yue Zhang
+date: '2025-11-24'
+year: 2025
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs17233805
+  openalex: W4416597115
+links:
+  paper: https://doi.org/10.3390/rs17233805
+  pdf: https://www.mdpi.com/2072-4292/17/23/3805/pdf?version=1763979352
+topic: observations-remote-sensing
+type: model
+method:
+- transformer
+- gnn
+- physics-constrained
+spatial:
+- regional
+data:
+- satellite
+- era5
+status: research
+summary: Physics-informed Transformer-GNN retrieves GNSS-R ocean surface wind with 1.35 m/s RMSE, a 32%
+  reduction over the prior baseline.
+abstract: 'Global Navigation Satellite System Reflectometry (GNSS-R) provides all-weather, high-resolution
+  ocean wind speed monitoring that offers additional benefits for forecasting tropical cyclones and severe
+  weather events. However, existing GNSS-R wind retrieval models often lack interpretability and suffer
+  accuracy degradation during high wind conditions. To address these limitations, we leverage a mathematical
+  equivalence between Transformers and graph neural networks (GNNs) on complete graphs, which provides
+  a physically grounded interpretation of self-attention as spatiotemporal influence propagation in GNSS-R
+  data. In our model, each GNSS-R footprint is treated as a graph node whose multi-head self-attention
+  weights quantify localized interactions across space and time. This aligns physical influence propagation
+  with the computational efficiency of GPU-accelerated Transformers. Multi-head attention disentangles
+  processes at multiple scales—capturing local (25–100 km), mesoscale (100 km–500 km), and synoptic (>500
+  km) circulation patterns. When applied to Level 1 Version 3.2 data (2023–2024) from four Asian sea regions,
+  our Transformer–GNN achieves an overall wind speed RMSE reduction of 32% (to 1.35 m s−1 from 1.98 m
+  s−1) and substantial gains in high-wind regimes (winds >25 m s−1: 3.2 m s−1 RMSE). The model is trained
+  on ERA5 reanalysis 10 m equivalent-neutral wind fields, which serve as the primary reference dataset,
+  with independent validation performed against Stepped Frequency Microwave Radiometer (SFMR) aircraft
+  observations during tropical cyclone events and moored buoy measurements where spatiotemporally coincident
+  data are available. Interpretability analysis with SHAP reveals condition-dependent feature attributions
+  and suggests coupling mechanisms between ocean surface currents and wind fields. These results demonstrate
+  that our model advances both predictive accuracy and interpretability in GNSS-R wind retrieval. With
+  operationally viable inference performance, our framework offers a promising approach toward interpretable,
+  physics-aware Earth system AI applications.'
+significance: 3
+cited_by: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

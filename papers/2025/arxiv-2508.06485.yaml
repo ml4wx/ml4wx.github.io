@@ -1,0 +1,60 @@
+id: arxiv-2508.06485
+title: 'WGAST: Weakly-Supervised Generative Network for Daily 10 m Land Surface Temperature Estimation
+  via Spatio-Temporal Fusion'
+authors:
+- Sofiane Bouaziz
+- Adel Hafiane
+- Raphael Canals
+- Rachid Nedjai
+date: '2025-08-08'
+year: 2025
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  arxiv: '2508.06485'
+  doi: 10.1109/jstars.2026.3689596
+  openalex: W4415194036
+links:
+  paper: https://doi.org/10.1109/jstars.2026.3689596
+  pdf: https://arxiv.org/pdf/2508.06485
+  code: https://github.com/Sofianebouaziz1/WGAST.git
+topic: observations-remote-sensing
+topics:
+- downscaling
+type: model
+method:
+- gan-vae
+- transformer
+timescale:
+- short
+spatial:
+- regional
+data:
+- satellite
+- stations
+status: research
+summary: Weakly supervised conditional GAN fuses MODIS, Landsat and Sentinel-2 to estimate daily 10 m
+  land surface temperature, cutting RMSE by 17.05% over the best baseline.
+abstract: 'Urbanization, climate change, and agricultural stress are increasing the demand for precise
+  and timely environmental monitoring. Land Surface Temperature (LST) is a key variable in this context
+  and is retrieved from remote sensing satellites. However, these systems face a trade-off between spatial
+  and temporal resolution. While spatio-temporal fusion methods offer promising solutions, few have addressed
+  the estimation of daily LST at 10 m resolution. In this study, we present WGAST, a weakly-supervised
+  generative network for daily 10 m LST estimation via spatio-temporal fusion of Terra MODIS, Landsat
+  8, and Sentinel-2. WGAST is the first end-to-end deep learning framework designed for this task. It
+  adopts a conditional generative adversarial architecture, with a generator composed of four stages:
+  feature extraction, fusion, LST reconstruction, and noise suppression. The first stage employs a set
+  of encoders to extract multi-level latent representations from the inputs, which are then fused in the
+  second stage using cosine similarity, normalization, and temporal attention mechanisms. The third stage
+  decodes the fused features into high-resolution LST, followed by a Gaussian filter to suppress high-frequency
+  noise. Training follows a weakly supervised strategy based on physical averaging principles and reinforced
+  by a PatchGAN discriminator. Experiments demonstrate that WGAST outperforms existing methods in both
+  quantitative and qualitative evaluations. Compared to the best-performing baseline, on average, WGAST
+  reduces RMSE by 17.05% and improves SSIM by 4.22%. Furthermore, WGAST effectively captures fine-scale
+  thermal patterns, as validated against near-surface air temperature measurements from 33 near-ground
+  sensors. The code is available at https://github.com/Sofianebouaziz1/WGAST.git.'
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

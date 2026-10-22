@@ -1,0 +1,54 @@
+id: arxiv-2610.24110
+title: Interpretability of AI weather models via intermediate decoding
+authors:
+- M. Beylich
+- K. Tempest
+- T. Selz
+- George C. Craig
+date: '2026-10-16'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.24110'
+  openalex: W7223005925
+links:
+  paper: https://arxiv.org/abs/2610.24110
+topic: xai-uq-physics
+topics:
+- global-medium-range
+type: evaluation
+method:
+- gnn
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Intermediate decoding of GraphCast, Aurora and ArchesWeather shows forecasts refine from coarse
+  to fine scales, with large scales staying physically balanced.
+abstract: AI weather prediction models are often regarded as black boxes. Despite their impressive skill,
+  there is little understanding of how the input data is processed during inference to produce the forecast.
+  This limitation arises from the use of high-dimensional latent representations in which individual dimensions
+  are no longer directly interpretable in physical terms. To gain insight into how forecasts are constructed,
+  we propose the method of intermediate decoding for AI weather models and apply it to GraphCast, Aurora
+  and ArchesWeather. In this approach, latent states from intermediate depths are decoded back into meteorological
+  fields. To do this, we use the decoder that has been trained to output the forecast at the end of processing.
+  Since latent states at different depths do not share a consistent basis, we train affine transformations
+  that align intermediate latent states with the decoder's expected input space. Applying this framework
+  to the three models yields the following results. First, the skill of forecasts at intermediate stages
+  of processing improves gradually through the processor layers. Second, bypassing all processor blocks
+  shows that the encoder-decoder pair is not an identity mapping returning the input, but instead plays
+  a significant role in the forecast construction. Third, by examining increments of individual processor
+  blocks across model depth, we show that all three models progressively refine the forecast from coarse
+  to finer spatial scales. Finally, we assess the physical consistency of the intermediate decoding forecasts
+  and find that large scales remain physically balanced throughout processing, while small scales become
+  more balanced with each additional processor block.
+significance: 4
+cited_by: 2
+score: 16
+highlight: false
+added: '2026-10-22'
+source: snowball

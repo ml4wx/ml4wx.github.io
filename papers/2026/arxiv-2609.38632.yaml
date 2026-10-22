@@ -1,0 +1,55 @@
+id: arxiv-2609.38632
+title: Proper Scoring Rule-based Diffusion for Probabilistic Weather Forecasting
+authors:
+- Joonhyeong Park
+- Giung Nam
+- Hyungi Lee
+- Kyunghyun Cho
+- Byoungwoo Park
+- Juho Lee
+date: '2026-09-29'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.38632'
+  openalex: W7215122567
+links:
+  paper: https://arxiv.org/abs/2609.38632
+  pdf: https://arxiv.org/pdf/2609.38632
+orgs:
+- nyu-m2lines
+topic: probabilistic-ensembles
+topics:
+- global-medium-range
+type: model
+method:
+- diffusion
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Diffusion training with proper scoring rules and auxiliary conditional denoising tasks improves
+  CRPS-based ensemble weather forecasts at long horizons and in calibration.
+abstract: Recent probabilistic weather forecasters train stochastic predictors with the continuous ranked
+  probability score (CRPS) to generate each ensemble member in a single forward pass. These models learn
+  the predictive distribution from the forecast context alone, which becomes difficult at longer forecast
+  horizons where uncertainty is high. To learn the predictive distribution more effectively, we introduce
+  auxiliary conditional denoising tasks that predict the same future state from the context and its corrupted
+  version, which provides partial future information that can reduce prediction ambiguity. Building on
+  distributional diffusion models, we learn the conditional distributions of these tasks with a single
+  stochastic predictor by minimizing a proper scoring rule across noise levels. At inference, the predictor
+  can still generate each ensemble member in a single forward pass at the fully corrupted endpoint. Standard
+  CRPS training is recovered as the endpoint-only special case of our formulation, so our framework extends
+  existing CRPS-based forecasters with only additional conditioning inputs. Controlled experiments show
+  that the auxiliary tasks improve one-step forecasting across architectures, with larger gains at longer
+  forecast horizons. The gains extend to high-dimensional global weather forecasting under both training
+  from scratch and fine-tuning, along with improved calibration and potential benefits for generalization
+  under distribution shift.
+significance: 5
+score: 30
+highlight: false
+added: '2026-10-22'
+source: backfill

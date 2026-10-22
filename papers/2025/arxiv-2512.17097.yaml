@@ -1,0 +1,62 @@
+id: arxiv-2512.17097
+title: An Interpretable Latent Space reveals changing dynamics of European heatwaves
+authors:
+- Tamara Happé
+- Jasper Wijnands
+- Paolo Scussolini
+- Peter Pfleiderer
+- Dim Coumou
+date: '2025-12-18'
+year: 2025
+venue: Machine Learning Earth
+venue_type: journal
+ids:
+  arxiv: '2512.17097'
+  doi: 10.1088/3049-4753/ae6e42
+  openalex: W7116903461
+links:
+  paper: https://doi.org/10.1088/3049-4753/ae6e42
+  pdf: https://arxiv.org/pdf/2512.17097
+orgs:
+- knmi
+topic: extremes-hazards
+topics:
+- climate-analysis-attribution
+- xai-uq-physics
+type: model
+method:
+- gan-vae
+- classical-ml
+spatial:
+- regional
+data:
+- era5
+- cmip
+status: research
+summary: Uses a VAE trained on large climate-model ensembles to cluster European heatwave circulation
+  types, finding Atlantic Plume heatwaves becoming more frequent and Atlantic High ones less frequent.
+abstract: Due to climate change, heatwaves are becoming more frequent and intense, with western Europe
+  experiencing the strongest trends in the Northern Hemisphere mid-latitudes. Part of the temperature
+  trends are caused by circulation changes, which are not accurately captured in climate models. Here
+  we deploy Deep Learning techniques to classify European heatwaves based on their atmospheric circulation
+  and to study their associated changes over time. We use a Variational Autoencoder (VAE) to reduce the
+  dimensionality of the heatwave samples, after which we cluster them on their extraced features. The
+  VAE is trained on large ensemble climate model simulations and we show that the VAE generalizes well
+  to observed heatwave circulations in ERA5 reanalysis, without the need for transfer learning. The circulation
+  features relevant for heatwaves in ERA5 are consistent with the climate model heatwaves. Regression
+  analysis reveals that the Atlantic Plume type of heatwaves are becoming more frequent over time, while
+  the Atlantic High heatwaves are becoming less frequent. We introduce new and straightforward interpretability
+  methods to study the latent space, including feature importance identification and changes over time.
+  We investigate which circulation features are associated with the most important nodes in the latent
+  space and how the latent space changes over time. For example, we find that the Atlantic Low heatwave
+  shows a deepening of the low pressure system off the Atlantic coast over time. Each heatwave type is
+  undergoing unique changes in their circulation, highlighting the necessity to study each heatwave type
+  separately. Our method can furthermore be used to boost specific aspects of extreme events, and we illustrate
+  how heatwave circulation could change in the future if the current trends persist, with in some cases
+  an intensification of features.
+significance: 4
+cited_by: 1
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

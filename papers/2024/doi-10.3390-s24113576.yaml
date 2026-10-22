@@ -1,0 +1,55 @@
+id: doi-10.3390-s24113576
+title: Short-Term and Imminent Rainfall Prediction Model Based on ConvLSTM and SmaAT-UNet
+authors:
+- Yuanyuan Liao
+- Shouqian Lu
+- Gang Yin
+date: '2024-06-01'
+year: 2024
+venue: Sensors
+venue_type: journal
+ids:
+  doi: 10.3390/s24113576
+  openalex: W4399300255
+links:
+  paper: https://doi.org/10.3390/s24113576
+  pdf: https://www.mdpi.com/1424-8220/24/11/3576/pdf?version=1717235036
+topic: nowcasting
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Compares ConvLSTM and SmaAT-UNet on radar image extrapolation for precipitation; SmaAT-UNet outperforms
+  ConvLSTM on accuracy and degrades more slowly with lead time.
+abstract: Short-term precipitation forecasting methods are mainly divided into statistical forecasting,
+  numerical model-based forecasting, and radar image extrapolation techniques. The two methods based on
+  statistical prediction and numerical model have the disadvantages of being unstable and generating large
+  errors. Therefore, this study proposes the use of deep learning for radar image extrapolation for precipitation
+  forecasting, in particular by developing algorithms for ConvLSTM and SmaAT-UNet. The ConvLSTM model
+  is a fusion of a CNN (Convolutional Neural Network) and LSTM (Long Short-Term Memory network), which
+  solves the challenge of processing spatial sequence data, which is a task that traditional LSTM models
+  cannot accomplish. At the same time, SmaAT-UNet enhances the traditional UNet structure by incorporating
+  the CBAM (Convolutional Block Attention Module) attention mechanism and replacing the standard convolutional
+  layer with depthwise separable convolution. This innovative approach aims to improve the efficiency
+  and accuracy of short-term precipitation forecasting by improving feature extraction and data processing
+  techniques. Evaluation and analysis of experimental data show that both models exhibit good predictive
+  ability, with the SmaAT-UNet model outperforming ConvLSTM in terms of accuracy. The results show that
+  the performance indicators of precipitation prediction, especially detection probability (POD) and the
+  Critical Success index (CSI), show a downward trend with the extension of the prediction time. This
+  trend highlights the inherent challenges of maintaining predictive accuracy over longer periods of time
+  and highlights the superior performance and resilience of the SmaAT-UNet model under these conditions.
+  Compared with the statistical forecasting method and numerical model forecasting method, its accuracy
+  in short-term rainfall forecasting is improved.
+significance: 3
+cited_by: 14
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

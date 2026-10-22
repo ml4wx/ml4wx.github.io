@@ -1,0 +1,82 @@
+id: doi-10.3390-rs17142356
+title: A Deep Learning-Based Echo Extrapolation Method by Fusing Radar Mosaic and RMAPS-NOW Data
+authors:
+- Shanhao Wang
+- Zhiqun Hu
+- Fuzeng Wang
+- Ruiting Liu
+- Lirong Wang
+- Jiexin Chen
+date: '2025-07-09'
+year: 2025
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs17142356
+  openalex: W4412152573
+links:
+  paper: https://doi.org/10.3390/rs17142356
+  pdf: https://www.mdpi.com/2072-4292/17/14/2356/pdf?version=1752055696
+orgs:
+- cma
+topic: nowcasting
+type: model
+method:
+- gan-vae
+- rnn
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- nwp-analysis
+status: research
+summary: DCGAN-enhanced ConvLSTM fuses radar mosaics with RMAPS-NOW physical fields to sharpen radar echo
+  extrapolation.
+abstract: 'Radar echo extrapolation is a critical forecasting tool in the field of meteorology, playing
+  an especially vital role in nowcasting and weather modification operations. In recent years, spatiotemporal
+  sequence prediction models based on deep learning have garnered significant attention and achieved notable
+  progress in radar echo extrapolation. However, most of these extrapolation network architectures are
+  built upon convolutional neural networks, using radar echo images as input. Typically, radar echo intensity
+  values ranging from −5 to 70 dBZ with a resolution of 5 dBZ are converted into 0–255 grayscale images
+  from pseudo-color representations, which inevitably results in the loss of important echo details. Furthermore,
+  as the extrapolation time increases, the smoothing effect inherent to convolution operations leads to
+  increasingly blurred predictions. To address the algorithmic limitations of deep learning-based echo
+  extrapolation models, this study introduces three major improvements: (1) A Deep Convolutional Generative
+  Adversarial Network (DCGAN) is integrated into the ConvLSTM-based extrapolation model to construct a
+  DCGAN-enhanced architecture, significantly improving the quality of radar echo extrapolation; (2) Considering
+  that the evolution of radar echoes is closely related to the surrounding meteorological environment,
+  the study incorporates specific physical variable products from the initial zero-hour field of RMAPS-NOW
+  (the Rapid-update Multiscale Analysis and Prediction System—NOWcasting subsystem), developed by the
+  Institute of Urban Meteorology, China. These variables are encoded jointly with high-resolution (0.5
+  dB) radar mosaic data to form multiple radar cells as input. A multi-channel radar echo extrapolation
+  network architecture (MR-DCGAN) is then designed based on the DCGAN framework; (3) Since radar echo
+  decay becomes more prominent over longer extrapolation horizons, this study departs from previous approaches
+  that use a single model to extrapolate 120 min. Instead, it customizes time-specific loss functions
+  for spatiotemporal attenuation correction and independently trains 20 separate models to achieve the
+  full 120 min extrapolation. The dataset consists of radar composite reflectivity mosaics over North
+  China within the range of 116.10–117.50°E and 37.77–38.77°N, collected from June to September during
+  2018–2022. A total of 39,000 data samples were matched with the initial zero-hour fields from RMAPS-NOW,
+  with 80% (31,200 samples) used for training and 20% (7800 samples) for testing. Based on the ConvLSTM
+  and the proposed MR-DCGAN architecture, 20 extrapolation models were trained using four different input
+  encoding strategies. The models were evaluated using the Critical Success Index (CSI), Probability of
+  Detection (POD), and False Alarm Ratio (FAR). Compared to the baseline ConvLSTM-based extrapolation
+  model without physical variables, the models trained with the MR-DCGAN architecture achieved, on average,
+  18.59%, 8.76%, and 11.28% higher CSI values, 19.46%, 19.21%, and 19.18% higher POD values, and 19.85%,
+  11.48%, and 9.88% lower FAR values under the 20 dBZ, 30 dBZ, and 35 dBZ reflectivity thresholds, respectively.
+  Among all tested configurations, the model that incorporated three physical variables—relative humidity
+  (rh), u-wind, and v-wind—demonstrated the best overall performance across various thresholds, with CSI
+  and POD values improving by an average of 16.75% and 24.75%, respectively, and FAR reduced by 15.36%.
+  Moreover, the SSIM of the MR-DCGAN models demonstrates a more gradual decline and maintains higher overall
+  values, indicating superior capability in preserving echo structural features. Meanwhile, the comparative
+  experiments demonstrate that the MR-DCGAN (u, v + rh) model outperforms the MR-ConvLSTM (u, v + rh)
+  model in terms of evaluation metrics. In summary, the model trained with the MR-DCGAN architecture effectively
+  enhances the accuracy of radar echo extrapolation.'
+significance: 3
+cited_by: 1
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

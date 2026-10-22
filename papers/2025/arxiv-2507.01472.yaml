@@ -1,0 +1,51 @@
+id: arxiv-2507.01472
+title: 'Optimizing Methane Detection On Board Satellites: Speed, Accuracy, and Low-Power Solutions for
+  Resource-Constrained Hardware'
+authors:
+- Jonáš Herec
+- Vít Růžička
+- Rado Pitoňák
+date: '2025-07-02'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2507.01472'
+  openalex: W4417182966
+links:
+  paper: https://arxiv.org/abs/2507.01472
+  pdf: https://arxiv.org/pdf/2507.01472
+  code: https://github.com/zaitra/methane-filters-benchmark
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: 'Fast onboard methane plume detection for hyperspectral satellites: a faster Mag1c variant and
+  CEM reach ~100-230x speedups with U-Net/LinkNet, and band selection cuts channels.'
+abstract: 'Methane is a potent greenhouse gas, and detecting its leaks early via hyperspectral satellite
+  imagery can help mitigate climate change. Meanwhile, many existing missions operate in manual tasking
+  regimes only, thus missing potential events of interest. To overcome slow downlink rates cost-effectively,
+  onboard detection is a viable solution. However, traditional methane enhancement methods are too computationally
+  demanding for resource-limited onboard hardware. This work accelerates methane detection by focusing
+  on efficient, low-power algorithms. We test fast target detection methods (ACE, CEM) that have not been
+  previously used for methane detection and propose a Mag1c-SAS - a significantly faster variant of the
+  current state-of-the-art algorithm for methane detection: Mag1c. To explore their true detection potential,
+  we integrate them with a machine learning model (U-Net, LinkNet). Our results identify two promising
+  candidates (Mag1c-SAS and CEM), both acceptably accurate for the detection of strong plumes and computationally
+  efficient enough for onboard deployment: one optimized more for accuracy, the other more for speed,
+  achieving up to ~100x and ~230x faster computation than original Mag1c on resource-limited hardware.
+  Additionally, we propose and evaluate three band selection strategies. One of them can outperform the
+  method traditionally used in the field while using fewer channels, leading to even faster processing
+  without compromising accuracy. This research lays the foundation for future advancements in onboard
+  methane detection with minimal hardware requirements, improving timely data delivery. The produced code,
+  data, and models are open-sourced and can be accessed from https://github.com/zaitra/methane-filters-benchmark.'
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

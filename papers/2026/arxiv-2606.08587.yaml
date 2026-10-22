@@ -1,0 +1,47 @@
+id: arxiv-2606.08587
+title: Improving the sharpness in neural network-based parametric post-processing of ensemble forecasts
+authors:
+- Ágnes Baran
+- Máté Mihalina
+date: '2026-06-07'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.08587'
+  openalex: W7164013119
+links:
+  paper: https://arxiv.org/abs/2606.08587
+  pdf: https://arxiv.org/pdf/2606.08587
+topic: post-processing
+type: model
+method:
+- other
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Adds a sharpness penalty to CRPS-trained neural post-processing of ECMWF 2m temperature ensembles,
+  cutting central interval width 8-12.5% without losing CRPS.
+abstract: Statistical post-processing has proven to be an effective tool in improving ensemble forecast
+  of different weather variables. Case studies show that post-processing can remedy the typically underdispersive
+  and potentially biased behaviour of the ensemble while optimizing a proper scoring rule expressing the
+  forecast skill. The price of these positive effects is generally a deterioration in sharpness; the width
+  of the central prediction intervals and the uncertainty of the predictions are increasing, especially
+  for shorter lead times. This work aims to reduce the extent of the latter phenomenon for neural network-based
+  parametric post-processing methods by extending the network's loss function with a penalty term. We
+  demonstrate the effect of the proposed technique for 2m temperature ensemble forecasts of the European
+  Centre for Medium-Range Weather Forecasts downloaded from the EUPPBench benchmark dataset and verified
+  against synoptic observations. Here, the predictive distribution is Gaussian, and we use the continuous
+  ranked probability score (CRPS) as loss function. The case studies confirm a substantial relative decrease
+  ($8.2\%-12.5\%$) in the width of the nominal central prediction interval compared to the width of the
+  predictive distribution computed without the penalty term, while there is no deterioration in the mean
+  CRPS of probabilistic forecasts and in the RMSE of the predictive mean.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,44 @@
+id: arxiv-2604.19530
+title: Calibrating Scientific Foundation Models with Inference-Time Stochastic Attention
+authors:
+- Akash Yadav
+- Taiwo A. Adebiyi
+- Ruda Zhang
+date: '2026-04-21'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2604.19530'
+  openalex: W7155219987
+links:
+  paper: https://arxiv.org/abs/2604.19530
+  pdf: https://arxiv.org/pdf/2604.19530
+topic: xai-uq-physics
+topics:
+- foundation-models
+- probabilistic-ensembles
+type: model
+method:
+- transformer
+- other
+timescale:
+- medium
+status: research
+summary: Inference-time stochastic attention yields calibrated predictive ensembles from pretrained weather
+  and time-series foundation models, with adaptation costs about 1000x lower than baselines.
+abstract: Transformer-based scientific foundation models are increasingly deployed in high-stakes settings,
+  but current architectures give deterministic outputs and provide limited support for calibrated predictive
+  uncertainty. We propose Stochastic Attention, a sample average lightweight inference-time modification
+  that randomizes attention by replacing softmax weights with normalized multinomial samples controlled
+  by a single concentration parameter, and produces predictive ensembles without retraining. To set this
+  parameter, we introduce a calibration objective that matches the stochastic attention output with the
+  target, yielding an efficient univariate post-hoc tuning problem. We evaluate this mechanism on scientific
+  foundation models for weather and time-series forecasting, as well as several regression tasks. Across
+  benchmarks against uncertainty-aware baselines, we find that Sample Average Stochastic Attention achieves
+  the strongest native calibration and the sharpest prediction intervals at comparable calibration, with
+  adaptation costs nearly three orders of magnitude lower than the next-best baseline.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

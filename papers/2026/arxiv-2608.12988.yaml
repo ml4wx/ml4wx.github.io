@@ -1,0 +1,53 @@
+id: arxiv-2608.12988
+title: 'Machine learning correction of satellite precipitation is governed by mechanism purity, not algorithmic
+  complexity: a proof-of-concept study in Hunan, China, with pre-registered cross-regional validation'
+authors:
+- Yi Xu
+date: '2026-08-13'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2608.12988'
+  doi: 10.22541/essoar.15007593/v1
+  openalex: W7203478778
+links:
+  paper: https://arxiv.org/abs/2608.12988
+  pdf: https://arxiv.org/pdf/2608.12988
+topic: observations-remote-sensing
+topics:
+- xai-uq-physics
+type: evaluation
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- era5
+status: research
+summary: Machine learning correction of IMERG precipitation in Hunan is limited by mechanism purity rather
+  than model complexity, with random forests adding only 0.001 R² over linear regression.
+abstract: 'Satellite precipitation products such as IMERG exhibit biases that vary with terrain, season,
+  and precipitation regime, leaving the applicability boundaries of machine learning correction unclear.
+  This study proposes the Terrain-Moisture-Intensity (TMI) framework, centered on mechanism purity, extending
+  the correction problem from purely algorithmic optimization to physical consistency diagnosis. A proof-of-concept
+  study in Hunan Province employs IMERG V07, SRTM DEM, and ERA5 variables (tcwv, u10, v10). Ablation results
+  indicate that, under the conditions of this study, terrain-moisture relationships are predominantly
+  additive: RF-Full yields merely +0.001 R^2 gain over LR-Full, while bias rises to 1.282 mm d^-1; MAE
+  decreases by approximately 14%, reflecting a trade-off between tail-fitting improvement and mean shift.
+  SHAP diagnostics identify three categories of boundaries. Spatially, Central Hunan exhibits significant
+  degradation (R^2=0.133) despite strong variable activation, consistent with mechanism fragmentation
+  induced by mixed terrain. Temporally, u10 undergoes directional reversal between summer and spring (+0.096
+  to -0.156), presenting "silent failure." Extreme precipitation (>=50 mm d^-1) approximates a mechanism
+  saturation frontier rather than isolated out-of-distribution samples, with DEM showing the largest relative
+  amplification in SHAP disorder (+150%). The results demonstrate that machine learning correction performance
+  is primarily constrained by mechanism purity. A pre-registered cross-regional test (Hunan, Guangxi,
+  Guangdong) confirms this screening capability out of sample: a priori coherence proxies predict correction
+  efficiency with a mean absolute error of 2.6 percentage points, while the transfer-versus-retraining
+  contrast separates mechanism mismatch (coastal Guangdong) from portability (Guangxi), establishing the
+  framework as a validated applicability screen.'
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

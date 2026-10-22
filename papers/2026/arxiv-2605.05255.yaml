@@ -1,0 +1,57 @@
+id: arxiv-2605.05255
+title: Prediction of Drought and Flash Drought in Africa at the Seasonal-to-Subseasonal Scale using the
+  Community Research Earth Digital Intelligence Twin Framework
+authors:
+- Stuart Edris
+- Amy McGovern
+- Jason Hickey
+date: '2026-05-05'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.05255'
+  openalex: W7160663129
+links:
+  paper: https://arxiv.org/abs/2605.05255
+  pdf: https://arxiv.org/pdf/2605.05255
+topic: extremes-hazards
+topics:
+- s2s-seasonal
+type: model
+method:
+- transformer
+timescale:
+- s2s
+- seasonal
+spatial:
+- regional
+data:
+- era5
+- satellite
+- other
+status: research
+summary: DroughtFormer, a CREDIT CrossFormer, forecasts African soil moisture and vegetation skillfully
+  to 90-day leads, though precipitation and flash drought indices are weaker.
+abstract: Droughts and flash droughts (rapidly developing droughts; FDs) remain impactful events that
+  are known to desiccate landscape and destroy crops. In particular, droughts in Africa are often more
+  impactful than in other locations, such as the United States or Europe, due to many regions in Africa
+  heavily depending on local agriculture for sustenance. In recent years, large machine learning (ML)
+  models, such as GraphCast and AIFS, have emerged as effective tools for global weather prediction. However,
+  sparse data observations and few ML studies in Africa have left it unclear if these ML models retain
+  their skill when focused on Africa. As such, this project seeks to examine the predictability of drought
+  and FD in Africa using a CrossFormer model based on the Community Research Earth Digital Intelligence
+  Twin (CREDIT) framework developed by NSF NCAR. Our CrossFormer model, termed DroughtFormer, incorporates
+  variables from the ERA5 and GLDAS2 reanalyses and the IMERG and MODIS satellite observations, and employs
+  dry air mass and moisture conservation, to predict soil moisture, vegetation health, and other drought-related
+  surface variables. While DroughtFormer displayed lower accuracy in predicting precipitation and FD indices,
+  it showed significant skill in predicting the remaining variables, delivering stable and skillful forecasts
+  out to 90-day lead times (either beating out or having comparable skill to climatology). In particular,
+  DroughtFormer skillfully represented climate anomalies for key variables, such as soil moisture (though
+  it struggled with the magnitude of the anomalies). Thus, DroughtFormer showed significant promise in
+  representing and predicting agricultural level drought in a region that is heavily impacted by drought
+  events.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

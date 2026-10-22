@@ -1,0 +1,53 @@
+id: arxiv-2604.00082
+title: Deep-Learned Observation Operators for Artificial Intelligence Weather Forecasting Models
+authors:
+- Kelsey Lieberman
+- Laura Slivinski
+- Matt Bender
+- Chris Miller
+- Josh DaRosa
+- Nick Krall
+- Mohammad Ridhwaan Alam
+- Nick Silverman
+- Sergey Frolov
+date: '2026-03-31'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2604.00082'
+  openalex: W7148538163
+links:
+  paper: https://arxiv.org/abs/2604.00082
+  pdf: https://arxiv.org/pdf/2604.00082
+  code: https://github.com/mitre/deep-obs
+topic: data-assimilation
+topics:
+- observations-remote-sensing
+type: model
+method:
+- other
+spatial:
+- global
+data:
+- satellite
+- nwp-analysis
+status: research
+summary: Deep-learned emulators predict ATMS radiance innovations for data assimilation, with only minor
+  loss of accuracy when using fewer vertical levels typical of AI forecast models.
+abstract: Satellite observation operators play an essential role in atmospheric data assimilation by translating
+  model state variables into observation space. Previous work has shown that deep-learned emulators can
+  effectively predict the outputs of classic observation operators, like the Community Radiative Transfer
+  Model (CRTM), with reduced inference time. This study expands previous work to show the potential for
+  integrating observation operators into artificial intelligence (AI) weather forecasting models. Specifically,
+  this study shows that (1) deep-learned models can effectively predict the innovations (or differences
+  between the simulated and observed radiances) used by data assimilation models and (2) deep-learned
+  observation models suffer only minor degradations in performance when the model state is represented
+  with fewer vertical levels, as is commonly used by AI forecasting models. Experiments were performed
+  using the Unified Forecast System (UFS) replay dataset, including Gridpoint Statistical Interpolation
+  (GSI) observational data for the Advanced Technology Microwave Sounder (ATMS) sensor from 2022 and 2023.
+  Code is available at https://github.com/mitre/deep-obs.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

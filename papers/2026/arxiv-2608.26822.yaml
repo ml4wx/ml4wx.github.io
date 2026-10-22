@@ -1,0 +1,53 @@
+id: arxiv-2608.26822
+title: Bridging short- and medium-range weather forecasting with machine learning
+authors:
+- Timothy A. Smith
+- Mariah Pope
+- Sergey Frolov
+- Brett Basarab
+- Daniel Abdi
+- Paul Madden
+- Isidora Jankov
+date: '2026-08-27'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2608.26822'
+  openalex: W7204597041
+links:
+  paper: https://arxiv.org/abs/2608.26822
+  pdf: https://arxiv.org/pdf/2608.26822
+topic: global-medium-range
+topics:
+- regional-km-scale
+type: model
+timescale:
+- short
+- medium
+spatial:
+- global
+- regional
+data:
+- era5
+- nwp-analysis
+status: pre-operational
+summary: Nested-EAGLE combines a 0.25° global AI model with a 6 km CONUS nest, beating GFS and HRRR on
+  near-surface errors while remaining competitive globally.
+abstract: 'The National Oceanic and Atmospheric Administration (NOAA) employs independent prediction systems
+  for distinct forecast products. While some separation is practical, we argue that combining short- and
+  medium-range weather into a single prediction system would provide the public with a useful distillation
+  of global weather and its impacts. To this end, we present Nested-EAGLE (Experimental Artificial intelligence
+  Global and Limited-area Ensemble): a 0.25° global weather model with a 6 km refinement over the Contiguous
+  United States (CONUS). The model achieves significantly lower mean-squared error in near-surface and
+  low-level quantities over CONUS compared to NOAA''s Global Forecast System and High-Resolution Rapid
+  Refresh (HRRR), while remaining competitive throughout the rest of the global atmosphere. We show that
+  the skill gains for near-surface fields stem from incorporating high-resolution regional analysis data
+  into training through the nesting process. Forecasts of precipitation amounts are less skillful than
+  those from HRRR, owing to deterministic training. However, we show that Nested-EAGLE provides the most
+  accurate forecasts of storm locations at longer leads, despite blurred extrema. Our results motivate
+  future work to extend the skill gains beyond CONUS and improve precipitation representation.'
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

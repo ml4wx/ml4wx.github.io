@@ -1,0 +1,50 @@
+id: doi-10.3390-rs18111755
+title: A Comprehensive Study of Estimating Atmospheric Cloud Microphysical Properties Using Deep Learning
+  Techniques
+authors:
+- Zahid Hassan Tushar
+- Adeleke Ademakinwa
+- Jianwu Wang
+- Zhibo Zhang
+- Sanjay Purushotham
+date: '2026-05-31'
+year: 2026
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs18111755
+  openalex: W7163019859
+links:
+  paper: https://doi.org/10.3390/rs18111755
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+data:
+- satellite
+- km-scale-sim
+status: research
+summary: CloudUNet with channel attention retrieves cloud optical thickness and effective radius from
+  bi-spectral radiances, cutting MAE 38% versus prior deep models on LES-based data.
+abstract: Cloud properties such as cloud optical thickness (COT) and cloud effective radius (CER) are
+  essential for weather forecasting, climate monitoring, and Earth’s energy budget estimation. Traditional
+  physics-based retrievals using independent pixel approximation (IPA) often incur biases due to three-dimensional
+  radiative effects. While existing deep learning approaches reduce these biases, they demand large annotated
+  datasets and high computational cost. This study frames cloud property retrieval as an information-limited
+  learning problem (limited spectral information and limited training samples) and incorporates CloudUNet
+  with Attention Module (CAM), a compact deep learning model with channel attention for joint estimation
+  of COT, CER, and cloud mask from bi-spectral radiance observations. Using synthetic datasets from large-eddy
+  simulation (LES) cloud fields, CAM outperforms state-of-the-art models in both direct radiance-based
+  retrieval and IPA correction, achieving 38% better performance in terms of mean absolute errors (MAE)
+  and higher correlation with true properties. Ablation studies demonstrate that CAM-based IPA correction
+  achieves 73% and 80% MAE reduction relative to the IPA baseline when using no radiance input and single-band
+  radiance, respectively. Including cloud mask information as input improves COT retrieval across deep
+  learning models (except CAM) but degrades CER retrieval for all models except CAM, which shows a slight
+  3% MAE improvement. These findings highlight the advantage of joint retrievals of multiple cloud properties
+  and IPA correction models under limited labeled data constraints.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

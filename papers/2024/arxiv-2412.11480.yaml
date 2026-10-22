@@ -1,0 +1,49 @@
+id: arxiv-2412.11480
+title: Data-driven Precipitation Nowcasting Using Satellite Imagery
+authors:
+- Young-Jae Park
+- Doyi Kim
+- Minseok Seo
+- Hae-Gon Jeon
+- Yeji Choi
+date: '2024-12-16'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2412.11480'
+  doi: 10.1609/aaai.v39i27.35049
+  openalex: W4409348405
+links:
+  paper: https://arxiv.org/abs/2412.11480
+  pdf: https://arxiv.org/pdf/2412.11480
+  code: https://github.com/seominseok0429/Data-driven-Precipitation-Nowcasting-Using-Satellite-Imagery
+topic: nowcasting
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: pre-operational
+summary: Neural Precipitation Model uses geostationary infrared and water-vapour satellite channels to
+  nowcast rainfall up to six hours ahead at 2 km resolution with hourly updates.
+abstract: 'Accurate precipitation forecasting is crucial for early warnings of disasters, such as floods
+  and landslides. Traditional forecasts rely on ground-based radar systems, which are space-constrained
+  and have high maintenance costs. Consequently, most developing countries depend on a global numerical
+  model with low resolution, instead of operating their own radar systems. To mitigate this gap, we propose
+  the Neural Precipitation Model (NPM), which uses global-scale geostationary satellite imagery. NPM predicts
+  precipitation for up to six hours, with an update every hour. We take three key channels to discriminate
+  rain clouds as input: infrared radiation (at a wavelength of 10.5 $μm$), upper- (6.3 $μm$), and lower-
+  (7.3 $μm$) level water vapor channels. Additionally, NPM introduces positional encoders to capture seasonal
+  and temporal patterns, accounting for variations in precipitation. Our experimental results demonstrate
+  that NPM can predict rainfall in real-time with a resolution of 2 km. The code and dataset are available
+  at https://github.com/seominseok0429/Data-driven-Precipitation-Nowcasting-Using-Satellite-Imagery.'
+significance: 3
+cited_by: 4
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

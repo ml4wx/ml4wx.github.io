@@ -1,0 +1,57 @@
+id: doi-10.1038-s41598-025-29415-2
+title: A novel spatiotemporal transformer network with multivariate fusion for short-term precipitation
+  forecasting
+authors:
+- Kai Zhang
+- Guojing Zhang
+- Xiaoying Wang
+- Yu Zhu
+- Wu Li
+date: '2025-11-27'
+year: 2025
+venue: Scientific Reports
+venue_type: journal
+ids:
+  doi: 10.1038/s41598-025-29415-2
+  openalex: W4416765436
+links:
+  paper: https://doi.org/10.1038/s41598-025-29415-2
+  pdf: https://www.nature.com/articles/s41598-025-29415-2_reference.pdf
+topic: nowcasting
+topics:
+- regional-km-scale
+type: model
+method:
+- transformer
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: ST-MFTransNet fuses multiple meteorological variables with a transformer for 12 and 24 h accumulated
+  precipitation, improving POD and CSI by up to 21.2% over ViT.
+abstract: Precipitation plays a critical role in the global water cycle and significantly impacts various
+  aspects of human life. Although deep learning models have advanced the development of precipitation
+  forecasting, most existing models rely on a single data source, neglecting the multifactorial nature
+  of precipitation formation. To deal with this issue, a novel spatiotemporal transformer network with
+  multivariate fusion for short-term precipitation forecasting abbreviated as ST-MFTransNet is proposed.
+  Specifically, firstly, a multivariate fusion module based on Omni-dimensional Dynamic Convolution is
+  designed to efficiently combine information from diverse meteorological variables such as temperature,
+  humidity, and wind speed. Secondly, based on the multivariate fusion module, an encoder-decoder framework
+  comprising a Transformer and a multi-scale convolution module is constructed to extract spatiotemporal
+  features from the fused data. To validate the effectiveness of ST-MFTransNet, Experiments were conducted
+  using multiple meteorological variables, accumulated over the past 12 and 24 hours, to forecast accumulated
+  precipitation for the subsequent 12-hour and 24-hour periods. Experimental results demonstrate that
+  ST-MFTransNet achieves enhancements in POD and CSI of 21.2% and 18.4%, respectively, relative to VIT,
+  for the 12-hour accumulated precipitation forecast at a threshold of 15. For the 24-hour forecast, the
+  improvements in POD and CSI are 10.3% and 10.7%, respectively, at the threshold of 25.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,47 @@
+id: doi-10.1029-2020ms002301
+title: Potential and Limitations of Machine Learning for Modeling Warm‐Rain Cloud Microphysical Processes
+authors:
+- A. Seifert
+- S. Rasp
+date: '2020-11-30'
+year: 2020
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2020ms002301
+  openalex: W3106128618
+links:
+  paper: https://doi.org/10.1029/2020ms002301
+  pdf: https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2020MS002301
+orgs:
+- dwd
+- tum
+topic: hybrid-parameterization
+type: evaluation
+method:
+- classical-ml
+spatial:
+- global
+data:
+- other
+status: research
+summary: Neural networks emulate warm-rain microphysics process rates skillfully offline, but fail when
+  integrated in ODE solvers, showing the limits of ML parameterizations.
+abstract: Abstract The use of machine learning based on neural networks for cloud microphysical parameterizations
+  is investigated. As an example, we use the warm‐rain formation by collision‐coalescence, that is, the
+  parameterization of autoconversion, accretion, and self‐collection of droplets in a two‐moment framework.
+  Benchmark solutions of the kinetic collection equations are performed using a Monte Carlo superdroplet
+  algorithm. The superdroplet method provides reliable but noisy estimates of the warm‐rain process rates.
+  For each process rate, a neural network is trained using standard machine learning techniques. The resulting
+  models make skillful predictions for the process rates when compared to the testing data. However, when
+  solving the ordinary differential equations, the solutions are not as good as those of an established
+  warm‐rain parameterization. This deficiency can be seen as a limitation of the machine learning methods
+  that are applied, but at the same time, it points toward a fundamental ill‐posedness of the commonly
+  used two‐moment warm‐rain schemes. More advanced machine learning methods that include a notion of time
+  derivatives, therefore, have the potential to overcome these problems.
+significance: 5
+cited_by: 101
+score: 65
+highlight: false
+added: '2026-10-22'
+source: snowball

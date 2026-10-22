@@ -1,0 +1,50 @@
+id: doi-10.1029-2024jh000299
+title: 'Enhanced Video Inpainting: A Deep Learning Approach for Historical Weather Reconstruction'
+authors:
+- Yannis Valentin Schmutz
+- Noemi Imfeld
+- Stefan Brönnimann
+- Erik Graf
+date: '2024-11-13'
+year: 2024
+venue: Journal of Geophysical Research Machine Learning and Computation
+venue_type: journal
+ids:
+  doi: 10.1029/2024jh000299
+  openalex: W4404364428
+links:
+  paper: https://doi.org/10.1029/2024jh000299
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2024JH000299
+topic: observations-remote-sensing
+topics:
+- downscaling
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: WeRec3D, a 3D CNN borrowed from video inpainting, reconstructs missing daily European ERA5 temperature
+  and pressure, cutting validation error by 67% over a 2D baseline.
+abstract: Abstract We investigate the applicability of deep learning (DL) methods for reconstructing daily
+  weather data. Inspired by video inpainting, we propose a novel method, WeRec3D, which utilizes a three‐dimensional
+  convolutional neural network. Our approach was developed iteratively by evaluating seven modeling improvement
+  techniques. The resulting method reduces the validation error by 67% compared to a two‐dimensional baseline,
+  decreasing the error from RMSE = 0.4620 and MAE = 0.311 to RMSE = 0.1527 and MAE = 0.1093. Additionally,
+  we demonstrate the impact of the spatial distribution of observations on reconstruction accuracy and
+  propose a potential integration with the analogue resampling method. WeRec3D is trained and validated
+  in a self‐supervised manner using ERA5's surface temperature and pressure data over Europe. On a hold‐out
+  set from 1950 to 1954, the validation results in an MAE of 1.11°C and 199 Pa. As a case study, we reconstruct
+  the 1807 heat wave and validate it using a leave‐one‐out method in space. Compared to the original data,
+  the reconstructed time series exhibit a correlation of at least 0.91, with a maximum normalized RMSE
+  and standard deviation delta of 0.58 and 0.51 respectively. To the best of our knowledge, this is the
+  first study to apply DL‐based video inpainting techniques for weather reconstruction, proposing it as
+  a novel approach for reconstructing missing weather information.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

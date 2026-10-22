@@ -1,0 +1,60 @@
+id: doi-10.5149-arc-gr.1967
+title: Hourly Urban Air Temperature Forecasting with Graph Machine Learning
+authors:
+- Christophe Roger
+- Martin Hendrick
+- Moritz Burger
+- Nadav Peleg
+- Simone Fatichi
+- Gabriele Manoli
+date: '2026-02-23'
+year: 2026
+venue: ARC Geophysical Research
+venue_type: journal
+ids:
+  doi: 10.5149/arc-gr.1967
+  openalex: W7131105670
+links:
+  paper: https://doi.org/10.5149/arc-gr.1967
+topic: local-forecasting
+topics:
+- applications-impacts
+type: model
+method:
+- gnn
+- rnn
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Graph-based DCRNN forecasts hourly urban air temperatures across 113 Bern sensors, reaching 1.4
+  K RMSE at 1 h and 2.44 K at 24 h, 32% better than per-sensor RNN.
+abstract: This is an accepted article with a DOI pre-assigned that is not yet published.The Urban Heat
+  Island (UHI) effect, where urban areas exhibit higher temperatures than their rural surroundings, is
+  a growing subject of concern due to its implications for human health, energy demand, and anthropogenic
+  emissions. Accurate high‐resolution forecasts of the UHI intensity and, more generally, of urban air
+  temperatures are therefore crucial for guiding mitigation and adaptation strategies, especially for
+  real-time heat warning systems and reliable power load forecasting. Here we present a novel spatio‐temporal
+  graph machine learning framework for hourly urban air temperature forecasting that combines a Diffusion
+  Convolutional Recurrent Neural Network (DCRNN) encoder with a multi‐horizon Multi-Layer Perceptron (MLP)
+  decoder. The model is trained and tested using a dense network of 113 low‐cost temperature sensors in
+  the city of Bern, Switzerland. A directed, weighted sensor graph is constructed using a composite distance
+  metric of geographic proximity and environmental similarity, after which spatial dependencies are modeled
+  using diffusion convolution and temporal dynamics via gated recurrence. The model is used to forecast
+  the temperatures at each sensor with a horizon of 24 hours. Simulation results achieve an average root
+  mean square error of 1.4K at 1 h and 2.44K at 24 h lead times, improving by up to 32% the baseline predictions
+  of a per‐sensor Recurrent Neural Network (RNN). The practical application of the proposed methodology
+  is further demonstrated by applying a regression‐kriging technique to generate hourly air temperature
+  maps at 50 m resolution. Our results highlight the potential of graph‐based deep learning to deliver
+  accurate, city‐scale, temperature forecasts that can be used as a high-resolution early warning system
+  to enable interventions and informed decision-making for urban planning, public health, and emergency
+  response in the case of extreme heatwave events.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

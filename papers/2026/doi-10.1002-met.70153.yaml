@@ -1,0 +1,53 @@
+id: doi-10.1002-met.70153
+title: Lightweight Spatiotemporal Network With Channel Attention and Multi‐Branch Fusion for Short‐Term
+  Typhoon Wind Field Prediction
+authors:
+- Jie Cui
+- Jun Liu
+- Yan Liu
+date: '2026-01-01'
+year: 2026
+venue: Meteorological Applications
+venue_type: journal
+ids:
+  doi: 10.1002/met.70153
+  openalex: W7125917797
+links:
+  paper: https://doi.org/10.1002/met.70153
+orgs:
+- cma
+topic: extremes-hazards
+topics:
+- nowcasting
+type: model
+method:
+- cnn
+- rnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: Lightweight CNN-LSTM with channel attention predicts 1-hour typhoon 10 m wind fields over East
+  Asia, outperforming U-Net, ConvLSTM and Transformer baselines.
+abstract: ABSTRACT Accurate short‐term prediction of typhoon 10‐m wind fields is crucial for early warning
+  and risk reduction. We propose a lightweight spatiotemporal deep‐learning model that couples a convolutional
+  neural network (CNN) for spatial features with a long short‐term memory (LSTM) network for temporal
+  dynamics, augmented by squeeze‐and‐excitation (SE) channel attention and a multi‐branch feature fusion
+  network (MBFN). Using ERA5 winds and China Meteorological Administration best‐track records over East
+  Asia (2020–2023), the model ingests four hourly frames to predict the 10‐m wind field 1‐h ahead. Across
+  root mean square error (RMSE), mean absolute error (MAE), and average wind speed error (AWSE), the approach
+  consistently outperforms U‐Net, ConvLSTM, and Transformer baselines and better reconstructs high‐wind
+  structures near typhoon cores; relative to a plain CNN–LSTM baseline, average RMSE and MAE decrease
+  by 0.90% and 0.68% over 2020–2023. Ablation studies isolate the effects of SE and MBFN, evidencing robust
+  generalization and computational efficiency suitable for near‐real‐time operations. A supplementary
+  6‐h experiment shows only modest, consistent increases across years—RMSE by 0.54% on average, MAE by
+  0.50%, and AWSE by 0.41%—indicating robustness at longer lead times.
+significance: 3
+cited_by: 1
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

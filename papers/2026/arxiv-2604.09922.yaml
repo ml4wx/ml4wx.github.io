@@ -1,0 +1,52 @@
+id: arxiv-2604.09922
+title: 'K-STEMIT: Knowledge-Informed Spatio-Temporal Efficient Multi-Branch Graph Neural Network for Subsurface
+  Stratigraphy Thickness Estimation from Radar Data'
+authors:
+- Zesheng Liu
+- Maryam Rahnemoonfar
+date: '2026-04-10'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2604.09922'
+  openalex: W7154383761
+links:
+  paper: https://arxiv.org/abs/2604.09922
+  pdf: https://arxiv.org/pdf/2604.09922
+topic: observations-remote-sensing
+type: model
+method:
+- gnn
+- physics-constrained
+spatial:
+- regional
+data:
+- radar
+- other
+status: research
+summary: K-STEMIT graph network estimates ice-sheet internal layer thickness from radar with MAR weather
+  priors, cutting RMSE by 21.01% through physical knowledge fusion.
+abstract: Subsurface stratigraphy contains important spatio-temporal information about accumulation, deformation,
+  and layer formation in polar ice sheets. In particular, variations in internal ice layer thickness provide
+  valuable constraints for snow mass balance estimation and projections of ice sheet change. Although
+  radar sensors can capture these layered structures as depth-resolved radargrams, convolutional neural
+  networks applied directly to radar images are often sensitive to speckle noise and acquisition artifacts.
+  In addition, purely data-driven methods may underuse physical knowledge, leading to unrealistic thickness
+  estimates under spatial or temporal extrapolation. To address these challenges, we develop K-STEMIT,
+  a novel knowledge-informed, efficient, multi-branch spatio-temporal graph neural network that combines
+  a geometric framework for spatial learning with temporal convolution to capture temporal dynamics, and
+  incorporates physical data synchronized from the Model Atmospheric Regional physical weather model.
+  An adaptive feature fusion strategy is employed to dynamically combine features learned from different
+  branches. Extensive experiments have been conducted to compare K-STEMIT against current state-of-the-art
+  methods in both knowledge-informed and non-knowledge-informed settings, as well as other existing methods.
+  Results show that K-STEMIT consistently achieves the highest accuracy while maintaining near-optimal
+  efficiency. Most notably, incorporating adaptive feature fusion and physical priors reduces the root
+  mean-squared error by 21.01% with negligible additional cost compared to its conventional multi-branch
+  variants. Additionally, our proposed K-STEMIT achieves consistently lower per-year relative MAE, enabling
+  reliable, continuous spatiotemporal assessment of snow accumulation variability across large spatial
+  regions.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

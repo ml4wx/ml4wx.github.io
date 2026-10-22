@@ -1,0 +1,60 @@
+id: arxiv-2508.17903
+title: Global Forecasting of Tropical Cyclone Intensity Using Neural Weather Models
+authors:
+- Milton Gomez
+- Louis Poulain--Auzeau
+- Alexis Berne
+- Tom Beucler
+date: '2025-08-25'
+year: 2025
+venue: Artificial Intelligence for the Earth Systems
+venue_type: journal
+ids:
+  arxiv: '2508.17903'
+  doi: 10.1175/aies-d-25-0073.1
+  openalex: W7134063444
+links:
+  paper: https://doi.org/10.1175/aies-d-25-0073.1
+  pdf: https://arxiv.org/pdf/2508.17903
+topic: extremes-hazards
+topics:
+- post-processing
+type: model
+method:
+- classical-ml
+- cnn
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- other
+status: research
+summary: Lightweight post-processing of Pangu-Weather and FourCastNet v2 outputs trained on observed gusts
+  and pressure gives accurate tropical cyclone intensity forecasts up to five days ahead.
+abstract: Numerical Weather Prediction (NWP) models that integrate coupled physical equations forward
+  in time are the traditional tools for simulating atmospheric processes and forecasting weather. With
+  recent advancements in deep learning, AI-based Weather Prediction models that rely on neural network
+  architectures$\unicode{x2013}$Neural Weather Models (NeWMs)$\unicode{x2013}$have emerged as competent
+  medium-range NWP emulators, with performances that compare favorably to state-of-the-art NWP models.
+  However, they are commonly trained on reanalyses with limited spatial resolution (e.g., 0.25° horizontal
+  grid spacing), which smooths out key features of weather systems. For example, tropical cyclones (TCs)$\unicode{x2013}$among
+  the most impactful weather events due to their devastating effects on human activities$\unicode{x2013}$are
+  challenging to forecast, as extrema are smoothed in deterministic forecasts at 0.25° resolution. To
+  address this, we use our best observational estimates of wind gusts and minimum sea level pressure to
+  train a hierarchy of post-processing models on NeWM outputs. Applied to Pangu-Weather and FourCastNet
+  v2, the post-processing models produce accurate and reliable forecasts of TC intensity up to five days
+  ahead. Our post-processing algorithm is tracking-independent, preventing full misses, and we demonstrate
+  that even linear models extract predictive information from NeWM outputs beyond what is encoded in their
+  initial conditions. While spatial masking improves probabilistic forecast consistency, we do not find
+  clear advantages of convolutional architectures over simple multilayer perceptrons for our NeWM post-processing
+  purposes. Overall, by combining the efficiency of NeWMs with a lightweight, tracking-independent postprocessing
+  framework, our approach improves the accessibility of global TC intensity forecasts, marking a step
+  toward their democratization.
+significance: 5
+cited_by: 1
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

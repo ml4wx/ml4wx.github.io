@@ -1,0 +1,57 @@
+id: arxiv-2503.07647
+title: On the Importance of Clearsky Model in Short-Term Solar Radiation Forecasting
+authors:
+- Cyril Voyant
+- Milan Despotovic
+- Gilles Notton
+- Yves-Marie Saint-Drenan
+- Mohammed Asloune
+- Luis Garcia-Gutierrez
+date: '2025-03-06'
+year: 2025
+venue: Solar Energy, 289 (2025) 113490
+venue_type: journal
+ids:
+  arxiv: '2503.07647'
+  doi: 10.1016/j.solener.2025.113490
+  openalex: W4409349587
+links:
+  paper: https://arxiv.org/abs/2503.07647
+  pdf: https://arxiv.org/pdf/2503.07647
+topic: local-forecasting
+type: model
+method:
+- classical-ml
+timescale:
+- nowcast
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Extreme Learning Machine forecasts solar irradiance from raw GHI without clear-sky models, matching
+  or beating ARMA and quantile regression baselines.
+abstract: Clearsky models are widely used in solar energy for many applications such as quality control,
+  resource assessment, satellite-base irradiance estimation and forecasting. However, their use in forecasting
+  and nowcasting is associated with a number of challenges. Synchronization errors, reliance on the Clearsky
+  index (ratio of the global horizontal irradiance to its cloud-free counterpart) and high sensitivity
+  of the clearsky model to errors in aerosol optical depth at low solar elevation limit their added value
+  in real-time applications. This paper explores the feasibility of short-term forecasting without relying
+  on a clearsky model. We propose a Clearsky-Free forecasting approach using Extreme Learning Machine
+  (ELM) models. ELM learns daily periodicity and local variability directly from raw Global Horizontal
+  Irradiance (GHI) data. It eliminates the need for Clearsky normalization, simplifying the forecasting
+  process and improving scalability. Our approach is a non-linear adaptative statistical method that implicitely
+  learns the irradiance in cloud-free conditions removing the need for an clear-sky model and the related
+  operational issues. Deterministic and probabilistic results are compared to traditional benchmarks,
+  including ARMA with McClear-generated Clearsky data and quantile regression for probabilistic forecasts.
+  ELM matches or outperforms these methods, providing accurate predictions and robust uncertainty quantification.
+  This approach offers a simple, efficient solution for real-time solar forecasting. By overcoming the
+  stationarization process limitations based on usual multiplicative scheme Clearsky models, it provides
+  a flexible and reliable framework for modern energy systems.
+significance: 2
+cited_by: 9
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

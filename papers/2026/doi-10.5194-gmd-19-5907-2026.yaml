@@ -1,0 +1,57 @@
+id: doi-10.5194-gmd-19-5907-2026
+title: 'Contribution of physical latent knowledge to the emulation of an atmospheric physics model: a
+  study based on the LMDZ Atmospheric General Circulation Model'
+authors:
+- Ségolène Crossouard
+- Soulivanh Thao
+- Thomas Dubos
+- Masa Kageyama
+- Mathieu Vrac
+- Yann Meurdesoif
+date: '2026-07-07'
+year: 2026
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-19-5907-2026
+  openalex: W4410730197
+links:
+  paper: https://doi.org/10.5194/gmd-19-5907-2026
+  pdf: https://gmd.copernicus.org/articles/19/5907/2026/gmd-19-5907-2026.pdf
+topic: hybrid-parameterization
+type: model
+method:
+- cnn
+- physics-constrained
+spatial:
+- global
+data:
+- other
+status: research
+summary: Adding turbulence-related physical latent variables to DNN and U-Net emulators of LMDZ physics
+  markedly improves emulated tendency variability in an aquaplanet setup.
+abstract: Abstract. In an Atmospheric General Circulation Model (AGCM), the representation of subgrid-scale
+  physical phenomena, also referred to as physical parameterizations, requires computational time which
+  constrains model numerical efficiency. However, the development of emulators based on Machine Learning
+  offers a promising alternative to traditional approaches. We have developed offline emulators of the
+  physics parameterizations of an AGCM, ICOLMDZ, in an idealized aquaplanet configuration. The emulators
+  reproduce the profiles of the tendencies of the state variables for each independent atmospheric column.
+  In particular, we compare Dense Neural Network (DNN) and U-Net models. The U-Net provides better predictions
+  in terms of mean and variance. For the DNN, while it consistently delivers good performances in predicting
+  the mean tendencies, the variability is not well captured, posing challenges for our application. We
+  then investigate why the DNN's predictions are poorer compared to those of the U-Net, in terms of physical
+  processes. We find that turbulence is not well emulated by the DNN. Leveraging a priori knowledge of
+  how turbulence is parameterized in the phyLMDZ model, we show that incorporating physical knowledge
+  through latent variables as predictors into the learning process leads to a significant improvement
+  of the variability emulated with the DNN model. This improvement brought by the addition of these new
+  predictors is not limited to the DNN, as the U-Net has also shown enhanced results. This study hence
+  emphasizes the importance of adding physical knowledge in Neural Network (NN) models to improve predictions
+  and to ensure better interpretability. It opens perspectives on a deeper understanding of the emulator,
+  as well as exploring the contribution of new physical predictors, aiming to make climate simulations
+  and projections.
+significance: 4
+cited_by: 1
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

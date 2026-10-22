@@ -1,0 +1,57 @@
+id: doi-10.1007-s44443-026-01111-9
+title: 'Weformer: Adaptive spectral cross-variable transformer for long-horizon weather forecasting'
+authors:
+- Chunliang Wang
+- Xuzhang Shen
+- Jiuke Wang
+date: '2026-08-18'
+year: 2026
+venue: Journal of King Saud University - Computer and Information Sciences
+venue_type: journal
+ids:
+  doi: 10.1007/s44443-026-01111-9
+  openalex: W7203726310
+links:
+  paper: https://doi.org/10.1007/s44443-026-01111-9
+  pdf: https://link.springer.com/content/pdf/10.1007/s44443-026-01111-9.pdf
+  code: https://github.com/sekiro1211/Weformer
+topic: local-forecasting
+type: model
+method:
+- transformer
+timescale:
+- short
+- medium
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Weformer, a spectral cross-variable transformer, improves long-horizon forecasts of ground-station
+  weather series over seven baselines, with seven new datasets.
+abstract: 'Accurate long-term weather forecasting from multivariate sensor time series remains challenging
+  due to the inherent non-stationarity of atmospheric observations acquired by heterogeneous environmental
+  sensors and the complex physical coupling among meteorological variables. Existing general-purpose deep
+  forecasting models, while successful on idealized benchmarks, suffer notable performance degradation
+  on raw ground-station sensor data because they lack domain-specific mechanisms for cross-variable interaction
+  and noise resistance. We propose Weformer, a Transformer-based architecture purpose-built for sensor-derived
+  weather time series. Weformer introduces two core innovations: (1) a Frequency-driven Cross-Variable
+  Rotary Position Embedding (CrossVarRoPE) that extracts dominant spectral patterns via the Fourier transform
+  and injects adaptive, cross-variable-aware positional encoding into the attention mechanism, and (2)
+  a Global Token mechanism that distills macroscopic environmental context through cross-attention, preventing
+  overfitting to local high-frequency sensor noise. We provide rigorous theoretical analysis, including
+  a noise-suppression bound, a capacity bound for the global token, and a forecasting error decomposition,
+  to justify the design. To bridge the evaluation gap in current benchmarks, we curate seven new real-world
+  datasets sourced from ground-station sensor networks and energy-grid monitoring systems, spanning diverse
+  climate zones and temporal resolutions. Extensive experiments on eight datasets demonstrate that Weformer
+  achieves the best overall performance among seven competitive baselines—the lowest global average MSE
+  and MAE and the largest number of first-place results—under both standard and long-horizon settings
+  (up to 2,880 steps, i.e., 20–120 days depending on the sampling resolution), while CrossVarRoPE serves
+  as a portable plug-in that improves standard Transformer architectures in most evaluated settings. Code
+  and data are available at https://github.com/sekiro1211/Weformer .'
+significance: 2
+cited_by: 0
+score: 18
+highlight: false
+added: '2026-10-22'
+source: backfill

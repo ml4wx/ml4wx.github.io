@@ -1,0 +1,61 @@
+id: doi-10.1029-2024jd041822
+title: Enhancing Short‐Term Wind Speed Prediction Capability of Numerical Weather Prediction Through Machine
+  Learning Methods
+authors:
+- Zhaoliang Zeng
+- Honglei Wu
+- Zhaohua Liu
+- Linna Zhao
+- Zhaoming Liang
+- Zhehao Liang
+- Yaqiang Wang
+date: '2024-12-23'
+year: 2024
+venue: Journal of Geophysical Research Atmospheres
+venue_type: journal
+ids:
+  doi: 10.1029/2024jd041822
+  openalex: W4405697073
+links:
+  paper: https://doi.org/10.1029/2024jd041822
+orgs:
+- cma
+topic: post-processing
+topics:
+- local-forecasting
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+- nwp-analysis
+status: research
+summary: Stacked gradient-boosting ensemble with neighboring-station inputs improves short-term coastal
+  wind forecasts over ECMWF, reaching 73–78% accuracy versus 51–55%.
+abstract: 'Abstract Accurate forecasting of wind speed is essential for daily life and social production.
+  While numerical weather prediction products are widely used, they rely on global data and mathematical
+  models to solve atmospheric dynamics'' equations, often failing to capture localized micrometeorological
+  phenomena accurately. Factors such as surface conditions, land‐sea differences, and topography, particularly
+  in coastal areas, further impact the accuracy of wind speed forecasts. This study presents a new method
+  to enhance short‐term wind speed forecasting along China''s coast by incorporating local and neighborhood
+  spatiotemporal information. The approach integrates meteorological data from adjacent grid points as
+  new inputs in the LightGBM, CatBoost, and XGBoost algorithms. Stacking ensemble technique is then employed
+  to effectively combine with the aforementioned foundational models. Two sets of experiments are conducted:
+  Experiments 1 exclude surrounding information, while Experiments 2 include it. Each set consists of
+  five experiment groups: annual, spring, summer, autumn, and winter. Within each group, four models are
+  tested: XGBoost, LightGBM, CatBoost, and stacking. Results show that incorporating surrounding site
+  information improves forecast accuracy. In all five groups with added surrounding site information,
+  the stacking model performs best. Compared to ECMWF forecast data, the stacking model improves wind
+  speed forecast accuracy from 53.3%, 50.9%, 55.2%, 53.0%, and 54.0% to 77.2%, 73.1%, 76.7%, 78.2%, and
+  77.1%, respectively. These findings demonstrate the potential effectiveness of the proposed method for
+  improving short‐term wind speed forecasts in China''s coastal areas.'
+significance: 3
+cited_by: 19
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

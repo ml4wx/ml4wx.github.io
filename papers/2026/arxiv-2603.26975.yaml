@@ -1,0 +1,56 @@
+id: arxiv-2603.26975
+title: Probabilistic Forecasting of Localized Wildfire Spread Based on Conditional Flow Matching
+authors:
+- Bryan Shaddy
+- Haitong Qin
+- Brianna Binder
+- James Haley
+- Riya Duddalwar
+- Kyle Hilburn
+- Assad Oberai
+date: '2026-03-27'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2603.26975'
+  openalex: W7147297542
+links:
+  paper: https://arxiv.org/abs/2603.26975
+  pdf: https://arxiv.org/pdf/2603.26975
+topic: extremes-hazards
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+- km-scale-sim
+status: research
+summary: A conditional flow matching surrogate produces probabilistic wildfire arrival-time ensembles
+  conditioned on wind and weather, reducing cost relative to WRF-SFIRE.
+abstract: This study presents a probabilistic surrogate model for localized wildfire spread based on a
+  conditional flow matching algorithm. The approach models fire progression as a stochastic process by
+  learning the conditional distribution of fire arrival times given the current fire state along with
+  environmental and atmospheric inputs. Model inputs include current burned area, near-surface wind components,
+  temperature, relative humidity, terrain height, and fuel category information, all defined on a high-resolution
+  spatial grid. The outputs are samples of arrival time within a three-hour time window, conditioned on
+  the input variables. Training data are generated from coupled atmosphere-wildfire spread simulations
+  using WRF-SFIRE, paired with weather fields from the North American Mesoscale model. The proposed framework
+  enables efficient generation of ensembles of arrival times and explicitly represents uncertainty arising
+  from incomplete knowledge of the fire-atmosphere system and unresolved variables. The model supports
+  localized prediction over subdomains, reducing computational cost relative to physics-based simulators
+  while retaining sensitivity to key drivers of fire spread. Model performance is evaluated against WRF-SFIRE
+  simulations for both single-step (3-hour) and recursive multi-step (24-hour) forecasts. Results demonstrate
+  that the method captures variability in fire evolution and produces accurate ensemble predictions. The
+  framework provides a scalable approach for probabilistic wildfire forecasting and offers a pathway for
+  integrating machine learning models with operational fire prediction systems and data assimilation.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

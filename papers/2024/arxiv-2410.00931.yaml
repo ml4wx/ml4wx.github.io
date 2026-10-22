@@ -1,0 +1,56 @@
+id: arxiv-2410.00931
+title: A simple emulator that enables interpretation of parameter-output relationships, applied to two
+  climate model PPEs
+authors:
+- Qingyuan Yang
+- Gregory S Elsaesser
+- Marcus Van Lier-Walqui
+- Trude Eidhammer
+date: '2024-09-30'
+year: 2024
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  arxiv: '2410.00931'
+  doi: 10.1029/2024ms004766
+  openalex: W4410026353
+links:
+  paper: https://doi.org/10.1029/2024ms004766
+  pdf: https://arxiv.org/pdf/2410.00931
+orgs:
+- columbia-leap
+- nasa
+- ncar
+topic: climate-emulation
+topics:
+- xai-uq-physics
+type: model
+method:
+- classical-ml
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: sage is an additive Gaussian process emulator for climate model perturbed parameter ensembles
+  that quantifies parameter importance while matching a neural network's accuracy.
+abstract: We present a new additive method, nicknamed sage for Simplified Additive Gaussian processes
+  Emulator, to emulate climate model Perturbed Parameter Ensembles (PPEs). It estimates the value of a
+  climate model output as the sum of additive terms. Each additive term is the mean of a Gaussian Process,
+  and corresponds to the impact of a parameter or parameter group on the variable of interest. This design
+  caters to the sparsity of PPEs which are characterized by limited ensemble members and high dimensionality
+  of the parameter space. sage quantifies the variability explained by different parameters and parameter
+  groups, providing additional insights on the parameter-climate model output relationship. We apply the
+  method to two climate model PPEs and compare it to a fully connected Neural Network. The two methods
+  have comparable performance with both PPEs, but sage provides insights on parameter and parameter group
+  importance as well as diagnostics useful for optimizing PPE design. Insights gained are valid regardless
+  of the emulator method used, and have not been previously addressed. Our work highlights that analyzing
+  the PPE used to train an emulator is different from analyzing data generated from an emulator trained
+  on the PPE, as the former provides more insights on the data structure in the PPE which could help inform
+  the emulator design.
+significance: 3
+cited_by: 4
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

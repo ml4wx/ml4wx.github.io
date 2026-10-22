@@ -1,0 +1,54 @@
+id: doi-10.67440-ahj.vi.2463
+title: A Hybrid Vae–Attention Gcn–Bilstm Framework For Spatio-Temporal Weather Forecasting
+authors:
+- Aarthi. M
+- Ramya. P
+date: '2026-10-04'
+year: 2026
+venue: Adolescencia e Saude
+venue_type: journal
+ids:
+  doi: 10.67440/ahj.vi.2463
+  openalex: W7219703666
+links:
+  paper: https://doi.org/10.67440/ahj.vi.2463
+  pdf: https://adolescenciaesaude.com/index.php/aes/article/download/2463/1881
+topic: local-forecasting
+type: model
+method:
+- gnn
+- rnn
+- gan-vae
+timescale:
+- short
+spatial:
+- regional
+data:
+- stations
+status: research
+summary: VAE denoising with graph attention and BiLSTM boosting for station weather forecasting on a Kaggle
+  hourly dataset; reports MAE 1.20 °C, RMSE 1.65 °C.
+abstract: Distributed sensor networks for accurate short-range weather forecasting are difficult because
+  of measurement noise, missing measurements, and complex spatio-temporal dependencies. In this research,
+  an integrated four-stage deep learning system to robustly predict weather is introduced. First, a Variational
+  Autoencoder with Noise Reduction (VAE-NR) is used to learn a 64-dimensional latent space, which is the
+  same for the LSI space, using a symmetric autoencoder architecture, to denoise meteorological observations
+  and to mask-conditioned reconstruct missing observations. Secondly, by introducing node-level attention
+  and feature-level attention, a Hybrid Attention Graph Convolutional Network (HAGCN) models the relationships
+  between stations with a Pearson-correlation based graph and mines the informative spatial representations
+  for each station. Spatiotemporal-feature impact (STFI) mechanism then ranks and adaptively rescales
+  the meteorological variables following the time-averaged attention scores. Third, the bidirectional
+  long short-term memory (BiLSTM) network, which models the temporal dependence in both forward and backward
+  directions, is used as the two-layer network. Finally, an adaptive regression boosting strategy is used
+  to train ten learners of BiLSTM model on reweighted residual error in order to minimize systematic prediction
+  error. The Kaggle Historical Hourly Weather data set comprises 96,453 hourly records of weather observations
+  on eight meteorological parameters, and the experiments on this data set result in an MAE of 1.20 °C,
+  RMSE of 1.65 °C and MAPE of 3.0%. The robustness of the proposed framework is demonstrated against the
+  XGBoost, random forest, CNN and GCN baselines and the ablation results demonstrate that the proposed
+  framework components complement each other.
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

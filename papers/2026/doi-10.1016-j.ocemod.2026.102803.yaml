@@ -1,0 +1,57 @@
+id: doi-10.1016-j.ocemod.2026.102803
+title: Lead-conditioned direct forecasting of daily air–sea interface variables over the Tropical Pacific
+  ocean with soft physical regularization
+authors:
+- Xuerong Cui
+- Guiqing Zhang
+- Chuanyu Liu
+date: '2026-07-22'
+year: 2026
+venue: Ocean Modelling
+venue_type: journal
+ids:
+  doi: 10.1016/j.ocemod.2026.102803
+  openalex: W7170063093
+links:
+  paper: https://doi.org/10.1016/j.ocemod.2026.102803
+topic: s2s-seasonal
+topics:
+- regional-km-scale
+type: model
+method:
+- neural-operator
+- physics-constrained
+timescale:
+- s2s
+- medium
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: Lead-conditioned AFNO with FiLM and soft spectral regularization forecasts Tropical Pacific air-sea
+  variables 1-30 days ahead, reaching 0.91 SST ACC at 30 days.
+abstract: Extended-range (10–30-day) forecasting of daily air–sea interface variables over the Tropical
+  Pacific is important for linking medium-range weather prediction with subseasonal-to-seasonal, climate-relevant
+  variability. However, it remains challenging because atmospheric initial-condition information decays
+  quickly, errors grow chaotically, and air–sea coupling introduces additional sources of uncertainty.
+  Most existing data-driven approaches still rely on autoregressive rollouts; as errors accumulate recursively
+  with lead time, forecasts tend to become progressively smoother in space and spectrum, washing out sharp
+  gradients and organized structures that matter for physically consistent surface forcing. Here, we propose
+  a physics-constrained, lead-conditioned deep learning framework for high-resolution (0.25°) daily, multi-variable
+  forecasting at lead times of 1–30 days. Our model uses an adaptive Fourier neural operator (AFNO) backbone
+  and conditions predictions on lead time via feature-wise linear modulation (FiLM), enabling direct multi-lead
+  forecasting within a single network and reducing error growth from recursive rollouts. To improve long-lead
+  structure, we add a soft physical regularization (SPR) term that combines total-variation smoothing
+  with Laplacian-based spectral damping, suppressing spurious high-frequency artifacts while preserving
+  large-scale organization. On ERA5, the method reaches ACC values above 0.91 for SST and 0.83 for T2m
+  at a 30-day lead, and yields consistent gains for near-surface winds (U10/V10), surface pressure (SP),
+  specific humidity (SHUM), downward radiative fluxes (SWR/LWR), and precipitation rate (PR), outperforming
+  strong baselines including a fully retrained ClimaX model. Overall, the results show that pairing lead-conditioned
+  direct forecasting with physically motivated regularization improves long-lead skill while maintaining
+  more realistic spatial structure in daily air–sea interface predictions.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,58 @@
+id: doi-10.3390-rs18193350
+title: Pressure-Level-Guided Spectral Cross-Attention for AIRS Temperature Profile Retrieval over East
+  Asia Under Clear-Sky Summer Conditions
+authors:
+- Yujian Zhou
+- Ren Chen
+- Mingjian Gu
+- Han Li
+- Jiafeng Ruan
+- Qilin Zhang
+- Weining Ma
+date: '2026-10-01'
+year: 2026
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs18193350
+  openalex: W7215041213
+links:
+  paper: https://doi.org/10.3390/rs18193350
+topic: observations-remote-sensing
+type: model
+method:
+- transformer
+spatial:
+- regional
+data:
+- satellite
+- era5
+- stations
+status: research
+summary: PC-CAN uses pressure-conditioned cross-attention on AIRS radiances to retrieve East Asian temperature
+  profiles, reaching 1.33 K RMSE against ERA5 and 2.04 K against radiosondes.
+abstract: Conventional neural retrieval models commonly use a single spectral representation to predict
+  all pressure levels, limiting their ability to capture altitude-dependent information. We propose a
+  Pressure-Conditioned Cross-Attention Network (PC-CAN) for temperature-profile retrieval from Atmospheric
+  Infrared Sounder (AIRS) Level 1C radiances. A three-stage one-dimensional residual encoder and adaptive
+  tokenizer convert each 2645-channel spectrum into 64 spectral tokens with 64 features each. Continuous
+  log-pressure encoding generates queries for 37 standard levels, and four-head cross-attention constructs
+  level-specific features for a shared regression head. A screened regional dataset of 319,194 AIRS matches
+  with the fifth-generation European Centre for Medium-Range Weather Forecasts reanalysis (ERA5) was constructed
+  over 15–55° N and 70–140° E using Moderate Resolution Imaging Spectroradiometer (MODIS) cloud masks,
+  summer observations, and date-independent partitions. On 84,618 test samples, PC-CAN achieved an RMSE
+  of 1.3277 K, a bias of 0.1358 K, and a Pearson correlation coefficient of 0.9990 over 100–900 hPa, with
+  an RMSE of 1.3935 K across all 37 pressure levels. Its 100–900 hPa RMSE was 16.66%, 18.90%, and 17.94%
+  lower than those of a multilayer perceptron, a one-dimensional convolutional neural network, and an
+  optimized spectral self-attention model, respectively. On an external set of 208 strictly collocated
+  AIRS–Integrated Global Radiosonde Archive (IGRA) profiles from 70 stations, PC-CAN obtained an RMSE
+  of 2.039 K, compared with 2.185–2.223 K for the three baselines; station-clustered paired bootstrap
+  intervals supported the overall improvements. These results demonstrate improved agreement with ERA5
+  and radiosonde observations for clear-sky summer observations over East Asia and adjacent regions; they
+  do not establish global, year-round, or cloudy-sky generalization.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

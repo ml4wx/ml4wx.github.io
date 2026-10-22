@@ -1,0 +1,57 @@
+id: arxiv-2410.13314
+title: Precipitation Nowcasting Using Diffusion Transformer With Causal Attention
+authors:
+- Chaorong Li
+- Xudong Ling
+- YiLan Xue
+- Wenjie Luo
+- LiHong Zhu
+- Fengqing Qin
+- Yaodong Zhou
+- Yuanyuan Huang
+date: '2024-01-01'
+year: 2024
+venue: IEEE Transactions on Geoscience and Remote Sensing
+venue_type: journal
+ids:
+  arxiv: '2410.13314'
+  doi: 10.1109/tgrs.2024.3510693
+  openalex: W4405022975
+links:
+  paper: https://doi.org/10.1109/tgrs.2024.3510693
+  pdf: https://arxiv.org/pdf/2410.13314
+  code: https://github.com/ybu-lxd/DTCA
+topic: nowcasting
+type: model
+method:
+- transformer
+- diffusion
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Diffusion transformer with causal attention for precipitation nowcasting improves heavy-precipitation
+  CSI by about 15% and 8% over U-Net baselines.
+abstract: Short-term precipitation forecasting remains challenging due to the difficulty in capturing
+  long-term spatiotemporal dependencies. Current deep learning methods fall short in establishing effective
+  dependencies between conditions and forecast results, while also lacking interpretability. To address
+  this issue, we propose a precipitation nowcasting using a diffusion transformer with causal attention
+  (DTCA) model. Our model leverages the transformer and combines causal attention mechanisms to establish
+  spatiotemporal queries between conditional information (causes) and forecast results (results). This
+  design enables the model to effectively capture long-term dependencies, allowing forecast results to
+  maintain strong causal relationships with input conditions over a wide range of time and space. We explore
+  four variants of spatiotemporal information interactions for DTCA, demonstrating that global spatiotemporal
+  labeling interactions yield the best performance. In addition, we introduce a channel-to-batch shift
+  (CTBS) operation to further enhance the model’s ability to represent complex rainfall dynamics. We conducted
+  experiments on two datasets. Compared to state-of-the-art U-Net-based methods, our approach improved
+  the critical success index (CSI) for predicting heavy precipitation by approximately 15% and 8%, respectively,
+  achieving state-of-the-art performance. Our project is open source and available on GitHub at:https://github.com/ybu-lxd/DTCA.
+significance: 4
+cited_by: 34
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

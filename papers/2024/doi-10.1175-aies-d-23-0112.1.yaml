@@ -1,0 +1,58 @@
+id: doi-10.1175-aies-d-23-0112.1
+title: 'Convolutional Encoding and Normalizing Flows: A Deep Learning Approach for Offshore Wind Speed
+  Probabilistic Forecasting in the Mediterranean Sea'
+authors:
+- Robin Marcille
+- Pierre Tandeo
+- Maxime Thiébaut
+- Pierre Pinson
+- Ronan Fablet
+date: '2024-07-01'
+year: 2024
+venue: Artificial Intelligence for the Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1175/aies-d-23-0112.1
+  openalex: W4400460169
+links:
+  paper: https://doi.org/10.1175/aies-d-23-0112.1
+topic: post-processing
+topics:
+- applications-impacts
+type: model
+method:
+- cnn
+- other
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+- nwp-analysis
+status: research
+summary: A convolutional normalizing-flow model post-processes NWP and coastal measurements for 1–6 h
+  offshore wind forecasts, cutting RMSE by 40% versus raw NWP.
+abstract: Abstract The safe and efficient execution of offshore operations requires short-term (1–6 h
+  ahead) high-quality probabilistic forecasts of metocean variables. The development areas for offshore
+  wind projects, potentially in high depths, make it difficult to gather measurement data. This paper
+  explores the use of deep learning for wind speed forecasting at an unobserved offshore location. The
+  proposed convolutional architecture jointly exploits coastal measurements and numerical weather predictions
+  to emulate multivariate probabilistic short-term forecasts. We explore both Gaussian and non-Gaussian
+  neural representations using normalizing flows. We benchmark these approaches with respect to state-of-the-art
+  data-driven schemes, including analog methods and quantile forecasting. The performance of the models
+  and resulting forecast quality are analyzed in terms of probabilistic calibration, probabilistic and
+  deterministic metrics, and as a function of weather situations. We report numerical experiments for
+  a real case study off the French Mediterranean coast. Our results highlight the role of regional numerical
+  weather prediction and coastal in situ measurement in the performance of postprocessing. For single-valued
+  forecasts, a 40% decrease in RMSE is observed compared to the direct use of numerical weather predictions.
+  Significant skill improvements are also obtained for the probabilistic forecasts, in terms of various
+  scores, as well as an acceptable probabilistic calibration. The proposed architecture can process a
+  large amount of heterogeneous input data and offers a versatile probabilistic framework for multivariate
+  forecasting.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

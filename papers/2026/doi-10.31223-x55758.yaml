@@ -1,0 +1,58 @@
+id: doi-10.31223-x55758
+title: 'Spatial Predictor Selection for Next-Day Minimum Temperature Forecasting: An Automated Machine
+  Learning Framework Applied Across European Climate Regimes'
+authors:
+- Eric Duhamel
+date: '2026-01-06'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.31223/x55758
+  openalex: W7118647059
+links:
+  paper: https://doi.org/10.31223/x55758
+  pdf: https://eartharxiv.org/repository/object/11347/download/20586/
+topic: local-forecasting
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- era5
+- stations
+status: research
+summary: Automated ERA5 predictor search with XGBoost gives next-day Tmin MAE of 0.81–1.34 °C at eight
+  European sites, 35–54% better than persistence.
+abstract: 'Accurate prediction of daily minimum temperature (Tmin) is critical for frost protection, energy
+  management, and public health preparedness. While numerical weather prediction models have improved
+  substantially, their performance for Tmin forecasting remains limited by difficulties in representing
+  fine-scale nocturnal processes. This study presents an automated framework for identifying optimal spatially-distributed
+  predictors for next-day Tmin forecasting, applied to eight climatically diverse sites across Western
+  Europe. Using 26 meteorological variables from ERA5 reanalysis data spanning 2004–2024, we systematically
+  explored a search space of approximately 45,000 candidate predictors within a 540 km radius around each
+  target station. An iterative optimization algorithm guided by mean absolute error (MAE) identified 90-predictor
+  configurations for each site. Three regression models—linear regression, LightGBM, and XGBoost—were
+  evaluated, with XGBoost consistently achieving optimal performance. Results demonstrate substantial
+  skill across all sites, with MAE ranging from 0.81°C (Nice, Mediterranean) to 1.34°C (Brest, oceanic),
+  representing 35–54% improvement over persistence and 51–64% over climatological baselines. The analysis
+  revealed both universal patterns—near-surface air temperature dominated predictive gain at all sites
+  (37–66%)—and distinctive climate-specific signatures: Mediterranean stations exhibited strong persistence
+  signals (30% contribution from previous-day Tmin), oceanic climates showed enhanced dewpoint importance
+  (16%), and continental sites featured significant soil temperature contributions (14%). Predictor selections
+  proved highly stable at the variable level (23–24 of 26 variables consistently selected across independent
+  runs), while spatial autocorrelation caused greater variability in specific grid-point selections. Importantly,
+  80% of predictive gain originated from just 4 predictors and 90% from 12 predictors, suggesting that
+  substantially reduced configurations could achieve comparable performance for operational applications.
+  While the absolute MAE values reflect the idealized nature of reanalysis data and are not directly transferable
+  to operational contexts, the methodology for predictor identification remains valid and applicable to
+  numerical weather prediction outputs. This framework provides a systematic, reproducible approach to
+  spatial predictor selection that can be adapted to other forecasting variables and domains.'
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

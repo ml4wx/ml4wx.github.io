@@ -1,0 +1,53 @@
+id: arxiv-2511.05392
+title: Retrieving Tropical Cyclone Intensity from Climate Reanalysis using Deep Learning
+authors:
+- Minh-Khanh Luong
+- Chanh Kieu
+date: '2025-11-07'
+year: 2025
+venue: Journal of Climate
+venue_type: journal
+ids:
+  arxiv: '2511.05392'
+  doi: 10.1175/jcli-d-25-0649.1
+  openalex: W7108637649
+links:
+  paper: https://doi.org/10.1175/jcli-d-25-0649.1
+  pdf: https://arxiv.org/pdf/2511.05392
+topic: extremes-hazards
+topics:
+- downscaling
+type: model
+method:
+- cnn
+spatial:
+- global
+data:
+- era5
+status: research
+summary: A CNN retrieves tropical cyclone intensity and size from coarse reanalysis without super-resolution,
+  with 8-10 m/s wind RMSE, beating direct vortex detection and statistical downscaling.
+abstract: Traditional methods for improving tropical cyclone (TC) intensity from climate model outputs
+  or projections have primarily relied on either dynamical or statistical downscaling. With recent advances
+  in deep learning (DL) techniques, an important question is how DL can provide an alternative approach
+  for enhancing TC intensity and structure retrieval from climate data. Using a common DL architecture
+  based on convolutional neural networks (CNN) and a set of key environmental features relevant to TCs,
+  we show that TC intensity and size can be effectively retrieved from climate reanalysis data without
+  requiring super-resolution enhancement as in previous studies, even when applied to coarse-resolution
+  climate data. This approach allows for retrieving TC intensity metrics and size that are dynamically
+  constrained by the data, rather than estimating these quantities independently. Our results highlight
+  that TC intensity and size are governed not only by TC internal processes but also by local environments
+  during TC development for which DL models can learn and capture. The performance of our DL model depends
+  on several factors such as season, the stage of TC development, or ocean basins, with root-mean-square
+  errors ranging from $\approx$8-10 m s$^{-1}$ for the maximum 10-m wind, $\approx$10-13 hPa for minimum
+  central pressure, and $\approx$13-21 km for the radius of the maximum wind. Although these errors are
+  better than any direct vortex detection or statistical downscaling methods applied to the same data,
+  their wide ranges also suggest that a 0.5$^\circ$-resolution climate data may contain limited TC information
+  for DL models to learn from, regardless of model optimizations or architectures. Possible improvements
+  and challenges in addressing the lack of fine-scale TC information in coarse-resolution climate reanalysis
+  datasets are discussed.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

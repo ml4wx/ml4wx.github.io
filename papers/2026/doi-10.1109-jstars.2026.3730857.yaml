@@ -1,0 +1,56 @@
+id: doi-10.1109-jstars.2026.3730857
+title: Water Vapor Pressure Profile Retrieval From GNSS Radio Occultation Without NWP Background Fields
+  During Inference Using a Decoupled Cross-Attention Network
+authors:
+- Qian Gao
+- Anxin Li
+- Chun Hu
+- Dezhi Zheng
+date: '2026-01-01'
+year: 2026
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2026.3730857
+  openalex: W7208752407
+links:
+  paper: https://doi.org/10.1109/jstars.2026.3730857
+topic: observations-remote-sensing
+type: model
+method:
+- transformer
+- cnn
+spatial:
+- global
+data:
+- satellite
+- era5
+- stations
+status: research
+summary: DCA-Net retrieves water vapour pressure profiles from GNSS radio occultation refractivity without
+  NWP background fields, using decomposition and cross-attention, competitive with other data-driven methods.
+abstract: Global navigation satellite system (GNSS) radio occultation (RO) water vapor pressure retrieval
+  commonly adopts 1-D variational assimilation. This method relies on numerical weather prediction (NWP)
+  background fields and can be limited by degraded background quality, missing background data, or the
+  need for near-real-time processing. Data-driven retrieval methods provide a possible complementary approach
+  that avoids the use of event-specific NWP background profiles during inference. However, existing studies
+  mostly focus on conventional machine learning models, and the modeling of the vertical structure of
+  refractivity and environmental contextual information remains insufficient. To this end, this article
+  proposes a Decoupled Cross-Attention Network (DCA-Net), which directly retrieves water vapor pressure
+  profiles using refractivity profiles and a limited number of environmental context variables as inputs.
+  DCA-Net first decomposes the refractivity profile into a trend component representing large-scale variations
+  and a disturbance component representing local detailed variations through a high-low frequency decomposition
+  module. Subsequently, differentiated convolutional encoding branches are used to extract the vertical
+  structural features of the two components, and an environment-guided cross-attention mechanism is employed
+  to model the adaptive interaction among trend features, disturbance features, and environmental context
+  features, thereby reconstructing the water vapor pressure profile. Experiments based on COSMIC-2, ERA5,
+  and integrated global radiosonde archive radiosonde observations show that DCA-Net achieves competitive
+  retrieval performance among multiple data-driven methods, providing a feasible complementary scheme
+  for GNSS RO water vapor pressure profile retrieval when real-time high-quality background fields are
+  unavailable or degraded.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

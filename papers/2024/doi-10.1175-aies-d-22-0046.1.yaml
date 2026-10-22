@@ -1,0 +1,56 @@
+id: doi-10.1175-aies-d-22-0046.1
+title: Investigating Differences between Tropical Cyclone Detection Systems
+authors:
+- Daniel Galea
+- Kevin I. Hodges
+- Bryan Lawrence
+date: '2024-03-26'
+year: 2024
+venue: Artificial Intelligence for the Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1175/aies-d-22-0046.1
+  openalex: W4393200088
+links:
+  paper: https://doi.org/10.1175/aies-d-22-0046.1
+  pdf: https://journals.ametsoc.org/downloadpdf/view/journals/aies/aop/AIES-D-22-0046.1/AIES-D-22-0046.1.pdf
+orgs:
+- university-of-reading
+topic: extremes-hazards
+topics:
+- benchmarks-data-eval
+type: evaluation
+method:
+- cnn
+spatial:
+- global
+data:
+- era5
+- stations
+status: research
+summary: Compares the deep-learning TCDetect cyclone detector with the TRACK tracker and IBTrACS on ERA-Interim,
+  finding good recall for hurricane-strength storms but many false positives.
+abstract: Abstract Tropical cyclones (TCs) are important phenomena, and understanding their behavior requires
+  being able to detect their presence in simulations. Detection algorithms vary; here we compare a novel
+  deep learning–based detection algorithm (TCDetect) with a state-of-the-art tracking system (TRACK) and
+  an observational dataset (IBTrACS) to provide context for potential use in climate simulations. Previous
+  work has shown that TCDetect has good recall, particularly for hurricane-strength events. The primary
+  question addressed here is to what extent the structure of the systems plays a part in detection. To
+  compare with observations of TCs, it is necessary to apply detection techniques to reanalysis. For this
+  purpose, we use ERA-Interim, and a key part of the comparison is the recognition that ERA-Interim itself
+  does not fully reflect the observations. Despite that limitation, both TCDetect and TRACK applied to
+  ERA-Interim mostly agree with each other. Also, when considering only hurricane-strength TCs, TCDetect
+  and TRACK correspond well to the TC observations from IBTrACS. Like TRACK, TCDetect has good recall
+  for strong systems; however, it finds a significant number of false positives associated with weaker
+  TCs (i.e., events detected as having hurricane strength but are weaker in reality) and extratropical
+  storms. Because TCDetect was not trained to locate TCs, a post hoc method to perform comparisons was
+  used. Although this method was not always successful, some success in matching tracks and events in
+  physical space was also achieved. The analysis of matches suggested that the best results were found
+  in the Northern Hemisphere and that in most regions the detections followed the same patterns in time
+  no matter which detection method was used.
+significance: 3
+cited_by: 2
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

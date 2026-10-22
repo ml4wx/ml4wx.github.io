@@ -1,0 +1,55 @@
+id: doi-10.1088-3049-4753-ae5066
+title: 'DeepCut: adaptive neural network thresholds for precipitation phase partitioning'
+authors:
+- Maha Moussa
+- Cody Ratterman
+- Wei Zhang
+- Shandian Zhe
+- Yan Sun
+date: '2026-03-11'
+year: 2026
+venue: Machine Learning Earth
+venue_type: journal
+ids:
+  doi: 10.1088/3049-4753/ae5066
+  openalex: W7135070399
+links:
+  paper: https://doi.org/10.1088/3049-4753/ae5066
+topic: observations-remote-sensing
+topics:
+- xai-uq-physics
+type: model
+method:
+- classical-ml
+spatial:
+- global
+data:
+- stations
+status: research
+summary: DeepCut learns adaptive rain-snow temperature thresholds from 16.8 million station reports, reaching
+  93.34% accuracy on an independent test period.
+abstract: Accurately predicting precipitation phase is critical for hydrology, weather forecasting, and
+  climate applications, yet fixed temperature thresholds perform inconsistently across regions. We present
+  DeepCut , a neural network that learns adaptive, context-dependent (observation-conditional) temperature
+  thresholds conditioned on location, climate and meteorological state and applies them in a differentiable
+  classification stage. Unlike conventional black-box models, DeepCut offers transparency by explicitly
+  predicting observation-conditional transition cutoffs where rain transitions to snow, combining high
+  accuracy with physical interpretability. Using 16.8 million surface reports from 11 626 stations across
+  the Northern Hemisphere over the training period 1978–2005, our model reaches the accuracy rate of 93.34%
+  for the independent test period 2006–2007, significantly higher than existing models. More importantly,
+  the predicted thresholds (model outputs) exhibit spatially coherent patterns when aggregated over time
+  and stations, generally consistent with known physical processes. Adding explicit temporal encodings
+  (month d ^−1 ) provides little incremental benefit beyond meteorological predictors in our experiments;
+  we therefore treat them as optional. We nevertheless observe slowly varying long-term signals over the
+  study period, which are reflected in the data and can be captured through the model’s covariates and
+  regional context. Finally, we have considered atmospheric profiles in addition to near-surface temperature
+  variables that have typically been included in previous studies. Although these profile predictors do
+  not increase overall predictive accuracy in our experiments, their demonstrated relationships with the
+  thresholds are promising in explaining the phase transition process and worth further investigation
+  in future research.
+significance: 3
+cited_by: 2
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

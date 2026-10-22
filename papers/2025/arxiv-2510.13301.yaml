@@ -1,0 +1,47 @@
+id: arxiv-2510.13301
+title: Km-scale dynamical downscaling through conformalized latent diffusion models
+authors:
+- Alessandro Brusaferri
+- Andrea Ballarino
+date: '2025-10-15'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2510.13301'
+  openalex: W4415275679
+links:
+  paper: https://arxiv.org/abs/2510.13301
+  pdf: https://arxiv.org/pdf/2510.13301
+topic: downscaling
+topics:
+- xai-uq-physics
+type: model
+method:
+- diffusion
+- classical-ml
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: Conformalized quantile regression on latent diffusion samples gives finite-sample-valid 2-km
+  ERA5 downscaling intervals over Italy with improved grid-point coverage over the diffusion baseline.
+abstract: Dynamical downscaling is crucial for deriving high-resolution meteorological fields from coarse-scale
+  simulations, enabling detailed analysis for critical applications such as weather forecasting and renewable
+  energy modeling. Generative Diffusion models (DMs) have recently emerged as powerful data-driven tools
+  for this task, offering reconstruction fidelity and more scalable sampling supporting uncertainty quantification.
+  However, DMs lack finite-sample guarantees against overconfident predictions, resulting in miscalibrated
+  grid-point-level uncertainty estimates hindering their reliability in operational contexts. In this
+  work, we tackle this issue by augmenting the downscaling pipeline with a conformal prediction framework.
+  Specifically, the DM's samples are post-processed to derive conditional quantile estimates, incorporated
+  into a conformalized quantile regression procedure targeting locally adaptive prediction intervals with
+  finite-sample marginal validity. The proposed approach is evaluated on ERA5 reanalysis data over Italy,
+  downscaled to a 2-km grid. Results demonstrate grid-point-level uncertainty estimates with markedly
+  improved coverage and stable probabilistic scores relative to the DM baseline, highlighting the potential
+  of conformalized generative models for more trustworthy probabilistic downscaling to high-resolution
+  meteorological fields.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

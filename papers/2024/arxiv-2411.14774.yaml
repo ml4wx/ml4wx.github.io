@@ -1,0 +1,53 @@
+id: arxiv-2411.14774
+title: Resolution-Agnostic Transformer-based Climate Downscaling
+authors:
+- Declan Curran
+- Hira Saleem
+- Sanaa Hobeichi
+- Flora Salim
+date: '2024-11-22'
+year: 2024
+venue: Qeios
+venue_type: journal
+ids:
+  arxiv: '2411.14774'
+  doi: 10.32388/jt4y4x
+  openalex: W4404865058
+links:
+  paper: https://arxiv.org/abs/2411.14774
+  pdf: https://arxiv.org/pdf/2411.14774
+topic: downscaling
+topics:
+- foundation-models
+type: model
+method:
+- transformer
+timescale:
+- climate
+spatial:
+- regional
+data:
+- era5
+- other
+status: research
+summary: Pretrained Earth ViT trained on ERA5 at 50 to 25 km transfers without retraining to 3 km BARRA-SY
+  data, enabling cheap GCM downscaling for regional climate ensembles.
+abstract: Understanding future weather changes at regional and local scales is crucial for planning and
+  decision-making, particularly in the context of extreme weather events, as well as for broader applications
+  in agriculture, insurance, and infrastructure development. However, the computational cost of downscaling
+  Global Climate Models (GCMs) to the fine resolutions needed for such applications presents a significant
+  barrier. Drawing on advancements in weather forecasting models, this study introduces a cost-efficient
+  downscaling method using a pretrained Earth Vision Transformer (Earth ViT) model. Initially trained
+  on ERA5 data to downscale from 50 km to 25 km resolution, the model is then tested on the higher resolution
+  BARRA-SY dataset at a 3 km resolution. Remarkably, it performs well without additional training, demonstrating
+  its ability to generalize across different resolutions. This approach holds promise for generating large
+  ensembles of regional climate simulations by downscaling GCMs with varying input resolutions without
+  incurring additional training costs. Ultimately, this method could provide more comprehensive estimates
+  of potential future changes in key climate variables, aiding in effective planning for extreme weather
+  events and climate change adaptation strategies.
+significance: 4
+cited_by: 2
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

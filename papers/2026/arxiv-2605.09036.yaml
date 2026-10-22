@@ -1,0 +1,58 @@
+id: arxiv-2605.09036
+title: 'PACT: Peak-Aware Cross-Attention Graph Transformers for Efficient Storm-Surge Emulation'
+authors:
+- Zesheng Liu
+- Doyup Kwon
+- Ning Lin
+- Maryam Rahnemoonfar
+date: '2026-05-09'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.09036'
+  openalex: W7160911117
+links:
+  paper: https://arxiv.org/abs/2605.09036
+  pdf: https://arxiv.org/pdf/2605.09036
+orgs:
+- princeton-university
+topic: extremes-hazards
+topics:
+- applications-impacts
+type: model
+method:
+- gnn
+- transformer
+timescale:
+- short
+spatial:
+- local
+data:
+- era5
+- cmip
+- stations
+status: research
+summary: Graph transformer emulates station storm surge from atmospheric forcing with peak-aware losses,
+  beating a GNN baseline and running in seconds.
+abstract: Accurate and efficient storm-surge emulation is essential for coastal hazard assessment, yet
+  high-fidelity hydrodynamic models remain too expensive for large scenario ensembles and rapid evaluation
+  under heterogeneous climate forcings. We present PACT, a peak-aware cross-attention graph transformer
+  for efficient station-level storm-surge prediction from atmospheric forcing fields. PACT represents
+  each forcing patch as a graph, encodes spatial structure with GraphSAGE, and uses a learned station
+  query to aggregate node information through cross-attention rather than uniform pooling. A Transformer
+  encoder models temporal dependence across the forcing history, and a horizon-query decoder generates
+  lead-specific forecasts from a shared temporal memory. To better capture extreme events, we introduce
+  a peak-aware learning strategy that couples a lightweight auxiliary peak-aware head with a tailored
+  training objective, including a tail-focused loss on peak-dominated samples and a horizon-wise slope
+  regularizer to encourage coherent multi-step evolution. Across multiple tide-gauge stations along the
+  US Northeast coast, PACT outperforms a strong spatio-temporal graph neural network baseline in both
+  RMSE and MAE. Diagnostics show improved peak fidelity and tail preservation for reanalysis and most
+  CMIP6 datasets. PACT is also computationally efficient, requiring about 3.5~s to generate a full winter-season
+  surge trajectory for one year after training. Under distribution shift across five CMIP6 forcings, PACT
+  transfers well within the CMIP6 family but degrades markedly when transferring from reanalysis to climate-model
+  forcings, highlighting a persistent reanalysis--GCM gap.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

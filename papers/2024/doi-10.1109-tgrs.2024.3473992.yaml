@@ -1,0 +1,54 @@
+id: doi-10.1109-tgrs.2024.3473992
+title: Cloud Cover Prediction Model Using Multichannel Geostationary Satellite Images
+authors:
+- E. Cho
+- Eunbin Kim
+- Yeji Choi
+date: '2024-01-01'
+year: 2024
+venue: IEEE Transactions on Geoscience and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/tgrs.2024.3473992
+  openalex: W4403210477
+links:
+  paper: https://doi.org/10.1109/tgrs.2024.3473992
+topic: nowcasting
+type: model
+method:
+- cnn
+- rnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Cloudstream couples a CNN encoder-decoder with PredRNN-V2 to predict cloud images from GEO-KOMPSAT-2A,
+  matching F1 at 128x128 inputs with three times fewer FLOPs.
+abstract: Cloud cover influences solar radiation reaching the Earth’s surface, impacting industries. Recently,
+  advancements in weather prediction have been made through the use of satellite images and deep learning
+  methods for enhancing the accuracy of cloud variability forecasts. Despite these advancements, computational
+  limitations arise due to the large size of the satellite images. Although conventional practices involving
+  the cropping or downscaling of images into smaller sizes have been used, these processes have been observed
+  to compromise the accuracy of the predicted images. In this study, we introduce Cloudstream, a novel
+  approach that combines a convolutional neural network (CNN)-based encoder, decoder, and PredRNN-V2 as
+  a backbone model. This approach prioritizes computational efficiency while also maintaining prediction
+  accuracy. Cloudstream predicted future cloud detection image data, training with the dataset of the
+  sequential cloud detection and infrared channel images from the Korean Geostationary Meteorological
+  Satellite GEO-KOMPSAT-2A. In addition, we explored the utilization of nonpatch images in the development
+  of Cloudstream. A quantitative evaluation of the model was performed using two different input sizes
+  for the same geographic area:$128\times 128$pixels and$512\times 512$pixels. There are no significant
+  differences in F1 scores between Cloudstream and PredRNN-V2 when processing$128\times 128$inputs; however,
+  Cloudstream required three times fewer floating-point operations (FLOPs) than PredRNN-V2. In addition,
+  we found that$512\times 512$high-resolution input images exhibit superior prediction performance compared
+  with$128\times 128$low-resolution input images. This study contributes to the refinement of deep-learning-based
+  video frame prediction models by focusing on optimizing satellite image prediction, addressing computational
+  challenges.
+significance: 3
+cited_by: 10
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

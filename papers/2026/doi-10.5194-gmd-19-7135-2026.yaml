@@ -1,0 +1,51 @@
+id: doi-10.5194-gmd-19-7135-2026
+title: New classes of climate model emulators to improve paleoclimate reconstructions
+authors:
+- Auguste Gaudin
+- Myriam Khodri
+date: '2026-08-04'
+year: 2026
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-19-7135-2026
+  openalex: W7172406542
+links:
+  paper: https://doi.org/10.5194/gmd-19-7135-2026
+topic: climate-emulation
+topics:
+- data-assimilation
+type: model
+method:
+- rnn
+- other
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: Autoencoder plus reservoir computing emulators trained on CMIP6 capture ENSO and AMV for paleoclimate
+  reconstruction, with a pre-trained variant for scarce data.
+abstract: Abstract. Reconstructing spatial climate variability from proxy records requires forward models
+  “emulators” that capture the dynamical structure of the climate system while remaining computationally
+  efficient. Traditional emulators based on Empirical Orthogonal Functions and Linear Inverse Models (LIMs)
+  face inherent limitations due to linearity and variance-based dimensionality reduction. Here we develop
+  and evaluate a hierarchy of CMIP-class climate model emulators that integrate autoencoder-based dimensionality
+  reduction with nonlinear prediction architectures, including Reservoir Computing (RC) and Recurrent
+  Neural Networks (RNNs). Using a comprehensive experimental protocol applied to the IPSL-CM6A-LR model
+  and 52 CMIP6s models, we show that combining autoencoder and RC (AERCn) provides the most robust performance
+  across time scales and dynamical regimes when data are plentiful. The AERCn configuration captures nonlinear
+  features of ENSO and Atlantic Multidecadal Variability, maintains high spatial reconstruction skill,
+  and generalizes across distinct climate model structures. When training data are scarce, a multimodel
+  pre-trained AERNN provides a data-efficient and competitive alternative. These properties make the proposed
+  architectures particularly well suited for integration into Particle Filters and Ensemble Kalman Filter
+  PDA frameworks. Our results highlight the importance of predictability-oriented dimensionality reduction
+  and nonlinear dynamical memory for emulator design, and they provide a scalable path toward improved
+  reconstructions of climate variability over the Common Era.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

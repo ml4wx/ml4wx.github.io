@@ -1,0 +1,57 @@
+id: doi-10.3390-app16010436
+title: A Time and Frequency Domain Based Dual-Attention Neural Network for Tropical Cyclone Track Prediction
+authors:
+- Fancheng Meng
+- Xiran Xiong
+- Liling Zhao
+date: '2025-12-31'
+year: 2025
+venue: Applied Sciences
+venue_type: journal
+ids:
+  doi: 10.3390/app16010436
+  openalex: W7117683007
+links:
+  paper: https://doi.org/10.3390/app16010436
+  pdf: https://www.mdpi.com/2076-3417/16/1/436/pdf?version=1767168411
+orgs:
+- nuist
+topic: extremes-hazards
+type: model
+method:
+- transformer
+- rnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- other
+status: research
+summary: LFInformer hybrid Informer-LSTM with frequency attention for Northwest Pacific typhoon tracks,
+  reporting 72 km error at 6 h and 169 km at 48 h.
+abstract: Due to the influence of various dynamic meteorological factors, accurate Tropical Cyclone (TC)
+  track prediction is a significant challenge. However, current deep learning based time series prediction
+  models fail to simultaneously capture both short-term and long-term dependencies, while also neglecting
+  the change in meteorological environment pattern associated with TC motion. This limitation becomes
+  particularly pronounced during sudden turning in the TC track, resulting in significant deterioration
+  of prediction accuracy. To overcome these limitations, we propose LFInformer, a hybrid deep learning
+  framework that integrates an Informer backbone, a Frequency-Enhanced Channel Attention Mechanism (FECAM),
+  and a Long Short-Term Memory (LSTM) network for TC track prediction. The Informer backbone is underpinned
+  by ProbSparse Self-Attention in both the encoder and the causally masked decoder, prioritizing the most
+  informative query–key interactions to deliver robust long-range modeling and sharper detection of turning
+  signals. FECAM enhances meteorological inputs via discrete cosine transforms, band-wise weighting, and
+  channel-wise reweighting, then projects the enhanced signals back into the time domain to produce frequency-aware
+  representations. The LSTM branch captures short-term variations and localized temporal dynamics through
+  its recurrent structure. Together, these components sustain high accuracy during both steady evolution
+  and sudden turnin. Experiments based on the JMA and IBTrACS 1951–2022 Northwest Pacific TC data show
+  that the proposed model achieves an average absolute position error (APE) of 72.39 km, 117.72 km, 145.31
+  km and 168.64 km for the 6-h, 12-h, 24-h and 48-h forecasting tasks, respectively. The proposed model
+  enhances the accuracy of TC track predictions, offering an innovative approach that optimally balances
+  precision and efficiency in forecasting sudden turning points.
+significance: 3
+cited_by: 1
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

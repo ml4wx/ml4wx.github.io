@@ -1,0 +1,51 @@
+id: arxiv-2404.01122
+title: 'Enhanced Precision in Rainfall Forecasting for Mumbai: Utilizing Physics Informed ConvLSTM2D Models
+  for Finer Spatial and Temporal Resolution'
+authors:
+- Ajay Devda
+- Akshay Sunil
+- Murthy R
+- B Deepthi
+date: '2024-04-01'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2404.01122'
+  openalex: W4393741147
+links:
+  paper: https://arxiv.org/abs/2404.01122
+  pdf: https://arxiv.org/pdf/2404.01122
+topic: local-forecasting
+type: model
+method:
+- rnn
+- physics-constrained
+timescale:
+- short
+spatial:
+- local
+data:
+- era5
+status: research
+summary: Physics-informed ConvLSTM2D uses ERA5 predictors to forecast 6- and 12-hour precipitation on
+  city-scale grids over Mumbai, targeting finer spatial resolution.
+abstract: Forecasting rainfall in tropical areas is challenging due to complex atmospheric behaviour,
+  elevated humidity levels, and the common presence of convective rain events. In the Indian context,
+  the difficulty is further exacerbated because of the monsoon intra seasonal oscillations, which introduce
+  significant variability in rainfall patterns over short periods. Earlier investigations into rainfall
+  prediction leveraged numerical weather prediction methods, along with statistical and deep learning
+  approaches. This study introduces deep learning spatial model aimed at enhancing rainfall prediction
+  accuracy on a finer scale. In this study, we hypothesize that integrating physical understanding improves
+  the precipitation prediction skill of deep learning models with high precision for finer spatial scales,
+  such as cities. To test this hypothesis, we introduce a physics informed ConvLSTM2D model to predict
+  precipitation 6hr and 12hr ahead for Mumbai, India. We utilize ERA5 reanalysis data select predictor
+  variables, across various geopotential levels. The ConvLSTM2D model was trained on the target variable
+  precipitation for 4 different grids representing different spatial grid locations of Mumbai. Thus, the
+  use of the ConvLSTM2D model for rainfall prediction, utilizing physics informed data from specific grids
+  with limited spatial information, reflects current advancements in meteorological research that emphasize
+  both efficiency and localized precision.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

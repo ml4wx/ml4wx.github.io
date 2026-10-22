@@ -1,0 +1,48 @@
+id: arxiv-2610.09898
+title: Learning joint probabilistic weather forecasts from station observations alone
+authors:
+- Chaeyeon Yi
+- Yun Am Seo
+date: '2026-10-07'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.09898'
+  openalex: W7220923596
+links:
+  paper: https://arxiv.org/abs/2610.09898
+  pdf: https://arxiv.org/pdf/2610.09898
+topic: local-forecasting
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- transformer
+- other
+timescale:
+- short
+- medium
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Attention model learns joint Gaussian surface-weather distributions from 96 stations alone, with
+  4.9% lower energy score than a matched learned comparator.
+abstract: Assessing compound weather risks requires forecasts representing dependence between variables.
+  CLARA (Calibrated Advection-Routing Attention) learns joint Gaussian predictive distributions of five
+  surface variables from station observations alone, without numerical weather prediction or reanalysis;
+  the approximately 28,000-parameter model supports CPU training and prediction. Across six multi-year
+  folds on 96 stations, its lead-mean energy score is 4.9% lower than that of a learned comparator with
+  matched temporal inputs (4.7% with a similar parameter count) and 11-65% lower than those of statistical
+  baselines. Holding marginal variances fixed, removing learned correlations worsens joint negative log-likelihood
+  by 1.0-2.8 nats per station. A covariance-scale estimator, proved consistent under stated assumptions,
+  improves short-lead calibration but over-corrects at long leads. Synthetic interventions show an attention-bias
+  coefficient alone does not measure forecast influence. Retrained in ten regions on six continents, CLARA
+  outperforms persistence in all 60 multi-year region-lead comparisons and a similarly sized learned model
+  in 57 of 60.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,49 @@
+id: arxiv-2505.17720
+title: 'PEAR: Equal Area Weather Forecasting on the Sphere'
+authors:
+- Hampus Linander
+- Tage Tykesson
+- Pietro Rosso
+- Christoffer Petersson
+- Daniel Persson
+- Jan E. Gerken
+date: '2025-05-23'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2505.17720'
+links:
+  paper: https://arxiv.org/abs/2505.17720
+  pdf: https://arxiv.org/pdf/2505.17720
+topic: global-medium-range
+type: model
+method:
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: PEAR, a transformer operating on HEALPix equal-area grids, outperforms the equiangular Pangu-Weather
+  baseline for medium-range forecasts and supports climate emulation.
+abstract: Artificial intelligence is rapidly reshaping the natural sciences, with weather forecasting
+  emerging as a flagship AI4Science application where machine learning models can now rival and even surpass
+  traditional numerical simulations. Following the success of the landmark models Pangu Weather and Graphcast,
+  outperforming traditional numerical methods for global medium-range forecasting, many novel data-driven
+  methods have emerged. A common limitation shared by many of these models is their reliance on an equiangular
+  discretization of the sphere which suffers from a much finer grid at the poles than around the equator.
+  In contrast, in the Hierarchical Equal Area iso-Latitude Pixelization (HEALPix) of the sphere, each
+  pixel covers the same surface area, removing unphysical biases. Motivated by a growing support for this
+  grid in meteorology and climate sciences, we propose to perform weather forecasting with deep learning
+  models which natively operate on the HEALPix grid. To this end, we introduce Pangu Equal ARea (PEAR),
+  a transformer-based weather forecasting model which operates directly on HEALPix-features and outperforms
+  the corresponding model on an equiangular grid, and other baselines, without any computational overhead.
+  Furthermore, we perform numerical experiments on the equivariance properties of our setup and verify
+  the performance of PEAR on climate model emulation.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

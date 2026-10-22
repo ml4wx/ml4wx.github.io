@@ -1,0 +1,56 @@
+id: arxiv-2511.17558
+title: 'WaveC2R: Wavelet-Driven Coarse-to-Refined Hierarchical Learning for Radar Retrieval'
+authors:
+- Chunlei Shi
+- Han Xu
+- Yinghao Li
+- Yi-Lin Wei
+- Yongchao Feng
+- Yecheng Zhang
+- Dan Niu
+date: '2025-11-13'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2511.17558'
+  openalex: W7106691322
+links:
+  paper: https://arxiv.org/abs/2511.17558
+  pdf: https://arxiv.org/pdf/2511.17558
+topic: observations-remote-sensing
+topics:
+- extremes-hazards
+type: model
+method:
+- diffusion
+- cnn
+spatial:
+- regional
+data:
+- satellite
+- radar
+status: research
+summary: Wavelet-decomposed diffusion framework retrieves radar precipitation from satellite data on SEVIR,
+  reportedly achieving state-of-the-art on sharp boundaries and high intensities.
+abstract: Satellite-based radar retrieval methods are widely employed to fill coverage gaps in ground-based
+  radar systems, especially in remote areas affected by terrain blockage and limited detection range.
+  Existing methods predominantly rely on overly simplistic spatial-domain architectures constructed from
+  a single data source, limiting their ability to accurately capture complex precipitation patterns and
+  sharply defined meteorological boundaries. To address these limitations, we propose WaveC2R, a novel
+  wavelet-driven coarse-to-refined framework for radar retrieval. WaveC2R integrates complementary multi-source
+  data and leverages frequency-domain decomposition to separately model low-frequency components for capturing
+  precipitation patterns and high-frequency components for delineating sharply defined meteorological
+  boundaries. Specifically, WaveC2R consists of two stages (i)Intensity-Boundary Decoupled Learning, which
+  leverages wavelet decomposition and frequency-specific loss functions to separately optimize low-frequency
+  intensity and high-frequency boundaries; and (ii)Detail-Enhanced Diffusion Refinement, which employs
+  frequency-aware conditional priors and multi-source data to progressively enhance fine-scale precipitation
+  structures while preserving coarse-scale meteorological consistency. Experimental results on the publicly
+  available SEVIR dataset demonstrate that WaveC2R achieves state-of-the-art performance in satellite-based
+  radar retrieval, particularly excelling at preserving high-intensity precipitation features and sharply
+  defined meteorological boundaries.
+significance: 4
+cited_by: 1
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

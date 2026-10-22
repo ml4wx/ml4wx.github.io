@@ -1,0 +1,50 @@
+id: doi-10.62146-ijecbe.v3i1.108
+title: Day-Ahead Solar Power Forecasting Using a Hybrid Model Combining Regression and Physical Model
+  Chain
+authors:
+- Erwin Pauang Pongmasakke
+- Jian‐Hong Liu
+- Budi Sudiarto
+date: '2025-05-21'
+year: 2025
+venue: International Journal of Electrical Computer and Biomedical Engineering
+venue_type: journal
+ids:
+  doi: 10.62146/ijecbe.v3i1.108
+  openalex: W4411013404
+links:
+  paper: https://doi.org/10.62146/ijecbe.v3i1.108
+  pdf: https://ijecbe.ui.ac.id/go/article/download/108/59
+topic: applications-impacts
+topics:
+- post-processing
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+status: research
+summary: XGBoost irradiance forecasts from ECMWF data feed a physical PV model, reaching nRMSE of about
+  13.4% with one week of training data.
+abstract: Solar power forecasting is essential for integrating PV plants into power grids, ensuring stability
+  and aiding system operators (SOs) in decision-making. However, existing day-ahead models struggle with
+  rapid weather changes, while deep learning models require extensive historical data, making them impractical
+  for new PV plants.This study proposes a hybrid approach combining the XGBoost algorithm for hourly solar
+  irradiance prediction using Numerical Weather Prediction (NWP) data and a physical model to convert
+  irradiance into power. The XGBoost model is periodically retrained via a sliding window mechanism to
+  adapt to dynamic weather conditions.A case study using two years of 271 kWp PV data from NIST (US) and
+  historical NWP data from ECMWF ENS for GHI forecasting, alongside ECMWF HRES for power conversion, demonstrated
+  the method’s effectiveness. Using just one week of historical data for initial training, the model achieved
+  an nRMSE of 13.35%–13.53%, nMAE of 6.9%–7.03%, and nMBE of -2.03% to -0.29%. The proposed approach improves
+  PV forecasting reliability for new plants with limited data, serving as an intermediary solution until
+  sufficient historical data is available for deep learning models.
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

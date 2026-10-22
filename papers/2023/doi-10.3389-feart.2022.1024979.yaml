@@ -1,0 +1,57 @@
+id: doi-10.3389-feart.2022.1024979
+title: Estimating the tropical cyclone wind structure using physics-incorporated networks
+authors:
+- Shi-Jin Yuan
+- Qianhui You
+- Bin Mu
+- Bo Qin
+- Jing Xu
+date: '2023-01-13'
+year: 2023
+venue: Frontiers in Earth Science
+venue_type: journal
+ids:
+  doi: 10.3389/feart.2022.1024979
+  openalex: W4316041431
+links:
+  paper: https://doi.org/10.3389/feart.2022.1024979
+  pdf: https://doi.org/10.3389/feart.2022.1024979
+orgs:
+- cma
+topic: extremes-hazards
+topics:
+- observations-remote-sensing
+type: model
+method:
+- physics-constrained
+- cnn
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: A physics-incorporated multi-task network estimates tropical cyclone wind radii and intensity
+  from satellite imagery with 4.87-knot intensity RMSE and probabilistic outputs.
+abstract: Satellite-based remote sensing technology plays a significant role in identifying tropical cyclones
+  (TCs), and most of the current research focuses on intensity estimation. However, analyzing the wind
+  structure of TCs, which is directly related to the danger they bring, remains a challenge. By adding
+  prior knowledge of TCs into the model, we propose a physics-incorporated network based on multi-task
+  learning to estimate wind radii and intensity, whose layers can automatically extract rotation-invariant
+  features related to the TC core from multichannel satellite imageries. In addition, we build a more
+  comprehensive dataset, including global Statistical Hurricane Intensity Prediction Scheme (SHIPS) predictors,
+  to tackle the structure task. We compare our model with existing methods, and it shows that our model
+  gets better results in estimating 50-knot and 64-knot wind radii and achieves a 4.87-knot root-mean-squared
+  error (RMSE) of intensity. By predicting probability density functions, our model quantifies the uncertainty
+  of the result. The experimental results show that the incorporation of rotation equivariance into the
+  layers can enhance TC structure estimation. By considering the feature importance of multi-source predictors,
+  we find that our model pays attention to key predictors related to the TC structure. Specifically, the
+  tangential wind speed at 500 km from the TC center and the radius of the 5-knot wind both greatly reduce
+  the error of the estimated parameters. Finally, two case studies show that the proposed model performs
+  well most of the time during TCs’ rapid intensification. However, when TCs’ system is not well organized,
+  estimating the wind structure is challenging.
+significance: 3
+cited_by: 8
+score: 22
+highlight: false
+added: '2026-10-22'
+source: snowball

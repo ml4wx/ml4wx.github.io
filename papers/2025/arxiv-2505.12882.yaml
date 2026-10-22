@@ -1,0 +1,54 @@
+id: arxiv-2505.12882
+title: 'PhyDA: Physics-Guided Diffusion Models for Data Assimilation in Atmospheric Systems'
+authors:
+- Hao Wang
+- Jindong Han
+- Wei Fan
+- Weijia Zhang
+- Hao Liu
+date: '2025-05-19'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2505.12882'
+  openalex: W4417302318
+links:
+  paper: https://arxiv.org/abs/2505.12882
+  pdf: https://arxiv.org/pdf/2505.12882
+orgs:
+- university-of-oxford
+topic: data-assimilation
+topics:
+- xai-uq-physics
+type: model
+method:
+- diffusion
+- physics-constrained
+spatial:
+- global
+data:
+- era5
+status: research
+summary: PhyDA adds PDE-based physical regularization and a virtual reconstruction encoder to diffusion-based
+  atmospheric data assimilation, improving physical plausibility on ERA5 over baselines.
+abstract: 'Data Assimilation (DA) plays a critical role in atmospheric science by reconstructing spatially
+  continous estimates of the system state, which serves as initial conditions for scientific analysis.
+  While recent advances in diffusion models have shown great potential for DA tasks, most existing approaches
+  remain purely data-driven and often overlook the physical laws that govern complex atmospheric dynamics.
+  As a result, they may yield physically inconsistent reconstructions that impair downstream applications.
+  To overcome this limitation, we propose PhyDA, a physics-guided diffusion framework designed to ensure
+  physical coherence in atmospheric data assimilation. PhyDA introduces two key components: (1) a Physically
+  Regularized Diffusion Objective that integrates physical constraints into the training process by penalizing
+  deviations from known physical laws expressed as partial differential equations, and (2) a Virtual Reconstruction
+  Encoder that bridges observational sparsity for structured latent representations, further enhancing
+  the model''s ability to infer complete and physically coherent states. Experiments on the ERA5 reanalysis
+  dataset demonstrate that PhyDA achieves superior accuracy and better physical plausibility compared
+  to state-of-the-art baselines. Our results emphasize the importance of combining generative modeling
+  with domain-specific physical knowledge and show that PhyDA offers a promising direction for improving
+  real-world data assimilation systems.'
+significance: 5
+cited_by: 2
+score: 30
+highlight: false
+added: '2026-10-22'
+source: backfill

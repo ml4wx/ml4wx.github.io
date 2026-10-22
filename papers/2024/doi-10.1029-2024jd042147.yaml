@@ -1,0 +1,60 @@
+id: doi-10.1029-2024jd042147
+title: Predicting Cloud‐To‐Ground Lightning in the Western United States From the Large‐Scale Environment
+  Using Explainable Neural Networks
+authors:
+- Dmitri A. Kalashnikov
+- Frances V. Davenport
+- Zachary Michael Labe
+- Paul C. Loikith
+- John T. Abatzoglou
+- Deepti Singh
+date: '2024-11-22'
+year: 2024
+venue: Journal of Geophysical Research Atmospheres
+venue_type: journal
+ids:
+  doi: 10.1029/2024jd042147
+  openalex: W4404644842
+links:
+  paper: https://doi.org/10.1029/2024jd042147
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2024JD042147
+orgs:
+- colorado-state-university
+- noaa
+- princeton-university
+topic: extremes-hazards
+topics:
+- xai-uq-physics
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: CNNs with layer-wise relevance propagation predict western US cloud-to-ground lightning days
+  (median AUC 0.8), usable for climate-model lightning parameterization.
+abstract: Abstract Lightning is a major source of wildfire ignition in the western United States (WUS).
+  We build and train convolutional neural networks (CNNs) to predict the occurrence of cloud‐to‐ground
+  (CG) lightning across the WUS during June–September from the spatial patterns of seven large‐scale meteorological
+  variables from reanalysis (1995–2022). Individually trained CNN models at each 1° × 1° grid cell ( n
+  = 285 CNNs) show high skill at predicting CG lightning days across the WUS (median AUC = 0.8) and perform
+  best in parts of the interior Southwest where summertime CG lightning is most common. Further, interannual
+  correlation between observed and predicted CG lightning days is high (median r = 0.87), demonstrating
+  that locally trained CNNs realistically capture year‐to‐year variation in CG lightning activity across
+  the WUS. We then use layer‐wise relevance propagation (LRP) to investigate the relevance of predictor
+  variables to successful CG lightning prediction in each grid cell. Using maximum LRP values, our results
+  show that two thermodynamic variables—ratio of surface moist static energy to free‐tropospheric saturation
+  moist static energy, and the 700–500 hPa lapse rate—are the most relevant CG lightning predictors for
+  93%–96% of CNNs depending on the LRP variant used. As lightning is not directly simulated by global
+  climate models, these CNNs could be used to parameterize CG lightning in climate models to assess changes
+  in future CG lightning occurrence with projected climate change. Understanding changes in CG lightning
+  risk and consequently lightning‐caused wildfire risk across the WUS could inform fire management, planning,
+  and disaster preparedness.
+significance: 3
+cited_by: 10
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

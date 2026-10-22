@@ -1,0 +1,54 @@
+id: arxiv-2407.11696
+title: Global atmospheric data assimilation with multi-modal masked autoencoders
+authors:
+- Thomas J. Vandal
+- Kate Duffy
+- Daniel McDuff
+- Yoni Nachmany
+- Chris Hartshorn
+date: '2024-07-16'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2407.11696'
+  doi: 10.1109/icdmw69685.2025.00103
+  openalex: W7134943417
+links:
+  paper: https://arxiv.org/abs/2407.11696
+  pdf: https://arxiv.org/pdf/2407.11696
+topic: data-assimilation
+topics:
+- foundation-models
+- observations-remote-sensing
+type: model
+method:
+- transformer
+timescale:
+- nowcast
+spatial:
+- global
+data:
+- satellite
+- era5
+status: research
+summary: EarthNet, a multimodal masked autoencoder, assimilates satellite observations into a global 0.16°
+  3D temperature and humidity dataset, beating ERA5 and MERRA-2 humidity by 10–60% in the mid-troposphere.
+abstract: Global data assimilation enables weather forecasting at all scales and provides valuable data
+  for studying the Earth system. However, the computational demands of physics-based algorithms used in
+  operational systems limits the volume and diversity of observations that are assimilated. Here, we present
+  "EarthNet", a multi-modal foundation model for data assimilation that learns to predict a global gap-filled
+  atmospheric state solely from satellite observations. EarthNet is trained as a masked autoencoder that
+  ingests a 12 hour sequence of observations and learns to fill missing data from other sensors. We show
+  that EarthNet performs a form of data assimilation producing a global 0.16 degree reanalysis dataset
+  of 3D atmospheric temperature and humidity at a fraction of the time compared to operational systems.
+  It is shown that the resulting reanalysis dataset reproduces climatology by evaluating a 1 hour forecast
+  background state against observations. We also show that our 3D humidity predictions outperform MERRA-2
+  and ERA5 reanalyses by 10% to 60% between the middle troposphere and lower stratosphere (5 to 20 km
+  altitude) and our 3D temperature and humidity are statistically equivalent to the Microwave integrated
+  Retrieval System (MiRS) observations at nearly every level of the atmosphere. Our results indicate significant
+  promise in using EarthNet for high-frequency data assimilation and global weather forecasting.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

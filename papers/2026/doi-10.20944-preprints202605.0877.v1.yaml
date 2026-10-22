@@ -1,0 +1,57 @@
+id: doi-10.20944-preprints202605.0877.v1
+title: 'Enhancing Rainfall Forecasting in Tunisia: Application of a Hybrid Deep Learning Approach'
+authors:
+- Adel Khelifi
+- Mark R Altaweel
+- Slaheddine Khlifi
+- Mohammad Hashir
+- Med Rayen Balghouthi
+date: '2026-05-13'
+year: 2026
+venue: Preprints.org
+venue_type: preprint
+ids:
+  doi: 10.20944/preprints202605.0877.v1
+  openalex: W7161181902
+links:
+  paper: https://doi.org/10.20944/preprints202605.0877.v1
+topic: local-forecasting
+topics:
+- observations-remote-sensing
+type: model
+method:
+- rnn
+- transformer
+- classical-ml
+timescale:
+- s2s
+spatial:
+- local
+data:
+- stations
+status: research
+summary: BiLSTM-Transformer imputes gauge gaps and forecasts monthly rainfall at 47 Tunisian stations,
+  cutting RMSE 18.4% versus interpolation (14.2 vs 17.4 mm).
+abstract: 'Accurate rainfall data are essential for hydrological forecasting and climate modeling. However,
+  many developing regions, including Tunisia, struggle with significant data gaps in rainfall measurements,
+  particularly from gauge stations. These missing data impair climate model validation and reduce forecasting
+  accuracy across both spatial and temporal dimensions. To overcome these limitations, we conduct a comprehensive
+  evaluation of novel deep learning (DL) architectures designed for imputing missing rainfall gauge data
+  and generating monthly rainfall forecasts. Our framework systematically compares multiple DL approaches:
+  Long Short-Term Memory (LSTM), a hybrid Bidirectional LSTM with a Transformer attention mechanism (BiLSTM-Transformer),
+  and a pure Transformer model. Subsequently, we employ Principal Component Analysis (PCA), K-Means clustering,
+  and quantile techniques to further refine DL model outputs. The processed data are then analyzed using
+  Light Gradient Boosting Machine (LightGBM) to produce final results. Our rigorous evaluation across
+  47 Tunisian gauges covering 1983–2012 (70% training, 30% testing) demonstrates that the BiLSTM-Transformer
+  hybrid delivers superior performance, achieving an 18.4% reduction in root mean squared errors (RMSE)
+  compared to conventional interpolation methods (14.2 mm versus 17.4 mm monthly error) and improving
+  R2 values by 0.15–0.23 across all test stations. The model shows particular strength in capturing Mediterranean
+  rainfall patterns, correctly predicting 83% of extreme rainfall events (greater than 95th percentile).
+  Furthermore, spatial graph networks boost performance at data-sparse stations by 12.7% through explicit
+  modeling of topographic influences.'
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

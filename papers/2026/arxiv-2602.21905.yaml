@@ -1,0 +1,54 @@
+id: arxiv-2602.21905
+title: 'TIRAuxCloud: A Thermal Infrared Dataset for Day and Night Cloud Detection'
+authors:
+- Alexis Apostolakis
+- Vasileios Botsos
+- Niklas Wölki
+- Andrea Spichtinger
+- Nikolaos Ioannis Bountos
+- Ioannis Papoutsis
+- Panayiotis Tsanakas
+date: '2026-02-25'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2602.21905'
+  openalex: W7131679662
+links:
+  paper: https://arxiv.org/abs/2602.21905
+  pdf: https://arxiv.org/pdf/2602.21905
+topic: observations-remote-sensing
+topics:
+- benchmarks-data-eval
+type: benchmark
+method:
+- cnn
+data:
+- satellite
+- other
+status: research
+summary: Multimodal Landsat and VIIRS thermal-infrared dataset with auto and manual cloud masks for day
+  and night cloud segmentation, with baseline benchmarks.
+abstract: Clouds are a major obstacle in Earth observation, limiting the usability and reliability of
+  critical remote sensing applications such as fire disaster response, urban heat island monitoring, and
+  snow and ice cover mapping. Therefore, the ability to detect clouds 24/7 is of paramount importance.
+  While visible and near-infrared bands are effective for daytime cloud detection, their dependence on
+  solar illumination makes them unsuitable for nighttime monitoring. In contrast, thermal infrared (TIR)
+  imagery plays a crucial role in detecting clouds at night, when sunlight is absent. Due to their generally
+  lower temperatures, clouds emit distinct thermal signatures that are detectable in TIR bands. Despite
+  this, accurate nighttime cloud detection remains challenging due to limited spectral information and
+  the typically lower spatial resolution of TIR imagery. To address these challenges, we present TIRAuxCloud,
+  a multi-modal dataset centered around thermal spectral data to facilitate cloud segmentation under both
+  daytime and nighttime conditions. The dataset comprises a unique combination of multispectral data (TIR,
+  optical, and near-infrared bands) from Landsat and VIIRS, aligned with auxiliary information layers.
+  Elevation, land cover, meteorological variables, and cloud-free reference images are included to help
+  reduce surface-cloud ambiguity and cloud formation uncertainty. To overcome the scarcity of manual cloud
+  labels, we include a large set of samples with automated cloud masks and a smaller manually annotated
+  subset to further evaluate and improve models. Comprehensive benchmarks are presented to establish performance
+  baselines through supervised and transfer learning, demonstrating the dataset's value in advancing the
+  development of innovative methods for day and night time cloud detection.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,49 @@
+id: arxiv-2504.18309
+title: 'SSA-UNet: Advanced Precipitation Nowcasting via Channel Shuffling'
+authors:
+- Marco Turzi
+- Siamak Mehrkanoon
+date: '2025-04-25'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2504.18309'
+  doi: 10.1109/ijcnn64981.2025.11227654
+  openalex: W4416251762
+links:
+  paper: https://arxiv.org/abs/2504.18309
+  pdf: https://arxiv.org/pdf/2504.18309
+  code: https://github.com/MarcoTurzi/SSA-UNet
+topic: nowcasting
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: SSA-UNet adds channel shuffled attention to SmaAt-UNet for lower-complexity precipitation nowcasting,
+  evaluated on Dutch precipitation and French radar datasets.
+abstract: 'Weather forecasting is essential for facilitating diverse socio-economic activity and environmental
+  conservation initiatives. Deep learning techniques are increasingly being explored as complementary
+  approaches to Numerical Weather Prediction (NWP) models, offering potential benefits such as reduced
+  complexity and enhanced adaptability in specific applications. This work presents a novel design, Small
+  Shuffled Attention UNet (SSA-UNet), which enhances SmaAt-UNet''s architecture by including a shuffle
+  channeling mechanism to optimize performance and diminish complexity. To assess its efficacy, this architecture
+  and its reduced variant are examined and trained on two datasets: a Dutch precipitation dataset from
+  2016 to 2019, and a French cloud cover dataset containing radar images from 2017 to 2018. Three output
+  configurations of the proposed architecture are evaluated, yielding outputs of 1, 6, and 12 precipitation
+  maps, respectively. To better understand how this model operates and produces its predictions, a gradient-based
+  approach called Grad-CAM is used to analyze the outputs generated. The analysis of heatmaps generated
+  by Grad-CAM facilitated the identification of regions within the input maps that the model considers
+  most informative for generating its predictions. The implementation of SSA-UNet can be found on our
+  Github\footnote{\href{https://github.com/MarcoTurzi/SSA-UNet}{https://github.com/MarcoTurzi/SSA-UNet}}'
+significance: 3
+cited_by: 5
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

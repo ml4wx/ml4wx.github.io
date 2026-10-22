@@ -1,0 +1,56 @@
+id: arxiv-2510.12328
+title: Leveraging Teleconnections with Physics-Informed Graph Attention Networks for Long-Range Extreme
+  Rainfall Forecasting in Thailand
+authors:
+- Kiattikun Chobtham
+- Kanoksri Sarinnapakorn
+- Kritanai Torsri
+- Prattana Deeprasertkul
+- Jirawan Kamma
+date: '2025-10-14'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2510.12328'
+  doi: 10.2139/ssrn.5711465
+  openalex: W7104176720
+links:
+  paper: https://arxiv.org/abs/2510.12328
+  pdf: https://arxiv.org/pdf/2510.12328
+topic: extremes-hazards
+topics:
+- local-forecasting
+type: model
+method:
+- gnn
+- rnn
+timescale:
+- seasonal
+spatial:
+- regional
+data:
+- stations
+- other
+status: research
+summary: Physics-informed graph attention-LSTM with a spatial season-aware GPD forecasts extreme rainfall
+  at Thai gauge stations, outperforming baselines and SEAS5 on extremes.
+abstract: Accurate rainfall forecasting, particularly for extreme events, remains a significant challenge
+  in climatology and the Earth system. This paper presents novel physics-informed Graph Neural Networks
+  (GNNs) combined with extreme-value analysis techniques to improve gauge-station rainfall predictions
+  across Thailand. The model leverages a graph-structured representation of gauge stations to capture
+  complex spatiotemporal patterns, and it offers explainability through teleconnections. We preprocess
+  relevant climate indices that potentially influence regional rainfall. The proposed Graph Attention
+  Network with Long Short-Term Memory (Attention-LSTM) applies the attention mechanism using initial edge
+  features derived from simple orographic-precipitation physics formulation. The embeddings are subsequently
+  processed by LSTM layers. To address extremes, we perform Peak-Over-Threshold (POT) mapping using the
+  novel Spatial Season-aware Generalized Pareto Distribution (GPD) method, which overcomes limitations
+  of traditional machine-learning models. Experiments demonstrate that our method outperforms well-established
+  baselines across most regions, including areas prone to extremes, and remains strongly competitive with
+  the state of the art. Compared with the operational forecasting system SEAS5, our real-world application
+  improves extreme-event prediction and offers a practical enhancement to produce high-resolution maps
+  that support decision-making in long-term water management.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

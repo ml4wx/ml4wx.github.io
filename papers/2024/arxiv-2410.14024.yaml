@@ -1,0 +1,61 @@
+id: arxiv-2410.14024
+title: Ensemble-based, large-eddy reconstruction of wind turbine inflow in a near-stationary atmospheric
+  boundary layer through generative artificial intelligence
+authors:
+- Alex Rybchuk
+- Luis A. Martínez-Tossas
+- Stefano Letizia
+- Nicholas Hamilton
+- Andy Scholbrock
+- Emina Maric
+- Daniel R. Houck
+- Thomas G. Herges
+- Nathaniel B. de Velder
+- Paula Doubrawa
+date: '2024-10-17'
+year: 2024
+venue: Wind Energy
+venue_type: journal
+ids:
+  arxiv: '2410.14024'
+  doi: 10.1002/we.70020
+  openalex: W4409464716
+links:
+  paper: https://doi.org/10.1002/we.70020
+  pdf: https://arxiv.org/pdf/2410.14024
+topic: applications-impacts
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+spatial:
+- local
+data:
+- km-scale-sim
+- other
+status: research
+summary: Diffusion model generates probabilistic LES-consistent wind inflow ensembles for turbines from
+  10-minute observations, with streamwise correlations of 0.20 to 0.85.
+abstract: To validate the second-by-second dynamics of turbines in field experiments, it is necessary
+  to accurately reconstruct the winds going into the turbine. Current time-resolved inflow reconstruction
+  techniques estimate wind behavior in unobserved regions using relatively simple spectral-based models
+  of the atmosphere. Here, we develop a technique for time-resolved inflow reconstruction that is rooted
+  in a large-eddy simulation model of the atmosphere. Our "large-eddy reconstruction" technique blends
+  observations and atmospheric model information through a diffusion model machine learning algorithm,
+  allowing us to generate probabilistic ensembles of reconstructions for a single 10-min observational
+  period. Our generated inflows can be used directly by aeroelastic codes or as inflow boundary conditions
+  in a large-eddy simulation. We verify the second-by-second reconstruction capability of our technique
+  in three synthetic field campaigns, finding positive Pearson correlation coefficient values (0.20>r>0.85)
+  between ground-truth and reconstructed streamwise velocity, as well as smaller positive correlation
+  coefficient values for unobserved fields (spanwise velocity, vertical velocity, and temperature). We
+  validate our technique in three real-world case studies by driving large-eddy simulations with reconstructed
+  inflows and comparing to independent inflow measurements. The reconstructions are visually similar to
+  measurements, follow desired power spectra properties, and track second-by-second behavior (0.25 > r
+  > 0.75).
+significance: 3
+cited_by: 4
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,65 @@
+id: doi-10.3390-jmse14020208
+title: Fused Geophysical–Contrastive Learning Model for CYGNSS-Based Sea Surface Wind Speed Retrieval
+  in Typhoon Regions
+authors:
+- Yun Zhang
+- Zelong Teng
+- Shuhu Yang
+- Qingjing Shi
+- Jiaying Li
+- Fei Guo
+- Bo Peng
+- Yanling Han
+- Zhonghua Hong
+date: '2026-01-20'
+year: 2026
+venue: Journal of Marine Science and Engineering
+venue_type: journal
+ids:
+  doi: 10.3390/jmse14020208
+  openalex: W7124900139
+links:
+  paper: https://doi.org/10.3390/jmse14020208
+  pdf: https://www.mdpi.com/2077-1312/14/2/208/pdf?version=1768906580
+topic: observations-remote-sensing
+topics:
+- extremes-hazards
+type: model
+method:
+- transformer
+- cnn
+- physics-constrained
+spatial:
+- regional
+data:
+- satellite
+- other
+status: research
+summary: CNN-Transformer fused with a geophysical model retrieves CYGNSS sea surface wind up to about
+  30 m/s in typhoons, extending the range from 20 m/s.
+abstract: Global Navigation Satellite System Reflectometry (GNSS-R) provides a vital means for sea surface
+  wind speed retrieval, yet its application under extreme typhoon conditions remains challenging. Conventional
+  geophysical models (GMFs) saturate in high wind speed regimes (>20 m/s), and deep learning models (e.g.,
+  CNNs) are constrained by data sparsity and feature complexity in typhoon environments. To address these
+  issues, we propose a Comparative Learning method of CNN-Transformer with GMF fusion (CLCTG). The CNN
+  branch extracts local coupling patterns, the Transformer branch models global dependencies, and Kullback–Leibler
+  (KL) divergence loss is used for contrastive learning to heighten sensitivity to complex typhoon wind
+  fields. The GMF branch serves as a physical reference/anchor in the low- to moderate-wind-speed range
+  (<20 m/s) to guide the learning of data-driven branches and avoid overfitting by any single data-driven
+  path. The adaptive fusion branch dynamically reweights the three branch outputs, combining local statistical
+  characteristics to improve performance over approximately 0–30 m/s and extending the range of reliable
+  GNSS-R retrieval from about 20 m/s to about 30 m/s; it should be noted that CLCTG exhibits a performance
+  bottleneck in the extreme >30 m/s range. To further improve high-wind-speed predictions, we introduce
+  environmental features based on their correlation with wind speed; ablation experiments demonstrate
+  that the combined use of environmental parameters and CYGNSS features maximizes overall accuracy. Testing
+  on five typhoons from the Eastern and Western Hemispheres confirms CLCTG’s generalization across diverse
+  geographic contexts, and branch-wise comparisons validate its structural advantages. Buoy observations
+  show peripheral errors below 3 m/s and physically consistent wind speed gradients in the core region.
+  These results indicate that multi-source fusion of CYGNSS and environmental data, coupled with contrastive
+  learning and physical reference, offers a reliable and efficient solution for typhoon wind speed retrieval.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

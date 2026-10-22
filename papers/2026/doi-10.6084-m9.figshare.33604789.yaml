@@ -1,0 +1,60 @@
+id: doi-10.6084-m9.figshare.33604789
+title: 'Code and data for HDSTAR-GNN: A heterogeneous dynamic spatiotemporal graph neural network model
+  for quantifying spatially cascading impacts of extreme precipitation on economic growth'
+authors:
+- Anonymous Anonymous
+date: '2026-09-11'
+year: 2026
+venue: Figshare
+venue_type: preprint
+ids:
+  doi: 10.6084/m9.figshare.33604789
+  openalex: W7212252021
+links:
+  paper: https://doi.org/10.6084/m9.figshare.33604789
+topic: applications-impacts
+type: model
+method:
+- gnn
+spatial:
+- global
+data:
+- other
+status: research
+summary: HDSTAR-GNN graph model estimates economic-growth losses from consecutive extreme precipitation
+  on global 0.25° grids, finding 0.17% growth loss per extreme day.
+abstract: Dynamic spatiotemporal autoregressive models explicitly represent spatial dependency and temporal
+  dynamics underlying an evolving spatial system, providing a natural framework for investigating how
+  climate shocks propagate, persist, and amplify. Yet their application to fine-resolution climate-impact
+  assessment is critically constrained by intensive computational demand and an inability to capture heterogeneous
+  spatial cascades. Here we address these challenges by reformulating these models as a specialized graph
+  convolution neural network architecture. By establishing their mathematical equivalence, we develop
+  a flexible heterogeneous dynamic spatiotemporal autoregressive graph neural network (HDSTAR-GNN) model
+  that allows spatial and temporal autocorrelation parameters to vary locally. The model reduces computational
+  complexity to approximately O(n) while retaining the transparent parameter interpretation of statistical
+  models. Monte Carlo simulations demonstrate that HDSTAR-GNN can accurately recover true parameters under
+  both homogeneous and heterogeneous spatiotemporal processes. Applied to global 0.25° grids, HDSTAR-GNN
+  reveals pronounced geographical heterogeneity in the spatial cascading effects of consecutive extreme
+  precipitation (CEP) on economic growth. On average, one additional CEP day is associated with a total
+  reduction of 0.17% of mean growth rate, with indirect effects accounting for approximately 45% of the
+  total impact. The proposed framework provides a basis for combining statistical interpretability with
+  the computational flexibility of deep learning.Python and R codes for model estimation and Monte Carlo
+  simulation, data used in the empirical analysis, and for implementing the Monte Carlo simulation experiments
+  are publicly available at here.model.py Core model module containing the neural-network architecture,
+  spatial autoregressive components, loss functions, and utility functions shared by the simulation and
+  empirical analysis.simulation.py Monte Carlo simulation script for evaluating the estimation performance
+  of the proposed model under controlled data-generating processes.case_study.py Empirical analysis script
+  implementing the proposed model using the gridded panel dataset, including data preparation, model estimation,
+  and result extraction.panel_mod.parquet Processed panel dataset used in the empirical case study, containing
+  the variables and spatial-temporal identifiers required for model estimation.Simu_SDPD.R R script implementing
+  the conventional spatial dynamic panel data estimator used as a benchmark in the Monte Carlo simulations.Ar6_Region.zip
+  Spatial data representing IPCC AR6 reference regions, used for partitioning the global grid in simulation
+  experiments.ERA5_grid.nc ERA5 gridded data, spatially interpolated to construct global 2° gridded data
+  for simulation.gadm_global_l1.zip Global first-level administrative boundary data from GADM, used for
+  spatial visualization and regional analysis.
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

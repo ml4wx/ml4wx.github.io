@@ -1,0 +1,51 @@
+id: arxiv-2512.10723
+title: 'Generalized Spherical Neural Operators: Green''s Function Formulation'
+authors:
+- Hao Tang
+- Hao Chen
+- Chao Li
+date: '2025-12-11'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2512.10723'
+  openalex: W4417296703
+links:
+  paper: https://arxiv.org/abs/2512.10723
+  pdf: https://arxiv.org/pdf/2512.10723
+  code: https://github.com/haot2025/GSNO
+orgs:
+- university-of-cambridge
+topic: global-medium-range
+type: model
+method:
+- neural-operator
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Green's-function spherical neural operator (GSNO) and SHNet outperform prior methods on spherical
+  PDEs, including global weather forecasting, alongside diffusion MRI.
+abstract: 'Neural operators offer powerful approaches for solving parametric partial differential equations,
+  but extending them to spherical domains remains challenging due to the need to preserve intrinsic geometry
+  while avoiding distortions that break rotational consistency. Existing spherical operators rely on rotational
+  equivariance but often lack the flexibility for real-world complexity. We propose a generalized operator-design
+  framework based on the designable spherical Green''s function and its harmonic expansion, establishing
+  a solid operator-theoretic foundation for spherical learning. Based on this, we propose an absolute
+  and relative position-dependent Green''s function that enables flexible balance of equivariance and
+  invariance for real-world modeling. The resulting operator, Green''s-function Spherical Neural Operator
+  (GSNO) with a novel spectral learning method, can adapt to non-equivariant systems while retaining spectral
+  efficiency and grid invariance. To exploit GSNO, we develop SHNet, a hierarchical architecture that
+  combines multi-scale spectral modeling with spherical up-down sampling, enhancing global feature representation.
+  Evaluations on diffusion MRI, shallow water dynamics, and global weather forecasting, GSNO and SHNet
+  consistently outperform state-of-the-art methods. The theoretical and experimental results position
+  GSNO as a principled and generalized framework for spherical operator design and learning, bridging
+  rigorous theory with real-world complexity. The code is available at: https://github.com/haot2025/GSNO.'
+significance: 4
+score: 36
+highlight: false
+added: '2026-10-22'
+source: backfill

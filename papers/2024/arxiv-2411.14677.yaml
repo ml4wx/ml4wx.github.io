@@ -1,0 +1,54 @@
+id: arxiv-2411.14677
+title: Exploring the Use of Machine Learning Weather Models in Data Assimilation
+authors:
+- Xiaoxu Tian
+- Daniel Holdaway
+- Daryl Kleist
+date: '2024-11-22'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2411.14677'
+  openalex: W4404985735
+links:
+  paper: https://arxiv.org/abs/2411.14677
+  pdf: https://arxiv.org/pdf/2411.14677
+orgs:
+- noaa
+topic: data-assimilation
+topics:
+- global-medium-range
+type: evaluation
+method:
+- gnn
+- differentiable
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: Tests tangent linear and adjoint versions of GraphCast and NeuralGCM against MPAS-A, finding
+  unphysical noise that threatens use in 4D-Var data assimilation.
+abstract: The use of machine learning (ML) models in meteorology has attracted significant attention for
+  their potential to improve weather forecasting efficiency and accuracy. GraphCast and NeuralGCM, two
+  promising ML-based weather models, are at the forefront of this innovation. However, their suitability
+  for data assimilation (DA) systems, particularly for four-dimensional variational (4DVar) DA, remains
+  under-explored. This study evaluates the tangent linear (TL) and adjoint (AD) models of both GraphCast
+  and NeuralGCM to assess their viability for integration into a DA framework. We compare the TL/AD results
+  of GraphCast and NeuralGCM with those of the Model for Prediction Across Scales - Atmosphere (MPAS-A),
+  a well-established numerical weather prediction (NWP) model. The comparison focuses on the physical
+  consistency and reliability of TL/AD responses to perturbations. While the adjoint results of both GraphCast
+  and NeuralGCM show some similarity to those of MPAS-A, they also exhibit unphysical noise at various
+  vertical levels, raising concerns about their robustness for operational DA systems. The implications
+  of this study extend beyond 4DVar applications. Unphysical behavior and noise in ML-derived TL/AD models
+  could lead to inaccurate error covariances and unreliable ensemble forecasts, potentially degrading
+  the overall performance of ensemble-based DA systems, as well. Addressing these challenges is critical
+  to ensuring that ML models, such as GraphCast and NeuralGCM, can be effectively integrated into operational
+  DA systems, paving the way for more accurate and efficient weather predictions.
+significance: 5
+cited_by: 2
+score: 55
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,48 @@
+id: arxiv-2601.01605
+title: 'REE-TTT: Highly Adaptive Radar Echo Extrapolation Based on Test-Time Training'
+authors:
+- Xin Di
+- Xinglin Piao
+- Fei Wang
+- Guodong Jing
+- Yong Zhang
+date: '2026-01-04'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2601.01605'
+  openalex: W7118571200
+links:
+  paper: https://arxiv.org/abs/2601.01605
+  pdf: https://arxiv.org/pdf/2601.01605
+topic: nowcasting
+topics:
+- regional-km-scale
+type: model
+method:
+- transformer
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: REE-TTT adds test-time training with spatio-temporal attention to radar echo extrapolation, improving
+  cross-regional extreme precipitation nowcasts over baselines.
+abstract: Precipitation nowcasting is critically important for meteorological forecasting. Deep learning-based
+  Radar Echo Extrapolation (REE) has become a predominant nowcasting approach, yet it suffers from poor
+  generalization due to its reliance on high-quality local training data and static model parameters,
+  limiting its applicability across diverse regions and extreme events. To overcome this, we propose REE-TTT,
+  a novel model that incorporates an adaptive Test-Time Training (TTT) mechanism. The core of our model
+  lies in the newly designed Spatio-temporal Test-Time Training (ST-TTT) block, which replaces the standard
+  linear projections in TTT layers with task-specific attention mechanisms, enabling robust adaptation
+  to non-stationary meteorological distributions and thereby significantly enhancing the feature representation
+  of precipitation. Experiments under cross-regional extreme precipitation scenarios demonstrate that
+  REE-TTT substantially outperforms state-of-the-art baseline models in prediction accuracy and generalization,
+  exhibiting remarkable adaptability to data distribution shifts.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

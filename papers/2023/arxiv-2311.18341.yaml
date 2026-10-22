@@ -1,0 +1,50 @@
+id: arxiv-2311.18341
+title: Learning Robust Precipitation Forecaster by Temporal Frame Interpolation
+authors:
+- Lu Han
+- Xu-Yang Chen
+- Han-Jia Ye
+- De-Chuan Zhan
+date: '2023-11-30'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2311.18341'
+  openalex: W4389260974
+links:
+  paper: https://arxiv.org/abs/2311.18341
+  pdf: https://arxiv.org/pdf/2311.18341
+  code: https://github.com/Secilia-Cxy/UNetTFI
+topic: nowcasting
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+- radar
+status: research
+summary: Temporal frame interpolation and a multi-level Dice loss improve robustness of satellite-radar
+  precipitation forecasts, winning first place in the Weather4cast 2023 transfer task.
+abstract: Recent advances in deep learning have significantly elevated weather prediction models. However,
+  these models often falter in real-world scenarios due to their sensitivity to spatial-temporal shifts.
+  This issue is particularly acute in weather forecasting, where models are prone to overfit to local
+  and temporal variations, especially when tasked with fine-grained predictions. In this paper, we address
+  these challenges by developing a robust precipitation forecasting model that demonstrates resilience
+  against such spatial-temporal discrepancies. We introduce Temporal Frame Interpolation (TFI), a novel
+  technique that enhances the training dataset by generating synthetic samples through interpolating adjacent
+  frames from satellite imagery and ground radar data, thus improving the model's robustness against frame
+  noise. Moreover, we incorporate a unique Multi-Level Dice (ML-Dice) loss function, leveraging the ordinal
+  nature of rainfall intensities to improve the model's performance. Our approach has led to significant
+  improvements in forecasting precision, culminating in our model securing \textit{1st place} in the transfer
+  learning leaderboard of the \textit{Weather4cast'23} competition. This achievement not only underscores
+  the effectiveness of our methodologies but also establishes a new standard for deep learning applications
+  in weather forecasting. Our code and weights have been public on \url{https://github.com/Secilia-Cxy/UNetTFI}.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

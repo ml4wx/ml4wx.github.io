@@ -1,0 +1,62 @@
+id: arxiv-2504.00307
+title: Generating realistic global precipitation fields from modelled atmospheric circulation
+authors:
+- Michael Aich
+- Sebastian Bathiany
+- Philipp Hess
+- Yu Huang
+- Niklas Boers
+date: '2025-04-01'
+year: 2025
+venue: Climate Dynamics
+venue_type: journal
+ids:
+  arxiv: '2504.00307'
+  doi: 10.1007/s00382-026-08239-4
+  openalex: W4417224958
+links:
+  paper: https://doi.org/10.1007/s00382-026-08239-4
+  pdf: https://arxiv.org/pdf/2504.00307
+orgs:
+- pik
+- tum
+topic: hybrid-parameterization
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+- cnn
+timescale:
+- climate
+spatial:
+- global
+data:
+- era5
+- cmip
+status: research
+summary: A conditional diffusion UNet generates 0.25° global daily precipitation from prognostic atmospheric
+  variables, offering an ensemble-capable alternative to ESM precipitation parameterizations that reduces
+  biases.
+abstract: Improving the representation of precipitation in Earth system models (ESMs) is critical for
+  assessing the impacts of climate change and especially of extreme events like floods and droughts. In
+  existing ESMs, precipitation is not resolved explicitly, but represented by parameterizations. These
+  typically rely on resolving approximated but computationally expensive column-based physics, not accounting
+  for interactions between locations. They struggle to capture fine-scale precipitation processes and
+  introduce significant biases. We present a novel approach, based on generative machine learning, which
+  integrates a conditional diffusion model with a UNet architecture to generate accurate, high-resolution
+  (0.25°) global daily precipitation fields from a small set of prognostic atmospheric variables. Unlike
+  traditional parameterizations, our framework efficiently produces ensemble predictions, capturing uncertainties
+  in precipitation, and does not require fine-tuning by hand. We train our model on the ERA5 reanalysis
+  and present a method that allows us to apply it to unseen ESM data, enabling fast generation of probabilistic
+  forecasts and climate scenarios. By leveraging interactions between global prognostic variables, our
+  approach provides an alternative parameterization scheme that mitigates biases present in the ESM precipitation
+  while maintaining consistency with its large-scale (annual) trends. This work demonstrates that complex
+  precipitation patterns can be learned directly from large-scale atmospheric variables, offering a computationally
+  efficient method to obtain high-resolution precipitation without the cost of running the dynamical model
+  at such high resolution.
+significance: 5
+score: 30
+highlight: false
+added: '2026-10-22'
+source: backfill

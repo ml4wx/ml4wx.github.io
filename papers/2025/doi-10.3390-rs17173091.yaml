@@ -1,0 +1,54 @@
+id: doi-10.3390-rs17173091
+title: 'MMamba: An Efficient Multimodal Framework for Real-Time Ocean Surface Wind Speed Inpainting Using
+  Mutual Information and Attention-Mamba-2'
+authors:
+- Xinjie Shi
+- Weicheng Ni
+- Boheng Duan
+- Qingguo Su
+- Lechao Liu
+- Kaijun Ren
+date: '2025-09-04'
+year: 2025
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs17173091
+  openalex: W4413982556
+links:
+  paper: https://doi.org/10.3390/rs17173091
+  pdf: https://www.mdpi.com/2072-4292/17/17/3091/pdf?version=1756998010
+topic: observations-remote-sensing
+type: model
+method:
+- transformer
+- other
+spatial:
+- global
+data:
+- satellite
+- nwp-analysis
+status: research
+summary: MMamba inpaints satellite ocean surface wind speed with Attention-Mamba-2, reaching RMSE 0.548
+  m/s and 8.2% lower error than MambaIR in high winds.
+abstract: Accurate observations of Ocean Surface Wind Speed (OSWS) are vital for predicting extreme weather
+  and understanding ocean–atmosphere interactions. However, spaceborne sensors (e.g., ASCAT, SMAP) often
+  experience data loss due to harsh weather and instrument malfunctions. Existing inpainting methods often
+  rely on reanalysis data that is released with delays, which restricts their real-time capability. Additionally,
+  deep-learning-based methods, such as Transformers, face challenges due to their high computational complexity.
+  To address these challenges, we present the Multimodal Wind Speed Inpainting Dataset (MWSID), which
+  integrates 12 auxiliary forecasting variables to support real-time OSWS inpainting. Based on MWSID,
+  we propose the MMamba framework, combining the Multimodal Feature Extraction module, which uses mutual
+  information (MI) theory to optimize feature selection, and the OSWS Reconstruction module, which employs
+  Attention-Mamba-2 within a Residual-in-Residual-Dense architecture for efficient OSWS inpainting. Experiments
+  show that MMamba outperforms MambaIR (state-of-the-art) with an RMSE of 0.5481 m/s and an SSIM of 0.9820,
+  significantly reducing RMSE by 21.10% over Kriging and 8.22% over MambaIR in high-winds (>15 m/s). We
+  further introduce MMamba-L, a lightweight 0.22M-parameter variant suitable for resource-limited devices.
+  These contributions make MMamba and MWSID powerful tools for OSWS inpainting, benefiting extreme weather
+  prediction and oceanographic research.
+significance: 3
+cited_by: 2
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

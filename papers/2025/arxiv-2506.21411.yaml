@@ -1,0 +1,52 @@
+id: arxiv-2506.21411
+title: Distributed Cross-Channel Hierarchical Aggregation for Foundation Models
+authors:
+- Aristeidis Tsaris
+- Isaac Lyngaas
+- John Lagregren
+- Mohamed Wahib
+- Larry York
+- Prasanna Balaprakash
+- Dan Lu
+- Feiyi Wang
+- Xiao Wang
+date: '2025-06-26'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2506.21411'
+  doi: 10.1145/3712285.3759870
+  openalex: W4416146727
+links:
+  paper: https://arxiv.org/abs/2506.21411
+  pdf: https://arxiv.org/pdf/2506.21411
+orgs:
+- ornl
+topic: infra-software
+topics:
+- global-medium-range
+type: model
+method:
+- transformer
+spatial:
+- global
+status: research
+summary: D-CHAG, a distributed cross-channel aggregation method for vision transformers, cuts memory use
+  by up to 75% on 1,024 GPUs, tested on weather forecasting and hyperspectral imaging.
+abstract: Vision-based scientific foundation models hold significant promise for advancing scientific
+  discovery and innovation. This potential stems from their ability to aggregate images from diverse sources
+  such as varying physical groundings or data acquisition systems and to learn spatio-temporal correlations
+  using transformer architectures. However, tokenizing and aggregating images can be compute-intensive,
+  a challenge not fully addressed by current distributed methods. In this work, we introduce the Distributed
+  Cross-Channel Hierarchical Aggregation (D-CHAG) approach designed for datasets with a large number of
+  channels across image modalities. Our method is compatible with any model-parallel strategy and any
+  type of vision transformer architecture, significantly improving computational efficiency. We evaluated
+  D-CHAG on hyperspectral imaging and weather forecasting tasks. When integrated with tensor parallelism
+  and model sharding, our approach achieved up to a 75% reduction in memory usage and more than doubled
+  sustained throughput on up to 1,024 AMD GPUs on the Frontier Supercomputer.
+significance: 3
+cited_by: 2
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

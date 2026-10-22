@@ -1,0 +1,62 @@
+id: doi-10.3390-ai7090329
+title: 'Benchmarking Deep Learning Against Statistical Baselines and a Physical Climate-Model Comparator
+  for Station-Scale Meteorological Forecasting: A 100-Station Study from the Western Balkans'
+authors:
+- Dalibor D. Nikolić
+- Ivica G. Djalović
+- Ivan Vitezović
+- Dejan B. Stojanović
+- Sara Pavkov
+- Rastislav Stojsavljević
+- Mlađen Jovanović
+date: '2026-08-26'
+year: 2026
+venue: AI
+venue_type: journal
+ids:
+  doi: 10.3390/ai7090329
+  openalex: W7204239858
+links:
+  paper: https://doi.org/10.3390/ai7090329
+topic: local-forecasting
+topics:
+- benchmarks-data-eval
+type: evaluation
+method:
+- transformer
+- rnn
+- classical-ml
+timescale:
+- seasonal
+spatial:
+- local
+data:
+- stations
+- cmip
+status: research
+summary: 'Benchmarks eight forecasters on 100 Western Balkan stations: deep learning beats baselines for
+  temperature, but climatology wins for precipitation.'
+abstract: Benchmarking deep learning forecasters against classical and physically based numerical baselines
+  remains uncommon in the time-series forecasting literature. Meteorological station networks offer an
+  under-exploited evaluation environment, uniquely providing a physically based climate-model comparator
+  alongside standard baselines. We evaluated eight forecasting approaches—climatology, SARIMA, Random
+  Forest, and five deep learning architectures (TFT, N-HiTS, PatchTST, TiDE, xLSTM)—against bias-corrected
+  output from a five-member CMIP6 ensemble, on 100 meteorological stations across four Western Balkan
+  countries (monthly temperature and precipitation, 1961–2020), using non-parametric significance testing,
+  a rolling-origin backtest (five windows, 2011–2020), and a five-seed robustness check. For temperature,
+  all five deep learning architectures achieved lower MAE than the classical baselines (p < 10−99), though
+  PatchTST’s advantage over climatology was not significant; the best-performing architecture varied across
+  seeds and evaluation windows, so we characterise a leading cluster (N-HiTS, TFT, TiDE, PatchTST) rather
+  than a single winner. The primary temperature advantage was geographically broad-based, while the comparison
+  against the physical-model baseline was robust to the choice of comparator GCM. For precipitation, by
+  contrast, a simple climatological-mean baseline outperformed all five deep learning architectures with
+  no exception across all five rolling-origin windows. The deep learning advantage over classical and
+  physical baselines is thus variable-specific rather than universal. Meteorological station networks,
+  combined with a physically based climate-model comparator, constitute a well-suited evaluation environment
+  for the broader time series forecasting community.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

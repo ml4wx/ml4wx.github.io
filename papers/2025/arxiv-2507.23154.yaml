@@ -1,0 +1,52 @@
+id: arxiv-2507.23154
+title: 'FuseTen: A Generative Model for Daily 10 m Land Surface Temperature Estimation from Spatio-Temporal
+  Satellite Observations'
+authors:
+- Sofiane Bouaziz
+- Adel Hafiane
+- Raphael Canals
+- Rachid Nedjai
+date: '2025-07-30'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2507.23154'
+  doi: 10.1109/migars67156.2025.11232105
+  openalex: W4416178194
+links:
+  paper: https://arxiv.org/abs/2507.23154
+  pdf: https://arxiv.org/pdf/2507.23154
+topic: observations-remote-sensing
+topics:
+- extremes-hazards
+type: model
+method:
+- gan-vae
+- cnn
+spatial:
+- local
+data:
+- satellite
+status: research
+summary: Generative GAN-based fusion of Sentinel-2, Landsat 8 and MODIS produces daily 10 m land surface
+  temperature, improving linear baselines by about 32%.
+abstract: Urban heatwaves, droughts, and land degradation are pressing and growing challenges in the context
+  of climate change. A valuable approach to studying them requires accurate spatio-temporal information
+  on land surface conditions. One of the most important variables for assessing and understanding these
+  phenomena is Land Surface Temperature (LST), which is derived from satellites and provides essential
+  information about the thermal state of the Earth's surface. However, satellite platforms inherently
+  face a trade-off between spatial and temporal resolutions. To bridge this gap, we propose FuseTen, a
+  novel generative framework that produces daily LST observations at a fine 10 m spatial resolution by
+  fusing spatio-temporal observations derived from Sentinel-2, Landsat 8, and Terra MODIS. FuseTen employs
+  a generative architecture trained using an averaging-based supervision strategy grounded in physical
+  principles. It incorporates attention and normalization modules within the fusion process and uses a
+  PatchGAN discriminator to enforce realism. Experiments across multiple dates show that FuseTen outperforms
+  linear baselines, with an average 32.06% improvement in quantitative metrics and 31.42% in visual fidelity.
+  To the best of our knowledge, this is the first non-linear method to generate daily LST estimates at
+  such fine spatial resolution.
+significance: 3
+cited_by: 5
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

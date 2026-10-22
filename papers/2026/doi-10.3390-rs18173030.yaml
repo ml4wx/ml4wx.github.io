@@ -1,0 +1,58 @@
+id: doi-10.3390-rs18173030
+title: Assessing the Value of FY-4A/B Cloud-Top Height for Deep Learning-Based Tropical Cyclone Intensity
+  Estimation over the Western North Pacific
+authors:
+- 黄 喜淑
+- Xinyi Chen
+- Yuan Sun
+- Chao-Xiong Xu
+- Wei Zhong
+- Hongrang He
+date: '2026-09-04'
+year: 2026
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs18173030
+  openalex: W7208763932
+links:
+  paper: https://doi.org/10.3390/rs18173030
+topic: observations-remote-sensing
+topics:
+- extremes-hazards
+type: model
+method:
+- cnn
+- rnn
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: CTH-TCNet fuses FY-4A/B cloud-top height with infrared imagery in a CNN-LSTM gated model, reaching
+  6.26 kt MAE for western North Pacific typhoon intensity.
+abstract: Tropical cyclone (TC) intensity estimation over the western North Pacific remains affected by
+  uncertainties in satellite observations, best-track records, and rapidly evolving inner-core structures.
+  To further exploit information on cloud-system vertical structure and its temporal evolution, this study
+  introduces FY-4A/B cloud-top height (CTH) products and develops CTH-TCNet, a three-branch gated-fusion
+  model that integrates infrared brightness temperature, CMORPH precipitation, and multidimensional CTH
+  information for TC intensity estimation. The model consists of a CNN-based spatial branch, an LSTM-based
+  temporal branch representing CTH evolution over the preceding 12 h, and a shortcut branch preserving
+  current-time CTH statistics. Systematic ablation experiments show that the contribution of CTH is closely
+  related to its representation and fusion strategy. Directly adding a single-time-step two-dimensional
+  CTH field as an additional spatial channel provides no further performance gain, whereas historical
+  CTH evolution and current-time CTH statistics provide complementary information. Jointly representing
+  these two types of information through the temporal and shortcut branches yields the best performance.
+  The final model achieves an MAE of 6.26 kt and an RMSE of 7.41 kt on the test sets. Intensity-stratified
+  results further show that CTH generally provides larger improvements for TY, STY, and Super TY than
+  for TS. Interpretability analyses indicate that, as TC intensity increases, the model exhibits greater
+  reliance on CTH temporal evolution and structural information from the inner-core and eyewall-adjacent
+  regions, with these dependence patterns being broadly consistent with known characteristics of TC inner-core
+  convective organization and eyewall-related structures. These results indicate that FY-4A/B CTH provides
+  valuable complementary structural and temporal information for satellite-based TC intensity estimation.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

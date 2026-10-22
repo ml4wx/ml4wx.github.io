@@ -1,0 +1,51 @@
+id: arxiv-2507.09872
+title: 'Resolution Revolution: A Physics-Guided Deep Learning Framework for Spatiotemporal Temperature
+  Reconstruction'
+authors:
+- Shengjie Liu
+- Lu Zhang
+- Siqin Wang
+date: '2025-07-14'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2507.09872'
+  doi: 10.1109/iccvw69036.2025.00297
+  openalex: W7131077550
+links:
+  paper: https://arxiv.org/abs/2507.09872
+  pdf: https://arxiv.org/pdf/2507.09872
+topic: observations-remote-sensing
+topics:
+- downscaling
+type: model
+method:
+- cnn
+- physics-constrained
+spatial:
+- regional
+data:
+- satellite
+- other
+status: research
+summary: A physics-guided CNN fuses hourly 2 km GOES-16 and 100 m Landsat temperatures with coarse Earth
+  system model output to reconstruct fine-scale temperature under all weather.
+abstract: Central to Earth observation is the trade-off between spatial and temporal resolution. For temperature,
+  this is especially critical because real-world applications require high spatiotemporal resolution data.
+  Current technology allows for hourly temperature observations at 2 km, but only every 16 days at 100
+  m, a gap further exacerbated by cloud cover. Earth system models offer continuous hourly temperature
+  data, but at a much coarser spatial resolution (9-31 km). Here, we present a physics-guided deep learning
+  framework for temperature data reconstruction that integrates these two data sources. The proposed framework
+  uses a convolutional neural network that incorporates the annual temperature cycle and includes a linear
+  term to amplify the coarse Earth system model output into fine-scale temperature values observed from
+  satellites. We evaluated this framework using data from two satellites, GOES-16 (2 km, hourly) and Landsat
+  (100 m, every 16 days), and demonstrated effective temperature reconstruction with hold-out and in situ
+  data across four datasets. This physics-guided deep learning framework opens new possibilities for generating
+  high-resolution temperature data across spatial and temporal scales, under all weather conditions and
+  globally.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

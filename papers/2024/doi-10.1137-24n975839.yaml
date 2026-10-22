@@ -1,0 +1,52 @@
+id: doi-10.1137-24n975839
+title: Research Spotlights
+authors:
+- Stefan M. Wild
+date: '2024-02-01'
+year: 2024
+venue: SIAM Review
+venue_type: journal
+ids:
+  doi: 10.1137/24n975839
+  openalex: W4391646883
+links:
+  paper: https://doi.org/10.1137/24n975839
+topic: post-processing
+type: model
+method:
+- classical-ml
+spatial:
+- local
+data:
+- nwp-analysis
+status: research
+summary: Presents EasyUQ, a nonparametric isotonic distributional regression that turns single-valued
+  NWP temperature forecasts into full predictive distributions, with a kernel-smoothed density variant.
+abstract: 'As modeling, simulation, and data-driven capabilities continue to advance and be adopted for
+  an ever expanding set of applications and downstream tasks, there has been an increased need for quantifying
+  the uncertainty in the resulting predictions. In “Easy Uncertainty Quantification (EasyUQ): Generating
+  Predictive Distributions from Single-Valued Model Output,” authors Eva-Maria Walz, Alexander Henzi,
+  Johanna Ziegel, and Tilmann Gneiting provide a methodology for moving beyond deterministic scalar-valued
+  predictions to obtain particular statistical distributions for these predictions. The approach relies
+  on training data of model output-observation pairs of scalars, and hence does not require access to
+  higher-dimensional inputs or latent variables. The authors use numerical weather prediction as a particular
+  example, where one can obtain repeated forecasts, and corresponding observations, of temperatures at
+  a specific location. Given a predicted temperature, the EasyUQ approach provides a nonparametric distribution
+  of temperatures around this value. EasyUQ uses the training data to effectively minimize an empirical
+  score subject to a stochastic monotonicity constraint, which ensures that the predictive distribution
+  values become larger as the model output value grows. In doing so, the approach inherits the theoretical
+  properties of optimality and consistency enjoyed by so-called isotonic distributional regression methods.
+  The authors emphasize that the basic version of EasyUQ does not require elaborate hyperparameter tuning.
+  They also introduce a more sophisticated version that relies on kernel smoothing to yield predictive
+  probability densities while preserving key properties of the basic version. The paper demonstrates how
+  EasyUQ compares with the standard technique of applying a Gaussian error distribution to a deterministic
+  forecast as well as how EasyUQ can be used to obtain uncertainty estimates for artificial neural network
+  outputs. The approach will be especially of interest for settings when inputs or other latent variables
+  are unreliable or unavailable since it offers a straightforward yet statistically principled and computationally
+  efficient way for working only with outputs and observations.'
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

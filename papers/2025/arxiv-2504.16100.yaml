@@ -1,0 +1,59 @@
+id: arxiv-2504.16100
+title: 'Towards Accurate Forecasting of Renewable Energy : Building Datasets and Benchmarking Machine
+  Learning Models for Solar and Wind Power in France'
+authors:
+- Eloi Lindas
+- Yannig Goude
+- Philippe Ciais
+date: '2025-04-14'
+year: 2025
+venue: Environmental Data Science , Volume 4 , 2025 , e45
+venue_type: journal
+ids:
+  arxiv: '2504.16100'
+  doi: 10.1017/eds.2025.10021
+  openalex: W4414206883
+links:
+  paper: https://arxiv.org/abs/2504.16100
+  pdf: https://arxiv.org/pdf/2504.16100
+topic: applications-impacts
+topics:
+- post-processing
+type: application
+method:
+- classical-ml
+- cnn
+timescale:
+- medium
+spatial:
+- regional
+data:
+- era5
+- stations
+status: research
+summary: Benchmarks ML models predicting daily solar and wind power in France from spatially resolved
+  ERA5 weather, finding neural networks beat tree models at 4-10% nRMSE.
+abstract: 'Accurate prediction of non-dispatchable renewable energy sources is essential for grid stability
+  and price prediction. Regional power supply forecasts are usually indirect through a bottom-up approach
+  of plant-level forecasts, incorporate lagged power values, and do not use the potential of spatially
+  resolved data. This study presents a comprehensive methodology for predicting solar and wind power production
+  at country scale in France using machine learning models trained with spatially explicit weather data
+  combined with spatial information about production sites capacity. A dataset is built spanning from
+  2012 to 2023, using daily power production data from RTE (the national grid operator) as the target
+  variable, with daily weather data from ERA5, production sites capacity and location, and electricity
+  prices as input features. Three modeling approaches are explored to handle spatially resolved weather
+  data: spatial averaging over the country, dimension reduction through principal component analysis,
+  and a computer vision architecture to exploit complex spatial relationships. The study benchmarks state-of-the-art
+  machine learning models as well as hyperparameter tuning approaches based on cross-validation methods
+  on daily power production data. Results indicate that cross-validation tailored to time series is best
+  suited to reach low error. We found that neural networks tend to outperform traditional tree-based models,
+  which face challenges in extrapolation due to the increasing renewable capacity over time. Model performance
+  ranges from 4% to 10% in nRMSE for midterm horizon, achieving similar error metrics to local models
+  established at a single-plant level, highlighting the potential of these methods for regional power
+  supply forecasting.'
+significance: 3
+cited_by: 5
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

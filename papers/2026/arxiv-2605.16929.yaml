@@ -1,0 +1,57 @@
+id: arxiv-2605.16929
+title: Emulating the Forced Response of Climate Models with Generative Machine Learning
+authors:
+- Graham Clyne
+- Julia Kaltenborn
+- Peer Nowack
+- Claire Monteleoni
+- Anastase Charantonis
+date: '2026-05-16'
+year: 2026
+venue: Machine Learning Earth
+venue_type: journal
+ids:
+  arxiv: '2605.16929'
+  doi: 10.1088/3049-4753/aeac2f
+  openalex: W7161740189
+links:
+  paper: https://doi.org/10.1088/3049-4753/aeac2f
+  pdf: https://arxiv.org/pdf/2605.16929
+orgs:
+- inria
+- kit
+topic: climate-emulation
+type: model
+method:
+- other
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: ArchesClimate-SSP trains a generative emulator across multiple SSPs that produces unseen IPSL-CM6A-LR
+  scenarios, remains physically consistent, and is validated against MESMER-M.
+abstract: Global climate models are essential tools to simulate past and potential future pathways of
+  climate change, as well as associated climate impacts. Shared Socioeconomic Pathways (SSPs) describe
+  a range of future scenarios of global economic and demographic development. These SSPs are intrinsically
+  linked to changes in climate forcings -- the external drivers, such as greenhouse gas and aerosol emissions,
+  which change Earth's energy balance over time. These forcings act as boundary conditions in Earth System
+  Models (ESM), providing insight into the potential climatic impacts of each SSP. Running an ESM, however,
+  is extremely computationally expensive, conflicting with the need for large ensemble runs to provide
+  robust estimates in the presence of internal variability and scenario uncertainty. Machine Learning
+  emulators provide a promising avenue towards fast and cheap scenario generation, but until recently
+  lacked uncertainty quantification and the ability to condition on external forcings. Here, we build
+  upon recent work and extend it by training on multiple SSPs. We successfully generate scenarios of IPSL
+  -- CM6A -- LR unseen during training and remain physically consistent with the underlying climate model,
+  even under strong extrapolation scenarios. Our emulator is validated against MESMER -- M, a statistical
+  emulator of land surface temperature. Our research demonstrates that our model, ArchesClimate -- SSP,
+  does not simply imitate scenarios seen during training, but is actually capable of modeling the response
+  of a climate state to diverse forcings. This is an important step towards reliable and rapid climate
+  model scenario generation.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

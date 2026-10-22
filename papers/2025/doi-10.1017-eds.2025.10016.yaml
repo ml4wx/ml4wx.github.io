@@ -1,0 +1,58 @@
+id: doi-10.1017-eds.2025.10016
+title: A physics-informed machine learning parameterization for cloud microphysics in ICON
+authors:
+- Ellen Sarauer
+- Mierk Schwabe
+- Philipp Weiss
+- Axel Lauer
+- Philip Stier
+- Veronika Eyring
+date: '2025-01-01'
+year: 2025
+venue: Environmental Data Science
+venue_type: journal
+ids:
+  doi: 10.1017/eds.2025.10016
+  openalex: W4413767203
+links:
+  paper: https://doi.org/10.1017/eds.2025.10016
+orgs:
+- university-of-oxford
+topic: hybrid-parameterization
+type: model
+method:
+- physics-constrained
+- classical-ml
+timescale:
+- climate
+spatial:
+- global
+data:
+- km-scale-sim
+status: research
+summary: Physics-informed ML cloud microphysics for ICON pairs a trigger classifier with a regressor under
+  mass constraints, reaching combined offline R2 of 0.78.
+abstract: Abstract We developed a cloud microphysics parameterization for the icosahedral nonhydrostatic
+  modeling framework (ICON) model based on physics-informed machine learning (ML). By training our ML
+  model on high-resolution simulation data, we enhance the representation of cloud microphysics in Earth
+  system models (ESMs) compared to traditional parameterization schemes, in particular by considering
+  the influence of high-resolution dynamics that are not resolved in coarse ESMs. We run a global, kilometer-scale
+  ICON simulation with a one-moment cloud microphysics scheme, the complex graupel scheme, to generate
+  12 days of training data. Our ML approach combines a microphysics trigger classifier and a regression
+  model. The microphysics trigger classifier identifies the grid cells where changes due to the cloud
+  microphysical parameterization are expected. In those, the workflow continues by calling the regression
+  model and additionally includes physical constraints for mass positivity and water mass conservation
+  to ensure physical consistency. The microphysics trigger classifier achieves an F1 score of 0.93 on
+  classifying unseen grid cells. The regression model reaches an $ {R}^2 $ score of 0.72 averaged over
+  all seven microphysical tendencies on simulated days used for validation only. This results in a combined
+  offline performance of 0.78. Using explainability techniques, we explored the correlations between input
+  and output features, finding a strong alignment with the graupel scheme and, hence, physical understanding
+  of cloud microphysical processes. This parameterization provides the foundation to advance the representation
+  of cloud microphysical processes in climate models with ML, leading to more accurate climate projections
+  and improved comprehension of the Earth’s climate system.
+significance: 4
+cited_by: 6
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

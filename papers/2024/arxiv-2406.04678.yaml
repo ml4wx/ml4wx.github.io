@@ -1,0 +1,42 @@
+id: arxiv-2406.04678
+title: 'ACE Metric: Advection and Convection Evaluation for Accurate Weather Forecasting'
+authors:
+- Doyi Kim
+- Minseok Seo
+- Yeji Choi
+date: '2024-06-07'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2406.04678'
+  openalex: W4399511908
+links:
+  paper: https://arxiv.org/abs/2406.04678
+  pdf: https://arxiv.org/pdf/2406.04678
+topic: benchmarks-data-eval
+topics:
+- global-medium-range
+type: evaluation
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Proposes an advection and convection error metric that exposes blurring in data-driven weather
+  forecasts that low RMSE hides, validated on WeatherBench2.
+abstract: Recently, data-driven weather forecasting methods have received significant attention for surpassing
+  the RMSE performance of traditional NWP (Numerical Weather Prediction)-based methods. However, data-driven
+  models are tuned to minimize the loss between forecasted data and ground truths, often using pixel-wise
+  loss. This can lead to models that produce blurred outputs, which, despite being significantly different
+  in detail from the actual weather conditions, still demonstrate low RMSE values. Although evaluation
+  metrics from the computer vision field, such as PSNR, SSIM, and FVD, can be used, they are not entirely
+  suitable for weather variables. This is because weather variables exhibit continuous physical changes
+  over time and lack the distinct boundaries of objects typically seen in computer vision images. To resolve
+  these issues, we propose the advection and convection Error (ACE) metric, specifically designed to assess
+  how well models predict advection and convection, which are significant atmospheric transfer methods.
+  We have validated the ACE evaluation metric on the WeatherBench2 and MovingMNIST datasets.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

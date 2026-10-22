@@ -1,0 +1,100 @@
+id: arxiv-2610.04558
+title: 'ClimateBench v2.0: Probabilistic Climate Model Benchmarking'
+authors:
+- Duncan Watson-Parris
+- Willa Tobin
+- Aytaç Paçal
+- Manuel Schlund
+- V. Balaji
+- Kevin Bowman
+- Chris Bretherton
+- Peter M. Caldwell
+- Will Chapman
+- William D. Collins
+- Gregory S. Elsaesser
+- Pierre Gentine
+- Helene Hewitt
+- Stephan Hoyer
+- Ralph Keeling
+- Nikolay Koldunov
+- David M. Lawrence
+- Christian Lessig
+- Daniel J. Lunt
+- J. David Neelin
+- Mike Pritchard
+- Sarah Purkey
+- Gavin Schmidt
+- Tapio Schneider
+- Michael Schulz
+- Tiffany Shaw
+- Isla R. Simpson
+- Graeme Stephens
+- Aneesh C. Subramanian
+- Joao Teixeira
+- Jessica Tierney
+- Andrew I. L. Williams
+- Laure Zanna
+- Veronika Eyring
+- Rose Yu
+date: '2026-10-03'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.04558'
+  openalex: W7220735435
+links:
+  paper: https://arxiv.org/abs/2610.04558
+  pdf: https://arxiv.org/pdf/2610.04558
+orgs:
+- ai2
+- caltech
+- columbia-leap
+- google-research
+- lbnl-nersc
+- met-norway
+- met-office
+- nasa
+- ncar
+- nvidia
+- nyu-m2lines
+- ucla
+- university-of-chicago
+topic: benchmarks-data-eval
+topics:
+- climate-analysis-attribution
+type: benchmark
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+- other
+status: research
+summary: Provides a three-tier open protocol for evaluating physics-based, data-driven and hybrid climate
+  models, withholding post-2015 observations and adding paleoclimate and perfect-model tests.
+abstract: We present ClimateBench v2, a standardized protocol for evaluating climate models on diagnostics
+  expected to be informative for their skill in projecting mid-century regional temperature and precipitation
+  changes. The protocol is designed to evaluate any physics-based, data-driven, or hybrid climate model
+  on equal footing using a common set of observational and out-of-distribution tests. We define three
+  tiers of evaluation. Tier I establishes physical credibility through entry-ticket tests of energy conservation,
+  coupled (co-)variability, and basic forced responses. Tier II scores models against post-2015 observations
+  of surface temperature, precipitation, radiative fluxes, sea ice, and key modes of variability using
+  fair CRPS as the primary probabilistic score, complemented by distributional and ensemble-consistency
+  diagnostics. Tier III tests out-of-distribution generalization through paleoclimate simulations spanning
+  the Last Interglacial, Last Glacial Maximum, and Mid-Holocene, and through perfect-model experiments
+  in which data-driven models must predict the future climate of existing Earth system models from historical
+  data alone. We reserve all observational data after 2015 for testing, and submissions must include multiple
+  ensemble members to enable probabilistic evaluation. This reservation exploits a new opportunity provided
+  by the decade of observations accumulated since the end of the CMIP6 historical experiment, which constitutes
+  an out-of-sample record of forced climate change (and internal variability) for the current generation
+  of models, and we quantify, in an idealized setting, the information it carries about mid-century warming.
+  We provide the evaluation code, observational reference datasets, and perfect-model training data as
+  an open benchmark to drive measurable progress in climate projection across all modeling approaches.
+significance: 6
+score: 59
+highlight: true
+highlight_reason: Broad community benchmark protocol for probabilistic climate model evaluation including
+  paleoclimate and perfect-model tests; likely shapes climate emulator evaluation.
+added: '2026-10-22'
+source: backfill

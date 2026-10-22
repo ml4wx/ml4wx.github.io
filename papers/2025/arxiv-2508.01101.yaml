@@ -1,0 +1,52 @@
+id: arxiv-2508.01101
+title: Fast and Flexible Probabilistic Forecasting of Dynamical Systems using Flow Matching and Physical
+  Perturbation
+authors:
+- Siddharth Rout
+- Eldad Haber
+- St'ephane Gaudreault
+date: '2025-08-01'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2508.01101'
+  openalex: W4417163383
+links:
+  paper: https://arxiv.org/abs/2508.01101
+topic: probabilistic-ensembles
+topics:
+- global-medium-range
+type: model
+method:
+- diffusion
+- other
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Flow matching generates physically consistent initial-condition perturbations and uses fast ODE
+  ensemble propagation, improving CRPS on WeatherBench at 5.625° with faster inference than diffusion
+  baselines.
+abstract: Learning dynamical systems from incomplete or noisy data is inherently ill-posed, as a single
+  observation may correspond to multiple plausible futures. While physics-based ensemble forecasting relies
+  on perturbing initial states to capture uncertainty, standard Gaussian or uniform perturbations often
+  yield unphysical initial states in high-dimensional systems. Existing machine learning approaches address
+  this via diffusion models, which rely on inference via computationally expensive stochastic differential
+  equations (SDEs). We introduce a novel framework that decouples perturbation generation from propagation.
+  First, we propose a flow matching-based generative approach to learn physically consistent perturbations
+  of the initial conditions, avoiding artifacts caused by Gaussian noise. Second, we employ deterministic
+  flow matching models with Ordinary Differential Equation (ODE) integrators for efficient ensemble propagation
+  with fewer integration steps. We validate our method on nonlinear dynamical system benchmarks, including
+  the Lotka-Volterra Predator-Prey system, MovingMNIST, and high-dimensional WeatherBench data (5.625$^\circ$).
+  Our approach achieves state-of-the-art probabilistic scoring, as measured by the Continuous Ranked Probability
+  Score (CRPS), and physical consistency, while offering significantly faster inference than diffusion-based
+  baselines.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: snowball

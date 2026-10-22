@@ -1,0 +1,56 @@
+id: arxiv-2509.02784
+title: A Composite-Loss Graph Neural Network for the Multivariate Post-Processing of Ensemble Weather
+  Forecasts
+authors:
+- Mária Lakatos
+date: '2025-09-02'
+year: 2025
+venue: Q. J. R. Meteorol. Soc., Early View (2026)
+venue_type: journal
+ids:
+  arxiv: '2509.02784'
+  doi: 10.1002/qj.70119
+  openalex: W4417409372
+links:
+  paper: https://arxiv.org/abs/2509.02784
+  pdf: https://arxiv.org/pdf/2509.02784
+topic: post-processing
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- gnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: A GNN (dualGNN) trained with an energy-plus-variogram composite loss improves multivariate post-processing
+  of WRF solar and ECMWF visibility ensembles over copula-based methods.
+abstract: 'Ensemble forecasting systems have advanced meteorology by providing probabilistic estimates
+  of future states. Nonetheless, systematic biases often persist, making statistical post-processing essential.
+  Traditional parametric post-processing techniques and machine learning-based methods can produce calibrated
+  predictive distributions at specific locations and lead times, yet often struggle to capture dependencies
+  across forecast dimensions. To address this, multivariate post-processing methods-such as ensemble copula
+  coupling and the Schaake shuffle-are widely applied in a second step to restore realistic inter-variable
+  or spatio-temporal dependencies. The aim of this study is the multivariate post-processing of ensemble
+  forecasts using a graph neural network (dualGNN) trained with a composite loss function that combines
+  the energy score (ES) and the variogram score (VS). The method is evaluated on two datasets: WRF-based
+  solar irradiance forecasts over northern Chile and ECMWF visibility forecasts for Central Europe. The
+  dualGNN consistently outperforms all empirical copula-based post-processed forecasts and shows significant
+  improvements compared to graph neural networks trained solely on either the continuous ranked probability
+  score or the ES, according to the evaluated multivariate verification metrics. Furthermore, for the
+  WRF forecasts, the rank-order structure of the dualGNN forecasts captures valuable dependency information,
+  enabling a more effective restoration of spatial relationships than either the raw numerical weather
+  prediction ensemble or historical observational rank structures. Notably, incorporating VS into the
+  loss function improved the univariate performance for both target variables compared to training on
+  ES alone. Moreover, for the visibility forecasts, the ES-VS combination even outperformed the strongest
+  calibrated reference in terms of univariate performance.'
+significance: 4
+cited_by: 1
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

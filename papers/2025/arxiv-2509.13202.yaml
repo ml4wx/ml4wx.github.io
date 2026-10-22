@@ -1,0 +1,53 @@
+id: arxiv-2509.13202
+title: 'B-TGAT: A Bi-directional Temporal Graph Attention Transformer for Clustering Multivariate Spatiotemporal
+  Data'
+authors:
+- Francis Ndikum Nji
+- Vandana Janaja
+- Jianwu Wang
+date: '2025-09-16'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2509.13202'
+  openalex: W4415317755
+links:
+  paper: https://arxiv.org/abs/2509.13202
+  pdf: https://arxiv.org/pdf/2509.13202
+topic: climate-analysis-attribution
+topics:
+- benchmarks-data-eval
+type: model
+method:
+- cnn
+- rnn
+- gnn
+- transformer
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Hybrid U-Net autoencoder with ConvLSTM and graph-attention temporal bottleneck clusters multivariate
+  climate data, improving cluster separability and alignment with known climate transitions.
+abstract: Clustering high-dimensional multivariate spatiotemporal climate data is challenging due to complex
+  temporal dependencies, evolving spatial interactions, and non-stationary dynamics. Conventional clustering
+  methods, including recurrent and convolutional models, often struggle to capture both local and global
+  temporal relationships while preserving spatial context. We present a time-distributed hybrid U-Net
+  autoencoder that integrates a Bi-directional Temporal Graph Attention Transformer (B-TGAT) to guide
+  efficient temporal clustering of multidimensional spatiotemporal climate datasets. The encoder and decoder
+  are equipped with ConvLSTM2D modules that extract joint spatial--temporal features by modeling localized
+  dynamics and spatial correlations over time, and skip connections that preserve multiscale spatial details
+  during feature compression and reconstruction. At the bottleneck, B-TGAT integrates graph-based spatial
+  modeling with attention-driven temporal encoding, enabling adaptive weighting of temporal neighbors
+  and capturing both short and long-range dependencies across regions. This architecture produces discriminative
+  latent embeddings optimized for clustering. Experiments on three distinct spatiotemporal climate datasets
+  demonstrate superior cluster separability, temporal stability, and alignment with known climate transitions
+  compared to state-of-the-art baselines. The integration of ConvLSTM2D, U-Net skip connections, and B-TGAT
+  enhances temporal clustering performance while providing interpretable insights into complex spatiotemporal
+  variability, advancing both methodological development and climate science applications.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

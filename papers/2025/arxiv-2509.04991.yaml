@@ -1,0 +1,54 @@
+id: arxiv-2509.04991
+title: A Mechanism-Coupled Split Window Network for Medium- to High-Resolution Land Surface Temperature
+  Retrieval
+authors:
+- Tian Xie
+- Menghui Jiang
+- Chao Zeng
+- Huifang Li
+- Guanhao Zhang
+- Chan Li
+- Huanfeng Shen
+date: '2025-09-05'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2509.04991'
+  doi: 10.1016/j.isprsjprs.2026.09.002
+links:
+  paper: https://arxiv.org/abs/2509.04991
+  pdf: https://arxiv.org/pdf/2509.04991
+topic: observations-remote-sensing
+type: model
+method:
+- physics-constrained
+- other
+spatial:
+- global
+data:
+- satellite
+status: research
+summary: PCD-Net retrieves land surface temperature from thermal infrared satellite data by learning coefficients
+  of a split-window physical backbone, improving out-of-distribution generalization.
+abstract: Land surface temperature (LST) is a fundamental physical variable in land-atmosphere interactions,
+  surface energy budgets, and climate processes. LST derived from medium- to high-resolution thermal infrared
+  (TIR) observations effectively reveals thermal environmental disparities across distinct landscape units.
+  However, achieving accurate, robust, and globally generalizable LST retrieval remains challenging under
+  complex atmospheric conditions and diverse land cover types. Traditional split window (SW) algorithms
+  heavily rely on empirical parameterizations, whose fixed coefficients fail to adapt to complex scenarios
+  such as high surface temperatures and high atmospheric water vapor content. Concurrently, conventional
+  data-driven models exhibit limited generalizability to out-of-distribution (OOD) samples due to the
+  absence of explicit physical structure constraints. To address these issues, this study proposes a Parallel
+  Component Decoupled Neural Network (PCD-Net) framework, which reformulates SW retrieval as a dynamic
+  learning problem of physical component coefficients. Using the SW equation as the physical backbone,
+  the framework constructs parallel subnetworks to adaptively learn the dynamic coefficients corresponding
+  to the constant, first-order, and second-order brightness temperature difference terms; meanwhile, a
+  residual branch is incorporated to supplement the nonlinear coupling corrections induced by the joint
+  effects of surface emissivity and atmospheric water vapor. Through this component-level decoupled modeling,
+  PCD-Net explicitly characterizes the dynamic response relationships between land surface emissivity,
+  atmospheric water vapor content, and different SW physical components.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

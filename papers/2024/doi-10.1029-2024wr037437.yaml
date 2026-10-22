@@ -1,0 +1,52 @@
+id: doi-10.1029-2024wr037437
+title: Evaluation of Sub‐Hourly MRMS Quantitative Precipitation Estimates in Mountainous Terrain Using
+  Machine Learning
+authors:
+- Phoebe White
+- Peter A. Nelson
+date: '2024-12-01'
+year: 2024
+venue: Water Resources Research
+venue_type: journal
+ids:
+  doi: 10.1029/2024wr037437
+  openalex: W4405129143
+links:
+  paper: https://doi.org/10.1029/2024wr037437
+orgs:
+- colorado-state-university
+topic: observations-remote-sensing
+type: evaluation
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- radar
+- stations
+status: research
+summary: Gradient-boosting error model maps sub-hourly MRMS radar precipitation errors across Colorado
+  mountains, showing larger errors far from radars and at high elevation.
+abstract: Abstract The Multi‐Radar Multi‐Sensor (MRMS) product incorporates radar, quantitative precipitation
+  forecasts, and gage data at a high spatiotemporal resolution for the United States and southern Canada.
+  MRMS is subject to various sources of measurement error, especially in complex terrain. The goal of
+  this study is to provide a framework for understanding the uncertainty of MRMS in mountainous areas
+  with limited observations. We evaluate 8‐hr time series samples of MRMS 15‐min intensity through a comparison
+  to 204 gages located in the mountains of Colorado. This analysis shows that the MRMS surface precipitation
+  rate product tends to overestimate rainfall with a median normalized root mean squared error (RMSE)
+  of 42% of the maximum MRMS 15‐min intensity. For each time series sample, various features related to
+  the physical characteristics influencing MRMS performance are calculated from the topography, surrounding
+  storms, and rainfall observed at the gage location. A gradient‐boosting regressor is trained on these
+  features and is optimized with quantile loss, using the RMSE as a target, to model nonlinear patterns
+  in the features that relate to a range of error. This model was used to predict a range of error throughout
+  the mountains of Colorado during warm months, spanning 6 years, resulting in a spatiotemporally varying
+  error model of MRMS for sub‐hourly precipitation rates. Mapping of this data set by aggregating normalized
+  RMSE over time reveals that areas further from radar sites in higher elevation terrain show consistently
+  greater error. However, the model predicts larger performance variability in these regions compared
+  to alternative error assessments.
+significance: 3
+cited_by: 8
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

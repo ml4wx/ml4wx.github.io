@@ -1,0 +1,60 @@
+id: arxiv-2606.18436
+title: Pointwise is Pointless? A Multimodal Ablation Study for Precipitation Nowcasting with Graph Neural
+  Networks
+authors:
+- Ophélia Miralles
+- Máté Mile
+- Christoffer Artturi
+- Thomas Nipen
+- Ivar Seierstad
+date: '2026-06-16'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.18436'
+  openalex: W7165135681
+links:
+  paper: https://arxiv.org/abs/2606.18436
+  pdf: https://arxiv.org/pdf/2606.18436
+topic: nowcasting
+topics:
+- probabilistic-ensembles
+type: evaluation
+method:
+- gnn
+- physics-constrained
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- nwp-analysis
+- stations
+- satellite
+status: research
+summary: Ablation of a multimodal graph neural network for two-hour Nordic rain nowcasting shows radar,
+  NWP, station, satellite and CRPS training each help different forecast aspects.
+abstract: Sparse point observations are increasingly available for precipitation nowcasting, but it is
+  unclear how much they improve dense radar-field forecasts. We partially address this question with a
+  multimodal graph neural network nowcasting system over the Nordic radar domain. The model predicts rain
+  rate every five minutes up to two hours ahead and is trained with different combinations of radar history,
+  MEPS numerical weather prediction, Netatmo surface observations, MSG satellite channels, stochastic
+  noise, and CRPS-based ensemble losses. The study is designed as an ablation of operationally relevant
+  information sources and training objectives. We compare radar-only, NWP-informed, station-informed,
+  satellite-informed, noise-augmented, and CRPS-based configurations using complementary diagnostics on
+  the radar grid, at station locations, for rain onset, and through oracle, displacement, and amplitude
+  scores. The results show that each source improves a different part of the forecast problem. MEPS stabilises
+  radar-only extrapolation, Netatmo observations improve local station and onset diagnostics, and satellite
+  predictors reduce some station-level biases but may activate rain too early when used deterministically.
+  CRPS-based configurations provide the most consistent radar-grid gains, while the combined satellite
+  and CRPS setup gives the best overall oracle/DAS score. These results do not support the conclusion
+  that point observations are uninformative for nowcasting, but they show that local observational skill
+  and spatially coherent radar-field skill are distinct targets. The practical implication is that sparse
+  observations can provide useful local constraints, but their benefit for radar-like fields depends on
+  the training loss, uncertainty representation, and how observation support is encoded in the model.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

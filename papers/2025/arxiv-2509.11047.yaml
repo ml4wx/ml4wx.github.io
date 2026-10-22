@@ -1,0 +1,44 @@
+id: arxiv-2509.11047
+title: Data-Efficient Ensemble Weather Forecasting with Diffusion Models
+authors:
+- Kevin Valencia
+- Ziyang Liu
+- Justin Cui
+date: '2025-09-14'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2509.11047'
+  openalex: W4415087729
+links:
+  paper: https://arxiv.org/abs/2509.11047
+  pdf: https://arxiv.org/pdf/2509.11047
+topic: probabilistic-ensembles
+type: model
+method:
+- diffusion
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Time-stratified training-data sampling lets autoregressive diffusion ensemble forecasts match
+  full-data performance using only 20% of the training data.
+abstract: Although numerical weather forecasting methods have dominated the field, recent advances in
+  deep learning methods, such as diffusion models, have shown promise in ensemble weather forecasting.
+  However, such models are typically autoregressive and are thus computationally expensive. This is a
+  challenge in climate science, where data can be limited, costly, or difficult to work with. In this
+  work, we explore the impact of curated data selection on these autoregressive diffusion models. We evaluate
+  several data sampling strategies and show that a simple time stratified sampling approach achieves performance
+  similar to or better than full-data training. Notably, it outperforms the full-data model on certain
+  metrics and performs only slightly worse on others while using only 20% of the training data. Our results
+  demonstrate the feasibility of data-efficient diffusion training, especially for weather forecasting,
+  and motivates future work on adaptive or model-aware sampling methods that go beyond random or purely
+  temporal sampling.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

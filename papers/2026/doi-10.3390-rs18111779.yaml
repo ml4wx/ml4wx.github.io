@@ -1,0 +1,69 @@
+id: doi-10.3390-rs18111779
+title: A Comparative Study of Deep Learning-Based QPE Correction Models for X-Band Phased-Array Radar
+authors:
+- Xinyang Yu
+- Xintong Zhao
+- Yiheng Li
+- Chao Chen
+- Yang He
+- Jianhua Mai
+- Qianrong Ma
+date: '2026-06-01'
+year: 2026
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs18111779
+  openalex: W7163080846
+links:
+  paper: https://doi.org/10.3390/rs18111779
+orgs:
+- cma
+- nuist
+topic: observations-remote-sensing
+topics:
+- nowcasting
+type: evaluation
+method:
+- rnn
+- cnn
+- classical-ml
+spatial:
+- regional
+data:
+- radar
+- stations
+status: pre-operational
+summary: Compares stacking, GRU and 3D CNN models for correcting X-band phased-array radar rainfall estimates,
+  cutting minute-scale errors by about 20-30%.
+abstract: 'Radar quantitative precipitation estimation (QPE) is a crucial product for nowcasting and disaster
+  warning. However, its accuracy is constrained by factors such as radar band, attenuation effects, and
+  variations in the phase and microphysical properties of precipitation particles. Based on X-band phased-array
+  radar data from Zhongshan City, Guangdong Province, this study compares and evaluates the QPE correction
+  performance of three deep learning models: stacking ensemble learning, gated recurrent unit (GRU), and
+  three-dimensional convolutional neural network (3D CNN). The aim is to explore the applicability of
+  different model types under complex precipitation conditions. Data from August 2023 to August 2024 were
+  used to construct the samples, with records from May 2024 held out as an independent test set and excluded
+  from model training and hyperparameter tuning. Model performance was assessed under different radar
+  combinations (three-radar, dual-radar, and single-radar configurations), temporal scales (minute and
+  hourly), and precipitation intensities. The results show that: (1) at the minute scale, all three models
+  improved the original QPE, reducing average relative error (RE) by approximately 24.6–29.5%, mean absolute
+  error (MAE) by 23.2–27.7%, and root-mean-square error (RMSE) by 19.7–22.8%, while increasing correlation
+  coefficient (CC) by approximately 20.4–20.9%. Specifically, GRU achieved the largest reduction in RE,
+  stacking showed slight advantages in controlling MAE and RMSE, and 3D CNN and GRU showed similar improvements
+  in CC. (2) At the hourly scale, the correction effect varied with precipitation intensity. In the light-to-moderate
+  rainfall range (0.1≤R<8.0mmh−1, where R denotes hourly rainfall), 3D CNN generally showed better error-control
+  performance, whereas the advantage of GRU was less consistent among radar combinations. In the heavy-rainfall
+  range (R≥16.0mmh−1), stacking and GRU provided complementary value in some radar configurations, although
+  model performance remained configuration dependent. (3) Case analysis shows that stacking can improve
+  the original QPE at some extreme-precipitation stations, but correction performance in the extreme high-value
+  range remains unstable, and GRU and 3D CNN are more prone to underestimation. Oriented toward operational
+  applications, this study systematically evaluates the applicability and limitations of three model types
+  under different scenarios while considering computational-resource constraints and timeliness requirements,
+  thereby providing a reference for model selection and operational application in radar QPE correction.'
+significance: 2
+cited_by: 2
+score: 18
+highlight: false
+added: '2026-10-22'
+source: backfill

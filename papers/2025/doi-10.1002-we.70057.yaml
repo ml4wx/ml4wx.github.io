@@ -1,0 +1,57 @@
+id: doi-10.1002-we.70057
+title: Inverted Transformers for Effective Post‐Calibration in Multisite Wind Power Forecasting
+authors:
+- Joseph Cohen
+- Tianyi Xu
+- Youngchan Jang
+- Pengwei Du
+- Eunshin Byon
+- Xun Huan
+date: '2025-09-03'
+year: 2025
+venue: Wind Energy
+venue_type: journal
+ids:
+  doi: 10.1002/we.70057
+  openalex: W4413957608
+links:
+  paper: https://doi.org/10.1002/we.70057
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/we.70057
+topic: applications-impacts
+topics:
+- post-processing
+type: model
+method:
+- transformer
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- other
+status: research
+summary: Uses an inverted transformer with a new SpaceEmbed module to post-calibrate NWP forecasts for
+  74 Texas wind farms, cutting forecast error by up to 33%.
+abstract: ABSTRACT Accurate wind power forecasts are essential for energy management and resource allocation.
+  However, because of complex weather dynamics and other nonlinearities, it is exceedingly difficult to
+  forecast wind power on the multisite level for dozens of wind farms at once. This paper proposes a hybridized
+  approach that leverages deep learning to predict future forecast errors from physics‐based numerical
+  weather prediction (NWP) model estimates. Utilizing errors from NWP forecasts allows integration of
+  critical atmospheric and meteorological dynamics into the forecasting model, and we demonstrate the
+  importance of post‐calibration based on the physics versus pure data‐driven wind power prediction. This
+  post‐calibration approach is enabled by the inverted transformer architecture, which efficiently and
+  effectively learns meaningful wind farm variate representations, resulting in accurate spatiotemporal
+  corrections to the forecasts. We also investigate modifying the iTransformer with a new embedding approach,
+  named SpaceEmbed, that explicitly encodes spatial distance information into the network. The proposed
+  approach is validated with a case study using real‐world data and forecasts from the Electric Reliability
+  Council of Texas (ERCOT) in 2015 for 74 wind farms in Texas at different time scales. Using the high
+  sustained limit as the metric for power generation, the iTransformer outperforms other state‐of‐the‐art
+  deep learning forecasting methods, succeeding at the post‐calibration task by reducing NWP forecast
+  error by up to 33% on average.
+significance: 3
+cited_by: 6
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

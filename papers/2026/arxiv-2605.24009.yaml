@@ -1,0 +1,52 @@
+id: arxiv-2605.24009
+title: Improving Ensemble CAPE Forecasts with a Diffusion Model Incorporating Aerosol Information
+authors:
+- Zachary James
+- Joseph Guinness
+- Arthur DeGaetano
+date: '2026-05-19'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.24009'
+links:
+  paper: https://arxiv.org/abs/2605.24009
+  pdf: https://arxiv.org/pdf/2605.24009
+topic: post-processing
+topics:
+- probabilistic-ensembles
+- extremes-hazards
+type: model
+method:
+- diffusion
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: A diffusion model corrects GFS summertime CAPE underestimation and yields 6-hour ensembles that
+  beat GFS and GEFS on RMSE, CRPS and Brier score over the US.
+abstract: Convective available potential energy (CAPE) is an important variable for forecasting severe
+  weather and understanding deep convection and precipitation. The latest versions of the Global Forecast
+  System (GFS) and related Global Ensemble Forecast System (GEFS) have exhibited a bias towards underestimating
+  CAPE values during the summertime. We train an artificial intelligence (AI) diffusion model to improve
+  the skill and uncertainty quantification of afternoon 6-hour lead time ensemble forecasts over the United
+  States. Our model takes a GFS CAPE forecast as input and outputs an ensemble that significantly outperforms
+  both GFS and GEFS 6-hour forecasts on root mean square error, continuous ranked probability score, and
+  Brier score. We propose a two-stage training pipeline to leverage both a larger historical GFS forecast
+  dataset and a smaller historical GEFS dataset, despite the two using initialization and parameterization
+  schemes that vary over time. We also show that classifier-free guidance can be used to control the skill
+  and spread of the forecasts. We then demonstrate the versatility of our framework by adding aerosol
+  optical depths (AODs) of black carbon, organic carbon, dust, sea salt, and sulfates as additional input
+  features. Aerosols can invigorate or suppress convection depending on atmospheric conditions. Our AI
+  models effectively incorporate aerosols to produce improved CAPE forecasts. We interpret the model components
+  by using permutation feature importance to rank the influence of the different AODs and find that black
+  carbon, organic carbon, and sulfate aerosols have a greater impact on the model's CAPE predictions than
+  sea salt and dust aerosols.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

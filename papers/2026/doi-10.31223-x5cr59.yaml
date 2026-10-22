@@ -1,0 +1,55 @@
+id: doi-10.31223-x5cr59
+title: 'Transferability of ML emulators for polar RCM surface melt under different forcings: Limitations
+  and recommendations'
+authors:
+- Elke Schlager
+- Sebastian Scher
+- Ruth Mottram
+- Peter Langen
+date: '2026-09-30'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.31223/x5cr59
+  openalex: W7214898315
+links:
+  paper: https://doi.org/10.31223/x5cr59
+  pdf: https://eartharxiv.org/repository/object/15294/download/26509/
+topic: climate-emulation
+topics:
+- xai-uq-physics
+type: evaluation
+method:
+- classical-ml
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+- era5
+status: research
+summary: Tests whether an ML emulator of polar regional-model surface melt transfers across forcings and
+  climates, finding limited transfer from historical to SSP5-8.5 conditions.
+abstract: Machine learning emulators provide a computationally efficient alternative to physically based
+  regional climate and surface mass balance models, but their applicability depends on their ability to
+  generalize beyond training conditions. In this study, we assess the transferability of a melt emulator
+  trained on output from the regional climate model HIRHAM5 forced by ERA-Interim, CESM2, and EC-Earth
+  under historical and future (SSP5-8.5) climates. Transferability is evaluated across forcing datasets
+  and climate states without retraining. The emulator generalizes reasonably well within a given climate
+  regime, producing biases below the inter-model spread, but exhibits limited transferability between
+  historical and future climate conditions. Predictor distributions analyses, perturbation experiments,
+  and ablation studies indicate that these errors arise from shifts in predictor distributions together
+  with an insufficient representation of the surface state. Although perturbation experiments demonstrate
+  physically plausible relationships between surface energy fluxes and melt generation, physical consistency
+  alone does not ensure robust extrapolation to novel climate conditions. Increasing training data diversity
+  does not overcome these transferability limitations, highlighting the importance of training on data
+  that are representative of the target application. Future emulator development should focus on incorporating
+  information across multiple temporal scales and systematically evaluate transfer performance to improve
+  generalizability.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,53 @@
+id: arxiv-2510.03364
+title: Diffusion-Based, Data-Assimilation-Enabled Super-Resolution of Hub-height Winds
+authors:
+- Xiaolong Ma
+- Xu Dong
+- Ashley Tarrant
+- Lei Yang
+- Rao Kotamarthi
+- Jiali Wang
+- Feng Yan
+- Rajkumar Kettimuthu
+date: '2025-10-03'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2510.03364'
+  openalex: W4414968837
+links:
+  paper: https://arxiv.org/abs/2510.03364
+  pdf: https://arxiv.org/pdf/2510.03364
+topic: downscaling
+topics:
+- data-assimilation
+type: model
+method:
+- diffusion
+spatial:
+- regional
+- local
+data:
+- stations
+- nwp-analysis
+- other
+status: research
+summary: WindSR, a diffusion model with dynamic-radius observation blending, super-resolves hub-height
+  winds and cuts model bias by about 20% against independent observations.
+abstract: High-quality observations of hub-height winds are valuable but sparse in space and time. Simulations
+  are widely available on regular grids but are generally biased and too coarse to inform wind-farm siting
+  or to assess extreme-weather-related risks (e.g., gusts) at infrastructure scales. To fully utilize
+  both data types for generating high-quality, high-resolution hub-height wind speeds (tens to ~100m above
+  ground), this study introduces WindSR, a diffusion model with data assimilation for super-resolution
+  downscaling of hub-height winds. WindSR integrates sparse observational data with simulation fields
+  during downscaling using state-of-the-art diffusion models. A dynamic-radius blending method is introduced
+  to merge observations with simulations, providing conditioning for the diffusion process. Terrain information
+  is incorporated during both training and inference to account for its role as a key driver of winds.
+  Evaluated against convolutional-neural-network and generative-adversarial-network baselines, WindSR
+  outperforms them in both downscaling efficiency and accuracy. Our data assimilation reduces WindSR's
+  model bias by approximately 20% relative to independent observations.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

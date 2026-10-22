@@ -1,0 +1,60 @@
+id: arxiv-2610.12401
+title: Learning Kilometer-Scale Weather Prediction with Global-Regional Alignment
+authors:
+- Guowen Li
+- Yang Liu
+- Yujie Wang
+- Qiuyan Sun
+- Haoyuan Liang
+- Juepeng Zheng
+- Hong Cheng
+- Haohuan Fu
+date: '2026-10-08'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.12401'
+  openalex: W7221096985
+links:
+  paper: https://arxiv.org/abs/2610.12401
+  pdf: https://arxiv.org/pdf/2610.12401
+topic: regional-km-scale
+topics:
+- global-medium-range
+type: model
+method:
+- transformer
+- gnn
+timescale:
+- short
+- medium
+spatial:
+- regional
+data:
+- era5
+- nwp-analysis
+- other
+status: research
+summary: Kilometer-scale regional forecasting framework that aligns frozen global weather model outputs
+  with regional grids, working with Pangu, GraphCast and HRES drivers without retraining.
+abstract: Kilometer-scale regional weather forecasting is essential for local weather warnings and weather-sensitive
+  decisions. Existing data-driven approaches often rely on numerical forecasts for large-scale guidance
+  or require additional training of global forecasting components. Pretrained global weather models offer
+  an efficient source of large-scale forecasts, motivating their reuse to guide high-resolution regional
+  prediction. However, this coupling requires aligning global and regional representations across different
+  grids and integrating global guidance with local interactions to advance regional states. We propose
+  ScaleCast, a regional forecasting framework that addresses these challenges through Global-Regional
+  Alignment. Its Global-Regional Conversion module aligns joint global and regional representations with
+  regional locations, while the Global-Regional Alignment and Dynamics block combines aligned guidance
+  with regional neighborhood interactions. Experiments using ERA5 global analyses on a 0.25-degree grid
+  and CERRA regional reanalysis at 5.5 km spacing demonstrate improved regional forecasts across surface
+  and upper-air variables, with a single trained model supporting multiple global forecast drivers (i.e.,
+  Pangu-Weather, GraphCast, and HRES) without specific retraining. Fine-tuning on HRRR at 3 km spacing
+  further demonstrates the framework's adaptability to a different regional domain and spatial resolution.
+  Windstorm case studies show improved cyclone positioning and core-pressure estimates, while comparisons
+  with HadISD station observations show closer agreement with local temperature and humidity changes.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,55 @@
+id: arxiv-2511.17171
+title: 'FireScope: Wildfire Risk Raster Prediction with a Chain-of-Thought Oracle'
+authors:
+- Mario Markov
+- Stefan Maria Ailuro
+- Luc Van Gool
+- Konrad Schindler
+- Danda Pani Paudel
+date: '2025-11-21'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2511.17171'
+  openalex: W4417188278
+links:
+  paper: https://arxiv.org/abs/2511.17171
+  pdf: https://arxiv.org/pdf/2511.17171
+orgs:
+- eth-zurich
+topic: extremes-hazards
+topics:
+- llms-agents
+type: model
+method:
+- llm
+- reinforcement-learning
+spatial:
+- regional
+data:
+- satellite
+- other
+status: research
+summary: FireScope is a reasoning VLM trained with RL and visual supervision to predict wildfire risk
+  rasters, generalizing from US training to European wildfire events.
+abstract: Predicting wildfire risk is a reasoning-intensive spatial problem that requires the integration
+  of visual, climatic, and geographic factors to infer continuous risk maps. Existing methods lack the
+  causal reasoning and multimodal understanding required for reliable generalization. We introduce FireScope-Bench,
+  a large-scale dataset and benchmark that couples Sentinel-2 imagery and climate data with expert-defined
+  risk rasters across the USA, and real wildfire events in Europe for cross-continental evaluation. Building
+  on this dataset, we propose FireScope, a VLM-based reasoning-to-generation framework that learns from
+  both reinforcement learning and visual supervision to predict risk rasters with complementary reasoning
+  traces. When trained in the USA and tested in Europe, FireScope achieves substantial performance gains,
+  while expert feedback and automated analysis confirm that its reasoning traces are faithful and semantically
+  meaningful. Our findings demonstrate that reasoning can ground raster prediction models, improving both
+  generalization and interpretability. To our knowledge, this is the first framework to (1) demonstrate
+  that language-based reasoning can improve generalization in visual generation, (2) propose a high-resolution
+  wildfire risk model that can be applied across continents, and (3) enable systematic studies of robust
+  cross-continental generalization for multimodal fire risk models. We believe that FireScope-Bench has
+  the potential to serve as a foundation for advancing reasoning-driven, interpretable and generalizable
+  spatial modeling. Data and source code will be made publicly available.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

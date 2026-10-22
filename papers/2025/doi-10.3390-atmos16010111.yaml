@@ -1,0 +1,53 @@
+id: doi-10.3390-atmos16010111
+title: Research on Typhoon Prediction by Integrating Numerical Simulation and Deep Learning Methods
+authors:
+- Tianyi Lv
+- Huaming Yu
+- Liangshi Lin
+- Yijun Tao
+- Xin Qi
+date: '2025-01-20'
+year: 2025
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos16010111
+  openalex: W4406628730
+links:
+  paper: https://doi.org/10.3390/atmos16010111
+  pdf: https://www.mdpi.com/2073-4433/16/1/111/pdf?version=1737353860
+topic: extremes-hazards
+topics:
+- post-processing
+type: model
+method:
+- rnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+- nwp-analysis
+status: research
+summary: LSTM model predicts typhoon maximum wind speed from NWP forecasts, raising ERA5 correlation from
+  0.801 to 0.859 and cutting RMSE by 58%.
+abstract: Typhoons rank among the most destructive natural disasters, significantly affecting human activities
+  and daily life. Atmospheric numerical model wind fields, which are widely utilized, often underestimate
+  typhoon intensity. This study proposes a model for predicting typhoon maximum wind speeds using the
+  Long Short-Term Memory (LSTM) neural network. The model predicts maximum wind speeds based on existing
+  atmospheric numerical forecasts, constructs a parametric wind field model from these predictions, and
+  integrates it with the numerical model wind fields to generate an LSTM-optimized wind field. The results
+  show that the LSTM model accurately predicts typhoon maximum wind speeds, with the predicted extreme
+  values closely aligning with actual observations and capturing the trends of maximum wind speed variations.
+  Compared with the ERA5 typhoon maximum wind speed, the C of the LSTM model for predicting the typhoon
+  maximum wind speed is improved from 0.801 to 0.859, and the RMSE and MAE are reduced by 58% and 64%,
+  respectively. In the simulation of Typhoon DELTA (2020), the LSTM-optimized wind field exhibits substantially
+  higher wind speed intensities in the central region of the typhoon compared to the ERA5 wind field,
+  providing a more accurate representation of the intensity and structure of the typhoon.
+significance: 3
+cited_by: 6
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

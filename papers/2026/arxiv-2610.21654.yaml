@@ -1,0 +1,52 @@
+id: arxiv-2610.21654
+title: 'Digital Typhoon Dataset V3: Benchmarking for Multi-spectral Extension and Analyzing Systematic
+  Bias in Intensity Regression'
+authors:
+- Asanobu Kitamoto
+- Victor Le Louarn
+- Noelia Falczuk
+- Ngoc Anh Tong
+- Anja Veleva
+date: '2026-10-15'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.21654'
+  openalex: W7222400894
+links:
+  paper: https://arxiv.org/abs/2610.21654
+  pdf: https://arxiv.org/pdf/2610.21654
+  code: https://github.com/kitamoto-lab/digital-typhoon
+topic: benchmarks-data-eval
+topics:
+- extremes-hazards
+type: benchmark
+method:
+- cnn
+spatial:
+- global
+data:
+- satellite
+status: research
+summary: Releases Digital Typhoon Dataset V3 with multispectral satellite data and shows intensity regression
+  underestimates strong typhoons despite reweighting.
+abstract: This paper presents the Digital Typhoon Dataset V3, a new version of the longest typhoon satellite
+  image dataset spanning nearly 50 years, designed to benchmark machine learning models on long-term spatio-temporal
+  data. The latest addition to Dataset V3 is multispectral satellite data, enabling multi-channel models.
+  We investigate data-splitting strategies and present benchmarking results for the Northern and Southern
+  Hemispheres. Experimental results show that, under the current dataset construction and experimental
+  setting, multi-channel inputs do not clearly outperform single-channel inputs for pressure regression.
+  Among the evaluated model architectures, image types, and spectral channels, ResNet-18, full-resolution
+  images, and Channel 1 generally provide the best single-channel performance for pressure regression.
+  Performance also differs between the WP and AU datasets by regression target, with lower RMSE on WP
+  for pressure regression and on AU for wind regression. These results highlight the importance of considering
+  dataset-specific and task-specific characteristics when interpreting benchmark performance. Additionally,
+  we analyzed systematic bias in intensity regression, which leads to underestimation of intensity for
+  strong typhoons. We tested imbalance-aware weighting strategies, including inverse-density weighting
+  inspired by BalancedMSE, and showed that these approaches are not sufficient to remove the bias. The
+  dataset is publicly available at http://agora.ex.nii.ac.jp/digital-typhoon/dataset/ and https://github.com/kitamoto-lab/digital-typhoon/.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

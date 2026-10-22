@@ -1,0 +1,49 @@
+id: doi-10.5194-hess-25-3207-2021
+title: 'Technical Note: Temporal disaggregation of spatial rainfall fields with generative adversarial
+  networks'
+authors:
+- S. Scher
+- Stefanie Peßenteiner
+date: '2020-09-30'
+year: 2020
+venue: Hydrology and Earth System Sciences
+venue_type: journal
+ids:
+  doi: 10.5194/hess-25-3207-2021
+  openalex: W3090345187
+links:
+  paper: https://doi.org/10.5194/hess-25-3207-2021
+  pdf: https://hess.copernicus.org/articles/25/3207/2021/hess-25-3207-2021.pdf
+topic: downscaling
+topics:
+- observations-remote-sensing
+type: model
+method:
+- gan-vae
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: GAN generates sub-daily spatial rainfall fields conditioned on daily totals, producing visually
+  realistic patterns trained on hourly radar data.
+abstract: Abstract. Creating spatially coherent rainfall patterns with high temporal resolution from data
+  with lower temporal resolution is necessary in many geoscientific applications. From a statistical perspective,
+  this presents a high- dimensional, highly under-determined problem. Recent advances in machine learning
+  provide methods for learning such probability distributions. We test the usage of Generative Adversarial
+  Networks (GANs) for estimating the full probability distribution of spatial rainfall patterns with high
+  temporal resolution, conditioned on a field of lower temporal resolution. The GAN is trained on rainfall
+  radar data with hourly resolution. Given a new field of daily precipitation sums, it can sample scenarios
+  of spatiotemporal patterns with sub-daily resolution. While the generated patterns do not perfectly
+  reproduce the statistics of observations, they are visually hardly distinguishable from real patterns.
+  Limitations that we found are that providing additional input (such as geographical information) to
+  the GAN surprisingly lead to worse results, showing that it is not trivial to increase the amount of
+  used input information. Additionally, while in principle the GAN should learn the probability distribution
+  in itself, we still needed expert judgment to determine at which point the training should stop, because
+  longer training leads to worse results.
+significance: 3
+cited_by: 16
+score: 12
+highlight: false
+added: '2026-10-22'
+source: snowball

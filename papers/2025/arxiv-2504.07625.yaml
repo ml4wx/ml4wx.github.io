@@ -1,0 +1,63 @@
+id: arxiv-2504.07625
+title: 'Deep Learning Meets Teleconnections: Improving S2S Predictions for European Winter Weather'
+authors:
+- Philine L. Bommer
+- Marlene Kretschmer
+- Fiona R. Spuler
+- Kirill Bykov
+- Marina M. -C. Höhne
+date: '2025-04-10'
+year: 2025
+venue: Machine Learning Earth
+venue_type: journal
+ids:
+  arxiv: '2504.07625'
+  doi: 10.1088/3049-4753/ade9c2
+  openalex: W4412762226
+links:
+  paper: https://doi.org/10.1088/3049-4753/ade9c2
+  pdf: https://arxiv.org/pdf/2504.07625
+orgs:
+- alan-turing-institute
+- university-of-reading
+topic: s2s-seasonal
+topics:
+- climate-analysis-attribution
+type: model
+method:
+- rnn
+- transformer
+timescale:
+- s2s
+spatial:
+- regional
+data:
+- era5
+- nwp-analysis
+status: research
+summary: A ViT-LSTM encoding stratospheric winds and OLR outperforms ECMWF subseasonal hindcasts beyond
+  week 4 for North Atlantic-European weather regimes.
+abstract: Predictions on subseasonal-to-seasonal (S2S) timescales--ranging from two weeks to two month--are
+  crucial for early warning systems but remain challenging owing to chaos in the climate system. Teleconnections,
+  such as the stratospheric polar vortex (SPV) and Madden-Julian Oscillation (MJO), offer windows of enhanced
+  predictability, however, their complex interactions remain underutilized in operational forecasting.
+  Here, we developed and evaluated deep learning architectures to predict North Atlantic-European (NAE)
+  weather regimes, systematically assessing the role of remote drivers in improving S2S forecast skill
+  of deep learning models. We implemented (1) a Long Short-term Memory (LSTM) network predicting the NAE
+  regimes of the next six weeks based on previous regimes, (2) an Index-LSTM incorporating SPV and MJO
+  indices, and (3) a ViT-LSTM using a Vision Transformer to directly encode stratospheric wind and tropical
+  outgoing longwave radiation fields. These models are compared with operational hindcasts as well as
+  other AI models. Our results show that leveraging teleconnection information enhances skill at longer
+  lead times. Notably, the ViT-LSTM outperforms ECMWF's subseasonal hindcasts beyond week 4 by improving
+  Scandinavian Blocking (SB) and Atlantic Ridge (AR) predictions. Analysis of high-confidence predictions
+  reveals that NAO-, SB, and AR opportunity forecasts can be associated with SPV variability and MJO phase
+  patterns aligning with established pathways, also indicating new patterns. Overall, our work demonstrates
+  that encoding physically meaningful climate fields can enhance S2S prediction skill, advancing AI-driven
+  subseasonal forecast. Moreover, the experiments highlight the potential of deep learning methods as
+  investigative tools, providing new insights into atmospheric dynamics and predictability.
+significance: 4
+cited_by: 8
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

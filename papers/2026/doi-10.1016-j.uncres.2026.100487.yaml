@@ -1,0 +1,63 @@
+id: doi-10.1016-j.uncres.2026.100487
+title: Multi-horizon solar irradiance forecasting under variable sky conditions through CNN–TCN feature
+  learning and XGBoost
+authors:
+- Aseel Bennagi
+- Obaida AlHousrya
+- Daniel Tudor Cotfas
+- Petru Adrian Cotfas
+- Marius Paulescu
+date: '2026-06-30'
+year: 2026
+venue: Unconventional Resources
+venue_type: journal
+ids:
+  doi: 10.1016/j.uncres.2026.100487
+  openalex: W7166671215
+links:
+  paper: https://doi.org/10.1016/j.uncres.2026.100487
+topic: applications-impacts
+topics:
+- nowcasting
+type: model
+method:
+- cnn
+- classical-ml
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- other
+status: research
+summary: Hybrid CNN-TCN-XGBoost forecasts solar irradiance 1–30 min ahead, reducing nRMSE about 22% at
+  10 min versus a 2-State benchmark on variable-sky days.
+abstract: 'ABSTRACT Multi-horizon solar irradiance nowcasting is highly sensitive to rapidly varying atmospheric
+  conditions. Traditional statistical models such as persistence and autoregressive integrated moving
+  average are computationally efficient but often degrade under strong atmospheric variability, whereas
+  physical models based on numerical weather prediction remain constrained by spatial resolution, initialization
+  delay, and computational cost. Machine learning methods such as extreme gradient boosting (XGBoost)
+  improve nonlinear regression performance, but when used alone they do not explicitly capture temporal
+  dependencies. Deep learning models, including convolutional neural network (CNN) and temporal convolutional
+  network (TCN), can learn temporal patterns, yet maintaining stable accuracy across multiple forecast
+  horizons remains challenging. To address this issue, this study proposes a hybrid CNN–TCN–XGBoost framework
+  in which CNN and TCN extract multi-scale temporal features and XGBoost performs horizon-specific regression.
+  The model is evaluated over forecast horizons from 1 to 30 min using independent 2018 and 2021 datasets
+  covering clear-sky, mixed, overcast, and highly variable atmospheric regimes. The results show notable
+  improvements over the 2-State benchmark, including normalized root mean square error (nRMSE) reductions
+  of approximately 8% at 2 min and 22% at 10 min in the aggregated 2018 evaluation, while preserving smooth
+  error growth with increasing horizon. Day-level validation across six representative atmospheric regimes
+  provides further evidence of regime-dependent forecasting performance: on a highly variable day, error
+  reductions reach about 38% at 10 min and 29% at 30 min, while on a stable clear-sky day the reduction
+  reaches nearly 87% at 30 min. For the clear-sky subset, nRMSE is typically below 0.016 and remains below
+  0.032 even on the most challenging day. Therefore, the proposed CNN–TCN–XGBoost framework is best interpreted
+  as a model that provides strong short- and intermediate-horizon performance and best or near-best accuracy
+  across most evaluated regimes, while long-horizon performance remains dependent on atmospheric regime
+  across diverse atmospheric conditions. These findings make it a promising solution for reliable real-time
+  solar irradiance forecasting and photovoltaic operation.'
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,47 @@
+id: doi-10.1127-metz-2024-1189
+title: Exploring the ability of regional extrapolation for precipitation nowcasting with deep learning
+authors:
+- Tarek Beutler
+- Annette Rudolph
+- Daniel Goehring
+- Nikki Vercauteren
+date: '2024-08-13'
+year: 2024
+venue: Meteorologische Zeitschrift
+venue_type: journal
+ids:
+  doi: 10.1127/metz/2024/1189
+  openalex: W4401551135
+links:
+  paper: https://doi.org/10.1127/metz/2024/1189
+topic: nowcasting
+type: application
+method:
+- rnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Fine-tunes a TrajGRU radar nowcasting model pretrained elsewhere, showing transfer helps heavy-rain
+  forecasts up to 100 minutes when local training data is scarce.
+abstract: Precipitation nowcasting refers to the prediction of precipitation intensity in a local region
+  and in a short timeframe up to 6 hours. The evaluation of spatial and temporal information still challenges
+  state-of-the-art numerical weather prediction models. The increasing possibilities to store and evaluate
+  data combined with the advancements in the developments of artificial intelligence algorithms make it
+  natural to use these methods to improve precipitation nowcasting. In this work, a Trajectory Gated Recurrent
+  Unit (TrajGRU) is applied to radar data of the German Meteorological Service. The impact of finetuning
+  a network pretrained at a different location and for several precipitation intensity thresholds with
+  respect to the training time is evaluated. In cases with little availability of training data at the
+  target location, for example when heavy rainfall is rare, the finetuned model can benefit from the original
+  model performance at the pretraining location. Furthermore, the skill scores for the different thresholds
+  are shown for a prediction time up to 100 minutes. The results highlight promising regional extrapolation
+  capabilities for such neural networks for precipitation nowcasting.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

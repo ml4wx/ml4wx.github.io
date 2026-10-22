@@ -1,0 +1,59 @@
+id: doi-10.3389-fmars.2026.1837410
+title: Machine learning based accurate storm surge peak and timing forecast in Pearl River Estuary
+authors:
+- Ruolan Xiong
+- Xiaohui Wang
+- Fuhai Dao
+- Hongze Leng
+- Junqiang Song
+date: '2026-05-19'
+year: 2026
+venue: Frontiers in Marine Science
+venue_type: journal
+ids:
+  doi: 10.3389/fmars.2026.1837410
+  openalex: W7161634995
+links:
+  paper: https://doi.org/10.3389/fmars.2026.1837410
+topic: extremes-hazards
+topics:
+- post-processing
+type: model
+method:
+- rnn
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: GRU with SVR-based timing correction forecasts typhoon storm surge peaks in the Pearl River Estuary,
+  cutting timing error 55% and improving RMSE 2.81%.
+abstract: With climate warming, storm surge increasingly threatens coastal cities, underscoring the necessity
+  for accurate and timely forecasts of peak surge height and timing. Among widely used neural network-based
+  approaches in storm surge forecasting, the Gated Recurrent Unit (GRU), while strong in sequential prediction,
+  tends to underestimate peak magnitudes and exhibits timing errors at extended lead times. To address
+  the issue, this study developed a single-station GRU prediction model using storm surge data from 42
+  tropical cyclones (2000-2023) at nine stations in the Pearl River Estuary. To reduce peak underestimation,
+  an iterative forecasting scheme was designed, incorporating tropical cyclone (TC) parameters selected
+  via Accumulated Local Effects (ALE) and correlation coefficient. To mitigate peak timing errors, a Support
+  Vector Regression (SVR) model based on TC peak intensity elements was proposed to predict and correct
+  peak timing errors. Additionally, multi-station joint forecasting was explored by embedding spatial
+  information between stations and TC tracks. Results based on leave−one−out cross−validation (LOOCV)
+  indicated that integrating TC location, distance, and 34−kt wind radii in the key quadrants yielded
+  a 27% reduction in Peak Error (PE) at 12–18 h and a 13% reduction in RMSE over 1–18 h for the 35 test
+  cases. After applying the SVR−based phase correction, the forecast for all cases achieved an 55% reduction
+  in Timing Error (TE) and a 2.81% reduction in RMSE relative to the uncorrected forecast. Compared to
+  numerical model outputs, the RMSE of water level sequence during Typhoon Hato was decreased by 0.22
+  m. Multi-station joint forecast results showed that embedding such spatial information not only enhances
+  forecast skill across multiple gauges but also provides benefits for stations with sparse historical
+  data. This study offers a promising method that targets both the magnitude and timing of storm surge
+  peaks, thereby improving the accuracy and reliability of storm surge forecasting.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

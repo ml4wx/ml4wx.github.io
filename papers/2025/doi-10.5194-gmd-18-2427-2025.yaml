@@ -1,0 +1,55 @@
+id: doi-10.5194-gmd-18-2427-2025
+title: 'TemDeep: a self-supervised framework for temporal downscaling of atmospheric fields at arbitrary
+  time resolutions'
+authors:
+- Liwen Wang
+- Qian Li
+- Qi Lv
+- Xuan Peng
+- Wei You
+date: '2025-04-24'
+year: 2025
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-18-2427-2025
+  openalex: W4409749343
+links:
+  paper: https://doi.org/10.5194/gmd-18-2427-2025
+orgs:
+- cma
+topic: downscaling
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: Self-supervised encoder-decoder with flow estimation performs temporal downscaling of atmospheric
+  fields to arbitrary time resolution without high-resolution ground truth, improving restoration by 7.6%.
+abstract: Abstract. Numerical forecast products with high temporal resolution are crucial tools in atmospheric
+  studies, allowing for accurate identification of rapid transitions and subtle changes that may be missed
+  by lower-resolution data. However, the acquisition of high-resolution data is limited due to excessive
+  computational demands and substantial storage needs in numerical models. Current deep learning methods
+  for statistical downscaling still require massive ground truth with high temporal resolution for model
+  training. In this paper, we present a self-supervised framework for downscaling atmospheric variables
+  at arbitrary time resolutions by imposing a temporal coherence constraint. Firstly, we construct an
+  encoder-decoder structured temporal downscaling network, and then pretrain this downscaling network
+  on a subset of data that exhibits rapid transitions and is filtered out based on a composite index.
+  Subsequently, this pretrained network is utilized to downscale the fields from adjacent time periods
+  and generate the field at the middle time point. By leveraging the temporal coherence inherent in meteorological
+  variables, the network is further trained based on the difference between the generated field and the
+  actual middle field. To track the evolving trends in meteorological system movements, a flow estimation
+  module is designed to assist with generating interpolated fields. Results show that our method can accurately
+  recover evolution details superior to other methods, reaching 53.7 % in the restoration rate on the
+  test set. In addition, to avoid generating abnormal values and guide the model out of local optima,
+  two regularization terms are integrated into the loss function to enforce spatial and temporal continuity,
+  which further improves the performance by 7.6 %.
+significance: 3
+cited_by: 9
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

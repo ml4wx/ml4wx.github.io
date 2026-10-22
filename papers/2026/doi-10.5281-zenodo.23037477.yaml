@@ -1,0 +1,65 @@
+id: doi-10.5281-zenodo.23037477
+title: 'From Empirical Error Dynamics to Cross-Domain Operational NWP Post-Processing: A Process-Disentangled
+  Dual-Axis Attention Framework for Diurnal Hysteresis, Leptokurtic Busts, and Arid Climate Transfer'
+authors:
+- lilia mokhtari
+date: '2026-09-29'
+year: 2026
+venue: Zenodo (CERN European Organization for Nuclear Research)
+venue_type: preprint
+ids:
+  doi: 10.5281/zenodo.23037477
+  openalex: W7214800614
+links:
+  paper: https://doi.org/10.5281/zenodo.23037477
+topic: post-processing
+type: model
+method:
+- transformer
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Dual-axis attention sequence model post-processes AROME/ARPEGE near-surface forecasts on 5.48M
+  MeteoNet records, targeting heavy-tailed errors and cross-climate transfer without station coordinates.
+abstract: 'High-resolution Numerical Weather Prediction (NWP) systems (such as convective-permitting AROME
+  2.5 km and global ARPEGE) exhibit systematic near-surface state forecast biases driven by sub-grid orographic
+  averaging, boundary-layer turbulence parameterizations, and land-surface energy flux mispartitioning.
+  Prevailing statistical post-processing methods rely heavily on Gradient Boosted Decision Trees (GBDTs;
+  e.g., LightGBM) or local Model Output Statistics (MOS). However, tabular ensembles are structurally
+  memoryless across forecast lead time, project discontinuous step-functions across continuous terrain,
+  decouple psychrometric dependencies, and fail to transfer across climatic zones due to station-coordinate
+  memorization. This applied research proof-of-concept addresses a foundational scientific question: Can
+  deep neural sequence models learn universal, coordinate-free atmospheric error dynamics purely from
+  continuous thermodynamic trajectories, kinematic flux rates, and multi-model convective discrepancies—without
+  station identifiers or coordinates—to eliminate severe forecast busts and transfer across distinct climate
+  domains? CORE METEOROLOGICAL MACHINE LEARNING VALIDATIONS (5.48M Records, MeteoNet 2017–2018): Leptokurtic
+  Tail Errors (H1): NWP forecast errors are severely leptokurtic (Kurtosis T = 8.81, Kurtosis RH = 2.68),
+  demonstrating that standard L2 loss misallocates gradient capacity away from severe convective and frontal
+  forecast busts. Psychrometric Error Coupling (H2): Surface energy balance physically couples thermal
+  and hygrometric errors (Spearman rho = -0.6316), mandating chained bivariate inference via a detached
+  Bowen-ratio feedback mechanism. Diurnal Phase Hysteresis (H3): Error trajectories trace closed diurnal
+  hysteresis loops in bivariate phase space (H = 6229.13), establishing the necessity of sequence-to-sequence
+  multi-scale modeling over tabular slicing. Multi-Model Uncertainty Signatures (H4): Inter-model discrepancy
+  |AROME - ARPEGE| provides an operational, observation-free uncertainty proxy, discriminating severe
+  P90 forecast busts with an ROC-AUC of 0.625. PROPOSED ARCHITECTURE & BENCHMARK RESULTS:We introduce
+  the Multi-Scale Regularized Dual-Axis Transformer (V2.1). Evaluated under a rigorous Dual Space-Time
+  Holdout protocol (trained on 2017 data across 321 stations; evaluated on 2018 data across 82 geographically
+  isolated, unseen stations), V2.1 achieves: +13.45% skill gain on T2m RMSE (1.818°C vs. 2.101°C raw;
+  outperforming tuned LightGBM at 1.927°C). +22.45% skill gain on RH RMSE (9.510% vs. 12.262% raw; outperforming
+  tuned LightGBM at 10.110%). +32.07% error reduction on catastrophic P99 temperature forecast busts (|eT|
+  >= 5.88°C) and +41.81% on P99 relative humidity busts. Unsupervised Physical Regime Induction: Discovers
+  8 interpretable atmospheric regime prototypes without coordinate conditioning. OPERATIONAL TRANSFER
+  ROADMAP:Formalizes an extended transferability hypothesis space (H5–H8) and operational roadmap targeting
+  the Office National de la Météorologie (ONM) in Algeria under the European/North African ACCORD NWP
+  framework. Author: Lilia MokhtariAffiliation: National Higher School of Artificial Intelligence (ENSIA),
+  Algiers, AlgeriaAcademic Year: 2026–2027Project Tag: ONM_METEONET | ACCORD Operational NWP Transfer'
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

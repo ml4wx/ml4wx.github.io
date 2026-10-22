@@ -1,0 +1,58 @@
+id: doi-10.1029-2025ms004959
+title: A Neural Network Parametrization of Volumetric Cloud Fraction Profiles Using Satellite Observations
+  and MERRA‐2 Reanalysis Meteorological Data
+authors:
+- Shan Zeng
+- Kuan‐Man Xu
+- Yongxiang Hu
+- Seiji Kato
+- Seung‐Hee Ham
+date: '2025-11-27'
+year: 2025
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2025ms004959
+  openalex: W4416775240
+links:
+  paper: https://doi.org/10.1029/2025ms004959
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2025MS004959
+orgs:
+- nasa
+topic: hybrid-parameterization
+topics:
+- observations-remote-sensing
+type: model
+method:
+- rnn
+spatial:
+- global
+data:
+- era5
+- satellite
+status: research
+summary: A sequence-to-sequence LSTM trained on MERRA-2 predictors reproduces satellite lidar-radar volumetric
+  cloud fraction profiles, beating MERRA-2 for low clouds in tropics and midlatitudes.
+abstract: Abstract Clouds play a crucial role in regulating the hydrologic cycle and Earth's radiative
+  energy budget, yet they are often poorly represented in global climate models (GCMs). This study applies
+  deep machine learning (DML) to develop a physical parameterization of volumetric cloud fraction (VCF),
+  the fraction of a 3‐D grid volume occupied by clouds using satellite lidar‐radar measurements. The DML
+  learns the complex relationships between observed VCF profiles and collocated meteorological variables
+  from MERRA‐2 reanalysis data. Our results show that the neural network (NN), particularly a sequence‐to‐sequence
+  long short‐term memory (LSTM) network with a customized loss function, effectively captures underlying
+  cloud physical processes. The DML prediction outperforms MERRA‐2 reanalysis in representing low‐level
+  clouds in tropical and subtropical regions and low‐ and middle‐level clouds over midlatitude storm‐track
+  and improves VCF histograms. These improvements are reflected in vertical distributions of zonally,
+  meridionally, and globally averaged VCFs, geographic distributions of low‐, middle‐, and high‐level
+  clouds, and seasonal variations in monthly mean VCF. Furthermore, the DML predictions effectively capture
+  El Niño‐Southern Oscillation (ENSO) and other interannual variations. The NN parameterization is further
+  evaluated through sensitivity analysis, where a single predictor is perturbed at a time. This reveals
+  that relative humidity (RH) is the dominant factor influencing variations in globally averaged VCF at
+  low and middle altitudes, followed by temperature. At higher altitudes, temperature becomes the primary
+  driver of VCF through its effect on RH. Increases in pressure vertical velocity ( ω ) are associated
+  with decreases in VCF, though their effect is minor compared to RH and temperature.
+significance: 4
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

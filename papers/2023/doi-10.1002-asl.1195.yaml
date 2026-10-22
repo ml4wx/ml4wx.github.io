@@ -1,0 +1,62 @@
+id: doi-10.1002-asl.1195
+title: 'On the limitations of deep learning for statistical downscaling of climate change projections:
+  The transferability and the extrapolation issues'
+authors:
+- Alfonso Hernanz
+- Carlos Correa
+- Juan Carlos Sánchez Perrino
+- Ignacio Prieto Rico
+- Esteban Rodríguez‐Guisado
+- Marta Domínguez
+- Ernesto Rodríguez Camino
+date: '2023-11-28'
+year: 2023
+venue: Atmospheric Science Letters
+venue_type: journal
+ids:
+  doi: 10.1002/asl.1195
+  openalex: W4389085297
+links:
+  paper: https://doi.org/10.1002/asl.1195
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/asl.1195
+topic: downscaling
+topics:
+- benchmarks-data-eval
+type: evaluation
+method:
+- cnn
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+status: research
+summary: UNet downscaling of climate projections generalises poorly to other Earth system models and extrapolates
+  warm extremes with biases up to 5°C.
+abstract: 'Abstract Convolutional neural networks (CNNs) have become one of the state‐of‐the‐art techniques
+  for downscaling climate projections. They are being applied under Perfect‐Prognosis (trained in a historical
+  period with observations) and hybrid approaches (as Regional Climate Models (RCMs) emulators), with
+  satisfactory results. Nevertheless, two important aspects have not been, to our knowledge, properly
+  assessed yet: (1) their performance as emulators for other Earth System Models (ESMs) different to the
+  one used for training, and (2) their performance under extrapolation, that is, when applied outside
+  of their calibration range. In this study, we use UNET, a popular CNN, to assess these two aspects through
+  two pseudo‐reality experiments, and we compare it with simpler emulators: an interpolation and a linear
+  regression. The RCA4 regional model, with 0.11° resolution over a complex domain centered in the Pyrenees,
+  and driven by the CNRM‐CM5 global model is used to train the emulators. Two frameworks are followed
+  for the training: predictors are taken (1) from the upscaled RCM and (2) from the ESM. In both frameworks,
+  the performance of the UNET when applied for other ESMs different to the one used for training is considerably
+  worse, indicating poor generalization. For the linear method a similar deterioration is seen, so this
+  limitation does not seem method specific but inherent to the task. For the second experiment, the emulators
+  are trained in present and evaluated in future, under extrapolation. While averaged aspects such as
+  the mean values are well simulated in future, significant biases (up to 5°C) appear when assessing warm
+  extremes. These biases are larger by UNET than those produced by the linear method. This limitation
+  suggests that, for variables such as temperature, with a marked signal of change and a strong linear
+  relationship with predictors, simple linear methods might be more appropriate than the sophisticated
+  deep learning techniques.'
+significance: 3
+cited_by: 23
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,54 @@
+id: arxiv-2508.14315
+title: 'FedRAIN-Lite: Federated Reinforcement Algorithms for Improving Idealised Numerical Weather and
+  Climate Models'
+authors:
+- Pritthijit Nath
+- Sebastian Schemm
+- Henry Moss
+- Peter Haynes
+- Emily Shuckburgh
+- Mark Webb
+date: '2025-08-19'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2508.14315'
+  openalex: W4415238817
+links:
+  paper: https://arxiv.org/abs/2508.14315
+  pdf: https://arxiv.org/pdf/2508.14315
+  code: https://github.com/p3jitnath/climate-rl-fedrl
+topic: hybrid-parameterization
+topics:
+- climate-emulation
+type: model
+method:
+- reinforcement-learning
+timescale:
+- climate
+spatial:
+- global
+data:
+- other
+status: research
+summary: FedRAIN-Lite uses federated reinforcement learning with latitude-band agents to tune sub-grid
+  parameters in energy-balance climate models, with DDPG beating static and single-agent baselines on
+  area-weighted RMSE.
+abstract: Sub-grid parameterisations in climate models are traditionally static and tuned offline, limiting
+  adaptability to evolving states. This work introduces FedRAIN-Lite, a federated reinforcement learning
+  (FedRL) framework that mirrors the spatial decomposition used in general circulation models (GCMs) by
+  assigning agents to latitude bands, enabling local parameter learning with periodic global aggregation.
+  Using a hierarchy of simplified energy-balance climate models, from a single-agent baseline (ebm-v1)
+  to multi-agent ensemble (ebm-v2) and GCM-like (ebm-v3) setups, we benchmark three RL algorithms under
+  different FedRL configurations. Results show that Deep Deterministic Policy Gradient (DDPG) consistently
+  outperforms both static and single-agent baselines, with faster convergence and lower area-weighted
+  RMSE in tropical and mid-latitude zones across both ebm-v2 and ebm-v3 setups. DDPG's ability to transfer
+  across hyperparameters and low computational cost make it well-suited for geographically adaptive parameter
+  learning. This capability offers a scalable pathway towards high-complexity GCMs and provides a prototype
+  for physically aligned, online-learning climate models that can evolve with a changing climate. Code
+  accessible at https://github.com/p3jitnath/climate-rl-fedrl.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

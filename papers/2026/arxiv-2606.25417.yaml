@@ -1,0 +1,57 @@
+id: arxiv-2606.25417
+title: Evaluation of medium range machine learning models for sub-seasonal prediction
+authors:
+- Catherine de Burgh-Day
+- Chen Li
+- Debra Hudson
+- Li Shi
+- Harrison Cook
+- Robin Wedd
+- Griffith Young
+date: '2026-06-24'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.25417'
+  openalex: W7165857410
+links:
+  paper: https://arxiv.org/abs/2606.25417
+  pdf: https://arxiv.org/pdf/2606.25417
+orgs:
+- bom-australia
+- ecmwf
+topic: s2s-seasonal
+topics:
+- global-medium-range
+type: evaluation
+method:
+- gnn
+- transformer
+timescale:
+- s2s
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: Evaluates GraphCast and FourCastNetV2 for sub-seasonal prediction, finding skill comparable to
+  the ACCESS-S2 ensemble mean at short leads and to ensemble members at longer leads.
+abstract: The performance of two machine learning (ML) atmosphere models - GraphCast and FourCastNetV2
+  - is evaluated in the context of sub-seasonal prediction, including their ability to represent key climate
+  drivers of variability, namely the Madden-Julian Oscillation and the Southern Annular Mode. Model skill
+  is assessed over both a 38-year hindcast period and a 2.5-year hindcast period. The longer period overlaps
+  with the training windows of the ML models but provides a larger sample for robust evaluation, while
+  the shorter period is independent of the ML model training period. This dual evaluation illustrates
+  a compromise approach to the problem of insufficient independent data for evaluation of the models for
+  sub-seasonal prediction. The ML models are compared against the Bureau of Meteorology's physics-based
+  seasonal prediction system, ACCESS-S2, for the 38-year period, and a more recent physics-based coupled
+  model for the shorter hindcast period. Across the two evaluation periods, both ML models have surprisingly
+  good skill for sub-seasonal timescales, given they were designed for forecasting on medium range timescales.
+  In general, the ML models are as skilful as the physical model ensemble mean at shorter lead times and
+  comparable to the physical model ensemble members at longer lead times.
+significance: 4
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

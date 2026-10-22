@@ -1,0 +1,68 @@
+id: arxiv-2510.18707
+title: 'OmniCast: A Masked Latent Diffusion Model for Weather Forecasting Across Time Scales'
+authors:
+- Tung Nguyen
+- Tuan Pham
+- Troy Arcomano
+- Veerabhadra Kotamarthi
+- Ian Foster
+- Sandeep Madireddy
+- Aditya Grover
+date: '2025-10-20'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2510.18707'
+  doi: 10.52202/085713-5728
+  openalex: W4416057154
+links:
+  paper: https://arxiv.org/abs/2510.18707
+  pdf: https://arxiv.org/pdf/2510.18707
+  code: https://github.com/tung-nd/omnicast
+orgs:
+- argonne
+- ucla
+- university-of-chicago
+topic: probabilistic-ensembles
+topics:
+- s2s-seasonal
+- climate-emulation
+type: model
+method:
+- diffusion
+- transformer
+- gan-vae
+timescale:
+- medium
+- s2s
+- climate
+spatial:
+- global
+data:
+- era5
+status: research
+summary: OmniCast uses a masked latent diffusion transformer to forecast across timescales, running 10-20x
+  faster than leading probabilistic medium-range models, with SOTA S2S skill and 100-year stable rollouts.
+abstract: 'Accurate weather forecasting across time scales is critical for anticipating and mitigating
+  the impacts of climate change. Recent data-driven methods based on deep learning have achieved significant
+  success in the medium range, but struggle at longer subseasonal-to-seasonal (S2S) horizons due to error
+  accumulation in their autoregressive approach. In this work, we propose OmniCast, a scalable and skillful
+  probabilistic model that unifies weather forecasting across timescales. OmniCast consists of two components:
+  a VAE model that encodes raw weather data into a continuous, lower-dimensional latent space, and a diffusion-based
+  transformer model that generates a sequence of future latent tokens given the initial conditioning tokens.
+  During training, we mask random future tokens and train the transformer to estimate their distribution
+  given conditioning and visible tokens using a per-token diffusion head. During inference, the transformer
+  generates the full sequence of future tokens by iteratively unmasking random subsets of tokens. This
+  joint sampling across space and time mitigates compounding errors from autoregressive approaches. The
+  low-dimensional latent space enables modeling long sequences of future latent states, allowing the transformer
+  to learn weather dynamics beyond initial conditions. OmniCast performs competitively with leading probabilistic
+  methods at the medium-range timescale while being 10x to 20x faster, and achieves state-of-the-art performance
+  at the subseasonal-to-seasonal scale across accuracy, physics-based, and probabilistic metrics. Furthermore,
+  we demonstrate that OmniCast can generate stable rollouts up to 100 years ahead. Code and model checkpoints
+  are available at https://github.com/tung-nd/omnicast.'
+significance: 6
+cited_by: 1
+score: 44
+highlight: false
+added: '2026-10-22'
+source: backfill

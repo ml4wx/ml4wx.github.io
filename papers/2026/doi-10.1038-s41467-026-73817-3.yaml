@@ -1,0 +1,59 @@
+id: doi-10.1038-s41467-026-73817-3
+title: Rethinking the use of deep learning methods for photovoltaic power forecasting
+authors:
+- Yujia Zhang
+- Yuzhou Zhang
+- Yuzhou Zhang
+- Rita Zhang
+- Zhixiang Dai
+- Rita Zhang
+date: '2026-06-12'
+year: 2026
+venue: Nature Communications
+venue_type: journal
+ids:
+  doi: 10.1038/s41467-026-73817-3
+  openalex: W7164552970
+links:
+  paper: https://doi.org/10.1038/s41467-026-73817-3
+orgs:
+- nvidia
+topic: applications-impacts
+topics:
+- post-processing
+type: model
+method:
+- transformer
+timescale:
+- short
+- medium
+spatial:
+- regional
+data:
+- nwp-analysis
+- satellite
+- other
+status: research
+summary: Cross-Unet Transformer fuses NWP, satellite and AI weather forecasts to predict PV power over
+  4 h to 7 days across five plants, outperforming ten deep learning baselines.
+abstract: 'Accurate photovoltaic power forecasting is critical for grid stability, but remains challenged
+  by weather uncertainties and difficulty integrating historical observations with forward-looking forecasts.
+  We re-evaluate existing architectural choices in deep-learning models for time-series forecasting and
+  demonstrate the importance of full encoder-decoder architectures and channel dependence modeling when
+  both weather forecasts and historical data are available. Based on this insight, we propose Cross-Unet,
+  a Transformer-based architecture featuring multi-scale temporal encoding, correlation-aware channel
+  attention, and hierarchical cross-attention decoding to fuse historical generation data with weather
+  forecasts. Evaluated on open-source datasets from four utility-scale plants in northern China and one
+  aggregated plant in central Australia, using three types of forward-looking inputs: numerical weather
+  prediction, satellite-derived irradiance, and AI-based weather model forecasts. Across the majority
+  of evaluated configurations spanning five photovoltaic power stations, five forecasting horizons (4
+  hours to 7 days), and three forecast sources, Cross-Unet outperforms ten deep learning baselines and
+  traditional operational benchmarks. By integrating advanced forecasting systems, such as modern AI weather
+  models, into an end-to-end forecasting pipeline, Cross-Unet enables operational 15-minute-resolution
+  predictions over 4-hour to 7-day horizons, supporting grid scheduling and energy trading.'
+significance: 4
+cited_by: 1
+score: 71
+highlight: false
+added: '2026-10-22'
+source: backfill

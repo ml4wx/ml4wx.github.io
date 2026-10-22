@@ -1,0 +1,68 @@
+id: doi-10.1016-j.rse.2025.115138
+title: Annotation-free cloud masking for PlanetScope images in the Arctic via cross-platform ability transfer
+  using deep learning and foundation models
+authors:
+- Zhili Li
+- Yi-Qun Xie
+- Sergii Skakun
+- Xiao-Wei Jia
+- Geng-Chen Mai
+- William Lu
+- Matthew S. Tong
+- Zhi-Hao Wang
+date: '2026-03-01'
+year: 2026
+venue: Remote Sensing of Environment
+venue_type: journal
+ids:
+  doi: 10.1016/j.rse.2025.115138
+  openalex: W4417044351
+links:
+  paper: https://doi.org/10.1016/j.rse.2025.115138
+  pdf: https://doi.org/10.1016/j.rse.2025.115138
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+- transformer
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Annotation-free Arctic cloud masking for PlanetScope transfers Landsat-8 skill via a 45,000-pair
+  coincident dataset (Co-Clouds) and deep learning models, including foundation models.
+abstract: Cloud masking is an essential task for satellite-based Earth monitoring, and the quality of
+  cloud masks can directly impact the solutions of the downstream Earth monitoring tasks. While significant
+  progress has been made especially for data with desired bands (e.g., thermal bands in Landsat-8), the
+  masking quality on small satellites with higher resolution but fewer spectral bands is still unreliable
+  at high latitudes, where confusion with snow and ice makes the task significantly more challenging.
+  We propose a novel learning-enabled cross-platform ability transfer paradigm that offers a scalable
+  and effective solution to tackle this challenge through a case study using PlanetScope images in the
+  Arctic. A unique characteristic of the new paradigm is that it does not require manual annotations to
+  be collected for PlanetScope images, which is often the bottleneck and the most time-consuming part
+  of machine learning-based cloud masking, especially given the similarity between clouds and snow/ice.
+  To realize this, our approach first designs and creates a new training dataset, Co-Clouds, which contains
+  around 45,000 coincident pairs of PlanetScope and Landsat-8 image patches collected within a nearly
+  simultaneous temporal window. This coincident dataset offers a way to generate large volumes of training
+  data and builds a bridge to transfer Landsat-8’s stronger cloud masking skills in the Arctic to PlanetScope
+  images via data-driven learning. We also show the feasibility of the ability transfer from spectral
+  signatures (e.g., thermal bands) to spatial signatures (e.g., textures). Using our Co-Clouds dataset,
+  we train several deep learning models including both regular-size deep learning models and large foundation
+  models. To validate the quality of the masks, we further create a manually labeled cloud mask dataset
+  for PlanetScope images in the Arctic. Both the quantitative and qualitative results show significant
+  improvements over the current operational cloud masks by PlanetScope. For example, the large foundation
+  models such as SegFormer achieve approximately 20 % higher overall accuracy and 28 % higher producer’s
+  accuracy than the operational cloud masks, while maintaining comparable or better user’s accuracy exceeding
+  90 %. The new approach is also very easy to implement and extend to other platforms, opening new opportunities
+  for broadcasting advanced skills from one platform to others. • We address Arctic cloud masking, where
+  clouds and snow/ice have high spectral similarity. • We develop Cross-platform Ability Transfer (CAT)
+  for PlanetScope with limited bands. • CAT transfers the ability from Landsat-8 to PlanetScope without
+  using manual annotations. • A Co-Clouds dataset of PlanetScope–Landsat-8 coincidental pairs was generated
+  for training. • CAT showed significant improvements via separate validations that were manually generated.
+significance: 3
+cited_by: 2
+score: 12
+highlight: false
+added: '2026-10-22'
+source: snowball

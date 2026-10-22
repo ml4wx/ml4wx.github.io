@@ -1,0 +1,52 @@
+id: doi-10.1029-2026jd046570
+title: Pseudo‐Radar Reflectivity by Applying U‐Net Models to Global Passive Microwave Brightness Temperatures
+authors:
+- Florian Morvais
+- Chuntao Liu
+date: '2026-05-06'
+year: 2026
+venue: Journal of Geophysical Research Atmospheres
+venue_type: journal
+ids:
+  doi: 10.1029/2026jd046570
+  openalex: W7160424491
+links:
+  paper: https://doi.org/10.1029/2026jd046570
+topic: observations-remote-sensing
+topics:
+- nowcasting
+type: model
+method:
+- cnn
+spatial:
+- global
+data:
+- satellite
+- radar
+status: research
+summary: U-Net ensembles infer pseudo-radar reflectivity profiles from passive microwave brightness temperatures,
+  reproducing echo tops within 1 km for over 50% of cases.
+abstract: 'Abstract Spaceborne radar systems such as the Global Precipitation Measurement Mission (GPM)''s
+  core satellite Dual‐frequency Precipitation Radar (DPR) provide global insight into precipitation structure,
+  storm morphology, and hydrological cycles. However, their limited spatial and temporal sampling and
+  high cost constrain their ability to continuously monitor precipitation globally. This study explores
+  the use of Convolutional Neural Networks (CNNs) to generate pseudo‐radar reflectivity profiles from
+  Passive Microwave (PMW) Brightness Temperatures (Tbs) alone, aiming to fill gaps in spaceborne radar
+  observations. Collocated GPM Microwave Imager (GMI) and DPR data sets from 2020 to 2021 are used to
+  train and evaluate models with a U‐Net architecture. Two strategies are investigated: a Full Frequencies
+  (FF) ensemble using all 13 GMI channels (10–183 GHz), and a High Frequencies (HF) ensemble restricted
+  to 6 channels ≥89 GHz, reflecting configurations of radiometers on CubeSats. Results show that CNN models
+  successfully reproduce large‐scale precipitation occurrence and echo top distributions, with over 50%
+  of echo tops estimated within 1 km of DPR observations. The FF ensemble outperforms HF for warm rain
+  and shallow systems due to the sensitivity to liquid water added by low‐frequency channels, whereas
+  HF shows comparable skill at higher altitudes dominated by ice‐phase hydrometeors. Both models systematically
+  underestimate reflectivity, particularly at higher values (e.g., >40 dBZ) and altitudes, highlighting
+  challenges in capturing extreme events. The findings demonstrate the potential of AI‐driven pseudo‐radar
+  products from abundant PMW observations to complement spaceborne radar measurements, with implications
+  for future precipitation monitoring and nowcasting capabilities from PMW sensors on CubeSats.'
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

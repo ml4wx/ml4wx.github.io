@@ -1,0 +1,59 @@
+id: doi-10.3390-atmos15020235
+title: A Convolutional Neural Network and Attention-Based Retrieval of Temperature Profile for a Satellite
+  Hyperspectral Microwave Sensor
+authors:
+- Xiangyang Tan
+- Kaixue Ma
+- Fangli Dou
+date: '2024-02-17'
+year: 2024
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos15020235
+  openalex: W4391926920
+links:
+  paper: https://doi.org/10.3390/atmos15020235
+  pdf: https://www.mdpi.com/2073-4433/15/2/235/pdf
+orgs:
+- cma
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+data:
+- satellite
+- other
+status: research
+summary: CNN with local attention retrieves temperature profiles from simulated hyperspectral microwave
+  brightness temperatures, reaching 1.46 K RMSE.
+abstract: As numerical weather forecasting advances, there is a growing demand for higher-quality atmospheric
+  data. Hyperspectral instruments can capture more atmospheric information and increase vertical resolution,
+  but there has been limited research into retrieval algorithms for obtaining hyperspectral microwaves
+  in the future. This study proposes an atmospheric temperature profile detection algorithm based on Convolutional
+  Neural Networks (CNN) and Local Attention Mechanisms for local feature extraction, applied to hyperspectral
+  microwave sensors. The study utilizes the method of information entropy to extract more effective channels
+  in the vicinities of 60 GHz, 118 GHz, and 425 GHz. The algorithm uses the brightness temperature as
+  the input of the network. The algorithm addresses common issues encountered in conventional networks,
+  such as overfitting, gradient explosion, and gradient vanishing. Additionally, this method isolates
+  the three oxygen-sensitive frequency bands for modularized local feature extraction training, thereby
+  avoiding abrupt changes in brightness temperature between adjacent frequency bands. More importantly,
+  the algorithm considers the correlation between multiple channels and information redundancy, focusing
+  on variations in local information. This enhances the effectiveness of hyperspectral microwave channel
+  information extraction. We simulated the brightness temperatures of the selected channels through ARTS
+  and divided them into training, validation, and test sets. The retrieval capability of the proposed
+  method is validated on a test dataset, achieving a root mean square error of 1.46 K and a mean absolute
+  error of 1.4 K for temperature profile. Detailed comparisons are also made between this method and other
+  commonly used networks for atmospheric retrieval. The results demonstrate that the proposed method significantly
+  improves the accuracy of temperature profile retrieval, particularly in capturing fine details, and
+  is more adaptable to complex environments. The model also exhibits scalability, extending from one-dimensional
+  (pressure level) to three-dimensional space. The error for each pressure level is controlled within
+  0.7 K and the average error is within 0.4 K, demonstrating effectiveness across different scales with
+  impressive results. The computational efficiency and accuracy have both been improved when handling
+  a large amount of radiation data.
+significance: 3
+cited_by: 6
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

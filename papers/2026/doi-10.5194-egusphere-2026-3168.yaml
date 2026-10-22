@@ -1,0 +1,50 @@
+id: doi-10.5194-egusphere-2026-3168
+title: A Hardware-Aware Deep Learning Framework for Wind Retrieval from Raw Doppler Spectra of Radar Wind
+  Profilers
+authors:
+- Kyung Hun Lee
+- Rackhun Son
+- Byung Hyuk Kwon
+date: '2026-08-25'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.5194/egusphere-2026-3168
+  openalex: W7204165721
+links:
+  paper: https://doi.org/10.5194/egusphere-2026-3168
+  pdf: https://egusphere.copernicus.org/preprints/2026/egusphere-2026-3168/egusphere-2026-3168.pdf
+topic: observations-remote-sensing
+type: model
+method:
+- other
+spatial:
+- local
+data:
+- radar
+- stations
+status: research
+summary: End-to-end deep learning retrieves wind vectors directly from raw Doppler spectra of radar wind
+  profilers, improving data availability across 2022–2024 tests against radiosondes.
+abstract: Abstract. Radar wind profilers (RWPs) traditionally rely on heuristic statistical procedures
+  for signal processing and quality control, often suffering from inherent trade-offs between data availability
+  and retrieval reliability. To address these limitations, this study presents an end-to-end deep learning
+  framework that retrieves wind vectors directly from raw Doppler spectra. Validated against a three-year
+  (2022–2024) dataset of raw spectra from 437.5-MHz and 1290-MHz profiler systems and collocated radiosonde
+  observations, the proposed framework demonstrates robust performance, particularly when trained on the
+  full spectral continuum without filtering ambiguous samples. Notably, we found that hybridizing deep
+  learning with conventional post-processing is highly contingent upon hardware-specific error characteristics;
+  it effectively mitigated transient outliers in the 1290-MHz systems but provided negligible benefits
+  for the range-smeared, vertically coherent artifacts dominating the 437.5-MHz systems. Furthermore,
+  the framework reasonably reproduced seasonal, diurnal, and vertical atmospheric structures without the
+  excessive smoothing typical of conventional statistical approaches. Although constrained by a slight
+  underestimation of extreme wind speeds due to the regression-to-the-mean effect inherent in mean-squared-error
+  optimization, the model notably enhanced operational data availability and integrity, demonstrating
+  the feasibility of hardware-aware deep learning as a viable alternative or complement to conventional
+  RWP processing pipelines.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

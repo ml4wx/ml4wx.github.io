@@ -1,0 +1,54 @@
+id: arxiv-2606.13148
+title: 'TerraBench: Can Agents Reason Over Heterogeneous Earth-System Data?'
+authors:
+- Dat Tien Nguyen
+- Thao Nguyen
+- Fadillah Adamsyah Maani
+- Huy M. Le
+- Muhammad Umer Sheikh
+- Numan Saeed
+- Muhammad Haris Khan
+- Salman Khan
+date: '2026-06-11'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.13148'
+  openalex: W7164571725
+links:
+  paper: https://arxiv.org/abs/2606.13148
+  pdf: https://arxiv.org/pdf/2606.13148
+topic: llms-agents
+topics:
+- benchmarks-data-eval
+type: benchmark
+method:
+- llm
+spatial:
+- global
+data:
+- satellite
+- other
+status: research
+summary: 'TerraBench: a 403-task benchmark for LLM agents reasoning over Earth-system data, combining
+  imagery, gridded climate data and simulators with tool-use metrics.'
+abstract: Climate and environmental decision-making increasingly requires reasoning across heterogeneous
+  inputs, including gridded physical data, satellite imagery, geospatial context, and simulator outputs.
+  Weather and climate foundation models can forecast well, but do not reason interactively in language,
+  while large language models (LLMs) reason in language but cannot operate directly on high-dimensional
+  Earth-system data. As a result, real scientific workflows in Earth-science remain underserved. We introduce
+  TerraBench, a benchmark for grounded Earth-science reasoning, built on TerraAgent, a ReAct-style executable
+  framework that interleaves reasoning, tool calls, and observations to couple LLM planning with scientific
+  tools for environmental retrieval, geospatial processing, simulation, and artifact-backed computation.
+  TerraBench unifies analysis of Earth observation imagery, gridded data, GIS reasoning and simulation
+  in a single executable interface, whereas prior benchmarks isolate these capabilities into narrow individual
+  tasks. It is also the first in this space to pair process-level tool-use metrics with tolerance-aware
+  numeric scoring. The benchmark comprises 403 extensive agentic tasks across three tracks (Fundamentals,
+  Simulator-Grounded, and Document-Grounded Verification) and eight application domains with 24,500 verified
+  execution steps. These results indicate that reliable Earth-science agents must go beyond tool access
+  to coordinate heterogeneous workflows, parameterize tools precisely, and preserve artifact provenance.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

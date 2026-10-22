@@ -1,0 +1,61 @@
+id: doi-10.1145-3833907.3833922
+title: 'PMFormer: Physics-guided Multi-scale Transformer for Global Weather Forecasting'
+authors:
+- Kai Geng
+- Chen Hui
+- Xian-Zhu Liu
+- Jun-Wei Wu
+- Chen-Yu Song
+- Hai-Qi Zhu
+- Ya-Chun Mi
+- Tong Zhang
+- Feng Jiang
+date: '2026-06-24'
+year: 2026
+venue: Proceedings of the 2026 10th International Conference on High Performance Compilation, Computing
+  and Communications
+venue_type: other
+ids:
+  doi: 10.1145/3833907.3833922
+  openalex: W7221090755
+links:
+  paper: https://doi.org/10.1145/3833907.3833922
+  pdf: https://doi.org/10.1145/3833907.3833922
+orgs:
+- nuist
+topic: global-medium-range
+type: model
+method:
+- transformer
+- physics-constrained
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: PMFormer adds multi-scale patch embedding and great-circle and pressure-level attention biases
+  to a U-Transformer, reporting state-of-the-art ERA5 forecasts.
+abstract: 'Accurate global weather forecasting is challenged by the computational inefficiency of Transformer-based
+  models in handling high-resolution, multivariate data. Moreover, their prevalent approach of treating
+  the atmosphere as a generic 3D grid neglects fundamental geographic and thermodynamic constraints, which
+  can lead to predictions that are physically inconsistent. To address these issues, we propose a Physics-guided
+  Multi-scale Transformer (PMFormer) for global multi-variable weather forecasting. Our framework introduces
+  two key architectural innovations on a U-Transformer backbone: (1) A multi-scale feature extraction
+  and fusion pipeline that leverages parallel patch-embedding branches with different granularities to
+  capture atmospheric processes across scales, coupled with a lightweight attention-based fusion module
+  that dynamically integrates these heterogeneous features. (2) A physics-guided window attention mechanism
+  that explicitly encodes two fundamental atmospheric priors—the great-circle distance over the sphere
+  and the pressure-level difference, as learnable biases within the attention calculation. This ensures
+  spatial reasoning respects the geometry of the Earth and its vertical stratification. Extensive experiments
+  on the ERA5 reanalysis dataset demonstrate that PMFormer achieves state-of-the-art performance in global
+  multi-variable weather forecasting, outperforming conventional data-driven baselines in both accuracy
+  and physical consistency. Our work provides a promising framework for building more reliable and physically-grounded
+  weather forecasting systems through structured domain knowledge integration.'
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-10-22'
+source: snowball

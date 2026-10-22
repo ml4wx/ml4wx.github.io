@@ -1,0 +1,57 @@
+id: doi-10.3390-rs17183200
+title: 'TransMambaCNN: A Spatiotemporal Transformer Network Fusing State-Space Models and CNNs for Short-Term
+  Precipitation Forecasting'
+authors:
+- Kai Zhang
+- Guojing Zhang
+- Xiaoying Wang
+date: '2025-09-16'
+year: 2025
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs17183200
+  openalex: W4414299600
+links:
+  paper: https://doi.org/10.3390/rs17183200
+  pdf: https://www.mdpi.com/2072-4292/17/18/3200/pdf?version=1758096712
+topic: nowcasting
+topics:
+- extremes-hazards
+type: model
+method:
+- transformer
+- cnn
+- rnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- satellite
+- radar
+- other
+status: research
+summary: TransMambaCNN hybrid state-space and CNN model improves threat score over PredRNN by 47.7% at
+  50 mm for southeast China precipitation.
+abstract: 'Deep learning for precipitation forecasting remains constrained by complex meteorological factors
+  affecting accuracy. To address this issue, this paper proposes TransMambaCNN, which is a spatiotemporal
+  transformer network fusing state-space models and CNNs for short-term precipitation forecasting. The
+  core of the model employs a Convolutional State-Space Module (C-SSM), which efficiently extracts spatiotemporal
+  features from multi-source meteorological variables by replacing the self-attention mechanism in the
+  Vision Transformer (ViT) with an Attentive State-Space Module (ASSM) and augmenting its feature extraction
+  capacity with integrated depthwise convolution. Its dual-branch architecture consists of a global branch,
+  where C-SSM captures long-range dependencies and global spatiotemporal patterns, and a local branch,
+  which leverages multi-scale convolutions based on SimVP’s Inception structure to extract fine-grained
+  local features. The deep fusion of these dual branches significantly enhances spatiotemporal feature
+  representation.Experiments demonstrate that in southeastern China and adjacent marine areas (period
+  of high precipitation: April–September), TransMambaCNN achieves a 13.38% and 47.67% improvement in Threat
+  Score (TS) over PredRNN at thresholds of ≥25 mm and ≥50 mm, respectively. In the Qinghai Sanjiangyuan
+  region of western China (a precipitation-scarce area), TransMambaCNN’s TS score surpasses SimVP by 11.86
+  times at the ≥25 mm threshold.'
+significance: 2
+cited_by: 3
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

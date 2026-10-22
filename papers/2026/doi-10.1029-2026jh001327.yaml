@@ -1,0 +1,53 @@
+id: doi-10.1029-2026jh001327
+title: Spatially Aware Calibration of NWP and AI Precipitation Forecasts
+authors:
+- Belinda Trotta
+- Esteban Abellán
+date: '2026-07-11'
+year: 2026
+venue: Journal of Geophysical Research Machine Learning and Computation
+venue_type: journal
+ids:
+  doi: 10.1029/2026jh001327
+  openalex: W7168027057
+links:
+  paper: https://doi.org/10.1029/2026jh001327
+orgs:
+- bom-australia
+topic: post-processing
+topics:
+- probabilistic-ensembles
+type: evaluation
+method:
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Shows CNN spatial calibration helps physics-based HRES precipitation but adds little for ECMWF
+  AIFS, which already models spatial uncertainty well.
+abstract: 'Abstract Rainfall is often highly localized and its location is difficult to predict exactly
+  with a numerical weather prediction (NWP) model. Previous research has shown that this problem can be
+  mitigated by spatially aware calibration methods which incorporate forecast information from neighboring
+  grid cells. In this work we investigate whether artificial intelligence (AI) weather models similarly
+  benefit from spatially aware calibration. We evaluate pointwise and spatially aware calibration approaches
+  for the physics‐based HRES and artificial intelligence AIFS models from ECMWF. For each forecast, we
+  test 3 types of neural network calibration approach: a simple pointwise method using a fully connected
+  architecture, a convolutional neural network (CNN) using a small neighborhood of each point, and an
+  intermediate approach, which flattens the points of the neighborhood into a single dimension and feeds
+  it into a fully connected architecture. We find that for HRES the neighborhood approaches generally
+  outperform the pointwise approach on site metrics, with the CNN being the best model. However for AIFS
+  all methods perform similarly. This suggests that spatial uncertainty is already modeled adequately
+  by the AI model, so simpler calibration approaches suffice. Additionally, despite its lower resolution,
+  AIFS is generally more accurate than HRES: whether comparing the raw forecasts, or the calibrated outputs
+  of the two models, AIFS scores better on key metrics.'
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

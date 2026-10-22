@@ -1,0 +1,50 @@
+id: doi-10.5281-zenodo.19279334
+title: 'A Solar-Powered IoT Weather Monitoring Network with Big Data Architecture and Deep Learning Hyperlocal
+  Forecasting: Design, Deployment, and Validation in Vietnam'
+authors:
+- Đỗ Gia Bảo
+- Nguyễn Tài Tiệp
+date: '2026-03-28'
+year: 2026
+venue: Zenodo (CERN European Organization for Nuclear Research)
+venue_type: preprint
+ids:
+  doi: 10.5281/zenodo.19279334
+  openalex: W7142305517
+links:
+  paper: https://doi.org/10.5281/zenodo.19279334
+topic: local-forecasting
+topics:
+- infra-software
+type: application
+method:
+- transformer
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+- era5
+status: pre-operational
+summary: A solar-powered IoT station network in Vietnam with a Temporal Fusion Transformer reaches 0.81°C
+  24-hour 2m temperature RMSE, beating the operational NWP baseline by 18%.
+abstract: Abstract Vietnam ranks among the most climate-vulnerable countries in Southeast Asia, yet its
+  operational weather monitoring network covers only approximately one station per 800 km², far below
+  the World Meteorological Organization's recommended density. This paper presents the design, implementation,
+  and field validation of a fully solar-powered IoT weather station network integrated with a Lambda/Kappa
+  Big Data architecture and a Temporal Fusion Transformer (TFT) deep learning model for hyperlocal, multi-horizon
+  weather forecasting. Fifty prototype stations were deployed across three climatically distinct provinces
+  — An Giang (Mekong Delta flooding), Quang Nam (Central Vietnam typhoons/flash floods), and Dak Lak (Central
+  Highlands drought/landslides) — collecting eight meteorological variables at six-minute intervals over
+  twelve months. A Federated Anomaly Detection framework with differential privacy guarantees (ε = 2.0,
+  δ = 10⁻⁵) identifies five classes of sensor faults without transmitting raw data. The TFT model, pre-trained
+  on 23 years of ERA5 reanalysis and fine-tuned on local observations, achieves a 2-metre temperature
+  RMSE of 0.81°C at 24-hour lead time, surpassing Kriging interpolation by 31% and the operational NWP
+  baseline by 18%. System uptime reaches 99.3% over the evaluation period. All data and model weights
+  are released as open datasets (CC BY 4.0) to support future research.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

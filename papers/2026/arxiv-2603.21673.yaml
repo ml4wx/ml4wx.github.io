@@ -1,0 +1,47 @@
+id: arxiv-2603.21673
+title: 'Optimizing Multi-Agent Weather Captioning via Text Gradient Descent: A Training-Free Approach
+  with Consensus-Aware Gradient Fusion'
+authors:
+- Shixu Liu
+date: '2026-03-23'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2603.21673'
+  openalex: W7140191443
+links:
+  paper: https://arxiv.org/abs/2603.21673
+  pdf: https://arxiv.org/pdf/2603.21673
+topic: llms-agents
+topics:
+- applications-impacts
+type: model
+method:
+- llm
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Training-free multi-agent LLM framework using text gradient descent generates interpretable captions
+  from weather time series, outperforming multi-agent baselines on expert and LLM-based evaluation.
+abstract: Generating interpretable natural language captions from weather time series data remains a significant
+  challenge at the intersection of meteorological science and natural language processing. While recent
+  advances in Large Language Models (LLMs) have demonstrated remarkable capabilities in time series forecasting
+  and analysis, existing approaches either produce numerical predictions without human-accessible explanations
+  or generate generic descriptions lacking domain-specific depth. We introduce WeatherTGD, a training-free
+  multi-agent framework that reinterprets collaborative caption refinement through the lens of Text Gradient
+  Descent (TGD). Our system deploys three specialized LLM agents including a Statistical Analyst, a Physics
+  Interpreter, and a Meteorology Expert that generate domain-specific textual gradients from weather time
+  series observations. These gradients are aggregated through a novel Consensus-Aware Gradient Fusion
+  mechanism that extracts common signals while preserving unique domain perspectives. The fused gradients
+  then guide an iterative refinement process analogous to gradient descent, where each LLM-generated feedback
+  signal updates the caption toward an optimal solution. Experiments on real-world meteorological datasets
+  demonstrate that WeatherTGD achieves significant improvements in both LLM-based evaluation and human
+  expert evaluation, substantially outperforming existing multi-agent baselines while maintaining computational
+  efficiency through parallel agent execution.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

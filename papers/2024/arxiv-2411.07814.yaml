@@ -1,0 +1,67 @@
+id: arxiv-2411.07814
+title: Community Research Earth Digital Intelligence Twin (CREDIT)
+authors:
+- John Schreck
+- Yingkai Sha
+- William Chapman
+- Dhamma Kimpara
+- Judith Berner
+- Seth McGinnis
+- Arnold Kazadi
+- Negin Sobhani
+- Ben Kirk
+- David John Gagne
+date: '2024-11-09'
+year: 2024
+venue: npj Climate and Atmospheric Science, 8(1), p.239 (2025)
+venue_type: journal
+ids:
+  arxiv: '2411.07814'
+  doi: 10.1038/s41612-025-01125-6
+  openalex: W4404406377
+links:
+  paper: https://arxiv.org/abs/2411.07814
+  pdf: https://arxiv.org/pdf/2411.07814
+orgs:
+- ncar
+topic: global-medium-range
+topics:
+- infra-software
+type: model
+method:
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: pre-operational
+summary: CREDIT is an open AI weather framework; its WXFormer and FUXI models beat IFS HRES on 10-day
+  global forecasts trained on ERA5.
+abstract: Recent advancements in artificial intelligence (AI) for numerical weather prediction (NWP) have
+  significantly transformed atmospheric modeling. AI NWP models outperform traditional physics-based systems,
+  such as the Integrated Forecast System (IFS), across several global metrics while requiring fewer computational
+  resources. However, existing AI NWP models face limitations related to training datasets and timestep
+  choices, often resulting in artifacts that reduce model performance. To address these challenges, we
+  introduce the Community Research Earth Digital Intelligence Twin (CREDIT) framework, developed at NSF
+  NCAR. CREDIT provides a flexible, scalable, and user-friendly platform for training and deploying AI-based
+  atmospheric models on high-performance computing systems. It offers an end-to-end pipeline for data
+  preprocessing, model training, and evaluation, democratizing access to advanced AI NWP capabilities.
+  We demonstrate CREDIT's potential through WXFormer, a novel deterministic vision transformer designed
+  to predict atmospheric states autoregressively, addressing common AI NWP issues like compounding error
+  growth with techniques such as spectral normalization, padding, and multi-step training. Additionally,
+  to illustrate CREDIT's flexibility and state-of-the-art model comparisons, we train the FUXI architecture
+  within this framework. Our findings show that both FUXI and WXFormer, trained on six-hourly ERA5 hybrid
+  sigma-pressure levels, generally outperform IFS HRES in 10-day forecasts, offering potential improvements
+  in efficiency and forecast accuracy. CREDIT's modular design enables researchers to explore various
+  models, datasets, and training configurations, fostering innovation within the scientific community.
+significance: 6
+cited_by: 6
+score: 59
+highlight: true
+highlight_reason: NCAR's open CREDIT framework for training AI NWP models, with WXFormer and FuXi on hybrid
+  levels; valuable community infrastructure.
+added: '2026-10-22'
+source: backfill

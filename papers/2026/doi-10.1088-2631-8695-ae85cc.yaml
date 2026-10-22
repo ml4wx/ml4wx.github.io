@@ -1,0 +1,59 @@
+id: doi-10.1088-2631-8695-ae85cc
+title: Day-ahead wind power forecasting model based on numerical weather prediction correction and supervised
+  contrastive learning-enhanced Transformer
+authors:
+- Feng Ren
+- Zhenrongyue Jiang
+date: '2026-07-01'
+year: 2026
+venue: Engineering Research Express
+venue_type: journal
+ids:
+  doi: 10.1088/2631-8695/ae85cc
+  openalex: W7167018389
+links:
+  paper: https://doi.org/10.1088/2631-8695/ae85cc
+  pdf: https://iopscience.iop.org/article/10.1088/2631-8695/ae85cc/pdf
+topic: applications-impacts
+topics:
+- post-processing
+type: model
+method:
+- transformer
+- rnn
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: research
+summary: An LSTM corrects NWP wind fields before a supervised-contrastive Transformer predicts day-ahead
+  wind power, lowering nRMSE 18-36% versus baselines.
+abstract: Abstract As wind power increases, its randomness and volatility pose challenges to grid operation,
+  making day-ahead wind power forecasting (WPF) crucial for grid dispatching and wind power integration.
+  However, numerical weather prediction (NWP) data contain biases, and the correction process is independent
+  of the prediction model; additionally, models trained solely with regression losses struggle to distinguish
+  different wind conditions at the feature level. To address these challenges, this paper proposes a day-ahead
+  WPF model based on long short-term memory (LSTM) network correction and supervised contrastive (SupCon)
+  learning-enhanced Transformer (LCCT). The model uses a two-layer LSTM as the NWP correction module to
+  correct wind speed and direction errors from multi-dimensional NWP features. It then supplies only the
+  corrected variables to the Transformer decoder, improving input quality and reducing redundant information.
+  Furthermore, SupCon learning is extended from classification to regression, defining positive and negative
+  sample pairs based on the similarity of power labels, enhancing the discriminative capability of the
+  encoder’s feature space. These modules are jointly optimized end-to-end through a multi-task loss function,
+  enabling mutual reinforcement between correction and prediction. Experiments on a real wind farm dataset
+  in China show that LCCT achieves lower forecasting errors than iTransformer, PatchTST, TimeXer, and
+  DLinear, with nMAE reductions of 10.08%–45.63% and nRMSE reductions of 18.04%–35.66%. The ablation results
+  indicate that both the LSTM-based NWP correction and SupCon contribute to the forecast, and that joint
+  end-to-end training is more effective than separating weather correction from power prediction. The
+  sensitivity analysis shows that LCCT remains stable near the adopted hyperparameter setting. On a second
+  wind farm dataset, LCCT again obtains the best performance among the tested models, achieving nMAE of
+  7.76%, nRMSE of 12.99%, and R 2 of 0.7433.
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,50 @@
+id: arxiv-2512.03081
+title: Calibrating Geophysical Predictions under Constrained Probabilistic Distributions
+authors:
+- Zhewen Hou
+- Jiajin Sun
+- Subashree Venkatasubramanian
+- Peter Jin
+- Shuolin Li
+- Tian Zheng
+date: '2025-11-28'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2512.03081'
+  openalex: W4417024771
+links:
+  paper: https://arxiv.org/abs/2512.03081
+  pdf: https://arxiv.org/pdf/2512.03081
+topic: post-processing
+type: model
+method:
+- physics-constrained
+spatial:
+- global
+data:
+- other
+status: research
+summary: Kernelized Stein discrepancy calibration pushes sparse-data ML predictions toward known marginal
+  distributions, tested on CO2 fluxes and quasi-geostrophic flow.
+abstract: Machine learning (ML) has shown significant promise in studying complex geophysical dynamical
+  systems, including turbulence and climate processes. Such systems often display sensitive dependence
+  on initial conditions, reflected in positive Lyapunov exponents, where even small perturbations in short-term
+  forecasts can lead to large deviations in long-term outcomes. Thus, meaningful inference requires not
+  only accurate short-term predictions, but also consistency with the system's long-term attractor that
+  is captured by the marginal distribution of state variables. Existing approaches attempt to address
+  this challenge by incorporating spatial and temporal dependence, but these strategies become impractical
+  when data are extremely sparse. In this work, we show that prior knowledge of marginal distributions
+  offers valuable complementary information to short-term observations, motivating a distribution-informed
+  learning framework. We introduce a calibration algorithm based on normalization and the Kernelized Stein
+  Discrepancy (KSD) to enhance ML predictions. The method here employs KSD within a reproducing kernel
+  Hilbert space to calibrate model outputs, improving their fidelity to known physical distributions.
+  This not only sharpens pointwise predictions but also enforces consistency with non-local statistical
+  structures rooted in physical principles. Through synthetic experiments-spanning offline climatological
+  CO2 fluxes and online quasi-geostrophic flow simulations-we demonstrate the robustness and broad utility
+  of the proposed framework.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

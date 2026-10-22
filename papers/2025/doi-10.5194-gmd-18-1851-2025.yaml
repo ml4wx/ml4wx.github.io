@@ -1,0 +1,64 @@
+id: doi-10.5194-gmd-18-1851-2025
+title: Cell-tracking-based framework for assessing nowcasting model skill in reproducing growth and decay
+  of convective rainfall
+authors:
+- Jenna Ritvanen
+- Seppo Pulkkinen
+- Dmitri N. Moisseev
+- Daniele Nerini
+date: '2025-03-18'
+year: 2025
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-18-1851-2025
+  openalex: W4408585325
+links:
+  paper: https://doi.org/10.5194/gmd-18-1851-2025
+orgs:
+- meteoswiss
+topic: benchmarks-data-eval
+topics:
+- nowcasting
+type: evaluation
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Cell-tracking verification framework exposes how ML rainfall nowcasts misreproduce convective
+  cell growth and decay, which averaged verification metrics hide.
+abstract: 'Abstract. The rapid temporal evolution of convective rainfall poses a challenge for rainfall
+  nowcasting models. With the growing potential of machine learning models for precipitation nowcasting
+  to produce realistic-looking nowcasts for long lead times, it is important to investigate whether the
+  nowcasts also produce realistic development for convective rainfall. Common verification metrics traditionally
+  used to validate nowcasting models are often dominated by large-scale stratiform rainfall, and averaging
+  the metrics across entire precipitation fields obscures how accurately the models replicate individual
+  convective cells, which makes it difficult to distinguish the model skill for the growth and decay of
+  convective rainfall. In this study, we present a convective cell tracking-based framework to investigate
+  how accurately nowcasting models reproduce the development of convective rainfall. The framework consists
+  of first identifying and tracking the convective cells in the input observation rainfall fields, and
+  then identifying and tracking the cells separately in the target observations and the nowcast rainfall
+  fields by continuing the cell tracks identified in the observations. Features describing the cells and
+  cell tracks, such as the cell volume rain rate and area, are then extracted. In addition to the errors
+  in these feature values, the models’ skill in reproducing the existence of convective cells is estimated
+  by calculating several contingency-table metrics, such as the Critical Success Index. The results allow
+  the analysis of how accurately the models reproduce the growth and decay of convective rainfall and
+  quantify the differences between the models, for example, due to differences in how the models smooth
+  the nowcasts, i.e., blurring. The framework also allows differentiation of the results based on the
+  initial conditions of the cell tracks, demonstrated here by separating the tracks into decaying or growing
+  cell tracks based on the cell status when the nowcast is created. The framework is demonstrated using
+  four open-source advection-based models: the advection nowcast, S-PROG, and LINDA implemented in the
+  pysteps library, and L-CNN, with data from the Swiss radar network. The results indicate that the L-CNN
+  model reproduced the existence of convective cells best among the models and had smaller errors in the
+  cell volume rain rate than LINDA and S-PROG. LINDA had the smallest underestimation in the cell mean
+  rain rate, whereas S-PROG significantly overestimated the cell volume rain rate and area because of
+  blurring.'
+significance: 5
+cited_by: 5
+score: 55
+highlight: false
+added: '2026-10-22'
+source: backfill

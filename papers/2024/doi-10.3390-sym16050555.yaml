@@ -1,0 +1,57 @@
+id: doi-10.3390-sym16050555
+title: A Quantitative Precipitation Estimation Method Based on 3D Radar Reflectivity Inputs
+authors:
+- Yanqin Wen
+- Jun Zhang
+- Di Wang
+- Xianming Peng
+- Ping Wang
+date: '2024-05-03'
+year: 2024
+venue: Symmetry
+venue_type: journal
+ids:
+  doi: 10.3390/sym16050555
+  openalex: W4396624240
+links:
+  paper: https://doi.org/10.3390/sym16050555
+topic: observations-remote-sensing
+topics:
+- nowcasting
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: ConvLSTM-UNet with attention on 3D radar reflectivity improves quantitative precipitation estimation
+  over Z-R, with CSI of 0.677 for precipitation above 1 mm.
+abstract: 'Quantitative precipitation estimation (QPE) by radar observation data is a crucial aspect of
+  meteorological forecasting operations. Accurate QPE plays a significant role in mitigating the impact
+  of severe convective weather. Traditional QPE methods mainly employ an exponential Z–R relationship
+  to map the radar reflectivity to precipitation intensity on a point-to-point basis. However, this isolated
+  point-to-point transformation lacks an effective representation of convective systems. Deep learning-based
+  methods can learn the evolution patterns of convective systems from rich historical data. However, current
+  models often rely on 2 km-height CAPPI images, which struggle to capture the complex vertical motions
+  within convective systems. To address this, we propose a novel QPE model: combining the classic extrapolation
+  model ConvLSTM with Unet for an encoder-decoder module assembly. Meanwhile, we utilize three-dimensional
+  radar echo images as inputs and introduce the convolutional block attention module (CBAM) to guide the
+  model to focus on individual cells most likely to trigger intense precipitation, which is symmetrically
+  built on both channel and spatial attention modules. We also employ asymmetry in training using weighted
+  mean squared error to make the model concentrate more on heavy precipitation events which are prone
+  to severe disasters. We conduct experiments using radar data from North China and Eastern China. For
+  precipitation above 1 mm, the proposed model achieves 0.6769 and 0.7910 for CSI and HSS, respectively.
+  The results indicate that compared to other methods, our model significantly enhances precipitation
+  prediction accuracy, with a more pronounced improvement in forecasting accuracy for heavy precipitation
+  events.'
+significance: 3
+cited_by: 4
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

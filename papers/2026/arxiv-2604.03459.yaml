@@ -1,0 +1,57 @@
+id: arxiv-2604.03459
+title: Physics-Constrained Adaptive Flow Matching for Climate Downscaling
+authors:
+- Kevin Debeire
+- Aytaç Paçal
+- Pierre Gentine
+- Luis Medrano-Navarro
+- Nils Thuerey
+- Veronika Eyring
+date: '2026-04-03'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2604.03459'
+  openalex: W7151543532
+links:
+  paper: https://arxiv.org/abs/2604.03459
+  pdf: https://arxiv.org/pdf/2604.03459
+topic: downscaling
+topics:
+- xai-uq-physics
+type: model
+method:
+- diffusion
+- physics-constrained
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+status: research
+summary: Physics-constrained flow-matching downscaling adds conservation constraints, halving precipitation
+  wet bias outside the training climate for 10x downscaling to 6.3 km.
+abstract: Regional climate information at kilometer scales is essential for assessing the impacts of climate
+  change, but generating it with global climate models is too expensive due to their high computational
+  costs. Machine learning models offer a fast alternative, yet they often violate basic physical laws
+  and degrade when applied to climates outside of their training distribution. We present Physics-Constrained
+  Adaptive Flow Matching (PC-AFM), a generative downscaling model that addresses both problems. Building
+  on the Adaptive Flow Matching (AFM) model of Fotiadis et al. (2025) as our baseline, we add soft conservation
+  constraints that keep the downscaled output consistent with the large-scale input for precipitation
+  and humidity, and use gradient surgery via the ConFIG algorithm to prevent these constraints from interfering
+  with the generative objective. We train the model on Central Europe climate data, evaluate it on a 10-time
+  downscaling task (63km to 6.3km) over six variables (near-surface temperature, precipitation, specific
+  humidity, surface pressure, and horizontal wind components) across a comprehensive set of metrics including
+  bias, ensemble skill scores, power spectra, and conservation error, and test the generalization on two
+  held-out climate regions. Within the training distribution, PC-AFM reduces conservation errors and improves
+  ensemble calibration while matching the baseline on standard skill metrics. Outside the training distribution,
+  where unconstrained models develop large systematic errors by extrapolating learned statistics, PC-AFM
+  halves precipitation wet bias, reduces conservation error and improves extreme-quantile accuracy, all
+  without any information about the target climate at inference time. These results indicate that physical
+  consistency is a practical requirement for deploying generative downscaling models in real-world applications.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

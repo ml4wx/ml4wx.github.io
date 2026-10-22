@@ -1,0 +1,75 @@
+id: doi-10.3390-app152212315
+title: Hybrid Physics–Machine Learning Framework for Forecasting Urban Air Circulation and Pollution in
+  Mountain–Valley Cities
+authors:
+- Lyazat Naizabayeva
+- Gulbakyt Sembina
+- Gulnara Tleuberdiyeva
+date: '2025-11-20'
+year: 2025
+venue: Applied Sciences
+venue_type: journal
+ids:
+  doi: 10.3390/app152212315
+  openalex: W4416407613
+links:
+  paper: https://doi.org/10.3390/app152212315
+topic: post-processing
+topics:
+- local-forecasting
+type: model
+method:
+- physics-constrained
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+- other
+status: research
+summary: Navier-Stokes surface-layer model with ML post-processing forecasts urban wind, temperature and
+  PM in Almaty's mountain-valley basin over 6-24 hours.
+abstract: 'Background: Almaty, located in a mountain–valley basin, frequently experiences stagnant conditions
+  that trap pollutants and cause sharp diurnal contrasts in air quality. Current forecasting systems either
+  offer detailed physical realism at high computational cost or yield statistically accurate but physically
+  inconsistent results. Urban air quality in mountain–valley cities is strongly shaped by thermal inversions
+  and weak nocturnal ventilation that trap pollutants close to the surface. We present a hybrid physics–machine-learning
+  framework that combines a Navier–Stokes surface-layer model with data-driven post-processing to produce
+  short-term forecasts of wind, temperature, and particulate matter while preserving physical consistency.
+  The approach captures diurnal ventilation patterns and the well-known negative linkage between near-surface
+  wind and particulate loadings during wintertime inversions. Compared with purely statistical baselines,
+  the hybrid system improves short-range forecast skill and maintains interpretability through physically
+  grounded diagnostics. Beyond Almaty, the workflow is transferable to other mountain–valley environments
+  and is directly actionable for early warning, traffic and heating-related emission management, and health-risk
+  communication. By uniting physically meaningful fields with lightweight Machine Learning correction,
+  the method offers a practical bridge between computational fluid dynamics and operational decision support
+  for cities facing recurrent stagnation episodes. Aim: Develop and verify a method for the diagnostics
+  and short-term forecasting of surface circulation and particle concentrations in Almaty (2024), ensuring
+  physical consistency of fields, increased forecast accuracy on 6–24 h horizons, and interpretability
+  of risk factors. Compared to purely statistical baselines (R2 ≈ 0.55 for PM forecasts), our hybrid framework
+  achieved a 16% gain in explained variance and reduced RMSE by 25%. This improvement was most evident
+  during winter inversion episodes. Methods: This study introduces a hybrid modeling framework that integrates
+  the Navier–Stokes equations with machine-learning algorithms to diagnose and forecast surface air circulation
+  and particulate matter concentrations. The approach ensures both physical consistency and improved predictive
+  accuracy for short-term horizons (6–24 h). The Navier–Stokes equations in the Boussinesq approximation,
+  the energy equation, and K-closure particulate matter transport were used. The numerical solution is
+  based on the projection method (convection—TVD/QUICK, pressure—Poisson equation). The ML module is gradient
+  boosting and decision trees for meteorological parameters, lags, and diagnostic quantities. The 2024
+  data are cleaned, normalized, and visualized. Results: The hybrid model reproduces the diurnal cycle
+  of ventilation and concentrations, especially during winter inversions. For 6 h: wind RMSE ≈ 1.2 m/s
+  (R2 ≈ 0.71), temperature RMSE ≈ 1.8 °C (R2 ≈ 0.78), and particles RMSE ≈ 0.012 mg/m3 (R2 ≈ 0.64). Errors
+  are higher for 24 h. A negative relationship between wind and concentration was established: +1 m/s
+  reduces the median by 10–15% during winter nights. Conclusions: The approach can be generalized to other
+  mountain–valley cities beyond Almaty. Combining the physical model and ML correction improves short-term
+  predictive ability and maintains physical consistency. The method is applicable for air quality risk
+  assessment and decision support; further clarification of emissions and consideration of urban canyon
+  geometry are required. The results support early-warning systems, health risk communication, and urban
+  planning.'
+significance: 2
+cited_by: 3
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

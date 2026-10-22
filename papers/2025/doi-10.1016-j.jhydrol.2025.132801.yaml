@@ -1,0 +1,65 @@
+id: doi-10.1016-j.jhydrol.2025.132801
+title: 'From bias to accuracy: Transforming satellite precipitation data in arid regions with machine
+  learning and topographical insights'
+authors:
+- Faisal Baig
+- Luqman Ali
+- Muhammad Abrar Faiz
+- Haonan Chen
+- Mohsen M. Sherif
+date: '2025-02-02'
+year: 2025
+venue: Journal of Hydrology
+venue_type: journal
+ids:
+  doi: 10.1016/j.jhydrol.2025.132801
+  openalex: W4407071343
+links:
+  paper: https://doi.org/10.1016/j.jhydrol.2025.132801
+orgs:
+- colorado-state-university
+topic: observations-remote-sensing
+topics:
+- post-processing
+type: model
+method:
+- rnn
+spatial:
+- regional
+data:
+- satellite
+- stations
+- other
+status: research
+summary: LSTM with elevation and temperature covariates corrects CMORPH and IMERG satellite rainfall over
+  UAE mountains, improving NSE by about 45%.
+abstract: This paper presents a comprehensive approach to refine satellite precipitation estimates over
+  the mountainous regions of the United Arab Emirates (UAE) using Long Short-Term Memory (LSTM). The primary
+  aim is to address and correct biases in the CMORPH and IMERG satellite precipitation products by incorporating
+  elevation, minimum temperature, and distance to coast covariates. The study is relying upon the acknowledgement
+  of the substantial inconsistencies that often exist between in-situ gauge data and satellite-derived
+  approximations, particularly in complex terrain areas where orographic effects marginally dominate rainfall
+  trends. LSTM, known for its unique potential to process timeseries data and capture long-term dependencies,
+  is employed to model the spatio-temporal dynamics of precipitation over the UAE’s mountainous regions.
+  The study uses daily rainfall data for the duration 2004–2021 in addition to other topographical and
+  climatological variables. The LSTM model was trained with these variables to identify the inherent biases
+  in the CMORPH and IMERG relative to gauge observations. The analysis exhibits that the LSTM-based framework
+  substantially improves the accuracy of precipitation products. The integration of terrain and climatic
+  covariates not only aids in capturing the orographic enhancement of precipitation but also facilitates
+  a more pronounced correction of biases, leading to improved precipitation data quality. The study employs
+  statistical metrics such as the Nash-Sutcliffe Efficiency (NSE), Root Mean Square Error (RMSE), Normalized
+  Mean Absolute Error (NMAE), Probability of Detection (POD), and Critical Success Index (CSI) to quantify
+  the improvements achieved through the LSTM-based bias correction. NSE score was enhanced by almost 45
+  % for most of the station while the RMSE decreased in the range from 3.4 mm to 0.5 mm. Moreover, corrected
+  products could capture the true rainfall with a 30 % higher accuracy than the raw products as shown
+  by POD and CSI calculations. This study contributes to the field of hydrology and climate science by
+  improving the accuracy of satellite-derived precipitation estimates in mountainous regions and sets
+  a precedent for the application of advanced machine learning techniques in environmental science. The
+  implications of this research are far-reaching, offering valuable insights for water resource management,
+  agricultural planning, and disaster mitigation efforts in the UAE and similar regions worldwide.
+significance: 3
+cited_by: 23
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

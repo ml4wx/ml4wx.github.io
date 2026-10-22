@@ -1,0 +1,49 @@
+id: arxiv-2510.02081
+title: Fine-Tuning Flow Matching via Maximum Likelihood Estimation of Reconstructions
+authors:
+- Zhaoyi Li
+- Jingtao Ding
+- Yong Li
+- Shihua Li
+date: '2025-10-02'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2510.02081'
+  openalex: W4414820767
+links:
+  paper: https://arxiv.org/abs/2510.02081
+  pdf: https://arxiv.org/pdf/2510.02081
+orgs:
+- tsinghua-university
+topic: probabilistic-ensembles
+type: model
+method:
+- other
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Fine-tunes flow matching models by maximum likelihood of reconstructions with artificial viscosity,
+  improving meteorological forecasting alongside robotic manipulation tasks.
+abstract: 'Flow Matching (FM) models achieve remarkable results in generative tasks. Building upon diffusion
+  models, FM''s simulation-free training paradigm enables simplicity and efficiency but introduces a train-inference
+  gap: model outputs cannot be assessed during training. Moreover, the straight flow assumption suffers
+  from some inherent limitations. To address this, we propose to fine-tune FM via Maximum Likelihood Estimation
+  (MLE) of reconstructions -- enabled by FM''s smooth ODE formulation, unlike the stochastic differential
+  equations (SDEs) in diffusion models. We first theoretically analyze the relationship between training
+  loss and inference error in FM under numerical precision constraints. We then propose an easy-to-implement
+  fine-tuning framework based on MLE of reconstructions, with flexibility for sophisticated extensions.
+  Building on this, we incorporate a generalized artificial viscosity term that enhances flow stability
+  and robustness, accompanied by a direct parameterization method and rigorous theoretical guarantees.
+  Experiments demonstrate our method''s effectiveness across diverse settings: a toy example provides
+  mechanistic insights into the fine-tuning process, while large-scale evaluations on meteorological forecasting
+  and robotic manipulation policies validate reliable performance improvements.'
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

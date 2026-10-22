@@ -1,0 +1,51 @@
+id: arxiv-2501.04916
+title: 'SpecTf: Transformers Enable Data-Driven Imaging Spectroscopy Cloud Detection'
+authors:
+- Jake H. Lee
+- Michael Kiper
+- David R. Thompson
+- Philip G. Brodrick
+date: '2025-01-09'
+year: 2025
+venue: Proc. Natl. Acad. Sci. U.S.A. 122 (27) (2025) e2502903122
+venue_type: journal
+ids:
+  arxiv: '2501.04916'
+  doi: 10.1073/pnas.2502903122
+  openalex: W4411997291
+links:
+  paper: https://arxiv.org/abs/2501.04916
+  pdf: https://arxiv.org/pdf/2501.04916
+  code: https://github.com/emit-sds/SpecTf
+orgs:
+- caltech
+- nasa
+topic: observations-remote-sensing
+type: model
+method:
+- transformer
+data:
+- satellite
+status: research
+summary: SpecTf treats spectra as sequences to detect clouds in imaging spectroscopy using spectral data
+  alone, outperforming the EMIT baseline with far fewer parameters.
+abstract: Current and upcoming generations of visible-shortwave infrared (VSWIR) imaging spectrometers
+  promise unprecedented capacity to quantify Earth System processes across the globe. However, reliable
+  cloud screening remains a fundamental challenge for these instruments, where traditional spatial and
+  temporal approaches are limited by cloud variability and limited temporal coverage. The Spectroscopic
+  Transformer (SpecTf) addresses these challenges with a spectroscopy-specific deep learning architecture
+  that performs cloud detection using only spectral information (no spatial or temporal data are required).
+  By treating spectral measurements as sequences rather than image channels, SpecTf learns fundamental
+  physical relationships without relying on spatial context. Our experiments demonstrate that SpecTf significantly
+  outperforms the current baseline approach implemented for the EMIT instrument, and performs comparably
+  with other machine learning methods with orders of magnitude fewer learned parameters. Critically, we
+  demonstrate SpecTf's inherent interpretability through its attention mechanism, revealing physically
+  meaningful spectral features the model has learned. Finally, we present SpecTf's potential for cross-instrument
+  generalization by applying it to a different instrument on a different platform without modifications,
+  opening the door to instrument agnostic data driven algorithms for future imaging spectroscopy tasks.
+significance: 3
+cited_by: 2
+score: 57
+highlight: false
+added: '2026-10-22'
+source: backfill

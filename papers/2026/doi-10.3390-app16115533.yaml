@@ -1,0 +1,53 @@
+id: doi-10.3390-app16115533
+title: Satellite-Based High-Precision Clear-Sky Irradiance Estimation Using Machine Learning and Physical
+  Model Harmonization
+authors:
+- Nifat Sultana
+- Narumasa Tsutsumida
+date: '2026-06-02'
+year: 2026
+venue: Applied Sciences
+venue_type: journal
+ids:
+  doi: 10.3390/app16115533
+  openalex: W7163203546
+links:
+  paper: https://doi.org/10.3390/app16115533
+topic: applications-impacts
+topics:
+- observations-remote-sensing
+type: model
+method:
+- rnn
+- physics-constrained
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- satellite
+- era5
+status: research
+summary: Physics-supervised MLP and LSTM estimate 5-min, 1-km clear-sky irradiance from GOES-16 and MERRA-2,
+  cutting RMSE 7.5% versus the MERRA-2 baseline.
+abstract: Accurate short-term estimation of clear-sky Global Horizontal Irradiance (GHI) is vital for
+  solar resource assessment and grid operations, yet existing methods rely on sparse radiometers and coarse
+  global weather reanalysis (e.g., MERRA-2 at 50–70 km spatial resolution with 1 month latency). To achieve
+  scalability in high-precision estimation, we propose a framework that removes dependence on ground measurements
+  by combining multi-satellite observations with reanalysis variables in a physics-supervised machine-learning
+  paradigm. We developed a multi-source-fused high-resolution environmental dataset with 5 min granularity
+  and 1 km spatial precision, incorporating Geostationary Operational Environmental Satellite (GOES-16)
+  observations, polar-orbiting satellite (AURA) data, and MERRA-2 reanalysis. As supervisory physics,
+  we harmonized two complementary parameterized radiative transfer models (MAC2 and REST2V5). The harmonized
+  GHI estimates are used as training labels for a Multilayer Perceptron (MLP) and a Residual Long Short-Term
+  Memory (LSTM) network model. The trained MLP model achieved a root mean square error (RMSE) of 66.67
+  W/m2, representing a 7.50% reduction over the conventional MERRA-2-driven baseline. For 30-min-ahead
+  forecasting, the LSTM model reduced RMSE by 29.37% over the persistence baseline. Evaluated at four
+  climatically diverse U.S. sites, the system achieves ground-sensor-like accuracy and is deployable anywhere
+  within GOES-16 coverage.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

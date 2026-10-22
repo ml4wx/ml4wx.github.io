@@ -1,0 +1,43 @@
+id: arxiv-2608.27728
+title: Diffusion Distillation for Efficient Weather Ensembles
+authors:
+- Yiming Yang
+- Valentin Brekke
+- James Briant
+- Serge Guillas
+date: '2026-08-27'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2608.27728'
+  openalex: W7204805628
+links:
+  paper: https://arxiv.org/abs/2608.27728
+  pdf: https://arxiv.org/pdf/2608.27728
+topic: probabilistic-ensembles
+topics:
+- global-medium-range
+- extremes-hazards
+type: model
+method:
+- diffusion
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Energy-distance distillation compresses a multi-step diffusion weather ensemble into a single-step
+  student that matches the teacher and preserves typhoon-track skill.
+abstract: Diffusion models generate skillful weather ensembles but require costly iterative sampling.
+  We introduce a supervised energy-distance distillation method that compresses a multi-step diffusion
+  teacher into a single-step student by aligning student forecasts with teacher samples and ground-truth
+  observations. Experiments on global forecasting and typhoon-track prediction show that our student outperforms
+  existing distillation methods and preserves skill for extreme events. It matches or surpasses the teacher
+  across key metrics using only one neural function evaluation per autoregressive step.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,52 @@
+id: doi-10.1109-tgrs.2025.3586375
+title: Reduction of Persistent Stress-Equivalent Wind Biases With Machine Learning and Scatterometer Data
+authors:
+- Evgeniia Makarova
+- Marcos Portabella
+- Ad Stoffelen
+date: '2025-01-01'
+year: 2025
+venue: IEEE Transactions on Geoscience and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/tgrs.2025.3586375
+  openalex: W4412164751
+links:
+  paper: https://doi.org/10.1109/tgrs.2025.3586375
+orgs:
+- knmi
+topic: post-processing
+topics:
+- observations-remote-sensing
+type: model
+spatial:
+- global
+data:
+- era5
+- satellite
+- nwp-analysis
+status: pre-operational
+summary: ML predicts scatterometer-minus-NWP 10 m wind biases, reducing ERA5 stress-equivalent wind error
+  variance by up to 9.86% globally.
+abstract: The Numerical Weather prediction (NWP) stress-equivalent 10-m wind (U10S) forecasts are used
+  as a common forcing for ocean models, however, these forecasts present local and systematic biases when
+  compared to the observational data. The scatterometer wind observations are being assimilated by European
+  Centre for Medium-Range Weather Forecasts (ECMWF) Integrated Forecasting System (IFS) but even after
+  the assimilation the sea-surface wind biases are still present. A previous approach to reduce such biases
+  was based on correcting the forecasts with the mean differences between scatterometer observations and
+  the NWP output accumulated over a certain period of time. However, this approach shows performance degradation
+  for the periods when fewer scatterometers are available and in the operational framework. To overcome
+  these limitations, we propose the use of machine learning (ML) to predict such biases using other atmospheric
+  and oceanic NWP variables as inputs, so that the observational data is only required during the training.
+  In this work we show the results for the preliminary ML models trained on a small subset of data that
+  use U10S scatterometer – NWP differences as the target. The predicted corrections applied to ECMWF fifth
+  reanalysis dataset ERA5 show error variance reduction up to 9.86% on a test subset globally when compared
+  to Advanced scatterometer (ASCAT-A) and up to 6.25% against independent scatterometer HSCAT-B, thereby
+  reducing the local biases. The best performance is seen in the extra-tropics with error variance reduction
+  up to 10.6%.
+significance: 5
+cited_by: 0
+score: 55
+highlight: false
+added: '2026-10-22'
+source: backfill

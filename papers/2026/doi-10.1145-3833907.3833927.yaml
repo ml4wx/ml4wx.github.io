@@ -1,0 +1,55 @@
+id: doi-10.1145-3833907.3833927
+title: 'CANet: Global Weather Forecast Network with Climatology-Aware Prior Constraints'
+authors:
+- Fan Yan
+- Yuang Zhang
+- Qin-Tong Wang
+- Chen-Yu Song
+- Tong Li
+- Kai Geng
+- Chen Hui
+- Feng Jiang
+date: '2026-06-24'
+year: 2026
+venue: Proceedings of the 2026 10th International Conference on High Performance Compilation, Computing
+  and Communications
+venue_type: other
+ids:
+  doi: 10.1145/3833907.3833927
+  openalex: W7221077407
+links:
+  paper: https://doi.org/10.1145/3833907.3833927
+  pdf: https://doi.org/10.1145/3833907.3833927
+orgs:
+- nuist
+topic: global-medium-range
+type: model
+timescale:
+- short
+spatial:
+- global
+data:
+- era5
+status: research
+summary: CANet treats atmospheric variables and pressure levels as a volumetric field and adds a day-of-year
+  climatology prior loss, giving gains in short-range ERA5 forecasts.
+abstract: Traditional global weather forecasting relies on numerical weather prediction systems, and most
+  deep learning methods similarly represent atmospheric variables as planar channels on spatial grids.
+  This grid-based formulation is convenient for computation, but it tends to treat different variables
+  and pressure levels mainly as stacked channels. Although efficient, this representation may limit the
+  modeling of cross-variable and vertical interactions. Moreover, existing learning-based methods are
+  often optimized mainly for forecasting error, with limited use of climatological constraints on predicted
+  fields. To address these issues, we propose Climatology-Aware Network (CANet), a global weather forecasting
+  framework that represents multiple atmospheric variables as a structured volumetric field. This representation
+  enables CANet to capture interactions across variables and pressure levels. In addition, we introduce
+  a climatology-prior (CP) loss that incorporates day-of-year climatological statistics into training,
+  encouraging forecasts to remain consistent with historical atmospheric background. Experiments on ERA5
+  reanalysis data show that CANet improves short-range forecasting performance, and the CP loss provides
+  further gains. These results indicate that combining volumetric atmospheric modeling with climatology-aware
+  supervision is effective for short-range global weather forecasting.
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-10-22'
+source: snowball

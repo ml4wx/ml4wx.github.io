@@ -1,0 +1,58 @@
+id: doi-10.62520-fujece.1915506
+title: 'Comparison of Deep Learning, Machine Learning, and Statistical Models for Precipitation and Temperature
+  Forecasting Performance: A Case Study of Hakkari Province'
+authors:
+- Ertuğrul Gül
+date: '2026-06-27'
+year: 2026
+venue: Firat University Journal of Experimental and Computational Engineering
+venue_type: journal
+ids:
+  doi: 10.62520/fujece.1915506
+  openalex: W7166299256
+links:
+  paper: https://doi.org/10.62520/fujece.1915506
+  pdf: https://dergipark.org.tr/en/download/article-file/5842885
+topic: local-forecasting
+topics:
+- benchmarks-data-eval
+type: evaluation
+method:
+- classical-ml
+- rnn
+timescale:
+- seasonal
+spatial:
+- local
+data:
+- era5
+status: research
+summary: Compares LSTM, Random Forest and Prophet on monthly ERA5 temperature and precipitation for Hakkari;
+  Prophet performs best, and precipitation stays hard to predict.
+abstract: 'This study compares three forecasting approaches for monthly mean temperature and total precipitation
+  over Hakkari, southeastern Turkey: LSTM (deep learning), Random Forest (machine learning), and Prophet
+  (statistical). ERA5 reanalysis data spanning 1940–2025 served as input, and model performance was evaluated
+  using five metrics (RMSE, MAE, R², NSE, and KGE).Analysis of the 85-year ERA5 record reveals statistically
+  significant warming across all seasons (0.221°C/10 years, p < 0.001), with spring warming being the
+  strongest (1.578°C/10 years, p < 0.001). Long-term precipitation change remains negligible (+0.60 mm/10
+  years). Because snow cover and evapotranspiration were not directly modeled, interpretations related
+  to snow-rain phase shifts and drought risk are treated as physically plausible implications rather than
+  direct empirical conclusions.Under the leakage-safe evaluation, Prophet produced the best temperature
+  performance (RMSE = 1.51°C, MAE = 1.15°C, R2 = 0.976, NSE = 0.976, KGE = 0.952), followed by Random
+  Forest (RMSE = 1.96°C, MAE = 1.59°C, R2 = 0.960, NSE = 0.960, KGE = 0.839) and LSTM (RMSE = 2.52°C,
+  MAE = 2.08°C, R² = 0.933, NSE = 0.933, KGE = 0.791).Precipitation forecasting was consistently more
+  demanding than temperature forecasting. Prophet achieved the best precipitation performance (RMSE =
+  50.15 mm, MAE = 33.88 mm, R² = 0.601, NSE = 0.601, KGE = 0.681), while Random Forest (RMSE = 52.26 mm,
+  MAE = 35.56 mm, R² = 0.567, NSE = 0.567, KGE = 0.672) and LSTM (RMSE = 53.80 mm, MAE = 36.80 mm, R²
+  = 0.542, NSE = 0.542, KGE = 0.680) showed similar limited skill. These findings suggest that strongly
+  seasonal variables such as temperature remain tractable across modeling frameworks, whereas monthly
+  precipitation exhibits only moderate predictability under leakage-safe conditions when same-month information
+  is excluded and lagged predictors are used. Future studies may benefit from incorporating additional
+  spatial predictors, snow-related variables, and hydrometeorological indicators, as well as testing hybrid
+  deep learning and ensemble learning architectures.'
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

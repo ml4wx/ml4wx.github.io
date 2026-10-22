@@ -1,0 +1,50 @@
+id: arxiv-2512.17877
+title: Learning vertical coordinates via automatic differentiation of a dynamical core
+authors:
+- Tim Whittaker
+- Seth Taylor
+- Elsa Cardoso-Bihlo
+- Alejandro Di Luca
+- Alex Bihlo
+date: '2025-12-19'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2512.17877'
+  openalex: W7116927136
+links:
+  paper: https://arxiv.org/abs/2512.17877
+  pdf: https://arxiv.org/pdf/2512.17877
+topic: hybrid-parameterization
+topics:
+- xai-uq-physics
+type: model
+method:
+- differentiable
+- physics-constrained
+data:
+- other
+status: research
+summary: Learns a terrain-following vertical coordinate inside an end-to-end differentiable non-hydrostatic
+  solver, cutting mean squared error 1.4-2x and removing spurious vertical velocity over steep terrain.
+abstract: Terrain-following coordinates in atmospheric models often imprint their grid structure onto
+  the solution, particularly over steep topography, where distorted coordinate layers can generate spurious
+  horizontal and vertical motion. Standard formulations, such as hybrid or SLEVE coordinates, mitigate
+  these errors by using analytic decay functions controlled by heuristic scale parameters that are typically
+  tuned by hand and fixed a priori. In this work, we propose a framework to define a parametric vertical
+  coordinate system as a learnable component within a differentiable dynamical core. We develop an end-to-end
+  differentiable numerical solver for the two-dimensional non-hydrostatic Euler equations on an Arakawa
+  C-grid, and introduce a NEUral Vertical Enhancement (NEUVE) terrain-following coordinate based on an
+  integral transformed neural network that guarantees monotonicity. A key feature of our approach is the
+  use of automatic differentiation to compute exact geometric metric terms, thereby eliminating truncation
+  errors associated with finite-difference coordinate derivatives. By coupling simulation errors through
+  the time integration to the parameterization, our formulation finds a grid structure optimized for both
+  the underlying physics and numerics. Using several standard tests, we demonstrate that these learned
+  coordinates reduce the mean squared error by a factor of 1.4 to 2 in non-linear statistical benchmarks,
+  and eliminate spurious vertical velocity striations over steep topography.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

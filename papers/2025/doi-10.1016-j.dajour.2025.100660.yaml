@@ -1,0 +1,62 @@
+id: doi-10.1016-j.dajour.2025.100660
+title: An analytics framework for interpretable subseasonal forecasting under decadal climate variability
+authors:
+- Jing Chen
+- Ali Mohammed Mansoor Alsahag
+- Seyed Sahand Mohammadi Ziabari
+date: '2025-12-01'
+year: 2025
+venue: Decision Analytics Journal
+venue_type: journal
+ids:
+  doi: 10.1016/j.dajour.2025.100660
+  openalex: W4416866219
+links:
+  paper: https://doi.org/10.1016/j.dajour.2025.100660
+topic: s2s-seasonal
+topics:
+- xai-uq-physics
+type: model
+method:
+- rnn
+- cnn
+- classical-ml
+timescale:
+- s2s
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: Grad-CAM-explained ConvLSTM2D for 28-day European temperature anomalies underperforms a Random
+  Forest baseline (R² -0.04 vs 0.56), showing limited subseasonal skill.
+abstract: Subseasonal forecasts (SSFs) are essential for managing climate risk. However, their precision
+  is influenced by decadal climatic variability and long-term climate change. As climate change continues,
+  this challenge is expected to grow. To address this, we apply explainable artificial intelligence (XAI)
+  to improve transparency and understanding of deep learning models in climate forecasting. XAI helps
+  reveal how models make predictions, supporting interpretability and scientific reliability. This study
+  uses a Convolutional Long Short-Term Memory 2D (ConvLSTM2D) deep learning model to predict European
+  SSFs and compares it to a baseline Random Forest model. ConvLSTM2D is a deep learning architecture that
+  integrates Convolutional Neural Networks (CNNs) for capturing spatial patterns with Long Short-Term
+  Memory (LSTM) networks for modeling temporal dependencies. Both models are trained on high-resolution
+  European Centre for Medium-Range Weather Forecasts (ECMWF) Reanalysis v5 (ERA5) data. We apply Gradient-weighted
+  Class Activation Mapping (Grad-CAM) and Feature Importance Analysis (FIA) to explain the model decision-making
+  process and identify key meteorological drivers. For 28-day lead 2 m temperature anomalies, the deterministic
+  skill of the ConvLSTM2D model is modest ( R 2 = − 0 . 0424 ) and lower than that of the Random Forest
+  baseline ( R 2 = 0 . 5624 ), highlighting the strength of relatively simple tree-based methods in this
+  data- and noise-limited subseasonal prediction setting. Nevertheless, XAI provides useful insights by
+  identifying meteorologically relevant patterns, such as synoptic systems and moisture gradients. FIA
+  highlights important variables such as sea level pressure, 2 m temperature, and total column water vapor.
+  Temporal feature importance also shows the model’s reliance on historical data, with both a recency
+  effect and a persistent influence from past time steps. These findings show that XAI can provide valuable
+  diagnostic information for deep learning models in climate science, helping to refine model design and
+  offering a path toward more trustworthy and transparent SSF systems for Europe and elsewhere in a changing
+  climate. • Apply deep learning to subseasonal forecasting with interpretability methods. • Identify
+  meteorological drivers influencing subseasonal forecast accuracy. • Provide transparent insights into
+  the decision-making of forecasting models. • Compare analytical forecasting models to highlight strengths
+  and limits. • Support decision-making in climate risk management through interpretable analytics.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

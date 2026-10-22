@@ -1,0 +1,55 @@
+id: arxiv-2606.25937
+title: Event-Aware Loss Design for Forecasting of Convective Precipitation and Lightning
+authors:
+- ChangJae Lee
+- Heecheol Yang
+- Byeonggwon Kim
+date: '2026-06-24'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.25937'
+  openalex: W7165887944
+links:
+  paper: https://arxiv.org/abs/2606.25937
+  pdf: https://arxiv.org/pdf/2606.25937
+orgs:
+- kma
+topic: extremes-hazards
+topics:
+- post-processing
+type: model
+method:
+- gan-vae
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- other
+status: research
+summary: A Patch-cGAN post-processor weights the MSE loss by observed lightning to reduce under-prediction
+  of intense convective rainfall over Korea and improve lightning forecasts.
+abstract: Accurate forecasting of high-impact weather, specifically extreme precipitation and lightning,
+  remains a significant challenge in numerical weather prediction (NWP) due to the complexity of atmospheric
+  microphysics. While deep-learning models have shown promise in large-scale forecasting, they often suffer
+  from systematic under-prediction of rare, high-intensity events and localized convective showers when
+  optimized with conventional loss functions like Mean Squared Error (MSE). This study proposes an Event-Aware
+  multi-task deep-learning post-processing framework designed to improve the representation of convective
+  processes by leveraging lightning observations. The model jointly predicts precipitation amount, rainfall
+  probability, and lightning occurrence using a shared-backbone Patch-cGAN (Conditional Generative Adversarial
+  Network) architecture. To address the rare event problem, we introduce a lightning-informed loss-weighting
+  strategy that element-wisely multiplies the MSE component by a spatial weight map derived from observed
+  lightning strikes, forcing the model to prioritize accuracy in convective regions during training. Evaluations
+  conducted over the Korean Peninsula during the 2025 Summer demonstrate that our framework outperforms
+  standard AI benchmarks and conventional NWP models, particularly at intense rainfall thresholds (40
+  mm/6 h). Furthermore, the model exhibits superior skill in predicting lightning compared to conventional
+  lightning parameterization and instability-index-based methods. These results indicate that integrating
+  physical event indicators into the loss formulation effectively guides models to learn the meteorological
+  signatures of deep convection, offering a pathway toward more reliable extreme weather forecasting.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

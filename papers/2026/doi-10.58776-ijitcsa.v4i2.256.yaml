@@ -1,0 +1,70 @@
+id: doi-10.58776-ijitcsa.v4i2.256
+title: Physics-Aware AI-Initialized Dynamical Downscaling for Regional Extreme-Weather Forecasting with
+  Open Climate Data
+authors:
+- Mina Annetta
+- Shanti Purohit
+- Viljar Vagle
+- Deepak Deo
+date: '2026-07-27'
+year: 2026
+venue: International Journal of Information Technology and Computer Science Applications
+venue_type: journal
+ids:
+  doi: 10.58776/ijitcsa.v4i2.256
+  openalex: W7171352451
+links:
+  paper: https://doi.org/10.58776/ijitcsa.v4i2.256
+  pdf: https://ejurnal.jejaringppm.org/index.php/jitcsa/article/download/256/192
+topic: downscaling
+topics:
+- regional-km-scale
+type: model
+method:
+- physics-constrained
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+- nwp-analysis
+status: research
+summary: Uses Pangu-Weather as large-scale initial conditions for a regional nonhydrostatic model, applied
+  to the 2023 North China extreme rainfall case.
+abstract: 'Accurate regional forecasting of extreme precipitation remains difficult because the scales
+  that control disaster-producing rainfall are neither fully resolved by global numerical weather prediction
+  nor reliably preserved by current global artificial intelligence weather models. Global AI systems such
+  as Pangu-Weather, GraphCast, GenCast, and related models have transformed medium-range forecasting skill
+  and computational efficiency, yet they remain fundamentally constrained by coarse training targets,
+  regression-induced smoothing, and limited direct representation of terrain-locked convection and local
+  hydrometeorological extremes. This paper reconstructs and substantially extends an event-based manuscript
+  on AI-driven regional forecasting into a submission-oriented framework centered on the more defensible
+  idea of physics-aware regional extreme-weather forecasting or downscaling with open climate data. The
+  core argument is that AI should not be treated as a wholesale substitute for high-resolution regional
+  physics; rather, it should be used as a skillful large-scale predictor whose state can be physically
+  harmonized and injected into a regional nonhydrostatic model. We therefore formalize an AI-initialized,
+  physics-aware dynamical downscaling pipeline in which open global reanalysis and observation products
+  are used to generate, constrain, and evaluate regional forecasts of extreme rainfall. The framework
+  is instantiated using the published North China July–August 2023 extreme precipitation case, for which
+  the original study compared WRF simulations driven by Pangu forecasts against WRF simulations driven
+  by NCEP GFS forecasts across lead times of 0.5, 3.0, and 5.5 days. This paper contributes in three ways.
+  First, it repositions the original study within the modern literature on AI weather forecasting, regional
+  downscaling, and physically constrained machine learning. Second, it formulates the coupling problem
+  mathematically, clarifies the state alignment needed to make AI forecasts dynamically usable by WRF,
+  and introduces a coherent reliability-oriented evaluation logic based on error growth, threshold skill,
+  and event-structure consistency. Third, it reorganizes the experiments and results into a rigorous narrative
+  grounded in reproducibility. Using the published event-level metrics, the AI-initialized regional system
+  outperforms the GFS-initialized counterpart at extended lead times. For the North China case, the maximum
+  precipitation threshold retaining a Threat Score of at least 0.1 is 400 mm at 5.5-day lead for Pangu-initialized
+  WRF, whereas the GFS-driven counterpart retains comparable skill only at 50 mm. At 0.5-day lead, both
+  systems perform competitively, but the AI-driven system still exhibits stronger spatial correlation
+  (0.76 versus 0.68) and lower RMSE (86.2 mm versus 96.4 mm). The evidence supports a restrained but important
+  conclusion: physics-aware AI-initialized regional modeling is a promising route for long-lead extreme-weather
+  forecasting, yet current evidence remains case-limited and should be interpreted as a strong event-based
+  demonstration rather than universal proof of general superiority.'
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

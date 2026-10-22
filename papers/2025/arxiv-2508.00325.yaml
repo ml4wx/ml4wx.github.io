@@ -1,0 +1,45 @@
+id: arxiv-2508.00325
+title: 'PnP-DA: Towards Principled Plug-and-Play Integration of Variational Data Assimilation and Generative
+  Models'
+authors:
+- Yongquan Qu
+- Matthieu Blanke
+- Sara Shamekh
+- Pierre Gentine
+date: '2025-08-01'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2508.00325'
+  openalex: W4416548696
+links:
+  paper: https://arxiv.org/abs/2508.00325
+  pdf: https://arxiv.org/pdf/2508.00325
+topic: data-assimilation
+type: model
+method:
+- other
+data:
+- other
+status: research
+summary: PnP-DA couples a gradient-based analysis step with a pretrained generative prior, reducing forecast
+  error on chaotic testbeds compared with classical variational methods.
+abstract: 'Earth system modeling presents a fundamental challenge in scientific computing: capturing complex,
+  multiscale nonlinear dynamics in computationally efficient models while minimizing forecast errors caused
+  by necessary simplifications. Even the most powerful AI- or physics-based forecast system suffer from
+  gradual error accumulation. Data assimilation (DA) aims to mitigate these errors by optimally blending
+  (noisy) observations with prior model forecasts, but conventional variational methods often assume Gaussian
+  error statistics that fail to capture the true, non-Gaussian behavior of chaotic dynamical systems.
+  We propose PnP-DA, a Plug-and-Play algorithm that alternates (1) a lightweight, gradient-based analysis
+  update (using a Mahalanobis-distance misfit on new observations) with (2) a single forward pass through
+  a pretrained generative prior conditioned on the background forecast via a conditional Wasserstein coupling.
+  This strategy relaxes restrictive statistical assumptions and leverages rich historical data without
+  requiring an explicit regularization functional, and it also avoids the need to backpropagate gradients
+  through the complex neural network that encodes the prior during assimilation cycles. Experiments on
+  standard chaotic testbeds demonstrate that this strategy consistently reduces forecast errors across
+  a range of observation sparsities and noise levels, outperforming classical variational methods.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

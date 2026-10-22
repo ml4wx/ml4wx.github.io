@@ -1,0 +1,53 @@
+id: doi-10.5194-nhess-26-1603-2026
+title: Predicting thunderstorm risk probability at very short time range using deep learning
+authors:
+- Mélanie Bosc
+- Adrien Chan-Hon-Tong
+- Aurélie Bouchard
+- Dominique Béréziat
+date: '2026-03-31'
+year: 2026
+venue: Natural hazards and earth system sciences
+venue_type: journal
+ids:
+  doi: 10.5194/nhess-26-1603-2026
+  openalex: W7143910422
+links:
+  paper: https://doi.org/10.5194/nhess-26-1603-2026
+  pdf: https://nhess.copernicus.org/articles/26/1603/2026/nhess-26-1603-2026.pdf
+topic: nowcasting
+topics:
+- extremes-hazards
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+- nwp-analysis
+status: research
+summary: Attention-CNN on satellite and NWP sequences predicts 5- to 30-minute lightning risk with F1
+  of 0.65 and calibration error under 10%.
+abstract: Abstract. Forecasting electrical activity within the atmosphere remains one of the most challenging
+  predictions, especially due to the chaotic nature of thunderstorms. Lightning strikes are precisely
+  located and occur very quickly, which makes this task particularly difficult. Additionally, these phenomena
+  pose a significant risk to aviation, as they statistically strike each aircraft more than once per year.
+  Over the years, several techniques have been employed for very short-term lightning forecasting (lower
+  than one hour 5 and every five minutes), such as observation-based methods and, more recently, deep
+  learning methods. Previous studies often face difficulties in accurately forecasting lightning probability,
+  and even with AI-driven methods, it is still difficult to obtain calibrated outputs. To address this
+  limitation, we propose a methodology that successfully predicts lightning risk using Convolutional Neural
+  Networks (CNNs) with attention mechanisms. The network is fed with satellite observations and Numerical
+  Weather Prediction (NWP) outputs formatted as a spatio-temporal sequence. Results show a F1 10 score
+  of 0.65 for 5-minute predictions and 0.5 for 30-minute predictions with a very low Expected Calibration
+  Error (ECE) of less than 10 %. Thanks to the well-calibrated outputs, risk probability maps can be plotted,
+  showing areas with strong to low chances of having electrical activity.
+significance: 3
+cited_by: 2
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

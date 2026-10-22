@@ -1,0 +1,53 @@
+id: arxiv-2401.07958
+title: Graph Dual-stream Convolutional Attention Fusion for Precipitation Nowcasting
+authors:
+- Lorand Vatamany
+- Siamak Mehrkanoon
+date: '2024-01-15'
+year: 2024
+venue: Engineering Applications of Artificial Intelligence
+venue_type: journal
+ids:
+  arxiv: '2401.07958'
+  doi: 10.1016/j.engappai.2024.109788
+  openalex: W4405265820
+links:
+  paper: https://doi.org/10.1016/j.engappai.2024.109788
+  pdf: https://arxiv.org/pdf/2401.07958
+topic: nowcasting
+type: model
+method:
+- gnn
+- transformer
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: Graph dual-stream attention network with gated fusion for precipitation nowcasting over Europe,
+  reformulated as a spatiotemporal graph sequence problem.
+abstract: Accurate precipitation nowcasting is crucial for applications such as flood prediction, disaster
+  management, agriculture optimization, and transportation management. While many studies have approached
+  this task using sequence-to-sequence models, most focus on single regions, ignoring correlations between
+  disjoint areas. We reformulate precipitation nowcasting as a spatiotemporal graph sequence problem.
+  Specifically, we propose Graph Dual-stream Convolutional Attention Fusion, a novel extension of the
+  graph attention network. Our model's dual-stream design employs distinct attention mechanisms for spatial
+  and temporal interactions, capturing their unique dynamics. A gated fusion module integrates both streams,
+  leveraging spatial and temporal information for improved predictive accuracy. Additionally, our framework
+  enhances graph attention by directly processing three-dimensional tensors within graph nodes, removing
+  the need for reshaping. This capability enables handling complex, high-dimensional data and exploiting
+  higher-order correlations between data dimensions. Depthwise-separable convolutions are also incorporated
+  to refine local feature extraction and efficiently manage high-dimensional inputs. We evaluate our model
+  using seven years of precipitation data from Copernicus Climate Change Services, covering Europe and
+  neighboring regions. Experimental results demonstrate superior performance of our approach compared
+  to other models. Moreover, visualizations of seasonal spatial and temporal attention scores provide
+  insights into the most significant connections between regions and time steps.
+significance: 3
+cited_by: 8
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

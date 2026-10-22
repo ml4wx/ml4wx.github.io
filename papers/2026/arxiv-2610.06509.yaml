@@ -1,0 +1,52 @@
+id: arxiv-2610.06509
+title: 'Xaurora: Generative Weather Forecasting with Denoising Stochastic Interpolants from a Foundation
+  Model Prior'
+authors:
+- Eliot Walt
+- Miltiadis Kofinas
+- Nikolaj Mücke
+- Efstratios Gavves
+- Dim Coumou
+date: '2026-10-05'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.06509'
+  openalex: W7220692730
+links:
+  paper: https://arxiv.org/abs/2610.06509
+  pdf: https://arxiv.org/pdf/2610.06509
+topic: probabilistic-ensembles
+topics:
+- foundation-models
+type: model
+method:
+- diffusion
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Turns the deterministic Aurora foundation model into a stochastic ensemble forecaster via denoising
+  stochastic interpolants, approaching state-of-the-art ensemble skill with 15-day forecasts in 13 minutes.
+abstract: Deep learning has revolutionised weather forecasting in recent years, especially through atmospheric
+  foundation models, which offer competitive skill for a fraction of the computational costs of classic
+  physics-based models. However, most existing foundation models are deterministic, limiting the generation
+  of large ensembles for accurate uncertainty quantification, extreme weather risk assessment, and long-range
+  weather forecasting. Furthermore, these models incur a large, often prohibitive, computational overhead
+  to train from scratch. To address these shortcomings, we turn a pretrained deterministic prior model,
+  namely the Aurora foundation model, into a generative ensemble-prediction model. To that end, we introduce
+  a novel generative method, Denoising Stochastic Interpolants, combined with a replay buffer for Stochastic
+  Differential Equation (SDE) rollout, enabling probabilistic training of SDE trajectories. Our stochastic
+  foundation model, Xaurora, is finetuned from the small Aurora version, yet it approaches the state-of-the-art
+  on global ensemble metrics and is competitive with the large version of Aurora. Our method is parameter
+  and sample efficient, and generates skilful 15-day forecasts in 13 minutes. Our results demonstrate
+  that deterministic foundation models can be efficiently extended into even stronger stochastic models.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

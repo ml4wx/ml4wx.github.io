@@ -1,0 +1,64 @@
+id: doi-10.1016-j.isprsjprs.2026.09.017
+title: Integrating spherical geometry and spectral dynamics for improved satellite-based cloud cover forecasting
+authors:
+- Xiangxu Meng
+- Kaibin Lin
+- Yun Zhong
+- Shuai Liu
+- Qingfang Jiang
+- Weiwei Li
+- Kanglian Zhao
+date: '2026-10-01'
+year: 2026
+venue: ISPRS Journal of Photogrammetry and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1016/j.isprsjprs.2026.09.017
+  openalex: W7215036634
+links:
+  paper: https://doi.org/10.1016/j.isprsjprs.2026.09.017
+  code: https://github.com/mxx123321/cloud_forecasting
+topic: nowcasting
+topics:
+- observations-remote-sensing
+type: model
+method:
+- other
+timescale:
+- nowcast
+spatial:
+- global
+- regional
+data:
+- satellite
+status: research
+summary: S2T-Net adds spherical geometry embeddings and spectral trend filtering to predict geostationary
+  cloud cover, tested on Fengyun full-disk and eight sub-regions.
+abstract: 'As a key regulator of Earth’s energy balance, accurate cloud cover forecasting is essential
+  for assessing radiative forcing and precipitation. However, recent deep-learning-based forecasting models
+  often neglect the intrinsic spherical geometry of the Earth and the long-term seasonal dynamics of cloud
+  evolution. To bridge this gap, this paper proposes the Spherical-Spectral Trend Network (S 2 T-Net),
+  a unified geospatial–temporal framework that reconciles spherical geometry with macro-scale atmospheric
+  dynamics. Specifically, we first implement a Spherical Geometric Embedding (SGE) method, which maps
+  pixel-wise geographic coordinates onto a 3D unit sphere via trigonometric transformations. By injecting
+  explicit geographical priors derived from both latitude and longitude, SGE enables the network to account
+  for view-angle-dependent spatial anisotropy and scale variation under geostationary observation while
+  preserving the native satellite raster. Building upon this, we develop the Frequency-Domain Evolution
+  Distillation (FDED) mechanism. FDED utilizes a learnable temporal memory pool and parameterized spectral
+  filters to capture periodic oscillatory features of cloud movement. By explicitly disentangling spectral
+  amplitude and phase, FDED independently preserves structural integrity and models kinematic advection.
+  This iterative distillation of salient spectral trends provides physically consistent priors to guide
+  current observations, allowing the model to perceive macro-scale trajectories and seasonal cycles typically
+  obscured in standard spatial-domain processing. Consequently, S 2 T-Net effectively integrates static
+  spherical geographic priors with dynamic cloud evolution. Evaluated on the full-disk Fengyun satellite
+  dataset and eight high-resolution sub-regions with diverse climatic conditions, S 2 T-Net demonstrates
+  strong and robust spatiotemporal forecasting performance across multiple prediction horizons. It achieves
+  the highest accuracy among the evaluated methods for long-term full-disk forecasting at the 12-hour
+  horizon, while also showing competitive F1 and IoU performance across regional evaluations. The source
+  code is publicly available at: https://github.com/mxx123321/cloud_forecasting'
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,61 @@
+id: doi-10.1029-2025jh000678
+title: Generative Adversarial Networks for Downscaling Hourly Precipitation in the Canadian Prairies
+authors:
+- Hebatallah Abdelmoaty
+- Simon Michael Papalexiou
+- Antonios Mamalakis
+- Shivam H Singh
+- Vincenzo Coia
+- Melissa Hairabedian
+- Pascal Szeftel
+- Patrick Grover
+date: '2025-10-24'
+year: 2025
+venue: Journal of Geophysical Research Machine Learning and Computation
+venue_type: journal
+ids:
+  doi: 10.1029/2025jh000678
+  openalex: W4415503615
+links:
+  paper: https://doi.org/10.1029/2025jh000678
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2025JH000678
+topic: downscaling
+topics:
+- extremes-hazards
+type: model
+method:
+- gan-vae
+- cnn
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+status: research
+summary: Compares UNET and GAN configurations for downscaling CMIP6 to hourly precipitation over the Canadian
+  Prairies, with the simplest GAN best preserving temporal dependence.
+abstract: Abstract Developing robust downscaling methods is essential for maximizing the applicability
+  of climate model outputs in engineering design and climate mitigation, particularly in a changing climate.
+  This study evaluates four deep learning model configurations for downscaling, focusing on their structure,
+  functionality, and ability to capture localized convective events in the Canadian prairies. These model
+  configurations aim to downscale coarse‐resolution climate model outputs (∼200 km) to the finer spatial
+  resolution of regional climate models (∼50 km) for hourly precipitation. We introduce advanced metrics
+  to assess the fidelity of precipitation downscaling, examining both marginal statistics and spatiotemporal
+  dependencies. A U‐Network (UNET) captures spatial and temporal dependencies efficiently while three
+  generative adversarial networks (GANs) configurations incorporate a critic network to enhance the realism
+  of generated fields. The study also evaluates the effects of a thresholding layer to constrain precipitation
+  values and a convolution long short‐term memory layer in the GAN critic to better capture temporal dependencies.
+  Results show that all four model configurations effectively capture spatial dependencies, with the simplest
+  GAN architecture outperforming others in preserving temporal dependencies. Latitudinal correlations
+  are better preserved than longitudinal across all models. While UNET produces overly smoothed fields,
+  GANs generate more detailed outputs when downscaling Coupled Model Intercomparison Project phase 6 projections.
+  By optimizing deep learning models for this region, the study provides key insights into future precipitation
+  trends, enabling the identification of localized storms. These findings are critical for improving infrastructure
+  resilience across catchments in the prairies.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

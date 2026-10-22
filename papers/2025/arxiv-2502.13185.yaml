@@ -1,0 +1,69 @@
+id: arxiv-2502.13185
+title: 'CondensNet: Enabling stable long-term climate simulations via hybrid deep learning models with
+  adaptive physical constraints'
+authors:
+- Xin Wang
+- Jianda Chen
+- Juntao Yang
+- Jeff Adie
+- Simon See
+- Kalli Furtado
+- Chen Chen
+- Troy Arcomano
+- Romit Maulik
+- Wei Xue
+- Gianmarco Mengaldo
+date: '2025-02-18'
+year: 2025
+venue: npj Climate and Atmospheric Science
+venue_type: journal
+ids:
+  arxiv: '2502.13185'
+  doi: 10.1038/s41612-025-01269-5
+  openalex: W7124420056
+links:
+  paper: https://doi.org/10.1038/s41612-025-01269-5
+  pdf: https://arxiv.org/pdf/2502.13185
+orgs:
+- argonne
+- nvidia
+- tsinghua-university
+topic: hybrid-parameterization
+topics:
+- climate-emulation
+type: model
+method:
+- physics-constrained
+- cnn
+timescale:
+- climate
+spatial:
+- global
+data:
+- km-scale-sim
+status: research
+summary: CondensNet embeds an adaptive physical constraint to stop water vapour oversaturation, giving
+  stable hybrid GCM climate runs that are more efficient than super-parameterization.
+abstract: Accurate and efficient climate simulations are crucial for understanding Earth's evolving climate.
+  However, current general circulation models (GCMs) face challenges in capturing unresolved physical
+  processes, such as cloud and convection. A common solution is to adopt cloud resolving models, that
+  provide more accurate results than the standard subgrid parametrisation schemes typically used in GCMs.
+  However, cloud resolving models, also referred to as super paramtetrizations, remain computationally
+  prohibitive. Hybrid modeling, which integrates deep learning with equation-based GCMs, offers a promising
+  alternative but often struggles with long-term stability and accuracy issues. In this work, we find
+  that water vapor oversaturation during condensation is a key factor compromising the stability of hybrid
+  models. To address this, we introduce CondensNet, a novel neural network architecture that embeds a
+  self-adaptive physical constraint to correct unphysical condensation processes. CondensNet effectively
+  mitigates water vapor oversaturation, enhancing simulation stability while maintaining accuracy and
+  improving computational efficiency compared to super parameterization schemes. We integrate CondensNet
+  into a GCM to form PCNN-GCM (Physics-Constrained Neural Network GCM), a hybrid deep learning framework
+  designed for long-term stable climate simulations in real-world conditions, including ocean and land.
+  PCNN-GCM represents a significant milestone in hybrid climate modeling, as it shows a novel way to incorporate
+  physical constraints adaptively, paving the way for accurate, lightweight, and stable long-term climate
+  simulations.
+significance: 5
+cited_by: 5
+score: 55
+highlight: false
+added: '2026-10-22'
+source: backfill

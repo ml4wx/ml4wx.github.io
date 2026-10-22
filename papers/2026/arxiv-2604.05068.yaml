@@ -1,0 +1,47 @@
+id: arxiv-2604.05068
+title: Towards Scaling Law Analysis For Spatiotemporal Weather Data
+authors:
+- Alexander Kiefer
+- Prasanna Balaprakash
+- Xiao Wang
+date: '2026-04-06'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2604.05068'
+  openalex: W7152014517
+links:
+  paper: https://arxiv.org/abs/2604.05068
+  pdf: https://arxiv.org/pdf/2604.05068
+orgs:
+- ornl
+topic: global-medium-range
+type: evaluation
+method:
+- other
+timescale:
+- medium
+spatial:
+- global
+data:
+- other
+status: research
+summary: Scaling-law analysis of autoregressive weather rollouts shows pooled error scaling hides late-lead,
+  per-channel degradation that matters for training objectives.
+abstract: 'Compute-optimal scaling laws are relatively well studied for NLP and CV, where objectives are
+  typically single-step and targets are comparatively homogeneous. Weather forecasting is harder to characterize
+  in the same framework: autoregressive rollouts compound errors over long horizons, outputs couple many
+  physical channels with disparate scales and predictability, and globally pooled test metrics can disagree
+  sharply with per-channel, late-lead behavior implied by short-horizon training. We extend neural scaling
+  analysis for autoregressive weather forecasting from single-step training loss to long rollouts and
+  per-channel metrics. We quantify (1) how prediction error is distributed across channels and how its
+  growth rate evolves with forecast horizon, (2) if power law scaling holds for test error, relative to
+  rollout length when error is pooled globally, and (3) how that fit varies jointly with horizon and channel
+  for parameter, data, and compute-based scaling axes. We find strong cross-channel and cross-horizon
+  heterogeneity: pooled scaling can look favorable while many channels degrade at late leads. We discuss
+  implications for weighted objectives, horizon-aware curricula, and resource allocation across outputs.'
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

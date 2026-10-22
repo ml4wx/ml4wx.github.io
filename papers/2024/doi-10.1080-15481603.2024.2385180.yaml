@@ -1,0 +1,56 @@
+id: doi-10.1080-15481603.2024.2385180
+title: Machine learning-based retrieval of total column water vapor over land using GMI-sensed passive
+  microwave measurements
+authors:
+- Jiafei Xu
+- Zhizhao Liu
+date: '2024-08-05'
+year: 2024
+venue: GIScience & Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1080/15481603.2024.2385180
+  openalex: W4401896092
+links:
+  paper: https://doi.org/10.1080/15481603.2024.2385180
+topic: observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- global
+data:
+- satellite
+- stations
+status: research
+summary: LightGBM retrieves total column water vapour over land from GMI microwave data, validated against
+  GNSS and radiosondes with RMSE of about 6 mm.
+abstract: The Global Precipitation Measurement (GPM) Microwave Imager (GMI) is a microwave (MW) radiometer
+  that has near-global coverage and frequent revisit time. To date, operational total column water vapor
+  (TCWV) data records from the GPM GMI sensor have been exclusively offered over oceanic regions. It is
+  challenging to retrieve TCWV over land from satellite MW measurements because of varying land surface
+  characteristics. In this paper, a novel Light Gradient Boosting Machine-based retrieval algorithm is
+  proposed to derive TCWV over land from GMI-sensed MW brightness temperature (BT) observations. The GMI-observed
+  MW BT at 18.7 GHz and 23.8 GHz, differential BT between 18.7 GHz and 23.8 GHz, latitude, longitude,
+  and month are selected and utilized as the input variables of the retrieval approach, because of their
+  strong correlation with satellite-sensed MW TCWV retrievals. Instead of surface emissivity data or radiative
+  transfer model, we take into account the spatial and temporal elements, namely latitude, longitude,
+  and month. The training of the retrieval method is performed based on ground-based TCWV estimates from
+  worldwide 4,471 Global Navigation Satellite System (GNSS) stations in 2017. The performance of the newly
+  proposed retrieval algorithm is independently validated in a worldwide coverage using reference TCWV
+  from additional 4,341 GNSS stations in 2018–2020 and 605 radiosonde stations in 2017–2020. The newly
+  retrieved TCWV estimates over land have a correlation coefficient of 0.76 and 0.83, a root-mean-square
+  error (RMSE) of 5.82 mm and 6.02 mm, a relative RMSE of 34.91% and 34.36%, and a mean bias of 0.02 mm
+  and −0.42 mm compared to reference TCWV from GNSS and radiosonde, respectively. The performance of the
+  retrieval algorithm is satisfactory when compared to that of land-purpose TCWV of other satellite missions,
+  though we have not used either surface emissivity data or radiative transfer model. This result increases
+  confidence in retrieving TCWV over land from satellite-sensed MW BT measurements based on machine learning
+  using ground-based TCWV observations. The newly developed retrieval algorithm has the potential for
+  integration into operational satellite missions or meteorological services, thereby enhancing weather
+  forecasting, climate modeling, and other relevant applications.
+significance: 3
+cited_by: 19
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

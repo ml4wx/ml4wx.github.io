@@ -1,0 +1,45 @@
+id: arxiv-2510.06637
+title: Control-Augmented Autoregressive Diffusion for Data Assimilation
+authors:
+- Prakhar Srivastava
+- Farrin Marouf Sofian
+- Francesco Immorlano
+- Kushagra Pandey
+- Stephan Mandt
+date: '2025-10-08'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2510.06637'
+  openalex: W4415316315
+links:
+  paper: https://arxiv.org/abs/2510.06637
+  pdf: https://arxiv.org/pdf/2510.06637
+topic: data-assimilation
+type: model
+method:
+- diffusion
+data:
+- era5
+- other
+status: research
+summary: Offline-trained controller steers a pretrained autoregressive diffusion model for data assimilation,
+  giving an order-of-magnitude speedup over diffusion baselines on chaotic PDEs and an ERA5 pilot.
+abstract: Despite advances in test-time scaling and diffusion finetuning, guidance for Auto-Regressive
+  Diffusion Models (ARDMs) remains underexplored. We introduce an amortized framework that augments a
+  pretrained ARDM with an offline-trained controller. By previewing future rollouts, the controller learns
+  stepwise corrections that anticipate observations under a terminal-cost objective, yielding a reusable
+  policy for guided generation. Motivated by a stochastic optimal control view of ARDM trajectories, our
+  method injects small controls within each denoising sub-step while staying close to the pretrained dynamics.
+  We study this approach for dataassimilation (DA) in chaotic spatiotemporal partial differential equations
+  (PDEs), where existing methods are often computationally expensive and susceptible to forecast drift
+  under sparse observations. At inference, DA becomes a feed-forward rollout with on-the-fly corrections,
+  achieving an order-of-magnitude speedup over strong diffusion-based baselines. Across two canonical
+  PDEs and a compact ECMWF Reanalysis v5 (ERA5) pilot spanning six observation regimes, our method consistently
+  improves stability and accuracy over state-of-the-art alternatives, with similar improvements observed
+  in a larger-scale GenCast study.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

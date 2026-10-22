@@ -1,0 +1,59 @@
+id: arxiv-2605.24945
+title: 'RealBench: Benchmarking Data-Driven Numerical Weather Forecasting Under Operational Conditions
+  and Extreme Event Challenges'
+authors:
+- Ruize Li
+- Zhibin Wen
+- Tao Han
+- Hao Chen
+- Fenghua Ling
+- Wei Zhang
+- Song Guo
+- Lei Bai
+date: '2026-05-24'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.24945'
+  openalex: W7162395992
+links:
+  paper: https://arxiv.org/abs/2605.24945
+  pdf: https://arxiv.org/pdf/2605.24945
+  code: https://github.com/lixruize-del/NWP-Benchmark
+topic: benchmarks-data-eval
+topics:
+- extremes-hazards
+type: benchmark
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+- stations
+status: research
+summary: RealBench evaluates AI weather models on 2025 operational analyses and 10,000+ stations, revealing
+  gaps versus reanalysis metrics on heatwaves and tropical cyclones.
+abstract: 'Accurate evaluation of weather forecasting models is critical for their reliable deployment
+  in real-world applications. However, existing benchmarks predominantly rely on reanalysis products such
+  as ERA5, which are generated through delayed data assimilation and do not reflect the constraints of
+  real-time operational forecasting, thereby resulting in a systematic mismatch between benchmark performance
+  and real-world forecasting. In this work, we introduce RealBench, a next-generation benchmark for AI
+  weather forecasting that emphasizes realistic evaluation under operational conditions. RealBench features
+  a strictly out-of-distribution test set spanning 2025 to eliminate data leakage and capture recent atmospheric
+  regimes. It integrates multiple data sources, including low-latency operational analysis and a large-scale
+  global in-situ observation dataset comprising over 10,000 stations, enabling direct evaluation against
+  real atmospheric measurements. Beyond standard global metrics, RealBench provides a comprehensive evaluation
+  framework for high-impact extreme events, including heatwaves, cold surges, and tropical cyclones, using
+  event-specific metrics that better reflect real-world forecasting priorities. The evaluation results
+  reveal substantial discrepancies between reanalysis-based metrics and real-world performance, particularly
+  concerning extreme events. By highlighting the limitations of existing benchmarks, this work establishes
+  a more faithful and operationally relevant evaluation paradigm, providing a rigorous foundation for
+  advancing next-generation AI weather forecasting systems. The benchmark implementation is available
+  at: https://github.com/lixruize-del/NWP-Benchmark.'
+significance: 6
+score: 34
+highlight: false
+added: '2026-10-22'
+source: backfill

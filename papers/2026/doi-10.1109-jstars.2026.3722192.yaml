@@ -1,0 +1,53 @@
+id: doi-10.1109-jstars.2026.3722192
+title: 'PstpNet: Dual-Branch Physics-Guided U-Net With Multiscale Spatiotemporal Disentanglement for Precipitation
+  Nowcasting'
+authors:
+- Kai Xie
+- Bo Yin
+- Yue-Ting Sun
+- Zhaoyan Zhu
+- Yiyun Guo
+date: '2026-01-01'
+year: 2026
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2026.3722192
+  openalex: W7202142476
+links:
+  paper: https://doi.org/10.1109/jstars.2026.3722192
+topic: nowcasting
+type: model
+method:
+- physics-constrained
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- other
+status: research
+summary: Physics-guided U-Net splits precipitation into advection and residual branches, achieving strong
+  high-intensity skill at 10 mm/h on KNMI-NL50 and SEVIR.
+abstract: Precipitation nowcasting remains challenging because precipitation systems exhibit strong nonlinear
+  evolution, rapid development, and complex long-range spatiotemporal dependencies. Existing deep learning
+  methods are still limited in characterizing precipitation dynamics and improving model interpretability.
+  To address these limitations, we propose PstpNet, a physics-informed nowcasting model. Inspired by the
+  continuity equation, PstpNet constructs an advection-residual decomposition framework, in which a motion
+  branch and a residual branch separately model advective transport and nonconservative intensity changes.
+  Multiscale feature fusion is further introduced to enhance the representation of precipitation structures
+  at different spatial scales. In addition, the TM module embeds historical temporal evolution information
+  into the physical decomposition process, while the physics-guided fusion module adaptively coordinates
+  advection and intensity-residual processes, thereby improving spatiotemporal consistency and physical
+  interpretability in long-lead forecasting. Experimental results on the KNMI-NL50 and SEVIR datasets
+  show that PstpNet achieves the best or near-best performance across threshold-based metrics, with strong
+  high-intensity detection performance at the 10 mm/h rainfall threshold on KNMI-NL50 and the VIL 181
+  threshold on SEVIR.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

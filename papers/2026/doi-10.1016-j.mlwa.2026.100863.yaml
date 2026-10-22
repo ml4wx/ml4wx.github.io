@@ -1,0 +1,53 @@
+id: doi-10.1016-j.mlwa.2026.100863
+title: Parallelized hybrid ensemble machine learning framework for scalable and accurate rainfall prediction
+authors:
+- S Ramakrishnan
+- Christopher Columbus C
+date: '2026-02-10'
+year: 2026
+venue: Machine Learning with Applications
+venue_type: journal
+ids:
+  doi: 10.1016/j.mlwa.2026.100863
+  openalex: W7128500088
+links:
+  paper: https://doi.org/10.1016/j.mlwa.2026.100863
+topic: local-forecasting
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Stacking ensembles with an XGBoost meta-learner reach ROC AUC 0.893 for next-day rain on the
+  Australian RainTomorrow data, beating voting ensembles.
+abstract: 'Accurate rainfall forecasting is essential for agriculture, hydrological planning, and disaster
+  preparedness, while balancing prediction quality with computational constraints. This study establishes
+  a stacking-based ensemble framework for binary rainfall prediction using the Australian RainTomorrow
+  dataset (over 140,000 daily observations), showing learned meta-feature combination outperforms probability
+  averaging for imbalanced weather prediction. This study compares voting architectures against two-layer
+  stacking ensembles where an XGBoost meta-learner optimizes weights from leakage-safe out-of-fold probabilities.
+  Two ensemble families are proposed: RXL (Random Forest + XGBoost + LightGBM) and TriBoost (CatBoost
+  + XGBoost + HistGradientBoosting), evaluated as voting and stacking configurations with tuned single
+  learners. The methodology ensures rigor through unified preprocessing, leakage control, and evaluation
+  under three protocols: stratified holdout (Protocol A), 5-fold cross-validation (Protocol B), and temporal
+  split (Protocol C). Class imbalance is addressed via class weighting, fold-internal SMOTE, and threshold
+  tuning, while temporal features mitigate distribution drift. Results confirm advantages for stacking
+  architectures. TriBoost Stack achieves state-of-the-art performance under Protocol A (Accuracy 0.864,
+  Macro F1 0.776, PR AUC 0.751, ROC AUC 0.893) with strong minority-event detection (Recall Yes 0.565,
+  Precision Yes 0.752), exceeding voting ensembles and benchmarks. RXL Stack follows (Accuracy 0.861,
+  Macro F1 0.772), while voting variants underperform on minority-sensitive metrics. Cross-validation
+  confirms stability (TriBoost Stack: Macro F1 0.772 ± 0.004), and temporal evaluation validates deployment
+  readiness (Macro F1 0.754). Analysis shows practical viability: parallel CPU execution and GPU acceleration
+  deliver training speedups without sacrificing quality. The framework provides a validated solution for
+  operational weather forecasting systems, balancing predictive performance and computational constraints.'
+significance: 2
+cited_by: 1
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

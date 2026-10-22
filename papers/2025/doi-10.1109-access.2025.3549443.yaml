@@ -1,0 +1,51 @@
+id: doi-10.1109-access.2025.3549443
+title: WGAN-GP-Based Conditional GAN (cGAN) With Extreme Critic for Precipitation Downscaling in a Key
+  Agricultural Region of the Northeastern U.S.
+authors:
+- Jangho Lee
+- Sun Young Park
+date: '2025-01-01'
+year: 2025
+venue: IEEE Access
+venue_type: journal
+ids:
+  doi: 10.1109/access.2025.3549443
+  openalex: W4408280945
+links:
+  paper: https://doi.org/10.1109/access.2025.3549443
+  pdf: https://doi.org/10.1109/access.2025.3549443
+topic: downscaling
+topics:
+- extremes-hazards
+type: model
+method:
+- gan-vae
+- cnn
+spatial:
+- regional
+data:
+- era5
+- nwp-analysis
+status: research
+summary: A WGAN-GP conditional GAN with an extreme-classification critic downscales precipitation over
+  the US Northeast, improving heavy-rain tail representation and fractions skill scores.
+abstract: This study develops a conditional Generative Adversarial Network with a multi-head Critic (cGAN_ext),
+  under a Wasserstein GAN with gradient penalty (WGAN-GP) framework, to downscale coarse-resolution meteorological
+  data into high-resolution precipitation fields. The model’s U-Net Generator combines large-scale atmospheric
+  inputs—2 m temperature, total column water vapor, mean sea-level pressure, and downsampled precipitation—with
+  a noise tensor, while the Critic enforces adversarial constraints and explicitly classifies extreme
+  events. By focusing on rare high-intensity rainfall within the adversarial training loop, cGAN_ext captures
+  crucial tail behavior that can be overlooked by conventional approaches. Experimental results reveal
+  that cGAN_ext not only preserves fine-grained spatial details but also better represents heavy precipitation
+  episodes, thereby improving essential metrics such as mean squared error, fractions skill scores for
+  extremes, and temporal correlation. Visual analysis further confirms the model’s ability to reproduce
+  sharp precipitation fronts and narrow bands, underscoring the benefits of integrating an extreme-classification
+  objective into a WGAN-GP cGAN pipeline. This enhanced downscaling method offers more accurate and coherent
+  high-resolution precipitation maps, supporting informed decision-making in agricultural planning and
+  water resource management.
+significance: 3
+cited_by: 10
+score: 12
+highlight: false
+added: '2026-10-22'
+source: snowball

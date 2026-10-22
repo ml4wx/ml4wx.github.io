@@ -1,0 +1,51 @@
+id: arxiv-2411.12013
+title: 'Neural and Time-Series Approaches for Pricing Weather Derivatives: Performance and Regime Adaptation
+  Using Satellite Data'
+authors:
+- Marco Hening Tallarico
+- Pablo Olivares
+date: '2024-11-18'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2411.12013'
+  openalex: W4404573514
+links:
+  paper: https://arxiv.org/abs/2411.12013
+  pdf: https://arxiv.org/pdf/2411.12013
+topic: applications-impacts
+topics:
+- climate-analysis-attribution
+type: application
+method:
+- classical-ml
+- cnn
+timescale:
+- seasonal
+spatial:
+- local
+data:
+- other
+status: research
+summary: A CNN learns season-specific gamma parameters for precipitation, and a neural network prices
+  temperature weather derivatives in Toronto and Chicago using NASA POWER data.
+abstract: 'This paper studies pricing of weather-derivative (WD) contracts on temperature and precipitation.
+  For temperature-linked strangles in Toronto and Chicago, we benchmark a harmonic-regression/ARMA model
+  against a feed-forward neural network (NN), finding that the NN reduces out-of-sample mean-squared error
+  (MSE) and materially shifts December fair values relative to both the time-series model and the industry-standard
+  Historic Burn Approach (HBA). For precipitation, we employ a compound Poisson--Gamma framework: shape
+  and scale parameters are estimated via maximum likelihood estimation (MLE) and via a convolutional neural
+  network (CNN) trained on 30-day rainfall sequences spanning multiple seasons. The CNN adaptively learns
+  season-specific $(α,β)$ mappings, thereby capturing heterogeneity across regimes that static i.i.d.\
+  fits miss. At valuation, we assume days are i.i.d.\ $Γ(\hatα,\hatβ)$ within each regime and apply a
+  mean-count approximation (replacing the Poisson count by its mean ($n\hatλ$) to derive closed-form strangle
+  prices. Exploratory analysis of 1981--2023 NASA POWER data confirms pronounced seasonal heterogeneity
+  in $(α,β)$ between summer and winter, demonstrating that static global fits are inadequate. Back-testing
+  on Toronto and Chicago grids shows that our regime-adaptive CNN yields competitive valuations and underscores
+  how model choice can shift strangle prices. Payoffs are evaluated analytically when possible and by
+  simulation elsewhere, enabling a like-for-like comparison of forecasting and valuation methods.'
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

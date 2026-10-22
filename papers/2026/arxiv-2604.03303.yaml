@@ -1,0 +1,55 @@
+id: arxiv-2604.03303
+title: Downscaling weather forecasts from Low- to High-Resolution with Diffusion Models
+authors:
+- Joffrey Dumont Le Brazidec
+- Simon Lang
+- Martin Leutbecher
+- Baudouin Raoult
+- Gert Mertes
+- Florian Pinault
+- Aristofanis Tsiringakis
+- Pedro Maciel
+- Ana Prieto Nemesio
+- Jan Polster
+- Cathal O Brien
+- Matthew Chantry
+date: '2026-03-30'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2604.03303'
+  openalex: W7151247253
+links:
+  paper: https://arxiv.org/abs/2604.03303
+  pdf: https://arxiv.org/pdf/2604.03303
+topic: downscaling
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+timescale:
+- medium
+spatial:
+- global
+data:
+- nwp-analysis
+status: pre-operational
+summary: Anemoi-based diffusion model downscales 100 km IFS ensemble forecasts to 30 km, improving FCRPS
+  and reproducing small-scale spectra and tropical cyclone extremes.
+abstract: We introduce a probabilistic diffusion-based method for global atmospheric downscaling implemented
+  within the Anemoi framework. The approach transforms low-resolution ensemble forecasts into high-resolution
+  ensembles by learning the conditional distribution of finer-scale residuals, defined as the difference
+  between the high-resolution fields and the interpolated low-resolution inputs. The system is trained
+  on reforecast pairs from ECMWF IFS, using coarse fields at 100 km to reconstruct fine-scale variability
+  at 30 km resolution. The bulk of the training focuses on recovering small-scale structures, while fine-tuning
+  in high-noise regimes enables the generation of extremes. Evaluation against the medium-range IFS ensemble
+  target shows that the model increases probabilistic skill (FCRPS) for surface variables, reproduces
+  target power spectra at small scales, captures physically consistent multivariate relationships such
+  as wind-pressure coupling, and generates extreme values consistent with those of the target ensemble
+  in tropical cyclones.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,61 @@
+id: doi-10.3390-rs18071061
+title: 'FADiff: A Frequency-Aware Diffusion Model Based on Hybrid CNN–Transformer Network for Radar-Based
+  Precipitation Nowcasting'
+authors:
+- Jiandan Zhong
+- Wei Deng
+- Guanru Lyu
+- Jingbo Zhai
+- Yingxiang Li
+- Yajuan Xue
+- Zhipeng Yang
+date: '2026-04-02'
+year: 2026
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs18071061
+  openalex: W7147659195
+links:
+  paper: https://doi.org/10.3390/rs18071061
+orgs:
+- cma
+topic: nowcasting
+type: model
+method:
+- diffusion
+- cnn
+- transformer
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: FADiff, a frequency-aware latent diffusion model with hybrid CNN-Transformer backbone, improves
+  radar precipitation nowcasting on CIKM and SEVIR, especially at high intensities.
+abstract: Precipitation nowcasting is a critical part of meteorological services and applications. Recently,
+  mainstream research has been focused on adopting deep learning-based models to generate the predictions,
+  yet existing deep learning models face challenges with blurry predictions that fail to capture high-frequency
+  meteorological details, difficulty modeling both local correlations and long-range spatial dependencies,
+  and a fundamental signal–noise confusion within the diffusion process that degrades structural fidelity.
+  In this paper, we propose FADiff, a novel frequency-aware diffusion model based on a hybrid CNN–Transformer
+  network for radar-based precipitation nowcasting. A hybrid CNN–Transformer backbone is first designed
+  to integrate the CNNs with the Transformers, jointly enabling the local and global feature extraction
+  capability of the meteorological dynamics. Subsequently, a novel Frequency-Aware Module (FAM) is proposed
+  to mitigate signal–noise confusion. By transforming features into the frequency domain via the Discrete
+  Cosine Transform (DCT), the FAM performs content-adaptive filtering with a learnable gating mechanism,
+  which is designed to suppress noise-dominant frequency components while benefiting high-frequency signals
+  corresponding to real meteorological structures. Finally, these components are embedded within a latent
+  diffusion model to form an end-to-end nowcasting framework. Extensive experiments on the CIKM and SEVIR
+  datasets demonstrate that the proposed FADiff outperforms state-of-the-art methods across a comprehensive
+  suite of evaluation metrics. Significantly, under high-intensity precipitation thresholds, FADiff exhibits
+  remarkable robustness and stability, presenting its superior capability in generating meteorologically
+  critical structures with high fidelity.
+significance: 3
+cited_by: 1
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

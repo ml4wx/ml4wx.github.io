@@ -1,0 +1,58 @@
+id: doi-10.1017-eds.2026.10048
+title: 'Emulating non-differentiable metrics via knowledge-guided learning: Introducing the Minkowski
+  image loss'
+authors:
+- Filippo Quarenghi
+- Ryan Cotsakis
+- Tom Beucler
+date: '2026-01-01'
+year: 2026
+venue: Environmental Data Science
+venue_type: journal
+ids:
+  arxiv: '2604.11422'
+  doi: 10.1017/eds.2026.10048
+  openalex: W7167788396
+links:
+  paper: https://doi.org/10.1017/eds.2026.10048
+  pdf: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/14BF7C2815D79B341086B74A44C8469F/S263446022610048Xa.pdf/div-class-title-emulating-non-differentiable-metrics-via-knowledge-guided-learning-introducing-the-minkowski-image-loss-div.pdf
+topic: downscaling
+topics:
+- xai-uq-physics
+type: model
+method:
+- physics-constrained
+- cnn
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Minkowski image loss makes precipitation-field geometry differentiable; constrained CNN emulator
+  on OPERA radar eliminates geometric violations seen in baselines, which produce impossible fields in
+  7.8% of cases.
+abstract: 'Abstract The “differentiability gap” presents a primary bottleneck in Earth system deep learning:
+  Since models cannot be trained directly on non-differentiable scientific metrics and must rely on smooth
+  proxies (e.g., MSE), they often fail to capture high-frequency details, yielding “blurry” outputs. We
+  develop a framework that bridges this gap using two different methods to deal with non-differentiable
+  functions: The first is to analytically approximate the original non-differentiable function into a
+  differentiable equivalent one; the second is to learn differentiable surrogates for scientific functionals.
+  We formulate the analytical approximation by relaxing discrete topological operations using temperature-controlled
+  sigmoids and continuous logical operators. Conversely, our neural emulator uses Lipschitz-convolutional
+  neural networks to stabilize gradient learning via: (1) spectral normalization to bound the Lipschitz
+  constant and (2) hard architectural constraints enforcing geometric principles. We demonstrate this
+  framework’s utility by developing the Minkowski image loss, a differentiable equivalent for the integral-geometric
+  measures of surface precipitation fields (area, perimeter, and connected components). Validated on the
+  EUMETNET OPERA dataset, our constrained neural surrogate achieves high emulation accuracy, completely
+  eliminating the geometric violations observed in unconstrained baselines, which generate physically
+  impossible precipitation fields in up to 7.8% of cases. However, applying these differentiable surrogates
+  to a deterministic super-resolution task reveals a fundamental trade-off: While strict Lipschitz regularization
+  ensures optimization stability, it inherently over-smooths gradient signals, restricting the recovery
+  of highly localized convective textures. This work highlights the necessity of coupling such topological
+  constraints with stochastic generative architectures to achieve full morphological realism.'
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

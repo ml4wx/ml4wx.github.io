@@ -1,0 +1,50 @@
+id: doi-10.1016-j.srs.2025.100335
+title: Temporally dense 100-m land surface temperature retrieval via attention-based super-resolution
+  deep learning
+authors:
+- Taufiq Rashid
+- Di Tian
+date: '2025-11-19'
+year: 2025
+venue: Science of Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1016/j.srs.2025.100335
+  openalex: W4416510072
+links:
+  paper: https://doi.org/10.1016/j.srs.2025.100335
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Attention-based residual network produces 100 m land surface temperature time series from MODIS
+  and auxiliary data, outperforming ESTARFM (r=0.984 vs 0.898).
+abstract: Land surface temperature (LST) is a key variable for governing surface water and energy exchanges
+  and supports applications in hydrology, water management, climate monitoring, and agriculture. The ECOsystem
+  Spaceborne Thermal Radiometer Experiment on Space Station (ECOSTRESS) offers LST observations at fine
+  spatial resolution (70 m) but suffers from limited temporal coverage, cloud interference, and mission
+  duration constraints. To overcome these limitations, we develop an Attention-based Super-Resolution
+  deep Residual network (ASRRN) that generates 100-m LST estimates with dense temporal coverage using
+  coarse-resolution MODIS LST and multiple auxiliary datasets. ASRRN integrates convolutional layers,
+  residual learning, and attention mechanisms to enhance spatial feature extraction, while the model uncertainty
+  is quantified using Monte Carlo dropout. We examine the contribution of auxiliary inputs, including
+  Harmonized Landsat Sentinel (HLS) surface reflectance, Sentinel-1 SAR, and digital elevation model (DEM),
+  and find that the configuration using MODIS LST with HLS (SWIR1, NDVI) and DEM yields performance comparable
+  to ECOSTRESS. Cross-validation over 12 heterogeneous regions across the contiguous United States and
+  two sites in Australia shows that ASRRN outperforms the Enhanced Spatial and Temporal Adaptive Reflectance
+  Fusion Model (ESTARFM), achieving higher correlation (r = 0.984 vs. 0.898), lower RMSE (2.267 K vs.
+  5.764 K), and lower MAE (1.626 K vs. 4.193 K) against observations. It also outperforms the Super-Resolution
+  Convolutional Neural Network (SRCNN) and the Enhanced Deep Super-Resolution network (EDSR). Overall,
+  ASRRN enables generation of temporally dense, 100-m LST image time series without using fine-resolution
+  thermal observations at estimation time, advancing high-resolution LST monitoring for various applications.
+significance: 2
+cited_by: 5
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

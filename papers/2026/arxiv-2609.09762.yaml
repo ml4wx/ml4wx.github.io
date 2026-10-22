@@ -1,0 +1,46 @@
+id: arxiv-2609.09762
+title: 'MethaneFuse: Learning from Multi-Sensor Satellite Observations for Methane Plume Detection'
+authors:
+- Yuyao Wang
+- Juliana Y. Leung
+- Di Niu
+date: '2026-09-09'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.09762'
+  openalex: W7212158159
+links:
+  paper: https://arxiv.org/abs/2609.09762
+  pdf: https://arxiv.org/pdf/2609.09762
+topic: observations-remote-sensing
+type: model
+method:
+- other
+spatial:
+- local
+data:
+- satellite
+status: research
+summary: MethaneFuse fuses partially available multi-sensor satellite data for methane plume detection,
+  expanding usable cases from 3,211 to 8,981 and reaching 84.87 F1.
+abstract: 'Methane plume detection from satellite imagery is constrained by incomplete observations: public
+  satellites provide complementary spatial, spectral, and atmospheric evidence, but real plume cases rarely
+  contain fully paired multi-sensor measurements because of revisit schedules, cloud coverage, acquisition
+  quality, and the transient nature of emissions. Most learning-based detectors rely on single-sensor
+  inputs, especially Sentinel-2 (S2), leaving many reported plume cases unusable. We construct MethaneUnion,
+  a temporal multi-sensor dataset built from Carbon Mapper plume reports and matched S2, Landsat 8/9 (L8/9),
+  EMIT, and Sentinel-5P (S5P) observations. Built on MethaneUnion, MethaneFuse learns from heterogeneous
+  satellite observations under partial sensor availability without requiring complete four-sensor measurements.
+  MethaneUnion expands usable coverage from 3,211 valid S2-matched plume cases to 8,981 reported plume
+  cases with multi-sensor observations. At the representative 480 m setting, MethaneFuse achieves 84.87
+  F1 and 93.62 AUROC, improving over the strongest baseline by 5.65 F1 and 8.30 AUROC points while reducing
+  false positives by 8.19 points. Sensor-availability experiments show that MethaneFuse improves detection
+  when S2 is available and transfers plume knowledge to L8/9, EMIT, and S5P when S2 is unavailable. These
+  results demonstrate the value of learning from incomplete heterogeneous sensor observations for practical
+  methane plume detection.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

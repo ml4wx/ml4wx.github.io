@@ -1,0 +1,58 @@
+id: doi-10.1016-j.tcrr.2026.04.009
+title: Coordinate Attention Based Wide & Deep Fusion Network for Typhoon Track Prediction
+authors:
+- Guangxin He
+- Jiadian Wang
+- Jie Feng
+- Jingjia Luo
+- Xun Li
+date: '2026-04-17'
+year: 2026
+venue: Tropical Cyclone Research and Review
+venue_type: journal
+ids:
+  doi: 10.1016/j.tcrr.2026.04.009
+  openalex: W7154627871
+links:
+  paper: https://doi.org/10.1016/j.tcrr.2026.04.009
+orgs:
+- fudan-university
+- nuist
+topic: extremes-hazards
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+- other
+status: research
+summary: Wide and Deep LSTM and ConvGRU network with coordinate attention predicts typhoon tracks using
+  CMA best-track data and ERA5 fields for 2020–2024.
+abstract: Accurate forecasting of the tracks of tropical cyclones is of crucial importance for effective
+  disaster risk management in coastal regions. These storms are recognized as one of nature's most hazardous
+  weather phenomena. However, traditional typhoon track prediction methods face certain limitations in
+  handling complex meteorological data and multi-dimensional features. To improve prediction accuracy,
+  this paper proposes an improved Wide & Deep framework. This framework utilizes a Stacked Two-layer Long
+  Short-Term Memory (S2-LSTM) encoder in the Wide branch to model the sequential features of typhoon tracks,
+  and incorporates a Multi-ConvGRU in the Deep branch to handle three-dimensional meteorological data.
+  Following a dynamic/static feature decomposition, the S2-LSTM encoder processes a subset of dynamic
+  features, effectively integrating typhoon position, wind speed, and rate-of-change information from
+  multiple time steps to better capture the temporal evolution patterns of typhoon movement. Furthermore,
+  a Coordinate Attention (CA) module is introduced, which captures positional dependencies along the vertical
+  and horizontal dimensions within the feature maps through a factorized average pooling operation. This
+  enhances the model's ability in identifying key areas within atmospheric fields, thus ensuring improved
+  spatial precision in typhoon track forecasting. The model's efficacy was assessed with the 2020–2024
+  typhoon track dataset published by the China Meteorological Administration (CMA) and the ERA5 reanalysis
+  product maintained by the European Centre for Medium-Range Weather Forecasts (ECMWF). The findings indicate
+  how the two introduced enhancements to the model lead to higher precision for deep learning-based forecasts
+  to a certain extent.
+significance: 3
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

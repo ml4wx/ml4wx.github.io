@@ -1,0 +1,64 @@
+id: doi-10.3390-rs18111743
+title: Joint Hail Detection from Satellite and Radar Observations with Spatially Adaptive Alignment and
+  Wavelet-Gated Refinement
+authors:
+- Jia-Min Wang
+- Hai-Jiang Wang
+- Jieyi Li
+- Tao Liu
+- Tao-Feng Gu
+- Yun-Heng Xue
+date: '2026-05-29'
+year: 2026
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs18111743
+  openalex: W7162760619
+links:
+  paper: https://doi.org/10.3390/rs18111743
+  pdf: https://doi.org/10.3390/rs18111743
+orgs:
+- cma
+topic: extremes-hazards
+topics:
+- observations-remote-sensing
+type: model
+method:
+- transformer
+- cnn
+spatial:
+- regional
+data:
+- satellite
+- radar
+status: research
+summary: HailDeformer aligns satellite and radar features via deformable cross-attention for hail detection,
+  reaching mAP@0.5 of 0.916 and the lowest false alarm ratio.
+abstract: Detecting hail from remote sensing observations remains challenging because hail develops rapidly
+  and its signatures may appear at different levels within a storm. Ground-based radar and geostationary
+  meteorological satellites are the two primary observing systems for this task, yet their observations
+  are often spatially misaligned. Satellite measurements mainly characterize the thermal structure near
+  the cloud top, whereas radar observations capture the lower-level precipitation core. This mismatch
+  is further exacerbated by satellite parallax, namely the apparent horizontal shift of high cloud tops
+  caused by the oblique viewing geometry of a geostationary satellite, together with the vertical tilt
+  of convective storms. Existing joint methods generally combine satellite cloud-top information with
+  radar precipitation information directly, without explicitly correcting the spatial displacement, which
+  limits detection accuracy. To address this issue, we propose HailDeformer, a deep learning framework
+  that first aligns satellite and radar features through a bidirectional deformable cross-attention module
+  equipped with a position-wise confidence gate and optimized with smoothness, contrastive alignment,
+  and observation-structure consistency losses, and then refines the fused representation using an inter-scale
+  attention module and a wavelet-guided refinement module. Experiments on a four-region dataset from China
+  show that HailDeformer consistently outperforms Direct Fusion, Manual Weighting, Cross-Attention Fusion,
+  and Optical Flow Alignment, achieving a mean Average Precision at IoU 0.5 (mAP@0.5) of 0.916, an F1
+  score of 0.864, a Critical Success Index (CSI) of 0.760, and the lowest False Alarm Ratio (FAR) of 0.149.
+  Ablation studies further confirm that all proposed modules and associated constraints contribute to
+  the overall performance, with the alignment module providing the largest improvement. Additional evaluations
+  demonstrate that HailDeformer remains effective throughout storm evolution and under challenging observational
+  conditions.
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-10-22'
+source: snowball

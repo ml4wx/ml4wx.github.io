@@ -1,0 +1,54 @@
+id: arxiv-2411.06155
+title: 'HiHa: Introducing Hierarchical Harmonic Decomposition to Implicit Neural Compression for Atmospheric
+  Data'
+authors:
+- Zhewen Xu
+- Baoxiang Pan
+- Hongliang Li
+- Xiaohui Wei
+date: '2024-11-09'
+year: 2024
+venue: Computers & Geosciences
+venue_type: journal
+ids:
+  arxiv: '2411.06155'
+  doi: 10.1016/j.cageo.2025.106078
+  openalex: W4415879618
+links:
+  paper: https://doi.org/10.1016/j.cageo.2025.106078
+  pdf: https://arxiv.org/pdf/2411.06155
+orgs:
+- cma
+- iap-cas
+topic: infra-software
+topics:
+- observations-remote-sensing
+type: model
+method:
+- other
+spatial:
+- global
+data:
+- era5
+status: research
+summary: HiHa uses hierarchical harmonic decomposition with implicit neural representations to compress
+  atmospheric data more accurately than mainstream compressors and INR baselines.
+abstract: The rapid development of large climate models has created the requirement of storing and transferring
+  massive atmospheric data worldwide. Therefore, data compression is essential for meteorological research,
+  but an efficient compression scheme capable of keeping high accuracy with high compressibility is still
+  lacking. As an emerging technique, Implicit Neural Representation (INR) has recently acquired impressive
+  momentum and demonstrates high promise for compressing diverse natural data. However, the INR-based
+  compression encounters a bottleneck due to the sophisticated spatio-temporal properties and variability.
+  To address this issue, we propose Hierarchical Harmonic decomposition implicit neural compression (HiHa)
+  for atmospheric data. HiHa firstly segments the data into multi-frequency signals through decomposition
+  of multiple complex harmonic, and then tackles each harmonic respectively with a frequency-based hierarchical
+  compression module consisting of sparse storage, multi-scale INR and iterative decomposition sub-modules.
+  We additionally design a temporal residual compression module to accelerate compression by utilizing
+  temporal continuity. Experiments depict that HiHa outperforms both mainstream compressors and other
+  INR-based methods in both compression fidelity and capabilities, and also demonstrate that using compressed
+  data in existing data-driven models can achieve the same accuracy as raw data.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

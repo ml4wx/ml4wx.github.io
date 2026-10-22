@@ -1,0 +1,50 @@
+id: arxiv-2605.30184
+title: Can AI Weather Models Predict Beyond Two Weeks? A Quantitative Benchmark and Analysis of Long Rollouts
+authors:
+- Fanny Lehmann
+- Firat Ozdemir
+- Yun Cheng
+- Torsten Hoefler
+- Sebastian Schemm
+- Benedikt Soja
+- Siddhartha Mishra
+date: '2026-05-28'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.30184'
+  openalex: W7162782502
+links:
+  paper: https://arxiv.org/abs/2605.30184
+  pdf: https://arxiv.org/pdf/2605.30184
+topic: benchmarks-data-eval
+topics:
+- global-medium-range
+type: evaluation
+method:
+- transformer
+timescale:
+- medium
+- s2s
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Taxonomizes long-rollout failures of nine AI weather models into blow-up, drift, and loss of
+  seasonality, linking stability to how small spatio-temporal scales are treated.
+abstract: 'While AI weather models excel at short-to-medium range forecasts (up to 15 days), they frequently
+  suffer from ill-defined "instabilities" when rolled out over longer horizons. This work addresses the
+  lack of a formal taxonomy by categorizing these failures into three distinct regimes: blow-up, drift,
+  and loss of seasonality, through year-long rollouts of nine state-of-the-art AI weather models. Our
+  analysis reveals that stability hinges on the treatment of small spatio-temporal scales: unstable models
+  amplify high-frequency energy, while stable models act as denoisers when noise is added to their inputs.
+  Far from reducing these models to mere stochastic parrots, our findings highlight that stable models
+  generate unique weather trajectories, conditioned on the initial state. We verify our findings through
+  ablation studies on architectural design choices, conducted using state-of-the-art Vision Transformer
+  (ViT) AI weather model architectures.'
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

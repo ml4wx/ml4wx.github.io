@@ -1,0 +1,57 @@
+id: doi-10.1109-jstars.2026.3708145
+title: Accurate and Realistic Nowcasting Geo-Kompsat-2A Level-1 Infrared Observation With SimVP-GAN
+authors:
+- Yeonjun Kim
+- Jaehoon Jeong
+- Sungwook Hong
+date: '2026-01-01'
+year: 2026
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2026.3708145
+  openalex: W7166513949
+links:
+  paper: https://doi.org/10.1109/jstars.2026.3708145
+topic: nowcasting
+topics:
+- observations-remote-sensing
+type: model
+method:
+- gan-vae
+- cnn
+- rnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: SimVP-GAN nowcasts GEO-KOMPSAT-2A infrared imagery up to 6 hours, with band-level analysis showing
+  adversarial training adds high-frequency noise in water vapor channels.
+abstract: Accurate and realistic nowcasting of geostationary (GEO) weather satellite observations is critical
+  for improving early warning capabilities for natural hazards, such as heavy rainfall and wildfires.
+  This study proposes a deep learning framework, simpler yet better video prediction-generative adversarial
+  network (SimVP-GAN), to advance the nowcasting of Level-1 infrared (IR) observations up to 6 h from
+  the advanced meteorological imager onboard the GEO-Kompsat-2A satellite. The proposed framework couples
+  a modified SimVP generator, in which shortcut connections are removed to improve long-term prediction
+  stability, with a three-dimensional convolutional PatchGAN discriminator designed to capture spatiotemporal
+  characteristics. Comprehensive evaluations across nine IR channels against established convolutional,
+  generative, and recurrent baselines reveal distinct performance variations intricately aligned with
+  the physical characteristics of the spectral bands. Specifically, standalone convolutional models excelled
+  in smoother water vapor channels, where power spectral density analysis elucidated that adversarial
+  training introduces unnecessary high-frequency noise and a detrimental oversharpening effect. Conversely,
+  recurrent architecture achieved the lowest quantitative errors in intermediate channels dominated by
+  continuous advection but struggled to maintain structural fidelity in complex window channels. In contrast,
+  SimVP-GAN demonstrated superior capability in primary window and longwave absorption bands, successfully
+  enforcing structural integrity against localized, nonlinear thermodynamic changes. These findings highlight
+  the absolute necessity of exploring channel-adaptive loss weighting strategies and provide critical
+  insights into the domain-specific applicability of convolutional, generative, and recurrent models for
+  operational satellite nowcasting.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

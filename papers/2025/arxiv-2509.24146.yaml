@@ -1,0 +1,50 @@
+id: arxiv-2509.24146
+title: Evaluation of Machine and Deep Learning Techniques for Cyclone Trajectory Regression and Status
+  Classification by Time Series Data
+authors:
+- Ethan Zachary Lo
+- Dan Chie-Tien Lo
+date: '2025-09-29'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2509.24146'
+  openalex: W4415336010
+links:
+  paper: https://arxiv.org/abs/2509.24146
+  pdf: https://arxiv.org/pdf/2509.24146
+topic: extremes-hazards
+type: evaluation
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- global
+data:
+- other
+status: research
+summary: Random forest on NHC best-track time series predicts tropical cyclone status with 93% accuracy
+  after SMOTE, with pressure and wind errors around 2.2 mb and 2.4 kt.
+abstract: 'Accurate cyclone forecasting is essential for minimizing loss of life, infrastructure damage,
+  and economic disruption. Traditional numerical weather prediction models, though effective, are computationally
+  intensive and prone to error due to the chaotic nature of atmospheric systems. This study proposes a
+  machine learning (ML) approach to forecasting tropical cyclone trajectory and status using time series
+  data from the National Hurricane Center, including recently added best track wind radii. A two-stage
+  ML pipeline is developed: a regression model first predicts cyclone features maximum wind speed, minimum
+  pressure, trajectory length, and directional change using a sliding window of historical data. These
+  outputs are then input into classification models to predict the cyclone''s categorical status. Gradient
+  boosting regression and three classifiers random forest (RF), support vector machine (SVM), and multilayer
+  perceptron (MLP) are evaluated. After hyperparameter tuning and synthetic minority oversampling (SMOTE),
+  the RF classifier achieves the highest performance with 93% accuracy, outperforming SVM and MLP across
+  precision, recall, and F1 score. The RF model is particularly robust in identifying minority cyclone
+  statuses and minimizing false negatives. Regression results yield low mean absolute errors, with pressure
+  and wind predictions within about 2.2 mb and 2.4 kt, respectively. These findings demonstrate that ML
+  models, especially ensemble-based classifiers, offer an effective, scalable alternative to traditional
+  forecasting methods, with potential for real-time cyclone prediction and integration into decision support
+  systems.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

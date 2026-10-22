@@ -1,0 +1,56 @@
+id: arxiv-2606.26421
+title: 'Otter Weather: Skillful and Computationally Efficient Medium-Range Weather Forecasting'
+authors:
+- Cristiana Diaconu
+- Jonas Scholz
+- Aliaksandra Shysheya
+- Stratis Markou
+- Payel Mukhopadhyay
+- Miles Cranmer
+- Richard E. Turner
+date: '2026-06-24'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.26421'
+  openalex: W7166176072
+links:
+  paper: https://arxiv.org/abs/2606.26421
+  pdf: https://arxiv.org/pdf/2606.26421
+topic: global-medium-range
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- other
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: Otter Weather is a compute-efficient ERA5 forecaster that beats the best NWP baseline by 9.6%
+  at 24 h and, as Otter-XL, improves CRPS 9.7% over IFS ENS.
+abstract: State-of-the-art medium-range AI weather models can outperform traditional Numerical Weather
+  Prediction (NWP) but require massive training budgets. This restricts usage for under-resourced groups
+  and severely limits fast model iteration. Here we develop Otter Weather, a highly efficient spatiotemporal
+  forecasting model designed to democratise high-performance weather prediction with AI. Evaluated on
+  ERA5 reanalysis data at 1.5° resolution using standard WeatherBench protocols, the Otter family significantly
+  advances the skill-compute Pareto frontier. The deterministic version outperforms the best NWP baseline
+  by 9.6% at a 24-hour lead time while requiring fewer than 3.5 A100-days for training. It provides a
+  2x efficiency gain over lightweight AI models and a 100-fold reduction in compute compared to resource-intensive
+  frontier architectures. We extend these efficiency gains into probabilistic forecasting by training
+  via the Continuous Ranked Probability Score (CRPS). Scaling to a larger architecture, Otter-XL achieves
+  a 9.7% CRPS improvement over the IFS ENS baseline. This yields an almost two-fold increase in predictive
+  skill over comparable lightweight models at similar compute budgets. Otter-XL also outperforms frontier
+  architectures like GenCast by over 2%, while using an order of magnitude less compute. Finally, Otter
+  is applied out-of-the-box to a complex acoustic scattering PDE task where it outperforms a state-of-the-art
+  foundation modelling approach, suggesting that the advances made here might apply across a range of
+  scientific domains.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

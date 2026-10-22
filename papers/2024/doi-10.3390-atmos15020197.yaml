@@ -1,0 +1,62 @@
+id: doi-10.3390-atmos15020197
+title: Development and Evaluation of a Short-Term Ensemble Forecasting Model on Sea Surface Wind and Waves
+  across the Bohai and Yellow Sea
+authors:
+- Tonghui Zang
+- Jing Zou
+- Yunzhou Li
+- Zhijin Qiu
+- Bo Wang
+- Chaoran Cui
+- Zhiqian Li
+- Tong Hu
+- Yanping Guo
+date: '2024-02-04'
+year: 2024
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos15020197
+  openalex: W4391541556
+links:
+  paper: https://doi.org/10.3390/atmos15020197
+  pdf: https://www.mdpi.com/2073-4433/15/2/197/pdf?version=1707039751
+topic: post-processing
+type: model
+method:
+- classical-ml
+- rnn
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Ensemble of MOS, BPNN, LSTM and CNN bias corrections for COAWST wind and wave forecasts cuts
+  mean wind-speed bias by about 96–99% in the Bohai and Yellow Sea.
+abstract: In this study, an ensemble forecasting model for in situ wind speed and wave height was developed
+  using the Coupled Ocean–Atmosphere–Wave–Sediment Transport (COAWST) model. This model utilized four
+  bias correction algorithms—Model Output Statistics (MOS), Back Propagation Neural Network (BPNN), Long
+  Short-Term Memory (LSTM) neural network, and Convolutional Neural Network (CNN)—to construct ensemble
+  forecasts. The training data were derived from the COAWST simulations of one year and observations from
+  three buoy stations (Laohutan, Zhifudao, and Lianyungang) in the Yellow Sea and Bohai Sea. After the
+  optimization of the bias correction model training, the subsequent evaluations on the ensemble forecasts
+  showed that the in situ forecasting accuracy of wind speed and wave height was significantly improved.
+  Although there were some uncertainties on bias correction performance levels for individual algorithms,
+  the uncertainties were greatly reduced by the ensemble forecasts. Depending on the dynamic weight assignment,
+  the ensemble forecasts presented a stable performance even when the corrected forecasts by three algorithms
+  had an obvious negative bias. Specifically, the ensemble forecasting bias was found with a mean reduction
+  of about 96%~99% and 91%~95% for wind speed and wave height, and a reduction of about 91%~98% and 16%~54%
+  during the period of Typhoon “Muifa”. For the four correction algorithms, the performance of bias correction
+  was not directly related to the algorithm complexity. However, the strategies with more complex algorithms
+  (i.e., CNN) were more conservative, and simple algorithms (i.e., MOS) might have induced unstable performance
+  levels despite their lower bias in some cases.
+significance: 3
+cited_by: 4
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

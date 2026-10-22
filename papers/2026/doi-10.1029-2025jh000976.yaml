@@ -1,0 +1,63 @@
+id: doi-10.1029-2025jh000976
+title: Skillful Short‐Term Forecasting of Clouds With a Cascade Diffusion Model
+authors:
+- Haoming Chen
+- Xiaohui Zhong
+- Qiang Zhai
+- Xiaomeng Li
+- Ying Wa Chan
+- Pak Wai Chan
+- Muqing Yang
+- Yuanyuan Huang
+- Hao Li
+- Xiaoming Shi
+date: '2026-02-01'
+year: 2026
+venue: Journal of Geophysical Research Machine Learning and Computation
+venue_type: journal
+ids:
+  doi: 10.1029/2025jh000976
+  openalex: W7128431692
+links:
+  paper: https://doi.org/10.1029/2025jh000976
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2025JH000976
+orgs:
+- fudan-university
+topic: nowcasting
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+- cnn
+timescale:
+- nowcast
+- short
+spatial:
+- regional
+data:
+- satellite
+- nwp-analysis
+status: research
+summary: SATcast cascaded diffusion model forecasts satellite cloud fields up to 24 hours using FuXi-predicted
+  fields as conditioning, outperforming conventional methods on fractions skill score.
+abstract: Abstract Accurate short‐term forecasting of clouds from satellite imagery is a foundational
+  technology for downstream meteorological disaster mitigation and aviation safety enhancement systems,
+  particularly in developing countries and remote areas lacking ground‐based observation infrastructure.
+  Existing deep learning models often produce blurry results and exhibit reduced accuracy when forecasting
+  atmospheric variables, while recent advances in video prediction show the potential to solve these problems.
+  Here, we introduce SATcast, a diffusion‐based model that employs a cascaded architecture and multimodal
+  inputs for forecasting cloud evolution from satellite imagery. SATcast incorporates physical fields
+  predicted by FuXi, a deep‐learning weather forecasting model, alongside historical satellite observations
+  as conditional inputs to generate high‐quality future cloud fields. Comprehensive evaluations demonstrate
+  that SATcast consistently outperforms conventional methods across multiple metrics such as fractions
+  skill score, achieving superior accuracy and robustness. Ablation studies underscore the importance
+  of its multimodal design and cascade architecture in enhancing predictive performance. Notably, SATcast
+  maintains skillful predictions for up to 24 hr, underscoring its potential for operational forecasting
+  applications.
+significance: 4
+cited_by: 1
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

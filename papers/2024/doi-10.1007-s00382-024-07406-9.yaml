@@ -1,0 +1,53 @@
+id: doi-10.1007-s00382-024-07406-9
+title: Multivariate bias correction and downscaling of climate models with trend-preserving deep learning
+authors:
+- Fang Wang
+- Di Tian
+date: '2024-09-04'
+year: 2024
+venue: Climate Dynamics
+venue_type: journal
+ids:
+  doi: 10.1007/s00382-024-07406-9
+  openalex: W4402219577
+links:
+  paper: https://doi.org/10.1007/s00382-024-07406-9
+topic: downscaling
+topics:
+- post-processing
+type: model
+method:
+- cnn
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+status: research
+summary: Combines super-resolution residual network with trend-preserving quantile delta mapping to jointly
+  bias-correct and downscale six CMIP6 variables, better preserving extremes and drought.
+abstract: Abstract Global climate models (GCMs) and Earth system models (ESMs) exhibit biases, with resolutions
+  too coarse to capture local variability for fine-scale, reliable drought and climate impact assessment.
+  However, conventional bias correction approaches may cause implausible climate change signals due to
+  unrealistic representations of spatial and intervariable dependences. While purely data-driven deep
+  learning has achieved significant progress in improving climate and earth system simulations and predictions,
+  they cannot reliably learn the circumstances (e.g., extremes) that are largely unseen in historical
+  climate but likely becoming more frequent in the future climate (i.e., climate non-stationarity). This
+  study shows an integrated trend-preserving deep learning approach that can address the spatial and intervariable
+  dependences and climate non-stationarity issues for downscaling and bias correcting GCMs/ESMs. Here
+  we combine the super-resolution deep residual network (SRDRN) with the trend-preserving quantile delta
+  mapping (QDM) to downscale and bias correct six primary climate variables at once (including daily precipitation,
+  maximum temperature, minimum temperature, relative humidity, solar radiation, and wind speed) from five
+  state-of-the-art GCMs/ESMs in the Coupled Model Intercomparison Project Phase 6 (CMIP6). We found that
+  the SRDRN-QDM approach greatly reduced GCMs/ESMs biases in spatial and intervariable dependences while
+  significantly better-reducing biases in extremes compared to deep learning. The estimated drought based
+  on the six bias-corrected and downscaled variables captured the observed drought intensity and frequency,
+  which outperformed state-of-the-art multivariate bias correction approaches, demonstrating its capability
+  for correcting GCMs/ESMs biases in spatial and multivariable dependences and extremes.
+significance: 4
+cited_by: 28
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

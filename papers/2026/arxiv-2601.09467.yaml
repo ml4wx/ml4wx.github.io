@@ -1,0 +1,70 @@
+id: arxiv-2601.09467
+title: 'Searth Transformer: A Transformer Architecture Incorporating Earth''s Geospheric Physical Priors
+  for Global Mid-Range Weather Forecasting'
+authors:
+- Tianye Li
+- Qi Liu
+- Hao Li
+- Lei Chen
+- Wencong Cheng
+- Fei Zheng
+- Xiangao Xia
+- Ya Wang
+- Gang Huang
+- Weiwei Wang
+- Xuan Tong
+- Ziqing Zu
+- Yi Fang
+- Shenming Fu
+- Jiang Jiang
+- Haochen Li
+- Mingxing Li
+- Jiangjiang Xia
+date: '2026-01-14'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2601.09467'
+  openalex: W7124301948
+links:
+  paper: https://arxiv.org/abs/2601.09467
+  pdf: https://arxiv.org/pdf/2601.09467
+orgs:
+- fudan-university
+- iap-cas
+- nuist
+topic: global-medium-range
+type: model
+method:
+- transformer
+- physics-constrained
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: YanTian, a Transformer with Earth-geometry-aware shifted attention and relay autoregressive fine-tuning,
+  beats ECMWF HRES at 1-degree resolution and extends Z500 skill to 10.3 days.
+abstract: Accurate global medium-range weather forecasting is fundamental to Earth system science. Most
+  existing Transformer-based forecasting models adopt vision-centric architectures that neglect the Earth's
+  spherical geometry and zonal periodicity. In addition, conventional autoregressive training is computationally
+  expensive and limits forecast horizons due to error accumulation. To address these challenges, we propose
+  the Shifted Earth Transformer (Searth Transformer), a physics-informed architecture that incorporates
+  zonal periodicity and meridional boundaries into window-based self-attention for physically consistent
+  global information exchange. We further introduce a Relay Autoregressive (RAR) fine-tuning strategy
+  that enables learning long-range atmospheric evolution under constrained memory and computational budgets.
+  Based on these methods, we develop YanTian, a global medium-range weather forecasting model. YanTian
+  achieves higher accuracy than the high-resolution forecast of the European Centre for Medium-Range Weather
+  Forecasts and performs competitively with state-of-the-art AI models at one-degree resolution, while
+  requiring roughly 200 times lower computational cost than standard autoregressive fine-tuning. Furthermore,
+  YanTian attains a longer skillful forecast lead time for Z500 (10.3 days) than HRES (9 days). Beyond
+  weather forecasting, this work establishes a robust algorithmic foundation for predictive modeling of
+  complex global-scale geophysical circulation systems, offering new pathways for Earth system science.
+significance: 5
+score: 55
+highlight: false
+added: '2026-10-22'
+source: backfill

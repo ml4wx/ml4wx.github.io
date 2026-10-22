@@ -1,0 +1,58 @@
+id: arxiv-2506.13687
+title: Enforcing tail calibration when training probabilistic forecast models
+authors:
+- J. Wessel
+- Maybritt Schillinger
+- F. Kwasniok
+- Sam Allen
+date: '2025-06-16'
+year: 2025
+venue: ArXiv
+venue_type: journal
+ids:
+  arxiv: '2506.13687'
+  doi: 10.1016/j.ijforecast.2026.04.009
+  openalex: W4415109286
+links:
+  paper: https://arxiv.org/abs/2506.13687
+orgs:
+- eth-zurich
+- kit
+topic: post-processing
+topics:
+- probabilistic-ensembles
+- extremes-hazards
+type: model
+method:
+- classical-ml
+- other
+timescale:
+- short
+spatial:
+- regional
+data:
+- stations
+status: research
+summary: Tail-calibration loss regularisation for probabilistic UK wind speed forecasts shows state-of-the-art
+  models are miscalibrated for extremes and that loss adaptation improves reliability.
+abstract: Probabilistic forecasts are typically obtained using state-of-the-art statistical and machine
+  learning models, with model parameters estimated by optimizing a proper scoring rule over a set of training
+  data. If the model class is not correctly specified, then the learned model will not necessarily issue
+  forecasts that are calibrated. Calibrated forecasts allow users to appropriately balance risks in decision
+  making, and it is particularly important that forecast models issue calibrated predictions for extreme
+  events, since such outcomes often generate large socio-economic impacts. In this work, we study how
+  the loss function used to train probabilistic forecast models can be adapted to improve the reliability
+  of forecasts made for extreme events. We investigate loss functions based on weighted scoring rules,
+  and additionally propose regularizing loss functions using a measure of tail miscalibration. We apply
+  these approaches to a hierarchy of increasingly flexible forecast models for UK wind speeds, including
+  simple parametric models, distributional regression networks, and conditional generative models. We
+  demonstrate that state-of-the-art models do not issue calibrated forecasts for extreme wind speeds,
+  and that the calibration of forecasts for extreme events can be improved by suitable adaptations to
+  the loss function during model training. This introduces a trade-off between calibrated forecasts for
+  extreme events and calibrated forecasts for more common outcomes.
+significance: 3
+cited_by: 8
+score: 22
+highlight: false
+added: '2026-10-22'
+source: snowball

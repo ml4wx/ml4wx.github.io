@@ -1,0 +1,59 @@
+id: doi-10.1016-j.pce.2026.104702
+title: 'Enhancing the forecasting of Lightning Density over Northern India: An Ensemble and Deep Learning
+  Models Approach'
+authors:
+- Manu Jangid
+- S. K. Panda
+- Unashish Mondal
+- Devesh Sharma
+date: '2026-07-01'
+year: 2026
+venue: Physics and Chemistry of the Earth Parts A/B/C
+venue_type: journal
+ids:
+  doi: 10.1016/j.pce.2026.104702
+  openalex: W7171950995
+links:
+  paper: https://doi.org/10.1016/j.pce.2026.104702
+  pdf: https://doi.org/10.1016/j.pce.2026.104702
+topic: extremes-hazards
+topics:
+- local-forecasting
+type: model
+method:
+- classical-ml
+- rnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+- satellite
+status: research
+summary: Tuned XGBoost reaches R² of 0.84 for monthly lightning density over northern India, outperforming
+  Random Forest, Decision Tree and an LSTM on daily data.
+abstract: Machine learning has recently emerged as a promising approach for predicting lightning activity
+  by learning patterns from historical data. This study focuses on the prediction of lightning density
+  using machine learning techniques over Northern India, region with high monsoon lightning activity.
+  Models were trained using LIS/OTD 2.5° LRMTS and LRTS lightning data archived at GHRC as the target
+  variable, with K-index, Convective Available Potential Energy (CAPE), Surface Sensible Heat Flux (SSHF),
+  and 2-m air temperature (T2M), were sourced from the ERA5 reanalysis (ECMWF), as predictor variables
+  for the period 2000-2011 and tested for 2012-2013. Three machine learning models, namely Decision Tree,
+  Random Forest, and XGBoost, were developed separately for the monthly dataset using k-fold cross-validation
+  with each year treated as one-fold. Before tuning, Random Forest (R 2 = 0.7781) and XGBoost (R 2 = 0.7482)
+  outperformed the Decision Tree (R 2 = 0.6283). Ensemble performance was greatly enhanced by hyperparameter
+  tuning, with XGBoost achieving R 2 = 0.84, followed by Random Forest (R 2 = 0.82). Similar hierarchy
+  was seen in baseline performance for the daily dataset, with XGBoost (R 2 = 0.72) and Random Forest
+  (R 2 = 0.72) significantly outperforming the Decision Tree (R 2 = 0.50), while a Long Short-Term Memory
+  (LSTM) model was designed specifically for daily dataset achieving R 2 = 0.62. These findings show potential
+  of machine learning, especially ensemble approaches for lightning prediction over Northern India. To
+  improve operational lightning forecasting across India's various climatic regions, future research may
+  use hybrid NWP–ML frameworks, multi-step deep learning architectures like Transformers, and higher-resolution
+  lightning observations.
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: snowball

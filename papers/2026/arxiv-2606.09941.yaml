@@ -1,0 +1,51 @@
+id: arxiv-2606.09941
+title: Stochastic weather generators for high-frequency wind vector time series
+authors:
+- Mingshi Cui
+- Kevin Eng
+- Justin T. Greene
+- Zern Ke
+- Abolfazl Sodagartojgi
+- Zhiqiu Xia
+- Gemma E. Moran
+- Michael L. Stein
+date: '2026-06-08'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.09941'
+  openalex: W7164156116
+links:
+  paper: https://arxiv.org/abs/2606.09941
+  pdf: https://arxiv.org/pdf/2606.09941
+topic: local-forecasting
+type: model
+method:
+- gan-vae
+spatial:
+- local
+data:
+- stations
+status: research
+summary: VQ-VAE-based stochastic generators reproduce minute-scale surface wind vector series at Lamont,
+  Oklahoma, capturing diurnal volatility but not extreme speeds.
+abstract: Surface winds can vary substantially from one minute to the next, so there is scope for studying
+  its variation on this fine time scale. Restricting to the month of June to minimize seasonality, this
+  work develops a range of machine learning models for generating realistic time series of surface wind
+  vectors at a site in Lamont, Oklahoma based on more than 30 years of high quality measurements at the
+  minute time scale. Such a generator could be used as an input into models from a range of disciplines,
+  notably for wind energy, but also wildfire spread and aviation, among others. The data show complex
+  diurnal structures in both wind speed and direction that would be challenging to capture with standard
+  time series models, so we consider a number of machine learning approaches to producing a stochastic
+  wind generator based on time vector-quantized variational autoencoders. We consider generating a day's
+  worth of data at a time and generating a day of wind vectors conditional on the previous day's winds.
+  We also study methods for incorporating a discrete weather state variable in the generator. We evaluate
+  the generators using a wide range of formal and informal methods. The best of these generators can capture
+  many but not all of the complex features present in the observational data. In particular, the best
+  of our approaches accurately mimic diurnal changes in wind volatility but struggle to match the observed
+  distribution of extreme wind speeds.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

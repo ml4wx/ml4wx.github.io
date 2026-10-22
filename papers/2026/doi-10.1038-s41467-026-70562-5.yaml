@@ -1,0 +1,54 @@
+id: doi-10.1038-s41467-026-70562-5
+title: Reconstructing fine-scale 3D wind fields with terrain-informed machine learning
+authors:
+- Chen-Sen Lin
+- Ruian Tie
+- S. Yi
+- Dong-Qing Liu
+- Xiao-Hui Zhong
+- Zi-Xin Hu
+- Hao Li
+date: '2026-03-09'
+year: 2026
+venue: Nature Communications
+venue_type: journal
+ids:
+  doi: 10.1038/s41467-026-70562-5
+  openalex: W7134230104
+links:
+  paper: https://doi.org/10.1038/s41467-026-70562-5
+  pdf: https://doi.org/10.1038/s41467-026-70562-5
+orgs:
+- cma
+- fudan-university
+topic: downscaling
+topics:
+- applications-impacts
+type: model
+spatial:
+- local
+data:
+- km-scale-sim
+- other
+status: research
+summary: FuXi-CFD generates 30 m 3D near-surface wind fields from coarse inputs and terrain, matching
+  CFD accuracy while cutting inference from hours to seconds.
+abstract: Fine-scale near-surface wind field prediction is essential for a wide range of applications.
+  However, most operational and AI-based weather models operate at kilometer-scale resolution, where terrain-induced
+  wind features such as slope jets, flow deflection, and recirculation are systematically averaged out.
+  Here we introduce FuXi-CFD, a machine learning-based framework designed to generate detailed three-dimensional
+  (3D) near-surface wind fields at 30-meter horizontal resolution, using only coarse-resolution atmospheric
+  inputs and high-resolution terrain information. The model is trained on a large-scale dataset generated
+  via computational fluid dynamics (CFD), encompassing a wide range of terrain types and inflow conditions.
+  Although relying only on horizontal wind inputs, FuXi-CFD infers the full 3D wind fields-including latent
+  variables such as vertical velocity and turbulence-related features. It achieves CFD-comparable accuracy
+  while reducing inference time from hours to seconds. Notably, the model also generalizes well to real-world
+  conditions, as demonstrated by consistent performance against independent wind-tower observations. This
+  capability enables real-time wind field reconstruction for terrain-sensitive applications such as wind
+  turbine siting, power forecasting, and wildfire spread modeling.
+significance: 5
+cited_by: 6
+score: 75
+highlight: false
+added: '2026-10-22'
+source: snowball

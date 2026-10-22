@@ -1,0 +1,51 @@
+id: doi-10.3390-en18164226
+title: Learning Residual Distributions with Diffusion Models for Probabilistic Wind Power Forecasting
+authors:
+- Fuhao Chen
+- Linyue Gao
+date: '2025-08-08'
+year: 2025
+venue: Energies
+venue_type: journal
+ids:
+  doi: 10.3390/en18164226
+  openalex: W4413247091
+links:
+  paper: https://doi.org/10.3390/en18164226
+  pdf: https://www.mdpi.com/1996-1073/18/16/4226/pdf?version=1754655068
+topic: probabilistic-ensembles
+topics:
+- applications-impacts
+type: model
+method:
+- diffusion
+- transformer
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: Two-stage elucidated diffusion Transformer models NWP-based wind power forecast residuals on
+  GEFCom2014, improving calibration and sharpness over GAN baselines.
+abstract: Accurate and uncertainty-aware wind power forecasting is essential for reliable and cost-effective
+  power system operations. This paper presents a novel probabilistic forecasting framework based on diffusion
+  probabilistic models. We adopted a two-stage modeling strategy—a deterministic predictor first generates
+  baseline forecasts, and a conditional diffusion model then learns the distribution of residual errors.
+  Such a two-stage decoupling strategy improves learning efficiency and sharpens uncertainty estimation.
+  We employed the elucidated diffusion model (EDM) to enable flexible noise control and enhance calibration,
+  stability, and expressiveness. For the generative backbone, we introduced a time-series-specific diffusion
+  Transformer (TimeDiT) that incorporates modular conditioning to separately fuse numerical weather prediction
+  (NWP) inputs, noise, and temporal features. The proposed method was evaluated using the public database
+  from ten wind farms in the Global Energy Forecasting Competition 2014 (GEFCom2014). We further compared
+  our approach with two popular baseline models, i.e., a distribution parameter regression model and a
+  generative adversarial network (GAN)-based model. Results showed that our method consistently achieves
+  superior performance in both deterministic metrics and probabilistic accuracy, offering better forecast
+  calibration and sharper distributions.
+significance: 3
+cited_by: 8
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

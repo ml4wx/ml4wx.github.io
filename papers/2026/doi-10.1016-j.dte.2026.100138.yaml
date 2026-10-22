@@ -1,0 +1,67 @@
+id: doi-10.1016-j.dte.2026.100138
+title: Deep Learning-Based Temperature Forecast Postprocessing Model Integrating Temporal Bias Correction
+  and Spatial Downscaling
+authors:
+- GUO Kemeng
+- LU Shu
+- XU Lin
+- Qin Jun
+- CHEN He
+- Li Lu
+date: '2026-07-01'
+year: 2026
+venue: Digital engineering.
+venue_type: journal
+ids:
+  doi: 10.1016/j.dte.2026.100138
+  openalex: W7170189803
+links:
+  paper: https://doi.org/10.1016/j.dte.2026.100138
+  pdf: https://www.sciencedirect.com/science/article/pii/S2950550X26000506/pdf
+orgs:
+- cma
+topic: post-processing
+topics:
+- downscaling
+type: model
+method:
+- rnn
+- cnn
+- transformer
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- other
+status: research
+summary: LSTM-SR corrects ECMWF-IFS temperature biases and downscales to 0.01° with a U-Net and Transformer,
+  cutting MAE 19–34% versus IFS.
+abstract: 'To address systematic biases and insufficient spatial resolution in numerical weather prediction
+  models, this paper proposes a two-stage deep learning model (LSTM-SR) that integrates bias correction
+  and spatial downscaling using ECMWF-IFS high-resolution deterministic forecasts and CLDAS reanalysis
+  data. In the first stage, a Long Short-Term Memory (LSTM) network produces hourly corrected temperature
+  fields at 0.05° resolution. In the second stage, an improved U-Net downscaling model incorporating residual
+  connections and a Transformer module refines the spatial resolution to 0.01°, generating high-resolution
+  hourly temperature forecasts for the next 72 hours. To validate the proposed model, we conducted an
+  ablation experiment in which the downscaling module of LSTM-SR was replaced by nearest-neighbor interpolation
+  to create a benchmark model (LSTM-NN), and compared the results with those of ECMWF-IFS. The results
+  show that: (1) For 1–3-day lead times, LSTM-SR improves the temporal resolution of ECMWF-IFS forecasts
+  from 3/6-hourly to hourly, and reduces the mean absolute error (MAE), root mean square error (RMSE)
+  and bias substantially relative to ECMWF-IFS and LSTM-NN, effectively mitigating the growth of forecast
+  errors at longer lead times. (2) Spatially, the forecast errors of ECMWF-IFS and LSTM-NN exhibit a clear
+  terrain dependence, with significantly larger errors in high-altitude areas than in plains, whereas
+  LSTM-SR achieves an MAE ≤ 1.5°C for 88.5% – 99.2% of grid points, markedly improving forecast accuracy
+  in high-altitude regions. (3) LSTM-SR demonstrates strong generalization ability across seasons: its
+  median MAE is reduced by 19.10%–33.81% relative to ECMWF-IFS, and by an additional 6.89%–8.91% compared
+  to LSTM-NN in spring, summer, and autumn. Error propagation analysis reveals that the second-stage downscaling
+  inherits residual errors from the first-stage bias correction but does not cause error explosion. In
+  summary, the LSTM-SR model achieves systematic bias correction and refined spatial reconstruction of
+  numerical temperature forecasts, providing reliable technical support for operational medium-range gridded
+  temperature forecasting.'
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

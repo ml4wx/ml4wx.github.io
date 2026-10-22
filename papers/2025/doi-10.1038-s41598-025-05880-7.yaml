@@ -1,0 +1,57 @@
+id: doi-10.1038-s41598-025-05880-7
+title: Limitation of super-resolution machine learning approach to precipitation downscaling
+authors:
+- P. Jyoteeshkumar Reddy
+- Richard J. Matear
+- John Taylor
+- Marcus Thatcher
+date: '2025-08-17'
+year: 2025
+venue: Scientific Reports
+venue_type: journal
+ids:
+  doi: 10.1038/s41598-025-05880-7
+  openalex: W4413309262
+links:
+  paper: https://doi.org/10.1038/s41598-025-05880-7
+  pdf: https://www.nature.com/articles/s41598-025-05880-7.pdf
+topic: downscaling
+topics:
+- benchmarks-data-eval
+type: evaluation
+method:
+- cnn
+spatial:
+- regional
+data:
+- cmip
+- km-scale-sim
+status: research
+summary: Super-resolution ML downscales CCAM precipitation from 100 to 12.5 km; perfect-prognosis training
+  fails to transfer to coarse model inputs.
+abstract: 'Abstract The present study explores the potential of super-resolution machine learning (ML)
+  models for precipitation downscaling from 100 to 12.5 km at hourly timescale using the Conformal Cubic
+  Atmospheric Model (CCAM) data over the Australian domain. Two approaches were examined: the perfect
+  approach, which trains the ML model using coarsened high-resolution data as input (i.e., CCAM 12.5 km
+  data coarsened to 100 km), and the imperfect approach, which uses original coarse-resolution data as
+  input (i.e., CCAM model simulation at 100 km resolution) and in both the cases high-resolution data
+  (i.e., CCAM 12.5 km simulation) is used as target. In the perfect case, the ML model (ML Perfect ) accurately
+  reproduces high-resolution climatology and extremes. However, the ML Perfect model with CCAM 100 km
+  simulation data as input (i.e., in the imperfect setting) underestimates the magnitude of the output
+  and introduces spatial inconsistencies, while the ML Imperfect model captures high-resolution structures
+  but underestimates extremes. This suggests that the super-resolution ML Perfect model approach is inappropriate
+  for precipitation downscaling because of the spatial inconsistencies between the coarse and high-resolution
+  simulations. Additionally, we introduced sensitivity-based diagnostics beyond standard evaluation methods
+  to understand model behaviour and identify structural issues. These diagnostics reveal that both models
+  increase precipitation inputs non-linearly without creating spurious spatial relationships. However,
+  the ML Imperfect model outputs precipitation in high-altitude regions regardless of input, highlighting
+  the structural issue of the ML Imperfect model. Our study highlights the challenges in using super-resolution
+  ML models for precipitation downscaling, introduces several useful diagnostics for assessing the super-resolution
+  ML models and their physical realism, and provides ideas to explore to improve ML-based precipitation
+  downscaling.'
+significance: 3
+cited_by: 6
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

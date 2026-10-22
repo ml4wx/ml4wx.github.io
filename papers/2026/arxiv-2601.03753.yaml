@@ -1,0 +1,56 @@
+id: arxiv-2601.03753
+title: Probabilistic Transformers for Joint Modeling of Global Weather Dynamics and Decision-Centric Variables
+authors:
+- Paulius Rauba
+- Viktor Cikojevic
+- Fran Bartolic
+- Sam Levang
+- Ty Dickinson
+- Chase Dwelle
+date: '2026-01-07'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2601.03753'
+  openalex: W7119500456
+links:
+  paper: https://arxiv.org/abs/2601.03753
+  pdf: https://arxiv.org/pdf/2601.03753
+topic: probabilistic-ensembles
+topics:
+- global-medium-range
+type: model
+method:
+- transformer
+timescale:
+- medium
+- s2s
+- seasonal
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: GEM-2, a 275M-parameter CRPS-trained transformer, claims to beat operational NWP and match diffusion
+  models at 20-100x lower training cost, with decision-variable outputs.
+abstract: Weather forecasts sit upstream of high-stakes decisions in domains such as grid operations,
+  aviation, agriculture, and emergency response. Yet forecast users often face a difficult trade-off.
+  Many decision-relevant targets are functionals of the atmospheric state variables, such as extrema,
+  accumulations, and threshold exceedances, rather than state variables themselves. As a result, users
+  must estimate these targets via post-processing, which can be suboptimal and can introduce structural
+  bias. The core issue is that decisions depend on distributions over these functionals that the model
+  is not trained to learn directly. In this work, we introduce GEM-2, a probabilistic transformer that
+  jointly learns global atmospheric dynamics alongside a suite of variables that users directly act upon.
+  Using this training recipe, we show that a lightweight (~275M params) and computationally efficient
+  (~20-100x training speedup relative to state-of-the-art) transformer trained on the CRPS objective can
+  directly outperform operational numerical weather prediction (NWP) models and be competitive with ML
+  models that rely on expensive multi-step diffusion processes or require bespoke multi-stage fine-tuning
+  strategies. We further demonstrate state-of-the-art economic value metrics under decision-theoretic
+  evaluation, stable convergence to climatology at S2S and seasonal timescales, and a surprising insensitivity
+  to many commonly assumed architectural and training design choices.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

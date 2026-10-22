@@ -1,0 +1,59 @@
+id: doi-10.5194-npg-30-553-2023
+title: Downscaling of surface wind forecasts using convolutional neural networks
+authors:
+- Florian Dupuy
+- Pierre Durand
+- Thierry Hedde
+date: '2023-11-29'
+year: 2023
+venue: Nonlinear processes in geophysics
+venue_type: journal
+ids:
+  doi: 10.5194/npg-30-553-2023
+  openalex: W4389146848
+links:
+  paper: https://doi.org/10.5194/npg-30-553-2023
+orgs:
+- meteo-france
+topic: downscaling
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- km-scale-sim
+status: research
+summary: Combines two CNNs with custom MSE losses to downscale 9-km WRF wind forecasts to 1 km over Alpine
+  terrain, recovering topography-driven wind features.
+abstract: Abstract. Near-surface winds over complex terrain generally feature a large variability at the
+  local scale. Forecasting these winds requires high-resolution Numerical Weather Prediction (NWP) models,
+  which drastically increases the duration of simulations and hinders to run them on a routine basis.
+  Nevertheless, downscaling methods can help forecasting such wind flows at limited numerical cost. In
+  this study, we present a statistical downscaling of WRF wind forecasts over south-eastern France (including
+  the south-western part of the Alps) from its original 9-km resolution onto a 1-km resolution grid (1-km
+  NWP model outputs are used to fit our statistical models). Downscaling is performed using convolutional
+  neural networks (CNNs), which are the most powerful machine learning tool for processing images or any
+  kind of gridded data, as demonstrated by recent studies dealing with wind forecasts downscaling. The
+  previous studies mostly focused on testing new model architectures. In this study, we aimed to extend
+  these works by exploring different output variables and their associated loss function. We found that
+  there is no one approach that outperforms the others on both the direction and the speed at the same
+  time. Finally, the best overall performance is obtained by combining two CNNs, one dedicated to the
+  direction forecast, based on the calculation of the normalized wind components using a customized mean
+  squared error (MSE) loss function, and the other dedicated to the speed forecast, based on the calculation
+  of the wind components and using another customized MSE loss function. Local-scale, topography-related
+  wind features, which were poorly forecast at 9 km, are now well reproduced, both for speed (e.g. acceleration
+  on the ridge, leeward deceleration, sheltering in valleys) and direction (deflection, valley channeling).
+  There is a general improvement in the forecast, especially during the nighttime stable stratification
+  period, which is the most difficult period to forecast. It results that, after downscaling, the wind
+  speed bias and MAE are reduced from −0.55 m⋅s−1 and 1.02 m⋅s−1 initially to −0.01 m⋅s−1 and 0.69 m⋅s−1
+  respectively, while the wind direction MAE is reduced from 25.9° to 15.5° in comparison with the 9-km
+  resolution forecast.
+significance: 3
+cited_by: 23
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

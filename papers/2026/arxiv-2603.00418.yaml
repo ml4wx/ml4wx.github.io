@@ -1,0 +1,49 @@
+id: arxiv-2603.00418
+title: 'Station2Radar: query conditioned gaussian splatting for precipitation field'
+authors:
+- Doyi Kim
+- Minseok Seo
+- Changick Kim
+date: '2026-02-28'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2603.00418'
+  openalex: W7133352440
+links:
+  paper: https://arxiv.org/abs/2603.00418
+  pdf: https://arxiv.org/pdf/2603.00418
+topic: observations-remote-sensing
+topics:
+- nowcasting
+type: model
+method:
+- other
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+- stations
+status: research
+summary: Query-conditioned Gaussian splatting fuses weather station and satellite data to produce real-time
+  precipitation fields, with over 50% RMSE improvement over gridded products.
+abstract: Precipitation forecasting relies on heterogeneous data. Weather radar is accurate, but coverage
+  is geographically limited and costly to maintain. Weather stations provide accurate but sparse point
+  measurements, while satellites offer dense, high-resolution coverage without direct rainfall retrieval.
+  To overcome these limitations, we propose Query-Conditioned Gaussian Splatting (QCGS), the first framework
+  to fuse automatic weather station (AWS) observations with satellite imagery for generating precipitation
+  fields. Unlike conventional 2D Gaussian splatting, which renders the entire image plane, QCGS selectively
+  renders only queried precipitation regions, avoiding unnecessary computation in non-precipitating areas
+  while preserving sharp precipitation structures. The framework combines a radar point proposal network
+  that identifies rainfall-support locations with an implicit neural representation (INR) network that
+  predicts Gaussian parameters for each point. QCGS enables efficient, resolution-flexible precipitation
+  field generation in real time. Through extensive evaluation with benchmark precipitation products, QCGS
+  demonstrates over 50\% improvement in RMSE compared to conventional gridded precipitation products,
+  and consistently maintains high performance across multiple spatiotemporal scales.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

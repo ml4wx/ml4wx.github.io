@@ -1,0 +1,59 @@
+id: doi-10.1016-j.rse.2025.115198
+title: 'GPP-net: a robust high-resolution GPP estimation network for Sentinel-2 using only surface reflectance
+  and photosynthetically active radiation'
+authors:
+- Shaoyu Wang
+- Youngryel Ryu
+- Benjamin Dechant
+- Helin Zhang
+- Huaize Feng
+- Jeongho Lee
+- Changhyun Choi
+date: '2025-12-16'
+year: 2025
+venue: Remote Sensing of Environment
+venue_type: journal
+ids:
+  doi: 10.1016/j.rse.2025.115198
+  openalex: W4417354351
+links:
+  paper: https://doi.org/10.1016/j.rse.2025.115198
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- satellite
+- stations
+status: research
+summary: GPP-net, a 1-D convolutional network, estimates high-resolution Sentinel-2 gross primary productivity
+  from reflectance and PAR alone, outperforming NIRvP, PLS and random forest across seven plant types.
+abstract: High-resolution gross primary productivity (GPP) estimation is crucial for ecological and agricultural
+  applications that require fine spatial details to capture GPP heterogeneity. Satellite-based GPP estimation
+  usually relies on land cover and meteorological data. However, the misclassification of land cover data
+  and coarse resolution of meteorological data greatly increase the uncertainty. Here, we propose a robust
+  high-resolution GPP estimation deep learning (DL) network, named GPP-net, using only satellite surface
+  reflectance (SR) from Sentinel-2 and photosynthetically active radiation (PAR). Specifically, GPP-net
+  is based on a fully 1-D convolutional encoder-decoder network combined with a spectral band importance
+  estimation module. To enhance the generalization of GPP-net, we ran the soil-canopy energy balance radiative
+  transfer (SCOPE) model, and then combined these SCOPE-simulated reflectance data with GPP and PAR data
+  extracted from FLUXNET2015 to pre-train GPP-net. Compared to benchmark models including near-infrared
+  reflectance of vegetation multiplied by incoming sunlight (NIRvP), partial least squares (PLS) and random
+  forest (RF), GPP-net improved half-hourly and daily GPP retrieval across seven plant functional types
+  (PFTs) including four forest types, cropland, grassland and wetland. Owing to its robust nonlinear feature
+  learning capabilities, GPP-net also facilitated robust GPP estimation across both C3 and C4 vegetation.
+  We found that GPP-net could reliably estimate GPP under drought and heatwave conditions, with minimal
+  improvement from including vapor pressure deficit (VPD) as a predictor. Furthermore, GPP-net demonstrated
+  great robustness to soil effects in GPP mapping, and had strong ability in capturing inter-annual variability
+  of GPP. The pretraining paradigm enabled us to fully leverage historical data, and the DL framework
+  ensured that the model generalization continually improves as new data is integrated. Our model dispenses
+  with land cover data and minimizes the requirements of coarse-resolution meteorological data for high-resolution
+  GPP estimation, which could support future efforts in global high-resolution GPP mapping.
+significance: 3
+cited_by: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

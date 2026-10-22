@@ -1,0 +1,53 @@
+id: arxiv-2511.00663
+title: Sensitivity Analysis for Climate Science with Generative Flow Models
+authors:
+- Alex Dobra
+- Jakiw Pidstrigach
+- Tim Reichelt
+- Paolo Fraccaro
+- Anne Jones
+- Johannes Jakubik
+- Christian Schroeder de Witt
+- Philip Torr
+- Philip Stier
+date: '2025-11-01'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2511.00663'
+  openalex: W4415938588
+links:
+  paper: https://arxiv.org/abs/2511.00663
+  pdf: https://arxiv.org/pdf/2511.00663
+  code: https://github.com/Kwartzl8/cbottle_adjoint_sensitivity
+topic: xai-uq-physics
+topics:
+- climate-analysis-attribution
+type: model
+method:
+- diffusion
+spatial:
+- global
+data:
+- era5
+- km-scale-sim
+status: research
+summary: Adjoint-method gradients through the cBottle generative climate model compute SST sensitivities
+  in hours on a GPU instead of weeks on a supercomputer.
+abstract: Sensitivity analysis is a cornerstone of climate science, essential for understanding phenomena
+  ranging from storm intensity to long-term climate feedbacks. However, computing these sensitivities
+  using traditional physical models is often prohibitively expensive in terms of both computation and
+  development time. While modern AI-based generative models are orders of magnitude faster to evaluate,
+  computing sensitivities with them remains a significant bottleneck. This work addresses this challenge
+  by applying the adjoint state method for calculating gradients in generative flow models. We apply this
+  method to the cBottle generative model, trained on ERA5 and ICON data, to perform sensitivity analysis
+  of any atmospheric variable with respect to sea surface temperatures. We quantitatively validate the
+  computed sensitivities against the model's own outputs. Our results provide initial evidence that this
+  approach can produce reliable gradients, reducing the computational cost of sensitivity analysis from
+  weeks on a supercomputer with a physical model to hours on a GPU, thereby simplifying a critical workflow
+  in climate science. The code can be found at https://github.com/Kwartzl8/cbottle_adjoint_sensitivity.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

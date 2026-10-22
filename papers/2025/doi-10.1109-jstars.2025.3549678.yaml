@@ -1,0 +1,55 @@
+id: doi-10.1109-jstars.2025.3549678
+title: 'RainHCNet: Hybrid High-Low Frequency and Cross-Scale Network for Precipitation Nowcasting'
+authors:
+- Lei Wang
+- Zheng Wang
+- Wenjun Hu
+- Cong Bai
+date: '2025-01-01'
+year: 2025
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2025.3549678
+  openalex: W4408324188
+links:
+  paper: https://doi.org/10.1109/jstars.2025.3549678
+topic: nowcasting
+topics:
+- extremes-hazards
+type: model
+method:
+- cnn
+- physics-constrained
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- satellite
+status: research
+summary: RainHCNet, a lightweight UNet with hybrid attention and cross-scale supervision, improves high-intensity
+  rainfall nowcasting on KNMI, Shanghai and SEVIR datasets.
+abstract: 'Precipitation nowcasting, particularly predicting heavy rainfall, is a critical aspect of meteorological
+  forecasting. Recent advancements in deep learning have led to the development of radar echo extrapolation
+  methods. However, most convolutional neural network-based methods focus primarily on high-frequency
+  information, neglecting essential low-frequency cues necessary for forecasting high-intensity rainfall.
+  Although some methods introduce attention mechanisms to improve predictions, they often encounter computational
+  challenges and suffer from information loss related to rainfall. To address these limitations, we propose
+  RainHCNet, a streamlined novel precipitation nowcasting method built on the UNet architecture. RainHCNet
+  incorporates a hybrid channel–spatial attention mechanism to effectively capture low-frequency information,
+  overcoming the limitations of traditional CNN-based methods that are unable to model global dependencies.
+  In addition, a cross-scale supervision module integrates multiscale features from both deep and shallow
+  layers to mitigate information loss. Moreover, a dynamic adjustment strategy for loss weights is employed,
+  focusing on low-frequency information and samples linked to high-intensity rainfall events. We present
+  two variants of the proposed architecture: RainHCNet (6.78 M) and RainHCNet$\dag$(0.35 M), the latter
+  being a lightweight version suitable for computation and memory-constrained environments. Extensive
+  experiments on the KNMI, Shanghai, and SEVIR datasets demonstrate that both models outperform state-of-the-art
+  methods, particularly in predicting high-intensity rainfall events.'
+significance: 3
+cited_by: 6
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,51 @@
+id: doi-10.22541-au.177403188.80381091-v2
+title: 'LASDM: A Linear Attention based Hybrid CNN-Transformer for Snow Downscaling'
+authors:
+- Mubashshir Ali
+- Farid Ait-Chaalal
+- Siddharth Gururani
+- Alison Dobbin
+date: '2026-03-20'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.22541/au.177403188.80381091/v2
+  openalex: W7140320441
+links:
+  paper: https://doi.org/10.22541/au.177403188.80381091/v2
+  pdf: https://www.authorea.com/doi/pdf/10.22541/au.177403188.80381091
+orgs:
+- nvidia
+topic: downscaling
+topics:
+- post-processing
+type: model
+method:
+- transformer
+- cnn
+spatial:
+- regional
+data:
+- other
+status: research
+summary: LASDM, a sub-1M-parameter CNN-linear-attention model, downscales and bias-corrects snow water
+  equivalent over the Great Lakes, beating U-Net, Swin and quantile mapping.
+abstract: High-resolution Snow Water Equivalent (SWE) data are essential for hydrological modeling, water
+  resource management, and climate impact assessments in snow-dominated regions. Regional models offer
+  improved resolution but are computationally expensive, motivating the use of deep learning-based emulators.
+  In this work, we introduce the Linear Attention Snow Downscaling Model (LASDM), a hybrid architecture
+  that combines convolutional neural networks (CNNs) for local feature extraction with linear attention
+  blocks for modeling long-range dependencies. LASDM is designed to be highly parameter-efficient using
+  fewer than one million trainable parameters. We evaluate LASDM for downscaling and bias correction against
+  convolutional U‑Net, a Swin Transformer–based model, and a statistical baseline based on empirical quantile
+  mapping over the Great Lakes region of North America. Results show that LASDM consistently outperforms
+  these benchmarks across both typical and extreme SWE regimes, while maintaining substantially lower
+  computational complexity. The case studies of two winter storms further demonstrates model performance.
+  Remaining challenges include correcting topographic and snow melt-related biases. These findings highlight
+  the potential of lightweight hybrid CNN-transformer architectures for efficient downscaling and bias
+  correction tasks.
+significance: 3
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

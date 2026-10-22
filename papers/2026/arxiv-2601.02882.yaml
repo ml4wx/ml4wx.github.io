@@ -1,0 +1,52 @@
+id: arxiv-2601.02882
+title: 'STIPP: Space-time in situ postprocessing over the French Alps using proper scoring rules'
+authors:
+- David Landry
+- Isabelle Gouttevin
+- Hugo Merizen
+- Claire Monteleoni
+- Anastase Charantonis
+date: '2026-01-06'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2601.02882'
+  openalex: W7118971286
+links:
+  paper: https://arxiv.org/abs/2601.02882
+  pdf: https://arxiv.org/pdf/2601.02882
+orgs:
+- inria
+- meteo-france
+topic: post-processing
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- other
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+- nwp-analysis
+status: research
+summary: STIPP jointly postprocesses station forecasts over the French Alps, producing hourly spatio-temporally
+  consistent ensembles from six-hourly deterministic input with improved accuracy for several variables.
+abstract: We propose Space-time in situ postprocessing (STIPP), a machine learning model that generates
+  spatio-temporally consistent weather forecasts for a network of station locations. Gridded forecasts
+  from classical numerical weather prediction or data-driven models often lack the necessary precision
+  due to unresolved local effects. Typical statistical postprocessing methods correct these biases, but
+  often degrade spatio-temporal correlation structures in doing so. Recent works based on generative modeling
+  successfully improve spatial correlation structures but have to forecast every lead time independently.
+  In contrast, STIPP makes joint spatio-temporal forecasts which have increased accuracy for surface temperature,
+  wind, relative humidity and precipitation when compared to baseline methods. It makes hourly ensemble
+  predictions given only a six-hourly deterministic forecast, blending the boundaries of postprocessing
+  and temporal interpolation. By leveraging a multivariate proper scoring rule for training, STIPP contributes
+  to ongoing work data-driven atmospheric models supervised only with distribution marginals.
+significance: 5
+score: 55
+highlight: false
+added: '2026-10-22'
+source: backfill

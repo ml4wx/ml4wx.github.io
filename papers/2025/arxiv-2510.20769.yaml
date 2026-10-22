@@ -1,0 +1,63 @@
+id: arxiv-2510.20769
+title: 'CSU-PCAST: A Dual-Branch Transformer Framework for medium-range ensemble Precipitation Forecasting'
+authors:
+- Tianyi Xiong
+- Haonan Chen
+- Kelly Mahoney
+- Jingyin Tang
+- Tim Smith
+- Janice Bytheway
+date: '2025-10-23'
+year: 2025
+venue: npj Climate and Atmospheric Science
+venue_type: journal
+ids:
+  arxiv: '2510.20769'
+  doi: 10.1038/s41612-026-01475-9
+  openalex: W4416621856
+links:
+  paper: https://doi.org/10.1038/s41612-026-01475-9
+  pdf: https://arxiv.org/pdf/2510.20769
+orgs:
+- colorado-state-university
+- noaa
+topic: probabilistic-ensembles
+topics:
+- global-medium-range
+type: model
+method:
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- satellite
+- nwp-analysis
+status: research
+summary: CSU-PCAST, a Swin-transformer ensemble trained on ERA5 and IMERG, gives 30-member 15-day precipitation
+  forecasts with lower CRPS than GEFS through 2023.
+abstract: Accurate medium-range precipitation forecasting is essential for hydrometeorological risk management
+  but remains challenging for both numerical weather prediction (NWP) systems and data-driven models.
+  We present CSU-PCAST, a deep learning-based ensemble forecasting framework for global precipitation
+  prediction. The model is trained using ERA5 atmospheric and surface variables at 0.25° resolution with
+  precipitation labels from NASA's IMERG dataset. CSU-PCAST uses 57 prognostic variables and static geographical
+  fields to predict both atmospheric states and 6-h accumulated precipitation. The framework employs a
+  Swin Transformer backbone with stochastic noise conditioning, temporal embeddings, and a dual-branch
+  decoder for precipitation and non-precipitation variables. During inference, CSU-PCAST is initialized
+  from operational GFS analyses and generates 30 ensemble members out to 15 days using an autoregressive
+  strategy. Evaluation against GEFS over the full year of 2023 shows improved precipitation forecast skill
+  at short lead times, including higher Critical Success Index (CSI) and lower RMSE during the first several
+  forecast days. CSU-PCAST also reduces GEFS wet bias for light precipitation and dry bias at heavier
+  precipitation thresholds. Probabilistic verification demonstrates lower CRPS, higher Brier Skill Scores
+  at several thresholds, and improved ensemble reliability relative to GEFS, although both systems remain
+  underdispersive. A case study of the Sanba extreme precipitation event further shows improved spatial
+  structure and exceedance-probability guidance. These results demonstrate the potential of CSU-PCAST
+  for short-to-medium-range ensemble precipitation forecasting while highlighting remaining challenges
+  in extreme precipitation prediction and ensemble calibration.
+significance: 5
+score: 55
+highlight: false
+added: '2026-10-22'
+source: backfill

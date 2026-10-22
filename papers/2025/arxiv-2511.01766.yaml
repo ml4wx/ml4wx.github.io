@@ -1,0 +1,49 @@
+id: arxiv-2511.01766
+title: Towards a Unified Data-Driven Boundary Layer Momentum Flux Parameterization for Ocean and Atmosphere
+authors:
+- Renaud Falga
+- Sara Shamekh
+- Laure Zanna
+date: '2025-11-03'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2511.01766'
+  openalex: W4416440183
+links:
+  paper: https://arxiv.org/abs/2511.01766
+  pdf: https://arxiv.org/pdf/2511.01766
+orgs:
+- nyu-m2lines
+topic: hybrid-parameterization
+type: model
+method:
+- other
+spatial:
+- global
+data:
+- other
+status: research
+summary: Neural network momentum flux parameterization trained on LES for ocean and atmospheric boundary
+  layers cuts SCAM wind-profile errors by 2-3 times.
+abstract: Boundary layer turbulence, particularly the vertical fluxes of momentum, shapes the evolution
+  of winds and currents and plays a critical role in weather, climate, and biogeochemical processes. In
+  this work, a unified, data-driven parameterization of turbulent momentum fluxes is introduced for both
+  the oceanic and atmospheric convective boundary layers. An artificial neural network (ANN) is trained
+  offline on coarse-grained large-eddy simulation (LES) data representing a wide range of turbulent regimes
+  in both fluids. By normalizing momentum flux profiles with their surface values, we exploit a self-similar
+  structure across regimes and fluids, enabling joint training. The ANN learns to predict vertical profiles
+  of subgrid momentum fluxes from mean wind or current profiles, capturing key physical features such
+  as upgradient fluxes that are inaccessible to traditional first-order closure schemes. When implemented
+  online in the Single Column Atmospheric Model (SCAM), the ANN parameterization consistently outperforms
+  the SCAM baseline parameterization in replicating the evolution of the boundary layer wind profiles
+  from the LES, especially under convective conditions, with errors reduced by a factor of 2-3 across
+  regimes. ANN performance remains robust even when the surface momentum flux is biased up to 30\%, and
+  generalization is confirmed by testing on LES cases excluded from the training dataset. This work demonstrates
+  the potential of machine learning to create unified and physically consistent parameterizations across
+  boundary layer systems in climate models.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

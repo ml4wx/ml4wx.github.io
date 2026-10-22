@@ -1,0 +1,53 @@
+id: doi-10.3390-rs18111829
+title: Integrating Machine Learning with Adaptive Kalman Filtering to Downscale GFS Air Temperature Forecasts
+  in Mountainous Areas
+authors:
+- Guixin Zhang
+- Jingpeng Liang
+- Shanyou Zhu
+- Yan Xu
+date: '2026-06-03'
+year: 2026
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs18111829
+  openalex: W7163385429
+links:
+  paper: https://doi.org/10.3390/rs18111829
+orgs:
+- nuist
+topic: downscaling
+topics:
+- post-processing
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Random forest downscales 0.25° GFS temperature forecasts to 30 m and an adaptive Kalman filter
+  corrects bias, cutting AWS RMSE by 34-41% in mountainous terrain.
+abstract: Accurate, high-resolution gridded air temperature forecasts are essential, particularly in mountainous
+  areas with complex terrain. This study proposes a two-stage processing framework DOWN + BC to downscale
+  Global Forecast System (GFS) temperature forecasts and correct their bias. The approach first employs
+  a random forest (RF) model to geographically downscale 3-hourly 0.25° GFS forecasts to a 30 m resolution
+  (DOWN), followed by bias correction (BC) using a first-order adaptive Kalman filter (AKF). The accuracy
+  of the DOWN + BC-processed forecasts was evaluated against both automatic weather station (AWS) observations
+  and high-resolution air temperature fields derived from an extreme gradient boosting model (XGB-derived).
+  The results indicate that (1) the DOWN step effectively refines the spatial detail of temperature distribution,
+  though it yields limited improvement in accuracy compared to the raw GFS forecasts; (2) the combined
+  DOWN + BC method substantially enhances forecast accuracy. At AWS locations, the root mean square error
+  (RMSE) of GFS forecasts decreased by 37.84% in January 2020 and 41.16% in July 2023. Relative to the
+  XGB-derived temperature distribution, RMSE was reduced by 47.27% and 33.79% for the respective periods.
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

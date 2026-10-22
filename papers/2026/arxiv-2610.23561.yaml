@@ -1,0 +1,58 @@
+id: arxiv-2610.23561
+title: Evaluating Predictor-Corrector Dependence in Hard-Constrained Climate Emulators
+authors:
+- Tian-Yu Zhang
+- Xin-Yu Wang
+- Zheng-Han Tai
+- Xiao-Wen Chang
+- Y. Bengio
+date: '2026-10-16'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.23561'
+  openalex: W7222922712
+links:
+  paper: https://arxiv.org/abs/2610.23561
+topic: xai-uq-physics
+topics:
+- climate-emulation
+type: evaluation
+method:
+- physics-constrained
+- transformer
+timescale:
+- medium
+- s2s
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Shows that hard physical corrections in ACE2 reshape the predictor, so emulators should be evaluated
+  by separating predictor skill from correction effects.
+abstract: Climate emulators often enforce physical constraints by correcting each state predicted by a
+  neural network, but evaluating only the corrected forecast conflates predictor skill with the effect
+  of the correction. We introduce an evaluation framework that separates these contributions by comparing
+  corrected forecasts, pre-correction predictions along corrected trajectories, and autonomous rollouts
+  with correction disabled. We further cross correction during training and inference to distinguish its
+  immediate effect from how it shapes the learned predictor, and use matched nonphysical controls to test
+  whether improvements are specific to the physical correction. In ACE2, correction substantially improves
+  physical consistency. In a three-seed ACE2 pilot, models trained with correction produce less accurate
+  uncorrected precipitation forecasts at short horizons than models trained without correction, but more
+  accurate forecasts at 10 and 30 days. This contradicts our preregistered hypothesis that the deficit
+  would grow with forecast horizon. In a separate nine-seed experiment, directly supervising the uncorrected
+  output reverses its precipitation forecast deficit at 72 hours while maintaining the accuracy of corrected
+  forecasts at 24 hours. In ConCerNet's heat-equation system, projection-trained models have higher uncorrected
+  trajectory-based vector-field RMSE than models trained without projection, while restoring the physical
+  projection recovers accuracy far more effectively than a matched nonphysical control. Together, these
+  results show that hard corrections can reshape the predictors trained alongside them, creating dependencies
+  that are not visible from corrected forecasts alone. Hard-constrained emulators should therefore be
+  evaluated by separately measuring predictor accuracy, correction effects, and their interaction during
+  training.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: snowball

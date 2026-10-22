@@ -1,0 +1,51 @@
+id: doi-10.3389-fenrg.2024.1391692
+title: Short-term wind power combination forecasting method based on wind speed correction of numerical
+  weather prediction
+authors:
+- Siyuan Wang
+- Haiguang Liu
+- Guangzheng Yu
+date: '2024-05-06'
+year: 2024
+venue: Frontiers in Energy Research
+venue_type: journal
+ids:
+  doi: 10.3389/fenrg.2024.1391692
+  openalex: W4396672479
+links:
+  paper: https://doi.org/10.3389/fenrg.2024.1391692
+topic: post-processing
+topics:
+- applications-impacts
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: research
+summary: ResNet-GRU corrects NWP wind speeds at several heights, then a KOA-tuned CNN-LSTM with attention
+  forecasts wind power at a northwest China farm.
+abstract: The temporal variation of wind power is primarily influenced by wind speed, exhibiting high
+  levels of randomness and fluctuation. The accuracy of short-term wind power forecasts is greatly affected
+  by the quality of Numerical Weather Prediction (NWP) data. However, the prediction error of NWP is common,
+  and posing challenges to the precision of wind power prediction. To address this issue, the paper proposes
+  a NWP wind speed error correction model based on Residual Network-Gated Recurrent Unit (ResNet-GRU).
+  The model corrects the forecasted wind speeds at different heights to provide reliable data foundation
+  for subsequent predictions. Furthermore, in order to overcome the difficulty of selecting network parameters
+  for the combined prediction model, we integrate the Kepler Optimization Algorithm (KOA) intelligent
+  algorithm to achieve optimal parameter selection for the model. We propose a Convolutional Neural Network-Long
+  and Short-Term Memory Network (CNN-LSTM) based on Attention Mechanism for short-term wind power prediction.
+  Finally, the proposed methods are validated using data from a wind farm in northwest China, demonstrating
+  their effectiveness in improving prediction accuracy and their practical value in engineering applications.
+significance: 3
+cited_by: 13
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,54 @@
+id: arxiv-2410.21329
+title: CloudCast -- Total Cloud Cover Nowcasting with Machine Learning
+authors:
+- Mikko Partio
+- Leila Hieta
+- Anniina Kokkonen
+date: '2024-10-27'
+year: 2024
+venue: Artificial Intelligence for the Earth Systems
+venue_type: journal
+ids:
+  arxiv: '2410.21329'
+  doi: 10.1175/aies-d-24-0104.1
+  openalex: W4411451795
+links:
+  paper: https://doi.org/10.1175/aies-d-24-0104.1
+  pdf: https://arxiv.org/pdf/2410.21329
+  code: https://github.com/fmidev/cloudcast
+topic: nowcasting
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+- short
+spatial:
+- regional
+data:
+- satellite
+- nwp-analysis
+status: operational
+summary: CloudCast, a U-Net nowcaster for total cloud cover up to 5 hours ahead, beats NWP by 24% in MAE
+  and is operational at the Finnish Meteorological Institute.
+abstract: Cloud cover plays a critical role in weather prediction and impacts several sectors, including
+  agriculture, solar power generation, and aviation. Despite advancements in numerical weather prediction
+  (NWP) models, forecasting total cloud cover remains challenging due to the small-scale nature of cloud
+  formation processes. In this study, we introduce CloudCast, a convolutional neural network (CNN) based
+  on the U-Net architecture, designed to predict total cloud cover (TCC) up to five hours ahead. Trained
+  on five years of satellite data, CloudCast significantly outperforms traditional NWP models and optical
+  flow methods. Compared to a reference NWP model, CloudCast achieves a 24% lower mean absolute error
+  and reduces multi-category prediction errors by 46%. The model demonstrates strong performance, particularly
+  in capturing the large-scale structure of cloud cover in the first few forecast hours, though later
+  predictions are subject to blurring and underestimation of cloud formation. An ablation study identified
+  the optimal input features and loss functions, with MAE-based models performing the best. CloudCast
+  has been integrated into the Finnish Meteorological Institute's operational nowcasting system, where
+  it improves cloud cover forecasts used by public and private sector clients. While CloudCast is limited
+  by a relatively short skillful lead time of about three hours, future work aims to extend this through
+  more complex network architectures and higher-resolution data. CloudCast code is available at https://github.com/fmidev/cloudcast.
+significance: 4
+cited_by: 5
+score: 36
+highlight: false
+added: '2026-10-22'
+source: backfill

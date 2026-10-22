@@ -1,0 +1,56 @@
+id: doi-10.5194-egusphere-2026-5397
+title: From climate projections to trajectory-conditioned local predictions
+authors:
+- Simon Michel
+- Kristian Strømmen
+- Hannah M. Christensen
+date: '2026-09-21'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.5194/egusphere-2026-5397
+  openalex: W7213891213
+links:
+  paper: https://doi.org/10.5194/egusphere-2026-5397
+  pdf: https://egusphere.copernicus.org/preprints/2026/egusphere-2026-5397/egusphere-2026-5397.pdf
+orgs:
+- university-of-oxford
+topic: climate-emulation
+topics:
+- post-processing
+type: model
+method:
+- cnn
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+status: research
+summary: A U-Net maps 1980–2025 temperature evolution to 2030s–2090s local climatologies, keeping internal
+  variability; forecasts are calibrated and skilful on withheld model families.
+abstract: Abstract. Regional climate projections are usually sharpened by constraining models’ forced
+  responses toward observations, a step that filters out internal variability and works well mainly where
+  the signal-to-noise ratio is high. Here we side-step this limitation with deep learning, treating internal
+  variability not as noise to remove but as part of the future to predict and of the uncertainty to report.
+  A U-Net trained on 290 simulations from 40 CMIP6 Earth System Models maps the 1980 to 2025 evolution
+  of surface air temperature onto decadal-mean monthly climatologies from the 2030s to the 2090s under
+  SSP2-4.5, keeping the forced response and internal variability together. Tested on entirely withheld
+  model families, the forecasts are skilful and empirically calibrated out-of-sample. Within a model's
+  own ensemble, a forecast predicts the future of the specific member it was given more accurately than
+  the futures of that model's other members, a skill that persists to the 2090s, notably over the subpolar
+  North Atlantic, Europe, North America and Southern Ocean. The forecasts also generalise to a next-generation
+  eddy-rich model whose resolved physics lies outside the training distribution, supporting application
+  to real-world data. When applied to observations, the framework reduces uncertainty in global-mean warming
+  similarly to observational constraints, while also providing spatially coherent local predictions. This
+  shows that our deep learning approach can estimate the distribution of future local climate, conditioned
+  on the recent observed trajectory, encompassing uncertainty arising from both forced response and internal
+  variability realisations. This extends observationally constrained projection toward calibrated predictions
+  at the local scale and seasonal resolution where adaptation decisions are made.
+significance: 5
+cited_by: 0
+score: 30
+highlight: false
+added: '2026-10-22'
+source: backfill

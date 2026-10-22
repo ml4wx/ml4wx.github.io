@@ -1,0 +1,55 @@
+id: doi-10.1007-s00703-024-01056-6
+title: Improving 2 m temperature forecasts of numerical weather prediction through a machine learning-based
+  Bayesian model
+authors:
+- Hui Zhang
+- Junming Chen
+- Yaqiang Wang
+- Janguang Han
+- Yiguo Xu
+date: '2025-01-01'
+year: 2025
+venue: Meteorology and Atmospheric Physics
+venue_type: journal
+ids:
+  doi: 10.1007/s00703-024-01056-6
+  openalex: W4406058405
+links:
+  paper: https://doi.org/10.1007/s00703-024-01056-6
+  pdf: https://link.springer.com/content/pdf/10.1007/s00703-024-01056-6.pdf
+orgs:
+- cma
+topic: post-processing
+type: model
+method:
+- classical-ml
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- era5
+status: research
+summary: Bayesian model averaging of linear regression, LightGBM and UNet corrects ECMWF 2 m temperature,
+  reducing RMSE to 1.15 °C over Xiong'an.
+abstract: Temperature is a fundamental meteorological factor significantly impacting human life and socio-economic
+  development. This study applies a multi-model fusion technique, integrating three artificial intelligence
+  (AI) methods, to improve temperature forecast accuracy by addressing systematic errors and biases in
+  the European Centre for Medium-Range Weather Forecasts (ECMWF) 2 m temperature predictions for Xiong’an
+  New Area and its upstream regions. Using ECMWF forecast data from January 1, 2018, to December 31, 2021,
+  along with ERA5 reanalysis data, we optimized a Bayesian model averaging (BMA_OP) approach, combining
+  linear regression, LightGBM, and UNet to revise the 2 m temperature forecast. BMA_OP demonstrated improved
+  performance, achieving an overall root-mean-square error (RMSE) of 1.15 °C, an average prediction accuracy
+  of 73% for the ECMWF model, and an accuracy of over 91% for BMA_OP, marking a 24.7% improvement. To
+  further assess generalization, we tested the model using full-year 2022 data, where BMA_OP outperformed
+  the ECMWF model with an RMSE, mean absolute error (MAE), and accuracy of 1.31 °C, 1.03 °C, and 87%,
+  respectively—exceeding the ECMWF model’s results by 16%, 13%, and 6%. These findings confirm the effectiveness
+  of BMA_OP-based multi-model fusion technology for temperature correction.
+significance: 3
+cited_by: 8
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,50 @@
+id: doi-10.1038-s41598-025-17234-4
+title: A super-resolution network based on dual aggregate transformer for climate downscaling
+authors:
+- Meng Li
+- Yijing Chen
+- Zhihui Song
+date: '2025-09-29'
+year: 2025
+venue: Scientific Reports
+venue_type: journal
+ids:
+  doi: 10.1038/s41598-025-17234-4
+  openalex: W4414594811
+links:
+  paper: https://doi.org/10.1038/s41598-025-17234-4
+  pdf: https://www.nature.com/articles/s41598-025-17234-4.pdf
+topic: downscaling
+type: model
+method:
+- transformer
+- cnn
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Hybrid CNN and dual-aggregation transformer (CDDAT) for rainfall climate downscaling on NJU-CPOL
+  radar data, reporting state-of-the-art texture restoration.
+abstract: This paper addresses the problem of climate downscaling. Previous research on image super-resolution
+  models has demonstrated the effectiveness of deep learning for downscaling tasks. However, most existing
+  deep learning models for climate downscaling have limited ability to capture the complex details required
+  to generate High-Resolution (HR) image climate data and lack the ability to reassign the importance
+  of different rainfall variables dynamically. To handle these challenges, in this paper, we propose a
+  Climate Downscaling Dual Aggregation Transformer (CDDAT), which can extract rich and high-quality rainfall
+  features and provide additional storm microphysical and dynamical structure information through multivariate
+  fusion. CDDAT is a novel hybrid model consisting of a Lightweight CNN Backbone(LCB) with High Preservation
+  Blocks (HPBs) and a Dual Aggregation Transformer Backbone(DATB) equipped with the adaptive self-attention.
+  Specifically, we first extract high-frequency features employing LCB, which adopts HPBs to dynamically
+  reduce the resolution of rainfall processing features and to extract rainfall image depth features at
+  low cost. Then we utilize the DATB to alternately apply spatial window and channel self-attention for
+  spatial and channel features aggregation. Furthermore, we introduce a multimodal fusion operation based
+  on a convolutional neural network. Finally, we evaluate the CDDAT using the NJU-CPOL dataset. The experimental
+  results demonstrate that the proposed network can perform high texture restoration of rainfall images
+  and achieve state-of-the-art-results in climate downscaling tasks.
+significance: 3
+cited_by: 2
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

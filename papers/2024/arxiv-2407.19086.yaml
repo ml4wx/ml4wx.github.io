@@ -1,0 +1,57 @@
+id: arxiv-2407.19086
+title: Super Resolution for Renewable Energy Resource Data With Wind From Reanalysis Data and Application
+  to Ukraine
+authors:
+- Brandon N. Benton
+- Grant Buster
+- Pavlo Pinchuk
+- Andrew Glaws
+- Ryan N. King
+- Galen Maclaurin
+- Ilya Chernyakhovskiy
+date: '2024-07-26'
+year: 2024
+venue: Energies 2025, 18, 3769
+venue_type: journal
+ids:
+  arxiv: '2407.19086'
+  doi: 10.3390/en18143769
+  openalex: W4401913383
+links:
+  paper: https://arxiv.org/abs/2407.19086
+  pdf: https://arxiv.org/pdf/2407.19086
+topic: downscaling
+topics:
+- applications-impacts
+type: model
+method:
+- gan-vae
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: GAN-based spatiotemporal downscaling of ERA5 to 2 km, 5-minute wind data over Ukraine, matching
+  dynamical downscaling accuracy at about 100 times lower cost, producing a 24-year dataset.
+abstract: With a potentially increasing share of the electricity grid relying on wind to provide generating
+  capacity and energy, there is an expanding global need for historically accurate, spatiotemporally continuous,
+  high-resolution wind data. Conventional downscaling methods for generating these data based on numerical
+  weather prediction have a high computational burden and require extensive tuning for historical accuracy.
+  In this work, we present a novel deep learning-based spatiotemporal downscaling method using generative
+  adversarial networks (GANs) for generating historically accurate high-resolution wind resource data
+  from the European Centre for Medium-Range Weather Forecasting Reanalysis version 5 data (ERA5). In contrast
+  to previous approaches, which used coarsened high-resolution data as low-resolution training data, we
+  use true low-resolution simulation outputs. We show that by training a GAN model with ERA5 as the low-resolution
+  input and Wind Integration National Dataset Toolkit (WTK) data as the high-resolution target, we achieved
+  results comparable in historical accuracy and spatiotemporal variability to conventional dynamical downscaling.
+  This GAN-based downscaling method additionally reduces computational costs over dynamical downscaling
+  by two orders of magnitude. We applied this approach to downscale 30 km, hourly ERA5 data to 2 km, 5
+  min wind data for January 2000 through December 2023 at multiple hub heights over Ukraine, Moldova,
+  and part of Romania. This 24-year data record is the first member of the super-resolution for renewable
+  energy resource data with wind from the reanalysis data dataset (Sup3rWind).
+significance: 4
+cited_by: 6
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,47 @@
+id: doi-10.1038-s41598-025-33209-x
+title: Data-driven emulation of modal aerosol microphysics via neural operator-based modeling
+authors:
+- Zhe Bai
+- Damian W. I. Rouson
+date: '2025-12-26'
+year: 2025
+venue: Scientific Reports
+venue_type: journal
+ids:
+  doi: 10.1038/s41598-025-33209-x
+  openalex: W7117304004
+links:
+  paper: https://doi.org/10.1038/s41598-025-33209-x
+orgs:
+- lbnl-nersc
+topic: hybrid-parameterization
+type: model
+method:
+- neural-operator
+spatial:
+- global
+data:
+- other
+status: research
+summary: Aerosol deep operator network emulates the E3SMv2 modal aerosol microphysics parameterization
+  with high R-squared and fast CPU and GPU inference.
+abstract: 'The complexity and the small characteristic scales of aerosol microphysical processes pose
+  a big challenge for accurate and efficient Earth system simulations at regional and global scales. In
+  this work, we construct and evaluate a surrogate model: the aerosol deep operator network (ADON), a
+  physics-inspired dual-net architecture for emulating the aerosol microphysics parameterization suite
+  in the version 2 of the Energy Earth System Model (E3SMv2). The current version of the surrogate model
+  is trained on a dataset comprising 9.8 million samples obtained from a global E3SMv2 simulation with
+  the horizontal resolution of about one degree under cloud-free conditions. Incorporating domain spatial
+  and temporal coordinates, as well as principle components extracted from training data, the dual-net
+  surrogate model effectively captures the intricate representations of aerosol and the relationship with
+  atmospheric state variables, achieving an R-squared score over [Formula: see text] for all the lognormal
+  aerosol modes in the extrapolated regime. The validated model provides feature importance of input variables
+  and their impact on the predictive capacity of the surrogate model in relation to the E3SM. The computational
+  cost of online inference time deployed on CPUs and GPUs with lower precisions highlights ADON''s efficiency
+  and potential in robust predictive modeling for large-scale Earth system computations.'
+significance: 4
+cited_by: 0
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

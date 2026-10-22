@@ -1,0 +1,53 @@
+id: doi-10.1029-2026jh001302
+title: A Constrained‐Regression Machine Learning Model for Predicting Future Natural Land‐Cover Composition
+  From Climate Projections
+authors:
+- T. F. Stepinski
+date: '2026-09-30'
+year: 2026
+venue: Journal of Geophysical Research Machine Learning and Computation
+venue_type: journal
+ids:
+  doi: 10.1029/2026jh001302
+  openalex: W7214932895
+links:
+  paper: https://doi.org/10.1029/2026jh001302
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2026JH001302
+topic: applications-impacts
+topics:
+- climate-analysis-attribution
+type: model
+method:
+- classical-ml
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+- other
+status: research
+summary: Constrained k-nearest-neighbour regression maps CMIP6-based climate projections to future land-cover
+  composition, with 1–11% mean absolute errors on present-day tiles.
+abstract: Abstract Predicting future vegetation patterns from climate change projections is central to
+  assessing ecological impacts, but most existing climate–vegetation models predict coarse biome classes
+  rather than fine‐grained land cover. Here we develop a constrained regression approach that predicts
+  local land cover composition (LLCC)—the fractional cover of major natural vegetation categories within
+  a fixed‐area tile—directly from local climate. Using ESA WorldCover land cover resampled to 100 m resolution
+  and CHELSA bioclimatic variables at 5 km resolution, we represent the landscape as 5 km × 5 km tiles,
+  each summarized by four bioclimatic predictors and a four‐part composition (tree cover, shrubland, grassland,
+  and bare land). We train a ‐nearest neighbors regression model in which predicted compositions are obtained
+  by averaging the compositions of the most climatically similar training tiles, which enforces the sum‐to‐one
+  constraint by construction. Model performance is assessed by predicting present‐epoch LLCC from present‐epoch
+  climate and comparing against observed compositions; mean absolute errors range from 1% to 11% across
+  categories. We then forecast LLCC for 2040, 2070, and 2100 epochs under CMIP6‐based CHELSA projections
+  for SSP 370 and SSP 585 scenarios and visualize the results with synthetic land‐cover maps constructed
+  from present‐day patterns. The projections should be interpreted as climatically feasible compositions,
+  reflecting climate controls but not explicitly accounting for land management, fire, soils, or other
+  non‐climatic drivers.
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

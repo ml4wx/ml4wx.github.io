@@ -1,0 +1,58 @@
+id: arxiv-2602.04757
+title: A Dual-TransUNet Deep Learning Framework for Multi-Source Precipitation Merging and Improving Seasonal
+  and Extreme Estimates
+authors:
+- Yuchen Ye
+- Zixuan Qi
+- Shixuan Li
+- Wei Qi
+- Yanpeng Cai
+- Chaoxia Yuan
+date: '2026-02-04'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2602.04757'
+  openalex: W7127976979
+links:
+  paper: https://arxiv.org/abs/2602.04757
+  pdf: https://arxiv.org/pdf/2602.04757
+orgs:
+- nuist
+topic: observations-remote-sensing
+topics:
+- extremes-hazards
+type: model
+method:
+- transformer
+- cnn
+spatial:
+- regional
+data:
+- satellite
+- era5
+- stations
+status: research
+summary: Two-stage TransUNet fuses six satellite and reanalysis precipitation products over China, improving
+  seasonal skill and heavy-rain detection with interpretable SHAP diagnostics.
+abstract: Multi-source precipitation products (MSPs) from satellite retrievals and reanalysis are widely
+  used for hydroclimatic monitoring, yet spatially heterogeneous biases and limited skill for extremes
+  still constrain their hydrologic utility. Here we develop a dual-stage TransUNet-based multi-source
+  precipitation merging framework (DDL-MSPMF) that integrates six MSPs with four ERA5 near-surface physical
+  predictors. A first-stage classifier estimates daily precipitation occurrence probability, and a second-stage
+  regressor fuses the classifier outputs together with all predictors to estimate daily precipitation
+  amount at 0.25 degree resolution over China for 2001-2020. Benchmarking against multiple deep learning
+  and hybrid baselines shows that the TransUNet - TransUNet configuration yields the best seasonal performance
+  (R = 0.75; RMSE = 2.70 mm/day) and improves robustness relative to a single-regressor setting. For heavy
+  precipitation (>25 mm/day), DDL-MSPMF increases equitable threat scores across most regions of eastern
+  China and better reproduces the spatial pattern of the July 2021 Zhengzhou rainstorm, indicating enhanced
+  extreme-event detection beyond seasonal-mean corrections. Independent evaluation over the Qinghai-Tibet
+  Plateau using TPHiPr further supports its applicability in data-scarce regions. SHAP analysis highlights
+  the importance of precipitation occurrence probabilities and surface pressure, providing physically
+  interpretable diagnostics. The proposed framework offers a scalable and explainable approach for precipitation
+  fusion and extreme-event assessment.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

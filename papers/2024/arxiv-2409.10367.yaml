@@ -1,0 +1,57 @@
+id: arxiv-2409.10367
+title: Integrated nowcasting of convective precipitation with Transformer-based models using multi-source
+  data
+authors:
+- Çağlar Küçük
+- Aitor Atencia
+- Markus Dabernig
+date: '2024-09-10'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2409.10367'
+  openalex: W4403702754
+links:
+  paper: https://arxiv.org/abs/2409.10367
+  pdf: https://arxiv.org/pdf/2409.10367
+topic: nowcasting
+topics:
+- observations-remote-sensing
+type: model
+method:
+- transformer
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+- stations
+- nwp-analysis
+status: research
+summary: EF4INCA, a Transformer fusing satellite, ground and NWP data, nowcasts 1 km precipitation over
+  Austria to 90 minutes and outperforms the operational model.
+abstract: Precipitation nowcasting is crucial for mitigating the impacts of severe weather events and
+  supporting daily activities. Conventional models predominantly relying on radar data have limited performance
+  in predicting cases with complex temporal features such as convection initiation, highlighting the need
+  to integrate data from other sources for more comprehensive nowcasting. Unlike physics-based models,
+  machine learning (ML)-based models offer promising solutions for efficiently integrating large volumes
+  of diverse data. We present EF4INCA, a spatiotemporal Transformer model for precipitation nowcasting
+  that integrates satellite- and ground-based observations with numerical weather prediction outputs.
+  EF4INCA provides high-resolution forecasts over Austria, accurately predicting the location and shape
+  of precipitation fields with a spatial resolution of 1 kilometre and a temporal resolution of 5 minutes,
+  up to 90 minutes ahead. Our evaluation shows that EF4INCA outperforms conventional nowcasting models,
+  including the operational model of Austria, particularly in scenarios with complex temporal features
+  such as convective initiation and rapid weather changes. EF4INCA maintains higher accuracy in location
+  forecasting but generates smoother fields at later prediction times compared to traditional models.
+  Interpretation of our model showed that precipitation products and SEVIRI infrared channels CH7 and
+  CH9 are the most important data streams. These results underscore the importance of combining data from
+  different domains, including physics-based model products, with ML approaches. Our study highlights
+  the robustness of EF4INCA and its potential for improved precipitation nowcasting. We provide access
+  to our code repository, model weights, and the dataset curated for benchmarking, facilitating further
+  development and application.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

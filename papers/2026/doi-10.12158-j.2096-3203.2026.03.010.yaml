@@ -1,0 +1,53 @@
+id: doi-10.12158-j.2096-3203.2026.03.010
+title: Photovoltaic power short-term forecasting method based on similar days and bi-layer correction
+  LSTM model
+authors:
+- Yulong Shi
+- Qiao PENG
+- Tianqi LIU
+- Gang CHEN
+- Xueyang Zeng
+- Yan LI
+date: '2026-03-01'
+year: 2026
+venue: 'DOAJ (DOAJ: Directory of Open Access Journals)'
+venue_type: preprint
+ids:
+  doi: 10.12158/j.2096-3203.2026.03.010
+  openalex: W7148989448
+links:
+  paper: https://doi.org/10.12158/j.2096-3203.2026.03.010
+topic: applications-impacts
+topics:
+- post-processing
+type: model
+method:
+- rnn
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Similar-day matching plus a bi-layer LSTM that corrects NWP-based PV forecast errors improves
+  24-hour PV power predictions across sunny, cloudy and rainy weather.
+abstract: Accurate forecasting of photovoltaic (PV) power is essential for power system dispatch and decision-making.
+  To enhance the prediction accuracy of PV power, a data-driven short-term forecasting method based on
+  similar days and a bi-layer correction long short-term memory (LSTM) model is proposed. Firstly, both
+  PV power and related meteorological data are normalized, and key factors influencing PV power are identified
+  using the Pearson correlation coefficient, reducing the dimensions of the training dataset. Nextly,
+  the Fréchet distance algorithm is applied to match similar days with the target prediction day, improving
+  the quality of the training data. Then, based on numerical weather predictions, the initial PV power
+  forecast is obtained through the baseline LSTM using feature learning. A correction LSTM, using a time
+  series approach, predicts the error and adjusts the initial forecast to produce the final prediction.
+  A case study uses real-world data under different weather conditions, i.e., sunny, cloudy, and rainy
+  conditions. It shows that the proposed model consistently delivers accurate short-term PV power predictions
+  for the next 24 hours. The model significantly improves accuracy compared to existing methods.
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

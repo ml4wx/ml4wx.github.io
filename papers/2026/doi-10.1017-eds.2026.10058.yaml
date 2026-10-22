@@ -1,0 +1,51 @@
+id: doi-10.1017-eds.2026.10058
+title: Spatiotemporal coherent displacements for ensemble-based neural data assimilation
+authors:
+- S. Roy
+- R. Fablet
+date: '2026-10-16'
+year: 2026
+venue: Environmental Data Science
+venue_type: journal
+ids:
+  doi: 10.1017/eds.2026.10058
+  openalex: W7154194987
+links:
+  paper: https://doi.org/10.1017/eds.2026.10058
+  pdf: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/30630E9F08915A10BD7910D014ADB4C1/S2634460226100582a.pdf/div-class-title-spatiotemporal-coherent-displacements-for-ensemble-based-neural-data-assimilation-div.pdf
+topic: data-assimilation
+topics:
+- xai-uq-physics
+type: model
+method:
+- cnn
+- physics-constrained
+spatial:
+- regional
+data:
+- other
+status: research
+summary: 4DVarNet-LU adds spatiotemporally coherent location-based displacements to neural variational
+  assimilation, beating a UNet baseline on RMSE and CRPS in a quasi-geostrophic twin experiment.
+abstract: Abstract While deep learning (DL) methods have expanded the approach to solving state estimation
+  problems in data assimilation (DA), a robust approach requires extending them for uncertainty quantification.
+  In this work, we propose a method to represent location-based uncertainty through random, spatiotemporally
+  coherent displacements in physical space, which are used to sample states in the vicinity of a given
+  reference state. We integrate this strategy into an end-to-end variational DA framework, termed 4DVarNet-LU,
+  and compare its performance with a UNet baseline, demonstrating improved reconstruction skill through
+  the explicit use of prior state information. Trained deterministically in output and stochastically
+  in input, we demonstrate that at inference, we see improvement in skill when using information from
+  initial conditions. Using observation system simulation experiments based on a single-layer quasi-geostrophic
+  model with sparse pseudo-nadir altimetry observations, we evaluate reconstruction mean and ensemble
+  skill. Results show that 4DVarNet-LU consistently outperforms the UNet baseline in terms of root mean
+  square error (RMSE) and continuous ranked probability score (CRPS), with increased robustness to initial
+  condition bias and improved temporal stability. While the method does not propose to account for all
+  different uncertainty sources in DA, it provides a structured way for modeling and training DL models
+  for dealing with location-based uncertainty. Future work may extend this approach to account for additional
+  sources of uncertainty and end-to-end ensemble generation.
+significance: 4
+cited_by: 0
+score: 16
+highlight: false
+added: '2026-10-22'
+source: snowball

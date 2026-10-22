@@ -1,0 +1,52 @@
+id: doi-10.1016-j.rineng.2025.108825
+title: A GNN-based station-level downscaling method for 2-m air temperature by considering region terrain
+authors:
+- Huixia Lai
+- Binlong Lu
+- Chenyan Lin
+- Shi Zhang
+date: '2025-12-28'
+year: 2025
+venue: Results in Engineering
+venue_type: journal
+ids:
+  doi: 10.1016/j.rineng.2025.108825
+  openalex: W7117408949
+links:
+  paper: https://doi.org/10.1016/j.rineng.2025.108825
+topic: downscaling
+type: model
+method:
+- gnn
+spatial:
+- regional
+- local
+data:
+- stations
+- era5
+status: research
+summary: GNN-SLTD downscales station 2-m temperature across Fujian using a terrain-aware graph network,
+  improving RMSE by at least 12.6% over baselines.
+abstract: • Integrating multi-dimensional information, propose a T2m downscaling method. • Propose a Geospatial-Perceived
+  Graph Neural Network (GeoGNN). • Propose a feature extracting method for region terrain. • Experiment
+  results verify the effectiveness. Existing deep learning-based downscaling (DS) methods for meteorological
+  variables treat downscaling as a super-resolution task in computer vision, heavily relying on grid-based
+  data. In response to the demand for real-time, high-resolution 2-m air temperature (T2m) in meteorology,
+  we propose an innovative Graph Neural Network-based Station-Level 2-m air Temperature Downscaling method
+  (GNN-SLTD), which takes in-situ observation data from irregularly scattered meteorological stations
+  and digital elevation model (DEM) in a region as input, then downscales T2m to any locations within
+  the research area. Taking Fujian Province, China, a topographically complex region, as the research
+  area, the experiment results show that GNN-SLTD improves by at least 12.6%(RMSE) and 12.4%(MAE) in stations-to-stations
+  downscaling task. In comparison to mountainous areas, plain areas exhibit smoother and more continuous
+  atmospheric circulation patterns, making the downscaling easier. The distribution of backbone stations
+  is also affecting the performance. In grid-to-stations downscaling tasks, GNN-SLTD overcomes the problem
+  of poor accuracy of ERA5-Land in coastal areas and achieves great improvement in T2m downscaling. In
+  addition, the ablation study verifies the indispensability of covariates and region terrain features
+  in improving T2m downscaling performance. GNN-SLTD is significant for downscaling models based on deep
+  learning and provides a new way to integrate multi-dimensional information.
+significance: 4
+cited_by: 0
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

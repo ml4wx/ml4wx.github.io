@@ -1,0 +1,61 @@
+id: doi-10.31015-2025.si.23
+title: ERA5–NASA Ensembles for Daily Rain Prediction Supporting Irrigation in Konya, Türkiye
+authors:
+- Ali Çetinkaya
+date: '2025-12-27'
+year: 2025
+venue: International Journal of Agriculture Environment and Food Sciences
+venue_type: journal
+ids:
+  doi: 10.31015/2025.si.23
+  openalex: W7117408904
+links:
+  paper: https://doi.org/10.31015/2025.si.23
+  pdf: https://dergipark.org.tr/en/download/article-file/5389514
+topic: local-forecasting
+type: application
+method:
+- classical-ml
+- rnn
+timescale:
+- short
+spatial:
+- local
+data:
+- era5
+- stations
+status: research
+summary: CatBoost on combined ERA5 and NASA POWER features predicts daily rain occurrence in Konya with
+  84.57% F1, beating an LSTM baseline.
+abstract: 'Reliable daily precipitation prediction is pivotal for agricultural water management in semi-arid
+  regions, where water scarcity and climate variability raise operational risk. This study develops and
+  evaluates machine-learning approaches for precipitation occurrence in Konya, Türkiye - one of the country’s
+  key agricultural basins - using 44 years (1980–2024) of meteorological data. We examine three data strategies:
+  (i) European Centre for Medium-Range Weather Forecasts (ECMWF) Reanalysis v5 (ERA5) reanalysis features
+  alone, (ii) National Aeronautics and Space Administration (NASA) Prediction Of Worldwide Energy Resources
+  (POWER) observations alone, and (iii) a combined strategy that merges ERA5 predictors with the NASA
+  rain/no-rain target. Five model families are compared— Random Forest (RF), Extreme Gradient Boosting
+  (XGBoost), Light Gradient Boosting Machine (LightGBM), Categorical Boosting (CatBoost), and a three-layer
+  Long Short-Term Memory (LSTM) on analysis-ready tabular datasets. All approaches use advanced feature
+  engineering (cyclical seasonality, lags, rolling windows) and a deployment-minded post-processing step
+  that scans decision thresholds from 0.10 to 0.90 to maximize F1‑score. Performance is assessed with
+  a chronological train/test split; F1‑score is the primary metric, complemented by Area Under the Receiver
+  Operating Characteristic Curve (AUC-ROC), precision, recall, confusion matrices, and calibration. Results
+  show that the combined strategy with CatBoost delivers the highest skill (F1‑score: 84.57%; AUC-ROC:
+  94.37%), confirming that pairing rich ERA5 features with the quality-controlled NASA target improves
+  performance relative to single-source approaches. Ensemble tree-based methods consistently outperform
+  the LSTM baseline on this daily, tabular classification task. Threshold optimization raises F1‑score
+  by about 1–5% across models, and calibration indicates that predicted probabilities closely match observed
+  frequencies. For semi-arid farming in Konya, calibrated daily probabilities of precipitation can be
+  converted into simple decision rules (e.g., skip irrigation when the predicted probability exceeds a
+  locally selected threshold), supporting irrigation scheduling, fertilizer timing, and harvest planning.
+  The workflow is computationally efficient and reproducible, built on globally available ERA5 and NASA
+  POWER resources, and readily transferable to other semi-arid basins with minor re-tuning. Findings highlight
+  a practical path to trustworthy, probability-based rainfall guidance for agricultural water management.
+  Feature importance analysis highlights seasonality, humidity, temperature ranges, pressure tendencies,
+  and wind extremes as leading signals.'
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

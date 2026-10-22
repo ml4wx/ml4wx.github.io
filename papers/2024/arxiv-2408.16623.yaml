@@ -1,0 +1,56 @@
+id: arxiv-2408.16623
+title: Turbulence Strength $C_n^2$ Estimation from Video using Physics-based Deep Learning
+authors:
+- Ripon Kumar Saha
+- Esen Salcin
+- Jihoo Kim
+- Joseph Smith
+- Suren Jayasuriya
+date: '2024-08-29'
+year: 2024
+venue: Optics Express 30, 40854-40870 (2022)
+venue_type: journal
+ids:
+  arxiv: '2408.16623'
+  doi: 10.1364/oe.469976
+  openalex: W4298145867
+links:
+  paper: https://arxiv.org/abs/2408.16623
+  pdf: https://arxiv.org/pdf/2408.16623
+  code: https://github.com/Riponcs/Cn2Estimation
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+- physics-constrained
+- differentiable
+spatial:
+- local
+data:
+- other
+status: research
+summary: Physics-based CNN estimates atmospheric turbulence strength Cn2 from video, combining learned
+  layers with a differentiable gradient method to generalise better than pure deep learning.
+abstract: Images captured from a long distance suffer from dynamic image distortion due to turbulent flow
+  of air cells with random temperatures, and thus refractive indices. This phenomenon, known as image
+  dancing, is commonly characterized by its refractive-index structure constant $C_n^2$ as a measure of
+  the turbulence strength. For many applications such as atmospheric forecast model, long-range/astronomy
+  imaging, and aviation safety, optical communication technology, $C_n^2$ estimation is critical for accurately
+  sensing the turbulent environment. Previous methods for $C_n^2$ estimation include estimation from meteorological
+  data (temperature, relative humidity, wind shear, etc.) for single-point measurements, two-ended pathlength
+  measurements from optical scintillometer for path-averaged $C_n^2$, and more recently estimating $C_n^2$
+  from passive video cameras for low cost and hardware complexity. In this paper, we present a comparative
+  analysis of classical image gradient methods for $C_n^2$ estimation and modern deep learning-based methods
+  leveraging convolutional neural networks. To enable this, we collect a dataset of video capture along
+  with reference scintillometer measurements for ground truth, and we release this unique dataset to the
+  scientific community. We observe that deep learning methods can achieve higher accuracy when trained
+  on similar data, but suffer from generalization errors to other, unseen imagery as compared to classical
+  methods. To overcome this trade-off, we present a novel physics-based network architecture that combines
+  learned convolutional layers with a differentiable image gradient method that maintains high accuracy
+  while being generalizable across image datasets.
+significance: 2
+cited_by: 22
+score: 18
+highlight: false
+added: '2026-10-22'
+source: backfill

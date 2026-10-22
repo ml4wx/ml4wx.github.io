@@ -1,0 +1,54 @@
+id: arxiv-2502.17495
+title: 'Spatiotemporal Forecasting in Climate Data Using EOFs and Machine Learning Models: A Case Study
+  in Chile'
+authors:
+- Mauricio Herrera
+- Francisca Kleisinger
+- Andrés Wilsón
+date: '2025-02-21'
+year: 2025
+venue: Qeios
+venue_type: journal
+ids:
+  arxiv: '2502.17495'
+  doi: 10.32388/v71u3t
+  openalex: W4409040848
+links:
+  paper: https://doi.org/10.32388/v71u3t
+  pdf: https://arxiv.org/pdf/2502.17495
+topic: local-forecasting
+type: model
+method:
+- classical-ml
+timescale:
+- medium
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Hybrid EOF decomposition with wavelet-ANN models forecasts gridded Chilean rainfall by reducing
+  the problem to univariate forecasts of EOF coefficients.
+abstract: Effective resource management and environmental planning in regions with high climatic variability,
+  such as Chile, demand advanced predictive tools. This study addresses this challenge by employing an
+  innovative and computationally efficient hybrid methodology that integrates machine learning (ML) methods
+  for time series forecasting with established statistical techniques. The spatiotemporal data undergo
+  decomposition using time-dependent Empirical Orthogonal Functions (EOFs), denoted as \(φ_{k}(t)\), and
+  their corresponding spatial coefficients, \(α_{k}(s)\), to reduce dimensionality. Wavelet analysis provides
+  high-resolution time and frequency information from the \(φ_{k}(t)\) functions, while neural networks
+  forecast these functions within a medium-range horizon \(h\). By utilizing various ML models, particularly
+  a Wavelet - ANN hybrid model, we forecast \(φ_{k}(t+h)\) up to a time horizon \(h\), and subsequently
+  reconstruct the spatiotemporal data using these extended EOFs. This methodology is applied to a grid
+  of climate data covering the territory of Chile. It transitions from a high-dimensional multivariate
+  spatiotemporal data forecasting problem to a low-dimensional univariate forecasting problem. Additionally,
+  cluster analysis with Dynamic Time Warping for defining similarities between rainfall time series, along
+  with spatial coherence and predictability assessments, has been instrumental in identifying geographic
+  areas where model performance is enhanced. This approach also elucidates the reasons behind poor forecast
+  performance in regions or clusters with low spatial coherence and predictability. By utilizing cluster
+  medoids, the forecasting process becomes more practical and efficient. This compound approach significantly
+  reduces computational complexity while generating forecasts of reasonable accuracy and utility.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,58 @@
+id: arxiv-2410.07013
+title: Causal Representation Learning in Temporal Data via Single-Parent Decoding
+authors:
+- Philippe Brouillard
+- Sébastien Lachapelle
+- Julia Kaltenborn
+- Yaniv Gurwicz
+- Dhanya Sridhar
+- Alexandre Drouin
+- Peer Nowack
+- Jakob Runge
+- David Rolnick
+date: '2024-10-09'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2410.07013'
+  openalex: W4403345677
+links:
+  paper: https://arxiv.org/abs/2410.07013
+  pdf: https://arxiv.org/pdf/2410.07013
+orgs:
+- kit
+topic: climate-analysis-attribution
+topics:
+- benchmarks-data-eval
+type: model
+method:
+- differentiable
+spatial:
+- global
+data:
+- other
+status: research
+summary: Differentiable causal representation learning with single-parent decoding, identifiable and demonstrated
+  on simulated data and a real climate dataset involving El Niño.
+abstract: 'Scientific research often seeks to understand the causal structure underlying high-level variables
+  in a system. For example, climate scientists study how phenomena, such as El Niño, affect other climate
+  processes at remote locations across the globe. However, scientists typically collect low-level measurements,
+  such as geographically distributed temperature readings. From these, one needs to learn both a mapping
+  to causally-relevant latent variables, such as a high-level representation of the El Niño phenomenon
+  and other processes, as well as the causal model over them. The challenge is that this task, called
+  causal representation learning, is highly underdetermined from observational data alone, requiring other
+  constraints during learning to resolve the indeterminacies. In this work, we consider a temporal model
+  with a sparsity assumption, namely single-parent decoding: each observed low-level variable is only
+  affected by a single latent variable. Such an assumption is reasonable in many scientific applications
+  that require finding groups of low-level variables, such as extracting regions from geographically gridded
+  measurement data in climate research or capturing brain regions from neural activity data. We demonstrate
+  the identifiability of the resulting model and propose a differentiable method, Causal Discovery with
+  Single-parent Decoding (CDSD), that simultaneously learns the underlying latents and a causal graph
+  over them. We assess the validity of our theoretical results using simulated data and showcase the practical
+  validity of our method in an application to real-world data from the climate science field.'
+significance: 3
+cited_by: 2
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,65 @@
+id: doi-10.1038-s41598-026-57382-9
+title: 'Explainable machine learning for climate change attribution and hotspot identification: spatial
+  cross-validation analysis in South Asian Region'
+authors:
+- Ram Chand
+- Saeeddudin Sheikh
+- Barkha Kanjwani
+- Saqia Bukhari
+- Harsh Kumar
+date: '2026-06-23'
+year: 2026
+venue: Scientific Reports
+venue_type: journal
+ids:
+  doi: 10.1038/s41598-026-57382-9
+  openalex: W7165673019
+links:
+  paper: https://doi.org/10.1038/s41598-026-57382-9
+  pdf: https://www.nature.com/articles/s41598-026-57382-9_reference.pdf
+topic: climate-analysis-attribution
+topics:
+- xai-uq-physics
+type: evaluation
+method:
+- classical-ml
+- other
+spatial:
+- regional
+data:
+- stations
+- other
+status: research
+summary: Explainable gradient boosting with spatial cross-validation attributes Sindh, Pakistan temperature
+  anomalies to climate and anthropogenic predictors, with R² 0.914 under LODO-CV.
+abstract: We present a machine learning framework for climate change attribution and hotspot identification,
+  with emphasis on testing geographic transferability through spatial cross-validation. We evaluate eight
+  ML models for explaining temperature anomalies in Sindh, Pakistan on 44 years of observations. We performed
+  spatial transferability testing using Leave-One-District-Out Cross-Validation (LODO-CV) to assess whether
+  learned relationships generalize to districts not seen during training. Gradient Boosting was the most
+  successful algorithm with ( \(R^2 = 0.914\pm 0.098\) ) under LODO-CV, which indicates robust transferability
+  across the region’s diverse climatic zones. The modest difference between LODO-CV and random cross-validation
+  ( \(\Delta R^2 \approx 0.02\) ) is consistent with findings that temporal structure often dominates
+  spatial structure in climate time series 1 ; we thus interpret LODO-CV as a complementary robustness
+  check rather than a correction for inflated performance. SHAP feature attribution showed that climate
+  variables (37.6%), temporal trends (32.0%), and anthropogenic proxies (23.7%), are the most important
+  predictors, although it is also important to note the caveat that the importance of proxies is only
+  indicative of correlation, not causation, and must be carefully considered when applying to policy matters.
+  A sensitivity analysis excluding all temperature-derived predictors confirms that the model achieves
+  \(R^2 = 0.914\) using only temporal, geographic, and anthropogenic features, ruling out feature-target
+  circularity. Temporally blocked cross-validation (train \(\le\) 2015, test 2016–2024) yields \(R^2 =
+  0.445\) , honestly demonstrating that temporal extrapolation is substantially more challenging than
+  spatial interpolation—a well-documented limitation of statistical climate models. By using a dual-index
+  model, which integrates the frequency of extreme events with average climate changes, we were able to
+  pinpoint seven hotspots of climate change, concentrated in Karachi and Hyderabad urban areas, which
+  are exposed to compound risk of urbanization, coastal exposure, and rising temperature extremes. We
+  emphasize that our framework addresses attribution—understanding which factors correlate with observed
+  temperature variability—rather than operational forecasting, which appropriately relies on numerical
+  weather prediction models. The results demonstrate the value of spatially explicit validation procedures
+  for confirming geographic transferability of climate ML models and offer practical suggestions to specific
+  adaptation planning for the most climate-prone regions.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

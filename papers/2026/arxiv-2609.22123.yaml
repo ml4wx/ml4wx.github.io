@@ -1,0 +1,52 @@
+id: arxiv-2609.22123
+title: 'StationPDE: Station-Oriented Surface PDE Learning for Multi-Station Multivariate Weather Forecasting'
+authors:
+- Xiao Wang
+- Changjian Chen
+- Rongwen Li
+- Hongwu Liu
+- Kun Fang
+- Zhuo Tang
+date: '2026-08-20'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.22123'
+  openalex: W7214029965
+links:
+  paper: https://arxiv.org/abs/2609.22123
+  pdf: https://arxiv.org/pdf/2609.22123
+topic: local-forecasting
+topics:
+- foundation-models
+type: model
+method:
+- physics-constrained
+- other
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: StationPDE learns surface wind-transport PDE dynamics on a terrain-aware field from station data,
+  cutting multivariate station forecast MSE by about 9.6% on Weather2K and MeteoNet.
+abstract: Multi-station multivariate weather forecasting aims to forecast future weather variables at
+  multiple weather stations from historical surface observations. Existing station forecasting models
+  learn statistical dependencies among discrete stations, but lack explicit physical evolution. Meanwhile,
+  PDE-based weather models provide interpretable physical dynamics, yet require continuous fields and
+  upper-air variables unavailable in surface station data. To bridge this gap, we propose StationPDE,
+  a station-oriented surface PDE learning model. StationPDE constructs a terrain-aware continuous surface
+  field from discrete station observations and decomposes its physical evolution into surface wind transport
+  and upper-air inference. Surface wind transport explicitly evolves observable weather variables, while
+  upper-air inference uses learnable horizontal diffusion to approximate the missing influence of unavailable
+  upper-air variables. A parallel data-driven diffusion branch captures complementary motion patterns,
+  and an adaptive router integrates the two forecasts for station-level multivariate forecasting. Experiments
+  on Weather2K and MeteoNet show that StationPDE consistently outperforms state-of-the-art baselines,
+  reducing MSE by about $9.6\%$ on average compared with the strongest baseline.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

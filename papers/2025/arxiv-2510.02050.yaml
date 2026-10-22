@@ -1,0 +1,61 @@
+id: arxiv-2510.02050
+title: Multidata Causal Discovery for Statistical Hurricane Intensity Forecasting
+authors:
+- Saranya Ganesh S
+- Frederick Iat-Hin Tam
+- Milton S. Gomez
+- Marie McGraw
+- Mark DeMaria
+- Kate Musgrave
+- Jakob Runge
+- Tom Beucler
+date: '2025-10-02'
+year: 2025
+venue: Weather and Forecasting
+venue_type: journal
+ids:
+  arxiv: '2510.02050'
+  doi: 10.1175/waf-d-25-0208.1
+  openalex: W4414820357
+links:
+  paper: https://doi.org/10.1175/waf-d-25-0208.1
+  pdf: https://arxiv.org/pdf/2510.02050
+orgs:
+- colorado-state-university
+topic: extremes-hazards
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+- nwp-analysis
+status: research
+summary: Causal discovery selects predictors for statistical tropical cyclone intensity forecasts, improving
+  SHIPS skill at 24–72 h lead times using ERA5-based data.
+abstract: Improving statistical forecasts of tropical cyclone (TC) intensity is limited by complex nonlinear
+  interactions and difficulty in identifying relevant predictors. Conventional methods prioritize correlation
+  or fit, often overlooking confounding variables and limiting generalizability to unseen TCs. To address
+  this, we leverage a multidata causal discovery framework with a replicated dataset based on Statistical
+  Hurricane Intensity Prediction Scheme (SHIPS) using ERA5 meteorological reanalysis. We conduct experiments
+  to identify and select predictors causally linked to TC intensity changes. We then train multiple linear
+  regression models to compare causal feature selection with correlation, random forest feature importance,
+  and no feature selection, across five forecast lead times from 1 to 5 days (24 to 120 hours). Causal
+  feature selection consistently outperforms on unseen test cases, especially for lead times shorter than
+  3 days. Top causal features include vertical shear, mid-tropospheric potential vorticity and surface
+  moisture conditions, which are physically significant yet often underutilized in TC intensity predictions.
+  We build an extended predictor set (SHIPS+) by adding selected features to the standard SHIPS predictors.
+  SHIPS+ yields increased short-term predictive skill at lead times of 24, 48, and 72 hours. Adding nonlinearity
+  using a multilayer perceptron further extends skill to longer lead times, despite our framework being
+  purely regional and not requiring global forecast data. Operational SHIPS tests confirm that three of
+  the six added causally discovered predictors improve forecast skill, with the largest gains at longer
+  lead times. Our results demonstrate that causal discovery improves TC intensity prediction and pave
+  the way toward more empirical forecasts.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

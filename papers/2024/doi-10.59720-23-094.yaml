@@ -1,0 +1,52 @@
+id: doi-10.59720-23-094
+title: Creating a drought prediction model using convolutional neural networks
+authors:
+- Anik Bora
+- Juliana Calklins
+- Leya Joykutty
+date: '2024-01-01'
+year: 2024
+venue: Journal of Emerging Investigators
+venue_type: journal
+ids:
+  doi: 10.59720/23-094
+  openalex: W4403208896
+links:
+  paper: https://doi.org/10.59720/23-094
+  pdf: https://emerginginvestigators.org/articles/23-094/pdf
+topic: extremes-hazards
+topics:
+- post-processing
+type: model
+method:
+- cnn
+timescale:
+- s2s
+spatial:
+- regional
+data:
+- other
+status: research
+summary: U-Net-based CNN predicts weekly US Drought Monitor indices 1-12 weeks ahead, cutting MSE by 85-98%
+  relative to DroughtCast.
+abstract: Droughts kill over 45,000 people yearly worldwide, with climate change likely to worsen these
+  effects. Despite this, researchers have struggled to develop a method that accurately predicts the location
+  of droughts. One of the most recent and accurate drought prediction models is DroughtCast. DroughtCast
+  utilizes a neural network along with precipitation, temperature, and other weather data to predict the
+  United States Drought Monitor (USDM) index of a given week; however, this model does not consider the
+  contextual aspect of weather forecasting. Predicting weather exclusively using data from a single location
+  will never be as successful as predicting the weather using data from that point in addition to its
+  surroundings. As a result, we created a novel Convolutional Neural Network (CNN) based upon the U-Net
+  architecture to predict future USDM indices by using the current USDM index, historical USDM indices,
+  and a 10-year (2010–2019) dataset containing weather data such as precipitation and Snow Water Equivalent
+  that was obtained from DAYMET, a NASA database for weather across all North America. While the data
+  utilized in our model is similar to DroughtCast’s data, the model architectures are different. We hypothesized
+  that this new architecture would improve the accuracy of our prediction. In comparison to DroughtCast,
+  the mean- squared-error of the CNN Model dropped by 85%, 98%, and 97% for prediction times of 1 week,
+  6 weeks, and 12 weeks respectively, meaning that a vastly more accurate prediction.
+significance: 2
+cited_by: 1
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

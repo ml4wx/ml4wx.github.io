@@ -1,0 +1,68 @@
+id: arxiv-2311.17078
+title: 'Data Imbalance, Uncertainty Quantification, and Generalization via Transfer Learning in Data-driven
+  Parameterizations: Lessons from the Emulation of Gravity Wave Momentum Transport in WACCM'
+authors:
+- Y. Qiang Sun
+- Hamid A. Pahlavan
+- Ashesh Chattopadhyay
+- Pedram Hassanzadeh
+- Sandro W. Lubis
+- M. Joan Alexander
+- Edwin Gerber
+- Aditi Sheshadri
+- Yifei Guan
+date: '2023-11-27'
+year: 2023
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  arxiv: '2311.17078'
+  doi: 10.22541/essoar.170365371.16222393/v1
+  openalex: W4390270494
+links:
+  paper: https://doi.org/10.1029/2023ms004145
+  pdf: https://arxiv.org/pdf/2311.17078
+orgs:
+- nyu-m2lines
+- stanford
+- university-of-chicago
+topic: hybrid-parameterization
+topics:
+- xai-uq-physics
+type: model
+method:
+- gan-vae
+- other
+timescale:
+- climate
+spatial:
+- global
+data:
+- other
+status: research
+summary: Emulates WACCM gravity-wave parameterizations with resampling, weighted loss, UQ methods and
+  transfer learning, which restores accuracy in a 4xCO2 climate using about 1% new data.
+abstract: Neural networks (NNs) are increasingly used for data-driven subgrid-scale parameterization in
+  weather and climate models. While NNs are powerful tools for learning complex nonlinear relationships
+  from data, there are several challenges in using them for parameterizations. Three of these challenges
+  are 1) data imbalance related to learning rare (often large-amplitude) samples; 2) uncertainty quantification
+  (UQ) of the predictions to provide an accuracy indicator; and 3) generalization to other climates, e.g.,
+  those with higher radiative forcing. Here, we examine the performance of methods for addressing these
+  challenges using NN-based emulators of the Whole Atmosphere Community Climate Model (WACCM) physics-based
+  gravity wave (GW) parameterizations as the test case. WACCM has complex, state-of-the-art parameterizations
+  for orography-, convection- and frontal-driven GWs. Convection- and orography-driven GWs have significant
+  data imbalance due to the absence of convection or orography in many grid points. We address data imbalance
+  using resampling and/or weighted loss functions, enabling the successful emulation of parameterizations
+  for all three sources. We demonstrate that three UQ methods (Bayesian NNs, variational auto-encoders,
+  and dropouts) provide ensemble spreads that correspond to accuracy during testing, offering criteria
+  on when a NN gives inaccurate predictions. Finally, we show that the accuracy of these NNs decreases
+  for a warmer climate (4XCO2). However, the generalization accuracy is significantly improved by applying
+  transfer learning, e.g., re-training only one layer using ~1% new data from the warmer climate. The
+  findings of this study offer insights for developing reliable and generalizable data-driven parameterizations
+  for various processes, including (but not limited) to GWs.
+significance: 4
+cited_by: 14
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

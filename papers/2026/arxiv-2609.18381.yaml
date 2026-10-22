@@ -1,0 +1,53 @@
+id: arxiv-2609.18381
+title: 'Every Fixed Metric Has a Blind Spot: A Learned Atmospheric Critic for Scoring Forecast Realism'
+authors:
+- Younes Elberkennou
+- Dmitri Demler
+- Thierry Meier
+- Luca Rispoli
+- Fanny Lehmann
+- Joel Oskarsson
+date: '2026-09-16'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.18381'
+  openalex: W7213515627
+links:
+  paper: https://arxiv.org/abs/2609.18381
+  pdf: https://arxiv.org/pdf/2609.18381
+orgs:
+- eth-zurich
+topic: benchmarks-data-eval
+topics:
+- xai-uq-physics
+type: model
+method:
+- gan-vae
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: A learned discriminator-based realism score detects synthetic corruptions in ERA5 that fixed
+  metrics miss, and rates NWP forecasts as more realistic than ML forecasts.
+abstract: Despite their high accuracy on point-wise metrics, machine learning weather forecasting models
+  can exhibit different failure modes such as blurring, periodic irregularities, and other unphysical
+  spatial artifacts. This has motivated a variety of metrics to detect known failure cases. Existing metrics
+  fix a representation or transformation in advance, and that choice limits the artifacts they can detect.
+  We propose to train a discriminator for separating reference data from the model's output, and using
+  its output logit to obtain a divergence-like realism score. The discriminator learns whatever separates
+  the model's fields from real weather, adapting to whichever failure mode that model exhibits. We compare
+  our learned atmospheric critic to existing metrics using various synthetic corruptions applied to ERA5
+  reanalysis data. Our method successfully identifies the corruptions and ranks their severity, while
+  existing metrics fail on at least one corruption. Additionally, we evaluate forecasts from real weather
+  models, and find that the realism score degrades with longer lead times and the metric generally assigns
+  higher realism to numerical models than to machine learning models.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

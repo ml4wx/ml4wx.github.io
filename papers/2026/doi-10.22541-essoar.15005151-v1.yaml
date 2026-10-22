@@ -1,0 +1,52 @@
+id: doi-10.22541-essoar.15005151-v1
+title: A deep learning framework for downscaling meteorological fields in the European domain
+authors:
+- Georgios Fragkoulidis
+- Giorgos Kyros
+- Vasileios Vafeiadis
+- Vassiliki Kotroni
+- K. Lagouvardos
+date: '2026-06-24'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.22541/essoar.15005151/v1
+  openalex: W7165781950
+links:
+  paper: https://doi.org/10.22541/essoar.15005151/v1
+topic: downscaling
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: Residual U-Net downscales 2 m temperature, precipitation, solar radiation and wind from 1 degree
+  to 0.05 over Greece, with 0.38 C temperature MAE.
+abstract: 'To overcome the high computational costs of dynamical models and the linear, pointwise assumptions
+  of traditional statistical methods, deep learning techniques constitute promising pathways toward the
+  high-resolution meteorological fields required for local impact assessments. The present study proposes
+  a downscaling framework for four essential meteorological fields: 2-meter temperature, precipitation,
+  surface solar radiation, and 10-meter wind speed. For each of them, it employs a multivariate Residual
+  U-Net architecture, augmented with a macro-residual output engine and a dual-injection topography scheme.
+  Trained on 39 years of 3-hourly CERRA reanalysis data, the four models map coarse 1° predictors to a
+  high-resolution 0.05° grid over the topographically complex Greek domain. A systematic evaluation demonstrates
+  that the new framework achieves domain-wide annual mean absolute errors of 0.38°C for 2-meter temperature,
+  1.29 mm/3h for precipitation, 13.89 W/m2 for surface solar radiation, and 0.54 m/s for 10-meter wind
+  speed. Performance remains stable across the bulk of the climatological distributions of the four fields,
+  though a considerable but expected underestimation emerges for intense precipitation. Spatial and intra-annual
+  skill variations reflect the complexity in the geographical properties and physical processes shaping
+  local meteorological conditions, rather than flaws in the model design. Downscaling accuracy exhibits
+  a pronounced sensitivity to the prevailing weather over the region, while a learning curve analysis
+  reveals that in some locations the downscaling skill of the temperature distribution tails requires
+  more training years to converge compared to the skill of the full distribution. Overall, the proposed
+  framework serves as a viable, computationally inexpensive alternative to both dynamical and traditional
+  statistical downscaling for local climate assessments and impact modelling.'
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

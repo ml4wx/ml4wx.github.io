@@ -1,0 +1,67 @@
+id: doi-10.3390-atmos17050519
+title: Single-Point Thunderstorm Forecasting Based on Second-Order Moist Potential Vorticity and Deep
+  Learning
+authors:
+- Cha Yang
+- Xiaoqiang Xiao
+- Na Li
+- Daoyong Yang
+- Xiao Shi
+- Yue Yuan
+- Hu Wang
+date: '2026-05-19'
+year: 2026
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos17050519
+  openalex: W7161625201
+links:
+  paper: https://doi.org/10.3390/atmos17050519
+topic: extremes-hazards
+topics:
+- local-forecasting
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: pre-operational
+summary: 1D PreRNN using ECMWF variables and second-order moist potential vorticity forecasts single-point
+  thunderstorms beyond 6 h, with operational reference value for the longest period.
+abstract: Thunderstorms are the most frequent type of severe convective weather, which pose great threats
+  to buildings, power transmission, communication facilities, and air transportation. Their analysis and
+  forecasting have long been challenges in meteorological operations. Currently, deep learning-based lightning
+  forecasting has a short valid period, mostly relying on satellite imagery, radar echoes, and lightning
+  location data, focusing on very-short-range forecasting. The longest valid period does not exceed 6
+  h, and the forecasting accuracy is not high. Based on the physical quantities of the ECMWF numerical
+  prediction model and the actual observations of single-point thunderstorms, this paper constructs a
+  single-point thunderstorm forecasting model with a long validity period (>6 h). The study integrates
+  multi-dimensional parameters such as thermal, dynamic, water vapor, and stratification instability,
+  introduces the second-order moist potential vorticity S as a comprehensive predictor, systematically
+  compares the forecasting performance of eight models, such as 1D PreRNN and ConvLSTM, and verifies the
+  actual operational capability of the model through independent cases. The results show that the 1D PreRNN
+  model has the best overall performance in all periods, which can effectively capture the temporal evolution
+  characteristics of meteorological physical quantities and still has stable generalization performance
+  under unbalanced samples. The model performs well in the 1st, 2nd, and 4th periods, and especially still
+  has significant operational reference value in the 4th period with the longest forecasting validity
+  period; only the 3rd period is weakly affected by the small number of samples. The effect of second-order
+  moist potential vorticity has significant time-dependent differences. Its overall improvement effect
+  is limited in short-term forecasting, but it can provide key disturbance signals in the 4th period with
+  the longest forecasting validity period, and the model forecasting performance drops significantly after
+  removal. The original binary cross-entropy loss is most suitable for the unbalanced sample scenario
+  in this study, and weighted losses are prone to overcorrection. The method in this paper can achieve
+  stable and reliable single-point thunderstorm forecasting for more than 6 h, and can provide long-term
+  fixed-point meteorological support for key scenarios such as aerospace and new energy stations.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

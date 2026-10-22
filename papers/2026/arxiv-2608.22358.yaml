@@ -1,0 +1,55 @@
+id: arxiv-2608.22358
+title: 'Tracing the Unlabeled Storm: Cross-Variable Transfer in a Lagrangian Atmospheric JEPA Framework'
+authors:
+- K M Anirudh
+- S Sandeep
+- Hariprasad Kodamana
+date: '2026-08-23'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2608.22358'
+  openalex: W7204214877
+links:
+  paper: https://arxiv.org/abs/2608.22358
+  pdf: https://arxiv.org/pdf/2608.22358
+topic: probabilistic-ensembles
+topics:
+- foundation-models
+type: model
+method:
+- other
+timescale:
+- short
+spatial:
+- regional
+data:
+- satellite
+- nwp-analysis
+status: research
+summary: Monsoon JEPA pretrained on rainfall-free proxy fields such as OLR beats the 51-member ECMWF ensemble
+  on daily precipitation CRPS (6.81 vs 6.89 mm/day).
+abstract: 'Deep atmospheric convection governs South Asian monsoon variability, yet attempting to learn
+  its latent world model directly from zero-inflated, heavy-tailed precipitation yields suboptimal predictive
+  representations. Continuous atmospheric proxies, such as outgoing longwave radiation (OLR), express
+  this convective organization far more coherently. We address this mismatch with \emph{cross-variable
+  proxy learning}: M-JEPA, a multiscale Monsoon Joint-Embedding Predictive Architecture, is pretrained
+  on five continuous proxy fields over Lagrangian patches tracking moving convective systems---without
+  rainfall supervision at any point. The resulting frozen representation is transferred to daily precipitation
+  forecasts through a shared decoder trunk featuring parallel probabilistic and deterministic branches.
+  Because rainfall is strictly unobserved during pretraining, downstream skill directly measures the predictive
+  information captured in the latent rollout. A frozen-backbone probing framework with two controls (an
+  identical architecture trained on rainfall alone, and a randomly initialized backbone) attributes the
+  transfer specifically to proxy pretraining: direct rainfall training exhibits $36\%$ higher CRPS error
+  ($7.52$ vs.\ $5.54$\,mm/day). Against the 51-member operational ECMWF ensemble, the transferred model
+  attains a statistically resolved CRPS advantage ($6.81$ vs.\ $6.89$\,mm/day) and higher Brier skill
+  ($+0.05$ vs.\ $-0.04$) using $15.4$M parameters on a single consumer GPU, concentrated at heavy-rain
+  thresholds and fine spatial scales, while the ensemble retains an advantage in neighborhood skill and
+  deterministic references on point metrics. The result provides a competitive monsoon precipitation forecast
+  grounded in intraseasonal dynamics and a diagnostic framework for evaluating transferred atmospheric
+  representations.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

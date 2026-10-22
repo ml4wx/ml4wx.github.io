@@ -1,0 +1,55 @@
+id: doi-10.3390-atmos17060536
+title: 'FusionTyphoonPredictor: Dual-Branch Enhanced Spatiotemporal Prediction for Typhoon Cloud Images'
+authors:
+- Haipeng Li
+- Jun Liu
+- Yongzhu Liu
+- Zelin Liu
+date: '2026-05-23'
+year: 2026
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos17060536
+  openalex: W7162245902
+links:
+  paper: https://doi.org/10.3390/atmos17060536
+orgs:
+- cma
+topic: extremes-hazards
+topics:
+- nowcasting
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Dual-branch ConvGRU network predicts typhoon cloud image sequences from Digital Typhoon, outperforming
+  PredFormer and PhyDNet on SSIM, MAE and MSE at short lead times.
+abstract: Accurate forecasting of typhoon evolution from satellite cloud imagery is critical for disaster
+  preparedness and mitigation, yet remains challenging due to the complex spatiotemporal dynamics of typhoon
+  systems. While deep learning models have shown promise in spatiotemporal sequence prediction, existing
+  approaches often struggle to balance the modeling of large-scale structural evolution with fine-grained
+  local dynamics. In this paper, we propose FusionTyphoonPredictor, a novel dual-branch encoder–decoder
+  framework designed for typhoon cloud image prediction. The model integrates a Global Fusion Module to
+  capture multi-scale spatial interactions using large-kernel attention and multi-scale convolution, and
+  an ST Recurrent Refiner to enhance temporal consistency and local detail through recurrent processing
+  with ConvGRU and residual blocks. Extensive experiments on the Digital Typhoon dataset demonstrate that
+  our approach achieves improved performance compared to existing methods (including PredFormer and PhyDNet)
+  across most metrics and forecasting horizons. Specifically, FusionTyphoonPredictor shows consistent
+  advantages in SSIM, MAE, and MSE, with particular strength in short-term forecasting. Comprehensive
+  ablation studies validate the complementary design of the two branches and confirm the effectiveness
+  of each proposed component. Our work advances typhoon forecasting and has potential for real-time operational
+  deployment.
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

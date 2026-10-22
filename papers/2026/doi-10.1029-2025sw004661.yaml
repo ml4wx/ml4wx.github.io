@@ -1,0 +1,51 @@
+id: doi-10.1029-2025sw004661
+title: 'TIE‐GCM ROPE—Part II: Dynamic Modeling'
+authors:
+- Anirudh Tapedia
+- Daniele Sicoli
+- Piyush M. Mehta
+date: '2026-02-28'
+year: 2026
+venue: Space Weather
+venue_type: journal
+ids:
+  doi: 10.1029/2025sw004661
+  openalex: W7134171811
+links:
+  paper: https://doi.org/10.1029/2025sw004661
+topic: climate-emulation
+type: model
+method:
+- rnn
+- transformer
+- other
+timescale:
+- short
+spatial:
+- global
+data:
+- other
+status: research
+summary: Learns latent thermospheric dynamics with SINDy, DMDc, LSTM, GRU and Transformers; a storm-tuned
+  equal-weight ensemble reaches 3.15% MAPE.
+abstract: Abstract Forecasting thermospheric density remains a critical challenge for satellite drag modeling
+  and space situational awareness. Building on our previously introduced Reduced Order Probabilistic Emulator
+  framework which compresses high‐dimensional Thermosphere‐Ionosphere‐ Electrodynamics General Circulation
+  Model outputs into a low‐dimensional latent space using a convolutional orthogonal autoencoder—this
+  work focuses on modeling the temporal dynamics of the latent thermospheric state. We employ both interpretable
+  dynamical system identification techniques (Sparse Identification of Nonlinear Dynamics and Dynamic
+  Mode Decomposition with control) and deep learning architectures (Long Short‐Term Memory, Gated Recurrent
+  Units, and Transformer) to learn the evolution of these latent coefficients. To enhance model resilience
+  during geomagnetic storms, we introduce a storm‐tuning strategy that fine‐tunes pre‐trained models on
+  high‐ K p intervals, leading to improved accuracy during storm onset and recovery phases. We also implement
+  a simple equal‐weighted ensemble of top‐performing models, which achieves Mean Absolute Percentage Error
+  as low as 3.15%, significantly improving robustness across varying space weather conditions. Model performance
+  is assessed using Superposed Epoch Analysis, revealing consistent error reduction across altitude and
+  latitude during disturbed periods. These advances represent a significant step toward operational, data‐driven
+  thermospheric forecasting under both nominal and storm‐time conditions.
+significance: 4
+cited_by: 3
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

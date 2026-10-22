@@ -1,0 +1,49 @@
+id: arxiv-2609.05359
+title: Disentangling Internal and Forced Climate Variability with Convolutional Neural Networks using
+  Multivariate Fields
+authors:
+- G. Gastineau
+- E. Provenzano
+- Constantin Bône
+- Nicolas Lebas
+- R. C. J. Wills
+date: '2026-09-04'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.05359'
+  openalex: W7211906203
+links:
+  paper: https://arxiv.org/abs/2609.05359
+topic: climate-analysis-attribution
+type: model
+method:
+- cnn
+data:
+- cmip
+status: research
+summary: U-Net separates forced from internal climate variability across five initial-condition large
+  ensembles, reaching 0.1–0.4 °C error for local monthly surface air temperature.
+abstract: Long-term climate data exhibit variations composed of internal and forced components. Internal
+  variability arises from natural processes that could occur within a stable climate. Forced variability,
+  on the other hand, reflects climate changes induced, for example, by anthropogenic greenhouse gas and
+  aerosol emissions. Accurately distinguishing between these types of variability is crucial for attributing
+  climate fluctuations and understanding internal variability processes and impacts. In this study, we
+  apply a U-Net convolutional network, a model commonly used in computer vision, to separate forced and
+  internal climate variability from 1950 to 2022 using a multi-model dataset. The dataset includes multiple
+  fields from five single-model initial-condition large ensembles. Cross-validation is conducted by training
+  the U-Net using the data from the ensembles of four models, leaving out the data from one model to assess
+  performance. Validation results yield errors ranging from 0.1{\deg}C to 0.4{\deg}C for the forced variability
+  of local-scale monthly surface air temperature, which is no more than half the magnitude of external
+  forcing. The U-Net achieves better performance than a simple approach based on a fourth-order polynomial
+  trend for estimating forced variability. The error is mainly due to insufficient sampling and poor agreement
+  among the models, as the U-Net underestimates the warming for the model with the highest transient climate
+  sensitivity during validation. Performance is lower for variables like sea-level pressure and precipitation
+  because of their low ratio of forced to internal variability. This framework might be enhanced by incorporating
+  a larger multi-model dataset in the training and validation.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: snowball

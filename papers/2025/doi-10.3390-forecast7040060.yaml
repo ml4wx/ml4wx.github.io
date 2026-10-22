@@ -1,0 +1,54 @@
+id: doi-10.3390-forecast7040060
+title: 'Deep Learning-Based Multi-Source Precipitation Forecasting in Arid Regions Using Different Optimizations:
+  A Case Study from Konya, Turkey'
+authors:
+- Vahdettin Demir
+date: '2025-10-18'
+year: 2025
+venue: Forecasting
+venue_type: journal
+ids:
+  doi: 10.3390/forecast7040060
+  openalex: W4415357149
+links:
+  paper: https://doi.org/10.3390/forecast7040060
+  pdf: https://www.mdpi.com/2571-9394/7/4/60/pdf?version=1760787561
+topic: local-forecasting
+type: evaluation
+method:
+- rnn
+timescale:
+- s2s
+spatial:
+- local
+data:
+- stations
+- other
+status: research
+summary: LSTM with ADAM forecasts monthly precipitation in Konya, Turkey, reaching RMSE 3.62 mm on NASA
+  POWER data when trained on station records.
+abstract: Accurate precipitation forecasting plays a crucial role in sustainable water resource management,
+  especially in arid regions like Konya, one of Turkey’s driest areas. Reliable forecasts support effective
+  water budgeting, agricultural planning, and climate adaptation efforts in the region. This study investigates
+  the performance of different deep learning training algorithms in forecasting monthly precipitation
+  using Long Short-Term Memory (LSTM) networks, a method tailored for time-series prediction. A comprehensive
+  dataset comprising 39 years (1984–2022) of precipitation records was utilized, obtained from the Turkish
+  State Meteorological Service (MGM) as ground-based observations and from NASA’s POWER database as remote
+  sensing data, and was split into 80% for training and 20% for testing. A comparative analysis of three
+  widely used optimization algorithms, Adaptive Moment Estimation (ADAM), Root Mean Square Propagation
+  (RMSProp), and Stochastic Gradient Descent with Momentum (SGDM), revealed that ADAM consistently outperformed
+  the others in forecasting accuracy. Model performance was evaluated with statistical metrics, and the
+  LSTM-ADAM combination achieved the best results. In the final phase, cross-validation was applied using
+  MGM and NASA data sources in a crosswise manner to test model generalizability and data source independence.
+  The best performance was observed when the model was trained with MGM data and tested with NASA data,
+  achieving a remarkably low RMSE of 3.62 mm, MAE of 2.93 mm, R2 of 0.9966, and NSE of 0.9686. When trained
+  with NASA data and tested with MGM data, the model still demonstrated strong performance, with an RMSE
+  of 4.48 mm, MAE of 3.22 mm, R2 of 0.9921, and NSE of 0.9678. These results demonstrate that satellite
+  and ground-based data can be used interchangeably under suitable conditions, while also confirming the
+  superiority of the ADAM optimizer in LSTM-based precipitation forecasting.
+significance: 2
+cited_by: 7
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill
