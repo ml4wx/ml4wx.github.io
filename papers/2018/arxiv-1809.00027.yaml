@@ -1,0 +1,43 @@
+id: arxiv-1809.00027
+title: Dimensionality-Reduction of Climate Data using Deep Autoencoders
+authors:
+- J. A. Saenz
+- N. Lubbers
+- N. M. Urban
+date: '2018-08-27'
+year: 2018
+venue_type: preprint
+ids:
+  arxiv: '1809.00027'
+  doi: 10.5065/d6k072n6
+  openalex: W3122272089
+links:
+  paper: https://arxiv.org/abs/1809.00027
+  pdf: https://arxiv.org/pdf/1809.00027
+topic: climate-emulation
+topics:
+- infra-software
+type: model
+method:
+- cnn
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: Convolutional autoencoders compress CMIP5 pre-industrial surface temperature fields and beat
+  PCA in reconstruction error at 40 dimensions, suggesting surrogate climate model use.
+abstract: We explore the use of deep neural networks for nonlinear dimensionality reduction in climate
+  applications. We train convolutional autoencoders (CAEs) to encode two temperature field datasets from
+  pre-industrial control runs in the CMIP5 first ensemble, obtained with the CCSM4 model and the IPSL-CM5A-LR
+  model, respectively. With the later dataset, consisting of 36500 96$\times$96 surface temperature fields,
+  the CAE out-performs PCA in terms of mean squared error of the reconstruction from a 40 dimensional
+  encoding. Moreover, the noise in the filters of the convolutional layers in the autoencoders suggests
+  that the CAE can be trained to produce better results. Our results indicate that convolutional autoencoders
+  may provide an effective platform for the construction of surrogate climate models.
+significance: 3
+cited_by: 6
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill
