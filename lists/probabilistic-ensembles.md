@@ -5,7 +5,7 @@ ML models that produce ensembles or full forecast distributions: generative mode
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/probabilistic-ensembles/)
 
-94 papers (10 ⭐). Newest first.
+94 papers (14 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -33,7 +33,7 @@ ML models that produce ensembles or full forecast distributions: generative mode
 | 2026-04-10 | [U-Cast: A Surprisingly Simple and Efficient Frontier Probabilistic AI Weather Forecaster](https://arxiv.org/abs/2604.09041)<br><sub>Salva Rühling Cachay, Duncan Watson-Parris, Rose Yu</sub> |  | [code](https://github.com/Rose-STL-Lab/u-cast) |
 | 2026-04-06 | [(Sparse) Attention to the Details: Preserving Spectral Fidelity in ML-based Weather Forecasting Models](https://arxiv.org/abs/2604.16429)<br><sub>Maksim Zhdanov, Ana Lucic, Max Welling et al.</sub> |  | [code](https://github.com/maxxxzdn/mosaic) |
 | 2026-03-25 | [Marchuk: Efficient Global Weather Forecasting from Mid-Range to Sub-Seasonal Scales via Flow Matching](https://arxiv.org/abs/2603.24428)<br><sub>Arsen Kuzhamuratov, Mikhail Zhirnov, Andrey Kuznetsov et al.</sub> |  |  |
-| 2026-03-05 | [Hybrid ensemble forecasting combining physics-based and machine-learning predictions through spectral nudging](https://arxiv.org/abs/2603.05570)<br><sub>Inna Polichtchouk, Simon Lang, Sarah-Jane Lock et al.</sub> | ECMWF |  |
+| 2026-03-05 | ⭐ [Hybrid ensemble forecasting combining physics-based and machine-learning predictions through spectral nudging](https://arxiv.org/abs/2603.05570)<br><sub>Inna Polichtchouk, Simon Lang, Sarah-Jane Lock et al.</sub> | ECMWF |  |
 | 2026-02-26 | [A Synergistic Approach: Dynamics-AI Ensemble in Tropical Cyclone Forecasting](https://arxiv.org/abs/2602.22533)<br><sub>Yonghui Li, Wansuo Duan, Hao Li et al.</sub> | China Meteorological Administration (CMA), Fudan University (FuXi), Institute of Atmospheric Physics, Chinese Academy of Sciences |  |
 | 2026-02-12 | [PuYun-LDM: A Latent Diffusion Model for High-Resolution Ensemble Weather Forecasts](https://arxiv.org/abs/2602.11807)<br><sub>Lianjun Wu, Shengchen Zhu, Yuxuan Liu et al.</sub> |  |  |
 | 2026-02-04 | [Large-ensemble generation based on mesoscale ensemble prediction system using machine learning](https://doi.org/10.1016/j.egyr.2025.109002)<br><sub>Shuntaro Nakayama, Hideaki Ohtake, Takahiro Takamatsu et al. · Energy Reports</sub> |  |  |
@@ -54,16 +54,16 @@ ML models that produce ensembles or full forecast distributions: generative mode
 | 2025-09-14 | [Data-Efficient Ensemble Weather Forecasting with Diffusion Models](https://arxiv.org/abs/2509.11047)<br><sub>Kevin Valencia, Ziyang Liu, Justin Cui</sub> |  |  |
 | 2025-08-08 | [Learning Residual Distributions with Diffusion Models for Probabilistic Wind Power Forecasting](https://doi.org/10.3390/en18164226)<br><sub>Fuhao Chen, Linyue Gao · Energies</sub> |  |  |
 | 2025-07-16 | [FourCastNet 3: A geometric approach to probabilistic machine-learning weather forecasting at scale](https://arxiv.org/abs/2507.12144)<br><sub>Boris Bonev, Thorsten Kurth, Ankur Mahesh et al.</sub> |  |  |
-| 2025-06-24 | [Elucidated Rolling Diffusion Models for Probabilistic Forecasting of Complex Dynamics](https://arxiv.org/abs/2506.20024)<br><sub>Salva Rühling Cachay, Miika Aittala, Karsten Kreis et al. · Advances in Neural Information Processing Systems (NeurIPS), 2025</sub> | NVIDIA |  |
+| 2025-06-24 | ⭐ [Elucidated Rolling Diffusion Models for Probabilistic Forecasting of Complex Dynamics](https://arxiv.org/abs/2506.20024)<br><sub>Salva Rühling Cachay, Miika Aittala, Karsten Kreis et al. · Advances in Neural Information Processing Systems (NeurIPS), 2025</sub> | NVIDIA |  |
 | 2025-06-13 | [Arnoldi Singular Vector perturbations for machine learning weather prediction](https://arxiv.org/abs/2506.22450)<br><sub>Jens Winkler, Michael Denhard</sub> |  |  |
-| 2025-06-12 | [A multi-scale loss formulation for learning a probabilistic model with proper score optimisation](https://doi.org/10.1002/qj.70291)<br><sub>Simon Lang, Martin Leutbecher, Pedro Maciel · Quarterly Journal of the Royal Meteorological Society</sub> | ECMWF |  |
+| 2025-06-12 | ⭐ [A multi-scale loss formulation for learning a probabilistic model with proper score optimisation](https://doi.org/10.1002/qj.70291)<br><sub>Simon Lang, Martin Leutbecher, Pedro Maciel · Quarterly Journal of the Royal Meteorological Society</sub> | ECMWF |  |
 | 2025-06-12 | [Skillful joint probabilistic weather forecasting from marginals](https://arxiv.org/abs/2506.10772)<br><sub>Ferran Alet, Ilan Price, Andrew El-Kadi et al.</sub> |  |  |
 | 2025-06-10 | [Global Ensemble Weather Prediction from a Deep Learning–Based Model (Pangu-Weather) with the Initial Condition Perturbations of CMA-GEPS](https://doi.org/10.1007/s00376-024-4173-z)<br><sub>Xin Liu, Jing Chen, Yuejian Zhu et al. · Advances in Atmospheric Sciences</sub> | China Meteorological Administration (CMA), Nanjing University of Information Science & Technology (NUIST) |  |
 | 2025-06-10 | [LaDCast: A Latent Diffusion Model for Medium-Range Ensemble Weather Forecasting](https://arxiv.org/abs/2506.09193)<br><sub>Yilin Zhuang, Karthik Duraisamy</sub> |  | [code](https://github.com/tonyzyl/ladcast) |
 | 2025-06-08 | [DEF: Diffusion-augmented Ensemble Forecasting](https://arxiv.org/abs/2506.07324)<br><sub>David Millard, Arielle Carr, Stéphane Gaudreault et al.</sub> |  |  |
 | 2025-05-14 | [Generating time-consistent dynamics with discriminator-guided image diffusion models](https://arxiv.org/abs/2505.09089)<br><sub>Philipp Hess, Maximilian Gelbrecht, Christof Schötz et al.</sub> |  |  |
 | 2025-04-01 | [Toward Calibrated Ensembles of Neural Weather Model Forecasts](https://doi.org/10.1029/2024ms004734)<br><sub>Jorge Baño‐Medina, Agniv Sengupta, Duncan Watson‐Parris et al. · Journal of Advances in Modeling Earth Systems</sub> |  |  |
-| 2025-03-29 | [A fast physics-based perturbation generator of machine learning weather model for efficient ensemble forecasts of tropical cyclone track](https://doi.org/10.1038/s41612-025-01009-9)<br><sub>Jingchen Pu, Mu Mu, Jie Feng et al. · npj Climate and Atmospheric Science</sub> | Fudan University (FuXi) |  |
+| 2025-03-29 | ⭐ [A fast physics-based perturbation generator of machine learning weather model for efficient ensemble forecasts of tropical cyclone track](https://doi.org/10.1038/s41612-025-01009-9)<br><sub>Jingchen Pu, Mu Mu, Jie Feng et al. · npj Climate and Atmospheric Science</sub> | Fudan University (FuXi) |  |
 | 2025-01-06 | [Skillful High-Resolution Ensemble Precipitation Forecasting with an Integrated Deep Learning Framework](https://arxiv.org/abs/2501.02905)<br><sub>Shuangshuang He, Hongli Liang, Yuanting Zhang et al.</sub> |  |  |
 | 2025-01-01 | [Enriching Operational High-Resolution Ensemble Forecasts with StyleGAN-2](https://doi.org/10.1175/aies-d-24-0058.1)<br><sub>Clément Brochet, Gabriel Ionut Moldovan, Julien Rabault et al. · Artificial Intelligence for the Earth Systems</sub> | ECMWF, Météo-France (incl. CNRM) |  |
 | 2024-12-20 | ⭐ [AIFS-CRPS: Ensemble forecasting using a model trained with a loss function based on the Continuous Ranked Probability Score](https://arxiv.org/abs/2412.15832)<br><sub>Simon Lang, Mihai Alexe, Mariana C. A. Clare et al. · npj Artificial Intelligence</sub> | ECMWF |  |

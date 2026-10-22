@@ -5,7 +5,7 @@ Large pretrained models for the atmosphere or Earth system that are fine-tuned f
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/foundation-models/)
 
-45 papers (2 ⭐). Newest first.
+45 papers (3 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -13,7 +13,7 @@ Large pretrained models for the atmosphere or Earth system that are fine-tuned f
 | 2026-09-24 | [LoRA Adaptation Strength in Aurora-WRF: Trade-offs in Regional Heavy-Rainfall Forecasting](https://arxiv.org/abs/2610.03747)<br><sub>Boyan Liu, Xiaoyuan Zhang</sub> |  |  |
 | 2026-09-12 | [Physically Typed and Geometry-Aware Representations for Earth Foundation Models](https://arxiv.org/abs/2609.13868)<br><sub>Rajiv Ranjan</sub> |  |  |
 | 2026-08-14 | [Catching the Imposter: Self-Supervised Learning of Physical Coherence with Cross-Entity Feature Permutations](https://arxiv.org/abs/2608.14372)<br><sub>Aleksei Rozanov, Arvind Renganathan, Vipin Kumar</sub> |  |  |
-| 2026-08-04 | [Prithvi-Precip: Integrating Satellite Observations into an Atmospheric AI Foundation Model for Precipitation Forecasting](https://arxiv.org/abs/2608.03959)<br><sub>Simon Pfreundschuh, Christian D. Kummerow, Johannes Schmude et al.</sub> | Colorado State University (incl. CIRA), IBM Research, NASA, Oak Ridge National Laboratory |  |
+| 2026-08-04 | ⭐ [Prithvi-Precip: Integrating Satellite Observations into an Atmospheric AI Foundation Model for Precipitation Forecasting](https://arxiv.org/abs/2608.03959)<br><sub>Simon Pfreundschuh, Christian D. Kummerow, Johannes Schmude et al.</sub> | Colorado State University (incl. CIRA), IBM Research, NASA, Oak Ridge National Laboratory |  |
 | 2026-07-31 | [TerraNova: A Foundation Model for the Anthropocene](https://arxiv.org/abs/2607.29527)<br><sub>Carlos Rodriguez-Pardo, Massimo Tavoni</sub> |  |  |
 | 2026-07-17 | [Monkey King Bang: A Unified Scientific Multimodal Foundation Model](https://arxiv.org/abs/2607.20557)<br><sub>Hesen Chen, Xinyu Su, Xiaomeng Yang et al.</sub> |  | [code](https://github.com/Shanghai-Academy-of-AI-For-Science/MKB) |
 | 2026-07-13 | [Perspective on Self-Supervised Transformers for Scalable Data Analysis, Retrievals, and Discovery in Geosciences](https://doi.org/10.1175/aies-d-25-0069.1)<br><sub>Bhupendra Raut, Siddhant Gupta, Robert C. Jackson et al. · Artificial Intelligence for the Earth Systems</sub> | Allen Institute for AI (Ai2, ACE), Argonne National Laboratory |  |

@@ -5,7 +5,7 @@ Frameworks, training and inference at scale, HPC, and compression of weather and
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/infra-software/)
 
-81 papers (2 ⭐). Newest first.
+81 papers (4 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -16,7 +16,7 @@ Frameworks, training and inference at scale, HPC, and compression of weather and
 | 2026-10-01 | [Post-Training Quantization of Autoregressive Weather Models](https://arxiv.org/abs/2610.02511)<br><sub>Ananyo Bhattacharya, Swastik Bhattacharya, Christiane Jablonowski</sub> |  |  |
 | 2026-09-01 | [A Checklist to assess the energy and carbon impacts of ML/AI applications in Earth System Modeling](https://arxiv.org/abs/2609.00847)<br><sub>Filippo Dainelli, Amirpasha Mozaffari, Marina Castaño et al.</sub> |  |  |
 | 2026-08-21 | [Optimizing Gaussian process emulation and generalized additive model fitting for rapid, reproducible earth system model analysis](https://doi.org/10.5194/gmd-19-7767-2026)<br><sub>Kunal Ghosh, Leighton A. Regayre · Geoscientific model development</sub> | Met Office |  |
-| 2026-07-17 | [JCM v1.1: a differentiable, intermediate-complexity atmospheric model](https://doi.org/10.5194/gmd-19-6451-2026)<br><sub>Ellen Davenport, J. Varan Madan, Rebecca Gjini et al. · Geoscientific model development</sub> | Google Research |  |
+| 2026-07-17 | ⭐ [JCM v1.1: a differentiable, intermediate-complexity atmospheric model](https://doi.org/10.5194/gmd-19-6451-2026)<br><sub>Ellen Davenport, J. Varan Madan, Rebecca Gjini et al. · Geoscientific model development</sub> | Google Research |  |
 | 2026-06-29 | [MESMER v1.0.0: consolidating the modular Earth system model emulator into a sustainable research software package](https://doi.org/10.5194/gmd-19-5669-2026)<br><sub>Victoria Bauer, Mathias Hauser, Yann Quilcaille et al. · Geoscientific model development</sub> | ETH Zurich |  |
 | 2026-06-23 | [Machine learning is revolutionizing weather forecasting -- the next step is a change in how we work](https://doi.org/10.1016/j.jemets.2026.100050)<br><sub>Peter Dueben, Peter Bauer, Oliver Fuhrer et al. · Journal of the European Meteorological Society.</sub> |  |  |
 | 2026-06-12 | [Can Deep Neural Networks Improve Compression of Very Large Scientific Data?](https://arxiv.org/abs/2606.14353)<br><sub>Muhannad Alhumaidi, Guozhong Li, Spiros Skiadopoulos et al.</sub> |  |  |
@@ -66,7 +66,7 @@ Frameworks, training and inference at scale, HPC, and compression of weather and
 | 2024-04-28 | [DIRESA, a distance-preserving nonlinear dimension reduction technique based on regularized autoencoders](https://doi.org/10.1175/aies-d-24-0034.1)<br><sub>Geert De Paepe, Lesley De Cruz · Artificial Intelligence for the Earth Systems</sub> |  |  |
 | 2024-04-17 | [Sequence Length Scaling in Vision Transformers for Scientific Images on Frontier](https://doi.org/10.1177/10943420251394758)<br><sub>Aristeidis Tsaris, Chengming Zhang, Xiao Wang et al. · The International Journal of High Performance Computing Applications</sub> | Oak Ridge National Laboratory |  |
 | 2024-03-12 | [Proper Weather Forecasting Internet of Things Sensor Framework with Machine Learning](https://doi.org/10.4108/eetiot.5382)<br><sub>Anil Vithalrao Turukmane, Sagar Dhanraj Pande · EAI Endorsed Transactions on Internet of Things</sub> |  |  |
-| 2024-03-08 | [Integration of Emerging Data-Driven Models into the NOAA Research-to-Operations Pipeline for Numerical Weather Prediction](https://doi.org/10.1175/bams-d-24-0062.1)<br><sub>Sergey Frolov, Kevin Garrett, Isidora Jankov et al. · Bulletin of the American Meteorological Society</sub> | NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
+| 2024-03-08 | ⭐ [Integration of Emerging Data-Driven Models into the NOAA Research-to-Operations Pipeline for Numerical Weather Prediction](https://doi.org/10.1175/bams-d-24-0062.1)<br><sub>Sergey Frolov, Kevin Garrett, Isidora Jankov et al. · Bulletin of the American Meteorological Society</sub> | NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
 | 2024-02-13 | [Proof-of-concept: Using ChatGPT to Translate and Modernize an Earth System Model from Fortran to Python/JAX](https://arxiv.org/abs/2405.00018)<br><sub>Anthony Zhou, Linnia Hawkins, Pierre Gentine</sub> | Columbia University (LEAP, Lamont-Doherty) |  |
 | 2024-02-05 | [Hybrid Neural Representations for Spherical Data](https://arxiv.org/abs/2402.05965)<br><sub>Hyomin Kim, Yunhui Jang, Jaeho Lee et al.</sub> |  |  |
 | 2024-01-29 | [A Deep Learning-Based Consistency Test Approach for Earth System Models on Heterogeneous Many-Core Systems](https://doi.org/10.5194/gmd-2024-10)<br><sub>Yangyang Yu, Shaoqing Zhang, Haohuan Fu et al. · Geoscientific Model Development Discussions</sub> | Tsinghua University (NowcastNet) |  |

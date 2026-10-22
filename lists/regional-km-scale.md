@@ -5,14 +5,14 @@ Limited-area and regional ML weather models, convection-permitting and km-scale 
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/regional-km-scale/)
 
-68 papers (2 ⭐). Newest first.
+68 papers (4 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
 | 2026-10-08 | [Learning Kilometer-Scale Weather Prediction with Global-Regional Alignment](https://arxiv.org/abs/2610.12401)<br><sub>Guowen Li, Yang Liu, Yujie Wang et al.</sub> |  |  |
 | 2026-10-08 | [Event-Aware Spatiotemporal Precipitation Forecasting with Geographic Context and Physics-Guided Regularization](https://arxiv.org/abs/2610.11211)<br><sub>Yiping Hong, Xinyu Wang, Sameh Abdulah</sub> |  |  |
 | 2026-10-04 | [Shaping the Wind: Nested Potentials for Kinematically Admissible Urban Wind Prediction](https://arxiv.org/abs/2610.07033)<br><sub>Yidi Wang, Yunhe Zhang, Jiawei Gu et al.</sub> |  |  |
-| 2026-10-01 | [Varda-single-1.0: deterministic data-driven weather forecasting at 1 km resolution over Switzerland's complex topography](https://arxiv.org/abs/2610.01835)<br><sub>Alberto Pennino, Francesco Zanetta, Michele Cattaneo et al.</sub> | ECMWF, ETH Zurich, KNMI (Royal Netherlands Meteorological Institute), MET Norway (Norwegian Meteorological Institute), MeteoSwiss, Swiss Data Science Center (SDSC) |  |
+| 2026-10-01 | ⭐ [Varda-single-1.0: deterministic data-driven weather forecasting at 1 km resolution over Switzerland's complex topography](https://arxiv.org/abs/2610.01835)<br><sub>Alberto Pennino, Francesco Zanetta, Michele Cattaneo et al.</sub> | ECMWF, ETH Zurich, KNMI (Royal Netherlands Meteorological Institute), MET Norway (Norwegian Meteorological Institute), MeteoSwiss, Swiss Data Science Center (SDSC) |  |
 | 2026-09-28 | [FiLMeR (v1.0): a FiLM-conditioned machine-learning emulator for multi-domain regional WRF-scale surface weather fields](https://doi.org/10.5194/egusphere-2026-4377)<br><sub>Balbir Prasad, Deena Lad, Mohammad Rafiuddin et al.</sub> |  |  |
 | 2026-09-22 | [West-WRF AI 2-km: High-Resolution Prediction of Integrated Vapor Transport and Precipitation](https://arxiv.org/abs/2609.25512)<br><sub>Nazak Rouzegari, Vesta Afzali Gorooh, Agniv Sengupta et al.</sub> |  |  |
 | 2026-09-02 | [Kilometer-Scale AI Downscaling of Atlantic Hurricanes with Generative Ensembles](https://arxiv.org/abs/2609.02034)<br><sub>Yingkai Sha, Talea L. Mayo, Ethan D. Gutmann et al.</sub> | NSF NCAR / UCAR |  |
@@ -43,7 +43,7 @@ Limited-area and regional ML weather models, convection-permitting and km-scale 
 | 2025-07-08 | [HRRRCast: a data-driven emulator for regional weather forecasting at convection allowing scales](https://arxiv.org/abs/2507.05658)<br><sub>Daniel Abdi, Isidora Jankov, Paul Madden et al. · Artificial Intelligence for the Earth Systems, Vol. 5, No. 2, 2026, Article 250061</sub> | Colorado State University (incl. CIRA), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), University of Oklahoma (AI2ES) |  |
 | 2025-07-01 | [Innovative Short-Term Weather Forecasting System Combining Data-Driven and Dynamic Downscaling Approaches](https://doi.org/10.1175/aies-d-24-0125.1)<br><sub>Yubin Jin, Zhenzhong Zeng, Yuntian Chen et al. · Artificial Intelligence for the Earth Systems</sub> |  |  |
 | 2025-05-26 | [A novel deep learning-based framework for five‐day regional weather forecasting](https://doi.org/10.1016/j.aosl.2025.100653)<br><sub>Congqi Cao, Ze Yu Sun, Lu Hu et al. · Atmospheric and Oceanic Science Letters</sub> |  |  |
-| 2025-05-19 | [WoFSCast: A Machine Learning Model for Predicting Thunderstorms at Watch‐to‐Warning Scales](https://doi.org/10.1029/2024gl112383)<br><sub>Montgomery L. Flora, Corey K. Potvin · Geophysical Research Letters</sub> | NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), University of Oklahoma (AI2ES) |  |
+| 2025-05-19 | ⭐ [WoFSCast: A Machine Learning Model for Predicting Thunderstorms at Watch‐to‐Warning Scales](https://doi.org/10.1029/2024gl112383)<br><sub>Montgomery L. Flora, Corey K. Potvin · Geophysical Research Letters</sub> | NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), University of Oklahoma (AI2ES) |  |
 | 2025-05-17 | [Improving regional weather forecasts with neural interpolation](https://arxiv.org/abs/2505.12040)<br><sub>James Jackaman, Oliver Sutton</sub> |  |  |
 | 2025-05-12 | [A novel deep learning approach for regional high-resolution spatio-temporal wind speed forecasting for energy applications](https://doi.org/10.1016/j.energy.2025.136356)<br><sub>Sofien Resifi, Elissar Al Aawar, Hari Prasad Dasari et al. · Energy</sub> |  |  |
 | 2025-04-14 | [Improved deep learning method and high-resolution reanalysis model-based intelligent marine navigation](https://doi.org/10.3389/fmars.2025.1495822)<br><sub>Zeguo Zhang, Liang Cao, Jianchuan Yin · Frontiers in Marine Science</sub> |  |  |

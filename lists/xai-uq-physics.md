@@ -5,7 +5,7 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/xai-uq-physics/)
 
-171 papers (3 ⭐). Newest first.
+171 papers (4 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -125,7 +125,7 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 | 2023-10-01 | [Constraining chaos: Enforcing dynamical invariants in the training of reservoir computers](https://doi.org/10.1063/5.0156999)<br><sub>Jason A. Platt, Stephen Gregory Penny, Timothy A. Smith et al. · Chaos An Interdisciplinary Journal of Nonlinear Science</sub> | NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
 | 2023-09-22 | [Evidential Deep Learning: Enhancing Predictive Uncertainty Estimation for Earth System Science Applications](https://doi.org/10.1175/aies-d-23-0093.1)<br><sub>John S. Schreck, David John Gagne, Charlie Becker et al. · Artificial Intelligence for the Earth Systems</sub> | Colorado State University (incl. CIRA), NSF NCAR / UCAR, NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) | [code](https://github.com/ai2es/miles-guess) |
 | 2023-09-19 | [Dynamical Tests of a Deep-Learning Weather Prediction Model](https://arxiv.org/abs/2309.10867)<br><sub>Gregory J. Hakim, Sanjit Masanam · Artificial Intelligence for the Earth Systems</sub> | University of Washington |  |
-| 2023-09-15 | [On some limitations of data-driven weather forecasting models](https://arxiv.org/abs/2309.08473)<br><sub>Massimo Bonavita</sub> | ECMWF |  |
+| 2023-09-15 | ⭐ [On some limitations of data-driven weather forecasting models](https://arxiv.org/abs/2309.08473)<br><sub>Massimo Bonavita</sub> | ECMWF |  |
 | 2023-09-05 | [Machine learning for uncertainty quantification in climate precipitation prediction over South America](https://doi.org/10.1007/s40314-025-03438-x)<br><sub>Vinicius Schmidt Monego, Juliana Aparecida Anochi, Haroldo Fraga de Campos Velho · Computational and Applied Mathematics</sub> |  |  |
 | 2023-08-17 | [Tipping Point Forecasting in Non-Stationary Dynamics on Function Spaces](https://doi.org/10.1073/pnas.2600331123)<br><sub>Miguel Liu-Schiaffini, Clare E. Singer, Nikola Kovachki et al. · Proceedings of the National Academy of Sciences</sub> | California Institute of Technology (Caltech), NVIDIA |  |
 | 2023-07-27 | [Machine Learning based Parameter Sensitivity of Regional Climate Models -- A Case Study of the WRF Model for Heat Extremes over Southeast Australia](https://arxiv.org/abs/2307.14654)<br><sub>P. Jyoteeshkumar Reddy, Sandeep Chinta, Richard Matear et al. · Environ. Res. Lett. 19 (2024) 014010</sub> | Massachusetts Institute of Technology (MIT) |  |
