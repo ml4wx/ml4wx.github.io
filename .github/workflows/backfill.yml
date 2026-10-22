@@ -87,7 +87,7 @@ jobs:
         run: |
           uv run ml4wx export
           uv run ml4wx validate || echo "::warning::validation errors, see log"
-          git add -A papers parked state lists exports README.md
+          git add -A
           if git diff --cached --quiet; then echo "Nothing new."; exit 0; fi
           n=$(git diff --cached --name-only --diff-filter=A -- papers | wc -l | tr -d ' ')
           git commit -q -m "Backfill ($TASK): +$n papers"
