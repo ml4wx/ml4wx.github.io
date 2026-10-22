@@ -1,0 +1,50 @@
+id: doi-10.1002-essoar.10511494.1
+title: Implementation of a machine-learned gas optics parameterization in the ECMWF Integrated Forecasting
+  System
+authors:
+- Peter Ukkonen
+- Robin James Hogan
+date: '2022-05-30'
+year: 2022
+venue_type: other
+ids:
+  doi: 10.1002/essoar.10511494.1
+  openalex: W4293070907
+links:
+  paper: https://doi.org/10.1002/essoar.10511494.1
+  pdf: https://essopenarchive.org/doi/pdf/10.1002/essoar.10511494.1
+orgs:
+- ecmwf
+- university-of-reading
+topic: hybrid-parameterization
+type: model
+method:
+- other
+spatial:
+- global
+data:
+- other
+status: pre-operational
+summary: Implements a neural-network gas optics scheme in ECMWF's IFS, speeding radiation by about one
+  third with a similar model climate in 1-year coupled runs.
+abstract: Radiative transfer parameterizations are physically important but computationally expensive
+  components of weather and climate models. In previous work, it was demonstrated that the gas optics
+  module of a radiation scheme, which traditionally rely on look-up-tables, can be replaced with neural
+  networks (NN) to improve speed while retaining a high degree of accuracy. However, the evaluation of
+  the NN version of the RRTMGP gas optics scheme (RRTMGP-NN) was based solely on offline radiation computations.
+  In this paper, we describe the implementation and prognostic evaluation of RRTMGP-NN in the Integrated
+  Forecasting System (IFS) of the European Centre for Medium-Range Weather Forecasts (ECMWF). This was
+  carried out by incorporating the gas optics scheme into ecRad, the modular radiation scheme used in
+  the IFS. New NN models were trained on RRTMGP k-distributions with reduced spectral resolution. A hybrid
+  loss function helped reduce radiative forcing errors. Four 1-year coupled ocean-atmosphere simulations
+  were performed for each configuration. The results show that RRTMGP-NN and RRTMGP produce very similar
+  model climates, with the differences being smaller than those between existing gas optics schemes, and
+  statistically insignificant for zonal means of single-level quantities such as surface temperature.
+  The use of RRTMGP-NN speeds up the radiation scheme by roughly a third compared to RRTMGP, and is also
+  faster than the older and less accurate RRTMG which is used in the current operational cycle of the
+  IFS.
+significance: 5
+score: 55
+highlight: false
+added: '2026-10-22'
+source: backfill

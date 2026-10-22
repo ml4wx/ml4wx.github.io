@@ -1,0 +1,51 @@
+id: arxiv-2207.07333
+title: Rain regime segmentation of Sentinel-1 observation learning from NEXRAD collocations with Convolution
+  Neural Networks
+authors:
+- Aurélien Colin
+- Pierre Tandeo
+- Charles Peureux
+- Romain Husson
+- Nicolas Longépé
+- Ronan Fablet
+date: '2022-07-15'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2207.07333'
+links:
+  paper: https://arxiv.org/abs/2207.07333
+  pdf: https://arxiv.org/pdf/2207.07333
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- satellite
+- radar
+status: research
+summary: CNN segments Sentinel-1 SAR images into three rain regimes learned from NEXRAD collocations,
+  outperforming Koch's filters for high-resolution rain mapping over ocean.
+abstract: Remote sensing of rainfall events is critical for both operational and scientific needs, including
+  for example weather forecasting, extreme flood mitigation, water cycle monitoring, etc. Ground-based
+  weather radars, such as NOAA's Next-Generation Radar (NEXRAD), provide reflectivity and precipitation
+  estimates of rainfall events. However, their observation range is limited to a few hundred kilometers,
+  prompting the exploration of other remote sensing methods, particularly over the open ocean, that represents
+  large areas not covered by land-based radars. Here we propose a deep learning approach to deliver a
+  three-class segmentation of SAR observations in terms of rainfall regimes. SAR satellites deliver very
+  high resolution observations with a global coverage. This seems particularly appealing to inform fine-scale
+  rain-related patterns, such as those associated with convective cells with characteristic scales of
+  a few kilometers. We demonstrate that a convolutional neural network trained on a collocated Sentinel-1/NEXRAD
+  dataset clearly outperforms state-of-the-art filtering schemes such as the Koch's filters. Our results
+  indicate high performance in segmenting precipitation regimes, delineated by thresholds at 24.7, 31.5,
+  and 38.8 dBZ. Compared to current methods that rely on Koch's filters to draw binary rainfall maps,
+  these multi-threshold learning-based models can provide rainfall estimation. They may be of interest
+  in improving high-resolution SAR-derived wind fields, which are degraded by rainfall, and provide an
+  additional tool for the study of rain cells.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

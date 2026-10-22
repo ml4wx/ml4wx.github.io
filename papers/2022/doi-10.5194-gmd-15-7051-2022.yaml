@@ -1,0 +1,46 @@
+id: doi-10.5194-gmd-15-7051-2022
+title: 'Classification of tropical cyclone containing images using a convolutional neural network: performance
+  and sensitivity to the learning dataset'
+authors:
+- Sébastien Gardoll
+- Oliviér Boucher
+date: '2022-09-16'
+year: 2022
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-15-7051-2022
+  openalex: W4296058502
+links:
+  paper: https://doi.org/10.5194/gmd-15-7051-2022
+  pdf: https://gmd.copernicus.org/articles/15/7051/2022/gmd-15-7051-2022.pdf
+topic: extremes-hazards
+type: model
+method:
+- cnn
+spatial:
+- global
+data:
+- era5
+- other
+status: research
+summary: CNN classifies ERA5 and MERRA-2 fields for tropical cyclone presence, and ERA5-trained models
+  transfer better to MERRA-2 than the reverse.
+abstract: Abstract. Tropical cyclones (TCs) are one of the most devastating natural disasters, which justifies
+  monitoring and prediction on short and long timescales in the context of a changing climate. In this
+  study, we have adapted and tested a convolutional neural network for the classification of reanalysis
+  outputs according to the presence or absence of TCs. We use a number of meteorological variables to
+  form TC-containing and background images from both the ERA5 and MERRA-2 reanalyses. The presence of
+  TCs is labelled from the HURDAT2 dataset. Special attention was paid on the design of the background
+  image set to make sure it samples similar location and time to the TC-containing image. We have assessed
+  the performance of the CNN using accuracy but also the more objective AUC and AUPRC metrics. Many failed
+  classifications can be explained by the meteorological context, such as a situation with cyclonic activity
+  but not yet classified as TC by HURDAT2. We also tested the impact of interpolation and of mix and match
+  the training and test image sets on the performance of the CNN. We showed that applying an ERA5-trained
+  CNN on MERRA-2 images works better than applying a MERRA-2 trained CNN on ERA5 images.
+significance: 3
+cited_by: 19
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

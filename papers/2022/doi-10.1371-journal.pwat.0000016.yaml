@@ -1,0 +1,54 @@
+id: doi-10.1371-journal.pwat.0000016
+title: A bias correction method for precipitation through recognizing mesoscale precipitation systems
+  corresponding to weather conditions
+authors:
+- Takao Yoshikane
+- Kei Yoshimura
+date: '2022-05-12'
+year: 2022
+venue: PLOS Water
+venue_type: journal
+ids:
+  doi: 10.1371/journal.pwat.0000016
+  openalex: W4280620703
+links:
+  paper: https://doi.org/10.1371/journal.pwat.0000016
+topic: post-processing
+topics:
+- observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Machine learning bias correction of simulated hourly precipitation, combined with quantile mapping,
+  improves spatial frequency distribution but not temporal distribution of local precipitation.
+abstract: Accurate estimations of local precipitation are necessary for assessing water resources and
+  water-related disaster risks. Numerical models are typically used to estimate precipitation, but biases
+  can result from insufficient resolution and incomplete physical processes. To correct these biases,
+  various bias correction methods have been developed. Recently, bias correction methods using machine
+  learning have been developed for improved performance. However, estimating local hourly precipitation
+  characteristics remains difficult due to the nonlinearity of precipitation. Here, we focused on precipitation
+  systems that could be reproduced by numerical models, and estimated the spatial distribution of local
+  precipitation by recognizing the relationship between simulated and observed precipitation with a resolution
+  of 0.06 degrees using a machine learning method. We subsequently applied a quantile mapping method to
+  modify the precipitation amounts. Validation showed that our method could significantly reduce bias
+  in numerical simulations, especially the spatial distribution of hourly precipitation frequency. However,
+  the bias in the temporal distribution of hourly precipitation did not improve. Spatial autocorrelation
+  analysis showed that this method can predict precipitation systems with spatial scales of 2500 to 40000
+  km 2 , which are associated with large-scale disturbances (e.g., cold fronts, warm fronts, and low-pressure
+  systems). The high accuracy of these estimates indicates that the spatial distribution of hourly precipitation
+  frequency is strongly dependent on precipitation systems with these spatial scales. Accordingly, our
+  method shows that the relationship between the spatial distribution of precipitation systems and local
+  precipitation is strong, and by recognizing this relationship, the spatial distribution of local hourly
+  precipitation can be accurately estimated.
+significance: 3
+cited_by: 20
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

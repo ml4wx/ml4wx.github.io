@@ -1,0 +1,52 @@
+id: doi-10.3390-electronics11203279
+title: Typhoon Tracks Prediction with ConvLSTM Fused Reanalysis Data
+authors:
+- Peng Lü
+- Mingyu Xu
+- Ao Sun
+- Zhenhua Wang
+- Zongsheng Zheng
+date: '2022-10-12'
+year: 2022
+venue: Electronics
+venue_type: journal
+ids:
+  doi: 10.3390/electronics11203279
+  openalex: W4304688733
+links:
+  paper: https://doi.org/10.3390/electronics11203279
+  pdf: https://www.mdpi.com/2079-9292/11/20/3279/pdf?version=1665565251
+topic: extremes-hazards
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: ConvLSTM with an added convolutional layer predicts typhoon tracks from ERA5 reanalysis image
+  sequences, reaching 54.69 km mean distance error.
+abstract: Typhoon occurrences pose a great threat to people’s lives and property; therefore, it is important
+  to predict typhoon tracks accurately for disaster prevention and reduction. In recent years, research
+  using traditional machine learning methods has struggled to include temporal and spatial features. Moreover,
+  research that has been conducted using satellite images only does not consider the influence of physical
+  factors on typhoon movement; therefore, this paper proposes to add a convolutional layer to the Convolutional
+  LSTM (ConvLSTM) model to improve the ability of the model to extract images. The previous positions
+  of the typhoon’s center are marked on subsequent reanalysis images. The subsequent coordinates of the
+  typhoon’s center are found by fitting the predicted coordinates of each physical variable. The research
+  method in this paper required selecting the physical variables group which was most correlated with
+  the direction and distance of the typhoon movement from 11 physical variables; this was achieved using
+  Canonical Correlation Analysis (CCA) and Grey Relation Analysis (GRA). Then, reanalysis data is transformed
+  into images and a continuous series of reanalysis image sequences is inputted into the ConvLSTM model
+  so that it can make predictions. The mean absolute error of distance used for the ERA5 dataset, using
+  the method proposed, was 54.69 km; thus, the validity of the model was proven.
+significance: 3
+cited_by: 8
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

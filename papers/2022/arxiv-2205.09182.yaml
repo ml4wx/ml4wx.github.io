@@ -1,0 +1,50 @@
+id: arxiv-2205.09182
+title: Computing the ensemble spread from deterministic weather predictions using conditional generative
+  adversarial networks
+authors:
+- Rüdiger Brecht
+- Alex Bihlo
+date: '2022-05-18'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2205.09182'
+  doi: 10.1029/2022gl101452
+  openalex: W4317234252
+links:
+  paper: https://arxiv.org/abs/2205.09182
+  pdf: https://arxiv.org/pdf/2205.09182
+topic: probabilistic-ensembles
+topics:
+- post-processing
+type: model
+method:
+- gan-vae
+- cnn
+timescale:
+- medium
+spatial:
+- global
+data:
+- nwp-analysis
+status: research
+summary: Conditional GANs predict ensemble spread of 500 hPa geopotential from a single deterministic
+  forecast, avoiding costly operational ensemble runs.
+abstract: Ensemble prediction systems are an invaluable tool for weather forecasting. Practically, ensemble
+  predictions are obtained by running several perturbations of the deterministic control forecast. However,
+  ensemble prediction is associated with a high computational cost and often involves statistical post-processing
+  steps to improve its quality. Here we propose to use deep-learning-based algorithms to learn the statistical
+  properties of an ensemble prediction system, the ensemble spread, given only the deterministic control
+  forecast. Thus, once trained, the costly ensemble prediction system will not be needed anymore to obtain
+  future ensemble forecasts, and the statistical properties of the ensemble can be derived from a single
+  deterministic forecast. We adapt the classical pix2pix architecture to a three-dimensional model and
+  also experiment with a shared latent space encoder-decoder model, and train them against several years
+  of operational (ensemble) weather forecasts for the 500 hPa geopotential height. The results demonstrate
+  that the trained models indeed allow obtaining a highly accurate ensemble spread from the control forecast
+  only.
+significance: 4
+cited_by: 34
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

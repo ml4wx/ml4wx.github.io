@@ -1,0 +1,58 @@
+id: arxiv-2201.06998
+title: Ensemble‐Based Experimental Design for Targeting Data Acquisition to Inform Climate Models
+authors:
+- Oliver R. A. Dunbar
+- Michael F. Howland
+- Tapio Schneider
+- Andrew M. Stuart
+date: '2022-09-01'
+year: 2022
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  arxiv: '2201.06998'
+  doi: 10.1029/2022ms002997
+  openalex: W4283732814
+links:
+  paper: https://doi.org/10.1029/2022ms002997
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2022MS002997
+orgs:
+- mit
+- caltech
+topic: xai-uq-physics
+topics:
+- hybrid-parameterization
+type: model
+method:
+- classical-ml
+spatial:
+- global
+data:
+- other
+status: research
+summary: An ensemble-based algorithm targets data acquisition to regions and times that most reduce parametric
+  uncertainty in a GCM convection scheme, within calibrate-emulate-sample.
+abstract: Abstract Data required to calibrate uncertain general circulation model (GCM) parameterizations
+  are often only available in limited regions or time periods, for example, observational data from field
+  campaigns, or data generated in local high‐resolution simulations. This raises the question of where
+  and when to acquire additional data to be maximally informative about parameterizations in a GCM. Here
+  we construct a new ensemble‐based parallel algorithm to automatically target data acquisition to regions
+  and times that maximize the uncertainty reduction, or information gain, about GCM parameters. The algorithm
+  uses a Bayesian framework that exploits a quantified distribution of GCM parameters as a measure of
+  uncertainty. This distribution is informed by time‐averaged climate statistics restricted to local regions
+  and times. The algorithm is embedded in the recently developed calibrate‐emulate‐sample framework, which
+  performs efficient model calibration and uncertainty quantification with only model evaluations, compared
+  with evaluations typically needed for traditional approaches to Bayesian calibration. We demonstrate
+  the algorithm with an idealized GCM, with which we generate surrogates of local data. In this perfect‐model
+  setting, we calibrate parameters and quantify uncertainties in a quasi‐equilibrium convection scheme
+  in the GCM. We consider targeted data that are (a) localized in space for statistically stationary simulations,
+  and (b) localized in space and time for seasonally varying simulations. In these proof‐of‐concept applications,
+  the calculated information gain reflects the reduction in parametric uncertainty obtained from Bayesian
+  inference when harnessing a targeted sample of data. The largest information gain typically, but not
+  always, results from regions near the intertropical convergence zone.
+significance: 3
+cited_by: 12
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,53 @@
+id: doi-10.3390-rs14174256
+title: Three-Dimensional Gridded Radar Echo Extrapolation for Convective Storm Nowcasting Based on 3D-ConvLSTM
+  Model
+authors:
+- Nengli Sun
+- Zeming Zhou
+- Qian Li
+- Jinrui Jing
+date: '2022-08-29'
+year: 2022
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs14174256
+  openalex: W4293661589
+links:
+  paper: https://doi.org/10.3390/rs14174256
+  pdf: https://www.mdpi.com/2072-4292/14/17/4256/pdf?version=1661839175
+topic: nowcasting
+type: model
+method:
+- cnn
+- rnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: 3D-ConvLSTM extrapolates multi-altitude radar volumes for convective storm nowcasting, outperforming
+  optical flow and 2D deep baselines at longer leads for 35 and 45 dBZ echoes.
+abstract: Radar echo extrapolation has been widely developed in previous studies for precipitation and
+  storm nowcasting. However, most studies have focused on two-dimensional radar images, and extrapolation
+  of multi-altitude radar images, which can provide more informative and visual forecasts about weather
+  systems in realistic space, has been less explored. Thus, this paper proposes a 3D-convolutional long
+  short-term memory (ConvLSTM)-based model to perform three-dimensional gridded radar echo extrapolation
+  for severe storm nowcasting. First, a 3D-convolutional neural network (CNN) is used to extract the 3D
+  spatial features of each input grid radar volume. Then, 3D-ConvLSTM layers are leveraged to model the
+  spatial–temporal relationship between the extracted 3D features and recursively generate the 3D hidden
+  states correlated to the future. Nowcasting results are obtained after applying another 3D-CNN to up-sample
+  the generated 3D hidden states. Comparative experiments were conducted on a public National Center for
+  Atmospheric Research Data Archive dataset with a 3D optical flow method and other deep-learning-based
+  models. Quantitative evaluations demonstrate that the proposed 3D-ConvLSTM-based model achieves better
+  overall and longer-term performance for storms with reflectivity values above 35 and 45 dBZ. In addition,
+  case studies qualitatively demonstrate that the proposed model predicts more realistic storm evolution
+  and can facilitate early warning regarding impending severe storms.
+significance: 4
+cited_by: 24
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

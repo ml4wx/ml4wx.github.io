@@ -1,0 +1,54 @@
+id: doi-10.1038-s41598-022-11936-9
+title: ECMWF short-term prediction accuracy improvement by deep learning
+authors:
+- Jaroslav Frnda
+- Marek Ďurica
+- Jan Rozhon
+- Mária Vojteková
+- Jan Nedoma
+- Radek Martínek
+date: '2022-05-12'
+year: 2022
+venue: Scientific Reports
+venue_type: journal
+ids:
+  doi: 10.1038/s41598-022-11936-9
+  openalex: W4280500345
+links:
+  paper: https://doi.org/10.1038/s41598-022-11936-9
+  pdf: https://www.nature.com/articles/s41598-022-11936-9.pdf
+topic: post-processing
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: research
+summary: A neural network post-processes ECMWF forecasts of 2 m temperature and 24 h precipitation using
+  station observations in 10 European cities, improving on raw ECMWF.
+abstract: This paper aims to describe and evaluate the proposed calibration model based on a neural network
+  for post-processing of two essential meteorological parameters, namely near-surface air temperature
+  (2 m) and 24 h accumulated precipitation. The main idea behind this work is to improve short-term (up
+  to 3 days) forecasts delivered by a global numerical weather prediction (NWP) model called ECMWF (European
+  Centre for Medium-Range Weather Forecasts). In comparison to the existing local weather models that
+  typically provide weather forecasts for limited geographic areas (e.g., within one country but they
+  are more accurate), ECMWF offers a prediction of the weather phenomena across the world. Another significant
+  benefit of this global NWP model includes the fact, that by using it in several well-known online applications,
+  forecasts are freely available while local models outputs are often paid. Our proposed ECMWF-enhancing
+  model uses a combination of raw ECMWF data and additional input parameters we have identified as useful
+  for ECMWF error estimation and its subsequent correction. The ground truth data used for the training
+  phase of our model consists of real observations from weather stations located in 10 cities across two
+  European countries. The results obtained from cross-validation indicate that our parametric model outperforms
+  the accuracy of a standard ECMWF prediction and gets closer to the forecast precision of the local NWP
+  models.
+significance: 3
+cited_by: 72
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,58 @@
+id: doi-10.1007-s10489-022-04175-y
+title: A combination of supervised dimensionality reduction and learning methods to forecast solar radiation
+authors:
+- Esteban García-Cuesta
+- Ricardo Aler
+- David Pozo‐Vázquez
+- Inés María Galván
+date: '2022-10-06'
+year: 2022
+venue: Applied Intelligence
+venue_type: journal
+ids:
+  doi: 10.1007/s10489-022-04175-y
+  openalex: W4302290904
+links:
+  paper: https://doi.org/10.1007/s10489-022-04175-y
+  pdf: https://link.springer.com/content/pdf/10.1007/s10489-022-04175-y.pdf
+topic: applications-impacts
+topics:
+- post-processing
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+status: research
+summary: Proposes supervised SLMVP dimensionality reduction for NWP-based solar irradiance forecasts,
+  achieving about 3-5% lower MAE than PCA and LPP at Seville and Lisbon.
+abstract: 'Abstract Machine learning is routinely used to forecast solar radiation from inputs, which
+  are forecasts of meteorological variables provided by numerical weather prediction (NWP) models, on
+  a spatially distributed grid. However, the number of features resulting from these grids is usually
+  large, especially if several vertical levels are included. Principal Components Analysis (PCA) is one
+  of the simplest and most widely-used methods to extract features and reduce dimensionality in renewable
+  energy forecasting, although this method has some limitations. First, it performs a global linear analysis,
+  and second it is an unsupervised method. Locality Preserving Projection (LPP) overcomes the locality
+  problem, and recently the Linear Optimal Low-Rank (LOL) method has extended Linear Discriminant Analysis
+  (LDA) to be applicable when the number of features is larger than the number of samples. Supervised
+  Nonnegative Matrix Factorization (SNMF) also achieves this goal extending the Nonnegative Matrix Factorization
+  (NMF) framework to integrate the logistic regression loss function. In this article we try to overcome
+  all these issues together by proposing a Supervised Local Maximum Variance Preserving (SLMVP) method,
+  a supervised non-linear method for feature extraction and dimensionality reduction. PCA, LPP, LOL, SNMF
+  and SLMVP have been compared on Global Horizontal Irradiance (GHI) and Direct Normal Irradiance (DNI)
+  radiation data at two different Iberian locations: Seville and Lisbon. Results show that for both kinds
+  of radiation (GHI and DNI) and the two locations, SLMVP produces smaller MAE errors than PCA, LPP, LOL,
+  and SNMF, around 4.92% better for Seville and 3.12% for Lisbon. It has also been shown that, although
+  SLMVP, PCA, and LPP benefit from using a non-linear regression method (Gradient Boosting in this work),
+  this benefit is larger for PCA and LPP because SMLVP is able to perform non-linear transformations of
+  inputs.'
+significance: 2
+cited_by: 23
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

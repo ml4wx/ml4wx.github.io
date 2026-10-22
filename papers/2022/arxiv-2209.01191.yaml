@@ -1,0 +1,52 @@
+id: arxiv-2209.01191
+title: Long-term hail risk assessment with deep neural networks
+authors:
+- Ivan Lukyanenko
+- Mikhail Mozikov
+- Yury Maximov
+- Ilya Makarov
+date: '2022-08-31'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2209.01191'
+  openalex: W4294782969
+links:
+  paper: https://arxiv.org/abs/2209.01191
+  pdf: https://arxiv.org/pdf/2209.01191
+topic: extremes-hazards
+type: model
+method:
+- cnn
+- rnn
+timescale:
+- climate
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: Combines convolutional and recurrent layers to classify hail-favourable atmospheric profiles
+  and forecast changes in hail frequency over coming decades.
+abstract: Hail risk assessment is necessary to estimate and reduce damage to crops, orchards, and infrastructure.
+  Also, it helps to estimate and reduce consequent losses for businesses and, particularly, insurance
+  companies. But hail forecasting is challenging. Data used for designing models for this purpose are
+  tree-dimensional geospatial time series. Hail is a very local event with respect to the resolution of
+  available datasets. Also, hail events are rare - only 1% of targets in observations are marked as "hail".
+  Models for nowcasting and short-term hail forecasts are improving. Introducing machine learning models
+  to the meteorology field is not new. There are also various climate models reflecting possible scenarios
+  of climate change in the future. But there are no machine learning models for data-driven forecasting
+  of changes in hail frequency for a given area. The first possible approach for the latter task is to
+  ignore spatial and temporal structure and develop a model capable of classifying a given vertical profile
+  of meteorological variables as favorable to hail formation or not. Although such an approach certainly
+  neglects important information, it is very light weighted and easily scalable because it treats observations
+  as independent from each other. The more advanced approach is to design a neural network capable to
+  process geospatial data. Our idea here is to combine convolutional layers responsible for the processing
+  of spatial data with recurrent neural network blocks capable to work with temporal structure. This study
+  compares two approaches and introduces a model suitable for the task of forecasting changes in hail
+  frequency for ongoing decades.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,53 @@
+id: doi-10.5194-gmd-15-7353-2022
+title: Repeatable high-resolution statistical downscaling through deep learning
+authors:
+- Dánnell Quesada‐Chacón
+- Klemens Barfus
+- Christian Bernhofer
+date: '2022-10-05'
+year: 2022
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-15-7353-2022
+  openalex: W4301594512
+links:
+  paper: https://doi.org/10.5194/gmd-15-7353-2022
+topic: downscaling
+topics:
+- benchmarks-data-eval
+type: model
+method:
+- cnn
+timescale:
+- climate
+spatial:
+- regional
+data:
+- era5
+- stations
+- other
+status: research
+summary: U-Net and U-Net++ deep learning perfect-prognosis downscaling produces daily 1 km precipitation
+  for Saxony with improved skill and full reproducibility.
+abstract: Abstract. One of the major obstacles for designing solutions against the imminent climate crisis
+  is the scarcity of high spatio-temporal resolution model projections for variables such as precipitation.
+  This kind of information is crucial for impact studies in fields like hydrology, agronomy, ecology and
+  risk management. The currently highest spatial resolution datasets on a daily scale for projected conditions
+  fail to represent complex local variability. We used deep learning (DL) based statistical downscaling
+  (SD) methods to obtain daily 1 km resolution gridded data for precipitation in the Eastern Ore Mountains
+  in Saxony, Germany. We built upon the well established climate4R framework, while adding modifications
+  to its base-code and introducing skip connections based DL architectures, such as U-Net and U-Net++.
+  We also aimed to address the known general reproducibility issues by creating a containerized environment
+  with multi-GPU and TensorFlow’s deterministic operations support. The perfect prognosis approach was
+  applied using the ERA5 reanalysis and the ReKIS (Regional Climate Information System for Saxony, Saxony-Anhalt,
+  and Thuringia) dataset. The results were validated with the VALUE framework. The introduced architectures
+  show a clear performance improvement when compared to previous SD benchmarks. Characteristics of the
+  DL models configurations that promote their suitability for this specific task were identified, tested
+  and argued. Full model repeatability was achieved employing the same physical GPU.
+significance: 4
+cited_by: 29
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

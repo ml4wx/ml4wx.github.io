@@ -1,0 +1,45 @@
+id: arxiv-2207.14679
+title: Leveraging data from nearby stations to improve short-term wind speed forecasts
+authors:
+- Rachel Baïle
+- Jean-François Muzy
+date: '2022-07-29'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2207.14679'
+links:
+  paper: https://arxiv.org/abs/2207.14679
+  pdf: https://arxiv.org/pdf/2207.14679
+topic: local-forecasting
+type: evaluation
+method:
+- classical-ml
+timescale:
+- nowcast
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Shows that adding neighbouring station wind data improves 1-6 hour wind speed forecasts by up
+  to 20% RMSE across linear and ML models.
+abstract: In this paper, we address the issue of short-term wind speed prediction at a given site. We
+  show that, when one uses spatiotemporal information as provided by wind data of neighboring stations,
+  one significantly improves the prediction quality. Our methodology does not focus on any peculiar forecasting
+  model but rather considers a set of various prediction methods, from a very basic linear regression
+  to different machine learning models. In each case, our approach consists in specifically and incrementally
+  studying the benefits of using wind data of the surrounding stations. We show that, at all horizons
+  ranging from 1 to 6 hours ahead, the relative gain on the RMSE of the predicted wind speed can increase
+  up to 20 %. For all the considered forecasting methods, we show that such a gain is far better than
+  the one obtained by considering other kind of information like local weather variables or seeking for
+  an optimal deep learning model. Moreover we provide evidence that non-linear models, as neural networks
+  or gradient boosting methods, significantly outperform linear regression. These conclusions are simply
+  interpreted as resulting from the ability of a method to capture the transport of the information by
+  the main flow in the upwind direction.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,55 @@
+id: doi-10.1002-met.2098
+title: A transformer neural network for predicting near‐surface temperature
+authors:
+- Emy Alerskans
+- Joachim Nyborg
+- Morten Birk
+- Eigil Kaas
+date: '2022-09-01'
+year: 2022
+venue: Meteorological Applications
+venue_type: journal
+ids:
+  doi: 10.1002/met.2098
+  openalex: W4306857384
+links:
+  paper: https://doi.org/10.1002/met.2098
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/met.2098
+topic: post-processing
+topics:
+- local-forecasting
+type: model
+method:
+- transformer
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Transformer post-processing of NWP 2 m temperature, trained on crowd-sourced stations, cuts STD
+  to 1.13 °C versus 1.96 °C for raw NWP.
+abstract: Abstract A new method based on the Transformer model is proposed for post‐processing of numerical
+  weather prediction (NWP) forecasts of 2 m air temperature. The Transformer is a machine learning (ML)
+  model based on self‐attention, which extracts information about which inputs are most important for
+  the prediction. It is trained using time series input from NWP variables and crowd‐sourced 2 m air temperature
+  observations from more than 1000 private weather stations (PWSs). The performance of the new post‐processing
+  model is evaluated using both observational data from PWSs and completely independent observations from
+  the Danish Meteorological Institute (DMI) network of surface synoptic observations (SYNOP) stations.
+  The performance of the Transformer model is compared against the raw NWP forecast, as well as against
+  two benchmark post‐processing models; a linear regression (LR) model and a neural network (NN). The
+  results evaluated using PWS observations show an improvement in the 2 m temperature forecasts with respect
+  to both bias and standard deviation (STD) for all three post‐processing models, with the Transformer
+  model showing the largest improvement. The raw NWP forecast, LR, NN and Transformer model have a bias
+  and STD of 0.34 and 1.96°C, 0.03 and 1.63°C, 0.10 and 1.53°C and 0.02 and 1.13°C, respectively. The
+  corresponding results using DMI SYNOP stations also show improved forecasts, where the Transformer model
+  performs better than both the raw NWP forecast and the two benchmark models. However, a dependence on
+  distance to the coast and cold temperatures is observed.
+significance: 3
+cited_by: 40
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

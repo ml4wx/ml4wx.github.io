@@ -1,0 +1,54 @@
+id: arxiv-2112.07856
+title: Efficient high-dimensional variational data assimilation with machine-learned reduced-order models
+authors:
+- Romit Maulik
+- Vishwas Rao
+- Jiali Wang
+- Gianmarco Mengaldo
+- Emil M. Constantinescu
+- Bethany Lusch
+- Prasanna Balaprakash
+- Ian T Foster
+- Veerabhadra Rao Kotamarthi
+date: '2022-05-02'
+year: 2022
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  arxiv: '2112.07856'
+  doi: 10.5194/gmd-15-3433-2022
+  openalex: W4225286424
+links:
+  paper: https://doi.org/10.5194/gmd-15-3433-2022
+orgs:
+- argonne
+topic: data-assimilation
+type: model
+method:
+- differentiable
+timescale:
+- short
+status: research
+summary: Replaces the forward model in variational data assimilation with a differentiable learned emulator,
+  speeding geopotential height DA by four orders of magnitude.
+abstract: Abstract. Data assimilation (DA) in the geophysical sciences remains the cornerstone of robust
+  forecasts from numerical models. Indeed, DA plays a crucial role in the quality of numerical weather
+  prediction, and is a crucial building block that has allowed dramatic improvements in weather forecasting
+  over the past few decades. DA is commonly framed in a variational setting, where one solves an optimization
+  problem within a Bayesian formulation using raw model forecasts as a prior, and observations as likelihood.
+  This leads to a DA objective function that needs to be minimized, where the decision variables are the
+  initial conditions specified to the model. In traditional DA, the forward model is numerically and computationally
+  expensive. Here we replace the forward model with a low-dimensional, data-driven, and differentiable
+  emulator. Consequently, gradients of our DA objective function with respect to the decision variables
+  are obtained rapidly via automatic differentiation. We demonstrate our approach by performing an emulator-assisted
+  DA forecast of geopotential height. Our results indicate that emulator-assisted DA is faster than traditional
+  equation-based DA forecasts by four orders of magnitude, allowing computations to be performed on a
+  workstation rather than a dedicated high-performance computer. In addition, we describe accuracy benefits
+  of emulator-assisted DA when compared to simply using the emulator for forecasting (i.e., without DA).
+  Our overall formulation is denoted AIAEDA (Artificial Intelligence Emulator Assisted Data Assimilation).
+significance: 4
+cited_by: 44
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

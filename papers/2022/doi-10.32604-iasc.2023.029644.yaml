@@ -1,0 +1,56 @@
+id: doi-10.32604-iasc.2023.029644
+title: Using GAN Neural Networks for Super-Resolution Reconstruction of Temperature Fields
+authors:
+- Tao Li
+- Zhiwei Jiang
+- Rui Han
+- Jinyue Xia
+- Yongjun Ren
+date: '2022-06-06'
+year: 2022
+venue: Intelligent Automation & Soft Computing
+venue_type: journal
+ids:
+  doi: 10.32604/iasc.2023.029644
+  openalex: W4281693665
+links:
+  paper: https://doi.org/10.32604/iasc.2023.029644
+  pdf: https://file.techscience.com/ueditor/files/iasc/TSP_IASC-35-1/TSP_IASC_29644/TSP_IASC_29644.pdf
+orgs:
+- ibm-research
+- nuist
+topic: downscaling
+type: model
+method:
+- gan-vae
+- cnn
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: GAN with sub-pixel convolution performs 8x super-resolution of ERA5 temperature fields, improving
+  RMSE 37% over bicubic interpolation.
+abstract: A Generative Adversarial Neural (GAN) network is designed based on deep learning for the Super-Resolution
+  (SR) reconstruction task of temperature fields (comparable to downscaling in the meteorological field),
+  which is limited by the small number of ground stations and the sparse distribution of observations,
+  resulting in a lack of fineness of data. To improve the network’s generalization performance, the residual
+  structure, and batch normalization are used. Applying the nearest interpolation method to avoid over-smoothing
+  of the climate element values instead of the conventional Bicubic interpolation in the computer vision
+  field. Sub-pixel convolution is used instead of transposed convolution or interpolation methods for
+  up-sampling to speed up network inference. The experimental dataset is the European Centre for Medium-Range
+  Weather Forecasts Reanalysis v5 (ERA5) with a bidirectional resolution of . On the other hand, the task
+  aims to scale up the size by a factor of 8, which is rare compared to conventional methods. The comparison
+  methods include traditional interpolation methods and a more widely used GAN-based network such as the
+  SRGAN. The final experimental results show that the proposed scheme advances the performance of Root
+  Mean Square Error (RMSE) by 37.25%, the Peak Signal-to-noise Ratio (PNSR) by 14.4%, and the Structural
+  Similarity (SSIM) by 10.3% compared to the Bicubic Interpolation. For the traditional SRGAN network,
+  a relatively obvious performance improvement is observed by experimental demonstration. Meanwhile, the
+  GAN network can converge stably and reach the approximate Nash equilibrium for various initialization
+  parameters to empirically illustrate the effectiveness of the method in the temperature fields.
+significance: 3
+cited_by: 5
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

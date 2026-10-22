@@ -1,0 +1,54 @@
+id: doi-10.21203-rs.3.rs-2024020-v1
+title: Machine Learning Weather Analogs for Renewable Forecasting
+authors:
+- Weiming Hu
+- Guido Cervone
+- George S. Young
+- Luca Delle Monache
+date: '2022-09-13'
+year: 2022
+venue: Research Square
+venue_type: preprint
+ids:
+  doi: 10.21203/rs.3.rs-2024020/v1
+  openalex: W4297890772
+links:
+  paper: https://doi.org/10.21203/rs.3.rs-2024020/v1
+  pdf: https://www.researchsquare.com/article/rs-2024020/latest.pdf
+topic: post-processing
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- classical-ml
+- other
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: Deep-learning latent similarity metric for analog ensembles outperforms the original AnEn in
+  RMSE, bias and CRPS for wind and solar forecasts in Pennsylvania.
+abstract: Abstract The Analog Ensemble (AnEn) is a technique to generate forecast ensembles using a deterministic
+  model and associated observations. It has been widely used for weather forecasting and renewable energy
+  production forecasting. Ensemble members are chosen based on a similarity metric that calculates the
+  weighted multi-variate Euclidean distance. However, identifying optimal weights is a challenging and
+  computationally expensive process, which often involves performing a constrained exhaustive search.
+  As a result, only a few predictors were selected and optimized in previous AnEn studies. A new Machine
+  Learning similarity metric is proposed address this shortcoming. First, a Deep Learning network is trained
+  to generate latent features using all the temporal multi-variate input predictors. The analogs for a
+  target forecast are selected by computing the Euclidean distance of the latent variables between the
+  target and all previous forecasts. This process can be performed in parallel for each location. The
+  proposed method does not require prior predictor selection and weight optimization. It is tested using
+  wind speed and solar irradiance forecasts in Pennsylvania for 2017 to 2019. Results show that the proposed
+  method is capable of handling a large number of predictors and it outperforms the original similarity
+  metric in RMSE, bias, and CRPS. Since the transformation network is trained empirically, the proposed
+  method has been found to be more flexible for searching through a longer historical record.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

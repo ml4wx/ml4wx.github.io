@@ -1,0 +1,54 @@
+id: arxiv-2210.11269
+title: Inference from Real-World Sparse Measurements
+authors:
+- Arnaud Pannatier
+- Kyle Matoba
+- François Fleuret
+date: '2022-10-20'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2210.11269'
+  openalex: W4307078073
+links:
+  paper: https://arxiv.org/abs/2210.11269
+  pdf: https://arxiv.org/pdf/2210.11269
+topic: global-medium-range
+topics:
+- nowcasting
+type: model
+method:
+- transformer
+timescale:
+- nowcast
+- short
+spatial:
+- global
+data:
+- other
+status: research
+summary: A ViT-style transformer handles irregular sensor data directly, cutting wind nowcasting RMSE
+  from 9.24 to 7.98 and beating GNN baselines across several domains.
+abstract: Real-world problems often involve complex and unstructured sets of measurements, which occur
+  when sensors are sparsely placed in either space or time. Being able to model this irregular spatiotemporal
+  data and extract meaningful forecasts is crucial. Deep learning architectures capable of processing
+  sets of measurements with positions varying from set to set, and extracting readouts anywhere are methodologically
+  difficult. Current state-of-the-art models are graph neural networks and require domain-specific knowledge
+  for proper setup. We propose an attention-based model focused on robustness and practical applicability,
+  with two key design contributions. First, we adopt a ViT-like transformer that takes both context points
+  and read-out positions as inputs, eliminating the need for an encoder-decoder structure. Second, we
+  use a unified method for encoding both context and read-out positions. This approach is intentionally
+  straightforward and integrates well with other systems. Compared to existing approaches, our model is
+  simpler, requires less specialized knowledge, and does not suffer from a problematic bottleneck effect,
+  all of which contribute to superior performance. We conduct in-depth ablation studies that characterize
+  this problematic bottleneck in the latent representations of alternative models that inhibit information
+  utilization and impede training efficiency. We also perform experiments across various problem domains,
+  including high-altitude wind nowcasting, two-day weather forecasting, fluid dynamics, and heat diffusion.
+  Our attention-based model consistently outperforms state-of-the-art models in handling irregularly sampled
+  data. Notably, our model reduces the root mean square error (RMSE) for wind nowcasting from 9.24 to
+  7.98 and for heat diffusion tasks from 0.126 to 0.084.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

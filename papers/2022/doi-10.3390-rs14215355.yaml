@@ -1,0 +1,57 @@
+id: doi-10.3390-rs14215355
+title: Integration of Satellite-Derived and Ground-Based Soil Moisture Observations for a Precipitation
+  Product over the Upper Heihe River Basin, China
+authors:
+- Ying Zhang
+- Jinliang Hou
+- Chunlin Huang
+date: '2022-10-26'
+year: 2022
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs14215355
+  openalex: W4308173656
+links:
+  paper: https://doi.org/10.3390/rs14215355
+  pdf: https://www.mdpi.com/2072-4292/14/21/5355/pdf?version=1667874943
+topic: observations-remote-sensing
+type: model
+method:
+- rnn
+- cnn
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- stations
+status: research
+summary: ML merges satellite and ground soil moisture, then SM2RAIN derives a rainfall product outperforming
+  GPM, CHIRPS, ERA5-Land and MSWEP over the Heihe basin.
+abstract: Precipitation monitoring is important for earth system modeling and environmental management.
+  Low spatial representativeness limits gauge measurements of rainfall and low spatial resolution limits
+  satellite-derived rainfall. SM2RAIN-based products, which exploit the inversion of the water balance
+  equation to derive rainfall from soil moisture (SM) observations, can be an alternative. However, the
+  quality of SM data limits the accuracy of rainfall. The goal of this work was to improve the accuracy
+  of rainfall estimation through merging multiple soil moisture (SM) datasets. This study proposed an
+  integration framework, which consists of multiple machine learning methods, to use satellite and ground-based
+  soil moisture observations to derive a precipitation product. First, three machine learning (ML) methods
+  (random forest (RF), long short-term memory (LSTM), and convolutional neural network (CNN)) were used,
+  respectively to generate three SM datasets (RF-SM, LSTM-SM, and CNN-SM) by merging satellite (SMOS,
+  SMAP, and ASCAT) and ground-based SM observations. Then, these SM datasets were merged using the Bayesian
+  model averaging method and validated by wireless sensor network (WSN) observations. Finally, the merged
+  SM data were used to produce a rainfall dataset (SM2R) using SM2RAIN. The SM2R dataset was validated
+  using automatic meteorological station (AMS) rainfall observations recorded throughout the Upper Heihe
+  River Basin (China) during 2014–2015 and compared with other rainfall datasets. Our results revealed
+  that the quality of the SM2R data outperforms that of GPM-SM2RAIN, Climate Hazards Group InfraRed Precipitation
+  with Station data (CHIRPS), ERA5-Land (ERA5) and multi-source weighted-ensemble Precipitation (MSWEP).
+  Triple-collocation analysis revealed that SM2R outperformed China Meteorological Data and the China
+  Meteorological Forcing Dataset. Ultimately, the SM2R rainfall product was considered successful with
+  acceptably low spatiotemporal errors (RMSE = 3.5 mm, R = 0.59, and bias = −1.6 mm).
+significance: 3
+cited_by: 15
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

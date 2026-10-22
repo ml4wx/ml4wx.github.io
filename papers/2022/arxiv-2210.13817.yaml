@@ -1,0 +1,49 @@
+id: arxiv-2210.13817
+title: Online model error correction with neural networks in the incremental 4D-Var framework
+authors:
+- Alban Farchi
+- Marcin Chrust
+- Marc Bocquet
+- Patrick Laloyaux
+- Massimo Bonavita
+date: '2022-10-25'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2210.13817'
+links:
+  paper: https://arxiv.org/abs/2210.13817
+  pdf: https://arxiv.org/pdf/2210.13817
+topic: data-assimilation
+topics:
+- hybrid-parameterization
+type: model
+method:
+- physics-constrained
+data:
+- other
+status: research
+summary: Online neural-network model error correction is added to incremental 4D-Var in ECMWF's OOPS,
+  showing online learning beats offline learning on a quasi-geostrophic model.
+abstract: Recent studies have demonstrated that it is possible to combine machine learning with data assimilation
+  to reconstruct the dynamics of a physical model partially and imperfectly observed. Data assimilation
+  is used to estimate the system state from the observations, while machine learning computes a surrogate
+  model of the dynamical system based on those estimated states. The surrogate model can be defined as
+  an hybrid combination where a physical model based on prior knowledge is enhanced with a statistical
+  model estimated by a neural network. The training of the neural network is typically done offline, once
+  a large enough dataset of model state estimates is available. By contrast, with online approaches the
+  surrogate model is improved each time a new system state estimate is computed. Online approaches naturally
+  fit the sequential framework encountered in geosciences where new observations become available with
+  time. In a recent methodology paper, we have developed a new weak-constraint 4D-Var formulation which
+  can be used to train a neural network for online model error correction. In the present article, we
+  develop a simplified version of that method, in the incremental 4D-Var framework adopted by most operational
+  weather centres. The simplified method is implemented in the ECMWF Object-Oriented Prediction System,
+  with the help of a newly developed Fortran neural network library, and tested with a two-layer two-dimensional
+  quasi geostrophic model. The results confirm that online learning is effective and yields a more accurate
+  model error correction than offline learning. Finally, the simplified method is compatible with future
+  applications to state-of-the-art models such as the ECMWF Integrated Forecasting System.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

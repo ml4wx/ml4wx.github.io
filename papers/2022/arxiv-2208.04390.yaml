@@ -1,0 +1,59 @@
+id: arxiv-2208.04390
+title: A Spatiotemporal-Aware Climate Model Ensembling Method for Improving Precipitation Predictability
+authors:
+- Ming Fan
+- Dan Lu
+- Deeksha Rastogi
+- Eric M. Pierce
+date: '2022-08-08'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2208.04390'
+  doi: 10.1002/essoar.10512289.1
+  openalex: W4294653706
+links:
+  paper: https://arxiv.org/abs/2208.04390
+  pdf: https://arxiv.org/pdf/2208.04390
+orgs:
+- ornl
+topic: post-processing
+topics:
+- climate-analysis-attribution
+type: model
+method:
+- other
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+- stations
+status: research
+summary: Bayesian neural network weights CMIP6 models per location and season, improving monthly US precipitation
+  predictions over simple ensemble baselines with interpretable weights.
+abstract: Multimodel ensembling has been widely used to improve climate model predictions, and the improvement
+  strongly depends on the ensembling scheme. In this work, we propose a Bayesian neural network (BNN)
+  ensembling method, which combines climate models within a Bayesian model averaging framework, to improve
+  the predictive capability of model ensembles. Our proposed BNN approach calculates spatiotemporally
+  varying model weights and biases by leveraging individual models' simulation skill, calibrates the ensemble
+  prediction against observations by considering observation data uncertainty, and quantifies epistemic
+  uncertainty when extrapolating to new conditions. More importantly, the BNN method provides interpretability
+  about which climate model contributes more to the ensemble prediction at which locations and times.
+  Thus, beyond its predictive capability, the method also brings insights and understanding of the models
+  to guide further model and data development. In this study, we apply the BNN weighting scheme to an
+  ensemble of CMIP6 climate models for monthly precipitation prediction over the conterminous United States.
+  In both synthetic and real case studies, we demonstrate that BNN produces predictions of monthly precipitation
+  with higher accuracy than three baseline ensembling methods. BNN can correctly assign a larger weight
+  to the regions and seasons where the individual model fits the observation better. Moreover, its offered
+  interpretability is consistent with our understanding of localized climate model performance. Additionally,
+  BNN shows an increasing uncertainty when the prediction is farther away from the period with constrained
+  data, which appropriately reflects our predictive confidence and trustworthiness of the models in the
+  changing climate.
+significance: 4
+cited_by: 2
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

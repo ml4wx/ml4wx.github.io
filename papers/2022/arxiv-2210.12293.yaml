@@ -1,0 +1,52 @@
+id: arxiv-2210.12293
+title: 'DL-Corrector-Remapper: A grid-free bias-correction deep learning methodology for data-driven high-resolution
+  global weather forecasting'
+authors:
+- Tao Ge
+- Jaideep Pathak
+- Akshay Subramaniam
+- Karthik Kashinath
+date: '2022-10-21'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2210.12293'
+  openalex: W4307308716
+links:
+  paper: https://arxiv.org/abs/2210.12293
+  pdf: https://arxiv.org/pdf/2210.12293
+topic: post-processing
+topics:
+- global-medium-range
+type: model
+method:
+- neural-operator
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- stations
+status: research
+summary: DLCR corrects and remaps FourCastNet gridded forecasts onto sparse, non-uniform observation locations,
+  bias-correcting them against ground truth without gridded targets.
+abstract: Data-driven models, such as FourCastNet (FCN), have shown exemplary performance in high-resolution
+  global weather forecasting. This performance, however, is based on supervision on mesh-gridded weather
+  data without the utilization of raw climate observational data, the gold standard ground truth. In this
+  work we develop a methodology to correct, remap, and fine-tune gridded uniform forecasts of FCN so it
+  can be directly compared against observational ground truth, which is sparse and non-uniform in space
+  and time. This is akin to bias correction and post-processing of numerical weather prediction (NWP),
+  a routine operation at meteorological and weather forecasting centers across the globe. The Adaptive
+  Fourier Neural Operator (AFNO) architecture is used as the backbone to learn continuous representations
+  of the atmosphere. The spatially and temporally non-uniform output is evaluated by the non-uniform discrete
+  inverse Fourier transform (NUIDFT) given the output query locations. We call this network the Deep-Learning-Corrector-Remapper
+  (DLCR). The improvement in DLCR's performance against the gold standard ground truth over the baseline's
+  performance shows its potential to correct, remap, and fine-tune the mesh-gridded forecasts under the
+  supervision of observations.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

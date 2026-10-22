@@ -1,0 +1,49 @@
+id: arxiv-2209.04947
+title: Kernel Learning for Explainable Climate Science
+authors:
+- Vidhi Lalchand
+- Kenza Tazi
+- Talay M. Cheema
+- Richard E. Turner
+- Scott Hosking
+date: '2022-09-11'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2209.04947'
+links:
+  paper: https://arxiv.org/abs/2209.04947
+  pdf: https://arxiv.org/pdf/2209.04947
+topic: observations-remote-sensing
+topics:
+- xai-uq-physics
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Gaussian processes with non-stationary Gibbs kernels reconstruct Upper Indus Basin precipitation
+  patterns with uncertainty, outperforming stationary and deep GP baselines.
+abstract: The Upper Indus Basin, Himalayas provides water for 270 million people and countless ecosystems.
+  However, precipitation, a key component to hydrological modelling, is poorly understood in this area.
+  A key challenge surrounding this uncertainty comes from the complex spatial-temporal distribution of
+  precipitation across the basin. In this work we propose Gaussian processes with structured non-stationary
+  kernels to model precipitation patterns in the UIB. Previous attempts to quantify or model precipitation
+  in the Hindu Kush Karakoram Himalayan region have often been qualitative or include crude assumptions
+  and simplifications which cannot be resolved at lower resolutions. This body of research also provides
+  little to no error propagation. We account for the spatial variation in precipitation with a non-stationary
+  Gibbs kernel parameterised with an input dependent lengthscale. This allows the posterior function samples
+  to adapt to the varying precipitation patterns inherent in the distinct underlying topography of the
+  Indus region. The input dependent lengthscale is governed by a latent Gaussian process with a stationary
+  squared-exponential kernel to allow the function level hyperparameters to vary smoothly. In ablation
+  experiments we motivate each component of the proposed kernel by demonstrating its ability to model
+  the spatial covariance, temporal structure and joint spatio-temporal reconstruction. We benchmark our
+  model with a stationary Gaussian process and a Deep Gaussian processes.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

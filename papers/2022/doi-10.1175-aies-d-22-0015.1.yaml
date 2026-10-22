@@ -1,0 +1,58 @@
+id: doi-10.1175-aies-d-22-0015.1
+title: 'Automated Identification of “Dunkelflaute” Events: A Convolutional Neural Network–Based Autoencoder
+  Approach'
+authors:
+- Bowen Li
+- Sukanta Basu
+- Simon Jonathan Watson
+date: '2022-08-29'
+year: 2022
+venue: Artificial Intelligence for the Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1175/aies-d-22-0015.1
+  openalex: W4293863745
+links:
+  paper: https://doi.org/10.1175/aies-d-22-0015.1
+  pdf: https://journals.ametsoc.org/downloadpdf/journals/aies/1/4/AIES-D-22-0015.1.pdf
+topic: climate-analysis-attribution
+topics:
+- applications-impacts
+type: model
+method:
+- cnn
+- classical-ml
+spatial:
+- regional
+data:
+- era5
+- nwp-analysis
+- cmip
+status: research
+summary: WISRnet combines a CNN autoencoder with k-means to identify Dunkelflaute periods from reanalysis-type
+  wind and solar patterns, finding most events fall in 5 of 25 clusters.
+abstract: Abstract As wind and solar power play increasingly important roles in the European energy system,
+  unfavorable weather conditions, such as “Dunkelflaute” (extended calm and cloudy periods), will pose
+  ever greater challenges to transmission system operators. Thus, accurate identification and characterization
+  of such events from open data streams (e.g., reanalysis, numerical weather prediction, and climate projection)
+  are going to be crucial. In this study, we propose a two-step, unsupervised deep learning framework
+  [wind and solar network (WISRnet)] to automatically encode spatial patterns of wind speed and insolation,
+  and subsequently, identify Dunkelflaute periods from the encoded patterns. Specifically, a deep convolutional
+  neural network (CNN)–based autoencoder (AE) is first employed for feature extraction from the spatial
+  patterns. These two-dimensional CNN-AE patterns encapsulate both amplitude and spatial information in
+  a parsimonious way. In the second step of the WISRnet framework, a variant of the well-known k-means
+  algorithm is used to divide the CNN-AE patterns in region-dependent meteorological clusters. For the
+  validation of the WISRnet framework, aggregated wind and solar power production data from Belgium are
+  used. Using a simple criterion from published literature, all the Dunkelflaute periods are directly
+  identified from this 6-year-long dataset. Next, each of these periods is associated with a WISRnet-derived
+  cluster. Interestingly, we find that the majority of these Dunkelflaute periods are part of only 5 clusters
+  (out of 25). We show that in lieu of proprietary power production data, the WISRnet framework can identify
+  Dunkelflaute periods from public-domain meteorological data. To further demonstrate the prowess of this
+  framework, it is deployed to identify and characterize Dunkelflaute events in Denmark, Sweden, and the
+  United Kingdom.
+significance: 4
+cited_by: 6
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill
