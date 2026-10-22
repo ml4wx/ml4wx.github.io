@@ -8,7 +8,7 @@ updated every week from arXiv, journals and lab blogs.
 
 | Papers | ⭐ Highlights | Topics | Last update |
 |---:|---:|---:|---|
-| 9256 | 77 | 20 | 2026-10-22 |
+| 9256 | 79 | 20 | 2026-10-22 |
 
 ## Topics
 
@@ -18,7 +18,7 @@ updated every week from arXiv, journals and lab blogs.
 |---|---:|---:|
 | [Nowcasting](lists/nowcasting.md) | 755 | 5 |
 | [Global medium-range NWP](lists/global-medium-range.md) | 267 | 13 |
-| [Probabilistic & ensemble forecasting](lists/probabilistic-ensembles.md) | 94 | 8 |
+| [Probabilistic & ensemble forecasting](lists/probabilistic-ensembles.md) | 94 | 10 |
 | [Regional & km-scale models](lists/regional-km-scale.md) | 68 | 2 |
 | [Local & station forecasting](lists/local-forecasting.md) | 1086 | 0 |
 | [Sub-seasonal to seasonal](lists/s2s-seasonal.md) | 484 | 7 |
@@ -60,18 +60,18 @@ classified when the topics are switched on.
 
 | Date | Paper | From |
 |---|---|---|
-| 2026-09-02 | [Improving global precipitation forecasts with an AI weather model trained on satellite observations](https://arxiv.org/abs/2609.03210) | Google Research, California Institute of Technology (Caltech), Stanford University |
+| 2026-09-11 | [4D Parallelism Unlocks Exascale Bayesian Neural Networks for High-Fidelity Atmospheric Modeling](https://arxiv.org/abs/2609.12815) | Forschungszentrum Jülich / Jülich Supercomputing Centre, Karlsruhe Institute of Technology (KIT), NVIDIA |
+| 2026-09-02 | [Improving global precipitation forecasts with an AI weather model trained on satellite observations](https://arxiv.org/abs/2609.03210) | California Institute of Technology (Caltech), Google Research, Stanford University |
 | 2026-08-06 | [Operational tropical cyclone forecasting with AI](https://doi.org/10.1038/s41586-026-10953-2) | Colorado State University (incl. CIRA), Google DeepMind, Google Research, Met Office, NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |
 | 2026-07-06 | [AIFS-SUBS: Extending Data-Driven Forecasting to Sub-Seasonal Timescales](https://arxiv.org/abs/2607.05100) | ECMWF |
 | 2026-06-17 | [AIFS-DOP: End-to-End Medium-Range Weather Prediction from Observations Alone with Machine Learning](https://arxiv.org/abs/2606.19093) | ECMWF |
 | 2026-06-06 | [Disentangling the effects of sea surface temperature and CO$_2$ in global machine learned weather-climate emulators](https://arxiv.org/abs/2606.07928) | Allen Institute for AI (Ai2, ACE), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |
-| 2026-05-27 | [Skillful high-resolution weather forecasting independent of physical models](https://arxiv.org/abs/2605.28153) | Microsoft Research (AI for Science), University of Cambridge (Aardvark), The Alan Turing Institute |
+| 2026-05-27 | [Skillful high-resolution weather forecasting independent of physical models](https://arxiv.org/abs/2605.28153) | The Alan Turing Institute, Microsoft Research (AI for Science), University of Cambridge (Aardvark) |
 | 2026-04-28 | [Representing the Surface Ocean in ECMWF's data-driven forecasting system AIFS](https://arxiv.org/abs/2604.25559) | ECMWF |
 | 2026-04-17 | [Advancing Subseasonal Forecasting with Machine Learning](https://doi.org/10.1038/s41586-026-11126-x) | ECMWF, Microsoft Research (AI for Science), Massachusetts Institute of Technology (MIT) |
 | 2025-12-01 | [A Decadal Hybrid GCM Simulation Using Deep‐Learning‐Based Cloud and Convection Parameterization Generalized to a Warm Climate](https://doi.org/10.1029/2025ms005231) | Fudan University (FuXi) |
 | 2025-09-30 | [Swift: An Autoregressive Consistency Model for Efficient Weather Forecasting](https://doi.org/10.1088/3049-4753/ae802a) | Allen Institute for AI (Ai2, ACE), Argonne National Laboratory |
 | 2025-09-23 | [An update to ECMWF's machine-learned weather forecast model AIFS](https://arxiv.org/abs/2509.18994) | ECMWF |
-| 2025-09-16 | [AERIS: Argonne Earth Systems Model for Reliable and Skillful Predictions](https://arxiv.org/abs/2509.13523) | Allen Institute for AI (Ai2, ACE), Argonne National Laboratory, University of California, Los Angeles (UCLA), University of Chicago |
 
 ## How it works
 
