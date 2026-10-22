@@ -1,0 +1,57 @@
+id: arxiv-2311.06253
+title: Advancing Parsimonious Deep Learning Weather Prediction using the HEALPix Mesh
+authors:
+- Matthias Karlbauer
+- Nathaniel Cresswell-Clay
+- Dale R. Durran
+- Raul A. Moreno
+- Thorsten Kurth
+- Boris Bonev
+- Noah Brenowitz
+- Martin V. Butz
+date: '2023-09-11'
+year: 2023
+venue: Journal of Advances in Modeling Earth Systems, 16, e2023MS004021
+venue_type: journal
+ids:
+  arxiv: '2311.06253'
+  doi: 10.1029/2023ms00402
+links:
+  paper: https://arxiv.org/abs/2311.06253
+  pdf: https://arxiv.org/pdf/2311.06253
+topic: global-medium-range
+topics:
+- climate-emulation
+type: model
+method:
+- cnn
+- rnn
+timescale:
+- medium
+- climate
+spatial:
+- global
+data:
+- era5
+status: research
+summary: DLWP-HPX uses a HEALPix mesh and GRU-augmented U-Net with fewer variables at 110 km, reaching
+  skill about one day behind Pangu-Weather and GraphCast at one week and stable one-year rollouts.
+abstract: We present a parsimonious deep learning weather prediction model to forecast seven atmospheric
+  variables with 3-h time resolution for up to one-year lead times on a 110-km global mesh using the Hierarchical
+  Equal Area isoLatitude Pixelization (HEALPix). In comparison to state-of-the-art (SOTA) machine learning
+  (ML) weather forecast models, such as Pangu-Weather and GraphCast, our DLWP-HPX model uses coarser resolution
+  and far fewer prognostic variables. Yet, at one-week lead times, its skill is only about one day behind
+  both SOTA ML forecast models and the SOTA numerical weather prediction model from the European Centre
+  for Medium-Range Weather Forecasts. We report several improvements in model design, including switching
+  from the cubed sphere to the HEALPix mesh, inverting the channel depth of the U-Net, and introducing
+  gated recurrent units (GRU) on each level of the U-Net hierarchy. The consistent east-west orientation
+  of all cells on the HEALPix mesh facilitates the development of location-invariant convolution kernels
+  that successfully propagate weather patterns across the globe without requiring separate kernels for
+  the polar and equatorial faces of the cube sphere. Without any loss of spectral power after the first
+  two days, the model can be unrolled autoregressively for hundreds of steps into the future to generate
+  realistic states of the atmosphere that respect seasonal trends, as showcased in one-year simulations.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

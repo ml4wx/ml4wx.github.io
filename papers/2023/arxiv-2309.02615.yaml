@@ -1,0 +1,58 @@
+id: arxiv-2309.02615
+title: Generative Algorithms for Fusion of Physics-Based Wildfire Spread Models with Satellite Data for
+  Initializing Wildfire Forecasts
+authors:
+- Bryan Shaddy
+- Deep Ray
+- Angel Farguell
+- Valentina Calaza
+- Jan Mandel
+- James Haley
+- Kyle Hilburn
+- Derek V. Mallia
+- Adam Kochanski
+- Assad Oberai
+date: '2023-09-05'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2309.02615'
+links:
+  paper: https://arxiv.org/abs/2309.02615
+  pdf: https://arxiv.org/pdf/2309.02615
+topic: extremes-hazards
+type: model
+method:
+- gan-vae
+- physics-constrained
+timescale:
+- short
+spatial:
+- regional
+data:
+- satellite
+- km-scale-sim
+status: research
+summary: A conditional Wasserstein GAN trained on WRF-SFIRE simulations infers wildfire arrival times
+  from satellite detections, achieving a 0.81 Sorensen coefficient for fire perimeters.
+abstract: Increases in wildfire activity and the resulting impacts have prompted the development of high-resolution
+  wildfire behavior models for forecasting fire spread. Recent progress in using satellites to detect
+  fire locations further provides the opportunity to use measurements to improve fire spread forecasts
+  from numerical models through data assimilation. This work develops a method for inferring the history
+  of a wildfire from satellite measurements, providing the necessary information to initialize coupled
+  atmosphere-wildfire models from a measured wildfire state in a physics-informed approach. The fire arrival
+  time, which is the time the fire reaches a given spatial location, acts as a succinct representation
+  of the history of a wildfire. In this work, a conditional Wasserstein Generative Adversarial Network
+  (cWGAN), trained with WRF-SFIRE simulations, is used to infer the fire arrival time from satellite active
+  fire data. The cWGAN is used to produce samples of likely fire arrival times from the conditional distribution
+  of arrival times given satellite active fire detections. Samples produced by the cWGAN are further used
+  to assess the uncertainty of predictions. The cWGAN is tested on four California wildfires occurring
+  between 2020 and 2022, and predictions for fire extent are compared against high resolution airborne
+  infrared measurements. Further, the predicted ignition times are compared with reported ignition times.
+  An average Sorensen's coefficient of 0.81 for the fire perimeters and an average ignition time error
+  of 32 minutes suggest that the method is highly accurate.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

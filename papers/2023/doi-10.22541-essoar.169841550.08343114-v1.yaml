@@ -1,0 +1,64 @@
+id: doi-10.22541-essoar.169841550.08343114-v1
+title: Post-processing using deep learning to create operational, high-resolution, and probabilistic weather
+  forecasts
+authors:
+- Luke Conibear
+- Ashley E. Payne
+- Allison E Reed Harris
+- Tyler C. McCandless
+- Steven J. Brey
+- Kushal Keshavamurthy
+- Maxfield E Green
+- Stylianos Flampouris
+- Luke Thomas Peffers
+date: '2023-10-27'
+year: 2023
+venue_type: other
+ids:
+  doi: 10.22541/essoar.169841550.08343114/v1
+  openalex: W4387971817
+links:
+  paper: https://doi.org/10.22541/essoar.169841550.08343114/v1
+  pdf: https://essopenarchive.org/doi/pdf/10.22541/essoar.169841550.08343114
+orgs:
+- tomorrow-io
+- amazon
+topic: post-processing
+topics:
+- probabilistic-ensembles
+- regional-km-scale
+type: model
+method:
+- other
+timescale:
+- short
+- medium
+spatial:
+- regional
+data:
+- nwp-analysis
+status: operational
+summary: Operational multi-task neural network post-processes HRRR forecasts with a CRPS loss, improving
+  RMSE by 3–25% and CRPS by 31–45% over HRRR.
+abstract: 'We present a machine learning model that post-processes high-resolution, deterministic forecasts
+  to produce short to medium-range probabilistic forecasts for seven core weather variables.We developed
+  and operationally implemented a multi-task neural network with a custom loss function, the Continuous
+  Ranked Probability Score (CRPS), using input data from the High Resolution Rapid Refresh (HRRR) model.This
+  combined high-resolution Numerical Weather Prediction (NWP) modeling with machine learning to generate
+  more accurate deterministic and probabilistic forecasts.The results show deterministic forecast improvements
+  in Root Mean Squared Error (RMSE) from 3% to 25% and probabilistic improvements in CRPS from 31% to
+  45% over the HRRR model.The multi-task neural network is cheap to train and fast to run operationally
+  on hourly forecasts.SIGNIFICANCE STATEMENT: Weather forecasting is a challenging problem.Operational
+  forecasts use numerical weather prediction (NWP) models that solve physical equations.These weather
+  forecasts are statistically post-processed to correct errors.Traditionally, uncertainties in the forecasts
+  are captured by creating an ensemble of deterministic predictions with variations in the initial conditions
+  and the NWP model.In this study, we developed a post-processing system to correct weather forecasting
+  errors relative to observations and to produce probabilistic ensembles.Our system uses machine learning
+  to generate more accurate deterministic and probabilistic weather forecasts.The post-processing system
+  is cheap, fast, and deployed operationally.'
+significance: 5
+cited_by: 1
+score: 40
+highlight: false
+added: '2026-10-22'
+source: backfill

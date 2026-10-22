@@ -1,0 +1,66 @@
+id: arxiv-2305.11910
+title: Machine Learning and VIIRS Satellite Retrievals for Skillful Fuel Moisture Content Monitoring in
+  Wildfire Management
+authors:
+- John S. Schreck
+- William Petzke
+- Pedro A. Jimenez
+- Thomas Brummet
+- Jason C. Knievel
+- Eric James
+- Branko Kosovic
+- David John Gagne
+date: '2023-05-17'
+year: 2023
+venue: Remote Sensing
+venue_type: journal
+ids:
+  arxiv: '2305.11910'
+  doi: 10.3390/rs15133372
+  openalex: W4382941193
+links:
+  paper: https://doi.org/10.3390/rs15133372
+  pdf: https://arxiv.org/pdf/2305.11910
+orgs:
+- ncar
+- noaa
+topic: extremes-hazards
+topics:
+- observations-remote-sensing
+type: application
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- regional
+data:
+- satellite
+- nwp-analysis
+status: research
+summary: ML models using VIIRS retrievals and HRRR variables estimate dead fuel moisture content over
+  CONUS, outperforming climatology by 24% in hourly RMSE and beating MODIS-based models.
+abstract: Monitoring the fuel moisture content (FMC) of vegetation is crucial for managing and mitigating
+  the impact of wildland fires. The combination of in situ FMC observations with numerical weather prediction
+  (NWP) models and satellite retrievals has enabled the development of machine learning (ML) models to
+  estimate dead FMC retrievals over the contiguous US (CONUS). In this study, ML models were trained using
+  variables from the National Water Model and the High-Resolution Rapid Refresh (HRRR) NWP models, and
+  static variables characterizing the surface properties, as well as surface reflectances and land surface
+  temperature (LST) retrievals from the VIIRS instrument on board the Suomi-NPP satellite system. Extensive
+  hyper-parameter optimization yielded skillful FMC models compared to a daily climatography RMSE (+44\%)
+  and to an hourly climatography RMSE (+24\%). Furthermore, VIIRS retrievals were important predictors
+  for estimating FMC, contributing significantly as a group due to their high band-correlation. In contrast,
+  individual predictors in the HRRR group had relatively high importance according to the explainability
+  techniques used. When both HRRR and VIIRS retrievals were not used as model inputs, the performance
+  dropped significantly. If VIIRS retrievals were not used, the RMSE performance was worse. This highlights
+  the importance of VIIRS retrievals in modeling FMC, which yielded better models compared to MODIS. Overall,
+  the importance of the VIIRS group of predictors corroborates the dynamic relationship between the 10-h
+  fuel and the atmosphere and soil moisture. These findings emphasize the significance of selecting appropriate
+  data sources for predicting FMC with ML models, with VIIRS retrievals and selected HRRR variables being
+  critical components in producing skillful FMC estimates.
+significance: 3
+cited_by: 15
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

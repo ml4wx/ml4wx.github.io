@@ -1,0 +1,55 @@
+id: arxiv-2307.06840
+title: Ensemble learning for blending gridded satellite and gauge-measured precipitation data
+authors:
+- Georgia Papacharalampous
+- Hristos Tyralis
+- Nikolaos Doulamis
+- Anastasios Doulamis
+date: '2023-07-09'
+year: 2023
+venue: Remote Sensing 15 (2023) 4912
+venue_type: journal
+ids:
+  arxiv: '2307.06840'
+  doi: 10.3390/rs15204912
+links:
+  paper: https://arxiv.org/abs/2307.06840
+  pdf: https://arxiv.org/pdf/2307.06840
+topic: observations-remote-sensing
+topics:
+- post-processing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- stations
+status: research
+summary: Proposes eleven stacking and ensemble learners that blend PERSIANN and IMERG satellite precipitation
+  with gauge data over CONUS, improving monthly accuracy.
+abstract: Regression algorithms are regularly used for improving the accuracy of satellite precipitation
+  products. In this context, satellite precipitation and topography data are the predictor variables,
+  and gauged-measured precipitation data are the dependent variables. Alongside this, it is increasingly
+  recognised in many fields that combinations of algorithms through ensemble learning can lead to substantial
+  predictive performance improvements. Still, a sufficient number of ensemble learners for improving the
+  accuracy of satellite precipitation products and their large-scale comparison are currently missing
+  from the literature. In this study, we work towards filling in this specific gap by proposing 11 new
+  ensemble learners in the field and by extensively comparing them. We apply the ensemble learners to
+  monthly data from the PERSIANN (Precipitation Estimation from Remotely Sensed Information using Artificial
+  Neural Networks) and IMERG (Integrated Multi-satellitE Retrievals for GPM) gridded datasets that span
+  over a 15-year period and over the entire the contiguous United States (CONUS). We also use gauge-measured
+  precipitation data from the Global Historical Climatology Network monthly database, version 2 (GHCNm).
+  The ensemble learners combine the predictions of six machine learning regression algorithms (base learners),
+  namely the multivariate adaptive regression splines (MARS), multivariate adaptive polynomial splines
+  (poly-MARS), random forests (RF), gradient boosting machines (GBM), extreme gradient boosting (XGBoost)
+  and Bayesian regularized neural networks (BRNN), and each of them is based on a different combiner.
+  The combiners include the equal-weight combiner, the median combiner, two best learners and seven variants
+  of a sophisticated stacking method. The latter stacks a regression algorithm on top of the base learners
+  to combine their independent predictions...
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

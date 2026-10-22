@@ -1,0 +1,48 @@
+id: arxiv-2309.09024
+title: 'Explainable Offline-Online Training of Neural Networks for Parameterizations: A 1D Gravity Wave-QBO
+  Testbed in the Small-data Regime'
+authors:
+- Hamid A. Pahlavan
+- Pedram Hassanzadeh
+- M. Joan Alexander
+date: '2023-09-16'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2309.09024'
+  doi: 10.1029/2023gl106324
+links:
+  paper: https://arxiv.org/abs/2309.09024
+  pdf: https://arxiv.org/pdf/2309.09024
+topic: hybrid-parameterization
+topics:
+- xai-uq-physics
+type: model
+method:
+- cnn
+- physics-constrained
+timescale:
+- climate
+spatial:
+- local
+data:
+- other
+status: research
+summary: Online re-training of two layers of a gravity-wave CNN via ensemble Kalman inversion yields realistic
+  QBOs in a 1D model when offline small-data training fails.
+abstract: There are different strategies for training neural networks (NNs) as subgrid-scale parameterizations.
+  Here, we use a 1D model of the quasi-biennial oscillation (QBO) and gravity wave (GW) parameterizations
+  as testbeds. A 12-layer convolutional NN that predicts GW forcings for given wind profiles, when trained
+  offline in a big-data regime (100-years), produces realistic QBOs once coupled to the 1D model. In contrast,
+  offline training of this NN in a small-data regime (18-months) yields unrealistic QBOs. However, online
+  re-training of just two layers of this NN using ensemble Kalman inversion and only time-averaged QBO
+  statistics leads to parameterizations that yield realistic QBOs. Fourier analysis of these three NNs'
+  kernels suggests why/how re-training works and reveals that these NNs primarily learn low-pass, high-pass,
+  and a combination of band-pass filters, consistent with the importance of both local and non-local dynamics
+  in GW propagation/dissipation. These findings/strategies apply to data-driven parameterizations of other
+  climate processes generally.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

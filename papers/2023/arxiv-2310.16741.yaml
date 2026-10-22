@@ -1,0 +1,50 @@
+id: arxiv-2310.16741
+title: 'Stochastic Latent Transformer: Efficient Modelling of Stochastically Forced Zonal Jets'
+authors:
+- Ira J. S. Shokar
+- Rich R. Kerswell
+- Peter H. Haynes
+date: '2023-10-25'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2310.16741'
+  doi: 10.1029/2023ms004177
+links:
+  paper: https://arxiv.org/abs/2310.16741
+  pdf: https://arxiv.org/pdf/2310.16741
+topic: climate-emulation
+topics:
+- hybrid-parameterization
+type: model
+method:
+- transformer
+- gan-vae
+timescale:
+- climate
+spatial:
+- global
+data:
+- other
+status: research
+summary: A stochastic latent transformer emulates a stochastically forced zonal jet model with CRPS training,
+  giving a five-order-of-magnitude speedup for large ensemble generation.
+abstract: We present a novel probabilistic deep learning approach, the 'Stochastic Latent Transformer'
+  (SLT), designed for the efficient reduced-order modelling of stochastic partial differential equations.
+  Stochastically driven flow models are pertinent to a diverse range of natural phenomena, including jets
+  on giant planets, ocean circulation, and the variability of midlatitude weather. However, much of the
+  recent progress in deep learning has predominantly focused on deterministic systems. The SLT comprises
+  a stochastically-forced transformer paired with a translation-equivariant autoencoder, trained towards
+  the Continuous Ranked Probability Score. We showcase its effectiveness by applying it to a well-researched
+  zonal jet system, where the interaction between stochastically forced eddies and the zonal mean flow
+  results in a rich low-frequency variability. The SLT accurately reproduces system dynamics across various
+  integration periods, validated through quantitative diagnostics that include spectral properties and
+  the rate of transitions between distinct states. The SLT achieves a five-order-of-magnitude speedup
+  in emulating the zonally-averaged flow compared to direct numerical simulations. This acceleration facilitates
+  the cost-effective generation of large ensembles, enabling the exploration of statistical questions
+  concerning the probabilities of spontaneous transition events.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

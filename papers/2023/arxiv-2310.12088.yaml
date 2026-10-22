@@ -1,0 +1,53 @@
+id: arxiv-2310.12088
+title: Improving probabilistic wind speed forecasting using M-Rice distribution and spatial data integration
+authors:
+- Roberta Baggio
+- Jean-François Muzy
+date: '2023-10-18'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2310.12088'
+links:
+  paper: https://arxiv.org/abs/2310.12088
+  pdf: https://arxiv.org/pdf/2310.12088
+topic: local-forecasting
+topics:
+- post-processing
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+- era5
+status: research
+summary: A neural network predicts parametric wind speed distributions, with the M-Rice distribution outperforming
+  alternatives and ERA5 neighbour data improving 6-hour station forecasts.
+abstract: We consider the problem of short-term forecasting of surface wind speed probability distribution.
+  Our approach consists in predicting the parameters of a given probability density function by training
+  a neural network model whose loss function is the corresponding log-likelihood. We compare different
+  possibilities among a set of distributions that have been previously considered in the context of modeling
+  wind fluctuations. Our results rely on two wind datasets recorded respectively by Météo-France in Corsica
+  (South France) and by KNMI over the Netherlands. A first part of our work globally unveils the superiority
+  of the so-called "Multifractal Rice" (M-Rice) distribution over alternative parametric models, showcasing
+  its potential as a reliable tool for wind speed forecasting. This family ofdistributions relies on a
+  random cascade model model for wind speeds along the same picture as fully developed turbulence. For
+  all stations in both regions, it consistently provides better results regardless of the considered scoring
+  rule or forecasting horizon. Our second findings demonstrate significant enhancements in forecasting
+  accuracy when one incorporates wind speed data from proximate weather stations, in full agreement with
+  former results for point-wise wind speed prediction. Moreover, we reveal that the incorporation of ERA5
+  reanalysis of 10 m wind data from neighboring grid points contributes to a substantial improvement mostly
+  at longest time horizons ($h=6$ h). It turns out that accounting for pertinent explanatory factors,
+  notably those related the spatial distribution and wind speed and direction, emerges as a more critical
+  factor in enhancing accuracy than the choice of the "optimal" parametric distribution. We also find
+  out that such explanatory factors mainly increases the resolution performances while it does not change
+  the reliability contribution to the CRPS score.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,58 @@
+id: doi-10.3390-rs15123138
+title: Weather Radar Echo Extrapolation with Dynamic Weight Loss
+authors:
+- Yonghong Zhang
+- Sutong Geng
+- Wei Tian
+- Guangyi Ma
+- Huajun Zhao
+- Donglin Xie
+- Huanyu Lu
+- Kenny Thiam Choy Lim Kam Sian
+date: '2023-06-15'
+year: 2023
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs15123138
+  openalex: W4380882504
+links:
+  paper: https://doi.org/10.3390/rs15123138
+  pdf: https://www.mdpi.com/2072-4292/15/12/3138/pdf?version=1686842524
+orgs:
+- nuist
+topic: nowcasting
+type: model
+method:
+- rnn
+- physics-constrained
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Dynamic weight loss function added to ConvLSTM, ConvGRU, PredRNN and PredRNN++ reduces radar
+  echo extrapolation MAE by up to 14.8% over 1 hour.
+abstract: Precipitation nowcasting is an important tool for economic and social services, especially for
+  forecasting severe weather. The crucial and challenging part of radar echo image prediction is the focus
+  of radar-based precipitation nowcasting. Recently, a number of deep learning models have been designed
+  to solve the problem of extrapolating radar images. Although these methods can generate better results
+  than traditional extrapolation methods, the issue of error accumulation in precipitation forecasting
+  is exacerbated by using only the mean square error (MSE) and mean absolute error (MAE) as loss functions.
+  In this paper, we approach the problem from the perspective of the loss function and propose dynamic
+  weight loss (DWL), a simple but effective loss function for radar echo extrapolation. The method adds
+  model self-adjusted dynamic weights to the weighted loss function and structural similarity index measures.
+  Radar echo extrapolation experiments are performed on four models, ConvLSTM, ConvGRU, PredRNN, and PredRNN++.
+  Radar reflectivity is predicted using Nanjing University C-band Polarimetric (NJU-CPOL) weather radar
+  data. The quantitative statistics show that using the DWL method reduces the MAE of the four models
+  by up to 10.61%, 5.31%, 14.8%, and 13.63%, respectively, over a 1 h prediction period. The results show
+  that the DWL approach is effective in reducing the accumulation of errors over time, improving the predictive
+  performance of currently popular deep learning models.
+significance: 3
+cited_by: 11
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

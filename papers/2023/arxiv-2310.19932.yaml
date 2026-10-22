@@ -1,0 +1,56 @@
+id: arxiv-2310.19932
+title: Sim2Real for Environmental Neural Processes
+authors:
+- Jonas Scholz
+- Tom R. Andersson
+- Anna Vaughan
+- James Requeima
+- Richard E. Turner
+date: '2023-10-30'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2310.19932'
+  openalex: W4388183375
+links:
+  paper: https://arxiv.org/abs/2310.19932
+  pdf: https://arxiv.org/pdf/2310.19932
+orgs:
+- microsoft-research
+- university-of-cambridge
+topic: observations-remote-sensing
+topics:
+- benchmarks-data-eval
+type: model
+method:
+- cnn
+- other
+spatial:
+- regional
+- local
+data:
+- era5
+- stations
+status: research
+summary: Sim2Real pre-trains a ConvCNP on reanalysis and fine-tunes on German weather stations, outperforming
+  reanalysis-only or station-only training for surface air temperature interpolation.
+abstract: 'Machine learning (ML)-based weather models have recently undergone rapid improvements. These
+  models are typically trained on gridded reanalysis data from numerical data assimilation systems. However,
+  reanalysis data comes with limitations, such as assumptions about physical laws and low spatiotemporal
+  resolution. The gap between reanalysis and reality has sparked growing interest in training ML models
+  directly on observations such as weather stations. Modelling scattered and sparse environmental observations
+  requires scalable and flexible ML architectures, one of which is the convolutional conditional neural
+  process (ConvCNP). ConvCNPs can learn to condition on both gridded and off-the-grid context data to
+  make uncertainty-aware predictions at target locations. However, the sparsity of real observations presents
+  a challenge for data-hungry deep learning models like the ConvCNP. One potential solution is ''Sim2Real'':
+  pre-training on reanalysis and fine-tuning on observational data. We analyse Sim2Real with a ConvCNP
+  trained to interpolate surface air temperature over Germany, using varying numbers of weather stations
+  for fine-tuning. On held-out weather stations, Sim2Real training substantially outperforms the same
+  model architecture trained only with reanalysis data or only with station data, showing that reanalysis
+  data can serve as a stepping stone for learning from real observations. Sim2Real could thus enable more
+  accurate models for weather prediction and climate monitoring.'
+significance: 3
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

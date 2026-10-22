@@ -1,0 +1,60 @@
+id: doi-10.3390-rs15184447
+title: Statistical Downscaling of SEVIRI Land Surface Temperature to WRF Near-Surface Air Temperature
+  Using a Deep Learning Model
+authors:
+- Afshin Afshari
+- Julian Vogel
+- Ganesh Chockalingam
+date: '2023-09-09'
+year: 2023
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs15184447
+  openalex: W4386602211
+links:
+  paper: https://doi.org/10.3390/rs15184447
+  pdf: https://www.mdpi.com/2072-4292/15/18/4447/pdf?version=1694405898
+topic: downscaling
+topics:
+- observations-remote-sensing
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+- km-scale-sim
+status: research
+summary: A 3D-convolution U-Net downscales SEVIRI land surface temperature to hourly 1 km WRF air temperature,
+  with MAE 1.36 °C versus 1.49 °C for ridge regression.
+abstract: The analysis of the near-surface air temperature is vital for many applications such as urban
+  heat islands and climate change studies. In particular, extreme weather events are typically localized
+  and so should the corresponding adaptation measures. However, climate scientists are often confronted
+  with the difficulty of providing reliable predictions at high spatial resolutions in the order of 1
+  km. We propose to train a convolutional neural network model to emulate the hourly high-resolution near-surface
+  air temperature field simulated by the Weather Research and Forecasting (WRF) software over a period
+  of 18 months. The model is driven by current and past lags of coarse SEVIRI land surface temperature
+  fields. This nowcasting application implements a downscaling of the spatial resolution of the input
+  by about a factor of four, while establishing a correlation between current and past land surface temperature
+  maps and the current near-surface air temperature field. The U-Net variant that is proposed in this
+  study uses regularization to prevent over-fitting and implements a novel space-time approach, where
+  multiple time steps are fed into the model through 3D convolution layers. Besides LST, the model also
+  uses urban density as additional static input to be able to predict the temperature more accurately
+  in urban areas and to improve the generalizability of the trained model. The performance of our U-Net
+  model is assessed via comparison to an MLR benchmark (ridge regularization). The model is shown to be
+  superior on all performance metrics. It achieves a mean absolute error of 1.36 °C versus 1.49 °C for
+  benchmark (a 9% relative improvement) and a root mean square error of 1.77 °C versus 1.91 °C for benchmark
+  (a 7% relative improvement). The absolute error of the model is less than 2 °C for 77% of the prediction
+  points versus 72% for the benchmark (a 7% relative improvement). The improvement over the benchmark
+  is even more significant during extreme hot periods. We demonstrate the generalizability of the approach
+  by testing the trained model on unseen spatial domains.
+significance: 3
+cited_by: 15
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

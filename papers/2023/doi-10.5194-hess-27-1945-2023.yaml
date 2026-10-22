@@ -1,0 +1,61 @@
+id: doi-10.5194-hess-27-1945-2023
+title: Statistical post-processing of precipitation forecasts using circulation classifications and spatiotemporal
+  deep neural networks
+authors:
+- Tuantuan Zhang
+- Zhongmin Liang
+- Wentao Li
+- Jun Wang
+- Yiming Hu
+- Binquan Li
+date: '2023-05-22'
+year: 2023
+venue: Hydrology and earth system sciences
+venue_type: journal
+ids:
+  doi: 10.5194/hess-27-1945-2023
+  openalex: W4377238657
+links:
+  paper: https://doi.org/10.5194/hess-27-1945-2023
+  pdf: https://hess.copernicus.org/articles/27/1945/2023/hess-27-1945-2023.pdf
+topic: post-processing
+topics:
+- extremes-hazards
+type: model
+method:
+- cnn
+- rnn
+- classical-ml
+timescale:
+- medium
+spatial:
+- regional
+data:
+- nwp-analysis
+- era5
+status: research
+summary: SOM-CNN-LSTM post-processing of 15-day precipitation forecasts in the Huaihe basin improves correlation
+  by up to 32.3% and reduces RMSE by 26.6%.
+abstract: Abstract. Statistical post-processing techniques are widely used to reduce systematic biases
+  and quantify forecast uncertainty in numerical weather prediction (NWP). In this study, we propose a
+  method to correct the raw daily forecast precipitation by combining large-scale circulation patterns
+  with local spatiotemporal information such as topography and meteorological factors. Particularly, we
+  first use the self-organizing map (SOM) model to classify large-scale circulation patterns for each
+  season, then build the convolutional neural network (CNN) model to extract spatial information (e.g.,
+  elevation, specific humidity, and mean sea level pressure) and long short-term memory network (LSTM)
+  model to extract time series (e.g., t, t-1, t-2), and finally correct local precipitation for each circulation
+  pattern separately. Furthermore, the proposed method (SOM-CNN-LSTM) is compared with other benchmark
+  methods (i.e., CNN, LSTM, and CNN-LSTM) in the Huaihe River basin with a lead time of 15 days from 2007
+  to 2021. The results show that the proposed SOM-CNN-LSTM post-processing method outperforms other benchmark
+  methods for all lead times and each season with the largest correlation coefficient improvement (32.30
+  %) and root mean square error reduction (26.58 %). Moreover, the proposed method can effectively capture
+  the westward and northward movement of the western Pacific subtropical high (WPSH), which impacts the
+  basin's summer rain. The results illustrate that incorporating large-scale circulation patterns with
+  local spatiotemporal information is a feasible and effective post-processing method to improve forecasting
+  skills, which would benefit hydrological forecasts and other applications.
+significance: 3
+cited_by: 27
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,61 @@
+id: doi-10.5194-gmd-16-5895-2023
+title: Key factors for quantitative precipitation nowcasting using ground weather radar data based on
+  deep learning
+authors:
+- Daehyeon Han
+- Jungho Im
+- Yeji Shin
+- Juhyun Lee
+date: '2023-10-20'
+year: 2023
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-16-5895-2023
+  openalex: W4387817337
+links:
+  paper: https://doi.org/10.5194/gmd-16-5895-2023
+  pdf: https://gmd.copernicus.org/articles/16/5895/2023/gmd-16-5895-2023.pdf
+orgs:
+- kma
+topic: nowcasting
+type: evaluation
+method:
+- cnn
+- rnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Tests 24 schemes for deep-learning radar nowcasting in South Korea, finding U-Net beats ConvLSTM
+  and balanced MSE loss helps heavy rain.
+abstract: Abstract. Quantitative precipitation nowcasting (QPN) can help to reduce the enormous socioeconomic
+  damage caused by extreme weather. The QPN has been a challenging topic due to rapid atmospheric variability.
+  Recent QPN studies have proposed data-driven models using deep learning (DL) and ground weather radar.
+  Previous studies have primarily focused on developing DL models, but other factors for DL-QPN have not
+  been thoroughly investigated. This study examined four critical factors in DL-QPN, focusing on their
+  impact on forecasting performance. These factors are the deep learning model (U-Net, as well as a convolutional
+  long short-term memory, or ConvLSTM), input past sequence length (1, 2, or 3 h), loss function (mean
+  squared error, MSE, or balanced MSE, BMSE), and ensemble aggregation. A total of 24 schemes were designed
+  to measure the effects of each factor using weather radar data from South Korea with a maximum lead
+  time of 2 h. A long-term evaluation was conducted for the summers of 2020–2022 from an operational perspective,
+  and a heavy rainfall event was analyzed to examine an extreme case. In both evaluations, U-Net outperformed
+  ConvLSTM in overall accuracy metrics. For the critical success index (CSI), MSE loss yielded better
+  results for both models in the weak intensity range (≤ 5 mm h−1), whereas BMSE loss was more effective
+  for heavier precipitation. There was a small trend where a longer input time (3 h) gave better results
+  in terms of MSE and BMSE, but this effect was less significant than other factors. The ensemble by averaging
+  results of using MSE and BMSE losses provided balanced performance across all aspects, suggesting a
+  potential strategy to improve skill scores when implemented with optimal weights for each member. All
+  DL-QPN schemes exhibited problems with underestimation and overestimation when trained by MSE and BMSE
+  losses, respectively. All DL models produced blurry results as the lead time increased, while the non-DL
+  model retained detail in prediction. With a comprehensive comparison of these crucial factors, this
+  study offers a modeling strategy for future DL-QPN work using weather radar data.
+significance: 3
+cited_by: 19
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

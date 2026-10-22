@@ -1,0 +1,53 @@
+id: doi-10.1029-2022ms003475
+title: Detection and Attribution of Climate Change Using a Neural Network
+authors:
+- Constantin Bône
+- Guillaume Gastineau
+- Sylvie Thiria
+- Patrick Gallinari
+- Carlos Mejía
+date: '2023-10-01'
+year: 2023
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2022ms003475
+  openalex: W4387579482
+links:
+  paper: https://doi.org/10.1029/2022ms003475
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2022MS003475
+topic: climate-analysis-attribution
+topics:
+- xai-uq-physics
+type: model
+method:
+- cnn
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: CNN-based backward optimization attributes 1900-2014 global temperature change to forcings without
+  assuming additivity, with uncertainty estimates compared to regularized optimal fingerprinting.
+abstract: A new detection and attribution method is presented and applied to the global mean surface air
+  temperature (GSAT) from 1900 to 2014. The method aims at attributing the climate changes to the variations
+  of greenhouse gases, anthropogenic aerosols, and natural forcings. A convolutional neural network (CNN)
+  is trained using the simulated GSAT from historical and single-forcing simulations of twelve climate
+  models. Then, we perform a backward optimization with the CNN to estimate the attributable GSAT changes.
+  Such a method does not assume additivity in the effects of the forcings. The uncertainty in the attributable
+  GSAT is estimated by sampling different starting points from single-forcing simulations and repeating
+  the backward optimization. To evaluate this new method, the attributable GSAT changes are also calculated
+  using the regularized optimal fingerprinting (ROF) method. Using synthetic non-additive data, we first
+  find that the neural network-based method estimates attribuable changes better than ROF. When using
+  GSAT data from climate model, the attribuable anomalies are similar for both methods, which might reflect
+  that the influence of forcing is mainy additive for the GSAT. However, we found that the uncertainties
+  given both methods are different. The new method presented here can be adapted and extended in future
+  work, to investigate the non-additive changes found at the local scale or on other physical variables.
+significance: 4
+cited_by: 11
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

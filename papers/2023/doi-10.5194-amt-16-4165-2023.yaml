@@ -1,0 +1,58 @@
+id: doi-10.5194-amt-16-4165-2023
+title: 'Retrieval of surface solar irradiance from satellite imagery using machine learning: pitfalls
+  and perspectives'
+authors:
+- Hadrien Verbois
+- Yves‐Marie Saint‐Drenan
+- Vadim Becquet
+- Benoît Gschwind
+- Philippe Blanc
+date: '2023-09-19'
+year: 2023
+venue: Atmospheric measurement techniques
+venue_type: journal
+ids:
+  doi: 10.5194/amt-16-4165-2023
+  openalex: W4386849793
+links:
+  paper: https://doi.org/10.5194/amt-16-4165-2023
+  pdf: https://amt.copernicus.org/articles/16/4165/2023/amt-16-4165-2023.pdf
+topic: observations-remote-sensing
+topics:
+- benchmarks-data-eval
+type: evaluation
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- stations
+status: research
+summary: MLP retrieval of surface solar irradiance from MSG imagery can beat a physical method but depends
+  strongly on training-set similarity, highlighting pitfalls.
+abstract: Abstract. Knowledge of the solar surface irradiance (SSI) spatial and temporal characteristics
+  is critical in many domains, the first of which is likely solar energy. While meteorological ground
+  stations can provide accurate measurements of SSI locally, they are sparsely distributed worldwide.
+  SSI estimations derived from satellite imagery are thus crucial to gain a finer understanding of the
+  solar resource. To infer SSI from satellite images is, however, not straightforward and it has been
+  the focus of many researchers in the past thirty to forty years. For long, the emphasis has been on
+  empirical models (simple parameterization linking the reflectance to the clear-sky index) and on physical
+  models. Recently, new satellite SSI retrieval methods are emerging, which directly infer the SSI from
+  the satellite images using machine learning. Although only a few such works have been published, their
+  practical efficiency has already been questioned. The objective of this paper is to better understand
+  the potential and the pitfalls of this new coming family of methods. To do so, simple multi-layer-perceptron
+  (MLP) models are constructed with different training datasets of satellite-based radiance measurements
+  from Meteosat Second Generation (MSG) with collocated SSI ground measurements from Meteo-France. The
+  performance of the models is evaluated on a test dataset independent from the training set both in space
+  and time. We found that the data-driven model’s performance is very dependent on the training set. On
+  the one hand, even a simple MLP can significantly outperform a state-of-the-art physical retrieval method,
+  provided the training set is sufficiently large and similar enough to the test set. On the other hand,
+  in certain configurations, the data-driven model can dramatically underperform even in stations located
+  close to the training set.
+significance: 3
+cited_by: 15
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

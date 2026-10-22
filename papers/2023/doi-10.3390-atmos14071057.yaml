@@ -1,0 +1,49 @@
+id: doi-10.3390-atmos14071057
+title: Comparison of Bias Correction Methods for Summertime Daily Rainfall in South Korea Using Quantile
+  Mapping and Machine Learning Model
+authors:
+- Ga‐Yeong Seo
+- Joong‐Bae Ahn
+date: '2023-06-21'
+year: 2023
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos14071057
+  openalex: W4381687522
+links:
+  paper: https://doi.org/10.3390/atmos14071057
+  pdf: https://www.mdpi.com/2073-4433/14/7/1057/pdf?version=1687763892
+topic: post-processing
+type: evaluation
+method:
+- rnn
+spatial:
+- regional
+data:
+- era5
+- other
+status: research
+summary: Compares quantile mapping with an LSTM bias correction of WRF summer rainfall over South Korea;
+  LSTM best tracks interannual variability, but underestimates rain above 50 mm/day.
+abstract: 'This study compares the bias correction techniques of empirical quantile mapping (QM) and the
+  Long Short-Term Memory (LSTM) machine learning model for summertime daily rainfall simulation focusing
+  on precipitation-dependent bias and temporal variation. Numerical experiments using Weather Research
+  and Forecasting (WRF) were conducted over South Korea with lateral boundary conditions of ERA5 reanalysis
+  data. For the spatial distribution of mean summertime rainfall, the bias-uncorrected WRF simulation
+  (WRF_RAW) showed dry bias for most of the region of South Korea. The WRF results corrected by QM and
+  LSTM (WRF_QM and WRF_LSTM, respectively) were improved for the mean summer rainfall simulation with
+  the root mean square error values of 0.17 and 0.69, respectively, which were smaller than those of the
+  WRF_RAW (1.10). Although the WRF_QM performed better than the WRF_LSTM in terms of the summertime mean
+  and monthly precipitation, the WRF_LSTM presented a closer interannual rainfall variation to the observation
+  than the WRF_QM. The coefficient of determination for calendar-day mean rainfall was the highest in
+  the following order: the WRF_LSTM (0.451), WRF_QM (0.230), and WRF_RAW (0.201). However, the WRF_LSTM
+  had a limitation in reproducing extreme rainfall exceeding 50 mm/day due to the few cases of extreme
+  precipitation in training data. Nevertheless, the WRF_LSTM better simulated the observed light-to-moderate
+  precipitation (10–50 mm/day) than the others.'
+significance: 3
+cited_by: 33
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

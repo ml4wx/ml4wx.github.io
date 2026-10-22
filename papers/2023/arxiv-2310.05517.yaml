@@ -1,0 +1,47 @@
+id: arxiv-2310.05517
+title: 'WeatherGNN: Exploiting Meteo- and Spatial-Dependencies for Local Numerical Weather Prediction
+  Bias-Correction'
+authors:
+- Binqing Wu
+- Weiqi Chen
+- Wengwei Wang
+- Bingqing Peng
+- Liang Sun
+- Ling Chen
+date: '2023-10-09'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2310.05517'
+links:
+  paper: https://arxiv.org/abs/2310.05517
+  pdf: https://arxiv.org/pdf/2310.05517
+topic: post-processing
+type: model
+method:
+- gnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: GNN-based local bias correction of NWP forecasts exploits meteorological and spatial dependencies,
+  improving RMSE by 4.75% over the best baseline.
+abstract: Due to insufficient local area information, numerical weather prediction (NWP) may yield biases
+  for specific areas. Previous studies correct biases mainly by employing handcrafted features or applying
+  data-driven methods intuitively, overlooking the complicated dependencies between weather factors and
+  between areas. To address this issue, we propose WeatherGNN, a local NWP bias-correction method that
+  utilizes Graph Neural Networks (GNNs) to exploit meteorological dependencies and spatial dependencies
+  under the guidance of domain knowledge. Specifically, we introduce a factor GNN to capture area-specific
+  meteorological dependencies adaptively based on spatial heterogeneity and a fast hierarchical GNN to
+  capture dynamic spatial dependencies efficiently guided by Tobler's first and second laws of geography.
+  Our experimental results on two real-world datasets demonstrate that WeatherGNN achieves the state-of-the-art
+  performance, outperforming the best baseline with an average of 4.75 \% on RMSE.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

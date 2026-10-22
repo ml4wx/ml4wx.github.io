@@ -1,0 +1,54 @@
+id: doi-10.3390-s23167047
+title: Informer-Based Temperature Prediction Using Observed and Numerical Weather Prediction Data
+authors:
+- Jimin Jun
+- Hong Kook Kim
+date: '2023-08-09'
+year: 2023
+venue: Sensors
+venue_type: journal
+ids:
+  doi: 10.3390/s23167047
+  openalex: W4385697379
+links:
+  paper: https://doi.org/10.3390/s23167047
+  pdf: https://www.mdpi.com/1424-8220/23/16/7047/pdf?version=1691574221
+topic: local-forecasting
+type: model
+method:
+- transformer
+timescale:
+- short
+- medium
+spatial:
+- local
+data:
+- stations
+- nwp-analysis
+status: research
+summary: Informer transformer fuses station observations with LDAPS NWP for 6–336 h temperature forecasts,
+  lowering RMSE by 0.25 °C versus CNN-BLSTM.
+abstract: This paper proposes an Informer-based temperature prediction model to leverage data from an
+  automatic weather station (AWS) and a local data assimilation and prediction system (LDAPS), where the
+  Informer as a variant of a Transformer was developed to better deal with time series data. Recently,
+  deep-learning-based temperature prediction models have been proposed, demonstrating successful performances,
+  such as conventional neural network (CNN)-based models, bi-directional long short-term memory (BLSTM)-based
+  models, and a combination of both neural networks, CNN-BLSTM. However, these models have encountered
+  issues due to the lack of time data integration during the training phase, which also lead to the persistence
+  of a long-term dependency problem in the LSTM models. These limitations have culminated in a performance
+  deterioration when the prediction time length was extended. To overcome these issues, the proposed model
+  first incorporates time-periodic information into the learning process by generating time-periodic information
+  and inputting it into the model. Second, the proposed model replaces the LSTM with an Informer as an
+  alternative to mitigating the long-term dependency problem. Third, a series of fusion operations between
+  AWS and LDAPS data are executed to examine the effect of each dataset on the temperature prediction
+  performance. The performance of the proposed temperature prediction model is evaluated via objective
+  measures, including the root-mean-square error (RMSE) and mean absolute error (MAE) over different timeframes,
+  ranging from 6 to 336 h. The experiments showed that the proposed model relatively reduced the average
+  RMSE and MAE by 0.25 °C and 0.203 °C, respectively, compared with the results of the CNN-BLSTM-based
+  model.
+significance: 3
+cited_by: 26
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

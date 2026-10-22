@@ -1,0 +1,53 @@
+id: arxiv-2308.11854
+title: 'Finding the Perfect Fit: Applying Regression Models to ClimateBench v1.0'
+authors:
+- Anmol Chaure
+- Ashok Kumar Behera
+- Sudip Bhattacharya
+date: '2023-08-22'
+year: 2023
+venue: International Journal of Computer Applications 185(29):31-39, August 2023
+venue_type: journal
+ids:
+  arxiv: '2308.11854'
+  doi: 10.5120/ijca2023923042
+  openalex: W4386135165
+links:
+  paper: https://arxiv.org/abs/2308.11854
+  pdf: https://arxiv.org/pdf/2308.11854
+topic: climate-emulation
+topics:
+- benchmarks-data-eval
+type: evaluation
+method:
+- classical-ml
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: Evaluates Gaussian process, SVR and kernel ridge regression emulators on ClimateBench; GP performs
+  best but is computationally expensive.
+abstract: Climate projections using data driven machine learning models acting as emulators, is one of
+  the prevailing areas of research to enable policy makers make informed decisions. Use of machine learning
+  emulators as surrogates for computationally heavy GCM simulators reduces time and carbon footprints.
+  In this direction, ClimateBench [1] is a recently curated benchmarking dataset for evaluating the performance
+  of machine learning emulators designed for climate data. Recent studies have reported that despite being
+  considered fundamental, regression models offer several advantages pertaining to climate emulations.
+  In particular, by leveraging the kernel trick, regression models can capture complex relationships and
+  improve their predictive capabilities. This study focuses on evaluating non-linear regression models
+  using the aforementioned dataset. Specifically, we compare the emulation capabilities of three non-linear
+  regression models. Among them, Gaussian Process Regressor demonstrates the best-in-class performance
+  against standard evaluation metrics used for climate field emulation studies. However, Gaussian Process
+  Regression suffers from being computational resource hungry in terms of space and time complexity. Alternatively,
+  Support Vector and Kernel Ridge models also deliver competitive results and but there are certain trade-offs
+  to be addressed. Additionally, we are actively investigating the performance of composite kernels and
+  techniques such as variational inference to further enhance the performance of the regression models
+  and effectively model complex non-linear patterns, including phenomena like precipitation.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,60 @@
+id: doi-10.1016-j.atmosres.2023.107032
+title: Deep-learning post-processing of short-term station precipitation based on NWP forecasts
+authors:
+- Qi Liu
+- Xiao Lou
+- Zhongwei Yan
+- Yajie Qi
+- Yuchao Jin
+- Shuang Yu
+- Xiaoliang Yang
+- Deming Zhao
+- Jiangjiang Xia
+date: '2023-09-25'
+year: 2023
+venue: Atmospheric Research
+venue_type: journal
+ids:
+  doi: 10.1016/j.atmosres.2023.107032
+  openalex: W4387008172
+links:
+  paper: https://doi.org/10.1016/j.atmosres.2023.107032
+orgs:
+- iap-cas
+- cma
+topic: post-processing
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: research
+summary: CNN post-processing of ECMWF-HRES forecasts at 390 North China stations raises threat scores
+  by up to 296% at high precipitation thresholds.
+abstract: Post-processing methods that rely on fusion-grided forecast products can reduce systematic biases
+  from Numerical Weather Prediction (NWP) precipitation forecasts. However, these methods also limit the
+  capability to forecast precipitation accurately at local stations. We constructed a Station-based Precipitation
+  Post-processing Model (SPPM) that utilizes deep-learning algorithms, predominantly convolutional layers
+  and ResNet modules. Based on 390 meteorological stations in North China and European Centre for Medium-Range
+  Weather Forecasts Highest-resolution (ECMWF-HRES) forecast data, the SPPM utilizes multi-level atmospheric
+  forecast variables and geographic variables in a small area centered on a station as predictors. The
+  results show that the SPPM improved the threat score (TS) by 4.29%, 3.66%, 15.63%, 61.08%, and 295.83%
+  for precipitation thresholds of 0.1, 3.0, 10.0, 20.0, and 50.0 mm/3 h, respectively. We then examined
+  the sensitivity of predictors using the interpretable deep-learning technique Layer-wise Relevance Propagation
+  (LRP). The results indicate that the NWP total precipitation (TP) from ECMWF is the most sensitive and
+  important factor, followed by the low-level (850 hPa) field, single-level field, and geographic variables.
+  Notably, TP becomes increasingly important with larger forecast grades, while the importance of variables
+  at other levels remains relatively constant. The majority of stations exhibit consistent importance
+  rankings as mentioned above. Finally, possible causes of variables' insensitivity at medium-level (500
+  hPa) and high-level (200 hPa) were discussed.
+significance: 3
+cited_by: 36
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

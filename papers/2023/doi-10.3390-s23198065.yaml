@@ -1,0 +1,53 @@
+id: doi-10.3390-s23198065
+title: 'MLAM: Multi-Layer Attention Module for Radar Extrapolation Based on Spatiotemporal Sequence Neural
+  Network'
+authors:
+- Shengchun Wang
+- Tianyang Wang
+- Sihong Wang
+- Zixiong Fang
+- Jingui Huang
+- Zuxi Zhou
+date: '2023-09-25'
+year: 2023
+venue: Sensors
+venue_type: journal
+ids:
+  doi: 10.3390/s23198065
+  openalex: W4387021375
+links:
+  paper: https://doi.org/10.3390/s23198065
+  pdf: https://www.mdpi.com/1424-8220/23/19/8065/pdf?version=1695624654
+topic: nowcasting
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: A multi-layer attention module improves ConvRNN radar echo extrapolation, preserving high-intensity
+  echoes and long-term skill on HKO-7 and HMB radar datasets.
+abstract: Precipitation nowcasting is mainly achieved by the radar echo extrapolation method. Due to the
+  timing characteristics of radar echo extrapolation, convolutional recurrent neural networks (ConvRNNs)
+  have been used to solve the task. Most ConvRNNs have been proven to perform far better than traditional
+  optical flow methods, but they still have fatal problems. These models lack differentiation in the prediction
+  of echoes of different intensities, which leads to the omission of responses from regions with high
+  intensities. Moreover, because it is difficult for these models to capture long-term feature dependencies
+  among multiple echo maps, the extrapolation effect declines sharply over time. This paper proposes an
+  embedded multi-layer attention module (MLAM) to address the shortcomings of ConvRNNs. Specifically,
+  an MLAM mainly enhances attention to critical regions in echo images and the processing of long-term
+  spatiotemporal features through the interaction between input and memory features in the current moment.
+  Comprehensive experiments were conducted on the radar dataset HKO-7 provided by the Hong Kong Observatory
+  and the radar dataset HMB provided by the Hunan Meteorological Bureau. Experiments show that ConvRNNs
+  embedded with MLAMs achieve more advanced results than standard ConvRNNs.
+significance: 3
+cited_by: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,64 @@
+id: doi-10.5194-hess-2023-158
+title: Comparison of four machine learning models for forecasting daily reference evaporation based on
+  public weather forecast data
+authors:
+- Yunfeng Liang
+- Dongpu Feng
+- Zhaojun Sun
+date: '2023-07-31'
+year: 2023
+venue_type: other
+ids:
+  doi: 10.5194/hess-2023-158
+  openalex: W4385417782
+links:
+  paper: https://doi.org/10.5194/hess-2023-158
+topic: applications-impacts
+topics:
+- post-processing
+type: evaluation
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- regional
+data:
+- stations
+- nwp-analysis
+status: research
+summary: Compares four ML models trained on public weather forecasts versus observations for one-day-ahead
+  reference evapotranspiration; forecast-trained models perform better.
+abstract: Abstract. Real-time accurate prediction of daily reference evapotranspiration (ETo) is critical
+  for real-time irrigation decisions and water resource management. Although many public weather forecast-based
+  machine learning models have been successfully used for daily ETo prediction, these models are developed
+  with long-term historical daily observed meteorological data. The use of training and testing samples
+  from different data sources can lead to the selection of the best model, and the performance of the
+  best model for predicting daily ETo is not ideal. In this study, based on Food and Agriculture Organization
+  (FAO) 56 Penman–Monteith (PM) equations, four machine learning models (multilayer perceptron (MLPo),
+  extreme gradient boosting (XGBoosto), light gradient boosting machine (LightGBMo), and gradient boosting
+  with categorical features support (CatBoost1o)) were trained and validated with daily observed meteorological
+  data from 1995–2015 and 2016–2019, respectively, and five machine learning models (MLPp, XGBoostp, LightGBMp,
+  CatBoost1p, and CatBoost2) were trained and validated with daily public weather forecast data with a
+  1-day lead time (2014–2018 and 2019, respectively). Based on public weather forecast and daily observed
+  meteorological data (2020–2021), the predicted daily ETo performance of nine machine learning models
+  (MLPo, XGBoosto, LightGBMo, CatBoost1o, MLPp, XGBoostp, LightGBMp, CatBoost1p, and CatBoost2) was compared.
+  The results show that for all three studied climate zones, the performance of the four models developed
+  based on public weather forecast data with a 1-day advance is better than that of the four models developed
+  based on daily observed meteorological data with corresponding input combinations, and the mean MAE
+  and RMSE ranges for the four models (MLP, XGBoost, LightGBM, and CatBoost1) in the three studied climate
+  zones were reduced by 2.93 %–11.67 % and 2.20 %–9.46 %, respectively, and the mean R range was improved
+  by 1.31 %–5.31 %. The top three models for the AR climate zone were XGBoostp, LightGBMp, and MLPp, the
+  top three models for the SAR climate zone were MLPp, XGBoostp, and LightGBMp, and the top three models
+  for the SHZ climate zone were XGBoostp, MLPp, and LightGBMp. In addition, the prediction performance
+  for daily ETo is found to be highest in winter and lowest in summer in all three climate zones. Wspd
+  from public weather forecasts was the most important source of daily ETo error in model predictions
+  for the AR climate zone, followed by SDun, Tmax, and Tmin, while SDun from public weather forecasts
+  was the most important source of daily ETo error in model predictions for the SAR (SHZ) climate zone,
+  followed by Wspd, Tmax, and Tmin (Tmax, Wspd, and Tmin).
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

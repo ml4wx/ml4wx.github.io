@@ -1,0 +1,54 @@
+id: doi-10.3390-rs15204981
+title: Cloud-to-Ground and Intra-Cloud Nowcasting Lightning Using a Semantic Segmentation Deep Learning
+  Network
+authors:
+- Ling Fan
+- Changhai Zhou
+date: '2023-10-16'
+year: 2023
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs15204981
+  openalex: W4387667840
+links:
+  paper: https://doi.org/10.3390/rs15204981
+  pdf: https://www.mdpi.com/2072-4292/15/20/4981/pdf?version=1697451679
+topic: nowcasting
+topics:
+- extremes-hazards
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- stations
+status: research
+summary: Light3DUnet, a 3D U-Net on radar reflectivity, nowcasts cloud-to-ground and intra-cloud lightning
+  within one hour over central China.
+abstract: Weather forecasting requires a comprehensive analysis of various types of meteorology data,
+  and with the wide application of deep learning in various fields, deep learning has proved to have powerful
+  feature extraction capabilities. In this paper, from the viewpoint of an image semantic segmentation
+  problem, a deep learning framework based on semantic segmentation is proposed to nowcast Cloud-to-Ground
+  and Intra-Cloud lightning simultaneously within an hour. First, a dataset with spatiotemporal features
+  is constructed using radar echo reflectivity data and lightning observation data. More specifically,
+  each sample in the dataset consists of the past half hour of observations. Then, a Light3DUnet is presented
+  based on 3D U-Net. The three-dimensional structured network can extract spatiotemporal features, and
+  the encoder–decoder structure and the skip connection can handle small targets and recover more details.
+  Due to the sparsity of lightning observations, a weighted cross-loss function was used to evaluate network
+  performance. Finally, Light3DUnet was trained using the dataset to predict Cloud-to-Ground and Intra-Cloud
+  lightning in the next hour. We evaluated the prediction performance of the network using a real-world
+  dataset from middle China. The results show that Light3DUnet has a good ability to nowcast IC and CG
+  lightning. Meanwhile, due to the spatial position coupling of IC and CG on a two-dimensional plane,
+  predictions from summing the probabilistic prediction matrices will be augmented to obtain accurate
+  prediction results for total flashes.
+significance: 3
+cited_by: 8
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

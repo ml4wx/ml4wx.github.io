@@ -1,0 +1,58 @@
+id: doi-10.1109-jstars.2023.3322343
+title: Deep Learning for Near-Surface Air Temperature Estimation From FengYun 4A Satellite Data
+authors:
+- Shanmin Yang
+- Ren Qing
+- Ningfang Zhou
+- Yan Zhang
+- Xi Wu
+date: '2023-10-09'
+year: 2023
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2023.3322343
+  openalex: W4387449178
+links:
+  paper: https://doi.org/10.1109/jstars.2023.3322343
+  pdf: https://ieeexplore.ieee.org/ielx7/4609443/4609444/10274655.pdf
+orgs:
+- cma
+topic: observations-remote-sensing
+type: model
+method:
+- transformer
+spatial:
+- regional
+data:
+- satellite
+- era5
+- stations
+status: research
+summary: TaNet, a transformer, estimates near-surface air temperature from FengYun-4A imagery, reaching
+  correlation 0.990 with ERA5 and 0.959 with stations.
+abstract: Near-surface air temperature is a crucial weather parameter that significantly impacts human
+  health and is widely utilized in numerical weather forecasting and climate prediction studies. However,
+  the most common ground-based meteorological station observation and radar observation are often limited
+  by geographic and natural constraints. With the advantages of global coverage and high spatiotemporal
+  resolution, satellite remote sensing has become a valuable support in overcoming data scarcity issues
+  related to ground-based station and radar observations in complex geographic and natural conditions.
+  Although remote sensing indirectly reflects atmosphere variables (e.g., near-surface air temperature),
+  accurately estimating the atmosphere variables through satellite remote sensing remains a significant
+  challenge. This paper introduces a deep learning Transformer-based neural network (TaNet) for near-surface
+  air temperature estimation. TaNet automatically extracts information from imageries captured by China's
+  new-generation geostationary meteorological satellite FengYun-4A and generates grid near-surface air
+  temperature data in near real-time. Extensive experiments conducted using the state-of-the-art operational
+  reanalysis product ERA5 and meteorological station observations as benchmark standards demonstrate the
+  effectiveness and superiority of TaNet. It achieves an impressive Pearson's correlation coefficient
+  (CC) of 0.990 with ERA5 and 0.959 with station observations, outperforming the other products, such
+  as CFSv2, CRA, and U-Net, on root mean square error (RMSE) and CC metrics. TaNet reduces the RMSE of
+  CFSv2, CRA, and U-Net by a margin of 10.551% (2.594${}^{\circ }\mathrm{C}$vs. 2.900${}^{\circ }\mathrm{C}$),
+  2.261% (2.594${}^{\circ }\mathrm{C}$vs. 2.654${}^{\circ }\mathrm{C}$), and 5.535% (2.594${}^{\circ }\mathrm{C}$vs.
+  2.746${}^{\circ }\mathrm{C}$), respectively, using station observations as the benchmark.
+significance: 3
+cited_by: 8
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

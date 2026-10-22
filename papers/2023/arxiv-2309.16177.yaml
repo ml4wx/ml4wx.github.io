@@ -1,0 +1,52 @@
+id: arxiv-2309.16177
+title: 'Navigating the Noise: Bringing Clarity to ML Parameterization Design with O(100) Ensembles'
+authors:
+- Jerry Lin
+- Sungduk Yu
+- Liran Peng
+- Tom Beucler
+- Eliot Wong-Toi
+- Zeyuan Hu
+- Pierre Gentine
+- Margarita Geleta
+- Mike Pritchard
+date: '2023-09-28'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2309.16177'
+links:
+  paper: https://arxiv.org/abs/2309.16177
+  pdf: https://arxiv.org/pdf/2309.16177
+topic: hybrid-parameterization
+type: evaluation
+method:
+- other
+spatial:
+- global
+data:
+- other
+status: research
+summary: Builds a semi-automated pipeline for O(100)-member ensembles of ML subgrid parameterization runs,
+  showing offline error reductions can have opposite effects on online error and stability.
+abstract: Machine-learning (ML) parameterizations of subgrid processes (here of turbulence, convection,
+  and radiation) may one day replace conventional parameterizations by emulating high-resolution physics
+  without the cost of explicit simulation. However, uncertainty about the relationship between offline
+  and online performance (i.e., when integrated with a large-scale general circulation model (GCM)) hinders
+  their development. Much of this uncertainty stems from limited sampling of the noisy, emergent effects
+  of upstream ML design decisions on downstream online hybrid simulation. Our work rectifies the sampling
+  issue via the construction of a semi-automated, end-to-end pipeline for $\mathcal{O}(100)$ size ensembles
+  of hybrid simulations, revealing important nuances in how systematic reductions in offline error manifest
+  in changes to online error and online stability. For example, removing dropout and switching from a
+  Mean Squared Error (MSE) to a Mean Absolute Error (MAE) loss both reduce offline error, but they have
+  opposite effects on online error and online stability. Other design decisions, like incorporating memory,
+  converting moisture input from specific humidity to relative humidity, using batch normalization, and
+  training on multiple climates do not come with any such compromises. Finally, we show that ensemble
+  sizes of $\mathcal{O}(100)$ may be necessary to reliably detect causally relevant differences online.
+  By enabling rapid online experimentation at scale, we can empirically settle debates regarding subgrid
+  ML parameterization design that would have otherwise remained unresolved in the noise.
+significance: 6
+score: 24
+highlight: false
+added: '2026-10-22'
+source: backfill

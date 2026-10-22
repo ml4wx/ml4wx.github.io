@@ -1,0 +1,59 @@
+id: doi-10.3390-w15203650
+title: 'RLNformer: A Rainfall Levels Nowcasting Model Based on Conv1D_Transformer for the Northern Xinjiang
+  Area of China'
+authors:
+- Yulong Liu
+- Shuxian Liu
+- Juepu Chen
+date: '2023-10-18'
+year: 2023
+venue: Water
+venue_type: journal
+ids:
+  doi: 10.3390/w15203650
+  openalex: W4387737908
+links:
+  paper: https://doi.org/10.3390/w15203650
+topic: local-forecasting
+topics:
+- nowcasting
+type: model
+method:
+- transformer
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- stations
+status: research
+summary: A Conv1D-Transformer predicts 3-hour rainfall levels in northern Xinjiang from 24 hours of station
+  data, a regional semi-arid case study.
+abstract: Accurate precipitation forecasting is of great significance to social life and economic activities.
+  Due to the influence of various factors such as topography, climate, and altitude, the precipitation
+  in semi-arid and arid areas shows the characteristics of large fluctuation, short duration, and low
+  probability of occurrence. Therefore, it is highly challenging to accurately predict precipitation in
+  the northern Xinjiang area of China, which is located in the semi-arid and arid climate region. In this
+  study, six meteorological stations in the northern Xinjiang area were selected as the research area.
+  Due to the high volatility of rainfall in this area, the rainfall was divided into four levels, namely,
+  “no rain”, “light rain”, “moderate rain”, and “heavy rain and above”, for rainfall level prediction.
+  In order to improve the prediction performance, this study proposed a rainfall levels nowcasting model
+  based on Conv1D_Transformer (RLNformer). Firstly, the maximum information coefficient (MIC) method was
+  used for feature selection and sliding the data, that is, the data of the first 24 h were used to predict
+  the rainfall levels in the next 3 h. Then, the Conv1D layer was used to replace the word-embedding layer
+  of the transformer, enabling it to extract the relationships between features of time series data and
+  allowing multi-head attention to better capture contextual information in the input sequence. Additionally,
+  a normalization layer was placed before the multi-head attention layer to ensure that the input data
+  had an appropriate scale and normalization, thereby reducing the sensitivity of the model to the distribution
+  of input data and helping to improve model performance. To verify the effectiveness and generalization
+  of the proposed model, the same experiments were conducted on the Indian public dataset, and seven models
+  were selected as benchmark models. Compared with the benchmark models, RLNformer achieved the highest
+  accuracy on both datasets, which were 96.41% and 88.95%, respectively. It also had higher accuracy in
+  the prediction of each category, especially the minority category, which has certain reference significance
+  and practical value.
+significance: 2
+cited_by: 5
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

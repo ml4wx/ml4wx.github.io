@@ -1,0 +1,61 @@
+id: doi-10.1029-2023ms003800
+title: Efficient Super‐Resolution of Near‐Surface Climate Modeling Using the Fourier Neural Operator
+authors:
+- Peishi Jiang
+- Zhao Yang
+- Jiali Wang
+- Chenfu Huang
+- Pengfei Xue
+- TC Chakraborty
+- Xingyuan Chen
+- Yun Qian
+date: '2023-07-01'
+year: 2023
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2023ms003800
+  openalex: W4385076997
+links:
+  paper: https://doi.org/10.1029/2023ms003800
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2023MS003800
+orgs:
+- argonne
+topic: downscaling
+topics:
+- xai-uq-physics
+type: model
+method:
+- neural-operator
+- physics-constrained
+spatial:
+- regional
+data:
+- km-scale-sim
+status: research
+summary: Applies a Fourier neural operator with a Clausius–Clapeyron constraint for zero-shot super-resolution
+  of WRF near-surface heat fields over the Great Lakes, reaching 1-km resolution.
+abstract: Abstract Downscaling methods are critical in efficiently generating high‐resolution atmospheric
+  data. However, state‐of‐the‐art statistical or dynamical downscaling techniques either suffer from the
+  high computational cost of running a physical model or require high‐resolution data to develop a downscaling
+  tool. Here, we demonstrate a recently proposed zero‐shot super‐resolution method, the Fourier neural
+  operator (FNO), to efficiently perform downscaling without the need for high‐resolution data. Because
+  the FNO learns dynamics in Fourier space, FNO is a resolution‐invariant emulator; it can be trained
+  at a coarse resolution and produces emulation at any high resolution. We applied FNO to downscale a
+  4‐km resolution Weather Research and Forecasting (WRF) Model simulation of near‐surface heat‐related
+  variables over the Great Lakes region. The FNO is driven by the atmospheric forcings and topographic
+  features used in the WRF model at the same resolution. We incorporated a physics‐constrained loss in
+  FNO by using the Clausius–Clapeyron relation to better constrain the relations among the emulated states.
+  Trained on merely 600 WRF snapshots at 4‐km resolution, the FNO shows comparable performance with a
+  widely‐used convolutional network, U‐Net, achieving averaged modified Kling–Gupta Efficiency of 0.88
+  and 0.94 on the test data set for temperature and pressure, respectively. We then employed the FNO to
+  produce 1‐km emulations to reproduce the fine climate features. Further, by taking the WRF simulation
+  as ground truth, we show consistent performances at the two resolutions, suggesting the reliability
+  of FNO in producing high‐resolution dynamics. Our study demonstrates the potential of using FNO for
+  zero‐shot super‐resolution in generating first‐order estimation on atmospheric modeling.
+significance: 4
+cited_by: 37
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

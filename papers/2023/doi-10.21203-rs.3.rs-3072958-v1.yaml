@@ -1,0 +1,54 @@
+id: doi-10.21203-rs.3.rs-3072958-v1
+title: Semantic Segmentation of Cloud Images captured with Horizon-Oriented Cameras for Nowcasting Applications
+authors:
+- Bruno Juncklaus Martins
+- Juliana Marian Arrais
+- Allan Cerentini
+- Sylvio Luiz Mantelli Neto
+- Gilberto Perello Ricci Neto
+- Aldo von Wangenheim
+date: '2023-06-21'
+year: 2023
+venue: Research Square
+venue_type: preprint
+ids:
+  doi: 10.21203/rs.3.rs-3072958/v1
+  openalex: W4381615565
+links:
+  paper: https://doi.org/10.21203/rs.3.rs-3072958/v1
+  pdf: https://www.researchsquare.com/article/rs-3072958/latest.pdf
+topic: nowcasting
+topics:
+- observations-remote-sensing
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- other
+status: research
+summary: U-Net with ResNet18 segments clouds in horizon-facing sky images with IoU 0.6, aimed at short-term
+  cloud motion and solar power nowcasting.
+abstract: Abstract The goal of this research is to create a cloud identification model for short-term
+  solar power generation forecasting using deep learning methods. Deep learning techniques such as U-net,
+  HRnet, and Detectron2 were used to perform semantic and instance segmentation of clouds. Transfer learning
+  was employed, with weights trained on the "2012 ILSVRC ImageNet" dataset and architecture configurations
+  such as Resnet, Efficient, and Mask RCNN. As a validation metric, the models were trained using the
+  Jaccard Coefficient. The best model, a U-net with Resnet18 at 486x648 resolution, achieved an average
+  Intersection over Union (IoU) of 0.6, indicating good cloud segmentation performance. All models were
+  affected by the data imbalance, with the tree class causing a favorable bias towards the overall results.
+  The HRNet model demonstrated refined pixel-level segmentation but was ineffective at detecting dominant
+  clouds. This research provides insights into effective cloud identification techniques and lays the
+  groundwork for future cloud classification model development. The model may be able to predict cloud
+  motion. For future works the team will investigate dataset balancing and data augmentation transformations
+  for model improvement. The research demonstrates the effectiveness of deep learning in cloud identification
+  for solar power forecasting.
+significance: 2
+cited_by: 1
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

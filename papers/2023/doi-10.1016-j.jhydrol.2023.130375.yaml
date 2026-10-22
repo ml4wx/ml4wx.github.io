@@ -1,0 +1,61 @@
+id: doi-10.1016-j.jhydrol.2023.130375
+title: An explainable two-stage machine learning approach for precipitation forecast
+authors:
+- Ali Ulvi Galip Şenocak
+- M. Tuğrul Yılmaz
+- Sinan Kalkan
+- İsmail Yücel
+- Muhammad Amjad
+date: '2023-10-21'
+year: 2023
+venue: Journal of Hydrology
+venue_type: journal
+ids:
+  doi: 10.1016/j.jhydrol.2023.130375
+  openalex: W4387843871
+links:
+  paper: https://doi.org/10.1016/j.jhydrol.2023.130375
+topic: post-processing
+topics:
+- local-forecasting
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Proposes an explainable two-stage classification-then-regression ML post-processor for daily
+  station precipitation, improving on single-stage black-box baselines.
+abstract: A common post-processing approach to improve precipitation forecasts is to use machine learning
+  models such as artificial neural networks (more specifically, multi-layer perceptrons) as black-box
+  systems. These models utilize different sources of observations or predictors to generate an improved
+  forecast in terms of desired metrics. However, most existing studies employ a single-stage regression
+  model without considering explainability. The small number of studies with two-stage models that combine
+  classification and regression utilize binary classification and still lack explainable artificial intelligence.
+  Therefore, this study proposes a precipitation prediction system which (i) is composed of two stages
+  for better predictions, (ii) compares the utility of binary and multi-class classification over the
+  regression, and (iii) is explainable, unlike prior studies, in that individual predictions of machine
+  learning-based forecasts are interpretable by humans. The proposed two-stage model first estimates the
+  precipitation intensity category using binary or multi-class classification as the first stage and later
+  utilizes precipitation intensity category information in a regression model, which is the second stage,
+  to obtain daily precipitation magnitude. The utilized approach is made humanly interpretable (i.e.,
+  explainable) by providing insight into the model-wide importance of predictors and generation processes
+  of the individual predictions (instance-level explanation). The proposed two-stage approach is compared
+  against single-stage and black-box approaches in terms of prediction quality and explainability, where
+  daily station-based observations are used as ground truth datasets. Experiments show that the proposed
+  two-stage approach yields significant improvement (on average, RMSE reduced by 10.50%, and the correlation
+  between numerical precipitation estimates and observed precipitation values increased by 7.5%) compared
+  to the best-performing physical predictor (ECMWF). Analysis of explainability provides insights into
+  the decisions of our two-stage approach, e.g., the usefulness of seasonality-related parameters, multi-class
+  precipitation intensity classification as a first stage, and the predictors for each task (regression
+  or classification).
+significance: 3
+cited_by: 36
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

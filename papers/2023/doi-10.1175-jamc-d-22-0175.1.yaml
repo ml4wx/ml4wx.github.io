@@ -1,0 +1,63 @@
+id: doi-10.1175-jamc-d-22-0175.1
+title: Unsupervised Clustering of Geostationary Satellite Cloud Properties for Estimating Precipitation
+  Probabilities of Tropical Convective Clouds
+authors:
+- Doyi Kim
+- Hee-Jae Kim
+- Yong‐Sang Choi
+date: '2023-07-13'
+year: 2023
+venue: Journal of Applied Meteorology and Climatology
+venue_type: journal
+ids:
+  doi: 10.1175/jamc-d-22-0175.1
+  openalex: W4384131273
+links:
+  paper: https://doi.org/10.1175/jamc-d-22-0175.1
+  pdf: https://journals.ametsoc.org/downloadpdf/journals/apme/62/8/JAMC-D-22-0175.1.pdf
+topic: observations-remote-sensing
+topics:
+- nowcasting
+type: model
+method:
+- classical-ml
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Self-organizing map clustering of geostationary cloud properties finds tropical cloud clusters
+  with over 70% precipitation probability, e.g., CER ≥ 20 μm and CTT < 230 K.
+abstract: 'Abstract Understanding the growth of tropical convective clouds (TCCs) is of vital importance
+  for the early detection of heavy rainfall. This study explores the properties of TCCs that can cause
+  them to develop into clouds with a high probability of precipitation. Remotely sensed cloud properties,
+  such as cloud-top temperature (CTT), cloud optical thickness (COT), and cloud effective radius (CER)
+  as measured by a geostationary satellite are trained by a neural network. First, the image segmentation
+  algorithm identifies TCC objects with different cloud properties. Second, a self-organizing map (SOM)
+  algorithm clusters TCC objects with similar cloud microphysical properties. Third, the precipitation
+  probability (PP) for each cluster of TCCs is calculated based on the proportion of precipitating TCCs
+  among the total number of TCCs. Precipitating TCCs can be distinguished from nonprecipitating TCCs using
+  Integrated Multi-Satellite Retrievals for Global Precipitation Measurement precipitation data. Results
+  show that SOM clusters with a high PP (>70%) satisfy a certain range of cloud properties: CER ≥ 20 μm
+  and CTT < 230 K. PP generally increases with increasing COT, but COT cannot be a clear cloud property
+  to confirm a high PP. For relatively thin clouds (COT < 30), however, CER should be much larger than
+  20 μm to have a high PP. More importantly, these TCC conditions associated with a PP ≥ 70% are consistent
+  across regions and periods. We expect our results will be useful for satellite nowcasting of tropical
+  precipitation using geostationary satellite cloud properties. Significance Statement We aim to identify
+  the properties of tropical convective clouds (TCCs) that have a high precipitation probability. We designed
+  a two-step framework to identify TCC objects and the conditions of cloud properties for TCCs to have
+  a high precipitation probability. The TCCs with a precipitation probability > 70% tend to have a low
+  cloud-top temperature and a cloud particle effective radius ≥ 20 μm. Cloud optical thicknesses are distributed
+  over a wide range, but thinning requires a particle radius larger than 20 μm. These conditions of cloud
+  properties appear to be unchanged under various spatial–temporal conditions over the tropics. This important
+  observational finding advances our understanding of the cloud–precipitation relationship in TCCs and
+  can be applied to satellite nowcasting of precipitation in the tropics, where numerical weather forecasts
+  are limited.'
+significance: 3
+cited_by: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

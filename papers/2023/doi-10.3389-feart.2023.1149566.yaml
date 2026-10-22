@@ -1,0 +1,55 @@
+id: doi-10.3389-feart.2023.1149566
+title: A radiative transfer deep learning model coupled into WRF with a generic fortran torch adaptor
+authors:
+- Bin Mu
+- Lu Chen
+- Shijin Yuan
+- Bo Qin
+date: '2023-08-03'
+year: 2023
+venue: Frontiers in Earth Science
+venue_type: journal
+ids:
+  doi: 10.3389/feart.2023.1149566
+  openalex: W4385547939
+links:
+  paper: https://doi.org/10.3389/feart.2023.1149566
+  pdf: https://www.frontiersin.org/articles/10.3389/feart.2023.1149566/pdf
+topic: hybrid-parameterization
+topics:
+- infra-software
+type: model
+method:
+- other
+timescale:
+- short
+spatial:
+- regional
+data:
+- other
+status: research
+summary: A Fortran Torch Adaptor couples deep learning radiation emulators into WRF, achieving 50x to
+  300x GPU speedups and better forecasts than feedforward networks.
+abstract: Advances in deep learning have created new opportunities for improving traditional numerical
+  models. As the radiation parameterization scheme is crucial and time-consuming in numerical models,
+  researchers sought to replace it with deep learning emulators. However, progress has been hindered at
+  the offline emulation stage due to the technical complexity of the implementation. Additionally, the
+  performance of the emulators when coupled with large-scale numerical models has yet to be verified.
+  In this paper, we have developed a new tool called the Fortran Torch Adaptor (FTA) to facilitate this
+  process and coupled deep learning emulators into the WRF model with it. The performance of various structured
+  AI models was tested in terms of accuracy, generalization ability, and efficiency in different weather
+  forecasting scenarios. Our findings revealed that deep learning models outperformed ordinary feedforward
+  neural networks (FNN), achieving greater accuracy both online and offline, and leading to better overall
+  forecasting results. When it came to unusual extreme weather events, all models were affected to some
+  extent, but deep learning models exhibited less susceptibility than other models. With the assistance
+  of FTA, deep learning models on GPU could achieve significant acceleration, ranging from 50x to 300x
+  depending on the parameterization scheme replacing strategy. In conclusion, this research is crucial
+  for both the theoretical and practical development of radiation transfer deep learning emulators. It
+  demonstrates the emerging potential for using deep learning-based parameterizations in operational forecasting
+  models.
+significance: 4
+cited_by: 13
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

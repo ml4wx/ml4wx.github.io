@@ -1,0 +1,53 @@
+id: arxiv-2309.13211
+title: 'Interpretable structural model error discovery from sparse assimilation increments using spectral
+  bias-reduced neural networks: A quasi-geostrophic turbulence test case'
+authors:
+- Rambod Mojgani
+- Ashesh Chattopadhyay
+- Pedram Hassanzadeh
+date: '2023-09-22'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2309.13211'
+  doi: 10.1029/2023ms004033
+links:
+  paper: https://arxiv.org/abs/2309.13211
+  pdf: https://arxiv.org/pdf/2309.13211
+topic: hybrid-parameterization
+topics:
+- xai-uq-physics
+type: model
+method:
+- classical-ml
+- physics-constrained
+spatial:
+- global
+data:
+- other
+status: research
+summary: MEDIDA uses sparse equation discovery with random Fourier features to learn Earth system model
+  errors from sparse analysis increments in a quasi-geostrophic test case.
+abstract: Earth system models suffer from various structural and parametric errors in their representation
+  of nonlinear, multi-scale processes, leading to uncertainties in their long-term projections. The effects
+  of many of these errors (particularly those due to fast physics) can be quantified in short-term simulations,
+  e.g., as differences between the predicted and observed states (analysis increments). With the increase
+  in the availability of high-quality observations and simulations, learning nudging from these increments
+  to correct model errors has become an active research area. However, most studies focus on using neural
+  networks, which while powerful, are hard to interpret, are data-hungry, and poorly generalize out-of-distribution.
+  Here, we show the capabilities of Model Error Discovery with Interpretability and Data Assimilation
+  (MEDIDA), a general, data-efficient framework that uses sparsity-promoting equation-discovery techniques
+  to learn model errors from analysis increments. Using two-layer quasi-geostrophic turbulence as the
+  test case, MEDIDA is shown to successfully discover various linear and nonlinear structural/parametric
+  errors when full observations are available. Discovery from spatially sparse observations is found to
+  require highly accurate interpolation schemes. While NNs have shown success as interpolators in recent
+  studies, here, they are found inadequate due to their inability to accurately represent small scales,
+  a phenomenon known as spectral bias. We show that a general remedy, adding a random Fourier feature
+  layer to the NN, resolves this issue enabling MEDIDA to successfully discover model errors from sparse
+  observations. These promising results suggest that with further development, MEDIDA could be scaled
+  up to models of the Earth system and real observations.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

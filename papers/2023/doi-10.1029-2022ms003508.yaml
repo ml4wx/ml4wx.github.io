@@ -1,0 +1,57 @@
+id: doi-10.1029-2022ms003508
+title: An Ensemble of Neural Networks for Moist Physics Processes, Its Generalizability and Stable Integration
+authors:
+- Yilun Han
+- Guang Jun Zhang
+- Yong Wang
+date: '2023-10-01'
+year: 2023
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2022ms003508
+  openalex: W4387574884
+links:
+  paper: https://doi.org/10.1029/2022ms003508
+orgs:
+- tsinghua-university
+topic: hybrid-parameterization
+topics:
+- climate-emulation
+type: model
+method:
+- cnn
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+- other
+status: research
+summary: Ensemble of 32-layer residual CNNs emulates superparameterized convection and clouds, runs stably
+  for 5 years in CAM5, and generalizes to a +4K warmer climate.
+abstract: Abstract With the recent advances in data science, machine learning has been increasingly applied
+  to convection and cloud parameterizations in global climate models (GCMs). This study extends the work
+  of Han et al. (2020, https://doi.org/10.1029/2020MS002076 ) and uses an ensemble of 32‐layer deep convolutional
+  residual neural networks, referred to as ResCu‐en, to emulate convection and cloud processes simulated
+  by a superparameterized GCM, SPCAM. ResCu‐en predicts GCM grid‐scale temperature and moisture tendencies,
+  and cloud liquid and ice water contents from moist physics processes. The surface rainfall is derived
+  from the column‐integrated moisture tendency. The prediction uncertainty inherent in deep learning algorithms
+  in emulating the moist physics is reduced by ensemble averaging. Results in 1‐year independent offline
+  validation show that ResCu‐en has high prediction accuracy for all output variables, both in the current
+  climate and in a warmer climate with +4K sea surface temperature. The analysis of different neural net
+  configurations shows that the success to generalize in a warmer climate is attributed to convective
+  memory and the 1‐dimensional convolution layers incorporated into ResCu‐en. We further implement a member
+  of ResCu‐en into CAM5 with real world geography and run the neural‐network‐enabled CAM5 (NCAM) for 5
+  years without encountering any numerical integration instability. The simulation generally captures
+  the global distribution of the mean precipitation, with a better simulation of precipitation intensity
+  and diurnal cycle. However, there are large biases in temperature and moisture in high latitudes. These
+  results highlight the importance of convective memory and demonstrate the potential for machine learning
+  to enhance climate modeling.
+significance: 4
+cited_by: 24
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

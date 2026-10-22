@@ -1,0 +1,52 @@
+id: doi-10.1002-met.2130
+title: Nowcast for cloud top height from Himawari‐8 data based on deep learning algorithms
+authors:
+- Zhuofu Yu
+- Zhonghui Tan
+- Shuo Ma
+- Wei Yan
+date: '2023-05-01'
+year: 2023
+venue: Meteorological Applications
+venue_type: journal
+ids:
+  doi: 10.1002/met.2130
+  openalex: W4382071010
+links:
+  paper: https://doi.org/10.1002/met.2130
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/met.2130
+topic: nowcasting
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: TrajGRU and ConvLSTM nowcast Himawari-8 cloud top height up to 2 h, with TrajGRU beating optical
+  flow and persistence in most seasons.
+abstract: Abstract Cloud top height (CTH) indicates the vertical development of clouds. Intensely vertically
+  developing clouds are usually accompanied by extreme weather systems and pose a threat to aviation safety.
+  Therefore, nowcast for CTH is necessary and meaningful to guide aviation flights. In this study, we
+  researched the nowcast for CTH (mainly within 0–2 h) based on deep learning algorithms. With Sichuan
+  Province as the study area, we collected CTH data of Himawari‐8 satellite from 2018 to 2020. Convolutional‐long‐short‐term‐memory
+  (ConvLSTM) and trajectory‐gated‐recurrent‐unit (TrajGRU) were used to build nowcast models in the encoder‐forecaster
+  framework. The optical flow model and persistence were used as benchmarks. The results showed that the
+  deep learning models did not have significant advantages over the benchmarks in the first 20 min. However,
+  with increasing nowcast time, the nowcast skills of the deep learning models were gradually exhibited.
+  For all four seasons, the TrajGRU‐based model showed superior performance over the ConvLSTM‐based model
+  and the benchmarks. In spring, autumn and winter, the results yielded by the ConvLSTM‐based model were
+  second only to those of the TrajGRU‐based model. However, in summer, the ConvLSTM‐based model did not
+  outperform the persistence. The results of the optical flow model worsened significantly with increasing
+  nowcast time. In contrast to the persistence, the optical flow model had almost no nowcast skills after
+  40 min.
+significance: 3
+cited_by: 5
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

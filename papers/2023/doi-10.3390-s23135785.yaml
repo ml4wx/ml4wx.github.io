@@ -1,0 +1,53 @@
+id: doi-10.3390-s23135785
+title: 'LSTMAtU-Net: A Precipitation Nowcasting Model Based on ECSA Module'
+authors:
+- Huantong Geng
+- Xiaoyan Ge
+- Boyang Xie
+- Jinzhong Min
+- Xiaoran Zhuang
+date: '2023-06-21'
+year: 2023
+venue: Sensors
+venue_type: journal
+ids:
+  doi: 10.3390/s23135785
+  openalex: W4381617817
+links:
+  paper: https://doi.org/10.3390/s23135785
+  pdf: https://www.mdpi.com/1424-8220/23/13/5785/pdf?version=1687655333
+orgs:
+- nuist
+topic: nowcasting
+type: model
+method:
+- cnn
+- rnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: LSTMAtU-Net combines ConvLSTM with U-Net and an attention module to improve 0-2 hour radar precipitation
+  nowcasts, especially for medium and high intensities.
+abstract: Precipitation nowcasting refers to the use of specific meteorological elements to predict precipitation
+  in the next 0-2 h. Existing methods use radar echo maps and the Z-R relationship to directly predict
+  future rainfall rates through deep learning methods, which are not physically constrained, but suffer
+  from severe loss of predicted image details. This paper proposes a new model framework to effectively
+  solve this problem, namely LSTMAtU-Net. It is based on the U-Net architecture, equipped with a Convolutional
+  LSTM (ConvLSTM) unit with the vertical flow direction and depthwise-separable convolution, and we propose
+  a new component, the Efficient Channel and Space Attention (ECSA) module. The ConvLSTM unit with the
+  vertical flow direction memorizes temporal changes by extracting features from different levels of the
+  convolutional layers, while the ECSA module innovatively integrates different structural information
+  of each layer of U-Net into the channelwise attention mechanism to learn channel and spatial information,
+  thereby enhancing attention to the details of precipitation images. The experimental results showed
+  that the performance of the model on the test dataset was better than other examined models and improved
+  the accuracy of medium- and high-intensity precipitation nowcasting.
+significance: 3
+cited_by: 8
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

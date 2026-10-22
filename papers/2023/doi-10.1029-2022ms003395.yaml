@@ -1,0 +1,52 @@
+id: doi-10.1029-2022ms003395
+title: Probing the Skill of Random Forest Emulators for Physical Parameterizations Via a Hierarchy of
+  Simple CAM6 Configurations
+authors:
+- Garrett C Limon
+- Christiane Jablonowski
+date: '2023-06-01'
+year: 2023
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2022ms003395
+  openalex: W4379744232
+links:
+  paper: https://doi.org/10.1029/2022ms003395
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2022MS003395
+topic: hybrid-parameterization
+topics:
+- benchmarks-data-eval
+type: evaluation
+method:
+- classical-ml
+spatial:
+- global
+data:
+- km-scale-sim
+- other
+status: research
+summary: Random forest emulators of CAM6 physics skill declines as model complexity rises across dry,
+  moist, and extra-convection configurations, indicating limits for RF physics emulation.
+abstract: Abstract Machine learning approaches, such as random forests (RF), have been used to effectively
+  emulate various aspects of climate and weather models in recent years. The limitations to these approaches
+  are not yet known, particularly with regards to varying complexity of the underlying physical parameterization
+  scheme within the climate model. Utilizing a hierarchy of model configurations, we explore the limits
+  of random forest emulator skill using simplified model frameworks within NCAR's Community Atmosphere
+  Model, version 6 (CAM6). These include a dry CAM6 configuration, a moist extension of the dry model,
+  and an extension of the moist case that includes an additional convection scheme. Each model configuration
+  is run with identical resolution and over the same time period. With unique RF being optimized for each
+  tendency or precipitation rate across the hierarchy, we create a variety of “best case” emulators. The
+  random forest emulators are then evaluated against the CAM6 output as well as a baseline neural network
+  emulator for completeness. All emulators show significant skill when compared to the “truth” (CAM6),
+  often in line with or exceeding similar approaches within the literature. In addition, as the CAM6 complexity
+  is increased, the random forest skill noticeably decreases, regardless of the extensive tuning and training
+  process each random forest goes through. This indicates a limit on the feasibility of RF to act as physics
+  emulators in climate models and encourages further exploration in order to identify ideal uses in the
+  context of state‐of‐the‐art climate model configurations.
+significance: 4
+cited_by: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

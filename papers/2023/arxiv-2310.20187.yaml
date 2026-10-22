@@ -1,0 +1,46 @@
+id: arxiv-2310.20187
+title: Self-Supervised Pre-Training for Precipitation Post-Processor
+authors:
+- Sojung An
+- Junha Lee
+- Jiyeon Jang
+- Inchae Na
+- Wooyeon Park
+- Sujeong You
+date: '2023-10-31'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2310.20187'
+  openalex: W4388184458
+links:
+  paper: https://arxiv.org/abs/2310.20187
+  pdf: https://arxiv.org/pdf/2310.20187
+topic: post-processing
+type: model
+method:
+- other
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: Self-supervised encoder pretraining on atmospheric variables, then transfer to a labelled precipitation
+  task, improves regional NWP precipitation correction over other approaches.
+abstract: Obtaining a sufficient forecast lead time for local precipitation is essential in preventing
+  hazardous weather events. Global warming-induced climate change increases the challenge of accurately
+  predicting severe precipitation events, such as heavy rainfall. In this paper, we propose a deep learning-based
+  precipitation post-processor for numerical weather prediction (NWP) models. The precipitation post-processor
+  consists of (i) employing self-supervised pre-training, where the parameters of the encoder are pre-trained
+  on the reconstruction of the masked variables of the atmospheric physics domain; and (ii) conducting
+  transfer learning on precipitation segmentation tasks (the target domain) from the pre-trained encoder.
+  In addition, we introduced a heuristic labeling approach to effectively train class-imbalanced datasets.
+  Our experiments on precipitation correction for regional NWP show that the proposed method outperforms
+  other approaches.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,63 @@
+id: doi-10.3390-rs15215084
+title: Spatial Downscaling of Near-Surface Air Temperature Based on Deep Learning Cross-Attention Mechanism
+authors:
+- Zhanfei Shen
+- Chunxiang Shi
+- Runping Shen
+- Ruian Tie
+- Lingling Ge
+date: '2023-10-24'
+year: 2023
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs15215084
+  openalex: W4387908692
+links:
+  paper: https://doi.org/10.3390/rs15215084
+  pdf: https://www.mdpi.com/2072-4292/15/21/5084/pdf?version=1698148105
+orgs:
+- nuist
+topic: downscaling
+type: model
+method:
+- transformer
+- cnn
+spatial:
+- regional
+data:
+- other
+- stations
+status: research
+summary: SNCA-CLDASSD, a Swin cross-attention network with DEM input, downscales CLDAS air temperature
+  from 0.05° to 0.01° and beats interpolation and super-resolution baselines in mountains.
+abstract: Deep learning methods can achieve a finer refinement required for downscaling meteorological
+  elements, but their performance in terms of bias still lags behind physical methods. This paper proposes
+  a statistical downscaling network based on Light-CLDASSD that utilizes a Shuffle–nonlinear-activation-free
+  block (SNBlock) and Swin cross-attention mechanism (SCAM), and is named SNCA-CLDASSD, for the China
+  Meteorological Administration Land Data Assimilation System (CLDAS). This method aims to achieve a more
+  accurate spatial downscaling of a temperature product from 0.05° to 0.01° for the CLDAS. To better utilize
+  the digital elevation model (DEM) for reconstructing the spatial texture of the temperature field, a
+  module named SCAM is introduced, which can activate more input pixels and enable the network to correct
+  and merge the extracted feature maps with DEM information. We chose 90% of the CLDAS temperature data
+  with DEM and station observation data from 2016 to 2020 (excluding 2018) as the training set, 10% as
+  the verification set, and chose the data in 2018 as the test set. We validated the effectiveness of
+  each module through comparative experiments and obtained the best-performing model. Then, we compared
+  it with traditional interpolation methods and state-of-the-art deep learning super-resolution algorithms.
+  We evaluated the experimental results with HRCLDAS, national stations, and regional stations, and the
+  results show that our improved model performs optimally compared to other methods (RMSE of 0.71 °C/0.12
+  °C/0.72 °C, BIAS of −0.02 °C/0.02 °C/0.002 °C), with the most noticeable improvement in mountainous
+  regions, followed by plains. SNCA-CLDASSDexhibits the most stable performance in intraday hourly bias
+  at temperature under the conditions of improved feature extraction capability in the SNBlock and a better
+  utilization of the DEM by the SCAM. Due to the replacement of the upsampling method from sub pixels
+  to CARAFE, it effectively suppresses the checkerboard effect and shows better robustness than other
+  models. Our approach extends the downscaling model for CLDAS data products and significantly improves
+  performance in this task by enhancing the model’s feature extraction and fusion capabilities and improving
+  upsampling methods. It offers a more profound exploration of historical high-resolution temperature
+  estimation and can be migrated to the downscaling of other meteorological elements.
+significance: 3
+cited_by: 14
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

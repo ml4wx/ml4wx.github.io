@@ -1,0 +1,56 @@
+id: doi-10.1029-2023ea002906
+title: 'spateGAN: Spatio‐Temporal Downscaling of Rainfall Fields Using a cGAN Approach'
+authors:
+- Luca Glawion
+- Julius Polz
+- Harald Günter Kunstmann
+- Benjamin Fersch
+- Christian Chwala
+date: '2023-10-01'
+year: 2023
+venue: Earth and Space Science
+venue_type: journal
+ids:
+  doi: 10.1029/2023ea002906
+  openalex: W4387666384
+links:
+  paper: https://doi.org/10.1029/2023ea002906
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2023EA002906
+orgs:
+- kit
+topic: downscaling
+type: model
+method:
+- gan-vae
+- cnn
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: spateGAN, a conditional GAN, downscales coarse German radar rainfall from 32 km/1 h to 2 km/10
+  min, with FSS of 0.6 for intensities over 15 mm/h.
+abstract: 'Abstract Climate models face limitations in their ability to accurately represent highly variable
+  atmospheric phenomena. To resolve fine‐scale physical processes, allowing for local impact assessments,
+  downscaling techniques are essential. We propose spateGAN, a novel approach for spatio‐temporal downscaling
+  of precipitation data using conditional generative adversarial networks. Our method is based on a video
+  super‐resolution approach and trained on 10 years of country‐wide radar observations for Germany. It
+  simultaneously increases the spatial and temporal resolution of coarsened precipitation observations
+  from 32 to 2 km and from 1 hr to 10 min. Our experiments indicate that the ensembles of generated temporally
+  consistent rainfall fields are in high agreement with the observational data. Spatial structures with
+  plausible advection were accurately generated. Compared to trilinear interpolation and a classical convolutional
+  neural network, the generative model reconstructs the resolution‐dependent extreme value distribution
+  with high skill. It showed a high fractions skill score of 0.6 (spatio‐temporal scale: 32 km and 1 hr)
+  for rainfall intensities over 15 mm h −1 and a low relative bias of 3.35%. A power spectrum analysis
+  confirmed that the probabilistic downscaling ability of our model further increased its skill. We observed
+  that neural network predictions may be interspersed by recurrent structures not related to rainfall
+  climatology, which should be a known issue for future studies. We were able to mitigate them by using
+  an appropriate model architecture and model selection process. Our findings suggest that spateGAN offers
+  the potential to complement and further advance the development of climate model downscaling techniques,
+  due to its performance and computational efficiency.'
+significance: 4
+cited_by: 36
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

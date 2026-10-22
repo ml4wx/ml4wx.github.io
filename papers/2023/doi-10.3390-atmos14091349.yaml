@@ -1,0 +1,54 @@
+id: doi-10.3390-atmos14091349
+title: Downscaling Daily Satellite-Based Precipitation Estimates Using MODIS Cloud Optical and Microphysical
+  Properties in Machine-Learning Models
+authors:
+- Sergio Callaú Medrano
+- Frédéric Satgé
+- Jorge Molina‐Carpio
+- Ramiro Pillco Zolá
+- Marie‐Paule Bonnet
+date: '2023-08-27'
+year: 2023
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos14091349
+  openalex: W4386238411
+links:
+  paper: https://doi.org/10.3390/atmos14091349
+  pdf: https://www.mdpi.com/2073-4433/14/9/1349/pdf?version=1693279154
+topic: downscaling
+topics:
+- observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- stations
+status: research
+summary: Random forest downscales daily IMERG precipitation from 10 km to 1 km using MODIS cloud properties,
+  cutting RMSE by 29% against gauges.
+abstract: 'This study proposes a method for downscaling the spatial resolution of daily satellite-based
+  precipitation estimates (SPEs) from 10 km to 1 km. The method deliberates a set of variables that have
+  close relationships with daily precipitation events in a Random Forest (RF) regression model. The considered
+  variables include cloud optical thickness (COT), cloud effective radius (CER) an cloud water path (CWP),
+  derived from MODIS, along with maximum and minimum temperature (Tx, Tn), derived from CHIRTS. Additionally,
+  topographic features derived from ALOS-DEM are also investigated to improve the downscaling procedure.
+  The approach consists of two main steps: firstly, the RF model training at the native 10 km spatial
+  resolution of the studied SPEs (i.e., IMERG) using rain gauge observations as targets; secondly, the
+  application of the trained RF model at a 1 km spatial resolution to downscale IMERG from 10 km to 1
+  km over a one-year period. To assess the reliability of the method, the RF model outcomes were compared
+  with the rain gauge records not considered in the RF model training. Before the downscaling process,
+  the CC, MAE and RMSE metrics were 0.32, 1.16 mm and 6.60 mm, respectively, and improved to 0.48, 0.99
+  mm and 4.68 mm after the downscaling process. This corresponds to improvements of 50%, 15% and 29%,
+  respectively. Therefore, the method not only improves the spatial resolution of IMERG, but also its
+  accuracy.'
+significance: 3
+cited_by: 8
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

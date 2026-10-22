@@ -1,0 +1,60 @@
+id: arxiv-2309.15207
+title: 'Balancing Computational Efficiency and Forecast Error in Machine Learning-based Time-Series Forecasting:
+  Insights from Live Experiments on Meteorological Nowcasting'
+authors:
+- Elin Törnquist
+- Wagner Costa Santos
+- Timothy Pogue
+- Nicholas Wingle
+- Robert A. Caulk
+date: '2023-09-26'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2309.15207'
+  openalex: W4387156791
+links:
+  paper: https://arxiv.org/abs/2309.15207
+  pdf: https://arxiv.org/pdf/2309.15207
+topic: local-forecasting
+topics:
+- nowcasting
+type: evaluation
+method:
+- classical-ml
+- rnn
+- transformer
+timescale:
+- short
+- nowcast
+spatial:
+- local
+data:
+- stations
+- nwp-analysis
+status: pre-operational
+summary: Live experiments with XGBoost, MLP, Transformer and LSTM nowcast temperature, wind and cloud
+  cover; a variance-horizon method cuts compute by over 50% and concept-drift retraining cuts it by up
+  to 90%.
+abstract: 'Machine learning for time-series forecasting remains a key area of research. Despite successful
+  application of many machine learning techniques, relating computational efficiency to forecast error
+  remains an under-explored domain. This paper addresses this topic through a series of real-time experiments
+  to quantify the relationship between computational cost and forecast error using meteorological nowcasting
+  as an example use-case. We employ a variety of popular regression techniques (XGBoost, FC-MLP, Transformer,
+  and LSTM) for multi-horizon, short-term forecasting of three variables (temperature, wind speed, and
+  cloud cover) for multiple locations. During a 5-day live experiment, 4000 data sources were streamed
+  for training and inferencing 144 models per hour. These models were parameterized to explore forecast
+  error for two computational cost minimization methods: a novel auto-adaptive data reduction technique
+  (Variance Horizon) and a performance-based concept drift-detection mechanism. Forecast error of all
+  model variations were benchmarked in real-time against a state-of-the-art numerical weather prediction
+  model. Performance was assessed using classical and novel evaluation metrics. Results indicate that
+  using the Variance Horizon reduced computational usage by more than 50\%, while increasing between 0-15\%
+  in error. Meanwhile, performance-based retraining reduced computational usage by up to 90\% while \emph{also}
+  improving forecast error by up to 10\%. Finally, the combination of both the Variance Horizon and performance-based
+  retraining outperformed other model configurations by up to 99.7\% when considering error normalized
+  to computational usage.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,42 @@
+id: arxiv-2308.16073
+title: 3D-Var Data Assimilation using a Variational Autoencoder
+authors:
+- Boštjan Melinc
+- Žiga Zaplotnik
+date: '2023-08-30'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2308.16073'
+  doi: 10.1002/qj.4708
+links:
+  paper: https://arxiv.org/abs/2308.16073
+  pdf: https://arxiv.org/pdf/2308.16073
+topic: data-assimilation
+type: model
+method:
+- gan-vae
+spatial:
+- global
+data:
+- other
+status: research
+summary: VAE-based 3D-Var assimilates simulated temperature observations in a learned latent space, yielding
+  flow-dependent background covariances across tropical and extratropical regions.
+abstract: Data assimilation of atmospheric observations traditionally relies on variational and Kalman
+  filter methods. Here, an alternative neural-network data assimilation (NNDA) with variational autoencoder
+  (VAE) is proposed. The three-dimensional variational (3D-Var) data assimilation cost function is utilised
+  to determine the analysis that optimally fuses simulated observations and the encoded short-range persistence
+  forecast (background), accounting for their errors. The minimisation is performed in the reduced-order
+  latent space, discovered by the VAE. The variational problem is auto-differentiable, simplifying the
+  computation of the cost function gradient necessary for efficient minimisation. We demonstrate that
+  the background-error covariance ($\mathbf{B}$) matrix measured and represented in the latent space is
+  quasi-diagonal. The background-error covariances in the grid-point space are flow-dependent, evolving
+  seasonally and depending on the current state of the atmosphere. Data assimilation experiments with
+  a single temperature observation in the lower troposphere indicate that the $\mathbf{B}$-matrix simultaneously
+  describes both tropical and extratropical background-error covariances.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

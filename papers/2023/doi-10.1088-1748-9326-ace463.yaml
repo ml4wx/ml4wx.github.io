@@ -1,0 +1,55 @@
+id: doi-10.1088-1748-9326-ace463
+title: Comparison of a novel machine learning approach with dynamical downscaling for Australian precipitation
+authors:
+- Nidhi Nishant
+- Sanaa Hobeichi
+- Steven C. Sherwood
+- Gab Abramowitz
+- Yawen Shao
+- Craig H. Bishop
+- A. J. Pitman
+date: '2023-07-05'
+year: 2023
+venue: Environmental Research Letters
+venue_type: journal
+ids:
+  doi: 10.1088/1748-9326/ace463
+  openalex: W4383218728
+links:
+  paper: https://doi.org/10.1088/1748-9326/ace463
+  pdf: https://iopscience.iop.org/article/10.1088/1748-9326/ace463/pdf
+topic: downscaling
+topics:
+- benchmarks-data-eval
+type: evaluation
+method:
+- other
+spatial:
+- regional
+data:
+- era5
+- stations
+status: research
+summary: An MLP with a novel loss downscales Australian precipitation from 12–48 km to 5 km, outperforming
+  dynamical downscaling on extremes with 15–85% lower bias at 12 km.
+abstract: Abstract Dynamical downscaling (DD), and machine learning (ML) based techniques have been widely
+  applied to downscale global climate models and reanalyses to a finer spatiotemporal scale, but the relative
+  performance of these two methods remains unclear. We implement an ML regression approach using a multi-layer
+  perceptron (MLP) with a novel loss function to downscale coarse-resolution precipitation from the Bureau
+  of Meteorology Atmospheric high-resolution Regional Reanalysis for Australia from grids of 12–48 km
+  to 5 km, using the Australia Gridded Climate Data observations as the target. A separate MLP is developed
+  for each coarse grid to predict the fine grid values within it, by combining coarse-scale time-varying
+  meteorological variables with fine-scale static surface properties as predictors. The resulting predictions
+  (on out-of-sample test periods) are more accurate than DD in capturing the rainfall climatology, as
+  well as the frequency distribution and spatiotemporal variability of daily precipitation, reducing biases
+  in daily extremes by 15%–85% with 12 km prediction fields. When prediction fields are coarsened, the
+  skill of the MLP decreases—at 24 km relative bias increases by ∼10%, and at 48 km it increases by another
+  ∼4%—but skill remains comparable to or, for some metrics, much better than DD. These results show that
+  ML-based downscaling benefits from higher-resolution driving data but can still improve on DD (and at
+  far less computational cost) when downscaling from a global climate model grid of ∼50 km.
+significance: 4
+cited_by: 29
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,52 @@
+id: arxiv-2310.19515
+title: Transformer-based nowcasting of radar composites from satellite images for severe weather
+authors:
+- Çağlar Küçük
+- Apostolos Giannakos
+- Stefan Schneider
+- Alexander Jann
+date: '2023-10-30'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2310.19515'
+links:
+  paper: https://arxiv.org/abs/2310.19515
+  pdf: https://arxiv.org/pdf/2310.19515
+topic: nowcasting
+topics:
+- observations-remote-sensing
+type: model
+method:
+- transformer
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- satellite
+status: research
+summary: Transformer nowcasts radar composites up to two hours ahead from geostationary satellite data,
+  with lightning and infrared channels proving key features in severe weather.
+abstract: Weather radar data are critical for nowcasting and an integral component of numerical weather
+  prediction models. While weather radar data provide valuable information at high resolution, their ground-based
+  nature limits their availability, which impedes large-scale applications. In contrast, meteorological
+  satellites cover larger domains but with coarser resolution. However, with the rapid advancements in
+  data-driven methodologies and modern sensors aboard geostationary satellites, new opportunities are
+  emerging to bridge the gap between ground- and space-based observations, ultimately leading to more
+  skillful weather prediction with high accuracy. Here, we present a Transformer-based model for nowcasting
+  ground-based radar image sequences using satellite data up to two hours lead time. Trained on a dataset
+  reflecting severe weather conditions, the model predicts radar fields occurring under different weather
+  phenomena and shows robustness against rapidly growing/decaying fields and complex field structures.
+  Model interpretation reveals that the infrared channel centered at 10.3 $μm$ (C13) contains skillful
+  information for all weather conditions, while lightning data have the highest relative feature importance
+  in severe weather conditions, particularly in shorter lead times. The model can support precipitation
+  nowcasting across large domains without an explicit need for radar towers, enhance numerical weather
+  prediction and hydrological models, and provide radar proxy for data-scarce regions. Moreover, the open-source
+  framework facilitates progress towards operational data-driven nowcasting.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,59 @@
+id: doi-10.3390-rs15092454
+title: Dual-Level Contextual Attention Generative Adversarial Network for Reconstructing SAR Wind Speeds
+  in Tropical Cyclones
+authors:
+- Xinhai Han
+- Xiaohui Li
+- Jingsong Yang
+- Jiuke Wang
+- Gang Zheng
+- Lin Ren
+- Peng Chen
+- He Fang
+- Qingmei Xiao
+date: '2023-05-06'
+year: 2023
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs15092454
+  openalex: W4381687998
+links:
+  paper: https://doi.org/10.3390/rs15092454
+  pdf: https://www.mdpi.com/2072-4292/15/9/2454/pdf?version=1683380408
+topic: observations-remote-sensing
+topics:
+- extremes-hazards
+type: model
+method:
+- gan-vae
+- transformer
+spatial:
+- regional
+data:
+- satellite
+- nwp-analysis
+status: research
+summary: An attention-based GAN reconstructs low-quality SAR wind speeds in tropical cyclones, halving
+  RMSE versus the existing SAR product in affected regions relative to ECMWF.
+abstract: Synthetic Aperture Radar (SAR) imagery plays an important role in observing tropical cyclones
+  (TCs). However, the C-band attenuation caused by rain bands and the problem of signal saturation at
+  high wind speeds make it impossible to retrieve the fine structure of TCs effectively. In this paper,
+  a dual-level contextual attention generative adversarial network (DeCA-GAN) is tailored for reconstructing
+  SAR wind speeds in TCs. The DeCA-GAN follows an encoder–neck–decoder architecture, which works well
+  for high wind speeds and the reconstruction of a large range of low-quality data. A dual-level encoder
+  comprising a convolutional neural network and a self-attention mechanism is designed to extract the
+  local and global features of the TC structure. After feature fusion, the neck explores the contextual
+  features to form a reconstructed outline and up-samples the features in the decoder to obtain the reconstructed
+  results. The proposed deep learning model has been trained and validated using the European Centre for
+  Medium-Range Weather Forecasts (ECMWF) atmospheric model product and can be directly used to improve
+  the data quality of SAR wind speeds. Wind speeds are reconstructed well in regions of low-quality SAR
+  data. The root mean square error of the model output and ECMWF in these regions is halved in comparison
+  with the existing SAR wind speed product for the test set. The results indicate that deep learning methods
+  are effective for reconstructing SAR wind speeds.
+significance: 3
+cited_by: 18
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

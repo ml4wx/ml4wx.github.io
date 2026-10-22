@@ -1,0 +1,55 @@
+id: arxiv-2310.06045
+title: Generative ensemble deep learning severe weather prediction from a deterministic convection-allowing
+  model
+authors:
+- Yingkai Sha
+- Ryan A. Sobash
+- David John Gagne
+date: '2023-10-09'
+year: 2023
+venue: Artificial Intelligence for the Earth Systems, 3(2), p.e230094 (2024)
+venue_type: journal
+ids:
+  arxiv: '2310.06045'
+  doi: 10.1175/aies-d-23-0094.1
+links:
+  paper: https://arxiv.org/abs/2310.06045
+  pdf: https://arxiv.org/pdf/2310.06045
+topic: post-processing
+topics:
+- extremes-hazards
+- probabilistic-ensembles
+type: model
+method:
+- gan-vae
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- radar
+status: research
+summary: Conditional GANs generate synthetic ensemble members from HRRR convection-allowing forecasts,
+  and a CNN turns them into severe weather probabilities with up to 20% Brier skill score gain.
+abstract: An ensemble post-processing method is developed for the probabilistic prediction of severe weather
+  (tornadoes, hail, and wind gusts) over the conterminous United States (CONUS). The method combines conditional
+  generative adversarial networks (CGANs), a type of deep generative model, with a convolutional neural
+  network (CNN) to post-process convection-allowing model (CAM) forecasts. The CGANs are designed to create
+  synthetic ensemble members from deterministic CAM forecasts, and their outputs are processed by the
+  CNN to estimate the probability of severe weather. The method is tested using High-Resolution Rapid
+  Refresh (HRRR) 1--24 hr forecasts as inputs and Storm Prediction Center (SPC) severe weather reports
+  as targets. The method produced skillful predictions with up to 20% Brier Skill Score (BSS) increases
+  compared to other neural-network-based reference methods using a testing dataset of HRRR forecasts in
+  2021. For the evaluation of uncertainty quantification, the method is overconfident but produces meaningful
+  ensemble spreads that can distinguish good and bad forecasts. The quality of CGAN outputs is also evaluated.
+  Results show that the CGAN outputs behave similarly to a numerical ensemble; they preserved the inter-variable
+  correlations and the contribution of influential predictors as in the original HRRR forecasts. This
+  work provides a novel approach to post-process CAM output using neural networks that can be applied
+  to severe weather prediction.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

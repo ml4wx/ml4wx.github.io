@@ -1,0 +1,47 @@
+id: arxiv-2306.11144
+title: Evaluating Loss Functions and Learning Data Pre-Processing for Climate Downscaling Deep Learning
+  Models
+authors:
+- Xingying Huang
+date: '2023-06-19'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2306.11144'
+  openalex: W4381573060
+links:
+  paper: https://arxiv.org/abs/2306.11144
+  pdf: https://arxiv.org/pdf/2306.11144
+orgs:
+- ncar
+topic: downscaling
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- other
+status: research
+summary: L2 loss outperforms L1 for imbalanced precipitation downscaling, and a learned nonlinear pre-processing
+  function further improves accuracy in climate downscaling networks.
+abstract: Deep learning models have gained popularity in climate science, following their success in computer
+  vision and other domains. For instance, researchers are increasingly employing deep learning techniques
+  for downscaling climate data, drawing inspiration from image super-resolution models. However, there
+  are notable differences between image data and climate data. While image data typically falls within
+  a specific range (e.g., [0, 255]) and exhibits a relatively uniform or normal distribution, climate
+  data can possess arbitrary value ranges and highly uneven distributions, such as precipitation data.
+  This non-uniform distribution presents challenges when attempting to directly apply existing computer
+  vision models to climate science tasks. Few studies have addressed this issue thus far. In this study,
+  we explore the effects of loss functions and non-linear data pre-processing methods for deep learning
+  models in the context of climate downscaling. We employ a climate downscaling experiment as an example
+  to evaluate these factors. Our findings reveal that L1 loss and L2 loss perform similarly on some more
+  balanced data like temperature data while for some imbalanced data like precipitation data, L2 loss
+  performs significantly better than L1 loss. Additionally, we propose an approach to automatically learn
+  the non-linear pre-processing function, which further enhances model accuracy and achieves the best
+  results.
+significance: 3
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill
