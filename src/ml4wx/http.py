@@ -18,9 +18,12 @@ class BudgetExceeded(RuntimeError):
 
 
 class Client:
-    def __init__(self, min_interval: float = 0.0, max_retries: int = 6, timeout: float = 60.0):
+    def __init__(
+        self, min_interval: float = 0.0, max_retries: int = 6, timeout: float = 60.0, max_delay: float = 120.0
+    ):
         self.min_interval = min_interval
         self.max_retries = max_retries
+        self.max_delay = max_delay
         self._last = 0.0
         self._lock = threading.Lock()
         self._http = httpx.Client(
@@ -51,11 +54,14 @@ class Client:
                 left = r.headers.get("x-ratelimit-remaining-usd")
                 if r.status_code == 429 and left is not None and float(left) <= 0:
                     raise BudgetExceeded(f"{url}: daily budget used up")
+                retry_after = r.headers.get("retry-after", "")
+                if retry_after.isdigit():  # the server says how long to wait
+                    delay = min(max(delay, float(retry_after)), self.max_delay)
                 log.warning("%s %s -> %d, retry %d in %.0fs", method, url, r.status_code, attempt + 1, delay)
             if attempt == self.max_retries:
                 break
             time.sleep(delay)
-            delay = min(delay * 2, 120)
+            delay = min(delay * 2, self.max_delay)
         raise RuntimeError(f"{method} {url} failed after {self.max_retries} retries")
 
     def get(self, url: str, params: dict | None = None, headers: dict | None = None) -> httpx.Response:
