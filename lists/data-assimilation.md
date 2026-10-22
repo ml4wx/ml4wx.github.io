@@ -5,7 +5,7 @@ ML for data assimilation and state estimation, learned observation operators, an
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/data-assimilation/)
 
-13 papers (2 ⭐). Newest first.
+13 papers (4 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -16,8 +16,8 @@ ML for data assimilation and state estimation, learned observation operators, an
 | 2024-04-12 | [Fuxi-DA: A Generalized Deep Learning Data Assimilation Framework for Assimilating Satellite Observations](https://arxiv.org/abs/2404.08522)<br><sub>Xiaoze Xu, Xiuyu Sun, Wei Han et al. · npj Climate and Atmospheric Science</sub> | China Meteorological Administration (CMA), Fudan University (FuXi), Nanjing University of Information Science & Technology (NUIST) |  |
 | 2024-03-30 | ⭐ [Aardvark weather: end-to-end data-driven weather forecasting](https://arxiv.org/abs/2404.00411)<br><sub>Anna Vaughan, Stratis Markou, Will Tebbutt et al. · Nature</sub> | The Alan Turing Institute, ECMWF, Google DeepMind, Microsoft Research (AI for Science), University of Cambridge (Aardvark) |  |
 | 2024-01-11 | [DiffDA: a Diffusion Model for Weather-scale Data Assimilation](https://arxiv.org/abs/2401.05932)<br><sub>Langwen Huang, Lukas Gianinazzi, Yuejiang Yu et al.</sub> |  |  |
-| 2023-12-18 | [Towards an end-to-end artificial intelligence driven global weather forecasting system](https://arxiv.org/abs/2312.12462)<br><sub>Kun Chen, Lei Bai, Fenghua Ling et al.</sub> | Fudan University (FuXi), Nanjing University of Information Science & Technology (NUIST), Shanghai Artificial Intelligence Laboratory |  |
-| 2023-12-16 | [FengWu-4DVar: Coupling the Data-driven Weather Forecasting Model with 4D Variational Assimilation](https://arxiv.org/abs/2312.12455)<br><sub>Yi Xiao, Lei Bai, Wei Xue et al.</sub> | Shanghai Artificial Intelligence Laboratory, Tsinghua University (NowcastNet) |  |
+| 2023-12-18 | ⭐ [Towards an end-to-end artificial intelligence driven global weather forecasting system](https://arxiv.org/abs/2312.12462)<br><sub>Kun Chen, Lei Bai, Fenghua Ling et al.</sub> | Fudan University (FuXi), Nanjing University of Information Science & Technology (NUIST), Shanghai Artificial Intelligence Laboratory |  |
+| 2023-12-16 | ⭐ [FengWu-4DVar: Coupling the Data-driven Weather Forecasting Model with 4D Variational Assimilation](https://arxiv.org/abs/2312.12455)<br><sub>Yi Xiao, Lei Bai, Wei Xue et al.</sub> | Shanghai Artificial Intelligence Laboratory, Tsinghua University (NowcastNet) |  |
 | 2023-01-01 | [Score-based Data Assimilation](https://arxiv.org/abs/2306.10574)<br><sub>François Rozet, Gilles Louppe · Advances in Neural Information Processing Systems 36</sub> |  |  |
 | 2021-02-15 | [Learning earth system models from observations: machine learning or data assimilation?](https://doi.org/10.1098/rsta.2020.0089)<br><sub>A. J. Geer · Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences</sub> | ECMWF |  |
 | 2020-11-30 | [Machine Learning for Model Error Inference and Correction](https://doi.org/10.1029/2020ms002232)<br><sub>Massimo Bonavita, Patrick Laloyaux · Journal of Advances in Modeling Earth Systems</sub> | ECMWF |  |

@@ -5,13 +5,13 @@ Emulators of climate models and long stable rollouts (decades to centuries), sce
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/climate-emulation/)
 
-13 papers (4 ⭐). Newest first.
+13 papers (3 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
 | 2025-09-15 | ⭐ [SamudrACE: Fast and Accurate Coupled Climate Modeling with 3D Ocean and Atmosphere Emulators](https://arxiv.org/abs/2509.12490)<br><sub>James P. C. Duncan, Elynn Wu, Surya Dheeshjith et al. · Geophysical Research Letters</sub> | Allen Institute for AI (Ai2, ACE), Columbia University (LEAP, Lamont-Doherty), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), New York University (M2LInES), Princeton University |  |
 | 2025-05-10 | [Climate in a Bottle: Towards a Generative Foundation Model for the Kilometer-Scale Global Atmosphere](https://arxiv.org/abs/2505.06474)<br><sub>Noah D. Brenowitz, Tao Ge, Akshay Subramaniam et al.</sub> |  |  |
-| 2024-12-05 | ⭐ [ACE2-SOM: Coupling an ML atmospheric emulator to a slab ocean and learning the sensitivity of climate to changed CO$_2$](https://arxiv.org/abs/2412.04418)<br><sub>Spencer K. Clark, Oliver Watt-Meyer, Anna Kwa et al. · Journal of Geophysical Research: Machine Learning and Computation</sub> | Allen Institute for AI (Ai2, ACE), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
+| 2024-12-05 | [ACE2-SOM: Coupling an ML atmospheric emulator to a slab ocean and learning the sensitivity of climate to changed CO$_2$](https://arxiv.org/abs/2412.04418)<br><sub>Spencer K. Clark, Oliver Watt-Meyer, Anna Kwa et al. · Journal of Geophysical Research: Machine Learning and Computation</sub> | Allen Institute for AI (Ai2, ACE), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
 | 2024-11-18 | ⭐ [ACE2: Accurately learning subseasonal to decadal atmospheric variability and forced responses](https://arxiv.org/abs/2411.11268)<br><sub>Oliver Watt-Meyer, Brian Henn, Jeremy McGibbon et al. · npj Climate and Atmospheric Science</sub> | Allen Institute for AI (Ai2, ACE), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
 | 2024-09-24 | [A Deep Learning Earth System Model for Efficient Simulation of the Observed Climate](https://arxiv.org/abs/2409.16247)<br><sub>Nathaniel Cresswell-Clay, Bowen Liu, Dale Durran et al. · AGU Advances, 6, e2025AV001706</sub> | Institute of Atmospheric Physics, Chinese Academy of Sciences, University of Washington |  |
 | 2024-08-23 | [Pushing the frontiers in climate modelling and analysis with machine learning](https://doi.org/10.1038/s41558-024-02095-y)<br><sub>Veronika Eyring, William D. Collins, Pierre Gentine et al. · Nature Climate Change</sub> | Allen Institute for AI (Ai2, ACE), California Institute of Technology (Caltech), Colorado State University (incl. CIRA), Columbia University (LEAP, Lamont-Doherty), Google Research, Inria, Lawrence Berkeley National Laboratory / NERSC, NSF NCAR / UCAR, NVIDIA, New York University (M2LInES), University of California, Berkeley, University of Oxford |  |

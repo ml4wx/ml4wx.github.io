@@ -5,7 +5,7 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/nowcasting/)
 
-13 papers (4 ⭐). Newest first.
+13 papers (5 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -19,7 +19,7 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 | 2021-04-02 | ⭐ [Skillful Precipitation Nowcasting using Deep Generative Models of Radar](https://arxiv.org/abs/2104.00954)<br><sub>Suman Ravuri, Karel Lenc, Matthew Willson et al. · Nature</sub> | Google DeepMind, Met Office, University of Reading |  |
 | 2020-06-11 | [RainNet v1.0: a convolutional neural network for radar-based precipitation nowcasting](https://doi.org/10.5194/gmd-13-2631-2020)<br><sub>Georgy Ayzel, Tobias Scheffer, Maik Heistermann · Geoscientific Model Development</sub> |  |  |
 | 2020-03-24 | ⭐ [MetNet: A Neural Weather Model for Precipitation Forecasting](https://arxiv.org/abs/2003.12140)<br><sub>Casper Kaae Sønderby, Lasse Espeholt, Jonathan Heek et al.</sub> | Google Research |  |
-| 2019-12-11 | [Machine Learning for Precipitation Nowcasting from Radar Images](https://arxiv.org/abs/1912.12132)<br><sub>Shreya Agrawal, Luke Barrington, Carla Bromberg et al.</sub> | Google Research |  |
+| 2019-12-11 | ⭐ [Machine Learning for Precipitation Nowcasting from Radar Images](https://arxiv.org/abs/1912.12132)<br><sub>Shreya Agrawal, Luke Barrington, Carla Bromberg et al.</sub> | Google Research |  |
 | 2017-06-12 | [Deep Learning for Precipitation Nowcasting: A Benchmark and A New Model](https://arxiv.org/abs/1706.03458)<br><sub>Xingjian Shi, Zhihan Gao, Leonard Lausen et al.</sub> |  |  |
 | 2015-06-13 | [Convolutional LSTM Network: A Machine Learning Approach for Precipitation Nowcasting](https://arxiv.org/abs/1506.04214)<br><sub>Xingjian Shi, Zhourong Chen, Hao Wang et al.</sub> |  |  |
 

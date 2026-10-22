@@ -5,7 +5,7 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/benchmarks-data-eval/)
 
-13 papers (4 ⭐). Newest first.
+13 papers (5 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -15,7 +15,7 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 | 2024-01-01 | [ChaosBench: A Multi-Channel, Physics-Based Benchmark for Subseasonal-to-Seasonal Climate Prediction](https://arxiv.org/abs/2402.00712)<br><sub>Juan Nathaniel, Yongquan Qu, Tung Nguyen et al. · Advances in Neural Information Processing Systems 37</sub> |  |  |
 | 2023-08-29 | ⭐ [WeatherBench 2: A benchmark for the next generation of data-driven global weather models](https://arxiv.org/abs/2308.15560)<br><sub>Stephan Rasp, Stephan Hoyer, Alexander Merose et al. · Journal of Advances in Modeling Earth Systems</sub> | ECMWF, Google DeepMind, Google Research |  |
 | 2023-07-19 | ⭐ [The rise of data-driven weather forecasting](https://arxiv.org/abs/2307.10128)<br><sub>Zied Ben-Bouallegue, Mariana C A Clare, Linus Magnusson et al. · Bulletin of the American Meteorological Society</sub> | ECMWF |  |
-| 2023-06-28 | [The EUPPBench postprocessing benchmark dataset v1.0](https://doi.org/10.5194/essd-15-2635-2023)<br><sub>Jonathan Demaeyer, Jonas Bhend, Sebastian Lerch et al. · Earth System Science Data</sub> | Deutscher Wetterdienst (DWD), ECMWF, Karlsruhe Institute of Technology (KIT), Met Office, Météo-France (incl. CNRM), MeteoSwiss | [code](https://github.com/EUPP-benchmark/climetlab-eumetnet-postprocessing-benchmark) |
+| 2023-06-28 | ⭐ [The EUPPBench postprocessing benchmark dataset v1.0](https://doi.org/10.5194/essd-15-2635-2023)<br><sub>Jonathan Demaeyer, Jonas Bhend, Sebastian Lerch et al. · Earth System Science Data</sub> | Deutscher Wetterdienst (DWD), ECMWF, Karlsruhe Institute of Technology (KIT), Met Office, Météo-France (incl. CNRM), MeteoSwiss | [code](https://github.com/EUPP-benchmark/climetlab-eumetnet-postprocessing-benchmark) |
 | 2023-01-01 | [ClimateLearn: Benchmarking Machine Learning for Weather and Climate Modeling](https://arxiv.org/abs/2307.01909)<br><sub>Tung Nguyen, Jason Jewik, Hritik Bansal et al. · Advances in Neural Information Processing Systems 36</sub> |  | [code](https://github.com/aditya-grover/climate-learn) |
 | 2022-10-17 | ⭐ [ClimateBench v1.0: A Benchmark for Data‐Driven Climate Projections](https://doi.org/10.1029/2021ms002954)<br><sub>D. Watson‐Parris, Y. Rao, D. Olivié et al. · Journal of Advances in Modeling Earth Systems</sub> | ETH Zurich, MET Norway (Norwegian Meteorological Institute), University of Oxford |  |
 | 2022-07-01 | [Challenges and Benchmark Datasets for Machine Learning in the Atmospheric Sciences: Definition, Status, and Outlook](https://doi.org/10.1175/aies-d-21-0002.1)<br><sub>Peter D. Dueben, Martin G. Schultz, Matthew Chantry et al. · Artificial Intelligence for the Earth Systems</sub> | ECMWF, Forschungszentrum Jülich / Jülich Supercomputing Centre, NSF NCAR / UCAR, NVIDIA, University of Oklahoma (AI2ES) |  |

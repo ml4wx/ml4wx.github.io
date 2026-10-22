@@ -5,7 +5,7 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/xai-uq-physics/)
 
-13 papers (2 ⭐). Newest first.
+13 papers (3 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -16,7 +16,7 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 | 2023-10-26 | [Can Artificial Intelligence‐Based Weather Prediction Models Simulate the Butterfly Effect?](https://doi.org/10.1029/2023gl105747)<br><sub>T. Selz, G. C. Craig · Geophysical Research Letters</sub> |  |  |
 | 2023-09-19 | [Dynamical Tests of a Deep-Learning Weather Prediction Model](https://arxiv.org/abs/2309.10867)<br><sub>Gregory J. Hakim, Sanjit Masanam · Artificial Intelligence for the Earth Systems</sub> | University of Washington |  |
 | 2023-04-01 | [Creating and Evaluating Uncertainty Estimates with Neural Networks for Environmental-Science Applications](https://doi.org/10.1175/aies-d-22-0061.1)<br><sub>Katherine Haynes, Ryan Lagerquist, Marie McGraw et al. · Artificial Intelligence for the Earth Systems</sub> | Colorado State University (incl. CIRA), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
-| 2021-12-14 | [Climate-Invariant Machine Learning](https://arxiv.org/abs/2112.08440)<br><sub>Tom Beucler, Pierre Gentine, Janni Yuval et al. · Science Advances</sub> | Columbia University (LEAP, Lamont-Doherty), Google Research, Massachusetts Institute of Technology (MIT), NVIDIA, University of California, Los Angeles (UCLA) |  |
+| 2021-12-14 | ⭐ [Climate-Invariant Machine Learning](https://arxiv.org/abs/2112.08440)<br><sub>Tom Beucler, Pierre Gentine, Janni Yuval et al. · Science Advances</sub> | Columbia University (LEAP, Lamont-Doherty), Google Research, Massachusetts Institute of Technology (MIT), NVIDIA, University of California, Los Angeles (UCLA) |  |
 | 2021-03-18 | [Neural Network Attribution Methods for Problems in Geoscience: A Novel Synthetic Benchmark Dataset](https://arxiv.org/abs/2103.10005)<br><sub>Antonios Mamalakis, Imme Ebert-Uphoff, Elizabeth A. Barnes · Environmental Data Science, 1, E8 (2022)</sub> | Colorado State University (incl. CIRA) |  |
 | 2021-02-15 | [Physics-informed machine learning: case studies for weather and climate modelling](https://doi.org/10.1098/rsta.2020.0093)<br><sub>K. Kashinath, M. Mustafa, A. Albert et al. · Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences</sub> | California Institute of Technology (Caltech), Lawrence Berkeley National Laboratory / NERSC, NVIDIA, Stanford University, University of California, Berkeley |  |
 | 2019-12-04 | [Physically Interpretable Neural Networks for the Geosciences: Applications to Earth System Variability](https://arxiv.org/abs/1912.01752)<br><sub>Benjamin A. Toms, Elizabeth A. Barnes, Imme Ebert-Uphoff · Journal of Advances in Modeling Earth Systems</sub> | Colorado State University (incl. CIRA) |  |

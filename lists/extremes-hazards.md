@@ -5,14 +5,14 @@ Prediction and detection of extremes: tropical cyclones, heatwaves, heavy rain, 
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/extremes-hazards/)
 
-22 papers (1 ⭐). Newest first.
+22 papers (2 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
 | 2026-08-06 | ⭐ [Operational tropical cyclone forecasting with AI](https://doi.org/10.1038/s41586-026-10953-2)<br><sub>Ferran Alet, Tom R. Andersson, Ilan Price et al. · Nature</sub> | Colorado State University (incl. CIRA), Google DeepMind, Google Research, Met Office, NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
 | 2025-02-24 | [Artificial intelligence for modeling and understanding extreme weather and climate events](https://doi.org/10.1038/s41467-025-56573-8)<br><sub>Gustau Camps-Valls, Miguel-Ángel Fernández-Torres, Kai-Hendrik Cohrs et al. · Nature Communications</sub> | Inria, Max Planck Institute for Biogeochemistry, Technical University of Munich (TUM) |  |
 | 2024-11-07 | [Do data-driven models beat numerical models in forecasting weather extremes? A comparison of IFS HRES, Pangu-Weather, and GraphCast](https://doi.org/10.5194/gmd-17-7915-2024)<br><sub>Leonardo Olivetti, Gabriele Messori · Geoscientific Model Development</sub> |  |  |
-| 2024-10-19 | [Can AI weather models predict out-of-distribution gray swan tropical cyclones?](https://arxiv.org/abs/2410.14932)<br><sub>Y. Qiang Sun, Pedram Hassanzadeh, Mohsen Zand et al. · Proceedings of the National Academy of Sciences</sub> | New York University (M2LInES), University of Chicago |  |
+| 2024-10-19 | ⭐ [Can AI weather models predict out-of-distribution gray swan tropical cyclones?](https://arxiv.org/abs/2410.14932)<br><sub>Y. Qiang Sun, Pedram Hassanzadeh, Mohsen Zand et al. · Proceedings of the National Academy of Sciences</sub> | New York University (M2LInES), University of Chicago |  |
 | 2024-04-26 | [Validating Deep Learning Weather Forecast Models on Recent High-Impact Extreme Events](https://arxiv.org/abs/2404.17652)<br><sub>Olivier C. Pasche, Jonathan Wider, Zhongwei Zhang et al. · Artificial Intelligence for the Earth Systems 4(1), e240033 (2025)</sub> |  |  |
 | 2024-03-21 | [Advances and prospects of deep learning for medium-range extreme weather forecasting](https://doi.org/10.5194/gmd-17-2347-2024)<br><sub>Leonardo Olivetti, Gabriele Messori · Geoscientific Model Development</sub> |  |  |
 | 2023-12-05 | [Do AI models produce better weather forecasts than physics-based models? A quantitative evaluation case study of Storm Ciarán](https://arxiv.org/abs/2312.02658)<br><sub>Andrew J. Charlton-Perez, Helen F. Dacre, Simon Driscoll et al. · npj Climate and Atmospheric Science</sub> | University of Reading |  |

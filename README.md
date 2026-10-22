@@ -8,7 +8,7 @@ updated every week from arXiv, journals and lab blogs.
 
 | Papers | ⭐ Highlights | Topics | Last update |
 |---:|---:|---:|---|
-| 249 | 53 | 19 | 2026-10-22 |
+| 249 | 64 | 19 | 2026-10-22 |
 
 ## Topics
 
@@ -16,38 +16,38 @@ updated every week from arXiv, journals and lab blogs.
 
 | Topic | Papers | ⭐ |
 |---|---:|---:|
-| [Nowcasting](lists/nowcasting.md) | 13 | 4 |
-| [Global medium-range NWP](lists/global-medium-range.md) | 20 | 8 |
-| [Probabilistic & ensemble forecasting](lists/probabilistic-ensembles.md) | 13 | 6 |
+| [Nowcasting](lists/nowcasting.md) | 13 | 5 |
+| [Global medium-range NWP](lists/global-medium-range.md) | 20 | 10 |
+| [Probabilistic & ensemble forecasting](lists/probabilistic-ensembles.md) | 13 | 7 |
 | [Regional & km-scale models](lists/regional-km-scale.md) | 8 | 2 |
-| [Sub-seasonal to seasonal](lists/s2s-seasonal.md) | 11 | 3 |
-| [Climate emulation](lists/climate-emulation.md) | 13 | 4 |
+| [Sub-seasonal to seasonal](lists/s2s-seasonal.md) | 11 | 5 |
+| [Climate emulation](lists/climate-emulation.md) | 13 | 3 |
 
 **Modelling chain**
 
 | Topic | Papers | ⭐ |
 |---|---:|---:|
-| [Hybrid physics-ML & parameterization](lists/hybrid-parameterization.md) | 23 | 4 |
-| [Data assimilation](lists/data-assimilation.md) | 13 | 2 |
+| [Hybrid physics-ML & parameterization](lists/hybrid-parameterization.md) | 23 | 7 |
+| [Data assimilation](lists/data-assimilation.md) | 13 | 4 |
 | [Downscaling & super-resolution](lists/downscaling.md) | 15 | 2 |
-| [Post-processing & calibration](lists/post-processing.md) | 15 | 0 |
-| [Foundation models](lists/foundation-models.md) | 9 | 3 |
+| [Post-processing & calibration](lists/post-processing.md) | 15 | 2 |
+| [Foundation models](lists/foundation-models.md) | 9 | 2 |
 
 **Hazards & observations**
 
 | Topic | Papers | ⭐ |
 |---|---:|---:|
-| [Extremes & hazards](lists/extremes-hazards.md) | 22 | 1 |
+| [Extremes & hazards](lists/extremes-hazards.md) | 22 | 2 |
 | [Observations & remote sensing](lists/observations-remote-sensing.md) | 10 | 0 |
 
 **Science & cross-cutting**
 
 | Topic | Papers | ⭐ |
 |---|---:|---:|
-| [Climate analysis & attribution](lists/climate-analysis-attribution.md) | 13 | 4 |
-| [Explainability, uncertainty & physics](lists/xai-uq-physics.md) | 13 | 2 |
-| [Benchmarks, datasets & evaluation](lists/benchmarks-data-eval.md) | 13 | 4 |
-| [Software, scaling & compression](lists/infra-software.md) | 7 | 3 |
+| [Climate analysis & attribution](lists/climate-analysis-attribution.md) | 13 | 2 |
+| [Explainability, uncertainty & physics](lists/xai-uq-physics.md) | 13 | 3 |
+| [Benchmarks, datasets & evaluation](lists/benchmarks-data-eval.md) | 13 | 5 |
+| [Software, scaling & compression](lists/infra-software.md) | 7 | 2 |
 | [Applications & impacts](lists/applications-impacts.md) | 9 | 1 |
 | [LLMs & agents](lists/llms-agents.md) | 9 | 0 |
 
@@ -63,14 +63,14 @@ classified when the topics are switched on.
 | 2025-09-23 | [An update to ECMWF's machine-learned weather forecast model AIFS](https://arxiv.org/abs/2509.18994) | ECMWF |
 | 2025-09-16 | [AERIS: Argonne Earth Systems Model for Reliable and Skillful Predictions](https://arxiv.org/abs/2509.13523) | Allen Institute for AI (Ai2, ACE), Argonne National Laboratory, University of California, Los Angeles (UCLA), University of Chicago |
 | 2025-09-15 | [SamudrACE: Fast and Accurate Coupled Climate Modeling with 3D Ocean and Atmosphere Emulators](https://arxiv.org/abs/2509.12490) | Allen Institute for AI (Ai2, ACE), Columbia University (LEAP, Lamont-Doherty), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), New York University (M2LInES), Princeton University |
+| 2025-03-31 | [Skilful global seasonal predictions from a machine learning weather model trained on reanalysis data](https://arxiv.org/abs/2503.23953) | Allen Institute for AI (Ai2, ACE), Met Office |
 | 2024-12-20 | [AIFS-CRPS: Ensemble forecasting using a model trained with a loss function based on the Continuous Ranked Probability Score](https://arxiv.org/abs/2412.15832) | ECMWF |
 | 2024-12-17 | [ArchesWeather & ArchesWeatherGen: a deterministic and generative model for efficient ML weather forecasting](https://arxiv.org/abs/2412.12971) | ECMWF, Inria |
 | 2024-12-16 | [Neural general circulation models optimized to predict satellite-based precipitation observations](https://arxiv.org/abs/2412.11973) | Google Research |
-| 2024-12-05 | [ACE2-SOM: Coupling an ML atmospheric emulator to a slab ocean and learning the sensitivity of climate to changed CO$_2$](https://arxiv.org/abs/2412.04418) | Allen Institute for AI (Ai2, ACE), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |
 | 2024-11-18 | [ACE2: Accurately learning subseasonal to decadal atmospheric variability and forced responses](https://arxiv.org/abs/2411.11268) | Allen Institute for AI (Ai2, ACE), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |
-| 2024-11-08 | [WeatherGFM: Learning A Weather Generalist Foundation Model via In-context Learning](https://arxiv.org/abs/2411.05420) | Shanghai Artificial Intelligence Laboratory |
-| 2024-10-09 | [Exploring the design space of deep-learning-based weather forecasting systems](https://arxiv.org/abs/2410.07472) | NVIDIA, University of Cambridge (Aardvark) |
+| 2024-10-19 | [Can AI weather models predict out-of-distribution gray swan tropical cyclones?](https://arxiv.org/abs/2410.14932) | New York University (M2LInES), University of Chicago |
 | 2024-10-02 | [Dynamical-generative downscaling of climate model ensembles](https://arxiv.org/abs/2410.01776) | California Institute of Technology (Caltech), Google Research |
+| 2024-09-27 | [Robustness of AI-based weather forecasts in a changing climate](https://arxiv.org/abs/2409.18529) | ECMWF |
 
 ## How it works
 

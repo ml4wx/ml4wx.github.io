@@ -5,7 +5,7 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/global-medium-range/)
 
-20 papers (8 ⭐). Newest first.
+20 papers (10 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -25,9 +25,9 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 | 2022-02-15 | [Forecasting Global Weather with Graph Neural Networks](https://arxiv.org/abs/2202.07575)<br><sub>Ryan Keisler</sub> |  |  |
 | 2021-02-15 | [Can deep learning beat numerical weather prediction?](https://doi.org/10.1098/rsta.2020.0097)<br><sub>M. G. Schultz, C. Betancourt, B. Gong et al. · Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences</sub> | Forschungszentrum Jülich / Jülich Supercomputing Centre |  |
 | 2020-08-19 | [Data-driven medium-range weather prediction with a Resnet pretrained on climate simulations: A new model for WeatherBench](https://arxiv.org/abs/2008.08626)<br><sub>Stephan Rasp, Nils Thuerey · Journal of Advances in Modeling Earth Systems</sub> | Technical University of Munich (TUM) |  |
-| 2020-03-15 | [Improving data-driven global weather prediction using deep convolutional neural networks on a cubed sphere](https://arxiv.org/abs/2003.11927)<br><sub>Jonathan A. Weyn, Dale R. Durran, Rich Caruana · Journal of Advances in Modeling Earth Systems</sub> | Microsoft Research (AI for Science), University of Washington |  |
+| 2020-03-15 | ⭐ [Improving data-driven global weather prediction using deep convolutional neural networks on a cubed sphere](https://arxiv.org/abs/2003.11927)<br><sub>Jonathan A. Weyn, Dale R. Durran, Rich Caruana · Journal of Advances in Modeling Earth Systems</sub> | Microsoft Research (AI for Science), University of Washington |  |
 | 2019-08-17 | [Can Machines Learn to Predict Weather? Using Deep Learning to Predict Gridded 500‐hPa Geopotential Height From Historical Weather Data](https://doi.org/10.1029/2019ms001705)<br><sub>Jonathan A. Weyn, Dale R. Durran, Rich Caruana · Journal of Advances in Modeling Earth Systems</sub> | Microsoft Research (AI for Science), University of Washington |  |
-| 2018-10-01 | [Challenges and design choices for global weather and climate models based on machine learning](https://doi.org/10.5194/gmd-11-3999-2018)<br><sub>Peter D. Dueben, Peter Bauer · Geoscientific Model Development</sub> | ECMWF |  |
+| 2018-10-01 | ⭐ [Challenges and design choices for global weather and climate models based on machine learning](https://doi.org/10.5194/gmd-11-3999-2018)<br><sub>Peter D. Dueben, Peter Bauer · Geoscientific Model Development</sub> | ECMWF |  |
 | 1998-09-01 | [Applying Neural Network Models to Prediction and Data Analysis in Meteorology and Oceanography](https://doi.org/10.1175/1520-0477(1998)079<1855:annmtp>2.0.co;2)<br><sub>William W. Hsieh, Benyang Tang · Bulletin of the American Meteorological Society</sub> |  |  |
 
 ## Also relevant

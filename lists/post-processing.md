@@ -5,7 +5,7 @@ Statistical post-processing of NWP or ML forecasts: bias correction, ensemble ca
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/post-processing/)
 
-15 papers (0 ⭐). Newest first.
+15 papers (2 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -18,10 +18,10 @@ Statistical post-processing of NWP or ML forecasts: bias correction, ensemble ca
 | 2021-02-15 | [Towards implementing artificial intelligence post-processing in weather and climate: proposed actions from the Oxford 2019 workshop](https://doi.org/10.1098/rsta.2020.0091)<br><sub>Sue Ellen Haupt, William Chapman, Samantha V. Adams et al. · Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences</sub> | The Alan Turing Institute, Karlsruhe Institute of Technology (KIT), Met Office, NSF NCAR / UCAR |  |
 | 2020-08-01 | [Using Artificial Neural Networks for Generating Probabilistic Subseasonal Precipitation Forecasts over California](https://doi.org/10.1175/mwr-d-20-0096.1)<br><sub>Michael Scheuerer, Matthew B. Switanek, Rochelle P. Worsnop et al. · Monthly Weather Review</sub> | NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
 | 2020-05-18 | [Deep Learning for Post-Processing Ensemble Weather Forecasts](https://arxiv.org/abs/2005.08748)<br><sub>Peter Grönquist, Chengyuan Yao, Tal Ben-Nun et al. · Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences</sub> | ECMWF, ETH Zurich |  |
-| 2020-04-14 | [Statistical Postprocessing for Weather Forecasts -- Review, Challenges and Avenues in a Big Data World](https://arxiv.org/abs/2004.06582)<br><sub>Stéphane Vannitsem, John Bjørnar Bremnes, Jonathan Demaeyer et al. · Bulletin of the American Meteorological Society</sub> | Deutscher Wetterdienst (DWD), ECMWF, Karlsruhe Institute of Technology (KIT), KNMI (Royal Netherlands Meteorological Institute), MET Norway (Norwegian Meteorological Institute), Met Office, Météo-France (incl. CNRM), MeteoSwiss |  |
+| 2020-04-14 | ⭐ [Statistical Postprocessing for Weather Forecasts -- Review, Challenges and Avenues in a Big Data World](https://arxiv.org/abs/2004.06582)<br><sub>Stéphane Vannitsem, John Bjørnar Bremnes, Jonathan Demaeyer et al. · Bulletin of the American Meteorological Society</sub> | Deutscher Wetterdienst (DWD), ECMWF, Karlsruhe Institute of Technology (KIT), KNMI (Royal Netherlands Meteorological Institute), MET Norway (Norwegian Meteorological Institute), Met Office, Météo-France (incl. CNRM), MeteoSwiss |  |
 | 2019-12-27 | [Ensemble Postprocessing Using Quantile Function Regression Based on Neural Networks and Bernstein Polynomials](https://doi.org/10.1175/mwr-d-19-0227.1)<br><sub>John Bjørnar Bremnes · Monthly Weather Review</sub> | MET Norway (Norwegian Meteorological Institute) |  |
 | 2019-09-06 | [Improving Atmospheric River Forecasts With Machine Learning](https://doi.org/10.1029/2019gl083662)<br><sub>W. E. Chapman, A. C. Subramanian, L. Delle Monache et al. · Geophysical Research Letters</sub> |  |  |
-| 2018-05-23 | [Neural networks for post-processing ensemble weather forecasts](https://arxiv.org/abs/1805.09091)<br><sub>Stephan Rasp, Sebastian Lerch · Monthly Weather Review 2018, 146, 3885-3900</sub> | Karlsruhe Institute of Technology (KIT) |  |
+| 2018-05-23 | ⭐ [Neural networks for post-processing ensemble weather forecasts](https://arxiv.org/abs/1805.09091)<br><sub>Stephan Rasp, Sebastian Lerch · Monthly Weather Review 2018, 146, 3885-3900</sub> | Karlsruhe Institute of Technology (KIT) |  |
 | 2016-06-10 | [Calibrated Ensemble Forecasts Using Quantile Regression Forests and Ensemble Model Output Statistics](https://doi.org/10.1175/mwr-d-15-0260.1)<br><sub>Maxime Taillardat, Olivier Mestre, Michaël Zamo et al. · Monthly Weather Review</sub> | Météo-France (incl. CNRM) |  |
 | 1998-12-01 | [Localized Precipitation Forecasts from a Numerical Weather Prediction Model Using Artificial Neural Networks](https://doi.org/10.1175/1520-0434(1998)013<1194:lpffan>2.0.co;2)<br><sub>Robert J. Kuligowski, Ana P. Barros · Weather and Forecasting</sub> |  |  |
 

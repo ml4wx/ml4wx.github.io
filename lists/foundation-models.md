@@ -5,12 +5,12 @@ Large pretrained models for the atmosphere or Earth system that are fine-tuned f
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/foundation-models/)
 
-9 papers (3 ⭐). Newest first.
+9 papers (2 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
 | 2025-05-07 | [ORBIT-2: Scaling Exascale Vision Foundation Models for Weather and Climate Downscaling](https://arxiv.org/abs/2505.04802)<br><sub>Xiao Wang, Jong-Youl Choi, Takuya Kurihaya et al. · Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis</sub> | Oak Ridge National Laboratory |  |
-| 2024-11-08 | ⭐ [WeatherGFM: Learning A Weather Generalist Foundation Model via In-context Learning](https://arxiv.org/abs/2411.05420)<br><sub>Xiangyu Zhao, Zhiwang Zhou, Wenlong Zhang et al.</sub> | Shanghai Artificial Intelligence Laboratory |  |
+| 2024-11-08 | [WeatherGFM: Learning A Weather Generalist Foundation Model via In-context Learning](https://arxiv.org/abs/2411.05420)<br><sub>Xiangyu Zhao, Zhiwang Zhou, Wenlong Zhang et al.</sub> | Shanghai Artificial Intelligence Laboratory |  |
 | 2024-09-20 | [Prithvi WxC: Foundation Model for Weather and Climate](https://arxiv.org/abs/2409.13598)<br><sub>Johannes Schmude, Sujit Roy, Will Trojak et al.</sub> |  |  |
 | 2024-05-20 | ⭐ [A Foundation Model for the Earth System](https://arxiv.org/abs/2405.13063)<br><sub>Cristian Bodnar, Wessel P. Bruinsma, Ana Lucic et al. · Nature</sub> | The Alan Turing Institute, Microsoft Research (AI for Science), Silurian AI, University of Cambridge (Aardvark) |  |
 | 2024-04-23 | [ORBIT: Oak Ridge Base Foundation Model for Earth System Predictability](https://arxiv.org/abs/2404.14712)<br><sub>Xiao Wang, Siyan Liu, Aristeidis Tsaris et al. · SC24: International Conference for High Performance Computing, Networking, Storage and Analysis</sub> | Oak Ridge National Laboratory |  |

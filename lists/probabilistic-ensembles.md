@@ -5,7 +5,7 @@ ML models that produce ensembles or full forecast distributions: generative mode
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/probabilistic-ensembles/)
 
-13 papers (6 ⭐). Newest first.
+13 papers (7 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -16,7 +16,7 @@ ML models that produce ensembles or full forecast distributions: generative mode
 | 2024-10-07 | [Continuous Ensemble Weather Forecasting with Diffusion models](https://arxiv.org/abs/2410.05431)<br><sub>Martin Andrae, Tomas Landelius, Joel Oskarsson et al.</sub> |  | [code](https://github.com/martinandrae/Continuous-Ensemble-Forecasting) |
 | 2024-08-06 | ⭐ [Huge Ensembles Part I: Design of Ensemble Weather Forecasts using Spherical Fourier Neural Operators](https://arxiv.org/abs/2408.03100)<br><sub>Ankur Mahesh, William Collins, Boris Bonev et al. · Geoscientific Model Development</sub> | Lawrence Berkeley National Laboratory / NERSC, NVIDIA, University of California, Berkeley |  |
 | 2024-05-09 | ⭐ [FuXi-ENS: A machine learning model for medium-range ensemble weather forecasting](https://arxiv.org/abs/2405.05925)<br><sub>Xiaohui Zhong, Lei Chen, Hao Li et al. · Science Advances</sub> | China Meteorological Administration (CMA), Fudan University (FuXi), Nanjing University of Information Science & Technology (NUIST) |  |
-| 2024-01-27 | [A Practical Probabilistic Benchmark for AI Weather Models](https://arxiv.org/abs/2401.15305)<br><sub>Noah D. Brenowitz, Yair Cohen, Jaideep Pathak et al. · Geophysical Research Letters, 52, e2024GL113656 (2025)</sub> | Lawrence Berkeley National Laboratory / NERSC, NVIDIA, University of California, Berkeley |  |
+| 2024-01-27 | ⭐ [A Practical Probabilistic Benchmark for AI Weather Models](https://arxiv.org/abs/2401.15305)<br><sub>Noah D. Brenowitz, Yair Cohen, Jaideep Pathak et al. · Geophysical Research Letters, 52, e2024GL113656 (2025)</sub> | Lawrence Berkeley National Laboratory / NERSC, NVIDIA, University of California, Berkeley |  |
 | 2024-01-01 | [Probabilistic Weather Forecasting with Hierarchical Graph Neural Networks](https://arxiv.org/abs/2406.04759)<br><sub>Joel Oskarsson, Tomas Landelius, Marc Peter Deisenroth et al. · Advances in Neural Information Processing Systems 37</sub> |  | [code](https://github.com/mllam/neural-lam) |
 | 2023-12-25 | ⭐ [GenCast: Diffusion-based ensemble forecasting for medium-range weather](https://arxiv.org/abs/2312.15796)<br><sub>Ilan Price, Alvaro Sanchez-Gonzalez, Ferran Alet et al. · Nature</sub> | Google DeepMind, Google Research |  |
 | 2023-06-24 | ⭐ [SEEDS: Emulation of Weather Forecast Ensembles with Diffusion Models](https://arxiv.org/abs/2306.14066)<br><sub>Lizao Li, Rob Carver, Ignacio Lopez-Gomez et al. · Science Advances</sub> | Google Research |  |
