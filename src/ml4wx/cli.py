@@ -263,7 +263,7 @@ def cmd_enrich(args) -> int:
 def cmd_judge(args) -> int:
     """Re-score highlights for papers added by a source (e.g. after a backfill)."""
     cfg, archive = load(), Archive()
-    sel = [p for p in archive.papers.values() if not args.source or p.source == args.source]
+    sel = [p for p in archive.papers.values() if not args.source or p.source in args.source]
     maybe = [p for p in sel if ingest.maybe_highlight(p, cfg)]
     ingest.judge(maybe, cfg)
     for p in maybe:
@@ -364,7 +364,7 @@ def main(argv: list[str] | None = None) -> int:
     p.set_defaults(fn=cmd_enrich)
 
     p = sub.add_parser("judge", help="second-opinion significance for likely highlights")
-    p.add_argument("--source", default=None)
+    p.add_argument("--source", nargs="*", default=None, help="only papers from these sources")
     p.set_defaults(fn=cmd_judge)
 
     p = sub.add_parser("weekly", help="weekly crawl: fetch, ingest, export, digest")

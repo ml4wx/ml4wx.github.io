@@ -96,7 +96,7 @@ jobs:
               done ;;
             snowball) uv run ml4wx snowball --max-minutes 300 ;;
             enrich)   uv run ml4wx enrich ;;
-            judge)    uv run ml4wx judge ;;
+            judge)    uv run ml4wx judge --source backfill snowball ;;  # seeds were judged on ingest
           esac
           checkpoint ""
 
