@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import logging
 from pathlib import Path
 
 import yaml
@@ -10,6 +11,8 @@ import yaml
 from . import ids
 from .config import repo_root
 from .models import Candidate, Paper
+
+log = logging.getLogger(__name__)
 
 
 def _dump_paper(p: Paper) -> str:
@@ -23,9 +26,15 @@ class Archive:
     def __init__(self, root: Path | None = None):
         self.root = root or repo_root()
         self.papers: dict[str, Paper] = {}
+        self.invalid: list[tuple[Path, str]] = []  # broken files are skipped; `validate` reports them
         for f in sorted((self.root / "papers").glob("*/*.yaml")):
-            with open(f, encoding="utf-8") as fh:
-                p = Paper.model_validate(yaml.safe_load(fh))
+            try:
+                with open(f, encoding="utf-8") as fh:
+                    p = Paper.model_validate(yaml.safe_load(fh))
+            except (yaml.YAMLError, ValueError) as e:
+                log.error("skipping %s: %s", f, str(e).splitlines()[0])
+                self.invalid.append((f, str(e).splitlines()[0]))
+                continue
             self.papers[p.id] = p
         self.parked: dict[str, dict] = {}
         for f in sorted((self.root / "parked").glob("*.jsonl")):

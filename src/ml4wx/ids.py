@@ -5,18 +5,24 @@ from __future__ import annotations
 import re
 import unicodedata
 
-_ARXIV_NEW = re.compile(r"(\d{4}\.\d{4,5})(v\d+)?")
-_ARXIV_OLD = re.compile(r"([a-z\-]+(?:\.[A-Z]{2})?/\d{7})(v\d+)?")
+# YYMM.NNNNN with a real month, not inside a longer number (so DOIs like 10.1098/x.2020.0782 fail).
+_ARXIV_NEW = re.compile(r"(?<![\d.])(\d{2}(?:0[1-9]|1[0-2])\.\d{4,5})(v\d+)?(?![\d])")
+_ARXIV_OLD = re.compile(r"(?<![\w-])([a-z\-]+(?:\.[A-Z]{2})?/\d{7})(v\d+)?(?!\d)")
 _ARXIV_DOI = re.compile(r"10\.48550/arxiv\.(.+)$", re.I)
 
 
 def norm_arxiv(s: str | None) -> str | None:
-    """'http://arxiv.org/abs/2212.12794v2' -> '2212.12794'."""
+    """'http://arxiv.org/abs/2212.12794v2', 'arXiv:2212.12794' or the arXiv DOI -> '2212.12794'.
+
+    Other DOIs never give an arXiv id.
+    """
     if not s:
         return None
     s = s.strip()
     if m := _ARXIV_DOI.search(s):
         s = m.group(1)
+    elif re.search(r"(^|/)10\.\d{4,}/", s):
+        return None
     if m := _ARXIV_NEW.search(s):
         return m.group(1)
     if m := _ARXIV_OLD.search(s):

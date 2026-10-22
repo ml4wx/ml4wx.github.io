@@ -44,9 +44,10 @@ def _arxiv_from_locations(w: dict) -> str | None:
         if not loc:
             continue
         for url in (loc.get("landing_page_url"), loc.get("pdf_url")):
-            if url and "arxiv.org" in url and (a := ids.norm_arxiv(url)):
+            if url and "arxiv.org/" in url and (a := ids.norm_arxiv(url.split("arxiv.org/", 1)[1])):
                 return a
-    return ids.norm_arxiv(w.get("doi"))
+    doi = w.get("doi") or ""
+    return ids.norm_arxiv(doi) if "10.48550/" in doi.lower() else None
 
 
 def parse_work(w: dict, source: str) -> Candidate | None:

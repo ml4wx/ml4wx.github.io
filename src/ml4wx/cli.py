@@ -37,7 +37,7 @@ def _gh_output(**kw) -> None:
 # --- commands --------------------------------------------------------------------
 def cmd_validate(args) -> int:
     cfg, archive = load(), Archive()
-    errors = []
+    errors = [f"{path.relative_to(archive.root)}: cannot load ({msg})" for path, msg in archive.invalid]
     slugs = {t.slug for t in cfg.topics}
     keys: dict[str, str] = {}
     for p in archive.papers.values():
