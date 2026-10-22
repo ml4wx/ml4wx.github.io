@@ -8,7 +8,7 @@ on:
       task:
         description: What to run
         type: choice
-        options: [seed, backfill, snowball, enrich, judge]
+        options: [seed, backfill, snowball, reclassify, enrich, judge, dedupe]
         default: backfill
       start:
         description: "backfill: first month (YYYY-MM-DD)"
@@ -95,7 +95,9 @@ jobs:
                 done_months=$((done_months + 6))
               done ;;
             snowball) uv run ml4wx snowball --max-minutes 300 ;;
+            reclassify) uv run ml4wx reclassify --source snowball ;;
             enrich)   uv run ml4wx enrich ;;
+            dedupe)   uv run ml4wx dedupe ;;
             judge)    uv run ml4wx judge --source backfill snowball ;;  # seeds were judged on ingest
           esac
           checkpoint ""

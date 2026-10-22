@@ -260,6 +260,65 @@ def cmd_enrich(args) -> int:
     return 0
 
 
+def cmd_reclassify(args) -> int:
+    """Classify papers again with abstracts fetched from OpenAlex and arXiv.
+
+    For papers first classified from the title only (Semantic Scholar often has no abstract).
+    Out-of-scope papers are removed and rejected, 'later' ones are parked.
+    """
+    from . import classify, dedupe
+
+    cfg, archive = load(), Archive()
+    papers = [p for p in archive.papers.values() if p.source in args.source and (args.all or not p.abstract)]
+    by_key = {k: p for p in papers for k in p.ids.keys()}
+    fetched: dict[str, Candidate] = {}
+
+    def keep(c: Candidate) -> None:
+        p = next((by_key[k] for k in c.ids.keys() if k in by_key), None)
+        if p and c.abstract and (p.id not in fetched or c.abstract_license_ok):
+            fetched[p.id] = c
+
+    for c in arxiv.lookup([p.ids.arxiv for p in papers if p.ids.arxiv], source="reclassify"):
+        keep(c)
+    try:
+        keys = [k for p in papers if p.id not in fetched for k in p.ids.keys()[:2]]
+        for c in openalex.lookup(keys, source="reclassify"):
+            keep(c)
+    except BudgetExceeded as e:
+        log.warning("OpenAlex stopped early: %s", e)
+    cands = []
+    for p in papers:
+        c = fetched.get(p.id) or Candidate(ids=p.ids, title=p.title, authors=p.authors, date=p.date)
+        cands.append(c)
+    print(f"reclassify: {len(papers)} papers, {len(fetched)} with an abstract now")
+    results = classify.classify(cands, cfg)
+    removed = parked = updated = 0
+    for p, c in zip(papers, cands, strict=True):
+        r = results.get(c.key)
+        if r is None:
+            continue
+        if r["decision"] == "out":
+            dedupe.remove(archive, p)
+            removed += 1
+        elif r["decision"] == "later":
+            dedupe.remove(archive, p, reject=False)
+            archive.park(c, r["topic"])
+            parked += 1
+        else:
+            for k in ("topic", "topics", "type", "method", "spatial", "data", "status", "significance"):
+                setattr(p, k, r[k])
+            p.timescale = [t for t in r["timescale"] if t != "none"]
+            p.summary = r["summary"].strip()
+            if c.abstract and c.abstract_license_ok:
+                p.abstract = c.abstract
+            ingest.finalize(p, cfg)
+            archive.save_paper(p)
+            updated += 1
+    archive.save_state()
+    print(f"reclassify: {updated} kept (labels updated), {removed} removed as out of scope, {parked} parked")
+    return 0
+
+
 def cmd_dedupe(args) -> int:
     from . import dedupe
 
@@ -374,6 +433,11 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--days", type=int, default=None, help="only papers added in the last N days")
     p.add_argument("--missing-orgs", action="store_true", help="only papers without labs")
     p.set_defaults(fn=cmd_enrich)
+
+    p = sub.add_parser("reclassify", help="classify again with abstracts (title-only papers)")
+    p.add_argument("--source", nargs="+", default=["snowball"])
+    p.add_argument("--all", action="store_true", help="also papers that already have an abstract")
+    p.set_defaults(fn=cmd_reclassify)
 
     p = sub.add_parser("dedupe", help="merge duplicate papers, remove retracted ones")
     p.add_argument("--dry-run", action="store_true")
