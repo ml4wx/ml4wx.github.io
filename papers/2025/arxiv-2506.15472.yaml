@@ -1,0 +1,54 @@
+id: arxiv-2506.15472
+title: 'Blended parameterization in an atmospheric model: Improving severestorm ensemble prediction by
+  considering uncertainties in model physics'
+authors:
+- Khanh Hung Mai
+- Duc Le
+- Kazuo Saito
+- Tomizawa Futo
+- Yohei Sawada
+date: '2025-06-18'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2506.15472'
+links:
+  paper: https://arxiv.org/abs/2506.15472
+  pdf: https://arxiv.org/pdf/2506.15472
+topic: probabilistic-ensembles
+topics:
+- regional-km-scale
+type: model
+method:
+- classical-ml
+- other
+timescale:
+- short
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Blended parameterization uses MCMC with a surrogate model to optimise physics-scheme weights,
+  yielding a rainfall ensemble for Vietnam that beats a conventional physics ensemble.
+abstract: Physics parameterizations are often needed for numerical weather prediction (NWP) of precipitation
+  forecast. This is mainly because the resolutions of most computational atmospheric models are not fine
+  enough to explicitly resolve sub-grid scale processes associated with precipitation systems. The various
+  options in each physical parameterization scheme introduce model physics uncertainty, leading to variations
+  in simulated precipitation due to differing representations of physical processes. We aim to quantify
+  and reduce uncertainties in severe storm prediction arising from selecting physics parameterization
+  schemes. In this study, we introduced a method called "blended parameterization" in an atmospheric model.
+  This method parameterizes the selection of physical parameterization schemes using weighting parameters.
+  This approach reduces the model selection problem to the optimization of these weighting parameters.
+  The Markov Chain Monte Carlo (MCMC) method was used to estimate the posterior probability distribution
+  of the weighting parameters. The large computational cost of MCMC was resolved by a surrogate model
+  that efficiently mimics the relationship between weighting parameters and likelihood. Subsequently,
+  the weighting parameters were sampled from the posterior distribution, followed by conducting an ensemble
+  simulation to predict rainfall in Vietnam. Our optimized "blended parameterized" ensemble prediction
+  system outperformed a conventional physical ensemble prediction system similar to that operationally
+  used in Vietnam.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

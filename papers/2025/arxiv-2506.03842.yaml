@@ -1,0 +1,58 @@
+id: arxiv-2506.03842
+title: 'Improving Post-Processing for Quantitative Precipitation Forecasting Using Deep Learning: Learning
+  Precipitation Physics from High-Resolution Observations'
+authors:
+- ChangJae Lee
+- Heecheol Yang
+- Byeonggwon Kim
+date: '2025-06-04'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2506.03842'
+  openalex: W4416073884
+links:
+  paper: https://arxiv.org/abs/2506.03842
+  pdf: https://arxiv.org/pdf/2506.03842
+orgs:
+- kma
+topic: post-processing
+topics:
+- extremes-hazards
+type: model
+method:
+- gan-vae
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- radar
+- nwp-analysis
+status: research
+summary: DL-QPF, a Patch-cGAN U-Net trained on Korean radar data, post-processes IFS-HRES and beats NWP
+  and GraphCast on heavy rainfall skill.
+abstract: Accurate quantitative precipitation forecasting (QPF) remains one of the main challenges in
+  numerical weather prediction (NWP), primarily due to the difficulty of representing the full complexity
+  of atmospheric microphysics through parameterization schemes. This study introduces a deep learning-based
+  post-processing model, DL-QPF, which diagnoses precipitation fields from meteorological forecasts by
+  learning directly from high-resolution radar estimates precipitation. The DL-QPF model is constructed
+  using a Patch-conditional Generative Adversarial Network (Patch-cGAN) architecture combined with a U-Net
+  generator and a discriminator. The generator learns meteorological features relevant to precipitation,
+  while the adversarial loss from the discriminator encourages the generation of realistic rainfall patterns
+  and distributions. Training is performed on three years of warm-season data over the Korean Peninsula,
+  with input variables derived from ECMWF's Integrated Forecasting System High-Resolution forecast (IFS-HRES).
+  Model verification is conducted against multiple reference models, including global (IFS-HRES, KIM),
+  regional (KIM-Regional, KIM-LENS), and AI-based (GraphCast) forecasts. Verification across multiple
+  rainfall thresholds shows that DL-QPF achieves a frequency bias near one and superior success ratios.
+  Particularly for heavy and intense rainfall events, DL-QPF outperforms both conventional NWP and an
+  AI model, demonstrating improved skill in capturing high-intensity precipitation. This study highlights
+  the potential of observational data-driven deep learning approaches in post-processing QPF. By directly
+  learning from observations, DL-QPF reduces systematic biases and enhances the realism of forecasted
+  rainfall distributions. These results demonstrate the model's potential to enhance QPF realism.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

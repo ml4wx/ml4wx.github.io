@@ -5,10 +5,12 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/xai-uq-physics/)
 
-13 papers (3 ⭐). Newest first.
+15 papers (3 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2025-06-13 | [Forecast error diagnostics in neural weather models](https://arxiv.org/abs/2506.11987)<br><sub>Uros Perkan, Ziga Zaplotnik, Gregor Skok</sub> |  |  |
+| 2025-06-01 | [Machine learning reconstruction of large-scale motions and inclination angles in stratified atmospheric surface layer](https://doi.org/10.1063/5.0273240)<br><sub>Shanzheng Wei, Xuebo Li · Physics of Fluids</sub> | Columbia University (LEAP, Lamont-Doherty) |  |
 | 2024-09-27 | ⭐ [Robustness of AI-based weather forecasts in a changing climate](https://arxiv.org/abs/2409.18529)<br><sub>Thomas Rackow, Nikolay Koldunov, Christian Lessig et al.</sub> | ECMWF |  |
 | 2024-06-14 | ⭐ [On Some Limitations of Current Machine Learning Weather Prediction Models](https://doi.org/10.1029/2023gl107377)<br><sub>Massimo Bonavita · Geophysical Research Letters</sub> | ECMWF |  |
 | 2024-06-07 | [Predictability Limit of the 2021 Pacific Northwest Heatwave from Deep-Learning Sensitivity Analysis](https://arxiv.org/abs/2406.05019)<br><sub>P. Trent Vonich, Gregory J. Hakim · Geophysical Research Letters</sub> | University of Washington |  |
@@ -25,6 +27,15 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 
 ## Also relevant
 
+- [Probing forced responses and causality in data-driven climate emulators: conceptual limitations and the role of reduced-order models](https://arxiv.org/abs/2506.22552) (2025)
+- [AI-informed model-analogs for understanding subseasonal-to-seasonal jet stream and North American temperature predictability](https://arxiv.org/abs/2506.14022) (2025)
+- [Arnoldi Singular Vector perturbations for machine learning weather prediction](https://arxiv.org/abs/2506.22450) (2025)
+- [Causal Climate Emulation with Bayesian Filtering](https://arxiv.org/abs/2506.09891) (2025)
+- [Decomposing the Bias of Shortwave Cloud Radiative Effect in a Climate Model Using Machine Learning](https://doi.org/10.1029/2024gl114203) (2025)
+- [Measuring Sharpness of AI-Generated Meteorological Imagery](https://doi.org/10.1175/aies-d-24-0083.1) (2025)
+- [Meteorologically-Informed Adaptive Conformal Prediction for Tropical Cyclone Intensity Forecasting](https://arxiv.org/abs/2506.06638) (2025)
+- [Gaussian Framework and Optimal Projection of Weather Fields for Prediction of Extreme Events](https://doi.org/10.1029/2024ms004487) (2025)
+- [Explainable image segmentation for spatio-temporal and multivariate image data in precipitation nowcasting](https://doi.org/10.1016/j.rineng.2025.105595) (2025)
 - [Recommendations for Comprehensive and Independent Evaluation of Machine Learning-Based Earth System Models](https://arxiv.org/abs/2410.19882) (2024)
 - [Can AI weather models predict out-of-distribution gray swan tropical cyclones?](https://arxiv.org/abs/2410.14932) (2024)
 - [Anthropogenic fingerprints in daily precipitation revealed by deep learning](https://doi.org/10.1038/s41586-023-06474-x) (2023)

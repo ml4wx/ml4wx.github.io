@@ -1,0 +1,54 @@
+id: arxiv-2404.18314
+title: DIRESA, a Distance-Preserving Nonlinear Dimension Reduction Technique Based on Regularized Autoencoders
+authors:
+- Geert De Paepe
+- Lesley De Cruz
+date: '2025-06-03'
+year: 2025
+venue: Artificial Intelligence for the Earth Systems
+venue_type: journal
+ids:
+  arxiv: '2404.18314'
+  doi: 10.1175/aies-d-24-0034.1
+  openalex: W4410993847
+links:
+  paper: https://doi.org/10.1175/aies-d-24-0034.1
+  pdf: https://arxiv.org/pdf/2404.18314
+topic: infra-software
+topics:
+- climate-analysis-attribution
+type: model
+method:
+- other
+data:
+- era5
+- other
+status: research
+summary: Distance-regularized Siamese autoencoder (DIRESA) compresses weather and climate datasets and
+  enables analog search in a latent space that outperforms PCA and VAEs on reconstruction.
+abstract: Abstract In meteorology, finding similar weather patterns or analogs in historical datasets
+  can be useful for data assimilation, forecasting, and postprocessing. In climate science, analogs in
+  historical and climate projection data are used for attribution and impact studies. However, most of
+  the time, those large weather and climate datasets are nearline. This means that they must be downloaded,
+  which takes a lot of bandwidth and disk space, before the computationally expensive search can be executed.
+  We propose a dimension reduction technique based on autoencoder (AE) neural networks to compress the
+  datasets and perform the search in an interpretable, compressed latent space. A distance-regularized
+  Siamese twin autoencoder (DIRESA) architecture is designed to preserve distance in latent space while
+  capturing the nonlinearities in the datasets. Using conceptual climate models of different complexities,
+  we show that the latent components thus obtained provide physical insight into the dominant modes of
+  variability in the system. Compressing datasets with DIRESA reduces the online storage and keeps the
+  latent components uncorrelated, while the distance (ordering) preservation and reconstruction fidelity
+  robustly outperform principal component analysis (PCA) and other dimension reduction techniques such
+  as Uniform Manifold Approximation and Projection (UMAP) or variational autoencoders. Significance Statement
+  This paper introduces a novel, deep learning–based dimension reduction method called distance-regularized
+  Siamese twin autoencoder (DIRESA). We believe that this method has the potential to complement the widely
+  used principal component analysis. It gives the user insight into the dominant modes of variability
+  in the system while offering excellent reconstruction fidelity and distance preservation in latent space.
+  To increase the impact of this method and facilitate its adoption by the scientific community, we have
+  made it available in a user-friendly Python package. The DIRESA method could thus become a standard
+  tool for many atmospheric and climate scientists.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

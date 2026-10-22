@@ -5,10 +5,31 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/observations-remote-sensing/)
 
-10 papers (0 ⭐). Newest first.
+31 papers (0 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2025-06-30 | [Deriving Overlapped Cloud Motion Vectors Based on Geostationary Satellite and Its Application on Monitoring Typhoon Mulan](https://doi.org/10.1029/2025gl116397)<br><sub>Cuiping Liu, Wei Han, Feng Zhang et al. · Geophysical Research Letters</sub> | Fudan University (FuXi), China Meteorological Administration (CMA) |  |
+| 2025-06-30 | [Diurnal Variation of Cloud Physical Properties for Tropical Cyclones Over North Atlantic in 2019–2023](https://doi.org/10.1029/2025gl115566)<br><sub>Cuiping Liu, Feng Zhang, Huiling Ouyang et al. · Geophysical Research Letters</sub> | Fudan University (FuXi) |  |
+| 2025-06-26 | [Retrieval of thermodynamic profiles in the lower troposphere from GNSS radio occultation using deep learning](https://doi.org/10.5194/egusphere-2025-2767)<br><sub>Matthias Aichinger‐Rosenberger, Jeremiah Sjoberg</sub> | NSF NCAR / UCAR, ETH Zurich |  |
+| 2025-06-26 | [Missing Wind Speed Data Prediction using Artificial Neural Network](https://doi.org/10.37934/ard.135.1.154168)<br><sub>Sayed Saad Ali Shah Mukaramshah, Juntakan Taweekun · Journal of Advanced Research Design</sub> |  |  |
+| 2025-06-26 | [Preliminary Study on Near-Surface Air Temperature Lapse Rate Estimation and Its Spatiotemporal Distribution Characteristics in Beijing–Tianjin–Hebei Mountainous Region](https://doi.org/10.3390/rs17132205)<br><sub>Qichen Lv, Mingming Sui, Shanyou Zhu et al. · Remote Sensing</sub> | Nanjing University of Information Science & Technology (NUIST) |  |
+| 2025-06-26 | [Retrieving tropospheric Water Vapor and Temperature from Refractivity over Tropical Oceans: A deep learning approach for Global Navigation Satellite System (GNSS) Radio Occultation](https://doi.org/10.22541/essoar.175097840.06059750/v1)<br><sub>M Santosh, Harris John, Deepak Mishra</sub> |  |  |
+| 2025-06-26 | [Lighting the Night with Generative Artificial Intelligence](https://arxiv.org/abs/2506.22511)<br><sub>Tingting Zhou, Feng Zhang, Haoyang Fu et al.</sub> |  |  |
+| 2025-06-26 | [AIR-VIEW: The Aviation Image Repository for Visibility Estimation of Weather, A Dataset and Benchmark](https://arxiv.org/abs/2506.20939)<br><sub>Chad Mourning, Zhewei Wang, Justin Murray</sub> |  |  |
+| 2025-06-25 | [A Survey of Methods and Architectures for Environmental Weather Monitoring and Prediction System Using IoT and Multi-Model Progressive Dense Self-Attention](https://doi.org/10.65521/ijacte.v14i1.2759)<br><sub>Deepansh Lutfunhar · International Journal on Advanced Computer Theory and Engineering</sub> |  |  |
+| 2025-06-23 | [Ensemble Learning for Spatial Modeling of Icing Fields from Multi-Source Remote Sensing Data](https://doi.org/10.3390/rs17132155)<br><sub>Shaohui Zhou, Zhiqiu Gao, Bo Gong et al. · Remote Sensing</sub> | Nanjing University of Information Science & Technology (NUIST), China Meteorological Administration (CMA) |  |
+| 2025-06-20 | [Construction of a High-Resolution Temperature Dataset at 40–110 KM over China Utilizing TIMED/SABER and FY-4A Satellite Data](https://doi.org/10.3390/atmos16070758)<br><sub>Qian Ye, Mohan Liu, Dan Du et al. · Atmosphere</sub> | China Meteorological Administration (CMA) |  |
+| 2025-06-18 | [Artificial Intelligence Techniques for Environmental Weather Monitoring and Prediction System Using IoT and Multi-Model Progressive Dense Self-Attention: Trends and Challenges](https://doi.org/10.65521/ijacect.v14i1.2739)<br><sub>Leocadia Voronova · International Journal on Advanced Computer Engineering and Communication Technology</sub> |  |  |
+| 2025-06-16 | [Automatic approach for wind vector retrieval from dual-polarized 1mC-SAR image based on machine learning](https://doi.org/10.1016/j.asr.2025.06.033)<br><sub>S.J. Leng, Weizeng Shao, Q.J. Zhang et al. · Advances in Space Research</sub> |  |  |
+| 2025-06-13 | [Decadal sink-source shifts of forest aboveground carbon since 1988](https://arxiv.org/abs/2506.11879)<br><sub>Zhen Qian, Sebastian Bathiany, Teng Liu et al.</sub> |  |  |
+| 2025-06-13 | [Fusion of multi-source precipitation records via coordinate-based generative model](https://arxiv.org/abs/2506.11698)<br><sub>Sencan Sun, Congyi Nai, Baoxiang Pan et al.</sub> |  |  |
+| 2025-06-12 | [Deep Learning and Optimization Approaches in Environmental Weather Monitoring and Prediction System Using IoT and Multi-Model Progressive Dense Self-Attention: A Review](https://doi.org/10.65521/ijaece.v14i1.2693)<br><sub>Oisin Braginskaya · International Journal on Advanced Electrical and Computer Engineering</sub> |  |  |
+| 2025-06-12 | [A new gridded offshore wind profile product for US coasts using machine learning and satellite observations](https://doi.org/10.5194/wes-10-1077-2025)<br><sub>James Frech, Korak Saha, Paige D. Lavin et al. · Wind energy science</sub> | NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
+| 2025-06-11 | [Retrieval of Surface Solar Radiation through Implicit Albedo Recovery from Temporal Context](https://arxiv.org/abs/2506.10174)<br><sub>Yael Frischholz, Devis Tuia, Michael Lehning</sub> |  | [code](https://github.com/frischwood/HeMu-dev.git) |
+| 2025-06-09 | [The crucial role of seasonality in improving the skill of machine learning in predicting precipitation types in China](https://doi.org/10.1016/j.jhydrol.2025.133635)<br><sub>Yi Wang, Jennifer L. Catto, Robin S. Chadwick · Journal of Hydrology</sub> | Met Office |  |
+| 2025-06-07 | [A Convolutional Neural Network for the Detection of Gravity Waves in Satellite Observations and Numerical Simulations](https://doi.org/10.1029/2025gl115683)<br><sub>Haruka Okui, Corwin James Wright, Peter G. Berthelemy et al. · Geophysical Research Letters</sub> | Forschungszentrum Jülich / Jülich Supercomputing Centre |  |
+| 2025-06-05 | [Forward modelling of passive microwave emissivities over snow-covered areas at continental scale](https://doi.org/10.1016/j.rse.2025.114821)<br><sub>Iris de Gélis, Catherine Prigent, Carlos Jiménez et al. · Remote Sensing of Environment</sub> |  |  |
 | 2022-09-02 | [GPROF-NN: a neural-network-based implementation of the Goddard Profiling Algorithm](https://doi.org/10.5194/amt-15-5033-2022)<br><sub>Simon Pfreundschuh, Paula J. Brown, Christian D. Kummerow et al. · Atmospheric Measurement Techniques</sub> | Colorado State University (incl. CIRA) |  |
 | 2022-05-02 | [Machine-learned cloud classes from satellite data for process-oriented climate model evaluation](https://arxiv.org/abs/2205.00743)<br><sub>A. Kaps, A. Lauer, G. Camps-Valls et al. · IEEE Transactions on Geoscience and Remote Sensing</sub> | Columbia University (LEAP, Lamont-Doherty) |  |
 | 2020-04-16 | [Development and Interpretation of a Neural Network-Based Synthetic Radar Reflectivity Estimator Using GOES-R Satellite Observations](https://arxiv.org/abs/2004.07906)<br><sub>Kyle A. Hilburn, Imme Ebert-Uphoff, Steven D. Miller · Journal of Applied Meteorology and Climatology</sub> | Colorado State University (incl. CIRA) |  |
@@ -22,6 +43,14 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 
 ## Also relevant
 
+- [Multimodal Atmospheric Super-Resolution With Deep Generative Models](https://arxiv.org/abs/2506.22780) (2025)
+- [PeakWeather: MeteoSwiss Weather Station Measurements for Spatiotemporal Deep Learning](https://arxiv.org/abs/2506.13652) (2025)
+- [Intelligent Nowcasting of Convection Initiation Using a Special Ring‐Like Warmer Environment Implied in Fengyun‐4B AGRI Data](https://doi.org/10.1029/2024jd042526) (2025)
+- [Evaluation of IMERG Precipitation Product Downscaling Using Nine Machine Learning Algorithms in the Qinghai Lake Basin](https://doi.org/10.3390/w17121776) (2025)
+- [Improving GNSS precise point positioning with tropospheric constraints from data-driven numerical weather prediction model](https://doi.org/10.1080/10095020.2025.2513650) (2025)
+- [Tropical Cyclone Intensity Estimation: A Study Of Neural Architecture Search And Transfer Learning In Cnns](https://doi.org/10.64252/516qna94) (2025)
+- [Using a data-driven statistical model to better evaluate surface turbulent heat fluxes in weather and climate numerical models: a demonstration study](https://doi.org/10.5194/gmd-18-3211-2025) (2025)
+- [MODS: Multi-source Observations Conditional Diffusion Model for Meteorological State Downscaling](https://arxiv.org/abs/2506.14798) (2025)
 - [Neural general circulation models optimized to predict satellite-based precipitation observations](https://arxiv.org/abs/2412.11973) (2024)
 - [WeatherReal: A Benchmark Based on In-Situ Observations for Evaluating Weather Models](https://arxiv.org/abs/2409.09371) (2024)
 - [Fuxi-DA: A Generalized Deep Learning Data Assimilation Framework for Assimilating Satellite Observations](https://arxiv.org/abs/2404.08522) (2024)

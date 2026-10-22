@@ -1,0 +1,57 @@
+id: arxiv-2506.20024
+title: Elucidated Rolling Diffusion Models for Probabilistic Forecasting of Complex Dynamics
+authors:
+- Salva Rühling Cachay
+- Miika Aittala
+- Karsten Kreis
+- Noah Brenowitz
+- Arash Vahdat
+- Morteza Mardani
+- Rose Yu
+date: '2025-06-24'
+year: 2025
+venue: Advances in Neural Information Processing Systems (NeurIPS), 2025
+venue_type: journal
+ids:
+  arxiv: '2506.20024'
+links:
+  paper: https://arxiv.org/abs/2506.20024
+  pdf: https://arxiv.org/pdf/2506.20024
+topic: probabilistic-ensembles
+topics:
+- foundation-models
+type: model
+method:
+- diffusion
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Elucidated rolling diffusion models unify rolling forecasts with EDM design, outperforming diffusion
+  baselines on ERA5 global weather forecasting at 1.5 degrees and Navier-Stokes.
+abstract: 'Diffusion models are a powerful tool for probabilistic forecasting, yet most applications in
+  high-dimensional complex systems predict future states individually. This approach struggles to model
+  complex temporal dependencies and fails to explicitly account for the progressive growth of uncertainty
+  inherent to the systems. While rolling diffusion frameworks, which apply increasing noise to forecasts
+  at longer lead times, have been proposed to address this, their integration with state-of-the-art, high-fidelity
+  diffusion techniques remains a significant challenge. We tackle this problem by introducing Elucidated
+  Rolling Diffusion Models (ERDM), the first framework to successfully unify a rolling forecast structure
+  with the principled, performant design of Elucidated Diffusion Models (EDM). To do this, we adapt the
+  core EDM components-its noise schedule, network preconditioning, and Heun sampler-to the rolling forecast
+  setting. The success of this integration is driven by three key contributions: (i) a novel loss weighting
+  scheme that focuses model capacity on the mid-range forecast horizons where determinism gives way to
+  stochasticity; (ii) an efficient initialization strategy using a pre-trained EDM for the initial window;
+  and (iii) a bespoke hybrid sequence architecture for robust spatiotemporal feature extraction under
+  progressive denoising. On 2D Navier-Stokes simulations and ERA5 global weather forecasting at 1.5-degree
+  resolution, ERDM consistently outperforms key diffusion-based baselines, including conditional autoregressive
+  EDM. ERDM offers a flexible and powerful general framework for tackling diffusion-based dynamics forecasting
+  problems where modeling uncertainty propagation is paramount.'
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

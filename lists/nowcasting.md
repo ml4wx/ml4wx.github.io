@@ -5,10 +5,20 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/nowcasting/)
 
-13 papers (5 ⭐). Newest first.
+23 papers (5 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2025-06-30 | [An individual motion driven CNN-Based AI method for precipitation forecasting Using RADAR Image Sequence](https://doi.org/10.30574/wjarr.2025.26.3.2504)<br><sub>Kavitha Soppari, Sree Janavi T S, Vaibhav Varshith Kommaraju et al. · World Journal of Advanced Research and Reviews</sub> |  |  |
+| 2025-06-28 | [TransformingWind Nowcasting: Innovative Strategies for Next-Frame Prediction Using Conv-LSTM-3D Model](https://doi.org/10.37917/ijeee.22.1.4)<br><sub>Abhay B. Upadhyay, Saurin R. Shah, Rajesh A. Thakkar · Iraqi Journal for Electrical And Electronic Engineering</sub> |  |  |
+| 2025-06-19 | [CloudCast—Total Cloud Cover Nowcasting with Machine Learning](https://doi.org/10.1175/aies-d-24-0104.1)<br><sub>Mikko Partio, Leila Hieta, Anniina Kokkonen · Artificial Intelligence for the Earth Systems</sub> |  | [code](https://github.com/fmidev/cloudcast) |
+| 2025-06-14 | [Intelligent Nowcasting of Convection Initiation Using a Special Ring‐Like Warmer Environment Implied in Fengyun‐4B AGRI Data](https://doi.org/10.1029/2024jd042526)<br><sub>Jinqing Liu, Yunying Li, Suling Ren et al. · Journal of Geophysical Research Atmospheres</sub> | China Meteorological Administration (CMA) |  |
+| 2025-06-12 | [Accurate Rainfall Prediction Using GNSS PWV Based on Pre-Trained Transformer Model](https://doi.org/10.3390/rs17122023)<br><sub>Wenjie Yin, Chen Zhou, Yuan Tian et al. · Remote Sensing</sub> | China Meteorological Administration (CMA) |  |
+| 2025-06-09 | [Storm Nowcasting Analysis using LSTM Model](https://doi.org/10.55041/ijsrem49845)<br><sub>Vajinapally Sreedatta · INTERANTIONAL JOURNAL OF SCIENTIFIC RESEARCH IN ENGINEERING AND MANAGEMENT</sub> |  |  |
+| 2025-06-06 | [ViViT-Prob: A Radar Echo Extrapolation Model Based on Video Vision Transformer and Spatiotemporal Sparse Attention](https://doi.org/10.3390/rs17121966)<br><sub>Yunan Qiu, Bingjian Lu, Wenrui Xiong et al. · Remote Sensing</sub> | Nanjing University of Information Science & Technology (NUIST) |  |
+| 2025-06-05 | [Prediction of thunderstorm evolution using deep learning models with doppler weather radar observations over southern part of India](https://doi.org/10.1016/j.dynatmoce.2025.101565)<br><sub>Dharmadas Jash, Sumit Kumar, Arka Roy et al. · Dynamics of Atmospheres and Oceans</sub> |  |  |
+| 2025-06-01 | [High-Fidelity Wind Field Prediction Using Deep Spatiotemporal Learning](https://doi.org/10.52783/jisem.v10i52s.10785)<br><sub>Sachin Kanubhai Patel · Journal of Information Systems Engineering & Management</sub> |  |  |
+| 2025-06-01 | [Explainable image segmentation for spatio-temporal and multivariate image data in precipitation nowcasting](https://doi.org/10.1016/j.rineng.2025.105595)<br><sub>Imantha Ahangama, Dulani Meedeniya, Biswajeet Pradhan · Results in Engineering</sub> |  |  |
 | 2023-12-11 | [DiffCast: A Unified Framework via Residual Diffusion for Precipitation Nowcasting](https://arxiv.org/abs/2312.06734)<br><sub>Demin Yu, Xutao Li, Yunming Ye et al. · 2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</sub> |  | [code](https://github.com/DeminYu98/DiffCast) |
 | 2023-07-05 | ⭐ [Skilful nowcasting of extreme precipitation with NowcastNet](https://doi.org/10.1038/s41586-023-06184-4)<br><sub>Yuchen Zhang, Mingsheng Long, Kaiyuan Chen et al. · Nature</sub> | China Meteorological Administration (CMA), Tsinghua University (NowcastNet), University of California, Berkeley |  |
 | 2023-06-06 | ⭐ [Deep Learning for Day Forecasts from Sparse Observations](https://arxiv.org/abs/2306.06079)<br><sub>Marcin Andrychowicz, Lasse Espeholt, Di Li et al.</sub> | Google Research |  |
@@ -25,6 +35,9 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 
 ## Also relevant
 
+- [Lighting the Night with Generative Artificial Intelligence](https://arxiv.org/abs/2506.22511) (2025)
+- [Prediction of Hazardous Weather Phenomena Using Artificial Intelligence](https://doi.org/10.35116/aa.2025.0006) (2025)
+- [Ultra-Short-Term Solar Power Prediction Using Sky Image Sequences by a Residual Vision Reformer](https://doi.org/10.1109/tste.2025.3575520) (2025)
 - [Deep Learning on Three-Dimensional Multiscale Data for Next-Hour Tornado Prediction](https://doi.org/10.1175/mwr-d-19-0372.1) (2020)
 - [A Neural Network for Tornado Prediction Based on Doppler Radar-Derived Attributes](https://doi.org/10.1175/1520-0450(1996)035<0617:annftp>2.0.co;2) (1996)
 

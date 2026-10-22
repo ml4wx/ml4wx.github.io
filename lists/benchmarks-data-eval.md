@@ -5,11 +5,16 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/benchmarks-data-eval/)
 
-13 papers (5 ⭐). Newest first.
+18 papers (5 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
 | 2026-05-01 | [Extreme Weather Bench: A framework and benchmark for evaluation of high-impact weather](https://arxiv.org/abs/2605.01126)<br><sub>Amy McGovern, Taylor Mandelbaum, Daniel Rothenberg et al.</sub> |  |  |
+| 2025-06-20 | [UT-GraphCast Hindcast Dataset: A Global AI Forecast Archive from UT Austin for Weather and Climate Applications](https://arxiv.org/abs/2506.17453)<br><sub>Naveen Sudharsan, Manmeet Singh, Harsh Kamath et al.</sub> |  |  |
+| 2025-06-17 | [Comparative Analysis of Precipitation Forecasts between the ECMWF Artificial Intelligence System (AIFS) and Its Integrated Forecast System (IFS)](https://doi.org/10.1175/waf-d-24-0227.1)<br><sub>Pan Liujie, Hongfang Zhang, Mian Liang et al. · Weather and Forecasting</sub> |  |  |
+| 2025-06-16 | [PeakWeather: MeteoSwiss Weather Station Measurements for Spatiotemporal Deep Learning](https://arxiv.org/abs/2506.13652)<br><sub>Daniele Zambon, Michele Cattaneo, Ivan Marisca et al.</sub> |  |  |
+| 2025-06-09 | [Measuring Sharpness of AI-Generated Meteorological Imagery](https://doi.org/10.1175/aies-d-24-0083.1)<br><sub>Imme Ebert‐Uphoff, Lander Ver Hoef, John S. Schreck et al. · Artificial Intelligence for the Earth Systems</sub> | NVIDIA, NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), NSF NCAR / UCAR, Colorado State University (incl. CIRA), University of Oklahoma (AI2ES) |  |
+| 2025-06-04 | [Probabilistic measures afford fair comparisons of AIWP and NWP model output](https://arxiv.org/abs/2506.03744)<br><sub>Tilmann Gneiting, Tobias Biegert, Kristof Kraus et al.</sub> |  |  |
 | 2024-10-24 | [Recommendations for Comprehensive and Independent Evaluation of Machine Learning-Based Earth System Models](https://arxiv.org/abs/2410.19882)<br><sub>Paul A. Ullrich, Elizabeth A. Barnes, William D. Collins et al. · Journal of Geophysical Research: Machine Learning and Computation</sub> | Colorado State University (incl. CIRA), Lawrence Berkeley National Laboratory / NERSC, NSF NCAR / UCAR, Oak Ridge National Laboratory, University of California, Berkeley |  |
 | 2024-09-14 | [WeatherReal: A Benchmark Based on In-Situ Observations for Evaluating Weather Models](https://arxiv.org/abs/2409.09371)<br><sub>Weixin Jin, Jonathan Weyn, Pengcheng Zhao et al.</sub> |  |  |
 | 2024-01-01 | [ChaosBench: A Multi-Channel, Physics-Based Benchmark for Subseasonal-to-Seasonal Climate Prediction](https://arxiv.org/abs/2402.00712)<br><sub>Juan Nathaniel, Yongquan Qu, Tung Nguyen et al. · Advances in Neural Information Processing Systems 37</sub> |  |  |
@@ -27,6 +32,10 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 
 - [CLIMATEAGENT: Multi-Agent Orchestration for Complex Climate Data Science Workflows](https://arxiv.org/abs/2511.20109) (2025)
 - [Zephyrus: An Agentic Framework for Weather Science](https://arxiv.org/abs/2510.04017) (2025)
+- [Modeling Error Types in Aviation Weather Forecasts: Machine Learning Approach](https://ojs.zefr.org/index.php/intplanet/article/view/21) (2025)
+- [CanadaFireSat: Toward high-resolution wildfire forecasting with multiple modalities](https://arxiv.org/abs/2506.08690) (2025)
+- [Emulators of Climate Model Output](https://doi.org/10.1146/annurev-environ-012125-085838) (2025)
+- [Localized Forest Fire Risk Prediction: A Department-Aware Approach for Operational Decision Support](https://arxiv.org/abs/2506.04254) (2025)
 - [Do data-driven models beat numerical models in forecasting weather extremes? A comparison of IFS HRES, Pangu-Weather, and GraphCast](https://doi.org/10.5194/gmd-17-7915-2024) (2024)
 - [WeatherQA: Can Multimodal Language Models Reason about Severe Weather?](https://arxiv.org/abs/2406.11217) (2024)
 - [Validating Deep Learning Weather Forecast Models on Recent High-Impact Extreme Events](https://arxiv.org/abs/2404.17652) (2024)

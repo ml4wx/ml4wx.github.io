@@ -1,0 +1,61 @@
+id: arxiv-2506.10404
+title: Generative Algorithms for Wildfire Progression Reconstruction from Multi-Modal Satellite Active
+  Fire Measurements and Terrain Height
+authors:
+- Bryan Shaddy
+- Brianna Binder
+- Agnimitra Dasgupta
+- Haitong Qin
+- James Haley
+- Angel Farguell
+- Kyle Hilburn
+- Derek V. Mallia
+- Adam Kochanski
+- Jan Mandel
+- Assad Oberai
+date: '2025-06-12'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2506.10404'
+links:
+  paper: https://arxiv.org/abs/2506.10404
+  pdf: https://arxiv.org/pdf/2506.10404
+topic: extremes-hazards
+topics:
+- data-assimilation
+type: model
+method:
+- gan-vae
+timescale:
+- short
+spatial:
+- regional
+data:
+- satellite
+- km-scale-sim
+status: research
+summary: A conditional GAN estimates wildfire arrival times from VIIRS and GOES fire data, trained on
+  WRF-SFIRE simulations, reaching 0.81 Sorensen-Dice on five fires.
+abstract: Increasing wildfire occurrence has spurred growing interest in wildfire spread prediction. However,
+  even the most complex wildfire models diverge from observed progression during multi-day simulations,
+  motivating need for data assimilation. A useful approach to assimilating measurement data into complex
+  coupled atmosphere-wildfire models is to estimate wildfire progression from measurements and use this
+  progression to develop a matching atmospheric state. In this study, an approach is developed for estimating
+  fire progression from VIIRS active fire measurements, GOES-derived ignition times, and terrain height
+  data. A conditional Generative Adversarial Network is trained with simulations of historic wildfires
+  from the atmosphere-wildfire model WRF-SFIRE, thus allowing incorporation of WRF-SFIRE physics into
+  estimates. Fire progression is succinctly represented by fire arrival time, and measurements for training
+  are obtained by applying an approximate observation operator to WRF-SFIRE solutions, eliminating need
+  for satellite data during training. The model is trained on tuples of fire arrival times, measurements,
+  and terrain, and once trained leverages measurements of real fires and corresponding terrain data to
+  generate samples of fire arrival times. The approach is validated on five Pacific US wildfires, with
+  results compared against high-resolution perimeters measured via aircraft, finding an average Sorensen-Dice
+  coefficient of 0.81. The influence of terrain height on the arrival time inference is also evaluated
+  and it is observed that terrain has minimal influence when the inference is conditioned on satellite
+  measurements.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

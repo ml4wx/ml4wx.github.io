@@ -1,0 +1,55 @@
+id: arxiv-2025.11482
+title: Forward modelling of passive microwave emissivities over snow-covered areas at continental scale
+authors:
+- Iris de Gélis
+- Catherine Prigent
+- Carlos Jiménez
+- Melody J. Sandells
+date: '2025-06-05'
+year: 2025
+venue: Remote Sensing of Environment
+venue_type: journal
+ids:
+  arxiv: '2025.11482'
+  doi: 10.1016/j.rse.2025.114821
+  openalex: W4411051178
+links:
+  paper: https://doi.org/10.1016/j.rse.2025.114821
+topic: observations-remote-sensing
+topics:
+- data-assimilation
+type: model
+method:
+- classical-ml
+spatial:
+- global
+data:
+- satellite
+status: research
+summary: Neural-network forward model predicts snow-covered surface emissivity from 1 to 90 GHz at continental
+  scale, with correlation above 0.9 up to 18.7 GHz, for microwave assimilation.
+abstract: To assimilate passive microwave data in numerical weather prediction, a comprehensive understanding
+  of the components of the radiative transfer equation is essential. Given the significant variability
+  of emissivity in snow-covered regions — affected by frequency, polarisation, and the macro- and microstructural
+  properties of snow — attention must be paid to the design of a forward model. However, existing physical
+  models are unsuitable for global-scale studies due to their reliance on numerous inputs, such as snow
+  grain size across different layers, which are typically unavailable at larger scales. In this study,
+  we propose a method that utilises geophysical properties accessible at the continental scale to derive
+  accurate emissivity values for frequencies ranging from 1 GHz to 90 GHz, in both vertical and horizontal
+  polarisations, with a focus on the incident angles of conical scanners (approximately 50°). Our approach
+  employs neural networks to obtain a robust forward model using geophysical variables as input data.
+  A training dataset was developed based on satellite-derived surface emissivity from the SMOS and AMSR2
+  instruments by subtracting atmospheric components and surface temperature modulation. The results, which
+  accounts for the actual geophysical state of the surface and its temporal variability, outperform the
+  emissivity climatologies. We achieved snow-covered surface emissivities at the continental scale with
+  a correlation coefficient above 0.9 and a RMSE below 0.02 for frequencies up to 18.7 GHz, and around
+  0.03 for higher frequencies. Additionally, we demonstrate that, in a typical tundra snowpack where the
+  macro- and microstructural properties of snow can be obtained, the emissivities retrieved by our neural
+  network-based forward model are consistent with results from the physical model (SMRT). This proposed
+  model will also support preparations for the CIMR mission.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

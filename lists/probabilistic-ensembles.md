@@ -5,12 +5,19 @@ ML models that produce ensembles or full forecast distributions: generative mode
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/probabilistic-ensembles/)
 
-13 papers (7 ⭐). Newest first.
+20 papers (7 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
 | 2025-07-16 | [FourCastNet 3: A geometric approach to probabilistic machine-learning weather forecasting at scale](https://arxiv.org/abs/2507.12144)<br><sub>Boris Bonev, Thorsten Kurth, Ankur Mahesh et al.</sub> |  |  |
+| 2025-06-24 | [Elucidated Rolling Diffusion Models for Probabilistic Forecasting of Complex Dynamics](https://arxiv.org/abs/2506.20024)<br><sub>Salva Rühling Cachay, Miika Aittala, Karsten Kreis et al. · Advances in Neural Information Processing Systems (NeurIPS), 2025</sub> |  |  |
+| 2025-06-18 | [Blended parameterization in an atmospheric model: Improving severestorm ensemble prediction by considering uncertainties in model physics](https://arxiv.org/abs/2506.15472)<br><sub>Khanh Hung Mai, Duc Le, Kazuo Saito et al.</sub> |  |  |
+| 2025-06-13 | [Arnoldi Singular Vector perturbations for machine learning weather prediction](https://arxiv.org/abs/2506.22450)<br><sub>Jens Winkler, Michael Denhard</sub> |  |  |
+| 2025-06-12 | [A multi-scale loss formulation for learning a probabilistic model with proper score optimisation](https://arxiv.org/abs/2506.10868)<br><sub>Simon Lang, Martin Leutbecher, Pedro Maciel</sub> |  |  |
 | 2025-06-12 | [Skillful joint probabilistic weather forecasting from marginals](https://arxiv.org/abs/2506.10772)<br><sub>Ferran Alet, Ilan Price, Andrew El-Kadi et al.</sub> |  |  |
+| 2025-06-10 | [Global Ensemble Weather Prediction from a Deep Learning–Based Model (Pangu-Weather) with the Initial Condition Perturbations of CMA-GEPS](https://doi.org/10.1007/s00376-024-4173-z)<br><sub>Xin Liu, Jing Chen, Yuejian Zhu et al. · Advances in Atmospheric Sciences</sub> | Nanjing University of Information Science & Technology (NUIST), China Meteorological Administration (CMA) |  |
+| 2025-06-10 | [LaDCast: A Latent Diffusion Model for Medium-Range Ensemble Weather Forecasting](https://arxiv.org/abs/2506.09193)<br><sub>Yilin Zhuang, Karthik Duraisamy</sub> |  | [code](https://github.com/tonyzyl/ladcast) |
+| 2025-06-08 | [DEF: Diffusion-augmented Ensemble Forecasting](https://arxiv.org/abs/2506.07324)<br><sub>David Millard, Arielle Carr, Stéphane Gaudreault et al.</sub> |  |  |
 | 2024-12-20 | ⭐ [AIFS-CRPS: Ensemble forecasting using a model trained with a loss function based on the Continuous Ranked Probability Score](https://arxiv.org/abs/2412.15832)<br><sub>Simon Lang, Mihai Alexe, Mariana C. A. Clare et al. · npj Artificial Intelligence</sub> | ECMWF |  |
 | 2024-12-17 | ⭐ [ArchesWeather & ArchesWeatherGen: a deterministic and generative model for efficient ML weather forecasting](https://arxiv.org/abs/2412.12971)<br><sub>Guillaume Couairon, Renu Singh, Anastase Charantonis et al. · Science Advances</sub> | ECMWF, Inria | [code](https://github.com/INRIA/geoarches) |
 | 2024-10-07 | [Continuous Ensemble Weather Forecasting with Diffusion models](https://arxiv.org/abs/2410.05431)<br><sub>Martin Andrae, Tomas Landelius, Joel Oskarsson et al.</sub> |  | [code](https://github.com/martinandrae/Continuous-Ensemble-Forecasting) |

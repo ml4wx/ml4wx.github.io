@@ -5,10 +5,16 @@ ML for data assimilation and state estimation, learned observation operators, an
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/data-assimilation/)
 
-13 papers (4 ⭐). Newest first.
+19 papers (4 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2025-06-21 | [Probabilistic Data Assimilation for Ensemble Distribution Projections With Generative Machine Learning: A Lorenz ’96 Proof‐of‐Concept](https://doi.org/10.1029/2024gl112523)<br><sub>Shuolin Li, Tian Zheng, Alban Farchi et al. · Geophysical Research Letters</sub> | ECMWF, Columbia University (LEAP, Lamont-Doherty) |  |
+| 2025-06-13 | [A unified neural background-error covariance model for midlatitude and tropical atmospheric data assimilation](https://arxiv.org/abs/2506.11968)<br><sub>Boštjan Melinc, Uroš Perkan, Žiga Zaplotnik</sub> |  |  |
+| 2025-06-09 | [A Novel Latent Space Data Assimilation Framework with Autoencoder-Observation to Latent Space (AE-O2L) Network. Part I: The Observation-Only Analysis Method](https://doi.org/10.1175/mwr-d-24-0057.1)<br><sub>Hang Fan, Yubao Liu, Yubao Liu et al. · Monthly Weather Review</sub> | NSF NCAR / UCAR, Nanjing University of Information Science & Technology (NUIST), China Meteorological Administration (CMA) |  |
+| 2025-06-06 | [An Adaptive Variance Adjustment Strategy for a Static Background Error Covariance Matrix—Part I: Verification in the Lorenz-96 Model](https://doi.org/10.3390/app15126399)<br><sub>Lilan Huang, Hongze Leng, Junqiang Song et al. · Applied Sciences</sub> |  |  |
+| 2025-06-02 | [Using Diffusion Models to do Data Assimilation](https://arxiv.org/abs/2506.02249)<br><sub>Daniel Hodyss, Matthias Morzfeld</sub> |  |  |
+| 2025-06-01 | [An Online Paleoclimate Data Assimilation With a Deep Learning‐Based Network](https://doi.org/10.1029/2024ms004675)<br><sub>Haohao Sun, Lili Lei, Zhengyu Liu et al. · Journal of Advances in Modeling Earth Systems</sub> |  |  |
 | 2024-12-20 | [GraphDOP: Towards skilful data-driven medium-range weather forecasts learnt and initialised directly from observations](https://arxiv.org/abs/2412.15687)<br><sub>Mihai Alexe, Eulalie Boucher, Peter Lean et al.</sub> |  |  |
 | 2024-08-10 | ⭐ [FuXi Weather: A data-to-forecast machine learning system for global weather](https://arxiv.org/abs/2408.05472)<br><sub>Xiuyu Sun, Xiaohui Zhong, Xiaoze Xu et al. · Nature Communications</sub> | China Meteorological Administration (CMA), Fudan University (FuXi), Nanjing University of Information Science & Technology (NUIST), Tsinghua University (NowcastNet), University of California, Los Angeles (UCLA) |  |
 | 2024-06-19 | [Generative Data Assimilation of Sparse Weather Station Observations at Kilometer Scales](https://arxiv.org/abs/2406.16947)<br><sub>Peter Manshausen, Yair Cohen, Peter Harrington et al. · Journal of Advances in Modeling Earth Systems</sub> | NVIDIA, University of Oxford |  |
@@ -25,6 +31,8 @@ ML for data assimilation and state estimation, learned observation operators, an
 
 ## Also relevant
 
+- [Generative Algorithms for Wildfire Progression Reconstruction from Multi-Modal Satellite Active Fire Measurements and Terrain Height](https://arxiv.org/abs/2506.10404) (2025)
+- [Forward modelling of passive microwave emissivities over snow-covered areas at continental scale](https://doi.org/10.1016/j.rse.2025.114821) (2025)
 - [Deep Learning for Day Forecasts from Sparse Observations](https://arxiv.org/abs/2306.06079) (2023)
 - [FengWu: Pushing the Skillful Global Medium-range Weather Forecast beyond 10 Days Lead](https://arxiv.org/abs/2304.02948) (2023)
 - [Can deep learning beat numerical weather prediction?](https://doi.org/10.1098/rsta.2020.0097) (2021)

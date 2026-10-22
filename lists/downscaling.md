@@ -5,10 +5,20 @@ Statistical and generative downscaling of weather or climate fields to higher re
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/downscaling/)
 
-15 papers (2 ⭐). Newest first.
+25 papers (2 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2025-06-28 | [Multimodal Atmospheric Super-Resolution With Deep Generative Models](https://arxiv.org/abs/2506.22780)<br><sub>Dibyajyoti Chakraborty, Haiwen Guan, Jason Stock et al.</sub> |  |  |
+| 2025-06-26 | [Optimizing Machine Learning for Daily Rainfall Prediction in Bogor: A Statistical Downscaling Approach](https://doi.org/10.59188/eduvest.v5i6.51307)<br><sub>Fradha Intan Arassah, Kusman Sadik, Bagus Sartono et al. · Eduvest - Journal Of Universal Studies</sub> |  |  |
+| 2025-06-24 | [Generate the Forest before the Trees -- A Hierarchical Diffusion model for Climate Downscaling](https://arxiv.org/abs/2506.19391)<br><sub>Declan J. Curran, Sanaa Hobeichi, Hira Saleem et al.</sub> |  | [code](https://github.com/HDD-Hierarchical-Diffusion-Downscaling/HDD-Hierarchical-Diffusion-Downscaling) |
+| 2025-06-20 | [Χωρική υποκλιμάκωση δεδομένων θερμοκρασίας αέρος 2 μέτρων ERA5-Land στην Ελλάδα, χρησιμοποιώντας αλγορίθμους μηχανικής μάθησης βασισμένους σε δέντρα αποφάσεων](https://hdl.handle.net/10889/29706)<br><sub>Ιωάννης Καΐτσας · Νημερτής</sub> |  |  |
+| 2025-06-14 | [Global spatio-temporal ERA5 precipitation downscaling to km and sub-hourly scale using generative AI](https://doi.org/10.1038/s41612-025-01103-y)<br><sub>Luca Glawion, Julius Polz, Harald Günter Kunstmann et al. · npj Climate and Atmospheric Science</sub> | Karlsruhe Institute of Technology (KIT) |  |
+| 2025-06-13 | [Evaluation of IMERG Precipitation Product Downscaling Using Nine Machine Learning Algorithms in the Qinghai Lake Basin](https://doi.org/10.3390/w17121776)<br><sub>Ke Lei, Lele Zhang, Liming Gao · Water</sub> |  |  |
+| 2025-06-12 | [Vision Transformers for Multi-Variable Climate Downscaling: Emulating Regional Climate Models with a Shared Encoder and Multi-Decoder Architecture](https://arxiv.org/abs/2506.22447)<br><sub>Fabio Merizzi, Harilaos Loukos</sub> |  |  |
+| 2025-06-04 | [Advancing long-range daily precipitation ensemble forecasts with deep learning for Australia](https://doi.org/10.1016/j.jhydrol.2025.133548)<br><sub>Huidong Jin, Rui Wang, Yaozhong Liu et al. · Journal of Hydrology</sub> |  |  |
+| 2025-06-02 | [MODS: Multi-source Observations Conditional Diffusion Model for Meteorological State Downscaling](https://arxiv.org/abs/2506.14798)<br><sub>Siwei Tu, Jingyi Xu, Weidong Yang et al.</sub> |  |  |
+| 2025-06-01 | [Ensemble Learning-Based Soft Computing Approach for Future Precipitation Analysis](https://doi.org/10.3390/atmos16060669)<br><sub>Shiu‐Shin Lin, Kai-Yang Zhu, Chen-Yu Wang et al. · Atmosphere</sub> |  |  |
 | 2024-10-02 | ⭐ [Dynamical-generative downscaling of climate model ensembles](https://arxiv.org/abs/2410.01776)<br><sub>Ignacio Lopez-Gomez, Zhong Yi Wan, Leonardo Zepeda-Núñez et al. · Proceedings of the National Academy of Sciences</sub> | California Institute of Technology (Caltech), Google Research |  |
 | 2024-07-19 | [Machine learning emulation of precipitation from km-scale UK regional climate simulations using a diffusion model](https://arxiv.org/abs/2407.14158)<br><sub>Henry Addison, Elizabeth Kendon, Suman Ravuri et al. · Journal of Advances in Modeling Earth Systems</sub> | Met Office, NVIDIA |  |
 | 2024-04-01 | [Enhancing Regional Climate Downscaling through Advances in Machine Learning](https://doi.org/10.1175/aies-d-23-0066.1)<br><sub>Neelesh Rampal, Sanaa Hobeichi, Peter B. Gibson et al. · Artificial Intelligence for the Earth Systems</sub> | NSF NCAR / UCAR |  |
@@ -27,6 +37,8 @@ Statistical and generative downscaling of weather or climate fields to higher re
 
 ## Also relevant
 
+- [Preliminary Study on Near-Surface Air Temperature Lapse Rate Estimation and Its Spatiotemporal Distribution Characteristics in Beijing–Tianjin–Hebei Mountainous Region](https://doi.org/10.3390/rs17132205) (2025)
+- [Fusion of multi-source precipitation records via coordinate-based generative model](https://arxiv.org/abs/2506.11698) (2025)
 - [Prithvi WxC: Foundation Model for Weather and Climate](https://arxiv.org/abs/2409.13598) (2024)
 - [AI Foundation Models for Weather and Climate: Applications, Design, and Implementation](https://arxiv.org/abs/2309.10808) (2023)
 - [Emulating Earth system model temperatures with MESMER: from global mean temperature trajectories to grid-point-level realizations on land](https://doi.org/10.5194/esd-11-139-2020) (2020)

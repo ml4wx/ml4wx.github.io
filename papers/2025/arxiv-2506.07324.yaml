@@ -1,0 +1,49 @@
+id: arxiv-2506.07324
+title: 'DEF: Diffusion-augmented Ensemble Forecasting'
+authors:
+- David Millard
+- Arielle Carr
+- Stéphane Gaudreault
+- Ali Baheri
+date: '2025-06-08'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2506.07324'
+  openalex: W4417129250
+links:
+  paper: https://arxiv.org/abs/2506.07324
+  pdf: https://arxiv.org/pdf/2506.07324
+topic: probabilistic-ensembles
+topics:
+- global-medium-range
+type: model
+method:
+- diffusion
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: DEF uses a conditional diffusion model to generate iterative initial-condition perturbations,
+  turning deterministic ML forecasters into stochastic ensembles with less error on ERA5 at 5.625°.
+abstract: We present DEF (\textbf{\ul{D}}iffusion-augmented \textbf{\ul{E}}nsemble \textbf{\ul{F}}orecasting),
+  a novel approach for generating initial condition perturbations. Modern approaches to initial condition
+  perturbations are primarily designed for numerical weather prediction (NWP) solvers, limiting their
+  applicability in the rapidly growing field of machine learning for weather prediction. Consequently,
+  stochastic models in this domain are often developed on a case-by-case basis. We demonstrate that a
+  simple conditional diffusion model can (1) generate meaningful structured perturbations, (2) be applied
+  iteratively, and (3) utilize a guidance term to intuitivey control the level of perturbation. This method
+  enables the transformation of any deterministic neural forecasting system into a stochastic one. With
+  our stochastic extended systems, we show that the model accumulates less error over long-term forecasts
+  while producing meaningful forecast distributions. We validate our approach on the 5.625$^\circ$ ERA5
+  reanalysis dataset, which comprises atmospheric and surface variables over a discretized global grid,
+  spanning from the 1960s to the present. On this dataset, our method demonstrates improved predictive
+  performance along with reasonable spread estimates.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

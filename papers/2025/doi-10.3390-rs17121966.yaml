@@ -1,0 +1,56 @@
+id: doi-10.3390-rs17121966
+title: 'ViViT-Prob: A Radar Echo Extrapolation Model Based on Video Vision Transformer and Spatiotemporal
+  Sparse Attention'
+authors:
+- Yunan Qiu
+- Bingjian Lu
+- Wenrui Xiong
+- Zhenyu Lu
+- Le Sun
+- Yingjie Cui
+date: '2025-06-06'
+year: 2025
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs17121966
+  openalex: W4411092951
+links:
+  paper: https://doi.org/10.3390/rs17121966
+  pdf: https://www.mdpi.com/2072-4292/17/12/1966/pdf?version=1749214300
+orgs:
+- nuist
+topic: nowcasting
+type: model
+method:
+- transformer
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: ViViT-Prob pairs a video vision transformer with sparse spatiotemporal attention and parallel
+  decoding to extrapolate radar echoes, improving short-term precipitation nowcast accuracy.
+abstract: Weather radar, as a crucial component of remote sensing data, plays a vital role in convective
+  weather forecasting through radar echo extrapolation techniques. To address the limitations of existing
+  deep learning methods in radar echo extrapolation, this paper proposes a radar echo extrapolation model
+  based on video vision transformer and spatiotemporal sparse attention (ViViT-Prob). The model takes
+  historical sequences as input and initially maps them into a fixed-dimensional vector space through
+  3D convolutional patch encoding. Subsequently, a multi-head spatiotemporal fusion module with sparse
+  attention encodes these vectors, effectively capturing spatiotemporal relationships between different
+  regions in the sequences. The sparse constraint enables better utilization of data structural information,
+  enhanced focus on critical regions, and reduced computational complexity. Finally, a parallel output
+  decoder generates all time step predictions simultaneously, then maps back to the prediction space through
+  a deconvolution module to reconstruct high-resolution images. Our experimental results on the Moving
+  MNIST and real radar echo dataset demonstrate that the proposed model achieves superior performance
+  in spatiotemporal sequence prediction and improves the prediction accuracy while maintaining structural
+  consistency in radar echo extrapolation tasks, providing an effective solution for short-term precipitation
+  forecasting.
+significance: 3
+cited_by: 5
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

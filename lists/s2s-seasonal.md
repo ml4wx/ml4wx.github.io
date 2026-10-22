@@ -5,10 +5,18 @@ Forecasts from 2 weeks to about a year: sub-seasonal, seasonal and ENSO/MJO pred
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/s2s-seasonal/)
 
-11 papers (5 ⭐). Newest first.
+19 papers (5 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2025-06-30 | [Subseasonal to Seasonal (S2S) Prediction Algorithms Using Hybrid Machine Learning Techniques](https://doi.org/10.1175/aies-d-23-0108.1)<br><sub>Hee–Seung Kim, Shanglin Zhou, Adam Bienkowski et al. · Artificial Intelligence for the Earth Systems</sub> |  |  |
+| 2025-06-27 | [Optimised deep convolutional spiking neural network for accurate long-term and short-term rainfall forecasting in climate prediction systems](https://doi.org/10.1504/ijmc.2026.10072144)<br><sub>Moorthy Agoramoorthy, K Ananthajothi, M. Amanullah · International Journal of Mobile Communications</sub> |  |  |
+| 2025-06-22 | [An entropy-optimal path to humble AI](https://arxiv.org/abs/2506.17940)<br><sub>Davide Bassetti, Lukáš Pospíšil, Michael Groom et al.</sub> |  |  |
+| 2025-06-16 | [AI-informed model-analogs for understanding subseasonal-to-seasonal jet stream and North American temperature predictability](https://arxiv.org/abs/2506.14022)<br><sub>Jacob B. Landsberg, Matthew Newman, Elizabeth A. Barnes · Machine Learning: Earth 1 (1), ae4805 (2026)</sub> |  |  |
+| 2025-06-16 | [AI reconstruction of European weather from the Euro-Atlantic regimes](https://arxiv.org/abs/2506.13758)<br><sub>A. Camilletti, G. Franch, E. Tomasi et al. · International Journal of Climatology, 2025</sub> |  |  |
+| 2025-06-08 | [Physics-Informed Teleconnection-Aware Transformer for Global Subseasonal-to-Seasonal Forecasting](https://arxiv.org/abs/2506.08049)<br><sub>Tengfei Lyu, Weijia Zhang, Hao Liu</sub> |  |  |
+| 2025-06-05 | [Ensemble of Artificial Neural Networks for Seasonal Forecasting of Wind Speed in Eastern Canada](https://doi.org/10.3390/en18112975)<br><sub>Pia Leminski, Enzo Pinheiro, Taha B. M. J. Ouarda · Energies</sub> |  |  |
+| 2025-06-05 | [Ensemble Meritocracy on Madden–Julian Oscillation Predictions: Elites Chosen by AI Beat the Mean](https://doi.org/10.1175/aies-d-23-0109.1)<br><sub>Rui Wang, Jimmy Chi Hung Fung, Lin Su et al. · Artificial Intelligence for the Earth Systems</sub> |  |  |
 | 2025-03-31 | ⭐ [Skilful global seasonal predictions from a machine learning weather model trained on reanalysis data](https://arxiv.org/abs/2503.23953)<br><sub>Chris Kent, Adam A. Scaife, Nick J. Dunstone et al. · npj Climate and Atmospheric Science</sub> | Allen Institute for AI (Ai2, ACE), Met Office |  |
 | 2023-12-15 | ⭐ [FuXi-S2S: A machine learning model that outperforms conventional global subseasonal forecast models](https://arxiv.org/abs/2312.09926)<br><sub>Lei Chen, Xiaohui Zhong, Hao Li et al. · Nature Communications</sub> | China Meteorological Administration (CMA), Fudan University (FuXi) |  |
 | 2023-03-10 | ⭐ [A self-attention–based neural network for three-dimensional multivariate modeling and its skillful ENSO predictions](https://doi.org/10.1126/sciadv.adf2827)<br><sub>Lu Zhou, Rong-Hua Zhang · Science Advances</sub> | Nanjing University of Information Science & Technology (NUIST) |  |
@@ -23,6 +31,10 @@ Forecasts from 2 weeks to about a year: sub-seasonal, seasonal and ENSO/MJO pred
 
 ## Also relevant
 
+- [Enhancing Extended Weather Forecasts in the TCWAGFS Model Using Deep Learning Method for SST Bias Correction](https://doi.org/10.5194/egusphere-2025-142) (2025)
+- [Machine Learning-based Statistical Prediction of Cyclonic Disturbance Frequency during Post-monsoon over the Bay of Bengal](https://doi.org/10.1007/s00024-025-03740-z) (2025)
+- [Seasonal heatwave forecasting with explainable machine learning and remote sensing data](https://doi.org/10.1007/s00477-025-03020-1) (2025)
+- [Advancing long-range daily precipitation ensemble forecasts with deep learning for Australia](https://doi.org/10.1016/j.jhydrol.2025.133548) (2025)
 - [ACE2: Accurately learning subseasonal to decadal atmospheric variability and forced responses](https://arxiv.org/abs/2411.11268) (2024)
 - [A Deep Learning Earth System Model for Efficient Simulation of the Observed Climate](https://arxiv.org/abs/2409.16247) (2024)
 - [ChaosBench: A Multi-Channel, Physics-Based Benchmark for Subseasonal-to-Seasonal Climate Prediction](https://arxiv.org/abs/2402.00712) (2024)

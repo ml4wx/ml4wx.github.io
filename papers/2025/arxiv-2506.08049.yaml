@@ -1,0 +1,47 @@
+id: arxiv-2506.08049
+title: Physics-Informed Teleconnection-Aware Transformer for Global Subseasonal-to-Seasonal Forecasting
+authors:
+- Tengfei Lyu
+- Weijia Zhang
+- Hao Liu
+date: '2025-06-08'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2506.08049'
+links:
+  paper: https://arxiv.org/abs/2506.08049
+  pdf: https://arxiv.org/pdf/2506.08049
+topic: s2s-seasonal
+type: model
+method:
+- transformer
+- physics-constrained
+timescale:
+- s2s
+spatial:
+- global
+data:
+- era5
+status: research
+summary: TelePiT combines spherical harmonic embeddings, physics-informed neural ODEs and teleconnection-aware
+  attention to outperform data-driven baselines and NWP for global S2S forecasts.
+abstract: 'Subseasonal-to-seasonal (S2S) forecasting, which predicts climate conditions from several weeks
+  to months in advance, represents a critical frontier for agricultural planning, energy management, and
+  disaster preparedness. However, it remains one of the most challenging problems in atmospheric science,
+  due to the chaotic dynamics of atmospheric systems and complex interactions across multiple scales.
+  Current approaches often fail to explicitly model underlying physical processes and teleconnections
+  that are crucial at S2S timescales. We introduce \textbf{TelePiT}, a novel deep learning architecture
+  that enhances global S2S forecasting through integrated multi-scale physics and teleconnection awareness.
+  Our approach consists of three key components: (1) Spherical Harmonic Embedding, which accurately encodes
+  global atmospheric variables onto spherical geometry; (2) Multi-Scale Physics-Informed Neural ODE, which
+  explicitly captures atmospheric physical processes across multiple learnable frequency bands; (3) Teleconnection-Aware
+  Transformer, which models critical global climate interactions through explicitly modeling teleconnection
+  patterns into the self-attention. Extensive experiments demonstrate that \textbf{TelePiT} significantly
+  outperforms state-of-the-art data-driven baselines and operational numerical weather prediction systems
+  across all forecast horizons, marking a significant advance toward reliable S2S forecasting.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,48 @@
+id: arxiv-2506.22450
+title: Arnoldi Singular Vector perturbations for machine learning weather prediction
+authors:
+- Jens Winkler
+- Michael Denhard
+date: '2025-06-13'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2506.22450'
+links:
+  paper: https://arxiv.org/abs/2506.22450
+  pdf: https://arxiv.org/pdf/2506.22450
+topic: probabilistic-ensembles
+topics:
+- xai-uq-physics
+type: model
+method:
+- other
+timescale:
+- short
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Arnoldi singular-vector perturbations, requiring no adjoint, find growing error modes for Pangu-Weather
+  that could seed machine-learning ensembles.
+abstract: Since weather forecasts are fundamentally uncertain, reliable decision making requires information
+  on the likelihoods of future weather scenarios. We explore the sensitivity of machine learning weather
+  prediction (MLWP) using the 24h Pangu Weather ML model of Huawei to errors in the initial conditions
+  with a specific kind of Singular Vector (SV) perturbations. Our Arnoldi-SV (A-SV) method does not need
+  linear nor adjoint model versions and is applicable to numerical weather prediction (NWP) as well as
+  MLWP. It observes error growth within a given optimization time window by iteratively applying a forecast
+  model to perturbed model states. This creates a Krylov subspace, implicitly based on a matrix operator,
+  which approximates the local error growth. Each iteration adds new dimensions to the Krylov space and
+  its leading right SVs are expected to turn into directions of growing errors. We show that A-SV indeed
+  finds dynamically meaningful perturbation patterns for the 24h Pangu Weather model, which grow right
+  from the beginning of the forecast rollout. These perturbations describe local unstable modes and could
+  be a basis to initialize MLWP ensembles. Since we start A-SV from random noise perturbations, the algorithm
+  transforms noise into perturbations conditioned on a given reference state - a process that is akin
+  to the denoising process of the generic diffusion based ML model of GenCast, therefor we briefly discuss
+  similarities and differences.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

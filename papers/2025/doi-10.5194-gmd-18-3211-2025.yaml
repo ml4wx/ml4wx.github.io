@@ -1,0 +1,65 @@
+id: doi-10.5194-gmd-18-3211-2025
+title: 'Using a data-driven statistical model to better evaluate surface turbulent heat fluxes in weather
+  and climate numerical models: a demonstration study'
+authors:
+- Maurin Zouzoua
+- Sophie Bastin
+- Marjolaine Chiriaco
+- Fabienne Lohou
+- Marie Lothon
+- Mathilde Jomé
+- Cécile Mallet
+- Laurent Barthès
+- Guylaine Canut
+date: '2025-06-02'
+year: 2025
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-18-3211-2025
+  openalex: W4411011226
+links:
+  paper: https://doi.org/10.5194/gmd-18-3211-2025
+  pdf: https://gmd.copernicus.org/articles/18/3211/2025/gmd-18-3211-2025.pdf
+orgs:
+- meteo-france
+topic: climate-analysis-attribution
+topics:
+- observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- local
+data:
+- stations
+- km-scale-sim
+status: research
+summary: MLP-based statistical model trained on ten years of flux tower data estimates surface heat fluxes
+  to diagnose errors in a regional climate model's land surface scheme.
+abstract: Abstract. This study proposes the use of a data-driven statistical model to freeze the errors
+  due to differences in environmental forcing when evaluating the surface turbulent heat fluxes from weather
+  and climate numerical models with the observations. It takes advantage of continuous acquisition over
+  approximately ten years of near-surface sensible and latent heat fluxes (H and LE respectively) together
+  with ancillary parameters over the supersite "Météopole" of the French national research infrastructure
+  ACTRIS-FR, located in Toulouse. The statistical model consists of several multi-layer perceptrons (MLPs)
+  with the same architecture. Thirteen variables characterizing the environmental forcing in the surface
+  layer at an hourly time scale are used as input parameters to estimate H and LE simultaneously. The
+  MLPs are trained using 5-year observational data under a 5-fold cross-validation. The remaining data
+  is used to test the estimates on unknown conditions. A case study is performed with data from a regional
+  climate simulation. The performance of the statistical model ranges within the state-of-the-art surface
+  parametrization schemes on hourly and seasonal time scales. It has also a good generalization ability,
+  but hardly estimates negative H and large LE. The statistical model is used to evaluate the simulated
+  fluxes under the simulated environment to better examine the flaws of their numerical formulation throughout
+  the simulation. Comparison of simulated fluxes with observed and MLP-based fluxes show different results.
+  According to MLP-based fluxes in the simulated environment, the land surface scheme of this climate
+  model tends to underestimate large sensible heat flux. Thus, it incorrectly partitions between surface
+  heating and evaporation during the late summer. Our innovative method provides insight into differently
+  evaluating the simulated near-surface turbulent heat fluxes when a long period of comprehensive observations
+  is available. It can usefully support ongoing efforts for improvements of surface parametrization schemes.
+significance: 3
+cited_by: 4
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

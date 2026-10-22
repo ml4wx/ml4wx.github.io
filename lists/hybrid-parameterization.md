@@ -5,10 +5,14 @@ ML inside physical models: subgrid parameterizations (convection, clouds, radiat
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/hybrid-parameterization/)
 
-23 papers (7 ⭐). Newest first.
+27 papers (7 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2025-06-26 | [Inferring Plant Acclimation and Improving Model Generalizability With Differentiable Physics‐Informed Machine Learning of Photosynthesis](https://doi.org/10.1029/2024jg008552)<br><sub>Doaa Aboelyazeed, Chonggang Xu, Lianhong Gu et al. · Journal of Geophysical Research Biogeosciences</sub> | Oak Ridge National Laboratory |  |
+| 2025-06-20 | [Tuning the ICON-A 2.6.4 climate model with machine-learning-based emulators and history matching](https://doi.org/10.5194/gmd-18-3681-2025)<br><sub>Pauline Bonnet, Lorenzo Pastori, Mierk Schwabe et al. · Geoscientific model development</sub> | Max Planck Institute for Meteorology |  |
+| 2025-06-01 | [Vertically Recurrent Neural Networks for Sub‐Grid Parameterization](https://doi.org/10.1029/2024ms004833)<br><sub>Peter Ukkonen, Matthew Chantry · Journal of Advances in Modeling Earth Systems</sub> | ECMWF, University of Oxford |  |
+| 2025-06-01 | [Stable Simulation of the Community Atmosphere Model Using Machine‐Learning Physical Parameterization Trained With Experience Replay](https://doi.org/10.1029/2024ms004722)<br><sub>Jianda Chen, Minghua Zhang, Tao Zhang et al. · Journal of Advances in Modeling Earth Systems</sub> | Tsinghua University (NowcastNet) |  |
 | 2024-12-16 | ⭐ [Neural general circulation models optimized to predict satellite-based precipitation observations](https://arxiv.org/abs/2412.11973)<br><sub>Janni Yuval, Ian Langmore, Dmitrii Kochkov et al. · Science Advances</sub> | Google Research |  |
 | 2024-08-19 | [Machine Learning for the Physics of Climate](https://arxiv.org/abs/2408.09627)<br><sub>Annalisa Bracco, Julien Brajard, Henk A. Dijkstra et al. · Nature Reviews Physics</sub> | ECMWF, Inria, Lawrence Berkeley National Laboratory / NERSC, University of Chicago |  |
 | 2024-07-08 | [Leveraging data-driven weather models for improving numerical weather prediction skill through large-scale spectral nudging](https://arxiv.org/abs/2407.06100)<br><sub>Syed Zahid Husain, Leo Separovic, Jean-François Caron et al. · Weather and Forecasting</sub> | Environment and Climate Change Canada (ECCC) |  |
@@ -35,6 +39,9 @@ ML inside physical models: subgrid parameterizations (convection, clouds, radiat
 
 ## Also relevant
 
+- [Constructing Extreme Heatwave Storylines with Differentiable Climate Models](https://arxiv.org/abs/2506.10660) (2025)
+- [Imposing the Fundamental Dynamical Constraint of Hydrostatic Balance to Improve Global ML Weather Prediction](https://arxiv.org/abs/2506.08285) (2025)
+- [Machine learning reconstruction of large-scale motions and inclination angles in stratified atmospheric surface layer](https://doi.org/10.1063/5.0273240) (2025)
 - [ClimART: A Benchmark Dataset for Emulating Atmospheric Radiative Transfer in Weather and Climate Models](https://arxiv.org/abs/2111.14671) (2021)
 - [Machine Learning for Model Error Inference and Correction](https://doi.org/10.1029/2020ms002232) (2020)
 

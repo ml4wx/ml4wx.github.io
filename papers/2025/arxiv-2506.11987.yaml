@@ -1,0 +1,51 @@
+id: arxiv-2506.11987
+title: Forecast error diagnostics in neural weather models
+authors:
+- Uros Perkan
+- Ziga Zaplotnik
+- Gregor Skok
+date: '2025-06-13'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2506.11987'
+links:
+  paper: https://arxiv.org/abs/2506.11987
+  pdf: https://arxiv.org/pdf/2506.11987
+topic: xai-uq-physics
+topics:
+- global-medium-range
+type: evaluation
+method:
+- cnn
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Relaxation experiments with ConvCastNet show stratosphere and boundary-layer accuracy drive mid-latitude
+  medium-range skill, while tropics matter little.
+abstract: Deep-learning (DL) weather prediction models offer some notable advantages over traditional
+  physics-based models, including auto-differentiability and low computational cost, enabling detailed
+  diagnostics of forecast errors. Using our convolutional encoder-decoder model, ConvCastNet, we systematically
+  relax selected subdomains of the forecast fields towards "true" weather states (ERA5 reanalyses) and
+  monitor the forecast skill gain in other regions. Our results show that a medium-range mid-latitude
+  forecast improves substantially when the stratosphere and boundary layer are relaxed, while relaxation
+  of the tropical atmosphere has a negligible effect. This underscores the need for a more accurate representation
+  of the stratosphere and the planetary boundary layer to improve medium-range weather predictability.
+  Additionally, we investigate the relationship between the forecast error sensitivity to initial conditions
+  and relaxation experiments. By utilising auto-differentiability, we identify overlapping regions of
+  large error sensitivity and strong forecast skill improvement from relaxation. Average mid-latitude
+  error sensitivity to initial conditions shows negligible influence from the tropics, corroborating the
+  results of the tropical relaxation experiments. The error sensitivity shows a physically consistent
+  influence of upstream weather dynamics and sea surface temperatures on forecast accuracy. The latter
+  also highlights the importance of accurately representing the atmosphere--ocean coupling in numerical
+  weather prediction models. This combined approach could provide valuable heuristics for diagnosing neural
+  model errors and guiding targeted model improvements.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

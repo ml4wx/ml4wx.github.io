@@ -5,11 +5,30 @@ Prediction and detection of extremes: tropical cyclones, heatwaves, heavy rain, 
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/extremes-hazards/)
 
-22 papers (2 ⭐). Newest first.
+41 papers (2 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
 | 2026-08-06 | ⭐ [Operational tropical cyclone forecasting with AI](https://doi.org/10.1038/s41586-026-10953-2)<br><sub>Ferran Alet, Tom R. Andersson, Ilan Price et al. · Nature</sub> | Colorado State University (incl. CIRA), Google DeepMind, Google Research, Met Office, NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
+| 2025-06-21 | [Machine Learning-based Statistical Prediction of Cyclonic Disturbance Frequency during Post-monsoon over the Bay of Bengal](https://doi.org/10.1007/s00024-025-03740-z)<br><sub>Javed Akhter, Aditi Bhattacharyya, Subrata Kumar Midya · Pure and Applied Geophysics</sub> |  |  |
+| 2025-06-21 | [TyphoFormer: Language-Augmented Transformer for Accurate Typhoon Track Forecasting](https://arxiv.org/abs/2506.17609)<br><sub>Lincan Li, Eren Erman Ozguven, Yue Zhao et al.</sub> |  |  |
+| 2025-06-20 | [Feasibility assessment of machine learning for predicting heatwaves in Bangladesh](https://doi.org/10.20937/atm.53438)<br><sub>Torikul Islam Sanjid, Anock Somadder, Tanvir Ahmed · Atmósfera</sub> |  |  |
+| 2025-06-19 | [Improving Tropical Cyclone-Induced Rainfall Forecasting for Vietnam Using Pattern-Matching Algorithms and Selective Ensemble](https://doi.org/10.5194/egusphere-2025-1881)<br><sub>Thuc Tran-Duy, Kim Cuong Nguyen, Thanh Pham Ngoc et al.</sub> | University of Oxford |  |
+| 2025-06-16 | [Predicting Heavy Precipitation in Southwest Iran: A Machine Learning Classification Approach with Atmospheric Precursors and Feature Optimization](https://doi.org/10.1007/s41748-025-00672-5)<br><sub>Kokab Shahgholian, Javad Bazrafshan, Parviz Irannejad M et al. · Earth Systems and Environment</sub> |  |  |
+| 2025-06-13 | [An enhanced wildfire spread prediction using multimodal satellite imagery and deep learning models](https://doi.org/10.1016/j.rsase.2025.101632)<br><sub>Rufai Yusuf Zakari, Owais Ahmed Malik, Wee-Hong Ong · Remote Sensing Applications Society and Environment</sub> |  |  |
+| 2025-06-12 | [Constructing Extreme Heatwave Storylines with Differentiable Climate Models](https://arxiv.org/abs/2506.10660)<br><sub>Tim Whittaker, Alejandro Di Luca · Weather and Climate Dynamics, 7(1), 393-410, 2026</sub> |  |  |
+| 2025-06-12 | [Generative Algorithms for Wildfire Progression Reconstruction from Multi-Modal Satellite Active Fire Measurements and Terrain Height](https://arxiv.org/abs/2506.10404)<br><sub>Bryan Shaddy, Brianna Binder, Agnimitra Dasgupta et al.</sub> |  |  |
+| 2025-06-11 | [Machine Learning Approaches for Predicting Extreme Weather Event Frequency](https://doi.org/10.5281/zenodo.22815790)<br><sub>Laura Lefevre, Jingqiu Chen, Aleksi Toth · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
+| 2025-06-10 | [CanadaFireSat: Toward high-resolution wildfire forecasting with multiple modalities](https://arxiv.org/abs/2506.08690)<br><sub>Hugo Porta, Emanuele Dalsasso, Jessica L. McCarty et al. · ISPRS Journal of Photogrammetry and Remote Sensing, Volume 239, September 2026, Pages 555-572</sub> |  |  |
+| 2025-06-09 | [Estimation of the rapid intensification of tropical cyclones over the North Indian Ocean using attention-based deep learning models](https://doi.org/10.1007/s11069-025-07383-0)<br><sub>Omveer Sharma, Hemant Kumar, Dhananjay Trivedi et al. · Natural Hazards</sub> |  |  |
+| 2025-06-07 | [Storm Whisperers: Predicting Thunderstorms with Long Short-Term Heuristic Memory Model](https://doi.org/10.31223/x5tj1r)<br><sub>Kalyan Chatterjee, Bhoomeshwar Bala, Raja Shekar Kadurka et al.</sub> |  |  |
+| 2025-06-07 | [Meteorologically-Informed Adaptive Conformal Prediction for Tropical Cyclone Intensity Forecasting](https://arxiv.org/abs/2506.06638)<br><sub>Xuepeng Chen, Jing-Jia Luo, Qingqing Li et al.</sub> |  |  |
+| 2025-06-05 | [Impact assessment of land-use and land-cover on urban heat waves using remote sensing and machine learning algorithms](https://doi.org/10.1007/s13762-025-06569-0)<br><sub>Rahmon Abiodun Salau, Bashir Adelodun, M. J. Ahmad et al. · International Journal of Environmental Science and Technology</sub> |  |  |
+| 2025-06-05 | [Seasonal heatwave forecasting with explainable machine learning and remote sensing data](https://doi.org/10.1007/s00477-025-03020-1)<br><sub>Jung-Ching Kan, Marlon Vieira Passos, Georgia Destouni et al. · Stochastic Environmental Research and Risk Assessment</sub> |  |  |
+| 2025-06-05 | [Enhanced Drought Analysis in Bangladesh: A Machine Learning Approach for Severity Classification Using Satellite Data](https://arxiv.org/abs/2506.04696)<br><sub>Tonmoy Paul, Mrittika Devi Mati, Md. Mahmudul Islam</sub> |  |  |
+| 2025-06-02 | [Tropical Cyclone Intensity Estimation: A Study Of Neural Architecture Search And Transfer Learning In Cnns](https://doi.org/10.64252/516qna94)<br><sub>Kancharagunta Kishan Babu, Ajay Dilip Kumar Marapatla, Harikesh Manchala, Uday Kiran Pillalamarri, Danush Kanthala, Kamsani Charan Sai, and Musku Sai Ritish Reddy · International Journal of Environmental Sciences</sub> |  |  |
+| 2025-06-01 | [Localized Forest Fire Risk Prediction: A Department-Aware Approach for Operational Decision Support](https://arxiv.org/abs/2506.04254)<br><sub>Nicolas Caron, Christophe Guyeux, Hassan Noura et al. · 2025 7th Computing, Communications and IoT Applications Conference (ComComAp 2025)</sub> |  |  |
+| 2025-06-01 | [Gaussian Framework and Optimal Projection of Weather Fields for Prediction of Extreme Events](https://doi.org/10.1029/2024ms004487)<br><sub>Valeria Mascolo, Alessandro Lovo, Corentin Herbert et al. · Journal of Advances in Modeling Earth Systems</sub> |  |  |
 | 2025-02-24 | [Artificial intelligence for modeling and understanding extreme weather and climate events](https://doi.org/10.1038/s41467-025-56573-8)<br><sub>Gustau Camps-Valls, Miguel-Ángel Fernández-Torres, Kai-Hendrik Cohrs et al. · Nature Communications</sub> | Inria, Max Planck Institute for Biogeochemistry, Technical University of Munich (TUM) |  |
 | 2024-11-07 | [Do data-driven models beat numerical models in forecasting weather extremes? A comparison of IFS HRES, Pangu-Weather, and GraphCast](https://doi.org/10.5194/gmd-17-7915-2024)<br><sub>Leonardo Olivetti, Gabriele Messori · Geoscientific Model Development</sub> |  |  |
 | 2024-10-19 | ⭐ [Can AI weather models predict out-of-distribution gray swan tropical cyclones?](https://arxiv.org/abs/2410.14932)<br><sub>Y. Qiang Sun, Pedram Hassanzadeh, Mohsen Zand et al. · Proceedings of the National Academy of Sciences</sub> | New York University (M2LInES), University of Chicago |  |
@@ -35,6 +54,13 @@ Prediction and detection of extremes: tropical cyclones, heatwaves, heavy rain, 
 ## Also relevant
 
 - [Extreme Weather Bench: A framework and benchmark for evaluation of high-impact weather](https://arxiv.org/abs/2605.01126) (2026)
+- [Deriving Overlapped Cloud Motion Vectors Based on Geostationary Satellite and Its Application on Monitoring Typhoon Mulan](https://doi.org/10.1029/2025gl116397) (2025)
+- [Diurnal Variation of Cloud Physical Properties for Tropical Cyclones Over North Atlantic in 2019–2023](https://doi.org/10.1029/2025gl115566) (2025)
+- [Enhancing multi-model ensemble simulations of climate extremes over the Tibetan Plateau using machine learning](https://doi.org/10.1007/s00704-025-05622-9) (2025)
+- [Big Data-Driven Decision Support System for Urban Climate Adaptation Strategies](https://aasrresearch.com/index.php/JSIES/article/view/435) (2025)
+- [Projecting U.S. coastal storm surge risks and impacts with deep learning](https://arxiv.org/abs/2506.13963) (2025)
+- [Global spatio-temporal ERA5 precipitation downscaling to km and sub-hourly scale using generative AI](https://doi.org/10.1038/s41612-025-01103-y) (2025)
+- [Improving Post-Processing for Quantitative Precipitation Forecasting Using Deep Learning: Learning Precipitation Physics from High-Resolution Observations](https://arxiv.org/abs/2506.03842) (2025)
 - [Climate in a Bottle: Towards a Generative Foundation Model for the Kilometer-Scale Global Atmosphere](https://arxiv.org/abs/2505.06474) (2025)
 - [Prithvi WxC: Foundation Model for Weather and Climate](https://arxiv.org/abs/2409.13598) (2024)
 - [Machine learning–based extreme event attribution](https://doi.org/10.1126/sciadv.adl3242) (2024)

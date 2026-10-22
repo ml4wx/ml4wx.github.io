@@ -1,0 +1,60 @@
+id: arxiv-2025.10559
+title: Explainable image segmentation for spatio-temporal and multivariate image data in precipitation
+  nowcasting
+authors:
+- Imantha Ahangama
+- Dulani Meedeniya
+- Biswajeet Pradhan
+date: '2025-06-01'
+year: 2025
+venue: Results in Engineering
+venue_type: journal
+ids:
+  arxiv: '2025.10559'
+  doi: 10.1016/j.rineng.2025.105595
+  openalex: W4411080993
+links:
+  paper: https://doi.org/10.1016/j.rineng.2025.105595
+topic: nowcasting
+topics:
+- xai-uq-physics
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- satellite
+status: research
+summary: Integrated Gradients explains a U-Net nowcasting 30-minute rainfall from radar, satellite and
+  wind on MeteoNet, reaching F1 0.760 and pruning 73% of inputs.
+abstract: Artificial Intelligence (AI) systems are often opaque in nature, making it difficult to understand
+  the region-of-interest in the input for the predictions. This creates a challenge in convincing people
+  who rely on traditional methods to trust the outputs of automated systems. This study presents a novel
+  framework based on Integrated Gradients (IG) with a U-Net to interpret multivariate, spatio-temporal
+  input sequences for precipitation nowcasting. We utilize Integrated gradients methods to explain the
+  predictions made by a deep learning model for precipitation nowcasting, which takes a multi-image sequence
+  as its input. We use the Meteonet dataset by MeteoFrance and form it into a spatio-temporal multivariate
+  dataset consisting of rain radar, satellite, and wind images to predict rainfall 30 minutes ahead. We
+  employ the U-Net model and evaluate the model's explainability using Integrated gradients. The resulting
+  system achieves an F1 score of 0.760 and a Critical Success Index of 0.613 on an unseen 2018 test set,
+  matching state-of-the-art radar-only baselines while providing pixel-level attributions. Our results
+  help to explain the reasons behind the predictions. The obtained visual representation offers potential
+  explanations for the classification of spatio-temporal or multivariate datasets. Additionally, this
+  study provides a comparative analysis of the level of contribution of each image in the input sequence
+  to the final result. Removing the eight least-important frames identified by IG reduces the input by
+  73%, yet preserves performance (F1 = 0.759 vs 0.760). Consequently, the proposed approach shows its
+  usability in dimensionality reduction, enhancing the interpretability and efficiency of the predictive
+  model. • Explainable Image Segmentation for Spatio-Temporal and Multivariate Image Data in Precipitation
+  Nowcasting. • Potential Explainable AI technique for precipitation nowcasting. • Impact of each image
+  for prediction in the multi-image dataset. • Visualization techniques to identify predictive image segments.
+  • Applying explanatory methods for input dimensionality reduction.
+significance: 3
+cited_by: 10
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

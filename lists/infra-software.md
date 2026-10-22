@@ -5,11 +5,14 @@ Frameworks, training and inference at scale, HPC, and compression of weather and
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/infra-software/)
 
-7 papers (2 ⭐). Newest first.
+10 papers (2 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
 | 2025-09-16 | ⭐ [AERIS: Argonne Earth Systems Model for Reliable and Skillful Predictions](https://arxiv.org/abs/2509.13523)<br><sub>Väinö Hatanpää, Eugene Ku, Jason Stock et al. · Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis</sub> | Allen Institute for AI (Ai2, ACE), Argonne National Laboratory, University of California, Los Angeles (UCLA), University of Chicago |  |
+| 2025-06-26 | [Distributed Cross-Channel Hierarchical Aggregation for Foundation Models](https://arxiv.org/abs/2506.21411)<br><sub>Aristeidis Tsaris, Isaac Lyngaas, John Lagregren et al.</sub> |  |  |
+| 2025-06-19 | [Artificial Intelligence for Atmospheric Sciences: A Research Roadmap](https://arxiv.org/abs/2506.16281)<br><sub>Martha Arbayani Zaidan, Naser Hossein Motlagh, Petteri Nurmi et al.</sub> |  |  |
+| 2025-06-03 | [DIRESA, a Distance-Preserving Nonlinear Dimension Reduction Technique Based on Regularized Autoencoders](https://doi.org/10.1175/aies-d-24-0034.1)<br><sub>Geert De Paepe, Lesley De Cruz · Artificial Intelligence for the Earth Systems</sub> |  |  |
 | 2024-10-09 | [Exploring the design space of deep-learning-based weather forecasting systems](https://arxiv.org/abs/2410.07472)<br><sub>Shoaib Ahmed Siddiqui, Jean Kossaifi, Boris Bonev et al.</sub> | NVIDIA, University of Cambridge (Aardvark) |  |
 | 2024-05-06 | [CRA5: Extreme Compression of ERA5 for Portable Global Climate and Weather Research via an Efficient Variational Transformer](https://arxiv.org/abs/2405.03376)<br><sub>Tao Han, Zhenghao Chen, Song Guo et al.</sub> |  | [code](https://github.com/taohan10200/CRA5) |
 | 2024-04-30 | [Analyzing and Exploring Training Recipes for Large-Scale Transformer-Based Weather Prediction](https://arxiv.org/abs/2404.19630)<br><sub>Jared D. Willard, Peter Harrington, Shashank Subramanian et al. · 23rd Conference on Artificial Intelligence for Environmental Science. Jan 2024. Abstract #437874</sub> | Lawrence Berkeley National Laboratory / NERSC, University of California, Berkeley |  |
@@ -19,6 +22,7 @@ Frameworks, training and inference at scale, HPC, and compression of weather and
 
 ## Also relevant
 
+- [Community Research Earth Digital Intelligence Twin: a scalable framework for AI-driven Earth System Modeling](https://doi.org/10.1038/s41612-025-01125-6) (2025)
 - [ORBIT-2: Scaling Exascale Vision Foundation Models for Weather and Climate Downscaling](https://arxiv.org/abs/2505.04802) (2025)
 - [ORBIT: Oak Ridge Base Foundation Model for Earth System Predictability](https://arxiv.org/abs/2404.14712) (2024)
 

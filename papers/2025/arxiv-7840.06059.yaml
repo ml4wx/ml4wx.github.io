@@ -1,0 +1,60 @@
+id: arxiv-7840.06059
+title: 'Retrieving tropospheric Water Vapor and Temperature from Refractivity over Tropical Oceans: A
+  deep learning approach for Global Navigation Satellite System (GNSS) Radio Occultation'
+authors:
+- M Santosh
+- Harris John
+- Deepak Mishra
+date: '2025-06-26'
+year: 2025
+venue_type: other
+ids:
+  arxiv: '7840.06059'
+  doi: 10.22541/essoar.175097840.06059750/v1
+  openalex: W4411683035
+links:
+  paper: https://doi.org/10.22541/essoar.175097840.06059750/v1
+  pdf: https://essopenarchive.org/doi/pdf/10.22541/essoar.175097840.06059750/v1
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- satellite
+- stations
+status: research
+summary: An Inception-style CNN retrieves tropospheric humidity and temperature from GNSS radio occultation
+  refractivity over tropical oceans, with about 6% RH RMSE, trained on GRUAN radiosondes.
+abstract: Tropical tropospheric water vapor plays a critical role in Earth's energy balance by enhancing
+  greenhouse effect, regulating cloud formation and precipitation, and amplifying climate feedbacks that
+  drive global climate change. This study addresses a fundamentally under-determined problem of retrieving
+  tropospheric water vapor and temperature from atmospheric refractivity using a deep learning model.
+  A customized Convolutional Neural Network (CNN) model based on InceptionNet architecture trained on
+  refractivity profiles derived from multi-year GCOS Reference Upper-Air Network (GRUAN) radiosonde observations
+  is developed. Evaluation using independent radiosonde measurements (100m–20km altitude) yielded root-mean-squared
+  error (RMSE) typically 6% (and consistently below 10%) for relative humidity ( RH ) upto 10 km, comparable
+  to the inherent measurement uncertainty of state-of-the-art radiosonde observations. Temperature ( T
+  ) and water vapor pressure ( P w ) were retrieved with RMSEs of ~1.5 K (100 m – 15 km) and < 0.5 hPa
+  (100 m – 10 km), respectively. Applied to GNSS-RO refractivity profiles from COSMIC-2/FORMOSAT-7 over
+  the tropical oceans, the model comparison with UCAR NOAA 1D-Var retrievals showed RMSEs of ~1.5 K (1.5
+  – 15 km) for T , < 0.5 hPa for P w (1.5-10 km), and ~6% for RH (1.5–9 km) and a small RMSE increase
+  in the lowest 1.5 km which includes the marine atmospheric boundary layer (increase by ~1 K in T , ~0.25
+  hPa in P w , and ~2% in RH ). Importantly, dimensionality reduction in deep learning-- originally intended
+  to reduce computational complexity--is, in this study, associated with an unintended consequence termed
+  ‘scale invariance’. Scale invariance here, describes a property whereby the model retrievals are predominantly
+  determined by vertical profile features and remain largely unaffected by horizontal spatial extent (scale)
+  of the profiles. This characteristic allows a neural network trained on ground-based radiosonde measurements
+  to be effectively applied to satellite radio occultation (RO)-based refractivity profiles despite substantial
+  (>600%) differences in horizontal scales. The models’ applicability is demonstrated over large spatial
+  scales and wide temporal ranges over the tropical oceans. The CNN-based retrieval approach eliminates
+  dependency on numerical weather prediction model-based prior state estimates for each retrieval. This
+  approach provides a promising new tool for atmospheric retrievals, complementing the well-known advantages
+  of GNSS RO for space-based environmental monitoring.
+significance: 4
+cited_by: 0
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

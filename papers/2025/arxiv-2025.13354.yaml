@@ -1,0 +1,61 @@
+id: arxiv-2025.13354
+title: Advancing long-range daily precipitation ensemble forecasts with deep learning for Australia
+authors:
+- Huidong Jin
+- Rui Wang
+- Yaozhong Liu
+- Quanxi Shao
+date: '2025-06-04'
+year: 2025
+venue: Journal of Hydrology
+venue_type: journal
+ids:
+  arxiv: '2025.13354'
+  doi: 10.1016/j.jhydrol.2025.133548
+  openalex: W4411011565
+links:
+  paper: https://doi.org/10.1016/j.jhydrol.2025.133548
+topic: downscaling
+topics:
+- s2s-seasonal
+type: model
+method:
+- gan-vae
+- cnn
+timescale:
+- s2s
+- seasonal
+spatial:
+- regional
+data:
+- cmip
+status: research
+summary: A super-resolution GAN (DESRGAN) downscales ACCESS-S seasonal forecasts from 60 km to 5 km, outperforming
+  quantile mapping and VDSR in CRPS over 216-day leads.
+abstract: Providing high-resolution, skilful weather sequences for months across extensive regions is
+  crucial for climate-sensitive sectors. Achieving this goal is particularly challenging for precipitation
+  due to limitations in General Circulation Models (GCMs) that provide ensemble Seasonal Climate Forecasts
+  (SCFs) with discrepancies from daily observations. Traditional downscaling techniques like Quantile
+  Mapping (QM) rely on pre-defined relationships. Deep learning methods have shown promise in short-range
+  forecasts or fortnightly precipitation totals, but often assume alignment between low-resolution forecasts
+  and high-resolution observations. This paper introduces a novel Generative Adversarial Network (GAN)-based
+  approach, called Downscaling with Enhanced Super-Resolution GAN (DESRGAN), for addressing discrepancies
+  in long-range precipitation forecasts. DESRGAN employs cascaded Residual-in-Residual Dense Blocks (RRDB)
+  in its generator to produce realistic higher-resolution images, a U-Net discriminator to assess mismatches
+  at both pixel and image levels, and an augmented loss function to account for losses at different scales.
+  It is finalised according to the Continuous Ranked Probability Score (CRPS), an overall skill metric
+  for ensemble forecasts that assesses both accuracy and reliability. Tested on downscaling both versions
+  1 and 2 of the Australian Community Climate and Earth-System Simulator - Seasonal model (ACCESS-S) from
+  a 60 km resolution to 5 km with forecast lead times up to 216 days, DESRGAN outperforms bicubic interpolation,
+  QM, Very Deep Super-Resolution (VDSR), and a long-standing benchmark Climatology in terms of CRPS skill
+  score, Mean Absolute Error (MAE), and relative bias. Compared to its downscaling counterparts, DESRGAN
+  achieves substantial improvements, reducing CRPS by at least 3.27% and MAE by 4.16%. Concerning reliability
+  alone, a critical factor for operational applications, preliminary findings from the current ACCESS-S2
+  operational system show that DESRGAN performs less well than QM and Climatology. Consequently, further
+  work is required to improve deep learning methodologies for downscaling SCFs.
+significance: 4
+cited_by: 7
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill
