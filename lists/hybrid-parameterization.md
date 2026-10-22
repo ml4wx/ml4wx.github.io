@@ -5,8 +5,36 @@ ML inside physical models: subgrid parameterizations (convection, clouds, radiat
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/hybrid-parameterization/)
 
-0 papers (0 ⭐). Newest first.
+23 papers (3 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2024-12-16 | ⭐ [Neural general circulation models optimized to predict satellite-based precipitation observations](https://arxiv.org/abs/2412.11973)<br><sub>Janni Yuval, Ian Langmore, Dmitrii Kochkov et al. · Science Advances</sub> | Google Research |  |
+| 2024-08-19 | [Machine Learning for the Physics of Climate](https://arxiv.org/abs/2408.09627)<br><sub>Annalisa Bracco, Julien Brajard, Henk A. Dijkstra et al. · Nature Reviews Physics</sub> |  |  |
+| 2024-07-08 | [Leveraging data-driven weather models for improving numerical weather prediction skill through large-scale spectral nudging](https://arxiv.org/abs/2407.06100)<br><sub>Syed Zahid Husain, Leo Separovic, Jean-François Caron et al. · Weather and Forecasting</sub> | Environment and Climate Change Canada (ECCC) |  |
+| 2024-06-28 | [Stable Machine-Learning Parameterization of Subgrid Processes in a Comprehensive Atmospheric Model Learned From Embedded Convection-Permitting Simulations](https://arxiv.org/abs/2407.00124)<br><sub>Zeyuan Hu, Akshay Subramaniam, Zhiming Kuang et al. · Journal of Advances in Modeling Earth Systems</sub> | NVIDIA |  |
+| 2024-04-20 | [Machine learning for climate physics and simulations](https://arxiv.org/abs/2404.13227)<br><sub>Ching-Yao Lai, Pedram Hassanzadeh, Aditi Sheshadri et al. · Annual Review of Condensed Matter Physics</sub> | Massachusetts Institute of Technology (MIT), Stanford University, University of Chicago |  |
+| 2023-11-13 | ⭐ [Neural General Circulation Models for Weather and Climate](https://arxiv.org/abs/2311.07222)<br><sub>Dmitrii Kochkov, Janni Yuval, Ian Langmore et al. · Nature</sub> |  |  |
+| 2023-09-05 | [Harnessing AI and computing to advance climate modelling and prediction](https://doi.org/10.1038/s41558-023-01769-3)<br><sub>Tapio Schneider, Swadhin Behera, Giulio Boccaletti et al. · Nature Climate Change</sub> |  |  |
+| 2023-04-17 | [Data-Driven Equation Discovery of a Cloud Cover Parameterization](https://arxiv.org/abs/2304.08063)<br><sub>Arthur Grundner, Tom Beucler, Pierre Gentine et al. · Journal of Advances in Modeling Earth Systems (JAMES), 2024</sub> |  |  |
+| 2023-01-01 | [ClimSim-Online: A Large Multi-scale Dataset and Framework for Hybrid ML-physics Climate Emulation](https://arxiv.org/abs/2306.08754)<br><sub>Sungduk Yu, Walter Hannah, Liran Peng et al. · Advances in Neural Information Processing Systems 36</sub> |  | [code](https://github.com/leap-stc/climsim-online) |
+| 2022-05-16 | [Stable climate simulations using a realistic general circulation model with neural network parameterizations for atmospheric moist physics and radiation processes](https://doi.org/10.5194/gmd-15-3923-2022)<br><sub>Xin Wang, Yilun Han, Wei Xue et al. · Geoscientific Model Development</sub> |  |  |
+| 2022-02-05 | ⭐ [Correcting Coarse‐Grid Weather and Climate Models by Machine Learning From Global Storm‐Resolving Simulations](https://doi.org/10.1029/2021ms002794)<br><sub>Christopher S. Bretherton, Brian Henn, Anna Kwa et al. · Journal of Advances in Modeling Earth Systems</sub> | Allen Institute for AI (Ai2, ACE), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
+| 2021-01-22 | [Will Artificial Intelligence supersede Earth System and Climate Models?](https://arxiv.org/abs/2101.09126)<br><sub>Christopher Irrgang, Niklas Boers, Maike Sonnewald et al. · Nature Machine Intelligence</sub> | Colorado State University (incl. CIRA), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), Potsdam Institute for Climate Impact Research (PIK), Princeton University, University of Washington |  |
+| 2021-01-20 | [Machine learning emulation of gravity wave drag in numerical weather forecasting](https://arxiv.org/abs/2101.08195)<br><sub>Matthew Chantry, Sam Hatfield, Peter Duben et al. · Journal of Advances in Modeling Earth Systems</sub> | University of Oxford |  |
+| 2020-01-09 | [Stable machine-learning parameterization of subgrid processes for climate modeling at a range of resolutions](https://arxiv.org/abs/2001.03151)<br><sub>Janni Yuval, Paul A. O'Gorman · Nature communications. 2020 Jul 3;11(1):1-0</sub> |  |  |
+| 2019-04-06 | [Spatially Extended Tests of a Neural Network Parametrization Trained by Coarse-graining](https://arxiv.org/abs/1904.03327)<br><sub>Noah D Brenowitz, Christopher S Bretherton · Journal of Advances in Modeling Earth Systems</sub> | University of Washington |  |
+| 2018-06-28 | [Using machine learning to parameterize moist convection: potential for modeling of climate, climate change and extreme events](https://arxiv.org/abs/1806.11037)<br><sub>Paul A. O'Gorman, John G. Dwyer · Journal of Advances in Modeling Earth Systems, 10, 2548-2563, 2018</sub> |  |  |
+| 2018-06-22 | [Prognostic Validation of a Neural Network Unified Physics Parameterization](https://doi.org/10.1029/2018gl078510)<br><sub>N. D. Brenowitz, C. S. Bretherton · Geophysical Research Letters</sub> | University of Washington |  |
+| 2018-06-12 | [Could Machine Learning Break the Convection Parameterization Deadlock?](https://doi.org/10.1029/2018gl078202)<br><sub>P. Gentine, M. Pritchard, S. Rasp et al. · Geophysical Research Letters</sub> | Columbia University (LEAP, Lamont-Doherty) |  |
+| 2018-06-12 | [Deep learning to represent sub-grid processes in climate models](https://arxiv.org/abs/1806.04731)<br><sub>Stephan Rasp, Michael S. Pritchard, Pierre Gentine · Proceedings of the National Academy of Sciences Sep 2018, 201810286; DOI: 10.1073/pnas.1810286115</sub> |  |  |
+| 2017-08-31 | [Earth System Modeling 2.0: A Blueprint for Models That Learn From Observations and Targeted High-Resolution Simulations](https://arxiv.org/abs/1709.00037)<br><sub>Tapio Schneider, Shiwei Lan, Andrew Stuart et al. · Geophysical Research Letters 2017</sub> |  |  |
+| 2006-03-01 | [Complex hybrid models combining deterministic and machine learning components for numerical climate modeling and weather prediction](https://doi.org/10.1016/j.neunet.2006.01.002)<br><sub>Vladimir M. Krasnopolsky, Michael S. Fox-Rabinovitz · Neural Networks</sub> |  |  |
+| 2005-05-01 | [New Approach to Calculation of Atmospheric Model Physics: Accurate and Fast Neural Network Emulation of Longwave Radiation in a Climate Model](https://doi.org/10.1175/mwr2923.1)<br><sub>Vladimir M. Krasnopolsky, Michael S. Fox-Rabinovitz, Dmitry V. Chalikov · Monthly Weather Review</sub> | NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
+| 1998-11-01 | [A Neural Network Approach for a Fast and Accurate Computation of a Longwave Radiative Budget](https://doi.org/10.1175/1520-0450(1998)037<1385:annafa>2.0.co;2)<br><sub>F. Chevallier, F. Chéruy, N. A. Scott et al. · Journal of Applied Meteorology</sub> |  |  |
+
+## Also relevant
+
+- [ClimART: A Benchmark Dataset for Emulating Atmospheric Radiative Transfer in Weather and Climate Models](https://arxiv.org/abs/2111.14671) (2021)
+- [Machine Learning for Model Error Inference and Correction](https://doi.org/10.1029/2020ms002232) (2020)
 

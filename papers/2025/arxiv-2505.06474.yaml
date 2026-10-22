@@ -1,0 +1,62 @@
+id: arxiv-2505.06474
+title: 'Climate in a Bottle: Towards a Generative Foundation Model for the Kilometer-Scale Global Atmosphere'
+authors:
+- Noah D. Brenowitz
+- Tao Ge
+- Akshay Subramaniam
+- Peter Manshausen
+- Aayush Gupta
+- David M. Hall
+- Morteza Mardani
+- Arash Vahdat
+- Karthik Kashinath
+- Michael S. Pritchard
+date: '2025-05-10'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2505.06474'
+links:
+  paper: https://arxiv.org/abs/2505.06474
+  pdf: https://arxiv.org/pdf/2505.06474
+topic: climate-emulation
+topics:
+- foundation-models
+- extremes-hazards
+type: model
+method:
+- diffusion
+- physics-constrained
+timescale:
+- climate
+spatial:
+- global
+data:
+- era5
+- cmip
+- km-scale-sim
+status: research
+summary: cBottle is a generative diffusion emulator of global 5 km climate simulations and reanalysis
+  on HEALPix, avoiding autoregressive rollout and reaching 12.5M-pixel resolution.
+abstract: 'Climate modeling is reaching unprecedented resolution, producing petabytes of data. AI climate
+  model emulators offer a path to computationally cheap analysis, enabling new scientific insight and
+  scenario planning. Recent advances show promise in faithfully emulating climate data. However, prevailing
+  auto-regressive paradigms are difficult to train on climate time horizons due to drifts, instabilities,
+  and component-coupling challenges. They are hard to scale to high resolution and require sifting through
+  troves of output to identify rare extremes of interest. We present Climate in a Bottle (cBottle), a
+  generative diffusion-based framework emulating global 5 km climate simulations and reanalysis on the
+  HEALPix grid. cBottle samples directly from the full distribution of atmospheric states, avoiding auto-regressive
+  rollout, and is the first to reach this 12.5M-pixel global resolution. It consists of two stages: a
+  coarse-resolution generator conditioned on sea surface temperatures and solar position, followed by
+  a patch-based 16x super-resolution stage. cBottle passes a battery of tests, including diurnal-to-seasonal
+  variability, large-scale modes of variability, tropical cyclone statistics, and trends of climate change
+  and weather extremes. It is a step toward a foundation model: bridging data modalities (reanalysis and
+  simulation), enabling zero-shot bias correction, downscaling, and data infilling. It also enables new
+  interactivity via guided diffusion. For example, we train a tropical cyclone (TC) classifier alongside
+  the generator, guide towards TC states, and obtain physically credible samples. This opens the door
+  to guidance methods for a wide array of user queries and new ways of interacting with climate data.'
+significance: 6
+score: 24
+highlight: false
+added: '2026-10-22'
+source: seed

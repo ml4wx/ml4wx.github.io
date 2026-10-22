@@ -1,0 +1,60 @@
+id: arxiv-2309.15214
+title: Residual Corrective Diffusion Modeling for Km-scale Atmospheric Downscaling
+authors:
+- Morteza Mardani
+- Noah Brenowitz
+- Yair Cohen
+- Jaideep Pathak
+- Chieh-Yu Chen
+- Cheng-Chin Liu
+- Arash Vahdat
+- Mohammad Amin Nabian
+- Tao Ge
+- Akshay Subramaniam
+- Karthik Kashinath
+- Jan Kautz
+- Mike Pritchard
+date: '2023-09-24'
+year: 2023
+venue: Communications Earth &amp; Environment
+venue_type: journal
+ids:
+  arxiv: '2309.15214'
+  doi: 10.1038/s43247-025-02042-5
+links:
+  paper: https://arxiv.org/abs/2309.15214
+  pdf: https://arxiv.org/pdf/2309.15214
+topic: downscaling
+type: model
+method:
+- diffusion
+- cnn
+spatial:
+- regional
+- local
+data:
+- era5
+- km-scale-sim
+status: research
+summary: Two-step UNet plus diffusion residual model downscales 25 km reanalysis to 2 km over Taiwan,
+  recovering spectra and sharpening fronts and typhoon structures.
+abstract: The state of the art for physical hazard prediction from weather and climate requires expensive
+  km-scale numerical simulations driven by coarser resolution global inputs. Here, a generative diffusion
+  architecture is explored for downscaling such global inputs to km-scale, as a cost-effective machine
+  learning alternative. The model is trained to predict 2km data from a regional weather model over Taiwan,
+  conditioned on a 25km global reanalysis. To address the large resolution ratio, different physics involved
+  at different scales and prediction of channels beyond those in the input data, we employ a two-step
+  approach where a UNet predicts the mean and a corrector diffusion (CorrDiff) model predicts the residual.
+  CorrDiff exhibits encouraging skill in bulk MAE and CRPS scores. The predicted spectra and distributions
+  from CorrDiff faithfully recover important power law relationships in the target data. Case studies
+  of coherent weather phenomena show that CorrDiff can help sharpen wind and temperature gradients that
+  co-locate with intense rainfall in cold front, and can help intensify typhoons and synthesize rain band
+  structures. Calibration of model uncertainty remains challenging. The prospect of unifying methods like
+  CorrDiff with coarser resolution global weather models implies a potential for global-to-regional multi-scale
+  machine learning simulation.
+significance: 7
+cited_by: 99
+score: 28
+highlight: false
+added: '2026-10-22'
+source: seed

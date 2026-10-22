@@ -1,0 +1,64 @@
+id: doi-10.1029-2021ms002794
+title: Correcting Coarse‐Grid Weather and Climate Models by Machine Learning From Global Storm‐Resolving
+  Simulations
+authors:
+- Christopher S. Bretherton
+- Brian Henn
+- Anna Kwa
+- Noah D. Brenowitz
+- Oliver Watt‐Meyer
+- Jeremy McGibbon
+- W. Andre Perkins
+- Spencer K. Clark
+- Lucas Harris
+date: '2022-02-05'
+year: 2022
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2021ms002794
+links:
+  paper: https://doi.org/10.1029/2021ms002794
+orgs:
+- ai2
+- noaa
+topic: hybrid-parameterization
+topics:
+- global-medium-range
+type: model
+method:
+- classical-ml
+timescale:
+- medium
+spatial:
+- global
+data:
+- km-scale-sim
+status: research
+summary: Machine-learned nudging tendencies correct a 200-km FV3GFS model toward 3-km X-SHiELD, gaining
+  18 hours of 3-7 day skill and 30% better precipitation.
+abstract: Abstract Global atmospheric “ storm‐resolving ” models with horizontal grid spacing of less
+  than 5 km resolve deep cumulus convection and flow in complex terrain. They promise to be reference
+  models that could be used to improve computationally affordable coarse‐grid global climate models across
+  a range of climates, reducing uncertainties in regional precipitation and temperature trends. Here,
+  machine learning of nudging tendencies as functions of column state is used to correct the physical
+  parameterization tendencies of temperature, humidity, and optionally winds, in a real‐geography coarse‐grid
+  model (FV3GFS with a 200 km grid) to be closer to those of a 40‐day reference simulation using X‐SHiELD,
+  a modified version of FV3GFS with a 3 km grid. Both simulations specify the same historical sea‐surface
+  temperature fields. This methodology builds on a prior study using a global observational analysis as
+  the reference. The coarse‐grid model without machine learning corrections has too few clouds, causing
+  too much daytime heating of land surfaces that creates excessive surface latent heat flux and rainfall.
+  This bias is avoided by learning downwelling radiative flux from the fine‐grid model. The best configuration
+  uses learned nudging tendencies for temperature and humidity but not winds. Neural nets slightly outperform
+  random forests. Forecasts of 850 hPa temperature gain 18 hr of skill at 3–7 days leads and time‐mean
+  precipitation patterns are improved 30% by applying the ML correction. Adding machine‐learned wind tendencies
+  improves 500 hPa height skill for the first five days of forecasts but degrades time‐mean upper tropospheric
+  temperature and zonal wind patterns thereafter.
+significance: 6
+cited_by: 74
+score: 59
+highlight: true
+highlight_reason: Shows ML corrections learned from 3 km X-SHiELD improve coarse FV3GFS skill and precipitation;
+  solid step toward storm-resolving-informed climate models.
+added: '2026-10-22'
+source: seed

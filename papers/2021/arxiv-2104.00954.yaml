@@ -1,0 +1,72 @@
+id: arxiv-2104.00954
+title: Skillful Precipitation Nowcasting using Deep Generative Models of Radar
+authors:
+- Suman Ravuri
+- Karel Lenc
+- Matthew Willson
+- Dmitry Kangin
+- Remi Lam
+- Piotr Mirowski
+- Megan Fitzsimons
+- Maria Athanassiadou
+- Sheleem Kashem
+- Sam Madge
+- Rachel Prudden
+- Amol Mandhane
+- Aidan Clark
+- Andrew Brock
+- Karen Simonyan
+- Raia Hadsell
+- Niall Robinson
+- Ellen Clancy
+- Alberto Arribas
+- Shakir Mohamed
+date: '2021-04-02'
+year: 2021
+venue: Nature
+venue_type: journal
+ids:
+  arxiv: '2104.00954'
+  doi: 10.1038/s41586-021-03854-z
+links:
+  paper: https://arxiv.org/abs/2104.00954
+  pdf: https://arxiv.org/pdf/2104.00954
+topic: nowcasting
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- gan-vae
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: operational
+summary: DGMR, a deep generative model of radar, produces skillful 5-90 minute precipitation nowcasts
+  that Met Office experts ranked first in 88% of cases.
+abstract: Precipitation nowcasting, the high-resolution forecasting of precipitation up to two hours ahead,
+  supports the real-world socio-economic needs of many sectors reliant on weather-dependent decision-making.
+  State-of-the-art operational nowcasting methods typically advect precipitation fields with radar-based
+  wind estimates, and struggle to capture important non-linear events such as convective initiations.
+  Recently introduced deep learning methods use radar to directly predict future rain rates, free of physical
+  constraints. While they accurately predict low-intensity rainfall, their operational utility is limited
+  because their lack of constraints produces blurry nowcasts at longer lead times, yielding poor performance
+  on more rare medium-to-heavy rain events. To address these challenges, we present a Deep Generative
+  Model for the probabilistic nowcasting of precipitation from radar. Our model produces realistic and
+  spatio-temporally consistent predictions over regions up to 1536 km x 1280 km and with lead times from
+  5-90 min ahead. In a systematic evaluation by more than fifty expert forecasters from the Met Office,
+  our generative model ranked first for its accuracy and usefulness in 88% of cases against two competitive
+  methods, demonstrating its decision-making value and ability to provide physical insight to real-world
+  experts. When verified quantitatively, these nowcasts are skillful without resorting to blurring. We
+  show that generative nowcasting can provide probabilistic predictions that improve forecast value and
+  support operational utility, and at resolutions and lead times where alternative methods struggle.
+significance: 9
+cited_by: 870
+score: 86
+highlight: true
+highlight_reason: 'Landmark DGMR Nature paper: generative radar nowcasting validated by Met Office forecasters;
+  defined the field of probabilistic deep learning nowcasting.'
+added: '2026-10-22'
+source: seed

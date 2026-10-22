@@ -1,0 +1,63 @@
+id: arxiv-2507.05658
+title: 'HRRRCast: a data-driven emulator for regional weather forecasting at convection allowing scales'
+authors:
+- Daniel Abdi
+- Isidora Jankov
+- Paul Madden
+- Vanderlei Vargas
+- Timothy A. Smith
+- Sergey Frolov
+- Montgomery Flora
+- Corey Potvin
+date: '2025-07-08'
+year: 2025
+venue: Artificial Intelligence for the Earth Systems, Vol. 5, No. 2, 2026, Article 250061
+venue_type: journal
+ids:
+  arxiv: '2507.05658'
+  doi: 10.1175/aies-d-25-0061.1
+links:
+  paper: https://arxiv.org/abs/2507.05658
+  pdf: https://arxiv.org/pdf/2507.05658
+topic: regional-km-scale
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- cnn
+- diffusion
+- gnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- nwp-analysis
+- radar
+status: research
+summary: HRRRCast is a ResNet-based emulator of the HRRR convection-allowing model over CONUS, with DDIM
+  ensembles that beat HRRR at the 20 dBZ reflectivity threshold.
+abstract: 'The High-Resolution Rapid Refresh (HRRR) model is a convection-allowing model used in operational
+  weather forecasting across the contiguous United States (CONUS). To provide a computationally efficient
+  alternative, we introduce HRRRCast, a data-driven emulator built with advanced machine learning techniques.
+  HRRRCast includes two architectures: a ResNet-based model (ResHRRR) and a Graph Neural Network-based
+  model (GraphHRRR). ResHRRR uses convolutional neural networks enhanced with squeeze-and-excitation blocks
+  and Feature-wise Linear Modulation, and supports probabilistic forecasting via the Denoising Diffusion
+  Implicit Model (DDIM). To better handle longer lead times, we train a single model to predict multiple
+  lead times (1h, 3h, and 6h), then use a greedy rollout strategy during inference. When evaluated on
+  composite reflectivity over the full CONUS domain using ensembles of 3 to 10 members, ResHRRR outperforms
+  HRRR forecast at light rainfall threshold (20 dBZ) and achieves competitive performance at moderate
+  thresholds (30 dBZ). Our work advances the StormCast model of Pathak et al. [21] by: a) training on
+  the full CONUS domain, b) using multiple lead times to improve long-range skill, c) training on analysis
+  data instead of the +1h post-analysis data inadvertently used in StormCast, and d) incorporating future
+  GFS states as inputs, enabling downscaling that improves long-lead accuracy. Grid-, neighborhood-, and
+  object-based metrics confirm better storm placement, lower frequency bias, and higher success ratios
+  than HRRR. HRRRCast ensemble forecasts also maintain sharper spatial detail, with power spectra more
+  closely matching HRRR analysis. While GraphHRRR underperforms in its current form, it lays groundwork
+  for future graph-based forecasting. HRRRCast represents a step toward efficient, data-driven regional
+  weather prediction with competitive accuracy and ensemble capability.'
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: seed

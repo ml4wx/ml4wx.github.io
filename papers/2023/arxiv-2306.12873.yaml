@@ -1,0 +1,56 @@
+id: arxiv-2306.12873
+title: 'FuXi: A cascade machine learning forecasting system for 15-day global weather forecast'
+authors:
+- Lei Chen
+- Xiaohui Zhong
+- Feng Zhang
+- Yuan Cheng
+- Yinghui Xu
+- Yuan Qi
+- Hao Li
+date: '2023-06-22'
+year: 2023
+venue: npj Climate and Atmospheric Science
+venue_type: journal
+ids:
+  arxiv: '2306.12873'
+  doi: 10.1038/s41612-023-00512-1
+links:
+  paper: https://arxiv.org/abs/2306.12873
+  pdf: https://arxiv.org/pdf/2306.12873
+topic: global-medium-range
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- transformer
+- cnn
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: FuXi is a cascaded ML system giving 15-day global forecasts at 0.25 degrees, the first ML model
+  to match the ECMWF ensemble mean at 15 days.
+abstract: Over the past few years, due to the rapid development of machine learning (ML) models for weather
+  forecasting, state-of-the-art ML models have shown superior performance compared to the European Centre
+  for Medium-Range Weather Forecasts (ECMWF)'s high-resolution forecast (HRES) in 10-day forecasts at
+  a spatial resolution of 0.25 degree. However, the challenge remains to perform comparably to the ECMWF
+  ensemble mean (EM) in 15-day forecasts. Previous studies have demonstrated the importance of mitigating
+  the accumulation of forecast errors for effective long-term forecasts. Despite numerous efforts to reduce
+  accumulation errors, including autoregressive multi-time step loss, using a single model is found to
+  be insufficient to achieve optimal performance in both short and long lead times. Therefore, we present
+  FuXi, a cascaded ML weather forecasting system that provides 15-day global forecasts with a temporal
+  resolution of 6 hours and a spatial resolution of 0.25 degree. FuXi is developed using 39 years of the
+  ECMWF ERA5 reanalysis dataset. The performance evaluation, based on latitude-weighted root mean square
+  error (RMSE) and anomaly correlation coefficient (ACC), demonstrates that FuXi has comparable forecast
+  performance to ECMWF EM in 15-day forecasts, making FuXi the first ML-based weather forecasting system
+  to accomplish this achievement.
+significance: 7
+cited_by: 333
+score: 38
+highlight: false
+added: '2026-10-22'
+source: seed

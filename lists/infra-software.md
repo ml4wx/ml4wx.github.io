@@ -5,8 +5,20 @@ Frameworks, training and inference at scale, HPC, and compression of weather and
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/infra-software/)
 
-0 papers (0 ⭐). Newest first.
+7 papers (2 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2025-09-16 | ⭐ [AERIS: Argonne Earth Systems Model for Reliable and Skillful Predictions](https://arxiv.org/abs/2509.13523)<br><sub>Väinö Hatanpää, Eugene Ku, Jason Stock et al. · Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis</sub> | Allen Institute for AI (Ai2, ACE), Argonne National Laboratory, University of California, Los Angeles (UCLA), University of Chicago |  |
+| 2024-10-09 | [Exploring the design space of deep-learning-based weather forecasting systems](https://arxiv.org/abs/2410.07472)<br><sub>Shoaib Ahmed Siddiqui, Jean Kossaifi, Boris Bonev et al.</sub> |  |  |
+| 2024-05-06 | [CRA5: Extreme Compression of ERA5 for Portable Global Climate and Weather Research via an Efficient Variational Transformer](https://arxiv.org/abs/2405.03376)<br><sub>Tao Han, Zhenghao Chen, Song Guo et al.</sub> |  | [code](https://github.com/taohan10200/CRA5) |
+| 2024-04-30 | [Analyzing and Exploring Training Recipes for Large-Scale Transformer-Based Weather Prediction](https://arxiv.org/abs/2404.19630)<br><sub>Jared D. Willard, Peter Harrington, Shashank Subramanian et al. · 23rd Conference on Artificial Intelligence for Environmental Science. Jan 2024. Abstract #437874</sub> |  |  |
+| 2022-10-22 | [Compressing multidimensional weather and climate data into neural networks](https://arxiv.org/abs/2210.12538)<br><sub>Langwen Huang, Torsten Hoefler</sub> |  |  |
+| 2022-08-08 | ⭐ [FourCastNet: Accelerating Global High-Resolution Weather Forecasting using Adaptive Fourier Neural Operators](https://arxiv.org/abs/2208.05419)<br><sub>Thorsten Kurth, Shashank Subramanian, Peter Harrington et al. · Proceedings of the Platform for Advanced Scientific Computing Conference</sub> | Lawrence Berkeley National Laboratory / NERSC, NVIDIA |  |
+| 2018-10-03 | [Exascale Deep Learning for Climate Analytics](https://arxiv.org/abs/1810.01993)<br><sub>Thorsten Kurth, Sean Treichler, Joshua Romero et al. · SC18: International Conference for High Performance Computing, Networking, Storage and Analysis</sub> |  |  |
+
+## Also relevant
+
+- [ORBIT-2: Scaling Exascale Vision Foundation Models for Weather and Climate Downscaling](https://arxiv.org/abs/2505.04802) (2025)
+- [ORBIT: Oak Ridge Base Foundation Model for Earth System Predictability](https://arxiv.org/abs/2404.14712) (2024)
 

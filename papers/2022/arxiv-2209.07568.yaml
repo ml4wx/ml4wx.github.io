@@ -1,0 +1,53 @@
+id: arxiv-2209.07568
+title: Physically Constrained Generative Adversarial Networks for Improving Precipitation Fields from
+  Earth System Models
+authors:
+- Philipp Hess
+- Markus Drüke
+- Stefan Petri
+- Felix M. Strnad
+- Niklas Boers
+date: '2022-08-25'
+year: 2022
+venue: Nature Machine Intelligence
+venue_type: journal
+ids:
+  arxiv: '2209.07568'
+  doi: 10.1038/s42256-022-00540-1
+links:
+  paper: https://arxiv.org/abs/2209.07568
+  pdf: https://arxiv.org/pdf/2209.07568
+topic: downscaling
+topics:
+- climate-emulation
+type: model
+method:
+- gan-vae
+- physics-constrained
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: A physically constrained GAN corrects Earth system model precipitation, fixing local distributions
+  and the double-peaked ITCZ while preserving global precipitation sums under future scenarios.
+abstract: Precipitation results from complex processes across many scales, making its accurate simulation
+  in Earth system models (ESMs) challenging. Existing post-processing methods can improve ESM simulations
+  locally, but cannot correct errors in modelled spatial patterns. Here we propose a framework based on
+  physically constrained generative adversarial networks (GANs) to improve local distributions and spatial
+  structure simultaneously. We apply our approach to the computationally efficient ESM CM2Mc-LPJmL. Our
+  method outperforms existing ones in correcting local distributions, and leads to strongly improved spatial
+  patterns especially regarding the intermittency of daily precipitation. Notably, a double-peaked Intertropical
+  Convergence Zone, a common problem in ESMs, is removed. Enforcing a physical constraint to preserve
+  global precipitation sums, the GAN can generalize to future climate scenarios unseen during training.
+  Feature attribution shows that the GAN identifies regions where the ESM exhibits strong biases. Our
+  method constitutes a general framework for correcting ESM variables and enables realistic simulations
+  at a fraction of the computational costs.
+significance: 4
+cited_by: 79
+score: 36
+highlight: false
+added: '2026-10-22'
+source: seed

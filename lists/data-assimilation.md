@@ -5,8 +5,30 @@ ML for data assimilation and state estimation, learned observation operators, an
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/data-assimilation/)
 
-0 papers (0 ⭐). Newest first.
+13 papers (1 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2024-12-20 | [GraphDOP: Towards skilful data-driven medium-range weather forecasts learnt and initialised directly from observations](https://arxiv.org/abs/2412.15687)<br><sub>Mihai Alexe, Eulalie Boucher, Peter Lean et al.</sub> |  |  |
+| 2024-08-10 | [FuXi Weather: A data-to-forecast machine learning system for global weather](https://arxiv.org/abs/2408.05472)<br><sub>Xiuyu Sun, Xiaohui Zhong, Xiaoze Xu et al. · Nature Communications</sub> |  |  |
+| 2024-06-19 | [Generative Data Assimilation of Sparse Weather Station Observations at Kilometer Scales](https://arxiv.org/abs/2406.16947)<br><sub>Peter Manshausen, Yair Cohen, Peter Harrington et al. · Journal of Advances in Modeling Earth Systems</sub> | NVIDIA, University of Oxford |  |
+| 2024-06-01 | [AI-based data assimilation: Learning the functional of analysis estimation](https://arxiv.org/abs/2406.00390)<br><sub>Jan D. Keller, Roland Potthast</sub> |  |  |
+| 2024-04-12 | [Fuxi-DA: A Generalized Deep Learning Data Assimilation Framework for Assimilating Satellite Observations](https://arxiv.org/abs/2404.08522)<br><sub>Xiaoze Xu, Xiuyu Sun, Wei Han et al. · npj Climate and Atmospheric Science</sub> |  |  |
+| 2024-03-30 | ⭐ [Aardvark weather: end-to-end data-driven weather forecasting](https://arxiv.org/abs/2404.00411)<br><sub>Anna Vaughan, Stratis Markou, Will Tebbutt et al. · Nature</sub> |  |  |
+| 2024-01-11 | [DiffDA: a Diffusion Model for Weather-scale Data Assimilation](https://arxiv.org/abs/2401.05932)<br><sub>Langwen Huang, Lukas Gianinazzi, Yuejiang Yu et al.</sub> |  |  |
+| 2023-12-18 | [Towards an end-to-end artificial intelligence driven global weather forecasting system](https://arxiv.org/abs/2312.12462)<br><sub>Kun Chen, Lei Bai, Fenghua Ling et al.</sub> |  |  |
+| 2023-12-16 | [FengWu-4DVar: Coupling the Data-driven Weather Forecasting Model with 4D Variational Assimilation](https://arxiv.org/abs/2312.12455)<br><sub>Yi Xiao, Lei Bai, Wei Xue et al.</sub> |  |  |
+| 2023-01-01 | [Score-based Data Assimilation](https://arxiv.org/abs/2306.10574)<br><sub>François Rozet, Gilles Louppe · Advances in Neural Information Processing Systems 36</sub> |  |  |
+| 2021-02-15 | [Learning earth system models from observations: machine learning or data assimilation?](https://doi.org/10.1098/rsta.2020.0089)<br><sub>A. J. Geer · Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences</sub> | ECMWF |  |
+| 2020-11-30 | [Machine Learning for Model Error Inference and Correction](https://doi.org/10.1029/2020ms002232)<br><sub>Massimo Bonavita, Patrick Laloyaux · Journal of Advances in Modeling Earth Systems</sub> |  |  |
+| 2020-01-06 | [Combining data assimilation and machine learning to emulate a dynamical model from sparse and noisy observations: a case study with the Lorenz 96 model](https://arxiv.org/abs/2001.01520)<br><sub>Julien Brajard, Alberto Carassi, Marc Bocquet et al. · Journal of Computational Science, Volume 44, 2020</sub> | University of Reading | [code](https://github.com/brajard/GMD-code) |
+
+## Also relevant
+
+- [Deep Learning for Day Forecasts from Sparse Observations](https://arxiv.org/abs/2306.06079) (2023)
+- [FengWu: Pushing the Skillful Global Medium-range Weather Forecast beyond 10 Days Lead](https://arxiv.org/abs/2304.02948) (2023)
+- [Can deep learning beat numerical weather prediction?](https://doi.org/10.1098/rsta.2020.0097) (2021)
+- [Development and Interpretation of a Neural Network-Based Synthetic Radar Reflectivity Estimator Using GOES-R Satellite Observations](https://arxiv.org/abs/2004.07906) (2020)
+- [Leveraging Modern Artificial Intelligence for Remote Sensing and NWP: Benefits and Challenges](https://doi.org/10.1175/bams-d-18-0324.1) (2019)
+- [Earth System Modeling 2.0: A Blueprint for Models That Learn From Observations and Targeted High-Resolution Simulations](https://arxiv.org/abs/1709.00037) (2017)
 

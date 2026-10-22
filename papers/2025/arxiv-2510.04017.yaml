@@ -1,0 +1,64 @@
+id: arxiv-2510.04017
+title: 'Zephyrus: An Agentic Framework for Weather Science'
+authors:
+- Sumanth Varambally
+- Marshall Fisher
+- Jas Thakker
+- Yiwei Chen
+- Zhirui Xia
+- Yasaman Jafari
+- Ruijia Niu
+- Manas Jain
+- Veeramakali Vignesh Manivannan
+- Zachary Novack
+- Luyu Han
+- Srikar Eranky
+- Salva Rühling Cachay
+- Taylor Berg-Kirkpatrick
+- Duncan Watson-Parris
+- Yi-An Ma
+- Rose Yu
+date: '2025-10-05'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2510.04017'
+links:
+  paper: https://arxiv.org/abs/2510.04017
+  pdf: https://arxiv.org/pdf/2510.04017
+  code: https://github.com/Rose-STL-Lab/Zephyrus
+topic: llms-agents
+topics:
+- benchmarks-data-eval
+type: model
+method:
+- llm
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Zephyrus is an LLM agent with a weather-data environment and ZephyrusBench, outperforming text-only
+  baselines by up to 44 points in correctness.
+abstract: Foundation models for weather science are pre-trained on vast amounts of structured numerical
+  data and outperform traditional weather forecasting systems. However, these models lack language-based
+  reasoning capabilities, limiting their utility in interactive scientific workflows. Large language models
+  (LLMs) excel at understanding and generating text but cannot reason about high-dimensional meteorological
+  datasets. We bridge this gap by building the first agentic framework for weather science. Our framework
+  includes a Python code-based environment for agents (ZephyrusWorld) to interact with weather data, featuring
+  tools including a WeatherBench 2 dataset indexer, geolocator for geocoding from natural language, weather
+  forecasting, climate simulation capabilities, and a climatology module for querying precomputed climatological
+  statistics (e.g., means, extremes, and quantiles) across multiple timescales. We design Zephyrus, a
+  multi-turn LLM-based weather agent that iteratively analyzes weather datasets, observes results, and
+  refines its approach through conversational feedback loops. We accompany the agent with a new benchmark,
+  ZephyrusBench, with a scalable data generation pipeline that constructs diverse question-answer pairs
+  across weather-related tasks, from basic lookups to advanced forecasting, extreme event detection, and
+  counterfactual reasoning. Experiments on this benchmark demonstrate the strong performance of Zephyrus
+  agents over text-only baselines, outperforming them by up to 44 percentage points in correctness. However,
+  the hard tasks are still difficult even with frontier LLMs, highlighting the challenging nature of our
+  benchmark and suggesting room for future development. Our codebase and benchmark are available at https://github.com/Rose-STL-Lab/Zephyrus.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: seed

@@ -1,0 +1,42 @@
+id: arxiv-2106.13924
+title: 'Self-Attentive Ensemble Transformer: Representing Ensemble Interactions in Neural Networks for
+  Earth System Models'
+authors:
+- Tobias Sebastian Finn
+date: '2021-06-21'
+year: 2021
+venue_type: preprint
+ids:
+  arxiv: '2106.13924'
+links:
+  paper: https://arxiv.org/abs/2106.13924
+  pdf: https://arxiv.org/pdf/2106.13924
+  code: https://github.com/tobifinn/ensemble_transformer
+topic: post-processing
+type: model
+method:
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- nwp-analysis
+- era5
+status: research
+summary: A self-attentive ensemble transformer post-processes ECMWF ensemble members member-by-member,
+  calibrating spread and producing spatially coherent 2m temperature ensembles.
+abstract: Ensemble data from Earth system models has to be calibrated and post-processed. I propose a
+  novel member-by-member post-processing approach with neural networks. I bridge ideas from ensemble data
+  assimilation with self-attention, resulting into the self-attentive ensemble transformer. Here, interactions
+  between ensemble members are represented as additive and dynamic self-attentive part. As proof-of-concept,
+  I regress global ECMWF ensemble forecasts to 2-metre-temperature fields from the ERA5 reanalysis. I
+  demonstrate that the ensemble transformer can calibrate the ensemble spread and extract additional information
+  from the ensemble. As it is a member-by-member approach, the ensemble transformer directly outputs multivariate
+  and spatially-coherent ensemble members. Therefore, self-attention and the transformer technique can
+  be a missing piece for a non-parametric post-processing of ensemble data with neural networks.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: seed

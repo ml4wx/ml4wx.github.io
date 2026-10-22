@@ -1,0 +1,59 @@
+id: arxiv-2306.14066
+title: 'SEEDS: Emulation of Weather Forecast Ensembles with Diffusion Models'
+authors:
+- Lizao Li
+- Rob Carver
+- Ignacio Lopez-Gomez
+- Fei Sha
+- John Anderson
+date: '2023-06-24'
+year: 2023
+venue: Science Advances
+venue_type: journal
+ids:
+  arxiv: '2306.14066'
+  doi: 10.1126/sciadv.adk4489
+links:
+  paper: https://arxiv.org/abs/2306.14066
+  pdf: https://arxiv.org/pdf/2306.14066
+orgs:
+- google-research
+topic: probabilistic-ensembles
+topics:
+- climate-emulation
+type: model
+method:
+- diffusion
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: SEEDS uses diffusion models to emulate operational weather ensembles, generating thousands of
+  realistic members cheaply with improved reliability and extreme-event probabilities after bias correction.
+abstract: Uncertainty quantification is crucial to decision-making. A prominent example is probabilistic
+  forecasting in numerical weather prediction. The dominant approach to representing uncertainty in weather
+  forecasting is to generate an ensemble of forecasts. This is done by running many physics-based simulations
+  under different conditions, which is a computationally costly process. We propose to amortize the computational
+  cost by emulating these forecasts with deep generative diffusion models learned from historical data.
+  The learned models are highly scalable with respect to high-performance computing accelerators and can
+  sample hundreds to tens of thousands of realistic weather forecasts at low cost. When designed to emulate
+  operational ensemble forecasts, the generated ones are similar to physics-based ensembles in important
+  statistical properties and predictive skill. When designed to correct biases present in the operational
+  forecasting system, the generated ensembles show improved probabilistic forecast metrics. They are more
+  reliable and forecast probabilities of extreme weather events more accurately. While this work demonstrates
+  the utility of the methodology by focusing on weather forecasting, the generative artificial intelligence
+  methodology can be extended for uncertainty quantification in climate modeling, where we believe the
+  generation of very large ensembles of climate projections will play an increasingly important role in
+  climate risk assessment.
+significance: 6
+cited_by: 101
+score: 89
+highlight: true
+highlight_reason: Early demonstration of diffusion models emulating operational ensembles cheaply and
+  bias-correcting them; influential for generative ensemble forecasting.
+added: '2026-10-22'
+source: seed

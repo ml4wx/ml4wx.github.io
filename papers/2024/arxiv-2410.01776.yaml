@@ -1,0 +1,63 @@
+id: arxiv-2410.01776
+title: Dynamical-generative downscaling of climate model ensembles
+authors:
+- Ignacio Lopez-Gomez
+- Zhong Yi Wan
+- Leonardo Zepeda-Núñez
+- Tapio Schneider
+- John Anderson
+- Fei Sha
+date: '2024-10-02'
+year: 2024
+venue: Proceedings of the National Academy of Sciences
+venue_type: journal
+ids:
+  arxiv: '2410.01776'
+  doi: 10.1073/pnas.2420288122
+links:
+  paper: https://arxiv.org/abs/2410.01776
+  pdf: https://arxiv.org/pdf/2410.01776
+orgs:
+- caltech
+- google-research
+topic: downscaling
+topics:
+- climate-analysis-attribution
+type: model
+method:
+- diffusion
+- physics-constrained
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+status: research
+summary: Combining RCM dynamical downscaling with diffusion refinement lets large CMIP6 ensembles be downscaled
+  cheaply, giving better uncertainty bounds than BCSD and smaller dynamical ensembles.
+abstract: Regional high-resolution climate projections are crucial for many applications, such as agriculture,
+  hydrology, and natural hazard risk assessment. Dynamical downscaling, the state-of-the-art method to
+  produce localized future climate information, involves running a regional climate model (RCM) driven
+  by an Earth System Model (ESM), but it is too computationally expensive to apply to large climate projection
+  ensembles. We propose a novel approach combining dynamical downscaling with generative artificial intelligence
+  to reduce the cost and improve the uncertainty estimates of downscaled climate projections. In our framework,
+  an RCM dynamically downscales ESM output to an intermediate resolution, followed by a generative diffusion
+  model that further refines the resolution to the target scale. This approach leverages the generalizability
+  of physics-based models and the sampling efficiency of diffusion models, enabling the downscaling of
+  large multi-model ensembles. We evaluate our method against dynamically-downscaled climate projections
+  from the CMIP6 ensemble. Our results demonstrate its ability to provide more accurate uncertainty bounds
+  on future regional climate than alternatives such as dynamical downscaling of smaller ensembles, or
+  traditional empirical statistical downscaling methods. We also show that dynamical-generative downscaling
+  results in significantly lower errors than bias correction and spatial disaggregation (BCSD), and captures
+  more accurately the spectra and multivariate correlations of meteorological fields. These characteristics
+  make the dynamical-generative framework a flexible, accurate, and efficient way to downscale large ensembles
+  of climate projections, currently out of reach for pure dynamical downscaling.
+significance: 6
+cited_by: 60
+score: 79
+highlight: true
+highlight_reason: Combines RCM dynamical downscaling with diffusion refinement to downscale large CMIP6
+  ensembles cheaply; solid practical advance for regional climate projections.
+added: '2026-10-22'
+source: seed

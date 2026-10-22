@@ -1,0 +1,54 @@
+id: arxiv-2205.10972
+title: Global Extreme Heat Forecasting Using Neural Weather Models
+authors:
+- Ignacio Lopez-Gomez
+- Amy McGovern
+- Shreya Agrawal
+- Jason Hickey
+date: '2022-05-23'
+year: 2022
+venue: Artificial Intelligence for the Earth Systems (2023)
+venue_type: journal
+ids:
+  arxiv: '2205.10972'
+  doi: 10.1175/aies-d-22-0035.1
+links:
+  paper: https://arxiv.org/abs/2205.10972
+  pdf: https://arxiv.org/pdf/2205.10972
+topic: extremes-hazards
+topics:
+- global-medium-range
+type: model
+method:
+- cnn
+timescale:
+- medium
+- s2s
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Convolutional neural weather models trained with extreme-focused losses improve global heatwave
+  forecasts 1 to 28 days ahead, beating persistence and ECMWF S2S after two weeks.
+abstract: Heat waves are projected to increase in frequency and severity with global warming. Improved
+  warning systems would help reduce the associated loss of lives, wildfires, power disruptions, and reduction
+  in crop yields. In this work, we explore the potential for deep learning systems trained on historical
+  data to forecast extreme heat on short, medium and subseasonal timescales. To this purpose, we train
+  a set of neural weather models (NWMs) with convolutional architectures to forecast surface temperature
+  anomalies globally, 1 to 28 days ahead, at $\sim200~\mathrm{km}$ resolution and on the cubed sphere.
+  The NWMs are trained using the ERA5 reanalysis product and a set of candidate loss functions, including
+  the mean squared error and exponential losses targeting extremes. We find that training models to minimize
+  custom losses tailored to emphasize extremes leads to significant skill improvements in the heat wave
+  prediction task, compared to NWMs trained on the mean squared error loss. This improvement is accomplished
+  with almost no skill reduction in the general temperature prediction task, and it can be efficiently
+  realized through transfer learning, by re-training NWMs with the custom losses for a few epochs. In
+  addition, we find that the use of a symmetric exponential loss reduces the smoothing of NWM forecasts
+  with lead time. Our best NWM is able to outperform persistence in a regressive sense for all lead times
+  and temperature anomaly thresholds considered, and shows positive regressive skill compared to the ECMWF
+  subseasonal-to-seasonal control forecast after two weeks.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: seed

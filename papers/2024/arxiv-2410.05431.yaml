@@ -1,0 +1,47 @@
+id: arxiv-2410.05431
+title: Continuous Ensemble Weather Forecasting with Diffusion models
+authors:
+- Martin Andrae
+- Tomas Landelius
+- Joel Oskarsson
+- Fredrik Lindsten
+date: '2024-10-07'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2410.05431'
+links:
+  paper: https://arxiv.org/abs/2410.05431
+  pdf: https://arxiv.org/pdf/2410.05431
+  code: https://github.com/martinandrae/Continuous-Ensemble-Forecasting
+topic: probabilistic-ensembles
+topics:
+- global-medium-range
+type: model
+method:
+- diffusion
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Continuous Ensemble Forecasting samples diffusion ensemble trajectories in parallel without autoregressive
+  rollout, achieving competitive global forecasts at arbitrary temporal resolution.
+abstract: Weather forecasting has seen a shift in methods from numerical simulations to data-driven systems.
+  While initial research in the area focused on deterministic forecasting, recent works have used diffusion
+  models to produce skillful ensemble forecasts. These models are trained on a single forecasting step
+  and rolled out autoregressively. However, they are computationally expensive and accumulate errors for
+  high temporal resolution due to the many rollout steps. We address these limitations with Continuous
+  Ensemble Forecasting, a novel and flexible method for sampling ensemble forecasts in diffusion models.
+  The method can generate temporally consistent ensemble trajectories completely in parallel, with no
+  autoregressive steps. Continuous Ensemble Forecasting can also be combined with autoregressive rollouts
+  to yield forecasts at an arbitrary fine temporal resolution without sacrificing accuracy. We demonstrate
+  that the method achieves competitive results for global weather forecasting with good probabilistic
+  properties.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: seed

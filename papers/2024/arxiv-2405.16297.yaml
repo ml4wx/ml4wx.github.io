@@ -1,0 +1,55 @@
+id: arxiv-2405.16297
+title: 'LUCIE: A Lightweight Uncoupled ClImate Emulator with long-term stability and physical consistency
+  for O(1000)-member ensembles'
+authors:
+- Haiwen Guan
+- Troy Arcomano
+- Ashesh Chattopadhyay
+- Romit Maulik
+date: '2024-05-25'
+year: 2024
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  arxiv: '2405.16297'
+  doi: 10.1029/2025ms005152
+links:
+  paper: https://arxiv.org/abs/2405.16297
+  pdf: https://arxiv.org/pdf/2405.16297
+orgs:
+- argonne
+topic: climate-emulation
+type: model
+method:
+- physics-constrained
+timescale:
+- climate
+spatial:
+- global
+data:
+- era5
+status: research
+summary: LUCIE, a lightweight ERA5-trained emulator trained on 2 years of data, stays stable and climatologically
+  consistent for 100-year, 100-member simulations on one GPU.
+abstract: We present a lightweight, easy-to-train, low-resolution, fully data-driven climate emulator,
+  LUCIE, that can be trained on as low as $2$ years of $6$-hourly ERA5 data. Unlike most state-of-the-art
+  AI weather models, LUCIE remains stable and physically consistent for $100$ years of autoregressive
+  simulation with $100$ ensemble members. Long-term mean climatology from LUCIE's simulation of temperature,
+  wind, precipitation, and humidity matches that of ERA5 data, along with the variability. We further
+  demonstrate how well extreme weather events and their return periods can be estimated from a large ensemble
+  of long-term simulations. We further discuss an improved training strategy with a hard-constrained first-order
+  integrator to suppress autoregressive error growth, a novel spectral regularization strategy to better
+  capture fine-scale dynamics, and finally an optimization algorithm that enables data-limited (as low
+  as $2$ years of $6$-hourly data) training of the emulator without losing stability and physical consistency.
+  Finally, we provide a scaling experiment to compare the long-term bias of LUCIE with respect to the
+  number of training samples. Importantly, LUCIE is an easy to use model that can be trained in just $2.4$h
+  on a single A-100 GPU, allowing for multiple experiments that can explore important scientific questions
+  that could be answered with large ensembles of long-term simulations, e.g., the impact of different
+  variables on the simulation, dynamic response to external forcing, and estimation of extreme weather
+  events, amongst others.
+significance: 5
+cited_by: 4
+score: 30
+highlight: false
+added: '2026-10-22'
+source: seed

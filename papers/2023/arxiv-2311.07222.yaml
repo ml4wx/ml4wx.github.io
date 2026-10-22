@@ -1,0 +1,73 @@
+id: arxiv-2311.07222
+title: Neural General Circulation Models for Weather and Climate
+authors:
+- Dmitrii Kochkov
+- Janni Yuval
+- Ian Langmore
+- Peter Norgaard
+- Jamie Smith
+- Griffin Mooers
+- Milan Klöwer
+- James Lottes
+- Stephan Rasp
+- Peter Düben
+- Sam Hatfield
+- Peter Battaglia
+- Alvaro Sanchez-Gonzalez
+- Matthew Willson
+- Michael P. Brenner
+- Stephan Hoyer
+date: '2023-11-13'
+year: 2023
+venue: Nature
+venue_type: journal
+ids:
+  arxiv: '2311.07222'
+  doi: 10.1038/s41586-024-07744-y
+links:
+  paper: https://arxiv.org/abs/2311.07222
+  pdf: https://arxiv.org/pdf/2311.07222
+topic: hybrid-parameterization
+topics:
+- global-medium-range
+- climate-emulation
+type: model
+method:
+- physics-constrained
+- differentiable
+- other
+timescale:
+- medium
+- climate
+spatial:
+- global
+data:
+- era5
+- cmip
+status: research
+summary: NeuralGCM couples a differentiable dynamical solver with ML components, matching ML and ECMWF
+  ensemble skill for 1-15 day forecasts and stable multi-decade climate runs.
+abstract: General circulation models (GCMs) are the foundation of weather and climate prediction. GCMs
+  are physics-based simulators which combine a numerical solver for large-scale dynamics with tuned representations
+  for small-scale processes such as cloud formation. Recently, machine learning (ML) models trained on
+  reanalysis data achieved comparable or better skill than GCMs for deterministic weather forecasting.
+  However, these models have not demonstrated improved ensemble forecasts, or shown sufficient stability
+  for long-term weather and climate simulations. Here we present the first GCM that combines a differentiable
+  solver for atmospheric dynamics with ML components, and show that it can generate forecasts of deterministic
+  weather, ensemble weather and climate on par with the best ML and physics-based methods. NeuralGCM is
+  competitive with ML models for 1-10 day forecasts, and with the European Centre for Medium-Range Weather
+  Forecasts ensemble prediction for 1-15 day forecasts. With prescribed sea surface temperature, NeuralGCM
+  can accurately track climate metrics such as global mean temperature for multiple decades, and climate
+  forecasts with 140 km resolution exhibit emergent phenomena such as realistic frequency and trajectories
+  of tropical cyclones. For both weather and climate, our approach offers orders of magnitude computational
+  savings over conventional GCMs. Our results show that end-to-end deep learning is compatible with tasks
+  performed by conventional GCMs, and can enhance the large-scale physical simulations that are essential
+  for understanding and predicting the Earth system.
+significance: 9
+cited_by: 407
+score: 66
+highlight: true
+highlight_reason: 'NeuralGCM: first hybrid differentiable-dynamics plus ML GCM matching top ML and ECMWF
+  ENS for weather and stable multi-decade climate runs.'
+added: '2026-10-22'
+source: seed

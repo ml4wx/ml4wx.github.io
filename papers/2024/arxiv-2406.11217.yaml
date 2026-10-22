@@ -1,0 +1,60 @@
+id: arxiv-2406.11217
+title: 'WeatherQA: Can Multimodal Language Models Reason about Severe Weather?'
+authors:
+- Chengqian Ma
+- Zhanxiang Hua
+- Alexandra Anderson-Frey
+- Vikram Iyer
+- Xin Liu
+- Lianhui Qin
+date: '2024-06-17'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2406.11217'
+links:
+  paper: https://arxiv.org/abs/2406.11217
+  pdf: https://arxiv.org/pdf/2406.11217
+  code: https://github.com/chengqianma/WeatherQA
+topic: llms-agents
+topics:
+- extremes-hazards
+- benchmarks-data-eval
+type: benchmark
+method:
+- llm
+timescale:
+- nowcast
+- short
+spatial:
+- regional
+data:
+- radar
+- nwp-analysis
+- other
+status: research
+summary: WeatherQA is a multimodal benchmark of 8,000+ image-text pairs for severe convective weather
+  reasoning; GPT-4o shows a substantial gap to human forecasters.
+abstract: 'Severe convective weather events, such as hail, tornadoes, and thunderstorms, often occur quickly
+  yet cause significant damage, costing billions of dollars every year. This highlights the importance
+  of forecasting severe weather threats hours in advance to better prepare meteorologists and residents
+  in at-risk areas. Can modern large foundation models perform such forecasting? Existing weather benchmarks
+  typically focus only on predicting time-series changes in certain weather parameters (e.g., temperature,
+  moisture) with text-only features. In this work, we introduce WeatherQA, the first multimodal dataset
+  designed for machines to reason about complex combinations of weather parameters (a.k.a., ingredients)
+  and predict severe weather in real-world scenarios. The dataset includes over 8,000 (multi-images, text)
+  pairs for diverse severe weather events. Each pair contains rich information crucial for forecasting
+  -- the images describe the ingredients capturing environmental instability, surface observations, and
+  radar reflectivity, and the text contains forecast analyses written by human experts. With WeatherQA,
+  we evaluate state-of-the-art vision language models, including GPT4, Claude3.5, Gemini-1.5, and a fine-tuned
+  Llama3-based VLM, by designing two challenging tasks: (1) multi-choice QA for predicting affected area
+  and (2) classification of the development potential of severe convection. These tasks require deep understanding
+  of domain knowledge (e.g., atmospheric dynamics) and complex reasoning over multimodal data (e.g., interactions
+  between weather parameters). We show a substantial gap between the strongest VLM, GPT4o, and human reasoning.
+  Our comprehensive case study with meteorologists further reveals the weaknesses of the models, suggesting
+  that better training and data integration are necessary to bridge this gap. WeatherQA link: https://github.com/chengqianma/WeatherQA.'
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: seed

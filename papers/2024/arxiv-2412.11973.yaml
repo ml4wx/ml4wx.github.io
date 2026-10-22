@@ -1,0 +1,51 @@
+id: arxiv-2412.11973
+title: Neural general circulation models optimized to predict satellite-based precipitation observations
+authors:
+- Janni Yuval
+- Ian Langmore
+- Dmitrii Kochkov
+- Stephan Hoyer
+date: '2024-12-16'
+year: 2024
+venue: Science Advances
+venue_type: journal
+ids:
+  arxiv: '2412.11973'
+  doi: 10.1126/sciadv.adv6891
+links:
+  paper: https://arxiv.org/abs/2412.11973
+  pdf: https://arxiv.org/pdf/2412.11973
+orgs:
+- google-research
+topic: hybrid-parameterization
+topics:
+- observations-remote-sensing
+type: model
+method:
+- differentiable
+timescale:
+- climate
+spatial:
+- global
+data:
+- satellite
+status: research
+summary: A NeuralGCM-based hybrid model trained on satellite precipitation cuts climate-model precipitation
+  biases and beats the ECMWF ensemble at mid-range forecasts.
+abstract: Climate models struggle to accurately simulate precipitation, particularly extremes and the
+  diurnal cycle. Here, we present a hybrid model that is trained directly on satellite-based precipitation
+  observations. Our model runs at 2.8$^\circ$ resolution and is built on the differentiable NeuralGCM
+  framework. The model demonstrates significant improvements over existing general circulation models,
+  the ERA5 reanalysis, and a global cloud-resolving model in simulating precipitation. Our approach yields
+  reduced biases, a more realistic precipitation distribution, improved representation of extremes, and
+  a more accurate diurnal cycle. Furthermore, it outperforms the mid-range precipitation forecast of the
+  ECMWF ensemble. This advance paves the way for more reliable simulations of current climate and demonstrates
+  how training on observations can be used to directly improve GCMs.
+significance: 6
+cited_by: 8
+score: 79
+highlight: true
+highlight_reason: Training NeuralGCM directly on satellite precipitation improves extremes and diurnal
+  cycle; promising hybrid-model direction with observation-based training.
+added: '2026-10-22'
+source: seed

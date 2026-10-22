@@ -1,0 +1,52 @@
+id: arxiv-2306.15956
+title: Deep learning for post-processing global probabilistic forecasts on sub-seasonal time scales
+authors:
+- Nina Horat
+- Sebastian Lerch
+date: '2023-06-28'
+year: 2023
+venue: Monthly Weather Review
+venue_type: journal
+ids:
+  arxiv: '2306.15956'
+  doi: 10.1175/mwr-d-23-0150.1
+links:
+  paper: https://arxiv.org/abs/2306.15956
+  pdf: https://arxiv.org/pdf/2306.15956
+orgs:
+- kit
+topic: post-processing
+topics:
+- s2s-seasonal
+type: model
+method:
+- cnn
+timescale:
+- s2s
+spatial:
+- global
+data:
+- nwp-analysis
+status: research
+summary: CNN post-processing of ECMWF ensemble means yields calibrated global tercile forecasts for weeks
+  3-6, outperforming recalibrated ECMWF sub-seasonal forecasts.
+abstract: Sub-seasonal weather forecasts are becoming increasingly important for a range of socio-economic
+  activities. However, the predictive ability of physical weather models is very limited on these time
+  scales. We propose several post-processing methods based on convolutional neural networks to improve
+  sub-seasonal forecasts by correcting systematic errors of numerical weather prediction models. Our post-processing
+  models operate directly on spatial input fields and are therefore able to retain spatial relationships
+  and to generate spatially homogeneous predictions. They produce global probabilistic tercile forecasts
+  for biweekly aggregates of temperature and precipitation for weeks 3-4 and 5-6. In a case study based
+  on a public forecasting challenge organized by the World Meteorological Organization, our post-processing
+  models outperform recalibrated forecasts from the European Centre for Medium-Range Weather Forecasts
+  (ECMWF), and achieve improvements over climatological forecasts for all considered variables and lead
+  times. We compare several model architectures and training modes and demonstrate that all approaches
+  lead to skillful and well-calibrated probabilistic forecasts. The good calibration of the post-processed
+  forecasts emphasizes that our post-processing models reliably quantify the forecast uncertainty based
+  on deterministic input information in form of the ECMWF ensemble mean forecast fields only.
+significance: 4
+cited_by: 22
+score: 26
+highlight: false
+added: '2026-10-22'
+source: seed

@@ -1,0 +1,48 @@
+id: arxiv-2404.19630
+title: Analyzing and Exploring Training Recipes for Large-Scale Transformer-Based Weather Prediction
+authors:
+- Jared D. Willard
+- Peter Harrington
+- Shashank Subramanian
+- Ankur Mahesh
+- Travis A. O'Brien
+- William D. Collins
+date: '2024-04-30'
+year: 2024
+venue: '23rd Conference on Artificial Intelligence for Environmental Science. Jan 2024. Abstract #437874'
+venue_type: journal
+ids:
+  arxiv: '2404.19630'
+  doi: 10.1175/aies-d-24-0061.1
+links:
+  paper: https://arxiv.org/abs/2404.19630
+  pdf: https://arxiv.org/pdf/2404.19630
+topic: infra-software
+type: evaluation
+method:
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: A minimally modified SwinV2 trained on ERA5 beats IFS, and ablations on loss, model size and
+  multi-step fine-tuning show which training choices matter.
+abstract: The rapid rise of deep learning (DL) in numerical weather prediction (NWP) has led to a proliferation
+  of models which forecast atmospheric variables with comparable or superior skill than traditional physics-based
+  NWP. However, among these leading DL models, there is a wide variance in both the training settings
+  and architecture used. Further, the lack of thorough ablation studies makes it hard to discern which
+  components are most critical to success. In this work, we show that it is possible to attain high forecast
+  skill even with relatively off-the-shelf architectures, simple training procedures, and moderate compute
+  budgets. Specifically, we train a minimally modified SwinV2 transformer on ERA5 data, and find that
+  it attains superior forecast skill when compared against IFS. We present some ablations on key aspects
+  of the training pipeline, exploring different loss functions, model sizes and depths, and multi-step
+  fine-tuning to investigate their effect. We also examine the model performance with metrics beyond the
+  typical ACC and RMSE, and investigate how the performance scales with model size.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: seed

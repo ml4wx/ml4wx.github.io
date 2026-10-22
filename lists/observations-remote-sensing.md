@@ -5,8 +5,25 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/observations-remote-sensing/)
 
-0 papers (0 ⭐). Newest first.
+10 papers (0 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2022-09-02 | [GPROF-NN: a neural-network-based implementation of the Goddard Profiling Algorithm](https://doi.org/10.5194/amt-15-5033-2022)<br><sub>Simon Pfreundschuh, Paula J. Brown, Christian D. Kummerow et al. · Atmospheric Measurement Techniques</sub> |  |  |
+| 2022-05-02 | [Machine-learned cloud classes from satellite data for process-oriented climate model evaluation](https://arxiv.org/abs/2205.00743)<br><sub>A. Kaps, A. Lauer, G. Camps-Valls et al. · IEEE Transactions on Geoscience and Remote Sensing</sub> | Columbia University (LEAP, Lamont-Doherty) |  |
+| 2020-04-16 | [Development and Interpretation of a Neural Network-Based Synthetic Radar Reflectivity Estimator Using GOES-R Satellite Observations](https://arxiv.org/abs/2004.07906)<br><sub>Kyle A. Hilburn, Imme Ebert-Uphoff, Steven D. Miller · Journal of Applied Meteorology and Climatology</sub> | Colorado State University (incl. CIRA) |  |
+| 2019-12-01 | [Leveraging Modern Artificial Intelligence for Remote Sensing and NWP: Benefits and Challenges](https://doi.org/10.1175/bams-d-18-0324.1)<br><sub>Sid-Ahmed Boukabara, Vladimir Krasnopolsky, Jebb Q. Stewart et al. · Bulletin of the American Meteorological Society</sub> | Colorado State University (incl. CIRA), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
+| 2019-11-27 | [PERSIANN-CNN: Precipitation Estimation from Remotely Sensed Information Using Artificial Neural Networks–Convolutional Neural Networks](https://doi.org/10.1175/jhm-d-19-0110.1)<br><sub>Mojtaba Sadeghi, Ata Akbari Asanjan, Mohammad Faridzad et al. · Journal of Hydrometeorology</sub> |  |  |
+| 2019-06-24 | [Reconstruction of Cloud Vertical Structure With a Generative Adversarial Network](https://doi.org/10.1029/2019gl082532)<br><sub>Jussi Leinonen, Alexandre Guillaume, Tianle Yuan · Geophysical Research Letters</sub> | California Institute of Technology (Caltech), NASA |  |
+| 2019-06-05 | [Combining crowd-sourcing and deep learning to explore the meso-scale organization of shallow convection](https://arxiv.org/abs/1906.01906)<br><sub>Stephan Rasp, Hauke Schulz, Sandrine Bony et al. · Bulletin of the American Meteorological Society</sub> | Max Planck Institute for Meteorology, Technical University of Munich (TUM) |  |
+| 2018-08-09 | [A neural network approach to estimating a posteriori distributions of Bayesian retrieval problems](https://doi.org/10.5194/amt-11-4627-2018)<br><sub>Simon Pfreundschuh, Patrick Eriksson, David Duncan et al. · Atmospheric Measurement Techniques</sub> |  |  |
+| 2016-03-02 | [A Deep Neural Network Modeling Framework to Reduce Bias in Satellite Precipitation Products](https://doi.org/10.1175/jhm-d-15-0075.1)<br><sub>Yumeng Tao, Xiaogang Gao, Kuolin Hsu et al. · Journal of Hydrometeorology</sub> |  |  |
+| 1997-09-01 | [Precipitation Estimation from Remotely Sensed Information Using Artificial Neural Networks](https://doi.org/10.1175/1520-0450(1997)036<1176:pefrsi>2.0.co;2)<br><sub>Kou-lin Hsu, Xiaogang Gao, Soroosh Sorooshian et al. · Journal of Applied Meteorology</sub> |  |  |
+
+## Also relevant
+
+- [Neural general circulation models optimized to predict satellite-based precipitation observations](https://arxiv.org/abs/2412.11973) (2024)
+- [WeatherReal: A Benchmark Based on In-Situ Observations for Evaluating Weather Models](https://arxiv.org/abs/2409.09371) (2024)
+- [Fuxi-DA: A Generalized Deep Learning Data Assimilation Framework for Assimilating Satellite Observations](https://arxiv.org/abs/2404.08522) (2024)
+- [Using Deep Learning to Estimate Tropical Cyclone Intensity from Satellite Passive Microwave Imagery](https://doi.org/10.1175/mwr-d-18-0391.1) (2019)
 

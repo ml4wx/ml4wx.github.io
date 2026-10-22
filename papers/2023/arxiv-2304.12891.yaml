@@ -1,0 +1,47 @@
+id: arxiv-2304.12891
+title: Latent diffusion models for generative precipitation nowcasting with accurate uncertainty quantification
+authors:
+- Jussi Leinonen
+- Ulrich Hamann
+- Daniele Nerini
+- Urs Germann
+- Gabriele Franch
+date: '2023-04-25'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2304.12891'
+links:
+  paper: https://arxiv.org/abs/2304.12891
+  pdf: https://arxiv.org/pdf/2304.12891
+topic: nowcasting
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: A latent diffusion model for radar precipitation nowcasting gives more diverse, well-calibrated
+  ensembles than DGMR and PySTEPS, with more accurate predictions.
+abstract: Diffusion models have been widely adopted in image generation, producing higher-quality and
+  more diverse samples than generative adversarial networks (GANs). We introduce a latent diffusion model
+  (LDM) for precipitation nowcasting - short-term forecasting based on the latest observational data.
+  The LDM is more stable and requires less computation to train than GANs, albeit with more computationally
+  expensive generation. We benchmark it against the GAN-based Deep Generative Models of Rainfall (DGMR)
+  and a statistical model, PySTEPS. The LDM produces more accurate precipitation predictions, while the
+  comparisons are more mixed when predicting whether the precipitation exceeds predefined thresholds.
+  The clearest advantage of the LDM is that it generates more diverse predictions than DGMR or PySTEPS.
+  Rank distribution tests indicate that the distribution of samples from the LDM accurately reflects the
+  uncertainty of the predictions. Thus, LDMs are promising for any applications where uncertainty quantification
+  is important, such as weather and climate.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: seed

@@ -5,8 +5,34 @@ ML for climate science questions: causal discovery, teleconnections, pattern det
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/climate-analysis-attribution/)
 
-0 papers (0 ⭐). Newest first.
+13 papers (2 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2024-08-23 | [Machine learning–based extreme event attribution](https://doi.org/10.1126/sciadv.adl3242)<br><sub>Jared T. Trok, Elizabeth A. Barnes, Frances V. Davenport et al. · Science Advances</sub> | Colorado State University (incl. CIRA), Stanford University |  |
+| 2023-08-30 | [Anthropogenic fingerprints in daily precipitation revealed by deep learning](https://doi.org/10.1038/s41586-023-06474-x)<br><sub>Yoo-Geun Ham, Jeong-Hwan Kim, Seung-Ki Min et al. · Nature</sub> |  |  |
+| 2023-06-27 | [Causal inference for time series](https://doi.org/10.1038/s43017-023-00431-y)<br><sub>Jakob Runge, Andreas Gerhardus, Gherardo Varando et al. · Nature Reviews Earth &amp; Environment</sub> |  |  |
+| 2023-01-30 | [Data-driven predictions of the time remaining until critical global warming thresholds are reached](https://doi.org/10.1073/pnas.2207183120)<br><sub>Noah S. Diffenbaugh, Elizabeth A. Barnes · Proceedings of the National Academy of Sciences</sub> | Colorado State University (incl. CIRA), Stanford University |  |
+| 2021-07-30 | [Using Machine Learning to Analyze Physical Causes of Climate Change: A Case Study of U.S. Midwest Extreme Precipitation](https://doi.org/10.1029/2021gl093787)<br><sub>Frances V. Davenport, Noah S. Diffenbaugh · Geophysical Research Letters</sub> | Stanford University |  |
+| 2021-06-14 | [Detecting Climate Signals Using Explainable AI With Single‐Forcing Large Ensembles](https://doi.org/10.1029/2021ms002464)<br><sub>Zachary M. Labe, Elizabeth A. Barnes · Journal of Advances in Modeling Earth Systems</sub> | Colorado State University (incl. CIRA) |  |
+| 2020-03-16 | [Causal networks for climate model evaluation and constrained projections](https://doi.org/10.1038/s41467-020-15195-y)<br><sub>Peer Nowack, Jakob Runge, Veronika Eyring et al. · Nature Communications</sub> |  |  |
+| 2020-01-02 | [Climate change now detectable from any single day of weather at global scale](https://doi.org/10.1038/s41558-019-0666-7)<br><sub>Sebastian Sippel, Nicolai Meinshausen, Erich M. Fischer et al. · Nature Climate Change</sub> |  |  |
+| 2019-11-27 | [Viewing Forced Climate Patterns Through an AI Lens](https://doi.org/10.1029/2019gl084944)<br><sub>Elizabeth A. Barnes, James W. Hurrell, Imme Ebert‐Uphoff et al. · Geophysical Research Letters</sub> | Colorado State University (incl. CIRA) |  |
+| 2019-11-01 | ⭐ [Detecting and quantifying causal associations in large nonlinear time series datasets](https://doi.org/10.1126/sciadv.aau4996)<br><sub>Jakob Runge, Peer Nowack, Marlene Kretschmer et al. · Science Advances</sub> | The Alan Turing Institute, Potsdam Institute for Climate Impact Research (PIK), University of Oxford |  |
+| 2019-02-13 | ⭐ [Deep learning and process understanding for data-driven Earth system science](https://doi.org/10.1038/s41586-019-0912-1)<br><sub>Markus Reichstein, Gustau Camps-Valls, Bjorn Stevens et al. · Nature</sub> |  |  |
+| 2016-06-01 | [Using Causal Effect Networks to Analyze Different Arctic Drivers of Midlatitude Winter Circulation](https://doi.org/10.1175/jcli-d-15-0654.1)<br><sub>Marlene Kretschmer, Dim Coumou, Jonathan F. Donges et al. · Journal of Climate</sub> | Potsdam Institute for Climate Impact Research (PIK) |  |
+| 2012-03-02 | [Causal Discovery for Climate Research Using Graphical Models](https://doi.org/10.1175/jcli-d-11-00387.1)<br><sub>Imme Ebert-Uphoff, Yi Deng · Journal of Climate</sub> | Colorado State University (incl. CIRA) |  |
+
+## Also relevant
+
+- [ClimAgent: LLM as Agents for Autonomous Open-ended Climate Science Analysis](https://arxiv.org/abs/2604.16922) (2026)
+- [Artificial intelligence for modeling and understanding extreme weather and climate events](https://doi.org/10.1038/s41467-025-56573-8) (2025)
+- [Dynamical-generative downscaling of climate model ensembles](https://arxiv.org/abs/2410.01776) (2024)
+- [Machine learning for climate physics and simulations](https://arxiv.org/abs/2404.13227) (2024)
+- [A self-attention–based neural network for three-dimensional multivariate modeling and its skillful ENSO predictions](https://doi.org/10.1126/sciadv.adf2827) (2023)
+- [Physically Interpretable Neural Networks for the Geosciences: Applications to Earth System Variability](https://arxiv.org/abs/1912.01752) (2019)
+- [Combining crowd-sourcing and deep learning to explore the meso-scale organization of shallow convection](https://arxiv.org/abs/1906.01906) (2019)
+- [Using machine learning to parameterize moist convection: potential for modeling of climate, climate change and extreme events](https://arxiv.org/abs/1806.11037) (2018)
+- [Application of Deep Convolutional Neural Networks for Detecting Extreme Weather in Climate Datasets](https://arxiv.org/abs/1605.01156) (2016)
+- [Applying Neural Network Models to Prediction and Data Analysis in Meteorology and Oceanography](https://doi.org/10.1175/1520-0477(1998)079<1855:annmtp>2.0.co;2) (1998)
 

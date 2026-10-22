@@ -1,0 +1,60 @@
+id: arxiv-2608.24651
+title: 'AICON: An operational global machine learning weather forecasting model'
+authors:
+- Tobias Goecke
+- Marek Jacob
+- Florian Prill
+- Michael Denhard
+- Felix Fundel
+- Jan Keller
+- Roland Potthast
+- Hendrik Reich
+- Britta Seegebrecht
+- Sven Ulbrich
+- Arianna Valmassoi
+- Sabrina Wahl
+date: '2026-08-25'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2608.24651'
+links:
+  paper: https://arxiv.org/abs/2608.24651
+  pdf: https://arxiv.org/pdf/2608.24651
+topic: global-medium-range
+type: operational
+method:
+- gnn
+timescale:
+- short
+- medium
+spatial:
+- global
+data:
+- km-scale-sim
+- nwp-analysis
+status: operational
+summary: AICON is a 13 km graph-neural-network global model run operationally at DWD, competitive with
+  operational ICON for near-surface variables.
+abstract: We introduce AICON, a global machine learning weather prediction (MLWP) model which generates
+  forecasts at 13 km spatial resolution with a 3-hour time step, trained on the high-resolution, non-hydrostatic
+  ICON-DREAM dataset. AICON is in full operational use at Deutscher Wetterdienst since 2nd of March 2026.
+  The model employs a graph neural network (GNN) architecture with an encoder-processor-decoder structure,
+  where node updates are performed using a graph attention mechanism. A key feature of AICON is its use
+  of an icosahedral multi-mesh derived from the native grid of the ICON model, ensuring consistency with
+  the training data. ICON's terrain-following vertical SLEVE coordinate is one of the major distinctions
+  from existing emulators. AICON's training strategy prioritizes small-scale fidelity by avoiding autoregressive
+  multi-step rollout and longer forecast horizons during training, a design choice motivated by the hypothesis
+  that this approach preserves fine-scale features often damped in models optimized for longer-range forecasts.
+  We describe the prognostic and diagnostic variables used for training, the transfer learning protocol
+  employed to accelerate convergence, and the model's performance across a range of evaluation metrics.
+  An extensive evaluation, including routine verification against observation, a tropical cyclone case
+  and spectral analysis reveal the strengths and limitations in the representation of atmospheric variability
+  across scales. Routine verification against observations demonstrates competitive skill relative to
+  the operational ICON model, particularly for near-surface variables in the short to medium forecast
+  range.
+significance: 6
+score: 34
+highlight: false
+added: '2026-10-22'
+source: seed

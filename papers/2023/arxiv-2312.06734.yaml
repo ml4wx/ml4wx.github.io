@@ -1,0 +1,54 @@
+id: arxiv-2312.06734
+title: 'DiffCast: A Unified Framework via Residual Diffusion for Precipitation Nowcasting'
+authors:
+- Demin Yu
+- Xutao Li
+- Yunming Ye
+- Baoquan Zhang
+- Chuyao Luo
+- Kuai Dai
+- Rui Wang
+- Xunlai Chen
+date: '2023-12-11'
+year: 2023
+venue: 2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)
+venue_type: preprint
+ids:
+  arxiv: '2312.06734'
+  doi: 10.1109/cvpr52733.2024.02622
+links:
+  paper: https://arxiv.org/abs/2312.06734
+  pdf: https://arxiv.org/pdf/2312.06734
+  code: https://github.com/DeminYu98/DiffCast
+topic: nowcasting
+type: model
+method:
+- diffusion
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: DiffCast decomposes precipitation into deterministic motion and stochastic residuals via residual
+  diffusion, reducing blurring and position errors on four radar datasets.
+abstract: Precipitation nowcasting is an important spatio-temporal prediction task to predict the radar
+  echoes sequences based on current observations, which can serve both meteorological science and smart
+  city applications. Due to the chaotic evolution nature of the precipitation systems, it is a very challenging
+  problem. Previous studies address the problem either from the perspectives of deterministic modeling
+  or probabilistic modeling. However, their predictions suffer from the blurry, high-value echoes fading
+  away and position inaccurate issues. The root reason of these issues is that the chaotic evolutionary
+  precipitation systems are not appropriately modeled. Inspired by the nature of the systems, we propose
+  to decompose and model them from the perspective of global deterministic motion and local stochastic
+  variations with residual mechanism. A unified and flexible framework that can equip any type of spatio-temporal
+  models is proposed based on residual diffusion, which effectively tackles the shortcomings of previous
+  methods. Extensive experimental results on four publicly available radar datasets demonstrate the effectiveness
+  and superiority of the proposed framework, compared to state-of-the-art techniques. Our code is publicly
+  available at https://github.com/DeminYu98/DiffCast.
+significance: 4
+cited_by: 82
+score: 26
+highlight: false
+added: '2026-10-22'
+source: seed

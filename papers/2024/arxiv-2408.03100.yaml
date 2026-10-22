@@ -1,0 +1,72 @@
+id: arxiv-2408.03100
+title: 'Huge Ensembles Part I: Design of Ensemble Weather Forecasts using Spherical Fourier Neural Operators'
+authors:
+- Ankur Mahesh
+- William Collins
+- Boris Bonev
+- Noah Brenowitz
+- Yair Cohen
+- Joshua Elms
+- Peter Harrington
+- Karthik Kashinath
+- Thorsten Kurth
+- Joshua North
+- Travis OBrien
+- Michael Pritchard
+- David Pruitt
+- Mark Risser
+- Shashank Subramanian
+- Jared Willard
+date: '2024-08-06'
+year: 2024
+venue: Geoscientific Model Development
+venue_type: journal
+ids:
+  arxiv: '2408.03100'
+  doi: 10.5194/gmd-18-5575-2025
+links:
+  paper: https://arxiv.org/abs/2408.03100
+  pdf: https://arxiv.org/pdf/2408.03100
+orgs:
+- lbnl-nersc
+- uc-berkeley
+topic: probabilistic-ensembles
+topics:
+- global-medium-range
+type: model
+method:
+- neural-operator
+timescale:
+- medium
+spatial:
+- global
+data:
+- nwp-analysis
+status: research
+summary: A 1.1-billion-parameter SFNO ensemble with bred vectors and perturbed parameters passes spectral
+  tests and is calibrated, setting up ML huge ensembles of 1,000+ members.
+abstract: Studying low-likelihood high-impact extreme weather events in a warming world is a significant
+  and challenging task for current ensemble forecasting systems. While these systems presently use up
+  to 100 members, larger ensembles could enrich the sampling of internal variability. They may capture
+  the long tails associated with climate hazards better than traditional ensemble sizes. Due to computational
+  constraints, it is infeasible to generate huge ensembles (comprised of 1,000-10,000 members) with traditional,
+  physics-based numerical models. In this two-part paper, we replace traditional numerical simulations
+  with machine learning (ML) to generate hindcasts of huge ensembles. In Part I, we construct an ensemble
+  weather forecasting system based on Spherical Fourier Neural Operators (SFNO), and we discuss important
+  design decisions for constructing such an ensemble. The ensemble represents model uncertainty through
+  perturbed-parameter techniques, and it represents initial condition uncertainty through bred vectors,
+  which sample the fastest growing modes of the forecast. Using the European Centre for Medium-Range Weather
+  Forecasts Integrated Forecasting System (IFS) as a baseline, we develop an evaluation pipeline composed
+  of mean, spectral, and extreme diagnostics. Using large-scale, distributed SFNOs with 1.1 billion learned
+  parameters, we achieve calibrated probabilistic forecasts. As the trajectories of the individual members
+  diverge, the ML ensemble mean spectra degrade with lead time, consistent with physical expectations.
+  However, the individual ensemble members' spectra stay constant with lead time. Therefore, these members
+  simulate realistic weather states, and the ML ensemble thus passes a crucial spectral test in the literature.
+  The IFS and ML ensembles have similar Extreme Forecast Indices, and we show that the ML extreme weather
+  forecasts are reliable and discriminating.
+significance: 6
+cited_by: 12
+score: 34
+highlight: false
+added: '2026-10-22'
+source: seed

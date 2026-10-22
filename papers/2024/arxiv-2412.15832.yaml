@@ -1,0 +1,69 @@
+id: arxiv-2412.15832
+title: 'AIFS-CRPS: Ensemble forecasting using a model trained with a loss function based on the Continuous
+  Ranked Probability Score'
+authors:
+- Simon Lang
+- Mihai Alexe
+- Mariana C. A. Clare
+- Christopher Roberts
+- Rilwan Adewoyin
+- Zied Ben Bouallègue
+- Matthew Chantry
+- Jesper Dramsch
+- Peter D. Dueben
+- Sara Hahner
+- Pedro Maciel
+- Ana Prieto-Nemesio
+- Cathal O'Brien
+- Florian Pinault
+- Jan Polster
+- Baudouin Raoult
+- Steffen Tietsche
+- Martin Leutbecher
+date: '2024-12-20'
+year: 2024
+venue: npj Artificial Intelligence
+venue_type: journal
+ids:
+  arxiv: '2412.15832'
+  doi: 10.1038/s44387-026-00073-7
+links:
+  paper: https://arxiv.org/abs/2412.15832
+  pdf: https://arxiv.org/pdf/2412.15832
+topic: probabilistic-ensembles
+topics:
+- global-medium-range
+type: model
+method:
+- transformer
+- other
+timescale:
+- medium
+- s2s
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: operational
+summary: AIFS-CRPS trains an ML ensemble model on a CRPS-based loss, outperforming the IFS ensemble for
+  most medium-range variables and competing at subseasonal lead times.
+abstract: Over the last three decades, ensemble forecasts have become an integral part of forecasting
+  the weather. They provide users with more complete information than single forecasts as they permit
+  to estimate the probability of weather events by representing the sources of uncertainties and accounting
+  for the day-to-day variability of error growth in the atmosphere. This paper presents a novel approach
+  to obtain a weather forecast model for ensemble forecasting with machine-learning. AIFS-CRPS is a variant
+  of the Artificial Intelligence Forecasting System (AIFS) developed at ECMWF. Its loss function is based
+  on a proper score, the Continuous Ranked Probability Score (CRPS). For the loss, the almost fair CRPS
+  is introduced because it approximately removes the bias in the score due to finite ensemble size yet
+  avoids a degeneracy of the fair CRPS. The trained model is stochastic and can generate as many exchangeable
+  members as desired and computationally feasible in inference. For medium-range forecasts AIFS-CRPS outperforms
+  the physics-based Integrated Forecasting System (IFS) ensemble for the majority of variables and lead
+  times. For subseasonal forecasts, AIFS-CRPS outperforms the IFS ensemble before calibration and is competitive
+  with the IFS ensemble when forecasts are evaluated as anomalies to remove the influence of model biases.
+significance: 6
+cited_by: 31
+score: 34
+highlight: false
+added: '2026-10-22'
+source: seed

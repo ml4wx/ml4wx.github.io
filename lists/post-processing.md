@@ -5,8 +5,38 @@ Statistical post-processing of NWP or ML forecasts: bias correction, ensemble ca
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/post-processing/)
 
-0 papers (0 ⭐). Newest first.
+15 papers (0 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2023-09-03 | [Evaluation of forecasts by a global data-driven weather model with and without probabilistic post-processing at Norwegian stations](https://arxiv.org/abs/2309.01247)<br><sub>John Bjørnar Bremnes, Thomas N. Nipen, Ivar A. Seierstad · Nonlinear Processes in Geophysics</sub> | MET Norway (Norwegian Meteorological Institute) |  |
+| 2023-06-28 | [Deep learning for post-processing global probabilistic forecasts on sub-seasonal time scales](https://arxiv.org/abs/2306.15956)<br><sub>Nina Horat, Sebastian Lerch · Monthly Weather Review</sub> | Karlsruhe Institute of Technology (KIT) |  |
+| 2023-03-30 | [Improving medium-range ensemble weather forecasts with hierarchical ensemble transformers](https://arxiv.org/abs/2303.17195)<br><sub>Zied Ben-Bouallegue, Jonathan A Weyn, Mariana C A Clare et al.</sub> |  |  |
+| 2021-06-21 | [Self-Attentive Ensemble Transformer: Representing Ensemble Interactions in Neural Networks for Earth System Models](https://arxiv.org/abs/2106.13924)<br><sub>Tobias Sebastian Finn</sub> |  | [code](https://github.com/tobifinn/ensemble_transformer) |
+| 2021-06-17 | [Machine learning methods for postprocessing ensemble forecasts of wind gusts: A systematic comparison](https://arxiv.org/abs/2106.09512)<br><sub>Benedikt Schulz, Sebastian Lerch · Monthly Weather Review</sub> | Karlsruhe Institute of Technology (KIT) |  |
+| 2021-04-01 | [Statistical Postprocessing of Wind Speed Forecasts Using Convolutional Neural Networks](https://doi.org/10.1175/mwr-d-20-0219.1)<br><sub>Simon Veldkamp, Kirien Whan, Sjoerd Dirksen et al. · Monthly Weather Review</sub> | KNMI (Royal Netherlands Meteorological Institute) |  |
+| 2021-02-15 | [Towards implementing artificial intelligence post-processing in weather and climate: proposed actions from the Oxford 2019 workshop](https://doi.org/10.1098/rsta.2020.0091)<br><sub>Sue Ellen Haupt, William Chapman, Samantha V. Adams et al. · Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences</sub> | The Alan Turing Institute, Karlsruhe Institute of Technology (KIT), Met Office, NSF NCAR / UCAR |  |
+| 2020-08-01 | [Using Artificial Neural Networks for Generating Probabilistic Subseasonal Precipitation Forecasts over California](https://doi.org/10.1175/mwr-d-20-0096.1)<br><sub>Michael Scheuerer, Matthew B. Switanek, Rochelle P. Worsnop et al. · Monthly Weather Review</sub> | NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
+| 2020-05-18 | [Deep Learning for Post-Processing Ensemble Weather Forecasts](https://arxiv.org/abs/2005.08748)<br><sub>Peter Grönquist, Chengyuan Yao, Tal Ben-Nun et al. · Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences</sub> | ECMWF, ETH Zurich |  |
+| 2020-04-14 | [Statistical Postprocessing for Weather Forecasts -- Review, Challenges and Avenues in a Big Data World](https://arxiv.org/abs/2004.06582)<br><sub>Stéphane Vannitsem, John Bjørnar Bremnes, Jonathan Demaeyer et al. · Bulletin of the American Meteorological Society</sub> | Deutscher Wetterdienst (DWD), ECMWF, Karlsruhe Institute of Technology (KIT), KNMI (Royal Netherlands Meteorological Institute), MET Norway (Norwegian Meteorological Institute), Met Office, Météo-France (incl. CNRM), MeteoSwiss |  |
+| 2019-12-27 | [Ensemble Postprocessing Using Quantile Function Regression Based on Neural Networks and Bernstein Polynomials](https://doi.org/10.1175/mwr-d-19-0227.1)<br><sub>John Bjørnar Bremnes · Monthly Weather Review</sub> | MET Norway (Norwegian Meteorological Institute) |  |
+| 2019-09-06 | [Improving Atmospheric River Forecasts With Machine Learning](https://doi.org/10.1029/2019gl083662)<br><sub>W. E. Chapman, A. C. Subramanian, L. Delle Monache et al. · Geophysical Research Letters</sub> |  |  |
+| 2018-05-23 | [Neural networks for post-processing ensemble weather forecasts](https://arxiv.org/abs/1805.09091)<br><sub>Stephan Rasp, Sebastian Lerch · Monthly Weather Review 2018, 146, 3885-3900</sub> |  |  |
+| 2016-06-10 | [Calibrated Ensemble Forecasts Using Quantile Regression Forests and Ensemble Model Output Statistics](https://doi.org/10.1175/mwr-d-15-0260.1)<br><sub>Maxime Taillardat, Olivier Mestre, Michaël Zamo et al. · Monthly Weather Review</sub> | Météo-France (incl. CNRM) |  |
+| 1998-12-01 | [Localized Precipitation Forecasts from a Numerical Weather Prediction Model Using Artificial Neural Networks](https://doi.org/10.1175/1520-0434(1998)013<1194:lpffan>2.0.co;2)<br><sub>Robert J. Kuligowski, Ana P. Barros · Weather and Forecasting</sub> |  |  |
+
+## Also relevant
+
+- [WeatherGFM: Learning A Weather Generalist Foundation Model via In-context Learning](https://arxiv.org/abs/2411.05420) (2024)
+- [FuXi-Extreme: Improving extreme rainfall and wind forecasts with diffusion model](https://arxiv.org/abs/2310.19822) (2023)
+- [The EUPPBench postprocessing benchmark dataset v1.0](https://doi.org/10.5194/essd-15-2635-2023) (2023)
+- [Outcomes of the WMO Prize Challenge to Improve Subseasonal to Seasonal Predictions Using Artificial Intelligence](https://doi.org/10.1175/bams-d-22-0046.1) (2022)
+- [Increasing the accuracy and resolution of precipitation forecasts using deep generative models](https://arxiv.org/abs/2203.12297) (2022)
+- [ENS-10: A Dataset For Post-Processing Ensemble Weather Forecasts](https://arxiv.org/abs/2206.14786) (2022)
+- [Training machine learning models on climate model output yields skillful interpretable seasonal precipitation forecasts](https://doi.org/10.1038/s43247-021-00225-4) (2021)
+- [Forecasting Severe Weather with Random Forests](https://doi.org/10.1175/mwr-d-19-0344.1) (2020)
+- [Improving Subseasonal Forecasting in the Western U.S. with Machine Learning](https://arxiv.org/abs/1809.07394) (2018)
+- [Storm-Based Probabilistic Hail Forecasting with Machine Learning Applied to Convection-Allowing Ensembles](https://doi.org/10.1175/waf-d-17-0010.1) (2017)
+- [A Deep Neural Network Modeling Framework to Reduce Bias in Satellite Precipitation Products](https://doi.org/10.1175/jhm-d-15-0075.1) (2016)
+- [Probabilistic Multisite Precipitation Downscaling by an Expanded Bernoulli–Gamma Density Network](https://doi.org/10.1175/2008jhm960.1) (2008)
 

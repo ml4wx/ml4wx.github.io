@@ -1,0 +1,72 @@
+id: arxiv-2405.05925
+title: 'FuXi-ENS: A machine learning model for medium-range ensemble weather forecasting'
+authors:
+- Xiaohui Zhong
+- Lei Chen
+- Hao Li
+- Roberto Buizza
+- Jun Liu
+- Jie Feng
+- Zijian Zhu
+- Xu Fan
+- Kan Dai
+- Jing-jia Luo
+- Jie Wu
+- Bo Lu
+date: '2024-05-09'
+year: 2024
+venue: Science Advances
+venue_type: journal
+ids:
+  arxiv: '2405.05925'
+  doi: 10.1126/sciadv.adu2854
+links:
+  paper: https://arxiv.org/abs/2405.05925
+  pdf: https://arxiv.org/pdf/2405.05925
+orgs:
+- cma
+- fudan-university
+- nuist
+topic: probabilistic-ensembles
+topics:
+- global-medium-range
+type: model
+method:
+- gan-vae
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: FuXi-ENS, a VAE-based ensemble trained with CRPS and KL loss at 0.25°, beats ECMWF ENS in CRPS
+  on 98.1% of 360 variable and lead time combinations.
+abstract: Ensemble forecasting is crucial for improving weather predictions, especially for forecasts
+  of extreme events. Constructing an ensemble prediction system (EPS) based on conventional NWP models
+  is highly computationally expensive. ML models have emerged as valuable tools for deterministic weather
+  forecasts, providing forecasts with significantly reduced computational requirements and even surpassing
+  the forecast performance of traditional NWP models. However, challenges arise when applying ML models
+  to ensemble forecasting. Recent ML models, such as GenCast and SEEDS model, rely on the ERA5 EDA or
+  operational NWP ensemble members for forecast generation. Their spatial resolution is also considered
+  too coarse for many applications. To overcome these limitations, we introduce FuXi-ENS, an advanced
+  ML model designed to deliver 6-hourly global ensemble weather forecasts up to 15 days. This model runs
+  at a significantly increased spatial resolution of 0.25\textdegree, incorporating 5 atmospheric variables
+  at 13 pressure levels, along with 13 surface variables. By leveraging the inherent probabilistic nature
+  of Variational AutoEncoder (VAE), FuXi-ENS optimizes a loss function that combines the CRPS and the
+  KL divergence between the predicted and target distribution, facilitating the incorporation of flow-dependent
+  perturbations in both initial conditions and forecast. This innovative approach makes FuXi-ENS an advancement
+  over the traditional ones that use L1 loss combined with the KL loss in standard VAE models for ensemble
+  weather forecasting. Results demonstrate that FuXi-ENS outperforms ensemble forecasts from the ECMWF,
+  a world leading NWP model, in the CRPS of 98.1% of 360 variable and forecast lead time combinations.
+  This achievement underscores the potential of the FuXi-ENS model to enhance ensemble weather forecasts,
+  offering a promising direction for further development in this field.
+significance: 6
+cited_by: 16
+score: 79
+highlight: true
+highlight_reason: FuXi-ENS gives a 0.25° VAE-based ML ensemble out to 15 days with CRPS training; solid
+  contribution alongside GenCast.
+added: '2026-10-22'
+source: seed

@@ -1,0 +1,60 @@
+id: arxiv-2306.06079
+title: Deep Learning for Day Forecasts from Sparse Observations
+authors:
+- Marcin Andrychowicz
+- Lasse Espeholt
+- Di Li
+- Samier Merchant
+- Alexander Merose
+- Fred Zyda
+- Shreya Agrawal
+- Nal Kalchbrenner
+date: '2023-06-06'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2306.06079'
+links:
+  paper: https://arxiv.org/abs/2306.06079
+  pdf: https://arxiv.org/pdf/2306.06079
+topic: nowcasting
+topics:
+- data-assimilation
+type: model
+method:
+- transformer
+- other
+timescale:
+- nowcast
+- short
+spatial:
+- regional
+data:
+- stations
+- radar
+- satellite
+- nwp-analysis
+status: operational
+summary: MetNet-3 learns from sparse and dense sensors to forecast precipitation, wind, temperature and
+  dew point up to 24 hours ahead, beating HRRR and ENS over CONUS and running in Google Search.
+abstract: Deep neural networks offer an alternative paradigm for modeling weather conditions. The ability
+  of neural models to make a prediction in less than a second once the data is available and to do so
+  with very high temporal and spatial resolution, and the ability to learn directly from atmospheric observations,
+  are just some of these models' unique advantages. Neural models trained using atmospheric observations,
+  the highest fidelity and lowest latency data, have to date achieved good performance only up to twelve
+  hours of lead time when compared with state-of-the-art probabilistic Numerical Weather Prediction models
+  and only for the sole variable of precipitation. In this paper, we present MetNet-3 that extends significantly
+  both the lead time range and the variables that an observation based neural model can predict well.
+  MetNet-3 learns from both dense and sparse data sensors and makes predictions up to 24 hours ahead for
+  precipitation, wind, temperature and dew point. MetNet-3 introduces a key densification technique that
+  implicitly captures data assimilation and produces spatially dense forecasts in spite of the network
+  training on extremely sparse targets. MetNet-3 has a high temporal and spatial resolution of, respectively,
+  up to 2 minutes and 1 km as well as a low operational latency. We find that MetNet-3 is able to outperform
+  the best single- and multi-member NWPs such as HRRR and ENS over the CONUS region for up to 24 hours
+  ahead setting a new performance milestone for observation based neural models. MetNet-3 is operational
+  and its forecasts are served in Google Search in conjunction with other models.
+significance: 6
+score: 34
+highlight: false
+added: '2026-10-22'
+source: seed

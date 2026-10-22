@@ -5,8 +5,43 @@ Prediction and detection of extremes: tropical cyclones, heatwaves, heavy rain, 
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/extremes-hazards/)
 
-0 papers (0 ⭐). Newest first.
+22 papers (1 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-08-06 | ⭐ [Operational tropical cyclone forecasting with AI](https://doi.org/10.1038/s41586-026-10953-2)<br><sub>Ferran Alet, Tom R. Andersson, Ilan Price et al. · Nature</sub> |  |  |
+| 2025-02-24 | [Artificial intelligence for modeling and understanding extreme weather and climate events](https://doi.org/10.1038/s41467-025-56573-8)<br><sub>Gustau Camps-Valls, Miguel-Ángel Fernández-Torres, Kai-Hendrik Cohrs et al. · Nature Communications</sub> |  |  |
+| 2024-11-07 | [Do data-driven models beat numerical models in forecasting weather extremes? A comparison of IFS HRES, Pangu-Weather, and GraphCast](https://doi.org/10.5194/gmd-17-7915-2024)<br><sub>Leonardo Olivetti, Gabriele Messori · Geoscientific Model Development</sub> |  |  |
+| 2024-10-19 | [Can AI weather models predict out-of-distribution gray swan tropical cyclones?](https://arxiv.org/abs/2410.14932)<br><sub>Y. Qiang Sun, Pedram Hassanzadeh, Mohsen Zand et al. · Proceedings of the National Academy of Sciences</sub> | New York University (M2LInES), University of Chicago |  |
+| 2024-04-26 | [Validating Deep Learning Weather Forecast Models on Recent High-Impact Extreme Events](https://arxiv.org/abs/2404.17652)<br><sub>Olivier C. Pasche, Jonathan Wider, Zhongwei Zhang et al. · Artificial Intelligence for the Earth Systems 4(1), e240033 (2025)</sub> |  |  |
+| 2024-03-21 | [Advances and prospects of deep learning for medium-range extreme weather forecasting](https://doi.org/10.5194/gmd-17-2347-2024)<br><sub>Leonardo Olivetti, Gabriele Messori · Geoscientific Model Development</sub> |  |  |
+| 2023-12-05 | [Do AI models produce better weather forecasts than physics-based models? A quantitative evaluation case study of Storm Ciarán](https://arxiv.org/abs/2312.02658)<br><sub>Andrew J. Charlton-Perez, Helen F. Dacre, Simon Driscoll et al. · npj Climate and Atmospheric Science</sub> |  |  |
+| 2023-10-25 | [FuXi-Extreme: Improving extreme rainfall and wind forecasts with diffusion model](https://arxiv.org/abs/2310.19822)<br><sub>Xiaohui Zhong, Lei Chen, Jun Liu et al. · Science China Earth Sciences</sub> |  |  |
+| 2022-05-23 | [Global Extreme Heat Forecasting Using Neural Weather Models](https://arxiv.org/abs/2205.10972)<br><sub>Ignacio Lopez-Gomez, Amy McGovern, Shreya Agrawal et al. · Artificial Intelligence for the Earth Systems (2023)</sub> |  |  |
+| 2021-12-04 | [Next Day Wildfire Spread: A Machine Learning Data Set to Predict Wildfire Spreading from Remote-Sensing Data](https://arxiv.org/abs/2112.02447)<br><sub>Fantine Huot, R. Lily Hu, Nita Goyal et al. · IEEE Transactions on Geoscience and Remote Sensing</sub> | Google Research |  |
+| 2021-03-17 | [Deep Learning-based Extreme Heatwave Forecast](https://arxiv.org/abs/2103.09743)<br><sub>Valérian Jacques-Dumas, Francesco Ragone, Pierre Borgnat et al. · Frontiers in Climate</sub> |  |  |
+| 2021-01-08 | [ClimateNet: an expert-labeled open dataset and deep learning architecture for enabling high-precision analyses of extreme weather](https://doi.org/10.5194/gmd-14-107-2021)<br><sub>, Karthik Kashinath, Mayur Mudigonda et al. · Geoscientific Model Development</sub> |  |  |
+| 2020-06-24 | [Deep Learning on Three-Dimensional Multiscale Data for Next-Hour Tornado Prediction](https://doi.org/10.1175/mwr-d-19-0372.1)<br><sub>Ryan Lagerquist, Amy McGovern, Cameron R. Homeyer et al. · Monthly Weather Review</sub> | NSF NCAR / UCAR, University of Oklahoma (AI2ES) |  |
+| 2020-05-01 | [Forecasting Severe Weather with Random Forests](https://doi.org/10.1175/mwr-d-19-0344.1)<br><sub>Aaron J. Hill, Gregory R. Herman, Russ S. Schumacher · Monthly Weather Review</sub> | Colorado State University (incl. CIRA) |  |
+| 2019-07-26 | [Analog forecasting of extreme-causing weather patterns using deep learning](https://arxiv.org/abs/1907.11617)<br><sub>Ashesh Chattopadhyay, Ebrahim Nabizadeh, Pedram Hassanzadeh · Journal of Advances in Modeling Earth Systems</sub> |  |  |
+| 2019-07-17 | [Interpretable Deep Learning for Spatial Analysis of Severe Hailstorms](https://doi.org/10.1175/mwr-d-18-0316.1)<br><sub>David John Gagne II, Sue Ellen Haupt, Douglas W. Nychka et al. · Monthly Weather Review</sub> | NSF NCAR / UCAR |  |
+| 2019-06-01 | [Using Deep Learning to Estimate Tropical Cyclone Intensity from Satellite Passive Microwave Imagery](https://doi.org/10.1175/mwr-d-18-0391.1)<br><sub>Anthony Wimmers, Christopher Velden, Joshua H. Cossuth · Monthly Weather Review</sub> |  |  |
+| 2017-10-01 | [Using Artificial Intelligence to Improve Real-Time Decision-Making for High-Impact Weather](https://doi.org/10.1175/bams-d-16-0123.1)<br><sub>Amy McGovern, Kimberly L. Elmore, David John Gagne et al. · Bulletin of the American Meteorological Society</sub> | NSF NCAR / UCAR, University of Oklahoma (AI2ES) |  |
+| 2017-09-22 | [Storm-Based Probabilistic Hail Forecasting with Machine Learning Applied to Convection-Allowing Ensembles](https://doi.org/10.1175/waf-d-17-0010.1)<br><sub>David John Gagne, Amy McGovern, Sue Ellen Haupt et al. · Weather and Forecasting</sub> | NSF NCAR / UCAR, University of Oklahoma (AI2ES) |  |
+| 2016-12-07 | [ExtremeWeather: A large-scale climate dataset for semi-supervised detection, localization, and understanding of extreme weather events](https://arxiv.org/abs/1612.02095)<br><sub>Evan Racah, Christopher Beckham, Tegan Maharaj et al.</sub> |  | [code](https://github.com/eracah/hur-detect) |
+| 2016-05-04 | [Application of Deep Convolutional Neural Networks for Detecting Extreme Weather in Climate Datasets](https://arxiv.org/abs/1605.01156)<br><sub>Yunjie Liu, Evan Racah, Prabhat et al.</sub> |  |  |
+| 1996-05-01 | [A Neural Network for Tornado Prediction Based on Doppler Radar-Derived Attributes](https://doi.org/10.1175/1520-0450(1996)035<0617:annftp>2.0.co;2)<br><sub>Caren Marzban, Gregory J. Stumpf · Journal of Applied Meteorology</sub> |  |  |
+
+## Also relevant
+
+- [Extreme Weather Bench: A framework and benchmark for evaluation of high-impact weather](https://arxiv.org/abs/2605.01126) (2026)
+- [Climate in a Bottle: Towards a Generative Foundation Model for the Kilometer-Scale Global Atmosphere](https://arxiv.org/abs/2505.06474) (2025)
+- [Prithvi WxC: Foundation Model for Weather and Climate](https://arxiv.org/abs/2409.13598) (2024)
+- [Machine learning–based extreme event attribution](https://doi.org/10.1126/sciadv.adl3242) (2024)
+- [WeatherQA: Can Multimodal Language Models Reason about Severe Weather?](https://arxiv.org/abs/2406.11217) (2024)
+- [Skilful nowcasting of extreme precipitation with NowcastNet](https://doi.org/10.1038/s41586-023-06184-4) (2023)
+- [A Generative Deep Learning Approach to Stochastic Downscaling of Precipitation Forecasts](https://arxiv.org/abs/2204.02028) (2022)
+- [Using Machine Learning to Analyze Physical Causes of Climate Change: A Case Study of U.S. Midwest Extreme Precipitation](https://doi.org/10.1029/2021gl093787) (2021)
+- [Making the Black Box More Transparent: Understanding the Physical Implications of Machine Learning](https://doi.org/10.1175/bams-d-18-0195.1) (2019)
+- [Improving Atmospheric River Forecasts With Machine Learning](https://doi.org/10.1029/2019gl083662) (2019)
 

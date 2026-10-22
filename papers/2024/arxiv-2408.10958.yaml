@@ -1,0 +1,62 @@
+id: arxiv-2408.10958
+title: Kilometer-Scale Convection Allowing Model Emulation using Generative Diffusion Modeling
+authors:
+- Jaideep Pathak
+- Yair Cohen
+- Piyush Garg
+- Peter Harrington
+- Noah Brenowitz
+- Dale Durran
+- Morteza Mardani
+- Arash Vahdat
+- Shaoming Xu
+- Karthik Kashinath
+- Michael Pritchard
+date: '2024-08-20'
+year: 2024
+venue: Science Advances
+venue_type: journal
+ids:
+  arxiv: '2408.10958'
+  doi: 10.1126/sciadv.adv0423
+links:
+  paper: https://arxiv.org/abs/2408.10958
+  pdf: https://arxiv.org/pdf/2408.10958
+orgs:
+- nvidia
+topic: regional-km-scale
+type: model
+method:
+- diffusion
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- nwp-analysis
+- km-scale-sim
+status: research
+summary: StormCast, a generative diffusion emulator of the 3 km HRRR convection-allowing model, gives
+  competitive 1-6 hour radar reflectivity skill with realistic cold pools and power spectra.
+abstract: Storm-scale convection-allowing models (CAMs) are an important tool for predicting the evolution
+  of thunderstorms and mesoscale convective systems that result in damaging extreme weather. By explicitly
+  resolving convective dynamics within the atmosphere they afford meteorologists the nuance needed to
+  provide outlook on hazard. Deep learning models have thus far not proven skilful at km-scale atmospheric
+  simulation, despite being competitive at coarser resolution with state-of-the-art global, medium-range
+  weather forecasting. We present a generative diffusion model called StormCast, which emulates the high-resolution
+  rapid refresh (HRRR) model-NOAA's state-of-the-art 3km operational CAM. StormCast autoregressively predicts
+  99 state variables at km scale using a 1-hour time step, with dense vertical resolution in the atmospheric
+  boundary layer, conditioned on 26 synoptic variables. We present evidence of successfully learnt km-scale
+  dynamics including competitive 1-6 hour forecast skill for composite radar reflectivity alongside physically
+  realistic convective cluster evolution, moist updrafts, and cold pool morphology. StormCast predictions
+  maintain realistic power spectra for multiple predicted variables across multi-hour forecasts. Together,
+  these results establish the potential for autoregressive ML to emulate CAMs -- opening up new km-scale
+  frontiers for regional ML weather prediction and future climate hazard dynamical downscaling.
+significance: 7
+cited_by: 12
+score: 83
+highlight: true
+highlight_reason: StormCast is a diffusion emulator of km-scale HRRR convection-allowing forecasts, opening
+  ML to storm-scale regional prediction and downscaling.
+added: '2026-10-22'
+source: seed

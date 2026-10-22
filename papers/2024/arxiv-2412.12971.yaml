@@ -1,0 +1,64 @@
+id: arxiv-2412.12971
+title: 'ArchesWeather & ArchesWeatherGen: a deterministic and generative model for efficient ML weather
+  forecasting'
+authors:
+- Guillaume Couairon
+- Renu Singh
+- Anastase Charantonis
+- Christian Lessig
+- Claire Monteleoni
+date: '2024-12-17'
+year: 2024
+venue: Science Advances
+venue_type: journal
+ids:
+  arxiv: '2412.12971'
+  doi: 10.1126/sciadv.adx2372
+links:
+  paper: https://arxiv.org/abs/2412.12971
+  pdf: https://arxiv.org/pdf/2412.12971
+  code: https://github.com/INRIA/geoarches
+orgs:
+- ecmwf
+- inria
+topic: probabilistic-ensembles
+type: model
+method:
+- transformer
+- diffusion
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: ArchesWeather is a transformer deterministic model, and ArchesWeatherGen a flow-matching ensemble
+  that beats IFS ENS and NeuralGCM on WeatherBench headline variables at academic compute cost.
+abstract: Weather forecasting plays a vital role in today's society, from agriculture and logistics to
+  predicting the output of renewable energies, and preparing for extreme weather events. Deep learning
+  weather forecasting models trained with the next state prediction objective on ERA5 have shown great
+  success compared to numerical global circulation models. However, for a wide range of applications,
+  being able to provide representative samples from the distribution of possible future weather states
+  is critical. In this paper, we propose a methodology to leverage deterministic weather models in the
+  design of probabilistic weather models, leading to improved performance and reduced computing costs.
+  We first introduce \textbf{ArchesWeather}, a transformer-based deterministic model that improves upon
+  Pangu-Weather by removing overrestrictive inductive priors. We then design a probabilistic weather model
+  called \textbf{ArchesWeatherGen} based on flow matching, a modern variant of diffusion models, that
+  is trained to project ArchesWeather's predictions to the distribution of ERA5 weather states. ArchesWeatherGen
+  is a true stochastic emulator of ERA5 and surpasses IFS ENS and NeuralGCM on all WeatherBench headline
+  variables (except for NeuralGCM's geopotential). Our work also aims to democratize the use of deterministic
+  and generative machine learning models in weather forecasting research, with academic computing resources.
+  All models are trained at 1.5° resolution, with a training budget of $\sim$9 V100 days for ArchesWeather
+  and $\sim$45 V100 days for ArchesWeatherGen. For inference, ArchesWeatherGen generates 15-day weather
+  trajectories at a rate of 1 minute per ensemble member on a A100 GPU card. To make our work fully reproducible,
+  our code and models are open source, including the complete pipeline for data preparation, training,
+  and evaluation, at https://github.com/INRIA/geoarches .
+significance: 6
+cited_by: 5
+score: 89
+highlight: true
+highlight_reason: Efficient academic-scale deterministic and flow-matching generative ERA5 emulators that
+  beat IFS ENS and NeuralGCM on most headline variables; useful, accessible baseline.
+added: '2026-10-22'
+source: seed

@@ -1,0 +1,60 @@
+id: arxiv-2406.01465
+title: AIFS -- ECMWF's data-driven forecasting system
+authors:
+- Simon Lang
+- Mihai Alexe
+- Matthew Chantry
+- Jesper Dramsch
+- Florian Pinault
+- Baudouin Raoult
+- Mariana C. A. Clare
+- Christian Lessig
+- Michael Maier-Gerber
+- Linus Magnusson
+- Zied Ben Bouallègue
+- Ana Prieto Nemesio
+- Peter D. Dueben
+- Andrew Brown
+- Florian Pappenberger
+- Florence Rabier
+date: '2024-06-03'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2406.01465'
+links:
+  paper: https://arxiv.org/abs/2406.01465
+  pdf: https://arxiv.org/pdf/2406.01465
+topic: global-medium-range
+type: model
+method:
+- gnn
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: operational
+summary: AIFS is ECMWF's operational GNN-transformer forecast system, trained on ERA5 and operational
+  analyses, with skilled upper-air, surface and tropical cyclone forecasts run publicly.
+abstract: Machine learning-based weather forecasting models have quickly emerged as a promising methodology
+  for accurate medium-range global weather forecasting. Here, we introduce the Artificial Intelligence
+  Forecasting System (AIFS), a data driven forecast model developed by the European Centre for Medium-Range
+  Weather Forecasts (ECMWF). AIFS is based on a graph neural network (GNN) encoder and decoder, and a
+  sliding window transformer processor, and is trained on ECMWF's ERA5 re-analysis and ECMWF's operational
+  numerical weather prediction (NWP) analyses. It has a flexible and modular design and supports several
+  levels of parallelism to enable training on high-resolution input data. AIFS forecast skill is assessed
+  by comparing its forecasts to NWP analyses and direct observational data. We show that AIFS produces
+  highly skilled forecasts for upper-air variables, surface weather parameters and tropical cyclone tracks.
+  AIFS is run four times daily alongside ECMWF's physics-based NWP model and forecasts are available to
+  the public under ECMWF's open data policy.
+significance: 9
+score: 46
+highlight: true
+highlight_reason: Describes ECMWF's operational AIFS, a major-centre deployment of an ML global forecast
+  model with open data, central reference for the field.
+added: '2026-10-22'
+source: seed

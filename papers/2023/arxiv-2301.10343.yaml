@@ -1,0 +1,59 @@
+id: arxiv-2301.10343
+title: 'ClimaX: A foundation model for weather and climate'
+authors:
+- Tung Nguyen
+- Johannes Brandstetter
+- Ashish Kapoor
+- Jayesh K. Gupta
+- Aditya Grover
+date: '2023-01-24'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2301.10343'
+links:
+  paper: https://arxiv.org/abs/2301.10343
+  pdf: https://arxiv.org/pdf/2301.10343
+  code: https://github.com/microsoft/ClimaX
+topic: foundation-models
+topics:
+- global-medium-range
+- climate-emulation
+type: model
+method:
+- transformer
+timescale:
+- short
+- medium
+- climate
+spatial:
+- global
+data:
+- cmip
+- era5
+status: research
+summary: ClimaX is a transformer foundation model pretrained on CMIP6 that fine-tunes to many weather
+  and climate tasks, outperforming data-driven baselines.
+abstract: Most state-of-the-art approaches for weather and climate modeling are based on physics-informed
+  numerical models of the atmosphere. These approaches aim to model the non-linear dynamics and complex
+  interactions between multiple variables, which are challenging to approximate. Additionally, many such
+  numerical models are computationally intensive, especially when modeling the atmospheric phenomenon
+  at a fine-grained spatial and temporal resolution. Recent data-driven approaches based on machine learning
+  instead aim to directly solve a downstream forecasting or projection task by learning a data-driven
+  functional mapping using deep neural networks. However, these networks are trained using curated and
+  homogeneous climate datasets for specific spatiotemporal tasks, and thus lack the generality of numerical
+  models. We develop and demonstrate ClimaX, a flexible and generalizable deep learning model for weather
+  and climate science that can be trained using heterogeneous datasets spanning different variables, spatio-temporal
+  coverage, and physical groundings. ClimaX extends the Transformer architecture with novel encoding and
+  aggregation blocks that allow effective use of available compute while maintaining general utility.
+  ClimaX is pre-trained with a self-supervised learning objective on climate datasets derived from CMIP6.
+  The pre-trained ClimaX can then be fine-tuned to address a breadth of climate and weather tasks, including
+  those that involve atmospheric variables and spatio-temporal scales unseen during pretraining. Compared
+  to existing data-driven baselines, we show that this generality in ClimaX results in superior performance
+  on benchmarks for weather forecasting and climate projections, even when pretrained at lower resolutions
+  and compute budgets. The source code is available at https://github.com/microsoft/ClimaX.
+significance: 7
+score: 38
+highlight: false
+added: '2026-10-22'
+source: seed

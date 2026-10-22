@@ -1,0 +1,55 @@
+id: arxiv-2305.15618
+title: 'Debias Coarsely, Sample Conditionally: Statistical Downscaling through Optimal Transport and Probabilistic
+  Diffusion Models'
+authors:
+- Zhong Yi Wan
+- Ricardo Baptista
+- Yi-fan Chen
+- John Anderson
+- Anudhyan Boral
+- Fei Sha
+- Leonardo Zepeda-Núñez
+date: '2023-01-01'
+year: 2023
+venue: Advances in Neural Information Processing Systems 36
+venue_type: preprint
+ids:
+  arxiv: '2305.15618'
+  doi: 10.52202/075280-2069
+links:
+  paper: https://arxiv.org/abs/2305.15618
+  pdf: https://arxiv.org/pdf/2305.15618
+  code: https://github.com/google-research/swirl-dynamics
+topic: downscaling
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+- other
+spatial:
+- regional
+data:
+- other
+status: research
+summary: A two-stage statistical downscaling method combines optimal-transport debiasing with diffusion
+  upsampling, enabling unpaired 8x and 16x super-resolution on fluid flows relevant to weather and climate.
+abstract: 'We introduce a two-stage probabilistic framework for statistical downscaling using unpaired
+  data. Statistical downscaling seeks a probabilistic map to transform low-resolution data from a biased
+  coarse-grained numerical scheme to high-resolution data that is consistent with a high-fidelity scheme.
+  Our framework tackles the problem by composing two transformations: (i) a debiasing step via an optimal
+  transport map, and (ii) an upsampling step achieved by a probabilistic diffusion model with a posteriori
+  conditional sampling. This approach characterizes a conditional distribution without needing paired
+  data, and faithfully recovers relevant physical statistics from biased samples. We demonstrate the utility
+  of the proposed approach on one- and two-dimensional fluid flow problems, which are representative of
+  the core difficulties present in numerical simulations of weather and climate. Our method produces realistic
+  high-resolution outputs from low-resolution inputs, by upsampling resolutions of 8x and 16x. Moreover,
+  our procedure correctly matches the statistics of physical quantities, even when the low-frequency content
+  of the inputs and outputs do not match, a crucial but difficult-to-satisfy assumption needed by current
+  state-of-the-art alternatives. Code for this work is available at: https://github.com/google-research/swirl-dynamics/tree/main/swirl_dynamics/projects/probabilistic_diffusion.'
+significance: 4
+cited_by: 7
+score: 26
+highlight: false
+added: '2026-10-22'
+source: seed
