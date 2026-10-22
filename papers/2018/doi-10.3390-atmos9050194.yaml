@@ -1,0 +1,53 @@
+id: doi-10.3390-atmos9050194
+title: Multivariate Interpolation of Wind Field Based on Gaussian Process Regression
+authors:
+- Miao Feng
+- Weimin Zhang
+- Xiangru Zhu
+- Boheng Duan
+- Mengbin Zhu
+- De Xing
+date: '2018-05-17'
+year: 2018
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos9050194
+  openalex: W2804165808
+links:
+  paper: https://doi.org/10.3390/atmos9050194
+  pdf: https://www.mdpi.com/2073-4433/9/5/194/pdf
+topic: downscaling
+topics:
+- post-processing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: Gaussian process regression with a multi-scale anisotropic kernel interpolates NWP 10 m wind
+  fields, cutting RMSE by up to 95% versus neural networks in cyclone cases.
+abstract: The resolution of the products of numerical weather prediction is limited by the resolution
+  of numerical models and computing resources, which can be improved accurately by a well-chosen interpolation
+  algorithm. This paper is intended to improve the accuracy of spatial interpolation towards wind fields.
+  A new composited multi-scale anisotropic kernel function for weather processes using two-dimensional
+  space information is proposed. To fix the underfitting in this kernel caused by unilateral space information,
+  multiple variables (wind direction, air temperature, and atmospheric pressure) are introduced, which
+  generates a multivariate correction model based on the novel kernel function and Gaussian process regression.
+  Focusing on different weather processes, two multivariate correction models are designed. The new models
+  pave a new way to employ multi-scale local information, and extract the anisotropy and structure information.
+  The experiments on 10 m wind fields for the weather processes without cyclones and for the weather processes
+  with cyclones validate the efficiency. The mean RMSE of the multivariate correction model for the weather
+  processes without cyclones is reduced by around 15% for the u wind component compared with that of a
+  simple composited kernel. For the weather processes with cyclones, the mean RMSE of the novel model
+  declines by around 55% compared to that of spline, and by about 95% compared to that of back propagation
+  neural networks.
+significance: 2
+cited_by: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill
