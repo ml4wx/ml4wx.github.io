@@ -124,6 +124,13 @@ def _batch(cands: list[Candidate], cfg: Config, model: str) -> dict[str, dict]:
     if missing and len(missing) < len(cands):
         log.warning("%d results missing; retrying them", len(missing))
         got |= _batch(missing, cfg, model)
+    elif missing and len(cands) > 1:
+        # Nothing usable came back (e.g. keys rewritten): split, like a failed call.
+        log.warning("no usable results for a batch of %d; splitting", len(cands))
+        mid = len(cands) // 2
+        got |= _batch(cands[:mid], cfg, model) | _batch(cands[mid:], cfg, model)
+    elif missing:
+        log.error("no result for %s", cands[0].key)
     return got
 
 

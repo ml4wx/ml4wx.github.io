@@ -14,8 +14,9 @@ from pathlib import Path
 
 from . import alerts, digest, export, fetch, ingest
 from .config import load
+from .http import BudgetExceeded
 from .models import Candidate
-from .sources import arxiv, crossref, feeds, s2
+from .sources import arxiv, crossref, feeds, openalex, s2
 from .store import Archive
 
 log = logging.getLogger("ml4wx")
@@ -101,15 +102,17 @@ def cmd_seed(args) -> int:
                     found.add(key)
         except RuntimeError as e:
             log.warning("Semantic Scholar unavailable (%s); using Crossref", e)
-    # DOI-only seeds that Semantic Scholar did not return (or no arXiv id): Crossref.
-    for c in crossref.lookup([k[4:] for k in dois if k not in found], source="seed"):
-        cands.append(c)
-        found.add(c.key)
-    # Journal versions of arXiv seeds: add the DOI so the record merges with OpenAlex later.
+    # Journal versions of arXiv seeds: add the DOI so the arXiv record merges with the journal one.
     for c in cands:
         s = by_key.get(c.key) or {}
         if s.get("doi") and not c.ids.doi:
             c.ids.doi = s["doi"].lower()
+    # Crossref for every DOI not already fetched: venue and citations (dedupe merges the records).
+    fetched = {c.ids.doi for c in cands if c.source == "seed" and c.venue_type == "journal"}
+    all_dois = [s["doi"].lower() for s in seeds if s.get("doi")]
+    for c in crossref.lookup([d for d in all_dois if d not in fetched], source="seed"):
+        cands.append(c)
+        found.add(c.key)
     missing = [k for k in by_key if k not in found]
     if missing:
         log.warning("seeds not found: %s", ", ".join(missing))
@@ -176,6 +179,36 @@ def cmd_snowball(args) -> int:
         rep = ingest.ingest(cands[i : i + 400], archive, cfg, source="snowball", judge_highlights=False)
         print(f"chunk {i // 400 + 1}: +{len(rep.added)} papers, {rep.parked} parked, "
               f"{rep.rejected} rejected, {rep.failed} failed", flush=True)  # fmt: skip
+    return 0
+
+
+def cmd_enrich(args) -> int:
+    """Labs, journal versions and citation counts from OpenAlex for archived papers."""
+    cfg, archive = load(), Archive()
+    since = dt.date.today() - dt.timedelta(days=args.days) if args.days else None
+    papers = [p for p in archive.papers.values() if since is None or p.added >= since]
+    if args.missing_orgs:
+        papers = [p for p in papers if not p.orgs]
+    # The arXiv preprint and the journal version are often separate OpenAlex works: ask for both.
+    keys = [
+        k
+        for p in papers
+        for k in (
+            f"arxiv:{p.ids.arxiv}" if p.ids.arxiv else None,
+            f"doi:{p.ids.doi}" if p.ids.doi else None,
+            f"openalex:{p.ids.openalex}" if p.ids.openalex and not (p.ids.arxiv or p.ids.doi) else None,
+        )
+        if k
+    ]
+    changed = 0
+    try:
+        for c in openalex.lookup(keys, source="enrich"):
+            if (p := archive.find(c)) and ingest.update_existing(p, c, cfg):
+                archive.save_paper(p)
+                changed += 1
+    except BudgetExceeded as e:
+        log.warning("stopped early: %s", e)
+    print(f"enrich: {len(papers)} papers looked up, {changed} updated")
     return 0
 
 
@@ -275,6 +308,11 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--max-citations", type=int, default=3000)
     p.add_argument("--max-minutes", type=float, default=300, help="stop starting new chunks after this")
     p.set_defaults(fn=cmd_snowball)
+
+    p = sub.add_parser("enrich", help="labs, journal versions, citations from OpenAlex")
+    p.add_argument("--days", type=int, default=None, help="only papers added in the last N days")
+    p.add_argument("--missing-orgs", action="store_true", help="only papers without labs")
+    p.set_defaults(fn=cmd_enrich)
 
     p = sub.add_parser("judge", help="second-opinion significance for likely highlights")
     p.add_argument("--source", default=None)

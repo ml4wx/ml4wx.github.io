@@ -66,6 +66,7 @@ def paper_id(arxiv: str | None, doi: str | None, openalex: str | None) -> str:
 
 
 def norm_title(t: str) -> str:
+    t = re.sub(r"[‐-―−]", "-", t)  # Unicode dashes (Wiley uses U+2010)
     t = unicodedata.normalize("NFKD", t).encode("ascii", "ignore").decode()
     return re.sub(r"[^a-z0-9]+", " ", t.lower()).strip()
 

@@ -8,7 +8,7 @@ on:
       task:
         description: What to run
         type: choice
-        options: [seed, backfill, snowball, judge]
+        options: [seed, backfill, snowball, enrich, judge]
         default: backfill
       start:
         description: "backfill: first month (YYYY-MM-DD)"
@@ -75,6 +75,7 @@ jobs:
             seed)     uv run ml4wx seed config/seeds.json ;;
             backfill) uv run ml4wx backfill --start "$START" ${END:+--end "$END"} --max-months "$MAX_MONTHS" --max-minutes 300 ;;
             snowball) uv run ml4wx snowball --max-minutes 300 ;;
+            enrich)   uv run ml4wx enrich ;;
             judge)    uv run ml4wx judge ;;
           esac
 
@@ -91,7 +92,7 @@ jobs:
           n=$(git diff --cached --name-only --diff-filter=A -- papers | wc -l | tr -d ' ')
           git commit -q -m "Backfill ($TASK): +$n papers"
           git push -q origin backfill
-          if ! gh pr view backfill --json url >/dev/null 2>&1; then
+          if [ -z "$(gh pr list --head backfill --state open --json url -q '.[0].url')" ]; then
             gh pr create --base main --head backfill --title "Backfill: historical papers" \
               --body "Historical papers from the backfill runs (seeds, arXiv/OpenAlex month by month, citation snowballing). Merge when the backfill is complete."
           fi

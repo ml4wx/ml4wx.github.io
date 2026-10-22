@@ -27,6 +27,11 @@ jobs:
         with:
           claude: "true"
 
+      - name: Labs and journal versions for recent papers (OpenAlex adds affiliations late)
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+        run: uv run ml4wx enrich --days 35 --missing-orgs
+
       - name: Crawl, classify, export, write digest
         id: run
         env:

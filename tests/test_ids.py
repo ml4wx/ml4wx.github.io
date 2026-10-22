@@ -20,6 +20,10 @@ def test_paper_id_prefers_arxiv_then_doi():
     assert ids.paper_id(None, None, "W123") == "openalex-W123"
 
 
+def test_norm_title_unicode_hyphen():
+    assert ids.norm_title("Physics‐informed ML") == ids.norm_title("Physics-informed ML") == "physics informed ml"
+
+
 def test_same_title_tolerates_preprint_vs_journal():
     a = "GraphCast: Learning skillful medium-range global weather forecasting"
     b = "Learning skillful medium-range global weather forecasting"
