@@ -1,0 +1,53 @@
+id: arxiv-2310.09392
+title: Machine Learning Estimation of Maximum Vertical Velocity from Radar
+authors:
+- Randy J. Chase
+- Amy McGovern
+- Cameron Homeyer
+- Peter Marinescu
+- Corey Potvin
+date: '2023-10-13'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2310.09392'
+  doi: 10.1175/aies-d-23-0095.1
+links:
+  paper: https://arxiv.org/abs/2310.09392
+  pdf: https://arxiv.org/pdf/2310.09392
+topic: observations-remote-sensing
+topics:
+- extremes-hazards
+type: model
+method:
+- cnn
+spatial:
+- local
+data:
+- radar
+- km-scale-sim
+status: research
+summary: U-Nets retrieve storm maximum vertical velocity from 3D radar reflectivity with probabilistic
+  outputs, reaching R² above 0.65 on WoFS simulations.
+abstract: The quantification of storm updrafts remains unavailable for operational forecasting despite
+  their inherent importance to convection and its associated severe weather hazards. Updraft proxies,
+  like overshooting top area from satellite images, have been linked to severe weather hazards but only
+  relate to a limited portion of the total storm updraft. This study investigates if a machine learning
+  model, namely U-Nets, can skillfully retrieve maximum vertical velocity and its areal extent from 3-dimensional
+  gridded radar reflectivity alone. The machine learning model is trained using simulated radar reflectivity
+  and vertical velocity from the National Severe Storm Laboratory's convection permitting Warn on Forecast
+  System (WoFS). A parametric regression technique using the sinh-arcsinh-normal distribution is adapted
+  to run with U-Nets, allowing for both deterministic and probabilistic predictions of maximum vertical
+  velocity. The best models after hyperparameter search provided less than 50% root mean squared error,
+  a coefficient of determination greater than 0.65 and an intersection over union (IoU) of more than 0.45
+  on the independent test set composed of WoFS data. Beyond the WoFS analysis, a case study was conducted
+  using real radar data and corresponding dual-Doppler analyses of vertical velocity within a supercell.
+  The U-Net consistently underestimates the dual-Doppler updraft speed estimates by 50$\%$. Meanwhile,
+  the area of the 5 and 10 m s^-1 updraft cores show an IoU of 0.25. While the above statistics are not
+  exceptional, the machine learning model enables quick distillation of 3D radar data that is related
+  to the maximum vertical velocity which could be useful in assessing a storm's severe potential.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

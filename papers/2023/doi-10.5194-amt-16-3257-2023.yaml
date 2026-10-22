@@ -1,0 +1,53 @@
+id: doi-10.5194-amt-16-3257-2023
+title: Validation of a camera-based intra-hour irradiance nowcasting model using synthetic cloud data
+authors:
+- Philipp Gregor
+- Tobias Zinner
+- Fabian Jakub
+- Bernhard Mayer
+date: '2023-06-29'
+year: 2023
+venue: Atmospheric measurement techniques
+venue_type: journal
+ids:
+  doi: 10.5194/amt-16-3257-2023
+  openalex: W4382721454
+links:
+  paper: https://doi.org/10.5194/amt-16-3257-2023
+  pdf: https://amt.copernicus.org/articles/16/3257/2023/amt-16-3257-2023.pdf
+topic: nowcasting
+topics:
+- data-assimilation
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- other
+status: research
+summary: MACIN combines a CNN cloud detector with data assimilation to nowcast direct irradiance up to
+  20 minutes ahead, improving on persistence beyond one minute.
+abstract: Abstract. This work introduces the novel short-term nowcasting model MACIN, which predicts direct
+  normal irradiance (DNI) for solar energy applications based on hemispheric sky images from two all-sky
+  imagers (ASI). With a synthetic setup based on simulated cloud scenes, the model and its components
+  were validated in depth. We trained a convolutional neural network to identify clouds in ASI images
+  and derive their height and motion using sparse matching. In contrast to other studies, all derived
+  cloud information from both ASIs and multiple timesteps are combined into an optimal model state using
+  techniques from data assimilation. This state is advected to predict future cloud positions and compute
+  DNI for lead times up to 20 minutes. For the cloudmasks derived from the ASI images we found a pixel
+  accuracy of 94.66 % compared to the references available in the synthetic setup. The relative error
+  of derived cloud base heights is 4 % and cloud motion error is in the range of 0.1 ms−1. For the DNI
+  nowcasts, we found an improvement over persistence for lead times larger than one minute. Using the
+  synthetic setup, we computed a DNI reference for a point and also an area of 500m × 500 m. Errors for
+  area nowcasts as required, e.g., for photovoltaics plants, are smaller compared to errors for point
+  nowcasts. Overall, the novel ASI nowcasting model and its components proved to work within the synthetic
+  setup.
+significance: 3
+cited_by: 6
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,53 @@
+id: arxiv-2203.15601
+title: Photographic Visualization of Weather Forecasts with Generative Adversarial Networks
+authors:
+- Christian Sigg
+- Flavia Cavallaro
+- Tobias Günther
+- Martin R. Oswald
+date: '2022-03-29'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2203.15601'
+links:
+  paper: https://arxiv.org/abs/2203.15601
+  pdf: https://arxiv.org/pdf/2203.15601
+topic: nowcasting
+topics:
+- applications-impacts
+type: model
+method:
+- gan-vae
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- nwp-analysis
+- other
+status: research
+summary: Conditional GAN turns webcam images into photorealistic future weather views conditioned on COSMO-1
+  forecasts, matching forecast conditions in at least 89% of cases.
+abstract: Outdoor webcam images are an information-dense yet accessible visualization of past and present
+  weather conditions, and are consulted by meteorologists and the general public alike. Weather forecasts,
+  however, are still communicated as text, pictograms or charts. We therefore introduce a novel method
+  that uses photographic images to also visualize future weather conditions. This is challenging, because
+  photographic visualizations of weather forecasts should look real, be free of obvious artifacts, and
+  should match the predicted weather conditions. The transition from observation to forecast should be
+  seamless, and there should be visual continuity between images for consecutive lead times. We use conditional
+  Generative Adversarial Networks to synthesize such visualizations. The generator network, conditioned
+  on the analysis and the forecasting state of the numerical weather prediction (NWP) model, transforms
+  the present camera image into the future. The discriminator network judges whether a given image is
+  the real image of the future, or whether it has been synthesized. Training the two networks against
+  each other results in a visualization method that scores well on all four evaluation criteria. We present
+  results for three camera sites across Switzerland that differ in climatology and terrain. We show that
+  users find it challenging to distinguish real from generated images, performing not much better than
+  if they guessed randomly. The generated images match the atmospheric, ground and illumination conditions
+  of the COSMO-1 NWP model forecast in at least 89 % of the examined cases. Nowcasting sequences of generated
+  images achieve a seamless transition from observation to forecast and attain visual continuity.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

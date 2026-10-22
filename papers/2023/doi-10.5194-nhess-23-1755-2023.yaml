@@ -1,0 +1,57 @@
+id: doi-10.5194-nhess-23-1755-2023
+title: Reduced-order digital twin and latent data assimilation for global wildfire prediction
+authors:
+- Caili Zhong
+- Sibo Lucas Cheng
+- Matthew R. Kasoar
+- Rossella Arcucci
+date: '2023-05-12'
+year: 2023
+venue: Natural hazards and earth system sciences
+venue_type: journal
+ids:
+  doi: 10.5194/nhess-23-1755-2023
+  openalex: W4387437810
+links:
+  paper: https://doi.org/10.5194/nhess-23-1755-2023
+  pdf: https://nhess.copernicus.org/articles/23/1755/2023/nhess-23-1755-2023.pdf
+  code: https://github.com/DL-WG/Digital-twin-LA-global-wildfire
+topic: extremes-hazards
+topics:
+- data-assimilation
+type: model
+method:
+- other
+timescale:
+- seasonal
+spatial:
+- global
+data:
+- other
+status: research
+summary: Latent-space digital twin of JULES-INFERNO for global wildfire prediction, with latent data assimilation,
+  running 500 times faster than the original model.
+abstract: Abstract. The occurrence of forest fires can impact vegetation in the ecosystem, property, and
+  human health, but also indirectly affect the climate. JULES-INFERNO is a global land surface model,
+  which simulates vegetation, soils, and fire occurrence driven by environmental factors. However, this
+  model incurs substantial computational costs due to the high data dimensionality and the complexity
+  of differential equations. Deep learning-based digital twins have an advantage in handling large amounts
+  of data. They can reduce the computational cost of subsequent predictive models by extracting data features
+  through Reduced Order Modelling (ROM) and then compressing the data to a low-dimensional latent space.
+  This study proposes a JULES-INFERNO-based digital twin fire model using ROM techniques and deep learning
+  prediction networks to improve the efficiency of global wildfire predictions. The iterative prediction
+  implemented in the proposed model can use current-year data to predict fires in subsequent years. To
+  avoid the accumulation of errors from the iterative prediction, Latent data Assimilation (LA) is applied
+  to the prediction process. LA manages to efficiently adjust the prediction results to ensure the stability
+  and sustainability of the prediction. Numerical results show that the proposed model can effectively
+  encode the original data and achieve accurate surrogate predictions. Furthermore, the application of
+  LA can also effectively adjust the bias of the prediction results. The proposed digital twin also runs
+  500 times faster for online predictions than the original JULES-INFERNO model without requiring High-Performance
+  Computing (HPC) clusters. The implementation code of this study and the developed models are available
+  at https://github.com/DL-WG/Digital-twin-LA-global-wildfire.
+significance: 3
+cited_by: 66
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

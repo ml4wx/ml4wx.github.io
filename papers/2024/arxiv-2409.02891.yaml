@@ -1,0 +1,68 @@
+id: arxiv-2409.02891
+title: Regional data-driven weather modeling with a global stretched-grid
+authors:
+- Thomas Nils Nipen
+- Håvard Homleid Haugen
+- Magnus Sikora Ingstad
+- Even Marius Nordhagen
+- Aram Farhad Shafiq Salihi
+- Paulina Tedesco
+- Ivar Ambjørn Seierstad
+- Jørn Kristiansen
+- Simon Lang
+- Mihai Alexe
+- Jesper Dramsch
+- Baudouin Raoult
+- Gert Mertes
+- Matthew Chantry
+date: '2024-09-04'
+year: 2024
+venue: Artificial Intelligence for the Earth Systems
+venue_type: journal
+ids:
+  arxiv: '2409.02891'
+  doi: 10.1175/aies-d-25-0001.1
+  openalex: W4416121871
+links:
+  paper: https://arxiv.org/abs/2409.02891
+  pdf: https://arxiv.org/pdf/2409.02891
+orgs:
+- ecmwf
+- met-norway
+topic: regional-km-scale
+topics:
+- global-medium-range
+type: model
+method:
+- gnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+- nwp-analysis
+- stations
+status: research
+summary: Graph-based stretched-grid model refines a global AI model to 2.5 km over the Nordics, beating
+  the MEPS ensemble mean for 2 m temperature but underestimating extremes.
+abstract: A data-driven model (DDM) suitable for regional weather forecasting applications is presented.
+  The model extends the Artificial Intelligence Forecasting System by introducing a stretched-grid architecture
+  that dedicates higher resolution over a regional area of interest and maintains a lower resolution elsewhere
+  on the globe. The model is based on graph neural networks, which naturally affords arbitrary multi-resolution
+  grid configurations. The model is applied to short-range weather prediction for the Nordics, producing
+  forecasts at 2.5 km spatial and 6 h temporal resolution. The model is pre-trained on 43 years of global
+  ERA5 data at 31 km resolution and is further refined using 3.3 years of 2.5 km resolution operational
+  analyses from the MetCoOp Ensemble Prediction System (MEPS). The performance of the model is evaluated
+  using surface observations from measurement stations across Norway and is compared to short-range weather
+  forecasts from MEPS. The DDM outperforms both the control run and the ensemble mean of MEPS for 2 m
+  temperature. The model also produces competitive precipitation and wind speed forecasts, but is shown
+  to underestimate extreme events.
+significance: 6
+cited_by: 16
+score: 59
+highlight: true
+highlight_reason: Stretched-grid GNN extending AIFS gives 2.5 km regional forecasts over the Nordics,
+  beating MEPS on 2 m temperature; the approach underpins later Anemoi regional systems.
+added: '2026-10-22'
+source: seed

@@ -1,0 +1,55 @@
+id: doi-10.22541-essoar.169109567.78839949-v1
+title: 'Revisiting Machine Learning Approaches for Short- and Longwave Radiation Inference in Weather
+  and Climate Models, Part I: Offline Performance'
+authors:
+- Guillaume Bertoli
+- Fırat Özdemir
+- Fernando Pérez‐Cruz
+date: '2023-08-03'
+year: 2023
+venue_type: other
+ids:
+  doi: 10.22541/essoar.169109567.78839949/v1
+  openalex: W4385515680
+links:
+  paper: https://doi.org/10.22541/essoar.169109567.78839949/v1
+  pdf: https://essopenarchive.org/doi/pdf/10.22541/essoar.169109567.78839949
+orgs:
+- eth-zurich
+- sdsc
+topic: hybrid-parameterization
+type: model
+method:
+- rnn
+- cnn
+- classical-ml
+spatial:
+- global
+data:
+- other
+status: research
+summary: Compares random forest and neural network emulators of ICON's ecRad radiation; neural nets show
+  top-of-atmosphere bias, and a recurrent design with flux normalisation performs best.
+abstract: As climate modellers prepare their code for kilometre-scale global simulations, the computationally
+  demanding radiative transfer parameterization is a prime candidate for machine learning (ML) emulation.
+  Because of the computational demands, many weather centres use a reduced spatial grid and reduced temporal
+  frequency for radiative transfer calculations in their forecast models. This strategy is known to affect
+  forecast quality, which further motivates the use of ML-based radiative transfer parameterizations.
+  This paper contributes to the discussion on how to incorporate physical constraints into an ML-based
+  radiative parameterization, and how different neural network (NN) designs and output normalisation affect
+  prediction performance. A random forest (RF) is used as a baseline method, with the European Centre
+  for Medium-Range Weather Forecasts (ECMWF) model ecRad, the operational radiation scheme in the Icosahedral
+  Nonhydrostatic Weather and Climate Model (ICON), used for training. Surprisingly, the RF is not affected
+  by the top-of-atmosphere (TOA) bias found in all NNs tested (e.g., MLP, CNN, UNet, RNN) in this and
+  previously published studies. At lower atmospheric levels, the RF is able to compete with all NNs tested,
+  but its memory requirements quickly become prohibitive. For a fixed memory size, most NNs outperform
+  the RF except at TOA. For the best emulator, we use a recurrent neural network architecture which closely
+  imitates the physical process it emulates. We additionally normalize the shortwave and longwave fluxes
+  to reduce their dependence from the solar angle and surface temperature respectively. Finally, we train
+  the model with an additional heating rates penalty in the loss function.
+significance: 4
+cited_by: 3
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

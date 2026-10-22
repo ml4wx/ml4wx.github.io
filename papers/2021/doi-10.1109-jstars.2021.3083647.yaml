@@ -1,0 +1,57 @@
+id: doi-10.1109-jstars.2021.3083647
+title: Using Conditional Generative Adversarial 3-D Convolutional Neural Network for Precise Radar Extrapolation
+authors:
+- Cong Wang
+- Ping Wang
+- Pingping Wang
+- Bing Xue
+- Di Wang
+date: '2021-01-01'
+year: 2021
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2021.3083647
+  openalex: W3164939772
+links:
+  paper: https://doi.org/10.1109/jstars.2021.3083647
+  pdf: https://ieeexplore.ieee.org/ielx7/4609443/9314330/09440761.pdf
+orgs:
+- cma
+topic: nowcasting
+type: model
+method:
+- gan-vae
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: A 3-D CNN plus conditional GAN postprocessor sharpens radar echo extrapolations, improving intense
+  echo and convective prediction over North China in 2015–2016.
+abstract: Radar echo extrapolation is a basic but essential task in meteorological services. It could
+  provide radar echo prediction results with high spatiotemporal resolution in a computationally efficient
+  way, and effectively enhance the operational system's forecasting capability for meteorological hazards.
+  Traditional methods perform extrapolation by estimating echo motions between contiguous radar data.
+  This strategy is difficult to characterize complex nonlinear meteorological processes effectively, and
+  it is difficult to benefit from large historical data. Recently, machine learning (ML) models have been
+  used for radar echo extrapolation. These methods have effectively improved extrapolation quality in
+  a data-driven way and from the statistical perspective. Although the ML-based methods show excellent
+  performance, they usually produce blurry extrapolations. This leads to underestimating radar echo intensity
+  and making echo lack small-scale details. Moreover, it makes models difficult to predict severe convective
+  hazards. To solve this problem, a two-stage extrapolation model based on 3-D convolutional neural network
+  and conditional generative adversarial network is proposed. These two models form the “pre-extrapolation”
+  and “postprocessing” paradigm. The pre-extrapolation model is trained in the traditional way and performs
+  rough extrapolation. The postprocessing model uses the pre-extrapolation result as input and is trained
+  with the adversarial strategy. It could correct the echo intensity and increase the echo's details.
+  In the experiment, our model could provide more precise radar echo extrapolations than other methods,
+  especially for intense echoes and convective systems, in the data of North China from 2015 to 2016.
+significance: 4
+cited_by: 39
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

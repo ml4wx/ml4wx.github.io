@@ -1,0 +1,50 @@
+id: arxiv-2004.05793
+title: 'STAS: Adaptive Selecting Spatio-Temporal Deep Features for Improving Bias Correction on Precipitation'
+authors:
+- Yiqun Liu
+- Shouzhen Chen
+- Lei Chen
+- Hai Chu
+- Xiaoyang Xu
+- Junping Zhang
+- Leiming Ma
+date: '2020-04-13'
+year: 2020
+venue_type: preprint
+ids:
+  arxiv: '2004.05793'
+  openalex: W3015762015
+links:
+  paper: https://arxiv.org/abs/2004.05793
+  pdf: https://arxiv.org/pdf/2004.05793
+topic: post-processing
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: STAS, an end-to-end deep model with adaptive spatio-temporal feature selection, corrects ECMWF
+  precipitation forecast bias and beats eight published BCoP methods on threat scores.
+abstract: Numerical Weather Prediction (NWP) can reduce human suffering by predicting disastrous precipitation
+  in time. A commonly-used NWP in the world is the European Centre for medium-range weather forecasts
+  (EC). However, it is necessary to correct EC forecast through Bias Correcting on Precipitation (BCoP)
+  since we still have not fully understood the mechanism of precipitation, making EC often have some biases.
+  The existing BCoPs suffers from limited prior data and the fixed Spatio-Temporal (ST) scale. We thus
+  propose an end-to-end deep-learning BCoP model named Spatio-Temporal feature Auto-Selective (STAS) model
+  to select optimal ST regularity from EC via the ST Feature-selective Mechanisms (SFM/TFM). Given different
+  input features, these two mechanisms can automatically adjust the spatial and temporal scales for correcting.
+  Experiments on an EC public dataset indicate that compared with 8 published BCoP methods, STAS shows
+  state-of-the-art performance on several criteria of BCoP, named threat scores (TS). Further, ablation
+  studies justify that the SFM/TFM indeed work well in boosting the performance of BCoP, especially on
+  the heavy precipitation.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

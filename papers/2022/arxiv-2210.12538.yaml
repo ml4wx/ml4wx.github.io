@@ -1,0 +1,45 @@
+id: arxiv-2210.12538
+title: Compressing multidimensional weather and climate data into neural networks
+authors:
+- Langwen Huang
+- Torsten Hoefler
+date: '2022-10-22'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2210.12538'
+  openalex: W4307311484
+links:
+  paper: https://arxiv.org/abs/2210.12538
+  pdf: https://arxiv.org/pdf/2210.12538
+orgs:
+- eth-zurich
+topic: infra-software
+topics:
+- benchmarks-data-eval
+type: model
+method:
+- other
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Coordinate-based neural networks compress weather and climate grids by 300x to 3000x, beating
+  SZ3 on error, and a 790x compressed WeatherBench loader raises RMSE by under 2%.
+abstract: 'Weather and climate simulations produce petabytes of high-resolution data that are later analyzed
+  by researchers in order to understand climate change or severe weather. We propose a new method of compressing
+  this multidimensional weather and climate data: a coordinate-based neural network is trained to overfit
+  the data, and the resulting parameters are taken as a compact representation of the original grid-based
+  data. While compression ratios range from 300x to more than 3,000x, our method outperforms the state-of-the-art
+  compressor SZ3 in terms of weighted RMSE, MAE. It can faithfully preserve important large scale atmosphere
+  structures and does not introduce artifacts. When using the resulting neural network as a 790x compressed
+  dataloader to train the WeatherBench forecasting model, its RMSE increases by less than 2%. The three
+  orders of magnitude compression democratizes access to high-resolution climate data and enables numerous
+  new research directions.'
+significance: 4
+cited_by: 11
+score: 26
+highlight: false
+added: '2026-10-22'
+source: seed

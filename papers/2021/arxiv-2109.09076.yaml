@@ -1,0 +1,51 @@
+id: arxiv-2109.09076
+title: Towards Representation Learning for Atmospheric Dynamics
+authors:
+- Sebastian Hoffmann
+- Christian Lessig
+date: '2021-09-19'
+year: 2021
+venue: NEURIPS 2021 workshop on Tackling Climate Change with Machine Learning (poster)
+venue_type: journal
+ids:
+  arxiv: '2109.09076'
+  openalex: W3200293619
+links:
+  paper: https://arxiv.org/abs/2109.09076
+  pdf: https://arxiv.org/pdf/2109.09076
+topic: benchmarks-data-eval
+topics:
+- downscaling
+type: model
+method:
+- gan-vae
+- cnn
+data:
+- era5
+status: research
+summary: AtmoDist is a self-supervised learned metric for atmospheric dynamics, trained to predict temporal
+  distance between shuffled wind fields, and it improves GAN super-resolution of vorticity over MSE-based
+  baselines.
+abstract: 'The prediction of future climate scenarios under anthropogenic forcing is critical to understand
+  climate change and to assess the impact of potentially counter-acting technologies. Machine learning
+  and hybrid techniques for this prediction rely on informative metrics that are sensitive to pertinent
+  but often subtle influences. For atmospheric dynamics, a critical part of the climate system, no well
+  established metric exists and visual inspection is currently still often used in practice. However,
+  this "eyeball metric" cannot be used for machine learning where an algorithmic description is required.
+  Motivated by the success of intermediate neural network activations as basis for learned metrics, e.g.
+  in computer vision, we present a novel, self-supervised representation learning approach specifically
+  designed for atmospheric dynamics. Our approach, called AtmoDist, trains a neural network on a simple,
+  auxiliary task: predicting the temporal distance between elements of a randomly shuffled sequence of
+  atmospheric fields (e.g. the components of the wind field from reanalysis or simulation). The task forces
+  the network to learn important intrinsic aspects of the data as activations in its layers and from these
+  hence a discriminative metric can be obtained. We demonstrate this by using AtmoDist to define a metric
+  for GAN-based super resolution of vorticity and divergence. Our upscaled data matches both visually
+  and in terms of its statistics a high resolution reference closely and it significantly outperform the
+  state-of-the-art based on mean squared error. Since AtmoDist is unsupervised, only requires a temporal
+  sequence of fields, and uses a simple auxiliary task, it has the potential to be of utility in a wide
+  range of applications.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

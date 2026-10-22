@@ -1,0 +1,68 @@
+id: arxiv-2407.06100
+title: Leveraging data-driven weather models for improving numerical weather prediction skill through
+  large-scale spectral nudging
+authors:
+- Syed Zahid Husain
+- Leo Separovic
+- Jean-François Caron
+- Rabah Aider
+- Mark Buehner
+- Stéphane Chamberland
+- Ervig Lapalme
+- Ron McTaggart-Cowan
+- Christopher Subich
+- Paul A. Vaillancourt
+- Jing Yang
+- Ayrton Zadra
+date: '2024-07-08'
+year: 2024
+venue: Weather and Forecasting
+venue_type: journal
+ids:
+  arxiv: '2407.06100'
+  doi: 10.1175/waf-d-24-0139.1
+  openalex: W4412526239
+links:
+  paper: https://arxiv.org/abs/2407.06100
+  pdf: https://arxiv.org/pdf/2407.06100
+orgs:
+- eccc
+topic: hybrid-parameterization
+topics:
+- global-medium-range
+type: model
+method:
+- gnn
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: Hybrid NWP-AI system spectrally nudges GEM toward GraphCast large scales, improving prediction
+  skill and tropical cyclone tracks while keeping physically consistent fine scales.
+abstract: Operational meteorological forecasting has long relied on physics-based numerical weather prediction
+  (NWP) models. Recently, this landscape has faced disruption by the advent of data-driven artificial
+  intelligence (AI)-based weather models, which offer tremendous computational performance and competitive
+  forecasting accuracy. However, data-driven models for medium-range forecasting generally suffer from
+  major limitations, including low effective resolution and a narrow range of predicted variables. This
+  study illustrates the relative strengths and weaknesses of these competing paradigms using the physics-based
+  GEM (Global Environmental Multiscale) and the AI-based GraphCast models. Analyses of their respective
+  global predictions in physical and spectral space reveal that GraphCast-predicted large scales outperform
+  GEM, particularly for longer lead times, even though fine scales predicted by GraphCast suffer from
+  excessive smoothing. Building on this insight, a hybrid NWP-AI system is proposed, wherein temperature
+  and horizontal wind components predicted by GEM are spectrally nudged toward GraphCast predictions at
+  large scales, while GEM itself freely generates the fine-scale details critical for local predictability
+  and weather extremes. This hybrid approach is capable of leveraging the strengths of GraphCast to enhance
+  the prediction skill of the GEM model while generating a full suite of physically consistent forecast
+  fields with a full power spectrum. Additionally, trajectories of tropical cyclones are predicted with
+  enhanced accuracy without significant changes in intensity. Work is in progress for operationalization
+  of this hybrid system at the Canadian Meteorological Centre.
+significance: 4
+cited_by: 12
+score: 26
+highlight: false
+added: '2026-10-22'
+source: seed

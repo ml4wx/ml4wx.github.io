@@ -1,0 +1,52 @@
+id: doi-10.1029-2019ms001705
+title: Can Machines Learn to Predict Weather? Using Deep Learning to Predict Gridded 500‐hPa Geopotential
+  Height From Historical Weather Data
+authors:
+- Jonathan A. Weyn
+- Dale R. Durran
+- Rich Caruana
+date: '2019-08-17'
+year: 2019
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2019ms001705
+  openalex: W2963973018
+links:
+  paper: https://doi.org/10.1029/2019ms001705
+orgs:
+- microsoft-research
+- university-of-washington
+topic: global-medium-range
+type: model
+method:
+- cnn
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: CNNs forecast 500-hPa geopotential height up to 14 days, beating persistence and barotropic vorticity
+  model but not the operational NWP model.
+abstract: Abstract We develop elementary weather prediction models using deep convolutional neural networks
+  (CNNs) trained on past weather data to forecast one or two fundamental meteorological fields on a Northern
+  Hemisphere grid with no explicit knowledge about physical processes. At forecast lead times up to 3
+  days, CNNs trained to predict only 500‐hPa geopotential height easily outperform persistence, climatology,
+  and the dynamics‐based barotropic vorticity model, but do not beat an operational full‐physics weather
+  prediction model. These CNNs are capable of forecasting significant changes in the intensity of weather
+  systems, which is notable because this is beyond the capability of the fundamental dynamical equation
+  that relies solely on 500‐hPa data, the barotropic vorticity equation. Modest improvements to the CNN
+  forecasts can be made by adding 700‐ to 300‐hPa thickness to the input data. Our best performing CNN
+  does a good job of capturing the climatology and annual variability of 500‐hPa heights and is capable
+  of forecasting realistic atmospheric states at lead times of 14 days. Although our simple models do
+  not perform better than an operational weather model, machine learning warrants further exploration
+  as a weather forecasting tool; in particular, the potential efficiency of CNNs might make them attractive
+  for ensemble forecasting.
+significance: 5
+cited_by: 346
+score: 65
+highlight: false
+added: '2026-10-22'
+source: seed

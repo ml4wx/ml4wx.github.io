@@ -1,0 +1,52 @@
+id: doi-10.1029-2021ea001908
+title: Non‐Gaussian Detection Using Machine Learning With Data Assimilation Applications
+authors:
+- Michael Goodliff
+- Steven J. Fletcher
+- Anton J. Kliewer
+- Andrew S. Jones
+- John M. Forsythe
+date: '2022-03-25'
+year: 2022
+venue: Earth and Space Science
+venue_type: journal
+ids:
+  doi: 10.1029/2021ea001908
+  openalex: W3114575811
+links:
+  paper: https://doi.org/10.1029/2021ea001908
+orgs:
+- noaa
+- colorado-state-university
+topic: data-assimilation
+type: model
+method:
+- classical-ml
+data:
+- other
+status: research
+summary: SVM detects shifts in the Lorenz-63 variable distribution to switch between Gaussian and mixed
+  Gaussian-lognormal 3DVar, reducing analysis error.
+abstract: Abstract In most data assimilation and numerical weather prediction systems, the Gaussian assumption
+  is prevalent for the behavior of the random variables/errors that are involved. At the Cooperative Institute
+  for Research in the Atmosphere theory has been developed for different forms of variational data assimilation
+  schemes that enables the Gaussian assumption to be relaxed. For certain variable types, a lognormally
+  distributed random variable can be combined in a mixed Gaussian‐lognormal distribution to better capture
+  the interactions of the errors of different distributions. However, assuming that a distribution can
+  change in time, then developing techniques to know when to switch between different versions of the
+  data assimilation schemes becomes very important. By dynamically changing the formulation of the data
+  assimilation system we are able to assimilate observations in a way that reflects the flow‐dependent
+  variability of their distribution. In this paper, we present results with a machine learning technique
+  (the support vector machine) to switch between data assimilation methods based on the detection of a
+  change in the Lorenz 1963 model's z component's probability distribution. Given the machine learning
+  technique's detection/prediction of a change in the distribution, then either a Gaussian or a mixed
+  Gaussian‐lognormal 3DVar based cost function is used to minimize the errors in this period of time.
+  It is shown that switching from a Gaussian 3DVar to a lognormal 3DVar at lognormally distributed parts
+  of the attractor improves the data assimilation analysis error compared to using one distribution type
+  for the entire attractor.
+significance: 3
+cited_by: 14
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

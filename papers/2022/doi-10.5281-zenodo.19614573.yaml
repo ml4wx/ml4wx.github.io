@@ -1,0 +1,66 @@
+id: doi-10.5281-zenodo.19614573
+title: AI-Based Climate Change Forecasting Models
+authors:
+- Noah Ivanov
+- Daniel Dubois
+- Erik Ivanov
+date: '2022-06-11'
+year: 2022
+venue: Bio-QI Journal
+venue_type: journal
+ids:
+  doi: 10.5281/zenodo.19614573
+  openalex: W7203708720
+links:
+  paper: https://doi.org/10.5281/zenodo.19614573
+  pdf: https://stanfordgroup.org/index.php/BioQI/article/download/817/730
+topic: benchmarks-data-eval
+topics:
+- s2s-seasonal
+- downscaling
+type: evaluation
+method:
+- cnn
+- gnn
+- neural-operator
+- transformer
+- physics-constrained
+- classical-ml
+timescale:
+- seasonal
+spatial:
+- global
+- regional
+data:
+- era5
+- cmip
+- other
+status: research
+summary: Compares six AI approaches across four climate tasks, claiming hybrid physics-ML best at 6-month
+  temperature RMSE; claims are unverified and methodology thin.
+abstract: 'Climate change forecasting demands models that capture complex nonlinear interactions across
+  atmospheric, oceanic,and terrestrial systems at spatial and temporal scales ranging from regional weather
+  patterns to century-scale globaltrends. Physics-based general circulation models (GCMs) remain the gold
+  standard for climate projection but arecomputationally expensive and struggle with sub-grid-scale processes
+  that must be parameterised rather than resolved.This study evaluates six AI-based approaches -- convolutional
+  LSTMs, graph neural networks on climate grids, Fourierneural operators (FNO), vision transformers applied
+  to reanalysis fields, hybrid physics-ML models (ML-correctedGCMs), and ensemble gradient-boosted models
+  for regional downscaling -- across four climate forecasting tasks: globaltemperature anomaly prediction
+  (ERA5, 1979-2021, 1-12 month horizons), regional precipitation forecasting (E-OBSEuropean gridded data,
+  seasonal), extreme event detection (tropical cyclone genesis from ERA5 fields), and statisticaldownscaling
+  (CMIP6 coarse-resolution to 0.1-degree regional fields). A total of 2,160 experiments were conducted
+  usingstandardised train-validation-test splits respecting temporal ordering. The hybrid physics-ML model
+  achieved the lowesttemperature RMSE at 6-month horizon (0.24 +- 0.03 K vs. 0.38 +- 0.04 K for the persistence
+  baseline and 0.32 +- 0.04 Kfor the pure ML ConvLSTM), confirming that physics-informed architectures
+  outperform pure data-driven approaches onclimate time scales. The FNO achieved the best spatial pattern
+  reconstruction (SSIM = 0.92 +- 0.02 for globaltemperature fields) at 1,000x lower computational cost
+  than equivalent GCM resolution. For extreme events, the visiontransformer achieved the highest tropical
+  cyclone genesis detection AUC (0.924 +- 0.008) by capturing large-scaleatmospheric patterns across hemispheric
+  fields. Gradient-boosted downscaling achieved the smallest regionalprecipitation bias (2.4 +- 0.8 mm/month)
+  at 50x lower cost than dynamical downscaling. A practical model selectionframework mapping forecast
+  horizon, spatial resolution requirements, and computational budget to recommended AIapproaches is proposed.'
+significance: 1
+score: 4
+highlight: false
+added: '2026-10-22'
+source: backfill

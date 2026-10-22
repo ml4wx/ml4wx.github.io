@@ -1,0 +1,60 @@
+id: doi-10.1109-jstars.2023.3321963
+title: SpatioTemporal Inference Network for Precipitation Nowcasting With Multimodal Fusion
+authors:
+- Qizhao Jin
+- Xinbang Zhang
+- Xinyu Xiao
+- Ying Wang
+- Gaofeng Meng
+- Shiming Xiang
+- Chunhong Pan
+date: '2023-10-13'
+year: 2023
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2023.3321963
+  openalex: W4387623850
+links:
+  paper: https://doi.org/10.1109/jstars.2023.3321963
+  pdf: https://ieeexplore.ieee.org/ielx7/4609443/4609444/10285341.pdf
+topic: nowcasting
+type: model
+method:
+- cnn
+- rnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- other
+status: research
+summary: STIN uses spatiotemporally-aware convolutions to fuse temperature, humidity and wind with precipitation
+  for nowcasting, improving on shared-kernel baselines.
+abstract: Precipitation plays a significant role in global water and energy cycles, largely affecting
+  many aspects of human life, such as transportation and agriculture. Recently, meteorologists have tried
+  to predict precipitation with deep learning methods by learning from much historical meteorological
+  data. Under this paradigm, the task of precipitation nowcasting is formulated as a spatiotemporal sequence
+  forecasting problem. However, current studies suffer from two inherent drawbacks of the definition of
+  the problem. First, considering that the weather patterns vary in spatial and temporal dimensions, a
+  spatiotemporally shared kernel is not optimal for capturing features across different regions and seasons.
+  Second, these methods isolate the precipitation from other meteorological elements, such as temperature,
+  humidity, and wind. The disability of cross-model learning prevents the possibility of the promotion
+  of precipitation prediction. Therefore, this paper proposes a SpatioTemporal Inference Network (STIN)
+  to produce precipitation prediction from multi-modal meteorological data with spatiotemporal specific
+  filters. Specifically, we first design a Spatiotemporal-Aware Convolutional layer (STAConv), in which
+  kernels are generated conditioned on the incoming spatiotemporally features vector. Replacing normal
+  convolution with STAConv enables the extraction of spatiotemporal specific information from the meteorological
+  data. Based on the STAConv, the Spatiotemporal-Aware Convolutional Neural Network (STACNN) is further
+  proposed, fusing the multi-modal information, including temperature, humidity, and wind. Then, an encoder-decoder
+  framework composed of RNN layers is built to extract representative temporal dynamics from multi-modal
+  information. To investigate the practicality of the proposed method, we employ STIN to predict the following
+  precipitation intensity. Extensive experiments on three meteorological datasets demonstrate the effectiveness
+  of our model on precipitation nowcasting.
+significance: 3
+cited_by: 26
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

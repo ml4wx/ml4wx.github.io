@@ -1,0 +1,56 @@
+id: doi-10.3390-atmos14030600
+title: Improvement of Maximum Air Temperature Forecasts Using a Stacking Ensemble Technique
+authors:
+- Linna Zhao
+- Shu Xian Lu
+- Dan Qi
+date: '2023-03-21'
+year: 2023
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos14030600
+  openalex: W4353066294
+links:
+  paper: https://doi.org/10.3390/atmos14030600
+  pdf: https://www.mdpi.com/2073-4433/14/3/600/pdf?version=1679480326
+orgs:
+- cma
+topic: post-processing
+topics:
+- local-forecasting
+type: model
+method:
+- transformer
+- rnn
+- cnn
+- classical-ml
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Stacking ensemble of neural networks corrects ECMWF-IFS maximum temperature forecasts at about
+  2400 stations, cutting RMSE by 52% versus IFS.
+abstract: Due to the influence of complex factors such as atmospheric dynamic processes, physical processes
+  and local topography and geomorphology, the prediction of near-surface meteorological elements in the
+  numerical weather model often has deviation. The deep learning neural networks are more flexible but
+  with high variance. Here, we proposed a stacking ensemble model named FLT, which consists of a fully
+  connected neural network with embedded layers (ED-FCNN), a long short-term memory (LSTM) network and
+  a temporal convolutional network (TCN) to overcome the high variance of a single neural network and
+  to improve prediction of maximum air temperature. The case study of daily maximum temperature forecast
+  evaluated with observation of almost 2400 weather stations shows substantial improvement over that of
+  single neural network model, ECMWF-IFS and statistical post-processing model. The FLT model can more
+  effectively improve the forecast bias of the ECMWF-IFS model than that of any of the above single neural
+  network model, with the RMSE reduced by 52.36% and the accuracy of temperature forecast increased by
+  43.12% compared with the ECMWF-IFS model. The average RMSEs of the FLT model decreases by 8.39%, 1.50%,
+  2.96% and 16.03%, respectively, compared with ED-FCNN, LSTM, TCN and the decaying average method.
+significance: 3
+cited_by: 9
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

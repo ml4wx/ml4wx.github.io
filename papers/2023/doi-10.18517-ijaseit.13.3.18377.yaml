@@ -1,0 +1,51 @@
+id: doi-10.18517-ijaseit.13.3.18377
+title: GRU and XGBoost Performance with Hyperparameter Tuning Using GridSearchCV and Bayesian Optimization
+  on an IoT-Based Weather Prediction System
+authors:
+- Hendri Darmawan
+- Mike Yuliana
+- Moch. Zen Samsono Hadi
+date: '2023-06-07'
+year: 2023
+venue: International Journal on Advanced Science Engineering and Information Technology
+venue_type: journal
+ids:
+  doi: 10.18517/ijaseit.13.3.18377
+  openalex: W4382700644
+links:
+  paper: https://doi.org/10.18517/ijaseit.13.3.18377
+  pdf: http://www.insightsociety.org/ojaseit/index.php/ijaseit/article/download/18377/3734
+topic: local-forecasting
+type: model
+method:
+- rnn
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: pre-operational
+summary: GRU and XGBoost, tuned and deployed on an IoT weather station, forecast local sensor readings
+  and four-day rain; XGBoost wins regression, GRU wins classification.
+abstract: Weather is essential to human life, but it is difficult to forecast due to its diverse nature.
+  We evaluated and compared the accuracy of two machine learning algorithms, GRU and XGBoost, in predicting
+  weather patterns. We used GridSearchCV to tune the hyperparameters for the GRU algorithm and Bayesian
+  optimization for the XGBoost algorithm. We used regression to predict weather sensor data and classification
+  to predict rainfall in the following four days. We then deployed the best-performing model to the cloud
+  server and connected it to the local IoT device with weather sensors in Sedati, Sidoarjo Regency, Indonesia.
+  We conducted tests using data from the BMKG Juanda Sidoarjo and data from the local IoT device. The
+  findings indicated that the XGBoost regression model outperformed the GRU model in the first stage,
+  with an average RMSE of 1.2728125. In comparison, the average RMSE for GRU regression was 1.551666667.
+  In the second stage, however, GRU regression performed better, with an average RMSE of 2.23, while the
+  XGBoost regression had 2.28. In the classification tests, the GRU model had a higher F1 score of 0.88
+  in the first stage, while the XGBoost classification was 0.86. Both models had the same accuracy of
+  0.75 when tested with IoT data. However, the GRU classification model was better since it considered
+  the context of the prediction, resulting in a lower likelihood of rain when it was not raining.
+significance: 2
+cited_by: 37
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

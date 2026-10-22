@@ -1,0 +1,57 @@
+id: arxiv-2005.08748
+title: Deep Learning for Post-Processing Ensemble Weather Forecasts
+authors:
+- Peter Grönquist
+- Chengyuan Yao
+- Tal Ben-Nun
+- Nikoli Dryden
+- Peter Dueben
+- Shigang Li
+- Torsten Hoefler
+date: '2020-05-18'
+year: 2020
+venue: 'Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences'
+venue_type: journal
+ids:
+  arxiv: '2005.08748'
+  doi: 10.1098/rsta.2020.0092
+  openalex: W3025325835
+links:
+  paper: https://arxiv.org/abs/2005.08748
+  pdf: https://arxiv.org/pdf/2005.08748
+orgs:
+- ecmwf
+- eth-zurich
+topic: post-processing
+type: model
+method:
+- classical-ml
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: A deep neural network post-processes a subset of ensemble trajectories, improving CRPS by over
+  14% and allowing fewer members to match the full ensemble.
+abstract: Quantifying uncertainty in weather forecasts is critical, especially for predicting extreme
+  weather events. This is typically accomplished with ensemble prediction systems, which consist of many
+  perturbed numerical weather simulations, or trajectories, run in parallel. These systems are associated
+  with a high computational cost and often involve statistical post-processing steps to inexpensively
+  improve their raw prediction qualities. We propose a mixed model that uses only a subset of the original
+  weather trajectories combined with a post-processing step using deep neural networks. These enable the
+  model to account for non-linear relationships that are not captured by current numerical models or post-processing
+  methods. Applied to global data, our mixed models achieve a relative improvement in ensemble forecast
+  skill (CRPS) of over 14%. Furthermore, we demonstrate that the improvement is larger for extreme weather
+  events on select case studies. We also show that our post-processing can use fewer trajectories to achieve
+  comparable results to the full ensemble. By using fewer trajectories, the computational costs of an
+  ensemble prediction system can be reduced, allowing it to run at higher resolution and produce more
+  accurate forecasts.
+significance: 5
+cited_by: 201
+score: 65
+highlight: false
+added: '2026-10-22'
+source: seed

@@ -1,0 +1,54 @@
+id: doi-10.3390-s22072802
+title: Deep Tower Networks for Efficient Temperature Forecasting from Multiple Data Sources
+authors:
+- Siri Sofie Eide
+- Michael Alexander Riegler
+- Hugo L. Hammer
+- John Bjørnar Bremnes
+date: '2022-04-06'
+year: 2022
+venue: Sensors
+venue_type: journal
+ids:
+  doi: 10.3390/s22072802
+  openalex: W4223456833
+links:
+  paper: https://doi.org/10.3390/s22072802
+  pdf: https://www.mdpi.com/1424-8220/22/7/2802/pdf?version=1649231788
+orgs:
+- met-norway
+topic: local-forecasting
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+- nwp-analysis
+status: research
+summary: A tower network fusing multiple data streams gives 11% lower temperature forecast RMSE than yr.no,
+  beating CNN and convLSTM baselines.
+abstract: Many data related problems involve handling multiple data streams of different types at the
+  same time. These problems are both complex and challenging, and researchers often end up using only
+  one modality or combining them via a late fusion based approach. To tackle this challenge, we develop
+  and investigate the usefulness of a novel deep learning method called tower networks. This method is
+  able to learn from multiple input data sources at once. We apply the tower network to the problem of
+  short-term temperature forecasting. First, we compare our method to a number of meteorological baselines
+  and simple statistical approaches. Further, we compare the tower network with two core network architectures
+  that are often used, namely the convolutional neural network (CNN) and convolutional long short-term
+  memory (convLSTM). The methods are compared for the task of weather forecasting performance, and the
+  deep learning methods are also compared in terms of memory usage and training time. The tower network
+  performs well in comparison both with the meteorological baselines, and with the other core architectures.
+  Compared with the state-of-the-art operational Norwegian weather forecasting service, yr.no, the tower
+  network has an overall 11% smaller root mean squared forecasting error. For the core architectures,
+  the tower network documents competitive performance and proofs to be more robust compared to CNN and
+  convLSTM models.
+significance: 3
+cited_by: 4
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

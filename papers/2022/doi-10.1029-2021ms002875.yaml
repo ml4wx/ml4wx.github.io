@@ -1,0 +1,49 @@
+id: doi-10.1029-2021ms002875
+title: Exploring Pathways to More Accurate Machine Learning Emulation of Atmospheric Radiative Transfer
+authors:
+- Peter Ukkonen
+date: '2022-03-06'
+year: 2022
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2021ms002875
+  openalex: W4220813674
+links:
+  paper: https://doi.org/10.1029/2021ms002875
+topic: hybrid-parameterization
+topics:
+- benchmarks-data-eval
+type: model
+method:
+- rnn
+- classical-ml
+spatial:
+- global
+data:
+- other
+status: research
+summary: A bidirectional RNN emulates shortwave radiation with fewer parameters than feed-forward nets,
+  achieving under 1% flux error and a 4-fold CPU speedup.
+abstract: Abstract Machine learning (ML) parameterizations of subgrid physics is a growing research area.
+  A key question is whether traditional ML methods such as feed‐forward neural networks (FNNs) are better
+  suited for representing only specific processes. Radiation schemes are an interesting example, because
+  they compute radiative flows through the atmosphere using well‐established physical equations. The sequential
+  aspect of the problem implies that FNNs may not be well‐suited for it. This study explores whether emulating
+  the entire radiation scheme is more difficult than its components without vertical dependencies. FNNs
+  were trained to replace a shortwave radiation scheme, its gas optics component, and its reflectance‐transmittance
+  computations. In addition, a novel recurrent NN (RNN) method was developed to structurally incorporate
+  the vertical dependence and sequential nature of radiation computations. It is found that a bidirectional
+  RNN with an order of magnitude fewer model parameters than FNN is considerably more accurate, while
+  offering a smaller but still significant 4‐fold speedup over the original code on CPUs, and a larger
+  speedup on GPUs. The RNN predicts fluxes with less than 1% error, and heating rates computed from fluxes
+  have a root‐mean‐square‐error of 0.16 K day −1 in offline tests using a year of global data. Finally,
+  FNNs emulating gas optics are very accurate while being several times faster. As with RNNs emulating
+  radiative transfer, the smaller dimensionality may be crucial for developing models that are general
+  enough to be used as parameterizations.
+significance: 4
+cited_by: 72
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

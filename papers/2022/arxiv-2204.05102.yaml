@@ -1,0 +1,48 @@
+id: arxiv-2204.05102
+title: Convolutional autoencoders for spatially-informed ensemble post-processing
+authors:
+- Sebastian Lerch
+- Kai L. Polsterer
+date: '2022-04-08'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2204.05102'
+  openalex: W4223533121
+links:
+  paper: https://arxiv.org/abs/2204.05102
+  pdf: https://arxiv.org/pdf/2204.05102
+orgs:
+- kit
+topic: post-processing
+topics:
+- downscaling
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- regional
+- local
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Convolutional autoencoders compress spatial NWP fields into features that augment station-based
+  neural post-processing of 2 m temperature ensemble forecasts over Germany.
+abstract: Ensemble weather predictions typically show systematic errors that have to be corrected via
+  post-processing. Even state-of-the-art post-processing methods based on neural networks often solely
+  rely on location-specific predictors that require an interpolation of the physical weather model's spatial
+  forecast fields to the target locations. However, potentially useful predictability information contained
+  in large-scale spatial structures within the input fields is potentially lost in this interpolation
+  step. Therefore, we propose the use of convolutional autoencoders to learn compact representations of
+  spatial input fields which can then be used to augment location-specific information as additional inputs
+  to post-processing models. The benefits of including this spatial information is demonstrated in a case
+  study of 2-m temperature forecasts at surface stations in Germany.
+significance: 4
+cited_by: 5
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,57 @@
+id: doi-10.1002-asl.1100
+title: Hourly rolling correction of precipitation forecast via convolutional and long short‐term memory
+  networks
+authors:
+- Ruyi Yang
+- Jianli Mu
+- Shudong Wang
+- Lijuan Wang
+date: '2022-05-11'
+year: 2022
+venue: Atmospheric Science Letters
+venue_type: journal
+ids:
+  doi: 10.1002/asl.1100
+  openalex: W4280539749
+links:
+  paper: https://doi.org/10.1002/asl.1100
+orgs:
+- cma
+topic: post-processing
+topics:
+- nowcasting
+type: model
+method:
+- cnn
+- rnn
+timescale:
+- nowcast
+- short
+spatial:
+- regional
+data:
+- satellite
+- nwp-analysis
+- stations
+status: research
+summary: A CNN-LSTM predicts cloud-cluster evolution from geostationary IR imagery to rolling-correct
+  1-6 h GRAPES_Meso precipitation forecasts over China, improving rain/no-rain scores.
+abstract: Abstract In order to improve precipitation forecast from GRAPES_Meso V4.0 in China, we propose
+  a 1–6‐h rolling correction solution, based on infrared (IR) channels from geostationary meteorological
+  satellite and surface observation data. In particular, we design a deep learning extrapolation model
+  to predict the evolution of cloud clusters based on convolutional neural networks and long short‐term
+  memory networks. The predicted cloud clusters, together with the relationship between the rainfall area
+  and the cloud position, are applied to correct the 1–6‐h precipitation forecast. We conduct comprehensive
+  experiments to evaluate the proposed solution over China. Experimental results show that the deep learning
+  model can successfully capture spatial characteristics and temporal variations between the sequences,
+  and achieve reliable predictions of cloud clusters. The analysis further indicates that the rolling
+  correction solution via the predicted cloud clusters has improved the precipitation forecast in China.
+  The distribution of corrected precipitation forecast is more consistent with the observed precipitation
+  compared to GRAPES_Meso forecast. In particular, the rolling correction model could enhance the forecast
+  on “rain/no‐rain” events, light rain, and moderate rain according to TS, ETS, BIAS, and FAR metrics.
+significance: 3
+cited_by: 2
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,50 @@
+id: arxiv-2309.04452
+title: Postprocessing of Ensemble Weather Forecasts Using Permutation-invariant Neural Networks
+authors:
+- Kevin Höhlein
+- Benedikt Schulz
+- Rüdiger Westermann
+- Sebastian Lerch
+date: '2023-09-08'
+year: 2023
+venue: Artificial Intelligence for the Earth Systems, 2023
+venue_type: journal
+ids:
+  arxiv: '2309.04452'
+  doi: 10.1175/aies-d-23-0070.1
+links:
+  paper: https://arxiv.org/abs/2309.04452
+  pdf: https://arxiv.org/pdf/2309.04452
+topic: post-processing
+type: model
+method:
+- classical-ml
+timescale:
+- medium
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Permutation-invariant neural networks postprocess raw ensemble forecasts as unordered member
+  sets, achieving state-of-the-art calibrated distributions for surface temperature and wind gusts.
+abstract: Statistical postprocessing is used to translate ensembles of raw numerical weather forecasts
+  into reliable probabilistic forecast distributions. In this study, we examine the use of permutation-invariant
+  neural networks for this task. In contrast to previous approaches, which often operate on ensemble summary
+  statistics and dismiss details of the ensemble distribution, we propose networks that treat forecast
+  ensembles as a set of unordered member forecasts and learn link functions that are by design invariant
+  to permutations of the member ordering. We evaluate the quality of the obtained forecast distributions
+  in terms of calibration and sharpness and compare the models against classical and neural network-based
+  benchmark methods. In case studies addressing the postprocessing of surface temperature and wind gust
+  forecasts, we demonstrate state-of-the-art prediction quality. To deepen the understanding of the learned
+  inference process, we further propose a permutation-based importance analysis for ensemble-valued predictors,
+  which highlights specific aspects of the ensemble forecast that are considered important by the trained
+  postprocessing models. Our results suggest that most of the relevant information is contained in a few
+  ensemble-internal degrees of freedom, which may impact the design of future ensemble forecasting and
+  postprocessing systems.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

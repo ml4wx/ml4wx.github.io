@@ -1,0 +1,51 @@
+id: arxiv-2008.13524
+title: Physics-inspired adaptions to low-parameter neural network weather forecasts systems
+authors:
+- Sebastian Scher
+- Gabriele Messori
+date: '2020-08-31'
+year: 2020
+venue_type: preprint
+ids:
+  arxiv: '2008.13524'
+  openalex: W3082110642
+links:
+  paper: https://arxiv.org/abs/2008.13524
+  pdf: https://arxiv.org/pdf/2008.13524
+topic: global-medium-range
+topics:
+- hybrid-parameterization
+type: model
+method:
+- cnn
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Spherenet convolution and hemisphere-specific network design improve WeatherBench CNN forecasts
+  at 1.4 degrees for 500 hPa height and 850 hPa temperature up to day 10.
+abstract: Recently, there has been a surge of research on data-driven weather forecasting systems, especially
+  applications based on convolutional neural networks (CNNs). These are usually trained on atmospheric
+  data represented on regular latitude-longitude grids, neglecting the curvature of the Earth. We assess
+  the benefit of replacing the standard convolution operations with an adapted convolution operation which
+  takes into account the geometry of the underlying data (Spherenet convolution), specifically near the
+  poles. Additionally, we assess the effect of including the information that the two hemispheres of the
+  Earth have "flipped" properties - for example cyclones circulating in opposite directions - into the
+  structure of the network. Both approaches are examples of physics-informed machine learning. The methods
+  are tested on the WeatherBench dataset, at a resolution of $\sim1.4^{\circ}$ which is higher than many
+  previous studies on CNNs for weather forecasting. For most lead times up to day +10 for 500 hPa geopotential
+  and 850 hPa temperature, we find that using Spherenet convolution or including hemisphere-specific information
+  individually lead to improvement in forecast skill. Combining the two methods typically gives the highest
+  forecast skill. Our version of Spherenet is implemented flexibly and scales well to high resolution
+  datasets, but is still significantly more expensive than a standard convolution operation. Finally,
+  we analyze cases with high forecast error. These occur mainly in winter, and are relatively consistent
+  across different training realizations of the networks, pointing to flow-dependent atmospheric predictability.
+significance: 3
+cited_by: 5
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

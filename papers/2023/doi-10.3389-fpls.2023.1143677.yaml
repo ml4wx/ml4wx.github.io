@@ -1,0 +1,45 @@
+id: doi-10.3389-fpls.2023.1143677
+title: A novel pyramid temporal causal network for weather prediction
+authors:
+- Minglei Yuan
+date: '2023-03-31'
+year: 2023
+venue: Frontiers in Plant Science
+venue_type: journal
+ids:
+  doi: 10.3389/fpls.2023.1143677
+  openalex: W4362519233
+links:
+  paper: https://doi.org/10.3389/fpls.2023.1143677
+  pdf: https://www.frontiersin.org/articles/10.3389/fpls.2023.1143677/pdf
+topic: local-forecasting
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: PTCN uses multi-scale causal dilated convolutions and a new MVLoss to improve prediction of small-variance
+  weather variables on WFD2018.
+abstract: In the field of deep learning, sequence prediction methods have been proposed to address the
+  weather prediction issue by using discrete weather data over a period of time to predict future weather.
+  However, extracting and utilizing feature information of different time scales from historical meteorological
+  data for weather prediction remains a challenge. In this paper, we propose a novel model called the
+  Pyramid Temporal Causal Network (PTCN), which consists of a stack of multiple causal dilated blocks
+  that can utilize multi-scale temporal features. By collecting features from all the causal dilated blocks,
+  PTCN can utilize feature information of different time scales. We evaluate PTCN on the Weather Forecasting
+  Dataset 2018 (WFD2018) and show that it benefits from multi-scale features. Additionally, we propose
+  a multivariate loss function (MVLoss) for multivariate prediction. The MVLoss is able to accurately
+  fit small variance variables, unlike the mean square error (MSE) loss function. Experiments on multiple
+  prediction tasks demonstrate that the proposed MVLoss not only significantly improves the prediction
+  accuracy of small variance variables, but also improves the average prediction accuracy of the model.
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

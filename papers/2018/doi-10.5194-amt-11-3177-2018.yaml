@@ -1,0 +1,54 @@
+id: doi-10.5194-amt-11-3177-2018
+title: Neural network cloud top pressure and height for MODIS
+authors:
+- Nina Håkansson
+- Claudia Adok
+- Anke Thoss
+- Ronald Scheirer
+- Sara Hörnquist
+date: '2018-06-01'
+year: 2018
+venue: Atmospheric measurement techniques
+venue_type: journal
+ids:
+  doi: 10.5194/amt-11-3177-2018
+  openalex: W2787809105
+links:
+  paper: https://doi.org/10.5194/amt-11-3177-2018
+  pdf: https://amt.copernicus.org/articles/11/3177/2018/amt-11-3177-2018.pdf
+topic: observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- global
+data:
+- satellite
+status: research
+summary: Neural networks retrieve MODIS cloud-top height using CALIOP training labels, cutting mean absolute
+  error by at least 33% against operational algorithms.
+abstract: 'Abstract. Cloud top height retrieval from imager instruments is important for Nowcasting and
+  for satellite climate data records. A neural network approach for cloud top height retrieval from the
+  imager instrument MODIS is presented. The neural networks are trained using cloud top layer pressure
+  data from the CALIOP dataset. Results are compared with two operational reference algorithms for cloud
+  top height: the MODIS Collection 6 level 2 height product and the cloud top temperature and height algorithm
+  (CTTH) in the 2014 version of the NWCSAF Polar Platform System (PPS-v2014). All three techniques are
+  evaluated using both CALIOP and CPR (CloudSat) height. Instruments like AVHRR and VIIRS contain fewer
+  channels useful for cloud top height retrievals than MODIS, therefore several different neural networks
+  are investigated to test how infrared channel selection influences retrieval performance. Also a network
+  with only channels available for the AVHRR1 instrument is trained and evaluated. To examine the contribution
+  of different variables, networks with fewer variables are trained. It is shown that variables containing
+  imager information for neighbouring pixels are very important. Overall results for the neural network
+  height retrievals are very promising. The neural networks using the brightness temperatures at 11 μm
+  and 12 μm show at least 33 % (or 627 m) lower mean absolute error (MAE) compared to the two operational
+  reference algorithms when validating with CALIOP height. Validation with CPR (CloudSat) height gives
+  at least 25 % (or 433 m) reduction of MAE. For the network trained with a channel combination available
+  for AVHRR1, the MAE is at least 542 m better when validated with CALIOP and 414 m when validated with
+  CPR (CloudSat) compared to the two operational reference algorithms. The NWCSAF PPS-2018 release will
+  contain a neural network based cloud height algorithm.'
+significance: 3
+cited_by: 79
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

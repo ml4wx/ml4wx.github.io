@@ -1,0 +1,42 @@
+id: arxiv-2104.08281
+title: Controlled abstention neural networks for identifying skillful predictions for classification problems
+authors:
+- Elizabeth A. Barnes
+- Randal J. Barnes
+date: '2021-04-16'
+year: 2021
+venue_type: preprint
+ids:
+  arxiv: '2104.08281'
+  doi: 10.1029/2021ms002573
+links:
+  paper: https://arxiv.org/abs/2104.08281
+  pdf: https://arxiv.org/pdf/2104.08281
+topic: xai-uq-physics
+type: model
+method:
+- other
+data:
+- other
+status: research
+summary: The NotWrong loss adds an abstention class so classifiers learn from confident samples, outperforming
+  existing losses on several climate prediction tasks.
+abstract: 'The earth system is exceedingly complex and often chaotic in nature, making prediction incredibly
+  challenging: we cannot expect to make perfect predictions all of the time. Instead, we look for specific
+  states of the system that lead to more predictable behavior than others, often termed "forecasts of
+  opportunity." When these opportunities are not present, scientists need prediction systems that are
+  capable of saying "I don''t know." We introduce a novel loss function, termed the "NotWrong loss", that
+  allows neural networks to identify forecasts of opportunity for classification problems. The NotWrong
+  loss introduces an abstention class that allows the network to identify the more confident samples and
+  abstain (say "I don''t know") on the less confident samples. The abstention loss is designed to abstain
+  on a user-defined fraction of the samples via a PID controller. Unlike many machine learning methods
+  used to reject samples post-training, the NotWrong loss is applied during training to preferentially
+  learn from the more confident samples. We show that the NotWrong loss outperforms other existing loss
+  functions for multiple climate use cases. The implementation of the proposed loss function is straightforward
+  in most network architectures designed for classification as it only requires the addition of an abstention
+  class to the output layer and modification of the loss function.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

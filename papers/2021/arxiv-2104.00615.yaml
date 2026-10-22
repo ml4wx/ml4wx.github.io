@@ -1,0 +1,42 @@
+id: arxiv-2104.00615
+title: Physics-informed neural networks for the shallow-water equations on the sphere
+authors:
+- Alex Bihlo
+- Roman O. Popovych
+date: '2021-04-01'
+year: 2021
+venue: J. Comp. Phys. 456 (2022), 111024
+venue_type: journal
+ids:
+  arxiv: '2104.00615'
+  doi: 10.1016/j.jcp.2022.111024
+links:
+  paper: https://arxiv.org/abs/2104.00615
+  pdf: https://arxiv.org/pdf/2104.00615
+topic: global-medium-range
+type: model
+method:
+- physics-constrained
+spatial:
+- global
+data:
+- other
+status: research
+summary: Physics-informed neural networks solve shallow-water equations on the sphere using a sequence
+  of time-window networks and a boundary-encoding layer, tested on Williamson cases.
+abstract: We propose the use of physics-informed neural networks for solving the shallow-water equations
+  on the sphere in the meteorological context. Physics-informed neural networks are trained to satisfy
+  the differential equations along with the prescribed initial and boundary data, and thus can be seen
+  as an alternative approach to solving differential equations compared to traditional numerical approaches
+  such as finite difference, finite volume or spectral methods. We discuss the training difficulties of
+  physics-informed neural networks for the shallow-water equations on the sphere and propose a simple
+  multi-model approach to tackle test cases of comparatively long time intervals. Here we train a sequence
+  of neural networks instead of a single neural network for the entire integration interval. We also avoid
+  the use of a boundary value loss by encoding the boundary conditions in a custom neural network layer.
+  We illustrate the abilities of the method by solving the most prominent test cases proposed by Williamson
+  et al. [J. Comput. Phys. 102 (1992), 211-224].
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,54 @@
+id: arxiv-2212.08376
+title: 'Easy Uncertainty Quantification (EasyUQ): Generating Predictive Distributions from Single-valued
+  Model Output'
+authors:
+- Eva‐Maria Walz
+- Alexander Henzi
+- Johanna F. Ziegel
+- Tilmann Gneiting
+date: '2022-12-16'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2212.08376'
+  openalex: W4311993027
+links:
+  paper: http://arxiv.org/abs/2212.08376
+  pdf: https://arxiv.org/pdf/2212.08376
+orgs:
+- eth-zurich
+- kit
+topic: post-processing
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- classical-ml
+data:
+- nwp-analysis
+status: research
+summary: EasyUQ converts single-valued model output into calibrated predictive distributions via isotonic
+  regression, with a smooth variant and weather forecast examples; the method is general across models.
+abstract: How can we quantify uncertainty if our favorite computational tool - be it a numerical, a statistical,
+  or a machine learning approach, or just any computer model - provides single-valued output only? In
+  this article, we introduce the Easy Uncertainty Quantification (EasyUQ) technique, which transforms
+  real-valued model output into calibrated statistical distributions, based solely on training data of
+  model output-outcome pairs, without any need to access model input. In its basic form, EasyUQ is a special
+  case of the recently introduced Isotonic Distributional Regression (IDR) technique that leverages the
+  pool-adjacent-violators algorithm for nonparametric isotonic regression. EasyUQ yields discrete predictive
+  distributions that are calibrated and optimal in finite samples, subject to stochastic monotonicity.
+  The workflow is fully automated, without any need for tuning. The Smooth EasyUQ approach supplements
+  IDR with kernel smoothing, to yield continuous predictive distributions that preserve key properties
+  of the basic form, including both, stochastic monotonicity with respect to the original model output,
+  and asymptotic consistency. For the selection of kernel parameters, we introduce multiple one-fit grid
+  search, a computationally much less demanding approximation to leave-one-out cross-validation. We use
+  simulation examples and forecast data from weather prediction to illustrate the techniques. In a study
+  of benchmark problems from machine learning, we show how EasyUQ and Smooth EasyUQ can be integrated
+  into the workflow of neural network learning and hyperparameter tuning, and find EasyUQ to be competitive
+  with conformal prediction, as well as more elaborate input-based approaches.
+significance: 3
+cited_by: 2
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

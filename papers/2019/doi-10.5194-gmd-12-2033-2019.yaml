@@ -1,0 +1,53 @@
+id: doi-10.5194-gmd-12-2033-2019
+title: Calculating the turbulent fluxes in the atmospheric surface layer with neural networks
+authors:
+- Lukas Hubert Leufen
+- Gerd Schädler
+date: '2019-05-24'
+year: 2019
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-12-2033-2019
+  openalex: W2901415630
+links:
+  paper: https://doi.org/10.5194/gmd-12-2033-2019
+  pdf: https://gmd.copernicus.org/articles/12/2033/2019/gmd-12-2033-2019.pdf
+orgs:
+- kit
+- juelich
+topic: hybrid-parameterization
+type: model
+method:
+- classical-ml
+spatial:
+- local
+data:
+- stations
+status: research
+summary: A one-hidden-layer neural network replaces Monin–Obukhov stability functions for surface-layer
+  fluxes, matching the standard method at seven flux sites.
+abstract: Abstract. The turbulent fluxes of momentum, heat and water vapour link the Earth's surface with
+  the atmosphere. The correct modelling of the flux interactions between these two systems with very different
+  time scales is therefore vital for climate (resp. Earth system) models. Conventionally, these fluxes
+  are modelled using Monin–Obukhov similarity theory (MOST) with stability functions derived from a small
+  number of field experiments; this results in a range of formulations of these functions and thus also
+  in the flux calculations; furthermore, the underlying equations are non-linear and have to be solved
+  iteratively at each time step of the model. For these reasons, we tried here a different approach, namely
+  using an artificial neural network (ANN) to calculate the fluxes resp. the scaling quantities u* and
+  θ*, thus avoiding explicit formulas for the stability functions. The network was trained and validated
+  with multi-year datasets from seven grassland, forest and wetland sites worldwide using the Broyden–Fletcher–Goldfarb–Shanno
+  (BFGS) quasi-Newton backpropagation algorithm and six-fold cross validation. Extensive sensitivity tests
+  showed that an ANN with six input variables and one hidden layer gave results comparable to (and in
+  some cases even slightly better than) the standard method. Similar satisfying results were obtained
+  when the ANN routine was implemented in a one-dimensional stand alone land surface model (LSM), opening
+  the way to implementation in three-dimensional climate models. In case of the one-dimensional LSM, no
+  CPU time was saved when using the ANN version, since the small time step of the standard version required
+  only one iteration in most cases. This could be different in models with longer time steps, e.g. global
+  climate models.
+significance: 3
+cited_by: 18
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

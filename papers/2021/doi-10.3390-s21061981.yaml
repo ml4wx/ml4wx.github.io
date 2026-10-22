@@ -1,0 +1,51 @@
+id: doi-10.3390-s21061981
+title: 'RN-Net: A Deep Learning Approach to 0–2 Hour Rainfall Nowcasting Based on Radar and Automatic
+  Weather Station Data'
+authors:
+- Fuhan Zhang
+- Xiaodong Wang
+- Jiping Guan
+- Meihan Wu
+- Lina Guo
+date: '2021-03-11'
+year: 2021
+venue: Sensors
+venue_type: journal
+ids:
+  doi: 10.3390/s21061981
+  openalex: W3134265440
+links:
+  paper: https://doi.org/10.3390/s21061981
+  pdf: https://www.mdpi.com/1424-8220/21/6/1981/pdf?version=1615954716
+topic: nowcasting
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- stations
+status: research
+summary: Dual-encoder RNN fuses radar mosaics and station rainfall for 0–2 hour grid nowcasts, reaching
+  0.523 threat score at 0.5 h, about 3–4 times WRF.
+abstract: Precipitation has an important impact on people's daily life and disaster prevention and mitigation.
+  However, it is difficult to provide more accurate results for rainfall nowcasting due to spin-up problems
+  in numerical weather prediction models. Furthermore, existing rainfall nowcasting methods based on machine
+  learning and deep learning cannot provide large-area rainfall nowcasting with high spatiotemporal resolution.
+  This paper proposes a dual-input dual-encoder recurrent neural network, namely Rainfall Nowcasting Network
+  (RN-Net), to solve this problem. It takes the past grid rainfall data interpolated by automatic weather
+  stations and doppler radar mosaic data as input data, and then forecasts the grid rainfall data for
+  the next 2 h. We conduct experiments on the Southeastern China dataset. With a threshold of 0.25 mm,
+  the RN-Net's rainfall nowcasting threat scores have reached 0.523, 0.503, and 0.435 within 0.5 h, 1
+  h, and 2 h. Compared with the Weather Research and Forecasting model rainfall nowcasting, the threat
+  scores have been increased by nearly four times, three times, and three times, respectively.
+significance: 3
+cited_by: 42
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

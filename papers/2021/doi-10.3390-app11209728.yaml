@@ -1,0 +1,55 @@
+id: doi-10.3390-app11209728
+title: Soft Periodic Convolutional Recurrent Network for Spatiotemporal Climate Forecast
+authors:
+- Ekasit Phermphoonphiphat
+- Tomohiko Tomita
+- Takashi Morita
+- Masayuki Numao
+- Ken–ichi Fukui
+date: '2021-10-18'
+year: 2021
+venue: Applied Sciences
+venue_type: journal
+ids:
+  doi: 10.3390/app11209728
+  openalex: W3206052500
+links:
+  paper: https://doi.org/10.3390/app11209728
+  pdf: https://www.mdpi.com/2076-3417/11/20/9728/pdf?version=1634562965
+topic: s2s-seasonal
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- s2s
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Soft periodic convolutional recurrent network adds periodic-depth representations to forecast
+  ERA-Interim Z300 and SST, improving accuracy and capturing an ENSO-related four-year periodicity.
+abstract: 'Many machine-learning applications and methods are emerging to solve problems associated with
+  spatiotemporal climate forecasting; however, a prediction algorithm that considers only short-range
+  sequential information may not be adequate to deal with periodic patterns such as seasonality. In this
+  paper, we adopt a Periodic Convolutional Recurrent Network (Periodic-CRN) model to employ the periodicity
+  component in our proposals of the periodic representation dictionary (PRD). Phase shifts and non-stationarity
+  of periodicity are the key components in the model to support. Specifically, we propose a Soft Periodic-CRN
+  (SP-CRN) with three proposals of utilizing periodicity components: nearby-time (PRD-1), periodic-depth
+  (PRD-2), and periodic-depth differencing (PRD-3) representation to improve climate forecasting accuracy.
+  We experimented on geopotential height at 300 hPa (ZH300) and sea surface temperature (SST) datasets
+  of ERA-Interim. The results showed the superiority of PRD-1 plus or minus one month of a prior cycle
+  to capture the phase shift. In addition, PRD-3 considered only the depth of one differencing periodic
+  cycle (i.e., the previous year) can significantly improve the prediction accuracy of ZH300 and SST.
+  The mixed method of PRD-1, and PRD-3 (SP-CRN-1+3) showed a competitive or slight improvement over their
+  base models. By adding the metadata component to indicate the month with one-hot encoding to SP-CRN-1+3,
+  the prediction result was a drastic improvement. The results showed that the proposed method could learn
+  four years of periodicity from the data, which may relate to the El Niño–Southern Oscillation (ENSO)
+  cycle.'
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

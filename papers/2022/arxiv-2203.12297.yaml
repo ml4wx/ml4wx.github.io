@@ -1,0 +1,54 @@
+id: arxiv-2203.12297
+title: Increasing the accuracy and resolution of precipitation forecasts using deep generative models
+authors:
+- Ilan Price
+- Stephan Rasp
+date: '2022-03-23'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2203.12297'
+  openalex: W4221151696
+links:
+  paper: https://arxiv.org/abs/2203.12297
+  pdf: https://arxiv.org/pdf/2203.12297
+orgs:
+- alan-turing-institute
+- university-of-oxford
+topic: downscaling
+topics:
+- post-processing
+type: model
+method:
+- gan-vae
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- radar
+status: research
+summary: CorrectorGAN jointly bias-corrects and super-resolves global ensemble precipitation forecasts
+  over the US against radar, approaching an operational regional model in seconds.
+abstract: Accurately forecasting extreme rainfall is notoriously difficult, but is also ever more crucial
+  for society as climate change increases the frequency of such extremes. Global numerical weather prediction
+  models often fail to capture extremes, and are produced at too low a resolution to be actionable, while
+  regional, high-resolution models are hugely expensive both in computation and labour. In this paper
+  we explore the use of deep generative models to simultaneously correct and downscale (super-resolve)
+  global ensemble forecasts over the Continental US. Specifically, using fine-grained radar observations
+  as our ground truth, we train a conditional Generative Adversarial Network -- coined CorrectorGAN --
+  via a custom training procedure and augmented loss function, to produce ensembles of high-resolution,
+  bias-corrected forecasts based on coarse, global precipitation forecasts in addition to other relevant
+  meteorological fields. Our model outperforms an interpolation baseline, as well as super-resolution-only
+  and CNN-based univariate methods, and approaches the performance of an operational regional high-resolution
+  model across an array of established probabilistic metrics. Crucially, CorrectorGAN, once trained, produces
+  predictions in seconds on a single machine. These results raise exciting questions about the necessity
+  of regional models, and whether data-driven downscaling and correction methods can be transferred to
+  data-poor regions that so far have had no access to high-resolution forecasts.
+significance: 5
+cited_by: 39
+score: 30
+highlight: false
+added: '2026-10-22'
+source: seed

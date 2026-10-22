@@ -1,0 +1,49 @@
+id: doi-10.1029-2022ms003446
+title: Uncertainty Quantification When Learning Dynamical Models and Solvers With Variational Methods
+authors:
+- Nicolas Lafon
+- Ronan Fablet
+- Philippe Naveau
+date: '2023-10-29'
+year: 2023
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2022ms003446
+  openalex: W4323049798
+links:
+  paper: https://doi.org/10.1029/2022ms003446
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2022MS003446
+topic: data-assimilation
+topics:
+- xai-uq-physics
+type: model
+method:
+- gan-vae
+- differentiable
+spatial:
+- global
+data:
+- other
+status: research
+summary: End-to-end variational Bayes neural scheme jointly learns a trainable solver and Gaussian posterior
+  for data assimilation with uncertainty, tested on Lorenz-63 and river flow.
+abstract: Abstract In geosciences, data assimilation (DA) addresses the reconstruction of a hidden dynamical
+  process given some observation data. DA is at the core of operational systems such as weather forecasting,
+  operational oceanography and climate studies. Beyond the reconstruction of the mean or most likely state,
+  the inference of the state posterior distribution remains a key challenge, that is, quantify uncertainties
+  as well as to inform intrinsical stochastic variabilities. Indeed, DA schemes, such as variational DA
+  and Kalman methods, can have difficulty in dealing with complex non‐linear processes. A growing literature
+  investigates the cross‐fertilization of DA and machine learning. This study proposes an end‐to‐end neural
+  scheme based on a variational Bayes inference formulation to jointly address DA and uncertainty quantification.
+  It combines an Evidence Lower BOund variational cost to a trainable gradient‐based solver to infer the
+  state posterior probability distribution function given observation data. The inference of the posterior
+  and the trainable solver are learnt jointly. We demonstrate the relevance of the proposed scheme for
+  a Gaussian parameterization of the posterior and different case‐study experiments, including Lorenz
+  63 dynamics and river flow measurements. A benchmark with respect to state‐of‐the‐art schemes is provided.
+significance: 3
+cited_by: 11
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

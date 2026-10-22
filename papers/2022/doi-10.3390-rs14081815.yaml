@@ -1,0 +1,59 @@
+id: doi-10.3390-rs14081815
+title: All-Sky 1 km MODIS Land Surface Temperature Reconstruction Considering Cloud Effects Based on Machine
+  Learning
+authors:
+- Dongjin Cho
+- Dukwon Bae
+- Cheolhee Yoo
+- Jungho Im
+- Yeonsu Lee
+- Siwoo Lee
+date: '2022-04-09'
+year: 2022
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs14081815
+  openalex: W4224234945
+links:
+  paper: https://doi.org/10.3390/rs14081815
+  pdf: https://www.mdpi.com/2072-4292/14/8/1815/pdf?version=1649655731
+topic: observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- nwp-analysis
+- stations
+status: research
+summary: LightGBM reconstructs all-sky 1 km MODIS land surface temperature using LDAPS analysis, improving
+  cloudy-sky estimates over South Korea.
+abstract: A high spatio-temporal resolution land surface temperature (LST) is necessary for various research
+  fields because LST plays a crucial role in the energy exchange between the atmosphere and the ground
+  surface. The moderate-resolution imaging spectroradiometer (MODIS) LST has been widely used, but it
+  is not available under cloudy conditions. This study proposed a novel approach for reconstructing all-sky
+  1 km MODIS LST in South Korea during the summer seasons using various data sources, considering the
+  cloud effects on LST. In South Korea, a Local Data Assimilation and Prediction System (LDAPS) with a
+  relatively high spatial resolution of 1.5 km has been operated since 2013. The LDAPS model’s analysis
+  data, binary MODIS cloud cover, and auxiliary data were used as input variables, while MODIS LST and
+  cloudy-sky in situ LST were used together as target variables based on the light gradient boosting machine
+  (LightGBM) approach. As a result of spatial five-fold cross-validation using MODIS LST, the proposed
+  model had a coefficient of determination (R2) of 0.89–0.91 with a root mean square error (RMSE) of 1.11–1.39
+  °C during the daytime, and an R2 of 0.96–0.97 with an RMSE of 0.59–0.60 °C at nighttime. In addition,
+  the reconstructed LST under the cloud was evaluated using leave-one-station-out cross-validation (LOSOCV)
+  using 22 weather stations. From the LOSOCV results under cloudy conditions, the proposed LightGBM model
+  had an R2 of 0.55–0.63 with an RMSE of 2.41–3.00 °C during the daytime, and an R2 of 0.70–0.74 with
+  an RMSE of 1.31–1.36 °C at nighttime. These results indicated that the reconstructed LST has higher
+  accuracy than the LDAPS model. This study also demonstrated that cloud cover information improved the
+  cloudy-sky LST estimation accuracy by adequately reflecting the heterogeneity of the relationship between
+  LST and input variables under clear and cloudy skies. The reconstructed all-sky LST can be used in a
+  variety of research applications including weather monitoring and forecasting.
+significance: 3
+cited_by: 38
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

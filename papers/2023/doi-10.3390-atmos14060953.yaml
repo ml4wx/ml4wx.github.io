@@ -1,0 +1,53 @@
+id: doi-10.3390-atmos14060953
+title: Machine Learning for Fog-and-Low-Stratus Nowcasting from Meteosat SEVIRI Satellite Images
+authors:
+- Driss Bari
+- Nabila Lasri
+- Rania Souri
+- Redouane Lguensat
+date: '2023-05-30'
+year: 2023
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos14060953
+  openalex: W4378907784
+links:
+  paper: https://doi.org/10.3390/atmos14060953
+  pdf: https://www.mdpi.com/2073-4433/14/6/953/pdf?version=1685441821
+topic: nowcasting
+type: model
+method:
+- cnn
+- rnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: U-Net and ConvLSTM models forecast fog and low stratus over Morocco 5 h ahead from Meteosat SEVIRI,
+  beating optical flow on SSIM.
+abstract: Fog and low stratus (FLS) are meteorological phenomena that have a significant impact on all
+  ways of transportation and public safety. Due to their similarity, they are often grouped together as
+  a single category when viewed from a satellite perspective. The early detection of these phenomena is
+  crucial to reduce the negative effects that they can cause. This paper presents an image-based approach
+  for the short-term nighttime forecasting of FLS during the next 5 h over Morocco, based on geostationary
+  satellite observations (Meteosat SEVIRI). To achieve this, a dataset of hourly night microphysics RGB
+  product was generated from native files covering the nighttime cold season (October to April) of the
+  5-year period (2016–2020). Two optical flow techniques (sparse and dense) and three deep learning techniques
+  (CNN, Unet and ConvLSTM) were used, and the performance of the developed models was assessed using mean
+  squared error (MSE) and structural similarity index measure (SSIM) metrics. Hourly observations from
+  Meteorological Aviation Routine Weather Reports (METAR) over Morocco were used to qualitatively compare
+  the FLS existence in METAR, where it is also shown by the RGB product. Results analysis show that deep
+  learning techniques outperform the traditional optical flow method with SSIM and MSE of about 0.6 and
+  0.3, respectively. Deep learning techniques show promising results during the first three hours. However,
+  their performance is highly dependent on the number of filters and the computing resources, while sparse
+  optical flow is found to be very sensitive to mask definition on the target phenomenon.
+significance: 3
+cited_by: 15
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

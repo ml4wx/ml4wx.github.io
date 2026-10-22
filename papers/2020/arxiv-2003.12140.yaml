@@ -1,0 +1,55 @@
+id: arxiv-2003.12140
+title: 'MetNet: A Neural Weather Model for Precipitation Forecasting'
+authors:
+- Casper Kaae Sønderby
+- Lasse Espeholt
+- Jonathan Heek
+- Mostafa Dehghani
+- Avital Oliver
+- Tim Salimans
+- Shreya Agrawal
+- Jason Hickey
+- Nal Kalchbrenner
+date: '2020-03-24'
+year: 2020
+venue_type: preprint
+ids:
+  arxiv: '2003.12140'
+  openalex: W3013229294
+links:
+  paper: https://arxiv.org/abs/2003.12140
+  pdf: https://arxiv.org/pdf/2003.12140
+orgs:
+- google-research
+topic: nowcasting
+type: model
+method:
+- transformer
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- satellite
+status: research
+summary: MetNet uses axial self-attention on radar and satellite inputs to forecast precipitation up to
+  8 hours at 1 km, beating NWP for 7-8 hour lead times over the US.
+abstract: Weather forecasting is a long standing scientific challenge with direct social and economic
+  impact. The task is suitable for deep neural networks due to vast amounts of continuously collected
+  data and a rich spatial and temporal structure that presents long range dependencies. We introduce MetNet,
+  a neural network that forecasts precipitation up to 8 hours into the future at the high spatial resolution
+  of 1 km$^2$ and at the temporal resolution of 2 minutes with a latency in the order of seconds. MetNet
+  takes as input radar and satellite data and forecast lead time and produces a probabilistic precipitation
+  map. The architecture uses axial self-attention to aggregate the global context from a large input patch
+  corresponding to a million square kilometers. We evaluate the performance of MetNet at various precipitation
+  thresholds and find that MetNet outperforms Numerical Weather Prediction at forecasts of up to 7 to
+  8 hours on the scale of the continental United States.
+significance: 7
+cited_by: 295
+score: 73
+highlight: true
+highlight_reason: MetNet is a high-resolution neural nowcasting model beating NWP out to 7-8 hours; influential
+  for ML precipitation forecasting.
+added: '2026-10-22'
+source: seed

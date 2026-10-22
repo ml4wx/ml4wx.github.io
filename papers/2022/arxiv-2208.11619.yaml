@@ -1,0 +1,50 @@
+id: arxiv-2208.11619
+title: Calibrated and Enhanced NRLMSIS 2.0 Model with Uncertainty Quantification
+authors:
+- Richard J. Licata
+- Piyush M. Mehta
+- Daniel R. Weimer
+- W. Kent Tobiska
+- Jean Yoshii
+date: '2022-08-24'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2208.11619'
+  doi: 10.1029/2022sw003267
+links:
+  paper: https://arxiv.org/abs/2208.11619
+  pdf: https://arxiv.org/pdf/2208.11619
+topic: post-processing
+topics:
+- extremes-hazards
+type: model
+method:
+- classical-ml
+spatial:
+- global
+data:
+- satellite
+status: research
+summary: ML exospheric temperature model calibrates NRLMSIS 2.0 against satellite density, cutting model-satellite
+  differences by 25% with calibrated uncertainty intervals.
+abstract: The Mass Spectrometer and Incoherent Scatter radar (MSIS) model family has been developed and
+  improved since the early 1970's. The most recent version of MSIS is the Naval Research Laboratory (NRL)
+  MSIS 2.0 empirical atmospheric model. NRLMSIS 2.0 provides species density, mass density, and temperature
+  estimates as function of location and space weather conditions. MSIS models have long been a popular
+  choice of atmosphere model in the research and operations community alike, but - like many models -
+  does not provide uncertainty estimates. In this work, we develop an exospheric temperature model based
+  in machine learning (ML) that can be used with NRLMSIS 2.0 to calibrate it relative to high-fidelity
+  satellite density estimates. Instead of providing point estimates, our model (called MSIS-UQ) outputs
+  a distribution which is assessed using a metric called the calibration error score. We show that MSIS-UQ
+  debiases NRLMSIS 2.0 resulting in reduced differences between model and satellite density of 25% and
+  is 11% closer to satellite density than the Space Force's High Accuracy Satellite Drag Model. We also
+  show the model's uncertainty estimation capabilities by generating altitude profiles for species density,
+  mass density, and temperature. This explicitly demonstrates how exospheric temperature probabilities
+  affect density and temperature profiles within NRLMSIS 2.0. Another study displays improved post-storm
+  overcooling capabilities relative to NRLMSIS 2.0 alone, enhancing the phenomena that it can capture.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

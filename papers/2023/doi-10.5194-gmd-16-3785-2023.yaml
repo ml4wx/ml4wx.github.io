@@ -1,0 +1,59 @@
+id: doi-10.5194-gmd-16-3785-2023
+title: Deep learning for stochastic precipitation generation – deep SPG v1.0
+authors:
+- Leroy J. Bird
+- Matthew Walker
+- G. E. Bodeker
+- Isaac Campbell
+- Guangzhong Liu
+- Swapna Josmi Sam
+- Jared Lewis
+- Suzanne M. Rosier
+date: '2023-07-11'
+year: 2023
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-16-3785-2023
+  openalex: W4383982480
+links:
+  paper: https://doi.org/10.5194/gmd-16-3785-2023
+  pdf: https://gmd.copernicus.org/articles/16/3785/2023/gmd-16-3785-2023.pdf
+topic: climate-emulation
+topics:
+- local-forecasting
+type: model
+method:
+- other
+timescale:
+- climate
+spatial:
+- local
+data:
+- stations
+- other
+status: research
+summary: Introduces a neural-network stochastic precipitation generator for New Zealand that reproduces
+  daily and hourly statistics and captures climate-change drift; runs orders of magnitude faster than
+  an RCM.
+abstract: 'Abstract. We present a deep neural network based single site stochastic precipitation generator
+  (SPG), capable of producing realistic time series of daily and hourly precipitation. The neural network
+  outputs a wet day probability and precipitation distributions in the form of a mixture model. The SPG
+  was tested in four different locations in New Zealand, and we found it accurately reproduced the precipitation
+  depth, the autocorrelations seen in the original data, the observed dry-spell lengths and the seasonality
+  in precipitation. We present two versions of the hourly and daily SPGs: (i) a stationary version of
+  the SPG that assumes that the statistics of the precipitation are time independent (ii) a non-stationary
+  version that captures the secular drift in precipitation statistics resulting from climate change. The
+  latter was developed to be applicable to climate change impact studies, especially, studies reliant
+  on SPG projections of future precipitation. We highlight many of the pitfalls associated with the training
+  of a non-stationary SPG on observations alone, and offer an alternative method that replicates the secular
+  drift in precipitation seen in a large-ensemble regional climate model. The SPG runs several orders
+  of magnitude faster than a typical regional climate model, and permits the generation of very large
+  ensembles of realistic precipitation time series under many climate change scenarios, these ensembles
+  will also contain many extreme events not seen in the historical record.'
+significance: 3
+cited_by: 2
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

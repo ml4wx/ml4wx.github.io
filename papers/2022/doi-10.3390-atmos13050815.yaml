@@ -1,0 +1,60 @@
+id: doi-10.3390-atmos13050815
+title: Weather Radar Echo Extrapolation Method Based on Deep Learning
+authors:
+- Fugui Zhang
+- Can Lai
+- Wanjun Chen
+date: '2022-05-16'
+year: 2022
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos13050815
+  openalex: W4280567255
+links:
+  paper: https://doi.org/10.3390/atmos13050815
+  pdf: https://www.mdpi.com/2073-4433/13/5/815/pdf?version=1652772595
+topic: nowcasting
+topics:
+- extremes-hazards
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: A Conv-LSTM encoder-decoder with rain-weighted MSE extrapolates radar echoes for 2 h, reaching
+  0.42 CSI at 30 dBZ for 1 h, above CTREC.
+abstract: In order to forecast some high intensity and rapidly changing phenomena, such as thunderstorms,
+  heavy rain, and hail within 2 h, and reduce the influence brought by destructive weathers, this paper
+  proposes a weather radar echo extrapolation method based on deep learning. The proposed method includes
+  the design and combination of the data preprocessing, convolutional long short-term memory (Conv-LSTM)
+  neuron and encoder–decoder model. We collect eleven thousand weather radar echo data in high spatiotemporal
+  resolution, these data are then preprocessed before they enter the neural network for training to improve
+  the data’s quality and make the training better. Next, the neuron integrates the structure and the advantages
+  of convolutional neural network (CNN) and long short-term memory (LSTM), called Conv-LSTM, is applied
+  to solve the problem that the full-connection LSTM (FC-LSTM) cannot extract the spatial information
+  of input data. This operation replaced the full-connection structure in the input-to-state and state-to-state
+  parts so that the Conv-LSTM can extract the information from other dimensions. Meanwhile, the encoder–decoder
+  model is adopted due to the size difference of the input and output data to combine with the Conv-LSTM
+  neuron. In the neural network training, mean square error (MSE) loss function weighted according to
+  the rate of rainfall is added. Finally, the matrix “point-to-point” test method, including the probability
+  of detection (POD), critical success index (CSI), false alarm ratio (FAR) and spatial test method contiguous
+  rain areas (CRA), is used to examine the radar echo extrapolation’s results. Under the threshold of
+  30 dBZ, at the time of 1 h, we achieved 0.60 (POD), 0.42 (CSI) and 0.51 (FAR), compared with 0.42, 0.28
+  and 0.58 for the CTREC algorithm, and 0.30, 0.24 and 0.71 for the TITAN algorithm. Meanwhile, at the
+  time of 1 h, we achieved 1.35 (total MSE ) compared with 3.26 for the CTREC algorithm and 3.05 for the
+  TITAN algorithm. The results demonstrate that the radar echo extrapolation method based on deep learning
+  is obviously more accurate and stable than traditional radar echo extrapolation methods in near weather
+  forecasting.
+significance: 3
+cited_by: 20
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,54 @@
+id: arxiv-2310.17829
+title: Hybrid Optical Turbulence Models Using Machine Learning and Local Measurements
+authors:
+- Christopher Jellen
+- Charles Nelson
+- John Burkhardt
+- Cody Brownell
+date: '2023-10-27'
+year: 2023
+venue: 'Applied Optics 62, no. 18 (2023): 4880-4890'
+venue_type: journal
+ids:
+  arxiv: '2310.17829'
+  doi: 10.1364/ao.487280
+links:
+  paper: https://arxiv.org/abs/2310.17829
+  pdf: https://arxiv.org/pdf/2310.17829
+topic: applications-impacts
+topics:
+- observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Gradient-boosted hybrid models combining macro-meteorological baselines with local observations
+  cut optical turbulence error by 29% with one day of data and 68% with 180 days.
+abstract: Accurate prediction of atmospheric optical turbulence in localized environments is essential
+  for estimating the performance of free-space optical systems. Macro-meteorological models developed
+  to predict turbulent effects in one environment may fail when applied in new environments. However,
+  existing macro-meteorological models are expected to offer some predictive power. Building a new model
+  from locally-measured macro-meteorology and scintillometer readings can require significant time and
+  resources, as well as a large number of observations. These challenges motivate the development of a
+  machine-learning informed hybrid model framework. By combining some baseline macro-meteorological model
+  with local observations, hybrid models were trained to improve upon the predictive power of each baseline
+  model. Comparisons between the performance of the hybrid models, the selected baseline macro-meteorological
+  models, and machine-learning models trained only on local observations highlight potential use cases
+  for the hybrid model framework when local data is expensive to collect. Both the hybrid and data-only
+  models were trained using the Gradient Boosted Decision Tree (GBDT) architecture with a variable number
+  of in-situ meteorological observations. The hybrid and data-only models were found to outperform three
+  baseline macro-meteorological models, even for low numbers of observations, in some cases as little
+  as one day. For the first baseline macro-meteorological model investigated, the hybrid model achieves
+  an estimated 29% reduction in mean absolute error (MAE) using only one days-equivalent of observation,
+  growing to 41% after only two days, and 68% after 180 days-equivalent training data. The number of days-equivalent
+  training data required is potentially indicative of the seasonal variation in the local microclimate
+  and its propagation environment.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

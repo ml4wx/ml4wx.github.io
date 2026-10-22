@@ -1,0 +1,53 @@
+id: arxiv-2102.00696
+title: Numerical Weather Forecasting using Convolutional-LSTM with Attention and Context Matcher Mechanisms
+authors:
+- Selim Furkan Tekin
+- Oğuzhan Karaahmetoğlu
+- Fatih İlhan
+- Ismail Balaban
+- Süleyman S. Kozat
+date: '2021-02-01'
+year: 2021
+venue_type: preprint
+ids:
+  arxiv: '2102.00696'
+  openalex: W3126234886
+links:
+  paper: https://arxiv.org/abs/2102.00696
+  pdf: https://arxiv.org/pdf/2102.00696
+topic: global-medium-range
+type: model
+method:
+- rnn
+- cnn
+- transformer
+timescale:
+- short
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: A ConvLSTM encoder-decoder with CNN, attention and context matcher outperforms ConvLSTM, TrajGRU
+  and U-Net on ERA5 and WeatherBench forecasts.
+abstract: Numerical weather forecasting using high-resolution physical models often requires extensive
+  computational resources on supercomputers, which diminishes their wide usage in most real-life applications.
+  As a remedy, applying deep learning methods has revealed innovative solutions within this field. To
+  this end, we introduce a novel deep learning architecture for forecasting high-resolution spatio-temporal
+  weather data. Our approach extends the conventional encoder-decoder structure by integrating Convolutional
+  Long-short Term Memory and Convolutional Neural Networks. In addition, we incorporate attention and
+  context matcher mechanisms into the model architecture. Our Weather Model achieves significant performance
+  improvements compared to baseline deep learning models, including ConvLSTM, TrajGRU, and U-Net. Our
+  experimental evaluation involves high-scale, real-world benchmark numerical weather datasets, namely
+  the ERA5 hourly dataset on pressure levels and WeatherBench. Our results demonstrate substantial improvements
+  in identifying spatial and temporal correlations with attention matrices focusing on distinct parts
+  of the input series to model atmospheric circulations. We also compare our model with high-resolution
+  physical models using the benchmark metrics and show that our Weather Model is accurate and easy to
+  interpret.
+significance: 3
+cited_by: 23
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

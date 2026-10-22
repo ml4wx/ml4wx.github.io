@@ -1,0 +1,55 @@
+id: doi-10.1002-essoar.10500352.1
+title: Retrieving temperature and relative humidity profiles from hyperspectral radiations via deep learning
+authors:
+- Maosi Chen
+- Chaoshun Liu
+- Zhibin Sun
+- Wei Gao
+date: '2019-01-07'
+year: 2019
+venue_type: other
+ids:
+  doi: 10.1002/essoar.10500352.1
+  openalex: W3176688246
+links:
+  paper: https://doi.org/10.1002/essoar.10500352.1
+orgs:
+- colorado-state-university
+topic: observations-remote-sensing
+type: model
+method:
+- other
+spatial:
+- global
+data:
+- satellite
+- era5
+status: research
+summary: Retrieves temperature and humidity profiles from NPP CrIS hyperspectral radiances using autoencoders
+  and a self-normalizing network trained on ECMWF data.
+abstract: Atmospheric temperature and relative humidity profiles are fundamental for atmospheric research
+  such as numerical weather prediction and climate change assessment. Hyperspectral satellite data contain
+  a wealth of relevant information and have been used in many algorithms (e.g. regression-based methods)
+  to retrieve these profiles. Deep Learning or Deep Neural Network (DNN) is capable of finding complex
+  relationships (functions) between pairs of input and output variables by assembling many simple non-linear
+  modules together and learning the parameters therein from large amounts of observations. DNN has been
+  successfully applied in many fields (such as image classification, object detection, language translation).
+  In this study, we explored the potential of retrieving atmospheric profiles from hyperspectral satellite
+  radiation data using DNN. The requirement for applying the DNN technique is satisfied with large amount
+  of hyperspectral radiance data provided by United States Suomi National Polar (NPP) Cross-track Infrared
+  Sounder (CrIS) and the reanalyzed atmospheric profiles data provided by the European Centre for Medium-Range
+  Weather Forecasts (ECMWF). The proposed DNN consists of two consecutive parts. In the first part, the
+  first 1245 bands of the NPP CrIS hyperspectral radiance data (648.75 to 2555 cm-1) are compressed into
+  a 300-element vector representing their key features by stacked AutoEncoders. Then, in the second part,
+  the multi-layer Self-Normalizing Neural Network (SNN) is used to map the compressed vector (of 300 elements)
+  into 55-layer temperature and relative humidity profiles. The DNN trainable variables are optimized
+  by minimizing the difference of its predictions and the matched ECMWF temperature and humidity profiles
+  (53230 samples). Finally, the DNN retrieved atmospheric temperature and relative humidity profiles and
+  those provided by the NOAA Unique Combined Atmospheric Processing System (NUCAPS, the official retrieval
+  products for CrIS) are compared with the matched radiosonde observations at one location.
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

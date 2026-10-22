@@ -1,0 +1,63 @@
+id: arxiv-2022.10041
+title: A novel ensemble learning for post-processing of NWP Model's next-day maximum air temperature forecast
+  in summer using deep learning and statistical approaches
+authors:
+- Dongjin Cho
+- Cheolhee Yoo
+- Bokyung Son
+- Jungho Im
+- Donghyuck Yoon
+- Dong‐Hyun Cha
+date: '2022-01-21'
+year: 2022
+venue: Weather and Climate Extremes
+venue_type: journal
+ids:
+  arxiv: '2022.10041'
+  doi: 10.1016/j.wace.2022.100410
+  openalex: W4206958054
+links:
+  paper: https://doi.org/10.1016/j.wace.2022.100410
+topic: post-processing
+topics:
+- extremes-hazards
+type: model
+method:
+- classical-ml
+- rnn
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Skill-score-weighted ensemble of MLR, SVR, GRU and CNN post-processors corrects LDAPS next-day
+  maximum temperature, with CNN reaching 1.41 °C RMSE in South Korea.
+abstract: 'A reliable and accurate extreme air temperature in summer is necessary to prepare for and respond
+  to thermal disasters such as heatstroke and power outages. The numerical weather prediction (NWP) model
+  is commonly used to forecast air temperature using dynamic mechanisms. Because of its high uncertainty
+  from coarse spatial resolution and unstable parameterization, however, it requires post-processing.
+  Recent studies have proposed advanced post-processing methods using machine learning and deep learning
+  techniques. This study compared various individual post-processing models—multi-linear regression (MLR),
+  support vector regression (SVR), gated recurrent units (GRU), and convolutional neural network (CNN).
+  It also proposed a novel multi-model ensemble (MMESS) that aggregates individual post-processing models
+  based on the skill score (SS) for the Local Data Assimilation and Prediction System (LDAPS, a local
+  NWP model over Korea) model''s next-day maximum air temperature (Tmax) forecast data in two different
+  domains: South Korea and Seoul. The pressure and surface data of the present-day analysis and next-day
+  forecast fields of LDAPS were used as input variables. As a result of hindcast validation, CNN showed
+  good overall performance (root mean square error (RMSE) of 1.41 °C in South Korea and 1.50 °C in Seoul)
+  among individual models. We found that CNN demonstrated lower RMSE (1.17–1.58 °C) than other post-processing
+  models (1.43–2.17 °C) at stations where the bias of LDAPS changes, using surrounding spatial information.
+  The proposed MMESS exhibited more reliable, robust results than the individual models did. A further
+  comparison to the simple average ensemble and the constrained linear squares-based MMEsupported the
+  proposed MMESS as a more suitable ensemble method for next-day Tmax forecast, considering the relative
+  significance of the individual models.'
+significance: 3
+cited_by: 53
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,62 @@
+id: arxiv-2407.14158
+title: Machine learning emulation of precipitation from km-scale UK regional climate simulations using
+  a diffusion model
+authors:
+- Henry Addison
+- Elizabeth Kendon
+- Suman Ravuri
+- Laurence Aitchison
+- Peter AG Watson
+date: '2024-07-19'
+year: 2024
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  arxiv: '2407.14158'
+  doi: 10.1029/2025ms005140
+  openalex: W7134167274
+links:
+  paper: https://arxiv.org/abs/2407.14158
+  pdf: https://arxiv.org/pdf/2407.14158
+orgs:
+- met-office
+- nvidia
+topic: downscaling
+topics:
+- climate-emulation
+type: model
+method:
+- diffusion
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+- km-scale-sim
+status: research
+summary: A diffusion model (CPMGEM) emulates 2.2 km UK convection-permitting precipitation from 60 km
+  GCM inputs, reproducing extremes up to about 100-year return times at much lower cost.
+abstract: High-resolution climate simulations are valuable for understanding climate change impacts. This
+  has motivated use of regional convection-permitting climate models (CPMs), but these are very computationally
+  expensive. We present a convection-permitting model generative emulator (CPMGEM), to skilfully emulate
+  precipitation simulations by a 2.2km-resolution regional CPM at much lower cost. This utilises a generative
+  machine learning approach, a diffusion model. It takes inputs at the 60km resolution of the driving
+  global climate model and downscales these to 8.8km, with daily-mean time resolution, capturing the effect
+  of convective processes represented in the CPM at these scales. The emulator is trained on simulations
+  over England and Wales from the United Kingdom Climate Projections Local product, covering years between
+  1980 and 2080 following a high emissions scenario. The output precipitation has a similar spatial structure
+  and intensity distribution as in the CPM simulations. The emulator is stochastic, which improves the
+  realism of samples. We include some evidence about the emulator's skill for extreme events with return
+  times up to ~100 years. We demonstrate successful transfer from a "perfect model" training setting to
+  application using GCM variable inputs. It captures the main features of the simulated 21st century climate
+  change, but exhibits some error in the magnitude. We also show that the method can be useful in situations
+  with limited amounts of high-resolution data. Potential applications include producing high-resolution
+  precipitation predictions for large-ensemble climate simulations and producing output based on different
+  GCMs and climate change scenarios to better sample uncertainty.
+significance: 5
+cited_by: 6
+score: 55
+highlight: false
+added: '2026-10-22'
+source: seed

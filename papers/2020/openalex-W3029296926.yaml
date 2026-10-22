@@ -1,0 +1,64 @@
+id: openalex-W3029296926
+title: Using Deep Learning to Improve Prediction and Understanding of High-impact Weather
+authors:
+- Ryan Lagerquist
+date: '2020-05-01'
+year: 2020
+venue: SHAREOK (University of Oklahoma; Oklahoma State University; Central Oklahoma University)
+venue_type: preprint
+ids:
+  openalex: W3029296926
+links:
+  paper: https://hdl.handle.net/11244/324145
+topic: extremes-hazards
+topics:
+- xai-uq-physics
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- era5
+status: research
+summary: CNNs predict next-hour tornado occurrence (AUC 0.94) and detect fronts in reanalysis, with interpretation
+  methods explaining tornadogenesis failure.
+abstract: This dissertation describes the application of convolutional neural networks (CNN), a type of
+  deep-learning method, to high-impact weather. CNNs are specially designed to learn directly from spatial
+  grids, which improves both skill and interpretability. \n \nSpecifically, I develop and test CNNs for
+  two tasks. The first is tornado prediction, where the two CNNs predict next-hour tornado occurrence
+  for a given storm, using datasets similar to those used by forecasters in real-time operations. The
+  tornado models achieve an area under the receiver-operating-characteristic curve (AUC) of 0.94 and critical
+  success index (CSI) of >~ 0.30. This is competitive with a machine-learning (ML) model currently used
+  in operations, which suggests that the CNNs would also be suitable for operations. Novel ML-interpretation
+  methods highlight the importance of a deep reflectivity core and strong mesocyclone, as well as low-level
+  instability and wind shear in the surrounding environment. Also, interpretation methods suggest that
+  a rear-flank downdraft with too much precipitation and negative buoyancy can lead to tornadogenesis
+  failure, which corroborates some previous literature. \n \nThe second task is front detection, where
+  the CNN draws warm and cold fronts in reanalysis data. When evaluated on human-identified fronts, the
+  CNN achieves a CSI of 0.29 and frequency bias of 2.03. Although this is a high frequency bias, visual
+  analysis suggests that the humans often miss fronts, so this "overdetection" is considered acceptable.
+  I use the CNN-detected fronts to create a 40-year climatology over North America and the surrounding
+  oceans. To my knowledge, this is the only climatology that separates fronts by type (warm or cold),
+  one of only two climatologies that investigate variability with respect to the El Niño - Southern Oscillation
+  (ENSO) over a continent-scale or larger domain, and one of only three that investigate long-term trends
+  over a continent-scale or larger domain. I find that fronts are most common in the mid-latitude cyclone
+  track, which migrates poleward from winter to summer, equatorward during El Niño, and poleward during
+  La Niña. Also, I find that the cyclone track appears to be migrating poleward as a consequence of global
+  warming. These results are broadly consistent with previous climatologies, although there are some discrepancies
+  and interesting results that warrant future investigation. \n \nTo summarize, my contributions to atmospheric
+  and data science include creating tornado models that perform competitively with the state of the art,
+  using novel interpretation methods to understand physical relationships learned by the tornado models,
+  creating a front-detection model that appears to overcome some deficiencies of human labels, using the
+  front-detection model to create a climatology, and identifying similarities and discrepancies to the
+  few pre-existing climatologies. Overall, this dissertation demonstrates that deep learning can be used
+  to advance both the prediction and understanding of high-impact weather.
+significance: 3
+cited_by: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

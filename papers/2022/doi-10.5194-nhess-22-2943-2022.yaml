@@ -1,0 +1,64 @@
+id: doi-10.5194-nhess-22-2943-2022
+title: A satellite lightning observation operator for storm-scale numerical weather prediction
+authors:
+- Pauline Combarnous
+- Félix Erdmann
+- Olivier Caumont
+- Éric Defer
+- Maud Martet
+date: '2022-09-06'
+year: 2022
+venue: Natural hazards and earth system sciences
+venue_type: journal
+ids:
+  doi: 10.5194/nhess-22-2943-2022
+  openalex: W4294752400
+links:
+  paper: https://doi.org/10.5194/nhess-22-2943-2022
+  pdf: https://nhess.copernicus.org/articles/22/2943/2022/nhess-22-2943-2022.pdf
+orgs:
+- meteo-france
+topic: data-assimilation
+topics:
+- observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- nwp-analysis
+status: research
+summary: Machine-learning regression maps AROME proxy variables to pseudo MTG lightning flash extent,
+  giving a learned observation operator for storm-scale EnVar assimilation.
+abstract: 'Abstract. The Lightning Imager (LI) onboard the Meteosat Third Generation (MTG) satellites
+  will provide total lightning observations continuously over Europe with a spatial resolution of a few
+  kilometers. The objective of this study is to prepare the assimilation of the flash extent accumulation
+  (FEA) measured by LI in the French storm-scale regional AROME NWP system within a new EnVar assimilation
+  scheme, by developing a lightning observation operator. This study relies on pseudo LI FEA observations
+  as LI on MTG is still to be launched in the end of 2022, meaning actual observations will be available
+  by 2023. Since neither flashes nor the electric field are predicted by the AROME NWP system, the observation
+  operator relies on proxy variables to link the flash observations to the prognostic variables of the
+  NWP system. A total of 8 storm parameters were selected from a literature review to be used as proxies.
+  Two different proxy types emerged from this literature review: microphysical and dynamical proxies.
+  The proxies are calculated from 1 h AROME forecasts from the assimilation cycle. Machine learning regression
+  models are used to relate observed FEA and the simulated proxies. The training of the observation operator
+  is performed on a dataset of 44 days and 3 additional days are used for the validation. The data are
+  processed as a climatology over the whole domain (i.e. France) and time period. The performances of
+  each proxy are evaluated by computing Fraction Skill Scores (FSS) between observed FEA and proxy-based
+  FEA. The present study suggests that microphysical proxies seem to be more suited than the dynamical
+  ones to model satellite lightning observations with the AROME NWP system. The performances of multivariate
+  regression models are also evaluated by combining several proxies after a feature selection based on
+  a principal component analysis and a proxy correlation study but no proxies combination yielded better
+  results than microphysical proxies alone. Results are also compared to those obtained with another lightning
+  calibration, i.e., a relationship between lightning and proxies, from the literature but the simulated
+  FEA amplitudes were systematically lower than the observed ones. Finally, different accumulation periods
+  of the FEA had little influence, i.e., similar FSS, on the observation operator''s ability to reproduce
+  the observed FEA.'
+significance: 3
+cited_by: 4
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

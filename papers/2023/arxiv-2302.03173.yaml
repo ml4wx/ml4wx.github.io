@@ -1,0 +1,54 @@
+id: arxiv-2302.03173
+title: Learning bias corrections for climate models using deep neural operators
+authors:
+- Aniruddha Bora
+- Khemraj Shukla
+- Shixuan Zhang
+- Bryce Harrop
+- Ruby Leung
+- George Em Karniadakis
+date: '2023-02-07'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2302.03173'
+  openalex: W4319653593
+links:
+  paper: https://arxiv.org/abs/2302.03173
+  pdf: https://arxiv.org/pdf/2302.03173
+topic: hybrid-parameterization
+topics:
+- climate-emulation
+type: model
+method:
+- neural-operator
+- cnn
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+- era5
+status: research
+summary: A DeepONet with autoencoder replaces the nudging bias-correction module in the E3SMv2 climate
+  model, matching nudging tendencies with a learned surrogate for online use.
+abstract: Numerical simulation for climate modeling resolving all important scales is a computationally
+  taxing process. Therefore, to circumvent this issue a low resolution simulation is performed, which
+  is subsequently corrected for bias using reanalyzed data (ERA5), known as nudging correction. The existing
+  implementation for nudging correction uses a relaxation based method for the algebraic difference between
+  low resolution and ERA5 data. In this study, we replace the bias correction process with a surrogate
+  model based on the Deep Operator Network (DeepONet). DeepONet (Deep Operator Neural Network) learns
+  the mapping from the state before nudging (a functional) to the nudging tendency (another functional).
+  The nudging tendency is a very high dimensional data albeit having many low energy modes. Therefore,
+  the DeepoNet is combined with a convolution based auto-encoder-decoder (AED) architecture in order to
+  learn the nudging tendency in a lower dimensional latent space efficiently. The accuracy of the DeepONet
+  model is tested against the nudging tendency obtained from the E3SMv2 (Energy Exascale Earth System
+  Model) and shows good agreement. The overarching goal of this work is to deploy the DeepONet model in
+  an online setting and replace the nudging module in the E3SM loop for better efficiency and accuracy.
+significance: 3
+cited_by: 6
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

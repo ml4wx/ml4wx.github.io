@@ -1,0 +1,51 @@
+id: doi-10.37936-ecti-cit.2021153.240957
+title: Cascading Models of CNN and GRU with Autoencoder Loss for Precipitation Forecast in Thailand
+authors:
+- Fuenglada Manokij
+- Peerapon Vateekul
+- Kanoksri Sarinnapakorn
+date: '2021-11-13'
+year: 2021
+venue: ECTI Transactions on Computer and Information Technology (ECTI-CIT)
+venue_type: journal
+ids:
+  doi: 10.37936/ecti-cit.2021153.240957
+  openalex: W3214575438
+links:
+  paper: https://doi.org/10.37936/ecti-cit.2021153.240957
+  pdf: https://ph01.tci-thaijo.org/index.php/ecticit/article/download/240957/167660
+topic: local-forecasting
+topics:
+- nowcasting
+type: model
+method:
+- cnn
+- rnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- stations
+status: research
+summary: A CNN classifies rain events and a GRU forecasts hourly rainfall in Thailand, with focal and
+  autoencoder losses. It outperforms ARIMA and CNN-GRU on RMSE in most regions.
+abstract: It is a crucial task to accurately forecast precipitation, especially rainfall in Thailand,
+  since it relates to flood prevention and agricultural planning. In our prior work, we have presented
+  a model based on deep learning approach; however, its performance is still limited due to two main issues.
+  First, there is an imbalance issue, where most rainfall is zero or no rain because Thailand has short
+  rainy season. Second, predicted rainfall is still underestimated since moderate and heavy rainfall cases
+  barely occurs. In this paper, we propose an enhanced deep learning model to forecast rainfall in Thailand.
+  Our model is a cascading of CNN and GRU along with exogenous variables, i.e., temperature, pressure,
+  and humidity. There are two stages in our model. First, CNN is specialized for classifying rain and
+  non-rain events. In this stage, an imbalanced issue is alleviated by applying “focal loss”. Second,
+  GRU is responsible for forecasting rainfall. Its predicted range is lifted using “autoencoder loss”.
+  The experiment was conducted on hourly rainfall dataset between 2012 and 2018 obtained from a public
+  government sector in Thailand. The results show that our enhanced model outperforms ARIMA and CNN-GRU
+  in terms on RMSE of most regions in Thailand.
+significance: 2
+cited_by: 4
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

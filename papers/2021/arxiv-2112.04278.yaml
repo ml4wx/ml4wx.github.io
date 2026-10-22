@@ -1,0 +1,51 @@
+id: arxiv-2112.04278
+title: 'DMRVisNet: Deep Multi-head Regression Network for Pixel-wise Visibility Estimation Under Foggy
+  Weather'
+authors:
+- Jing You
+- Shaocheng Jia
+- Xin Pei
+- Danya Yao
+date: '2021-12-08'
+year: 2021
+venue_type: preprint
+ids:
+  arxiv: '2112.04278'
+links:
+  paper: https://arxiv.org/abs/2112.04278
+  pdf: https://arxiv.org/pdf/2112.04278
+topic: observations-remote-sensing
+topics:
+- local-forecasting
+type: model
+method:
+- cnn
+spatial:
+- local
+data:
+- other
+status: research
+summary: Physics-informed CNN estimates pixel-wise fog visibility from single images via Koschmieder's
+  law, trained on a 3,000-image synthetic AirSim dataset.
+abstract: Scene perception is essential for driving decision-making and traffic safety. However, fog,
+  as a kind of common weather, frequently appears in the real world, especially in the mountain areas,
+  making it difficult to accurately observe the surrounding environments. Therefore, precisely estimating
+  the visibility under foggy weather can significantly benefit traffic management and safety. To address
+  this, most current methods use professional instruments outfitted at fixed locations on the roads to
+  perform the visibility measurement; these methods are expensive and less flexible. In this paper, we
+  propose an innovative end-to-end convolutional neural network framework to estimate the visibility leveraging
+  Koschmieder's law exclusively using the image data. The proposed method estimates the visibility by
+  integrating the physical model into the proposed framework, instead of directly predicting the visibility
+  value via the convolutional neural work. Moreover, we estimate the visibility as a pixel-wise visibility
+  map against those of previous visibility measurement methods which solely predict a single value for
+  an entire image. Thus, the estimated result of our method is more informative, particularly in uneven
+  fog scenarios, which can benefit to developing a more precise early warning system for foggy weather,
+  thereby better protecting the intelligent transportation infrastructure systems and promoting its development.
+  To validate the proposed framework, a virtual dataset, FACI, containing 3,000 foggy images in different
+  concentrations, is collected using the AirSim platform. Detailed experiments show that the proposed
+  method achieves performance competitive to those of state-of-the-art methods.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

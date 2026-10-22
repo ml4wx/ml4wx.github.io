@@ -1,0 +1,65 @@
+id: arxiv-2412.04418
+title: 'ACE2-SOM: Coupling an ML atmospheric emulator to a slab ocean and learning the sensitivity of
+  climate to changed CO$_2$'
+authors:
+- Spencer K. Clark
+- Oliver Watt-Meyer
+- Anna Kwa
+- Jeremy McGibbon
+- Brian Henn
+- W. Andre Perkins
+- Elynn Wu
+- Lucas M. Harris
+- Christopher S. Bretherton
+date: '2024-12-05'
+year: 2024
+venue: 'Journal of Geophysical Research: Machine Learning and Computation'
+venue_type: journal
+ids:
+  arxiv: '2412.04418'
+  doi: 10.1029/2024jh000575
+  openalex: W4414672403
+links:
+  paper: https://arxiv.org/abs/2412.04418
+  pdf: https://arxiv.org/pdf/2412.04418
+orgs:
+- ai2
+- noaa
+topic: climate-emulation
+type: model
+method:
+- neural-operator
+timescale:
+- climate
+spatial:
+- global
+data:
+- era5
+- cmip
+status: research
+summary: Couples the ACE2 emulator to a slab ocean and trains it across CO2 levels, reproducing equilibrium
+  warming but violating energy conservation in transient runs.
+abstract: While autoregressive machine-learning-based emulators have been trained to produce stable and
+  accurate rollouts in the climate of the present-day and recent past, none so far have been trained to
+  emulate the sensitivity of climate to substantial changes in CO$_2$ or other greenhouse gases. As an
+  initial step we couple the Ai2 Climate Emulator version 2 to a slab ocean model (hereafter ACE2-SOM)
+  and train it on output from a collection of equilibrium-climate physics-based reference simulations
+  with varying levels of CO$_2$. We test it in equilibrium and non-equilibrium climate scenarios with
+  CO$_2$ concentrations seen and unseen in training. ACE2-SOM performs well in equilibrium-climate inference
+  with both in-sample and out-of-sample CO$_2$ concentrations, accurately reproducing the emergent time-mean
+  spatial patterns of surface temperature and precipitation change with CO$_2$ doubling, tripling, or
+  quadrupling. In addition, the vertical profile of atmospheric warming and change in extreme precipitation
+  rates up to the 99.9999th percentile closely agree with the reference model. Non-equilibrium-climate
+  inference is more challenging. With CO$_2$ increasing gradually at a rate of 2% year$^{-1}$, ACE2-SOM
+  can accurately emulate the global annual mean trends of surface and lower-to-middle atmosphere fields
+  but produces unphysical jumps in stratospheric fields. With an abrupt quadrupling of CO$_2$, ML-controlled
+  fields transition unrealistically quickly to the 4xCO$_2$ regime. In doing so they violate global energy
+  conservation and exhibit unphysical sensitivities of and surface and top of atmosphere radiative fluxes
+  to instantaneous changes in CO$_2$. Future emulator development needed to address these issues should
+  improve its generalizability to diverse climate change scenarios.
+significance: 5
+cited_by: 9
+score: 55
+highlight: false
+added: '2026-10-22'
+source: seed

@@ -1,0 +1,61 @@
+id: doi-10.5194-gmd-16-2167-2023
+title: Forecasting tropical cyclone tracks in the northwestern Pacific based on a deep-learning model
+authors:
+- Liang Wang
+- Bingcheng Wan
+- Shaohui Zhou
+- Haofei Sun
+- Zhiqiu Gao
+date: '2023-04-20'
+year: 2023
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-16-2167-2023
+  openalex: W4366590207
+links:
+  paper: https://doi.org/10.5194/gmd-16-2167-2023
+  pdf: https://gmd.copernicus.org/articles/16/2167/2023/gmd-16-2167-2023.pdf
+orgs:
+- nuist
+- iap-cas
+topic: extremes-hazards
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: GRU_CNN forecasts northwestern Pacific tropical cyclone tracks for 6 to 72 hours using track
+  history and reanalysis fields, beating RNN, LSTM and GRU.
+abstract: 'Abstract. Tropical cyclones (TCs) are one of the most severe meteorological disasters, making
+  rapid and accurate track forecasts crucial for disaster prevention and mitigation. Because TC tracks
+  are affected by various factors (the steering flow, thermal structure of the underlying surface, and
+  atmospheric circulation), their trajectories present highly complex nonlinear behavior. Deep learning
+  has many advantages in simulating nonlinear systems. In this paper, we explore the movement of TCs in
+  the Northwest Pacific from 1979 to 2021 based on deep-learning technology, divided into training (1979–2014),
+  validation (2015–2018), and test sets (2019–2021), and create 6–72 h TC track forecasts. Only historical
+  trajectory data are used as input for evaluating the forecasts of the three recurrent neural networks
+  utilized: recurrent neural network (RNN), long short-term memory (LSTM), and gated recurrent unit (GRU)
+  models. The GRU approach performed best; to further improve forecast accuracy, a model combining GRU
+  and a convolutional neural network (CNN) called GRU_CNN is proposed to capture the characteristics varying
+  with time. By adding reanalysis data of the steering flow, sea-surface temperatures, and geopotential
+  height around the cyclone, we can extract sufficient information on the historical trajectory features
+  and three-dimensional spatial features. The results show that GRU_CNN outperforms other deep-learning
+  models without CNN layers. Furthermore, by analyzing three additional environmental factors through
+  control experiments, it can be concluded that the historical steering flow of TCs plays a key role,
+  especially for short-term predictions within 24 h, while sea-surface temperatures and geopotential height
+  can gradually improve the 24–72-h forecast. The average distance errors at 6 h and 12 h are 17.22 km
+  and 43.90 km, respectively. Compared with the forecast results of the Central Meteorological Observatory,
+  the model proposed herein is suitable for short-term forecasting of TC tracks.'
+significance: 3
+cited_by: 35
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

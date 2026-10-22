@@ -1,0 +1,63 @@
+id: arxiv-2411.11268
+title: 'ACE2: Accurately learning subseasonal to decadal atmospheric variability and forced responses'
+authors:
+- Oliver Watt-Meyer
+- Brian Henn
+- Jeremy McGibbon
+- Spencer K. Clark
+- Anna Kwa
+- W. Andre Perkins
+- Elynn Wu
+- Lucas Harris
+- Christopher S. Bretherton
+date: '2024-11-18'
+year: 2024
+venue: npj Climate and Atmospheric Science
+venue_type: journal
+ids:
+  arxiv: '2411.11268'
+  doi: 10.1038/s41612-025-01090-0
+  openalex: W4410856408
+links:
+  paper: https://arxiv.org/abs/2411.11268
+  pdf: https://arxiv.org/pdf/2411.11268
+orgs:
+- ai2
+- noaa
+topic: climate-emulation
+topics:
+- s2s-seasonal
+type: model
+method:
+- neural-operator
+timescale:
+- s2s
+- seasonal
+- decadal
+spatial:
+- global
+data:
+- era5
+- cmip
+status: research
+summary: ACE2 is a 450M-parameter emulator that conserves dry air and moisture, runs about 1500 simulated
+  years per day, and reproduces El Niño responses over 80 years.
+abstract: Existing machine learning models of weather variability are not formulated to enable assessment
+  of their response to varying external boundary conditions such as sea surface temperature and greenhouse
+  gases. Here we present ACE2 (Ai2 Climate Emulator version 2) and its application to reproducing atmospheric
+  variability over the past 80 years on timescales from days to decades. ACE2 is a 450M-parameter autoregressive
+  machine learning emulator, operating with 6-hour temporal resolution, 1° horizontal resolution and eight
+  vertical layers. It exactly conserves global dry air mass and moisture and can be stepped forward stably
+  for arbitrarily many steps with a throughput of about 1500 simulated years per wall clock day. ACE2
+  generates emergent phenomena such as tropical cyclones, the Madden Julian Oscillation, and sudden stratospheric
+  warmings. Furthermore, it accurately reproduces the atmospheric response to El Niño variability and
+  global trends of temperature over the past 80 years. However, its sensitivities to separately changing
+  sea surface temperature and carbon dioxide are not entirely realistic.
+significance: 7
+cited_by: 37
+score: 63
+highlight: true
+highlight_reason: ACE2 is a stable, mass-conserving climate emulator that reproduces El Niño responses
+  and 80-year trends at about 1500 simulated years per day. It is a strong step for ML climate emulation.
+added: '2026-10-22'
+source: seed

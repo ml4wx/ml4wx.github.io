@@ -1,0 +1,59 @@
+id: arxiv-2207.00808
+title: On the modern deep learning approaches for precipitation downscaling
+authors:
+- Bipin Kumar
+- Kaustubh Atey
+- Bhupendra Bahadur Singh
+- Rajib Chattopadhyay
+- Nachiket Acharya
+- Manmeet Singh
+- Ravi S. Nanjundiah
+- Suryachandra A. Rao
+date: '2022-07-02'
+year: 2022
+venue: Earth Science Informatics, 2023
+venue_type: journal
+ids:
+  arxiv: '2207.00808'
+  doi: 10.1007/s12145-023-00970-4
+  openalex: W4322718564
+links:
+  paper: https://arxiv.org/abs/2207.00808
+  pdf: https://arxiv.org/pdf/2207.00808
+orgs:
+- noaa
+topic: downscaling
+type: evaluation
+method:
+- gan-vae
+- cnn
+spatial:
+- regional
+- local
+data:
+- stations
+- other
+status: research
+summary: Compares DeepSD, ConvLSTM, U-Net and SR-GAN for precipitation downscaling against IMD station
+  data; SR-GAN performs best.
+abstract: Deep Learning (DL) based downscaling has become a popular tool in earth sciences recently. Increasingly,
+  different DL approaches are being adopted to downscale coarser precipitation data and generate more
+  accurate and reliable estimates at local (~few km or even smaller) scales. Despite several studies adopting
+  dynamical or statistical downscaling of precipitation, the accuracy is limited by the availability of
+  ground truth. A key challenge to gauge the accuracy of such methods is to compare the downscaled data
+  to point-scale observations which are often unavailable at such small scales. In this work, we carry
+  out the DL-based downscaling to estimate the local precipitation data from the India Meteorological
+  Department (IMD), which was created by approximating the value from station location to a grid point.
+  To test the efficacy of different DL approaches, we apply four different methods of downscaling and
+  evaluate their performance. The considered approaches are (i) Deep Statistical Downscaling (DeepSD),
+  augmented Convolutional Long Short Term Memory (ConvLSTM), fully convolutional network (U-NET), and
+  Super-Resolution Generative Adversarial Network (SR-GAN). A custom VGG network, used in the SR-GAN,
+  is developed in this work using precipitation data. The results indicate that SR-GAN is the best method
+  for precipitation data downscaling. The downscaled data is validated with precipitation values at IMD
+  station. This DL method offers a promising alternative to statistical downscaling.
+significance: 3
+cited_by: 67
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

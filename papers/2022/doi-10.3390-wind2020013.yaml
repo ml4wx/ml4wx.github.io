@@ -1,0 +1,55 @@
+id: doi-10.3390-wind2020013
+title: Mid-to-Long Range Wind Forecast in Brazil Using Numerical Modeling and Neural Networks
+authors:
+- Ricardo M. Campos
+- Ronaldo Maia de Jesus Palmeira
+- Henrique P. P. Pereira
+- Laura Azevedo
+date: '2022-04-22'
+year: 2022
+venue: Wind
+venue_type: journal
+ids:
+  doi: 10.3390/wind2020013
+  openalex: W4224322614
+links:
+  paper: https://doi.org/10.3390/wind2020013
+  pdf: https://www.mdpi.com/2674-032X/2/2/13/pdf?version=1650618571
+orgs:
+- noaa
+topic: post-processing
+topics:
+- applications-impacts
+type: application
+timescale:
+- medium
+- s2s
+spatial:
+- regional
+- local
+data:
+- nwp-analysis
+- stations
+status: pre-operational
+summary: Neural network post-processing of ECMWF ensemble mean corrects Brazilian wind-speed bias to within
+  ±0.1 m/s and cuts RMSE by 10–30% for 1–46 day lead times.
+abstract: 'This paper investigated the development of a hybrid model for wind speed forecast, ranging
+  from 1 to 46 days, in the northeast of Brazil. The prediction system was linked to the widely used numerical
+  weather prediction from the ECMWF global ensemble forecast, with neural networks (NNs) trained using
+  local measurements. The focus of this study was on the post-processing of NNs, in terms of data structure,
+  dimensionality, architecture, training strategy, and validation. Multilayer perceptron NNs were constructed
+  using the following inputs: wind components, temperature, humidity, and atmospheric pressure information
+  from ECMWF, as well as latitude, longitude, sin/cos of time, and forecast lead time. The main NN output
+  consisted of the residue of wind speed, i.e., the difference between the arithmetic ensemble mean, derived
+  from ECMWF, and the observations. By preserving the simplicity and small dimension of the NN model,
+  it was possible to build an ensemble of NNs (20 members) that significantly improved the forecasts.
+  The original ECMWF bias of −0.3 to −1.4 m/s has been corrected to values between −0.1 and 0.1 m/s, while
+  also reducing the RMSE in 10 to 30%. The operational implementation is discussed, and a detailed evaluation
+  shows the considerable generalization capability and robustness of the forecast system, with low computational
+  cost.'
+significance: 3
+cited_by: 7
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

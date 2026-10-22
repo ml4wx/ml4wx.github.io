@@ -1,0 +1,53 @@
+id: arxiv-2011.03081
+title: 'Machine Learning Climate Model Dynamics: Offline versus Online Performance'
+authors:
+- Noah D. Brenowitz
+- Brian Henn
+- Jeremy McGibbon
+- Spencer K. Clark
+- Anna Kwa
+- W. Andre Perkins
+- Oliver Watt-Meyer
+- Christopher S. Bretherton
+date: '2020-11-05'
+year: 2020
+venue_type: preprint
+ids:
+  arxiv: '2011.03081'
+  openalex: W3101098605
+links:
+  paper: https://arxiv.org/abs/2011.03081
+  pdf: https://arxiv.org/pdf/2011.03081
+topic: hybrid-parameterization
+topics:
+- climate-emulation
+type: evaluation
+method:
+- classical-ml
+timescale:
+- medium
+- climate
+spatial:
+- global
+data:
+- km-scale-sim
+status: research
+summary: Compares random forest and neural network moist-physics parameterizations trained on a 3 km global
+  simulation; NN wins offline but crashes within 7 days when coupled.
+abstract: Climate models are complicated software systems that approximate atmospheric and oceanic fluid
+  mechanics at a coarse spatial resolution. Typical climate forecasts only explicitly resolve processes
+  larger than 100 km and approximate any process occurring below this scale (e.g. thunderstorms) using
+  so-called parametrizations. Machine learning could improve upon the accuracy of some traditional physical
+  parametrizations by learning from so-called global cloud-resolving models. We compare the performance
+  of two machine learning models, random forests (RF) and neural networks (NNs), at parametrizing the
+  aggregate effect of moist physics in a 3 km resolution global simulation with an atmospheric model.
+  The NN outperforms the RF when evaluated offline on a testing dataset. However, when the ML models are
+  coupled to an atmospheric model run at 200 km resolution, the NN-assisted simulation crashes with 7
+  days, while the RF-assisted simulations remain stable. Both runs produce more accurate weather forecasts
+  than a baseline configuration, but globally averaged climate variables drift over longer timescales.
+significance: 4
+cited_by: 32
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

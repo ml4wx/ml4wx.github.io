@@ -1,0 +1,50 @@
+id: arxiv-2305.15170
+title: Explaining heatwaves with machine learning
+authors:
+- Sebastian Buschow
+- Jan Keller
+- Sabrina Wahl
+date: '2023-05-24'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2305.15170'
+  openalex: W4378474118
+links:
+  paper: https://arxiv.org/abs/2305.15170
+  pdf: https://arxiv.org/pdf/2305.15170
+orgs:
+- dwd
+topic: climate-analysis-attribution
+topics:
+- extremes-hazards
+type: application
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: A neural network with Shapley values on ERA5 predictors explains 70% of European heatwave variability,
+  with upper-level geopotential the largest contributor at 27%.
+abstract: Heatwaves are known to arise from the interplay between large-scale climate variability, synoptic
+  weather patterns and regional to local scale surface processes. While recent research has made important
+  progress for each individual contributing factor, ways to properly incorporate multiple or all of them
+  in a unified analysis are still lacking. In this study, we consider a wide range of possible predictor
+  variables from the ERA5 reanalysis, and ask, how much information on heatwave occurrence in Europe can
+  be learned from each of them. To simplify the problem, we first adapt the recently developed logistic
+  principal component analysis to the task of compressing large binary heatwave fields to a small number
+  of interpretable principal components. The relationships between heatwaves and various climate variables
+  can then be learned by a neural network. Starting from the simple notion that the importance of a variable
+  is given by its impact on the performance of our statistical model, we arrive naturally at the definition
+  of Shapley values. Classic results of game theory show that this is the only fair way of distributing
+  the overall success of a model among its inputs. With this approach, we find a non-linear model that
+  explains 70% of reduced heatwave variability, 27% of which are due to upper level geopotential while
+  top level soil moisture contributes 15% of the overall score. In addition, Shapley interaction values
+  enable us to quantify overlapping information and positive synergies between all pairs of predictors.
+significance: 4
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

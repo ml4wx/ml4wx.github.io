@@ -1,0 +1,46 @@
+id: arxiv-1903.10274
+title: A data-driven approach to precipitation parameterizations using convolutional encoder-decoder neural
+  networks
+authors:
+- Pablo Rozas Larraondo
+- Luigi J. Renzullo
+- Inaki Inza
+- Jose A. Lozano
+date: '2019-03-25'
+year: 2019
+venue_type: preprint
+ids:
+  arxiv: '1903.10274'
+  openalex: W2923650835
+links:
+  paper: https://arxiv.org/abs/1903.10274
+  pdf: https://arxiv.org/pdf/1903.10274
+topic: hybrid-parameterization
+type: model
+method:
+- cnn
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Encoder-decoder CNNs learn total precipitation from geopotential height alone in NWP reanalysis
+  data, offering a data-driven precipitation parameterization with high accuracy and a method to identify
+  influential levels.
+abstract: Numerical Weather Prediction (NWP) models represent sub-grid processes using parameterizations,
+  which are often complex and a major source of uncertainty in weather forecasting. In this work, we devise
+  a simple machine learning (ML) methodology to learn parameterizations from basic NWP fields. Specifically,
+  we demonstrate how encoder-decoder Convolutional Neural Networks (CNN) can be used to derive total precipitation
+  using geopotential height as the only input. Several popular neural network architectures, from the
+  field of image processing, are considered and a comparison with baseline ML methodologies is provided.
+  We use NWP reanalysis data to train different ML models showing how encoder-decoder CNNs are able to
+  interpret the spatial information contained in the geopotential field to infer total precipitation with
+  a high degree of accuracy. We also provide a method to identify the levels of the geopotential height
+  that have a higher influence on precipitation through a variable selection process. As far as we know,
+  this paper covers the first attempt to model NWP parameterizations using CNN methodologies.
+significance: 4
+cited_by: 30
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

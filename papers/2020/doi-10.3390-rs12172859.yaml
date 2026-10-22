@@ -1,0 +1,55 @@
+id: doi-10.3390-rs12172859
+title: Neural Network Based Quality Control of CYGNSS Wind Retrieval
+authors:
+- Rajeswari Balasubramaniam
+- Christopher S. Ruf
+date: '2020-09-03'
+year: 2020
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs12172859
+  openalex: W3083369567
+links:
+  paper: https://doi.org/10.3390/rs12172859
+  pdf: https://www.mdpi.com/2072-4292/12/17/2859/pdf?version=1599136290
+topic: observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- global
+data:
+- satellite
+status: research
+summary: A neural network quality-control filter for CYGNSS ocean wind retrievals reaches over 75% outlier
+  detection with under 20% false alarms for 5–18 m/s winds.
+abstract: Global Navigation Satellite System – Reflectometry (GNSS-R) is a relatively new field in remote
+  sensing that uses reflected GPS signals from the Earth’s surface to study the state of the surface geophysical
+  parameters under observation. The CYGNSS is a first of its kind GNSS-R constellation mission launched
+  in December 2016. It aims at providing high quality global scale GNSS-R measurements that can reliably
+  be used for ocean science applications such as the study of ocean wind speed dynamics, tropical cyclone
+  genesis, coupled ocean wave modelling, and assimilation into Numerical Weather Prediction models. To
+  achieve this goal, strong quality control filters are needed to detect and remove outlier measurements.
+  Currently, quality control of CYGNSS data products are based on fixed thresholds on various engineering,
+  instrument, and measurement conditions. In this work we develop a Neural Network based quality control
+  filter for automated outlier detection of CYGNSS retrieved winds. The primary merit of the proposed
+  ML filter is its ability to better account for interactions between the individual engineering, instrument
+  and measurement conditions than can separate thresholded flags for each one. Use of Machine Learning
+  capabilities to capture inherent patterns in the data can create an efficient and effective mechanism
+  to detect and remove outlier measurements. The resulting filter has a probability of outlier detection
+  (PD) >75% and False Alarm Rate (FAR) < 20% for a wind speed range of 5 to 18 m/s. At least 75% of the
+  outliers with wind speed errors of at least 5 m/s are removed while ~100% of the outliers with wind
+  speed errors of at least 10 m/s are removed. This filter significantly improves data quality. The standard
+  deviation of wind speed retrieval error is reduced from 2.6 m/s without the filter to 1.7 m/s with it
+  over a wind speed range of 0 to 25 m/s. The design space for this filter is also analyzed in this work
+  to characterize trade-offs between PD and FAR. Currently the filter performance is applicable only up
+  to moderate wind speeds, as sufficient data is available only in this range to train the filter, as
+  a way forward, more data over time can help expand the usability of this filter to higher wind speed
+  ranges as well.
+significance: 2
+cited_by: 21
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

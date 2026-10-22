@@ -1,0 +1,61 @@
+id: arxiv-1909.11865
+title: Probabilistic Forecasting using Deep Generative Models
+authors:
+- Alessandro Fanfarillo
+- Behrooz Roozitalab
+- Weiming Hu
+- Guido Cervone
+date: '2019-09-26'
+year: 2019
+venue: GeoInformatica
+venue_type: journal
+ids:
+  arxiv: '1909.11865'
+  doi: 10.1007/s10707-020-00425-8
+  openalex: W2975726533
+links:
+  paper: https://doi.org/10.1007/s10707-020-00425-8
+  pdf: https://arxiv.org/pdf/1909.11865
+orgs:
+- ncar
+topic: post-processing
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- gan-vae
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Deep generative models replace stored archives in the analog ensemble method, cutting memory
+  needs by orders of magnitude for probabilistic NWP post-processing at stations.
+abstract: The Analog Ensemble (AnEn) method tries to estimate the probability distribution of the future
+  state of the atmosphere with a set of past observations that correspond to the best analogs of a deterministic
+  Numerical Weather Prediction (NWP). This model post-processing method has been successfully used to
+  improve the forecast accuracy for several weather-related applications including air quality, and short-term
+  wind and solar power forecasting, to name a few. In order to provide a meaningful probabilistic forecast,
+  the AnEn method requires storing a historical set of past predictions and observations in memory for
+  a period of at least several months and spanning the seasons relevant for the prediction of interest.
+  Although the memory and computing costs of the AnEn method are less expensive than using a brute-force
+  dynamical ensemble approach, for a large number of stations and large datasets, the amount of memory
+  required for AnEn can easily become prohibitive. Furthermore, in order to find the best analogs associated
+  with a certain prediction produced by a NWP model, the current approach requires searching over the
+  entire dataset by applying a certain metric. This approach requires applying the metric over the entire
+  historical dataset, which may take a substantial amount of time. In this work, we investigate an alternative
+  way to implement the AnEn method using deep generative models. By doing so, a generative model can entirely
+  or partially replace the dataset of pairs of predictions and observations, reducing the amount of memory
+  required to produce the probabilistic forecast by several orders of magnitude. Furthermore, the generative
+  model can generate a meaningful set of analogs associated with a certain forecast in constant time without
+  performing any search, saving a considerable amount of time even in the presence of huge historical
+  datasets.
+significance: 3
+cited_by: 25
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

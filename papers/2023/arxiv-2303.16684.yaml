@@ -1,0 +1,47 @@
+id: arxiv-2303.16684
+title: Super-Resolution of Three-Dimensional Temperature and Velocity for Building-Resolving Urban Micrometeorology
+  Using Physics-Guided Convolutional Neural Networks with Image Inpainting Techniques
+authors:
+- Yuki Yasuda
+- Ryo Onishi
+- Keigo Matsuda
+date: '2023-03-29'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2303.16684'
+links:
+  paper: https://arxiv.org/abs/2303.16684
+  pdf: https://arxiv.org/pdf/2303.16684
+topic: downscaling
+type: model
+method:
+- cnn
+spatial:
+- local
+data:
+- km-scale-sim
+status: research
+summary: Physics-guided gated-convolution CNN super-resolves 3D urban air temperature and wind from coarse
+  building-resolving simulations, inferring near-surface flow from flow above buildings.
+abstract: Atmospheric simulations for urban cities can be computationally intensive because of the need
+  for high spatial resolution, such as a few meters, to accurately represent buildings and streets. Deep
+  learning has recently gained attention across various physical sciences for its potential to reduce
+  computational cost. Super-resolution is one such technique that enhances the resolution of data. This
+  paper proposes a convolutional neural network (CNN) that super-resolves instantaneous snapshots of three-dimensional
+  air temperature and wind velocity fields for urban micrometeorology. This super-resolution process requires
+  not only an increase in spatial resolution but also the restoration of missing data caused by the difference
+  in the building shapes that depend on the resolution. The proposed CNN incorporates gated convolution,
+  which is an image inpainting technique that infers missing pixels. The CNN performance has been verified
+  via supervised learning utilizing building-resolving micrometeorological simulations around Tokyo Station
+  in Japan. The CNN successfully reconstructed the temperature and velocity fields around the high-resolution
+  buildings, despite the missing data at lower altitudes due to the coarseness of the low-resolution buildings.
+  This result implies that near-surface flows can be inferred from flows above buildings. This hypothesis
+  was assessed via numerical experiments where all input values below a certain height were made missing.
+  This research suggests the possibility that building-resolving micrometeorological simulations become
+  more practical for urban cities with the aid of neural networks that enhance computational efficiency.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

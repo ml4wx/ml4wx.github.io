@@ -1,0 +1,99 @@
+id: arxiv-2306.08754
+title: 'ClimSim-Online: A Large Multi-scale Dataset and Framework for Hybrid ML-physics Climate Emulation'
+authors:
+- Sungduk Yu
+- Walter Hannah
+- Liran Peng
+- Jerry Lin
+- Mohamed Aziz Bhouri
+- Ritwik Gupta
+- Björn Lütjens
+- Justus C. Will
+- Gunnar Behrens
+- Julius Busecke
+- Nora Loose
+- Charles Stern
+- Tom Beucler
+- Bryce Harrop
+- Benjamin Hillman
+- Andrea Jenney
+- Savannah L. Ferretti
+- Nana Liu
+- Animashree Anandkumar
+- Noah Brenowitz
+- Veronika Eyring
+- Nicholas Geneva
+- Pierre Gentine
+- Stephan Mandt
+- Jaideep Pathak
+- Akshay Subramaniam
+- Carl Vondrick
+- Rose Yu
+- Laure Zanna
+- Tian Zheng
+- Ryan Abernathey
+- Fiaz Ahmed
+- David Bader
+- Pierre Baldi
+- Elizabeth Barnes
+- Christopher Bretherton
+- Peter Caldwell
+- Wayne Chuang
+- Yilun Han
+- Yu Huang
+- Fernando Iglesias-Suarez
+- Sanket Jantre
+- Karthik Kashinath
+- Marat Khairoutdinov
+- Thorsten Kurth
+- Nicholas Lutsko
+- Po-Lun Ma
+- Griffin Mooers
+- J. David Neelin
+- David Randall
+date: '2023-01-01'
+year: 2023
+venue: Advances in Neural Information Processing Systems 36
+venue_type: preprint
+ids:
+  arxiv: '2306.08754'
+  doi: 10.52202/075280-0968
+  openalex: W7133212227
+links:
+  paper: https://arxiv.org/abs/2306.08754
+  pdf: https://arxiv.org/pdf/2306.08754
+  code: https://github.com/leap-stc/climsim-online
+topic: hybrid-parameterization
+type: benchmark
+method:
+- other
+timescale:
+- climate
+spatial:
+- global
+data:
+- km-scale-sim
+status: research
+summary: ClimSim-Online releases a 5.7-billion-sample multiscale dataset plus a containerized workflow
+  for integrating ML emulators into a host climate model for hybrid ML-physics testing.
+abstract: Modern climate projections lack adequate spatial and temporal resolution due to computational
+  constraints, leading to inaccuracies in representing critical processes like thunderstorms that occur
+  on the sub-resolution scale. Hybrid methods combining physics with machine learning (ML) offer faster,
+  higher fidelity climate simulations by outsourcing compute-hungry, high-resolution simulations to ML
+  emulators. However, these hybrid ML-physics simulations require domain-specific data and workflows that
+  have been inaccessible to many ML experts. As an extension of the ClimSim dataset (Yu et al., 2024),
+  we present ClimSim-Online, which also includes an end-to-end workflow for developing hybrid ML-physics
+  simulators. The ClimSim dataset includes 5.7 billion pairs of multivariate input/output vectors, capturing
+  the influence of high-resolution, high-fidelity physics on a host climate simulator's macro-scale state.
+  The dataset is global and spans ten years at a high sampling frequency. We provide a cross-platform,
+  containerized pipeline to integrate ML models into operational climate simulators for hybrid testing.
+  We also implement various ML baselines, alongside a hybrid baseline simulator, to highlight the ML challenges
+  of building stable, skillful emulators. The data (https://huggingface.co/datasets/LEAP/ClimSim_high-res)
+  and code (https://leap-stc.github.io/ClimSim and https://github.com/leap-stc/climsim-online) are publicly
+  released to support the development of hybrid ML-physics and high-fidelity climate simulations.
+significance: 6
+cited_by: 20
+score: 34
+highlight: false
+added: '2026-10-22'
+source: seed

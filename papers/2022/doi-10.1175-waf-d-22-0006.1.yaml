@@ -1,0 +1,60 @@
+id: doi-10.1175-waf-d-22-0006.1
+title: Postprocessing of Ensemble Weather Forecast Using Decision Tree–Based Probabilistic Forecasting
+  Methods
+authors:
+- Patrik Benáček
+- Aleš Farda
+- Petr Štěpánek
+date: '2022-12-29'
+year: 2022
+venue: Weather and Forecasting
+venue_type: journal
+ids:
+  doi: 10.1175/waf-d-22-0006.1
+  openalex: W4313263148
+links:
+  paper: https://doi.org/10.1175/waf-d-22-0006.1
+topic: post-processing
+type: evaluation
+method:
+- classical-ml
+timescale:
+- medium
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Compares tree-based probabilistic post-processing (NGB, QRF, DRF) with EMOS for 1-10 day ensemble
+  2 m temperature over the Czech Republic; QRF and NGB lead at short lead times.
+abstract: Abstract Producing an accurate and calibrated probabilistic forecast has high social and economic
+  value. Systematic errors or biases in the ensemble weather forecast can be corrected by postprocessing
+  models whose development is an urgent challenge. Traditionally, the bias correction is done by employing
+  linear regression models that estimate the conditional probability distribution of the forecast. Although
+  this model framework works well, it is restricted to a prespecified model form that often relies on
+  a limited set of predictors only. Most machine learning (ML) methods can tackle these problems with
+  a point prediction, but only a few of them can be applied effectively in a probabilistic manner. The
+  tree-based ML techniques, namely, natural gradient boosting (NGB), quantile random forests (QRF), and
+  distributional regression forests (DRF), are used to adjust hourly 2-m temperature ensemble prediction
+  at lead times of 1–10 days. The ensemble model output statistics (EMOS) and its boosting version are
+  used as benchmark models. The model forecast is based on the European Centre for Medium-Range Weather
+  Forecasts (ECMWF) for the Czech Republic domain. Two training periods 2015–18 and 2018 only were used
+  to learn the models, and their prediction skill was evaluated in 2019. The results show that the QRF
+  and NGB methods provide the best performance for 1–2-day forecasts, while the EMOS method outperforms
+  other methods for 8–10-day forecasts. Key components to improving short-term forecasting are additional
+  atmospheric/surface state predictors and the 4-yr training sample size. Significance Statement Machine
+  learning methods have great potential and are beginning to be widely applied in meteorology in recent
+  years. A new technique called natural gradient boosting (NGB) has been released and used in this paper
+  to refine the probabilistic forecast of surface temperature. It was found that the NGB has better prediction
+  skills than the traditional ensemble model output statistics in forecasting 1 and 2 days in advance.
+  The NGB has similar prediction skills with lower computational demands compared to other advanced machine
+  learning methods such as the quantile random forests. We showed a path to employ the NGB method in this
+  task, which can be followed for refining other and more challenging meteorological variables such as
+  wind speed or precipitation.
+significance: 3
+cited_by: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

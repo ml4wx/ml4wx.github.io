@@ -1,0 +1,51 @@
+id: arxiv-2022.31986
+title: Multisensor Machine Learning to Retrieve High Spatiotemporal Resolution Land Surface Temperature
+authors:
+- Kate Marie Duffy
+- Thomas Vandal
+- Ramakrishna Nemani
+date: '2022-01-01'
+year: 2022
+venue: IEEE Access
+venue_type: journal
+ids:
+  arxiv: '2022.31986'
+  doi: 10.1109/access.2022.3198673
+  openalex: W4291653582
+links:
+  paper: https://doi.org/10.1109/access.2022.3198673
+orgs:
+- nasa
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: A CNN fuses LEO and geostationary satellite data into 2 km, 10-minute land surface temperature,
+  with 1.73 K mean absolute error against LEO targets.
+abstract: Climate change is making heat waves more frequent, long-lasting, and severe. While multiple
+  satellite types provide data to monitor surface temperature, geostationary (GEO) sensors provide near-continuous,
+  continental-scale observations which can better capture the diurnal variability of land surface temperature
+  (LST) than intermittent observations from low-earth orbit (LEO) sensors. However, standard products
+  from GEO satellites are available at coarsened spatial and temporal resolutions compared to the native
+  sensor resolution. Using datasets from the NASA Earth Exchange, we leveraged co-located, co-temporal
+  observations from LEO and GEO satellites to learn a data-driven mapping using a convolutional neural
+  network. The resulting NASA Earth eXchange Artificial Intelligence LST (NEXAI-LST) achieved a mean absolute
+  error of 1.73 K relative to the target LEO product and improves on both spatial and temporal resolution
+  [2 km, 10 minute] compared to the GEO full disk standard product [10 km, hourly]. In validation against
+  measurements from a ground-based sensor network, NEXAI-LST achieves similar or better fit than both
+  LEO and GEO standard products, while depending none of the prior knowledge of land surface and atmospheric
+  states required by physical-statistical models. Further, application of the model to unseen LEO and
+  GEO satellites demonstrates robust generalization of the model across spatial region, time of day, and
+  sensor. In support of NASA’s open-source science initiative, we make our NEXAI-LST product, model, and
+  codes available to facilitate data exploration and further studies.
+significance: 3
+cited_by: 7
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

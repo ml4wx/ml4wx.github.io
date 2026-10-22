@@ -1,0 +1,54 @@
+id: arxiv-2212.08208
+title: 'Location-aware Adaptive Normalization: A Deep Learning Approach For Wildfire Danger Forecasting'
+authors:
+- Mohamad Hakam Shams Eddin
+- Ribana Roscher
+- Juergen Gall
+date: '2022-12-16'
+year: 2022
+venue: in IEEE Transactions on Geoscience and Remote Sensing, vol. 61, pp. 1-18, 2023, Art no. 4703018
+venue_type: journal
+ids:
+  arxiv: '2212.08208'
+  doi: 10.1109/tgrs.2023.3285401
+links:
+  paper: https://arxiv.org/abs/2212.08208
+  pdf: https://arxiv.org/pdf/2212.08208
+  code: https://github.com/HakamShams/LOAN
+topic: extremes-hazards
+topics:
+- applications-impacts
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+- satellite
+status: research
+summary: A 2D/3D CNN with location-aware adaptive normalization improves wildfire danger forecasting on
+  the FireCube dataset over baselines, with the performance gain reported but not quantified in the abstract.
+abstract: Climate change is expected to intensify and increase extreme events in the weather cycle. Since
+  this has a significant impact on various sectors of our life, recent works are concerned with identifying
+  and predicting such extreme events from Earth observations. With respect to wildfire danger forecasting,
+  previous deep learning approaches duplicate static variables along the time dimension and neglect the
+  intrinsic differences between static and dynamic variables. Furthermore, most existing multi-branch
+  architectures lose the interconnections between the branches during the feature learning stage. To address
+  these issues, this paper proposes a 2D/3D two-branch convolutional neural network (CNN) with a Location-aware
+  Adaptive Normalization layer (LOAN). Using LOAN as a building block, we can modulate the dynamic features
+  conditional on their geographical locations. Thus, our approach considers feature properties as a unified
+  yet compound 2D/3D model. Besides, we propose using the sinusoidal-based encoding of the day of the
+  year to provide the model with explicit temporal information about the target day within the year. Our
+  experimental results show a better performance of our approach than other baselines on the challenging
+  FireCube dataset. The results show that location-aware adaptive feature normalization is a promising
+  technique to learn the relation between dynamic variables and their geographic locations, which is highly
+  relevant for areas where remote sensing data builds the basis for analysis. The source code is available
+  at https://github.com/HakamShams/LOAN.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

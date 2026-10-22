@@ -1,0 +1,48 @@
+id: arxiv-2307.08038
+title: Bivariate DeepKriging for Large-scale Spatial Interpolation of Wind Fields
+authors:
+- Pratik Nag
+- Ying Sun
+- Brian J Reich
+date: '2023-07-16'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2307.08038'
+  openalex: W4384644203
+links:
+  paper: https://arxiv.org/abs/2307.08038
+  pdf: https://arxiv.org/pdf/2307.08038
+topic: downscaling
+type: model
+method:
+- other
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Bivariate DeepKriging uses a spatially embedded DNN to interpolate wind fields at about 500,000
+  locations, beating cokriging and running roughly 20 times faster.
+abstract: High spatial resolution wind data are essential for a wide range of applications in climate,
+  oceanographic and meteorological studies. Large-scale spatial interpolation or downscaling of bivariate
+  wind fields having velocity in two dimensions is a challenging task because wind data tend to be non-Gaussian
+  with high spatial variability and heterogeneity. In spatial statistics, cokriging is commonly used for
+  predicting bivariate spatial fields. However, the cokriging predictor is not optimal except for Gaussian
+  processes. Additionally, cokriging is computationally prohibitive for large datasets. In this paper,
+  we propose a method, called bivariate DeepKriging, which is a spatially dependent deep neural network
+  (DNN) with an embedding layer constructed by spatial radial basis functions for bivariate spatial data
+  prediction. We then develop a distribution-free uncertainty quantification method based on bootstrap
+  and ensemble DNN. Our proposed approach outperforms the traditional cokriging predictor with commonly
+  used covariance functions, such as the linear model of co-regionalization and flexible bivariate Matérn
+  covariance. We demonstrate the computational efficiency and scalability of the proposed DNN model, with
+  computations that are, on average, 20 times faster than those of conventional techniques. We apply the
+  bivariate DeepKriging method to the wind data over the Middle East region at 506,771 locations. The
+  prediction performance of the proposed method is superior over the cokriging predictors and dramatically
+  reduces computation time.
+significance: 3
+cited_by: 4
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

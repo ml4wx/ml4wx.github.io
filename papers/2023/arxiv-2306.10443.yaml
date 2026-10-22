@@ -1,0 +1,53 @@
+id: arxiv-2306.10443
+title: Convolutional GRU Network for Seasonal Prediction of the El Niño-Southern Oscillation
+authors:
+- Lingda Wang
+- Savana Ammons
+- Vera Mikyoung Hur
+- Ryan L. Sriver
+- Zhizhen Zhao
+date: '2023-06-18'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2306.10443'
+  openalex: W4381552834
+links:
+  paper: https://arxiv.org/abs/2306.10443
+  pdf: https://arxiv.org/pdf/2306.10443
+topic: s2s-seasonal
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- seasonal
+spatial:
+- regional
+data:
+- cmip
+status: research
+summary: A convolutional GRU encoder-decoder forecasts ENSO-region SST maps and the Niño 3.4 index, beating
+  LIM, analog and RNN baselines in correlation, RMSE and useful prediction range on climate model data.
+abstract: Predicting sea surface temperature (SST) within the El Niño-Southern Oscillation (ENSO) region
+  has been extensively studied due to its significant influence on global temperature and precipitation
+  patterns. Statistical models such as linear inverse model (LIM), analog forecasting (AF), and recurrent
+  neural network (RNN) have been widely used for ENSO prediction, offering flexibility and relatively
+  low computational expense compared to large dynamic models. However, these models have limitations in
+  capturing spatial patterns in SST variability or relying on linear dynamics. Here we present a modified
+  Convolutional Gated Recurrent Unit (ConvGRU) network for the ENSO region spatio-temporal sequence prediction
+  problem, along with the Niño 3.4 index prediction as a down stream task. The proposed ConvGRU network,
+  with an encoder-decoder sequence-to-sequence structure, takes historical SST maps of the Pacific region
+  as input and generates future SST maps for subsequent months within the ENSO region. To evaluate the
+  performance of the ConvGRU network, we trained and tested it using data from multiple large climate
+  models. The results demonstrate that the ConvGRU network significantly improves the predictability of
+  the Niño 3.4 index compared to LIM, AF, and RNN. This improvement is evidenced by extended useful prediction
+  range, higher Pearson correlation, and lower root-mean-square error. The proposed model holds promise
+  for improving our understanding and predicting capabilities of the ENSO phenomenon and can be broadly
+  applicable to other weather and climate prediction scenarios with spatial patterns and teleconnections.
+significance: 4
+cited_by: 2
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

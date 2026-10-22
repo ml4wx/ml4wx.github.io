@@ -1,0 +1,45 @@
+id: arxiv-2209.11497
+title: Time Series Causal Link Estimation under Hidden Confounding using Knockoff Interventions
+authors:
+- Violeta Teodora Trifunov
+- Maha Shadaydeh
+- Joachim Denzler
+date: '2022-09-23'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2209.11497'
+links:
+  paper: https://arxiv.org/abs/2209.11497
+  pdf: https://arxiv.org/pdf/2209.11497
+topic: climate-analysis-attribution
+topics:
+- xai-uq-physics
+type: model
+method:
+- gan-vae
+spatial:
+- global
+data:
+- other
+status: research
+summary: Uses a VAE with knockoff interventions to estimate causal links under hidden confounding, applied
+  to aerosol-cloud-climate time series with better accuracy than a deconfounding benchmark.
+abstract: Latent variables often mask cause-effect relationships in observational data which provokes
+  spurious links that may be misinterpreted as causal. This problem sparks great interest in the fields
+  such as climate science and economics. We propose to estimate confounded causal links of time series
+  using Sequential Causal Effect Variational Autoencoder (SCEVAE) while applying Knockoff interventions.
+  Knockoff variables have the same distribution as the originals and preserve the correlation to other
+  variables. This allows for counterfactuals that are more faithful to the observational distribution.
+  We show the advantage of Knockoff interventions by applying SCEVAE to synthetic datasets with both linear
+  and nonlinear causal links. Moreover, we apply SCEVAE with Knockoffs to real aerosol-cloud-climate observational
+  time series data. We compare our results on synthetic data to those of a time series deconfounding method
+  both with and without estimated confounders. We show that our method outperforms this benchmark by comparing
+  both methods to the ground truth. For the real data analysis, we rely on expert knowledge of causal
+  links and demonstrate how using suitable proxy variables improves the causal link estimation in the
+  presence of hidden confounders.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

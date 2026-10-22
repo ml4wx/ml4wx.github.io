@@ -1,0 +1,52 @@
+id: arxiv-2405.03376
+title: 'CRA5: Extreme Compression of ERA5 for Portable Global Climate and Weather Research via an Efficient
+  Variational Transformer'
+authors:
+- Tao Han
+- Zhenghao Chen
+- Song Guo
+- Wanghan Xu
+- Lei Bai
+date: '2024-05-06'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2405.03376'
+links:
+  paper: https://arxiv.org/abs/2405.03376
+  pdf: https://arxiv.org/pdf/2405.03376
+  code: https://github.com/taohan10200/CRA5
+topic: infra-software
+type: benchmark
+method:
+- transformer
+- gan-vae
+spatial:
+- global
+data:
+- era5
+status: research
+summary: CRA5 compresses 226 TB of ERA5 to 0.7 TB (over 300x) with a VAE transformer codec, and models
+  trained on it match original-data forecast accuracy.
+abstract: The advent of data-driven weather forecasting models, which learn from hundreds of terabytes
+  (TB) of reanalysis data, has significantly advanced forecasting capabilities. However, the substantial
+  costs associated with data storage and transmission present a major challenge for data providers and
+  users, affecting resource-constrained researchers and limiting their accessibility to participate in
+  AI-based meteorological research. To mitigate this issue, we introduce an efficient neural codec, the
+  Variational Autoencoder Transformer (VAEformer), for extreme compression of climate data to significantly
+  reduce data storage cost, making AI-based meteorological research portable to researchers. Our approach
+  diverges from recent complex neural codecs by utilizing a low-complexity Auto-Encoder transformer. This
+  encoder produces a quantized latent representation through variance inference, which reparameterizes
+  the latent space as a Gaussian distribution. This method improves the estimation of distributions for
+  cross-entropy coding. Extensive experiments demonstrate that our VAEformer outperforms existing state-of-the-art
+  compression methods in the context of climate data. By applying our VAEformer, we compressed the most
+  popular ERA5 climate dataset (226 TB) into a new dataset, CRA5 (0.7 TB). This translates to a compression
+  ratio of over 300 while retaining the dataset's utility for accurate scientific analysis. Further, downstream
+  experiments show that global weather forecasting models trained on the compact CRA5 dataset achieve
+  forecasting accuracy comparable to the model trained on the original dataset. Code, the CRA5 dataset,
+  and the pre-trained model are available at https://github.com/taohan10200/CRA5.
+significance: 5
+score: 30
+highlight: false
+added: '2026-10-22'
+source: seed

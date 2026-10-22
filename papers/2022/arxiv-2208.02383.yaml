@@ -1,0 +1,57 @@
+id: arxiv-2208.02383
+title: 'A new paradigm for medium-range severe weather forecasts: probabilistic random forest-based predictions'
+authors:
+- Aaron J. Hill
+- Russ S. Schumacher
+- Israel Jirak
+date: '2022-08-03'
+year: 2022
+venue: Weather and Forecasting
+venue_type: journal
+ids:
+  arxiv: '2208.02383'
+  doi: 10.1175/waf-d-22-0143.1
+  openalex: W4310576926
+links:
+  paper: https://doi.org/10.1175/waf-d-22-0143.1
+  pdf: https://arxiv.org/pdf/2208.02383
+orgs:
+- colorado-state-university
+- noaa
+topic: extremes-hazards
+topics:
+- post-processing
+type: model
+method:
+- classical-ml
+timescale:
+- medium
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: pre-operational
+summary: Random forests trained on GEFS reforecasts and severe weather reports give probabilistic US severe-weather
+  forecasts for days 4-8, comparable to SPC outlooks at days 4-5.
+abstract: Historical observations of severe weather and simulated severe weather environments (i.e., features)
+  from the Global Ensemble Forecast System v12 (GEFSv12) Reforecast Dataset (GEFS/R) are used in conjunction
+  to train and test random forest (RF) machine learning (ML) models to probabilistically forecast severe
+  weather out to days 4--8. RFs are trained with 9 years of the GEFS/R and severe weather reports to establish
+  statistical relationships. Feature engineering is briefly explored to examine alternative methods for
+  gathering features around observed events, including simplifying features using spatial averaging and
+  increasing the GEFS/R ensemble size with time-lagging. Validated RF models are tested with ~1.5 years
+  of real-time forecast output from the operational GEFSv12 ensemble and are evaluated alongside expert
+  human-generated outlooks from the Storm Prediction Center (SPC). Both RF-based forecasts and SPC outlooks
+  are skillful with respect to climatology at days 4 and 5 with degrading skill thereafter. The RF-based
+  forecasts exhibit tendencies to underforecast severe weather events, but they tend to be well-calibrated
+  at lower probability thresholds. Spatially averaging predictors during RF training allows for prior-day
+  thermodynamic and kinematic environments to generate skillful forecasts, while time-lagging acts to
+  expand the forecast areas, increasing resolution but decreasing objective skill. The results highlight
+  the utility of ML-generated products to aid SPC forecast operations into the medium range.
+significance: 4
+cited_by: 30
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,62 @@
+id: doi-10.5194-gmd-14-4019-2021
+title: 'MSDM v1.0: A machine learning model for precipitation nowcasting over eastern China using multisource
+  data'
+authors:
+- Dawei Li
+- Yudi Liu
+- Chaohui Chen
+date: '2021-06-29'
+year: 2021
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-14-4019-2021
+  openalex: W3119319039
+links:
+  paper: https://doi.org/10.5194/gmd-14-4019-2021
+  pdf: https://gmd.copernicus.org/articles/14/4019/2021/gmd-14-4019-2021.pdf
+topic: nowcasting
+type: model
+method:
+- cnn
+- classical-ml
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- satellite
+- stations
+status: research
+summary: MSDM combines optical flow, random forest and CNN to nowcast East China precipitation at 30 to
+  120 minutes from radar and satellite data.
+abstract: Abstract. East China is one of the most economically developed and most densely populated areas
+  in the world. Due to its special geographical location and climate, East China is affected by different
+  weather systems like monsoon, shear line, typhoon and extratropical cyclone, in the imminent future
+  the rainfall rate affected by which is difficult to precisely predict. Traditional physics-based methods
+  like Numerical Weather Prediction (NWP) tend to perform poorly for the nowcasting problem due to its
+  spinup issue. Meanwhile, various meteorological stations are distributed here, generating a large amount
+  of observation data every day, which has a great potential to be applied to data-driven methods. Thus,
+  it is important to train a data-driven model from scratch that suitable to the specific weather situation
+  of East China. We collect three kinds of data (radar, satellite, precipitation) in flood season from
+  2017 to 2018 of this area and preprocess them into ndarray (256 × 256) that cover East China with a
+  domain of 12.8 × 12.8°.The Multi-Source Data Model (MSDM) which we developed combines the Optical flow,
+  Random forest and Convolutional Neural Network (CNN). It treats the precipitation nowcasting task as
+  an image-to-image problem, which takes radar and satellite data with a interval of 30 minutes as inputs
+  and predicts radar echo intensity at a lead time of 30 minutes. To reduce the smoothing caused by convolution,
+  we use Optical flow to predict satellite data in the following 120 minutes. The predicted radar echo
+  from MSDM together with satellite data from Optical flow are recursively implemented in MSDM to achieve
+  120 minutes lead time. The predictions from MSDM are comparable to those of other baseline models with
+  a high temporal resolution of 6 minutes. To solve the blurry image problems, we applied a modified SSIM
+  as a loss function. Furthermore, we use Random forest with predicted radar and satellite data to estimate
+  the rainfall rate, the results outperform those of the traditional Z-R relationship. The experiments
+  confirm that machine learning with multi-source data provides more reasonable predictions and reveals
+  a better non-linear relationship between radar echo and precipitation rate. Besides the algorithms will
+  be developed, exploiting the potential of multi-source data will bring more improvements.
+significance: 4
+cited_by: 40
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

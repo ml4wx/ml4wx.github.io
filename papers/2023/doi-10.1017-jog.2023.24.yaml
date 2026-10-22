@@ -1,0 +1,63 @@
+id: doi-10.1017-jog.2023.24
+title: Automated prediction of wet-snow avalanche activity in the Swiss Alps
+authors:
+- Martin Hendrick
+- Frank Techel
+- Michele Volpi
+- Tasko Olevski
+- Cristina Pérez-Guillén
+- Alec van Herwijnen
+- Jürg Schweizer
+date: '2023-05-18'
+year: 2023
+venue: Journal of Glaciology
+venue_type: journal
+ids:
+  doi: 10.1017/jog.2023.24
+  openalex: W4377108100
+links:
+  paper: https://doi.org/10.1017/jog.2023.24
+  pdf: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/166D6321D57FFAC04DC7CEE773C0A45A/S0022143023000242a.pdf/div-class-title-automated-prediction-of-wet-snow-avalanche-activity-in-the-swiss-alps-div.pdf
+orgs:
+- sdsc
+topic: applications-impacts
+topics:
+- extremes-hazards
+type: model
+method:
+- classical-ml
+timescale:
+- nowcast
+- short
+spatial:
+- regional
+data:
+- stations
+- nwp-analysis
+status: research
+summary: A random forest driven by weather-station data predicts wet-snow avalanche activity in the Swiss
+  Alps, with F1 near 0.8 in nowcast and NWP-driven 24-hour modes.
+abstract: Abstract Wet-snow avalanches are triggered by the infiltration of liquid water which weakens
+  the snowpack. Wet-snow avalanches are among the most destructive avalanches, yet their release mechanism
+  is not sufficiently understood for a process-based prediction model. Therefore, we followed a data-driven
+  approach and developed a random forest model, depending on slope aspect, to predict the local wet-snow
+  avalanche activity at the locations of 124 automated weather stations distributed throughout the Swiss
+  Alps. The input variables were the snow and weather data recorded by the stations over the past 20 years.
+  The target variable was based on manual observations over the same 20-year period. To filter out erroneous
+  reports, we defined the days with wet-snow avalanches in a stringent manner, selecting only the most
+  extreme active or inactive days, which reduced the size of the dataset but increased the reliability
+  of the target variable. The model was trained with weather variables and variables computed from simulated
+  snow stratigraphy in 38 $^\circ$ slopes facing the 4 cardinal directions. While model development and
+  validation were done in nowcast mode, we also studied model performance in 24-hour forecast mode by
+  using input variables computed from a numerical weather prediction (NWP) model. Overall, the performance
+  was good in both nowcast and forecast mode (f1-score around 0.8). To assess model performance beyond
+  the stringent definition of wet-snow avalanche days, we compared model predictions to wet-snow avalanche
+  activity over the entire Swiss Alps, based on the raw data over 8 winters. We obtained a Spearman correlation
+  coefficient of 0.71. Hence, our model represents a step toward the application of support tools in operational
+  wet-snow avalanche forecasting.
+significance: 3
+cited_by: 26
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

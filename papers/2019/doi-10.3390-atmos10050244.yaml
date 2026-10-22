@@ -1,0 +1,49 @@
+id: doi-10.3390-atmos10050244
+title: 'Computer Vision in Precipitation Nowcasting: Applying Image Quality Assessment Metrics for Training
+  Deep Neural Networks'
+authors:
+- Quang-Khai Tran
+- Sa-Kwang Song
+date: '2019-05-02'
+year: 2019
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos10050244
+  openalex: W2943446701
+links:
+  paper: https://doi.org/10.3390/atmos10050244
+  pdf: https://www.mdpi.com/2073-4433/10/5/244/pdf?version=1556790489
+topic: nowcasting
+type: model
+method:
+- cnn
+- rnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Sequence-to-sequence ConvRNN for radar echo extrapolation trained with SSIM losses, reducing
+  blurry 10-step precipitation predictions.
+abstract: This paper presents a viewpoint from computer vision to the radar echo extrapolation task in
+  the precipitation nowcasting domain. Inspired by the success of some convolutional recurrent neural
+  network models in this domain, including convolutional LSTM, convolutional GRU and trajectory GRU, we
+  designed a new sequence-to-sequence neural network structure to leverage these models in a realistic
+  data context. In this design, we decreased the numbers of channels in high abstract recurrent layers
+  rather than increasing them. We formulated the task as a problem of encoding five radar images and predicting
+  10 steps ahead at the pixel level, and found that using only the common mean squared error can misguide
+  the training and mislead the testing. Especially, the image quality of last predictions usually degraded
+  rapidly. As a solution, we employed some visual image quality assessment techniques including Structural
+  Similarity (SSIM) and multi-scale SSIM to train our models. Experimental results show that our structure
+  was more tolerant to increasing uncertainty in the data, and the use of image quality metrics can significantly
+  reduce the blurry image issue. Moreover, we found that using SSIM was very effective and a combination
+  of SSIM with mean squared error and mean absolute error yielded the best prediction quality.
+significance: 3
+cited_by: 114
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

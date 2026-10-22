@@ -1,0 +1,50 @@
+id: doi-10.3390-rs11192303
+title: Multi-Channel Weather Radar Echo Extrapolation with Convolutional Recurrent Neural Networks
+authors:
+- Quang-Khai Tran
+- Sa-Kwang Song
+date: '2019-10-02'
+year: 2019
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs11192303
+  openalex: W2978043874
+links:
+  paper: https://doi.org/10.3390/rs11192303
+  pdf: https://www.mdpi.com/2072-4292/11/19/2303/pdf
+topic: nowcasting
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: A convolutional recurrent network for 3D radar echo extrapolation uses a per-channel output block
+  to fix cross-channel contamination and shows gains from augmentation.
+abstract: This article presents an investigation into the problem of 3D radar echo extrapolation in precipitation
+  nowcasting, using recent AI advances, together with a viewpoint from Computer Vision. While Deep Learning
+  methods, especially convolutional recurrent neural networks, have been developed to perform extrapolation,
+  most works use 2D radar images rather than 3D images. In addition, the very few ones which try 3D data
+  do not show a clear picture of results. Through this study, we found a potential problem in the convolution-based
+  prediction of 3D data, which is similar to the cross-talk effect in multi-channel radar processing but
+  has not been documented well in the literature, and discovered the root cause. The problem was that,
+  when we generated different channels using one receptive field, some information in a channel, especially
+  observation errors, might affect other channels unexpectedly. We found that, when using the early-stopping
+  technique to avoid over-fitting, the receptive field did not learn enough to cancel unnecessary information.
+  If we increased the number of training iterations, this effect could be reduced but that might worsen
+  the over-fitting situation. We therefore proposed a new output generation block which generates each
+  channel separately and showed the improvement. Moreover, we also found that common image augmentation
+  techniques in Computer Vision can be helpful for radar echo extrapolation, improving testing mean squared
+  error of employed models at least 20% in our experiments.
+significance: 3
+cited_by: 52
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

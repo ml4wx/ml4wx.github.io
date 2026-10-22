@@ -1,0 +1,48 @@
+id: arxiv-2306.10574
+title: Score-based Data Assimilation
+authors:
+- François Rozet
+- Gilles Louppe
+date: '2023-01-01'
+year: 2023
+venue: Advances in Neural Information Processing Systems 36
+venue_type: preprint
+ids:
+  arxiv: '2306.10574'
+  doi: 10.52202/075280-1763
+  openalex: W7133203373
+links:
+  paper: https://arxiv.org/abs/2306.10574
+  pdf: https://arxiv.org/pdf/2306.10574
+topic: data-assimilation
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+spatial:
+- global
+data:
+- other
+status: research
+summary: Score-based data assimilation learns a generative prior over state trajectories and applies observations
+  only at inference, enabling zero-shot observation scenarios for long dynamical-system trajectories.
+abstract: Data assimilation, in its most comprehensive form, addresses the Bayesian inverse problem of
+  identifying plausible state trajectories that explain noisy or incomplete observations of stochastic
+  dynamical systems. Various approaches have been proposed to solve this problem, including particle-based
+  and variational methods. However, most algorithms depend on the transition dynamics for inference, which
+  becomes intractable for long time horizons or for high-dimensional systems with complex dynamics, such
+  as oceans or atmospheres. In this work, we introduce score-based data assimilation for trajectory inference.
+  We learn a score-based generative model of state trajectories based on the key insight that the score
+  of an arbitrarily long trajectory can be decomposed into a series of scores over short segments. After
+  training, inference is carried out using the score model, in a non-autoregressive manner by generating
+  all states simultaneously. Quite distinctively, we decouple the observation model from the training
+  procedure and use it only at inference to guide the generative process, which enables a wide range of
+  zero-shot observation scenarios. We present theoretical and empirical evidence supporting the effectiveness
+  of our method.
+significance: 5
+cited_by: 28
+score: 20
+highlight: false
+added: '2026-10-22'
+source: seed

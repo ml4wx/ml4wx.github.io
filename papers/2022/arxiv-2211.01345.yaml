@@ -1,0 +1,54 @@
+id: arxiv-2211.01345
+title: Generative machine learning methods for multivariate ensemble post-processing
+authors:
+- Jieyu Chen
+- Tim Janke
+- Florian Steinke
+- Sebastian Lerch
+date: '2022-09-26'
+year: 2022
+venue: Annals of Applied Statistics (2024), 18, 159-183
+venue_type: journal
+ids:
+  arxiv: '2211.01345'
+  doi: 10.1214/23-aoas1784
+links:
+  paper: https://arxiv.org/abs/2211.01345
+  pdf: https://arxiv.org/pdf/2211.01345
+topic: post-processing
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- other
+timescale:
+- short
+spatial:
+- local
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Generative neural network post-processing of ensemble forecasts captures multivariate dependencies
+  better than copula methods for German station temperature and wind.
+abstract: Ensemble weather forecasts based on multiple runs of numerical weather prediction models typically
+  show systematic errors and require post-processing to obtain reliable forecasts. Accurately modeling
+  multivariate dependencies is crucial in many practical applications, and various approaches to multivariate
+  post-processing have been proposed where ensemble predictions are first post-processed separately in
+  each margin and multivariate dependencies are then restored via copulas. These two-step methods share
+  common key limitations, in particular the difficulty to include additional predictors in modeling the
+  dependencies. We propose a novel multivariate post-processing method based on generative machine learning
+  to address these challenges. In this new class of nonparametric data-driven distributional regression
+  models, samples from the multivariate forecast distribution are directly obtained as output of a generative
+  neural network. The generative model is trained by optimizing a proper scoring rule which measures the
+  discrepancy between the generated and observed data, conditional on exogenous input variables. Our method
+  does not require parametric assumptions on univariate distributions or multivariate dependencies and
+  allows for incorporating arbitrary predictors. In two case studies on multivariate temperature and wind
+  speed forecasting at weather stations over Germany, our generative model shows significant improvements
+  over state-of-the-art methods and particularly improves the representation of spatial dependencies.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

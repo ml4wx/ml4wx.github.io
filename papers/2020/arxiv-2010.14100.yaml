@@ -1,0 +1,51 @@
+id: arxiv-2010.14100
+title: A Multi-task Two-stream Spatiotemporal Convolutional Neural Network for Convective Storm Nowcasting
+authors:
+- W. Zhang
+- H. Liu
+- P. Li
+- L. Han
+date: '2020-10-27'
+year: 2020
+venue: 2020 IEEE International Conference on Big Data (Big Data), 2020, pp. 3953-3960
+venue_type: journal
+ids:
+  arxiv: '2010.14100'
+  doi: 10.1109/bigdata50022.2020.9377890
+links:
+  paper: https://arxiv.org/abs/2010.14100
+  pdf: https://arxiv.org/pdf/2010.14100
+topic: nowcasting
+topics:
+- observations-remote-sensing
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- satellite
+status: research
+summary: A multi-task two-stream CNN fuses radar and satellite data for convective storm nowcasting, using
+  pixel-wise sampling to handle class imbalance.
+abstract: The goal of convective storm nowcasting is local prediction of severe and imminent convective
+  storms. Here, we consider the convective storm nowcasting problem from the perspective of machine learning.
+  First, we use a pixel-wise sampling method to construct spatiotemporal features for nowcasting, and
+  flexibly adjust the proportions of positive and negative samples in the training set to mitigate class-imbalance
+  issues. Second, we employ a concise two-stream convolutional neural network to extract spatial and temporal
+  cues for nowcasting. This simplifies the network structure, reduces the training time requirement, and
+  improves classification accuracy. The two-stream network used both radar and satellite data. In the
+  resulting two-stream, fused convolutional neural network, some of the parameters are entered into a
+  single-stream convolutional neural network, but it can learn the features of many data. Further, considering
+  the relevance of classification and regression tasks, we develop a multi-task learning strategy that
+  predicts the labels used in such tasks. We integrate two-stream multi-task learning into a single convolutional
+  neural network. Given the compact architecture, this network is more efficient and easier to optimize
+  than existing recurrent neural networks.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

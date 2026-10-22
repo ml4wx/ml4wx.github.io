@@ -1,0 +1,47 @@
+id: arxiv-2208.08956
+title: 'DeepClouds.ai: Deep learning enabled computationally cheap direct numerical simulations'
+authors:
+- Moumita Bhowmik
+- Manmeet Singh
+- Suryachandra Rao
+- Souvik Paul
+date: '2022-08-18'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2208.08956'
+  openalex: W4292433510
+links:
+  paper: https://arxiv.org/abs/2208.08956
+  pdf: https://arxiv.org/pdf/2208.08956
+topic: hybrid-parameterization
+type: model
+method:
+- cnn
+spatial:
+- local
+data:
+- km-scale-sim
+status: research
+summary: A 3D U-Net emulates rising-cloud direct numerical simulations over larger domains, matching DNS
+  score metrics without solving the dynamical core, aiming at cloud parameterization.
+abstract: Simulation of turbulent flows, especially at the edges of clouds in the atmosphere, is an inherently
+  challenging task. Hitherto, the best possible computational method to perform such experiments is the
+  Direct Numerical Simulation (DNS). DNS involves solving non-linear partial differential equations for
+  fluid flows, also known as Navier-Stokes equations, on discretized grid boxes in a three-dimensional
+  space. It is a valuable paradigm that has guided the numerical weather prediction models to compute
+  rainfall formation. However, DNS cannot be performed for large domains of practical utility to the weather
+  forecast community. Here, we introduce DeepClouds.ai, a 3D-UNET that simulates the outputs of a rising
+  cloud DNS experiment. The problem of increasing the domain size in DNS is addressed by mapping an inner
+  3D cube to the complete 3D cube from the output of the DNS discretized grid simulation. Our approach
+  effectively captures turbulent flow dynamics without having to solve the complex dynamical core. The
+  baseline shows that the deep learning-based simulation is comparable to the partial-differential equation-based
+  model as measured by various score metrics. This framework can be used to further the science of turbulence
+  and cloud flows by enabling simulations over large physical domains in the atmosphere. It would lead
+  to cascading societal benefits by improved weather predictions via advanced parameterization schemes.
+significance: 3
+cited_by: 8
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

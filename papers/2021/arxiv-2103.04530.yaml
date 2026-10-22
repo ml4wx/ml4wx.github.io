@@ -1,0 +1,51 @@
+id: arxiv-2103.04530
+title: Weather Analogs with a Machine Learning Similarity Metric for Renewable Resource Forecasting
+authors:
+- Weiming Hu
+- Guido Cervone
+- George Young
+- Luca Delle Monache
+date: '2021-03-08'
+year: 2021
+venue_type: preprint
+ids:
+  arxiv: '2103.04530'
+links:
+  paper: https://arxiv.org/abs/2103.04530
+  pdf: https://arxiv.org/pdf/2103.04530
+topic: post-processing
+topics:
+- applications-impacts
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- regional
+- local
+data:
+- nwp-analysis
+status: research
+summary: A neural-network similarity metric replaces hand-tuned distances in analog ensembles, improving
+  wind speed and solar irradiance forecasts over Euclidean-distance analogs.
+abstract: The Analog Ensemble (AnEn) technique has been shown effective on several weather problems. Unlike
+  previous weather analogs that are sought within a large spatial domain and an extended temporal window,
+  AnEn strictly confines space and time, and independently generates results at each grid point within
+  a short time window. AnEn can find similar forecasts that lead to accurate and calibrated ensemble forecasts.
+  The central core of the AnEn technique is a similarity metric that sorts historical forecasts with respect
+  to a new target prediction. A commonly used metric is Euclidean distance. However, a significant difficulty
+  using this metric is the definition of the weights for all the parameters. Generally, feature selection
+  and extensive weight search are needed. This paper proposes a novel definition of weather analogs through
+  a Machine Learning (ML) based similarity metric. The similarity metric uses neural networks that are
+  trained and instantiated to search for weather analogs. This new metric allows incorporating all variables
+  without requiring a prior feature selection and weight optimization. Experiments are presented on the
+  application of this new metric to forecast wind speed and solar irradiance. Results show that the ML
+  metric generally outperforms the original metric. The ML metric has a better capability to correct for
+  larger errors and to take advantage of a larger search repository. Spatial predictions using a learned
+  metric also show the ability to define effective latent features that are transferable to other locations.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

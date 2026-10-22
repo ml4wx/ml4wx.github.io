@@ -1,0 +1,65 @@
+id: arxiv-2504.09340
+title: 'Building Machine Learning Limited Area Models: Kilometer-Scale Weather Forecasting in Realistic
+  Settings'
+authors:
+- Simon Adamov
+- Joel Oskarsson
+- Leif Denby
+- Tomas Landelius
+- Kasper Hintz
+- Simon Christiansen
+- Irene Schicker
+- Carlos Osuna
+- Fredrik Lindsten
+- Oliver Fuhrer
+- Sebastian Schemm
+date: '2025-04-12'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2504.09340'
+  openalex: W4415156407
+links:
+  paper: https://arxiv.org/abs/2504.09340
+  pdf: https://arxiv.org/pdf/2504.09340
+  code: https://github.com/joeloskarsson/neural-lam-dev
+topic: regional-km-scale
+topics:
+- global-medium-range
+type: model
+method:
+- gnn
+timescale:
+- medium
+spatial:
+- regional
+data:
+- era5
+- nwp-analysis
+- stations
+status: research
+summary: Kilometre-scale graph-based limited-area models for Denmark and Switzerland, driven by flexible
+  boundary forcing, match or beat the NWP baseline for key surface variables.
+abstract: Machine learning is revolutionizing global weather forecasting, with models that efficiently
+  produce highly accurate forecasts. Apart from global forecasting there is also a large value in high-resolution
+  regional weather forecasts, focusing on accurate simulations of the atmosphere for a limited area. Initial
+  attempts have been made to use machine learning for such limited area scenarios, but these experiments
+  do not consider realistic forecasting settings and do not investigate the many design choices involved.
+  We present a framework for building kilometer-scale machine learning limited area models with boundary
+  conditions imposed through a flexible boundary forcing method. This enables boundary conditions defined
+  either from reanalysis or operational forecast data. Our approach employs specialized graph constructions
+  with rectangular and triangular meshes, along with multi-step rollout training strategies to improve
+  temporal consistency. We perform systematic evaluation of different design choices, including the boundary
+  width, graph construction and boundary forcing integration. Models are evaluated across both a Danish
+  and a Swiss domain, two regions that exhibit different orographical characteristics. Verification is
+  performed against both gridded analysis data and in-situ observations, including a case study for the
+  storm Ciara in February 2020. Both models achieve skillful predictions across a wide range of variables,
+  with our Swiss model outperforming the numerical weather prediction baseline for key surface variables.
+  With their substantially lower computational cost, our findings demonstrate great potential for machine
+  learning limited area models in the future of regional weather forecasting.
+significance: 5
+cited_by: 1
+score: 30
+highlight: false
+added: '2026-10-22'
+source: seed

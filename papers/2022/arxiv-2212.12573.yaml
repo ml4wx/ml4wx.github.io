@@ -1,0 +1,47 @@
+id: arxiv-2212.12573
+title: Combining Stochastic Parameterized Reduced-Order Models with Machine Learning for Data Assimilation
+  and Uncertainty Quantification with Partial Observations
+authors:
+- Changhong Mou
+- Leslie M. Smith
+- Nan Chen
+date: '2022-12-23'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2212.12573'
+links:
+  paper: https://arxiv.org/abs/2212.12573
+  pdf: https://arxiv.org/pdf/2212.12573
+topic: data-assimilation
+type: model
+method:
+- other
+data:
+- other
+status: research
+summary: Hybrid data assimilation pairs a stochastic reduced-order model with a learned nonlinear map
+  to recover unobserved states in a precipitating quasi-geostrophic model. Idealized atmosphere testbed.
+abstract: A hybrid data assimilation algorithm is developed for complex dynamical systems with partial
+  observations. The method starts with applying a spectral decomposition to the entire spatiotemporal
+  fields, followed by creating a machine learning model that builds a nonlinear map between the coefficients
+  of observed and unobserved state variables for each spectral mode. A cheap low-order nonlinear stochastic
+  parameterized extended Kalman filter (SPEKF) model is employed as the forecast model in the ensemble
+  Kalman filter to deal with each mode associated with the observed variables. The resulting ensemble
+  members are then fed into the machine learning model to create an ensemble of the corresponding unobserved
+  variables. In addition to the ensemble spread, the training residual in the machine learning-induced
+  nonlinear map is further incorporated into the state estimation that advances the quantification of
+  the posterior uncertainty. The hybrid data assimilation algorithm is applied to a precipitating quasi-geostrophic
+  (PQG) model, which includes the effects of water vapor, clouds, and rainfall beyond the classical two-level
+  QG model. The complicated nonlinearities in the PQG equations prevent traditional methods from building
+  simple and accurate reduced-order forecast models. In contrast, the SPEKF model is skillful in recovering
+  the intermittent observed states, and the machine learning model effectively estimates the chaotic unobserved
+  signals. Utilizing the calibrated SPEKF and machine learning models under a moderate cloud fraction,
+  the resulting hybrid data assimilation remains reasonably accurate when applied to other geophysical
+  scenarios with nearly clear skies or relatively heavy rainfall, implying the robustness of the algorithm
+  for extrapolation.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

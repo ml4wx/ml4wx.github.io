@@ -1,0 +1,58 @@
+id: arxiv-2022.31974
+title: Enhanced Resolution of FY4 Remote Sensing Visible Spectrum Images Utilizing Super-Resolution and
+  Transfer Learning Techniques
+authors:
+- Bo Zhang
+- Muyuan Ma
+- Mingqing Wang
+- Danfeng Hong
+- Le Yu
+- Jie Wang
+- Peng Gong
+- Xiaomeng Huang
+date: '2022-01-01'
+year: 2022
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  arxiv: '2022.31974'
+  doi: 10.1109/jstars.2022.3197401
+  openalex: W4297819578
+links:
+  paper: https://doi.org/10.1109/jstars.2022.3197401
+  pdf: https://ieeexplore.ieee.org/ielx7/4609443/4609444/09852675.pdf
+orgs:
+- tsinghua-university
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: FY4-SR-Net uses transfer learning to super-resolve FY4 visible satellite images from 4 km to
+  1 km, cutting RMSE by 16.12% versus bicubic interpolation.
+abstract: Remote sensing images acquired by the FY4 satellite are crucial for regional cloud monitoring
+  and meteorological services. Inspired by the success of deep learning networks in image super-resolution,
+  we applied image super-resolution to FY4 visible spectrum (VIS) images. However, training a robust network
+  directly for FY4 VIS image super-resolution remains challenging due to the limited provision of high
+  resolution FY4 sample data. Here, we propose a super-resolution and transfer learning model, FY4-SR-Net.
+  It is composed of pre-training and fine-tuning models. The pre-training model was developed using a
+  deep residual network and a large number of FY4 A 4km and 1km resolution VIS images as the training
+  data. The knowledge derived from 4 km to 1 km resolution images was incorporated into FY4 B 1 km to
+  0.25 km resolution VIS images. The FY4-SR-Net is fine-tuned by incorporating limited 1km and 0.25km
+  resolution panchromatic (PAN) images, and then producing 1km super-resolution VIS images of the FY4
+  satellite. Using the one-day FY4 test dataset for qualitative and quantitative evaluations, the FY4-SR-Net
+  outperformed the classic bicubic interpolation approach with a 16.12% reduction in root mean square
+  error (RMSE) and a 2.97% rise in peak signal-to-noise ratio (PSNR) averages. The structural similarity
+  (SSIM) value average increased by 0.0026. This work provides a new precedent for improving the spatial
+  resolution of FY4 series meteorological satellites, which has important scientific significance and
+  application properties.
+significance: 2
+cited_by: 9
+score: 18
+highlight: false
+added: '2026-10-22'
+source: backfill

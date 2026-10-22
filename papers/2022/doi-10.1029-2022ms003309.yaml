@@ -1,0 +1,57 @@
+id: doi-10.1029-2022ms003309
+title: Correcting Systematic and State‐Dependent Errors in the NOAA FV3‐GFS Using Neural Networks
+authors:
+- Tse‐Chun Chen
+- Stephen Gregory Penny
+- Jeffrey S. Whitaker
+- Sergey Frolov
+- Robert L. Pincus
+- Stefan N. Tulich
+date: '2022-10-18'
+year: 2022
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2022ms003309
+  openalex: W4306720403
+links:
+  paper: https://doi.org/10.1029/2022ms003309
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2022MS003309
+orgs:
+- noaa
+- columbia-leap
+topic: hybrid-parameterization
+topics:
+- data-assimilation
+type: model
+method:
+- cnn
+timescale:
+- medium
+spatial:
+- global
+data:
+- nwp-analysis
+status: research
+summary: Neural networks learn FV3-GFS systematic error from data assimilation analysis increments and
+  apply online corrections, improving 10-day forecast skill at all lead times.
+abstract: Abstract Weather forecasts made with imperfect models contain state‐dependent errors. Data assimilation
+  (DA) partially corrects these errors with new information from observations. As such, the corrections,
+  or “analysis increments,” produced by the DA process embed information about model errors. An attempt
+  is made here to extract that information to improve numerical weather prediction. Neural networks (NNs)
+  are trained to predict corrections to the systematic error in the National Oceanic and Atmospheric Administration's
+  FV3‐GFS model based on a large set of analysis increments. A simple NN focusing on an atmospheric column
+  significantly improves the estimated model error correction relative to a linear baseline. Leveraging
+  large‐scale horizontal flow conditions using a convolutional NN, when compared to the simple column‐oriented
+  NN, does not improve skill in correcting model error. The sensitivity of model error correction to forecast
+  inputs is highly localized by vertical level and by meteorological variable, and the error characteristics
+  vary across vertical levels. Once trained, the NNs are used to apply an online correction to the forecast
+  during model integration. Improvements are evaluated both within a cycled DA system and across a collection
+  of 10‐day forecasts. It is found that applying state‐dependent NN‐predicted corrections to the model
+  forecast improves the overall quality of DA and improves the 10‐day forecast skill at all lead times.
+significance: 4
+cited_by: 34
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

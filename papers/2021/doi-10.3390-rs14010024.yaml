@@ -1,0 +1,58 @@
+id: doi-10.3390-rs14010024
+title: Towards a More Realistic and Detailed Deep-Learning-Based Radar Echo Extrapolation Method
+authors:
+- Yuan Hu
+- Lei Chen
+- Zhibin Wang
+- Xiang Pan
+- Hao Li
+date: '2021-12-22'
+year: 2021
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs14010024
+  openalex: W4200348065
+links:
+  paper: https://doi.org/10.3390/rs14010024
+  pdf: https://www.mdpi.com/2072-4292/14/1/24/pdf?version=1640221759
+orgs:
+- alibaba-damo
+topic: nowcasting
+type: model
+method:
+- gan-vae
+- cnn
+- rnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Spatial and spectrum GANs with masked style loss sharpen ConvLSTM and U-Net radar echo extrapolations
+  on SEVIR, plus a new power spectral density score.
+abstract: Deep-learning-based radar echo extrapolation methods have achieved remarkable progress in the
+  precipitation nowcasting field. However, they suffer from a common notorious problem—they tend to produce
+  blurry predictions. Although some efforts have been made in recent years, the blurring problem is still
+  under-addressed. In this work, we propose three effective strategies to assist deep-learning-based radar
+  echo extrapolation methods to achieve more realistic and detailed prediction. Specifically, we propose
+  a spatial generative adversarial network (GAN) and a spectrum GAN to improve image fidelity. The spatial
+  and spectrum GANs aim at penalizing the distribution discrepancy between generated and real images from
+  the spatial domain and spectral domain, respectively. In addition, a masked style loss is devised to
+  further enhance the details by transferring the detailed texture of ground truth radar sequences to
+  extrapolated ones. We apply a foreground mask to prevent the background noise from transferring to the
+  outputs. Moreover, we also design a new metric termed the power spectral density score (PSDS) to quantify
+  the perceptual quality from a frequency perspective. The PSDS metric can be applied as a complement
+  to other visual evaluation metrics (e.g., LPIPS) to achieve a comprehensive measurement of image sharpness.
+  We test our approaches with both ConvLSTM baseline and U-Net baseline, and comprehensive ablation experiments
+  on the SEVIR dataset show that the proposed approaches are able to produce much more realistic radar
+  images than baselines. Most notably, our methods can be readily applied to any deep-learning-based spatiotemporal
+  forecasting models to acquire more detailed results.
+significance: 3
+cited_by: 31
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

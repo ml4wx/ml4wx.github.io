@@ -1,0 +1,48 @@
+id: arxiv-2112.01085
+title: 'PTCT: Patches with 3D-Temporal Convolutional Transformer Network for Precipitation Nowcasting'
+authors:
+- Ziao Yang
+- Xiangrui Yang
+- Qifeng Lin
+date: '2021-12-02'
+year: 2021
+venue_type: preprint
+ids:
+  arxiv: '2112.01085'
+  openalex: W4309384924
+links:
+  paper: https://arxiv.org/abs/2112.01085
+  pdf: https://arxiv.org/pdf/2112.01085
+topic: nowcasting
+type: model
+method:
+- transformer
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: PTCT combines patch-based Transformer with 3D temporal convolution for autoregressive radar echo
+  nowcasting, reporting state-of-the-art results on Guangzhou and HKO-7 datasets.
+abstract: 'Precipitation nowcasting is to predict the future rainfall intensity over a short period of
+  time, which mainly relies on the prediction of radar echo sequences. Though convolutional neural network
+  (CNN) and recurrent neural network (RNN) are widely used to generate radar echo frames, they suffer
+  from inductive bias (i.e., translation invariance and locality) and seriality, respectively. Recently,
+  Transformer-based methods also gain much attention due to the great potential of Transformer structure,
+  whereas short-term dependencies and autoregressive characteristic are ignored. In this paper, we propose
+  a variant of Transformer named patches with 3D-temporal convolutional Transformer network (PTCT), where
+  original frames are split into multiple patches to remove the constraint of inductive bias and 3D-temporal
+  convolution is employed to capture short-term dependencies efficiently. After training, the inference
+  of PTCT is performed in an autoregressive way to ensure the quality of generated radar echo frames.
+  To validate our algorithm, we conduct experiments on two radar echo dataset: Radar Echo Guangzhou and
+  HKO-7. The experimental results show that PTCT achieves state-of-the-art (SOTA) performance compared
+  with existing methods.'
+significance: 3
+cited_by: 4
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

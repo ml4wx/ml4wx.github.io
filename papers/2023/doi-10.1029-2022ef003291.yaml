@@ -1,0 +1,59 @@
+id: doi-10.1029-2022ef003291
+title: Using Machine Learning to Cut the Cost of Dynamical Downscaling
+authors:
+- Sanaa Hobeichi
+- Nidhi Nishant
+- Yawen Shao
+- Gab Abramowitz
+- A. J. Pitman
+- Steven C. Sherwood
+- Craig H. Bishop
+- Samuel Green
+date: '2023-03-01'
+year: 2023
+venue: Earth s Future
+venue_type: journal
+ids:
+  doi: 10.1029/2022ef003291
+  openalex: W4323307475
+links:
+  paper: https://doi.org/10.1029/2022ef003291
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2022EF003291
+topic: downscaling
+topics:
+- climate-emulation
+type: model
+method:
+- classical-ml
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+status: research
+summary: Machine learning emulators (MLP and error-corrected regression with random forest) downscale
+  GCM evapotranspiration from 12.5 km to 1.5 km, reaching KGE of 0.86 and beating statistical downscaling.
+abstract: Abstract Global climate models (GCMs) are commonly downscaled to understand future local climate
+  change. The high computational cost of regional climate models (RCMs) limits how many GCMs can be dynamically
+  downscaled, restricting uncertainty assessment. While statistical downscaling is cheaper, its validity
+  in a changing climate is unclear. We combine these approaches to build an emulator leveraging the merits
+  of dynamical and statistical downscaling. A machine learning model is developed for each coarse grid
+  cell to predict fine grid variables, using coarse‐scale climate predictors with fine grid land characteristics.
+  Two RCM emulators, one Multilayer Perceptron (MLP) and one Multiple Linear Regression error‐reduced
+  with Random Forest (MLR‐RF), are developed to downscale daily evapotranspiration from 12.5 km (coarse‐scale)
+  to 1.5 km (fine‐scale). Out‐of‐sample tests for the MLP and MLR‐RF achieve Kling‐Gupta‐Efficiency of
+  0.86 and 0.83, correlation of 0.89 and 0.86, and coefficient of determination ( R 2 ) of 0.78 and 0.75,
+  with a relative bias of −6% to 5% and −5% to 4%, respectively. Using histogram match for spatial efficiency,
+  both emulators achieve a median score of ∼0.77. This is generally better than a common statistical downscaling
+  method in a range of metrics. Additionally, through “spatial transitivity,” we can downscale GCMs for
+  new regions at negligible cost and only minor performance loss. The framework offers a cheap and quick
+  way to downscale large ensembles of GCMs. This could enable high‐resolution climate projections from
+  a larger number of global models, enabling uncertainty quantification, and so better support for resilience
+  and adaptation planning.
+significance: 5
+cited_by: 58
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,58 @@
+id: doi-10.3390-rs15163948
+title: Machine Learning Applied to a Dual-Polarized Sentinel-1 Image for Wind Retrieval of Tropical Cyclones
+authors:
+- Yuyi Hu
+- Weizeng Shao
+- Wei Shen
+- Yuhang Zhou
+- Xingwei Jiang
+date: '2023-08-09'
+year: 2023
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs15163948
+  openalex: W4385698284
+links:
+  paper: https://doi.org/10.3390/rs15163948
+  pdf: https://www.mdpi.com/2072-4292/15/16/3948/pdf?version=1691582779
+topic: observations-remote-sensing
+topics:
+- extremes-hazards
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: XGBoost trained on dual-polarized Sentinel-1 SAR collocated with SFMR and SMAP retrieves tropical
+  cyclone surface winds with 2.53 m/s RMSE up to 70 m/s.
+abstract: In this work, three types of machine learning algorithms are applied for synthetic aperture
+  radar (SAR) wind retrieval in tropical cyclones (TCs), and the optimal method is confirmed. In total,
+  30 Sentinel-1 (S-1) images in dual-polarization (vertical–vertical [VV] and vertical–horizontal [VH]
+  were collected during the period from 2016 to 2021, which were acquired in interferometric-wide and
+  extra-wide modes with pixels of 10 m and 40 m, respectively. More than 100,000 sub-scenes with a spatial
+  coverage of 3 km are extracted from these images. The dependences of variables estimated from sub-scenes,
+  i.e., VV-polarized and VH-polarized normalized radar cross-section (NRCS), as well as the azimuthal
+  wave cutoff wavelength, on wind speeds from the stepped-frequency microwave radiometer (SFMR) and the
+  soil moisture active passive (SMAP) radiometer are studied, showing the linear relations between wind
+  speed and these three parameters; however, the saturation of VV-polarized NRCS and the azimuthal wave
+  cutoff wavelength is observed. This is the foundation of selecting input variables in machine learning
+  algorithms. Two-thirds of the collocated dataset (20 images) are used for training the process using
+  three machine learning algorithms, i.e., eXtreme Gradient Boosting (XGBoost), Multi-layer Perceptron,
+  and K-Nearest Neighbor, and the coefficients are fitted after training completion through 20 images
+  collocated with SFMR and SMAP data. Another 10 images are taken for validation up to 70 m/s, yielding
+  a 2.53 m/s root mean square error (RMSE) with a 0.96 correlation and 0.12 scatter index (SI) using XGBoost.
+  The result is better than the >5 m/s error achieved using the existing cross-polarized geophysical model
+  function and the other two machine learning algorithms; moreover, the comparison between wind retrievals
+  using XGBoost and Level-2 CyclObs products shows about 4 m/s RMSE and 0.18 SI. This suggests that the
+  machine learning algorithm XGBoost is an effective method for inverting the TC wind field utilizing
+  SAR measurements in dual-polarization.
+significance: 3
+cited_by: 22
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

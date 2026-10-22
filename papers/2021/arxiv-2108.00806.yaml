@@ -1,0 +1,49 @@
+id: arxiv-2108.00806
+title: Super-Resolution of Near-Surface Temperature Utilizing Physical Quantities for Real-Time Prediction
+  of Urban Micrometeorology
+authors:
+- Yuki Yasuda
+- Ryo Onishi
+- Yuichi Hirokawa
+- Dmitry Kolomenskiy
+- Daisuke Sugiyama
+date: '2021-08-02'
+year: 2021
+venue_type: preprint
+ids:
+  arxiv: '2108.00806'
+links:
+  paper: https://arxiv.org/abs/2108.00806
+  pdf: https://arxiv.org/pdf/2108.00806
+topic: downscaling
+type: model
+method:
+- cnn
+spatial:
+- local
+data:
+- km-scale-sim
+status: research
+summary: A CNN super-resolution model with attention upscales urban near-surface temperature from 20 m
+  to 5 m, beating bicubic interpolation and enabling fast real-time inference.
+abstract: The present paper proposes a super-resolution (SR) model based on a convolutional neural network
+  and applies it to the near-surface temperature in urban areas. The SR model incorporates a skip connection,
+  a channel attention mechanism, and separated feature extractors for the inputs of temperature, building
+  height, downward shortwave radiation, and horizontal velocity. We train the SR model with sets of low-resolution
+  (LR) and high-resolution (HR) images from building-resolving large-eddy simulations (LESs) in a city,
+  where the horizontal resolutions of LR and HR are 20 and 5 m, respectively. The generalization capability
+  of the SR model is confirmed with LESs in another city. The estimated HR temperature fields are more
+  accurate than those of the bicubic interpolation and image SR model that takes only the temperature
+  as its input. Except for the temperature input, the building height is the most important to reconstruct
+  the HR temperature and enables the SR model to reduce errors in temperature near building boundaries.
+  The SR model considers the appropriate boundary for each building from its height information. The analysis
+  of attention weights indicates that the importance of the building height increases as the downward
+  shortwave radiation becomes larger. The contrast between sun and shade is strengthened with the increase
+  in solar radiation, which may affect the temperature distribution. The short inference time suggests
+  the potential of the proposed SR model to facilitate a real-time HR prediction in metropolitan areas
+  by combining it with an LR building-resolving LES model.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

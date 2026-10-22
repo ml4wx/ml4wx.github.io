@@ -1,0 +1,86 @@
+id: doi-10.5194-gmd-14-107-2021
+title: 'ClimateNet: an expert-labeled open dataset and deep learning architecture for enabling high-precision
+  analyses of extreme weather'
+authors:
+- ''
+- Karthik Kashinath
+- Mayur Mudigonda
+- Sol Kim
+- Lukas Kapp-Schwoerer
+- Andre Graubner
+- Ege Karaismailoglu
+- Leo von Kleist
+- Thorsten Kurth
+- Annette Greiner
+- Ankur Mahesh
+- Kevin Yang
+- Colby Lewis
+- Jiayi Chen
+- Andrew Lou
+- Sathyavat Chandran
+- Ben Toms
+- Will Chapman
+- Katherine Dagon
+- Christine A. Shields
+- Travis O'Brien
+- Michael Wehner
+- William Collins
+date: '2021-01-08'
+year: 2021
+venue: Geoscientific Model Development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-14-107-2021
+  openalex: W3015232219
+links:
+  paper: https://doi.org/10.5194/gmd-14-107-2021
+orgs:
+- colorado-state-university
+- eth-zurich
+- lbnl-nersc
+- ncar
+- nvidia
+- uc-berkeley
+topic: extremes-hazards
+type: benchmark
+method:
+- cnn
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: ClimateNet releases an expert-labeled dataset of tropical cyclones and atmospheric rivers in
+  CAM5.1 output, and a deep learning segmentation model that enables pixel-level extreme event analysis.
+abstract: 'Identifying, detecting, and localizing extreme weather events is a crucial first step in understanding
+  how they may vary under different climate change scenarios. Pattern recognition tasks such as classification,
+  object detection, and segmentation (i.e., pixel-level classification) have remained challenging problems
+  in the weather and climate sciences. While there exist many empirical heuristics for detecting extreme
+  events, the disparities between the output of these different methods even for a single event are large
+  and often difficult to reconcile. Given the success of deep learning (DL) in tackling similar problems
+  in computer vision, we advocate a DL-based approach. DL, however, works best in the context of supervised
+  learning – when labeled datasets are readily available. Reliable labeled training data for extreme weather
+  and climate events is scarce. We create “ClimateNet” – an open, community-sourced human-expert-labeled
+  curated dataset that captures tropical cyclones (TCs) and atmospheric rivers (ARs) in high-resolution
+  climate model output from a simulation of a recent historical period. We use the curated ClimateNet
+  dataset to train a state-of-the-art DL model for pixel-level identification – i.e., segmentation – of
+  TCs and ARs. We then apply the trained DL model to historical and climate change scenarios simulated
+  by the Community Atmospheric Model (CAM5.1) and show that the DL model accurately segments the data
+  into TCs, ARs, or “the background” at a pixel level. Further, we show how the segmentation results can
+  be used to conduct spatially and temporally precise analytics by quantifying distributions of extreme
+  precipitation conditioned on event types (TC or AR) at regional scales. The key contribution of this
+  work is that it paves the way for DL-based automated, high-fidelity, and highly precise analytics of
+  climate data using a curated expert-labeled dataset – ClimateNet. ClimateNet and the DL-based segmentation
+  method provide several unique capabilities: (i) they can be used to calculate a variety of TC and AR
+  statistics at a fine-grained level; (ii) they can be applied to different climate scenarios and different
+  datasets without tuning as they do not rely on threshold conditions; and (iii) the proposed DL method
+  is suitable for rapidly analyzing large amounts of climate model output. While our study has been conducted
+  for two important extreme weather patterns (TCs and ARs) in simulation datasets, we believe that this
+  methodology can be applied to a much broader class of patterns and applied to observational and reanalysis
+  data products via transfer learning.'
+significance: 5
+cited_by: 111
+score: 65
+highlight: false
+added: '2026-10-22'
+source: seed

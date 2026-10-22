@@ -5,8 +5,43 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/xai-uq-physics/)
 
-0 papers (0 ⭐). Newest first.
+20 papers (3 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2024-09-27 | ⭐ [Robustness of AI-based weather forecasts in a changing climate](https://arxiv.org/abs/2409.18529)<br><sub>Thomas Rackow, Nikolay Koldunov, Christian Lessig et al.</sub> | ECMWF |  |
+| 2024-06-14 | ⭐ [On Some Limitations of Current Machine Learning Weather Prediction Models](https://doi.org/10.1029/2023gl107377)<br><sub>Massimo Bonavita · Geophysical Research Letters</sub> | ECMWF |  |
+| 2024-06-07 | [Predictability Limit of the 2021 Pacific Northwest Heatwave from Deep-Learning Sensitivity Analysis](https://arxiv.org/abs/2406.05019)<br><sub>P. Trent Vonich, Gregory J. Hakim · Geophysical Research Letters</sub> | University of Washington |  |
+| 2024-03-20 | [Uncertainty quantification for data-driven weather models](https://arxiv.org/abs/2403.13458)<br><sub>Christopher Bülte, Nina Horat, Julian Quinting et al. · Artificial Intelligence for the Earth Systems</sub> | Karlsruhe Institute of Technology (KIT) |  |
+| 2023-10-26 | [Can Artificial Intelligence‐Based Weather Prediction Models Simulate the Butterfly Effect?](https://doi.org/10.1029/2023gl105747)<br><sub>T. Selz, G. C. Craig · Geophysical Research Letters</sub> |  |  |
+| 2023-09-19 | [Dynamical Tests of a Deep-Learning Weather Prediction Model](https://arxiv.org/abs/2309.10867)<br><sub>Gregory J. Hakim, Sanjit Masanam · Artificial Intelligence for the Earth Systems</sub> | University of Washington |  |
+| 2023-04-01 | [Creating and Evaluating Uncertainty Estimates with Neural Networks for Environmental-Science Applications](https://doi.org/10.1175/aies-d-22-0061.1)<br><sub>Katherine Haynes, Ryan Lagerquist, Marie McGraw et al. · Artificial Intelligence for the Earth Systems</sub> | Colorado State University (incl. CIRA), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
+| 2022-01-14 | [Parameter Uncertainty Quantification in an Idealized GCM With a Seasonal Cycle](https://doi.org/10.1029/2021ms002735)<br><sub>Michael F. Howland, Oliver R. A. Dunbar, Tapio Schneider · Journal of Advances in Modeling Earth Systems</sub> | Massachusetts Institute of Technology (MIT), California Institute of Technology (Caltech) |  |
+| 2022-01-13 | [Ensemble-Based Experimental Design for Targeted High-Resolution Simulations to Inform Climate Models](https://doi.org/10.1002/essoar.10510142.1)<br><sub>Oliver R. A. Dunbar, Michael F. Howland, Tapio Schneider et al.</sub> | Massachusetts Institute of Technology (MIT), California Institute of Technology (Caltech) |  |
+| 2022-01-01 | [Advancing interpretability of machine-learning prediction models](https://doi.org/10.1017/eds.2022.13)<br><sub>Laurie Trenary, Timothy DelSole · Environmental Data Science</sub> |  |  |
+| 2021-12-14 | ⭐ [Climate-Invariant Machine Learning](https://arxiv.org/abs/2112.08440)<br><sub>Tom Beucler, Pierre Gentine, Janni Yuval et al. · Science Advances</sub> | Columbia University (LEAP, Lamont-Doherty), Google Research, Massachusetts Institute of Technology (MIT), NVIDIA, University of California, Los Angeles (UCLA) |  |
+| 2021-03-18 | [Neural Network Attribution Methods for Problems in Geoscience: A Novel Synthetic Benchmark Dataset](https://arxiv.org/abs/2103.10005)<br><sub>Antonios Mamalakis, Imme Ebert-Uphoff, Elizabeth A. Barnes · Environmental Data Science, 1, E8 (2022)</sub> | Colorado State University (incl. CIRA) |  |
+| 2021-02-15 | [Physics-informed machine learning: case studies for weather and climate modelling](https://doi.org/10.1098/rsta.2020.0093)<br><sub>K. Kashinath, M. Mustafa, A. Albert et al. · Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences</sub> | California Institute of Technology (Caltech), Lawrence Berkeley National Laboratory / NERSC, NVIDIA, Stanford University, University of California, Berkeley |  |
+| 2019-12-04 | [Physically Interpretable Neural Networks for the Geosciences: Applications to Earth System Variability](https://arxiv.org/abs/1912.01752)<br><sub>Benjamin A. Toms, Elizabeth A. Barnes, Imme Ebert-Uphoff · Journal of Advances in Modeling Earth Systems</sub> | Colorado State University (incl. CIRA) |  |
+| 2019-11-01 | [Making the Black Box More Transparent: Understanding the Physical Implications of Machine Learning](https://doi.org/10.1175/bams-d-18-0195.1)<br><sub>Amy McGovern, Ryan Lagerquist, David John Gagne et al. · Bulletin of the American Meteorological Society</sub> | NSF NCAR / UCAR, NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), University of Oklahoma (AI2ES) |  |
+| 2019-09-03 | [Enforcing Analytic Constraints in Neural-Networks Emulating Physical Systems](https://arxiv.org/abs/1909.00912)<br><sub>Tom Beucler, Michael Pritchard, Stephan Rasp et al. · Phys. Rev. Lett. 126, 098302 (2021)</sub> | Columbia University (LEAP, Lamont-Doherty), Technical University of Munich (TUM) |  |
+| 2019-05-15 | [Machine Learning Techniques for Global Sensitivity Analysis in Earth System Models.](https://www.osti.gov/biblio/1512022)<br><sub>Cosmin Safta · OSTI OAI (U.S. Department of Energy Office of Scientific and Technical Information)</sub> |  |  |
+| 2019-02-12 | [Testing the Reliability of Interpretable Neural Networks in Geoscience Using the Madden-Julian Oscillation](https://arxiv.org/abs/1902.04621)<br><sub>Benjamin A. Toms, Karthik Kashinath, Prabhat et al.</sub> |  |  |
+| 2018-06-29 | [Visualization of Neural Network Predictions for Weather Forecasting](https://doi.org/10.1111/cgf.13453)<br><sub>Isabelle Roesch, Tobias Günther · Computer Graphics Forum</sub> | ETH Zurich |  |
+| 2018-02-20 | [A Learning Based Approach for Uncertainty Analysis in Numerical Weather Prediction Models](https://arxiv.org/abs/1802.08055)<br><sub>Azam Moosavi, Vishwas Rao, Adrian Sandu</sub> |  |  |
+
+## Also relevant
+
+- [Recommendations for Comprehensive and Independent Evaluation of Machine Learning-Based Earth System Models](https://arxiv.org/abs/2410.19882) (2024)
+- [Can AI weather models predict out-of-distribution gray swan tropical cyclones?](https://arxiv.org/abs/2410.14932) (2024)
+- [Anthropogenic fingerprints in daily precipitation revealed by deep learning](https://doi.org/10.1038/s41586-023-06474-x) (2023)
+- [Explainable deep learning for insights in El Niño and river flows](https://arxiv.org/abs/2201.02596) (2022)
+- [Decomposing Satellite-Based Classification Uncertainties in Large Earth Science Datasets](https://doi.org/10.1109/tgrs.2022.3152516) (2022)
+- [Detecting Climate Signals Using Explainable AI With Single‐Forcing Large Ensembles](https://doi.org/10.1029/2021ms002464) (2021)
+- [Subseasonal Forecasts of Opportunity Identified by an Explainable Neural Network](https://doi.org/10.1029/2020gl092092) (2021)
+- [Viewing Forced Climate Patterns Through an AI Lens](https://doi.org/10.1029/2019gl084944) (2019)
+- [Interpretable Deep Learning for Spatial Analysis of Severe Hailstorms](https://doi.org/10.1175/mwr-d-18-0316.1) (2019)
+- [Confidence‐aware deep learning forecasting system for daily solar irradiance](https://doi.org/10.1049/iet-rpg.2018.5354) (2019)
+- [A neural network approach to estimating a posteriori distributions of Bayesian retrieval problems](https://doi.org/10.5194/amt-11-4627-2018) (2018)
+- [Quantifying Uncertainty in Discrete-Continuous and Skewed Data with Bayesian Deep Learning](https://arxiv.org/abs/1802.04742) (2018)
 

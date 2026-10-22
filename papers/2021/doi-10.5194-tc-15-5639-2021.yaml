@@ -1,0 +1,59 @@
+id: doi-10.5194-tc-15-5639-2021
+title: 'Improving surface melt estimation over the Antarctic Ice Sheet using deep learning: a proof of
+  concept over the Larsen Ice Shelf'
+authors:
+- Zhongyang Hu
+- Peter Kuipers Munneke
+- Stef Lhermitte
+- Maaike Izeboud
+- M. R. van den Broeke
+date: '2021-12-13'
+year: 2021
+venue: "\x98The \x9Ccryosphere"
+venue_type: journal
+ids:
+  doi: 10.5194/tc-15-5639-2021
+  openalex: W4200359611
+links:
+  paper: https://doi.org/10.5194/tc-15-5639-2021
+topic: post-processing
+topics:
+- applications-impacts
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- stations
+- satellite
+- nwp-analysis
+status: research
+summary: Deep MLP corrects RACMO2 Antarctic surface melt using automatic weather station and MODIS albedo
+  data, outperforming random forest and XGBoost on cross-validation.
+abstract: 'Abstract. Accurately estimating surface melt volume of the Antarctic Ice Sheet is challenging,
+  and has hitherto relied on climate modelling, or on observations from satellite remote sensing. Each
+  of these methods has its limitations, especially in regions with high surface melt. This study aims
+  to demonstrate the potential of improving surface melt simulations by deploying a deep learning model.
+  A deep-learning-based framework has been developed to correct surface melt from the regional atmospheric
+  climate model version 2.3p2 (RACMO2), using meteorological observations from automatic weather stations
+  (AWSs), and surface albedo from satellite imagery. The framework includes three steps: (1) training
+  a deep multilayer perceptron (MLP) model using AWS observations; (2) correcting moderate resolution
+  imaging spectroradiometer (MODIS) albedo observations, and (3) using these two to correct the RACMO2
+  surface melt simulations. Using observations from three AWSs at the Larsen B and C Ice Shelves, Antarctica,
+  cross-validation shows a high accuracy (root mean square error = 0.95 mm w.e. per day, mean absolute
+  error = 0.42 mm w.e. per day, and coefficient of determination = 0.95). Moreover, the deep MLP model
+  outperforms conventional machine learning models (e.g., random forest regression, XGBoost) and a shallow
+  MLP model. When applying the trained deep MLP model over the entire Larsen Ice Shelf, the resulting,
+  corrected RACMO2 surface melt shows a better correlation with the AWS observations for two out of three
+  AWSs. However, for one location (AWS 18) the deep MLP model does not show improved agreement with AWS
+  observations, likely due to the heterogeneous drivers of melt within the corresponding coarse resolution
+  model pixels. Our study demonstrates the opportunity to improve surface melt simulations using deep
+  learning combined with satellite albedo observations. On the other hand, more work is required to refine
+  the method, especially for complicated and heterogeneous terrains.'
+significance: 3
+cited_by: 14
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

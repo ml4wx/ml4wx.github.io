@@ -1,0 +1,58 @@
+id: arxiv-2310.02074
+title: 'ACE: A fast, skillful learned global atmospheric model for climate prediction'
+authors:
+- Oliver Watt-Meyer
+- Gideon Dresdner
+- Jeremy McGibbon
+- Spencer K. Clark
+- Brian Henn
+- James Duncan
+- Noah D. Brenowitz
+- Karthik Kashinath
+- Michael S. Pritchard
+- Boris Bonev
+- Matthew E. Peters
+- Christopher S. Bretherton
+date: '2023-10-03'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2310.02074'
+  openalex: W4387356266
+links:
+  paper: https://arxiv.org/abs/2310.02074
+  pdf: https://arxiv.org/pdf/2310.02074
+orgs:
+- ai2
+- nvidia
+- uc-berkeley
+topic: climate-emulation
+type: model
+method:
+- neural-operator
+timescale:
+- climate
+spatial:
+- global
+data:
+- other
+status: research
+summary: ACE is a 200M-parameter autoregressive emulator that stays stable for 100 years, reproduces a
+  100 km reference model's climate, and runs about 100x faster.
+abstract: Existing ML-based atmospheric models are not suitable for climate prediction, which requires
+  long-term stability and physical consistency. We present ACE (AI2 Climate Emulator), a 200M-parameter,
+  autoregressive machine learning emulator of an existing comprehensive 100-km resolution global atmospheric
+  model. The formulation of ACE allows evaluation of physical laws such as the conservation of mass and
+  moisture. The emulator is stable for 100 years, nearly conserves column moisture without explicit constraints
+  and faithfully reproduces the reference model's climate, outperforming a challenging baseline on over
+  90% of tracked variables. ACE requires nearly 100x less wall clock time and is 100x more energy efficient
+  than the reference model using typically available resources. Without fine-tuning, ACE can stably generalize
+  to a previously unseen historical sea surface temperature dataset.
+significance: 7
+cited_by: 27
+score: 63
+highlight: true
+highlight_reason: ACE is a stable 100-year ML atmospheric climate emulator that nearly conserves moisture,
+  an important early step for ML climate models.
+added: '2026-10-22'
+source: seed

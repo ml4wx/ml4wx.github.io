@@ -1,0 +1,55 @@
+id: arxiv-2309.15689
+title: 'Further analysis of cGAN: A system for Generative Deep Learning Post-processing of Precipitation'
+authors:
+- Fenwick Cooper
+- Andrew T. T. McRae
+- Matthew Chantry
+- Bobby Antonio
+- T. N. Palmer
+date: '2023-09-27'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2309.15689'
+  openalex: W4387158672
+links:
+  paper: http://arxiv.org/abs/2309.15689
+  pdf: https://arxiv.org/pdf/2309.15689
+topic: post-processing
+topics:
+- downscaling
+- probabilistic-ensembles
+type: model
+method:
+- gan-vae
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+- radar
+- nwp-analysis
+status: research
+summary: Trains a conditional GAN on ERA5 to generate downscaled 1 km precipitation ensembles over UK
+  and US regions, competitive with IFS ensembles at 8–16 h lead.
+abstract: The conditional generative adversarial rainfall model "cGAN" developed for the UK \cite{Harris22}
+  was trained to post-process into an ensemble and downscale ERA5 rainfall to 1km resolution over three
+  regions of the USA and the UK. Relative to radar data (stage IV and NIMROD), the quality of the forecast
+  rainfall distribution was quantified locally at each grid point and between grid points using the spatial
+  correlation structure. Despite only having information from a single lower quality analysis, the ensembles
+  of post processed rainfall produced were found to be competitive with IFS ensemble forecasts with lead
+  times of between 8 and 16 hours. Comparison to the original cGAN trained on the UK using the IFS HRES
+  forecast indicates that improved training forecasts result in improved post-processing. The cGAN models
+  were additionally applied to the regions that they were not trained on. Each model performed well in
+  their own region indicating that each model is somewhat region specific. However the model trained on
+  the Washington DC, Atlantic coast, region achieved good scores across the USA and was competitive over
+  the UK. There are more overall rainfall events spread over the whole region so the improved scores might
+  be simply due to increased data. A model was therefore trained using data from all four regions which
+  then outperformed the models trained locally.
+significance: 4
+cited_by: 0
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

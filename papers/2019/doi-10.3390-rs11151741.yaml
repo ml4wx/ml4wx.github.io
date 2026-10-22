@@ -1,0 +1,60 @@
+id: doi-10.3390-rs11151741
+title: 'Retrieval of Total Precipitable Water from Himawari-8 AHI Data: A Comparison of Random Forest,
+  Extreme Gradient Boosting, and Deep Neural Network'
+authors:
+- Yeonjin Lee
+- Daehyeon Han
+- Myoung‐Hwan Ahn
+- Jungho Im
+- Su Jeong Lee
+date: '2019-07-24'
+year: 2019
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs11151741
+  openalex: W2962768350
+links:
+  paper: https://doi.org/10.3390/rs11151741
+  pdf: https://www.mdpi.com/2072-4292/11/15/1741/pdf?version=1565231693
+topic: observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- era5
+- stations
+status: research
+summary: Compares random forest, XGBoost and a deep neural network for retrieving total precipitable water
+  from Himawari-8 infrared channels; the DNN performs best against radiosondes.
+abstract: Total precipitable water (TPW), a column of water vapor content in the atmosphere, provides
+  information on the spatial distribution of moisture. The high-resolution TPW, together with atmospheric
+  stability indices such as convective available potential energy (CAPE), is an effective indicator of
+  severe weather phenomena in the pre-convective atmospheric condition. With the advent of high performing
+  imaging instrument onboard geostationary satellites such as Advanced Himawari Imager (AHI) onboard Himawari-8
+  of Japan and Advanced Meteorological Imager (AMI) onboard GeoKompsat-2A of Korea, it is expected that
+  unprecedented spatiotemporal resolution data (e.g., AMI plans to provide 2 km resolution data at every
+  2 min over the northeast part of East Asia) will be provided. To derive TPW from such high-resolution
+  data in a timely fashion, an efficient algorithm is highly required. Here, machine learning approaches—random
+  forest (RF), extreme gradient boosting (XGB), and deep neural network (DNN)—are assessed for the TPW
+  retrieved from AHI over the clear sky in Northeast Asia area. For the training dataset, the nine infrared
+  brightness temperatures (BT) of AHI (BT8 to 16 centered at 6.2, 6.9, 7.3, 8.6, 9.6, 10.4, 11.2, 12.4,
+  and 13.3 μ m , respectively), six dual channel differences and observation conditions such as time,
+  latitude, longitude, and satellite zenith angle for two years (September 2016 to August 2018) are used.
+  The corresponding TPW is prepared by integrating the water vapor profiles from InterimEuropean Centre
+  for Medium-Range Weather Forecasts Re-Analysis data (ERA-Interim). The algorithm performances are assessed
+  using the ERA-Interim and radiosonde observations (RAOB) as the reference data. The results show that
+  the DNN model performs better than RF and XGB with a correlation coefficient of 0.96, a mean bias of
+  0.90 mm, and a root mean square error (RMSE) of 4.65 mm when compared to the ERA-Interim. Similarly,
+  DNN results in a correlation coefficient of 0.95, a mean bias of 1.25 mm, and an RMSE of 5.03 mm when
+  compared to RAOB. Contributing variables to retrieve the TPW in each model and the spatial and temporal
+  analysis of the retrieved TPW are carefully examined and discussed.
+significance: 3
+cited_by: 68
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,52 @@
+id: doi-10.3389-frwa.2023.1178114
+title: Deep learning of model- and reanalysis-based precipitation and pressure mismatches over Europe
+authors:
+- Kaveh Patakchi Yousefi
+- Stefan J Kollet
+date: '2023-05-24'
+year: 2023
+venue: Frontiers in Water
+venue_type: journal
+ids:
+  doi: 10.3389/frwa.2023.1178114
+  openalex: W4377942240
+links:
+  paper: https://doi.org/10.3389/frwa.2023.1178114
+orgs:
+- juelich
+topic: post-processing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- other
+status: research
+summary: UNet corrects TSMP European simulation mismatches against COSMO-REA6 for precipitation and pressure,
+  improving RMSE by about 22%.
+abstract: Physically based numerical weather prediction and climate models provide useful information
+  for a large number of end users, such as flood forecasters, water resource managers, and farmers. However,
+  due to model uncertainties arising from, e.g., initial value and model errors, the simulation results
+  do not match the in situ or remotely sensed observations to arbitrary accuracy. Merging model-based
+  data with observations yield promising results benefiting simultaneously from the information content
+  of the model results and observations. Machine learning (ML) and/or deep learning (DL) methods have
+  been shown to be useful tools in closing the gap between models and observations due to the capacity
+  in the representation of the non-linear space–time correlation structure. This study focused on using
+  UNet encoder–decoder convolutional neural networks (CNNs) for extracting spatiotemporal features from
+  model simulations for predicting the actual mismatches (errors) between the simulation results and a
+  reference data set. Here, the climate simulations over Europe from the Terrestrial Systems Modeling
+  Platform (TSMP) were used as input to the CNN. The COSMO-REA6 reanalysis data were used as a reference.
+  The proposed merging framework was applied to mismatches in precipitation and surface pressure representing
+  more and less chaotic variables, respectively. The merged data show a strong average improvement in
+  mean error (~ 47%), correlation coefficient (~ 37%), and root mean square error (~22%). To highlight
+  the performance of the DL-based method, the results were compared with the results obtained by a baseline
+  method, quantile mapping. The proposed DL-based merging methodology can be used either during the simulation
+  to correct model forecast output online or in a post-processing step, for downstream impact applications,
+  such as flood forecasting, water resources management, and agriculture.
+significance: 3
+cited_by: 14
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

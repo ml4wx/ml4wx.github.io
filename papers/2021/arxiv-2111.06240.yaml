@@ -1,0 +1,43 @@
+id: arxiv-2111.06240
+title: Improvements to short-term weather prediction with recurrent-convolutional networks
+authors:
+- Jussi Leinonen
+date: '2021-11-11'
+year: 2021
+venue_type: preprint
+ids:
+  arxiv: '2111.06240'
+  doi: 10.1109/bigdata52589.2021.9671869
+links:
+  paper: https://arxiv.org/abs/2111.06240
+  pdf: https://arxiv.org/pdf/2111.06240
+topic: nowcasting
+type: model
+method:
+- cnn
+- rnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Improves a recurrent-convolutional satellite nowcasting model for the Weather4cast 2021 competition
+  via a shallower variant, AdaBelief and ensembling.
+abstract: The Weather4cast 2021 competition gave the participants a task of predicting the time evolution
+  of two-dimensional fields of satellite-based meteorological data. This paper describes the author's
+  efforts, after initial success in the first stage of the competition, to improve the model further in
+  the second stage. The improvements consisted of a shallower model variant that is competitive against
+  the deeper version, adoption of the AdaBelief optimizer, improved handling of one of the predicted variables
+  where the training set was found not to represent the validation set well, and ensembling multiple models
+  to improve the results further. The largest quantitative improvements to the competition metrics can
+  be attributed to the increased amount of training data available in the second stage of the competition,
+  followed by the effects of model ensembling. Qualitative results show that the model can predict the
+  time evolution of the fields, including the motion of the fields over time, starting with sharp predictions
+  for the immediate future and blurring of the outputs in later frames to account for the increased uncertainty.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,62 @@
+id: doi-10.1029-2020ms002423
+title: 'Process‐Based Climate Model Development Harnessing Machine Learning: III. The Representation of
+  Cumulus Geometry and Their 3D Radiative Effects'
+authors:
+- Najda Villefranque
+- Danny Williamson
+- Fleur Couvreux
+- F. Hourdin
+- Jacques Gautrais A
+- Richard Fournier
+- Robin James Hogan
+- Stéphane Blanco
+- Victoria Volodina
+date: '2021-03-18'
+year: 2021
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2020ms002423
+  openalex: W3108134949
+links:
+  paper: https://doi.org/10.1029/2020ms002423
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2020MS002423
+orgs:
+- ecmwf
+- meteo-france
+- alan-turing-institute
+topic: hybrid-parameterization
+type: model
+method:
+- classical-ml
+spatial:
+- local
+data:
+- km-scale-sim
+status: research
+summary: Calibrates cloud geometry parameters for 3D radiation using ML surrogate emulators, reducing
+  top-of-atmosphere and surface flux errors from about 10 to 5 W/m2.
+abstract: 'Abstract Process‐scale development, evaluation, and calibration of physically based parameterizations
+  of clouds and radiation are powerful levers for improving weather and climate models. In a series of
+  papers, we propose a strategy for process‐based calibration of climate models that uses machine learning
+  techniques. It relies on systematic comparisons of single‐column versions of climate models with explicit
+  simulations of boundary‐layer dynamics and clouds (Large‐Eddy Simulations [LES]). This paper focuses
+  on the calibration of cloud geometry parameters (vertical overlap, horizontal heterogeneity, and cloud
+  size) that appear in the parameterization of radiation. The solar component of a radiative transfer
+  (RT) scheme that includes a parameterization for 3D radiative effects of clouds (SPARTACUS) is run in
+  offline single‐column mode on an ensemble of input cloud profiles synthesized from LES outputs. The
+  space of cloud geometry parameter values is efficiently explored by sampling a large number of parameter
+  sets (configurations) from which radiative metrics are computed using fast surrogate models that emulate
+  the SPARTACUS solver. The sampled configurations are evaluated by comparing these radiative metrics
+  to reference values provided by a 3D RT Monte Carlo model. The best calibrated configurations yield
+  better predictions of TOA and surface fluxes than the one that uses parameter values computed from the
+  3D cloud fields: The root‐mean‐square errors averaged over cumulus cloud fields and solar angles are
+  reduced from ∼10 Wm −2 with LES‐derived parameters to ∼5 Wm −2 with adjusted parameters. However, the
+  calibration of cloud geometry fails to reduce the errors on absorption, which remain around 2–4 Wm −2
+  .'
+significance: 3
+cited_by: 21
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,60 @@
+id: arxiv-2304.03127
+title: Statistical constraints on climate model parameters using a scalable cloud-based inference framework
+authors:
+- James Carzon
+- Bruno Ricardi de Abreu
+- Leighton A. Regayre
+- K. S. Carslaw
+- Lucia Timea Deaconu
+- Philip Stier
+- Hamish Gordon
+- Mikael Kuusela
+date: '2023-01-01'
+year: 2023
+venue: Environmental Data Science
+venue_type: journal
+ids:
+  arxiv: '2304.03127'
+  doi: 10.1017/eds.2023.12
+  openalex: W4383268176
+links:
+  paper: https://doi.org/10.1017/eds.2023.12
+  pdf: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/4E406C69C234B7C5B0E40FC699F29F39/S2634460223000122a.pdf/div-class-title-statistical-constraints-on-climate-model-parameters-using-a-scalable-cloud-based-inference-framework-div.pdf
+orgs:
+- met-office
+- university-of-oxford
+topic: climate-analysis-attribution
+topics:
+- climate-emulation
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- cmip
+- satellite
+status: research
+summary: Surrogate-based statistical framework constrains UKESM1 aerosol parameters against MODIS observations
+  on a cloud platform, using 3-hourly outputs for tighter constraints.
+abstract: Abstract Atmospheric aerosols influence the Earth’s climate, primarily by affecting cloud formation
+  and scattering visible radiation. However, aerosol-related physical processes in climate simulations
+  are highly uncertain. Constraining these processes could help improve model-based climate predictions.
+  We propose a scalable statistical framework for constraining the parameters of expensive climate models
+  by comparing model outputs with observations. Using the C3.AI Suite, a cloud computing platform, we
+  use a perturbed parameter ensemble of the UKESM1 climate model to efficiently train a surrogate model.
+  A method for estimating a data-driven model discrepancy term is described. The strict bounds method
+  is applied to quantify parametric uncertainty in a principled way. We demonstrate the scalability of
+  this framework with 2 weeks’ worth of simulated aerosol optical depth data over the South Atlantic and
+  Central African region, written from the model every 3 hr and matched in time to twice-daily MODIS satellite
+  observations. When constraining the model using real satellite observations, we establish constraints
+  on combinations of two model parameters using much higher time-resolution outputs from the climate model
+  than previous studies. This result suggests that within the limits imposed by an imperfect climate model,
+  potentially very powerful constraints may be achieved when our framework is scaled to the analysis of
+  more observations and for longer time periods.
+significance: 3
+cited_by: 3
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

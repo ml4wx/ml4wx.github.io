@@ -1,0 +1,58 @@
+id: doi-10.1109-jstars.2023.3239109
+title: Statistical Downscaling of Temperature Distributions in Southwest China by Using Terrain-Guided
+  Attention Network
+authors:
+- Guangyu Liu
+- Rui Zhang
+- Renlong Hang
+- Lingling Ge
+- Chunxiang Shi
+- Qingshan Liu
+date: '2023-01-01'
+year: 2023
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2023.3239109
+  openalex: W4317795290
+links:
+  paper: https://doi.org/10.1109/jstars.2023.3239109
+  pdf: https://ieeexplore.ieee.org/ielx7/4609443/9973430/10024787.pdf
+orgs:
+- nuist
+- cma
+topic: downscaling
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Terrain-guided attention CNN downscales 2 m air temperature from 0.0625° to 0.01° over Southwest
+  China, reaching 1.12 °C RMSE using DEM attention blocks.
+abstract: Deep learning techniques, especially convolutional neural networks (CNNs), have dramatically
+  boosted the performance of statistical downscaling. In this study, we propose a CNN-based 2 m air temperature
+  downscaling model named Terrain-Guided Attention Network (TGAN), which aims at rebuilding 2 m air temperature
+  distribution from 0.0625$^{\circ }$to 0.01$^{\circ }$over Southwest China. More concretely, TGAN utilizes
+  two upsampling modules to progressively reconstruct the high-resolution temperature data from the low-resolution
+  one. Then, to better recover the spatial detail of the low-resolution temperature data, an attentive-terrain
+  block is proposed to introduce digital terrain model (DEM) information. It aggregates the temperature
+  data and the corresponding-scale DEM information via the attention mechanism in a multiscale manner.
+  Ultimately, the reconstruction module is employed to obtain the high-resolution temperature data. We
+  use the 2019 data for training, and utilize the 2018 data to verify the effectiveness of the proposed
+  TGAN. The experimental results showed that TGAN achieved the lowest root-mean-square error (1.12$\,^\circ$C)
+  when incorporating DEM data by attentive-terrain blocks in a multiscale manner, followed by incorporating
+  DEM data in a multiscale manner (TGAN-land, 1.31$\,^\circ$C) and only incorporating DEM data (SRCNN-land,
+  1.36$\,^\circ$C). Meanwhile, TGAN showed a competitive performance when compared with several advanced
+  deep-learning-based super-resolution algorithms and reconstructed the texture details of 2 m air temperature
+  fields more clearly. In general, among various deep learning approaches, TGAN achieves better downscaling
+  results for 2 m air temperature reconstruction and provides a practical method and guidance for the
+  back-calculation of high-resolution historical meteorological grid data.
+significance: 3
+cited_by: 23
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

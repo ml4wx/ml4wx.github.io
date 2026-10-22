@@ -1,0 +1,52 @@
+id: arxiv-2205.00865
+title: 'WeatherBench Probability: A benchmark dataset for probabilistic medium-range weather forecasting
+  along with deep learning baseline models'
+authors:
+- Sagar Garg
+- Stephan Rasp
+- Nils Thuerey
+date: '2022-05-02'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2205.00865'
+  openalex: W4225373634
+links:
+  paper: https://arxiv.org/abs/2205.00865
+  pdf: https://arxiv.org/pdf/2205.00865
+orgs:
+- tum
+topic: benchmarks-data-eval
+topics:
+- probabilistic-ensembles
+type: benchmark
+method:
+- cnn
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: Extends WeatherBench with probabilistic metrics, an IFS ensemble baseline and three probabilistic
+  ML models; Monte Carlo dropout underestimates uncertainty and no ML model matches IFS.
+abstract: WeatherBench is a benchmark dataset for medium-range weather forecasting of geopotential, temperature
+  and precipitation, consisting of preprocessed data, predefined evaluation metrics and a number of baseline
+  models. WeatherBench Probability extends this to probabilistic forecasting by adding a set of established
+  probabilistic verification metrics (continuous ranked probability score, spread-skill ratio and rank
+  histograms) and a state-of-the-art operational baseline using the ECWMF IFS ensemble forecast. In addition,
+  we test three different probabilistic machine learning methods -- Monte Carlo dropout, parametric prediction
+  and categorical prediction, in which the probability distribution is discretized. We find that plain
+  Monte Carlo dropout severely underestimates uncertainty. The parametric and categorical models both
+  produce fairly reliable forecasts of similar quality. The parametric models have fewer degrees of freedom
+  while the categorical model is more flexible when it comes to predicting non-Gaussian distributions.
+  None of the models are able to match the skill of the operational IFS model. We hope that this benchmark
+  will enable other researchers to evaluate their probabilistic approaches.
+significance: 5
+cited_by: 21
+score: 30
+highlight: false
+added: '2026-10-22'
+source: backfill

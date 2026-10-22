@@ -1,0 +1,54 @@
+id: arxiv-2310.02676
+title: 'PostRainBench: A comprehensive benchmark and a new model for precipitation forecasting'
+authors:
+- Yujin Tang
+- Jiaming Zhou
+- Xiang Pan
+- Zeying Gong
+- Junwei Liang
+date: '2023-10-04'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2310.02676'
+  openalex: W4387427374
+links:
+  paper: https://arxiv.org/abs/2310.02676
+  pdf: https://arxiv.org/pdf/2310.02676
+  code: https://github.com/yyyujintang/PostRainBench
+topic: post-processing
+topics:
+- extremes-hazards
+type: benchmark
+method:
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: PostRainBench and CAMT post-process NWP for precipitation, with the first deep model beating
+  NWP on heavy-rain CSI by 15.6–31.8%.
+abstract: Accurate precipitation forecasting is a vital challenge of societal importance. Though data-driven
+  approaches have emerged as a widely used solution, solely relying on data-driven approaches has limitations
+  in modeling the underlying physics, making accurate predictions difficult. We focus on the Numerical
+  Weather Prediction (NWP) post-processing based precipitation forecasting task to couple Machine Learning
+  techniques with traditional NWP. This task remains challenging due to the imbalanced precipitation data
+  and complex relationships between multiple meteorological variables. To address these limitations, we
+  introduce the \textbf{PostRainBench}, a comprehensive multi-variable NWP post-processing benchmark,
+  and \textbf{CAMT}, a simple yet effective Channel Attention Enhanced Multi-task Learning framework with
+  a specially designed weighted loss function. Extensive experimental results on the proposed benchmark
+  show that our method outperforms state-of-the-art methods by 6.3\%, 4.7\%, and 26.8\% in rain CSI and
+  improvements of 15.6\%, 17.4\%, and 31.8\% over NWP predictions in heavy rain CSI on respective datasets.
+  Most notably, our model is the first deep learning-based method to outperform NWP approaches in heavy
+  rain conditions. These results highlight the potential impact of our model in reducing the severe consequences
+  of extreme rainfall events. Our datasets and code are available at https://github.com/yyyujintang/PostRainBench.
+significance: 4
+cited_by: 1
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

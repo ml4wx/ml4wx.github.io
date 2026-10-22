@@ -1,0 +1,51 @@
+id: arxiv-1902.05631
+title: Super-Resolution Simulation for Real-Time Prediction of Urban Micrometeorology
+authors:
+- Ryo Onishi
+- Daisuke Sugiyama
+- Keigo Matsuda
+date: '2019-01-01'
+year: 2019
+venue: SOLA
+venue_type: journal
+ids:
+  arxiv: '1902.05631'
+  doi: 10.2151/sola.2019-032
+  openalex: W2914907552
+links:
+  paper: https://doi.org/10.2151/sola.2019-032
+  pdf: https://www.jstage.jst.go.jp/article/sola/15/0/15_2019-032/_pdf
+topic: downscaling
+topics:
+- regional-km-scale
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- local
+data:
+- km-scale-sim
+status: research
+summary: CNN super-resolution applied to low-resolution urban micrometeorology simulations gives 4x finer
+  predictions faster than high-resolution runs, beating interpolation.
+abstract: We propose a super-resolution (SR) simulation system that consists of a physics-based meteorological
+  simulation and an SR method based on a deep convolutional neural network (CNN). The CNN is trained using
+  pairs of high-resolution (HR) and low-resolution (LR) images created from meteorological simulation
+  results for different resolutions so that it can map LR simulation images to HR ones. The proposed SR
+  simulation system, which performs LR simulations, can provide HR prediction results in much shorter
+  operating cycles than those required for corresponding HR simulation prediction system. We apply the
+  SR simulation system to urban micrometeorology, which is strongly affected by buildings and human activity.
+  Urban micrometeorology simulations that need to resolve urban buildings are computationally costly and
+  thus cannot be used for operational real-time predictions even when run on supercomputers. We performed
+  HR micrometeorology simulations on a supercomputer to obtain datasets for training the CNN in the SR
+  method. It is shown that the proposed SR method can be used with a spatial scaling factor of 4 and that
+  it outperforms conventional interpolation methods by a large margin. It is also shown that the proposed
+  SR simulation system has the potential to be used for operational urban micrometeorology predictions.
+significance: 3
+cited_by: 50
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,61 @@
+id: doi-10.5194-esd-11-139-2020
+title: 'Emulating Earth system model temperatures with MESMER: from global mean temperature trajectories
+  to grid-point-level realizations on land'
+authors:
+- Lea Beusch
+- Lukas Gudmundsson
+- Sonia I. Seneviratne
+date: '2020-02-17'
+year: 2020
+venue: Earth System Dynamics
+venue_type: journal
+ids:
+  doi: 10.5194/esd-11-139-2020
+  openalex: W2953669636
+links:
+  paper: https://doi.org/10.5194/esd-11-139-2020
+orgs:
+- eth-zurich
+topic: climate-emulation
+topics:
+- downscaling
+type: model
+method:
+- classical-ml
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+status: research
+summary: MESMER statistically emulates grid-point land temperature from CMIP5 models, producing a 40-model
+  superensemble at negligible computational cost.
+abstract: Earth system models (ESMs) are invaluable tools to study the climate system's response to specific
+  greenhouse gas emission pathways. Large single-model initial-condition and multi-model ensembles are
+  used to investigate the range of possible responses and serve as input to climate impact and integrated
+  assessment models. Thereby, climate signal uncertainty is propagated along the uncertainty chain and
+  its effect on interactions between humans and the Earth system can be quantified. However, generating
+  both single-model initial-condition and multi-model ensembles is computationally expensive. In this
+  study, we assess the feasibility of geographically explicit climate model emulation, i.e., of statistically
+  producing large ensembles of land temperature field time series that closely resemble ESM runs at a
+  negligible computational cost. For this purpose, we develop a modular emulation framework which consists
+  of (i) a global mean temperature module, (ii) a local temperature response module, and (iii) a local
+  residual temperature variability module. Based on this framework, MESMER, a Modular Earth System Model
+  Emulator with spatially Resolved output, is built. We first show that to successfully mimic single-model
+  initial-condition ensembles of yearly temperature from 1870 to 2100 on grid-point to regional scales
+  with MESMER, it is sufficient to train on a single ESM run, but separate emulators need to be calibrated
+  for individual ESMs given fundamental inter-model differences. We then emulate 40 climate models of
+  the Coupled Model Intercomparison Project Phase 5 (CMIP5) to create a “superensemble”, i.e., a large
+  ensemble which closely resembles a multi-model initial-condition ensemble. The thereby emerging ESM-specific
+  emulator parameters provide essential insights on inter-model differences across a broad range of scales
+  and characterize core properties of each ESM. Our results highlight that, for temperature at the spatiotemporal
+  scales considered here, it is likely more advantageous to invest computational resources into generating
+  multi-model ensembles rather than large single-model initial-condition ensembles. Such multi-model ensembles
+  can be extended to superensembles with emulators like the one presented here.
+significance: 5
+cited_by: 136
+score: 40
+highlight: false
+added: '2026-10-22'
+source: seed

@@ -1,0 +1,48 @@
+id: arxiv-2306.05420
+title: Scaling Spherical CNNs
+authors:
+- Carlos Esteves
+- Jean-Jacques Slotine
+- Ameesh Makadia
+date: '2023-06-08'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2306.05420'
+  openalex: W4380137121
+links:
+  paper: https://arxiv.org/abs/2306.05420
+  pdf: https://arxiv.org/pdf/2306.05420
+  code: https://github.com/google-research/spherical-cnn
+topic: global-medium-range
+topics:
+- benchmarks-data-eval
+type: model
+method:
+- other
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Scales spherical CNNs to large problems, reaching state of the art on QM9 and competitive results
+  on several weather forecasting tasks; weather is a secondary target.
+abstract: Spherical CNNs generalize CNNs to functions on the sphere, by using spherical convolutions as
+  the main linear operation. The most accurate and efficient way to compute spherical convolutions is
+  in the spectral domain (via the convolution theorem), which is still costlier than the usual planar
+  convolutions. For this reason, applications of spherical CNNs have so far been limited to small problems
+  that can be approached with low model capacity. In this work, we show how spherical CNNs can be scaled
+  for much larger problems. To achieve this, we make critical improvements including novel variants of
+  common model components, an implementation of core operations to exploit hardware accelerator characteristics,
+  and application-specific input representations that exploit the properties of our model. Experiments
+  show our larger spherical CNNs reach state-of-the-art on several targets of the QM9 molecular benchmark,
+  which was previously dominated by equivariant graph neural networks, and achieve competitive performance
+  on multiple weather forecasting tasks. Our code is available at https://github.com/google-research/spherical-cnn.
+significance: 3
+cited_by: 7
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

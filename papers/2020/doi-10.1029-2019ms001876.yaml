@@ -1,0 +1,51 @@
+id: doi-10.1029-2019ms001876
+title: Machine Learning‐Based Prediction of Spatiotemporal Uncertainties in Global Wind Velocity Reanalyses
+authors:
+- Christopher Irrgang
+- Jan Saynisch‐Wagner
+- Maik Thomas
+date: '2020-04-26'
+year: 2020
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2019ms001876
+  openalex: W3020184660
+links:
+  paper: https://doi.org/10.1029/2019ms001876
+  pdf: https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2019MS001876
+topic: xai-uq-physics
+topics:
+- data-assimilation
+type: model
+method:
+- rnn
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Recurrent network predicts global spatiotemporal uncertainty of 10 m ocean wind reanalyses, trained
+  at a few locations and generalizing globally, for ensemble generation and assimilation.
+abstract: Abstract The characterization of uncertainties in geophysical quantities is an important task
+  with widespread applications for time series prediction, numerical modeling, and data assimilation.
+  In this context, machine learning is a powerful tool for estimating complex patterns and their evolution
+  through time. Here, we utilize a supervised machine learning approach to dynamically predict the spatiotemporal
+  uncertainty of near‐surface wind velocities over the ocean. A recurrent neural network (RNN) is trained
+  with reanalyzed 10 m wind velocities and corresponding precalculated uncertainty estimates during the
+  2012–2016 time period. Afterward, the neural network's performance is examined by analyzing its prediction
+  for the subsequent year 2017. Our experiments show that a recurrent neural network can capture the globally
+  prevalent wind regimes without prior knowledge about underlying physics and learn to derive wind velocity
+  uncertainty estimates that are only based on wind velocity trajectories. At single training locations,
+  the RNN‐based wind uncertainties closely match with the true reference values, and the corresponding
+  intra‐annual variations are reproduced with high accuracy. Moreover, the neural network can predict
+  global lateral distribution of uncertainties with small mismatch values after being trained only at
+  a few isolated locations in different dynamic regimes. The presented approach can be combined with numerical
+  models for a cost‐efficient generation of ensemble simulations or with ensemble‐based data assimilation
+  to sample and predict dynamically consistent error covariance information of atmospheric boundary forcings.
+significance: 3
+cited_by: 14
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

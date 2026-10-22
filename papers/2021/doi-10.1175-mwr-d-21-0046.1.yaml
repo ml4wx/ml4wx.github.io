@@ -1,0 +1,53 @@
+id: doi-10.1175-mwr-d-21-0046.1
+title: Spatially Coherent Postprocessing of Cloud Cover Ensemble Forecasts
+authors:
+- Y. Dai
+- Stephan Hemri
+date: '2021-10-07'
+year: 2021
+venue: Monthly Weather Review
+venue_type: journal
+ids:
+  doi: 10.1175/mwr-d-21-0046.1
+  openalex: W3214954120
+links:
+  paper: https://doi.org/10.1175/mwr-d-21-0046.1
+  pdf: https://journals.ametsoc.org/downloadpdf/journals/mwre/149/12/MWR-D-21-0046.1.pdf
+orgs:
+- meteoswiss
+- eth-zurich
+topic: post-processing
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- gan-vae
+- other
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- satellite
+status: research
+summary: Conditional GAN and dense networks postprocess COSMO-E and IFS cloud cover ensembles over Switzerland,
+  with cGAN producing realistic scenarios without copula or shuffle templates.
+abstract: Abstract Statistical postprocessing is commonly applied to reduce location and dispersion errors
+  of probabilistic forecasts provided by numerical weather prediction (NWP) models. If postprocessed forecast
+  scenarios are required, the combination of ensemble model output statistics (EMOS) for univariate postprocessing
+  with ensemble copula coupling (ECC) or the Schaake shuffle (ScS) to retain the dependence structure
+  of the raw ensemble is a state-of-the-art approach. However, modern machine learning methods may lead
+  to both a better univariate skill and more realistic forecast scenarios. In this study, we postprocess
+  multimodel ensemble forecasts of cloud cover over Switzerland provided by COSMO-E and ECMWF-IFS using
+  (i) EMOS + ECC, (ii) EMOS + ScS, (iii) dense neural networks (dense NN) + ECC, (iv) dense NN + ScS,
+  and (v) conditional generative adversarial networks (cGAN). The different methods are verified using
+  EUMETSAT satellite data. Dense NN shows the best univariate skill, but cGAN performed only slightly
+  worse. Furthermore, cGAN generates realistic forecast scenario maps, while not relying on a dependence
+  template like ECC or ScS, which is particularly favorable in the case of complex topography.
+significance: 4
+cited_by: 15
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

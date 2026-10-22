@@ -1,0 +1,58 @@
+id: arxiv-2312.03876
+title: Scaling transformer neural networks for skillful and reliable medium-range weather forecasting
+authors:
+- Tung Nguyen
+- Rohan Shah
+- Hritik Bansal
+- Troy Arcomano
+- Romit Maulik
+- Veerabhadra Kotamarthi
+- Ian Foster
+- Sandeep Madireddy
+- Aditya Grover
+date: '2023-12-06'
+year: 2023
+venue: Advances in Neural Information Processing Systems 37
+venue_type: preprint
+ids:
+  arxiv: '2312.03876'
+  doi: 10.52202/079017-2196
+  openalex: W4415797118
+links:
+  paper: https://arxiv.org/abs/2312.03876
+  pdf: https://arxiv.org/pdf/2312.03876
+  code: https://github.com/tung-nd/stormer
+topic: global-medium-range
+type: model
+method:
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Stormer, a plain transformer with randomized forecast training, beats leading models beyond 7
+  days on WeatherBench 2 using far less data and compute, and scales well.
+abstract: Weather forecasting is a fundamental problem for anticipating and mitigating the impacts of
+  climate change. Recently, data-driven approaches for weather forecasting based on deep learning have
+  shown great promise, achieving accuracies that are competitive with operational systems. However, those
+  methods often employ complex, customized architectures without sufficient ablation analysis, making
+  it difficult to understand what truly contributes to their success. Here we introduce Stormer, a simple
+  transformer model that achieves state-of-the-art performance on weather forecasting with minimal changes
+  to the standard transformer backbone. We identify the key components of Stormer through careful empirical
+  analyses, including weather-specific embedding, randomized dynamics forecast, and pressure-weighted
+  loss. At the core of Stormer is a randomized forecasting objective that trains the model to forecast
+  the weather dynamics over varying time intervals. During inference, this allows us to produce multiple
+  forecasts for a target lead time and combine them to obtain better forecast accuracy. On WeatherBench
+  2, Stormer performs competitively at short to medium-range forecasts and outperforms current methods
+  beyond 7 days, while requiring orders-of-magnitude less training data and compute. Additionally, we
+  demonstrate Stormer's favorable scaling properties, showing consistent improvements in forecast accuracy
+  with increases in model size and training tokens. Code and checkpoints are available at https://github.com/tung-nd/stormer.
+significance: 6
+cited_by: 44
+score: 34
+highlight: false
+added: '2026-10-22'
+source: seed

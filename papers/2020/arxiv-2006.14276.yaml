@@ -1,0 +1,49 @@
+id: arxiv-2006.14276
+title: Combining Ensemble Kalman Filter and Reservoir Computing to predict spatio-temporal chaotic systems
+  from imperfect observations and models
+authors:
+- Futo Tomizawa
+- Yohei Sawada
+date: '2020-06-25'
+year: 2020
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  arxiv: '2006.14276'
+  doi: 10.5194/gmd-14-5623-2021
+  openalex: W3080545603
+links:
+  paper: https://doi.org/10.5194/gmd-14-5623-2021
+  pdf: https://arxiv.org/pdf/2006.14276
+orgs:
+- jma
+topic: data-assimilation
+type: model
+method:
+- rnn
+timescale:
+- short
+data:
+- other
+status: research
+summary: Reservoir computing trained on LETKF analyses predicts the Lorenz 96 system under sparse, noisy
+  observations and imperfect models, outperforming LETKF when the model is imperfect.
+abstract: Prediction of spatio-temporal chaotic systems is important in various fields, such as Numerical
+  Weather Prediction (NWP). While data assimilation methods have been applied in NWP, machine learning
+  techniques, such as Reservoir Computing (RC), are recently recognized as promising tools to predict
+  spatio-temporal chaotic systems. However, the sensitivity of the skill of the machine learning based
+  prediction to the imperfectness of observations is unclear. In this study, we evaluate the skill of
+  RC with noisy and sparsely distributed observations. We intensively compare the performances of RC and
+  Local Ensemble Transform Kalman Filter (LETKF) by applying them to the prediction of the Lorenz 96 system.
+  Although RC can successfully predict the Lorenz 96 system if the system is perfectly observed, we find
+  that RC is vulnerable to observation sparsity compared with LETKF. To overcome this limitation of RC,
+  we propose to combine LETKF and RC. In our proposed method, the system is predicted by RC that learned
+  the analysis time series estimated by LETKF. Our proposed method can successfully predict the Lorenz
+  96 system using noisy and sparsely distributed observations. Most importantly, our method can predict
+  better than LETKF when the process-based model is imperfect.
+significance: 4
+cited_by: 21
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,47 @@
+id: arxiv-1907.01351
+title: Coupled online learning as a way to tackle instabilities and biases in neural network parameterizations
+authors:
+- Stephan Rasp
+date: '2019-07-02'
+year: 2019
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  arxiv: '1907.01351'
+  doi: 10.5194/gmd-2019-319
+  openalex: W3000537280
+links:
+  paper: https://doi.org/10.5194/gmd-13-2185-2020
+  pdf: https://arxiv.org/pdf/1907.01351
+  code: https://github.com/raspstephan/Lorenz-Online
+orgs:
+- tum
+topic: hybrid-parameterization
+type: model
+spatial:
+- global
+data:
+- km-scale-sim
+status: research
+summary: Proposes coupled online learning, where a neural parameterization runs alongside a high-resolution
+  simulation with nudging, to reduce instabilities and biases; illustrated on Lorenz 96.
+abstract: 'Over the last couple of years, machine learning parameterizations have emerged as a potential
+  way to improve the representation of sub-grid processes in Earth System Models (ESMs). So far, all studies
+  were based on the same three-step approach: first a training dataset was created from a high-resolution
+  simulation, then a machine learning algorithm was fitted to this dataset, before the trained algorithm
+  was implemented in the ESM. The resulting online simulations were frequently plagued by instabilities
+  and biases. Here, coupled online learning is proposed as a way to combat these issues. Coupled learning
+  can be seen as a second training stage in which the pretrained machine learning parameterization, specifically
+  a neural network, is run in parallel with a high-resolution simulation. The high-resolution simulation
+  is kept in sync with the neural network-driven ESM through constant nudging. This enables the neural
+  network to learn from the tendencies that the high-resolution simulation would produce if it experienced
+  the states the neural network creates. The concept is illustrated using the Lorenz 96 model, where coupled
+  learning is able to recover the "true" parameterizations. Further, detailed algorithms for the implementation
+  of coupled learning in 3D cloud-resolving models and the super parameterization framework are presented.
+  Finally, outstanding challenges and issues not resolved by this approach are discussed.'
+significance: 5
+cited_by: 115
+score: 50
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,54 @@
+id: arxiv-2101.08195
+title: Machine learning emulation of gravity wave drag in numerical weather forecasting
+authors:
+- Matthew Chantry
+- Sam Hatfield
+- Peter Duben
+- Inna Polichtchouk
+- Tim Palmer
+date: '2021-01-20'
+year: 2021
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  arxiv: '2101.08195'
+  doi: 10.1029/2021ms002477
+  openalex: W3123510158
+links:
+  paper: https://arxiv.org/abs/2101.08195
+  pdf: https://arxiv.org/pdf/2101.08195
+orgs:
+- ecmwf
+- university-of-oxford
+topic: hybrid-parameterization
+topics:
+- global-medium-range
+type: model
+method:
+- other
+timescale:
+- medium
+- seasonal
+spatial:
+- global
+data:
+- nwp-analysis
+status: pre-operational
+summary: Neural emulators of the non-orographic gravity wave drag scheme run stably to seasonal timescales,
+  improve medium-range forecasts and run ten times faster on GPUs than the CPU scheme.
+abstract: We assess the value of machine learning as an accelerator for the parameterisation schemes of
+  operational weather forecasting systems, specifically the parameterisation of non-orographic gravity
+  wave drag. Emulators of this scheme can be trained to produce stable and accurate results up to seasonal
+  forecasting timescales. Generally, more complex networks produce more accurate emulators. By training
+  on an increased complexity version of the existing parameterisation scheme we build emulators that produce
+  more accurate forecasts. {For medium range forecasting we find evidence our emulators are more accurate}
+  than the version of the parametrisation scheme that is used for operational predictions. Using the current
+  operational CPU hardware our emulators have a similar computational cost to the existing scheme, but
+  are heavily limited by data movement. On GPU hardware our emulators perform ten times faster than the
+  existing scheme on a CPU.
+significance: 5
+cited_by: 79
+score: 55
+highlight: false
+added: '2026-10-22'
+source: seed

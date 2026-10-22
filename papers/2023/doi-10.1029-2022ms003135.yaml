@@ -1,0 +1,58 @@
+id: doi-10.1029-2022ms003135
+title: Improving E3SM Land Model Photosynthesis Parameterization via Satellite SIF, Machine Learning,
+  and Surrogate Modeling
+authors:
+- Anping Chen
+- Daniel M. Ricciuto
+- Jiafu Mao
+- Jiawei Wang
+- Dan Lu
+- Fandong Meng
+date: '2023-04-01'
+year: 2023
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2022ms003135
+  openalex: W4366831741
+links:
+  paper: https://doi.org/10.1029/2022ms003135
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2022MS003135
+orgs:
+- ornl
+- colorado-state-university
+topic: hybrid-parameterization
+type: model
+method:
+- classical-ml
+spatial:
+- global
+data:
+- satellite
+- other
+status: research
+summary: Boosted trees and random forests map satellite SIF to GPP to calibrate E3SM land photosynthesis
+  parameters, reducing simulated GPP uncertainty after surrogate-based benchmarking.
+abstract: Abstract The parameterization of key photosynthesis parameters is one of the key uncertain sources
+  in modeling ecosystem gross primary productivity (GPP). Solar‐induced chlorophyll fluorescence (SIF)
+  offers a good proxy for GPP since it marks the actual process of photosynthesis; while machine learning
+  (ML) provides a robust approach to model the GPP‐SIF relationship. Here, we trained the boosted regressing
+  tree (BRT) and the Random Forest ML models with Greenhouse Gases Observing Satellite SIF data and in
+  situ GPP observations from 49 eddy covariance towers. These trained ML GPP‐SIF models were fed into
+  the Energy Exascale Earth System Model (E3SM) Land Model (ELM) to generate ELM‐simulated global SIF
+  estimates, which were then benchmarked against satellite SIF observations with a surrogate modeling
+  approach. Our results indicated good modeling performance of the ML‐based GPP‐SIF relationship. The
+  ELM model when fed with the ML GPP‐SIF models also can well predict the spatial‐temporal variations
+  in SIF. We also found high model accuracy for the surrogate modeling. Model parameter sensitivity analysis
+  suggested that the fraction of leaf nitrogen in RuBisCO (flnr) is the most sensitive parameter to the
+  SIF; other sensitive parameters include the Ball‐Berry stomatal conductance slope (mbbopt) and the vcmax
+  entropy (vcmaxse). The posterior uncertainty in simulated GPP was greatly reduced after benchmarking,
+  and the model produced improved spatial patterns of mean GPP relative to FLUXCOM GPP. Our integrated
+  approach provides a new avenue for improving land models and using remote‐sensing SIF, which can be
+  further improved in the future with more ground‐ and satellite‐based observations.
+significance: 3
+cited_by: 11
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

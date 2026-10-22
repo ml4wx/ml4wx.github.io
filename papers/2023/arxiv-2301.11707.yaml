@@ -1,0 +1,44 @@
+id: arxiv-2301.11707
+title: Improving deep learning precipitation nowcasting by using prior knowledge
+authors:
+- Matej Choma
+- Petr Šimánek
+- Jakub Bartel
+date: '2023-01-27'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2301.11707'
+  openalex: W4318621006
+links:
+  paper: https://arxiv.org/abs/2301.11707
+  pdf: https://arxiv.org/pdf/2301.11707
+topic: nowcasting
+type: model
+method:
+- physics-constrained
+- rnn
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Adds a hand-engineered advection-diffusion PhyCell to PhyDNet for radar nowcasting, but the physics
+  prior does not improve prediction skill.
+abstract: Deep learning methods dominate short-term high-resolution precipitation nowcasting in terms
+  of prediction error. However, their operational usability is limited by difficulties explaining dynamics
+  behind the predictions, which are smoothed out and missing the high-frequency features due to optimizing
+  for mean error loss functions. We experiment with hand-engineering of the advection-diffusion differential
+  equation into a PhyCell to introduce more accurate physical prior to a PhyDNet model that disentangles
+  physical and residual dynamics. Results indicate that while PhyCell can learn the intended dynamics,
+  training of PhyDNet remains driven by loss optimization, resulting in a model with the same prediction
+  capabilities.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

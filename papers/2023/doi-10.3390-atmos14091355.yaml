@@ -1,0 +1,62 @@
+id: doi-10.3390-atmos14091355
+title: Ten-Meter Wind Speed Forecast Correction in Southwest China Based on U-Net Neural Network
+authors:
+- Tao Xiang
+- Xiefei Zhi
+- Weijun Guo
+- Yang Lyu
+- Yan Ji
+- Yanhe Zhu
+- Yanan Yin
+- Jiawen Huang
+date: '2023-08-28'
+year: 2023
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos14091355
+  openalex: W4386255803
+links:
+  paper: https://doi.org/10.3390/atmos14091355
+  pdf: https://www.mdpi.com/2073-4433/14/9/1355/pdf?version=1693277191
+orgs:
+- nuist
+topic: post-processing
+type: model
+method:
+- cnn
+timescale:
+- medium
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: U-Net calibrates GEFS 10-m wind forecasts over Southwest China, raising the share of errors under
+  0.5 m/s by 46-50% at day 1 and beating CNN and linear baselines.
+abstract: Accurate forecasting of wind speed holds significant importance for the economic and social
+  development of humanity. However, existing numerical weather predictions have certain inaccuracies due
+  to various reasons. Therefore, it is highly necessary to perform statistical post-processing on forecasted
+  results. However, traditional linear statistical post-processing methods possess inherent limitations.
+  Hence, in this study, we employed two deep learning methods, namely the convolutional neural network
+  (CNN) and the U-Net neural network, to calibrate the forecast of the Global Ensemble Forecast System
+  (GEFS) in predicting 10-m surface wind speed in Southwest China with a forecast lead time of one to
+  seven days. Two traditional linear statistical post-processing methods, the decaying average method
+  (DAM) and unary linear regression (ULR), are conducted in parallel for comparison. Results show that
+  original GEFS forecasts yield poorer wind speed forecasting performance in the western and eastern Sichuan
+  provinces, the eastern Yunnan province, and within the Guizhou province. All four methods provided certain
+  correction effects on the GEFS wind speed forecasts in the study area, with U-Net demonstrating the
+  best correction performance. After correction using the U-Net, for a 1-day forecast lead time, the proportion
+  of the 10-m U-component of wind with errors less than 0.5 m/s has increased by 46% compared to GEFS.
+  Similarly, for the 10-m V-component of wind, the proportion of errors less than 0.5 m/s has increased
+  by 50% compared to GEFS. Furthermore, we employed the mean square error-based error decomposition method
+  to further diagnose the sources of forecast errors for different prediction models and reveal their
+  calibration capabilities for different error sources. The results indicate that DAM and ULR perform
+  best in correcting the Bias2, while the correction effects of all methods were variable for the distribution
+  with the forecast lead time. U-Net demonstrated the best correction performance for the sequence.
+significance: 3
+cited_by: 10
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

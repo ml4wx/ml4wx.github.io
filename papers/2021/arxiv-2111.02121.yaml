@@ -1,0 +1,41 @@
+id: arxiv-2111.02121
+title: 'Spatiotemporal Weather Data Predictions with Shortcut Recurrent-Convolutional Networks: A Solution
+  for the Weather4cast challenge'
+authors:
+- Jussi Leinonen
+date: '2021-11-03'
+year: 2021
+venue_type: preprint
+ids:
+  arxiv: '2111.02121'
+links:
+  paper: https://arxiv.org/abs/2111.02121
+  pdf: https://arxiv.org/pdf/2111.02121
+  code: https://github.com/jleinonen/weather4cast-stage1
+topic: nowcasting
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Encoder-forecaster with residual ConvGRU and U-Net-style shortcuts for Weather4cast satellite
+  image prediction; early forecasts stay sharp, later ones blur.
+abstract: This paper presents the neural network model that was used by the author in the Weather4cast
+  2021 Challenge Stage 1, where the objective was to predict the time evolution of satellite-based weather
+  data images. The network is based on an encoder-forecaster architecture making use of gated recurrent
+  units (GRU), residual blocks and a contracting/expanding architecture with shortcuts similar to U-Net.
+  A GRU variant utilizing residual blocks in place of convolutions is also introduced. Example predictions
+  and evaluation metrics for the model are presented. These demonstrate that the model can retain sharp
+  features of the input for the first predictions, while the later predictions become more blurred to
+  reflect the increasing uncertainty.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

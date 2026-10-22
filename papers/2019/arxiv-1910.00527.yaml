@@ -1,0 +1,50 @@
+id: arxiv-1910.00527
+title: A Three-dimensional Convolutional-Recurrent Network for Convective Storm Nowcasting
+authors:
+- Wei Zhang
+- Wei Li
+- Lei Han
+date: '2019-10-01'
+year: 2019
+venue: In 2019 IEEE International Conference on Big Knowledge (ICBK) (pp. 333-340) 2019
+venue_type: journal
+ids:
+  arxiv: '1910.00527'
+  doi: 10.1109/icbk.2019.00052
+links:
+  paper: https://arxiv.org/abs/1910.00527
+  pdf: https://arxiv.org/pdf/1910.00527
+topic: nowcasting
+topics:
+- extremes-hazards
+type: model
+method:
+- cnn
+- rnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- nwp-analysis
+status: research
+summary: A hybrid 3D CNN and ConvLSTM encoder-decoder fuses radar and 3D re-analysis fields to nowcast
+  convective storms, outperforming extrapolation baselines.
+abstract: 'Very short-term convective storm forecasting, termed nowcasting, has long been an important
+  issue and has attracted substantial interest. Existing nowcasting methods rely principally on radar
+  images and are limited in terms of nowcasting storm initiation and growth. Real-time re-analysis of
+  meteorological data supplied by numerical models provides valuable information about three-dimensional
+  (3D), atmospheric, boundary layer thermal dynamics, such as temperature and wind. To mine such data,
+  we here develop a convolution-recurrent, hybrid deep-learning method with the following characteristics:
+  (1) the use of cell-based oversampling to increase the number of training samples; this mitigates the
+  class imbalance issue; (2) the use of both raw 3D radar data and 3D meteorological data re-analyzed
+  via multi-source 3D convolution without any need for handcraft feature engineering; and (3) the stacking
+  of convolutional neural networks on a long short-term memory encoder/decoder that learns the spatiotemporal
+  patterns of convective processes. Experimental results demonstrated that our method performs better
+  than other extrapolation methods. Qualitative analysis yielded encouraging nowcasting results.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

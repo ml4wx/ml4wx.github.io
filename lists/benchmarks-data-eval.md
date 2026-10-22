@@ -5,8 +5,54 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/benchmarks-data-eval/)
 
-0 papers (0 ⭐). Newest first.
+17 papers (5 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-05-01 | [Extreme Weather Bench: A framework and benchmark for evaluation of high-impact weather](https://arxiv.org/abs/2605.01126)<br><sub>Amy McGovern, Taylor Mandelbaum, Daniel Rothenberg et al.</sub> |  |  |
+| 2024-10-24 | [Recommendations for Comprehensive and Independent Evaluation of Machine Learning-Based Earth System Models](https://arxiv.org/abs/2410.19882)<br><sub>Paul A. Ullrich, Elizabeth A. Barnes, William D. Collins et al. · Journal of Geophysical Research: Machine Learning and Computation</sub> | Colorado State University (incl. CIRA), Lawrence Berkeley National Laboratory / NERSC, NSF NCAR / UCAR, Oak Ridge National Laboratory, University of California, Berkeley |  |
+| 2024-09-14 | [WeatherReal: A Benchmark Based on In-Situ Observations for Evaluating Weather Models](https://arxiv.org/abs/2409.09371)<br><sub>Weixin Jin, Jonathan Weyn, Pengcheng Zhao et al.</sub> |  |  |
+| 2024-01-01 | [ChaosBench: A Multi-Channel, Physics-Based Benchmark for Subseasonal-to-Seasonal Climate Prediction](https://arxiv.org/abs/2402.00712)<br><sub>Juan Nathaniel, Yongquan Qu, Tung Nguyen et al. · Advances in Neural Information Processing Systems 37</sub> |  |  |
+| 2023-08-29 | ⭐ [WeatherBench 2: A benchmark for the next generation of data-driven global weather models](https://arxiv.org/abs/2308.15560)<br><sub>Stephan Rasp, Stephan Hoyer, Alexander Merose et al. · Journal of Advances in Modeling Earth Systems</sub> | ECMWF, Google DeepMind, Google Research |  |
+| 2023-07-19 | ⭐ [The rise of data-driven weather forecasting](https://arxiv.org/abs/2307.10128)<br><sub>Zied Ben-Bouallegue, Mariana C A Clare, Linus Magnusson et al. · Bulletin of the American Meteorological Society</sub> | ECMWF |  |
+| 2023-06-28 | ⭐ [The EUPPBench postprocessing benchmark dataset v1.0](https://doi.org/10.5194/essd-15-2635-2023)<br><sub>Jonathan Demaeyer, Jonas Bhend, Sebastian Lerch et al. · Earth System Science Data</sub> | Deutscher Wetterdienst (DWD), ECMWF, Karlsruhe Institute of Technology (KIT), Met Office, Météo-France (incl. CNRM), MeteoSwiss | [code](https://github.com/EUPP-benchmark/climetlab-eumetnet-postprocessing-benchmark) |
+| 2023-01-01 | [ClimateLearn: Benchmarking Machine Learning for Weather and Climate Modeling](https://arxiv.org/abs/2307.01909)<br><sub>Tung Nguyen, Jason Jewik, Hritik Bansal et al. · Advances in Neural Information Processing Systems 36</sub> |  | [code](https://github.com/aditya-grover/climate-learn) |
+| 2022-10-17 | ⭐ [ClimateBench v1.0: A Benchmark for Data‐Driven Climate Projections](https://doi.org/10.1029/2021ms002954)<br><sub>D. Watson‐Parris, Y. Rao, D. Olivié et al. · Journal of Advances in Modeling Earth Systems</sub> | ETH Zurich, MET Norway (Norwegian Meteorological Institute), University of Oxford |  |
+| 2022-07-01 | [Challenges and Benchmark Datasets for Machine Learning in the Atmospheric Sciences: Definition, Status, and Outlook](https://doi.org/10.1175/aies-d-21-0002.1)<br><sub>Peter D. Dueben, Martin G. Schultz, Matthew Chantry et al. · Artificial Intelligence for the Earth Systems</sub> | ECMWF, Forschungszentrum Jülich / Jülich Supercomputing Centre, NSF NCAR / UCAR, NVIDIA, University of Oklahoma (AI2ES) |  |
+| 2022-01-23 | [Machine Learning in Weather Prediction and Climate Analyses—Applications and Perspectives](https://doi.org/10.3390/atmos13020180)<br><sub>Bogdan Bochenek, Zbigniew Ustrnul · Atmosphere</sub> |  |  |
+| 2022-01-01 | [In Search of Micromodels: Black-box Evaluation of Spatio-temporal Models in Normal and Extreme Conditions](https://doi.org/10.24138/jcomss-2022-0092)<br><sub>Ivana Nižetić Kosović, Toni Mastelić, Domina Sokol et al. · Journal of Communications Software and Systems</sub> |  |  |
+| 2022-01-01 | [A spatiotemporal stochastic climate model for benchmarking causal discovery methods for teleconnections](https://doi.org/10.1017/eds.2022.11)<br><sub>Xavier‐Andoni Tibau, Christian Reimers, Andreas Gerhardus et al. · Environmental Data Science</sub> |  |  |
+| 2022-01-01 | [ENS-10: A Dataset For Post-Processing Ensemble Weather Forecasts](https://arxiv.org/abs/2206.14786)<br><sub>Saleh Ashkboos, Langwen Huang, Nikoli Dryden et al. · Advances in Neural Information Processing Systems 35</sub> | ETH Zurich |  |
+| 2021-11-29 | [ClimART: A Benchmark Dataset for Emulating Atmospheric Radiative Transfer in Weather and Climate Models](https://arxiv.org/abs/2111.14671)<br><sub>Salva Rühling Cachay, Venkatesh Ramesh, Jason N. S. Cole et al. · 35th Conference on Neural Information Processing Systems (NeurIPS 2021) Track on Datasets and Benchmarks</sub> | Environment and Climate Change Canada (ECCC) | [code](https://github.com/RolnickLab/climart) |
+| 2020-02-02 | ⭐ [WeatherBench: A benchmark dataset for data-driven weather forecasting](https://arxiv.org/abs/2002.00469)<br><sub>Stephan Rasp, Peter D. Dueben, Sebastian Scher et al. · Journal of Advances in Modeling Earth Systems</sub> | ECMWF, Technical University of Munich (TUM), University of Washington | [code](https://github.com/pangeo-data/WeatherBench) |
+| 2018-03-14 | [Scientific Visualization of Climate Simulation Data for Deep Convolutional Neural Network](https://confit.atlas.jp/guide/event/jpgu2018/subject/MAG32-04/detail)<br><sub>Daisuke Matsuoka · Japan Geoscience Union</sub> |  |  |
+
+## Also relevant
+
+- [CLIMATEAGENT: Multi-Agent Orchestration for Complex Climate Data Science Workflows](https://arxiv.org/abs/2511.20109) (2025)
+- [Zephyrus: An Agentic Framework for Weather Science](https://arxiv.org/abs/2510.04017) (2025)
+- [Do data-driven models beat numerical models in forecasting weather extremes? A comparison of IFS HRES, Pangu-Weather, and GraphCast](https://doi.org/10.5194/gmd-17-7915-2024) (2024)
+- [WeatherQA: Can Multimodal Language Models Reason about Severe Weather?](https://arxiv.org/abs/2406.11217) (2024)
+- [Validating Deep Learning Weather Forecast Models on Recent High-Impact Extreme Events](https://arxiv.org/abs/2404.17652) (2024)
+- [Enhancing Regional Climate Downscaling through Advances in Machine Learning](https://doi.org/10.1175/aies-d-23-0066.1) (2024)
+- [Do AI models produce better weather forecasts than physics-based models? A quantitative evaluation case study of Storm Ciarán](https://arxiv.org/abs/2312.02658) (2023)
+- [chatClimate: Grounding Conversational AI in Climate Science](https://arxiv.org/abs/2304.05510) (2023)
+- [Creating and Evaluating Uncertainty Estimates with Neural Networks for Environmental-Science Applications](https://doi.org/10.1175/aies-d-22-0061.1) (2023)
+- [Outcomes of the WMO Prize Challenge to Improve Subseasonal to Seasonal Predictions Using Artificial Intelligence](https://doi.org/10.1175/bams-d-22-0046.1) (2022)
+- [Compressing multidimensional weather and climate data into neural networks](https://arxiv.org/abs/2210.12538) (2022)
+- [Machine-learned cloud classes from satellite data for process-oriented climate model evaluation](https://arxiv.org/abs/2205.00743) (2022)
+- [Earthformer: Exploring Space-Time Transformers for Earth System Forecasting](https://arxiv.org/abs/2207.05833) (2022)
+- [Next Day Wildfire Spread: A Machine Learning Data Set to Predict Wildfire Spreading from Remote-Sensing Data](https://arxiv.org/abs/2112.02447) (2021)
+- [Towards implementing artificial intelligence post-processing in weather and climate: proposed actions from the Oxford 2019 workshop](https://doi.org/10.1098/rsta.2020.0091) (2021)
+- [Data-driven medium-range weather prediction with a Resnet pretrained on climate simulations: A new model for WeatherBench](https://arxiv.org/abs/2008.08626) (2020)
+- [Configuration and intercomparison of deep learning neural models for statistical downscaling](https://doi.org/10.5194/gmd-13-2109-2020) (2020)
+- [Causal networks for climate model evaluation and constrained projections](https://doi.org/10.1038/s41467-020-15195-y) (2020)
+- [Benchmarking Tropical Cyclone Rapid Intensification with Satellite Images and Attention-based Deep Models](https://arxiv.org/abs/1909.11616) (2019)
+- [Gauge Equivariant Convolutional Networks and the Icosahedral CNN](https://arxiv.org/abs/1902.04615) (2019)
+- [Machine Learning techniques to evaluate reproducibility of climate model simulations on hybrid architectures.](http://ui.adsabs.harvard.edu/abs/2018AGUFMIN13C0687M/abstract) (2018)
+- [A test case for application of convolutional neural networks to spatio-temporal climate data: Re-identifying clustered weather patterns](https://arxiv.org/abs/1811.04817) (2018)
+- [Intercomparison of machine learning methods for statistical downscaling: the case of daily and extreme precipitation](https://doi.org/10.1007/s00704-018-2613-3) (2018)
+- [Cluster-based analysis of multi-model climate ensembles](https://doi.org/10.5194/gmd-11-2033-2018) (2018)
+- [Machine Learning Predictions of a Multiresolution Climate Model Ensemble](https://doi.org/10.1029/2018gl077049) (2018)
+- [Deep Learning for Precipitation Nowcasting: A Benchmark and A New Model](https://arxiv.org/abs/1706.03458) (2017)
 

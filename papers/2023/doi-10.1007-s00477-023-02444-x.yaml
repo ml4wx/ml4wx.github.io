@@ -1,0 +1,58 @@
+id: doi-10.1007-s00477-023-02444-x
+title: Downscaling long lead time daily rainfall ensemble forecasts through deep learning
+authors:
+- Huidong Jin
+- Weifan Jiang
+- Minzhe Chen
+- Ming Li
+- K. Shuvo Bakar
+- Quanxi Shao
+date: '2023-04-14'
+year: 2023
+venue: Stochastic Environmental Research and Risk Assessment
+venue_type: journal
+ids:
+  doi: 10.1007/s00477-023-02444-x
+  openalex: W4365514553
+links:
+  paper: https://doi.org/10.1007/s00477-023-02444-x
+  pdf: https://link.springer.com/content/pdf/10.1007/s00477-023-02444-x.pdf
+topic: downscaling
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- cnn
+timescale:
+- seasonal
+spatial:
+- regional
+data:
+- cmip
+status: research
+summary: Deep-learning downscaling of ACCESS-S1 seasonal rainfall ensembles to 12 km, trained on CRPS,
+  beats quantile mapping for lead times up to 217 days.
+abstract: Abstract Skilful and localised daily weather forecasts for upcoming seasons are desired by climate-sensitive
+  sectors. Various General circulation models routinely provide such long lead time ensemble forecasts,
+  also known as seasonal climate forecasts (SCF), but require downscaling techniques to enhance their
+  skills from historical observations. Traditional downscaling techniques, like quantile mapping (QM),
+  learn empirical relationships from pre-engineered predictors. Deep-learning-based downscaling techniques
+  automatically generate and select predictors but almost all of them focus on simplified situations where
+  low-resolution images match well with high-resolution ones, which is not the case in ensemble forecasts.
+  To downscale ensemble rainfall forecasts, we take a two-step procedure. We first choose a suitable deep
+  learning model, very deep super-resolution (VDSR), from several outstanding candidates, based on an
+  ensemble forecast skill metric, continuous ranked probability score (CRPS). Secondly, via incorporating
+  other climate variables as extra input, we develop and finalise a very deep statistical downscaling
+  (VDSD) model based on CRPS. Both VDSR and VDSD are tested on downscaling 60 km rainfall forecasts from
+  the Australian Community Climate and Earth-System Simulator Seasonal model version 1 (ACCESS-S1) to
+  12 km with lead times up to 217 days. Leave-one-year-out testing results illustrate that VDSD has normally
+  higher forecast accuracy and skill, measured by mean absolute error and CRPS respectively, than VDSR
+  and QM. VDSD substantially improves ACCESS-S1 raw forecasts but does not always outperform climatology,
+  a benchmark for SCFs. Many more research efforts are required on downscaling and climate modelling for
+  skilful SCFs.
+significance: 3
+cited_by: 19
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

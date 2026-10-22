@@ -1,0 +1,55 @@
+id: arxiv-2304.08063
+title: Data-Driven Equation Discovery of a Cloud Cover Parameterization
+authors:
+- Arthur Grundner
+- Tom Beucler
+- Pierre Gentine
+- Veronika Eyring
+date: '2023-04-17'
+year: 2023
+venue: Journal of Advances in Modeling Earth Systems (JAMES), 2024
+venue_type: journal
+ids:
+  arxiv: '2304.08063'
+  doi: 10.1029/2023ms003763
+  openalex: W4392352441
+links:
+  paper: https://arxiv.org/abs/2304.08063
+  pdf: https://arxiv.org/pdf/2304.08063
+orgs:
+- columbia-leap
+topic: hybrid-parameterization
+type: model
+method:
+- classical-ml
+- physics-constrained
+spatial:
+- global
+data:
+- km-scale-sim
+- era5
+status: research
+summary: Symbolic regression yields an 11-parameter interpretable cloud cover equation matching neural
+  network skill (R²=0.94), beating Xu-Randall and transferring better to ERA5.
+abstract: A promising method for improving the representation of clouds in climate models, and hence climate
+  projections, is to develop machine learning-based parameterizations using output from global storm-resolving
+  models. While neural networks can achieve state-of-the-art performance within their training distribution,
+  they can make unreliable predictions outside of it. Additionally, they often require post-hoc tools
+  for interpretation. To avoid these limitations, we combine symbolic regression, sequential feature selection,
+  and physical constraints in a hierarchical modeling framework. This framework allows us to discover
+  new equations diagnosing cloud cover from coarse-grained variables of global storm-resolving model simulations.
+  These analytical equations are interpretable by construction and easily transferable to other grids
+  or climate models. Our best equation balances performance and complexity, achieving a performance comparable
+  to that of neural networks ($R^2=0.94$) while remaining simple (with only 11 trainable parameters).
+  It reproduces cloud cover distributions more accurately than the Xu-Randall scheme across all cloud
+  regimes (Hellinger distances $<0.09$), and matches neural networks in condensate-rich regimes. When
+  applied and fine-tuned to the ERA5 reanalysis, the equation exhibits superior transferability to new
+  data compared to all other optimal cloud cover schemes. Our findings demonstrate the effectiveness of
+  symbolic regression in discovering interpretable, physically-consistent, and nonlinear equations to
+  parameterize cloud cover.
+significance: 5
+cited_by: 38
+score: 30
+highlight: false
+added: '2026-10-22'
+source: seed

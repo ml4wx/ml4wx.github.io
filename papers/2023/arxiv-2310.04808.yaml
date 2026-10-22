@@ -1,0 +1,44 @@
+id: arxiv-2310.04808
+title: Combining UPerNet and ConvNeXt for Contrails Identification to reduce Global Warming
+authors:
+- Zhenkuan Wang
+date: '2023-10-07'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2310.04808'
+links:
+  paper: https://arxiv.org/abs/2310.04808
+  pdf: https://arxiv.org/pdf/2310.04808
+  code: https://github.com/biluko/2023GRIC.git
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: UPerNet with ConvNeXt segments aircraft contrails in GOES-16 infrared false-colour imagery, ranking
+  in the top 5% of a competition.
+abstract: 'Semantic segmentation is a critical tool in computer vision, applied in various domains like
+  autonomous driving and medical imaging. This study focuses on aircraft contrail detection in global
+  satellite images to improve contrail models and mitigate their impact on climate change.An innovative
+  data preprocessing technique for NOAA GOES-16 satellite images is developed, using brightness temperature
+  data from the infrared channel to create false-color images, enhancing model perception. To tackle class
+  imbalance, the training dataset exclusively includes images with positive contrail labels.The model
+  selection is based on the UPerNet architecture, implemented using the MMsegmentation library, with the
+  integration of two ConvNeXt configurations for improved performance. Cross-entropy loss with positive
+  class weights enhances contrail recognition. Fine-tuning employs the AdamW optimizer with a learning
+  rate of $2.5 \times 10^{-4}$.During inference, a multi-model prediction fusion strategy and a contrail
+  determination threshold of 0.75 yield a binary prediction mask. RLE encoding is used for efficient prediction
+  result organization.The approach achieves exceptional results, boasting a high Dice coefficient score,
+  placing it in the top 5\% of participating teams. This underscores the innovative nature of the segmentation
+  model and its potential for enhanced contrail recognition in satellite imagery.For further exploration,
+  the code and models are available on GitHub: \url{https://github.com/biluko/2023GRIC.git}.'
+significance: 2
+score: 18
+highlight: false
+added: '2026-10-22'
+source: backfill

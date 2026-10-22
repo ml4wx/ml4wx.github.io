@@ -1,0 +1,54 @@
+id: doi-10.3389-feart.2022.978942
+title: Spatiotemporal forecasting model based on hybrid convolution for local weather prediction post-processing
+authors:
+- Xiang Li
+- Jie Xiang
+- Jiping Guan
+- Lifeng Zhang
+- Zenghui Cao
+- Jilu Xia
+date: '2022-09-27'
+year: 2022
+venue: Frontiers in Earth Science
+venue_type: journal
+ids:
+  doi: 10.3389/feart.2022.978942
+  openalex: W4297311885
+links:
+  paper: https://doi.org/10.3389/feart.2022.978942
+  pdf: https://www.frontiersin.org/articles/10.3389/feart.2022.978942/pdf
+topic: post-processing
+topics:
+- local-forecasting
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: research
+summary: STCNet combines 2D and 1D convolutions to post-process NWP for station weather, outperforming
+  a Seq2Seq RNN and yielding hourly forecasts from 3-hourly input.
+abstract: Future weather conditions can be obtained based on numerical weather prediction (NWP); however,
+  NWP is unsatisfied with precise local weather prediction. In this study, we propose a spatiotemporal
+  convolutional network (STCNet) based on spatiotemporal modeling for local weather prediction post-processing.
+  To model the spatiotemporal information, we use a convolutional neural network and an interactive convolutional
+  module, which use two-dimensional convolution for spatial feature extraction and one-dimensional convolution
+  for time-series processing, respectively. We performed experiments at several stations, and the results
+  show that our model considerably outperforms the traditional recurrent neural network–based Seq2Seq
+  model while demonstrating the effectiveness of the fusion of observation and forecast data. By investigating
+  the influences of seasonal changes and station differences, we conclude that the STCNet model has high
+  prediction accuracy and stability. Finally, we completed the hour-by-hour local weather prediction using
+  the 3-h forecast data and attained similar results to the 3-h local weather prediction that efficiently
+  compensated for the temporal resolution of the forecast data. Thus, our model can enhance the spatial
+  and temporal resolutions of forecast data and achieve remarkable local weather prediction.
+significance: 3
+cited_by: 4
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

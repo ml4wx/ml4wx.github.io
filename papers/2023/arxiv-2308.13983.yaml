@@ -1,0 +1,47 @@
+id: arxiv-2308.13983
+title: Interpolation of mountain weather forecasts by machine learning
+authors:
+- Kazuma Iwase
+- Tomoyuki Takenawa
+date: '2023-08-27'
+year: 2023
+venue: Journal of Information Processing, Volume 32, 873--880 (2024)
+venue_type: journal
+ids:
+  arxiv: '2308.13983'
+  doi: 10.2197/ipsjjip.32.873
+links:
+  paper: https://arxiv.org/abs/2308.13983
+  pdf: https://arxiv.org/pdf/2308.13983
+topic: post-processing
+topics:
+- local-forecasting
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: research
+summary: LightGBM interpolates plains forecasts and observations to improve temperature and precipitation
+  forecasts in Japanese mountain areas, with partial RMSE gains.
+abstract: Recent advances in numerical simulation methods based on physical models and their combination
+  with machine learning have improved the accuracy of weather forecasts. However, the accuracy decreases
+  in complex terrains such as mountainous regions because these methods usually use grids of several kilometers
+  square and simple machine learning models. While deep learning has also made significant progress in
+  recent years, its direct application is difficult to utilize the physical knowledge used in the simulation.
+  This paper proposes a method that uses machine learning to interpolate future weather in mountainous
+  regions using forecast data from surrounding plains and past observed data to improve weather forecasts
+  in mountainous regions. We focus on mountainous regions in Japan and predict temperature and precipitation
+  mainly using LightGBM as a machine learning model. Despite the use of a small dataset, through feature
+  engineering and model tuning, our method partially achieves improvements in the RMSE with significantly
+  less training time.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

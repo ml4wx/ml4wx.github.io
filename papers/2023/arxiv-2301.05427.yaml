@@ -1,0 +1,61 @@
+id: arxiv-2301.05427
+title: 'Building a Fuel Moisture Model for the Coupled Fire-Atmosphere Model WRF-SFIRE from Data: From
+  Kalman Filters to Recurrent Neural Networks'
+authors:
+- J. Mandel
+- J. Hirschi
+- A. K. Kochanski
+- A. Farguell
+- J. Haley
+- D. V. Mallia
+- B. Shaddy
+- A. A. Oberai
+- K. A. Hilburn
+date: '2023-01-13'
+year: 2023
+venue: https://www.ugn.cas.cz/event/2023/sna pp. 52-55
+venue_type: journal
+ids:
+  arxiv: '2301.05427'
+  openalex: W4316829949
+links:
+  paper: https://arxiv.org/abs/2301.05427
+  pdf: https://arxiv.org/pdf/2301.05427
+orgs:
+- colorado-state-university
+topic: extremes-hazards
+topics:
+- applications-impacts
+type: model
+method:
+- rnn
+- physics-constrained
+timescale:
+- short
+spatial:
+- regional
+- local
+data:
+- stations
+- nwp-analysis
+status: research
+summary: Builds a recurrent neural network fuel moisture model for WRF-SFIRE, initialized as a numerical
+  ODE solver and trained on RAWS sensor and RTMA weather data to improve fire-weather inputs.
+abstract: The current fuel moisture content (FMC) subsystems in WRF-SFIRE and its workflow system WRFx
+  use a time-lag differential equation model with assimilation of data from FMC sensors on Remote Automated
+  Weather Stations (RAWS) by the extended augmented Kalman filter. But the quality of the result is constrained
+  by the limitations of the model and of the Kalman filter. We observe that the data flow in a system
+  consisting of a model and the Kalman filter can be interpreted to be the same as the data flow in a
+  recurrent neural network (RNN). Thus, instead of building more sophisticated models and data assimilation
+  methods, we want to train a RNN to approximate the dynamics of the response of the FMC sensor to a time
+  series of environmental data. Because standard AI approaches did not converge to reasonable solutions,
+  we pre-train the RNN with special initial weights devised to turn it into a numerical solver of the
+  differential equation. We then allow the AI training machinery to optimize the RNN weights to fit the
+  data better. We illustrate the method on an example of a time series of 10h-FMC from RAWS and weather
+  data from the Real-Time Mesoscale Analysis (RTMA).
+significance: 2
+cited_by: 1
+score: 18
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,54 @@
+id: doi-10.1155-2020-5124274
+title: A Convection Nowcasting Method Based on Machine Learning
+authors:
+- Aifang Su
+- Han Li
+- Liman Cui
+- Yungang Chen
+date: '2020-01-27'
+year: 2020
+venue: Advances in Meteorology
+venue_type: journal
+ids:
+  doi: 10.1155/2020/5124274
+  openalex: W3001898521
+links:
+  paper: https://doi.org/10.1155/2020/5124274
+  pdf: https://downloads.hindawi.com/journals/amete/2020/5124274.pdf
+topic: nowcasting
+topics:
+- observations-remote-sensing
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: ConvLSTM with optical-flow features nowcasts convective radar echoes, better capturing rotation,
+  merging and separation than traditional methods.
+abstract: In this study, a convection nowcasting method based on machine learning was proposed. First,
+  the historical data were back-calculated using the pyramid optical flow method. Next, the generated
+  optical flow field information of each pixel and the Red-Green-Blue (RGB) image information were input
+  into the Convolutional Long Short-Term Memory (ConvLSTM) algorithm for training purposes. During the
+  extrapolation process, dynamic characteristics such as the rotation, convergence, and divergence in
+  the optical flow field were also used as predictors to form an optimal nowcasting model. The test analysis
+  demonstrated that the algorithm combined the image feature extraction ability of the convolutional neural
+  network (CNN) and the sequential learning ability of the long short-term memory network (LSTM) model
+  to establish an end-to-end deep learning network, which could deeply extract high-order features of
+  radar echoes such as structural texture, spatial correlation, and temporal evolution compared with the
+  traditional algorithm. Based on learning through the above features, this algorithm can forecast the
+  generation and dissipation trends of convective cells to some extent. The addition of the optical flow
+  information can more accurately simulate nonlinear trends such as the rotation, or merging, or separation
+  of radar echoes. The trajectories of radar echoes obtained through nowcasting are closer to their actual
+  movements, which prolongs the valid forecasting period and improves forecast accuracy.
+significance: 3
+cited_by: 22
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,58 @@
+id: arxiv-2303.16301
+title: 'A Machine Learning Outlook: Post-processing of Global Medium-range Forecasts'
+authors:
+- Shreya Agrawal
+- Rob Carver
+- Cenk Gazen
+- Eric Maddy
+- Vladimir Krasnopolsky
+- Carla Bromberg
+- Zack Ontiveros
+- Tyler Russell
+- Jason Hickey
+- Sid Boukabara
+date: '2023-03-28'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2303.16301'
+  openalex: W4361806190
+links:
+  paper: https://arxiv.org/abs/2303.16301
+  pdf: https://arxiv.org/pdf/2303.16301
+orgs:
+- google-research
+- noaa
+topic: post-processing
+topics:
+- global-medium-range
+type: evaluation
+method:
+- other
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: Neural-network post-processing of global 1 to 7 day forecasts across 30 levels improves RMSE
+  by up to 12% for 850 hPa temperature at day 7, and discusses metric limits.
+abstract: Post-processing typically takes the outputs of a Numerical Weather Prediction (NWP) model and
+  applies linear statistical techniques to produce improve localized forecasts, by including additional
+  observations, or determining systematic errors at a finer scale. In this pilot study, we investigate
+  the benefits and challenges of using non-linear neural network (NN) based methods to post-process multiple
+  weather features -- temperature, moisture, wind, geopotential height, precipitable water -- at 30 vertical
+  levels, globally and at lead times up to 7 days. We show that we can achieve accuracy improvements of
+  up to 12% (RMSE) in a field such as temperature at 850hPa for a 7 day forecast. However, we recognize
+  the need to strengthen foundational work on objectively measuring a sharp and correct forecast. We discuss
+  the challenges of using standard metrics such as root mean squared error (RMSE) or anomaly correlation
+  coefficient (ACC) as we move from linear statistical models to more complex non-linear machine learning
+  approaches for post-processing global weather forecasts.
+significance: 4
+cited_by: 7
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

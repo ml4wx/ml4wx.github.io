@@ -1,0 +1,51 @@
+id: arxiv-2308.03985
+title: Fourier neural operator for real-time simulation of 3D dynamic urban microclimate
+authors:
+- Wenhui Peng
+- Shaoxiang Qin
+- Senwen Yang
+- Jianchun Wang
+- Xue Liu
+- Liangzhu Leon Wang
+date: '2023-08-08'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2308.03985'
+links:
+  paper: https://arxiv.org/abs/2308.03985
+  pdf: https://arxiv.org/pdf/2308.03985
+topic: applications-impacts
+type: model
+method:
+- neural-operator
+spatial:
+- local
+data:
+- km-scale-sim
+status: research
+summary: A Fourier neural operator emulates CFD simulations of 3D urban wind fields, predicting in milliseconds
+  and generalizing to unseen wind directions.
+abstract: Global urbanization has underscored the significance of urban microclimates for human comfort,
+  health, and building/urban energy efficiency. They profoundly influence building design and urban planning
+  as major environmental impacts. Understanding local microclimates is essential for cities to prepare
+  for climate change and effectively implement resilience measures. However, analyzing urban microclimates
+  requires considering a complex array of outdoor parameters within computational domains at the city
+  scale over a longer period than indoors. As a result, numerical methods like Computational Fluid Dynamics
+  (CFD) become computationally expensive when evaluating the impact of urban microclimates. The rise of
+  deep learning techniques has opened new opportunities for accelerating the modeling of complex non-linear
+  interactions and system dynamics. Recently, the Fourier Neural Operator (FNO) has been shown to be very
+  promising in accelerating solving the Partial Differential Equations (PDEs) and modeling fluid dynamic
+  systems. In this work, we apply the FNO network for real-time three-dimensional (3D) urban wind field
+  simulation. The training and testing data are generated from CFD simulation of the urban area, based
+  on the semi-Lagrangian approach and fractional stepping method to simulate urban microclimate features
+  for modeling large-scale urban problems. Numerical experiments show that the FNO model can accurately
+  reconstruct the instantaneous spatial velocity field. We further evaluate the trained FNO model on unseen
+  data with different wind directions, and the results show that the FNO model can generalize well on
+  different wind directions. More importantly, the FNO approach can make predictions within milliseconds
+  on the graphics processing unit, making real-time simulation of 3D dynamic urban microclimate possible.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

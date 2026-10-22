@@ -1,0 +1,55 @@
+id: doi-10.3390-atmos13010088
+title: Radar Echo Spatiotemporal Sequence Prediction Using an Improved ConvGRU Deep Learning Model
+authors:
+- Wei He
+- Taisong Xiong
+- Hao Wang
+- Jianxin He
+- Xinyue Ren
+- Yilin Yan
+- Linyin Tan
+date: '2022-01-06'
+year: 2022
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos13010088
+  openalex: W4205701977
+links:
+  paper: https://doi.org/10.3390/atmos13010088
+  pdf: https://www.mdpi.com/2073-4433/13/1/88/pdf?version=1642041151
+orgs:
+- cma
+topic: nowcasting
+type: model
+method:
+- rnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Proposes M-ConvGRU, a convolutional GRU with an encoder-forecaster design for radar echo prediction,
+  cutting MAE 6.29% and MSE 10.25% versus ConvLSTM.
+abstract: Precipitation nowcasting is extremely important in disaster prevention and mitigation, and can
+  improve the quality of meteorological forecasts. In recent years, deep learning-based spatiotemporal
+  sequence prediction models have been widely used in precipitation nowcasting, obtaining better prediction
+  results than numerical weather prediction models and traditional radar echo extrapolation results. Because
+  existing deep learning models rarely consider the inherent interactions between the model input data
+  and the previous output, model prediction results do not sufficiently meet the actual forecast requirement.
+  We propose a Modified Convolutional Gated Recurrent Unit (M-ConvGRU) model that performs convolution
+  operations on the input data and previous output of a GRU network. Moreover, this adopts an encoder–forecaster
+  structure to better capture the characteristics of spatiotemporal correlation in radar echo maps. The
+  results of multiple experiments demonstrate the effectiveness of the proposed model. The balanced mean
+  absolute error (B-MAE) and balanced mean squared error (B-MSE) of M-ConvGRU are slightly lower than
+  Convolutional Long Short-Term Memory (ConvLSTM), but the mean absolute error (MAE) and mean squared
+  error (MSE) of M-ConvGRU are 6.29% and 10.25% lower than ConvLSTM, and the prediction accuracy and prediction
+  performance for strong echo regions were also improved.
+significance: 3
+cited_by: 25
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

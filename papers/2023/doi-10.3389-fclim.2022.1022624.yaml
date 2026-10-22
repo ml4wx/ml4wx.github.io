@@ -1,0 +1,61 @@
+id: doi-10.3389-fclim.2022.1022624
+title: A modified deep learning weather prediction using cubed sphere for global precipitation
+authors:
+- Manmeet Singh
+- Nachiketa Acharya
+- Pratiman Patel
+- Sajad Jamshidi
+- Zong‐Liang Yang
+- Bipin Kumar
+- Suryachandra A. Rao
+- Sukhpal Singh Gill
+- Rajib Chattopadhyay
+- Ravi Shankar Nanjundiah
+- Dev Niyogi
+date: '2023-01-09'
+year: 2023
+venue: Frontiers in Climate
+venue_type: journal
+ids:
+  doi: 10.3389/fclim.2022.1022624
+  openalex: W4313824201
+links:
+  paper: https://doi.org/10.3389/fclim.2022.1022624
+  pdf: https://www.frontiersin.org/articles/10.3389/fclim.2022.1022624/pdf
+orgs:
+- noaa
+topic: global-medium-range
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: Modified cubed-sphere deep learning weather model predicts global daily precipitation from surface
+  temperature, matching GFS skill at a 1-day lag.
+abstract: Deep learning (DL), a potent technology to develop Digital Twin (DT), for weather prediction
+  using cubed spheres (DLWP-CS) was recently proposed to facilitate data-driven simulations of global
+  weather fields. DLWP-CS is a temporal mapping algorithm wherein time-stepping is performed through U-NET.
+  Although DLWP-CS has shown impressive results for fields, such as temperature and geopotential height,
+  this technique is complicated and computationally challenging for a complex, non-linear field, such
+  as precipitation, which depends on other prognostic environmental co-variables. To address this challenge,
+  we modify the DLWP-CS and call our technique “modified DLWP-CS” (MDLWP-CS). In this study, we transform
+  the architecture from a temporal to a spatio-temporal mapping (multivariate setup), wherein precursor(s)
+  of precipitation can be used as input. As a proof of concept, as a first simple case, a 2-m surface
+  air temperature is used to predict precipitation using MDLWP-CS. The model is trained using hourly ERA-5
+  reanalysis and the resulting experimental findings are compared to two benchmark models, viz, the linear
+  regression and an operational numerical weather prediction model, which is the Global Forecast System
+  (GFS). The fidelity of MDLWP-CS is much better compared to linear regression and the results are equivalent
+  to GFS output in terms of daily precipitation prediction with 1 day lag. These results provide an encouraging
+  framework for an efficient DT that can facilitate speedy, high fidelity precipitation predictions.
+significance: 3
+cited_by: 7
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

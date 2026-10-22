@@ -1,0 +1,54 @@
+id: arxiv-2301.13462
+title: Towards Learned Emulation of Interannual Water Isotopologue Variations in General Circulation Models
+authors:
+- Jonathan Wider
+- Jakob Kruse
+- Nils Weitzel
+- Janica C. Bühler
+- Ullrich Köthe
+- Kira Rehfeld
+date: '2023-01-01'
+year: 2023
+venue: Environmental Data Science, Volume 2 (2023), e35
+venue_type: journal
+ids:
+  arxiv: '2301.13462'
+  doi: 10.1017/eds.2023.29
+  openalex: W4387349254
+links:
+  paper: https://arxiv.org/abs/2301.13462
+  pdf: https://arxiv.org/pdf/2301.13462
+topic: climate-emulation
+type: model
+method:
+- cnn
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: UNet-based CNNs emulate interannual oxygen isotope composition of precipitation from temperature
+  and precipitation fields, explaining about 40% of temporal variance in a last-millennium run.
+abstract: Simulating abundances of stable water isotopologues, i.e. molecules differing in their isotopic
+  composition, within climate models allows for comparisons with proxy data and, thus, for testing hypotheses
+  about past climate and validating climate models under varying climatic conditions. However, many models
+  are run without explicitly simulating water isotopologues. We investigate the possibility to replace
+  the explicit physics-based simulation of oxygen isotopic composition in precipitation using machine
+  learning methods. These methods estimate isotopic composition at each time step for given fields of
+  surface temperature and precipitation amount. We implement convolutional neural networks (CNNs) based
+  on the successful UNet architecture and test whether a spherical network architecture outperforms the
+  naive approach of treating Earth's latitude-longitude grid as a flat image. Conducting a case study
+  on a last millennium run with the iHadCM3 climate model, we find that roughly 40\% of the temporal variance
+  in the isotopic composition is explained by the emulations on interannual and monthly timescale, with
+  spatially varying emulation quality. A modified version of the standard UNet architecture for flat images
+  yields results that are equally good as the predictions by the spherical CNN. We test generalization
+  to last millennium runs of other climate models and find that while the tested deep learning methods
+  yield the best results on iHadCM3 data, the performance drops when predicting on other models and is
+  comparable to simple pixel-wise linear regression. An extended choice of predictor variables and improving
+  the robustness of learned climate--oxygen isotope relationships should be explored in future work.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

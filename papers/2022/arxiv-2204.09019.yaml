@@ -1,0 +1,46 @@
+id: arxiv-2204.09019
+title: Hybrid Transformer Network for Different Horizons-based Enriched Wind Speed Forecasting
+authors:
+- M. Madhiarasan
+- Partha Pratim Roy
+date: '2022-04-07'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2204.09019'
+links:
+  paper: https://arxiv.org/abs/2204.09019
+  pdf: https://arxiv.org/pdf/2204.09019
+topic: local-forecasting
+type: model
+method:
+- transformer
+- other
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Hybrid ICEEMDAN decomposition, transformer and MLP error correction for multi-horizon wind speed
+  forecasts at an Indian wind farm; reports very small error metrics.
+abstract: Highly accurate different horizon-based wind speed forecasting facilitates a better modern power
+  system. This paper proposed a novel astute hybrid wind speed forecasting model and applied it to different
+  horizons. The proposed hybrid forecasting model decomposes the original wind speed data into IMFs (Intrinsic
+  Mode Function) using Improved Complete Ensemble Empirical Mode Decomposition with Adaptive Noise (ICEEMDAN).
+  We fed the obtained subseries from ICEEMDAN to the transformer network. Each transformer network computes
+  the forecast subseries and then passes to the fusion phase. Get the primary wind speed forecasting from
+  the fusion of individual transformer network forecast subseries. Estimate the residual error values
+  and predict errors using a multilayer perceptron neural network. The forecast error is added to the
+  primary forecast wind speed to leverage the high accuracy of wind speed forecasting. Comparative analysis
+  with real-time Kethanur, India wind farm dataset results reveals the proposed ICEEMDAN-TNF-MLPN-RECS
+  hybrid model's superior performance with MAE=1.7096*10^-07, MAPE=2.8416*10^-06, MRE=2.8416*10^-08, MSE=5.0206*10^-14,
+  and RMSE=2.2407*10^-07 for case study 1 and MAE=6.1565*10^-07, MAPE=9.5005*10^-06, MRE=9.5005*10^-08,
+  MSE=8.9289*10^-13, and RMSE=9.4493*10^-07 for case study 2 enriched wind speed forecasting than state-of-the-art
+  methods and reduces the burden on the power system engineer.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

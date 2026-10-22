@@ -1,0 +1,51 @@
+id: arxiv-2010.12605
+title: Using machine learning to correct model error in data assimilation and forecast applications
+authors:
+- Alban Farchi
+- Patrick Laloyaux
+- Massimo Bonavita
+- Marc Bocquet
+date: '2020-10-23'
+year: 2020
+venue_type: preprint
+ids:
+  arxiv: '2010.12605'
+  doi: 10.1002/qj.4116
+links:
+  paper: https://arxiv.org/abs/2010.12605
+  pdf: https://arxiv.org/pdf/2010.12605
+topic: data-assimilation
+topics:
+- hybrid-parameterization
+type: model
+method:
+- cnn
+- physics-constrained
+timescale:
+- medium
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Hybrid model combines a knowledge-based quasi-geostrophic model with deep learning, learned iteratively
+  within 4D-Var, to correct model error and improve short- to mid-range forecasts.
+abstract: The idea of using machine learning (ML) methods to reconstruct the dynamics of a system is the
+  topic of recent studies in the geosciences, in which the key output is a surrogate model meant to emulate
+  the dynamical model. In order to treat sparse and noisy observations in a rigorous way, ML can be combined
+  to data assimilation (DA). This yields a class of iterative methods in which, at each iteration a DA
+  step assimilates the observations, and alternates with a ML step to learn the underlying dynamics of
+  the DA analysis. In this article, we propose to use this method to correct the error of an existent,
+  knowledge-based model. In practice, the resulting surrogate model is an hybrid model between the original
+  (knowledge-based) model and the ML model. We demonstrate numerically the feasibility of the method using
+  a two-layer, two-dimensional quasi-geostrophic channel model. Model error is introduced by the means
+  of perturbed parameters. The DA step is performed using the strong-constraint 4D-Var algorithm, while
+  the ML step is performed using deep learning tools. The ML models are able to learn a substantial part
+  of the model error and the resulting hybrid surrogate models produce better short- to mid-range forecasts.
+  Furthermore, using the hybrid surrogate models for DA yields a significantly better analysis than using
+  the original model.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,48 @@
+id: arxiv-2203.15558
+title: 'Wildfire risk forecast: An optimizable fire danger index'
+authors:
+- Eduardo Rodrigues
+- Bianca Zadrozny
+- Campbell Watson
+date: '2022-03-28'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2203.15558'
+links:
+  paper: https://arxiv.org/abs/2203.15558
+  pdf: https://arxiv.org/pdf/2203.15558
+topic: extremes-hazards
+type: model
+method:
+- differentiable
+- physics-constrained
+timescale:
+- short
+spatial:
+- regional
+data:
+- stations
+- other
+status: research
+summary: Makes the NFDRS fire danger index differentiable so its parameters can be tuned by gradient descent
+  on observed US and European fire events.
+abstract: 'Wildfire events have caused severe losses in many places around the world and are expected
+  to increase with climate change. Throughout the years many technologies have been developed to identify
+  fire events early on and to simulate fire behavior once they have started. Another particularly helpful
+  technology is fire risk indices, which use weather forcing to make advanced predictions of the risk
+  of fire. Predictions of fire risk indices can be used, for instance, to allocate resources in places
+  with high risk. These indices have been developed over the years as empirical models with parameters
+  that were estimated in lab experiments and field tests. These parameters, however, may not fit well
+  all places where these models are used. In this paper we propose a novel implementation of one index
+  (NFDRS IC) as a differentiable function in which one can optimize its internal parameters via gradient
+  descent. We leverage existing machine learning frameworks (PyTorch) to construct our model. This approach
+  has two benefits: (1) the NFDRS IC parameters can be improved for each region using actual observed
+  fire events, and (2) the internal variables remain intact for interpretations by specialists instead
+  of meaningless hidden layers as in traditional neural networks. In this paper we evaluate our strategy
+  with actual fire events for locations in the USA and Europe.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,55 @@
+id: doi-10.3389-fmars.2023.1143499
+title: Spatial-temporal transformer network for multi-year ENSO prediction
+authors:
+- Dan Song
+- Xinqi Su
+- Wenhui Li
+- Zhengya Sun
+- Tongwei Ren
+- Wen Liu
+- Anan Liu
+date: '2023-03-13'
+year: 2023
+venue: Frontiers in Marine Science
+venue_type: journal
+ids:
+  doi: 10.3389/fmars.2023.1143499
+  openalex: W4324056421
+links:
+  paper: https://doi.org/10.3389/fmars.2023.1143499
+  pdf: https://www.frontiersin.org/articles/10.3389/fmars.2023.1143499/pdf
+topic: s2s-seasonal
+type: model
+method:
+- transformer
+timescale:
+- seasonal
+spatial:
+- global
+data:
+- era5
+status: research
+summary: A spatio-temporal transformer with recurrent multi-step prediction uses SST and heat content
+  anomalies to forecast ENSO 18 months ahead.
+abstract: The El Niño-Southern Oscillation (ENSO) is a quasi-periodic climate type that occurs near the
+  equatorial Pacific Ocean. Extreme periods of this climate type can cause terrible weather and climate
+  anomalies on a global scale. Therefore, it is critical to accurately, quickly, and effectively predict
+  the occurrence of ENSO events. Most existing research methods rely on the powerful data-fitting capability
+  of deep learning which does not fully consider the spatio-temporal evolution of ENSO and its quasi-periodic
+  character, resulting in neural networks with complex structures but a poor prediction. Moreover, due
+  to the large magnitude of ocean climate variability over long intervals, they also ignored nearby prediction
+  results when predicting the Niño 3.4 index for the next month, which led to large errors. To solve these
+  problem, we propose a spatio-temporal transformer network to model the inherent characteristics of the
+  sea surface temperature anomaly map and heat content anomaly map along with the changes in space and
+  time by designing an effective attention mechanism, and innovatively incorporate temporal index into
+  the feature learning procedure to model the influence of seasonal variation on the prediction of the
+  ENSO phenomenon. More importantly, to better conduct long-term prediction, we propose an effective recurrent
+  prediction strategy using previous prediction as prior knowledge to enhance the reliability of long-term
+  prediction. Extensive experimental results show that our model can provide an 18-month valid ENSO prediction,
+  which validates the effectiveness of our method.
+significance: 4
+cited_by: 13
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

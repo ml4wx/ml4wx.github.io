@@ -1,0 +1,69 @@
+id: doi-10.5194-amt-15-5033-2022
+title: 'GPROF-NN: a neural-network-based implementation of the Goddard Profiling Algorithm'
+authors:
+- Simon Pfreundschuh
+- Paula J. Brown
+- Christian D. Kummerow
+- Patrick Eriksson
+- Teodor Norrestad​​​​​​​
+date: '2022-09-02'
+year: 2022
+venue: Atmospheric Measurement Techniques
+venue_type: journal
+ids:
+  doi: 10.5194/amt-15-5033-2022
+  openalex: W4294238315
+links:
+  paper: https://doi.org/10.5194/amt-15-5033-2022
+orgs:
+- colorado-state-university
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- global
+data:
+- satellite
+status: research
+summary: Probabilistic neural GPROF-NN retrieves GPM surface precipitation, with a 3D CNN variant, improving
+  GMI mean absolute error from 0.079 to 0.059 mm/h.
+abstract: 'The Global Precipitation Measurement (GPM) mission measures global precipitation at a temporal
+  resolution of a few hours to enable close monitoring of the global hydrological cycle. GPM achieves
+  this by combining observations from a spaceborne precipitation radar, a constellation of passive microwave
+  (PMW) sensors, and geostationary satellites. The Goddard Profiling Algorithm (GPROF) is used operationally
+  to retrieve precipitation from all PMW sensors of the GPM constellation. Since the resulting precipitation
+  rates serve as input for many of the level 3 retrieval products, GPROF constitutes an essential component
+  of the GPM processing pipeline. This study investigates ways to improve GPROF using modern machine learning
+  methods. We present two neural-network-based, probabilistic implementations of GPROF: GPROF-NN 1D, which
+  (just like the current GPROF implementation) processes pixels individually, and GPROF-NN 3D, which employs
+  a convolutional neural network to incorporate structural information into the retrieval. The accuracy
+  of the retrievals is evaluated using a test dataset consistent with the data used in the development
+  of the GPROF and GPROF-NN retrievals. This allows for assessing the accuracy of the retrieval method
+  isolated from the representativeness of the training data, which remains a major source of uncertainty
+  in the development of precipitation retrievals. Despite using the same input information as GPROF, the
+  GPROF-NN 1D retrieval improves the accuracy of the retrieved surface precipitation for the GPM Microwave
+  Imager (GMI) from 0.079 to 0.059 mm h −1 in terms of mean absolute error (MAE), from 76.1 % to 69.5
+  % in terms of symmetric mean absolute percentage error (SMAPE) and from 0.797 to 0.847 in terms of correlation.
+  The improvements for the Microwave Humidity Sounder (MHS) are from 0.085 to 0.061 mm h −1 in terms of
+  MAE, from 81 % to 70.1 % for SMAPE, and from 0.724 to 0.804 in terms of correlation. Comparable improvements
+  are found for the retrieved hydrometeor profiles and their column integrals, as well as the detection
+  of precipitation. Moreover, the ability of the retrievals to resolve small-scale variability is improved
+  by more than 40 % for GMI and 29 % for MHS. The GPROF-NN 3D retrieval further improves the MAE to 0.043
+  mm h −1 ; the SMAPE to 48.67 %; and the correlation to 0.897 for GMI and 0.043 mm h −1 , 63.42 %, and
+  0.83 for MHS. Application of the retrievals to GMI observations of Hurricane Harvey shows moderate improvements
+  when compared to co-located GPM-combined and ground-based radar measurements indicating that the improvements
+  at least partially carry over to assessment against independent measurements. Similar retrievals for
+  MHS do not show equally clear improvements, leaving the validation against independent measurements
+  for future investigation. Both GPROF-NN algorithms make use of the same input and output data as the
+  original GPROF algorithm and thus may replace the current implementation in a future update of the GPM
+  processing pipeline. Despite their superior accuracy, the single-core runtime required for the operational
+  processing of an orbit of observations is lower than that of GPROF. The GPROF-NN algorithms promise
+  to be a simple and cost-efficient way to increase the accuracy of the PMW precipitation retrievals of
+  the GPM constellation and thus improve the monitoring of the global hydrological cycle.'
+significance: 4
+cited_by: 41
+score: 26
+highlight: false
+added: '2026-10-22'
+source: seed

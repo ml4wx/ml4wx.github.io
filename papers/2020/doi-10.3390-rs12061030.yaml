@@ -1,0 +1,59 @@
+id: doi-10.3390-rs12061030
+title: 'PreciPatch: A Dictionary-based Precipitation Downscaling Method'
+authors:
+- Mengchao Xu
+- Qian Liu
+- Dexuan Sha
+- Manzhu Yu
+- Daniel Q. Duffy
+- William Putman
+- Mark Carroll
+- Tsengdar J. Lee
+- Chaowei Phil Yang
+date: '2020-03-23'
+year: 2020
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs12061030
+  openalex: W3012808645
+links:
+  paper: https://doi.org/10.3390/rs12061030
+  pdf: https://www.mdpi.com/2072-4292/12/6/1030/pdf?version=1585218988
+orgs:
+- nasa
+topic: downscaling
+topics:
+- observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- other
+status: research
+summary: PreciPatch uses dictionary learning to downscale hourly GCM precipitation, outperforming bicubic,
+  RainFARM and DeepSD on IMERG data.
+abstract: Climate and weather data such as precipitation derived from Global Climate Models (GCMs) and
+  satellite observations are essential for the global and local hydrological assessment. However, most
+  climatic popular precipitation products (with spatial resolutions coarser than 10km) are too coarse
+  for local impact studies and require “downscaling” to obtain higher resolutions. Traditional precipitation
+  downscaling methods such as statistical and dynamic downscaling require an input of additional meteorological
+  variables, and very few are applicable for downscaling hourly precipitation for higher spatial resolution.
+  Based on dynamic dictionary learning, we propose a new downscaling method, PreciPatch, to address this
+  challenge by producing spatially distributed higher resolution precipitation fields with only precipitation
+  input from GCMs at hourly temporal resolution and a large geographical extent. Using aggregated Integrated
+  Multi-satellitE Retrievals for GPM (IMERG) data, an experiment was conducted to evaluate the performance
+  of PreciPatch, in comparison with bicubic interpolation using RainFARM—a stochastic downscaling method,
+  and DeepSD—a Super-Resolution Convolutional Neural Network (SRCNN) based downscaling method. PreciPatch
+  demonstrates better performance than other methods for downscaling short-duration precipitation events
+  (used historical data from 2014 to 2017 as the training set to estimate high-resolution hourly events
+  in 2018).
+significance: 3
+cited_by: 17
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

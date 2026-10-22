@@ -1,0 +1,54 @@
+id: doi-10.5194-gmd-16-199-2023
+title: 'WRF–ML v1.0: a bridge between WRF v4.3 and machine learning parameterizations and its application
+  to atmospheric radiative transfer'
+authors:
+- Xiaohui Zhong
+- Zhijian Ma
+- Yichen Yao
+- Lifei Xu
+- Wu Yuan
+- Zhibin Wang
+date: '2023-01-06'
+year: 2023
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-16-199-2023
+  openalex: W4313641022
+links:
+  paper: https://doi.org/10.5194/gmd-16-199-2023
+  pdf: https://gmd.copernicus.org/articles/16/199/2023/gmd-16-199-2023.pdf
+orgs:
+- alibaba-damo
+topic: hybrid-parameterization
+topics:
+- infra-software
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- km-scale-sim
+- other
+status: pre-operational
+summary: WRF-ML coupler lets Python deep learning parameterizations run inside the Fortran WRF model,
+  demonstrated with trained DL radiation emulators coupled to WRF.
+abstract: Abstract. In numerical weather prediction (NWP) models, physical parameterization schemes are
+  the most computationally expensive components, despite being greatly simplified. In the past few years,
+  an increasing number of studies have demonstrated that deep learning (DL) parameterizations of subgrid
+  physics have the potential to accelerate and even outperform conventional physic-based schemes. However,
+  as the DL models are commonly implemented using the DL libraries written in Python, very few DL-based
+  parameterizations have been successfully integrated with NWP models due to the difficulty of embedding
+  Python functions into Fortran-based NWP models. To address this issue, we developed a coupler to allow
+  the DL-based parameterizations to be coupled with a widely used NWP model, i.e., the Weather and Research
+  Forecasting (WRF) model. Similar to the WRF I/O methodologies, the coupler provides the options to run
+  the DL model inference with exclusive processors or the same processors for WRF calculations. In addition,
+  to demonstrate the effectiveness of the coupler, the DL-based radiation emulators are trained and coupled
+  with the WRF model successfully.
+significance: 4
+cited_by: 34
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

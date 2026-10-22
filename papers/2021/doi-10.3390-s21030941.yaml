@@ -1,0 +1,55 @@
+id: doi-10.3390-s21030941
+title: Temperature Prediction Based on Bidirectional Long Short-Term Memory and Convolutional Neural Network
+  Combining Observed and Numerical Forecast Data
+authors:
+- Seongyoep Jeong
+- Inyoung Park
+- Hyun Soo Kim
+- Chul Han Song
+- Hong Kook Kim
+date: '2021-01-31'
+year: 2021
+venue: Sensors
+venue_type: journal
+ids:
+  doi: 10.3390/s21030941
+  openalex: W3127230973
+links:
+  paper: https://doi.org/10.3390/s21030941
+  pdf: https://www.mdpi.com/1424-8220/21/3/941/pdf?version=1612186587
+topic: post-processing
+topics:
+- local-forecasting
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- medium
+spatial:
+- local
+data:
+- stations
+- nwp-analysis
+status: research
+summary: BLSTM and CNN fuse station observations with RDAPS model images to predict Korean temperatures
+  up to 14 days ahead, beating single-source models.
+abstract: Weather is affected by a complex interplay of factors, including topography, location, and time.
+  For the prediction of temperature in Korea, it is necessary to use data from multiple regions. To this
+  end, we investigate the use of deep neural-network-based temperature prediction model time-series weather
+  data obtained from an automatic weather station and image data from a regional data assimilation and
+  prediction system (RDAPS). To accommodate such different types of data into a single model, a bidirectional
+  long short-term memory (BLSTM) model and a convolutional neural network (CNN) model are chosen to represent
+  the features from the time-series observed data and the RDAPS image data. The two types of features
+  are combined to produce temperature predictions for up to 14 days in the future. The performance of
+  the proposed temperature prediction model is evaluated by objective measures, including the root mean
+  squared error and mean bias error. The experiments demonstrated that the proposed model combining both
+  the observed and RDAPS image data is better in all performance measures for all prediction periods compared
+  with the BLSTM-based model using observed data and the CNN-BLSTM-based model using RDAPS image data
+  alone.
+significance: 3
+cited_by: 34
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

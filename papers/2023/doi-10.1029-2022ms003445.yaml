@@ -1,0 +1,56 @@
+id: doi-10.1029-2022ms003445
+title: A Physics‐Incorporated Deep Learning Framework for Parameterization of Atmospheric Radiative Transfer
+authors:
+- Yichen Yao
+- Xiaohui Zhong
+- Yongjun Zheng
+- Zhibin Wang
+date: '2023-05-01'
+year: 2023
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2022ms003445
+  openalex: W4372338097
+links:
+  paper: https://doi.org/10.1029/2022ms003445
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2022MS003445
+orgs:
+- nuist
+- alibaba-damo
+topic: hybrid-parameterization
+type: model
+method:
+- physics-constrained
+- rnn
+- transformer
+- neural-operator
+data:
+- other
+status: research
+summary: Physics-incorporated network enforces flux-heating rate energy conservation in radiative transfer;
+  bidirectional RNNs and transformers beat FC nets and CNNs.
+abstract: Abstract The atmospheric radiative transfer calculations are among the most time‐consuming components
+  of the numerical weather prediction (NWP) models. Deep learning (DL) models have recently been increasingly
+  applied to accelerate radiative transfer modeling. Besides, a physical relationship exists between the
+  output variables, including fluxes and heating rate profiles. Integration of such physical laws in DL
+  models is crucial for the consistency and credibility of the DL‐based parameterizations. Therefore,
+  we propose a physics‐incorporated framework for the radiative transfer DL model, in which the physical
+  relationship between fluxes and heating rates is encoded as a layer of the network so that the energy
+  conservation can be satisfied. It is also found that the prediction accuracy was improved with the physic‐incorporated
+  layer. In addition, we trained and compared various types of DL model architectures, including fully
+  connected (FC) neural networks (NNs), convolutional‐based NNs (CNNs), bidirectional recurrent‐based
+  NNs (RNNs), transformer‐based NNs, and neural operator networks, respectively. The offline evaluation
+  demonstrates that bidirectional RNNs, transformer‐based NNs, and neural operator networks significantly
+  outperform the FC NNs and CNNs due to their capability of global perception. A global perspective of
+  an entire atmospheric column is essential and suitable for radiative transfer modeling as the changes
+  in atmospheric components of one layer/level have both local and global impacts on radiation along the
+  entire vertical column. Furthermore, the bidirectional RNNs achieve the best performance as they can
+  extract information from both upward and downward directions, similar to the radiative transfer processes
+  in the atmosphere.
+significance: 4
+cited_by: 31
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,52 @@
+id: doi-10.3390-rs14246367
+title: A Method for Retrieving Cloud-Top Height Based on a Machine Learning Model Using the Himawari-8
+  Combined with Near Infrared Data
+authors:
+- Yan Dong
+- Xuejin Sun
+- Qinghui Li
+date: '2022-12-16'
+year: 2022
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs14246367
+  openalex: W4311885914
+links:
+  paper: https://doi.org/10.3390/rs14246367
+  pdf: https://www.mdpi.com/2072-4292/14/24/6367/pdf?version=1671183243
+topic: observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: XGBoost retrieves cloud-top height from Himawari-8 imagery with RMSE 1.74 km versus CALIPSO and
+  corrects JMA's large biases for ice and multilayer clouds.
+abstract: 'Different cloud-top heights (CTHs) have different degrees of atmospheric heating, which is
+  an important factor for weather forecasting and aviation safety. AHIs (Advanced Himawari Imagers) on
+  the Himawari-8 satellite are a new generation of visible and infrared imaging spectrometers characterized
+  by a wide observation range and a high temporal resolution. In this paper, a cloud-top height retrieval
+  algorithm based on XGBoost is proposed. The algorithm comprehensively utilizes AHI L1 multi-channel
+  radiance data and calculates the input parameters of the generated model according to the characteristics
+  of the cloud phase, texture, and the local brightness temperature change of the cloud. In addition,
+  the latitude, longitude, solar zenith angle and satellite zenith angle are input into the model to further
+  constrain the influence of the geographical and spatial factors such as the sea and land location, on
+  CTH. Compared with the Cloud-Aerosol Lidar and Infrared Pathfinder Satellite Observations (CALIPSO)
+  cloud-top height data (CTHCAL), the results show that: the algorithm retrieved the cloud-top height
+  (CTHXGB) with a mean error (ME) of 0.3 km, a standard deviation (Std) of 1.72 km, and a root mean square
+  error (RMSE) of 1.74 km. Additionally, it improves the problem of the large systematic deviation in
+  the cloud-top height products released by the Japan Meteorological Agency (CTHJMA), especially for ice
+  clouds and multi-layer clouds with ice clouds on the top layer. For water clouds below 2 km and multi-layer
+  clouds with water clouds at the top, the algorithm solves the systematically serious CTHJMA problem.
+  XGBoost can effectively distinguish between different cloud scenarios within the model, which is robust
+  and suitable for CTH retrieval.'
+significance: 3
+cited_by: 12
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

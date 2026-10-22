@@ -1,0 +1,65 @@
+id: arxiv-2402.00059
+title: 'FengWu-GHR: Learning the Kilometer-scale Medium-range Global Weather Forecasting'
+authors:
+- Tao Han
+- Song Guo
+- Fenghua Ling
+- Kang Chen
+- Junchao Gong
+- Jingjia Luo
+- Junxia Gu
+- Kan Dai
+- Wanli Ouyang
+- Lei Bai
+date: '2024-01-28'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2402.00059'
+  openalex: W4391513958
+links:
+  paper: https://arxiv.org/abs/2402.00059
+  pdf: https://arxiv.org/pdf/2402.00059
+orgs:
+- cma
+- nuist
+- shanghai-ai-lab
+topic: global-medium-range
+topics:
+- regional-km-scale
+type: model
+method:
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: First data-driven global model at 0.09 degree resolution, initialized by transfer from a low-resolution
+  model, outperforming IFS-HRES in 2022 hindcasts.
+abstract: Kilometer-scale modeling of global atmosphere dynamics enables fine-grained weather forecasting
+  and decreases the risk of disastrous weather and climate activity. Therefore, building a kilometer-scale
+  global forecast model is a persistent pursuit in the meteorology domain. Active international efforts
+  have been made in past decades to improve the spatial resolution of numerical weather models. Nonetheless,
+  developing the higher resolution numerical model remains a long-standing challenge due to the substantial
+  consumption of computational resources. Recent advances in data-driven global weather forecasting models
+  utilize reanalysis data for model training and have demonstrated comparable or even higher forecasting
+  skills than numerical models. However, they are all limited by the resolution of reanalysis data and
+  incapable of generating higher-resolution forecasts. This work presents FengWu-GHR, the first data-driven
+  global weather forecasting model running at the 0.09$^{\circ}$ horizontal resolution. FengWu-GHR introduces
+  a novel approach that opens the door for operating ML-based high-resolution forecasts by inheriting
+  prior knowledge from a pretrained low-resolution model. The hindcast of weather prediction in 2022 indicates
+  that FengWu-GHR is superior to the IFS-HRES. Furthermore, evaluations on station observations and case
+  studies of extreme events support the competitive operational forecasting skill of FengWu-GHR at the
+  high resolution.
+significance: 6
+cited_by: 9
+score: 59
+highlight: true
+highlight_reason: First data-driven global forecast at 0.09° resolution, built by transferring from a
+  low-resolution model; claims to beat IFS-HRES.
+added: '2026-10-22'
+source: seed

@@ -1,0 +1,59 @@
+id: arxiv-2204.02028
+title: A Generative Deep Learning Approach to Stochastic Downscaling of Precipitation Forecasts
+authors:
+- Lucy Harris
+- Andrew T. T. McRae
+- Matthew Chantry
+- Peter D. Dueben
+- Tim N. Palmer
+date: '2022-04-05'
+year: 2022
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  arxiv: '2204.02028'
+  doi: 10.1029/2022ms003120
+  openalex: W4301373652
+links:
+  paper: https://arxiv.org/abs/2204.02028
+  pdf: https://arxiv.org/pdf/2204.02028
+orgs:
+- ecmwf
+- university-of-oxford
+topic: downscaling
+topics:
+- extremes-hazards
+type: model
+method:
+- gan-vae
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- radar
+status: research
+summary: GAN and VAE-GAN downscale low-resolution forecasts to radar-scale precipitation maps with CRPS
+  matching state-of-the-art pointwise post-processing, including heavy rain.
+abstract: Despite continuous improvements, precipitation forecasts are still not as accurate and reliable
+  as those of other meteorological variables. A major contributing factor to this is that several key
+  processes affecting precipitation distribution and intensity occur below the resolved scale of global
+  weather models. Generative adversarial networks (GANs) have been demonstrated by the computer vision
+  community to be successful at super-resolution problems, i.e., learning to add fine-scale structure
+  to coarse images. Leinonen et al. (2020) previously applied a GAN to produce ensembles of reconstructed
+  high-resolution atmospheric fields, given coarsened input data. In this paper, we demonstrate this approach
+  can be extended to the more challenging problem of increasing the accuracy and resolution of comparatively
+  low-resolution input from a weather forecasting model, using high-resolution radar measurements as a
+  "ground truth". The neural network must learn to add resolution and structure whilst accounting for
+  non-negligible forecast error. We show that GANs and VAE-GANs can match the statistical properties of
+  state-of-the-art pointwise post-processing methods whilst creating high-resolution, spatially coherent
+  precipitation maps. Our model compares favourably to the best existing downscaling methods in both pixel-wise
+  and pooled CRPS scores, power spectrum information and rank histograms (used to assess calibration).
+  We test our models and show that they perform in a range of scenarios, including heavy rainfall.
+significance: 5
+cited_by: 198
+score: 65
+highlight: false
+added: '2026-10-22'
+source: seed

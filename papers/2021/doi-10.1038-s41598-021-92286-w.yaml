@@ -1,0 +1,52 @@
+id: doi-10.1038-s41598-021-92286-w
+title: Domain knowledge integration into deep learning for typhoon intensity classification
+authors:
+- Maiki Higa
+- Shinya Tanahara
+- Yoshitaka Adachi
+- Natsumi Ishiki
+- Shin Nakama
+- Hiroyuki Yamada
+- Kosuke Ito
+- Asanobu Kitamoto
+- Ryota Miyata
+date: '2021-06-21'
+year: 2021
+venue: Scientific Reports
+venue_type: journal
+ids:
+  doi: 10.1038/s41598-021-92286-w
+  openalex: W3175244707
+links:
+  paper: https://doi.org/10.1038/s41598-021-92286-w
+  pdf: https://www.nature.com/articles/s41598-021-92286-w.pdf
+topic: extremes-hazards
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: VGG-16 with fisheye preprocessing classifies typhoon intensity from single satellite images more
+  accurately than prior work, with Grad-CAM showing physically relevant eye features.
+abstract: In this report, we propose a deep learning technique for high-accuracy estimation of the intensity
+  class of a typhoon from a single satellite image, by incorporating meteorological domain knowledge.
+  By using the Visual Geometric Group's model, VGG-16, with images preprocessed with fisheye distortion,
+  which enhances a typhoon's eye, eyewall, and cloud distribution, we achieved much higher classification
+  accuracy than that of a previous study, even with sequential-split validation. Through comparison of
+  t-distributed stochastic neighbor embedding (t-SNE) plots for the feature maps of VGG with the original
+  satellite images, we also verified that the fisheye preprocessing facilitated cluster formation, suggesting
+  that our model could successfully extract image features related to the typhoon intensity class. Moreover,
+  gradient-weighted class activation mapping (Grad-CAM) was applied to highlight the eye and the cloud
+  distributions surrounding the eye, which are important regions for intensity classification; the results
+  suggest that our model qualitatively gained a viewpoint similar to that of domain experts. A series
+  of analyses revealed that the data-driven approach using only deep learning has limitations, and the
+  integration of domain knowledge could bring new breakthroughs.
+significance: 3
+cited_by: 45
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

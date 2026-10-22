@@ -1,0 +1,57 @@
+id: arxiv-2211.13181
+title: A Deep Learning-based Velocity Dealiasing Algorithm Derived from the WSR-88D Open Radar Product
+  Generator
+authors:
+- Mark S. Veillette
+- James M. Kurdzo
+- Phillip M. Stepanian
+- Joseph McDonald
+- Siddharth Samsi
+- John Y. N. Cho
+date: '2022-11-23'
+year: 2022
+venue: Artificial Intelligence for the Earth Systems
+venue_type: journal
+ids:
+  arxiv: '2211.13181'
+  doi: 10.1175/aies-d-22-0084.1
+  openalex: W4327716819
+links:
+  paper: https://doi.org/10.1175/aies-d-22-0084.1
+  pdf: https://arxiv.org/pdf/2211.13181
+orgs:
+- mit
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: A U-Net emulates the WSR-88D operational velocity dealiasing algorithm, giving accurate, fast
+  radar dealiasing that ports to other radar systems.
+abstract: Radial velocity estimates provided by Doppler weather radar are critical measurements used by
+  operational forecasters for the detection and monitoring of life-impacting storms. The sampling methods
+  used to produce these measurements are inherently susceptible to aliasing, which produces ambiguous
+  velocity values in regions with high winds, and needs to be corrected using a velocity dealiasing algorithm
+  (VDA). In the US, the Weather Surveillance Radar-1988 Doppler (WSR-88D) Open Radar Product Generator
+  (ORPG) is a processing environment that provides a world-class VDA; however, this algorithm is complex
+  and can be difficult to port to other radar systems outside of the WSR-88D network. In this work, a
+  Deep Neural Network (DNN) is used to emulate the 2-dimensional WSR-88D ORPG dealiasing algorithm. It
+  is shown that a DNN, specifically a customized U-Net, is highly effective for building VDAs that are
+  accurate, fast, and portable to multiple radar types. To train the DNN model, a large dataset is generated
+  containing aligned samples of folded and dealiased velocity pairs. This dataset contains samples collected
+  from WSR-88D Level-II and Level-III archives, and uses the ORPG dealiasing algorithm output as a source
+  of truth. Using this dataset, a U-Net is trained to produce the number of folds at each point of a velocity
+  image. Several performance metrics are presented using WSR-88D data. The algorithm is also applied to
+  other non-WSR-88D radar systems to demonstrate portability to other hardware/software interfaces. A
+  discussion of the broad applicability of this method is presented, including how other Level-III algorithms
+  may benefit from this approach.
+significance: 3
+cited_by: 7
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

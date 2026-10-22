@@ -1,0 +1,56 @@
+id: doi-10.5194-adgeo-45-13-2018
+title: Probabilistic short term wind power forecasts using deep neural networks with discrete target classes
+authors:
+- Martin Felder
+- Frank Sehnke
+- Kay Ohnmeiß
+- Leon Schröder
+- Constantin Junk
+- Anton K. Kaifel
+date: '2018-07-19'
+year: 2018
+venue: Advances in geosciences
+venue_type: journal
+ids:
+  doi: 10.5194/adgeo-45-13-2018
+  openalex: W2883020093
+links:
+  paper: https://doi.org/10.5194/adgeo-45-13-2018
+  pdf: https://www.adv-geosci.net/45/13/2018/adgeo-45-13-2018.pdf
+topic: applications-impacts
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- other
+timescale:
+- short
+spatial:
+- regional
+- local
+data:
+- nwp-analysis
+- other
+status: research
+summary: Neural network predicts probability distributions over discretised power bins for wind farm forecasts,
+  matching deterministic MAE with lower CRPS and avoiding costly NWP ensembles.
+abstract: Usually, neural networks trained on historical feed-in time series of wind turbines deterministically
+  predict power output over the next hours to days. Here, the training goal is to minimise a scalar cost
+  function, often the root mean square error (RMSE) between network output and target values. Yet similar
+  to the analog ensemble (AnEn) method, the training algorithm can also be adapted to analyse the uncertainty
+  of the power output from the spread of possible targets found in the historical data for a certain meteorological
+  situation. In this study, the uncertainty estimate is achieved by discretising the continuous time series
+  of power targets into several bins (classes). For each forecast horizon, a neural network then predicts
+  the probability of power output falling into each of the bins, resulting in an empirical probability
+  distribution. Similiar to the AnEn method, the proposed method avoids the use of costly numerical weather
+  prediction (NWP) ensemble runs, although a selection of several deterministic NWP forecasts as input
+  is helpful. Using state-of-the-art deep learning technology, we applied our method to a large region
+  and a single wind farm. MAE scores of the 50-percentile were on par with or better than comparable deterministic
+  forecasts. The corresponding Continuous Ranked Probability Score (CRPS) was even lower. Future work
+  will investigate the overdispersiveness sometimes observed, and extend the method to solar power forecasts.
+significance: 3
+cited_by: 8
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

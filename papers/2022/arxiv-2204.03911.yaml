@@ -1,0 +1,58 @@
+id: arxiv-2204.03911
+title: A posteriori learning for quasi-geostrophic turbulence parametrization
+authors:
+- Hugo Frezat
+- Julien Le Sommer
+- Ronan Fablet
+- Guillaume Balarac
+- Redouane Lguensat
+date: '2022-04-08'
+year: 2022
+venue: Journal of Advances in Modeling Earth Systems. Volume 14, Issue 11 (November 2022)
+venue_type: journal
+ids:
+  arxiv: '2204.03911'
+  doi: 10.1029/2022ms003124
+  openalex: W4297984003
+links:
+  paper: https://arxiv.org/abs/2204.03911
+  pdf: https://arxiv.org/pdf/2204.03911
+orgs:
+- inria
+topic: hybrid-parameterization
+topics:
+- xai-uq-physics
+type: model
+method:
+- differentiable
+- cnn
+timescale:
+- climate
+spatial:
+- global
+data:
+- km-scale-sim
+status: research
+summary: End-to-end differentiable training of subgrid energy-backscatter parameterizations for 2D quasi-geostrophic
+  turbulence yields models more stable and accurate than a priori-trained schemes.
+abstract: The use of machine learning to build subgrid parametrizations for climate models is receiving
+  growing attention. State-of-the-art strategies address the problem as a supervised learning task and
+  optimize algorithms that predict subgrid fluxes based on information from coarse resolution models.
+  In practice, training data are generated from higher resolution numerical simulations transformed in
+  order to mimic coarse resolution simulations. By essence, these strategies optimize subgrid parametrizations
+  to meet so-called $\textit{a priori}$ criteria. But the actual purpose of a subgrid parametrization
+  is to obtain good performance in terms of $\textit{a posteriori}$ metrics which imply computing entire
+  model trajectories. In this paper, we focus on the representation of energy backscatter in two dimensional
+  quasi-geostrophic turbulence and compare parametrizations obtained with different learning strategies
+  at fixed computational complexity. We show that strategies based on $\textit{a priori}$ criteria yield
+  parametrizations that tend to be unstable in direct simulations and describe how subgrid parametrizations
+  can alternatively be trained end-to-end in order to meet $\textit{a posteriori}$ criteria. We illustrate
+  that end-to-end learning strategies yield parametrizations that outperform known empirical and data-driven
+  schemes in terms of performance, stability and ability to apply to different flow configurations. These
+  results support the relevance of differentiable programming paradigms for climate models in the future.
+significance: 5
+cited_by: 61
+score: 30
+highlight: false
+added: '2026-10-22'
+source: backfill

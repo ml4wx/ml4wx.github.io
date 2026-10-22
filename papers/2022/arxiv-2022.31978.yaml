@@ -1,0 +1,53 @@
+id: arxiv-2022.31978
+title: 'NLED: Nonlocal Echo Dynamics Network for Radar Echo Extrapolation'
+authors:
+- Taisong Chen
+- Qian Li
+- Xuan Peng
+- Qi Lv
+- Jinrui Jing
+date: '2022-01-01'
+year: 2022
+venue: IEEE Transactions on Geoscience and Remote Sensing
+venue_type: journal
+ids:
+  arxiv: '2022.31978'
+  doi: 10.1109/tgrs.2022.3197833
+  openalex: W4293370510
+links:
+  paper: https://doi.org/10.1109/tgrs.2022.3197833
+topic: nowcasting
+type: model
+method:
+- transformer
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: NLED uses spatiotemporal self-attention in an encoder-decoder to extrapolate radar echoes over
+  Shanghai and Hong Kong, improving long-term nowcast accuracy.
+abstract: Radar echo extrapolation is a common approach to weather nowcasting, which has become a significant
+  support to detect potential disastrous weather a few hours ahead. The dynamics pattern inside an echo
+  intensity sequence is beneficial for echo prediction. However, existing extrapolation methods have limited
+  ability to consider entire time series echo context in an entire echo sequence from a given historical
+  timestamp to a given future timestamp, leading to low long-term extrapolation accuracy. To solve this
+  issue, we introduce spatiotemporal self-attention and propose a deep learning model named the nonlocal
+  echo dynamics (NLED) network to capture the dependencies of the entire time domain. The NLED network
+  has an encoder-decoder architecture for extrapolation. The encoder decomposes historical echoes into
+  features of multiple spatial scales, which makes it better at learning echo dynamics from the global
+  scale to the local scale. The decoder employs nonlocal blocks with sparse self-attention related to
+  echo dynamics to learn correlations in the entire echo event, which is beneficial for predicting long-term
+  echo distributions. Our model is evaluated on radar reflectivity datasets from Shanghai and Hong Kong.
+  The experimental results indicate that the NLED model achieves a more accurate long-term forecast, and
+  alleviates the forgetting of stronger echo dynamics, validating the effectiveness of entire time series
+  modeling by the NLED network.
+significance: 4
+cited_by: 8
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

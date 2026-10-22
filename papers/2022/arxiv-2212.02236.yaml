@@ -1,0 +1,51 @@
+id: arxiv-2212.02236
+title: A Deep Learning Architecture for Passive Microwave Precipitation Retrievals using CloudSat and
+  GPM Data
+authors:
+- Reyhaneh Rahimi
+- Sajad Vahedizadeh
+- Ardeshir Ebtehaj
+date: '2022-12-02'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2212.02236'
+links:
+  paper: https://arxiv.org/abs/2212.02236
+  pdf: https://arxiv.org/pdf/2212.02236
+topic: observations-remote-sensing
+topics:
+- extremes-hazards
+type: model
+method:
+- classical-ml
+spatial:
+- global
+data:
+- satellite
+- era5
+- radar
+status: research
+summary: Dense neural networks retrain passive microwave rainfall and snowfall retrievals from GPM and
+  CloudSat, detecting precipitation with over 0.95 probability and showing large global snowfall uncertainty.
+abstract: This paper presents an algorithm that relies on a series of dense and deep neural networks for
+  passive microwave retrieval of precipitation. The neural networks learn from coincidences of brightness
+  temperatures from the Global Precipitation Measurement (GPM) Microwave Imager (GMI) with the active
+  precipitating retrievals from the Dual-frequency Precipitation Radar (DPR) onboard GPM as well as those
+  from the {CloudSat} Profiling Radar (CPR). The algorithm first detects the precipitation occurrence
+  and phase and then estimates its rate, while conditioning the results to some key ancillary information
+  including parameters related to cloud microphysical properties. The results indicate that we can reconstruct
+  the DPR rainfall and CPR snowfall with a detection probability of more than 0.95 while the probability
+  of a false alarm remains below 0.08 and 0.03, respectively. Conditioned to the occurrence of precipitation,
+  the unbiased root mean squared error in estimation of rainfall (snowfall) rate using DPR (CPR) data
+  is less than 0.8 (0.1) mm/hr over oceans and land. Beyond methodological developments, comparing the
+  results with ERA5 reanalysis and official GPM products demonstrates that the uncertainty in global satellite
+  snowfall retrievals continues to be large while there is a good agreement among rainfall products. Moreover,
+  the results indicate that CPR active snowfall data can improve passive microwave estimates of global
+  snowfall while the current CPR rainfall retrievals should only be used for detection and not estimation
+  of rates.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

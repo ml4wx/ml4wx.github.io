@@ -1,0 +1,60 @@
+id: arxiv-2208.05419
+title: 'FourCastNet: Accelerating Global High-Resolution Weather Forecasting using Adaptive Fourier Neural
+  Operators'
+authors:
+- Thorsten Kurth
+- Shashank Subramanian
+- Peter Harrington
+- Jaideep Pathak
+- Morteza Mardani
+- David Hall
+- Andrea Miele
+- Karthik Kashinath
+- Animashree Anandkumar
+date: '2022-08-08'
+year: 2022
+venue: Proceedings of the Platform for Advanced Scientific Computing Conference
+venue_type: preprint
+ids:
+  arxiv: '2208.05419'
+  doi: 10.1145/3592979.3593412
+  openalex: W4382048606
+links:
+  paper: https://arxiv.org/abs/2208.05419
+  pdf: https://arxiv.org/pdf/2208.05419
+orgs:
+- lbnl-nersc
+- nvidia
+topic: infra-software
+type: model
+method:
+- neural-operator
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: FourCastNet uses adaptive Fourier neural operators to produce global medium-range forecasts about
+  80,000 times faster than NWP, scaling to thousands of GPUs.
+abstract: 'Extreme weather amplified by climate change is causing increasingly devastating impacts across
+  the globe. The current use of physics-based numerical weather prediction (NWP) limits accuracy due to
+  high computational cost and strict time-to-solution limits. We report that a data-driven deep learning
+  Earth system emulator, FourCastNet, can predict global weather and generate medium-range forecasts five
+  orders-of-magnitude faster than NWP while approaching state-of-the-art accuracy. FourCast-Net is optimized
+  and scales efficiently on three supercomputing systems: Selene, Perlmutter, and JUWELS Booster up to
+  3,808 NVIDIA A100 GPUs, attaining 140.8 petaFLOPS in mixed precision (11.9%of peak at that scale). The
+  time-to-solution for training FourCastNet measured on JUWELS Booster on 3,072GPUs is 67.4minutes, resulting
+  in an 80,000times faster time-to-solution relative to state-of-the-art NWP, in inference. FourCastNet
+  produces accurate instantaneous weather predictions for a week in advance, enables enormous ensembles
+  that better capture weather extremes, and supports higher global forecast resolutions.'
+significance: 6
+cited_by: 263
+score: 69
+highlight: true
+highlight_reason: HPC-focused companion to FourCastNet showing scaling to thousands of GPUs and huge ensemble
+  speedups; important for infrastructure, less novel scientifically.
+added: '2026-10-22'
+source: seed

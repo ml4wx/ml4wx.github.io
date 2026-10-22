@@ -1,0 +1,65 @@
+id: doi-10.3390-rs12111741
+title: Estimation of Hourly near Surface Air Temperature Across Israel Using an Ensemble Model
+authors:
+- Bin Zhou
+- Evyatar Erell
+- Ian Hough
+- Alexandra Shtein
+- Allan C. Just
+- Victor Novack
+- Jonathan D. Rosenblatt
+- Itai Kloog
+date: '2020-05-28'
+year: 2020
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs12111741
+  openalex: W3029927724
+links:
+  paper: https://doi.org/10.3390/rs12111741
+  pdf: https://www.mdpi.com/2072-4292/12/11/1741/pdf?version=1590677755
+orgs:
+- pik
+topic: observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- stations
+- era5
+status: research
+summary: Three-stage random forest and XGBoost ensemble estimates hourly 1 km air temperature over Israel
+  from geostationary satellite skin temperature and station data.
+abstract: Mapping of near-surface air temperature (Ta) at high spatio-temporal resolution is essential
+  for unbiased assessment of human health exposure to temperature extremes, not least given the observed
+  trend of urbanization and global climate change. Data constraints have led previous studies to focus
+  merely on daily Ta metrics, rather than hourly ones, making them insufficient for intra-day assessment
+  of health exposure. In this study, we present a three-stage machine learning-based ensemble model to
+  estimate hourly Ta at a high spatial resolution of 1 × 1 km2, incorporating remotely sensed surface
+  skin temperature (Ts) from geostationary satellites, reanalysis synoptic variables, and observations
+  from weather stations, as well as auxiliary geospatial variables, which account for spatio-temporal
+  variability of Ta. The Stage 1 model gap-fills hourly Ts at 4 × 4 km2 from the Spinning Enhanced Visible
+  and InfraRed Imager (SEVIRI), which are subsequently fed into the Stage 2 model to estimate hourly Ta
+  at the same spatio-temporal resolution. The Stage 3 model downscales the residuals between estimated
+  and measured Ta to a grid of 1 × 1 km2, taking into account additionally the monthly diurnal pattern
+  of Ts derived from the Moderate Resolution Imaging Spectroradiometer (MODIS) data. In each stage, the
+  ensemble model synergizes estimates from the constituent base learners—random forest (RF) and extreme
+  gradient boosting (XGBoost)—by applying a geographically weighted generalized additive model (GAM),
+  which allows the weights of results from individual models to vary over space and time. Demonstrated
+  for Israel for the period 2004–2017, the proposed ensemble model outperformed each of the two base learners.
+  It also attained excellent five-fold cross-validated performance, with overall root mean square error
+  (RMSE) of 0.8 and 0.9 °C, mean absolute error (MAE) of 0.6 and 0.7 °C, and R2 of 0.95 and 0.98 in Stage
+  1 and Stage 2, respectively. The Stage 3 model for downscaling Ta residuals to 1 km MODIS grids achieved
+  overall RMSE of 0.3 °C, MAE of 0.5 °C, and R2 of 0.63. The generated hourly 1 × 1 km2 Ta thus serves
+  as a foundation for monitoring and assessing human health exposure to temperature extremes at a larger
+  geographical scale, helping to further minimize exposure misclassification in epidemiological studies.
+significance: 3
+cited_by: 31
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

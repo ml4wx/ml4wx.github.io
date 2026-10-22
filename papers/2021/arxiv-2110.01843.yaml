@@ -1,0 +1,56 @@
+id: arxiv-2110.01843
+title: Short-term precipitation prediction using deep learning
+authors:
+- Guoxing Chen
+- Wei-Chyung Wang
+date: '2021-10-05'
+year: 2021
+venue: Geophysical Research Letters, 49 (2022)
+venue_type: journal
+ids:
+  arxiv: '2110.01843'
+  doi: 10.1029/2022gl097904
+  openalex: W4224022129
+links:
+  paper: https://arxiv.org/abs/2110.01843
+  pdf: https://arxiv.org/pdf/2110.01843
+orgs:
+- fudan-university
+topic: regional-km-scale
+topics:
+- post-processing
+type: model
+method:
+- cnn
+timescale:
+- short
+- medium
+spatial:
+- regional
+data:
+- era5
+- stations
+status: research
+summary: A 3D CNN from one meteorology frame predicts daily CONUS precipitation, beating operational weather
+  models up to 5-day leads and improving them when combined.
+abstract: Accurate weather prediction is essential for many aspects of life, notably the early warning
+  of extreme weather events such as rainstorms. Short-term predictions of these events rely on forecasts
+  from numerical weather models, in which, despite much improvement in the past decades, outstanding issues
+  remain concerning model uncertainties, and increasing demands for computation and storage resources.
+  In recent years, the advance of deep learning offers a viable alternative approach. Here, we show that
+  a 3D convolutional neural network using a single frame of meteorology fields as input is capable of
+  predicting the precipitation spatial distribution. The network is developed based on 39-years (1980-2018)
+  data of meteorology and daily precipitation over the contiguous United States. The results bring fundamental
+  advancements in weather prediction. First, the trained network alone outperforms the state-of-the-art
+  weather models in predicting daily total precipitation, and the superiority of the network extends to
+  forecast leads up to 5 days. Second, combining the network predictions with the weather-model forecasts
+  significantly improves the accuracy of model forecasts, especially for heavy-precipitation events. Third,
+  the millisecond-scale inference time of the network facilitates large ensemble predictions for further
+  accuracy improvement. These findings strongly support the use of deep-learning in short-term weather
+  predictions.
+significance: 4
+cited_by: 68
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

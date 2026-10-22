@@ -1,0 +1,57 @@
+id: arxiv-2008.09090
+title: 'TRU-NET: A Deep Learning Approach to High Resolution Prediction of Rainfall'
+authors:
+- Rilwan Adewoyin
+- Peter Dueben
+- Peter Watson
+- Yulan He
+- Ritabrata Dutta
+date: '2020-08-20'
+year: 2020
+venue: Machine Learning
+venue_type: journal
+ids:
+  arxiv: '2008.09090'
+  doi: 10.1007/s10994-021-06022-6
+  openalex: W3058542386
+links:
+  paper: https://doi.org/10.1007/s10994-021-06022-6
+  pdf: https://arxiv.org/pdf/2008.09090
+orgs:
+- ecmwf
+topic: downscaling
+topics:
+- extremes-hazards
+type: model
+method:
+- cnn
+- rnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- cmip
+status: research
+summary: TRU-NET, a convolutional-recurrent U-Net with cross attention, predicts high-resolution rainfall
+  from climate model fields with lower RMSE than a dynamical model's rainfall output.
+abstract: Climate models (CM) are used to evaluate the impact of climate change on the risk of floods
+  and strong precipitation events. However, these numerical simulators have difficulties representing
+  precipitation events accurately, mainly due to limited spatial resolution when simulating multi-scale
+  dynamics in the atmosphere. To improve the prediction of high resolution precipitation we apply a Deep
+  Learning (DL) approach using an input of CM simulations of the model fields (weather variables) that
+  are more predictable than local precipitation. To this end, we present TRU-NET (Temporal Recurrent U-Net),
+  an encoder-decoder model featuring a novel 2D cross attention mechanism between contiguous convolutional-recurrent
+  layers to effectively model multi-scale spatio-temporal weather processes. We use a conditional-continuous
+  loss function to capture the zero-skewed %extreme event patterns of rainfall. Experiments show that
+  our model consistently attains lower RMSE and MAE scores than a DL model prevalent in short term precipitation
+  prediction and improves upon the rainfall predictions of a state-of-the-art dynamical weather model.
+  Moreover, by evaluating the performance of our model under various, training and testing, data formulation
+  strategies, we show that there is enough data for our deep learning approach to output robust, high-quality
+  results across seasons and varying regions.
+significance: 3
+cited_by: 9
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,41 @@
+id: arxiv-2202.07575
+title: Forecasting Global Weather with Graph Neural Networks
+authors:
+- Ryan Keisler
+date: '2022-02-15'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2202.07575'
+  openalex: W4221149294
+links:
+  paper: https://arxiv.org/abs/2202.07575
+  pdf: https://arxiv.org/pdf/2202.07575
+topic: global-medium-range
+type: model
+method:
+- gnn
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: A graph neural network steps the global atmosphere forward six hours at a time, achieving skill
+  comparable to GFS and ECMWF at 1-degree resolution and running live on operational GFS data.
+abstract: We present a data-driven approach for forecasting global weather using graph neural networks.
+  The system learns to step forward the current 3D atmospheric state by six hours, and multiple steps
+  are chained together to produce skillful forecasts going out several days into the future. The underlying
+  model is trained on reanalysis data from ERA5 or forecast data from GFS. Test performance on metrics
+  such as Z500 (geopotential height) and T850 (temperature) improves upon previous data-driven approaches
+  and is comparable to operational, full-resolution, physical models from GFS and ECMWF, at least when
+  evaluated on 1-degree scales and when using reanalysis initial conditions. We also show results from
+  connecting this data-driven model to live, operational forecasts from GFS.
+significance: 6
+cited_by: 120
+score: 34
+highlight: false
+added: '2026-10-22'
+source: seed

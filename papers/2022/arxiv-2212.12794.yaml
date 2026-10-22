@@ -1,0 +1,67 @@
+id: arxiv-2212.12794
+title: 'GraphCast: Learning skillful medium-range global weather forecasting'
+authors:
+- Remi Lam
+- Alvaro Sanchez-Gonzalez
+- Matthew Willson
+- Peter Wirnsberger
+- Meire Fortunato
+- Ferran Alet
+- Suman Ravuri
+- Timo Ewalds
+- Zach Eaton-Rosen
+- Weihua Hu
+- Alexander Merose
+- Stephan Hoyer
+- George Holland
+- Oriol Vinyals
+- Jacklynn Stott
+- Alexander Pritzel
+- Shakir Mohamed
+- Peter Battaglia
+date: '2022-12-24'
+year: 2022
+venue: Science
+venue_type: journal
+ids:
+  arxiv: '2212.12794'
+  doi: 10.1126/science.adi2336
+  openalex: W4388654737
+links:
+  paper: https://arxiv.org/abs/2212.12794
+  pdf: https://arxiv.org/pdf/2212.12794
+  code: https://github.com/deepmind/graphcast
+orgs:
+- google-deepmind
+- google-research
+topic: global-medium-range
+type: model
+method:
+- gnn
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: GraphCast, a graph neural network trained on ERA5, makes 10-day global forecasts at 0.25 degrees
+  in under a minute, beating operational systems on 90% of targets.
+abstract: Global medium-range weather forecasting is critical to decision-making across many social and
+  economic domains. Traditional numerical weather prediction uses increased compute resources to improve
+  forecast accuracy, but cannot directly use historical weather data to improve the underlying model.
+  We introduce a machine learning-based method called "GraphCast", which can be trained directly from
+  reanalysis data. It predicts hundreds of weather variables, over 10 days at 0.25 degree resolution globally,
+  in under one minute. We show that GraphCast significantly outperforms the most accurate operational
+  deterministic systems on 90% of 1380 verification targets, and its forecasts support better severe event
+  prediction, including tropical cyclones, atmospheric rivers, and extreme temperatures. GraphCast is
+  a key advance in accurate and efficient weather forecasting, and helps realize the promise of machine
+  learning for modeling complex dynamical systems.
+significance: 10
+cited_by: 1472
+score: 100
+highlight: true
+highlight_reason: 'GraphCast in Science: landmark ML model beating IFS HRES on 90% of targets, setting
+  a new state of the art and driving operational adoption.'
+added: '2026-10-22'
+source: seed

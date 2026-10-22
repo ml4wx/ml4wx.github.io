@@ -1,0 +1,43 @@
+id: arxiv-2306.11159
+title: A labeled dataset of cloud types using data from GOES-16 and CloudSat
+authors:
+- Paula V. Romero Jure
+- Sergio Masuelli
+- Juan Bautista Cabral
+date: '2023-06-19'
+year: 2023
+venue: 2022 IEEE Biennial Congress of Argentina (ARGENCON), 2022, pp. 1-6
+venue_type: journal
+ids:
+  arxiv: '2306.11159'
+  doi: 10.1109/argencon55245.2022.9940053
+links:
+  paper: https://arxiv.org/abs/2306.11159
+  pdf: https://arxiv.org/pdf/2306.11159
+topic: observations-remote-sensing
+type: benchmark
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: A dataset pairs GOES-16 ABI multiband images with CloudSat cloud-type labels over South America,
+  enabling supervised cloud classification with a simple neural network.
+abstract: In this paper we present the development of a dataset consisting of 91 Multi-band Cloud and
+  Moisture Product Full-Disk (MCMIPF) from the Advanced Baseline Imager (ABI) on board GOES-16 geostationary
+  satellite with 91 temporally and spatially corresponding CLDCLASS products from the CloudSat polar satellite.
+  The products are diurnal, corresponding to the months of January and February 2019 and were chosen such
+  that the products from both satellites can be co-located over South America. The CLDCLASS product provides
+  the cloud type observed for each of the orbit's steps and the GOES-16 multiband images contain pixels
+  that can be co-located with these data. We develop an algorithm that returns a product in the form of
+  a table that provides pixels from multiband images labelled with the type of cloud observed in them.
+  These labelled data conformed in this particular structure are very useful to perform supervised learning.
+  This was corroborated by training a simple linear artificial neural network based on the work of Gorooh
+  et al. (2020), which gave good results, especially for the classification of deep convective clouds.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

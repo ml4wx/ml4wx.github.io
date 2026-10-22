@@ -1,0 +1,52 @@
+id: arxiv-2012.05015
+title: Fusion of rain radar images and wind forecasts in a deep learning model applied to rain nowcasting
+authors:
+- Vincent Bouget
+- Dominique Béréziat
+- Julien Brajard
+- Anastase Charantonis
+- Arthur Filoche
+date: '2020-12-09'
+year: 2020
+venue: Remote Sensing
+venue_type: journal
+ids:
+  arxiv: '2012.05015'
+  doi: 10.3390/rs13020246
+  openalex: W3111510448
+links:
+  paper: https://doi.org/10.3390/rs13020246
+  pdf: https://arxiv.org/pdf/2012.05015
+orgs:
+- lbnl-nersc
+topic: nowcasting
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- nwp-analysis
+status: research
+summary: Fusing rain radar images with NWP wind forecasts in a deep network improves 30-minute rain nowcasts,
+  scoring 8% higher F1 than optical flow and 7% higher than radar-only.
+abstract: Short- or mid-term rainfall forecasting is a major task with several environmental applications
+  such as agricultural management or flood risk monitoring. Existing data-driven approaches, especially
+  deep learning models, have shown significant skill at this task, using only rainfall radar images as
+  inputs. In order to determine whether using other meteorological parameters such as wind would improve
+  forecasts, we trained a deep learning model on a fusion of rainfall radar images and wind velocity produced
+  by a weather forecast model. The network was compared to a similar architecture trained only on radar
+  data, to a basic persistence model and to an approach based on optical flow. Our network outperforms
+  by 8% the F1-score calculated for the optical flow on moderate and higher rain events for forecasts
+  at a horizon time of 30 min. Furthermore, it outperforms by 7% the same architecture trained using only
+  rainfall radar images. Merging rain and wind data has also proven to stabilize the training process
+  and enabled significant improvement especially on the difficult-to-predict high precipitation rainfalls.
+significance: 3
+cited_by: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

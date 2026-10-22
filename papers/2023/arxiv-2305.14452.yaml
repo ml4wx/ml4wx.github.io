@@ -1,0 +1,49 @@
+id: arxiv-2305.14452
+title: Fourier Neural Operators for Arbitrary Resolution Climate Data Downscaling
+authors:
+- Qidong Yang
+- Alex Hernandez-Garcia
+- Paula Harder
+- Venkatesh Ramesh
+- Prasanna Sattegeri
+- Daniela Szwarcman
+- Campbell D. Watson
+- David Rolnick
+date: '2023-05-23'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2305.14452'
+links:
+  paper: https://arxiv.org/abs/2305.14452
+  pdf: https://arxiv.org/pdf/2305.14452
+topic: downscaling
+type: model
+method:
+- neural-operator
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: A Fourier neural operator downscales ERA5 climate fields zero-shot to arbitrary unseen resolutions,
+  outperforming CNN and GAN downscaling baselines.
+abstract: Climate simulations are essential in guiding our understanding of climate change and responding
+  to its effects. However, it is computationally expensive to resolve complex climate processes at high
+  spatial resolution. As one way to speed up climate simulations, neural networks have been used to downscale
+  climate variables from fast-running low-resolution simulations, but high-resolution training data are
+  often unobtainable or scarce, greatly limiting accuracy. In this work, we propose a downscaling method
+  based on the Fourier neural operator. It trains with data of a small upsampling factor and then can
+  zero-shot downscale its input to arbitrary unseen high resolution. Evaluated both on ERA5 climate model
+  data and on the Navier-Stokes equation solution data, our downscaling model significantly outperforms
+  state-of-the-art convolutional and generative adversarial downscaling models, both in standard single-resolution
+  downscaling and in zero-shot generalization to higher upsampling factors. Furthermore, we show that
+  our method also outperforms state-of-the-art data-driven partial differential equation solvers on Navier-Stokes
+  equations. Overall, our work bridges the gap between simulation of a physical process and interpolation
+  of low-resolution output, showing that it is possible to combine both approaches and significantly improve
+  upon each other.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

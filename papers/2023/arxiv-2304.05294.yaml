@@ -1,0 +1,59 @@
+id: arxiv-2304.05294
+title: Selecting robust features for machine-learning applications using multidata causal discovery
+authors:
+- S. Saranya Ganesh
+- Tom Beucler
+- Frederick Iat‐Hin Tam
+- Milton S. Gomez
+- Jakob Runge
+- Andreas Gerhardus
+date: '2023-01-01'
+year: 2023
+venue: Environmental Data Science
+venue_type: journal
+ids:
+  arxiv: '2304.05294'
+  doi: 10.1017/eds.2023.21
+  openalex: W4383567618
+links:
+  paper: https://doi.org/10.1017/eds.2023.21
+  pdf: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/29C08A0FF7BFD2347768F315E041A143/S2634460223000213a.pdf/div-class-title-selecting-robust-features-for-machine-learning-applications-using-multidata-causal-discovery-div.pdf
+topic: extremes-hazards
+topics:
+- climate-analysis-attribution
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- regional
+data:
+- other
+status: research
+summary: PCMCI-based multidata causal discovery selects drivers for Western Pacific tropical cyclone intensity
+  prediction, outperforming noncausal and correlation-based feature selection.
+abstract: Abstract Robust feature selection is vital for creating reliable and interpretable machine-learning
+  (ML) models. When designing statistical prediction models in cases where domain knowledge is limited
+  and underlying interactions are unknown, choosing the optimal set of features is often difficult. To
+  mitigate this issue, we introduce a multidata (M) causal feature selection approach that simultaneously
+  processes an ensemble of time series datasets and produces a single set of causal drivers. This approach
+  uses the causal discovery algorithms PC $ {}_1 $ or PCMCI that are implemented in the Tigramite Python
+  package. These algorithms utilize conditional independence tests to infer parts of the causal graph.
+  Our causal feature selection approach filters out causally spurious links before passing the remaining
+  causal features as inputs to ML models (multiple linear regression and random forest) that predict the
+  targets. We apply our framework to the statistical intensity prediction of Western Pacific tropical
+  cyclones (TCs), for which it is often difficult to accurately choose drivers and their dimensionality
+  reduction (time lags, vertical levels, and area-averaging). Using more stringent significance thresholds
+  in the conditional independence tests helps eliminate spurious causal relationships, thus helping the
+  ML model generalize better to unseen TC cases. M-PC $ {}_1 $ with a reduced number of features outperforms
+  M-PCMCI, noncausal ML, and other feature selection methods (lagged correlation and random), even slightly
+  outperforming feature selection based on explainable artificial intelligence. The optimal causal drivers
+  obtained from our causal feature selection help improve our understanding of underlying relationships
+  and suggest new potential drivers of TC intensification.
+significance: 3
+cited_by: 11
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

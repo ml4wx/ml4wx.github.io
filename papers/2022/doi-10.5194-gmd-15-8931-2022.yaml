@@ -1,0 +1,69 @@
+id: doi-10.5194-gmd-15-8931-2022
+title: Temperature forecasting by deep learning methods
+authors:
+- Bing Gong
+- Michael Langguth
+- Yan Ji
+- Amirpasha Mozaffari
+- Scarlet Stadtler
+- Karim Mache
+- Martin G. Schultz
+date: '2022-12-13'
+year: 2022
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-15-8931-2022
+  openalex: W4312200505
+links:
+  paper: https://doi.org/10.5194/gmd-15-8931-2022
+  pdf: https://gmd.copernicus.org/articles/15/8931/2022/gmd-15-8931-2022.pdf
+orgs:
+- juelich
+topic: nowcasting
+type: model
+method:
+- gan-vae
+- rnn
+- cnn
+timescale:
+- nowcast
+- short
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: Compares ConvLSTM and adversarial SAVP models for hourly 12-hour 2 m temperature forecasts over
+  Europe; SAVP reaches MSE about 2.3 K² versus 3.6 K² for ConvLSTM.
+abstract: Abstract. Numerical weather prediction (NWP) models solve a system of partial differential equations
+  based on physical laws to forecast the future state of the atmosphere. These models are deployed operationally,
+  but they are computationally very expensive. Recently, the potential of deep neural networks to generate
+  bespoken weather forecasts has been explored in a couple of scientific studies inspired by the success
+  of video frame prediction models in computer vision. In this study, a simple recurrent neural network
+  with convolutional filters, called ConvLSTM, and an advanced generative network, the Stochastic Adversarial
+  Video Prediction (SAVP) model, are applied to create hourly forecasts of the 2 m temperature for the
+  next 12 hours over Europe. We make use of 13 years of data from the ERA5 reanalysis, of which 11 years
+  are utilized for training and one year each is used for validating and testing. We choose the 2 m temperature,
+  total cloud cover and the 850 hPa temperature as predictors and show that both models attain predictive
+  skill by outperforming persistence forecasts. SAVP is superior to ConvLSTM in terms of several evaluation
+  metrics, confirming previous results from computer vision that larger, more complex networks are better
+  suited to learn complex features and to generate better predictions. The 12-hour forecasts of SAVP attain
+  a mean squared error (MSE) of about 2.3 K2, an anomaly correlation coefficient (ACC) larger than 0.85,
+  a Structural Similarity Index (SSIM) of around 0.72, and a gradient ratio (rG) of about 0.82. The ConvLSTM
+  yields a higher MSE (3.6 K2), a smaller ACC (0.80), and SSIM (0.65), but a slightly larger rG (0.84).
+  The superior performance of SAVP in terms of MSE, ACC, and SSIM can be largely attributed to the generator.
+  A sensitivity study shows that a larger weight of the GAN component in the SAVP loss leads to even better
+  preservation of spatial variability at the cost of a somewhat increased MSE (2.5 K2). Including the
+  850 hPa temperature as an additional predictor enhances the forecast quality and the model also benefits
+  from a larger spatial domain. By contrast, adding the total cloud cover as predictor or reducing the
+  amount of training data to eight years has only small effects. Although the temperature forecasts obtained
+  in this way are still less powerful than contemporary NWP models, this study demonstrates that sophisticated
+  deep neural networks may achieve considerable forecast quality beyond the nowcasting range in a purely
+  data-driven way.
+significance: 3
+cited_by: 71
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

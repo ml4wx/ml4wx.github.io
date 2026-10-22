@@ -1,0 +1,70 @@
+id: doi-10.3390-rs13163157
+title: Deep Learning for Polarimetric Radar Quantitative Precipitation Estimation during Landfalling Typhoons
+  in South China
+authors:
+- Yonghua Zhang
+- Shuoben Bi
+- Liping Liu
+- Haonan Chen
+- Yi Zhang
+- Shen Ping
+- Fan Nils Yang
+- Yaqiang Wang
+- Yang Zhang
+- Shun Yao
+date: '2021-08-10'
+year: 2021
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs13163157
+  openalex: W3191285888
+links:
+  paper: https://doi.org/10.3390/rs13163157
+  pdf: https://www.mdpi.com/2072-4292/13/16/3157/pdf?version=1628582477
+orgs:
+- nuist
+- colorado-state-university
+- cma
+topic: observations-remote-sensing
+topics:
+- nowcasting
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- stations
+status: research
+summary: QPENet deep learning on dual-polarization radar, trained on 11 typhoons, beats DSD-based parametric
+  QPE for rainfall estimation in South China.
+abstract: Heavy rain associated with landfalling typhoons often leads to disasters in South China, which
+  can be reduced by improving the accuracy of radar quantitative precipitation estimation (QPE). At present,
+  raindrop size distribution (DSD)-based nonlinear fitting (QPEDSD) and traditional neural networks are
+  the main radar QPE algorithms. The former is not sufficient to represent the spatiotemporal variability
+  of DSDs through the generalized Z–R or polarimetric radar rainfall relations that are established using
+  statistical methods since such parametric methods do not consider the spatial distribution of radar
+  observables, and the latter is limited by the number of network layers and availability of data for
+  training the model. In this paper, we propose an alternative approach to dual-polarization radar QPE
+  based on deep learning (QPENet). Three datasets of “dual-polarization radar observations—surface rainfall
+  (DPO—SR)” were constructed using radar observations and corresponding measurements from automatic weather
+  stations (AWS) and used for QPENetV1, QPENetV2, and QPENetV3. In particular, 13 × 13, 25 × 25, and 41
+  × 41 radar range bins surrounding each AWS location were used in constructing the datasets for QPENetV1,
+  QPENetV2, and QPENetV3, respectively. For training the QPENet models, the radar data and AWS measurements
+  from eleven landfalling typhoons in South China during 2017–2019 were used. For demonstration, an independent
+  typhoon event was randomly selected (i.e., Merbok) to implement the three trained models to produce
+  rainfall estimates. The evaluation results and comparison with traditional QPEDSD algorithms show that
+  the QPENet model has a better performance than the traditional parametric relations. Only when the hourly
+  rainfall intensity is less than 5 mm (R < 5 mm·h−1), the QPEDSD model shows a comparable performance
+  to QPENet. Comparing the three versions of the QPENet model, QPENetV2 has the best overall performance.
+  Only when the hourly rainfall intensity is less than 5 mm (R < 5 mm·h−1), QPENetV3 performs the best.
+significance: 3
+cited_by: 28
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

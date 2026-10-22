@@ -1,0 +1,54 @@
+id: arxiv-2209.11682
+title: Meteorological Satellite Images Prediction Based on Deep Multi-scales Extrapolation Fusion
+authors:
+- Fang Huang
+- Wencong Cheng
+- PanFeng Wang
+- ZhiGang Wang
+- HongHong He
+date: '2022-09-19'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2209.11682'
+  openalex: W4297162933
+links:
+  paper: https://arxiv.org/abs/2209.11682
+  pdf: https://arxiv.org/pdf/2209.11682
+topic: nowcasting
+type: model
+method:
+- cnn
+- gan-vae
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Multi-scale extrapolation with a conditional GAN predicts FY-4A meteorological satellite images
+  up to 2 hours ahead, capturing weather-system evolution in detail.
+abstract: Meteorological satellite imagery is critical for meteorologists. The data have played an important
+  role in monitoring and analyzing weather and climate changes. However, satellite imagery is a kind of
+  observation data and exists a significant time delay when transmitting the data back to Earth. It is
+  important to make accurate predictions for meteorological satellite images, especially the nowcasting
+  prediction up to 2 hours ahead. In recent years, there has been growing interest in the research of
+  nowcasting prediction applications of weather radar images based on deep learning. Compared to the weather
+  radar images prediction problem, the main challenge for meteorological satellite images prediction is
+  the large-scale observation areas and therefore the large sizes of the observation products. Here we
+  present a deep multi-scales extrapolation fusion method, to address the challenge of the meteorological
+  satellite images nowcasting prediction. First, we downsample the original satellite images dataset with
+  large size to several images datasets with smaller resolutions, then we use a deep spatiotemporal sequences
+  prediction method to generate the multi-scales prediction images with different resolutions separately.
+  Second, we fuse the multi-scales prediction results to the targeting prediction images with the original
+  size by a conditional generative adversarial network. The experiments based on the FY-4A meteorological
+  satellite data show that the proposed method can generate realistic prediction images that effectively
+  capture the evolutions of the weather systems in detail. We believe that the general idea of this work
+  can be potentially applied to other spatiotemporal sequence prediction tasks with a large size.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,63 @@
+id: arxiv-2102.05107
+title: Sub-seasonal forecasting with a large ensemble of deep-learning weather prediction models
+authors:
+- Jonathan A. Weyn
+- Dale R. Durran
+- Rich Caruana
+- Nathaniel Cresswell-Clay
+date: '2021-02-09'
+year: 2021
+venue: Sub-Seasonal Forecasting With a Large Ensemble of Deep-Learning Weather Prediction Models. Journal
+  of Advances in Modeling Earth Systems, 2021
+venue_type: journal
+ids:
+  arxiv: '2102.05107'
+  doi: 10.1029/2021ms002502
+  openalex: W3128630349
+links:
+  paper: https://arxiv.org/abs/2102.05107
+  pdf: https://arxiv.org/pdf/2102.05107
+orgs:
+- microsoft-research
+- university-of-washington
+topic: s2s-seasonal
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- cnn
+timescale:
+- s2s
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: A CNN-based cubed-sphere ensemble of 32 deep-learning weather models gives 2-6 week forecasts
+  that are only modestly worse than the ECMWF S2S ensemble over land.
+abstract: We present an ensemble prediction system using a Deep Learning Weather Prediction (DLWP) model
+  that recursively predicts key atmospheric variables with six-hour time resolution. This model uses convolutional
+  neural networks (CNNs) on a cubed sphere grid to produce global forecasts. The approach is computationally
+  efficient, requiring just three minutes on a single GPU to produce a 320-member set of six-week forecasts
+  at 1.4° resolution. Ensemble spread is primarily produced by randomizing the CNN training process to
+  create a set of 32 DLWP models with slightly different learned weights. Although our DLWP model does
+  not forecast precipitation, it does forecast total column water vapor, and it gives a reasonable 4.5-day
+  deterministic forecast of Hurricane Irma. In addition to simulating mid-latitude weather systems, it
+  spontaneously generates tropical cyclones in a one-year free-running simulation. Averaged globally and
+  over a two-year test set, the ensemble mean RMSE retains skill relative to climatology beyond two-weeks,
+  with anomaly correlation coefficients remaining above 0.6 through six days. Our primary application
+  is to subseasonal-to-seasonal (S2S) forecasting at lead times from two to six weeks. Current forecast
+  systems have low skill in predicting one- or 2-week-average weather patterns at S2S time scales. The
+  continuous ranked probability score (CRPS) and the ranked probability skill score (RPSS) show that the
+  DLWP ensemble is only modestly inferior in performance to the European Centre for Medium Range Weather
+  Forecasts (ECMWF) S2S ensemble over land at lead times of 4 and 5-6 weeks. At shorter lead times, the
+  ECMWF ensemble performs better than DLWP.
+significance: 6
+cited_by: 227
+score: 69
+highlight: true
+highlight_reason: Large DLWP ensemble on a cubed sphere gives cheap S2S forecasts, near ECMWF-level skill
+  at long leads; an important early step for ML-based S2S prediction.
+added: '2026-10-22'
+source: seed

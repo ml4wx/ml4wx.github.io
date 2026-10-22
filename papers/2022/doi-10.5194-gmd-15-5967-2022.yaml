@@ -1,0 +1,56 @@
+id: doi-10.5194-gmd-15-5967-2022
+title: 'Rad-cGAN v1.0: Radar-based precipitation nowcasting model with conditional generative adversarial
+  networks for multiple dam domains'
+authors:
+- Suyeon Choi
+- Yeonjoo Kim
+date: '2022-08-01'
+year: 2022
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-15-5967-2022
+  openalex: W4289201796
+links:
+  paper: https://doi.org/10.5194/gmd-15-5967-2022
+  pdf: https://gmd.copernicus.org/articles/15/5967/2022/gmd-15-5967-2022.pdf
+topic: nowcasting
+type: model
+method:
+- gan-vae
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Rad-cGAN, a conditional GAN for radar precipitation nowcasting, outperforms ConvLSTM and U-Net,
+  extending useful lead time to 80 minutes and transferring across Korean dam regions.
+abstract: Abstract. Numerical weather prediction models and probabilistic extrapolation methods using
+  radar images have been widely used for precipitation nowcasting. Recently, machine-learning-based precipitation
+  nowcasting models have also been actively developed for relatively short-term precipitation predictions.
+  This study aimed to develop a radar-based precipitation nowcasting model using an advanced machine learning
+  technique, conditional generative adversarial network (cGAN), which shows high performance in image
+  generation tasks. The cGAN-based precipitation nowcasting model, named Rad-cGAN, developed in this study
+  was trained with a radar reflectivity map of the Soyang-gang Dam region in South Korea with a spatial
+  domain of 128 × 128 km, spatial resolution of 1 km, and temporal resolution of 10 min. The model performance
+  was evaluated using previously developed machine-learning-based precipitation nowcasting models, namely
+  convolutional long short-term memory (ConvLSTM) and U-Net, as well as the baseline Eulerian persistence
+  model. We demonstrated that Rad-cGAN outperformed other models not only for the chosen site but also
+  for the entire domain across the Soyang-gang Dam region. Additionally, the proposed model maintained
+  good performance even with lead times up to 80 min based on the critical success index at the intensity
+  threshold of 0.1 mm h−1, while RainNet and ConvLSTM achieved lead times of 70 and 40 min, respectively.
+  We also demonstrated the successful implementation of the transfer learning technique to efficiently
+  train model with the data from other dam regions in South Korea, such as the Andong and Chungju Dam
+  regions. We used pre-trained model, which was completely trained in the Soyang-gang Dam region. This
+  study confirms that Rad-cGAN can be successfully applied to precipitation nowcasting with longer lead
+  times, and using the transfer learning approach it shows good performance in regions other than the
+  originally trained region.
+significance: 4
+cited_by: 44
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

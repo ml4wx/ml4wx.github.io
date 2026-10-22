@@ -1,0 +1,60 @@
+id: arxiv-1806.04731
+title: Deep learning to represent sub-grid processes in climate models
+authors:
+- Stephan Rasp
+- Michael S. Pritchard
+- Pierre Gentine
+date: '2018-06-12'
+year: 2018
+venue: 'Proceedings of the National Academy of Sciences Sep 2018, 201810286; DOI: 10.1073/pnas.1810286115'
+venue_type: journal
+ids:
+  arxiv: '1806.04731'
+  doi: 10.1073/pnas.1810286115
+  openalex: W2808559252
+links:
+  paper: https://arxiv.org/abs/1806.04731
+  pdf: https://arxiv.org/pdf/1806.04731
+orgs:
+- columbia-leap
+topic: hybrid-parameterization
+topics:
+- climate-emulation
+type: model
+method:
+- classical-ml
+timescale:
+- climate
+spatial:
+- global
+data:
+- other
+status: research
+summary: A neural network trained on cloud-resolving output replaces subgrid convection in a global climate
+  model, giving stable multi-year runs that capture precipitation extremes and approximately conserve
+  energy.
+abstract: The representation of nonlinear sub-grid processes, especially clouds, has been a major source
+  of uncertainty in climate models for decades. Cloud-resolving models better represent many of these
+  processes and can now be run globally but only for short-term simulations of at most a few years because
+  of computational limitations. Here we demonstrate that deep learning can be used to capture many advantages
+  of cloud-resolving modeling at a fraction of the computational cost. We train a deep neural network
+  to represent all atmospheric sub-grid processes in a climate model by learning from a multi-scale model
+  in which convection is treated explicitly. The trained neural network then replaces the traditional
+  sub-grid parameterizations in a global general circulation model in which it freely interacts with the
+  resolved dynamics and the surface-flux scheme. The prognostic multi-year simulations are stable and
+  closely reproduce not only the mean climate of the cloud-resolving simulation but also key aspects of
+  variability, including precipitation extremes and the equatorial wave spectrum. Furthermore, the neural
+  network approximately conserves energy despite not being explicitly instructed to. Finally, we show
+  that the neural network parameterization generalizes to new surface forcing patterns but struggles to
+  cope with temperatures far outside its training manifold. Our results show the feasibility of using
+  deep learning for climate model parameterization. In a broader context, we anticipate that data-driven
+  Earth System Model development could play a key role in reducing climate prediction uncertainty in the
+  coming decade.
+significance: 8
+cited_by: 1044
+score: 62
+highlight: true
+highlight_reason: Landmark demonstration of a deep-learning sub-grid parameterization running stably in
+  a coupled GCM for multi-year simulations; foundational for ML climate emulation.
+added: '2026-10-22'
+source: seed

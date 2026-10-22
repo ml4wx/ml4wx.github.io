@@ -1,0 +1,60 @@
+id: doi-10.5194-gmd-15-715-2022
+title: 'EuLerian Identification of ascending AirStreams (ELIAS 2.0) in numerical weather prediction and
+  climate models – Part 1: Development of deep learning model'
+authors:
+- Julian Quinting
+- Christian Michael Grams
+date: '2022-01-27'
+year: 2022
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-15-715-2022
+  openalex: W4210730244
+links:
+  paper: https://doi.org/10.5194/gmd-15-715-2022
+orgs:
+- kit
+topic: climate-analysis-attribution
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- era5
+- nwp-analysis
+- cmip
+status: research
+summary: CNNs predict warm conveyor belt inflow, ascent and outflow footprints from gridded fields, reproducing
+  trajectory-based climatology at much lower computational cost.
+abstract: Abstract. Physical processes on the synoptic scale are important modulators of the large-scale
+  extratropical circulation. In particular, rapidly ascending air streams in extratropical cyclones, so-called
+  warm conveyor belts (WCBs), modulate the upper-tropospheric Rossby wave pattern and are sources and
+  magnifiers of forecast uncertainty. Thus, from a process-oriented perspective, numerical weather prediction
+  (NWP) and climate models should adequately represent WCBs. The identification of WCBs usually involves
+  Lagrangian air parcel trajectories that ascend from the lower to the upper troposphere within two days.
+  This requires numerical data with high spatial and temporal resolution which is often not available
+  from standard output and requires expensive computations. This study introduces a novel framework that
+  aims to predict the footprints of the WCB inflow, ascent, and outflow stages over the Northern Hemisphere
+  from instantaneous gridded fields using convolutional neural networks (CNNs). With its comparably low
+  computational costs and relying on standard model output alone the new diagnostic enables the systematic
+  investigation of WCBs in large data sets such as ensemble reforecast or climate model projections which
+  are mostly not suited for trajectory calculations. Building on the insights from a logistic regression
+  approach of a previous study, the CNNs are trained using a combination of meteorological parameters
+  as predictors and trajectory-based WCB footprints as predictands. Validation of the networks against
+  the trajectory-based data set confirms that the CNN models reliably replicate the climatological frequency
+  of WCBs as well as their footprints at instantaneous time steps. The CNN models significantly outperform
+  previously developed logistic regression models. Including time-lagged information on the occurrence
+  of WCB ascent as a predictor for the inflow and outflow stages further improves the models' skill considerably.
+  A companion study demonstrates versatile applications of the CNNs in different data sets including the
+  verification of WCBs in ensemble forecasts. Overall, the diagnostic demonstrates how deep learning methods
+  may be used to investigate the representation of weather systems and of their related processes in NWP
+  and climate models in order to shed light on forecast uncertainty and systematic biases from a process-oriented
+  perspective.
+significance: 4
+cited_by: 30
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

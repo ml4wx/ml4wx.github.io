@@ -1,0 +1,54 @@
+id: arxiv-2211.11820
+title: Machine-learned climate model corrections from a global storm-resolving model
+authors:
+- Anna Kwa
+- Spencer K. Clark
+- Brian Henn
+- Noah D. Brenowitz
+- Jeremy McGibbon
+- W. Andre Perkins
+- Oliver Watt-Meyer
+- Lucas Harris
+- Christopher S. Bretherton
+date: '2022-11-21'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2211.11820'
+  openalex: W4309867720
+links:
+  paper: https://arxiv.org/abs/2211.11820
+  pdf: https://arxiv.org/pdf/2211.11820
+orgs:
+- ai2
+- noaa
+topic: hybrid-parameterization
+type: model
+method:
+- other
+timescale:
+- climate
+spatial:
+- global
+data:
+- km-scale-sim
+status: research
+summary: Neural network corrections trained on a 3 km storm-resolving model reduce a 200 km climate model's
+  land temperature and precipitation pattern errors by 6-25%.
+abstract: Due to computational constraints, running global climate models (GCMs) for many years requires
+  a lower spatial grid resolution (${\gtrsim}50$ km) than is optimal for accurately resolving important
+  physical processes. Such processes are approximated in GCMs via subgrid parameterizations, which contribute
+  significantly to the uncertainty in GCM predictions. One approach to improving the accuracy of a coarse-grid
+  global climate model is to add machine-learned state-dependent corrections at each simulation timestep,
+  such that the climate model evolves more like a high-resolution global storm-resolving model (GSRM).
+  We train neural networks to learn the state-dependent temperature, humidity, and radiative flux corrections
+  needed to nudge a 200 km coarse-grid climate model to the evolution of a 3~km fine-grid GSRM. When these
+  corrective ML models are coupled to a year-long coarse-grid climate simulation, the time-mean spatial
+  pattern errors are reduced by 6-25% for land surface temperature and 9-25% for land surface precipitation
+  with respect to a no-ML baseline simulation. The ML-corrected simulations develop other biases in climate
+  and circulation that differ from, but have comparable amplitude to, the baseline simulation.
+significance: 5
+score: 55
+highlight: false
+added: '2026-10-22'
+source: backfill

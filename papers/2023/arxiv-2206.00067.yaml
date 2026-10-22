@@ -1,0 +1,69 @@
+id: arxiv-2206.00067
+title: Structural Forecasting for Short-Term Tropical Cyclone Intensity Guidance
+authors:
+- Trey McNeely
+- Pavel Khokhlov
+- Niccolò Dalmasso
+- Kimberly M. Wood
+- Ann B. Lee
+date: '2023-04-04'
+year: 2023
+venue: Weather and Forecasting
+venue_type: journal
+ids:
+  arxiv: '2206.00067'
+  doi: 10.1175/waf-d-22-0111.1
+  openalex: W4362554102
+links:
+  paper: https://doi.org/10.1175/waf-d-22-0111.1
+  pdf: https://arxiv.org/pdf/2206.00067
+orgs:
+- microsoft-research
+topic: extremes-hazards
+topics:
+- nowcasting
+type: model
+method:
+- cnn
+- other
+timescale:
+- nowcast
+- short
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Probabilistic structural forecasts simulate geostationary IR radial profiles with PixelSNAIL
+  and feed a CNN, giving intensity errors near NHC official forecasts.
+abstract: 'Abstract Because geostationary satellite (Geo) imagery provides a high temporal resolution
+  window into tropical cyclone (TC) behavior, we investigate the viability of its application to short-term
+  probabilistic forecasts of TC convective structure to subsequently predict TC intensity. Here, we present
+  a prototype model that is trained solely on two inputs: Geo infrared imagery leading up to the synoptic
+  time of interest and intensity estimates up to 6 h prior to that time. To estimate future TC structure,
+  we compute cloud-top temperature radial profiles from infrared imagery and then simulate the evolution
+  of an ensemble of those profiles over the subsequent 12 h by applying a deep autoregressive generative
+  model (PixelSNAIL). To forecast TC intensities at hours 6 and 12, we input operational intensity estimates
+  up to the current time (0 h) and simulated future radial profiles up to +12 h into a “nowcasting” convolutional
+  neural network. We limit our inputs to demonstrate the viability of our approach and to enable quantification
+  of value added by the observed and simulated future radial profiles beyond operational intensity estimates
+  alone. Our prototype model achieves a marginally higher error than the National Hurricane Center’s official
+  forecasts despite excluding environmental factors, such as vertical wind shear and sea surface temperature.
+  We also demonstrate that it is possible to reasonably predict short-term evolution of TC convective
+  structure via radial profiles from Geo infrared imagery, resulting in interpretable structural forecasts
+  that may be valuable for TC operational guidance. Significance Statement This work presents a new method
+  of short-term probabilistic forecasting for tropical cyclone (TC) convective structure and intensity
+  using infrared geostationary satellite observations. Our prototype model’s performance indicates that
+  there is some value in observed and simulated future cloud-top temperature radial profiles for short-term
+  intensity forecasting. The nonlinear nature of machine learning tools can pose an interpretation challenge,
+  but structural forecasts produced by our model can be directly evaluated and, thus, may offer helpful
+  guidance to forecasters regarding short-term TC evolution. Since forecasters are time limited in producing
+  each advisory package despite a growing wealth of satellite observations, a tool that captures recent
+  TC convective evolution and potential future changes may support their assessment of TC behavior in
+  crafting their forecasts.'
+significance: 3
+cited_by: 9
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

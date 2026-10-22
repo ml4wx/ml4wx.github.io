@@ -1,0 +1,61 @@
+id: doi-10.3390-rs15174188
+title: Estimation of Tropical Cyclone Intensity via Deep Learning Techniques from Satellite Cloud Images
+authors:
+- Biao Tong
+- Jiyang Fu
+- Yaxue Deng
+- Yongjun Huang
+- Pak Wai Chan
+- Yuncheng He
+date: '2023-08-25'
+year: 2023
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs15174188
+  openalex: W4386168289
+links:
+  paper: https://doi.org/10.3390/rs15174188
+  pdf: https://www.mdpi.com/2072-4292/15/17/4188/pdf?version=1692966303
+topic: extremes-hazards
+topics:
+- observations-remote-sensing
+type: model
+method:
+- transformer
+- cnn
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Vision Transformer and CNN regressors estimate tropical cyclone intensity from satellite cloud
+  images, and a fused two-stage strategy gives the best accuracy.
+abstract: Estimating the intensity of tropical cyclones (TCs) is usually involved as a critical step in
+  studies on TC disaster warnings and prediction. Satellite cloud images (SCIs) are one of the most effective
+  and preferable data sources for TC research. Despite the great achievements in various SCI-based studies,
+  accurate and efficient estimation of TC intensity still remains a challenge. In recent years, machine
+  learning (ML) techniques have gained fast development and shown significant potential in dealing with
+  big data, particularly with images. This study focuses on the objective estimation of TC intensity based
+  on SCIs via a comprehensive usage of some advanced deep learning (DL) techniques and smoothing methods.
+  Two estimation strategies are proposed and examined which, respectively, involve one and two functional
+  stages. The one-stage strategy uses Vision Transformer (ViT) or Deep Convolutional Neutral Network (DCNN)
+  as the regression model for directly identifying TC intensity, while the second strategy involves a
+  classification stage that aims to stratify SCI samples into a few intensity groups and a subsequent
+  regression stage that specifies the TC intensity. Further efforts are made to improve the estimation
+  accuracy by using smoothing manipulations (via four specific smoothing techniques) in the scenarios
+  of the aforementioned two strategies and their fusion. Results show that DCNN performs better than ViT
+  in the one-stage strategy, while using ViT as the classification model and DCNN as the regression model
+  can result in the best performance in the two-stage strategy. It is interesting that although the strategy
+  of singly using DCNN wins out over any concerned two-stage strategy, the fusion of the two strategies
+  outperforms either the one-stage strategy or the two-stage strategy. Results also suggest that using
+  smoothing techniques are beneficial for the improvement of estimation accuracy. Overall, the best performance
+  is achieved by using a hybrid strategy that consists of the one-stage strategy, the two-stage strategy
+  and smoothing manipulation. The associated RMSE and MAE values are 9.81 kt and 7.51 kt, which prevail
+  over those from most existing studies.
+significance: 3
+cited_by: 23
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

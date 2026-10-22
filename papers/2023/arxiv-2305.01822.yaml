@@ -1,0 +1,45 @@
+id: arxiv-2305.01822
+title: Unpaired Downscaling of Fluid Flows with Diffusion Bridges
+authors:
+- Tobias Bischoff
+- Katherine Deck
+date: '2023-05-02'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2305.01822'
+links:
+  paper: https://arxiv.org/abs/2305.01822
+  pdf: https://arxiv.org/pdf/2305.01822
+topic: downscaling
+topics:
+- extremes-hazards
+type: model
+method:
+- diffusion
+spatial:
+- regional
+data:
+- km-scale-sim
+- other
+status: research
+summary: Unpaired diffusion bridges downscale geophysical fluid simulations without paired data, correcting
+  biases including in extremes and promising use for climate precipitation and temperature.
+abstract: We present a method to downscale idealized geophysical fluid simulations using generative models
+  based on diffusion maps. By analyzing the Fourier spectra of images drawn from different data distributions,
+  we show how one can chain together two independent conditional diffusion models for use in domain translation.
+  The resulting transformation is a diffusion bridge between a low resolution and a high resolution dataset
+  and allows for new sample generation of high-resolution images given specific low resolution features.
+  The ability to generate new samples allows for the computation of any statistic of interest, without
+  any additional calibration or training. Our unsupervised setup is also designed to downscale images
+  without access to paired training data; this flexibility allows for the combination of multiple source
+  and target domains without additional training. We demonstrate that the method enhances resolution and
+  corrects context-dependent biases in geophysical fluid simulations, including in extreme events. We
+  anticipate that the same method can be used to downscale the output of climate simulations, including
+  temperature and precipitation fields, without needing to train a new model for each application and
+  providing a significant computational cost savings.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

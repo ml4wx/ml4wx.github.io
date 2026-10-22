@@ -1,0 +1,56 @@
+id: arxiv-2304.08754
+title: 'W-MAE: Pre-trained weather model with masked autoencoder for multi-variable weather forecasting'
+authors:
+- Xin Man
+- Chenghong Zhang
+- Jin Feng
+- Changyu Li
+- Jie Shao
+date: '2023-04-18'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2304.08754'
+  openalex: W4366457940
+links:
+  paper: https://arxiv.org/abs/2304.08754
+  pdf: https://arxiv.org/pdf/2304.08754
+orgs:
+- cma
+topic: foundation-models
+topics:
+- global-medium-range
+type: model
+method:
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: W-MAE pretrains a masked autoencoder on ERA5 and fine-tunes it for forecasting, lifting FourCastNet's
+  anomaly correlation by about 20 percent.
+abstract: 'Weather forecasting is a long-standing computational challenge with direct societal and economic
+  impacts. This task involves a large amount of continuous data collection and exhibits rich spatiotemporal
+  dependencies over long periods, making it highly suitable for deep learning models. In this paper, we
+  apply pre-training techniques to weather forecasting and propose W-MAE, a Weather model with Masked
+  AutoEncoder pre-training for weather forecasting. W-MAE is pre-trained in a self-supervised manner to
+  reconstruct spatial correlations within meteorological variables. On the temporal scale, we fine-tune
+  the pre-trained W-MAE to predict the future states of meteorological variables, thereby modeling the
+  temporal dependencies present in weather data. We conduct our experiments using the fifth-generation
+  ECMWF Reanalysis (ERA5) data, with samples selected every six hours. Experimental results show that
+  our W-MAE framework offers three key benefits: 1) when predicting the future state of meteorological
+  variables, the utilization of our pre-trained W-MAE can effectively alleviate the problem of cumulative
+  errors in prediction, maintaining stable performance in the short-to-medium term; 2) when predicting
+  diagnostic variables (e.g., total precipitation), our model exhibits significant performance advantages
+  over FourCastNet; 3) Our task-agnostic pre-training schema can be easily integrated with various task-specific
+  models. When our pre-training framework is applied to FourCastNet, it yields an average 20% performance
+  improvement in Anomaly Correlation Coefficient (ACC).'
+significance: 4
+cited_by: 9
+score: 26
+highlight: false
+added: '2026-10-22'
+source: seed

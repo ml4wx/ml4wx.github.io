@@ -1,0 +1,51 @@
+id: doi-10.5194-gmd-2022-50
+title: Neural networks for data assimilation of surface and upper-air data in Rio de Janeiro
+authors:
+- Vinícius Albuquerque de Almeida
+- Haroldo Fraga de Campos Velho
+- Gutemberg Borges França
+- Nelson F. F. Ebecken
+date: '2022-09-09'
+year: 2022
+venue_type: other
+ids:
+  doi: 10.5194/gmd-2022-50
+  openalex: W4295066991
+links:
+  paper: https://doi.org/10.5194/gmd-2022-50
+  pdf: https://gmd.copernicus.org/preprints/gmd-2022-50/gmd-2022-50.pdf
+topic: data-assimilation
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- stations
+- nwp-analysis
+status: research
+summary: Neural networks emulate 3D-Var analysis of surface and upper-air variables in a WRF setup over
+  Rio de Janeiro, cutting assimilation CPU time 25–121 times.
+abstract: 'Abstract. The practical feasibility of neural networks models for data assimilation using local
+  observations data in the WRF model for the Rio de Janeiro metropolitan region in Brazil is evaluated.
+  Surface and multi-level variables retrieved from airport meteorological stations are used: air temperature,
+  relative humidity, and wind (speed and direction). Also, 6-hour forecast from WRF high-resolution simulations
+  are used – domain centered in the Rio de Janeiro city with nested grids of 8 and 2.6 km. Periods of
+  168 h from 2015–2019 are used with 6 h and 12 h assimilation cycles for surface and upper-air data,
+  respectively, applied to 6-hour forecast fields. The observed data (interpolated to grid points close
+  to airport locations and influence computed in its surroundings) and short-range forecasts are used
+  as input for training model and the 3D-Var analysis on 6-hour forecast fields for each grid point is
+  used as target variable. The neural network models are built using two different approaches: WEKA mul-
+  tilayer perceptron model and TensorFlow’s deep learning implementation. The year of 2019 is used as
+  an independent dataset for forecast validation from the trained models. Results employing 6-hour forecast
+  fields with neural network models are able to emulate the 3D-Var results for surface and multi-level
+  variables, with better results for the NN-TensoFlow implementation. The main result refers to CPU time
+  reduction enabled by the neural networks models, reducing the data assimilation CPU-time by 121 times
+  and 25 times for NN-TensorFlow and NN-WEKA, respectively, in comparison to the 3D-Var method under the
+  same hardware configurations.'
+significance: 2
+cited_by: 6
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

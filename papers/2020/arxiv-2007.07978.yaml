@@ -1,0 +1,55 @@
+id: arxiv-2007.07978
+title: 'CloudCast: A Satellite-Based Dataset and Baseline for Forecasting Clouds'
+authors:
+- A. H. Nielsen
+- A. Iosifidis
+- H. Karstoft
+date: '2020-07-15'
+year: 2020
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, vol. 14, pp.
+  3485-3494, 2021
+venue_type: journal
+ids:
+  arxiv: '2007.07978'
+  doi: 10.1109/jstars.2021.3062936
+  openalex: W3043084273
+links:
+  paper: https://arxiv.org/abs/2007.07978
+  pdf: https://arxiv.org/pdf/2007.07978
+topic: benchmarks-data-eval
+topics:
+- nowcasting
+type: benchmark
+method:
+- cnn
+- rnn
+- gan-vae
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Releases CloudCast, a 70,080-frame satellite dataset of 10 cloud types over Europe at 3 km and
+  15-min resolution, with ConvLSTM, GAN and optical-flow video prediction baselines.
+abstract: Forecasting the formation and development of clouds is a central element of modern weather forecasting
+  systems. Incorrect clouds forecasts can lead to major uncertainty in the overall accuracy of weather
+  forecasts due to their intrinsic role in the Earth's climate system. Few studies have tackled this challenging
+  problem from a machine learning point-of-view due to a shortage of high-resolution datasets with many
+  historical observations globally. In this paper, we present a novel satellite-based dataset called ``CloudCast''.
+  It consists of 70,080 images with 10 different cloud types for multiple layers of the atmosphere annotated
+  on a pixel level. The spatial resolution of the dataset is 928 x 1530 pixels (3x3 km per pixel) with
+  15-min intervals between frames for the period 2017-01-01 to 2018-12-31. All frames are centered and
+  projected over Europe. To supplement the dataset, we conduct an evaluation study with current state-of-the-art
+  video prediction methods such as convolutional long short-term memory networks, generative adversarial
+  networks, and optical flow-based extrapolation methods. As the evaluation of video prediction is difficult
+  in practice, we aim for a thorough evaluation in the spatial and temporal domain. Our benchmark models
+  show promising results but with ample room for improvement. This is the first publicly available global-scale
+  dataset with high-resolution cloud types on a high temporal granularity to the authors' best knowledge.
+significance: 5
+cited_by: 22
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

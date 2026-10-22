@@ -1,0 +1,63 @@
+id: arxiv-2112.11317
+title: Deep Learning Based Cloud Cover Parameterization for ICON
+authors:
+- Arthur Grundner
+- Tom Beucler
+- Pierre Gentine
+- Fernando Iglesias-Suarez
+- Marco A. Giorgetta
+- Veronika Eyring
+date: '2021-12-21'
+year: 2021
+venue: Journal of Advances in Modeling Earth Systems (JAMES), 2022
+venue_type: journal
+ids:
+  arxiv: '2112.11317'
+  doi: 10.1029/2021ms002959
+  openalex: W4310896207
+links:
+  paper: https://arxiv.org/abs/2112.11317
+  pdf: https://arxiv.org/pdf/2112.11317
+orgs:
+- columbia-leap
+- mpi-meteorology
+topic: hybrid-parameterization
+topics:
+- xai-uq-physics
+type: model
+method:
+- classical-ml
+timescale:
+- climate
+spatial:
+- global
+- regional
+data:
+- km-scale-sim
+status: research
+summary: Neural network cloud cover parameterizations trained on ICON storm-resolving simulations generalise
+  across regional and global data, with SHAP used to explain their feature use.
+abstract: A promising approach to improve cloud parameterizations within climate models and thus climate
+  projections is to use deep learning in combination with training data from storm-resolving model (SRM)
+  simulations. The ICOsahedral Non-hydrostatic (ICON) modeling framework permits simulations ranging from
+  numerical weather prediction to climate projections, making it an ideal target to develop neural network
+  (NN) based parameterizations for sub-grid scale processes. Within the ICON framework, we train NN based
+  cloud cover parameterizations with coarse-grained data based on realistic regional and global ICON SRM
+  simulations. We set up three different types of NNs that differ in the degree of vertical locality they
+  assume for diagnosing cloud cover from coarse-grained atmospheric state variables. The NNs accurately
+  estimate sub-grid scale cloud cover from coarse-grained data that has similar geographical characteristics
+  as their training data. Additionally, globally trained NNs can reproduce sub-grid scale cloud cover
+  of the regional SRM simulation. Using the game-theory based interpretability library SHapley Additive
+  exPlanations, we identify an overemphasis on specific humidity and cloud ice as the reason why our column-based
+  NN cannot perfectly generalize from the global to the regional coarse-grained SRM data. The interpretability
+  tool also helps visualize similarities and differences in feature importance between regionally and
+  globally trained column-based NNs, and reveals a local relationship between their cloud cover predictions
+  and the thermodynamic environment. Our results show the potential of deep learning to derive accurate
+  yet interpretable cloud cover parameterizations from global SRMs, and suggest that neighborhood-based
+  models may be a good compromise between accuracy and generalizability.
+significance: 4
+cited_by: 68
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

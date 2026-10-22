@@ -1,0 +1,53 @@
+id: arxiv-2303.00652
+title: Finding the right XAI method -- A Guide for the Evaluation and Ranking of Explainable AI Methods
+  in Climate Science
+authors:
+- Philine Bommer
+- Marlene Kretschmer
+- Anna Hedström
+- Dilyara Bareeva
+- Marina M. -C. Höhne
+date: '2023-03-01'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2303.00652'
+links:
+  paper: https://arxiv.org/abs/2303.00652
+  pdf: https://arxiv.org/pdf/2303.00652
+topic: xai-uq-physics
+topics:
+- benchmarks-data-eval
+type: evaluation
+method:
+- cnn
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: Proposes a framework to evaluate XAI methods for climate-science networks on robustness, faithfulness,
+  randomization, complexity and localization, ranking methods on a temperature-map task.
+abstract: Explainable artificial intelligence (XAI) methods shed light on the predictions of machine learning
+  algorithms. Several different approaches exist and have already been applied in climate science. However,
+  usually missing ground truth explanations complicate their evaluation and comparison, subsequently impeding
+  the choice of the XAI method. Therefore, in this work, we introduce XAI evaluation in the climate context
+  and discuss different desired explanation properties, namely robustness, faithfulness, randomization,
+  complexity, and localization. To this end, we chose previous work as a case study where the decade of
+  annual-mean temperature maps is predicted. After training both a multi-layer perceptron (MLP) and a
+  convolutional neural network (CNN), multiple XAI methods are applied and their skill scores in reference
+  to a random uniform explanation are calculated for each property. Independent of the network, we find
+  that XAI methods Integrated Gradients, layer-wise relevance propagation, and input times gradients exhibit
+  considerable robustness, faithfulness, and complexity while sacrificing randomization performance. Sensitivity
+  methods -- gradient, SmoothGrad, NoiseGrad, and FusionGrad, match the robustness skill but sacrifice
+  faithfulness and complexity for randomization skill. We find architecture-dependent performance differences
+  regarding robustness, complexity and localization skills of different XAI methods, highlighting the
+  necessity for research task-specific evaluation. Overall, our work offers an overview of different evaluation
+  properties in the climate science context and shows how to compare and benchmark different explanation
+  methods, assessing their suitability based on strengths and weaknesses, for the specific research problem
+  at hand. By that, we aim to support climate researchers in the selection of a suitable XAI method.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

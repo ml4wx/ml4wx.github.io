@@ -1,0 +1,59 @@
+id: arxiv-1909.04711
+title: 'Machine Learning for Stochastic Parameterization: Generative Adversarial Networks in the Lorenz
+  ''96 Model'
+authors:
+- David John Gagne
+- Hannah M. Christensen
+- Aneesh C. Subramanian
+- Adam H. Monahan
+date: '2019-09-10'
+year: 2019
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  arxiv: '1909.04711'
+  doi: 10.1029/2019ms001896
+  openalex: W3007927169
+links:
+  paper: https://doi.org/10.1029/2019ms001896
+  pdf: https://arxiv.org/pdf/1909.04711
+orgs:
+- ncar
+- university-of-oxford
+topic: hybrid-parameterization
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- gan-vae
+timescale:
+- medium
+- climate
+spatial:
+- global
+data:
+- other
+status: research
+summary: Trains a GAN as a stochastic sub-grid parameterization for the Lorenz '96 model; some configurations
+  beat a bespoke scheme at weather and climate timescales.
+abstract: Stochastic parameterizations account for uncertainty in the representation of unresolved sub-grid
+  processes by sampling from the distribution of possible sub-grid forcings. Some existing stochastic
+  parameterizations utilize data-driven approaches to characterize uncertainty, but these approaches require
+  significant structural assumptions that can limit their scalability. Machine learning models, including
+  neural networks, are able to represent a wide range of distributions and build optimized mappings between
+  a large number of inputs and sub-grid forcings. Recent research on machine learning parameterizations
+  has focused only on deterministic parameterizations. In this study, we develop a stochastic parameterization
+  using the generative adversarial network (GAN) machine learning framework. The GAN stochastic parameterization
+  is trained and evaluated on output from the Lorenz '96 model, which is a common baseline model for evaluating
+  both parameterization and data assimilation techniques. We evaluate different ways of characterizing
+  the input noise for the model and perform model runs with the GAN parameterization at weather and climate
+  timescales. Some of the GAN configurations perform better than a baseline bespoke parameterization at
+  both timescales, and the networks closely reproduce the spatio-temporal correlations and regimes of
+  the Lorenz '96 system. We also find that in general those models which produce skillful forecasts are
+  also associated with the best climate simulations.
+significance: 4
+cited_by: 190
+score: 61
+highlight: false
+added: '2026-10-22'
+source: backfill

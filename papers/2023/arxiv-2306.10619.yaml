@@ -1,0 +1,53 @@
+id: arxiv-2306.10619
+title: Towards Stability of Autoregressive Neural Operators
+authors:
+- Michael McCabe
+- Peter Harrington
+- Shashank Subramanian
+- Jed Brown
+date: '2023-06-18'
+year: 2023
+venue: Transactions on Machine Learning Research. November 2023
+venue_type: journal
+ids:
+  arxiv: '2306.10619'
+  openalex: W4381564169
+links:
+  paper: https://arxiv.org/abs/2306.10619
+  pdf: https://arxiv.org/pdf/2306.10619
+  code: https://github.com/mikemccabe210/stabilizing_neural_operators
+topic: xai-uq-physics
+topics:
+- global-medium-range
+type: model
+method:
+- neural-operator
+timescale:
+- medium
+spatial:
+- global
+data:
+- other
+status: research
+summary: Architectural fixes to neural operators curb autoregressive error growth, giving lower long-horizon
+  errors on Navier-Stokes, shallow water and a global weather forecasting system.
+abstract: Neural operators have proven to be a promising approach for modeling spatiotemporal systems
+  in the physical sciences. However, training these models for large systems can be quite challenging
+  as they incur significant computational and memory expense -- these systems are often forced to rely
+  on autoregressive time-stepping of the neural network to predict future temporal states. While this
+  is effective in managing costs, it can lead to uncontrolled error growth over time and eventual instability.
+  We analyze the sources of this autoregressive error growth using prototypical neural operator models
+  for physical systems and explore ways to mitigate it. We introduce architectural and application-specific
+  improvements that allow for careful control of instability-inducing operations within these models without
+  inflating the compute/memory expense. We present results on several scientific systems that include
+  Navier-Stokes fluid flow, rotating shallow water, and a high-resolution global weather forecasting system.
+  We demonstrate that applying our design principles to neural operators leads to significantly lower
+  errors for long-term forecasts as well as longer time horizons without qualitative signs of divergence
+  compared to the original models for these systems. We open-source our \href{https://github.com/mikemccabe210/stabilizing_neural_operators}{code}
+  for reproducibility.
+significance: 4
+cited_by: 2
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

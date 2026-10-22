@@ -1,0 +1,57 @@
+id: doi-10.3390-rs14071704
+title: Integrating Reanalysis and Satellite Cloud Information to Estimate Surface Downward Long-Wave Radiation
+authors:
+- Francis M. Lopes
+- Emanuel Dutra
+- Isabel F. Trigo
+date: '2022-04-01'
+year: 2022
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs14071704
+  openalex: W4226288100
+links:
+  paper: https://doi.org/10.3390/rs14071704
+  pdf: https://www.mdpi.com/2072-4292/14/7/1704/pdf?version=1648802200
+topic: observations-remote-sensing
+topics:
+- applications-impacts
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- era5
+- satellite
+- stations
+status: research
+summary: MARS regression fusing ERA5 and Meteosat cloud data estimates surface downward longwave radiation
+  with 18.8 W/m² RMSE, beating the LSA-SAF operational formula.
+abstract: The estimation of downward long-wave radiation (DLR) at the surface is very important for the
+  understanding of the Earth’s radiative budget with implications in surface–atmosphere exchanges, climate
+  variability, and global warming. Theoretical radiative transfer and observationally based studies identify
+  the crucial role of clouds in modulating the temporal and spatial variability of DLR. In this study,
+  a new machine learning algorithm that uses multivariate adaptive regression splines (MARS) and the combination
+  of near-surface meteorological data with satellite cloud information is proposed. The new algorithm
+  is compared with the current operational formulation used by the European Organization for the Exploitation
+  of Meteorological Satellites (EUMETSAT) Satellite Application Facility on Land Surface Analysis (LSA-SAF).
+  Both algorithms use near-surface temperature and dewpoint temperature along with total column water
+  vapor from the latest European Centre for Medium-range Weather Forecasts (ECMWF) reanalysis ERA5 and
+  satellite cloud information from the Meteosat Second Generation. The algorithms are trained and validated
+  using both ECMWF-ERA5 and DLR acquired from 23 ground stations as part of the Baseline Surface Radiation
+  Network (BSRN) and the Atmospheric Radiation Measurement (ARM) user facility. Results show that the
+  MARS algorithm generally improves DLR estimation in comparison with other model estimates, particularly
+  when trained with observations. When considering all the validation data, root mean square errors (RMSEs)
+  of 18.76, 23.55, and 22.08 W·m−2 are obtained for MARS, operational LSA-SAF, and ERA5, respectively.
+  The added value of using the satellite cloud information is accessed by comparing with estimates driven
+  by ERA5 total cloud cover, showing an increase of 17% of the RMSE. The consistency of MARS estimate
+  is also tested against an independent dataset of 52 ground stations (from FLUXNET2015), further supporting
+  the good performance of the proposed model.
+significance: 3
+cited_by: 19
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

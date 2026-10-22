@@ -1,0 +1,48 @@
+id: arxiv-2305.08874
+title: Online machine-learning forecast uncertainty estimation for sequential data assimilation
+authors:
+- Maximiliano A. Sacco
+- Manuel Pulido
+- Juan J. Ruiz
+- Pierre Tandeo
+date: '2023-05-12'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2305.08874'
+  openalex: W4377029507
+links:
+  paper: https://arxiv.org/abs/2305.08874
+  pdf: https://arxiv.org/pdf/2305.08874
+topic: data-assimilation
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- cnn
+spatial:
+- global
+data:
+- other
+status: research
+summary: A CNN estimates state-dependent forecast error covariance from one model run for hybrid data
+  assimilation, matching ensemble Kalman filter performance on Lorenz96 with small ensembles.
+abstract: Quantifying forecast uncertainty is a key aspect of state-of-the-art numerical weather prediction
+  and data assimilation systems. Ensemble-based data assimilation systems incorporate state-dependent
+  uncertainty quantification based on multiple model integrations. However, this approach is demanding
+  in terms of computations and development. In this work a machine learning method is presented based
+  on convolutional neural networks that estimates the state-dependent forecast uncertainty represented
+  by the forecast error covariance matrix using a single dynamical model integration. This is achieved
+  by the use of a loss function that takes into account the fact that the forecast errors are heterodastic.
+  The performance of this approach is examined within a hybrid data assimilation method that combines
+  a Kalman-like analysis update and the machine learning based estimation of a state-dependent forecast
+  error covariance matrix. Observing system simulation experiments are conducted using the Lorenz'96 model
+  as a proof-of-concept. The promising results show that the machine learning method is able to predict
+  precise values of the forecast covariance matrix in relatively high-dimensional states. Moreover, the
+  hybrid data assimilation method shows similar performance to the ensemble Kalman filter outperforming
+  it when the ensembles are relatively small.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,58 @@
+id: doi-10.3390-atmos11030267
+title: 'Precipitation Nowcasting with Orographic Enhanced Stacked Generalization: Improving Deep Learning
+  Predictions on Extreme Events'
+authors:
+- Gabriele Franch
+- Daniele Nerini
+- Marta Pendesini
+- Luca Coviello
+- Giuseppe Jurman
+- Cesare Furlanello
+date: '2020-03-07'
+year: 2020
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos11030267
+  openalex: W3010027900
+links:
+  paper: https://doi.org/10.3390/atmos11030267
+  pdf: https://www.mdpi.com/2073-4433/11/3/267/pdf?version=1585046885
+orgs:
+- meteoswiss
+topic: nowcasting
+topics:
+- extremes-hazards
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Stacking TrajGRU ensemble members with orographic features via a CNN roughly doubles skill on
+  extreme rain rates, matching Lagrangian persistence on TAASRAD19 radar data.
+abstract: 'One of the most crucial applications of radar-based precipitation nowcasting systems is the
+  short-term forecast of extreme rainfall events such as flash floods and severe thunderstorms. While
+  deep learning nowcasting models have recently shown to provide better overall skill than traditional
+  echo extrapolation models, they suffer from conditional bias, sometimes reporting lower skill on extreme
+  rain rates compared to Lagrangian persistence, due to excessive prediction smoothing. This work presents
+  a novel method to improve deep learning prediction skills in particular for extreme rainfall regimes.
+  The solution is based on model stacking, where a convolutional neural network is trained to combine
+  an ensemble of deep learning models with orographic features, doubling the prediction skills with respect
+  to the ensemble members and their average on extreme rain rates, and outperforming them on all rain
+  regimes. The proposed architecture was applied on the recently released TAASRAD19 radar dataset: the
+  initial ensemble was built by training four models with the same TrajGRU architecture over different
+  rainfall thresholds on the first six years of the dataset, while the following three years of data were
+  used for the stacked model. The stacked model can reach the same skill of Lagrangian persistence on
+  extreme rain rates while retaining superior performance on lower rain regimes.'
+significance: 4
+cited_by: 97
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

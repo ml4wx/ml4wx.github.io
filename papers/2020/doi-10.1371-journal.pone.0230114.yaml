@@ -1,0 +1,55 @@
+id: doi-10.1371-journal.pone.0230114
+title: 'Convcast: An embedded convolutional LSTM based architecture for precipitation nowcasting using
+  satellite data'
+authors:
+- Ashutosh Kumar
+- Tanvir Islam
+- Yoshihide Sekimoto
+- Chris A. Mattmann
+- Brian D. Wilson
+date: '2020-03-11'
+year: 2020
+venue: PLoS ONE
+venue_type: journal
+ids:
+  doi: 10.1371/journal.pone.0230114
+  openalex: W3011438087
+links:
+  paper: https://doi.org/10.1371/journal.pone.0230114
+  pdf: https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0230114&type=printable
+orgs:
+- nasa
+- caltech
+topic: nowcasting
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Convcast, a convolutional LSTM trained on NASA IMERG satellite precipitation, nowcasts up to
+  150 minutes with 0.805 mm/h RMSE at 30 minutes, outperforming optical flow.
+abstract: Nowcasting of precipitation is a difficult spatiotemporal task because of the non-uniform characterization
+  of meteorological structures over time. Recently, convolutional LSTM has been shown to be successful
+  in solving various complex spatiotemporal based problems. In this research, we propose a novel precipitation
+  nowcasting architecture 'Convcast' to predict various short-term precipitation events using satellite
+  data. We train Convcast with ten consecutive NASA's IMERG precipitation data sets each at intervals
+  of 30 minutes. We use the trained neural network model to predict the eleventh precipitation data of
+  the corresponding ten precipitation sequence. Subsequently, the predicted precipitation data are used
+  iteratively for precipitation nowcasting of up to 150 minutes lead time. Convcast achieves an overall
+  accuracy of 0.93 with an RMSE of 0.805 mm/h for 30 minutes lead time, and an overall accuracy of 0.87
+  with an RMSE of 1.389 mm/h for 150 minutes lead time. Experiments on the test dataset demonstrate that
+  Convcast consistently outperforms other state-of-the-art optical flow based nowcasting algorithms. Results
+  from this research can be used for nowcasting of weather events from satellite data as well as for future
+  on-board processing of precipitation data.
+significance: 3
+cited_by: 114
+score: 57
+highlight: false
+added: '2026-10-22'
+source: backfill

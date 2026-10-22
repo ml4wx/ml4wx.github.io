@@ -1,0 +1,53 @@
+id: arxiv-2406.14798
+title: Probabilistic Emulation of a Global Climate Model with Spherical DYffusion
+authors:
+- Salva Rühling Cachay
+- Brian Henn
+- Oliver Watt-Meyer
+- Christopher S. Bretherton
+- Rose Yu
+date: '2024-01-01'
+year: 2024
+venue: Advances in Neural Information Processing Systems 37
+venue_type: preprint
+ids:
+  arxiv: '2406.14798'
+  doi: 10.52202/079017-4052
+  openalex: W4415800707
+links:
+  paper: https://arxiv.org/abs/2406.14798
+  pdf: https://arxiv.org/pdf/2406.14798
+  code: https://github.com/Rose-STL-Lab/spherical-dyffusion
+topic: climate-emulation
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+- neural-operator
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: DYffusion combined with a spherical Fourier neural operator emulates a coarse FV3GFS climate
+  model, producing stable 100-year probabilistic ensemble simulations at low cost.
+abstract: Data-driven deep learning models are transforming global weather forecasting. It is an open
+  question if this success can extend to climate modeling, where the complexity of the data and long inference
+  rollouts pose significant challenges. Here, we present the first conditional generative model that produces
+  accurate and physically consistent global climate ensemble simulations by emulating a coarse version
+  of the United States' primary operational global forecast model, FV3GFS. Our model integrates the dynamics-informed
+  diffusion framework (DYffusion) with the Spherical Fourier Neural Operator (SFNO) architecture, enabling
+  stable 100-year simulations at 6-hourly timesteps while maintaining low computational overhead compared
+  to single-step deterministic baselines. The model achieves near gold-standard performance for climate
+  model emulation, outperforming existing approaches and demonstrating promising ensemble skill. This
+  work represents a significant advance towards efficient, data-driven climate simulations that can enhance
+  our understanding of the climate system and inform adaptation strategies.
+significance: 6
+cited_by: 3
+score: 34
+highlight: false
+added: '2026-10-22'
+source: seed

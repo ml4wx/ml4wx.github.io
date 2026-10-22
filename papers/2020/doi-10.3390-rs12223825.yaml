@@ -1,0 +1,60 @@
+id: doi-10.3390-rs12223825
+title: 'Applying Deep Learning to Clear-Sky Radiance Simulation for VIIRS with Community Radiative Transfer
+  Model—Part 2: Model Architecture and Assessment'
+authors:
+- Xingming Liang
+- Quanhua Liu
+date: '2020-11-21'
+year: 2020
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs12223825
+  openalex: W3109071147
+links:
+  paper: https://doi.org/10.3390/rs12223825
+  pdf: https://www.mdpi.com/2072-4292/12/22/3825/pdf?version=1611898920
+orgs:
+- noaa
+topic: observations-remote-sensing
+type: model
+method:
+- other
+spatial:
+- global
+data:
+- satellite
+- nwp-analysis
+- other
+status: research
+summary: A fully connected deep network emulates CRTM clear-sky VIIRS thermal radiances over global oceans,
+  with mean biases near 0.01 K and standard deviations under 0.1 K.
+abstract: A fully connected “deep” neural network algorithm with the Community Radiative Transfer Model
+  (FCDN_CRTM) is proposed to explore the efficiency and accuracy of reproducing the Visible Infrared Imaging
+  Radiometer Suite (VIIRS) radiances in five thermal emission M (TEB/M) bands. The model was trained and
+  tested in the nighttime global ocean clear-sky domain, in which the VIIRS observation minus CRTM (O-M)
+  biases have been well validated in recent years. The atmosphere profile from the European Centre for
+  Medium-Range Weather Forecasts (ECMWF) and sea surface temperature (SST) from the Canadian Meteorology
+  Centre (CMC) were used as FCDN_CRTM input, and the CRTM-simulated brightness temperatures (BTs) were
+  defined as labels. Six dispersion days’ data from 2019 to 2020 were selected to train the FCDN_CRTM,
+  and the clear-sky pixels were identified by an enhanced FCDN clear-sky mask (FCDN_CSM) model, which
+  was demonstrated in Part 1. The trained model was then employed to predict CRTM BTs, which were further
+  validated with the CRTM BTs and the VIIRS sensor data record (SDR) for both efficiency and accuracy.
+  With iterative refinement of the model design and careful treatment of the input data, the agreement
+  between the FCDN_CRTM and the CRTM was generally good, including the satellite zenith angle and column
+  water vapor dependencies. The mean biases of the FCDN_CRTM minus CRTM (F-C) were typically ~0.01 K for
+  all five bands, and the high accuracy persisted during the whole analysis period. Moreover, the standard
+  deviations (STDs) were generally less than 0.1 K and were consistent for approximately half a year,
+  before they significantly degraded. The validation with VIIRS SDR data revealed that both the predicted
+  mean biases and the STD of the VIIRS observation minus FCDN_CRTM (V-F) were comparable with the VIIRS
+  minus direct CRTM simulation (V-C). Meanwhile, both V-F and V-C exhibited consistent global geophysical
+  and statistical distribution, as well as stable long-term performance. Furthermore, the FCDN_CRTM processing
+  time was more than 40 times faster than CRTM simulation. The highly efficient, accurate, and stable
+  performances indicate that the FCDN_CRTM is a potential solution for global and real-time monitoring
+  of sensor observation minus model simulation, particularly for high-resolution sensors.
+significance: 3
+cited_by: 20
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

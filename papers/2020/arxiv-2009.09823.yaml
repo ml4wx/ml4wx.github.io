@@ -1,0 +1,50 @@
+id: arxiv-2009.09823
+title: Latent State Inference in a Spatiotemporal Generative Model
+authors:
+- Matthias Karlbauer
+- Tobias Menge
+- Sebastian Otte
+- Hendrik P. A. Lensch
+- Thomas Scholten
+- Volker Wulfmeyer
+- Martin V. Butz
+date: '2020-09-21'
+year: 2020
+venue_type: preprint
+ids:
+  arxiv: '2009.09823'
+links:
+  paper: https://arxiv.org/abs/2009.09823
+  pdf: https://arxiv.org/pdf/2009.09823
+topic: climate-analysis-attribution
+topics:
+- xai-uq-physics
+type: model
+method:
+- rnn
+- gnn
+spatial:
+- global
+data:
+- era5
+- other
+status: research
+summary: DISTANA with active tuning infers hidden causal factors, recovering Earth's land-sea mask from
+  temperature dynamics alone while improving temperature prediction.
+abstract: Knowledge about the hidden factors that determine particular system dynamics is crucial for
+  both explaining them and pursuing goal-directed interventions. Inferring these factors from time series
+  data without supervision remains an open challenge. Here, we focus on spatiotemporal processes, including
+  wave propagation and weather dynamics, for which we assume that universal causes (e.g. physics) apply
+  throughout space and time. A recently introduced DIstributed SpatioTemporal graph Artificial Neural
+  network Architecture (DISTANA) is used and enhanced to learn such processes, requiring fewer parameters
+  and achieving significantly more accurate predictions compared to temporal convolutional neural networks
+  and other related approaches. We show that DISTANA, when combined with a retrospective latent state
+  inference principle called active tuning, can reliably derive location-respective hidden causal factors.
+  In a current weather prediction benchmark, DISTANA infers our planet's land-sea mask solely by observing
+  temperature dynamics and, meanwhile, uses the self inferred information to improve its own future temperature
+  predictions.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

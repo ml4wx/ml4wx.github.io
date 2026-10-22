@@ -1,0 +1,49 @@
+id: arxiv-2401.05932
+title: 'DiffDA: a Diffusion Model for Weather-scale Data Assimilation'
+authors:
+- Langwen Huang
+- Lukas Gianinazzi
+- Yuejiang Yu
+- Peter D. Dueben
+- Torsten Hoefler
+date: '2024-01-11'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2401.05932'
+  openalex: W4390833509
+links:
+  paper: https://arxiv.org/abs/2401.05932
+  pdf: https://arxiv.org/pdf/2401.05932
+topic: data-assimilation
+topics:
+- global-medium-range
+type: model
+method:
+- diffusion
+- gnn
+spatial:
+- global
+data:
+- era5
+status: research
+summary: DiffDA adapts the pretrained GraphCast network as a diffusion backbone to assimilate sparse observations
+  at 0.25 degree, losing at most 24 hours of lead time versus state-of-the-art analyses.
+abstract: The generation of initial conditions via accurate data assimilation is crucial for weather forecasting
+  and climate modeling. We propose DiffDA as a denoising diffusion model capable of assimilating atmospheric
+  variables using predicted states and sparse observations. Acknowledging the similarity between a weather
+  forecast model and a denoising diffusion model dedicated to weather applications, we adapt the pretrained
+  GraphCast neural network as the backbone of the diffusion model. Through experiments based on simulated
+  observations from the ERA5 reanalysis dataset, our method can produce assimilated global atmospheric
+  data consistent with observations at 0.25 deg (~30km) resolution globally. This marks the highest resolution
+  achieved by ML data assimilation models. The experiments also show that the initial conditions assimilated
+  from sparse observations (less than 0.96% of gridded data) and 48-hour forecast can be used for forecast
+  models with a loss of lead time of at most 24 hours compared to initial conditions from state-of-the-art
+  data assimilation in ERA5. This enables the application of the method to real-world applications, such
+  as creating reanalysis datasets with autoregressive data assimilation.
+significance: 5
+cited_by: 9
+score: 20
+highlight: false
+added: '2026-10-22'
+source: seed

@@ -1,0 +1,47 @@
+id: arxiv-1908.10964
+title: Distributed Deep Learning for Precipitation Nowcasting
+authors:
+- Siddharth Samsi
+- Christopher J. Mattioli
+- Mark S. Veillette
+date: '2019-08-28'
+year: 2019
+venue_type: preprint
+ids:
+  arxiv: '1908.10964'
+  doi: 10.1109/hpec.2019.8916416
+links:
+  paper: https://arxiv.org/abs/1908.10964
+  pdf: https://arxiv.org/pdf/1908.10964
+topic: nowcasting
+topics:
+- infra-software
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Data-parallel CNN training across GPUs cuts precipitation nowcasting training time from 59 hours
+  to about one hour.
+abstract: Effective training of Deep Neural Networks requires massive amounts of data and compute. As
+  a result, longer times are needed to train complex models requiring large datasets, which can severely
+  limit research on model development and the exploitation of all available data. In this paper, this
+  problem is investigated in the context of precipitation nowcasting, a term used to describe highly detailed
+  short-term forecasts of precipitation and other hazardous weather. Convolutional Neural Networks (CNNs)
+  are a powerful class of models that are well-suited for this task; however, the high resolution input
+  weather imagery combined with model complexity required to process this data makes training CNNs to
+  solve this task time consuming. To address this issue, a data-parallel model is implemented where a
+  CNN is replicated across multiple compute nodes and the training batches are distributed across multiple
+  nodes. By leveraging multiple GPUs, we show that the training time for a given nowcasting model architecture
+  can be reduced from 59 hours to just over 1 hour. This will allow for faster iterations for improving
+  CNN architectures and will facilitate future advancement in the area of nowcasting.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

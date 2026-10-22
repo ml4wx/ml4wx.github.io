@@ -1,0 +1,52 @@
+id: doi-10.3390-rs11111378
+title: Geographically Weighted Machine Learning and Downscaling for High-Resolution Spatiotemporal Estimations
+  of Wind Speed
+authors:
+- Lianfa Li
+date: '2019-06-10'
+year: 2019
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs11111378
+  openalex: W2949545510
+links:
+  paper: https://doi.org/10.3390/rs11111378
+topic: downscaling
+topics:
+- post-processing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: Geographically weighted ensemble of ML learners plus residual-network downscaling of reanalysis
+  yields high-resolution wind speed over China, improving R2 by 12–16%.
+abstract: High-resolution spatiotemporal wind speed mapping is useful for atmospheric environmental monitoring,
+  air quality evaluation and wind power siting. Although modern reanalysis techniques can obtain reliable
+  interpolated surfaces of meteorology at a high temporal resolution, their spatial resolutions are coarse.
+  Local variability of wind speed is difficult to capture due to its volatility. Here, a two-stage approach
+  was developed for robust spatiotemporal estimations of wind speed at a high resolution. The proposed
+  approach consists of geographically weighted ensemble machine learning (Stage 1) and downscaling based
+  on meteorological reanalysis data (Stage 2). The geographically weighted machine learning method is
+  based on three base learners, which are an autoencoder-based deep residual network, XGBoost and random
+  forest, and it incorporates spatial autocorrelation and heterogeneity to boost the ensemble predictions.
+  With reanalysis data, downscaling was introduced in Stage 2 to reduce bias and spatial abrupt (non-natural)
+  variation in the predictions inferred from Stage 1. The autoencoder-based residual network was used
+  in Stage 2 to adjust the difference between the averages of the fine-resolution predicted values and
+  the coarse-resolution reanalysis data to ensure consistency. Using mainland China as a case study, the
+  geographically weighted regression (GWR) ensemble predictions were shown to perform better than individual
+  learners’ predictions (with an approximately 12–16% improvement in R2 and a decrease of 0.14–0.19 m/s
+  in root mean square error). Downscaling further improved the predictions by reducing inconsistency and
+  obtaining better spatial variation (smoothing). The proposed approach can also be applied for the high-resolution
+  spatiotemporal estimation of other meteorological parameters or surface variables involving remote sensing
+  images (i.e. reliable coarsely resolved data), ground monitoring data and other relevant factors.
+significance: 3
+cited_by: 70
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

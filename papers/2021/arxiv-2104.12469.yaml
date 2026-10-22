@@ -1,0 +1,44 @@
+id: arxiv-2104.12469
+title: Generative modeling of spatio-temporal weather patterns with extreme event conditioning
+authors:
+- Konstantin Klemmer
+- Sudipan Saha
+- Matthias Kahl
+- Tianlin Xu
+- Xiao Xiang Zhu
+date: '2021-04-26'
+year: 2021
+venue_type: preprint
+ids:
+  arxiv: '2104.12469'
+links:
+  paper: https://arxiv.org/abs/2104.12469
+  pdf: https://arxiv.org/pdf/2104.12469
+topic: extremes-hazards
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- gan-vae
+- cnn
+data:
+- era5
+status: research
+summary: GAN generates spatio-temporal weather fields conditioned on extreme-event segmentation masks,
+  tested on surface radiation and zonal wind data.
+abstract: Deep generative models are increasingly used to gain insights in the geospatial data domain,
+  e.g., for climate data. However, most existing approaches work with temporal snapshots or assume 1D
+  time-series; few are able to capture spatio-temporal processes simultaneously. Beyond this, Earth-systems
+  data often exhibit highly irregular and complex patterns, for example caused by extreme weather events.
+  Because of climate change, these phenomena are only increasing in frequency. Here, we proposed a novel
+  GAN-based approach for generating spatio-temporal weather patterns conditioned on detected extreme events.
+  Our approach augments GAN generator and discriminator with an encoded extreme weather event segmentation
+  mask. These segmentation masks can be created from raw input using existing event detection frameworks.
+  As such, our approach is highly modular and can be combined with custom GAN architectures. We highlight
+  the applicability of our proposed approach in experiments with real-world surface radiation and zonal
+  wind data.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

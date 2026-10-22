@@ -1,0 +1,55 @@
+id: doi-10.3390-rs14235948
+title: Two-Stage UA-GAN for Precipitation Nowcasting
+authors:
+- Liujia Xu
+- Dan Niu
+- Tianbao Zhang
+- Pengju Chen
+- Xunlai Chen
+- Yinghao Li
+date: '2022-11-24'
+year: 2022
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs14235948
+  openalex: W4310038336
+links:
+  paper: https://doi.org/10.3390/rs14235948
+  pdf: https://www.mdpi.com/2072-4292/14/23/5948/pdf?version=1669299284
+topic: nowcasting
+type: model
+method:
+- gan-vae
+- rnn
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Two-stage TrajGRU and attention-enhanced U-Net GAN refines radar echo extrapolations, outperforming
+  ROVER and RNN baselines on detail and precipitation accuracy metrics.
+abstract: Short-term rainfall prediction by radar echo map extrapolation has been a very hot area of research
+  in recent years, which is also an area worth studying owing to its importance for precipitation disaster
+  prevention. Existing methods have some shortcomings. In terms of image indicators, the predicted images
+  are not clear enough and lack small-scale details, while in terms of precipitation accuracy indicators,
+  the prediction is not accurate enough. In this paper, we proposed a two-stage model (two-stage UA-GAN)
+  to achieve more accurate prediction echo images with more details. For the first stage, we used the
+  Trajectory Gated Recurrent Unit (TrajGRU) model to carry out a pre-prediction, which proved to have
+  a good ability to capture spatiotemporal movement of rain field. In the second stage, we proposed a
+  spatiotemporal attention enhanced Generative Adversarial Networks (GAN) model with a U-Net structure
+  and a new deep residual attention module in order to carry out the refinement and improvement of the
+  first-stage prediction. Experimental results showed that our model outperforms the optical-flow based
+  method Real-Time Optical Flow by Variational Methods for Echoes of Radar (ROVER), and some well-known
+  Recurrent Neural Network (RNN)-based models (TrajGRU, PredRNN++, ConvGRU, Convolutional Long Short-Term
+  Memory (ConvLSTM)) in terms of both image detail indexes and precipitation accuracy indexes, and is
+  visible to the naked eye to have better accuracy and more details.
+significance: 3
+cited_by: 26
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,47 @@
+id: arxiv-2208.01252
+title: A Novel Transformer Network with Shifted Window Cross-Attention for Spatiotemporal Weather Forecasting
+authors:
+- Alabi Bojesomo
+- Hasan Al Marzouqi
+- Panos Liatsis
+date: '2022-08-02'
+year: 2022
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  arxiv: '2208.01252'
+  doi: 10.1109/jstars.2023.3323729
+  openalex: W4387623972
+links:
+  paper: https://doi.org/10.1109/jstars.2023.3323729
+  pdf: https://arxiv.org/pdf/2208.01252
+topic: nowcasting
+type: model
+method:
+- transformer
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Video Swin-Transformer with cross-attention forecasts eight hours of hourly satellite weather
+  frames on Weather4Cast 2021, reaching MSE 0.442 in transfer.
+abstract: Earth Observatory is a growing research area that can capitalize on the powers of AI for short
+  time forecasting, a Now-casting scenario. In this work, we tackle the challenge of weather forecasting
+  using a video transformer network. Vision transformer architectures have been explored in various applications,
+  with major constraints being the computational complexity of Attention and the data hungry training.
+  To address these issues, we propose the use of Video Swin-Transformer, coupled with a dedicated augmentation
+  scheme. Moreover, we employ gradual spatial reduction on the encoder side and cross-attention on the
+  decoder. The proposed approach is tested on the Weather4Cast2021 weather forecasting challenge data,
+  which requires the prediction of 8 hours ahead future frames (4 per hour) from an hourly weather product
+  sequence. The dataset was normalized to 0-1 to facilitate using the evaluation metrics across different
+  datasets. The model results in an MSE score of 0.4750 when provided with training data, and 0.4420 during
+  transfer learning without using training data, respectively.
+significance: 3
+cited_by: 29
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,43 @@
+id: arxiv-2212.04005
+title: RainUNet for Super-Resolution Rain Movie Prediction under Spatio-temporal Shifts
+authors:
+- Jinyoung Park
+- Minseok Son
+- Seungju Cho
+- Inyoung Lee
+- Changick Kim
+date: '2022-12-07'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2212.04005'
+links:
+  paper: https://arxiv.org/abs/2212.04005
+  pdf: https://arxiv.org/pdf/2212.04005
+  code: https://github.com/jinyxp/Weather4cast-2022
+topic: nowcasting
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+- radar
+status: research
+summary: RainUNet with decoupled large-kernel 3D convolutions forecasts high-resolution radar rainfall
+  movies from low-resolution satellite data in the Weather4cast 2022 challenge.
+abstract: This paper presents a solution to the Weather4cast 2022 Challenge Stage 2. The goal of the challenge
+  is to forecast future high-resolution rainfall events obtained from ground radar using low-resolution
+  multiband satellite images. We suggest a solution that performs data preprocessing appropriate to the
+  challenge and then predicts rainfall movies using a novel RainUNet. RainUNet is a hierarchical U-shaped
+  network with temporal-wise separable block (TS block) using a decoupled large kernel 3D convolution
+  to improve the prediction performance. Various evaluation metrics show that our solution is effective
+  compared to the baseline method. The source codes are available at https://github.com/jinyxp/Weather4cast-2022
+significance: 2
+score: 18
+highlight: false
+added: '2026-10-22'
+source: backfill

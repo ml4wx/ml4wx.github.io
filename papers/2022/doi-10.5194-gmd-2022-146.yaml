@@ -1,0 +1,57 @@
+id: doi-10.5194-gmd-2022-146
+title: Data-driven Global Subseasonal Forecast Model (GSFM v1.0) for intraseasonal oscillation components
+authors:
+- Chuhan Lu
+- Dingan Huang
+- Yichen Shen
+- Fei Xin
+date: '2022-07-11'
+year: 2022
+venue_type: other
+ids:
+  doi: 10.5194/gmd-2022-146
+  openalex: W4285043036
+links:
+  paper: https://doi.org/10.5194/gmd-2022-146
+orgs:
+- nuist
+topic: s2s-seasonal
+topics:
+- global-medium-range
+type: model
+method:
+- cnn
+timescale:
+- s2s
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: GSFM uses SE-ResNet to predict intraseasonal Z500 and T850 components, substantially outperforming
+  CFSv2 at 10–30 day leads.
+abstract: Abstract. As a challenge in the construction of a “seamless forecast” system, improving the
+  prediction skills of subseasonal forecasts is a key issue for meteorologists. In view of the evolution
+  characteristics of numerical models and recent deep learning models for subseasonal forecasts, as forecast
+  times increase, forecast results tend to become intraseasonal low-frequency components, which are essential
+  to the change in general circulation on the subseasonal timescale as well as persistent extreme weather.
+  In this paper, the Global Subseasonal Forecast Model (GSFM v1.0) first extracted the intraseasonal oscillation
+  (ISO) components of atmospheric signals and used an improved deep learning model (SE-ResNet) to train
+  and predict the ISO components of geopotential height at 500 hPa (Z500) and temperature at 850 hPa (T850).
+  The results show that the 10–30 day prediction performance of the model used in this paper is better
+  than that of the model trained directly with original data. Compared with other models/methods, the
+  SE-ResNet model has a good ability to depict the subseasonal evolution of the ISO components of Z500
+  and T850. In particular, although the CFSv2 results have a better prediction performance through 10
+  days, the SE-ResNet model is substantially superior to CFSv2 through 10–30 day, especially in the middle
+  and high latitudes. The SE-ResNet model also has a better effect in predicting 3–8 planetary waves,
+  which leads to the difference in model prediction performance in extratropical areas. A case study shows
+  that the SE-ResNet model depicted the phase change and propagation characteristics of planetary waves
+  well. Thus, the application of data- driven subseasonal forecasts of atmospheric ISO components may
+  shed light on improving the skill of seasonal forecasts.
+significance: 4
+cited_by: 3
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

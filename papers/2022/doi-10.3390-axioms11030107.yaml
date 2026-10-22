@@ -1,0 +1,56 @@
+id: doi-10.3390-axioms11030107
+title: 'RainPredRNN: A New Approach for Precipitation Nowcasting with Weather Radar Echo Images Based
+  on Deep Learning'
+authors:
+- Do Ngoc Tuyen
+- Trần Mạnh Tuấn
+- Xuan-Hien Le
+- Nguyễn Thanh Tùng
+- Tran Kim Chau
+- Hai Van Pham
+- Vassilis C. Gerogiannis
+- Lê Hoàng Sơn
+date: '2022-02-28'
+year: 2022
+venue: Axioms
+venue_type: journal
+ids:
+  doi: 10.3390/axioms11030107
+  openalex: W4214628975
+links:
+  paper: https://doi.org/10.3390/axioms11030107
+  pdf: https://www.mdpi.com/2075-1680/11/3/107/pdf?version=1646209228
+topic: nowcasting
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- radar
+status: research
+summary: Combines a UNet with PredRNN_v2 to predict radar reflectivity fields in Vietnam, cutting training
+  time to 30% while reaching SSIM 0.95 and CSI 0.94.
+abstract: Precipitation nowcasting is one of the main tasks of weather forecasting that aims to predict
+  rainfall events accurately, even in low-rainfall regions. It has been observed that few studies have
+  been devoted to predicting future radar echo images in a reasonable time using the deep learning approach.
+  In this paper, we propose a novel approach, RainPredRNN, which is the combination of the UNet segmentation
+  model and the PredRNN_v2 deep learning model for precipitation nowcasting with weather radar echo images.
+  By leveraging the abilities of the contracting-expansive path of the UNet model, the number of calculated
+  operations of the RainPredRNN model is significantly reduced. This result consequently offers the benefit
+  of reducing the processing time of the overall model while maintaining reasonable errors in the predicted
+  images. In order to validate the proposed model, we performed experiments on real reflectivity fields
+  collected from the Phadin weather radar station, located at Dien Bien province in Vietnam. Some credible
+  quality metrics, such as the mean absolute error (MAE), the structural similarity index measure (SSIM),
+  and the critical success index (CSI), were used for analyzing the performance of the model. It has been
+  certified that the proposed model has produced improved performance, about 0.43, 0.95, and 0.94 of MAE,
+  SSIM, and CSI, respectively, with only 30% of training time compared to the other methods.
+significance: 3
+cited_by: 40
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

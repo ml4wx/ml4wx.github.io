@@ -1,0 +1,57 @@
+id: arxiv-2302.10480
+title: Climate model-driven seasonal forecasting approach with deep learning
+authors:
+- Alper Ünal
+- Busra Asan
+- İsmail Sezen
+- Bugra Yesilkaynak
+- Yusuf Alizade Govarchin Ghale
+- Mehmet Ilıcak A
+- Gözde Ünal
+date: '2023-01-01'
+year: 2023
+venue: Environmental Data Science
+venue_type: journal
+ids:
+  arxiv: '2302.10480'
+  doi: 10.1017/eds.2023.24
+  openalex: W4385278976
+links:
+  paper: https://doi.org/10.1017/eds.2023.24
+  pdf: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/3046D1C9903ABF0AB49DCEA473DB5E32/S2634460223000249a.pdf/div-class-title-climate-model-driven-seasonal-forecasting-approach-with-deep-learning-div.pdf
+topic: s2s-seasonal
+type: model
+method:
+- cnn
+timescale:
+- s2s
+spatial:
+- global
+data:
+- cmip
+- era5
+status: research
+summary: CNN segmentation models (UNet++, ResNet, PSPNet, DeepLabv3) trained on CMIP6 and fine-tuned on
+  ERA5 forecast global temperature a month ahead, with MAE of 0.7.
+abstract: Abstract Understanding seasonal climatic conditions is critical for better management of resources
+  such as water, energy, and agriculture. Recently, there has been a great interest in utilizing the power
+  of Artificial Intelligence (AI) methods in climate studies. This paper presents cutting-edge deep-learning
+  models (UNet++, ResNet, PSPNet, and DeepLabv3) trained by state-of-the-art global CMIP6 models to forecast
+  global temperatures a month ahead using the ERA5 reanalysis dataset. ERA5 dataset was also used for
+  fine-tuning as well performance analysis in the validation dataset. Ten different setups (with CMIP6
+  and CMIP6 + ERA5 fine-tuning) including six meteorological parameters (i.e., 2 m temperature, 10 m eastward
+  component of wind, 10 m northward component of wind, geopotential height at 500 hPa, mean sea-level
+  pressure, and precipitation flux) and elevation were used with both four different algorithms. For each
+  model 14 different sequential and nonsequential temporal settings were used. The mean absolute error
+  (MAE) analysis revealed that UNet++ with CMIP6 with 2 m temperature + elevation and ERA5 fine-tuning
+  model with “Year 3 Month 2” temporal case provided the best outcome with an MAE of 0.7. Regression analysis
+  over the validation dataset between the ERA5 data values and the corresponding AI model predictions
+  revealed slope and $ {R}^2 $ values close to 1 suggesting a very good agreement. The AI model predicts
+  significantly better than the mean CMIP6 ensemble between 2016 and 2021. Both models predict the summer
+  months more accurately than the winter months.
+significance: 3
+cited_by: 5
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

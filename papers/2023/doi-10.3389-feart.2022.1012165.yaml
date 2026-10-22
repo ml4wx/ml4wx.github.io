@@ -1,0 +1,52 @@
+id: doi-10.3389-feart.2022.1012165
+title: A hybrid data assimilation system based on machine learning
+authors:
+- Renze Dong
+- Hongze Leng
+- Chengwu Zhao
+- Junqiang Song
+- Juan Zhao
+- Xiaoqun Cao
+date: '2023-01-05'
+year: 2023
+venue: Frontiers in Earth Science
+venue_type: journal
+ids:
+  doi: 10.3389/feart.2022.1012165
+  openalex: W4313559365
+links:
+  paper: https://doi.org/10.3389/feart.2022.1012165
+  pdf: https://www.frontiersin.org/articles/10.3389/feart.2022.1012165/pdf
+topic: data-assimilation
+type: model
+method:
+- cnn
+spatial:
+- global
+data:
+- other
+status: research
+summary: Hybrid DA system uses a bilinear network as tangent-linear/adjoint and a CNN to adaptively blend
+  4DVar and EnKF analyses, tested on Lorenz-96 with lower cost.
+abstract: 'In the earth sciences, numerical weather prediction (NWP) is the primary method of predicting
+  future weather conditions, and its accuracy is affected by the initial conditions. Data assimilation
+  (DA) can provide high-precision initial conditions for NWP. The hybrid 4DVar-EnKF is currently an advanced
+  DA method used by many operational NWP centres. However, it has two major shortcomings: The complex
+  development and maintenance of the tangent linear and adjoint models and the empirical combination of
+  the results of 4DVar and EnKF. In this paper, a new hybrid DA method based on machine learning (HDA-ML)
+  is presented to overcome these drawbacks. In the new method, the tangent linear and adjoint models in
+  the 4DVar part of the hybrid algorithm can be easily obtained by using a bilinear neural network to
+  replace the forecast model, and a CNN model is adopted to fuse the analysis of 4DVar and EnKF to adaptively
+  obtain the optimal coefficient of combination rather than the empirical coefficient as in the traditional
+  hybrid DA method. The hybrid DA methods are compared with the Lorenz-96 model using the true values
+  as labels. The experimental results show that HDA-ML improves the assimilation performance and significantly
+  reduces the time cost. Furthermore, using observations instead of the true values as labels in the training
+  system is more realistic. The results show comparable assimilation performance to that in the experiments
+  with the true values used as the labels. The experimental results show that the new method has great
+  potential for application to operational NWP systems.'
+significance: 3
+cited_by: 10
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

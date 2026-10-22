@@ -1,0 +1,47 @@
+id: arxiv-2210.11529
+title: Identifying Lightning Processes in ERA5 Soundings with Deep Learning
+authors:
+- Gregor Ehrensperger
+- Thorsten Simon
+- Georg J. Mayr
+- Tobias Hell
+date: '2022-10-20'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2210.11529'
+links:
+  paper: https://arxiv.org/abs/2210.11529
+  pdf: https://arxiv.org/pdf/2210.11529
+topic: extremes-hazards
+type: model
+method:
+- other
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: A deep network on ERA5 vertical profiles identifies lightning-favourable atmosphere better than
+  expert features, with SHAP pointing to cloud ice and snow content.
+abstract: Atmospheric environments favorable for lightning and convection are commonly represented by
+  proxies or parameterizations based on expert knowledge such as CAPE, wind shears, charge separation,
+  or combinations thereof. Recent developments in the field of machine learning, high resolution reanalyses,
+  and accurate lightning observations open possibilities for identifying tailored proxies without prior
+  expert knowledge. To identify vertical profiles favorable for lightning, a deep neural network links
+  ERA5 vertical profiles of cloud physics, mass field variables and wind to lightning location data from
+  the Austrian Lightning Detection and Information System (ALDIS), which has been transformed to a binary
+  target variable labelling the ERA5 cells as cells with lightning activity and cells without lightning
+  activity. The ERA5 parameters are taken on model levels beyond the tropopause forming an input layer
+  of approx. 670 features. The data of 2010-2018 serve as training/validation. On independent test data,
+  2019, the deep network outperforms a reference with features based on meteorological expertise. SHAP
+  values highlight the atmospheric processes learned by the network which identifies cloud ice and snow
+  content in the upper and mid-troposphere as very relevant features. As these patterns correspond to
+  the separation of charge in thunderstorm cloud, the deep learning model can serve as physically meaningful
+  description of lightning. Depending on the region, the neural network also exploits the vertical wind
+  or mass profiles to correctly classify cells with lightning activity.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

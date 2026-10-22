@@ -1,0 +1,59 @@
+id: arxiv-2003.11927
+title: Improving data-driven global weather prediction using deep convolutional neural networks on a cubed
+  sphere
+authors:
+- Jonathan A. Weyn
+- Dale R. Durran
+- Rich Caruana
+date: '2020-03-15'
+year: 2020
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  arxiv: '2003.11927'
+  doi: 10.1029/2020ms002109
+  openalex: W3048374358
+links:
+  paper: https://arxiv.org/abs/2003.11927
+  pdf: https://arxiv.org/pdf/2003.11927
+orgs:
+- microsoft-research
+- university-of-washington
+topic: global-medium-range
+type: model
+method:
+- cnn
+timescale:
+- medium
+- s2s
+spatial:
+- global
+data:
+- era5
+status: research
+summary: CNN on a cubed-sphere grid with multi-step loss gives stable global forecasts for weeks, beating
+  persistence, climatology and coarse NWP at short-to-medium range.
+abstract: We present a significantly-improved data-driven global weather forecasting framework using a
+  deep convolutional neural network (CNN) to forecast several basic atmospheric variables on a global
+  grid. New developments in this framework include an offline volume-conservative mapping to a cubed-sphere
+  grid, improvements to the CNN architecture, and the minimization of the loss function over multiple
+  steps in a prediction sequence. The cubed-sphere remapping minimizes the distortion on the cube faces
+  on which convolution operations are performed and provides natural boundary conditions for padding in
+  the CNN. Our improved model produces weather forecasts that are indefinitely stable and produce realistic
+  weather patterns at lead times of several weeks and longer. For short- to medium-range forecasting,
+  our model significantly outperforms persistence, climatology, and a coarse-resolution dynamical numerical
+  weather prediction (NWP) model. Unsurprisingly, our forecasts are worse than those from a high-resolution
+  state-of-the-art operational NWP system. Our data-driven model is able to learn to forecast complex
+  surface temperature patterns from few input atmospheric state variables. On annual time scales, our
+  model produces a realistic seasonal cycle driven solely by the prescribed variation in top-of-atmosphere
+  solar forcing. Although it is currently less accurate than operational weather forecasting models, our
+  data-driven CNN executes much faster than those models, suggesting that machine learning could prove
+  to be a valuable tool for large-ensemble forecasting.
+significance: 6
+cited_by: 366
+score: 69
+highlight: true
+highlight_reason: Cubed-sphere CNN gives stable, improved data-driven global forecasts, an important step
+  toward later ML weather models.
+added: '2026-10-22'
+source: seed

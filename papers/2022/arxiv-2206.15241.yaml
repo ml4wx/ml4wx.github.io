@@ -1,0 +1,54 @@
+id: arxiv-2206.15241
+title: Benchmark Dataset for Precipitation Forecasting by Post-Processing the Numerical Weather Prediction
+authors:
+- Taehyeon Kim
+- Namgyu Ho
+- Donggyu Kim
+- Se-Young Yun
+date: '2022-06-30'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2206.15241'
+  openalex: W4283770210
+links:
+  paper: https://arxiv.org/abs/2206.15241
+  pdf: https://arxiv.org/pdf/2206.15241
+  code: https://github.com/osilab-kaist/KoMet-Benchmark-Dataset
+topic: benchmarks-data-eval
+topics:
+- post-processing
+type: benchmark
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: KoMet benchmark pairs GDAPS-KIM NWP outputs with Korean station observations to test deep post-processing
+  of precipitation, with open-source code.
+abstract: Precipitation forecasting is an important scientific challenge that has wide-reaching impacts
+  on society. Historically, this challenge has been tackled using numerical weather prediction (NWP) models,
+  grounded on physics-based simulations. Recently, many works have proposed an alternative approach, using
+  end-to-end deep learning (DL) models to replace physics-based NWP models. While these DL methods show
+  improved performance and computational efficiency, they exhibit limitations in long-term forecasting
+  and lack the explainability. In this work, we present a hybrid NWP-DL workflow to fill the gap between
+  standalone NWP and DL approaches. Under this workflow, the outputs of NWP models are fed into a deep
+  neural network, which post-processes the data to yield a refined precipitation forecast. The deep model
+  is trained with supervision, using Automatic Weather Station (AWS) observations as ground-truth labels.
+  This can achieve the best of both worlds, and can even benefit from future improvements in NWP technology.
+  To facilitate study in this direction, we present a novel dataset focused on the Korean Peninsula, termed
+  KoMet (Korea Meteorological Dataset), comprised of NWP outputs and AWS observations. For the NWP model,
+  the Global Data Assimilation and Prediction Systems-Korea Integrated Model (GDAPS-KIM) is utilized.
+  We provide analysis on a comprehensive set of baseline methods aimed at addressing the challenges of
+  KoMet, including the sparsity of AWS observations and class imbalance. To lower the barrier to entry
+  and encourage further study, we also provide an extensive open-source Python package for data processing
+  and model development. Our benchmark data and code are available at https://github.com/osilab-kaist/KoMet-Benchmark-Dataset.
+significance: 4
+cited_by: 6
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

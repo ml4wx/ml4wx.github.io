@@ -1,0 +1,52 @@
+id: arxiv-2105.02585
+title: 'FDNet: A Deep Learning Approach with Two Parallel Cross Encoding Pathways for Precipitation Nowcasting'
+authors:
+- Bi-Ying Yan
+- Chao Yang
+- Feng Chen
+- Kohei Takeda
+- Changjun Wang
+date: '2021-05-06'
+year: 2021
+venue: Journal of Computer Science and Technology
+venue_type: journal
+ids:
+  arxiv: '2105.02585'
+  doi: 10.1007/s11390-021-1103-8
+  openalex: W4389341455
+links:
+  paper: https://doi.org/10.1007/s11390-021-1103-8
+  pdf: https://arxiv.org/pdf/2105.02585
+topic: nowcasting
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: FDNet separates radar echo motion into optical flow and morphological deformation via two parallel
+  encoders, achieving state-of-the-art precipitation nowcasting on two radar datasets.
+abstract: With the goal of predicting the future rainfall intensity in a local region over a relatively
+  short period time, precipitation nowcasting has been a long-time scientific challenge with great social
+  and economic impact. The radar echo extrapolation approaches for precipitation nowcasting take radar
+  echo images as input, aiming to generate future radar echo images by learning from the historical images.
+  To effectively handle complex and high non-stationary evolution of radar echoes, we propose to decompose
+  the movement into optical flow field motion and morphologic deformation. Following this idea, we introduce
+  Flow-Deformation Network (FDNet), a neural network that models flow and deformation in two parallel
+  cross pathways. The flow encoder captures the optical flow field motion between consecutive images and
+  the deformation encoder distinguishes the change of shape from the translational motion of radar echoes.
+  We evaluate the proposed network architecture on two real-world radar echo datasets. Our model achieves
+  state-of-the-art prediction results compared with recent approaches. To the best of our knowledge, this
+  is the first network architecture with flow and deformation separation to model the evolution of radar
+  echoes for precipitation nowcasting. We believe that the general idea of this work could not only inspire
+  much more effective approaches but also be applied to other similar spatiotemporal prediction tasks
+significance: 3
+cited_by: 22
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,53 @@
+id: doi-10.1007-s10618-022-00877-6
+title: 'ConvMOS: climate model output statistics with deep learning'
+authors:
+- Michael Steininger
+- Daniel Abel
+- Katrin Ziegler
+- Anna Krause
+- Heiko Paeth
+- Andreas Hotho A
+date: '2022-10-27'
+year: 2022
+venue: Data Mining and Knowledge Discovery
+venue_type: journal
+ids:
+  doi: 10.1007/s10618-022-00877-6
+  openalex: W4307412617
+links:
+  paper: https://doi.org/10.1007/s10618-022-00877-6
+  pdf: https://link.springer.com/content/pdf/10.1007/s10618-022-00877-6.pdf
+topic: post-processing
+type: model
+method:
+- cnn
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+status: research
+summary: ConvMOS, a convolutional bias-correction model for REMO precipitation with per-location and global
+  parameters, reduces errors and better captures extreme precipitation.
+abstract: Abstract Climate models are the tool of choice for scientists researching climate change. Like
+  all models they suffer from errors, particularly systematic and location-specific representation errors.
+  One way to reduce these errors is model output statistics (MOS) where the model output is fitted to
+  observational data with machine learning. In this work, we assess the use of convolutional Deep Learning
+  climate MOS approaches and present the ConvMOS architecture which is specifically designed based on
+  the observation that there are systematic and location-specific errors in the precipitation estimates
+  of climate models. We apply ConvMOS models to the simulated precipitation of the regional climate model
+  REMO, showing that a combination of per-location model parameters for reducing location-specific errors
+  and global model parameters for reducing systematic errors is indeed beneficial for MOS performance.
+  We find that ConvMOS models can reduce errors considerably and perform significantly better than three
+  commonly used MOS approaches and plain ResNet and U-Net models in most cases. Our results show that
+  non-linear MOS models underestimate the number of extreme precipitation events, which we alleviate by
+  training models specialized towards extreme precipitation events with the imbalanced regression method
+  DenseLoss. While we consider climate MOS, we argue that aspects of ConvMOS may also be beneficial in
+  other domains with geospatial data, such as air pollution modeling or weather forecasts.
+significance: 3
+cited_by: 9
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

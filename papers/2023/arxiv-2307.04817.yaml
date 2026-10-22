@@ -1,0 +1,55 @@
+id: arxiv-2307.04817
+title: A physics-constrained machine learning method for mapping gapless land surface temperature
+authors:
+- Jun Ma
+- Huanfeng Shen
+- Menghui Jiang
+- Liupeng Lin
+- Chunlei Meng
+- Chao Zeng
+- Huifang Li
+- Penghai Wu
+date: '2023-07-03'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2307.04817'
+links:
+  paper: https://arxiv.org/abs/2307.04817
+  pdf: https://arxiv.org/pdf/2307.04817
+topic: observations-remote-sensing
+type: model
+method:
+- classical-ml
+- physics-constrained
+spatial:
+- regional
+data:
+- satellite
+- other
+status: research
+summary: A physics-constrained LightGBM model adds CLM surface energy balance inputs to remote sensing,
+  giving more accurate and interpretable gapless land surface temperature.
+abstract: More accurate, spatio-temporally, and physically consistent LST estimation has been a main interest
+  in Earth system research. Developing physics-driven mechanism models and data-driven machine learning
+  (ML) models are two major paradigms for gapless LST estimation, which have their respective advantages
+  and disadvantages. In this paper, a physics-constrained ML model, which combines the strengths in the
+  mechanism model and ML model, is proposed to generate gapless LST with physical meanings and high accuracy.
+  The hybrid model employs ML as the primary architecture, under which the input variable physical constraints
+  are incorporated to enhance the interpretability and extrapolation ability of the model. Specifically,
+  the light gradient-boosting machine (LGBM) model, which uses only remote sensing data as input, serves
+  as the pure ML model. Physical constraints (PCs) are coupled by further incorporating key Community
+  Land Model (CLM) forcing data (cause) and CLM simulation data (effect) as inputs into the LGBM model.
+  This integration forms the PC-LGBM model, which incorporates surface energy balance (SEB) constraints
+  underlying the data in CLM-LST modeling within a biophysical framework. Compared with a pure physical
+  method and pure ML methods, the PC-LGBM model improves the prediction accuracy and physical interpretability
+  of LST. It also demonstrates a good extrapolation ability for the responses to extreme weather cases,
+  suggesting that the PC-LGBM model enables not only empirical learning from data but also rationally
+  derived from theory. The proposed method represents an innovative way to map accurate and physically
+  interpretable gapless LST, and could provide insights to accelerate knowledge discovery in land surface
+  processes and data mining in geographical parameter estimation.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

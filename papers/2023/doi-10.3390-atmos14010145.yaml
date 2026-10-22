@@ -1,0 +1,62 @@
+id: doi-10.3390-atmos14010145
+title: Grid-to-Point Deep-Learning Error Correction for the Surface Weather Forecasts of a Fine-Scale
+  Numerical Weather Prediction System
+authors:
+- Yu Qin
+- Yubao Liu
+- Xinyu Jiang
+- Yang Li
+- Haixiang Xu
+- Yueqin Shi
+- Zhaoyang Huo
+date: '2023-01-09'
+year: 2023
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos14010145
+  openalex: W4313889921
+links:
+  paper: https://doi.org/10.3390/atmos14010145
+  pdf: https://www.mdpi.com/2073-4433/14/1/145/pdf?version=1673258852
+orgs:
+- nuist
+- cma
+topic: post-processing
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: pre-operational
+summary: Grid-to-point deep learning corrects 3 km PRUFS forecasts at 311 stations, cutting RMSE 19% for
+  temperature, 24% for humidity and 42% for wind.
+abstract: Forecasts of numerical weather prediction models unavoidably contain errors, and it is a common
+  practice to post-process the model output and correct the error for the proper use of the forecasts.
+  This study develops a grid-to-multipoint (G2N) model output error correction scheme which extracts model
+  spatial features and corrects multistation forecasts simultaneously. The model was tested for an operational
+  high-resolution model system, the precision rapid update forecasting system (PRUFS) model, running for
+  East China at 3 km grid intervals. The variables studied include 2 m temperature, 2 m relative humidity,
+  and 10 m wind speed at 311 standard ground-based weather stations. The dataset for training G2N is a
+  year of historical PRUFS model outputs and the surface observations of the same period and the assessment
+  of the G2N performance are based on the output of two months of real-time G2N. The verification of the
+  real-time results shows that G2N reduced RMSEs of the 2 m temperature, 2 m relative humidity, and 10
+  m wind speed forecast errors of the PRUFS model by 19%, 24%, and 42%, respectively. Sensitivity analysis
+  reveals that increasing the number of the target stations for simultaneous correction helps to improve
+  the model performance and reduces the computational cost as well indicating that enhancing the loss
+  function with spatial regional meteorological structure is helpful. On the other hand, adequately selecting
+  the size of influencing grid areas of the model input is also important for G2N to incorporate enough
+  spatial features of model forecasts but not to include the information from the grids far from the correcting
+  areas. G2N is a highly efficient and effective tool that can be readily implemented for real-time regional
+  NWP models.
+significance: 4
+cited_by: 14
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

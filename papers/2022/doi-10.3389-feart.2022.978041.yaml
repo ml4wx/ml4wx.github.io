@@ -1,0 +1,65 @@
+id: doi-10.3389-feart.2022.978041
+title: Deep-learning-based post-processing for probabilistic precipitation forecasting
+authors:
+- Yan Ji
+- Xiefei Zhi
+- Luying Ji
+- Yingxin Zhang
+- Cui Hao
+- Ting Peng
+date: '2022-09-20'
+year: 2022
+venue: Frontiers in Earth Science
+venue_type: journal
+ids:
+  doi: 10.3389/feart.2022.978041
+  openalex: W4296482679
+links:
+  paper: https://doi.org/10.3389/feart.2022.978041
+  pdf: https://www.frontiersin.org/articles/10.3389/feart.2022.978041/pdf
+orgs:
+- nuist
+- cma
+topic: post-processing
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- cnn
+timescale:
+- medium
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: CNN post-processing of GEFS re-forecasts beats CSG EMOS and raw ensembles for 1–7 day China precipitation,
+  especially for extremes above 50 mm/day.
+abstract: Ensemble prediction systems (EPSs) serve as a popular technique to provide probabilistic precipitation
+  prediction in short- and medium-range forecasting. However, numerical models still suffer from imperfect
+  configurations associated with data assimilation and physical parameterization, which can lead to systemic
+  bias. Even state-of-the-art models often fail to provide high-quality precipitation forecasting, especially
+  for extreme events. In this study, two deep-learning-based models—a shallow neural network (NN) and
+  a deep NN with convolutional layers (CNN)—were used as alternative post-processing approaches to further
+  improve the probabilistic forecasting of precipitation over China with 1–7 lead days. A popular conventional
+  method—the censored and shifted gamma distribution-based ensemble model output statistics (CSG EMOS)—was
+  used as the baseline. Re-forecasts run using a frozen EPS—Global Ensemble Forecast System version 12—were
+  collected as the raw ensembles spanning from 2000 to 2019. The re-forecast data were generated once
+  per day and consisted of one control run and four perturbed members. We used the calendar year 2018
+  as the validation period and 2019 as the testing period, and the remaining 18 years of data were used
+  for training. According to the results, in terms of the continuous ranked probability score (CRPS) and
+  the Brier score, the CNN model significantly outperforms the shallow NN model, as well as the CSG EMOS
+  approach and the raw ensemble, especially for heavy or extreme precipitation events (those exceeding
+  50 mm/day). A remarkable degradation was seen when reducing the size of training samples from 18 years
+  of data to two years. The spatial distribution of the CRPS shows that the stations in central China
+  were better calibrated than those in other regions. With a lead time of 1 day, the CNN model was found
+  to be superior to the other models (in terms of the CRPS) at 74.5% of the study stations. These results
+  indicate that deep NNs can serve as a promising approach to the statistical post-processing of probabilistic
+  precipitation forecasting.
+significance: 4
+cited_by: 17
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

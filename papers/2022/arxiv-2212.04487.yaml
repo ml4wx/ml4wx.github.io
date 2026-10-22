@@ -1,0 +1,55 @@
+id: arxiv-2212.04487
+title: Physics-constrained deep learning postprocessing of temperature and humidity
+authors:
+- Francesco Zanetta
+- Daniele Nerini
+- Tom Beucler
+- Mark A. Liniger
+date: '2022-12-07'
+year: 2022
+venue: Artificial Intelligence for the Earth Systems
+venue_type: journal
+ids:
+  arxiv: '2212.04487'
+  doi: 10.1175/aies-d-22-0089.1
+  openalex: W4387905198
+links:
+  paper: https://doi.org/10.1175/aies-d-22-0089.1
+  pdf: https://arxiv.org/pdf/2212.04487
+orgs:
+- eth-zurich
+- meteoswiss
+topic: post-processing
+topics:
+- xai-uq-physics
+type: model
+method:
+- physics-constrained
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Neural network post-processing of Swiss surface forecasts enforces thermodynamic equations, yielding
+  physically consistent temperature and humidity without losing accuracy, especially with scarce data.
+abstract: Weather forecasting centers currently rely on statistical postprocessing methods to minimize
+  forecast error. This improves skill but can lead to predictions that violate physical principles or
+  disregard dependencies between variables, which can be problematic for downstream applications and for
+  the trustworthiness of postprocessing models, especially when they are based on new machine learning
+  approaches. Building on recent advances in physics-informed machine learning, we propose to achieve
+  physical consistency in deep learning-based postprocessing models by integrating meteorological expertise
+  in the form of analytic equations. Applied to the post-processing of surface weather in Switzerland,
+  we find that constraining a neural network to enforce thermodynamic state equations yields physically-consistent
+  predictions of temperature and humidity without compromising performance. Our approach is especially
+  advantageous when data is scarce, and our findings suggest that incorporating domain expertise into
+  postprocessing models allows to optimize weather forecast information while satisfying application-specific
+  requirements.
+significance: 3
+cited_by: 11
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

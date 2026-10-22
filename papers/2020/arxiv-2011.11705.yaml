@@ -1,0 +1,46 @@
+id: arxiv-2011.11705
+title: 'DeepClimGAN: A High-Resolution Climate Data Generator'
+authors:
+- Alexandra Puchko
+- Robert P. Link
+- Brian Hutchinson
+- Ben Kravitz
+- Abigail Snyder
+date: '2020-11-23'
+year: 2020
+venue_type: preprint
+ids:
+  arxiv: '2011.11705'
+  openalex: W3107695222
+links:
+  paper: http://arxiv.org/abs/2011.11705
+  pdf: https://arxiv.org/pdf/2011.11705
+topic: climate-emulation
+type: model
+method:
+- gan-vae
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: DeepClimGAN, a conditional GAN, emulates Earth system model daily weather under chosen scenarios
+  to sample extremes far more cheaply than full ESM runs.
+abstract: Earth system models (ESMs), which simulate the physics and chemistry of the global atmosphere,
+  land, and ocean, are often used to generate future projections of climate change scenarios. These models
+  are far too computationally intensive to run repeatedly, but limited sets of runs are insufficient for
+  some important applications, like adequately sampling distribution tails to characterize extreme events.
+  As a compromise, emulators are substantially less expensive but may not have all of the complexity of
+  an ESM. Here we demonstrate the use of a conditional generative adversarial network (GAN) to act as
+  an ESM emulator. In doing so, we gain the ability to produce daily weather data that is consistent with
+  what ESM might output over any chosen scenario. In particular, the GAN is aimed at representing a joint
+  probability distribution over space, time, and climate variables, enabling the study of correlated extreme
+  events, such as floods, droughts, or heatwaves.
+significance: 4
+cited_by: 6
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

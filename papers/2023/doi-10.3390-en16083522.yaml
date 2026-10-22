@@ -1,0 +1,54 @@
+id: doi-10.3390-en16083522
+title: Multi-Horizon Wind Power Forecasting Using Multi-Modal Spatio-Temporal Neural Networks
+authors:
+- Eric Stefan Miele
+- Nicole Ludwig
+- Alessandro Corsini
+date: '2023-04-18'
+year: 2023
+venue: Energies
+venue_type: journal
+ids:
+  doi: 10.3390/en16083522
+  openalex: W4366425360
+links:
+  paper: https://doi.org/10.3390/en16083522
+  pdf: https://www.mdpi.com/1996-1073/16/8/3522/pdf?version=1681825515
+topic: applications-impacts
+type: model
+method:
+- rnn
+timescale:
+- medium
+spatial:
+- local
+data:
+- nwp-analysis
+- other
+status: research
+summary: Stacked RNN combining SCADA turbine data and NWP maps forecasts wind farm power up to 90 h ahead,
+  with a 25% skill gain over XGBoost.
+abstract: Wind energy represents one of the leading renewable energy sectors and is considered instrumental
+  in the ongoing decarbonization process. Accurate forecasts are essential for a reliable large-scale
+  wind power integration, allowing efficient operation and maintenance, planning of unit commitment, and
+  scheduling by system operators. However, due to non-stationarity, randomness, and intermittency, forecasting
+  wind power is challenging. This work investigates a multi-modal approach for wind power forecasting
+  by considering turbine-level time series collected from SCADA systems and high-resolution Numerical
+  Weather Prediction maps. A neural architecture based on stacked Recurrent Neural Networks is proposed
+  to process and combine different data sources containing spatio-temporal patterns. This architecture
+  allows combining the local information from the turbine’s internal operating conditions with future
+  meteorological data from the surrounding area. Specifically, this work focuses on multi-horizon turbine-level
+  hourly forecasts for an entire wind farm with a lead time of 90 h. This work explores the impact of
+  meteorological variables on different spatial scales, from full grids to cardinal point features, on
+  wind power forecasts. Results show that a subset of features associated with all wind directions, even
+  when spatially distant, can produce more accurate forecasts with respect to full grids and reduce computation
+  times. The proposed model outperforms the linear regression baseline and the XGBoost regressor achieving
+  an average skill score of 25%. Finally, the integration of SCADA data in the training process improved
+  the predictions allowing the multi-modal neural network to model not only the meteorological patterns
+  but also the turbine’s internal behavior.
+significance: 2
+cited_by: 19
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

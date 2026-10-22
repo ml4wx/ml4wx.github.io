@@ -1,0 +1,50 @@
+id: arxiv-2206.04015
+title: Improving trajectory calculations using deep learning inspired single image superresolution
+authors:
+- Rüdiger Brecht
+- Lucie Bakels
+- Alex Bihlo
+- Andreas Stohl
+date: '2022-06-07'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2206.04015'
+links:
+  paper: https://arxiv.org/abs/2206.04015
+  pdf: https://arxiv.org/pdf/2206.04015
+topic: downscaling
+type: model
+method:
+- cnn
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Applies EDSR-style super-resolution to ERA5 winds, halving RMSE versus linear interpolation and
+  reducing 48-hour FLEXPART trajectory errors by at least 49.5%.
+abstract: Lagrangian trajectory or particle dispersion models as well as semi-Lagrangian advection schemes
+  require meteorological data such as wind, temperature and geopotential at the exact spatio-temporal
+  locations of the particles that move independently from a regular grid. Traditionally, this high-resolution
+  data has been obtained by interpolating the meteorological parameters from the gridded data of a meteorological
+  model or reanalysis, e.g. using linear interpolation in space and time. However, interpolation errors
+  are a large source of error for these models. Reducing them requires meteorological input fields with
+  high space and time resolution, which may not always be available and can cause severe data storage
+  and transfer problems. Here, we interpret this problem as a single image superresolution task. We interpret
+  meteorological fields available at their native resolution as low-resolution images and train deep neural
+  networks to up-scale them to higher resolution, thereby providing more accurate data for Lagrangian
+  models. We train various versions of the state-of-the-art Enhanced Deep Residual Networks for Superresolution
+  on low-resolution ERA5 reanalysis data with the goal to up-scale these data to arbitrary spatial resolution.
+  We show that the resulting up-scaled wind fields have root-mean-squared errors half the size of the
+  winds obtained with linear spatial interpolation at acceptable computational inference costs. In a test
+  setup using the Lagrangian particle dispersion model FLEXPART and reduced-resolution wind fields, we
+  demonstrate that absolute horizontal transport deviations of calculated trajectories from "ground-truth"
+  trajectories calculated with undegraded 0.5° winds are reduced by at least 49.5% (21.8%) after 48 hours
+  relative to trajectories using linear interpolation of the wind data when training on 2° to 1° (4° to
+  2°) resolution data.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

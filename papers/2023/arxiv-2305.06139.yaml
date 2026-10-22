@@ -1,0 +1,49 @@
+id: arxiv-2305.06139
+title: A Neural Emulator for Uncertainty Estimation of Fire Propagation
+authors:
+- Andrew Bolt
+- Conrad Sanderson
+- Joel Janek Dabrowski
+- Carolyn Huston
+- Petra Kuhnert
+date: '2023-05-10'
+year: 2023
+venue: Procedia Computer Science, Vol. 222, pp. 367-376, 2023
+venue_type: journal
+ids:
+  arxiv: '2305.06139'
+  doi: 10.1016/j.procs.2023.08.175
+links:
+  paper: https://arxiv.org/abs/2305.06139
+  pdf: https://arxiv.org/pdf/2305.06139
+topic: extremes-hazards
+type: model
+method:
+- other
+timescale:
+- short
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Neural emulator estimates wildfire spread likelihood under perturbed weather forecasts, matching
+  SPARK fire boundaries (Jaccard 67.4%) about ten times faster than ensembles.
+abstract: Wildfire propagation is a highly stochastic process where small changes in environmental conditions
+  (such as wind speed and direction) can lead to large changes in observed behaviour. A traditional approach
+  to quantify uncertainty in fire-front progression is to generate probability maps via ensembles of simulations.
+  However, use of ensembles is typically computationally expensive, which can limit the scope of uncertainty
+  analysis. To address this, we explore the use of a spatio-temporal neural-based modelling approach to
+  directly estimate the likelihood of fire propagation given uncertainty in input parameters. The uncertainty
+  is represented by deliberately perturbing the input weather forecast during model training. The computational
+  load is concentrated in the model training process, which allows larger probability spaces to be explored
+  during deployment. Empirical evaluations indicate that the proposed model achieves comparable fire boundaries
+  to those produced by the traditional SPARK simulation platform, with an overall Jaccard index (similarity
+  score) of 67.4% on a set of 35 simulated fires. When compared to a related neural model (emulator) which
+  was employed to generate probability maps via ensembles of emulated fires, the proposed approach produces
+  competitive Jaccard similarity scores while being approximately an order of magnitude faster.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

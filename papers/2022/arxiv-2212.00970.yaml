@@ -1,0 +1,55 @@
+id: arxiv-2212.00970
+title: Bayesian Physics Informed Neural Networks for Data Assimilation and Spatio-Temporal Modelling of
+  Wildfires
+authors:
+- Joel Janek Dabrowski
+- Daniel Edward Pagendam
+- James Hilton
+- Conrad Sanderson
+- Daniel MacKinlay
+- Carolyn Huston
+- Andrew Bolt
+- Petra Kuhnert
+date: '2022-12-02'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2212.00970'
+  doi: 10.1016/j.spasta.2023.100746
+links:
+  paper: https://arxiv.org/abs/2212.00970
+  pdf: https://arxiv.org/pdf/2212.00970
+topic: extremes-hazards
+topics:
+- xai-uq-physics
+type: model
+method:
+- physics-constrained
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- other
+status: research
+summary: Bayesian physics-informed neural networks model wildfire fronts under changing wind, adding data
+  assimilation and uncertainty quantification to level-set fire spread.
+abstract: We apply the Physics Informed Neural Network (PINN) to the problem of wildfire fire-front modelling.
+  We use the PINN to solve the level-set equation, which is a partial differential equation that models
+  a fire-front through the zero-level-set of a level-set function. The result is a PINN that simulates
+  a fire-front as it propagates through the spatio-temporal domain. We show that popular optimisation
+  cost functions used in the literature can result in PINNs that fail to maintain temporal continuity
+  in modelled fire-fronts when there are extreme changes in exogenous forcing variables such as wind direction.
+  We thus propose novel additions to the optimisation cost function that improves temporal continuity
+  under these extreme changes. Furthermore, we develop an approach to perform data assimilation within
+  the PINN such that the PINN predictions are drawn towards observations of the fire-front. Finally, we
+  incorporate our novel approaches into a Bayesian PINN (B-PINN) to provide uncertainty quantification
+  in the fire-front predictions. This is significant as the standard solver, the level-set method, does
+  not naturally offer the capability for data assimilation and uncertainty quantification. Our results
+  show that, with our novel approaches, the B-PINN can produce accurate predictions with high quality
+  uncertainty quantification on real-world data.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

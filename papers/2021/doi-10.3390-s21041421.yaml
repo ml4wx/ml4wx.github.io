@@ -1,0 +1,54 @@
+id: doi-10.3390-s21041421
+title: 'Real-Time Rainfall Forecasts Based on Radar Reflectivity during Typhoons: Case Study in Southeastern
+  Taiwan'
+authors:
+- Chih‐Chiang Wei
+- Chen-Chia Hsu
+date: '2021-02-18'
+year: 2021
+venue: Sensors
+venue_type: journal
+ids:
+  doi: 10.3390/s21041421
+  openalex: W3130553882
+links:
+  paper: https://doi.org/10.3390/s21041421
+  pdf: https://www.mdpi.com/1424-8220/21/4/1421/pdf?version=1613970466
+topic: nowcasting
+topics:
+- extremes-hazards
+type: model
+method:
+- rnn
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- radar
+- stations
+status: research
+summary: GRU models using radar reflectivity and station data forecast typhoon rainfall 1, 3 and 6 hours
+  ahead in southeastern Taiwan, outperforming XGBoost and linear regression benchmarks.
+abstract: This study developed a real-time rainfall forecasting system that can predict rainfall in a
+  particular area a few hours before a typhoon's arrival. The reflectivity of nine elevation angles obtained
+  from the volume coverage pattern 21 Doppler radar scanning strategy and ground-weather data of a specific
+  area were used for accurate rainfall prediction. During rainfall prediction and analysis, rainfall retrievals
+  were first performed to select the optimal radar scanning elevation angle for rainfall prediction at
+  the current time. Subsequently, forecasting models were established using a single reflectivity and
+  all elevation angles (10 prediction submodels in total) to jointly predict real-time rainfall and determine
+  the optimal predicted values. This study was conducted in southeastern Taiwan and included three onshore
+  weather stations (Chenggong, Taitung, and Dawu) and one offshore weather station (Lanyu). Radar reflectivities
+  were collected from Hualien weather surveillance radar. The data for a total of 14 typhoons that affected
+  the study area in 2008-2017 were collected. The gated recurrent unit (GRU) neural network was used to
+  establish the forecasting model, and extreme gradient boosting and multiple linear regression were used
+  as the benchmarks. Typhoons Nepartak, Meranti, and Megi were selected for simulation. The results revealed
+  that the input data set merged with weather-station data, and radar reflectivity at the optimal elevation
+  angle yielded optimal results for short-term rainfall forecasting. Moreover, the GRU neural network
+  can obtain accurate predictions 1, 3, and 6 h before typhoon occurrence.
+significance: 3
+cited_by: 9
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

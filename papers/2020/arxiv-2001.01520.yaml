@@ -1,0 +1,57 @@
+id: arxiv-2001.01520
+title: 'Combining data assimilation and machine learning to emulate a dynamical model from sparse and
+  noisy observations: a case study with the Lorenz 96 model'
+authors:
+- Julien Brajard
+- Alberto Carassi
+- Marc Bocquet
+- Laurent Bertino
+date: '2020-01-06'
+year: 2020
+venue: Journal of Computational Science, Volume 44, 2020
+venue_type: journal
+ids:
+  arxiv: '2001.01520'
+  doi: 10.1016/j.jocs.2020.101171
+  openalex: W2998192345
+links:
+  paper: https://arxiv.org/abs/2001.01520
+  pdf: https://arxiv.org/pdf/2001.01520
+  code: https://github.com/brajard/GMD-code
+orgs:
+- university-of-reading
+topic: data-assimilation
+topics:
+- climate-emulation
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Iterating an ensemble Kalman filter with a neural network emulates the chaotic Lorenz-96 model
+  from sparse noisy observations, giving forecast skill up to two Lyapunov times.
+abstract: 'A novel method, based on the combination of data assimilation and machine learning is introduced.
+  The new hybrid approach is designed for a two-fold scope: (i) emulating hidden, possibly chaotic, dynamics
+  and (ii) predicting their future states. The method consists in applying iteratively a data assimilation
+  step, here an ensemble Kalman filter, and a neural network. Data assimilation is used to optimally combine
+  a surrogate model with sparse noisy data. The output analysis is spatially complete and is used as a
+  training set by the neural network to update the surrogate model. The two steps are then repeated iteratively.
+  Numerical experiments have been carried out using the chaotic 40-variables Lorenz 96 model, proving
+  both convergence and statistical skill of the proposed hybrid approach. The surrogate model shows short-term
+  forecast skill up to two Lyapunov times, the retrieval of positive Lyapunov exponents as well as the
+  more energetic frequencies of the power density spectrum. The sensitivity of the method to critical
+  setup parameters is also presented: the forecast skill decreases smoothly with increased observational
+  noise but drops abruptly if less than half of the model domain is observed. The successful synergy between
+  data assimilation and machine learning, proven here with a low-dimensional system, encourages further
+  investigation of such hybrids with more sophisticated dynamics.'
+significance: 4
+cited_by: 321
+score: 46
+highlight: false
+added: '2026-10-22'
+source: seed

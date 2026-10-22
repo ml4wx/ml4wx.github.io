@@ -1,0 +1,55 @@
+id: doi-10.5194-gmd-12-4261-2019
+title: Fast domain-aware neural network emulation of a planetary boundary layer parameterization in a
+  numerical weather forecast model
+authors:
+- Jiali Wang
+- Prasanna Balaprakash
+- Veerabhadra Rao Kotamarthi
+date: '2019-10-10'
+year: 2019
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-12-4261-2019
+  openalex: W2942924023
+links:
+  paper: https://doi.org/10.5194/gmd-12-4261-2019
+  pdf: https://gmd.copernicus.org/articles/12/4261/2019/gmd-12-4261-2019.pdf
+orgs:
+- argonne
+topic: hybrid-parameterization
+type: model
+method:
+- other
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Domain-aware deep neural network emulates a WRF planetary boundary layer scheme over the full
+  diurnal cycle and transfers to nearby locations.
+abstract: Abstract. Parameterizations for physical processes in weather and climate models are computationally
+  expensive. We use model output from a set of simulations performed using the Weather Research Forecast
+  (WRF) model to train deep neural networks and evaluate whether trained models can provide an accurate
+  alternative to the physics-based parameterizations. Specifically, we develop an emulator using deep
+  neural networks for a planetary boundary layer (PBL) parameterization in the WRF model. PBL parameterizations
+  are commonly used in atmospheric models to represent the diurnal variation of the formation and collapse
+  of the atmospheric boundary layer – the lowest part of the atmosphere. The dynamics of the atmospheric
+  boundary layer, mixing and turbulence within the boundary layer, velocity, temperature, and humidity
+  profiles are all critical for determining many of the physical processes in the atmosphere. PBL parameterizations
+  are used to represent these processes that are usually unresolved in a typical numerical weather model
+  that operates at horizontal spatial scales in the tens of kilometers. We demonstrate that a domain-aware
+  deep neural network, which takes account of underlying domain structure that are locality specific (e.g.,
+  terrain, spatial dependence vertically), can successfully simulate the vertical profiles within the
+  boundary layer of velocities, temperature, and water vapor over the entire diurnal cycle. We then assess
+  the spatial transferability of the domain-aware neural networks by using a trained model from one location
+  to nearby locations. Results show that a single trained model from a location over the midwestern United
+  States produces predictions of wind components, temperature, and water vapor profiles over the entire
+  diurnal cycle and all nearby locations with errors less than a few percent when compared with the WRF
+  simulations used as the training dataset.
+significance: 4
+cited_by: 61
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

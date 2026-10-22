@@ -1,0 +1,53 @@
+id: arxiv-2111.09954
+title: 'MS-nowcasting: Operational Precipitation Nowcasting with Convolutional LSTMs at Microsoft Weather'
+authors:
+- Sylwester Klocek
+- Haiyu Dong
+- Matthew Dixon
+- Panashe Kanengoni
+- Najeeb Kazmi
+- Pete Luferenko
+- Zhongjian Lv
+- Shikhar Sharma
+- Jonathan Weyn
+- Siqi Xiang
+date: '2021-11-18'
+year: 2021
+venue: NeurIPS 2021 Workshop on Tackling Climate Change with Machine Learning, 2021. https://www.climatechange.ai/papers/neurips2021/19
+venue_type: journal
+ids:
+  arxiv: '2111.09954'
+  openalex: W3217077725
+links:
+  paper: https://arxiv.org/abs/2111.09954
+  pdf: https://arxiv.org/pdf/2111.09954
+orgs:
+- microsoft-research
+topic: nowcasting
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- nwp-analysis
+status: operational
+summary: Microsoft's operational ConvLSTM radar nowcasting model, conditioned on HRRR, beats optical flow
+  and HRRR by 20–25% for lead times up to 6 hours.
+abstract: We present the encoder-forecaster convolutional long short-term memory (LSTM) deep-learning
+  model that powers Microsoft Weather's operational precipitation nowcasting product. This model takes
+  as input a sequence of weather radar mosaics and deterministically predicts future radar reflectivity
+  at lead times up to 6 hours. By stacking a large input receptive field along the feature dimension and
+  conditioning the model's forecaster with predictions from the physics-based High Resolution Rapid Refresh
+  (HRRR) model, we are able to outperform optical flow and HRRR baselines by 20-25% on multiple metrics
+  averaged over all lead times.
+significance: 4
+cited_by: 18
+score: 61
+highlight: false
+added: '2026-10-22'
+source: backfill

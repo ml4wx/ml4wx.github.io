@@ -1,0 +1,71 @@
+id: arxiv-2401.15305
+title: A Practical Probabilistic Benchmark for AI Weather Models
+authors:
+- Noah D. Brenowitz
+- Yair Cohen
+- Jaideep Pathak
+- Ankur Mahesh
+- Boris Bonev
+- Thorsten Kurth
+- Dale R. Durran
+- Peter Harrington
+- Michael S. Pritchard
+date: '2024-01-27'
+year: 2024
+venue: Geophysical Research Letters, 52, e2024GL113656 (2025)
+venue_type: journal
+ids:
+  arxiv: '2401.15305'
+  doi: 10.1029/2024gl113656
+  openalex: W4409263600
+links:
+  paper: https://arxiv.org/abs/2401.15305
+  pdf: https://arxiv.org/pdf/2401.15305
+orgs:
+- lbnl-nersc
+- nvidia
+- uc-berkeley
+topic: probabilistic-ensembles
+topics:
+- global-medium-range
+type: evaluation
+method:
+- neural-operator
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: Lagged ensembles give a parameter-free probabilistic comparison showing GraphCast and Pangu tie
+  on CRPS, and that multi-step losses hurt probabilistic skill.
+abstract: 'Since the weather is chaotic, forecasts aim to predict the distribution of future states rather
+  than make a single prediction. Recently, multiple data driven weather models have emerged claiming breakthroughs
+  in skill. However, these have mostly been benchmarked using deterministic skill scores, and little is
+  known about their probabilistic skill. Unfortunately, it is hard to fairly compare AI weather models
+  in a probabilistic sense, since variations in choice of ensemble initialization, definition of state,
+  and noise injection methodology become confounding. Moreover, even obtaining ensemble forecast baselines
+  is a substantial engineering challenge given the data volumes involved. We sidestep both problems by
+  applying a decades-old idea -- lagged ensembles -- whereby an ensemble can be constructed from a moderately-sized
+  library of deterministic forecasts. This allows the first parameter-free intercomparison of leading
+  AI weather models'' probabilistic skill against an operational baseline. The results reveal that two
+  leading AI weather models, i.e. GraphCast and Pangu, are tied on the probabilistic CRPS metric even
+  though the former outperforms the latter in deterministic scoring. We also reveal how multiple time-step
+  loss functions, which many data-driven weather models have employed, are counter-productive: they improve
+  deterministic metrics at the cost of increased dissipation, deteriorating probabilistic skill. This
+  is confirmed through ablations applied to a spherical Fourier Neural Operator (SFNO) approach to AI
+  weather forecasting. Separate SFNO ablations modulating effective resolution reveal it has a useful
+  effect on ensemble dispersion relevant to achieving good ensemble calibration. We hope these and forthcoming
+  insights from lagged ensembles can help guide the development of AI weather forecasts and have thus
+  shared the diagnostic code.'
+significance: 6
+cited_by: 30
+score: 59
+highlight: true
+highlight_reason: Lagged-ensemble method enables fair probabilistic comparison of AI weather models; shows
+  multi-step losses hurt probabilistic skill.
+added: '2026-10-22'
+source: seed

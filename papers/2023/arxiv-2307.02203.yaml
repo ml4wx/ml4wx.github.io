@@ -1,0 +1,46 @@
+id: arxiv-2307.02203
+title: Neural Fields for Interactive Visualization of Statistical Dependencies in 3D Simulation Ensembles
+authors:
+- Fatemeh Farokhmanesh
+- Kevin Höhlein
+- Christoph Neuhauser
+- Tobias Necker
+- Martin Weissmann
+- Takemasa Miyoshi
+- Rüdiger Westermann
+date: '2023-07-05'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2307.02203'
+links:
+  paper: https://arxiv.org/abs/2307.02203
+  pdf: https://arxiv.org/pdf/2307.02203
+topic: xai-uq-physics
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- other
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: Neural field compactly represents non-linear mutual-information dependencies across a 1000-member
+  weather forecast ensemble, enabling interactive volume-rendered visualization with lower memory and
+  compute.
+abstract: We present the first neural network that has learned to compactly represent and can efficiently
+  reconstruct the statistical dependencies between the values of physical variables at different spatial
+  locations in large 3D simulation ensembles. Going beyond linear dependencies, we consider mutual information
+  as a measure of non-linear dependence. We demonstrate learning and reconstruction with a large weather
+  forecast ensemble comprising 1000 members, each storing multiple physical variables at a 250 x 352 x
+  20 simulation grid. By circumventing compute-intensive statistical estimators at runtime, we demonstrate
+  significantly reduced memory and computation requirements for reconstructing the major dependence structures.
+  This enables embedding the estimator into a GPU-accelerated direct volume renderer and interactively
+  visualizing all mutual dependencies for a selected domain point.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,50 @@
+id: arxiv-2310.15615
+title: Super-resolved rainfall prediction with physics-aware deep learning
+authors:
+- J. F. Amieva
+- A. Austoni
+- M. A. Brovelli
+- L. Ansalone
+- P. Naylor
+- F. Serva
+- B. Le Saux
+date: '2023-10-20'
+year: 2023
+venue: Proceedings of the 2023 conference on Big Data from Space
+venue_type: journal
+ids:
+  arxiv: '2310.15615'
+  doi: 10.2760/46796
+links:
+  paper: https://arxiv.org/abs/2310.15615
+  pdf: https://arxiv.org/pdf/2310.15615
+topic: nowcasting
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+- radar
+status: research
+summary: A physics-aware ConvLSTM followed by a U-Net predicts km-scale rainfall occurrence from satellite
+  radiances up to 4 hours ahead for the weather4cast challenge.
+abstract: Rainfall prediction at the kilometre-scale up to a few hours in the future is key for planning
+  and safety. But it is challenging given the complex influence of climate change on cloud processes and
+  the limited skill of weather models at this scale. Following the set-up proposed by the \emph{weather4cast}
+  challenge of NeurIPS, we build a two-step deep-learning solution for predicting rainfall occurrence
+  at ground radar high spatial resolution starting from coarser resolution weather satellite images. Our
+  approach is designed to predict future satellite images with a physics-aware ConvLSTM network, which
+  is then converted into precipitation maps through a U-Net. We find that our two-step pipeline outperforms
+  the baseline model and we quantify the benefits of including physical information. We find that local-scale
+  rainfall predictions with good accuracy starting from satellite radiances can be obtained for up to
+  4 hours in the future.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

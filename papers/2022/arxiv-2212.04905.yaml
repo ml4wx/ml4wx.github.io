@@ -1,0 +1,51 @@
+id: arxiv-2212.04905
+title: Robust detection and attribution of climate change under interventions
+authors:
+- Enikő Székely
+- Sebastian Sippel
+- Nicolai Meinshausen
+- Guillaume Obozinski
+- Reto Knutti
+date: '2022-12-09'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2212.04905'
+links:
+  paper: https://arxiv.org/abs/2212.04905
+  pdf: https://arxiv.org/pdf/2212.04905
+topic: climate-analysis-attribution
+topics:
+- xai-uq-physics
+type: model
+method:
+- classical-ml
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: Introduces a distributionally robust supervised fingerprint method using anchor regression for
+  climate change detection and attribution that stays robust under interventions on other drivers.
+abstract: Fingerprints are key tools in climate change detection and attribution (D&A) that are used to
+  determine whether changes in observations are different from internal climate variability (detection),
+  and whether observed changes can be assigned to specific external drivers (attribution). We propose
+  a direct D&A approach based on supervised learning to extract fingerprints that lead to robust predictions
+  under relevant interventions on exogenous variables, i.e., climate drivers other than the target. We
+  employ anchor regression, a distributionally-robust statistical learning method inspired by causal inference
+  that extrapolates well to perturbed data under the interventions considered. The residuals from the
+  prediction achieve either uncorrelatedness or mean independence with the exogenous variables, thus guaranteeing
+  robustness. We define D&A as a unified hypothesis testing framework that relies on the same statistical
+  model but uses different targets and test statistics. In the experiments, we first show that the CO2
+  forcing can be robustly predicted from temperature spatial patterns under strong interventions on the
+  solar forcing. Second, we illustrate attribution to the greenhouse gases and aerosols while protecting
+  against interventions on the aerosols and CO2 forcing, respectively. Our study shows that incorporating
+  robustness constraints against relevant interventions may significantly benefit detection and attribution
+  of climate change.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,57 @@
+id: doi-10.5194-gmd-2017-276
+title: 'The Climate Generator: Stochastic climate representation for glacial cycle integration'
+authors:
+- Mohammad Hizbul Bahar Arif
+- Lev Tarasov
+- Tristan Hauser
+date: '2018-01-02'
+year: 2018
+venue_type: other
+ids:
+  doi: 10.5194/gmd-2017-276
+  openalex: W2781976050
+links:
+  paper: https://doi.org/10.5194/gmd-2017-276
+  pdf: https://www.geosci-model-dev-discuss.net/gmd-2017-276/gmd-2017-276.pdf
+topic: climate-emulation
+topics:
+- downscaling
+type: model
+method:
+- classical-ml
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: Bayesian neural networks emulate GCM monthly temperature and precipitation for glacial cycles,
+  adding calibrated noise to mimic internal variability from 22 to 120 ka.
+abstract: Abstract. This paper presents a computationally efficient stochastic approach to simulate atmospheric
+  fields (specifically monthly mean temperature and precipitation) on large spatial-temporal scales. In
+  analogy with Weather Generators (WG), the modelling approach can be considered a Climate Generator (CG).
+  The CG can also be understood as a field-specific General Circulation climate Model (GCM) emulator.
+  It invokes aspects of spatio-temporal downscaling, in this case mapping the output of an Energy Balance
+  climate Model (EBM) to that of a higher resolution GCM. The CG produces a synthetic climatology conditioned
+  on various inputs. These inputs include sea level temperature from a fast low-resolution EBM, surface
+  elevation, ice mask, atmospheric concentrations of carbon dioxide, methane, orbital forcing, latitude
+  and longitude. Bayesian Artificial Neural Networks (BANN) are used for nonlinear regression against
+  GCM output over North America, Antarctica and Eurasia. Herein we detail and validate the methodology.
+  To impose natural variability in the CG (to make the CG indistinguishable from a GCM) stochastic noise
+  is added to each prediction. This noise is generated from a normal distribution with standard deviation
+  computed from the 10 % and 90 % quantiles of the predictive distribution values from the BANNs for each
+  time step. This derives from a key working assumption/approximation that the self-inferred predictive
+  uncertainty of the BANNs is in good part due to the internal variability of the GCM climate. Our CG
+  is trained against GCM (FAMOUS and CCSM) output for the last deglacial interval (22 ka to present year).
+  For predictive testing, we compare the CG predictions against GCM (FAMOUS) output for the disjoint remainder
+  of the last glacial interval (120 ka to 22.05 ka). The CG passes a climate Turing test, an indistinguishability
+  test in analogy with the original Turing test for artificial intelligence. This initial validation of
+  the Climate Generator approach justifies further development and testing for long time integration contexts
+  such as coupled ice-sheet climate modelling over glacial cycle time-scales.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

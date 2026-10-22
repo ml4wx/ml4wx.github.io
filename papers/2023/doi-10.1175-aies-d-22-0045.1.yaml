@@ -1,0 +1,52 @@
+id: doi-10.1175-aies-d-22-0045.1
+title: 'TCDetect: A New Method of Detecting the Presence of Tropical Cyclones Using Deep Learning'
+authors:
+- Daniel Galea
+- Julian Martin Kunkel
+- Bryan Lawrence
+date: '2023-07-01'
+year: 2023
+venue: Artificial Intelligence for the Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1175/aies-d-22-0045.1
+  openalex: W4382932235
+links:
+  paper: https://doi.org/10.1175/aies-d-22-0045.1
+  pdf: https://journals.ametsoc.org/downloadpdf/journals/aies/2/3/AIES-D-22-0045.1.pdf
+orgs:
+- university-of-reading
+topic: extremes-hazards
+topics:
+- benchmarks-data-eval
+type: model
+method:
+- cnn
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Lightweight deep learning detects tropical cyclone presence during simulations for online data
+  reduction, reaching 92% recall on held-out ERA-Interim years.
+abstract: Abstract Tropical cyclones are high-impact weather events that have large human and economic
+  effects, so it is important to be able to understand how their location, frequency, and structure might
+  change in a future climate. Here, a lightweight deep learning model is presented that is intended for
+  detecting the presence or absence of tropical cyclones during the execution of numerical simulations
+  for use in an online data reduction method. This will help to avoid saving vast amounts of data for
+  analysis after the simulation is complete. With run-time detection, it might be possible to reduce the
+  need for some of the high-frequency high-resolution output that would otherwise be required. The model
+  was trained on ERA-Interim reanalysis data from 1979 to 2017, and the training was concentrated on delivering
+  the highest possible recall rate (successful detection of cyclones) while rejecting enough data to make
+  a difference in outputs. When tested using data from the two subsequent years, the recall or probability
+  of detection rate was 92%. The precision rate or success ratio obtained was that of 36%. For the desired
+  data reduction application, if the desired target included all tropical cyclone events, even those that
+  did not obtain hurricane-strength status, the effective precision was 85%. The recall rate and the area
+  under curve for the precision–recall (AUC-PR) compare favorably with other methods of cyclone identification
+  while using the smallest number of parameters for both training and inference.
+significance: 3
+cited_by: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

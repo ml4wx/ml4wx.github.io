@@ -1,0 +1,59 @@
+id: doi-10.5281-zenodo.22775530
+title: Machine Learning Downscaling of Regional Precipitation Patterns in Mountainous Terrain
+authors:
+- Eszter Jonsdottir
+- Andrew Charles Meltzer
+- Joao Bakker
+date: '2022-12-24'
+year: 2022
+venue: Zenodo (CERN European Organization for Nuclear Research)
+venue_type: preprint
+ids:
+  doi: 10.5281/zenodo.22775530
+  openalex: W7213343672
+links:
+  paper: https://doi.org/10.5281/zenodo.22775530
+topic: downscaling
+topics:
+- post-processing
+type: model
+method:
+- cnn
+spatial:
+- regional
+- local
+data:
+- cmip
+- stations
+- radar
+status: research
+summary: CNN downscales 25 km regional climate precipitation to 1 km in mountain terrain, cutting RMSE
+  34% versus raw output and 12% versus quantile mapping.
+abstract: Coarse-resolution global and regional climate model output systematically misrepresents precipitation
+  in mountainous terrain, smoothing the sharp windward-leeward gradients and elevation-dependent intensification
+  that govern water availability for millions of people living downstream of mountain catchments. We trained
+  a convolutional super-resolution network to downscale 25 km regional climate model precipitation fields
+  to a 1 km grid over a 180 km by 140 km domain spanning the windward and leeward slopes of a mid-latitude
+  coastal mountain range, using a 34-year (1988-2021) archive of daily precipitation from 96 gauge stations
+  and a terrain-corrected radar mosaic as training and verification reference, and benchmarked the network
+  against quantile mapping and random forest baselines applied to the same predictor fields. The CNN incorporated
+  static elevation, slope and aspect layers alongside the coarse precipitation, wind and moisture flux
+  predictors, and was trained with a hybrid loss combining mean absolute error on wet-day accumulation
+  with a categorical term penalising missed wet-day occurrence. Across withheld stations, the CNN reduced
+  domain-mean daily precipitation root-mean-square error by 34% relative to the uncorrected regional climate
+  model and by 12% relative to the quantile-mapping baseline, with the largest gains concentrated on windward
+  slopes above 1200 m, where the uncorrected model underestimated winter accumulation by a median of 28%.
+  Skill degraded, however, at the highest, most poorly gauged elevations (above 2000 m), where training
+  data were sparsest and the network's reconstructed orographic enhancement was only weakly constrained;
+  in this band the random forest baseline, despite lower overall skill, produced more physically consistent
+  elevation gradients than the CNN. Leeward rain-shadow precipitation was reproduced with good fidelity
+  by all three methods once the coarse-model dry bias was removed. These results indicate that CNN-based
+  downscaling can meaningfully correct the orographic precipitation deficit endemic to coarse climate
+  model output, but that its advantage over simpler statistical methods is elevation-dependent and should
+  not be assumed to extend uniformly into sparsely observed high-elevation terrain without independent
+  verification.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

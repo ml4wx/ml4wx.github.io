@@ -5,8 +5,28 @@ Frameworks, training and inference at scale, HPC, and compression of weather and
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/infra-software/)
 
-0 papers (0 ⭐). Newest first.
+10 papers (2 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2025-09-16 | ⭐ [AERIS: Argonne Earth Systems Model for Reliable and Skillful Predictions](https://arxiv.org/abs/2509.13523)<br><sub>Väinö Hatanpää, Eugene Ku, Jason Stock et al. · Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis</sub> | Allen Institute for AI (Ai2, ACE), Argonne National Laboratory, University of California, Los Angeles (UCLA), University of Chicago |  |
+| 2024-10-09 | [Exploring the design space of deep-learning-based weather forecasting systems](https://arxiv.org/abs/2410.07472)<br><sub>Shoaib Ahmed Siddiqui, Jean Kossaifi, Boris Bonev et al.</sub> | NVIDIA, University of Cambridge (Aardvark) |  |
+| 2024-05-06 | [CRA5: Extreme Compression of ERA5 for Portable Global Climate and Weather Research via an Efficient Variational Transformer](https://arxiv.org/abs/2405.03376)<br><sub>Tao Han, Zhenghao Chen, Song Guo et al.</sub> |  | [code](https://github.com/taohan10200/CRA5) |
+| 2024-04-30 | [Analyzing and Exploring Training Recipes for Large-Scale Transformer-Based Weather Prediction](https://arxiv.org/abs/2404.19630)<br><sub>Jared D. Willard, Peter Harrington, Shashank Subramanian et al. · 23rd Conference on Artificial Intelligence for Environmental Science. Jan 2024. Abstract #437874</sub> | Lawrence Berkeley National Laboratory / NERSC, University of California, Berkeley |  |
+| 2022-10-22 | [Compressing multidimensional weather and climate data into neural networks](https://arxiv.org/abs/2210.12538)<br><sub>Langwen Huang, Torsten Hoefler</sub> | ETH Zurich |  |
+| 2022-08-08 | ⭐ [FourCastNet: Accelerating Global High-Resolution Weather Forecasting using Adaptive Fourier Neural Operators](https://arxiv.org/abs/2208.05419)<br><sub>Thorsten Kurth, Shashank Subramanian, Peter Harrington et al. · Proceedings of the Platform for Advanced Scientific Computing Conference</sub> | Lawrence Berkeley National Laboratory / NERSC, NVIDIA |  |
+| 2022-01-01 | [HPC-oriented Canonical Workflows for Machine Learning Applications in Climate and Weather Prediction](https://doi.org/10.1162/dint_a_00131)<br><sub>Amirpasha Mozaffari, Michael Langguth, Bing Gong et al. · Data Intelligence</sub> | Deutscher Wetterdienst (DWD), Forschungszentrum Jülich / Jülich Supercomputing Centre |  |
+| 2019-01-07 | [A High-Performance Computing System for Probabilistic Weather Forecasts](https://doi.org/10.1002/essoar.10500383.1)<br><sub>Weiming Hu, Guido Cervone, Vivek Balasubramanian et al.</sub> |  |  |
+| 2018-12-01 | [Machine Learning techniques to evaluate reproducibility of climate model simulations on hybrid architectures.](http://ui.adsabs.harvard.edu/abs/2018AGUFMIN13C0687M/abstract)<br><sub>Shreya Mahajan -, Katherine J. Evans, James H. Kennedy · AGUFM</sub> |  |  |
+| 2018-10-03 | [Exascale Deep Learning for Climate Analytics](https://arxiv.org/abs/1810.01993)<br><sub>Thorsten Kurth, Sean Treichler, Joshua Romero et al. · SC18: International Conference for High Performance Computing, Networking, Storage and Analysis</sub> | Lawrence Berkeley National Laboratory / NERSC, NVIDIA, Oak Ridge National Laboratory |  |
+
+## Also relevant
+
+- [ORBIT-2: Scaling Exascale Vision Foundation Models for Weather and Climate Downscaling](https://arxiv.org/abs/2505.04802) (2025)
+- [ORBIT: Oak Ridge Base Foundation Model for Earth System Predictability](https://arxiv.org/abs/2404.14712) (2024)
+- [DL4DS - Deep Learning for empirical DownScaling](http://arxiv.org/abs/2205.08967) (2022)
+- [Deep Learning-Based Tropical Cyclone Intensity Estimation Portal](https://ntrs.nasa.gov/api/citations/20190030780/downloads/20190030780.pdf) (2019)
+- [Distributed Deep Learning for Precipitation Nowcasting](https://arxiv.org/abs/1908.10964) (2019)
+- [Dimensionality-Reduction of Climate Data using Deep Autoencoders](https://arxiv.org/abs/1809.00027) (2018)
+- [Precipitation Nowcasting Leveraging Deep Learning and HPC Systems to Optimize the Data Pipeline](https://ams.confex.com/ams/98Annual/webprogram/Paper327679.html) (2018)
 

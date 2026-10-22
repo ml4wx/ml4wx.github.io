@@ -1,0 +1,59 @@
+id: doi-10.1016-j.solener.2023.04.050
+title: Forecasting day-ahead 1-minute irradiance variability from numerical weather predictions
+authors:
+- Frank Kreuwel
+- Wouter Knap
+- Maurice J. Schmeits
+- Jordi Vilà-Guerau De Arellano
+- Chiel C. van Heerwaarden
+date: '2023-05-04'
+year: 2023
+venue: Solar Energy
+venue_type: journal
+ids:
+  doi: 10.1016/j.solener.2023.04.050
+  openalex: W4368617800
+links:
+  paper: https://doi.org/10.1016/j.solener.2023.04.050
+orgs:
+- knmi
+topic: post-processing
+topics:
+- applications-impacts
+type: application
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- era5
+- stations
+status: research
+summary: Machine-learning post-processing of hourly HARMONIE and ERA5 forecasts predicts 1-minute irradiance
+  variability for Dutch stations, with NWP radiation errors causing about half the inaccuracy.
+abstract: Accurate forecasts of solar irradiance are required for the large-scale integration of solar
+  photovoltaic (PV) systems. Fluctuations of energy generation in the order of minutes can lead to issues
+  on the electricity grid, therefore reliable forecasts of minute-to-minute irradiance variability are
+  required. However, state of the art numerical weather predictions (NWP) deliver forecasts at a much
+  coarser temporal resolution, e.g. hourly, missing crucial information on meteorological variability
+  such as clouds. In this work we present a methodology to forecast minute-to-minute irradiance variability
+  in terms of its probability density function (PDF) based on hourly NWP results, by applying statistical
+  postprocessing using machine learning. The algorithm is tested using the 2.5 × 2.5 km2 HARMONIE-AROME
+  (HA) mesoscale model as input, with 1-minute irradiance observations for 18 meteorological stations
+  throughout the Netherlands used as a ground truth. The applicability of the algorithm to 31 × 31 km2
+  global-scale models is investigated using ERA5 reanalysis data, which yields comparable accuracies.
+  We find that almost half of the inaccuracy of the postprocessed result is due to errors in the radiation
+  forecast of the NWP model used as input. Finally, the proposed post-processing algorithm is compared
+  to the next generation weather models based on high resolution Large Eddy Simulation (LES), at 75 m
+  horizontal grid spacing, on a case study spanning four days. While LES underestimates values of high
+  irradiance due to lack of 3D radiative effects, it enables detailed analysis of cloud and irradiance
+  dynamics at high spatial and temporal resolution unreachable by statistical postprocessing.
+significance: 3
+cited_by: 22
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

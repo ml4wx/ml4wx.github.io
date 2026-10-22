@@ -1,0 +1,59 @@
+id: arxiv-2201.09101
+title: 'HiSTGNN: Hierarchical Spatio-temporal Graph Neural Networks for Weather Forecasting'
+authors:
+- Minbo Ma
+- Peng Xie
+- Fei Teng
+- Tianrui Li
+- Bin Wang
+- Shenggong Ji
+- Junbo Zhang
+date: '2022-01-22'
+year: 2022
+venue: Information Sciences
+venue_type: journal
+ids:
+  arxiv: '2201.09101'
+  doi: 10.1016/j.ins.2023.119580
+  openalex: W4221150816
+links:
+  paper: https://doi.org/10.1016/j.ins.2023.119580
+  pdf: https://arxiv.org/pdf/2201.09101
+orgs:
+- tencent
+topic: local-forecasting
+type: model
+method:
+- gnn
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- stations
+status: research
+summary: HiSTGNN uses hierarchical spatio-temporal graphs over station meteorological variables, reducing
+  forecast errors by 4.2% to 11.6% versus baselines.
+abstract: Weather Forecasting is an attractive challengeable task due to its influence on human life and
+  complexity in atmospheric motion. Supported by massive historical observed time series data, the task
+  is suitable for data-driven approaches, especially deep neural networks. Recently, the Graph Neural
+  Networks (GNNs) based methods have achieved excellent performance for spatio-temporal forecasting. However,
+  the canonical GNNs-based methods only individually model the local graph of meteorological variables
+  per station or the global graph of whole stations, lacking information interaction between meteorological
+  variables in different stations. In this paper, we propose a novel Hierarchical Spatio-Temporal Graph
+  Neural Network (HiSTGNN) to model cross-regional spatio-temporal correlations among meteorological variables
+  in multiple stations. An adaptive graph learning layer and spatial graph convolution are employed to
+  construct self-learning graph and study hidden dependency among nodes of variable-level and station-level
+  graph. For capturing temporal pattern, the dilated inception as the backbone of gate temporal convolution
+  is designed to model long and various meteorological trends. Moreover, a dynamic interaction learning
+  is proposed to build bidirectional information passing in hierarchical graph. Experimental results on
+  three real-world meteorological datasets demonstrate the superior performance of HiSTGNN beyond 7 baselines
+  and it reduces the errors by 4.2% to 11.6% especially compared to state-of-the-art weather forecasting
+  method.
+significance: 3
+cited_by: 96
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

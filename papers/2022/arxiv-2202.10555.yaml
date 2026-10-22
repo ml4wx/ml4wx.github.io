@@ -1,0 +1,56 @@
+id: arxiv-2202.10555
+title: Effective Training Strategies for Deep-learning-based Precipitation Nowcasting and Estimation
+authors:
+- Jihoon Ko
+- Kyuhan Lee
+- Hyunjin Hwang
+- Seok-Geun Oh
+- Seok-Woo Son
+- Kijung Shin
+date: '2022-02-17'
+year: 2022
+venue: Computers & Geosciences
+venue_type: journal
+ids:
+  arxiv: '2202.10555'
+  doi: 10.1016/j.cageo.2022.105072
+  openalex: W4213304302
+links:
+  paper: https://arxiv.org/abs/2202.10555
+  pdf: https://arxiv.org/pdf/2202.10555
+topic: nowcasting
+topics:
+- observations-remote-sensing
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- stations
+status: research
+summary: U-Net nowcasting with a radar-prediction pre-training scheme and a new loss; heavy-rain CSI improves
+  up to 95.7% and 43.6% at 5 h lead time.
+abstract: 'Deep learning has been successfully applied to precipitation nowcasting. In this work, we propose
+  a pre-training scheme and a new loss function for improving deep-learning-based nowcasting. First, we
+  adapt U-Net, a widely-used deep-learning model, for the two problems of interest here: precipitation
+  nowcasting and precipitation estimation from radar images. We formulate the former as a classification
+  problem with three precipitation intervals and the latter as a regression problem. For these tasks,
+  we propose to pre-train the model to predict radar images in the near future without requiring ground-truth
+  precipitation, and we also propose the use of a new loss function for fine-tuning to mitigate the class
+  imbalance problem. We demonstrate the effectiveness of our approach using radar images and precipitation
+  datasets collected from South Korea over seven years. It is highlighted that our pre-training scheme
+  and new loss function improve the critical success index (CSI) of nowcasting of heavy rainfall (at least
+  10 mm/hr) by up to 95.7% and 43.6%, respectively, at a 5-hr lead time. We also demonstrate that our
+  approach reduces the precipitation estimation error by up to 10.7%, compared to the conventional approach,
+  for light rainfall (between 1 and 10 mm/hr). Lastly, we report the sensitivity of our approach to different
+  resolutions and a detailed analysis of four cases of heavy rainfall.'
+significance: 4
+cited_by: 56
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

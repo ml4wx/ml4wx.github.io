@@ -1,0 +1,51 @@
+id: arxiv-1812.01943
+title: Prediction of typhoon tracks using a generative adversarial network with observational and meteorological
+  data
+authors:
+- Mario Rüttgers
+- Sangseung Lee
+- Donghyun You
+date: '2018-12-05'
+year: 2018
+venue_type: preprint
+ids:
+  arxiv: '1812.01943'
+  openalex: W2902006725
+links:
+  paper: https://arxiv.org/abs/1812.01943
+  pdf: https://arxiv.org/pdf/1812.01943
+topic: extremes-hazards
+topics:
+- nowcasting
+type: model
+method:
+- gan-vae
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+- era5
+status: research
+summary: Uses a GAN on satellite images plus reanalysis fields to predict typhoon centre tracks 6 hours
+  ahead, with 67.2 km mean error versus 95.6 km for images alone.
+abstract: Tracks of typhoons are predicted using a generative adversarial network (GAN) with observational
+  data in form of satellite images and meteorological data from a reanalysis database. Time series of
+  images of typhoons which occurred in the Korean Peninsula in the past are used to train the neural network.
+  The trained GAN is employed to produce a 6-hour-advance track of a typhoon for which the GAN was not
+  trained. The predicted image favorably identifies the future location of the typhoon center as well
+  as the deformed cloud structures. The errors between predicted and real typhoon centers are measured
+  quantitatively in kilometers. 65.5 % of all typhoon center predictions have an error of less than 80
+  km, 31.5 % lie within a range of 80 - 120 km and the remaining 3.0 % are above 120 km. The overall error
+  is 67.2 km, compared to 95.6 km when only observational data are used as input. The cloud structure
+  prediction is evaluated qualitatively. It is shown that the GAN is able to predict trends in cloud motion.
+  It is found that adding physically meaningful meteorological data to satellite images improves the sharpness
+  of predicted images.
+significance: 3
+cited_by: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

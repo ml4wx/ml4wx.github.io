@@ -1,0 +1,55 @@
+id: arxiv-2308.06733
+title: Precipitation nowcasting with generative diffusion models
+authors:
+- Andrea Asperti
+- Fabio Merizzi
+- Alberto Paparella
+- Giorgio Pedrazzi
+- Matteo Angelinelli
+- Stefano Colamonaco
+date: '2023-08-13'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2308.06733'
+links:
+  paper: https://arxiv.org/abs/2308.06733
+  pdf: https://arxiv.org/pdf/2308.06733
+topic: nowcasting
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: Generative ensemble diffusion produces precipitation scenarios over Central Europe from ERA5
+  data, outperforming U-Net baselines after a learned post-processing step.
+abstract: 'In recent years traditional numerical methods for accurate weather prediction have been increasingly
+  challenged by deep learning methods. Numerous historical datasets used for short and medium-range weather
+  forecasts are typically organized into a regular spatial grid structure. This arrangement closely resembles
+  images: each weather variable can be visualized as a map or, when considering the temporal axis, as
+  a video. Several classes of generative models, comprising Generative Adversarial Networks, Variational
+  Autoencoders, or the recent Denoising Diffusion Models have largely proved their applicability to the
+  next-frame prediction problem, and is thus natural to test their performance on the weather prediction
+  benchmarks. Diffusion models are particularly appealing in this context, due to the intrinsically probabilistic
+  nature of weather forecasting: what we are really interested to model is the probability distribution
+  of weather indicators, whose expected value is the most likely prediction. In our study, we focus on
+  a specific subset of the ERA-5 dataset, which includes hourly data pertaining to Central Europe from
+  the years 2016 to 2021. Within this context, we examine the efficacy of diffusion models in handling
+  the task of precipitation nowcasting. Our work is conducted in comparison to the performance of well-established
+  U-Net models, as documented in the existing literature. Our proposed approach of Generative Ensemble
+  Diffusion (GED) utilizes a diffusion model to generate a set of possible weather scenarios which are
+  then amalgamated into a probable prediction via the use of a post-processing network. This approach,
+  in comparison to recent deep learning models, substantially outperformed them in terms of overall performance.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

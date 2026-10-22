@@ -1,0 +1,43 @@
+id: arxiv-2103.00318
+title: Machine Learning Techniques to Construct Patched Analog Ensembles for Data Assimilation
+authors:
+- Lucia Minah Yang
+- Ian Grooms
+date: '2021-02-27'
+year: 2021
+venue_type: preprint
+ids:
+  arxiv: '2103.00318'
+  doi: 10.1016/j.jcp.2021.110532
+links:
+  paper: https://arxiv.org/abs/2103.00318
+  pdf: https://arxiv.org/pdf/2103.00318
+topic: data-assimilation
+type: model
+method:
+- gan-vae
+data:
+- other
+status: research
+summary: Patched autoencoder-based constructed analog ensembles outperform unpatched versions on a 1D
+  toy model, offering a route to scale to global domains.
+abstract: Using generative models from the machine learning literature to create artificial ensemble members
+  for use within data assimilation schemes has been introduced in [Grooms QJRMS, 2020] as constructed
+  analog ensemble optimal interpolation (cAnEnOI). Specifically, we study general and variational autoencoders
+  for the machine learning component of this method, and combine the ideas of constructed analogs and
+  ensemble optimal interpolation in the data assimilation piece. To extend the scalability of cAnEnOI
+  for use in data assimilation on complex dynamical models, we propose using patching schemes to divide
+  the global spatial domain into digestible chunks. Using patches makes training the generative models
+  possible and has the added benefit of being able to exploit parallelism during the generative step.
+  Testing this new algorithm on a 1D toy model, we find that larger patch sizes make it harder to train
+  an accurate generative model (i.e. a model whose reconstruction error is small), while conversely the
+  data assimilation performance improves at larger patch sizes. There is thus a sweet spot where the patch
+  size is large enough to enable good data assimilation performance, but not so large that it becomes
+  difficult to train an accurate generative model. In our tests the new patched cAnEnOI method outperforms
+  the original (unpatched) cAnEnOI, as well as the ensemble square root filter results from [Grooms QJRMS,
+  2020].
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

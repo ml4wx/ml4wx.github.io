@@ -1,0 +1,59 @@
+id: arxiv-2304.12952
+title: Causally-informed deep learning to improve climate models and projections
+authors:
+- Fernando Iglesias-Suarez
+- Pierre Gentine
+- Breixo Solino-Fernandez
+- Tom Beucler
+- Michael Pritchard
+- Jakob Runge
+- Veronika Eyring
+date: '2023-04-25'
+year: 2023
+venue: 'Journal of Geophysical Research: Atmospheres, 129, e2023JD039202'
+venue_type: journal
+ids:
+  arxiv: '2304.12952'
+  doi: 10.1029/2023jd039202
+links:
+  paper: https://arxiv.org/abs/2304.12952
+  pdf: https://arxiv.org/pdf/2304.12952
+topic: hybrid-parameterization
+topics:
+- xai-uq-physics
+type: model
+method:
+- other
+- classical-ml
+timescale:
+- climate
+spatial:
+- global
+data:
+- other
+status: research
+summary: Causal discovery selects inputs for neural convection and radiation parameterizations that replace
+  superparameterization, giving stable climate simulations matching the high-resolution model.
+abstract: Climate models are essential to understand and project climate change, yet long-standing biases
+  and uncertainties in their projections remain. This is largely associated with the representation of
+  subgrid-scale processes, particularly clouds and convection. Deep learning can learn these subgrid-scale
+  processes from computationally expensive storm-resolving models while retaining many features at a fraction
+  of computational cost. Yet, climate simulations with embedded neural network parameterizations are still
+  challenging and highly depend on the deep learning solution. This is likely associated with spurious
+  non-physical correlations learned by the neural networks due to the complexity of the physical dynamical
+  system. Here, we show that the combination of causality with deep learning helps removing spurious correlations
+  and optimizing the neural network algorithm. To resolve this, we apply a causal discovery method to
+  unveil causal drivers in the set of input predictors of atmospheric subgrid-scale processes of a superparameterized
+  climate model in which deep convection is explicitly resolved. The resulting causally-informed neural
+  networks are coupled to the climate model, hence, replacing the superparameterization and radiation
+  scheme. We show that the climate simulations with causally-informed neural network parameterizations
+  retain many convection-related properties and accurately generate the climate of the original high-resolution
+  climate model, while retaining similar generalization capabilities to unseen climates compared to the
+  non-causal approach. The combination of causal discovery and deep learning is a new and promising approach
+  that leads to stable and more trustworthy climate simulations and paves the way towards more physically-based
+  causal deep learning approaches also in other scientific disciplines.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

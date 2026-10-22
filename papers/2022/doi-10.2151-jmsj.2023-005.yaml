@@ -1,0 +1,55 @@
+id: doi-10.2151-jmsj.2023-005
+title: A Machine Learning Approach to the Observation Operator for Satellite Radiance Data Assimilation
+authors:
+- Jianyu Liang
+- Koji Terasaki
+- Takemasa Miyoshi
+date: '2022-10-31'
+year: 2022
+venue: Journal of the Meteorological Society of Japan Ser II
+venue_type: journal
+ids:
+  doi: 10.2151/jmsj.2023-005
+  openalex: W4307877913
+links:
+  paper: https://doi.org/10.2151/jmsj.2023-005
+  pdf: https://www.jstage.jst.go.jp/article/jmsj/101/1/101_2023-005/_pdf
+topic: data-assimilation
+topics:
+- observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- global
+data:
+- satellite
+- nwp-analysis
+status: research
+summary: Machine learning replaces the radiative transfer observation operator for AMSU-A radiance assimilation
+  in NICAM-LETKF, performing near RTTOV but slightly worse with simpler bias handling.
+abstract: The observation operator (OO) is essential in data assimilation (DA) to derive the model equivalent
+  of observations from the model variables. In the satellite DA, the OO for satellite microwave brightness
+  temperature (BT) is usually based on the radiative transfer model (RTM) with a bias correction procedure.
+  To explore the possibility to obtain OO without using physically based RTM, this study applied machine
+  learning (ML) as OO (MLOO) to assimilate BT from Advanced Microwave Sounding Unit-A (AMSU-A) channels
+  6 and 7 over oceans and channel 8 over both land and oceans under clear-sky conditions. We used a reference
+  system, consisting of the nonhydrostatic icosahedral atmospheric model (NICAM) and the local ensemble
+  transform Kalman filter (LETKF). The radiative transfer for TOVS (RTTOV) was implemented in the system
+  as OO, combined with a separate bias correction procedure (RTTOV-OO). The DA experiment was performed
+  for 1 month to assimilate conventional observations and BT using the reference system. Model forecasts
+  from the experiment were paired with observations for training the ML models to obtain ML-OO. In addition,
+  three DA experiments were conducted, which revealed that DA of the conventional observations and BT
+  using ML-OO was slightly inferior, compared to that of RTTOV-OO, but it was better than the assimilation
+  based on only conventional observations. Moreover, ML-OO treated bias internally, thereby simplifying
+  the overall system framework. The proposed ML-OO has limitations due to (1) the inability to treat bias
+  realistically when a significant change is present in the satellite characteristics, (2) inapplicability
+  for many channels, (3) deteriorated performance, compared with that of RTTOV-OO with respect to accuracy
+  and computational speed, and (4) physically based RTM is still used to train the ML-OO. Future studies
+  can alleviate these drawbacks, thereby improving the proposed ML-OO.
+significance: 4
+cited_by: 23
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

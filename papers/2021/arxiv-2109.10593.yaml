@@ -1,0 +1,48 @@
+id: arxiv-2109.10593
+title: Emulating Aerosol Microphysics with Machine Learning
+authors:
+- Paula Harder
+- Duncan Watson-Parris
+- Dominik Strassel
+- Nicolas Gauger
+- Philip Stier
+- Janis Keuper
+date: '2021-09-22'
+year: 2021
+venue_type: preprint
+ids:
+  arxiv: '2109.10593'
+  openalex: W3201234765
+links:
+  paper: https://arxiv.org/abs/2109.10593
+  pdf: https://arxiv.org/pdf/2109.10593
+topic: hybrid-parameterization
+topics:
+- climate-emulation
+type: model
+method:
+- classical-ml
+spatial:
+- global
+data:
+- other
+status: research
+summary: Neural network emulates the M7 aerosol microphysics scheme in ECHAM-HAM, reaching R² of 89% and
+  a 120x GPU speed-up for climate model runs.
+abstract: Aerosol particles play an important role in the climate system by absorbing and scattering radiation
+  and influencing cloud properties. They are also one of the biggest sources of uncertainty for climate
+  modeling. Many climate models do not include aerosols in sufficient detail. In order to achieve higher
+  accuracy, aerosol microphysical properties and processes have to be accounted for. This is done in the
+  ECHAM-HAM global climate aerosol model using the M7 microphysics model, but increased computational
+  costs make it very expensive to run at higher resolutions or for a longer time. We aim to use machine
+  learning to approximate the microphysics model at sufficient accuracy and reduce the computational cost
+  by being fast at inference time. The original M7 model is used to generate data of input-output pairs
+  to train a neural network on it. By using a special logarithmic transform we are able to learn the variables
+  tendencies achieving an average $R^2$ score of $89\%$. On a GPU we achieve a speed-up of 120 compared
+  to the original model.
+significance: 3
+cited_by: 2
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

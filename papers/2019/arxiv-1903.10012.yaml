@@ -1,0 +1,53 @@
+id: arxiv-1903.10012
+title: A mixture of experts model for predicting persistent weather patterns
+authors:
+- Maria Perez-Ortiz
+- Pedro A. Gutierrez
+- Peter Tino
+- Carlos Casanova-Mateo
+- Sancho Salcedo-Sanz
+date: '2019-03-24'
+year: 2019
+venue_type: preprint
+ids:
+  arxiv: '1903.10012'
+  openalex: W2950207153
+links:
+  paper: https://arxiv.org/abs/1903.10012
+  pdf: https://arxiv.org/pdf/1903.10012
+orgs:
+- university-of-cambridge
+topic: local-forecasting
+topics:
+- post-processing
+type: model
+method:
+- other
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Ordinal neural network refines a persistence baseline to predict airport low visibility, outperforming
+  persistence and autoregressive models at longer horizons on station data.
+abstract: 'Weather and atmospheric patterns are often persistent. The simplest weather forecasting method
+  is the so-called persistence model, which assumes that the future state of a system will be similar
+  (or equal) to the present state. Machine learning (ML) models are widely used in different weather forecasting
+  applications, but they need to be compared to the persistence model to analyse whether they provide
+  a competitive solution to the problem at hand. In this paper, we devise a new model for predicting low-visibility
+  in airports using the concepts of mixture of experts. Visibility level is coded as two different ordered
+  categorical variables: cloud height and runway visual height. The underlying system in this application
+  is stagnant approximately in 90% of the cases, and standard ML models fail to improve on the performance
+  of the persistence model. Because of this, instead of trying to simply beat the persistence model using
+  ML, we use this persistence as a baseline and learn an ordinal neural network model that refines its
+  results by focusing on learning weather fluctuations. The results show that the proposal outperforms
+  persistence and other ordinal autoregressive models, especially for longer time horizon predictions
+  and for the runway visual height variable.'
+significance: 2
+cited_by: 1
+score: 18
+highlight: false
+added: '2026-10-22'
+source: backfill

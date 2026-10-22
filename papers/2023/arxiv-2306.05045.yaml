@@ -1,0 +1,51 @@
+id: arxiv-2306.05045
+title: 'Spain on Fire: A novel wildfire risk assessment model based on image satellite processing and
+  atmospheric information'
+authors:
+- Helena Liz-López
+- Javier Huertas-Tato
+- Jorge Pérez-Aracil
+- Carlos Casanova-Mateo
+- Julia Sanz-Justo
+- David Camacho
+date: '2023-06-08'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2306.05045'
+links:
+  paper: https://arxiv.org/abs/2306.05045
+  pdf: https://arxiv.org/pdf/2306.05045
+topic: extremes-hazards
+topics:
+- applications-impacts
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- era5
+- satellite
+status: research
+summary: Wildfire Assessment Model uses a self-supervised CNN on atmospheric and greenness variables to
+  estimate resources and burned area in Spain, improving baselines by up to 21%.
+abstract: Each year, wildfires destroy larger areas of Spain, threatening numerous ecosystems. Humans
+  cause 90% of them (negligence or provoked) and the behaviour of individuals is unpredictable. However,
+  atmospheric and environmental variables affect the spread of wildfires, and they can be analysed by
+  using deep learning. In order to mitigate the damage of these events we proposed the novel Wildfire
+  Assessment Model (WAM). Our aim is to anticipate the economic and ecological impact of a wildfire, assisting
+  managers resource allocation and decision making for dangerous regions in Spain, Castilla y León and
+  Andalucía. The WAM uses a residual-style convolutional network architecture to perform regression over
+  atmospheric variables and the greenness index, computing necessary resources, the control and extinction
+  time, and the expected burnt surface area. It is first pre-trained with self-supervision over 100,000
+  examples of unlabelled data with a masked patch prediction objective and fine-tuned using 311 samples
+  of wildfires. The pretraining allows the model to understand situations, outclassing baselines with
+  a 1,4%, 3,7% and 9% improvement estimating human, heavy and aerial resources; 21% and 10,2% in expected
+  extinction and control time; and 18,8% in expected burnt area. Using the WAM we provide an example assessment
+  map of Castilla y León, visualizing the expected resources over an entire region.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

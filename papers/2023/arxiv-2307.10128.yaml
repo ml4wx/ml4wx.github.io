@@ -1,0 +1,72 @@
+id: arxiv-2307.10128
+title: The rise of data-driven weather forecasting
+authors:
+- Zied Ben-Bouallegue
+- Mariana C A Clare
+- Linus Magnusson
+- Estibaliz Gascon
+- Michael Maier-Gerber
+- Martin Janousek
+- Mark Rodwell
+- Florian Pinault
+- Jesper S Dramsch
+- Simon T K Lang
+- Baudouin Raoult
+- Florence Rabier
+- Matthieu Chevallier
+- Irina Sandu
+- Peter Dueben
+- Matthew Chantry
+- Florian Pappenberger
+date: '2023-07-19'
+year: 2023
+venue: Bulletin of the American Meteorological Society
+venue_type: journal
+ids:
+  arxiv: '2307.10128'
+  doi: 10.1175/bams-d-23-0162.1
+  openalex: W4392284590
+links:
+  paper: https://arxiv.org/abs/2307.10128
+  pdf: https://arxiv.org/pdf/2307.10128
+orgs:
+- ecmwf
+topic: benchmarks-data-eval
+type: evaluation
+method:
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: Compares PanguWeather with ECMWF IFS and finds comparable skill for global and extreme metrics,
+  with forecast smoothness and bias drift as drawbacks.
+abstract: Data-driven modeling based on machine learning (ML) is showing enormous potential for weather
+  forecasting. Rapid progress has been made with impressive results for some applications. The uptake
+  of ML methods could be a game-changer for the incremental progress in traditional numerical weather
+  prediction (NWP) known as the 'quiet revolution' of weather forecasting. The computational cost of running
+  a forecast with standard NWP systems greatly hinders the improvements that can be made from increasing
+  model resolution and ensemble sizes. An emerging new generation of ML models, developed using high-quality
+  reanalysis datasets like ERA5 for training, allow forecasts that require much lower computational costs
+  and that are highly-competitive in terms of accuracy. Here, we compare for the first time ML-generated
+  forecasts with standard NWP-based forecasts in an operational-like context, initialized from the same
+  initial conditions. Focusing on deterministic forecasts, we apply common forecast verification tools
+  to assess to what extent a data-driven forecast produced with one of the recently developed ML models
+  (PanguWeather) matches the quality and attributes of a forecast from one of the leading global NWP systems
+  (the ECMWF IFS). The results are very promising, with comparable skill for both global metrics and extreme
+  events, when verified against both the operational analysis and synoptic observations. Increasing forecast
+  smoothness and bias drift with forecast lead time are identified as current drawbacks of ML-based forecasts.
+  A new NWP paradigm is emerging relying on inference from ML models and state-of-the-art analysis and
+  reanalysis datasets for forecast initialization and model training.
+significance: 6
+cited_by: 212
+score: 69
+highlight: true
+highlight_reason: This ECMWF study gives an early operational-style comparison of Pangu-Weather and IFS,
+  and it is influential in the community for showing how to verify ML models.
+added: '2026-10-22'
+source: seed

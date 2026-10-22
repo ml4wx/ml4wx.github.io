@@ -1,0 +1,49 @@
+id: arxiv-2406.05019
+title: Predictability Limit of the 2021 Pacific Northwest Heatwave from Deep-Learning Sensitivity Analysis
+authors:
+- P. Trent Vonich
+- Gregory J. Hakim
+date: '2024-06-07'
+year: 2024
+venue: Geophysical Research Letters
+venue_type: journal
+ids:
+  arxiv: '2406.05019'
+  doi: 10.1029/2024gl110651
+  openalex: W4403085937
+links:
+  paper: https://arxiv.org/abs/2406.05019
+  pdf: https://arxiv.org/pdf/2406.05019
+orgs:
+- university-of-washington
+topic: xai-uq-physics
+type: application
+method:
+- gnn
+- differentiable
+timescale:
+- medium
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: Backpropagation through GraphCast optimizes initial conditions, cutting 10-day Pacific Northwest
+  heatwave errors over 90% and extending predictability to about 23 days.
+abstract: The traditional method for estimating weather forecast sensitivity to initial conditions uses
+  adjoint models, which are limited to short lead times due to linearization around a control forecast.
+  The advent of deep-learning frameworks enables a new approach using backpropagation and gradient descent
+  to iteratively optimize initial conditions to minimize forecast errors. We apply this approach to forecasts
+  of the June 2021 Pacific Northwest heatwave using the GraphCast model, yielding over 90% reduction in
+  10-day forecast errors over the Pacific Northwest. Similar improvements are found for Pangu-Weather
+  model forecasts initialized with the GraphCast-derived optimal, suggesting that model error is not an
+  important part of the initial perturbations. Eliminating small scales from the initial perturbations
+  also yields similar forecast improvements. Extending the length of the optimization window, we find
+  forecast improvement to about 23 days, suggesting atmospheric predictability at the upper end of recent
+  estimates.
+significance: 4
+cited_by: 30
+score: 26
+highlight: false
+added: '2026-10-22'
+source: seed

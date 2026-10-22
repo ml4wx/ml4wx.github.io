@@ -1,0 +1,39 @@
+id: arxiv-2107.07687
+title: Auto-differentiable Ensemble Kalman Filters
+authors:
+- Yuming Chen
+- Daniel Sanz-Alonso
+- Rebecca Willett
+date: '2021-07-16'
+year: 2021
+venue_type: preprint
+ids:
+  arxiv: '2107.07687'
+links:
+  paper: https://arxiv.org/abs/2107.07687
+  pdf: https://arxiv.org/pdf/2107.07687
+topic: data-assimilation
+type: model
+method:
+- differentiable
+- other
+data:
+- other
+status: research
+summary: Auto-differentiable ensemble Kalman filters jointly learn surrogate dynamics and assimilate states,
+  outperforming EM and particle-filter baselines on Lorenz-96.
+abstract: Data assimilation is concerned with sequentially estimating a temporally-evolving state. This
+  task, which arises in a wide range of scientific and engineering applications, is particularly challenging
+  when the state is high-dimensional and the state-space dynamics are unknown. This paper introduces a
+  machine learning framework for learning dynamical systems in data assimilation. Our auto-differentiable
+  ensemble Kalman filters (AD-EnKFs) blend ensemble Kalman filters for state recovery with machine learning
+  tools for learning the dynamics. In doing so, AD-EnKFs leverage the ability of ensemble Kalman filters
+  to scale to high-dimensional states and the power of automatic differentiation to train high-dimensional
+  surrogate models for the dynamics. Numerical results using the Lorenz-96 model show that AD-EnKFs outperform
+  existing methods that use expectation-maximization or particle filters to merge data assimilation and
+  machine learning. In addition, AD-EnKFs are easy to implement and require minimal tuning.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

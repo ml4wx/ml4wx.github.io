@@ -5,8 +5,22 @@ Limited-area and regional ML weather models, convection-permitting and km-scale 
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/regional-km-scale/)
 
-0 papers (0 ⭐). Newest first.
+8 papers (2 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2025-07-08 | [HRRRCast: a data-driven emulator for regional weather forecasting at convection allowing scales](https://arxiv.org/abs/2507.05658)<br><sub>Daniel Abdi, Isidora Jankov, Paul Madden et al. · Artificial Intelligence for the Earth Systems, Vol. 5, No. 2, 2026, Article 250061</sub> | Colorado State University (incl. CIRA), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), University of Oklahoma (AI2ES) |  |
+| 2025-04-12 | [Building Machine Learning Limited Area Models: Kilometer-Scale Weather Forecasting in Realistic Settings](https://arxiv.org/abs/2504.09340)<br><sub>Simon Adamov, Joel Oskarsson, Leif Denby et al.</sub> |  | [code](https://github.com/joeloskarsson/neural-lam-dev) |
+| 2025-02-11 | [Diffusion-LAM: Probabilistic Limited Area Weather Forecasting with Diffusion](https://arxiv.org/abs/2502.07532)<br><sub>Erik Larsson, Joel Oskarsson, Tomas Landelius et al.</sub> |  |  |
+| 2024-09-04 | ⭐ [Regional data-driven weather modeling with a global stretched-grid](https://arxiv.org/abs/2409.02891)<br><sub>Thomas Nils Nipen, Håvard Homleid Haugen, Magnus Sikora Ingstad et al. · Artificial Intelligence for the Earth Systems</sub> | ECMWF, MET Norway (Norwegian Meteorological Institute) |  |
+| 2024-08-20 | ⭐ [Kilometer-Scale Convection Allowing Model Emulation using Generative Diffusion Modeling](https://arxiv.org/abs/2408.10958)<br><sub>Jaideep Pathak, Yair Cohen, Piyush Garg et al. · Science Advances</sub> | NVIDIA |  |
+| 2024-08-12 | [MetMamba: Regional Weather Forecasting with Spatial-Temporal Mamba Model](https://arxiv.org/abs/2408.06400)<br><sub>Haoyu Qin, Yungang Chen, Qianchuan Jiang et al.</sub> |  |  |
+| 2024-01-29 | [YingLong-weather: AI-Based Limited Area Models for Forecasting of Non-precipitation Surface Meteorological Variables](https://arxiv.org/abs/2401.16254)<br><sub>Pengbo Xu, Xiaogu Zheng, Tianyan Gao et al. · Communications Earth &amp; Environment</sub> | Baidu, China Meteorological Administration (CMA) |  |
+| 2023-09-29 | [Graph-based Neural Weather Prediction for Limited Area Modeling](https://arxiv.org/abs/2309.17370)<br><sub>Joel Oskarsson, Tomas Landelius, Fredrik Lindsten</sub> |  | [code](https://github.com/joeloskarsson/neural-lam) |
+
+## Also relevant
+
+- [Generative Data Assimilation of Sparse Weather Station Observations at Kilometer Scales](https://arxiv.org/abs/2406.16947) (2024)
+- [FengWu-GHR: Learning the Kilometer-scale Medium-range Global Weather Forecasting](https://arxiv.org/abs/2402.00059) (2024)
+- [Super-Resolution Simulation for Real-Time Prediction of Urban Micrometeorology](https://doi.org/10.2151/sola.2019-032) (2019)
 

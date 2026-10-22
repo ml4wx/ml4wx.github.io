@@ -1,0 +1,55 @@
+id: doi-10.3390-rs13214285
+title: Two-Stage Spatiotemporal Context Refinement Network for Precipitation Nowcasting
+authors:
+- Dan Niu
+- Junhao Huang
+- Zengliang Zang
+- Liujia Xu
+- Hongshu Che
+- Yuanqing Tang
+date: '2021-10-25'
+year: 2021
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs13214285
+  openalex: W3209270025
+links:
+  paper: https://doi.org/10.3390/rs13214285
+  pdf: https://www.mdpi.com/2072-4292/13/21/4285/pdf?version=1635320371
+topic: nowcasting
+type: model
+method:
+- cnn
+- rnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Two-stage spatiotemporal RNN with detail refinement improves radar echo nowcasting over PredRNN++
+  and ConvLSTM, reaching CSI 0.195 at 45 dBZ with 2 h lead.
+abstract: Precipitation nowcasting by radar echo extrapolation using machine learning algorithms is a
+  field worthy of further study, since rainfall prediction is essential in work and life. Current methods
+  of predicting the radar echo images need further improvement in prediction accuracy as well as in presenting
+  the predicted details of the radar echo images. In this paper, we propose a two-stage spatiotemporal
+  context refinement network (2S-STRef) to predict future pixel-level radar echo maps (deterministic output)
+  more accurately and with more distinct details. The first stage is an efficient and concise spatiotemporal
+  prediction network, which uses the spatiotemporal RNN module embedded in an encoder and decoder structure
+  to give a first-stage prediction. The second stage is a proposed detail refinement net, which can preserve
+  the high-frequency detailed feature of the radar echo images by using the multi-scale feature extraction
+  and fusion residual block. We used a real-world radar echo map dataset of South China to evaluate the
+  proposed 2S-STRef model. The experiments showed that compared with the PredRNN++ and ConvLSTM method,
+  our 2S-STRef model performs better on the precipitation nowcasting, as well as at the image quality
+  evaluating index and the forecasting indices. At a given 45 dBZ echo threshold (heavy precipitation)
+  and with a 2 h lead time, the widely used CSI, HSS, and SSIM indices of the proposed 2S-STRef model
+  are found equal to 0.195, 0.312, and 0.665, respectively. In this case, the proposed model outperforms
+  the OpticalFlow method and PredRNN++ model.
+significance: 3
+cited_by: 21
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

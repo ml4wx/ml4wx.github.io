@@ -1,0 +1,57 @@
+id: doi-10.3390-rs13122310
+title: Multi-Task Collaboration Deep Learning Framework for Infrared Precipitation Estimation
+authors:
+- Xuying Yang
+- Peng Sun
+- Feng Zhang
+- Zhenhong Du
+- Renyi Liu
+date: '2021-06-12'
+year: 2021
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs13122310
+  openalex: W3171688233
+links:
+  paper: https://doi.org/10.3390/rs13122310
+  pdf: https://www.mdpi.com/2072-4292/13/12/2310/pdf?version=1623732650
+topic: observations-remote-sensing
+topics:
+- nowcasting
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: A multi-task CNN framework with consistency constraints and cross-branch attention improves Himawari-8
+  infrared precipitation estimation by 3–5% F1 across intensities.
+abstract: Infrared observation is an all-weather, real-time, large-scale precipitation observation method
+  with high spatio-temporal resolution. A high-precision deep learning algorithm of infrared precipitation
+  estimation can provide powerful data support for precipitation nowcasting and other hydrological studies
+  with high timeliness requirements. The “classification-estimation” two-stage framework is widely used
+  for balancing the data distribution in precipitation estimation algorithms, but still has the error
+  accumulation issue due to its simple series-wound combination mode. In this paper, we propose a multi-task
+  collaboration framework (MTCF), i.e., a novel combination mode of the classification and estimation
+  model, which alleviates the error accumulation and retains the ability to improve the data balance.
+  Specifically, we design a novel positive information feedback loop composed of a consistency constraint
+  mechanism, which largely improves the information abundance and the prediction accuracy of the classification
+  branch, and a cross-branch interaction module (CBIM), which realizes the soft feature transformation
+  between branches via the soft spatial attention mechanism. In addition, we also model and analyze the
+  importance of the input infrared bands, which lay a foundation for further optimizing the input and
+  improving the generalization of the model on other infrared data. Extensive experiments based on Himawari-8
+  demonstrate that compared with the baseline model, our MTCF obtains a significant improvement by 3.2%,
+  3.71%, 5.13%, 4.04% in F1-score when the precipitation intensity is 0.5, 2, 5, 10 mm/h, respectively.
+  Moreover, it also has a satisfactory performance in identifying precipitation spatial distribution details
+  and small-scale precipitation, and strong stability to the extreme-precipitation of typhoons.
+significance: 3
+cited_by: 11
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

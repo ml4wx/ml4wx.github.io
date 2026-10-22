@@ -1,0 +1,56 @@
+id: doi-10.3390-w14162570
+title: 'Gated Attention Recurrent Neural Network: A Deeping Learning Approach for Radar-Based Precipitation
+  Nowcasting'
+authors:
+- Guanchen Wu
+- Wenhui Chen
+- Hoe-Kyung Jung
+date: '2022-08-20'
+year: 2022
+venue: Water
+venue_type: journal
+ids:
+  doi: 10.3390/w14162570
+  openalex: W4292603718
+links:
+  paper: https://doi.org/10.3390/w14162570
+  pdf: https://www.mdpi.com/2073-4441/14/16/2570/pdf?version=1661238568
+topic: nowcasting
+type: model
+method:
+- rnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Gated attention recurrent network with multi-order Markov memory predicts radar echo sequences
+  for precipitation nowcasting, improving on first-order spatiotemporal models.
+abstract: Precipitation nowcasting predicts the future rainfall intensity in local areas in a brief time
+  that impacts directly on human life. In this paper, we express the precipitation nowcasting as a spatiotemporal
+  sequence prediction problem. Predictive learning for a spatiotemporal sequence aims to construct a model
+  of natural spatiotemporal processes to predict the future frames based on historical frames. The spatiotemporal
+  process is an abstraction of some of the spatial things in nature that change with time, and they usually
+  do not change very dramatically. To simplify the model and facilitate the training, we considered that
+  the spatiotemporal process satisfies the generalized Markov properties. The natural spatiotemporal processes
+  are nonlinear and non-stationary in many aspects. The processes are not satisfied with the first-order
+  Markov properties when making predictions, such as the nonlinear movement, expansion, dissipation, and
+  intensity enhancement of echoes. To describe such complex spatiotemporal variations, higher-order Markov
+  models need to be used for the modeling. However, many of the previous models for spatiotemporal prediction
+  constructed were based on first-order Markov properties, losing information on the higher-order variations.
+  Thus, we propose a recurrent neural network which satisfies the multi-order Markov properties to create
+  more accurate spatiotemporal predictions. In this network, the core component is the memory cell structure
+  of the gated attention mechanism, which combines the current input information, extracts the historical
+  state that best matches the existing input from the historical multi-period memory information, and
+  then predicts the future. Through this principle of the gated attention, we could extract the historical
+  state information that is richer and deeper to predict the future and more accurately describe the changing
+  characteristics of motion. The experiments show that our GARNN network captures the spatiotemporal characteristics
+  better and obtains excellent results in the precipitation forecasting with radar echoes.
+significance: 3
+cited_by: 5
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

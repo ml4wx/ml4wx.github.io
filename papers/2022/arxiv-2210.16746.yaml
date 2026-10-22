@@ -1,0 +1,57 @@
+id: arxiv-2210.16746
+title: Deep learning for quality control of surface physiographic fields using satellite Earth observations
+authors:
+- Tom Kimpson
+- Margarita Choulga
+- Matthew Chantry
+- Gianpaolo Balsamo
+- Souhail Boussetta
+- Peter Dueben
+- Tim Palmer
+date: '2022-10-30'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2210.16746'
+  doi: 10.5194/egusphere-2022-1177
+links:
+  paper: https://arxiv.org/abs/2210.16746
+  pdf: https://arxiv.org/pdf/2210.16746
+topic: benchmarks-data-eval
+topics:
+- observations-remote-sensing
+type: evaluation
+method:
+- other
+spatial:
+- global
+data:
+- era5
+- satellite
+status: research
+summary: A neural network trained on ERA5 and MODIS skin temperature quality-checks IFS physiographic
+  upgrades, improving land-surface temperature prediction by 0.37 K for updated lakes.
+abstract: A purposely built deep learning algorithm for the Verification of Earth-System ParametERisation
+  (VESPER) is used to assess recent upgrades of the global physiographic datasets underpinning the quality
+  of the Integrated Forecasting System (IFS) of the European Centre for Medium-Range Weather Forecasts
+  (ECMWF), which is used both in numerical weather prediction and climate reanalyses. A neural network
+  regression model is trained to learn the mapping between the surface physiographic dataset plus the
+  meteorology from ERA5, and the MODIS satellite skin temperature observations. Once trained, this tool
+  is applied to rapidly assess the quality of upgrades of the land-surface scheme. Upgrades which improve
+  the prediction accuracy of the machine learning tool indicate a reduction of the errors in the surface
+  fields used as input to the surface parametrisation schemes. Conversely, incorrect specifications of
+  the surface fields decrease the accuracy with which VESPER can make predictions. We apply VESPER to
+  assess the accuracy of recent upgrades of the permanent lake and glaciers covers as well as planned
+  upgrades to represent seasonally varying water bodies (i.e. ephemeral lakes). We show that for grid-cells
+  where the lake fields have been updated, the prediction accuracy in the land surface temperature (i.e
+  mean absolute error difference between updated and original physiographic datasets) improves by 0.37
+  K on average, whilst for the subset of points where the lakes have been exchanged for bare ground (or
+  vice versa) the improvement is 0.83 K. We also show that updates to the glacier cover improve the prediction
+  accuracy by 0.22 K. We highlight how neural networks such as VESPER can assist the research and development
+  of surface parameterizations and their input physiography to better represent Earth's surface couples
+  processes in weather and climate models.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

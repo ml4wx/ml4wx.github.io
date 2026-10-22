@@ -1,0 +1,52 @@
+id: arxiv-2109.12269
+title: Integrating Recurrent Neural Networks with Data Assimilation for Scalable Data-Driven State Estimation
+authors:
+- Stephen G. Penny
+- Timothy A. Smith
+- Tse-Chun Chen
+- Jason A. Platt
+- Hsin-Yi Lin
+- Michael Goodliff
+- Henry D. I. Abarbanel
+date: '2021-09-25'
+year: 2021
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  arxiv: '2109.12269'
+  doi: 10.1029/2021ms002843
+  openalex: W4212948582
+links:
+  paper: https://doi.org/10.1029/2021ms002843
+  pdf: https://arxiv.org/pdf/2109.12269
+orgs:
+- noaa
+topic: data-assimilation
+topics:
+- global-medium-range
+type: model
+method:
+- rnn
+timescale:
+- short
+data:
+- other
+status: research
+summary: RNNs replace the forecast model, error covariance and adjoint in the DA cycle, with DA updating
+  hidden states; the approach scales via localization and parallelization.
+abstract: Data assimilation (DA) is integrated with machine learning in order to perform entirely data-driven
+  online state estimation. To achieve this, recurrent neural networks (RNNs) are implemented as surrogate
+  models to replace key components of the DA cycle in numerical weather prediction (NWP), including the
+  conventional numerical forecast model, the forecast error covariance matrix, and the tangent linear
+  and adjoint models. It is shown how these RNNs can be initialized using DA methods to directly update
+  the hidden/reservoir state with observations of the target system. The results indicate that these techniques
+  can be applied to estimate the state of a system for the repeated initialization of short-term forecasts,
+  even in the absence of a traditional numerical forecast model. Further, it is demonstrated how these
+  integrated RNN-DA methods can scale to higher dimensions by applying domain localization and parallelization,
+  providing a path for practical applications in NWP.
+significance: 4
+cited_by: 56
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

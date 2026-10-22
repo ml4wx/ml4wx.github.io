@@ -1,0 +1,62 @@
+id: doi-10.3390-rs15123065
+title: Radar Echo Reconstruction in Oceanic Area via Deep Learning of Satellite Data
+authors:
+- Xiaoqi Yu
+- Xiao Lou
+- Yan Yan
+- Zhongwei Yan
+- Wencong Cheng
+- Zhibin Wang
+- Deming Zhao
+- Jiangjiang Xia
+date: '2023-06-12'
+year: 2023
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs15123065
+  openalex: W4380628757
+links:
+  paper: https://doi.org/10.3390/rs15123065
+  pdf: https://www.mdpi.com/2072-4292/15/12/3065/pdf?version=1686555771
+orgs:
+- iap-cas
+- alibaba-damo
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- satellite
+- radar
+status: research
+summary: A U-Net reconstructs radar composite reflectivity over the ocean from satellite data, with interpretability
+  showing cloud features matter most.
+abstract: A conventional way to monitor severe convective weather is using the composite reflectivity
+  of radar as an indicator. For oceanic areas without radar deployment, reconstruction from satellite
+  data is useful. However, those reconstruction models built on a land dataset are not directly applicable
+  to the ocean due to different underlying surfaces. In this study, we built reconstruction models based
+  on U-Net (named STR-UNet) for different underlying surfaces (land, coast, offshore, and sea), and evaluated
+  their applicability to the ocean. Our results suggest that the comprehensive use of land, coast, and
+  offshore datasets should be more suitable for reconstruction in the ocean than using the sea dataset.
+  The comprehensive performances (in terms of RMSE, MAE, POD, CSI, FAR, and BIAS) of the Land-Model, Coast-Model,
+  and Offshore-Model in the ocean are superior to those of the Sea-Model, e.g., with RMSE being 5.61,
+  6.08, 5.06, and 7.73 in the oceanic area (Region B), respectively. We then analyzed the importance of
+  different types of features on different underlying surfaces for reconstruction by using interpretability
+  methods combined with physical meaning. Overall, satellite cloud-related features are most important,
+  followed by satellite water-related features and satellite temperature-related features. For the transition
+  of the model from land to coast, then offshore, the importance of satellite water-related features gradually
+  increases, while the importance of satellite cloud-related features and satellite temperature-related
+  features gradually decreases. It is worth mentioning that in the offshore region, the importance of
+  satellite water-related features slightly exceeds the importance of satellite cloud-related features.
+  Finally, based on the performance of the case, the results show that the STR-UNet reconstruction models
+  we established can accurately reconstruct the shape, location, intensity, and range of the convective
+  center, achieving the goal of detecting severe convective weather where a radar is not present.
+significance: 3
+cited_by: 10
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

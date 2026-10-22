@@ -1,0 +1,63 @@
+id: doi-10.5194-gmd-13-2631-2020
+title: 'RainNet v1.0: a convolutional neural network for radar-based precipitation nowcasting'
+authors:
+- Georgy Ayzel
+- Tobias Scheffer
+- Maik Heistermann
+date: '2020-06-11'
+year: 2020
+venue: Geoscientific Model Development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-13-2631-2020
+  openalex: W3009216045
+links:
+  paper: https://doi.org/10.5194/gmd-13-2631-2020
+topic: nowcasting
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: RainNet, a U-Net/SegNet-style CNN, nowcasts German radar precipitation to 60 min, beating optical
+  flow on MAE and CSI but underpredicting heavy rain.
+abstract: In this study, we present RainNet, a deep convolutional neural network for radar-based precipitation
+  nowcasting. Its design was inspired by the U-Net and SegNet families of deep learning models, which
+  were originally designed for binary segmentation tasks. RainNet was trained to predict continuous precipitation
+  intensities at a lead time of 5 min, using several years of quality-controlled weather radar composites
+  provided by the German Weather Service (DWD). That data set covers Germany with a spatial domain of
+  900 km×900 km and has a resolution of 1 km in space and 5 min in time. Independent verification experiments
+  were carried out on 11 summer precipitation events from 2016 to 2017. In order to achieve a lead time
+  of 1 h, a recursive approach was implemented by using RainNet predictions at 5 min lead times as model
+  inputs for longer lead times. In the verification experiments, trivial Eulerian persistence and a conventional
+  model based on optical flow served as benchmarks. The latter is available in the rainymotion library
+  and had previously been shown to outperform DWD's operational nowcasting model for the same set of verification
+  events. RainNet significantly outperforms the benchmark models at all lead times up to 60 min for the
+  routine verification metrics mean absolute error (MAE) and the critical success index (CSI) at intensity
+  thresholds of 0.125, 1, and 5 mm h −1 . However, rainymotion turned out to be superior in predicting
+  the exceedance of higher intensity thresholds (here 10 and 15 mm h −1 ). The limited ability of RainNet
+  to predict heavy rainfall intensities is an undesirable property which we attribute to a high level
+  of spatial smoothing introduced by the model. At a lead time of 5 min, an analysis of power spectral
+  density confirmed a significant loss of spectral power at length scales of 16 km and below. Obviously,
+  RainNet had learned an optimal level of smoothing to produce a nowcast at 5 min lead time. In that sense,
+  the loss of spectral power at small scales is informative, too, as it reflects the limits of predictability
+  as a function of spatial scale. Beyond the lead time of 5 min, however, the increasing level of smoothing
+  is a mere artifact – an analogue to numerical diffusion – that is not a property of RainNet itself but
+  of its recursive application. In the context of early warning, the smoothing is particularly unfavorable
+  since pronounced features of intense precipitation tend to get lost over longer lead times. Hence, we
+  propose several options to address this issue in prospective research, including an adjustment of the
+  loss function for model training, model training for longer lead times, and the prediction of threshold
+  exceedance in terms of a binary segmentation task. Furthermore, we suggest additional input data that
+  could help to better identify situations with imminent precipitation dynamics. The model code, pretrained
+  weights, and training data are provided in open repositories as an input for such future studies.
+significance: 4
+cited_by: 361
+score: 26
+highlight: false
+added: '2026-10-22'
+source: seed

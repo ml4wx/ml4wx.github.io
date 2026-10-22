@@ -1,0 +1,56 @@
+id: arxiv-2201.06173
+title: 'SunCast: Solar Irradiance Nowcasting from Geosynchronous Satellite Data'
+authors:
+- Dhileeban Kumaresan
+- Richard Wang
+- Ernesto Martinez
+- Richard Cziva
+- Alberto Todeschini
+- Colorado J Reed
+- Hossein Vahabi
+date: '2022-01-17'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2201.06173'
+  openalex: W3211878498
+links:
+  paper: https://arxiv.org/abs/2201.06173
+  pdf: https://arxiv.org/pdf/2201.06173
+orgs:
+- uc-berkeley
+topic: nowcasting
+topics:
+- applications-impacts
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: A ConvLSTM treats GOES satellite-based solar irradiance nowcasting as next-frame prediction,
+  reaching 120 W/m2 RMSE for North America up to 3 hours ahead without a GPU.
+abstract: When cloud layers cover photovoltaic (PV) panels, the amount of power the panels produce fluctuates
+  rapidly. Therefore, to maintain enough energy on a power grid to match demand, utilities companies rely
+  on reserve power sources that typically come from fossil fuels and therefore pollute the environment.
+  Accurate short-term PV power prediction enables operators to maximize the amount of power obtained from
+  PV panels and safely reduce the reserve energy needed from fossil fuel sources. While several studies
+  have developed machine learning models to predict solar irradiance at specific PV generation facilities,
+  little work has been done to model short-term solar irradiance on a global scale. Furthermore, models
+  that have been developed are proprietary and have architectures that are not publicly available or rely
+  on computationally demanding Numerical Weather Prediction (NWP) models. Here, we propose a Convolutional
+  Long Short-Term Memory Network model that treats solar nowcasting as a next frame prediction problem,
+  is more efficient than NWP models and has a straightforward, reproducible architecture. Our models can
+  predict solar irradiance for entire North America for up to 3 hours in under 60 seconds on a single
+  machine without a GPU and has a RMSE of 120 W/m2 when evaluated on 2 months of data.
+significance: 3
+cited_by: 2
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

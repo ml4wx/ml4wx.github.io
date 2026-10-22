@@ -1,0 +1,80 @@
+id: doi-10.5194-egusphere-2022-1024
+title: 'TIMBER v0.1: a conceptual framework for emulating temperature responses to tree cover change'
+authors:
+- Shruti Nath
+- Lukas Gudmundsson
+- Jonas Schwaab
+- Grégory Duveiller
+- Steven Johan De Hertog
+- Suqi Guo
+- Felix Havermann
+- Fei Luo
+- Iris Manola
+- Julia Pongratz
+- Sonia Isabelle Seneviratne
+- Carl‐Friedrich Schleussner
+- Wim Thiery
+- Quentin Lejeune
+date: '2022-11-01'
+year: 2022
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/egusphere-2022-1024
+  openalex: W4307854381
+links:
+  paper: https://doi.org/10.5194/gmd-16-4283-2023
+orgs:
+- eth-zurich
+- knmi
+- mpi-biogeochemistry
+- mpi-meteorology
+topic: climate-emulation
+type: model
+method:
+- classical-ml
+timescale:
+- climate
+spatial:
+- global
+- local
+data:
+- cmip
+status: research
+summary: A statistical GAM emulator predicts local surface temperature responses to tree cover change
+  from ESM output, offering a cheap complement to greenhouse-gas emulators.
+abstract: Abstract. Society is set to experience significant land cover changes in order to achieve the
+  temperature goals agreed upon under the Paris Agreement. Such changes carry both global implications,
+  pertaining to the biogeochemical effects of land cover change and thus the global carbon budget, and
+  regional/local implications, pertaining to the biogeophysical effects arising within the immediate area
+  of land cover change. Biogeophysical effects of land cover change are of high relevance to national
+  policy- and decision- makers and their accountance is essential towards effective deployment of land
+  cover practices that optimises between global and regional impacts. To this end, ESM outputs that isolate
+  the biogeophysical responses of climate to land cover changes are key in informing impact assessments
+  and supporting scenario development exercises. Generating multiple such ESM outputs, in a manner that
+  allows comprehensive exploration of all plausible land cover scenarios however, is computationally untenable.
+  This study proposes a framework to agilely explore the local biogeophysical responses of climate under
+  different land cover scenarios by means of a computationally inexpensive emulator. The emulator is novel
+  in that it solely represents the land cover forced, biogeophysical responses of climate, and can be
+  used as either a standalone device or supplementary to existing climate model emulators that represent
+  greenhouse gas (GHG)- or Global Mean Temperature (GMT)- forced climate responses. We start off by modelling
+  local minimum, mean and maximum surface temperature responses to tree cover changes by means of a month-
+  and Earth System Model (ESM)- specific Generalised Additive Model (GAM) trained over the whole globe.
+  2-m air temperature responses are then diagnosed from the modelled minimum and maximum surface temperature
+  responses using observationally derived relationships. Such a two-step procedure accounts for the different
+  physical representations of surface temperature responses to tree cover changes under different ESMs,
+  whilst respecting a definition of 2-m air temperature that is more consistent across ESMs and with observational
+  datasets. In exploring new tree cover change scenarios, we employ a parametric bootstrap sampling method
+  to generate multiple possible temperature responses, such that the uncertainty within the GAM's derived
+  shape of the response is also quantified. The output of the final emulator is demonstrated for the SSP
+  1-2.6 and 3-7.0 scenarios. Relevant temperature responses are identified as those displaying a clear
+  signal in relation to the surrounding uncertainty in shape of derived response, calculated as the "signal-to-noise"
+  ratio between the sample set mean and sample set variability. The emulator framework developed in this
+  study thus provides a first step towards bridging the information-gap surrounding biogeophysical implications
+  of land cover changes, allowing for smarter land-use decision making.
+significance: 3
+cited_by: 6
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,58 @@
+id: doi-10.5194-amt-15-5219-2022
+title: On the potential of a neural-network-based approach for estimating XCO 2 from OCO-2 measurements
+authors:
+- François‐Marie Bréon
+- Leslie David
+- Pierre Chatelanaz
+- Frédéric Chevallier
+date: '2022-09-15'
+year: 2022
+venue: Atmospheric measurement techniques
+venue_type: journal
+ids:
+  doi: 10.5194/amt-15-5219-2022
+  openalex: W4296105625
+links:
+  paper: https://doi.org/10.5194/amt-15-5219-2022
+topic: observations-remote-sensing
+type: model
+method:
+- other
+spatial:
+- global
+data:
+- satellite
+- stations
+status: research
+summary: Revised neural network retrieves OCO-2 XCO2 without the weak CO2 band, capturing downwind emission
+  plumes absent from training data, though latitude and date leakage was found.
+abstract: Abstract. In David et al (2021), we introduced a neural network (NN) approach for estimating
+  the column-averaged dry air mole fraction of CO2 (XCO2) and the surface pressure from the reflected
+  solar spectra acquired by the OCO-2 instrument. The results indicated great potential for the technique
+  as the comparison against both model estimates and independent TCCON measurements showed an accuracy
+  and precision similar or better than that of the operational ACOS (NASA’s Atmospheric CO2 Observations
+  from Space retrievals – ACOS) algorithm. Yet, subsequent analysis showed that the neural network estimate
+  often mimics the training dataset and is unable to retrieve small scale features such as CO2 plumes
+  from industrial sites. Importantly, we found that, with the same inputs as those used to estimate XCO2
+  and surface pressure, the NN technique is able to estimate latitude and date with unexpected skill,
+  i.e. with an error whose standard deviation is only 7° and 61 days, respectively. The information about
+  the date mainly comes from the weak CO2 band, that is influenced by the well-mixed and increasing concentrations
+  of CO2 in the stratosphere. The availability of such information in the measured spectrum may therefore
+  allow the NN to exploit it rather than the direct CO2 imprint in the spectrum, to estimate XCO2. Thus,
+  our first version of the NN performed well mostly because the XCO2 fields used for the training were
+  remarkably accurate, but it did not bring any added value. Further to this analysis, we designed a second
+  version of the NN, excluding the weak CO2 band from the input. This new version has a different behaviour
+  as it does retrieve XCO2 enhancements downwind of emission hotspots, i.e. a feature that is not in the
+  training dataset. The comparison against the reference Total Carbon Column Observing Network (TCCON)
+  and the surface-air-sample-driven inversion of the Copernicus Atmosphere Monitoring Service (CAMS) remains
+  very good, as in the first version of the NN. In addition, the difference with the CAMS model (also
+  called innovation in a data assimilation context) for NASA Atmospheric CO2 Observations from Space (ACOS)
+  and the NN estimates are significantly correlated. These results confirm the potential of the NN approach
+  for an operational processing of satellite observations aiming at the monitoring of CO2 concentrations
+  and fluxes.
+significance: 3
+cited_by: 20
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

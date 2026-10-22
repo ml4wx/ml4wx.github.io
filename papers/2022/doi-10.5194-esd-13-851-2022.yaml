@@ -1,0 +1,61 @@
+id: doi-10.5194-esd-13-851-2022
+title: 'MESMER-M: an Earth system model emulator for spatially resolved monthly temperature'
+authors:
+- Shruti Nath
+- Quentin Lejeune
+- Lea Beusch
+- Sonia Isabelle Seneviratne
+- Carl‐Friedrich Schleussner
+date: '2022-04-28'
+year: 2022
+venue: Earth System Dynamics
+venue_type: journal
+ids:
+  doi: 10.5194/esd-13-851-2022
+  openalex: W4302372615
+links:
+  paper: https://doi.org/10.5194/esd-13-851-2022
+orgs:
+- meteoswiss
+- eth-zurich
+topic: climate-emulation
+type: model
+method:
+- classical-ml
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+status: research
+summary: MESMER-M extends an Earth system model emulator to monthly local temperatures, emulating 38 CMIP6
+  models with skewed, spatially correlated variability.
+abstract: Abstract. The degree of trust placed in climate model projections is commensurate to how well
+  their uncertainty can be quantified, particularly at timescales relevant to climate policy makers. On
+  interannual to decadal timescales, model uncertainty due to internal variability dominates and is imperative
+  to understanding near-term and seasonal climate events, but hard to quantify owing to the computational
+  constraints on producing large ensembles. To this extent, emulators are valuable tools for approximating
+  climate model runs, allowing for exploration of the model uncertainty space surrounding select climate
+  variables at a significantly reduced computational cost. Most emulators, however, operate at annual
+  to seasonal timescales, leaving out monthly information that may be essential to assessing climate impacts.
+  This study extends the framework of an existing spatially resolved, annual-scale Earth System Model
+  (ESM) emulator (MESMER, Beusch et al. 2020) by a monthly downscaling module (MESMER-M), thus providing
+  local monthly temperatures from local yearly temperatures. We first linearly represent the mean response
+  of the monthly temperature cycle to yearly temperatures using a simple harmonic model, thus maintaining
+  month to month correlations and capturing changes in intra-annual variability. We then construct a month-specific
+  local variability module which generates spatio-temporally correlated residuals with month and yearly
+  temperature dependent skewness incorporated within. The performance of the resulting emulator is demonstrated
+  on 38 different ESMs from the 6th phase of the Coupled Model Intercomparison Project (CMIP6). The emulator
+  is furthermore benchmarked using a simple Gradient Boosting Regressor based, physical model trained
+  on biophysical information. We find that while regional-scale, biophysical feedbacks may induce non-uniformities
+  in the yearly to monthly temperature downscaling relationship, statistical emulation of regional effects
+  shows comparable skill to approaches with physical representation. Thus, MESMER-M is able to generate
+  ESM-like, large initial-condition ensembles of spatially explicit monthly temperature fields, thereby
+  providing monthly temperature probability distributions which are of critical value to impact assessments.
+significance: 4
+cited_by: 51
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

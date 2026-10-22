@@ -1,0 +1,51 @@
+id: doi-10.3390-atmos13101632
+title: Cloud Nowcasting with Structure-Preserving Convolutional Gated Recurrent Units
+authors:
+- Samuel A. Kellerhals
+- Fons de Leeuw
+- Cristian Rodríguez Rivero
+date: '2022-10-07'
+year: 2022
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos13101632
+  openalex: W4303613879
+links:
+  paper: https://doi.org/10.3390/atmos13101632
+  pdf: https://www.mdpi.com/2073-4433/13/10/1632/pdf?version=1665901128
+topic: nowcasting
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: ConvGRU with a structure-preserving loss forecasts European cloudiness 3 hours ahead from SEVIRI,
+  outperforming optical flow by 12.43% in R2 across time steps.
+abstract: Nowcasting of clouds is a challenging spatiotemporal task due to the dynamic nature of the atmosphere.
+  In this study, the use of convolutional gated recurrent unit networks (ConvGRUs) to produce short-term
+  cloudiness forecasts for the next 3 h over Europe is proposed, along with an optimisation criterion
+  able to preserve image structure across the predicted sequences. This approach is compared against state-of-the-art
+  optical flow algorithms using over two and a half years of observations from the Spinning Enhanced Visible
+  and Infrared Imager (SEVIRI) instrument onboard the Meteosat Second Generation satellite. We show that
+  the ConvGRU trained using our structure-preserving loss function significantly outperforms the optical
+  flow algorithms with an average change in R2, mean absolute error and structural similarity of 12.43%,
+  −8.75% and 9.68%, respectively, across all time steps. We also confirm that merging multiple optical
+  flow algorithms into an ensemble yields significant short-term performance increases (<1 h), and that
+  nowcast skill can vary significantly across different European regions. Furthermore, our results show
+  that blurry images resulting from using globally oriented loss functions can be avoided by optimising
+  for structural similarity when producing nowcasts. We thus showcase that deep-learning-based models
+  using locally oriented loss functions present a powerful new way to produce accurate cloud nowcasts,
+  with important applications to be found in solar power forecasting.
+significance: 3
+cited_by: 10
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

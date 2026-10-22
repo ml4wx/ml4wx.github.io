@@ -1,0 +1,57 @@
+id: arxiv-2212.03369
+title: Exploring Randomly Wired Neural Networks for Climate Model Emulation
+authors:
+- William Yik
+- Sam J. Silva
+- Andrew Geiss
+- Duncan Watson-Parris
+date: '2022-12-06'
+year: 2022
+venue: Artificial Intelligence for the Earth Systems
+venue_type: journal
+ids:
+  arxiv: '2212.03369'
+  doi: 10.1175/aies-d-22-0088.1
+  openalex: W4383817485
+links:
+  paper: https://doi.org/10.1175/aies-d-22-0088.1
+  pdf: https://arxiv.org/pdf/2212.03369
+orgs:
+- university-of-oxford
+topic: climate-emulation
+type: evaluation
+method:
+- cnn
+- rnn
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: Randomly wired dense layers in ClimateBench emulators improve performance in 14 of 24 cases,
+  up to 30.4% for MLPs, with no slower prediction.
+abstract: Exploring the climate impacts of various anthropogenic emissions scenarios is key to making
+  informed decisions for climate change mitigation and adaptation. State-of-the-art Earth system models
+  can provide detailed insight into these impacts, but have a large associated computational cost on a
+  per-scenario basis. This large computational burden has driven recent interest in developing cheap machine
+  learning models for the task of climate model emulation. In this manuscript, we explore the efficacy
+  of randomly wired neural networks for this task. We describe how they can be constructed and compare
+  them to their standard feedforward counterparts using the ClimateBench dataset. Specifically, we replace
+  the serially connected dense layers in multilayer perceptrons, convolutional neural networks, and convolutional
+  long short-term memory networks with randomly wired dense layers and assess the impact on model performance
+  for models with 1 million and 10 million parameters. We find that models with less complex architectures
+  see the greatest performance improvement with the addition of random wiring (up to 30.4% for multilayer
+  perceptrons). Furthermore, out of 24 different model architecture, parameter count, and prediction task
+  combinations, only one saw a statistically significant performance deficit in randomly wired networks
+  compared to their standard counterparts, with 14 cases showing statistically significant improvement.
+  We also find no significant difference in prediction speed between networks with standard feedforward
+  dense layers and those with randomly wired layers. These findings indicate that randomly wired neural
+  networks may be suitable direct replacements for traditional dense layers in many standard models.
+significance: 3
+cited_by: 5
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

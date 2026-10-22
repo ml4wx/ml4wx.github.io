@@ -1,0 +1,50 @@
+id: arxiv-2103.07028
+title: Stable Emulation of an Entire Suite of Model Physics in a State-of-the-Art GCM using a Neural Network
+authors:
+- Alexei Belochitski
+- Vladimir Krasnopolsky
+date: '2021-03-12'
+year: 2021
+venue_type: preprint
+ids:
+  arxiv: '2103.07028'
+  openalex: W4287273057
+links:
+  paper: https://arxiv.org/abs/2103.07028
+  pdf: https://arxiv.org/pdf/2103.07028
+topic: hybrid-parameterization
+topics:
+- global-medium-range
+- climate-emulation
+type: model
+method:
+- other
+timescale:
+- medium
+- climate
+spatial:
+- global
+data:
+- nwp-analysis
+- other
+status: research
+summary: A single shallow neural network emulates the full atmospheric physics suite in NCEP GFS, remaining
+  stable for medium-range forecasts and a year-long AMIP run with realistic output and speedup.
+abstract: There has been a lot of recent interest in developing hybrid models that couple deterministic
+  numerical model components to statistical model components derived using machine learning techniques.
+  One approach that we follow in this pilot study is to replace an existing computationally expensive
+  deterministic model component with its fast machine-learning-based emulator, leading to the model speed-up
+  and/or improvement. We developed a shallow neural network-based emulator of a complete suite of atmospheric
+  physics parameterizations in NCEP Global Forecast System (GFS) general circulation model (GCM). The
+  suite emulated by a single NN includes radiative transfer, cloud macro- and micro-physics, shallow and
+  deep convection, boundary layer processes, gravity wave drag, land model, etc. NCEP GFS with the neural
+  network replacing the original suite of atmospheric parameterizations produces stable and realistic
+  medium range weather forecasts for 24 initial conditions spanning all months of 2018. It also remains
+  stable in a year-long AMIP-like experiment and in the run with a quadrupled horizontal resolution. We
+  present preliminary results of parallel runs, evaluating the accuracy and speedup of the resulting hybrid
+  GCM.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

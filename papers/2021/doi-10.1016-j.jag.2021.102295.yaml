@@ -1,0 +1,67 @@
+id: doi-10.1016-j.jag.2021.102295
+title: Creating 1-km long-term (1980–2014) daily average air temperatures over the Tibetan Plateau by
+  integrating eight types of reanalysis and land data assimilation products downscaled with MODIS-estimated
+  temperature lapse rates based on machine learning
+authors:
+- Hongbo Zhang
+- Walter Willem Immerzeel
+- Fan Zhang
+- Remco J. de Kok
+- Sally J. Gorrie
+- Ming Ye
+date: '2021-01-22'
+year: 2021
+venue: International Journal of Applied Earth Observation and Geoinformation
+venue_type: journal
+ids:
+  doi: 10.1016/j.jag.2021.102295
+  openalex: W3125777535
+links:
+  paper: https://doi.org/10.1016/j.jag.2021.102295
+topic: downscaling
+topics:
+- observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- era5
+- stations
+- satellite
+status: research
+summary: Gradient boosting fuses eight reanalyses with MODIS-based lapse rates to produce a 1-km daily
+  air temperature dataset over the Tibetan Plateau for 1980-2014.
+abstract: Air temperature (Tair) is critical to modeling environmental processes (e.g. snow/glacier melting)
+  in high-elevation areas of the Tibetan Plateau (TP). To resolve the issue that Tair observations are
+  scarce in the TP western part and at high elevation, many studies have estimated daily air temperatures
+  by using MODIS land surface temperature (LST) and various reanalysis datasets. These estimates are however
+  inadequate for supporting high-resolution long-term hydrological simulations or climate analysis due
+  to the high cloud cover, short time span or low spatial resolution. To improve the Tair estimation,
+  this study develops a novel machine-learning based method that uses the Gradient Boosting model to efficiently
+  integrate observations from high-elevation stations with eight widely used air temperature reanalysis
+  and assimilation datasets (i.e., NNRP-2, 20CRV2c, JRA-55, ERA-Interim, MERRA-2, CFSR, ERA5 and GLDAS2)
+  downscaled with remote sensing-based temperature lapse rates (TLR). This method is used to generate
+  a new dataset of daily air temperature with the 1-km resolution for the period of 1980–2014. To overcome
+  the problem that TLR derived from limited stations may be unreliable, a new TLR estimation method is
+  developed to first estimate spatially continuous monthly TLRs from MODIS LST and then downscale daily
+  mean Tair from eight reanalysis and assimilation datasets to obtain Tair at the 1-km resolution using
+  the MODIS-estimated TLRs. The Gradient Boosting (GB) model is selected for integrating the eight downscaled
+  Tair and five other auxiliary variables. The models are trained and validated using observations from
+  100 common stations (i.e. China Meteorology Administration stations) and 13 independent high-elevation
+  stations (4 on glaciers). The results show that the proposed TLR estimation method can efficiently reduce
+  exceptional TLRs in the meantime keeping acceptable downscaling accuracy. The downscaled Tair from JRA-55
+  is the best among the eight downscaled datasets followed by ERA-Interim, MERRA-2, CFSR and others. Finally,
+  the GB-integrated Tair further outperforms the downscaled JRA-55 Tair with the mean root-mean-squared-deviation
+  (RMSD) of 1.7 °C versus 2.0 °C, especially in high-elevation stations with mean RMSD of 1.9 °C versus
+  2.7 °C. Both the MODIS-estimated TLR and the high-elevation training observations are demonstrated to
+  significantly improve the air temperature estimation accuracy of the GB model in high-elevation stations.
+  This study also provides a framework for integrating multiple reanalysis and assimilation temperature
+  data with elevation correction in mountainous regions that is not restricted to the TP.
+significance: 3
+cited_by: 39
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

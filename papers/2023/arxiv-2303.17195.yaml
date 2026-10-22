@@ -1,0 +1,54 @@
+id: arxiv-2303.17195
+title: Improving medium-range ensemble weather forecasts with hierarchical ensemble transformers
+authors:
+- Zied Ben-Bouallegue
+- Jonathan A Weyn
+- Mariana C A Clare
+- Jesper Dramsch
+- Peter Dueben
+- Matthew Chantry
+date: '2023-03-30'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2303.17195'
+  openalex: W4361865915
+links:
+  paper: https://arxiv.org/abs/2303.17195
+  pdf: https://arxiv.org/pdf/2303.17195
+topic: post-processing
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- nwp-analysis
+- era5
+status: research
+summary: PoET, a hierarchical transformer, calibrates ensemble members directly and improves global 2m
+  temperature skill by up to 20% over the raw ensemble.
+abstract: 'Statistical post-processing of global ensemble weather forecasts is revisited by leveraging
+  recent developments in machine learning. Verification of past forecasts is exploited to learn systematic
+  deficiencies of numerical weather predictions in order to boost post-processed forecast performance.
+  Here, we introduce PoET, a post-processing approach based on hierarchical transformers. PoET has 2 major
+  characteristics: 1) the post-processing is applied directly to the ensemble members rather than to a
+  predictive distribution or a functional of it, and 2) the method is ensemble-size agnostic in the sense
+  that the number of ensemble members in training and inference mode can differ. The PoET output is a
+  set of calibrated members that has the same size as the original ensemble but with improved reliability.
+  Performance assessments show that PoET can bring up to 20% improvement in skill globally for 2m temperature
+  and 2% for precipitation forecasts and outperforms the simpler statistical member-by-member method,
+  used here as a competitive benchmark. PoET is also applied to the ENS10 benchmark dataset for ensemble
+  post-processing and provides better results when compared to other deep learning solutions that are
+  evaluated for most parameters. Furthermore, because each ensemble member is calibrated separately, downstream
+  applications should directly benefit from the improvement made on the ensemble forecast with post-processing.'
+significance: 5
+cited_by: 7
+score: 20
+highlight: false
+added: '2026-10-22'
+source: seed

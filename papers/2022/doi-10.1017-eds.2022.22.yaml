@@ -1,0 +1,55 @@
+id: doi-10.1017-eds.2022.22
+title: Physics-informed learning of aerosol microphysics
+authors:
+- Paula Harder
+- Duncan Watson‐Parris
+- Philip Stier
+- Dominik Straßel
+- Nicolas R. Gauger
+- Janis Keuper
+date: '2022-01-01'
+year: 2022
+venue: Environmental Data Science
+venue_type: journal
+ids:
+  arxiv: '2207.11786'
+  doi: 10.1017/eds.2022.22
+  openalex: W4312716706
+links:
+  paper: https://doi.org/10.1017/eds.2022.22
+  pdf: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/C468660D2AEE8E25DC3BF507517FF91A/S263446022200022Xa.pdf/div-class-title-physics-informed-learning-of-aerosol-microphysics-div.pdf
+orgs:
+- university-of-oxford
+topic: hybrid-parameterization
+type: model
+method:
+- physics-constrained
+- classical-ml
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: Neural network emulates the M7 aerosol microphysics scheme in ECHAM-HAM with 77.1% mean R² and
+  up to 64× GPU speed-up, with physical mass constraints.
+abstract: Abstract Aerosol particles play an important role in the climate system by absorbing and scattering
+  radiation and influencing cloud properties. They are also one of the biggest sources of uncertainty
+  for climate modeling. Many climate models do not include aerosols in sufficient detail due to computational
+  constraints. To represent key processes, aerosol microphysical properties and processes have to be accounted
+  for. This is done in the ECHAM-HAM (European Center for Medium-Range Weather Forecast-Hamburg-Hamburg)
+  global climate aerosol model using the M7 microphysics, but high computational costs make it very expensive
+  to run with finer resolution or for a longer time. We aim to use machine learning to emulate the microphysics
+  model at sufficient accuracy and reduce the computational cost by being fast at inference time. The
+  original M7 model is used to generate data of input–output pairs to train a neural network (NN) on it.
+  We are able to learn the variables’ tendencies achieving an average $ {R}^2 $ score of 77.1%. We further
+  explore methods to inform and constrain the NN with physical knowledge to reduce mass violation and
+  enforce mass positivity. On a Graphics processing unit (GPU), we achieve a speed-up of up to over 64
+  times faster when compared to the original model.
+significance: 3
+cited_by: 28
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

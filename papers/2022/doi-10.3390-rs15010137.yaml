@@ -1,0 +1,52 @@
+id: doi-10.3390-rs15010137
+title: 'MSSTNet: A Multi-Scale Spatiotemporal Prediction Neural Network for Precipitation Nowcasting'
+authors:
+- Yuankang Ye
+- Feng Gao
+- Wei Xin Cheng
+- Chang Liu
+- Shaoqing Zhang
+date: '2022-12-26'
+year: 2022
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs15010137
+  openalex: W4313259290
+links:
+  paper: https://doi.org/10.3390/rs15010137
+  pdf: https://www.mdpi.com/2072-4292/15/1/137/pdf?version=1672831711
+topic: nowcasting
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: MSSTNet uses multi-scale 3D convolutions to predict precipitation nowcasts from radar echoes,
+  achieving state-of-the-art on MovingMNIST and improved real radar accuracy.
+abstract: 'Convolution-based recurrent neural networks and convolutional neural networks have been used
+  extensively in spatiotemporal prediction. However, these methods tend to concentrate on fixed-scale
+  spatiotemporal state transitions and disregard the complexity of spatiotemporal motion. Through statistical
+  analysis, we found that the distribution of the spatiotemporal sequence and the variety of spatiotemporal
+  motion state transitions exhibit some regularity. In light of these statistics and observations, we
+  propose the Multi-scale Spatiotemporal Neural Network (MSSTNet), an end-to-end neural network based
+  on 3D convolution. It can be separated into three major child modules: a distribution feature extraction
+  module, a multi-scale motion state capture module, and a feature decoding module. Furthermore, the MSST
+  unit is designed to model multi-scale spatial and temporal information in the multi-scale motion state
+  capture module. We first conduct the experiments on the MovingMNIST dataset, which is the most commonly
+  used dataset in the field of spatiotemporal prediction, MSSTNet can achieve state-of-the-art results
+  for this dataset, and ablation experiments demonstrate that the MSST unit has positive significance
+  for spatiotemporal prediction. In addition, this paper applies the model to valuable precipitation nowcasting,
+  due to efficiently capturing the multi-scale information of distribution and motion, the new MSSTNet
+  model can predict the real-world radar echo more accurately.'
+significance: 3
+cited_by: 16
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

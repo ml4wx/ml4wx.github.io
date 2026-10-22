@@ -8,7 +8,7 @@ updated every week from arXiv, journals and lab blogs.
 
 | Papers | ⭐ Highlights | Topics | Last update |
 |---:|---:|---:|---|
-| 0 | 0 | 19 | 2026-10-22 |
+| 784 | 64 | 20 | 2026-10-22 |
 
 ## Topics
 
@@ -16,44 +16,62 @@ updated every week from arXiv, journals and lab blogs.
 
 | Topic | Papers | ⭐ |
 |---|---:|---:|
-| [Nowcasting](lists/nowcasting.md) | 0 | 0 |
-| [Global medium-range NWP](lists/global-medium-range.md) | 0 | 0 |
-| [Probabilistic & ensemble forecasting](lists/probabilistic-ensembles.md) | 0 | 0 |
-| [Regional & km-scale models](lists/regional-km-scale.md) | 0 | 0 |
-| [Sub-seasonal to seasonal](lists/s2s-seasonal.md) | 0 | 0 |
-| [Climate emulation](lists/climate-emulation.md) | 0 | 0 |
+| [Nowcasting](lists/nowcasting.md) | 62 | 5 |
+| [Global medium-range NWP](lists/global-medium-range.md) | 27 | 10 |
+| [Probabilistic & ensemble forecasting](lists/probabilistic-ensembles.md) | 15 | 7 |
+| [Regional & km-scale models](lists/regional-km-scale.md) | 8 | 2 |
+| [Local & station forecasting](lists/local-forecasting.md) | 83 | 0 |
+| [Sub-seasonal to seasonal](lists/s2s-seasonal.md) | 31 | 5 |
+| [Climate emulation](lists/climate-emulation.md) | 30 | 3 |
 
 **Modelling chain**
 
 | Topic | Papers | ⭐ |
 |---|---:|---:|
-| [Hybrid physics-ML & parameterization](lists/hybrid-parameterization.md) | 0 | 0 |
-| [Data assimilation](lists/data-assimilation.md) | 0 | 0 |
-| [Downscaling & super-resolution](lists/downscaling.md) | 0 | 0 |
-| [Post-processing & calibration](lists/post-processing.md) | 0 | 0 |
-| [Foundation models](lists/foundation-models.md) | 0 | 0 |
+| [Hybrid physics-ML & parameterization](lists/hybrid-parameterization.md) | 48 | 7 |
+| [Data assimilation](lists/data-assimilation.md) | 21 | 4 |
+| [Downscaling & super-resolution](lists/downscaling.md) | 70 | 2 |
+| [Post-processing & calibration](lists/post-processing.md) | 44 | 2 |
+| [Foundation models](lists/foundation-models.md) | 9 | 2 |
 
 **Hazards & observations**
 
 | Topic | Papers | ⭐ |
 |---|---:|---:|
-| [Extremes & hazards](lists/extremes-hazards.md) | 0 | 0 |
-| [Observations & remote sensing](lists/observations-remote-sensing.md) | 0 | 0 |
+| [Extremes & hazards](lists/extremes-hazards.md) | 99 | 2 |
+| [Observations & remote sensing](lists/observations-remote-sensing.md) | 80 | 0 |
 
 **Science & cross-cutting**
 
 | Topic | Papers | ⭐ |
 |---|---:|---:|
-| [Climate analysis & attribution](lists/climate-analysis-attribution.md) | 0 | 0 |
-| [Explainability, uncertainty & physics](lists/xai-uq-physics.md) | 0 | 0 |
-| [Benchmarks, datasets & evaluation](lists/benchmarks-data-eval.md) | 0 | 0 |
-| [Software, scaling & compression](lists/infra-software.md) | 0 | 0 |
-| [Applications & impacts](lists/applications-impacts.md) | 0 | 0 |
-| [LLMs & agents](lists/llms-agents.md) | 0 | 0 |
+| [Climate analysis & attribution](lists/climate-analysis-attribution.md) | 43 | 2 |
+| [Explainability, uncertainty & physics](lists/xai-uq-physics.md) | 20 | 3 |
+| [Benchmarks, datasets & evaluation](lists/benchmarks-data-eval.md) | 17 | 5 |
+| [Software, scaling & compression](lists/infra-software.md) | 10 | 2 |
+| [Applications & impacts](lists/applications-impacts.md) | 58 | 1 |
+| [LLMs & agents](lists/llms-agents.md) | 9 | 0 |
 
 Coming later: Ocean & sea ice, Hydrology & floods, Atmospheric composition & air quality.
-Papers for these topics are collected in [`parked/`](parked/) (0 so far) and will be
+Papers for these topics are collected in [`parked/`](parked/) (208 so far) and will be
 classified when the topics are switched on.
+
+## Latest highlights
+
+| Date | Paper | From |
+|---|---|---|
+| 2026-08-06 | [Operational tropical cyclone forecasting with AI](https://doi.org/10.1038/s41586-026-10953-2) | Colorado State University (incl. CIRA), Google DeepMind, Google Research, Met Office, NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |
+| 2025-09-23 | [An update to ECMWF's machine-learned weather forecast model AIFS](https://arxiv.org/abs/2509.18994) | ECMWF |
+| 2025-09-16 | [AERIS: Argonne Earth Systems Model for Reliable and Skillful Predictions](https://arxiv.org/abs/2509.13523) | Allen Institute for AI (Ai2, ACE), Argonne National Laboratory, University of California, Los Angeles (UCLA), University of Chicago |
+| 2025-09-15 | [SamudrACE: Fast and Accurate Coupled Climate Modeling with 3D Ocean and Atmosphere Emulators](https://arxiv.org/abs/2509.12490) | Allen Institute for AI (Ai2, ACE), Columbia University (LEAP, Lamont-Doherty), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), New York University (M2LInES), Princeton University |
+| 2025-03-31 | [Skilful global seasonal predictions from a machine learning weather model trained on reanalysis data](https://arxiv.org/abs/2503.23953) | Allen Institute for AI (Ai2, ACE), Met Office |
+| 2024-12-20 | [AIFS-CRPS: Ensemble forecasting using a model trained with a loss function based on the Continuous Ranked Probability Score](https://arxiv.org/abs/2412.15832) | ECMWF |
+| 2024-12-17 | [ArchesWeather & ArchesWeatherGen: a deterministic and generative model for efficient ML weather forecasting](https://arxiv.org/abs/2412.12971) | ECMWF, Inria |
+| 2024-12-16 | [Neural general circulation models optimized to predict satellite-based precipitation observations](https://arxiv.org/abs/2412.11973) | Google Research |
+| 2024-11-18 | [ACE2: Accurately learning subseasonal to decadal atmospheric variability and forced responses](https://arxiv.org/abs/2411.11268) | Allen Institute for AI (Ai2, ACE), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |
+| 2024-10-19 | [Can AI weather models predict out-of-distribution gray swan tropical cyclones?](https://arxiv.org/abs/2410.14932) | New York University (M2LInES), University of Chicago |
+| 2024-10-02 | [Dynamical-generative downscaling of climate model ensembles](https://arxiv.org/abs/2410.01776) | California Institute of Technology (Caltech), Google Research |
+| 2024-09-27 | [Robustness of AI-based weather forecasts in a changing climate](https://arxiv.org/abs/2409.18529) | ECMWF |
 
 ## How it works
 

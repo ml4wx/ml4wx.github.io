@@ -1,0 +1,45 @@
+id: arxiv-2205.02457
+title: 'MMINR: Multi-frame-to-Multi-frame Inference with Noise Resistance for Precipitation Nowcasting
+  with Radar'
+authors:
+- Feng Sun
+- Cong Bai
+date: '2022-05-05'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2205.02457'
+links:
+  paper: https://arxiv.org/abs/2205.02457
+  pdf: https://arxiv.org/pdf/2205.02457
+topic: nowcasting
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: A parallel multi-frame radar nowcasting model with noise dropout and semantic restore modules
+  reduces error accumulation and achieves competitive scores against state-of-the-art methods.
+abstract: Precipitation nowcasting based on radar echo maps is essential in meteorological research. Recently,
+  Convolutional RNNs based methods dominate this field, but they cannot be solved by parallel computation
+  resulting in longer inference time. FCN based methods adopt a multi-frame-to-single-frame inference
+  (MSI) strategy to avoid this problem. They feedback into the model again to predict the next time step
+  to get multi-frame nowcasting results in the prediction phase, which will lead to the accumulation of
+  prediction errors. In addition, precipitation noise is a crucial factor contributing to high prediction
+  errors because of its unpredictability. To address this problem, we propose a novel Multi-frame-to-Multi-frame
+  Inference (MMI) model with Noise Resistance (NR) named MMINR. It avoids error accumulation and resists
+  precipitation noiseś negative effect in parallel computation. NR contains a Noise Dropout Module (NDM)
+  and a Semantic Restore Module (SRM). NDM deliberately dropout noise simple yet efficient, and SRM supplements
+  semantic information of features to alleviate the problem of semantic information mistakenly lost by
+  NDM. Experimental results demonstrate that MMINR can attain competitive scores compared with other SOTAs.
+  The ablation experiments show that the proposed NDM and SRM can solve the aforementioned problems.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

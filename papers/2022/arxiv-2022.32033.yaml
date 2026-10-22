@@ -1,0 +1,67 @@
+id: arxiv-2022.32033
+title: An Improved Deep Learning Model for High-Impact Weather Nowcasting
+authors:
+- Shun Yao
+- Haonan Chen
+- Elizabeth Thompson
+- Robert C. Cifelli
+date: '2022-01-01'
+year: 2022
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  arxiv: '2022.32033'
+  doi: 10.1109/jstars.2022.3203398
+  openalex: W4294167273
+links:
+  paper: https://doi.org/10.1109/jstars.2022.3203398
+  pdf: https://ieeexplore.ieee.org/ielx7/4609443/4609444/09873914.pdf
+orgs:
+- noaa
+- colorado-state-university
+topic: nowcasting
+topics:
+- extremes-hazards
+type: model
+method:
+- rnn
+- transformer
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: A self-attention GRU nowcasts radar echoes for landfalling hurricanes and extreme convective
+  rainfall in the southeast US, aiming to improve skill beyond the first hour.
+abstract: Accurate nowcasting (short-term prediction, 0-6 h) of high-impact weather such as landfalling
+  hurricanes and extreme convective precipitation plays a critical role in natural disaster monitoring
+  and mitigation. A number of nowcasting approaches have been developed in the past few decades such as
+  optical flow and the tracking radar echoes by correlation (TREC) system. Most of these mainstream operational
+  techniques are based on radar echo map extrapolation, which determines the velocity and direction of
+  precipitation systems using historical and current radar observations. However, the skill of the traditional
+  extrapolation method decreases rapidly within the first hour. In order to improve nowcasting skill,
+  recent studies have proposed using deep learning methods such as Convolutional Recurrent Neural Network
+  (ConvRNN) and Trajectory Gate Recurrent Unit (TrajGRU). But none of these methods focuses on high-impact
+  weather events, and the deep learning models trained based on general precipitation events cannot meet
+  the demand of accurate warnings and decision-making at the scales required for high-impact weather events
+  such as hurricanes. Using multi-radar observations, this paper introduces the idea of self-attention
+  and develops a self-attention-based GRU (SaGRU) to enhance its generalization capability and scalability
+  in predicting high-impact weather events. In particular, two types of high-impact weather systems, namely,
+  landfalling hurricanes and extreme convective precipitation events, are investigated. Three models are
+  trained based on hurricane events, heavy rainfall (i.e., non-hurricane) events, and all events combined
+  in the southeast United States during 2015 and 2020. The impacts of different data sources on the nowcasting
+  performance are quantified. The evaluation results of nowcasting products show that our saGRU performs
+  very well in predicting hurricane-induced rainfall. In the new methodology, the data from non-hurricane
+  events are shown to provide useful information in enhancing the nowcasting performance during hurricane
+  events as the model trained by combining all the hurricane and non-hurricane events has the best performance.
+  In addition, this article quantifies the impact of the sequence length of input radar observations on
+  the nowcasting performance, which shows that five consecutive observations are sufficient to obtain
+  a stable model, and even two consecutive observations can produce reasonable results.
+significance: 4
+cited_by: 40
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

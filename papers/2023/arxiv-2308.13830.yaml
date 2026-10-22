@@ -1,0 +1,48 @@
+id: arxiv-2308.13830
+title: The Sampling Method for Optimal Precursors of ENSO Events
+authors:
+- Bin Shi
+- Junjie Ma
+date: '2023-08-26'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2308.13830'
+  openalex: W4386270150
+links:
+  paper: https://arxiv.org/abs/2308.13830
+  pdf: https://arxiv.org/pdf/2308.13830
+topic: s2s-seasonal
+type: model
+method:
+- other
+timescale:
+- seasonal
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Sampling-based CNOP method finds ENSO optimal precursors in the Zebiak-Cane model without an
+  adjoint, matching adjoint results with parallelizable samples.
+abstract: El Niño-Southern Oscillation (ENSO) is one of the significant climate phenomena, which appears
+  periodically in the tropic Pacific. The intermediate coupled ocean-atmosphere Zebiak-Cane (ZC) model
+  is the first and classical one designed to numerically forecast the ENSO events. Traditionally, the
+  conditional nonlinear optimal perturbation (CNOP) approach has been used to capture optimal precursors
+  in practice. In this paper, based on state-of-the-art statistical machine learning techniques, we investigate
+  the sampling algorithm proposed in [Shi and Sun, 2023] to obtain optimal precursors via the CNOP approach
+  in the ZC model. For the ZC model, or more generally, the numerical models with dimension $\mathrm{O}(10^4-10^5)$,
+  the numerical performance, regardless of the statically spatial patterns and the dynamical nonlinear
+  time evolution behaviors as well as the corresponding quantities and indices, shows the high efficiency
+  of the sampling method by comparison with the traditional adjoint method. The sampling algorithm does
+  not only reduce the gradient (first-order information) to the objective function value (zeroth-order
+  information) but also avoids the use of the adjoint model, which is hard to develop in the coupled ocean-atmosphere
+  models and the parameterization models. In addition, based on the key characteristic that the samples
+  are independently and identically distributed, we can implement the sampling algorithm by parallel computation
+  to shorten the computation time. Meanwhile, we also show in the numerical experiments that the important
+  features of optimal precursors can be still captured even when the number of samples is reduced sharply.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

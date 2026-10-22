@@ -1,0 +1,58 @@
+id: arxiv-1910.10566
+title: Tropical Cyclone Track Forecasting using Fused Deep Learning from Aligned Reanalysis Data
+authors:
+- Sophie Giffard-Roisin
+- Mo Yang
+- Guillaume Charpiat
+- Christina Kumler-Bonfanti
+- Balázs Kégl
+- Claire Monteleoni
+date: '2019-10-23'
+year: 2019
+venue: Frontiers in Big Data
+venue_type: journal
+ids:
+  arxiv: '1910.10566'
+  doi: 10.3389/fdata.2020.00001
+  openalex: W3002152246
+links:
+  paper: https://doi.org/10.3389/fdata.2020.00001
+  pdf: https://arxiv.org/pdf/1910.10566
+orgs:
+- inria
+- noaa
+topic: extremes-hazards
+topics:
+- global-medium-range
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- global
+data:
+- era5
+- other
+status: research
+summary: A neural network fusing past storm trajectories with reanalysis wind and pressure fields forecasts
+  24 h tropical cyclone displacement in seconds, complementary to dynamical models.
+abstract: The forecast of tropical cyclone trajectories is crucial for the protection of people and property.
+  Although forecast dynamical models can provide high-precision short-term forecasts, they are computationally
+  demanding, and current statistical forecasting models have much room for improvement given that the
+  database of past hurricanes is constantly growing. Machine learning methods, that can capture non-linearities
+  and complex relations, have only been scarcely tested for this application. We propose a neural network
+  model fusing past trajectory data and reanalysis atmospheric images (wind and pressure 3D fields). We
+  use a moving frame of reference that follows the storm center for the 24h tracking forecast. The network
+  is trained to estimate the longitude and latitude displacement of tropical cyclones and depressions
+  from a large database from both hemispheres (more than 3000 storms since 1979, sampled at a 6 hour frequency).
+  The advantage of the fused network is demonstrated and a comparison with current forecast models shows
+  that deep learning methods could provide a valuable and complementary prediction. Moreover, our method
+  can give a forecast for a new storm in a few seconds, which is an important asset for real-time forecasts
+  compared to traditional forecasts.
+significance: 3
+cited_by: 129
+score: 57
+highlight: false
+added: '2026-10-22'
+source: backfill

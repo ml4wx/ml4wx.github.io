@@ -1,0 +1,49 @@
+id: doi-10.5194-npg-29-171-2022
+title: Using neural networks to improve simulations in the gray zone
+authors:
+- Raphael Kriegmair
+- Yvonne Ruckstuhl
+- Stephan Rasp
+- George C. Craig
+date: '2022-05-02'
+year: 2022
+venue: Nonlinear processes in geophysics
+venue_type: journal
+ids:
+  doi: 10.5194/npg-29-171-2022
+  openalex: W4225279804
+links:
+  paper: https://doi.org/10.5194/npg-29-171-2022
+  pdf: https://npg.copernicus.org/articles/29/171/2022/npg-29-171-2022.pdf
+topic: hybrid-parameterization
+type: model
+method:
+- physics-constrained
+- classical-ml
+timescale:
+- short
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Neural network learns unresolved-scale error in a shallow water model mimicking convection, extending
+  forecast skill to one day; a mass-conservation penalty delays drift.
+abstract: Abstract. Machine learning represents a potential method to cope with the gray zone problem
+  of representing motions in dynamical systems on scales comparable to the model resolution. Here we explore
+  the possibility of using a neural network to directly learn the error caused by unresolved scales. We
+  use a modified shallow water model which includes highly nonlinear processes mimicking atmospheric convection.
+  To create the training dataset we run the model in a high and a low-resolution setup and compare the
+  difference after one low resolution time step starting from the same initial conditions, thereby obtaining
+  an exact target. The neural network is able to learn a large portion of the difference when evaluated
+  offline on a validation set. When coupled to the low-resolution model, we find large forecast improvements
+  up to one day on average. After this, the accumulated error due to the mass conservation violation of
+  the neural network starts to dominate and deteriorates the forecast. This deterioration can effectively
+  be delayed by adding a penalty term to the loss function used to train the ANN to conserve mass in a
+  weak sense. This study reinforces the need to include physical constraints in neural network parameterizations.
+significance: 3
+cited_by: 4
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

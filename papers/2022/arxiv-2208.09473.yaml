@@ -1,0 +1,57 @@
+id: arxiv-2208.09473
+title: 'Carefully choose the baseline: Lessons learned from applying XAI attribution methods for regression
+  tasks in geoscience'
+authors:
+- Antonios Mamalakis
+- Elizabeth A. Barnes
+- Imme Ebert-Uphoff
+date: '2022-08-19'
+year: 2022
+venue: Artificial Intelligence for the Earth Systems
+venue_type: journal
+ids:
+  arxiv: '2208.09473'
+  doi: 10.1175/aies-d-22-0058.1
+  openalex: W4310442430
+links:
+  paper: https://doi.org/10.1175/aies-d-22-0058.1
+  pdf: https://arxiv.org/pdf/2208.09473
+orgs:
+- colorado-state-university
+topic: xai-uq-physics
+topics:
+- climate-analysis-attribution
+type: evaluation
+method:
+- classical-ml
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: Shows XAI attributions for a climate-signal network change substantially with the chosen baseline,
+  using large-ensemble SSP3-7.0 simulations, so baseline choice must match the science question.
+abstract: Methods of eXplainable Artificial Intelligence (XAI) are used in geoscientific applications
+  to gain insights into the decision-making strategy of Neural Networks (NNs) highlighting which features
+  in the input contribute the most to a NN prediction. Here, we discuss our lesson learned that the task
+  of attributing a prediction to the input does not have a single solution. Instead, the attribution results
+  and their interpretation depend greatly on the considered baseline (sometimes referred to as reference
+  point) that the XAI method utilizes; a fact that has been overlooked so far in the literature. This
+  baseline can be chosen by the user or it is set by construction in the method s algorithm, often without
+  the user being aware of that choice. We highlight that different baselines can lead to different insights
+  for different science questions and, thus, should be chosen accordingly. To illustrate the impact of
+  the baseline, we use a large ensemble of historical and future climate simulations forced with the SSP3-7.0
+  scenario and train a fully connected NN to predict the ensemble- and global-mean temperature (i.e.,
+  the forced global warming signal) given an annual temperature map from an individual ensemble member.
+  We then use various XAI methods and different baselines to attribute the network predictions to the
+  input. We show that attributions differ substantially when considering different baselines, as they
+  correspond to answering different science questions. We conclude by discussing some important implications
+  and considerations about the use of baselines in XAI research.
+significance: 4
+cited_by: 47
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

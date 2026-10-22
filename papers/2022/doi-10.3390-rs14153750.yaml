@@ -1,0 +1,57 @@
+id: doi-10.3390-rs14153750
+title: Fusion of CMONOC and ERA5 PWV Products Based on Backpropagation Neural Network
+authors:
+- Dong Ren
+- Yong Wang
+- Guocheng Wang
+- Lintao Liu
+date: '2022-08-05'
+year: 2022
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs14153750
+  openalex: W4292451565
+links:
+  paper: https://doi.org/10.3390/rs14153750
+  pdf: https://www.mdpi.com/2072-4292/14/15/3750/pdf?version=1659690385
+topic: observations-remote-sensing
+topics:
+- post-processing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- era5
+- stations
+- satellite
+status: research
+summary: Backpropagation neural network fuses GNSS precipitable water vapour with ERA5, cutting ERA5 RMSE
+  by 18.5% in China and raising correlation to 0.99.
+abstract: Data fusion is an effective method to obtain high-precision and high-spatiotemporal-resolution
+  precipitable water vapor (PWV) products, which play an important role in understanding climate change
+  and meteorological monitoring. However, existing fusion methods have some shortcomings, such as ignoring
+  the applicability of the model space or the high complexity of model operation. In this study, the high-precision
+  and high-temporal-resolution Global Navigation Satellite System (GNSS) PWV was used to calibrate and
+  optimize the ERA5 PWV product of the European Center for Medium-Range Weather Forecasts Reanalysis 5
+  (ERA5) with high spatial resolution to improve its accuracy, and its applicability was verified at the
+  spatiotemporal scale. First, this study obtained accurate GNSS PWV from meteorological data from stations
+  and used it as the true value to analyze the distribution of the ERA5 PWV in mainland China. The results
+  showed that the ERA5 PWV showed significant spatial and temporal differences. Then, a backpropagation
+  neural network (BPNN) fusion correction model with additional constraints was established. The correction
+  results showed that the bias of the ERA5 PWV mainly fluctuated near 0, the correlation between the ERA5
+  PWV and GNSS PWV was increased to 0.99, and the positive improvement rate of the root-mean-square error
+  (RMSE) was 95%. In the temporal scale validation, the RMSE of the ERA5 PWV decreased from 2.05 mm to
+  1.67 mm, an improvement of 18.54%. In the spatial scale validation, the RMSE of the four seasons decreased
+  by 0.26–80% (spring), 0.28–70.71% (summer), 0.28–45.23% (autumn), and 0.30–40.75% (winter). Especially
+  in the summer and plateau mountainous areas where the ERA5 PWV performance was poor, the model showed
+  suitable stability. Finally, the fusion model was used to generate a new PWV product, which improved
+  the accuracy of ERA5 PWV on the basis of ensuring the spatial resolution.
+significance: 3
+cited_by: 12
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

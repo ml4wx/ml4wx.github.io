@@ -1,0 +1,56 @@
+id: doi-10.3390-atmos14010157
+title: A Neural-Network Based MPAS—Shallow Water Model and Its 4D-Var Data Assimilation System
+authors:
+- Xiaoxu Tian
+- Luke Conibear
+- Jeffrey Steward
+date: '2023-01-10'
+year: 2023
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos14010157
+  openalex: W4317547549
+links:
+  paper: https://doi.org/10.3390/atmos14010157
+  pdf: https://www.mdpi.com/2073-4433/14/1/157/pdf?version=1673355833
+orgs:
+- tomorrow-io
+topic: data-assimilation
+topics:
+- hybrid-parameterization
+type: model
+method:
+- differentiable
+- classical-ml
+timescale:
+- short
+spatial:
+- global
+data:
+- era5
+status: research
+summary: A neural-network shallow-water emulator of MPAS with tangent-linear and adjoint code enables
+  a continuous 4D-Var assimilation system demonstrated on twin experiments.
+abstract: The technique of machine learning has been increasingly applied in numerical weather predictions.
+  The aim of this study is to explore the application of a neural network in data assimilation by making
+  use of the convenience in obtaining the tangent linear and adjoint (TL/AD) of a neural network (NN)
+  and formulating a NN-based four-dimensional variational (4D-Var) DA system. A NN-based shallow water
+  (SW) model is developed in this study. The NN model consists of three layers. The weights and biases
+  in the NN-based SW model are trained with 60 years of hourly ERA5 geopotentials and wind field at 500
+  hPa as initial conditions and the corresponding 12-h forecasts by Model for Prediction Across Scales
+  (MPAS)-SW, in total of 534,697 sets of samples. The 12-h forecasts from independent dates made by NN-based
+  SW prove to closely emulate the simulations by the actual MPAS-SW model. This study further shows that
+  the TL/AD of an NN model can be easily developed and validated. The ease of obtaining the TL/AD makes
+  NN conveniently applicable in various aspects within a data assimilation (DA) system. To demonstrate
+  such, a continuous 4D-Var DA system is also developed with the forward NN and its adjoint. To demonstrate
+  the functionality of the NN-based 4D-Var DA system, the results from a higher resolution simulation
+  will be treated as observations and assimilated to analyze the low resolution initial conditions. The
+  forecasts starting from the analyzed initial conditions will be compared with those without assimilation
+  to demonstrate improvements.
+significance: 3
+cited_by: 5
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

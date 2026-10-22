@@ -1,0 +1,45 @@
+id: arxiv-2310.19385
+title: Gradient-free online learning of subgrid-scale dynamics with neural emulators
+authors:
+- Hugo Frezat
+- Ronan Fablet
+- Guillaume Balarac
+- Julien Le Sommer
+date: '2023-10-30'
+year: 2023
+venue: 'Journal of Advances in Modeling Earth Systems: Volume 18, Issue 8 (August 2026)'
+venue_type: journal
+ids:
+  arxiv: '2310.19385'
+  doi: 10.1029/2023ms004140
+links:
+  paper: https://arxiv.org/abs/2310.19385
+  pdf: https://arxiv.org/pdf/2310.19385
+topic: hybrid-parameterization
+type: model
+method:
+- other
+spatial:
+- global
+data:
+- other
+status: research
+summary: Trains neural subgrid parametrizations with a posteriori losses via a neural emulator that propagates
+  gradients through non-differentiable solvers, tested on Lorenz-96 and quasi-geostrophic systems.
+abstract: In this paper, we propose a generic algorithm to train machine learning-based subgrid parametrizations
+  online, i.e., with $\textit{a posteriori}$ loss functions, but for non-differentiable numerical solvers.
+  The proposed approach leverages a neural emulator to approximate the reduced state-space solver, which
+  is then used to allow gradient propagation through temporal integration steps. We apply this methodology
+  on a chaotic two-timescales Lorenz-96 system and a single layer quasi-geostrophic system with zonal
+  dynamics, known to be highly unstable with offline strategies. Using our algorithm, we are able to train
+  a parametrization that recovers most of the benefits of online strategies without having to compute
+  the gradient of the original solver. We found that training the neural emulator and parametrization
+  components separately with different loss quantities is necessary in order to minimize the propagation
+  of approximation biases. Experiments on emulator architectures with different complexities also indicates
+  that emulator performance is key in order to learn an accurate parametrization. This work is a step
+  towards learning parametrization with online strategies for climate models.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,57 @@
+id: arxiv-2302.08720
+title: 'Algorithmic Hallucinations of Near-Surface Winds: Statistical Downscaling with Generative Adversarial
+  Networks to Convection-Permitting Scales'
+authors:
+- Nicolaas J. Annau
+- Alex J. Cannon
+- Adam H. Monahan
+date: '2023-02-17'
+year: 2023
+venue: Artificial Intelligence for the Earth Systems
+venue_type: journal
+ids:
+  arxiv: '2302.08720'
+  doi: 10.1175/aies-d-23-0015.1
+  openalex: W4386925640
+links:
+  paper: https://doi.org/10.1175/aies-d-23-0015.1
+  pdf: https://arxiv.org/pdf/2302.08720
+orgs:
+- eccc
+topic: downscaling
+type: evaluation
+method:
+- gan-vae
+- cnn
+spatial:
+- regional
+data:
+- km-scale-sim
+status: research
+summary: GANs statistically downscale near-surface winds to convection-permitting WRF scales, with spectral
+  analysis exposing spatial-structure biases and a partial frequency-separation loss.
+abstract: This paper explores the application of emerging machine learning methods from image super-resolution
+  (SR) to the task of statistical downscaling. We specifically focus on convolutional neural network-based
+  Generative Adversarial Networks (GANs). Our GANs are conditioned on low-resolution (LR) inputs to generate
+  high-resolution (HR) surface winds emulating Weather Research and Forecasting (WRF) model simulations
+  over North America. Unlike traditional SR models, where LR inputs are idealized coarsened versions of
+  the HR images, WRF emulation involves using non-idealized LR and HR pairs resulting in shared-scale
+  mismatches due to internal variability. Our study builds upon current SR-based statistical downscaling
+  by experimenting with a novel frequency-separation (FS) approach from the computer vision field. To
+  assess the skill of SR models, we carefully select evaluation metrics, and focus on performance measures
+  based on spatial power spectra. Our analyses reveal how GAN configurations influence spatial structures
+  in the generated fields, particularly biases in spatial variability spectra. Using power spectra to
+  evaluate the FS experiments reveals that successful applications of FS in computer vision do not translate
+  to climate fields. However, the FS experiments demonstrate the sensitivity of power spectra to a commonly
+  used GAN-based SR objective function, which helps interpret and understand its role in determining spatial
+  structures. This result motivates the development of a novel partial frequency-separation scheme as
+  a promising configuration option. We also quantify the influence on GAN performance of non-idealized
+  LR fields resulting from internal variability. Furthermore, we conduct a spectra-based feature-importance
+  experiment allowing us to explore the dependence of the spatial structure of generated fields on different
+  physically relevant LR covariates.
+significance: 4
+cited_by: 20
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

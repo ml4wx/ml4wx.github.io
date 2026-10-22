@@ -1,0 +1,53 @@
+id: doi-10.3390-en16114290
+title: 'Calibration of GFS Solar Irradiation Forecasts: A Case Study in Romania'
+authors:
+- Sergiu-Mihai Hategan
+- Nicoleta Stefu
+- Marius Paulescu
+date: '2023-05-24'
+year: 2023
+venue: Energies
+venue_type: journal
+ids:
+  doi: 10.3390/en16114290
+  openalex: W4378228107
+links:
+  paper: https://doi.org/10.3390/en16114290
+  pdf: https://www.mdpi.com/1996-1073/16/11/4290/pdf?version=1684913560
+topic: post-processing
+topics:
+- applications-impacts
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: research
+summary: An SVR and MLP ensemble calibrates GFS hourly solar irradiation forecasts in Romania, cutting
+  normalized RMSE by about 16% using sky imagery.
+abstract: Models based on Numerical Weather Prediction (NWP) are widely used for the day-ahead forecast
+  of solar resources. This study is focused on the calibration of the hourly global solar irradiation
+  forecasts provided by the Global Forecast System (GFS), a model from the NWP class. Since the evaluation
+  of GFS raw forecasts sometimes shows a high degree of uncertainty (the relative error exceeding 100%),
+  a procedure for reducing the errors is needed as a prerequisite for engineering applications. In this
+  study, a deep analysis of the error sources in relation to the state of the atmosphere is reported.
+  Of special note is the use of sky imagery in the identification process. Generally, it has been found
+  that the largest errors are determined by the underestimation of cloud coverage. For calibration, a
+  new ensemble forecast is proposed. It combines two machine learning approaches, Support Vector Regression
+  and Multi-Layer Perceptron. In contrast to a typical calibration, the objective function is constructed
+  based on the absolute error instead of the traditional root mean squared error. In terms of normalized
+  root mean squared error, the calibration roughly reduces the uncertainty in hourly global solar irradiation
+  by 16%. The study was conducted with high-quality ground-measured data from the Solar Platform of the
+  West University of Timisoara, Romania. To ensure high accessibility, all the parameters required to
+  run the proposed calibration procedures are provided.
+significance: 3
+cited_by: 8
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

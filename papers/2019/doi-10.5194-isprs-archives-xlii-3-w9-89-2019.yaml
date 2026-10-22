@@ -1,0 +1,55 @@
+id: doi-10.5194-isprs-archives-xlii-3-w9-89-2019
+title: 'AENN: A GENERATIVE ADVERSARIAL NEURAL NETWORK FOR WEATHER RADAR ECHO EXTRAPOLATION'
+authors:
+- Jinrui Jing
+- Qian Li
+- X. Y. Ding
+- Nengli Sun
+- R. Tang
+- Y. L. Cai
+date: '2019-10-25'
+year: 2019
+venue: "\x98The \x9Cinternational archives of the photogrammetry, remote sensing and spatial information\
+  \ sciences/International archives of the photogrammetry, remote sensing and spatial information sciences"
+venue_type: journal
+ids:
+  doi: 10.5194/isprs-archives-xlii-3-w9-89-2019
+  openalex: W2981732294
+links:
+  paper: https://doi.org/10.5194/isprs-archives-xlii-3-w9-89-2019
+  pdf: https://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XLII-3-W9/89/2019/isprs-archives-XLII-3-W9-89-2019.pdf
+topic: nowcasting
+type: model
+method:
+- gan-vae
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: A GAN with conditional generator and two discriminators extrapolates radar echoes 0.5 to 1.5
+  h ahead, reducing blur and outperforming baseline models.
+abstract: Abstract. Weather radar echo is one of the fundamental data for meteorological workers to weather
+  systems identification and classification. Through the technique of weather radar echo extrapolation,
+  the future short-term weather conditions can be predicted and severe convection storms can be warned.
+  However, traditional extrapolation methods cannot offer accurate enough extrapolation results since
+  their modeling capacity is limited, the recent deep learning based methods make some progress but still
+  remains a problem of blurry prediction when making deeper extrapolation, which may due to they choose
+  the mean square error as their loss function and that will lead to losing echo details. To address this
+  problem and make a more realistic and accurate extrapolation, we propose a deep learning model called
+  Adversarial Extrapolation Neural Network (AENN), which is a Generative Adversarial Network (GAN) structure
+  and consist of a conditional generator and two discriminators, echo-frame discriminator and echo-sequence
+  discriminator. The generator and discriminators are trained alternately in an adversarial way to make
+  the final extrapolation results be realistic and accurate. To evaluate the model, we conduct experiments
+  on extrapolating 0.5h, 1h, and 1.5h imminent future echoes, the results show that our proposed AENN
+  can achieve the expected effect and outperforms other models significantly, which has a powerful potential
+  application value for short-term weather forecasting.
+significance: 4
+cited_by: 38
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

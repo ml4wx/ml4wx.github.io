@@ -1,0 +1,54 @@
+id: arxiv-2211.15856
+title: 'Beyond Ensemble Averages: Leveraging Climate Model Ensembles for Subseasonal Forecasting'
+authors:
+- Elena Orlova
+- Haokun Liu
+- Raphael Rossellini
+- Benjamin A. Cash
+- Rebecca Willett
+date: '2022-11-29'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2211.15856'
+  doi: 10.1175/aies-d-23-0103.1
+links:
+  paper: https://arxiv.org/abs/2211.15856
+  pdf: https://arxiv.org/pdf/2211.15856
+topic: post-processing
+topics:
+- s2s-seasonal
+type: model
+method:
+- classical-ml
+- cnn
+timescale:
+- s2s
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: ML post-processing of lagged ensemble forecasts improves two-week-ahead monthly precipitation
+  and temperature forecasts over the continental US, beating climatology and ensemble means.
+abstract: Producing high-quality forecasts of key climate variables, such as temperature and precipitation,
+  on subseasonal time scales has long been a gap in operational forecasting. This study explores an application
+  of machine learning (ML) models as post-processing tools for subseasonal forecasting. Lagged numerical
+  ensemble forecasts (i.e., an ensemble where the members have different initialization dates) and observational
+  data, including relative humidity, pressure at sea level, and geopotential height, are incorporated
+  into various ML methods to predict monthly average precipitation and two-meter temperature two weeks
+  in advance for the continental United States. For regression, quantile regression, and tercile classification
+  tasks, we consider using linear models, random forests, convolutional neural networks, and stacked models
+  (a multi-model approach based on the prediction of the individual ML models). Unlike previous ML approaches
+  that often use ensemble mean alone, we leverage information embedded in the ensemble forecasts to enhance
+  prediction accuracy. Additionally, we investigate extreme event predictions that are crucial for planning
+  and mitigation efforts. Considering ensemble members as a collection of spatial forecasts, we explore
+  different approaches to using spatial information. Trade-offs between different approaches may be mitigated
+  with model stacking. Our proposed models outperform standard baselines such as climatological forecasts
+  and ensemble means. In addition, we investigate feature importance, trade-offs between using the full
+  ensemble or only the ensemble mean, and different modes of accounting for spatial variability.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

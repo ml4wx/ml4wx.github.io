@@ -1,0 +1,59 @@
+id: arxiv-2005.06613
+title: A framework for probabilistic weather forecast post-processing across models and lead times using
+  machine learning
+authors:
+- Charlie Kirkwood
+- Theo Economou
+- Henry Odbert
+- Nicolas Pugeault
+date: '2020-05-06'
+year: 2020
+venue: Philosophical Transactions of the Royal Society A Mathematical Physical and Engineering Sciences
+venue_type: journal
+ids:
+  arxiv: '2005.06613'
+  doi: 10.1098/rsta.2020.0099
+  openalex: W3024663870
+links:
+  paper: https://doi.org/10.1098/rsta.2020.0099
+  pdf: https://arxiv.org/pdf/2005.06613
+orgs:
+- met-office
+topic: post-processing
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: pre-operational
+summary: Quantile regression forests post-process and combine multiple NWP models across lead times into
+  calibrated probabilistic road surface temperature forecasts.
+abstract: 'Forecasting the weather is an increasingly data intensive exercise. Numerical Weather Prediction
+  (NWP) models are becoming more complex, with higher resolutions, and there are increasing numbers of
+  different models in operation. While the forecasting skill of NWP models continues to improve, the number
+  and complexity of these models poses a new challenge for the operational meteorologist: how should the
+  information from all available models, each with their own unique biases and limitations, be combined
+  in order to provide stakeholders with well-calibrated probabilistic forecasts to use in decision making?
+  In this paper, we use a road surface temperature example to demonstrate a three-stage framework that
+  uses machine learning to bridge the gap between sets of separate forecasts from NWP models and the ''ideal''
+  forecast for decision support: probabilities of future weather outcomes. First, we use Quantile Regression
+  Forests to learn the error profile of each numerical model, and use these to apply empirically-derived
+  probability distributions to forecasts. Second, we combine these probabilistic forecasts using quantile
+  averaging. Third, we interpolate between the aggregate quantiles in order to generate a full predictive
+  distribution, which we demonstrate has properties suitable for decision support. Our results suggest
+  that this approach provides an effective and operationally viable framework for the cohesive post-processing
+  of weather forecasts across multiple models and lead times to produce a well-calibrated probabilistic
+  output.'
+significance: 3
+cited_by: 43
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

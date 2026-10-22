@@ -1,0 +1,58 @@
+id: doi-10.5194-amt-13-1953-2020
+title: 'SegCloud: a novel cloud image segmentation model using a deep convolutional neural network for
+  ground-based all-sky-view camera observation'
+authors:
+- Wanyi Xie
+- Dong Liu
+- Ming–Hsuan Yang
+- Shaoqing Chen
+- Benge Wang
+- Zhenzhu Wang
+- Yingwei Xia
+- Yong Liu
+- Yi-Ren Wang
+- Chaofan Zhang
+date: '2020-04-17'
+year: 2020
+venue: Atmospheric measurement techniques
+venue_type: journal
+ids:
+  doi: 10.5194/amt-13-1953-2020
+  openalex: W2990032788
+links:
+  paper: https://doi.org/10.5194/amt-13-1953-2020
+  pdf: https://amt.copernicus.org/articles/13/1953/2020/amt-13-1953-2020.pdf
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- local
+data:
+- stations
+status: research
+summary: SegCloud, an encoder-decoder CNN, segments ground-based all-sky camera images into cloud masks
+  and estimates cloud cover better than traditional methods.
+abstract: Abstract. Cloud detection and cloud properties have significant applications in weather forecast,
+  signal attenuation analysis, and other cloud-related fields. Cloud image segmentation is the fundamental
+  and important step to derive cloud cover. However, traditional segmentation methods rely on low-level
+  visual features of clouds, and often fail to achieve satisfactory performance. Deep Convolutional Neural
+  Networks (CNNs) are able to extract high-level feature information of object and have become the dominant
+  methods in many image segmentation fields. Inspired by that, a novel deep CNN model named SegCloud is
+  proposed and applied to accurate cloud segmentation based on ground-based observation. Architecturally,
+  SegCloud possesses symmetric encoder-decoder structure. The encoder network combines low-level cloud
+  features to form high-level cloud feature maps with low resolution, and the decoder network restores
+  the obtained high-level cloud feature maps to the same resolution of input images. The softmax classifier
+  finally achieves pixel-wise classification and outputs segmentation results. SegCloud has powerful cloud
+  discrimination ability and can automatically segment the whole sky images obtained by a ground-based
+  all-sky-view camera. Furthermore, a new database, which includes 400 whole sky images and manual-marked
+  labels, is built to train and test the SegCloud model. The performance of SegCloud is validated by extensive
+  experiments, which show that SegCloud is effective and accurate for ground-based cloud segmentation
+  and achieves better results than traditional methods. Moreover, the accuracy and practicability of SegCloud
+  is further proved by applying it to cloud cover estimation.
+significance: 3
+cited_by: 112
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

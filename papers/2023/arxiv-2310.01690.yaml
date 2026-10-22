@@ -1,0 +1,54 @@
+id: arxiv-2310.01690
+title: Forecasting Tropical Cyclones with Cascaded Diffusion Models
+authors:
+- Pritthijit Nath
+- Pancham Shukla
+- Shuai Wang
+- César Quilodrán-Casas
+date: '2023-10-02'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2310.01690'
+  openalex: W4387355792
+links:
+  paper: https://arxiv.org/abs/2310.01690
+  pdf: https://arxiv.org/pdf/2310.01690
+  code: https://github.com/nathzi1505/forecast-diffmodels
+topic: extremes-hazards
+topics:
+- nowcasting
+type: model
+method:
+- diffusion
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- satellite
+- era5
+status: research
+summary: Cascaded diffusion models forecast tropical cyclone tracks and precipitation up to 36 hours from
+  satellite and atmospheric data, running in 30 minutes on a single GPU.
+abstract: 'As tropical cyclones become more intense due to climate change, the rise of Al-based modelling
+  provides a more affordable and accessible approach compared to traditional methods based on mathematical
+  models. This work leverages generative diffusion models to forecast cyclone trajectories and precipitation
+  patterns by integrating satellite imaging, remote sensing, and atmospheric data. It employs a cascaded
+  approach that incorporates three main tasks: forecasting, super-resolution, and precipitation modelling.
+  The training dataset includes 51 cyclones from six major tropical cyclone basins from January 2019 -
+  March 2023. Experiments demonstrate that the final forecasts from the cascaded models show accurate
+  predictions up to a 36-hour rollout, with excellent Structural Similarity (SSIM) and Peak-Singal-To-Noise
+  Ratio (PSNR) values exceeding 0.5 and 20 dB, respectively, for all three tasks. The 36-hour forecasts
+  can be produced in as little as 30 mins on a single Nvidia A30/RTX 2080 Ti. This work also highlights
+  the promising efficiency of Al methods such as diffusion models for high-performance needs in weather
+  forecasting, such as tropical cyclone forecasting, while remaining computationally affordable, making
+  them ideal for highly vulnerable regions with critical forecasting needs and financial limitations.
+  Code accessible at https://github.com/nathzi1505/forecast-diffmodels.'
+significance: 3
+cited_by: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

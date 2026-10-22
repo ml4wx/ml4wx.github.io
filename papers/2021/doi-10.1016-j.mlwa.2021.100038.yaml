@@ -1,0 +1,62 @@
+id: doi-10.1016-j.mlwa.2021.100038
+title: 'FogNet: A multiscale 3D CNN with double-branch dense block and attention mechanism for fog prediction'
+authors:
+- Hamid Kamangir
+- Waylon G. Collins
+- Philippe E. Tissot
+- Scott A. King
+- Hue Thi Hong Dinh
+- Niall Durham
+- James Rizzo
+date: '2021-05-08'
+year: 2021
+venue: Machine Learning with Applications
+venue_type: journal
+ids:
+  doi: 10.1016/j.mlwa.2021.100038
+  openalex: W3161760456
+links:
+  paper: https://doi.org/10.1016/j.mlwa.2021.100038
+  pdf: https://www.sciencedirect.com/science/article/pii/S2666827021000190/pdf
+orgs:
+- noaa
+topic: post-processing
+topics:
+- local-forecasting
+type: model
+method:
+- cnn
+- transformer
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+- other
+status: research
+summary: FogNet, a 3D CNN with attention, post-processes NAM forecasts to predict fog visibility at a
+  US airport, outperforming HREF on eight metrics.
+abstract: The reduction of visibility adversely affects land, marine, and air transportation. Thus, the
+  ability to skillfully predict fog would provide utility. We predict fog visibility categories below
+  1600 m, 3200 m and 6400 m by post-processing numerical weather prediction model output and satellite-based
+  sea surface temperature (SST) using a 3D-Convolutional Neural Network (3D-CNN). The target is an airport
+  located on a barrier island adjacent to a major US port; measured visibility from this airport serves
+  as a proxy for fog that develops over the port. The features chosen to calibrate and test the model
+  originate from the North American Mesoscale Forecast System, with values of each feature organized on
+  a 32 × 32 horizontal grid; the SSTs were obtained from the NASA Multiscale Ultra Resolution dataset.
+  The input to the model is organized as a high dimensional cube containing 288 to 384 layers of 2D horizontal
+  fields of meteorological variables (predictor maps). In this 3D-CNN (hereafter, FogNet), two parallel
+  branches of feature extraction have been designed, one for spatially auto-correlated features (spatial-wise
+  dense block and attention module), and the other for correlation between input variables (variable-wise
+  dense block and attention mechanism.) To extract features representing processes occurring at different
+  scales, a 3D multiscale dilated convolution is used. Data from 2009 to 2017 (2018 to 2020) are used
+  to calibrate (test) the model. FogNet performance results for 6, 12− and 24−h lead times are compared
+  to results from the High-Resolution Ensemble Forecast (HREF) system. FogNet outperformed HREF using
+  8 standard evaluation metrics.
+significance: 3
+cited_by: 37
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

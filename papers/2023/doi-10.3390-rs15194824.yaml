@@ -1,0 +1,55 @@
+id: doi-10.3390-rs15194824
+title: Machine Learning-Based Calibrated Model for Forecast Vienna Mapping Function 3 Zenith Wet Delay
+authors:
+- Feijuan Li
+- Junyu Li
+- Lilong Liu
+- Liangke Huang
+- Lv Zhou
+- Hongchang He
+date: '2023-10-05'
+year: 2023
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs15194824
+  openalex: W4387373324
+links:
+  paper: https://doi.org/10.3390/rs15194824
+  pdf: https://www.mdpi.com/2072-4292/15/19/4824/pdf?version=1696478687
+topic: post-processing
+topics:
+- observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- global
+data:
+- nwp-analysis
+- stations
+status: research
+summary: An XGBoost calibration of the VMF3-FC zenith wet delay forecast cuts bias by 93% and RMSE by
+  6% versus the operational product, validated on 492 radiosondes.
+abstract: An accurate estimation of zenith wet delay (ZWD) is crucial for global navigation satellite
+  system (GNSS) positioning and GNSS-based precipitable water vapor (PWV) inversion. The forecast Vienna
+  Mapping Function 3 (VMF3-FC) is a forecast product provided by the Vienna Mapping Functions (VMF) data
+  server based on the European Centre for Medium-Range Weather Forecasts (ECMWF)-based numerical weather
+  prediction (NWP) model. The VMF3-FC can provide ZWD at any time and for any location worldwide; however,
+  it has an uneven accuracy distribution and fails to match the application requirements in certain areas.
+  To address this issue, in this study, a calibrated model for VMF3-FC ZWD, named the XZWD model, was
+  developed by utilizing observation data from 492 radiosonde sites globally from 2019–2021 and the eXtreme
+  Gradient Boosting (XGBoost) algorithm. The performance of the XZWD model was validated using 2022 observation
+  data from the 492 radiosonde sites. The XZWD model yields a mean bias of −0.03 cm and a root-mean-square
+  error (RMSE) of 1.64 cm. The XZWD model outperforms the global pressure and temperature 3 (GPT3) model,
+  reducing the bias and RMSE by 94.64% and 58.90%, respectively. Meanwhile, the XZWD model outperforms
+  VMF3-FC, with a reduction of 92.68% and 6.29% in bias and RMSE, respectively. Furthermore, the XZWD
+  model reduces the impact of ZWD accuracy by latitude, height, and seasonal variations more effectively
+  than the GPT3 model and VMF3-FC. Therefore, the XZWD model yields higher stability and accuracy in global
+  ZWD forecasting.
+significance: 2
+cited_by: 6
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

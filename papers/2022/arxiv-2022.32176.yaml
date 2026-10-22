@@ -1,0 +1,57 @@
+id: arxiv-2022.32176
+title: Motion-Guided Global–Local Aggregation Transformer Network for Precipitation Nowcasting
+authors:
+- Xichao Dong
+- Zewei Zhao
+- Yupei Wang
+- Jianping Wang
+- Cheng Hu
+date: '2022-01-01'
+year: 2022
+venue: IEEE Transactions on Geoscience and Remote Sensing
+venue_type: journal
+ids:
+  arxiv: '2022.32176'
+  doi: 10.1109/tgrs.2022.3217639
+  openalex: W4313002791
+links:
+  paper: https://doi.org/10.1109/tgrs.2022.3217639
+  pdf: https://repository.tudelft.nl/file/File_113f3010-ed45-4be9-8e85-4ba6de33c34f
+topic: nowcasting
+type: model
+method:
+- transformer
+- gan-vae
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: A motion-guided global-local Transformer with adversarial regularization improves radar echo
+  extrapolation, giving sharper heavy-rain predictions and better skill scores than CNN and ConvRNN baselines.
+abstract: Nowadays deep learning based weather radar echo extrapolation methods have competently improved
+  nowcasting quality. Current pure convolutional or convolutional recurrent neural network based extrapolation
+  pipelines inherently struggle in capturing both global and local spatiotemporal interactions simultaneously,
+  thereby limiting nowcasting performances, e.g., they not only tend to underestimate heavy rainfalls’
+  spatial coverage and intensity but also fail to precisely predict non-linear motion patterns. Furthermore,
+  the usually adopted pixel-wise objective functions lead to blurry predictions. To this end, we propose
+  a novel motion-guided global-local aggregation Transformer network for effectively combining spatiotemporal
+  cues at different time scales, thereby strengthening global-local spatiotemporal aggregation urgently
+  required by the extrapolation task. First, we divide existing observations into both short and long
+  term sequences to represent echo dynamics at different time scales. Then, to introduce reasonable motion
+  guidance to Transformer, we customize an end-to-end module for jointly extracting Motion Representation
+  of Short and Long term echo sequences (MRS, MRL), while estimating optical flow. Subsequently, based
+  on Transformer architecture, MRS is used as queries to retrospect the most useful information from MRL
+  for an effective aggregation of global long-term and local short-term cues. Finally, the fused feature
+  is employed for future echo prediction. Additionally, for the blurry prediction problem, predictions
+  from our model trained with an adversarial regularization achieve superior performances not only in
+  nowcasting skill scores but also in precipitation details and image clarity over existing methods. Extensive
+  experiments on two challenging radar echo datasets demonstrate the effectiveness of our proposed method.
+significance: 4
+cited_by: 23
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,67 @@
+id: arxiv-2407.00124
+title: Stable Machine-Learning Parameterization of Subgrid Processes in a Comprehensive Atmospheric Model
+  Learned From Embedded Convection-Permitting Simulations
+authors:
+- Zeyuan Hu
+- Akshay Subramaniam
+- Zhiming Kuang
+- Jerry Lin
+- Sungduk Yu
+- Walter M. Hannah
+- Noah D. Brenowitz
+- Josh Romero
+- Michael S. Pritchard
+date: '2024-06-28'
+year: 2024
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  arxiv: '2407.00124'
+  doi: 10.1029/2024ms004618
+  openalex: W4412173901
+links:
+  paper: https://arxiv.org/abs/2407.00124
+  pdf: https://arxiv.org/pdf/2407.00124
+orgs:
+- nvidia
+topic: hybrid-parameterization
+topics:
+- climate-emulation
+type: model
+method:
+- cnn
+timescale:
+- climate
+spatial:
+- global
+data:
+- km-scale-sim
+status: research
+summary: A U-Net emulator of embedded cloud-resolving models gives a stable 5-year hybrid climate run
+  with realistic cloud condensate and a 0.96 mm/day precipitation RMSE.
+abstract: Modern climate projections often suffer from inadequate spatial and temporal resolution due
+  to computational limitations, resulting in inaccurate representations of sub-grid processes. A promising
+  technique to address this is the Multiscale Modeling Framework (MMF), which embeds a kilometer-resolution
+  cloud-resolving model within each atmospheric column of a host climate model to replace traditional
+  convection and cloud parameterizations. Machine learning (ML) offers a unique opportunity to make MMF
+  more accessible by emulating the embedded cloud-resolving model and reducing its substantial computational
+  cost. Although many studies have demonstrated proof-of-concept success of achieving stable hybrid simulations,
+  it remains a challenge to achieve near operational-level success with real geography and comprehensive
+  variable emulation that includes, for example, explicit cloud condensate coupling. In this study, we
+  present a stable hybrid model capable of integrating for at least 5 years with near operational-level
+  complexity, including coarse-grid geography, seasonality, explicit cloud condensate and wind predictions,
+  and land coupling. Our model demonstrates skillful online performance, achieving a 5-year zonal mean
+  tropospheric temperature bias within 2K, water vapor bias within 1 g/kg, and a precipitation RMSE of
+  0.96 mm/day. Key factors contributing to our online performance include an expressive U-Net architecture
+  and physical thermodynamic constraints for microphysics. With microphysical constraints mitigating unrealistic
+  cloud formation, our work is the first to demonstrate realistic multi-year cloud condensate climatology
+  under the MMF framework. Despite these advances, online diagnostics reveal persistent biases in certain
+  regions, highlighting the need for innovative strategies to further optimize online performance.
+significance: 6
+cited_by: 15
+score: 59
+highlight: true
+highlight_reason: Stable multi-year hybrid climate run with an ML subgrid parameterization learned from
+  MMF, with real geography and cloud condensate; a notable step for ML parameterization.
+added: '2026-10-22'
+source: seed

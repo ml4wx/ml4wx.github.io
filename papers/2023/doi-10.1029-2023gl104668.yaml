@@ -1,0 +1,61 @@
+id: doi-10.1029-2023gl104668
+title: 'Accelerating Atmospheric Gravity Wave Simulations Using Machine Learning: Kelvin‐Helmholtz Instability
+  and Mountain Wave Sources Driving Gravity Wave Breaking and Secondary Gravity Wave Generation'
+authors:
+- Wenjun Dong
+- David C. Fritts
+- Alan Z. Liu
+- Thomas Lund
+- Hanli Liu
+- Jonathan Brian Snively
+date: '2023-08-02'
+year: 2023
+venue: Geophysical Research Letters
+venue_type: journal
+ids:
+  doi: 10.1029/2023gl104668
+  openalex: W4385483134
+links:
+  paper: https://doi.org/10.1029/2023gl104668
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2023GL104668
+orgs:
+- ncar
+topic: hybrid-parameterization
+type: model
+method:
+- neural-operator
+- physics-constrained
+spatial:
+- regional
+data:
+- km-scale-sim
+status: research
+summary: CAMNet, a physics-informed neural operator trained on high-resolution simulations, accelerates
+  2-D gravity wave and secondary wave simulations on GPUs, capturing key dynamics.
+abstract: Abstract Gravity waves (GWs) and their associated multi-scale dynamics are known to play fundamental
+  roles in energy and momentum transport and deposition processes throughout the atmosphere. GWs are well
+  described by the Navier-Stokes equations, but solving these equations extending to very small scales
+  remains daunting, and is limited by the computational costs of resolving the smallest important spatio-temporal
+  features in a large-scale environment. This has led to developments of a wide variety of GW parameterization
+  schemes for regional and global atmospheric models. Traditionally, GW parameterizations are based on
+  linear theory, and no parameterization of secondary GWs (SGWs) has been developed to date. In addition,
+  there remain many aspects of GW dynamics (e.g., GW self-acceleration, instability, GW breaking, SGW
+  generation, and multi-scale interactions) that are important to describe, but cannot be addressed by
+  linear theory or existing schemes. Here we describe an initial, two-dimensional (2-D), machine learning
+  model – the Compressible Atmosphere Model Neural Network (CAMNet) - intended as a first step toward
+  a more general, three-dimensional, highly-efficient, model for applications to nonlinear GW dynamics
+  description. CAMNet employs a physics-informed neural operator and GPU hardware to dramatically accelerate
+  GW and SGW simulations applied to two GW sources to date. CAMNet is trained on high-resolution simulations
+  by the state-of-the-art model Complex Geometry Compressible Atmosphere Model (CGCAM). Two initial applications
+  to a Kelvin-Helmholtz instability source and mountain wave generation, propagation, breaking, and SGW
+  generation in two wind environments are described here. Results show that CAMNet can capture the key
+  2-D dynamics modeled by CGCAM with high precision. Spectral characteristics of primary and SGWs estimated
+  by CAMNet agree well with those from CGCAM. Our results show that CAMNet can achieve a several order-of-magnitude
+  acceleration relative to CGCAM without sacrificing accuracy and suggests a potential for machine learning
+  to enable efficient and accurate descriptions of primary and secondary GWs in global atmospheric models.
+significance: 4
+cited_by: 11
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

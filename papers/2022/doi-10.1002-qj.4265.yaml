@@ -1,0 +1,54 @@
+id: doi-10.1002-qj.4265
+title: 'Wind‐Topo: Downscaling near‐surface wind fields to high‐resolution topography in highly complex
+  terrain with deep learning'
+authors:
+- Jérôme Dujardin
+- Michael Lehning
+date: '2022-03-14'
+year: 2022
+venue: Quarterly Journal of the Royal Meteorological Society
+venue_type: journal
+ids:
+  doi: 10.1002/qj.4265
+  openalex: W4220664068
+links:
+  paper: https://doi.org/10.1002/qj.4265
+topic: downscaling
+topics:
+- regional-km-scale
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- stations
+- nwp-analysis
+status: research
+summary: Wind-Topo uses deep learning to downscale COSMO-1 near-surface winds to 50 m over Swiss Alpine
+  topography, reproducing orographic effects at 60 validation stations.
+abstract: Abstract Predicting wind flow in highly complex terrain like the Alps is a challenge for all
+  models. When physical processes need to be resolved in a spatially explicit manner, grids with high
+  horizontal resolution of a few hundred meters are often required and drastically limit, in many cases,
+  the extent and duration of the simulations. Many surface process models, like the simulation of heterogeneous
+  snow cover across a season, however, need long time series on large domains as inputs. Statistical downscaling
+  can provide the required data, but no model can reach the desired resolutions effectively and provide
+  temporally resolved wind speed and direction on highly complex topography. The assessment of the potential
+  for wind energy in the Alps, a promising player in the energy transition, is an example where the current
+  shortcomings cause strong limitations. We present “Wind‐Topo”, a novel approach based on deep learning
+  that discovers some of the interactions between high‐resolution topography and coarser‐resolution states
+  of the atmosphere to generate near‐surface wind fields with a 50‐m resolution. In our test case, we
+  use a large number of measurement stations in Switzerland to train the model and an operational weather
+  prediction model (COSMO‐1) as predictor. Wind‐Topo employs a custom architecture that analyses the state
+  of the atmosphere on various scales and associates it with high‐resolution topography. A dedicated loss
+  function leads to good scoring metrics as well as accurate wind‐speed distributions at 60 independent
+  stations used for a thorough validation. 50‐m resolution wind fields are generated efficiently and exhibit
+  several expected orographic effects like ridge acceleration, sheltering, and deflection. Furthermore,
+  the bias and mean absolute error from COSMO‐1 at the alpine validation stations, which are 0.72 and
+  1.77 ms respectively, are reduced to 0.07 and 1.21 ms.
+significance: 4
+cited_by: 92
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill
