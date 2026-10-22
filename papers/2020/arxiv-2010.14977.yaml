@@ -1,0 +1,50 @@
+id: arxiv-2010.14977
+title: Real-time Tropical Cyclone Intensity Estimation by Handling Temporally Heterogeneous Satellite
+  Data
+authors:
+- Boyo Chen
+- Buo-Fu Chen
+- Yun-Nung Chen
+date: '2020-10-28'
+year: 2020
+venue_type: preprint
+ids:
+  arxiv: '2010.14977'
+links:
+  paper: https://arxiv.org/abs/2010.14977
+  pdf: https://arxiv.org/pdf/2010.14977
+topic: extremes-hazards
+topics:
+- observations-remote-sensing
+type: model
+method:
+- cnn
+- gan-vae
+timescale:
+- nowcast
+spatial:
+- global
+data:
+- satellite
+status: research
+summary: GAN-CNN framework trains on visible and passive microwave data and estimates tropical cyclone
+  intensity from IR and water vapor images every 15 minutes, versus 3-hourly before.
+abstract: Analyzing big geophysical observational data collected by multiple advanced sensors on various
+  satellite platforms promotes our understanding of the geophysical system. For instance, convolutional
+  neural networks (CNN) have achieved great success in estimating tropical cyclone (TC) intensity based
+  on satellite data with fixed temporal frequency (e.g., 3 h). However, to achieve more timely (under
+  30 min) and accurate TC intensity estimates, a deep learning model is demanded to handle temporally-heterogeneous
+  satellite observations. Specifically, infrared (IR1) and water vapor (WV) images are available under
+  every 15 minutes, while passive microwave rain rate (PMW) is available for about every 3 hours. Meanwhile,
+  the visible (VIS) channel is severely affected by noise and sunlight intensity, making it difficult
+  to be utilized. Therefore, we propose a novel framework that combines generative adversarial network
+  (GAN) with CNN. The model utilizes all data, including VIS and PMW information, during the training
+  phase and eventually uses only the high-frequent IR1 and WV data for providing intensity estimates during
+  the predicting phase. Experimental results demonstrate that the hybrid GAN-CNN framework achieves comparable
+  precision to the state-of-the-art models, while possessing the capability of increasing the maximum
+  estimation frequency from 3 hours to less than 15 minutes.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

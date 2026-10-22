@@ -1,0 +1,48 @@
+id: arxiv-2101.10041
+title: Deep Graph Convolutional Networks for Wind Speed Prediction
+authors:
+- Tomasz Stańczyk
+- Siamak Mehrkanoon
+date: '2021-01-25'
+year: 2021
+venue_type: preprint
+ids:
+  arxiv: '2101.10041'
+links:
+  paper: https://arxiv.org/abs/2101.10041
+  pdf: https://arxiv.org/pdf/2101.10041
+topic: local-forecasting
+type: model
+method:
+- gnn
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- stations
+status: research
+summary: Spatio-temporal graph convolution with a learnable adjacency matrix forecasts wind speed across
+  weather stations in Denmark and the Netherlands, outperforming baselines.
+abstract: Wind speed prediction and forecasting is important for various business and management sectors.
+  In this paper, we introduce new models for wind speed prediction based on graph convolutional networks
+  (GCNs). Given hourly data of several weather variables acquired from multiple weather stations, wind
+  speed values are predicted for multiple time steps ahead. In particular, the weather stations are treated
+  as nodes of a graph whose associated adjacency matrix is learnable. In this way, the network learns
+  the graph spatial structure and determines the strength of relations between the weather stations based
+  on the historical weather data. We add a self-loop connection to the learnt adjacency matrix and normalize
+  the adjacency matrix. We examine two scenarios with the self-loop connection setting (two separate models).
+  In the first scenario, the self-loop connection is imposed as a constant additive. In the second scenario
+  a learnable parameter is included to enable the network to decide about the self-loop connection strength.
+  Furthermore, we incorporate data from multiple time steps with temporal convolution, which together
+  with spatial graph convolution constitutes spatio-temporal graph convolution. We perform experiments
+  on real datasets collected from weather stations located in cities in Denmark and the Netherlands. The
+  numerical experiments show that our proposed models outperform previously developed baseline models
+  on the referenced datasets. We provide additional insights by visualizing learnt adjacency matrices
+  from each layer of our models.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

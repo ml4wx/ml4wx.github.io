@@ -1,0 +1,46 @@
+id: arxiv-2101.09509
+title: Short-term daily precipitation forecasting with seasonally-integrated autoencoder
+authors:
+- Donlapark Ponnoprat
+date: '2021-01-12'
+year: 2021
+venue: Applied Soft Computing, 102, 107083 (2021)
+venue_type: journal
+ids:
+  arxiv: '2101.09509'
+  doi: 10.1016/j.asoc.2021.107083
+  openalex: W3119644826
+links:
+  paper: https://arxiv.org/abs/2101.09509
+  pdf: https://arxiv.org/pdf/2101.09509
+topic: local-forecasting
+type: model
+method:
+- rnn
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Seasonally-integrated LSTM autoencoder forecasts daily precipitation, raising horizon-3 forecast-observation
+  correlation by 37 points over baselines.
+abstract: 'Short-term precipitation forecasting is essential for planning of human activities in multiple
+  scales, ranging from individuals'' planning, urban management to flood prevention. Yet the short-term
+  atmospheric dynamics are highly nonlinear that it cannot be easily captured with classical time series
+  models. On the other hand, deep learning models are good at learning nonlinear interactions, but they
+  are not designed to deal with the seasonality in time series. In this study, we aim to develop a forecasting
+  model that can both handle the nonlinearities and detect the seasonality hidden within the daily precipitation
+  data. To this end, we propose a seasonally-integrated autoencoder (SSAE) consisting of two long short-term
+  memory (LSTM) autoencoders: one for learning short-term dynamics, and the other for learning the seasonality
+  in the time series. Our experimental results show that not only does the SSAE outperform various time
+  series models regardless of the climate type, but it also has low output variance compared to other
+  deep learning models. The results also show that the seasonal component of the SSAE helped improve the
+  correlation between the forecast and the actual values from 4% at horizon 1 to 37% at horizon 3.'
+significance: 3
+cited_by: 28
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

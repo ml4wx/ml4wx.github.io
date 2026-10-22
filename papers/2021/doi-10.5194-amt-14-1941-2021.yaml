@@ -1,0 +1,57 @@
+id: doi-10.5194-amt-14-1941-2021
+title: Using machine learning to model uncertainty for water vapor atmospheric motion vectors
+authors:
+- Joaquim Teixeira
+- Hai Nguyen
+- Derek J. Posselt
+- Hui Su
+- Longtao Wu
+date: '2021-03-09'
+year: 2021
+venue: Atmospheric measurement techniques
+venue_type: journal
+ids:
+  doi: 10.5194/amt-14-1941-2021
+  openalex: W3135147573
+links:
+  paper: https://doi.org/10.5194/amt-14-1941-2021
+  pdf: https://amt.copernicus.org/articles/14/1941/2021/amt-14-1941-2021.pdf
+orgs:
+- nasa
+- caltech
+topic: observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- global
+data:
+- satellite
+- other
+status: research
+summary: Random forest combined with Gaussian mixture clustering characterizes bias and standard error
+  of water vapour atmospheric motion vectors, addressing a known gap in uncertainty estimation.
+abstract: 'Abstract. Wind-tracking algorithms produce Atmospheric Motion Vectors (AMVs) by tracking clouds
+  or water vapor across spatial-temporal fields. Thorough error characterization (also known as uncertainty
+  quantification) of wind-tracking algorithms is critical in properly assimilating AMVs into weather forecast
+  models and climate reanalysis datasets. Uncertainty quantification should yield estimates of two key
+  quantities of interest: bias, the systematic difference between a measurement and the true value, and
+  standard error, a measure of variability of the measurement. The current process of specification of
+  the errors input into inverse modelling is often cursory and commonly consists of a mixture of model
+  fidelity, expert knowledge, and need for expediency. The methods presented in this paper supplement
+  existing approaches to error specification by providing an error-characterization module that is purely
+  data-driven and requires few tuning parameters. This paper proposes an error-characterization method
+  that combines the flexibility of machine learning (random forest) with the robust error estimates of
+  unsupervised parametric clustering (using a Gaussian Mixture Model). Traditional techniques for uncertainty
+  quantification through machine learning have focused on characterizing bias, but often struggle when
+  estimating standard error. In contrast, model-based approaches such as k-means or Gaussian mixture modelling
+  can provide reasonable estimates of both bias and standard error, but they are often limited in complexity
+  due to reliance on linear or Gaussian assumptions. In this paper, a methodology is developed and applied
+  to characterize error in tracked-wind using a high-resolution global model simulation, and it is shown
+  to adequately capture the error features of the tracked wind.'
+significance: 3
+cited_by: 15
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

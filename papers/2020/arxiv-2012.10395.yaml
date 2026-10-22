@@ -1,0 +1,49 @@
+id: arxiv-2012.10395
+title: Transfer Learning with Convolutional Networks for Atmospheric Parameter Retrieval
+authors:
+- David Malmgren-Hansen
+- Allan Aasbjerg Nielsen
+- Valero Laparra
+- Gustau Camps- Valls
+date: '2020-12-09'
+year: 2020
+venue: 2018 IEEE International Geoscience and Remote Sensing Symposium
+venue_type: journal
+ids:
+  arxiv: '2012.10395'
+  doi: 10.1109/igarss.2018.8518097
+links:
+  paper: https://arxiv.org/abs/2012.10395
+  pdf: https://arxiv.org/pdf/2012.10395
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- global
+data:
+- satellite
+status: research
+summary: Transfers CNN features learned for one IASI physical variable to retrieve other atmospheric parameters,
+  cutting retraining cost while matching models trained from scratch.
+abstract: 'The Infrared Atmospheric Sounding Interferometer (IASI) on board the MetOp satellite series
+  provides important measurements for Numerical Weather Prediction (NWP). Retrieving accurate atmospheric
+  parameters from the raw data provided by IASI is a large challenge, but necessary in order to use the
+  data in NWP models. Statistical models performance is compromised because of the extremely high spectral
+  dimensionality and the high number of variables to be predicted simultaneously across the atmospheric
+  column. All this poses a challenge for selecting and studying optimal models and processing schemes.
+  Earlier work has shown non-linear models such as kernel methods and neural networks perform well on
+  this task, but both schemes are computationally heavy on large quantities of data. Kernel methods do
+  not scale well with the number of training data, and neural networks require setting critical hyperparameters.
+  In this work we follow an alternative pathway: we study transfer learning in convolutional neural nets
+  (CNN s) to alleviate the retraining cost by departing from proxy solutions (either features or networks)
+  obtained from previously trained models for related variables. We show how features extracted from the
+  IASI data by a CNN trained to predict a physical variable can be used as inputs to another statistical
+  method designed to predict a different physical variable at low altitude. In addition, the learned parameters
+  can be transferred to another CNN model and obtain results equivalent to those obtained when using a
+  CNN trained from scratch requiring only fine tuning.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

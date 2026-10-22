@@ -1,0 +1,51 @@
+id: doi-10.3390-w12123353
+title: 'CliGAN: A Structurally Sensitive Convolutional Neural Network Model for Statistical Downscaling
+  of Precipitation from Multi-Model Ensembles'
+authors:
+- Chiranjib Chaudhuri
+- Colin Robertson
+date: '2020-11-30'
+year: 2020
+venue: Water
+venue_type: journal
+ids:
+  doi: 10.3390/w12123353
+  openalex: W3093984799
+links:
+  paper: https://doi.org/10.3390/w12123353
+  pdf: https://www.mdpi.com/2073-4441/12/12/3353/pdf?version=1606721574
+topic: downscaling
+type: model
+method:
+- gan-vae
+- cnn
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+status: research
+summary: CliGAN, a Wasserstein GAN with structural similarity loss, downscales multi-model CMIP6 annual
+  maximum precipitation to regional gridded fields.
+abstract: Despite numerous studies in statistical downscaling methodologies, there remains a lack of methods
+  that can downscale from precipitation modeled in global climate models to regional level high resolution
+  gridded precipitation. This paper reports a novel downscaling method using a Generative Adversarial
+  Network (GAN), CliGAN, which can downscale large-scale annual maximum precipitation given by simulation
+  of multiple atmosphere-ocean global climate models (AOGCM) from Coupled Model Inter-comparison Project
+  6 (CMIP6) to regional-level gridded annual maximum precipitation data. This framework utilizes a convolution
+  encoder-dense decoder network to create a generative network and a similar network to create a critic
+  network. The model is trained using an adversarial training approach. The critic uses the Wasserstein
+  distance loss function and the generator is trained using a combination of adversarial loss Wasserstein
+  distance, structural loss with the multi-scale structural similarity index (MSSIM), and content loss
+  with the Nash-Sutcliff Model Efficiency (NS). The MSSIM index allowed us to gain insight into the model’s
+  regional characteristics and shows that relying exclusively on point-based error functions, widely used
+  in statistical downscaling, may not be enough to reliably simulate regional precipitation characteristics.
+  Further use of structural loss functions within CNN-based downscaling methods may lead to higher quality
+  downscaled climate model products.
+significance: 3
+cited_by: 24
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

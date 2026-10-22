@@ -1,0 +1,62 @@
+id: doi-10.1098-rsta.2020.0246
+title: Domain-driven models yield better predictions at lower cost than reservoir computers in Lorenz
+  systems
+authors:
+- Ryan Pyle
+- Nikola Jovanovic
+- Devika Subramanian
+- Krishna V. Palem
+- Ankit Patel
+date: '2021-02-15'
+year: 2021
+venue: Philosophical Transactions of the Royal Society A Mathematical Physical and Engineering Sciences
+venue_type: journal
+ids:
+  doi: 10.1098/rsta.2020.0246
+  openalex: W3129474221
+links:
+  paper: https://doi.org/10.1098/rsta.2020.0246
+topic: climate-emulation
+type: model
+method:
+- classical-ml
+spatial:
+- global
+data:
+- other
+status: research
+summary: Shows echo state networks reduce to a polynomial regression (D2R2), a SINDy generalization that
+  outperforms reservoir computers on Lorenz 63 and 96.
+abstract: Recent advances in computing algorithms and hardware have rekindled interest in developing high-accuracy,
+  low-costsurrogatemodels for simulating physical systems. The idea is to replace expensive numerical
+  integration of complex coupled partial differential equations at fine time scales performed on supercomputers,
+  with machine-learned surrogates that efficiently and accurately forecast future system states using
+  data sampled from the underlying system. One particularly popular technique being explored within the
+  weather and climate modelling community is theecho state network(ESN), an attractive alternative to
+  other well-known deep learning architectures. Using the classical Lorenz 63 system, and the three tier
+  multi-scale Lorenz 96 system (Thornes T, Duben P, Palmer T. 2017Q. J. R. Meteorol. Soc.143, 897–908.
+  ( doi:10.1002/qj.2974 )) as benchmarks, we realize that previously studied state-of-the-art ESNs operate
+  in two distinct regimes, corresponding to low and high spectral radius (LSR/HSR) for the sparse, randomly
+  generated, reservoir recurrence matrix. Using knowledge of the mathematical structure of the Lorenz
+  systems along with systematic ablation and hyperparameter sensitivity analyses, we show that state-of-the-art
+  LSR-ESNs reduce to a polynomial regression model which we call Domain-Driven Regularized Regression
+  (D2R2). Interestingly, D2R2 is a generalization of the well-known SINDy algorithm (Brunton SL, Proctor
+  JL, Kutz JN. 2016Proc. Natl Acad. Sci. USA113, 3932–3937. ( doi:10.1073/pnas.1517384113 )). We also
+  show experimentally that LSR-ESNs (Chattopadhyay A, Hassanzadeh P, Subramanian D. 2019 ( http://arxiv.org/abs/1906.08829
+  )) outperform HSR ESNs (Pathak J, Hunt B, Girvan M, Lu Z, Ott E. 2018Phys. Rev. Lett.120, 024102. (
+  doi:10.1103/PhysRevLett.120.024102 )) while D2R2 dominates both approaches. A significant goal in constructing
+  surrogates is to cope with barriers to scaling in weather prediction and simulation of dynamical systems
+  that are imposed by time and energy consumption in supercomputers.Inexact computinghas emerged as a
+  novel approach to helping with scaling. In this paper, we evaluate the performance of three models (LSR-ESN,
+  HSR-ESN and D2R2) by varying the precision or word size of the computation as our inexactness-controlling
+  parameter. For precisions of 64, 32 and 16 bits, we show that, surprisingly, the least expensive D2R2
+  method yields the most robust results and the greatest savings compared to ESNs. Specifically, D2R2
+  achieves 68 × in computational savings, with an additional 2 × if precision reductions are also employed,
+  outperforming ESN variants by a large margin. This article is part of the theme issue ‘Machine learning
+  for weather and climate modelling’.
+significance: 3
+cited_by: 20
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

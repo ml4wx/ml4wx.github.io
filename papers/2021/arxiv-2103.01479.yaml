@@ -1,0 +1,46 @@
+id: arxiv-2103.01479
+title: Statistical Post-Processing for Gridded Temperature Prediction Using Encoder-Decoder-Based Deep
+  Convolutional Neural Networks
+authors:
+- Atsushi Kudo
+date: '2021-03-02'
+year: 2021
+venue_type: preprint
+ids:
+  arxiv: '2103.01479'
+  openalex: W3133620062
+links:
+  paper: https://arxiv.org/abs/2103.01479
+  pdf: https://arxiv.org/pdf/2103.01479
+topic: post-processing
+topics:
+- regional-km-scale
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: An encoder-decoder CNN post-processes NWP output to produce gridded surface temperatures over
+  Kanto, correcting front position errors and extreme temperatures better than the operational Kalman-filter
+  guidance.
+abstract: The Japan Meteorological Agency operates gridded temperature guidance to predict two-dimensional
+  snowfall amounts and precipitation types, e.g., rain and snow, because surface temperature is one of
+  the key elements to predict them. Operational temperature guidance is based on the Kalman filter, which
+  uses temperature observation and numerical weather prediction (NWP) outputs only around observation
+  sites. Correcting a temperature field when NWP models incorrectly predict a front's location or when
+  observed temperatures are extremely cold or hot has been challenging. In this study, an encoder-decoder-based
+  convolutional neural network has been proposed to predict gridded temperatures at the surface around
+  the Kanto region in Japan. Verification results showed that the proposed model greatly improves the
+  operational guidance and can correct NWP model biases, such as a positional error of fronts and extreme
+  temperatures.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

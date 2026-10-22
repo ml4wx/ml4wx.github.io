@@ -1,0 +1,59 @@
+id: doi-10.3390-app11041491
+title: Reconstruction of Missing Data in Weather Radar Image Sequences Using Deep Neuron Networks
+authors:
+- Lihao Gao
+- Yu Zheng
+- Yaqiang Wang
+- Jiangjiang Xia
+- Xunlai Chen
+- Bin Li
+- Ming Luo
+- Yuchen Guo
+date: '2021-02-06'
+year: 2021
+venue: Applied Sciences
+venue_type: journal
+ids:
+  doi: 10.3390/app11041491
+  openalex: W3127989953
+links:
+  paper: https://doi.org/10.3390/app11041491
+  pdf: https://www.mdpi.com/2076-3417/11/4/1491/pdf?version=1614153708
+orgs:
+- iap-cas
+- cma
+topic: observations-remote-sensing
+type: model
+method:
+- rnn
+- cnn
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: A CNN-BiConvLSTM reconstructs missing weather radar frames, outperforming interpolation, optical
+  flow and ConvLSTM baselines across missing patterns.
+abstract: Missing data in weather radar image sequences may cause bias in quantitative precipitation estimation
+  (QPE) and quantitative precipitation forecast (QPF) studies, and also the obtainment of corresponding
+  high-quality QPE and QPF products. The traditional approaches that are used to reconstruct missing weather
+  radar images replace missing frames with the nearest image or with interpolated images. However, the
+  performance of these approaches is defective, and their accuracy is quite limited due to neglecting
+  the intensification and disappearance of radar echoes. In this study, we propose a deep neuron network
+  (DNN), which combines convolutional neural networks (CNNs) and bi-directional convolutional long short-term
+  memory networks (CNN-BiConvLSTMs), to address this problem and establish a deep-learning benchmark.
+  The model is trained to be capable of dealing with arbitrary missing patterns by using the proposed
+  training schedule. Then the performances of the model are evaluated and compared with baseline models
+  for different missing patterns. These baseline models include the nearest neighbor approach, linear
+  interpolation, optical flow methods, and two DNN models three-dimensional CNN (3DCNN) and CNN-ConvLSTM.
+  Experimental results show that the CNN-BiConvLSTM model outperforms all other baseline models. The influence
+  of data quality on interpolation methods is further investigated, and the CNN-BiConvLSTM model is found
+  to be basically uninfluenced by less qualified input weather radar images, which reflects the robustness
+  of the model. Our results suggest good prospects for applying the CNN-BiConvLSTM model to improve the
+  quality of weather radar datasets.
+significance: 3
+cited_by: 11
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

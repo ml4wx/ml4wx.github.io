@@ -1,0 +1,49 @@
+id: doi-10.1109-jstars.2020.3040648
+title: 'PFST-LSTM: A SpatioTemporal LSTM Model With Pseudoflow Prediction for Precipitation Nowcasting'
+authors:
+- Chuyao Luo
+- Xutao Li
+- Yunming Ye
+date: '2020-11-26'
+year: 2020
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2020.3040648
+  openalex: W3109184532
+links:
+  paper: https://doi.org/10.1109/jstars.2020.3040648
+  pdf: https://ieeexplore.ieee.org/ielx7/4609443/9314330/09272611.pdf
+  code: https://github.com/luochuyao/PFST-LSTM
+topic: nowcasting
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: PFST-LSTM adds a spatial memory cell and position alignment to ConvLSTM for precipitation nowcasting,
+  outperforming baselines on CIKM 2017 radar data.
+abstract: 'Precipitation nowcasting is an important task, which can serve numerous applications such as
+  urban alert and transportation. Previous studies leverage convolutional recurrent neural networks (RNNs)
+  to address the problem. However, they all suffer from two inherent drawbacks of the convolutional RNN,
+  namely, the lack of a memory cell to preserve the fine-grained spatial appearances and the position
+  misalignment issue when combining current observations with previous hidden states. In this article,
+  we aim to overcome the defects. Specifically, we propose a novel pseudo flow spatiotemporal LSTM unit
+  (PFST-LSTM), where a spatial memory cell and a position alignment module are developed and embedded
+  in the structure of LSTM. Upon the PFST-LSTM units, we develop a new sequence-to-sequence architecture
+  for precipitation nowcasting, which can effectively combine the spatial appearances and motion information.
+  Extensive empirical evaluations are conducted on synthetic MovingMNIST++ and CIKM AnalytiCup 2017 datasets.
+  Our experimental results demonstrate the superiority of the proposed PFST-LSTM over the state-of-the-art
+  competitors. To reproduce the results, we release the source code at: https://github.com/luochuyao/PFST-LSTM.'
+significance: 3
+cited_by: 124
+score: 32
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,59 @@
+id: doi-10.3390-atmos11111151
+title: Prediction of Short-Time Cloud Motion Using a Deep-Learning Model
+authors:
+- Xinyue Su
+- Tiejian Li
+- Chenge An
+- Guangqian Wang
+date: '2020-10-26'
+year: 2020
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos11111151
+  openalex: W3096763162
+links:
+  paper: https://doi.org/10.3390/atmos11111151
+  pdf: https://www.mdpi.com/2073-4433/11/11/1151/pdf?version=1603771964
+orgs:
+- tsinghua-university
+topic: nowcasting
+topics:
+- observations-remote-sensing
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Multi-GRU-RCN model forecasts intra-hour cloud motion from FengYun-2G infrared imagery, outperforming
+  optical flow, ConvLSTM and GRU baselines.
+abstract: A cloud image can provide significant information, such as precipitation and solar irradiation.
+  Predicting short-time cloud motion from images is the primary means of making intra-hour irradiation
+  forecasts for solar-energy production and is also important for precipitation forecasts. However, it
+  is very challenging to predict cloud motion (especially nonlinear motion) accurately. Traditional methods
+  of cloud-motion prediction are based on block matching and the linear extrapolation of cloud features;
+  they largely ignore nonstationary processes, such as inversion and deformation, and the boundary conditions
+  of the prediction region. In this paper, the prediction of cloud motion is regarded as a spatiotemporal
+  sequence-forecasting problem, for which an end-to-end deep-learning model is established; both the input
+  and output are spatiotemporal sequences. The model is based on gated recurrent unit (GRU)- recurrent
+  convolutional network (RCN), a variant of the gated recurrent unit (GRU), which has convolutional structures
+  to deal with spatiotemporal features. We further introduce surrounding context into the prediction task.
+  We apply our proposed Multi-GRU-RCN model to FengYun-2G satellite infrared data and compare the results
+  to those of the state-of-the-art method of cloud-motion prediction, the variational optical flow (VOF)
+  method, and two well-known deep-learning models, namely, the convolutional long short-term memory (ConvLSTM)
+  and GRU. The Multi-GRU-RCN model predicts intra-hour cloud motion better than the other methods, with
+  the largest peak signal-to-noise ratio and structural similarity index. The results prove the applicability
+  of the GRU-RCN method for solving the spatiotemporal data prediction problem and indicate the advantages
+  of our model for further applications.
+significance: 3
+cited_by: 31
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

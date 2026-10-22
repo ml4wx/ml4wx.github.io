@@ -1,0 +1,58 @@
+id: arxiv-2103.09360
+title: 'Towards physically consistent data-driven weather forecasting: Integrating data assimilation with
+  equivariance-preserving deep spatial transformers'
+authors:
+- Ashesh Chattopadhyay
+- Mustafa Mustafa
+- Pedram Hassanzadeh
+- Eviatar Bach
+- Karthik Kashinath
+date: '2021-03-16'
+year: 2021
+venue: Geoscientific Model Development, 15(5), 2022, 2221-2237
+venue_type: journal
+ids:
+  arxiv: '2103.09360'
+  doi: 10.5194/gmd-15-2221-2022
+links:
+  paper: https://arxiv.org/abs/2103.09360
+  pdf: https://arxiv.org/pdf/2103.09360
+topic: data-assimilation
+topics:
+- global-medium-range
+type: model
+method:
+- cnn
+- other
+timescale:
+- short
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Equivariance-preserving U-STN networks improve data-driven Z500 forecasts by 45% over U-Nets,
+  and coupling them with ensemble Kalman data assimilation gives stable cycles under high observation
+  noise.
+abstract: There is growing interest in data-driven weather prediction (DDWP), for example using convolutional
+  neural networks such as U-NETs that are trained on data from models or reanalysis. Here, we propose
+  3 components to integrate with commonly used DDWP models in order to improve their physical consistency
+  and forecast accuracy. These components are 1) a deep spatial transformer added to the latent space
+  of the U-NETs to preserve a property called equivariance, which is related to correctly capturing rotations
+  and scalings of features in spatio-temporal data, 2) a data-assimilation (DA) algorithm to ingest noisy
+  observations and improve the initial conditions for next forecasts, and 3) a multi-time-step algorithm,
+  which combines forecasts from DDWP models with different time steps through DA, improving the accuracy
+  of forecasts at short intervals. To show the benefit/feasibility of each component, we use geopotential
+  height at 500~hPa (Z500) from ERA5 reanalysis and examine the short-term forecast accuracy of specific
+  setups of the DDWP framework. Results show that the equivariance-preserving networks (U-STNs) clearly
+  outperform the U-NETs, for example improving the forecast skill by $45\%$. Using a sigma-point ensemble
+  Kalman (SPEnKF) algorithm for DA and U-STN as the forward model, we show that stable, accurate DA cycles
+  are achieved even with high observation noise. The DDWP+DA framework substantially benefits from large
+  ($O(1000)$) ensembles that are inexpensively generated with the data-driven forward model in each DA
+  cycle. The multi-time-step DDWP+DA framework also shows promises, e.g., it reduces the average error
+  by factors of 2-3.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

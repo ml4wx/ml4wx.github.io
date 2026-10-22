@@ -1,0 +1,53 @@
+id: doi-10.1029-2020ms002226
+title: Accelerating Radiation Computations for Dynamical Models With Targeted Machine Learning and Code
+  Optimization
+authors:
+- Peter Ukkonen
+- Robert L. Pincus
+- Robin James Hogan
+- Kristian Pagh Nielsen
+- Eigil Kaas
+date: '2020-11-16'
+year: 2020
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2020ms002226
+  openalex: W3100028353
+links:
+  paper: https://doi.org/10.1029/2020ms002226
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2020MS002226
+orgs:
+- ecmwf
+- noaa
+topic: hybrid-parameterization
+type: model
+method:
+- other
+spatial:
+- global
+data:
+- other
+status: research
+summary: Neural networks replace gas optics in the RRTMGP radiation scheme, running 1–6 times faster with
+  heating-rate errors below 0.1 K/day, giving 3.5x faster longwave fluxes.
+abstract: Abstract Atmospheric radiation is the main driver of weather and climate, yet due to a complicated
+  absorption spectrum, the precise treatment of radiative transfer in numerical weather and climate models
+  is computationally unfeasible. Radiation parameterizations need to maximize computational efficiency
+  as well as accuracy, and for predicting the future climate many greenhouse gases need to be included.
+  In this work, neural networks (NNs) were developed to replace the gas optics computations in a modern
+  radiation scheme (RTE+RRTMGP) by using carefully constructed models and training data. The NNs, implemented
+  in Fortran and utilizing BLAS for batched inference, are faster by a factor of 1–6, depending on the
+  software and hardware platforms. We combined the accelerated gas optics with a refactored radiative
+  transfer solver, resulting in clear‐sky longwave (shortwave) fluxes being 3.5 (1.8) faster to compute
+  on an Intel platform. The accuracy, evaluated with benchmark line‐by‐line computations across a large
+  range of atmospheric conditions, is very similar to the original scheme with errors in heating rates
+  and top‐of‐atmosphere radiative forcings typically below 0.1 K day−1 and 0.5 W m−2, respectively. These
+  results show that targeted machine learning, code restructuring techniques, and the use of numerical
+  libraries can yield material gains in efficiency while retaining accuracy.
+significance: 4
+cited_by: 80
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

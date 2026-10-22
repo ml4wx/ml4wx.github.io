@@ -1,0 +1,50 @@
+id: arxiv-2010.14300
+title: Ice Monitoring in Swiss Lakes from Optical Satellites and Webcams using Machine Learning
+authors:
+- Manu Tom
+- Rajanie Prabha
+- Tianyu Wu
+- Emmanuel Baltsavias
+- Laura Leal-Taixe
+- Konrad Schindler
+date: '2020-10-27'
+year: 2020
+venue_type: preprint
+ids:
+  arxiv: '2010.14300'
+links:
+  paper: https://arxiv.org/abs/2010.14300
+  pdf: https://arxiv.org/pdf/2010.14300
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- local
+data:
+- satellite
+- other
+status: research
+summary: Semantic segmentation of VIIRS, MODIS and webcam images maps Swiss lake ice cover and ice-on/off
+  dates, reaching mIoU above 93% for satellites and releasing a webcam benchmark.
+abstract: Continuous observation of climate indicators, such as trends in lake freezing, is important
+  to understand the dynamics of the local and global climate system. Consequently, lake ice has been included
+  among the Essential Climate Variables (ECVs) of the Global Climate Observing System (GCOS), and there
+  is a need to set up operational monitoring capabilities. Multi-temporal satellite images and publicly
+  available webcam streams are among the viable data sources to monitor lake ice. In this work we investigate
+  machine learning-based image analysis as a tool to determine the spatio-temporal extent of ice on Swiss
+  Alpine lakes as well as the ice-on and ice-off dates, from both multispectral optical satellite images
+  (VIIRS and MODIS) and RGB webcam images. We model lake ice monitoring as a pixel-wise semantic segmentation
+  problem, i.e., each pixel on the lake surface is classified to obtain a spatially explicit map of ice
+  cover. We show experimentally that the proposed system produces consistently good results when tested
+  on data from multiple winters and lakes. Our satellite-based method obtains mean Intersection-over-Union
+  (mIoU) scores >93%, for both sensors. It also generalises well across lakes and winters with mIoU scores
+  >78% and >80% respectively. On average, our webcam approach achieves mIoU values of 87% (approx.) and
+  generalisation scores of 71% (approx.) and 69% (approx.) across different cameras and winters respectively.
+  Additionally, we put forward a new benchmark dataset of webcam images (Photi-LakeIce) which includes
+  data from two winters and three cameras.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

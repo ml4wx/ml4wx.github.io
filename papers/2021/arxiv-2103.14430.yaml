@@ -1,0 +1,52 @@
+id: arxiv-2103.14430
+title: Combining distribution-based neural networks to predict weather forecast probabilities
+authors:
+- Mariana Clare
+- Omar Jamil
+- Cyril Morcrette
+date: '2021-03-26'
+year: 2021
+venue_type: preprint
+ids:
+  arxiv: '2103.14430'
+  doi: 10.1002/qj.4180
+  openalex: W3143333732
+links:
+  paper: https://arxiv.org/abs/2103.14430
+  pdf: https://arxiv.org/pdf/2103.14430
+  code: https://github.com/mc4117/ResNet_Weather
+topic: probabilistic-ensembles
+topics:
+- global-medium-range
+type: model
+method:
+- classical-ml
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Neural networks predict full probability density functions for WeatherBench geopotential and
+  temperature at 3 and 5 days, stacked into a combined forecast that beats some NWP models.
+abstract: The success of deep learning techniques over the last decades has opened up a new avenue of
+  research for weather forecasting. Here, we take the novel approach of using a neural network to predict
+  full probability density functions at each point in space and time rather than a single output value,
+  thus producing a probabilistic weather forecast. This enables the calculation of both uncertainty and
+  skill metrics for the neural network predictions, and overcomes the common difficulty of inferring uncertainty
+  from these predictions. This approach is data-driven and the neural network is trained on the WeatherBench
+  dataset (processed ERA5 data) to forecast geopotential and temperature 3 and 5 days ahead. Data exploration
+  leads to the identification of the most important input variables, which are also found to agree with
+  physical reasoning, thereby validating our approach. In order to increase computational efficiency further,
+  each neural network is trained on a small subset of these variables. The outputs are then combined through
+  a stacked neural network, the first time such a technique has been applied to weather data. Our approach
+  is found to be more accurate than some numerical weather prediction models and as accurate as more complex
+  alternative neural networks, with the added benefit of providing key probabilistic information necessary
+  for making informed weather forecasts.
+significance: 3
+cited_by: 1
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

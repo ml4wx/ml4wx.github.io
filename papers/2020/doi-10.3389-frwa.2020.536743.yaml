@@ -1,0 +1,56 @@
+id: doi-10.3389-frwa.2020.536743
+title: Downscaling Satellite and Reanalysis Precipitation Products Using Attention-Based Deep Convolutional
+  Neural Nets
+authors:
+- Alexander Y. Sun
+- Guoqiang Tang
+date: '2020-11-26'
+year: 2020
+venue: Frontiers in Water
+venue_type: journal
+ids:
+  doi: 10.3389/frwa.2020.536743
+  openalex: W3108040709
+links:
+  paper: https://doi.org/10.3389/frwa.2020.536743
+  pdf: https://www.frontiersin.org/articles/10.3389/frwa.2020.536743/pdf
+topic: downscaling
+topics:
+- observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- era5
+- satellite
+- other
+status: research
+summary: Attention-based U-Net downscales ERA5-Land, TRMM and IMERG monthly precipitation to 1 km over
+  Central Texas, using PRISM as target over 2001–2018.
+abstract: High-quality and high-resolution precipitation products are critically important to many hydrological
+  applications. Advances in satellite remote sensing instruments and data retrieval algorithms continue
+  to improve the quality of the operational precipitation products. However, most satellite products existing
+  today are still too coarse to be ingested for local water management and planning purposes. Recent advances
+  in deep learning algorithms enable the fusion of multi-source, high-dimensional data for statistical
+  learning. In this study, we investigated the efficacy of an attention-based, deep convolutional neural
+  network (AU-Net) for learning spatial and temporal mappings from coarse-resolution to fine-resolution
+  precipitation products. The skills of AU-Net models, developed using combinations of static and dynamic
+  predictors, were evaluated over a 3 × 3° study area in Central Texas, U.S., a region known for its complex
+  precipitation patterns and low predictability. Three coarse-resolution satellite/reanalysis precipitation
+  products, ERA5-Land (0.1°), TRMM (0.25°), and IMERG (0.1°), are used as part of the inputs, while the
+  predictand is the 1-km PRISM data. Auxiliary predictors include elevation, vegetation index, and air
+  temperature. The study period includes 18 years of data (2001–2018) at the monthly scale for training,
+  validation, and testing. Results show that the trained AU-Net models achieve different degrees of success
+  in downscaling the baseline coarse-resolution products, depending on the total precipitation, the accuracy
+  of large-scale patterns captured by the baseline products, and the amount of information transferable
+  from predictors. Higher precipitation rate tends to affect AU-Net model performance negatively. Use
+  of the attention mechanism in the AU-Net models allows for infilling of multiscale features and generation
+  of sharper images. Correction using gauge data, if there is any, can further improve the results significantly.
+significance: 3
+cited_by: 61
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

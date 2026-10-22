@@ -1,0 +1,59 @@
+id: doi-10.3390-rs13051004
+title: Regional Zenith Tropospheric Delay Modeling Based on Least Squares Support Vector Machine Using
+  GNSS and ERA5 Data
+authors:
+- Song Li
+- Tianhe Xu
+- Nan Jiang
+- Honglei Yang
+- Shuaimin Wang
+- Zhen Zhang
+date: '2021-03-06'
+year: 2021
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs13051004
+  openalex: W3134030007
+links:
+  paper: https://doi.org/10.3390/rs13051004
+  pdf: https://www.mdpi.com/2072-4292/13/5/1004/pdf?version=1615351364
+topic: observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- era5
+- stations
+status: research
+summary: Builds least-squares SVM regional zenith tropospheric delay models over Europe from GNSS and
+  ERA5, with the best scheme reaching 9 mm RMSE.
+abstract: The meteorological reanalysis data has been widely applied to derive zenith tropospheric delay
+  (ZTD) with a high spatial and temporal resolution. With the rapid development of artificial intelligence,
+  machine learning also begins as a high-efficiency tool to be employed in modeling and predicting ZTD.
+  In this paper, we develop three new regional ZTD models based on the least squares support vector machine
+  (LSSVM), using both the International GNSS Service (IGS)-ZTD products and European Centre for Medium-Range
+  Weather Forecasts Reanalysis 5 (ERA5) data over Europe throughout 2018. Among them, the ERA5 data is
+  extended to ERA5S-ZTD and ERA5P-ZTD as the background data by the model method and integral method,
+  respectively. Depending on different background data, three schemes are designed to construct ZTD models
+  based on the LSSVM algorithm, including the without background data, with the ERA5S-ZTD, and with the
+  ERA5P-ZTD. To investigate the advantage and feasibility of the proposed ZTD models, we evaluate the
+  accuracy of two background data and three schemes by segmental comparison with the IGS-ZTD of 85 IGS
+  stations in Europe. The results show that the overall average Root Mean Square Errors (RMSE) value of
+  all sites is 30.1 mm for the ERA5S-ZTD, and 10.7 mm for the ERA5P-ZTD. The overall average RMSE is 25.8
+  mm, 22.9 mm, and 9 mm for the three schemes, respectively. Moreover, the overall improvement rate is
+  19.1% and 1.6% for the ZTD model with ERA5S-ZTD and ERA5P-ZTD, respectively. In order to explore the
+  reason of the lower improvement for the ZTD model with ERA5P-ZTD, the loop verification is performed
+  by estimating the ZTD values of each available IGS station. In actuality, the monthly improvement rate
+  of estimated ZTD is positive for most stations, and the biggest improvement rate can even reach about
+  40%. The negative rate mainly comes from specific stations, these stations are located on the edge of
+  the region, near the coast, as well as the lower similarity between the individual verified station
+  and training stations.
+significance: 3
+cited_by: 33
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

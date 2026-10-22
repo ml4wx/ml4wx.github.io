@@ -1,0 +1,47 @@
+id: arxiv-2101.03247
+title: Glacier Calving Front Segmentation Using Attention U-Net
+authors:
+- Michael Holzmann
+- Amirabbas Davari
+- Thorsten Seehaus
+- Matthias Braun
+- Andreas Maier
+- Vincent Christlein
+date: '2021-01-08'
+year: 2021
+venue_type: preprint
+ids:
+  arxiv: '2101.03247'
+links:
+  paper: https://arxiv.org/abs/2101.03247
+  pdf: https://arxiv.org/pdf/2101.03247
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+- transformer
+spatial:
+- local
+data:
+- satellite
+status: research
+summary: Attention U-Net segments tidewater glacier calving fronts from SAR imagery end-to-end, matching
+  U-Net with a 1.5% better Dice score and attention maps for tuning.
+abstract: An essential climate variable to determine the tidewater glacier status is the location of the
+  calving front position and the separation of seasonal variability from long-term trends. Previous studies
+  have proposed deep learning-based methods to semi-automatically delineate the calving fronts of tidewater
+  glaciers. They used U-Net to segment the ice and non-ice regions and extracted the calving fronts in
+  a post-processing step. In this work, we show a method to segment the glacier calving fronts from SAR
+  images in an end-to-end fashion using Attention U-Net. The main objective is to investigate the attention
+  mechanism in this application. Adding attention modules to the state-of-the-art U-Net network lets us
+  analyze the learning process by extracting its attention maps. We use these maps as a tool to search
+  for proper hyperparameters and loss functions in order to generate higher qualitative results. Our proposed
+  attention U-Net performs comparably to the standard U-Net while providing additional insight into those
+  regions on which the network learned to focus more. In the best case, the attention U-Net achieves a
+  1.5% better Dice score compared to the canonical U-Net with a glacier front line prediction certainty
+  of up to 237.12 meters.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

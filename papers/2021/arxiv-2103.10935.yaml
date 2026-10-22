@@ -1,0 +1,48 @@
+id: arxiv-2103.10935
+title: 'Data-driven geophysical forecasting: Simple, low-cost, and accurate baselines with kernel methods'
+authors:
+- Boumediene Hamzi
+- Romit Maulik
+- Houman Owhadi
+date: '2021-02-13'
+year: 2021
+venue_type: preprint
+ids:
+  arxiv: '2103.10935'
+links:
+  paper: https://arxiv.org/abs/2103.10935
+  pdf: https://arxiv.org/pdf/2103.10935
+topic: global-medium-range
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- regional
+- global
+data:
+- era5
+- other
+status: research
+summary: Learned-kernel kernel-flow emulators forecast weekly sea-surface temperature and daily North
+  American temperature, beating LSTMs and classical baselines in accuracy and cost.
+abstract: Modeling geophysical processes as low-dimensional dynamical systems and regressing their vector
+  field from data is a promising approach for learning emulators of such systems. We show that when the
+  kernel of these emulators is also learned from data (using kernel flows, a variant of cross-validation),
+  then the resulting data-driven models are not only faster than equation-based models but are easier
+  to train than neural networks such as the long short-term memory neural network. In addition, they are
+  also more accurate and predictive than the latter. When trained on geophysical observational data, for
+  example, the weekly averaged global sea-surface temperature, considerable gains are also observed by
+  the proposed technique in comparison to classical partial differential equation-based models in terms
+  of forecast computational cost and accuracy. When trained on publicly available re-analysis data for
+  the daily temperature of the North-American continent, we see significant improvements over classical
+  baselines such as climatology and persistence-based forecast techniques. Although our experiments concern
+  specific examples, the proposed approach is general, and our results support the viability of kernel
+  methods (with learned kernels) for interpretable and computationally efficient geophysical forecasting
+  for a large diversity of processes.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill
