@@ -1,0 +1,57 @@
+id: doi-10.1002-essoar.10510142.1
+title: Ensemble-Based Experimental Design for Targeted High-Resolution Simulations to Inform Climate Models
+authors:
+- Oliver R. A. Dunbar
+- Michael F. Howland
+- Tapio Schneider
+- Andrew M. Stuart
+date: '2022-01-13'
+year: 2022
+venue_type: other
+ids:
+  doi: 10.1002/essoar.10510142.1
+  openalex: W4206017582
+links:
+  paper: https://doi.org/10.1002/essoar.10510142.1
+  pdf: https://essopenarchive.org/doi/pdf/10.1002/essoar.10510142.1
+orgs:
+- mit
+- caltech
+topic: xai-uq-physics
+topics:
+- hybrid-parameterization
+type: model
+method:
+- classical-ml
+spatial:
+- global
+data:
+- km-scale-sim
+status: research
+summary: An ensemble-based experimental design algorithm, using calibrate-emulate-sample, chooses high-resolution
+  simulation regions that most reduce uncertainty in GCM convection parameters, with 10^2 rather than
+  10^5 model runs.
+abstract: Targeted high-resolution simulations driven by a general circulation model (GCM) can be used
+  to calibrate GCM parameterizations of processes that are globally unresolvable but can be resolved in
+  limited-area simulations. This raises the question of where to place high-resolution simulations to
+  be maximally informative about the uncertain parameterizations in the global model. Here we construct
+  an ensemble-based parallel algorithm to locate regions that maximize the uncertainty reduction, or information
+  gain, in the uncertainty quantification of GCM parameters with regional data. The algorithm is based
+  on a Bayesian framework that exploits a quantified posterior distribution on GCM parameters as a measure
+  of uncertainty. The algorithm is embedded in the recently developed calibrate-emulate-sample (CES) framework,
+  which performs efficient model calibration and uncertainty quantification with only O(10^2) forward
+  model evaluations, compared with O(10^5) forward model evaluations typically needed for traditional
+  approaches to Bayesian calibration. We demonstrate the algorithm with an idealized GCM, with which we
+  generate surrogates of high-resolution data. In this setting, we calibrate parameters and quantify uncertainties
+  in a quasi-equilibrium convection scheme. We consider (i) localization in space for a statistically
+  stationary problem, and (ii) localization in space and time for a seasonally varying problem. In these
+  proof-of-concept applications, the calculated information gain reflects the reduction in parametric
+  uncertainty obtained from Bayesian inference when harnessing a targeted sample of data. The largest
+  information gain results from regions near the intertropical convergence zone (ITCZ) and indeed the
+  algorithm automatically targets these regions for data collection.
+significance: 3
+cited_by: 1
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

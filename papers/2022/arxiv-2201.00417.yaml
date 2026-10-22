@@ -1,0 +1,48 @@
+id: arxiv-2201.00417
+title: Non-local parameterization of atmospheric subgrid processes with neural networks
+authors:
+- Peidong Wang
+- Janni Yuval
+- Paul A. O'Gorman
+date: '2022-01-02'
+year: 2022
+venue: Journal of Advances in Modeling Earth Systems, 14(10), e2022MS002984
+venue_type: journal
+ids:
+  arxiv: '2201.00417'
+  doi: 10.1029/2022ms002984
+links:
+  paper: https://arxiv.org/abs/2201.00417
+  pdf: https://arxiv.org/pdf/2201.00417
+topic: hybrid-parameterization
+type: model
+spatial:
+- global
+data:
+- km-scale-sim
+status: research
+summary: Neural-network subgrid parameterizations using non-local 3x3-column inputs improve offline skill,
+  especially for momentum transport, with vertical velocity or divergence as key inputs.
+abstract: Subgrid processes in global climate models are represented by parameterizations which are a
+  major source of uncertainties in simulations of climate. In recent years, it has been suggested that
+  machine-learning (ML) parameterizations based on high-resolution model output data could be superior
+  to traditional parameterizations. Currently, both traditional and ML parameterizations of subgrid processes
+  in the atmosphere are based on a single-column approach, which only use information from single atmospheric
+  columns. However, single-column parameterizations might not be ideal since certain atmospheric phenomena,
+  such as organized convective systems, can cross multiple grid boxes and involve slantwise circulations
+  that are not purely vertical. Here we train neural networks (NNs) using non-local inputs spanning over
+  3$\times$3 columns of inputs. We find that including the non-local inputs improves the offline prediction
+  of a range of subgrid processes. The improvement is especially notable for subgrid momentum transport
+  and for atmospheric conditions associated with mid-latitude fronts and convective instability. Using
+  an interpretability method, we find that the NN improvements partly rely on using the horizontal wind
+  divergence, and we further show that including the divergence or vertical velocity as a separate input
+  substantially improves offline performance. However, non-local winds continue to be useful inputs for
+  parameterizating subgrid momentum transport even when the vertical velocity is included as an input.
+  Overall, our results imply that the use of non-local variables and the vertical velocity as inputs could
+  improve the performance of ML parameterizations, and the use of these inputs should be tested in online
+  simulations in future work.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

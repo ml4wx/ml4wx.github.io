@@ -1,0 +1,56 @@
+id: arxiv-2022.31595
+title: Inductive Spatiotemporal Graph Convolutional Networks for Short-Term Quantitative Precipitation
+  Forecasting
+authors:
+- Yajing Wu
+- Xuebing Yang
+- Yongqiang Tang
+- Chenyang Zhang
+- Guoping Zhang
+- Wensheng Zhang
+date: '2022-01-01'
+year: 2022
+venue: IEEE Transactions on Geoscience and Remote Sensing
+venue_type: journal
+ids:
+  arxiv: '2022.31595'
+  doi: 10.1109/tgrs.2022.3159530
+  openalex: W4225984675
+links:
+  paper: https://doi.org/10.1109/tgrs.2022.3159530
+orgs:
+- cma
+topic: nowcasting
+type: model
+method:
+- gnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- stations
+status: research
+summary: Introduces InstGCN, an inductive spatiotemporal graph network for radar-based short-term rainfall
+  forecasting, with a novel elliptic graph construction and subgraph decomposition for unseen nodes.
+abstract: Short-term quantitative precipitation forecasting (SQPF) using weather radar is an important
+  but challenging problem as one must cope with inherent nonlinearity and spatiotemporal correlation in
+  the data. In this article, we propose a novel deep learning model, named Inductive spatiotemporal Graph
+  Convolutional Networks (InstGCNs), to overcome these issues in SQPF. The proposed InstGCN can learn
+  a nonlinear mapping from historical radar reflectivity to future rainfall amounts and extract informative
+  spatiotemporal representations simultaneously. Specifically, we first provide a formal definition for
+  formulating the SQPF problem from a graph perspective. Then, based on radar reflectivity and rain gauge
+  observation, we propose a novel graph construction approach that utilizes a special elliptic structure
+  to model the spatial dependence of precipitation areas. In addition, a new Node level Differential Block
+  (Node-DB) is introduced to tackle the nonstationary temporal dependence. To execute inductive graph
+  learning for unseen nodes, we design to decompose a whole graph into subgraphs. We conduct extensive
+  experiments on three real-world datasets in East China and a public weather radar dataset in the southeastern
+  parts of France. The experimental results confirm the advantages of InstGCN compared with several state
+  of the arts.
+significance: 3
+cited_by: 12
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

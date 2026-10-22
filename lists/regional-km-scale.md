@@ -20,9 +20,6 @@ Limited-area and regional ML weather models, convection-permitting and km-scale 
 
 ## Also relevant
 
-- [Blended parameterization in an atmospheric model: Improving severestorm ensemble prediction by considering uncertainties in model physics](https://arxiv.org/abs/2506.15472) (2025)
-- [A Novel Latent Space Data Assimilation Framework with Autoencoder-Observation to Latent Space (AE-O2L) Network. Part I: The Observation-Only Analysis Method](https://doi.org/10.1175/mwr-d-24-0057.1) (2025)
-- [Postprocessing of convection permitting precipitation forecast using UNets](https://doi.org/10.1016/j.ecoinf.2025.103255) (2025)
 - [Generative Data Assimilation of Sparse Weather Station Observations at Kilometer Scales](https://arxiv.org/abs/2406.16947) (2024)
 - [FengWu-GHR: Learning the Kilometer-scale Medium-range Global Weather Forecasting](https://arxiv.org/abs/2402.00059) (2024)
 

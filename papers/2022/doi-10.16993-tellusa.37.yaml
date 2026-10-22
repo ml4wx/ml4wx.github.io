@@ -1,0 +1,54 @@
+id: doi-10.16993-tellusa.37
+title: Nowcasting Meso-γ-Scale Convective Storms Using Convolutional LSTM Models and High-Resolution Radar
+  Observations
+authors:
+- Dong-Kyun Kim
+- Tomoo Ushio
+date: '2022-01-01'
+year: 2022
+venue: Tellus A Dynamic Meteorology and Oceanography
+venue_type: journal
+ids:
+  doi: 10.16993/tellusa.37
+  openalex: W4226366356
+links:
+  paper: https://doi.org/10.16993/tellusa.37
+topic: nowcasting
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- nowcast
+spatial:
+- local
+- regional
+data:
+- radar
+status: research
+summary: Convolutional LSTM nowcasts of meso-gamma convective storms from MP-PAWR radar over Tokyo; the
+  ConvLSTM beats advection for total rain at 10 min lead time.
+abstract: As a deep learning approach to improving precipitation nowcasting, this study proposes convolutional
+  Long Short-Term Memory (LSTM) models which specifically target meso-γ-scale, localized convective storms
+  although there are numerous types of thunderstorms across scales. A Convolutional LSTM Model (CLM) and
+  an Encoder-Decoder Model (EDM) were built by employing LSTM networks that perform better with sequential
+  data. For training, radar reflectivity (Z) datasets of the Multi-Parameter Phased Array Weather Radar
+  (MP-PAWR) for a convective storm event that occurred over the Tokyo metropolitan area were used as input
+  to the models. An Advection Forecast Model (AFM) that utilizes an optical flow method to generate u
+  and v motion vectors and the Lagrangian advection scheme was also developed to compare with nowcasts
+  from the LSTM models. Model performances were assessed using statistics and skill score measures such
+  as Critical Success Index (CSI) and Probability of Detection (POD) with lead time up to 10 min. It was
+  found that for a total rain area with Z > 10 dBZ, the CLM had the best skill, showing higher CSI scores
+  and correlation coefficients than other models for all lead times. For a convective rain area with Z
+  > 35 dBZ, the CLM showed equal to or slightly higher CSI scores than the AFM until the lead time of
+  7.5 min but underpredicted the strength of convective cells with a lower CSI at 10 min. Both the CLM
+  and EDM showed more negative Z biases at longer lead times, resulting in lower CSI and POD scores than
+  the AFM in this convective rain category. The higher skill of the AFM at longer lead times is most likely
+  because the convective cells were advected without changing their shapes and intensities largely in
+  this short period.
+significance: 3
+cited_by: 4
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

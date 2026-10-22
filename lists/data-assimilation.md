@@ -5,16 +5,10 @@ ML for data assimilation and state estimation, learned observation operators, an
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/data-assimilation/)
 
-19 papers (4 ⭐). Newest first.
+16 papers (4 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
-| 2025-06-21 | [Probabilistic Data Assimilation for Ensemble Distribution Projections With Generative Machine Learning: A Lorenz ’96 Proof‐of‐Concept](https://doi.org/10.1029/2024gl112523)<br><sub>Shuolin Li, Tian Zheng, Alban Farchi et al. · Geophysical Research Letters</sub> | ECMWF, Columbia University (LEAP, Lamont-Doherty) |  |
-| 2025-06-13 | [A unified neural background-error covariance model for midlatitude and tropical atmospheric data assimilation](https://arxiv.org/abs/2506.11968)<br><sub>Boštjan Melinc, Uroš Perkan, Žiga Zaplotnik</sub> |  |  |
-| 2025-06-09 | [A Novel Latent Space Data Assimilation Framework with Autoencoder-Observation to Latent Space (AE-O2L) Network. Part I: The Observation-Only Analysis Method](https://doi.org/10.1175/mwr-d-24-0057.1)<br><sub>Hang Fan, Yubao Liu, Yubao Liu et al. · Monthly Weather Review</sub> | NSF NCAR / UCAR, Nanjing University of Information Science & Technology (NUIST), China Meteorological Administration (CMA) |  |
-| 2025-06-06 | [An Adaptive Variance Adjustment Strategy for a Static Background Error Covariance Matrix—Part I: Verification in the Lorenz-96 Model](https://doi.org/10.3390/app15126399)<br><sub>Lilan Huang, Hongze Leng, Junqiang Song et al. · Applied Sciences</sub> |  |  |
-| 2025-06-02 | [Using Diffusion Models to do Data Assimilation](https://arxiv.org/abs/2506.02249)<br><sub>Daniel Hodyss, Matthias Morzfeld</sub> |  |  |
-| 2025-06-01 | [An Online Paleoclimate Data Assimilation With a Deep Learning‐Based Network](https://doi.org/10.1029/2024ms004675)<br><sub>Haohao Sun, Lili Lei, Zhengyu Liu et al. · Journal of Advances in Modeling Earth Systems</sub> |  |  |
 | 2024-12-20 | [GraphDOP: Towards skilful data-driven medium-range weather forecasts learnt and initialised directly from observations](https://arxiv.org/abs/2412.15687)<br><sub>Mihai Alexe, Eulalie Boucher, Peter Lean et al.</sub> |  |  |
 | 2024-08-10 | ⭐ [FuXi Weather: A data-to-forecast machine learning system for global weather](https://arxiv.org/abs/2408.05472)<br><sub>Xiuyu Sun, Xiaohui Zhong, Xiaoze Xu et al. · Nature Communications</sub> | China Meteorological Administration (CMA), Fudan University (FuXi), Nanjing University of Information Science & Technology (NUIST), Tsinghua University (NowcastNet), University of California, Los Angeles (UCLA) |  |
 | 2024-06-19 | [Generative Data Assimilation of Sparse Weather Station Observations at Kilometer Scales](https://arxiv.org/abs/2406.16947)<br><sub>Peter Manshausen, Yair Cohen, Peter Harrington et al. · Journal of Advances in Modeling Earth Systems</sub> | NVIDIA, University of Oxford |  |
@@ -25,16 +19,18 @@ ML for data assimilation and state estimation, learned observation operators, an
 | 2023-12-18 | ⭐ [Towards an end-to-end artificial intelligence driven global weather forecasting system](https://arxiv.org/abs/2312.12462)<br><sub>Kun Chen, Lei Bai, Fenghua Ling et al.</sub> | Fudan University (FuXi), Nanjing University of Information Science & Technology (NUIST), Shanghai Artificial Intelligence Laboratory |  |
 | 2023-12-16 | ⭐ [FengWu-4DVar: Coupling the Data-driven Weather Forecasting Model with 4D Variational Assimilation](https://arxiv.org/abs/2312.12455)<br><sub>Yi Xiao, Lei Bai, Wei Xue et al.</sub> | Shanghai Artificial Intelligence Laboratory, Tsinghua University (NowcastNet) |  |
 | 2023-01-01 | [Score-based Data Assimilation](https://arxiv.org/abs/2306.10574)<br><sub>François Rozet, Gilles Louppe · Advances in Neural Information Processing Systems 36</sub> |  |  |
+| 2022-01-01 | [Deep Learning-Enhanced Ensemble-Based Data Assimilation for High-Dimensional Nonlinear Dynamical Systems](https://doi.org/10.1016/j.jcp.2023.111918)<br><sub>Ashesh Chattopadhyay, Ebrahim Nabizadeh, Eviatar Bach et al. · Journal of Computational Physics</sub> | California Institute of Technology (Caltech) |  |
+| 2022-01-01 | [A Deep-Learning-Based Microwave Radiative Transfer Emulator for Data Assimilation and Remote Sensing](https://doi.org/10.1109/jstars.2022.3210491)<br><sub>Xingming Liang, Kevin Garrett, Quanhua Liu et al. · IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</sub> | NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
+| 2022-01-01 | [A Hybrid Method for Fine-Scale Wind Field Retrieval Based on Machine Learning and Data Assimilation](https://doi.org/10.1109/tgrs.2022.3155662)<br><sub>Hang Gao, Jie Zhou, Pak-Wai Chan et al. · IEEE Transactions on Geoscience and Remote Sensing</sub> |  |  |
 | 2021-02-15 | [Learning earth system models from observations: machine learning or data assimilation?](https://doi.org/10.1098/rsta.2020.0089)<br><sub>A. J. Geer · Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences</sub> | ECMWF |  |
 | 2020-11-30 | [Machine Learning for Model Error Inference and Correction](https://doi.org/10.1029/2020ms002232)<br><sub>Massimo Bonavita, Patrick Laloyaux · Journal of Advances in Modeling Earth Systems</sub> | ECMWF |  |
 | 2020-01-06 | [Combining data assimilation and machine learning to emulate a dynamical model from sparse and noisy observations: a case study with the Lorenz 96 model](https://arxiv.org/abs/2001.01520)<br><sub>Julien Brajard, Alberto Carassi, Marc Bocquet et al. · Journal of Computational Science, Volume 44, 2020</sub> | University of Reading | [code](https://github.com/brajard/GMD-code) |
 
 ## Also relevant
 
-- [Generative Algorithms for Wildfire Progression Reconstruction from Multi-Modal Satellite Active Fire Measurements and Terrain Height](https://arxiv.org/abs/2506.10404) (2025)
-- [Forward modelling of passive microwave emissivities over snow-covered areas at continental scale](https://doi.org/10.1016/j.rse.2025.114821) (2025)
 - [Deep Learning for Day Forecasts from Sparse Observations](https://arxiv.org/abs/2306.06079) (2023)
 - [FengWu: Pushing the Skillful Global Medium-range Weather Forecast beyond 10 Days Lead](https://arxiv.org/abs/2304.02948) (2023)
+- [Assimilating an expanded tree ring dataset to reconstruct the millennial air temperature fields for the Northern Hemisphere](https://doi.org/10.1002/joc.7528) (2022)
 - [Can deep learning beat numerical weather prediction?](https://doi.org/10.1098/rsta.2020.0097) (2021)
 - [Development and Interpretation of a Neural Network-Based Synthetic Radar Reflectivity Estimator Using GOES-R Satellite Observations](https://arxiv.org/abs/2004.07906) (2020)
 - [Leveraging Modern Artificial Intelligence for Remote Sensing and NWP: Benefits and Challenges](https://doi.org/10.1175/bams-d-18-0324.1) (2019)

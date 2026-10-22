@@ -1,0 +1,47 @@
+id: arxiv-2103.11919
+title: Machine Learning Emulation of 3D Cloud Radiative Effects
+authors:
+- David Meyer
+- Robin James Hogan
+- Peter Dominik Dueben
+- Shannon Mason
+date: '2022-01-18'
+year: 2022
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  arxiv: '2103.11919'
+  doi: 10.1029/2021ms002550
+  openalex: W3137372730
+links:
+  paper: https://doi.org/10.1029/2021ms002550
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2021MS002550
+orgs:
+- ecmwf
+- university-of-reading
+topic: hybrid-parameterization
+type: model
+spatial:
+- global
+data:
+- km-scale-sim
+status: research
+summary: Neural networks correct the ecRad 1D radiation scheme for 3D cloud effects, recovering 3D signal
+  with 20-30% error at about 1% extra runtime versus the 5x costlier SPARTACUS.
+abstract: Abstract The treatment of cloud structure in numerical weather and climate models is often greatly
+  simplified to make them computationally affordable. Here we propose to correct the European Centre for
+  Medium‐Range Weather Forecasts 1D radiation scheme ecRad for 3D cloud effects using computationally
+  cheap neural networks. 3D cloud effects are learned as the difference between ecRad's fast 1D Tripleclouds
+  solver that neglects them and its 3D SPARTACUS (SPeedy Algorithm for Radiative TrAnsfer through CloUd
+  Sides) solver that includes them but is about five times more computationally expensive. With typical
+  errors between 20% and 30% of the 3D signal, neural networks improve Tripleclouds' accuracy for about
+  1% increase in runtime. Thus, rather than emulating the whole of SPARTACUS, we keep Tripleclouds unchanged
+  for cloud‐free parts of the atmosphere and 3D‐correct it elsewhere. The focus on the comparably small
+  3D correction instead of the entire signal allows us to improve predictions significantly if we assume
+  a similar signal‐to‐noise ratio for both.
+significance: 4
+cited_by: 43
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

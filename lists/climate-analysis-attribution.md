@@ -5,23 +5,21 @@ ML for climate science questions: causal discovery, teleconnections, pattern det
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/climate-analysis-attribution/)
 
-22 papers (2 ⭐). Newest first.
+20 papers (2 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
-| 2025-06-28 | [Interpretable Time Series Autoregression for Periodicity Quantification](https://arxiv.org/abs/2506.22895)<br><sub>Xinyu Chen, Vassilis Digalakis, Lijun Ding et al.</sub> |  |  |
-| 2025-06-21 | [What determines the Arctic solar radiation energy budget at the surface most strongly: Clouds, surface albedo, or the solar zenith angle?](https://doi.org/10.1016/j.jemets.2025.100016)<br><sub>Evelyn Jäkel, Tim R. Sperzel, Manfred Wendisch et al. · Journal of the European Meteorological Society.</sub> |  |  |
-| 2025-06-10 | [Observation-based estimate of Earth’s effective radiative forcing](https://doi.org/10.1073/pnas.2425445122)<br><sub>Senne Van Loon, Maria A. A. Rugenstein, Elizabeth A. Barnes · Proceedings of the National Academy of Sciences</sub> | Colorado State University (incl. CIRA) |  |
-| 2025-06-10 | [Decomposing the Bias of Shortwave Cloud Radiative Effect in a Climate Model Using Machine Learning](https://doi.org/10.1029/2024gl114203)<br><sub>Hongtao Yang, Guoxing Chen, Wei‐Chyung Wang et al. · Geophysical Research Letters</sub> | Fudan University (FuXi), Institute of Atmospheric Physics, Chinese Academy of Sciences |  |
-| 2025-06-02 | [Exploring Climate Change Dynamics Using Machine Learning and Deep Learning Approaches](https://doi.org/10.52783/jisem.v10i52s.10677)<br><sub>Shashank Tiwari · Journal of Information Systems Engineering & Management</sub> |  |  |
-| 2025-06-02 | [Using a data-driven statistical model to better evaluate surface turbulent heat fluxes in weather and climate numerical models: a demonstration study](https://doi.org/10.5194/gmd-18-3211-2025)<br><sub>Maurin Zouzoua, Sophie Bastin, Marjolaine Chiriaco et al. · Geoscientific model development</sub> | Météo-France (incl. CNRM) |  |
-| 2025-06-02 | [Climate warming increases global oceanic dimethyl sulfide emissions](https://doi.org/10.1073/pnas.2502077122)<br><sub>Sankirna D. Joge, Karam Mansour, Rafel Simó et al. · Proceedings of the National Academy of Sciences</sub> |  |  |
-| 2025-06-01 | [Process‐Based Machine Learning Observationally Constrains Future Regional Warming Projections](https://doi.org/10.1029/2025jh000698)<br><sub>Sophie Wilkinson, Peer Johannes Nowack, Manoj Joshi · Journal of Geophysical Research Machine Learning and Computation</sub> | Karlsruhe Institute of Technology (KIT) |  |
-| 2025-06-01 | [A machine-learning analysis of lagrangian low-cloud evolution in climate models](https://doi.org/10.1007/s00382-025-07745-1)<br><sub>Hamish Lewis, Gilles Bellon · Climate Dynamics</sub> | Météo-France (incl. CNRM) |  |
 | 2024-08-23 | [Machine learning–based extreme event attribution](https://doi.org/10.1126/sciadv.adl3242)<br><sub>Jared T. Trok, Elizabeth A. Barnes, Frances V. Davenport et al. · Science Advances</sub> | Colorado State University (incl. CIRA), Stanford University |  |
 | 2023-08-30 | [Anthropogenic fingerprints in daily precipitation revealed by deep learning](https://doi.org/10.1038/s41586-023-06474-x)<br><sub>Yoo-Geun Ham, Jeong-Hwan Kim, Seung-Ki Min et al. · Nature</sub> | Nanjing University of Information Science & Technology (NUIST), University of Washington |  |
 | 2023-06-27 | [Causal inference for time series](https://doi.org/10.1038/s43017-023-00431-y)<br><sub>Jakob Runge, Andreas Gerhardus, Gherardo Varando et al. · Nature Reviews Earth &amp; Environment</sub> |  |  |
 | 2023-01-30 | [Data-driven predictions of the time remaining until critical global warming thresholds are reached](https://doi.org/10.1073/pnas.2207183120)<br><sub>Noah S. Diffenbaugh, Elizabeth A. Barnes · Proceedings of the National Academy of Sciences</sub> | Colorado State University (incl. CIRA), Stanford University |  |
+| 2022-01-27 | [EuLerian Identification of ascending AirStreams (ELIAS 2.0) in numerical weather prediction and climate models – Part 2: Model application to different datasets](https://doi.org/10.5194/gmd-15-731-2022)<br><sub>Julian Quinting, Christian Michael Grams, Annika Oertel et al. · Geoscientific model development</sub> | Karlsruhe Institute of Technology (KIT) |  |
+| 2022-01-27 | [EuLerian Identification of ascending AirStreams (ELIAS 2.0) in numerical weather prediction and climate models – Part 1: Development of deep learning model](https://doi.org/10.5194/gmd-15-715-2022)<br><sub>Julian Quinting, Christian Michael Grams · Geoscientific model development</sub> | Karlsruhe Institute of Technology (KIT) |  |
+| 2022-01-25 | [Analysis of various climate change parameters in India using machine learning](https://arxiv.org/abs/2201.10123)<br><sub>Rutvij Wamanse, Tushuli Patil</sub> |  |  |
+| 2022-01-17 | [Assimilating an expanded tree ring dataset to reconstruct the millennial air temperature fields for the Northern Hemisphere](https://doi.org/10.1002/joc.7528)<br><sub>Miao Fang, Jingyun Zheng, Jianglin Wang et al. · International Journal of Climatology</sub> |  |  |
+| 2022-01-07 | [Explainable deep learning for insights in El Niño and river flows](https://arxiv.org/abs/2201.02596)<br><sub>Yumin Liu, Kate Duffy, Jennifer G. Dy et al. · Nat Commun 14, 339 (2023)</sub> |  |  |
+| 2022-01-01 | [MSU Disentanglement Analysis Software](https://doi.org/10.11578/dc.20221017.3)<br><sub>Stephen Po–Chedley · OSTI OAI (U.S. Department of Energy Office of Scientific and Technical Information)</sub> |  |  |
+| 2022-01-01 | [Detection and attribution of climate change: A deep learning and variational approach](https://doi.org/10.1017/eds.2022.17)<br><sub>Constantin Bône, Guillaume Gastineau, Sylvie Thiria et al. · Environmental Data Science</sub> |  |  |
 | 2021-07-30 | [Using Machine Learning to Analyze Physical Causes of Climate Change: A Case Study of U.S. Midwest Extreme Precipitation](https://doi.org/10.1029/2021gl093787)<br><sub>Frances V. Davenport, Noah S. Diffenbaugh · Geophysical Research Letters</sub> | Stanford University |  |
 | 2021-06-14 | [Detecting Climate Signals Using Explainable AI With Single‐Forcing Large Ensembles](https://doi.org/10.1029/2021ms002464)<br><sub>Zachary M. Labe, Elizabeth A. Barnes · Journal of Advances in Modeling Earth Systems</sub> | Colorado State University (incl. CIRA) |  |
 | 2020-03-16 | [Causal networks for climate model evaluation and constrained projections](https://doi.org/10.1038/s41467-020-15195-y)<br><sub>Peer Nowack, Jakob Runge, Veronika Eyring et al. · Nature Communications</sub> |  |  |
@@ -35,19 +33,14 @@ ML for climate science questions: causal discovery, teleconnections, pattern det
 ## Also relevant
 
 - [ClimAgent: LLM as Agents for Autonomous Open-ended Climate Science Analysis](https://arxiv.org/abs/2604.16922) (2026)
-- [Multi-criteria decision-making and machine learning-based CMIP6 general circulation model ensemble for climate projections in a tropical river basin in India](https://doi.org/10.1007/s11600-025-01623-4) (2025)
-- [AI-informed model-analogs for understanding subseasonal-to-seasonal jet stream and North American temperature predictability](https://arxiv.org/abs/2506.14022) (2025)
-- [AI reconstruction of European weather from the Euro-Atlantic regimes](https://arxiv.org/abs/2506.13758) (2025)
-- [Refined climatologies of future precipitation over High Mountain Asia using probabilistic ensemble learning](https://doi.org/10.1088/1748-9326/ade4dd) (2025)
-- [Decadal sink-source shifts of forest aboveground carbon since 1988](https://arxiv.org/abs/2506.11879) (2025)
-- [The crucial role of seasonality in improving the skill of machine learning in predicting precipitation types in China](https://doi.org/10.1016/j.jhydrol.2025.133635) (2025)
-- [A Convolutional Neural Network for the Detection of Gravity Waves in Satellite Observations and Numerical Simulations](https://doi.org/10.1029/2025gl115683) (2025)
-- [DIRESA, a Distance-Preserving Nonlinear Dimension Reduction Technique Based on Regularized Autoencoders](https://doi.org/10.1175/aies-d-24-0034.1) (2025)
-- [Trends in climatic variables and machine learning based reference evapotranspiration predictions in key cereal producing regions of Algeria](https://doi.org/10.1007/s00704-025-05561-5) (2025)
 - [Artificial intelligence for modeling and understanding extreme weather and climate events](https://doi.org/10.1038/s41467-025-56573-8) (2025)
 - [Dynamical-generative downscaling of climate model ensembles](https://arxiv.org/abs/2410.01776) (2024)
 - [Machine learning for climate physics and simulations](https://arxiv.org/abs/2404.13227) (2024)
 - [A self-attention–based neural network for three-dimensional multivariate modeling and its skillful ENSO predictions](https://doi.org/10.1126/sciadv.adf2827) (2023)
+- [Reduced Tropical Cyclone Genesis in the Future as Predicted by a Machine Learning Model](https://doi.org/10.1029/2021ef002455) (2022)
+- [A New Ensemble Index for Extracting Predictable Drought Features from Multiple Historical Simulations of Climate](https://doi.org/10.16993/tellusa.46) (2022)
+- [A SPATIOTEMPORAL-AWARE WEIGHTING SCHEME FOR IMPROVING CLIMATE MODEL ENSEMBLE PREDICTIONS](https://doi.org/10.1615/jmachlearnmodelcomput.2022046715) (2022)
+- [A spatiotemporal stochastic climate model for benchmarking causal discovery methods for teleconnections](https://doi.org/10.1017/eds.2022.11) (2022)
 - [Physically Interpretable Neural Networks for the Geosciences: Applications to Earth System Variability](https://arxiv.org/abs/1912.01752) (2019)
 - [Combining crowd-sourcing and deep learning to explore the meso-scale organization of shallow convection](https://arxiv.org/abs/1906.01906) (2019)
 - [Using machine learning to parameterize moist convection: potential for modeling of climate, climate change and extreme events](https://arxiv.org/abs/1806.11037) (2018)

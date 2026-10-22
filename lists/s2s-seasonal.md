@@ -5,23 +5,20 @@ Forecasts from 2 weeks to about a year: sub-seasonal, seasonal and ENSO/MJO pred
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/s2s-seasonal/)
 
-19 papers (5 ⭐). Newest first.
+16 papers (5 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
-| 2025-06-30 | [Subseasonal to Seasonal (S2S) Prediction Algorithms Using Hybrid Machine Learning Techniques](https://doi.org/10.1175/aies-d-23-0108.1)<br><sub>Hee–Seung Kim, Shanglin Zhou, Adam Bienkowski et al. · Artificial Intelligence for the Earth Systems</sub> |  |  |
-| 2025-06-27 | [Optimised deep convolutional spiking neural network for accurate long-term and short-term rainfall forecasting in climate prediction systems](https://doi.org/10.1504/ijmc.2026.10072144)<br><sub>Moorthy Agoramoorthy, K Ananthajothi, M. Amanullah · International Journal of Mobile Communications</sub> |  |  |
-| 2025-06-22 | [An entropy-optimal path to humble AI](https://arxiv.org/abs/2506.17940)<br><sub>Davide Bassetti, Lukáš Pospíšil, Michael Groom et al.</sub> |  |  |
-| 2025-06-16 | [AI-informed model-analogs for understanding subseasonal-to-seasonal jet stream and North American temperature predictability](https://arxiv.org/abs/2506.14022)<br><sub>Jacob B. Landsberg, Matthew Newman, Elizabeth A. Barnes · Machine Learning: Earth 1 (1), ae4805 (2026)</sub> |  |  |
-| 2025-06-16 | [AI reconstruction of European weather from the Euro-Atlantic regimes](https://arxiv.org/abs/2506.13758)<br><sub>A. Camilletti, G. Franch, E. Tomasi et al. · International Journal of Climatology, 2025</sub> |  |  |
-| 2025-06-08 | [Physics-Informed Teleconnection-Aware Transformer for Global Subseasonal-to-Seasonal Forecasting](https://arxiv.org/abs/2506.08049)<br><sub>Tengfei Lyu, Weijia Zhang, Hao Liu</sub> |  |  |
-| 2025-06-05 | [Ensemble of Artificial Neural Networks for Seasonal Forecasting of Wind Speed in Eastern Canada](https://doi.org/10.3390/en18112975)<br><sub>Pia Leminski, Enzo Pinheiro, Taha B. M. J. Ouarda · Energies</sub> |  |  |
-| 2025-06-05 | [Ensemble Meritocracy on Madden–Julian Oscillation Predictions: Elites Chosen by AI Beat the Mean](https://doi.org/10.1175/aies-d-23-0109.1)<br><sub>Rui Wang, Jimmy Chi Hung Fung, Lin Su et al. · Artificial Intelligence for the Earth Systems</sub> |  |  |
 | 2025-03-31 | ⭐ [Skilful global seasonal predictions from a machine learning weather model trained on reanalysis data](https://arxiv.org/abs/2503.23953)<br><sub>Chris Kent, Adam A. Scaife, Nick J. Dunstone et al. · npj Climate and Atmospheric Science</sub> | Allen Institute for AI (Ai2, ACE), Met Office |  |
 | 2023-12-15 | ⭐ [FuXi-S2S: A machine learning model that outperforms conventional global subseasonal forecast models](https://arxiv.org/abs/2312.09926)<br><sub>Lei Chen, Xiaohui Zhong, Hao Li et al. · Nature Communications</sub> | China Meteorological Administration (CMA), Fudan University (FuXi) |  |
 | 2023-03-10 | ⭐ [A self-attention–based neural network for three-dimensional multivariate modeling and its skillful ENSO predictions](https://doi.org/10.1126/sciadv.adf2827)<br><sub>Lu Zhou, Rong-Hua Zhang · Science Advances</sub> | Nanjing University of Information Science & Technology (NUIST) |  |
 | 2022-12-12 | [Multi-task machine learning improves multi-seasonal prediction of the Indian Ocean Dipole](https://doi.org/10.1038/s41467-022-35412-0)<br><sub>Fenghua Ling, Jing-Jia Luo, Yue Li et al. · Nature Communications</sub> | Nanjing University of Information Science & Technology (NUIST), Shanghai Artificial Intelligence Laboratory |  |
 | 2022-12-01 | [Outcomes of the WMO Prize Challenge to Improve Subseasonal to Seasonal Predictions Using Artificial Intelligence](https://doi.org/10.1175/bams-d-22-0046.1)<br><sub>F. Vitart, A. W. Robertson, A. Spring et al. · Bulletin of the American Meteorological Society</sub> | Columbia University (LEAP, Lamont-Doherty), Environment and Climate Change Canada (ECCC), ECMWF, Max Planck Institute for Meteorology, Swiss Data Science Center (SDSC) |  |
+| 2022-01-31 | [South America Seasonal Precipitation Prediction by Gradient-Boosting Machine-Learning Approach](https://doi.org/10.3390/atmos13020243)<br><sub>Vinicius Schmidt Monego, Juliana Aparecida Anochi, Haroldo Fraga de Campos Velho · Atmosphere</sub> |  |  |
+| 2022-01-01 | [Use of deep learning to identify optimal meteorological inputs to forecast seasonal precipitation](https://doi.org/10.3178/hrl.16.67)<br><sub>Shingo Zenkoji, Taichi TEBAKARI, Kazutoshi Sakakibara · Hydrological Research Letters</sub> |  |  |
+| 2022-01-01 | [Feature Selection and Spatial-Temporal Forecast of Oceanic Niño Index Using Deep Learning](https://doi.org/10.1142/s0218194022500048)<br><sub>Jahnavi Jonnalagadda, Mahdi Hashemi · International Journal of Software Engineering and Knowledge Engineering</sub> |  |  |
+| 2022-01-01 | [Medium- and Long-Term Precipitation Forecasting Method Based on Data Augmentation and Machine Learning Algorithms](https://doi.org/10.1109/jstars.2022.3140442)<br><sub>Tiantian Tang, Donglai Jiao, Tao Chen et al. · IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</sub> |  |  |
+| 2022-01-01 | [Improving Subseasonal-to-Seasonal Forecasts in Predicting the Occurrence of Extreme Precipitation Events Over the Contiguous U.S. Using Machine Learning Models](https://doi.org/10.1016/j.atmosres.2022.106502)<br><sub>Lujun Zhang, Tiantian Yang, Shang Gao et al. · Atmospheric Research</sub> | NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), University of Oklahoma (AI2ES) |  |
 | 2021-08-10 | [Training machine learning models on climate model output yields skillful interpretable seasonal precipitation forecasts](https://doi.org/10.1038/s43247-021-00225-4)<br><sub>Peter B. Gibson, William E. Chapman, Alphan Altinok et al. · Communications Earth &amp; Environment</sub> | California Institute of Technology (Caltech), NASA |  |
 | 2021-05-13 | [Subseasonal Forecasts of Opportunity Identified by an Explainable Neural Network](https://doi.org/10.1029/2020gl092092)<br><sub>Kirsten J. Mayer, Elizabeth A. Barnes · Geophysical Research Letters</sub> | Colorado State University (incl. CIRA) |  |
 | 2021-02-09 | ⭐ [Sub-seasonal forecasting with a large ensemble of deep-learning weather prediction models](https://arxiv.org/abs/2102.05107)<br><sub>Jonathan A. Weyn, Dale R. Durran, Rich Caruana et al. · Sub-Seasonal Forecasting With a Large Ensemble of Deep-Learning Weather Prediction Models. Journal of Advances in Modeling Earth Systems, 2021</sub> | Microsoft Research (AI for Science), University of Washington |  |
@@ -31,14 +28,13 @@ Forecasts from 2 weeks to about a year: sub-seasonal, seasonal and ENSO/MJO pred
 
 ## Also relevant
 
-- [Enhancing Extended Weather Forecasts in the TCWAGFS Model Using Deep Learning Method for SST Bias Correction](https://doi.org/10.5194/egusphere-2025-142) (2025)
-- [Machine Learning-based Statistical Prediction of Cyclonic Disturbance Frequency during Post-monsoon over the Bay of Bengal](https://doi.org/10.1007/s00024-025-03740-z) (2025)
-- [Seasonal heatwave forecasting with explainable machine learning and remote sensing data](https://doi.org/10.1007/s00477-025-03020-1) (2025)
-- [Advancing long-range daily precipitation ensemble forecasts with deep learning for Australia](https://doi.org/10.1016/j.jhydrol.2025.133548) (2025)
 - [ACE2: Accurately learning subseasonal to decadal atmospheric variability and forced responses](https://arxiv.org/abs/2411.11268) (2024)
 - [A Deep Learning Earth System Model for Efficient Simulation of the Observed Climate](https://arxiv.org/abs/2409.16247) (2024)
 - [ChaosBench: A Multi-Channel, Physics-Based Benchmark for Subseasonal-to-Seasonal Climate Prediction](https://arxiv.org/abs/2402.00712) (2024)
 - [Deep learning for post-processing global probabilistic forecasts on sub-seasonal time scales](https://arxiv.org/abs/2306.15956) (2023)
+- [Improving the forecasting of winter crop yields in northern China with machine learning-dynamical hybrid subseasonal-to-seasonal ensemble prediction](https://doi.org/10.1002/essoar.10510222.1) (2022)
+- [Advancing interpretability of machine-learning prediction models](https://doi.org/10.1017/eds.2022.13) (2022)
+- [Video-Based Convolutional Neural Networks Forecasting for Rainfall Forecasting](https://doi.org/10.1109/lgrs.2022.3167456) (2022)
 - [Using Artificial Neural Networks for Generating Probabilistic Subseasonal Precipitation Forecasts over California](https://doi.org/10.1175/mwr-d-20-0096.1) (2020)
 - [Analog forecasting of extreme-causing weather patterns using deep learning](https://arxiv.org/abs/1907.11617) (2019)
 

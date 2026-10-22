@@ -5,11 +5,10 @@ Large pretrained models for the atmosphere or Earth system that are fine-tuned f
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/foundation-models/)
 
-10 papers (2 ⭐). Newest first.
+9 papers (2 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
-| 2025-06-23 | [Finetuning a Weather Foundation Model with Lightweight Decoders for Unseen Physical Processes](https://arxiv.org/abs/2506.19088)<br><sub>Fanny Lehmann, Firat Ozdemir, Benedikt Soja et al.</sub> |  |  |
 | 2025-05-07 | [ORBIT-2: Scaling Exascale Vision Foundation Models for Weather and Climate Downscaling](https://arxiv.org/abs/2505.04802)<br><sub>Xiao Wang, Jong-Youl Choi, Takuya Kurihaya et al. · Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis</sub> | Oak Ridge National Laboratory |  |
 | 2024-11-08 | [WeatherGFM: Learning A Weather Generalist Foundation Model via In-context Learning](https://arxiv.org/abs/2411.05420)<br><sub>Xiangyu Zhao, Zhiwang Zhou, Wenlong Zhang et al.</sub> | Shanghai Artificial Intelligence Laboratory |  |
 | 2024-09-20 | [Prithvi WxC: Foundation Model for Weather and Climate](https://arxiv.org/abs/2409.13598)<br><sub>Johannes Schmude, Sujit Roy, Will Trojak et al.</sub> |  |  |
@@ -22,11 +21,6 @@ Large pretrained models for the atmosphere or Earth system that are fine-tuned f
 
 ## Also relevant
 
-- [Distributed Cross-Channel Hierarchical Aggregation for Foundation Models](https://arxiv.org/abs/2506.21411) (2025)
-- [Elucidated Rolling Diffusion Models for Probabilistic Forecasting of Complex Dynamics](https://arxiv.org/abs/2506.20024) (2025)
-- [A Geometry-Aware AI Emulator for the Coupled Whole Atmosphere from Earth Surface to the Ionosphere and Thermosphere](https://arxiv.org/abs/2506.19340) (2025)
-- [Community Research Earth Digital Intelligence Twin: a scalable framework for AI-driven Earth System Modeling](https://doi.org/10.1038/s41612-025-01125-6) (2025)
-- [Using Diffusion Models to do Data Assimilation](https://arxiv.org/abs/2506.02249) (2025)
 - [Climate in a Bottle: Towards a Generative Foundation Model for the Kilometer-Scale Global Atmosphere](https://arxiv.org/abs/2505.06474) (2025)
 - [Learning earth system models from observations: machine learning or data assimilation?](https://doi.org/10.1098/rsta.2020.0089) (2021)
 

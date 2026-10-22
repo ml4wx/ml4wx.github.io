@@ -5,17 +5,11 @@ Emulators of climate models and long stable rollouts (decades to centuries), sce
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/climate-emulation/)
 
-19 papers (3 ⭐). Newest first.
+14 papers (3 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
 | 2025-09-15 | ⭐ [SamudrACE: Fast and Accurate Coupled Climate Modeling with 3D Ocean and Atmosphere Emulators](https://arxiv.org/abs/2509.12490)<br><sub>James P. C. Duncan, Elynn Wu, Surya Dheeshjith et al. · Geophysical Research Letters</sub> | Allen Institute for AI (Ai2, ACE), Columbia University (LEAP, Lamont-Doherty), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), New York University (M2LInES), Princeton University |  |
-| 2025-06-27 | [Probing forced responses and causality in data-driven climate emulators: conceptual limitations and the role of reduced-order models](https://arxiv.org/abs/2506.22552)<br><sub>Fabrizio Falasca</sub> |  |  |
-| 2025-06-24 | [A Geometry-Aware AI Emulator for the Coupled Whole Atmosphere from Earth Surface to the Ionosphere and Thermosphere](https://arxiv.org/abs/2506.19340)<br><sub>Jiahui Hu, Wenjun Dong</sub> |  |  |
-| 2025-06-11 | [Causal Climate Emulation with Bayesian Filtering](https://arxiv.org/abs/2506.09891)<br><sub>Sebastian Hickman, Ilija Trajkovic, Julia Kaltenborn et al.</sub> |  |  |
-| 2025-06-09 | [An advanced machine learning framework for predicting climate warming from greenhouse gas emissions](https://doi.org/10.1007/s42107-025-01378-9)<br><sub>Gokulan Ravindiran, K. Karthick, H. K. Ramaraju et al. · Asian Journal of Civil Engineering</sub> |  |  |
-| 2025-06-06 | [Emulators of Climate Model Output](https://doi.org/10.1146/annurev-environ-012125-085838)<br><sub>Claudia Tebaldi, C. Tebaldi, Noelle Eckley Selin et al. · Annual Review of Environment and Resources</sub> | Massachusetts Institute of Technology (MIT) |  |
-| 2025-06-01 | [Rainfall prediction in the context of climate change in Thar Desert India using machine learning algorithms](https://doi.org/10.1007/s00704-025-05592-y)<br><sub>Hajari Singh, Mahendra Pratap Choudhary · Theoretical and Applied Climatology</sub> |  |  |
 | 2025-05-10 | [Climate in a Bottle: Towards a Generative Foundation Model for the Kilometer-Scale Global Atmosphere](https://arxiv.org/abs/2505.06474)<br><sub>Noah D. Brenowitz, Tao Ge, Akshay Subramaniam et al.</sub> |  |  |
 | 2024-12-05 | [ACE2-SOM: Coupling an ML atmospheric emulator to a slab ocean and learning the sensitivity of climate to changed CO$_2$](https://arxiv.org/abs/2412.04418)<br><sub>Spencer K. Clark, Oliver Watt-Meyer, Anna Kwa et al. · Journal of Geophysical Research: Machine Learning and Computation</sub> | Allen Institute for AI (Ai2, ACE), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
 | 2024-11-18 | ⭐ [ACE2: Accurately learning subseasonal to decadal atmospheric variability and forced responses](https://arxiv.org/abs/2411.11268)<br><sub>Oliver Watt-Meyer, Brian Henn, Jeremy McGibbon et al. · npj Climate and Atmospheric Science</sub> | Allen Institute for AI (Ai2, ACE), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
@@ -25,17 +19,13 @@ Emulators of climate models and long stable rollouts (decades to centuries), sce
 | 2024-01-01 | [Probabilistic Emulation of a Global Climate Model with Spherical DYffusion](https://arxiv.org/abs/2406.14798)<br><sub>Salva Rühling Cachay, Brian Henn, Oliver Watt-Meyer et al. · Advances in Neural Information Processing Systems 37</sub> |  | [code](https://github.com/Rose-STL-Lab/spherical-dyffusion) |
 | 2023-10-03 | ⭐ [ACE: A fast, skillful learned global atmospheric model for climate prediction](https://arxiv.org/abs/2310.02074)<br><sub>Oliver Watt-Meyer, Gideon Dresdner, Jeremy McGibbon et al.</sub> | Allen Institute for AI (Ai2, ACE), NVIDIA, University of California, Berkeley |  |
 | 2023-04-14 | [Challenges of learning multi-scale dynamics with AI weather models: Implications for stability and one solution](https://arxiv.org/abs/2304.07029)<br><sub>Ashesh Chattopadhyay, Y. Qiang Sun, Pedram Hassanzadeh</sub> | University of Chicago |  |
+| 2022-01-01 | [Statistical mechanics in climate emulation: Challenges and perspectives](https://doi.org/10.1017/eds.2022.15)<br><sub>Ivan Sudakow, Michael Pokojovy, Dmitry A. Lyakhov · Environmental Data Science</sub> |  |  |
 | 2020-11-19 | [Predicting global patterns of long-term climate change from short-term simulations using machine learning](https://doi.org/10.1038/s41612-020-00148-5)<br><sub>L. A. Mansfield, P. J. Nowack, M. Kasoar et al. · npj Climate and Atmospheric Science</sub> | University of Reading |  |
 | 2020-02-17 | [Emulating Earth system model temperatures with MESMER: from global mean temperature trajectories to grid-point-level realizations on land](https://doi.org/10.5194/esd-11-139-2020)<br><sub>Lea Beusch, Lukas Gudmundsson, Sonia I. Seneviratne · Earth System Dynamics</sub> | ETH Zurich |  |
 | 2019-07-10 | [Weather and climate forecasting with neural networks: using general circulation models (GCMs) with different complexity as a study ground](https://doi.org/10.5194/gmd-12-2797-2019)<br><sub>Sebastian Scher, Gabriele Messori · Geoscientific Model Development</sub> |  |  |
 
 ## Also relevant
 
-- [Probabilistic Data Assimilation for Ensemble Distribution Projections With Generative Machine Learning: A Lorenz ’96 Proof‐of‐Concept](https://doi.org/10.1029/2024gl112523) (2025)
-- [Tuning the ICON-A 2.6.4 climate model with machine-learning-based emulators and history matching](https://doi.org/10.5194/gmd-18-3681-2025) (2025)
-- [Vision Transformers for Multi-Variable Climate Downscaling: Emulating Regional Climate Models with a Shared Encoder and Multi-Decoder Architecture](https://arxiv.org/abs/2506.22447) (2025)
-- [AtmosMJ: Revisiting Gating Mechanism for AI Weather Forecasting Beyond the Year Scale](https://arxiv.org/abs/2506.09733) (2025)
-- [Stable Simulation of the Community Atmosphere Model Using Machine‐Learning Physical Parameterization Trained With Experience Replay](https://doi.org/10.1029/2024ms004722) (2025)
 - [Skilful global seasonal predictions from a machine learning weather model trained on reanalysis data](https://arxiv.org/abs/2503.23953) (2025)
 - [Recommendations for Comprehensive and Independent Evaluation of Machine Learning-Based Earth System Models](https://arxiv.org/abs/2410.19882) (2024)
 - [Machine learning emulation of precipitation from km-scale UK regional climate simulations using a diffusion model](https://arxiv.org/abs/2407.14158) (2024)
@@ -51,6 +41,8 @@ Emulators of climate models and long stable rollouts (decades to centuries), sce
 - [Physically Constrained Generative Adversarial Networks for Improving Precipitation Fields from Earth System Models](https://arxiv.org/abs/2209.07568) (2022)
 - [Regional climate model emulator based on deep learning: concept and first evaluation of a novel hybrid downscaling approach](https://doi.org/10.1007/s00382-022-06343-9) (2022)
 - [Stable climate simulations using a realistic general circulation model with neural network parameterizations for atmospheric moist physics and radiation processes](https://doi.org/10.5194/gmd-15-3923-2022) (2022)
+- [How to calibrate a climate model with neural network based physics?](https://doi.org/10.1002/essoar.10510164.1) (2022)
+- [Modeling and simulating spatial extremes by combining extreme value theory with generative adversarial networks](https://doi.org/10.1017/eds.2022.4) (2022)
 - [Climate-Invariant Machine Learning](https://arxiv.org/abs/2112.08440) (2021)
 - [Physics-informed machine learning: case studies for weather and climate modelling](https://doi.org/10.1098/rsta.2020.0093) (2021)
 - [Stable machine-learning parameterization of subgrid processes for climate modeling at a range of resolutions](https://arxiv.org/abs/2001.03151) (2020)

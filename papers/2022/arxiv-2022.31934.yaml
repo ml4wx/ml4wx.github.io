@@ -1,0 +1,55 @@
+id: arxiv-2022.31934
+title: Dynamic Multiscale Fusion Generative Adversarial Network for Radar Image Extrapolation
+authors:
+- Shengchao Chen
+- Ting Shu
+- Huan Qi Zhao
+- Qilin Wan
+- Jincan Huang
+- Cailing Li
+date: '2022-01-01'
+year: 2022
+venue: IEEE Transactions on Geoscience and Remote Sensing
+venue_type: journal
+ids:
+  arxiv: '2022.31934'
+  doi: 10.1109/tgrs.2022.3193458
+  openalex: W4287888016
+links:
+  paper: https://doi.org/10.1109/tgrs.2022.3193458
+topic: nowcasting
+topics:
+- extremes-hazards
+type: model
+method:
+- gan-vae
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: DMSF-GAN extrapolates radar images for 0-6 h typhoon nowcasting and outperforms optical-flow
+  and RNN baselines; the abstract gives no quantitative results.
+abstract: Typhoons, a kind of devastating natural disaster, have caused incalculable damages worldwide.
+  The meteorological radar image is essential for weather forecasting, especially typhoons. The weather
+  nowcasting (future 0-6 hours) can be implemented via extrapolating radar images without using the primary
+  weather forecasting method – the Numerical Weather Prediction model. However, the existing related techniques
+  based on statistics or Artificial Intelligence were not efficient enough. In this paper, a novel radar
+  image extrapolation algorithm named Dynamic Multi-Scale Fusion-Generative Adversarial Network (DMSF-GAN)
+  was proposed. DMSF-GAN captures the future radar image distribution based on current radar images through
+  modifying the GAN. In the generative module of the GAN, an auto-encoder consisting of Dynamic Inception-3D
+  and Feature Connection blocks extracts significant features from current radar images. The feasibility
+  of the proposed model was verified on a real radar image dataset, and experimental results proved that
+  the proposed algorithm could effectively capture the location and pattern of the future radar echo,
+  especially for typhoon weather systems. Compared with mainstream methods of radar image extrapolation
+  such as Optical-Flow and Recurrent Neural Network (RNN)-based models, DMSF-GAN has a more superior and
+  robust performance, which is also suitable for running on low configuration machines.
+significance: 3
+cited_by: 16
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -5,38 +5,20 @@ Statistical post-processing of NWP or ML forecasts: bias correction, ensemble ca
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/post-processing/)
 
-40 papers (2 ⭐). Newest first.
+22 papers (2 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
-| 2025-06-30 | [LSTM Based Deep Learning Model for Air Temperature Prediction](https://doi.org/10.38061/idunas.1596669)<br><sub>Anıl Utku, Sema Kayapınar Kaya · Natural and Applied Sciences Journal</sub> |  |  |
-| 2025-06-30 | [Fog-Enabled Machine Learning Approaches for Weather Prediction in IoT Systems: A Case Study](https://doi.org/10.3390/s25134070)<br><sub>Buket İşler, Şükrü Mustafa Kaya, Fahhreddin Raşit Kiliç · Sensors</sub> |  |  |
-| 2025-06-30 | [An Adaptive Stacking An Adaptive Stacking Approach for Monthly Rainfall Prediction with Hybrid Feature Selection](https://doi.org/10.31937/sk.v17i1.4157)<br><sub>Ahmad Zulfa, Ahmad Saikhu, Hilmil Pradana et al. · Ultima Computing Jurnal Sistem Komputer</sub> |  |  |
-| 2025-06-30 | [Rainfall Prediction Using Attention-Based LSTM Architecture](https://doi.org/10.30865/jurikom.v12i3.8727)<br><sub>Ahmad Romadhani, Irwan Budi Santoso, Cahyo Crysdian · JURIKOM (Jurnal Riset Komputer)</sub> |  |  |
-| 2025-06-28 | [Comparative analysis of recurrent neural networks for weather prediction in the Antarctic region](https://doi.org/10.54302/mausam.v76i3.6863)<br><sub>V SAKTHIVEL SAMY, VEENA T. · MAUSAM</sub> |  |  |
-| 2025-06-27 | [Enhancing multi-model ensemble simulations of climate extremes over the Tibetan Plateau using machine learning](https://doi.org/10.1007/s00704-025-05622-9)<br><sub>Tong Cui, Jiazhong Zheng, Z Zhang et al. · Theoretical and Applied Climatology</sub> | Tsinghua University (NowcastNet) |  |
-| 2025-06-24 | [Integrating Traditional Statistical Methods and Machine Learning for Enhanced Precipitation Forecasting](https://doi.org/10.61173/besdw833)<br><sub>Pinjie Lyu · Science and Technology of Engineering Chemistry and Environmental Protection</sub> |  |  |
-| 2025-06-24 | [Enhancing Extended Weather Forecasts in the TCWAGFS Model Using Deep Learning Method for SST Bias Correction](https://doi.org/10.5194/egusphere-2025-142)<br><sub>Katherine Shu-Min Li, Nadun Sinhabahu, Ben‐Jei Tsuang et al.</sub> | Princeton University |  |
-| 2025-06-24 | [A novel deep learning model for post-processing of short- and medium-term daily precipitation forecasts](https://doi.org/10.1016/j.atmosres.2025.108319)<br><sub>Chenguang Zhao, Aizhong Ye, Lingyun Wu et al. · Atmospheric Research</sub> |  |  |
-| 2025-06-20 | [Enhancing Solar Radiation Forecasting with Machine Learning](https://doi.org/10.21273/horttech05644-25)<br><sub>Wee Fong Lee, Peter P. Ling, Aaron B. Wilson · HortTechnology</sub> |  |  |
-| 2025-06-18 | [Multi-criteria decision-making and machine learning-based CMIP6 general circulation model ensemble for climate projections in a tropical river basin in India](https://doi.org/10.1007/s11600-025-01623-4)<br><sub>G. Praveen Kumar, Degavath Vinod, Gowdagere Siddaramaiah Dwarakish et al. · Acta Geophysica</sub> |  |  |
-| 2025-06-17 | [Micro-Location Temperature Prediction Leveraging Deep Learning Approaches](https://doi.org/10.3390/app15126793)<br><sub>Amadej Krepek, Iztok Fister, Iztok Fister et al. · Applied Sciences</sub> |  |  |
-| 2025-06-16 | [Next-generation hybrid precipitation forecasts that integrate Indigenous knowledge](https://doi.org/10.1088/1748-9326/ade4e2)<br><sub>Samuel Jonson Sutanto, Joep Bosdijk, Imme Benedict et al. · Environmental Research Letters</sub> |  |  |
-| 2025-06-16 | [Refined climatologies of future precipitation over High Mountain Asia using probabilistic ensemble learning](https://doi.org/10.1088/1748-9326/ade4dd)<br><sub>Kenza Tazi, Sun Woo P Kim, Marc Girona‐Mata et al. · Environmental Research Letters</sub> | University of Cambridge (Aardvark) |  |
-| 2025-06-11 | [Machine-learning-based probabilistic forecasting of solar irradiance in Chile](https://doi.org/10.5194/ascmo-11-89-2025)<br><sub>Sándor Baran, Julio César Marín, Omar Cuevas et al. · Advances in statistical climatology, meteorology and oceanography</sub> |  |  |
-| 2025-06-10 | [Deep Learning With ERA5 Variables Accurately Simulates Near‐Surface Wind Speed Variations Across a Complex Terrain Region](https://doi.org/10.1029/2025gl116108)<br><sub>Zhiyi Long, Jinlin Zha, Hao Zhang et al. · Geophysical Research Letters</sub> | Institute of Atmospheric Physics, Chinese Academy of Sciences |  |
-| 2025-06-09 | [Weather Forecast System using FeedForward Backpropagation Technique](https://doi.org/10.38124/ijisrt/25may1194)<br><sub>S Kiruthik Vishaal</sub> |  |  |
-| 2025-06-05 | [Comparative Analysis of LSTM and GRU Neural Networks for Precipitation Forecasting Using Historical Meteorological Data](https://doi.org/10.82185/tsws.2025.1214157)<br><sub>Ahmadi, Iman · Technical Strategies in Water Systems</sub> |  |  |
-| 2025-06-04 | [Optimized deep learning architecture for predicting maximum temperatures in key Egyptian regions using hybrid genetic algorithm and mountain Gazelle optimizer](https://doi.org/10.1007/s10462-025-11247-1)<br><sub>Essam Halim Houssein, Mahmoud Dirar, A. A. Khalil et al. · Artificial Intelligence Review</sub> |  |  |
-| 2025-06-04 | [Improving Post-Processing for Quantitative Precipitation Forecasting Using Deep Learning: Learning Precipitation Physics from High-Resolution Observations](https://arxiv.org/abs/2506.03842)<br><sub>ChangJae Lee, Heecheol Yang, Byeonggwon Kim</sub> | Korea Meteorological Administration (KMA) |  |
-| 2025-06-03 | [A New Modeling Method for Meteorological Information of Regional Distributed Photovoltaic Power Generation Based on Multi‐Source Information Fusion](https://doi.org/10.1002/ese3.70167)<br><sub>Yuhang Wang, Dengxuan Li, Wenwen Ma et al. · Energy Science & Engineering</sub> |  |  |
-| 2025-06-02 | [An enhanced adaptive dynamic metaheuristic optimization algorithm for rainfall prediction depends on long short-term memory](https://doi.org/10.1371/journal.pone.0317554)<br><sub>Ahmed M. Elshewey, Amel Ali Alhussan, Doaa Sami Khafaga et al. · PLoS ONE</sub> |  |  |
-| 2025-06-02 | [Postprocessing of convection permitting precipitation forecast using UNets](https://doi.org/10.1016/j.ecoinf.2025.103255)<br><sub>Tianchu Wang, Wentao Yang, Ziteng Xu et al. · Ecological Informatics</sub> |  |  |
-| 2025-06-01 | [A Distributional Regression Network With Data Transformation for Calibrating Rainfall Forecasts](https://doi.org/10.1029/2025jh000635)<br><sub>Zeqing Huang, Andrew Schepen, James Bennett et al. · Journal of Geophysical Research Machine Learning and Computation</sub> |  |  |
-| 2025-06-01 | [Deep multivariable spatial attention CNN-based spatial grid NWP error correction for accurate one-day-ahead photovoltaic power forecast](https://doi.org/10.1007/s12145-025-01919-5)<br><sub>Mingliang Bai, Ruidong Wang, Chaojing Lin et al. · Earth Science Informatics</sub> |  |  |
 | 2023-09-03 | [Evaluation of forecasts by a global data-driven weather model with and without probabilistic post-processing at Norwegian stations](https://arxiv.org/abs/2309.01247)<br><sub>John Bjørnar Bremnes, Thomas N. Nipen, Ivar A. Seierstad · Nonlinear Processes in Geophysics</sub> | MET Norway (Norwegian Meteorological Institute) |  |
 | 2023-06-28 | [Deep learning for post-processing global probabilistic forecasts on sub-seasonal time scales](https://arxiv.org/abs/2306.15956)<br><sub>Nina Horat, Sebastian Lerch · Monthly Weather Review</sub> | Karlsruhe Institute of Technology (KIT) |  |
 | 2023-03-30 | [Improving medium-range ensemble weather forecasts with hierarchical ensemble transformers](https://arxiv.org/abs/2303.17195)<br><sub>Zied Ben-Bouallegue, Jonathan A Weyn, Mariana C A Clare et al.</sub> |  |  |
+| 2022-01-21 | [A novel ensemble learning for post-processing of NWP Model's next-day maximum air temperature forecast in summer using deep learning and statistical approaches](https://doi.org/10.1016/j.wace.2022.100410)<br><sub>Dongjin Cho, Cheolhee Yoo, Bokyung Son et al. · Weather and Climate Extremes</sub> |  |  |
+| 2022-01-06 | [A statistical bias correction technique for global climate model predicted near-surface temperature in India using the generalized regression neural network](https://doi.org/10.2166/wcc.2022.214)<br><sub>Diljit Dutta, Rajib Kumar Bhattacharjya · Journal of Water and Climate Change</sub> |  |  |
+| 2022-01-01 | [Post-processing of Ensemble Forecasts of Various Weather and Hydrological Quantities Using Statistical and Machine Learning Methods](http://hdl.handle.net/2437/331395)<br><sub>El Ayari Mehrez · University of Debrecen Electronic Archive (University of Debrecen)</sub> |  |  |
+| 2022-01-01 | [STUDY ON CORRECTION METHOD OF WIND FIELD FOR EMPIRICAL TYPHOON MODEL USING NEURAL NETWORK](https://doi.org/10.2208/jscejoe.78.2_i_475)<br><sub>Yoshihiko Ide, Takumi KORA, Masaru YAMASHIRO et al. · Journal of Japan Society of Civil Engineers Ser B3 (Ocean Engineering)</sub> |  |  |
+| 2022-01-01 | [Deep Learning-Based Postprocessing of Ecmwf Heavy Rainfall Forecasts](https://doi.org/10.2139/ssrn.4075650)<br><sub>Qi Liu, Jiangjiang Xia, Yan Yan et al. · SSRN Electronic Journal</sub> |  |  |
+| 2022-01-01 | [A SPATIOTEMPORAL-AWARE WEIGHTING SCHEME FOR IMPROVING CLIMATE MODEL ENSEMBLE PREDICTIONS](https://doi.org/10.1615/jmachlearnmodelcomput.2022046715)<br><sub>Ming Fan, Dan Lu, Deeksha Rastogi et al. · Journal of Machine Learning for Modeling and Computing</sub> | Oak Ridge National Laboratory |  |
+| 2022-01-01 | [Video-Based Convolutional Neural Networks Forecasting for Rainfall Forecasting](https://doi.org/10.1109/lgrs.2022.3167456)<br><sub>Andrew Paul Barnes, Thomas Kjeldsen, Nick McCullen · IEEE Geoscience and Remote Sensing Letters</sub> |  |  |
 | 2021-06-21 | [Self-Attentive Ensemble Transformer: Representing Ensemble Interactions in Neural Networks for Earth System Models](https://arxiv.org/abs/2106.13924)<br><sub>Tobias Sebastian Finn</sub> |  | [code](https://github.com/tobifinn/ensemble_transformer) |
 | 2021-06-17 | [Machine learning methods for postprocessing ensemble forecasts of wind gusts: A systematic comparison](https://arxiv.org/abs/2106.09512)<br><sub>Benedikt Schulz, Sebastian Lerch · Monthly Weather Review</sub> | Karlsruhe Institute of Technology (KIT) |  |
 | 2021-04-01 | [Statistical Postprocessing of Wind Speed Forecasts Using Convolutional Neural Networks](https://doi.org/10.1175/mwr-d-20-0219.1)<br><sub>Simon Veldkamp, Kirien Whan, Sjoerd Dirksen et al. · Monthly Weather Review</sub> | KNMI (Royal Netherlands Meteorological Institute) |  |
@@ -52,20 +34,14 @@ Statistical post-processing of NWP or ML forecasts: bias correction, ensemble ca
 
 ## Also relevant
 
-- [Subseasonal to Seasonal (S2S) Prediction Algorithms Using Hybrid Machine Learning Techniques](https://doi.org/10.1175/aies-d-23-0108.1) (2025)
-- [Optimised deep convolutional spiking neural network for accurate long-term and short-term rainfall forecasting in climate prediction systems](https://doi.org/10.1504/ijmc.2026.10072144) (2025)
-- [Optimizing Machine Learning for Daily Rainfall Prediction in Bogor: A Statistical Downscaling Approach](https://doi.org/10.59188/eduvest.v5i6.51307) (2025)
-- [Improving Tropical Cyclone-Induced Rainfall Forecasting for Vietnam Using Pattern-Matching Algorithms and Selective Ensemble](https://doi.org/10.5194/egusphere-2025-1881) (2025)
-- [Fusion of multi-source precipitation records via coordinate-based generative model](https://arxiv.org/abs/2506.11698) (2025)
-- [Accurate Rainfall Prediction Using GNSS PWV Based on Pre-Trained Transformer Model](https://doi.org/10.3390/rs17122023) (2025)
-- [Ensemble Meritocracy on Madden–Julian Oscillation Predictions: Elites Chosen by AI Beat the Mean](https://doi.org/10.1175/aies-d-23-0109.1) (2025)
-- [Probabilistic measures afford fair comparisons of AIWP and NWP model output](https://arxiv.org/abs/2506.03744) (2025)
-- [Process‐Based Machine Learning Observationally Constrains Future Regional Warming Projections](https://doi.org/10.1029/2025jh000698) (2025)
 - [WeatherGFM: Learning A Weather Generalist Foundation Model via In-context Learning](https://arxiv.org/abs/2411.05420) (2024)
 - [FuXi-Extreme: Improving extreme rainfall and wind forecasts with diffusion model](https://arxiv.org/abs/2310.19822) (2023)
 - [The EUPPBench postprocessing benchmark dataset v1.0](https://doi.org/10.5194/essd-15-2635-2023) (2023)
 - [Outcomes of the WMO Prize Challenge to Improve Subseasonal to Seasonal Predictions Using Artificial Intelligence](https://doi.org/10.1175/bams-d-22-0046.1) (2022)
 - [Increasing the accuracy and resolution of precipitation forecasts using deep generative models](https://arxiv.org/abs/2203.12297) (2022)
+- [A station-data-based model residual machine learning method for fine-grained meteorological grid prediction](https://doi.org/10.1007/s10483-022-2822-9) (2022)
+- [Machine Learning as a Downscaling Approach for Prediction of Wind Characteristics under Future Climate Change Scenarios](https://doi.org/10.1155/2022/8451812) (2022)
+- [Feature Selection and Spatial-Temporal Forecast of Oceanic Niño Index Using Deep Learning](https://doi.org/10.1142/s0218194022500048) (2022)
 - [ENS-10: A Dataset For Post-Processing Ensemble Weather Forecasts](https://arxiv.org/abs/2206.14786) (2022)
 - [Training machine learning models on climate model output yields skillful interpretable seasonal precipitation forecasts](https://doi.org/10.1038/s43247-021-00225-4) (2021)
 - [Forecasting Severe Weather with Random Forests](https://doi.org/10.1175/mwr-d-19-0344.1) (2020)

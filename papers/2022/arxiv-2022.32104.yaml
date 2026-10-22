@@ -1,0 +1,57 @@
+id: arxiv-2022.32104
+title: A Deep-Learning-Based Microwave Radiative Transfer Emulator for Data Assimilation and Remote Sensing
+authors:
+- Xingming Liang
+- Kevin Garrett
+- Quanhua Liu
+- Eric S. Maddy
+- Kayo Ide
+- Sid‐Ahmed Boukabara
+date: '2022-01-01'
+year: 2022
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  arxiv: '2022.32104'
+  doi: 10.1109/jstars.2022.3210491
+  openalex: W4312285240
+links:
+  paper: https://doi.org/10.1109/jstars.2022.3210491
+orgs:
+- noaa
+topic: data-assimilation
+topics:
+- observations-remote-sensing
+type: model
+method:
+- other
+spatial:
+- global
+data:
+- satellite
+- nwp-analysis
+status: pre-operational
+summary: Fully connected network emulates the CRTM microwave radiative transfer model for ATMS brightness
+  temperatures over ocean, with mean biases of hundredths of a kelvin for data assimilation.
+abstract: In this article, we introduce a fully connected deep neural network algorithm to emulate the
+  Community Cadiative Transfer Model (FCDN_CRTM) simulation of brightness temperatures (BTs) from the
+  Advanced Technology Microwave Sounder (ATMS) channels for clear-sky cases over ocean surfaces. The FCDN_CRTM
+  fine-tuned through three sensitivity experiments with respect to sample-size determination, model separation,
+  and introduction of novel features toward improving the accuracy of the model. In addition to the BT
+  simulation, we evaluated the Jacobians with respect to surface and atmospheric parameters. Atmosphere
+  profiles from the European Centre for Medium-Range Weather Forecasts, sea surface temperature from the
+  Canadian Meteorology Centre, and ATMS sensor data records were used as FCDN_CRTM inputs. In comparison
+  to CRTM, the FCDN_CRTM minus CRTM mean biases were within several hundredths of a Kelvin (K), and the
+  corresponding standard deviations (SDs) were between 0.05 and 0.15 K for all ATMS bands. The accuracies
+  for both mean bias and SD were consistent throughout the evaluation period, which spanned approximately
+  1 year beyond the period of the FCDN_CRTM training dataset. Furthermore, the model Jacobians generally
+  compared well with CRTM Jacobians in terms of surface temperature, wind speed, air temperature, and
+  (log) water vapor. The performance of the FCDN_CRTM forward and Jacobian model indicate potential for
+  use in data assimilation and physical retrieval systems, such as the NOAA operational Microwave Integrated
+  Retrieval System.
+significance: 3
+cited_by: 30
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

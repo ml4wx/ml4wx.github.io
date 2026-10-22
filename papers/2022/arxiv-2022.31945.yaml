@@ -1,0 +1,46 @@
+id: arxiv-2022.31945
+title: 'Focal Frame Loss: A Simple but Effective Loss for Precipitation Nowcasting'
+authors:
+- Zhifeng Ma
+- Hao Zhang
+- Jie Liu
+date: '2022-01-01'
+year: 2022
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  arxiv: '2022.31945'
+  doi: 10.1109/jstars.2022.3194522
+  openalex: W4288391634
+links:
+  paper: https://doi.org/10.1109/jstars.2022.3194522
+  pdf: https://ieeexplore.ieee.org/ielx7/4609443/4609444/09844172.pdf
+topic: nowcasting
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Focal Frame Loss weights prediction frames by difficulty, improving several radar nowcasting
+  models without extra training cost on two large radar datasets.
+abstract: Precipitation nowcasting is an important but hard problem. Currently, with the landing of deep
+  learning, it has been treated as an image prediction problem based on radar echo maps. However, deep
+  learning models suffer from poor performance and blurred prediction results. Lots of improvement works
+  enhance the model by adding complex modules, which increases insufferable training memory and time overhead.
+  Others tempt to add more limitations or guidances on loss, but they usually have little effect in such
+  an extremely complex and difficult task. In this paper, we propose a simple but effective loss named
+  Focal Frame Loss (FFL), which assigns different weights to the images in the prediction sequence to
+  focus on the images that are relatively difficult to predict. Experiments on two large-scale radar datasets
+  show that FFL can greatly improve the performance of multiple popular models without introducing additional
+  training costs.
+significance: 3
+cited_by: 20
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

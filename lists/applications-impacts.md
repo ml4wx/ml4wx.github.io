@@ -5,20 +5,15 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/applications-impacts/)
 
-19 papers (1 ⭐). Newest first.
+14 papers (1 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
-| 2025-06-30 | [Graph Neural Networks in Wind Power Forecasting](https://arxiv.org/abs/2507.00105)<br><sub>Javier Castellano, Ignacio Villanueva</sub> |  |  |
-| 2025-06-26 | [Modeling Error Types in Aviation Weather Forecasts: Machine Learning Approach](https://ojs.zefr.org/index.php/intplanet/article/view/21)<br><sub>Samuel Choi · Intelligence Planet Journal of Mathematics and Its Applications</sub> |  |  |
-| 2025-06-24 | [Prediction of Hazardous Weather Phenomena Using Artificial Intelligence](https://doi.org/10.35116/aa.2025.0006)<br><sub>Ladislav Choma, Мартін Келемен, Matej Antoško et al. · Acta Avionica</sub> |  |  |
-| 2025-06-22 | [Big Data-Driven Decision Support System for Urban Climate Adaptation Strategies](https://aasrresearch.com/index.php/JSIES/article/view/435)<br><sub>C.Arun Prasath · Journal of Smart Infrastructure and Environmental Sustainability</sub> |  |  |
-| 2025-06-16 | [Projecting U.S. coastal storm surge risks and impacts with deep learning](https://arxiv.org/abs/2506.13963)<br><sub>Julian R. Rice, Karthik Balaguru, Fadia Ticona Rollano et al. · Environ. Res. Lett. 20 (2025) 104013</sub> |  |  |
-| 2025-06-12 | [Improving GNSS precise point positioning with tropospheric constraints from data-driven numerical weather prediction model](https://doi.org/10.1080/10095020.2025.2513650)<br><sub>Yuanfan Deng, Wu Chen, Junsheng Ding et al. · Geo-spatial Information Science</sub> | Shanghai Artificial Intelligence Laboratory |  |
-| 2025-06-03 | [Ultra-Short-Term Solar Power Prediction Using Sky Image Sequences by a Residual Vision Reformer](https://doi.org/10.1109/tste.2025.3575520)<br><sub>Razieh Rastgoo, Nima Amjady, Shunfu Lin et al. · IEEE Transactions on Sustainable Energy</sub> |  |  |
-| 2025-06-03 | [Wind power prediction in Poland using temporal fusion transformers and numerical weather prediction](https://doi.org/10.24425/bpasts.2025.155038)<br><sub>Weronika Jachuła, Michal Wydra · Bulletin of the Polish Academy of Sciences Technical Sciences</sub> |  |  |
-| 2025-06-02 | [Design and Development of Gorilla Optimized Deep Resilient Architecture for Prediction of Agro-Climatic Changes to Increase the Crop–Yield Production](https://doi.org/10.1007/s44196-025-00880-x)<br><sub>Deepa Devarashetti, S. S. Aravinth · International Journal of Computational Intelligence Systems</sub> |  |  |
-| 2025-06-01 | [Trends in climatic variables and machine learning based reference evapotranspiration predictions in key cereal producing regions of Algeria](https://doi.org/10.1007/s00704-025-05561-5)<br><sub>Tarek Bouregaa · Theoretical and Applied Climatology</sub> |  |  |
+| 2022-01-31 | [Stacked LSTM Sequence-to-Sequence Autoencoder with Feature Selection for Daily Solar Radiation Prediction: A Review and New Modeling Results](https://doi.org/10.3390/en15031061)<br><sub>Sujan Ghimire, Ravinesh Chand Deo, Hua Wang et al. · Energies</sub> |  |  |
+| 2022-01-20 | [Improving the forecasting of winter crop yields in northern China with machine learning-dynamical hybrid subseasonal-to-seasonal ensemble prediction](https://doi.org/10.1002/essoar.10510222.1)<br><sub>Huijing Wang, Junjun Cao, Jinxiao Li et al.</sub> | Institute of Atmospheric Physics, Chinese Academy of Sciences, China Meteorological Administration (CMA) |  |
+| 2022-01-01 | [Machine Learning-Inspired Weather Forecasting for Solar Photovoltaic Potential](https://doi.org/10.2139/ssrn.4266659)<br><sub>Chika  Calistus Maduabuchi, Chinedu Candidus Nsude, Chibuoke Eneh et al. · SSRN Electronic Journal</sub> | University of Oklahoma (AI2ES) |  |
+| 2022-01-01 | [Effects of Heatwave Features on Machine-Learning-Based Heat-Related Ambulance Calls Prediction Models in Japan](https://doi.org/10.1016/j.scitotenv.2023.162283)<br><sub>Deng Ke, Kiyoshi Takahashi, Jun’ya Takakura et al. · The Science of The Total Environment</sub> |  |  |
+| 2022-01-01 | [On the Use of Satellite Nightlights for Power Outages Prediction](https://doi.org/10.1109/access.2022.3149485)<br><sub>Juan P. Montoya-Rincon, Shams Azad, Rabindra Pokhrel et al. · IEEE Access</sub> | New York University (M2LInES) |  |
 | 2020-05-19 | [Comparative assessment of environmental variables and machine learning algorithms for maize yield prediction in the US Midwest](https://doi.org/10.1088/1748-9326/ab7df9)<br><sub>Yanghui Kang, Mutlu Ozdogan, Xiaojin Zhu et al. · Environmental Research Letters</sub> | NASA |  |
 | 2019-10-01 | [A review of deep learning for renewable energy forecasting](https://doi.org/10.1016/j.enconman.2019.111799)<br><sub>Huaizhi Wang, Zhenxing Lei, Xian Zhang et al. · Energy Conversion and Management</sub> |  |  |
 | 2019-09-09 | [The future of forecasting for renewable energy](https://doi.org/10.1002/wene.365)<br><sub>Conor Sweeney, Ricardo J. Bessa, Jethro Browell et al. · WIREs Energy and Environment</sub> |  |  |
@@ -31,20 +26,13 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 
 ## Also relevant
 
-- [AIR-VIEW: The Aviation Image Repository for Visibility Estimation of Weather, A Dataset and Benchmark](https://arxiv.org/abs/2506.20939) (2025)
-- [A Survey of Methods and Architectures for Environmental Weather Monitoring and Prediction System Using IoT and Multi-Model Progressive Dense Self-Attention](https://doi.org/10.65521/ijacte.v14i1.2759) (2025)
-- [Ensemble Learning for Spatial Modeling of Icing Fields from Multi-Source Remote Sensing Data](https://doi.org/10.3390/rs17132155) (2025)
-- [Enhancing Solar Radiation Forecasting with Machine Learning](https://doi.org/10.21273/horttech05644-25) (2025)
-- [Artificial Intelligence Techniques for Environmental Weather Monitoring and Prediction System Using IoT and Multi-Model Progressive Dense Self-Attention: Trends and Challenges](https://doi.org/10.65521/ijacect.v14i1.2739) (2025)
-- [Next-generation hybrid precipitation forecasts that integrate Indigenous knowledge](https://doi.org/10.1088/1748-9326/ade4e2) (2025)
-- [A new gridded offshore wind profile product for US coasts using machine learning and satellite observations](https://doi.org/10.5194/wes-10-1077-2025) (2025)
-- [Machine-learning-based probabilistic forecasting of solar irradiance in Chile](https://doi.org/10.5194/ascmo-11-89-2025) (2025)
-- [Ensemble of Artificial Neural Networks for Seasonal Forecasting of Wind Speed in Eastern Canada](https://doi.org/10.3390/en18112975) (2025)
-- [A New Modeling Method for Meteorological Information of Regional Distributed Photovoltaic Power Generation Based on Multi‐Source Information Fusion](https://doi.org/10.1002/ese3.70167) (2025)
-- [Deep multivariable spatial attention CNN-based spatial grid NWP error correction for accurate one-day-ahead photovoltaic power forecast](https://doi.org/10.1007/s12145-025-01919-5) (2025)
 - [A Foundation Model for the Earth System](https://arxiv.org/abs/2405.13063) (2024)
 - [YingLong-weather: AI-Based Limited Area Models for Forecasting of Non-precipitation Surface Meteorological Variables](https://arxiv.org/abs/2401.16254) (2024)
 - [Evaluation of forecasts by a global data-driven weather model with and without probabilistic post-processing at Norwegian stations](https://arxiv.org/abs/2309.01247) (2023)
+- [SunCast: Solar Irradiance Nowcasting from Geosynchronous Satellite Data](https://arxiv.org/abs/2201.06173) (2022)
+- [画像学習を用いた日本空域における乱気流の予測システムの構築](https://koara.lib.keio.ac.jp/xoonips/modules/xoonips/detail.php?koara_id=2022000010-20220148) (2022)
+- [Climate analysis using neural networks as supporting to the agriculture](https://doi.org/10.1590/1806-9649-2022v29e06) (2022)
+- [Systematic review of nowcasting approaches for solar energy production based upon ground-based cloud imaging](https://doi.org/10.1016/j.seja.2022.100019) (2022)
 - [Adversarial super-resolution of climatological wind and solar data](https://doi.org/10.1073/pnas.1918964117) (2020)
 - [Using Artificial Intelligence to Improve Real-Time Decision-Making for High-Impact Weather](https://doi.org/10.1175/bams-d-16-0123.1) (2017)
 
