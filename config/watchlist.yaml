@@ -1,0 +1,1559 @@
+# ML4WX org watchlist. Generated 2026-10-22.
+#
+# How each field was checked:
+# - ror: every id looked up with the ROR API (api.ror.org/v2/organizations/<id>), all status=active.
+#   Values are full ROR ids as the ROR API and OpenAlex return them. The ror list covers the same
+#   institutions as openalex_ids (plus any ROR-only org).
+# - openalex_ids: institution ids from the OpenAlex API (first ~100 searches, before the keyless
+#   budget ran out) and the official OpenAlex S3 snapshot (data/parquet/institutions, updated to
+#   2026-10-14). Every id exists, is status=active, and its ROR in OpenAlex equals the ror above.
+# - blog_feeds: fetched on 2026-10-22, HTTP 200, parsed as RSS/Atom with items. news_url: HTTP 200.
+# - github_repos: `gh api repos/OWNER/REPO` returns the same full_name (no redirect).
+# - people.orcid: ORCID public API; record checked (works or employer) for the right person.
+#   people.openalex_id is empty: OpenAlex author search was not possible (rate limit). Resolve later
+#   with https://api.openalex.org/authors/orcid:<orcid>.
+#
+# aliases: lowercase strings for matching raw affiliation strings (case-insensitive substring).
+# Short or ambiguous names are left out on purpose (e.g. "google", "ibm", "ai2", "ncar", "nasa",
+# "amazon", "atmo", "jua", "sdsc", "mpi-m"); see notes. Word-boundary matching is still safer.
+# tier 1 = always alert; tier 2 = highlight only together with another signal.
+
+orgs:
+- slug: google-deepmind
+  name: Google DeepMind
+  tier: 1
+  kind: company
+  openalex_ids:
+  - I4210090411
+  ror:
+  - https://ror.org/00971b260
+  aliases:
+  - deepmind
+  blog_feeds:
+  - https://deepmind.google/blog/rss.xml
+  news_url: ''
+  github_repos:
+  - google-deepmind/weathernext
+  notes: GraphCast/GenCast/WeatherNext. google-deepmind/graphcast now redirects to google-deepmind/weathernext. DeepMind authors may also be mapped to Google (United States) in OpenAlex; that id is listed
+    under google-research.
+- slug: google-research
+  name: Google Research
+  tier: 1
+  kind: company
+  openalex_ids:
+  - I1291425158
+  - I4210100430
+  - I4210113297
+  - I4210148186
+  - I4210117425
+  - I4210131802
+  - I4405256196
+  - I4405261138
+  ror:
+  - https://ror.org/00njsd438
+  - https://ror.org/014f9c269
+  - https://ror.org/024bc3e07
+  - https://ror.org/04d06q394
+  - https://ror.org/02c20ys54
+  - https://ror.org/03nmefy27
+  - https://ror.org/03weg0b71
+  - https://ror.org/04vssaz54
+  aliases:
+  - google research
+  - google llc
+  - google inc
+  - google brain
+  - google ai
+  - google, mountain view
+  - google, zurich
+  - google, zürich
+  blog_feeds:
+  - https://research.google/blog/rss/
+  - https://blog.google/innovation-and-ai/technology/research/rss/
+  news_url: ''
+  github_repos:
+  - neuralgcm/neuralgcm
+  - google-research/weatherbench2
+  - google-research/weatherbenchX
+  - google-research/swirl-dynamics
+  - google-research/arco-era5
+  - google-research/flood-forecasting
+  notes: OpenAlex institutions are Google by country; there is no separate Google Research institution. Do not use the bare alias 'google' (too broad). NeuralGCM moved from google-research/neuralgcm to
+    neuralgcm/neuralgcm.
+- slug: nvidia
+  name: NVIDIA
+  tier: 1
+  kind: company
+  openalex_ids:
+  - I4210127875
+  - I1304085615
+  - I4392738274
+  ror:
+  - https://ror.org/03jdj4y14
+  - https://ror.org/02kr42612
+  - https://ror.org/04z2hsy54
+  aliases:
+  - nvidia
+  blog_feeds:
+  - https://developer.nvidia.com/blog/tag/earth-2/feed/
+  - https://developer.nvidia.com/blog/tag/climate-weather-ocean-modeling/feed/
+  - https://blogs.nvidia.com/blog/tag/climate/feed/
+  news_url: ''
+  github_repos:
+  - NVIDIA/earth2studio
+  - NVIDIA/physicsnemo
+  - NVIDIA/makani
+  - NVIDIA/torch-harmonics
+  - NVIDIA/earth2mip
+  - NVlabs/cBottle
+  - NVlabs/earth2grid
+  - NVlabs/FourCastNet
+  notes: Earth-2, FourCastNet, StormCast, cBottle. NVIDIA/modulus redirects to NVIDIA/physicsnemo.
+- slug: microsoft-research
+  name: Microsoft Research (AI for Science)
+  tier: 1
+  kind: company
+  openalex_ids:
+  - I1290206253
+  - I4210164937
+  - I4210113369
+  - I4400600948
+  - I4401726785
+  - I4210124949
+  - I4402554038
+  - I4210110431
+  - I4210108625
+  ror:
+  - https://ror.org/00d0nc645
+  - https://ror.org/05k87vq12
+  - https://ror.org/0300m5276
+  - https://ror.org/010wkqn50
+  - https://ror.org/056zprp28
+  - https://ror.org/02w7f3w92
+  - https://ror.org/05xdft911
+  - https://ror.org/01x21tj82
+  - https://ror.org/01rw27z95
+  aliases:
+  - microsoft
+  blog_feeds:
+  - https://www.microsoft.com/en-us/research/feed/
+  news_url: ''
+  github_repos:
+  - microsoft/aurora
+  notes: Aurora, ClimaX (microsoft/ClimaX is archived). The feed is the general MSR blog (10 items, all topics). Microsoft (Netherlands) is included because the AI for Science lab in Amsterdam worked on
+    Aurora.
+- slug: ecmwf
+  name: ECMWF
+  tier: 1
+  kind: met-service
+  openalex_ids:
+  - I154986956
+  ror:
+  - https://ror.org/014w0fd65
+  aliases:
+  - ecmwf
+  - european centre for medium-range weather forecasts
+  - european centre for medium range weather forecasts
+  - european center for medium-range weather forecasts
+  - european center for medium range weather forecasts
+  blog_feeds:
+  - https://www.ecmwf.int/rss.xml
+  news_url: https://www.ecmwf.int/en/about/media-centre/news
+  github_repos:
+  - ecmwf/anemoi-core
+  - ecmwf/anemoi-inference
+  - ecmwf/anemoi-datasets
+  - ecmwf/WeatherGenerator
+  - ecmwf-lab/ai-models
+  notes: AIFS, Anemoi. The RSS feed is the ECMWF Science blog and includes AIFS blog posts; item titles contain HTML <a> tags, strip them. No RSS found for the news page.
+- slug: huawei
+  name: Huawei (Huawei Cloud)
+  tier: 1
+  kind: company
+  openalex_ids:
+  - I2250955327
+  - I4210115038
+  - I4210123571
+  - I4210129353
+  - I4210166625
+  - I4210146936
+  - I4210159102
+  - I4210160618
+  - I4405252550
+  ror:
+  - https://ror.org/00cmhce21
+  - https://ror.org/026venb53
+  - https://ror.org/02rbzf697
+  - https://ror.org/038cdme44
+  - https://ror.org/00z59w514
+  - https://ror.org/03jyqk712
+  - https://ror.org/0500fyd17
+  - https://ror.org/056gzgs71
+  - https://ror.org/007a2ta87
+  aliases:
+  - huawei
+  blog_feeds: []
+  news_url: https://www.huaweicloud.com/intl/en-us/news.html
+  github_repos:
+  - 198808xc/Pangu-Weather
+  notes: Pangu-Weather. 198808xc is the personal account of first author Kaifeng Bi (official repo linked from the Nature paper). No separate Huawei Cloud institution in OpenAlex/ROR.
+- slug: shanghai-ai-lab
+  name: Shanghai Artificial Intelligence Laboratory
+  tier: 1
+  kind: research-lab
+  openalex_ids:
+  - I4391012619
+  ror:
+  - https://ror.org/03wkvpx79
+  aliases:
+  - shanghai artificial intelligence laboratory
+  - shanghai ai laboratory
+  - shanghai ai lab
+  blog_feeds: []
+  news_url: https://www.shlab.org.cn/
+  github_repos:
+  - OpenEarthLab/FengWu
+  - OpenEarthLab/FengWu-4DVar
+  - OpenEarthLab/CasCast
+  - OpenEarthLab/ORCA-DL
+  notes: FengWu. OpenEarthLab is the lab's GitHub org.
+- slug: fudan-university
+  name: Fudan University (FuXi)
+  tier: 1
+  kind: university
+  openalex_ids:
+  - I24943067
+  ror:
+  - https://ror.org/013q1eq08
+  aliases:
+  - fudan
+  blog_feeds: []
+  news_url: ''
+  github_repos:
+  - tpys/FuXi
+  - tpys/FuXi-S2S
+  notes: FuXi (with Shanghai Academy of AI for Science, which has no OpenAlex/ROR entry). Fudan is a large university; hospitals and the medical college are left out on purpose. tpys is the personal account
+    of FuXi first author Lei Chen.
+- slug: ai2
+  name: Allen Institute for AI (Ai2, ACE)
+  tier: 1
+  kind: research-lab
+  openalex_ids:
+  - I4210156221
+  - I1316176738
+  ror:
+  - https://ror.org/05w520734
+  - https://ror.org/00rr9fv20
+  aliases:
+  - allen institute for artificial intelligence
+  - allen institute for ai
+  - ai2 climate modeling
+  - vulcan inc
+  - vulcan climate modeling
+  blog_feeds:
+  - https://allenai.org/rss.xml
+  news_url: https://allenai.org/climate-modeling
+  github_repos:
+  - ai2cm/ace
+  - ai2cm/AIMIP
+  notes: ACE/ACE2/SamudrACE. The climate team was part of Vulcan Inc. before ~2022, so Vulcan (United States) is included. Do not use the bare alias 'ai2' (matches 'AI2ES') or 'allen institute' (Allen Institute
+    for Brain Science).
+- slug: ibm-research
+  name: IBM Research
+  tier: 1
+  kind: company
+  openalex_ids:
+  - I1341412227
+  - I4210114115
+  - I4210085935
+  - I4210126328
+  - I4210167297
+  - I4210156936
+  - I4210145865
+  - I4210103279
+  - I4210145784
+  - I4210113516
+  - I4210120068
+  - I4210121844
+  ror:
+  - https://ror.org/05hh8d621
+  - https://ror.org/0265w5591
+  - https://ror.org/005w8dd04
+  - https://ror.org/02js37d36
+  - https://ror.org/05rw9t746
+  - https://ror.org/05gjbbg60
+  - https://ror.org/04915qk43
+  - https://ror.org/014wt7r80
+  - https://ror.org/04jnxr720
+  - https://ror.org/01fxqdx25
+  - https://ror.org/027r3nx49
+  - https://ror.org/02wat9f69
+  aliases:
+  - ibm research
+  - ibm t.j. watson
+  - ibm t. j. watson
+  - ibm thomas j. watson
+  - ibm corporation
+  - ibm corp.
+  blog_feeds:
+  - https://research.ibm.com/rss
+  news_url: ''
+  github_repos:
+  - IBM/granite-wxc
+  - NASA-IMPACT/Prithvi-WxC
+  notes: Prithvi WxC (with NASA), TerraMind (EO). Do not use the bare alias 'ibm' (matches e.g. 'IBMCP', 'IBMC'). IBM (United Kingdom) included for the Hartree Centre team.
+- slug: nasa
+  name: NASA
+  tier: 1
+  kind: research-lab
+  openalex_ids:
+  - I4210124779
+  - I4391768265
+  - I1306266525
+  - I1294504835
+  - I1280536761
+  - I1319063186
+  - I1334627681
+  ror:
+  - https://ror.org/027ka1x80
+  - https://ror.org/045s99b94
+  - https://ror.org/0171mag52
+  - https://ror.org/02epydz83
+  - https://ror.org/02acart68
+  - https://ror.org/0399mhs52
+  - https://ror.org/027k65916
+  aliases:
+  - national aeronautics and space administration
+  - goddard space flight center
+  - marshall space flight center
+  - jet propulsion laboratory
+  - ames research center
+  - langley research center
+  - nasa goddard
+  - nasa marshall
+  - nasa ames
+  - nasa langley
+  - nasa jpl
+  - nasa impact
+  - nasa headquarters
+  - nasa,
+  - nasa/
+  - (nasa)
+  - 'nasa '
+  blog_feeds: []
+  news_url: https://science.nasa.gov/earth/
+  github_repos:
+  - NASA-IMPACT/Prithvi-WxC
+  - NASA-IMPACT/gravity-wave-finetuning
+  notes: 'Prithvi WxC (NASA IMPACT at MSFC, with IBM). Very large org: tier 1 may give many alerts; consider tier 2 if too noisy. Bare ''nasa'' is avoided because it matches ''Nasarawa''. JPL papers will
+    also match caltech (JPL is run by Caltech). No useful RSS (nasa.gov/feed is all topics).'
+- slug: meta-fair
+  name: Meta (FAIR)
+  tier: 1
+  kind: company
+  openalex_ids:
+  - I4210114444
+  - I4210111288
+  - I2252078561
+  ror:
+  - https://ror.org/01zbnvs85
+  - https://ror.org/020ye1821
+  - https://ror.org/02388em19
+  aliases:
+  - meta ai
+  - meta fair
+  - fundamental ai research
+  - facebook ai
+  - meta platforms
+  blog_feeds: []
+  news_url: ''
+  github_repos: []
+  notes: Little weather/climate output so far (canopy-height maps with WRI). ai.meta.com/blog returns HTTP 400 to scripts and has no RSS, so news_url is left empty. No relevant repo.
+- slug: noaa
+  name: NOAA (incl. GFDL, PSL, GSL, NCEP/EMC)
+  tier: 1
+  kind: met-service
+  openalex_ids:
+  - I1308126019
+  - I2802992173
+  - I80605987
+  - I191217947
+  - I4210128139
+  - I4387930204
+  - I4210132178
+  - I4405252661
+  - I4210092927
+  - I2802094821
+  - I27841520
+  - I77216272
+  - I4210095787
+  - I4210093799
+  - I4387930221
+  - I4387930261
+  - I4387930301
+  - I4210089050
+  - I4210133019
+  - I4210157891
+  ror:
+  - https://ror.org/02z5nhe81
+  - https://ror.org/02kgve346
+  - https://ror.org/033tt8e33
+  - https://ror.org/03vmn1898
+  - https://ror.org/030ea6w47
+  - https://ror.org/006ddyp05
+  - https://ror.org/03f4jbs89
+  - https://ror.org/01232eg66
+  - https://ror.org/00gd1f947
+  - https://ror.org/042r9xb17
+  - https://ror.org/03crn0n59
+  - https://ror.org/0061q5f61
+  - https://ror.org/00tgqzw13
+  - https://ror.org/00ndyev54
+  - https://ror.org/00kct2d35
+  - https://ror.org/00f7rb209
+  - https://ror.org/0454wth52
+  - https://ror.org/007qwym43
+  - https://ror.org/03yn06t56
+  - https://ror.org/04r0wrp59
+  aliases:
+  - noaa
+  - national oceanic and atmospheric administration
+  - geophysical fluid dynamics laboratory
+  - gfdl
+  - national weather service
+  - national centers for environmental prediction
+  blog_feeds:
+  - https://www.noaa.gov/rss.xml
+  news_url: ''
+  github_repos:
+  - NOAA-GSL/HRRRCast-live
+  - NOAA-PSL/eagle-tools
+  notes: Weather/climate units only (fisheries, ocean service, geodesy left out). NOAA Environmental Modeling Center (I4387930218) is 'inactive' in OpenAlex, so not listed; NCEP covers it. gfdl.noaa.gov
+    did not answer during the check.
+- slug: ncar
+  name: NSF NCAR / UCAR
+  tier: 1
+  kind: research-lab
+  openalex_ids:
+  - I107766831
+  - I2799356940
+  ror:
+  - https://ror.org/05cvfcr44
+  - https://ror.org/04zhhyn23
+  aliases:
+  - national center for atmospheric research
+  - nsf ncar
+  - (ncar)
+  - ncar,
+  - ncar/
+  - university corporation for atmospheric research
+  - (ucar)
+  - ucar,
+  blog_feeds: []
+  news_url: https://news.ucar.edu/
+  github_repos:
+  - NCAR/miles-credit
+  notes: CREDIT (MILES group). Bare 'ncar' matches 'Incarnate Word' and bare 'ucar' matches 'Bucaramanga', so only bounded forms are used. news.ucar.edu/rss.xml exists but is stale (last item 2018).
+- slug: met-office
+  name: Met Office
+  tier: 1
+  kind: met-service
+  openalex_ids:
+  - I1293035123
+  ror:
+  - https://ror.org/01ch2yn61
+  aliases:
+  - met office
+  - metoffice
+  - hadley centre
+  blog_feeds: []
+  news_url: https://www.metoffice.gov.uk/blog
+  github_repos:
+  - MetOffice/fastnet-inference
+  notes: FastNet (with the Alan Turing Institute). The old blog.metoffice.gov.uk/feed/ now redirects to an HTML page; no RSS found.
+- slug: dwd
+  name: Deutscher Wetterdienst (DWD)
+  tier: 1
+  kind: met-service
+  openalex_ids:
+  - I172825728
+  ror:
+  - https://ror.org/02nrqs528
+  aliases:
+  - deutscher wetterdienst
+  - german weather service
+  - german meteorological service
+  - (dwd)
+  - dwd,
+  blog_feeds:
+  - https://www.dwd.de/SiteGlobals/Functions/RSSFeed/DE/pressemitteilungen/rssfeeds_pm.xml
+  news_url: ''
+  github_repos: []
+  notes: Feed = DWD press releases (German). No ML model repo found under github.com/DeutscherWetterdienst.
+- slug: meteo-france
+  name: Météo-France (incl. CNRM)
+  tier: 1
+  kind: met-service
+  openalex_ids:
+  - I4210113730
+  - I4210088553
+  ror:
+  - https://ror.org/0233st365
+  - https://ror.org/004rej139
+  aliases:
+  - météo-france
+  - meteo-france
+  - météo france
+  - meteo france
+  - cnrm
+  - centre national de recherches météorologiques
+  - centre national de recherches meteorologiques
+  blog_feeds: []
+  news_url: https://meteofrance.com/actualites-et-dossiers
+  github_repos:
+  - meteofrance/py4cast
+  - meteofrance/mfai
+- slug: meteoswiss
+  name: MeteoSwiss
+  tier: 1
+  kind: met-service
+  openalex_ids:
+  - I1324989862
+  ror:
+  - https://ror.org/03wbkx358
+  aliases:
+  - meteoswiss
+  - meteoschweiz
+  - météosuisse
+  - meteosvizzera
+  - federal office of meteorology and climatology
+  blog_feeds: []
+  news_url: https://www.meteoswiss.admin.ch/about-us/meteoswiss-blog.html
+  github_repos:
+  - MeteoSwiss/ldcast
+- slug: knmi
+  name: KNMI (Royal Netherlands Meteorological Institute)
+  tier: 1
+  kind: met-service
+  openalex_ids:
+  - I1309140791
+  ror:
+  - https://ror.org/05dfgh554
+  aliases:
+  - knmi
+  - royal netherlands meteorological institute
+  - koninklijk nederlands meteorologisch instituut
+  blog_feeds: []
+  news_url: https://www.knmi.nl/over-het-knmi/nieuws
+  github_repos: []
+  notes: No ML repo found under github.com/KNMI.
+- slug: met-norway
+  name: MET Norway (Norwegian Meteorological Institute)
+  tier: 1
+  kind: met-service
+  openalex_ids:
+  - I1314042554
+  ror:
+  - https://ror.org/001n36p86
+  aliases:
+  - norwegian meteorological institute
+  - met norway
+  - meteorologisk institutt
+  blog_feeds: []
+  news_url: https://www.met.no/nyhetsarkiv
+  github_repos:
+  - metno/bris-inference
+  notes: Bris (Anemoi-based).
+- slug: eth-zurich
+  name: ETH Zurich
+  tier: 2
+  kind: university
+  openalex_ids:
+  - I35440088
+  ror:
+  - https://ror.org/05a28rw58
+  aliases:
+  - eth zurich
+  - eth zürich
+  - eth zuerich
+  - swiss federal institute of technology zurich
+  - swiss federal institute of technology in zurich
+  - eidgenössische technische hochschule zürich
+  blog_feeds: []
+  news_url: ''
+  github_repos: []
+- slug: cscs
+  name: CSCS - Swiss National Supercomputing Centre
+  tier: 2
+  kind: research-lab
+  openalex_ids:
+  - I4391767926
+  ror:
+  - https://ror.org/04rzmms09
+  aliases:
+  - swiss national supercomputing centre
+  - swiss national supercomputing center
+  - (cscs)
+  - cscs,
+  blog_feeds: []
+  news_url: https://www.cscs.ch/publications/news
+  github_repos: []
+  notes: Part of ETH Zurich (papers often also match eth-zurich).
+- slug: sdsc
+  name: Swiss Data Science Center (SDSC)
+  tier: 2
+  kind: research-lab
+  openalex_ids:
+  - I4210122261
+  ror:
+  - https://ror.org/02hdt9m26
+  aliases:
+  - swiss data science center
+  - swiss data science centre
+  blog_feeds: []
+  news_url: https://www.datascience.ch/news
+  github_repos: []
+  notes: Do not use the alias 'sdsc' (also San Diego Supercomputer Center).
+- slug: university-of-oxford
+  name: University of Oxford
+  tier: 2
+  kind: university
+  openalex_ids:
+  - I40120149
+  ror:
+  - https://ror.org/052gg0110
+  aliases:
+  - university of oxford
+  - oxford university
+  blog_feeds: []
+  news_url: ''
+  github_repos: []
+- slug: university-of-cambridge
+  name: University of Cambridge (Aardvark)
+  tier: 2
+  kind: university
+  openalex_ids:
+  - I241749
+  ror:
+  - https://ror.org/013meh722
+  aliases:
+  - university of cambridge
+  - cambridge university
+  blog_feeds: []
+  news_url: ''
+  github_repos:
+  - anna-allen/aardvark-weather-public
+  notes: annavaughan/aardvark-weather-public redirects to anna-allen/aardvark-weather-public.
+- slug: mit
+  name: Massachusetts Institute of Technology (MIT)
+  tier: 2
+  kind: university
+  openalex_ids:
+  - I63966007
+  ror:
+  - https://ror.org/042nb2s44
+  aliases:
+  - massachusetts institute of technology
+  blog_feeds: []
+  news_url: ''
+  github_repos: []
+- slug: caltech
+  name: California Institute of Technology (Caltech)
+  tier: 2
+  kind: university
+  openalex_ids:
+  - I122411786
+  ror:
+  - https://ror.org/05dxps055
+  aliases:
+  - california institute of technology
+  - caltech
+  blog_feeds: []
+  news_url: ''
+  github_repos: []
+  notes: CliMA. JPL is listed under nasa, but JPL affiliation strings often contain 'California Institute of Technology'.
+- slug: stanford
+  name: Stanford University
+  tier: 2
+  kind: university
+  openalex_ids:
+  - I97018004
+  ror:
+  - https://ror.org/00f54p054
+  aliases:
+  - stanford university
+  blog_feeds: []
+  news_url: ''
+  github_repos: []
+- slug: uc-berkeley
+  name: University of California, Berkeley
+  tier: 2
+  kind: university
+  openalex_ids:
+  - I95457486
+  ror:
+  - https://ror.org/01an7q238
+  aliases:
+  - university of california, berkeley
+  - university of california berkeley
+  - uc berkeley
+  blog_feeds: []
+  news_url: ''
+  github_repos: []
+- slug: lbnl-nersc
+  name: Lawrence Berkeley National Laboratory / NERSC
+  tier: 2
+  kind: research-lab
+  openalex_ids:
+  - I148283060
+  - I4210151627
+  ror:
+  - https://ror.org/02jbv0t02
+  - https://ror.org/05v3mvq14
+  aliases:
+  - lawrence berkeley national laboratory
+  - lawrence berkeley national lab
+  - lbnl
+  - nersc
+  - national energy research scientific computing center
+  blog_feeds: []
+  news_url: ''
+  github_repos:
+  - NERSC/swin_v2_weather
+- slug: columbia-leap
+  name: Columbia University (LEAP, Lamont-Doherty)
+  tier: 2
+  kind: university
+  openalex_ids:
+  - I78577930
+  - I152304114
+  ror:
+  - https://ror.org/00hj8s172
+  - https://ror.org/02e2tgs60
+  aliases:
+  - columbia university
+  - lamont-doherty
+  - lamont doherty
+  - learning the earth with artificial intelligence and physics
+  blog_feeds: []
+  news_url: https://leap.columbia.edu/news/
+  github_repos:
+  - leap-stc/ClimSim
+  notes: LEAP (NSF STC) has no ROR/OpenAlex entry. leap.columbia.edu/feed/ is a dead WordPress feed (one item from 2018).
+- slug: nyu-m2lines
+  name: New York University (M2LInES)
+  tier: 2
+  kind: university
+  openalex_ids:
+  - I57206974
+  - I36672615
+  ror:
+  - https://ror.org/0190ak572
+  - https://ror.org/037tm7f56
+  aliases:
+  - new york university
+  - courant institute
+  - m2lines
+  blog_feeds: []
+  news_url: https://m2lines.github.io/
+  github_repos:
+  - m2lines/Samudra
+  notes: M2LInES has no ROR/OpenAlex entry.
+- slug: university-of-washington
+  name: University of Washington
+  tier: 2
+  kind: university
+  openalex_ids:
+  - I201448701
+  ror:
+  - https://ror.org/00cvxb145
+  aliases:
+  - university of washington
+  blog_feeds: []
+  news_url: ''
+  github_repos: []
+  notes: DLWP (Durran group). Does not match 'George Washington University' or 'Washington University in St. Louis'.
+- slug: princeton-university
+  name: Princeton University
+  tier: 2
+  kind: university
+  openalex_ids:
+  - I20089843
+  ror:
+  - https://ror.org/00hx57361
+  aliases:
+  - princeton university
+  blog_feeds: []
+  news_url: ''
+  github_repos: []
+  notes: GFDL itself is listed under noaa (tier 1).
+- slug: mpi-meteorology
+  name: Max Planck Institute for Meteorology
+  tier: 2
+  kind: research-lab
+  openalex_ids:
+  - I4210163131
+  ror:
+  - https://ror.org/05esem239
+  aliases:
+  - max planck institute for meteorology
+  - max-planck-institut für meteorologie
+  - max-planck-institut fur meteorologie
+  - max-planck-institute for meteorology
+  - mpi for meteorology
+  blog_feeds: []
+  news_url: ''
+  github_repos: []
+  notes: 'The acronym ''mpi-m'' is not used as alias: it is a prefix of other MPI acronyms (MPI-MIS, MPI-MG).'
+- slug: mpi-biogeochemistry
+  name: Max Planck Institute for Biogeochemistry
+  tier: 2
+  kind: research-lab
+  openalex_ids:
+  - I4210154168
+  ror:
+  - https://ror.org/051yxp643
+  aliases:
+  - max planck institute for biogeochemistry
+  - max-planck-institut für biogeochemie
+  - max-planck-institut fur biogeochemie
+  - max-planck-institute for biogeochemistry
+  - mpi for biogeochemistry
+  - mpi-bgc
+  blog_feeds: []
+  news_url: ''
+  github_repos: []
+- slug: kit
+  name: Karlsruhe Institute of Technology (KIT)
+  tier: 2
+  kind: university
+  openalex_ids:
+  - I102335020
+  ror:
+  - https://ror.org/04t3en479
+  aliases:
+  - karlsruhe institute of technology
+  - karlsruher institut für technologie
+  - karlsruher institut fur technologie
+  blog_feeds: []
+  news_url: ''
+  github_repos: []
+- slug: tum
+  name: Technical University of Munich (TUM)
+  tier: 2
+  kind: university
+  openalex_ids:
+  - I62916508
+  ror:
+  - https://ror.org/02kkvpp62
+  aliases:
+  - technical university of munich
+  - technische universität münchen
+  - technische universitat munchen
+  - technische universitaet muenchen
+  - tu munich
+  - tu münchen
+  blog_feeds: []
+  news_url: ''
+  github_repos: []
+- slug: tsinghua-university
+  name: Tsinghua University (NowcastNet)
+  tier: 2
+  kind: university
+  openalex_ids:
+  - I99065089
+  ror:
+  - https://ror.org/03cve4549
+  aliases:
+  - tsinghua university
+  blog_feeds: []
+  news_url: ''
+  github_repos:
+  - thuml/Corrformer
+  notes: NowcastNet code was released on Code Ocean, not on GitHub; thuml/Corrformer is the group's weather model repo.
+- slug: nuist
+  name: Nanjing University of Information Science & Technology (NUIST)
+  tier: 2
+  kind: university
+  openalex_ids:
+  - I200845125
+  ror:
+  - https://ror.org/02y0rxk19
+  aliases:
+  - nanjing university of information science and technology
+  - nanjing university of information science & technology
+  - nuist
+  blog_feeds: []
+  news_url: ''
+  github_repos: []
+- slug: ucla
+  name: University of California, Los Angeles (UCLA)
+  tier: 2
+  kind: university
+  openalex_ids:
+  - I161318765
+  ror:
+  - https://ror.org/046rm7j60
+  aliases:
+  - university of california, los angeles
+  - university of california los angeles
+  - ucla
+  blog_feeds: []
+  news_url: ''
+  github_repos:
+  - tung-nd/stormer
+  notes: 'ClimaX/Stormer/ClimateLearn (Grover group). Added: not in the original list.'
+- slug: university-of-reading
+  name: University of Reading
+  tier: 2
+  kind: university
+  openalex_ids:
+  - I71052956
+  ror:
+  - https://ror.org/05v62cm79
+  aliases:
+  - university of reading
+  blog_feeds: []
+  news_url: ''
+  github_repos: []
+  notes: 'Added: not in the original list.'
+- slug: alan-turing-institute
+  name: The Alan Turing Institute
+  tier: 2
+  kind: research-lab
+  openalex_ids:
+  - I4210128584
+  ror:
+  - https://ror.org/035dkdb55
+  aliases:
+  - alan turing institute
+  blog_feeds: []
+  news_url: ''
+  github_repos: []
+  notes: 'Aardvark (with Cambridge), FastNet (with Met Office). Added: not in the original list.'
+- slug: pik
+  name: Potsdam Institute for Climate Impact Research (PIK)
+  tier: 2
+  kind: research-lab
+  openalex_ids:
+  - I60200437
+  ror:
+  - https://ror.org/03e8s1d88
+  aliases:
+  - potsdam institute for climate impact research
+  - potsdam-institut für klimafolgenforschung
+  - potsdam-institut fur klimafolgenforschung
+  blog_feeds: []
+  news_url: ''
+  github_repos: []
+  notes: 'Added: not in the original list.'
+- slug: juelich
+  name: Forschungszentrum Jülich / Jülich Supercomputing Centre
+  tier: 2
+  kind: research-lab
+  openalex_ids:
+  - I171892758
+  - I4405269544
+  ror:
+  - https://ror.org/02nv7yv05
+  - https://ror.org/04g2j9721
+  aliases:
+  - jülich supercomputing centre
+  - julich supercomputing centre
+  - juelich supercomputing centre
+  - forschungszentrum jülich
+  - forschungszentrum julich
+  - forschungszentrum juelich
+  blog_feeds: []
+  news_url: ''
+  github_repos: []
+  notes: 'AtmoRep (with ECMWF). Added: not in the original list.'
+- slug: argonne
+  name: Argonne National Laboratory
+  tier: 2
+  kind: research-lab
+  openalex_ids:
+  - I1282105669
+  ror:
+  - https://ror.org/05gvnxz63
+  aliases:
+  - argonne national laboratory
+  blog_feeds: []
+  news_url: ''
+  github_repos: []
+  notes: 'Added: not in the original list.'
+- slug: ornl
+  name: Oak Ridge National Laboratory
+  tier: 2
+  kind: research-lab
+  openalex_ids:
+  - I1289243028
+  ror:
+  - https://ror.org/01qz5mb56
+  aliases:
+  - oak ridge national laboratory
+  blog_feeds: []
+  news_url: ''
+  github_repos: []
+  notes: 'ORBIT climate foundation model. Added: not in the original list.'
+- slug: university-of-chicago
+  name: University of Chicago
+  tier: 2
+  kind: university
+  openalex_ids:
+  - I40347166
+  ror:
+  - https://ror.org/024mw5h28
+  aliases:
+  - university of chicago
+  blog_feeds: []
+  news_url: ''
+  github_repos: []
+  notes: 'Added: not in the original list.'
+- slug: colorado-state-university
+  name: Colorado State University (incl. CIRA)
+  tier: 2
+  kind: university
+  openalex_ids:
+  - I92446798
+  - I4405266766
+  ror:
+  - https://ror.org/03k1gpj17
+  - https://ror.org/05dsxms80
+  aliases:
+  - colorado state university
+  - cooperative institute for research in the atmosphere
+  blog_feeds: []
+  news_url: ''
+  github_repos: []
+  notes: 'Added: not in the original list.'
+- slug: university-of-oklahoma
+  name: University of Oklahoma (AI2ES)
+  tier: 2
+  kind: university
+  openalex_ids:
+  - I8692664
+  ror:
+  - https://ror.org/02aqsxs83
+  aliases:
+  - university of oklahoma
+  blog_feeds: []
+  news_url: ''
+  github_repos: []
+  notes: 'NSF AI2ES institute is led from OU; the alias ''ai2es'' is not used because AI2ES has members at several universities. Added: not in the original list.'
+- slug: inria
+  name: Inria
+  tier: 2
+  kind: research-lab
+  openalex_ids:
+  - I1326498283
+  - I4405257605
+  - I4210126360
+  - I4210101348
+  - I4210106545
+  - I4210133778
+  ror:
+  - https://ror.org/02kvxyf05
+  - https://ror.org/05eyd5d35
+  - https://ror.org/0315e5x55
+  - https://ror.org/00n8d6z93
+  - https://ror.org/01nzkaw91
+  - https://ror.org/04040yw90
+  aliases:
+  - inria
+  blog_feeds: []
+  news_url: ''
+  github_repos:
+  - INRIA/geoarches
+  notes: 'ArchesWeather/geoarches (Centre Inria de Paris). Added: not in the original list.'
+- slug: iap-cas
+  name: Institute of Atmospheric Physics, Chinese Academy of Sciences
+  tier: 2
+  kind: research-lab
+  openalex_ids:
+  - I4210152758
+  ror:
+  - https://ror.org/0424h4e32
+  aliases:
+  - institute of atmospheric physics, chinese academy of sciences
+  - institute of atmospheric physics, cas
+  - institute of atmospheric physics (iap), chinese academy of sciences
+  blog_feeds: []
+  news_url: ''
+  github_repos: []
+  notes: 'Bare ''institute of atmospheric physics'' also matches the Russian, Czech and German institutes. Added: not in the original list.'
+- slug: cma
+  name: China Meteorological Administration (CMA)
+  tier: 2
+  kind: met-service
+  openalex_ids:
+  - I141301092
+  - I4210133131
+  - I4405279055
+  - I4405278733
+  - I4405280324
+  - I4405278995
+  - I4405278451
+  - I4405252595
+  - I4405271745
+  ror:
+  - https://ror.org/00bx3rb98
+  - https://ror.org/034b53w38
+  - https://ror.org/00yt1j430
+  - https://ror.org/00fatrg12
+  - https://ror.org/02s8kmg90
+  - https://ror.org/00w96vp39
+  - https://ror.org/002q50c70
+  - https://ror.org/006m7dn80
+  - https://ror.org/02ykthk30
+  aliases:
+  - china meteorological administration
+  - chinese academy of meteorological sciences
+  blog_feeds: []
+  news_url: ''
+  github_repos: []
+  notes: Includes the Chinese Academy of Meteorological Sciences and the CMA regional research institutes.
+- slug: jma
+  name: Japan Meteorological Agency (JMA)
+  tier: 2
+  kind: met-service
+  openalex_ids:
+  - I2801997990
+  - I4388446413
+  ror:
+  - https://ror.org/02772kk97
+  - https://ror.org/031gqrq04
+  aliases:
+  - japan meteorological agency
+  blog_feeds: []
+  news_url: ''
+  github_repos: []
+  notes: Includes the JMA Meteorological Research Institute (Tsukuba). Its name alone is too generic to use as an alias.
+- slug: kma
+  name: Korea Meteorological Administration (KMA)
+  tier: 2
+  kind: met-service
+  openalex_ids:
+  - I1335415512
+  - I4210155906
+  ror:
+  - https://ror.org/04nrmrg07
+  - https://ror.org/04m2hj141
+  aliases:
+  - korea meteorological administration
+  - national institute of meteorological sciences
+  blog_feeds: []
+  news_url: ''
+  github_repos: []
+  notes: Includes NIMS, the KMA research institute.
+- slug: eccc
+  name: Environment and Climate Change Canada (ECCC)
+  tier: 2
+  kind: met-service
+  openalex_ids:
+  - I1342547582
+  ror:
+  - https://ror.org/026ny0e17
+  aliases:
+  - environment and climate change canada
+  - environnement et changement climatique canada
+  - meteorological service of canada
+  - canadian centre for climate modelling and analysis
+  - environment canada
+  blog_feeds: []
+  news_url: ''
+  github_repos: []
+- slug: bom-australia
+  name: Bureau of Meteorology (Australia)
+  tier: 2
+  kind: met-service
+  openalex_ids:
+  - I1286406326
+  ror:
+  - https://ror.org/04dkp1p98
+  aliases:
+  - australian bureau of meteorology
+  - bureau of meteorology, melbourne
+  - bureau of meteorology, docklands
+  - bureau of meteorology, australia
+  - bureau of meteorology, canberra
+  - bureau of meteorology, sydney
+  blog_feeds: []
+  news_url: ''
+  github_repos: []
+  notes: Bare 'bureau of meteorology' also matches Chinese provincial/municipal bureaus.
+- slug: jua
+  name: Jua
+  tier: 2
+  kind: company
+  openalex_ids: []
+  ror: []
+  aliases:
+  - jua.ai
+  - jua ag
+  blog_feeds: []
+  news_url: https://jua.ai/blog
+  github_repos: []
+  notes: Not in OpenAlex or ROR. Bare 'jua' matches 'Juan'. No RSS found.
+- slug: windborne
+  name: WindBorne Systems
+  tier: 2
+  kind: company
+  openalex_ids: []
+  ror: []
+  aliases:
+  - windborne
+  blog_feeds: []
+  news_url: https://windbornesystems.com/blog
+  github_repos:
+  - windborne/WeatherMesh-3
+  notes: Not in OpenAlex or ROR. No RSS found.
+- slug: silurian
+  name: Silurian AI
+  tier: 2
+  kind: company
+  openalex_ids: []
+  ror: []
+  aliases:
+  - silurian ai
+  - silurian inc
+  - silurian, inc
+  blog_feeds: []
+  news_url: https://silurian.ai/blog
+  github_repos: []
+  notes: Not in OpenAlex or ROR. Bare 'silurian' is a geology term. GitHub org silurian-ai only has API SDKs. No RSS found.
+- slug: brightband
+  name: Brightband
+  tier: 2
+  kind: company
+  openalex_ids: []
+  ror: []
+  aliases:
+  - brightband
+  blog_feeds: []
+  news_url: https://www.brightband.com/blog
+  github_repos:
+  - brightbandtech/ExtremeWeatherBench
+  notes: Not in OpenAlex or ROR. No RSS found.
+- slug: excarta
+  name: Excarta
+  tier: 2
+  kind: company
+  openalex_ids: []
+  ror: []
+  aliases:
+  - excarta
+  blog_feeds:
+  - https://excarta.com/feed/
+  news_url: https://excarta.com/insights/
+  github_repos: []
+  notes: Not in OpenAlex or ROR. Feed is small (3 items, newest 2026-06). excarta.io does not resolve; the site is excarta.com.
+- slug: salient-predictions
+  name: Salient Predictions
+  tier: 2
+  kind: company
+  openalex_ids: []
+  ror: []
+  aliases:
+  - salient predictions
+  blog_feeds: []
+  news_url: ''
+  github_repos: []
+  notes: Not in OpenAlex or ROR. www.salientpredictions.com returned HTTP 404 to scripts, so no news_url could be verified.
+- slug: tomorrow-io
+  name: Tomorrow.io
+  tier: 2
+  kind: company
+  openalex_ids:
+  - I4394709219
+  ror:
+  - https://ror.org/04pn69091
+  aliases:
+  - tomorrow.io
+  - tomorrow companies
+  - climacell
+  blog_feeds:
+  - https://www.tomorrow.io/blog/feed/
+  news_url: ''
+  github_repos: []
+  notes: 'Legal name: The Tomorrow Companies Inc. (formerly ClimaCell).'
+- slug: atmo
+  name: Atmo
+  tier: 2
+  kind: company
+  openalex_ids: []
+  ror: []
+  aliases:
+  - atmo.ai
+  - atmo, inc
+  - atmo inc
+  blog_feeds: []
+  news_url: https://www.atmo.ai/news
+  github_repos: []
+  notes: Not in OpenAlex or ROR (the 'Atmo' entries there are French air-quality agencies, not this company). Bare 'atmo' matches 'atmospheric'. No RSS found.
+- slug: amazon
+  name: Amazon (AWS)
+  tier: 2
+  kind: company
+  openalex_ids:
+  - I1311688040
+  - I4210089985
+  - I4210123934
+  ror:
+  - https://ror.org/04mv4n011
+  - https://ror.org/00b9ktm87
+  - https://ror.org/02xey9634
+  aliases:
+  - amazon web services
+  - amazon.com
+  - amazon inc
+  - aws ai labs
+  - amazon science
+  blog_feeds:
+  - https://www.amazon.science/index.rss
+  news_url: ''
+  github_repos: []
+  notes: Bare 'amazon' matches Amazon-region institutes (e.g. Amazonas). Feed is all of Amazon Science.
+- slug: alibaba-damo
+  name: Alibaba (DAMO Academy)
+  tier: 2
+  kind: company
+  openalex_ids:
+  - I45928872
+  - I4405281272
+  - I4210095624
+  - I4210086143
+  ror:
+  - https://ror.org/00k642b80
+  - https://ror.org/0448px924
+  - https://ror.org/00rn0m335
+  - https://ror.org/00mnrxf72
+  aliases:
+  - alibaba
+  - damo academy
+  blog_feeds: []
+  news_url: ''
+  github_repos: []
+  notes: Baguan model.
+- slug: baidu
+  name: Baidu
+  tier: 2
+  kind: company
+  openalex_ids:
+  - I98301712
+  ror:
+  - https://ror.org/03vs3wt56
+  aliases:
+  - baidu
+  blog_feeds: []
+  news_url: ''
+  github_repos:
+  - PaddlePaddle/PaddleScience
+  notes: PaddleScience contains FourCastNet/GraphCast ports and other weather examples.
+- slug: tencent
+  name: Tencent
+  tier: 2
+  kind: company
+  openalex_ids:
+  - I2250653659
+  ror:
+  - https://ror.org/00hhjss72
+  aliases:
+  - tencent
+  blog_feeds: []
+  news_url: ''
+  github_repos: []
+people:
+- name: Peter Battaglia
+  org: google-deepmind
+  orcid: 0000-0003-3622-7111
+  openalex_id: ''
+- name: Remi Lam
+  org: google-deepmind
+  orcid: 0000-0003-4222-5358
+  openalex_id: ''
+- name: Ilan Price
+  org: google-deepmind
+  orcid: ''
+  openalex_id: ''
+  notes: Two ORCID records (both Oxford, no works); not verifiable.
+- name: Matthew Willson
+  org: google-deepmind
+  orcid: 0000-0002-8730-1927
+  openalex_id: ''
+- name: Stephan Hoyer
+  org: google-research
+  orcid: 0000-0002-5207-0380
+  openalex_id: ''
+- name: Dmitrii Kochkov
+  org: google-research
+  orcid: 0000-0003-3846-4911
+  openalex_id: ''
+- name: Stephan Rasp
+  org: google-research
+  orcid: 0000-0001-8676-2687
+  openalex_id: ''
+- name: Jaideep Pathak
+  org: nvidia
+  orcid: ''
+  openalex_id: ''
+  notes: Only ORCID record found is empty (no works, no employer); not verifiable.
+- name: Karthik Kashinath
+  org: nvidia
+  orcid: 0000-0002-9311-5215
+  openalex_id: ''
+- name: Boris Bonev
+  org: nvidia
+  orcid: 0000-0002-4041-238X
+  openalex_id: ''
+- name: Michael S. Pritchard
+  org: nvidia
+  orcid: 0000-0002-0340-6327
+  openalex_id: ''
+  notes: Also UC Irvine.
+- name: Thorsten Kurth
+  org: nvidia
+  orcid: 0000-0003-0832-6198
+  openalex_id: ''
+- name: Paris Perdikaris
+  org: microsoft-research
+  orcid: 0000-0002-2816-3229
+  openalex_id: ''
+  notes: Aurora; ORCID employer is University of Pennsylvania.
+- name: Megan Stanley
+  org: microsoft-research
+  orcid: ''
+  openalex_id: ''
+  notes: ORCID records found belong to other people (e.g. a quantum-physics PhD); not verifiable.
+- name: Richard E. Turner
+  org: university-of-cambridge
+  orcid: 0000-0003-0066-0984
+  openalex_id: ''
+  notes: Aardvark, Aurora.
+- name: Matthew Chantry
+  org: ecmwf
+  orcid: 0000-0002-1132-0961
+  openalex_id: ''
+- name: Simon Lang
+  org: ecmwf
+  orcid: 0000-0003-3952-586X
+  openalex_id: ''
+- name: Peter Dueben
+  org: ecmwf
+  orcid: 0000-0002-4610-3326
+  openalex_id: ''
+- name: Florian Pappenberger
+  org: ecmwf
+  orcid: 0000-0003-1766-2898
+  openalex_id: ''
+- name: Zied Ben Bouallègue
+  org: ecmwf
+  orcid: 0000-0003-2914-4203
+  openalex_id: ''
+- name: Kaifeng Bi
+  org: huawei
+  orcid: ''
+  openalex_id: ''
+  notes: Only ORCID record found is empty; not verifiable.
+- name: Lei Bai
+  org: shanghai-ai-lab
+  orcid: ''
+  openalex_id: ''
+  notes: Very common name; no ORCID record tied to Shanghai AI Lab found.
+- name: Hao Li
+  org: fudan-university
+  orcid: 0000-0001-6197-0674
+  openalex_id: ''
+  notes: Very common name. ORCID verified by the FuXi-ENS paper in the record; match on name only together with the org.
+- name: Lei Chen
+  org: fudan-university
+  orcid: ''
+  openalex_id: ''
+  notes: Very common name; the Fudan ORCID records found are other people. Match on name only together with the org.
+- name: Oliver Watt-Meyer
+  org: ai2
+  orcid: 0000-0001-8419-1526
+  openalex_id: ''
+- name: Christopher S. Bretherton
+  org: ai2
+  orcid: 0000-0002-6712-8856
+  openalex_id: ''
+  notes: ORCID record has no works; matched by MIT PhD 1984 + NCAR 1984 (fits his CV). Also University of Washington (emeritus).
+- name: Spencer K. Clark
+  org: ai2
+  orcid: 0000-0001-5595-7895
+  openalex_id: ''
+- name: Johannes Schmude
+  org: ibm-research
+  orcid: 0000-0003-0908-1102
+  openalex_id: ''
+  notes: ORCID record lists IBM Research as employer, no works.
+- name: Rahul Ramachandran
+  org: nasa
+  orcid: 0000-0002-0647-1941
+  openalex_id: ''
+- name: Pierre Gentine
+  org: columbia-leap
+  orcid: 0000-0002-0845-8345
+  openalex_id: ''
+- name: Laure Zanna
+  org: nyu-m2lines
+  orcid: 0000-0002-8472-4828
+  openalex_id: ''
+- name: Tapio Schneider
+  org: caltech
+  orcid: 0000-0001-5687-2287
+  openalex_id: ''
+- name: Anima Anandkumar
+  org: caltech
+  orcid: 0000-0002-6974-6797
+  openalex_id: ''
+- name: Aditya Grover
+  org: ucla
+  orcid: 0000-0002-4217-6624
+  openalex_id: ''
+- name: Markus Reichstein
+  org: mpi-biogeochemistry
+  orcid: 0000-0001-5736-1112
+  openalex_id: ''
+- name: Nils Thuerey
+  org: tum
+  orcid: 0000-0001-6647-8910
+  openalex_id: ''
+- name: Niklas Boers
+  org: tum
+  orcid: 0000-0002-1239-9034
+  openalex_id: ''
+  notes: Also PIK.
+- name: Mingsheng Long
+  org: tsinghua-university
+  orcid: 0000-0001-9421-463X
+  openalex_id: ''
+  orcid_alt:
+  - 0000-0002-5412-9120
+  notes: Two ORCID records, both Tsinghua with overlapping works (PredRNN); the main one lists NowcastNet.
+- name: Pedram Hassanzadeh
+  org: university-of-chicago
+  orcid: 0000-0001-9425-8085
+  openalex_id: ''
+- name: Amy McGovern
+  org: university-of-oklahoma
+  orcid: 0000-0001-6675-7119
+  openalex_id: ''
+  notes: Also Brightband.
+- name: Imme Ebert-Uphoff
+  org: colorado-state-university
+  orcid: 0000-0001-6470-1947
+  openalex_id: ''
+- name: Dale Durran
+  org: university-of-washington
+  orcid: 0000-0002-6390-2584
+  openalex_id: ''
+- name: Hannah Christensen
+  org: university-of-oxford
+  orcid: 0000-0001-8244-0218
+  openalex_id: ''
+- name: Sebastian Lerch
+  org: kit
+  orcid: 0000-0002-3467-4375
+  openalex_id: ''

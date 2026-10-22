@@ -40,9 +40,10 @@ def blog_posts(cfg: Config, since: dt.date) -> list[dict]:
                 if not d or d < since:
                     continue
                 summary = re.sub(r"<[^>]+>", " ", e.get("summary", ""))
-                if text_passes(f"{e.get('title', '')} {summary}", cfg):
+                title = " ".join(re.sub(r"<[^>]+>", " ", e.get("title", "")).split())  # ECMWF puts <a> in titles
+                if text_passes(f"{title} {summary}", cfg):
                     posts.append({
-                        "org": org["slug"], "org_name": org["name"], "title": e.get("title", "").strip(),
+                        "org": org["slug"], "org_name": org["name"], "title": title,
                         "url": e.get("link"), "date": d.isoformat(), "summary": " ".join(summary.split())[:400],
                     })  # fmt: skip
     return posts

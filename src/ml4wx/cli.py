@@ -15,7 +15,7 @@ from pathlib import Path
 from . import alerts, digest, export, fetch, ingest
 from .config import load
 from .models import Candidate
-from .sources import arxiv, feeds, s2
+from .sources import arxiv, crossref, feeds, s2
 from .store import Archive
 
 log = logging.getLogger("ml4wx")
@@ -93,10 +93,18 @@ def cmd_seed(args) -> int:
     cands: list[Candidate] = list(arxiv.lookup([s["arxiv"] for s in seeds if s.get("arxiv")], source="seed"))
     found = {c.key for c in cands}
     dois = [k for k in by_key if k.startswith("doi:")]
-    for key, raw in s2.batch(dois, source="seed"):
-        if c := s2.parse_paper(raw or {}, "seed"):
-            cands.append(c)
-            found.add(key)
+    if os.environ.get("S2_API_KEY"):  # without a key the shared pool is too busy to wait for
+        try:
+            for key, raw in s2.batch(dois, source="seed"):
+                if c := s2.parse_paper(raw or {}, "seed"):
+                    cands.append(c)
+                    found.add(key)
+        except RuntimeError as e:
+            log.warning("Semantic Scholar unavailable (%s); using Crossref", e)
+    # DOI-only seeds that Semantic Scholar did not return (or no arXiv id): Crossref.
+    for c in crossref.lookup([k[4:] for k in dois if k not in found], source="seed"):
+        cands.append(c)
+        found.add(c.key)
     # Journal versions of arXiv seeds: add the DOI so the record merges with OpenAlex later.
     for c in cands:
         s = by_key.get(c.key) or {}

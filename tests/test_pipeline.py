@@ -58,6 +58,14 @@ def test_score_and_highlight(root):
     q = make_paper(orgs=[], links=make_paper().links.model_copy(update={"code": None}), significance=4)
     ingest.finalize(q, cfg)
     assert q.score == 16 and not q.highlight and q.highlight_reason is None
+    # A big lab with an average paper is not a highlight ...
+    r = make_paper(significance=5, highlight_reason="x")
+    ingest.finalize(r, cfg)
+    assert r.score == 65 and not r.highlight
+    # ... but landmark work from anywhere is.
+    s = make_paper(orgs=[], significance=9)
+    ingest.finalize(s, cfg)
+    assert s.highlight
 
 
 def test_exports(root):

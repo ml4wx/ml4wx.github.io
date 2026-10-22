@@ -28,8 +28,11 @@
   ({{ cfg.settings.highlight.weights.org_tier1 }}), a tier-2 lab ({{ cfg.settings.highlight.weights.org_tier2 }}),
   a top venue ({{ cfg.settings.highlight.weights.top_venue }}), open code ({{ cfg.settings.highlight.weights.open_code }}),
   operational use ({{ cfg.settings.highlight.weights.operational }}), many citations (older papers), and
-  {{ cfg.settings.highlight.weights.significance }} × a 0–10 significance judgment by Claude. Papers with
-  {{ cfg.settings.highlight.threshold }} or more are highlights.</p>
+  {{ cfg.settings.highlight.weights.significance }} × a 0–10 significance judgment by Claude. A paper is a
+  highlight when its score is {{ cfg.settings.highlight.threshold }} or more <b>and</b> its significance is at
+  least {{ cfg.settings.highlight.min_significance }}, or when its significance is
+  {{ cfg.settings.highlight.always_significance }} or more. So a big lab alone is not enough, and landmark
+  work from anywhere is included.</p>
 
 <h2>Data and reuse</h2>
 <ul>

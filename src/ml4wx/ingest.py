@@ -109,15 +109,19 @@ def score(p: Paper, cfg: Config) -> int:
 
 def finalize(p: Paper, cfg: Config) -> None:
     """Set score and highlight flag. A highlight keeps the judge's reason (or the summary)."""
+    h = cfg.settings["highlight"]
     p.score = score(p, cfg)
-    p.highlight = p.score >= cfg.settings["highlight"]["threshold"]
+    p.highlight = (p.score >= h["threshold"] and p.significance >= h["min_significance"]) or (
+        p.significance >= h["always_significance"]
+    )
     if not p.highlight:
         p.highlight_reason = None
 
 
 def maybe_highlight(p: Paper, cfg: Config) -> bool:
-    """Worth a second opinion from the judge model?"""
-    return score(p, cfg) >= cfg.settings["highlight"]["threshold"] - 15
+    """Worth a second opinion from the judge model? (The judge may raise or lower significance.)"""
+    h = cfg.settings["highlight"]
+    return score(p, cfg) >= h["threshold"] - 15 or p.significance >= h["min_significance"] + 1
 
 
 JUDGE_SYSTEM = """You judge how important a new paper is for the machine learning for weather \

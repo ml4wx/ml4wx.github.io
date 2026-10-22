@@ -15,9 +15,12 @@ llm:
   batch_size: 20            # abstracts per classification call
   timeout_s: 600
 
-# Highlight (⭐) score, 0–100. A paper is highlighted at or above `threshold`.
+# Highlight (⭐): score >= threshold AND significance >= min_significance,
+# or significance >= always_significance (landmark work from anywhere).
 highlight:
-  threshold: 60
+  threshold: 55
+  min_significance: 6
+  always_significance: 9
   weights:
     org_tier1: 35
     org_tier2: 10
