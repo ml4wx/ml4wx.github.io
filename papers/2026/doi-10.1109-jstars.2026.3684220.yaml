@@ -1,0 +1,54 @@
+id: doi-10.1109-jstars.2026.3684220
+title: A Two-Stage Spatiotemporal Fusion Framework for Land Surface Temperature With Environmental Variable
+  Correction
+authors:
+- Yong Zhang
+- Yingbao Yang
+date: '2026-01-01'
+year: 2026
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2026.3684220
+  openalex: W7154630628
+links:
+  paper: https://doi.org/10.1109/jstars.2026.3684220
+  code: https://github.com/zarkyoung/TSFF
+topic: observations-remote-sensing
+type: model
+method:
+- gan-vae
+- cnn
+spatial:
+- regional
+data:
+- era5
+- satellite
+status: research
+summary: A GAN-based two-stage fusion yields hourly MODIS-resolution land surface temperature with MAE
+  of 2.3–3.5 K against ground truth.
+abstract: 'Land surface temperature (LST) is a key parameter in Earth system science, yet a trade-off
+  between spatial and temporal resolution limits the quality of satellite products. Spatiotemporal fusion
+  offers a viable solution, but existing methods often suffer from limited feature utilization and insufficient
+  correction by environmental variables. To address these challenges, we propose a novel two-stage spatiotemporal
+  fusion framework (TSFF). The framework first employs the BMSTF-GAN (Bidirectional Multi-feature Spatiotemporal
+  Fusion Network with Generative Adversarial Network) to generate an initial high-resolution LST estimate.
+  This network leverages a bidirectional structure to enhance temporal constraints and a multi-scale attention
+  mechanism to capture complex spatial dependencies. Subsequently, a Land Surface Temperature Correction
+  Network (LST-CorrNet) refines this estimate by performing a residual correction aided by environmental
+  variables. LST-CorrNet incorporates heterogeneous auxiliary data—digital elevation model, total column
+  water vapor, and longwave radiation—to account for thermodynamic influences from topography, the atmosphere,
+  and surface radiative processes. TSFF performance was evaluated through testing using the European Centre
+  for Medium-Range Weather Forecasts (ECMWF) Reanalysis v.5 (ERA5)-Land and Moderate Resolution Imaging
+  Spectroradiometer (MODIS) LST products. The final hourly, MODIS-resolution LST products show excellent
+  agreement with ground truth data across diverse land cover types (mean absolute error: 2.29-3.50 K;
+  root-mean-square error: 3.20-4.75 K; correlation coefficient: 0.96-0.98). The fused LST not only preserves
+  fine spatial details but also accurately captures temporal dynamics. This study highlights the significant
+  benefits of a two-stage approach that uses explicit environmental variables to correct and enhance deep
+  learning-based spatiotemporal fusion models. The code will be available athttps://github.com/zarkyoung/TSFF.'
+significance: 3
+cited_by: 1
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

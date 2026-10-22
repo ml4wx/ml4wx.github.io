@@ -1,0 +1,53 @@
+id: doi-10.1088-2632-2153-ae281e
+title: Evaluating probabilistic deep learning methods for uncertainty quantification of temperature downscaling
+authors:
+- Yannic Lops
+- Gemma J. Anderson
+- Donald D. Lucas
+- Indrasis Chakraborty
+- Daniel Galea
+date: '2025-12-04'
+year: 2025
+venue: Machine Learning Science and Technology
+venue_type: journal
+ids:
+  doi: 10.1088/2632-2153/ae281e
+  openalex: W4417010928
+links:
+  paper: https://doi.org/10.1088/2632-2153/ae281e
+topic: downscaling
+topics:
+- xai-uq-physics
+type: evaluation
+method:
+- cnn
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: Compares deep ensembles, Monte Carlo dropout and Flipout for 2 m temperature downscaling over
+  the US; MC dropout gives the best overall calibration and accuracy.
+abstract: Abstract Deep learning (DL) has emerged as a promising tool for downscaling coarse-resolution
+  climate data to high-resolution outputs, enabling improved regional climate predictions. A critical
+  aspect of DL-based downscaling is the incorporation of uncertainty quantification (UQ), which enhances
+  the interpretability and reliability of predictions—key factors for climate risk assessment and decision-making.
+  This study develops a DL model to downscale 2 m temperature across the contiguous United States using
+  reanalysis datasets. We systematically evaluate three epistemic UQ methods—deep ensembles (DEns), Monte
+  Carlo dropout (MCD), and Flipout—based on their probabilistic accuracy, downscaling performance, sensitivity
+  to geographical features, and computational efficiency. Results indicate that MCD generally outperforms
+  Flipout and DEns in terms of calibration and downscaling accuracy. However, DEns demonstrate lower calibration
+  errors in coastal regions, indicating its higher confidence within these areas. Flipout, in contrast,
+  is more sensitive to elevation gradients and exhibits higher calibration errors in mountainous regions.
+  Hence, the choice of UQ method for this task depends on the specific requirements of the application.
+  For applications that prioritize overall calibration, downscaling accuracy, and computational efficiency,
+  MCD is a strong candidate. These findings highlight the importance of selecting UQ methods based on
+  application-specific requirements, such as geographical context and computational constraints. By addressing
+  the trade-offs between UQ methods, this study provides actionable insights for improving the reliability,
+  scalability, and utility of DL-based downscaling in climate science.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

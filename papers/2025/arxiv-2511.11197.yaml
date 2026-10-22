@@ -1,0 +1,49 @@
+id: arxiv-2511.11197
+title: 'Computationally-efficient deep learning models for nowcasting of precipitation: A solution for
+  the Weather4cast 2025 challenge'
+authors:
+- Anushree Bhuskute
+- Kaushik Gopalan
+- Jeet Shah
+date: '2025-11-14'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2511.11197'
+  openalex: W4416343274
+links:
+  paper: https://arxiv.org/abs/2511.11197
+  pdf: https://arxiv.org/pdf/2511.11197
+topic: nowcasting
+topics:
+- observations-remote-sensing
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+- radar
+status: research
+summary: Two-stage ConvGRU transfers SEVIRI infrared forecasts into rainfall rates for four-hour nowcasting,
+  placing second in the Weather4cast 2025 cumulative rainfall task.
+abstract: This study presents a transfer-learning framework based on Convolutional Gated Recurrent Units
+  (ConvGRU) for short-term rainfall prediction in the Weather4Cast 2025 competition. A single SEVIRI infrared
+  channel (10.8 μm wavelength) is used as input, which consists of four observations over a one-hour period.
+  A two-stage training strategy is applied to generate rainfall estimates up to four hours ahead. In the
+  first stage, ConvGRU is trained to forecast the brightness temperatures from SEVIRI, enabling the model
+  to capture relevant spatiotemporal patterns. In the second stage, an empirically derived nonlinear transformation
+  maps the predicted fields to OPERA-compatible rainfall rates. For the event-prediction task, the transformed
+  rainfall forecasts are processed using 3D event detection followed by spatiotemporal feature extraction
+  to identify and characterize precipitation events. Our submission achieved 2nd place in the cumulative
+  rainfall task. Further, the same model was used out-of-the-box for the event prediction task, and resulted
+  in similar scores as the baseline model to the competition.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

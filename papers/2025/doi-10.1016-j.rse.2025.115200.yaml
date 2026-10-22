@@ -1,0 +1,61 @@
+id: doi-10.1016-j.rse.2025.115200
+title: 'A novel hybrid approach for mapping global surface solar radiation with DSCOVR/EPIC: Combining
+  deep learning with physical algorithm'
+authors:
+- Wenjun Tang
+- Jinwen Qi
+- Junmei He
+- Fuxin Zhu
+- C. Z. Yuan
+- Jin-yan Yang
+- Bing Hu
+date: '2025-12-17'
+year: 2025
+venue: Remote Sensing of Environment
+venue_type: journal
+ids:
+  doi: 10.1016/j.rse.2025.115200
+  openalex: W4417425459
+links:
+  paper: https://doi.org/10.1016/j.rse.2025.115200
+orgs:
+- cma
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+- classical-ml
+spatial:
+- global
+data:
+- satellite
+- stations
+status: research
+summary: DenseNet cloud transmittance combined with a clear-sky physical model maps global surface solar
+  radiation from DSCOVR/EPIC, outperforming an existing product.
+abstract: Surface solar radiation (SSR, also known as global radiation, R g ), is critical for Earth's
+  energy, water, and carbon cycles, yet existing satellite-derived global R g products suffer from spatial
+  inconsistencies due to multi-source data fusion. To address this, we propose a novel hybrid approach
+  integrating deep learning with physical algorithms using observations from the Deep Space Climate Observatory
+  (DSCOVR/EPIC), positioned at the Sun-Earth Lagrange-1 point and continuously observed the entire portion
+  of the Earth with sunshine. Unlike traditional physical algorithms or machine learning algorithms, this
+  method estimates cloud transmittance via a DenseNet-based convolutional neural network (CNN), calculates
+  clear-sky R g using a physical parameterization scheme, and combines these to derive all-sky R g . Meanwhile,
+  the direct and diffuse components (R dir and R dif ) are further separated from the estimated R g using
+  a Light Gradient Boosting Machine (LightGBM) model. The method was trained with in-situ observations
+  from the Baseline Surface Radiation Network (BSRN), and further independently evaluated against in-situ
+  observations from three networks of the Solar Radiation (SOLRAD), China Meteorological Administration
+  (CMA) radiation stations and Global Energy Balance Archive (GEBA). Independent evaluation demonstrates
+  that our hybrid method exhibits excellent spatial scalability. Comparative validation against the product
+  of Hao et al. (2020) derived from DSCOVR/EPIC observations demonstrates our method can generate more
+  accurate global products of R g , R dir and R dif . The innovation of our method lies in integrating
+  machine learning with physical algorithms to leverage their complementary strengths, while overcoming
+  the limitations of high uncertainty associated with cloud optical property retrievals from DSCOVR/EPIC
+  observations. This approach will contribute to the mapping of global spatially consistent radiation
+  products, overcoming the limitations of geostationary and polar-orbiting satellites.
+significance: 3
+cited_by: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

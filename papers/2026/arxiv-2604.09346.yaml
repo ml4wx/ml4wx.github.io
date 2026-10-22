@@ -1,0 +1,44 @@
+id: arxiv-2604.09346
+title: 'OTProf: estimating high-resolution profiles of optical turbulence ($C_n^2$) from reanalysis using
+  deep learning'
+authors:
+- Maximilian Pierzyna
+- Sukanta Basu
+- Rudolf Saathof
+date: '2026-04-10'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2604.09346'
+links:
+  paper: https://arxiv.org/abs/2604.09346
+  pdf: https://arxiv.org/pdf/2604.09346
+topic: applications-impacts
+topics:
+- local-forecasting
+type: application
+spatial:
+- local
+data:
+- era5
+status: research
+summary: Deep-learning model estimates high-resolution optical turbulence profiles from ERA5 for the Netherlands,
+  outperforming the Hufnagel-Valley model for Fried parameter and scintillation.
+abstract: Accurate high-resolution vertical profiles of optical turbulence ($C_n^2$), which reflect local
+  meteorology and topography, are crucial for ground-based optical astronomy and free-space optical communication.
+  However, measuring these profiles or generating them with numerical weather models requires substantial
+  operational or computational effort. In this work, we present OTProf, a deep-learning method that estimates
+  high-resolution $C_n^2$ profiles from widely available coarse-resolution ERA5 reanalysis data. We evaluate
+  the approach in the Netherlands and compare it with the commonly used Hufnagel-Valley model. Overall,
+  OTProf reproduces the vertical structure of $C_n^2$ more accurately than Hufnagel-Valley and yields
+  more accurate estimates of the Fried parameter $r_0$ and the scintillation index $σ_I^2$. As typical
+  in machine learning, the $C_n^2$ predictions are slightly smoothed compared to reference data, especially
+  in cases of rare strong turbulence. This smoothing affects the integrated parameters, sometimes leading
+  to overly optimistic $r_0$ and $σ_I^2$ values. Despite this limitation, OTProf offers a more accurate,
+  efficient, and physically consistent alternative to traditional analytical models and computationally
+  expensive mesoscale models.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

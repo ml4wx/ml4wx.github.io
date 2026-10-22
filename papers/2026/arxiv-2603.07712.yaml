@@ -1,0 +1,55 @@
+id: arxiv-2603.07712
+title: Machine Learning of Vertical Fluxes by Unresolved Midlatitude Mesoscale Processes
+authors:
+- Erisa Ismaili
+- Robert C. Jnglin Wills
+- Tom Beucler
+date: '2026-03-08'
+year: 2026
+venue: Machine Learning Earth
+venue_type: journal
+ids:
+  arxiv: '2603.07712'
+  doi: 10.1088/3049-4753/ae611b
+  openalex: W7134860962
+links:
+  paper: https://doi.org/10.1088/3049-4753/ae611b
+  pdf: https://arxiv.org/pdf/2603.07712
+orgs:
+- eth-zurich
+topic: hybrid-parameterization
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- km-scale-sim
+status: research
+summary: A neural network trained on a 14-km refined CESM2 North Atlantic simulation predicts midlatitude
+  mesoscale moisture, heat and momentum fluxes for coarse-model parameterization, with non-local vertical
+  features key.
+abstract: Machine learning (ML) can represent processes unresolved in coarse-resolution Earth system models
+  (ESMs) by learning from high-resolution climate data. Such ML parameterization approaches have been
+  primarily tested in idealized setups where they have focused on deep convection. It remains largely
+  unexplored whether these approaches could be used in a more targeted fashion to learn vertical fluxes
+  resulting from midlatitude mesoscale processes, such as slantwise convection and frontal dynamics in
+  extratropical cyclones, which are not well represented in ESMs. To address this, we employ a variable-resolution
+  CESM2 simulation with a refined area over the North Atlantic (14-km grid refinement) that resolves such
+  midlatitude mesoscale processes. We train an artificial neural network to predict vertical profiles
+  of mesoscale moisture, heat, and momentum fluxes from the perspective of a coarse-resolution (111-km
+  grid) model. Our results show that a large number of features are required to achieve reasonable model
+  performance when data come from the midlatitudes of real-geography atmospheric simulations, especially
+  when coarse-grained vertical velocities, which we show are not representative of vertical velocities
+  in a coarse-resolution model, are excluded as inputs. Feature importance analysis reveals the importance
+  of vertically non-local information in temperature, moisture, and the meridional wind. We suggest that
+  these non-local relationships capture the influence of cold air outbreaks and fronts on mesoscale fluxes.
+  Our results demonstrate the importance of vertically non-local processes, clarify the regime-dependent
+  predictability of mesoscale fluxes, and identify variables most informative for their parameterization,
+  providing guidance for improving ESMs with ML and advancing our understanding of multi-scale interactions
+  in the midlatitudes.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

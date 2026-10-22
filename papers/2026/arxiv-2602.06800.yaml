@@ -1,0 +1,48 @@
+id: arxiv-2602.06800
+title: 'FlowDA: Accurate, Low-Latency Weather Data Assimilation via Flow Matching'
+authors:
+- Ran Cheng
+- Lailai Zhu
+date: '2026-02-06'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2602.06800'
+  openalex: W7128393702
+links:
+  paper: https://arxiv.org/abs/2602.06800
+  pdf: https://arxiv.org/pdf/2602.06800
+topic: data-assimilation
+topics:
+- foundation-models
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+- transformer
+timescale:
+- short
+spatial:
+- global
+data:
+- era5
+- stations
+status: research
+summary: Flow-matching data assimilation that fine-tunes the Aurora foundation model, giving accurate,
+  low-latency analyses at observation rates down to 0.1%.
+abstract: Data assimilation (DA) is a fundamental component of modern weather prediction, yet it remains
+  a major computational bottleneck in machine learning (ML)-based forecasting pipelines due to reliance
+  on traditional variational methods. Recent generative ML-based DA methods offer a promising alternative
+  but typically require many sampling steps and suffer from error accumulation under long-horizon auto-regressive
+  rollouts with cycling assimilation. We propose FlowDA, a low-latency weather-scale generative DA framework
+  based on flow matching. FlowDA conditions on observations through a SetConv-based embedding and fine-tunes
+  the Aurora foundation model to deliver accurate, efficient, and robust analyses. Experiments across
+  observation rates decreasing from $3.9\%$ to $0.1\%$ demonstrate superior performance of FlowDA over
+  strong baselines with similar tunable-parameter size. FlowDA further shows robustness to observational
+  noise and stable performance in long-horizon auto-regressive cycling DA. Overall, FlowDA points to an
+  efficient and scalable direction for data-driven DA.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

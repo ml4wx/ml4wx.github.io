@@ -1,0 +1,50 @@
+id: arxiv-2603.00157
+title: 'FujiView: Multimodal Late-Fusion for Predicting Scenic Visibility'
+authors:
+- Bryceton Bible
+- Shah Md Nehal Hasnaeen
+- Hairong Qi
+date: '2026-02-25'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2603.00157'
+links:
+  paper: https://arxiv.org/abs/2603.00157
+  pdf: https://arxiv.org/pdf/2603.00157
+topic: local-forecasting
+topics:
+- observations-remote-sensing
+type: model
+method:
+- cnn
+- classical-ml
+timescale:
+- nowcast
+- short
+spatial:
+- local
+data:
+- other
+- stations
+status: research
+summary: Late fusion of webcam imagery and weather data predicts Mount Fuji visibility, reaching about
+  0.89 accuracy same-day; a new dataset of 100k images.
+abstract: Visibility of natural landmarks such as Mount Fuji is a defining factor in both tourism planning
+  and visitor experience, yet it remains difficult to predict due to rapidly changing atmospheric conditions.
+  We present FujiView, a multimodal learning framework and dataset for predicting scenic visibility by
+  fusing webcam imagery with structured meteorological data. Our late-fusion approach combines image-derived
+  class probabilities with numerical weather features to classify visibility into five categories. The
+  dataset currently comprises over 100,000 webcam images paired with concurrent and forecasted weather
+  conditions from more than 40 cameras around Mount Fuji, and continues to expand; it will be released
+  to support further research in environmental forecasting. Experiments show that YOLO-based vision features
+  dominate short-term horizons such as "nowcasting" and "samedaycasting", while weather-driven forecasts
+  increasingly take over as the primary predictive signal beyond $+1$d. Late fusion consistently yields
+  the highest overall accuracy, achieving ACC of approx 0.89 for same-day prediction and up to 84% for
+  next-day forecasts. These results position Scenic Visibility Forecasting (SVF) as a new benchmark task
+  for multimodal learning.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

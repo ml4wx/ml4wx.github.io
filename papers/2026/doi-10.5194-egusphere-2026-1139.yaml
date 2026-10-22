@@ -1,0 +1,64 @@
+id: doi-10.5194-egusphere-2026-1139
+title: 'CEDDAR v1.0.2: Bridging physics and generative modelling for regional precipitation with controllable
+  diffusion-based downscaling'
+authors:
+- Thea Quistgaard
+- Tanja Denager
+- Raphael Johannes Maria Schneider
+- Jesper Riis Christiansen
+- Simon Stisen
+- Peter L. Langen
+date: '2026-03-09'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.5194/egusphere-2026-1139
+  openalex: W7134284931
+links:
+  paper: https://doi.org/10.5194/egusphere-2026-1139
+topic: downscaling
+topics:
+- extremes-hazards
+type: model
+method:
+- diffusion
+- physics-constrained
+spatial:
+- regional
+data:
+- era5
+- other
+status: research
+summary: CEDDAR is a diffusion-based model that downscaled ERA5 daily precipitation to 2.5 km over Denmark,
+  with a controllable ensemble-spread parameter and physics-guided conditioning.
+abstract: Abstract. Understanding local impacts of extreme weather, from e.g. precipitation or temperature,
+  requires high-resolution downscaling of those atmospheric variables. Deterministic and classical statistical
+  methods fail to adequately represent variability and extremes, motivating the use of probabilistic generative
+  methods. Recent advances in generative deep learning show promise for spatial realism and ensemble generation,
+  but their physical fidelity and limitations remain insufficiently understood. We present CEDDAR v1.0.2
+  (Controllable Ensemble Diffusion Downscaling for Atmospheric Rainfall), a diffusion-based generative
+  model for daily precipitation downscaling, conditioned on large-scale (∼30 × 30 km) ERA5 precipitation
+  fields, to produce kilometre-scale (2.5 × 2.5 km) precipitation over Denmark, using the DANish ReAnalysis
+  product (DANRA) as reference. The modelling framework is based on an Elucidated Diffusion Model (EDM)
+  backbone and incorporates soft physics-guidance through seasonal (Day-of-Year) and geographic conditioning
+  with a specific land-focused design.We further introduce regularisation terms through a Signed-Distance
+  Function weighted loss, and an auxiliary RainGate head for shaping wet-dry occurrence statistics and
+  improving ensemble calibration. By design, the model is probabilistic and capable of producing ensembles.
+  We further introduce an inference-time control parameter, σ*, that allows for interpretable adjustment
+  of stochastic scale sensitivity without retraining. For model-behaviour assessment, we introduce a multi-perspective
+  evaluation protocol with emphasis on trade-offs across probabilistic, spatial, climatological, and scale-dependent
+  diagnostics rather than single-metric optimisation. Our results show strong spatial and spectral realism
+  with generally well-calibrated ensembles, but also demonstrate that visually realistic fine-scale structure
+  does not guarantee climatological fidelity. We also find that explicitly introducing σ* reveals systematic,
+  though non-linear, trade-offs between large-scale coherence, fine-scale variability, and ensemble spread.
+  This highlights the potential and the limitations of controllable diffusion-based downscaling. In conclusion,
+  this work presents a diffusion-based downscaling framework and evaluation suite that works as a diagnostic
+  testbed for understanding how generative models behave in physically constrained settings, and offers
+  guidance on their appropriate use and common failure modes relevant to future operational solutions
+  and climate-impact applications.
+significance: 4
+cited_by: 0
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

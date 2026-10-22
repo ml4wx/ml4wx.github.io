@@ -1,0 +1,51 @@
+id: doi-10.1109-access.2026.3738899
+title: 'Span-Level Dynamic Line Rating From Machine-Learned Wind Downscaling: Method and Validation Against
+  Line-Mounted Sensors'
+authors:
+- Henri Manninen
+- Markus Lippus
+- Georg Rute
+date: '2026-01-01'
+year: 2026
+venue: IEEE Access
+venue_type: journal
+ids:
+  doi: 10.1109/access.2026.3738899
+  openalex: W7214924914
+links:
+  paper: https://doi.org/10.1109/access.2026.3738899
+topic: downscaling
+topics:
+- applications-impacts
+type: model
+method:
+- classical-ml
+- other
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: pre-operational
+summary: A neural network downscales NWP wind to span level using LiDAR terrain, cutting wind error 53%
+  against line sensors and quantifying dynamic line rating risk.
+abstract: 'Dynamic Line Rating (DLR) raises the usable capacity of thermally limited overhead lines. Direct
+  methods need conductor-mounted sensors, which cannot be installed on every span of a national grid,
+  and a sensorless rating raises a question about risk. That question is reframed here. The method returns
+  a rating interval whose stated confidence is validated against measurements on a conductor, so the operator
+  selects the risk by selecting the confidence level. A multi-branch neural network downscales Numerical
+  Weather Prediction (NWP) wind to span level from 1 m LiDAR terrain and surface models, returning a Gaussian
+  mixture from which the interval follows. Wind speed error falls by 34% on stations withheld from training,
+  and by 53% to 0.74 m/s against sensors on five spans of a 116-span 110 kV line over 7 884 hours. It
+  is found that the NWP overstates conductor-height wind by 1.52 m/s on a measured mean of 1.62 m/s, so
+  a rating taken from the raw forecast is non-conservative. With wind speed, air temperature and solar
+  irradiance all bounded, the sensor-driven rating falls below the nominal 95% bound for 5.1% of hours
+  and the 99% bound for 0.6%. Bounding wind alone breaks it at every level. Choosing the level is inexpensive:
+  moving the accepted exceedance from 5% to 1% of hours costs 2.6% of capacity. The line has no identifiable
+  critical span, 75 of its 116 spans setting the rating at some hour and the binding span changing between
+  consecutive hours 39% of the time.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

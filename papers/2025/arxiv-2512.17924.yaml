@@ -1,0 +1,44 @@
+id: arxiv-2512.17924
+title: A curated UK rain radar data set for training and benchmarking nowcasting models
+authors:
+- Viv Atureta
+- Rifki Priansyah Jasin
+- Stefan Siegert
+date: '2025-12-08'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2512.17924'
+  openalex: W7117174257
+links:
+  paper: https://arxiv.org/abs/2512.17924
+  pdf: https://arxiv.org/pdf/2512.17924
+topic: benchmarks-data-eval
+topics:
+- nowcasting
+type: benchmark
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Releases 1,000 curated UK rain radar sequences with atmospheric metadata and R extraction tools,
+  plus a simple CNN nowcasting baseline.
+abstract: This paper documents a data set of UK rain radar image sequences for use in statistical modeling
+  and machine learning methods for nowcasting. The main dataset contains 1,000 randomly sampled sequences
+  of length 20 steps (15-minute increments) of 2D radar intensity fields of dimension 40x40 (at 5km spatial
+  resolution). Spatially stratified sampling ensures spatial homogeneity despite removal of clear-sky
+  cases by threshold-based truncation. For each radar sequence, additional atmospheric and geographic
+  features are made available, including date, location, mean elevation, mean wind direction and speed
+  and prevailing storm type. New R functions to extract data from the binary "Nimrod" radar data format
+  are provided. A case study is presented to train and evaluate a simple convolutional neural network
+  for radar nowcasting, including self-contained R code.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,60 @@
+id: doi-10.1109-jstars.2026.3722210
+title: 'RadarDiff: A Conditional Diffusion Model With Time-Aware Context and Mixed Attention for Radar
+  Echo Extrapolation'
+authors:
+- 耿焕同
+- Xinxin Zeng
+- Liangchao Geng
+- Han Zhao
+- Delong Fang
+- Xiaoran Zhuang
+date: '2026-01-01'
+year: 2026
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2026.3722210
+  openalex: W7202173179
+links:
+  paper: https://doi.org/10.1109/jstars.2026.3722210
+orgs:
+- nuist
+topic: nowcasting
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+- rnn
+- transformer
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Conditional diffusion model with causal LSTM context and attention reduces oversmoothing in Shanghai
+  radar extrapolation while cutting inference latency versus generative baselines.
+abstract: Accurate radar echo extrapolation is essential for precipitation nowcasting. Existing deterministic
+  models suffer from regression to the mean and are prone to oversmoothing, leading to distorted representations
+  of strong convective cores. While generative models provide rich image details, they incur heavy computational
+  overhead and high inference latency. To address these issues, this article proposes a conditional diffusion
+  model named RadarDiff, which achieves a better tradeoff among forecast performance, image quality, and
+  computational efficiency through the synergistic design of three core modules. First, a causal context
+  network incorporating a CausalLSTMCell enhances the motion continuity of radar echoes. Second, a long-range
+  temporal dynamic interaction block combined with a spatial-channel attention mechanism improves the
+  prediction stability of strong echoes. Finally, an adaptive multiscale interaction block utilizing cross-scale
+  feature fusion facilitates capturing the evolution of strong echoes. Experimental results based on a
+  Shanghai radar dataset demonstrate that RadarDiff outperforms deterministic baselines in terms of core
+  metrics, such as critical success index and Heidke skill score, effectively alleviates the oversmoothing
+  problem, and exhibits superior dynamic consistency. Furthermore, compared to existing generative models
+  operating under their default inference configurations, RadarDiff effectively reduces computational
+  overhead and inference latency while maintaining superior forecast accuracy. In summary, RadarDiff provides
+  a balanced and effective solution for generative nowcasting.
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

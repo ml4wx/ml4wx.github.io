@@ -1,0 +1,44 @@
+id: arxiv-2603.06752
+title: Latent Autoencoder Ensemble Kalman Filter for Nonlinear Data assimilation
+authors:
+- Xin T. Tong
+- Yanyan Wang
+- Liang Yan
+date: '2026-03-06'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2603.06752'
+links:
+  paper: https://arxiv.org/abs/2603.06752
+  pdf: https://arxiv.org/pdf/2603.06752
+topic: data-assimilation
+type: model
+method:
+- other
+data:
+- other
+status: research
+summary: Autoencoder-based ensemble Kalman filter runs forecast and analysis in a learned latent space
+  with linear dynamics, reporting more accurate and stable assimilation than standard EnKF on chaotic
+  test systems.
+abstract: The ensemble Kalman filter (EnKF) is widely used for data assimilation in high-dimensional systems,
+  but its performance often deteriorates for strongly nonlinear dynamics due to the structural mismatch
+  between the Kalman update and the underlying system behavior. In this work, we propose a latent autoencoder
+  ensemble Kalman filter (LAE-EnKF) that addresses this limitation by reformulating the assimilation problem
+  in a learned latent space with linear and stable dynamics. The proposed method learns a nonlinear encoder--decoder
+  together with a stable linear latent evolution operator and a consistent latent observation mapping,
+  yielding a closed linear state-space model in the latent coordinates. This construction restores compatibility
+  with the Kalman filtering framework and allows both forecast and analysis steps to be carried out entirely
+  in the latent space. Compared with existing autoencoder-based and latent assimilation approaches that
+  rely on unconstrained nonlinear latent dynamics, the proposed formulation emphasizes structural consistency,
+  stability, and interpretability. We provide a theoretical analysis of learning linear dynamics on low-dimensional
+  manifolds and establish generalization error bounds for the proposed latent model. Numerical experiments
+  on representative nonlinear and chaotic systems demonstrate that the LAE-EnKF yields more accurate and
+  stable assimilation than the standard EnKF and related latent-space methods, while maintaining comparable
+  computational cost and data-driven.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

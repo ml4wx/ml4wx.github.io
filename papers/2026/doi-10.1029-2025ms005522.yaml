@@ -1,0 +1,55 @@
+id: doi-10.1029-2025ms005522
+title: Exploring Ways to Reduce Biases in a Hybrid Global Climate Model With Machine‐Learned Moist Physics
+authors:
+- Yilun Han
+- Guang Jun Zhang
+- Yong Wang
+date: '2026-04-30'
+year: 2026
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2025ms005522
+  openalex: W7160044278
+links:
+  paper: https://doi.org/10.1029/2025ms005522
+orgs:
+- fudan-university
+topic: hybrid-parameterization
+topics:
+- climate-emulation
+type: model
+method:
+- cnn
+timescale:
+- climate
+spatial:
+- global
+data:
+- other
+status: research
+summary: Adding radiation fields and land fraction to a neural moist-physics emulator in CAM5 reduces
+  high-latitude biases, but tropical land precipitation bias persists.
+abstract: Abstract In a previous study (Han et al., 2023, https://doi.org/10.1029/2022ms003508 ), we implemented
+  a deep convolutional residual neural network for moist physics into the 3‐D real‐geography CAM5 and
+  carried out a stable multi‐year integration successfully. However, the simulation has large temperature
+  and moisture biases in high latitude troposphere and dry bias in precipitation over tropical land. In
+  this study, we explore several ways to reduce these biases. First, we train two shallow neural networks
+  to correct the biases, one with relative humidity included in the input and one without. Second, instead
+  of attempting to correct the biases with an additional neural network, we expand the input and output
+  variables of the neural net by including radiation‐related physical quantities as well as land fraction
+  to enhance the land‐atmosphere coupling and to account for the land‐ocean contrast. Both approaches
+  can alleviate the high‐latitude temperature and moisture biases in the atmosphere as well as land surface
+  temperature biases. However, the corrector approach fails to improve tropical land precipitation, and
+  including extra surface radiative fluxes as neural net input and output only leads to limited improvement
+  in tropical land precipitation. Both approaches made the tropical oceanic precipitation biases worse.
+  These results suggest that something else may be responsible for tropical land precipitation biases.
+  Our findings offer valuable insights that future research can build upon. Subsequent efforts should
+  involve more capable deep learning architectures, stronger physical constraints, and possibly continued
+  use of correction strategies to address persistent errors in hybrid GCM simulations.
+significance: 4
+cited_by: 1
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

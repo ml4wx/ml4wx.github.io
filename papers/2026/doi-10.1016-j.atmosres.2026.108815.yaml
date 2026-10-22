@@ -1,0 +1,57 @@
+id: doi-10.1016-j.atmosres.2026.108815
+title: Uncertainty decomposition and quantification of seasonal precipitation forecasting based on Bayesian
+  neural networks
+authors:
+- Enzo Pinheiro
+- Taha B. M. J. Ouarda
+date: '2026-01-30'
+year: 2026
+venue: Atmospheric Research
+venue_type: journal
+ids:
+  doi: 10.1016/j.atmosres.2026.108815
+  openalex: W7126265589
+links:
+  paper: https://doi.org/10.1016/j.atmosres.2026.108815
+topic: s2s-seasonal
+topics:
+- probabilistic-ensembles
+- xai-uq-physics
+type: model
+method:
+- other
+timescale:
+- seasonal
+spatial:
+- regional
+data:
+- era5
+- cmip
+status: research
+summary: Bayesian TelNet seasonal precipitation model over South America shows aleatoric uncertainty about
+  100 times epistemic; CMIP6-trained models are better calibrated.
+abstract: Seasonal climate forecasts are inherently uncertain due to the chaotic nature of the climate
+  system and the limitations of predictive models. Quantifying and decomposing this uncertainty are essential
+  for reliable forecasts. In this study, we investigate machine learning-based seasonal forecasting (MLSF)
+  using a Bayesian adaptation of TelNet, a neural network model for precipitation prediction. We reformulate
+  TelNet as a Bayesian Neural Network trained via variational inference, with alternative implementations
+  based on Monte Carlo (MC) dropout. Both continuous (ensemble-based) and categorical (tercile-based)
+  prediction strategies are assessed. Training is conducted with ERA5 reanalysis and historical simulations
+  from 18 CMIP6 models, followed by validation and testing with ERA5 data over South America. We decompose
+  predictive uncertainty into ML-aleatoric (data-related) and ML-epistemic (model-related) components.
+  Results show that ML-aleatoric uncertainty dominates, being on average two orders of magnitude larger
+  than ML-epistemic uncertainty. ERA5-trained models exhibit lower aleatoric uncertainty but are often
+  overconfident and not well-calibrated, whereas CMIP6-trained models show higher aleatoric uncertainty
+  but improved calibration. Models trained with continuous targets achieve lower uncertainty than categorical
+  models, which lose information through discretization. Probabilistic accuracy, evaluated via Ranked
+  Probability Score (RPS), indicates that CMIP6-based models trained with continuous targets and Continuous
+  Ranked Probability Score (CRPS) loss perform best overall. Seasonal analysis reveals better calibration
+  in austral summer (DJF) compared to winter (JJA), consistent with stronger teleconnection signals during
+  summer. Finally, case studies of El Niño, La Niña, and neutral years demonstrate that forecast confidence
+  and uncertainty strongly depend on the training dataset and target representation.
+significance: 3
+cited_by: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

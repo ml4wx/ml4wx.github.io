@@ -1,0 +1,54 @@
+id: doi-10.1073-pnas.2524516123
+title: Selective reuse of prior ensemble data improves the latest air temperature forecast over North
+  America
+authors:
+- Daisuke Tokuda
+- Paul Alan Dirmeyer
+date: '2026-04-08'
+year: 2026
+venue: Proceedings of the National Academy of Sciences
+venue_type: journal
+ids:
+  doi: 10.1073/pnas.2524516123
+  openalex: W7152090315
+links:
+  paper: https://doi.org/10.1073/pnas.2524516123
+topic: post-processing
+topics:
+- s2s-seasonal
+type: model
+method:
+- classical-ml
+timescale:
+- s2s
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: Lagged ensemble analog subselection picks earlier S2S ensemble members, improving North American
+  2-m temperature skill across multiple weeks, including extreme heat.
+abstract: Accurate subseasonal to seasonal (S2S) weather forecasts are critical for managing risks to
+  society, yet improving forecast skill remains challenging. Ensemble forecasting mitigates atmospheric
+  chaos but is limited by computational cost and by declining accuracy at longer lead times. Previous
+  attempts to incorporate previous ensemble forecasts have yielded little improvement in the accuracy
+  of the latest forecast because members from earlier initializations tend to degrade forecast quality.
+  Here, we introduce a simple yet powerful postprocessing approach, lagged ensemble analog subselection
+  (LEAS), which selectively chooses previous ensemble members that best predicted the most recent conditions.
+  Using hindcasts of daily maximum 2-m air temperature over North America from four state-of-the-art S2S
+  weather forecast models, we show that LEAS enhances both deterministic and probabilistic skill across
+  multiple weeks, including for extreme heat events. The method reduces systematic bias as well as variance
+  error, outperforming conventional lagged ensembles without requiring additional simulations or changes
+  to model initialization. The improvement arises from filtering out poorly performing members and effectively
+  emulating enhanced initialization of both atmospheric and land-surface states. LEAS combines principles
+  of analog forecasting with lagged ensembles, extending their impact from short-term to multiweek predictions.
+  Its simplicity and generality suggest broad applicability, not only to machine-learning-based weather
+  forecasting but also to other predictive systems that rely on repeated initialization, such as hydrological,
+  climate, and Earth system models. By extracting more value from existing forecast data, LEAS advances
+  toward the upper limit of forecast skill achievable within current model frameworks while avoiding added
+  computational burden.
+significance: 5
+score: 40
+highlight: false
+added: '2026-10-22'
+source: backfill

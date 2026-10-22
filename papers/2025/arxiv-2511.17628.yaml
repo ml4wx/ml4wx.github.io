@@ -1,0 +1,50 @@
+id: arxiv-2511.17628
+title: Rectifying Distribution Shift in Cascaded Precipitation Nowcasting
+authors:
+- Fanbo Ju
+- Haiyuan Shi
+- Qingjian Ni
+date: '2025-11-19'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2511.17628'
+  openalex: W7106693667
+links:
+  paper: https://arxiv.org/abs/2511.17628
+  pdf: https://arxiv.org/pdf/2511.17628
+topic: nowcasting
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: RectiCast uses dual flow-matching models to correct distribution shift in the mean radar forecast
+  before adding stochasticity, improving precipitation nowcasts at longer lead times.
+abstract: Precipitation nowcasting, which aims to provide high spatio-temporal resolution precipitation
+  forecasts by leveraging current radar observations, is a core task in regional weather forecasting.
+  Recently, the cascaded architecture has emerged as the mainstream paradigm for deep learning-based precipitation
+  nowcasting. This paradigm involves a deterministic model to predict posterior mean, followed by a probabilistic
+  model to generate local stochasticity. However, existing methods commonly overlook the conflation of
+  the systematic distribution shift in deterministic predictions and the local stochasticity. As a result,
+  the distribution shift of the deterministic component contaminates the predictions of the probabilistic
+  component, leading to inaccuracies in precipitation patterns and intensity, particularly over longer
+  lead times. To address this issue, we introduce RectiCast, a two-stage framework that explicitly decouples
+  the rectification of mean-field shift from the generation of local stochasticity via a dual Flow Matching
+  model. In the first stage, a deterministic model generates the posterior mean. In the second stage,
+  we introduce a Rectifier to explicitly learn the distribution shift and produce a rectified mean. Subsequently,
+  a Generator focuses on modeling the local stochasticity conditioned on the rectified mean. Experiments
+  on two radar datasets demonstrate that RectiCast achieves significant performance improvements over
+  existing state-of-the-art methods.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

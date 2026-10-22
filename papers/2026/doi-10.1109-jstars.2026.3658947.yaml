@@ -1,0 +1,56 @@
+id: doi-10.1109-jstars.2026.3658947
+title: 'TriPhysGAN-Attn: A Physics-Informed Generative Model for Radar Echo Forecasting via Triple Mechanism
+  Decomposition and Attention Fusion'
+authors:
+- Yonghong Zhang
+- Ziwei Yuan
+- Atta Badii
+- Junfei Wang
+- Peishan Li
+date: '2026-01-01'
+year: 2026
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2026.3658947
+  openalex: W7126094526
+links:
+  paper: https://doi.org/10.1109/jstars.2026.3658947
+orgs:
+- nuist
+- university-of-reading
+topic: nowcasting
+type: model
+method:
+- gan-vae
+- physics-constrained
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: TriPhysGAN-Attn is a physics-guided GAN for radar echo nowcasting that splits advection, initiation
+  and deformation into branches, improving accuracy under severe convective weather.
+abstract: 'Nowcasting of precipitation plays a critical role in meteorological operations and disaster
+  prevention. However, existing deep learning-based radar echo prediction models often suffer from unclear
+  physical mechanisms and insufficient capability to represent the multi-scale dynamic processes of precipitation
+  systems, making them less effective in handling severe convective weather. In this study, we propose
+  TriPhysGAN-Attn, a novel radar echo prediction model guided by meteorological physical mechanisms. We
+  divide the evolution of precipitation into three fundamental processes: advection, initiation and dissipation,
+  and deformation. Accordingly, we design an advection branch to model multi-scale motion fields, an initiation
+  and dissipation branch driven by state differences, and a deformation branch guided by motion field
+  gradients. To enhance physical consistency, we incorporate a physically informed loss function along
+  with meteorological priors and supervision signals. A multi-head cross-attention mechanism is employed
+  to dynamically fuse information across the three processes, facilitating collaborative modeling. Additionally,
+  a generative adversarial framework and a coordinate attention module are integrated to better capture
+  local discontinuities and spatial structures. Experimental results show that TriPhysGAN-Attn outperforms
+  existing methods on real radar datasets, achieving superior performance in structural preservation,
+  prediction accuracy, and robustness under extreme weather conditions.'
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

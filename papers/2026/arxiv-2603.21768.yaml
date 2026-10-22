@@ -1,0 +1,54 @@
+id: arxiv-2603.21768
+title: Extending Precipitation Nowcasting Horizons via Spectral Fusion of Radar Observations and Foundation
+  Model Priors
+authors:
+- Yuze Qin
+- Qingyong Li
+- Zhiqing Guo
+- Wen Wang
+- Yan Liu
+- Yangli-ao Geng
+date: '2026-03-23'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2603.21768'
+links:
+  paper: https://arxiv.org/abs/2603.21768
+  pdf: https://arxiv.org/pdf/2603.21768
+  code: https://github.com/Onemissed/PW-FouCast
+topic: nowcasting
+topics:
+- foundation-models
+type: model
+method:
+- other
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- nwp-analysis
+status: research
+summary: PW-FouCast fuses Pangu-Weather forecasts as spectral priors into a Fourier radar nowcasting backbone,
+  reaching state-of-the-art and extending reliable precipitation forecast horizons on SEVIR and MeteoNet.
+abstract: 'Precipitation nowcasting is critical for disaster mitigation and aviation safety. However,
+  radar-only models frequently suffer from a lack of large-scale atmospheric context, leading to performance
+  degradation at longer lead times. While integrating meteorological variables predicted by weather foundation
+  models offers a potential remedy, existing architectures fail to reconcile the profound representational
+  heterogeneities between radar imagery and meteorological data. To bridge this gap, we propose PW-FouCast,
+  a novel frequency-domain fusion framework that leverages Pangu-Weather forecasts as spectral priors
+  within a Fourier-based backbone. Our architecture introduces three key innovations: (i) Pangu-Weather-guided
+  Frequency Modulation to align spectral magnitudes and phases with meteorological priors; (ii) Frequency
+  Memory to correct phase discrepancies and preserve temporal evolution; and (iii) Inverted Frequency
+  Attention to reconstruct high-frequency details typically lost in spectral filtering. Extensive experiments
+  on the SEVIR and MeteoNet benchmarks demonstrate that PW-FouCast achieves state-of-the-art performance,
+  effectively extending the reliable forecast horizon while maintaining structural fidelity. Our code
+  is available at https://github.com/Onemissed/PW-FouCast.'
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

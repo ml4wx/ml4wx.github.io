@@ -1,0 +1,54 @@
+id: doi-10.3390-s26061857
+title: 'EdgeGeoDiff: A Novel Two-Stage Diffusion Approach for Precipitation Downscaling with Edge Details
+  and Geographical Priors'
+authors:
+- Shiji Zhang
+- Cheng Zhang
+- Tao Wu
+- Tao Zou
+- Yuanchang Dong
+date: '2026-03-15'
+year: 2026
+venue: Sensors
+venue_type: journal
+ids:
+  doi: 10.3390/s26061857
+  openalex: W7137255502
+links:
+  paper: https://doi.org/10.3390/s26061857
+  pdf: https://www.mdpi.com/1424-8220/26/6/1857/pdf?version=1773573930
+orgs:
+- cma
+topic: downscaling
+type: model
+method:
+- diffusion
+- cnn
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Two-stage diffusion model with Laplacian edge features and terrain priors improves precipitation
+  downscaling fine structure and extremes over standard super-resolution methods.
+abstract: 'Precipitation downscaling aims to enhance coarse-resolution data to higher resolutions. Due
+  to the similarity between downscaling and super-resolution (SR), deep learning-based SR approaches have
+  been increasingly adopted in this domain. However, single-image super-resolution (SISR) methods applied
+  to precipitation data face two main challenges: weak high-frequency signals and highly skewed distributions
+  in precipitation datasets, which often lead to overly smooth reconstructions, failure to capture precipitation
+  extremes, and loss of fine-scale variability with predictions biased toward mean values. To address
+  these issues, we propose EdgeGeoDiff, a two-stage diffusion model for precipitation downscaling that
+  leverages both edge information and geographical priors (e.g., terrain-related factors such as elevation).
+  In the first stage, a residual network reconstructs an initial high-resolution precipitation field with
+  preliminary structural details. In the second stage, edge features extracted using the Laplacian operator,
+  together with geographical priors, guide a diffusion model to generate residuals that enhance fine-scale
+  precipitation structures. Experimental results on real-world precipitation datasets show that EdgeGeoDiff
+  effectively reconstructs fine-scale details while preserving large-scale patterns and outperforms conventional
+  SISR methods in terms of its RMSE, PSNR, SSIM, and CSI, particularly demonstrating superior performance
+  in the high-frequency region of the spectrum.'
+significance: 2
+cited_by: 0
+score: 18
+highlight: false
+added: '2026-10-22'
+source: backfill

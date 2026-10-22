@@ -1,0 +1,51 @@
+id: arxiv-2603.00521
+title: 'Phys-Diff: A Physics-Inspired Latent Diffusion Model for Tropical Cyclone Forecasting'
+authors:
+- Lei Liu
+- Xiaoning Yu
+- Kang Chen
+- Jiahui Huang
+- Tengyuan Liu
+- Hongwei Zhao
+- Bin Li
+date: '2026-02-28'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2603.00521'
+  openalex: W7133363712
+links:
+  paper: https://arxiv.org/abs/2603.00521
+  pdf: https://arxiv.org/pdf/2603.00521
+topic: extremes-hazards
+topics:
+- global-medium-range
+type: model
+method:
+- diffusion
+- transformer
+timescale:
+- short
+spatial:
+- global
+- regional
+data:
+- era5
+- nwp-analysis
+status: research
+summary: Phys-Diff is a physics-inspired latent diffusion model that jointly forecasts tropical cyclone
+  track, pressure and wind, reporting state-of-the-art results on global and regional data.
+abstract: Tropical cyclone (TC) forecasting is critical for disaster warning and emergency response. Deep
+  learning methods address computational challenges but often neglect physical relationships between TC
+  attributes, resulting in predictions lacking physical consistency. To address this, we propose Phys-Diff,
+  a physics-inspired latent diffusion model that disentangles latent features into task-specific components
+  (trajectory, pressure, wind speed) and employs cross-task attention to introduce prior physics-inspired
+  inductive biases, thereby embedding physically consistent dependencies among TC attributes. Phys-Diff
+  integrates multimodal data including historical cyclone attributes, ERA5 reanalysis data, and FengWu
+  forecast fields via a Transformer encoder-decoder architecture, further enhancing forecasting performance.
+  Experiments demonstrate state-of-the-art performance on global and regional datasets.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,67 @@
+id: doi-10.1088-2632-2153-ae4da6
+title: 'UPD-Diff: a unified precipitation downscaling method based on multi-stream elucidating diffusion
+  model'
+authors:
+- Jiahan Chen
+- Lingzhi Kong
+- Yi Cao
+- Yuanzhi Zhong
+- Zhenfei Tang
+- Xinting Li
+- Chengsheng Yuan
+date: '2026-03-04'
+year: 2026
+venue: Machine Learning Science and Technology
+venue_type: journal
+ids:
+  doi: 10.1088/2632-2153/ae4da6
+  openalex: W7133498812
+links:
+  paper: https://doi.org/10.1088/2632-2153/ae4da6
+orgs:
+- nuist
+topic: downscaling
+type: model
+method:
+- diffusion
+- cnn
+spatial:
+- regional
+data:
+- era5
+- other
+status: research
+summary: UPD-Diff, a multi-stream elucidating diffusion model with mixed-attention U-Net, improves precipitation
+  downscaling with physical consistency and transferability across regions.
+abstract: 'Abstract Precipitation downscaling plays a pivotal role in improving the resolution of coarse-grained
+  weather and climate datasets, offering significant benefits for the issuance of localized precipitation
+  warnings, which are indispensable for agricultural operations and economic planning in vulnerable regions.
+  However, current downscaling approaches face several critical challenges: many deep learning methods,
+  often adapted from computer vision, struggle to accurately model the long-tailed distribution of precipitation,
+  leading to physically inconsistent outputs; reliance on regional a priori information severely limits
+  model transferability, while inadequate merging of multivariate data yields ambiguous results; and prohibitive
+  training costs and computational loads hinder real-time, large-scale deployment. To address these limitations,
+  we propose the UPD-Diff, a unified multi-stream elucidating diffusion model (EDM) framework designed
+  for robust and efficient precipitation downscaling. Firstly, to promote physical consistency by meteorological
+  variable conditioning and to more accurately model the long-tailed distribution of precipitation, the
+  core EDM architecture of UPD-Diff employs refined noise scheduling and learns precipitation bias based
+  on various physical auxiliary variables, thereby enhancing its alignment with meteorological dynamics.
+  Secondly, to enhance model transferability and facilitate the effective fusion of multi-modal data inputs,
+  each stream integrates a newly designed mixed-attention UNet (MA-UNet). This MA-UNet synergistically
+  blends channel attention and local-importance attention, effectively capturing shared atmospheric features
+  while preserving fine-grained local details across different geographical areas. Finally, to address
+  the challenges associated with data and computational requirements, our method leverages its inherent
+  architectural efficiency and bias-learning strategy to achieve superior structural similarity index
+  (SSIM) and Corr scores compared to baseline models, even when trained on a relatively small dataset,
+  thereby substantially reducing computational overhead. Trained in this globally sampled dataset, our
+  method outperforms the leading state-of-the-art baselines, showcasing competitive results with a peak
+  signal-to-noise ratio of 29.02, a SSIM of 0.7942, a critical success index of 0.867 (0.1 mm threshold)
+  and improved event skill at higher thresholds (50/100 mm). Notably, our model supports both training
+  and inference on a single GPU like RTX 4090, with local-region inference at about 5.1 s per 224×224
+  tile (100 steps) on the same GPU.'
+significance: 3
+cited_by: 1
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

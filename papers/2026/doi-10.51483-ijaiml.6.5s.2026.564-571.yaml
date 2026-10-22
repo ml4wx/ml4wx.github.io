@@ -1,0 +1,57 @@
+id: doi-10.51483-ijaiml.6.5s.2026.564-571
+title: Self-Organizing Deep Learning Architectures For Scalable Data Analysis In Environmental Climate
+  Prediction Applications
+authors:
+- Dr.K.R Sowmya
+- V Sivasankari
+- K Samundeeswari
+- Dr.U Nilabar Nisha
+- Debarghya Biswas
+date: '2026-01-01'
+year: 2026
+venue: International Journal of Artificial Intelligence and Machine Learning
+venue_type: journal
+ids:
+  doi: 10.51483/ijaiml.6.5s.2026.564-571
+  openalex: W7171889994
+links:
+  paper: https://doi.org/10.51483/ijaiml.6.5s.2026.564-571
+  pdf: https://www.svedbergopen.com/index.php/ijaiml/article/download/610/471
+topic: global-medium-range
+type: model
+method:
+- other
+- rnn
+- cnn
+spatial:
+- global
+- regional
+data:
+- era5
+status: research
+summary: Self-organizing architecture adds regional expert networks as climate data grows, cutting global
+  ERA5 temperature RMSE from 2.31°C (Transformer baseline) to 1.39°C.
+abstract: 'Environmental climate predictions through deep learning architectures such as Convolutional
+  Recurrent Networks or even large Transformer-based weather forecasters are often engineered based on
+  an a priori decided upon architecture and capacity of the model, thereby necessitating a manual re-designing
+  of the network whenever there is an increase in size, geographical coverage, and complexity of the input
+  data, a problem that frequently occurs as climate observation networks evolve from a few local networks
+  to full-scale continental or even global networks. In this paper, we introduce the Self-Organizing Deep
+  Architecture (SODA) model where a competitive, Kohonen-type self-organizing topology layer assigns the
+  incoming spatiotemporal patterns of the climate into an increasing number of regional experts, creating
+  new experts as soon as the quantization error-based complexity measure indicates the inadequacy of the
+  existing topology. Every expert has a deep spatiotemporal prediction backbone, and an aggregated map-reduce
+  style layer merges the predictions of all experts into a global prediction, whereas a reorganization
+  cycle periodically changes the architecture whenever the climate regime changes due to events like ENSO
+  phase changes. The performance of this framework is measured for multivariate climate data modeled based
+  on ERA5 reanalysis data variables for four different data-scale scenarios: single-region, multi-region,
+  continental-scale, and global-scale with extreme events. With respect to a CNN-LSTM baseline model and
+  a Transformer baseline model with a fixed architecture, SODA framework decreases temperature prediction
+  RMSE from 2.87°C and 2.31°C to 1.39°C in the global-scale scenario, and also achieves higher training
+  throughput, which suggests that self-organizing growth of architecture results in better performance
+  and scalability with increasing climate data complexity.'
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

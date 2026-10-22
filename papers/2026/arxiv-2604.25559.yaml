@@ -1,0 +1,78 @@
+id: arxiv-2604.25559
+title: Representing the Surface Ocean in ECMWF's data-driven forecasting system AIFS
+authors:
+- Sara Hahner
+- Lorenzo Zampieri
+- Jean-Raymond Bidlot
+- Philip Browne
+- Matthew Chantry
+- Mariana C. A. Clare
+- Harrison Cook
+- Peter Dueben
+- Rachel Furner
+- Sarah Keeley
+- Josh Kousal
+- Simon Lang
+- Christian Lessig
+- Gert Mertes
+- Kristian Mogensen
+- Gabriel Moldovan
+- Charles Pelletier
+- Florian Pinault
+- Ana Prieto Nemesio
+- Baudouin Raoult
+- Irina Sandu
+- Mario Santa Cruz
+- Jakob Schloer
+- Steffen Tietsche
+- Hao Zuo
+date: '2026-04-28'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2604.25559'
+  openalex: W7158081817
+links:
+  paper: https://arxiv.org/abs/2604.25559
+  pdf: https://arxiv.org/pdf/2604.25559
+topic: global-medium-range
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- transformer
+- gnn
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: pre-operational
+summary: Extends ECMWF's AIFS to jointly forecast atmosphere, ocean waves, and sea ice, giving about one
+  extra day of marine skill and better medium-range weather forecasts.
+abstract: Machine-learning (ML) models, such as the AIFS at the ECMWF, have revolutionised weather forecasting
+  in recent years. We present an extension of the AIFS that jointly models the atmosphere and surface
+  ocean, including ocean waves and sea ice. The primary objective of this extension is to enhance machine-learning
+  medium-range forecasting and enable new use cases by expanding the weather state to better capture coupled
+  surface processes. Our approach departs from traditional numerical models by not having two separate
+  models for the atmosphere and marine components. The joint model instead learns correlations across
+  the entire atmosphere-ocean interface in a component-agnostic way, and can exploit the expressive capacity
+  of ML architectures to learn cross-component relationships directly from the data. We leverage tailored
+  and targeted datasets and solve model design challenges such as missing values over land, multi-scale
+  temporal dynamics, and physical realism of forecast fields and demonstrate the utility of loss scaling
+  in guiding the learning process. We evaluate how representing the surface ocean affects medium-range
+  weather forecasts. We also assess the model's ability to predict surface-ocean fields, including wave
+  swell and tropical-cyclone cold wakes. For nearly all evaluated marine variables, we observe an improvement
+  of approximately one day in forecast skill at medium-range lead times compared to physics-based models.
+  Furthermore, we demonstrate that the model is robust to idealised initial conditions outside the training
+  distribution and responds to them in a physically consistent way. Overall, our findings suggest that
+  the joint AIFS modelling approach offers significant potential for combined atmosphere-ocean forecasting.
+  Our work provides a solid foundation for future development of data-driven coupled Earth system models
+  with greater flexibility and physical fidelity.
+significance: 6
+score: 24
+highlight: false
+added: '2026-10-22'
+source: backfill

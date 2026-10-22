@@ -1,0 +1,56 @@
+id: doi-10.1371-journal.pone.0342431
+title: 'Redefining multi-target weather forecasting with a novel deep learning model: Hierarchical temporal
+  convolutional long short-term memory with attention (HTC-LSTM-Attn) in Bangladesh'
+authors:
+- Md. Anamul Kabir
+- Chatak Chakma
+date: '2026-03-23'
+year: 2026
+venue: PLoS ONE
+venue_type: journal
+ids:
+  doi: 10.1371/journal.pone.0342431
+  openalex: W7140083762
+links:
+  paper: https://doi.org/10.1371/journal.pone.0342431
+  pdf: https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0342431&type=printable
+topic: local-forecasting
+type: model
+method:
+- rnn
+- transformer
+timescale:
+- short
+spatial:
+- regional
+data:
+- stations
+status: research
+summary: Hybrid convolutional-LSTM with attention forecasts daily maximum temperature and humidity for
+  24 Bangladeshi cities, reaching 0.82 °C MAE on the temporal test set.
+abstract: Bangladesh, being a country that relies on agriculture, has its agricultural sector contributing
+  around 20% to the Gross Domestic Product (GDP) and providing employment opportunities for nearly 60%
+  of the population. The study proposes a novel multi-step forecasting deep-learning framework designed
+  to forecast the maximum temperature and humidity of 24 cities, called Hierarchical Temporal Convolutional
+  Long Short-Term Memory with attention (HTC-LSTM-Attn). The model contains hierarchical temporal convolutions
+  (HTC) for extracting multi-scale patterns, bidirectional LSTMs for sequential dependencies, and an attention
+  mechanism for learning to weigh time steps differently, while parameters are optimized with Keras tuner.
+  Using data from Bangladesh Agricultural Research Council (BARC) from 1961 to 2022 and rigorous preprocessing
+  with seasonal features and lagged statistics, the model obtains temperature results for with a Mean
+  Absolute Error (MAE) of 0.8178 °C, Root Mean Squared Error (RMSE) of 0.9718 °C, R-squared (R²) of 0.8527,
+  and Mean Absolute Percentage Error (MAPE) of 2.8823% and humidity with MAE of 2.4693%, RMSE of 3.2442%,
+  R² of 0.7228, and MAPE of 3.1757% values on a strict temporal test set (19 stations, 2016-2022). On
+  a spatial hold-out test set (5 unseen stations, 2016-2022) performance remains robust, temperature with
+  MAE of 0.9587 °C, RMSE of 1.1898 °C, R² of 0.8342, and MAPE of 3.1534% and humidity with MAE of 2.4796%,
+  RMSE of 3.2119%, R² of 0.6561, and MAPE of 3.2045% consistently surpassing performance measures of models
+  Gated Recurrent Unit (GRU), Long Short-Term Memory (LSTM), Convolutional Neural Network (CNN), Decision
+  Tree Regression (DTR), Convolutional Neural Network - Long Short-Term Memory (CNN-LSTM) and latest transformer-based
+  architectures (Autoformer, FEDformer, TimesNet, and Pyraformer). These results have shown robust spatial
+  performance with the respective improvements needed in agricultural planning and disaster management
+  in Bangladesh, in its vulnerable climate context.
+significance: 2
+cited_by: 6
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

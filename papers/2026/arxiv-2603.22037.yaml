@@ -1,0 +1,52 @@
+id: arxiv-2603.22037
+title: Learning Data-driven Surrogate and Correction Models for Satellite Observations in Numerical Weather
+  Prediction
+authors:
+- Gian Luca Buono
+- Stefanie Hollborn
+- Roland Potthast
+- Jörg Schäfer
+- Martin Simon
+date: '2026-03-23'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2603.22037'
+  openalex: W7140222088
+links:
+  paper: https://arxiv.org/abs/2603.22037
+  pdf: https://arxiv.org/pdf/2603.22037
+topic: data-assimilation
+topics:
+- observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- global
+data:
+- satellite
+status: research
+summary: Introduces ML surrogate observation operators for satellite radiances, including a hybrid residual
+  correction to RTTOV that lowers radiance RMSE in cloud-affected conditions.
+abstract: 'Satellite observations play a critical role in numerical weather prediction where they are
+  assimilated through an observation operator that maps model states to radiances. In the traditional
+  Ensemble Kalman Filter, these observations are used to update the state by weighting their associated
+  errors against model uncertainties to produce an optimal estimate. This process requires radiative transfer
+  simulations for passive, downward-viewing satellite radiometers operating in the visible, infrared,
+  and microwave spectra. Typically, such simulations rely on numerically integrating physical laws via
+  models like RTTOV. In this paper, we introduce two machine learning surrogate observation operators
+  inspired by modern computer-vision architectures: First, a fully data-driven emulator of radiative transfer,
+  and second, a hybrid incremental correction model that learns only the residual relative to RTTOV, thereby
+  retaining established physics while enabling data-driven refinement in complex conditions such as cloud-affected
+  situations. The residual formulation improves radiance accuracy (lower Root Mean Squared Error (RMSE)
+  than the fully data-driven emulator and RTTOV) and adds only moderate computational costs to the assimilation
+  step. Both models combine 3D convolutions for vertical profile encoding with a 2D U-Net operating on
+  latitude-longitude grids, allowing joint learning of vertical structure, spatial correlations, and inter-channel
+  dependencies. We further provide a theoretical justification for deploying the hybrid surrogate as an
+  observation operator in data assimilation.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,58 @@
+id: doi-10.1016-j.jag.2025.104947
+title: Spatially generalizable bias correction of satellite solar radiation for regional climate assessment—a
+  case study in Japan
+authors:
+- Alessandro Damiani
+- Noriko N. Ishizaki
+- Tomomi Watanabe
+- Yuta Tamaki
+- Raúl R. Cordero
+- Sarah C. Feron
+- Hitoshi Irie
+date: '2025-11-14'
+year: 2025
+venue: International Journal of Applied Earth Observation and Geoinformation
+venue_type: journal
+ids:
+  doi: 10.1016/j.jag.2025.104947
+  openalex: W4416200851
+links:
+  paper: https://doi.org/10.1016/j.jag.2025.104947
+topic: observations-remote-sensing
+topics:
+- post-processing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- stations
+status: research
+summary: XGBoost corrects Himawari-8 surface solar radiation bias using ground stations, transfers across
+  Japan, and enables assessment of a regional reanalysis.
+abstract: • Evaluation of Himawari-8 surface solar radiation (SSR) using ground observations. • Bias correction
+  of Himawari SSR via an interpretable ensemble learner. • Assessment of the spatial transferability of
+  the correction. • Evaluation of high-resolution regional reanalysis by bias-corrected satellite SSR.
+  Evaluations of model- and reanalysis-based surface solar radiation (SSR) products often depend on satellite-derived
+  estimates, which can be biased, particularly under broken-cloud conditions or over high-albedo surfaces.
+  In this study, we first evaluated JAXA’s Himawari satellite SSR against ground-based observations. We
+  then combined sparse but accurate ground measurements with high-resolution meteorological data to train
+  an eXtreme Gradient Boosting (XGBoost) model that captures and spatiotemporally extrapolates the systematic
+  bias between satellite SSR and ground truth data. Our model is physics-informed, interpretable via feature-attribution
+  analyses, and generalizes across snow-covered terrain. Applying this correction over Japan, we achieved
+  close spatial pattern alignment with a distinct ground-based gridded SSR dataset, which further allowed
+  us to examine the spatial transferability of the correction method. Finally, we used the bias-corrected
+  satellite SSR data to assess a novel high-resolution regional reanalysis, and found that the reanalysis
+  data reproduce expected spatial patterns and overall SSR magnitudes well but tend to slightly overestimate
+  the SSR data under cloudy skies. However, especially under clear skies, the reanalysis remains valuable
+  for refining bias-corrected satellite SSR data in certain high-altitude mountainous regions, where our
+  machine learning model struggles to extrapolate. Overall, the proposed method shows promise for application
+  across platforms and regions, enabling more reliable datasets for climate assessment and downscaling.
+significance: 2
+cited_by: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

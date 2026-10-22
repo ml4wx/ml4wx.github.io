@@ -1,0 +1,43 @@
+id: arxiv-2511.03197
+title: A Probabilistic U-Net Approach to Downscaling Climate Simulations
+authors:
+- Maryam Alipourhajiagha
+- Pierre-Louis Lemaire
+- Youssef Diouane
+- Julie Carreau
+date: '2025-11-05'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2511.03197'
+links:
+  paper: https://arxiv.org/abs/2511.03197
+  pdf: https://arxiv.org/pdf/2511.03197
+topic: downscaling
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- cnn
+- gan-vae
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+status: research
+summary: Probabilistic U-Net with a variational latent space downscales precipitation and temperature
+  16x; WMSE-MS-SSIM handles extremes best, while afCRPS better captures spatial variability.
+abstract: Climate models are limited by heavy computational costs, often producing outputs at coarse spatial
+  resolutions, while many climate change impact studies require finer scales. Statistical downscaling
+  bridges this gap, and we adapt the probabilistic U-Net for this task, combining a deterministic U-Net
+  backbone with a variational latent space to capture aleatoric uncertainty. We evaluate four training
+  objectives, afCRPS and WMSE-MS-SSIM with three settings for downscaling precipitation and temperature
+  from $16\times$ coarser resolution. Our main finding is that WMSE-MS-SSIM performs well for extremes
+  under certain settings, whereas afCRPS better captures spatial variability across scales.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

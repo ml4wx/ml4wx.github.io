@@ -1,0 +1,59 @@
+id: arxiv-2512.09059
+title: A Diffusion-Based Framework for High-Resolution Precipitation Forecasting over CONUS
+authors:
+- Marina Vicens-Miquel
+- Amy McGovern
+- Aaron J. Hill
+- Efi Foufoula-Georgiou
+- Clement Guilloteau
+- Samuel S. P. Shen
+date: '2025-12-09'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2512.09059'
+links:
+  paper: https://arxiv.org/abs/2512.09059
+  pdf: https://arxiv.org/pdf/2512.09059
+topic: nowcasting
+topics:
+- regional-km-scale
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+timescale:
+- nowcast
+- short
+spatial:
+- regional
+data:
+- radar
+- nwp-analysis
+status: research
+summary: Diffusion-based residual precipitation forecasts at 1 km over CONUS, combining MRMS radar and
+  HRRR, beat the HRRR baseline out to 12 hours.
+abstract: 'Accurate precipitation forecasting is essential for hydrometeorological risk management, especially
+  for anticipating extreme rainfall that can lead to flash flooding and infrastructure damage. This study
+  introduces a diffusion-based deep learning (DL) framework that systematically compares three residual
+  prediction strategies differing only in their input sources: (1) a fully data-driven model using only
+  past observations from the Multi-Radar Multi-Sensor (MRMS) system, (2) a corrective model using only
+  forecasts from the High-Resolution Rapid Refresh (HRRR) numerical weather prediction system, and (3)
+  a hybrid model integrating both MRMS and selected HRRR forecast variables. By evaluating these approaches
+  under a unified setup, we provide a clearer understanding of how each data source contributes to predictive
+  skill over the Continental United States (CONUS). Forecasts are produced at 1-km spatial resolution,
+  beginning with direct 1-hour predictions and extending to 12 hours using autoregressive rollouts. Performance
+  is evaluated using both CONUS-wide and region-specific metrics that assess overall performance and skill
+  at extreme rainfall thresholds. Across all lead times, our DL framework consistently outperforms the
+  HRRR baseline in pixel-wise and spatiostatistical metrics. The hybrid model performs best at the shortest
+  lead time, while the HRRR-corrective model outperforms others at longer lead times, maintaining high
+  skill through 12 hours. To assess reliability, we incorporate calibrated uncertainty quantification
+  tailored to the residual learning setup. These gains, particularly at longer lead times, are critical
+  for emergency preparedness, where modest increases in forecast horizon can improve decision-making.
+  This work advances DL-based precipitation forecasting by enhancing predictive skill, reliability, and
+  applicability across regions.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

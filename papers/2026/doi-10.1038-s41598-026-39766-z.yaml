@@ -1,0 +1,58 @@
+id: doi-10.1038-s41598-026-39766-z
+title: A physics-guided machine learning framework for enhancing dust storm visibility prediction in arid
+  and semi-arid regions
+authors:
+- Chang Xu
+- Henggang Zhang
+- Kaiyue Luo
+- Jie Liu
+- Yang Shen
+- Hongcai Qin
+- Yunhao Qu
+- Chenhui Zhu
+- Zhen Han
+date: '2026-03-03'
+year: 2026
+venue: Scientific Reports
+venue_type: journal
+ids:
+  doi: 10.1038/s41598-026-39766-z
+  openalex: W7133313514
+links:
+  paper: https://doi.org/10.1038/s41598-026-39766-z
+  pdf: https://www.nature.com/articles/s41598-026-39766-z_reference.pdf
+topic: global-medium-range
+type: model
+method:
+- classical-ml
+- physics-constrained
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Physics-guided LightGBM post-processes ECMWF forecasts to predict dust visibility grades over
+  the Kumtag Desert, with QWK up to 0.26 and MAE cut by up to 10%.
+abstract: Dust sharply degrades visibility in arid and semi-arid regions, yet operational forecasting
+  remains challenged by near-surface process errors in numerical weather prediction (NWP) and the poor
+  generalization of purely data-driven models. We present a physics-guided machine learning (PGML) framework
+  that post-processes European Centre for Medium-Range Weather Forecasts (ECMWF) forecasts to predict
+  five ordinal visibility grades over the Kumtag Desert. A dust-lifecycle feature library (emission, vertical
+  mixing, transport, wet scavenging) is coupled with an ordinal LightGBM architecture. On an independent
+  test period, the model attains quadratic weighted kappa (QWK) of 0.26 (0-24 h), 0.17 (24-48 h), and
+  0.18 (48-72 h), with mean absolute error (MAE) of 0.48-0.56; gains versus data-only baselines increase
+  with forecast horizon. Ablation experiments show that physics priors can effectively improve visibility
+  prediction accuracy-reducing MAE by up to 10% and sustaining QWK beyond 24 h by constraining non-physical
+  drift. Accordingly, the PGML visibility predictions show improved performance relative to data-only
+  baselines. SHAP analysis reveals a forecast-horizon-dependent mechanistic shift from emission/surface-layer
+  dynamics to stability-controlled vertical mixing, consistent with dust dynamics. The framework offers
+  an interpretable, transferable paradigm for physics-constrained environmental forecasting.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

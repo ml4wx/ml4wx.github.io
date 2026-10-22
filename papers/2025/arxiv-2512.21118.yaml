@@ -1,0 +1,51 @@
+id: arxiv-2512.21118
+title: 'STLDM: Spatio-Temporal Latent Diffusion Model for Precipitation Nowcasting'
+authors:
+- Shi Quan Foo
+- Chi-Ho Wong
+- Zhihan Gao
+- Dit-Yan Yeung
+- Ka-Hing Wong
+- Wai-Kin Wong
+date: '2025-12-24'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2512.21118'
+  openalex: W7117308628
+links:
+  paper: https://arxiv.org/abs/2512.21118
+  pdf: https://arxiv.org/pdf/2512.21118
+  code: https://github.com/sqfoo/stldm_official
+topic: nowcasting
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+- gan-vae
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: STLDM couples a VAE, a deterministic conditioning forecaster and a latent diffusion enhancer
+  to produce sharper precipitation nowcasts that beat prior state-of-the-art on radar benchmarks.
+abstract: 'Precipitation nowcasting is a critical spatio-temporal prediction task for society to prevent
+  severe damage owing to extreme weather events. Despite the advances in this field, the complex and stochastic
+  nature of this task still poses challenges to existing approaches. Specifically, deterministic models
+  tend to produce blurry predictions while generative models often struggle with poor accuracy. In this
+  paper, we present a simple yet effective model architecture termed STLDM, a diffusion-based model that
+  learns the latent representation from end to end alongside both the Variational Autoencoder and the
+  conditioning network. STLDM decomposes this task into two stages: a deterministic forecasting stage
+  handled by the conditioning network, and an enhancement stage performed by the latent diffusion model.
+  Experimental results on multiple radar datasets demonstrate that STLDM achieves superior performance
+  compared to the state of the art, while also improving inference efficiency. The code is available in
+  https://github.com/sqfoo/stldm_official.'
+significance: 5
+score: 30
+highlight: false
+added: '2026-10-22'
+source: backfill

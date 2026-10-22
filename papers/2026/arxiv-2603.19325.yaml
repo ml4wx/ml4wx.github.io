@@ -1,0 +1,53 @@
+id: arxiv-2603.19325
+title: Target Concept Tuning Improves Extreme Weather Forecasting
+authors:
+- Shijie Ren
+- Xinyue Gu
+- Ziheng Peng
+- Haifan Zhang
+- Peisong Niu
+- Bo Wu
+- Xiting Wang
+- Liang Sun
+- Jirong Wen
+date: '2026-03-17'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2603.19325'
+  openalex: W7140137682
+links:
+  paper: https://arxiv.org/abs/2603.19325
+  pdf: https://arxiv.org/pdf/2603.19325
+topic: extremes-hazards
+topics:
+- xai-uq-physics
+type: model
+method:
+- other
+timescale:
+- medium
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: TaCT fine-tunes weather models only on failure-related concepts found with sparse autoencoders,
+  improving typhoon forecasts without degrading other variables.
+abstract: 'Deep learning models for meteorological forecasting often fail in rare but high-impact events
+  such as typhoons, where relevant data is scarce. Existing fine-tuning methods typically face a trade-off
+  between overlooking these extreme events and overfitting them at the expense of overall performance.
+  We propose TaCT, an interpretable concept-gated fine-tuning framework that solves the aforementioned
+  issue by selective model improvement: models are adapted specifically for failure cases while preserving
+  performance in common scenarios. To this end, TaCT automatically discovers failure-related internal
+  concepts using Sparse Autoencoders and counterfactual analysis, and updates parameters only when the
+  corresponding concepts are activated, rather than applying uniform adaptation. Experiments show consistent
+  improvements in typhoon forecasting across different regions without degrading other meteorological
+  variables. The identified concepts correspond to physically meaningful circulation patterns, revealing
+  model biases and supporting trustworthy adaptation in scientific forecasting tasks. The code is available
+  at https://anonymous.4open.science/r/Concept-Gated-Fine-tune-62AC.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

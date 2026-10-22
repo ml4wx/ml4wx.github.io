@@ -1,0 +1,52 @@
+id: arxiv-2512.13729
+title: Composite Classifier-Free Guidance for Multi-Modal Conditioning in Wind Dynamics Super-Resolution
+authors:
+- Jacob Schnell
+- Aditya Makkar
+- Gunadi Gani
+- Aniket Srinivasan Ashok
+- Darren Lo
+- Mike Optis
+- Alexander Wong
+- Yuhao Chen
+date: '2025-12-13'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2512.13729'
+  openalex: W4417463952
+links:
+  paper: https://arxiv.org/abs/2512.13729
+  pdf: https://arxiv.org/pdf/2512.13729
+topic: downscaling
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+spatial:
+- regional
+data:
+- other
+status: research
+summary: WindDM, a diffusion model with composite classifier-free guidance, reconstructs high-resolution
+  wind fields up to 1000 times cheaper than classical methods.
+abstract: Various weather modelling problems (e.g., weather forecasting, optimizing turbine placements,
+  etc.) require ample access to high-resolution, highly accurate wind data. Acquiring such high-resolution
+  wind data, however, remains a challenging and expensive endeavour. Traditional reconstruction approaches
+  are typically either cost-effective or accurate, but not both. Deep learning methods, including diffusion
+  models, have been proposed to resolve this trade-off by leveraging advances in natural image super-resolution.
+  Wind data, however, is distinct from natural images, and wind super-resolvers often use upwards of 10
+  input channels, significantly more than the usual 3-channel RGB inputs in natural images. To better
+  leverage a large number of conditioning variables in diffusion models, we present a generalization of
+  classifier-free guidance (CFG) to multiple conditioning inputs. Our novel composite classifier-free
+  guidance (CCFG) can be dropped into any pre-trained diffusion model trained with standard CFG dropout.
+  We demonstrate that CCFG outputs are higher-fidelity than those from CFG on wind super-resolution tasks.
+  We present WindDM, a diffusion model trained for industrial-scale wind dynamics reconstruction and leveraging
+  CCFG. WindDM achieves state-of-the-art reconstruction quality among deep learning models and costs up
+  to $1000\times$ less than classical methods.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

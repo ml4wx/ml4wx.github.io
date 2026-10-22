@@ -1,0 +1,64 @@
+id: arxiv-2601.18111
+title: Demystifying Data-Driven Probabilistic Medium-Range Weather Forecasting
+authors:
+- Jean Kossaifi
+- Nikola Kovachki
+- Morteza Mardani
+- Daniel Leibovici
+- Suman Ravuri
+- Ira Shokar
+- Edoardo Calvello
+- Mohammad Shoaib Abbas
+- Peter Harrington
+- Ashay Subramaniam
+- Noah Brenowitz
+- Boris Bonev
+- Wonmin Byeon
+- Karsten Kreis
+- Dale Durran
+- Arash Vahdat
+- Mike Pritchard
+- Jan Kautz
+date: '2026-01-26'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2601.18111'
+  openalex: W7125836258
+links:
+  paper: https://arxiv.org/abs/2601.18111
+  pdf: https://arxiv.org/pdf/2601.18111
+topic: probabilistic-ensembles
+topics:
+- global-medium-range
+type: model
+method:
+- diffusion
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: Latent-space framework with a history-conditioned local projector matches or beats IFS and GenCast
+  on most variables, working with interpolants, diffusion and CRPS training alike.
+abstract: The recent revolution in data-driven methods for weather forecasting has lead to a fragmented
+  landscape of complex, bespoke architectures and training strategies, obscuring the fundamental drivers
+  of forecast accuracy. Here, we demonstrate that state-of-the-art probabilistic skill requires neither
+  intricate architectural constraints nor specialized training heuristics. We introduce a scalable framework
+  for learning multi-scale atmospheric dynamics by combining a directly downsampled latent space with
+  a history-conditioned local projector that resolves high-resolution physics. We find that our framework
+  design is robust to the choice of probabilistic estimator, seamlessly supporting stochastic interpolants,
+  diffusion models, and CRPS-based ensemble training. Validated against the Integrated Forecasting System
+  and the deep learning probabilistic model GenCast, our framework achieves statistically significant
+  improvements on most of the variables. These results suggest scaling a general-purpose model is sufficient
+  for state-of-the-art medium-range prediction, eliminating the need for tailored training recipes and
+  proving effective across the full spectrum of probabilistic frameworks.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

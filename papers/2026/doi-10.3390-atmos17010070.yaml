@@ -1,0 +1,64 @@
+id: doi-10.3390-atmos17010070
+title: Deep Learning-Based Multi-Source Precipitation Fusion and Its Utility for Hydrological Simulation
+authors:
+- Zihao Huang
+- Changbo Jiang
+- Yuannan Long
+- Shixiong Yan
+- Yue Qi
+- Munan Xu
+- Tao Xiang
+date: '2026-01-08'
+year: 2026
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos17010070
+  openalex: W7119050428
+links:
+  paper: https://doi.org/10.3390/atmos17010070
+  pdf: https://www.mdpi.com/2073-4433/17/1/70/pdf?version=1767869528
+topic: observations-remote-sensing
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- satellite
+- other
+- era5
+status: research
+summary: Attention CNN-LSTM bias-corrects IMERG precipitation over a mountain basin, raising SWAT runoff
+  NSE from about 0.71 to 0.85 during calibration.
+abstract: High-resolution satellite precipitation products are key inputs for basin-scale rainfall estimation,
+  but they still exhibit substantial biases in complex terrain and during heavy rainfall. Recent multi-source
+  fusion studies have shown that simply stacking multiple same-type microwave satellite products yields
+  only limited additional gains for high-quality precipitation estimates and may even introduce local
+  degradation, suggesting that targeted correction of a single, widely validated high-quality microwave
+  product (such as IMERG) is a more rational strategy. Focusing on the mountainous, gauge-sparse Lüshui
+  River basin with pronounced relief and frequent heavy rainfall, we use GPM IMERG V07 as the primary
+  microwave product and incorporate CHIRPS, ERA5 evaporation, and a digital elevation model as auxiliary
+  inputs to build a daily attention-enhanced CNN–LSTM (A-CNN–LSTM) bias-correction framework. Under a
+  unified IMERG-based setting, we compare three network architectures—LSTM, CNN–LSTM, and A-CNN–LSTM—and
+  test three input configurations (single-source IMERG, single-source CHIRPS, and combined IMERG + CHIRPS)
+  to jointly evaluate impacts on corrected precipitation and SWAT runoff simulations. The IMERG-driven
+  A-CNN–LSTM markedly reduces daily root-mean-square error and improves the intensity and timing of 10–50
+  mm·d−1 rainfall events; the single-source IMERG configuration also outperforms CHIRPS-including multi-source
+  setups in terms of correlation, RMSE, and performance across rainfall-intensity classes. When the corrected
+  IMERG product is used to force SWAT, daily Nash-Sutcliffe Efficiency increases from about 0.71/0.70
+  to 0.85/0.79 in the calibration/validation periods, and RMSE decreases from 87.92 to 60.98 m3 s−1, while
+  flood peaks and timing closely match simulations driven by gauge-interpolated precipitation. Overall,
+  the results demonstrate that, in gauge-sparse mountainous basins, correcting a single high-quality,
+  widely validated microwave product with a small set of heterogeneous covariates is more effective for
+  improving precipitation inputs and their hydrological utility than simply aggregating multiple same-type
+  satellite products.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

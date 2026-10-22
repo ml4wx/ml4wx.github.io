@@ -1,0 +1,49 @@
+id: arxiv-2603.11229
+title: Trustworthy Predictive Distributions for Tail Events with Semiparametric Diagnostic Transport Maps
+authors:
+- Elizabeth Cucuzzella
+- Rafael Izbicki
+- Ann B. Lee
+date: '2026-03-11'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2603.11229'
+  openalex: W7135220087
+links:
+  paper: https://arxiv.org/abs/2603.11229
+  pdf: https://arxiv.org/pdf/2603.11229
+topic: extremes-hazards
+topics:
+- post-processing
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- global
+data:
+- nwp-analysis
+status: pre-operational
+summary: Semiparametric diagnostic transport maps correct miscalibrated tail probabilities of predictive
+  distributions, applied to National Hurricane Center tropical cyclone intensity forecasts.
+abstract: Machine learning forecast systems are moving beyond point predictions to full predictive distributions
+  for future outcomes y conditional on complex inputs x. However, these distributions are often locally
+  miscalibrated, especially for high-stakes tail events where accurate uncertainty quantification is most
+  needed to establish trust in models. Local miscalibration occurs because training data often lack examples
+  of low-frequency events. The goal of this paper is to describe a simple, yet flexible framework that,
+  at deployment, produces interpretable diagnostics and a robust correction mechanism of predictive distributions
+  when train examples are limited. With this goal in mind, we introduce a semiparametric version of the
+  Local Amortized Diagnostic and Reshaping (LADaR) framework that posits a covariate-dependent parametric
+  model for a diagnostic transport map regressed nonparametrically on inputs to describe how to correct
+  tail probabilities across the feature space to match calibration data. These maps provide the user with
+  local, real-time diagnostics and a reshaped predictive distribution that can be related back to physical
+  processes in the input space. We apply these semiparametric diagnostic transport maps to short-term
+  tropical cyclone intensity forecasting to detect evolutionary modes linked to local miscalibration in
+  the National Hurricane Center's forecasts and improve predictions for severe weather hazards.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

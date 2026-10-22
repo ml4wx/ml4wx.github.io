@@ -1,0 +1,51 @@
+id: arxiv-2601.21760
+title: Zero-Shot Statistical Downscaling via Diffusion Posterior Sampling
+authors:
+- Ruian Tie
+- Wenbo Xiong
+- Zhengyu Shi
+- Xinyu Su
+- Chenyu jiang
+- Libo Wu
+- Hao Li
+date: '2026-01-29'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2601.21760'
+links:
+  paper: https://arxiv.org/abs/2601.21760
+  pdf: https://arxiv.org/pdf/2601.21760
+topic: downscaling
+topics:
+- extremes-hazards
+type: model
+method:
+- diffusion
+- physics-constrained
+timescale:
+- climate
+spatial:
+- regional
+data:
+- era5
+- cmip
+status: research
+summary: Zero-shot diffusion posterior sampling downscales unseen GCMs using a reanalysis-trained prior,
+  improving 99th-percentile errors and reconstructing tropical cyclones.
+abstract: Conventional supervised climate downscaling struggles to generalize to Global Climate Models
+  (GCMs) due to the lack of paired training data and inherent domain gaps relative to reanalysis. Meanwhile,
+  current zero-shot methods suffer from physical inconsistencies and vanishing gradient issues under large
+  scaling factors. We propose Zero-Shot Statistical Downscaling (ZSSD), a zero-shot framework that performs
+  statistical downscaling without paired data during training. ZSSD leverages a Physics-Consistent Climate
+  Prior learned from reanalysis data, conditioned on geophysical boundaries and temporal information to
+  enforce physical validity. Furthermore, to enable robust inference across varying GCMs, we introduce
+  Unified Coordinate Guidance. This strategy addresses the vanishing gradient problem in vanilla DPS and
+  ensures consistency with large-scale fields. Results show that ZSSD significantly outperforms existing
+  zero-shot baselines in 99th percentile errors and successfully reconstructs complex weather events,
+  such as tropical cyclones, across heterogeneous GCMs.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

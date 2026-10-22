@@ -1,0 +1,52 @@
+id: doi-10.3390-rs18050744
+title: A Bias Correction Scheme for FY-3E/HIRAS-II Data Assimilation Based on EXtreme Gradient Boosting
+authors:
+- Hongtao Chen
+- Li Guan
+date: '2026-02-28'
+year: 2026
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs18050744
+  openalex: W7133135393
+links:
+  paper: https://doi.org/10.3390/rs18050744
+  pdf: https://www.mdpi.com/2072-4292/18/5/744/pdf
+orgs:
+- nuist
+topic: data-assimilation
+type: model
+method:
+- classical-ml
+spatial:
+- global
+data:
+- satellite
+- nwp-analysis
+- era5
+status: research
+summary: An XGBoost bias correction for FY-3E/HIRAS-II infrared radiances outperforms static and variational
+  schemes in two-week assimilation tests, with the most valid observations and fields closest to ERA5.
+abstract: More and more spaceborne infrared hyperspectral atmospheric observations are assimilated into
+  data assimilation systems. The key to bias correction (BC) of these instruments depends on selecting
+  predictors. However, it is difficult to find a set of predictors that are highly correlated with the
+  O-B biases in all FY-3E/HIRAS-II channels, due to its multi-channel characteristics. A machine learning
+  model XGBoost (EXtreme Gradient Boosting) BC scheme for FY-3E/HIRAS-II is established in this article.
+  The selected predictors include model skin temperature, model total column water vapor, 1000–300 hPa
+  thickness, 200–50 hPa thickness, scan position, observed brightness temperature (BT) and simulated BT.
+  The method is also compared with the operational static BC and the variational BC, to validate its effect.
+  The two-week data assimilation experiments show that the XGBoost BC is the most effective among the
+  three BC schemes. The mean and standard deviation of O-B in all channels are the smallest after BC,
+  and the effective observations through quality control are the largest, followed by the static BC. The
+  static BC and variational BC are performed based on linear regression, which may lead to a small loss
+  of valid observations in some channels that are weakly correlated with the predictor, whereas machine
+  learning algorithms can search for the nonlinear correlation between biases and predictors. Compared
+  with ERA5, both temperature- and humidity-analysis fields based on XGBoost BC are closest to ERA5 at
+  all levels, and the root mean square errors do not change much over time.
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

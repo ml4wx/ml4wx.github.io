@@ -1,0 +1,59 @@
+id: arxiv-2512.02268
+title: Spatiotemporal Pyramid Flow Matching for Climate Emulation
+authors:
+- Jeremy Andrew Irvin
+- Jiaqi Han
+- Zikui Wang
+- Abdulaziz Alharbi
+- Yufei Zhao
+- Nomin-Erdene Bayarsaikhan
+- Daniele Visioni
+- Andrew Y. Ng
+- Duncan Watson-Parris
+date: '2025-12-01'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2512.02268'
+  openalex: W4417004376
+links:
+  paper: https://arxiv.org/abs/2512.02268
+  pdf: https://arxiv.org/pdf/2512.02268
+  code: https://github.com/stanfordmlgroup/spf
+topic: climate-emulation
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: Hierarchical spatiotemporal flow matching emulates climate at yearly and monthly scales, beating
+  flow baselines on ClimateBench, with new 33,000 simulation-year ClimateSuite dataset.
+abstract: Generative models have the potential to transform the way we emulate Earth's changing climate.
+  Previous generative approaches rely on weather-scale autoregression for climate emulation, but this
+  is inherently slow for long climate horizons and has yet to demonstrate stable rollouts under nonstationary
+  forcings. Here, we introduce Spatiotemporal Pyramid Flows (SPF), a new class of flow matching approaches
+  that model data hierarchically across spatial and temporal scales. Inspired by cascaded video models,
+  SPF partitions the generative trajectory into a spatiotemporal pyramid, progressively increasing spatial
+  resolution to reduce computation and coupling each stage with an associated timescale to enable direct
+  sampling at any temporal level in the pyramid. This design, together with conditioning each stage on
+  prescribed physical forcings (e.g., greenhouse gases or aerosols), enables efficient, parallel climate
+  emulation at multiple timescales. On ClimateBench, SPF outperforms strong flow matching baselines and
+  pre-trained models at yearly and monthly timescales while offering fast sampling, especially at coarser
+  temporal levels. To scale SPF, we curate ClimateSuite, the largest collection of Earth system simulations
+  to date, comprising over 33,000 simulation-years across ten climate models and the first dataset to
+  include simulations of climate interventions. We find that the scaled SPF model demonstrates good generalization
+  to held-out scenarios across climate models. Together, SPF and ClimateSuite provide a foundation for
+  accurate, efficient, probabilistic climate emulation across temporal scales and realistic future scenarios.
+  Data and code is publicly available at https://github.com/stanfordmlgroup/spf .
+significance: 6
+score: 34
+highlight: false
+added: '2026-10-22'
+source: backfill

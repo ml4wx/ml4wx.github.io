@@ -1,0 +1,50 @@
+id: arxiv-2603.24428
+title: 'Marchuk: Efficient Global Weather Forecasting from Mid-Range to Sub-Seasonal Scales via Flow Matching'
+authors:
+- Arsen Kuzhamuratov
+- Mikhail Zhirnov
+- Andrey Kuznetsov
+- Ivan Oseledets
+- Konstantin Sobolev
+date: '2026-03-25'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2603.24428'
+links:
+  paper: https://arxiv.org/abs/2603.24428
+  pdf: https://arxiv.org/pdf/2603.24428
+topic: probabilistic-ensembles
+topics:
+- global-medium-range
+type: model
+method:
+- diffusion
+- transformer
+timescale:
+- medium
+- s2s
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Latent flow-matching model with 276M parameters matches the 1.6B-parameter LaDCast for global
+  forecasts out to 30 days at faster inference.
+abstract: 'Accurate subseasonal weather forecasting remains a major challenge due to the inherently chaotic
+  nature of the atmosphere, which limits the predictive skill of conventional models beyond the mid-range
+  horizon (approximately 15 days). In this work, we present \textit{Marchuk}, a generative latent flow-matching
+  model for global weather forecasting spanning mid-range to subseasonal timescales, with prediction horizons
+  of up to 30 days. Marchuk conditions on current-day weather maps and autoregressively predicts subsequent
+  days'' weather maps within the learned latent space. We replace rotary positional encodings (RoPE) with
+  trainable positional embeddings and extend the temporal context window, which together enhance the model''s
+  ability to represent and propagate long-range temporal dependencies during latent forecasting. Marchuk
+  offers two key advantages: high computational efficiency and strong predictive performance. Despite
+  its compact architecture of only 276 million parameters, the model achieves performance comparable to
+  LaDCast, a substantially larger model with 1.6 billion parameters, while operating at significantly
+  higher inference speeds. We open-source our inference code and model at: https://v-gen-ai.github.io/Marchuk/'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,51 @@
+id: arxiv-2511.12729
+title: Development of an Uncertainty Workflow to Support Landsat TIRS Split Window-Derived Surface Temperature
+  Products
+authors:
+- Amirhossein Hassanzadeh
+- Robert Mancini
+- Aaron Gerace
+- Rehman Eon
+- Matthew Montanaro
+date: '2025-11-16'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2511.12729'
+links:
+  paper: https://arxiv.org/abs/2511.12729
+  pdf: https://arxiv.org/pdf/2511.12729
+topic: observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+status: pre-operational
+summary: XGBoost maps Landsat TIRS radiances to total precipitable water (R² up to 0.89), driving a TPW-dependent
+  uncertainty workflow for Landsat split-window surface temperature.
+abstract: Current Landsat Level 2 surface temperature products are derived using a single-channel (SC)
+  methodology to estimate per-pixel surface temperature (ST) maps from Level~1 radiance data. A known
+  issue with the Level 2 uncertainty, however, is its susceptibility to overestimation of uncertainty
+  due to its dependence on Landsat's cloud mask, which is prone to false-positives. Beginning with Collection
+  3, the split window (SW) approach will serve as the surface temperature algorithm for the level-2 product,
+  reflecting its adaptability across conditions which necessitates the development of a dedicated uncertainty
+  workflow. We introduce an improved uncertainty workflow, based on a physical parameter called total
+  precipitable water (TPW), that more adequately estimates the uncertainty associated with surface temperature
+  estimates. We leveraged a SW algorithm for estimating surface temperature to drive the uncertainty methodology
+  discussed here. First, considering Landsat is not equipped with the optical channels necessary for deriving
+  TPW, we create an XGBoost-based machine learning pipeline that relates TIRS bands 10 & 11 image radiance
+  to TPW using the MODIS product as reference. The resulting modeling approach achieves a mean absolute
+  error in estimating TPW of 0.54 [cm] and a coefficient of determination (R2) as high as 0.89. Secondly,
+  we propose an improved (SW-based) uncertainty workflow that also uses standard error propagation but
+  incorporates uncertainty as a function of TPW. Our work fills the gap in the operational surface temperature
+  algorithms and their corresponding uncertainty workflow tailored for Landsat 8 and 9, and machine learning
+  based models for predicting atmospheric water vapor using thermal infrared sensor bands on board Landsat
+  8 and 9.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

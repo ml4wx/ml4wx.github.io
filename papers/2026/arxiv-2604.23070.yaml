@@ -1,0 +1,53 @@
+id: arxiv-2604.23070
+title: Learning the Weather-Grid Nexus via Weather-to-Voltage (W2V) Predictive Modeling
+authors:
+- Sol Lim
+- Min-Seung Ko
+- Farnaz Safdarian
+- hao zhu
+date: '2026-04-24'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2604.23070'
+  openalex: W7156786786
+links:
+  paper: https://arxiv.org/abs/2604.23070
+  pdf: https://arxiv.org/pdf/2604.23070
+topic: applications-impacts
+topics:
+- post-processing
+type: model
+method:
+- classical-ml
+- differentiable
+- physics-constrained
+timescale:
+- short
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Proposes a differentiable weather-to-voltage surrogate that maps high-resolution weather to grid
+  bus voltages on a 6717-bus Texas system, and uses it to guide grid-aware weather forecasting.
+abstract: This paper proposes a weather-to-voltage (W2V) predictive modeling framework to learn the underlying
+  weather-grid nexus. Unlike existing approaches on weather-informed grid operations, our proposed W2V
+  model can achieve the joint analysis of weather and grid states, and further leverage this coupling
+  to enhance grid-aware weather forecasting (GAWF) as a key application. To achieve this end-to-end learning,
+  the W2V model acts as a differentiable surrogate for weather-incorporated power flow analysis by mapping
+  weather features at high spatial resolution directly to grid-wide bus voltages. Thanks to a compact
+  neural network design and principal component analysis based initialization, it achieves high voltage
+  prediction accuracy and numerical stability during training. Building on this capability, W2V-based
+  voltage signals are used to guide the development of GAWF that can account for its downstream voltage
+  prediction performance. Using a 6717-bus Texas synthetic test system with meteorological inputs from
+  701 weather locations, our numerical tests have verified the excellent accuracy and generalizability
+  of the proposed W2V model. More importantly, the W2V model has enabled the GAWF to effectively prioritize
+  the weather features and conditions that are most critical to grid operations, such as system-wide quick
+  wind drops preceding ramp-ups.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

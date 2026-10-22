@@ -1,0 +1,60 @@
+id: doi-10.5194-acp-26-1415-2026
+title: Thermodynamics-guided machine learning model for predicting convective boundary layer height and
+  its multi-site applicability
+authors:
+- Yufei Chu
+- Guo Zhen Lin
+- Min Deng
+- Lulin Xue
+- Weiwei Li
+- Hyeyum Hailey Shin
+- J. Zhang
+- Hanqing Guo
+- Zhien Wang
+date: '2026-01-28'
+year: 2026
+venue: Atmospheric chemistry and physics
+venue_type: journal
+ids:
+  doi: 10.5194/acp-26-1415-2026
+  openalex: W7125935922
+links:
+  paper: https://doi.org/10.5194/acp-26-1415-2026
+  pdf: https://acp.copernicus.org/articles/26/1415/2026/acp-26-1415-2026.pdf
+orgs:
+- noaa
+- ncar
+topic: hybrid-parameterization
+topics:
+- observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Thermodynamics-guided ML predicts convective boundary layer height from surface flux data, reaching
+  R² 0.84 on untrained years against Doppler lidar and transferring across sites.
+abstract: 'Abstract. Accurate estimation of convective boundary layer height (CBLH) is vital for weather,
+  climate, and air quality modeling. Machine learning (ML) shows promise in CBLH prediction, but input
+  parameter selection often lacks physical grounding, limiting generalizability. This study introduces
+  a novel ML framework for CBLH inversion, integrating thermodynamic constraints and the diurnal CBLH
+  cycle as an implicit physical guide. Boundary layer growth is modeled as driven by surface heat fluxes
+  and atmospheric heat absorption, using the diurnal cycle as input and output. TPOT and AutoKeras are
+  employed to select optimal models, validated against Doppler lidar-derived CBLH data, achieving an R2
+  of 0.84 across untrained years. Comparisons of eddy covariance (ECOR) and energy balance Bowen ratio
+  (EBBR) flux measurements show consistent predictions (R2 difference ~0.011, MAE ~0.002 km). Models trained
+  on C1 site ECOR data and tested at E37 and E39 yield R2 values of 0.787 and 0.806, respectively, demonstrating
+  adaptability. Training with all sites’ data enhances C1 ECOR and EBBR performance over C1-only training:
+  ECOR (R2: 0.851 vs. 0.845; MAE: 0.198 km vs. 0.207 km), EBBR (R2: 0.837 vs. 0.834; MAE: 0.203 km vs.
+  0.205 km). Transferability across ARM Southern Great Plains sites and seasonal performance during summer
+  confirm the model’s robustness, offering a scalable approach for improving boundary layer parameterization
+  in atmospheric models.'
+significance: 3
+cited_by: 1
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

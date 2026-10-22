@@ -1,0 +1,53 @@
+id: arxiv-2604.12180
+title: 'CycloneMAE: A Scalable Multi-Task Learning Model for Global Tropical Cyclone Probabilistic Forecasting'
+authors:
+- Renlong Hang
+- Zihao Xu
+- Jiuwei Zhao
+- Runling Yu
+- Leye Cheng
+- Qingshan Liu
+date: '2026-04-14'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2604.12180'
+  openalex: W7154470957
+links:
+  paper: https://arxiv.org/abs/2604.12180
+  pdf: https://arxiv.org/pdf/2604.12180
+topic: extremes-hazards
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- transformer
+timescale:
+- short
+- medium
+spatial:
+- global
+data:
+- satellite
+- nwp-analysis
+status: research
+summary: Masked-autoencoder model for global tropical cyclone forecasting gives probabilistic track, pressure
+  and wind forecasts that beat NWP systems to 120 h for intensity and 24 h for track.
+abstract: 'Tropical cyclones (TCs) rank among the most destructive natural hazards, yet their forecasting
+  faces fundamental trade-offs: numerical weather prediction (NWP) models are computationally prohibitive
+  and struggle to leverage historical data, while existing deep learning (DL)-based intelligent models
+  are variable-specific and deterministic, which fail to generalize across different forecasting variables.
+  Here we present CycloneMAE, a scalable multi-task forecasting model that learns transferable TC representations
+  from multi-modal data using a TC structure-aware masked autoencoder. By coupling a discrete probabilistic
+  gridding mechanism with a pre-train/fine-tune paradigm, CycloneMAE simultaneously delivers deterministic
+  forecasts and probability distributions. Evaluated across five global ocean basins, CycloneMAE outperforms
+  leading NWP systems in pressure and wind forecasting up to 120 hours and in track forecasting up to
+  24 hours. Attribution analysis via integrated gradients reveals physically interpretable learning dynamics:
+  short-term forecasts rely predominantly on the internal core convective structure from satellite imagery,
+  whereas longer-term forecasts progressively shift attention to external environmental factors. Our framework
+  establishes a scalable, probabilistic, and interpretable pathway for operational TC forecasting.'
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

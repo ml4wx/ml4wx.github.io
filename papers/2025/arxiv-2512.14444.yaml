@@ -1,0 +1,50 @@
+id: arxiv-2512.14444
+title: 'Bridging Artificial Intelligence and Data Assimilation: The Data-driven Ensemble Forecasting System
+  ClimaX-LETKF'
+authors:
+- Akira Takeshima
+- Kenta Shiraishi
+- Atsushi Okazaki
+- Tadashi Tsuyuki
+- Shunji Kotsuki
+date: '2025-12-16'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2512.14444'
+  openalex: W4417469601
+links:
+  paper: https://arxiv.org/abs/2512.14444
+  pdf: https://arxiv.org/pdf/2512.14444
+topic: data-assimilation
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- stations
+- era5
+status: research
+summary: ClimaX-LETKF is a purely data-driven ML ensemble system that assimilates NCEP observations and
+  runs stably for years; RTPP outperforms RTPS for stability.
+abstract: While machine learning-based weather prediction (MLWP) has achieved significant advancements,
+  research on assimilating real observations or ensemble forecasts within MLWP models remains limited.
+  We introduce ClimaX-LETKF, the first purely data-driven ML-based ensemble weather forecasting system.
+  It operates stably over multiple years, independently of numerical weather prediction (NWP) models,
+  by assimilating the NCEP ADP Global Upper Air and Surface Weather Observations. The system demonstrates
+  greater stability and accuracy with relaxation to prior perturbation (RTPP) than with relaxation to
+  prior spread (RTPS), while NWP models tend to be more stable with RTPS. RTPP replaces an analysis perturbation
+  with a weighted blend of analysis and background perturbations, whereas RTPS simply rescales the analysis
+  perturbation. Our experiments reveal that MLWP models are less capable of restoring the atmospheric
+  field to its attractor than NWP models. This work provides valuable insights for enhancing MLWP ensemble
+  forecasting systems and represents a substantial step toward their practical applications.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

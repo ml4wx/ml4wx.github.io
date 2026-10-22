@@ -1,0 +1,63 @@
+id: doi-10.1029-2025jh001072
+title: 'Intelligent Shanghai Typhoon Model (ISTM): A Diffusion‐Based Downscaling Emulator From AIFS to
+  Kilometer‐Scale Regional Reanalysis for Typhoon Forecasts'
+authors:
+- Zeyi Niu
+- Wei Huang
+- Sirong Huang
+- Bo Qin
+- Mengqi Yang
+- Haofei Sun
+- Zhaoyang Huo
+- Haixia Xiao
+- Kairui Feng
+date: '2026-04-01'
+year: 2026
+venue: Journal of Geophysical Research Machine Learning and Computation
+venue_type: journal
+ids:
+  doi: 10.1029/2025jh001072
+  openalex: W7149291269
+links:
+  paper: https://doi.org/10.1029/2025jh001072
+orgs:
+- fudan-university
+- cma
+topic: downscaling
+topics:
+- extremes-hazards
+type: model
+method:
+- diffusion
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+- nwp-analysis
+- km-scale-sim
+status: research
+summary: Diffusion residual emulator downscales AIFS to 9-km typhoon fields, cutting 72-hour typhoon intensity
+  error by about 39.5% relative to AIFS.
+abstract: Abstract Artificial‐intelligence weather prediction models have recently surpassed numerical
+  models in large‐scale skill, but they still systematically underestimate typhoon intensity due to their
+  reliance on coarse‐resolution training data from ERA5. To overcome this limitation, we constructed a
+  bespoke 9‐km high‐resolution typhoon reanalysis (HiRes) by dynamically downscaling ERA5 with the operational
+  Shanghai Typhoon Model (SHTM). The evaluation shows that HiRes has a clear advantage over ERA5 in aspects
+  such as surface wind and land precipitation. HiRes inherently combines a large‐scale deterministic background
+  with small‐scale residual corrections, motivating a learning framework that mirrors this structure.
+  We therefore introduce the Intelligent Shanghai Typhoon Model (ISTM), a regression‐residual diffusion
+  emulator that first predicts the conditional mean fields and then stochastically reconstructs the residuals
+  with a conditional diffusion model. Trained on HiRes, ISTM substantially improves wind and precipitation
+  intensity and organization compared with ERA5 and deterministic U‐Net baselines. After fine‐tuning,
+  ISTM can downscale AIFS forecast fields to produce SHTM‐consistent, physically coherent fields; while
+  maintaining track errors comparable to AIFS, it reduces the 72‐hr mean typhoon intensity forecast error
+  by about 39.5% relative to AIFS.
+significance: 5
+cited_by: 0
+score: 55
+highlight: false
+added: '2026-10-22'
+source: backfill

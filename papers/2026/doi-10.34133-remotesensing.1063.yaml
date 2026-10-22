@@ -1,0 +1,60 @@
+id: doi-10.34133-remotesensing.1063
+title: Regional Atmospheric Profile Retrieval Driven by Multistation Collaboration based on Geoscience-Informed
+  Deep Learning
+authors:
+- Shuailong Jiang
+- Yingying Ma
+- Chengwei Li
+- Lianfa Lei
+- Boming Liu
+- Shikuan Jin
+- Ruonan Fan
+- Yujie Wang
+- Wei Gong
+date: '2026-01-01'
+year: 2026
+venue: Journal of Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.34133/remotesensing.1063
+  openalex: W7172408647
+links:
+  paper: https://doi.org/10.34133/remotesensing.1063
+topic: observations-remote-sensing
+type: model
+method:
+- transformer
+- cnn
+spatial:
+- regional
+data:
+- stations
+- era5
+status: research
+summary: CTDformer combines CNN and transformer layers with multistation inputs to retrieve temperature
+  and humidity profiles, cutting errors 7.64% and 5.31% versus single-station models.
+abstract: Accurate retrieval of atmospheric temperature and humidity profiles is essential for improving
+  numerical weather prediction and climate simulations. However, the uneven distribution of ground-based
+  radiometer stations creates data gaps, limiting the accuracy and spatial adaptability of existing inversion
+  models. To address this challenge, we propose CTDformer (Convolutional Neural Network [CNN]–Transformer–DualBranchMLP),
+  a multimodel learning framework that combines convolution-based feature extraction, attention-based
+  sequence learning, and a dual-branch multilayer perception to retrieve vertical profiles over the Xi’an
+  region. CTDformer incorporates spatial features such as station encoding, geographic coordinates, and
+  interstation distances to enhance representational capacity and generalization. Experiments at 4 stations
+  demonstrate that CTDformer outperforms individual models, reducing temperature and humidity profile
+  errors by 7.64% and 5.31%, respectively. Incorporating spatial information into networked training further
+  decreases errors by more than 7%. On 2021 May 15, the results indicate that CTDformer is more sensitive
+  in capturing the buildup of convective energy, yielding substantially higher convective available potential
+  energy than both the fifth-generation European Centre for Medium-Range Weather Forecasts atmospheric
+  reanalysis and the single-station scheme prior to precipitation. It better aligns with the observed
+  convective development and highlights its potential for severe convection monitoring and forecasting.
+  This study addresses the challenges of sparse ground-based radiometric observations and limited model
+  spatial generalization. By leveraging multistation collaboration, it achieves high-precision atmospheric
+  profile retrieval of region, thereby enhancing diagnostic and early-warning capabilities for extreme
+  weather, smog, and precipitation events. It can also offer reliable data support for applications in
+  intelligent meteorology, short-term forecasting, and climate monitoring.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

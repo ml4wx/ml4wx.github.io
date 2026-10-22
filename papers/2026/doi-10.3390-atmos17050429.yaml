@@ -1,0 +1,53 @@
+id: doi-10.3390-atmos17050429
+title: Informer-Based Precipitation Forecasting Using Ground Station Data in Guangxi, China
+authors:
+- Ting Zhang
+- Donghong Qin
+- Deyi Wang
+- Soung‐Yue Liew
+- Huasheng Zhao
+date: '2026-04-22'
+year: 2026
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos17050429
+  openalex: W7155165176
+links:
+  paper: https://doi.org/10.3390/atmos17050429
+topic: local-forecasting
+type: evaluation
+method:
+- transformer
+- rnn
+timescale:
+- nowcast
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Informer beats RNN baselines for 1–5 h station precipitation in Guangxi with fewer parameters
+  than a standard Transformer, judged by MAE, RMSE and CSI.
+abstract: Precipitation forecasting is essential for disaster prevention, water resource management, and
+  socio-economic resilience. The field has evolved from numerical weather prediction (NWP) and optical-flow-based
+  methods toward data-driven deep learning approaches that can exploit larger observational datasets and
+  model complex nonlinear relationships. Against this background, this study evaluates multi-station temporal
+  forecasting models within a single-year, station-based proof-of-concept benchmark under unified data
+  conditions. We adapt the Transformer and Informer architectures to this meteorological setting, rigorously
+  preprocess the AWS dataset to avoid data leakage, and select predictive variables using complementary
+  linear and nonlinear relevance criteria. Model performance is assessed using continuous and categorical
+  precipitation metrics, including the Critical Success Index (CSI). The results show that the Informer
+  outperforms the recurrent neural network (RNN) baselines and achieves the lowest mean MAE and RMSE together
+  with the highest mean CSI among the evaluated models while using substantially fewer parameters than
+  the standard Transformer. However, its sample-wise absolute error distribution remains statistically
+  comparable to that of the standard Transformer. Overall, this study establishes a single-year, station-based
+  proof-of-concept benchmark for comparing architectures in very-short-term (1–5 h ahead) precipitation
+  forecasting.
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,48 @@
+id: arxiv-2511.09731
+title: 'FlowCast: Advancing Precipitation Nowcasting with Conditional Flow Matching'
+authors:
+- Bernardo Perrone Ribeiro
+- Jana Faganeli Pucer
+date: '2025-11-12'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2511.09731'
+  openalex: W7105774260
+links:
+  paper: https://arxiv.org/abs/2511.09731
+  pdf: https://arxiv.org/pdf/2511.09731
+topic: nowcasting
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: FlowCast applies conditional flow matching in latent space for radar precipitation nowcasting,
+  setting probabilistic state of the art with far fewer sampling steps than diffusion.
+abstract: 'Radar-based precipitation nowcasting, the task of forecasting short-term precipitation fields
+  from previous radar images, is a critical problem for flood risk management and decision-making. While
+  deep learning has substantially advanced this field, two challenges remain fundamental: the uncertainty
+  of atmospheric dynamics and the efficient modeling of high-dimensional data. Diffusion models have shown
+  strong promise by producing sharp, reliable forecasts, but their iterative sampling process is computationally
+  prohibitive for time-critical applications. We introduce FlowCast, the first end-to-end probabilistic
+  model leveraging Conditional Flow Matching (CFM) as a direct noise-to-data generative framework for
+  precipitation nowcasting. Unlike hybrid approaches, FlowCast learns a direct noise-to-data mapping in
+  a compressed latent space, enabling rapid, high-fidelity sample generation. Our experiments demonstrate
+  that FlowCast establishes a new state-of-the-art in probabilistic performance while also exceeding deterministic
+  baselines in predictive accuracy. A direct comparison further reveals the CFM objective is both more
+  accurate and significantly more efficient than a diffusion objective on the same architecture, maintaining
+  high performance with significantly fewer sampling steps. This work positions CFM as a powerful and
+  practical alternative for high-dimensional spatiotemporal forecasting.'
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

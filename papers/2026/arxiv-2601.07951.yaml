@@ -1,0 +1,53 @@
+id: arxiv-2601.07951
+title: 'Hybrid SARIMA LSTM Model for Local Weather Forecasting: A Residual Learning Approach for Data
+  Driven Meteorological Prediction'
+authors:
+- Shreyas Rajeev
+- Karthik Mudenahalli Ashoka
+- Amit Mallappa Tiparaddi
+date: '2026-01-12'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2601.07951'
+  openalex: W7124147503
+links:
+  paper: https://arxiv.org/abs/2601.07951
+  pdf: https://arxiv.org/pdf/2601.07951
+topic: local-forecasting
+type: model
+method:
+- rnn
+- classical-ml
+timescale:
+- medium
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Hybrid SARIMA-LSTM where LSTM models SARIMA residuals to forecast local temperature, aiming to
+  fix LSTM open-loop drift; gains are modest and single-site.
+abstract: Accurately forecasting long-term atmospheric variables remains a defining challenge in meteorological
+  science due to the chaotic nature of atmospheric systems. Temperature data represents a complex superposition
+  of deterministic cyclical climate forces and stochastic, short-term fluctuations. While planetary mechanics
+  drive predictable seasonal periodicities, rapid meteorological changes such as thermal variations, pressure
+  anomalies, and humidity shifts introduce nonlinear volatilities that defy simple extrapolation. Historically,
+  the Seasonal Autoregressive Integrated Moving Average (SARIMA) model has been the standard for modeling
+  historical weather data, prized for capturing linear seasonal trends. However, SARIMA operates under
+  strict assumptions of stationarity, failing to capture abrupt, nonlinear transitions. This leads to
+  systematic residual errors, manifesting as the under-prediction of sudden spikes or the over-smoothing
+  of declines. Conversely, Deep Learning paradigms, specifically Long Short-Term Memory (LSTM) networks,
+  demonstrate exceptional efficacy in handling intricate time-series data. By utilizing memory gates,
+  LSTMs learn complex nonlinear dependencies. Yet, LSTMs face instability in open-loop forecasting; without
+  ground truth feedback, minor deviations compound recursively, causing divergence. To resolve these limitations,
+  we propose a Hybrid SARIMA-LSTM architecture. This framework employs a residual-learning strategy to
+  decompose temperature into a predictable climate component and a nonlinear weather component. The SARIMA
+  unit models the robust, long-term seasonal trend, while the LSTM is trained exclusively on the residuals
+  the nonlinear errors SARIMA fails to capture. By fusing statistical stability with neural plasticity,
+  this hybrid approach minimizes error propagation and enhances long-horizon accuracy.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

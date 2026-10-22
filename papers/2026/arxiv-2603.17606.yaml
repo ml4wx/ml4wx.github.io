@@ -1,0 +1,53 @@
+id: arxiv-2603.17606
+title: End-to-end data-driven prediction of urban airflow and pollutant dispersion
+authors:
+- Nishant Kumar
+- Franck Kerhervé
+- Lionel Agostini
+- Laurent Cordier
+date: '2026-03-18'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2603.17606'
+links:
+  paper: https://arxiv.org/abs/2603.17606
+  pdf: https://arxiv.org/pdf/2603.17606
+topic: regional-km-scale
+topics:
+- applications-impacts
+type: model
+method:
+- classical-ml
+- cnn
+- rnn
+timescale:
+- short
+spatial:
+- local
+data:
+- km-scale-sim
+status: research
+summary: Autoencoder and LSTM reduced-order model over SPOD modes predicts street-canyon airflow and pollutant
+  dispersion from LES data, including long-horizon statistically stationary fields.
+abstract: Climate change and the rapid growth of urban populations are intensifying environmental stresses
+  within cities, making the behavior of urban atmospheric flows a critical factor in public health, energy
+  use, and overall livability. This study targets to develop fast and accurate models of urban pollutant
+  dispersion to support decision-makers, enabling them to implement mitigation measures in a timely and
+  cost-effective manner. To reach this goal, an end-to-end data-driven approach is proposed to model and
+  predict the airflow and pollutant dispersion in a street canyon in skimming flow regime. A series of
+  time-resolved snapshots obtained from large eddy simulation (LES) serves as the database. The proposed
+  framework is based on four fundamental steps. Firstly, a reduced basis is obtained by spectral proper
+  orthogonal decomposition (SPOD) of the database. The projection of the time series snapshot data onto
+  the SPOD modes (time-domain approach) provides the temporal coefficients of the dynamics. Secondly,
+  a nonlinear compression of the temporal coefficients is performed by autoencoder to reduce further the
+  dimensionality of the problem. Thirdly, a reduced-order model (ROM) is learned in the latent space using
+  Long Short-Term Memory (LSTM) netowrks. Finally, the pollutant dispersion is estimated from the predicted
+  velocity field through convolutional neural network that maps both fields. The results demonstrate the
+  efficacy of the model in predicting the instantaneous as well as statistically stationary fields over
+  long time horizon.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

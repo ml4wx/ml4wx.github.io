@@ -1,0 +1,55 @@
+id: arxiv-2512.05323
+title: Robustness Test for AI Forecasting of Hurricane Florence Using FourCastNetv2 and Random Perturbations
+  of the Initial Condition
+authors:
+- Adam Lizerbram
+- Shane Stevenson
+- Iman Khadir
+- Matthew Tu
+- Samuel S. P. Shen
+date: '2025-12-01'
+year: 2025
+venue: Advances in Data Science and Adaptive Analysis
+venue_type: journal
+ids:
+  arxiv: '2512.05323'
+  doi: 10.1142/s2424922x2650004x
+  openalex: W7131830695
+links:
+  paper: https://arxiv.org/abs/2512.05323
+  pdf: https://arxiv.org/pdf/2512.05323
+topic: xai-uq-physics
+topics:
+- global-medium-range
+type: evaluation
+method:
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Tests FourCastNetv2 robustness on Hurricane Florence by adding noise and random initial states;
+  track holds under moderate noise, but intensity is consistently underestimated.
+abstract: 'Understanding the robustness of a weather forecasting model with respect to input noise or
+  different uncertainties is important in assessing its output reliability, particularly for extreme weather
+  events like hurricanes. In this paper, we test sensitivity and robustness of an artificial intelligence
+  (AI) weather forecasting model: NVIDIAs FourCastNetv2 (FCNv2). We conduct two experiments designed to
+  assess model output under different levels of injected noise in the models initial condition. First,
+  we perturb the initial condition of Hurricane Florence from the European Centre for Medium-Range Weather
+  Forecasts (ECMWF) Reanalysis v5 (ERA5) dataset (September 13-16, 2018) with varying amounts of Gaussian
+  noise and examine the impact on predicted trajectories and forecasted storm intensity. Second, we start
+  FCNv2 with fully random initial conditions and observe how the model responds to nonsensical inputs.
+  Our results indicate that FCNv2 accurately preserves hurricane features under low to moderate noise
+  injection. Even under high levels of noise, the model maintains the general storm trajectory and structure,
+  although positional accuracy begins to degrade. FCNv2 consistently underestimates storm intensity and
+  persistence across all levels of injected noise. With full random initial conditions, the model generates
+  smooth and cohesive forecasts after a few timesteps, implying the models tendency towards stable, smoothed
+  outputs. Our approach is simple and portable to other data-driven AI weather forecasting models.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

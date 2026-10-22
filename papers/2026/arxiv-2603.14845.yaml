@@ -1,0 +1,56 @@
+id: arxiv-2603.14845
+title: Integrating Weather Foundation Model and Satellite to Enable Fine-Grained Solar Irradiance Forecasting
+authors:
+- Ziqing Ma
+- Kai Ying
+- Xinyue Gu
+- Tian Zhou
+- Tianyu Zhu
+- Haifan Zhang
+- Peisong Niu
+- Zheng Wang
+- Cong Bai
+- Liang Sun
+date: '2026-03-16'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2603.14845'
+links:
+  paper: https://arxiv.org/abs/2603.14845
+  pdf: https://arxiv.org/pdf/2603.14845
+  code: https://github.com/DAMO-DI-ML/Baguan-solar.git
+topic: applications-impacts
+topics:
+- observations-remote-sensing
+type: model
+method:
+- transformer
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- satellite
+status: operational
+summary: Baguan-solar fuses a weather foundation model with geostationary satellite imagery for 24-hour
+  km-scale solar irradiance forecasts, cutting RMSE 16.08% and operationally deployed in China since 2025.
+abstract: Accurate day-ahead solar irradiance forecasting is essential for integrating solar energy into
+  the power grid. However, it remains challenging due to the pronounced diurnal cycle and inherently complex
+  cloud dynamics. Current methods either lack fine-scale resolution (e.g., numerical weather prediction,
+  weather foundation models) or degrade at longer lead times (e.g., satellite extrapolation). We propose
+  Baguan-solar, a two-stage multimodal framework that fuses forecasts from Baguan, a global weather foundation
+  model, with high-resolution geostationary satellite imagery to produce 24-hour irradiance forecasts
+  at kilometer scale. Its decoupled two-stage design first forecasts day-night continuous intermediates
+  (e.g., cloud cover) and then infers irradiance, while its modality fusion jointly preserves fine-scale
+  cloud structures from satellite and large-scale constraints from Baguan forecasts. Evaluated over East
+  Asia using CLDAS as ground truth, Baguan-solar outperforms strong baselines (including ECMWF IFS, vanilla
+  Baguan, and SolarSeer), reducing RMSE by 16.08% and better resolving cloud-induced transients. An operational
+  deployment of Baguan-solar has supported solar power forecasting in an eastern province in China, since
+  July 2025. Our code is accessible at https://github.com/DAMO-DI-ML/Baguan-solar.git.
+significance: 4
+score: 36
+highlight: false
+added: '2026-10-22'
+source: backfill

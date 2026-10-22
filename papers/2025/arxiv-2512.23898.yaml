@@ -1,0 +1,47 @@
+id: arxiv-2512.23898
+title: 'Efficient Deep Learning for Short-Term Solar Irradiance Time Series Forecasting: A Benchmark Study
+  in Ho Chi Minh City'
+authors:
+- Tin Hoang
+date: '2025-12-29'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2512.23898'
+links:
+  paper: https://arxiv.org/abs/2512.23898
+  pdf: https://arxiv.org/pdf/2512.23898
+topic: local-forecasting
+topics:
+- applications-impacts
+type: evaluation
+method:
+- transformer
+- rnn
+- other
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- satellite
+status: research
+summary: Benchmarks ten deep learning models for 1-hour solar irradiance forecasting in Ho Chi Minh City;
+  Transformer reaches R² 0.97 on NSRDB satellite data.
+abstract: 'Reliable forecasting of Global Horizontal Irradiance (GHI) is essential for mitigating the
+  variability of solar energy in power grids. This study presents a comprehensive benchmark of ten deep
+  learning architectures for short-term (1-hour ahead) GHI time series forecasting in Ho Chi Minh City,
+  leveraging high-resolution NSRDB satellite data (2011-2020) to compare established baselines (e.g. LSTM,
+  TCN) against emerging state-of-the-art architectures, including Transformer, Informer, iTransformer,
+  TSMixer, and Mamba. Experimental results identify the Transformer as the superior architecture, achieving
+  the highest predictive accuracy with an R^2 of 0.9696. The study further utilizes SHAP analysis to contrast
+  the temporal reasoning of these architectures, revealing that Transformers exhibit a strong "recency
+  bias" focused on immediate atmospheric conditions, whereas Mamba explicitly leverages 24-hour periodic
+  dependencies to inform predictions. Furthermore, we demonstrate that Knowledge Distillation can compress
+  the high-performance Transformer by 23.5% while surprisingly reducing error (MAE: 23.78 W/m^2), offering
+  a proven pathway for deploying sophisticated, low-latency forecasting on resource-constrained edge devices.'
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

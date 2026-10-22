@@ -1,0 +1,57 @@
+id: arxiv-2603.16976
+title: Implementation of tangent linear and adjoint models for neural networks based on a compiler library
+  tool
+authors:
+- Sa Xiao
+- Hao Jing
+- Honglu Sun
+- Haoyu Li
+date: '2026-03-17'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2603.16976'
+  openalex: W7139064571
+links:
+  paper: https://arxiv.org/abs/2603.16976
+  pdf: https://arxiv.org/pdf/2603.16976
+orgs:
+- cma
+topic: infra-software
+topics:
+- data-assimilation
+type: model
+method:
+- differentiable
+- other
+spatial:
+- global
+data:
+- nwp-analysis
+status: research
+summary: TorchNWP couples PyTorch-trained neural parameterizations into Fortran NWP models and provides
+  tangent-linear and adjoint code for 4D-Var in CMA-GFS.
+abstract: This paper presents TorchNWP, a compilation library tool for the efficient coupling of artificial
+  intelligence components and traditional numerical models. It aims to address the issues of poor cross-language
+  compatibility, insufficient coupling flexibility, and low data transfer efficiency between operational
+  numerical models developed in Fortran and Python-based deep learning frameworks. Based on LibTorch,
+  it optimizes and designs a unified application-layer calling interface, converts deep learning models
+  under the PyTorch framework into a static binary format, and provides C/C++ interfaces. Then, using
+  hybrid Fortran/C/C++ programming, it enables the deployment of deep learning models within numerical
+  models. Integrating TorchNWP into a numerical model only requires compiling it into a callable link
+  library and linking it during the compilation and linking phase to generate the executable. On this
+  basis, tangent linear and adjoint model based on neural networks are implemented at the C/C++ level,
+  which can shield the internal structure of neural network models and simplify the construction process
+  of four-dimensional variational data assimilation systems. Meanwhile, it supports deployment on heterogeneous
+  platforms, is compatible with mainstream neural network models, and enables mapping of different parallel
+  granularities and efficient parallel execution. Using this tool requires minimal code modifications
+  to the original numerical model, thus reducing coupling costs. It can be efficiently integrated into
+  numerical weather prediction models such as CMA-GFS and MCV, and has been applied to the coupling of
+  deep learning-based physical parameterization schemes (e.g., radiation, non-orographic gravity wave
+  drag) and the development of their tangent linear and adjoint models, significantly improving the accuracy
+  and efficiency of numerical weather prediction.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

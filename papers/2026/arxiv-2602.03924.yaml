@@ -1,0 +1,55 @@
+id: arxiv-2602.03924
+title: 'WIND: Weather Inverse Diffusion for Zero-Shot Atmospheric Modeling'
+authors:
+- Michael Aich
+- Andreas Fürst
+- Florian Sestak
+- Carlos Ruiz-Gonzalez
+- Niklas Boers
+- Johannes Brandstetter
+date: '2026-02-03'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2602.03924'
+  openalex: W7127911683
+links:
+  paper: https://arxiv.org/abs/2602.03924
+  pdf: https://arxiv.org/pdf/2602.03924
+topic: foundation-models
+topics:
+- probabilistic-ensembles
+- downscaling
+type: model
+method:
+- diffusion
+timescale:
+- medium
+- climate
+spatial:
+- global
+data:
+- era5
+status: research
+summary: WIND pretrains a video diffusion model on atmospheric dynamics and solves forecasting, downscaling,
+  reconstruction and mass conservation zero-shot via posterior sampling, without fine-tuning.
+abstract: 'Deep learning has revolutionized weather forecasting, but many challenges remain, including
+  climate modeling. Moreover, the current landscape remains fragmented: highly specialized models are
+  typically trained individually for distinct tasks. To unify this landscape, we introduce WIND, a single
+  pre-trained foundation model capable of replacing specialized baselines across a vast array of tasks.
+  Crucially, in contrast to previous atmospheric foundation models, we achieve this without any task-specific
+  fine-tuning. To learn a robust, task-agnostic prior of the atmosphere, we pre-train WIND with a self-supervised
+  video reconstruction objective, utilizing an unconditional video diffusion model to iteratively reconstruct
+  atmospheric dynamics from a noisy state. At inference, we frame diverse domain-specific problems strictly
+  as inverse problems and solve them via posterior sampling. This unified approach allows us to tackle
+  highly relevant weather and climate problems, including probabilistic forecasting, spatial and temporal
+  downscaling, reconstruction of spatial fields from sparse observations and enforcing global dry air
+  mass conservation. We further demonstrate how WIND can be applied to explore extreme weather events
+  under prescribed out-of-distribution thermodynamic perturbations. By combining generative video modeling
+  with inverse problem solving, WIND offers a computationally efficient alternative for AI-based atmospheric
+  modeling.'
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

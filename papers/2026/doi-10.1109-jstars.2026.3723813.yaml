@@ -1,0 +1,57 @@
+id: doi-10.1109-jstars.2026.3723813
+title: A Two-Step Machine Learning Framework for High-Resolution Reconstruction of Regional GNSS-Derived
+  PWV Grids Using Meteorological Auxiliary Data
+authors:
+- Huafeng Ma
+- Biyan Chen
+- Feiyang Hu
+- Chaohui Chen
+date: '2026-01-01'
+year: 2026
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2026.3723813
+  openalex: W7203478475
+links:
+  paper: https://doi.org/10.1109/jstars.2026.3723813
+topic: observations-remote-sensing
+topics:
+- downscaling
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- stations
+- nwp-analysis
+status: research
+summary: LightGBM interpolation plus bias correction builds 0.01° GNSS precipitable water vapor grids,
+  cutting RMSE to 0.30 mm versus GNSS observations.
+abstract: High-resolution precipitable water vapor (PWV) gridded products provide essential data for atmospheric
+  state estimation and monitoring of regional heavy precipitation. PWV retrieved from the Global Navigation
+  Satellite System (GNSS) offers high temporal resolution and all-weather observation capability; however,
+  the sparse and uneven distribution of GNSS stations limits its direct application in constructing continuous
+  high-resolution moisture fields. To address this limitation, this study integrates discrete GNSS-PWV
+  observations with high-resolution rapid refresh meteorological information and develops a spatial reconstruction
+  framework to generate PWV grids with a resolution of 0.01 $^{\circ }\times$ 0.01 $^{\circ }$ , enabling
+  high-resolution reconstruction from sparse station observations to a continuous high-resolution water
+  vapor field. First, a light gradient boosting machine (LightGBM)-based PWV spatial interpolation model
+  is developed to generate initial PWV grids. Then, a LightGBM-based bias correction model is constructed
+  using meteorological information to further improve grid accuracy. The results show that PWV spatial
+  interpolation models based on LightGBM, extreme gradient boosting, inverse distance weighting, and ordinary
+  kriging achieve root-mean-square errors (RMSEs) of 0.80, 0.84, 1.19, and 1.26 mm, respectively, with
+  LightGBM showing the best performance. The LightGBM-based bias correction model achieves an RMSE of
+  0.40 mm. For the PWV grids generated during 2022–2024, the RMSEs relative to GNSS-PWV are 0.38, 0.36,
+  and 0.37 mm, respectively. After bias correction, the RMSEs decrease to 0.30, 0.30, and 0.30 mm, corresponding
+  to accuracy improvements of 21.05%, 16.67%, and 18.92%, respectively. In addition, the reconstructed
+  PWV grids exhibit strong spatiotemporal consistency with precipitation processes, effectively capturing
+  water vapor accumulation prior to heavy rainfall events as well as the spatiotemporal evolution of water
+  vapor during precipitation.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,61 @@
+id: arxiv-2512.18224
+title: 'HiRO-ACE: Fast and skillful AI emulation and downscaling trained on a 3 km global storm-resolving
+  model'
+authors:
+- W. Andre Perkins
+- Anna Kwa
+- Jeremy McGibbon
+- Troy Arcomano
+- Spencer K. Clark
+- Oliver Watt-Meyer
+- Christopher S. Bretherton
+- Lucas M. Harris
+date: '2025-12-20'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2512.18224'
+  openalex: W7117151354
+links:
+  paper: https://arxiv.org/abs/2512.18224
+  pdf: https://arxiv.org/pdf/2512.18224
+topic: downscaling
+topics:
+- climate-emulation
+type: model
+method:
+- diffusion
+- neural-operator
+timescale:
+- climate
+spatial:
+- global
+- regional
+data:
+- km-scale-sim
+status: research
+summary: Chains a stochastic ACE2 emulator with diffusion downscaling to produce 3 km precipitation from
+  100 km inputs, matching 99.99th-percentile extremes trained on X-SHiELD.
+abstract: Kilometer-scale simulations of the atmosphere are an important tool for assessing local weather
+  extremes and climate impacts, but computational expense limits their use to small regions, short periods,
+  and limited ensembles. Machine learning offers a pathway to efficiently emulate these high-resolution
+  simulations. Here we introduce HiRO-ACE, a two-stage AI modeling framework combining a stochastic version
+  of the Ai2 Climate Emulator (ACE2S) with diffusion-based downscaling (HiRO) to generate 3 km precipitation
+  fields over arbitrary regions of the globe. Both components are trained on data derived from a decade
+  of atmospheric simulation by X-SHiELD, a 3 km global storm-resolving model. HiRO performs a 32x downscaling--generating
+  3 km 6-hourly precipitation from coarse 100 km inputs by training on paired high-resolution and coarsened
+  X-SHiELD outputs. ACE2S is a $1^\circ \times 1^\circ$ ($\sim$100 km) stochastic autoregressive global
+  atmosphere emulator that maintains grid-scale precipitation variability consistent with coarsened X-SHiELD,
+  enabling its outputs to be ingested by HiRO without additional tuning. HiRO-ACE reproduces the distribution
+  of extreme precipitation rates through the 99.99th percentile, with time-mean precipitation biases below
+  10% almost everywhere. The framework generates plausible tropical cyclones, fronts, and convective events
+  from poorly resolved coarse inputs. Its computational efficiency allows generation of 6-hourly high-resolution
+  regional precipitation for decades of simulated climate within a single day using one H100 GPU, while
+  the probabilistic design enables ensemble generation for quantifying uncertainty. This establishes an
+  AI-enabled pathway for affordably leveraging the realism of expensive km-scale simulations to support
+  local climate adaptation planning and extreme event risk assessment.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

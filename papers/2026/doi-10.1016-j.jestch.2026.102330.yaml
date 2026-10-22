@@ -1,0 +1,62 @@
+id: doi-10.1016-j.jestch.2026.102330
+title: 'Point-wise vs. cumulative solar forecasting: From daily operations to long-term planning'
+authors:
+- Maira Aracne
+- Camilla Lops
+- Luciano Caroprese
+- Tommaso Ruga
+- Ester Zumpano
+- Sergio Montelpare
+date: '2026-03-21'
+year: 2026
+venue: Engineering Science and Technology an International Journal
+venue_type: journal
+ids:
+  doi: 10.1016/j.jestch.2026.102330
+  openalex: W7139954857
+links:
+  paper: https://doi.org/10.1016/j.jestch.2026.102330
+topic: applications-impacts
+topics:
+- post-processing
+type: model
+method:
+- rnn
+timescale:
+- short
+- medium
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: research
+summary: A composite loss for cumulative PV yield, with GRU refinement of mesoscale NWP, cuts cumulative
+  3-day forecast error by 73.2% versus the physical baseline.
+abstract: This paper presents a comparative analysis of point-wise and cumulative forecasting strategies
+  for photovoltaic energy production over a 3-day prediction horizon. The study examines whether models
+  that achieve high predictive accuracy at individual time steps also preserve comparable performance
+  when forecasts are temporally aggregated. This distinction is particularly relevant for operational
+  energy planning and decision-making processes. The results indicate that models exhibiting strong performance
+  in short-term, point-wise prediction tasks, can nonetheless yield substantial errors in cumulative energy
+  estimates. This discrepancy exposes an important limitation of current forecasting methodologies and
+  raises concerns regarding their suitability for medium- to long-term energy assessment. To mitigate
+  this divergence, the paper introduces a composite loss function specifically designed to improve forecasting
+  performance for planning-oriented applications. The analysis encompasses the full forecasting chain,
+  from meteorological variable prediction to photovoltaic energy yield estimation. To the best of the
+  authors’ knowledge, this is the first work to rigorously demonstrate the systematic divergence between
+  point-wise and cumulative forecasting accuracy in photovoltaic systems and to propose a loss function
+  explicitly constructed to jointly optimize these two objectives. The proposed framework integrates a
+  physics-based mesoscale numerical weather prediction model with a data-driven refinement module based
+  on Gated Recurrent Units, thereby enhancing forecast accuracy while retaining model transparency and
+  improving explainability. Experimental results show a 73.2% reduction in cumulative forecast error relative
+  to the baseline physical model, as well as a 4.7% increase in the Coefficient of Determination for solar
+  irradiance predictions. These improvements enable robust and reliable forecasting across multiple temporal
+  scales, supporting safer grid integration, more effective storage operation and evidence-based sustainable
+  energy planning.
+significance: 2
+cited_by: 1
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

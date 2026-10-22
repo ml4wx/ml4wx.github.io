@@ -1,0 +1,60 @@
+id: doi-10.1109-jstars.2025.3650686
+title: A Deep Learning-Based Model for Nowcasting of Convective Initiation Using Infrared Observations
+authors:
+- Huijie Zhao
+- Xiaohang Ma
+- Guorui Jia
+- Jialu Xu
+- Yihan Xie
+- Yujun Zhao
+date: '2026-01-01'
+year: 2026
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2025.3650686
+  openalex: W7118204975
+links:
+  paper: https://doi.org/10.1109/jstars.2025.3650686
+topic: nowcasting
+topics:
+- observations-remote-sensing
+type: model
+method:
+- cnn
+- physics-constrained
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- satellite
+- stations
+- nwp-analysis
+status: research
+summary: A CAPE-embedded neural network using infrared satellite and retrieved profiles raises 6-h convective
+  initiation CSI from 0.44 to 0.62.
+abstract: As severe convective weather exerts growing influence on public safety, enhancing forecast accuracy
+  has become critically important. However, the predictive capability remains limited due to insufficient
+  observational coverage in certain regions or variables, as well as the inadequate representation of
+  the fine-scale physical processes responsible for local convective development. In response to these
+  challenges, this study proposes a physically embedded neural network based on heterogeneous meteorological
+  data, which utilizes satellite multispectral images and atmospheric temperature and humidity profile
+  synergistically retrieved from space-based and ground-based infrared spectral observations, to forecast
+  local Convective Initiation (CI) within a 6-hour lead time. The core innovation of this study lies in
+  the development of a physically consistent model that explicitly embeds the Convective Available Potential
+  Energy (CAPE) equation into the network architecture. By embedding physical information, the model enables
+  the atmospheric thermodynamic feature extraction module to generate physically consistent feature tensors,
+  thereby enhancing the representation of key convective processes. We trained the network using the pre-training
+  and fine-tuning approach, then validated its effectiveness with reanalysis and actual observational
+  data. The results demonstrate that incorporating the retrieved atmospheric profile data leads to a 40%
+  improvement in the 6-hour average Critical Success Index (CSI), increasing from 0.44 to 0.62 relative
+  to forecasts without atmospheric profile input. Furthermore, in validation experiments using reanalysis
+  data and radar observations, the proposed atmospheric profile feature extraction module consistently
+  improves the model's average forecast CSI by more than 29% compared to models utilizing purely data-driven
+  profile extraction modules.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,52 @@
+id: arxiv-2603.19488
+title: Machine Learning-Based Prediction of Heat Index in Selected U.S. Cities
+authors:
+- Yushan Han
+- Calen Randall
+date: '2026-03-19'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2603.19488'
+  openalex: W7140116783
+links:
+  paper: https://arxiv.org/abs/2603.19488
+  pdf: https://arxiv.org/pdf/2603.19488
+topic: local-forecasting
+topics:
+- extremes-hazards
+type: model
+method:
+- classical-ml
+- rnn
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Random Forest and GRU models forecast next-day heat index at four US cities with 4.5–6.6 °F mean
+  error and over 80% extreme-heat accuracy in three locations.
+abstract: Heat stress has harmful effects that impact communities across the Unitedt States, particularly
+  when high temperatures are accompanied by high humidity. The combined impact of temperature and humidity
+  can be summarized by the heat index (HI). Current state-of-the-art numerical weather prediction models
+  are often biased when forecasting temperature and humidity even within a 24-hour forecast lead time.
+  This study explores the ability of machine learning (ML) models to accurately predict the next-day heat
+  index using Random Forest and single-layer Gated Recurrent Unit (GRU) models in four locations across
+  the United States. We find that Random Forest and GRU models perform reasonably well at all four selected
+  locations. Mean absolute HI error ranges from 4.5 to 6.6 °F. All model versions have an accuracy rate
+  exceeding 80% in three of the four locations in terms of successfully forecasting an extreme heat day,
+  as indicated by a high afternoon HI. The GRU model achieves over 95% accuracy in these three locations.
+  Model performance details vary by location. In Minneapolis and Portland, which have relatively few days
+  with high HI values, models' accuracy is high, but the recall and precision are generally very low.
+  In contrast, Dallas, a location with many high HI days, shows moderately high accuracy, as well as extremely
+  high recall and precision. These differences are likely due to distinct causes of heatwaves in different
+  climatological regions of the United States, as reflected in the feature importance scores output by
+  Random Forest models. The ML models designed in this study can be used to assist with local heat index
+  forecasting and extreme heat warning issuance at minimal computational cost.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

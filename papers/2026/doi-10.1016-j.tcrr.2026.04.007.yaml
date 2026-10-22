@@ -1,0 +1,57 @@
+id: doi-10.1016-j.tcrr.2026.04.007
+title: AI-Enhanced Detection and Comparative Analysis of Tropical Cyclones Across Global Ocean Basins
+authors:
+- G. M. W. L. Gunawardena
+- Hironori Fudeyasu
+- Daisuke Matsuoka
+- Ryuji Yoshida
+- Nobuhiro Yugami
+- Yuiko Ohta
+- Toshiko Yanase
+date: '2026-04-15'
+year: 2026
+venue: Tropical Cyclone Research and Review
+venue_type: journal
+ids:
+  doi: 10.1016/j.tcrr.2026.04.007
+  openalex: W7154456192
+links:
+  paper: https://doi.org/10.1016/j.tcrr.2026.04.007
+topic: observations-remote-sensing
+topics:
+- extremes-hazards
+type: evaluation
+method:
+- cnn
+spatial:
+- global
+data:
+- satellite
+status: research
+summary: YOLOv8 detects tropical cyclone life-cycle stages in infrared imagery across six basins, with
+  F1 above 0.80 for intensification but weak cross-hemisphere transfer.
+abstract: This study develops a deep-learning framework for detecting tropical cyclone (TC) life-cycle
+  stages from infrared satellite imagery across six global ocean basins. You Only Look Once (YOLO) v8
+  models were trained separately to detect genesis, intensification, and decay stages within individual
+  basins as well as in generalized settings. Detection accuracy was consistently highest during intensification,
+  with F1 scores exceeding 0.80 in several basins, while genesis and decay remained more challenging due
+  to weaker or more disorganized storm structures. Cross-basin experiments revealed substantial performance
+  degradation when Northern Hemisphere models were applied to Southern Hemisphere storms, highlighting
+  the influence of hemispheric rotation and storm asymmetry. Rotation-based augmentation (180° rotation
+  via image flipping) improved detection in the South Pacific and South Indian basins, particularly for
+  genesis and intensification. Nonetheless, cross-basin transferability was constrained even within the
+  same hemisphere, with notable weaknesses in the North Atlantic and variability across other basins.
+  To interpret these disparities, three structural indices were evaluated; symmetry, texture, and shape
+  complexity and Detected versus Non-detected distributions were statistically tested. Detected cases
+  were generally associated with stronger texture and more symmetric structure, whereas shape-complexity
+  contrasts were more basin- and stage-dependent. Spatial localization was evaluated using a YOLO box-midpoint
+  center proxy, which can be biased for asymmetric systems. Overall, the results indicate that detection
+  performance depends on life cycle stage, hemispheric orientation, and storm structural organization,
+  underscoring the need for regionally adapted, structure-aware-specific generalization strategies for
+  robust global TC detection.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

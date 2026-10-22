@@ -1,0 +1,58 @@
+id: arxiv-2512.18815
+title: Controllable Probabilistic Forecasting with Stochastic Decomposition Layers
+authors:
+- John S. Schreck
+- William E. Chapman
+- Charlie Becker
+- David John Gagne
+- Dhamma Kimpara
+- Nihanth Cherukuru
+- Judith Berner
+- Kirsten J. Mayer
+- Negin Sobhani
+date: '2025-12-21'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2512.18815'
+  openalex: W7117102932
+links:
+  paper: https://arxiv.org/abs/2512.18815
+  pdf: https://arxiv.org/pdf/2512.18815
+topic: probabilistic-ensembles
+topics:
+- global-medium-range
+type: model
+method:
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Stochastic Decomposition Layers add StyleGAN-style hierarchical noise to WXFormer, reaching IFS-ENS-competitive
+  calibration at under 2% of baseline training cost.
+abstract: 'AI weather prediction ensembles with latent noise injection and optimized with the continuous
+  ranked probability score (CRPS) have produced both accurate and well-calibrated predictions with far
+  less computational cost compared with diffusion-based methods. However, current CRPS ensemble approaches
+  vary in their training strategies and noise injection mechanisms, with most injecting noise globally
+  throughout the network via conditional normalization. This structure increases training expense and
+  limits the physical interpretability of the stochastic perturbations. We introduce Stochastic Decomposition
+  Layers (SDL) for converting deterministic machine learning weather models into probabilistic ensemble
+  systems. Adapted from StyleGAN''s hierarchical noise injection, SDL applies learned perturbations at
+  three decoder scales through latent-driven modulation, per-pixel noise, and channel scaling. When applied
+  to WXFormer via transfer learning, SDL requires less than 2\% of the computational cost needed to train
+  the baseline model. Each ensemble member is generated from a compact latent tensor (5 MB), enabling
+  perfect reproducibility and post-inference spread adjustment through latent rescaling. Evaluation on
+  2022 ERA5 reanalysis shows ensembles with spread-skill ratios approaching unity and rank histograms
+  that progressively flatten toward uniformity through medium-range forecasts, achieving calibration competitive
+  with operational IFS-ENS. Multi-scale experiments reveal hierarchical uncertainty: coarse layers modulate
+  synoptic patterns while fine layers control mesoscale variability. The explicit latent parameterization
+  provides interpretable uncertainty quantification for operational forecasting and climate applications.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

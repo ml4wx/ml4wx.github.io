@@ -1,0 +1,49 @@
+id: arxiv-2603.13589
+title: Assessing the Utility of Volumetric Motion Fields for Radar-based Precipitation Nowcasting with
+  Physics-informed Deep Learning
+authors:
+- Peter Pavlík
+- Anna Bou Ezzeddine
+- Viera Rozinajová
+date: '2026-03-13'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2603.13589'
+  openalex: W7137981727
+links:
+  paper: https://arxiv.org/abs/2603.13589
+  pdf: https://arxiv.org/pdf/2603.13589
+topic: nowcasting
+type: model
+method:
+- physics-constrained
+- differentiable
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Differentiable semi-Lagrangian framework estimates altitude-wise radar motion fields; strong
+  vertical coherence limits gains over 2D motion for precipitation nowcasting.
+abstract: Estimating motion from spatiotemporal geoscientific data is a fundamental component of many
+  environmental modeling and forecasting tasks. In this work, we propose a physics-informed deep learning
+  framework for estimating altitude-wise motion fields directly from volumetric radar reflectivity data.
+  The model utilizes a fully differentiable semi-Lagrangian extrapolation operator to process three-dimensional
+  inputs as independent horizontal slice sequences, enabling efficient inference of horizontal motion
+  across multiple altitude levels. Using a multi-year radar dataset from Central Europe, we evaluate the
+  impact of altitude-wise motion estimation on extrapolation-based precipitation forecasting and conduct
+  a systematic dataset-scale analysis of inter-altitude motion consistency. The results show that the
+  estimated motion fields exhibit strong vertical coherence, with high correlation across altitude levels,
+  which results in limited improvement over traditional two-dimensional approach in this setting. The
+  proposed framework provides a general tool for efficiently analyzing motion structure in volumetric
+  geospatial data. The findings indicate that, in regions dominated by vertically coherent precipitation
+  systems, the added complexity of volumetric motion modeling may offer limited benefit, warranting careful
+  consideration in the design of efficient spatiotemporal advection models.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

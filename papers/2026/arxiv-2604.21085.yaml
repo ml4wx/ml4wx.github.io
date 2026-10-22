@@ -1,0 +1,52 @@
+id: arxiv-2604.21085
+title: 'climt-paraformer: Stable Emulation of Convective Parameterization using a Temporal Memory-aware
+  Transformer'
+authors:
+- Shuochen Wang
+- Nishant Yadav
+- Joy Merwin Monteiro
+- Auroop R. Ganguly
+date: '2026-04-22'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2604.21085'
+  openalex: W7155563825
+links:
+  paper: https://arxiv.org/abs/2604.21085
+  pdf: https://arxiv.org/pdf/2604.21085
+topic: hybrid-parameterization
+type: model
+method:
+- transformer
+- rnn
+timescale:
+- climate
+spatial:
+- local
+data:
+- other
+status: research
+summary: Memory-aware Transformer emulator of the Emanuel convective scheme outperforms MLP and LSTM offline
+  and stays stable over 10-year coupled single-column simulations.
+abstract: Accurate representation of moist convective sub-grid-scale processes remains a major challenge
+  in global climate models, as traditional parameterization schemes are both computationally expensive
+  and difficult to scale. Neural network (NN) emulators offer a promising alternative by learning efficient
+  mappings between atmospheric states and convective tendencies while retaining fidelity to the underlying
+  physics. However, most existing NN-based parameterizations are memory-less and rely only on instantaneous
+  inputs, even though convection evolves over time and depends on prior atmospheric states. Recent studies
+  have begun to incorporate convective memory, but they often treat past states as independent features
+  rather than modeling temporal dependencies explicitly. In this work, we develop a temporal memory-aware
+  Transformer emulator for the Emanuel convective parameterization and evaluate it in a single-column
+  climate model (SCM) under both offline and online configurations. The Transformer captures temporal
+  correlations and nonlinear interactions across consecutive atmospheric states. Compared with baseline
+  emulators, including a memory-less multilayer perceptron and a recurrent long short-term memory model,
+  the Transformer achieves lower offline errors. Sensitivity analysis indicates that a memory length of
+  approximately 100 minutes yields the best performance, whereas longer memory degrades performance. We
+  further test the emulator in long-term coupled simulations and show that it remains stable over 10 years.
+  Overall, this study demonstrates the importance of explicit temporal modeling for NN-based parameterizations.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

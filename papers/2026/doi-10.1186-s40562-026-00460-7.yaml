@@ -1,0 +1,60 @@
+id: doi-10.1186-s40562-026-00460-7
+title: 'A variable-resolution unstructured spatio-temporal graph neural network: an application to very
+  short-range weather forecasting in Guangdong, China'
+authors:
+- Delin Li
+- Zhiqiang Chen
+- Gang Huang
+- Jiayi Xu
+- Yu Zhang
+date: '2026-02-09'
+year: 2026
+venue: Geoscience Letters
+venue_type: journal
+ids:
+  doi: 10.1186/s40562-026-00460-7
+  openalex: W7128444663
+links:
+  paper: https://doi.org/10.1186/s40562-026-00460-7
+  pdf: https://link.springer.com/content/pdf/10.1186/s40562-026-00460-7.pdf
+orgs:
+- iap-cas
+- cma
+topic: regional-km-scale
+topics:
+- nowcasting
+type: model
+method:
+- gnn
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: A variable-resolution spatio-temporal graph network forecasts six hours of near-surface variables
+  over Guangdong, with good skill for 2 m temperature and sea-level pressure.
+abstract: Abstract The increase in extreme weather events has raised the demand for very short-range forecasts
+  in Guangdong, the most populous province in China. Although global AI-based weather forecasting models
+  provide strong medium-range guidance, they remain suboptimal for regional very short-range predictions.
+  To address this, we developed a spatio-temporal graph neural network (STGNN) for Guangdong, featuring
+  an unstructured, variable-resolution graph refined over the Pearl River Delta. The core of the network
+  is 1-D dilated causal temporal convolutions and spatial convolutions on combined static and dynamic
+  graphs. A spatial mean constraint and Laplacian-residual regularization were incorporated into the loss
+  function to enhance physical consistency. Trained on historical reanalysis dataset, the model generates
+  hourly forecasts for multiple near-surface atmospheric variables for the next six hours. Verification
+  against an independent test-set and observations, using multiple metrics, demonstrates high predictive
+  skill and strong spatio-temporal coherence for 2 m temperature and sea-level pressure. For 10 m winds
+  and 2 m humidity, model errors grow larger with lead time. Case studies of an extreme heatwave event
+  in Guangzhou and the post-landfall evolution of Super Typhoon Saola effectively capture the evolution
+  characteristics and spatial patterns, while underestimates the peak temperatures, maximum winds and
+  minimum sea-level pressures. These results support the use of variable-resolution STGNN as a practical
+  approach for very short-range regional forecasting in Guangdong, China.
+significance: 4
+cited_by: 2
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

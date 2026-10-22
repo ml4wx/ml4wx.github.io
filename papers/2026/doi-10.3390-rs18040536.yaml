@@ -1,0 +1,53 @@
+id: doi-10.3390-rs18040536
+title: A Machine Learning Model for FY-4A Cloud Detection Based on Physical Feature Fusion
+authors:
+- Yanning Liang
+- Li Zhao
+- Yuan Sun
+- Zhihao Feng
+- Xiaogang Huang
+- Wei Zhong
+date: '2026-02-07'
+year: 2026
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs18040536
+  openalex: W7128188215
+links:
+  paper: https://doi.org/10.3390/rs18040536
+topic: observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- era5
+status: research
+summary: An MLP-based TSAR model fuses FY-4A brightness temperatures with ERA5 variables for cloud detection,
+  reaching 92.8% accuracy versus 83.1% for the operational product.
+abstract: Clouds critically influence Earth’s radiation balance and climate, making accurate cloud detection
+  essential for improving climate models. This study develops the TSAR model to improve the cloud detection
+  accuracy of the FY-4A CLM product by incorporating physical features. The input features include FY-4A
+  brightness temperature (BT) data from channels 8–14, geometric parameters (satellite zenith angle (SAZ),
+  satellite azimuth angle (SAA), solar zenith angle (SOZ), solar azimuth angle (SOA), and latitude), and
+  four ERA5 meteorological factors (2 m air temperature (T2m), skin temperature (SKT), air temperature
+  profiles (ATP), and relative humidity profiles (RH)). Using the CALIPSO cloud detection product as labels,
+  the model outputs cloud/clear-sky classification results. Additionally, four machine learning (ML) algorithms—RF,
+  LightGBM, XGBoost, and MLP—achieved overall accuracies of 91.5%, 92.2%, 92.5%, and 92.8%, respectively,
+  considerably outperforming the FY-4A L2 CLM product (83.1%). The results demonstrate that incorporating
+  physical factors significantly improves cloud detection performance regardless of the algorithm employed.
+  Incorporating meteorological factors notably improved nighttime and water–cloud detection, narrowing
+  day–night accuracy gaps. Shapley additive explanation (SHAP) analysis indicated feature contributions
+  of 15.8%, 50.8%, and 33.3% from geometric, BT, and meteorological variables, respectively, with stronger
+  meteorological effects at mid- to high-latitudes. These findings demonstrate that integrating meteorological
+  factors significantly improves FY-4A cloud detection accuracy and consistency, highlighting the MLP-TSAR
+  model’s effectiveness for reliable all-day operational applications.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

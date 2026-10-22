@@ -1,0 +1,46 @@
+id: arxiv-2603.20162
+title: Evaluating Evidence Grounding Under User Pressure in Instruction-Tuned Language Models
+authors:
+- Sai Koneru
+- Elphin Joe
+- Christine Kirchhoff
+- Jian Wu
+- Sarah Rajtmajer
+date: '2026-03-20'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2603.20162'
+links:
+  paper: https://arxiv.org/abs/2603.20162
+  pdf: https://arxiv.org/pdf/2603.20162
+topic: llms-agents
+type: evaluation
+method:
+- llm
+data:
+- other
+status: research
+summary: Evaluates 19 instruction-tuned LLMs on climate-assessment evidence under user pressure, finding
+  sycophancy and non-monotonic robustness across scales.
+abstract: 'In contested domains, instruction-tuned language models must balance user-alignment pressures
+  against faithfulness to the in-context evidence. To evaluate this tension, we introduce a controlled
+  epistemic-conflict framework grounded in the U.S. National Climate Assessment. We conduct fine-grained
+  ablations over evidence composition and uncertainty cues across 19 instruction-tuned models spanning
+  0.27B to 32B parameters. Across neutral prompts, richer evidence generally improves evidence-consistent
+  accuracy and ordinal scoring performance. Under user pressure, however, evidence does not reliably prevent
+  user-aligned reversals in this controlled fixed-evidence setting. We report three primary failure modes.
+  First, we identify a negative partial-evidence interaction, where adding epistemic nuance, specifically
+  research gaps, is associated with increased susceptibility to sycophancy in families like Llama-3 and
+  Gemma-3. Second, robustness scales non-monotonically: within some families, certain low-to-mid scale
+  models are especially sensitive to adversarial user pressure. Third, models differ in distributional
+  concentration under conflict: some instruction-tuned models maintain sharply peaked ordinal distributions
+  under pressure, while others are substantially more dispersed; in scale-matched Qwen comparisons, reasoning-distilled
+  variants (DeepSeek-R1-Qwen) exhibit consistently higher dispersion than their instruction-tuned counterparts.
+  These findings suggest that, in a controlled fixed-evidence setting, providing richer in-context evidence
+  alone offers no guarantee against user pressure without explicit training for epistemic integrity.'
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

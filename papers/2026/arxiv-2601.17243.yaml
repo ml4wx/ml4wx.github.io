@@ -1,0 +1,49 @@
+id: arxiv-2601.17243
+title: Estimation of temperature and precipitation uncertainties using quantile neural networks
+authors:
+- Andrew Brettin
+- Laure Zanna
+date: '2026-01-24'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2601.17243'
+links:
+  paper: https://arxiv.org/abs/2601.17243
+  pdf: https://arxiv.org/pdf/2601.17243
+topic: post-processing
+topics:
+- extremes-hazards
+type: model
+method:
+- other
+spatial:
+- local
+data:
+- stations
+- satellite
+status: research
+summary: RBLQNN, a quantile neural network with a modified loss, gives better conditional distributions
+  than linear quantile regression for station temperature maxima and TRMM precipitation.
+abstract: 'Extreme events pose significant risks and are challenging to predict. Assessing climate hazards
+  requires placing quantitative constraints on geophysical fields under observable but fluctuating conditions.
+  We propose a framework for estimating uncertainties -- a ReLU-bias loss quantile neural network (RBLQNN)
+  -- with two novel modifications to the loss function to enforce uniform quantile accuracy and reduce
+  degenerate predicted probability distributions. We evaluate the RBLQNN against other probabilistic baselines
+  on a suite of datasets: synthetic datasets, observed daily temperature maxima from 1,501 NOAA Global
+  Surface Summary of the Day (GSOD) weather stations, and altimetry-observed precipitation from the Tropical
+  Rainfall Measuring Mission (TRMM). On synthetic datasets, the RBLQNN accurately predicts conditional
+  distributions where more restrictive methods like linear quantile regression (LQR) or mean-variance
+  estimation (MVE) neural networks fail, mitigates shortcomings of some other quantile neural networks,
+  and converges stably under a range of hyperparameters. When applied to daily temperature maxima, the
+  RBLQNN reveals that temperature distributions are relatively well described by Gaussian statistics,
+  though nonlinear dependencies on local sea level pressure and geopotential heights appear important.
+  For precipitation statistics, the RBLQNN strongly outperforms both LQR and MVE baselines, demonstrating
+  its capacity to capture highly nonlinear and non-Gaussian conditional distributions. The RBLQNN''s performance
+  across varied datasets demonstrates it is a flexible and general approach for constraining uncertainties
+  in geophysical quantities with nonlinear or non-Gaussian conditional dependencies.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

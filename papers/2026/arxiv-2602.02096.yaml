@@ -1,0 +1,55 @@
+id: arxiv-2602.02096
+title: 'WADEPre: A Wavelet-based Decomposition Model for Extreme Precipitation Nowcasting with Multi-Scale
+  Learning'
+authors:
+- Baitian Liu
+- Haiping Zhang
+- Huiling Yuan
+- Dongjing Wang
+- Ying Li
+- Feng Chen
+- Hao Wu
+date: '2026-02-02'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2602.02096'
+links:
+  paper: https://arxiv.org/abs/2602.02096
+  pdf: https://arxiv.org/pdf/2602.02096
+  code: https://github.com/sonderlau/WADEPre
+topic: nowcasting
+topics:
+- extremes-hazards
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: WADEPre splits radar precipitation nowcasting into wavelet approximation and detail branches
+  with curriculum learning, improving extreme-precipitation skill on SEVIR and Shanghai radar.
+abstract: 'The heavy-tailed nature of precipitation intensity impedes precise precipitation nowcasting.
+  Standard models that optimize pixel-wise losses are prone to regression-to-the-mean bias, which blurs
+  extreme values. Existing Fourier-based methods also lack the spatial localization needed to resolve
+  transient convective cells. To overcome these intrinsic limitations, we propose WADEPre, a wavelet-based
+  decomposition model for extreme precipitation that transitions the modeling into the wavelet domain.
+  By leveraging the Discrete Wavelet Transform for explicit decomposition, WADEPre employs a dual-branch
+  architecture: an Approximation Network to model stable, low-frequency advection, isolating deterministic
+  trends from statistical bias, and a spatially localized Detail Network to capture high-frequency stochastic
+  convection, resolving transient singularities and preserving sharp boundaries. A subsequent Refiner
+  module then dynamically reconstructs these decoupled multi-scale components into the final high-fidelity
+  forecast. To address optimization instability, we introduce a multi-scale curriculum learning strategy
+  that progressively shifts supervision from coarse scales to fine-grained details. Extensive experiments
+  on the SEVIR and Shanghai Radar datasets demonstrate that WADEPre achieves state-of-the-art performance,
+  yielding significant improvements in capturing extreme thresholds and maintaining structural fidelity.
+  Our code is available at https://github.com/sonderlau/WADEPre.'
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

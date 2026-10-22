@@ -1,0 +1,66 @@
+id: doi-10.1109-tgrs.2026.3702779
+title: 'Enhancing Spaceborne Precipitation Radar Detail: Diffusion-Based Super-Resolution With Weak-Echo
+  Recovery'
+authors:
+- Haotian Tan
+- Xiang Pan
+- Hao Huang
+- Kun Zhao
+- L Chen
+- Kai Li
+- Yuanyuan Xu
+- Yinghui Lu
+- Haiqin Chen
+- Haonan Chen
+date: '2026-01-01'
+year: 2026
+venue: IEEE Transactions on Geoscience and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/tgrs.2026.3702779
+  openalex: W7164333098
+links:
+  paper: https://doi.org/10.1109/tgrs.2026.3702779
+orgs:
+- colorado-state-university
+topic: observations-remote-sensing
+topics:
+- downscaling
+type: model
+method:
+- diffusion
+- gan-vae
+spatial:
+- global
+data:
+- satellite
+- radar
+- km-scale-sim
+status: research
+summary: Latent diffusion model super-resolves GPM spaceborne precipitation radar to 1-km scale, recovering
+  weak echoes below sensitivity and sharpening convective structures in real cases.
+abstract: Spaceborne precipitation radars provide vertically resolved observations of precipitating systems
+  with near-global coverage, but their coarse horizontal footprint limits the depiction of finescale convective
+  structures and weak echoes. This study develops a deep-learning super-resolution framework for the GPM
+  Dual-frequency Precipitation Radar (DPR) based on a latent diffusion model (LDM). A physically consistent
+  training dataset is constructed by coupling convection-permitting WRF simulations with multi-frequency
+  radar forward modeling, where 1-km S-band reflectivity is used as the high-resolution target, and Ku/Ka
+  reflectivity aggregated to a DPR-like ~5-km footprint at multiple heights is used as the conditional
+  input. The proposed LDM performs conditional diffusion in a compact latent space learned by a VQ-VAE
+  and incorporates multi-branch fusion of dual-frequency and multi-height features to enhance the effective
+  horizontal resolution while producing S-band-consistent reflectivity factor and partially recovering
+  weak-echo regions below DPR sensitivity. On the synthetic test set, the LDM achieves substantially improved
+  perceptual and distributional similarity (e.g., markedly lower FID/LPIPS) compared with representative
+  deterministic and generative baselines, while maintaining competitive structure-focused skill for intense
+  echoes. Evaluations on multiple real cases—including landfalling tropical cyclones and midlatitude/inland
+  convective systems—demonstrate improved echo continuity and sharper convective/rainband morphology that
+  is broadly consistent with independent ground-based S-band radar observations, indicating promising
+  transferability beyond the simulation domain. The proposed framework offers a practical pathway to enhance
+  the utility of current and future spaceborne precipitation radars for finescale precipitation analysis,
+  while providing an effective bridge between spaceborne radar observations and ground-based radar applications
+  through S-band-consistent high-resolution reflectivity fields.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

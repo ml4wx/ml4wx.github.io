@@ -1,0 +1,61 @@
+id: arxiv-2603.15797
+title: 'OMNIFLOW: A Physics-Grounded Multimodal Agent for Generalized Scientific Reasoning'
+authors:
+- Hao Wu
+- Yongheng Zhang
+- Yuan Gao
+- Fan Xu
+- Fan Zhang
+- Ruobing Xie
+- Ruijian Gou
+- Yuxuan Liang
+- Xiaomeng Huang
+- Xian Wu
+date: '2026-03-16'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2603.15797'
+  openalex: W7138948980
+links:
+  paper: https://arxiv.org/abs/2603.15797
+  pdf: https://arxiv.org/pdf/2603.15797
+orgs:
+- tsinghua-university
+- tencent
+topic: llms-agents
+topics:
+- xai-uq-physics
+type: model
+method:
+- llm
+- physics-constrained
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: OMNIFLOW grounds frozen multimodal LLMs in physics for PDE reasoning, evaluated on turbulence,
+  Navier-Stokes and global weather forecasting; weather is only one of three testbeds.
+abstract: Large Language Models (LLMs) have demonstrated exceptional logical reasoning capabilities but
+  frequently struggle with the continuous spatiotemporal dynamics governed by Partial Differential Equations
+  (PDEs), often resulting in non-physical hallucinations. Existing approaches typically resort to costly,
+  domain-specific fine-tuning, which severely limits cross-domain generalization and interpretability.
+  To bridge this gap, we propose OMNIFLOW, a neuro-symbolic architecture designed to ground frozen multimodal
+  LLMs in fundamental physical laws without requiring domain-specific parameter updates. OMNIFLOW introduces
+  a novel \textit{Semantic-Symbolic Alignment} mechanism that projects high-dimensional flow tensors into
+  topological linguistic descriptors, enabling the model to perceive physical structures rather than raw
+  pixel values. Furthermore, we construct a Physics-Guided Chain-of-Thought (PG-CoT) workflow that orchestrates
+  reasoning through dynamic constraint injection (e.g., mass conservation) and iterative reflexive verification.
+  We evaluate OMNIFLOW on a comprehensive benchmark spanning microscopic turbulence, theoretical Navier-Stokes
+  equations, and macroscopic global weather forecasting. Empirical results demonstrate that OMNIFLOW significantly
+  outperforms traditional deep learning baselines in zero-shot generalization and few-shot adaptation
+  tasks. Crucially, it offers transparent, physically consistent reasoning reports, marking a paradigm
+  shift from black-box fitting to interpretable scientific reasoning.
+significance: 2
+score: 18
+highlight: false
+added: '2026-10-22'
+source: backfill

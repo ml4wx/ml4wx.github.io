@@ -1,0 +1,57 @@
+id: doi-10.1029-2025jh000807
+title: Estimating Mediterranean Cyclone Activity via Explainable Machine Learning
+authors:
+- Guido Ascenso
+- Luca Proserpio
+- Leone Cavicchia
+- Enrico Scoccimarro
+- Matteo Giuliani
+- Andrea Francesco Castelletti
+date: '2026-03-11'
+year: 2026
+venue: Journal of Geophysical Research Machine Learning and Computation
+venue_type: journal
+ids:
+  doi: 10.1029/2025jh000807
+  openalex: W7134973226
+links:
+  paper: https://doi.org/10.1029/2025jh000807
+topic: extremes-hazards
+topics:
+- xai-uq-physics
+type: model
+method:
+- cnn
+timescale:
+- seasonal
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: An explainable CNN estimates monthly Mediterranean cyclone activity from climate fields, reaching
+  r=0.83 monthly, with absolute vorticity the key input.
+abstract: Abstract Intense cyclones in the Mediterranean drive most of the region's rainfall and wind‐wave
+  extremes, exerting a significant socio‐economic impact. Currently there are no established analytical
+  tools for estimating Mediterranean cyclone activity from climatological fields. To bridge this gap,
+  we develop a convolutional neural network (CNN) that, given large‐scale climatological fields as input,
+  learns to estimate monthly Mediterranean cyclone activity, which we quantify using the Accumulated Cyclone
+  Energy—a metric integrating the intensity, frequency, and duration of all cyclonic systems in a region.
+  The purpose of this model is to provide a computationally cheap estimate of the expected severity of
+  a cyclonic season given forecasts or projections of key climatological fields, akin to the Genesis Potential
+  Indices used for tropical cyclones. Model performance is optimized through nested cross‐validation combined
+  with Bayesian Optimization for both hyperparameter tuning and input variable selection. The resulting
+  CNN accurately captures both peak cyclone activity (mean squared error = 0.01) and the overall temporal
+  evolution ( r = 0.83 monthly; r = 0.63 yearly). Input variable selection highlights absolute vorticity
+  as the most informative input variable, followed by relative humidity and mean sea‐level pressure. Furthermore,
+  we visualize the CNN's internal activations and find that, when analyzing the input variables, the model
+  focuses on regions historically associated with cyclogenesis, indicating that the model has captured
+  at least some aspects of the underlying physical processes. This study represents a significant step
+  toward leveraging explainable artificial intelligence for studying Mediterranean cyclones, offering
+  new insights into the drivers of extreme weather in the region.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,51 @@
+id: doi-10.1016-j.jhydrol.2025.134689
+title: 'Machine unlearning: bias correction in neural network downscaled storms'
+authors:
+- Simon Michael Papalexiou
+- Antonios Mamalakis
+date: '2025-11-28'
+year: 2025
+venue: Journal of Hydrology
+venue_type: journal
+ids:
+  doi: 10.1016/j.jhydrol.2025.134689
+  openalex: W4416777141
+links:
+  paper: https://doi.org/10.1016/j.jhydrol.2025.134689
+topic: downscaling
+topics:
+- post-processing
+type: model
+method:
+- gan-vae
+- cnn
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Compares ML precipitation downscaling on synthetic storms; WGAN best captures fine-scale structure,
+  and bias correction fixes wet/dry boundaries and tails.
+abstract: Accurate precipitation at fine spatial resolutions is essential for hydrologic modeling and
+  risk assessment, yet most precipitation data are available at coarse scales. Dynamical downscaling can
+  improve spatial resolution but is computationally expensive while statistical downscaling struggles
+  to reproduce high-resolution characteristics. Machine learning has been shown to offer an operational
+  alternative for transforming coarse data into fine-scale fields, especially honoring spatiotemporal
+  precipitation dependencies. Here, we show that combining machine learning with post-processing bias
+  correction approaches—a form of “machine unlearning”— yields improved performance. We evaluate four
+  machine-learning models—Linear Network (LNet), Fully Connected Network (FCNet), Convolutional Neural
+  Network (UNet), and Wasserstein Generative Adversarial Network (WGAN)—for downscaling precipitation
+  using synthetic benchmark storms with known marginal and spatiotemporal properties. Using synthetic
+  fields provides full control over storm characteristics and enables rigorous evaluation. Raw outputs
+  from all models struggle to reproduce wet/dry boundaries, statistics, and extremes, and only WGAN captures
+  the complex spatiotemporal structure of fine-scale storms. We then apply linear and nonlinear bias corrections
+  to enforce zeros, match the mean of positive values, and align full marginal distributions, including
+  tails. This demonstrates that post-processing is crucial for reliable neural network outputs in operational
+  settings. The results highlight WGAN’s potential for operational downscaling while emphasizing the need
+  for systematic post-processing and careful validation before real-world application.
+significance: 4
+cited_by: 0
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

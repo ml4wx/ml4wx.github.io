@@ -1,0 +1,51 @@
+id: arxiv-2603.06782
+title: Physics-Informed Diffusion Model for Generating Synthetic Extreme Rare Weather Events Data
+authors:
+- Marawan Yakout
+- Tannistha Maiti
+- Monira Majhabeen
+- Tarry Singh
+date: '2026-03-06'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2603.06782'
+  openalex: W7134810752
+links:
+  paper: https://arxiv.org/abs/2603.06782
+  pdf: https://arxiv.org/pdf/2603.06782
+topic: extremes-hazards
+topics:
+- observations-remote-sensing
+type: model
+method:
+- diffusion
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: A physics-informed diffusion model with a Context-UNet generates synthetic multi-spectral satellite
+  patches of rare Category 4-equivalent tropical cyclones to address class imbalance.
+abstract: Data scarcity is a primary obstacle in developing robust Machine Learning (ML) models for detecting
+  rapidly intensifying tropical cyclones. Traditional data augmentation techniques (rotation, flipping,
+  brightness adjustment) fail to preserve the physical consistency and high-intensity gradients characteristic
+  of rare Category 4-equivalent events, which constitute only 0.14\% of our dataset (202 of 140,514 samples).
+  We propose a physics-informed diffusion model based on the Context-UNet architecture to generate synthetic,
+  multi-spectral satellite imagery of extreme weather events. Our model is conditioned on critical atmospheric
+  parameters such as average wind speed, type of Ocean and stage of development (early, mature, late etc)
+  -- the known drivers of rapid intensification. Using a controlled pre-generated noise sampling strategy
+  and mixed-precision training, we generated $16\times16$ wind-field samples that are cropped from multi-spectral
+  satellite imagery which preserve realistic spatial autocorrelation and physical consistency. Results
+  demonstrate that our model successfully learns discriminative features across ten distinct context classes,
+  effectively mitigating the data bottleneck. Specifically, we address the extreme class imbalance in
+  our dataset, where Class 4 (Ocean 2, early stage with average wind speed 50kn hurricane) contains only
+  202 samples compared to 79,768 samples in Class 0. This generative framework provides a scalable solution
+  for augmenting training datasets for operational weather detection algorithms. The average Results yield
+  an average Log-Spectral Distance (LSD) of 4.5dB, demonstrating a scalable framework for enhancing operational
+  weather detection algorithms.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,59 @@
+id: arxiv-2502.02884
+title: Physically consistent global atmospheric data assimilation with machine learning in latent space
+authors:
+- Hang Fan
+- Lei Bai
+- Ben Fei
+- Yi Xiao
+- Kun Chen
+- Yubao Liu
+- Yongquan Qu
+- Fenghua Ling
+- Pierre Gentine
+date: '2026-01-01'
+year: 2026
+venue: Science Advances
+venue_type: journal
+ids:
+  arxiv: '2502.02884'
+  doi: 10.1126/sciadv.aea4248
+  openalex: W4407212493
+links:
+  paper: https://doi.org/10.1126/sciadv.aea4248
+  pdf: https://www.science.org/doi/pdf/10.1126/sciadv.aea4248?download=true
+orgs:
+- shanghai-ai-lab
+- columbia-leap
+- nuist
+topic: data-assimilation
+type: model
+method:
+- other
+timescale:
+- short
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: Latent data assimilation performs Bayesian analysis in an autoencoder latent space, giving physically
+  balanced global analyses and better forecast skill than model-space DA.
+abstract: Data assimilation (DA) integrates observations with model forecasts to produce optimized atmospheric
+  states, whose physical consistency is critical for stable weather forecasting and reliable climate research.
+  Traditional Bayesian DA methods enforce these nonlinear, flow-dependent physical constraints through
+  empirical and tunable covariance structures, but with limited accuracy and robustness. Here, we introduce
+  latent DA (LDA), a framework that performs Bayesian DA in a latent space learned from multivariate global
+  atmospheric data via an autoencoder. We demonstrate that the autoencoder can largely capture nonlinear
+  physical relationships, enabling LDA to produce balanced analyses without explicitly modeling physical
+  constraints. Assimilation in latent space also improves both analysis quality and forecast skill compared
+  to traditional model-space DA, under both idealized and real observational settings. Furthermore, LDA
+  exhibits strong robustness across latent dimensions and remains effective even when the autoencoder
+  is trained on inaccurate but physically realistic forecasts, highlighting its flexibility for real-world
+  applications.
+significance: 5
+cited_by: 7
+score: 75
+highlight: false
+added: '2026-10-22'
+source: backfill

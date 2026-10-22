@@ -1,0 +1,57 @@
+id: arxiv-2511.05471
+title: Precipitation nowcasting of satellite data using physically-aligned neural networks
+authors:
+- Antônio Catão
+- Melvin Poveda
+- Leonardo Voltarelli
+- Paulo Orenstein
+date: '2025-11-07'
+year: 2025
+venue: Environmental Data Science, 5 (2026), e13
+venue_type: journal
+ids:
+  arxiv: '2511.05471'
+  doi: 10.1017/eds.2026.10041
+  openalex: W4416160911
+links:
+  paper: https://arxiv.org/abs/2511.05471
+  pdf: https://arxiv.org/pdf/2511.05471
+topic: nowcasting
+topics:
+- observations-remote-sensing
+type: model
+method:
+- transformer
+- gan-vae
+- physics-constrained
+- differentiable
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Satellite-only TUPANN nowcasts precipitation with a differentiable advection operator and MaxViT,
+  matching or beating optical-flow and deep baselines in most of four climates at 10–180 min.
+abstract: 'Accurate short-term precipitation forecasts predominantly rely on dense weather-radar networks,
+  limiting operational value in places most exposed to climate extremes. We present TUPANN (Transferable
+  and Universal Physics-Aligned Nowcasting Network), a satellite-only model trained on GOES-16 RRQPE.
+  Unlike most deep learning models for nowcasting, TUPANN decomposes the forecast into physically meaningful
+  components: a variational encoder-decoder infers motion and intensity fields from recent imagery under
+  optical-flow supervision, a lead-time-conditioned MaxViT evolves the latent state, and a differentiable
+  advection operator reconstructs future frames. We evaluate TUPANN on both GOES-16 and IMERG data, in
+  up to four distinct climates (Rio de Janeiro, Manaus, Miami, La Paz) at 10-180min lead times using the
+  CSI and HSS metrics over 4-64 mm/h thresholds. Comparisons against optical-flow, deep learning and hybrid
+  baselines show that TUPANN achieves the best or second-best skill in most settings, with pronounced
+  gains at higher thresholds. Training on multiple cities further improves performance, while cross-city
+  experiments show modest degradation and occasional gains for rare heavy-rain regimes. The model produces
+  smooth, interpretable motion fields aligned with numerical optical flow and runs in near real time due
+  to the low latency of GOES-16. These results indicate that physically aligned learning can provide nowcasts
+  that are skillful, transferable and global.'
+significance: 4
+cited_by: 1
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

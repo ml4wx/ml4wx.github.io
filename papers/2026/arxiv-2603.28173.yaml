@@ -1,0 +1,54 @@
+id: arxiv-2603.28173
+title: Skillful Kilometer-Scale Regional Weather Forecasting via Global and Regional Coupling
+authors:
+- Weiqi Chen
+- Wenwei Wang
+- Qilong Yuan
+- Lefei Shen
+- Bingqing Peng
+- Jiawei Chen
+- Bo Wu
+- Liang Sun
+date: '2026-03-30'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2603.28173'
+  openalex: W7147602458
+links:
+  paper: https://arxiv.org/abs/2603.28173
+  pdf: https://arxiv.org/pdf/2603.28173
+topic: regional-km-scale
+topics:
+- global-medium-range
+type: model
+method:
+- transformer
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+- stations
+- nwp-analysis
+status: research
+summary: Couples a pretrained Transformer global model with a regional network via ScaleMixer to produce
+  5 km, hourly China forecasts outperforming operational NWP and AI baselines.
+abstract: Data-driven weather models have advanced global medium-range forecasting, yet high-resolution
+  regional prediction remains challenging due to unresolved multiscale interactions between large-scale
+  dynamics and small-scale processes such as terrain-induced circulations and coastal effects. This paper
+  presents a global-regional coupling framework for kilometer-scale regional weather forecasting that
+  synergistically couples a pretrained Transformer-based global model with a high-resolution regional
+  network via a novel bidirectional coupling module, ScaleMixer. ScaleMixer dynamically identifies meteorologically
+  critical regions through adaptive key-position sampling and enables cross-scale feature interaction
+  through dedicated attention mechanisms. The framework produces forecasts at $0.05^\circ$ ($\sim 5 \mathrm{km}$
+  ) and 1-hour resolution over China, significantly outperforming operational NWP and AI baselines on
+  both gridded reanalysis data and real-time weather station observations. It exhibits exceptional skill
+  in capturing fine-grained phenomena such as orographic wind patterns and Foehn warming, demonstrating
+  effective global-scale coherence with high-resolution fidelity. The code is available at https://anonymous.4open.science/r/ScaleMixer-6B66.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

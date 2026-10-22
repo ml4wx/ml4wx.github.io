@@ -1,0 +1,57 @@
+id: doi-10.51483-ijaiml.6.8s.2026.314-326
+title: Comparative Evaluation of Machine Learning and Numerical Weather Prediction for Precipitation Estimation
+  in Complex Orographic Terrain
+authors:
+- Harsh Vardhan Chaudhary
+- Parul Saxena
+date: '2026-01-01'
+year: 2026
+venue: International Journal of Artificial Intelligence and Machine Learning
+venue_type: journal
+ids:
+  doi: 10.51483/ijaiml.6.8s.2026.314-326
+  openalex: W7211868606
+links:
+  paper: https://doi.org/10.51483/ijaiml.6.8s.2026.314-326
+  pdf: https://www.svedbergopen.com/index.php/ijaiml/article/download/1273/831
+topic: post-processing
+type: evaluation
+method:
+- classical-ml
+- cnn
+- rnn
+- gnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Benchmarks RF, XGBoost, CNN, ConvLSTM and GNN against WRF for daily mountain precipitation; the
+  GNN cuts RMSE by 38.6% and hybrid post-processing helps valleys.
+abstract: 'Accurate precipitation estimation in mountainous regions is critical for flood early warning
+  systems, water resource management, and hydroelectric operations, yet it remains a formidable challenge
+  due to complex orographic processes that Numerical Weather Prediction (NWP) models frequently fail to
+  resolve. While Machine Learning (ML) and Deep Learning (DL) offer promising alternatives, a systematic,
+  side-by-side comparative benchmarking against physics-based NWP under consistent experimental protocols
+  is notably absent from the literature. This study introduces the Terrain-Aware Multi-Model Comparative
+  Framework (TAM-CF) to rigorously evaluate the predictive performance of diverse ML/DL algorithms—including
+  Random Forest, XGBoost, Artificial Neural Networks, Convolutional Neural Networks (CNN), Convolutional
+  Long Short-Term Memory (ConvLSTM), and Graph Neural Networks (GNNs)—against the Weather Research and
+  Forecasting (WRF) model for daily precipitation estimation in complex orographic terrain. Results demonstrate
+  that all ML models significantly outperform NWP, with the topology-aware GNN achieving a 38.6% reduction
+  in Root Mean Square Error (RMSE) and improving the Kling-Gupta Efficiency from 0.52 to 0.78. Stratified
+  analysis reveals that ML provides the greatest relative advantage under heavy and extreme precipitation
+  regimes, substantially mitigating the systematic dry bias inherent in NWP. Crucially, the optimal integration
+  strategy is terrain-dependent: hybrid NWP+ML post-processing excels in valleys and moderate slopes,
+  whereas standalone GNNs are demonstrably superior in data-sparse high-altitude peaks where NWP errors
+  are extreme. This research advances the hydrometeorological community beyond simplistic "AI versus Physics"
+  dichotomies, offering a stratified, terrain-sensitive benchmarking protocol that informs strategic model
+  selection for operational forecasting in mountainous catchments.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

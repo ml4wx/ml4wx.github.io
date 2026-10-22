@@ -1,0 +1,62 @@
+id: doi-10.1029-2024ea004179
+title: Spatio‐Temporal Network With Self‐Attention Mechanism for Improved ENSO Prediction
+authors:
+- Nan Yu
+- Changhong Hu
+- Jinghuan Wang
+- Weibo Rao
+- Siwei Liu
+- Minghui Yang
+- Gang Chen
+- Jinze Li
+date: '2025-11-27'
+year: 2025
+venue: Earth and Space Science
+venue_type: journal
+ids:
+  doi: 10.1029/2024ea004179
+  openalex: W4416775161
+links:
+  paper: https://doi.org/10.1029/2024ea004179
+topic: s2s-seasonal
+type: model
+method:
+- cnn
+- rnn
+- transformer
+timescale:
+- seasonal
+spatial:
+- global
+data:
+- other
+status: research
+summary: ACTNet combines CNN, LSTM and self-attention to predict Niño 3.4 up to 24 months ahead with correlations
+  above 0.5, beating CNN and CNN+LSTM baselines.
+abstract: Abstract El Niño and the Southern Oscillation (ENSO) is the strongest inter‐annual signal in
+  the global climate system with worldwide climatic, ecological, and societal impacts. Over the past decades,
+  the research on ENSO prediction and predictability has attracted broad attention. Typical prediction
+  efforts based on physically coupled models (e.g., SINTEX‐F, CanCM4) demonstrate skill at short lead
+  times (approximately 6–12 months) but tend to lose predictability rapidly over longer horizons. Benefiting
+  from their ability to capture nonlinear dependencies and improve long‐term accuracy, deep learning methods
+  such as Convolutional Neural Network (CNN) and Long Short‐Term Memory (LSTM) networks have been widely
+  applied in the prediction of ENSO‐related indices, such as the Niño 3.4 index. In this study, we propose
+  a newly designed neural network, named ACTNet, by incorporating a self‐attention mechanism into a CNN
+  + LSTM architecture. ACTNet is designed to process the past 12 months of global sea surface temperature
+  (SST), heat content, zonal wind (UA), and meridional wind (VA) as inputs, where CNN layers extract spatial
+  patterns, LSTM layers capture temporal dependencies, and a self‐attention mechanism highlights critical
+  spatiotemporal relationships for accurate ENSO prediction. It can predict the Niño 3.4 index at a monthly
+  resolution up to 24 months in advance reasonably well, achieving correlation coefficients exceeding
+  0.5. Compared to conventional CNN and CNN + LSTM models, ACTNet demonstrates improved spatiotemporal
+  feature extraction and long‐lead prediction skill. Another, independent aspect is ENSO‐type prediction
+  based on historical observed SST anomalies. Since ENSO events manifest in different types—such as Eastern
+  Pacific and Central Pacific El Niño, as well as their La Niña counterparts—distinguishing these types
+  is crucial for understanding regional climate impacts. To this end, we further employed an LSTM model
+  to classify events into six defined ENSO types based on Niño 3 and Niño 4 indices, achieving a classification
+  accuracy of 70.5% at a 12‐month lead time.
+significance: 4
+cited_by: 1
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

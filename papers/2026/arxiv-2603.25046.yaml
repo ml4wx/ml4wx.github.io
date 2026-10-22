@@ -1,0 +1,52 @@
+id: arxiv-2603.25046
+title: 'MP-MoE: Matrix Profile-Guided Mixture of Experts for Precipitation Forecasting'
+authors:
+- Huyen Ngoc Tran
+- Dung Trung Tran
+- Hong Nguyen
+- Xuan Vu Phan
+- Nam-Phong Nguyen
+date: '2026-03-26'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2603.25046'
+links:
+  paper: https://arxiv.org/abs/2603.25046
+  pdf: https://arxiv.org/pdf/2603.25046
+topic: post-processing
+topics:
+- extremes-hazards
+type: model
+method:
+- other
+- transformer
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Mixture-of-experts post-processing with a Matrix Profile loss improves heavy-rainfall CSI over
+  raw NWP for Vietnamese river basins.
+abstract: Precipitation forecasting remains a persistent challenge in tropical regions like Vietnam, where
+  complex topography and convective instability often limit the accuracy of Numerical Weather Prediction
+  (NWP) models. While data-driven post-processing is widely used to mitigate these biases, most existing
+  frameworks rely on point-wise objective functions, which suffer from the ``double penalty'' effect under
+  minor temporal misalignments. In this work, we propose the Matrix Profile-guided Mixture of Experts
+  (MP-MoE), a framework that integrates conventional intensity loss with a structural-aware Matrix Profile
+  objective. By leveraging subsequence-level similarity rather than point-wise errors, the proposed loss
+  facilitates more reliable expert selection and mitigates excessive penalization caused by phase shifts.
+  We evaluate MP-MoE on rainfall datasets from two major river basins in Vietnam across multiple horizons,
+  including 1-hour intensity and accumulated rainfall over 12, 24, and 48 hours. Experimental results
+  demonstrate that MP-MoE outperforms raw NWP and baseline learning methods in terms of Mean Critical
+  Success Index (CSI-M) for heavy rainfall events, while significantly reducing Dynamic Time Warping (DTW)
+  values. These findings highlight the framework's efficacy in capturing peak rainfall intensities and
+  preserving the morphological integrity of storm events.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

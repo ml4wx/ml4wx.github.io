@@ -1,0 +1,59 @@
+id: arxiv-2601.20342
+title: 'StormDiT: A generative AI model bridges the 2-6 hour ''gray zone'' in precipitation nowcasting'
+authors:
+- Haofei Sun
+- Yunfan Yang
+- Wei Han
+- Wei Huang
+- Huaguan Chen
+- Zhiqiu Gao
+- Zeting Li
+- Zhaoyang Huo
+- Zeyi Niu
+date: '2026-01-28'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2601.20342'
+links:
+  paper: https://arxiv.org/abs/2601.20342
+  pdf: https://arxiv.org/pdf/2601.20342
+topic: nowcasting
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- transformer
+- diffusion
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: StormDiT, a unified diffusion transformer trained on 7,720 Chinese precipitation events, keeps
+  heavy-rain skill (CSI near 0.2) across 6 hours and doubles SEVIR 1-hour heavy-rain performance.
+abstract: Accurate short-term warnings for extreme precipitation are critical for global disaster mitigation
+  but are hindered by a persistent predictability barrier at the 2-6 hour horizon -- the "nowcasting gray
+  zone." In this window, traditional observation-based extrapolation fails due to error accumulation,
+  while numerical weather prediction is computationally too slow to resolve storm-scale dynamics. Recent
+  generative AI approaches attempt to bridge this gap by decomposing precipitation into separate deterministic
+  advection and stochastic diffusion components. However, this decomposition can sever fundamental causal
+  links between entangled atmospheric processes, such as the dynamic initiation of convection triggered
+  by boundary advection. Here we present StormDiT, a unified generative model that treats weather evolution
+  as a holistic spatiotemporal problem, learning the coupled physics of the gray zone without human-imposed
+  structural priors. Trained on a massive dataset of 7,720 precipitation events from China, our model
+  achieves a breakthrough in long-horizon stability. On a heavy-rainfall test set, it maintains skillful
+  prediction for strong convection ($\ge$ 35 dBZ) with a Critical Success Index (CSI) near 0.2 across
+  the full 6-hour forecast at 6-minute resolution. Crucially, the model exhibits superior probabilistic
+  calibration, accurately quantifying operational risks. On the public SEVIR benchmark, our unified paradigm
+  more than doubles the state-of-the-art 1-hour performance for heavy rain and establishes the first robust
+  baseline for 3-hour forecasting. Furthermore, interpretability analysis reveals that the model attends
+  to non-local physical precursors, such as outflow boundaries, explicitly validating its emergent understanding
+  of convective organization.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

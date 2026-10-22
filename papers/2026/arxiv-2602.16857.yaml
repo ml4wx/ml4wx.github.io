@@ -1,0 +1,54 @@
+id: arxiv-2602.16857
+title: Distillation and Interpretability of Ensemble Forecasts of ENSO Phase using Entropic Learning
+authors:
+- Michael Groom
+- Davide Bassetti
+- Illia Horenko
+- Terence J. O'Kane
+date: '2026-02-15'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2602.16857'
+links:
+  paper: https://arxiv.org/abs/2602.16857
+  pdf: https://arxiv.org/pdf/2602.16857
+topic: s2s-seasonal
+topics:
+- xai-uq-physics
+type: model
+method:
+- classical-ml
+timescale:
+- seasonal
+spatial:
+- global
+data:
+- era5
+- other
+status: research
+summary: Distils an ensemble of entropic sparse models into compact interpretable ENSO phase forecasts
+  up to 24 months ahead, keeping skill and revealing spring predictability barrier dynamics.
+abstract: This paper introduces a distillation framework for an ensemble of entropy-optimal Sparse Probabilistic
+  Approximation (eSPA) models, trained exclusively on satellite-era observational and reanalysis data
+  to predict ENSO phase up to 24 months in advance. While eSPA ensembles yield state-of-the-art forecast
+  skill, they are harder to interpret than individual eSPA models. We show how to compress the ensemble
+  into a compact set of "distilled" models by aggregating the structure of only those ensemble members
+  that make correct predictions. This process yields a single, diagnostically tractable model for each
+  forecast lead time that preserves forecast performance while also enabling diagnostics that are impractical
+  to implement on the full ensemble. An analysis of the regime persistence of the distilled model "superclusters",
+  as well as cross-lead clustering consistency, shows that the discretised system accurately captures
+  the spatiotemporal dynamics of ENSO. By considering the effective dimension of the feature importance
+  vectors, the complexity of the input space required for correct ENSO phase prediction is shown to peak
+  when forecasts must cross the boreal spring predictability barrier. Spatial importance maps derived
+  from the feature importance vectors are introduced to identify where predictive information resides
+  in each field and are shown to include known physical precursors at certain lead times. Case studies
+  of key events are also presented, showing how fields reconstructed from distilled model centroids trace
+  the evolution from extratropical and inter-basin precursors to the mature ENSO state. Overall, the distillation
+  framework enables a rigorous investigation of long-range ENSO predictability that complements real-time
+  data-driven operational forecasts.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

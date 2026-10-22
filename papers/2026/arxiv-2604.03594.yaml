@@ -1,0 +1,46 @@
+id: arxiv-2604.03594
+title: Optimizing Objective Model Calibration Approaches using Single Column Models
+authors:
+- Pappu Paul
+- Cristian Proistosescu
+date: '2026-04-04'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2604.03594'
+  openalex: W7151529573
+links:
+  paper: https://arxiv.org/abs/2604.03594
+  pdf: https://arxiv.org/pdf/2604.03594
+topic: hybrid-parameterization
+type: evaluation
+method:
+- classical-ml
+spatial:
+- local
+data:
+- other
+status: research
+summary: Compares point-estimate and Gaussian-process-emulator Bayesian calibration of single-column model
+  parameters, finding the GP-MCMC approach gives tighter, more consistent constraints.
+abstract: Sub-grid scale parameterizations in atmospheric models involve numerous uncertain parameters
+  that must be tuned to align simulations with observations. Here, we propose a framework for assessing
+  objective tuning frameworks using the Single Column Atmosphere Model (SCAM), which retains key physical
+  parameterizations of general circulation models (GCMs) while greatly reducing computational cost. We
+  conduct a perfect-model experiment where we run SCAM with a known "true" parameter set to generate synthetic
+  observations that mimic Atmospheric Radiation Measurement (ARM) Intensive Observation Periods. Perturbed
+  parameter ensembles are constructed by varying microphysics, convection, and aerosol parameters, and
+  cloud-radiation fields are evaluated over the Southern Great Plains. We find that point estimates find
+  solutions that greatly reduce model-observation misfit without recovering the true parameter values.
+  In contrast, a Bayesian framework using a Gaussian Process emulator with Markov Chain Monte Carlo sampling
+  yields tighter constraints on some parameters and more consistent recovery across experiments and variables.
+  The perfect model framework allows to assess which observables yield most information, which parameters
+  are recoverable given a certain set of observations, and what is the minimum observational record needed.
+  Although this study focuses on a single location with synthetic observations, such experiments provide
+  a controlled setting to evaluate and identify robust calibration frameworks, which can then be extended
+  to multiple locations and real observations with greater confidence.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

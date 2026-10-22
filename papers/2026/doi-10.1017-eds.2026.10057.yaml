@@ -1,0 +1,61 @@
+id: doi-10.1017-eds.2026.10057
+title: 'Generative unsupervised downscaling of climate models via domain alignment: Application to wind
+  fields'
+authors:
+- Julie Keisler
+- Boutheina Oueslati
+- Anastase Charantonis
+- Yannig Goude
+- Claire Monteleoni
+date: '2026-01-01'
+year: 2026
+venue: Environmental Data Science
+venue_type: journal
+ids:
+  arxiv: '2604.03341'
+  doi: 10.1017/eds.2026.10057
+  openalex: W7169560071
+links:
+  paper: https://doi.org/10.1017/eds.2026.10057
+  pdf: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/55A0F46DF3597AF1F8A5A89EE6C0DA18/S2634460226100570a.pdf/div-class-title-generative-unsupervised-downscaling-of-climate-models-via-domain-alignment-application-to-wind-fields-div.pdf
+orgs:
+- inria
+topic: downscaling
+topics:
+- post-processing
+type: model
+method:
+- diffusion
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+status: research
+summary: Applies SerpentFlow, an interpretable flow-matching domain-alignment method, to jointly downscale
+  and bias-correct GCM wind fields without paired training data, outperforming standard multivariate bias
+  correction.
+abstract: Abstract General circulation models (GCMs) are widely used for future climate projections, but
+  their coarse spatial resolution and systematic biases limit their direct use for impact studies. This
+  limitation is particularly critical for wind-related applications, such as wind energy, which require
+  spatially coherent, multivariate, and physically plausible near-surface wind fields. Classical statistical
+  downscaling and bias correction methods partly address this issue. Still, they struggle to preserve
+  spatial structure, intervariable consistency, and robustness under climate change, especially in high-dimensional
+  settings. Recent advances in generative machine learning offer new opportunities for downscaling and
+  bias correction, eliminating the need for explicitly paired low- and high-resolution datasets. However,
+  many existing approaches remain difficult to interpret and challenging to deploy in operational climate
+  impact studies. In this work, we apply SerpentFlow, an interpretable, generative, domain alignment framework,
+  to the multivariate downscaling and bias correction of wind variables from GCM outputs. This is a method
+  that generates low-resolution/high-resolution training data pairs by separating large-scale spatial
+  patterns from small-scale variability. Large-scale components are aligned across climate model and observational
+  domains. Conditional fine-scale variability is then learned using a flow-matching generative model.
+  We apply the approach to multiple wind variables downscaling, including average and maximal wind speed,
+  zonal and meridional components, and compare it with widely used multivariate bias correction methods.
+  Results show improved spatial coherence, intervariable consistency, and robustness under future climate
+  conditions, highlighting the potential of interpretable generative models for wind and energy applications.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

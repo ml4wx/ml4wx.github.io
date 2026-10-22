@@ -1,0 +1,49 @@
+id: doi-10.3390-s26051409
+title: 'AFTA-Net: Axial Fusion and Triaxial Factorised Attention Network for Nowcasting of Severe Convective
+  Weather'
+authors:
+- Huantong Geng
+- Delong Fang
+- Xiaoran Zhuang
+- Liangchao Geng
+- Xinxin Zeng
+date: '2026-02-24'
+year: 2026
+venue: Sensors
+venue_type: journal
+ids:
+  doi: 10.3390/s26051409
+  openalex: W7131287086
+links:
+  paper: https://doi.org/10.3390/s26051409
+orgs:
+- nuist
+topic: nowcasting
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: AFTA-Net encoder-decoder with axial fusion and tri-axis attention improves radar echo extrapolation
+  for severe convection in Jiangsu, reaching CSI 0.2506 at 30 dBZ.
+abstract: Radar echo extrapolation is a core technique for 0-2 h nowcasting, yet existing deep learning
+  models often struggle with non-linear atmospheric motion and intensity attenuation due to insufficient
+  feature decoupling. To address these limitations, this paper proposes AFTA-Net, a novel encoder-decoder
+  architecture. The model introduces an Axial Fusion Block (AFB) that employs a parallel decomposition
+  strategy to explicitly separate temporal evolution from spatial morphology, preserving structural integrity
+  while capturing motion trends. Furthermore, a Tri-Axis Factorized Attention (TAFA) mechanism is designed
+  to sequentially recalibrate feature representations across Time, Channel, and Spatial dimensions, thereby
+  enhancing sensitivity to high-frequency convective signals and suppressing background noise. Extensive
+  experiments on the Jiangsu radar dataset demonstrate that AFTA-Net significantly outperforms representative
+  baselines. Notably, at the critical 30 dBZ threshold for severe weather, the model achieves a CSI of
+  0.2506 and an HSS of 0.3430.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

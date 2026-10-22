@@ -1,0 +1,59 @@
+id: arxiv-2512.00089
+title: 'TeleViT1.0: Teleconnection-aware Vision Transformers for Subseasonal to Seasonal Wildfire Pattern
+  Forecasts'
+authors:
+- Ioannis Prapas
+- Nikolaos Papadopoulos
+- Nikolaos-Ioannis Bountos
+- Dimitrios Michail
+- Gustau Camps-Valls
+- Ioannis Papoutsis
+date: '2025-11-26'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2512.00089'
+links:
+  paper: https://arxiv.org/abs/2512.00089
+  pdf: https://arxiv.org/pdf/2512.00089
+topic: s2s-seasonal
+topics:
+- extremes-hazards
+type: model
+method:
+- transformer
+- cnn
+timescale:
+- s2s
+spatial:
+- global
+- regional
+data:
+- era5
+- satellite
+- other
+status: research
+summary: TeleViT, a teleconnection-aware vision transformer, forecasts global wildfire patterns up to
+  four months ahead, beating ViT, U-Net and climatology (AUPRC 0.601 at lead 16).
+abstract: Forecasting wildfires weeks to months in advance is difficult, yet crucial for planning fuel
+  treatments and allocating resources. While short-term predictions typically rely on local weather conditions,
+  long-term forecasting requires accounting for the Earth's interconnectedness, including global patterns
+  and teleconnections. We introduce TeleViT, a Teleconnection-aware Vision Transformer that integrates
+  (i) fine-scale local fire drivers, (ii) coarsened global fields, and (iii) teleconnection indices. This
+  multi-scale fusion is achieved through an asymmetric tokenization strategy that produces heterogeneous
+  tokens processed jointly by a transformer encoder, followed by a decoder that preserves spatial structure
+  by mapping local tokens to their corresponding prediction patches. Using the global SeasFire dataset
+  (2001-2021, 8-day resolution), TeleViT improves AUPRC performance over U-Net++, ViT, and climatology
+  across all lead times, including horizons up to four months. At zero lead, TeleViT with indices and
+  global inputs reaches AUPRC 0.630 (ViT 0.617, U-Net 0.620), at 16x8day lead (around 4 months), TeleViT
+  variants using global input maintain 0.601-0.603 (ViT 0.582, U-Net 0.578), while surpassing the climatology
+  (0.572) at all lead times. Regional results show the highest skill in seasonally consistent fire regimes,
+  such as African savannas, and lower skill in boreal and arid regions. Attention and attribution analyses
+  indicate that predictions rely mainly on local tokens, with global fields and indices contributing coarse
+  contextual information. These findings suggest that architectures explicitly encoding large-scale Earth-system
+  context can extend wildfire predictability on subseasonal-to-seasonal timescales.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

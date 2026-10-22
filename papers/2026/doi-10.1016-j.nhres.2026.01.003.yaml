@@ -1,0 +1,56 @@
+id: doi-10.1016-j.nhres.2026.01.003
+title: 'Physics-guided deep learning for radar rainfall nowcasting in flash-flood early warning: Lead-time
+  skill and an illustrative utility proxy'
+authors:
+- Katsiaryna Bahamazava
+- Stanley Reznik
+date: '2026-01-01'
+year: 2026
+venue: Natural Hazards Research
+venue_type: journal
+ids:
+  doi: 10.1016/j.nhres.2026.01.003
+  openalex: W7125835268
+links:
+  paper: https://doi.org/10.1016/j.nhres.2026.01.003
+  code: https://github.com/katsiaryna-bahamazava/flash-flood-nowcasting
+topic: nowcasting
+topics:
+- extremes-hazards
+type: model
+method:
+- cnn
+- physics-constrained
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- radar
+status: research
+summary: Physics-guided U-Net with a smoothness regulariser improves 5–60 minute radar rainfall nowcasts
+  over Amsterdam for flash-flood warning, with gains at 25–40 minute leads.
+abstract: Urban flash floods can be triggered by highly localised convective storms, for which 10–60 minutes
+  of additional warning can materially affect emergency response. We study short-lead radar rainfall nowcasting
+  over Amsterdam using 5 min KNMI radar composites (Oct 2024–Jan 2025). We construct 12 × 12 input–output
+  sequences (60 min → 60 min) on a 200 × 200 pixel tile and compare a standard data-driven U–Net with
+  a physics-guided variant that uses the same architecture but is trained with an additional physics-inspired
+  regulariser. Specifically, we augment the baseline objective with a masked smoothness (TV-like) penalty
+  on spatial gradients of predicted rain-rate fields in linear units, applied only over rainy pixels to
+  encourage spatial coherence and reduce isolated artefacts. Models are trained in log(1 + R ) and evaluated
+  in physical units (mm/h) on a held-out test set. On the test set, the physics-guided model improves
+  continuous accuracy and threshold-based event detection relative to the baseline U–Net, and it also
+  outperforms an Eulerian persistence benchmark. At τ = 0.1 mm h −1 it reduces the false-alarm ratio and
+  increases the critical success index (CSI) while maintaining high recall; at the flood-relevant threshold
+  τ = 1 mm h −1 it increases CSI and recall while reducing false alarms. Lead-time curves over 5–60 minutes
+  show consistent gains, with the largest improvements at intermediate horizons (approximately 25–40 minutes)
+  where baseline skill degrades most rapidly. Overall, the results indicate that a lightweight physics-inspired
+  smoothness regulariser can improve the coherence and flood-threshold skill of radar rainfall nowcasts
+  at actionable lead times without increasing inference-time cost. Code is available at https://github.com/katsiaryna-bahamazava/flash-flood-nowcasting
+  .
+significance: 2
+cited_by: 0
+score: 18
+highlight: false
+added: '2026-10-22'
+source: backfill

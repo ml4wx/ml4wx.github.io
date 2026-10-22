@@ -1,0 +1,54 @@
+id: doi-10.5194-acp-26-4771-2026
+title: 'Technical note: Hybrid machine learning model for bias correction of UTLS relative humidity against
+  IAGOS observations in ERA5 reanalysis'
+authors:
+- Mathieu Antonopoulos
+- Jérémie Quarroz
+- Oliviér Boucher
+date: '2026-04-10'
+year: 2026
+venue: Atmospheric chemistry and physics
+venue_type: journal
+ids:
+  doi: 10.5194/acp-26-4771-2026
+  openalex: W4417185349
+links:
+  paper: https://doi.org/10.5194/acp-26-4771-2026
+  pdf: https://acp.copernicus.org/articles/26/4771/2026/acp-26-4771-2026.pdf
+topic: post-processing
+topics:
+- applications-impacts
+type: model
+method:
+- classical-ml
+spatial:
+- global
+data:
+- era5
+- stations
+status: research
+summary: Hybrid XGBoost and neural network corrects ERA5 upper-troposphere humidity against IAGOS aircraft
+  data, cutting MAE from 13.7% to 11.4% and improving ice-supersaturation detection.
+abstract: 'Abstract. Persistent contrail cirrus form in Ice-Supersaturated Regions (ISSRs) and are responsible
+  for a large portion of aviation’s non-CO2 climate impact. Avoiding ISSRs through strategic flight rerouting
+  has been proposed as a short-term mitigation strategy. However, accurate forecast of ISSRs is hindered
+  by the difficulty of predicting Relative Humidity with respect to Ice, RHi, at cruising altitude. Observations
+  are problematic: Satellite-based global measurements carry large uncertainties while aircraft in-situ
+  measurements offer a limited spatial coverage. On the contrary, ERA5 reanalysis data are offer a global
+  estimate of RHi, but it is known to exhibit a dry bias near the tropopause where ISSRs are located as
+  well as significant random errors. In this study, we develop a hybrid ensemble machine learning (ML)
+  model to improve RHi estimates in the Upper Troposphere (UT) and Lower Stratosphere (LS) using ERA5
+  and aircraft measurements from the In-service Aircraft for a Global Observing System (IAGOS). The model
+  combines a XGBoost regressor for drier conditions (RHi < 85 %) and an Artificial Neural Network (ANN)
+  for more humid cases (RHi > 85 %). This hybrid approach significantly outperforms raw ERA5 data, reducing
+  the mean absolute error from 13.7 % to 11.4 % and improving the Equitable Threat Score (ETS) for ISSR
+  detection from 0.36 to 0.44. The greatest improvement is observed in the lower stratosphere, where the
+  ETS increases by 0.18 and the Mean Absolute Error (MAE) drops from 13.19 % to 10.71 %. These improvements
+  mark a key step toward more reliable identification of ISSRs, helping reduce the uncertainties that
+  currently limit effective flight-rerouting strategies.'
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,55 @@
+id: arxiv-2512.05139
+title: Spatiotemporal Satellite Image Downscaling with Transfer Encoders and Autoregressive Generative
+  Models
+authors:
+- Yang Xiang
+- Jingwen Zhong
+- Yige Yan
+- Petros Koutrakis
+- Eric Garshick
+- Meredith Franklin
+date: '2025-12-01'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2512.05139'
+links:
+  paper: https://arxiv.org/abs/2512.05139
+  pdf: https://arxiv.org/pdf/2512.05139
+topic: downscaling
+topics:
+- observations-remote-sensing
+type: model
+method:
+- diffusion
+- cnn
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Transfers a frozen U-Net encoder into a diffusion model to downscale MERRA-2 (50 km) to 7 km
+  G5NR fields over Asia, with R2 of 0.65-0.94.
+abstract: We present a transfer-learning generative downscaling framework to reconstruct fine resolution
+  satellite images from coarse scale inputs. Our approach combines a lightweight U-Net transfer encoder
+  with a diffusion-based generative model. The simpler U-Net is first pretrained on a long time series
+  of coarse resolution data to learn spatiotemporal representations; its encoder is then frozen and transferred
+  to a larger downscaling model as physically meaningful latent features. Our application uses NASA's
+  MERRA-2 reanalysis as the low resolution source domain (50 km) and the GEOS-5 Nature Run (G5NR) as the
+  high resolution target (7 km). Our study area included a large area in Asia, which was made computationally
+  tractable by splitting into two subregions and four seasons. We conducted domain similarity analysis
+  using Wasserstein distances confirmed minimal distributional shift between MERRA-2 and G5NR, validating
+  the safety of parameter frozen transfer. Across seasonal regional splits, our model achieved excellent
+  performance (R2 = 0.65 to 0.94), outperforming comparison models including deterministic U-Nets, variational
+  autoencoders, and prior transfer learning baselines. Out of data evaluations using semivariograms, ACF/PACF,
+  and lag-based RMSE/R2 demonstrated that the predicted downscaled images preserved physically consistent
+  spatial variability and temporal autocorrelation, enabling stable autoregressive reconstruction beyond
+  the G5NR record. These results show that transfer enhanced diffusion models provide a robust and physically
+  coherent solution for downscaling a long time series of coarse resolution images with limited training
+  periods. This advancement has significant implications for improving environmental exposure assessment
+  and long term environmental monitoring.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

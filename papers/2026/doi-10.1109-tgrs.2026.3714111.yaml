@@ -1,0 +1,69 @@
+id: doi-10.1109-tgrs.2026.3714111
+title: 'DeepTomo: An Explainable Physics-Informed Deep Learning Framework for Troposphere Tomography,
+  Toward AI-Based GNSS Data Assimilation'
+authors:
+- Saeid Haji-Aghajany
+- Benedikt S. Soja
+- Kefei Zhang
+- Witold Rohm
+date: '2026-01-01'
+year: 2026
+venue: IEEE Transactions on Geoscience and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/tgrs.2026.3714111
+  openalex: W7169007061
+links:
+  paper: https://doi.org/10.1109/tgrs.2026.3714111
+orgs:
+- eth-zurich
+topic: data-assimilation
+topics:
+- observations-remote-sensing
+type: model
+method:
+- cnn
+- physics-constrained
+spatial:
+- regional
+data:
+- era5
+- satellite
+- stations
+status: research
+summary: Physics-informed 3D CNN reconstructs 4D GNSS wet refractivity and corrects ERA5 toward GNSS,
+  radio occultation and radiosonde data, as a step toward AI-based GNSS assimilation.
+abstract: Accurate representation of atmospheric moisture is essential for reliable weather forecasting,
+  particularly for small-scale convective systems and extreme events. However, determining high-resolution
+  water vapor fields remains challenging. Conventional Global Navigation Satellite Systems (GNSS) troposphere
+  tomography reconstructs four-dimensional (4D) atmospheric wet refractivity fields but is limited by
+  sparse and uneven ray paths, an ill-conditioned coefficient matrix, and an ill-posed inverse problem.
+  Stabilization through constraints and regularization may introduce biases, while the low probability
+  of ray-ray intersections in the lowest tropospheric layers reduces observational influence, causing
+  some regions to depend more on background models than observations. To address these limitations, DeepTomo,
+  to the best of the authors' knowledge, the first Artificial Intelligence (AI)-based 4D GNSS troposphere
+  tomography, is introduced as an explainable physics-informed deep learning approach that combines hybrid
+  observational constraints with spatiotemporal learning. Beyond tomographic reconstruction, DeepTomo
+  is conceived as an AI-based assimilation of GNSS observations into ERA5 fields; it integrates a three-dimensional
+  (3D) convolutional neural network (CNN) with residual learning and attention mechanisms, and employs
+  a hybrid physics-informed loss function that combines GNSS-derived Zenith Wet Delay (ZWD) with radio
+  occultation (RO) and radiosonde refractivity profiles to correct the ERA5 background toward observational
+  constraints. By learning spatiotemporal relationships between observations and background fields, DeepTomo
+  refines wet refractivity estimates and enables physically consistent reconstruction even in voxels with
+  limited observations. Trained and validated over a dense GNSS network in coastal California using a
+  six-month dataset and evaluated against radiosonde and GNSS-derived ZWD data, DeepTomo performs strongly
+  during the extreme weather event of Hurricane Hilary, a tropical cyclone (TC), in August 2023. Compared
+  with conventional voxel-based tomography, it reduces the Root Mean Square Error (RMSE) by up to 64.85%
+  during the TC and 41.62% overall, capturing large moisture variability. Explainable AI (XAI) analysis
+  reveals dynamic spatial attention to regions of enhanced variability. A preliminary sensitivity analysis
+  using GraphCast forecasts shows that the moisture corrections introduced by DeepTomo correspond to short-range
+  forecast errors. This analysis provides an initial indication that DeepTomo, by producing physically
+  consistent GNSS-constrained moisture analyses from ERA5 background fields, has the potential to improve
+  initial conditions and forecast performance in next-generation AI weather forecasting systems such as
+  GraphCast, bridging GNSS observations with AI-based forecast initialization.
+significance: 3
+cited_by: 2
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

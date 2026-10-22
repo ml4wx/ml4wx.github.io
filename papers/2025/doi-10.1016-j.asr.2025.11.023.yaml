@@ -1,0 +1,56 @@
+id: doi-10.1016-j.asr.2025.11.023
+title: Attention enhanced ResNet for ocean surface wind speed retrieval using CYGNSS observables
+authors:
+- Yongchao Zhu
+- Qiuling Lu
+- Maorong Ge
+- Xiaochuan Qu
+- Tingye Tao
+- Kegen Yu
+- Shuiping Li
+date: '2025-11-11'
+year: 2025
+venue: Advances in Space Research
+venue_type: journal
+ids:
+  doi: 10.1016/j.asr.2025.11.023
+  openalex: W4416119586
+links:
+  paper: https://doi.org/10.1016/j.asr.2025.11.023
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- global
+data:
+- satellite
+- era5
+status: research
+summary: Attention-enhanced ResNet retrieves ocean surface wind speed from CYGNSS GNSS-R data with RMSE
+  of 1.379 m/s against ERA5.
+abstract: Global Navigation Satellite System Reflectometry (GNSS-R) has emerged as a pivotal technique
+  for ocean surface wind speed retrieval; however, establishing robust multi-parameter retrieval models
+  remains challenging due to the nonlinear relationships between GNSS-R observables and geophysical variables.
+  An Attention-enhanced Residual Network (Att-ResNet) is proposed to address this challenge, leveraging
+  Cyclone Global Navigation Satellite System (CYGNSS) bistatic radar data for wind speed estimation. The
+  CYGNSS datasets were processed to extract multi-parameter observables, including Delay-Doppler Maps
+  (DDMs), normalized bistatic radar cross-section (NBRCS), and incidence angle, which served as inputs
+  for training wind speed retrieval models using diverse backbone architectures (e.g., ResNet and AlexNet).
+  Ablation experiments employing the Att-ResNet framework were systematically conducted, with ERA5 (European
+  Centre for Medium-Range Weather Forecasts Reanalysis 5) and CCMP (Cross-Calibrated Multi-Platform) wind
+  products providing benchmark validation. Comparative analysis revealed that the Att-ResNet-retrieved
+  wind speeds exhibited strong spatiotemporal consistency with ERA5 and CCMP data. Quantitative evaluations
+  showed root mean square errors (RMSEs) of 1.379 m/s (ERA5) and 1.390 m/s (CCMP), with minimal biases
+  (-0.069 m/s and -0.014 m/s, respectively) and unbiased RMSEs (ubRMSEs) of 1.377 m/s and 1.390 m/s. The
+  study demonstrates that the Att-ResNet architecture, through its attention-driven feature selection
+  and residual learning mechanisms, significantly enhances spaceborne GNSS-R wind retrieval accuracy.
+  This artificial intelligence-driven framework establishes a new paradigm for high-resolution spatiotemporal
+  ocean surface wind monitoring, demonstrating the transformative potential of deep learning in advancing
+  GNSS-R applications.
+significance: 3
+cited_by: 2
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

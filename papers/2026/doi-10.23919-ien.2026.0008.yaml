@@ -1,0 +1,61 @@
+id: doi-10.23919-ien.2026.0008
+title: Short-term photovoltaic output prediction based on spatial downscaling NWP data and CNN-iTransformer-LSTM
+  model
+authors:
+- Zhewen Hu
+- Ligang Du
+- Xin Zhang
+- Lei Zhang
+- Wei Hui Hu
+date: '2026-03-01'
+year: 2026
+venue: iEnergy
+venue_type: journal
+ids:
+  doi: 10.23919/ien.2026.0008
+  openalex: W7138873767
+links:
+  paper: https://doi.org/10.23919/ien.2026.0008
+orgs:
+- tsinghua-university
+topic: applications-impacts
+topics:
+- downscaling
+type: model
+method:
+- cnn
+- transformer
+- rnn
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: research
+summary: RIME-RF spatial downscaling of NWP feeding a CNN-iTransformer-LSTM improves short-term PV power
+  forecasts at a Hebei station, including on overcast and rainy days.
+abstract: To enhance the accuracy of short-term photovoltaic power output prediction and address issues
+  such as insufficient spatial resolution of meteorological forecast data and weak generalization ability
+  of models, this paper proposes a prediction method that integrates spatial downscaling meteorological
+  data with a convolutional neural network (CNN)-iTransformer-long short-term memory (LSTM) model. First,
+  the rime-optimized random forest regression algorithm (RIME-RF) is employed to perform spatial downscaling
+  on numerical weather prediction (NWP) data, thereby improving its local applicability. Second, a CNN-iTransformer-LSTM
+  hybrid prediction model is constructed. This model utilizes a CNN as a spatial feature extractor to
+  capture local patterns in meteorological data, employs an iTransformer to model the global dependencies
+  among multiple variables, and leverages an LSTM to enhance the learning of short-term temporal dynamic
+  features, thereby achieving efficient collaborative mining of multi-scale features. Finally, experiments
+  are conducted using actual data from a photovoltaic power station in Hebei, China, during various seasons
+  and weather conditions. The results show that the proposed model outperforms the comparison models in
+  terms of the root mean square error (RMSE), mean absolute error (MAE), and R2, maintaining high prediction
+  accuracy and stability even under complex weather conditions such as overcast and rainy days. The downscaling
+  process further enhances the prediction performance, verifying the effectiveness and practicality of
+  this method.
+significance: 2
+cited_by: 1
+score: 18
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,55 @@
+id: doi-10.1109-jstars.2026.3710785
+title: 'ST-Mamba-LDM: An Attention-Mamba Hybrid Spatio-Temporal Latent Diffusion Model for Radar Echo-Based
+  Precipitation Nowcasting'
+authors:
+- Yuxin Lu
+- Chunru Xiong
+- jie Mo
+- Meiqing Xu
+- Kaidi Li
+date: '2026-01-01'
+year: 2026
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2026.3710785
+  openalex: W7167634788
+links:
+  paper: https://doi.org/10.1109/jstars.2026.3710785
+topic: nowcasting
+type: model
+method:
+- diffusion
+- transformer
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Attention-Mamba hybrid latent diffusion model for SEVIR radar nowcasting reaches CSI-m 0.409,
+  11.4% above DiffCast.
+abstract: Existing deep learning-based methods for radar echo prediction in precipitation nowcasting often
+  exhibit limited capability in modeling complex spatio-temporal dynamics, which leads to over-smoothed
+  forecasts and inadequate representation of irregular variations and fine-scale structures in precipitation
+  systems. To address these limitations, we propose ST-Mamba-latent diffusion model (LDM), an Attention-Mamba
+  hybrid spatio-temporal latent diffusion model for radar echo-based precipitation nowcasting. The proposed
+  framework adopts a two-stage architecture. In the first stage, a deterministic conditional network extracts
+  spatio-temporal priors from historical observations. This network consists of a variational autoencoder
+  and a gated spatio-temporal attention translator inherited from the SimVPV2 architecture. Specifically,
+  each Attention-Mamba Block comprises a spatial hybrid module (SHM) and a temporal hybrid module (THM).
+  The SHM integrates spatial attention with spatial Mamba to jointly model global dependencies and local
+  details, while the THM combines temporal attention with bidirectional temporal Mamba to capture temporal
+  evolution patterns more effectively. Extensive experiments on the SEVIR dataset demonstrate that ST-Mamba-LDM
+  consistently outperforms existing mainstream methods across multiple evaluation metrics. In particular,
+  it achieves a CSI-m of 0.409, representing an 11.4% improvement over DiffCast, while attaining structural
+  similarity index and learned perceptual image patch similarity values of 0.732 and 0.169, respectively.
+  These results confirm the effectiveness of the proposed architecture in generating high-fidelity precipitation
+  forecasts with superior spatio-temporal consistency and structural realism.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,49 @@
+id: arxiv-2603.13563
+title: 'MR-GNF: Multi-Resolution Graph Neural Forecasting on Ellipsoidal Meshes for Efficient Regional
+  Weather Prediction'
+authors:
+- Andrii Shchur
+- Inna Skarga-Bandurova
+date: '2026-03-13'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2603.13563'
+links:
+  paper: https://arxiv.org/abs/2603.13563
+  pdf: https://arxiv.org/pdf/2603.13563
+  code: https://github.com/AndriiShchur/MR-GNF
+topic: regional-km-scale
+type: model
+method:
+- gnn
+- transformer
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: Multi-resolution graph neural network on an ellipsoidal mesh forecasts UK-Ireland 6–24 h temperature,
+  wind and precipitation with 1.6M parameters trained on ERA5.
+abstract: 'Weather forecasting offers an ideal testbed for artificial intelligence (AI) to learn complex,
+  multi-scale physical systems. Traditional numerical weather prediction remains computationally costly
+  for frequent regional updates, as high-resolution nests require intensive boundary coupling. We introduce
+  Multi-Resolution Graph Neural Forecasting (MR-GNF), a lightweight, physics-aware model that performs
+  short-term regional forecasts directly on an ellipsoidal, multi-scale graph of the Earth. The framework
+  couples a 0.25° region of interest with a 0.5° context belt and 1.0° outer domain, enabling continuous
+  cross-scale message passing without explicit nested boundaries. Its axial graph-attention network alternates
+  vertical self-attention across pressure levels with horizontal graph attention across surface nodes,
+  capturing implicit 3-D structure in just 1.6 M parameters. Trained on 40 years of ERA5 reanalysis (1980-2024),
+  MR-GNF delivers stable +6 h to +24 h forecasts for near-surface temperature, wind, and precipitation
+  over the UK-Ireland sector. Despite a total compute cost below 80 GPU-hours on a single RTX 6000 Ada,
+  the model matches or exceeds heavier regional AI systems while preserving physical consistency across
+  scales. These results demonstrate that graph-based neural operators can achieve trustworthy, high-resolution
+  weather prediction at a fraction of NWP cost, opening a practical path toward AI-driven early-warning
+  and renewable-energy forecasting systems. Project page and code: https://github.com/AndriiShchur/MR-GNF'
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

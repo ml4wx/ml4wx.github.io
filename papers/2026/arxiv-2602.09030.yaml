@@ -1,0 +1,46 @@
+id: arxiv-2602.09030
+title: 'UniPhy: Unifying Riemannian-Clifford Geometry and Biorthogonal Dynamics for Planetary-Scale Continuous
+  Weather Modeling'
+authors:
+- Ruiqing Yan
+- Haoyu Deng
+- Yuhang Shao
+- Xingbo Du
+- Jingyuan Wang
+- Zhengyi Yang
+date: '2026-01-29'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2602.09030'
+links:
+  paper: https://arxiv.org/abs/2602.09030
+  pdf: https://arxiv.org/pdf/2602.09030
+  code: https://github.com/yrqUni/UniPhy
+topic: global-medium-range
+type: model
+method:
+- physics-constrained
+timescale:
+- medium
+spatial:
+- global
+status: research
+summary: UniPhy is a continuous-time neural stochastic PDE weather model with non-Hermitian spectral operators
+  and a parallel prefix-sum integrator for planetary-scale forecasting.
+abstract: While data-driven weather models have achieved remarkable deterministic accuracy, they fundamentally
+  rely on discrete-time mappings and closed-system assumptions, failing to capture the multi-scale continuous
+  dynamics and thermodynamic openness of the atmosphere. To address these limitations, we propose UniPhy,
+  a continuous-time non-Hermitian neural stochastic partial differential equation (SPDE) solver. Geometrically,
+  we employ Riemannian-Clifford gauge transformations to flatten planetary heterogeneity, enabling globally
+  consistent operations. Dynamically, we construct non-Hermitian biorthogonal spectral operators integrated
+  with a global flux tracker to capture transient energy growth and open-system exchange. Computationally,
+  by identifying the algebraic associativity of the analytic solution, we reformulate adaptive physical
+  integration as a parallel prefix-sum problem, achieving log-linear sequence parallelism. UniPhy establishes
+  a physically complete foundation model architecture that unifies geometric adaptivity, thermodynamic
+  consistency, and computational efficiency. Our code is available at <https://github.com/yrqUni/UniPhy>.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

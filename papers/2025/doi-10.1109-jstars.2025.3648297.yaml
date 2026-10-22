@@ -1,0 +1,58 @@
+id: doi-10.1109-jstars.2025.3648297
+title: 'SRSDNet: Super-Resolution Snow Depth Retrieval and Mapping Over the Qinghai-Tibet Plateau'
+authors:
+- Linglong Zhu
+- Zhou Zhou
+- Yonghong Zhang
+- Renliang Xu
+- Xu Liu
+- Xiaojun Niu
+- Xi Kan
+- Jiangeng Wang
+date: '2025-12-26'
+year: 2025
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2025.3648297
+  openalex: W7117313217
+links:
+  paper: https://doi.org/10.1109/jstars.2025.3648297
+orgs:
+- nuist
+topic: observations-remote-sensing
+topics:
+- downscaling
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- satellite
+- stations
+status: research
+summary: SRSDNet super-resolves passive microwave snow depth to 6.25 km on the Tibetan Plateau, using
+  Sentinel-1 labels and reaching RMSE 12.1 cm.
+abstract: 'Conventional passive microwave (PMW) snow depth (SD) retrieval faces dual limitations over
+  the Qinghai-Tibetan Plateau (QTP): coarse spatial resolution (typically >25 km) obscures topographic
+  heterogeneity, while station-based labels introduce representativity errors by treating sparse points
+  as pixel-scale “truth.” To overcome these challenges, we propose SRSDNet (Super-Resolution Snow Depth
+  Network)—a deep learning framework integrating FengYun-3 PMW data with auxiliary variables (topography,
+  fractional snow cover). Crucially, SRSDNet pioneers the use of 500-m resolution Sentinel-1 SD products
+  as area-constrained labels, eliminating point-to-pixel mismatches. Its architecture incorporates three
+  novel modules, the bidirectional feature extract block (BFEB) extracts anisotropic features via bidirectional
+  convolutions to resolve mountain snow textures; the optimized coordination attention (OCA) dynamically
+  weighted multi-source channels, especially low-frequency microwaves in deep snow; and the reconstructive
+  output block (ROB) reconstructs 6.25-km outputs with local detail and global consistency. The results
+  of this study were systematically validated at 95 meteorological stations in QTP during the 2017-2018
+  snow season, SRSDNet achieves best-in-class accuracy (RMSE = 12.075 cm, MAE = 7.724 cm, R2 = 0.781).
+  Notably, it sets a new benchmark for deep snow retrieval with an RMSE of 9.939 cm for SD >50 cm and
+  a relative error of less than 20%. This work establishes a paradigm for high-resolution SD mapping in
+  complex terrain, directly supporting hydrological forecasting and avalanche risk management on the QTP.'
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

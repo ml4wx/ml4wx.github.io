@@ -1,0 +1,59 @@
+id: doi-10.1017-eds.2026.10039
+title: Correcting dry/wet classification bias in precipitation downscaling via generative adversarial
+  networks
+authors:
+- Shivam H Singh
+- Simon Michael Papalexiou
+- Hebatallah Abdelmoaty
+- Thomas Hartvigsen
+- Antonios Mamalakis
+date: '2026-01-01'
+year: 2026
+venue: Environmental Data Science
+venue_type: journal
+ids:
+  doi: 10.1017/eds.2026.10039
+  openalex: W7162694040
+links:
+  paper: https://doi.org/10.1017/eds.2026.10039
+topic: downscaling
+topics:
+- post-processing
+type: model
+method:
+- gan-vae
+- cnn
+spatial:
+- regional
+data:
+- radar
+- other
+status: research
+summary: Conditional WGAN with physical constraints downscales precipitation 10x to correct dry/wet misclassification
+  over the contiguous US, improving spatial dependence and realism.
+abstract: 'Abstract Accurately downscaling precipitation from coarse to high spatial resolutions remains
+  a critical challenge in climate and hydrometeorological modeling. A key limitation is the frequent misclassification
+  of dry and wet regions, which compromises the realism and reliability of high-resolution outputs. To
+  address this, we propose a deep learning-based downscaling framework that explicitly models dry/wet
+  classification by transforming low-resolution 6×6 precipitation inputs into high-resolution 60 × 60
+  binary classification fields. We evaluate two architectures, a convolutional encoder-decoder and a conditional
+  Wasserstein generative adversarial network (WGAN), utilizing three training strategies: (1) using binary
+  wet/dry inputs, (2) using precipitation intensity inputs, and (3) using precipitation intensity inputs
+  and adding physical constraints. Models are trained and validated on both synthetically generated precipitation
+  fields and real radar-estimated hourly precipitation data over the contiguous United States. Performance
+  is assessed using metrics including the overall probability of zero ( P 0 normal upper P 0 $ {\mathrm{P}}_0
+  $ ) and spatial autocorrelations. Results show that incorporating intensity information improves dry/wet
+  classification, while adding physical constraints further enhances accuracy, generalization, and physical
+  consistency, especially for WGAN models. The convolutional encoder-decoder produces smoother outputs
+  with stable performance regarding marginal statistics, whereas the WGAN generates sharper boundaries
+  and more realistic dry/wet fields, improving on the spatial dependence structure. Furthermore, we demonstrate
+  that the derived dry/wet classification fields can be used as binary masks to bias correct downscaled
+  precipitation fields, enhancing both statistical fidelity and spatial realism. These findings highlight
+  the value of a physically informed bias-correction strategy for improving the spatial realism of high-resolution
+  precipitation fields from coarse-scale inputs.'
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

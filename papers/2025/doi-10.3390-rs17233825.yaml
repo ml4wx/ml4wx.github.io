@@ -1,0 +1,54 @@
+id: doi-10.3390-rs17233825
+title: Physics-Informed Deep Learning for 3D Wind Field Retrieval of Open-Ocean Typhoons
+authors:
+- Xingyu Zhang
+- Tian Zhang
+- Shitang Ke
+- Houtian He
+- Ruihan Zhang
+- Yongqi Miao
+- Teng Liang
+date: '2025-11-26'
+year: 2025
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs17233825
+  openalex: W4416718943
+links:
+  paper: https://doi.org/10.3390/rs17233825
+  pdf: https://www.mdpi.com/2072-4292/17/23/3825/pdf?version=1764164479
+topic: observations-remote-sensing
+topics:
+- extremes-hazards
+type: model
+method:
+- cnn
+- physics-constrained
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: CNN retrieves 3D typhoon wind fields from Himawari-8/9 imagery, with a continuity-equation loss
+  cutting U-wind error by 29.6% over an infrared-only baseline.
+abstract: Accurate retrieval of three-dimensional (3D) typhoon wind fields over the open ocean remains
+  a critical challenge due to observational gaps and physical inconsistencies in existing methods. Based
+  on multi-channel data from the Himawari-8/9 geostationary satellites, this study proposes a physics-informed
+  deep learning framework for high-resolution 3D wind field reconstruction of open-ocean typhoons. A convolutional
+  neural network was designed to establish an end-to-end mapping from 16-channel satellite imagery to
+  the 3D wind field across 16 vertical levels. To enhance physical consistency, the continuity equation,
+  enforcing mass conservation, was embedded as a strong constraint into the loss function. Four experimental
+  scenarios were designed to evaluate the contributions of multi-channel data and physical constraints.
+  Results demonstrate that the full model, integrating both visible/infrared channels and the physical
+  constraint, achieved the best performance, with mean absolute errors of 2.73 m/s and 2.54 m/s for U-
+  and V-wind components, respectively. This represents significant improvements over the baseline infrared-only
+  model (29.6% for U, 21.6% for V), with notable error reductions in high-wind regions (>20 m/s). The
+  approach effectively captures fine-scale structures like eyewalls and spiral rainbands while maintaining
+  vertical physical coherence, offering a robust foundation for typhoon monitoring and reanalysis.
+significance: 4
+cited_by: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,50 @@
+id: arxiv-2512.06348
+title: Modeling Spatio-temporal Extremes via Conditional Variational Autoencoders
+authors:
+- Xiaoyu Ma
+- Likun Zhang
+- Christopher K. Wikle
+date: '2025-12-06'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2512.06348'
+  openalex: W7110998116
+links:
+  paper: https://arxiv.org/abs/2512.06348
+  pdf: https://arxiv.org/pdf/2512.06348
+topic: extremes-hazards
+topics:
+- climate-analysis-attribution
+type: model
+method:
+- gan-vae
+- cnn
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Conditional VAE with CNN decoder models spatio-temporal fire weather extremes over eastern Australia
+  conditioned on ENSO, enabling counterfactual tail-risk analysis at low computational cost.
+abstract: Extreme weather events are widely studied in fields such as agriculture, ecology, and meteorology.
+  The spatio-temporal co-occurrence of extreme events can strengthen or weaken under changing climate
+  conditions. In this paper, we propose a novel approach to model spatio-temporal extremes by integrating
+  climate indices via a conditional variational autoencoder (cXVAE). A convolutional neural network (CNN)
+  is embedded in the decoder to convolve climatological indices with the spatial dependence within the
+  latent space, thereby allowing the decoder to be dependent on the climate variables. There are three
+  main contributions here. First, we demonstrate through extensive simulations that the proposed conditional
+  XVAE accurately emulates spatial fields and recovers spatially and temporally varying extremal dependence
+  with very low computational cost post training. Second, we provide a simple, scalable approach to detecting
+  condition-driven shifts and whether the dependence structure is invariant to the conditioning variable.
+  Third, when dependence is found to be condition-sensitive, the conditional XVAE supports counterfactual
+  experiments allowing intervention on the climate covariate and propagating the associated change through
+  the learned decoder to quantify differences in joint tail risk, co-occurrence ranges, and return metrics.
+  To demonstrate the practical utility and performance of the model in real-world scenarios, we apply
+  our method to analyze the monthly maximum Fire Weather Index (FWI) over eastern Australia from 2014
+  to 2024 conditioned on the El Niño/Southern Oscillation (ENSO) index.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

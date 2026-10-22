@@ -1,0 +1,50 @@
+id: doi-10.3390-geosciences16030104
+title: Fusing Deep Learning and Gradient Boosting for Robust Minute-Level Atmospheric Visibility Nowcasting
+authors:
+- Yuguo Ni
+- Chenbo Xie
+- Zichen Zhang
+- Jianfeng Chen
+date: '2026-03-03'
+year: 2026
+venue: Geosciences
+venue_type: journal
+ids:
+  doi: 10.3390/geosciences16030104
+  openalex: W7133302063
+links:
+  paper: https://doi.org/10.3390/geosciences16030104
+  pdf: https://www.mdpi.com/2076-3263/16/3/104/pdf?version=1772529217
+topic: local-forecasting
+type: model
+method:
+- classical-ml
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Stacked MLP and gradient-boosted trees ensemble nowcasts minute-scale visibility, reaching R²
+  0.82 below 5 km but only 0.46 above 20 km.
+abstract: Atmospheric visibility nowcasting is vital for safety-critical operations but remains challenging
+  due to complex atmospheric dynamics. We propose a compact stacking ensemble merging a multilayer perceptron
+  (MLP) and gradient-boosted regression trees (GBRT). The model, trained on seven months of minute-scale
+  resolution data with a variability-adaptive filter to suppress sensor noise, employs cross-validation.
+  Results demonstrate that the ensemble achieves its peak performance in the operationally critical low-visibility
+  regime (V < 5 km). This range is particularly significant as it encompasses the Category I and II (CAT
+  I/II) operational thresholds defined by the World Meteorological Organization (WMO) for aviation and
+  surface transportation safety. In this regime, the ensemble yields an R2 of 0.82 and an MAE≈385 m, significantly
+  outperforming single learners during rapid weather transitions. Conversely, in the high-visibility regime
+  (V > 20 km), the explanatory power decreases (R2 of 0.46) due to inherent forward-scattering sensor
+  uncertainties and low aerosol concentrations. Despite these range-specific physical limitations, the
+  model maintains high robustness with narrowly centered residuals. This efficient approach, utilizing
+  cost-effective in situ sensors, is highly suitable for airport and road-weather applications and offers
+  strong potential for multi-site scalability.
+significance: 2
+cited_by: 1
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

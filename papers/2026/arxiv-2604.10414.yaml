@@ -1,0 +1,47 @@
+id: arxiv-2604.10414
+title: Neural Stochastic Processes for Satellite Precipitation Refinement
+authors:
+- Shunya Nagashima
+- Takumi Bannai
+- Shuitsu Koyama
+- Tomoya Mitsui
+- Shuntaro Suzuki
+date: '2026-04-12'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2604.10414'
+links:
+  paper: https://arxiv.org/abs/2604.10414
+  pdf: https://arxiv.org/pdf/2604.10414
+topic: observations-remote-sensing
+topics:
+- post-processing
+type: model
+method:
+- other
+spatial:
+- regional
+data:
+- satellite
+- stations
+status: research
+summary: Neural Stochastic Process fuses gauge observations with satellite precipitation over CONUS, outperforming
+  13 baselines and JAXA's operational gauge-calibrated product on the new QPEBench.
+abstract: Accurate precipitation estimation is critical for flood forecasting, water resource management,
+  and disaster preparedness. Satellite products provide global hourly coverage but contain systematic
+  biases; ground-based gauges are accurate at point locations but too sparse for direct gridded correction.
+  Existing methods fuse these sources by interpolating gauge observations onto the satellite grid, but
+  treat each time step independently and therefore discard temporal structure in precipitation fields.
+  We propose Neural Stochastic Process (NSP), a model that pairs a Neural Process encoder conditioning
+  on arbitrary sets of gauge observations with a latent Neural SDE on a 2D spatial representation. NSP
+  is trained under a single variational objective with simulation-free cost. We also introduce QPEBench,
+  a benchmark of 43{,}756 hourly samples over the Contiguous United States (2021--2025) with four aligned
+  data sources and six evaluation metrics. On QPEBench, NSP outperforms 13 baselines across all six metrics
+  and surpasses JAXA's operational gauge-calibrated product. An additional experiment on Kyushu, Japan
+  confirms generalization to a different region with independent data sources.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

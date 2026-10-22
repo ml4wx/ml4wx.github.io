@@ -1,0 +1,50 @@
+id: arxiv-2602.01486
+title: Multi-Scale Wavelet Transformers for Operator Learning of Dynamical Systems
+authors:
+- Xuesong Wang
+- Michael Groom
+- Rafael Oliveira
+- He Zhao
+- Terence O'Kane
+- Edwin V. Bonilla
+date: '2026-02-01'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2602.01486'
+  openalex: W7127363493
+links:
+  paper: https://arxiv.org/abs/2602.01486
+  pdf: https://arxiv.org/pdf/2602.01486
+topic: global-medium-range
+type: model
+method:
+- transformer
+- neural-operator
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- other
+status: research
+summary: Wavelet-tokenized transformers reduce error on chaotic systems and ERA5 forecasts, cutting climatological
+  bias while targeting spectral bias in neural operators.
+abstract: Recent years have seen a surge in data-driven surrogates for dynamical systems that can be orders
+  of magnitude faster than numerical solvers. However, many machine learning-based models such as neural
+  operators exhibit spectral bias, attenuating high-frequency components that often encode small-scale
+  structure. This limitation is particularly damaging in applications such as weather forecasting, where
+  misrepresented high frequencies can induce long-horizon instability. To address this issue, we propose
+  multi-scale wavelet transformers (MSWTs), which learn system dynamics in a tokenized wavelet domain.
+  The wavelet transform explicitly separates low- and high-frequency content across scales. MSWTs leverage
+  a wavelet-preserving downsampling scheme that retains high-frequency features and employ wavelet-based
+  attention to capture dependencies across scales and frequency bands. Experiments on chaotic dynamical
+  systems show substantial error reductions and improved long horizon spectral fidelity. On the ERA5 climate
+  reanalysis, MSWTs further reduce climatological bias, demonstrating their effectiveness in a real-world
+  forecasting setting.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

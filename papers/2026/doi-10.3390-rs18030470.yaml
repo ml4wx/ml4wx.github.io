@@ -1,0 +1,69 @@
+id: doi-10.3390-rs18030470
+title: The Prediction of Low-Level Jet Using Machine Learning Based on Turbulence Observations and Remote
+  Sensing
+authors:
+- Minghao Chen
+- Yan Ren
+- Hongsheng Zhang
+- Wei Wei
+- Weiqi Tang
+- Jiening Liang
+- Xianjie Cao
+- Pengfei Tian
+- Lei Zhang
+date: '2026-02-02'
+year: 2026
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs18030470
+  openalex: W7127157596
+links:
+  paper: https://doi.org/10.3390/rs18030470
+  pdf: https://www.mdpi.com/2072-4292/18/3/470/pdf?version=1770021578
+orgs:
+- cma
+topic: local-forecasting
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+- other
+status: research
+summary: A two-stage LightGBM and CatBoost framework predicts low-level jet occurrence (F1 0.82) and height
+  and intensity (R² 0.64 and 0.79) from Lanzhou observations.
+abstract: Low-level jets (LLJs) are common strong wind structures in the atmospheric boundary layer. They
+  have important impacts on aviation safety, wind energy utilization and pollutant dispersion. However,
+  the formation mechanisms of LLJs are complex. Traditional parameterization schemes and numerical models
+  still show limitations in forecasting LLJ occurrence and resolving their structures. In this study,
+  wind lidar, near-surface turbulence and gradient meteorological observations from the Semi-Arid Climate
+  and Environment Observatory of Lanzhou University are combined to construct a multi-source low-level
+  dataset. Four processing modules are designed, including multi-source data fusion, turbulence preprocessing,
+  turbulence intermittency metrics and LLJ identification, to overcome the constraints of single-platform
+  observations. Six commonly used machine learning algorithms (LightGBM, XGBoost, CatBoost, K-nearest
+  neighbors, Balanced Random Forest, and ExtraTrees) are compared. A two-stage classification–regression
+  framework is then adopted. LightGBM is used for LLJ occurrence, and CatBoost is used for LLJ height
+  and intensity, to build an LLJ-2Stage prediction system. The system performs automatic LLJ identification
+  and predicts jet intensity and core height. For LLJ occurrence, the harmonic-mean F1-score of precision
+  and recall reaches 0.820. The coefficient of determination R2 is 0.643 for height prediction and 0.794
+  for intensity prediction. Both the classification and regression parts show good accuracy and stability.
+  The SHAP method is further applied to assess model interpretability and to identify key predictors that
+  control LLJ occurrence, height and intensity. Results indicate that thermal variables, such as net radiation
+  (Rn) and sensible heat flux (H), dominate LLJ occurrence and structural changes. The strength of turbulence
+  intermittency provides valuable supplementary information for locating the LLJ core height. Two representative
+  nocturnal LLJ cases further show a consistent near-surface evolution during the LLJ period, with enhanced
+  TKE and reduced H, followed by a gradual recovery after decay, while Rn remains persistently low, consistent
+  with the SHAP-indicated effects. The proposed framework predicts LLJ occurrence and structural evolution
+  and is of significance for improving understanding of boundary layer processes, air-pollution control,
+  wind energy utilization and low-level aviation safety.
+significance: 3
+cited_by: 1
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

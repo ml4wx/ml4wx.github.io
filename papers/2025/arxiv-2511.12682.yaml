@@ -1,0 +1,49 @@
+id: arxiv-2511.12682
+title: Attention-Enhanced Convolutional Autoencoder and Structured Delay Embeddings for Weather Prediction
+authors:
+- Amirpasha Hedayat
+- Karthik Duraisamy
+date: '2025-11-16'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2511.12682'
+links:
+  paper: https://arxiv.org/abs/2511.12682
+  pdf: https://arxiv.org/pdf/2511.12682
+topic: global-medium-range
+type: model
+method:
+- cnn
+- other
+timescale:
+- short
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Attention-augmented convolutional autoencoder with a learned linear time-delay latent operator
+  forecasts ERA5 weather, accurate in-distribution but degrading beyond the training window.
+abstract: Weather prediction is a quintessential problem involving the forecasting of a complex, nonlinear,
+  and chaotic high-dimensional dynamical system. This work introduces an efficient reduced-order modeling
+  (ROM) framework for short-range weather prediction and investigates fundamental questions in dimensionality
+  reduction and reduced order modeling of such systems. Unlike recent AI-driven models, which require
+  extensive computational resources, our framework prioritizes efficiency while achieving reasonable accuracy.
+  Specifically, a ResNet-based convolutional autoencoder augmented by block attention modules is developed
+  to reduce the dimensionality of high-dimensional weather data. Subsequently, a linear operator is learned
+  in the time-delayed embedding of the latent space to efficiently capture the dynamics. Using the ERA5
+  reanalysis dataset, we demonstrate that this framework performs well in-distribution as evidenced by
+  effectively predicting weather patterns within training data periods. We also identify important limitations
+  in generalizing to future states, particularly in maintaining prediction accuracy beyond the training
+  window. Our analysis reveals that weather systems exhibit strong temporal correlations that can be effectively
+  captured through linear operations in an appropriately constructed embedding space, and that projection
+  error rather than inference error is the main bottleneck. These findings shed light on some key challenges
+  in reduced-order modeling of chaotic systems and point toward opportunities for hybrid approaches that
+  combine efficient reduced-order models as baselines with more sophisticated AI architectures, particularly
+  for applications in long-term climate modeling where computational efficiency is paramount.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

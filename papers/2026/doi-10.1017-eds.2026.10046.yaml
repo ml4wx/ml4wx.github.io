@@ -1,0 +1,51 @@
+id: doi-10.1017-eds.2026.10046
+title: Super-resolving coarse-resolution weather forecasts with flow matching
+authors:
+- Aymeric Delefosse
+- Anastase Charantonis
+- Dominique Béréziat
+date: '2026-01-01'
+year: 2026
+venue: Environmental Data Science
+venue_type: journal
+ids:
+  arxiv: '2604.00897'
+  doi: 10.1017/eds.2026.10046
+  openalex: W7172696808
+links:
+  paper: https://doi.org/10.1017/eds.2026.10046
+orgs:
+- inria
+topic: downscaling
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Flow-matching super-resolution applied as post-processing to coarse global forecasts yields 0.25°
+  ensembles competitive with an operational ensemble at modest extra training cost.
+abstract: Abstract Machine learning-based weather forecasting models now surpass state-of-the-art numerical
+  weather prediction systems, but training and operating these models at high spatial resolution remains
+  computationally expensive. We present a modular framework that decouples forecasting from spatial resolution
+  by applying learned generative super-resolution as a post-processing step to coarse-resolution forecast
+  trajectories. We formulate super-resolution as a stochastic inverse problem, using a residual formulation
+  to preserve large-scale structure while reconstructing unresolved variability. The model is trained
+  with flow matching exclusively on reanalysis data and is applied to global medium-range forecasts. We
+  evaluate (i) design consistency by re-coarsening super-resolved forecasts and comparing them to the
+  original coarse trajectories and (ii) high-resolution forecast quality using standard ensemble verification
+  metrics and spectral diagnostics. Results show that super-resolution preserves large-scale structure
+  and variance after re-coarsening, introduces physically consistent small-scale variability, and achieves
+  competitive probabilistic forecast skill at 0.25° resolution relative to an operational ensemble baseline
+  while requiring only a modest additional training cost compared with end-to-end high-resolution forecasting.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

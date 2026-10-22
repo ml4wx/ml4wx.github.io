@@ -1,0 +1,55 @@
+id: arxiv-2604.22580
+title: 'Explanation of Dynamic Physical Field Predictions using WassersteinGrad: Application to Autoregressive
+  Weather Forecasting'
+authors:
+- Younes Essafouri
+- Laure Raynaud
+- Luciano Drozda
+- Laurent Risser
+date: '2026-04-24'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2604.22580'
+  openalex: W7155945967
+links:
+  paper: https://arxiv.org/abs/2604.22580
+  pdf: https://arxiv.org/pdf/2604.22580
+orgs:
+- meteo-france
+topic: xai-uq-physics
+topics:
+- global-medium-range
+type: model
+method:
+- other
+timescale:
+- short
+spatial:
+- regional
+data:
+- other
+status: research
+summary: WassersteinGrad replaces pointwise SmoothGrad averaging with entropic Wasserstein barycenters
+  of attribution maps, giving more robust explanations of autoregressive regional weather forecasts.
+abstract: 'As the demand to integrate Artificial Intelligence into high-stakes environments continues
+  to grow, explaining the reasoning behind neural-network predictions has shifted from a theoretical curiosity
+  to a strict operational requirement. Our work is motivated by the explanations of autoregressive neural
+  predictions on dynamic physical fields, as in weather forecasting. Gradient-based feature attribution
+  methods are widely used to explain the predictions on such data, in particular due to their scalability
+  to high-dimensional inputs. It is also interesting to remark that gradient-based techniques such as
+  SmoothGrad are now standard on images to robustify the explanations using pointwise averages of the
+  attribution maps obtained from several noised inputs. Our goal is to efficiently adapt this aggregation
+  strategy to dynamic physical fields. To do so, our first contribution is to identify a fundamental failure
+  mode when averaging perturbed attribution maps on dynamic physical fields: stochastic input perturbations
+  do not induce stationary amplitude noise in attribution maps, but instead cause a geometric displacement
+  of the attributions. Consequently, pointwise averaging blurs these spatially misaligned features. To
+  tackle this issue, we introduce WassersteinGrad, which extracts a geometric consensus of perturbed attribution
+  maps by computing their entropic Wasserstein barycenter. The results, obtained on regional weather data
+  and a meteorologist-validated neural model, demonstrate promising explainability properties of WassersteinGrad
+  over gradient-based baselines across both single-step and autoregressive forecasting settings.'
+significance: 3
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

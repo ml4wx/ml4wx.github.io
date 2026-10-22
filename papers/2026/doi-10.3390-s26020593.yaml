@@ -1,0 +1,56 @@
+id: doi-10.3390-s26020593
+title: Attention-Enhanced CNN-LSTM with Spatial Downscaling for Day-Ahead Photovoltaic Power Forecasting
+authors:
+- Feiyu Peng
+- Xiafei Tang
+- Maner Xiao
+date: '2026-01-15'
+year: 2026
+venue: Sensors
+venue_type: journal
+ids:
+  doi: 10.3390/s26020593
+  openalex: W7124268825
+links:
+  paper: https://doi.org/10.3390/s26020593
+topic: applications-impacts
+topics:
+- downscaling
+type: model
+method:
+- cnn
+- rnn
+- transformer
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: research
+summary: An attention CNN-LSTM with XGBoost-based NWP downscaling improves day-ahead PV forecasts, reducing
+  RMSE from 0.0328 to 0.0184 versus raw NWP inputs.
+abstract: Accurate day-ahead photovoltaic (PV) power forecasting is essential for secure operation and
+  scheduling in power systems with high PV penetration, yet its performance is often constrained by the
+  coarse spatial resolution of operational numerical weather prediction (NWP) products at the plant scale.
+  To address this issue, this paper proposes an attention-enhanced CNN-LSTM forecasting framework integrated
+  with a spatial downscaling strategy. First, seasonal and diurnal characteristics of PV generation are
+  analyzed based on theoretical irradiance and historical power measurements. A CNN-LSTM network with
+  a channel-wise attention mechanism is then employed to capture temporal dependencies, while a composite
+  loss function is adopted to improve robustness. We fuse multi-source meteorological variables from NWP
+  outputs with an attention-based module. We also introduce a multi-site XGBoost downscaling model. This
+  model refines plant-level meteorological inputs. We evaluate the framework on multi-site PV data from
+  representative seasons. The results show lower RMSE and higher correlation than the benchmark models.
+  The gains are larger in medium power ranges. These findings suggest that spatially refined NWP inputs
+  improve day-ahead PV forecasting. They also show that attention-enhanced deep learning makes the forecasts
+  more reliable. Quantitatively, the downscaled meteorological variables consistently achieve lower normalized
+  MAE and normalized RMSE than the raw NWP fields, with irradiance-related errors reduced by about 40%
+  to 55%. For day-ahead PV forecasting, using downscaled NWP inputs reduces RMSE from 0.0328 to 0.0184
+  and MAE from 0.0194 to 0.0112, while increasing the Pearson correlation to 0.995 and the CR to 98.1%.
+significance: 2
+cited_by: 6
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

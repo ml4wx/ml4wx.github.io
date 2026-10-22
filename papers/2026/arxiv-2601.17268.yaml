@@ -1,0 +1,66 @@
+id: arxiv-2601.17268
+title: Learning Accurate Storm-Scale Evolution from Observations
+authors:
+- Jaideep Pathak
+- Mohammad Shoaib Abbas
+- Peter Harrington
+- Zeyuan Hu
+- Noah Brenowitz
+- Suman Ravuri
+- Alberto Carpentieri
+- Jussi Leinonen
+- Corey Adams
+- Oliver Hennigh
+- Nicholas Geneva
+- Dale Durran
+- Mike Pritchard
+date: '2026-01-24'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2601.17268'
+  openalex: W7125802363
+links:
+  paper: https://arxiv.org/abs/2601.17268
+  pdf: https://arxiv.org/pdf/2601.17268
+topic: nowcasting
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- transformer
+- diffusion
+timescale:
+- nowcast
+- short
+spatial:
+- regional
+data:
+- satellite
+- radar
+status: research
+summary: Stormscope, a transformer diffusion model on geostationary satellite and radar over the US, matches
+  mesoscale NWP at 6 km and 10 min out to 6 hours.
+abstract: Accurate short-term prediction of clouds and precipitation is critical for severe weather warnings,
+  aviation safety, and renewable energy operations. Forecasts at this timescale are provided by numerical
+  weather models and extrapolation methods, both of which have limitations. Mesoscale numerical weather
+  prediction models provide skillful forecasts at these scales but require significant modeling expertise
+  and computational infrastructure, which limits their accessibility. Extrapolation-based methods are
+  computationally lightweight but degrade rapidly beyond 1-2 hours. This presents an opportunity for data-driven
+  forecasting directly from observations using geostationary satellites and ground-based radar, which
+  provide high-frequency, high-resolution observations that capture mesoscale atmospheric evolution. We
+  introduce Stormscope, a family of transformer-based generative diffusion models trained on high-resolution,
+  multi-band geostationary satellite imagery and ground-based weather radar over the continental United
+  States. Stormscope produces forecasts at a temporal resolution of 10 minutes and 6 kilometer spatial
+  resolution, which are competitive with state-of-the-art mesoscale NWP models for lead times up to 6
+  hours. Its generative architecture enables large ensemble forecasts of explicit mesoscale dynamics for
+  robust uncertainty quantification. Evaluated against extrapolation methods and operational mesoscale
+  NWP models, Stormscope achieves leading performance on standard deterministic and probabilistic verification
+  metrics across forecast horizons from 1 to 6 hours. As Stormscope relies on globally available satellite
+  observations (and radar where available), it offers a pathway to extend skillful mesoscale forecasting
+  to oceanic regions and countries without strong operational mesoscale modeling programs.
+significance: 6
+score: 24
+highlight: false
+added: '2026-10-22'
+source: backfill

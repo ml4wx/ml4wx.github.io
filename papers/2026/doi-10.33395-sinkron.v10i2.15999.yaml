@@ -1,0 +1,56 @@
+id: doi-10.33395-sinkron.v10i2.15999
+title: Real time weather forcasting with conditional CNN and TCN-BiLSTM Ensamble at Manokwari
+authors:
+- Ilham Tatayo Lie
+- Julius Panda Putra Naibaho
+- Alex De Kweldju
+date: '2026-04-02'
+year: 2026
+venue: SinkrOn
+venue_type: journal
+ids:
+  doi: 10.33395/sinkron.v10i2.15999
+  openalex: W7160414825
+links:
+  paper: https://doi.org/10.33395/sinkron.v10i2.15999
+  pdf: https://jurnal.polgan.ac.id/index.php/sinkron/article/download/15999/3929
+topic: nowcasting
+type: model
+method:
+- cnn
+- rnn
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- other
+- stations
+status: research
+summary: Day-night gated ensemble of CNN sky-image and TCN-BiLSTM station models reaches 92.49% accuracy
+  for local nowcasting, deployed in-browser for real-time use.
+abstract: Short-term weather forecasting is fundamentally critical for disaster mitigation in dynamic
+  tropical maritime regions. However, conventional numerical approaches suffer from high computational
+  latency, and spatial deep learning models frequently experience severe performance degradation during
+  nocturnal conditions due to the absence of illumination. This study aims to develop an adaptive, real-time
+  multimodal weather nowcasting system that effectively prevents nocturnal predictive failure through
+  a dynamic conditional ensemble architecture. The proposed framework integrates a Convolutional Neural
+  Network (CNN) to extract optical features from a dataset of 2,515 localized sky images with a Temporal
+  Convolutional Network and Bidirectional Long Short-Term Memory (TCN-BiLSTM) pipeline to process 15,111
+  corresponding meteorological time-series records from BMKG. To address visual ambiguity, the system
+  strictly employs a day-night gating mechanism, deactivating the CNN at night to rely solely on thermodynamic
+  data. Finally, the optimized model was deployed via TensorFlow.js for decentralized client-side browser
+  inference. Experimental evaluations explicitly demonstrate that the conditional ensemble significantly
+  outperformed all standalone models, achieving a peak accuracy of 92.49% and a Macro F1-score of 0.913
+  while successfully preserving a robust recall rate for precipitation events. Furthermore, the browser-based
+  deployment completely eliminated server transmission bottlenecks, achieving sub-second warm-start inference
+  latency across heterogeneous consumer devices. Ultimately, the conditional day-night modality gating
+  mechanism effectively mitigates nocturnal visual degradation, proving that implementing this integrated
+  architecture as a client-side web application is highly feasible for delivering instantaneous public
+  weather warnings.
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

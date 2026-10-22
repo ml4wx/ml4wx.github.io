@@ -1,0 +1,57 @@
+id: doi-10.3390-rs18070971
+title: Sea Surface Wind Speed Retrieval with a Dual-Branch Feature-Fusion Network Using GaoFen-3 Series
+  SAR Data
+authors:
+- Xiao-Ming Li
+- Xiao-Ming Li
+- Xiao-Ming Li
+- Xiao-Ming Li
+- Yongzheng Ren
+- Ke Wu
+- Chunbo Li
+date: '2026-03-24'
+year: 2026
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs18070971
+  openalex: W7140281549
+links:
+  paper: https://doi.org/10.3390/rs18070971
+  pdf: https://www.mdpi.com/2072-4292/18/7/971/pdf?version=1774347666
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- satellite
+- era5
+status: research
+summary: A dual-branch attention network retrieves sea surface wind from GaoFen-3 SAR with 1.0 m/s RMSE
+  against ERA5, about 40% below the original calibration.
+abstract: To address the suboptimal radiometric calibration accuracy observed in specific beam codes of
+  the GaoFen-3 (GF-3) series satellite for sea surface wind speed (SSWS) retrieval, this study introduces
+  a calibration constant correction method based on the geophysical model function (GMF). This approach
+  enables high-precision SSWS retrieval from GF-3B data. Conventional SAR-based SSWS retrieval models
+  typically rely on pointwise mapping relationships, which overlook the spatial characteristics inherent
+  in dynamic sea surface wind fields. To overcome this limitation, this study proposes an attention-guided
+  dual-branch feature-fusion network (ADBFF-NET). The first branch, implemented as a backpropagation neural
+  network (BPNN), learns nonlinear mappings between the normalized radar cross-section (NRCS, σ0), incidence
+  angle, azimuth look direction, and wind vectors (speed and direction). The second branch, designed as
+  a residual convolutional neural network, extracts spatial features of wind fields. An attention mechanism
+  fuses the outputs of both branches, thereby enhancing retrieval accuracy. Experiments conducted with
+  GF-3 series satellite data were validated against the European Centre for Medium-Range Weather Forecasts
+  (ECMWF) Reanalysis V5 (ERA5), Advanced Scatterometer (ASCAT) wind fields, and altimeter-derived wind
+  speeds. The results indicate that the SSWS retrieved from GF-3B SAR data using the corrected calibration
+  constants achieve a root mean square error (RMSE) of 1 m/s against ERA5 wind speeds, representing an
+  approximately 40% reduction compared with the RMSE obtained using the original calibration constant.
+  Furthermore, compared to ERA5 and ASCAT data, the RMSE of the wind speeds retrieved by the ADBFF-NET
+  model reaches 1.17 m/s and 1.03 m/s, respectively.
+significance: 2
+cited_by: 1
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

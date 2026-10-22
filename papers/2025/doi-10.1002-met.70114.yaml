@@ -1,0 +1,66 @@
+id: doi-10.1002-met.70114
+title: A Fine‐Tuned Pangu Weather Model and Its Performance Based on an Operational Framework in South
+  China
+authors:
+- XIA Xin
+- Yan Gao
+- Chao Lu
+- Weiwei Wang
+- Yuan Li
+- Qilin Wan
+- Chao Li
+- Chao Zhang
+- Huiqi You
+- Xunlai Chen
+date: '2025-11-01'
+year: 2025
+venue: Meteorological Applications
+venue_type: journal
+ids:
+  doi: 10.1002/met.70114
+  openalex: W4415953226
+links:
+  paper: https://doi.org/10.1002/met.70114
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/met.70114
+orgs:
+- cma
+topic: global-medium-range
+type: model
+method:
+- transformer
+timescale:
+- medium
+spatial:
+- global
+- regional
+data:
+- era5
+- nwp-analysis
+- stations
+status: pre-operational
+summary: Fine-tunes the Pangu Weather model on 2021–2022 IFS operational analysis instead of ERA5, reducing
+  upper-air RMSE and improving surface forecasts over South China versus the public model.
+abstract: ABSTRACT Data‐driven weather models have shown the potential to match the accuracy of state‐of‐the‐art
+  numerical weather predictions (NWPs). However, existing data‐driven forecasting models still have limitations
+  in operational applications. For example, most of them are predominantly trained via fifth‐generation
+  climate reanalysis data (ERA5). However, in actual forecasting operations, the models are usually initiated
+  by analysis fields instead of reanalysis data; this leads to a mismatch between the training data used
+  by machine learning (ML) forecasting models and the actual operational data. To address this issue,
+  we attempt to fine‐tune the data‐driven model with the initiation fields in operation. This study first
+  develops a fine‐tuned Pangu Weather Model (PGW) by integrating forecasting system (IFS) analysis data
+  from 2021 to 2022 and conducts a comprehensive evaluation of its performance. By comparing the fine‐tuned
+  version (PGW_O) with the public version (PGW_P) against IFS models with different resolutions (IFS_L
+  at 0.25° and IFS_H at 0.1°), this research highlights advancements in data‐driven forecasting methodologies.
+  The models are tested on data from South China, a region with dense meteorological observation networks,
+  over a three‐month period, encompassing a detailed case study of Tropical Cyclone Haikui (2023). The
+  findings show that with the forecast activity (FA) level comparable to PGW_P, PGW_O significantly reduces
+  the root mean square error (RMSE) and mean error (ME) across upper atmospheric variables and demonstrates
+  superior accuracy in predicting surface elements. The operational relevance of these models is evaluated
+  through both ERA5 reanalysis and surface observations, revealing that fine‐tuning with IFS data enhances
+  PGW compatibility and forecasting precision, particularly for severe weather events.
+significance: 5
+cited_by: 1
+score: 30
+highlight: false
+added: '2026-10-22'
+source: backfill

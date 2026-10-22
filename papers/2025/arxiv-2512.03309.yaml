@@ -1,0 +1,53 @@
+id: arxiv-2512.03309
+title: Retrofitting Earth System Models with Cadence-Limited Neural Operator Updates
+authors:
+- Aniruddha Bora
+- Shixuan Zhang
+- Khemraj Shukla
+- Bryce Harrop
+- George Em. Karniadakis
+- L. Ruby Leung
+date: '2025-12-02'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2512.03309'
+links:
+  paper: https://arxiv.org/abs/2512.03309
+  pdf: https://arxiv.org/pdf/2512.03309
+topic: hybrid-parameterization
+topics:
+- climate-emulation
+type: model
+method:
+- cnn
+timescale:
+- climate
+spatial:
+- global
+data:
+- era5
+- other
+status: pre-operational
+summary: Cadence-limited U-Net neural operators applied online inside E3SM to correct model bias toward
+  ERA5, with the M&M architecture giving the most consistent bias reductions.
+abstract: Coarse resolution, imperfect parameterizations, and uncertain initial states and forcings limit
+  Earth-system model (ESM) predictions. Traditional bias correction via data assimilation improves constrained
+  simulations but offers limited benefit once models run freely. We introduce an operator-learning framework
+  that maps instantaneous model states to bias-correction tendencies and applies them online during integration.
+  Building on a U-Net backbone, we develop two operator architectures Inception U-Net (IUNet) and a multi-scale
+  network (M\&M) that combine diverse upsampling and receptive fields to capture multiscale nonlinear
+  features under Energy Exascale Earth System Model (E3SM) runtime constraints. Trained on two years E3SM
+  simulations nudged toward ERA5 reanalysis, the operators generalize across height levels and seasons.
+  Both architectures outperform standard U-Net baselines in offline tests, indicating that functional
+  richness rather than parameter count drives performance. In online hybrid E3SM runs, M\&M delivers the
+  most consistent bias reductions across variables and vertical levels. The ML-augmented configurations
+  remain stable and computationally feasible in multi-year simulations, providing a practical pathway
+  for scalable hybrid modeling. Our framework emphasizes long-term stability, portability, and cadence-limited
+  updates, demonstrating the utility of expressive ML operators for learning structured, cross-scale relationships
+  and retrofitting legacy ESMs.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

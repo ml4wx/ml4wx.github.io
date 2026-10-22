@@ -1,0 +1,61 @@
+id: arxiv-2511.04659
+title: 'Nowcast3D: Reliable precipitation nowcasting via gray-box learning'
+authors:
+- Huaguan Chen
+- Wei Han
+- Haofei Sun
+- Ning Lin
+- Xingtao Song
+- Yunfan Yang
+- Jie Tian
+- Yang Liu
+- Ji-Rong Wen
+- Xiaoye Zhang
+- Xueshun Shen
+- Hao Sun
+date: '2025-11-06'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2511.04659'
+  openalex: W4416027191
+links:
+  paper: https://arxiv.org/abs/2511.04659
+  pdf: https://arxiv.org/pdf/2511.04659
+topic: nowcasting
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+- physics-constrained
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: pre-operational
+summary: Nowcast3D couples physics-constrained 3D neural operators with a conditional diffusion model
+  for ensemble radar nowcasts up to 3 h, ranked first by 160 meteorologists.
+abstract: 'Reliable nowcasting of extreme precipitation remains difficult because convective systems are
+  strongly nonlinear, multiscale, and nonstationary in 3D. Radar is the backbone of nowcasting, yet existing
+  methods struggle to predict extremes: physics-based extrapolation cannot capture growth and decay, deterministic
+  learning tends to oversmooth and underestimate peaks, and purely generative models often lack physical
+  consistency. Hybrid schemes help but are mostly limited to 2D composite reflectivity, collapsing the
+  atmosphere into one layer and discarding vertical structure critical for height-dependent dynamics.
+  We introduce Nowcast3D, a gray-box, fully 3D framework that works directly on volumetric radar reflectivity.
+  The end-to-end model couples physically constrained neural operators (advection, local diffusion, and
+  microphysics) with a conditional diffusion model to generate ensemble forecasts with quantified uncertainty.
+  Trained on provincial-scale 3D volumes over a $10.24^\circ \times 10.24^\circ$ region and fine-tuned
+  on a $2.56^\circ \times 2.56^\circ$ city region ($0.01^\circ \approx 1$ km), Nowcast3D provides near-real-time
+  forecasts up to 3 h and outperforms competitive baselines in cross-region and temporal out-of-sample
+  tests. It can also infer wind fields without labeled supervision, supporting physically plausible transport.
+  In a nationwide blind evaluation by 160 meteorologists, Nowcast3D ranked first and was preferred in
+  57% of post-hoc assessments, surpassing the leading baseline (27%). These results highlight its reliability
+  and operational value for extreme precipitation nowcasting.'
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

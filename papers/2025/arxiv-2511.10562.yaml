@@ -1,0 +1,56 @@
+id: arxiv-2511.10562
+title: 'Oya: Deep Learning for Accurate Global Precipitation Estimation'
+authors:
+- Emmanuel Asiedu Brempong
+- Mohammed Alewi Hassen
+- MohamedElfatih MohamedKhair
+- Vusumuzi Dube
+- Santiago Hincapie Potes
+- Olivia Graham
+- Amanie Brik
+- Amy McGovern
+- George J. Huffman
+- Jason Hickey
+date: '2025-11-13'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2511.10562'
+links:
+  paper: https://arxiv.org/abs/2511.10562
+  pdf: https://arxiv.org/pdf/2511.10562
+topic: observations-remote-sensing
+topics:
+- infra-software
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- global
+data:
+- satellite
+- radar
+status: pre-operational
+summary: Oya uses two U-Nets on geostationary visible and infrared imagery for quasi-global precipitation
+  retrieval, trained on GPM CORRA radar data and outperforming existing products.
+abstract: 'Accurate precipitation estimation is critical for hydrological applications, especially in
+  the Global South where ground-based observation networks are sparse and forecasting skill is limited.
+  Existing satellite-based precipitation products often rely on the longwave infrared channel alone or
+  are calibrated with data that can introduce significant errors, particularly at sub-daily timescales.
+  This study introduces Oya, a novel real-time precipitation retrieval algorithm utilizing the full spectrum
+  of visible and infrared (VIS-IR) observations from geostationary (GEO) satellites. Oya employs a two-stage
+  deep learning approach, combining two U-Net models: one for precipitation detection and another for
+  quantitative precipitation estimation (QPE), to address the inherent data imbalance between rain and
+  no-rain events. The models are trained using high-resolution GPM Combined Radar-Radiometer Algorithm
+  (CORRA) v07 data as ground truth and pre-trained on IMERG-Final retrievals to enhance robustness and
+  mitigate overfitting due to the limited temporal sampling of CORRA. By leveraging multiple GEO satellites,
+  Oya achieves quasi-global coverage and demonstrates superior performance compared to existing competitive
+  regional and global precipitation baselines, offering a promising pathway to improved precipitation
+  monitoring and forecasting.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

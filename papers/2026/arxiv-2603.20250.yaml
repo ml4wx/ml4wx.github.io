@@ -1,0 +1,54 @@
+id: arxiv-2603.20250
+title: Developing Machine Learning-Based Watch-to-Warning Severe Weather Guidance from the Warn-on-Forecast
+  System
+authors:
+- Montgomery Flora
+- Samuel Varga
+- Corey Potvin
+- Noah Lang
+date: '2026-03-10'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2603.20250'
+  openalex: W7140236143
+links:
+  paper: https://arxiv.org/abs/2603.20250
+  pdf: https://arxiv.org/pdf/2603.20250
+topic: extremes-hazards
+topics:
+- post-processing
+type: model
+method:
+- classical-ml
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- nwp-analysis
+status: pre-operational
+summary: Gradient-boosted trees and a U-Net post-process Warn-on-Forecast output into 2-6 hour severe
+  weather probabilities that beat a updraft-helicity baseline, especially at high thresholds.
+abstract: While machine learning (ML) post-processing of convection-allowing model (CAM) output for severe
+  weather hazards (large hail, damaging winds, and/or tornadoes) has shown promise for very short lead
+  times (0-3 hours), its application to slightly longer forecast windows remains relatively underexplored.
+  In this study, we develop and evaluate a grid-based ML framework to predict the probability of severe
+  weather hazards over the next 2-6 hours using forecast output from the Warn-on-Forecast System (WoFS).
+  Our dataset includes WoFS ensemble forecasts valid every 5 minutes out to 6 hours from 108 days during
+  the 2019--2023 NOAA Hazardous Weather Testbed Spring Forecasting Experiments. We train ML models to
+  generate probabilistic forecasts of severe weather akin to Storm Prediction Center outlooks (i.e., likelihood
+  of a tornado, severe wind, or severe hail event within 36 km of each point). We compare a histogram
+  gradient-boosted tree (HGBT) model and a deep learning U-Net approach against a carefully calibrated
+  baseline generated from 2-5 km updraft helicity. Results indicate that the HGBT and U-Net outperform
+  the baseline, particularly at higher probability thresholds. The HGBT achieves the best performance
+  metrics, but predicted probabilities cap at 60% while the U-net forecasts extend to 100%. Similar to
+  previous studies, the U-Net produces spatially smoother guidance than the tree-based method. These findings
+  add to the growing evidence of the effectiveness of ML-based CAM post-processing for providing short-term
+  severe weather guidance.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

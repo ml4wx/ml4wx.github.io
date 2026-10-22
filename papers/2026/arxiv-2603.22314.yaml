@@ -1,0 +1,60 @@
+id: arxiv-2603.22314
+title: Enhancing AI-Based Tropical Cyclone Track and Intensity Forecasting via Systematic Bias Correction
+authors:
+- Peisong Niu
+- Haifan Zhang
+- Yang Zhao
+- Tian Zhou
+- Ziqing Ma
+- Wenqiang Shen
+- Junping Zhao
+- Huiling Yuan
+- Liang Sun
+date: '2026-03-20'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2603.22314'
+links:
+  paper: https://arxiv.org/abs/2603.22314
+  pdf: https://arxiv.org/pdf/2603.22314
+  code: https://github.com/DAMO-DI-ML/Baguan-cyclone
+topic: extremes-hazards
+topics:
+- global-medium-range
+type: model
+method:
+- transformer
+timescale:
+- short
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: BaguanCyclone adds probabilistic center refinement and region-aware intensity heads to AI forecasts,
+  outperforming operational NWP and AI baselines for tropical cyclone track and intensity.
+abstract: 'Tropical cyclones (TCs) pose severe threats to life, infrastructure, and economies in tropical
+  and subtropical regions, underscoring the critical need for accurate and timely forecasts of both track
+  and intensity. Recent advances in AI-based weather forecasting have shown promise in improving TC track
+  forecasts. However, these systems are typically trained on coarse-resolution reanalysis data (e.g.,
+  ERA5 at 0.25 degree), which constrains predicted TC positions to a fixed grid and introduces significant
+  discretization errors. Moreover, intensity forecasting remains limited especially for strong TCs by
+  the smoothing effect of coarse meteorological fields and the use of regression losses that bias predictions
+  toward conditional means. To address these limitations, we propose BaguanCyclone, a novel, unified framework
+  that integrates two key innovations: (1) a probabilistic center refinement module that models the continuous
+  spatial distribution of TC centers, enabling finer track precision; and (2) a region-aware intensity
+  forecasting module that leverages high-resolution internal representations within dynamically defined
+  sub-grid zones around the TC core to better capture localized extremes. Evaluated on the global IBTrACS
+  dataset across six major TC basins, our system consistently outperforms both operational numerical weather
+  prediction (NWP) models and most AI-based baselines, delivering a substantial enhancement in forecast
+  accuracy. Remarkably, BaguanCyclone excels in navigating meteorological complexities, consistently delivering
+  accurate forecasts for re-intensification, sweeping arcs, twin cyclones, and meandering events. Our
+  code is available at https://github.com/DAMO-DI-ML/Baguan-cyclone.'
+significance: 5
+score: 30
+highlight: false
+added: '2026-10-22'
+source: backfill

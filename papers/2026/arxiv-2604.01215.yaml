@@ -1,0 +1,56 @@
+id: arxiv-2604.01215
+title: The Recipe Matters More Than the Kitchen:Mathematical Foundations of the AI Weather Prediction
+  Pipeline
+authors:
+- Piyush Garg
+- Diana R. Gergel
+- Andrew E. Shao
+- Galen J. Yacalis
+date: '2026-04-01'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2604.01215'
+  openalex: W7148536866
+links:
+  paper: https://arxiv.org/abs/2604.01215
+  pdf: https://arxiv.org/pdf/2604.01215
+topic: global-medium-range
+topics:
+- xai-uq-physics
+type: position
+method:
+- other
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Theoretical framework for the full AI weather prediction pipeline, showing estimation error dominates
+  architecture error and that MSE-trained models blur spectra and underestimate record extremes.
+abstract: AI weather prediction has advanced rapidly, yet no unified mathematical framework explains what
+  determines forecast skill. Existing theory addresses specific architectural choices rather than the
+  learning pipeline as a whole, while operational evidence from 2023-2026 demonstrates that training methodology,
+  loss function design, and data diversity matter at least as much as architecture selection. This paper
+  makes two interleaved contributions. Theoretically, we construct a framework rooted in approximation
+  theory on the sphere, dynamical systems theory, information theory, and statistical learning theory
+  that treats the complete learning pipeline (architecture, loss function, training strategy, data distribution)
+  rather than architecture alone. We establish a Learning Pipeline Error Decomposition showing that estimation
+  error (loss- and data-dependent) dominates approximation error (architecture-dependent) at current scales.
+  We develop a Loss Function Spectral Theory formalizing MSE-induced spectral blurring in spherical harmonic
+  coordinates, and derive Out-of-Distribution Extrapolation Bounds proving that data-driven models systematically
+  underestimate record-breaking extremes with bias growing linearly in record exceedance. Empirically,
+  we validate these predictions via inference across ten architecturally diverse AI weather models using
+  NVIDIA Earth2Studio with ERA5 initial conditions, evaluating six metrics across 30 initialization dates
+  spanning all seasons. Results confirm universal spectral energy loss at high wavenumbers for MSE-trained
+  models, rising Error Consensus Ratios showing that the majority of forecast error is shared across architectures,
+  and linear negative bias during extreme events. A Holistic Model Assessment Score provides unified multi-dimensional
+  evaluation, and a prescriptive framework enables mathematical evaluation of proposed pipelines before
+  training.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

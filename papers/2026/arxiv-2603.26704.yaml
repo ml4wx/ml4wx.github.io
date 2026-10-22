@@ -1,0 +1,52 @@
+id: arxiv-2603.26704
+title: 'Deep Learning Multi-Horizon Irradiance Nowcasting: A Comparative Evaluation of Three Methods for
+  Leveraging Sky Images'
+authors:
+- Erling W. Eriksen
+- Magnus M. Nygård
+- Niklas Erdmann
+- Heine N. Riise
+date: '2026-03-17'
+year: 2026
+venue: IEEE Journal of Photovoltaics
+venue_type: journal
+ids:
+  arxiv: '2603.26704'
+  doi: 10.1109/jphotov.2026.3675751
+  openalex: W7147657614
+links:
+  paper: https://doi.org/10.1109/jphotov.2026.3675751
+  pdf: https://arxiv.org/pdf/2603.26704
+topic: nowcasting
+topics:
+- observations-remote-sensing
+type: evaluation
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- other
+status: research
+summary: Compares three ways of feeding all-sky images to deep learning for 15-minute irradiance nowcasts;
+  aggregated engineered cloud features beat raw-image CNN inputs.
+abstract: We investigate three distinct methods of incorporating all-sky imager (ASI) images into deep
+  learning (DL) irradiance nowcasting. The first method relies on a convolutional neural network (CNN)
+  to extract features directly from raw RGB images. The second method uses state-of-the-art algorithms
+  to engineer 2D feature maps informed by domain knowledge, e.g., cloud segmentation, the cloud motion
+  vector, solar position, and cloud base height. These feature maps are then passed to a CNN to extract
+  compound features. The final method relies on aggregating the engineered 2D feature maps into time-series
+  input. Each of the three methods were then used as part of a DL model trained on a high-frequency, 29-day
+  dataset to generate multi-horizon forecasts of global horizontal irradiance up to 15 minutes ahead.
+  The models were then evaluated using root mean squared error and skill score on 7 selected days of data.
+  Aggregated engineered ASI features as model input yielded superior forecasting performance, demonstrating
+  that integration of ASI images into DL nowcasting models is possible without complex spatially-ordered
+  DL-architectures and inputs, underscoring opportunities for alternative image processing methods as
+  well as the potential for improved spatial DL feature processing methods.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

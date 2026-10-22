@@ -1,0 +1,62 @@
+id: doi-10.1371-journal.pone.0348202
+title: Machine-learning framework for conditional estimation and scenario-based projection of the heat
+  index for public health interventions
+authors:
+- Mohammad Ashraful Haque Mollah
+- Amrin Binte Ahmed
+- Zihanul Islam Zijan
+- Ananta Asim Joy
+- Rumana Rois
+date: '2026-04-28'
+year: 2026
+venue: PLoS ONE
+venue_type: journal
+ids:
+  doi: 10.1371/journal.pone.0348202
+  openalex: W7158294913
+links:
+  paper: https://doi.org/10.1371/journal.pone.0348202
+topic: applications-impacts
+topics:
+- extremes-hazards
+type: application
+method:
+- classical-ml
+- rnn
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Random Forest estimates Dhaka heat index from station temperature and humidity with 0.85°C RMSE,
+  plus climatological heat-stress scenarios for public health.
+abstract: 'BACKGROUND: Heatwaves are becoming more frequent and intense in Bangladesh, particularly in
+  urban areas such as Dhaka, where the combined effects of extreme heat and humidity pose serious public
+  health risks. Temperature-based warning systems frequently underestimate physiological heat stress.
+  METHODS: This study proposes a machine-learning framework to estimate and project the Heat Index (HI)
+  using 3-hourly meteorological records from 2014 to 2023. Because HI is a deterministic function of air
+  temperature and relative humidity, the framework performs conditional estimation of HI based on meteorological
+  predictors rather than independently forecasting HI itself. Five models: ARIMAX, SARIMAX, Random Forest
+  Regressor (RFR), XGBoost, and Long Short-Term Memory (LSTM), were trained using air temperature, relative
+  humidity, and seasonal indicators as predictors. For scenario-based projections beyond 2023, future
+  temperature and humidity were approximated using historical monthly averages, generating scenario-based
+  HI projections that preserve seasonal and diurnal patterns. These projections represent climatological
+  scenarios rather than true meteorological forecasts. RESULTS: The Random Forest Regressor (RFR) achieved
+  the highest conditional estimation accuracy, with the lowest RMSE (0.85°C) and highest R² (0.987) on
+  the test set. Empirical 95% prediction intervals achieved 98.85% coverage, indicating slightly conservative
+  uncertainty bounds. Scenario-based projections yielded mean HI values of 29.02°C (optimistic), 29.90°C
+  (moderate), and 31.33°C (pessimistic). A substantial proportion of projected 3-hourly periods fall within
+  the "Extreme Caution" category (32-41°C), indicating persistently elevated heat-stress exposure under
+  climatological assumptions. CONCLUSION: The proposed framework demonstrates strong potential for generating
+  high-resolution scenario-based HI projections by capturing nonlinear temporal dynamics and sub-daily
+  variability. These findings can support scenario-based early warning systems and inform adaptive urban
+  heat-management strategies in climate-vulnerable cities such as Dhaka, although results should be interpreted
+  as conditional projections rather than deterministic forecasts. Unlike conventional HI studies, this
+  framework translates meteorological inputs into high-resolution, operational heat-risk insights by modeling
+  temporal persistence at sub-daily scales.'
+significance: 2
+cited_by: 1
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

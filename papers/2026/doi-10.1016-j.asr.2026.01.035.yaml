@@ -1,0 +1,61 @@
+id: doi-10.1016-j.asr.2026.01.035
+title: 'Synergizing GNSS, MODIS, and ERA5 for high-resolution PWV retrieval: a two-stage machine learning
+  approach over Hong Kong'
+authors:
+- Guanmei Chen
+- Aigong Xu
+- Zongqiu Xu
+- Zhiguo Deng
+- Longjiang Tang
+- Congying Shao
+- Nannan Yang
+- Xiang Gao
+- Meiqi Zhang
+date: '2026-01-20'
+year: 2026
+venue: Advances in Space Research
+venue_type: journal
+ids:
+  doi: 10.1016/j.asr.2026.01.035
+  openalex: W7124866937
+links:
+  paper: https://doi.org/10.1016/j.asr.2026.01.035
+topic: observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- era5
+- stations
+status: research
+summary: Two-stage decision tree and random forest framework fuses GNSS, MODIS and ERA5 to map Hong Kong
+  precipitable water, reaching RMSE 3.29 mm.
+abstract: Atmospheric water vapor is a fundamental driver of the Earth’s energy balance and climate system,
+  making precipitable water vapor (PWV) a key indicator for meteorological monitoring and extreme weather
+  forecasting. This study introduces an innovative two-stage machine learning framework, named the Decision
+  Tree and Random Forest PWV Fusion (DTRP) framework, to generate a high-precision, spatiotemporally continuous
+  PWV product over Hong Kong by fusing multi-source data, including GNSS, Moderate Resolution Imaging
+  Spectroradiometer (MODIS), and ERA5. GNSS PWV derived from 18 Continuously Operating Reference Stations
+  (CORS) served as the benchmark. In the initial stage of the DTRP framework, a regression tree model
+  is employed to correct systematic deviations in MODIS Near-Infrared (NIR) PWV. The model exploits the
+  differences between ERA5 and MYD NIR PWV, together with spatiotemporal features, to estimate GNSS–MYD
+  deviations, thereby yielding an enhanced PWV product (EMYD). Building on this, the second stage of DTRP
+  applies a random forest framework to integrate EMYD with original ERA5 PWV along with meteorological
+  covariates, generating the final fused product (RF PWV). Statistical evaluation confirms the initial
+  correction successfully eliminated the systematic negative bias in MYD NIR PWV. The RMSE decreased to
+  3.45 mm with an R 2 of 0.95, corresponding to improvements of 55.8% in accuracy and 0.17 in explanatory
+  power over the original data. The subsequent fusion stage achieved a further refined RMSE of 3.29 mm,
+  outperforming the MYD, ERA5, and EMYD products by 57.9%, 30.4%, and 4.6%. The final RF PWV product demonstrates
+  nearly unbiased estimation capability and maintains strong agreement with reference data, achieving
+  an R 2 of 0.96. Spatiotemporal and correlation analyses confirmed the superior consistency and reliability
+  of the RF PWV under diverse conditions and its effectiveness in decoupling errors from geographic and
+  atmospheric influences. The proposed DTRP algorithm presents a valuable framework for predicting severe
+  convective weather.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

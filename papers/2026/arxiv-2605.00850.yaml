@@ -1,0 +1,70 @@
+id: arxiv-2605.00850
+title: 'Earth System Foundation Model (ESFM): A unified framework for heterogeneous data integration and
+  forecasting'
+authors:
+- Firat Ozdemir
+- Yun Cheng
+- Salman Mohebi
+- Fanny Lehmann
+- Simon Adamov
+- Zhenyi Zhang
+- Leonardo Trentini
+- Dana Grund
+- Oliver Fuhrer
+- Torsten Hoefler
+- Siddhartha Mishra
+- Sebastian Schemm
+- Benedikt Soja
+- Mathieu Salzmann
+date: '2026-04-20'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.00850'
+links:
+  paper: https://arxiv.org/abs/2605.00850
+  pdf: https://arxiv.org/pdf/2605.00850
+  code: https://github.com/swiss-ai/ESFM
+topic: foundation-models
+topics:
+- global-medium-range
+- observations-remote-sensing
+type: model
+method:
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- cmip
+- satellite
+- stations
+status: research
+summary: Open Aurora-based Earth system foundation model handles gridded, masked satellite and station
+  data under one backbone, with adaptive-layer-norm ensembles for probabilistic forecasts.
+abstract: Foundation models (FMs) for the Earth system learn statistical relationships between physical
+  variables across massive datasets to enable versatile downstream applications through finetuning, separating
+  them from task-specific weather models. Here, we introduce Earth System Foundation Model (ESFM), a fully
+  open model building on the 3D Swin UNet backbone of the pioneering Aurora model. ESFM introduces extensions
+  that increase functionality and foster adoption in climate sciences. First, the encoding scheme and
+  training protocols have been extended to handle diverse datasets, including those containing missing
+  values across all spatio-temporal dimensions such as satellite data, as well as station data, all under
+  one backbone. Axial attention is introduced to capture inter-variable dependencies. As a result ESFM
+  skillfully predicts variables in regions or on pressure levels where no data is present at the initial
+  time, while preserving inter-variable relationships, for example between temperature, pressure, and
+  humidity. Individual variable tokenization enables different sets of variables to be shuffled during
+  training and simplifies the process of building extensions for new downstream tasks. Adaptive layer
+  norm-based ensembles allow for a simple yet effective way to transform deterministic ESFM to a probabilistic
+  FM. We present findings using dense gridded data (ERA5, CMIP6), regionally masked dense data, sparse
+  gridded MODIS satellite data, and station data. Results demonstrate competitive or superior performance
+  relative to state-of-the-art benchmarks. Case studies of Super Typhoon Doksuri (2023) and 2024 sudden
+  stratospheric warming events show accurate positional and magnitude estimations of extreme weather.
+  ESFM retains the strengths of previous foundation models, such as long-term stability, but facilitates
+  application to a variety of downstream tasks.
+significance: 6
+score: 34
+highlight: false
+added: '2026-10-22'
+source: backfill

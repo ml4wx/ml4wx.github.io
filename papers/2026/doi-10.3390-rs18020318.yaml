@@ -1,0 +1,61 @@
+id: doi-10.3390-rs18020318
+title: Quantifying VIIRS and ABI Contributions to Hourly Dead Fuel Moisture Content Estimation Using Machine
+  Learning
+authors:
+- John S. Schreck
+- William Petzke
+- Pedro Jiménez y Muñoz
+- Thomas Brummet
+date: '2026-01-17'
+year: 2026
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs18020318
+  openalex: W7124713001
+links:
+  paper: https://doi.org/10.3390/rs18020318
+orgs:
+- ncar
+topic: extremes-hazards
+type: application
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- nwp-analysis
+status: research
+summary: XGBoost fuses VIIRS and ABI satellite data with HRRR forecasts to estimate hourly dead fuel moisture,
+  cutting RMSE 27% versus HRRR-only for wildfire danger.
+abstract: 'Fuel moisture content (FMC) estimation is essential for wildfire danger assessment and fire
+  behavior modeling. This study quantifies the value of integrating satellite observations from the Visible
+  Infrared Imaging Radiometer Suite (VIIRS) aboard Suomi-NPP and the Advanced Baseline Imager (ABI) aboard
+  GOES-16 with High-Resolution Rapid Refresh (HRRR) numerical weather prediction data for hourly 10 h
+  dead FMC estimation across the continental United States. We leverage the complementary characteristics
+  of each system: VIIRS provides enhanced spatial resolution (375–750 m), while ABI contributes high temporal
+  frequency observations (hourly). Using XGBoost machine learning models trained on 2020–2021 data, we
+  systematically evaluate performance improvements stemming from incorporating satellite retrievals individually
+  and in combination with HRRR meteorological variables through eight experimental configurations. Results
+  demonstrate that while both satellite systems individually enhance prediction accuracy beyond HRRR-only
+  models, their combination provides substantially greater improvements: 27% RMSE and MAE reduction and
+  46.7% increase in explained variance (R2) relative to HRRR baseline performance. Comprehensive seasonal
+  analysis reveals consistent satellite data contributions across all seasons, with stable median performance
+  throughout the year. Diurnal analysis across the complete 24 h cycle shows sustained improvements during
+  all hours, not only during satellite overpass times, indicating effective integration of temporal information.
+  Spatial analysis reveals improvements in western fire-prone regions where afternoon overpass timing
+  aligns with peak fire danger conditions. Feature importance analysis using multiple explainable AI methods
+  demonstrates that HRRR meteorological variables provide the fundamental physical framework for prediction,
+  while satellite observations contribute fine-scale refinements that improve moisture estimates. The
+  VIIRS lag-hour predictor successfully maintains observational value up to 72 h after acquisition, enabling
+  flexible operational implementation. This research demonstrates the first systematic comparison of VIIRS
+  versus ABI contributions to dead FMC estimation and establishes a framework for hourly, satellite-enhanced
+  FMC products that support more accurate fire danger assessment and enhanced situational awareness for
+  wildfire management operations.'
+significance: 2
+cited_by: 2
+score: 43
+highlight: false
+added: '2026-10-22'
+source: backfill

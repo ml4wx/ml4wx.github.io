@@ -1,0 +1,56 @@
+id: doi-10.1155-adme-6492939
+title: 'STADEN: A Dual‐Branch Deep Learning Framework With Multithreshold Loss for Robust Radar Echo Extrapolation'
+authors:
+- Hui Luo
+- Hang Zhou
+- Na Xie
+- Kangquan Yang
+- Wulong Zhang
+date: '2026-01-01'
+year: 2026
+venue: Advances in Meteorology
+venue_type: journal
+ids:
+  doi: 10.1155/adme/6492939
+  openalex: W7165116857
+links:
+  paper: https://doi.org/10.1155/adme/6492939
+orgs:
+- cma
+topic: nowcasting
+type: model
+method:
+- transformer
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Dual-branch Inception-MetaFormer network with a multithreshold loss improves 2-hour radar echo
+  extrapolation, reaching CSI 0.488 at threshold 15 on Sichuan data.
+abstract: 'Radar echo extrapolation is a key method for weather nowcasting. Deep learning has become a
+  hotspot of radar echo extrapolation, but it suffers from problems such as prediction fuzziness and low
+  prediction metrics, mainly due to two reasons: firstly, existing deep learning methods still have insufficient
+  capabilities in learning spatial–temporal features and focus on critical regions. Second, atmospheric
+  motion is chaotic and uncertain, and only the confidence interval of the future atmospheric state can
+  be predicted. Existing pixel‐level loss functions such as MSE loss require the predicted values to be
+  completely consistent with the gold standard values numerically, resulting in the model being unable
+  to converge to the optimal solution. To address these issues, we propose the Spatial–Temporal‐Attention
+  Dual‐path Extrapolation Network (STADEN) model and a novel multithreshold loss function (MTL). STADEN
+  introduced a dual‐branch network based on the inception and metaformer to enhance the ability to learn
+  spatial–temporal information. MTL allows predicted values to fall within a ground‐truth interval to
+  achieve the minimum loss value, enhancing model robustness. In the 2‐h extrapolation experiment on the
+  Sichuan dataset, STADEN achieved critical success index (CSI) metrics of 0.488, 0.388, and 0.211 at
+  thresholds of 15, 25, and 35, respectively, outperforming all comparative methods. MTL were applied
+  to all comparative methods directly, and improve CSI metrics by 0.078, 0.058, and 0.024. Robustness
+  experiments on the HKO‐7 dataset further demonstrate that both STADEN and MTL achieve optimal performance.
+  These results highlight the potential of STADEN and MTL for practical applications in radar echo prediction.'
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

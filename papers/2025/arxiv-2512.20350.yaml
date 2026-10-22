@@ -1,0 +1,49 @@
+id: arxiv-2512.20350
+title: Field-Space Attention for Structure-Preserving Earth System Transformers
+authors:
+- Maximilian Witte
+- Johannes Meuer
+- Étienne Plésiat
+- Christopher Kadow
+date: '2025-12-23'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2512.20350'
+  openalex: W7117277697
+links:
+  paper: https://arxiv.org/abs/2512.20350
+  pdf: https://arxiv.org/pdf/2512.20350
+topic: downscaling
+topics:
+- foundation-models
+type: model
+method:
+- transformer
+spatial:
+- global
+data:
+- other
+status: research
+summary: Field-Space attention Transformer for Earth-system fields on a sphere converges faster than ViT
+  and U-Net on global temperature super-resolution with fewer parameters.
+abstract: Accurate and physically consistent modeling of Earth system dynamics requires machine-learning
+  architectures that operate directly on continuous geophysical fields and preserve their underlying geometric
+  structure. Here we introduce Field-Space attention, a mechanism for Earth system Transformers that computes
+  attention in the physical domain rather than in a learned latent space. By maintaining all intermediate
+  representations as continuous fields on the sphere, the architecture enables interpretable internal
+  states and facilitates the enforcement of scientific constraints. The model employs a fixed, non-learned
+  multiscale decomposition and learns structure-preserving deformations of the input field, allowing coherent
+  integration of coarse and fine-scale information while avoiding the optimization instabilities characteristic
+  of standard single-scale Vision Transformers. Applied to global temperature super-resolution on a HEALPix
+  grid, Field-Space Transformers converge more rapidly and stably than conventional Vision Transformers
+  and U-Net baselines, while requiring substantially fewer parameters. The explicit preservation of field
+  structure throughout the network allows physical and statistical priors to be embedded directly into
+  the architecture, yielding improved fidelity and reliability in data-driven Earth system modeling. These
+  results position Field-Space Attention as a compact, interpretable, and physically grounded building
+  block for next-generation Earth system prediction and generative modeling frameworks.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

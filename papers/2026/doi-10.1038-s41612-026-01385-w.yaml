@@ -1,0 +1,49 @@
+id: doi-10.1038-s41612-026-01385-w
+title: 'SIGMAformer: a spatiotemporal Gaussian mixture correlation transformer for global weather forecasting'
+authors:
+- D. H. Kim
+- Heung‐Il Suk
+date: '2026-03-23'
+year: 2026
+venue: npj Climate and Atmospheric Science
+venue_type: journal
+ids:
+  doi: 10.1038/s41612-026-01385-w
+  openalex: W7140143318
+links:
+  paper: https://doi.org/10.1038/s41612-026-01385-w
+  pdf: https://www.nature.com/articles/s41612-026-01385-w_reference.pdf
+topic: global-medium-range
+topics:
+- local-forecasting
+type: model
+method:
+- transformer
+timescale:
+- short
+spatial:
+- global
+data:
+- stations
+- other
+status: research
+summary: Gaussian-mixture correlation transformer adapts spatiotemporal weights across stations; removing
+  its correlation module raises wind and temperature MSE by up to 7.2%.
+abstract: Abstract SpatIotemporal Gaussian Mixture correlAtion transformer (SIGMAformer) is a spatiotemporal
+  forecasting architecture that integrates a Gaussian mixture pattern extractor (GMPE) with a dynamic
+  spatiotemporal correlation (DSTC) mechanism. The DSTC module leverages GMPE to automatically compute
+  spatiotemporal pattern-specific weights from the data. These weights are first used to calculate temporal
+  correlations within each station and then integrated with global pattern weights to evaluate spatial
+  correlations across stations. This nonlinear, dynamically adaptive modeling approach emphasizes critical
+  spatiotemporal patterns while suppressing less relevant ones. Experiments on global weather datasets
+  reveal that SIGMAformer consistently outperforms state-of-the-art forecasting models and significantly
+  improves wind speed prediction. Removing DSTC increased the mean squared error values by up to 7.18%
+  and 7.22% for wind speed and temperature predictions, respectively. These findings underscore SIGMAformer’s
+  capacity to capture essential spatiotemporal patterns and establish a scalable methodology for intelligent
+  sensor-network fusion in environmental forecasting.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

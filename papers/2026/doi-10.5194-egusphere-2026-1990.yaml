@@ -1,0 +1,57 @@
+id: doi-10.5194-egusphere-2026-1990
+title: Enhancing Data-Driven Weather Forecasting via Gated Relative Position Encoding and Spatial-Aware
+  Feed-Forward Network
+authors:
+- Leyi Wang
+- D Zhang
+- Jerry Zhijian Yang
+- Baoxiang Pan
+- Dazhi Xi
+- Xiaoyu Huang
+date: '2026-04-14'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.5194/egusphere-2026-1990
+  openalex: W7154255722
+links:
+  paper: https://doi.org/10.5194/egusphere-2026-1990
+  pdf: https://egusphere.copernicus.org/preprints/2026/egusphere-2026-1990/egusphere-2026-1990.pdf
+orgs:
+- iap-cas
+topic: global-medium-range
+type: model
+method:
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: AtmoNAT adds gated relative position encoding and a spatial-aware feed-forward network to a transformer,
+  beating coarse ensembles on WeatherBench 2 out to 72 h.
+abstract: 'Abstract. Data-driven weather models have emerged to address the immense computational costs
+  of traditional numerical weather prediction by generating highly accurate, global forecasts in seconds.
+  While Transformer-based architectures have achieved higher accuracy than numerical weather predictions,
+  their existing position encodings typically embed limited spatial and temporal context, failing to fully
+  account for the time variability, directionality, and location-dependency inherent in atmospheric motions.
+  To resolve this, we introduce a novel model, Neighborhood Attention Transformer for atmospheric prediction
+  (AtmoNAT). We propose two unique architectural components: a Gated Relative Position Encoding (GRPE)
+  and a Spatial-Aware Feed-Forward Network (SAFN). The GRPE maintains independent positional biases based
+  on absolute coordinates to secure location-dependency with a negligible increase in model size, while
+  effectively capturing the directionality and temporal variations of the atmosphere. Simultaneously,
+  the SAFN incorporates parallel input and gating branches, alongside a global positional bias, to explicitly
+  simulate non-local interactions between atmospheric variables and integrate terrain effects. Evaluated
+  on the WeatherBench 2 data at a 1.5° spatial resolution, AtmoNAT’s deterministic forecasts demonstrate
+  lower prediction errors on key variables up to a 72-hour lead time when compared to other coarse-resolution
+  ensemble forecasts. Furthermore, AtmoNAT achieves state-of-the-art forecasting performance over global
+  land areas, highlighting the profound potential of GRPE and SAFN in advancing next-generation weather
+  forecasting.'
+significance: 4
+cited_by: 0
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

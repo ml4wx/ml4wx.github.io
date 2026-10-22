@@ -1,0 +1,49 @@
+id: doi-10.1109-tgrs.2026.3695005
+title: Transformer-Based Modeling of Global Microwave Land Surface Emissivity Using GPM
+authors:
+- Fraser King
+- Sarah E. Ringerud
+date: '2026-01-01'
+year: 2026
+venue: IEEE Transactions on Geoscience and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/tgrs.2026.3695005
+  openalex: W7161711730
+links:
+  paper: https://doi.org/10.1109/tgrs.2026.3695005
+orgs:
+- nasa
+topic: observations-remote-sensing
+topics:
+- data-assimilation
+type: model
+method:
+- transformer
+spatial:
+- global
+data:
+- satellite
+status: research
+summary: Feature-tokenizer transformer predicts GPM GMI microwave land emissivity for 12 channels from
+  10.65 GHz inputs, with R² above 0.80 up to 89 GHz.
+abstract: Global land surface microwave emissivity estimates are critical for data assimilation, numerical
+  weather prediction, and quantitative precipitation estimation, yet explicit calculations at multiple
+  frequencies remains problematic. We introduce a machine learning model that converts 10.65 GHz H-polarization
+  emissivity retrieved under clear-sky conditions into emissivity for the 12 higher-frequency channels
+  of the GPM Microwave Imager (GMI). The model is a feature-tokenizer transformer that ingests ancillary
+  surface variables such as skin temperature, leaf area index, soil texture, and soil moisture. Treating
+  each variable as an individual token lets the transformer direct attention between features and learn
+  nonlinear, spatiotemporally consistent relationships across five years of data [2015-2019]. The network
+  reproduces channel-specific emissivities withR2> 0.80 and mean absolute percentage errorR2= 0.77 − 0.95
+  and mean biases < 4 K for every channel up to 89 GHz when compared to collocated GMI observations. Using
+  independent TELSEM2 10.65 GHz H-pol inputs produces similar skill, suggesting that the learned mapping
+  is robust to the input source, and captures transferable physical structures. The model is lightweight
+  and can be embedded in satellite retrieval systems, reanalysis pipelines, and Earth-system models to
+  accelerate microwave forward modeling and improve global precipitation monitoring.
+significance: 3
+cited_by: 1
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

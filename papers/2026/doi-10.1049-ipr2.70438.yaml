@@ -1,0 +1,56 @@
+id: doi-10.1049-ipr2.70438
+title: Physics Encoded Spatial and Temporal Generative Adversarial Network for Tropical Cyclone Image
+  Super‐Resolution
+authors:
+- Ruoyi Zhang
+- Jiawei Yuan
+- Lujia Ye
+- Runling Yu
+- Liling Zhao
+date: '2026-01-01'
+year: 2026
+venue: IET Image Processing
+venue_type: journal
+ids:
+  arxiv: '2602.17277'
+  doi: 10.1049/ipr2.70438
+  openalex: W7171566238
+links:
+  paper: https://doi.org/10.1049/ipr2.70438
+orgs:
+- cma
+- nuist
+- university-of-reading
+topic: observations-remote-sensing
+topics:
+- extremes-hazards
+type: model
+method:
+- gan-vae
+- physics-constrained
+- rnn
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Physics-encoded GAN super-resolves tropical cyclone satellite image sequences 4x, using a vorticity-based
+  module and temporal discriminator for motion consistency.
+abstract: ABSTRACT High‐resolution satellite imagery is indispensable for tracking the genesis, intensification,
+  and trajectory of tropical cyclones (TCs). However, existing deep learning‐based super‐resolution (SR)
+  methods often treat satellite image sequences as generic videos, neglecting the underlying atmospheric
+  physical laws governing cloud motion. To address this, we propose a physics encoded spatial and temporal
+  generative adversarial network (PESTGAN) for TC image super‐resolution. Specifically, we design a disentangled
+  generator architecture incorporating a PhyCell module, which approximates the vorticity equation via
+  constrained convolutional operators and encodes the resulting approximate physical dynamics as implicit
+  latent representations to separate physical dynamics from visual textures. Furthermore, a dual‐discriminator
+  framework is introduced, employing a temporal discriminator to enforce motion consistency alongside
+  spatial realism. Experiments on the digital typhoon dataset for 4 upscaling demonstrate that PESTGAN
+  establishes a better performance in structural fidelity and perceptual quality. While maintaining competitive
+  pixel‐level accuracy compared to existing approaches, our method significantly excels in reconstructing
+  meteorologically plausible cloud structures with superior physical fidelity.
+significance: 2
+score: 18
+highlight: false
+added: '2026-10-22'
+source: backfill

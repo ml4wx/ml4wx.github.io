@@ -1,0 +1,51 @@
+id: arxiv-2511.18521
+title: Hyperspectral Variational Autoencoders for Joint Data Compression and Component Extraction
+authors:
+- Core Francisco Park
+- Manuel Perez-Carrasco
+- Caroline Nowlan
+- Cecilia Garraffo
+date: '2025-11-23'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2511.18521'
+links:
+  paper: https://arxiv.org/abs/2511.18521
+  pdf: https://arxiv.org/pdf/2511.18521
+  code: https://github.com/cfpark00/Hyperspectral-VAE
+topic: observations-remote-sensing
+topics:
+- infra-software
+type: model
+method:
+- gan-vae
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: VAE compresses TEMPO geostationary hyperspectral data 514x while linear and nonlinear probes
+  still retrieve NO2, O3, HCHO and cloud fraction.
+abstract: Geostationary hyperspectral satellites generate terabytes of data daily, creating critical challenges
+  for storage, transmission, and distribution to the scientific community. We present a variational autoencoder
+  (VAE) approach that achieves x514 compression of NASA's TEMPO satellite hyperspectral observations (1028
+  channels, 290-490nm) with reconstruction errors 1-2 orders of magnitude below the signal across all
+  wavelengths. This dramatic data volume reduction enables efficient archival and sharing of satellite
+  observations while preserving spectral fidelity. Beyond compression, we investigate to what extent atmospheric
+  information is retained in the compressed latent space by training linear and nonlinear probes to extract
+  Level-2 products (NO2, O3, HCHO, cloud fraction). Cloud fraction and total ozone achieve strong extraction
+  performance (R^2 = 0.93 and 0.81 respectively), though these represent relatively straightforward retrievals
+  given their distinct spectral signatures. In contrast, tropospheric trace gases pose genuine challenges
+  for extraction (NO2 R^2 = 0.20, HCHO R^2 = 0.51) reflecting their weaker signals and complex atmospheric
+  interactions. Critically, we find the VAE encodes atmospheric information in a semi-linear manner -
+  nonlinear probes substantially outperform linear ones - and that explicit latent supervision during
+  training provides minimal improvement, revealing fundamental encoding challenges for certain products.
+  This work demonstrates that neural compression can dramatically reduce hyperspectral data volumes while
+  preserving key atmospheric signals, addressing a critical bottleneck for next-generation Earth observation
+  systems. Code - https://github.com/cfpark00/Hyperspectral-VAE
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,60 @@
+id: arxiv-2604.24224
+title: 'IMPA-Net: Meteorology-Aware Multi-Scale Attention and Dynamic Loss for Extreme Convective Radar
+  Nowcasting'
+authors:
+- Haofei Cui
+- Guangxin He
+- Juanzhen Sun
+- Jingjia Luo
+- Haonan Chen
+- Xiaoran Zhuang
+- Mingxuan Chen
+- Xian Xiao
+date: '2026-04-27'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2604.24224'
+  openalex: W7156781953
+links:
+  paper: https://arxiv.org/abs/2604.24224
+  pdf: https://arxiv.org/pdf/2604.24224
+topic: nowcasting
+topics:
+- extremes-hazards
+type: model
+method:
+- transformer
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: IMPA-Net uses multi-scale attention and a meteorology-aware loss to raise Heidke skill at 45
+  dBZ from 0.049 to 0.143 for 0-2 h convective radar nowcasts.
+abstract: Short-range prediction of convective precipitation from weather radar observations is essential
+  for severe weather warnings. However, deep learning models trained with pixel-wise error metrics tend
+  to produce overly smooth forecasts that suppress intense echoes critical for hazard detection. This
+  issue is exacerbated by insufficient multi-scale feature interaction and suboptimal fusion of heterogeneous
+  geophysical inputs. We propose IMPA-Net (Integrated Multi-scale Predictive Attention Network), a deterministic
+  0-2 hour nowcasting framework that addresses these limitations through meteorologically-informed designs
+  at the input, architecture, and loss function levels. A parameter-free Spatial Mixer reorganizes heterogeneous
+  input channels at the mesoscale-$γ$ neighborhood (~2 km) via deterministic channel permutation, providing
+  a structured cross-field prior. An integrated multi-scale predictive attention module serves as the
+  spatiotemporal translator, capturing dynamics from mesoscale-$β$ to mesoscale-$γ$ scales. A Meteorologically-Aware
+  Dynamic Loss employs three-level asymmetric weighting -- adapting across training epochs, storm intensity,
+  and forecast lead time -- to counteract regression-to-the-mean. Evaluated against seven baselines on
+  a multi-source radar dataset over eastern China, IMPA-Net raises the Heidke Skill Score at $\geq$45
+  dBZ from 0.049 (SimVP baseline) to 0.143 under matched settings. Relative to pySTEPS, it provides a
+  better trade-off between severe-event detection and false-alarm control. Spectral analysis confirms
+  preserved energy across mesoscale bands where competing methods show progressive smoothing. These improvements
+  are shown within a single domain and convective regime; generalizability to other orographic and climatic
+  regions remains to be tested.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

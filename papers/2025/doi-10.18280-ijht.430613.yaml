@@ -1,0 +1,60 @@
+id: doi-10.18280-ijht.430613
+title: Machine Learning Methods for Thermodynamic Energy Flow Pattern Prediction at Regional Scales with
+  High-Dimensional Climate Data
+authors:
+- Zhouyu Zeng
+- Jinbo Song
+- Shunkui Liu
+- Lixia Zhou
+date: '2025-12-31'
+year: 2025
+venue: International Journal of Heat and Technology
+venue_type: journal
+ids:
+  doi: 10.18280/ijht.430613
+  openalex: W7125512118
+links:
+  paper: https://doi.org/10.18280/ijht.430613
+  pdf: https://iieta.org/download/file/fid/191643
+topic: hybrid-parameterization
+type: model
+method:
+- physics-constrained
+- differentiable
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Dual-path physics-data hybrid with differentiable surface energy balance kernels predicts sensible
+  heat flux, cutting MSE 38.7% versus traditional physics-guided ML.
+abstract: Accurate prediction of regional-scale thermodynamic energy flow patterns is crucial for understanding
+  surface-atmosphere interactions and optimizing climate model parameterization schemes, playing a vital
+  role in climate simulation and ecological environmental assessment.Traditional physics-guided machine
+  learning (PGML) methods typically embed physical laws as fixed soft constraints in the model, which
+  struggle to adapt to the spatiotemporal heterogeneity of key thermodynamic parameters under complex
+  underlying surfaces and non-uniform conditions.This limitation affects the quantification accuracy of
+  core parameters such as turbulence exchange coefficients and surface impedance.In this paper, we propose
+  a dual-path physics-data hybrid framework that integrates the physical skeleton with data-driven dynamics
+  through a collaborative architecture of differentiable physical kernels and spatiotemporal neural parameterization.The
+  framework constructs a differentiable forward physics simulator based on discretized regional energy
+  balance equations, while utilizing high-dimensional spatiotemporal encoder-decoder networks to adaptively
+  generate grid-scale physical parameter fields from multi-source climate data.Combined with a multi-objective
+  progressive learning strategy, the model achieves pre-training of parameters and physics-enhanced training.A
+  closedloop integration module is used for energy flow evolution scenario simulation and uncertainty
+  quantification.This model demonstrates significant predictive advantages across various spatial and
+  temporal scales, as well as extreme weather scenarios.For instance, the daily-scale sensible heat flux
+  in homogeneous farmland reduces mean squared error (MSE) by 38.7% compared to traditional PGML and 30.8%
+  compared to Convolutional Neural Network-Long Short-Term Memory (CNN-LSTM), with an accuracy degradation
+  rate of only 13.5%-17.3%under extreme scenarios.The energy conservation error is ≤ 5.7 W•m⁻².Ablation
+  experiments validate the core role of innovative components such as the neural parameterization, while
+  revealing a regional thermodynamic parameterization formula (R² = 0.89) for multi-surface adaptation,
+  uncovering the differences in energy flow driving mechanisms across regions.This study upgrades machine
+  learning from a traditional predictive tool to a mechanism discovery and model enhancement tool, offering
+  new methods for improving regional thermodynamic parameterization schemes and enhancing the reliability
+  of energy flow predictions in extreme scenarios.It holds significant academic value and practical prospects.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

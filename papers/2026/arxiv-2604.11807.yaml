@@ -1,0 +1,45 @@
+id: arxiv-2604.11807
+title: Physics-Informed State Space Models for Reliable Solar Irradiance Forecasting in Off-Grid Systems
+authors:
+- Mohammed Ezzaldin Babiker Abdullah
+date: '2026-04-13'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2604.11807'
+links:
+  paper: https://arxiv.org/abs/2604.11807
+  pdf: https://arxiv.org/pdf/2604.11807
+  code: https://github.com/Marco9249/PISSM-Solar-Forecasting
+topic: local-forecasting
+topics:
+- applications-impacts
+type: model
+method:
+- physics-constrained
+- other
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: pre-operational
+summary: Physics-informed linear state space model forecasts solar irradiance for off-grid PV in Sudan
+  with under 40,000 parameters, enforcing diurnal cycles using solar zenith angle.
+abstract: The stable operation of off-grid photovoltaic systems requires accurate, computationally efficient
+  solar forecasting. Contemporary deep learning models often suffer from massive computational overhead
+  and physical blindness, generating impossible predictions. This paper introduces the Physics-Informed
+  State Space Model (PISSM) to bridge the gap between efficiency and physical accuracy for edge-deployed
+  microcontrollers. PISSM utilizes a dynamic Hankel matrix embedding to filter stochastic sensor noise
+  by transforming raw meteorological sequences into a robust state space. A Linear State Space Model replaces
+  heavy attention mechanisms, efficiently modeling temporal dependencies for parallel processing. Crucially,
+  a novel Physics-Informed Gating mechanism leverages the Solar Zenith Angle and Clearness Index to structurally
+  bound outputs, ensuring predictions strictly obey diurnal cycles and preventing nocturnal errors. Validated
+  on a multi-year dataset for Omdurman, Sudan, PISSM achieves superior accuracy with fewer than 40,000
+  parameters, establishing an ultra-lightweight benchmark for real-time off-grid control.
+significance: 2
+score: 18
+highlight: false
+added: '2026-10-22'
+source: backfill

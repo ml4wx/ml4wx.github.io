@@ -1,0 +1,58 @@
+id: doi-10.5194-egusphere-2026-569
+title: High climatological cloud cover limits its response to aerosols in ICON-HAM
+authors:
+- Yichen Jia
+- Hendrik Andersen
+- David Neubauer
+- Ulrike Lohmann
+- Corinna Hoose
+- Jan Čermák
+date: '2026-02-20'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.5194/egusphere-2026-569
+  openalex: W7130651433
+links:
+  paper: https://doi.org/10.5194/egusphere-2026-569
+  pdf: https://egusphere.copernicus.org/preprints/2026/egusphere-2026-569/egusphere-2026-569.pdf
+orgs:
+- eth-zurich
+- kit
+topic: climate-analysis-attribution
+topics:
+- xai-uq-physics
+type: evaluation
+method:
+- classical-ml
+timescale:
+- climate
+spatial:
+- global
+data:
+- other
+status: research
+summary: Uses SHAP and piecewise regression to show ICON-HAM cloud fraction sensitivity to droplet number
+  saturates and depends on model configuration.
+abstract: 'Abstract. Marine low-level clouds substantially cool the climate and are sensitive to aerosols.
+  Observations suggest strong cooling from cloud fraction (CF) adjustments, yet global climate models
+  (GCMs) may underestimate this process. We apply explainable machine-learning with SHapley Additive exPlanations
+  (SHAP) to the ICOsahedral Nonhydrostatic atmosphere model coupled with the Hamburg Aerosol Module (ICON-HAM)
+  to quantify CF sensitivity to cloud droplet number concentration (Nd). We analyze six experiments combining
+  two cloud cover parameterizations, an RH-only scheme (CC–RH) and a cloud-water-dependent scheme (CC–RH–LWC),
+  with three prescribed lower bounds for Nd (Nd,min = 10, 40, 100 cm-3). The lnNd–CF relationships in
+  ICON–HAM are more nonlinear than in satellite observations and exhibit saturation. We quantify sensitivities
+  using piecewise linear regression (PLR) separating low- and high-Nd regimes. Sensitivities are stronger
+  in the low-Nd regime, while inter-scheme and inter-Nd,min differences are negligible at high Nd. Unexpectedly,
+  CC-RH-LWC shows weaker sensitivity than CC-RH at high Nd,min, despite explicit CF–cloud water coupling.
+  We attribute this to a "headroom effect'''': higher Nd,min suppresses autoconversion and enhances liquid
+  water path in both schemes, but CC-RH-LWC converts this into higher mean CF, limiting headroom for aerosol-induced
+  CF increases. These findings are robust across three PLR breakpoint strategies. Our results demonstrate
+  that GCM CF responses are state-dependent and strongly influenced by model configuration choices, which
+  can pre-saturate cloud cover responses and mask true CF adjustment magnitudes. We suggest that model–observation
+  comparisons should account for baseline mean CF to avoid misinterpretation.'
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

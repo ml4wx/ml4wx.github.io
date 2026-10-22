@@ -1,0 +1,63 @@
+id: doi-10.1029-2025ms005102
+title: Hybrid‐Modeling of Land‐Atmosphere Fluxes Using Integrated Machine Learning in the ICON‐ESM Modeling
+  Framework
+authors:
+- Reda ElGhawi
+- Christian Reimers
+- Reiner Schnur
+- Markus Reichstein
+- Marco Körner
+- Nuno Carvalhais
+- Alexander J. Winkler
+date: '2025-12-01'
+year: 2025
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2025ms005102
+  openalex: W4416977743
+links:
+  paper: https://doi.org/10.1029/2025ms005102
+orgs:
+- mpi-meteorology
+- mpi-biogeochemistry
+- tum
+topic: hybrid-parameterization
+type: model
+method:
+- other
+spatial:
+- global
+- local
+data:
+- stations
+- other
+status: research
+summary: Feed-forward networks trained on FLUXNET replace JSBACH4 stomatal and photosynthesis parameterizations
+  inside ICON-ESM, reducing flux residuals against observations.
+abstract: Abstract The water and carbon exchange between the land surface and the atmosphere is regulated
+  by meteorological conditions and plant physiological processes. Traditional mechanistic modeling approaches,
+  for example, the Earth system model ICON‐ESM with the land component JSBACH4 , are hampered by relatively
+  rigid parameterizations for stomatal conductance to model land‐atmosphere coupling. We develop a hybrid
+  modeling approach integrating data‐driven flexible parameterizations based on eddy‐covariance flux measurements
+  (FLUXNET) with mechanistic modeling. We replace specific empirical parametrizations of the coupled photosynthesis
+  (gross primary production [GPP]) and transpiration () modules with feed‐forward neural network models
+  pre‐trained on observations. In a proof‐of‐concept, we demonstrate that our approach reconstructs original
+  JSBACH4 parameterizations for stomatal conductance (), maximum carboxylation rates () and the maximum
+  electron transport rates (), that decisively control GPP and . We then replace JSBACH4 's original parametrizations
+  by calling the emulator parameterizations trained on original JSBACH4 output using a Python‐Fortran
+  bridge. Adapting the approach to observational data, Hybrid‐JSBACH4 infers these parametrizations from
+  eddy‐covariance measurements to construct observation‐informed modeling of water and carbon fluxes in
+  JSBACH4 . The mean hourly residuals of in Hybrid‐JSBACH4 with respect to FLUXNET observations vary between
+  −0.1 and 0.15 kg m −2 hr −1 while the JSBACH4 residuals vary between −0.3 and 0.2 kg m −2 hr −1 for
+  forest and grassland sites. The mean hourly residuals for GPP of Hybrid‐JSBACH4 with respect to observations
+  vary between −0.5 and 0.5 gC m −2 hr −1 , compared to the original JSBACH4 with residuals ranging between
+  −1.0 and 0.5 gC m −2 hr −1 , for forest and grassland sites. Our Hybrid‐JSBACH4 model improves the representation
+  of plant physiological responses, and reduces biases in transpiration and GPP simulations under varying
+  atmospheric dryness and water availability conditions.
+significance: 4
+cited_by: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

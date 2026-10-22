@@ -1,0 +1,47 @@
+id: arxiv-2511.10894
+title: DINOv3 as a Frozen Encoder for CRPS-Oriented Probabilistic Rainfall Nowcasting
+authors:
+- Luciano Araujo Dourado Filho
+- Almir Moreira da Silva Neto
+- Anthony Miyaguchi
+- Rodrigo Pereira David
+- Rodrigo Tripodi Calumby
+- Lukáš Picek
+date: '2025-11-14'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2511.10894'
+  openalex: W4416336889
+links:
+  paper: https://arxiv.org/abs/2511.10894
+  pdf: https://arxiv.org/pdf/2511.10894
+topic: nowcasting
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- transformer
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Frozen DINOv3 satellite encoder with a V-JEPA transformer head predicts CRPS-optimized rainfall
+  distributions, cutting CRPS about 26% versus the best 3D-UNet on Weather4cast 2025.
+abstract: This paper proposes a competitive and computationally efficient approach to probabilistic rainfall
+  nowcasting. A video projector (V-JEPA Vision Transformer) associated to a lightweight probabilistic
+  head is attached to a pre-trained satellite vision encoder (DINOv3-SAT493M) to map encoder tokens into
+  a discrete empirical CDF (eCDF) over 4-hour accumulated rainfall. The projector-head is optimized end-to-end
+  over the Ranked Probability Score (RPS). As an alternative, 3D-UNET baselines trained with an aggregate
+  Rank Probability Score and a per-pixel Gamma-Hurdle objective are used. On the Weather4Cast 2025 benchmark,
+  the proposed method achieved a promising performance, with a CRPS of 3.5102, which represents $\approx$
+  26% in effectiveness gain against the best 3D-UNET.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

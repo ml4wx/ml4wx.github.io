@@ -1,0 +1,47 @@
+id: arxiv-2512.19305
+title: 'CienaLLM: Generative Climate-Impact Extraction from News Articles with Autoregressive LLMs'
+authors:
+- Javier Vela-Tambo
+- Jorge Gracia
+- Fernando Dominguez-Castro
+date: '2025-12-22'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2512.19305'
+links:
+  paper: https://arxiv.org/abs/2512.19305
+  pdf: https://arxiv.org/pdf/2512.19305
+topic: llms-agents
+topics:
+- applications-impacts
+type: model
+method:
+- llm
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Schema-guided open LLM pipeline extracts drought impacts from Spanish news, matching a supervised
+  baseline; includes a factorial study of model size, precision and prompts.
+abstract: Understanding and monitoring the socio-economic impacts of climate hazards requires extracting
+  structured information from heterogeneous news articles on a large scale. To that end, we have developed
+  CienaLLM, a modular framework based on schema-guided Generative Information Extraction. CienaLLM uses
+  open-weight Large Language Models for zero-shot information extraction from news articles, and supports
+  configurable prompts and output schemas, multi-step pipelines, and cloud or on-premise inference. To
+  systematically assess how the choice of LLM family, size, precision regime, and prompting strategy affect
+  performance, we run a large factorial study in models, precisions, and prompt engineering techniques.
+  An additional response parsing step nearly eliminates format errors while preserving accuracy; larger
+  models deliver the strongest and most stable performance, while quantization offers substantial efficiency
+  gains with modest accuracy trade-offs; and prompt strategies show heterogeneous, model-specific effects.
+  CienaLLM matches or outperforms the supervised baseline in accuracy for extracting drought impacts from
+  Spanish news, although at a higher inference cost. While evaluated in droughts, the schema-driven and
+  model-agnostic design is suitable for adapting to related information extraction tasks (e.g., other
+  hazards, sectors, or languages) by editing prompts and schemas rather than retraining. We release code,
+  configurations, and schemas to support reproducible use.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

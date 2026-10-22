@@ -1,0 +1,57 @@
+id: doi-10.1038-s41612-026-01337-4
+title: Deep learning model for enhancing decadal prediction of Eurasian surface air temperature
+authors:
+- Yuhao Chen
+- Yanyan Huang
+- Danwei Qian
+- D. Yonghong Zhang
+- Ni Huang
+- Yin Zhicong
+- Huijun Wang
+date: '2026-02-16'
+year: 2026
+venue: npj Climate and Atmospheric Science
+venue_type: journal
+ids:
+  doi: 10.1038/s41612-026-01337-4
+  openalex: W7129127742
+links:
+  paper: https://doi.org/10.1038/s41612-026-01337-4
+  pdf: https://www.nature.com/articles/s41612-026-01337-4_reference.pdf
+orgs:
+- nuist
+- iap-cas
+topic: post-processing
+topics:
+- s2s-seasonal
+type: model
+method:
+- rnn
+- transformer
+timescale:
+- decadal
+spatial:
+- regional
+data:
+- cmip
+status: research
+summary: A GRU with attention and batch norm post-processes multi-model decadal forecasts, raising Eurasian
+  temperature anomaly correlation from -0.23 to 0.83 over 2004–2021.
+abstract: Decadal climate prediction offers critical scientific guidance for policymakers and supports
+  socioeconomic sustainability. Nevertheless, state-of-the-art dynamical models remain limited in predicting
+  the intricate multidecadal variability in Eurasian surface air temperature (SAT) at mid-to-high latitudes
+  several years in advance. Here, we present a hybrid deep learning model–Gated Recurrent Unit augmented
+  with batch normalization and attention mechanism (GRUBA) –that significantly enhances decadal prediction
+  skill through advanced postprocessing of multi-model ensemble outputs. By incorporating K-means temporal
+  clustering, GRUBA sequentially refines each SAT cluster according to its distinct decadal variability.
+  During the test period of 2004–2021, the averaged anomaly correlation coefficient skill improves from
+  –0.23 to 0.83, and the mean square skill score from –0.37 to 0.68 compared to the unweighted multi-model
+  ensemble mean. This substantial improvement arises in part from the attention mechanism, which effectively
+  reduces model spread. Furthermore, SHAP (Shapley Additive exPlanations) analysis reveals that GRUBA
+  assigns higher weights to better-performing ensemble members.
+significance: 4
+cited_by: 1
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

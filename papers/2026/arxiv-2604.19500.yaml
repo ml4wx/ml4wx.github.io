@@ -1,0 +1,52 @@
+id: arxiv-2604.19500
+title: Connecting the forward problem to the inverse problem in uncertainty quantification of Earth system
+  models using fast emulators
+authors:
+- Ethan YoungIn Shin
+- Baris Kale
+- Michael F. Howland
+date: '2026-04-21'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2604.19500'
+  openalex: W7155159017
+links:
+  paper: https://arxiv.org/abs/2604.19500
+  pdf: https://arxiv.org/pdf/2604.19500
+orgs:
+- mit
+topic: xai-uq-physics
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- km-scale-sim
+status: research
+summary: Gaussian process emulators of WRF turbulence parameterizations enable global sensitivity analysis
+  and a non-iterative rule for choosing observations that best constrain Bayesian calibration.
+abstract: Quantifying and reducing uncertainty in Earth system model parameterizations is essential to
+  improving their reliability in decision-making. Forward uncertainty propagation is used to derive parameter
+  sensitivity but requires physically plausible parameter distributions first be learned from observations.
+  Bayesian inference offers a principled approach but can become ill-posed when observations weakly constrain
+  parameters--a condition difficult to know prior to inference. Addressing this gap, we show that parameter
+  sensitivity results from forward uncertainty quantification can guide a non-iterative strategy for identifying
+  observations informative to Bayesian calibration. We explore both forward and inverse uncertainty quantification
+  for parameterizations of atmospheric turbulence in the Weather Research and Forecasting (WRF) model.
+  To overcome the computational bottleneck of $\mathcal{O}(10^5)$ model evaluations required for both
+  analyses, we leverage Gaussian process emulators trained on several hundred WRF simulations. Using these
+  emulators, we conduct a global sensitivity analysis across observation space, investigating how parameter
+  contributions to output variance depend on quantity of interest, atmospheric stability, time-averaging
+  length, and spatial location. We then introduce nondimensional diagnostic measures that systematically
+  identify regions where a parameter's contribution to output variance exceeds observational noise and
+  its independent effect exceeds interaction effects. We demonstrate that observations from these regions
+  serve as a strong proxy for accurate Bayesian calibration and reduced posterior uncertainty. Through
+  emulator-aided Bayesian inversion with synthetic observations, we show how parameter uncertainty can
+  be systematically reduced by leveraging sensitivity information.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

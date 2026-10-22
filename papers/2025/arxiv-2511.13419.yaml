@@ -1,0 +1,47 @@
+id: arxiv-2511.13419
+title: 'MMWSTM-ADRAN+: A Novel Hybrid Deep Learning Architecture for Enhanced Climate Time Series Forecasting
+  and Extreme Event Prediction'
+authors:
+- Shaheen Mohammed Saleh Ahmed
+- Hakan Hakan Guneyli
+date: '2025-11-17'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2511.13419'
+links:
+  paper: https://arxiv.org/abs/2511.13419
+  pdf: https://arxiv.org/pdf/2511.13419
+topic: extremes-hazards
+topics:
+- local-forecasting
+type: model
+method:
+- rnn
+- transformer
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: A hybrid BiLSTM and BiGRU attention model with an extreme-weighted loss forecasts daily maximum
+  temperature extremes from time series.
+abstract: Accurate short-range prediction of extreme air temperature events remains a fundamental challenge
+  in operational climate-risk management. We present Multi-Modal Weather State Transition Model with Anomaly-Driven
+  Recurrent Attention Network Plus (MMWSTM-ADRAN+), a dual-stream deep learning architecture that couples
+  a regime-aware dynamics model with an anomaly-focused attention mechanism to forecast daily maximum
+  temperature and its extremes. The first stream, MMWSTM, combines bidirectional Long Short-Term Memory
+  (BiLSTM) units with a learnable Markov state transition matrix to capture synoptic-scale weather regime
+  changes. The second stream, ADRAN, integrates bidirectional Gated Recurrent Units (BiGRUs), multi-head
+  self-attention, and a novel anomaly amplification layer to enhance sensitivity to low-probability signals.
+  A lightweight attentive fusion gate adaptively determines the contribution of each stream to the final
+  prediction. Model optimization employs a custom ExtremeWeatherLoss function that up-weights errors on
+  the upper 5% and lower 5% of the temperature distribution, and a time-series data augmentation suite
+  (jittering, scaling, time/magnitude warping) that effectively quadruples the training data
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

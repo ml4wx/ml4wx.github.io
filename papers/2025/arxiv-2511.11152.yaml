@@ -1,0 +1,52 @@
+id: arxiv-2511.11152
+title: 'Deep Learning for Short-Term Precipitation Prediction in Four Major Indian Cities: A ConvLSTM
+  Approach with Explainable AI'
+authors:
+- Tanmay Ghosh
+- Shaurabh Anand
+- Rakesh Gomaji Nannewar
+- Nithin Nagaraj
+date: '2025-11-14'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2511.11152'
+  openalex: W4416343302
+links:
+  paper: https://arxiv.org/abs/2511.11152
+  pdf: https://arxiv.org/pdf/2511.11152
+topic: local-forecasting
+topics:
+- post-processing
+type: application
+method:
+- rnn
+- cnn
+timescale:
+- short
+spatial:
+- local
+data:
+- era5
+status: research
+summary: Time-distributed CNN-ConvLSTM with explainability forecasts daily rainfall in four Indian cities
+  from ERA5, with RMSE 0.21 to 1.80 mm/day across cities.
+abstract: 'Deep learning models for precipitation forecasting often function as black boxes, limiting
+  their adoption in real-world weather prediction. To enhance transparency while maintaining accuracy,
+  we developed an interpretable deep learning framework for short-term precipitation prediction in four
+  major Indian cities: Bengaluru, Mumbai, Delhi, and Kolkata, spanning diverse climate zones. We implemented
+  a hybrid Time-Distributed CNN-ConvLSTM (Convolutional Neural Network-Long Short-Term Memory) architecture,
+  trained on multi-decadal ERA5 reanalysis data. The architecture was optimized for each city with a different
+  number of convolutional filters: Bengaluru (32), Mumbai and Delhi (64), and Kolkata (128). The models
+  achieved root mean square error (RMSE) values of 0.21 mm/day (Bengaluru), 0.52 mm/day (Mumbai), 0.48
+  mm/day (Delhi), and 1.80 mm/day (Kolkata). Through interpretability analysis using permutation importance,
+  Gradient-weighted Class Activation Mapping (Grad-CAM), temporal occlusion, and counterfactual perturbation,
+  we identified distinct patterns in the model''s behavior. The model relied on city-specific variables,
+  with prediction horizons ranging from one day for Bengaluru to five days for Kolkata. This study demonstrates
+  how explainable AI (xAI) can provide accurate forecasts and transparent insights into precipitation
+  patterns in diverse urban environments.'
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

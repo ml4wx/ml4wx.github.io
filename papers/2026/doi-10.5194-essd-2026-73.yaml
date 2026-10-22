@@ -1,0 +1,65 @@
+id: doi-10.5194-essd-2026-73
+title: 'Global-ABLWind: a global atmospheric boundary layer wind speed profile dataset derived from Aeolus
+  and surface ancillary information'
+authors:
+- Zhe Tong
+- Boming Liu
+- Xin Ma
+- Jianping Guo
+- Haowei Zhang
+- Haoyu Dong
+- Ge Han
+- Yingying Ma
+- Wei Yu Gong
+date: '2026-03-23'
+year: 2026
+venue: Earth System Science Data Discussions
+venue_type: journal
+ids:
+  doi: 10.5194/essd-2026-73
+  openalex: W7140136667
+links:
+  paper: https://doi.org/10.5194/essd-2026-73
+  pdf: https://essd.copernicus.org/preprints/essd-2026-73/essd-2026-73.pdf
+orgs:
+- cma
+topic: observations-remote-sensing
+topics:
+- benchmarks-data-eval
+type: benchmark
+method:
+- classical-ml
+- physics-constrained
+spatial:
+- global
+data:
+- satellite
+- era5
+status: research
+summary: XGB-Wind uses physics constraints to reconstruct 100 m Aeolus boundary-layer wind profiles, with
+  R=0.92 and RMSE 1.94 m/s, and releases a global dataset.
+abstract: Abstract. Accurate wind speed profiles within the atmospheric boundary layer (ABL) are essential
+  for understanding atmospheric processes, climate change, and wind energy assessment. However, existing
+  global ABL wind products lack either sufficient vertical resolution or accuracy, limiting their ability
+  to resolve wind structures throughout the ABL. Here, we propose a physics-constrained machine learning
+  framework designed to reconstruct continuous ABL wind speed profiles by integrating physically interpretable
+  bias-correction mechanisms with dynamical constraints from Aeolus L2C observations. The proposed method
+  enables the reconstruction of high-accuracy wind speed profiles at a vertical resolution of 100 m across
+  the full ABL (0–2 km), overcoming the trade-off between accuracy and vertical resolution that characterizes
+  existing products. Independent validation against RS observations demonstrates that the proposed method
+  achieves high accuracy across all ABL heights. It has an overall correlation coefficient (R) of 0.92
+  and a root mean square error (RMSE) of 1.94 m s-1, outperforming the original Aeolus L2C product (R
+  = 0.90, RMSE = 2.23 m s-1). Further comparisons at 100 m vertical resolution with the fifth generation
+  ECMWF reanalysis (ERA5) and the power law method confirm the superior accuracy of XGB-Wind, especially
+  in the near-surface layer (0–500 m). Applying the proposed framework to the full Aeolus mission period
+  (from July 2020 to April 2023), we generate a global high-resolution ABL wind speed profile dataset,
+  termed Global-ABLWind. This dataset provides 100 m vertical resolution wind profiles with enhanced accuracy,
+  continuous ABL coverage, and reduced data gaps on a global scale. The dataset is freely available at
+  https://doi.org/10.5281/zenodo.18286457 (Tong et al., 2026) and represents a valuable remote sensing
+  resource for boundary-layer wind studies and wind-related environmental applications.
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,55 @@
+id: doi-10.3390-rs18020206
+title: Three-Dimensional Radar Echo Extrapolation Using a Physics-Constrained Deep Learning Model
+authors:
+- Liangchao Geng
+- Jinzhong Min
+- Huantong Geng
+- Xiaoran Zhuang
+date: '2026-01-08'
+year: 2026
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs18020206
+  openalex: W7119500871
+links:
+  paper: https://doi.org/10.3390/rs18020206
+orgs:
+- nuist
+topic: nowcasting
+type: model
+method:
+- diffusion
+- transformer
+- physics-constrained
+- neural-operator
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: DIFF-3DRformer combines physics-constrained 3D radar extrapolation with diffusion refinement,
+  improving the comprehensive score by 44.8% over NowcastNet at ≥35 dBZ.
+abstract: Accurate nowcasting of severe convective storms is crucial for disaster mitigation, yet storm
+  complexity challenges conventional deep learning models. Existing methods often use single-level radar
+  data and lack physical constraints, limiting skill in predicting small-scale convective systems. To
+  address this, we propose DIFF-3DRformer, a novel deep learning framework for 3D radar echo extrapolation.
+  This model unifies a mesoscale evolution network, embedded with 3D advection equation neural operators
+  and a 3D continuity equation-informed loss function, and a convective-scale denoising generative network
+  based on a diffusion model, within an end-to-end architecture optimized for prediction accuracy. Evaluated
+  on severe storm events over Jiangsu, China, DIFF-3DRformer demonstrates robust predictive skill across
+  various convective scales. It outperforms NowcastNet, improving the comprehensive score by 44.8% for
+  reflectivity thresholds ≥35 dBZ. Utilizing 19 vertical levels of radar data as input significantly enhances
+  the morphology and intensity prediction of convective echoes, boosting performance by 4.63% compared
+  to using only composite reflectivity. Furthermore, the incorporation of physical constraints refines
+  the forecasted echo structure and spatial placement, yielding additional improvements. DIFF-3DRformer
+  provides accurate short-term evolution forecasts of convective systems, offering a promising solution
+  for developing nowcasting methods that directly characterize the 3D structure of convective storms.
+significance: 4
+cited_by: 1
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

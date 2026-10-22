@@ -1,0 +1,51 @@
+id: arxiv-2602.01194
+title: 'EMFormer: Efficient Multi-Scale Transformer for Accumulative Context Weather Forecasting'
+authors:
+- Hao Chen
+- Tao Han
+- Jie Zhang
+- Song Guo
+- Fenghua Ling
+- Lei Bai
+date: '2026-02-01'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2602.01194'
+  openalex: W7127437115
+links:
+  paper: https://arxiv.org/abs/2602.01194
+  pdf: https://arxiv.org/pdf/2602.01194
+  code: https://github.com/chenhao-zju/emformer
+topic: global-medium-range
+type: model
+method:
+- transformer
+- cnn
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: EMFormer uses a single-convolution multi-scale Transformer and accumulative-context finetuning
+  to extend weather forecast horizons, with a 5.69x speedup over conventional multi-scale modules.
+abstract: 'Long-term weather forecasting is critical for socioeconomic planning and disaster preparedness.
+  While recent approaches employ finetuning to extend prediction horizons, they remain constrained by
+  the issues of catastrophic forgetting, error accumulation, and high training overhead. To address these
+  limitations, we present a novel pipeline across pretraining, finetuning and forecasting to enhance long-context
+  modeling while reducing computational overhead. First, we introduce an Efficient Multi-scale Transformer
+  (EMFormer) to extract multi-scale features through a single convolution in both training and inference.
+  Based on the new architecture, we further employ an accumulative context finetuning to improve temporal
+  consistency without degrading short-term accuracy. Additionally, we propose a composite loss that dynamically
+  balances different terms via a sinusoidal weighting, thereby adaptively guiding the optimization trajectory
+  throughout pretraining and finetuning. Experiments show that our approach achieves strong performance
+  in weather forecasting and extreme event prediction, substantially improving long-term forecast accuracy.
+  Moreover, EMFormer demonstrates strong generalization on vision benchmarks (ImageNet-1K and ADE20K)
+  while delivering a 5.69x speedup over conventional multi-scale modules. Code: https://github.com/chenhao-zju/emformer'
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

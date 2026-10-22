@@ -1,0 +1,50 @@
+id: doi-10.3390-en18236342
+title: Short-Term Wind-Forecast Calibration for Energy Management Using Numerical Modeling and In Situ
+  Measurements
+authors:
+- Alejandro Pujante Pérez
+- José Antonio Cabo Valdés
+- Antonio J. Jara
+date: '2025-12-03'
+year: 2025
+venue: Energies
+venue_type: journal
+ids:
+  doi: 10.3390/en18236342
+  openalex: W4417050263
+links:
+  paper: https://doi.org/10.3390/en18236342
+topic: post-processing
+topics:
+- applications-impacts
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: LightGBM post-processing of WRF forecasts with 18 station observations cuts wind-speed MAE from
+  2.095 to 0.94 m/s over 1–24 h horizons.
+abstract: The increasing integration of renewable energy into transmission grids requires accurate short-term
+  wind forecasting to optimize Dynamic Line Rating systems, yet numerical weather prediction (NWP) models
+  alone show insufficient accuracy for energy management applications. This study presents a machine learning
+  framework that combines numerical weather prediction outputs with real-time observations from 18 meteorological
+  stations in northern Iberian Peninsula to calibrate short-term wind forecasts. A Light Gradient Boosting
+  Machine (LGBM) algorithm was trained on one year of data to generate 24 independent models for prediction
+  horizons from 1 to 24 h, incorporating lagged observations, WRF forecasts, and station metadata as predictors.
+  During a 48 h evaluation test, the LGBM-corrected forecasts reduced mean absolute error from 2.095 to
+  0.94 m/s for wind speed and from 90.2° to 47.3° for wind direction compared to raw WRF outputs, with
+  improvements exceeding 62% and 56%, respectively, at 5 h lead time. The methodology demonstrates that
+  integrating sensor network observations with numerical modeling through machine learning post-processing
+  substantially enhances short-term wind prediction accuracy, providing a practical solution for real-time
+  energy grid management and renewable integration.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

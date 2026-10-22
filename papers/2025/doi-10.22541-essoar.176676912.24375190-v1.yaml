@@ -1,0 +1,58 @@
+id: doi-10.22541-essoar.176676912.24375190-v1
+title: A Machine Learning-based Planetary Boundary Layer Height Scheme for ICON-A Learned from Vertically
+  Highly Resolved Simulations
+authors:
+- Janis Klamt
+- Mierk Schwabe
+- Axel Lauer
+- M. A. Giorgetta
+- Thorsten Mauritsen
+- Veronika Eyring
+date: '2025-12-26'
+year: 2025
+venue_type: other
+ids:
+  doi: 10.22541/essoar.176676912.24375190/v1
+  openalex: W7117308839
+links:
+  paper: https://doi.org/10.22541/essoar.176676912.24375190/v1
+orgs:
+- mpi-meteorology
+topic: hybrid-parameterization
+type: model
+method:
+- other
+timescale:
+- climate
+spatial:
+- global
+data:
+- era5
+- km-scale-sim
+status: research
+summary: ML boundary-layer height scheme trained on coarse-grained high-resolution ICON runs; stable 36-year
+  AMIP coupling reduces biases in coarse-resolution climate simulations.
+abstract: In climate models, an accurate representation of the planetary boundary layer height (BLH) is
+  critical, as it is a key input to turbulence parameterizations and directly impacts the vertical transport
+  of momentum, heat, moisture, and tracers. Despite its importance, classical BLH schemes often exhibit
+  systematic errors at coarse vertical resolutions, leading to biases in turbulent diffusion. Using the
+  atmospheric component of the ICON model, we investigate the sensitivity of three classical BLH schemes
+  to vertical model resolution. We identify biases and numerical artifacts in BLH distributions when using
+  the standard ICON-A configuration with coarse vertical resolution. Simulations with substantially higher
+  vertical resolution show improved agreement with ERA5 reanalysis data. However, such high-resolution
+  configurations are computationally expensive and not feasible for long-term climate simulations. To
+  address this limitation, we develop a machine learning (ML)-based BLH scheme trained on vertically high-resolution
+  ICON simulations that are coarse-grained to the standard climate model configuration. The ML-based scheme
+  achieves a coefficient of determination exceeding $R^2=0.99$ relative to high-resolution BLH estimates.
+  It effectively reduces the biases of classical schemes in low-resolution configurations, especially
+  improving the diurnal cycle over complex terrain. When coupled online to ICON, the ML scheme enables
+  stable 36-year AMIP simulations without further tuning and leads to changes in surface climatology and
+  general circulation. It improves both the accuracy and statistical distribution of simulated BLHs, yielding
+  a more consistent representation of boundary layer processes in climate simulations. Moreover, relative
+  to observational datasets, the ML scheme shows slight improvements in cloud cover and precipitation.
+significance: 4
+cited_by: 1
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,55 @@
+id: doi-10.1038-s41598-025-34207-9
+title: Deterministic nowcasting of geostationary satellite infrared brightness temperature using 3D U-Net
+  diffusion model
+authors:
+- Vesta Afzali Gorooh
+- Luca Delle Monache
+- Duncan Axisa
+- Agniv Sengupta
+- Zhenhai Zhang
+- Fred Martin Ralph
+date: '2026-01-03'
+year: 2026
+venue: Scientific Reports
+venue_type: journal
+ids:
+  doi: 10.1038/s41598-025-34207-9
+  openalex: W7118130075
+links:
+  paper: https://doi.org/10.1038/s41598-025-34207-9
+topic: nowcasting
+type: model
+method:
+- diffusion
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Diffusion model with 3D U-Net nowcasts SEVIRI infrared brightness temperatures six hours ahead,
+  beating ConvLSTM and optical flow baselines with higher SSIM and lower CRPS.
+abstract: We present a generative modeling approach for nowcasting infrared (IR) brightness temperatures
+  (Tb) from geostationary satellite observations (~ 10.8 μm) that couples a denoising diffusion probabilistic
+  model with a 3D U-Net backbone. Using SEVIRI observations, the model ingests six hours of IR history
+  and produces six-hour nowcasts at 15-min resolution. Deterministic evaluation is performed on an independent
+  July-September 2022 test set and benchmarked against 3D U-Net, ConvLSTM, and Optical Flow extrapolation
+  baselines. The diffusion model enhances prediction accuracy, yielding lower errors and higher correlation
+  than all baselines across most forecast lead times, with a persistent advantage through the 2-hour lead
+  time and reduced but still evident gains at longer leads. We complement the statistical assessments
+  with a perceptual and a probabilistic diagnostic; diffusion achieves the highest SSIM at all leads and
+  the lowest CRPS among all models (CRPS generates MAE for deterministic baselines). RAPSD analysis shows
+  improved retention of high-frequency variance relative to deep learning baselines while avoiding the
+  texture-only limitations of Optical Flow. Spatial maps demonstrate that our diffusion model significantly
+  outperforms the baselines, indicating smaller errors over the study region. Two case studies show coherent
+  structures in Tb forecasts, sharper gradients, and improved localization of evolving cold features.
+  Overall, coupling diffusion with 3D U-Net delivers more structurally faithful satellite nowcasts than
+  traditional extrapolation and deep learning baselines, particularly at short to intermediate leads.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,48 @@
+id: arxiv-2602.22962
+title: Scaling Laws of Global Weather Models
+authors:
+- Yuejiang Yu
+- Langwen Huang
+- Alexandru Calotoiu
+- Torsten Hoefler
+date: '2026-02-26'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2602.22962'
+  openalex: W7131909670
+links:
+  paper: https://arxiv.org/abs/2602.22962
+  pdf: https://arxiv.org/pdf/2602.22962
+topic: global-medium-range
+topics:
+- benchmarks-data-eval
+type: evaluation
+method:
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Scaling-law analysis of global AI weather models finds 10x more data cuts validation loss up
+  to 3.2x for Aurora, and favours wider over deeper architectures.
+abstract: 'Data-driven models are revolutionizing weather forecasting. To optimize training efficiency
+  and model performance, this paper analyzes empirical scaling laws within this domain. We investigate
+  the relationship between model performance (validation loss) and three key factors: model size ($N$),
+  dataset size ($D$), and compute budget ($C$). Across a range of models, we find that Aurora exhibits
+  the strongest data-scaling behavior: increasing the training dataset by 10x reduces validation loss
+  by up to 3.2x. GraphCast demonstrates the highest parameter efficiency, yet suffers from limited hardware
+  utilization. Our compute-optimal analysis indicates that, under fixed compute budgets, allocating resources
+  to more total training data yields greater performance gains than increasing model size. Furthermore,
+  we analyze model shape and uncover scaling behaviors that differ fundamentally from those observed in
+  language models: weather forecasting models consistently favor increased width over depth. These findings
+  suggest that future weather models should prioritize wider architectures and larger effective training
+  datasets to maximize predictive performance.'
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

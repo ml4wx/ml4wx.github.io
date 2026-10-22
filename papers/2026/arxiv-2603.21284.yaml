@@ -1,0 +1,44 @@
+id: arxiv-2603.21284
+title: 'Sonny: Breaking the Compute Wall in Medium-Range Weather Forecasting'
+authors:
+- Minjong Cheon
+date: '2026-03-22'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2603.21284'
+  openalex: W7140169652
+links:
+  paper: https://arxiv.org/abs/2603.21284
+  pdf: https://arxiv.org/pdf/2603.21284
+topic: global-medium-range
+type: model
+method:
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Sonny is an efficient hierarchical transformer for medium-range forecasting that trains to convergence
+  on one A40 GPU in about 5.5 days while staying competitive on WeatherBench2.
+abstract: 'Weather forecasting is a fundamental problem for protecting lives and infrastructure from high-impact
+  atmospheric events. Recently, data-driven weather forecasting methods based on deep learning have demonstrated
+  strong performance, often reaching accuracy levels competitive with operational numerical systems. However,
+  many existing models rely on large-scale training regimes and compute-intensive architectures, which
+  raises the practical barrier for academic groups with limited compute resources. Here we introduce Sonny,
+  an efficient hierarchical transformer that achieves competitive medium-range forecasting performance
+  while remaining feasible within reasonable compute budgets. At the core of Sonny is a two-stage StepsNet
+  design: a narrow slow path first models large-scale atmospheric dynamics, and a subsequent full-width
+  fast path integrates thermodynamic interactions. To stabilize medium-range rollout without an additional
+  fine-tuning stage, we apply exponential moving average (EMA) during training. On WeatherBench2, Sonny
+  yields robust medium-range forecast skill, remains competitive with operational baselines, and demonstrates
+  clear advantages over FastNet, particularly at extended tropical lead times. In practice, Sonny can
+  be trained to convergence on a single NVIDIA A40 GPU in approximately 5.5 days.'
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

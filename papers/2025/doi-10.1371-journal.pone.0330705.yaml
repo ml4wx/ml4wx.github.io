@@ -1,0 +1,56 @@
+id: doi-10.1371-journal.pone.0330705
+title: ConvLSTM-based tropical cyclone intensity estimation and classification using satellite imagery
+  over the North Indian ocean
+authors:
+- M S Manju
+- Harsh Pateriya
+- Rajeev Gupta
+- Deepak Singh Tomar
+- Punit Gupta
+- Asmir Butkovic
+date: '2025-12-05'
+year: 2025
+venue: PLoS ONE
+venue_type: journal
+ids:
+  doi: 10.1371/journal.pone.0330705
+  openalex: W4417091118
+links:
+  paper: https://doi.org/10.1371/journal.pone.0330705
+  pdf: https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0330705&type=printable
+topic: extremes-hazards
+topics:
+- observations-remote-sensing
+type: model
+method:
+- cnn
+- rnn
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: A CNN-ConvLSTM hybrid estimates North Indian Ocean cyclone intensity from satellite image sequences,
+  reaching 7.79 knots RMSE in wind speed and 99.16% binary classification accuracy.
+abstract: Tropical cyclones pose significant threats to coastal regions, and have a major negative influence
+  on the environment and society. Precise cyclone identification and intensity estimation are crucial
+  for effective early warning systems and disaster prevention. Traditional methods rely on manual interpretation
+  and empirical models, often lacking efficiency and accuracy. This study proposes a deep learning framework
+  that utilizes satellite image sequences for cyclone detection, classification, and intensity estimation.
+  Unlike conventional models relying solely on spatial or manual features, the proposed hybrid architecture
+  integrates Convolutional Neural Networks (CNNs) and ConvLSTM to learn spatiotemporal patterns jointly.
+  Key innovations include the clustering-based cyclone region isolation method, sequence-level data augmentation,
+  and the use of SMOTE to mitigate class imbalance. The proposed approach demonstrates substantial improvement
+  in accuracy over baseline models, achieving 99.16% accuracy for binary classification using VGG16. An
+  accuracy of 81.1 ± 4.33% across cyclone intensity levels, and an RMSE of 7.79 ± 1.27 knots in wind speed
+  prediction using the ConvLSTM-based model. All models are evaluated using 5-fold cross-validation on
+  CIMSS Tropical Data Archive and IMD Best-Track datasets. Overall, these results show an exciting potential
+  for future use of deep learning for real time forecasting and early warning systems. Future work will
+  also look to improve or increase model generalization, either through using ensemble learning, or potentially
+  more complex architectures and larger datasets.
+significance: 2
+cited_by: 4
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

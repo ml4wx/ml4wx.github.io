@@ -1,0 +1,58 @@
+id: arxiv-2512.14898
+title: 'Predicting Forecast Error for the HRRR Using LSTM Neural Networks: A Comparative Study Using New
+  York and Oklahoma State Mesonets'
+authors:
+- David Aaron Evans
+- Kara J. Sulia
+- Nick P. Bassill
+- Chris D. Thorncroft
+- Jay C. Rothenberger
+- Lauriana C. Gaudet
+date: '2025-12-16'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2512.14898'
+  openalex: W7116078351
+links:
+  paper: https://arxiv.org/abs/2512.14898
+  pdf: https://arxiv.org/pdf/2512.14898
+topic: post-processing
+topics:
+- local-forecasting
+type: model
+method:
+- rnn
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: pre-operational
+summary: LSTMs predict HRRR forecast errors at mesonet sites, improving precipitation forecasts by 48%
+  and wind by 15% for real-time forecaster use.
+abstract: Long Short-Term Memory (LSTM) models are trained to predict forecast errors for the High-Resolution
+  Rapid Refresh (HRRR) model using the New York State Mesonet and Oklahoma State Mesonet near-surface
+  weather observations as ground truth. When evaluated using mean-absolute-error and percent improvement
+  relative to the HRRR, LSTMs predict precipitation error most accurately, providing, on average, a 48%
+  improvement relative to the HRRR forecast, followed by wind error, providing, on average, a 15% improvement,
+  and then temperature error, providing, on average, a 25% improvement. Precipitation errors exhibit an
+  asymmetry, with overforecast precipitation detected more accurately than underforecast, while wind error
+  predictions are consistent across over- and underforecast predictions. Temperature error predictions
+  are relatively accurate but smoother, with respect to variance, than true observations. This paper describes
+  an overview of LSTM performance with the expressed intent of providing forecasters with real-time predictions
+  of forecast error at the point of use within the New York State and Oklahoma State Mesonets. In practice,
+  the predicted errors can be used to adjust deterministic HRRR forecasts at the point of use, identify
+  locations and variables with elevated uncertainty, and provide supplemental guidance for high-impact
+  decision-making. This research demonstrates the potential of LSTM-based machine learning models to provide
+  actionable, location-specific predictions of forecast error for high-resolution operational numerical
+  weather prediction (NWP) systems. However, model performance is variable-dependent, and the approach
+  relies on the availability of dense mesonet observations, which may limit applicability in data-sparse
+  regions.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

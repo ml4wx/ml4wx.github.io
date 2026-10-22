@@ -1,0 +1,59 @@
+id: doi-10.14569-ijacsa.2026.0170331
+title: Segmentation of Convective Initiation Based on Spatio-Temporal Feature Joint Modeling
+authors:
+- Runzhe Tao
+- Rui Chen
+- Peibei Zheng
+- Zibo Hong
+date: '2026-01-01'
+year: 2026
+venue: International Journal of Advanced Computer Science and Applications
+venue_type: journal
+ids:
+  doi: 10.14569/ijacsa.2026.0170331
+  openalex: W7148807541
+links:
+  paper: https://doi.org/10.14569/ijacsa.2026.0170331
+  pdf: https://thesai.org/Downloads/Volume17No3/Paper_31-Segmentation_of_Convective_Initiation_Based_on_Spatio_Temporal_Feature.pdf
+topic: observations-remote-sensing
+topics:
+- nowcasting
+type: model
+method:
+- transformer
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Ti-UHRNet fuses DEM data and 15-minute satellite sequences with attention to segment convective
+  initiation, reaching a detection probability of 0.954.
+abstract: 'As a key indicator of the occurrence of severe convection, convective initiation (CI) exhibits
+  characteristics such as fragmentation, scale heterogeneity, and susceptibility to confusion with other
+  cloud systems in single-temporal remote sensing imagery, posing significant challenges for accurate
+  CI detection. Traditional threshold-based methods inadequately capture spatial representations and have
+  limited generalization capabilities, while existing deep learning approaches fail to fully utilize the
+  temporal correlation features of the same target cloud cluster, resulting in a high false alarm rate.
+  To address these challenges, based on the physical laws of convective development, we propose a spatiotemporal
+  feature fusion-based CI detection model, namely Ti-UHRNet. The model integrates three core designs:
+  integrating digital elevation model geographic information at the input layer to quantify the topographic
+  modulation on convective development and enhance the physical consistency of features; adopting U-HRNet
+  embedded with attention-gated feature fusion as the backbone to extract multi-scale features efficiently,
+  filter critical information dynamically, and retain high-resolution spatial details of convective clouds;
+  and designing a multi-head self-attention-based TransTrack module with multi-temporal inputs to capture
+  the dynamic evolution information of convective clouds within a 15-minute window, thereby distinguishing
+  them from other cloud systems. Experimental results show that compared with several advanced 2D and
+  3D convolutional segmentation methods, Ti-UHRNet achieves the best performance in extracting the spatiotemporal
+  features of rapidly developing convective cloud clusters. On the test set, it attains a probability
+  of detection of 0.954, a false alarm rate of 0.082, and a critical success index of 0.879. Verified
+  against ground-based radar echoes, the model enables effective early warning of severe convective weather
+  at 15–30 minutes in advance.'
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,53 @@
+id: arxiv-2603.07957
+title: 'PSTNet: Physically-Structured Turbulence Network'
+authors:
+- Boris Kriuk
+- Fedor Kriuk
+date: '2026-03-09'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2603.07957'
+links:
+  paper: https://arxiv.org/abs/2603.07957
+  pdf: https://arxiv.org/pdf/2603.07957
+topic: applications-impacts
+topics:
+- extremes-hazards
+type: model
+method:
+- physics-constrained
+- classical-ml
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- nwp-analysis
+- other
+status: research
+summary: PSTNet, a 552-parameter physics-structured network, estimates atmospheric turbulence intensity
+  for aircraft guidance, with a 2.8% miss-distance improvement across three vehicle classes.
+abstract: 'Reliable real-time estimation of atmospheric turbulence intensity remains an open challenge
+  for aircraft operating across diverse altitude bands, particularly over oceanic, polar, and data-sparse
+  regions that lack operational nowcasting infrastructure. Classical spectral models encode climatological
+  averages rather than the instantaneous atmospheric state, and generic ML regressors offer adaptivity
+  but provide no guarantee that predictions respect fundamental scaling laws. This paper introduces the
+  Physically-Structured Turbulence Network (PSTNet), a lightweight architecture that embeds physics directly
+  into its structure. PSTNet couples four components: (i) a zero-parameter backbone derived from Monin-Obukhov
+  theory, (ii) a regime-gated mixture of specialist sub-networks supervised by Richardson-number-derived
+  soft targets, (iii) Feature-wise Linear Modulation layers conditioning hidden representations on local
+  air-density ratio, and (iv) a Kolmogorov output layer enforcing inertial-subrange scaling as an architectural
+  constraint. The entire model contains only 552 learnable parameters, requiring fewer than 2.5 kB of
+  storage and executing in under 12s on a Cortex-M7 microcontroller. We validate PSTNet on 340 paired
+  six-degree-of-freedom guidance simulations spanning three vehicle classes (Mach 2.8, 4.5, and 8.0) and
+  six operational categories with real-time satellite weather ingestion. PSTNet achieves a mean miss-distance
+  improvement of +2.8% with a 78% win rate and a statistically significant effect size. Our results demonstrate
+  that encoding domain physics as architectural priors yields a more efficient and interpretable path
+  to turbulence estimation accuracy than scaling model capacity, establishing PSTNet as a viable drop-in
+  replacement for legacy look-up tables in resource-constrained, safety-critical on-board guidance systems.'
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,69 @@
+id: arxiv-2601.23268
+title: 'TCBench: A Benchmark for Tropical Cyclone Track and Intensity Forecasting at the Global Scale'
+authors:
+- Milton S. Gomez
+- Marie C. McGraw
+- S. Saranya Ganesh
+- Frederick Iat‐Hin Tam
+- Ilia Azizi
+- Samuel Darmon
+- Monika Feldmann
+- Stella Bourdin
+- Louis Poulain--Auzéau
+- Suzana J. Camargo
+- Jonathan Lin
+- Daniel R. Chavas
+- Chia-Ying Lee
+- Ritwik Gupta
+- Andrea M. Jenney
+- Tom Beucler
+date: '2026-01-30'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2601.23268'
+  openalex: W7127203176
+links:
+  paper: https://arxiv.org/abs/2601.23268
+  pdf: https://arxiv.org/pdf/2601.23268
+orgs:
+- eth-zurich
+- university-of-oxford
+- uc-berkeley
+- columbia-leap
+- colorado-state-university
+topic: benchmarks-data-eval
+topics:
+- global-medium-range
+- extremes-hazards
+type: benchmark
+timescale:
+- short
+- medium
+spatial:
+- global
+data:
+- nwp-analysis
+- other
+status: research
+summary: TCBench is a standardized benchmark for 1-5 day global tropical cyclone track and intensity forecasts,
+  comparing AI models (AIFS, GenCast, Pangu) against TIGGE; AI tracks are skillful, intensity less so.
+abstract: TCBench is a benchmark for evaluating global, short to medium-range (1-5 days) forecasts of
+  tropical cyclone (TC) track and intensity. To allow a fair and model-agnostic comparison, TCBench builds
+  on the IBTrACS observational dataset and formulates TC forecasting as predicting the time evolution
+  of an existing tropical system conditioned on its initial position and intensity. TCBench includes state-of-the-art
+  physics-based (TIGGE) and Artificial Intelligence Weather Prediction (AIWP) models (AIFS, Pangu-Weather,
+  FourCastNet v2, GenCast, FNV3). If not readily available (e.g., from the NOAA website as is done with
+  TIGGE), TC tracks are consistently derived from model outputs using the TempestExtremes library. TCBench
+  provides deterministic and probabilistic storm-following metrics. On 2023 test cases, AIWP models skillfully
+  forecast TC tracks, while skillful intensity forecasts require additional steps such as post-processing
+  or task-specific training. Designed for accessibility, TCBench helps AI practitioners tackle domain-relevant
+  TC challenges and equips tropical meteorologists with data-driven tools and workflows to improve prediction
+  and TC process understanding. By lowering barriers to reproducible, process-aware evaluation of extreme
+  events, TCBench aims to democratize data-driven TC forecasting.
+significance: 6
+cited_by: 0
+score: 34
+highlight: false
+added: '2026-10-22'
+source: backfill

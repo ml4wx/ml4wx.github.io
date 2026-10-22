@@ -1,0 +1,65 @@
+id: arxiv-2602.01436
+title: 'MSWEP V3: Machine Learning-Powered Global Precipitation Estimates at 0.1$^\circ$ Hourly Resolution
+  (1979-Present)'
+authors:
+- Xuetong Wang
+- Raied S. Alharbi
+- Oscar M. Baez-Villanueva
+- Diego G. Miralles
+- Jun Ma
+- Shiqin Xu
+- Matthew F. McCabe
+- Florian Pappenberger
+- Albert I. J. M. van Dijk
+- Tim R. McVicar
+- Lanka Karthikeyan
+- Hayley J. Fowler
+- Ming Pan
+- Solomon H. Gebrechorkos
+- Hylke E. Beck
+date: '2026-02-01'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2602.01436'
+links:
+  paper: https://arxiv.org/abs/2602.01436
+  pdf: https://arxiv.org/pdf/2602.01436
+topic: observations-remote-sensing
+topics:
+- benchmarks-data-eval
+type: benchmark
+method:
+- classical-ml
+spatial:
+- global
+data:
+- stations
+- satellite
+- era5
+status: research
+summary: Hourly global 0.1° precipitation dataset from 1979 built with ML model stacks and gauge correction;
+  its baseline daily KGE of 0.69 beats 19 other products.
+abstract: We introduce Version 3 (V3) of the gridded near real-time Multi-Source Weighted-Ensemble Precipitation
+  (MSWEP) product -- the first fully global, historical machine learning powered precipitation (P) dataset,
+  developed to meet the growing demand for timely and accurate P estimates amid escalating climate challenges.
+  MSWEP V3 provides hourly data at 0.1$^\circ$ resolution from 1979 to the present, continuously updated
+  with a latency of approximately two hours. Development follows a two-stage process. First, baseline
+  P fields are generated using machine learning model stacks that integrate satellite- and (re)analysis-based
+  P and air-temperature products, along with static variables. The models are trained using hourly and
+  daily observations from 15,959 P gauges worldwide. Second, these baseline P fields are corrected using
+  daily and monthly gauge observations from 57,666 and 86,000 stations globally. To assess MSWEP V3's
+  baseline performance, we evaluated 19 (quasi-) global gridded P products -- including both uncorrected
+  and gauge-based products -- using observations from an independent set of 15,958 gauges excluded from
+  the first training stage. The MSWEP V3 baseline achieved a median daily Kling-Gupta Efficiency (KGE)
+  of 0.69, outperforming all evaluated products. Other uncorrected products achieved median daily KGE
+  values of 0.61 (ERA5), 0.46 (IMERG-L V7), 0.38 (GSMaP V8), and 0.31 (CHIRP). Using leave-one-out cross-validation,
+  the daily gauge correction was found to improve the median daily correlation by 0.09, constrained by
+  the already strong baseline performance. We anticipate that MSWEP V3 -- accessible at www.gloh2o.org/mswep
+  -- will enable more reliable monitoring, forecasting, and management of water-related risks in a variable
+  and changing climate.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

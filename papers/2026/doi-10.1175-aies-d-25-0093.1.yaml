@@ -1,0 +1,57 @@
+id: doi-10.1175-aies-d-25-0093.1
+title: Does Nonstationarity Affect GAN-Based Downscaling? Insights from High-Resolution WRF Simulations
+  over the Canadian Prairies
+authors:
+- Hebatallah Abdelmoaty
+- Simon Michael Papalexiou
+- Antonios Mamalakis
+- Shivam Singh
+- Vincenzo Coia
+- Melissa Hairabedian
+- Pascal Szeftel
+- Patrick Grover
+date: '2026-04-01'
+year: 2026
+venue: Artificial Intelligence for the Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1175/aies-d-25-0093.1
+  openalex: W7148436663
+links:
+  paper: https://doi.org/10.1175/aies-d-25-0093.1
+topic: downscaling
+type: evaluation
+method:
+- gan-vae
+timescale:
+- climate
+spatial:
+- regional
+data:
+- km-scale-sim
+status: research
+summary: Tests WGAN hourly precipitation downscaling (50 to 4 km) under climate nonstationarity; cross-climate
+  biases were not much larger than within-climate ones.
+abstract: 'Abstract Although downscaling models are typically trained on historical data and then applied
+  to future projections, this practice raises concerns about their ability to reproduce nonstationary
+  climate signals. While such limitations are expected for traditional statistical approaches, deep learning
+  models have the potential to learn a more generalizable downscaling relationship, separating the transformation
+  task from the nonstationary signal. In this study, we examine the sensitivity of deep learning–based
+  downscaling to nonstationarity using Wasserstein generative adversarial networks (WGANs) to downscale
+  hourly precipitation from 50 to 4 km over the Canadian Prairies. We trained two models on convection-permitting
+  Weather Research and Forecasting (WRF) simulations: one on a historical period (2000–15) and another
+  on a future period (2086–2100). Four setups were considered: hh (trained/tested on historical), ff (trained/tested
+  on future), fh (trained on future/tested on historical), and hf (trained on historical/tested on future).
+  Within-climate models (hh and ff) reproduced spatial heterogeneity more effectively, with better spatial
+  correlations and realistic variability, while all four reproduced temporal autocorrelation. Extremes
+  remain a challenge, yet with negative biases, in terms of hourly precipitation upper percentiles (75th,
+  95th, 99th, and 99.9th) and daily maxima. The hh and ff cases performed best; the fh case benefited
+  from exposure to stronger extremes during training, while hf performed poorest due to weak generalization.
+  Importantly, however, cross-climate model biases (hf and fh) were not substantially larger than within-climate
+  ones. These findings highlight the challenge of training on stationary data for nonstationary climates
+  but also demonstrate the potential of WGANs to mitigate such limitations.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

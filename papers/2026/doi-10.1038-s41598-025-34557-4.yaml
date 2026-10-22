@@ -1,0 +1,60 @@
+id: doi-10.1038-s41598-025-34557-4
+title: Benchmarking the geographic generalization of deep learning models for precipitation downscaling
+authors:
+- Paula Harder
+- Luca Schmidt
+- Francis Pelletier
+- Nicole Ludwig
+- Matthew Chantry
+- Christian Lessig
+- Álex Hernández-García
+- David Rolnick
+date: '2026-01-27'
+year: 2026
+venue: Scientific Reports
+venue_type: journal
+ids:
+  doi: 10.1038/s41598-025-34557-4
+  openalex: W7125804633
+links:
+  paper: https://doi.org/10.1038/s41598-025-34557-4
+  pdf: https://www.nature.com/articles/s41598-025-34557-4.pdf
+orgs:
+- ecmwf
+topic: benchmarks-data-eval
+topics:
+- downscaling
+type: benchmark
+method:
+- gan-vae
+- diffusion
+- cnn
+spatial:
+- global
+data:
+- cmip
+- era5
+status: research
+summary: Introduces RainShift, a benchmark for precipitation downscaling under geographic shifts; GANs
+  and diffusion models degrade out of region, and domain adaptation partly helps.
+abstract: Earth System Models (ESM) are our main tool for projecting the impacts of climate change. However,
+  running these models at sufficient resolution for local-scale risk-assessments is not computationally
+  feasible. Deep learning-based super-resolution models offer a promising solution to downscale ESM outputs
+  to higher resolutions by learning from data. Yet, due to regional variations in climatic processes,
+  these models typically require retraining for each geographical area-demanding high-resolution observational
+  data, which is unevenly available across the globe. This highlights the need to assess how well these
+  models generalize across geographic regions. To address this, we introduce RainShift, a dataset and
+  benchmark for evaluating downscaling under geographic distribution shifts. We evaluate state-of-the-art
+  downscaling approaches including GANs and diffusion models in generalizing across data gaps between
+  the Global North and Global South. Our findings reveal substantial performance drops in out-of-distribution
+  regions, depending on model and geographic area. While expanding the training domain generally improves
+  generalization, it is insufficient to overcome shifts between geographically distinct regions. We show
+  that addressing these shifts through, for example, domain adaptation can improve spatial generalization.
+  Our work advances the global applicability of downscaling methods and represents a step toward reducing
+  inequities in access to high-resolution climate information.
+significance: 4
+cited_by: 8
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

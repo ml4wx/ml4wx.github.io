@@ -1,0 +1,49 @@
+id: arxiv-2604.19340
+title: Improvements to the post-processing of weather forecasts using machine learning and feature selection
+authors:
+- Kazuma Iwase
+- Tomoyuki Takenawa
+date: '2026-04-21'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2604.19340'
+  openalex: W7155189002
+links:
+  paper: https://arxiv.org/abs/2604.19340
+  pdf: https://arxiv.org/pdf/2604.19340
+topic: post-processing
+topics:
+- local-forecasting
+type: model
+method:
+- classical-ml
+- cnn
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: research
+summary: LightGBM post-processing with correlation-based feature selection beats raw JMA MSM and neural
+  baselines on RMSE at 18 Japanese sites; Tweedie losses help heavy rain.
+abstract: This study aims to develop and improve machine learning-based post-processing models for precipitation,
+  temperature, and wind speed predictions using the Mesoscale Model (MSM) dataset provided by the Japan
+  Meteorological Agency (JMA) for 18 locations across Japan, including plains, mountainous regions, and
+  islands. By incorporating meteorological variables from grid points surrounding the target locations
+  as input features and applying feature selection based on correlation analysis, we found that, in our
+  experimental setting, the LightGBM-based models achieved lower RMSE than the specific neural-network
+  baselines tested in this study, including a reproduced CNN baseline, and also generally achieved lower
+  RMSE than both the raw MSM forecasts and the JMA post-processing product, MSM Guidance (MSMG), across
+  many locations and forecast lead times. Because precipitation has a highly skewed distribution with
+  many zero cases, we additionally examined Tweedie-based loss functions and event-weighted training strategies
+  for precipitation forecasting. These improved event-oriented performance relative to the original LightGBM
+  model, especially at higher rainfall thresholds, although the gains were site dependent and overall
+  performance remained slightly below MSMG.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

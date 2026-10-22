@@ -1,0 +1,60 @@
+id: arxiv-2512.13899
+title: Winter Precipitation Type Diagnosis and Uncertainty Quantification with a Physically Consistent
+  Machine Learning Method
+authors:
+- Charlie Becker
+- David John Gagne
+- Julie Demuth
+- John S. Schreck
+- Jacob Radford
+- Gabrielle Gantos
+- Eliot Kim
+- Dhamma Kimpara
+- Sophia Reiner
+- Justin Willson
+- Christopher D. Wirz
+date: '2025-12-15'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2512.13899'
+links:
+  paper: https://arxiv.org/abs/2512.13899
+  pdf: https://arxiv.org/pdf/2512.13899
+topic: post-processing
+topics:
+- xai-uq-physics
+type: model
+method:
+- other
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: An evidential neural network diagnoses winter precipitation type with calibrated uncertainty,
+  beating area-based methods for freezing rain and ice pellets.
+abstract: Accurately forecasting winter precipitation type and its transitions is critical for high-impact
+  decision making. However, existing methods struggle in thermodynamically ambiguous regimes, and most
+  do not quantify forecast uncertainty from a single model run. We developed an evidential neural network
+  that predicts calibrated probabilities for four winter precipitation types (rain, snow, freezing rain,
+  and ice pellets) along with epistemic uncertainty estimates at the computational cost of a standard
+  neural network. The model was trained on quality-controlled and curated observations from the crowd-sourced
+  mPING dataset paired with vertical thermodynamic profiles from the NOAA Rapid Refresh model analyses.
+  Rigorous physical quality control removed thermodynamically implausible reports. Bulk evaluation against
+  held-out mPING observations from June 2020 through June 2022 shows the ML model outperforms area-based
+  deterministic methods in success ratio for freezing rain and ice pellets while maintaining comparable
+  or better performance for rain and snow. A reduced freezing rain probability of detection reflects genuinely
+  ambiguous thermodynamic environments rather than a uniform model deficiency and is more robustly represented
+  through the full probability distribution than through the dominant predicted class alone. Thermodynamic
+  regime analysis demonstrates that model prediction errors are physically structured and concentrated
+  in interpretable regions of diagnostic space consistent with the known difficulty of freezing rain and
+  ice pellet discrimination. We further demonstrate the model's physical consistency and operational utility
+  through two contrasting mid-western U.S. winter storm case studies and an interactive visualization
+  tool that enables dynamic interrogation of model predictions and uncertainty in real time.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

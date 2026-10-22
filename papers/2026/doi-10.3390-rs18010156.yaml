@@ -1,0 +1,55 @@
+id: doi-10.3390-rs18010156
+title: Physics-Constrained Deep Learning with Adaptive Z-R Relationship for Accurate and Interpretable
+  Quantitative Precipitation Estimation
+authors:
+- Ting Shu
+- Huan Qi Zhao
+- Kanglong Cai
+- Zexuan Zhu
+date: '2026-01-03'
+year: 2026
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs18010156
+  openalex: W7118195995
+links:
+  paper: https://doi.org/10.3390/rs18010156
+  pdf: https://www.mdpi.com/2072-4292/18/1/156/pdf?version=1767518629
+topic: observations-remote-sensing
+type: model
+method:
+- physics-constrained
+- cnn
+spatial:
+- regional
+data:
+- radar
+- stations
+status: research
+summary: FusionQPE pairs DenseNet with a learnable Z-R relation and physics-based loss, improving radar
+  rainfall estimates against Guangzhou rain gauges.
+abstract: Quantitative precipitation estimation (QPE) from radar reflectivity is fundamental for weather
+  nowcasting and water resource management. Conventional Z-R relationship formulas, derived from Rayleigh
+  scattering theory, rely heavily on empirical parameter fitting, which limits the estimation accuracy
+  and generalization across different precipitation regimes. Recent deep learning (DL)-based QPE methods
+  can capture the complex nonlinear relationships between radar reflectivity and rainfall. However, most
+  of them overlook fundamental physical constraints, resulting in reduced robustness and interpretability.
+  To address these issues, this paper proposes FusionQPE, a novel Physics-Constrained DL framework that
+  integrates an adaptive Z-R formula. Specifically, FusionQPE employs a Dense convolutional neural network
+  (DenseNet) backbone to extract multi-scale spatial features from radar echoes, while a modified squeeze-and-excitation
+  (SE) network adaptively learns the parameters of the Z-R relationship. The final rainfall estimate is
+  obtained through a linear combination of outputs from both the DenseNet backbone and the adaptive Z-R
+  branch, where the trained linear weight and Z-R parameters provide interpretable insights into the model’s
+  physical reasoning. Moreover, a physical-based constraint derived from the Z-R branch output is incorporated
+  into the loss function to further strengthen physical consistency. Comprehensive experiments on real
+  radar and rain gauge observations from Guangzhou, China, demonstrate that FusionQPE consistently outperforms
+  both traditional and state-of-the-art DL-based QPE models across multiple evaluation metrics. The ablation
+  and interpretability analysis further confirms that the adaptive Z-R branch improves both the physical
+  consistency and credibility of the model’s precipitation estimation.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

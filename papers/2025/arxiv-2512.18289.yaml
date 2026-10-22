@@ -1,0 +1,55 @@
+id: arxiv-2512.18289
+title: A Neural-Network Model-Measurement-Based Observation Operator For Weather Radar Reflectivity Assimilation
+authors:
+- Marco Stefanelli
+- Žiga Zaplotnik
+- Gregor Skok
+date: '2025-12-20'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2512.18289'
+  openalex: W7117127600
+links:
+  paper: https://arxiv.org/abs/2512.18289
+  pdf: https://arxiv.org/pdf/2512.18289
+topic: data-assimilation
+topics:
+- regional-km-scale
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- radar
+- nwp-analysis
+status: research
+summary: A convolutional neural network radar reflectivity observation operator inside 3DVar cuts reflectivity
+  RMSE from 5.99 to 3.47 dBZ in a Slovenian extreme-precipitation case.
+abstract: 'In three-dimensional variational data assimilation (3DVar) for numerical weather prediction
+  (NWP), the observation operator $\mathcal{H}$ plays a central role by mapping model state variables
+  to an observation equivalent. For weather radar, however, specifying $\mathcal{H}$ is particularly challenging:
+  reflectivity is a nonlinear, microphysics-dependent diagnostic quantity that only indirectly relates
+  to the model''s prognostic variables, making traditional parameterised radar operators complex, regime-dependent
+  and difficult to tune. In this study, we propose a neural-network (NN)-based observation operator for
+  radar reflectivity and apply it within a 3DVar framework. Using five years (2019-2023) of radar reflectivity
+  data from the Lisca radar and 4.4 km-resolution short-range forecasts from ALADIN model over Slovenia,
+  we train a convolutional encoder-decoder neural network to map model temperature, humidity, horizontal
+  wind components and surface pressure fields to radar reflectivity. Across independent test cases spanning
+  clear-sky, stratiform, and convective regimes, the NN-based operator accurately reproduces the spatial
+  structure and intensity of observed reflectivity, relying primarily on the model state near the observation
+  point. In the extreme precipitation case, which caused widespread floods in Slovenia on August 4, 2023,
+  assimilating the full radar disc reduces the domain-averaged reflectivity root-mean-square error from
+  5.99 dBZ to 3.47 dBZ and improves the alignment between the analysed and observed convective bands.
+  Embedded within 3DVar, the Jacobian of the NN observation operator allows radar reflectivity observations
+  to inform model state variables, producing corresponding analysis increments. The proposed NN radar
+  observation operator offers a flexible alternative to traditional parameterised radar operators for
+  improving convective-storm forecasts.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

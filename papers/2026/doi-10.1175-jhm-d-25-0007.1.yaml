@@ -1,0 +1,64 @@
+id: doi-10.1175-jhm-d-25-0007.1
+title: 'Deep Learning for Multisatellite Precipitation Retrievals: Impact of Tomorrow.io’s Microwave Sounders'
+authors:
+- Forest Cannon
+- Simon Pfreundschuh
+- Brandon Taylor
+- S. Joseph Munchak
+- Randy J. Chase
+- Ethan Nelson
+- John L’Heureux
+- Camille Owens
+- Luke Conibear
+- Stylianos Flampouris
+- Arun Chawla
+date: '2026-02-23'
+year: 2026
+venue: Journal of Hydrometeorology
+venue_type: journal
+ids:
+  doi: 10.1175/jhm-d-25-0007.1
+  openalex: W7131078184
+links:
+  paper: https://doi.org/10.1175/jhm-d-25-0007.1
+orgs:
+- colorado-state-university
+- tomorrow-io
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- global
+data:
+- satellite
+- radar
+- stations
+status: pre-operational
+summary: CNN fuses geostationary imagery and microwave sounder data for 10-minute, 4 km precipitation
+  retrievals, gaining 30 to 50% skill over IMERG-Early against radar and gauges.
+abstract: Abstract Understanding precipitation intensity and distribution is critical for applications
+  such as real-time flood monitoring and water resource management. However, accurate monitoring often
+  depends on costly, ground-based radar networks that are not globally available. This study introduces
+  a satellite-based precipitation retrieval that combines publicly available geostationary imagers and
+  polar-orbiting microwave sensors with two commercially launched Tomorrow.io microwave sounders. The
+  retrieval produces near-surface precipitation rate estimates every 10 min at a spatial resolution of
+  0.04° (∼4 km), covering latitudes between 60°S and 72°N. Precipitation estimates are derived from a
+  convolutional neural network that ingests sequences of multichannel geostationary imagery and polar-orbiting
+  passive microwave observations within the preceding hour. The network is designed to accommodate sparse
+  data from individual microwave swaths, delivering a spatially and temporally complete trajectory of
+  precipitation rate across the hour-long input window. Results demonstrate improvements of 5%–10% in
+  categorical and continuous precipitation metrics over previous algorithm versions, with 30%–50% skill
+  gains relative to publicly available near-real-time products such as IMERG-Early. Verification was conducted
+  against terrestrial radar networks (United States, Europe, Japan), U.S.-based gauge observations spanning
+  all seasons, and several case studies outside the training domains. Data-denial experiments from impactful
+  2024 hurricanes further illustrate the benefit of incorporating microwave observations into precipitation
+  retrievals using geostationary and polar-orbiting satellites.
+significance: 4
+cited_by: 1
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

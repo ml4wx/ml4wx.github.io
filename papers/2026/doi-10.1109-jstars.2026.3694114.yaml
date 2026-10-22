@@ -1,0 +1,58 @@
+id: doi-10.1109-jstars.2026.3694114
+title: Physics-Guided Latent Diffusion Model for Intensity- and Extremity-Aware VIL Nowcasting
+authors:
+- Chulin Gao
+- Yichuan Luo
+- Liang Leng
+- Jie Liu
+- T B Zhang
+date: '2026-01-01'
+year: 2026
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2026.3694114
+  openalex: W7161563659
+links:
+  paper: https://doi.org/10.1109/jstars.2026.3694114
+orgs:
+- cma
+topic: nowcasting
+topics:
+- extremes-hazards
+type: model
+method:
+- diffusion
+- physics-constrained
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Physics-guided latent diffusion model for VIL nowcasting improves heavy and extreme precipitation
+  CSI by 14–19% over the best baseline, with better long-lead skill.
+abstract: Nowcasting heavy precipitation events poses significant challenges for both operational forecasting
+  and scientific research due to their small spatial scale, rapid evolution, and high variability. Existing
+  models often struggle to represent the spatial location and intensity of heavy precipitation, leading
+  to a rapid loss of predictive skill as precipitation intensity increases and with longer forecast lead
+  times, partly because they lack targeted model designs or dedicated mechanisms for representing heavy-precipitation
+  structures. To address these challenges, we develop a physics-guided latent diffusion model informed
+  by physical priors to better represent the spatiotemporal evolution and intensity of heavy precipitation.
+  The model integrates optical flow methods and atmospheric motion equations to learn motion patterns
+  across different precipitation intensities, with particular strength in representing heavy precipitation
+  regions. A spatiotemporal autoencoder reduces computational cost and preserves temporal consistency
+  by encoding background and motion-related features into three latent representations. Two additional
+  objectives—an extreme-event-aware loss and a physical consistency loss—are introduced to enhance the
+  model's ability to reproduce extreme precipitation and maintain physical coherence. Experiments on benchmark
+  datasets show that our model outperforms the best baseline by 14%, 18%, and 19% in CSI for intense,
+  very heavy, and extreme precipitation, respectively, while also demonstrating more stable performance
+  over longer forecast horizons through the frame-by-frame CSI curves. These results highlight the model's
+  potential for improving heavy-precipitation nowcasting and early warning.
+significance: 4
+cited_by: 0
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

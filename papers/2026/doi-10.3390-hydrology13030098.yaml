@@ -1,0 +1,57 @@
+id: doi-10.3390-hydrology13030098
+title: 'Hybrid Deep Learning Architectures for Multi-Horizon Precipitation Forecasting in Mountainous
+  Regions: Systematic Comparison of Component-Combination Models in the Colombian Andes'
+authors:
+- Manuel Ricardo Pérez Reyes
+- Marco Javier Suárez Barón
+- Oscar García-Cabrejo
+date: '2026-03-18'
+year: 2026
+venue: Hydrology
+venue_type: journal
+ids:
+  doi: 10.3390/hydrology13030098
+  openalex: W7138955155
+links:
+  paper: https://doi.org/10.3390/hydrology13030098
+  pdf: https://www.mdpi.com/2306-5338/13/3/98/pdf?version=1773812781
+topic: s2s-seasonal
+topics:
+- regional-km-scale
+type: evaluation
+method:
+- cnn
+- rnn
+- gnn
+- neural-operator
+timescale:
+- seasonal
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Compares ConvLSTM, FNO-ConvLSTM and GNN-TAT for 1–12 month precipitation over the Colombian Andes;
+  GNN-TAT matches ConvLSTM R² with 95% fewer parameters.
+abstract: 'Forecasting monthly precipitation in mountainous terrain poses challenges that push conventional
+  deep learning approaches to their limits: convective processes operate locally while orographic effects
+  span entire drainage basins. We compare three architecture families on precipitation prediction across
+  the Colombian Andes: ConvLSTM (convolutional recurrent), FNO-ConvLSTM (spectral–temporal), and GNN-TAT
+  (graph attention LSTM). Using CHIRPS v2.0 and SRTM topography for Boyacá department (61 × 65 grid, 3965
+  nodes), we evaluate 39 configurations across feature bundles (BASIC, KCE elevation clusters, and PAFC
+  autocorrelation lags) and horizons from 1 to 12 months. GNN-TAT matches ConvLSTM accuracy (R2: 0.628
+  vs. 0.642; RMSE: 82.29 vs. 79.40 mm) with 95% fewer parameters (∼98K vs. 2.1M). Across configurations,
+  GNN-TAT produces a lower mean RMSE (92.12 vs. 112.02 mm; p=0.015) and a 74.7% lower variance. The explicit
+  graph structure, with edges weighted by elevation similarity, appears to reduce sensitivity to hyperparameter
+  choices. Pure FNO struggles with precipitation’s spatial discontinuities (R2=0.206), though adding a
+  ConvLSTM decoder recovers much of the lost skill (R2=0.582). Elevation clustering improves GNN-TAT significantly
+  (p=0.036) but not ConvLSTM, suggesting that feature design should match the spatial encoding paradigm.
+  ConvLSTM achieves peak accuracy on local patterns; GNN-TAT provides robust predictions with interpretable
+  spatial reasoning. These complementary strengths motivate stacking ensembles that combine grid-based
+  and graph-based representations.'
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,51 @@
+id: arxiv-2602.13305
+title: 'WildfireVLM: AI-powered Analysis for Early Wildfire Detection and Risk Assessment Using Satellite
+  Imagery'
+authors:
+- Aydin Ayanzadeh
+- Prakhar Dixit
+- Sadia Kamal
+- Milton Halem
+date: '2026-02-09'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2602.13305'
+links:
+  paper: https://arxiv.org/abs/2602.13305
+  pdf: https://arxiv.org/pdf/2602.13305
+  code: https://github.com/Ayanzadeh93/_WildfireVLM_
+topic: extremes-hazards
+topics:
+- observations-remote-sensing
+- llms-agents
+type: model
+method:
+- cnn
+- llm
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: YOLOv12 detection of wildfire fire zones and smoke in Landsat and GOES imagery, with an MLLM
+  generating risk assessments and response recommendations.
+abstract: Wildfires are a growing threat to ecosystems, human lives, and infrastructure, with their frequency
+  and intensity rising due to climate change and human activities. Early detection is critical, yet satellite-based
+  monitoring remains challenging due to faint smoke signals, dynamic weather conditions, and the need
+  for real-time analysis over large areas. We introduce WildfireVLM, an AI framework that combines satellite
+  imagery wildfire detection with language-driven risk assessment. We construct a labeled wildfire and
+  smoke dataset using imagery from Landsat-8/9, GOES-16, and other publicly available Earth observation
+  sources, including harmonized products with aligned spectral bands. WildfireVLM employs YOLOv12 to detect
+  fire zones and smoke plumes, leveraging its ability to detect small, complex patterns in satellite imagery.
+  We integrate Multimodal Large Language Models (MLLMs) that convert detection outputs into contextualized
+  risk assessments and prioritized response recommendations for disaster management. We validate the quality
+  of risk reasoning using an LLM-as-judge evaluation with a shared rubric. The system is deployed using
+  a service-oriented architecture that supports real-time processing, visual risk dashboards, and long-term
+  wildfire tracking, demonstrating the value of combining computer vision with language-based reasoning
+  for scalable wildfire monitoring. The code and dataset are publicly available on GitHub at https://github.com/Ayanzadeh93/_WildfireVLM_.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,59 @@
+id: arxiv-2601.06137
+title: 'RainBalance: Alleviating Dual Imbalance in GNSS-based Precipitation Nowcasting via Continuous
+  Probability Modeling'
+authors:
+- Yifang Zhang
+- Shengwu Xiong
+- Henan Wang
+- Wenjie Yin
+- Jiawang Peng
+- Duan Zhou
+- Yuqiang Zhang
+- Chen Zhou
+- Hua Chen
+- Qile Zhao
+- Pengfei Duan
+date: '2026-01-05'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2601.06137'
+links:
+  paper: https://arxiv.org/abs/2601.06137
+  pdf: https://arxiv.org/pdf/2601.06137
+topic: nowcasting
+topics:
+- local-forecasting
+type: model
+method:
+- gan-vae
+- rnn
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Plug-and-play VAE-based continuous probability modeling that addresses dual imbalance in GNSS
+  station precipitation nowcasting, yielding consistent gains when added to multiple existing models.
+abstract: Global navigation satellite systems (GNSS) station-based Precipitation Nowcasting aims to predict
+  rainfall within the next 0-6 hours by leveraging a GNSS station's historical observations of precipitation,
+  GNSS-PWV, and related meteorological variables, which is crucial for disaster mitigation and real-time
+  decision-making. In recent years, time-series forecasting approaches have been extensively applied to
+  GNSS station-based precipitation nowcasting. However, the highly imbalanced temporal distribution of
+  precipitation, marked not only by the dominance of non-rainfall events but also by the scarcity of extreme
+  precipitation samples, significantly limits model performance in practical applications. To address
+  the dual imbalance problem in precipitation nowcasting, we propose a continuous probability modeling-based
+  framework, RainBalance. This plug-and-play module performs clustering for each input sample to obtain
+  its cluster probability distribution, which is further mapped into a continuous latent space via a variational
+  autoencoder (VAE). By learning in this continuous probabilistic space, the task is reformulated from
+  fitting single and imbalance-prone precipitation labels to modeling continuous probabilistic label distributions,
+  thereby alleviating the imbalance issue. We integrate this module into multiple state-of-the-art models
+  and observe consistent performance gains. Comprehensive statistical analysis and ablation studies further
+  validate the effectiveness of our approach.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

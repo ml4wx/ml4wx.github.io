@@ -1,0 +1,48 @@
+id: doi-10.1038-s41598-025-23455-4
+title: Multi-output deep learning for high-frequency prediction of air and surface temperature in Kuwait
+authors:
+- Shehroz S. Khan
+- Rami Al-Hajj
+date: '2025-11-07'
+year: 2025
+venue: Scientific Reports
+venue_type: journal
+ids:
+  doi: 10.1038/s41598-025-23455-4
+  openalex: W4415991490
+links:
+  paper: https://doi.org/10.1038/s41598-025-23455-4
+  pdf: https://www.nature.com/articles/s41598-025-23455-4.pdf
+topic: local-forecasting
+type: evaluation
+method:
+- transformer
+- rnn
+- classical-ml
+spatial:
+- local
+data:
+- stations
+status: research
+summary: FTTransformer and LSTM predict air and surface temperature in Kuwait at 5-minute resolution from
+  30 variables, reaching R² 0.998 and outperforming classical ML.
+abstract: 'Accurate prediction of air and surface temperature is essential for urban planning and climate
+  resilience, especially in arid regions. This study evaluates the performance of multi-output regression
+  models using high-frequency climate data collected every 5 min over four years in Kuwait. Thirty environmental
+  variables (e.g., including humidity, solar radiation, dew point, and wind direction) were used to predict
+  six air and surface temperature-related outcomes simultaneously. Ten models, including deep learning
+  and traditional machine learning approaches, were benchmarked using a leave-1-year-out validation strategy.
+  Results show that contextual embeddings-based Transformer (FTTransformer) and Long Short-Term Memory
+  (LSTM) achieved strong predictive performance with an [Formula: see text] of 0.998, a mean squared error
+  of 0.13, and a mean absolute error of 0.24 when forecasting six temperature variables at 5-min resolution.
+  These results significantly outperform traditional machine learning models and demonstrate the robustness
+  of deep learning approaches for high-frequency climate prediction. While deep learning models outperformed
+  conventional methods, LSTM''s performance degraded on anomalous data from previous years, whereas FTTransformer
+  maintained stable accuracy across years. Model interpretation using SHAP and permutation importance
+  identified key predictors for this task, underlining the significance of diverse climate features.'
+significance: 2
+cited_by: 1
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

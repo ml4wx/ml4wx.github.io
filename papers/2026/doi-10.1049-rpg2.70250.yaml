@@ -1,0 +1,59 @@
+id: doi-10.1049-rpg2.70250
+title: 'A Hybrid Spatio‐Temporal Deep Learning Framework for Short‐Term Solar Power Forecasting Using
+  Satellite Imagery Data: A Case Study in Hanoi, Vietnam'
+authors:
+- Tuyen Nguyen‐Duc
+- Nam Nguyen‐Vu‐Nhat
+- Hieu Do Dinh
+- Son Tran‐Thanh
+- Goro Fujita
+date: '2026-01-01'
+year: 2026
+venue: IET Renewable Power Generation
+venue_type: journal
+ids:
+  doi: 10.1049/rpg2.70250
+  openalex: W7155161960
+links:
+  paper: https://doi.org/10.1049/rpg2.70250
+topic: applications-impacts
+topics:
+- nowcasting
+type: model
+method:
+- cnn
+- rnn
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- satellite
+- stations
+status: research
+summary: CNN-LSTM fuses Himawari-9 cloud imagery with PV and weather data for 30–60 minute solar power
+  nowcasting in Hanoi, cutting 30-minute MAE by about 49%.
+abstract: 'ABSTRACT Accurate short‐term solar power forecasting is essential for grid stability under
+  high photovoltaic (PV) penetration, particularly in tropical monsoon climates where irradiance is highly
+  variable. This paper proposes a dual‐branch hybrid deep learning framework that integrates Himawari‐9
+  satellite imagery with ground‐based meteorological and PV data. A CNN branch extracts spatial cloud
+  features from image sequences, while an LSTM branch captures temporal dependencies from numerical time‐series;
+  their outputs are fused to generate multi‐horizon nowcasting predictions. The framework is validated
+  on an 11‐month dataset from Hanoi, Vietnam, and benchmarked against four baselines: a CNN‐LSTM trained
+  only on numerical data, a standalone CNN, a standalone LSTM applied to image sequences, and a naive
+  persistence model. Results demonstrate that the hybrid model consistently outperforms all baselines
+  across both 30‐ and 60‐min horizons. At 30 min, it reduces MAE by approximately 49% and RMSE by approximately
+  41% relative to the best deep‐learning baseline (numerical‐only CNN‐LSTM), and achieves 30% lower MAE
+  than the naive persistence reference, while maintaining stable accuracy under volatile cloud conditions
+  (reducing MAE by 65% compared to the numerical‐only model) where competing models fail. Distributional
+  analyses (ECDF, parity plots, violin‐box) confirm minimized variance, reduced outliers and the absence
+  of systematic underestimation at peak generation hours. These findings highlight the operational relevance
+  of hybrid spatio‐temporal deep learning for solar integration in challenging climates. Beyond Vietnam,
+  the approach offers a scalable pathway to enhance reserve allocation, storage scheduling and grid reliability
+  in regions pursuing aggressive renewable energy targets.'
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

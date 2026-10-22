@@ -1,0 +1,57 @@
+id: doi-10.1029-2025ms004972
+title: A Machine Learning Approach to Cloud Cover Forecasting Using Lagrangian Air Mass History
+authors:
+- Zihui Liu
+- Ryan M. Eastman
+- Robert Wood
+date: '2026-01-01'
+year: 2026
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2025ms004972
+  openalex: W7125803187
+links:
+  paper: https://doi.org/10.1029/2025ms004972
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2025MS004972
+orgs:
+- university-of-washington
+topic: hybrid-parameterization
+topics:
+- observations-remote-sensing
+- xai-uq-physics
+type: model
+method:
+- rnn
+- classical-ml
+timescale:
+- short
+- medium
+spatial:
+- regional
+data:
+- era5
+- satellite
+status: research
+summary: Recurrent neural networks using Lagrangian air-mass history predict subtropical cloud cover with
+  r=0.72 against MODIS, beating reanalysis at 0.65.
+abstract: Abstract Improving cloud cover prediction is one of the fundamental challenges for large‐scale
+  climate simulations due to the stochastic nature of clouds and their complex interactions with the atmospheric
+  circulation. This study explores various machine‐learning (machine learning) approaches and utilizes
+  Lagrangian air mass history to improve prediction accuracy. Here, we use 169,824 isobaric boundary layer
+  trajectories over the eastern subtropical oceans with colocated meteorological data at 12‐hr intervals
+  over 4 days. Satellite cloud cover data from MODIS are colocated with the trajectory points where available,
+  resulting in 43,830 trajectories (26%) that are fully filled. All models received seven cloud‐controlling
+  factors (CCF) at each timestamp to predict total cloud cover simultaneously. Several statistical models
+  applied here are found to predict cloud cover with similar or better performance than the leading meteorological
+  reanalysis. The best model using recurrent neural networks and cloud cover feedback achieves a correlation
+  coefficient of 0.72 between predictions and MODIS measurements, compared to 0.65 for the reanalysis.
+  Applications of these models are investigated. We determine sensitivities of cloud cover to cloud‐controlling
+  parameters by adding different perturbations to CCFs and recording consequent changes. This sensitivity
+  study reveals a nonlinear relationship between cloud cover and numerous CCFs.
+significance: 3
+cited_by: 1
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill
