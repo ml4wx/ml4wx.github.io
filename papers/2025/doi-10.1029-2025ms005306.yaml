@@ -20,11 +20,28 @@ topic: data-assimilation
 type: model
 method:
 - rnn
+spatial:
+- global
 data:
 - other
 status: research
-summary: A BiLSTM-GRU hybrid learns EnKF analysis residuals and nudges the state, improving robustness
-  across ensemble sizes, observation densities and noise in chaotic test systems.
+summary: A BiLSTM-GRU hybrid learns EnKF analysis errors to correct data assimilation for chaotic systems,
+  robust across noise and observation densities.
+abstract: Abstract In machine learning (ML) algorithms, neural networks (NNs) can effectively learn the
+  mapping between initial condition errors and system states through training. To reduce model errors
+  in data assimilation, this work proposes an optimization strategy for the data assimilation (DA) process
+  based on ML methods. A novel hybrid deep learning approach is introduced, which combines bidirectional
+  long short‐term memory (BiLSTM) networks and gated recurrent units (GRUs) in a serial processing manner.
+  First, the BiLSTM‐GRU hybrid method is trained by modeling the residuals between the system's observational
+  data and the ensemble Kalman filter (EnKF) assimilation results, which are used as inputs to learn the
+  error correction process. Second, the Huber loss function is used to quantify the error, and the network
+  model's parameters are updated on the basis of the loss feedback to correct model errors in the data
+  assimilation system. Additionally, the hybrid model incorporates nudging by introducing a certain amount
+  of “relaxation” in each iteration, gradually approaching the actual solution. Ultimately, comprehensive
+  experiments demonstrate that the BiLSTM‐GRU hybrid, even after strengthening traditional EnKF with inflation,
+  localization, and stabilization, consistently achieves superior robustness across varying dynamical
+  regimes, ensemble sizes, observation densities, and noise levels, highlighting its scalability for nonlinear
+  chaotic systems.
 significance: 3
 cited_by: 2
 score: 12

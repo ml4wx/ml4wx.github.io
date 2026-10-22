@@ -18,6 +18,8 @@ links:
   paper: https://doi.org/10.1029/2020gl089436
   pdf: https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2020GL089436
 topic: hybrid-parameterization
+topics:
+- climate-analysis-attribution
 type: model
 method:
 - cnn
@@ -26,11 +28,22 @@ spatial:
 data:
 - era5
 status: research
-summary: A CNN trained on JRA-55 reanalysis estimates gravity-wave momentum fluxes over Hokkaido at fine
-  scale and reasonable cost, with winter RMSE of 0.06 to 0.13 mPa.
-significance: 3
+summary: A CNN trained on JRA-55 reanalysis estimates gravity-wave momentum fluxes over Hokkaido, with
+  median RMSE of 0.06-0.13 mPa in winter.
+abstract: Abstract Gravity waves play an essential role in driving and maintaining global circulation.
+  To understand their contribution in the atmosphere, the accurate reproduction of their distribution
+  is important. Thus, a deep learning approach for the estimation of gravity wave momentum fluxes was
+  proposed, and its performance at 100 hPa was tested using data from low‐resolution zonal and meridional
+  winds, temperature, and specific humidity at 300, 700, and 850 hPa in the Hokkaido region (Japan). To
+  this end, a deep convolutional neural network was trained on 29‐year reanalysis data sets (JRA‐55 and
+  DSJRA‐55), and the final 5‐year data were reserved for evaluation. The results showed that the fine‐scale
+  momentum flux distribution of the gravity waves could be estimated at a reasonable computational cost.
+  Particularly, in winter, when gravity waves are stronger, the median root means square errors (RMSEs)
+  of the maximum momentum flux and the characteristic zonal wavenumber were 0.06–0.13 mPa and 1.0 × 10
+  −5 , respectively.
+significance: 4
 cited_by: 36
-score: 12
+score: 16
 highlight: false
 added: '2026-10-22'
 source: snowball

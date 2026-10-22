@@ -14,7 +14,7 @@ links:
   paper: https://doi.org/10.1109/iccvw69036.2025.00296
 topic: nowcasting
 topics:
-- foundation-models
+- s2s-seasonal
 type: model
 method:
 - transformer
@@ -22,13 +22,12 @@ method:
 timescale:
 - nowcast
 - short
-spatial:
-- regional
 data:
 - satellite
 status: research
-summary: Combines a Vision Transformer autoencoder with a Koopman operator for efficient satellite image
-  sequence forecasting, matching Transformer baselines at a fraction of the compute on SEVIR and ENSO.
+summary: Combines a Vision Transformer autoencoder with a linear Koopman operator for efficient satellite
+  image sequence forecasting, matching Transformer baselines on ENSO, SEVIR and EarthNet2021 with far
+  fewer FLOPs.
 significance: 3
 cited_by: 3
 score: 12

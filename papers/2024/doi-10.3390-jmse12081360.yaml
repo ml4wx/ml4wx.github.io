@@ -17,22 +17,36 @@ links:
 topic: post-processing
 topics:
 - applications-impacts
-type: application
+type: model
 method:
 - classical-ml
 timescale:
 - short
 spatial:
+- regional
 - local
 data:
 - nwp-analysis
 - stations
 status: research
-summary: Support vector regression with PCA post-processes ECMWF maritime wind forecasts around Korea,
-  improving RMSE by 16.01% and 5.42% at unobserved sites.
-significance: 2
+summary: Support vector regression with PCA post-processes ECMWF 48-hour maritime wind forecasts near
+  Korea, improving RMSE by 16% and 5.4% at unobserved sites.
+abstract: Accurate wind data are crucial for successful search and rescue (SAR) operations on the sea
+  surface in maritime accidents, as survivors or debris tend to drift with the wind. As maritime accidents
+  frequently occur outside the range of wind stations, SAR operations heavily rely on wind forecasts generated
+  by numerical models. However, numerical models encounter delays in generating results due to spin-up
+  issues, and their predictions can sometimes exhibit inherent biases caused by geographical factors.
+  To overcome these limitations, we reviewed the observations for the first 24 h of the 72-hour forecast
+  from the ECMWF and then post-processed the forecast for the remaining 48 h. By effectively reducing
+  the dimensionality of input variables comprising observation and forecast data using principal component
+  analysis, we improved wind predictions with support vector regression. Our model achieved an average
+  RMSE improvement of 16.01% compared to the original forecast from the ECMWF. Furthermore, it achieved
+  an average RMSE improvement of 5.42% for locations without observation data by employing a model trained
+  on data from the nearest wind station and then applying an adaptive weighting scheme to the output of
+  that model.
+significance: 3
 cited_by: 2
-score: 8
+score: 12
 highlight: false
 added: '2026-10-22'
 source: snowball

@@ -17,19 +17,45 @@ links:
   paper: https://doi.org/10.1080/15481603.2026.2658318
   pdf: https://www.tandfonline.com/doi/pdf/10.1080/15481603.2026.2658318?needAccess=true
 topic: observations-remote-sensing
-type: application
+topics:
+- applications-impacts
+type: operational
 method:
-- other
+- cnn
+- transformer
 spatial:
 - regional
 data:
 - satellite
+- stations
 status: operational
-summary: Deep learning deployed in the operational geo-KOMPSAT-2A pipeline to estimate solar radiation
-  and aerosol optical depth from satellite imagery; no abstract available.
-significance: 2
+summary: Three-year operational validation of FT-Transformer for GK-2A solar radiation and AOD estimation,
+  with R² of 0.92 and 0.97 and up to 12-fold faster processing.
+abstract: Deep learning (DL) models have emerged as promising tools to enhance satellite observations,
+  yet their real-time deployment in operational systems for estimating solar radiation and aerosol optical
+  depth (AOD) remains infrequent. This study presents the successful integration and three-year operational
+  validation of DL models within the Geo-KOMPSAT-2A (GK-2A) satellite’s high-throughput processing pipeline.
+  We selected the back-propagation neural network (BPNN), the one-dimensional convolutional network (Conv1D)
+  and Feature Tokenizer Transformer (FT-Transformer) as candidate models due to their reliability, stability,
+  and runtime efficiency. Ground-validation results demonstrated the performance differences between the
+  models. For solar radiation, the BPNN model achieved a root mean square error (RMSE) of 72.45 W/m²,
+  a normalized RMSE (nRMSE) of 17.28%, a mean bias error (MBE) of 48.34 W/m², and a coefficient of determination
+  (R2) of 0.92. In the case of FT-Transformer model, it recorded an RMSE of 72.02 W/m², nRMSE of 17.52%,
+  MBE of 47.28 W/m², and R2 of 0.92. Regarding AOD estimation, the BPNN model showed an RMSE of 0.053,
+  nRMSE of 19.78%, MBE of −0.034, and R2 of 0.95. For the FT-Transformer, it exhibited improved performance
+  with an RMSE of 0.03, nRMSE of 14.07%, MBE of 0.01, and R2 of 0.97. FT-Transformer achieved the best
+  accuracy across the evaluation metrics, and the cross-validation results indicate that its performance
+  remains consistent across withheld stations, suggesting robust spatial generalization and reduced sensitivity
+  to location-specific overfitting. Accordingly, we adopt the FT-Transformer as the primary operational
+  model for GK-2A product generation. Notably, the operational DL system processed data significantly
+  faster—up to 12-fold for solar radiation and 43-fold for AOD compared with conventional physical models—enabling
+  real-time performance with enhanced accuracy. Furthermore, monthly retraining and monitoring ensured
+  sustained robustness over the study period. These findings underline that, beyond improving predictive
+  accuracy (notably for AOD), the core innovation lies in achieving a stable, scalable, and efficient
+  integration of DL within operational satellite systems.
+significance: 3
 cited_by: 0
-score: 18
+score: 22
 highlight: false
 added: '2026-10-22'
 source: snowball

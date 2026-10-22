@@ -15,6 +15,8 @@ links:
   paper: https://doi.org/10.5220/0013110700003912
   pdf: https://doi.org/10.5220/0013110700003912
 topic: nowcasting
+topics:
+- extremes-hazards
 type: model
 method:
 - cnn
@@ -25,8 +27,18 @@ spatial:
 data:
 - other
 status: research
-summary: StrikeNet, a CNN, predicts pixel-level lightning locations from short image sequences, reaching
-  F1 about 0.53 for the lightning class.
+summary: Introduces StrikeNet, a CNN with soft-NMS that predicts pixel-sized lightning locations from
+  image sequences, reaching F1 of about 0.54.
+abstract: Forecasting the location of electrical activity at a very short time range remains one of the
+  most challenging predictions to make, primarily attributable to the chaotic nature of thunderstorms.
+  Additionally, the punctual nature of lightning further complicates the establishment of reliable forecasts.
+  This article introduces StrikeNet, a specialized Convolutional Neural Network (CNN) model designed for
+  very short-term forecasts of electrical activity locations, utilizing sequences of temporal images as
+  input and only two data types. Employing soft Non-Maximum Suppression (NMS) techniques, incorporating
+  morphological features within residual blocks, and implementing dropout regularization, StrikeNet is
+  specifically designed for detecting and predicting pixel-sized objects in images. This design seamlessly
+  aligns with the task of forecasting imminent electrical activity giving great scores of 0.42 for precision,
+  0.78 for detection, and an F1-Score about 0.54.
 significance: 2
 cited_by: 1
 score: 8

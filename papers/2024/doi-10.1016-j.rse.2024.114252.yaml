@@ -15,21 +15,41 @@ links:
   pdf: https://doi.org/10.1016/j.rse.2024.114252
 topic: extremes-hazards
 topics:
-- observations-remote-sensing
+- climate-analysis-attribution
 type: model
 method:
 - rnn
 - gan-vae
+- physics-constrained
 spatial:
 - regional
 data:
-- satellite
+- stations
+- other
 status: research
-summary: Domain-knowledge variational recurrent networks for drought monitoring from remote sensing; abstract
-  unavailable, scope judged from title.
-significance: 2
+summary: Variational recurrent network with SPEI domain knowledge detects European drought events with
+  higher ROC-AUC than drought indices and data-driven baselines.
+abstract: In the context of climate change, droughts, increasingly frequent and severe, necessitate effective
+  monitoring. Existing methods, such as drought indices and data-driven models, face important limitations.
+  Drought indices are built on prior expert knowledge but lack calibration based on actual drought events,
+  while data-driven models prioritize goodness of fit over real event identification, undermining their
+  credibility and generalization, and also struggling to generalize from regional to large-scale contexts.
+  To address these challenges, here we introduce a hybrid machine learning framework for time series that
+  combines domain knowledge and observational data in a variational recurrent neural network. The network
+  models the joint distribution of total precipitation, air temperature, and real drought events, providing
+  accurate predictions and uncertainty estimates. Extensive experiments focusing on a wide range of European
+  drought events from 2011 to 2018 consistently show that our hybrid model surpasses both drought indices
+  and data-driven models in terms of accuracy in drought detection, underlining its effectiveness, robustness,
+  and stability. Our model achieves the best ROC-AUC (%) results in Afghanistan (79.7 ± 0.5), Italy (84.3
+  ± 0.6), Russia (89.4 ± 0.2), Europe-0 (84.3 ± 0.1), and Europe-1 (82.8 ± 0.4), effectively capturing
+  the starting and ending times of drought events with lower uncertainty, and also generalizing better
+  for unseen locations. • We propose DK-VRN, a novel hybrid framework for drought monitoring. • DK-VRN
+  takes ECVs as input and integrates multi-scalar SPEI as domain knowledge prior. • DK-VRN is end-to-end
+  supervised by historical drought events. • DK-VRN can detect droughts over diverse timeframes and across
+  continental scales. • Experiments on European events from 2011 to 2018 show the effectiveness of DK-VRN.
+significance: 3
 cited_by: 12
-score: 8
+score: 12
 highlight: false
 added: '2026-10-22'
 source: snowball

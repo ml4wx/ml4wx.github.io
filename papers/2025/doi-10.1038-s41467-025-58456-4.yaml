@@ -18,23 +18,38 @@ links:
   pdf: https://www.nature.com/articles/s41467-025-58456-4.pdf
 topic: applications-impacts
 topics:
-- local-forecasting
+- regional-km-scale
 type: model
 method:
 - transformer
 - cnn
 timescale:
+- nowcast
 - short
 spatial:
 - regional
 data:
 - nwp-analysis
-status: pre-operational
-summary: CNN-Transformer MFWPN predicts hub-height vector wind speed over Northeast China, beating ECMWF-HRES
-  within 6 h and transferring to other regions.
-significance: 4
+- era5
+- stations
+status: research
+summary: A CNN-Transformer wind network (MFWPN) beats ECMWF-HRES for vector wind speed within 6 hours
+  over Northeast China and runs in 18 ms.
+abstract: Accurate short-term wind speed prediction is crucial for maintaining the safe, stable, and efficient
+  operation of wind power systems. We propose a multivariate meteorological data fusion wind prediction
+  network (MFWPN) to study fine-grid vector wind speed prediction, taking Northeast China as an example.
+  Results show that MFWPN outperforms the ECMWF-HRES model regarding vector wind speed prediction accuracy
+  within the first 6 h. Transfer experiments demonstrate the good generalized performance of the MFWPN,
+  which can be quickly applied to offsite prediction. Efficiency experiments show that the MFWPN takes
+  only 18 ms to predict vector wind speeds on a 24-hour fine grid over the future northeastern region.
+  With its demonstrated accuracy and efficiency, the MFWPN can be an effective tool for predicting vector
+  wind speeds in large regional wind centers and can help in ultrashort- and short-term deployment planning
+  for wind power. Accurate short-term wind speed prediction is crucial for wind power systems. Authors
+  propose a machine learning-based short-term wind prediction network using CNN-Transformer architecture,
+  demonstrating strong transferability and robustness for predicting wind speeds in various climatic regions.
+significance: 3
 cited_by: 76
-score: 36
+score: 32
 highlight: false
 added: '2026-10-22'
 source: snowball

@@ -19,15 +19,31 @@ links:
   paper: https://doi.org/10.1029/2025gl120241
   pdf: https://doi.org/10.1029/2025gl120241
 topic: hybrid-parameterization
+topics:
+- climate-analysis-attribution
 type: model
 method:
 - classical-ml
+spatial:
+- local
 data:
 - km-scale-sim
 - other
 status: research
-summary: Machine-learning surrogates and MCMC calibrate SHOC turbulence parameters in SCREAM, improving
-  boundary-layer and cloud fraction fidelity across two convective regimes against observations.
+summary: ML surrogates with MCMC calibrate SHOC turbulence parameters in SCREAM, improving boundary-layer
+  and cloud fraction against ARM observations across two regimes.
+abstract: 'Abstract A process‐oriented calibration framework is developed for the Simplified Higher‐Order
+  Closure (SHOC) turbulence scheme in DOE''s Simple Cloud Resolving E3SM Atmospheric Model (SCREAM). This
+  framework leverages machine learning surrogates and observational constraints to efficiently calibrate
+  SHOC adjustable parameters across two convective regimes: clear‐sky dry convective boundary layer and
+  fair‐weather shallow cumulus clouds from ARM observations. We use perturbed‐parameter ensembles of a
+  doubly periodic version of SCREAM to train surrogates and apply Markov Chain Monte Carlo sampling guided
+  by cost functions based on benchmarking large‐eddy simulations and observations to identify optimized
+  parameter sets that perform well in both regimes. The calibrated SHOC parameters substantially improve
+  boundary‐layer turbulence and cloud boundaries, and modeled cloud fraction and radiative effects align
+  better with observations than the default. These results demonstrate that combining multiple process‐specific
+  convective regimes with machine‐learning surrogates can reduce parametric uncertainties and yield a
+  model more faithful to cloud–turbulence interactions.'
 significance: 3
 cited_by: 1
 score: 12

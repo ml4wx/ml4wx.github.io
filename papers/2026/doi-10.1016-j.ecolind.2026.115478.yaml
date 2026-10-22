@@ -23,17 +23,38 @@ links:
   pdf: https://www.sciencedirect.com/science/article/pii/S1470160X26008794/pdf
 topic: extremes-hazards
 topics:
-- probabilistic-ensembles
+- global-medium-range
+- applications-impacts
 type: model
+method:
+- classical-ml
 timescale:
-- medium
+- short
 spatial:
 - regional
 data:
+- era5
 - nwp-analysis
-status: research
-summary: Ensemble fire probability model combines meteorological AI forecasts with lightweight prediction
-  networks for fire weather risk; abstract unavailable, so details are limited.
+status: pre-operational
+summary: Pangu-Weather forecasts drive fire classifiers over Africa; one-step forecasts nearly match reanalysis-based
+  fire risk, while rolling forecasts degrade.
+abstract: Wildfires pose persistent threats to ecosystems and human safety, making timely fire-risk assessment
+  essential for disaster prevention and resource management. However, conventional wildfire early-warning
+  approaches are often constrained by static fire-weather indices or machine-learning models driven by
+  reanalysis data, which cannot exploit future atmospheric fields. We therefore propose and evaluate a
+  decoupled cascade framework that decomposes the problem into (i) an upstream AI weather model (Pangu-Weather)
+  to generate future atmospheric states and (ii) downstream probabilistic fire classifiers. To the best
+  of our knowledge, this is the first study to systematically compare the performance of three operational
+  forecasting strategies (reanalysis, one-step forecast, and rolling forecast) for fire probability estimation.
+  Using Africa as the study area, with multi-source data from 2014 to 2025, we find that one-step AI forecasts
+  preserve the spatial fire-risk structure nearly as well as reanalysis data. Based on this dataset, we
+  evaluated 11 downstream classifiers within a two-stage fire-occurrence and fire-intensity prediction
+  design, while rolling forecasts suffer from degraded detection due to accumulated meteorological errors,
+  with persistent reliability failure occurring after approximately six weeks. Cross-model consensus based
+  on SHapley Additive exPlanations (SHAP) identifies vegetation, land-surface conditions, and meteorological
+  variables as robust contributors. Our results demonstrate that meteorological foundation models can
+  serve as modular and interchangeable upstream modules for operational wildfire hazard estimation, offering
+  a scalable alternative to end-to-end black-box fire foundation models.
 significance: 3
 cited_by: 0
 score: 12

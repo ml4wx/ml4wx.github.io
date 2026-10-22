@@ -17,18 +17,27 @@ topic: infra-software
 topics:
 - downscaling
 type: evaluation
-method:
-- cnn
 spatial:
 - regional
 data:
 - era5
 status: research
-summary: Profiles and benchmarks a deep learning temperature downscaling model on V100 and A100 GPUs and
-  across cloud providers, identifying bottlenecks for HPC use.
-significance: 2
+summary: Profiles and benchmarks a deep learning temperature downscaling model from the MAELSTROM project
+  on V100 and A100 GPUs, identifying bottlenecks and comparing training and inference costs across cloud
+  providers.
+abstract: We are presenting here a detailed analysis and performance characterization of a statistical
+  temperature downscaling application used in the MAELSTROM EuroHPC project. This application uses a deep
+  learning methodology to convert low-resolution atmospheric temperature states into high-resolution.
+  We have performed in-depth profiling and roofline analysis at different levels (Operators, Training,
+  Distributed Training, Inference) of the downscaling model on different hardware architectures (Nvidia
+  V100 & A100 GPUs). Finally, we compare the training and inference cost of the downscaling model with
+  various cloud providers. Our results identify the model bottlenecks which can be used to enhance the
+  model architecture and determine hardware configuration for efficiently utilizing the HPC. Furthermore,
+  we provide a comprehensive methodology for in-depth profiling and benchmarking of the deep learning
+  models.
+significance: 3
 cited_by: 0
-score: 8
+score: 12
 highlight: false
 added: '2026-10-22'
 source: snowball

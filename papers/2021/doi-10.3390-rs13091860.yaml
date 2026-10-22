@@ -24,13 +24,31 @@ topics:
 - observations-remote-sensing
 type: model
 method:
-- cnn
 - gan-vae
+- cnn
+spatial:
+- global
 data:
 - satellite
 status: research
-summary: DCGAN-augmented YOLOv3 with transfer learning detects tropical cyclones in satellite images,
-  reaching 97.78% accuracy versus 93.96% for YOLOv3 alone.
+summary: NDFTC combines DCGAN augmentation with YOLOv3 transfer learning to detect tropical cyclones in
+  satellite images, reaching 97.78% accuracy versus 93.96% for YOLOv3.
+abstract: 'Accurate detection of tropical cyclones (TCs) is important to prevent and mitigate natural
+  disasters associated with TCs. Deep transfer learning methods have advantages in detection tasks, because
+  they can further improve the stability and accuracy of the detection model. Therefore, on the basis
+  of deep transfer learning, we propose a new detection framework of tropical cyclones (NDFTC) from meteorological
+  satellite images by combining the deep convolutional generative adversarial networks (DCGAN) and You
+  Only Look Once (YOLO) v3 model. The algorithm process of NDFTC consists of three major steps: data augmentation,
+  a pre-training phase, and transfer learning. First, to improve the utilization of finite data, DCGAN
+  is used as the data augmentation method to generate images simulated to TCs. Second, to extract the
+  salient characteristics of TCs, the generated images obtained from DCGAN are inputted into the detection
+  model YOLOv3 in the pre-training phase. Furthermore, based on the network-based deep transfer learning
+  method, we train the detection model with real images of TCs and its initial weights are transferred
+  from the YOLOv3 trained with generated images. Training with real images helps to extract universal
+  characteristics of TCs and using transferred weights as initial weights can improve the stability and
+  accuracy of the model. The experimental results show that the NDFTC has a better performance, with an
+  accuracy (ACC) of 97.78% and average precision (AP) of 81.39%, in comparison to the YOLOv3, with an
+  ACC of 93.96% and AP of 80.64%.'
 significance: 3
 cited_by: 36
 score: 12

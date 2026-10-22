@@ -17,7 +17,7 @@ links:
   pdf: https://doi.org/10.1371/journal.pone.0312814
 topic: applications-impacts
 topics:
-- local-forecasting
+- probabilistic-ensembles
 type: evaluation
 method:
 - classical-ml
@@ -28,8 +28,26 @@ spatial:
 data:
 - other
 status: research
-summary: Compares random forest, quantile regression forest and quantile GAM for solar irradiance forecast
-  distributions; QGAM gives the best pinball loss and error scores.
+summary: Quantile regression random forests are compared with quantile GAMs for probabilistic solar irradiance
+  forecasting, with QGAM winning on pinball loss and MASE.
+abstract: The renewable energy industry requires accurate forecasts of intermittent solar irradiance (SI)
+  to effectively manage solar power generation and supply. Introducing the random forests (RFs) model
+  and its hybridisation with quantile regression modelling, the quantile regression random forest (QRRF),
+  can help improve the forecasts' accuracy. This paper assesses the RFs and QRRF models against the quantile
+  generalised additive model (QGAM) by evaluating their forecast performances. A simulation study of multivariate
+  data-generating processes was carried out to compare the forecasting accuracy of the models when predicting
+  global horizontal solar irradiance. The QRRF and QGAM are completely new forecasting frameworks for
+  SI studies, to the best of our knowledge. Simulation results suggested that the introduced QRRF compared
+  well with the QGAM when predicting the forecast distribution. However, the evaluations of the pinball
+  loss scores and mean absolute scaled errors demonstrated a clear superiority of the QGAM. Similar results
+  were obtained in an application to real-life data. Therefore, we recommend that the QGAM be preferred
+  ahead of decision tree-based models when predicting solar irradiance. However, the QRRF model can be
+  used alternatively to predict the forecast distribution. Both the QGAM and QRRF modelling frameworks
+  went beyond representing forecast uncertainty of SI as probability distributions around a prediction
+  interval to give complete information through the estimation of quantiles. Most SI studies conducted
+  are residual and/or non-parametric modelling that are limited to represent information about the conditional
+  mean distribution. Extensions of the QRRF and QGAM frameworks can be made to model other renewable sources
+  of energy that have meteorological characteristics similar to solar irradiance.
 significance: 2
 cited_by: 6
 score: 8

@@ -14,17 +14,20 @@ ids:
   doi: 10.1061/9780784486931.005
 links:
   paper: https://doi.org/10.1061/9780784486931.005
-topic: applications-impacts
-type: application
+topic: local-forecasting
+type: model
 method:
-- other
+- rnn
+- gan-vae
 timescale:
-- short
+- decadal
+spatial:
+- local
 data:
-- other
+- stations
 status: research
-summary: Conference paper on machine learning for weather forecasting in civil engineering planning; no
-  abstract available, so the ML contribution is unclear.
+summary: LSTM-VAE hybrid forecasts hourly temperature over a 20-year horizon and beats LSTM, NeuralProphet
+  and XGBoost with MAE 0.078 for civil planning.
 significance: 1
 cited_by: 0
 score: 4

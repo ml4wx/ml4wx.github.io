@@ -16,22 +16,37 @@ links:
   pdf: https://doi.org/10.1088/2632-2153/ae2f8b
 topic: global-medium-range
 topics:
-- hybrid-parameterization
+- xai-uq-physics
 type: model
 method:
-- transformer
 - gnn
+- transformer
 - physics-constrained
 timescale:
-- medium
+- short
 spatial:
 - global
-- regional
 data:
 - era5
 status: research
-summary: GNADET couples a physics-informed advection-diffusion neural ODE with a graph transformer for
-  ERA5 surface temperature forecasts that generalize to new locations.
+summary: GNADET combines a physics-informed advection-diffusion neural ODE with a graph transformer to
+  forecast ERA5 surface temperature with better extrapolation to new times and places.
+abstract: Abstract Accurate surface temperature forecasting is essential for climate change research,
+  yet achieving both high predictive accuracy and physical consistency remains a persistent challenge.
+  Purely data-driven machine learning models often lack physical interpretability and can struggle with
+  generalization, sometimes producing physically implausible results. Therefore, this study introduces
+  the Geospatial Neural Advection–Diffusion Equation with Graph Transformer called GNADET, which is a
+  novel hybrid forecasting framework for surface temperature. The core of GNADET is a physics-informed
+  neural ordinary differential equation that embeds the advection–diffusion equation to model physical
+  dynamics. By representing gridded geospatial data as a graph based on the Moore neighborhood, a Graph
+  Transformer is employed to learn and compensate for complex, spatially-correlated uncertainties that
+  the explicit physics cannot account for. All components of the framework are trained jointly, which
+  allows the model to learn complex data patterns while being constrained by physical principles. This
+  study evaluates GNADET using the WeatherBench ERA5 dataset on a global scale and across several diverse
+  continents. The framework shows high predictive accuracy and strong generalization when being extrapolated
+  to new times and locations, outperforming comparative models. By integrating physics-informed and data-driven
+  techniques, GNADET provides an accurate and interpretable solution for large-scale surface temperature
+  forecasting.
 significance: 3
 cited_by: 3
 score: 12

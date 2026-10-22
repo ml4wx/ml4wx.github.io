@@ -15,12 +15,28 @@ links:
 topic: data-assimilation
 type: model
 method:
+- other
 - classical-ml
 data:
 - other
 status: research
-summary: DL-EnKF embeds deep networks in an ensemble Kalman filter, beating standard EnKF in strongly
-  nonlinear Lorenz-96 regimes with only 10 ensemble members.
+summary: Embeds deep neural networks locally in an ensemble Kalman filter, outperforming a 10-member EnKF
+  in strongly nonlinear Lorenz-96 regimes.
+abstract: Recent progress in the particle filter has made it possible to use it for nonlinear or non-Gaussian
+  data assimilation in high-dimensional systems, but a relatively large ensemble is still needed to outperform
+  the ensemble Kalman filter (EnKF) in terms of accuracy. An alternative ensemble data assimilation method
+  based on deep learning is presented, in which deep neural networks are locally embedded in the EnKF.
+  This method is named the deep learning-ensemble Kalman filter (DL-EnKF). The DL-EnKF analysis ensemble
+  is generated from the DL-EnKF analysis and the EnKF analysis deviation ensemble. The performance of
+  the DL-EnKF is investigated through data assimilation experiments in both perfect and imperfect model
+  scenarios using three versions of the Lorenz 96 model and a deterministic EnKF with an ensemble size
+  of 10. Nonlinearity in data assimilation is controlled by changing the time interval between observations.
+  Results demonstrate that despite being such a small ensemble, the DL-EnKF is superior to the EnKF in
+  terms of accuracy in strongly nonlinear regimes and that the DL-EnKF analysis is more accurate than
+  the output of deep learning because of positive feedback in assimilation cycles. Even if the target
+  of training is an EnKF analysis with a large ensemble or a simulation by an imperfect model, the improvement
+  introduced by the DL-EnKF is not very different from the case where the target of training is the true
+  state.
 significance: 3
 cited_by: 13
 score: 12

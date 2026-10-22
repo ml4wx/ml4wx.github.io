@@ -21,19 +21,33 @@ topics:
 type: review
 method:
 - cnn
-- rnn
-timescale:
-- nowcast
 spatial:
 - regional
 data:
 - satellite
 status: research
-summary: Review of spatiotemporal feature engineering and CNN/LSTM methods for meteorological image sequences,
+summary: A review of spatiotemporal feature engineering and CNN methods for meteorological image sequences,
   covering convection detection from satellite and solar forecasting.
-significance: 2
+abstract: Abstract Atmospheric processes involve both space and time. Thus, humans looking at atmospheric
+  imagery can often spot important signals in an animated loop of an image sequence not apparent in an
+  individual (static) image. Utilizing such signals with automated algorithms requires the ability to
+  identify complex spatiotemporal patterns in image sequences. That is a very challenging task due to
+  the endless possibilities of patterns in both space and time. Here, we review different concepts and
+  techniques that are useful to extract spatiotemporal signals from meteorological image sequences to
+  expand the effectiveness of AI algorithms for classification and prediction tasks. We first present
+  two applications that motivate the need for these approaches in meteorology, namely the detection of
+  convection from satellite imagery and solar forecasting. Then we provide an overview of concepts and
+  techniques that are helpful for the interpretation of meteorological image sequences, such as (a) feature
+  engineering methods using (i) meteorological knowledge, (ii) classic image processing, (iii) harmonic
+  analysis, and (iv) topological data analysis; (b) ways to use convolutional neural networks for this
+  purpose with emphasis on discussing different convolution filters (2D/3D/LSTM-convolution); and (c)
+  a brief survey of several other concepts, including the concept of “attention” in neural networks and
+  its utility for the interpretation of image sequences and strategies from self-supervised and transfer
+  learning to reduce the need for large labeled datasets. We hope that presenting an overview of these
+  tools—many of which are not new but underutilized in this context—will accelerate progress in this area.
+significance: 3
 cited_by: 3
-score: 8
+score: 12
 highlight: false
 added: '2026-10-22'
 source: snowball

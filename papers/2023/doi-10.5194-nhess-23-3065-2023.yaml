@@ -17,8 +17,8 @@ topics:
 - climate-analysis-attribution
 type: evaluation
 method:
-- classical-ml
 - cnn
+- classical-ml
 timescale:
 - climate
 spatial:
@@ -27,11 +27,21 @@ data:
 - era5
 - cmip
 status: research
-summary: Random forest outperforms deep networks (ETS 0.52 vs 0.48) at classifying radar-based heavy rainfall
-  over Germany; the probability of such convective days is projected to rise.
-significance: 4
+summary: Compares statistical and deep learning classifiers of ERA5 convective indices for heavy rainfall
+  events over Germany, predicting increasing CatRaRE probability under climate change.
+abstract: Abstract. Our subject is a new Catalogue of radar-based heavy Rainfall Events (CatRaRE) over
+  Germany, and how it relates to the concurrent atmospheric circulation. We classify daily atmospheric
+  ERA5 fields of convective indices according to CatRaRE, using an array of conventional statistical and
+  more recent machine learning (ML) algorithms, and apply them to corresponding fields of simulated present
+  and future atmospheres from the CORDEX project. Due to the stochastic nature of ML optimization there
+  is some spread in the results. The ALL-CNN network performs best on average, with several learning runs
+  exceeding an Equitable Threat Score (ETS) of 0.52; the single best result was from ResNet with ETS =
+  0.54. The best performing classical scheme was a Random Forest with ETS = 0.51. Regardless of the method,
+  increasing trends are predicted for the probability of CatRaRE-type events, from ERA5 as well as from
+  the CORDEX fields.
+significance: 3
 cited_by: 2
-score: 16
+score: 12
 highlight: false
 added: '2026-10-22'
 source: snowball

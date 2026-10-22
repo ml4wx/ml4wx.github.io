@@ -15,7 +15,9 @@ ids:
 links:
   paper: https://doi.org/10.5194/gmd-16-251-2023
   pdf: https://gmd.copernicus.org/articles/16/251/2023/gmd-16-251-2023.pdf
-topic: extremes-hazards
+topic: regional-km-scale
+topics:
+- extremes-hazards
 type: model
 method:
 - rnn
@@ -25,10 +27,32 @@ timescale:
 spatial:
 - regional
 data:
-- nwp-analysis
+- other
 status: research
-summary: Adapts a ConvLSTM with inverse-weighted imbalanced losses to forecast extreme wind speeds up
-  to 12 h ahead, boosting extreme-range hit rates at the cost of more false alarms.
+summary: A ConvLSTM trained with imbalanced-regression losses (W-MAE, W-MSE, SERA) improves 1–12 h forecasts
+  of extreme wind speeds over Europe.
+abstract: 'Abstract. The amount of wind farms and wind power production in Europe, both on- and off-shore,
+  has increased rapidly in the past years. To ensure grid stability, on-time (re)scheduling of maintenance
+  tasks and mitigate fees in energy trading, accurate predictions of wind speed and wind power are needed.
+  It has become particularly important to improve wind speed predictions in the short range of one to
+  six hours as wind speed variability in this range has been found to pose the largest operational challenges.
+  Furthermore, accurate predictions of extreme wind events are of high importance to wind farm operators
+  as timely knowledge of these can both prevent damages and offer economic preparedness. In this work
+  we propose a deep convolutional recurrent neural network (RNN) based regression model, for the spatio-temporal
+  prediction of extreme wind speed events over Europe in the short-to-medium range (12 hour lead-time
+  in one hour intervals). This is achieved by training a multi-layered convolutional long short-term memory
+  (ConvLSTM) network with so-called imbalanced regression loss. To this end we investigate three different
+  loss functions: the inversely weighted mean absolute error (W-MAE) loss, the inversely weighted mean
+  squared error (W-MSE) loss and the squared error-relevance area (SERA) loss. We investigate forecast
+  performance for various high-threshold extreme events and for various numbers of network layers, and
+  compare the imbalanced regression loss functions to the commonly used mean squared error (MSE) and mean
+  absolute error (MAE) loss. The results indicate superior performance of an ensemble of networks trained
+  with either W-MAE, W-MSE or SERA loss, showing substantial improvements on high intensity extreme events.
+  We conclude that the ConvLSTM trained with imbalanced regression loss provides an effective way to adapt
+  deep learning to the task of imbalanced spatio-temporal regression and its application to the forecasting
+  of extreme wind events in the short-to-medium range, and may be best utilised as an ensemble. This work
+  was performed as a part of the MEDEA project, which is funded by the Austrian Climate Research Program
+  to further research on renewable energy and meteorologically induced extreme events.'
 significance: 3
 cited_by: 34
 score: 12

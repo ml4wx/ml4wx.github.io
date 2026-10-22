@@ -16,10 +16,10 @@ links:
   pdf: https://dl.acm.org/doi/pdf/10.1145/3463944.3469099
 topic: post-processing
 topics:
-- local-forecasting
+- nowcasting
 type: model
 method:
-- other
+- cnn
 timescale:
 - nowcast
 spatial:
@@ -28,11 +28,21 @@ data:
 - stations
 - nwp-analysis
 status: research
-summary: A lightweight tower network combines station observations and NWP to forecast 1–6 h temperature,
-  with RMSE about 6% below yr.no and 27% below raw NWP.
-significance: 2
+summary: A tower network fuses station observations with NWP output for 1-6 hour temperature forecasts,
+  giving RMSE about 6% below yr.no and 27% below raw NWP.
+abstract: In this paper, we present the tower network, a novel, computationally lightweight deep neural
+  network for multimodal data analytics and video prediction. The tower network is especially useful when
+  it comes to combining different types of input data, a problem not greatly explored within deep learning.
+  The architecture is further applied to a real-world example, where information from historic meteorological
+  observations and numerical weather predictions are combined to produce high-quality forecasts of temperature
+  for 1 to 6 hours into the future. The performance of the proposed model is assessed in terms of root
+  mean squared error (RMSE), and the tower network outperforms even state-of-the-art forecasts from the
+  Norwegian weather forecasting app yr.no from 3 hours into the future. On average, the RMSE of the tower
+  network is approximately 6% smaller than that of yr.no, and approximately 27% smaller than that of the
+  raw numerical weather predictions.
+significance: 3
 cited_by: 1
-score: 8
+score: 12
 highlight: false
 added: '2026-10-22'
 source: snowball

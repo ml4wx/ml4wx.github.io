@@ -26,8 +26,28 @@ data:
 - era5
 - nwp-analysis
 status: research
-summary: SwinUNet-AR forecasts East Asian 2-m temperature for weeks 1-6, cutting RMSE 44.9% versus raw
-  CFSv2 at weeks 1-6 and improving ACC over SwinUNet.
+summary: SwinUNet-AR extends SwinUNet with AFNO and Resize-Conv for 1–6 week East Asian 2 m temperature,
+  cutting weeks 3–6 RMSE and beating raw CFSv2 by 44.9%.
+abstract: This study focuses on subseasonal 2-m temperature prediction over East Asia for lead times of
+  1–6 weeks. Based on ERA5 reanalysis data from January 1982 to December 2024, multiple variables, including
+  temperature, wind fields, and geopotential height, were selected as predictor fields. A SwinUNet-AR
+  subseasonal prediction model integrating SwinUNet, AFNO, and Resize-Conv was constructed. The results
+  indicate that the integrated architecture supports multiscale spatial representation, long-range dependency
+  modeling, and high-resolution spatial reconstruction. Among different prediction strategies, simultaneous
+  multi-lead prediction showed the most stable performance during Weeks 3–6. Multivariable input produced
+  a statistically significant improvement in cumulative ACC during Weeks 3–6. The cumulative ACC increased
+  by 0.07 compared with the scheme using only T2m as input, corresponding to an improvement of approximately
+  12.1%. The ablation experiments further indicate that the combined use of AFNO and Resize-Conv yields
+  a modest improvement in medium- and extended-range forecast skill, particularly in cumulative ACC. Compared
+  with the baseline SwinUNet, SwinUNet-AR reduced the mean RMSE by 0.02 °C during Weeks 3–4 and 0.03 °C
+  during Weeks 5–6, while increasing the cumulative ACC during Weeks 3–6 by 0.04, corresponding to an
+  improvement of approximately 7.4%. Compared with raw CFSv2 forecasts, SwinUNet-AR reduced the mean RMSE
+  over Weeks 1–6 by 0.84 °C, corresponding to a reduction of approximately 44.9%. During Weeks 4–6, the
+  mean RMSE was approximately 0.83 °C lower, corresponding to a reduction of about 40.8%. In terms of
+  ACC, SwinUNet-AR achieved values comparable to those of CFSv2 during Weeks 4–6 and slightly higher values
+  at some lead times. Overall, SwinUNet-AR shows potential for improving medium- and extended-range subseasonal
+  2-m temperature prediction over East Asia and provides a useful data-driven framework for regional subseasonal
+  forecasting.
 significance: 3
 cited_by: 0
 score: 12

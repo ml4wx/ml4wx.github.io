@@ -16,8 +16,6 @@ ids:
 links:
   paper: https://doi.org/10.1109/icccs61882.2024.10602884
 topic: nowcasting
-topics:
-- applications-impacts
 type: model
 method:
 - rnn
@@ -26,11 +24,10 @@ timescale:
 spatial:
 - local
 data:
-- satellite
-- stations
+- other
 status: research
-summary: CMPN fuses image LSTMs with meteorological LSTMs to forecast cloud trajectories over ground stations,
-  outperforming baseline on HKO-7 and infrared data.
+summary: CMPN combines two LSTM branches for cloud images and meteorological factors to predict cloud
+  trajectories over ground stations, outperforming baselines on HKO-7 and infrared camera data.
 significance: 2
 cited_by: 3
 score: 8

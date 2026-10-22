@@ -21,17 +21,27 @@ topic: downscaling
 topics:
 - applications-impacts
 type: model
-method:
-- cnn
 spatial:
 - local
 data:
 - km-scale-sim
-- nwp-analysis
-- stations
+- other
 status: research
-summary: FuXi-CFD uses ML trained on CFD simulations to produce 30 m 3D near-surface wind fields from
-  coarse inputs, with CFD-level accuracy and seconds of inference time.
+summary: FuXi-CFD generates 30 m 3D near-surface wind fields from coarse inputs and terrain, matching
+  CFD accuracy while cutting inference from hours to seconds.
+abstract: Fine-scale near-surface wind field prediction is essential for a wide range of applications.
+  However, most operational and AI-based weather models operate at kilometer-scale resolution, where terrain-induced
+  wind features such as slope jets, flow deflection, and recirculation are systematically averaged out.
+  Here we introduce FuXi-CFD, a machine learning-based framework designed to generate detailed three-dimensional
+  (3D) near-surface wind fields at 30-meter horizontal resolution, using only coarse-resolution atmospheric
+  inputs and high-resolution terrain information. The model is trained on a large-scale dataset generated
+  via computational fluid dynamics (CFD), encompassing a wide range of terrain types and inflow conditions.
+  Although relying only on horizontal wind inputs, FuXi-CFD infers the full 3D wind fields-including latent
+  variables such as vertical velocity and turbulence-related features. It achieves CFD-comparable accuracy
+  while reducing inference time from hours to seconds. Notably, the model also generalizes well to real-world
+  conditions, as demonstrated by consistent performance against independent wind-tower observations. This
+  capability enables real-time wind field reconstruction for terrain-sensitive applications such as wind
+  turbine siting, power forecasting, and wildfire spread modeling.
 significance: 5
 cited_by: 6
 score: 40

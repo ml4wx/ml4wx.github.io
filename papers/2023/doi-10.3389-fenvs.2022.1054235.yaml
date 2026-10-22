@@ -19,6 +19,8 @@ links:
   paper: https://doi.org/10.3389/fenvs.2022.1054235
   pdf: https://www.frontiersin.org/articles/10.3389/fenvs.2022.1054235/pdf
 topic: nowcasting
+topics:
+- observations-remote-sensing
 type: model
 method:
 - rnn
@@ -29,13 +31,27 @@ spatial:
 data:
 - radar
 - stations
-- other
+- era5
 status: research
-summary: LSTM radar rainfall nowcasting with atmospheric inputs reduces 6-hour RMSE by 18% versus optical
-  flow over 11 years of UK data.
-significance: 3
+summary: LSTM-based radar rainfall nowcasting with atmospheric conditions reduces 6-hour RMSE by 17.99%
+  versus optical flow and 7.17% versus random forest at long lead times.
+abstract: High-resolution radar rainfall data have great potential for rainfall predictions up to 6 h
+  ahead (nowcasting); however, conventional extrapolation approaches based on in-built physical assumptions
+  yield poor performance at longer lead times (3–6 h), which limits their operational utility. Moreover,
+  atmospheric factors in radar estimate errors are often ignored. This study proposed a radar rainfall
+  nowcasting method that attempts to achieve accurate nowcasting of 6 h using long short-term memory (LSTM)
+  networks. Atmospheric conditions were considered to reduce radar estimate errors. To build radar nowcasting
+  models based on LSTM networks (LSTM-RN), approximately 11 years of radar, gauge rainfall, and atmospheric
+  data from the UK were obtained. Compared with the models built on optical flow (OF-RN) and random forest
+  (RF-RN), LSTM-RN had the lowest root-mean-square errors (RMSE), highest correlation coefficients (COR),
+  and mean bias errors closest to 0. Furthermore, LSTM-RN showed a growing advantage at longer lead times,
+  with the RMSE decreasing by 17.99% and 7.17% compared with that of OF-RN and RF-RN, respectively. The
+  results also revealed a strong relationship between LSTM-RN performance and weather conditions. This
+  study provides an effective solution for nowcasting radar rainfall at long lead times, which enhances
+  the forecast value and supports practical utility.
+significance: 4
 cited_by: 9
-score: 12
+score: 16
 highlight: false
 added: '2026-10-22'
 source: snowball

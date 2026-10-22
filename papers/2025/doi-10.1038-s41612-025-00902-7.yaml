@@ -14,6 +14,8 @@ links:
   paper: https://doi.org/10.1038/s41612-025-00902-7
   pdf: https://www.nature.com/articles/s41612-025-00902-7.pdf
 topic: s2s-seasonal
+topics:
+- global-medium-range
 type: model
 method:
 - transformer
@@ -25,8 +27,20 @@ data:
 - era5
 - nwp-analysis
 status: research
-summary: ISOX, a modified transformer for intraseasonal extended-range forecasts, beats CFS skill beyond
-  13 days and captures a heatwave's 2 m temperature anomaly better.
+summary: ISOX, a modified transformer for intraseasonal components, beats CFS for lead times beyond 13
+  days and better predicts a heatwave's 2 m temperature anomaly.
+abstract: Extended-range forecast has long maintained a difficult point for the seamless forecast system
+  due to the lack of predictability, with intraseasonal oscillation (ISO), an important signal in many
+  high-impact weather events, being an important source of that. To improve the accuracy of ISO extended-range
+  forecast and make up the gaps in previous researches in this regard, a data-driven model ISOX is proposed
+  for the intraseasonal components of atmospheric fields. Compared with the subseasonal forecast results
+  from climate forecast system (CFS), and the climatological forecast, ISOX achieves higher accuracy for
+  lead times longer than 13 days, with few spatial or temporal weak points. It also performed better in
+  predicting the positive 2 m temperature ISO and lower tropospheric conditions in a heatwave event, surpassing
+  CFS for lead times longer than 13 days. Finally, through gradient evaluation, the model is proved to
+  be able to study the ISO signal movements of atmospheric systems. Thus, the success of this model may
+  shed light on improving extended-range forecast skills and assist the timely detection and prevention
+  of possible meteorological disasters.
 significance: 4
 cited_by: 6
 score: 16

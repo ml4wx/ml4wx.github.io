@@ -18,12 +18,11 @@ links:
   paper: https://doi.org/10.1145/3746027.3755436
   code: https://github.com/DeminYu98/PiMMNet
 topic: nowcasting
-topics:
-- observations-remote-sensing
 type: model
 method:
 - diffusion
 - physics-constrained
+- cnn
 timescale:
 - nowcast
 spatial:
@@ -32,11 +31,11 @@ data:
 - radar
 - satellite
 status: research
-summary: PiMMNet fuses radar and satellite data in an advection-diffusion physics-informed model, improving
-  longer-range precipitation nowcasts over single-modality baselines.
-significance: 4
+summary: PiMMNet estimates a physics-constrained advection velocity from radar and satellite inputs, then
+  uses a motion-guided diffusion model for longer-range precipitation nowcasting.
+significance: 3
 cited_by: 10
-score: 26
+score: 22
 highlight: false
 added: '2026-10-22'
 source: snowball

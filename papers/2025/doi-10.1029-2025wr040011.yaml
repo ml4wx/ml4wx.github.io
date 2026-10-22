@@ -21,8 +21,8 @@ links:
 topic: observations-remote-sensing
 type: model
 method:
-- cnn
 - transformer
+- cnn
 spatial:
 - regional
 data:
@@ -30,7 +30,23 @@ data:
 - stations
 status: research
 summary: GeoFNA fuses multi-source satellite precipitation with cross-attention and geographic constraints,
-  raising hourly correlation with gauges from 0.38 to 0.89.
+  raising hourly correlation against gauges from 0.38 to 0.89.
+abstract: Abstract Precipitation plays a crucial role in the global hydrological cycle, and its irregular
+  distribution contributes directly to natural hazards such as floods, waterlogging, and droughts. Satellite
+  remote sensing has emerged as an effective tool for global precipitation monitoring. However, accurately
+  estimating hourly precipitation from satellite observations remains a major challenge due to its high
+  spatiotemporal variability. To address this challenge, we propose a novel framework—Geographically constrained
+  multi‐source Fusion Network with cross Attention (GeoFNA)—designed to enhance the accuracy of hourly
+  satellite precipitation estimates. GeoFNA integrates a spatiotemporal convolutional network with cross‐attention
+  mechanisms to effectively capture complex spatiotemporal patterns and nonlinear relationships across
+  multi‐source precipitation data sets and auxiliary variables. To further improve model robustness, geographically
+  associated input constraints and weight constraints are incorporated to account for the skewed distribution
+  and rapid variability of hourly precipitation. Results demonstrated that GeoFNA outperformed three baseline
+  models, achieving significantly higher agreement with in situ measurements. Specifically, GeoFNA increased
+  the Pearson Correlation Coefficient from 0.38 to 0.89 and reduced the Mean Squared Error from 2.39 to
+  0.50 (mm/h) 2 compared to the original satellite precipitation data. Additionally, GeoFNA exhibited
+  strong spatial robustness, underscoring its potential for accurate and reliable quantitative precipitation
+  estimation. These advancements pave the way for improved hydrological modeling and meteorological research.
 significance: 3
 cited_by: 4
 score: 12

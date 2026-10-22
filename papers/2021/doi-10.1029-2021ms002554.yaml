@@ -12,20 +12,36 @@ ids:
 links:
   paper: https://doi.org/10.1029/2021ms002554
   pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2021MS002554
-topic: hybrid-parameterization
+topic: data-assimilation
+topics:
+- hybrid-parameterization
 type: model
 method:
 - differentiable
-timescale:
-- short
+spatial:
+- global
 data:
 - other
 status: research
-summary: Deep emulators learn derivatives of Lorenz-96 simulators, enabling accurate 4D-Var assimilation
-  and closed-loop training of parameterizations.
-significance: 3
+summary: Deep emulator networks learn simulator derivatives, enabling accurate 4D-Var assimilation and
+  closed-loop parameterization training in the chaotic Lorenz-96 system.
+abstract: Abstract To understand and predict large, complex, and chaotic systems, Earth scientists build
+  simulators from physical laws. Simulators generalize better to new scenarios, require fewer tunable
+  parameters, and are more interpretable than nonphysical deep learning, but procedures for obtaining
+  their derivatives with respect to their inputs are often unavailable. These missing derivatives limit
+  the application of many important tools for forecasting, model tuning, sensitivity analysis, or subgrid‐scale
+  parametrization. Here, we propose to overcome this limitation with deep emulator networks that learn
+  to calculate the missing derivatives. By training directly on simulation data without analyzing source
+  code or equations, this approach supports simulators in any programming language on any hardware without
+  specialized routines for each case. To demonstrate the effectiveness of our approach, we train emulators
+  on complete or partial system states of the chaotic Lorenz‐96 simulator and evaluate the accuracy of
+  their dynamics and derivatives as a function of integration time and training data set size. We further
+  demonstrate that emulator‐derived derivatives enable accurate 4D‐Var data assimilation and closed‐loop
+  training of parametrizations. These results provide a basis for further combining the parsimony and
+  generality of physical models with the power and flexibility of machine learning.
+significance: 4
 cited_by: 32
-score: 12
+score: 16
 highlight: false
 added: '2026-10-22'
 source: snowball

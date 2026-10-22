@@ -15,20 +15,30 @@ links:
 topic: post-processing
 topics:
 - local-forecasting
+- nowcasting
 type: model
 timescale:
 - nowcast
 spatial:
 - local
 data:
-- radar
 - stations
+- radar
 status: research
-summary: A deep learning model corrects JMA 1-6 hour precipitation forecasts using IoT rain gauge observations,
-  reducing MAE from about 0.6 to 0.3.
-significance: 3
+summary: Deep model corrects JMA short-term precipitation forecasts using IoT rain gauge observations,
+  lowering station MAE from about 0.6 to 0.3.
+abstract: The Japan Meteorological Agency (JMA) issues Short-Term Precipitation Forecast predicting rainfall
+  up to 1 to 6 hours ahead. While this forecast is generated at a 1km grid resolution, it suffers from
+  errors when compared to localized observations. This study aimed to achieve high-precision localized
+  precipitation prediction by constructing a deep learning model to forecast rainfall at target locations
+  equipped with IoT rain gauges. This model was trained to take as inputs the JMA’s Short-Term Precipitation
+  Forecast, Analyzed-Rainfall data, and past observations from the IoT rain gauge, and to output the IoT
+  rain gauge’s observed results. As a result, while the JMA’s forecast had a Mean Absolute Error (MAE)
+  of approximately 0.6, the MAE achieved by this research method was minimally around 0.3, enabling more
+  accurate predictions.
+significance: 2
 cited_by: 0
-score: 12
+score: 8
 highlight: false
 added: '2026-10-22'
 source: snowball

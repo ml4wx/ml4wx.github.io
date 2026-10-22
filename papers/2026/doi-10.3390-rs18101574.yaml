@@ -29,8 +29,25 @@ spatial:
 data:
 - radar
 status: research
-summary: A ViT-conditioned diffusion refinement module on a spatiotemporal radar predictor improves CSI,
-  HSS and POD on HKO-7, with a higher false alarm rate at 40 dBZ.
+summary: VSTPN pairs a spatiotemporal radar predictor with a ViT-conditioned diffusion refiner, improving
+  CSI and SSIM on HKO-7 over the tested baselines.
+abstract: Short-term precipitation forecasting is essential for disaster prevention, urban management,
+  and weather-sensitive decision making, yet radar-based nowcasting remains challenging because precipitation
+  systems evolve nonlinearly and high-frequency echo structures are easily over-smoothed by deterministic
+  sequence models. This paper proposes a ViT-modulated diffusion spatiotemporal prediction network (VSTPN)
+  that cascades a spatiotemporal prediction module with a ViT-conditioned diffusion refinement module.
+  The spatiotemporal module models the temporal evolution of radar echoes, whereas the ViT-Diffusion module
+  uses global contextual features as conditional guidance during iterative denoising to refine spatial
+  structures. Experiments on the HKO-7 benchmark show that VSTPN achieves lower MSE and higher SSIM than
+  the tested baselines and improves CSI, HSS, and POD at the evaluated reflectivity thresholds. At the
+  40 dBZ threshold, the model improves CSI, HSS, and POD, while its FAR is slightly higher than that of
+  ETCJ-PredNet, indicating a recall–false alarm trade-off for intense echoes. Additional post-hoc diagnostic
+  analyses of relative gains, metric consistency, threshold sensitivity, and component effect sizes further
+  support the stability of the reported improvements under the current experimental protocol. The results
+  suggest that coupling spatiotemporal sequence modeling with diffusion-based radar echo refinement is
+  a feasible direction for short-term precipitation forecasting; nevertheless, probabilistic uncertainty
+  evaluation, multi-domain validation, and additional generative-quality metrics remain important directions
+  for future work.
 significance: 3
 cited_by: 0
 score: 12

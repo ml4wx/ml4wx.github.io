@@ -16,13 +16,16 @@ links:
 topic: nowcasting
 type: model
 method:
-- rnn
 - transformer
+- rnn
+- cnn
+timescale:
+- nowcast
 data:
 - radar
 status: research
-summary: Adds self-attention and long-term memory to PredRNN with a weighted loss for extremes, reporting
-  top results on MovingMNIST, KTH and radar echo data.
+summary: Adds self-attention and long-term memory to PredRNN's ST-LSTM with a weighted loss for extremes,
+  evaluated on MovingMNIST, KTH and radar echo data.
 significance: 2
 cited_by: 5
 score: 8

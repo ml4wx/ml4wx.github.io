@@ -20,14 +20,30 @@ topics:
 type: model
 method:
 - gan-vae
-- cnn
 timescale:
 - nowcast
+spatial:
+- regional
 data:
 - radar
 status: research
-summary: ClusterCast, a self-clustering GAN, predicts radar frames for 2-hour precipitation nowcasts,
-  beating four benchmarks with 8.9% lower MSE on unseen data.
+summary: ClusterCast GAN clusters precipitation regimes in latent space to predict radar frames, outperforming
+  four benchmarks by 8.9% MSE at a 2-hour lead.
+abstract: This paper proposes a novel GAN framework with self-clustering approach for precipitation nowcasting
+  (ClusterCast). Previous studies have primarily captured the motion vector using only a single latent
+  space, making the models difficult to adapt to disparate space-time distribution of precipitation. Environmental
+  factors (e.g., regional characteristics and precipitation scale) have an impact on precipitation systems
+  and can cause non-stationary distribution. To tackle this problem, our key idea is to train a generator
+  network to predict future radar frames by learning a sub-network that automatically labels precipitation
+  types from a generative model. The training process consists of (i) clustering the hierarchical features
+  derived from the generator stem using a sub-network and (ii) predicting future radar frames according
+  to the self-supervised labels, enabling heterogeneous latent representation. Additionally, we attempt
+  an ensemble forecast that prescribes random perturbations to improve performance. With the flexibility
+  of representation learning, ClusterCast enables the model to learn precipitation distribution more accurately.
+  Results indicate that our method generates non-blurry future frames by preventing mode collapse, and
+  the proposed method demonstrates robustness across various precipitation scenarios. Extensive experiments
+  demonstrate that our method outperforms four benchmarks on a 2-h prediction basis with a mean squared
+  error (MSE) of 8.9% on unseen datasets.
 significance: 3
 cited_by: 14
 score: 12

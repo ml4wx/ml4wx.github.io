@@ -19,18 +19,45 @@ topic: observations-remote-sensing
 type: model
 method:
 - cnn
+timescale:
+- nowcast
 spatial:
 - regional
 data:
 - satellite
-- radar
 - stations
 status: pre-operational
-summary: Hydronn, a CNN Bayesian retrieval using GOES-16 visible and infrared channels, gives near-real-time
-  precipitation over Brazil close to passive microwave accuracy.
-significance: 4
+summary: A CNN-based Bayesian retrieval of hourly precipitation from GOES-16 VIS/IR for Brazil matches
+  IMERG and cuts hourly MAE by 22% in its advanced form.
+abstract: 'Abstract. Observations from geostationary satellites offer the unique ability to provide spatially
+  continuous coverage at continental scales with high spatial and temporal resolution. Because of this,
+  they are commonly used to complement ground-based measurements of precipitation, whose coverage is often
+  more limited. We present a novel, neural-network-based, near real-time precipitation retrieval for Brazil
+  based on visible and infrared (VIS/IR) observations from the Advanced Baseline Imager on the Geostationary
+  Operational Environmental Satellite 16. The retrieval, which employs a convolutional neural network
+  to perform Bayesian retrievals of precipitation, was developed with the aims of (1) leveraging the full
+  potential of latest-generation geostationary observations and (2) providing probabilistic precipitation
+  estimates with well-calibrated uncertainties. The retrieval is trained using co-locations with combined
+  radar and radiometer retrievals from the Global Precipitation Measurement (GPM) Core Observatory. Its
+  accuracy is assessed using one month of gauge measurements and compared to the precipitation retrieval
+  that is currently in operational use at the Brazilian Institute for Space Research as well as two state-of-the-art
+  global precipitation products: The Precipitation Estimation from Remotely Sensed Information using Artificial
+  Neural Networks Cloud Classification System and the Integrated Multi-Satellite Retrievals for GPM (IMERG).
+  Even in its most basic configuration, the accuracy of the proposed retrieval is similar to that of IMERG,
+  which merges retrievals from VIS/IR and microwave observations with gauge measurements. In its most
+  advanced configuration, the retrieval reduces the mean absolute error for hourly accumulations by 22
+  % compared the currently operational retrieval, by 50 % for the MSE and increases the correlation by
+  400 %. Compared to IMERG, the improvements correspond to 15 %, 15 % and 39 %, respectively. Furthermore,
+  we show that the probabilistic retrieval is well calibrated against gauge measurements when differences
+  in a priori distributions are accounted for. In addition to potential improvements in near real time
+  precipitation estimation over Brazil, our findings highlight the potential of specialized data driven
+  retrievals that are made possible through advances in geostationary sensor technology, the availability
+  of high-quality reference measurements from the GPM mission and modern machine learning techniques.
+  Furthermore, our results show the potential of probabilistic precipitation retrievals to better characterize
+  the observed precipitation and provide more trustworthy retrieval results.'
+significance: 3
 cited_by: 8
-score: 16
+score: 12
 highlight: false
 added: '2026-10-22'
 source: snowball

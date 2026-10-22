@@ -23,12 +23,25 @@ type: evaluation
 method:
 - other
 timescale:
-- short
+- medium
 spatial:
 - regional
+data:
+- era5
 status: research
-summary: Backpropagated sensitivities of an AI weather model for cyclone Xynthia at 36 h match adjoint
-  sensitivities of a dynamical model, suggesting physically meaningful learning.
+summary: Backpropagated sensitivities from an AI weather model at 36 h match adjoint sensitivities of
+  a dynamical model for cyclone Xynthia, suggesting physically meaningful learned links.
+abstract: Artificial Intelligence (AI) weather models are explored for initial condition sensitivity studies
+  to analyze the physicality of the relationships learned. Gradients (or sensitivities) of the target
+  metric of interest are computed with respect to the variable fields at initial time by means of the
+  backpropagation algorithm, which does not assume linear perturbation growth. Here, sensitivities from
+  an AI model at 36-h lead time were compared to those produced by an adjoint of a dynamical model for
+  an extreme weather event, cyclone Xynthia, presenting very similar structures and with the evolved perturbations
+  leading to similar impacts. This demonstrates the ability of the AI weather model to learn physically
+  meaningful spatio-temporal links between atmospheric processes. These findings should enable researchers
+  to conduct initial condition studies in minutes, potentially at lead times into the non-linear regime
+  (typically >5 days), with important applications in observing network design and the study of atmospheric
+  dynamics.
 significance: 4
 cited_by: 38
 score: 16

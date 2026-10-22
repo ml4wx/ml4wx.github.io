@@ -14,17 +14,31 @@ ids:
 links:
   paper: https://doi.org/10.1038/s41612-026-01472-y
   pdf: https://www.nature.com/articles/s41612-026-01472-y_reference.pdf
-topic: global-medium-range
+topic: regional-km-scale
 type: model
 method:
 - cnn
 timescale:
 - short
+spatial:
+- regional
 data:
 - other
 status: research
-summary: Wavelet-Fourier composite loss for U-Net precipitation forecasts cuts LPIPS from 0.196 to 0.108
-  versus MSE and improves local phase coherence by about 51%.
+summary: Wavelet-Fourier composite loss sharpens U-Net precipitation fields, cutting LPIPS from 0.198
+  to 0.107 versus MSE and improving local phase coherence by about 21%.
+abstract: Abstract Precipitation prediction is critical for water-related hazard preparedness, and deep
+  learning has shown strong potential. However, conventional mean squared error (MSE) training oversmooths
+  high-frequency variability, producing blurred precipitation fields. Although frequency-domain losses
+  such as Fourier Amplitude and Correlation Loss (FACL) enhance global spectral consistency, they lack
+  constraints on local phase coherence. To address this, we develop the Wavelet-Fourier Composite Loss
+  (WFCL), integrating Wavelet Amplitude and Correlation Loss (WACL) based on the Dual-Tree Complex Wavelet
+  Transform with FACL to jointly enforce global spectral alignment and localized phase coherence. Experiments
+  with a U-Net show WFCL consistently outperforms MSE and FACL, maintaining stable performance across
+  1–3 day lead times (2018–2023). It reduces lead-time-averaged Learned Perceptual Image Patch Similarity
+  from 0.1980 to 0.1067 relative to MSE and improves Local Phase Coherence by about 21%. In addition,
+  for 1-day prediction, WFCL reduces Regional Histogram Distance by approximately 24% locally and 52%
+  globally compared with FACL.
 significance: 3
 cited_by: 2
 score: 12

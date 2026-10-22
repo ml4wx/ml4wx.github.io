@@ -26,7 +26,8 @@ links:
 topic: probabilistic-ensembles
 topics:
 - applications-impacts
-type: application
+- extremes-hazards
+type: model
 method:
 - neural-operator
 timescale:
@@ -35,12 +36,35 @@ spatial:
 - regional
 data:
 - era5
-status: research
-summary: PrecipHENS uses an SFNO-based model to generate over 1000 synthetic European winter seasons for
-  Elbe flood risk, producing more extreme precipitation diversity than a standard benchmark.
-significance: 4
+status: pre-operational
+summary: PrecipHENS uses SFNO and AFNO models to generate over 1000 synthetic European winter seasons
+  at 0.25°, covering more storm structures than a conditional extreme value benchmark for flood risk.
+abstract: Abstract. A key challenge in risk analysis is to identify hazard events that are plausible and
+  yet extrapolate beyond historical observations with appropriate frequency. For flood risk management,
+  this can be done with large ensembles of synthetic, physically plausible weather scenarios that extend
+  beyond the historical record to sample low-likelihood, high-impact events. Traditional statistical approaches
+  for synthetic weather generation are often limited in variability and physical realism. Here, we show
+  for the first time that a machine learning weather prognostic model, combined with a diagnostic precipitation
+  model, can generate seasonal-scale ensembles suitable for flood risk assessment. Specifically, we adapt
+  the huge ensembles (HENS) approach using a Spherical Fourier Neural Operator (SFNO)-based model combined
+  with an Adaptive Fourier Neural Operator (AFNO)-based diagnostic precipitation model, using Nvidia Earth-2
+  stack, in a framework which we call “PrecipHENS”, to produce > 1000 synthetic European winter seasons
+  of precipitation and temperature at 0.25° resolution in 112 GPU hours on NVIDIA L40s GPUs. In an Elbe
+  River case study, PrecipHENS reproduces key features of the precipitation and temperature climatology,
+  preserves spatial and temporal dependence – including decay of extremal co‑occurrence with distance
+  – and generates a wider diversity of extreme events than an industry-standard conditional multivariate
+  extreme value model benchmark. Principal component analysis of extreme precipitation fields shows that
+  PrecipHENS spans a much broader space of storm structures (≈ 81 % of 1 × 1 grid cells) than the benchmark
+  (≈ 50 %) or the historical record (≈ 19 %), indicating plausible novelty rather than repetition of past
+  patterns. Coupled with a hydrological model, the AI-generated weather sequences produce river flow simulations
+  consistent with historical climatology and extreme discharge patterns. These results demonstrate the
+  potential of AI-based weather models to support event set generation for flood hazard and risk applications.
+  Beyond flood risk, such AI-based large-ensemble weather generation offers a general framework for applications
+  that benefit from expanding the physically plausible sample space, including risk assessment, climate-impact
+  analysis, storyline development and statistical characterisation of extremes.
+significance: 5
 cited_by: 0
-score: 16
+score: 20
 highlight: false
 added: '2026-10-22'
 source: snowball

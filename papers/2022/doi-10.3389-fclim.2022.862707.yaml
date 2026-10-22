@@ -19,21 +19,30 @@ links:
   paper: https://doi.org/10.3389/fclim.2022.862707
   pdf: https://www.frontiersin.org/articles/10.3389/fclim.2022.862707/pdf
 topic: s2s-seasonal
-topics:
-- post-processing
 type: model
 method:
 - classical-ml
 timescale:
 - s2s
 spatial:
-- regional
+- local
 data:
+- cmip
 - nwp-analysis
-- stations
 status: research
-summary: Hybrid system feeds SINTEX-F2 SST forecasts into nine machine learning models, improving Kanto
-  land air temperature forecasts at 2-month lead over persistence and the dynamical model.
+summary: Combines SINTEX-F2 SST forecasts with nine machine learning models to predict Kanto surface air
+  temperature two months ahead, outperforming persistence and the dynamical forecast.
+abstract: A new type of hybrid prediction system (HPS) of the land surface air temperature (SAT) is described
+  and its skill evaluated for one particular application. This approach utilizes sea-surface temperatures
+  (SST) forecast by a dynamical prediction system, SINTEX-F2, to provide predictors of the SAT to a statistical
+  modeling system consisting of a set of nine different machine learning algorithms. The statistical component
+  is aimed to restore teleconnections between SST and SAT, particularly in the mid-latitudes, which are
+  generally not captured well in the dynamical prediction system. The HPS is used to predict the SAT in
+  the central region of Japan around Tokyo (Kantō) as a case study. Results show that at 2-month lead
+  the hybrid model outperforms both persistence and the SINTEX-F2 prediction of SAT. This is also true
+  when prediction skill is assessed for each calendar month separately. Despite the model's strong performance,
+  there are also some limitations. The limited sample size makes it more difficult to calibrate the statistical
+  model and to reliably evaluate its skill.
 significance: 3
 cited_by: 19
 score: 12

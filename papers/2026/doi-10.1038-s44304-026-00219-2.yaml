@@ -25,15 +25,33 @@ topics:
 - regional-km-scale
 type: model
 timescale:
-- short
+- medium
 spatial:
 - regional
 data:
-- nwp-analysis
+- era5
 - other
-status: pre-operational
-summary: HITS is a regional AI typhoon framework constrained by AIFS, reducing 120 h intensity errors
-  by up to 48.3% relative to AIFS.
+status: research
+summary: HITS is a regional AI typhoon model constrained by AIFS that cuts 120 h intensity errors by up
+  to 48.3% versus AIFS, using a new 9 km typhoon reanalysis.
+abstract: Accurate prediction of tropical cyclones remains a major challenge for both numerical weather
+  prediction and emerging artificial intelligence weather prediction (AIWP) systems. While recent global
+  AI models have demonstrated strong skill in predicting large-scale circulation and tropical cyclone
+  tracks, they often struggle to represent the mesoscale structures critical for tropical cyclone intensity
+  and extreme precipitation. Here we develop the Hybrid Intelligent Typhoon System (HITS), a regional
+  AI forecasting framework for 0–120 h typhoon prediction over the Asia–Pacific region, trained on a newly
+  constructed 9 km high-resolution typhoon reanalysis dataset. The model combines regional autoregressive
+  prediction with large-scale constraints from the state-of-the-art ECMWF Artificial Intelligence Forecasting
+  System (AIFS), allowing it to remain consistent with the evolving large-scale circulation while resolving
+  mesoscale structures. HITS is further extended with a structure-aware perceptual training strategy based
+  on Learned Perceptual Image Patch Similarity (LPIPS), referred to as HITS-LPIPS, which improves the
+  representation of convective and typhoon rainband structures. Experiments show that the hybrid framework
+  substantially improves precipitation structure and typhoon intensity forecasts compared with both purely
+  autoregressive regional AI models and standalone AI downscaling approaches. In particular, HITS-LPIPS
+  reduces intensity errors by up to 48.3% relative to AIFS at a 120 h lead time and produces a near-unbiased
+  wind–pressure relationship for simulated typhoons. These results demonstrate that regional AI systems
+  combining large-scale circulation constraints with high-resolution initial conditions provide a promising
+  pathway for improving natural hazard prediction for typhoons.
 significance: 5
 cited_by: 3
 score: 20

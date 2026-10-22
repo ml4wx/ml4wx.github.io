@@ -19,19 +19,34 @@ links:
 topic: extremes-hazards
 topics:
 - regional-km-scale
+- global-medium-range
 type: model
 method:
 - transformer
 timescale:
-- short
+- medium
 spatial:
 - regional
 data:
-- nwp-analysis
 - era5
+- nwp-analysis
 status: research
-summary: WRF initialized from Pangu-Weather with dynamic vortex initialization improves typhoon intensity
-  forecasts over Pangu alone and matches physics-driven global-model-driven WRF.
+summary: Driving WRF with Pangu-Weather plus dynamic vortex initialization cuts typhoon intensity RMSE
+  by 87% and 63% for two typhoons versus Pangu alone.
+abstract: Abstract Recent advancements in artificial intelligence (AI) have notably enhanced global weather
+  forecasting, yet accurately predicting typhoon intensity remains challenging. This is largely due to
+  constraints inherent in regression algorithm properties and inability of coarse resolution to capture
+  the finer-scale weather processes. To address these insufficient in typhoon intensity forecasting, we
+  propose an attractive approach by initiating regional Weather Research and Forecasting (WRF) model with
+  Pangu-weather, a state-of-the-art AI weather forecasting system (AI-Driven WRF), whose forecasting power
+  can be further augmented by the implementation of dynamic vortex initialization. The results revealed
+  a significant gap in Pangu-weather's ability to predict typhoon intensity, while the AI-Driven WRF model,
+  on the other hand, exhibited a remarkable improvement over Pangu-weather with dramatic reductions in
+  the Root Mean Square Errors (RMSEs) for Typhoons Doksuri and Hato, demonstrating 87% and 63% improvements
+  in forecast accuracy, respectively. The AI-Driven WRF model also showed potential advancements over
+  traditional global numerical model-driven WRF models, performing more accurately typhoon intensity and
+  wind details. Our analysis underscores the potential of AI weather forecasting models as a viable alternative
+  for driving regional models, suggesting a promising avenue for future research in meteorology.
 significance: 4
 cited_by: 60
 score: 16

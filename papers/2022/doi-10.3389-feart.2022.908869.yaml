@@ -18,18 +18,38 @@ links:
   paper: https://doi.org/10.3389/feart.2022.908869
   pdf: https://www.frontiersin.org/articles/10.3389/feart.2022.908869/pdf
 topic: observations-remote-sensing
+topics:
+- nowcasting
 type: model
 method:
 - cnn
-- transformer
 spatial:
 - regional
 data:
 - radar
 - stations
 status: research
-summary: A multi-scale self-attention network fuses radar reflectivity with meteorological and geographic
-  covariates, cutting precipitation RMSE 43.7% versus BPNN.
+summary: Multi-scale self-attention CNN fuses radar reflectivity with meteorological and geographic covariates
+  for quantitative precipitation estimation, cutting RMSE 83.8% versus the Z-R relation.
+abstract: Heavy precipitation tends to cause mountain torrents, urban waterlogging and other disasters.
+  It poses a serious threat to people’s life and property safety. Therefore, real-time quantitative precipitation
+  estimation is especially important to keep track of precipitation changes and reduce negative impacts.
+  However, high-resolution and high-accuracy quantitative precipitation estimation is a challenging task
+  due to the complex spatial and temporal variability of microphysics in precipitation processes. Previous
+  studies have focused only on small-scale radar reflectivity factors above rain gauges and did not pay
+  enough attention to the contribution of covariates to model performance. Meteorological and geographical
+  factors play an important role in rain process, so these factors are taken into account during our research.
+  In this study, a quantitative precipitation estimation model that can employ multi-scale radar reflectivity
+  factors and fuse meteorological and geographical factors is proposed to further improve precipitation
+  accuracy. In addition, we propose the muti-scale self-attention (MS-SA) module that can further utilize
+  information at multiple spatial scales to improve the accurate precipitation estimation. The proposed
+  model reduced the root mean square error of precipitation estimation by 83.8% compared to the conventional
+  Z-R relationship that correlates the rainfall and radar reflectivity factors, i . e . , Z = a R b ,
+  and by 43.7, 24.6, and 22.7% compared to the back propagation neural network (BPNN), convolutional neural
+  network (CNN), and convolutional neural network with the addition of meteorological factors and geographical
+  factors as covariates in the proposed model, respectively. Therefore, we can conclude that multi-scale
+  radar reflectivity factors fused with meteorological and geographical factors can produce more accurate
+  precipitation estimation.
 significance: 3
 cited_by: 3
 score: 12

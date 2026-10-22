@@ -15,17 +15,37 @@ links:
   paper: https://doi.org/10.5194/gmd-18-8175-2025
   pdf: https://doi.org/10.5194/gmd-18-8175-2025
 topic: hybrid-parameterization
+topics:
+- infra-software
 type: model
 method:
 - differentiable
-- physics-constrained
 spatial:
 - global
 data:
 - other
 status: research
-summary: HOPE is an automatically differentiable high-order finite-volume shallow-water dynamical core
-  on the cubed sphere, built in PyTorch for GPU use.
+summary: Presents HOPE, an automatically differentiable high-order finite-volume shallow-water core on
+  the cubed sphere, designed for coupling with neural parameterizations, with GPU speedup.
+abstract: 'Abstract. This study presents the High Order Prediction Environment (HOPE), an automatically
+  differentiable, non-oscillatory finite-volume dynamical core for shallow water equations on the cubed-sphere
+  grid. HOPE integrates four key features: (1) arbitrary high-order accuracy through genuine two-dimensional
+  reconstruction schemes; (2) essential non-oscillation via adaptive polynomial order reduction in discontinuous
+  regions; (3) exact mass conservation inherited from finite-volume discretization; (4) automatically
+  differentiable and (5) GPU-native scalability through PyTorch-based implementation. Another innovation
+  is the intensive panel boundary treatment, which eliminates numerical instability during using high
+  order reconstruction scheme, meanwhile, simplifies the interpolation process to a matrix-vector multiplication
+  without losing accuracy. Numerical experiments demonstrates the capabilities of HOPE: The 11th-order
+  scheme reduces errors to near double-precision round-off levels in steady-state geostrophic flow tests
+  on coarse 1°×1° grids. Maintenance of Rossby-Haurwitz waves over 100 simulation days without crashing.
+  A cylindrical dam-break test case confirms the genuinely two-dimensional WENO scheme exhibits significantly
+  better isotropy compared to dimension-by-dimension approaches. Two implementations are developed: a
+  Fortran version for convergence analysis and a PyTorch version leveraging automatic differentiation
+  and GPU acceleration. The PyTorch implementation maps reconstruction and quadrature operation to 2D
+  convolution and Einstein summation respectively, achieving about 2× speedup on single NVIDIA RTX3090
+  GPU versus Dual Intel E5-2699v4 CPUs execution. This design enables seamless coupling with neural network
+  parameterizations, positioning HOPE as a foundational tool for next-generation differentiable atmosphere
+  models.'
 significance: 3
 cited_by: 3
 score: 12

@@ -21,6 +21,7 @@ topic: nowcasting
 type: model
 method:
 - cnn
+- gan-vae
 timescale:
 - nowcast
 spatial:
@@ -28,11 +29,24 @@ spatial:
 data:
 - radar
 status: research
-summary: AutoNowP uses convolutional autoencoders on radar reflectivity to classify whether precipitation
-  will exceed thresholds, outperforming other binary classifiers on detection metrics.
-significance: 2
+summary: AutoNowP uses convolutional autoencoders on radar reflectivity to classify precipitation above
+  or below thresholds, outperforming standard binary classifiers on detection metrics.
+abstract: Short-term quantitative precipitation forecast is a challenging topic in meteorology, as the
+  number of severe meteorological phenomena is increasing in most regions of the world. Weather radar
+  data is of utmost importance to meteorologists for issuing short-term weather forecast and warnings
+  of severe weather phenomena. We are proposing AutoNowP, a binary classification model intended for precipitation
+  nowcasting based on weather radar reflectivity prediction. Specifically, AutoNowP uses two convolutional
+  autoencoders, being trained on radar data collected on both stratiform and convective weather conditions
+  for learning to predict whether the radar reflectivity values will be above or below a certain threshold.
+  AutoNowP is intended to be a proof of concept that autoencoders are useful in distinguishing between
+  convective and stratiform precipitation. Real radar data provided by the Romanian National Meteorological
+  Administration and the Norwegian Meteorological Institute is used for evaluating the effectiveness of
+  AutoNowP. Results showed that AutoNowP surpassed other binary classifiers used in the supervised learning
+  literature in terms of probability of detection and negative predictive value, highlighting its predictive
+  performance.
+significance: 3
 cited_by: 9
-score: 8
+score: 12
 highlight: false
 added: '2026-10-22'
 source: snowball

@@ -21,6 +21,8 @@ links:
   paper: https://doi.org/10.3390/w13202884
   pdf: https://www.mdpi.com/2073-4441/13/20/2884/pdf?version=1634284663
 topic: extremes-hazards
+topics:
+- local-forecasting
 type: model
 method:
 - classical-ml
@@ -31,11 +33,23 @@ spatial:
 data:
 - era5
 status: research
-summary: Optimizes an SVM predictor set and domain for extreme Meiyu rainfall in southern Taiwan from
-  CFSR predictors, giving 16–64 h lead-time skill with F1 above 0.6.
-significance: 3
+summary: Optimizes an SVM for extreme Meiyu rainfall over southern Taiwan, reaching F1 scores above 0.6
+  at 16 to 64 h lead times through predictor and domain selection.
+abstract: This study aims to propose a strategy to optimize the performance of the Support Vector Machine
+  (SVM) scheme for extreme Meiyu rainfall prediction over southern Taiwan. Variables derived from Climate
+  Forecast System Reanalysis (CFSR) dataset are the candidates for predictor selection. A series of experiments
+  with different combinations of predictors and domains are designed to obtain the optimal strategy for
+  constructing the SVM scheme. The results reveal that the accuracy (ACC), positive predictive values
+  (PPV), probability of detection (POD), and F1-score can exceed 0.6 on average. Choosing the predictors
+  associated with the Meiyu system and determine the domain associated with the correlations between selected
+  predictors and predictand can improve the forecast performance. Our strategy shows the potential to
+  predict extreme Meiyu rainfall in southern Taiwan with lead times from 16 h to 64 h. The F1-score analysis
+  further demonstrates that the forecast performance of our scheme is stable, with slight inter-annual
+  fluctuations from 1990 to 2019. Higher performance would be expected when the north of the South China
+  Sea is characterized by stronger southwesterly flow and abundant low-level moisture for a given year.
+significance: 2
 cited_by: 4
-score: 12
+score: 8
 highlight: false
 added: '2026-10-22'
 source: snowball

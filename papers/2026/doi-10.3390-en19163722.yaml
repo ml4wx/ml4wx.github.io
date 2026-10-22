@@ -27,8 +27,23 @@ data:
 - era5
 - stations
 status: research
-summary: Physics-constrained CNN downscales ERA5 winds from 0.25° to 0.025° over Brazil, cutting MAE from
-  1.22 to 1.04 m/s against 190 stations.
+summary: Self-supervised physics-constrained CNN downscales ERA5 winds from 0.25° to 0.025° over Brazil,
+  cutting station MAE from 1.22 to 1.04 m/s.
+abstract: 'High-resolution wind resource maps are essential for wind farm siting and renewable-energy
+  planning, but national-scale assessment is often limited by sparse meteorological stations and the coarse
+  resolution of reanalysis products. This study introduces a self-supervised Physics-Constrained Super-Resolution
+  CNN (PC-SRCNN) that enhances ERA5 wind fields from 0.25° to 0.025°, for settings lacking a high-resolution,
+  hourly-resolved reference wind field, by embedding kinematic and vertical-profile consistency as soft
+  regularization penalties, without solving the full Navier-Stokes momentum balance. The framework was
+  evaluated against 190 independent INMET stations, alongside interpolation, data-driven, and climatological
+  baselines, using a station-wise bootstrap and the Diebold-Mariano test. The full model reduced the bootstrap
+  MAE from 1.22 to 1.04 m/s relative to native ERA5, a 14.85% improvement confirmed by both tests, and
+  achieved a vertical-profile R2 of 0.90 against baselines below 0.70. Ablation shows physical regularization
+  is not automatically beneficial: a variant constrained only by horizontal kinematics performed significantly
+  worse than ERA5, with gains obtained only when vertical logarithmic-profile consistency was included.
+  All other baselines evaluated were statistically indistinguishable from native ERA5 against station
+  observations. These results indicate that sharper spatial detail alone is insufficient to improve wind-resource
+  estimates unless supported by physically meaningful, vertically consistent constraints.'
 significance: 3
 cited_by: 0
 score: 12

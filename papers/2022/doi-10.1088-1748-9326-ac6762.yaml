@@ -25,13 +25,28 @@ topics:
 - climate-analysis-attribution
 type: model
 method:
-- classical-ml
 - physics-constrained
+- classical-ml
 data:
 - other
+- cmip
 status: research
-summary: Nonparametric regression with a dependence-based regulariser enforces physical consistency in
-  Earth and climate data, with a closed-form solution and a consistency-accuracy trade-off diagram.
+summary: Introduces a nonparametric regression with a dependence-based regulariser that enforces physical
+  consistency in Earth data models, with a consistency-versus-accuracy trade-off diagram.
+abstract: Abstract Process understanding and modeling is at the core of scientific reasoning. Principled
+  parametric and mechanistic modeling dominated science and engineering until the recent emergence of
+  machine learning (ML). Despite great success in many areas, ML algorithms in the Earth and climate sciences,
+  and more broadly in physical sciences, are not explicitly designed to be physically-consistent and may,
+  therefore, violate the most basic laws of physics. In this work, motivated by the field of algorithmic
+  fairness, we reconcile data-driven ML with physics modeling by illustrating a nonparametric and nonlinear
+  physics-aware regression method. By incorporating a dependence-based regularizer, the method leads to
+  models that are consistent with domain knowledge, as reflected by either simulations from physical models
+  or ancillary data. The idea can conversely encourage independence of model predictions with other variables
+  that are known to be uncertain either in their representation or magnitude. The method is computationally
+  efficient and comes with a closed-form analytic solution. Through a consistency-vs-accuracy path diagram,
+  one can assess the consistency between data-driven models and physical models. We demonstrate in three
+  examples on simulations and measurement data in Earth and climate studies that the proposed ML framework
+  allows us to trade-off physical consistency and accuracy.
 significance: 3
 cited_by: 15
 score: 12

@@ -17,7 +17,7 @@ links:
   pdf: https://doi.org/10.3389/feart.2025.1580945
 topic: nowcasting
 topics:
-- regional-km-scale
+- applications-impacts
 type: model
 method:
 - cnn
@@ -28,11 +28,22 @@ timescale:
 spatial:
 - regional
 data:
-- nwp-analysis
 - other
 status: research
-summary: Adds self-attention to ConvLSTM and UNet for 4-hour, 9 km wind speed forecasts over Beijing-Tianjin-Hebei;
-  UNet-SA-style hybrids improve accuracy, with Conv-SA gaining over 60% versus ConvLSTM.
+summary: A self-attention UNet hybrid predicts 4-hour hourly wind speed at 9 km over Beijing-Tianjin-Hebei,
+  improving over ConvLSTM by more than 60% in the authors' comparison.
+abstract: This study develops a spatio-temporal forecasting model for predicting wind speeds across the
+  Beijing-Tianjin-Hebei region over a 4-h horizon. The model, built using advanced deep learning techniques,
+  operates with a temporal resolution of 1 hour and a spatial resolution of 9 km. The experiments were
+  first trained based on ConvLSTM and UNet, and improved by introducing the Self-Attention (SA) mechanism
+  module to construct two hybrid deep learning models, Conv-SA as well as UNet-SA, respectively. The results
+  show that the spatio-temporal predictions of the UNet model are significantly better than ConvLSTM,
+  and the TS scores show that for the prediction of high wind, the enhancement is more than 50% for the
+  next 4 hours. The addition of the SA module significantly improves the model prediction accuracy, and
+  Conv-SA improves significantly, compared to ConvLSTM by more than 60%. The models were more accurate
+  in predicting wind speeds in the region of the terrestrial than the oceanic subsurface. In addition,
+  the model produces more accurate wind speed predictions for coastal as well as plateau regions. This
+  study provides a new research idea for the proximity prediction of wind speed.
 significance: 2
 cited_by: 5
 score: 8

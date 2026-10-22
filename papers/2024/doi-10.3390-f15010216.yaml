@@ -17,17 +17,32 @@ links:
   paper: https://doi.org/10.3390/f15010216
   pdf: https://www.mdpi.com/1999-4907/15/1/216/pdf?version=1705889838
 topic: extremes-hazards
+topics:
+- climate-analysis-attribution
 type: model
 method:
-- cnn
 - rnn
+- cnn
 spatial:
 - global
 data:
+- era5
 - other
 status: research
-summary: Proposes SLA-ConvLSTM, a ConvLSTM that separates static location features from dynamic variables
-  and adds teleconnection indices for global wildfire danger prediction.
+summary: Proposes SLA-ConvLSTM, a ConvLSTM that adds static location information and teleconnection indices
+  for global wildfire danger prediction, outperforming baseline deep models.
+abstract: Climate change will intensify the danger of wildfires, significantly impacting human life. Deep
+  Learning (DL) has been extensively applied in wildfire prediction research. In the realm of wildfire
+  prediction, previous deep learning methods have overlooked the inherent differences between static positional
+  information and dynamic variables. Additionally, most existing deep learning models have not integrated
+  the global system characteristics of the Earth’s features and teleconnection during the learning phase.
+  Here, we propose a static location-aware ConvLSTM (SLA-ConvLSTM) model that is aware of static positional
+  elements and interconnected with global information and teleconnection. The model we propose can discern
+  the influence of dynamic variables across various geographical locations on predictive outcomes. Compared
+  with other deep learning models, our SLA-ConvLSTM model has achieved commendable performance. The outcomes
+  indicate that the collaborative interplay of spatiotemporal features and the extraction of static positional
+  information present a promising technique for wildfire prediction. Moreover, the incorporation of climate
+  indices and global feature variables enhances the predictive capability of the model in wildfire prediction.
 significance: 3
 cited_by: 22
 score: 12

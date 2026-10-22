@@ -17,10 +17,9 @@ ids:
 links:
   paper: https://doi.org/10.1029/2025jd045366
   pdf: https://doi.org/10.1029/2025jd045366
-topic: s2s-seasonal
+topic: post-processing
 topics:
-- post-processing
-- downscaling
+- s2s-seasonal
 type: model
 method:
 - transformer
@@ -32,11 +31,25 @@ spatial:
 data:
 - nwp-analysis
 status: research
-summary: A Swin Transformer-U-Net hybrid corrects ECMWF S2S wind forecasts over China's coastal waters,
-  cutting RMSE by 13–17% and improving extreme-wind skill.
-significance: 4
+summary: TDSwin-UnetSS Swin-UNet hybrid corrects ECMWF S2S China coastal wind forecasts, cutting RMSE
+  by 13–17% and bias by 80–90% at 3–6 week leads.
+abstract: 'Abstract Reliable subseasonal maritime wind forecasts are essential for navigation safety and
+  disaster prevention, yet current forecasting systems show noticeable biases over China''s coastal waters.
+  Here, we introduce TDSwin‐UnetSS (Time‐embedded Downscaling Swin‐Transformer U‐Net for SubSeasonal forecasting),
+  an asymmetric hybrid model that integrates the Swin Transformer with a U‐Net architecture. The model
+  incorporates: (a) Weibull distribution constraints to preserve the wind‐speed probability density, (b)
+  spatial downscaling from 1.5 to 0.25 resolution, (c) time embedding for simultaneous 3–6 week lead‐time
+  corrections, and (d) spatially adaptive learning focused on extreme wind‐prone regions. Applied to ECMWF
+  S2S forecasts, TDSwin‐UnetSS reduces root mean squared error (RMSE) by 13.41%–16.67%, mean absolute
+  error (MAE) by 10.69%–13.67%, and the absolute value of the bias by 80.00%–90.00%, while increasing
+  anomaly correlation coefficient (ACC) by 18.18%–76.19% and structural similarity index measure (SSIM)
+  by 5.71%–10.77% across different lead times, with RMSE reductions exceeding 19.76% during extreme wind
+  events. This study demonstrates the application of the Swin Transformer to subseasonal wind bias correction,
+  highlighting its potential for extended‐range forecasting through effective multi‐scale feature learning
+  and physics‐informed hybrid modeling.'
+significance: 3
 cited_by: 0
-score: 16
+score: 12
 highlight: false
 added: '2026-10-22'
 source: snowball

@@ -16,24 +16,47 @@ links:
   paper: https://doi.org/10.3390/rs17020191
   pdf: https://doi.org/10.3390/rs17020191
 topic: global-medium-range
+topics:
+- benchmarks-data-eval
 type: evaluation
-method:
-- transformer
 timescale:
 - short
 - medium
 spatial:
 - regional
-- local
 data:
 - stations
 - nwp-analysis
 status: research
-summary: Validation against over 2000 Chinese stations finds Pangu beats ECMWF-HRES and GFS for temperature,
-  while FuXi and FengWu show higher accuracy than Pangu.
-significance: 3
+summary: Evaluates the Pangu-Weather AI model against ECMWF-HRES, GFS, FuXi and FengWu using over 2000
+  Chinese stations, finding Pangu beats NWP for temperature.
+abstract: Pangu is an AI-based model designed for rapid and accurate numerical weather forecasting. To
+  evaluate Pangu’s short- to medium-term weather forecasting skill over various meteorological parameters,
+  this paper validated its performance in predicting temperature, wind speed, wind direction, and barometric
+  pressure using data from over 2000 weather stations in China. Pangu’s performance was compared with
+  ECMWF-HRES and GFS to assess its effectiveness relative to traditional high-precision NWP models under
+  real meteorological conditions. Furthermore, the more recent FuXi and FengWu models were included in
+  the analysis to further validate Pangu’s forecasting skill. The study examined Pangu’s forecast performance
+  from spatial perspectives, evaluated the dispersion of forecast deviations, and analyzed its performance
+  at different lead times and with various initial fields. The iteration precision of Pangu’s four forecast
+  models with lead times of 1 h, 3 h, 6 h, and 24 h was also assessed. Finally, a case study on typhoon
+  track forecasting was conducted to evaluate Pangu’s performance in predicting typhoon paths. The results
+  indicate that Pangu surpasses traditional NWP systems in temperature forecasting, while its performance
+  in predicting wind direction, wind speed and pressure is comparable to them. Additionally, the forecast
+  skill of Pangu diminishes as the lead time extends, but it tends to surpass traditional NWP systems
+  with longer lead times. Moreover, FuXi and FengWu demonstrate even higher accuracy compared to Pangu.
+  Pangu’s performance is also dependent on initial fields, and the temperature forecasting of Pangu is
+  more sensitive to the initial field compared with other meteorological parameters. Furthermore, the
+  iteration precision of Pangu’s 1 h forecast model is significantly lower than that of the other models,
+  but this discrepancy in precision may not be prominently reflected in Pangu’s actual forecasting process
+  due to the greedy algorithm employed. In the case study on typhoon forecasting, Pangu, along with FuXi
+  and FengWu, demonstrates comparable performance in predicting Bebinca’s track compared to ECMWF and
+  outperforms GFS in its track predictions. This study demonstrated Pangu’s applicability in short- to
+  medium-term forecasting of meteorological parameters, showcasing the significant potential of AI-based
+  numerical weather models in enhancing forecast performance.
+significance: 4
 cited_by: 9
-score: 12
+score: 16
 highlight: false
 added: '2026-10-22'
 source: snowball

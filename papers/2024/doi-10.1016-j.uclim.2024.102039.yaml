@@ -14,21 +14,35 @@ ids:
 links:
   paper: https://doi.org/10.1016/j.uclim.2024.102039
   pdf: https://doi.org/10.1016/j.uclim.2024.102039
-topic: hybrid-parameterization
+topic: downscaling
 topics:
-- climate-analysis-attribution
-type: model
+- local-forecasting
+type: application
+method:
+- cnn
 spatial:
 - local
-- regional
 data:
-- other
+- era5
 status: research
-summary: Deep learning approach to better represent urban climate in the Paris region, targeting urban
-  heat island and temperature extremes; abstract unavailable, classification based on title.
-significance: 3
+summary: CNNs using ERA5 predictors simulate Paris land surface and 2 m temperatures and urban heat island
+  better than ERA5 itself over 2004–2022.
+abstract: As cities encompass most of the global population, it is crucial to understand the effects of
+  climate change in an urban context to develop tailored adaptation and mitigation strategies. Physically-based
+  models, computationally demanding, present scale limitations that hinder the representation of cities
+  and their effects on the climate and vice-versa. Therefore, alternative methodologies are sought. Deep
+  Learning (DL) is a growing technology that has become a universal presence in society and the scientific
+  community, geosciences included, showing promising results. In this study, we applied DL models (Convolutional
+  Neural Networks) to simulate land surface temperature (LST) and 2-meter maximum and minimum temperatures
+  (T2max and T2min, respectively) over Paris between 2004 and 2022, and compared the results with ERA5,
+  the most recent ECMWF atmospheric reanalysis. Several experiments featuring different sets of ERA5 predictors
+  were used as input data to the DL models. Afterwards, the quality of the DL models in simulating the
+  urban heat island (UHI) over Paris was assessed. Our results showed substantial improvements in LST,
+  T2m and UHI simulation with DL (using a small number of predictors) in comparison to ERA5. This study
+  supports the potential of DL to help improve the simulation of temperature extremes in an urban context.
+significance: 2
 cited_by: 24
-score: 12
+score: 8
 highlight: false
 added: '2026-10-22'
 source: snowball

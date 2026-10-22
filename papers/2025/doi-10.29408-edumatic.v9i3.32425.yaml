@@ -14,7 +14,7 @@ links:
   pdf: https://e-journal.hamzanwadi.ac.id/index.php/edumatic/article/download/32425/7644
 topic: local-forecasting
 topics:
-- applications-impacts
+- infra-software
 type: application
 method:
 - rnn
@@ -24,12 +24,25 @@ spatial:
 - local
 data:
 - stations
-status: research
-summary: An ESP32 IoT station with an LSTM rainfall model gives microspatial rainfall predictions for
-  farmers, reporting RMSE 17.05 mm and MAE 12.40 mm.
-significance: 2
+status: pre-operational
+summary: An ESP32 IoT station system with an LSTM rainfall model gives microspatial rainfall predictions
+  with RMSE of 17.05 mm for farmers in Indonesia.
+abstract: The inaccuracy of non-real-time macro-regional weather forecasts creates an information gap
+  for MSME actors in the agricultural sector who need updates on actual weather conditions at their business
+  locations. This study aims to develop a real-time weather monitoring system based on ESP32 and an LSTM
+  rainfall prediction model, the results of which can be accessed via a web interface by MSME actors such
+  as farmers. The system was developed using an ESP32 microcontroller, DHT22 sensor, and Hall-effect 3144,
+  with an LSTM model trained using historical BMKG data and field data. Our findings show that the system
+  is capable of monitoring weather conditions in real time while generating microspatial rainfall predictions
+  through full integration between IoT devices and the LSTM model. Test results show stable system performance
+  with a transmission delay of 5 seconds, an initial fetch latency of 48 ms, and prediction performance
+  RMSE of 17.05 mm, MAE of 12.40 mm, and F1-score of 0.175, which is adequate for detecting extreme rainfall
+  intensity. These findings demonstrate the potential for developing an affordable, easily replicable,
+  and adaptable microspatial weather forecasting system to support early warning systems or smart irrigation
+  in agricultural areas.
+significance: 1
 cited_by: 2
-score: 8
+score: 4
 highlight: false
 added: '2026-10-22'
 source: snowball

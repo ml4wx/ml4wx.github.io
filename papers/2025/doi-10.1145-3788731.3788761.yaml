@@ -14,7 +14,12 @@ links:
   paper: https://doi.org/10.1145/3788731.3788761
   pdf: https://doi.org/10.1145/3788731.3788761
 topic: global-medium-range
+topics:
+- nowcasting
 type: review
+method:
+- transformer
+- gnn
 timescale:
 - nowcast
 - short
@@ -22,12 +27,25 @@ timescale:
 - s2s
 spatial:
 - global
+data:
+- era5
 status: research
-summary: Reviews and compares mainstream large AI weather models across nowcasting, medium-range and extended-range
-  forecasting, discussing strengths, limitations and future directions.
-significance: 3
+summary: A review comparing mainstream AI large weather models across nowcasting, medium-range and extended-range
+  forecasting, with their strengths, limits and future directions.
+abstract: 'Weather forecasting is critical to industrial production, disaster prevention and mitigation,
+  and the support of major societal activities. Traditional numerical weather prediction (NWP) relies
+  on physics-based atmospheric models and large-scale computation, yet it faces inherent limitations such
+  as prohibitive computational costs and errors from parameterization schemes. In recent years, the deep
+  integration of artificial intelligence (AI) and atmospheric science has given rise to a new paradigm:
+  large AI weather models (LWMs). Benefiting from their efficient inference capability and high-resolution
+  forecasting, LWMs have achieved breakthroughs in nowcasting, short-to-medium-range, and even extended-range
+  weather prediction. This paper systematically reviews the technical architectures and core performance
+  of current mainstream LWMs. It provides a comparative analysis of their strengths and limitations, and
+  discusses key challenges and future directions in the field, offering a valuable reference for further
+  research and operational deployment of large AI weather models.'
+significance: 4
 cited_by: 0
-score: 12
+score: 16
 highlight: false
 added: '2026-10-22'
 source: snowball

@@ -17,7 +17,7 @@ links:
 topic: extremes-hazards
 topics:
 - post-processing
-type: evaluation
+type: model
 method:
 - classical-ml
 timescale:
@@ -25,10 +25,25 @@ timescale:
 spatial:
 - global
 data:
+- satellite
+- nwp-analysis
 - other
 status: pre-operational
-summary: Global ML fire activity forecasts using fuel and ignition data cut high-danger false alarms versus
-  fire-danger systems, showing input data quality matters more than model complexity.
+summary: Data-driven global fire activity predictions reduce false alarms in high-danger fire weather
+  forecasts, with input data quality mattering more than ML architecture complexity.
+abstract: Recent advancements in machine learning (ML) have expanded the potential use across scientific
+  applications, including weather and hazard forecasting. The ability of these methods to extract information
+  from diverse and novel data types enables the transition from forecasting fire weather, to predicting
+  actual fire activity. In this study we demonstrate that this shift is feasible also within an operational
+  context. Traditional methods of fire forecasts tend to over predict high fire danger, particularly in
+  fuel limited biomes, often resulting in false alarms. By using data on fuel characteristics, ignitions
+  and observed fire activity, data-driven predictions reduce the false-alarm rate of high-danger forecasts,
+  enhancing their accuracy. This is made possible by high quality global datasets of fuel evolution and
+  fire detection. We find that the quality of input data is more important when improving forecasts than
+  the complexity of the ML architecture. While the focus on ML advancements is often justified, our findings
+  highlight the importance of investing in high-quality data and, where necessary create it through physical
+  models. Neglecting this aspect would undermine the potential gains from ML-based approaches, emphasizing
+  that data quality is essential to achieve meaningful progress in fire activity forecasting.
 significance: 4
 cited_by: 92
 score: 36

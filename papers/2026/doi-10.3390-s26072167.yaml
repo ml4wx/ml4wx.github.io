@@ -21,17 +21,40 @@ links:
   pdf: https://www.mdpi.com/1424-8220/26/7/2167/pdf?version=1774967975
 topic: observations-remote-sensing
 topics:
-- local-forecasting
-type: application
+- post-processing
+type: model
 method:
 - classical-ml
 spatial:
+- regional
 - local
 data:
 - stations
 status: research
-summary: Random forest and XGBoost, plus a center-point XGB variant, outperform IDW and kriging for interpolating
-  station temperature, humidity and pressure in complex terrain.
+summary: Machine learning interpolation of temperature, humidity and pressure in complex terrain, with
+  an enhanced XGBoost (XGB-C), outperforms IDW and kriging, reaching R2 of 0.83 for temperature.
+abstract: This study has explored the effectiveness of machine learning methods for high-precision spatial
+  interpolation of meteorological variables, aiming to provide accurate atmospheric delay corrections
+  for high-precision edge and corner nets observation in complex-terrain environments such as the Xiluodu
+  Hydropower Station, thereby enhancing the accuracy of deformation monitoring. Considering the significant
+  limitations of traditional interpolation methods such as Inverse Distance Weighting (IDW) and Ordinary
+  Kriging (OK) in capturing spatial variability under complex topographic conditions, we systematically
+  introduced machine learning algorithms including Random Forest (RF)and eXtreme Gradient Boosting (XGBoost,
+  XGB) to compare their performance with traditional methods for high-density interpolation of sparsely
+  distributed temperature, relative humidity, and surface pressure, respectively. Concurrently, we proposed
+  an enhanced XGB model incorporating center-point features (XGB-C) which frames spatial interpolation
+  as a supervised learning problem that learns physical mapping from synoptic backgrounds to local microclimates
+  instead of relying on geometric distances alone. The interpolation performance indices (RMSE, MAE, and
+  R2) were evaluated with daily meteorological observations from 47 stations (38 for training, 9 for testing)
+  during 2023–2024. Results demonstrate that machine learning methods significantly outperform traditional
+  approaches, with XGB-C achieving the highest accuracy (R2 ≈ 1.00 for pressure, 0.97 for humidity, 0.83
+  for temperature). Moreover, the interpolation performance also exhibits a dependence on seasons and
+  the station location. Greater challenges are shown in the summer season and in the “Urban and Built-Up”
+  and “Croplands” areas. These findings highlight the substantial advantages of machine learning, particularly
+  the proposed XGB-C, for meteorological interpolation in mountainous hydropower station environments
+  where accurate atmospheric correction is crucial for deformation monitoring. This also lays a solid
+  foundation for developing operational ML-based interpolation models trained with high-quality labels
+  derived from unmanned aerial vehicle (UAV) remote sensing data.
 significance: 2
 cited_by: 2
 score: 8

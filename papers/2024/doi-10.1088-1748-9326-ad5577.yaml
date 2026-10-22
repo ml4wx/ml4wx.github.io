@@ -26,14 +26,28 @@ method:
 - cnn
 timescale:
 - s2s
-- medium
 spatial:
 - regional
 data:
 - nwp-analysis
 status: research
-summary: A UNET combined with CSG-EMOS calibrates ECMWF S2S precipitation over China, extending useful
-  skill to about 4 weeks and improving extreme-precipitation Brier skill by about 0.4.
+summary: Hybrid CSG-UNET calibrates ECMWF S2S precipitation ensembles over China, extending useful skill
+  to about 4 weeks and improving extreme-precipitation Brier skill by about 0.4.
+abstract: Abstract Reliable Subseasonal-to-Seasonal (S2S) forecasts of precipitation are critical for
+  disaster prevention and mitigation. In this study, an innovative hybrid method CSG-UNET combining the
+  UNET with the censored and shifted gamma distribution based ensemble model output statistic (CSG-EMOS),
+  is proposed to calibrate the ensemble precipitation forecasts from ECMWF over the China mainland during
+  boreal summer. Additional atmospheric variable forecasts and the data augmentation are also included
+  to deal with the potential issues of low signal-to-noise ratio and relatively small sample sizes in
+  traditional S2S precipitation forecast correction. The hybrid CSG-UNET exhibits a notable advantage
+  over both individual UNET and CSG-EMOS in improving ensemble precipitation forecasts, simultaneously
+  improving the forecast skills for lead times of 1–2 weeks and further extending the effective forecast
+  timeliness to ∼4 weeks. Specifically, the climatology-based Brier Skill Scores are improved by ∼0.4
+  for the extreme precipitation forecasts almost throughout the whole timescale compared with the ECMWF.
+  Feature importance analyze towards CSG-EMOS model indicates that the atmospheric factors make great
+  contributions to the prediction skill with the increasing lead times. The CSG-UNET method is promising
+  in subseasonal precipitation forecasts and could be applied to the routine forecast of other atmospheric
+  and ocean phenomena in the future.
 significance: 4
 cited_by: 13
 score: 16

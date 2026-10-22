@@ -18,6 +18,8 @@ links:
   paper: https://doi.org/10.3390/rs14071750
   pdf: https://www.mdpi.com/2072-4292/14/7/1750/pdf?version=1649222137
 topic: observations-remote-sensing
+topics:
+- post-processing
 type: evaluation
 method:
 - classical-ml
@@ -28,8 +30,23 @@ data:
 - radar
 - satellite
 status: research
-summary: Compares CoKriging with tree-based ML for merging gauge, radar and satellite hourly rainfall
-  during heavy events, finding CoKriging best in north Guangdong.
+summary: Tree-based ML and CoKriging merge station, radar and satellite precipitation for four heavy rainfall
+  events in Guangdong; CoKriging performs best spatially.
+abstract: Gridded precipitation data with a high spatiotemporal resolution are of great importance for
+  studies in hydrology, meteorology, and agronomy. Observational data from meteorological stations cannot
+  accurately reflect the spatiotemporal distribution and variations of precipitation over a large area.
+  Meanwhile, radar-derived precipitation data are restricted by low accuracy in areas of complex terrain
+  and satellite-based precipitation data by low spatial resolution. Therefore, hourly precipitation models
+  were employed to merge data from meteorological stations, Radar, and satellites; the models used five
+  machine learning algorithms (XGBoost, gradient boosting decision tree, random forests (RF), LightGBM,
+  and multiple linear regression (MLR)), as well as the CoKriging method. In the north of Guangdong Province,
+  data of four heavy rainfall events in 2018 were processed with geographic data to obtain merged hourly
+  precipitation data. The CoKriging method secured the best prediction of spatial distribution of accumulated
+  precipitation, followed by the tree-based machine learning (ML) algorithms, and significantly, the prediction
+  of MLR deviated from the actual pattern. All machine learning methods showed poor performances for timepoints
+  with little precipitation during the heavy rainfall events. The tree-based ML method showed poor performance
+  at some timepoints when precipitation was over-related to latitude, longitude, and distance from the
+  coast.
 significance: 2
 cited_by: 49
 score: 8

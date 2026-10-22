@@ -25,16 +25,29 @@ method:
 - classical-ml
 spatial:
 - regional
-- local
 data:
+- nwp-analysis
 - stations
-- other
 status: research
-summary: A station-trained LightGBM reduces 5 km WRF wind-speed RMSE over Hainan Island from 3.20 to 1.21
-  m/s on held-out stations, but degrades high-wind errors.
-significance: 3
+summary: LightGBM corrects a 5 km WRF wind-speed product over Hainan, cutting station RMSE from 3.20 to
+  1.21 m/s but degrading high-wind strata.
+abstract: Regional 10 m wind-speed products extend coverage beyond sparse station networks, but their
+  errors vary with wind regime and location. This study evaluates a station-trained LightGBM correction
+  of a 5 km WRF/HNR wind-speed product over Hainan Island. Raw and corrected fields were collocated with
+  stations using a four-neighbour inverse-distance operator. A spatially separated 2022 holdout retained
+  67 stations after five coordinate-overlap exclusions. Across 582,610 common hourly pairs, corrected
+  RMSE decreased from 3.198 to 1.211 m s−1 and Pearson R increased from 0.368 to 0.651. The paired RMSE
+  reduction was 1.986 m s−1 [95% CI 1.839, 2.122]. Improvement was largest below 3.4 m s−1 (2.203 m s−1)
+  and remained positive for 3.4–7.9 m s−1 (0.566 m s−1). In contrast, corrected RMSE increased by 0.990
+  m s−1 for 8.0–10.7 m s−1 and by 1.656 m s−1 for ≥10.8 m s−1. A time-only adjustment reduced pooled RMSE
+  to 1.870 m s−1 but also degraded the two upper strata. The 2016–2022 maps show a lower corrected product
+  climatology, with a mean corrected-minus-raw increment of −2.273 m s−1 across the Hainan buffer. Temporal
+  partitions and AWS-selected station groups show variation across season, time of day, and setting. The
+  correction reduces station-sampled errors for light-to-moderate wind speeds; it changes speed magnitude
+  while retaining the raw-product wind direction.
+significance: 2
 cited_by: 0
-score: 12
+score: 8
 highlight: false
 added: '2026-10-22'
 source: snowball

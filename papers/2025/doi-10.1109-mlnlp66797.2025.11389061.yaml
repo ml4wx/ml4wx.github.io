@@ -15,13 +15,16 @@ topic: local-forecasting
 type: model
 method:
 - rnn
+- transformer
 timescale:
 - short
+spatial:
+- local
 data:
-- other
+- stations
 status: research
-summary: Bidirectional LSTM with attention predicts short-term temperature, with attention weights adding
-  interpretability; abstract reports no quantitative results.
+summary: Bidirectional LSTM with attention forecasts short-term temperature from time series, with attention
+  weights offered for interpretability; no quantitative gains are given in the abstract.
 significance: 2
 cited_by: 0
 score: 8

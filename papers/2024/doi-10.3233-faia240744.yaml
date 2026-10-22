@@ -17,18 +17,32 @@ links:
   paper: https://doi.org/10.3233/faia240744
   pdf: https://doi.org/10.3233/faia240744
 topic: extremes-hazards
+topics:
+- observations-remote-sensing
 type: model
 method:
 - cnn
-- physics-constrained
 spatial:
-- global
+- regional
 data:
 - satellite
-- other
 status: research
-summary: Phy-CoCo is a physics-constrained multi-task network that jointly estimates tropical cyclone
-  intensity and size, outperforming prior multi-task methods on a constructed dataset.
+summary: Phy-CoCo uses physics-constrained multi-task learning with recurrent convolution to jointly estimate
+  tropical cyclone intensity and size from multimodal satellite data.
+abstract: Tropical Cyclone (TC) estimation aims to estimate various attributes of TC in real-time to alleviate
+  and prevent disasters caused by violent TCs. As artificial intelligence technology advances, various
+  deep learning-based multi-task estimation approaches have been proposed. However, most of them only
+  focus on extracting common features of tasks, disregarding potential negative transfer and task interactions
+  between different tasks. This paper is thus motivated to propose a Physical Constraint-based Correlation
+  (Phy-CoCo) learning framework from the perspective of Multi-Task Learning (MTL). Specifically, for task-specific
+  feature learning, we introduce Correlation Modeling (CoM) based on Centrally Expanded Pooling (CEP).
+  Furthermore, for cross-task interaction, we propose a Multi-Domain Recurrent Convolution (MDRC) module
+  to incorporate physical constraints into MTL. These physical constraints enable the transformation of
+  different task features by simulating the physical relations among different attributes of TC. Lastly,
+  in combination with a task-shared network that leverages the hybrid fusion of multi-modal data, our
+  MTL framework accurately estimates various TC attributes. Extensive experiments conducted on our constructed
+  dataset demonstrate that the proposed Phy-CoCo outperforms previous methods in TC estimation in terms
+  of estimation error, verifying the potential of the physics-incorporated MTL model.
 significance: 3
 cited_by: 4
 score: 12

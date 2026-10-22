@@ -19,17 +19,35 @@ topics:
 - xai-uq-physics
 type: model
 method:
-- cnn
+- other
 spatial:
 - regional
 data:
-- satellite
+- era5
 status: research
-summary: Study on calibration and uncertainty quantification for deep learning drought detection; abstract
-  unavailable, so scope judged from title only.
-significance: 2
+summary: A calibration and entropy-based uncertainty framework for deep learning drought detection in
+  Europe lowers expected calibration error to 0.31%.
+abstract: 'Droughts are hydrometeorological extreme events influenced by highly intricate land–atmosphere
+  feedback mechanisms and climate variability. Deep learning models have recently succeeded in detecting
+  extreme climate events and promise to uncover and understand droughts further. There are two main challenges
+  of reliability and trustworthiness limiting their applications: miscalibration and inherent uncertainty.
+  However, they remain rarely explored because deep learning models are overparameterized and seldom tractable.
+  To address this shortcoming, we introduce methodologies for model calibration and entropy-based uncertainty
+  quantification for deep learning-based drought detection. The calibration algorithm can deal with calibration
+  errors by reducing distributional shifts and alleviating overconfident predictions. The uncertainty
+  framework, in turn, decomposes and quantifies the total uncertainty according to several components:
+  data uncertainty, procedural variability, parametric variability, and latent variability. Thus, our
+  method identifies uncertain predictions and supports robust evaluations, benefiting the credibility
+  of the decision-making process. Empirical evidence of performance in a wide range of European drought
+  events is given, justifying the effectiveness of our approach. The calibration methodology yields the
+  lowest expected calibration error (0.31%) and the precision of the uncertainty-based decision-making
+  is improved from 72.27% to 74.06% and 76.59%, based on ensemble predictions and rejecting the predictions
+  for the top 20% uncertain negative samples, respectively. In summary, our approach significantly enhances
+  drought detection’s reliability and classification accuracy, constituting a key step toward more trustworthy
+  and actionable climate decision-making.'
+significance: 3
 cited_by: 15
-score: 8
+score: 12
 highlight: false
 added: '2026-10-22'
 source: snowball

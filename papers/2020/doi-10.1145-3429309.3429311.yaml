@@ -12,10 +12,9 @@ ids:
 links:
   paper: https://doi.org/10.1145/3429309.3429311
 topic: nowcasting
-type: model
+type: evaluation
 method:
 - rnn
-- cnn
 timescale:
 - nowcast
 spatial:
@@ -23,8 +22,8 @@ spatial:
 data:
 - stations
 status: research
-summary: A ConvLSTM network for 1-hour precipitation nowcasting over the contiguous US outperforms persistence
-  and optical-flow baselines using hourly station observations.
+summary: A convolutional LSTM forecasts hourly precipitation over CONUS for one hour ahead and beats persistence
+  and optical-flow baselines.
 significance: 3
 cited_by: 9
 score: 12

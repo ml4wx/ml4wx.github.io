@@ -32,8 +32,25 @@ spatial:
 data:
 - nwp-analysis
 status: research
-summary: Applies SRGAN to downscale 1–7 day GEFS 2 m temperature forecasts over southwest China, outperforming
-  U-Net, SRDRN and linear regression.
+summary: SRGAN downscales 1–7 day GEFS 2 m temperature forecasts over southwest China and outperforms
+  U-Net, SRDRN and linear regression in the tests.
+abstract: Abstract Accurate high‐resolution temperature forecasting is of great significance for the economic
+  and social development of humanity. Due to the chaotic nature of the atmosphere and the limitations
+  of computational resources, model forecasts often lack sufficient resolution and exhibit systematic
+  biases. Therefore, downscaling methods with smaller computational demands have become a good alternative.
+  This study designed a super resolution generative adversarial network (SRGAN) for temperature downscaling,
+  applying it to the 2 m temperature forecasts for the Southwest region of China from the Global Ensemble
+  Forecasting System (GEFS), with forecast lead times of 1 to 7 days. Meanwhile, linear regression (LR),
+  along with two advanced deep learning downscaling methods, U‐Net and super resolution deep residual
+  networks (SRDRNs), were also used as benchmarks. The study shows that both deep learning methods, SRGAN
+  and SRDRNs, can effectively address the issue of blurred temperature fields that may occur when using
+  U‐Net. By comparing the Nash‐Sutcliffe Efficiency coefficient (NSE), pattern correlation coefficient
+  (PCC), root mean square error (RMSE), and peak signal‐to‐noise ratio (PSNR), we found that SRGAN demonstrated
+  the best performance among the four methods. In this work, a suitable loss function was set using the
+  VGG network to help SRGAN better capture small‐scale details. Additionally, a mean square error decomposition
+  method was used to further diagnose the sources of errors in different models, revealing their ability
+  to calibrate various error sources. The results show that SRGAN, SRDRNs, and LR perform best in correcting
+  the square of the bias (Bias 2 ), while U‐Net is most effective in correcting the sequence errors.
 significance: 3
 cited_by: 5
 score: 12

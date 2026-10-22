@@ -22,7 +22,6 @@ topic: nowcasting
 type: model
 method:
 - gan-vae
-- cnn
 timescale:
 - nowcast
 spatial:
@@ -30,8 +29,20 @@ spatial:
 data:
 - radar
 status: research
-summary: DFST-GAN adds dynamic flow modelling and a meteorological discriminator for precipitation nowcasting
-  on HKO-7, with 18.8% CSI gain over PredRNN-V2 for heavy rain.
+summary: Proposes DFST-GAN, a GAN with dynamic flow and a meteorological discriminator, improving HKO-7
+  precipitation nowcasting CSI by 18.8% over PredRNN-V2 for heavy rain.
+abstract: 'This paper proposes a Dynamic Flow Spatio-Temporal Generative Adversarial Network (DFST-GAN)
+  model for high-quality precipitation nowcasting. Current spatio-temporal prediction models struggle
+  with two key limitations: the inability to adaptively capture complex motion patterns and the tendency
+  to generate blurry predictions over time. To address these challenges, DFST-GAN integrates a dynamic
+  flow feature extraction mechanism with a novel specialized meteorological discriminator, enabling adaptive
+  modeling of complex precipitation system trajectories and generating sharper, physically consistent
+  predictions. We evaluate our approach on the HKO-7 dataset using metrics including CSI, HSS, POD, FAR
+  and ETS. Experimental results demonstrate that DFST-GAN consistently outperforms existing methods across
+  all evaluation metrics, with particularly notable improvements for moderate to heavy rainfall events
+  (dBZ ≥ 50), showing a 18.8% relative improvement in CSI compared to PredRNN-V2. The ablation studies
+  confirm that each component makes a meaningful contribution to overall performance, validating the potential
+  of our approach for operational precipitation nowcasting applications.'
 significance: 3
 cited_by: 4
 score: 12

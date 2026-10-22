@@ -20,14 +20,30 @@ topics:
 - observations-remote-sensing
 type: model
 method:
-- other
+- cnn
 spatial:
-- regional
+- global
 data:
 - satellite
 status: research
-summary: Adding prior intensity and a self-diagnosed bias term to satellite-based AI cyclone intensity
-  estimation cuts errors by 64.7% and then a further 32.3%.
+summary: Adding past intensities and a bias self-diagnosis step to satellite-based AI tropical cyclone
+  intensity estimation cuts errors by 64.7% and a further 32.3%.
+abstract: 'Recently, various artificial intelligence (AI)-based techniques have been developed to estimate
+  tropical cyclone (TC) intensity by analyzing patterns in satellite imagery. Most of these models rely
+  solely on currently available satellite data. However, traditional methods used in operational TC forecasting,
+  such as the advanced Dvorak technique (ADT), as well as forecasters’ practices in TC intensity estimation,
+  consider not only the current information but also historical data (e.g., previous TC intensities and
+  their trends). Additionally, forecasters compare TC intensity from ADT and analysis track data, and
+  if a bias is identified, they take this into account when estimating the current TC intensity. This
+  study investigates how much the performance of current AI-based TC intensity estimation can be improved
+  by incorporating historical information and bias estimates. Three experiments were conducted: (1) control
+  (CTRL), which uses only current satellite images; (2) Experiment 1 (Exp 1), which includes current data
+  along with satellite imagery and intensity from 6 hours earlier; and (3) Experiment 2 (Exp 2), which
+  further incorporates bias estimates from the past 18 hours into a self-diagnosis algorithm. The results
+  showed that Exp 1 reduced intensity estimation errors by 64.7% compared to CTRL, while Exp 2 further
+  decreased errors by 32.3% compared to Exp 1. This suggests that utilizing historical TC information
+  and a self-diagnosis approach in operational systems is crucial for improving the accuracy of AI-based
+  TC intensity estimation.'
 significance: 3
 cited_by: 0
 score: 12

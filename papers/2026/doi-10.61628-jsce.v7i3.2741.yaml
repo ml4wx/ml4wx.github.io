@@ -20,7 +20,7 @@ links:
   pdf: https://journal.unpacti.ac.id/index.php/JSCE/article/download/2741/1416
 topic: local-forecasting
 topics:
-- extremes-hazards
+- xai-uq-physics
 type: model
 method:
 - classical-ml
@@ -31,8 +31,27 @@ spatial:
 data:
 - stations
 status: research
-summary: Explainable hybrid ML (Extra Trees best, MAE 2.997) forecasts 121 years of monthly hydroclimate
-  for Makkah and flags extreme months via SHAP-interpreted features.
+summary: Explainable hybrid ML on a 121-year monthly Makkah record, with Extra Trees best (R2 0.52), and
+  SHAP showing seasonal and lag features dominate forecasts.
+abstract: 'Long-term hydroclimatic prediction in arid urban environments remains methodologically demanding
+  because monthly records are often intermittent, highly seasonal, zero-inflated, and dominated by rare
+  but consequential extreme events. Using a 121-year monthly hydroclimatic record for Makkah, Saudi Arabia,
+  spanning January 1901 to December 2021, this study develops an explainable hybrid machine-learning framework
+  for monthly forecasting, seasonal diagnostics, and extreme-event detection. The dataset contains 1,452
+  monthly observations with a mean value of 6.19, median of 3.00, standard deviation of 8.05, and maximum
+  of 52.00, indicating a strongly skewed distribution. Exploratory analysis reveals pronounced seasonality:
+  November, December, and January exhibit the highest hydroclimatic values, whereas June is consistently
+  dry across the full record. A temporal feature set was constructed using lag variables, rolling statistics,
+  annual seasonal memory, cyclical month encodings, and trend indicators. Several predictive models were
+  evaluated, including Random Forest, Extra Trees, Histogram Gradient Boosting, XGBoost, and a hybrid
+  SARIMA–Random Forest residual-correction model. Extra Trees achieved the best forecasting performance
+  on the holdout period, with MAE = 2.997, RMSE = 5.603, sMAPE = 57.669%, and R² = 0.518. Extreme-event
+  detection was performed using a 90th-percentile threshold of 17.68, identifying 146 extreme months over
+  the full record. The best classification trade-off was obtained by Histogram Gradient Boosting, while
+  Random Forest produced the highest ROC-AUC. SHAP-based interpretation demonstrates that seasonal phase
+  variables and annual memory features dominate model behaviour, especially month_cos, month_sin, same_month_last_year,
+  and lag_12. The findings show that interpretable ensemble learning can provide a more transparent and
+  operationally relevant framework than accuracy-only forecasting for arid-region hydroclimatic risk assessment.'
 significance: 2
 cited_by: 0
 score: 8

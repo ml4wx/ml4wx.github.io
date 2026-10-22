@@ -20,7 +20,8 @@ topics:
 - applications-impacts
 type: model
 method:
-- other
+- cnn
+- rnn
 timescale:
 - nowcast
 spatial:
@@ -28,8 +29,15 @@ spatial:
 data:
 - stations
 status: research
-summary: MSTF-Net nowcasts road surface temperature from station data with 0.66°C MAE and 74–92% threat
-  scores for extremes, outperforming LSTM and XGBoost.
+summary: Theory-guided multi-scale network nowcasts road surface temperature with a lightweight 0.11 MB
+  design running at 38 FPS; the abstract is truncated.
+abstract: < 0.05) in RST prediction accuracy, spatial generalization, weather adaptability and extreme
+  event detections. Systematic ablation studies revealed a feature extraction hierarchy of maximum pooling
+  in micro branches>average pooling in micro branches>real-time spatiotemporal attention mechanisms>macro
+  branches. MSTF-Net combined lightweight computational characteristics (0.11 MB) with high-resolution
+  modeling capabilities, enabling efficient real-time emergency response optimization (38.46 FPS), potentially
+  providing new capabilities in infrastructure-resilient smart systems for thermal risk identification
+  and road predictive maintenance.
 significance: 2
 cited_by: 0
 score: 8

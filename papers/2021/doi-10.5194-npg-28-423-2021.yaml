@@ -20,18 +20,29 @@ links:
   paper: https://doi.org/10.5194/npg-28-423-2021
   pdf: https://npg.copernicus.org/articles/28/423/2021/npg-28-423-2021.pdf
 topic: global-medium-range
-type: model
+type: evaluation
 method:
 - rnn
 timescale:
 - short
+- medium
 spatial:
 - global
 data:
 - era5
 status: research
-summary: Shows recurrent network forecasts of chaotic geophysical flows degrade under multiscale intermittency,
-  and improve after scale separation on global sea-level pressure.
+summary: Shows recurrent networks struggle with multiscale, intermittent geophysical flows, and that coarse-graining
+  and time filtering of sea-level pressure improves forecasts.
+abstract: Abstract. Recent advances in statistical and machine learning have opened the possibility to
+  forecast the behavior of chaotic systems using recurrent neural networks. In this article we investigate
+  the applicability of such a framework to geophysical flows, known to involve multiple scales in length,
+  time and energy and to feature intermittency. We show that both multiscale dynamics and intermittency
+  introduce severe limitations on the applicability of recurrent neural networks, both for short-term
+  forecasts, as well as for the reconstruction of the underlying attractor. We suggest that possible strategies
+  to overcome such limitations should be based on separating the smooth large-scale dynamics from the
+  intermittent/small-scale features. We test these ideas on global sea-level pressure data for the past
+  40 years, a proxy of the atmospheric circulation dynamics. Better short and long term forecasts of sea-level
+  pressure data can be obtained with an optimal choice of spatial coarse grain and time filtering.
 significance: 3
 cited_by: 9
 score: 12

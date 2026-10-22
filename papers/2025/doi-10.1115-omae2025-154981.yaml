@@ -16,9 +16,9 @@ ids:
 links:
   paper: https://doi.org/10.1115/omae2025-154981
   pdf: http://hdl.handle.net/10871/140757
-topic: local-forecasting
+topic: applications-impacts
 topics:
-- applications-impacts
+- local-forecasting
 type: application
 method:
 - rnn
@@ -27,17 +27,30 @@ timescale:
 - short
 spatial:
 - regional
-- local
 data:
 - stations
 - era5
-- other
 status: research
-summary: Applies an attention-LSTM plus random-forest framework (MaLCOM) to forecast offshore winds in
-  the Celtic Sea, validated against floating lidar in 2023.
-significance: 3
+summary: Applies an attention-LSTM plus random-forest framework to forecast offshore winds in the Celtic
+  Sea, validated against floating lidar observations from 2023.
+abstract: Abstract Accurate weather forecasts are critical for various industries - including offshore
+  wind - which, has a significant part to play in realizing global net zero energy goals. Traditionally,
+  such forecasts have been made using physics-based numerical weather prediction techniques, however,
+  recently, machine learning models, trained on historical data, have shown promise in learning patterns
+  not always represented by discretized physical equations and therefore have the potential to enhance
+  the accuracy and efficiency of forecasts produced. This paper applies a low-cost machine learning-based
+  framework (MaLCOM) to offshore wind forecasting in the Celtic Sea. It uses an attention-based long short-term
+  memory (LSTM) recurrent neural network (trained on in-situ observations) to learn temporal patterns
+  coupled with a random forest-based spatial nowcast model (trained on the ERA5 reanalysis) for complete
+  spatiotemporal prediction. Winds derived from wave spectra measured by coastal buoys are integrated,
+  showing the performance of the framework even with imperfect data. Validation with independent observations
+  from floating lidar units in 2023 confirms the framework’s potential for regional wind prediction. This
+  work extends previous MaLCOM-based ocean condition predictions to offshore wind forecasting, showcasing
+  new methods for enhancing the value of discrete metocean measurements and improving real-time decision-making
+  for offshore planning.
+significance: 2
 cited_by: 1
-score: 12
+score: 8
 highlight: false
 added: '2026-10-22'
 source: snowball

@@ -27,12 +27,29 @@ spatial:
 - regional
 data:
 - radar
+- stations
 status: research
-summary: PhySNet, a physics-guided network using thermodynamic priors, improves cloud radar clear-air
-  echo detection to 95.9% POD for clear-air and 98.3% for meteorological echoes.
-significance: 3
+summary: PhySNet adds thermodynamic-prior gating and height regression to cloud radar echo classification,
+  reaching 98.28% detection for meteorological echoes.
+abstract: Accurate echo classification is crucial for Millimeter-wave Cloud Radar (MMCR) data quality
+  control. Existing approaches, however, often struggle to generalize across complex scenes or lack physical
+  interpretability. Here we propose PhySNet, a physics-guided network that combines thermodynamic priors
+  with spatiotemporal radar features, embedding physical information across the full pipeline from feature
+  extraction to final outputs. Based on the coupling between the lifting condensation level (LCL) and
+  daytime clear-air echo heights, and the lagged correlation between nocturnal clear-air echo heights
+  and their daytime counterparts, we design a physics-constrained gating block (PCGB). The PCGB extracts
+  thermodynamic states and evolution trends from collocated surface observations, generating a clear-air
+  echo probability map that weights the initial radar features. Building on this, we add a parallel regression
+  branch of effective-clutter-height (ECH). This branch fuses thermodynamic features with radar spatiotemporal
+  features, enabling the model to learn to predict the clear-air echo boundary. Finally, we apply an adaptive
+  height filter using the predicted ECH sequence to refine the classification results. Evaluated on a
+  multi-region, multi-season dataset from China, PhySNet achieves a probability of detection (POD) of
+  98.28% for meteorological echoes and 95.87% for clear-air echoes, outperforming conventional methods.
+  By coupling data-driven learning with physical rules, our approach provides a high-accuracy, interpretable
+  solution for cloud radar clear-air echo identification.
+significance: 2
 cited_by: 0
-score: 12
+score: 8
 highlight: false
 added: '2026-10-22'
 source: snowball

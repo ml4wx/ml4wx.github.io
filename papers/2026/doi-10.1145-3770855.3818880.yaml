@@ -15,25 +15,41 @@ ids:
 links:
   paper: https://doi.org/10.1145/3770855.3818880
   pdf: https://doi.org/10.1145/3770855.3818880
-topic: global-medium-range
+topic: probabilistic-ensembles
 topics:
-- probabilistic-ensembles
 - extremes-hazards
+- regional-km-scale
 type: model
 method:
-- other
+- cnn
 timescale:
-- short
+- medium
 spatial:
 - regional
 data:
 - nwp-analysis
+- era5
 status: research
-summary: RainCast gives hourly 72-hour China precipitation forecasts with a physics-guided extractor and
-  ensemble head, improving heavy-rain CSI by up to 62.8% over GFS.
-significance: 3
+summary: RainCast provides 0.05° hourly precipitation to 72 h over China with an ensemble head; heavy-rain
+  CSI improves up to 62.8% over GFS.
+abstract: 'Accurate short-term precipitation forecasting, which targets predictions up to 3 days ahead,
+  has long been challenging, mainly due to extreme sample imbalance and complex multiscale physical processes.
+  Existing regression- or classification-based deep learning methods often produce over-smoothed precipitation
+  fields, lack physical guidance, and provide limited capability for uncertainty quantification, while
+  radar-based nowcasting methods are unsuitable for multi-day forecasting. To address these limitations,
+  we propose RainCast, a high-resolution framework for hourly precipitation forecasting over China up
+  to 72 hours ahead at 0.05° resolution. RainCast incorporates two key designs: (1) a physics-guided feature
+  extractor, which emulates continuity-equation-based diagnostics to extract vorticity, divergence, and
+  vertical-motion-related signals from circulation fields; and (2) a multi-head output design that supports
+  both deterministic forecasts with a regression head and probabilistic multi-member forecasts with an
+  ensemble head, thereby reducing over-smoothing. Experiments show that RainCast consistently outperforms
+  baselines. For heavy rainfall events (50 mm/24 h), RainCast improves CSI by up to 62.82% over GFS, improves
+  CRPS by 19.35% over GEFS. And interpretability analysis further identifies 600-hPa temperature as a
+  key signal for East Asian precipitation forecasting, likely related to hydrometeor phase transitions
+  near the freezing–melting layer.'
+significance: 4
 cited_by: 0
-score: 12
+score: 16
 highlight: false
 added: '2026-10-22'
 source: snowball

@@ -12,12 +12,14 @@ ids:
   doi: 10.1109/icitiit68860.2026.11499639
 links:
   paper: https://doi.org/10.1109/icitiit68860.2026.11499639
-topic: probabilistic-ensembles
+topic: post-processing
 topics:
-- post-processing
+- probabilistic-ensembles
 type: model
 method:
 - cnn
+- rnn
+- classical-ml
 timescale:
 - short
 spatial:
@@ -25,8 +27,8 @@ spatial:
 data:
 - era5
 status: research
-summary: Attention U-Net predicts per-grid Gaussian mean and variance on a deterministic initial forecast
-  for western India, reaching test ACC 0.9407 and CRPS 0.3534.
+summary: Refines deterministic forecasts over western India with U-Net models predicting Gaussian mean
+  and variance; best hybrid cuts test RMSE to 1.6754 and CRPS to 0.3534.
 significance: 2
 cited_by: 0
 score: 8

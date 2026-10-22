@@ -13,19 +13,28 @@ ids:
 links:
   paper: https://doi.org/10.1029/2025gl121196
   pdf: https://doi.org/10.1029/2025gl121196
-topic: benchmarks-data-eval
+topic: xai-uq-physics
 topics:
-- xai-uq-physics
+- benchmarks-data-eval
 type: evaluation
 method:
 - other
-spatial:
-- global
 data:
 - other
 status: research
-summary: Burgers-system experiments with 600 regimes show AI generalisation depends on training data covering
-  the physical mechanisms of the target regime.
+summary: Controlled Burgers-system experiments with 600 regimes show AI generalization fails when training
+  data miss physical regimes, implying reanalysis-trained weather AI may struggle with extremes.
+abstract: Abstract The value of weather and climate AI models depends on their generalization beyond training
+  data, yet the influence of data characteristics on this capability remains unclear. In this investigation,
+  a fully controllable framework using a parameter‐tunable Burgers system is utilized to explore the role
+  of data in model generalization. By varying nonlinear and diffusive coefficients, 600 distinct dynamical
+  regimes are generated, and two experiments are performed using samples drawn from different parameter
+  quadrant or their combinations. The results demonstrate generalization depends on adequate training
+  data representation of underlying mechanisms of target regimes, including both effective Reynolds numbers
+  and solution properties. Insufficient representation, either through missing mechanisms or low sample
+  proportions of certain mechanisms, can lead to substantial performance degradation. These findings imply
+  AI models trained on historical reanalysis may perform poorly in extremes and climate‐scale predictions,
+  requiring a pressing need to supplement samples with physically consistent numerical simulations.
 significance: 3
 cited_by: 1
 score: 12

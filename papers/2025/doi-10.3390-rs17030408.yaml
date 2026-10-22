@@ -18,6 +18,8 @@ links:
   paper: https://doi.org/10.3390/rs17030408
   pdf: https://www.mdpi.com/2072-4292/17/3/408/pdf?version=1737785654
 topic: hybrid-parameterization
+topics:
+- climate-emulation
 type: model
 method:
 - classical-ml
@@ -26,10 +28,25 @@ timescale:
 spatial:
 - global
 data:
-- other
+- cmip
+- satellite
 status: research
-summary: Gradient-boosted surrogate framework tunes CAM5 precipitation parameters, improving simulated
-  precipitation by 19% on average in selected regions and validated against remote sensing.
+summary: Uses gradient boosting surrogate models in a multilevel tuning framework to optimise CAM5 precipitation
+  parameters, giving a 19% average improvement in selected regions.
+abstract: The uncertainty of physical parameters is a major factor contributing to poor precipitation
+  simulation performance in Earth system models (ESMs), particularly in tropical and Pacific regions.
+  To address the high computational cost of repetitive ESM runs, this study proposes a multilevel surrogate
+  model-based parameter optimization framework and applies it to improve the precipitation performance
+  of CAM5. A top-level surrogate model using gradient boosting regression trees (GBRTs) was constructed,
+  leveraging the candidate point (CAND) approach applied to balance exploration and exploitation. A bottom-level
+  surrogate model was then built based on a small, selected dataset; we designed a trust region approach
+  to adjust the sampling region during the bottom-level tuning process. Experimental results demonstrate
+  that the proposed method achieves fast convergence and significantly enhances precipitation simulation
+  accuracy, with an average improvement of 19% in selected regions. In integrating optimization results
+  through a nonuniform parameterization scheme and parameter smoothing, substantial improvements were
+  observed in the South Pacific, Niño, South America, and East Asia. Comparisons with remote sensing data
+  confirm that the optimized precipitation simulations do not introduce significant biases to other variables,
+  validating the effectiveness and robustness of the proposed method.
 significance: 3
 cited_by: 2
 score: 12

@@ -24,11 +24,26 @@ spatial:
 data:
 - radar
 status: research
-summary: A temporally weighted loss for ConvLSTM raises CSI at 20 dBZ to 0.847 over 0–72 minutes on Shanghai
-  radar, a gain of 0.079 over ConvLSTM.
-significance: 2
+summary: Temporally weighted ConvLSTM loss improves 0–72 min Shanghai radar nowcasts, raising CSI@20 dBZ
+  by 0.079 over ConvLSTM with 0.85M parameters.
+abstract: Accurate short-range precipitation nowcasting is essential for severe weather warning and disaster
+  mitigation. While ConvLSTM-based deep learning models have advanced beyond traditional extrapolation
+  approaches, they typically optimize prediction errors uniformly across all lead times, failing to reflect
+  the operational priority of near-term forecasts. We address this by introducing a temporally weighted
+  loss (TWL) within a ConvLSTM encoder–forecaster framework, which assigns exponentially decayed importance
+  to near-term lead times and mitigates error accumulation inherent in autoregressive forecasting. Experiments
+  on Shanghai radar data (October 2015–July 2018, 26,340 test sequences) show that the proposed method
+  substantially outperforms both ConvLSTM and optical flow baselines across all reflectivity thresholds.
+  The model achieves an average CSI@20 dBZ of 0.847 over the 0–72 min horizon, with absolute gains of
+  +0.079 over ConvLSTM and +0.450 over optical flow, and consistently great improvements across both light
+  (10 dBZ) and heavy (35 dBZ) precipitation thresholds. The model attains a POD of 0.901 and a FAR of
+  0.061, reflecting an effective balance between detection sensitivity and false alarm control. Ablation
+  studies confirm that λ =0.1 yields the optimal decay rate, improving CSI@20 dBZ by 10.3% and reducing
+  RMSE by 9.5% over ConvLSTM. With only 0.85M parameters and 52 ms inference latency, the proposed approach
+  offers an effective and computationally efficient strategy for operational nowcasting.
+significance: 3
 cited_by: 0
-score: 8
+score: 12
 highlight: false
 added: '2026-10-22'
 source: snowball

@@ -24,9 +24,9 @@ ids:
 links:
   paper: https://doi.org/10.1038/s44387-026-00133-y
   pdf: https://doi.org/10.1038/s44387-026-00133-y
-topic: probabilistic-ensembles
+topic: applications-impacts
 topics:
-- applications-impacts
+- probabilistic-ensembles
 type: model
 method:
 - other
@@ -37,9 +37,25 @@ spatial:
 data:
 - nwp-analysis
 - satellite
-status: pre-operational
-summary: GenSolar, a generative model, produces ~5 km probabilistic surface solar irradiance ensembles,
-  cutting CRPS 46.5% versus GFS over 1–72 h forecasts for PV applications.
+status: research
+summary: GenSolar produces 5 km, 10-minute probabilistic solar irradiance ensembles from GFS inputs, cutting
+  CRPS by 46.5% versus GFS over 1–72 h forecasts.
+abstract: Rapid variability and intermittency in surface shortwave downward irradiance (SWDR) impact photovoltaic
+  (PV) generation, challenging power system stability. Yet, existing SWDR prediction methods often cannot
+  simultaneously deliver high-resolution, wide-area, and well-calibrated probabilistic prediction, limiting
+  their use for uncertainty-aware PV power prediction and operational decisions such as regional coordination
+  and reserve scheduling. Here, we develop GenSolar, a generative deep learning model for global probabilistic
+  SWDR prediction at ~5 km and 10-min resolution. By mapping large-scale atmospheric circulation information
+  into fine-scale SWDR, GenSolar enables high-resolution ensemble prediction, providing essential inputs
+  for PV power probabilistic estimation. Compared with a numerical forecasting model (the Global Forecast
+  System, GFS), a deterministic deep learning baseline (U-Net), and a generative baseline (a conditional
+  generative adversarial network, CGAN), GenSolar achieves ~15.8% reduction in root mean square error
+  (RMSE) and ~46.5% reduction in continuous ranked probability score (CRPS) compared to GFS in the short-term
+  forecasting range (1–72 h), while showing ~27.5% and ~25.4% CRPS reductions compared to U-Net and CGAN,
+  respectively. Additionally, GenSolar exhibits performance gain over both baselines, even in mountainous
+  regions with complex topography and tropical areas characterized by strong convection. GenSolar provides
+  probabilistic SWDR ensembles with the potential to support downstream PV power estimation and power
+  system operational planning in rapidly growing solar energy systems.
 significance: 4
 cited_by: 0
 score: 16

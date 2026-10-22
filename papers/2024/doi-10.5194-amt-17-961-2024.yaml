@@ -18,15 +18,31 @@ topics:
 - climate-analysis-attribution
 type: model
 method:
-- cnn
+- other
 spatial:
 - regional
 data:
 - satellite
-- other
 status: research
-summary: Res-UNet merges MSG SEVIRI imagery with CloudSat radar to reconstruct 3D cloud reflectivity across
-  the full disk, with 2.99 dBZ RMSE.
+summary: Neural network infers 3D cloud reflectivity profiles from geostationary MSG SEVIRI imagery, validated
+  against CloudSat radar with RMSE of 3.41 dBZ.
+abstract: Abstract. Satellite instruments provide spatially extended data with a high temporal resolution
+  on almost global scales. However, nowadays, it is still a challenge to extract fully three-dimensional
+  data from the current generation of satellite instruments, which either provide horizontal patterns
+  or vertical profiles along the orbit track. Following this, we train a neural network in this study
+  to generate three-dimensional cloud structures from MSG SEVIRI satellite data in high spatio-temporal
+  resolution. We evaluate the derived artificial intelligence-based predictions against the along-track
+  radar reflectivity from the CloudSat satellite. By inferring the pixel-wise cloud column to the satellite’s
+  full disk, our results emphasize that spatio-temporal dynamics can be delineated for the whole domain.
+  Robust reflectivities are derived for different cloud types with a clear distinction regarding the cloud's
+  intensity, height, and shape. Cloud-free pixels tend to be over-represented because of the high imbalance
+  between cloudy and clear-sky samples. The average error (RMSE) spans about 7.5 % (3.41 dBZ) of the total
+  value range enabling the advanced analysis of vertical cloud properties. Although we receive high accordance
+  between radar data and our predictions, the quality of the results varies with the complexity of the
+  cloud structure. The representation of multi-level and mesoscale clouds is often simplified. Despite
+  current limitations, the obtained results can help close current data gaps and exhibit the potential
+  to be applied to various climate science questions, like the further investigation of deep convection
+  through time and space.
 significance: 3
 cited_by: 14
 score: 12

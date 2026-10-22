@@ -18,8 +18,8 @@ links:
   pdf: https://doi.org/10.1088/1748-9326/ad41f0
 topic: extremes-hazards
 topics:
-- regional-km-scale
-type: model
+- global-medium-range
+type: application
 method:
 - transformer
 timescale:
@@ -27,11 +27,28 @@ timescale:
 spatial:
 - regional
 data:
-- era5
 - nwp-analysis
+- era5
 status: research
-summary: Pangu-Weather used to drive a regional WRF model improves North China extreme precipitation forecasts,
-  reaching threat score 0.1 at 8.5-day lead versus 3 days for GFS-driven runs.
+summary: Pangu-Weather used to drive a regional WRF model improves North China extreme rainfall forecasts,
+  reaching threat score 0.1 at 400 mm out to 8.5 days versus 3 days for GFS.
+abstract: Abstract In the realm of weather forecasting, the implementation of Artificial Intelligence
+  (AI) represents a transformative approach. However, AI weather forecasting method still faces challenges
+  in accurately predicting meso- and smaller-scale processes and failing to directly capture extreme precipitation
+  due to regression algorithm’s nature, coarse resolution, and limitations in key variables like precipitation.
+  Therefore, we propose a state-of-the-art technology which integrates the strengths of the Pangu-weather
+  AI weather forecasting with the traditional regional weather model, focusing specifically on enhancing
+  the prediction of extreme precipitation events, as mainly exemplified by an unprecedented precipitation
+  in North China from 29 July to 1 August 2023, and an additional extraordinary precipitation event as
+  a supplementary validation to further ensure the accuracy of this technology. The results show that
+  the AI-driven approach exhibits superior performance in capturing the spatial and temporal dynamics
+  of extreme precipitation events. Remarkably, with a threshold of 400 mm, the AI-driven model secures
+  a Threat Score (TS) of 0.1 for forecast lead time reaching up to 8.5 d. This performance notably surpasses
+  the performance of traditional GFS-Driven models, which achieve a similar TS only within a limited 3-day
+  forecast lead time. This considerable enhancement in forecast accuracy, especially over extended lead
+  times illustrates the AI-driven model’s potential to advance in long-term forecasts of extreme precipitation,
+  previously considered challenging, emphasizing the potential of AI in augmenting and refining traditional
+  weather prediction.
 significance: 4
 cited_by: 80
 score: 16

@@ -28,11 +28,26 @@ spatial:
 data:
 - era5
 status: research
-summary: Jigsaw combines domain and tensor parallelism to train a 3.2B-parameter WeatherMixer on 0.125°
-  ERA5, reaching 97% of peak on 4 GPUs.
-significance: 5
+summary: Jigsaw combines domain and tensor parallelism to train a 3.2-billion-parameter WeatherMixer on
+  0.25° and 0.125° ERA5 with HPC scaling.
+abstract: AI-based methods have recently revolutionized atmospheric modeling. Successes in medium-range
+  forecasting have led to rapid developments towards AI-based models. However, accurate modeling of complex
+  atmospheric dynamics at high spatial resolutions requires billions of neural network parameters and
+  gigabyte-sized data samples, making accelerator memory and I/O-bandwidth the bottlenecks for model training.
+  To overcome these limitations, we introduce Jigsaw, a distributed training and inference scheme that
+  leverages domain and tensor parallelism to eliminate memory redundancy across model-parallel processes
+  and reduce I/O demands. We apply the Jigsaw parallelization scheme into an MLP-Mixer architecture, WeatherMixer,
+  a multi-layer-perceptron-based model with global vision that is well-suited for learning weather phenomena.
+  Using Jigsaw, we train WeatherMixer with up to 3.2B-parameters, achieving predictive performance competitive
+  with numerical weather prediction and state-of-the-art AI models. To highlight the computational performance,
+  we perform scaling experiments on global 0.25° (≈ 30 km resolution) ERA5 data across two HPC systems.
+  Anticipating that future reanalysis datasets will include even higher resolutions, we demonstrate, for
+  the first time, training on 0.125° (≈ 30 km resolution) data. The scaling experiments demonstrate that
+  the dataloading bottlenecks arising from high-resolution input data samples are reduced through domain
+  parallelism; this subsequently improves per-GPU computational throughput.
+significance: 4
 cited_by: 1
-score: 20
+score: 16
 highlight: false
 added: '2026-10-22'
 source: snowball

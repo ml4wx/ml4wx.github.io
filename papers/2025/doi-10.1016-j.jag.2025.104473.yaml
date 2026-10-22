@@ -21,20 +21,46 @@ ids:
 links:
   paper: https://doi.org/10.1016/j.jag.2025.104473
   pdf: https://doi.org/10.1016/j.jag.2025.104473
-topic: global-medium-range
+topic: benchmarks-data-eval
 topics:
-- observations-remote-sensing
+- global-medium-range
 type: evaluation
 timescale:
 - medium
 spatial:
 - global
 data:
+- era5
 - other
-- nwp-analysis
 status: research
-summary: Evaluates how AI weather forecast foundation models degrade in accuracy across space and time
-  when assessed against GNSS observations; abstract unavailable.
+summary: Evaluates Pangu-Weather, GraphCast and FengWu through GNSS tropospheric delay, finding spatiotemporal
+  inhomogeneity in accuracy degradation linked to topography.
+abstract: '• Evaluates global spatiotemporal inhomogeneity of weather forecast foundation models. • Uses
+  Pangu-Weather, GraphCast, and FengWu as representative models. • Facilitating influence between the
+  highly related atmospheric variables is found. • Considering topography during training may help to
+  improve model accuracy. • Offers valuable reference for AI practitioners developing more accurate weather
+  models. The artificial intelligence (AI) weather forecast foundation models can infer and generate precise
+  global atmospheric state forecasts on the user’s device and with speed over 10,000 times faster than
+  the operational Integrated Forecasting System (IFS), and it is making increasingly significant contributions
+  to geodetic applications represented by the Global Navigation Satellite System (GNSS). However, existing
+  studies on the investigation of these AI models are typically carried out by concentrating on specific
+  one or several meteorological events in certain regions or by comparison with physical models, and the
+  evaluation results obtained in this manner are not comprehensive and universal. Additionally, we find
+  that the results obtained by the foundation models through the “rollout” method for forecasting are
+  not uniform in terms of time and space. This temporal and spatial inhomogeneity of accuracy and accuracy
+  degradation are related to AI algorithms and attributes of training data, etc., but these characteristics
+  have not been thoroughly explored and analyzed. In this study, we obtained the global forecast results
+  of foundation models for 2022 and subsequently derived the GNSS tropospheric delay through numerical
+  integration. We calculated the mean deviation, mean absolute error, and root mean square error of these
+  data. Using these metrics, we analyzed the spatiotemporal inhomogeneity in the accuracy degradation
+  of foundation models, represented by Huawei Cloud Pangu-Weather, Google DeepMind GraphCast, and Shanghai
+  AI Lab FengWu. We evaluated how this inhomogeneity changes with forecast time and identified the best-performing
+  models across different regions and forecast durations. From the results, we find that taking topography
+  into account when training the model enhances its accuracy at high altitudes, and the facilitating influence
+  between the high related atmospheric variables such as precipitation and water vapor. The contributions
+  of this study are twofold: it serves as a valuable reference for geodetic and remote sensing users employing
+  foundational models, and offers insights and case supports for AI practitioners aiming to develop more
+  accurate models for weather forecasting.'
 significance: 3
 cited_by: 12
 score: 12

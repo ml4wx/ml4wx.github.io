@@ -16,21 +16,42 @@ links:
   pdf: https://doi.org/10.1029/2024jd042551
 topic: data-assimilation
 topics:
-- observations-remote-sensing
+- global-medium-range
+- extremes-hazards
 type: model
 method:
-- classical-ml
+- transformer
+- differentiable
+timescale:
+- short
+- medium
 spatial:
-- regional
+- global
 data:
 - era5
-- stations
 status: research
-summary: Random-forest pseudo soundings improve Tibetan Plateau initial conditions, cutting hourly precipitation
-  bias by 31.8% versus conventional soundings alone.
-significance: 3
+summary: Automatic differentiation in the FuXi AI model locates sensitive areas for target observations,
+  improving tropical cyclone track forecasts across 11 storms.
+abstract: Abstract Due to the sparse observations over the Tibetan Plateau (TP), initial conditions in
+  atmospheric models over the TP have large uncertainty, which could degrade the simulation performance
+  of precipitation over the TP. This study proposes a novel approach for generating “pseudo soundings”
+  for the atmospheric model's initial conditions. In each “pseudo soundings”, the vertical profiles of
+  heat and moisture are estimated by a random forest algorithm from the evolution and mean state of precursor
+  convective precipitation. Results indicate that the vertical structures of temperature and humidity
+  in “pseudo soundings” estimated in this study could be superior to the reanalysis data set, and could
+  well remedy the insufficient heat and moisture information for model's initial condition over the TP
+  where in situ conventional soundings are absent. Compared to the ERA5 reanalysis data set, the mean
+  relative error of temperature and specific humidity estimated in this study could be reduced by 0.7%
+  and 5.7%, respectively. Verification based on a series of simulations illustrates that assimilating
+  vertical profiles of heat and moisture in “pseudo soundings” would alleviate the spurious and overestimated
+  summer precipitation in simulations over the TP. The mean simulation bias of hourly precipitation could
+  be reduced by 31.8%, compared to assimilating in situ conventional soundings only. Further investigations
+  suggest that assimilating vertical profiles of heat and moisture in “pseudo soundings” would improve
+  the simulation performance of summer precipitation by producing a dryer and more convective stable lower
+  atmosphere over the TP.
+significance: 4
 cited_by: 0
-score: 12
+score: 16
 highlight: false
 added: '2026-10-22'
 source: snowball

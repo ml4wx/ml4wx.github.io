@@ -16,14 +16,34 @@ links:
   paper: https://doi.org/10.3390/atmos16121316
   pdf: https://doi.org/10.3390/atmos16121316
 topic: extremes-hazards
+topics:
+- global-medium-range
 type: model
 method:
 - rnn
 timescale:
 - medium
+spatial:
+- global
+data:
+- era5
 status: research
-summary: A decoupled spatiotemporal memory network predicts stratospheric sudden warmings up to 20 days
-  ahead, improving MSE by 10.5% over PredRNN baselines.
+summary: DSMF-Net, a decoupled spatiotemporal memory video model, predicts stratospheric sudden warmings
+  up to 20 days ahead, with MSE 10.5% lower than PredRNN and MotionRNN.
+abstract: Sudden Stratospheric Warmings (SSWs) are extreme polar atmospheric disturbances that significantly
+  impact mid-latitude cold surges, but their early prediction remains a challenge for conventional numerical
+  models. In this study, we propose a video prediction framework for SSW forecasting and introduce a Decoupled
+  Spatiotemporal Memory Flow Network (DSMF-Net) to more effectively capture the dynamic evolution of stratospheric
+  polar vortices. DSMF-Net separates spatial and temporal dependencies using specialized memory flow modules,
+  enabling fine-grained modeling of vortex morphology and dynamic transitions. Experiments on representative
+  SSW events from 2018 to 2021 show that DSMF-Net can reliably predict SSW occurrences up to 20 days in
+  advance while accurately replicating the evolution of polar vortex structures. Compared to baseline
+  models such as the Predictive Recurrent Neural Network (PredRNN) and Motion Recurrent Neural Network
+  (MotionRNN), our method achieves consistent improvements across various metrics, with average gains
+  of 10.5% in Mean Squared Error (MSE) and 6.4% in Mean Absolute Error (MAE) and a 0.7% increase in the
+  Structural Similarity Index Measure (SSIM). These findings underscore the potential of deep video prediction
+  frameworks to improve medium-range stratospheric forecasts and bridge the gap between data-driven models
+  and atmospheric dynamics.
 significance: 3
 cited_by: 0
 score: 12

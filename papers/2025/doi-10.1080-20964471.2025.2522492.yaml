@@ -27,11 +27,32 @@ spatial:
 data:
 - satellite
 status: research
-summary: New 20-year MODIS cloud-imagery dataset and YOLO-based detection benchmark for Kármán vortex
-  streets, with a Gamma loss improving six YOLO models.
-significance: 3
+summary: A MODIS dataset of 20 years of Kármán vortex streets with YOLO and ResNet baselines and a Gamma
+  loss for box aspect ratios.
+abstract: Atmospheric Kármán vortex streets, which frequently emerge on the leeward side of isolated islands
+  under specific atmospheric conditions, play a critical role in large-scale atmospheric dynamics. However,
+  their automated detection and the influence of atmospheric variables on their formation remain insufficiently
+  explored. Here, we firstly developed an object detection dataset utilizing 20 years of cloud imagery
+  from the MODIS aboard the Terra and Aqua satellites, facilitating the application of artificial intelligence
+  algorithms for the automated detection of Kármán vortex streets. Given that these vortex streets can
+  manifest under both cloudy and cloud-free conditions, we further assessed the contribution of various
+  spectral bands to vortex detection by implying a multi-channel classification network. This network,
+  built upon a custom-designed mini-ResNet dual-level classification network and trained on MODIS HDF-format
+  sensor data, demonstrates that the dataset is particularly suited for detecting Kármán vortex streets
+  in cloudy conditions. Different types of advanced algorithms were applied on the dataset, yielding baseline
+  performance metrics and potential detection methods. Additionally, we proposed two optimization strategies
+  tailored to Kármán vortex streets detection. First, leveraging the intrinsic properties of vortex structures,
+  we introduced a Gamma loss optimization for bounding box aspect ratios, which significantly enhanced
+  performance across six YOLO-based models. Second, we investigated the role of atmospheric variables
+  in vortex formation and incorporated an auxiliary-task-enhanced learning approach to further refine
+  detection accuracy, drawing upon findings from our recently published work. In summary, this study provides
+  a novel dataset that supports meteorological and climatological research, addressing a critical gap
+  in atmospheric data. Furthermore, the proposed auxiliary optimization strategies highlight the distinct
+  challenges of Kármán vortex streets detection compared to conventional object detection, underscoring
+  the unique structural and atmospheric characteristics of these phenomena.
+significance: 2
 cited_by: 1
-score: 12
+score: 8
 highlight: false
 added: '2026-10-22'
 source: snowball

@@ -28,8 +28,20 @@ spatial:
 data:
 - satellite
 status: research
-summary: End-to-end CNN on geostationary satellite images predicts lightning up to 180 minutes ahead,
-  outperforming optical-flow and physics-feature baselines.
+summary: An end-to-end CNN on geostationary multispectral images and past lightning predicts lightning
+  up to 180 min ahead, outperforming physics-feature and optical-flow baselines.
+abstract: While thunderstorms can pose severe risks to property and life, forecasting remains challenging,
+  even at short lead times, as these often arise in meta-stable atmospheric conditions. In this paper,
+  we examine the question of how well we could perform short-term (up to 180min) forecasts using exclusively
+  multi-spectral satellite images and past lighting events as data. We employ representation learning
+  based on deep convolutional neural networks in an “end-to-end” fashion. Here, a crucial problem is handling
+  the imbalance of the positive and negative classes appropriately in order to be able to obtain predictive
+  results (which is not addressed by many previous machine-learning-based approaches). The resulting network
+  outperforms previous methods based on physically-based features and optical flow methods (similar to
+  operational prediction models) and generalizes across different years. A closer examination of the classifier
+  performance over time and under masking of input data indicates that the learned model actually draws
+  most information from structures in the visible spectrum, with infrared imaging sustaining some classification
+  performance during the night.
 significance: 3
 cited_by: 14
 score: 12

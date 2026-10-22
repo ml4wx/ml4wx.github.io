@@ -17,7 +17,7 @@ links:
   pdf: https://doi.org/10.3389/feart.2025.1527391
 topic: extremes-hazards
 topics:
-- observations-remote-sensing
+- post-processing
 type: model
 method:
 - cnn
@@ -28,9 +28,24 @@ spatial:
 data:
 - era5
 - radar
-status: pre-operational
-summary: A CNN predicts daily hail-affected areas in Germany from ERA5 convective parameters, reaching
-  a Heidke Skill Score of 0.66 for large events and beating reference forecasts.
+status: research
+summary: A CNN using ERA5 convective predictors forecasts daily hail-affected areas in Germany with Heidke
+  Skill Score up to 0.66 for large events, dominated by CAPE-shear.
+abstract: Hailstorms pose significant risks in Germany, calling for accurate forecasts and warnings. This
+  study explores the application of a convolutional neural network (CNN) to predict daily hail-affected
+  areas using radar-based hail footprints from 2005 to 2019. The ML model utilizes 18 thermodynamic and
+  dynamic convection-related parameters derived from ERA5 reanalysis data. Feature selection identifies
+  seven key predictors, with a particular emphasis on the convective available potential energy and bulk
+  wind shear (CAPESHEAR). Model performance is assessed against climatology- and persistence-based reference
+  forecasts, and sensitivity analyses using gradient-weighted class activation mapping (Grad-CAM) are
+  conducted to interpret the predictions. The CNN model significantly outperforms the reference forecasts,
+  achieving a Heidke Skill Score (HSS) of up to 0.66 for large hail-affected areas. However, lower predictive
+  skill is observed on days with weak CAPESHEAR values or when hailstorms are isolated. Sensitivity analysis
+  highlights CAPESHEAR as the dominant predictor influencing model decisions. These findings demonstrate
+  the potential of ML-based hail prediction using only convective environmental parameters. Given its
+  low computational demand once trained, this approach offers a promising tool for operational forecasting.
+  It would be desirable to extend this approach to a more regional perspective and to include information
+  on severity.
 significance: 3
 cited_by: 1
 score: 12

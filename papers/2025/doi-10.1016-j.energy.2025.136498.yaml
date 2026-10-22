@@ -13,6 +13,8 @@ links:
   paper: https://doi.org/10.1016/j.energy.2025.136498
   pdf: https://doi.org/10.1016/j.energy.2025.136498
 topic: post-processing
+topics:
+- applications-impacts
 type: model
 method:
 - rnn
@@ -21,9 +23,27 @@ spatial:
 - regional
 data:
 - era5
+- stations
 status: research
-summary: LSTM and Transformer framework bias-corrects ERA5 hourly wind speeds; abstract not available,
-  so the scope is inferred from the title.
+summary: LSTM and Transformer models correct ERA5 wind speed biases at 170 Canadian stations, improving
+  median wind and variability in coastal and complex terrain.
+abstract: Reanalysis-derived wind speeds are central to large-scale wind resource assessment (WRA). However,
+  their coarse spatial resolution often introduces significant biases, particularly in complex terrains
+  and coastal areas. A deep learning (DL) framework using LSTMs or Transformers was introduced to correct
+  systematic biases and temporal variability in reanalysis-derived wind speeds by modeling a time-resolved
+  scaling factor, which is then used to adjust ERA5 wind speeds. The proposed framework's spatiotemporal
+  generalization capability was rigorously evaluated using a test set of 170 independent stations distributed
+  throughout Canada in diverse environmental conditions. Results showed that the DL framework outperformed
+  a standard bias correction method based on the Global Wind Atlas. It improved the median wind speed,
+  the temporal variability, and the probability distributions of ERA5 wind speeds in coastal areas and
+  complex terrains. Specifically, in coastal regions, the DL models increased the explained variability
+  of median wind speed by over 70% relative to ERA5. In regions characterized by high surface roughness
+  length, such as forests and urban areas, these models achieved average improvements of more than 10%
+  in MAE and RMSE of the time series. While the DL models performed well in representing the probability
+  distribution of the most typical wind speed values, some challenges remain in improving the distribution
+  of extreme wind speeds. Overall, this framework represents a promising advancement in enhancing the
+  accuracy of reanalysis-derived wind speeds in large-scale WRA. By reducing biases in ERA5 wind data,
+  the DL framework supports more reliable site selection and estimation of long-term energy production.
 significance: 3
 cited_by: 20
 score: 12

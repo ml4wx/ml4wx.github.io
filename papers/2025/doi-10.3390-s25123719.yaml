@@ -17,23 +17,39 @@ links:
   pdf: https://doi.org/10.3390/s25123719
 topic: observations-remote-sensing
 topics:
-- post-processing
+- nowcasting
 type: model
 method:
 - cnn
 timescale:
 - nowcast
 spatial:
-- regional
+- local
 data:
 - radar
 - stations
 status: pre-operational
-summary: ResNet-101 corrects Doppler radar rain rates using citizen science gauges, improving intensity
-  classification over NOAA operational products in observed regions.
-significance: 2
+summary: Trains a ResNet-101 on citizen-science rain gauges to correct Doppler radar rain-rate estimates,
+  improving intensity classification over NOAA operational products.
+abstract: Accurate, real-time estimation of rainfall from Doppler radars remains a challenging problem,
+  particularly over complex terrain where vertical beam sampling, atmospheric effects, and radar quality
+  limitations introduce significant biases. In this work, we leverage citizen science rain gauge observations
+  to develop a deep learning framework that corrects biases in radar-derived surface precipitation rates
+  at high temporal resolution. A key step in our approach is the construction of piecewise-linear rainfall
+  accumulation functions, which align gauge measurements with radar estimates and allow for the generation
+  of high-quality instantaneous rain rate labels from rain gauge observations. After validating gauges
+  through a two-stage temporal and spatial consistency filter, we train an adapted ResNet-101 model to
+  classify rainfall intensity from sequences of surface precipitation rate estimates. Our model substantially
+  improves precipitation classification accuracy relative to NOAA's operational radar products within
+  observed spatial regions, achieving large gains in precision, recall, and F1 score. While generalization
+  to completely unseen regions remains more challenging, particularly for higher-intensity rainfall, modest
+  improvements over baseline radar estimates are still observed in low-intensity rainfall. These results
+  highlight how combining citizen science data with physically informed accumulation fitting and deep
+  learning can meaningfully improve real-time radar-based rainfall estimation and support operational
+  forecasting in complex environments.
+significance: 3
 cited_by: 7
-score: 8
+score: 12
 highlight: false
 added: '2026-10-22'
 source: snowball

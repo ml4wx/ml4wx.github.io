@@ -18,6 +18,8 @@ links:
   paper: https://doi.org/10.3390/e23101314
   pdf: https://doi.org/10.3390/e23101314
 topic: s2s-seasonal
+topics:
+- global-medium-range
 type: model
 method:
 - cnn
@@ -30,8 +32,21 @@ spatial:
 data:
 - era5
 status: research
-summary: CNN-LSTM with Gaussian smoothing predicts 50 hPa polar vortex intensity up to 20 days ahead,
-  outperforming traditional and advanced spatiotemporal baselines.
+summary: Introduces a CNN-LSTM with Gaussian smoothing that predicts Northern Hemisphere polar vortex
+  intensity up to 20 days ahead, outperforming baseline spatiotemporal models.
+abstract: The variation of polar vortex intensity is a significant factor affecting the atmospheric conditions
+  and weather in the Northern Hemisphere (NH) and even the world. However, previous studies on the prediction
+  of polar vortex intensity are insufficient. This paper establishes a deep learning (DL) model for multi-day
+  and long-time intensity prediction of the polar vortex. Focusing on the winter period with the strongest
+  polar vortex intensity, geopotential height (GPH) data of NCEP from 1948 to 2020 at 50 hPa are used
+  to construct the dataset of polar vortex anomaly distribution images and polar vortex intensity time
+  series. Then, we propose a new convolution neural network with long short-term memory based on Gaussian
+  smoothing (GSCNN-LSTM) model which can not only accurately predict the variation characteristics of
+  polar vortex intensity from day to day, but also can produce a skillful forecast for lead times of up
+  to 20 days. Moreover, the innovative GSCNN-LSTM model has better stability and skillful correlation
+  prediction than the traditional and some advanced spatiotemporal sequence prediction models. The accuracy
+  of the model suggests important implications that DL methods have good applicability in forecasting
+  the nonlinear system and vortex spatial-temporal characteristics variation in the atmosphere.
 significance: 3
 cited_by: 9
 score: 12

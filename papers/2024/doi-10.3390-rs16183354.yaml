@@ -21,16 +21,29 @@ topics:
 type: model
 method:
 - classical-ml
-timescale:
-- nowcast
 spatial:
 - regional
 data:
 - satellite
 - era5
 status: research
-summary: Ensemble BPNN and decision tree detects hail over China from FY-4A infrared imagery and ERA5
-  variables, reaching POD 0.69 with reasonable false alarms.
+summary: BPNN and decision-tree ensemble detects hail over China from FY-4A infrared data and ERA5, reaching
+  a probability of detection of 0.69.
+abstract: Hail poses a significant meteorological hazard in China, leading to substantial economic and
+  agricultural damage. To enhance the detection of hail and mitigate these impacts, this study presents
+  an ensemble machine learning model (BPNN+Dtree) that combines a backpropagation neural network (BPNN)
+  and a decision tree (Dtree). Using FY-4A satellite and ERA5 reanalysis data, the model is trained on
+  geostationary satellite infrared data and environmental parameters, offering comprehensive, all-day,
+  and large-area hail monitoring over China. The ReliefF method is employed to select 13 key features
+  from 29 physical quantities, emphasizing cloud-top and thermodynamic properties over dynamic ones as
+  input features for the model to enhance its hail differentiation capability. The BPNN+Dtree ensemble
+  model harnesses the strengths of both algorithms, improving the probability of detection (POD) to 0.69
+  while maintaining a reasonable false alarm ratio (FAR) on the test set. Moreover, the model’s spatial
+  distribution of hail probability more closely matches the observational data, outperforming the individual
+  BPNN and Dtree models. Furthermore, it demonstrates improved regional applicability over overshooting
+  top (OT)-based methods in the China region. The identified high-frequency hail areas correspond to the
+  north-south movement of the monsoon rain belt and are consistent with the northeast-southwest belt distribution
+  observed using microwave-based methods.
 significance: 3
 cited_by: 3
 score: 12

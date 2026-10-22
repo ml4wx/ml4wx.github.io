@@ -17,9 +17,9 @@ ids:
 links:
   paper: https://doi.org/10.3390/land15091726
   pdf: https://doi.org/10.3390/land15091726
-topic: local-forecasting
+topic: regional-km-scale
 topics:
-- applications-impacts
+- benchmarks-data-eval
 type: evaluation
 method:
 - classical-ml
@@ -27,12 +27,30 @@ method:
 timescale:
 - short
 spatial:
-- local
+- regional
 data:
-- other
+- km-scale-sim
 status: research
-summary: Benchmarks eight pointwise surrogates for 24-hour recursive forecasts of urban WRF heatwave variables;
-  Random Forest, LSTM and MLP each win different targets.
+summary: Benchmarks Ridge, random forest, XGBoost, MLP, GRU and LSTM as surrogates for urban WRF heatwave
+  outputs; Random Forest is best for T2 at 1.08 °C error.
+abstract: High-resolution urban Weather Research and Forecasting (WRF) simulations resolve interactions
+  among urban form, near-surface meteorology, atmospheric dynamics, and building-energy processes, but
+  their computational cost limits repeated scenario analysis. This study compares eight pointwise temporal
+  surrogates (Persistence, previous-day same-hour, Ridge, Random Forest, XGBoost, multilayer perceptron
+  (MLP), gated recurrent unit (GRU), and long short-term memory (LSTM)) for recursive 24 h prediction
+  of T2, Q2, W10, and WRF-BEM diagnostic air-conditioning power density (AC) from a 120 h WRF-BEP/BEM-LCZ
+  heatwave simulation over Chongqing. Model development used three expanding-window folds, fold-specific
+  scaling, fixed monitoring cells, and five fixed seeds for stochastic families; the h97–h120 full-domain
+  test remained untouched until all modeling choices had been finalized. Station comparisons provided
+  a limited check on the physical plausibility of the WRF meteorological fields; AC was not validated
+  against metered energy use. Model performance depended strongly on the target variable. Random Forest
+  performed best for T2 (1.081 ± 0.002 °C), LSTM for Q2 (0.969 ± 0.063 g/kg), and MLP for AC (0.505 ±
+  0.187 W/m2), whereas deterministic Ridge was best for W10 (1.095 m/s). W10 had weaker temporal memory
+  (median lag-1/lag-24 ACF 0.581/0.211). Ridge outperformed the Previous-day baseline for 75.0% of grid
+  cells, although errors increased sharply in the top wind-speed decile and during rapid changes. For
+  this single-event, single-city benchmark, recurrent models did not improve W10 accuracy over Ridge.
+  Model choice depended on the target and the balance between accuracy, spatial fidelity, and computational
+  cost; transfer to other events and meteorological regimes remains untested.
 significance: 2
 cited_by: 0
 score: 8

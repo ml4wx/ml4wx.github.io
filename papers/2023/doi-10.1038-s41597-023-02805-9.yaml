@@ -27,10 +27,22 @@ spatial:
 - regional
 data:
 - cmip
-- other
+- era5
 status: research
-summary: U-Net bias correction and downscaling of 19 CMIP6 models yields a 0.1° daily East Asia dataset
-  of nine variables for 1950–2100 under three SSPs.
+summary: U-Net bias-corrected downscaling of 19 CMIP6 models to a 0.1° daily East Asia dataset (CLIMEA-BCUD)
+  covering 1950–2100 for nine near-surface variables.
+abstract: U-Net, a deep-learning convolutional neural network, is used to downscale coarse meteorological
+  data. Based on 19 models from the Coupled Model Intercomparison Project Phase 6 and the Multi-Source
+  Weather (MSWX) dataset, bias correction and UNet downscaling approaches are used to develop high resolution
+  dataset over the East Asian region, referred to as Climate Change for East Asia with Bias corrected
+  UNet Dataset (CLIMEA-BCUD). CLIMEA-BCUD provides nine meteorological variables including 2-m air temperature,
+  2-m daily maximum air temperature, 2-m daily minimum air temperature, precipitation, 10-m wind speed,
+  2-m relative humidity, 2-m specific humidity, downward shortwave radiation and downward longwave radiation
+  with 0.1° horizontal resolution at daily intervals over the historical period of 1950-2014 and three
+  future scenarios (SSP1-2.6, SSP2-4.5 and SSP5-8.5) of 2015-2100. Validation against MSWX indicates that
+  CLIMEA-BCUD shows reasonable performance in terms of climatology, and it is capable of simulating seasonal
+  cycles and future changes well. It is suggested that CLIMEA-BCUD can promote the application of deep
+  learning in climate research in the areas of climate change, hydrology, etc.
 significance: 4
 cited_by: 54
 score: 16

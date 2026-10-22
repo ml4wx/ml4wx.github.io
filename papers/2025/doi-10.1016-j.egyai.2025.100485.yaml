@@ -15,16 +15,39 @@ links:
   paper: https://doi.org/10.1016/j.egyai.2025.100485
   pdf: https://doi.org/10.1016/j.egyai.2025.100485
 topic: downscaling
+topics:
+- applications-impacts
 type: model
 method:
 - cnn
+timescale:
+- short
 spatial:
 - regional
 data:
-- other
+- km-scale-sim
 status: research
-summary: Domain-informed CNN architectures downscale regional wind forecasts to higher resolution. Based
-  on title only.
+summary: Two sequential U-Nets with static topography fusion downscale regional wind forecasts from WRF,
+  with a composite Wiener-L1 loss balancing detail and amplitude.
+abstract: High-resolution wind speed forecasts are of great importance to the wind energy industry, from
+  short-term energy forecasting and trading to longer-term resource assessment and planning. Generating
+  high-resolution regional wind forecasts currently requires compute-intensive numerical models to downscale
+  from a global forecast. Black-box AI models, once trained, can produce results in a fraction of the
+  time and cost; however, they tend to produce smoothed outputs, are not interpretable and generalise
+  poorly. The domain-informed AI architecture presented in this work seeks to address these problems by
+  incorporating prior static fields directly into the model architecture. Specifically, the proposed approach
+  combines two sequential U-Nets – the first upsamples the input wind fields and expands the number of
+  feature maps, a fusion layer then injects prior static data such as topography, and a second U-Net generates
+  the final output wind field. This approach improves all performance metrics versus a baseline U-Net
+  model and generalises better to out-of-sample scenarios. In addition, this study compares the performance
+  of several loss functions, including standard pixel-wise measures such as mean-squared error, structural
+  similarity and frequency-focused functions, and a function based on Wiener filter theory. All loss functions,
+  with the exception of the Wiener loss, perform comparably and tend to attenuate higher-frequency detail.
+  Although the Wiener loss encourages higher frequencies, it over-estimates amplitudes. A composite Wiener-L1
+  loss function balances generating high-frequency detail and correctly predicting amplitudes. • WRF simulations
+  were generated to explore AI-based downscaling of wind forecasts. • A sequential U-Net-based downscaling
+  model leverages static fields (e.g. topography). • A composite Wiener-L1 loss function improves high-frequency
+  signal reconstruction.
 significance: 3
 cited_by: 5
 score: 12

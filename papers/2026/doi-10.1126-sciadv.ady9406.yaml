@@ -18,6 +18,7 @@ links:
   pdf: https://doi.org/10.1126/sciadv.ady9406
 topic: extremes-hazards
 topics:
+- xai-uq-physics
 - global-medium-range
 type: evaluation
 timescale:
@@ -28,11 +29,22 @@ data:
 - era5
 - nwp-analysis
 status: research
-summary: GraphCast and AIFS forecast the 2024 Dubai storm up to 8 days ahead; AI skill comes from translocation
-  of similar events rather than extrapolation.
-significance: 5
+summary: GraphCast and AIFS forecast the 2024 Dubai record rainfall up to 8 days ahead via translocation
+  from similar events elsewhere; FuXi underestimates it.
+abstract: 'Artificial intelligence (AI) models have transformed weather forecasting, but their skill for
+  unprecedented weather extremes is unclear. Here, we analyze GraphCast, AIFS, and FuXi forecasts of the
+  unprecedented 2024 Dubai storm, which had twice the training set''s highest rainfall in that region.
+  GraphCast and AIFS accurately forecast this event up to 8 days ahead. FuXi forecasts the event but underestimates
+  the rainfall. Fine-tuning and receptive field analyses suggest that these models'' success stems from
+  "translocation": learning from comparable/stronger dynamically similar events in other regions during
+  training. Evidence of "extrapolation" (learning from weaker events) is not found. Even events within
+  the global distribution''s tail are poorly forecasted, which is not only due to data imbalance (generalization
+  error) but also spectral bias (optimization error). These findings demonstrate the potential of AI models
+  to forecast "regional" gray swans and the opportunity to improve them through understanding the mechanisms
+  behind their successes/limitations.'
+significance: 6
 cited_by: 1
-score: 40
+score: 44
 highlight: false
 added: '2026-10-22'
 source: snowball

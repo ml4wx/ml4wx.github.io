@@ -27,12 +27,34 @@ spatial:
 - regional
 data:
 - stations
-status: research
-summary: CHM_PRE V2 gridded daily precipitation dataset blends gauge interpolation with LightGBM covariates,
-  reducing MAE by 12.84% versus the prior best product.
+status: operational
+summary: Releases CHM_PRE V2, a daily gridded China precipitation dataset from LightGBM and inverse-distance
+  weighting, with 12.8% lower MAE than the prior best dataset.
+abstract: Abstract. Precipitation is a critical driver of the water cycle, profoundly influencing water
+  resources, agricultural productivity, and natural disasters. However, existing gridded precipitation
+  datasets exhibit markable deficiencies in capturing the spatiotemporal and physical correlations of
+  precipitation, which limits their accuracy, particularly in regions with sparse meteorological stations.
+  Therefore, this study proposes a completely new gridded precipitation generation scheme to address these
+  issues. The long-term daily observation from 3,476 gauges and incorporated 11 related precipitation
+  variables were utilized to characterize the correlations of precipitation. By employing an improved
+  inverse distance weighting method combined with the machine learning-based light gradient boosting machine
+  (LGBM) algorithm, a new high-precision, long-term, daily gridded precipitation dataset for mainland
+  China (CHM_PRE V2) was developed, which aims to improve upon and surpass the CHM_PRE V1 dataset, developed
+  in our previous work. Validation against 63,397 high-density gauges demonstrated that CHM_PRE V2 significantly
+  outperforms existing datasets, achieving a mean absolute error of 1.48 mm/day and a Kling-Gupta efficiency
+  of 0.88, representing improvements of 12.84 % and 12.86 %, respectively, compared to the previously
+  optimal dataset. Regarding precipitation event detection, CHM_PRE V2 achieved a Heidke skill score of
+  0.68 and a false alarm ratio of 0.24, surpassing other datasets by 17.24 % and 29.17 %, respectively.
+  Feature importance analysis revealed that spatiotemporal and physical correlations contributed 37.10
+  %, 34.11 %, and 28.78 % to precipitation retrieval, underscoring the necessity of incorporating temporal
+  and physical correlations. CHM_PRE V2 markedly enhances precipitation measurement accuracy, reduces
+  overestimation of precipitation events, and provides a reliable foundation for hydrological modelling
+  and climate assessments. This dataset features a resolution of 0.1°, spans from 1960 to 2023, and will
+  be updated annually. Free access to the dataset can be found at https://doi.org/10.5281/zenodo.14632157
+  (Hu and Miao, 2025).
 significance: 3
 cited_by: 77
-score: 12
+score: 22
 highlight: false
 added: '2026-10-22'
 source: snowball

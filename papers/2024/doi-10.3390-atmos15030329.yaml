@@ -17,11 +17,10 @@ links:
   pdf: https://www.mdpi.com/2073-4433/15/3/329/pdf?version=1709809720
 topic: nowcasting
 topics:
-- regional-km-scale
+- observations-remote-sensing
 type: model
 method:
 - cnn
-- rnn
 timescale:
 - nowcast
 spatial:
@@ -30,8 +29,27 @@ data:
 - era5
 - satellite
 status: research
-summary: MultiPred fuses ERA5 multimodal fields with recursive spatiotemporal networks to predict 4-hour
-  regional precipitation, improving light-rain skill over baselines.
+summary: MultiPred fuses ERA5 multimodal fields with recursive spatiotemporal prediction to forecast 4
+  h of precipitation over southern China, improving light-rain skill scores.
+abstract: Due to the complexity and uncertainty of meteorological systems, traditional precipitation forecasting
+  methods have certain limitations. Therefore, based on the common characteristics of meteorological data,
+  a precipitation forecasting model named MultiPred is proposed, with the goal of continuously predicting
+  precipitation for 4 h in a specific region. This model combines the multimodal fusion method with recursive
+  spatiotemporal prediction models. The training and testing process of the model roughly involves using
+  spatial feature extraction networks and temporal feature extraction networks to generate preliminary
+  predictions for multimodal data. Subsequently, a modal fusion layer is employed to further extract and
+  fuse the spatial features of the preliminary predictions from the previous step, outputting the predicted
+  precipitation values for the target area. Experimental tests and training were conducted using ERA5
+  multi-meteorological modal data and GPM satellite precipitation data from 2017 to 2020, covering longitudes
+  from 110° to 122° and latitudes from 20° to 32°. The training set used data from the first three years,
+  while the validation set and test set each comprised 50% of the data from the fourth year. The initial
+  learning rate for the experiment was set to 1 × 10−4, and training was performed for 1000 epochs. Additionally,
+  the training process utilized a loss function composed of Mean Absolute Error (MAE), Mean Squared Error
+  (MSE), and Structural Similarity Index (SSIM). The model was evaluated using the Critical Success Index
+  (CSI), Probability of Detection (POD), and the Heidke Skill Score (HSS). Experimental results demonstrate
+  that MultiPred excels in precipitation forecasting, particularly for light precipitation events with
+  amounts greater than or equal to 0.1 mm and less than 2 mm. It achieves optimal performance in both
+  light and heavy precipitation forecasting tasks.
 significance: 3
 cited_by: 1
 score: 12

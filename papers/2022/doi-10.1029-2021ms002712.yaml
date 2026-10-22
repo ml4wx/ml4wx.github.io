@@ -19,10 +19,10 @@ links:
   pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2021MS002712
 topic: hybrid-parameterization
 topics:
-- climate-emulation
+- global-medium-range
 type: model
 method:
-- rnn
+- other
 timescale:
 - medium
 - climate
@@ -31,8 +31,20 @@ spatial:
 data:
 - other
 status: research
-summary: Reservoir-computing hybrid of an AGCM (CHyPP) beats the host model for 7-8 forecast days and
-  yields a 10-year simulation with smaller systematic errors.
+summary: Couples reservoir-computing ML with an atmospheric GCM, improving forecasts for 7 to 8 days and
+  giving a 10-year hybrid simulation with smaller systematic errors.
+abstract: Abstract This paper describes an implementation of the combined hybrid‐parallel prediction (CHyPP)
+  approach of Wikner et al. (2020), https://doi.org/10.1063/5.0005541 on a low‐resolution atmospheric
+  global circulation model (AGCM). The CHyPP approach combines a physics‐based numerical model of a dynamical
+  system (e.g., the atmosphere) with a computationally efficient type of machine learning (ML) called
+  reservoir computing to construct a hybrid model. This hybrid atmospheric model produces more accurate
+  forecasts of most atmospheric state variables than the host AGCM for the first 7–8 forecast days, and
+  for even longer times for the temperature and humidity near the earth's surface. It also produces more
+  accurate forecasts than a model based only on ML, or a model that combines linear regression, rather
+  than ML, with the AGCM. The potential of the CHyPP approach for climate research is demonstrated by
+  a 10‐year long hybrid model simulation of the atmospheric general circulation, which shows that the
+  hybrid model can simulate the general circulation with substantially smaller systematic errors and more
+  realistic variability than the host AGCM.
 significance: 4
 cited_by: 85
 score: 16

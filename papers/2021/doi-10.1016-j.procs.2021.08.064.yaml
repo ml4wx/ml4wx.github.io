@@ -14,19 +14,34 @@ links:
   paper: https://doi.org/10.1016/j.procs.2021.08.064
   pdf: https://www.sciencedirect.com/science/article/pii/S1877050921015519/pdf
 topic: nowcasting
+topics:
+- observations-remote-sensing
 type: model
 method:
 - cnn
 timescale:
 - nowcast
+spatial:
+- regional
 data:
 - satellite
 status: research
-summary: A deep learning model predicts future satellite images for nowcasting; the abstract is unavailable,
-  so methodological details and results are limited.
-significance: 2
+summary: DeePS at is a CNN that predicts short-term Meteosat-11 satellite images for nowcasting, reaching
+  a 3.84% normalized mean absolute error across five products.
+abstract: Due to the increasing number of severe phenomena in many regions of the world, weather nowcasting,
+  which is the weather forecast for a short time period, is one of the most challenging topics in meteorology.
+  The weather radar and satellite are essential tools currently used by operational meteorologists for
+  nowcasting. Issuing nowcasting warnings based on radar and satellite data is a complex task, due to
+  the large volume of data that should be analyzed by meteorologists in order to make decisions. We are
+  introducing in this paper DeePS at, a convolutional neural network architecture for short-term satellite
+  images prediction that would be useful for weather nowcasting. The experimental evaluation is conducted
+  on satellite data collected by EUMETSAT’s Meteosat-11 satellite, using five satellite products. The
+  obtained results are analyzed and compared to the results of similar approaches. An average normalized
+  mean of absolute errors of 3.84% was obtained for all satellite products, highlighting this way the
+  effectiveness of DeePS at model.
+significance: 3
 cited_by: 22
-score: 8
+score: 12
 highlight: false
 added: '2026-10-22'
 source: snowball

@@ -15,24 +15,37 @@ links:
   paper: https://doi.org/10.1109/jstars.2025.3575763
   pdf: https://doi.org/10.1109/jstars.2025.3575763
 topic: observations-remote-sensing
-topics:
-- nowcasting
 type: model
 method:
 - gan-vae
-timescale:
-- nowcast
+- cnn
 spatial:
 - regional
 data:
 - satellite
-- other
 status: pre-operational
-summary: IR2Rain is a conditional GAN that retrieves IMERG-like precipitation from GK-2A infrared data.
-  It achieves POD 0.607 and RMSE 0.759 mm/h, with lower latency than IMERG.
-significance: 4
+summary: IR2Rain conditional GAN retrieves IMERG-like precipitation from GK-2A infrared data, improving
+  rain-rate detection and latency over the original GK-2A product.
+abstract: This study proposes an infrared-to-rain (IR2Rain) model to enhance the accuracy of the geostationary
+  (GEO) weather satellite Geo-Kompsat-2A (GK-2A) Rain Rate (RR) product. The IR2Rain model is built upon
+  a conditional generative adversarial network, taking GK-2A brightness temperatures as inputs and Integrated
+  Multi-satellitE Retrievals for GPM (IMERG) Final RRs as target values. To address the distinct physical
+  characteristics and ranges of the input and target datasets, IR2Rain employs preprocessing for normalization
+  and postprocessing for denormalization. The IR2Rain model is developed and validated using the paired
+  input and output datasets collected between September 2019 and December 2022, encompassing a broad region
+  across Asia and Oceania. This study compares the performance of IR2Rain-derived RRs against IMERG RR,
+  GK-2A RR, and PERSIANN-Dynamic Infrared Rain Rate-Now products. The results demonstrated a probability
+  of detection of 0.607, a critical success index of 0.482, a root mean square error of 0.759 mm/hr, and
+  a correlation coefficient of 0.671. By combining the high temporal resolution of GEO satellite observations
+  with the reliability of IMERG Final data, the IR2Rain model produces a robust near-real-time IMERG-like
+  precipitation product. Despite smoothing effects and the tendency to underestimate intense rainfall,
+  IR2Rain improves the performance relative to RR products based on the same GK-2A IR data, mitigates
+  the latency encountered in IMERG data generation, and provides timely and accurate precipitation information
+  on intensity and distribution. These products are particularly valuable for operational weather forecasting
+  and public end-users in Asia and Oceania, supporting disaster preparedness and hydrological applications.
+significance: 3
 cited_by: 2
-score: 16
+score: 12
 highlight: false
 added: '2026-10-22'
 source: snowball

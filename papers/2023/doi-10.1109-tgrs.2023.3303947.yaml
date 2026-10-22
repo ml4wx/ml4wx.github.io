@@ -23,7 +23,6 @@ topics:
 type: model
 method:
 - gan-vae
-- rnn
 timescale:
 - nowcast
 spatial:
@@ -31,8 +30,8 @@ spatial:
 data:
 - satellite
 status: research
-summary: STCNet predicts FY-4A satellite image sequences using motion memory and a frame discriminator
-  to improve spatial-temporal consistency and reduce blur.
+summary: STCNet predicts FY-4A satellite image sequences using a motion-memory predictor, a time-variant
+  discriminator and scheduled sampling to keep sharper, more consistent frames.
 significance: 3
 cited_by: 12
 score: 12

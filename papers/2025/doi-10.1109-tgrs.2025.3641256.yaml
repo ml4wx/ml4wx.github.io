@@ -35,11 +35,36 @@ data:
 - satellite
 - stations
 status: research
-summary: A U-Net on SEVIRI infrared channel differences detects lightning over Italy day and night, reaching
-  0.68 average precision against LAMPINET data.
-significance: 3
+summary: U-Net detects lightning over Italy from SEVIRI infrared channel differences alone, reaching precision
+  0.68 and recall 0.76 against LAMPINET data.
+abstract: 'The study of lightning strikes, as a direct expression of atmospheric instability and an indicator
+  of convective phenomena expected to increase with global warming, is essential to analyse how climate
+  change manifests and to assess potential impacts on diverse sectors such as civil protection, power
+  grids, and air transport. To support this objective, this work presents a novel methodological framework,
+  representing the first application of a deep learning model to exclusively SEVIRI infrared channels
+  for lightning detection over Italy, coupled with independent validation against an external data source.
+  Specifically, a U-Net Convolutional Neural Network model (MIRIL-UNET) has been trained to detect lightning
+  occurrences based on three key channel differences: Water Vapor Difference (6.2-7.3 μm), Infrared Difference
+  (3.9-10.8 μm), and Water Vapor Infrared Difference (6.2-10.8 μm). The selection of these channel combinations
+  was carried out through an expert judgment phase, ensuring the physical relevance and discriminative
+  capacity of the input features. The methodology enables continuous monitoring during both day and night
+  by exclusively utilizing infrared channels. The network was trained and validated using lightning data
+  collected from the LAMPINET ground-based detection network of the Italian Air Force during the period
+  2020–2023. To address the significant class imbalance inherent in lightning detection, a Binary Focal
+  Cross-Entropy loss function with class balancing has been employed. The model achieved an average Precision
+  of 0.68, a Recall of 0.76 and a F-beta score of 0.72 across the Italian territory, with performance
+  depending on the Italian macro area considered. Overall, our results are consistent with those reported
+  in other studies applying a similar methodology [31], [32]. In addition, by exploiting the characteristic
+  signatures of convective systems in satellite channels, they offer improved coverage relative to ground-based
+  detection systems, which inherently struggle to detect intracloud and cloud-to-cloud flashes. Finally,
+  an independent validation using Blitzortung data underscores the robustness and originality of this
+  approach, while demonstrating how the neural network’s performance is influenced by the spatial granularity
+  of the ground-based detection network. This approach highlights the value of satellite, especially in
+  areas where ground-based networks are limited in time or resolution, offering a complementary means
+  to improve overall detection capability.'
+significance: 2
 cited_by: 1
-score: 12
+score: 8
 highlight: false
 added: '2026-10-22'
 source: snowball

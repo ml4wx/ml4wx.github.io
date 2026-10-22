@@ -26,8 +26,24 @@ data:
 - radar
 - stations
 status: research
-summary: DeepPrecip, a CNN, retrieves surface precipitation from near-surface radar profiles with 160%
-  lower MSE than standard methods across nine locations.
+summary: DeepPrecip, a CNN, retrieves 20-minute surface precipitation from near-surface radar with about
+  99% lower MSE than current methods across nine locations.
+abstract: Abstract. Remotely-sensed precipitation retrievals are critical for advancing our understanding
+  of global energy and hydrologic cycles in remote regions. Radar reflectivity profiles of the lower atmosphere
+  are commonly linked to precipitation through empirical power laws, but these relationships are tightly
+  coupled to particle microphysical assumptions that do not generalize well to different regional climates.
+  Here, we develop a robust, highly generalized precipitation retrieval from a deep convolutional neural
+  network (DeepPrecip) to estimate 20-minute average surface precipitation accumulation using near-surface
+  radar data inputs. DeepPrecip displays high retrieval skill and can accurately model total precipitation
+  accumulation, with a mean square error (MSE) 99 % lower, on average, than current methods. DeepPrecip
+  also outperforms a less complex machine learning retrieval algorithm, demonstrating the value of deep
+  learning when applied to precipitation retrievals. Predictor importance analyses suggest that a combination
+  of both near-surface (below 1 km) and higher-altitude (1.5 – 2 km) radar measurements are the primary
+  features contributing to retrieval accuracy. Further, DeepPrecip closely captures total precipitation
+  accumulation magnitudes and variability across nine distinct locations without requiring any explicit
+  descriptions of particle microphysics or geospatial covariates. This research reveals the important
+  role for deep learning in extracting relevant information about precipitation from atmospheric radar
+  retrievals.
 significance: 3
 cited_by: 11
 score: 12

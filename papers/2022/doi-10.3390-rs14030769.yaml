@@ -23,17 +23,38 @@ topics:
 type: model
 method:
 - gan-vae
-- cnn
 spatial:
 - regional
 data:
 - satellite
 status: research
-summary: A GAN with dual learning downscales WindSat sea surface wind to 0.015625° (16x) with the highest
-  accuracy, and adapts without high-resolution ground truth.
-significance: 2
+summary: A GAN with dual learning downscales WindSat sea surface wind to 0.015625° (16x), with better
+  RMSE and R-Square than baselines on synthetic and unpaired data.
+abstract: Sea surface wind (SSW) is a crucial parameter for meteorological and oceanographic research,
+  and accurate observation of SSW is valuable for a wide range of applications. However, most existing
+  SSW data products are at a coarse spatial resolution, which is insufficient, especially for regional
+  or local studies. Therefore, in this paper, to derive finer-resolution estimates of SSW, we present
+  a novel statistical downscaling approach for satellite SSW based on generative adversarial networks
+  and dual learning scheme, taking WindSat as a typical example. The dual learning scheme performs a primal
+  task to reconstruct high resolution SSW, and a dual task to estimate the degradation kernels, which
+  form a closed loop and are simultaneously learned, thus introducing an additional constraint to reduce
+  the solution space. The integration of a dual learning scheme as the generator into the generative adversarial
+  network structure further yield better downscaling performance by fine-tuning the generated SSW closer
+  to high-resolution SSW. Besides, a model adaptation strategy was exploited to enhance the capacity for
+  downscaling from low-resolution SSW without high-resolution ground truth. Comprehensive experiments
+  were conducted on both the synthetic paired and unpaired SSW data. In the study areas of the East Coast
+  of North America and the North Indian Ocean, in this work, the downscaling results to 0.25° (high resolution
+  on the synthetic dataset), 0.03125° (8× downscaling), and 0.015625° (16× downscaling) of the proposed
+  approach achieve the highest accuracy in terms of root mean square error and R-Square. The downscaling
+  resolution can be enhanced by increasing the basic blocks in the generator. The highest downscaling
+  reconstruction quality in terms of peak signal-to-noise ratio and structural similarity index was also
+  achieved on the synthetic dataset with high-resolution ground truth. The experimental results demonstrate
+  the effectiveness of the proposed downscaling network and the superior performance compared with the
+  other typical advanced downscaling methods, including bicubic interpolation, DeepSD, dual regression
+  networks, and adversarial DeepSD.
+significance: 3
 cited_by: 16
-score: 8
+score: 12
 highlight: false
 added: '2026-10-22'
 source: snowball

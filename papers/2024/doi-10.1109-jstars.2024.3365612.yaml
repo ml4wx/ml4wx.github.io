@@ -25,8 +25,23 @@ spatial:
 data:
 - radar
 status: research
-summary: DB-RNN adds adversarial and gradient losses plus a deblurring network to recurrent radar nowcasting
-  models, reducing blur on HKO-7 and DWD-12 datasets.
+summary: DB-RNN adds adversarial and gradient losses plus a deblurring RNN stage to reduce blurring in
+  radar precipitation nowcasts on HKO-7 and DWD-12.
+abstract: Precipitation nowcasting based on artificial intelligence has garnered widespread attention
+  in the meteorological and computer communities in recent years. While new models are continuously proposed
+  to refresh the forecasting performance, the problem of gradual blurring of forecast maps as the forecast
+  period extends is still serious. Most models use the mean loss and the recursive prediction structure
+  (such as MS-RNN). The mean loss always results in an average of future states, visually appearing as
+  a blur. The recursive prediction method brings the accumulation of error (blur), causing the error (blur)
+  of long-term predictions to increase exponentially. In this study, we add the adversarial loss and gradient
+  loss to penalize the network to ease the blur caused by the averaging loss, and we introduce an additional
+  deblurring network (composed of MS-RNN) behind the forecasting network (composed of MS-RNN) to alleviate
+  the blur caused by the recursive structure, which reduces the blur of the current frame and then recursively
+  and incrementally reduces the blur of subsequent frames. We name the proposed model DB-RNN, which can
+  slow down the error accumulation and alleviate the blurring dilemma. Like MS-RNN, DB-RNN is compatible
+  with multiple RNN models, such as ConvLSTM, TrajGRU, PredRNN, PredRNN++, MIM, MotionRNN, PrecipLSTM,
+  etc. Experiments on two large radar datasets named HKO-7 and DWD-12 indicate that DB-RNN's predictions
+  are more accurate and clear than those from MS-RNN.
 significance: 3
 cited_by: 36
 score: 12

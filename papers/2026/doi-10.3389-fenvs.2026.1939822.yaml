@@ -14,19 +14,41 @@ links:
   pdf: https://doi.org/10.3389/fenvs.2026.1939822
 topic: extremes-hazards
 topics:
-- llms-agents
+- global-medium-range
 type: model
 method:
 - other
 timescale:
-- short
+- medium
 spatial:
-- global
+- regional
 data:
 - nwp-analysis
+- other
 status: research
-summary: A quantum-enhanced neural network reports a 120-h Atlantic track MAE of 83.7 km versus 312 km
-  for an operational ensemble; claims are unverified and the quantum framing is questionable.
+summary: Quantum-enhanced neural network claims 120-h Atlantic hurricane track MAE of 83.7 km versus 312
+  km for an operational ensemble; the claims need independent verification.
+abstract: 'Introduction Accurate prediction of hurricane tracks, intensity, and rapid intensification
+  remains a major challenge in meteorological forecasting. This study investigates whether a hybrid quantum-classical
+  approach, called the Quantum-Enhanced Neural Network (QENN), can improve tropical cyclone prediction.
+  Methods QENN combines atmospheric features from multiple sources with a four-layer, 50-qubit variational
+  circuit, grouped Pauli measurements, and a classical temporal prediction model. The evaluation included
+  847 Atlantic tropical cyclones recorded between 1980 and 2024. Separate hurricane-disjoint partitions
+  were used for model development, validation, testing, and the 2024 holdout evaluation. Model reliability
+  was further examined through ten random-seed runs, storm-level bootstrap confidence intervals, calibration
+  analysis, comparisons with recent forecasting models, and a width-matched classical ablation study.
+  Results On the locked 2016–2023 test set, QENN achieved a 120-h track mean absolute error of 83.7 km
+  (95% confidence interval [CI]: 78.9–88.6 km), compared with 312.0 km (95% CI: 299.6–325.1 km) for the
+  operational classical ensemble, representing a 73.2% reduction in relative error. For rapid-intensification
+  prediction, QENN achieved a balanced accuracy of 94.7% (95% CI: 91.2%–97.1%), while the classical baseline
+  achieved 67.3%. The median wall-clock time was 50.0 min for QENN and 210.0 min for the classical ensemble,
+  equivalent to a 4.20-fold speed-up and a 76.2% reduction in runtime. In the 2024 holdout evaluation,
+  which included six storms, the mean landfall-position error was 45 km (95% CI: 39–51 km). Discussion
+  The results indicate that quantum-enhanced correlation features may improve forecasting accuracy and
+  computational efficiency within the proposed experimental framework. However, the runtime comparison
+  does not establish a formal quantum computational advantage. Further testing under operational forecasting
+  conditions and validation on quantum hardware are needed to assess the reliability, generalizability,
+  and practical value of the approach.'
 significance: 2
 cited_by: 0
 score: 8

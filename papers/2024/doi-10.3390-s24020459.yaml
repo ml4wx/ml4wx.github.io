@@ -15,8 +15,6 @@ links:
   paper: https://doi.org/10.3390/s24020459
   pdf: https://www.mdpi.com/1424-8220/24/2/459/pdf?version=1704974868
 topic: nowcasting
-topics:
-- observations-remote-sensing
 type: model
 method:
 - rnn
@@ -28,11 +26,26 @@ spatial:
 data:
 - radar
 status: research
-summary: A time-distributed ConvLSTM2D architecture improves radar echo extrapolation for precipitation
-  nowcasting, reaching CSI 0.5035 and HSS 0.5493 with lower MAE than prior baselines.
-significance: 3
+summary: Time-distributed Conv2D with ConvLSTM2D improves radar echo extrapolation for precipitation nowcasting,
+  reporting CSI 0.50 and HSS 0.55 on a real dataset.
+abstract: Precipitation nowcasting in real-time is a challenging task that demands accurate and current
+  data from multiple sources. Despite various approaches proposed by researchers to address this challenge,
+  models such as the interaction-based dual attention LSTM (IDA-LSTM) face limitations, particularly in
+  radar echo extrapolation. These limitations include higher computational costs and resource requirements.
+  Moreover, the fixed kernel size across layers in these models restricts their ability to extract global
+  features, focusing more on local representations. To address these issues, this study introduces an
+  enhanced convolutional long short-term 2D (ConvLSTM2D) based architecture for precipitation nowcasting.
+  The proposed approach includes time-distributed layers that enable parallel Conv2D operations on each
+  image input, enabling effective analysis of spatial patterns. Following this, ConvLSTM2D is applied
+  to capture spatiotemporal features, which improves the model's forecasting skills and computational
+  efficacy. The performance evaluation employs a real-world weather dataset benchmarked against established
+  techniques, with metrics including the Heidke skill score (HSS), critical success index (CSI), mean
+  absolute error (MAE), and structural similarity index (SSIM). ConvLSTM2D demonstrates superior performance,
+  achieving an HSS of 0.5493, a CSI of 0.5035, and an SSIM of 0.3847. Notably, a lower MAE of 11.16 further
+  indicates the model's precision in predicting precipitation.
+significance: 2
 cited_by: 16
-score: 12
+score: 8
 highlight: false
 added: '2026-10-22'
 source: snowball

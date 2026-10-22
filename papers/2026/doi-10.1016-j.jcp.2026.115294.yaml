@@ -17,17 +17,21 @@ ids:
 links:
   paper: https://doi.org/10.1016/j.jcp.2026.115294
 topic: hybrid-parameterization
+topics:
+- climate-emulation
 type: model
 method:
-- neural-operator
 - cnn
+- neural-operator
+timescale:
+- climate
 spatial:
 - global
 data:
-- other
+- cmip
 status: research
-summary: Plug-in U-Net-based neural operators perform online bias correction inside the E3SM atmosphere
-  model, coupling ML directly into the running climate model.
+summary: UNet-based plug-in neural operators perform online bias correction inside the E3SM atmosphere
+  model, coupling machine learning into climate simulation.
 significance: 3
 cited_by: 0
 score: 12

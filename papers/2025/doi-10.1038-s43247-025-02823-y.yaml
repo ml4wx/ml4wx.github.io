@@ -15,11 +15,12 @@ ids:
 links:
   paper: https://doi.org/10.1038/s43247-025-02823-y
   pdf: https://doi.org/10.1038/s43247-025-02823-y
-topic: extremes-hazards
+topic: benchmarks-data-eval
 topics:
-- global-medium-range
+- extremes-hazards
 type: evaluation
 method:
+- transformer
 - other
 timescale:
 - medium
@@ -28,10 +29,23 @@ spatial:
 - regional
 data:
 - era5
-- nwp-analysis
 status: research
-summary: Benchmarks five AI weather models for atmospheric river forecasting; FuXi performs best globally
-  at 10 days while NeuralGCM is better for regional intensity.
+summary: Benchmarking five AI models on atmospheric rivers finds FuXi best globally at 10 days and NeuralGCM
+  better for regional AR intensity.
+abstract: The rapid advancement of artificial intelligence models is expanding the frontiers of weather
+  forecasting, underscoring the need for comprehensive evaluations in specific applications to ensure
+  their effective use and guide future development. Here we benchmark five state-of-the-art artificial
+  intelligence models for forecasting atmospheric rivers, assessing both meteorological fields and atmospheric
+  river-related metrics across global and regional scales. Results show that FuXi achieves the best performance
+  at a 10-day lead time for meteorological fields and atmospheric river forecasts globally. However, regional
+  assessments reveal that the model incorporating numerical components—NeuralGCM—performs better in predicting
+  atmospheric river intensity. Two case studies along the North and South American coasts further highlight
+  NeuralGCM’s superior ability to predict atmospheric river shapes and intensities at 10-day lead times.
+  Nonetheless, accurately predicting atmospheric river landfall locations beyond one week remains a challenge,
+  emphasizing the need for refinement of these models for region-specific forecasts in future applications.
+  AI models show promise in forecasting atmospheric rivers, with FuXi excelling globally at 10-day lead
+  times for specific humidity and horizontal winds, while NeuralGCM performs better regionally in predicting
+  intensity, according to a comparison of five state-of-the-art models.
 significance: 4
 cited_by: 3
 score: 16

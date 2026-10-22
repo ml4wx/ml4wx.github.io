@@ -16,25 +16,47 @@ ids:
 links:
   paper: https://doi.org/10.1016/j.jag.2024.104071
   pdf: https://doi.org/10.1016/j.jag.2024.104071
-topic: extremes-hazards
+topic: applications-impacts
 topics:
-- applications-impacts
+- extremes-hazards
 type: application
 method:
 - classical-ml
-- rnn
 timescale:
 - climate
 spatial:
-- regional
+- local
 data:
 - cmip
+- stations
 status: research
-summary: Uses machine learning and deep learning on CMIP6 projections to assess temperature extreme impacts
-  on crop yield and project future extremes; abstract unavailable, classification from title.
-significance: 3
+summary: Gradient boosting links temperature extremes to wheat and rice yields and projects CMIP6 temperature
+  extremes under SSP scenarios for stations.
+abstract: Climate change, particularly extreme weather events, has significantly affected various sectors,
+  including agriculture, human health, water resources, sea levels, and ecosystems. It is anticipated
+  that the intensity, duration, and frequency of these extremes will escalate in the future. This study
+  aims to discover the association between temperature extremes and agricultural yield and to project
+  these extremes using machine learning (ML) and deep learning (DL) models with CMIP6 (Coupled Model Intercomparison
+  Project Phase 6) data under two SSPs (Shared Socioeconomic Pathways). A bi-wavelet coherence technique
+  is employed to investigate the association, providing detailed information in both the frequency and
+  time domains for the period of 1980–2014. Various ML and DL models are trained and tested for the periods
+  of 1985–2004 and 2005–2014, respectively, with gradient boosting machine chosen for projecting temperature
+  extremes based on its superior performance. Mann-Kendall test is used for trend analysis in the projected
+  temperature extremes. The results indicate strong negative and positive associations between TN10p (Cold
+  nights) and TN90p (Warm nights), respectively, with wheat production. Additionally, there is a long-term
+  negative association of CSDI (Cold Spell Duration Indicator) and strong positive association of WSDI
+  (Warm Spell Duration Indicator) with rice yield. Projected results show an increase and decrease under
+  SSP2-4.5 and SSP5-8.5, respectively, in DTR (Diurnal Temperature Range) at most stations. TN10p will
+  increase in the future at most stations, with exceptions such as Muree station where it decreases during
+  2025–2049 and then increases under both SSPs. Projections show that TXn (annual or monthly minimum value
+  of daily maximum temp) will increase in the future, with Muree station exhibiting the lowest value close
+  to zero, while the average maximum value is around 20 °C at Khanpur station. Trend analysis reveals
+  significantly increasing trend in TR20 (Tropical nights) and decreasing trend in CSDI in future durations
+  under both SSPs. These findings hold implications for policymakers and stakeholders in various departments,
+  including agriculture, health, and water resources management.
+significance: 2
 cited_by: 25
-score: 12
+score: 8
 highlight: false
 added: '2026-10-22'
 source: snowball

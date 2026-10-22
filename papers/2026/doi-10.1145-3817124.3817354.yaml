@@ -15,10 +15,9 @@ links:
   pdf: https://doi.org/10.1145/3817124.3817354
 topic: nowcasting
 topics:
+- extremes-hazards
 - observations-remote-sensing
 type: model
-method:
-- other
 timescale:
 - nowcast
 spatial:
@@ -26,11 +25,22 @@ spatial:
 data:
 - radar
 status: research
-summary: DP-STNet uses dual-polarization radar inputs and a polynomial Z–R mapping to nowcast next-hour
-  reflectivity and heavy rainfall; the reported quantitative gains are limited.
-significance: 2
+summary: DP-STNet forecasts next-hour reflectivity from dual-polarization radar and converts it to rainfall
+  via a Z–R mapping for heavy precipitation nowcasting.
+abstract: Convective precipitation nowcasting remains a formidable challenge due to the high non-linearity
+  and localized suddenness of extreme weather events. To address critical issues in microphysical feature
+  extraction and quantitative precipitation estimation (QPE), this paper proposes a dual-polarization
+  spatiotemporal framework, DP-STNet. DP-STNet takes multi-altitude dual-polarization radar observations
+  (ZH, ZDR, and KDP) from the preceding hour as input and explicitly forecasts the next-hour radar reflectivity
+  field ZH on a 10-step horizon. For QPE, we further construct an empirical Z–R relationship via polynomial
+  regression that maps (ZH, ZDR) to surface rainfall intensity, and apply this mapping to convert predicted
+  reflectivity into rainfall estimates. In this design, KDP contributes to spatiotemporal feature learning
+  and microphysical representation, while the polynomial Z–R mapping remains a consistent two-variable
+  formulation. Experimental results demonstrate that DP-STNet improves physical consistency and accuracy
+  in quantifying extreme precipitation compared with baseline schemes.
+significance: 3
 cited_by: 0
-score: 8
+score: 12
 highlight: false
 added: '2026-10-22'
 source: snowball

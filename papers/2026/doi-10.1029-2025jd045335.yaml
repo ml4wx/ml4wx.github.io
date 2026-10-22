@@ -17,7 +17,7 @@ links:
 topic: extremes-hazards
 topics:
 - climate-analysis-attribution
-type: application
+type: evaluation
 method:
 - classical-ml
 spatial:
@@ -25,9 +25,26 @@ spatial:
 data:
 - era5
 - km-scale-sim
+- other
 status: research
-summary: Object-based ML models trained on 13 years of MCS data build a US flash-flood and severe-hazard
-  climatology and reveal convection-permitting model frequency biases.
+summary: Object-based ML models trained on a 13-year MCS archive build a flash-flood and severe-hazard
+  climatology and reveal biases in convection-permitting simulations.
+abstract: Abstract Mesoscale convective systems (MCSs) are large, organized convective storms that frequently
+  produce flash floods and other severe hazards such as damaging winds, hail, and tornadoes. Developing
+  an observationally based MCS hazard climatology is important for establishing a baseline to evaluate
+  the representation of these events in numerical models. This study constructs such a climatology using
+  a 13‐year MCS data set, storm reports, and atmospheric reanalysis. MCS‐related and near‐storm environmental
+  variables are extracted and used to train object‐based machine learning (ML) models. Three models are
+  developed to predict flash floods, severe (including all wind, hail and tornado events), and significant‐severe
+  events, with the latter representing higher‐impact hazards. The flash flood and severe models perform
+  well in distinguishing hazard‐producing MCSs from non‐producing ones, while the significant‐severe model
+  shows limited skill, likely due to sample size constraints. The flash flood and severe models are then
+  applied to the full MCS archive to reconstruct a more complete warm season hazard climatology, addressing
+  the potential underreporting in storm reports and gaps in flash flood reports during early years. The
+  study also examines the application of these models to convection‐permitting model simulations. While
+  the spatial distribution of simulated MCS hazards generally aligns with observations, event frequencies
+  differ considerably. These discrepancies are attributed to biases in both the derived input variables
+  and the representation of MCS properties within the model.
 significance: 3
 cited_by: 0
 score: 12

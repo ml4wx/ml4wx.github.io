@@ -26,8 +26,25 @@ data:
 - stations
 - other
 status: research
-summary: A random forest using Doppler lidar and surface meteorology estimates boundary-layer height,
-  cutting daytime mean absolute error by 50% versus the lidar-only threshold method.
+summary: Random forest using Doppler lidar and surface met data estimates boundary-layer height with 50%
+  lower error than lidar-only methods at the Southern Great Plains site.
+abstract: Abstract. The planetary boundary-layer height (zi) is a key parameter used in atmospheric models
+  for estimating the exchange of heat, momentum and moisture between the surface and the free troposphere.
+  Near-surface atmospheric and subsurface properties (such as soil temperature, relative humidity etc.)
+  are known to have an impact on zi. Nevertheless, precise relationships between these surface properties
+  and zi are less well known and not easily discernable from the long-term data. Machine learning approaches,
+  such as Random Forest, which use a multi-regression framework, help to decipher some of the physical
+  processes linking surface-based characteristics to zi. In this study, a multi-year dataset from 2016
+  to 2019 at the Southern Great Plains site is used to develop and test a machine learning framework for
+  estimating zi. Parameters derived from Doppler lidars are used in combination with over 20 different
+  surface meteorological measurements as inputs to a RF model. The model is trained using radiosonde-derived
+  zi values spanning the period from 2016 through 2018, and then evaluated using data from 2019. Results
+  from 2019 showed significantly better agreement with the radiosonde compared to estimates derived from
+  a thresholding technique using Doppler lidars. Noteworthy improvements in daytime zi estimates was observed
+  using the RF model, where a 50 % improvement in mean absolute error compared to lidar-only zi estimates
+  and provided an R2 of greater than 85 %. We also explore the effect of zi uncertainty on convective
+  velocity scaling and present preliminary comparisons between the RF model and zi estimates derived from
+  atmospheric models.
 significance: 3
 cited_by: 36
 score: 12

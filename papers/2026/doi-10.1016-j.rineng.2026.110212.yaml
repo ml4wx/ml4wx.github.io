@@ -27,8 +27,24 @@ spatial:
 data:
 - stations
 status: research
-summary: Hybrid CatBoost model for temperature forecasting that captures temporal patterns; the abstract
-  is missing, so details are limited.
+summary: CatBoost with adaptive temporal drift encoding gives 0.413°C average RMSE at an Indonesian station,
+  beating LSTM and CNN-LSTM baselines (over 2°C) at lower cost.
+abstract: Accurate temperature forecasting remains challenging due to complex and dynamic temporal patterns.
+  This study evaluates CatBoost, LightGBM, and XGBoost within a time-series cross-validation framework
+  enhanced by Adaptive Temporal Drift Encoding (ATDE) and enriched with engineered lagged and temporal
+  features. ATDE is introduced as a dynamic extension of traditional sine cosine encodings that adaptively
+  scale temporal features according to local temperature variability, improving temporal sensitivity and
+  generalization. Experiments on real-world meteorological data from multiple Indonesian weather stations
+  show that CatBoost consistently achieves the lowest prediction errors, with an average RMSE of 0.413°C
+  at the primary site (Citeko). To evaluate robustness, the model was extended to five international datasets
+  (China, India, France, Russia, and Turkey), maintaining stable performance across diverse climatic zones.
+  Comparative evaluation against deep-learning baselines (LSTM and CNN-LSTM) demonstrates that CatBoost
+  + ATDE achieves substantially lower RMSE (< 1°C vs > 2°C) while requiring significantly less computational
+  cost. Hyperparameters were optimized using an Optuna-based adaptive search to ensure rigorous and reproducible
+  tuning. Error analysis highlights increased uncertainty under extreme weather transitions, while ablation
+  studies confirm that adaptive temporal encoding reduces RMSE by up to 15 %. Overall, the proposed lightweight
+  yet interpretable framework underscores the effectiveness of adaptive temporal feature modeling for
+  robust, climate-adaptive, and energy-efficient temperature forecasting.
 significance: 2
 cited_by: 6
 score: 8

@@ -18,7 +18,7 @@ links:
   pdf: https://doi.org/10.1109/jstars.2024.3501976
 topic: nowcasting
 topics:
-- extremes-hazards
+- observations-remote-sensing
 type: model
 method:
 - classical-ml
@@ -29,10 +29,23 @@ spatial:
 data:
 - satellite
 - nwp-analysis
-- other
 status: research
 summary: Gaussian process regression nowcasts cloud-to-ground lightning stroke density one hour ahead
   by combining remote sensing, NWP outputs and lightning observations.
+abstract: The climate change of the last decades is causing an increase in the frequency of extreme event
+  occurrences. Numerous studies confirm the link between extreme meteorological events and lightning activity.
+  The possibility of having short-term predictions of the intensity of lightning phenomena would allow
+  the near-real-time monitoring of the evolution of these events. Such knowledge would help in defining
+  operational strategies to mitigate effects on the population and the infrastructure. In this context,
+  this article proposes a multidisciplinary approach aiming at developing a regression algorithm to nowcast
+  the density of cloud-to-ground lightning strokes 1 h in advance. The algorithm is developed on the basis
+  of a joint combination of remote sensing data, numerical weather prediction model outcomes, and lightning
+  observations. The possible dependence between the meteorological data and the density of lightning is
+  estimated using Gaussian process regression models. Separate models are created for positive and negative
+  strokes and for strokes occurrences over the land or sea. The experimental results indicate that the
+  model quite accurately estimates low numbers of strokes, whereas larger numbers of strokes are estimated
+  with higher errors. Nevertheless, their presence is correctly detected. This suggests the potential
+  of the method as a processing tool to support the management of weather-related hazards.
 significance: 3
 cited_by: 13
 score: 12

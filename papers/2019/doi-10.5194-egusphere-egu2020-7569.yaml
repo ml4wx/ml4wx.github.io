@@ -24,14 +24,24 @@ method:
 - rnn
 timescale:
 - short
-- medium
 spatial:
 - global
 data:
 - era5
 status: research
-summary: 'Early version of the same study: scale separation via moving-average filtering partly restores
-  RNN predictability of NCEP sea-level pressure under noise and intermittency.'
+summary: Recurrent networks forecasting NCEP sea-level pressure degrade under noise, but moving-average
+  scale separation partly recovers predictability of large-scale circulation dynamics.
+abstract: Recent advances in statistical learning have opened the possibility to forecast the behavior
+  of chaotic systems using recurrent neural networks. In this letter we investigate the applicability
+  of this framework to geophysical flows, known to be intermittent and turbulent. We show that both turbulence
+  and intermittency introduce severe limitations on the applicability of recurrent neural networks, both
+  for short term forecasts as well as for the reconstruction of the underlying attractor. We test these
+  ideas on global sea-level pressure data for the past 40 years, issued from the NCEP reanalysis datase,
+  a proxy of the atmospheric circulation dynamics. The performance of recurrent neural network in predicting
+  both short and long term behaviors rapidly drops when the systems are perturbed with noise. However,
+  we found that a good predictability is partially recovered when scale separation is performed via a
+  moving average filter. We suggest that possible strategies to overcome limitations should be based on
+  separating the smooth large-scale dynamics, from the intermittent/turbulent features.
 significance: 3
 cited_by: 6
 score: 12

@@ -27,6 +27,7 @@ topics:
 type: application
 method:
 - transformer
+- gnn
 timescale:
 - medium
 spatial:
@@ -36,8 +37,24 @@ data:
 - nwp-analysis
 - stations
 status: research
-summary: Uses Pangu-Weather, GraphCast and FengWu forecasts to predict tropospheric delay up to 15 days
-  ahead, outperforming traditional methods for GNSS remote sensing.
+summary: Pangu-Weather, GraphCast and FengWu forecasts are used to predict tropospheric delay up to 15
+  days, outperforming traditional methods for microwave remote sensing.
+abstract: Accurate tropospheric delay forecasts are imperative for microwave-based remote sensing techniques,
+  playing a pivotal role in early warning and forecasting of natural disasters such as tsunamis, heavy
+  rains, and hurricanes. Nevertheless, conventional methods for forecasting tropospheric delays entail
+  substantial computational resources and high network transmission speeds, thereby restricting their
+  real-time applicability in remote sensing operations. In this study, we introduce a novel approach to
+  derive forecasted tropospheric delays using artificial intelligence (AI) weather forecast foundation
+  models (FMs), exemplified by Huawei Cloud Pangu-Weather, Google DeepMind GraphCast, and Shanghai AI
+  Lab FengWu. We assess the accuracy of these forecasts on a global scale employing fifth-generation ECMWF
+  atmospheric re-analysis of the global climate (ERA5) (European Centre for Medium-Range Weather Forecasts
+  (ECMWF) Reanalysis v5), ground-based Global Navigation Satellite System (GNSS), and in situ radiosonde
+  (RS) measurements as reference data. Our results show that the FM-based scheme outperforms traditional
+  methods in both forecast accuracy and length, with the ability to provide high-accuracy tropospheric
+  delay parameters locally for 15-day forecasts at any location within minutes. Furthermore, the FM scheme
+  still maintains accuracy better than empirical models when forecasting up to ten days in advance. This
+  research demonstrates the potential of AI weather forecast FMs in delivering high-precision tropospheric
+  delay medium-range forecasts and improvements for real-time remote sensing applications.
 significance: 4
 cited_by: 11
 score: 16

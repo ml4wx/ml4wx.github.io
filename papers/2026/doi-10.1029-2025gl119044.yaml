@@ -24,10 +24,10 @@ ids:
 links:
   paper: https://doi.org/10.1029/2025gl119044
   pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2025GL119044
-topic: probabilistic-ensembles
+topic: downscaling
 topics:
-- downscaling
 - applications-impacts
+- probabilistic-ensembles
 type: model
 method:
 - other
@@ -37,14 +37,29 @@ spatial:
 - regional
 data:
 - nwp-analysis
-- km-scale-sim
 - stations
-status: research
-summary: A generative model learns a high-resolution climatological prior and combines it with coarse
-  forecasts to produce 100-member, 1 km, 10-day ensembles in under 1 hour on a GPU.
-significance: 5
+- km-scale-sim
+status: pre-operational
+summary: Generative climatological prior combined with coarse forecasts yields a 100-member, 1 km, 10-day
+  wind forecast in one GPU hour, verified against turbine power outputs.
+abstract: Abstract The planning and operation of renewable energy, especially wind power, depend crucially
+  on accurate, timely, and high‐resolution weather information. Coarse‐grid global numerical weather forecasts
+  are typically downscaled to meet these requirements, introducing challenges of scale inconsistency,
+  process representation error, computation cost, and entanglement of distinct uncertainty sources from
+  chaoticity, model bias, and large‐scale forcing. We address these challenges by learning the climatological
+  prior distribution of a target region with a generative model, using its high‐resolution numerical weather
+  simulations. An optimal combination of this learned high‐resolution climatological prior with coarse‐grid
+  large scale forecasts yields highly accurate, fine‐grained, full‐variable, large ensemble of weather
+  pattern forecasts. Using observed meteorological records and wind turbine power outputs as references,
+  the proposed methodology verifies advantageously compared to existing numerical/statistical forecasting‐downscaling
+  pipelines, regarding either deterministic/probabilistic skills or economic gains. Moreover, a 100‐member,
+  10‐day forecast with spatial resolution of 1 km and output frequency of 15 min takes 1 hr on a moderate‐end
+  GPU, as contrast to CPU hours for conventional numerical simulation. By drastically reducing computational
+  costs while maintaining accuracy, this paradigm paves the way for more efficient and reliable renewable
+  energy planning and operation.
+significance: 4
 cited_by: 3
-score: 20
+score: 16
 highlight: false
 added: '2026-10-22'
 source: snowball

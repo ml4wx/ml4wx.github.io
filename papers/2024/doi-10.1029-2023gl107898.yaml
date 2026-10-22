@@ -19,14 +19,25 @@ topics:
 type: model
 method:
 - cnn
-- other
 spatial:
 - regional
 data:
 - radar
+- stations
 status: research
-summary: A deep network estimates rainfall from polarimetric radar, with SHAP explanations showing how
-  each radar observable drives estimates across precipitation intensities.
+summary: Deep network for polarimetric radar rainfall estimation paired with SHAP analysis showing how
+  each radar variable drives rain-rate estimates across intensities.
+abstract: Abstract Machine learning‐based approaches demonstrate a significant potential in radar quantitative
+  precipitation estimation (QPE) applications. In contrast to conventional methods that depend on local
+  raindrop size distributions, deep learning (DL) can establish an effective mapping from three‐dimensional
+  radar observations to ground rain rates. However, the lack of transparency in DL models poses challenges
+  toward understanding the underlying physical mechanisms that drive their outcomes. This study aims to
+  develop a DL‐based QPE system and provide a physical explanation of radar precipitation estimation process.
+  This research is designed by employing a deep neural network consisting of two modules. The first module
+  is a quantitative precipitation estimation network that has the capability to learn precipitation patterns
+  and spatial distribution from multidimensional polarimetric radar observations. The second module introduces
+  a quantitative precipitation estimation shapley additive explanations method to quantify the influence
+  of each radar observable on the model estimate across various precipitation intensities.
 significance: 3
 cited_by: 17
 score: 12

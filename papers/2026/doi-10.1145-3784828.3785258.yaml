@@ -29,10 +29,29 @@ timescale:
 spatial:
 - regional
 data:
-- nwp-analysis
+- era5
 status: research
-summary: CityScaleCast uses a regional spatiotemporal GNN driven by GraphCast boundary conditions to produce
-  about 5 km Sendai forecasts that beat reprojected GraphCast on near-surface variables.
+summary: CityScaleCast uses GraphCast fields as boundary conditions for a regional GNN producing 5 km,
+  3–24 h Sendai forecasts that beat reprojected GraphCast near the surface.
+abstract: Accurate weather forecasting is essential for public safety, economic planning, and day-to-day
+  decision making. Recently, machinelearning (ML) weather models have rapidly improved medium-range forecasting
+  skills while requiring a fraction of the computational cost of traditional numerical weather prediction
+  (NWP). However, most ML systems, such as GraphCast, have focused on global grids at quarter-degree resolution
+  and above. This paper proposes a city-scale forecasting framework, CityScaleCast, that leverages GraphCast
+  fields as dynamic boundary conditions for a spatiotemporal graph neural network (ST-GNN) to produce
+  ∼ 5 km forecasts over Sendai, Japan. A regional graph is constructed for (35°–41°N, 139°–143°E) with
+  multi-scale spatial edges and temporal links, and forecasts are rolled autoregressively while injecting
+  global context along the domain boundary. CityScaleCast explicitly couples a regional multi-scale ST-GNN
+  with GraphCast-derived dynamic boundary conditions and an autoregressive sliding-window rollout. An
+  efficient training stack is described—distributed training with streaming data pipelines—to sustain
+  high throughput on commodity multi-GPU nodes under modest memory budgets. Evaluation compares against
+  state-of-the-art baselines, including GraphCast global forecasts (native grid), regional U–Net and LightGBM
+  learners, using mean absolute error and root mean squared error across core surface variables; training
+  and inference time are also reported to quantify cost–accuracy trade-offs. CityScaleCast combines GraphCast-derived
+  dynamic boundary conditioning with a regional spatiotemporal GNN to deliver city-scale 3–24 h forecasts
+  that surpass a reprojected GraphCast reference on near-surface variables (T2M, MSLP, U10/V10) while
+  achieving markedly lower training and inference cost on commodity GPUs, at the expense of a small degradation
+  on intermittent precipitation.
 significance: 3
 cited_by: 1
 score: 12

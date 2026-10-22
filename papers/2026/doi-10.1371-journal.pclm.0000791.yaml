@@ -25,11 +25,33 @@ timescale:
 spatial:
 - regional
 data:
-- stations
+- era5
 - nwp-analysis
+- stations
 status: research
-summary: Evaluates GraphCast 1-3 day rainfall over Bangladesh against 43 stations, finding lower RMSE
-  than ECMWF and GFS but overestimated extreme rainfall.
+summary: Evaluates GraphCast 1–3 day rainfall over Bangladesh against 43 stations, finding higher correlation
+  than ECMWF and GFS but overestimation of extreme rain.
+abstract: Bangladesh situated in the tropical monsoon region is one of the most rainfall-sensitive countries
+  in the world with terrain ranging from northwest floodplains to southern coastal deltas to eastern hilly
+  regions. This complex landscape coupled with intensified climate variability influences local convection
+  and extreme precipitation events, making short range forecasting difficult. In this context, AI driven
+  weather forecasting is gaining promise in diagnosing nonlinear atmospheric processes where conventional
+  physics-based models fall short. Therefore, this study employs AI-based GraphCast model to forecast
+  1-, 2-, and 3-day cumulative rainfall over Bangladesh utilizing observational data from 43 Bangladesh
+  Meteorological Department (BMD) stations during 2023–2024. Then, the performance of the model has been
+  evaluated against global forecasting models namely ECMWF and GFS with statistical metrics including
+  correlation coefficient (CC), mean error (ME), root mean square error (RMSE), and probability of detection
+  (POD). The capability of GraphCast to detect rainfall events was evaluated using POD for all rainfall
+  occurrences exceeding 0 mm, while its skill in identifying extreme rainfall was assessed using the Critical
+  Success Index (CSI) and False Alarm Ratio (FAR) at thresholds of 100, 200, and 300 mm for 1-, 2-, and
+  3-day accumulated rainfall. The findings revealed that GraphCast outperforms ECMWF and GFS in routine
+  precipitation forecasting, achieving higher CC (0.57–0.65), lower RMSE (15.66–16.61 mm day ‒1 ), and
+  near-perfect POD values (>0.98). It exhibited better performance in central and northern Bangladesh,
+  where monsoon characteristics are more uniform compared to coastal and southeastern hilly regions. However,
+  GraphCast tends to overestimate extreme rainfall events with lower CSI (0.4476–0.5170) and higher FAR
+  (0.4809–0.5519) values. This contrast highlights GraphCast’s strong potential for operational rainfall
+  monitoring and flood early warning in monsoon regions, while emphasizing the need for improved representation
+  of rare extreme events and hybrid AI–physics frameworks for reliable high-impact weather forecasting.
 significance: 3
 cited_by: 1
 score: 12

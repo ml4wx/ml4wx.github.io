@@ -13,6 +13,8 @@ links:
   paper: https://doi.org/10.3390/engproc2023039011
   pdf: https://www.mdpi.com/2673-4591/39/1/11/pdf?version=1688018484
 topic: nowcasting
+topics:
+- probabilistic-ensembles
 type: model
 method:
 - gan-vae
@@ -21,10 +23,28 @@ timescale:
 spatial:
 - regional
 data:
+- satellite
 - radar
 status: research
-summary: A quality-aware conditional GAN is proposed for precipitation nowcasting; the abstract is unavailable,
-  so quantitative results cannot be confirmed.
+summary: Conditional GAN trained with L1 plus SSIM regularization improves precipitation nowcast quality
+  and CSI/POD beyond 2 hours over U-Net and persistence.
+abstract: Accurate precipitation forecasting is essential for emergency management, aviation, and marine
+  agencies to prepare for potential weather impacts. However, traditional radar echo extrapolation has
+  limitations in capturing sudden weather changes caused by convective systems. Deep learning models,
+  an alternative to radar echo extrapolation, have shown promise in precipitation nowcasting. However,
+  the quality of the forecasted radar images deteriorates as the forecast lead time increases due to mean
+  absolute error (MAE, a.k.a L1) or mean squared error (MSE, a.k.a L2), which do not consider the perceptual
+  quality of the image, such as the sharpness of the edges, texture, and contrast. To improve the quality
+  of the forecasted radar images, we propose using the Structural Similarity (SSIM) metric as a regularization
+  term for the Conditional Generative Adversarial Network (CGAN) objective function. Our experiments on
+  satellite images over the region 83° W–76.5° W and 33° S–40° S in 2020 show that the CGAN model trained
+  with both L1 and SSIM regularization outperforms CGAN models trained with only L1, L2, or SSIM regularizations
+  alone. Moreover, the forecast accuracy of CGAN is compared with other state-of-the-art models, such
+  as U-Net and Persistence. Persistence assumes that rainfall remains constant for the next few hours,
+  resulting in higher forecast accuracies for shorter lead times (i.e., <2 h) measured by the critical
+  success index (CSI), probability of detection (POD), and Heidtke skill score (HSS). In contrast, CGAN
+  trained with L1 and SSIM regularization achieves higher CSI, POD, and HSS for lead times greater than
+  2 h and higher SSIM for all lead times.
 significance: 2
 cited_by: 1
 score: 8

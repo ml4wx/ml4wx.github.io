@@ -15,22 +15,32 @@ ids:
 links:
   paper: https://doi.org/10.3390/rs14163952
   pdf: https://www.mdpi.com/2072-4292/14/16/3952/pdf?version=1660644449
-topic: extremes-hazards
+topic: xai-uq-physics
 topics:
-- xai-uq-physics
-type: model
+- extremes-hazards
+type: application
 method:
 - classical-ml
 spatial:
-- local
+- regional
 data:
-- stations
+- other
 status: research
-summary: XGBoost predicts tropical cyclone atmospheric ducts with 81.3% accuracy, and SHAP analysis shows
-  dropsonde-to-eye distance is the most important factor.
-significance: 3
+summary: XGBoost predicts tropical cyclone atmospheric duct existence at 81.3% accuracy, with SHAP showing
+  dropsonde-to-eye distance as the most important feature.
+abstract: The atmospheric duct (AD) is an anomalous structure in which electromagnetic waves can make
+  transhorizon propagation. ADs often occur in the formation, development and disappearance of tropical
+  cyclones (TCs). In this work, the eXtreme Gradient Boosting (XGBoost) model is used to predict TC ducts
+  and a relatively high accuracy of 81.3% is obtained. Shapely additional explanations (SHAP) values of
+  the features including TC parameters and local meteorological parameters are employed to interpret XGBoost
+  model predictions of the TC ducts existence. Furthermore, the importance ranking of the features is
+  revealed, among which the distance between dropsondes and TC eyes is the most important. In addition,
+  the detailed relationships between the AD existence and the features are presented. Hence, this work
+  can not only improve the knowledge of the relationship between TC ducts and the features, but also be
+  of great value to the ducts prediction.
+significance: 2
 cited_by: 8
-score: 12
+score: 8
 highlight: false
 added: '2026-10-22'
 source: snowball
