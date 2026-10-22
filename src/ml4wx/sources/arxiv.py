@@ -20,7 +20,8 @@ NS = {
     "arxiv": "http://arxiv.org/schemas/atom",
     "os": "http://a9.com/-/spec/opensearch/1.1/",
 }
-_client = Client(min_interval=3.1)
+# arXiv throttles busy shared addresses (CI runners) with 429 for minutes: be patient (~25 min).
+_client = Client(min_interval=3.1, max_retries=9, max_delay=300)
 
 
 def _text(el: ET.Element, path: str) -> str | None:

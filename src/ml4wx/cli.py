@@ -126,29 +126,77 @@ def cmd_seed(args) -> int:
     return 0
 
 
+def _load_backfill_state(path: Path) -> dict[str, list[str]]:
+    """month -> sources done. The old format (a list of months) meant both sources."""
+    if not path.exists():
+        return {}
+    raw = json.loads(path.read_text())
+    return {m: list(fetch.SOURCES) for m in raw} if isinstance(raw, list) else raw
+
+
 def cmd_backfill(args) -> int:
-    """Month by month over arXiv (+ OpenAlex with a key). Progress is saved after each month."""
+    """Month by month over arXiv and OpenAlex, resumable per month and per source.
+
+    A source that fails (e.g. arXiv answering 429 to shared CI addresses) is skipped for the
+    rest of the run; its part of each month stays open for a later run.
+    """
     cfg, archive = load(), Archive()
     state_file = archive.root / "state" / "backfill.json"
-    done = set(json.loads(state_file.read_text())) if state_file.exists() else set()
+    done = _load_backfill_state(state_file)
+    sources = fetch.default_sources(args.openalex)
+    if args.only:
+        sources = [s for s in sources if s == args.only]
+    # Sources found down earlier in the same CI job (the workflow calls backfill once per chunk).
+    down_file = Path(os.environ["ML4WX_DOWN_FILE"]) if os.environ.get("ML4WX_DOWN_FILE") else None
+    down: set[str] = set(down_file.read_text().split()) if down_file and down_file.exists() else set()
     month = dt.date(args.start.year, args.start.month, 1)
     n_months = 0
     deadline = time.monotonic() + 60 * args.max_minutes
     while month <= args.end and n_months < args.max_months and time.monotonic() < deadline:
         tag = month.strftime("%Y-%m")
         nxt = (month + dt.timedelta(days=32)).replace(day=1)
-        if tag not in done:
-            cands = fetch.recent(cfg, month, min(nxt - dt.timedelta(days=1), args.end), use_openalex=args.openalex)
-            rep = ingest.ingest(cands, archive, cfg, source="backfill", judge_highlights=False)
-            print(f"{tag}: {len(cands)} candidates -> +{len(rep.added)} papers, {rep.parked} parked, "
-                  f"{rep.rejected} rejected, {rep.failed} failed", flush=True)  # fmt: skip
-            if rep.failed <= max(5, len(cands) // 20):
-                done.add(tag)
-                state_file.parent.mkdir(exist_ok=True)
-                state_file.write_text(json.dumps(sorted(done), indent=0))
-            n_months += 1
+        month_end = min(nxt - dt.timedelta(days=1), args.end)
+        need = [s for s in sources if s not in done.get(tag, []) and s not in down]
+        if need:
+            cands, got = [], []
+            for s in need:
+                try:
+                    cands += fetch.from_source(cfg, s, month, month_end)
+                    got.append(s)
+                except fetch.SourceFailed as e:
+                    log.warning("%s: %s; skipping this source for the rest of the run", tag, e)
+                    down.add(s)
+                    if down_file:
+                        down_file.write_text(" ".join(sorted(down)))
+            if got:
+                rep = ingest.ingest(cands, archive, cfg, source="backfill", judge_highlights=False)
+                print(f"{tag} [{'+'.join(got)}]: {len(cands)} candidates -> +{len(rep.added)} papers, "
+                      f"{rep.parked} parked, {rep.rejected} rejected, {rep.failed} failed", flush=True)  # fmt: skip
+                if rep.failed <= max(5, len(cands) // 20):
+                    done[tag] = sorted(set(done.get(tag, [])) | set(got))
+                    state_file.parent.mkdir(exist_ok=True)
+                    state_file.write_text(json.dumps(dict(sorted(done.items())), indent=0))
+                n_months += 1
+            if down >= set(sources):
+                print("all sources are down; stopping (run again later)")
+                break
         month = nxt
+    open_parts = sum(
+        1
+        for m in _months(args.start, args.end)
+        for s in sources
+        if s not in done.get(m, [])
+    )
+    print(f"backfill: {open_parts} month-source parts still open in this range", flush=True)
     return 0
+
+
+def _months(start: dt.date, end: dt.date) -> list[str]:
+    out, m = [], dt.date(start.year, start.month, 1)
+    while m <= end:
+        out.append(m.strftime("%Y-%m"))
+        m = (m + dt.timedelta(days=32)).replace(day=1)
+    return out
 
 
 def cmd_snowball(args) -> int:
@@ -300,6 +348,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--max-months", type=int, default=1000)
     p.add_argument("--max-minutes", type=float, default=300, help="stop starting new months after this")
     p.add_argument("--openalex", action=argparse.BooleanOptionalAction, default=None)
+    p.add_argument("--only", choices=fetch.SOURCES, help="only this source (e.g. arxiv from a local machine)")
     p.set_defaults(fn=cmd_backfill)
 
     p = sub.add_parser("snowball", help="add papers that cite archived papers (Semantic Scholar)")

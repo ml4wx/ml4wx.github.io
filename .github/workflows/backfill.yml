@@ -82,6 +82,7 @@ jobs:
           case "$TASK" in
             seed)     uv run ml4wx seed config/seeds.json ;;
             backfill)
+              export ML4WX_DOWN_FILE="$RUNNER_TEMP/sources-down"
               deadline=$((SECONDS + 300 * 60))
               done_months=0
               while [ "$SECONDS" -lt "$deadline" ] && [ "$done_months" -lt "$MAX_MONTHS" ]; do
