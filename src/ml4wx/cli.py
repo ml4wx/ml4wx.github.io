@@ -192,7 +192,9 @@ def cmd_weekly(args) -> int:
     rep = ingest.ingest(cands, archive, cfg, source="weekly", today=today, html_affiliations=True)
     export.write_all(archive, cfg)
     rels = feeds.releases(cfg, today - dt.timedelta(days=7))
-    path, _ = digest.build(archive, cfg, since=today, today=today, releases=rels, pr_url=args.pr_url)
+    path, _ = digest.build(
+        archive, cfg, since=today, today=today, releases=rels, pr_url=args.pr_url, window_start=since
+    )
     n_hl = sum(p.highlight for p in rep.added)
     print(f"weekly: +{len(rep.added)} papers ({n_hl} ★), {len(rep.updated)} updated, digest {path.name}")
     _gh_output(added=len(rep.added), highlights=n_hl, updated=len(rep.updated),

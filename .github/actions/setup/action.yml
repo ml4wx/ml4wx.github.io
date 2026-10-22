@@ -10,7 +10,7 @@ inputs:
 runs:
   using: composite
   steps:
-    - uses: astral-sh/setup-uv@v10
+    - uses: astral-sh/setup-uv@v10.3.1  # no floating major tag upstream
       with:
         enable-cache: true
     - run: uv sync ${{ inputs.extras }}

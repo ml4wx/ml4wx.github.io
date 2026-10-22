@@ -57,8 +57,12 @@ def build(
     releases: list[dict] | None = None,
     pr_url: str | None = None,
     write_intro: bool = True,
+    window_start: dt.date | None = None,
 ) -> tuple[Path, str]:
-    """Write the digest for papers added on or after `since`. Returns (path, markdown)."""
+    """Write the digest for papers added on or after `since`. Returns (path, markdown).
+
+    window_start: first day of the crawl window, shown in the header (default: since).
+    """
     today = today or dt.date.today()
     papers = sorted_papers(p for p in archive.papers.values() if p.added >= since and not p.classic)
     by_topic: dict[str, list[Paper]] = defaultdict(list)
@@ -67,7 +71,7 @@ def build(
     week = week_id(today)
     md = env(cfg).get_template("digest.md.j2").render(
         week=week,
-        since=since,
+        since=window_start or since,
         today=today,
         intro=intro(papers, cfg) if write_intro else "",
         papers=papers,
