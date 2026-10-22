@@ -1,0 +1,57 @@
+id: arxiv-2609.31972
+title: 'TaiJi: State-Conditional Adaptive Combination of Machine-Learning and Physics-Based Global Weather
+  Forecasts'
+authors:
+- Jiale Wang
+- Yining Li
+- Guihua Wang
+date: '2026-09-25'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.31972'
+  openalex: W7214711984
+links:
+  paper: https://arxiv.org/abs/2609.31972
+  pdf: https://arxiv.org/pdf/2609.31972
+orgs:
+- fudan-university
+topic: post-processing
+topics:
+- global-medium-range
+type: model
+method:
+- cnn
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: A learned CNN combines Pangu, GraphCast, FuXi and IFS forecasts with state-dependent weights,
+  beating the best baseline on most variables out to 10 days.
+abstract: 'Data-driven machine-learning weather models now rival, and in some respects surpass, operational
+  numerical weather prediction (NWP), yet no single model dominates across variables, pressure levels,
+  lead times, or regions, and the marginal returns from developing ever-larger individual models are diminishing.
+  We present TaiJi (after the Chinese concept of yin-yang harmony, the complementarity of opposites),
+  a spatiotemporal adaptive ensemble framework that recasts optimal model-weight combination as a learned
+  prediction problem: a lightweight convolutional neural network, conditioned on the recent atmospheric
+  state, predicts at every grid point and lead time a set of affine combination weights and an additive
+  residual for the constituent forecasts. The combiner is trained end-to-end over Pangu-Weather, GraphCast,
+  FuXi, IFS-HRES, and the IFS-ENS ensemble mean, an explicitly hybrid set of ML and NWP constituents,
+  on two consumer-grade RTX 4090 GPUs in about 8 hours, at least an order of magnitude below the training
+  cost of any of its ML constituents. Under the WeatherBench 2 protocol (2020 test year), TaiJi outperforms
+  the strongest baseline in nearly every combination of the eight core variables, lead times of up to
+  10 days and two skill metrics (RMSE and ACC), and this advantage extends to heavy-precipitation extremes.
+  We further show that the learned weights vary coherently with latitude, season and lead time rather
+  than following a single fixed rule. TaiJi thus offers a computationally inexpensive route to improving
+  global forecast skill that builds on, rather than replaces, the substantial investment already made
+  in existing forecast models.'
+significance: 5
+cited_by: 0
+score: 55
+highlight: false
+added: '2026-10-22'
+source: backfill

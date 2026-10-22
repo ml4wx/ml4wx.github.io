@@ -1,0 +1,53 @@
+id: doi-10.1007-s00704-026-06338-0
+title: Application of machine learning to improve reanalysis soil temperatures over the extratropical
+  northern hemisphere
+authors:
+- Tyler C. Herrington
+- Andre R. Erler
+- Christopher G. Fletcher
+date: '2026-06-13'
+year: 2026
+venue: Theoretical and Applied Climatology
+venue_type: journal
+ids:
+  doi: 10.1007/s00704-026-06338-0
+  openalex: W7164653143
+links:
+  paper: https://doi.org/10.1007/s00704-026-06338-0
+  pdf: https://link.springer.com/content/pdf/10.1007/s00704-026-06338-0.pdf
+topic: post-processing
+topics:
+- benchmarks-data-eval
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- era5
+- other
+status: research
+summary: Random forest bias correction cuts ERA5-Land and FLDAS soil temperature RMSE by 46-77% under
+  snow and yields a 1982-2023 corrected northern hemisphere product.
+abstract: 'Reanalysis products provide spatially homogeneous coverage for a variety of climate variables.
+  However, previous research has shown that soil temperature estimates in many reanalysis products have
+  substantial biases; particularly in winter. Here we evaluate the performance of two products: ERA5-Land
+  and FLDAS across the northern hemisphere and test a hierarchy of statistical techniques for bias correction.
+  Both products provide high-resolution ( $$\simeq $$ 9km) estimates of vertically resolved soil temperature;
+  however, ERA5-Land exhibits warm biases over permafrost regions, and a median RMSE of between 1.6K and
+  2.3K, while FLDAS exhibits cold biases, and a median RMSE of between 2.5K and 4.5K. Here we use multiple
+  linear regression (MLR) and random forest regression (RF) for bias correction and compare them to mean
+  bias subtraction (MBS) as a reference. The MLR and RF models employ 10 predictors, including soil depth,
+  product soil temperature, air temperature, vegetation, snow cover, elevation, latitude and longitude.
+  The RF model substantially outperforms MBS and MLR over all regions and latitudes, providing an average
+  RMSE reduction (relative to the products’ soil temperatures) of 46% – 77% when the ground is snow-covered,
+  and 56% – 64% during snow-free conditions. We introduce a bias-corrected soil temperature product, which
+  provides gridded soil temperature data over the extratropical northern hemisphere between 1982 and 2023.
+  This new data resource will be useful for a wide range of applications, including as an initialization
+  condition for hydrological models, and as a tool to validate simulated soil temperatures.'
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

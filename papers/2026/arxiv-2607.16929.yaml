@@ -1,0 +1,48 @@
+id: arxiv-2607.16929
+title: 'C3DIR: A Deep Learning 3-Dimensional Cloud Property Retrieval Scheme for Passive Satellite Imagers'
+authors:
+- Charles H. White
+- Yoo-Jeong Noh
+- John M. Haynes
+- Imme Ebert-Uphoff
+date: '2026-07-18'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2607.16929'
+links:
+  paper: https://arxiv.org/abs/2607.16929
+  pdf: https://arxiv.org/pdf/2607.16929
+topic: observations-remote-sensing
+type: model
+spatial:
+- global
+data:
+- satellite
+status: research
+summary: C3DIR is a deep learning retrieval of 3-D cloud ice, liquid and rain water content from passive
+  imagers, trained on EarthCARE; liquid cloud detection remains difficult.
+abstract: We develop the Cloud 3-Dimensional Imager Retrieval (C3DIR), a deep learning model that estimates
+  3-D cloud properties for multiple passive satellite imagers trained to match retrievals from the Earth
+  Cloud Aerosol and Radiation Explorer(EarthCARE) ACM-CAP product. This work is aimed towards moving AI/ML
+  3-D cloud algorithms closer towards operational use. C3DIR predicts the occurrence water content of
+  ice, cloud liquid, and rain along the imager line-of-sight and uses a voxel-level collocation approach
+  to account for the misaligned viewing geometries of passive imagers and active profiling instruments.
+  This precise collocation methodology allows for constructing vertical profiles using voxels contained
+  by multiple imager pixels to facilitate comparisons with active profiling instruments. Qualitative case
+  studies show that C3DIR can accurately depict multiple distinct overlapping cloud layers, albeit with
+  some smoothing. Quantitative evaluations illustrate that C3DIR overall excels at hydrometeor detection
+  which intuitively tends to be a function of water content. However, detection of voxels classified as
+  liquid cloud remains difficult due to the their small geometric thickness, finer horizontal scale, and
+  frequent tendency to be obscured or embedded within ice clouds. In general, water content estimation
+  is reasonably accurate, yielding the best results in ice clouds but uncertainties remain for liquid
+  and rain water content. Column-integrated water paths are in tighter agreement with EarthCARE. Comparisons
+  with the algorithms underpinning current NOAA operational products highlight several areas where C3DIR
+  may offer improvement. Overall, these results demonstrate the potential for C3DIR to provide flexible
+  3-D output depicting vertically resolved cloud structure which can offer broader utility for aviation
+  applications, numerical weather modeling, and climate research.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

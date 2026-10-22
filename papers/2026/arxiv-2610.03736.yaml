@@ -1,0 +1,51 @@
+id: arxiv-2610.03736
+title: Efficient Analog-Initialized Latent Transport for Spatially Coherent Probabilistic Downscaling
+  from Global to Kilometer Scales
+authors:
+- Ophélia Miralles
+date: '2026-09-15'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.03736'
+  openalex: W7220676676
+links:
+  paper: https://arxiv.org/abs/2610.03736
+  pdf: https://arxiv.org/pdf/2610.03736
+topic: downscaling
+topics:
+- probabilistic-ensembles
+- regional-km-scale
+type: model
+method:
+- diffusion
+- gnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: Analog-initialized flow matching in latent space downscales IFS fields to 2.5 km over 81 variables,
+  with ensemble CRPS beating deterministic error and inference taking about 12 s per member.
+abstract: Probabilistic downscaling must represent kilometer-scale structure left unresolved by a deterministic
+  regional prediction. We introduce an analog-initialized latent transport method that uses historical
+  regional residuals as a meteorologically informed empirical source. A frozen graph neural network predicts
+  the deterministic state from the Integrated Forecasting System (IFS). For each input, residuals from
+  20 training dates with similar IFS conditions initialize the ensemble. A conditional flow-matching model
+  transports these fields in a carefully designed 65-factor, 100,000-node latent space, and a grid decoder
+  reconstructs 81 atmospheric channels including precipitation at 2.5km spacing. On a season- and cycle-balanced
+  2025 test, ensemble CRPS improves over deterministic mean absolute error for all 81 variables. Matched
+  analogs improve point and spatial errors over Gaussian initialization and reduce spectral error compared
+  with covariance matching. Comparisons with released CorrDiff, a local CorrDiff-mini model and full grid
+  EDM provide context on the 2023 validation sample. Total training of the downscaling model takes approximately
+  12h on one NVIDIA H200, and inference takes about 12s per 81-field member. The frozen networks also
+  generate fields over France when supplied with local static data and a high-resolution IFS-derived analog
+  bank. The method combines empirical initialization with whole-domain latent transport for computationally
+  practical regional ensembles.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

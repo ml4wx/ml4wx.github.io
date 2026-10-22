@@ -1,0 +1,54 @@
+id: doi-10.3390-a19050394
+title: An Enhanced Hybrid CNN–LSTM Model for Improved Precipitation Forecasting
+authors:
+- Huthaifa Al-Omari
+- Murad A. Yaghi
+- Layan Alrifai
+date: '2026-05-15'
+year: 2026
+venue: Algorithms
+venue_type: journal
+ids:
+  doi: 10.3390/a19050394
+  openalex: W7161564680
+links:
+  paper: https://doi.org/10.3390/a19050394
+topic: local-forecasting
+type: model
+method:
+- cnn
+- rnn
+- transformer
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: Hybrid CNN–LSTM outperforms LSTM, CNN, Transformer and ARIMA for 1–4 day Washington State precipitation
+  from ERA5, reaching R² of 0.576 at four days.
+abstract: Accurate precipitation forecasting is essential for water resource management, flood early-warning
+  systems, and agriculture, but remains difficult because of the nonlinear and highly variable spatiotemporal
+  nature of rainfall. This paper compares four deep learning architectures—a standalone LSTM, a standalone
+  CNN, a hybrid CNN–LSTM, and a Transformer encoder—against three classical baselines (persistence, day-of-year
+  climatology, and per-grid-point ARIMA) for daily precipitation forecasting over Washington State at
+  lead times of one to four days. A 40-year ERA5 dataset (1985–2024) of near-surface air temperature,
+  mean sea-level pressure, and total precipitation is split into training (1985–2012), validation (2013–2015),
+  and test (2016–2024) periods, with the test years held out completely. Each (model, horizon) is trained
+  with three random seeds and evaluated in physical units (mm/day). On the held-out test period, the hybrid
+  CNN–LSTM achieves the lowest RMSE at every horizon h≥2, with R2=0.576±0.007 and RMSE =15.08±0.07 mm/day
+  at h=4. Diebold–Mariano tests, paired t-tests, and bootstrap 95% confidence intervals confirm that the
+  CNN–LSTM advantage over the LSTM is statistically significant at horizons 2–4 (but not at h=1), while
+  CNN–LSTM is significantly better than every classical baseline and the Transformer at every horizon.
+  The headline result is reproduced under a rolling-origin temporal cross-validation across three non-overlapping
+  splits (R2∈[0.576,0.590]). Practically, the sub-millisecond inference cost of the CNN–LSTM makes it
+  directly deployable in operational forecasting pipelines used for flood early-warning, irrigation scheduling,
+  and reservoir management, where even modest improvements in 3–4-day-ahead RMSE translate into measurable
+  risk reduction and improved decision lead time for water managers and emergency planners.
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

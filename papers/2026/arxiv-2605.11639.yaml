@@ -1,0 +1,50 @@
+id: arxiv-2605.11639
+title: Enabling High-Accuracy Data Assimilation with Limited Ensembles via Machine Learning-Based Covariance
+  Correction
+authors:
+- Zhou Yao
+- Zhilin Li
+- Li Zhao
+- Zeng Liu
+- Zhaokuan Lu
+- Seungnam Kim
+- Guangyao Wang
+date: '2026-05-12'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.11639'
+links:
+  paper: https://arxiv.org/abs/2605.11639
+  pdf: https://arxiv.org/pdf/2605.11639
+topic: data-assimilation
+type: model
+method:
+- classical-ml
+data:
+- other
+status: research
+summary: An MLP corrects ensemble forecast covariances in the EnKF using a limited ensemble, improving
+  analysis accuracy on Lorenz-63 and Lorenz-96 at small ensemble sizes; no real atmospheric test.
+abstract: Data assimilation (DA) integrates numerical model forecasts with observations to achieve the
+  optimal state estimation. Ensemble-based methods, such as the ensemble Kalman filter (EnKF), are widely
+  used for state estimation for high-dimensional and nonlinear dynamic systems. However, their performance
+  strongly depends on the ensemble size, therefore causing a tradeoff problem between analysis accuracy
+  and computational cost. To address this problem, this study presents a machine learning-based EnKF framework
+  that maintains high accuracy with a relatively small ensemble size. Specifically, a multilayer perceptron
+  (MLP) function is built to predict the difference between the forecast error covariances estimated from
+  a limited ensemble and a sufficiently large ensemble, with the latter being assumed to be an accurate
+  approximation of the underlying truth. This predicted covariance difference term is then incorporated
+  into the EnKF algorithm via an element-wise scaling strategy, resulting in an amended forecast covariance
+  matrix that better approximates the true uncertainty level and sequentially produces more accurate analysis
+  results. To demonstrate the feasibility and robustness of the proposed algorithm, we perform a set of
+  numerical experiments with the Lorenz-63 and Lorenz-96 systems under various configurations, and the
+  results consistently indicate that the proposed algorithm can significantly outperform the standard
+  EnKF with the same limited ensemble size, by achieving notably higher analysis accuracy while remaining
+  computationally efficient. This approach provides a practical and feasible pathway to accurate and computationally
+  efficient data assimilation for high-dimensional and nonlinear dynamic systems.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

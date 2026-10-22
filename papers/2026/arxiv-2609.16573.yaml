@@ -1,0 +1,58 @@
+id: arxiv-2609.16573
+title: 'AsyncCouple-Flow: Asynchronous Cross-Modal Coupling and Flow Matching for Spatio-Temporal Forecasting'
+authors:
+- Zhixiang Wu
+- Yining Liu
+- Bo Zhao
+- Szu-Yu Chen
+- Huiran Duan
+- Chu Lin
+- Chuanguang Yang
+date: '2026-09-15'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.16573'
+links:
+  paper: https://arxiv.org/abs/2609.16573
+  pdf: https://arxiv.org/pdf/2609.16573
+topic: nowcasting
+topics:
+- foundation-models
+type: model
+method:
+- gnn
+- diffusion
+- transformer
+timescale:
+- nowcast
+- short
+spatial:
+- regional
+data:
+- era5
+- satellite
+- stations
+status: research
+summary: Flow-matching forecaster with a learned asynchronous cross-modal graph handles missing modalities
+  on ERA5, GOES and station weather data and traffic, outperforming baselines.
+abstract: 'Multi-modal spatio-temporal forecasting (MM-STF) supports weather nowcasting, traffic prediction,
+  and earth-system modeling by combining heterogeneous sources such as physical fields, satellite imagery,
+  and in-situ sensors. Three obstacles persist: (i) modalities have different spatio-temporal sampling
+  rates, forcing lossy interpolation onto a unified grid; (ii) modalities are frequently missing at deployment
+  due to sensor outages or revisit gaps, while most methods train with full availability; and (iii) autoregressive
+  decoders accumulate errors over long horizons, amplified by multi-modal conditioning. We propose AsyncCouple-Flow
+  to address these issues jointly. A Modality-Aware Token Sparsification (MATS) module performs scale-aware
+  tokenization and uses a shared importance scorer to select top-k tokens per timestep, producing equal-length
+  sequences. An Asynchronous Cross-Modal Coupling Graph (ACCG) replaces fixed cross-attention with a learnable
+  graph whose edges encode time offsets, semantic similarity, and modality-specific physical priors, enabling
+  fusion under arbitrary asynchrony and missingness. A Flow-Matching Forecasting Head models multi-step
+  prediction as a conditional ODE, trained with stochastic modality dropout and integrated jointly to
+  avoid autoregressive drift. Experiments on ERA5+GOES+ISD weather forecasting and PEMS-BAY traffic prediction
+  with multi-source side information show that AsyncCouple-Flow outperforms state-of-the-art baselines
+  and remains robust with up to two missing modalities. The code will be released upon acceptance.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

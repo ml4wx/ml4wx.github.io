@@ -1,0 +1,54 @@
+id: arxiv-2607.23633
+title: A Controlled Visual-Backbone Benchmark for Multimodal Short-Term Solar Irradiance Forecasting
+authors:
+- Oshadha Samarakoon
+- Dushan Herath
+- Ishara Ranmandala
+- Dilshara Herath
+- Roshan Godaliyadda
+- Parakrama Ekanayake
+- Vijitha Herath
+date: '2026-07-26'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2607.23633'
+links:
+  paper: https://arxiv.org/abs/2607.23633
+  pdf: https://arxiv.org/pdf/2607.23633
+  code: https://github.com/Oshadha345/irradiance_benchmark
+topic: nowcasting
+type: evaluation
+method:
+- transformer
+- other
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- other
+- stations
+status: research
+summary: Controlled comparison of five visual backbones for 10-minute sky-image solar irradiance forecasting;
+  Swin and VMamba beat smart persistence at Folsom but not at NREL.
+abstract: 'Sky-image irradiance studies often compare forecasting systems in which the image encoder,
+  temporal model, fusion block, target definition, and training recipe all change together. We use a narrower
+  protocol: the multimodal forecasting pipeline is fixed, and only the visual backbone is varied. The
+  shared setup keeps preprocessing, clear-sky-index normalization, weather-history encoding, fusion, regression
+  head, loss, optimizer schedule, seed, and chronological split policy unchanged. We compare ConvNeXt,
+  Swin Transformer, VMamba, Spatial Mamba, and MambaVision backbones for 10min-ahead forecasting on Folsom
+  and a strict matched NREL split. Forecast skill is measured against clear-sky-index smart persistence,
+  and temporal-only rows are reported as weather-history diagnostics rather than as the main ranking criterion.
+  On the Folsom strict split, all evaluated visual-backbone runs improve over smart persistence. In the
+  evaluated single-seed strict runs, VMamba Small and Swin Base reach matched Folsom RMSE values of 65.39
+  W/m^2 and 65.50 W/m^2; the temporal-only diagnostic reaches 69.51 W/m^2. On the 313-sample NREL strict
+  split, smart persistence remains strongest at 17.48 W/m^2, while the lowest visual RMSE is obtained
+  by Swin Tiny at 23.76 W/m^2. These results provide a reproducible encoder comparison under one fixed
+  multimodal operating point rather than establishing architecture-level dominance, statistically resolved
+  ranking, or fully optimized forecasting performance. Code available here: https://github.com/Oshadha345/irradiance_benchmark'
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

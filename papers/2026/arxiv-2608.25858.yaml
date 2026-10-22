@@ -1,0 +1,60 @@
+id: arxiv-2608.25858
+title: Precipitation Downscaling Using Foundation Model-Conditioned Diffusion
+authors:
+- Victor Nascimento Ribeiro
+- Jorge Guevara
+- Jorge Sebastian Moraga
+- Chris Lucas
+- Natalie Lord
+- Andrew Taylor
+- Edward Lockhart
+- Will Trojak
+- Johannes Schmude
+- Anne Jones
+date: '2026-08-26'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2608.25858'
+links:
+  paper: https://arxiv.org/abs/2608.25858
+  pdf: https://arxiv.org/pdf/2608.25858
+topic: downscaling
+topics:
+- foundation-models
+type: model
+method:
+- diffusion
+- transformer
+spatial:
+- regional
+data:
+- cmip
+- era5
+status: research
+summary: Cross-attention conditioning with frozen Prithvi-WxC features improves diffusion precipitation
+  downscaling realism and extremes over concatenation, matching performance with five years of data.
+abstract: 'High-resolution precipitation fields are essential for hydrological impact assessment, yet
+  global climate model outputs are too coarse and biased for direct use. AI-based statistical downscaling
+  with diffusion models offers a promising approach, but the mechanism by which large-scale atmospheric
+  predictors condition generation remains largely unexplored. We investigate three conditioning strategies
+  for a denoising diffusion probabilistic model applied to daily precipitation downscaling: channel concatenation
+  of upsampled coarse predictors, cross-attention conditioning with a learned convolutional encoder, and
+  cross-attention conditioning with the frozen encoder of the pretrained Prithvi WxC weather foundation
+  model. All strategies are evaluated against an unconditioned baseline under identical conditions using
+  probabilistic, distributional, spectral, and extreme-event metrics for the Colorado River Basin. Concatenation
+  conditioning achieves the lowest point-wise CRPS and MSE, but tends to produce over-smoothed fields
+  that suppress high-intensity events. In contrast, cross-attention conditioning provides substantially
+  better distributional realism and modest improvements in spectral fidelity. Improvements are greatest
+  for extremes: the Prithvi-WxC conditioned model retains over half of >100mm/day events, although estimates
+  are uncertain due to limited samples. When trained on the full dataset, the learned convolutional model
+  performs similarly to the foundation model-conditioned approach while requiring lower computational
+  resources. However, the Prithvi-WxC-conditioned model achieves comparable performance with only five
+  years of training data. These results indicate that cross-attention conditioning offers advantages over
+  simple concatenation for probabilistic precipitation downscaling, and that pre-trained foundation model
+  representations may offer benefits in data-limited settings.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

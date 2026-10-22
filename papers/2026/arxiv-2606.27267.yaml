@@ -1,0 +1,50 @@
+id: arxiv-2606.27267
+title: Sparse Sensor Placement for Reducing Forecast Errors in Ensemble Kalman Filtering
+authors:
+- Takumi Saito
+- Shunji Kotsuki
+date: '2026-06-25'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.27267'
+  openalex: W7166225311
+links:
+  paper: https://arxiv.org/abs/2606.27267
+  pdf: https://arxiv.org/pdf/2606.27267
+orgs:
+- jma
+topic: data-assimilation
+type: model
+method:
+- classical-ml
+timescale:
+- short
+data:
+- other
+status: research
+summary: Unifies sparse sensor placement with EnKF, deriving A-optimal greedy observation selection that
+  targets forecast error reduction, tested on Lorenz-96 with a matrix-inversion-free algorithm.
+abstract: Designing efficient observation networks for reducing forecast errors is a fundamental challenge
+  in numerical weather prediction. Data-driven sparse sensor placement (SSP) and ensemble-based data assimilation
+  via the Ensemble Kalman Filter (EnKF) have each addressed this challenge independently, yet their mathematical
+  connections have not been systematically formalized. This study presents a unified theoretical framework
+  integrating SSP and EnKF through optimal experimental design, providing new theoretical and algorithmic
+  results. While conventional SSP methods aim to reduce analysis errors, this study extends the SSP to
+  target forecast error reduction by using a tangent linear model approximated by an ensemble forecast.
+  We derive the Fisher information matrices in the ensemble and model spaces for the EnKF, and clarify
+  the mathematical interpretations of A-, D-, and E-optimality in terms of forecast error reduction. A-optimality
+  in the model space minimizes the mean forecast error variance; D-optimality is ill-defined in the model
+  space due to rank deficiency and is therefore formulated in the ensemble space, where it maximizes the
+  Shannon information content of assimilated observations; and E-optimality in the model space minimizes
+  the worst-case forecast error variance. We further propose a fast greedy algorithm for selecting observation
+  locations under A-optimality in the model space, avoiding matrix inversion at each greedy step and substantially
+  reducing computational cost. Numerical experiments using the Lorenz-96 model support these theoretical
+  findings. Among the three optimality criteria, A-optimality in the model space most consistently reduces
+  forecast spread and root-mean-square error, and yields stable incremental improvements consistent with
+  post-assimilation observation impact diagnostics.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

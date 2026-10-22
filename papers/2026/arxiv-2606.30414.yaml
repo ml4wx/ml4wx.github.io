@@ -1,0 +1,51 @@
+id: arxiv-2606.30414
+title: Diffusion Fine-tuning with Rewarded Moment Matching Distillation
+authors:
+- Alexis Jacq
+- Guillaume Couairon
+- Valentin De Bortoli
+- Quentin Berthet
+- Arnaud Doucet
+- Romuald Elie
+date: '2026-06-29'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.30414'
+  openalex: W7166700261
+links:
+  paper: https://arxiv.org/abs/2606.30414
+  pdf: https://arxiv.org/pdf/2606.30414
+topic: probabilistic-ensembles
+topics:
+- global-medium-range
+type: model
+method:
+- diffusion
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: RMMD distills diffusion models while maximizing reward; applied to GenCast it gives a 7.5x speedup
+  and beats the teacher on 93% of weather variables while being better calibrated.
+abstract: Distillation and Reinforcement Learning (RL) fine-tuning are the primary pillars of diffusion
+  post-training. While traditionally studied in isolation, the interaction between these phases remains
+  poorly understood, and in particular how fine-tuning impacts the generative quality of distilled models.
+  We introduce Rewarded Moment Matching Distillation (RMMD), a novel framework that simultaneously distills
+  diffusion models and maximizes a reward function. RMMD preserves the high-fidelity ``naturalness'' characteristic
+  of advanced distillation (such as 8-step Moment Matching) by adapting the sampling loop for on-policy
+  training and repurposing the distillation loss as a proxy for integral KL regularization. By evaluating
+  the FID-Reward Pareto fronts on ImageNet, we demonstrate that RMMD achieves superior trade-offs compared
+  to single-step baselines (DI++) and multi-step competitors (DRaFT, HyperNoise). Finally, we apply RMMD
+  to GenCast, a state-of-the-art weather forecasting model, to distill it while optimizing the Continuous
+  Ranked Probability Score (CRPS) metric. The resulting distilled model achieves a 7.5x speedup while
+  outperforming the teacher model on 93% of target weather variables, and being better calibrated. This
+  proves that RMMD scales to complex, high-dimensional scientific domains.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

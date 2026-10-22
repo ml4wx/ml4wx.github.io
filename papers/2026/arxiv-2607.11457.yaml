@@ -1,0 +1,70 @@
+id: arxiv-2607.11457
+title: 'HourGlass: A probabilistic data-driven temporal downscaler for global and regional weather forecasting'
+authors:
+- Magnus Sikora Ingstad
+- Mariana C. A. Clare
+- Olav Ersland
+- Vera Gahlen
+- Håvard Homleid Haugen
+- Ophélia Miralles
+- Even M. Nordhagen
+- Thomas N. Nipen
+- Ivar A. Seierstad
+- John Bjørnar Bremnes
+- Michael Maier-Gerber
+- Zied Ben Bouallègue
+- Harrison Cook
+- Christian Lessig
+- Gert Mertes
+- Cathal O'Brien
+- Florian Pinault
+- Ana Prieto Nemesio
+- Matthew Chantry
+date: '2026-07-13'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2607.11457'
+  openalex: W7168272337
+links:
+  paper: https://arxiv.org/abs/2607.11457
+  pdf: https://arxiv.org/pdf/2607.11457
+topic: downscaling
+topics:
+- global-medium-range
+- regional-km-scale
+type: model
+timescale:
+- short
+spatial:
+- global
+- regional
+data:
+- nwp-analysis
+status: pre-operational
+summary: CRPS-trained temporal downscaler produces hourly probabilistic forecasts from AIFS and MET Norway's
+  Bris models while retaining skill, though intense hourly precipitation extremes stay underestimated.
+abstract: 'Many forecast applications require high frequency temporal resolution, yet most state-of-the-art
+  data-driven weather forecasting systems operate at 6-hourly resolution. Although direct hourly forecasting
+  is possible, it suffers from error accumulation and temporal inconsistency. We introduce HourGlass,
+  a probabilistic data-driven temporal downscaling method that reconstructs the evolution between forecast
+  states. HourGlass is trained using variants of the continuous ranked probability score (CRPS) preserving
+  small-scale spatial variability while encouraging temporal consistency. Unlike existing deterministic
+  temporal downscaling approaches, which tend to produce overly smooth fields, HourGlass generates realistic
+  probabilistic forecasts. Training on forecast trajectories rather than reanalysis or analysis data also
+  avoids the temporal inconsistencies present in datasets used by previous methods. We evaluate HourGlass
+  in two settings: AIFS-HourGlass, applied globally to ECMWF''s AIFS-Single and AIFS-ENS forecast systems,
+  and Bris-HourGlass, applied regionally to MET Norway''s high-resolution stretched-grid ensemble model,
+  Bris. Verification against observations shows that both models retain the skill of their underlying
+  forecasting systems while producing temporally coherent hourly forecasts with realistic small-scale
+  variability. Case studies demonstrate physically consistent evolution during rapidly developing weather
+  events, including extratropical cyclones and organised convection. Hourly precipitation remains challenging:
+  HourGlass improves the spatial realism of precipitation fields but still underestimates the most intense
+  extremes, a common limitation of data-driven weather forecasting models. These results demonstrate that
+  HourGlass effectively bridges the gap between 6-hourly data-driven forecasts and the hourly products
+  required for operational regional and global forecasting.'
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

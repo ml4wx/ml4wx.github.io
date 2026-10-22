@@ -1,0 +1,60 @@
+id: doi-10.1016-j.uclim.2026.103076
+title: A Neural Network-based downscaling method for near surface temperature in urban areas
+authors:
+- Julia Garcia Cristobal
+- Jean Wurtz
+- Antoine Doury
+- Blanka Balogh
+- Valéry Masson
+- Olivier Mestre
+date: '2026-08-01'
+year: 2026
+venue: Urban Climate
+venue_type: journal
+ids:
+  doi: 10.1016/j.uclim.2026.103076
+  openalex: W7197028188
+links:
+  paper: https://doi.org/10.1016/j.uclim.2026.103076
+  pdf: https://www.sciencedirect.com/science/article/pii/S221209552600307X/pdf
+orgs:
+- meteo-france
+topic: downscaling
+topics:
+- applications-impacts
+type: model
+method:
+- cnn
+spatial:
+- regional
+- local
+data:
+- nwp-analysis
+- stations
+- km-scale-sim
+status: pre-operational
+summary: UNet with Sobel-penalty loss downscales AROME and ARPEGE to 300 m urban air temperature over
+  Paris, with mean bias of about -0.3 to -0.5 °C against stations.
+abstract: Urban weather forecasts at hectometric resolution are essential for effective warning systems
+  and sustainable urban planning, especially in the context of climate change and rapid urban expansion.
+  While numerical weather prediction (NWP) systems can simulate the Urban Heat Island (UHI) effect, their
+  computational cost limits their operational use. This study presents a convolutional neural network
+  (CNN) based statistical downscaling (SD) method to emulate 300 m resolution 2 m air temperature over
+  the Paris region, using coarse resolution inputs from AROME (2.5 km) and ARPEGE (10 km) operational
+  models. This method leverages a UNet architecture, optimized with a Sobel operator penalty loss preserving
+  fine-scale temperature gradients, and includes static and dynamic predictors. The approach is first
+  validated in a super-resolution framework, using degraded high-resolution Meso-NH simulations (1.2 km
+  to 9.6 km) to assess the model’s ability to recover fine-scale details. This demonstrates the potential
+  of the methodology, achieving a Root Mean Squared Error (RMSE) of 0.37 °C when reconstructing 300 m
+  temperature fields. The method is further evaluated using operational AROME and ARPEGE forecasts, validating
+  against high-resolution Meso-NH simulations and in-situ observations from Météo-France’s stations. When
+  compared to observations, the downscaled AROME SD model achieves − 0.33 ° C mean bias over the urban
+  station, and the ARPEGE SD, whose inputs do not include any urban parameterization, a mean bias of −
+  0.46 ° C . This study demonstrates the efficiency of the SD in recovering hectometric-scale patterns,
+  including UHI intensity and spatial heterogeneity, while offering a computationally efficient alternative
+  to traditional NWP systems.
+significance: 3
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

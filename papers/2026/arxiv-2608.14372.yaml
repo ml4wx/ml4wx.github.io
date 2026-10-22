@@ -1,0 +1,44 @@
+id: arxiv-2608.14372
+title: 'Catching the Imposter: Self-Supervised Learning of Physical Coherence with Cross-Entity Feature
+  Permutations'
+authors:
+- Aleksei Rozanov
+- Arvind Renganathan
+- Vipin Kumar
+date: '2026-08-14'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2608.14372'
+links:
+  paper: https://arxiv.org/abs/2608.14372
+  pdf: https://arxiv.org/pdf/2608.14372
+topic: foundation-models
+topics:
+- benchmarks-data-eval
+type: model
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Imposter, a self-supervised pretext task swapping cross-variable features, is compared with other
+  objectives on ERA5-Land, with gains depending on the downstream task family.
+abstract: Scientific data often describe entities whose features are jointly governed by the laws of physics,
+  yet existing self-supervised learning (SSL) objectives largely ignore this physical coherence. We introduce
+  imposter, a discriminative pretext task that replaces subsets of an entity's features with real observations
+  donated by another entity and trains the encoder to identify the swapped features. Because every donated
+  value is individually plausible, the task can only be solved by learning cross-feature physical dependencies.
+  We evaluate the proposed objectives on global ERA5-Land reanalysis data using 21 environmental variables
+  and assess the learned representations on seven downstream tasks spanning climate classification, carbon
+  flux estimation, and streamflow prediction. Our study includes, to our knowledge, the first systematic
+  comparison of self-supervised objectives for land-surface modeling under a shared architecture and pre-training
+  budget. We find that the most effective pretext task depends on the downstream task family rather than
+  any single objective's superiority, and that imposter provides complementary information when combined
+  with existing SSL objectives. These results suggest that physical coherence is a valuable new source
+  of self-supervision for scientific foundation models.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

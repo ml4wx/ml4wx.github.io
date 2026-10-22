@@ -1,0 +1,55 @@
+id: arxiv-2605.14426
+title: Composable multi-satellite precipitation estimation for evolving observing systems
+authors:
+- Yunfan Yang
+- Haofei Sun
+- Xiuyu Sun
+- Wei Han
+- Xiaoze Xu
+- Xingtao Song
+- Jun Li
+- Zhiqiu Gao
+- Wei Huang
+date: '2026-05-14'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.14426'
+links:
+  paper: https://arxiv.org/abs/2605.14426
+  pdf: https://arxiv.org/pdf/2605.14426
+topic: observations-remote-sensing
+type: model
+method:
+- other
+spatial:
+- global
+data:
+- satellite
+- stations
+status: research
+summary: PRISMA is a generative multi-satellite precipitation retrieval that adds new sensors without
+  retraining, beating IMERG Final on CRPS and RMSE against station data.
+abstract: Rapid and spatially continuous precipitation monitoring is critical for flood, landslide, and
+  other hydrometeorological hazard warnings, particularly in regions where rain-gauge and weather-radar
+  networks are sparse. The coordinated use of heterogeneous satellite observations, including geostationary
+  infrared, passive microwave, and spaceborne radar measurements, is therefore a key pathway toward more
+  accurate and spatially refined precipitation monitoring. Recent deep-learning methods have substantially
+  improved multi-source satellite precipitation estimation, but most remain tied to predefined combinations
+  of satellite inputs. As satellite observing systems evolve, incorporating new instruments often requires
+  substantial model retraining and maintenance. We propose PRISMA, a generative framework for precipitation
+  retrieval from multi-source observations. The framework separates the training of the precipitation
+  prior from sensor-specific observational constraints, enabling sensor branches to be flexibly composed
+  or extended without retraining the precipitation generative backbone. We successively integrate FY-4B/AGRI,
+  GPM/GMI, F16-F18 SSMIS, and GPM/DPR-Ka observations within the PRISMA framework, achieving consistent
+  improvements in precipitation-estimation accuracy. Matched-footprint experiments further confirm the
+  effective use of complementary information from coincident sensors. Independent station validation shows
+  that PRISMA outperforms IMERG Final in both CRPS and RMSE while providing positive fair Brier skill
+  across all precipitation thresholds. PRISMA enables flexible composition of heterogeneous satellite
+  observations and rapid generation of accurate ensemble precipitation estimates, strengthening satellite-based
+  precipitation monitoring.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

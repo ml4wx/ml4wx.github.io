@@ -1,0 +1,52 @@
+id: doi-10.1007-s44443-026-01070-1
+title: 'WindHCT: context and local hybrid CNN Transformer for wind speed super-resolution'
+authors:
+- Won-ji Jo
+- Sung-Wook Park
+- Yeong-A Park
+- Hun-Je Lee
+- Se-Hoon Jung
+- Chun-Bo Sim
+date: '2026-08-19'
+year: 2026
+venue: Journal of King Saud University - Computer and Information Sciences
+venue_type: journal
+ids:
+  doi: 10.1007/s44443-026-01070-1
+  openalex: W7203760859
+links:
+  paper: https://doi.org/10.1007/s44443-026-01070-1
+  pdf: https://link.springer.com/content/pdf/10.1007/s44443-026-01070-1.pdf
+  code: https://github.com/Jowonji/WindHCT
+topic: downscaling
+type: model
+method:
+- transformer
+- cnn
+spatial:
+- regional
+data:
+- era5
+- other
+status: research
+summary: WindHCT combines CNN and Transformer branches for 5x wind-speed super-resolution, beating EDSR,
+  RCAN, SwinIR, HAT and PFT on WIND Toolkit and ERA5-CERRA data.
+abstract: 'Global climate models operate at coarse spatial resolutions that limit their ability to represent
+  localized atmospheric phenomena, motivating deep learning–based super-resolution (SR) for meteorological
+  fields. However, most existing SR models are designed for natural images and fail to fully capture the
+  characteristics of wind-speed fields. This study proposes WindHCT, a hybrid CNN–Transformer SR model
+  that jointly learns the local variability and global spatial dependencies of wind-speed fields. WindHCT
+  comprises two parallel branches—a convolutional neural network (CNN)-based local branch and a Transformer-based
+  context branch—whose representations are integrated through an adaptive fusion module, with a coordinate
+  attention mechanism enhancing directional information. Experiments were conducted under a 5 × upscaling
+  setting with temporally disjoint splits on two datasets: a WIND Toolkit-based dataset and an ERA5–CERRA-based
+  dataset. WindHCT achieves consistent and, in most comparisons, statistically significant improvements
+  over representative SR models, including EDSR, RCAN, SwinIR, HAT, and PFT, in terms of root mean square
+  error (RMSE), MAE, PSNR, and SSIM. Physically oriented evaluations further suggest that the proposed
+  model improves several aspects of wind-field reconstruction beyond pixel-wise accuracy. The WindHCT
+  implementation is publicly available at https://github.com/Jowonji/WindHCT .'
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

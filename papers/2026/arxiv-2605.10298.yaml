@@ -1,0 +1,55 @@
+id: arxiv-2605.10298
+title: Set Prediction for Next-Day Active Fire Forecasting
+authors:
+- Yuchen Bai
+- Georgios Athanasiou
+- Xin Yu
+- Diogenis Antonopoulos
+- Ioannis Papoutsis
+- Stijn Hantson
+- Nuno Carvalhais
+date: '2026-05-11'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.10298'
+links:
+  paper: https://arxiv.org/abs/2605.10298
+  pdf: https://arxiv.org/pdf/2605.10298
+topic: extremes-hazards
+topics:
+- benchmarks-data-eval
+type: model
+method:
+- transformer
+timescale:
+- short
+spatial:
+- global
+data:
+- satellite
+- other
+status: research
+summary: WISP recasts next-day active fire forecasting as set prediction, reaching 38.2% AP on a new hourly
+  global benchmark built from meteorology and satellite covariates.
+abstract: Accurate next-day active fire forecasts can support early warning, disaster response, forest
+  risk assessment, and downstream estimation of fire-related carbon emissions. Existing machine learning
+  approaches to wildfire forecasting typically predict wildfire danger or fire probability on kilometre-scale
+  daily grids, which is useful for regional warning but does not directly represent localized fire events.
+  We propose Wildfire Ignition Set Predictor (WISP), a query-based model that reformulates next-day active
+  fire forecasting as point-set prediction. From 48 hours of covariates including meteorology, satellite
+  vegetation products, static land, and fire history, WISP predicts a fixed-size ranked set of future
+  active fire cluster centres on a 375 m grid across globally distributed regions. The model is trained
+  end-to-end with Hungarian matching; to address the conflicting roles of the classification score in
+  assignment, ranking, and query activation, we use asymmetric classification-localization weighting in
+  matching and loss. We further construct a globally distributed, hourly, multi-source benchmark for this
+  task. On a held-out test set spanning fire regions worldwide, the best WISP variant achieves 38.2% average
+  precision (AP) for ranked fire-centre detections, covers 53.4% of fire cluster mass weighted by fire
+  radiative power (FRP), and localizes 54.1% of observed clusters within 5 km. These results establish
+  sparse set prediction as a viable formulation for high-resolution wildfire forecasting and provide a
+  benchmark for future work in this regime.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

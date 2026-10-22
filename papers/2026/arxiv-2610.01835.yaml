@@ -1,0 +1,95 @@
+id: arxiv-2610.01835
+title: 'Varda-single-1.0: deterministic data-driven weather forecasting at 1 km resolution over Switzerland''s
+  complex topography'
+authors:
+- Alberto Pennino
+- Francesco Zanetta
+- Michele Cattaneo
+- Claire Merker
+- Radi Radev
+- Jonas Bhend
+- Louis Frey
+- Hugues de Laroussilhe
+- Ophélia Miralles
+- Carlos Osuna
+- Daniele Nerini
+- Andreas Pauling
+- Daniel Hupp
+- Ulrich Hamann
+- Mary McGlohon
+- Marti Bosch
+- Luca Lanzilao
+- Marco Arpagaus
+- Lukas Jansing
+- Daniel Leuenberger
+- Mark A. Liniger
+- Katrin Ehlert
+- Matthew Chantry
+- Håvard Homleid Haugen
+- Gert Mertes
+- Ana Prieto Nemesio
+- Mario Santa Cruz
+- Jasper Wijnands
+- Gabriel Moldovan
+- Harrison Cook
+- Oliver Fuhrer
+date: '2026-10-01'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.01835'
+  openalex: W7215945999
+links:
+  paper: https://arxiv.org/abs/2610.01835
+  pdf: https://arxiv.org/pdf/2610.01835
+orgs:
+- ecmwf
+- meteoswiss
+- knmi
+- met-norway
+- eth-zurich
+- sdsc
+topic: regional-km-scale
+topics:
+- global-medium-range
+type: model
+method:
+- transformer
+- gnn
+timescale:
+- short
+- medium
+spatial:
+- regional
+- global
+data:
+- era5
+- nwp-analysis
+- stations
+status: pre-operational
+summary: Varda-single-1.0 is an Anemoi Graph Transformer Alpine system with hourly 1 km forecasts, matching
+  ICON-CH1-EPS to +33 h and beating ICON-CH2-EPS to +120 h.
+abstract: 'We present Varda-single-1.0, a medium-range data-driven weather prediction system built for
+  the Alpine domain. It provides hourly deterministic regional forecasts on a mesh of 1 km resolution
+  and global forecasts on a 31 km mesh. The system comprises two independently trained stretched-grid
+  Graph Transformer models with encoder-processor-decoder architecture, developed in the Anemoi framework:
+  a 6-hourly autoregressive forecaster and a temporal downscaler reconstructing hourly forecasts between
+  the forecaster''s steps. Its training curriculum includes pre-training on ERA5 reanalysis data, followed
+  by training on a 20-year kilometre-scale regional reanalysis, and finally fine-tuning on operational
+  kilometre-scale analyses. Verified over one year against operational analyses and surface station observations,
+  Varda-single is competitive with or improves on MeteoSwiss'' operational numerical weather prediction
+  baselines for most headline scores and variables. It broadly matches the skill of the high-resolution
+  1 km ICON-CH1-EPS control at lead times up to +33 h and generally outperforms the 2 km ICON-CH2-EPS
+  control at lead times up to +120 h. Despite competitive aggregate scores, Varda-single underestimates
+  some local wind maxima and produces overly smooth convective precipitation fields, consistent with the
+  smoothing associated with squared-error training. To gain insight into the model''s behaviour, we investigate
+  three case studies beyond the aggregated headline scores, and find particular weaknesses in Varda-single''s
+  representation of local winds over complex terrain. Varda-single represents an important step in the
+  development of high-resolution ML forecasting over complex terrain, in complementing the operational
+  regional numerical weather prediction models of MeteoSwiss with data-driven models and in providing
+  a pretrained model for researchers and user-specific applications.'
+significance: 5
+score: 55
+highlight: false
+added: '2026-10-22'
+source: backfill

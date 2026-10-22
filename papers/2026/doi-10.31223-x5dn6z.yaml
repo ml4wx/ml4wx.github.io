@@ -1,0 +1,58 @@
+id: doi-10.31223-x5dn6z
+title: Forecasting the moisture content of live forest fuels with a transformer machine learning model
+  and Sentinel-2 satellite data
+authors:
+- Ivan Kotzur
+- Matthias Boer
+- Vitus Benson
+- Rachael H. Nolan
+date: '2026-09-29'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.31223/x5dn6z
+  openalex: W7214797892
+links:
+  paper: https://doi.org/10.31223/x5dn6z
+topic: extremes-hazards
+topics:
+- applications-impacts
+type: model
+method:
+- transformer
+timescale:
+- s2s
+spatial:
+- regional
+data:
+- era5
+- satellite
+status: research
+summary: Contextformer transformer forecasts live fuel moisture up to 50 days ahead in New South Wales
+  using weather and Sentinel-2 data, reaching RMSE 15.68% dry matter.
+abstract: Live fuel moisture content (LFMC) provides an indicator of vegetation flammability, the potential
+  for canopy dieback from drought, and habitat quality for arboreal fauna. Recent advances in artificial
+  intelligence have increased the potential in meteorological forecasts for Earth surface forecasting.
+  Combining weather forecasts with remotely sensed LFMC offers a promising avenue for short and medium-term
+  LFMC forecasting (i.e. weeks to months). We adapted a transformer-based surface forecasting model to
+  predict LFMC across the forest regions of New South Wales, Australia, up to 50 days in advance. Using
+  a multi-modal spatiotemporal transformer (Contextformer) as a hind-cast model of LFMC with ‘minicubes’
+  of weather, soil, vegetation structure, elevation and Sentinel-2 reflectance data, we tested four variants
+  to evaluate if theory-guided biophysical predictors improve performance compared to the base model.
+  Explainable AI methods were applied to demystify model reliance, using Integrated Gradients attribution.
+  Incorporating biophysical theory in predictor selection produced the lowest error (Global RMSE=15.68%
+  dry matter), whereas adding only spectral bands to the base model was less successful (partly due to
+  the structure of the forecast architecture). Within the LFMC forecast, explainable AI revealed mixed
+  patterns in importance amongst temperature and rainfall variables due to the transformer’s ability to
+  model multiple eco-physiological pathways to vegetation hydration. Dynamic weather variations dominate
+  forecasted LFMC temporal trends, over spectral bands. Crucially, regression-to-the-mean effects in the
+  LFMC forecasts caused poorer local performance (median R2≈0.21) compared to global evaluation (R2≈0.69,
+  i.e. poorer within minicubes than amongst minicubes). When converting this hind-cast model to an operational
+  model (i.e. true forecast), best performance could be utilised by running rolling short-term forecasts
+  (5 to 15 days) to capture localised fuel hazard peaks and canopy dieback in the future.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

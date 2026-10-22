@@ -1,0 +1,57 @@
+id: doi-10.1029-2025ea004823
+title: Improved Tropical Cyclone Wind Estimation Using Dual‐Polarization C‐Band SAR and Machine Learning
+authors:
+- Chaogang Guo
+- Weihua Ai
+- Xianbin Zhao
+- Z J Liu
+- Hongwei Yang
+- Jiajia Tang
+date: '2026-05-01'
+year: 2026
+venue: Earth and Space Science
+venue_type: journal
+ids:
+  doi: 10.1029/2025ea004823
+  openalex: W7160592427
+links:
+  paper: https://doi.org/10.1029/2025ea004823
+orgs:
+- cma
+topic: observations-remote-sensing
+topics:
+- extremes-hazards
+type: model
+method:
+- classical-ml
+spatial:
+- global
+data:
+- satellite
+status: research
+summary: XGBoost retrieves tropical cyclone surface winds from dual-polarization Sentinel-1 SAR, reaching
+  3.44 m/s test RMSE and 4.10 m/s under leave-one-storm-out validation.
+abstract: Abstract Tropical cyclones (TCs) characterized by extreme wind speeds present severe hazards
+  to human life and infrastructure. Spaceborne synthetic aperture radar (SAR) has emerged as a critical
+  observational tool for TCs, owing to its all‐weather, high‐resolution imaging capabilities. Nevertheless,
+  retrieving sea surface winds from satellite SAR remains challenging, as radar backscatter is modulated
+  not only by local wind dynamics but also by non‐Bragg scattering mechanisms. Heavy precipitation within
+  TCs further exacerbates errors in normalized radar cross section measurements. In this study, multi‐scene
+  Sentinel‐1 SAR observations from multiple TCs during 2016–2020 were collected and collocated with stepped‐frequency
+  microwave radiometer measurements to construct a dual‐polarization scattering feature data set. To address
+  class imbalance, resampling was applied exclusively within the training data of each cross‐validation
+  fold. Feature selection was conducted using correlation analysis combined with maximum relevance–minimum
+  redundancy, also implemented in a storm‐independent manner. Three machine learning models were trained
+  for comparison using a random 7:3 data split, among which the XGBoost model exhibited superior performance
+  and was designated as the C‐band dual‐polarization wind speed model (CDP_WS1). It achieved a root mean
+  square error (RMSE) of 2.65 m/s and 3.44 m/s on the training and test sets, respectively, maintaining
+  stable performance across wind speeds up to 70 m/s. Furthermore, to rigorously assess storm‐independent
+  generalization, a Leave‐One‐Storm‐Out (LOSO) cross‐validation was conducted across 14 TCs, yielding
+  a RMSE of 4.10 m/s. Independent validation on two representative hurricanes further confirmed its robustness
+  and accuracy.
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

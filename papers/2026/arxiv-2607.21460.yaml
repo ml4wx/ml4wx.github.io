@@ -1,0 +1,58 @@
+id: arxiv-2607.21460
+title: Diffusion posterior sampling enables zero shot kilometre scale wind forecasting over complex terrain
+authors:
+- Yujiang Cai
+- Ya Wang
+- Shuanglei Feng
+- Bo Wang
+- Yiming Liu
+- Hui Yuan
+- Xinyi Sun
+- Haijie Li
+- Shenming Fu
+date: '2026-07-23'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2607.21460'
+links:
+  paper: https://arxiv.org/abs/2607.21460
+  pdf: https://arxiv.org/pdf/2607.21460
+topic: downscaling
+topics:
+- regional-km-scale
+type: model
+method:
+- diffusion
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+- km-scale-sim
+status: research
+summary: KiloGen uses diffusion posterior sampling with a WRF-trained wind prior to refine 25 km ECMWF
+  forecasts to kilometre scale over complex terrain, cutting strong-wind RMSE about 10%.
+abstract: Reliable prediction of near surface wind over complex terrain is limited by the mismatch between
+  the spatial resolution of operational forecasts and terrain controlled local wind variability. Here,
+  we develop KiloGen, a diffusion posterior sampling framework for kilometre scale wind forecast enhancement.
+  KiloGen learns a high resolution vector wind prior from Weather Research and Forecasting (WRF) model
+  simulations and constrains posterior sampling with 25 km forecasts from the European Centre for Medium
+  Range Weather Forecasts (ECMWF) at inference time. This formulation avoids paired ECMWF and WRF training
+  samples and an explicitly learned mapping from coarse to fine resolution. Applied over Shanxi, China,
+  a region with complex mountainous terrain, KiloGen reconstructs terrain organized wind structures and
+  restores high wavenumber variability while retaining the large scale evolution of the operational forecast.
+  Station verification shows that KiloGen achieves the lowest overall wind speed root mean square error
+  (RMSE) among the evaluated products, with larger benefits at elevated and topographically complex sites.
+  The improvement is strongest under strong wind conditions, reducing RMSE by approximately 10% for observed
+  winds above 20 m s^-1. Across 13 distinct strong wind events, KiloGen improves upon the 0.25 degree
+  ECMWF forecast in all cases and outperforms the 0.1 degree ECMWF forecast in most cases. These results
+  show that diffusion posterior sampling provides an effective approach for terrain aware kilometre scale
+  wind forecast enhancement.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

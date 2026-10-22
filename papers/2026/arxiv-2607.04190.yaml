@@ -1,0 +1,51 @@
+id: arxiv-2607.04190
+title: Exploring Convolutional Neural Processes for Weather Downscaling
+authors:
+- Francisco Passos
+date: '2026-07-05'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2607.04190'
+links:
+  paper: https://arxiv.org/abs/2607.04190
+  pdf: https://arxiv.org/pdf/2607.04190
+topic: downscaling
+topics:
+- local-forecasting
+type: evaluation
+method:
+- other
+spatial:
+- regional
+- local
+data:
+- era5
+- stations
+- other
+status: research
+summary: ConvCNPs downscale ERA5-Land daily maximum temperature to 1 km over Switzerland, achieving CRPS
+  skill 0.524 versus bilinear interpolation, though off-grid station skill is not positive.
+abstract: Global reanalysis products such as ERA5-Land provide spatially complete weather fields but at
+  resolutions too coarse for local applications, particularly in mountainous regions where temperature
+  can vary by several degrees over short distances. This project investigates Convolutional Conditional
+  Neural Processes (ConvCNPs) for statistical downscaling of daily maximum temperature from the ~11km
+  resolution ERA5-Land grid to ~1km resolution over Switzerland, building upon the architecture of Vaughan
+  et al. (2022) and adapting it to the topographically complex Swiss domain with high-resolution elevation
+  features from the swisstopo DHM25. The best model, trained on ten years of data (2014-2023) with five-fold
+  temporal cross-validation, achieves a mean absolute error of 1.31 Celsius and a CRPS-based skill score
+  of 0.524 relative to bilinear interpolation, reducing the expected prediction error by more than half.
+  An ablation study reveals that the elevation MLP is the indispensable component - without it, the model
+  diverges entirely - while explicit seasonal features and Topographic Position Index provide secondary
+  benefits. Under sparse on-grid input the model degrades gracefully, maintaining positive skill down
+  to approximately 10% of the input grid; however, zero-shot deployment on off-grid station observations
+  does not achieve positive skill at any density tested. All configurations exhibit severely overconfident
+  uncertainty estimates, a structural limitation of the Gaussian likelihood training objective. These
+  results demonstrate that ConvCNPs are a viable and effective approach to climate downscaling in complex
+  terrain, and identify uncertainty calibration and native support for non-gridded input as the key challenges
+  for operational deployment.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

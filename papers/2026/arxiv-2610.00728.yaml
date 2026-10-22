@@ -1,0 +1,54 @@
+id: arxiv-2610.00728
+title: Benchmarking Generative Models for Near-Surface Data Assimilation on Real Station Observations
+authors:
+- Ruizhe Huang
+- Qidong Yang
+- Jonathan Giezendanner
+- Sherrie Wang
+date: '2026-09-30'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.00728'
+  openalex: W7215974586
+links:
+  paper: https://arxiv.org/abs/2610.00728
+  pdf: https://arxiv.org/pdf/2610.00728
+topic: data-assimilation
+topics:
+- benchmarks-data-eval
+type: benchmark
+method:
+- diffusion
+spatial:
+- regional
+data:
+- stations
+- era5
+status: research
+summary: First controlled benchmark of generative data assimilation on 11,849 real stations; best generative
+  methods beat 3D-Var (35.7% vs 33.3% RMSE gain over ERA5).
+abstract: 'Weather reanalysis products rely on computationally intensive numerical weather predictions
+  followed by data assimilation that corrects the forecast toward observations. Recent advances in deep
+  generative models offer a cheaper alternative that shifts much of this cost from inference to offline
+  training. However, existing generative approaches have been evaluated on synthetic observations or under
+  different datasets and evaluation schemes, making it unclear which design choices improve real-world
+  data assimilation. We present the first controlled benchmark of generative data assimilation for single-time
+  near-surface analysis from real weather station observations. Using 11,849 NOAA MADIS stations across
+  the contiguous United States and four near-surface variables, we hold the dataset, observation operator,
+  and deep learning architecture fixed, and measure spatial generalization at held-out stations. The benchmark
+  compares the major design choices proposed for generative data assimilation, including diffusion versus
+  flow matching, pixel versus latent-space formulations, and multiple inference-time conditioning strategies,
+  against a classical 3D-Var baseline. The benchmark reveals three conclusions. First, the best generative
+  methods outperform 3D-Var (35.7% vs. 33.3% RMSE improvement over ERA5), although 3D-Var receives the
+  ERA5 field at the analysis time as its background and the generative methods receive none. Second, full-gradient
+  guidance consistently outperforms stop-gradient and initial-noise optimization. Third, other choices
+  provide little measurable benefit: diffusion and flow matching perform nearly identically under matched
+  conditions, and latent-space variable mixing does not help. Both advantages widen when stations are
+  sparse. Together, these results identify which components of generative data assimilation improve spatial
+  generalization in near-surface analysis.'
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

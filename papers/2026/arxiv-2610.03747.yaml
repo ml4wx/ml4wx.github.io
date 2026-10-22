@@ -1,0 +1,49 @@
+id: arxiv-2610.03747
+title: 'LoRA Adaptation Strength in Aurora-WRF: Trade-offs in Regional Heavy-Rainfall Forecasting'
+authors:
+- Boyan Liu
+- Xiaoyuan Zhang
+date: '2026-09-24'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.03747'
+links:
+  paper: https://arxiv.org/abs/2610.03747
+  pdf: https://arxiv.org/pdf/2610.03747
+topic: foundation-models
+topics:
+- regional-km-scale
+- extremes-hazards
+type: evaluation
+method:
+- transformer
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+- nwp-analysis
+status: research
+summary: LoRA strength tuning of Aurora coupled to WRF over Beijing-Tianjin-Hebei trades heavy-rain detection
+  against intensity error, with 0.75 strength cutting 24 h MSE by 30.7%.
+abstract: We investigate how parameter-efficient adaptation of an atmospheric foundation model affects
+  downstream regional precipitation in a controlled Aurora-WRF coupling experiment over the Beijing-Tianjin-Hebei
+  region. A single-step, precipitation-weighted LoRA adaptation of AuroraPretrained is trained on May-September
+  2020-2021 and selected using 2022 validation data. Five inference-time adaptation strengths are coupled
+  to an unchanged 9-km WRF configuration and compared with a GFS-driven control under common ERA5 initialization
+  and auxiliary-field rules. Evaluation uses 17 initializations in 2023, hourly ERA5 precipitation, and
+  conservative remapping to a fixed 356-cell, 0.25-degree verification grid. Heavy rainfall is defined
+  exclusively as at least 50 mm in a continuous 24-hour window, advanced hourly. For window starts from
+  0 to 48 hours, unadapted Aurora attains the highest mean critical success index (CSI), 0.216, compared
+  with 0.144 for the GFS control. An intermediate LoRA strength of 0.75 reduces the Aurora-driven 24-hour
+  precipitation mean squared error by 30.7% and brings pooled frequency Bias from 1.510 to 1.024, but
+  lowers CSI to 0.182. GFS retains the lowest whole-domain error. These results characterize a trade-off
+  between rainfall detection, frequency calibration, and intensity error, showing the importance of evaluating
+  adaptation strength against multiple downstream criteria within a common coupling framework.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

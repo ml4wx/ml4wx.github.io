@@ -1,0 +1,65 @@
+id: doi-10.1016-j.eswa.2026.133361
+title: A trustworthy deep learning framework for urban climate downscaling via physics-informed diffusion
+  and topology-aware graph neural operators
+authors:
+- Mariam Labib Francies
+- Abeer Twakol Khalil
+- Hanan M. Amer
+- Mohamed Maher Ata
+date: '2026-06-21'
+year: 2026
+venue: Expert Systems with Applications
+venue_type: journal
+ids:
+  doi: 10.1016/j.eswa.2026.133361
+  openalex: W7165483111
+links:
+  paper: https://doi.org/10.1016/j.eswa.2026.133361
+topic: downscaling
+topics:
+- xai-uq-physics
+type: model
+method:
+- diffusion
+- neural-operator
+- gnn
+- physics-constrained
+spatial:
+- regional
+- local
+data:
+- era5
+status: research
+summary: Two-stage physics-informed diffusion and graph Fourier neural operator downscales reanalysis
+  to urban scale, cutting wind divergence error 54% and improving unseen-city transfer 27%.
+abstract: 'Urban areas face an escalating climate crisis, yet the resolution gap between coarse atmospheric
+  reanalysis data operating at approximately 30-kilometer grid spacing and the kilometer-scale predictions
+  required for urban planning remains a critical challenge. While deep learning methods achieve high accuracy
+  in climate prediction tasks, they typically fail to satisfy three essential properties for operational
+  deployment: adherence to physical conservation laws, stable predictions under input perturbations, and
+  generalizability to new urban environments without retraining. This paper introduces a two-stage framework
+  that defines and achieves trustworthy urban climate inference, where trustworthiness encompasses physical
+  consistency, prediction stability, and cross-city generalizability. In the first stage, a Stochastic
+  Physics-Informed Diffusion Model (SPIDM) corrects systematic biases in coarse climate data while simultaneously
+  quantifying predictive uncertainty through a stochastic differential equation framework. In the second
+  stage, a Deep Graph Fourier Neural Operator (DeepGFNO) performs coarse-to-fine urban climate inference
+  on a novel hybrid graph structure that jointly encodes geographic proximity and land-use similarity
+  derived from satellite-based vegetation indices. Validated on reanalysis climate data for two Egyptian
+  cities with distinct climatic profiles, the framework achieves: (1) a 54% reduction in wind field divergence
+  error, confirming adherence to mass conservation; (2) a 27% improvement in prediction stability relative
+  to a standard convolutional neural network baseline; (3) 27% better zero-shot transfer performance to
+  an entirely unseen city; and (4) a 62% reduction in prediction error through hybrid graph design relative
+  to geographic-only graph structures. Although a standard encoder-decoder network achieves marginally
+  better in-domain accuracy, it suffers 257% performance degradation when transferred to a new city, confirming
+  that it memorizes location-specific spatial patterns rather than learning transferable physical principles.
+  By prioritizing trustworthiness criteria and providing a complete open-source implementation with illustrative
+  urban planning applications, this work establishes a deployment-oriented framework in which zero-shot
+  transfer quantifies transferable physical knowledge across the tested arid and Mediterranean regimes
+  and brief few-shot adaptation (50 target-city samples) provides the operational accuracy required for
+  fine-grained urban planning. Broader validation across diverse climatic regimes is identified as an
+  important direction for future research.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

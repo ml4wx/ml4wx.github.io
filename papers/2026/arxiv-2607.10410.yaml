@@ -1,0 +1,49 @@
+id: arxiv-2607.10410
+title: 'TSCoNet: A Two-Stage Copula CNN-LSTM for Uncertainty-Aware Spatio-Temporal Forecasting'
+authors:
+- Jongwook Kim
+- Jong-Min Kim
+date: '2026-07-11'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2607.10410'
+links:
+  paper: https://arxiv.org/abs/2607.10410
+  pdf: https://arxiv.org/pdf/2607.10410
+topic: probabilistic-ensembles
+topics:
+- xai-uq-physics
+type: model
+method:
+- cnn
+- rnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Two-stage CNN-LSTM with Gaussian copula adds calibrated joint prediction intervals to monthly
+  precipitation and temperature forecasts for 50 cities without losing point accuracy.
+abstract: Reliable forecasting of several interrelated environmental variables - such as regional precipitation
+  and temperature, or other correlated geophysical fields - across many locations calls for accurate predictions
+  accompanied by trustworthy statements of their uncertainty. Modern deep-learning models forecast such
+  variables accurately but usually report no uncertainty, and forcing them to output uncertainty through
+  maximum likelihood tends to degrade their accuracy, especially when the variables are strongly correlated.
+  Motivated by this tension, we develop TSCoNet, a two-stage convolutional-recurrent model coupled with
+  a Gaussian copula that jointly forecasts multiple variables over space and time while quantifying predictive
+  uncertainty. The method first learns accurate mean forecasts and then, holding the mean fixed, refines
+  a shared representation to estimate the predictive variance, yielding calibrated prediction intervals
+  after a standard recalibration, so that uncertainty is added without sacrificing point accuracy. We
+  study the approach on simulated non-stationary spatial fields on the sphere and on a real dataset of
+  monthly precipitation and temperature for fifty cities over 2000-2020. The model matches the accuracy
+  of a strong deterministic forecaster while supplying calibrated prediction intervals that the deterministic
+  model cannot, giving a single tool that provides both accurate point forecasts and reliable uncertainty
+  for multivariate spatio-temporal data.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

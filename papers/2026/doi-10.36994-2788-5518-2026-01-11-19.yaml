@@ -1,0 +1,60 @@
+id: doi-10.36994-2788-5518-2026-01-11-19
+title: MULTIMODAL NEURAL NETWORK MODEL FOR SOLAR ENERGY GENERATION FORECASTING WITH INTEGRATION OF SATELLITE
+  ANDMETEOROLOGICAL DATA
+authors:
+- В. Ю. Лось
+date: '2026-10-05'
+year: 2026
+venue: Інфокомунікаційні та комп’ютерні технології
+venue_type: journal
+ids:
+  doi: 10.36994/2788-5518-2026-01-11-19
+  openalex: W7220730865
+links:
+  paper: https://doi.org/10.36994/2788-5518-2026-01-11-19
+  pdf: https://visn-icct.uu.edu.ua/index.php/icct/article/download/229/207
+topic: applications-impacts
+topics:
+- nowcasting
+type: model
+method:
+- cnn
+- rnn
+- transformer
+timescale:
+- short
+spatial:
+- local
+data:
+- satellite
+- nwp-analysis
+status: pre-operational
+summary: Multimodal CNN-LSTM with cross-modal attention fuses NWP, satellite cloud imagery and PV data
+  to forecast household solar generation with incremental fine-tuning.
+abstract: 'The article presents and scientifically substantiates a multimodal neural network model for
+  high-precision short-term forecasting of solar power generation in residential systems. Unlike traditional
+  unimodal approaches, the proposed model comprehensively integrates three heterogeneous data streams:
+  numerical weather predictions (NWP), high-resolution satellite imagery of cloud cover, and physical
+  parameters of the photovoltaic (PV) system. The research addresses the critical challenge of high generation
+  uncertainty in renewable energy, which directly impacts the stability of local microgrids and the efficiency
+  of home energy management systems (HEMS) in a dynamic energy market.The paper describes a complex hybrid
+  architecture combining a convolutional module (CNN) for deep spatial analysis of cloud dynamics on satellite
+  images and a long short-term memory (LSTM) module for identifying temporal dependencies in meteorological
+  time series. Convolutional layers effectively extract features of cloud texture, density, and motion
+  vectors, which are crucial for predicting sudden drops in solar irradiance. A key innovation is the
+  feature fusion block with a cross-modal attention mechanism. This component allows the neural network
+  to dynamically adapt the weights of each modality (visual, numerical, and physical) based on the current
+  weather context, time of day, and atmospheric transparency.The scientific novelty lies in the development
+  of an adaptive incremental learning algorithm for continuous model fine-tuning to specific local conditions
+  of a household, such as microclimate, panel orientation, and local shading. The advantages of the multimodal
+  approach are substantiated through a rigorous comparative analysis using MAE, RMSE, MBE, and rRMSE metrics.
+  Experiments demonstrate that real-time satellite imagery integration reduces forecasting errors under
+  variable cloudiness by 18–22% compared to ground-based models. The results enable advanced predictive
+  energy management within the household’s digital twin, optimizing battery storage strategies and maximizing
+  energy independence within the Smart Grid framework.'
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

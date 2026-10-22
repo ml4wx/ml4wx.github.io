@@ -1,0 +1,57 @@
+id: arxiv-2607.03279
+title: 'From Global to Local: Efficient Regional Weather Downscaling with Global Weather Foundation Model'
+authors:
+- Wiktor Kamzela
+- Jakub Kubiak
+- Adam Dobosz
+- Jędrzej Miczke
+- Anatol Kaczmarek
+- Piotr Wyrwiński
+- Wojciech Stefaniak
+- Wojciech Kotłowski
+date: '2026-07-03'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2607.03279'
+links:
+  paper: https://arxiv.org/abs/2607.03279
+  pdf: https://arxiv.org/pdf/2607.03279
+topic: downscaling
+topics:
+- foundation-models
+type: model
+method:
+- transformer
+- other
+spatial:
+- regional
+data:
+- era5
+- nwp-analysis
+- stations
+- km-scale-sim
+status: research
+summary: A global weather foundation model's latent space is used with lightweight multi-scale heads for
+  regional downscaling, reaching about 100x resolution gain without retraining and beating NWP on most
+  metrics.
+abstract: Accurate regional weather prediction requires resolving fine-scale structure while remaining
+  consistent with global dynamics. Traditional limited area models rely on computationally expensive simulations,
+  while many learning-based approaches frame the problem as super-resolution, overlooking statistical
+  and physical mismatches across scales. We propose a foundation-model-driven downscaling framework that
+  learns regional refinements of global forecasts by augmenting a pretrained weather model backbone with
+  lightweight, multi-scale prediction heads operating directly in its latent space. Despite being trained
+  on substantially coarser inputs, the pretrained backbone supports regional adaptation at resolutions
+  corresponding to a two-order-of-magnitude increase in grid-cell resolution, without the need for retraining.
+  The proposed approach uses regional numerical simulations as training targets and is evaluated not only
+  against gridded datasets but also against ground-based weather station observations, enabling analysis
+  of systematic biases between global reanalysis, regional simulations, and in-situ weather station observations.
+  Our experiments show improved accuracy in comparison to NWP on most of the metrics at the fraction of
+  computational cost. Moreover, we observe that building on a latent space of globally pre-trained weather
+  foundation model offers better downscaling capabilities than the standard image-based super-resolution
+  approaches.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

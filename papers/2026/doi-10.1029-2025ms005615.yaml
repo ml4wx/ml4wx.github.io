@@ -1,0 +1,78 @@
+id: doi-10.1029-2025ms005615
+title: 'DJ4Earth: Differentiable, and Performance‐Portable Earth System Modeling via Program Transformations'
+authors:
+- William S. Moses
+- Gong Cheng
+- Valentin Churavy
+- Maximilian Gelbrecht
+- Milan Klöwer
+- Joseph Kump
+- Mathieu Morlighem
+- Sarah Williamson
+- Dhruv Apte
+- Paul Berg
+- Mosé Giordano
+- Christopher Hill
+- Nora Loose
+- Alexis Montoison
+- Sri Hari Krishna Narayanan
+- Avik Pal
+- Michel Schanen
+- Simone Silvestri
+- Gregory LeClaire Wagner
+- Patrick Heimbach
+date: '2026-05-01'
+year: 2026
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2025ms005615
+  openalex: W4416253605
+links:
+  paper: https://doi.org/10.1029/2025ms005615
+orgs:
+- university-of-oxford
+- mit
+- tum
+- pik
+- argonne
+topic: infra-software
+topics:
+- hybrid-parameterization
+type: model
+method:
+- differentiable
+spatial:
+- global
+data:
+- other
+status: research
+summary: Makes Julia Earth system model components differentiable via Enzyme.jl and Reactant.jl, enabling
+  reverse-mode gradients and CPU/GPU/TPU portability across four ESM components.
+abstract: 'Abstract Differentiable Earth system models (ESMs) enable powerful applications such as sensitivity
+  analysis, gradient‐based calibration, state estimation, boundary flux inversions, uncertainty quantification,
+  and online machine learning. Reverse‐mode automatic differentiation (AD) efficiently provides gradients
+  for such tasks, yet models have rarely included this capability because of complex, bespoke numerical
+  algorithms. As part of the Differentiable programming in Julia for Earth system modeling (DJ4Earth)
+  initiative, we present improved capabilities of the AD tool Enzyme.jl and the new compiler transpilation
+  tool Reactant.jl, augmented by sophisticated checkpointing algorithms, which, together make general‐purpose
+  AD tractable and efficient for full‐fledged ESM components written in Julia. Operating at the low‐level
+  virtual machine intermediate representation or multi‐level intermediate representation compiler levels,
+  these frameworks support mutable memory, custom kernels, and compiler optimizations before and after
+  differentiation. Julia‐specific challenges related to just‐in‐time compilation and garbage collection
+  are handled efficiently. Reactant further enables automatic performance portability across central processing
+  units, graphics processing units, and tensor processing units, facilitating use of emerging AI‐customized
+  high‐performance computing architectures. We demonstrate these frameworks on four Julia‐based ESM components
+  featuring diverse spatial discretizations and numerical algorithms: the rotating‐sphere shallow water
+  model ShallowWaters.jl, the finite‐volume ocean model Oceananigans.jl, the finite‐element ice sheet
+  model DJUICE.jl, and the spectral atmospheric model SpeedyWeather.jl. Across these ESM components, our
+  tools compute efficient and correct gradients. These results establish a foundation for differentiable,
+  high‐performance and performance‐portable ESMs that can integrate neural networks for unresolved processes,
+  trained online, enabling next‐generation hybrid physics–machine learning ESMs constrained by physical
+  dynamics and observations.'
+significance: 4
+cited_by: 2
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

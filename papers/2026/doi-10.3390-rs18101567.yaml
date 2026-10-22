@@ -1,0 +1,51 @@
+id: doi-10.3390-rs18101567
+title: 'ST-DualNet: A Spatiotemporal Dual-Branch Neural Network Model for Short-Term Precipitation Forecasting'
+authors:
+- Yuan Dang
+- Bo Yin
+- Haipeng Cui
+- Tao Bi
+- Yiyun Guo
+date: '2026-05-14'
+year: 2026
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs18101567
+  openalex: W7161172416
+links:
+  paper: https://doi.org/10.3390/rs18101567
+topic: nowcasting
+type: model
+method:
+- rnn
+- cnn
+- transformer
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Dual-branch ConvLSTM and transformer network nowcasts radar precipitation on the KNMI dataset,
+  with gains in heavy-rain forecasts.
+abstract: Short-term precipitation forecasting is an important research direction in meteorological studies,
+  holding significant implications for disaster prevention and mitigation, urban flood drainage, and agricultural
+  meteorological management. Existing deep learning models have achieved favourable results in modeling
+  local features, yet they generally suffer from insufficient sensitivity to heavy precipitation areas,
+  limitations in modeling temporal dependencies, and gradient instability issues. To address these limitations,
+  we propose a novel spatiotemporal dual-branch neural network (ST-DualNet) for short-term precipitation
+  forecasting based on radar echo maps. The network comprises a temporal branch (based on an enhanced
+  ST-DConvLSTM) and a spatial branch (based on dilated convolutions and Transformer), respectively capturing
+  the dynamic evolution and spatial structural features of precipitation. The two branches are integrated
+  through the CBAM attention module and 3D convolution layer to achieve cross-branch feature fusion and
+  prediction output. Experimental results demonstrate that ST-DualNet outperforms multiple mainstream
+  models on the KNMI radar precipitation dataset, especially in heavy precipitation forecasting, providing
+  an effective new framework for short-term precipitation forecasting.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

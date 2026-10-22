@@ -1,0 +1,64 @@
+id: doi-10.3390-atmos17080749
+title: Open-Loop Generative AI Nowcasting of Dense Marine Fog Visibility from the FATIMA Grand-Banks Campaign
+  Measurements Using Multiple Lookback Windows
+authors:
+- Sushrit Kafle
+- Eren Gultepe
+- Sen Wang
+- Byron W. Blomquist
+- Harindra J. S. Fernando
+- O. Patrick Kreidl
+- David James Delene
+- Ismail Gültepe
+date: '2026-07-31'
+year: 2026
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos17080749
+  openalex: W7171951817
+links:
+  paper: https://doi.org/10.3390/atmos17080749
+orgs:
+- noaa
+topic: local-forecasting
+topics:
+- nowcasting
+type: model
+method:
+- rnn
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Multiple-lookback-window GRU nowcasts marine fog visibility below 400 m open-loop, reaching RMSE
+  7.0 m at 10–20 min lead times.
+abstract: Reduced visibility due to fog poses significant safety and operational risks in marine environments,
+  emphasizing the need for accurate short-term nowcasting. Typical machine learning forecasting models
+  fail to capture temporal meteorological dependencies that influence fog dynamics, due to the reliance
+  on data assimilated measurements for closed-loop time series prediction. This work introduces a novel
+  multiple lookback window (MLW) architecture that utilizes the recurrent neural network model of Gated
+  Recurrent Units (GRU) to nowcast dense fog visibility (Vis < 400 m) time series. This architecture facilitates
+  learning the short- and long-term dependencies in meteorological data for non-data assimilation (open-loop)
+  time series prediction. Prediction intervals were obtained using Bayesian approximation at 95% confidence
+  interval. Vis time series nowcasts were obtained using autoregressive generation at increasing lead
+  times, without relying on the assimilation of future observations and were evaluated across various
+  fog Vis conditions characterized by its coefficient of variation. Marine fog Vis conditions and measurements
+  were collected using instrumentation mounted on the Research Vessel Atlantic Condor from the FATIMA
+  (Fog and turbulence interactions in the marine atmosphere) campaign in July 2022 in the Grand Banks
+  and Sable Island areas of the North Atlantic region of Canada. The MLW-architecture with the GRU model
+  outperformed the naïve persistence model nowcast for open-loop nowcasting dense fog Vis, with a mean
+  RMSE of 11.829±1.260 (2.96% error at 400 m) and Skill Score of 0.073±0.061. The best nowcasting occurred
+  at the 10 and 20 min lead times, where the mean Skill Score across both lead times was 0.132±0.082 and
+  the RMSE was 7.013±1.105m (1.75% error at 400 m) and in high variability conditions with a mean SS of
+  0.387±0.037 and RMSE of 6.990±1.990 (1.75% error at 400 m). Thus, the proposed model is robust and practical
+  for dense fog Vis nowcasting.
+significance: 3
+cited_by: 1
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

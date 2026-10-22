@@ -1,0 +1,46 @@
+id: doi-10.1038-s41598-026-58153-2
+title: Physics-based data augmentation to enhance deep learning performance in tropical cyclone and storm
+  surge modelling
+authors:
+- Takumu Iwamoto
+- Tomohiro Takagawa
+date: '2026-06-22'
+year: 2026
+venue: Scientific Reports
+venue_type: journal
+ids:
+  doi: 10.1038/s41598-026-58153-2
+  openalex: W7165543488
+links:
+  paper: https://doi.org/10.1038/s41598-026-58153-2
+  pdf: https://www.nature.com/articles/s41598-026-58153-2_reference.pdf
+topic: extremes-hazards
+type: model
+spatial:
+- regional
+data:
+- era5
+- km-scale-sim
+status: research
+summary: Physics-based augmentation with an NWP model generates extreme typhoons, letting a fine-tuned
+  network beat parametric wind fields for storm surge.
+abstract: Accurate modelling of tropical cyclones (TCs) is essential for reliable storm surge simulations,
+  as TCs provide the primary external forcing. While deep learning models have demonstrated effectiveness
+  in TC modelling, a challenge remains regarding the limited diversity of TCs in reanalysis data used
+  for training-specifically, the scarcity of extreme TC events. This study proposes a physics-based data
+  augmentation method that utilizes a numerical weather prediction (NWP) model to physically generate
+  TCs lying beyond the range of reanalysis data. Subsequently, focusing on small-sized yet intense TCs
+  as extreme cases, a model-originally pre-trained solely on reanalysis data-was fine-tuned using this
+  augmented dataset to convert a parametric TC model (PM) field into an NWP-like field. Validation using
+  test data mimicking extreme TCs and a storm surge hindcast of TC Faxai (a compact, intense TC that struck
+  Tokyo Bay in 2019) revealed that the PM failed to simulate storm surges where topographic effects on
+  the wind field are significant, and the pre-trained model underestimated wind speeds and storm surges.
+  In contrast, the fine-tuned model successfully captured the spatiotemporal features of the extreme TCs
+  and the peak storm surges upon TC landfall, achieving the lowest RMSE for storm surges across all TCs
+  and tide gauges. These results suggest that physics-based data augmentation can effectively extend the
+  applicability of deep learning models for TC and storm surge modelling to extreme events.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

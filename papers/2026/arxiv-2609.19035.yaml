@@ -1,0 +1,54 @@
+id: arxiv-2609.19035
+title: Calibrated Predictive Distributions from Sample-Based Generators
+authors:
+- Wen-Ting Wang
+- ShengLi Tzeng
+- Yu-Ting Fan
+- Hsin-Cheng Huang
+date: '2026-07-20'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.19035'
+  openalex: W7213563811
+links:
+  paper: https://arxiv.org/abs/2609.19035
+  pdf: https://arxiv.org/pdf/2609.19035
+topic: post-processing
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- other
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Bias-corrected conformal PIT calibration turns sample-based generators into calibrated predictive
+  distributions, demonstrated on WeatherBench-2 precipitation forecasts.
+abstract: Conditional generative models, including diffusion models and ensemble forecasters, often produce
+  predictive samples without a tractable likelihood representation. Such sample-based predictive distributions
+  can be systematically biased and poorly calibrated. We propose bias-corrected conformal probability
+  integral transform (PIT) calibration, a split-sample post-processing framework that outputs a calibrated
+  predictive distribution rather than a single fixed-level prediction interval. The method first estimates
+  an affine location-scale correction on a held-out bias split, then calibrates randomized PIT values
+  using a conformal calibrator. The resulting predictive law is represented as a weighted empirical distribution
+  on the generator order statistics, enabling the direct computation of threshold-coherent exceedance
+  probabilities, arbitrary quantiles, highest-density intervals, expected tail losses, and calibrated
+  resamples. In contrast, standard conformal prediction primarily provides fixed-level prediction sets
+  or threshold decisions and does not directly estimate predictive probabilities or high-density regions.
+  We establish finite-sample calibration in probability under exchangeability and show how an optional
+  split-conformal wrapper based on a PIT-centrality score gives nested prediction intervals with finite-sample
+  marginal coverage at user-specified levels. Simulation studies with controlled misspecification and
+  a WeatherBench-2 precipitation-forecasting application demonstrate substantial improvements in probabilistic
+  calibration and downstream distributional summaries relative to uncalibrated sample-based forecasts
+  and interval-only conformal baselines.
+significance: 4
+cited_by: 0
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

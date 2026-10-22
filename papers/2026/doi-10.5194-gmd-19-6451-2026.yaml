@@ -1,0 +1,71 @@
+id: doi-10.5194-gmd-19-6451-2026
+title: 'JCM v1.1: a differentiable, intermediate-complexity atmospheric model'
+authors:
+- Ellen Davenport
+- J. Varan Madan
+- Rebecca Gjini
+- Jared Brzenski
+- Benjamin Crawford
+- Nick Ho
+- Tien‐Yiao Hsu
+- Yueshan Liang
+- Zhixing Liu
+- Veeramakali Manivannan
+- Eric Pham
+- Rohith Vutukuru
+- Andrew I. L. Williams
+- Zhiqi Yang
+- Rose Yu
+- Nicholas J. Lutsko
+- Stephan Hoyer
+- Duncan Watson‐Parris
+date: '2026-07-17'
+year: 2026
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-19-6451-2026
+  openalex: W7169620807
+links:
+  paper: https://doi.org/10.5194/gmd-19-6451-2026
+  pdf: https://gmd.copernicus.org/articles/19/6451/2026/gmd-19-6451-2026.pdf
+orgs:
+- google-research
+topic: infra-software
+topics:
+- hybrid-parameterization
+type: model
+method:
+- differentiable
+- physics-constrained
+timescale:
+- medium
+- climate
+spatial:
+- global
+data:
+- other
+status: research
+summary: JCM is an open-source differentiable JAX atmospheric model coupling SPEEDY physics to the Dinosaur
+  core, enabling gradient-based calibration and ML scheme substitution, validated against Fortran SPEEDY
+  at T31.
+abstract: Abstract. In this paper we present version 1.0 of the JAX Circulation Model (JCM). JCM is an
+  open-source, differentiable atmospheric model built in Python using the JAX numerical library. Earth
+  system modeling is rapidly evolving, particularly through hybrid approaches that combine known dynamics
+  with data-driven components. However, the training and validation of hybrid methods in traditional models
+  remain difficult due to the absence of gradients and the complexity of legacy code. Differentiable models
+  written in modern frameworks offer a path forward. JCM couples physics parameterizations to the Dinosaur
+  dynamical core through a flexible interface that makes substitution of other schemes easy. The default
+  parameterization scheme uses the SPEEDY (Simplified Parameterizations, primitivE-Equation DYnamics)
+  intermediate-complexity physics scheme. This modularity supports benchmarking across physical and machine-learned
+  schemes, with direct access to gradients for sensitivity analysis, calibration, and online learning.
+  We show validation of JCM against the original Fortran SPEEDY code at T31 resolution. We also highlight
+  JCM's differentiability and efficiency and outline plans for extending the framework to a differentiable
+  Earth system model. JCM provides a lightweight yet expressive platform for accelerating research in
+  climate modeling.
+significance: 4
+cited_by: 0
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

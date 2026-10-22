@@ -1,0 +1,62 @@
+id: arxiv-2606.23829
+title: 'From stable online coupling to decade-long climate simulations: A machine learning parameterization
+  for cloud microphysics in ICON'
+authors:
+- Ellen Sarauer
+- Mierk Schwabe
+- Philipp Weiss
+- Axel Lauer
+- Philip Stier
+- Veronika Eyring
+date: '2026-06-22'
+year: 2026
+venue: Machine Learning Earth
+venue_type: journal
+ids:
+  arxiv: '2606.23829'
+  doi: 10.1088/3049-4753/ae9e2e
+  openalex: W7165781608
+links:
+  paper: https://doi.org/10.1088/3049-4753/ae9e2e
+  pdf: https://arxiv.org/pdf/2606.23829
+orgs:
+- ecmwf
+- university-of-oxford
+topic: hybrid-parameterization
+topics:
+- climate-emulation
+type: model
+method:
+- other
+timescale:
+- climate
+spatial:
+- global
+data:
+- km-scale-sim
+status: research
+summary: An ML cloud microphysics scheme trained on 5 km ICON data runs stably online for decade-long
+  simulations once physical constraints are enforced, matching the classical graupel scheme's climate.
+abstract: 'The representation of cloud microphysics and its nonlinear character and scale-dependence is
+  a remaining source of uncertainty in Earth system models (ESMs). Here, we develop and couple online
+  a machine learning (ML)-based cloud microphysics parameterization with the Icosahedral non-hydrostatic
+  modeling framework (ICON). The primary challenge is achieving numerically stable, long-term online coupling
+  when transitioning from training with km-scale data to application in coarse-scale simulations, where
+  the coupled system encounters atmospheric states and feedbacks not seen during training. The training
+  data is obtained from a global convection-permitting ICON simulation at 5 km resolution. The ML microphysics
+  scheme uses a two-stage design: a classifier to identify active grid cells and a regressor to predict
+  cloud microphysical tendencies. Physical constraints such as enforcing mass positivity and overshoot
+  prevention prove essential for numerical stability in the coupled system. We demonstrate that achieving
+  stable online coupling requires enforcing physical constraints and careful dataset curation, and that
+  strong offline performance alone is insufficient. The coupled model maintains numerical stability over
+  decade-long simulations with a performance in reproducing the observed climate comparable to the classical
+  graupel scheme. The ML-based scheme eliminates two microphysics-specific tuning parameters of the classical
+  graupel scheme, though systematic improvements in long-term mean-state biases are not yet realized.
+  This study demonstrates that stable, decade-long climate simulations with an ML-based cloud microphysics
+  scheme trained on convection-permitting data are feasible, providing a foundation for future hybrid
+  ESMs.'
+significance: 4
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

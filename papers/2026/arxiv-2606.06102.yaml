@@ -1,0 +1,46 @@
+id: arxiv-2606.06102
+title: Step-adaptive multimodal fusion network with multi-scale cloud feature learning for ultra-short-term
+  solar irradiance forecasting
+authors:
+- Jingxin Zhang Xiaoqin Wang
+date: '2026-06-04'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.06102'
+links:
+  paper: https://arxiv.org/abs/2606.06102
+  pdf: https://arxiv.org/pdf/2606.06102
+topic: nowcasting
+type: model
+method:
+- cnn
+- rnn
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- satellite
+- stations
+- other
+status: research
+summary: Fuses ground-based cloud images with meteorological series via InceptionNeXt and TempAttnLSTM
+  for ultra-short-term solar irradiance forecasting on NREL and Shandong data.
+abstract: 'Ultra-short-term solar irradiance prediction is critical for photovoltaic system dispatch and
+  power grid stability. Existing approaches suffer from three key shortcomings: single time-series models
+  cannot capture the spatial dynamics of clouds under complex conditions, standard convolutions inadequately
+  represent multi-scale cloud features, and fixed low-frequency compensation strategies fail to adapt
+  to different prediction steps. To address these issues, this proposes a multi-source data fusion model
+  for ultra-short-term irradiance prediction. The model first employs InceptionNeXt to extract multi-scale,
+  multi-directional spatial features from ground-based cloud images. A step-adaptive low-frequency compensation
+  unit is then introduced to dynamically modulate global low-frequency information based on the prediction
+  step. Eventually, the enhanced image features are combined with meteorological time-series features,
+  and a TempAttnLSTM network captures global temporal dependencies for multi-step prediction. Experiments
+  on the public NREL dataset and practical photovoltaic stations in Shandong illustrate the effectiveness
+  of the proposed method compared with several state-of-the-art approaches.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

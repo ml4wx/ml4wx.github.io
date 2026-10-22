@@ -1,0 +1,51 @@
+id: doi-10.1029-2026jd046410
+title: 'MSWD: A Hybrid Machine‐Learning Framework for Slant Wet Delay Modeling'
+authors:
+- Zhenyi Zhang
+- Benedikt S. Soja
+date: '2026-06-24'
+year: 2026
+venue: Journal of Geophysical Research Atmospheres
+venue_type: journal
+ids:
+  doi: 10.1029/2026jd046410
+  openalex: W7165745169
+links:
+  paper: https://doi.org/10.1029/2026jd046410
+orgs:
+- eth-zurich
+topic: observations-remote-sensing
+type: model
+method:
+- physics-constrained
+spatial:
+- global
+data:
+- era5
+status: research
+summary: A hybrid ML model embeds the tilting mapping function to predict global slant wet delay directly,
+  matching GPT3 and improving continental accuracy with temperature and vapor inputs.
+abstract: Abstract Space geodetic techniques such as Global Navigation Satellite Systems (GNSS) and Very
+  Long Baseline Interferometry (VLBI) are limited by direction‐dependent tropospheric delays, with slant
+  wet delay (SWD) being the most variable component and a major error source. Accurate SWD priors can
+  accelerate convergence, stabilize parameter estimation, and improve positioning and atmospheric retrievals.
+  Existing global empirical models, such as the state‐of‐the‐art GPT3 model, reconstruct SWD through a
+  fixed pipeline of zenith wet delay (ZWD), wet mapping function (MFw), and wet horizontal gradients.
+  They rely on simplified parameterizations and fixed coefficient tables, and because re‐estimating the
+  full set of parameters is burdensome, products are rarely updated to reflect current conditions. In
+  this paper, we present a hybrid machine‐learning (ML) framework that embeds the established tilting
+  mapping function formulation directly into the network, enabling end‐to‐end prediction of SWD. To our
+  knowledge, this is the first global ML‐based empirical model that directly predicts SWD. We also developed
+  augmented variants that use temperature and water vapor pressure as optional inputs. Trained on 5 years
+  of globally distributed ERA5‐based SWD samples, the non‐augmented model reaches accuracy comparable
+  to GPT3, while the augmented variants achieve lower errors over continental regions, where most space‐geodetic
+  stations operate. As ancillary products it can also output ZWD and MFw, with ZWD surpassing GPT3 and
+  MFw exceeding the performance of the symmetric GPT3 variant while remaining slightly below that of the
+  asymmetric variant. Beyond these gains, this hybrid ML framework streamlines model maintenance and advances
+  SWD modeling in space geodesy.
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,55 @@
+id: doi-10.1186-s40562-026-00492-z
+title: A deep learning-ensemble framework for Pre-Meiyu season definition and synoptic-local weather classification
+authors:
+- Li‐Huan Hsu
+- Kuan-Ling Lin
+- Chou-Chun Chiang
+- Yi‐chao Wu
+- Jung‐Lien Chu
+- Yi‐Chiang Yu
+date: '2026-06-16'
+year: 2026
+venue: Geoscience Letters
+venue_type: journal
+ids:
+  doi: 10.1186/s40562-026-00492-z
+  openalex: W7164885309
+links:
+  paper: https://doi.org/10.1186/s40562-026-00492-z
+topic: climate-analysis-attribution
+type: model
+method:
+- cnn
+- classical-ml
+spatial:
+- regional
+data:
+- era5
+- satellite
+status: research
+summary: CNN-autoencoders with k-means identify eight Pre-Meiyu synoptic weather types over Taiwan, and
+  an ensemble classifier exceeds 0.9 accuracy.
+abstract: Abstract This study presents a deep learning framework to objectively classify Pre-Meiyu season
+  synoptic weather types and their linkage to regional rainfall patterns. Using ERA5 reanalysis (1979–2023),
+  we employ a suite of Convolutional Neural Network (CNN)-Autoencoders to extract latent features from
+  5-day moving mean atmospheric circulation fields. These features are utilized to objectively identify
+  the duration of the Pre-Meiyu season via cosine similarity. Within this season, a set of CNN-Autoencoders
+  is trained to extract latent features from daily mean atmospheric variables (ERA5) and daily rainfall
+  (GPM IMERGE, TCCIP; 2001–2023). Unsupervised k-means clustering of these features identifies eight distinct
+  synoptic weather types. Four types are associated with significant rainfall over Taiwan and are directly
+  influenced by frontal systems and/or southwesterly flow. The other four correspond to drier conditions
+  governed by the relative positions of the monsoon trough and subtropical high. Notably, a distinct type
+  characterized by a southward-shifted southwesterly flow is linked to tropical cyclone activity. Subsequently,
+  these latent features serve to train six machine learning classifiers to categorize daily weather types.
+  The Ensemble Voting Classifier (EVC) demonstrates robust performance, with its accuracy, F 1-score,
+  and precision all exceeding 0.9. Compared to individual models, the EVC improves overall mean scores
+  while providing more consistent classifications, effectively reducing performance variability even for
+  weather types where single models exhibited instability. These results demonstrate that combining deep
+  learning feature extraction with an ensemble classifier provides a robust and accurate method for objectively
+  characterizing Pre-Meiyu season weather systems.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

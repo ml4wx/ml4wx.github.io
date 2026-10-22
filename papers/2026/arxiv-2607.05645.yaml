@@ -1,0 +1,48 @@
+id: arxiv-2607.05645
+title: Domain-Adaptive Climate Downscaling Under Temporal Distribution Shift
+authors:
+- Shuochen Wang
+- Nishant Yadav
+- Auroop R. Ganguly
+date: '2026-07-06'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2607.05645'
+  openalex: W7167703210
+links:
+  paper: https://arxiv.org/abs/2607.05645
+  pdf: https://arxiv.org/pdf/2607.05645
+topic: downscaling
+topics:
+- climate-emulation
+type: model
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+status: research
+summary: Adds domain alignment to deep climate downscaling so daily continental US temperature projections
+  stay robust under temporal distribution shift, outperforming bias-correction baselines.
+abstract: 'Deep-learning-based climate downscaling aims to learn relationships from historical low-resolution
+  (LR) and high-resolution (HR) climate data to generate HR climate projections. However, this setting
+  faces a temporal out-of-distribution (OOD) challenge: models trained on historical data are commonly
+  applied to future projections whose distributions may differ substantially from the training period.
+  This study investigates temporal OOD shift for daily temperature downscaling over the Continental United
+  States using paired LR-HR model simulations. We propose a temporal domain-adaptive downscaling framework
+  that combines supervised HR reconstruction on historical data with domain alignment between historical
+  and future climate distributions. Experiments across future validation periods show that the proposed
+  domain-adaptive model consistently outperforms statistical and deep-learning-based bias-correction methods,
+  with the largest gains occurring when the temporal distribution shift is strongest. Spatial analyses
+  indicate stronger improvements over high-elevation and topographically complex regions, along with higher
+  spatiotemporal correlation with the HR target. The extreme analysis shows that domain adaptation also
+  reduces upper-tail temperature bias relative to the non-adaptive model. These results demonstrate that
+  temporal domain adaptation can improve the robustness of HR climate projections under non-stationary
+  climate conditions.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

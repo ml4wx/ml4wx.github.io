@@ -1,0 +1,58 @@
+id: arxiv-2609.25505
+title: 'FAST-ML: A Hybrid Physics-Machine Learning Framework for Tropical Cyclone Intensity Forecasting'
+authors:
+- Shijie Xiao
+- Jonathan Lin
+- Thomas Ehrmann
+- Ali Sarhadi
+date: '2026-09-15'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.25505'
+  doi: 10.5281/zenodo.22765051
+  openalex: W7213326226
+links:
+  paper: https://arxiv.org/abs/2609.25505
+  pdf: https://arxiv.org/pdf/2609.25505
+  code: https://github.com/Shijie-Xiao/FAST-ML
+topic: extremes-hazards
+topics:
+- hybrid-parameterization
+- post-processing
+type: model
+method:
+- differentiable
+- physics-constrained
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: FAST-ML learns ventilation parameters from ERA5 through a differentiable tropical cyclone intensity
+  model, cutting 60 h ensemble CRPS by about 31% and nearly halving rapid-intensification false alarms.
+abstract: Rapid intensification (RI) remains one of the most consequential and difficult aspects of tropical
+  cyclone (TC) forecasting. Although full-physics numerical weather prediction models can represent the
+  processes governing RI, resolving storm-environment interactions remains computationally expensive,
+  while purely data-driven approaches often lack physical interpretability. We present FAST-ML, a hybrid
+  framework that bridges data-driven efficiency with physical constraints. A physically informed dual-stream
+  neural parameterization ingests 3D ERA5 fields to diagnose ventilation controls---environmental wind
+  shear and mid-level entropy deficit. By optimizing these parameters end-to-end through a differentiable
+  FAST intensity model, this architecture establishes a robust new paradigm for observation-driven parameter
+  optimization, ensuring storm evolution remains strictly governed by thermodynamic principles. By better
+  capturing the storm's continuous intensity evolution, FAST-ML improves upon its physical baseline, reducing
+  ensemble CRPS across forecast lead times, with a reduction of approximately 31% at 60 h and nearly halving
+  the RI false alarm ratio without sacrificing detection skill. In a 100-member ensemble configuration,
+  FAST-ML produces intensity forecasts comparable to FNV3 for selected storms under the evaluated input
+  configurations. Furthermore, zero-shot tests on selected Eastern Pacific storms provide encouraging
+  evidence of cross-basin transferability. FAST-ML provides a modular intensity forecasting framework
+  that can be coupled with externally supplied storm tracks and environmental fields. It demonstrates
+  that observation-driven parameter learning within physically constrained dynamics simultaneously enhances
+  accuracy, interpretability, and computational efficiency.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

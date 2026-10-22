@@ -1,0 +1,48 @@
+id: arxiv-2606.29855
+title: 'RainODE: Continuous-Time Precipitation Forecasting with Latent Neural ODEs'
+authors:
+- Yeeun Seong
+- Doyi Kim
+- Minseok Seo
+- Changick Kim
+date: '2026-06-29'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.29855'
+links:
+  paper: https://arxiv.org/abs/2606.29855
+  pdf: https://arxiv.org/pdf/2606.29855
+  code: https://github.com/SeongYE/RainODE
+topic: nowcasting
+type: model
+method:
+- other
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: RainODE models precipitation as a latent Neural ODE with Brownian-bridge stochastic refinement,
+  enabling arbitrary-time nowcasts with sharper predictions on SEVIR and RAPID radar data.
+abstract: In precipitation forecasting, not only accuracy but also temporal resolution is critical. However,
+  increasing temporal resolution is constrained by observational limitations and the computational cost
+  of dense discrete modeling. To overcome this limitation, we reformulate precipitation forecasting as
+  a continuous-time dynamical system and propose RainODE, a framework that models precipitation evolution
+  in latent space using a Neural ODE. This formulation enables derivative-consistent temporal dynamics
+  and captures the dominant large-scale advective motion of precipitation systems. Nevertheless, a purely
+  deterministic ODE struggles to represent non-advective intensity changes such as localized growth, decay,
+  and sub-grid variability, often leading to over-smoothed predictions. To address this issue, we introduce
+  a stochastic source modeling module based on a Brownian Bridge formulation, which refines residual intensity
+  variations and restores fine-grained structures while preserving advective consistency. By combining
+  deterministic continuous dynamics with stochastic refinement, RainODE enables arbitrary-time inference
+  while maintaining sharp predictions. Experiments on SEVIR and the newly introduced Radar-based Precipitation
+  Integrated Dataset (RAPID) demonstrate consistent improvements across multiple temporal intervals and
+  precipitation regimes. The code is available at https://github.com/SeongYE/RainODE.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

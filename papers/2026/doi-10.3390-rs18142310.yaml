@@ -1,0 +1,62 @@
+id: doi-10.3390-rs18142310
+title: Exploring the Potential of Machine Learning Post-Processing to Generate ERA5-Consistent Atmospheric
+  Profiles from Geostationary Satellite Retrievals
+authors:
+- Daehyeon Han
+- Minki Choo
+- Sihun Jung
+- Juhyun Lee
+- Hyunyoung Choi
+- Jungho Im
+date: '2026-07-10'
+year: 2026
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs18142310
+  openalex: W7167943407
+links:
+  paper: https://doi.org/10.3390/rs18142310
+orgs:
+- colorado-state-university
+topic: observations-remote-sensing
+topics:
+- post-processing
+type: model
+method:
+- classical-ml
+- physics-constrained
+spatial:
+- regional
+data:
+- satellite
+- era5
+- stations
+status: research
+summary: LightGBM post-processing refines geostationary AMI humidity and temperature profiles toward ERA5,
+  reducing mixing-ratio RMSE by 6–7% and RH by about 14%.
+abstract: Accurate atmospheric temperature and humidity profiles are fundamental to weather monitoring
+  and prediction. Geostationary imagers such as the Advanced Meteorological Imager (AMI) provide continuous
+  observations and enable profile retrievals through radiative transfer–based algorithms; however, these
+  products remain affected by systematic biases associated with the limited number of spectral channels
+  and reliance on background fields from numerical weather prediction models. This study presents a data-driven
+  post-processing framework to generate reanalysis-consistent profiles by refining AMI-retrieved temperature,
+  mixing ratio, and relative humidity profiles using Light Gradient Boosting Machine (LGBM) models trained
+  with ERA5 reanalysis data. Using four years (2020–2023) of hourly observations, the refined profiles
+  were evaluated against both ERA5 and independent radiosonde measurements. Relative to ERA5, the refinement
+  yields modest but consistent reductions in root mean square error (RMSE), including approximately 0.04
+  g kg−1 (6–7%) for mixing ratio and 1.9 percentage points (≈14%) for relative humidity, while temperature
+  shows a smaller error reduction of about 0.02 K (2–3%). When compared with radiosondes, temperature
+  RMSE shows a marginal increase overall (<1%) with a larger increase in the lower troposphere, whereas
+  improvements are observed for mixing ratio (2–3%) and relative humidity (6–7%). Seasonal and diurnal
+  analyses reveal systematic error structures in the original AMI profiles, particularly wet-bias patterns
+  in summer moisture fields, which are partially mitigated by the refinement. Feature-importance analysis
+  using Shapley Additive Explanations (SHAP) identifies the dominant contribution of AMI water vapor channels,
+  consistent with their known vertical sensitivity. Overall, this long-term evaluation demonstrates the
+  feasibility of machine learning-based refinement for geostationary imager atmospheric profiles, while
+  also highlighting inherent limitations related to the information content of current-generation imagers.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

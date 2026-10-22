@@ -1,0 +1,51 @@
+id: doi-10.1029-2025ms005436
+title: Capturing Spatiotemporal and Subgrid Variability in Global Land Surface Albedo Parameterization
+authors:
+- Akarsh Ralhan
+- Xin-Zhong Liang
+date: '2026-05-01'
+year: 2026
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2025ms005436
+  openalex: W7160660162
+links:
+  paper: https://doi.org/10.1029/2025ms005436
+topic: hybrid-parameterization
+type: model
+method:
+- physics-constrained
+spatial:
+- global
+data:
+- satellite
+- other
+status: research
+summary: Physics-informed machine learning replaces static land surface albedo tables, predicting direct
+  and diffuse albedo against MODIS with R2 0.88 for climate model use.
+abstract: Abstract Accurate surface albedo parameterization is critical for modeling Earth's energy balance.
+  Yet, many schemes rely on static look‐up tables or semi‐empirical formulations that fail to capture
+  spatiotemporal variations and complex radiative interactions. This study develops a physics‐informed
+  machine‐learning parameterization using 19 years (2003–2021) of MODIS Bidirectional Reflectance Distribution
+  Function data to predict direct and diffuse albedo in the visible and near‐infrared bands across major
+  land‐cover categories. The framework leverages 10 biogeophysical predictors, including solar geometry,
+  vegetation state, soil moisture, soil texture (STX), topography, and background climate. It comprises
+  a dynamic component that resolves physical spatiotemporal patterns and a static correction, the Surface
+  Albedo Localization Factor, which accounts for subgrid heterogeneity, together explaining most of the
+  observed variability. The parameterization shows strong agreement with MODIS albedo (overall R 2 = 0.88,
+  mean absolute percentage error [MAPE] = 7.5%), with performance ranging from R 2 = 0.85 in direct visible
+  to R 2 = 0.90 in diffuse near‐infrared, and generally higher accuracy in the near‐infrared parts. It
+  performs well across diverse LCCs, including grasslands, shrublands, croplands, and challenging barren
+  regions where empirical methods underperform. SALF improves accuracy across all albedo parts (average
+  R 2 increase of 0.16 and MAPE reduction of 5.1%). Feature‐importance analysis indicates that solar zenith
+  angle and leaf area index are the dominant drivers of dynamic variability, whereas STX and topography
+  influence static variability. Counterfactual experiments confirm biophysically consistent albedo responses,
+  enhancing interpretability and model trust. This framework offers a physically grounded alternative
+  to empirical schemes and has strong potential for integration into Earth system models to improve the
+  representation of surface energy exchange.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

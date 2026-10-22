@@ -1,0 +1,46 @@
+id: arxiv-2609.09062
+title: 'Multi-Task Learning for Sparsely-Labeled Time Series: A Case Study on Cold-Hardiness Modeling'
+authors:
+- Aseem Saxena
+- Paola Pesántez-Cabrera
+- Markus Keller
+- Alan Fern
+date: '2026-09-08'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.09062'
+links:
+  paper: https://arxiv.org/abs/2609.09062
+  pdf: https://arxiv.org/pdf/2609.09062
+topic: applications-impacts
+type: model
+method:
+- rnn
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Multi-task RNNs predict grape cold hardiness and budbreak from daily weather series, outperforming
+  single-task and scientific baselines for frost-protection decisions.
+abstract: We present a real-world case study of multi-task learning (MTL) for temporal process modeling
+  from limited data with temporally sparse labels. Specifically, we investigate multi-task learning for
+  the important agricultural problem of predicting grape cold hardiness, which is the temperature at which
+  lethal freezing occurs. Cold hardiness changes in response to weather and is difficult to measure directly
+  in the field. Thus, growers rely on predictions to decide when to apply costly frost mitigation measures.
+  We apply recurrent neural networks (RNNs) for daily cold-hardiness prediction from time series weather
+  data. A major challenge is that the cold hardiness response varies across plant cultivars and ground-truth
+  data for each cultivar is temporally sparse and limited. To address this challenge, we investigate multi-task
+  learning (MTL) approaches for combining data, where different tasks correspond to different cultivars.
+  We develop a variety of MTL architectures and evaluate them in both MTL and transfer learning settings.
+  Our results show significant differences between architectures and that certain architectures are able
+  to consistently outperform single-task learning and state-of-the-art scientific models. Additionally,
+  we show similar results for the qualitatively different, but related, task of budbreak prediction. Further,
+  improved accuracy for budbreak and cold hardiness is achieved by a single MTL model that simultaneously
+  learns both tasks.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

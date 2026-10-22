@@ -1,0 +1,46 @@
+id: arxiv-2610.17333
+title: Accounting for model error in ensemble variational data assimilation through learned generative
+  dynamics
+authors:
+- Marc Bocquet
+- Tobias S. Finn
+- Sibo Cheng
+date: '2026-10-12'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.17333'
+links:
+  paper: https://arxiv.org/abs/2610.17333
+  pdf: https://arxiv.org/pdf/2610.17333
+topic: data-assimilation
+type: model
+method:
+- other
+data:
+- other
+status: research
+summary: Introduces a learned generative model error term in weak-constraint 4D-Var and an iterative ensemble
+  Kalman filter, outperforming Gaussian-error filters on Lorenz-96 under partial observations.
+abstract: Many approaches have recently been proposed to combine data assimilation with machine learning
+  for improved forecasts with geophysical models. Here, we focus on combining advanced sequential data
+  assimilation schemes with a generative forecasting model which accounts for complex model errors. This
+  generative model provides a stochastic approximation of the conditional distribution of the successor
+  state given the current state. The proposed variational formulation is a novel one-step weak-constraint
+  4D-Var scheme in which a learned conditional stochastic forecast replaces the prescribed additive Gaussian
+  model error representation. We derive and implement this formulation as an ensemble variational algorithm,
+  the generative iterative ensemble Kalman filter (IEnKF-G), which generalises the iterative ensemble
+  Kalman filter with additive Gaussian model error (IEnKF-Q). We extend the method to a smoother with
+  an assimilation window spanning multiple time steps and propose a simplified variant. The IEnKF-G is
+  evaluated on a stochastic variant of the Lorenz 1963 model to assess its robustness. It is then tested
+  on a multi-scale variant of the one-dimensional Lorenz 1996 model, in which the resolved variables are
+  affected by model error originating from the hidden small-scale variables. The algorithm is then compared
+  to an ensemble Kalman filter that adaptively mitigates model and sampling errors, and to the IEnKF-Q.
+  The IEnKF-G is generally more accurate in the tested configurations, with substantial gains under partial
+  observations and significant model error. This demonstrates the potential of generative data-driven
+  models when paired with classical data assimilation methods, particularly when model error is substantial.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

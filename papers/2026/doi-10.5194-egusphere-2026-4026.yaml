@@ -1,0 +1,65 @@
+id: doi-10.5194-egusphere-2026-4026
+title: Development and tests of machine-learned cloud droplet number concentration in a next-generation
+  bulk microphysics scheme for operational applications
+authors:
+- Anders A. Jensen
+- David D. Turner
+- J.E. Castillo Guerra
+- Stanley G. Benjamin
+- Clark Evans
+- David J. Gagne
+- Justin R. Minder
+- Joseph B. Olson
+date: '2026-08-31'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.5194/egusphere-2026-4026
+  openalex: W7204759872
+links:
+  paper: https://doi.org/10.5194/egusphere-2026-4026
+orgs:
+- noaa
+- ncar
+topic: hybrid-parameterization
+topics:
+- infra-software
+type: model
+method:
+- other
+timescale:
+- short
+spatial:
+- regional
+data:
+- stations
+- km-scale-sim
+status: pre-operational
+summary: ML predicts cloud droplet number concentration in MPAS-A microphysics, improving subgrid cloud
+  effective radii and tested against WINTRE-MIX aircraft and surface observations.
+abstract: Abstract. A machine-learning (ML) model was developed to predict cloud droplet number concentrations.
+  This ML model was trained on data from simulations using the Model for Prediction Across Scales–Atmosphere
+  (MPAS-A) coupled to a next-generation version of the Thompson-Eidhammer bulk microphysics scheme. The
+  ML model was tested for two applications. First, the ML model was used to predict the number concentration,
+  and hence the effective radii of subgrid-scale clouds from the MYNN boundary-layer scheme. These subgrid-scale
+  clouds, necessary for accurate predictions of radiation, have historically been parameterized using
+  constant values for their effective radii. The ML model predicted cloud droplet number concentrations
+  for subgrid-scale clouds so that their effective radii could be calculated using a method physically
+  consistent with those of fully resolved clouds predicted by the bulk microphysics scheme. These results
+  were compared with observations using a novel approach to show that the ML model provided reasonable
+  estimates of effective radii. Second, cloud droplet number concentrations were replaced in the bulk
+  microphysics parameterization with values predicted by the ML model. Results from this test were compared
+  with aircraft and surface observations from two IOPs during the WINTRE-MIX field campaign. Overall,
+  the simulation with the ML prediction of cloud droplet number concentrations reproduced the 24-h total
+  precipitation for the case and reasonably represented the microphysical details. The ML model performed
+  better for relatively short forecasts, which was attributed to the lack of model spin-up required by
+  physical parameterizations. The biases in the ML model for this case study resulted in reduced drizzle
+  production, which slightly degraded the forecast of precipitation phase. Benefits of the ML method include
+  lower computational cost, better coupling between fully resolved and unresolved (subgrid-scale) clouds,
+  and more rapid development of realistic forecasts when initial conditions are not fully spun up.
+significance: 4
+cited_by: 0
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

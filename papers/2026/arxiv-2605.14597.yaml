@@ -1,0 +1,60 @@
+id: arxiv-2605.14597
+title: 'VMU-Diff: A Coarse-to-fine Multi-source Data Fusion Framework for Precipitation Nowcasting'
+authors:
+- Chunlei Shi
+- Hao Li
+- Yufeng Zhu
+- Boyu Liu
+- Yongchao Feng
+- Zengliang Zang
+- Hongbin Wang
+- Yanlan Yang
+- Dan Niu
+date: '2026-05-14'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.14597'
+  openalex: W7161309445
+links:
+  paper: https://arxiv.org/abs/2605.14597
+  pdf: https://arxiv.org/pdf/2605.14597
+orgs:
+- cma
+topic: nowcasting
+type: model
+method:
+- diffusion
+- other
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- satellite
+status: research
+summary: VMU-Diff fuses radar and satellite data in a Mamba coarse stage and a residual diffusion fine
+  stage for precipitation nowcasting.
+abstract: Precipitation nowcasting is a vital spatio-temporal prediction task for meteorological applications
+  but faces challenges due to the chaotic property of precipitation systems. Existing methods predominantly
+  rely on single-source radar data to build either deterministic or probabilistic models for extrapolation.
+  However, the single deterministic model suffers from blurring due to MSE convergence. The single probabilistic
+  model, typically represented by diffusion models, can generate fine details but suffers from spurious
+  artifacts that compromise accuracy and computational inefficiency. To address these challenges, this
+  paper proposes a novel coarse-to-fine Vision Mamba Unet and residual Diffusion (VMU-Diff) based precipitation
+  nowcasting framework. It realizes precipitation nowcasting through a two-stage process, i.e., a deterministic
+  model-based coarse stage to predict global motion trends and a probabilistic model-based fine stage
+  to generate fine prediction details. In the coarse prediction stage, rather than single-source radar
+  data, both radar and multi-band satellite data are taken as input. A spatial-temporal attention block
+  and several Vision mamba state-space blocks realize multi-source data fusion, and predict the future
+  echo global dynamics. The fine-grained stage is realized by a spatio-temporal refine generator based
+  on residual conditional diffusion models. It first obtains spatio-temporal residual features based on
+  coarse prediction and ground truth, and further reconstructs the residual via conditional Mamba state-space
+  module. Experiments on Jiangsu SWAN datasets demonstrate the improvements of our method over state-of-the-art
+  methods, particularly in short-term forecasts.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

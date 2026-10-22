@@ -1,0 +1,46 @@
+id: arxiv-2605.16435
+title: GPU-Accelerated Deep Learning for Heatwave Prediction and Urban Heat Risk Assessment
+authors:
+- Adis Alihodžić
+date: '2026-05-14'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.16435'
+  openalex: W7161729794
+links:
+  paper: https://arxiv.org/abs/2605.16435
+  pdf: https://arxiv.org/pdf/2605.16435
+topic: extremes-hazards
+topics:
+- downscaling
+type: application
+method:
+- cnn
+- rnn
+timescale:
+- short
+spatial:
+- local
+data:
+- satellite
+- nwp-analysis
+status: research
+summary: A GPU ConvLSTM predicts next-day urban land surface temperature in Sarajevo with MAE 0.23 and
+  R2 0.89, supporting city heat risk maps.
+abstract: Heatwaves are an important problem in cities, and climate change makes this problem more difficult.
+  In this paper, we present a GPU-based deep learning framework for next-day prediction of urban thermal
+  conditions and for heat risk assessment. The study was carried out in Sarajevo by using MODIS land surface
+  temperature data and Open-Meteo forecast data. We tested several models, including convolutional models
+  and spatiotemporal models. Among them, ConvLSTM with a mixed loss function gave the best results. The
+  obtained values were MAE = 0.2293, RMSE = 0.3089, and R2 = 0.8877. The experiments also showed that
+  results can be improved by using longer temporal series and additional meteorological variables. Since
+  the framework was implemented on a GPU and trained with mixed precision, the execution time was reduced.
+  Based on the predicted temperature fields, it was also possible to combine hazard information with exposure
+  and vulnerability data in order to generate city heat risk maps. The proposed framework can be used
+  as a practical basis for city heat analysis.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

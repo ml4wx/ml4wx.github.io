@@ -1,0 +1,56 @@
+id: arxiv-2606.03025
+title: 'RIFTES: An RTM- and iteration-free temperature-emissivity separation framework for accurate and
+  efficient clear-sky land surface temperature retrieval'
+authors:
+- Huanyu Zhang
+- Bo-Hui Tang
+- Yun Jiang
+- Menglin Si
+- Frank M. Göttsche
+- Tian Hu
+- Yuanliang Cheng
+- Zhao-Liang Li
+date: '2026-06-02'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.03025'
+links:
+  paper: https://arxiv.org/abs/2606.03025
+  pdf: https://arxiv.org/pdf/2606.03025
+topic: observations-remote-sensing
+type: model
+method:
+- physics-constrained
+- cnn
+spatial:
+- global
+data:
+- satellite
+- stations
+status: research
+summary: RIFTES combines closed-form temperature-emissivity separation with a physics-informed residual
+  network, cutting land surface temperature RMSE to 1.51 K for ECOSTRESS and 1.97 K for ABI.
+abstract: This study proposes an RTM- and iteration-free TES (RIFTES) framework to improve both computational
+  efficiency and retrieval accuracy of the temperature-emissivity separation (TES) algorithm for clear-sky
+  land surface temperature (LST) retrieval. Based on physical derivations, a non-iterative TES algorithm
+  was first developed by reformulating the original iterative procedure into a mathematically equivalent
+  closed-form solution, thereby eliminating the need for cumbersome iterations. To further reduce error
+  propagation risks and computational burdens, a deep residual neural network that integrates atmospheric
+  radiative transfer physics was adopted to conduct atmospheric correction using easily accessible parameters,
+  with a masking mechanism introduced to flexibly incorporate atmospheric constraints when available.
+  Comprehensive validations demonstrate the effectiveness of the proposed algorithm. Simulation results
+  show that RIFTES remains robust to input uncertainties and achieves the lowest root mean squared error
+  (RMSE) of 1.06 K among representative existing algorithms, including split-window (SW), TES, and SW-TES
+  hybrid methods. In-situ measurements from globally distributed sites were then used to evaluate the
+  practical performance of RIFTES when applied to both the ECOsystem Spaceborne Thermal Radiometer Experiment
+  on Space Station (ECOSTRESS) and the Advanced Baseline Imager (ABI). The new algorithm achieves RMSE
+  values of 1.51 K and 1.97 K for ECOSTRESS and ABI, respectively, reducing retrieval uncertainties by
+  up to 24% and 32% compared with existing methods. Furthermore, by simplifying both the iterative procedure
+  and atmospheric correction, RIFTES reduces the overall computational time by 74.0% and 62.5% compared
+  with the TES and hybrid algorithms, respectively.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,54 @@
+id: arxiv-2605.11968
+title: Assessment of cloud and associated radiation fields from a GAN stochastic cloud subcolumn generator
+authors:
+- Dongmin Lee
+- Lazaros Oreopoulos
+- Nayeong Cho
+- Daeho Jin
+date: '2026-05-12'
+year: 2026
+venue: Digital Repository at the University of Maryland (University of Maryland College Park)
+venue_type: preprint
+ids:
+  arxiv: '2605.11968'
+  doi: 10.13016/m2v0mv-hsle
+  openalex: W7163987455
+links:
+  paper: https://arxiv.org/abs/2605.11968
+  pdf: https://arxiv.org/pdf/2605.11968
+orgs:
+- nasa
+topic: hybrid-parameterization
+type: model
+method:
+- gan-vae
+- cnn
+timescale:
+- climate
+spatial:
+- global
+data:
+- satellite
+status: research
+summary: A CVAE-GAN with U-Net subcolumn generator trained on CloudSat-CALIPSO data reduces global shortwave
+  cloud radiative effect bias threefold versus the Räisänen scheme.
+abstract: Modern Earth System Models (ESMs) operate on horizontal scales far larger than typical cloud
+  features, requiring stochastic subcolumn generators to represent subgrid horizontal and vertical cloud
+  variability. Traditional physically-based generators often rely on analytical cloud overlap paradigms,
+  such as exponential-random decorrelation, which can struggle to capture the complex, anti-correlated
+  behavior of non-contiguous cloud layers. In this study, we introduce a novel two-stage machine learning
+  subcolumn generator for the GEOS atmospheric model, utilizing a Conditional Variational Autoencoder
+  combined with a Generative Adversarial Network (CVAE-GAN) and a U-Net architecture. Trained on a merged
+  CloudSat-CALIPSO height-resolved cloud optical depth dataset, the ML generator creates 56 stochastic
+  subcolumns representing cloud occurrence and optical depth profiles. Evaluated against the established
+  Räisänen, the ML approach accurately reproduces bimodal cloud overlap distributions, significantly reduces
+  biases in grid-mean statistics, and halves the root-mean-square error in ISCCP-style cloud-top pressure
+  and optical thickness joint histograms. The improvements brought by our deep generative models translate
+  into more accurate offline radiative transfer calculations, reducing the global-mean shortwave top-of-atmosphere
+  cloud radiative effect bias by a factor of three. Provided that the generator can be accelerated on
+  CPUs, this offers a practical pathway to reduce structural errors at the cloud-radiation interface.
+significance: 4
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

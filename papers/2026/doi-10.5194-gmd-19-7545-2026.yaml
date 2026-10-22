@@ -1,0 +1,59 @@
+id: doi-10.5194-gmd-19-7545-2026
+title: Comprehensive inter-comparison of generative AI models for super-resolution precipitation downscaling
+  across hydroclimatic regimes
+authors:
+- Shivam H Singh
+- Simon Michael Papalexiou
+- Hebatallah Abdelmoaty
+- Thomas Hartvigsen
+- Antonios Mamalakis
+date: '2026-08-17'
+year: 2026
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-19-7545-2026
+  openalex: W7131798081
+links:
+  paper: https://doi.org/10.5194/gmd-19-7545-2026
+  pdf: https://gmd.copernicus.org/articles/19/7545/2026/gmd-19-7545-2026.pdf
+topic: downscaling
+topics:
+- probabilistic-ensembles
+type: evaluation
+method:
+- cnn
+- gan-vae
+- diffusion
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: Compares U-Net, conditional WGAN and conditional DDPM for 8x and 16x precipitation downscaling
+  over US regions, finding generative models better capture extremes and spatial structure.
+abstract: 'Abstract. High-resolution precipitation information is essential for hydrologic modeling, flood
+  forecasting, and climate-risk assessment, yet global weather and climate models operate at spatial resolutions
+  too coarse to resolve storm structure, intermittency, and extremes. Deep-learning-based statistical
+  downscaling provides a computationally efficient alternative to dynamical downscaling, but deterministic
+  convolutional neural networks often yield overly smooth predictions and underestimate fine-scale variability
+  and extreme events. Generative deep-learning models, including generative adversarial networks and diffusion
+  models, offer a promising alternative by enabling stochastic downscaling and explicit representation
+  of uncertainty. This study presents a systematic, hydrologically oriented comparison of three representative
+  deep-learning frameworks for precipitation super-resolution: a convolutional U-NET, a conditional Wasserstein
+  GAN (WGAN), and a conditional denoising diffusion probabilistic model (DDPM). Using a perfect-model
+  experimental design based on ERA5-Land precipitation over distinct hydroclimatic regions of the United
+  States, we evaluate performance under 8-times (8×) and 16-times (16×) downscaling tasks within a unified
+  training and evaluation framework. Models are evaluated using diagnostics that examine precipitation
+  distributions, wet–dry occurrence, extremes, spatial structure, storm morphology, mass consistency,
+  ensemble variability, and computational cost. All three models preserve aggregate rainfall mass despite
+  the absence of explicit physical constraints. Differences arise primarily at fine spatial scales and
+  in the representation of extremes, spatial dependence, and uncertainty. U-NET provides stable and computationally
+  efficient predictions but smooths small-scale variability. WGAN improves fine-scale structure and heavy-tail
+  behavior at the expense of increased noise. The DDPM yields physically coherent ensemble members and
+  an explicit representation of uncertainty, at a substantially higher computational cost.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

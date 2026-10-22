@@ -1,0 +1,60 @@
+id: arxiv-2609.03210
+title: Improving global precipitation forecasts with an AI weather model trained on satellite observations
+authors:
+- Julian F. Schmitt
+- Bertrand Delorme
+- Robert C. King
+- Yashica Patodia
+- Tapio Schneider
+- Aditi Sheshadri
+- Ravi Jain
+date: '2026-09-02'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.03210'
+  openalex: W7208748172
+links:
+  paper: https://arxiv.org/abs/2609.03210
+  pdf: https://arxiv.org/pdf/2609.03210
+orgs:
+- google-research
+- caltech
+- stanford
+topic: global-medium-range
+topics:
+- observations-remote-sensing
+type: model
+method:
+- transformer
+- gnn
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- satellite
+- nwp-analysis
+status: pre-operational
+summary: Laxmi retrains the operational AIFS model on satellite precipitation, improving global probabilistic
+  accuracy by 19%, cutting drizzle overprediction by 33%, and correcting ERA5 rainfall biases.
+abstract: Precipitation forecasts shape decision-making across the global economy, particularly in sectors
+  such as agriculture. However, unlike variables such as temperature, precipitation is highly intermittent
+  and localized, making it difficult to forecast. While recent advances in AI weather prediction systems
+  have enabled them to surpass physical models on globally averaged metrics, improvements in mean error
+  rarely translate to actionable forecasts of severe flooding or dry crop fields. Furthermore, most of
+  these models are trained and evaluated against a reanalysis data product, ERA5, which has well-known
+  biases. Here we retrain AIFS, ECMWF's widely-used, open-source operational 0.25° probabilistic graph-transformer
+  weather model, on satellite-based precipitation observations. Our model, Laxmi, improves global probabilistic
+  accuracy by 19% and resolves systematic distributional biases in ERA5. Specifically, Laxmi reduces drizzle
+  overprediction by 33% for amounts less than 3 mm per day. It also mitigates extreme rainfall underprediction,
+  improving the global 95th percentile Brier skill score by 57%. Across a case study of 10 Indian tropical
+  storms, Laxmi delivered the most accurate forecast of 150 mm event-total precipitation in 7 events,
+  compared to 1 for AIFS and 2 for the leading physical model, IFS. Our results demonstrate that incorporating
+  observation-based precipitation data directly into training can substantially improve forecasts.
+significance: 6
+score: 59
+highlight: true
+added: '2026-10-22'
+source: backfill

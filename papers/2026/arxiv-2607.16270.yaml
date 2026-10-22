@@ -1,0 +1,54 @@
+id: arxiv-2607.16270
+title: Physics-Informed Feature Engineering 1D-CNN for Multilayer Cloud Detection from Geostationary Satellites
+authors:
+- Fu Wang
+- Chi Yang
+- Qi-Feng Lu
+- Rui-Xia Liu
+- Xiao-Fei Yang
+- Xiao-Fang Liu
+- Bo Li
+- Lin Chen
+date: '2026-07-07'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2607.16270'
+  openalex: W7169858324
+links:
+  paper: https://arxiv.org/abs/2607.16270
+  pdf: https://arxiv.org/pdf/2607.16270
+orgs:
+- cma
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: A 1D-CNN with physics-based channel priors detects multilayer clouds from geostationary imagers,
+  raising probability of detection to 0.620 from 0.558 for the threshold algorithm.
+abstract: Multilayer cloud detection from active--passive observation is vital for numerical weather prediction.
+  In this study, channel selections derived from threshold-based algorithms are embedded as feature-engineering
+  priors into a 1D-CNN, and machine learning (ML) is used to learn latent physical relationships to simplify
+  physical retrievals for operational deployment. The results show that the 1D-CNN achieves a multilayer-cloud
+  probability of detection ($\mathrm{POD}{\mathrm{mul}}$) of 0.620 and a false alarm rate ($\mathrm{FAR}{\mathrm{mul}}$)
+  of 0.240, outperforming the conventional threshold algorithm ($\mathrm{POD}{\mathrm{mul}} = 0.558$,
+  $\mathrm{FAR}{\mathrm{mul}} = 0.369$). These results demonstrate that prior physical knowledge derived
+  from radiative transfer theory can serve as an effective feature-engineering prior. Further experiments
+  show that ML-revealed physical mechanisms can also enhance traditional algorithms. Replacing AGRI channel
+  12 (C12, centered at $10.8~μ\mathrm{m}$) with channel 13 (C13, centered at $12.0~μ\mathrm{m}$) increased
+  $\mathrm{POD}{\mathrm{mul}}$ from 0.558 to 0.609 without materially affecting $\mathrm{FAR}{\mathrm{mul}}$.
+  However, for AHI, substituting the $11.2~μ\mathrm{m}$ channel with the $12.3~μ\mathrm{m}$ channel yielded
+  negligible improvement. In addition to spectral response function (SRF) mismatches, a primary contributing
+  factor is the channels' on-orbit radiometric stability. Hence, physics-informed machine-learning methods
+  appear promising for advancing remote-sensing AI, while sensor-specific characteristics must be considered
+  during operational transfer.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,62 @@
+id: doi-10.3390-atmos17100915
+title: Physics-Guided Deep Learning for Short-Term Probabilistic Offshore Wind Power Forecasting
+authors:
+- Xiuyong Zhao
+- Haichuan Long
+- Kaize Liu
+- Jiawei Wan
+- Jingxin Xu
+- Wenxin Tian
+- Jian Yin
+- Zhiqiu Gao
+date: '2026-09-22'
+year: 2026
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos17100915
+  openalex: W7214035069
+links:
+  paper: https://doi.org/10.3390/atmos17100915
+orgs:
+- nuist
+- cma
+topic: applications-impacts
+type: model
+method:
+- transformer
+- gnn
+- physics-constrained
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+- nwp-analysis
+status: research
+summary: PRWind combines a transformer with physics baselines and graph convolution for offshore wind
+  power, reaching 8.2-8.7% NMAE and PICP of 0.89 across two farms.
+abstract: 'To address the nonlinear amplification of numerical weather prediction (NWP) errors and the
+  difficult trade-off between coverage and sharpness in short-term offshore wind power forecasting, this
+  paper proposes PRWind, a physics-guided framework for short-term probabilistic forecasting. Built upon
+  a Transformer encoder, the framework integrates horizon-adaptively weighted power-curve, persistence,
+  and wind-speed cubic-law baselines; propagates wind-speed uncertainty into a power distribution through
+  a probabilistic wind-speed distribution with Monte Carlo integration; and employs spatial graph convolution
+  to model inter-turbine correlations, together with online bias correction and segmented post hoc interval
+  calibration. The framework is validated on two offshore wind farms in coastal China (8350 kW and 10,000
+  kW units), with all data analyzed at hourly resolution and forecasts issued for 23 hourly steps ahead.
+  For point forecasting, the NMAE reaches 8.74% and 8.24%, with MAE reductions of 19.1% (95% CI: 18.1–19.9%)
+  at Wind Farm A and 7.8% (95% CI: 7.3–8.4%) at Wind Farm B relative to the strongest baselines, both
+  statistically significant under the Diebold–Mariano test (p < 0.001). For probabilistic forecasting,
+  the PICP remains stable at 0.89, balancing coverage and sharpness. The error of PRWind accumulates markedly
+  more slowly with the forecast horizon than that of the baselines, and ablation studies confirm the synergistic
+  effect of the modules. Trained and evaluated independently on the two wind farms, PRWind performs consistently,
+  demonstrating cross-wind-farm stability (rather than zero-shot generalization) conferred by physical
+  guidance, and offering significant engineering value for intra-day and day-ahead offshore wind power
+  dispatch.'
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

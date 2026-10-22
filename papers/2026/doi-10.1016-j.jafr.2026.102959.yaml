@@ -1,0 +1,60 @@
+id: doi-10.1016-j.jafr.2026.102959
+title: Uncertainty-aware sensor-adaptive ET0 prediction under sparse weather sensing via Bayesian-calibrated
+  FAO-56 Penman–Monteith and a masked neural network
+authors:
+- Okacha Amraouy
+- Mohammed Benbrahim
+- Mohammed Nabil Kabbaj
+date: '2026-05-01'
+year: 2026
+venue: Journal of Agriculture and Food Research
+venue_type: journal
+ids:
+  doi: 10.1016/j.jafr.2026.102959
+  openalex: W7160325788
+links:
+  paper: https://doi.org/10.1016/j.jafr.2026.102959
+topic: applications-impacts
+topics:
+- observations-remote-sensing
+type: model
+method:
+- classical-ml
+- physics-constrained
+spatial:
+- local
+data:
+- stations
+- other
+status: research
+summary: A masked neural network with Bayesian-calibrated Penman-Monteith estimates daily reference evapotranspiration
+  from any subset of sparse station sensors in Morocco.
+abstract: 'Reliable estimation of reference evapotranspiration (ET 0 ) is essential for irrigation scheduling
+  and agricultural water-resources management. Although the FAO-56 Penman–Monteith equation is widely
+  accepted as the standard method for ET 0 estimation, its practical application requires a complete set
+  of meteorological variables that many low-cost, legacy, or sparsely instrumented weather stations cannot
+  continuously provide. Existing data-driven approaches partly alleviate this limitation, but they often
+  either neglect the physical constraints of the FAO-56 Penman–Monteith formulation or rely on separate
+  models for fixed input subsets, which limits adaptability across heterogeneous sensor networks. This
+  study proposes a hybrid framework for daily ET 0 estimation under sparse and variable meteorological
+  sensing by coupling Bayesian calibration of the FAO-56 Penman–Monteith equation with a sensor-adaptive
+  masked artificial neural network (ANN). In the Bayesian stage, the least directly observed energy-balance
+  terms, net radiation and soil heat flux, are parameterized and inferred using Hamiltonian Monte Carlo
+  to generate uncertainty-aware, physically constrained ET 0 targets. A combined feature-selection strategy
+  based on Sobol indices, SHAP values, and Pearson correlation then identifies four dominant drivers:
+  solar radiation, maximum air temperature, mean wind speed, and mean relative humidity. These variables,
+  together with binary sensor-availability masks, are used to train a single masked ANN capable of operating
+  under all 15 non-empty input combinations without retraining separate models. The framework was evaluated
+  using 15 min IoT weather-station data from the Fès–Meknès region of Morocco (January 2023 to October
+  2025) under leakage-safe balanced 10-fold cross-validation. Under full-driver availability (k = 4),
+  the masked ANN reproduced the Bayesian-calibrated FAO-56 reference with RMSE = 0.226 mm day −1 , MAE
+  = 0.166 mm day −1 , MAPE = 4.32%, and R 2 = 0.996. Performance degraded smoothly as sensors were removed,
+  while the model remained operational under single-sensor scenarios. These results show that the proposed
+  Bayesian–masked-ANN framework provides physically consistent, uncertainty-aware, and deployment-ready
+  ET 0 estimation for heterogeneous smart-irrigation networks with incomplete meteorological observations.'
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

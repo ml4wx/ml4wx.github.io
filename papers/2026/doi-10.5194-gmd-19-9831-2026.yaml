@@ -1,0 +1,60 @@
+id: doi-10.5194-gmd-19-9831-2026
+title: 'Physics vs. AI in weather prediction: evaluating GraphCast, AIFS, and FuXi against an observation-corrected
+  WRF model for flash floods'
+authors:
+- Haseeb ur Rehman
+- Felix Norman Teferle
+date: '2026-10-13'
+year: 2026
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-19-9831-2026
+  openalex: W7169789343
+links:
+  paper: https://doi.org/10.5194/gmd-19-9831-2026
+  pdf: https://gmd.copernicus.org/articles/19/9831/2026/gmd-19-9831-2026.pdf
+topic: benchmarks-data-eval
+topics:
+- global-medium-range
+type: evaluation
+method:
+- gnn
+- transformer
+timescale:
+- short
+- medium
+spatial:
+- regional
+data:
+- era5
+- nwp-analysis
+status: research
+summary: Compares GraphCast, AIFS and FuXi with a data-assimilating WRF model over 2016–2021 Luxembourg
+  floods; AIFS gives the best precipitation detection (POD 0.765).
+abstract: 'Abstract. Data-driven artificial intelligence (AI) weather models are increasingly positioned
+  as alternatives or complements to physics-based numerical weather prediction (NWP) systems, yet systematic
+  model evaluation studies that compare both paradigms under controlled experimental conditions remain
+  limited. Here we present a structured model evaluation framework applying standardised verification
+  metrics to assess a regional WRF configuration against three publicly available AI models – GraphCast,
+  AIFS Single 1.0, and FuXi – over three high-impact flood events in Luxembourg and the Greater Region
+  (2016, 2018, and 2021), comprising 90 simulation days and over 7300 matched forecast-observation pairs.
+  The WRF model employs a three-dimensional variational (3D-VAR) data assimilation scheme ingesting GNSS
+  Zenith Total Delay and conventional observations on a 6-hourly Rapid Update Cycle. All systems are initialised
+  from ERA5 reanalysis to ensure consistent initial conditions. Categorical precipitation scores at the
+  1 mm threshold and continuous temperature metrics at surface stations serve as verification targets.
+  Data assimilation measurably improves WRF''s categorical precipitation skill (Critical Success Index:
+  0.306 to 0.341) while leaving near-surface temperature largely unchanged, demonstrating the value of
+  the assimilation scheme. AIFS achieves the highest detection rate (POD 0.765) and net categorical skill
+  (CSI 0.370), GraphCast and AIFS reduce temperature RMSE by ~10 % relative to assimilated WRF, and WRF
+  alone reproduces the observed mesoscale precipitation structure of the catastrophic July 2021 flood.
+  The per-event breakdown reveals no skill degradation for AI models on out-of-sample events, suggesting
+  that meteorological regime rather than training-data overlap governs model performance. These results
+  provide a replicable model evaluation methodology for benchmarking emerging data-driven NWP systems
+  against observation-corrected regional models.'
+significance: 4
+cited_by: 0
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

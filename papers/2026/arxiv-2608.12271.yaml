@@ -1,0 +1,59 @@
+id: arxiv-2608.12271
+title: Earth observation embeddings are effective sub-grid descriptors for probabilistic weather downscaling
+authors:
+- Pedro Sousa
+- Will Tebbutt
+- Sadiq Jaffer
+- Robin Young
+- Anil Madhavapeddy
+- Richard E. Turner
+date: '2026-08-12'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2608.12271'
+links:
+  paper: https://arxiv.org/abs/2608.12271
+  pdf: https://arxiv.org/pdf/2608.12271
+orgs:
+- university-of-cambridge
+topic: downscaling
+topics:
+- observations-remote-sensing
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- local
+data:
+- era5
+- satellite
+- stations
+status: research
+summary: Learned embeddings from Earth observation foundation models improve probabilistic ERA5 downscaling,
+  raising CRPS skill by 11.5% for 2 m temperature over a topography-only baseline.
+abstract: Global weather reanalyses and forecasts resolve the evolving atmospheric state on coarse grids,
+  but site-specific applications require predictions at arbitrary locations where near-surface conditions
+  also depend on unresolved terrain and land-surface properties. Existing probabilistic downscalers address
+  this gap using hand-crafted topographic and surface descriptors. We ask instead whether Earth observation
+  foundation models can provide transferable subgrid surface representations for probabilistic weather
+  downscaling. We augment a convolutional conditional neural process (ConvCNP) that downscales coarse
+  ERA5 reanalysis fields at ~25 km resolution with a learned local surface descriptor, obtained by compressing
+  a patch of TESSERA embeddings at 10 m resolution. Although these embeddings summarize annual surface
+  conditions, they improve downscaling by encoding persistent surface properties that capture a location's
+  departure from the coarse-grid atmospheric state. Across five climatically diverse regions, the embedding
+  improves point and probabilistic skill at stations held out in both space and time, overall improving
+  CRPS skill by 11.5% for 2 m temperature and 6.2% for 10 m wind speed relative to a topography-only ConvCNP
+  baseline. A hand-crafted descriptor incorporating richer surface information than topography alone captures
+  comparable persistent subgrid signal but yields far smaller predictive gains than the learned embedding
+  representation. These improvements persist when forecasts from the Aurora AI model replace ERA5 reanalysis
+  fields and when predicting at newly deployed weather station networks. To our knowledge, this is the
+  first evidence that long-timescale Earth observation embeddings can support short-timescale weather
+  downscaling where subgrid departures are systematically structured by persistent surface properties.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

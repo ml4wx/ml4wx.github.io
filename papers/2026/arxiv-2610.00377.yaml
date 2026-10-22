@@ -1,0 +1,58 @@
+id: arxiv-2610.00377
+title: 'STCFormer: Adaptive Spatio-Temporal Modeling with Dynamic Cluster Transformer for Station-based
+  Weather Forecasting'
+authors:
+- Rongwen Li
+- Haixin Xie
+- Mingyang Wang
+- Hongwu Liu
+- Kun Fang
+- Changjian Chen
+- Zhuo Tang
+- Kenli Li
+date: '2026-09-30'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.00377'
+  openalex: W7216005015
+links:
+  paper: https://arxiv.org/abs/2610.00377
+  pdf: https://arxiv.org/pdf/2610.00377
+  code: https://github.com/hnu-vis/STCFormer
+orgs:
+- cma
+topic: local-forecasting
+type: model
+method:
+- transformer
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Cluster-guided spatio-temporal Transformer for station temperature and wind forecasting achieves
+  the lowest 24-hour MSE on all eight tasks tested.
+abstract: Station-based weather forecasting supports daily life and economic activity, yet accurate forecasts
+  require modeling complex spatial dependencies among stations. Recent clustering-based selective modeling
+  offers a promising alternative to dense inter-station interactions. However, a grouping shared across
+  an observation window may obscure local changes in station relationships, while intra-cluster interactions
+  alone may miss important global context. The theoretical advantages of selective interactions over dense
+  connectivity also remain insufficiently understood. We therefore propose STCFormer, an adaptive spatio-temporal
+  Transformer that dynamically groups stations according to their local evolution within each temporal
+  patch. Its Cluster-Guided Attention Block combines fine-grained local attention within clusters and
+  global attention over regional state summaries, allowing each station to access information beyond its
+  own cluster. We further show that a derived Lipschitz upper bound for cluster-conditioned local attention
+  is no larger than its fully connected counterpart, explaining a potential robustness benefit and motivating
+  the design of InfoLoss. Experiments on three real-world weather datasets spanning eight temperature
+  and wind forecasting tasks show that STCFormer achieves the lowest 24-hour mean squared error on all
+  eight tasks and ranks first or second in 47 of 48 comparisons across metrics and forecasting horizons.
+  Ablations and case studies further confirm the benefits of locally adaptive grouping and complementary
+  local-global interactions. Our code can be obtained at https://github.com/hnu-vis/STCFormer.
+significance: 3
+score: 32
+highlight: false
+added: '2026-10-22'
+source: backfill

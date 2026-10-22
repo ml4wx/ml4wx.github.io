@@ -1,0 +1,67 @@
+id: doi-10.5194-egusphere-2026-4377
+title: 'FiLMeR (v1.0): a FiLM-conditioned machine-learning emulator for multi-domain regional WRF-scale
+  surface weather fields'
+authors:
+- Balbir Prasad
+- Deena Lad
+- Mohammad Rafiuddin
+- Udit Bhatia
+- Nipun Batra
+date: '2026-09-28'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.5194/egusphere-2026-4377
+  openalex: W7167901891
+links:
+  paper: https://doi.org/10.5194/egusphere-2026-4377
+  pdf: https://egusphere.copernicus.org/preprints/2026/egusphere-2026-4377/egusphere-2026-4377.pdf
+topic: regional-km-scale
+topics:
+- downscaling
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- km-scale-sim
+status: research
+summary: FiLMeR emulates WRF 27 km and 9 km near-surface fields over India from GFS states using FiLM
+  conditioning, with one model across four domains.
+abstract: 'Abstract. High-resolution regional weather forecasting supports applications such as early
+  warning, hydrological planning, and regional risk assessment, but traditional numerical models such
+  as the Weather Research and Forecasting (WRF) system remain computationally demanding for rapid ensemble
+  or sensitivity experiments. Machine-learning emulators can substan- tially lower this cost, but many
+  are tied to a single grid or depend on future boundary fields that are not always available. We present
+  FiLMeR (v1.0), a context-conditioned machine-learning emulator for WRF-scale near-surface regional weather
+  fields. FiLMeR encodes dynamic atmospheric forcing and static physiographic information in two separate
+  encoders and conditions the decoder with Feature-wise Linear Modulation (FiLM) using grid spacing and
+  cyclic time-of-day/day-of-year metadata. The model predicts six near-surface variables (temperature,
+  humidity, surface pressure, wind components, and precipitation) from historical Global Forecasting System
+  (GFS) states, using a hurdle-style precipitation head. A single shared-weight model is trained and evaluated
+  across four nested WRF domains over the Indian subcontinent, at two grid spacings (27 km and 9 km).
+  We test whether FiLMeR’s two central design choices, separating inputs into two encoders and conditioning
+  with FiLM, are each responsible for its accuracy. This is done using a controlled comparison across
+  seven combinations of these two choices, together with a diagnostic test on the trained model. Any form
+  of conditioning substantially improves on an unconditioned model, but the dual-encoder design on its
+  own performs worse than a simpler single encoder, and needs FiLM to become competitive again. Once FiLM
+  is added, this configuration ties with a simpler single-encoder design that uses a more basic conditioning
+  method, under a comparison rule fixed before the results were seen; neither is clearly better. The diagnostic
+  test further shows that FiLM’s measured contribution is mainly temporal (time-of-day and day-of-year),
+  not domain-adaptive, even though the model is trained across four geographically distinct domains. On
+  the independent 2025 test period, FiLMeR achieves a 2 m temperature RMSE of 1.50 K and a surface-pressure
+  RMSE of 1.37 hPa, and produces the corresponding 80-step, 3-hourly output sequence (equivalent to a
+  10-day WRF forecast) in a fraction of a second on a single GPU, about 38,000 times faster than the WRF
+  dynamical integration it emulates. FiLMeR is therefore a computationally efficient emulator for these
+  WRF-scale surface fields: conditioning is necessary for its accuracy, and FiLM’s benefit is primarily
+  a temporal-conditioning mechanism.'
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

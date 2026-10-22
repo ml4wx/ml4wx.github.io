@@ -1,0 +1,60 @@
+id: arxiv-2607.04862
+title: Enhancing the Forecasting Capability of Multi-Model Blending Algorithms for Extreme Precipitation
+  via Joint Use of Station and Gridded Observations
+authors:
+- Yu Wang
+- Yong Cao
+- Kan Dai
+- Yue Shen
+- Xiaoqing Zeng
+- Ruixia Zhao
+date: '2026-07-06'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2607.04862'
+  openalex: W7167611123
+links:
+  paper: https://arxiv.org/abs/2607.04862
+  pdf: https://arxiv.org/pdf/2607.04862
+orgs:
+- cma
+topic: post-processing
+topics:
+- extremes-hazards
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: pre-operational
+summary: A U-Net blends six NWP models for extreme precipitation in China using station-grid joint loss,
+  raising threat score for 50 mm rainstorms by 38.4% over the best NWP.
+abstract: 'Accurate extreme precipitation forecasting is critical for disaster mitigation but remains
+  challenging for numerical weather prediction (NWP) models due to systemic intensity underestimation
+  and spatial displacement. Traditional precipitation multi-model blending algorithms perform pixel-by-pixel
+  blending on the forecast field based on weights, which may lead to the expansion of precipitation areas
+  and the smoothing of extreme values. This study proposes an U-Net based two-stage framework: probability
+  classification followed by value reconstruction, to blend forecasts from six major NWP models. A novel
+  station-grid joint supervision mechanism is introduced by integrating observations from 2411 national
+  meteorological stations in China into the loss function, simultaneously constraining spatial structures
+  and peak intensities. Evaluations using independent samples from the 2025 flood season demonstrate that
+  our model significantly outperforms both individual NWPs and current operational products. For rainstorms
+  (>=50 mm), the Threat Score (TS) improved by 38.4% compared to the best NWP. Notably, for extreme events
+  (>=100 mm) driven by extratropical cyclones and the subtropical high, the model successfully elevated
+  the TS to above 0.1, transforming forecasts from having negligible reference value into those with certain
+  operational utility. Furthermore, the model exhibits data-driven spatial correction capabilities, effectively
+  realigning systematic rainbelt displacements with actual precipitation centers. The inclusion of station
+  observations specifically enhanced the TS for rainstorms by 10.4% and effectively balanced the Bias.
+  These results highlight the efficacy of multi-source joint supervision in enhancing the capture of extreme
+  precipitation events.'
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

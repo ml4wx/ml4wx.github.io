@@ -1,0 +1,57 @@
+id: arxiv-2610.09859
+title: Generative and deterministic deep learning models comparison for fine-scale precipitation retrievals
+  from infrared brightness temperature
+authors:
+- Matthieu Meignin
+- Cécile Mallet
+- Nicolas Viltard
+date: '2026-10-07'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.09859'
+  openalex: W7164717889
+links:
+  paper: https://arxiv.org/abs/2610.09859
+  pdf: https://arxiv.org/pdf/2610.09859
+topic: observations-remote-sensing
+topics:
+- benchmarks-data-eval
+type: evaluation
+method:
+- cnn
+- transformer
+- gan-vae
+- diffusion
+spatial:
+- regional
+data:
+- satellite
+- radar
+status: research
+summary: Compares U-Nets, transformers, GANs and diffusion models for infrared precipitation retrieval
+  over France; generative models capture heavy rain better while deterministic models score higher pixel-wise.
+abstract: Accurate precipitation estimation at fine spatial scales is critical for hydrology, agriculture,
+  and climate studies. Infrared brightness temperatures from geostationary satellites offer excellent
+  temporal coverage over continental-scale domains. However, because these measurements primarily characterize
+  cloud-top properties rather than precipitation processes near the surface, their correlation with rainfall
+  intensity remains limited, making quantitative precipitation estimation challenging. In this study,
+  we conduct a systematic inter-comparison of state-of-the-art deep learning models for high-resolution
+  precipitation retrieval from Meteosat Second Generation infrared brightness temperatures over metropolitan
+  France. These models include deterministic U-Nets, transformer-based architectures, conditional GANs,
+  and diffusion models. We construct a curated dataset spanning 2008--2023, combining M{é}t{é}o-France
+  radar mosaics as reference with multi-channel infrared observations, and design preprocessing and sampling
+  strategies to address the heavy-tailed, intermittent nature of rainfall. Our results show that deterministic
+  models provide robust mean estimates and excel in pixel-wise accuracy, but systematically underestimate
+  extreme precipitation. In contrast, generative models better capture the full precipitation distribution,
+  including rare and heavy rainfall events, producing more realistic spatial structures at the cost of
+  reduced pixel-wise fidelity. These results highlight a trade-off between pixel-wise accuracy and precipitation
+  variability, showing that generative approaches are advantageous for extreme-event detection and probabilistic
+  applications. This work establishes a reproducible framework for evaluating infrared- based precipitation
+  retrieval methods and provides guidance for designing models that balance precision, variability, and
+  extreme-event representation.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

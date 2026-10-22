@@ -1,0 +1,49 @@
+id: arxiv-2609.02566
+title: Online Reinforcement Learning in the Met Office Unified Model through Distributed Model-Agent Coupling
+authors:
+- Pritthijit Nath
+- Sebastian Schemm
+- Peter Haynes
+- Emily Shuckburgh
+- Mark Webb
+date: '2026-09-02'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.02566'
+links:
+  paper: https://arxiv.org/abs/2609.02566
+  pdf: https://arxiv.org/pdf/2609.02566
+topic: hybrid-parameterization
+topics:
+- post-processing
+type: model
+method:
+- reinforcement-learning
+timescale:
+- short
+spatial:
+- global
+data:
+- nwp-analysis
+status: pre-operational
+summary: Couples the Met Office Unified Model with DDPG reinforcement-learning agents applying bounded
+  corrections, cutting Z500 MAE by 2.85% at +6 h.
+abstract: Machine-learnt corrections can complement numerical weather prediction provided that they operate
+  stably within an evolving numerical model. In this study, we couple the Met Office (UKMO) Unified Model
+  (UM) with distributed reinforcement-learning agents through rank-local tensors. A column-aware deep
+  deterministic policy gradient (DDPG) actor uses local vertical structure together with full-column context
+  to apply bounded corrections to potential temperature and horizontal wind. During training, we perform
+  ten nudged 6-hr 12-min forecasts, with nudging towards the UKMO operational analysis providing an immediate
+  counterfactual target from which the policy learns. The resulting actor is then frozen and applied to
+  a non-nudged forecast without access to analysis inputs or further weight updates. Relative to a matched
+  non-nudged native forecast at +6 h, the corrected forecast reduces global latitude-weighted MAE by 2.85%
+  for $Z_{500}$, 2.16% for MSLP, 5.16% for $T_{500}$ and 2.27% for $T_{1.5\textrm{m}}$, with an observed
+  3.57% wall-time overhead compared to native execution. Even though training and inference share the
+  same initialisation, this single-case experiment demonstrates significant promise and feasibility, laying
+  the groundwork for RL-based bias correction and parametrisations within operational systems.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

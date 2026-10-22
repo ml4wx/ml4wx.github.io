@@ -1,0 +1,61 @@
+id: doi-10.3390-atmos17090856
+title: A Spatiotemporal XGBoost Framework for Segment-Level Lightning Nowcasting Along a High-Speed Railway
+  Corridor
+authors:
+- Zhoulong Wang
+- Guiting Song
+- 陶彦岑
+- Wenjie Chen
+- Songtai Wu
+- Jiahua Li
+- Xing Yu
+date: '2026-08-31'
+year: 2026
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos17090856
+  openalex: W7204906453
+links:
+  paper: https://doi.org/10.3390/atmos17090856
+topic: nowcasting
+topics:
+- extremes-hazards
+- applications-impacts
+type: application
+method:
+- classical-ml
+timescale:
+- nowcast
+- short
+spatial:
+- regional
+- local
+data:
+- era5
+- nwp-analysis
+- stations
+status: pre-operational
+summary: XGBoost next-hour lightning warnings for six high-speed railway segments reach CSI 0.36 at grid
+  and 0.43 at segment level, and forecast-driven HRES inputs keep skill.
+abstract: Lightning poses localized risks to signaling, communication, and traction-power systems along
+  high-speed railways, yet most nowcasting products are generated on regular grids rather than operational
+  line segments. This study developed a grid-to-segment machine-learning framework for next-hour lightning
+  warning along the Jinan West–Tai’an corridor. Ground-based lightning observations, hourly ERA5 fields,
+  temporal variables, and engineered historical lightning features and spatial-neighborhood features were
+  organized on a 0.25° grid. Data from 2014 to 2018 were used for training, 2019 for validation, and 2020
+  for independent testing. Grid probabilities were converted into warnings for six railway segments using
+  10 km buffers and maximum-probability aggregation. In 2020, the full extreme gradient-boosting (XGBoost)
+  model, a tree-based ensemble-learning algorithm, achieved grid-level probability of detection (POD),
+  false-alarm ratio (FAR), and critical success index (CSI) values of 0.55, 0.50, and 0.36; segment-level
+  verification yielded 0.60, 0.39, and 0.43. To examine transfer to forecast-driven application, the trained
+  model and threshold were fixed, and ERA5 meteorological inputs were replaced by short-lead ECMWF HRES
+  forecasts for July 2025. POD decreased from 0.85 to 0.80 and CSI from 0.60 to 0.57, while FAR remained
+  nearly unchanged. Under a predefined non-zero rule, HRES litota1 achieved 0.62, 0.71, and 0.25. ML-HRES
+  therefore showed higher CSI and lower FAR than the direct litota1 baseline.
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

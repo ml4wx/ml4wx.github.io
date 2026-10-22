@@ -1,0 +1,59 @@
+id: doi-10.1016-j.physa.2026.131997
+title: Should physical models be replaced by machine learning? A physics-corrected probabilistic forecasting
+  framework
+authors:
+- Tianlin Yang
+- Hailiang Du
+- Louis J. M. Aslett
+- Leonard A. Smith
+date: '2026-09-04'
+year: 2026
+venue: Physica A Statistical Mechanics and its Applications
+venue_type: journal
+ids:
+  doi: 10.1016/j.physa.2026.131997
+  openalex: W7128585706
+links:
+  paper: https://doi.org/10.1016/j.physa.2026.131997
+  pdf: https://www.sciencedirect.com/science/article/pii/S0378437126007338/pdf
+topic: post-processing
+type: model
+method:
+- other
+- physics-constrained
+timescale:
+- short
+data:
+- other
+status: research
+summary: Mixture density network probabilistically corrects imperfect physical-model forecasts of Lorenz63,
+  using kernel-dressed ensembles; the NWP link is motivational and the test system is a toy.
+abstract: 'Recent advances in machine learning have led to claims that purely data-driven models can outperform
+  traditional physical models for forecasting complex dynamical systems. This tension is especially evident
+  in numerical weather prediction, where both physically derived models and deep learning methods are
+  actively employed. This raises a fundamental question: Does the available data contain sufficient information
+  for an empirical model to outperform a simulation model? If so, what are the broader implications? Should
+  physical models be replaced entirely? The question is addressed by first constructing a controlled system–model
+  environment based on the classic Lorenz63 system. A physics-corrected methodology is introduced, in
+  which a data-driven model is trained to probabilistically correct the systematic errors in the output
+  of an imperfect physical model, allowing the two components to complement each other. Rather than imposing
+  governing-equation constraints directly within the learning process, the proposed methodology treats
+  the output of an imperfect physical model as a fallible forecast component to be corrected using observational
+  data. Moreover, it differs from conventional residual-correction approaches by formulating the correction
+  itself probabilistically: instead of learning a single pointwise adjustment, a Mixture Density Network
+  is used to learn the conditional distribution of the physical-model forecast error. Physical-model ensembles
+  are likewise represented probabilistically through kernel dressing, allowing all forecasting approaches
+  to be evaluated within a common probabilistic framework. Extensive experiments are conducted under a
+  range of conditions, including varying observational noise levels, degrees of physical model imperfection,
+  and forecast lead times. Evaluation based on probabilistic forecasting metrics shows that physics-corrected
+  models outperform the standalone physical and purely data-driven models across most experimental settings,
+  with the magnitude of improvement varying across different settings. The results underscore the broader
+  value of integrating physical and data-driven perspectives, suggesting a general modeling paradigm for
+  building robust, interpretable, and uncertainty-aware forecasting systems across a wide range of complex
+  dynamical processes.'
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

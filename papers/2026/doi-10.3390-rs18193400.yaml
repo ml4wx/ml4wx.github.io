@@ -1,0 +1,61 @@
+id: doi-10.3390-rs18193400
+title: 'An End-to-End Deep Learning Approach for High-Accuracy Brightness Temperature Calibration of Satellite
+  Microwave Sounders: A Case Study of the FY-3F MWTS-III'
+authors:
+- Jinjiang Chen
+- Tingji Wang
+- Hao Li
+- Yinan Li
+- 胡菊旸
+- Wenxin Chen
+date: '2026-10-03'
+year: 2026
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs18193400
+  openalex: W7220372937
+links:
+  paper: https://doi.org/10.3390/rs18193400
+orgs:
+- cma
+topic: observations-remote-sensing
+type: model
+method:
+- other
+spatial:
+- global
+data:
+- satellite
+- era5
+status: research
+summary: An end-to-end MLP recalibrates FY-3F MWTS-III brightness temperatures against ERA5-based simulated
+  references, reducing scan- and latitude-dependent biases relative to operational calibration.
+abstract: High-accuracy brightness temperature calibration of spaceborne microwave radiometers is fundamental
+  to quantitative remote sensing. Radiometric calibration is jointly affected by factors such as the instrument
+  thermal state, calibration reference responses, and scan geometry. Characterizing the nonlinear coupling
+  among these factors and improving brightness temperature calibration within the existing operational
+  calibration framework therefore remain topics requiring further investigation. This study proposes an
+  end-to-end deep learning calibration method for the Microwave Temperature Sounder-III (MWTS-III) onboard
+  Fengyun-3F (FY-3F), driven by actual instrument observations and supervised using simulated brightness
+  temperatures (BTs) as references. The method employs a multilayer perceptron (MLP) that jointly uses
+  multichannel raw Earth-view counts, warm-minus-cold calibration reference counts, instrument temperatures,
+  and scan angles to estimate BTs for individual channels. The training labels are generated using the
+  Advanced Radiative Transfer Modeling System (ARMS) with the fifth-generation reanalysis from the European
+  Centre for Medium-Range Weather Forecasts (ERA5). Evaluation using independent on-orbit data shows that,
+  compared with operationally calibrated BTs, the model-predicted BTs agree more closely with the simulated
+  references, with reduced scan-dependent differences in all target channels and reduced latitude-dependent
+  differences in most channels. Ablation experiments using ascending-orbit data demonstrate that cross-channel
+  information further improves agreement between the model outputs and the simulated references. Comparisons
+  based on simultaneous nadir overpasses (SNOs) with the Advanced Technology Microwave Sounder (ATMS)
+  onboard NOAA-20 indicate improved intersatellite consistency of the model-predicted BTs in some channels.
+  Within the validated range of scenes and instrument states, the method can reduce reliance on contemporaneous
+  background data and pixel-by-pixel forward calculations during BT generation. It provides a complementary
+  approach for parallel quality assessment of operational BTs and a basis for future research on historical
+  observation reprocessing and near-real-time auxiliary calibration.
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

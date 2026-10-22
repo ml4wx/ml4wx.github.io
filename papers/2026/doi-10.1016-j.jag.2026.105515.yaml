@@ -1,0 +1,61 @@
+id: doi-10.1016-j.jag.2026.105515
+title: Reducing grid artifacts in air temperature downscaling with a Volume-Preserving interpolation preprocessing
+  step
+authors:
+- Zitong Wen
+- Lu Zhuo
+- Jiao Wang
+- Ahmed Abdelhalim
+- Ming Feng Zhong
+- Dawei Han
+date: '2026-08-06'
+year: 2026
+venue: International Journal of Applied Earth Observation and Geoinformation
+venue_type: journal
+ids:
+  doi: 10.1016/j.jag.2026.105515
+  openalex: W7196963414
+links:
+  paper: https://doi.org/10.1016/j.jag.2026.105515
+topic: downscaling
+topics:
+- observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- local
+data:
+- era5
+- satellite
+- radar
+- stations
+status: research
+summary: Volume-preserving pycnophylactic interpolation of ERA5-Land before ML downscaling removes grid
+  artifacts in hourly 1 km London air temperatures across five algorithms.
+abstract: Statistical downscaling, including machine learning based downscaling, is widely used to produce
+  high spatiotemporal resolution air temperatures for monitoring extreme heat events. However, coarse
+  baseline data often exhibit sharp discontinuities at grid boundaries, which propagate into downscaled
+  outputs as unnatural artifacts and spatial discretization errors. These discontinuities arise from the
+  aggregation of complex terrain, land cover, and atmospheric variability within large grid cells. To
+  address this while aligning with the central assumption of statistical downscaling that a coarse baseline
+  represents the average of all underlying fine cells, we innovatively apply volume-preserving pycnophylactic
+  interpolation as a preprocessing step prior to downscaling. Specifically, we first apply pycnophylactic
+  interpolation to ERA5-Land 2-m temperature baselines and then downscaled them to generate hourly 1-km
+  air temperatures for London in the summer of 2022. The downscaling incorporated data from satellite
+  products, reanalysis datasets, weather radar, and crowdsourced stations. Five widely used machine learning
+  based downscaling algorithms were adopted to evaluate the general applicability of our proposed approach.
+  To assess the performance of our method, we further applied three representative mean-bias-corrected
+  point interpolation techniques as alternative preprocessing schemes for comparison. Furthermore, to
+  improve preprocessing efficiency, we developed a Gaussian filtering variant of pycnophylactic interpolation
+  and compared it with the conventional method. The results show that, across all downscaling models,
+  our approach could improve the spatial quality of the downscaled outputs while respecting the core downscaling
+  assumption, and it can also enhance accuracy to a certain extent. Moreover, the proposed Gaussian filtering
+  variant reduces computational time by 36.8 % compared with conventional pycnophylactic interpolation,
+  providing an efficient and scalable trade-off for large-scale workflows.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

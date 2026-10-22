@@ -1,0 +1,52 @@
+id: arxiv-2608.25823
+title: Learning Continuous Regional Temperature Fields with Lead-Time and Resolution Queries
+authors:
+- Chunlei Shi
+- Jiong Wang
+- Yi-Lin Wei
+- Junming Hou
+- Jinjin Liu
+- Yecheng Zhang
+- Dan Niu
+date: '2026-08-26'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2608.25823'
+links:
+  paper: https://arxiv.org/abs/2608.25823
+  pdf: https://arxiv.org/pdf/2608.25823
+topic: regional-km-scale
+type: model
+method:
+- other
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: CSTF, a neural field, evaluates 2-m temperature at any lead time and resolution, cutting regional
+  forecast bias by 17.0% on a Southeast China benchmark.
+abstract: Accurate regional near-surface temperature forecasting is fundamental to short-range weather
+  services and downstream risk assessment. Existing deep learning-based regional forecasters commonly
+  produce a fixed set of future frames on a prescribed grid, limiting their use when forecast products
+  must be evaluated at query-dependent lead times or display resolutions. To overcome these fixed-output
+  constraints, we formulate regional T2M forecasting as query-conditioned continuous spatiotemporal temperature
+  field evaluation and propose the Continuous Spatiotemporal Temperature Forecaster (CSTF), a neural field
+  that turns forecast lead time and output resolution into explicit queries when evaluating 2-m temperature
+  (T2M). Specifically, CSTF first encodes multivariable ERA5 histories into latent meteorological states
+  and then decodes T2M as a coordinate-based field. Accordingly, spatial location, forecast lead time,
+  and output resolution are introduced as queries, enabling standard hourly forecasts, intermediate lead-time
+  diagnostics, and resolution-controllable outputs within a unified field-evaluation framework. Furthermore,
+  to maintain coherence across flexible field queries, we design spatial-gradient, temporal-difference,
+  and scale-consistency objectives that regularize regional thermal structures, lead-wise evolution, and
+  cross-resolution agreement. Experiments on the Southeast China 0-6 h ERA5-Land benchmark demonstrate
+  that CSTF achieves the best aggregate deterministic skill, including a 17.0 percent reduction in Bias,
+  with global-scope diagnostics further illustrating flexible lead-time and resolution-controllable inference.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

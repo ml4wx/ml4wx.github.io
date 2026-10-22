@@ -1,0 +1,63 @@
+id: doi-10.3389-fspas.2026.1892441
+title: Deep learning for multi-step forecasting of stratospheric wind and temperature profiles over the
+  Tibetan plateau
+authors:
+- Xuechao Zhang
+- Zonghua Ding
+- ShuJi Sun
+- Xiaobin Wang
+- Song Yang
+- Liandong Dai
+- Zhimei Tang
+- Tianfei Zhou
+date: '2026-08-04'
+year: 2026
+venue: Frontiers in Astronomy and Space Sciences
+venue_type: journal
+ids:
+  doi: 10.3389/fspas.2026.1892441
+  openalex: W7172437870
+links:
+  paper: https://doi.org/10.3389/fspas.2026.1892441
+  pdf: https://www.frontiersin.org/journals/astronomy-and-space-sciences/articles/10.3389/fspas.2026.1892441/pdf
+topic: local-forecasting
+topics:
+- regional-km-scale
+type: model
+method:
+- other
+timescale:
+- short
+spatial:
+- local
+- regional
+data:
+- era5
+status: research
+summary: MTPV-HDRNet forecasts ERA5 wind and temperature profiles at 11 stratospheric levels over the
+  Tibetan Plateau for 24 h, cutting wind RMSE about 11–12% versus ConvLSTM.
+abstract: Accurate prediction of stratospheric wind and temperature profiles is essential for understanding
+  regional atmospheric dynamics over the complex terrain of the Tibetan Plateau. However, conventional
+  numerical weather prediction models are computationally expensive, while statistical time-series models
+  are limited in capturing the nonlinear evolution of atmospheric variables across both temporal and vertical
+  dimensions. To address these limitations, MTPV-HDRNet is proposed as a fixed-site, multi-level intelligent
+  forecasting model driven by ECMWF ERA5 pressure-level reanalysis data, with the fixed site defined as
+  a selected ERA5 grid cell rather than an observational station. MTPV-HDRNet jointly predicts zonal wind
+  (U), meridional wind (V), and temperature (T) for the next 24 h across 11 ERA5 pressure levels from
+  100 to 1 hPa, which correspond to heights of approximately 16–48 km. The model adopts a hybrid encoder–decoder
+  architecture that explicitly represents temporal evolution and vertical stratification in a decoupled
+  but complementary manner, thereby enhancing its ability to capture multi-lead-time profile evolution
+  and cross-level dependencies. The model was trained using ERA5 data from 2016 to 2022, validated using
+  data from 2023, and independently tested using data from 2024 at the fixed site in the central Tibetan
+  Plateau. Results demonstrate that MTPV-HDRNet consistently outperforms the baseline models at all forecast
+  lead times. On the 2024 test set, the mean RMSEs are 3.48 m s − 1 for U wind, 3.54 m s − 1 for V wind,
+  and 1.62 K for temperature. Compared with the strongest baseline, ConvLSTM, MTPV-HDRNet reduces the
+  RMSE by 11.9%, 11.3%, and 7.4% for U wind, V wind, and temperature, respectively. The model also maintains
+  strong correlation performance at longer lead times, demonstrating its robustness in fixed-site atmospheric
+  profile forecasting over complex terrain.
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

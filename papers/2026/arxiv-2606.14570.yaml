@@ -1,0 +1,61 @@
+id: arxiv-2606.14570
+title: 'Regional Climate Model Emulation with Diffusion Approaches: What is the Added Value of Generative
+  Machine Learning?'
+authors:
+- Mikel N. Legasa
+- Antoine Doury
+- Achille Gellens
+- Redouane Lguensat
+- Clara Naldesi
+- Soulivanh Thao
+- Mathieu Vrac
+date: '2026-06-12'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.14570'
+  openalex: W7164838654
+links:
+  paper: https://arxiv.org/abs/2606.14570
+  pdf: https://arxiv.org/pdf/2606.14570
+topic: downscaling
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+- cnn
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+- km-scale-sim
+status: research
+summary: ParamDiffusion and a benchmark diffusion emulator generate precipitation fields from GCM predictors
+  that match RCM tails, but neither captures the most extreme RCM events within its uncertainty envelope.
+abstract: 'Emulators provide a cost-effective alternative to regional climate models (RCMs) by capturing
+  their dynamical downscaling function. They link large-scale predictors simulated by global climate models
+  (GCMs) to RCM-simulated high-resolution fields of the target variable, here precipitation. Machine learning
+  methods, typically deep learning, are cheaper than running RCMs in computation time and energy. Among
+  them, generative models are appealing because they can simulate ensembles of local high-resolution fields
+  consistent with the predictors. This ensemble, which we call the uncertainty envelope, remains to be
+  properly assessed for added value. Here, we make three contributions. First, we introduce ParamDiffusion,
+  a new two-stage diffusion-based framework, and compare it with a state-of-the-art diffusion approach.
+  Second, we expand standard validation through a comprehensive framework aligned with climate-science
+  needs, examining specific precipitation events, including extremes. Third, within this framework, we
+  assess the added value of diffusion approaches relative to deterministic methods. We intercompare four
+  deep-learning models: a deterministic model designed to capture the precipitation tail; a parametric
+  probabilistic model based on it; a recently proposed diffusion approach; and ParamDiffusion, which couples
+  the parametric model with a diffusion model. Our results show that diffusion-based approaches reproduce
+  climatological precipitation statistics with high skill, including distributional tails and spatially
+  compounded extremes, while generating spatially detailed fields. However, none of the assessed models
+  consistently accounts for the most extreme RCM-simulated events within its uncertainty envelope. Diffusion
+  models are therefore promising for probabilistic RCM emulation, but progress is still required before
+  they can reliably represent high-impact precipitation extremes.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

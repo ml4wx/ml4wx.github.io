@@ -1,0 +1,59 @@
+id: doi-10.3390-environments13080443
+title: Deep Learning Models for Quantitative Precipitation Estimation Based on Weather-Radar and Rain-Gauge
+  Datasets
+authors:
+- Matteo Passeri
+- Fabrizio Argenti
+- Daniele Baracchi
+- Dasara Shullani
+- Alessio Biondi
+- Fabrizio Cuccoli
+- Luca Facheris
+- Luciano Alparone
+date: '2026-08-06'
+year: 2026
+venue: Environments
+venue_type: journal
+ids:
+  doi: 10.3390/environments13080443
+  openalex: W7196962945
+links:
+  paper: https://doi.org/10.3390/environments13080443
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- radar
+- stations
+status: research
+summary: A space-time U-Net trained on radar and rain-gauge data cuts negative rainfall bias by more than
+  half and doubles gauge correlation for a Tuscany convective event.
+abstract: 'Quantitative precipitation estimation (QPE) is a fundamental task of hydrometeorological applications,
+  ranging from flash-flood detection to water-resource management. While weather radars offer superior
+  spatial coverage compared with rain gauges, traditional estimation based on the empirical Z−R (reflectivity
+  factor vs. rainfall rate) relationship fails to capture spatial variability and tends to underestimate
+  extreme rainfall. The idea pursued here is to learn the radar-to-rainfall mapping by means of a convolutional
+  neural network (CNN) trained on co-located radar and rain-gauge data; thus, once trained, the network
+  can convert radar reflectivity measures into rainfall values, even where gauges are unavailable. Although
+  machine learning techniques are promising for this task, they typically demand large training sets.
+  To operate in a limited-data regime, we introduce a U-Net architecture that separates the analysis of
+  space from that of time: each block first looks at the structure of the reflectivity field and then
+  at how it changes over consecutive radar scans, extracting spatiotemporal features from volumetric data
+  with fewer parameters than a full three-dimensional filter. The model is evaluated on a severe convective
+  event that affected Tuscany, Italy, on 2 November 2023, benchmarking its performance against the classical
+  Joss–Waldvogel Z−R relationship (suitable for convective events), a data-driven log-regression of weather-radar
+  and rain-gauge data, and a baseline CNN architecture. The main advantages are negative bias—i.e., underestimation
+  of rainfall—more than halved and correlation with rain-gauge measures more than doubled, under the same
+  operational conditions. What is noteworthy is the capability of learning the model from radar and rainfall
+  data taken in different times and places, as well as the possibility of converting a reflectivity map
+  into a rainfall map without the need for simultaneous rain-gauge measures. This is an asset of fixed
+  parametric methods; however, they are far less accurate.'
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,54 @@
+id: doi-10.5194-egusphere-2026-1735
+title: 'Machine learning based radiation emulation: development and performance evaluation in operational
+  reforecast experiments'
+authors:
+- Hao Jing
+- Sa Xiao
+- Haoyu Li
+- Huadong Xiao
+- XUE Wei
+date: '2026-08-07'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.5194/egusphere-2026-1735
+  openalex: W7196954857
+links:
+  paper: https://doi.org/10.5194/egusphere-2026-1735
+  pdf: https://egusphere.copernicus.org/preprints/2026/egusphere-2026-1735/egusphere-2026-1735.pdf
+orgs:
+- tsinghua-university
+- cma
+topic: hybrid-parameterization
+type: model
+method:
+- cnn
+timescale:
+- medium
+spatial:
+- global
+data:
+- other
+status: pre-operational
+summary: A residual CNN emulates the RRTMG radiation scheme in CMA's operational system, giving about
+  8x speed-up with accuracy comparable to physics in 10-day reforecasts.
+abstract: 'Abstract. Radiation is typically the most time-consuming physical process in numerical models.
+  One solution is to use machine learning methods to simulate the radiation process to improve computational
+  efficiency. From a practical application standpoint, this study investigates the key issues for hybrid
+  modelling: coupling compatibility and long-term integration stability. A residual convolutional neural
+  network is employed to approximate the Rapid Radiative Transfer Model for General Circulation Models
+  (RRTMG) within the global operational system of China Meteorological Administration. We adopted an offline
+  training and online coupling approach. First, a comprehensive dataset is generated through model simulations,
+  encompassing all atmospheric columns. To ensure the stability of the hybrid model, the dataset is enhanced
+  via experience replay, and additional output constraints based on physical significance are imposed.
+  Meanwhile, a LibTorch-based coupling method is utilized, which is more suitable for real-time operational
+  computations. The hybrid model is capable of performing ten-day integrated forecasts as required. A
+  two-month operational reforecast experiment demonstrates that the machine learning emulator achieves
+  accuracy comparable to that of the traditional physical scheme, while accelerating the computation speed
+  by approximately eightfold.'
+significance: 4
+cited_by: 0
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

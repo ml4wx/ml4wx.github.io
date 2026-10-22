@@ -1,0 +1,58 @@
+id: arxiv-2605.22248
+title: 'No Epoch Like the Present: Robust Climate Emulation Requires Out-of-Distribution Generalisation'
+authors:
+- Bradley Stanley-Clamp
+- Anson Lei
+- Hannah M. Christensen
+- Ingmar Posner
+date: '2026-05-21'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.22248'
+  openalex: W7162073958
+links:
+  paper: https://arxiv.org/abs/2605.22248
+  pdf: https://arxiv.org/pdf/2605.22248
+orgs:
+- noaa
+- university-of-oxford
+topic: climate-emulation
+topics:
+- xai-uq-physics
+type: evaluation
+method:
+- physics-constrained
+- other
+timescale:
+- climate
+spatial:
+- global
+data:
+- era5
+- cmip
+status: research
+summary: Shows hybrid-ML climate emulators degrade under seasonal distribution shifts and proposes compositional,
+  physically motivated decompositions to improve out-of-distribution robustness.
+abstract: Climate emulation is an out-of-distribution (OOD) projection task. This is precisely the challenge
+  where modern Machine Learning (ML) methods are most prone to failure. Consequently, while current ML
+  emulators trained on present climate achieve high in-distribution performance, their future reliability
+  under the inevitable distribution shifts of a changing climate remains a critical, poorly understood
+  blind spot. Addressing this challenge requires a fundamental shift in how we understand, evaluate, and
+  design climate emulators. In this work, we first confirm that climate change drives a statistically
+  significant and progressively growing shift in atmospheric state distributions, rendering standard evaluation
+  protocols insufficient. We empirically establish that seasonal variation serves as an effective proxy
+  for these long-term climate shifts, providing access to $\textit{real-world}$ distribution shifts without
+  recourse to heuristics like synthetic perturbations. Motivated by this link, we introduce a novel evaluation
+  framework that leverages seasonal shifts as a rigorous, zero-overhead testbed for emulator robustness.
+  Our systematic characterisation confirms that current state-of-the-art hybrid-ML emulators degrade significantly
+  under these realistic shifts. Finally, we chart a path forward by identifying compositional generalisation,
+  the ability to form novel combinations from observed elementary components, as a principled route towards
+  robust climate emulation. We demonstrate that physically motivated decompositions substantially improve
+  OOD performance with only modest trade-offs against in-distribution performance, providing an avenue
+  towards ML-driven climate emulators robust to an unknown future.
+significance: 4
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

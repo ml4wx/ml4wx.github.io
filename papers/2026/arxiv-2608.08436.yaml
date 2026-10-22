@@ -1,0 +1,54 @@
+id: arxiv-2608.08436
+title: 'FreCast: Refining Radar Echo Intensity via Phase-Preserving Amplitude Residual Diffusion for Precipitation
+  Nowcasting'
+authors:
+- Heping Fang
+- Zihuai Yin
+- Kaicheng Mao
+- Peiguang Zhang
+- Peng Yang
+date: '2026-08-09'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2608.08436'
+  openalex: W7202187630
+links:
+  paper: https://arxiv.org/abs/2608.08436
+  pdf: https://arxiv.org/pdf/2608.08436
+topic: nowcasting
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Two-stage diffusion refines radar echo intensity using predicted precipitation structure, improving
+  nowcasting skill across three radar datasets.
+abstract: Precipitation nowcasting predicts the spatiotemporal evolution of future radar echoes from historical
+  radar echo sequences, thereby estimating the occurrence, development, and movement of precipitation
+  over the near term. In recent years, deep learning has become an important approach to precipitation
+  nowcasting. Although state-of-the-art models can generally capture the overall spatial distribution
+  of future precipitation, their predictions still exhibit substantial biases in radar echo intensity
+  at individual locations. This observation motivates a more targeted strategy for reducing forecast errors.
+  Instead of regenerating an entire radar echo sequence without spatial constraints, the predicted precipitation
+  structure can be used to guide the refinement of echo intensities at individual locations. This structure-guided
+  refinement directly targets echo intensity biases. Accordingly, we propose FreCast, a two-stage framework
+  for radar echo prediction. The first stage generates an initial forecast of future radar echoes. The
+  second stage uses the spatial structure of the initial forecast as a constraint to further correct intensity
+  biases at individual locations in the first-stage prediction. Experiments on three datasets demonstrate
+  that FreCast achieves consistent improvements across forecast skill metrics. Qualitative results further
+  show that FreCast better preserves rainband continuity and intense precipitation structures at longer
+  lead times.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

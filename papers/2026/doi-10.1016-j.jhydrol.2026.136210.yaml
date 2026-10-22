@@ -1,0 +1,57 @@
+id: doi-10.1016-j.jhydrol.2026.136210
+title: Deep learning-based precipitation nowcasting integrating radar echoes and rain gauge data
+authors:
+- Leijing Li
+- Jianzhu Li
+- Yongtao Wang
+- Shang Chongju
+- Zhixia Li
+- Jin Liu
+date: '2026-08-09'
+year: 2026
+venue: Journal of Hydrology
+venue_type: journal
+ids:
+  doi: 10.1016/j.jhydrol.2026.136210
+  openalex: W7202043552
+links:
+  paper: https://doi.org/10.1016/j.jhydrol.2026.136210
+topic: nowcasting
+type: model
+method:
+- cnn
+- rnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- stations
+status: research
+summary: SAAR-UNet and RST-RainNet fuse radar echoes with rain-gauge priors, improving one- and two-hour
+  rainfall nowcasts in a Chinese watershed.
+abstract: For flood protection and disaster mitigation, reliable and accurate short-term heavy rainfall
+  forecasts are essential. Yet precipitation nowcasting is a very difficult task due to the great temporal
+  and spatial variability of precipitation at small spatial scales. To improve precipitation nowcasting
+  accuracy, a radar echo extrapolation model (SAAR-UNet) and quantitative precipitation estimation model
+  (RST-RainNet) were developed. By using an ASPP module, residual convolution, and a spatial attention
+  mechanism, the SAAR-UNet greatly improved the extrapolation ability for the variation of strong echoes.
+  Based on the extrapolated echoes, RST-RainNet employs a dual-branch framework that combines radar echo
+  sequences with gauge-constrained QPE priors and performs residual-aware fusion for precipitation nowcasting.
+  Extensive comparative experiments against attention-based and convolutional U-Net variants showed that
+  SAAR-UNet achieved the most robust performance for strong echo extrapolation. For precipitation nowcasting,
+  RST-RainNet was evaluated against optimized Z-R relationships, machine-learning models (MLP, RF, and
+  XGBoost), and radar-only single-branch deep-learning baselines (UNet-ConvLSTM and UNet-Transformer).
+  Across two independent storm events within the Liulin watershed, RST-RainNet consistently achieved the
+  highest correlation coefficients and the lowest overall errors at both the one-hour and two-hour lead
+  times, while more faithfully reproducing the temporal evolution and spatial structure of rainfall. The
+  results indicate that combining radar echoes with gauge-constrained physically guided priors and residual
+  correction can improve precipitation nowcasting accuracy and event-level robustness within the study
+  watershed.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,58 @@
+id: arxiv-2607.27152
+title: Skillful forecasting of offshore winds from satellite scatterometer constellations
+authors:
+- Francesco Pinto
+- Luca Lanzilao
+- Paco Lopez Dekker
+- Angela Meyer
+date: '2026-07-29'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2607.27152'
+links:
+  paper: https://arxiv.org/abs/2607.27152
+  pdf: https://arxiv.org/pdf/2607.27152
+topic: nowcasting
+topics:
+- observations-remote-sensing
+- applications-impacts
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- nowcast
+- short
+spatial:
+- regional
+data:
+- satellite
+- nwp-analysis
+status: research
+summary: WindCastNet, a partial-convolution ConvLSTM, forecasts North Sea winds from irregular scatterometer
+  observations, cutting 1 h RMSE 23% versus HARMONIE MEPS.
+abstract: Accurate intraday forecasts of offshore wind are becoming increasingly important for power system
+  operation and the integration of growing shares of offshore wind energy. Operational forecasts rely
+  predominantly on numerical weather prediction (NWP), which is not optimized for lead times of minutes
+  to hours, where initial-condition accuracy dominates forecast skill. Although satellite scatterometer
+  observations are routinely assimilated into NWP, they have not previously been used directly for forecasting.
+  Here we present WindCastNet, the first satellite-based nowcasting framework for offshore wind speed
+  and direction, introducing a new paradigm for intraday forecasting that learns from spatiotemporally
+  irregular satellite observations. WindCastNet predicts offshore wind fields from observations acquired
+  by satellite scatterometer constellations. WindCastNet employs a partial convolutional long short-term
+  memory network that exploits microwave radar observations from the European, Chinese, and Indian scatterometers
+  despite their irregular spatial coverage, asynchronous sampling, and variable revisit times. Spatial
+  observation masks and inter-observation intervals are encoded, while a continuous temporal representation
+  enables forecasts at arbitrary lead times. Evaluated over the North Sea, WindCastNet reduces the root-mean-square
+  error by 23% and 7% relative to the HARMONIE MEPS model at lead times of 1 and 2 h, respectively, and
+  outperforms persistence by 9-15% during the first three forecast hours. Forecast skill decreases under
+  strong-wind conditions and spatially non-uniform flow. These results demonstrate that satellite scatterometer
+  constellations can provide an independent and competitive source of short-term offshore wind forecasts,
+  opening new opportunities for renewable energy forecasting but also broader marine weather applications,
+  including tropical cyclone nowcasting.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

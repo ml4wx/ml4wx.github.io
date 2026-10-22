@@ -1,0 +1,56 @@
+id: doi-10.3390-rs18203447
+title: Enhancing FY-3E/VASS Humidity Profiles During a Cloudy Atmospheric River Event Using Clear-Sky
+  FY-4B/GIIRS Guidance
+authors:
+- Hanzhen Yan
+- Jieying He
+- Yang Guo
+date: '2026-10-09'
+year: 2026
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs18203447
+  openalex: W7221159965
+links:
+  paper: https://doi.org/10.3390/rs18203447
+orgs:
+- cma
+topic: observations-remote-sensing
+topics:
+- extremes-hazards
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- era5
+status: research
+summary: A PCA and neural network transfers clear-sky FY-4B GIIRS corrections to cloudy FY-3E humidity
+  profiles, cutting 700-900 hPa RMSE by 20.8% during an atmospheric river.
+abstract: Atmospheric rivers (ARs) are characterized by high water vapor content and are frequently accompanied
+  by extensive cloud cover, creating a need for reliable humidity profiles under cloudy conditions. Fengyun-4B/Geostationary
+  Interferometric Infrared Sounder (FY-4B/GIIRS) products provide relatively accurate clear-sky humidity
+  profiles, whereas Fengyun-3E/Vertical Atmospheric Sounding System (FY-3E/VASS) products offer all-sky
+  coverage but retain appreciable humidity errors. This study develops a clear-sky FY-4B/GIIRS-guided
+  framework to enhance cloudy-sky FY-3E/VASS humidity profiles. Spatiotemporally collocated clear-sky
+  profiles are first used to construct humidity residuals, from which principal component analysis extracts
+  a low-dimensional residual basis. A neural network then predicts the corresponding coefficients to generate
+  a baseline correction. Target-day calibration and cloud-condition adjustment further adapt this clear-sky-derived
+  correction to cloudy-sky samples on the target day. The framework is evaluated against ERA5 reanalysis
+  for a preidentified AR event along the eastern coast of China on 6 July 2023, using cloudy-sky samples
+  from the 09:31–09:41 UTC FY-3E overpass. For all cloudy-sky samples from this overpass, the pressure-level-averaged
+  root mean square error (RMSE) decreases by 16.1% over 300–900 hPa and by 20.8% over 700–900 hPa. For
+  cloudy-sky samples in the high-moisture AR subset, the corresponding reductions are 19.7% and 26.6%,
+  respectively. The overlap between the high-moisture masks defined using integrated water vapor (IWV)
+  from FY-3E/VASS and ERA5 increases from 60.7% to 73.9%. The enhanced profiles therefore show improved
+  agreement with ERA5, particularly over 700–900 hPa, and better represent the high-moisture portion of
+  the examined AR event.
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

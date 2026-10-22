@@ -1,0 +1,54 @@
+id: arxiv-2605.13181
+title: Stable Attention Response for Reliable Precipitation Nowcasting
+authors:
+- Penghui Wen
+- Zexin Hu
+- Sen Zhang
+- Patrick Filippi
+- Xiaogang Zhu
+- Allen Benter
+- Thomas Bishop
+- Zhiyong Wang
+- Kun Hu
+date: '2026-05-13'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.13181'
+links:
+  paper: https://arxiv.org/abs/2605.13181
+  pdf: https://arxiv.org/pdf/2605.13181
+topic: nowcasting
+type: model
+method:
+- transformer
+- diffusion
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: HARECast regulates head-wise attention-response energy in diffusion-based nowcasters, achieving
+  state-of-the-art precipitation nowcasts on SEVIR and MeteoNet.
+abstract: Precipitation nowcasting remains challenging due to the highly localized, rapidly evolving,
+  and heterogeneous nature of atmospheric dynamics. Although recent methods increasingly adopt attention-based
+  architectures in both unimodal and multimodal settings, they mainly emphasize stronger representation
+  learning and prediction capacity, while paying less attention to the stability of attention responses
+  across samples. In this work, we show that cross-sample instability of attention-response energy is
+  an important and previously underexplored source of forecasting unreliability. Empirically, inaccurate
+  forecasts are associated with larger attention-response energy variance across heads and layers. Theoretically,
+  we show that cross-sample variability can propagate through self-attention, and enlarge a lower bound
+  on prediction error. Based on this insight, we propose HARECast, a Head-wise Attention Response Energy-regulated
+  framework for precipitation nowcasting. HARECast explicitly models head-wise attention-response energy
+  and stabilizes it through a group-wise regularization objective that reduces cross-sample fluctuations.
+  The proposed formulation is generic and applicable to both unimodal and multimodal nowcasting architectures.
+  We instantiate HARECast in a standard forecasting pipeline with reconstruction branches and a diffusion-based
+  predictor, and evaluate it on commonly used benchmarks--SEVIR and MeteoNet. Experimental results demonstrate
+  that HARECast achieves state-of-the-art performance.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

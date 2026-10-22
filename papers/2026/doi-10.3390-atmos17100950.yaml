@@ -1,0 +1,54 @@
+id: doi-10.3390-atmos17100950
+title: 'Multi-Horizon Typhoon Wind Field Prediction via a Lightweight CNN–LSTM Network: Error Growth and
+  Cross-Year Robustness at 6–24 h Lead Times'
+authors:
+- Jun Liu
+- Jie Cui
+- Yongzhu Liu
+date: '2026-09-29'
+year: 2026
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos17100950
+  openalex: W7214704182
+links:
+  paper: https://doi.org/10.3390/atmos17100950
+orgs:
+- cma
+topic: extremes-hazards
+type: model
+method:
+- cnn
+- rnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Lightweight CNN-LSTM STL-Net predicts typhoon 10 m wind fields at 6–24 h lead, with RMSE 3.11–5.31
+  m/s on 2023 test storms.
+abstract: Short-term typhoon wind-field prediction across multiple lead times is challenging because forecast
+  error grows with lead time and inappropriate sample construction may leak future storm-position information.
+  We adopt STL-Net, a lightweight spatiotemporal framework integrating convolutional encoding, long short-term
+  memory (LSTM) temporal modeling, squeeze-and-excitation recalibration, and multi-branch fusion for 10
+  m wind-field prediction at 6, 12, and 24 h lead times. A fixed-t0 protocol anchors the target patch
+  at the initialization-time storm position, avoiding future best-track leakage. Trained in 2020–2021,
+  validated in 2022, and tested in 2023, STL-Net achieves a root mean square error (RMSE) of 3.11, 4.06,
+  and 5.31 m·s−1 at 6, 12, and 24 h. Among deep-learning baselines, U-Net achieves the lowest errors at
+  6 and 12 h and convolutional neural network (CNN) the lowest 24 h RMSE and mean absolute error (MAE),
+  while STL-Net remains competitive with 1.673 million parameters and low inference latency. Ten-seed
+  ablation identifies multi-resolution fusion as the most consistently beneficial component. An out-of-year
+  evaluation with 2020 as the test year reproduces the error-growth pattern, supporting cross-year robustness.
+  Models are deterministic without uncertainty quantification; error growth is deterministic, not calibrated
+  uncertainty. Diagnostic interpretation links the error structure to the multi-scale organization of
+  typhoon winds, storm translation, and wind-field asymmetry. Results constitute an offline proof-of-concept,
+  not an operational system.
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

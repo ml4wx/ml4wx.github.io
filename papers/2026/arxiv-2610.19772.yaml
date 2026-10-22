@@ -1,0 +1,50 @@
+id: arxiv-2610.19772
+title: 'Unmasking Compensating Errors in Numerical Weather Models: A Process-Additive Neural Network Approach'
+authors:
+- Yuiko Ichikawa
+- Edward Groot
+- Jack Atkinson
+date: '2026-10-14'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.19772'
+  openalex: W7222304110
+links:
+  paper: https://arxiv.org/abs/2610.19772
+  pdf: https://arxiv.org/pdf/2610.19772
+orgs:
+- noaa
+- university-of-oxford
+- university-of-cambridge
+topic: xai-uq-physics
+topics:
+- hybrid-parameterization
+type: model
+method:
+- physics-constrained
+spatial:
+- local
+data:
+- other
+status: research
+summary: Proposes a process-additive neural network that attributes compensating tendency errors to individual
+  physical processes in a single-column atmospheric model.
+abstract: This work introduces a Process Additive Neural Network (PANN) framework to disentangle compensating
+  biases in atmospheric models, where errors in different physical processes can offset each other and
+  obscure their origins. Using a single-column model, each PANN branch represents the tendency error associated
+  with a separate physical process, and the summed branch outputs approximate the total error relative
+  to a reference tendency. Once trained successfully, the branch outputs are expected to provide process-level
+  error attributions and, when averaged, estimates of process-level bias. Initial experiments focus on
+  cloud-related processes in OpenIFS SCM case studies, where cloud and convection tendencies are strongly
+  coupled and compensation is difficult to diagnose using standard approaches. The aim is not to replace
+  human interpretation of physical processes, but to extend it to regimes where model complexity, process
+  interaction, and compensating errors make direct diagnosis difficult. By providing a physically structured
+  form of machine-learning interpretability, PANN can help connect complex model behaviour with process-level
+  explanations. This work supports both improved understanding of compensating errors and the development
+  of more physically consistent weather and climate models.
+significance: 3
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

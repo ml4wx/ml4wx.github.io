@@ -1,0 +1,69 @@
+id: doi-10.71366-ijwos03082654990
+title: Weather forecasting using agentic ai
+authors:
+- Amandeep
+- Dharmander kumar
+- Jyoti
+- Nidhi
+- Ritu
+date: '2026-08-16'
+year: 2026
+venue: International Journal of Web of Multidisciplinary Studies
+venue_type: journal
+ids:
+  doi: 10.71366/ijwos03082654990
+  openalex: W7203826436
+links:
+  paper: https://doi.org/10.71366/ijwos03082654990
+  pdf: https://ijwos.com/ijwos-main/uploads/869565754990.pdf
+topic: llms-agents
+topics:
+- local-forecasting
+type: review
+method:
+- neural-operator
+- llm
+timescale:
+- short
+spatial:
+- local
+data:
+- era5
+- stations
+status: research
+summary: Reviews 35 agentic and deep-learning weather papers, then tests a lightweight AFNO model on single-station
+  24-hour surface weather series.
+abstract: 'Traditionally, weather forecasting has been achieved by numerical weather prediction (NWP)
+  systems built from physics-based models that numerically integrate the equations of motion for air on
+  a supercomputer, which are accurate but expensive to run, can be in error due to chaotic dynamics in
+  the atmosphere, and require a significant amount of computing power to make forecasts. In the last ten
+  years, two parallel developments have changed this landscape: firstly, data-driven deep-learning weather
+  models, like FourCastNet, Pangu-Weather, GraphCast, FengWu, FuXi, GenCast and Aurora, that learn atmospheric
+  behaviour directly from historical reanalysis data, and can reach or even surpass NWP accuracy with
+  much less computational cost, and secondly, agentic AI frameworks such as ReAct, AutoGPT, MetaGPT, AutoGen,
+  and Reflexion, that allow for autonomous planning, tool-use, self-verification, and multi-agent orchestration,
+  in the software-engineering and general-purpose task domains. The analysis of 35 papers within both
+  fields reveals no current approach that integrates autonomous, self-verifying, uncertainty-aware reasoning
+  with a short-term forecasting model that is driven by data. Agentic applications found in the weather
+  field are largely post-hoc interpretation, reporting and orchestration layers around externally provided
+  forecasts. Conceptually, this is inspired by FourCastNet, but in this paper we propose and evaluate
+  a lightweight Adaptive Fourier Neural Operator (AFNO) type forecasting model, which is derived from
+  a global gridded atmospheric dataset to a single-station, tabular multivariate time-series setting,
+  and provides an empirical basis for closing this gap. Using 24 hours of six continuous surface weather
+  variables (temperature, dew point temperature, relative humidity, wind speed, visibility and pressure)
+  as input, two stacked Fourier-domain temporal-mixing blocks with a 64-dimensional hidden representation,
+  residual connections and layer normalisation directly forecast the same six variables one hour ahead.
+  The model is trained and evaluated on 8,784 hourly single station observations with a chronological
+  split of 70/15/15 for the training, validation and test sets, respectively, yielding an overall test-set
+  MAE of 1.9138, MSE of 12.5279, RMSE of 3.5395 and R² of 0.8854; the best accuracy is achieved for pressure
+  (R² = 0.9921) and the lowest for visibility (R² = 0.7151). These findings, along with a qualitative
+  comparison to other models of weather forecasting and nowcasting that use global data, demonstrate the
+  effectiveness of Fourier-domain temporal mixing as a lightweight inductive bias for station-level, short-horizon
+  weather forecasting and provide an empirical benchmark for future investigations of integrating this
+  forecasting capability with an autonomous, self-verifying, uncertainty-aware agentic reasoning layer.'
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

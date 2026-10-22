@@ -1,0 +1,72 @@
+id: doi-10.3390-rs18152577
+title: 'Diagnosing and Conditionally Correcting X-Band Radar Underestimation in Cyprus: A Cross-Validated
+  Evaluation of Spatial Merging and Machine Learning Approaches'
+authors:
+- Harshad S. Hanmante
+- Avinash N. Parde
+- Christina Oikonomou
+- Haris Haralambous
+date: '2026-08-04'
+year: 2026
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs18152577
+  openalex: W7172412389
+links:
+  paper: https://doi.org/10.3390/rs18152577
+topic: observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- radar
+- stations
+status: research
+summary: Gauge-radar merging for Cyprus tests IDW and Random Forest corrections of X-band radar rainfall;
+  IDW cuts RMSE 40–53% for most events but mostly removes mean bias.
+abstract: 'Radar-based Quantitative Precipitation Estimation (QPE) in semi-arid Mediterranean climates
+  is critically challenged by systematic underestimation of shallow precipitation, yet gauge–radar merging
+  frameworks tailored to such environments remain poorly evaluated. This study develops and assesses a
+  merging pipeline for Cyprus, combining X-band polarimetric observations from the Paphos and Larnaca
+  operational radar network with accumulations from a 50-station rain gauge network across 11 rainfall
+  events spanning the 2024 wet season (January and November–December 2024). Four approaches were evaluated:
+  raw radar mosaic, global mean field bias (MFB) correction, spatially varying local inverse distance
+  weighting (IDW) bias correction assessed through leave-one-out cross-validation (LOOCV), and a Random
+  Forest (RF) machine-learning retrieval trained on polarimetric, geometric, and orographic predictors
+  and evaluated through leave-one-event-out cross-validation (LOEO-CV). Raw radar exhibited severe and
+  highly variable underestimation, with station-level bias factors ranging from 1.4 to 200×. Global MFB
+  correction removed systematic offset but, as a single spatially uniform scalar, could not improve spatial
+  correspondence; it was beneficial only where the bias field was spatially coherent. Local IDW correction
+  provided cross-validated reduction in RMSE for most events (commonly 40–53%), but this improvement reflected
+  removal of mean bias rather than recovery of spatial pattern: only 17 January 2024 combined RMSE reduction
+  (24.07 mm to 11.31 mm) with genuine spatial skill (leave-one-out r = 0.850, bias-field coherence r =
+  0.742), while several events improved in RMSE yet retained near-zero spatial correlation, and 30 and
+  31 January degraded outright. These results characterise the limits of distance-weighted (IDW) interpolation
+  specifically; whether geostatistical estimators incorporating topographic external drift can restore
+  spatial skill where the present gauge network constrains the bias field remains to be tested. When re-evaluated
+  on the same rainy matched-pair set (N = 2378), the Random Forest reduced 10 min RMSE by only 2.6% relative
+  to the best classical Z-R estimator (from 10.38 mm to 10.10 mm) and reduced the systematic bias from
+  −5.06 mm to −4.25 mm, but did not improve point-to-point spatial correspondence (r ≈ 0), indicating
+  that this mean-regression Random Forest provides effective bias-correction skill without spatial-correspondence
+  skill, leaving the fundamental representativeness gap between CAPPI sampling and gauge point measurements
+  unresolved. Three pre-conditions for local bias correction skill are identified as empirical diagnostics
+  under the sample conditions of this study: a minimum of approximately 40 contributing gauges, a spatially
+  coherent bias field, and a moderate bias range. A formal bootstrap or resampling-based uncertainty estimate
+  for these indicators was not attempted, because eleven events constitute too small a sample for stable
+  resampling statistics; the per-event relationships between the number of contributing gauges, the bias-factor
+  range, the bias-field spatial autocorrelation, and the LOOCV error are therefore presented as the empirical
+  basis for these diagnostic indicators, which should be refined and tested for statistical robustness
+  as longer event records become available. These findings demonstrate that the suitability of spatial
+  merging can be diagnosed from network and bias field properties prior to correction, and that machine-learning
+  retrieval offers complementary value through systematic bias removal where spatial interpolation fails.
+  Probabilistic merging frameworks, denser gauge networks, and ML approaches that explicitly target spatial
+  correspondence are identified as priority developments for eastern Mediterranean QPE.'
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

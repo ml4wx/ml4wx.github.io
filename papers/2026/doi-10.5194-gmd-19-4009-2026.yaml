@@ -1,0 +1,68 @@
+id: doi-10.5194-gmd-19-4009-2026
+title: 'From reanalysis to climatology: deep learning reconstruction of tropical cyclogenesis in the western
+  North Pacific'
+authors:
+- Duc-Trong Le
+- Tran-Binh Dang
+- Anh-Duc Hoang Gia
+- Duc‐Hai Nguyen
+- Minh-Hoa Tien
+- Xuan-Truong Ngo
+- Quang-Trung Luu
+- Quang-Lap Luu
+- Nguyen Tai Hung
+- Thi Nhat Thanh Nguyen
+- Chanh Kieu
+date: '2026-05-18'
+year: 2026
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-19-4009-2026
+  openalex: W4417151110
+links:
+  paper: https://doi.org/10.5194/gmd-19-4009-2026
+topic: extremes-hazards
+topics:
+- climate-analysis-attribution
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: ResNet-18 TCG-Net predicts western North Pacific tropical cyclogenesis within 48 h from MERRA-2,
+  reaching F1 of 0.39 and 0.33 on 2017–2022 data.
+abstract: 'Abstract. Tropical cyclogenesis (TCG) climatology is the key to understanding regional weather
+  extremes and long-term cyclone risk, yet their large-scale environmental drivers remain difficult to
+  characterize from observations or traditional physical-based modelling. In this study, we develop a
+  deep learning (DL) framework, TCG-Net, based on an 18-layer residual convolutional neural network (ResNet-18)
+  to reconstruct TCG climatology in the western North Pacific (WNP) basin from NASA’s Modern-Era Retrospective
+  analysis for Research and Applications Version 2 (MERRA-2). The framework addresses two tasks: the Past
+  Domain (PD) task that predicts when TCG occurs in the WNP within the next 48 hours, and the Dynamic
+  Domain (DD) task that predicts the spatial distribution of TCG at a given date and time. For each task,
+  tailored labeling strategies define different negative samples to distinguish TCG from non-TCG conditions.
+  To enhance the model''s capability in handling the rarity of TCG data, temporal feature enrichment is
+  used to incorporate environmental information from preceding 6-hour time steps, which helps improve
+  the representation of each training task. In addition, random under-sampling (RUS) is applied with class
+  weighting to address the severe imbalance caused by large numbers of negative TCG samples under these
+  labeling strategies. With a training dataset from 1980–2016 and an independent set from 2017–2022, TCG-Net
+  achieves an overall F1-score of 0.39 for the PD task and 0.33 for the DD task. In the PD task, feature
+  selection experiments reveal that only a subset of environmental variables including vertical wind shear,
+  low- to mid-level humidity, and mid-level vertical motion is required for robust performance, consistent
+  with prior physical studies. In contrast, for the DD task, full-feature models perform better, likely
+  due to their ability to exploit unknown or latent feature interactions. Both tasks reproduce key characteristics
+  of the observed seasonality and spatial TCG distribution when evaluated against the best-track dataset.
+  These results demonstrate that DL-based reconstructions, when coupled with task-specific labeling, temporal
+  enrichment, and imbalance-aware training, can complement physics-based simulations and vortex-tracking
+  algorithms and provide an efficient pathway for downscaling or projecting TCG climatology from coarse-resolution
+  climate model outputs.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

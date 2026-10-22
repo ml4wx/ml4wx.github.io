@@ -1,0 +1,59 @@
+id: arxiv-2606.18338
+title: 'ThousandWorlds: A benchmark for climate emulation of potentially habitable exoplanets'
+authors:
+- Edward T. Stevenson
+- Mei Ting Mak
+- Eric Wolf
+- Denis E. Sergeev
+- Tobi Hammond
+- N. J. Mayne
+- Miles Cranmer
+date: '2026-06-16'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.18338'
+  openalex: W7165133986
+links:
+  paper: https://arxiv.org/abs/2606.18338
+  pdf: https://arxiv.org/pdf/2606.18338
+  code: https://github.com/edstevenson/ThousandWorlds
+orgs:
+- university-of-oxford
+- university-of-cambridge
+topic: benchmarks-data-eval
+topics:
+- climate-emulation
+type: benchmark
+method:
+- classical-ml
+timescale:
+- climate
+spatial:
+- global
+data:
+- other
+status: research
+summary: ThousandWorlds offers about 1,700 multi-GCM exoplanet simulations for emulating 3D climate fields;
+  Gaussian processes beat deep learning baselines.
+abstract: 'The search for life beyond Earth will depend on detecting faint signatures in the atmospheres
+  of potentially habitable exoplanets. Interpreting those signatures requires understanding the host planet''s
+  climate: the same molecule may signal life on one planet and abiotic chemistry on another. Global climate
+  models (GCMs) provide this understanding, but individual runs can require up to millions of core-hours
+  and substantial domain expert time. Machine-learning emulators could remove this bottleneck, but progress
+  has been limited by the absence of a curated, multi-model exoclimate dataset. We introduce ThousandWorlds,
+  an ML-ready benchmark for exoclimate emulation and for the broader regime of low-data, multi-simulator,
+  parameter-to-field regression. The dataset contains approximately 1,700 simulations from five GCMs,
+  mapping eight planet parameters to 3D atmospheric fields including temperature, humidity, winds, clouds,
+  and radiation. Three nested subsets define progressively harder challenges: single-simulator regression,
+  multi-simulator regression with complete observations, and multi-simulator regression with structured
+  missingness. We propose two evaluation protocols: one for ranking methods, and one that measures performance
+  relative to the disagreement between GCMs themselves. We evaluate ten baselines spanning simple methods,
+  trees, deep learning, and Gaussian processes. GP-based methods perform best, suggesting that ThousandWorlds
+  exposes a regime where off-the-shelf deep learning does not yet succeed. Data: https://doi.org/10.57967/hf/8695.
+  Code: https://github.com/edstevenson/ThousandWorlds.'
+significance: 4
+score: 36
+highlight: false
+added: '2026-10-22'
+source: backfill

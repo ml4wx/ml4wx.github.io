@@ -1,0 +1,59 @@
+id: doi-10.5194-egusphere-2026-2743
+title: Machine-learning-based approach for solar radiation model uncertainty identification, attribution
+  and bias correction
+authors:
+- Antti Lipponen
+- Jorge Lezaca
+- Yves-Marie Saint-Drenan
+- Marion Schroedter‐Homscheidt
+- Antti Arola
+date: '2026-06-03'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.5194/egusphere-2026-2743
+  openalex: W7163330169
+links:
+  paper: https://doi.org/10.5194/egusphere-2026-2743
+  pdf: https://egusphere.copernicus.org/preprints/2026/egusphere-2026-2743/egusphere-2026-2743.pdf
+topic: post-processing
+topics:
+- xai-uq-physics
+type: model
+method:
+- classical-ml
+spatial:
+- global
+data:
+- satellite
+- stations
+status: research
+summary: XGBoost with SHAP attributes uncertainty in CAMS surface irradiance to cloud optical depth and
+  corrects bias, reducing GHI median bias from 5.0 to -0.6 W/m2.
+abstract: Abstract. Accurate surface solar irradiance (SSI) is essential for climate monitoring and solar
+  energy applications, yet operational radiation data products such as the Copernicus Atmospheric Monitoring
+  Service (CAMS) solar radiation service (CRS) still exhibit systematic and situation dependent errors.
+  These are arising from uncertainties in clouds, aerosols and surface properties as well as from area-time
+  mismatch between ground observations and pixel or model gridbox averaged properties. In this study,
+  we develop a data-driven XGBoost-based uncertainty model that predicts the instantaneous CRS irradiance
+  uncertainty for global horizontal (GHI), diffuse horizontal (DHI) and beam normal irradiance (BNI) using
+  only the operational CRS inputs. We apply SHapley Additive exPlanations (SHAP) to quantify the contribution
+  of individual physical predictors and to diagnose the dominant relations of observed deviations to CRS
+  input parameters. Across all components, cloud optical depth is identified as the primary driver of
+  CRS irradiance uncertainty. Aerosol optical depths of different aerosol components and surface reflectance
+  (albedo and BRDF parameters) have additional component-dependent influences, particularly for DHI and
+  BNI. The SHAP analysis also reveals a solar zenith angle dependence with contributions increasing at
+  high solar zenith angles (SZA). A single-case analysis under overcast conditions demonstrates how SHAP
+  can attribute individual large errors to specific cloud, aerosol and surface processes. Finally, we
+  apply the trained situation-dependent model as a post-processing bias correction to the CRS irradiances.
+  The bias correction reduces the median bias from 5.0 to −0.6 Wm-2 for GHI and from 11.1 to 1.0 Wm-2
+  for DHI. The bias correction improves the root-mean-squared errors and correlation coefficients for
+  all components GHI, DHI, and BNI. The results demonstrate that physically interpretable machine-learning
+  methods can both identify the dominant irradiance deviations based on operationally available CRS input
+  parameters and provide an effective path for a post-processed bias correction.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

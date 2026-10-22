@@ -1,0 +1,54 @@
+id: doi-10.3390-rs18142287
+title: 'RadarEchoMamba: A Fast, High-Fidelity Pyramidal Bidirectional Mamba Model for Radar Echo Extrapolation'
+authors:
+- 耿焕同
+- Zhanpeng Shi
+- Jinzhong Min
+- Fangli Wu
+- Han Zhao
+date: '2026-07-08'
+year: 2026
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs18142287
+  openalex: W7167708494
+links:
+  paper: https://doi.org/10.3390/rs18142287
+orgs:
+- nuist
+- cma
+topic: nowcasting
+type: model
+method:
+- other
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: RadarEchoMamba uses a bidirectional Mamba pyramid to extrapolate radar echoes with sharper detail
+  and lower latency than Transformer baselines.
+abstract: Radar echo extrapolation is a fundamental task in precipitation nowcasting. However, existing
+  models based on RNNs, CNNs, and Transformers are often constrained by error accumulation, the loss of
+  temporal information, and quadratic computational complexity. Consequently, these limitations can lead
+  to prediction blurring and the distortion of fine-grained details in extrapolated radar images. To address
+  these challenges, we propose RadarEchoMamba, a novel extrapolation framework built on the efficient
+  Mamba model. RadarEchoMamba uses a pyramidal architecture to capture multi-scale features, and its core
+  is a Bidirectional Spatiotemporal Mamba backbone that models dependencies within the observed historical
+  input window. Furthermore, we introduce a spatiotemporal prior module driven by the input sequence to
+  guide the reconstruction of high-resolution features during the decoding phase. This design enables
+  the model to generate detail-rich predictions, improving upon the blurring issues prevalent in traditional
+  extrapolation models. Experimental results on the South China and Shanghai-2020 datasets show the effectiveness
+  of our method. Compared with strong Transformer-based baselines, the lightweight variant uses fewer
+  parameters and achieves lower measured inference latency, while maintaining competitive prediction quality.
+  Its main advantages are observed in visual-fidelity metrics, with improved SSIM and reduced LPIPS on
+  the South China dataset.
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

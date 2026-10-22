@@ -1,0 +1,59 @@
+id: arxiv-2610.14863
+title: 'WeatherBridge: Forecast-Aware Multi-Source Input Adaptation for Pretrained Weather Forecasting
+  Models'
+authors:
+- Mutian Xi
+- Xinyu Su
+- Xiaohui Zhong
+- Hao Li
+date: '2026-10-10'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.14863'
+  openalex: W7221793985
+links:
+  paper: https://arxiv.org/abs/2610.14863
+  pdf: https://arxiv.org/pdf/2610.14863
+orgs:
+- fudan-university
+topic: data-assimilation
+topics:
+- global-medium-range
+type: model
+method:
+- transformer
+- cnn
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: pre-operational
+summary: A source-conditioned adapter maps operational GFS, HRES and CMA initial states to ERA5-like states,
+  cutting FuXi 6-240h RMSE by a median 10.2% without retraining.
+abstract: Data-driven weather forecasting models are commonly trained on ERA5, yet operational deployment
+  must use timely initial states from physics-based numerical weather prediction (NWP) systems whose distributions
+  differ substantially from ERA5. Direct initialization with these states can degrade autoregressive forecasts,
+  motivating input adaptation that keeps the pretrained forecasting model unchanged. Here, we introduce
+  WeatherBridge, a unified, source-conditioned adapter that maps heterogeneous operational NWP initial
+  states to ERA5 reference states without updating the pretrained forecasting model. WeatherBridge predicts
+  the structured residual corrections with a Swin-UNet and injects source embeddings across multiple spatial
+  scales, allowing the model to capture shared atmospheric structure and source-specific discrepancies.
+  Its training objective combines latitude-weighted ERA5 reconstruction with One-step Rollout Alignment
+  (ORA), which backpropagates one-step forecast error through a frozen FuXi model to optimize the adapted
+  states for both initial state fidelity and downstream forecast compatibility. We evaluate WeatherBridge
+  using daily GFS, HRES, and CMA initializations from 1 January to 22 November 2025 across six variables
+  and lead times up to 240 hours. Relative to raw source initialization of FuXi, WeatherBridge reduces
+  the mean RMSE of FuXi over the 6- 240-hour rollout for 17 of 18 source-variable combinations, with a
+  median reduction of 10.2% and a maximum reduction of 46.3%. The adapter trained with frozen FuXi also
+  improves FengWu forecasts on GFS inputs without retraining either the adapter or FengWu. These results
+  demonstrate that forecast-aware input adaptation can improve forecasts from heterogeneous operational
+  NWP inputs and transfer across pretrained ERA5-based forecasting models.
+significance: 5
+score: 55
+highlight: false
+added: '2026-10-22'
+source: backfill

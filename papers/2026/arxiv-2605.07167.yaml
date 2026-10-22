@@ -1,0 +1,51 @@
+id: arxiv-2605.07167
+title: 'GPROF-IR: An Improved Single-Channel Infrared Precipitation Retrieval for Merged Satellite Precipitation
+  Products'
+authors:
+- Simon Pfreundschuh
+- Christian D. Kummerow
+- Jackson Tan
+- George J. Huffman
+date: '2026-05-08'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.07167'
+links:
+  paper: https://arxiv.org/abs/2605.07167
+  pdf: https://arxiv.org/pdf/2605.07167
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- global
+- regional
+data:
+- satellite
+- stations
+status: pre-operational
+summary: GPROF-IR uses a CNN on sequences of geostationary infrared images to retrieve precipitation,
+  outperforming IMERG V07 infrared estimates for hourly and daily accumulations over CONUS.
+abstract: The Integrated Multi-Satellite Retrievals for the Global Precipitation Measurement (IMERG) product
+  combines precipitation estimates from passive microwave (PMW) and infrared (IR) sensors to provide quasi-global
+  precipitation estimates at half-hourly resolution. Because IR observations are primarily sensitive to
+  cloud-top properties, however, IR-based precipitation estimates are generally less accurate than PMW
+  estimates and can introduce artifacts into the merged precipitation fields. We introduce GPROF-IR, a
+  neural-network-based precipitation retrieval designed to provide precipitation estimates from single-channel
+  geostationary IR observations for the upcoming IMERG V08. GPROF-IR uses a convolutional neural network
+  to exploit spatiotemporal information from sequences of half-hourly IR observations. We validate GPROF-IR
+  against independent surface-based precipitation measurements over land and ocean. GPROF-IR substantially
+  improves upon existing single-channel IR retrievals, including the IR retrieval used in IMERG V07 and
+  more recent neural-network-based approaches. During overpasses of flagship PMW sensors, GPROF-IR is
+  more accurate than the corresponding IMERG PMW estimates over CONUS and Austria, but not Korea. Over
+  CONUS, GPROF-IR outperforms the merged IMERG V07 product for hourly and daily precipitation accumulations.
+  Against shipborne disdrometer observations, GPROF-IR is more accurate than IMERG V07 in the tropics
+  but slightly less accurate in the extratropics. Since geostationary IR observations are continuously
+  available across much of the globe since 1983, GPROF-IR provides a promising basis for improving merged
+  precipitation products and developing long-term, temporally consistent precipitation records.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,52 @@
+id: arxiv-2608.24715
+title: Deep Learning Super Resolution for Satellite Cloud Mask Downscaling
+authors:
+- Angelos Georgakis
+- Valentina Kanaki
+- Giorgos Giannopoulos
+- Stella Girtsou
+- Ioannis Kontogiorgakis
+- Charalampos Kontoes
+- Kostas Philippopoulos
+date: '2026-08-25'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2608.24715'
+links:
+  paper: https://arxiv.org/abs/2608.24715
+  pdf: https://arxiv.org/pdf/2608.24715
+topic: observations-remote-sensing
+topics:
+- downscaling
+type: model
+method:
+- cnn
+- gan-vae
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: CNN and GAN super-resolution downscale SEVIRI cloud masks 4x toward MODIS quality, with a new
+  cross-sensor SEVMOD-CM dataset.
+abstract: A vast amount of optical satellite data is being transmitted to Earth-based servers every day,
+  and more than half of this data is affected by haze or clouds. Additionally, this data suffers from
+  the fundamental trade-off between spatial and temporal resolution, which remains largely unresolved,
+  making the acquisition of continuous high-resolution satellite observations of clouds an ongoing challenge.
+  This work addresses this challenge by proposing two Deep Learning super-resolution methods for the accurate
+  downscaling of SEVIRI cloud mask products, as well as a novel cross-sensor cloud mask dataset called
+  SEVMOD-CM, created by spatially and temporally matching MODIS and SEVIRI satellite observations. The
+  two proposed models are a CNN-based (SpatialCNN) and a GAN-based (SpatialGAN) Neural Network. Trained
+  on the SEVIRI spectral and cloud mask products, the proposed methods predict the corresponding MODIS
+  Cloud masks, achieving a 4x spatial enhancement across sensor domains. Both approaches are evaluated
+  experimentally, and compared against the standard bicubic interpolation upsampling technique. The experimental
+  results demonstrate the value of the proposed models and dataset for the remote sensing community, highlighting
+  the benefits of applying super-resolution techniques to geostationary-derived cloud mask products for
+  applications such as atmospheric monitoring, weather forecasting, disaster risk reduction, solar energy
+  forecasting, and climate research.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

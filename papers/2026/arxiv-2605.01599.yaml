@@ -1,0 +1,55 @@
+id: arxiv-2605.01599
+title: 'Cast3: Translating numerical weather prediction principles into data-driven forecasting'
+authors:
+- Congyi Nai
+- Baoxiang Pan
+- Yuan Liang
+- Xi Chen
+date: '2026-05-02'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.01599'
+  openalex: W7160270190
+links:
+  paper: https://arxiv.org/abs/2605.01599
+  pdf: https://arxiv.org/pdf/2605.01599
+orgs:
+- iap-cas
+topic: probabilistic-ensembles
+topics:
+- global-medium-range
+type: model
+method:
+- other
+timescale:
+- short
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: Cast3 builds cubed-sphere generative super-ensembles and a generative nudging step, outperforming
+  deterministic and generative baselines on synoptic skill, spectra, and tropical cyclones.
+abstract: Data-driven weather models have made rapid advances in recent years, reaching and in some metrics
+  surpassing the large-scale forecast skill of operational numerical weather prediction. This progress,
+  however, has been built almost entirely on the reanalysis data that NWP produced, while the methodological
+  knowledge that the NWP community distilled over decades of multi-scale atmospheric modelling remains
+  largely unused. Here we present Cast3, a generative forecasting framework that systematically absorbs
+  NWP meta-knowledge to close this gap. Cast3 operates on variable-resolution cubed-sphere grids for scale-aware
+  representation and constructs structurally diverse super-ensembles that sample the complementary biases
+  of different grid discretizations, delivering state-of-the-art ensemble prediction. It further introduces
+  generative nudging, a posterior-sampling strategy that distils the collective information of the full
+  ensemble into a single forecast possessing both the large-scale accuracy of the ensemble mean and the
+  mesoscale realism of a high-resolution member. Evaluated across synoptic-scale skill, spectral fidelity,
+  station-level surface verification, and tropical cyclone prediction, Cast3 outperforms established deterministic
+  and generative baselines across various dimensions. More broadly, these results demonstrate that the
+  design principles embedded in computational atmospheric science offer a rich and largely untapped foundation
+  for the next generation of data-driven Earth system modelling.
+significance: 6
+score: 34
+highlight: false
+added: '2026-10-22'
+source: backfill

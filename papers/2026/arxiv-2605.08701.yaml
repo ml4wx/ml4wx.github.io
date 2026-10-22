@@ -1,0 +1,47 @@
+id: arxiv-2605.08701
+title: 'METBRA25Y: Brazil Surface Meteorology Archive with Harmonized Variables and Quality Control'
+authors:
+- Matheus Lima Castro
+- William Dantas Vichete
+- Leopoldo Lusquino Filho
+date: '2026-05-09'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.08701'
+links:
+  paper: https://arxiv.org/abs/2605.08701
+  pdf: https://arxiv.org/pdf/2605.08701
+topic: benchmarks-data-eval
+type: benchmark
+spatial:
+- regional
+data:
+- stations
+status: research
+summary: METBRA25Y harmonizes 2000 to 2025 hourly INMET station observations across Brazil with quality-control
+  flags, providing an ML-ready archive covering 605 stations.
+abstract: 'This data paper describes METBRA25Y, a harmonized archive of hourly surface meteorological
+  observations from Brazil derived from public historical records of the Instituto Nacional de Meteorologia
+  (INMET). The dataset was designed to support reproducible environmental, climatological, hydrological,
+  agricultural, urban-risk, and machine-learning studies that require station-level meteorological time
+  series with standardized variable names and explicit quality-control metadata. The processing workflow
+  ingests annual INMET archives, parses station metadata from raw file headers, normalizes heterogeneous
+  Portuguese column names into a canonical schema, constructs hourly timestamps, consolidates observations
+  by city and station, and exports compressed CSV files together with station manifests, per-station quality
+  flags, daily precipitation aggregates, variable-level failure summaries, and missing-data audits. The
+  quality-control protocol follows a two-stage strategy: first, physically implausible values are converted
+  to missing values and flagged; second, temporal and cross-variable consistency checks generate diagnostic
+  flags without necessarily overwriting the original measurements. The resulting package covers observations
+  between 2000 and 2025, with stationspecific temporal coverage, and includes key meteorological variables
+  such as precipitation, air temperature, dew point, relative humidity, atmospheric pressure, wind speed,
+  wind gust, wind direction, and global solar radiation. Based on the summary files included in the current
+  release snapshot, the archive contains 616 unique station codes across variable summaries, of which
+  605 have coordinates within a broad Brazil plausibility envelope. This paper documents the dataset provenance,
+  file organization, harmonized schema, quality-control rules, technical validation outputs, limitations,
+  and recommended usage practices.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,48 @@
+id: arxiv-2605.19812
+title: 'FLUXtrapolation: A benchmark on extrapolating ecosystem fluxes'
+authors:
+- Anya Fries
+- Jacob A Nelson
+- Martin Jung
+- Markus Reichstein
+- Jonas Peters
+date: '2026-05-19'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.19812'
+links:
+  paper: https://arxiv.org/abs/2605.19812
+  pdf: https://arxiv.org/pdf/2605.19812
+topic: benchmarks-data-eval
+type: benchmark
+method:
+- classical-ml
+spatial:
+- global
+data:
+- stations
+- satellite
+- other
+status: research
+summary: FLUXtrapolation benchmark tests ML upscaling of ecosystem carbon, water and energy fluxes under
+  spatial, temporal and climate distribution shifts.
+abstract: 'We introduce FLUXtrapolation, a benchmark for extrapolating ecosystem fluxes under progressively
+  harder distribution shifts. Ecosystem fluxes are central to understanding the carbon, water, and energy
+  cycles, yet they can only be measured directly at sparsely located measurement towers. Producing global
+  flux estimates therefore requires training models on observed sites using globally available covariates
+  and predicting in unobserved regions, that is, upscaling. Flux upscaling is a challenging domain generalization
+  problem that is affected by a shift in covariate distribution across climates, ecosystem types, and
+  environmental conditions, as well as by conditional shift: important drivers remain unobserved at global
+  scale. We provide a quantitative analysis of both these shifts in $P_X$ and $P_{Y\mid X}$. FLUXtrapolation
+  is designed based on domain expertise on flux upscaling: it defines temporal, spatial, and temperature-based
+  extrapolation scenarios and evaluates performance across held-out domains, temporal aggregations, and
+  tail errors. In a pilot study, we find that baselines perform similarly under median hourly RMSE, but
+  separate under the proposed tail-focused and multi-scale evaluation. FLUXtrapolation therefore poses
+  a realistic and thus relevant challenge for machine learning methods under distribution shift; at the
+  same time, progress on this benchmark would directly support the scientific goal of improving flux upscaling.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

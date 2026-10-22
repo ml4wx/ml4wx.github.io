@@ -1,0 +1,50 @@
+id: arxiv-2609.02085
+title: 'TC-Next: Zero-Shot Multimodal Cyclone Forecasting'
+authors:
+- Zhe Wang
+- Sijie Chen
+- Yiming Luo
+- Daehyun Kim
+- Chien-Yi Chang
+date: '2026-09-02'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.02085'
+  openalex: W7207805663
+links:
+  paper: https://arxiv.org/abs/2609.02085
+  pdf: https://arxiv.org/pdf/2609.02085
+topic: extremes-hazards
+topics:
+- observations-remote-sensing
+type: model
+method:
+- other
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- satellite
+status: research
+summary: Multimodal model combining GraphCast forecasts with GridSat imagery cuts tropical cyclone track
+  error 15-44% and intensity error 3-6x, zero-shot to other NWP models.
+abstract: We present TropicalCycloneNext (TC-Next), a multimodal deep learning model that forecasts tropical
+  cyclone track and intensity at $6-24$h leads by leveraging a foundation model's forecast of atmospheric
+  kinematic and thermodynamic fields, along with GridSat infrared satellite imagery. Trained only on GraphCast
+  forecasts over the Western Pacific (WP), yet reliant only on generic atmospheric variables, TC-Next
+  on GraphCast lowers track error by $15-44\%$ and intensity error by a factor of $3-6$ relative to the
+  rule-based tracker TempestExtremes; applied without retraining to Pangu-Weather and IFS HRES forecasts,
+  it stays ahead on both. Applied zero-shot to the generic weather fields of WeatherNext Cyclones on the
+  2025 WP season, it attains lower average intensity error at every lead time, and lower or comparable
+  average track error, than that model's specialized direct tracker in a deterministic comparison. Ablations
+  show that the satellite branch lowers track error at every lead time and intensity error at longer leads.
+  TC-Next thus gives a common, independently verifiable basis for comparing the AI forecasts that inform
+  cyclone-warning and climate-adaptation decisions as best available science.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

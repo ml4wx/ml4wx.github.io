@@ -1,0 +1,74 @@
+id: doi-10.3390-biomimetics11080526
+title: A Bio-Inspired Weather-System Sensing Framework for Physically Constrained Precipitation Nowcasting
+  Correction
+authors:
+- Youming Qu
+- Xian Feng
+- Linyan Luo
+- Xun Deng
+- Runqing Kang
+- Guanru Lv
+- Jiachi Shi
+- Wei Peng
+- Jianhong Gan
+- Kun Cai
+- Peiyang Wei
+- Zhibin Li
+date: '2026-07-24'
+year: 2026
+venue: Biomimetics
+venue_type: journal
+ids:
+  doi: 10.3390/biomimetics11080526
+  openalex: W7170874517
+links:
+  paper: https://doi.org/10.3390/biomimetics11080526
+  pdf: https://www.mdpi.com/2313-7673/11/8/526/pdf?version=1784895489
+orgs:
+- cma
+topic: post-processing
+type: model
+method:
+- transformer
+- physics-constrained
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- other
+status: research
+summary: PCPNet fuses synoptic diagnostics with NWP fields in an attention network and adds water-vapour
+  constraints to correct hourly precipitation over Hunan, China.
+abstract: Accurate correction of gridded numerical weather prediction precipitation forecasts remains
+  challenging because many end-to-end deep learning correction models treat meteorological variables as
+  undifferentiated data channels and therefore provide limited physical interpretability. Inspired by
+  general principles of biological environmental sensing, selective information processing, and regulatory
+  constraint learning, this study proposes PCPNet, a bio-inspired and physically constrained precipitation
+  correction framework. The framework does not imitate a specific biological organ or species; instead,
+  it abstracts three information-processing principles into a meteorological correction task. First, key
+  weather-system cues, including low-level shear lines, trough-ridge effects, upper-level jet-stream forcing,
+  vorticity-divergence-related vertical motion, and water-vapor flux convergence, are quantified as structured
+  diagnostic fields. This transforms the subjective synoptic diagnosis of forecasters into automated grid-based
+  sensing features. Second, these diagnostic cues are fused with numerical weather prediction variables
+  and terrain descriptors in an encoder-attention-decoder network, allowing the model to emphasize dynamically
+  important precipitation-triggering regions. Third, water-vapor conservation and terrain-forcing relationships
+  are embedded as differentiable constraint losses, providing training-time constraint-based regulation
+  that guides the corrected precipitation field toward physically consistent solutions. The method is
+  evaluated from 2021 to 2023 in Hunan Province, China, using hourly numerical weather prediction model
+  outputs as input features, China Meteorological Administration Land Data Assimilation System gridded
+  analysis data as the training target, and independent meteorological station observations for strict
+  cross-validation. PCPNet reduces the mean absolute error by 22.1% compared with the uncorrected China
+  Meteorological Administration Land Data Assimilation System gridded precipitation products and outperforms
+  Linear Regression, Bagging, Boosting, Multi-Layer Perceptron, TabNet, and Tree-based Progressive Regression
+  Models by 12.9%, 13.5%, 16.9%, 10.8%, 14.9%, and 15.9%, respectively. The single-day event analysis
+  provides an initial demonstration of heavy precipitation recovery capability, while comprehensive validation
+  across long-term continuous weather events is planned for future operational deployment to further verify
+  model stability. These results indicate that bio-inspired sensing and regulatory constraint learning
+  can improve both the accuracy and interpretability of precipitation nowcasting correction.
+significance: 2
+score: 18
+highlight: false
+added: '2026-10-22'
+source: backfill

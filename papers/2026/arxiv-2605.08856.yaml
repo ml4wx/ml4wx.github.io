@@ -1,0 +1,50 @@
+id: arxiv-2605.08856
+title: Controlling Transient Amplification Improves Long-horizon Rollouts
+authors:
+- Adeel Pervez
+- Francesco Locatello
+date: '2026-05-09'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.08856'
+links:
+  paper: https://arxiv.org/abs/2605.08856
+  pdf: https://arxiv.org/pdf/2605.08856
+topic: xai-uq-physics
+topics:
+- global-medium-range
+type: model
+method:
+- cnn
+- neural-operator
+- physics-constrained
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Commutativity regularization on rollout Jacobians suppresses transient error growth, enabling
+  thousands of stable steps and improving FourCastNet forecasts on ERA5.
+abstract: 'Autoregressive neural simulators now match classical solvers on short-horizon prediction of
+  physical systems, yet their accuracy degrades rapidly when rolled out over long horizons. In this work,
+  we identify transient amplification of perturbations around rollout trajectories as a structural mechanism
+  driving rollout error. Using a linearization analysis we show that when the Jacobians along an autoregressive
+  trajectory are non-normal and non-commuting, the model amplifies errors transiently, resulting in model
+  rollout drift even when the overall system is asymptotically stable. Building on the analysis, we propose
+  commutativity regularization: a combination of two penalties designed to reduce the normality defect
+  of individual Jacobians and the commutator norm of Jacobians across steps. The penalties are estimated
+  with Jacobian-vector products and have no inference-time cost. We show a propagator bound that quantifies
+  rollout error under approximate commutativity and normality. We evaluate UNet and FNO variants with
+  commutativity regularization on 1D and 2D spatio-temporal data in synthetic and real settings, showing
+  successful long-horizon rollouts over thousands of steps. Further, we show that the method improves
+  FourCastNet climate forecasts on ERA5 without using any new data. The gain is most pronounced out-of-distribution:
+  trained on trajectories of a few hundred steps, regularized models remain in-distribution for thousands
+  of rollout steps on initial conditions where baselines diverge.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

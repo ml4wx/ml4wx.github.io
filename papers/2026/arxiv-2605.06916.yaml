@@ -1,0 +1,56 @@
+id: arxiv-2605.06916
+title: 'Tyche: One Step Flow for Efficient Probabilistic Weather Forecasting'
+authors:
+- Fan Xu
+- Yuan Gao
+- Kun Wang
+- Rui Su
+- Fenghua Ling
+- Hao Wu
+- Wanli Ouyang
+date: '2026-05-07'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.06916'
+  openalex: W7160861838
+links:
+  paper: https://arxiv.org/abs/2605.06916
+  pdf: https://arxiv.org/pdf/2605.06916
+topic: probabilistic-ensembles
+topics:
+- global-medium-range
+type: model
+method:
+- diffusion
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Tyche is a one-step flow model for probabilistic global weather forecasting that matches multi-step
+  diffusion ensembles and the ECMWF IFS ensemble on ERA5 with a single function evaluation.
+abstract: Probabilistic weather forecasting requires not only accurate trajectories, but calibrated distributions
+  over plausible atmospheric futures. Recent data-driven systems have achieved remarkable deterministic
+  skill, and diffusion-based ensemble forecasters have substantially improved sample realism and uncertainty
+  quantification. However, their inference cost scales with forecast horizon, ensemble size, and the number
+  of denoising steps required for each transition, making large operational ensembles expensive. To address
+  this, we present Tyche, a one-step conditional flow model for efficient probabilistic weather forecasting.
+  Tyche models the conditional forecast distribution with a destination-aware average-velocity flow that
+  maps Gaussian noise directly to future weather states in a single function evaluation (1-NFE). To make
+  this one-step transport learnable in high-dimensional geophysical fields, we derive a JVP-regularized
+  rectification objective that enforces temporal self-consistency across source and destination flow timesteps
+  without explicitly forming Jacobians. The transport field is parameterized by an isotropic Swin-style
+  transformer that preserves fine-scale spatial structure while remaining scalable on global grids. To
+  improve ensemble reliability under autoregressive forecasting, we further introduce a rollout-based
+  finetuning stage with curriculum CRPS calibration supervision. Experiments on ERA5 at 1.5$^\circ$ and
+  6-hour resolution show that our Tyche, using merely a single NFE, matches or exceeds the forecast skill
+  and calibration of state-of-the-art multi-step generative baselines and the operational ECMWF IFS ensemble.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

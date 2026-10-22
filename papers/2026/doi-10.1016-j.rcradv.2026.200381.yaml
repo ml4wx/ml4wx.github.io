@@ -1,0 +1,55 @@
+id: doi-10.1016-j.rcradv.2026.200381
+title: 'SFNL-Former: A novel spatial-frequency non-local network for precipitation forecast'
+authors:
+- Hanjie Wang
+- Xinyue Mo
+- Huan Li
+date: '2026-09-01'
+year: 2026
+venue: Resources Conservation & Recycling Advances
+venue_type: journal
+ids:
+  doi: 10.1016/j.rcradv.2026.200381
+  openalex: W7204864017
+links:
+  paper: https://doi.org/10.1016/j.rcradv.2026.200381
+  pdf: https://www.sciencedirect.com/science/article/pii/S2667378926000702/pdf
+topic: nowcasting
+topics:
+- extremes-hazards
+type: model
+method:
+- transformer
+timescale:
+- nowcast
+spatial:
+- regional
+status: research
+summary: SFNL-Former separates spatial and frequency features with a sparse non-local transformer to improve
+  high-intensity precipitation forecasts and reduce blurring; no numeric results given.
+abstract: ABSTRACT Accurate, high-resolution precipitation forecast is vital for urban disaster mitigation
+  and agriculture, underpinning fine-grained social management. Furthermore, as the primary input to the
+  terrestrial hydrological cycle, its accurate quantification is essential for sustainable water resource
+  management and efficient circulation. However, this task remains highly challenging due to the complex
+  spatiotemporal and non-linear dynamical evolution inherent in atmospheric processes. Deep learning has
+  been extensively applied to weather forecast through CNN-RNN or Transformer architectures, yet these
+  methods often struggle to capture global meteorological motions while simultaneously preserving the
+  fine-grained details of localized strong convection. Furthermore, they are prone to producing blurred
+  predictions or exhibiting high false alarm rates when encountering extreme precipitation events characterized
+  by long-tailed distributions. To address these issues, we propose the Spatial-Frequency and Non-Local
+  Former Network (SFNL-Former), which accurately predicts complex precipitation evolution via explicit
+  spatial-frequency domain feature separation and efficient long-range spatiotemporal modeling. A Spatial-Frequency
+  Domain Attention (SFDA) encoder is designed to separately extract low-frequency global backgrounds and
+  high-frequency local textures of precipitation fields. Furthermore, the Locality-Sensitive Hashing (LSH)
+  based Non-Local Sparse-Aware Transformer (NLSAT) is introduced to capture long-range spatiotemporal
+  dependencies with linear complexity. Experiments on real-world datasets demonstrate that SFNL-Former
+  outperforms existing baseline methods across multiple metrics and spatial scales. Specifically, under
+  challenging high-intensity precipitation thresholds, the model improves the Critical Success Index and
+  substantially reduces the False Alarm Rate, while maintaining optimal prediction coherence. Consequently,
+  the framework enables critical decision support for proactive disaster response, fostering more resilient
+  social management systems under future extreme weather scenarios.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

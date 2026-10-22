@@ -1,0 +1,50 @@
+id: arxiv-2606.09959
+title: Temporal Context Conditioning for Seasonality-Aware Precipitation Nowcasting of High-Intensity
+  Rainfall
+authors:
+- Gijs van Nieuwkoop
+- Siamak Mehrkanoon
+date: '2026-06-08'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.09959'
+  openalex: W7164157487
+links:
+  paper: https://arxiv.org/abs/2606.09959
+  pdf: https://arxiv.org/pdf/2606.09959
+  code: https://github.com/gijsvn/TA-SmaAt-UNet
+topic: nowcasting
+topics:
+- extremes-hazards
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Adds temporal time-of-day and time-of-year conditioning to SmaAt-UNet radar nowcasting, improving
+  high-intensity rainfall prediction on KNMI data.
+abstract: Precipitation nowcasting is increasingly being approached with deep learning models that learn
+  directly from recent radar observations. Although such models can efficiently capture short-term precipitation
+  motion, they often lack broader contextual information about the meteorological conditions under which
+  rainfall develops. This paper investigates whether lightweight temporal context can improve radar-based
+  nowcasting, particularly for high-intensity rainfall. We propose the Time-Aware Small-Attention U-Net
+  (TA-SmaAt-UNet), which extends the core SmaAt-UNet model with temporal conditioning layers that use
+  cyclical encodings of time-of-day and time-of-year to modulate intermediate feature representations.
+  Experiments on KNMI radar precipitation data show that temporal conditioning is most beneficial for
+  rare, high-intensity precipitation events, while also improving the representation of seasonal variability
+  and predicted rainfall-intensity distributions. A layer conductance analysis further indicates that
+  the added temporal conditioning layers are actively used by the model despite their small parameter
+  cost. These findings suggest that simple, physically motivated temporal context can improve the realism
+  and reliability of deep learning-based precipitation nowcasts. The implementation of our models and
+  training setup is available on \href{https://github.com/gijsvn/TA-SmaAt-UNet}{GitHub}.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

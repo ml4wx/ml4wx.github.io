@@ -1,0 +1,65 @@
+id: doi-10.5194-egusphere-2026-5871
+title: Deep learning-based high-resolution downscaling of terrain-driven near-surface winds
+authors:
+- Nora Helbig
+- Florian Hammer
+- Gert‐Jan Duine
+- Leila M. V. Carvalho
+- Charles Jones
+- Hugo Merzisen
+- Isabelle Gouttevin
+- Sarah Barber
+date: '2026-10-13'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.5194/egusphere-2026-5871
+  openalex: W7221708920
+links:
+  paper: https://doi.org/10.5194/egusphere-2026-5871
+  pdf: https://egusphere.copernicus.org/preprints/2026/egusphere-2026-5871/egusphere-2026-5871.pdf
+orgs:
+- meteo-france
+topic: downscaling
+type: model
+spatial:
+- regional
+- local
+data:
+- km-scale-sim
+- stations
+status: research
+summary: Enhanced DEVINE deep-learning model downscales terrain-forced near-surface winds and generalizes
+  to unseen alpine and coastal terrain, with station MAE around 1.13 m/s.
+abstract: Abstract. Spatio-temporal wind fields in mountainous terrain are complex due to strong flow
+  modifications when wind interacts with topography. Machine-learning (ML)-based wind downscaling models
+  offer a computationally efficient alternative to high-resolution atmospheric model simulations and to
+  dynamical downscaling, but their transferability beyond the training regions and conditions in which
+  they were developed remains largely untested. We present an enhanced version of DEVINE, a deep-learning-based
+  downscaling model for near-surface terrain-forced wind flow, being trained on atmospheric model ARPS
+  simulations over Gaussian Random Field synthetic topographies with a wide range of slopes and feature
+  shapes. Incorporating wind direction-dependent input features enables rotational data augmentation and
+  facilitates preprocessing. Using enhanced DEVINE, we systematically assess its performance across previously
+  unseen terrain (synthetic, alpine, coastal mountain environments), wind regimes (terrain-forced flow,
+  sea-breeze circulation, downslope windstorm), and driving model data, using both high-resolution atmospheric
+  wind and ground station data as reference. We find that DEVINE generalizes well to unseen mountain regions
+  when flow is primarily terrain-forced. Its spatial wind speed mean absolute error (MAE) and correlation
+  in the alpine and non-storm coastal environments are lower and higher, respectively, than the station-based
+  results reported by previous ML wind downscaling studies. DEVINE’s own station-based performance remains
+  broadly comparable to, or slightly improves on, these studies’ station-based results (e.g., MAE of 1.13
+  m s−1), despite simultaneously transferring across new topography, wind regime, and driving data. Performance
+  degrades under complex atmosphere-terrain interactions such as a downslope windstorm (e.g., MAE of 5.6
+  m s−1); under non-storm conditions, however, DEVINE outperforms the dynamical model WRF-LES at stations
+  for MAE (1.13 m s−1 versus 1.23 m s−1) and matches it for normalized root mean square error (13 %).
+  We further show that station-based and spatial-pattern evaluations can diverge substantially, including
+  in the sign of bias, indicating that the evaluation basis itself shapes apparent performance, and that
+  spatial evaluation may better separate genuine model limitations from local representativity effects.
+  Our findings clarify strengths and limitations of the enhanced DEVINE wind downscaling model under out-of-sample
+  conditions, and more broadly underscore the value of systematically evaluating ML wind downscaling methods
+  across scale and under unseen conditions.
+significance: 3
+cited_by: 0
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

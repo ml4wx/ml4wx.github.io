@@ -1,0 +1,48 @@
+id: doi-10.1016-j.aiig.2026.100226
+title: Deep learning-based downscaling of ERA5-Land temperature to 250 m resolution over the Trentino–South
+  Tyrol Alpine region
+authors:
+- Ihcene Djouama
+- Nabil Kadache
+- Rachid Seghir
+date: '2026-05-26'
+year: 2026
+venue: Artificial Intelligence in Geosciences
+venue_type: journal
+ids:
+  doi: 10.1016/j.aiig.2026.100226
+  openalex: W7162446613
+links:
+  paper: https://doi.org/10.1016/j.aiig.2026.100226
+topic: downscaling
+topics:
+- benchmarks-data-eval
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- era5
+- stations
+status: research
+summary: UNet downscales ERA5-Land 2-m temperature to 250 m over the Alps, cutting RMSE from 2.32 to 2.05
+  °C with dew point as input.
+abstract: High-resolution near-surface temperature data are essential in mountainous regions, where complex
+  topography induces strong spatial and temporal variability. However, coarse-resolution reanalysis products
+  such as ERA5-Land (9 km) fail to represent fine-scale thermal patterns. This study presents a UNet based
+  deep learning framework to downscale ERA5-Land 2-m air temperature to 250 m resolution at a 6-hourly
+  temporal frequency over the Trentino–South Tyrol Alpine region. The model is trained and validated using
+  the observation-based ALPINE-TST-250 gridded dataset, derived from more than 300 weather stations, and
+  integrates high-resolution elevation data along with physically meaningful auxiliary predictors. Including
+  2-m dew point temperature significantly improves performance, reducing the RMSE from 2.32 ° C to 2.05
+  ° C and the MAE from 1.76 ° C to 1.54 ° C . The resulting 2011–2021 downscaled dataset successfully
+  reproduces sub-kilometer spatial gradients and temporal variability absent in the original ERA5-Land
+  fields. These results highlight the potential of deep learning approaches to enhance temperature representation
+  in complex alpine terrain for climate and environmental applications.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

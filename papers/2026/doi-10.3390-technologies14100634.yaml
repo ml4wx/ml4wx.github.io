@@ -1,0 +1,61 @@
+id: doi-10.3390-technologies14100634
+title: Spatial Data Fusion and Machine Learning Bias Correction for Convection-Permitting Atmospheric
+  Downscaling and Multi-Criteria Site Feasibility Mapping in Complex Coastal Terrains
+authors:
+- Andres Valle-Gonzalez
+- Maryam Carrillo-Reales
+- Adalberto José Ospino Castro
+- Diego Restrepo-Leal
+- Carlos Robles-Algarín
+date: '2026-10-02'
+year: 2026
+venue: Technologies
+venue_type: journal
+ids:
+  doi: 10.3390/technologies14100634
+  openalex: W7205000402
+links:
+  paper: https://doi.org/10.3390/technologies14100634
+topic: post-processing
+topics:
+- downscaling
+- applications-impacts
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+- local
+data:
+- km-scale-sim
+status: research
+summary: Machine-learning bias correction of 3 km WRF winds on the Colombian Caribbean coast, with SVR
+  reaching R2 of 0.95, feeds a wind-site feasibility map.
+abstract: High-resolution atmospheric modeling over topographically complex coastal zones requires multi-source
+  spatial data fusion to bridge the scale gap between satellite-assimilated global reanalysis and localized
+  surface boundary layer dynamics. This study presents a spatial data fusion and post-processing framework
+  that couples convection-permitting Weather Research and Forecasting (WRF) simulations (3 km grid spacing)
+  with multi-model machine learning calibration and a geographic information system multi-criteria decision
+  analysis (GIS-MCDA) across continuous computational grids (24,871 cells). Focusing on a high-resolution
+  seasonal case study during the peak-intensity regime of the Caribbean Low-Level Jet (CLLJ) and Northeast
+  Trade Winds along the Colombian Caribbean coast, ten candidate predictive algorithms (a baseline linear
+  model, five ensemble/boosting architectures, Support Vector Regression, and three autoregressive benchmarks)
+  were evaluated across multiple validation schemes. Support Vector Regression (SVR) with a radial basis
+  function (RBF) kernel achieved superior residual calibration (R2=0.9523, RMSE=0.4601 m/s, RMSSE=0.2444)
+  under day-grouped cross-validation (GroupKFold), while strict chronological out-of-sample testing revealed
+  the critical sensitivity of kernel models to harmonic temporal encodings. A direction-preserving vector
+  scaling algorithm transferred scalar corrections to horizontal wind vectors, which were subsequently
+  scaled vertically to 80 m hub height using WRF-derived prognostic shear and roughness parameters. The
+  calibrated fields were integrated into a non-compensatory Boolean GIS-MCDA model incorporating thermodynamic
+  wind power density, topographic slope limits, environmental/indigenous reserves, and logistical infrastructure
+  proximity. The spatial fusion framework identified an 8.9% macro-corridor of high feasibility (2,214
+  cells; ≈19,926km2) concentrated in northern La Guajira, while substantially reducing the overestimation
+  artifacts of uncalibrated mesoscale simulations in the sheltered leeward wake of the Sierra Nevada de
+  Santa Marta. The methodology provides a reproducible data fusion approach for screening-level renewable
+  resource assessment in data-sparse tropical coastal environments.
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

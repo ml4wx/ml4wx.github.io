@@ -1,0 +1,59 @@
+id: doi-10.3390-rs18142298
+title: 'A Modular and Transferable Framework for Enhancing Satellite-Derived Daily Precipitation: Adjusting
+  Values, Aligning Distributions, and Preserving Extremes'
+authors:
+- Benny Istanto
+- Rizaldi Boer
+- I Putu Santikayasa
+date: '2026-07-09'
+year: 2026
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs18142298
+  openalex: W7167808645
+links:
+  paper: https://doi.org/10.3390/rs18142298
+topic: observations-remote-sensing
+topics:
+- post-processing
+type: model
+method:
+- cnn
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- stations
+status: research
+summary: Hybrid quantile mapping with a CNN refinement corrects IMERG-Late daily precipitation over Indonesia,
+  restoring standard deviation ratio from 0.71 to 1.00 and preserving extremes.
+abstract: 'Satellite-based precipitation products such as the Integrated Multi-satellitE Retrievals for
+  Global Precipitation Measurement (IMERG, V07) provide global coverage but exhibit systematic biases
+  in daily accumulations, particularly for extreme events. This study presents a hybrid bias-correction
+  framework (LSEQM+DL) for daily satellite precipitation that sequentially integrates Linear Scaling (LS)
+  for mean bias, Empirical Quantile Mapping (EQM) with a Generalized Pareto Distribution (GPD) tail adjustment
+  for distributional alignment, and a Convolutional Neural Network (CNN) refinement that targets extreme-precipitation
+  pixels. A station-density confidence mask scales the deep-learning influence with gauge density, so
+  the CNN refinement is strongest where the reference, the CPC Unified Gauge-Based Analysis of Daily Precipitation
+  (CPC-UNI), is best constrained. The framework targets the IMERG Late Run (IMERG-L), whose roughly 14
+  h latency suits near-real-time flood monitoring. It is applied over Indonesia (2001–2025) and evaluated
+  against CPC-UNI and 171 independent stations of the Meteorological, Climatological, and Geophysical
+  Agency (BMKG) through three pillars: adjusting values, aligning distributions, and preserving extremes.
+  At independent stations, the correction brings the standard deviation ratio from 0.71 (LS) to 1.00,
+  the relative bias from −11.4% to −0.6%, and the 99th-percentile ratio from 0.71 to 1.01, and reduces
+  a 21% over-estimation of wet-day frequency to within 5% of that observed. These gains carry a designed
+  cost: the probability of detection falls from 0.78 to 0.65, while pixel-level temporal metrics (correlation,
+  root-mean-square error, Nash–Sutcliffe efficiency) remain largely unchanged, confirming that the framework
+  improves statistical properties rather than day-to-day timing. Relying only on globally available satellite
+  and gauge-analysis data, and degrading gracefully where gauges are sparse, the framework is portable
+  in principle with regional recalibration of its three tuning parameters. The corrected near-real-time
+  product, with its station-density mask as a spatially explicit quality indicator, is intended to support
+  flood monitoring, water resource management, and climate risk assessment in Indonesia and other gauge-sparse
+  tropical regions.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

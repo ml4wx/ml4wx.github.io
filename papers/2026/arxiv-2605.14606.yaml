@@ -1,0 +1,61 @@
+id: arxiv-2605.14606
+title: 'MambaRain: Multi-Scale Mamba-Attention Framework for 0-3 Hour Precipitation Nowcasting'
+authors:
+- Chunlei Shi
+- Cui Wu
+- Xiang Xu
+- Hao Li
+- Ni Fan
+- Xue Han
+- Yongchao Feng
+- Yufeng Zhu
+- Boyu Liu
+- Zengliang Zang
+- Hongbin Wang
+- Yanlan Yang
+- Dan Niu
+date: '2026-05-14'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.14606'
+links:
+  paper: https://arxiv.org/abs/2605.14606
+  pdf: https://arxiv.org/pdf/2605.14606
+topic: nowcasting
+type: model
+method:
+- transformer
+- other
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: MambaRain combines Mamba and self-attention with a spectral loss to extend deterministic radar
+  nowcasting to 2-3 hours.
+abstract: Accurate precipitation nowcasting over extended horizons (0-3 hours) is essential for disaster
+  mitigation and operational decision-making, yet remains a critical challenge in the field. Existing
+  deterministic approaches are predominantly constrained to shorter prediction windows (0-2 hours), exhibiting
+  severe performance degradation beyond 90 minutes owing to their inherent difficulty in capturing long-range
+  spatiotemporal dependencies from radar-derived observations. To address these fundamental limitations,
+  we propose MambaRain, a novel multi-scale encoder-decoder architecture that synergistically integrates
+  Mamba's linear-complexity long-range temporal modeling with self-attention mechanisms for explicit spatial
+  correlation capture. The core innovation lies in a hybrid design paradigm wherein Mamba blocks leverage
+  selective state space mechanisms to model global temporal dynamics across extended sequences with computational
+  efficiency, while self-attention modules explicitly characterize spatial correlations within precipitation
+  fields - a capability inherently absent in Mamba's sequential processing paradigm. This complementary
+  synergy enables comprehensive spatiotemporal representation learning, effectively extending the viable
+  forecasting horizon to 2-3 hours with substantial accuracy improvements. Furthermore, we introduce a
+  spectral loss formulation to mitigate blurring artifacts characteristic of chaotic precipitation systems,
+  thereby preserving fine-scale motion details critical for nowcasting accuracy. Experimental validation
+  demonstrates that MambaRain substantially outperforms existing deterministic methodologies in 0-3 hour
+  nowcasting tasks, with particularly pronounced performance gains in the challenging 2-3 hour prediction
+  range.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

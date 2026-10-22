@@ -1,0 +1,64 @@
+id: doi-10.3390-rs18142383
+title: Contribution Disparity and Key Factor Screening of Lightning Identification and Nowcasting with
+  Multi-Source Data
+authors:
+- Xinjue Wang
+- Zirui Xu
+- Yujian Zhang
+- Yuanpeng Han
+- Lin Song
+- Q P Zhang
+- Yi Liu
+date: '2026-07-17'
+year: 2026
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs18142383
+  openalex: W7169718467
+links:
+  paper: https://doi.org/10.3390/rs18142383
+  pdf: https://www.mdpi.com/2072-4292/18/14/2383/pdf?version=1784280458
+orgs:
+- nuist
+- university-of-reading
+topic: nowcasting
+topics:
+- observations-remote-sensing
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- satellite
+status: research
+summary: Feature-selection workflow picks 3 of 28 Himawari channels plus radar for lightning identification
+  (CSI 0.433) and nowcasting (CSI 0.284), beating full-channel models.
+abstract: Radar and geostationary satellite observations provide essential information for lightning identification
+  and nowcasting. However, multi-source channels commonly exhibit correlation and redundancy, and directly
+  using all channels increases computational cost and may degrade model performance. This paper focuses
+  on lightning identification and 0–1 h nowcasting, integrating radar composite reflectivity, Himawari-8/9
+  AHI multi-channel observations, and VLF-LLN lightning location data to construct a multi-source spatiotemporally
+  aligned dataset. Using baseline deep-learning-based identification and nowcasting models, this paper
+  proposes a workflow for analyzing multi-source channel contribution differences and selecting key factors
+  by integrating permutation feature importance (PFI), SHAP attribution, channel collinearity grouping,
+  and validation-set wrapper search. The results show that radar composite reflectivity has a stable dominant
+  contribution in both tasks. The final selected channels are radar composite reflectivity, ΔBand 13,
+  and Band 14 + Band 09 for the identification task, while they are radar composite reflectivity, Band
+  14, (Band 11 − Band 13) − (Band 13 − Band 15), and Δ(Band 08 − Band 13) for the nowcasting task. Independent
+  test results show that under fixed thresholds, the three-channel identification model achieves a CSI
+  of 0.433, outperforming the full 28-channel model with a CSI of 0.415, while the four-channel nowcasting
+  model achieves a CSI of 0.284, outperforming the full-channel model with a CSI of 0.274. These results
+  indicate that the proposed method can reduce input dimensionality while maintaining or improving model
+  performance, and it can support multi-source predictor selection, lightweight deployment, and operational
+  interpretation in lightning nowcasting.
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

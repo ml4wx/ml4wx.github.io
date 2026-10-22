@@ -1,0 +1,37 @@
+id: arxiv-2610.03396
+title: A Unified Framework for Bayesian Data Assimilation with Generative Models and Observation Interpolants
+authors:
+- Nikolaj T. Mücke
+- Benjamin Sanderse
+date: '2026-10-02'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.03396'
+links:
+  paper: https://arxiv.org/abs/2610.03396
+  pdf: https://arxiv.org/pdf/2610.03396
+topic: data-assimilation
+type: model
+method:
+- diffusion
+data:
+- other
+status: research
+summary: Turns pretrained interpolant, flow matching and diffusion models into Bayesian posterior samplers
+  without retraining, tested on toy dynamics, Navier-Stokes and urban airflow.
+abstract: Bayesian data assimilation combines model forecasts with noisy observations, but sampling high-dimensional,
+  non-Gaussian posteriors remains challenging. We introduce an observation-interpolant framework that
+  turns pretrained stochastic interpolant, flow matching, and diffusion models into posterior samplers
+  without retraining. Conditioning the interpolant path on observations yields a shared likelihood-score
+  correction to the drift or velocity, unifying stochastic and deterministic posterior sampling. The resulting
+  SDEs and ODEs sample the exact posterior when the intermediate likelihood score is known. For practical
+  computation, we approximate this score using a closed-form Gaussian surrogate with a bias-corrected
+  mean and covariance inflated by the model's source covariance. Jacobian-free and ensemble-shared approximations
+  make the method tractable in high dimensions. We evaluate the framework on linear-Gaussian dynamics,
+  stochastic two-dimensional Navier-Stokes, and urban airflow with up to $O(10^4)$ degrees of freedom.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

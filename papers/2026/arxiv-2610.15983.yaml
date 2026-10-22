@@ -1,0 +1,51 @@
+id: arxiv-2610.15983
+title: Probabilistic Forecasting of Wildfire Size Using Conditional Flow Matching
+authors:
+- Isaac Lee
+- Bryan Shaddy
+- Assad Oberai
+date: '2026-10-11'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.15983'
+links:
+  paper: https://arxiv.org/abs/2610.15983
+  pdf: https://arxiv.org/pdf/2610.15983
+  code: https://github.com/isaaclee2/Wildfire_Size_Flow_Matching
+topic: extremes-hazards
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+timescale:
+- short
+spatial:
+- local
+data:
+- km-scale-sim
+- nwp-analysis
+status: research
+summary: A flow matching model forecasts wildfire acreage every 3 hours from WRF-SFIRE simulations and
+  NAM weather, reaching 0.39 sMAPE over 24 hours.
+abstract: In this work we present a probabilistic model for predicting the temporal evolution of wildfire
+  size using conditional generative algorithms, namely flow matching. Rather than predicting spatially
+  resolved fire progression, the proposed model forecasts a time series of fire acreage, substantially
+  reducing computational cost and enabling efficient integration with downstream applications such as
+  early warning systems and risk assessment tools. Given estimates of the fire size at the current and
+  previous forecasting steps, alongside spatially averaged weather conditions, terrain characteristics,
+  and fuel composition, the model predicts the change in fire area over a 3-hour interval. Training data
+  are drawn from 140 coupled atmosphere-wildfire simulations generated using WRF-SFIRE, paired with weather
+  data from the North American Mesoscale (NAM) model. Sensitivity analysis demonstrates that the model
+  captures physically-consistent responses to variations in wind speed, temperature, and relative humidity.
+  Model performance is evaluated against reference solutions from WRF-SFIRE. For single-step predictions,
+  the model achieves a symmetric mean absolute percentage error (sMAPE) of 0.39 relative to the reference
+  WRF-SFIRE solutions. Recursive multi-step predictions over 24 hours are performed for 12 held-out test
+  cases, where the flow matching model achieves a final fire area sMAPE of 0.39 while further providing
+  meaningful quantification of forecast uncertainty.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

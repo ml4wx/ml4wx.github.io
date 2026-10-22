@@ -1,0 +1,46 @@
+id: arxiv-2609.04906
+title: Methane Detection On Board Satellites from Unorthorectified Imagery
+authors:
+- Luca Marini
+- Maggie Chen
+- Hala Lamdouar
+- Laura Martínez-Ferrer
+- Dr C. P. Bridges
+- Giacomo Acciarini
+date: '2026-09-04'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.04906'
+links:
+  paper: https://arxiv.org/abs/2609.04906
+  pdf: https://arxiv.org/pdf/2609.04906
+  code: https://github.com/spaceml-org/plume-hunter
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- satellite
+status: pre-operational
+summary: U-Net trained on unorthorectified EMIT hyperspectral imagery detects methane plumes onboard satellites,
+  reaching IoU 16.9% versus 4.8% for matched-filter baseline.
+abstract: 'As a potent greenhouse gas, methane is a major driver of climate change. Its effective mitigation
+  relies on timely detection. Conventional detection methods rely on orthorectification to correct geometric
+  distortions and matched filters to enhance plume signals, which are steps designed for ground processing
+  and poorly suited to onboard execution. We introduce UnorthoDOS, a dataset and approach for training
+  machine learning models directly on unorthorectified hyperspectral imagery, bypassing both orthorectification
+  and matched-filter products. Our U-Net models trained on unorthorectified data approach the performance
+  of models trained on orthorectified data (IoU 16.91% vs. 18.47% on all plumes), while both substantially
+  outperform the mag1c matched-filter baseline (IoU 4.76%). We further demonstrate the feasibility of
+  onboard deployment: FP16 compression halves model size with under 0.3% output deviation. The trained
+  ML models and two ML-ready datasets -- orthorectified and unorthorectified hyperspectral imagery from
+  the EMIT sensor -- are publicly available at https://huggingface.co/datasets/SpaceML/UnorthoDOS, with
+  code at https://github.com/spaceml-org/plume-hunter.'
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

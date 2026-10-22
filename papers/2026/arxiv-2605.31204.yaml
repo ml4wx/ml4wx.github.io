@@ -1,0 +1,53 @@
+id: arxiv-2605.31204
+title: Probabilistic Precipitation Nowcasting with Rectified Flow Transformers
+authors:
+- Johannes Schusterbauer
+- Jannik Wiese
+- Nick Stracke
+- Timy Phan
+- Björn Ommer
+date: '2026-05-29'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.31204'
+  openalex: W7162988099
+links:
+  paper: https://arxiv.org/abs/2605.31204
+  pdf: https://arxiv.org/pdf/2605.31204
+  code: https://github.com/CompVis/weather-rf
+topic: nowcasting
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+- transformer
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- satellite
+status: research
+summary: FREUD uses a rectified-flow transformer with an uncertainty-preserving autoencoder for probabilistic
+  precipitation nowcasting, reaching state of the art on the SEVIR benchmark.
+abstract: 'Accurate weather forecasts are essential across various domains and are safety-critical in
+  extreme weather conditions. Compared to simulation-based forecasting, data-driven approaches show greater
+  efficiency, enabling short-term, high-resolution nowcasting. In particular, diffusion models proved
+  effective in weather nowcasting due to their strong probabilistic foundation. However, existing methods
+  rely on deterministic compression to reduce the complexity of high-dimensional weather data, limiting
+  their ability to capture uncertainty in the decoding process. In this work, we introduce $\textbf{FREUD}$,
+  a $\textbf{Fr}$ame-wise $\textbf{E}$ncoder and $\textbf{U}$nited $\textbf{D}$ecoder model based on rectified
+  flow transformers for efficient compression of spatio-temporal weather data. Frame-wise encoding enables
+  continuous forecast updates, while the unified video decoder ensures temporal consistency. Our uncertainty-preserving
+  first stage allows us to capture aleatoric uncertainty via ensembling, which is particularly beneficial
+  for extreme weather events with high decoding variability. We achieve state-of-the-art performance in
+  precipitation nowcasting with a compact latent-space rectified flow transformer on the SEVIR benchmark
+  and show further performance gains by model and test-time scaling. Code available here: https://github.com/CompVis/weather-rf'
+significance: 5
+score: 30
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,60 @@
+id: doi-10.3390-atmos17070675
+title: 'Performance-Based Comparative Forecasting of Near-Future Evapotranspiration Using Statistical,
+  Machine-Learning and Deep Learning Methods: A Case Study of Lake Burdur, Türkiye'
+authors:
+- Muzaffer Göztaş
+- Nida ORUÇ ÜNAL
+- Doğan Yıldız
+- Dursun Yıldız
+date: '2026-07-08'
+year: 2026
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos17070675
+  openalex: W7167715302
+links:
+  paper: https://doi.org/10.3390/atmos17070675
+topic: local-forecasting
+type: application
+method:
+- rnn
+- classical-ml
+timescale:
+- decadal
+spatial:
+- local
+data:
+- other
+status: research
+summary: Compares SARIMAX, XGBoost and LSTM for 2025–2030 evapotranspiration at Lake Burdur; LSTM reaches
+  mean R² 0.941 for ET0.
+abstract: In this study, daily reference evapotranspiration (ET0) values for the period 2025–2030 for
+  Lake Burdur, located in the Mediterranean climate zone and within the Burdur closed basin, were estimated
+  using nested architecture focused on high accuracy. The ET0 target corresponds to the FAO-56 Penman–Monteith
+  reference evapotranspiration variable provided by the Open-Meteo Historical Weather API, and it is treated
+  throughout as a standardized measure of atmospheric evaporative demand rather than as actual lake-surface
+  evaporation or basin water loss. For this purpose, daily mean air temperature, relative humidity, shortwave
+  surface radiation, and evapotranspiration data for the period 1984–2024 were obtained from the Open-Meteo
+  platform. In the first stage of the study (Model 1), separate SARIMAX (statistical), XGBoost (machine
+  learning), and LSTM (deep learning) models were applied for temperature, relative humidity, and radiation
+  series; the model with the highest validation mean for each variable was selected. Accordingly, LSTM
+  (Mean R2 = 0.967) was determined to be the most successful model for temperature, SARIMA(X) (Mean R2
+  = 0.812) for relative humidity, and XGBoost (Mean R2 = 0.845) for the radiation variable, which is non-linear,
+  has strong autocorrelation, and exhibits distinct seasonality. In the second stage (Model 2), these
+  best climate predictions were used as independent variables for evapotranspiration, and LSTM provided
+  the highest success for evapotranspiration (Mean R2 = 0.941). Trend analyses revealed that the increase
+  in temperature and evapotranspiration and the decrease in relative humidity observed in the past period
+  will continue in the near future. The uncertainty analysis conducted using the Monte Carlo/resampling
+  approach on historical data showed that the 95% prediction intervals largely protected the upward trend
+  in evapotranspiration against random fluctuations. These intervals reflect residual-based uncertainty
+  under the fitted model rather than the full predictive uncertainty of future basin evapotranspiration.
+  The findings indicate that designing model selection appropriate to the structure of the variables within
+  a nested prediction framework significantly improves forecast accuracy and can provide a viable decision
+  support input for sustainable water management in Mediterranean basins experiencing water scarcity.
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

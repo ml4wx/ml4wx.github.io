@@ -1,0 +1,53 @@
+id: arxiv-2610.19885
+title: Generative modelling for multivariate spatio-temporal downscaling of monthly climate fields
+authors:
+- Yu Huang
+- Shangshang Yang
+- Sebastian Bathiany
+- Michael Aich
+- Philipp Hess
+- Niklas Boers
+date: '2026-10-14'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.19885'
+  openalex: W7221911629
+links:
+  paper: https://arxiv.org/abs/2610.19885
+  pdf: https://arxiv.org/pdf/2610.19885
+topic: downscaling
+topics:
+- foundation-models
+type: model
+method:
+- diffusion
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Uses a conditionally guided diffusion model to jointly downscale monthly 1-degree temperature
+  and precipitation into daily 0.25-degree fields without retraining.
+abstract: Inferring climate fields at higher spatio-temporal resolutions from coarse representations is
+  essential for accessing socioeconomic and environmental impacts. The downscaling of modelled climate
+  fields faces a trade-off between data storage constraints, simulation efficiency, and resolution requirements.
+  While many methods for spatial downscaling have been proposed, joint spatio-temporal downscaling has
+  received comparable little attention. When deriving, for example, daily fields from climate datasets
+  that are available only as monthly averages at coarser spatial resolution, it is highly challenging
+  to faithfully reproduce extreme event statistics and spatiotemporal consistency. To address this task,
+  we introduce a generative machine learning approach, using a diffusion model to jointly downscale monthly
+  temperature and precipitation fields into temporally consistent daily fields at higher spatial resolution.
+  We demonstrate that our approach can generate high-dimensional multivariate climate fields at daily
+  temporal and 0.25° spatial resolution from monthly input fields at 1° spatial resolution, exhibiting
+  coherent temporal dynamics and physically plausible spatial structures. In particular, by incorporating
+  a conditional guidance technique, we show that a pre-trained diffusion model can be directly leveraged
+  to efficiently generate daily high-resolution fields conditioned on monthly inputs, without requiring
+  additional fine-tuning or retraining. Our probabilistic approach thus provides an efficient and generalizable
+  framework for spatio-temporal climate downscaling, enabling flexible climate fields generation for climate
+  impact assessments and digital Earth simulator constructions.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

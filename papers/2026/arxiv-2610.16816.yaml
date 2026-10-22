@@ -1,0 +1,44 @@
+id: arxiv-2610.16816
+title: Statistical Downscaling of Daily Precipitation from ERA5 Atmospheric Fields to IMERG over West
+  Africa
+authors:
+- David Sagna
+- Redouane Lguensat
+- Samo Diatta
+date: '2026-10-12'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.16816'
+links:
+  paper: https://arxiv.org/abs/2610.16816
+  pdf: https://arxiv.org/pdf/2610.16816
+topic: downscaling
+topics:
+- regional-km-scale
+type: model
+method:
+- cnn
+- gan-vae
+spatial:
+- regional
+data:
+- era5
+- satellite
+status: research
+summary: U-Net and GAN downscaling maps daily ERA5 fields to IMERG precipitation over West Africa, with
+  GANs preserving variance that deterministic models lose.
+abstract: Global reanalyses are too coarse to resolve the convective systems that produce most West African
+  monsoon rainfall. In this work, we use U-Net based architectures to downscale daily ERA5 fields (0.25°)
+  to IMERG V07 satellite precipitation (0.1°) over West Africa for the June to October seasons of 2000
+  to 2024, using geopotential, temperature, humidity and wind at three pressure levels together with elevation
+  and land fraction. Adding ERA5 precipitation as input slightly improves performance for this particular
+  challenging region. We find that all the deterministic networks investigated for this work are too dry
+  and lose almost all observed variance below a few hundred kilometers, which motivated our use of a GAN-based
+  alternative. We also investigated permutation importance for the U-Net that ranks 500 hPa specific humidity
+  first, consistent with the sensitivity of deep convection to mid-tropospheric moisture.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

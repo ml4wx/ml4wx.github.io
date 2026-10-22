@@ -1,0 +1,57 @@
+id: arxiv-2606.21170
+title: Towards Fair Comparisons of AI- and Physics-Based Weather Models for Extreme Events via the Weighted
+  Potential CRPS
+authors:
+- Tobias Biegert
+- Sam Allen
+- Annika Alber
+- Sebastian Lerch
+date: '2026-06-19'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.21170'
+  openalex: W7165692131
+links:
+  paper: https://arxiv.org/abs/2606.21170
+  pdf: https://arxiv.org/pdf/2606.21170
+topic: benchmarks-data-eval
+topics:
+- post-processing
+- extremes-hazards
+type: evaluation
+method:
+- classical-ml
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: Weighted potential CRPS with isotonic regression finds AI models GraphCast, Pangu-Weather and
+  FuXi give more informative extreme-weather forecasts than ECMWF HRES in most settings.
+abstract: We study whether deterministic AI weather prediction (AIWP) models issue more informative forecasts
+  for extreme weather events than deterministic numerical weather prediction (NWP) models. The deterministic
+  model output is subjected to statistical post-processing via isotonic distributional regression (IDR),
+  or EasyUQ, before the resulting probabilistic forecasts are assessed using weighted versions of the
+  continuous ranked probability score (CRPS). This extends the Potential CRPS (PCRPS) measure proposed
+  by Gneiting et al. (2026) to focus on extreme outcomes. Since IDR exhibits optimality properties with
+  respect to weighted versions of the CRPS, the proposed approach inherits desirable properties of the
+  PCRPS, and, in particular, facilitates fair comparisons between data-driven and physics-based models
+  when forecasting extreme weather events. We apply this evaluation framework to forecasts in the WeatherBench
+  2 dataset issued by the AIWP models GraphCast, Pangu-Weather, and FuXi, with the ECMWF's high-resolution
+  NWP model serving as a physics-based reference. The forecast models are compared when predicting mean
+  sea level pressure, temperature, wind speed, and precipitation extremes, defined as exceedances or non-exceedances
+  of thresholds obtained from historical observation data. We additionally study forecast performance
+  when predicting record-breaking events, though the ordering of the different methods is largely insensitive
+  to the thresholds on which emphasis is placed. We find that AIWP models, particularly FuXi, result in
+  the most informative forecasts for extreme weather events across most settings, suggesting that AIWP
+  models have the potential to outperform NWP models when forecasting extremes.
+significance: 5
+cited_by: 0
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,61 @@
+id: doi-10.1029-2025jd045579
+title: 'Global‐Frequency Synergy: A Novel Paradigm for Radar Echo Extrapolation via Attention and Fourier
+  Convolution'
+authors:
+- Wei Wu
+- Guangxin He
+- Xiaoran Zhuang
+- Yuxuan Feng
+- Juanzhen Sun
+- Haonan Chen
+- Lei Lei
+- Jingjia Luo
+date: '2026-05-23'
+year: 2026
+venue: Journal of Geophysical Research Atmospheres
+venue_type: journal
+ids:
+  doi: 10.1029/2025jd045579
+  openalex: W7162206063
+links:
+  paper: https://doi.org/10.1029/2025jd045579
+orgs:
+- ncar
+- nuist
+- colorado-state-university
+topic: nowcasting
+topics:
+- regional-km-scale
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: GFST-LSTM adds attention and Fourier convolution to ST-LSTM for radar echo extrapolation, improving
+  CSI at 40 dBZ by 22.9% over PredRNN.
+abstract: Abstract Accurate radar echo extrapolation is critical for short‐term weather forecasting, yet
+  existing deep learning methods often suffer from echo ambiguity, intensity decay, and insufficient global
+  context utilization. To address these limitations, this paper proposes Global‐Frequency Spatiotemporal
+  Long Short‐Term Memory ( GFST‐LSTM), a novel model that integrates a global attention mechanism and
+  Fourier convolutional modules into the Spatiotemporal LSTM ( ST‐LSTM) architecture. The attention module
+  dynamically weights multi‐scale spatiotemporal features by enhancing channel and spatial correlations,
+  while the Fourier convolution module captures global periodic patterns via frequency‐domain transformations.
+  Evaluated on the Moving Modified National Institute of Standards and Technology database (Moving MNIST)
+  benchmark and Jiangsu Province radar data sets (2019–2021), GFST‐LSTM achieves a 22.9% improvement in
+  Critical Success Index and 13.1% in Heidke Skill Score over Predictive Recurrent Neural Network at the
+  40 dBZ threshold. Notably, it excels in preserving strong echo regions during 60–120 min predictions,
+  reducing positional bias by 6.6% compared to the Motion Gated Recurrent Unit (MotionGRU). Ablation studies
+  confirm the synergistic effect of both modules, with the full model outperforming variants that lack
+  either component.
+significance: 3
+cited_by: 1
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

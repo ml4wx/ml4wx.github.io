@@ -1,0 +1,50 @@
+id: arxiv-2610.08652
+title: Steering Diffusion Models to Rare Events with Sequential Monte Carlo
+authors:
+- Aavash Subedi
+- Tim Reichelt
+- Christopher Williams
+- Philip Stier
+- Yee Whye Teh
+- Saifuddin Syed
+date: '2026-10-06'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.08652'
+  openalex: W7221051864
+links:
+  paper: https://arxiv.org/abs/2610.08652
+  pdf: https://arxiv.org/pdf/2610.08652
+orgs:
+- university-of-oxford
+topic: extremes-hazards
+topics:
+- climate-emulation
+type: model
+method:
+- diffusion
+spatial:
+- global
+data:
+- other
+status: research
+summary: Sequential Monte Carlo steers diffusion models to rare events, reaching 9x to 1413x speed-ups
+  on a score-based climate emulator for 1e-3 to 1e-5 rarities.
+abstract: Diffusion models are increasingly used as surrogates for expensive simulators in weather prediction,
+  molecular dynamics, and materials design. In these models, computing the probability $p_0[E]$ of an
+  event $E$ is difficult, especially when the event of interest is rare. A stable estimate using Monte
+  Carlo becomes computationally intractable, requiring a growing sample size $\propto\!1/p_0[E]$ to compensate
+  for an increasing rarity. In this paper, we present Diffusion rare event sampling with Sequential Monte
+  Carlo (DireSMC), a sequential Monte Carlo scheme that guides a population of weighted samples towards
+  the rare event, giving access not only to samples but also to a calibrated estimate of its probability.
+  We set up our guidance using an analytical relaxation of the event set, allowing the method to easily
+  extend to a wide range of user-defined rare events. We validate our method on a toy problem with analytical
+  solutions and on a score-based climate emulator, where we obtain accurate rare-event probabilities on
+  a range of rarities from $10^{-3}$ to $10^{-5}$, achieving net speed-ups of $9\times$ to $1413\times$
+  over Monte Carlo.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

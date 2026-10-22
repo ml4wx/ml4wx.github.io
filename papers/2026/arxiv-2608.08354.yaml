@@ -1,0 +1,52 @@
+id: arxiv-2608.08354
+title: Tropical Cyclone Forecasting via Latent Rectified Flow using Satellite Imagery and Atmospheric
+  Fields
+authors:
+- Meheru Zannat
+- Sk. Md. Masudul Ahsan
+date: '2026-08-08'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2608.08354'
+links:
+  paper: https://arxiv.org/abs/2608.08354
+  pdf: https://arxiv.org/pdf/2608.08354
+topic: extremes-hazards
+topics:
+- probabilistic-ensembles
+- observations-remote-sensing
+type: model
+method:
+- diffusion
+- gan-vae
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+- era5
+status: research
+summary: Latent rectified-flow model jointly forecasts satellite imagery and ERA5 fields for tropical
+  cyclones, ~30x faster than cascaded diffusion with 15% lower track error.
+abstract: Tropical cyclones are growing more destructive in a changing climate, and efficient forecasting
+  of their structure and track has become a necessity. Deep generative models promise an alternative to
+  computationally expensive numerical weather prediction (NWP), yet current systems produce either satellite
+  imagery or atmospheric fields, never both; they need many sampling steps, putting them out of reach
+  of modest hardware; and their storm tracks come from regression heads with no physical link to the generated
+  atmosphere. This work presents a single-pass model that jointly forecasts GRIDSAT-B1 infrared imagery
+  and four ERA5 atmospheric fields (U-wind, V-wind, air temperature, and surface pressure) out to nine
+  hours. A five-channel variational autoencoder compresses each 5 x 256 x 256 frame to a 4 x 64 x 64 latent,
+  and a conditional rectified-flow UNet with a factorized temporal-attention module predicts the next
+  three frames from three past frames, their best-track coordinates, and timestamps. The model is then
+  reward-fine-tuned (DRaFT) against a differentiable track error derived from the predicted winds through
+  a steering-flow calculation. On held-out 2022 storms the model reaches 16.35 dB PSNR and 0.759 SSIM,
+  ahead of a reproduced cascaded-diffusion baseline at every lead time (+0.84 dB at +9 h) while sampling
+  ~30x faster (56 ms vs. 1673 ms). Track error at +9 h is 62.4 km, 15% below the baseline, and a reward
+  fine-tuning study demonstrates a further 8-11% track-error reduction across sampler budgets.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,60 @@
+id: doi-10.1088-2515-7620-aeabf0
+title: 'How ocean thermal structure and atmospheric steering govern typhoon evolution: evidence from interpretable
+  machine learning'
+authors:
+- Dang Thi Bich Hong
+- Mark Roantree
+- Tran Quang Vinh
+date: '2026-09-23'
+year: 2026
+venue: Environmental Research Communications
+venue_type: journal
+ids:
+  doi: 10.1088/2515-7620/aeabf0
+  openalex: W7214115356
+links:
+  paper: https://doi.org/10.1088/2515-7620/aeabf0
+  pdf: https://iopscience.iop.org/article/10.1088/2515-7620/aeabf0/pdf
+topic: extremes-hazards
+topics:
+- xai-uq-physics
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+- other
+status: research
+summary: XGBoost with SHAP predicts typhoon track and intensity to 24 h, cutting track RMSE about 45%
+  versus persistence; ocean thermal structure drives intensity.
+abstract: 'Abstract Reliable typhoon forecasting demands both predictive accuracy and physical transparency.
+  This study develops a tree-based framework for simultaneous multi-step prediction of typhoon trajectory
+  and intensity in Western North Pacific (WNP), and applies SHapley additive explanations (SHAP) to quantify
+  the contribution of individual environmental drivers to each forecast. The framework integrates Japan
+  Meteorological Agency Best Track data (1977–2024) with ERA5 and ORAS5 reanalyses, incorporating mean
+  potential temperature over 0–100 m ( T 100 ), a predictor largely overlooked in favour of sea surface
+  temperature, together with upper ocean heat content (OHC) and thermocline depth, within a 780-dimensional
+  72 h lagged feature space. Among three tree-based architectures evaluated under identical conditions,
+  XGBoost performs best across all targets and horizons: at + 24 h on the independent 2020–2024 test set
+  it attains RMSE of 1.90 ∘ and 2.92 ∘ for latitude and longitude and 11.9 hPa and 16.2 kt for central
+  pressure (CP) and maximum wind speed (MW). This has effect of reducing RMSE by about 45% (track) and
+  24%–25% (intensity) relative to persistence, with bootstrap 95% confidence intervals excluding zero
+  in every case, and by 9% and 13% relative to random forest for CP and MW. elbow-based feature selection
+  shows trajectory converges on a compact predictor subset whereas intensity demands a richer feature
+  space. SHAP analysis reveals a physically coherent horizon-dependent shift: at + 6 h kinematic persistence
+  governs both track and intensity, while at + 24 h large-scale steering flow dominates track displacement
+  and ocean–atmosphere thermodynamic forcing progressively takes over intensity. T 100 exhibits a sharp
+  nonlinear threshold near 26 ∘ C that is robust across the test period and encodes upper OHC dynamics
+  without explicit parameterisation. By coupling statistically significant forecast skill with transparent,
+  physics-consistent attribution, the framework offers a physically interpretable complement to black-box
+  systems for typhoon guidance in the WNP.'
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

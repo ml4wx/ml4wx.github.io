@@ -1,0 +1,50 @@
+id: arxiv-2607.05658
+title: Integrating GNSS-Derived Zenith Wet Delay into a Weather Foundation Model Improves Precipitation
+  Forecasting
+authors:
+- Leonardo Trentini
+- Fanny Lehmann
+- Laura Crocetti
+- Benedikt Soja
+date: '2026-07-06'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2607.05658'
+  openalex: W7167674475
+links:
+  paper: https://arxiv.org/abs/2607.05658
+  pdf: https://arxiv.org/pdf/2607.05658
+topic: foundation-models
+topics:
+- observations-remote-sensing
+- extremes-hazards
+type: model
+method:
+- transformer
+timescale:
+- short
+spatial:
+- global
+data:
+- era5
+- satellite
+status: research
+summary: Integrates GNSS zenith wet delay into the Aurora foundation model, improving 6-hour precipitation
+  forecasts and raising Equitable Threat Score by 8.8% at the 99th percentile.
+abstract: 'Global Navigation Satellite Systems (GNSS), best known for positioning, also serve weather
+  science, as atmospheric water vapour delays their signals. This delay, the Zenith Wet Delay (ZWD), is
+  a direct, all-weather measure of column moisture. Although assimilated into numerical weather prediction
+  for decades, ZWD is not yet used by leading Machine Learning Weather Models (MLWM), despite addressing
+  a known deficiency: the underestimation of severe precipitation. Here we present the first integration
+  of GNSS-derived ZWD into Aurora, a state-of-the-art weather foundation model. Our extended Aurora learns
+  ZWD with skill comparable to its pretrained variables. More importantly, including ZWD systematically
+  improves forecasts when fine-tuning for 6-hour accumulated precipitation. Gains grow with severity,
+  reaching an 8.8% increase in Equitable Threat Score at the 99th percentile, while the precipitation
+  power spectrum becomes more realistic at synoptic and planetary scales. GNSS observations therefore
+  encode information that MLWM can exploit for high-impact precipitation.'
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

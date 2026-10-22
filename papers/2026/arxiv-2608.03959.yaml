@@ -1,0 +1,61 @@
+id: arxiv-2608.03959
+title: 'Prithvi-Precip: Integrating Satellite Observations into an Atmospheric AI Foundation Model for
+  Precipitation Forecasting'
+authors:
+- Simon Pfreundschuh
+- Christian D. Kummerow
+- Johannes Schmude
+- Sujit Roy
+- Rahul Ramachandran
+- Tsengdar Lee
+- Valentine Anantharaj
+- Katherine H. Breen
+date: '2026-08-04'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2608.03959'
+links:
+  paper: https://arxiv.org/abs/2608.03959
+  pdf: https://arxiv.org/pdf/2608.03959
+topic: foundation-models
+topics:
+- global-medium-range
+type: model
+method:
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- satellite
+- era5
+- radar
+- other
+status: pre-operational
+summary: Prithvi-Precip fine-tunes the Prithvi-WxC foundation model for global precipitation, with satellite-derived
+  training targets and direct satellite ingestion improving skill over MERRA-2 targets and GEOS forecasts.
+abstract: Accurate precipitation forecasting remains one of the most challenging problems in weather prediction.
+  While recent AI weather prediction (AIWP) systems have achieved substantial improvements in medium-range
+  forecasting skill, precipitation often remains a secondary target and is commonly learned from reanalysis
+  datasets that contain considerable uncertainty. In this work, we investigate two complementary strategies
+  for improving AI-based precipitation forecasts. Building on the Prithvi-WxC foundation model, we develop
+  Prithvi-Precip, a global precipitation forecasting system, and examine (1) the impact of training targets
+  derived from satellite-based precipitation estimates rather than reanalysis fields and (2) the direct
+  assimilation of satellite observations into the forecasting model. We systematically evaluate key design
+  choices for finetuning the Prithvi-WxC AI foundation model for precipitation forecasting. We find that
+  autoregressive rollout training produces substantially more accurate forecasts than direct conditioning
+  on forecast lead time. Using independent radar-based precipitation estimates for evaluation, we show
+  that training on satellite-derived precipitation targets yields improved forecast accuracy relative
+  to training on MERRA-2 precipitation fields. Furthermore, direct ingestion of satellite observations
+  provides additional improvements at short lead times, with the largest gains occurring in tropical and
+  subtropical regions. Together, these advances enable Prithvi-Precip to substantially improve upon directly
+  comparable precipitation forecasts from the Goddard Earth Observing System. Our results highlight the
+  potential of improved precipitation targets and the direct integration of satellite observations as
+  promising pathways for advancing medium-range AI precipitation forecasting.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

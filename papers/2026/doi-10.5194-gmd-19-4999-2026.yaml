@@ -1,0 +1,69 @@
+id: doi-10.5194-gmd-19-4999-2026
+title: 'MIPV-NWP-PINNs V1.0: development of a multi-scale photovoltaic power forecasting framework integrating
+  numerical weather prediction with physics-informed neural networks'
+authors:
+- Fei Zhang
+- Xingcai Li
+- Zi Wang
+- Yunyun Wen
+- Xuyang Zhou
+- Zichen Wu
+- Zhuoran Wang
+- Huansheng Chen
+- Zhe Wang
+- Xueshun Chen
+date: '2026-06-12'
+year: 2026
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-19-4999-2026
+  openalex: W7164490374
+links:
+  paper: https://doi.org/10.5194/gmd-19-4999-2026
+orgs:
+- iap-cas
+topic: applications-impacts
+topics:
+- post-processing
+type: model
+method:
+- rnn
+- transformer
+- physics-constrained
+timescale:
+- short
+- medium
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Physics-informed iTransformer and quantile-mapped TPA-LSTM correction of WRF forecasts improve
+  PV power prediction, with RMSE 15.5% lower than alternatives across horizons.
+abstract: Abstract. Photovoltaic (PV) power generation has become a cornerstone of clean energy, for which
+  accurate forecasting is essential to ensure safe and efficient grid integration. However, raw Numerical
+  Weather Prediction (NWP) outputs often fail to provide reliable forecasts because PV power is influenced
+  by multiple coupled factors, including meteorological factors and photovoltaic modules. To address this
+  challenge, this study develops a multi-scale PV power forecasting framework that integrates NWP with
+  deep learning techniques (MIPV-NWP-PINN) and evaluates its performance using PV module monitoring data
+  from a power station in northwestern China. First, a regional high-resolution NWP system based on the
+  Weather Research and Forecasting (WRF) model is established to generate multi-scale meteorological forecasts
+  with lead times of 6 hours, 1 day, 3 days, and 5 days. Next, a novel hybrid correction model that combines
+  Quantile Mapping with a Temporal Pattern Attention-based Long Short-Term Memory (TPA-LSTM) network is
+  proposed to improve the accuracy of Global Horizontal Irradiance (GHI) forecasts. This correction approach
+  reduces the Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE) by more than 23 % compared
+  to raw NWP outputs. Building on these corrected meteorological forecasts, a Physics-Informed Neural
+  Network (PINN)-iTransformer model is developed for the final prediction of PV power. By incorporating
+  physical constraints directly into its loss function, this model consistently outperforms state-of-the-art
+  alternatives across all forecasting horizons, achieving reductions of 15.5 % in RMSE and 12.4 % in MAE.
+  This physics-constrained framework substantially improves the accuracy and robustness of PV power forecasting
+  across multiple time scales. The enhanced reliability directly supports secure PV grid integration and
+  contributes to the broader transition toward low-carbon energy systems.
+significance: 3
+cited_by: 4
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

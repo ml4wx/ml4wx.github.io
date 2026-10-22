@@ -1,0 +1,55 @@
+id: arxiv-2605.05052
+title: Interpretable Neural Networks to Predict Momentum Fluxes of Orographic Gravity Waves
+authors:
+- Elias Haslauer
+- Mierk Schwabe
+- Andreas Dörnbrack
+- Edwin P. Gerber
+- Markus Rapp
+- Nedjeljka Žagar
+- Veronika Eyring
+date: '2026-05-06'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.05052'
+  openalex: W7160551301
+links:
+  paper: https://arxiv.org/abs/2605.05052
+  pdf: https://arxiv.org/pdf/2605.05052
+topic: hybrid-parameterization
+topics:
+- xai-uq-physics
+type: model
+method:
+- other
+timescale:
+- climate
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Neural networks trained on ERA5 predict orographic gravity-wave momentum fluxes with global R2
+  of 0.56 to 0.72 at coarse ESM resolution, with SHAP analysis for physical interpretability.
+abstract: 'State-of-the-art Earth system models (ESMs) cannot explicitly resolve many small-scale atmospheric
+  processes such as atmospheric gravity waves, and thus must represent, or parameterise, their effects
+  on the resolved state. Machine learning (ML) has the potential to improve these parameterisations. In
+  our study, we train neural networks (NNs) on ERA5 reanalysis data to predict momentum fluxes of orographic
+  gravity waves as a function of the state variables at the resolution of a coarse ESM. Employing a full
+  year of data, we extract inertia-gravity waves using the software MODES, which applies linear theory
+  for wave filtering, and train ML models on data coarse-grained to the ESM''s target resolution. We consider
+  four different cases: the full spectrum of inertia-gravity waves resolved in ERA5, or just the part
+  of the spectrum that is subgrid-scale in the target ESM, both over all land or just over mountainous
+  terrain. Our NNs successfully predict momentum fluxes, with a global coefficient of determination ($R^2$)
+  ranging from 0.72 to 0.56, depending on the case, when evaluated offline with data from another year.
+  An analysis of our models using SHAP values, an explainable AI technique, suggests that the networks
+  learned physically meaningful relationships. In addition, we give a comparison with the physics-based
+  parameterisation scheme by Lott and Miller. This work forms the basis for the development of operational
+  ML-based parameterisations to improve the representation of gravity waves and their effects in climate
+  models.'
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

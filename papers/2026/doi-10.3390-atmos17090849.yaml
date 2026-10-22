@@ -1,0 +1,55 @@
+id: doi-10.3390-atmos17090849
+title: Fast High-Resolution Wind-Field Prediction over Complex Terrain Using WRF-CFD Simulations and a
+  Time-Aware Neural Network
+authors:
+- Shengchu Zhang
+- Haoshuang Liao
+- Minshun Li
+- Xinhui Lai
+- Yue Xu
+- Jun Guo
+date: '2026-08-29'
+year: 2026
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos17090849
+  openalex: W7204952039
+links:
+  paper: https://doi.org/10.3390/atmos17090849
+topic: downscaling
+topics:
+- regional-km-scale
+type: model
+method:
+- other
+spatial:
+- local
+data:
+- era5
+- km-scale-sim
+status: research
+summary: MLP-GTC neural surrogate emulates WRF-CFD high-resolution wind fields over Askervein Hill, reaching
+  0.31 m/s test RMSE with fast inference.
+abstract: High-resolution wind-field prediction over complex terrain is important for wind-energy assessment,
+  grid safety, and hazard mitigation. This study uses a coupled Weather Research and Forecasting–Computational
+  Fluid Dynamics (WRF–CFD) workflow for the Askervein Hill benchmark. Driven by the fifth-generation European
+  Centre for Medium-Range Weather Forecasts Reanalysis dataset, WRF provides mesoscale atmospheric conditions,
+  and CFD resolves the terrain-induced flow features at high spatial resolution. Because repeated WRF
+  and CFD simulations are computationally expensive, we develop a time-aware neural-network surrogate
+  model, termed the multilayer perceptron-prior gated temporal correction (MLP-GTC) model, to predict
+  the resulting three-component wind field. The model first learns the local wind response associated
+  with terrain and inlet conditions, and it then applies a gated temporal correction based on recent inlet
+  conditions and their corresponding pointwise predictions. The data are divided chronologically into
+  683 training, 146 validation, and 147 test time steps, with 5187 fixed spatial points evaluated at each
+  time step. The coupled WRF–CFD simulations reproduce the observed wind structure with a maximum Pearson
+  correlation coefficient of 0.96 and a 10 m wind-speed root mean square error of 0.84 m/s. For the three-component
+  velocity field, MLP-GTC achieves validation/test root mean square errors of 0.282/0.310 m/s and mean
+  absolute errors of 0.179/0.199 m/s. It improves on the multilayer perceptron model (0.486/0.516 m/s)
+  and the matched five-step single-layer long short-term memory network (0.334/0.438 m/s).
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

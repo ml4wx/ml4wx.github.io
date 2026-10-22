@@ -1,0 +1,59 @@
+id: doi-10.5194-egusphere-2026-4021
+title: Deep Reinforcement Learning – Driven Optimization of Ice Cloud Bulk Scattering Properties in RTTOV-SCATT
+  Using Arctic Weather Satellite Observations
+authors:
+- K Chen
+- Yuyang Yao
+- Fujia Meng
+date: '2026-08-24'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.5194/egusphere-2026-4021
+  openalex: W7167939277
+links:
+  paper: https://doi.org/10.5194/egusphere-2026-4021
+  pdf: https://egusphere.copernicus.org/preprints/2026/egusphere-2026-4021/egusphere-2026-4021.pdf
+topic: observations-remote-sensing
+topics:
+- hybrid-parameterization
+type: model
+method:
+- reinforcement-learning
+- differentiable
+spatial:
+- global
+data:
+- satellite
+status: research
+summary: Deep reinforcement learning tunes ice-cloud bulk scattering properties in RTTOV-SCATT against
+  Arctic Weather Satellite 325 GHz observations, improving simulated brightness temperatures.
+abstract: Abstract. The Arctic Weather Satellite (AWS), launched by the European Space Agency (ESA) in
+  August 2024, has enabled the first-ever global ice cloud remote sensing using 325 GHz terahertz channels.
+  Owing to its short wavelength, the 325 GHz frequency band is highly sensitive to scattering by the three
+  frozen hydrometeor types present in ice clouds—cloud ice, snow, and graupel. Radiative transfer (RT)
+  models are the core tools for satellite remote sensing retrieval and data assimilation, and their accuracy
+  directly determines the capability to retrieve ice cloud parameters from satellite observations. Due
+  to the complexity of cloud microphysical processes and insufficient observational constraints, the parameterization
+  of the Bulk Scattering Properties (BSPs) of frozen hydrometeors in the current operational RT model
+  RTTOV still harbors considerable uncertainty. The resulting large discrepancies between simulated brightness
+  temperatures (TBs) from high-frequency channels and AWS-observed TBs severely limit the retrieval accuracy
+  of ice cloud parameters. This paper proposes a physically-informed deep reinforcement learning (DRL)
+  framework for optimizing the computation of frozen hydrometeor BSPs. The framework employs the Twin
+  Delayed Deep Deterministic Policy Gradient (TD3) algorithm to couple the RTTOV-SCATT v14.0 module with
+  a differentiable surrogate neural network model, using AWS-observed ice cloud TBs as constraints to
+  optimize the bulk extinction coefficient, scattering coefficient, and asymmetry factor of frozen hydrometeors.
+  Training and validation experiments are conducted using approximately 176,000 AWS-observed TB data records
+  collected since July 2025 (filtered to approximately 80,000 valid ice cloud samples). Results show that
+  after optimization, the root-mean-square error (RMSE) between AWS-observed and simulated ice cloud TBs
+  is reduced to 4.98–14.33 K for the 183 GHz channels and 9.54–13.32 K for the 325 GHz channels, representing
+  an improvement of 56.3–69.7 % over the standard RTTOV-SCATT module. The distribution of observation-minus-background
+  (O–B) deviations shifts from markedly skewed to approximately Gaussian. The optimized model significantly
+  improves the simulation accuracy of spaceborne terahertz-band ice cloud TBs while retaining the computational
+  efficiency of RTTOV (approximately 0.2 ms per sample).
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,57 @@
+id: doi-10.1088-2515-7620-ae6b0f
+title: 'Improving subseasonal rainfall forecasts over the middle-lower reaches of the Yangtze River: a
+  machine learning approach using circulation predictors'
+authors:
+- Guoteng He
+- Licheng Feng
+- Fei Liu
+- Cuijuan Sui
+- Shan Liu
+- Xue Han
+date: '2026-05-01'
+year: 2026
+venue: Environmental Research Communications
+venue_type: journal
+ids:
+  doi: 10.1088/2515-7620/ae6b0f
+  openalex: W7160645501
+links:
+  paper: https://doi.org/10.1088/2515-7620/ae6b0f
+  pdf: https://iopscience.iop.org/article/10.1088/2515-7620/ae6b0f/pdf
+topic: s2s-seasonal
+topics:
+- post-processing
+type: model
+method:
+- cnn
+timescale:
+- s2s
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: A CNN post-processes ECMWF subseasonal forecasts, raising Yangtze rainfall skill at week 2 (NSE
+  0.297 to 0.405) using circulation predictors.
+abstract: 'Abstract Accurate subseasonal forecasts over the middle and lower reaches of the Yangtze River
+  (MLYR) are essential for mitigating socio-economic impacts of summer rainfall anomalies. We develop
+  a convolutional neural network (CNN) to post-process European Centre For Medium-Range Weather Forecasts
+  subseasonal-to-seasonal forecasts by incorporating key atmospheric variables at 200 and 850 hPa (winds,
+  geopotential height, specific humidity), which exhibit substantially higher inherent predictability
+  than precipitation—with gh200 maintaining skill for 24–25 d, nearly three times that of precipitation.
+  This approach improves extended boreal summer (May–September) precipitation predictions over the MLYR.
+  The CNN-based correction consistently enhances forecast skill over lead weeks 1–4, increasing a composite
+  index (CI; based on ACC, RMSE, MAE) by 12.3%, 4.6%, 4.2%, and 3.8%, respectively. At Week 2, the correction
+  elevates forecasts from unusable to practically valuable, with NSE increasing from 0.297 to 0.405 and
+  KGE from −0.666 to 0.486. Physically, CNN-derived heatmaps align with key circulation systems Jianghuai
+  cyclone, demonstrating its capacity to capture dominant rainfall processes. Pattern correlations with
+  observations remain high (0.89 and 0.75) in Weeks 1–2, confirming physically meaningful learning, while
+  correct large‐scale patterns persist even at Week 4, indicating robust predictor extraction. Ablation
+  tests further identify core predictors: total precipitation is irreplaceable during the first two weeks,
+  while the 200 hPa zonal wind remains crucial throughout four weeks, highlighting a shift from upper‐air
+  dynamics to lower‐level thermodynamics.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

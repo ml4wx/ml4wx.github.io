@@ -1,0 +1,53 @@
+id: arxiv-2609.37038
+title: 'NowcastDiT: Diffusion Transformers are Effective Precipitation Nowcasters'
+authors:
+- Haoran Xu
+- Xingzhuo Guo
+- Yuchen Zhang
+- Jincheng Zhong
+- Jianmin Wang
+- Mingsheng Long
+date: '2026-09-29'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.37038'
+  openalex: W7214891075
+links:
+  paper: https://arxiv.org/abs/2609.37038
+  pdf: https://arxiv.org/pdf/2609.37038
+orgs:
+- tsinghua-university
+topic: nowcasting
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- transformer
+- diffusion
+- reinforcement-learning
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Standard Diffusion Transformer with RL-based meteorological rewards achieves state-of-the-art
+  precipitation nowcasting on SEVIR and MRMS benchmarks.
+abstract: 'Precipitation nowcasting demands accurate short-term forecasts under strong spatiotemporal
+  variability. Diffusion models are well suited to modeling complex precipitation distributions, yet existing
+  approaches often introduce increasingly specialized designs, leaving the capability of a standard diffusion
+  architecture underexplored. We show that a standard Diffusion Transformer already provides a simple
+  and scalable foundation for precipitation nowcasting, with domain-specific requirements accommodated
+  naturally within its design space. Based on this principle, we develop NowcastDiT and instantiate this
+  flexibility through two complementary adaptations: a dynamics-aware noise prior for temporally coherent
+  forecasts, and end-to-end reinforcement learning with timestep-aware rewards for meteorological skill.
+  Experiments on SEVIR and MRMS benchmarks show that NowcastDiT achieves state-of-the-art performance
+  in both perceptual quality and meteorological skill. These results suggest that standard DiT can serve
+  as an effective foundation for precipitation nowcasting.'
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

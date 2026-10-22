@@ -1,0 +1,52 @@
+id: arxiv-2605.31079
+title: Forecasting threshold exceedance of atmospheric variables at a specific location
+authors:
+- Roberta Baggio
+- Jean-François Muzy
+date: '2026-05-29'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.31079'
+links:
+  paper: https://arxiv.org/abs/2605.31079
+  pdf: https://arxiv.org/pdf/2605.31079
+topic: post-processing
+topics:
+- extremes-hazards
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+- nwp-analysis
+status: research
+summary: Shows that full-distribution neural models beat binary threshold-exceedance classifiers for station
+  wind and rain, with the advantage growing for rarer events.
+abstract: 'Accurate short-term forecasting of extreme weather events is important for early warning and
+  risk mitigation. We compare two approaches for predicting site-specific threshold exceedances of weather
+  variables: direct binary probabilistic models trained on thresholded outcomes and full-distribution
+  parametric models trained on the continuous target. Using an analytically tractable Gaussian random-location
+  model, in which the distribution is predictably shifted by the covariates, we quantify the consequences
+  of the information loss induced by thresholding and derive the rare-event behavior of prediction errors
+  and forecast skill. The analysis predicts an increasing relative advantage of the full-distribution
+  approach as event probability decreases, because binarization progressively discards information contained
+  in the continuous response. We then compare the two approaches to forecast wind speed and accumulated
+  rainfall at various weather station sites over southeastern France using the same hybrid neural-network
+  architecture. Although wind speed and rainfall depart from the toy-model assumptions, its main qualitative
+  predictions are recovered for both variables: the relative advantage of distributional modeling increases
+  toward rarer thresholds. This agreement further suggests that a substantial fraction of the forecastable
+  signal associated with extreme events arises from predictable shifts in the conditional distribution.
+  For the reasonably suitable parametric families examined, the results show limited sensitivity to the
+  selected class of distribution. Overall, the results highlight the statistical advantage of training
+  on continuous observations rather than on thresholded binary outcomes when forecasting rare threshold
+  exceedances.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

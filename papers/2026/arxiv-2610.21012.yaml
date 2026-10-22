@@ -1,0 +1,44 @@
+id: arxiv-2610.21012
+title: Variable Masking for Climate Emulation in ACE
+authors:
+- Alexey Yermakov
+- Troy Arcomano
+- Jeremy McGibbon
+- Brian Henn
+- Oliver Watt-Meyer
+date: '2026-10-14'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.21012'
+links:
+  paper: https://arxiv.org/abs/2610.21012
+  pdf: https://arxiv.org/pdf/2610.21012
+  code: https://github.com/ai2cm/ace
+topic: climate-emulation
+type: model
+method:
+- neural-operator
+timescale:
+- climate
+spatial:
+- global
+data:
+- era5
+status: research
+summary: M-ACE2S uses variable masking and global-mean removal to cut the near-surface warming underestimate
+  of the ACE2 emulator in AIMIP tests.
+abstract: In the recent AI Model Intercomparison Project (AIMIP) benchmark, the ACE2.1-ERA5 emulator was
+  shown to underestimate the true near-surface warming trend both during the training period and the out-of-sample
+  extrapolation period. In this work, we present M-ACE2S (Masked-ACE2S), a modified version of the stochastic
+  ACE2S model, which uses variable masking during training and reduces the reliance of M-ACE2S on any
+  single input channel. We show that M-ACE2S improves long-term near-surface air temperature prediction.
+  We also present a novel data normalization strategy called "global mean removal", which, combined with
+  masking, further improves the near-surface temperature forecasts. We show that M-ACE2S outperforms the
+  ACE2S baseline on in-sample data for ERA5 while improving training stability and generalizability of
+  near-surface temperature to unseen forcing when paired with global mean removal.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

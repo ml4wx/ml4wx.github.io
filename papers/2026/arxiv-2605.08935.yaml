@@ -1,0 +1,54 @@
+id: arxiv-2605.08935
+title: 'PnP-Corrector: A Universal Correction Framework for Coupled Spatiotemporal Forecasting'
+authors:
+- Hao Wu
+- Fan Xu
+- Yuxu Lu
+- Penghao Zhao
+- Fan Zhang
+- Hao Jia
+- Yuxuan Liang
+- Ruijian Gou
+- Qingsong Wen
+- Xian Wu
+- Xiaomeng Huang
+- Yuan Gao
+date: '2026-05-09'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.08935'
+links:
+  paper: https://arxiv.org/abs/2605.08935
+  pdf: https://arxiv.org/pdf/2605.08935
+topic: s2s-seasonal
+type: model
+method:
+- other
+timescale:
+- seasonal
+spatial:
+- global
+data:
+- other
+status: research
+summary: PnP-Corrector freezes pretrained coupled simulators and trains a correction agent, cutting 300-day
+  global ocean-atmosphere forecast error by 28%.
+abstract: 'Coupled spatiotemporal forecasting is important for predicting the future evolution of multiple
+  interacting dynamical systems, such as in climate models. However, existing methods are severely constrained
+  by the persistent bottleneck of compounding errors. In coupled systems, errors from each subsystem simulator
+  propagate and amplify one another, a phenomenon we term Reciprocal Error Amplification, leading to a
+  rapid collapse of long-range predictions. To address this challenge, we propose a universal framework
+  called PnP-Corrector (Plug-and-Play Corrector). The core idea of our framework is to decouple the physical
+  simulation from the error correction process: it freezes pre-trained physics simulation engines and
+  exclusively trains a correction agent to proactively counteract the systematic biases emerging from
+  the coupled system. Furthermore, we design an efficient predictive model architecture, DSLCast, to serve
+  as the backbone of this framework. Extensive experiments demonstrate that our method significantly enhances
+  the long-term stability and accuracy of coupled forecasting systems. For instance, in the challenging
+  task of a 300-day global ocean-atmosphere coupled forecast, our PnP-Corrector framework reduces the
+  prediction error of the baseline model by 28% and surpasses state-of-the-art models on several key metrics.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

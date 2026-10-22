@@ -1,0 +1,55 @@
+id: doi-10.1016-j.solener.2026.114844
+title: Spatial context importance in deep learning for global horizontal irradiance estimation from satellite
+  imagery
+authors:
+- Vadim Becquet
+- Philippe Blanc
+- Yves‐Marie Saint‐Drenan
+- Yehia Eissa
+- Hadrien Verbois
+date: '2026-07-28'
+year: 2026
+venue: Solar Energy
+venue_type: journal
+ids:
+  doi: 10.1016/j.solener.2026.114844
+  openalex: W7171546282
+links:
+  paper: https://doi.org/10.1016/j.solener.2026.114844
+topic: observations-remote-sensing
+topics:
+- applications-impacts
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- satellite
+- stations
+status: research
+summary: Spatial-context deep learning on GOES-16 patches cuts GHI retrieval RMSE by 14.6% versus the
+  PSM3 physical model across 31 North American stations.
+abstract: Accurate estimation of Global Horizontal Irradiance (GHI) is essential for solar energy applications,
+  climate modeling, and various geophysical processes. Traditional satellite-based methods rely on the
+  pixel-centric Independent Pixel Approximation (IPA), which treats each pixel as radiatively isolated
+  from its neighbors. This pixel-centric approach presents challenges, which are amplified by the higher
+  spatial resolutions of third-generation geostationary satellites. In this study, we evaluate deep-learning
+  models that explicitly incorporate spatial context through multispectral image patches of varying sizes
+  ( 3 × 3 to 31 × 31 pixels) from GOES-16 imagery to improve satellite-based GHI estimation and address
+  IPA shortcomings. We compare two architectures—a Fully Connected Network (FCN) and a convolutional-based
+  model—against a state-of-the-art physical retrieval method (PSM3), using in-situ GHI measurements from
+  31 stations across North America. Our results show that spatial-context-aware deep learning models outperform
+  PSM3 across most metrics, especially under cloudy and partially clear conditions, yielding improved
+  performance, stability, and reduced bias. The best-performing model achieves a 14.6% lower root mean
+  squared error and a 17.1% lower mean absolute error compared to PSM3 on a year-long test set composed
+  of 6 test stations. However, our current implementation of deep learning models still struggles to consistently
+  outperform PSM3 bias under clear-sky conditions at certain sites. By quantifying how image size and
+  architecture jointly shape the performance and generalization of our models, this work underscores the
+  potential of spatial-context-aware deep learning for satellite-based all-sky GHI retrieval.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

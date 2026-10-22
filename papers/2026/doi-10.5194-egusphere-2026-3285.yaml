@@ -1,0 +1,63 @@
+id: doi-10.5194-egusphere-2026-3285
+title: 'TC 2 ver. 1.0: An Objective Hybrid Tracker and Classifier for Tropical Cyclones version 1.0'
+authors:
+- Doo‐Sun R. Park
+- Dasol Kim
+- Hye-Young Ko
+- Hyeong‐Seog Kim
+- Dong‐Hyun Cha
+- Minhee Chang
+- Seung‐Ki Min
+- Minho Kwon
+- Tae‐Won Park
+date: '2026-07-09'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.5194/egusphere-2026-3285
+  openalex: W7167783766
+links:
+  paper: https://doi.org/10.5194/egusphere-2026-3285
+  pdf: https://egusphere.copernicus.org/preprints/2026/egusphere-2026-3285/egusphere-2026-3285.pdf
+topic: extremes-hazards
+type: model
+method:
+- classical-ml
+timescale:
+- climate
+spatial:
+- global
+data:
+- era5
+- cmip
+- nwp-analysis
+status: research
+summary: TC2 hybrid tracker combines thresholds with an ensemble of ML classifiers, cutting tropical cyclone
+  false alarms to 14.3% while keeping an 81.5% hit rate.
+abstract: Abstract. Accurate detection of tropical cyclones (TCs) from gridded climate model data is essential
+  for evaluating model performance and projecting future TC activity. Conventional detection schemes rely
+  on environmental variable thresholds that are frequently tuned to specific basins or models, making
+  them inherently subjective. Conversely, detection schemes based on universal thresholds often fail to
+  capture regional characteristics. While recent machine learning (ML) approaches provide objective data-driven
+  thresholds, they generally require a great number of variables compared to conventional methods and
+  suffer from high false alarm rates (FAR). Here, we introduce an objective hybrid tracker and classifier
+  for tropical cyclones (TC2), an algorithm combining traditional and ML techniques to establish objective
+  thresholds and minimize FAR. Using an ensemble of six classifiers based on three ML algorithms and two
+  reanalyses, TC2 avoids dependency on specific ML algorithms or datasets. TC2 was trained and its hyperparameters
+  were optimized using two reanalysis datasets over 1998–2017 period, while its performance was evaluated
+  on their respective internal test sets and the independent NCEP FNL dataset from 2018 to 2024. Evaluated
+  against the NCEP FNL dataset, TC2 outperforms the existing algorithms, i.e., TempestExtremes and OWZP,
+  achieving higher F1 score (83.6 %) and critical success index (71.8 %), while significantly lowering
+  FAR (14.3 %) and maintaining a comparable hit rate (81.5 %). TC2 also better reproduces TC count and
+  seasonal variability over each basin. In CMIP6 evaluations, TC2 successfully captures the overall characteristics
+  of TC activity. Under the SSP2-4.5 scenario, projected spatial changes in TC genesis frequency detected
+  by TC2 are largely consistent with those of the dynamical genesis potential index, suggesting that TC2
+  identifies physically coherent systems governed by large-scale dynamic environments. Utilizing only
+  a limited set of commonly available variables, including minimum sea level pressure, low-level relative
+  vorticity, upper- and low-level wind speeds, and an upper-level warm core, TC2 provides an effective
+  and robust framework for TC detection in gridded climate datasets.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

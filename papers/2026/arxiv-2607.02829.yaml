@@ -1,0 +1,57 @@
+id: arxiv-2607.02829
+title: 'Less Tokens, Better Forecasts: Sparse Residual Routing for Efficient Weather Prediction'
+authors:
+- Janet Wang
+- Yunbei Zhang
+- Lin Zhao
+- Xi Xiao
+- Jihun Hamm
+- Xiao Wang
+date: '2026-07-02'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2607.02829'
+links:
+  paper: https://arxiv.org/abs/2607.02829
+  pdf: https://arxiv.org/pdf/2607.02829
+topic: global-medium-range
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- transformer
+- diffusion
+timescale:
+- medium
+- short
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Sparse-Reslim routes only 25% of tokens through middle transformer blocks as residual updates,
+  giving 2.5x faster training (3.18x at 0.25°) with better accuracy on ERA5 forecasts.
+abstract: 'Existing ViT-based weather forecasting models apply uniform computation across all spatial
+  tokens, even though nearby atmospheric grid points often contain similar values and large regions evolve
+  smoothly over time. This makes much of the intermediate per-token computation redundant. Standard token-efficiency
+  methods, such as pruning or merging, reduce cost by removing or fusing tokens. However, weather forecasting
+  is a spatiotemporal dense prediction problem in which a history of atmospheric states must be mapped
+  to future values on the original latitude-longitude grid. Thus, every grid cell must retain a physically
+  meaningful representation, especially under autoregressive rollout. We introduce Sparse-Reslim, a parameter-free
+  plug-in routing module that makes sparse token processing compatible with this fixed-grid requirement.
+  Sparse-Reslim routes only 25% of spatial tokens through the expensive middle transformer blocks and
+  treats those blocks as residual updates: it computes the change produced for the routed tokens and scatters
+  only this delta back to the full sequence. Unselected tokens keep their pre-routing representations
+  exactly, so no grid cell is dropped or replaced by a mask token, and no fusion layer or additional parameters
+  are introduced. Across ERA5 resolutions up to the operational 0.25\textdegree{} standard and two model
+  families, a deterministic Transformer and a diffusion model, Sparse-Reslim improves forecast accuracy
+  on every evaluated variable while substantially reducing cost: training is about 2.5x faster in the
+  main settings and reaches 3.18x speedup at 0.25\textdegree{}, with over 2.2x lower peak memory. A controlled
+  decomposition shows that the accuracy gain comes primarily from sparse routing itself, while random
+  token selection provides an additional regularization benefit without selector overhead.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

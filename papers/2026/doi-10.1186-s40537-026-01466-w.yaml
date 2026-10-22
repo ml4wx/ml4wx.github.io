@@ -1,0 +1,55 @@
+id: doi-10.1186-s40537-026-01466-w
+title: '3DcGanAE: a residual conditional generative model for high‑resolution geospatial data processing
+  and downscaling'
+authors:
+- Amir Aieb
+- Antonio Liotta
+- Alexander W. Jacob
+- Muhammad Azfar Yaqub
+- Imene Kichah
+- Khodir Madani
+date: '2026-05-20'
+year: 2026
+venue: Journal Of Big Data
+venue_type: journal
+ids:
+  doi: 10.1186/s40537-026-01466-w
+  openalex: W7161831033
+links:
+  paper: https://doi.org/10.1186/s40537-026-01466-w
+topic: downscaling
+type: model
+method:
+- gan-vae
+- cnn
+spatial:
+- regional
+data:
+- other
+status: research
+summary: A 3D residual conditional GAN with denoising autoencoder generates 1 km Alpine drought indices
+  (SPEI, SSI) from 5–25 km inputs, with adjusted R² of 0.92–0.98.
+abstract: High-resolution geospatial data are essential for capturing fine-scale climate processes, but
+  generating them through physically based models is computationally intensive, especially at continental
+  and global scale. Standardising climate indicies further increases this burden and limits their practical
+  use in regions with complex terrain and strong microclimatic variability, such as the Alps. To address
+  these challenges, we propose 3DcGanAE, a 3D generative deep learning framework that reconstructs high-resolution
+  (HR) climate fields from low-resolution (LR) inputs by learning residual structures between the two
+  scales. The model incorporates Distributed Gaussian Noise (DGN) to generate realistic residual fields
+  and uses a denoising autoencoder to reduce Gaussian artefacts and systematic biases. A Bayesian Gaussian
+  Mixture Model (BGMM) is used to estimate scale‑adaptive noise parameters and preserve statistical consistency.
+  HR fields are decomposed into LR feature components, enabling the model to reconstruct fine-scale HR
+  fields while maintianing spatial coherence. The framework is evaluated across the Alpine region for
+  drought related indicies, including the Standardised Precipitation–Evapotranspiration Index (SPEI) and
+  Standardised Soil Moisture Index (SSI) across the Alps. Results demonstrates that the model reliably
+  generates 1 km drought datasets from LR inputs (5–25 km), outperforming state-of-the-art spatiotemporal
+  GANs and multitask 3D convolutional models. It achieves adjusted R 2 values of 0.98—0.92 and Kolmogorov–Smirnov
+  statistics below 0.21, effectively capturing seasonal extremes, maintaining statistical fidelity, and
+  recovering fine‑scale spatial variability. These findings highlight the potential of the proposed framework
+  for scalable high‑resolution climate applications across large and heterogeneous domains.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

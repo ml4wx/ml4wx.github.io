@@ -1,0 +1,55 @@
+id: doi-10.5194-wes-2026-87
+title: Accelerating regional wind energy assessment with deep-learning surrogates of WRF wind farm simulations
+authors:
+- Tianxia Jia
+- Mike Optis
+- Adam H. Monahan
+- Slim Ibrahim
+date: '2026-06-01'
+year: 2026
+venue: Wind Energy Science Discussions
+venue_type: journal
+ids:
+  doi: 10.5194/wes-2026-87
+  openalex: W7163078669
+links:
+  paper: https://doi.org/10.5194/wes-2026-87
+topic: applications-impacts
+topics:
+- regional-km-scale
+type: model
+method:
+- cnn
+- diffusion
+spatial:
+- regional
+data:
+- km-scale-sim
+status: research
+summary: U-Net and residual diffusion surrogates emulate WRF wind-farm wake power fields at a fraction
+  of the cost, with the residual diffusion model giving the most accurate point predictions.
+abstract: Abstract. Downwind wake effects are becoming increasingly important as wind farms grow larger
+  and turbine capacities increase. Mesoscale weather models with wind farm parameterizations have emerged
+  as a key tool in modelling long-distance wakes between wind farms. However, they can be too computationally
+  expensive for evaluating dozens or more layouts considered in regional planning and optimization. In
+  this study, we develop deep-learning surrogate models that reproduce the power losses and wind speed
+  deficits caused by turbine layouts in mesoscale simulations at a fraction of the computational cost.
+  The models combine atmospheric inputs from free-stream Weather Research and Forecasting (WRF) model
+  simulations with turbine layouts to predict spatial power fields produced by WRF when the wind farm
+  parameterization is activated. First, convolutional neural networks (U-Net) are developed as deterministic
+  surrogates and achieve strong accuracy on two unseen scenarios. Second, diffusion-based models are developed
+  to generate predictive ensembles and quantify uncertainty, including a residual diffusion model that
+  learns the error of a deterministic U-Net prediction. Overall, the all models show a strong ability
+  to predict wind power, both on a per-grid cell basis and aggregated across wind farms. The U-Net model
+  strength shows sensitivity to the predictand (capacity factor vs. normalized power output), the combination
+  of predictors (wind speed, wind direction, turbulence, and temperature), the number of training scenarios,
+  and the type of loss function. Among the probabilistic models, DDPM provides the best calibrated ensembles,
+  whereas residual diffusion yields more accurate point predictions and better farm-level bias control.
+  These results demonstrate that deep-learning surrogates can enable rapid and cost-effective evaluation
+  of candidate wind farm layouts, while also supporting uncertainty-aware planning-stage assessment.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

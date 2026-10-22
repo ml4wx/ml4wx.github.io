@@ -1,0 +1,56 @@
+id: arxiv-2610.05296
+title: 'FlexCast: Adaptive Weather Forecasting from Arbitrary Field Sets'
+authors:
+- Yuang Zhang
+- Chen Hui
+- Weisi Lin
+- Haiqi Zhu
+- Xiulai Wang
+- Sun-Yuan Kung
+- Feng Jiang
+date: '2026-10-04'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.05296'
+  openalex: W7220694401
+links:
+  paper: https://arxiv.org/abs/2610.05296
+  pdf: https://arxiv.org/pdf/2610.05296
+orgs:
+- princeton-university
+- nuist
+topic: global-medium-range
+topics:
+- foundation-models
+type: model
+method:
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: FlexCast uses one set of parameters to forecast arbitrary subsets of 69 ERA5 fields via metadata-conditioned
+  adapters and a U-Transformer, with lower errors when cross-field context is compatible.
+abstract: Most deep learning weather models assign a fixed set of variables and pressure levels to predefined
+  channels, limiting transfer across atmospheric field configurations. This dependence on a fixed field
+  set limits the transferability of trained models across atmospheric field configurations. We propose
+  FlexCast, a field-adaptive weather forecasting model that uses a single set of parameters to produce
+  identity-aligned forecasts for variable-cardinality subsets drawn from a 69-field ERA5 registry. Specifically,
+  a metadata-conditioned adapter the first encodes variable identity, pressure level, and field type and
+  combines them with spatial features. Then, shared rank-16 projec?tions are modulated by metadata-dependent
+  gates to produce field?specific features, while masked set fusion aggregates the available fields into
+  a fixed-width representation. Subsequently, a multiscale U-Transformer processes the fused atmospheric
+  features, while an identity-aware query decoder produces forecasts for the requested fields. Finally,
+  FlexCast learns a standardized six-hour increment and applies it recursively to generate forecasts at
+  longer lead times. Experiments on the 2020 ERA5 test set demonstrate that FlexCast operates across varying
+  field configurations. Compatible cross-field context is associated with lower forecast errors, whereas
+  mismatched context increases them.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

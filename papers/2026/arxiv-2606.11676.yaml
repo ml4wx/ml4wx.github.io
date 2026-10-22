@@ -1,0 +1,48 @@
+id: arxiv-2606.11676
+title: Neural-Parameterized Cellular Automata for Wildfire Spread
+authors:
+- Maksym Zhenirovskyy
+- Ion Matei
+- Rohit Vuppala
+- Takuya Kurihana
+- Hon Yung Wonga
+date: '2026-06-10'
+year: 2026
+venue: Ecological Informatics, Volume 97, 2026, 103928
+venue_type: journal
+ids:
+  arxiv: '2606.11676'
+  doi: 10.1016/j.ecoinf.2026.103928
+links:
+  paper: https://arxiv.org/abs/2606.11676
+  pdf: https://arxiv.org/pdf/2606.11676
+topic: extremes-hazards
+type: model
+method:
+- cnn
+- physics-constrained
+timescale:
+- short
+spatial:
+- regional
+data:
+- other
+status: research
+summary: CNN-parameterized probabilistic cellular automaton for wildfire spread keeps IoU above 0.6 over
+  72-hour forecasts across six western US fires.
+abstract: Traditional wildfire models rely on rigid, low-dimensional parameters and static fuel maps,
+  frequently underpredicting fire spread. To address this weakness, we introduce a hybrid deep-learning
+  parameterized Probabilistic Cellular Automata (CA) framework implemented in JAX. Our approach employs
+  a Multi-Scale Convolutional Neural Network to dynamically generate spatially varying parameters that
+  govern fire-spread probability, wind alignment, and slope influence. This hybrid design captures complex,
+  nonlinear environmental interactions while preserving the physical interpretability of the underlying
+  three-state CA. The JAX implementation enables hardware acceleration and gradient-based parameter calibration.
+  Evaluated on six large-scale wildfires in the western United States, the model maintains IoU > 0.6 over
+  72-hour forecast horizons after a 10-day data assimilation window during which the model is fitted incrementally
+  to observed perimeters; the resulting forecast is a conditional projection of fire growth under the
+  suppression regime already ncoded in those observations.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

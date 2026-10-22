@@ -1,0 +1,60 @@
+id: doi-10.1016-j.cacaie.2026.100166
+title: Decision-oriented computational framework for drought hazard-state classification with a California
+  case study
+authors:
+- Fan Hu
+- Khalid M. Mosalam
+date: '2026-08-11'
+year: 2026
+venue: Computer-Aided Civil and Infrastructure Engineering
+venue_type: journal
+ids:
+  doi: 10.1016/j.cacaie.2026.100166
+  openalex: W7202213046
+links:
+  paper: https://doi.org/10.1016/j.cacaie.2026.100166
+  pdf: https://www.sciencedirect.com/science/article/pii/S1093968726031518/pdf
+orgs:
+- uc-berkeley
+topic: extremes-hazards
+topics:
+- benchmarks-data-eval
+type: model
+method:
+- classical-ml
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Two-stage random forest framework classifies drought hazard states from 48 California stations,
+  reaching about 0.97 accuracy under random split.
+abstract: ABSTRACT This study develops a decision-oriented computational framework for multi-level drought
+  hazard-state classification under class imbalance and class-boundary ambiguity. Using station-level
+  climate observations from the Global Historical Climatology Network-Daily (GHCND) and operational drought
+  labels from the U.S. Drought Monitor (USDM), the framework is evaluated through a case study of 48 monitoring
+  stations across California from 2010 to 2023. An initial six-class formulation, comprising No Drought,
+  D0 abnormally dry conditions, and four drought severity levels (D1 to D4), is assessed using several
+  machine learning models, including logistic regression , support vector machine , k-nearest neighbors
+  , multilayer perceptron , and random forest . Results reveal systematic misclassification near the transitional
+  No Drought–D0 boundary, reflecting class imbalance, categorical proximity, and the inherent ambiguity
+  of early drought conditions. To address this challenge, a two-stage classification framework is proposed.
+  In the first stage, a decision tree model separates No Drought from drought-relevant D0–D4 conditions
+  for operational screening. In the second stage, a random forest model further classifies routed drought-relevant
+  records into D0–D4 hazard states. Additional validation experiments, including a persistence baseline,
+  end-to-end two-stage evaluation, temporal holdout, spatial holdout, feature ablation, feature importance,
+  transition-week diagnostics, and missing-data auditing, are conducted to assess the robustness and limitations
+  of the framework beyond random-split accuracy. Under the expanded stratified random split, the single-stage
+  RF achieved slightly higher aggregate accuracy (0.9739 versus 0.9684) and weighted F1-score (0.9740
+  versus 0.9686) than the end-to-end two-stage framework. The value of the two-stage formulation lies
+  instead in its explicit separation of screening and D0–D4 hazard-state classification, stage-specific
+  diagnosis, and decision-structured interpretation. Although California serves as the case study, the
+  proposed framework is formulated to support adaptation to other regions and can support nowcasting-oriented
+  drought hazard assessment, infrastructure resilience screening, regional monitoring, and risk-informed
+  resource allocation where comparable monitoring data are available.
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

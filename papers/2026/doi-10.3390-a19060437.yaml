@@ -1,0 +1,53 @@
+id: doi-10.3390-a19060437
+title: An Optimized Deep Transformer Framework Using Informer Architecture for Accurate Temperature Forecasting
+authors:
+- Maryam Noorani
+- Farshid Mehrdoust
+- Ilyes Hamdi
+- Abdelouahed Hamdi
+date: '2026-06-01'
+year: 2026
+venue: Algorithms
+venue_type: journal
+ids:
+  doi: 10.3390/a19060437
+  openalex: W7163246086
+links:
+  paper: https://doi.org/10.3390/a19060437
+  pdf: https://www.mdpi.com/1999-4893/19/6/437/pdf?version=1780306520
+topic: local-forecasting
+type: model
+method:
+- transformer
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: HA-Informer transformer forecasts hourly temperature in three cities, cutting MSE about 54% versus
+  standard Informer in Niamey.
+abstract: 'Accurate temperature forecasting is essential for agriculture, disaster management, and infrastructure
+  planning, yet numerical weather prediction models face increasing limitations under climate change.
+  Deep learning architectures, particularly transformers, offer promising alternatives but suffer from
+  quadratic complexity and limited ability to capture both long-range dependencies and local periodic
+  patterns in volatile climate data. To address these challenges, this paper proposes the Hybrid Attention
+  Informer (HA-Informer), a unified end-to-end framework that introduces three modifications to the standard
+  Informer: a hybrid attention mechanism combining ProbSparse attention with depthwise separable convolutions
+  to capture global and local patterns simultaneously, an adaptive distillation mechanism that dynamically
+  adjusts compression based on attention entropy to preserve fine-grained information, and a residual
+  refinement decoder that mitigates error accumulation in long-horizon forecasting. The proposed model
+  is evaluated on hourly temperature data from three climatically diverse cities, Niamey (hot), Tehran
+  (temperate), and Harbin (cold), against seven baselines, namely, LSTM, a CNN, ARIMA, XGBoost, DLinear,
+  transformer, and the standard Informer. The experimental results demonstrate that HA-Informer consistently
+  achieves the lowest forecasting errors across all three locations, with mean squared error reductions
+  of approximately 54% over Informer, 85% over DLinear, and 90% over LSTM in the Niamey dataset, supported
+  by statistically significant Diebold–Mariano test statistics (p<0.05) confirming the superiority of
+  the proposed approach.'
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

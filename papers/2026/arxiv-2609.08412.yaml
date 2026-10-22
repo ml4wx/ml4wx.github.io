@@ -1,0 +1,53 @@
+id: arxiv-2609.08412
+title: 'Stochastically Perturbed Weights: Ensembles from Deterministic Machine-Learning Weather Models'
+authors:
+- Simon Adamov
+- Oliver Fuhrer
+- Reto Knutti
+- Sebastian Schemm
+date: '2026-09-08'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.08412'
+  openalex: W7212008703
+links:
+  paper: https://arxiv.org/abs/2609.08412
+  pdf: https://arxiv.org/pdf/2609.08412
+  code: https://github.com/MeteoSwiss/ai-models-ensembles
+topic: probabilistic-ensembles
+type: model
+method:
+- other
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: Stochastically perturbed weights create ensembles from deterministic ML weather models without
+  retraining, reaching CRPSS within 0.04-0.13 of trained probabilistic baselines at 10 days.
+abstract: 'Machine-learning weather models (MLWMs) now match or outperform operational numerical weather
+  prediction (NWP) at global medium-range forecasting, at far lower inference cost. Many deployed MLWMs
+  are deterministic, producing a single forecast with no estimate of its own uncertainty, whereas a growing
+  family of trained-probabilistic models generate calibrated ensembles directly, at the price of a dedicated
+  training run. We ask instead how much uncertainty can be extracted from a deterministic checkpoint that
+  already exists, without retraining it. Where physical ensembles represent model uncertainty by stochastically
+  perturbing parametrisation tendencies, we perturb the network''s raw weight tensors at inference time,
+  a scheme we call stochastically perturbed weights (SPW). We also ask whether it works, where and on
+  which scales to inject the noise, and where it fails. A three-phase ablation across four deterministic
+  backbones, Aurora, GraphCast, SFNO, and AIFS, selects one production baseline per model, benchmarked
+  against the trained-probabilistic AIFS-ENS, FourCastNet 3 and Atlas as well as the operational ECMWF
+  ensemble (IFS-ENS) over 112 initialisation times. At a 240 h (10-day) lead time the SPW ensembles reach
+  continuous ranked probability skill scores (CRPSS) between 0.04 and 0.13 below the best trained-probabilistic
+  baseline, at zero marginal training cost. No injection site works across models: the productive tensor
+  group is architecture-specific, so SPW is at present a tuning procedure rather than a plug-and-play
+  recipe. Its main failure mode is a coherent whole-field offset that overdisperses the domain mean, and
+  restricting the noise to coarse scales or perturbing the initial conditions each repair part of it.'
+significance: 5
+score: 30
+highlight: false
+added: '2026-10-22'
+source: backfill

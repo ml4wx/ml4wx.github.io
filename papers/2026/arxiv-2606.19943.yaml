@@ -1,0 +1,59 @@
+id: arxiv-2606.19943
+title: 'SIMBA: ABidirectional Retrieval Forward Simulation Framework for Modeling FY-4A GIIRS Hyperspectral
+  Infrared Radiances Toward NWP Applications'
+authors:
+- Jingdong Shen
+- Fu Wang*
+- Qifeng Lu
+- Hao Huang
+- Chunqiang Wu
+- Chi Yang
+- Xiaofang Liu
+date: '2026-06-18'
+year: 2026
+venue: Remote Sensing
+venue_type: journal
+ids:
+  arxiv: '2606.19943'
+  doi: 10.3390/rs18132129
+  openalex: W7166822817
+links:
+  paper: https://doi.org/10.3390/rs18132129
+  pdf: https://arxiv.org/pdf/2606.19943
+orgs:
+- cma
+topic: observations-remote-sensing
+topics:
+- data-assimilation
+type: model
+method:
+- other
+data:
+- satellite
+- era5
+status: research
+summary: Bidirectional Mamba framework jointly retrieves temperature and humidity profiles and reconstructs
+  FY-4A GIIRS hyperspectral radiances using a cycle-consistency constraint.
+abstract: Hyperspectral infrared observations are an important data source for numerical weather prediction
+  (NWP) because they provide rich information on the vertical structure of atmospheric temperature and
+  humidity. However, most existing deep learning methods mainly focus on one-way retrieval from radiances
+  to atmospheric profiles, while the reverse radiance simulation process and the consistency between atmospheric
+  state space and radiance observation space are insufficiently considered. In this study, we propose
+  SIMBA, a unified bidirectional retrieval-forward simulation framework for FY-4A GIIRS hyperspectral
+  infrared radiance modeling toward NWP applications. The framework jointly performs atmospheric profile
+  retrieval and radiance reconstruction, introduces a cycle-consistency constraint to strengthen the coupling
+  between the two processes, and employs a bidirectional Mamba state-space module to capture long-range
+  dependencies along pressure levels. Using collocated FY-4A GIIRS observations and ERA5 reanalysis data,
+  the proposed method is evaluated for temperature retrieval, specific humidity retrieval, long-wave radiance
+  reconstruction, and medium-wave radiance reconstruction. Experimental results show that SIMBA outperforms
+  several representative deep learning baselines across both retrieval and reconstruction tasks, while
+  ablation experiments confirm the contribution of the bidirectional design and cycle-consistency mechanism.
+  These results demonstrate that the proposed framework is effective for joint atmospheric profile retrieval
+  and hyperspectral infrared radiance modeling, and suggest potential for future Jacobian-related analysis
+  and NWP-oriented extensions.
+significance: 3
+cited_by: 1
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

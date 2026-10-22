@@ -1,0 +1,56 @@
+id: arxiv-2608.26594
+title: 'SimCast-S2S: A Computationally Efficient Diffusion Model for Subseasonal Precipitation Forecasting'
+authors:
+- Hiep V. Dang
+- Antonios Mamalakis
+date: '2026-08-27'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2608.26594'
+  doi: 10.21203/rs.3.rs-10872625/v1
+  openalex: W7204536017
+links:
+  paper: https://arxiv.org/abs/2608.26594
+  pdf: https://arxiv.org/pdf/2608.26594
+topic: s2s-seasonal
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+- gan-vae
+- cnn
+timescale:
+- s2s
+spatial:
+- global
+data:
+- era5
+- cmip
+status: research
+summary: Latent diffusion model with VAE compression and LoRA transfer from climate simulations yields
+  probabilistic S2S precipitation forecasts competitive with ECMWF-S2S without post-processing.
+abstract: Subseasonal-to-seasonal (S2S) precipitation forecasting has substantial financial and societal
+  impact, yet remains challenging because of weak predictive signals, high associated uncertainty, and
+  the computational cost of operational systems, which constrains simulation fidelity. We introduce SimCast-S2S,
+  a generative latent-diffusion framework for probabilistic S2S precipitation forecasting that addresses
+  three major bottlenecks in data-driven prediction. First, because S2S prediction requires uncertainty
+  quantification rather than only deterministic point forecasts, SimCast-S2S is the first data-driven
+  system that uses a diffusion-based generative pipeline for S2S prediction, enabling effective sampling
+  from the underlying conditional distribution. Second, since generating large probabilistic ensembles
+  is computationally costly in physical space, SimCast-S2S instead operates in a compact latent space
+  learned by variational autoencoders (VAEs), enabling efficient large-ensemble generation. Third, diffusion
+  models typically require large training datasets; SimCast-S2S overcomes this via transfer learning with
+  low-rank adaptation (LoRA), pretraining on large ensembles of climate simulations before fine-tuning
+  on limited reanalysis data. On reanalysis data, SimCast-S2S outperforms deep learning baselines, including
+  convolutional neural networks and U-Net architectures. Notably, despite using only a subset of atmospheric
+  input variables and no post-processing, bias correction, or calibration, SimCast-S2S remains competitive
+  with, and in many aspects outperforms, state-of-the-art operational systems such as the ECMWF-S2S baseline.
+  These results indicate that latent generative modeling combined with simulation-to-reanalysis transfer
+  learning offers an efficient and scalable path toward data-driven probabilistic S2S precipitation forecasting.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

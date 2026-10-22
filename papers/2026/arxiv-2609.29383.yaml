@@ -1,0 +1,46 @@
+id: arxiv-2609.29383
+title: Lightweight Probabilistic Downscaling from a Deterministic Base Model
+authors:
+- Joseph McLean
+- Tiffany Vlaar
+- Sigrid Passano Hellan
+- Linus Ericsson
+date: '2026-09-24'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.29383'
+  openalex: W7214306498
+links:
+  paper: https://arxiv.org/abs/2609.29383
+  pdf: https://arxiv.org/pdf/2609.29383
+topic: downscaling
+type: model
+method:
+- cnn
+- diffusion
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+status: research
+summary: A lightweight U-Net probabilistic downscaler with two-stage training beats prior state of the
+  art RMSE on CORDEX-ML daily temperature and precipitation over three regions.
+abstract: 'Climate data downscaling is the task of increasing the spatial resolution of climate data,
+  typically by generating fine-resolution regional climate data from coarse global model output. Recent
+  machine learning (ML) work in the related task of weather forecasting has seen significant improvements
+  due to newly devised training methods and architectural components, but these have not yet benefited
+  downscaling. We adapt two of these methods to create a family of lightweight probabilistic ML downscaling
+  models built on a modified U-Net backbone and evaluate them on the CORDEX-ML-Bench suite for daily maximum
+  temperature and precipitation across three geographic regions: the Alps, New Zealand and South Africa.
+  We find that a two-stage training curriculum, combining deterministic pretraining with probabilistic
+  tuning, transfers well to downscaling, beating the state-of-the-art for RMSE. Our work provides an advancement
+  towards lightweight, probabilistic downscaling models, reducing the current trade-off between computational
+  intensity and distributional fit.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

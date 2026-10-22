@@ -1,0 +1,55 @@
+id: arxiv-2608.00352
+title: A Machine-Learning-Based Global Thermospheric Density Forecasting Model
+authors:
+- Ruochen Wang
+- Xiaoli Bai
+date: '2026-07-31'
+year: 2026
+venue: Space Weather, 24(6), e2026SW000000 (2026)
+venue_type: journal
+ids:
+  arxiv: '2608.00352'
+  doi: 10.1029/2026sw004968
+links:
+  paper: https://arxiv.org/abs/2608.00352
+  pdf: https://arxiv.org/pdf/2608.00352
+topic: applications-impacts
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- rnn
+timescale:
+- short
+spatial:
+- global
+data:
+- satellite
+- other
+status: research
+summary: AETHER-P3 forecasts thermospheric density up to 6 h ahead with evidential uncertainty, reaching
+  R=0.95 in quiet periods and R=0.89-0.90 during storms.
+abstract: Thermospheric mass density governs aerodynamic drag in low Earth orbit and is a primary source
+  of uncertainty in orbit prediction and conjunction assessment, particularly during geomagnetic disturbances.
+  We present AETHER-P3 (Accelerometer-driven Estimation of THERmospheric density-A Physics-Informed Probabilistic
+  Prediction Platform), a machine-learning-based global thermospheric density forecasting model that provides
+  multi-step forecasts up to 6 hr ahead using a 3-hr input window, with predictive uncertainty estimates.
+  AETHER-P3 formulates thermospheric density forecasting as a sequence-to-sequence regression task conditioned
+  on recent space weather evolution and a user-specified sequence of future times and locations. To enhance
+  physical consistency and generalization, AETHER-P3 incorporates JB2008 and NRLMSISE-00 density estimates
+  evaluated at future locations, along with solar, geomagnetic, and solar-wind drivers. The network employs
+  dual recurrent encoders and an evidential Normal-Gamma output head to jointly estimate forecast mean
+  and uncertainty. The model is evaluated using independent satellite test cases spanning quiet, moderate,
+  and extreme geomagnetic conditions. During quiet periods, AETHER-P3 achieves high forecast skill (R=0.95).
+  Under moderate activity, strong skill is retained (R=0.93), with reduced physical-domain errors than
+  empirical baseline models. During extreme storm conditions, deterministic forecast skill degrades as
+  expected yet remains robust (R=0.89-0.90). Predictive uncertainty remains well calibrated across all
+  regimes. These results establish AETHER-P3 as a practical, low-latency, uncertainty-aware capability
+  for thermospheric density forecasting that supports orbit prediction, drag-risk assessment, and operational
+  decision-making over its validated altitude range of approximately 300-520 km, with highest confidence
+  in the data-rich 400-520 km region.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

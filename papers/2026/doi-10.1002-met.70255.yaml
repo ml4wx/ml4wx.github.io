@@ -1,0 +1,58 @@
+id: doi-10.1002-met.70255
+title: Extensions to Postprocessing of Hourly Ensemble Probability of Precipitation Using a Neural Network
+  With Temporally Linked Predictors
+authors:
+- Martin Davis Apsitis
+date: '2026-09-01'
+year: 2026
+venue: Meteorological Applications
+venue_type: journal
+ids:
+  doi: 10.1002/met.70255
+  openalex: W7215131779
+links:
+  paper: https://doi.org/10.1002/met.70255
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/met.70255
+topic: post-processing
+topics:
+- probabilistic-ensembles
+type: evaluation
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Extends a neural postprocessing of ECMWF hourly precipitation probability to 25 Latvian stations
+  over a full year; a second temporal step improves calibration but trails raw ensemble skill.
+abstract: ABSTRACT Forecasting the hourly probability of precipitation (PoP) remains a persistent challenge,
+  particularly across varying precipitation regimes and at fine temporal resolution. This study evaluates
+  whether a recently proposed machine‐learning‐based postprocessing framework based on the use of available
+  raw control forecast predictors in complementing the ensemble predictions can be robustly extended to
+  a larger spatial domain and a full annual cycle. Using the European Centre for Medium‐Range Weather
+  Forecasts (ECMWF) ensemble and control forecast data at 0.1° resolution, probabilistic precipitation
+  forecasts are generated for 25 stations in Latvia over the period from 1 March 2023 to 29 February 2024.
+  Three supervised machine‐learning classifiers—logistic regression, random forest, and a neural network—are
+  trained daily to produce baseline (‘Base’) PoP predictions. Predictor selection is performed using a
+  custom cross‐validation scoring function designed to avoid probability collapse in rare‐event regimes.
+  Across most stations, lead times, and seasons, all Base methods exhibit lower skill than the raw ECMWF
+  ensemble, as assessed by Brier skill score (BSS), Brier score (BS) timelines, receiver characteristic
+  operation (ROC) curves, and contingency metrics. Apparent improvements during summer months are primarily
+  associated with systematic under‐forecasting in low‐frequency precipitation regimes rather than enhanced
+  discrimination. Motivated by temporal persistence observed in hourly precipitation, a secondary postprocessing
+  step is introduced. A neural network trained on sliding temporal windows of Base predictions and raw
+  ensemble predictors produces revised (‘Post’) forecasts. Post predictions demonstrate improved calibration,
+  reduced false alarm ratios, and positive BSS values for most stations, particularly during drier months.
+  However, the overall gains are modest and largely reflect probability dampening rather than consistent
+  improvements in event detection. These results suggest that raw control‐forecast predictors, when used
+  without prior postprocessing, do not necessarily provide useful information beyond the raw ensemble.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

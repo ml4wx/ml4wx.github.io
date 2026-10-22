@@ -1,0 +1,53 @@
+id: arxiv-2607.18416
+title: Hard conservation correctors can hide a degrading model when training autoregressive emulators
+authors:
+- William E. Chapman
+- John Schreck
+- Yingkai Sha
+date: '2026-07-20'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2607.18416'
+  openalex: W7170076672
+links:
+  paper: https://arxiv.org/abs/2607.18416
+  pdf: https://arxiv.org/pdf/2607.18416
+orgs:
+- ncar
+topic: xai-uq-physics
+topics:
+- climate-emulation
+type: evaluation
+method:
+- physics-constrained
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Shows a hard water-budget corrector can hide a drifting raw precipitation bias when fine-tuning
+  an atmosphere emulator; penalizing raw budget imbalance restores stable behaviour.
+abstract: AI weather and climate emulators increasingly incorporate physical principles into their formulation.
+  One approach is to apply hard correctors that modify network outputs so that global mass, water, or
+  energy budgets close. Prior work introduced such training-time correctors in the CREDIT framework and
+  reported reduced precipitation bias and improved stability. Motivated by those results, we fine-tuned
+  a global atmosphere emulator with a water-budget corrector, using the corrected prediction in the supervised
+  loss and evaluating through post-correction budget closure. By that measure, training appeared successful.
+  Every delivered field closed the moisture budget to machine precision. However, raw precipitation developed
+  a growing global low bias over 18 training epochs, while the required correction increased from about
+  2% to roughly 24%. The cause is a scale degeneracy. A uniform change in raw precipitation amplitude
+  is offset by a compensating change in the correction factor, leaving the corrected field, and therefore
+  the supervised loss, unchanged. This invariance removes the restoring force on raw precipitation amplitude,
+  allowing other training pressures to drive drift. Two changes recovered stable behavior. We supervised
+  the pre-correction prediction and penalized its raw budget imbalance, while the hard correction remained
+  in place for the delivered field. The required correction returned to less than 1% within the next epoch.
+  A controlled 2x2 ablation showed that the runaway occurred only when corrected-output supervision was
+  combined with no imbalance penalty. Exact post-correction closure therefore says little about whether
+  the raw model has learned the budget. When a corrector removes information from the loss, the raw fields
+  and the applied correction need to be tracked.
+significance: 4
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

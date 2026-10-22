@@ -1,0 +1,53 @@
+id: arxiv-2609.09247
+title: Steering Diffusion Priors with Sparse Observations for High-Resolution Temperature Downscaling
+authors:
+- Anirudh Avireddy
+- Manmeet Singh
+- Shivanshi Singh
+- Ayush Raj
+- Saptarishi Dhanuka
+- Parthasarathi Mukhopadhyay
+- Sandeep Juneja
+date: '2026-09-08'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.09247'
+links:
+  paper: https://arxiv.org/abs/2609.09247
+  pdf: https://arxiv.org/pdf/2609.09247
+topic: downscaling
+topics:
+- extremes-hazards
+type: model
+method:
+- diffusion
+spatial:
+- regional
+data:
+- era5
+- stations
+status: research
+summary: A conditional diffusion emulator with score-based data assimilation downscales ERA5 2-m temperature
+  using sparse observations, beating ERA5 and nearest-neighbour baselines at 1% station density.
+abstract: 'Local heatwave hazard depends on fine-scale air temperature, but ground stations are sparse
+  and reanalysis products such as ERA5 cannot resolve the terrain and land-surface contrasts that shape
+  real heat exposure. We present a conditional diffusion emulator for high-resolution 2-m temperature
+  downscaling, conditioned on static geography, a training climatology, exact-time ERA5 temperature, and
+  solar and temporal features, guided at inference by score-based data assimilation (SDA): a differentiable
+  Gaussian observation likelihood steers the diffusion score toward sparse revealed temperature observations
+  without any retraining. On a controlled 32-case synthetic-grid protocol over AORC, guidance improves
+  hidden-cell reconstruction over both ERA5 and a strong observation-proximal nearest-neighbor baseline
+  once observation density reaches 1\% (RMSE 0.318 vs.\ 0.431~K, winning all 32 cases), while sparser
+  regimes still favor direct interpolation. We further map the full guidance-strength landscape across
+  three observation densities, showing that the optimal strength shifts systematically with density and
+  that over-guiding causes sharp, predictable degradation -- giving a concrete operating recipe rather
+  than a single untuned setting. The resulting fields are intended as a temperature layer for downstream
+  heatwave-hazard products such as threshold exceedance and cumulative heat-burden. The present evidence
+  is a controlled synthetic-grid validation; station-network and held-out-year evaluations are the next
+  steps toward deployment.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

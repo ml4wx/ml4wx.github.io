@@ -1,0 +1,53 @@
+id: arxiv-2606.30920
+title: Conditional Tropical Cyclogenesis Rates via Rare-Event Sampling in a Neural Weather Emulator
+authors:
+- John S. Schreck
+- William Chapman
+- Charlie Becker
+- David John Gagne
+date: '2026-06-29'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.30920'
+links:
+  paper: https://arxiv.org/abs/2606.30920
+  pdf: https://arxiv.org/pdf/2606.30920
+topic: extremes-hazards
+topics:
+- probabilistic-ensembles
+type: application
+method:
+- transformer
+timescale:
+- medium
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: Forward flux sampling with a neural weather emulator estimates Atlantic tropical cyclogenesis
+  rates spanning three orders of magnitude, with a 14x geometric-mean speedup over direct sampling.
+abstract: 'We couple Forward Flux Sampling (FFS), a non-equilibrium rare-event technique from statistical
+  mechanics, to a neural weather emulator (SDL-WXFormer, 1° grid spacing) to estimate conditional tropical
+  cyclogenesis rates, or how often a tropical cyclone achieves a hurricane-level central pressure, without
+  modifying model dynamics. Tropical cyclogenesis rates vary by orders of magnitude across regimes, yet
+  direct ensemble sampling cannot resolve this variability at operationally feasible ensemble sizes. FFS
+  decomposes the rare disturbance to mature cyclone intensification path into a flux through an initial
+  interface pressure and a product of conditional crossing probabilities across four intermediate interface
+  pressures. We use the 1° emulator because FFS requires O(10^4) model trajectories per initial condition,
+  and because the model''s calibrated stochastic layers provide the necessary exploratory spread. Applied
+  to 98 Atlantic basin initial conditions spanning 21 August - 8 October 2022, FFS resolves genesis rates
+  spanning nearly three orders of magnitude, capturing a seasonal cycle qualitatively consistent with
+  observations. A self-consistency check comparing FFS rates to independent direct-sampling rates yields
+  a mean ratio of 1.03 +/- 0.15 across all initial conditions. Computational enhancement factors range
+  from 3X (most active environment) to 140X (most suppressed), with a geometric mean of 14X. Three case
+  studies illustrate the physical diagnostics the method provides: the rate-limiting step is initial tropical
+  organization for the Earl environment, uniformly high crossing probabilities for the Fiona precursor
+  environment, and a compound barrier at the final intensification stages for the Ian environment. More
+  efficient emulators would enable application of FFS to finer resolutions.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

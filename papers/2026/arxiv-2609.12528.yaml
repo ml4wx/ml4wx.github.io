@@ -1,0 +1,52 @@
+id: arxiv-2609.12528
+title: Optimizing Geoengineering Interventions Using Differentiable Climate Models
+authors:
+- Pulkit Dubey
+- Dorian S. Abbot
+- Ashesh Chattopadhyay
+date: '2026-09-11'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.12528'
+  openalex: W7212826186
+links:
+  paper: https://arxiv.org/abs/2609.12528
+  pdf: https://arxiv.org/pdf/2609.12528
+orgs:
+- university-of-chicago
+topic: applications-impacts
+topics:
+- climate-analysis-attribution
+type: model
+method:
+- differentiable
+timescale:
+- climate
+spatial:
+- global
+status: research
+summary: Gradients through the differentiable JAX-GCM model design SST cooling patterns that remove 92.3%
+  of land warming over two-year rollouts, transferring to the LUCIE and NeuralGCM emulators.
+abstract: The deployment of a geoengineering program to cool Earth's climate may be imminent. It is crucial
+  that tools be developed to ensure that such a program would achieve its objectives while minimizing
+  disruption. Here we exploit recently developed differentiable atmospheric models to demonstrate a novel
+  geoengineering control strategy. In the differentiable primitive-equation atmospheric model JAX-GCM
+  we impose a uniform $+4$\,K ocean warming and ask what pattern of sea-surface temperature cooling --
+  in five ocean-masked zonal bands of prescribed SST forcings whose amplitudes are free -- returns land
+  near-surface air temperature closest to the model's own unwarmed climatology. This idealized set-up
+  represents a cooling pattern that could be delivered physically either by marine cloud brightening or
+  stratospheric aerosol injection. Gradients through chaotic dynamics decorrelate from the true sensitivity
+  beyond the Lyapunov horizon, so we optimize greedily over segments of 8 to 14 days, following receding-horizon
+  control. The learned strategy removes $92.3 \pm 0.4\%$ of the realized land warming across a ten-member
+  ensemble of two-year rollouts, and a three-year run sustains it. If we use the spatial pattern of land
+  temperature as the optimization objective, the distributions of precipitation, evaporation, and specific
+  humidity over land are restored as well, even though they are not included in the objective function.
+  The learned strategy from JAX-GCM replayed in the AI emulators LUCIE and NeuralGCM without re-optimization
+  is successful, suggesting robustness. These promising results demonstrate a strategy for designing optimal
+  climate interventions that can be applied broadly for geoengineering scenarios under consideration.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

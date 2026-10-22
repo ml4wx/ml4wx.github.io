@@ -1,0 +1,53 @@
+id: doi-10.3390-w18182235
+title: 'Machine Learning Post-Processing of Atmospheric River Persistence Forecasts: A Pre-Trained Tabular
+  Transformer Across Mid-Latitude West Coasts'
+authors:
+- Heeseung Chung
+- Cheong Ghil Kim
+date: '2026-09-09'
+year: 2026
+venue: Water
+venue_type: journal
+ids:
+  doi: 10.3390/w18182235
+  openalex: W7212026490
+links:
+  paper: https://doi.org/10.3390/w18182235
+topic: post-processing
+topics:
+- extremes-hazards
+type: model
+method:
+- transformer
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: TabPFN post-processes GEFS two-day forecasts of atmospheric river persistence, raising F1 from
+  0.414 to 0.502 and 0.601 across two west-coast regions.
+abstract: Atmospheric river (AR)-driven flooding is a natural hazard that causes severe damage in many
+  regions, and the damage escalates sharply once an AR persists beyond a certain duration. Existing studies
+  and numerical weather prediction models, however, have focused mainly on AR occurrence and on the intensity
+  of integrated vapor transport (IVT) at individual time steps, paying little attention to duration. California
+  and Chile are both exposed to severe AR-related hazards, yet for the period since 2000, the Global Ensemble
+  Forecast System (GEFS) forecast at a two-day lead, compared against the regional IVT threshold, correctly
+  predicts persistence for only about 30% of the ARs that actually persisted for 24 h or longer. This
+  study retains the predictive capability of the physics-based GEFS forecast while correcting its weak
+  performance on persistence using TabPFN, a pre-trained transformer for tabular data. Using single-control-member
+  forecasts from the GEFS v12 reforecast (2000 to 2019), the model predicts the minimum IVT over the target
+  window and compares it with the regional threshold. In the performance evaluation, the F1 score, which
+  combines the precision and recall of AR persistence prediction into a single measure, rose from 0.414
+  to 0.502 and 0.601 in the two regions, and TabPFN outperformed machine learning models such as 1D-CNN
+  and LGBM. Moreover, on the California coast, the proposed model, through its persistence decisions,
+  captured 66.3% of the rainfall that fell during persistent atmospheric river events, up from 30.7% for
+  the raw forecast. The proposed model offers a forecast post-processing method for predicting AR persistence
+  and can contribute meaningfully to flood disaster prevention.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

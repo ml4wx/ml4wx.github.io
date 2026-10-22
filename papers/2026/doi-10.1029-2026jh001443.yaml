@@ -1,0 +1,62 @@
+id: doi-10.1029-2026jh001443
+title: Inferring Thermodynamic Histories From In Situ Ice Crystal Imagery via Conditional Diffusion Models
+authors:
+- Giorgia Nicolaou
+- Katherine Frields
+- Troy Stephens
+- Yichen Cai
+- Kara Sulia
+- Vanessa M. Przybylo
+- Duncan Watson‐Parris
+- Joseph Ko
+- Kara D. Lamb
+date: '2026-10-01'
+year: 2026
+venue: Journal of Geophysical Research Machine Learning and Computation
+venue_type: journal
+ids:
+  doi: 10.1029/2026jh001443
+  openalex: W7162112344
+links:
+  paper: https://doi.org/10.1029/2026jh001443
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2026JH001443
+orgs:
+- columbia-leap
+topic: applications-impacts
+topics:
+- climate-analysis-attribution
+type: model
+method:
+- diffusion
+- gan-vae
+spatial:
+- local
+data:
+- other
+- km-scale-sim
+status: research
+summary: Conditional diffusion model on VAE embeddings infers ~8-hour thermodynamic histories from ice
+  crystal images; conditioning cuts temperature CRPS by 42%.
+abstract: Abstract Ice crystal microphysical properties govern cirrus cloud radiative effects, yet their
+  representation in climate models remains inadequate due to insufficient understanding of how thermodynamic
+  histories control crystal morphology. Observational platforms provide only instantaneous snapshots of
+  cloud properties, precluding direct measurement of the growth environments that determine final crystal
+  structure. Here, we introduce a machine learning (ML) framework for probabilistically inferring WRF‐HYSPLIT
+  derived atmospheric thermodynamic histories directly from ice crystal imagery. We use high‐resolution
+  ice crystal observations from the 2002 NASA CRYSTAL‐FACE field campaign paired with HYSPLIT back trajectories
+  driven by Weather Research and Forecasting simulations to construct a data set linking crystal morphology
+  to approximately eight‐hour prior thermodynamic evolution. A conditional diffusion model, trained on
+  variational autoencoder embeddings of crystal images and geometric attributes, generates ensemble distributions
+  of temperature, pressure, and relative humidity trajectories consistent with observed morphology. Relative
+  to an unconditional baseline, morphological conditioning reduces the continuous ranked probability score
+  by 42% for temperature, 31% for pressure, and 7% for relative humidity. Results demonstrate that ice
+  crystal morphology encodes recoverable constraints on these model‐derived thermodynamic histories, with
+  temperature most strongly constrained, and uncertainty increasing systematically with look‐back time.
+  This framework establishes a generalizable methodology for extracting process‐level understanding from
+  snapshot observations and provides a pathway for improved observational constraints on ice microphysics
+  parameterizations in climate models.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

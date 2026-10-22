@@ -1,0 +1,60 @@
+id: doi-10.3390-rs18173026
+title: 'STAMP-GAN: A Spatiotemporal Attention-Modulated Generative Adversarial Network for Precipitation
+  Nowcasting'
+authors:
+- Xiaoxiao Ma
+- Zhenyu Lu
+- Fang Wang
+- Hailin Feng
+- Bingjian Lu
+date: '2026-09-04'
+year: 2026
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs18173026
+  openalex: W7208736550
+links:
+  paper: https://doi.org/10.3390/rs18173026
+orgs:
+- nuist
+topic: nowcasting
+type: model
+method:
+- gan-vae
+- rnn
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- era5
+- other
+status: research
+summary: STAMP-GAN combines attention-modulated ConvLSTM with an adversarial generator for 1-6 h precipitation,
+  improving CSI by about 6.5% and 9.5% on two regional datasets.
+abstract: Precipitation nowcasting aims to predict short-term precipitation evolution over forecast lead
+  times of 1–6 h and can support hydrological-risk and disaster-prevention applications when near-real-time
+  observations are available. However, precipitation forecasting remains challenging because of rapid
+  spatiotemporal evolution, spatial displacement, and the difficulty of representing localized high-intensity
+  precipitation. To address these issues, this study proposes STAMP-GAN, a spatiotemporal attention-modulated
+  generative adversarial network for regional precipitation sequence prediction. STAMP-GAN combines an
+  AM-ConvLSTM temporal evolution module with spatial attention, efficient channel attention, large-receptive-field
+  context modeling, and temporal-index-conditioned feature modulation. A spatially aligned two-dimensional
+  digital elevation model (DEM) field is retained as static auxiliary geographical information. The STAMP-Net
+  generator uses hierarchical multi-scale feature extraction to reconstruct precipitation structures at
+  different spatial scales while a dual-branch temporal PatchGAN provides adversarial supervision for
+  both the complete forecast sequence and the final three forecast frames. A hybrid objective combines
+  regression, event-based, structural, temporal, and adversarial constraints. Experiments on the ERA5
+  and CMA-S datasets show that, compared with the best-performing baseline for each metric, STAMP-GAN
+  achieves relative CSI improvements of approximately 6.5% and 9.5%, respectively. The proposed framework
+  provides a data-driven approach for retrospective hourly regional precipitation sequence prediction
+  under gridded meteorological-data conditions, rather than a fully validated operational real-time nowcasting
+  system.
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

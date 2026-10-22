@@ -1,0 +1,53 @@
+id: arxiv-2605.03802
+title: Towards accurate extreme event likelihoods from diffusion model climate emulators
+authors:
+- Peter Manshausen
+- Noah Brenowitz
+- Julius Berner
+- Karthik Kashinath
+- Mike Pritchard
+date: '2026-05-05'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.03802'
+  openalex: W7160413065
+links:
+  paper: https://arxiv.org/abs/2605.03802
+  pdf: https://arxiv.org/pdf/2605.03802
+orgs:
+- nvidia
+topic: extremes-hazards
+topics:
+- climate-emulation
+type: application
+method:
+- diffusion
+timescale:
+- climate
+spatial:
+- global
+data:
+- other
+status: research
+summary: Uses cBottle diffusion density estimates to compute tropical cyclone likelihood odds ratios under
+  guidance, enabling importance sampling with lower standard error than plain Monte Carlo.
+abstract: ML climate model emulators are useful for scenario planning and adaptation, allowing for cost-efficient
+  experimentation. Recently, the diffusion model Climate in a Bottle (cBottle) has been proposed for generation
+  of atmospheric states compatible with boundary conditions of solar position and sea surface temperatures.
+  Crucially, cBottle can be guided to generate extreme events such as Tropical Cyclones (TCs) over locations
+  of interest. Diffusion models such as cBottle work by approximating the probability density of the training
+  data. Here, we show use cases of the probability density estimates of atmospheric states obtained from
+  this climate emulator. Most importantly, these estimates allow us to calculate likelihoods of extreme
+  events under guidance. When guiding the model towards states including TCs, comparing the probability
+  density under the guided and unguided model enables us to quantify how much more likely the guidance
+  has made the TC. We show how these odds ratios allow us to importance-sample from the TC distribution,
+  reducing the standard error of the probability estimate compared to simple Monte Carlo sampling. Furthermore,
+  we discuss results and limitations of the application of model probability densities to extreme event
+  attribution-like experiments. We present these early but encouraging results hoping they will spur more
+  research into probabilistic information that can be gained from diffusion models of the atmosphere.
+significance: 4
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

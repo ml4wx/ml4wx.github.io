@@ -1,0 +1,50 @@
+id: doi-10.1029-2025ms005232
+title: A Hybrid Data‐Driven and Physics‐Based Framework for Atmospheric Radiative Transfer Modeling
+authors:
+- Chenggong Wang
+- Jing Feng
+- Raymond Menzel
+- David J. Paynter
+- Gabriel A. Vecchi
+date: '2026-06-01'
+year: 2026
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2025ms005232
+  openalex: W7165774684
+links:
+  paper: https://doi.org/10.1029/2025ms005232
+orgs:
+- noaa
+- princeton-university
+topic: hybrid-parameterization
+topics:
+- climate-emulation
+type: model
+method:
+- physics-constrained
+- cnn
+spatial:
+- global
+data:
+- other
+status: research
+summary: HRadNN uses a neural radiative transfer emulator by default and falls back to physics when energy
+  is not conserved, stable under 9 K SST warming and 4-5x faster.
+abstract: Abstract Accurate and efficient radiative transfer computations are critical for numerical weather
+  forecast and climate prediction, but current radiative transfer models are computationally expensive.
+  We developed a neural network (NN) scheme that emulates a physics‐based radiative transfer scheme, achieving
+  4–5 times faster computation with high accuracy for well‐trained, targeted scenarios. However, NN models
+  struggle with extrapolation to out‐of‐sample weather or climate conditions. To address this, we propose
+  HRadNN, a hybrid framework that uses a NN scheme by default and switches to a physics‐based scheme whenever
+  energy conservation is not maintained. Online simulations demonstrate HRadNN's accuracy in present‐day
+  climate and stability in extreme warming/cooling scenarios (up to 9 K change of the sea surface temperature)
+  even without training specific to these scenarios. This indicates that machine learning can accelerate
+  radiative transfer computation while maintaining accuracy and efficiency, provided it is quality‐controlled
+  by physical laws such as energy conservation.
+significance: 4
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

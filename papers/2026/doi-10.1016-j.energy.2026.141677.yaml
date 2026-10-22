@@ -1,0 +1,51 @@
+id: doi-10.1016-j.energy.2026.141677
+title: Decision-oriented wind power scenario generation considering meteorological uncertainty
+authors:
+- Chengzhi Yu
+- Bo Wang
+- Zhihang Yu
+- Zitong Lei
+- Min Zhou
+- Junzo Watada
+date: '2026-06-19'
+year: 2026
+venue: Energy
+venue_type: journal
+ids:
+  doi: 10.1016/j.energy.2026.141677
+  openalex: W7165177494
+links:
+  paper: https://doi.org/10.1016/j.energy.2026.141677
+topic: applications-impacts
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: Diffusion model generates day-ahead wind power scenarios that embed NWP uncertainty and dispatch
+  costs, improving cost-effectiveness on IEEE RTS-96 without losing statistical accuracy.
+abstract: High renewable penetration introduces substantial uncertainty into day-ahead power system scheduling,
+  motivating scenario generation for uncertainty-aware dispatch. Although data-driven generative models
+  have improved scenario realism and diversity, most existing methods (i) are only weakly aligned with
+  downstream operational objectives and (ii) treat numerical weather prediction (NWP) inputs as deterministic
+  despite their inherent uncertainty. This paper proposes the decision-oriented and meteorological uncertainty-aware
+  diffusion model (DO-MUDiff), a diffusion-based framework for day-ahead wind power scenario generation
+  that jointly incorporates approximate decision-cost information and meteorological uncertainty. A denoiser
+  tailored to renewable time series is trained with a differentiable economic dispatch (ED) proxy network
+  to inject cost signals, while an adaptive perturbation mechanism and a sampling guidance strategy jointly
+  model NWP uncertainty and balance trend consistency with diversity. Experiments evaluate both scenario
+  quality and dispatch performance on the IEEE RTS-96 system. The results show that DO-MUDiff improves
+  cost-effectiveness without sacrificing statistical accuracy compared with representative benchmarks.
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,61 @@
+id: doi-10.3390-s26144461
+title: 'ST-TriMambaUNet: A Weather Radar Echo Extrapolation-Based Spatiotemporal Sequence Prediction Network
+  for Precipitation Nowcasting'
+authors:
+- Heng Wang
+- Qiang Sun
+- Yu Shi
+date: '2026-07-14'
+year: 2026
+venue: Sensors
+venue_type: journal
+ids:
+  doi: 10.3390/s26144461
+  openalex: W7168235655
+links:
+  paper: https://doi.org/10.3390/s26144461
+  pdf: https://www.mdpi.com/1424-8220/26/14/4461/pdf?version=1784015499
+topic: nowcasting
+type: model
+method:
+- transformer
+- cnn
+- other
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: ST-TriMambaUNet combines Mamba state-space blocks, spatiotemporal attention and directional convolution
+  to improve radar echo extrapolation for heavy-rain precipitation nowcasting.
+abstract: Precipitation nowcasting plays an important role in mitigating the impacts of extreme weather
+  events on social production and daily life. However, existing methods still face two major limitations.
+  (1) Convolutional neural network-based methods are insufficient in modeling the temporal dependencies
+  of radar echo sequences, which may lead to information loss in the prediction results. (2) Most existing
+  methods enlarge the receptive field by stacking convolutional layers. This strategy makes it difficult
+  to obtain a truly global receptive field and effectively model global dependencies, resulting in limited
+  accuracy in heavy rainfall prediction. In addition, spatiotemporal information at different time steps
+  is not fully integrated, and the multi-scale directional features of rainbands are often ignored. To
+  address these issues, this paper proposes ST-TriMambaUNet, which consists of an encoder, a decoder,
+  and a feature enhancement module. First, a Spatiotemporal Fusion Attention (STFA) was designed, including
+  global spatial attention and temporal attention. It can effectively learn long-range spatial correlations
+  and capture the temporal dependencies of radar echo sequences in a parallel manner. Second, a Multi-Scale
+  Interaction Mamba (MSIM) module was developed with three branches. The first branch leverages Mamba
+  to model global spatiotemporal dependencies with linear complexity. The second branch promotes spatiotemporal
+  information interaction through channel shuffle and further combines Mamba to model global spatiotemporal
+  dependencies. The third branch designs Multi-Scale Directional Convolution (MSDC) to learn the multi-scale
+  directional features of rainbands. Finally, the features from the three branches are dynamically fused
+  through the designed adaptive gated fusion mechanism. This enhances the model's representation capability
+  for strong-echo core regions and multi-scale precipitation band structures. Experimental results on
+  two public datasets, SEVIR and CIKM, demonstrated that the proposed ST-TriMambaUNet achieved clear advantages
+  in both overall prediction accuracy and heavy rainfall scenarios. In particular, under the high-threshold
+  precipitation scenarios of SEVIR (160, 181, and 219), the CSI was improved by up to 10.19%. In the heavy
+  rainfall scenario of CIKM at 40 dBZ, CSI, POD, and HSS were improved by 5.29%, 8.07%, and 4.65%, respectively.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

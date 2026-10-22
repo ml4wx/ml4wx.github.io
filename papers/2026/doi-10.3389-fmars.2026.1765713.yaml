@@ -1,0 +1,55 @@
+id: doi-10.3389-fmars.2026.1765713
+title: On the phenomena-oriented validation of spatial neural-network based surface wind downscaling over
+  the Arctic seas
+authors:
+- V. Yu. Rezvov
+- Mikhail Krinitskiy
+- Alexander Gavrikov
+- Vasilisa Koshkina
+- Ekaterina Demidova
+date: '2026-06-01'
+year: 2026
+venue: Frontiers in Marine Science
+venue_type: journal
+ids:
+  doi: 10.3389/fmars.2026.1765713
+  openalex: W7163046354
+links:
+  paper: https://doi.org/10.3389/fmars.2026.1765713
+  pdf: https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2026.1765713/pdf
+topic: downscaling
+topics:
+- regional-km-scale
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- era5
+- km-scale-sim
+status: research
+summary: A skip-connection neural network downscales ERA5 Arctic surface winds to WRF-like resolution,
+  validated via polar mesocyclone and Novaya Zemlya bora tracking, with 50-fold speedup.
+abstract: Neural-network based downscaling offers a computationally efficient alternative to high-resolution
+  dynamical modeling, yet its validation remains challenging because conventional pointwise metrics provide
+  limited insight into the physical realism of reconstructed atmospheric fields. This study introduces
+  and demonstrates a phenomena-oriented validation framework for evaluating neural-network based spatial
+  downscaling of surface wind fields over the Arctic seas. We implement a deep neural network with skip
+  connections, trained to downscale ERA5 reanalysis data using high-resolution WRF simulations as a reference.
+  The core methodological advance is a rigorous validation approach that moves beyond conventional pointwise
+  metrics. It employs the tracking of polar mesocyclones and the Novaya Zemlya bora to assess the representation
+  of mesoscale atmospheric dynamics. The downscaling model demonstrates a 50-fold greater computational
+  efficiency than non-hydrostatic modeling with the reservation of the need for the collection of training
+  dataset computed with high-resolution WRF model for a limited time period. Validation results show that
+  our deep learning model successfully captures mesoscale spatial variability, closely matches the distributions
+  of vortex intensity characteristics of the high-resolution reference, and produces physically consistent
+  wind fields that yield realistic significant wave heights when used to force a wave model. This work
+  establishes that a phenomena-based assessment is crucial for validating the physical realism of statistical
+  downscaling methods in complex marine environments.
+significance: 4
+cited_by: 1
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

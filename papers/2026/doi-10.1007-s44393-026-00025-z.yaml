@@ -1,0 +1,51 @@
+id: doi-10.1007-s44393-026-00025-z
+title: Moisture Source–Receptor Relationships for Post-Processing Medium-Range Precipitation Forecasts
+authors:
+- Muditha Madusanka DANTANARAYANA
+- Shinjiro Kanae
+date: '2026-06-29'
+year: 2026
+venue: SOLA
+venue_type: journal
+ids:
+  doi: 10.1007/s44393-026-00025-z
+  openalex: W7166450906
+links:
+  paper: https://doi.org/10.1007/s44393-026-00025-z
+  pdf: https://link.springer.com/content/pdf/10.1007/s44393-026-00025-z.pdf
+topic: post-processing
+type: model
+method:
+- classical-ml
+- physics-constrained
+timescale:
+- medium
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+- era5
+status: research
+summary: Uses FLEXPART moisture source masks to select predictors for XGBoost post-processing of 1-14
+  day Kyushu precipitation, improving NSE 15.1% at 4-6 days.
+abstract: Abstract Data-driven post-processing of medium-range precipitation forecasts typically relies
+  on forecasted predictors. However, incorporating observed predictors remains challenging because of
+  the long temporal gap between present observations and future precipitation. This study proposes a physically
+  interpretable approach that leverages atmospheric moisture transport, where source–receptor relationships
+  persist until medium-range lead times. Moisture sources associated with each event and lead time were
+  identified using FLEXPART, a Lagrangian-based particle transport model. The methodology pre-processes
+  evaporation-related observed auxiliary predictors (surface temperature and wind speed) in the input
+  feature dataset, retaining only features corresponding to the identified moisture sources, before training
+  the machine learning model. The method was applied to spatial-mean daily precipitation forecasts (1–14-day
+  lead times) over the Kyushu region of Japan during summers of 2016–2024 using eXtreme Gradient Boosting
+  algorithm. The methodology demonstrates the potential to improve 4–6-day lead time forecasts, including
+  an average improvement of Nash-Sutcliffe efficiency (NSE) of 15.1% relative to raw forecasts, with NSE
+  transitioning into the positive regime at mid-medium-range lead times. However, under operational conditions,
+  the NSE improvement decreased to 5.6%. These findings highlight the importance of remote moisture sources
+  in precipitation forecasting.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

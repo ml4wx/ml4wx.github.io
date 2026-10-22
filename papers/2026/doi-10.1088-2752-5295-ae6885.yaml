@@ -1,0 +1,54 @@
+id: doi-10.1088-2752-5295-ae6885
+title: Robust deep learning-based downscaling of mean and extreme precipitation over the Indian subcontinent
+authors:
+- Midhun Murukesh
+- Pankaj Kumar
+date: '2026-05-05'
+year: 2026
+venue: Environmental Research Climate
+venue_type: journal
+ids:
+  doi: 10.1088/2752-5295/ae6885
+  openalex: W7160300631
+links:
+  paper: https://doi.org/10.1088/2752-5295/ae6885
+topic: downscaling
+topics:
+- extremes-hazards
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Super-resolution residual network downscales Indian precipitation, beats BCSD on extremes and
+  transfers zero-shot to Northeast India without retraining.
+abstract: 'Abstract Downscaling bridges the gap between coarse-resolution global climate models and local
+  impacts by improving the representation of regional variability and localized extremes. However, precipitation
+  downscaling remains challenging due to its stochastic nature and highly skewed distribution. In this
+  study, we investigate the generalization capability of a deep learning approach, the Super-Resolution
+  Deep Residual Network (SRDRN), for gridded precipitation downscaling over the Indian subcontinent, considering
+  four distinct regions: Central India (CI), Southern Peninsular India (SP), Northwest India (NW), and
+  Northeast India (NE), with NE chosen as the transfer domain. The SRDRN is trained using samples from
+  CI, SP, and NW with three loss functions: mean squared error (MSE), mean absolute error (MAE), and weighted
+  MAE (WMAE), resulting in three model variants. All variants consistently outperform the baseline bias
+  correction and spatial disaggregation (BCSD) method across standard pixel-wise metrics, including Kling–Gupta
+  efficiency, root MSE (RMSE), and percent bias (PBIAS), and effectively capture localized extreme precipitation,
+  preserving key indices such as the 99th percentile magnitude (R99), monthly maximum 1-day precipitation
+  (Rx1Day), consecutive wet days (CWDs), consecutive dry days (CDDs), and the annual count of very heavy
+  precipitation days (R20mm). Among the variants, SRDRN-WMAE shows the highest skill in representing extreme
+  precipitation intensity, while SRDRN-MAE provides the most balanced performance across both intensity-based
+  and persistence-based indices. In a zero-shot transfer setting, all SRDRN variants applied over NE without
+  any domain-specific training consistently outperform BCSD, especially in capturing extreme precipitation,
+  despite BCSD being explicitly calibrated for the NE region. The results indicate that SRDRN models learn
+  transferable representations of precipitation structure that generalize effectively beyond their training
+  domains. Overall, the results demonstrate that SRDRN is a robust, generalizable, and computationally
+  efficient framework for high-resolution precipitation downscaling, with strong potential for applications
+  in data-sparse and climatologically complex regions.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

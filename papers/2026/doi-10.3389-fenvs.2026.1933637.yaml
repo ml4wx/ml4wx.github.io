@@ -1,0 +1,61 @@
+id: doi-10.3389-fenvs.2026.1933637
+title: A hybrid CNN-XGBoost-Temporal Fusion Transformer framework for explainable multi-variable hydroclimatic
+  extremes forecasting under CMIP6 climate scenarios
+authors:
+- Mohammed Faizan N
+- Sujatha V
+date: '2026-09-22'
+year: 2026
+venue: Frontiers in Environmental Science
+venue_type: journal
+ids:
+  doi: 10.3389/fenvs.2026.1933637
+  openalex: W7214042374
+links:
+  paper: https://doi.org/10.3389/fenvs.2026.1933637
+  pdf: https://www.frontiersin.org/journals/environmental-science/articles/10.3389/fenvs.2026.1933637/pdf
+topic: extremes-hazards
+topics:
+- climate-analysis-attribution
+type: model
+method:
+- transformer
+- cnn
+- classical-ml
+- rnn
+timescale:
+- short
+- climate
+spatial:
+- regional
+data:
+- cmip
+- other
+status: research
+summary: A CNN-XGBoost-TFT hybrid forecasts hydroclimatic extremes including SPI-12 and streamflow, with
+  1-day NSE 0.934 and projected drought tripling under SSP5-8.5.
+abstract: 'Hydroclimatic extremes are projected to intensify across monsoon-dependent river basins, yet
+  reliable forecasting remains limited by three persistent gaps: deep learning models rarely integrate
+  spatial and temporal processing in a unified pipeline, almost always target a single variable, and offer
+  limited interpretability. This study introduces CXTF-Net, to the best of our knowledge the first three-stage
+  hybrid framework for explainable, multi-variable, multi-horizon hydroclimatic forecasting. It combines
+  a CNN-BiLSTM encoder for joint spatial-temporal feature extraction, an XGBoost feature-selection gate
+  that reduces 28 candidate predictors to the most informative 12, and a Temporal Fusion Transformer (TFT)
+  decoder that simultaneously produces calibrated probabilistic forecasts of streamflow, the 12-month
+  Standardised Precipitation Index (SPI-12), a compound flood risk index, and basin water deficit. Applied
+  to a 43-year multi-source record (1980–2022) for the Mahanadi River Basin, India, CXTF-Net achieved
+  an NSE of 0.934, a KGE of 0.921, and an RMSE of 18.4 m 3 /s for 1-day-ahead streamflow forecasting,
+  outperforming seven benchmarks including LSTM (NSE = 0.852), Transformer (NSE = 0.889), and CNN-LSTM
+  (NSE = 0.901) at horizons up to 30 days. NSE exceeded 0.79 at the 30-day horizon across all four target
+  variables. SHAP attribution and attention rollout jointly identified SST anomalies, ENSO Niño 3.4, and
+  antecedent soil moisture as the three dominant hydroclimatic drivers, with physically consistent horizon-dependent
+  transitions from land-surface to ocean-forced predictability. CMIP6 SSP5-8.5 projections indicate a
+  statistically significant decline in mean annual basin rainfall ( − 0.72 mm yr − 1 ) and a near-tripling
+  in severe drought frequency by 2080–2100. CXTF-Net provides an interpretable, transferable framework
+  for climate-risk decision-making in monsoon-driven basins.'
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

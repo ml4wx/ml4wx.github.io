@@ -1,0 +1,58 @@
+id: arxiv-2605.29976
+title: Evaluating Skill and Stability of ArchesWeather and ArchesWeatherGen under Multi-Decadal Climate
+  Simulations
+authors:
+- Renu Singh
+- Robert Brunstein
+- Antonia Jost
+- Yana Hasson
+- Thomas Rackow
+- Claire Monteleoni
+- Christian Lessig
+- Guillaume Couairon
+date: '2026-05-28'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.29976'
+  openalex: W7162757288
+links:
+  paper: https://arxiv.org/abs/2605.29976
+  pdf: https://arxiv.org/pdf/2605.29976
+topic: climate-emulation
+topics:
+- foundation-models
+type: evaluation
+method:
+- transformer
+- diffusion
+timescale:
+- climate
+spatial:
+- global
+data:
+- era5
+- cmip
+status: research
+summary: Forced ArchesWeather and ArchesWeatherGen run stable multi-decadal AIMIP simulations, reproducing
+  ERA5 climatology, interannual variability and distribution tails under SST and sea ice forcing.
+abstract: We evaluate the climate simulation capabilities of ArchesWeather and ArchesWeatherGen, two machine
+  learning models originally trained for weather forecasting and evaluated up to a 10-day lead time. ArchesWeather
+  is a deterministic model, while ArchesWeatherGen is a probabilistic flow-matching model leveraging ArchesWeather's
+  forecasts, enabling ensemble-based uncertainty quantification. In this work, we adapt these models to
+  act as forced atmospheric models by using additional conditioning on the monthly mean sea surface temperature
+  (SST) and sea ice cover (SIC) as boundary conditions. In particular, we follow the AI Model Intercomparison
+  Project (AIMIP) Phase 1 protocol, which, analogous to the Atmospheric Model Intercomparison Project
+  (AMIP), proposes a standardized experimental setup to evaluate the climate skill of ML-based forced
+  atmospheric models. We present a comprehensive evaluation of both models under these conditions, including
+  comparison against numerical climate models, ablation studies that examine key design choices in the
+  extension, and an analysis of forced versus unforced configurations. Despite being originally developed
+  for weather forecasting, we demonstrate that forced configurations of ArchesWeather and ArchesWeatherGen
+  produce stable long-term climate simulations, have a stable annual cycle, and capture the drift of many
+  climate variables. The models faithfully reproduce ERA5's climatology, large-scale circulations and
+  interannual variability, and they capture the tails of the distributions.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,76 @@
+id: doi-10.3390-earth7050149
+title: Climatic and Topographic Controls on Machine Learning-Based Rainfall Forecast Errors in a Tropical
+  Monsoon Basin
+authors:
+- Jumadi Jumadi
+- Supari Supari
+- Munajat Tri Nugroho
+- Danardono Danardono
+- Yuli Priyana
+- Lam Kuok Choy
+- Fateen Nabilla Rasli
+- Ayodya Rido Nugraha
+- Md. Enamul Huq
+- Farha Sattar
+- Muhammad Nawaz
+- Lee Hoong Pin
+date: '2026-09-11'
+year: 2026
+venue: Earth
+venue_type: journal
+ids:
+  doi: 10.3390/earth7050149
+  openalex: W7212275641
+links:
+  paper: https://doi.org/10.3390/earth7050149
+topic: benchmarks-data-eval
+topics:
+- xai-uq-physics
+type: evaluation
+method:
+- classical-ml
+- rnn
+- transformer
+- cnn
+timescale:
+- seasonal
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Failure-aware analysis shows ML rainfall forecast errors in a Indonesian monsoon basin are systematically
+  controlled by season, ENSO and elevation, with Transition II raising log-error by 245%.
+abstract: 'Conventional evaluations of rainfall prediction models rely on average accuracy, often masking
+  the conditions, locations and causes of model failure and reduced reliability. This study proposes a
+  paradigm shift from conventional average-accuracy benchmarking toward failure-aware forecast-error diagnosis
+  in the Bengawan Solo River Basin, a tropical monsoon river basin in Indonesia with moderate topographic
+  gradients (grid elevations span ≈ 300–650 m). Methodologically, forecasts from previously published
+  models are treated as fixed inputs and their errors are modelled as the response variable, so the analysis
+  diagnoses when and where models fail rather than retraining them. By treating forecast errors as response
+  variables, rather than as random residuals, this study analyses 345,180 model–grid records–month records
+  from ten individual models (RF, XGB, LGBM, SVR, MLP, LSTM, GRU, TCN, CNN, Transformer) and one best
+  ensemble model (Ensemble_Q, a stacking of RF, XGB, SVR, MLP, LGBM, LSTM, GRU, TCN, CNN, Transformer)
+  against observed CHIRPS (Climate Hazards Group InfraRed Precipitation with Station data) precipitation,
+  seasonal phase, ENSO and IOD regimes (El Niño–Southern Oscillation and Indian Ocean Dipole, respectively),
+  the MJO index (Madden–Julian Oscillation) as an additional analysis, and elevation as a topographic
+  control, using log-error models, high-error logistic regression, interaction tests, and block bootstrap
+  validation (N = 1000), false discovery rate, and spatial statistics. Results indicate that prediction
+  errors are not random but are systematically controlled: the Transition II phase increases log-error
+  by 245% (pooled log-error model) and raises the odds of a high-error event roughly 40-fold relative
+  to the dry season; La Niña conditions amplify errors by 41% and the odds of a high-error event by 3.3
+  times (though this ENSO signal is largely entangled with co-occurring Negative-IOD months), and every
+  100 m increase in elevation increases errors by 26%, with errors forming distinct spatial clusters (Moran’s
+  I = 0.78; p = 0.001). Ensemble_Q outperforms the baseline on an aggregate basis (mean absolute error,
+  MAE = 54.10 mm) but still experiences error amplification under these conditions, while spatial deep-learning
+  architectures (TCN, CNN, Transformer) prove most vulnerable to elevation gradients. All major patterns
+  persisted across variations in thresholds, model subsets, ENSO definitions, multiplicity corrections,
+  and bootstrapping. These findings confirm that superior mean accuracy does not guarantee operational
+  reliability, and that conditional failure diagnosis is an essential complement to benchmarking rainfall
+  predictions in tropical monsoon regions.'
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

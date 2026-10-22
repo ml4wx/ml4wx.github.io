@@ -1,0 +1,59 @@
+id: doi-10.5194-gmd-19-7835-2026
+title: Predicting forecast errors with diffusion model for uncertainty quantification in wind speed nowcasting
+authors:
+- Yanwei Zhu
+- Aitor Atencia
+- Markus Dabernig
+- Yong Wang
+- Shuyan Zhou
+date: '2026-08-24'
+year: 2026
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-19-7835-2026
+  openalex: W7155042146
+links:
+  paper: https://doi.org/10.5194/gmd-19-7835-2026
+  pdf: https://gmd.copernicus.org/articles/19/7835/2026/gmd-19-7835-2026.pdf
+orgs:
+- nuist
+- cma
+topic: probabilistic-ensembles
+topics:
+- post-processing
+type: model
+method:
+- diffusion
+timescale:
+- nowcast
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: Diffusion model predicts forecast errors to add to a physics-based 10 m wind nowcast, yielding
+  a calibrated ensemble without running perturbed members.
+abstract: Abstract. Weather forecasts are inherently uncertain due to the chaotic nature of the atmosphere
+  and unavoidable errors. Ensemble forecasting is the established approach for quantifying the uncertainty.
+  However, it is both computationally expensive and inherently prone to under-dispersion, as it simulates
+  multiple atmospheric trajectories with a finite number of members. In this study, we propose a novel
+  paradigm that achieves uncertainty quantification by directly predicting forecast errors, thereby bypassing
+  the need to simulate multiple trajectories. We employ a denoising diffusion probabilistic model for
+  this task, as its generative capabilities are well-suited for learning high-dimensional distributions.
+  By stochastically sampling from the learned distribution and adding the generated errors to the physics-based
+  nowcast, an ensemble nowcast can be constructed efficiently without the need for perturbation generation
+  or parallel model running. The proposed approach is applied to 10-meter wind speed nowcast, which is
+  important but has received relatively limited attention in diffusion-based weather forecasting studies.
+  Results show that the diffusion model effectively captures the spatial structure and probabilistic characteristics
+  of forecast errors, leading to improved deterministic accuracy and a well-calibrated ensemble. In addition,
+  different noise schedules for the diffusion process are systematically evaluated. The results indicate
+  that the Cosine schedule provides the most reliable performance for uncertainty prediction, offering
+  practical guidance for configuring diffusion models in weather forecasting applications.
+significance: 4
+cited_by: 0
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

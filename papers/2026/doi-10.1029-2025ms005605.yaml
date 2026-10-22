@@ -1,0 +1,61 @@
+id: doi-10.1029-2025ms005605
+title: Integration of Deep Neural Network‐Based Boundary Layer Subgrid Frictional Effects Into the Momentum
+  Equation Constraint of WRFDA EnVar to Improve Tropical Cyclone Forecasts
+authors:
+- Xin Li
+- Jian‐Feng Gu
+- Yi Li
+- Yu Zheng
+- ZHUANG Yuan
+- Shiwei Sun
+- Zhiqiang Cui
+date: '2026-07-01'
+year: 2026
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2025ms005605
+  openalex: W7167098625
+links:
+  paper: https://doi.org/10.1029/2025ms005605
+orgs:
+- cma
+topic: data-assimilation
+topics:
+- hybrid-parameterization
+type: model
+method:
+- classical-ml
+- physics-constrained
+- differentiable
+spatial:
+- regional
+data:
+- nwp-analysis
+- radar
+status: research
+summary: A DNN emulating boundary-layer friction is embedded with tangent-linear and adjoint into WRFDA
+  En3DVar, improving pressure adjustments and tropical cyclone analyses for Muifa and Doksuri.
+abstract: Abstract The incorporation of appropriate dynamic constraints in data assimilation (DA) is highly
+  important for improving the forecasting of disastrous weather. It is often challenging to describe subgrid
+  physical processes with strong nonlinearity and discontinuity in dynamic constraints because of difficulties
+  in tangent linear and adjoint development. Based on the frictionless momentum equation weak constraint
+  within the Weather Research and Forecasting ensemble‐three‐dimensional variational (En3DVar) DA, this
+  study incorporates the subgrid planetary boundary layer (PBL) turbulent friction effects through a machine
+  learning (ML) approach. The new constraint is aimed at improving the coupling between dynamic and thermodynamic
+  variables. A deep neural network (DNN) is applied to emulate the model parameterized PBL horizontal
+  momentum tendency. The tendency is introduced into the momentum equation as a turbulent friction term.
+  The tangent linear and adjoint of the DNN are embedded into the variational framework to construct a
+  ML‐improved DA scheme. Sensitivity experiments for tropical cyclones (TCs) reveal that including turbulent
+  friction effectively compensates for the insufficient pressure adjustments during wind assimilation
+  according to the original constraint framework. Three DA experiments that involve assimilating radar
+  radial velocities are conducted using En3DVar (EVAR), En3DVar with the original constraint (EVAR–DC)
+  and En3DVar with the ML‐improved constraint (EVAR–MLDC) for landfalling TCs Muifa (2022) and Doksuri
+  (2023). In response to wind increments, compared with EVAR–DC and EVAR, EVAR–MLDC produces larger pressure
+  adjustments around the eyewall. Overall, a better description of thermodynamic states is obtained by
+  the new scheme, which plays a positive role in TC track and intensity forecasting.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

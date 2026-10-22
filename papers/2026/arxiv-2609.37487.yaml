@@ -1,0 +1,51 @@
+id: arxiv-2609.37487
+title: Physics-Guided Flow-Map Matching for Precipitation Nowcasting
+authors:
+- Shunya Nagashima
+- Takumi Bannai
+- Makoto Misaizu
+- Keisuke Maeda
+- Takahiro Ogawa
+- Miki Haseyama
+date: '2026-09-27'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.37487'
+links:
+  paper: https://arxiv.org/abs/2609.37487
+  pdf: https://arxiv.org/pdf/2609.37487
+topic: nowcasting
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Physics-guided flow-map generative model uses a Lagrangian advection prior for radar nowcasting,
+  improving heavy-rain CSI by up to 58.9% across 24 metrics.
+abstract: Precipitation nowcasting, generating future radar fields from past observations, is critical
+  for flood warning and disaster response. It is also a demanding benchmark for spatiotemporal generative
+  modeling, with chaotic dynamics, heavy-tailed intensities, and rare high-intensity structures that matter
+  most. Deterministic models minimize a pixel loss and are driven toward the conditional mean, which blurs
+  exactly those structures, while generative models that add a stochastic residual on top of a deterministic
+  backbone inherit the same blur. We propose Physics-Guided Flow-Map Matching (PG-FMM), a conditional
+  flow-map model that decouples predictable advection from uncertain small-scale detail. A frozen Lagrangian
+  advection prior transports the radar field and supplies an explicit motion forecast, and a flow-map
+  generative head, conditioned on the past frames and the prior rollout rather than summed onto it, produces
+  sharp stochastic detail in four sampling steps. The prior serves only as guidance, so the head replaces
+  blurred structure instead of inheriting it. Extensive experiments on four radar benchmarks show that
+  PG-FMM outperforms state-of-the-art methods on 18 of 24 metrics, with the largest gains at heavy-rain
+  thresholds, where the critical success index improves by up to 58.9%. The project page can be found
+  at https://neurogica.github.io/PG-FMM.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

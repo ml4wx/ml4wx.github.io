@@ -1,0 +1,57 @@
+id: arxiv-2607.19370
+title: 'Aircast-Mars: A Mars Foundation Model for Global Weather Forecasting with HEALPix-Aware Convolutions'
+authors:
+- Manmeet Singh
+- Saptarishi Dhanuka
+- Naveen Sudharsan
+- Houman Owhadi
+- Krista M. Soderlund
+- Alphan Altinok
+date: '2026-06-14'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2607.19370'
+  openalex: W7170187647
+links:
+  paper: https://arxiv.org/abs/2607.19370
+  pdf: https://arxiv.org/pdf/2607.19370
+orgs:
+- nasa
+- caltech
+topic: global-medium-range
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- global
+data:
+- other
+status: research
+summary: HEALPix-aware U-Net trained on Mars reanalysis produces hourly atmospheric states stable for
+  25 hours, running a one-hour forecast in 0.5 s on one GPU.
+abstract: Foundation models for planetary atmospheres promise fast, lightweight surrogates of expensive
+  general circulation models (GCMs) for mission planning and scientific inquiry. Here we present Aircast-Mars,
+  a deep-learning weather prediction system for Mars trained on the Ensemble Mars Atmosphere Reanalysis
+  System (EMARS) v1.0. We regrid temperature, zonal wind, and meridional wind fields across 28 vertical
+  levels onto a hierarchical equal-area isolatitude pixelization (HEALPix) mesh at Nside = 64 (~110 km
+  resolution) and train a HEALPix-aware 2D U-Net inspired by the DLESyM architecture to predict the next
+  hourly atmospheric state. The model employs custom inter-face padding that respects the topology of
+  the 12-face HEALPix sphere and modern ConvNeXt residual blocks with capped Gaussian Error Linear Unit
+  (GELU) activations. While containing 4.3 million trainable parameters, a compact size compared to terrestrial
+  weather foundation models, the network achieves a best validation Mean Squared Error (MSE) of 1.58e-5
+  in normalized units. Recursive autoregressive rollouts remain stable and physically coherent for 25
+  hours (one Martian sol), with Root Mean Square Error (RMSE) growing monotonically from ~0.004 at t +
+  1 h to ~0.031 at t + 25 h without divergence. Compared to a baseline 3D U-Net, the HEALPix-aware architecture
+  reduces validation loss by more than an order of magnitude while using fewer parameters. The model generates
+  a one-hour forecast in approximately 0.5 seconds on a single GPU, offering several orders-of-magnitude
+  speedup over traditional numerical GCMs. These results demonstrate that parsimonious, geometry-respecting
+  neural architectures can capture synoptic-scale Martian atmospheric dynamics and provide a foundation
+  for planetary-scale weather forecasting.
+significance: 2
+score: 43
+highlight: false
+added: '2026-10-22'
+source: backfill

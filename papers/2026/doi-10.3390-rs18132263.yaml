@@ -1,0 +1,61 @@
+id: doi-10.3390-rs18132263
+title: A Scale-Invariance-Based Algorithm Application for Land Surface Temperature Downscaling in Denmark
+authors:
+- Élio Pereira
+- Manvel Khudinyan
+- Inês Girão
+- Bruno Marques
+- Vitor Fonseca Vieira Vasconcelos de Miranda
+- Hjalte Jomo Danielsen Sørup
+- Quentin Paletta
+- Ana Oliveira
+date: '2026-07-07'
+year: 2026
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs18132263
+  openalex: W7167738357
+links:
+  paper: https://doi.org/10.3390/rs18132263
+topic: downscaling
+topics:
+- observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+- local
+data:
+- satellite
+status: research
+summary: Scale-invariance-based linear regression downscales Sentinel-3 land surface temperature to 300
+  m over Danish cities, with single-timestamp regression recommended for operations.
+abstract: 'With an ever-growing recognition of Land Surface Temperature (LST) as a key Essential Climate
+  Variable (ECV), it becomes utmost important to have such a variable at the fine spatial and temporal
+  scales of urban spaces and dynamics. Sentinel-3 provides coarse LST (1 km, daily) based on thermal imagery
+  acquired by its Sea and Land Surface Temperature Radiometer (SLSTR) as well as fine Spectral Directional
+  Reflectances (SDRs, 300 m, every two days) synergically inferred from both SLSTR and the Ocean and Land
+  Colour Instrument (OLCI), which gives the opportunity for using the latter as a predictor in the downscaling
+  of the former. Herein, two scale-invariance-based architectures were developed: a single-timestamp (STS)
+  model, trained with coarse data of the timestamp whose fine target it infers; and a multi-timestamp
+  (MTS) one, trained with multiple timestamps. Note that while several Machine Learning (ML) models besides
+  Linear Regression (LR) were considered for the MTS architecture, only LR was used for the STS one due
+  to the limited amount of available data which the former require for hyperparameter tuning. The models
+  were developed over four Danish Functional Urban Areas (FUAs) using SRD-derived indices and seasonal
+  and geospatial predictors and validated against Landsat data. While Gradient Boosting (GB) achieved
+  the best coarse-scale performance it corresponded to the worst fine-scale performer together with Random
+  Forest (RF), indicating scale invariance breakdown. Tree-based models performed poorly due to extrapolation
+  limitations, whereas Neural Net (NN) and LR proved more robust. After residual correction, single-timestamp
+  LR achieved the best fine-scale performance, making it the most reliable and recommended architecture
+  for operations. The overall results showed that, although ML models may better predict the target at
+  their training scale, their performance may not significantly generalise at others, therefore revealing
+  scale specificity. Furthermore, the results suggested that usage of the more general multi-timestamp
+  architecture instead of the single one may deteriorate performance.'
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

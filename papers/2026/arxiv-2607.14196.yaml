@@ -1,0 +1,63 @@
+id: arxiv-2607.14196
+title: 'OCELOT: Direct Atmospheric Forecasting from Heterogeneous Earth Observations Using a Graph-Transformer
+  Hybrid Model'
+authors:
+- Azadeh Gholoubi
+- Ronald McLaren
+- Mu-Chieh Ko
+- Xin Jin
+- Nicholas Esposito
+- Andrew Collard
+- Cory Martin
+- Russ Treadon
+- Daniel Holdaway
+- Daryl Kleist
+date: '2026-07-15'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2607.14196'
+links:
+  paper: https://arxiv.org/abs/2607.14196
+  pdf: https://arxiv.org/pdf/2607.14196
+topic: data-assimilation
+topics:
+- global-medium-range
+type: model
+method:
+- gnn
+- transformer
+timescale:
+- short
+spatial:
+- global
+data:
+- satellite
+- stations
+- other
+status: research
+summary: Forecasts satellite and in-situ observations 12 h ahead directly in observation space; 2 m temperature
+  RMSE is 3.6 K at +12 h, less accurate than GFS but better than persistence.
+abstract: 'This study presents OCELOT (Observation-Centric Estimation and Learning for Outlook Trajectories),
+  a global machine-learning forecasting system that predicts future Earth observations directly from heterogeneous
+  satellite and in-situ measurements. Unlike data-driven weather models trained on gridded reanalysis
+  states, OCELOT operates natively in observation space, preserving instrument-specific sampling, viewing
+  geometry, and measurement characteristics. The system combines per-instrument graph-attention encoders,
+  a shared spherical icosahedral latent mesh, a hybrid sliding-window Transformer/spatial graph neural
+  network processor, and metadata-conditioned decoders to produce forecasts up to 12 h ahead. OCELOT is
+  trained on observations for the years 2015 through 2023, validated on the year 2024, and evaluated out
+  of sample on 2025 observations across satellite radiances, radiosondes, aircraft, and surface networks.
+  In the 2025 evaluation, OCELOT produces spatially coherent +12 h forecasts across independent observing
+  systems: microwave temperature-sounding channels show RMSE values of 1.24-1.87 K, while the more surface-
+  and cloud-sensitive AVHRR infrared window channel shows a higher RMSE of 3.95 K. Vertical profile diagnostics
+  show physically consistent radiosonde and aircraft temperature structure. Surface forecasts remain stable
+  through 12 h, with 2-m air-temperature RMSE increasing from about 3.2 K at +3 h to about 3.6 K at +12
+  h. In paired observation-space comparisons, OCELOT remains less accurate than operational GFS but substantially
+  outperforms persistence at longer lead times for 2-m temperature and 10-m wind components. These results
+  demonstrate that observation-space forecasting can recover large-scale atmospheric structure and provide
+  meaningful short-range skill without reanalysis supervision.'
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

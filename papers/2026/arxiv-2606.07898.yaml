@@ -1,0 +1,57 @@
+id: arxiv-2606.07898
+title: 'Temporal Coverage over Density: Parsimonious Training-Set Design for ML Climate Downscaling'
+authors:
+- Karandeep Singh
+- Stefan Rahimi
+- Chad W. Thackeray
+- Stephen Cropper
+- Alex Hall
+date: '2026-06-05'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.07898'
+  openalex: W7163987484
+links:
+  paper: https://arxiv.org/abs/2606.07898
+  pdf: https://arxiv.org/pdf/2606.07898
+orgs:
+- noaa
+- ucla
+topic: downscaling
+topics:
+- benchmarks-data-eval
+type: evaluation
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+status: research
+summary: Shows that training ML climate downscalers on years spread across the CESM2 trajectory beats
+  historical-only data, and works with one-tenth of high-resolution years.
+abstract: 'High-resolution regional climate simulations provide critical information for climate impacts
+  assessments but remain computationally expensive, motivating the development of machine-learning downscalers
+  and emulators. A key challenge is determining how limited high-resolution simulations should be distributed
+  across a changing climate trajectory to capture both forced climate response and internal variability.
+  Using the CESM2 Large Ensemble over the western United States, we compare three training-year selection
+  strategies under fixed data budgets: a contiguous block of historical years, years drawn from both the
+  beginning and end of the simulation period, and years distributed throughout the full climate trajectory.
+  Including both historical and future years consistently outperforms training on historical years alone,
+  demonstrating the importance of exposing downscaling models to climate states outside the historical
+  record and highlighting limitations of stationarity assumptions common in statistical downscaling. Training
+  on years distributed throughout the full climate trajectory performs best overall, indicating that broad
+  sampling of internal variability provides additional information beyond exposure to the forced climate
+  response alone. Models trained on temporally distributed subsets more successfully reproduce variability
+  in unseen ensemble members while retaining strong performance across a wide range of climate diagnostics.
+  Even when trained on only one-tenth of the available high-resolution years, temporally distributed models
+  remain highly competitive with full-data training. These results suggest that, under fixed computational
+  budgets, broad sampling of climate states is more valuable than temporal continuity when allocating
+  scarce high-resolution simulations. The findings provide practical guidance for regional climate downscaling
+  and large-ensemble projection workflows.'
+significance: 4
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

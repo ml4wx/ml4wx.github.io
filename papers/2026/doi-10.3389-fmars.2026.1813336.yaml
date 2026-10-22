@@ -1,0 +1,52 @@
+id: doi-10.3389-fmars.2026.1813336
+title: Sea surface wind fields downscaling Using SwinIR and a two-stage learning approach
+authors:
+- Shuai Song
+- Shuo Wang
+- Xiangyu Chen
+- Tao Zheng
+- Kang Xu
+- Tao Feng
+date: '2026-05-25'
+year: 2026
+venue: Frontiers in Marine Science
+venue_type: journal
+ids:
+  doi: 10.3389/fmars.2026.1813336
+  openalex: W7162322501
+links:
+  paper: https://doi.org/10.3389/fmars.2026.1813336
+topic: downscaling
+type: model
+method:
+- transformer
+spatial:
+- regional
+data:
+- km-scale-sim
+status: research
+summary: A SwinIR super-resolution model downscales South China Sea winds from 12 km to 4 km with a two-stage
+  loss, improving high-wind accuracy and reconstructing Tropical Storm Wipha.
+abstract: High-resolution sea surface wind fields are essential for marine meteorology and offshore wind
+  energy development. While traditional statistical and dynamical downscaling methods suffer from limitations
+  in accuracy or computational cost, deep learning-based super-resolution methods provide a promising
+  alternative. However, many existing models prioritize global-average accuracy, which limits their performance
+  for extreme wind speeds. Based on paired low- and high-resolution sea surface wind fields in the South
+  China Sea derived from 12-km and 4-km two-way nested Weather Research and Forecasting (WRF) simulations,
+  this study proposes a SwinIR-based downscaling framework in which coarse-resolution zonal and meridional
+  wind components are used as inputs to reconstruct their high-resolution counterparts. The framework
+  leverages shifted-window self-attention to capture long-range spatial dependencies and incorporates
+  a two-stage training strategy to better handle the long-tailed distribution of wind speeds. In Stage
+  1, the model learns a general low-to-high-resolution mapping using a mean squared error (MSE) loss,
+  whereas in Stage 2, a weighted loss is introduced to improve reconstruction in high-wind regimes. On
+  an independent test set, the proposed method achieves a mean absolute error (MAE) of 0.11 m/s and a
+  root mean square error (RMSE) of 0.21 m/s, outperforming bilinear interpolation, Efficient Sub-Pixel
+  Convolutional Neural Network (ESPCN), and DeepSD. Ablation experiments show that the two-stage strategy
+  reduces RMSE by 4.25% for wind speeds exceeding 25 m/s, and a case study of Tropical Storm Wipha (2019)
+  further demonstrates its capability in reconstructing extreme wind fields.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

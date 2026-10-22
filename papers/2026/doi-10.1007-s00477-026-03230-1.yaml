@@ -1,0 +1,59 @@
+id: doi-10.1007-s00477-026-03230-1
+title: Quantifying epistemic uncertainty in deep learning models for quantitative precipitation forecasting
+  using synthetic rainfall fields
+authors:
+- Younghun Kim
+- Giang V. Nguyen
+- Linh Nguyen Van
+- Giha Lee
+- Sungho Jung
+date: '2026-05-22'
+year: 2026
+venue: Stochastic Environmental Research and Risk Assessment
+venue_type: journal
+ids:
+  doi: 10.1007/s00477-026-03230-1
+  openalex: W7162114971
+links:
+  paper: https://doi.org/10.1007/s00477-026-03230-1
+  pdf: https://link.springer.com/content/pdf/10.1007/s00477-026-03230-1.pdf
+topic: nowcasting
+topics:
+- xai-uq-physics
+type: evaluation
+method:
+- cnn
+- rnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Monte Carlo dropout U-Net and ConvLSTM on synthetic rainfall fields show a sharpness–calibration
+  trade-off, with U-Net coverage falling to 0.33–0.43 at 6 h.
+abstract: Very-short-term quantitative precipitation forecasting (QPF; 0–3 h) is crucial for flood-risk
+  management, but reliability is degraded by data (aleatoric) and model (epistemic) uncertainty. To isolate
+  and quantify the effect of epistemic uncertainty on forecast performance, we generated nine synthetic
+  rainfall fields (three motion types $$\times $$ three intensity evolutions) by rotating an elliptical
+  2-D Gaussian and trained two convolutional neural network (CNN) QPF models (U-Net and Convolutional
+  Long Short-Term Memory (ConvLSTM)). Monte Carlo Dropout (MCD) was applied to sample predictive distributions.
+  Performance was evaluated using modified Kling–Gupta efficiency (KGE′), Root Mean Squared Error (RMSE),
+  Critical Success Index (CSI), Continuous Ranked Probability Score (CRPS), 95% prediction-interval Coverage
+  and Width, and Error Contribution by Intensity (ECI). Across all cases, deterministic skill ranged from
+  KGE′ 0.83–0.99, CSI 0.90–0.99, and RMSE 0.20–3.18 mm·h−1. U-Net captured structure at short leads but
+  increasingly showed boundary blurring and central overestimation/dispersion, whereas ConvLSTM preserved
+  spatial coherence yet accumulated smoothing with intensity-dependent over/underestimation; ECI indicated
+  a lead-time shift of relative error contribution toward moderate intensities. At t + 1, U-Net achieved
+  CRPS 0.132–0.253 mm·h−1 with Coverage 0.953–0.984 (Width 1.70–3.17 mm·h−1). At t + 6, U-Net became strongly
+  overconfident (Coverage 0.325–0.430; CRPS 0.917–2.069), whereas ConvLSTM maintained higher Coverage
+  (0.623–0.847) and lower CRPS (0.498–0.981 mm·h−1). These findings quantify a sharpness–calibration trade-off
+  in CNN-based QPF and motivate physics-informed constraints, joint aleatoric–epistemic uncertainty modeling,
+  and post-hoc calibration for reliable nowcasting.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

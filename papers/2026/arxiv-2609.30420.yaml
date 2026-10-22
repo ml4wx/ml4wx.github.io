@@ -1,0 +1,61 @@
+id: arxiv-2609.30420
+title: Understanding Perturbed Parameter Ensemble Sensitivities Using A Contrastive Learning Approach
+authors:
+- Da Fan
+- David John Gagne
+- Gregory S Elsaesser
+- Brian Medeiros
+- Addisu G Semie
+- Qingyuan Yang
+- Akila Sampath
+- Subashree Venkatasubramanian
+date: '2026-09-24'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.30420'
+  doi: 10.5281/zenodo.22943627
+  openalex: W7214635765
+links:
+  paper: https://arxiv.org/abs/2609.30420
+  pdf: https://arxiv.org/pdf/2609.30420
+orgs:
+- nasa
+- ncar
+- columbia-leap
+topic: climate-analysis-attribution
+topics:
+- xai-uq-physics
+type: model
+method:
+- other
+spatial:
+- global
+data:
+- cmip
+- satellite
+status: research
+summary: Contrastive learning with Integrated Gradients separates two CAM6 perturbed ensembles at over
+  94% accuracy and attributes model-observation differences to specific regions and microphysics parameters.
+abstract: 'Perturbed parameter ensembles (PPEs) reveal how physics parameters affect climate simulations,
+  but interpreting parameter sensitivities across multivariate, spatially structured outputs remains challenging,
+  particularly when calibrating models against observations. We develop an explainable contrastive learning
+  model that maps 5 monthly cloud and radiation fields into a shared representation space. We train the
+  model on the fields of two 100-member Community Atmosphere Model version 6 (CAM6) PPEs, spanning 34
+  parameters, that only differ in the warm rain microphysics scheme: KK2000, the default bulk microphysics
+  scheme, and TAU-ML, a neural network emulator of a bin microphysics scheme. The learned representations
+  separates two PPEs with over 94\% linear classification accuracy while preserving the seasonal variability
+  and ensemble spread due to parameter perturbations. In the shared representation space, the representations
+  of satellite observations occupy the same low-dimensional manifold as the PPEs but are displaced from
+  them most strongly during boreal spring and autumn. TAU-ML PPE has a lower distance to observations
+  compared to KK2000 in the representation space. Integrated Gradients attributions highlights the contributions
+  in subtropical low-cloud regions, Northern and Southern Hemisphere storm track regions, and tropical
+  convection regions to differences between PPEs and observations. Regional attributions correlate most
+  strongly with parameters associated with cloud microphysics, boundary layer turbulence, and deep convection.
+  These results demonstrate that explainable representations of climate fields can attribute model differences
+  to specific variables, regions, seasons, and physical parameters.'
+significance: 3
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

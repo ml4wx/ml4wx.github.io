@@ -1,0 +1,54 @@
+id: doi-10.5281-zenodo.23084473
+title: Regime-Aware Deep Learning Post-Processing of NWP Rainfall Forecasts over India
+authors:
+- Priyani Sabde
+- Karan Rathod
+- Pooja Aaglave
+- Siddhesh Ratnaparkhi
+- Smit Barmate
+- Anshuli Deshmukh
+date: '2026-10-01'
+year: 2026
+venue: Zenodo (CERN European Organization for Nuclear Research)
+venue_type: preprint
+ids:
+  doi: 10.5281/zenodo.23084473
+  openalex: W7215032966
+links:
+  paper: https://doi.org/10.5281/zenodo.23084473
+topic: post-processing
+topics:
+- extremes-hazards
+type: model
+method:
+- cnn
+- rnn
+- classical-ml
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: Regime-aware post-processing framework routing NWP rainfall forecasts over India through EMOS,
+  quantile mapping and ConvLSTM corrections; validation is synthetic and benchmark-anchored.
+abstract: Regime-Aware Deep Learning Post-Processing of NWP Rainfall Forecasts over India presents an
+  AI/ML-based framework for improving numerical weather prediction (NWP) rainfall forecasts by accounting
+  for the prevailing weather regime. The proposed system first identifies the dominant regime—such as
+  active monsoon, break monsoon, low-pressure systems/depressions, orographic rainfall, coastal rainfall,
+  and western disturbances—using a hybrid classifier that combines physics-based atmospheric indicators,
+  a CNN-based pattern encoder, and an 850-hPa vorticity-based low-pressure-system tracker. The identified
+  regime then routes the raw NWP forecast through a regime-specific correction bank using methods such
+  as EMOS, quantile mapping, frequency matching, and ConvLSTM residual correction. The framework additionally
+  produces calibrated probabilities for heavy and very-heavy rainfall, supports district- and grid-level
+  forecasting, and incorporates an automated verification pipeline using RMSE, ETS, CSI, POD, FAR, and
+  FSS. The paper demonstrates the expected performance structure through synthetic, benchmark-anchored
+  experiments and defines an auditable evaluation framework for future operational validation. The ultimate
+  objective is to improve rainfall forecast reliability, particularly for heavy rainfall events where
+  raw NWP forecasts can exhibit regime-dependent amplitude, displacement, and spatial errors.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

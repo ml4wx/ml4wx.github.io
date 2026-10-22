@@ -1,0 +1,53 @@
+id: doi-10.5194-egusphere-2026-2395
+title: CBAM-U-Net-Based Retrieval of Radar Composite Reflectivity from FY-4A Satellite Observations over
+  Complex Terrain in Sichuan, China
+authors:
+- Wen Kang
+- Hao Wang
+- Qiangyu Zeng
+- Tiantian Yu
+- Jiafeng Zheng
+- Zhi Li
+date: '2026-07-07'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.5194/egusphere-2026-2395
+  openalex: W7167579022
+links:
+  paper: https://doi.org/10.5194/egusphere-2026-2395
+orgs:
+- cma
+topic: observations-remote-sensing
+topics:
+- nowcasting
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- satellite
+- radar
+status: research
+summary: CBAM-U-Net retrieves radar composite reflectivity from FY-4A infrared channels over Sichuan with
+  6.83 dBZ RMSE and zero-shot transfer to FY-4B.
+abstract: Abstract. To address radar coverage blind spots in complex terrain, this study proposes an end-to-end
+  deep learning framework to retrieve Radar Composite Reflectivity (RCRF) from FY-4A satellite multi-channel
+  observations. We introduce CBAM-UNet, embedding a lightweight Convolutional Block Attention Module into
+  a U-Net backbone. This dual-dimensional mechanism adaptively filters critical infrared spectral bands
+  and precisely localizes intense convective cores. Evaluated on a comprehensively matched satellite-radar
+  dataset (14,023 samples) from Sichuan Province (May–November 2023), CBAM-U-Net significantly outperforms
+  mainstream CNN and Transformer baselines in retrieval accuracy (RMSE = 6.8290 dBZ, R2 = 0.6277) and
+  structural fidelity (SSIM = 0.7894). Crucially, within the challenging severe echo regime (45–70 dBZ),
+  the model achieves optimal Probability of Detection (POD = 0.5296) and Critical Success Index (CSI =
+  0.4384). Furthermore, crosssensor evaluations using FY-4B data demonstrate its robust zero-shot generalization
+  against observational domain shifts. This research highlights the efficacy of integrating satellite
+  multispectral features with attention-augmented networks to compensate for radar blind spots, providing
+  reliable support for severe convective weather monitoring.
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

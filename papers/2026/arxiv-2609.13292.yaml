@@ -1,0 +1,46 @@
+id: arxiv-2609.13292
+title: 'Aries: A Proprietary Medium-Range Weather Prediction Model for the Energy Industry'
+authors:
+- Lukas Hedegaard Morsing
+- Arian Bakhtiarnia
+- Jonas Lynge Olesen
+- Tómas Bragi Björnsson Leth
+- Christian Gøbel Bach
+date: '2026-09-09'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.13292'
+links:
+  paper: https://arxiv.org/abs/2609.13292
+  pdf: https://arxiv.org/pdf/2609.13292
+topic: global-medium-range
+type: model
+method:
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: pre-operational
+summary: Aries, a Swin-Transformer medium-range model trained on ERA5, beats ECMWF HRES and AIFS on 10
+  m wind RMSE up to four days, with 2-m temperature on par with AIFS.
+abstract: Medium-range weather forecasting underpins operational and planning decisions across the energy
+  industry. Developing competitive weather models was once the domain of national meteorological centers,
+  but recent advances in machine-learned weather prediction (MLWP) have opened the field to industry.
+  We present Aries, a SwinTransformer-based MLWP model developed at InCommodities. Aries is trained on
+  ERA5 reanalysis data at 0.25\textdegree{} resolution, predicting 74 prognostic and 11 diagnostic atmospheric
+  variables. We evaluate the model on 2025 ECMWF Analysis initializations, ensuring a recent and strictly
+  out-of-sample test period for all models compared. On 10-metre wind speed, Aries outperforms both ECMWF
+  HRES and AIFS in terms of RMSE for lead times up to four days, while on 2-metre temperature it achieves
+  RMSE on par with AIFS operational. These results demonstrate that proprietary development of competitive
+  weather models is technically viable, supporting a broader set of forecasts available for operational
+  and planning applications in the energy industry.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

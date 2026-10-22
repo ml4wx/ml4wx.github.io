@@ -1,0 +1,56 @@
+id: doi-10.1371-journal.pone.0351923
+title: 'SST subseasonal-to-seasonal forecasting: A heterogeneous three-path fusion model with wavelet
+  decomposition'
+authors:
+- Xiao Chen
+- Yihao Wang
+- Jing Chen
+- MingXin Liu
+date: '2026-07-07'
+year: 2026
+venue: PLoS ONE
+venue_type: journal
+ids:
+  doi: 10.1371/journal.pone.0351923
+  openalex: W7167609714
+links:
+  paper: https://doi.org/10.1371/journal.pone.0351923
+  pdf: https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0351923&type=printable
+topic: s2s-seasonal
+type: model
+method:
+- transformer
+timescale:
+- s2s
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: WDFormer wavelet-decomposition transformer forecasts daily SST at ENSO regions for 7–90 days,
+  beating deep learning baselines at 30–90-day horizons.
+abstract: El Niño-Southern Oscillation (ENSO), the Earth's dominant mode of interannual climate variability,
+  is closely linked to sea surface temperature (SST) variability in the central and eastern equatorial
+  Pacific. Accurate subseasonal-to-seasonal SST forecasting in this region supports ocean monitoring and
+  environmental assessment. We propose WDFormer (Wave Decomposition Former), a daily SST forecasting model
+  built on a "decomposition, multi-path processing, and adaptive fusion" paradigm. The model uses 365
+  daily SST observations from local 4×4 grids around representative ENSO monitoring stations to predict
+  daily SST values over 7-90-day horizons. WDFormer first applies wavelet decomposition to separate the
+  input sequence into a smoother low-frequency component and a higher-frequency residual. Lightweight
+  MLP-based branches process the original and low-frequency components, while a Transformer-based branch
+  models the residual dynamics. Outputs are integrated through a learnable gating mechanism. Experiments
+  on daily OISST data from five representative ENSO subregions show that WDFormer outperforms several
+  deep learning baselines at most 30-90-day horizons. Comparisons with persistence and daily climatology
+  confirm that persistence dominates at very short lead times, whereas WDFormer provides clearer advantages
+  as the horizon extends. An ONI-based ENSO-phase and El Niño-stage stratified evaluation shows that WDFormer
+  achieves the lowest RMSE under El Niño, La Niña, and Neutral conditions, as well as during El Niño onset/development,
+  mature/peak, and decay/termination stages for the 90-day task. Bootstrap confidence intervals and paired
+  RMSE comparisons further support the robustness of the 90-day results. These results support decomposition-based
+  heterogeneous modeling for daily SST forecasting at 30-90-day horizons and motivate broader extensions
+  to probabilistic and multi-variable forecasting.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

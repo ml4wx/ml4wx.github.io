@@ -1,0 +1,70 @@
+id: doi-10.5194-essd-2026-318
+title: Reconstruction of Global 0.25° Land Lightning Density from 1979 to 2025 based on an ensemble machine
+  learning
+authors:
+- Hao Zheng
+- Jun Wang
+- Hao Zhou
+- Jingfeng Ding
+- Haijin Dai
+- Zhi Huang
+- Zishan Wang
+- M Wang
+- Jianying Li
+- Hengmao Wang
+- Fei Jiang
+- Weimin Ju
+date: '2026-05-29'
+year: 2026
+venue: Earth System Science Data Discussions
+venue_type: journal
+ids:
+  doi: 10.5194/essd-2026-318
+  openalex: W7162763464
+links:
+  paper: https://doi.org/10.5194/essd-2026-318
+  pdf: https://essd.copernicus.org/preprints/essd-2026-318/essd-2026-318.pdf
+orgs:
+- nuist
+- cma
+topic: observations-remote-sensing
+topics:
+- extremes-hazards
+type: benchmark
+method:
+- classical-ml
+spatial:
+- global
+data:
+- era5
+- satellite
+status: research
+summary: Stacked ensemble of XGBoost, LightGBM, RF and DNN reconstructs a global 0.25° monthly land lightning
+  dataset for 1979–2025 with test R² of 0.69.
+abstract: 'Abstract. Lightning is a primary driver of severe convective hazards and wildfire ignitions,
+  yet long-term, high-resolution gridded records have remained scarce due to the limited temporal coverage
+  of ground-based networks and the sampling constraints of satellite observations. Here, we presented
+  a new global 0.25° × 0.25° monthly land lightning stroke-density dataset spanning 1979–2025. To ensure
+  robustness, we developed a ridge regression stacking ensemble that integrated four complementary machine
+  learning architectures: eXtreme Gradient Boosting (XGBoost), Light Gradient Boosting Machine (LightGBM),
+  Random Forest (RF), and Deep Neural Network (DNN). The ensemble achieved superior performance over each
+  single model (test R² = 0.6895, RMSE = 0.0108, MAE = 0.0030), indicating that model blending effectively
+  enhanced predictive stability. Individual validations confirmed high spatial fidelity, as the ensemble
+  successfully reproduced the observed large-scale spatial distribution and major tropical–subtropical
+  continental lightning hotspots. Independent comparisons with the LIS/OTD gridded lightning climatology
+  (±38°) further demonstrated strong spatiotemporal consistency, particularly in reproducing interannual
+  variability. Our analysis revealed pronounced regional heterogeneity in multi-decadal trends: significant
+  decreases were concentrated across several tropical convective centers, while localized increases emerged
+  in specific mid-latitude regions. Attribution based on SHapley Additive exPlanations (SHAP) elucidated
+  that these patterns were primarily governed by the coupling of thermodynamic instability (CAPE × TP),
+  moisture availability, and ice-phase hydrometeor conditions. This dataset provided a physically constrained
+  and spatially detailed basis for studying long-term lightning dynamics, offering practical inputs for
+  natural-ignition modeling, lightning-produced NOx estimation, and the evaluation of lightning parameterizations
+  in climate and Earth system models. The datasets of the 1979–2025 Global Land Lightning Density Reconstruction
+  Version 1 (GLLDR v1) are publicly available at the Zenodo via the following DOI: https://doi.org/10.5281/zenodo.19722380
+  (Zheng et al., 2026a).'
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

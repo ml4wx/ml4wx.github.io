@@ -1,0 +1,57 @@
+id: doi-10.1007-s44533-026-00033-9
+title: High-accuracy day-ahead precipitation forecasting with an interpretable CatBoost regressor and
+  a LightGBM-based extreme-event alerting pipeline
+authors:
+- Tevfik Denizhan Müftüoğlu
+date: '2026-05-31'
+year: 2026
+venue: Water Science
+venue_type: journal
+ids:
+  doi: 10.1007/s44533-026-00033-9
+  openalex: W7162933592
+links:
+  paper: https://doi.org/10.1007/s44533-026-00033-9
+  pdf: https://link.springer.com/content/pdf/10.1007/s44533-026-00033-9.pdf
+topic: local-forecasting
+topics:
+- extremes-hazards
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: CatBoost daily rainfall regression explains 83% of variability at Köyceğiz, Turkey, while LightGBM
+  flags 95th-percentile extremes with 75% recall and AUC above 0.97.
+abstract: Purpose Precise precipitation forecasting is necessary for both the management of water resources
+  and preparedness for severe weather events (especially in climate sensitive regions such as the Mediterranean).
+  The aim of this research project is to design and implement an auditable, two-stage machine-learning
+  based approach using transparent CatBoost regression models to generate quantitative precipitation forecasts
+  (QPF), and LightGBM classification models to predict extreme weather event alarms. Methods Utilizing
+  a complete 24-year archive of daily weather data (2001–2024) from Köyceğiz, Turkey, this research provides
+  a dual-task workflow. The first task is an optimized CatBoost regression model that provides quantitative
+  precipitation forecasts (QPF). The second task is a LightGBM classification model that identifies extreme
+  anomaly events (above the 95th percentile), utilizing F1-score as an optimization method to account
+  for class imbalance. Results Beginning with an evaluation using a long-term and wide-ranging dataset
+  of 24 years of daily values (2001–2024) CatBoost was able to explain 83% of overall rainfall variability
+  and provided generalized information on rainfall regimes. During the same period, the LightGBM classifier
+  successfully identified 75% of extreme precipitation events (defined by the 95th percentile threshold
+  of 15.24 mm/day), and its area under the ROC curve exceeded 0.97; however, the very high separability
+  of the two classes is due at least in part to the substantial amount of temporal autocorrelation present
+  in this region’s hydroclimatological data. In addition, examination of the SHAP values demonstrated
+  that, regardless of whether predicting the total amount of precipitation or the probability of an extreme
+  event, the top driving variables were land surface characteristics (soil moisture) and relative humidity.
+  Conclusions The use of multiple variables, in combination with lag elements, significantly improves
+  predictive capabilities over that of a baseline single variable. While this research was conducted as
+  a single location, the methodology and the complete listing of attributes are adaptable to reproduce
+  and subsequently test at other locations with similar Mediterranean climates.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

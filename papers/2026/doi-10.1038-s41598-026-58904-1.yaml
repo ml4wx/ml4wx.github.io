@@ -1,0 +1,52 @@
+id: doi-10.1038-s41598-026-58904-1
+title: Reanalysis data fusion-based tropical cyclone formation prediction network
+authors:
+- Ying Hai
+- Y Peng
+- Yuchen Wang
+- Zhiyong Cheng
+date: '2026-06-23'
+year: 2026
+venue: Scientific Reports
+venue_type: journal
+ids:
+  doi: 10.1038/s41598-026-58904-1
+  openalex: W7165671599
+links:
+  paper: https://doi.org/10.1038/s41598-026-58904-1
+  pdf: https://www.nature.com/articles/s41598-026-58904-1_reference.pdf
+topic: extremes-hazards
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: Pyramid-attention CNN fuses reanalysis fields to predict whether tropical cloud clusters become
+  storms 24 h ahead, with competitive POD and FAR.
+abstract: 'This paper proposes a tropical cyclone formation prediction network based on pyramid attention
+  feature extraction and multi-scale feature fusion, aiming to enhance the prediction of whether tropical
+  cloud cluster (TCC) precursors intensify to tropical storm (TS) strength by integrating multi-source
+  reanalysis data. First, reanalysis data from ERA5 and NCEP/NCAR are represented as images at different
+  scales and labeled according to tropical cyclone (TC) formation events derived from the TCC and IBTrACS
+  datasets. The labels include information on whether TC formation occurred and its location. Then, a
+  feature extraction module based on a Pyramid Attention Mechanism (PAM) is designed to extract features
+  related to TC formation. Next, the features at different scales are input into a PAM-based feature fusion
+  module that dynamically generates weights for different features to perform weighted fusion and unify
+  the feature scales. Finally, a lightweight Convolutional Neural Network (CNN) is designed as the prediction
+  module to predict TC formation occurrence and location. Experimental results over five independent data
+  splits show that at a lead time of 24 hours, the proposed method achieves a Probability of Detection
+  (POD) of [Formula: see text], a False Alarm Ratio (FAR) of [Formula: see text], and a location prediction
+  Root Mean Square Error (RMSE) of [Formula: see text] grid units (≈437 km), demonstrating competitive
+  performance in balancing POD and FAR. Ablation studies confirm the contribution of each proposed module
+  to overall performance.'
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

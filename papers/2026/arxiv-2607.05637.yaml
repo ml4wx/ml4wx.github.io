@@ -1,0 +1,52 @@
+id: arxiv-2607.05637
+title: Recovering Cloud Microstructures with Cascaded Diffusion Inversion
+authors:
+- Hanan Gani
+- Guy Pulik
+- Daniel Rosenfeld
+- Duncan Watson-Parris
+- Salman Khan
+date: '2026-07-06'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2607.05637'
+links:
+  paper: https://arxiv.org/abs/2607.05637
+  pdf: https://arxiv.org/pdf/2607.05637
+  code: https://github.com/hananshafi/superresolution-cloud-microphysics
+topic: observations-remote-sensing
+topics:
+- downscaling
+type: model
+method:
+- diffusion
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Two-stage diffusion inverse super-resolution raises multispectral satellite cloud imagery 4x,
+  recovering convective turrets and cloud gaps for cloud seeding analysis.
+abstract: 'High-resolution satellite imagery is critical for observing fine-scale cloud structures that
+  inform weather modification strategies like cloud seeding for rain-enhancement. However, the spatial
+  resolution of current geostationary and polar-orbiting satellites is often insufficient for capturing
+  small cloud features. Current super-resolution methodologies are suited for natural images and, therefore,
+  struggle to generalize to satellite-captured spectral images of cloud cover. To address this, we propose
+  a two-stage diffusion-based super-resolution framework to enhance the resolution of multi-spectral cloud
+  microstructures by a factor of $4\times$. Specifically, we use inverse diffusion to recover the high
+  resolution properties from low resolution. Stage 1 utilizes real-world paired data to learn robust degradation
+  handling and inter-sensor alignment, while Stage 2 employs a self-supervised internal downgrading of
+  high resolution data to refine structural learning and texture synthesis. Our approach outperforms the
+  state-of-the-art transformer and diffusion-based baselines in both reconstruction accuracy and visual
+  quality. We demonstrate that the two-stage method better captures fine cloud microstructures (e.g. convective
+  turrets and cloud gaps) that are crucial for effective cloud seeding decisions. Ablation studies confirm
+  the complementary benefits of the two stages: Stage 1 excels in coarse structural fidelity, while Stage
+  2 contributes enhanced detail and realism. These results highlight a practical path toward improving
+  cloud microphysics analysis and as a step towards utilizing AI for climate and sustainability. Our code
+  and models are publicly available at: https://github.com/hananshafi/superresolution-cloud-microphysics.'
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

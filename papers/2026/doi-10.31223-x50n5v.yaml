@@ -1,0 +1,66 @@
+id: doi-10.31223-x50n5v
+title: 'Deep Learning-Based Meteorological Data Downscaling: A Comparative Study with Physics Informed
+  CNN and a Component-Level Ablation Analysis'
+authors:
+- Johans Utama
+date: '2026-08-29'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.31223/x50n5v
+  openalex: W7204630846
+links:
+  paper: https://doi.org/10.31223/x50n5v
+  pdf: https://eartharxiv.org/repository/object/14693/download/25554/
+orgs:
+- nuist
+topic: downscaling
+type: model
+method:
+- cnn
+- gan-vae
+- rnn
+- transformer
+- diffusion
+- physics-constrained
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: Physics-informed CNN downscales ERA5 2 m temperature to 0.25° over China, beating CNN, GAN, LSTM,
+  ViT and diffusion baselines with RMSE 0.665 K.
+abstract: Meteorological statistical downscaling is a critical technique for deriving high-resolution
+  climate information from coarse global reanalysis products. This experiment investigates the application
+  of five representative deep learning architectures for downscaling ERA5 reanalysis 2m temperature fields
+  from 1° to 0.25° spatial resolution (4x upscaling factor) over the China region, spanning the period
+  2010 to 2020. The five baseline models evaluated are Convolutional Neural Network (CNN), Generative
+  Adversarial Network (GAN), Long Short-Term Memory network (LSTM), Vision Transformer (ViT-style), and
+  Denoising Diffusion Probabilistic Model (DDPM). Building upon the analysis of baseline strengths and
+  weaknesses, a sixth model is proposed, the Physics-Informed CNN (PICNN), which integrates multi-scale
+  feature extraction, spatial attention mechanisms, and a composite physics-informed loss function incorporating
+  mean squared error, Laplacian spatial smoothness regularization, and spatial energy conservation constraints.
+  All models were trained on an NVIDIA GeForce RTX 5050 Laptop GPU with 8GB VRAM under computational constraints,
+  with training epochs reduced from default values to accommodate hardware limitations. Experimental results
+  on the held-out 2020 test set demonstrate that the proposed PICNN achieves the best performance among
+  all models, with RMSE of 0.665 K, MAE of 0.435 K, PSNR of 43.43 dB, and SSIM of 0.976, representing
+  improvements of 7.7% in RMSE and 8.7% in MAE over the strongest CNN baseline. To determine whether this
+  improvement reflects the architectural design or simply the 84% increase in parameter count relative
+  to the CNN baseline, a controlled ablation study was conducted comprising a capacity-matched plain CNN
+  and three component-ablated PICNN variants, evaluated across three random seeds for the ablated variants.
+  The results show that approximately 65.5% of PICNN's improvement over the CNN baseline is explained
+  by parameter count alone. Among PICNN's three architectural components, spatial attention accounts for
+  the majority of the remaining gain, the physics-informed loss contributes a small but consistent improvement,
+  and the multi-scale feature extraction head shows no measurable benefit, with its ablated variant statistically
+  indistinguishable from the full model. These findings refine the paper's central claim from a general
+  endorsement of physics-informed design toward a specific, evidence-backed identification of which architectural
+  choices are responsible for the observed gains. The Transformer model, despite having 139 million parameters,
+  performed significantly worse than the CNN, highlighting the data inefficiency of attention-based architectures
+  on moderate-sized meteorological datasets. The LSTM performed worst overall due to its inherent inability
+  to preserve spatial structure.
+significance: 2
+cited_by: 0
+score: 18
+highlight: false
+added: '2026-10-22'
+source: backfill

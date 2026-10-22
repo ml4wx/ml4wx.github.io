@@ -1,0 +1,52 @@
+id: doi-10.33187-jmsm.1837729
+title: Short-Term High-Frequency Temperature Forecasting Using Hybrid Stacking Ensemble
+authors:
+- Kaan ARIK
+- Burak AĞGÜL
+date: '2026-06-06'
+year: 2026
+venue: Journal of Mathematical Sciences and Modelling
+venue_type: journal
+ids:
+  doi: 10.33187/jmsm.1837729
+  openalex: W7163762830
+links:
+  paper: https://doi.org/10.33187/jmsm.1837729
+topic: local-forecasting
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: A hybrid stacking ensemble of tree models forecasts 10-minute station temperature over seven
+  days, reaching MAE 0.255 °C and R² 0.949.
+abstract: Weather forecasting is valuable for agriculture through crop production, renewable resource
+  management such as solar or wind farms, and disaster management for preparation and response. It enables
+  an understanding of future conditions so that decisions can be made at the right time. To make well-founded
+  decisions about the long-term use of limited resources, it is essential to know accurately when these
+  resources will be available. In this research, we used a high-frequency multivariate sensor dataset
+  recorded every 10 minutes from Max Planck Institute weather station. This dataset includes 20 atmospheric
+  parameters, such as temperature, humidity, pressure, and wind direction. We developed an appropriate
+  preprocessing pipeline to prepare raw data for analysis. Our pipeline included converting timestamps
+  into date/time format, engineering circular wind-direction features, interpolating missing values, splitting
+  the training and test sets chronologically, and normalizing the features using Min--Max scaling. Using
+  the processed dataset, we compared time-series models (SARIMA and Prophet) with tree-based machine learning
+  models (Random Forest, XGBoost, and CatBoost), as well as a hybrid stacking ensemble that combined the
+  strengths of these models. Performance was assessed on a 7-day test set using Mean Absolute Error (MAE),
+  Root Mean Square Error (RMSE), Mean Absolute Percentage Error (MAPE), and \(R^2\). Our results showed
+  that the Hybrid Stacking Ensemble was the most effective overall model, achieving \(\mathrm{MAE}=0.255\,^{\circ}\mathrm{C}\),
+  \(\mathrm{RMSE}=0.329\,^{\circ}\mathrm{C}\), and \(R^2=0.949\). It significantly outperformed both the
+  individual machine learning models and the baseline models, such as SARIMA and Prophet. Hybrid Stacking
+  Ensemble reduced the error of the best-performing individual model by \(26\%\), while maintaining near-perfect
+  linear agreement with the observed temperatures.
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

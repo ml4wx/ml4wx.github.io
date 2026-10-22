@@ -1,0 +1,66 @@
+id: doi-10.1038-s41598-026-60719-z
+title: Hybrid variational quantum-classical data assimilation for numerical weather prediction using Lorenz
+  system benchmarks
+authors:
+- T. Praveen Kumar
+- K. V. Raghavender
+- T. Veeranna
+- Dr. G. K. Srikanth
+- C. Kumar
+- Abhinandan Routray
+date: '2026-07-12'
+year: 2026
+venue: Scientific Reports
+venue_type: journal
+ids:
+  doi: 10.1038/s41598-026-60719-z
+  openalex: W7168085125
+links:
+  paper: https://doi.org/10.1038/s41598-026-60719-z
+  pdf: https://www.nature.com/articles/s41598-026-60719-z_reference.pdf
+topic: data-assimilation
+topics:
+- benchmarks-data-eval
+type: evaluation
+method:
+- other
+- rnn
+data:
+- other
+status: research
+summary: Benchmarks a hybrid variational quantum-classical 4DVAR against BFGS and LSTM/Neural ODE baselines
+  on Lorenz-63 and Lorenz-96; quantum cost is near classical but beats deep learning on L96.
+abstract: 'Abstract The major computational bottleneck of operational Numerical Weather Prediction (NWP)
+  is data assimilation, in which a high-dimensional, prohibitively expensive variational cost function
+  must be minimised repeatedly, with computational costs scaling alongside model resolution. This work
+  presents a systematic empirical evaluation of an Adaptive Hybrid Variational Quantum-Classical (VQE)-based
+  framework for Four-Dimensional Variational Data Assimilation (4DVAR), benchmarked against Classical
+  BFGS optimisation and three deep learning baselines: a standard Long Short-Term Memory network (LSTM),
+  a task-aligned Data Assimilation LSTM (DA-LSTM), and a Neural Ordinary Differential Equation (Neural
+  ODE) across two canonical chaotic atmospheric models of increasing complexity: the three-variable Lorenz-1963
+  (L63) and the forty-variable Lorenz-1996 (L96) systems. All experiments were conducted using PennyLane
+  quantum simulation across 50 independent runs per method, with rigorous statistical validation including
+  paired t-tests, Wilcoxon signed-rank tests, bootstrap 95% confidence intervals, and formal effect size
+  estimation. Results are reported with full timing decomposition separating quantum circuit execution
+  (T 1 ), classical optimiser time (T 2 ), and infrastructure overhead (T 3 ). The central finding is
+  that the Adaptive Hybrid Quantum-Classical model with a Hardware-Efficient Ansatz (Hybrid QC-HEA) achieves
+  a mean 4DVAR cost of 2.10 on L63 and 21.0 on L96 representing only 11.7% and 14.8% above the Classical
+  4DVAR baseline respectively—differences that are not statistically significant at p < 0.05. Crucially,
+  Hybrid QC-HEA outperforms all three deep learning baselines by substantial margins on L96, achieving
+  5.5x lower cost than DA-LSTM, 5.2x lower than LSTM, and 8.3x lower than Neural ODE. The Hybrid QC-HEA
+  also exhibits the tightest cost distribution across 50 runs on L96, demonstrating superior operational
+  reliability compared to all competing methods. Conversely, all-quantum VQE-based methods with no refinement
+  by classical methods scale to cost 32 and 75x more than classical on L96, and thus gradient-free quantum
+  optimisation without the classical BFGS refinement step is ultimately impractical to high-precision
+  data assimilation and the classical BFGS refinement step is in any case a fundamental element of the
+  architecture. Computational scaling analysis reveals that Classical 4DVAR wall-clock time grows 126-fold
+  from L63 to L96, consistent with theoretical predictions of exponentially increasing complexity in chaotic
+  optimisation landscapes, while the hybrid framework maintains near-classical accuracy at both scales.
+  These results constitute an empirical proof-of-concept for hybrid quantum-classical data assimilation
+  on realistic atmospheric models, establishing a reproducible benchmarking framework for future investigation
+  on near-term quantum processors based NISQ devices.'
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,57 @@
+id: doi-10.64808-engineeringperspective.1914439
+title: Comparative Assessment of Machine Learning and Statistical Models for Precipitation Forecasting
+  in Semi-Arid Regions
+authors:
+- Kağan Eryürük
+- Şule Eryürük
+date: '2026-05-22'
+year: 2026
+venue: Engineering Perspective
+venue_type: journal
+ids:
+  doi: 10.64808/engineeringperspective.1914439
+  openalex: W7162133321
+links:
+  paper: https://doi.org/10.64808/engineeringperspective.1914439
+  pdf: https://dergipark.org.tr/en/download/article-file/5837534
+topic: local-forecasting
+type: evaluation
+method:
+- classical-ml
+- rnn
+- transformer
+timescale:
+- seasonal
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Compares eight ML and statistical models on 1958–2025 monthly rainfall in Konya; a hybrid LSTM-XGBoost
+  reaches R2 0.945.
+abstract: 'Accurate precipitation forecasting is essential for water resource management, agricultural
+  planning, and climate resilience, particularly in semiarid regions such as Konya Province, Türkiye,
+  which receives approximately 300 to 350 mm of rainfall annually and is highly vulnerable to drought.
+  This study presents a systematic comparative evaluation of eight forecasting models applied to monthly
+  precipitation data spanning the period from 1958 to 2025. The models evaluated include SARIMAX, LASSO,
+  CatBoost, LightGBM, XGBoost, Multilayer Perceptron (MLP), Long Short Term Memory (LSTM), and a hybrid
+  LSTM and XGBoost framework. Model inputs comprise six key meteorological variables, namely temperature,
+  humidity, evaporation, sunshine duration, wind speed, and precipitation, supplemented by sinusoidal
+  seasonal encodings and lagged or rolling features depending on the model structure. A chronological
+  70/10/20 train, validation, and test split was applied to all machine learning models, while SARIMAX
+  used the full dataset with exogenous regressors. Performance was evaluated using seven complementary
+  metrics: R2, RMSE, MAE, NSE, MAPE, KGE, and PBIAS. The results reveal a clear three tier performance
+  hierarchy. The hybrid LSTM and XGBoost framework achieved the highest accuracy (R2 = 0.945, RMSE = 5.46
+  mm), demonstrating that combining temporal feature extraction with nonlinear residual learning substantially
+  improves predictive performance. Tree based ensemble models, including CatBoost, LightGBM, and XGBoost,
+  formed an intermediate tier with R2 values around 0.70, effectively capturing seasonal variability but
+  tending to underestimate extreme rainfall events. Linear and standalone deep learning models, including
+  SARIMAX, LASSO, MLP, and LSTM, constituted the weakest tier. These findings confirm that hybrid architectures
+  offer the most reliable framework for precipitation forecasting in semiarid regions, with direct implications
+  for sustainable water management and climate adaptation planning.'
+significance: 2
+cited_by: 1
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

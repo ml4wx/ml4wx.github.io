@@ -1,0 +1,47 @@
+id: arxiv-2610.12189
+title: 'Just Weather Scoring: Efficient End-to-end Nowcasting with Distributional Diffusion'
+authors:
+- Jannik Wiese
+- Johannes Schusterbauer
+- Tommaso Martorella
+- Björn Ommer
+date: '2026-10-08'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.12189'
+  openalex: W7221139759
+links:
+  paper: https://arxiv.org/abs/2610.12189
+  pdf: https://arxiv.org/pdf/2610.12189
+topic: nowcasting
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Single-stage diffusion model forecasting precipitation directly in radar space with few-step
+  generation, achieving state-of-the-art SEVIR and MeteoNet results at 17x faster inference.
+abstract: Generative diffusion models are well-suited for probabilistic precipitation nowcasting, but
+  existing approaches often rely on separately trained compression or deterministic forecasting components
+  and remain costly at inference due to iterative denoising. We introduce Just Weather Scoring (JWS),
+  a single-stage, end-to-end diffusion model which addresses both issues by forecasting directly in radar
+  space and enabling few-step generation. Radar-space modeling greatly simplifies training and inference
+  and eliminates uncertainty arising from lossy compression. JWS combines Masked Asynchronous Diffusion,
+  a timestep-sampling scheme that preserves clean context while adapting diffusion training to high-dimensional
+  spatio-temporal data, with a simple scoring-rule objective that aligns training with probabilistic forecasting
+  and unlocks few-step generation. On the SEVIR and MeteoNet benchmarks, JWS achieves state-of-the-art
+  probabilistic forecasting performance at reduced training and inference cost. Even our smallest model
+  remains competitive using substantially fewer parameters and more than 17x faster inference.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

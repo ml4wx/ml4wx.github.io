@@ -1,0 +1,62 @@
+id: arxiv-2608.21998
+title: 'DySCo: Dynamically consistent data-driven downscaling of extremes in climate projections'
+authors:
+- S. Stamatelopoulos
+- M. Wang
+- I. Lopez-Gomez
+- L. Zepeda-Nunez
+- Z. Y. Wan
+- R. Carver
+- F. Sha
+- T. P. Sapsis
+date: '2026-08-22'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2608.21998'
+  openalex: W7204210579
+links:
+  paper: https://arxiv.org/abs/2608.21998
+  pdf: https://arxiv.org/pdf/2608.21998
+orgs:
+- google-research
+- meta-fair
+- mit
+topic: downscaling
+topics:
+- climate-emulation
+type: model
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+- era5
+status: research
+summary: DySCo downscales LENS2 climate projections in space and time while keeping dynamical consistency
+  with coarse GCM trajectories, using data-driven nudging-based training pairs for extremes.
+abstract: Regional climate risk assessment is critical for applications such as infrastructure design,
+  disaster forecasting, and insurance resource allocation. However, estimating regional (i.e., high-spatial-resolution)
+  risk with global climate models (GCMs) remains computationally prohibitive, which has driven the development
+  of downscaling methods for coarse GCM outputs. Downscaling is vital for rare events, since quantifying
+  their extreme properties requires high spatial resolution and very long GCM simulations. These methods
+  non-intrusively increase GCM resolution while correcting statistical biases from unresolved fine-scale
+  processes, thereby improving the accuracy of extreme event statistics with long return periods. A key
+  challenge is preserving dynamical consistency, as freely evolving GCM trajectories are not expected
+  to track the observational dataset used for training the correction operator. This is critical for causal
+  extreme event analyses, where storyline-based risk assessment, i.e., extreme event catalogs, is necessary
+  for effective planning. We address this challenge by introducing Dynamically and Statistically Consistent
+  downscaling (DySCo), a non-intrusive framework yielding high-resolution climate projections consistent
+  with coarse GCM dynamics. DySCo relies on a data-driven reformulation of nudging to create dynamically
+  paired training trajectories without intrusive GCM modifications. Using these paired trajectories, we
+  train a dynamically and statistically consistent, two-stage operator. We evaluate the method by downscaling
+  the Community Earth System Model v2 Large Ensemble (LENS2) in time and space towards historical reanalysis.
+  Results show DySCo achieves superior dynamical consistency with the coarse GCM trajectories, essentially
+  applying a minimal, causal correction to the GCM, preserving top statistical performance comparable
+  to state-of-the-art unsupervised models.
+significance: 4
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

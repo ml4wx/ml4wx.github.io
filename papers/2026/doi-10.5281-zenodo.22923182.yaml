@@ -1,0 +1,48 @@
+id: doi-10.5281-zenodo.22923182
+title: 'Compact Multiscale Relational Representations for Subgrid Vertical-Flux Reconstruction: A Frozen
+  External Test'
+authors:
+- George Brush
+date: '2026-09-23'
+year: 2026
+venue: Zenodo (CERN European Organization for Nuclear Research)
+venue_type: preprint
+ids:
+  doi: 10.5281/zenodo.22923182
+  openalex: W7214087194
+links:
+  paper: https://doi.org/10.5281/zenodo.22923182
+topic: hybrid-parameterization
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- km-scale-sim
+status: research
+summary: Frozen multiscale relational features with Ridge regression reduce external subgrid vertical-flux
+  NRMSE to 2.55 versus 2.95 for raw-neighbour controls on RICO LES.
+abstract: Machine-learning parameterizations often use local atmospheric columns or expanded neighborhoods,
+  but raw nonlocal inputs increase dimensionality and may expose estimators to dataset-specific detail.
+  We developed an explicit multiscale relational representation of resolved vertical velocity on a tropical-cyclone
+  convection dataset. At horizontal radii 1, 2, and 3, four cardinal neighbor-minus-local profiles were
+  summarized by signed means A_r and mean absolute departures B_r; adjacent extents were coupled through
+  C_12=A_1A_2 and C_23=A_2A_3. Six retained profiles were vertically averaged to 40 bands, yielding 240
+  inputs under a prospectively frozen rule. The representation was then applied without redesign to a
+  separately selected RICO WRF large-eddy-simulation dataset. The scaler and Ridge receiver were refit
+  on RICO training times; only the representation and receiver protocol were transferred. On the 40-h
+  held-out test, NRMSE was 2.997 for a local-column control, 2.952 for a raw-neighbor control, 3.012 for
+  the full relational representation, and 2.550 for the compressed relational representation. The compact
+  representation also had the lowest NRMSE at all three rolling held-out times and lower MAE and higher
+  correlation than both raw controls at 40 h. A prospectively recorded expectation that the full relational
+  representation would also outperform the controls failed. Because target RMS declined by about 29-fold
+  from 16 to 40 h, late-time absolute NRMSE was poor; the supported result is the controlled relative
+  comparison. The findings show that a frozen compact relational representation carried useful predictive
+  information across distinct atmospheric simulations, while why vertical reduction improved external
+  performance remains unresolved.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

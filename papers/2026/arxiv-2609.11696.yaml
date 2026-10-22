@@ -1,0 +1,59 @@
+id: arxiv-2609.11696
+title: Stress-Testing Dynamical and Generative Downscaling Using Subseasonal Extreme Precipitation Forecasts
+authors:
+- Mauricio Lima
+- Marika Koukoula
+- Romain Pilon
+- Monika Feldmann
+- Erwan Koch
+- Daniela I. V. Domeisen
+- Tom Beucler
+date: '2026-09-10'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.11696'
+  openalex: W7212290315
+links:
+  paper: https://arxiv.org/abs/2609.11696
+  pdf: https://arxiv.org/pdf/2609.11696
+orgs:
+- eth-zurich
+- mpi-biogeochemistry
+topic: downscaling
+topics:
+- extremes-hazards
+- s2s-seasonal
+type: evaluation
+method:
+- diffusion
+timescale:
+- s2s
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+- radar
+status: research
+summary: Compares WRF dynamical downscaling with an unpaired diffusion model for subseasonal extreme precipitation
+  up to three weeks; each approach wins in different regimes.
+abstract: Coarse spatial resolution limits the ability of subseasonal prediction models to resolve extreme
+  precipitation. Downscaling with either dynamical or deep generative models can overcome this issue,
+  but the comparative performance of these models for extremes across different atmospheric regimes remains
+  poorly understood. In this work, we evaluate the Weather Research and Forecasting (WRF) model against
+  a diffusion-based generative model by downscaling two physically distinct, extreme precipitation events
+  up to lead times of 3 weeks. For a fair comparison with WRF, which can downscale boundary conditions
+  from different driving models without model-specific training, the diffusion model is trained in an
+  unpaired fashion. Both approaches improve upon the raw European Centre for Medium-Range Weather Forecasts
+  forecasts, in comparison to fused rain gauge-radar observations in Switzerland (CombiPrecip), but exhibit
+  regime-dependent strengths. WRF achieves the highest probabilistic skill for a multicell, non-stationary
+  event. Conversely, the diffusion model is more consistent across different performance metrics for the
+  two events, outperforming WRF in a more stationary supercell event. These results demonstrate that explicit
+  dynamical modeling can add value for specific precipitation events for subseasonal lead times, and that
+  generative downscaling adds value more broadly in different situations.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

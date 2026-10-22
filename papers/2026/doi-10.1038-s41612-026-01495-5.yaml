@@ -1,0 +1,50 @@
+id: doi-10.1038-s41612-026-01495-5
+title: Improving reanalysis hub-height wind speeds and wind shear across large spatial domains using near-surface
+  observational networks
+authors:
+- Freddy Houndekindo
+- Taha B. M. J. Ouarda
+date: '2026-08-04'
+year: 2026
+venue: npj Climate and Atmospheric Science
+venue_type: journal
+ids:
+  doi: 10.1038/s41612-026-01495-5
+  openalex: W7172298025
+links:
+  paper: https://doi.org/10.1038/s41612-026-01495-5
+topic: post-processing
+topics:
+- applications-impacts
+type: model
+method:
+- physics-constrained
+- classical-ml
+spatial:
+- regional
+data:
+- era5
+- stations
+status: research
+summary: Machine learning corrects ERA5 100 m wind speeds across North America using near-surface stations
+  and a power-law loss, improving hub-height wind estimates and shear.
+abstract: Abstract Data-driven approaches have emerged as a complementary strategy to physics-based models
+  for learning unresolved processes and parameterization biases in reanalysis products. Most data-driven
+  efforts have focused on improving reanalysis wind speeds at heights where observational data are routinely
+  collected. In this study, data from networks of near-surface meteorological stations in Canada and the
+  United States are combined with a smaller network to derive a theoretical wind-shear exponent. This
+  combined dataset was used to train a machine learning model that incorporates the power-law into its
+  loss function, enabling it to simultaneously learn a correction factor for ERA5 wind speeds at 100 m
+  and predict the wind shear exponent. When evaluated using multi-height wind speed data from the Tall
+  Tower Dataset (TALLDB), the new framework demonstrated significant improvements. It reduced the median
+  absolute error and root mean squared error and improved the temporal variability of ERA5 wind speeds
+  between 10 m and 100 m at test locations not used during training. At several TALLDB stations, the predicted
+  shear exponent outperformed ERA5-derived values. Overall, this framework offers a practical solution
+  for enhancing hub-height wind speed estimates from reanalysis data over large regions, relying solely
+  on near-surface meteorological variables that are more widely available.
+significance: 4
+cited_by: 0
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,50 @@
+id: arxiv-2606.20165
+title: 'PRecover 1.0: Process Rate Recovery with Machine Learning'
+authors:
+- Miriam Simm
+- Tom Beucler
+- Corinna Hoose
+date: '2026-06-18'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.20165'
+  openalex: W7165423711
+links:
+  paper: https://arxiv.org/abs/2606.20165
+  pdf: https://arxiv.org/pdf/2606.20165
+topic: post-processing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: Random forests, gradient boosting and neural networks recover unstored ICON microphysical process
+  rates from standard cloud outputs, with conformal prediction intervals for uncertainty.
+abstract: Comprehensive information on cloud microphysical process rates from numerical simulations allows
+  for better understanding of precipitation formation pathways and aerosol-cloud interactions. However,
+  resource limitations often make it impractical to include all microphysical process rates in the model
+  output, limiting in-depth analyses. To address this shortcoming, we introduce PRecover, a data-driven
+  post-processing approach to recover microphysical process rates that are not stored during runtime from
+  standard output of a numerical weather prediction model. In particular, we train random forests, gradient
+  boosting models, and feed-forward neural networks to recover microphysical process rates from a two-moment
+  bulk microphysics scheme in the ICOsahedral Nonhydrostatic (ICON) model. We use cloud variables as input,
+  obtained from high-resolution simulations in a limited-area setup over Europe. Warm-rain and ice microphysical
+  process rates are recovered with a two-step classification-regression approach for both instantaneous
+  and accumulated process rates. As a physics-based baseline, we assess whether process rates can be directly
+  recalculated from stored ICON output variables. Accurate recalculation is possible for process rates
+  such as accretion and self-collection but not for the autoconversion, rain melting or heterogeneous
+  ice nucleation rate. Using PRecover, we successfully recover most of the process rates that are accumulated
+  over output time steps of 10 minutes or less, but the values are increasingly difficult to recover for
+  rates accumulated over longer accumulation intervals. To quantify predictive uncertainty, we provide
+  calibrated prediction intervals through conformalized quantile regression. We demonstrate spatial transferability
+  of the models with two case studies over different regional domains and simulation settings unseen during
+  training.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

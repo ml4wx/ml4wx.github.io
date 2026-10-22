@@ -1,0 +1,53 @@
+id: arxiv-2609.11230
+title: 'KiloDA: Reconstructing kilometer-scale near-surface wind states from sparse station observations'
+authors:
+- Yihan Zheng
+- Ya Wang
+- Gang Huang
+- Shenming Fu
+- Haijie Li
+- Yujiang Cai
+date: '2026-09-10'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.11230'
+links:
+  paper: https://arxiv.org/abs/2609.11230
+  pdf: https://arxiv.org/pdf/2609.11230
+topic: data-assimilation
+topics:
+- downscaling
+type: model
+method:
+- diffusion
+spatial:
+- regional
+data:
+- stations
+- km-scale-sim
+- era5
+status: research
+summary: KiloDA uses a diffusion prior learned from 3-km WRF archives to reconstruct hourly kilometre-scale
+  winds from sparse stations, cutting RMSE 19% versus ERA5 in withheld complex terrain.
+abstract: Accurate kilometer-scale near-surface winds are important for understanding atmospheric processes
+  over complex terrain, yet remain difficult to reconstruct from sparse and unevenly distributed observations.
+  Here we introduce KiloDA, a diffusion framework for hourly kilometer-scale wind reconstruction from
+  surface stations. KiloDA learns the statistical distribution and spatial structure of wind fields from
+  historical 3-km Weather Research and Forecasting (WRF) model forecasts. At each reconstruction time,
+  no contemporaneous WRF field is used. Instead, station observations provide the only constraints on
+  the current atmospheric state and guide posterior sampling from the learned prior. In idealized WRF
+  experiments, KiloDA recovers localized wind structures when only 0.24% of grid cells are observed and
+  shows an overall advantage over conventional interpolation across terrain conditions and wind speed
+  regimes. This capability largely transfers to real observations. In a fully withheld region, KiloDA
+  reduces the median wind speed root mean square error (RMSE) by 19% relative to ERA5 reanalysis, using
+  only observations outside the region, with the largest improvements over high-elevation and high-relief
+  terrain. A random station holdout further confirms that this advantage extends across different complex-terrain
+  locations and holdout configurations. These results show that historical model archives can provide
+  useful structural knowledge for reconstructing kilometer-scale wind fields from sparse observations
+  without requiring an accurate model estimate of the current atmospheric state.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,60 @@
+id: doi-10.1175-aies-d-25-0082.1
+title: Unravelling the role of increased model resolution in simulating surface temperature fields using
+  explainable AI
+authors:
+- Simon Michel
+- Kristian Strømmen
+- Jürgen Kröger
+- Malcolm J. Roberts
+- Jin‐Song von Storch
+- Hannah M. Christensen
+date: '2026-09-16'
+year: 2026
+venue: Artificial Intelligence for the Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1175/aies-d-25-0082.1
+  openalex: W7213303654
+links:
+  paper: https://doi.org/10.1175/aies-d-25-0082.1
+orgs:
+- met-office
+- university-of-oxford
+- mpi-meteorology
+topic: climate-analysis-attribution
+topics:
+- xai-uq-physics
+type: evaluation
+method:
+- cnn
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: CNN classifier with explainable AI identifies which climate models and resolutions produce winter
+  surface temperature fields, showing ocean eddy resolution drives model similarity.
+abstract: Abstract Minimizing climate model biases is essential to reduce uncertainties in future climate
+  projections. Despite recent advances, improvements between generations of Earth System Models (ESMs)
+  remain modest, largely due to continued reliance on subgrid-scale parametrizations. These are required
+  because CMIP6 model resolutions are too coarse to explicitly simulate small-scale processes such as
+  ocean mesoscale eddies and deep atmospheric convection, which strongly influence climate patterns. Recent
+  gains in computational power have enabled higher-resolution ESMs that can resolve some of these processes,
+  thereby reducing the need for parametrization. However, robustly detecting improved modeling with increased
+  resolution remains challenging due to internal variability and model-to-model discrepancies. This study
+  employs a convolutional neural network (CNN) classifier combined with explainable AI (XAI) to assess
+  the role of resolution in simulating winter surface temperature fields in an ensemble of 17 control
+  climate simulations with varying oceanic and atmospheric resolutions. The CNN distinguishes between
+  ESMs of varying resolutions using temperature snapshots, while XAI identifies the regions driving these
+  classifications, offering deeper insight into ESM behavior. The results show that ESMs with similar
+  ocean grid resolutions are more often confused with each other by the CNN than those from different
+  modeling centers, highlighting the central role of ocean resolution, particularly mesoscale eddies,
+  in shaping climate simulations. Although limited to surface air temperature, the approach provides a
+  more nuanced perspective on ESM differences and performance than traditional bias analyses. The framework
+  can be extended to other variables and ESM features, offering a powerful tool for ESM intercomparison
+  and evaluation.
+significance: 3
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

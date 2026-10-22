@@ -1,0 +1,49 @@
+id: arxiv-2609.02034
+title: Kilometer-Scale AI Downscaling of Atlantic Hurricanes with Generative Ensembles
+authors:
+- Yingkai Sha
+- Talea L. Mayo
+- Ethan D. Gutmann
+- Lulin Xue
+- Andrew Newman
+date: '2026-09-02'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2609.02034'
+links:
+  paper: https://arxiv.org/abs/2609.02034
+  pdf: https://arxiv.org/pdf/2609.02034
+topic: regional-km-scale
+topics:
+- downscaling
+- extremes-hazards
+type: model
+method:
+- diffusion
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+- km-scale-sim
+status: research
+summary: An AI limited-area model plus diffusion ensemble downscales Atlantic hurricanes to hourly kilometre-scale
+  fields, matching CONUS404 energy spectra and improving on a deterministic AI baseline for extremes.
+abstract: This study presents an AI-based dynamical downscaling system for Tropical Cyclones (TCs). The
+  system incorporates an AI-based limited-area model that downscales 3-hourly low-resolution boundary
+  forcings into hourly high-resolution fields autoregressively, and a diffusion model that converts the
+  outputs into ensembles of hazard-relevant variables. The system is trained on the regridded CONUS404
+  data with ERA5 forcings, and is evaluated on 20 TCs in 2020--2024. Verification shows stable downscaling
+  performance across Atlantic hurricane seasons, with energy spectra closely matching the CONUS404 reference.
+  The system is also verified to produce skillful TC-relevant weather extremes, largely improved over
+  a deterministic AI baseline. The system performs well with forcing data from other models (GDAS/FNL)
+  and can produce detailed eyewall, rainband, and landfall structures in TC case studies. The study provides
+  a good example of how AI-based dynamical downscaling systems can be designed to resolve small-scale
+  extreme weather events.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,68 @@
+id: doi-10.5194-egusphere-2026-4514
+title: Lossy compression by dimension reduction – Evaluation of methods applied to 2-d meteorological
+  fields for data-based modeling
+authors:
+- Uwe Ehret
+- Jieyu Chen
+- Fedor Scholz
+- Sam Allen
+- Sebastian Lerch
+date: '2026-10-08'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.5194/egusphere-2026-4514
+  openalex: W7220935065
+links:
+  paper: https://doi.org/10.5194/egusphere-2026-4514
+  pdf: https://egusphere.copernicus.org/preprints/2026/egusphere-2026-4514/egusphere-2026-4514.pdf
+orgs:
+- kit
+- nuist
+topic: infra-software
+type: evaluation
+method:
+- classical-ml
+- other
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Compares block averaging, PCA, an autoencoder and Ramer-Douglas-Peucker for lossy compression
+  of hourly German temperature and rainfall fields for downstream data-driven models.
+abstract: 'Abstract. Data sets in the geosciences continue to grow in size, and data compression methods
+  can facilitate efficient data storage, transfer, and utilization. Related workflows in geoscience modelling
+  typically involve data generation (e.g. via weather forecasting), followed by compression, transfer,
+  decompression, extraction of local subsets, and integrations into downstream tasks such as hydrological
+  modelling. Recently, data-driven models have been introduced into geoscientific workflows with great
+  success, allowing input data sources and types to be used in much more flexible ways than in classical
+  numerical models, e.g. by directly using the compressed data. In this study, we therefore address the
+  questions on 1) how various lossy compression algorithms compare in terms of general properties such
+  as computational effort and their ability to extract spatial subsets directly from the compressed representation,
+  and 2) how they compare in terms of compression efficiency and reproduction error. We focus on dimension
+  reduction methods, as the resulting low-dimensional representations require fewer input channels in
+  downstream data-driven models, thereby reducing computational costs and the risk of overfitting. We
+  compare several dimension reduction methods in an application to five years of hourly air temperature
+  and rainfall data, in the form of 2-d gridded spatial fields spanning a 100,000 km² domain in central
+  Germany. The methods we compare are: Block Averaging, Principal Component Analysis, an Autoencoder,
+  and the Ramer-Douglas-Peucker algorithm. We measure compression by the number of distinguishable objects
+  in the compressed representation, rather than by file size, keeping in mind the potential use of the
+  compressed data as input to data-driven models. This approach directly relates dimension reduction/compression
+  to the number of input channels of a data-driven model, which is typically limited to avoid overfitting.
+  Our results indicate that the methods differ substantially in terms of training and computational overhead,
+  preservation of field-scale statistics, and the possibility to extract spatial subsets directly from
+  the compressed representation. All methods demonstrated very good compression efficiency, with low reconstruction
+  errors even for 99 % compression. For the spatially smooth temperature fields, Principal Component Analysis
+  performed best, followed by the Autoencoder. For the spatially heterogeneous rainfall fields, the Autoencoder
+  and the Ramer-Douglas-Peucker algorithm were most effective. The choice of the best method therefore
+  depends on the specific application. This study provides a step towards a more efficient use of geoscientific
+  data in downstream applications, either by directly using compressed data as input to data-driven models,
+  or by efficiently extracting spatial subsets from compressed data, and using these subsets as input
+  to local numerical models.'
+significance: 2
+cited_by: 0
+score: 18
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,47 @@
+id: arxiv-2605.17603
+title: 'Longwang: Zero-Shot Global Spatiotemporal Precipitation Downscaling with a Latent Generative Prior'
+authors:
+- Yue Wang
+- Daniele Visioni
+date: '2026-05-17'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.17603'
+  openalex: W7161740796
+links:
+  paper: https://arxiv.org/abs/2605.17603
+  pdf: https://arxiv.org/pdf/2605.17603
+topic: downscaling
+topics:
+- climate-analysis-attribution
+type: model
+method:
+- diffusion
+timescale:
+- climate
+spatial:
+- global
+data:
+- era5
+- cmip
+status: research
+summary: Longwang is a zero-shot latent diffusion framework that downscales monthly 100 km precipitation
+  to daily 10 km fields globally, without paired training data, and generalizes to climate projections.
+abstract: High-resolution precipitation information is essential for climate impact assessment, yet global
+  climate models remain too coarse to resolve key small-scale processes. Existing machine learning downscaling
+  methods often require paired low- and high-resolution data for supervised learning, are tied to fixed
+  regions or scale factors during inference, and can be computationally expensive to train and run in
+  physical space. Here we introduce Longwang, a zero-shot latent generative framework for global spatiotemporal
+  precipitation downscaling. Longwang learns a context-conditioned latent generative prior and combines
+  it with a physically informed observation operator through posterior sampling, enabling daily O(10 km)
+  precipitation fields to be generated from monthly O(100 km) inputs. On ERA5 reanalysis, Longwang outperforms
+  standard posterior sampling with an unconditional generative prior in reconstructing fine-scale spatial
+  patterns, preserving temporal coherence, and recovering extreme precipitation intensities. The framework
+  further generalizes to historical climate simulations and future climate projections under substantial
+  distribution shift.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,50 @@
+id: arxiv-2608.14935
+title: Developing an Offshore Machine Learning Surface Layer Scheme
+authors:
+- Susan Dettling
+- Sue Ellen Haupt
+- Thomas Brummet
+- Patrick Hawbecker
+- Branko Kosović
+- David John Gagne
+date: '2026-08-14'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2608.14935'
+links:
+  paper: https://arxiv.org/abs/2608.14935
+  pdf: https://arxiv.org/pdf/2608.14935
+topic: hybrid-parameterization
+topics:
+- observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Neural networks and random forests trained on three offshore towers outperform the COARE-3 flux
+  scheme for heat flux, while momentum flux gains are mixed.
+abstract: 'Turbulent fluxes between the surface and the atmosphere are typically parameterized using empirically
+  fit relationships. Here we test machine learning techniques for fitting the relationship for the offshore
+  environment. To do that, data from three offshore sites are used: the Martha''s Vineyard Coastal Observatory
+  (MVCO) air-sea interaction tower, the FINO1 research platform, and the CASPER-West FLIP research vessel
+  deployed off the coast of California. Two machine learning methods were employed: Neural Networks (NN)
+  and Random Forests (RF). Because the observational sites had towers with measurements at different levels,
+  the vertical differences were input as gradients. Models were built for both momentum flux and heat
+  flux. ML models trained at the individual sites were competitive with and in some cases, better than
+  the physically-based COARE-3 model tailored to offshore fluxes. The heat flux ML models generally outperformed
+  the physics-based parameterizations for most metrics, but the results were mixed for momentum flux,
+  with only the site with the most training data (MVCO) producing results better than COARE-3. When the
+  ML models from that site were applied to the other sites, results were degraded from using data from
+  the site being tested. ML models built from data combined from the three sites generally showed improvements
+  for the sites with less available training data. When assessing which variables were most important,
+  the wind speed was most important for momentum flux and temperature gradient for heat flux.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

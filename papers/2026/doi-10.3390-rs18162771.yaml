@@ -1,0 +1,56 @@
+id: doi-10.3390-rs18162771
+title: Event-Guided Spatiotemporal Transformer with Conditional Diffusion Refinement for High-Intensity
+  Precipitation Nowcasting
+authors:
+- Wenqi Li
+- Haiyong Zheng
+- Haipeng Cui
+- Tao Bi
+- Yiyun Guo
+- Bo Yin
+date: '2026-08-16'
+year: 2026
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs18162771
+  openalex: W7203654384
+links:
+  paper: https://doi.org/10.3390/rs18162771
+topic: nowcasting
+type: model
+method:
+- transformer
+- diffusion
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Event-aware spatiotemporal Transformer with a conditional diffusion refiner reduces over-smoothing
+  of heavy precipitation nowcasts on KNMI radar, lowering false alarms above 8 mm/h.
+abstract: Accurate nowcasting of high-intensity precipitation is critical for urban flood control and
+  short-term hydrological risk management. However, the high stochasticity of convective systems poses
+  a significant challenge for traditional deep learning models in generating accurate predictions. Existing
+  regression-based models, often constrained by Mean Squared Error loss, tend to produce over-smoothed
+  results, leading to severe underestimation of heavy rainfall centers. To address this challenge, this
+  study proposes an event-guided two-stage nowcasting framework, named EGN-Nowcast, which incorporates
+  intensity-aware auxiliary supervision through an implicit regularization strategy. This framework integrates
+  an event-aware spatiotemporal Transformer with a Conditional Diffusion Refiner. Specifically, an event-aware
+  auxiliary mechanism is introduced to increase the optimization emphasis on high-intensity precipitation
+  regions. The conditional diffusion module then refines the coarse precipitation prediction to recover
+  fine-scale structures while preserving the spatiotemporal consistency learned by the first-stage predictor.
+  This strategy is designed to alleviate over-smoothing and improve spatiotemporal consistency under the
+  evaluated KNMI radar setting. Experiments based on the KNMI radar dataset from 2016 to 2025 show improvements
+  in several pixel-level, categorical, and visual verification metrics, including a reduction in the false
+  alarm rate for high-intensity precipitation events (>8 mm/h). These results suggest that the proposed
+  framework can improve the representation of localized high-intensity precipitation structures and reduce
+  false alarms under sparse high-intensity precipitation conditions on the selected KNMI radar dataset.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

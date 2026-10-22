@@ -1,0 +1,58 @@
+id: doi-10.5194-essd-2026-449
+title: A compiled dataset of Greenland weather station observations and reconstructed surface air temperature
+authors:
+- Shujing Wang
+- Yetang Wang
+- Yulun Zhang
+- Zhaosheng Zhai
+- Shugui Hou
+date: '2026-09-02'
+year: 2026
+venue: Earth System Science Data Discussions
+venue_type: journal
+ids:
+  doi: 10.5194/essd-2026-449
+  openalex: W7204994312
+links:
+  paper: https://doi.org/10.5194/essd-2026-449
+  pdf: https://essd.copernicus.org/preprints/essd-2026-449/essd-2026-449.pdf
+topic: benchmarks-data-eval
+topics:
+- observations-remote-sensing
+type: benchmark
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- stations
+- era5
+- other
+status: research
+summary: Compiles Greenland station observations and uses one of five ML models to reconstruct a 0.1°
+  monthly temperature product, cutting ERA5 RMSE by over 60%.
+abstract: 'Abstract. Climate variability is a main driver of mass imbalance of the Greenland Ice Sheet.
+  However, quantitative assessments of climate change in this region are constrained by the sparseness,
+  heterogeneity, and discontinuity of in situ measurements, imposing significant challenges to reliable
+  modelling and future projections. To address this, we compile all available weather station observations
+  over Greenland from 1941 to present into a single and standardized dataset at both daily and monthly
+  temporal resolutions. This dataset includes seven climate variables: temperature, wind speed, wind direction,
+  relative humidity, radiation, precipitation, and pressure, which is accessible at https://doi.org/10.11888/Atmos.tpdc.303490
+  (Wang and Wang, 2026). All data were harmonized and processed by a uniform quality control procedure,
+  with the outliers flagged. For each station, detailed metadata covering source, location, and data availability
+  are supplied. The dataset facilitates a thorough analysis of multi-variable climate characteristics
+  in Greenland and can be used for the validation of global reanalysis products, regional climate models
+  and remote sensing retrievals as well as data assimilation and climate reconstruction. Furthermore,
+  we use the temperature observations from the compiled dataset together with a digital elevation model
+  and ERA5 reanalysis to reconstruct a high-resolution (0.1°) monthly surface air temperature (SAT) dataset
+  for Greenland (1950–2024), based on the optimized method identified after comparing five distinct machine
+  learning models. The resulting SAT reconstruction exhibit a great improvement over ERA5, reducing the
+  root mean square error (RMSE) by more than 60 % and increasing squared correlation coefficient (R2)
+  by 5 %. The high accuracy of this reconstruction is further confirmed by spatial cross-validation across
+  11 distinct regional divisions. The reconstruction is also publicly available at the Third Pole Environment
+  Data Center (https://doi.org/10.11888/Cryos.tpdc.303026, Wang and Wang, 2025).'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

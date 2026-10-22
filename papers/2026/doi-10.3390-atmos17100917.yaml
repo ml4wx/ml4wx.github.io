@@ -1,0 +1,61 @@
+id: doi-10.3390-atmos17100917
+title: 'Planetary Boundary Layer Height Prediction over Karst Plateau: A Study Integrating Multi-Source
+  Remote Sensing and Machine Learning'
+authors:
+- Jue Wang
+- Pengcheng Jia
+- Yang Li
+- Qiang Wang
+- Tao Yang
+date: '2026-09-23'
+year: 2026
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos17100917
+  openalex: W7214094429
+links:
+  paper: https://doi.org/10.3390/atmos17100917
+topic: observations-remote-sensing
+topics:
+- local-forecasting
+type: application
+method:
+- classical-ml
+spatial:
+- local
+data:
+- stations
+- other
+status: research
+summary: CatBoost with ground-based remote sensing profiles predicts karst-plateau boundary layer height
+  with R2 0.80, far above ERA5 which has negative R2.
+abstract: 'The planetary boundary layer height (PBLH) is a critical parameter for air quality modeling,
+  weather forecasting, and climate studies, yet accurately estimating it over complex terrain remains
+  a major challenge. This study investigates whether multi-source ground-based remote sensing combined
+  with machine learning can provide reliable PBLH predictions in a karst plateau environment where the
+  ERA5 reanalysis product shows large systematic errors. Using 17 months of continuous observations (from
+  1 January 2024 to 15 May 2025) from the Guiyang National Reference Climatological Station on the eastern
+  Yunnan–Guizhou Plateau, including temperature and humidity profiles, wind profiles, and surface data,
+  we constructed a 493-dimensional feature set and trained a CatBoost gradient boosting model. The model
+  achieved a coefficient of determination (R2) of 0.80 and a root mean square error of 290 m on an independent
+  test set, substantially outperforming ERA5, which yielded a negative R2 and a mean bias of approximately
+  −500 m. Incorporating vertical profile features improved the R2 by 0.093 compared to using surface observations
+  alone, with liquid water path, cloud base height, low-level temperature gradient, and low-level relative
+  humidity emerging as the most important predictors. Classical physical diagnostic methods all produced
+  negative R2 values when applied directly to the microwave radiometer retrieval data at this site, primarily
+  due to fixed-segment artifacts across the seven height layers. When incorporated as additional prior
+  features into CatBoost, none of the three configurations yielded meaningful improvement: R2 changed
+  by at most +0.0010, RMSE by at most −0.7 m, and the 800 m classification accuracy by at most +0.61 percentage
+  points, while the Bulk Richardson and Cn2 gradient priors slightly degraded RMSE. These results demonstrate
+  that locally observation-driven machine learning can serve as a viable supplement or alternative to
+  global reanalysis for boundary layer height estimation over complex karst terrain and they quantify
+  the specific value that vertical profiling observations add relative to surface measurements alone.
+  The findings provide valuable reference data for enhancing weather forecasting and air quality modeling,
+  particularly in complex terrain areas.'
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

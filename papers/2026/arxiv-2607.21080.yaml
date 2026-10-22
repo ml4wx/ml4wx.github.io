@@ -1,0 +1,48 @@
+id: arxiv-2607.21080
+title: 'Nipping the Butterfly Effect in the Bud: Self-Output Fine-Tuning for Autoregressive Weather Prediction'
+authors:
+- Yun-Ye Cai
+- Hsuan-Tien Lin
+date: '2026-07-23'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2607.21080'
+  openalex: W7170318862
+links:
+  paper: https://arxiv.org/abs/2607.21080
+  pdf: https://arxiv.org/pdf/2607.21080
+topic: global-medium-range
+type: model
+method:
+- other
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Self-Output Fine-Tuning corrects input distribution shift in autoregressive DL weather models,
+  reducing long-horizon error growth and achieving state-of-the-art results.
+abstract: Long-horizon weather forecasting is a fundamental challenge in atmospheric science, for which
+  autoregressive Deep Learning Weather Prediction (DLWP) has emerged as the primary paradigm. Although
+  the autoregressive pipeline is highly scalable and flexible, its prediction errors grow rapidly over
+  long forecasting horizons. In this work, we study this error growth phenomenon from both theoretical
+  and empirical perspectives. Our analysis reveals that the growth is driven by a feedback loop between
+  output errors and input distribution shifts. Specifically, the autoregressive process amplifies small
+  initial output errors, which progressively corrupt subsequent input distributions, echoing the butterfly
+  effect in atmospheric science and ultimately deteriorating forecasting accuracy over longer horizons.
+  Furthermore, we show that this distributional shift originates at the earliest stage of inference, with
+  out-of-distribution signatures detectable as early as the first autoregressive step. To mitigate this
+  issue, we propose \textbf{Self-Output Fine-Tuning (SOFT)}, a plug-and-play strategy that leverages the
+  model's own one-step predictions to calibrate the biased input distribution encountered at the first
+  step. Extensive experiments demonstrate that, despite its simplicity, SOFT achieves state-of-the-art
+  performance on long-horizon forecasting tasks and substantially reduces both prediction errors and distributional
+  discrepancy. The success of SOFT highlights the importance of reexamining the fundamental pipeline of
+  deep learning weather prediction, representing a critical pipeline advance for atmospheric science.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

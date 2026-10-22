@@ -1,0 +1,52 @@
+id: doi-10.5194-tc-20-3313-2026
+title: 'Learning to melt: Emulating Greenland surface melt from a polar RCM with machine learning'
+authors:
+- Elke Schlager
+- Sebastian Scher
+- Ruth H. Mottram
+- Peter L. Langen
+date: '2026-06-03'
+year: 2026
+venue: "\x98The \x9Ccryosphere"
+venue_type: journal
+ids:
+  doi: 10.5194/tc-20-3313-2026
+  openalex: W7163433199
+links:
+  paper: https://doi.org/10.5194/tc-20-3313-2026
+topic: climate-emulation
+type: model
+method:
+- physics-constrained
+timescale:
+- climate
+spatial:
+- regional
+data:
+- era5
+- other
+status: research
+summary: A neural network emulates daily Greenland surface melt from a polar regional climate model with
+  MAE below 0.23 mm w.e. per day, enabling cheap ensemble projections.
+abstract: Abstract. Predicting surface melt on the Greenland ice sheet is critical for understanding surface
+  mass balance (SMB) and sensitivity to climate change. Polar regional climate models are the primary
+  tools for simulating melt and projecting future SMB, but different models produce significantly different
+  results. However, they are too computationally expensive to create the large ensembles needed to quantify
+  this uncertainty. We develop a neural network based emulator that predicts daily surface melt from atmospheric
+  variables, trained on output from the polar regional climate model HIRHAM5 and its firn model DMIHH
+  forced by ERA-Interim reanalysis. The emulator uses a physics-informed design combining short-term weather
+  patterns with long-term climate memory, capturing both immediate atmospheric forcing and accumulated
+  firn characteristics. The emulator achieves mean absolute error below 0.23 mm w.e. per day across all
+  six Greenland drainage basins, with the errors primarily attributable to spatial over-smoothing. Our
+  work demonstrates that machine learning can successfully emulate firn model behavior from climate forcing
+  alone with computational costs orders of magnitude lower than traditional simulations. Once retrained
+  for specific climate forcings, the emulator thus enables extensive ensemble projections. Furthermore,
+  the modular architecture can be readily adapted to emulate other SMB quantities such as runoff. This
+  represents a crucial first step toward computationally efficient emulation of polar regional climate
+  models and surrogate modeling of SMB components in Earth system modeling.
+significance: 3
+cited_by: 2
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

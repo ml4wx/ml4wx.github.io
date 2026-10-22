@@ -1,0 +1,51 @@
+id: arxiv-2606.17659
+title: 'Physics-Constrained Neural Networks for Improved Short-Term Weather Forecasting: A Case Study
+  over the South Pacific'
+authors:
+- Egor Bugaev
+- Fedor Buzaev
+- Dmitry Efremenko
+- Denis Derkach
+- Fedor Ratnikov
+date: '2026-06-16'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2606.17659'
+  openalex: W7164989758
+links:
+  paper: https://arxiv.org/abs/2606.17659
+  pdf: https://arxiv.org/pdf/2606.17659
+topic: hybrid-parameterization
+topics:
+- global-medium-range
+type: model
+method:
+- physics-constrained
+- transformer
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: Physics-constrained hybrids pairing a WENO-5 solver with neural backbones cut 1-12 h RMSE by
+  8-22% over purely neural models on the WeatherBench South Pacific subset.
+abstract: This study introduces enhancements to physics-constrained neural networks (PCNNs) that improve
+  the accuracy and stability of hybrid short-term weather forecasting models. Building on the WeatherGFT
+  architecture, three innovations are proposed. First, an upgraded numerical solver, combining a fifth-order
+  weighted essentially non-oscillatory scheme (WENO-5), a beta-plane approximation, and subgrid-scale
+  viscosity, permits a fourfold increase in the integration time step to 1200 s while reducing the daily
+  mean squared error by up to 26%. Second, a unified autoregressive hybrid block replaces the original
+  chain of 24 specialised modules, eliminating overfitting to specific lead times. Third, the physical
+  core is integrated with two state-of-the-art neural backbones, resulting in PI-PredFormer and PI-IAM4VP.
+  Evaluation on the WeatherBench South Pacific subset from 2000 to 2004 shows that these hybrids reduce
+  root mean squared error at 1-12 h lead times by 8-22% compared to purely neural counterparts, while
+  better preserving physical consistency. These results demonstrate that incremental refinement of hybrid
+  components offers a practical route toward more accurate and efficient short-range weather forecasting.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,55 @@
+id: arxiv-2605.23403
+title: Hybrid Quantum-Classical Corrective Diffusion Modeling for Meteorological Downscaling
+authors:
+- Rui Wang
+- Edoardo Pasetto
+- Amer Delilbasic
+- Morris Riedel
+- Kristel Michielsen
+- Gabriele Cavallaro
+date: '2026-05-22'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2605.23403'
+links:
+  paper: https://arxiv.org/abs/2605.23403
+  pdf: https://arxiv.org/pdf/2605.23403
+topic: downscaling
+type: model
+method:
+- diffusion
+- other
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: A hybrid quantum-classical corrective diffusion model adds variational quantum layers to a downscaling
+  UNet, improving MAE and CRPS for 10 m winds in several configurations.
+abstract: Statistical downscaling is a crucial component of the weather modeling field, where high-resolution
+  outputs must be reconstructed from coarse-resolution inputs with the full cost of dynamical refinement.
+  In this work, we investigate a hybrid quantum-classical corrective diffusion model for probabilistic
+  statistical downscaling of weather fields. The proposed model inserts variational quantum circuit layers
+  into the most compressed bottleneck of the diffusion UNet while leaving the regression branch fully
+  classical. This placement tests whether quantum circuits can act as compact nonlinear feature maps for
+  latent-channel mixing. We evaluate intra-channel and cross-channel ansätze on 10m wind components. On
+  the 2020 validation set, the hybrid models remain stable, preserve the large-scale spatial organization
+  of the generated wind fields, and improve both MAE and CRPS relative to a classical corrective diffusion
+  model in several configurations. Structural diagnostics further show that the hybrid variants preserve
+  kinetic-energy spectra and windspeed distributions similar to its classical counterpart while producing
+  controlled changes in tail behavior, extreme-windspeed localization, and joint wind field components
+  structure. Backend studies on the 2020 validation set show negligible impact from simulated device noise
+  at the tested circuit scale, whereas real-hardware deployment remains limited by qubit availability
+  and execution fidelity. The 2021 out-of-distribution test shows that these in-distribution gains do
+  not transfer uniformly under temporal shift, revealing a generalization gap that motivates future mitigation
+  through stabilization and regularization. These results show that bottleneck-level quantum hybridization
+  can make a nontrivial contribution to weather statistical downscaling, while also highlighting that
+  circuit scale and hardware deployment remain key limiting factors.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

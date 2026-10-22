@@ -1,0 +1,57 @@
+id: arxiv-2606.02550
+title: Probabilistic storyline attribution using machine learning
+authors:
+- Frieder Loer
+- Maybritt Schillinger
+- Sebastian Sippel
+date: '2026-06-01'
+year: 2026
+venue: Machine Learning Earth
+venue_type: journal
+ids:
+  arxiv: '2606.02550'
+  doi: 10.1088/3049-4753/aea4b7
+  openalex: W7163124603
+links:
+  paper: https://doi.org/10.1088/3049-4753/aea4b7
+  pdf: https://arxiv.org/pdf/2606.02550
+topic: climate-analysis-attribution
+topics:
+- climate-emulation
+type: model
+method:
+- other
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+- era5
+status: research
+summary: Distributional autoencoders trained on coupled climate simulations generate circulation-conditioned
+  European temperature counterfactuals, projecting a 2003-like heatwave intensity rising to 32.1 °C by
+  2053.
+abstract: A fundamental goal in climate attribution is to estimate how forced climate change contributes
+  to observed extreme weather events. The storyline attribution method compares an observed weather event,
+  conditional on its atmospheric dynamic state (i.e., atmospheric circulation), in the current, 'factual'
+  climate to an event with very similar circulation conditions in a hypothetical, 'counterfactual' climate.
+  However, physical climate models cannot directly transfer these storyline counterfactuals across different
+  climate forcing states. Statistical and machine learning techniques may overcome this limitation; yet,
+  emulating circulation-conditional extreme events under different climate states is challenging. Here,
+  we demonstrate distributional autoencoders (DAEs) as a versatile method for generating climate counterfactuals.
+  They model the full distribution of spatially resolved European temperature fields conditional on the
+  atmospheric circulation state and the mean global warming level. These distributions allow for deriving
+  meaningful conditional probability ratios, which is a particular advantage of the DAE-based storyline
+  approach. We train DAEs on fully coupled climate model simulations and we evaluate the modelled distributions
+  across different factual and storyline-based counterfactual climate model simulations. In an illustrative
+  case study, we revisit the 2003 European heatwave and we generate counterfactuals for a hypothetical
+  `2003-like European heatwave' using ERA5 circulation, which we hypothesize to occur a quarter century
+  (2028) and a half century (2053) after 2003. The conditional intensity would increase from 29.3 °C in
+  2003, to 30.3 °C and 32.1 °C in 2028 and 2053, respectively and conditional probability ratios would
+  be 2.1 and 3.2 when compared to 2003.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

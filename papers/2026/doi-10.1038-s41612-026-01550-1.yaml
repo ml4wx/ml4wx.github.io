@@ -1,0 +1,64 @@
+id: doi-10.1038-s41612-026-01550-1
+title: Physically constrained machine learning improves radiation, clouds, and albedo forecasts globally
+authors:
+- Qiusheng Huang
+- Xiaohui Zhong
+- Junyu Cai
+- Linfan Zhou
+- Zijian Zhu
+- Wenxu Qian
+- Lei Chen
+- Libo Wu
+- Dazhi Yang
+- Hao Li
+date: '2026-09-21'
+year: 2026
+venue: npj Climate and Atmospheric Science
+venue_type: journal
+ids:
+  doi: 10.1038/s41612-026-01550-1
+  openalex: W7213929925
+links:
+  paper: https://doi.org/10.1038/s41612-026-01550-1
+  pdf: https://www.nature.com/articles/s41612-026-01550-1_reference.pdf
+orgs:
+- fudan-university
+topic: hybrid-parameterization
+topics:
+- global-medium-range
+type: model
+method:
+- differentiable
+- physics-constrained
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- satellite
+- stations
+status: research
+summary: FuXi-RTM embeds a differentiable ML radiative transfer surrogate in a global forecast model,
+  improving shortwave radiation and cloud forecasts against stations and satellite products.
+abstract: Clouds, radiation, and surface albedo are essential to Earth’s energy balance and have a significant
+  impact on applications such as solar energy, yet they remain challenging to represent accurately in
+  global forecast systems. Recent machine learning-based weather forecasting models have matched or outperformed
+  conventional numerical models for large-scale dynamical variables, but most do not explicitly predict
+  clouds, radiation, or albedo, limiting their physical fidelity. Here, we present FuXi-RTM, a hybrid
+  machine learning model that integrates a differentiable machine learning surrogate of a widely used
+  radiative transfer model (MLRTM) directly within global weather forecasts. By jointly predicting clouds,
+  surface albedo, and radiative fluxes, and by allowing radiative transfer gradients to constrain the
+  forecast state, FuXi-RTM improves radiative consistency while maintaining computational efficiency.
+  Against reanalysis data, independent ground-based station observations, and satellite-derived radiation
+  products, FuXi-RTM improves forecasts of shortwave radiation and cloud-related variables relative to
+  unconstrained variants and state-of-the-art physics-based models. These results suggest that differentiable
+  physical constraints can improve machine learning-based weather forecasts for both Earth system prediction
+  and solar energy applications.
+significance: 5
+cited_by: 0
+score: 55
+highlight: false
+added: '2026-10-22'
+source: backfill

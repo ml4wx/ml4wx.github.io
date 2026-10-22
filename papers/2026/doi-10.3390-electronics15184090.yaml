@@ -1,0 +1,53 @@
+id: doi-10.3390-electronics15184090
+title: Hybrid WRF–Machine Learning Irradiance Correction, POA Transposition, and PV Module Thermal Modeling
+  for Photovoltaic Forecasting-Input Assessment and Monitoring
+authors:
+- Aissa Meflah
+- Fathia Chekired
+- Laurent Canale
+date: '2026-09-10'
+year: 2026
+venue: Electronics
+venue_type: journal
+ids:
+  doi: 10.3390/electronics15184090
+  openalex: W7212143471
+links:
+  paper: https://doi.org/10.3390/electronics15184090
+topic: applications-impacts
+topics:
+- post-processing
+type: application
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Random Forest and gradient boosting correct WRF irradiance for PV forecasting inputs, cutting
+  RMSE from 139.7 to about 76 W/m², with protocol-dependent robustness.
+abstract: 'Reliable photovoltaic (PV) monitoring requires meteorological inputs that remain interpretable
+  through horizontal irradiance, module-plane irradiance, temperature, and electrical-output layers. This
+  study evaluates a component-wise WRF–machine-learning–POA–thermal workflow using complementary field
+  datasets: a synchronized 2021 WRF-ML/electrical dataset and an independent 2017 POA/GTI validation dataset.
+  WRF-derived variables were treated as retrospective meteorological inputs for post-processing and forecasting-input
+  assessment. Random Forest, Gradient Boosting, neural networks, mean bias-corrected WRF, and Ridge MOS
+  baselines were tested for GHI correction; empirical, Perez, Hay–Davies, and isotropic models were compared
+  for POA/GTI transposition; and five module temperature models were assessed. In a random 80/20 held-out
+  test, Random Forest and Gradient Boosting reduced irradiance RMSE from 139.66 W/m2 for raw WRF to 75.92
+  and 75.96 W/m2, respectively. In blocked temporal validation, however, raw WRF was more stable for month-wise
+  irradiance, and the physics-inspired Ridge baseline was more robust for leave-one-month-out AC/DC power
+  prediction. Perez gave the best POA/GTI agreement, while NOCT and King/Sandia gave the lowest thermal
+  errors. The results support a protocol-dependent, traceable input-chain assessment for PV monitoring
+  and identify the calibration, metadata, and timestamp controls needed before operational power-forecasting
+  claims can be generalized.'
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill
