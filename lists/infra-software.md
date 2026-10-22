@@ -5,7 +5,7 @@ Frameworks, training and inference at scale, HPC, and compression of weather and
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/infra-software/)
 
-81 papers (4 ⭐). Newest first.
+86 papers (4 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -18,6 +18,7 @@ Frameworks, training and inference at scale, HPC, and compression of weather and
 | 2026-08-21 | [Optimizing Gaussian process emulation and generalized additive model fitting for rapid, reproducible earth system model analysis](https://doi.org/10.5194/gmd-19-7767-2026)<br><sub>Kunal Ghosh, Leighton A. Regayre · Geoscientific model development</sub> | Met Office |  |
 | 2026-07-17 | ⭐ [JCM v1.1: a differentiable, intermediate-complexity atmospheric model](https://doi.org/10.5194/gmd-19-6451-2026)<br><sub>Ellen Davenport, J. Varan Madan, Rebecca Gjini et al. · Geoscientific model development</sub> | Google Research |  |
 | 2026-06-29 | [MESMER v1.0.0: consolidating the modular Earth system model emulator into a sustainable research software package](https://doi.org/10.5194/gmd-19-5669-2026)<br><sub>Victoria Bauer, Mathias Hauser, Yann Quilcaille et al. · Geoscientific model development</sub> | ETH Zurich |  |
+| 2026-06-28 | [Combining Domain and Tensor Parallelism to Train Multi-billion-parameter AI Weather Models](https://doi.org/10.1145/3815572.3815765)<br><sub>Deifilia Kieckhefen, Markus Götz, L. Heyen et al. · Platform for Advanced Scientific Computing Conference</sub> |  |  |
 | 2026-06-23 | [Machine learning is revolutionizing weather forecasting -- the next step is a change in how we work](https://doi.org/10.1016/j.jemets.2026.100050)<br><sub>Peter Dueben, Peter Bauer, Oliver Fuhrer et al. · Journal of the European Meteorological Society.</sub> |  |  |
 | 2026-06-12 | [Can Deep Neural Networks Improve Compression of Very Large Scientific Data?](https://arxiv.org/abs/2606.14353)<br><sub>Muhannad Alhumaidi, Guozhong Li, Spiros Skiadopoulos et al.</sub> |  |  |
 | 2026-06-04 | [Systematic LLM Translation of Legacy Scientific Code to Differentiable Frameworks: Application to a Land Surface Model](https://arxiv.org/abs/2606.07681)<br><sub>Aya Lahlou, Linnia Hawkins, Pierre Gentine</sub> |  |  |
@@ -41,6 +42,7 @@ Frameworks, training and inference at scale, HPC, and compression of weather and
 | 2025-08-12 | [Decentralized Weather Forecasting via Distributed Machine Learning and Blockchain-Based Model Validation](https://arxiv.org/abs/2508.09299)<br><sub>Rilwan Umar, Aydin Abadi, Basil Aldali et al.</sub> |  |  |
 | 2025-07-22 | [A Partitioned Sparse Variational Gaussian Process for Fast, Distributed Spatial Modeling](https://arxiv.org/abs/2507.16771)<br><sub>Michael Grosskopf, Kellin Rumsey, Ayan Biswas et al.</sub> |  |  |
 | 2025-07-08 | [Jigsaw: Training Multi-Billion-Parameter AI Weather Models with Optimized Model Parallelism](https://arxiv.org/abs/2507.05753)<br><sub>Deifilia Kieckhefen, Markus Götz, Lars H. Heyen et al.</sub> |  |  |
+| 2025-06-30 | [Atmospheric Data Compression and Reconstruction Using Spherical GANs](https://doi.org/10.1109/ijcnn64981.2025.11227156)<br><sub>O.M. Feitosa, H. F. de Campos Velho, S. R. Freitas et al. · 2025 International Joint Conference on Neural Networks (IJCNN)</sub> |  |  |
 | 2025-06-26 | [Distributed Cross-Channel Hierarchical Aggregation for Foundation Models](https://arxiv.org/abs/2506.21411)<br><sub>Aristeidis Tsaris, Isaac Lyngaas, John Lagregren et al.</sub> | Oak Ridge National Laboratory |  |
 | 2025-06-19 | [Artificial Intelligence for Atmospheric Sciences: A Research Roadmap](https://arxiv.org/abs/2506.16281)<br><sub>Martha Arbayani Zaidan, Naser Hossein Motlagh, Petteri Nurmi et al.</sub> |  |  |
 | 2025-04-29 | [MACHINE LEARNING-DRIVEN OPTIMIZATION OF NUMERICAL WEATHER PREDICTION MODELS](https://doi.org/10.51470/ijcnwc.2025.v15.i02.pp889-899)<br><sub>MACHINE LEARNING-DRIVEN OPTIMIZATION OF NUMERICAL WEATHER PREDICTION MODELS, Pinjari Akbar Basha Sri Lakshmi Prasanna</sub> |  |  |
@@ -53,6 +55,7 @@ Frameworks, training and inference at scale, HPC, and compression of weather and
 | 2025-02-06 | [Learning low-dimensional representations of ensemble forecast fields using autoencoder-based methods](https://doi.org/10.1029/2025jh000819)<br><sub>Jieyu Chen, Kevin Höhlein, Sebastian Lerch · Journal of Geophysical Research Machine Learning and Computation</sub> | Karlsruhe Institute of Technology (KIT), Nanjing University of Information Science & Technology (NUIST), Technical University of Munich (TUM) |  |
 | 2025-01-01 | [Hymeshai: Deep Learning Enabled Three-Dimensional Adaptive Mesh Generator for High-Resolution Atmospheric Simulations](https://doi.org/10.1016/j.jcp.2026.114760)<br><sub>Ping Gan, Jinxi Li, Fangxin Fang et al. · Journal of Computational Physics</sub> | Institute of Atmospheric Physics, Chinese Academy of Sciences |  |
 | 2025-01-01 | [A NEUROMORPHIC ANALYSIS OF CLIMATE PATTERNS FOR COMPLEX ENVIRONMENTAL FRACTAL MODELING](https://doi.org/10.1142/s0218348x25401048)<br><sub>Shadi Mahmoud Faleh AlZu’bi, Tarek Ghazi Kanan, Mohammed W. Elbes et al. · Fractals</sub> |  |  |
+| 2025-01-01 | [Impact of VAEformer Compression Algorithm Precision Loss on the Tropospheric Delays for Microwave Remote Sensing](https://doi.org/10.1109/tgrs.2025.3587944)<br><sub>Jun-Sheng Ding, Cancan Xu, Wu Chen et al. · IEEE Transactions on Geoscience and Remote Sensing</sub> |  |  |
 | 2024-11-09 | [HiHa: Introducing Hierarchical Harmonic Decomposition to Implicit Neural Compression for Atmospheric Data](https://doi.org/10.1016/j.cageo.2025.106078)<br><sub>Zhewen Xu, Baoxiang Pan, Hongliang Li et al. · Computers & Geosciences</sub> | China Meteorological Administration (CMA), Institute of Atmospheric Physics, Chinese Academy of Sciences |  |
 | 2024-10-10 | [Compressing high-resolution data through latent representation encoding for downscaling large-scale AI weather forecast model](https://arxiv.org/abs/2410.09109)<br><sub>Qian Liu, Bing Gong, Xiaoran Zhuang et al.</sub> |  |  |
 | 2024-10-09 | [Exploring the design space of deep-learning-based weather forecasting systems](https://arxiv.org/abs/2410.07472)<br><sub>Shoaib Ahmed Siddiqui, Jean Kossaifi, Boris Bonev et al.</sub> | NVIDIA, University of Cambridge (Aardvark) |  |
@@ -74,6 +77,8 @@ Frameworks, training and inference at scale, HPC, and compression of weather and
 | 2023-07-09 | [Hierarchical Autoencoder-based Lossy Compression for Large-scale High-resolution Scientific Data](https://arxiv.org/abs/2307.04216)<br><sub>Hieu Le, Jian Tao · Computing&AI Connect, ISSN: 3006-4163; 2024, Vol. 1, Article ID: 2024001</sub> |  |  |
 | 2023-05-01 | [Earth Virtualization Engines: A Technical Perspective](https://doi.org/10.1109/mcse.2023.3311148)<br><sub>Torsten Hoefler, Björn Stevens, Andreas Franz Prein et al. · Computing in Science & Engineering</sub> | CSCS - Swiss National Supercomputing Centre, ETH Zurich, MeteoSwiss, Massachusetts Institute of Technology (MIT), Max Planck Institute for Meteorology, NSF NCAR / UCAR, NVIDIA, University of Reading |  |
 | 2023-04-07 | [Perspectives on AI Architectures and Co-design for Earth System Predictability](https://arxiv.org/abs/2304.03748)<br><sub>Maruti K. Mudunuru, James A. Ang, Mahantesh Halappanavar et al.</sub> | Oak Ridge National Laboratory |  |
+| 2023-03-01 | [Performance Analysis and Benchmarking of a Temperature Downscaling Deep Learning Model](https://doi.org/10.1109/pdp59025.2023.00010)<br><sub>Karthick Panner Selvam, M. Brorsson · 2023 31st Euromicro International Conference on Parallel, Distributed and Network-Based Processing (PDP)</sub> |  |  |
+| 2023-01-01 | [Deep Learning–Based Parameter Transfer in Meteorological Data](https://doi.org/10.1175/aies-d-22-0024.1)<br><sub>Fatemeh Farokhmanesh, Kevin Höhlein, R. Westermann · Artificial Intelligence for the Earth Systems</sub> |  |  |
 | 2023-01-01 | [Optimizing Numerical Weather Prediction Model Performance Using Machine Learning Techniques](https://doi.org/10.1109/access.2023.3297200)<br><sub>S. Choi, Eun-Sung Jung · IEEE Access</sub> |  |  |
 | 2022-10-22 | [Compressing multidimensional weather and climate data into neural networks](https://arxiv.org/abs/2210.12538)<br><sub>Langwen Huang, Torsten Hoefler</sub> | ETH Zurich |  |
 | 2022-08-08 | ⭐ [FourCastNet: Accelerating Global High-Resolution Weather Forecasting using Adaptive Fourier Neural Operators](https://arxiv.org/abs/2208.05419)<br><sub>Thorsten Kurth, Shashank Subramanian, Peter Harrington et al. · Proceedings of the Platform for Advanced Scientific Computing Conference</sub> | Lawrence Berkeley National Laboratory / NERSC, NVIDIA |  |
@@ -98,6 +103,7 @@ Frameworks, training and inference at scale, HPC, and compression of weather and
 - [4D Parallelism Unlocks Exascale Bayesian Neural Networks for High-Fidelity Atmospheric Modeling](https://arxiv.org/abs/2609.12815) (2026)
 - [Development and tests of machine-learned cloud droplet number concentration in a next-generation bulk microphysics scheme for operational applications](https://doi.org/10.5194/egusphere-2026-4026) (2026)
 - [A Low-Cost IoT Architecture for Micro-Zone Climate Prediction and Meteorological Forecasting](https://doi.org/10.3390/electronics15143102) (2026)
+- [GeoXplain: On-the-Fly Visual Explanations for Weather Foundation Models](https://arxiv.org/abs/2607.05655) (2026)
 - [Applying corrective machine learning in the E3SM atmosphere model in C+ + (EAMxx)](https://doi.org/10.5194/gmd-19-4763-2026) (2026)
 - [Machine Learning and Deep Learning Approaches for Weather Forecasting in IoT-Based Systems: A Review](https://doi.org/10.64803/jocsaic.v3i1.141) (2026)
 - [Acceleration of horizontal numerical advection for atmospheric modeling through surrogate modeling with temporal coarse-graining](https://arxiv.org/abs/2605.10956) (2026)

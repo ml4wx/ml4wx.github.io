@@ -5,15 +5,17 @@ Language models and agents for weather and climate science: QA, data analysis, m
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/llms-agents/)
 
-82 papers (0 ⭐). Newest first.
+87 papers (0 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-10-19 | [Zephyrus-R1: Agentic Reinforcement Learning for Weather Reporting](https://arxiv.org/abs/2610.25625)<br><sub>Feng-Fei Yu, Marshall Fisher, Isadora White et al.</sub> |  |  |
 | 2026-10-10 | [EarthAlign: Learning Language-Aligned Representations of Earth System Data](https://arxiv.org/abs/2610.14624)<br><sub>Fadillah Adamsyah Maani, Numan Saeed, Jiaqi Ma et al.</sub> |  | [code](https://github.com/mbzuai-oryx/EarthAlign) |
 | 2026-10-07 | [SciExam for ENSO: Can AI Agents Build Climate Models?](https://arxiv.org/abs/2610.10513)<br><sub>Yinling Zhang, Langchen Liu, Dongbin Xiu et al.</sub> | Princeton University, Stanford University | [code](https://github.com/ylzhang2447/SciExam-ENSO-code) |
 | 2026-09-27 | [Who Warmed the Archives? LLMs Overestimate Historical Warmth](https://arxiv.org/abs/2609.37499)<br><sub>Claudiu Creanga, Liviu P. Dinu</sub> |  |  |
 | 2026-09-12 | [Solar Intelligence](https://arxiv.org/abs/2609.13648)<br><sub>Jyotsna Singh</sub> |  |  |
 | 2026-09-09 | [Agent-Based ML-LLM Fusion with Self-Optimizing Prompts for Plateau Weather Alerts](https://arxiv.org/abs/2609.10135)<br><sub>Shuai Yan, Yang Xu, Shan He</sub> |  |  |
+| 2026-08-30 | [OmniClimate-TC: Physics-Aware Visual Abstractions for Multimedia Reasoning over Tropical Cyclones](https://arxiv.org/abs/2608.29661)<br><sub>Luwei Xiao, X. Wang, Keane Ong et al.</sub> |  |  |
 | 2026-08-25 | [AFDBench: A Reasoning-First AI Scientist for NationalWeather Service Forecast Discussions](https://arxiv.org/abs/2608.24954)<br><sub>Manmeet Singh, Somnath Luitel, Prabhjot Singh et al.</sub> |  |  |
 | 2026-08-24 | [EarthVerse: Benchmarking Scientific Agents Across Dynamic Earth Systems and Natural Hazards](https://arxiv.org/abs/2608.23525)<br><sub>Zhiqing Cui, Xinxiang Yin, Yihong Tang et al.</sub> | Massachusetts Institute of Technology (MIT), Tsinghua University (NowcastNet) |  |
 | 2026-08-16 | [Weather forecasting using agentic ai](https://doi.org/10.71366/ijwos03082654990)<br><sub>Amandeep, Dharmander kumar, Jyoti et al. · International Journal of Web of Multidisciplinary Studies</sub> |  |  |
@@ -23,6 +25,7 @@ Language models and agents for weather and climate science: QA, data analysis, m
 | 2026-06-08 | [MMClima: A Framework for Multimodal Climate Science Data and Evaluation](https://arxiv.org/abs/2606.10194)<br><sub>Muhammad Umer Sheikh, Hassan Abid, Khawar Shehzad et al. · Proceedings of the 43rd International Conference on Machine Learning (ICML), PMLR 306:110682-110705, 2026</sub> |  |  |
 | 2026-05-08 | [WeatherSyn: An Instruction Tuning MLLM For Weather Forecasting Report Generation](https://arxiv.org/abs/2605.07522)<br><sub>Zinan Zheng, Yang Liu, Nuo Chen et al.</sub> |  |  |
 | 2026-04-27 | [K-MetBench: A Multi-Dimensional Benchmark for Fine-Grained Evaluation of Expert Reasoning, Locality, and Multimodality in Meteorology](https://arxiv.org/abs/2604.24645)<br><sub>Soyeon Kim, Cheongwoong Kang, Myeongjin Lee et al.</sub> |  |  |
+| 2026-04-24 | [The application of large language models in meteorology graduate research: current status, impact, and prospects](https://doi.org/10.1371/journal.pone.0347933)<br><sub>Si-Guang Zhu, Hong-Hui Li · PLOS One</sub> |  |  |
 | 2026-04-23 | [Agentic AI-Enabled Framework for Thermal Comfort and Building Energy Assessment in Tropical Urban Neighborhoods](https://arxiv.org/abs/2604.21787)<br><sub>Po-Yen Lai, Xinyu Yang, Derrick Low et al.</sub> |  | [code](https://github.com/PgUpDn/urban-cooling-agent) |
 | 2026-04-14 | [GCA Framework: A GCC Countries-Grounded Dataset and Agentic Pipeline for Climate Decision Support](https://arxiv.org/abs/2604.12306)<br><sub>Muhammad Umer Sheikh, Khawar Shehzad, Salman Khan et al. · Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (ACL), Volume 1: Long Papers, pp. 42494-42506, 2026</sub> |  |  |
 | 2026-04-07 | [SynopticBench: Evaluating Vision-Language Models on Generating Weather Forecast Discussions of the Future](https://doi.org/10.1017/eds.2026.10050)<br><sub>Timothy B. Higgins, Antonios Mamalakis, Chirag Agarwal · Environmental Data Science</sub> |  |  |
@@ -50,6 +53,7 @@ Language models and agents for weather and climate science: QA, data analysis, m
 | 2025-10-09 | [Climate Knowledge in Large Language Models](https://doi.org/10.1175/aies-d-26-0017.1)<br><sub>Ivan Kuznetsov, Jacopo Grassi, Dmitrii Pantiukhin et al. · Artificial Intelligence for the Earth Systems</sub> |  |  |
 | 2025-10-06 | [WeatherArchive-Bench: Benchmarking Retrieval-Augmented Reasoning for Historical Weather Archives](https://arxiv.org/abs/2510.05336)<br><sub>Yongan Yu, Xianda Du, Qingchen Hu et al.</sub> | ETH Zurich |  |
 | 2025-10-05 | [Zephyrus: An Agentic Framework for Weather Science](https://arxiv.org/abs/2510.04017)<br><sub>Sumanth Varambally, Marshall Fisher, Jas Thakker et al.</sub> |  | [code](https://github.com/Rose-STL-Lab/Zephyrus) |
+| 2025-10-02 | [AgentCaster: Reasoning-Guided Tornado Forecasting](https://arxiv.org/abs/2510.03349)<br><sub>Michael K. Chen</sub> |  |  |
 | 2025-09-29 | [AI Driven Discovery of Bio Ecological Mediation in Cascading Heatwave Risks](https://doi.org/10.1016/j.pce.2026.104560)<br><sub>Yiquan Wang, Tin-Yeh Huang, Qingyun Gao et al. · Physics and Chemistry of the Earth Parts A/B/C</sub> | Tsinghua University (NowcastNet) |  |
 | 2025-09-25 | [AutoClimDS: Climate Data Science Agentic AI -- A Knowledge Graph is All You Need](https://arxiv.org/abs/2509.21553)<br><sub>Ahmed Jaber, Wangshu Zhu, Ayon Roy et al.</sub> |  |  |
 | 2025-09-12 | [Querying Climate Knowledge: Semantic Retrieval for Scientific Discovery](https://arxiv.org/abs/2509.10087)<br><sub>Mustapha Adamu, Qi Zhang, Huitong Pan et al.</sub> |  |  |
@@ -66,6 +70,7 @@ Language models and agents for weather and climate science: QA, data analysis, m
 | 2025-04-27 | [ClimaEmpact: Domain-Aligned Small Language Models and Datasets for Extreme Weather Analytics](https://arxiv.org/abs/2504.19066)<br><sub>Deeksha Varshney, Keane Ong, Rui Mao et al.</sub> |  |  |
 | 2025-04-24 | [A RAG-Based Multi-Agent LLM System for Natural Hazard Resilience and Adaptation](https://arxiv.org/abs/2504.17200)<br><sub>Yangxinyu Xie, Bowen Jiang, Tanwi Mallick et al.</sub> | Argonne National Laboratory |  |
 | 2025-04-16 | [Towards LLM Agents for Earth Observation](https://arxiv.org/abs/2504.12110)<br><sub>Chia Hsiang Kao, Wenting Zhao, Cheryl Lam et al.</sub> | Columbia University (LEAP, Lamont-Doherty) |  |
+| 2025-04-01 | [Foundation Models as Assistive Tools in Hydrometeorology: Opportunities, Challenges, and Perspectives](https://doi.org/10.1029/2024wr039553)<br><sub>Lu-Jia Zhang, Yurong Song, Hanzhe Cui et al. · Water Resources Research</sub> |  |  |
 | 2025-03-27 | [Using large language models to produce literature reviews: Usages and systematic biases of microphysics parametrizations in 2699 publications](https://arxiv.org/abs/2503.21352)<br><sub>Tianhang Zhang, Shengnan Fu, David M. Schultz et al.</sub> |  |  |
 | 2025-03-21 | [MTBench: A Multimodal Time Series Benchmark for Temporal Reasoning and Question Answering](https://arxiv.org/abs/2503.16858)<br><sub>Jialin Chen, Aosong Feng, Ziyu Zhao et al.</sub> |  |  |
 | 2025-03-07 | [Evaluating Large Language Models in Code Generation: INFINITE Methodology for Defining the Inference Index](https://arxiv.org/abs/2503.05852)<br><sub>Nicholas Christakis, Dimitris Drikakis · Appl. Sci. 2025, 15, 3784</sub> |  |  |
@@ -94,6 +99,8 @@ Language models and agents for weather and climate science: QA, data analysis, m
 
 ## Also relevant
 
+- [Advanced meteorological modeling framework integrating quantum computing and machine learning for hurricane track prediction beyond traditional forecasting limitations](https://doi.org/10.3389/fenvs.2026.1939822) (2026)
+- [Spatiotemporal Conditional Diffusion with a Vision-Language Model: Spatial Quality Modeling for Adaptive Fusion of Radar Forecasts](https://doi.org/10.3390/atmos17101005) (2026)
 - [Evaluating LLMs for Translating Legacy Fortran Atmospheric Physics to GPU-Accelerated JAX](https://arxiv.org/abs/2610.12662) (2026)
 - [WeatherDiagFlow: Evidence-Grounded Radar Nowcasting with Diagnostic Flow Refinement](https://arxiv.org/abs/2609.29772) (2026)
 - [A Hybrid AI–Ontology Framework for Tropical Cyclone Forecasting, Risk Assessment, and Intelligent Disaster Decision Support](https://doi.org/10.21203/rs.3.rs-10728416/v1) (2026)
@@ -115,6 +122,7 @@ Language models and agents for weather and climate science: QA, data analysis, m
 - [Proof of Concept: Multi-Target Wildfire Risk Prediction and Large Language Model Synthesis](https://arxiv.org/abs/2601.11686) (2026)
 - [A unified multimodal understanding and generation model for cross-disciplinary scientific research](https://arxiv.org/abs/2601.01363) (2026)
 - [LangPrecip: Language-Aware Multimodal Precipitation Nowcasting](https://arxiv.org/abs/2512.22317) (2025)
+- [Comprehensive Survey of Big Data Analytics with Generative AI for Climate Change](https://doi.org/10.1109/bigdata66926.2025.11401987) (2025)
 - [Application of Artificial Intelligence in ENSO Prediction Research](https://doi.org/10.54254/2753-8818/2026.pj30146) (2025)
 - [Agentic AI Framework for Cloudburst Prediction and Coordinated Response](https://arxiv.org/abs/2511.22767) (2025)
 - [FireScope: Wildfire Risk Raster Prediction with a Chain-of-Thought Oracle](https://arxiv.org/abs/2511.17171) (2025)

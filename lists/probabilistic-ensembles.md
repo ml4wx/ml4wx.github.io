@@ -5,7 +5,7 @@ ML models that produce ensembles or full forecast distributions: generative mode
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/probabilistic-ensembles/)
 
-94 papers (14 ⭐). Newest first.
+106 papers (14 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -21,10 +21,16 @@ ML models that produce ensembles or full forecast distributions: generative mode
 | 2026-08-27 | [Diffusion Distillation for Efficient Weather Ensembles](https://arxiv.org/abs/2608.27728)<br><sub>Yiming Yang, Valentin Brekke, James Briant et al.</sub> |  |  |
 | 2026-08-24 | [Predicting forecast errors with diffusion model for uncertainty quantification in wind speed nowcasting](https://doi.org/10.5194/gmd-19-7835-2026)<br><sub>Yanwei Zhu, Aitor Atencia, Markus Dabernig et al. · Geoscientific model development</sub> | China Meteorological Administration (CMA), Nanjing University of Information Science & Technology (NUIST) |  |
 | 2026-08-23 | [Tracing the Unlabeled Storm: Cross-Variable Transfer in a Lagrangian Atmospheric JEPA Framework](https://arxiv.org/abs/2608.22358)<br><sub>K M Anirudh, S Sandeep, Hariprasad Kodamana</sub> |  |  |
+| 2026-08-01 | [GraphDiffWeather: A Graph-Augmented Diffusion Transformer for Global Weather Forecasting](https://doi.org/10.1109/icsist70215.2026.11705766)<br><sub>Koteswararao B, R. Krishnamoorthi · 2026 International Conference on Secure Information Systems and Technologies (ICSIST)</sub> |  |  |
 | 2026-07-21 | [On the sensitivity of machine-learned probabilistic weather forecast models to scale-aware scoring rules](https://arxiv.org/abs/2607.19161)<br><sub>Simon Lang, Martin Leutbecher, Sam Hatfield</sub> |  |  |
 | 2026-07-11 | [TSCoNet: A Two-Stage Copula CNN-LSTM for Uncertainty-Aware Spatio-Temporal Forecasting](https://arxiv.org/abs/2607.10410)<br><sub>Jongwook Kim, Jong-Min Kim</sub> |  |  |
+| 2026-07-07 | [Evaluation of AI-based seasonal weather ensembles as input for fluvial flood risk estimation: a case study over the Elbe basin](https://doi.org/10.5194/nhess-26-3129-2026)<br><sub>J. Ashcroft, Alison Poulston, Marius K. Koch et al. · Natural Hazards and Earth System Sciences</sub> |  |  |
+| 2026-07-06 | [Exploring Physical Mechanisms for Superior Tropical Cyclone Track Forecasting in AI‐Based Ensemble Weather Prediction Models](https://doi.org/10.1029/2025jd046208)<br><sub>Jun Liu, Tao Zhou, Jia-Rui Li et al. · Journal of Geophysical Research: Atmospheres</sub> |  |  |
 | 2026-07-04 | [Event-Timing Priors: Temporal Point Process Likelihoods Correct the Long-Horizon Extreme-Event Statistics of Generative Surrogates](https://doi.org/10.5281/zenodo.21194880)<br><sub>G W O Howe · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
+| 2026-07-01 | [Decision-Aware Training for Sample-Based Generative Models](https://arxiv.org/abs/2607.01171)<br><sub>Kornelius Raeth, Nicole Ludwig</sub> |  |  |
+| 2026-06-30 | [Km-scale solar irradiance ensemble forecasting with generative deep learning](https://doi.org/10.1038/s44387-026-00133-y)<br><sub>Zhen-Lu Liu, Bao-Xiang Pan, Jie Chao et al. · npj Artificial Intelligence</sub> |  |  |
 | 2026-06-29 | [Diffusion Fine-tuning with Rewarded Moment Matching Distillation](https://arxiv.org/abs/2606.30414)<br><sub>Alexis Jacq, Guillaume Couairon, Valentin De Bortoli et al.</sub> |  |  |
+| 2026-06-01 | [Weather Forecasting with Deep Kalman Filter](https://doi.org/10.1109/iccsdfai70505.2026.11647931)<br><sub>Ibrahim Kocak, Ibraheem Shayea, A. Omarova et al. · 2026 International Conference on Cybersecurity, Digital Forensics, and AI Applications (ICCSDFAI)</sub> |  |  |
 | 2026-05-31 | [A HYBRID DIFFUSION DRIVEN SPATIO TEMPORAL DEEP NEURAL FRAMEWORK FOR PROBABILISTIC HIGH RESOLUTION GLOBAL WEATHER FORECASTING](https://doi.org/10.5281/zenodo.20497469)<br><sub>RAJA KRISHNAMOORTHI KOTESWARARAO BADITHALA · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
 | 2026-05-21 | [Decomposing Ensemble Spread in Lorenz '96 With Learned Stochastic Parameterizations](https://arxiv.org/abs/2605.22242)<br><sub>Birgit Kühbacher, Daan Crommelin, Niki Kilbertus</sub> |  |  |
 | 2026-05-19 | [Accurate, Efficient, and Explainable Deep Learning Approaches for Environmental Science Problems](https://arxiv.org/abs/2605.19366)<br><sub>Jimeng Shi</sub> |  |  |
@@ -32,17 +38,21 @@ ML models that produce ensembles or full forecast distributions: generative mode
 | 2026-05-02 | [Cast3: Translating numerical weather prediction principles into data-driven forecasting](https://arxiv.org/abs/2605.01599)<br><sub>Congyi Nai, Baoxiang Pan, Yuan Liang et al.</sub> | Institute of Atmospheric Physics, Chinese Academy of Sciences |  |
 | 2026-04-10 | [U-Cast: A Surprisingly Simple and Efficient Frontier Probabilistic AI Weather Forecaster](https://arxiv.org/abs/2604.09041)<br><sub>Salva Rühling Cachay, Duncan Watson-Parris, Rose Yu</sub> |  | [code](https://github.com/Rose-STL-Lab/u-cast) |
 | 2026-04-06 | [(Sparse) Attention to the Details: Preserving Spectral Fidelity in ML-based Weather Forecasting Models](https://arxiv.org/abs/2604.16429)<br><sub>Maksim Zhdanov, Ana Lucic, Max Welling et al.</sub> |  | [code](https://github.com/maxxxzdn/mosaic) |
+| 2026-03-27 | [Improving Weather Forecast Reliability: Refining Deterministic Initial Predictions with Probabilistic Diffusion Models](https://doi.org/10.1109/icitiit68860.2026.11499639)<br><sub>M. Saravanan, Vidyadhar Upadhya · 2026 International Conference on Innovative Trends in Information Technology (ICITIIT)</sub> |  |  |
+| 2026-03-27 | [Physics‐informed ensemble forecasts in data‐driven models](https://doi.org/10.1002/qj.70183)<br><sub>Bo Qin, G. Dai, M. Mu et al. · Quarterly Journal of the Royal Meteorological Society</sub> |  |  |
 | 2026-03-25 | [Marchuk: Efficient Global Weather Forecasting from Mid-Range to Sub-Seasonal Scales via Flow Matching](https://arxiv.org/abs/2603.24428)<br><sub>Arsen Kuzhamuratov, Mikhail Zhirnov, Andrey Kuznetsov et al.</sub> |  |  |
 | 2026-03-05 | ⭐ [Hybrid ensemble forecasting combining physics-based and machine-learning predictions through spectral nudging](https://arxiv.org/abs/2603.05570)<br><sub>Inna Polichtchouk, Simon Lang, Sarah-Jane Lock et al.</sub> | ECMWF |  |
 | 2026-02-26 | [A Synergistic Approach: Dynamics-AI Ensemble in Tropical Cyclone Forecasting](https://arxiv.org/abs/2602.22533)<br><sub>Yonghui Li, Wansuo Duan, Hao Li et al.</sub> | China Meteorological Administration (CMA), Fudan University (FuXi), Institute of Atmospheric Physics, Chinese Academy of Sciences |  |
 | 2026-02-12 | [PuYun-LDM: A Latent Diffusion Model for High-Resolution Ensemble Weather Forecasts](https://arxiv.org/abs/2602.11807)<br><sub>Lianjun Wu, Shengchen Zhu, Yuxuan Liu et al.</sub> |  |  |
 | 2026-02-04 | [Large-ensemble generation based on mesoscale ensemble prediction system using machine learning](https://doi.org/10.1016/j.egyr.2025.109002)<br><sub>Shuntaro Nakayama, Hideaki Ohtake, Takahiro Takamatsu et al. · Energy Reports</sub> |  |  |
 | 2026-01-28 | [Predict-Project-Renoise: Sampling Diffusion Models under Hard Constraints](https://arxiv.org/abs/2601.21033)<br><sub>Omer Rochman-Sharabi, Gilles Louppe</sub> |  |  |
+| 2026-01-27 | [Generative High‐Resolution Ensemble Weather Forecast Supports Renewable Energy Planning and Operation](https://doi.org/10.1029/2025gl119044)<br><sub>Jing-Nan Wang, Jie Chao, Shang-Shang Yang et al. · Geophysical Research Letters</sub> |  |  |
 | 2026-01-26 | [Demystifying Data-Driven Probabilistic Medium-Range Weather Forecasting](https://arxiv.org/abs/2601.18111)<br><sub>Jean Kossaifi, Nikola Kovachki, Morteza Mardani et al.</sub> |  |  |
 | 2026-01-07 | [Probabilistic Transformers for Joint Modeling of Global Weather Dynamics and Decision-Centric Variables](https://arxiv.org/abs/2601.03753)<br><sub>Paulius Rauba, Viktor Cikojevic, Fran Bartolic et al.</sub> |  |  |
 | 2025-12-30 | [Technical note: Expanding ensemble forecasts with generative AI: application to volcanic clouds](https://doi.org/10.5194/egusphere-2025-6097)<br><sub>Leonardo A. Mingari, Arnau Folch, Heribert Pascual et al.</sub> |  |  |
 | 2025-12-27 | [AI-Enabled conditional nonlinear optimal perturbation enhances ensemble prediction of extreme El Niño events](https://doi.org/10.1038/s41612-025-01303-6)<br><sub>Lu Zhou, Rong‐Hua Zhang, Lingjiang Tao · npj Climate and Atmospheric Science</sub> | Nanjing University of Information Science & Technology (NUIST) |  |
 | 2025-12-21 | [Controllable Probabilistic Forecasting with Stochastic Decomposition Layers](https://arxiv.org/abs/2512.18815)<br><sub>John S. Schreck, William E. Chapman, Charlie Becker et al.</sub> |  |  |
+| 2025-12-01 | [Ensemble Experiments in an AI-NWP Coupled Framework: A Typhoon Case](https://doi.org/10.1007/s13351-025-5038-9)<br><sub>Yangjinxi Ge, Donghai Wang, Zhengyi Yang et al. · Journal of Meteorological Research</sub> |  |  |
 | 2025-11-21 | [On the Predictive Skill of Artificial Intelligence-based Weather Models for Extreme Events using Uncertainty Quantification](https://doi.org/10.1175/aies-d-25-0113.1)<br><sub>Rodrigo Almeida, Noelia Otero, Miguel-Ángel Fernández-Torres et al. · Artificial Intelligence for the Earth Systems</sub> |  |  |
 | 2025-11-18 | [Resolving sources of uncertainty in AI weather forecasting](https://arxiv.org/abs/2511.14218)<br><sub>Wenbo Hu, Xinlei Xiong, Shuxun Zhou et al.</sub> |  |  |
 | 2025-10-30 | [Efficient Generative AI Boosts Probabilistic Forecasting of Sudden Stratospheric Warmings](https://arxiv.org/abs/2510.26376)<br><sub>Ningning Tao, Fei Xie, Baoxiang Pan et al.</sub> |  |  |
@@ -53,6 +63,7 @@ ML models that produce ensembles or full forecast distributions: generative mode
 | 2025-09-30 | ⭐ [Swift: An Autoregressive Consistency Model for Efficient Weather Forecasting](https://doi.org/10.1088/3049-4753/ae802a)<br><sub>Jason Stock, Troy Arcomano, Rao Kotamarthi · Machine Learning Earth</sub> | Allen Institute for AI (Ai2, ACE), Argonne National Laboratory |  |
 | 2025-09-14 | [Data-Efficient Ensemble Weather Forecasting with Diffusion Models](https://arxiv.org/abs/2509.11047)<br><sub>Kevin Valencia, Ziyang Liu, Justin Cui</sub> |  |  |
 | 2025-08-08 | [Learning Residual Distributions with Diffusion Models for Probabilistic Wind Power Forecasting](https://doi.org/10.3390/en18164226)<br><sub>Fuhao Chen, Linyue Gao · Energies</sub> |  |  |
+| 2025-08-01 | [Fast and Flexible Probabilistic Forecasting of Dynamical Systems using Flow Matching and Physical Perturbation](https://arxiv.org/abs/2508.01101)<br><sub>Siddharth Rout, Eldad Haber, St'ephane Gaudreault</sub> |  |  |
 | 2025-07-16 | [FourCastNet 3: A geometric approach to probabilistic machine-learning weather forecasting at scale](https://arxiv.org/abs/2507.12144)<br><sub>Boris Bonev, Thorsten Kurth, Ankur Mahesh et al.</sub> |  |  |
 | 2025-06-24 | ⭐ [Elucidated Rolling Diffusion Models for Probabilistic Forecasting of Complex Dynamics](https://arxiv.org/abs/2506.20024)<br><sub>Salva Rühling Cachay, Miika Aittala, Karsten Kreis et al. · Advances in Neural Information Processing Systems (NeurIPS), 2025</sub> | NVIDIA |  |
 | 2025-06-13 | [Arnoldi Singular Vector perturbations for machine learning weather prediction](https://arxiv.org/abs/2506.22450)<br><sub>Jens Winkler, Michael Denhard</sub> |  |  |
@@ -96,6 +107,7 @@ ML models that produce ensembles or full forecast distributions: generative mode
 | 2022-03-23 | [A Deep Learning Approach to Probabilistic Forecasting of Weather](https://arxiv.org/abs/2203.12529)<br><sub>Nick Rittler, Carlo Graziani, Jiali Wang et al.</sub> |  |  |
 | 2021-12-15 | [Probabilistic Forecasting with Generative Networks via Scoring Rule Minimization](https://arxiv.org/abs/2112.08217)<br><sub>Lorenzo Pacchiardi, Rilwan Adewoyin, Peter Dueben et al. · Journal of Machine Learning Research, 25(45), 2024</sub> |  |  |
 | 2021-03-26 | [Combining distribution-based neural networks to predict weather forecast probabilities](https://doi.org/10.1002/qj.4180)<br><sub>Mariana Clare, Omar Jamil, Cyril Morcrette · Quarterly Journal of the Royal Meteorological Society</sub> | Met Office | [code](https://github.com/mc4117/ResNet_Weather) |
+| 2021-03-09 | [Deep Learning for Ensemble Forecasting](https://doi.org/10.2172/1769692)<br><sub>A. Geiss, J. Hardin, S. Silva et al.</sub> |  |  |
 | 2021-02-09 | [Exploring Bayesian deep learning for weather forecasting with the Lorenz 84 system](https://doi.org/10.1002/essoar.10506139.1)<br><sub>Yang Liu, Jisk Jakob Attema, Wilco Hazeleger</sub> |  |  |
 | 2020-06-13 | [A generative adversarial network approach to (ensemble) weather prediction](https://doi.org/10.1016/j.neunet.2021.02.003)<br><sub>Alexander Bihlo · Neural Networks</sub> |  |  |
 | 2020-02-13 | [Ensemble methods for neural network-based weather forecasts](https://arxiv.org/abs/2002.05398)<br><sub>Sebastian Scher, Gabriele Messori · Journal of Advances in Modeling Earth Systems</sub> |  |  |
@@ -106,7 +118,10 @@ ML models that produce ensembles or full forecast distributions: generative mode
 
 ## Also relevant
 
+- [Beyond the record: evaluating probabilistic AI weather forecasts deep in the tail](https://arxiv.org/abs/2610.25545) (2026)
+- [Spatiotemporal coherent displacements for ensemble-based neural data assimilation](https://doi.org/10.1017/eds.2026.10058) (2026)
 - [Can AI Forecast the Extremes? Evaluating Probabilistic Weather Models on Tropical Cyclones](https://arxiv.org/abs/2610.22077) (2026)
+- [Spatiotemporal Conditional Diffusion with a Vision-Language Model: Spatial Quality Modeling for Adaptive Fusion of Radar Forecasts](https://doi.org/10.3390/atmos17101005) (2026)
 - [Probabilistic Forecasting of Wildfire Size Using Conditional Flow Matching](https://arxiv.org/abs/2610.15983) (2026)
 - [Diffusion Precipitation Generation with Medium-range Weather Forecasting](https://arxiv.org/abs/2610.12976) (2026)
 - [Just Weather Scoring: Efficient End-to-end Nowcasting with Distributional Diffusion](https://arxiv.org/abs/2610.12189) (2026)
@@ -115,10 +130,12 @@ ML models that produce ensembles or full forecast distributions: generative mode
 - [EC-EarthFlow: Probabilistic emulation of daily transient global climate model simulations with flow matching](https://arxiv.org/abs/2610.09715) (2026)
 - [Scale-Recursive Rectified Flows for Few-Step Precipitation Ensembles](https://arxiv.org/abs/2610.02611) (2026)
 - [An efficient conditional diffusion model for meteorological data super-resolution based on stochastic differential equations over Eastern China](https://doi.org/10.1016/j.jclepro.2026.149688) (2026)
+- [Ensemble fire probability prediction by integrating meteorological AI models with lightweight prediction networks](https://doi.org/10.1016/j.ecolind.2026.115478) (2026)
 - [NowcastDiT: Diffusion Transformers are Effective Precipitation Nowcasters](https://arxiv.org/abs/2609.37038) (2026)
 - [MW-Nowcast: Six-hour ensemble nowcasting of extreme precipitation](https://arxiv.org/abs/2609.34836) (2026)
 - [Physics-Guided Flow-Map Matching for Precipitation Nowcasting](https://arxiv.org/abs/2609.37487) (2026)
 - [Beyond Track and Intensity: Scale-Dependent Diagnostics of a Tropical Cyclone Forecast by a Probabilistic AI Foundation Model, AERIS](https://doi.org/10.22541/essoar.15009485/v1) (2026)
+- [Spread/error relationship and spatial error representation in precipitation nowcasting: comparison of STEPS and generative AI](https://doi.org/10.5194/wcd-7-1837-2026) (2026)
 - [Development of a deep-learning model for lightning nowcasting and its application to an Ensemble Prediction System](https://doi.org/10.1127/metz/20262) (2026)
 - [Efficient Analog-Initialized Latent Transport for Spatially Coherent Probabilistic Downscaling from Global to Kilometer Scales](https://arxiv.org/abs/2610.03736) (2026)
 - [IRENE: A Convolutional GRU Ensemble Model for Radar Precipitation Nowcasting over Italy](https://arxiv.org/abs/2609.17175) (2026)
@@ -135,10 +152,12 @@ ML models that produce ensembles or full forecast distributions: generative mode
 - [Comprehensive inter-comparison of generative AI models for super-resolution precipitation downscaling across hydroclimatic regimes](https://doi.org/10.5194/gmd-19-7545-2026) (2026)
 - [Machine learning-based stochastic modeling for typhoon full-track simulation in the Northwest Pacific: a multi-source coupled analysis of ocean–atmosphere interactions](https://doi.org/10.1007/s00704-026-06474-7) (2026)
 - [FreCast: Refining Radar Echo Intensity via Phase-Preserving Amplitude Residual Diffusion for Precipitation Nowcasting](https://arxiv.org/abs/2608.08436) (2026)
+- [RainCast: A High-Resolution 72-Hour Short-Term Precipitation Forecasting Model](https://doi.org/10.1145/3770855.3818880) (2026)
 - [Tropical Cyclone Forecasting via Latent Rectified Flow using Satellite Imagery and Atmospheric Fields](https://arxiv.org/abs/2608.08354) (2026)
 - [Operational tropical cyclone forecasting with AI](https://doi.org/10.1038/s41586-026-10953-2) (2026)
 - [Timestep-Conditioned Transformers for Global Weather Forecasting](https://arxiv.org/abs/2608.06241) (2026)
 - [Local-Scale Wind Forecasting for Tropical Cyclone Early Warnings](https://doi.org/10.1175/bams-d-25-0182.1) (2026)
+- [ClimDiT: A Generative Latent Diffusion Transformer Framework for Multivariate Climate Downscaling](https://doi.org/10.1007/s41748-026-01326-w) (2026)
 - [Probabilistic Deep Learning for Drought Forecasting: Role of Internal Climate Variability](https://arxiv.org/abs/2608.01864) (2026)
 - [Forecasting Coastal ENSO Warming in the Niño 1+2 Region Using ConvLSTM: Toward Improved Early Warning in Peru and Ecuador](https://doi.org/10.1029/2025wr041877) (2026)
 - [A Machine-Learning-Based Global Thermospheric Density Forecasting Model](https://arxiv.org/abs/2608.00352) (2026)
@@ -152,6 +171,7 @@ ML models that produce ensembles or full forecast distributions: generative mode
 - [Less Tokens, Better Forecasts: Sparse Residual Routing for Efficient Weather Prediction](https://arxiv.org/abs/2607.02829) (2026)
 - [Probabilistic refinement of machine learning based meteorological forecasts](https://doi.org/10.1016/j.engappai.2026.115543) (2026)
 - [Conditional Tropical Cyclogenesis Rates via Rare-Event Sampling in a Neural Weather Emulator](https://arxiv.org/abs/2606.30920) (2026)
+- [Statistical Equivalence of AI Emulators and Earth System Models: A Large Ensemble Study with Ultra-Low-Resolution E3SM](https://doi.org/10.1145/3815572.3815761) (2026)
 - [Otter Weather: Skillful and Computationally Efficient Medium-Range Weather Forecasting](https://arxiv.org/abs/2606.26421) (2026)
 - [A Three-Stage Deep Learning Framework for Short-Term Tropical Cyclone Track Prediction](https://doi.org/10.3390/jmse14131159) (2026)
 - [Decision-oriented wind power scenario generation considering meteorological uncertainty](https://doi.org/10.1016/j.energy.2026.141677) (2026)
@@ -160,13 +180,16 @@ ML models that produce ensembles or full forecast distributions: generative mode
 - [Regional Climate Model Emulation with Diffusion Approaches: What is the Added Value of Generative Machine Learning?](https://arxiv.org/abs/2606.14570) (2026)
 - [HiResCastNet: A 3D Deep Learning Model for Probabilistic Regional High-Resolution Subseasonal Forecasting through Downscaling](https://doi.org/10.22541/essoar.15004477/v1) (2026)
 - [Probabilistic Forecast of Tropical Cyclone Precipitation Based on Diffusion Model](https://doi.org/10.3390/rs18111786) (2026)
+- [Probabilistic downscaling of multi-hazard climate extremes for engineering applications using conditional diffusion models](https://doi.org/10.1016/j.istruc.2026.111783) (2026)
 - [AdaWeather: Adaptively Mixing Probabilistic Weather Forecasts with Logarithmic Regret](https://arxiv.org/abs/2606.02663) (2026)
 - [Flow Matching for Convective-Scale Precipitation Downscaling](https://arxiv.org/abs/2606.00281) (2026)
 - [Probabilistic Precipitation Nowcasting with Rectified Flow Transformers](https://arxiv.org/abs/2605.31204) (2026)
 - [Exascale Hybrid Numerical-AI Ensembles for Operational Flood-Season Forecasting in East Asia: 15-km Decadal Hindcasts and 1-km High-Resolution Capability](https://arxiv.org/abs/2605.24896) (2026)
+- [Comparing Analog Ensemble and Corrective Diffusion for Western US precipitation downscaling from GraphCast](https://doi.org/10.1080/20964471.2026.2665935) (2026)
 - [Uncertainty-aware precipitation nowcasting with diffusion model simulating precipitation evolution processes](https://doi.org/10.1016/j.engappai.2026.115140) (2026)
 - [Improving Ensemble CAPE Forecasts with a Diffusion Model Incorporating Aerosol Information](https://arxiv.org/abs/2605.24009) (2026)
 - [SwAIther-Precip: Lead-Time-Aware Bias Correction Enables Kilometer-Scale Downscaling of Global AI Precipitation Forecasts over Switzerland](https://arxiv.org/abs/2605.16163) (2026)
+- [PyroAdapt: Adapting Wildfire Prediction under Spatial Heterogeneity and Temporal Shift](https://arxiv.org/abs/2605.12435) (2026)
 - [PixelFlowCast: Latent-Free Precipitation Nowcasting via Pixel Mean Flows](https://arxiv.org/abs/2605.10046) (2026)
 - [Wind Speed Scenario Generation Under Typhoon Conditions via Prediction-Anchored Diffusion](https://doi.org/10.1109/tste.2026.3691393) (2026)
 - [Representing the Surface Ocean in ECMWF's data-driven forecasting system AIFS](https://arxiv.org/abs/2604.25559) (2026)
@@ -186,6 +209,7 @@ ML models that produce ensembles or full forecast distributions: generative mode
 - [A spectral test of the butterfly effect and physical consistency in the diffusion-based GenCast’s ensembles](https://doi.org/10.1038/s41612-026-01380-1) (2026)
 - [Quantifying the Value of Convection-Allowing Global-Nested Ensembles for Extended-Range Severe Weather Forecasting](https://doi.org/10.1175/waf-d-25-0093.1) (2026)
 - [Seasonal forecasting using the GenCast probabilistic machine learning model](https://doi.org/10.1007/s00382-026-08077-4) (2026)
+- [A method with accelerated sampling and spatiotemporal embedding for nowcasting](https://doi.org/10.1117/12.3094287) (2026)
 - [Climate Downscaling with Stochastic Interpolants (CDSI)](https://arxiv.org/abs/2603.03838) (2026)
 - [Ensemble-size-dependence of deep-learning post-processing methods that minimize an (un)fair score: motivating examples and a proof-of-concept solution](https://arxiv.org/abs/2602.15830) (2026)
 - [Probabilistic Wind Power Forecasting with Tree-Based Machine Learning and Weather Ensembles](https://doi.org/10.1016/j.epsr.2026.113847) (2026)
@@ -201,11 +225,13 @@ ML models that produce ensembles or full forecast distributions: generative mode
 - [STIPP: Space-time in situ postprocessing over the French Alps using proper scoring rules](https://arxiv.org/abs/2601.02882) (2026)
 - [Probabilistic Risk Forecasting of Monthly Extreme Precipitation: A Physics-Informed Machine Learning Approach for Disaster Early Warning](https://doi.org/10.2139/ssrn.6588997) (2026)
 - [From Numerical Weather Prediction to AI Forecasting Systems: Data Assimilation, Ensemble Uncertainty, and Deep Learning for Modern Weather Prediction](https://doi.org/10.13140/rg.2.2.14987.96804) (2026)
+- [Decomposed Nowcasting of Tropical Cyclone Satellite Cloud Imagery via Deterministic–Probabilistic Ensemble Learning](https://doi.org/10.1109/tgrs.2026.3657363) (2026)
 - [RadarDiff: A Conditional Diffusion Model With Time-Aware Context and Mixed Attention for Radar Echo Extrapolation](https://doi.org/10.1109/jstars.2026.3722210) (2026)
 - [GenLUPIN: Physics-Informed Score-Based Diffusion in a Lagrangian Framework for Spectrally Consistent Precipitation Nowcasting](https://doi.org/10.1109/access.2026.3730270) (2026)
 - [Super-resolving coarse-resolution weather forecasts with flow matching](https://doi.org/10.1017/eds.2026.10046) (2026)
 - [Latent-Constrained Conditional VAEs for Augmenting Large-Scale Climate Ensembles](https://arxiv.org/abs/2601.00915) (2026)
 - [Improved rainfall forecasts in daily use over East Africa](https://arxiv.org/abs/2512.24525) (2025)
+- [An Improved Typhoon Track Prediction Method Based on Conditional Diffusion Model](https://doi.org/10.1109/eiecc67963.2025.11409481) (2025)
 - [STLDM: Spatio-Temporal Latent Diffusion Model for Precipitation Nowcasting](https://arxiv.org/abs/2512.21118) (2025)
 - [Huge Ensembles Heatwave Forecasting over North Africa: Case Study of 3 Low-Likelihood, High-Impact Events.](https://doi.org/10.22541/au.176599423.36287665/v1) (2025)
 - [Bridging Artificial Intelligence and Data Assimilation: The Data-driven Ensemble Forecasting System ClimaX-LETKF](https://doi.org/10.1002/asl2.70062) (2025)
@@ -229,6 +255,7 @@ ML models that produce ensembles or full forecast distributions: generative mode
 - [Revealing the Potential of Learnable Perturbation Ensemble Forecast Model for Tropical Cyclone Prediction](https://arxiv.org/abs/2510.23794) (2025)
 - [Quantile Regression, Variational Autoencoders, and Diffusion Models for Uncertainty Quantification: A Spatial Analysis of Sub-seasonal Wind Speed Prediction](https://arxiv.org/abs/2510.16958) (2025)
 - [Latent Diffusion and Spatiotemporal Transformers Generate Large Ensemble Climate Simulations](https://doi.org/10.1109/tai.2025.3621121) (2025)
+- [AtmoNeuro: A Hybrid 3D-Spatio-Temporal Neural Framework for High-Resolution Probabilistic Global Weather Forecasting](https://doi.org/10.1109/icscn67106.2025.11308166) (2025)
 - [CRPS-LAM: Probabilistic Regional Weather Forecasting with Continuous Ranked Probability Score](https://arxiv.org/abs/2510.09484) (2025)
 - [PROBABILISTIC FORECASTING OF CLIMATE EXTREMES USING EXTREME VALUE THEORY AND DEEP GENERATIVE MODELS](https://doi.org/10.29121/ijoest.v9.i5.2025.710) (2025)
 - [EnScale: Temporally-consistent multivariate generative downscaling via proper scoring rules](https://doi.org/10.1029/2025ms005593) (2025)
@@ -251,6 +278,7 @@ ML models that produce ensembles or full forecast distributions: generative mode
 - [Short-term ensemble prediction of convective cells using data-driven methods](https://doi.org/10.25560/127500) (2025)
 - [HRRRCast: a data-driven emulator for regional weather forecasting at convection allowing scales](https://arxiv.org/abs/2507.05658) (2025)
 - [Multimodal Atmospheric Super-Resolution With Deep Generative Models](https://doi.org/10.1088/3049-4753/ae286e) (2025)
+- [Enforcing tail calibration when training probabilistic forecast models](https://arxiv.org/abs/2506.13687) (2025)
 - [Ensemble Meritocracy on Madden–Julian Oscillation Predictions: Elites Chosen by AI Beat the Mean](https://doi.org/10.1175/aies-d-23-0109.1) (2025)
 - [Using Diffusion Models to do Data Assimilation](https://doi.org/10.1175/mwr-d-25-0125.1) (2025)
 - [Generating ensembles for convective-scale precipitation downscaling using generative machine learning](https://doi.org/10.22541/essoar.174802957.72376154/v1) (2025)
@@ -304,6 +332,7 @@ ML models that produce ensembles or full forecast distributions: generative mode
 - [Optimizing multi-step wind power forecasting: Integrating advanced deep neural networks with stacking-based probabilistic learning](https://doi.org/10.1016/j.apenergy.2024.123487) (2024)
 - [DEUCE v1.0: a neural network for probabilistic precipitation nowcasting with aleatoric and epistemic uncertainties](https://doi.org/10.5194/gmd-17-3839-2024) (2024)
 - [Deep Learning of a 200-Member Ensemble with a Limited Historical Training to Improve the Prediction of Extreme Precipitation Events](https://doi.org/10.1175/mwr-d-23-0277.1) (2024)
+- [Self-clustered GAN for precipitation nowcasting](https://doi.org/10.1038/s41598-024-60253-w) (2024)
 - [Potential Paradigm Shift in Hazard Risk Management: AI-Based Weather Forecast for Tropical Cyclone Hazards](https://arxiv.org/abs/2404.18440) (2024)
 - [ClimODE: Climate and Weather Forecasting with Physics-informed Neural ODEs](https://arxiv.org/abs/2404.10024) (2024)
 - [Improved subseasonal prediction of South Asian monsoon rainfall using data-driven forecasts of oscillatory modes](https://doi.org/10.1073/pnas.2312573121) (2024)
@@ -322,12 +351,14 @@ ML models that produce ensembles or full forecast distributions: generative mode
 - [A Machine Learning Approach to Model Over-Ocean Tropical Cyclone Precipitation](https://doi.org/10.1175/jhm-d-23-0065.1) (2023)
 - [Generating High-Resolution Regional Precipitation Using Conditional Diffusion Model](https://arxiv.org/abs/2312.07112) (2023)
 - [Precipitation Downscaling with Spatiotemporal Video Diffusion](https://arxiv.org/abs/2312.06071) (2023)
+- [Postprocessing Ensemble Forecasts with Generative Adversarial Networks for Daily Precipitation](https://doi.org/10.1109/ickg59574.2023.00024) (2023)
 - [Forecasting global climate drivers using Gaussian processes and convolutional autoencoders](https://doi.org/10.1016/j.engappai.2023.107536) (2023)
 - [Post-processing using deep learning to create operational, high-resolution, and probabilistic weather forecasts](https://doi.org/10.22541/essoar.169841550.08343114/v1) (2023)
 - [Generative ensemble deep learning severe weather prediction from a deterministic convection-allowing model](https://arxiv.org/abs/2310.06045) (2023)
 - [Score-based Data Assimilation for a Two-Layer Quasi-Geostrophic Model](https://arxiv.org/abs/2310.01853) (2023)
 - [Further analysis of cGAN: A system for Generative Deep Learning Post-processing of Precipitation](http://arxiv.org/abs/2309.15689) (2023)
 - [Multi-fidelity climate model parameterization for better generalization and extrapolation](https://arxiv.org/abs/2309.10231) (2023)
+- [Multivariate emulation of kilometer-scale numerical weather predictions with generative adversarial networks: a proof-of-concept](https://doi.org/10.1175/aies-d-23-0006.1) (2023)
 - [AtmoRep: A stochastic model of atmosphere dynamics using large scale representation learning](https://arxiv.org/abs/2308.13280) (2023)
 - [Precipitation nowcasting with generative diffusion models](https://doi.org/10.1007/s10489-024-06048-y) (2023)
 - [Neural Fields for Interactive Visualization of Statistical Dependencies in 3D Simulation Ensembles](https://arxiv.org/abs/2307.02203) (2023)
