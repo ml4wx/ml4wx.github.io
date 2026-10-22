@@ -1,0 +1,58 @@
+id: doi-10.30574-gjeta.2025.24.3.0261
+title: Development of a machine learning model for precipitation forecasting in Kenya
+authors:
+- Damaris Muthoki Mulinge
+- John Mwaniki Kihoro
+- Shadrack Stephen Madila
+- Shem Mbandu Angolo
+date: '2025-09-06'
+year: 2025
+venue: Global Journal of Engineering and Technology Advances
+venue_type: journal
+ids:
+  doi: 10.30574/gjeta.2025.24.3.0261
+  openalex: W4414222256
+links:
+  paper: https://doi.org/10.30574/gjeta.2025.24.3.0261
+  pdf: https://gjeta.com/sites/default/files/GJETA-2025-0261.pdf
+topic: local-forecasting
+type: application
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: XGBoost classifier for next-day rain in Kenya reaches 76.8% accuracy and 0.75 ROC-AUC on 20 years
+  of daily station-style data.
+abstract: 'Accurate precipitation forecasting is important for mitigating the impacts of climate variability
+  in Kenya, where erratic rainfall events considerably affect agriculture, water control and disaster
+  preparedness. Traditional methods such as ARIMA (Autoregressive Integrated Moving Average) and NWP (Numerical
+  Weather Prediction) have shown to struggle with complex weather patterns due to linearity assumptions,
+  high computational demands and limited spatial resolution. This research develops and evaluates an XGBoost-based
+  machine learning model to enhance precipitation predictions both long-term and short-term. Utilizing
+  a a 20-year weather dataset (2004 - 2024) with 7300 daily data records sourced from online Visual Crossing
+  Weather Data, key features include temperature, humidity, wind speed, lagged precipitation (1-7), rolling
+  means and seasonal encoding to capture bimodal rainfall patterns of the months of march-May, and October-December.
+  Data processing involved min-max normalization of 0-1 range, feature selection, sin/cosine transformations
+  for seasonal patterns and temperature-humidity interactions for connective modelling processes. The
+  dataset used was split with 80% for training and 20% for testing and a temporal split ≤ 2020 for training
+  and > 2020 for testing maintaining the chronological data order. The initial attempts exhibited poor
+  performance with low R2 = 0.066 and a high RMSE=1.06 hence leading to XGBoost binary classification
+  shift to predict the likelihood of rain/no-rain tomorrow. Bayesian optimization and GridSearchCV hyperparameter
+  tuning was applied with default 0.5 threshold adjustment for improved rain class sensitivity using classification
+  metrics and resulted 76.76% accuracy, 70.14% precision, 33.36% recall, 45.12% F1-Score and ROC-AUC 0.75.
+  Post-tuning accuracy by reducing the threshold to 0.3 to capture missed rainfall events: 73% accuracy,
+  no-rain precision and recall 81%, 53% rain precision, 54% recall, F1-Score 54%. Temperature-humidity
+  interaction as the top predictor in feature importance. The results contribute to improved precipitation
+  prediction accuracy hence supporting decision making in agriculture, water resource management and early
+  disaster preparedness in Kenya’s climate vulnerable regions.'
+significance: 2
+cited_by: 1
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

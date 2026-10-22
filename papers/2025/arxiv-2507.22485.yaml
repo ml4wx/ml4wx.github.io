@@ -1,0 +1,55 @@
+id: arxiv-2507.22485
+title: Physics-constrained generative machine learning-based high-resolution downscaling of Greenland's
+  surface mass balance and surface temperature
+authors:
+- Nils Bochow
+- Philipp Hess
+- Alexander Robinson
+date: '2025-07-30'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2507.22485'
+  doi: 10.5194/tc-20-1841-2026
+links:
+  paper: https://arxiv.org/abs/2507.22485
+  pdf: https://arxiv.org/pdf/2507.22485
+topic: downscaling
+topics:
+- climate-emulation
+type: model
+method:
+- diffusion
+- physics-constrained
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+- other
+status: research
+summary: Consistency-model downscaling with hard conservation constraints lifts Greenland SMB and temperature
+  from 160 km to 5 km, and applies bias-corrected NorESM2 fields.
+abstract: Accurate, high-resolution projections of the Greenland ice sheet's surface mass balance (SMB)
+  and surface temperature are essential for understanding future sea-level rise, yet current approaches
+  are either computationally demanding or limited to coarse spatial scales. Here, we introduce a novel
+  physics-constrained generative modeling framework based on a consistency model (CM) to downscale low-resolution
+  SMB and surface temperature fields by a factor of up to 32 (from 160 km to 5 km grid spacing) in a few
+  sampling steps. The CM is trained on monthly outputs of the regional climate model MARv3.12 and conditioned
+  on ice-sheet topography and insolation. By enforcing a hard conservation constraint during inference,
+  we ensure approximate preservation of SMB and temperature sums on the coarse spatial scale as well as
+  robust generalization to extreme climate states without retraining. On the test set, our constrained
+  CM achieves a continued ranked probability score of 6.31 mmWE for the SMB and 0.1 K for the surface
+  temperature, outperforming interpolation-based downscaling. Together with spatial power-spectral analysis,
+  we demonstrate that the CM faithfully reproduces variability across spatial scales. We further apply
+  bias-corrected outputs of the NorESM2 Earth System Model as inputs to our CM, to demonstrate the potential
+  of our model to directly downscale ESM fields. Our approach delivers realistic, high-resolution climate
+  forcing for ice-sheet simulations with fast inference and can be readily integrated into Earth-system
+  and ice-sheet model workflows to improve projections of the future contribution to sea-level rise from
+  Greenland and potentially other ice sheets and glaciers too.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

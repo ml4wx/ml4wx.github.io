@@ -1,0 +1,59 @@
+id: doi-10.1007-s00704-025-05703-9
+title: 'Uncertainty in machine learning feature importance for climate science: a comparative analysis
+  of SHAP, PDP, and gain-based methods'
+authors:
+- Chibuike Chiedozie Ibebuchi
+date: '2025-08-26'
+year: 2025
+venue: Theoretical and Applied Climatology
+venue_type: journal
+ids:
+  doi: 10.1007/s00704-025-05703-9
+  openalex: W4413621567
+links:
+  paper: https://doi.org/10.1007/s00704-025-05703-9
+  pdf: https://link.springer.com/content/pdf/10.1007/s00704-025-05703-9.pdf
+topic: climate-analysis-attribution
+topics:
+- xai-uq-physics
+type: evaluation
+method:
+- classical-ml
+- other
+timescale:
+- climate
+spatial:
+- regional
+data:
+- stations
+status: research
+summary: Compares SHAP, PDP and gain-based feature importance on Ohio winter precipitation, finding global
+  warming outranks IPO at 60% or more of stations.
+abstract: Abstract Climate signals, driven by complex interactions and nonlinear relationships, shape
+  weather patterns and long-term trends, complicating the identification of dominant drivers due to collinearity.
+  This study investigates the consistency and uncertainty of machine learning (ML) techniques for feature
+  importance in climate science, comparing SHapley Additive exPlanations (SHAP), Partial Dependence Plots
+  (PDPs), and gain-based feature importance from Extreme Gradient Boosting (XGBoost). SHAP’s integration
+  with Feed Forward Neural Networks (FFNN) and XGBoost is evaluated to assess model-specific uncertainties.
+  Using winter precipitation data from Ohio, USA, as a case study, the relative contributions of global
+  warming (GW) and the Interdecadal Pacific Oscillation (IPO) to precipitation changes are quantified.
+  Results show GW consistently ranks higher than IPO in at least 60% of stations across all methods, with
+  SHAP and PDPs agreeing in 89% of stations. Global SHAP importance from FFNN and XGBoost aligns in 82%
+  of stations, with GW contributing 15% more than IPO on average, though disagreements in 18% of stations
+  highlight model-dependent uncertainties. Temporal analysis using SHAP values indicates a moderate discrepancy
+  in feature importance between FFNN and XGBoost models (Pearson correlation ≈ 0.5), despite their consensus
+  on the increasing dominance of GW in recent decades, contributing to wetter winters. Regression analysis
+  further confirms that GW accounts for approximately 70% of the multi-decadal variability in winter precipitation
+  across Ohio, with PDPs indicating a strong monotonicity (ρ = 0.94) between warming levels and precipitation
+  increase. PDPs visualize marginal effects but struggle with interactions, while gain-based methods tend
+  to favor features with a greater number of effective split points that reduce loss. SHAP, though robust
+  for ranking, varies with the base model. An ensemble framework is proposed, demonstrating the value
+  of combining these ML techniques complementarily to account for uncertainties and enhance interpretability.
+  This study highlights the importance of addressing methodological uncertainties in feature importance
+  rankings to provide robust insights for climate modeling.
+significance: 3
+cited_by: 28
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

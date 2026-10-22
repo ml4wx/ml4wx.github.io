@@ -1,0 +1,61 @@
+id: doi-10.1016-j.jweia.2025.106162
+title: Wind profile nowcasting and forecasting using machine learning
+authors:
+- Jingyu Wei
+- Yasutaka Narazaki
+- Giuseppe Quaranta
+- Qingshan Yang
+- Christos Τ. Georgakis
+- Cristoforo Demartino
+date: '2025-08-08'
+year: 2025
+venue: Journal of Wind Engineering and Industrial Aerodynamics
+venue_type: journal
+ids:
+  doi: 10.1016/j.jweia.2025.106162
+  openalex: W4413122931
+links:
+  paper: https://doi.org/10.1016/j.jweia.2025.106162
+topic: local-forecasting
+topics:
+- applications-impacts
+type: model
+method:
+- classical-ml
+- rnn
+timescale:
+- nowcast
+- short
+spatial:
+- local
+data:
+- stations
+- other
+status: research
+summary: XGBoost nowcasts and LSTM forecasts non-dimensional wind profile parameters at Cabauw from ground
+  weather data and lidar or tower histories.
+abstract: Accurate knowledge of the vertical wind profile is essential for the energy industry and structural
+  engineering. Specifically, it is crucial for enhancing wind turbine efficiency and enabling active systems
+  through digital twins, which require precise prediction methods to optimize and forecast system behaviors
+  effectively. This study introduces a robust framework that employs machine learning (ML) techniques
+  to nowcast and forecast non-dimensional wind profiles. The problem is formulated as a regression task
+  where the parameters of non-dimensional polynomial wind profiles are predicted based on historical data.
+  Nowcasting is specifically aimed at estimating the shape of the wind profile at the current moment using
+  only meteorological weather information at ground level from local weather stations, utilizing XGBoost
+  for real-time predictions. Forecasting, in contrast, employs both current and historical wind profile
+  data obtained from anemometric towers or wind lidar systems to predict future wind profiles, using Long
+  Short-Term Memory (LSTM) networks. We apply these methodologies using data from the Cabauw experimental
+  site for the period February 2018 to June 2020. The calibration of the models, including hyperparameter
+  tuning and the determination of the optimal time window for past data utilization, is discussed in detail.
+  This research demonstrates the potential of ML in providing reliable predictions of the wind profile
+  height distribution, which can significantly benefit wind energy optimization and structural engineering
+  applications. • Non-dimensional polynomial wind profiles are defined and parameterized. • XGBoost (nowcasting)
+  & LSTM (forecasting) predict wind profile parameters. • Nowcasting uses local ground weather data for
+  real-time profile estimation. • Forecasting predicts future profiles using historical ones & local weather
+  data. • Models are trained and validated with a comprehensive dataset from Cabauw.
+significance: 3
+cited_by: 2
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

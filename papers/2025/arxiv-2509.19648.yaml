@@ -1,0 +1,53 @@
+id: arxiv-2509.19648
+title: 'S$^2$Transformer: Scalable Structured Transformers for Global Station Weather Forecasting'
+authors:
+- Hongyi Chen
+- Xiucheng Li
+- Xinyang Chen
+- Yun Cheng
+- Jing Li
+- Kehai Chen
+- Liqiang Nie
+date: '2025-09-10'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2509.19648'
+  openalex: W4414787241
+links:
+  paper: https://arxiv.org/abs/2509.19648
+  pdf: https://arxiv.org/pdf/2509.19648
+topic: local-forecasting
+topics:
+- global-medium-range
+type: model
+method:
+- transformer
+- gnn
+timescale:
+- short
+spatial:
+- global
+- local
+data:
+- stations
+status: research
+summary: S2Transformer uses structured subgraph attention for global station weather forecasting, achieving
+  up to 16.8% gains over time series baselines at low cost.
+abstract: Global Station Weather Forecasting (GSWF) is a key meteorological research area, critical to
+  energy, aviation, and agriculture. Existing time series forecasting methods often ignore or unidirectionally
+  model spatial correlation when conducting large-scale global station forecasting. This contradicts the
+  intrinsic nature underlying observations of the global weather system, limiting forecast performance.
+  To address this, we propose a novel Spatial Structured Attention Block in this paper. It partitions
+  the spatial graph into a set of subgraphs and instantiates Intra-subgraph Attention to learn local spatial
+  correlation within each subgraph, and aggregates nodes into subgraph representations for message passing
+  among the subgraphs via Inter-subgraph Attention -- considering both spatial proximity and global correlation.
+  Building on this block, we develop a multiscale spatiotemporal forecasting model S$^2$Transformer by
+  progressively expanding subgraph scales. The resulting model is both scalable and able to produce structured
+  spatial correlation, and meanwhile, it is easy to implement. The experimental results show that it can
+  achieve performance improvements up to 16.8% over time series forecasting baselines at low running costs.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

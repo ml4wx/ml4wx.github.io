@@ -1,0 +1,51 @@
+id: arxiv-2510.04358
+title: Score-based generative emulation of impact-relevant Earth system model outputs
+authors:
+- Shahine Bouabid
+- Andre Nogueira Souza
+- Raffaele Ferrari
+date: '2025-10-05'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2510.04358'
+  doi: 10.1029/2025ms005558
+links:
+  paper: https://arxiv.org/abs/2510.04358
+  pdf: https://arxiv.org/pdf/2510.04358
+  code: https://github.com/shahineb/climemu
+topic: climate-emulation
+type: model
+method:
+- diffusion
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: A score-based diffusion emulator on a spherical mesh reproduces joint distributions and forced
+  responses of three ESMs' temperature, precipitation, humidity and wind on one GPU.
+abstract: Policy targets evolve faster than the Coupled Model Intercomparison Project cycles, complicating
+  adaptation and mitigation planning that must often contend with outdated projections. Climate model
+  output emulators address this gap by offering inexpensive surrogates that can rapidly explore alternative
+  futures while staying close to Earth System Model (ESM) behavior. The focus is on emulators designed
+  to provide inputs to impact models. Using monthly ESM fields of near-surface temperature, precipitation,
+  relative humidity, and wind speed, it is shown that deep generative models have the potential to model
+  the joint distribution of variables relevant for impacts. The specific model proposed uses score-based
+  diffusion on a spherical mesh and runs on a single mid-range graphical processing unit. A thorough suite
+  of diagnostics is introduced to compare emulator outputs with their parent ESMs, including their probability
+  densities, cross-variable correlations, time of emergence, or tail behavior. The emulator performance
+  is evaluated across three distinct ESMs in both pre-industrial and forced regimes. The results show
+  that the emulator produces distributions that closely match the ESM outputs and captures key forced
+  responses. They also reveal important failure cases, notably for variables with a strong regime shift
+  in the seasonal cycle. Although not a perfect match to the ESM, the inaccuracies of the emulator are
+  small relative to the magnitude of internal variability in ESM projections. This suggests that the generative
+  emulators can be useful in supporting impact assessment. Priorities for future development toward daily
+  resolution, finer spatial scales, and bias-aware training are discussed. Code is made available at https://github.com/shahineb/climemu.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

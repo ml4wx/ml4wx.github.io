@@ -1,0 +1,41 @@
+id: arxiv-2510.16031
+title: A Storm-Centric 250 m NEXRAD Level-II Dataset for High-Resolution ML Nowcasting
+authors:
+- Andy Shi
+date: '2025-10-15'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2510.16031'
+  openalex: W4415948642
+links:
+  paper: https://arxiv.org/abs/2510.16031
+  pdf: https://arxiv.org/pdf/2510.16031
+topic: benchmarks-data-eval
+topics:
+- nowcasting
+type: benchmark
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Storm250-L2 offers thousands of storm-centric 250 m NEXRAD Level-II radar sequences, much finer
+  than SEVIR or HKO-7, for training convective nowcasting models.
+abstract: Machine learning-based precipitation nowcasting relies on high-fidelity radar reflectivity sequences
+  to model the short-term evolution of convective storms. However, the development of models capable of
+  predicting extreme weather has been constrained by the coarse resolution (1-2 km) of existing public
+  radar datasets, such as SEVIR, HKO-7, and GridRad-Severe, which smooth the fine-scale structures essential
+  for accurate forecasting. To address this gap, we introduce Storm250-L2, a storm-centric radar dataset
+  derived from NEXRAD Level-II and GridRad-Severe data. We algorithmically crop a fixed, high-resolution
+  (250 m) window around GridRad-Severe storm tracks, preserve the native polar geometry, and provide temporally
+  consistent sequences of both per-tilt sweeps and a pseudo-composite reflectivity product. The dataset
+  comprises thousands of storm events across the continental United States, packaged in HDF5 tensors with
+  rich context metadata and reproducible manifests.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

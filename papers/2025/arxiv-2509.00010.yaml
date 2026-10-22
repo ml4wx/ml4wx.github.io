@@ -1,0 +1,47 @@
+id: arxiv-2509.00010
+title: 'CERA: A Framework for Improved Generalization of Machine Learning Models to Changed Climates'
+authors:
+- Shuchang Liu
+- Paul A. O'Gorman
+date: '2025-08-15'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2509.00010'
+links:
+  paper: https://arxiv.org/abs/2509.00010
+  pdf: https://arxiv.org/pdf/2509.00010
+topic: hybrid-parameterization
+topics:
+- climate-emulation
+type: model
+method:
+- other
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: Autoencoder with latent alignment learns climate-invariant inputs so moist-physics parameterizations
+  trained on control climate generalize to +4K warming, including precipitation extremes.
+abstract: Robust generalization under climate change remains a major challenge for machine learning applications
+  in climate science. Most existing approaches struggle to extrapolate beyond the climate they were trained
+  on, leading to a strong dependence on training data from model simulations of warm climates. Use of
+  climate-invariant inputs improves generalization but requires challenging manual feature engineering.
+  Here, we present CERA (Climate-invariant Encoding through Representation Alignment), a machine learning
+  framework consisting of an autoencoder with explicit latent-space alignment, followed by a predictor
+  for downstream process estimation. We test CERA on the problem of parameterizing moist-physics processes.
+  Without training on labeled data from a +4K climate, CERA leverages labeled control-climate data and
+  unlabeled warmer-climate inputs to improve generalization to the warmer climate, outperforming both
+  raw-input and physically informed baselines in predicting key moisture and energy tendencies. It captures
+  not only the vertical and meridional structures of the moisture tendencies, but also shifts in the intensity
+  distribution of precipitation including extremes. Ablation experiments show that latent alignment improves
+  both accuracy and the robustness across random seeds used in training. While some reduced skill remains
+  in the boundary layer, the framework offers a data-driven alternative to manual feature engineering
+  of climate invariant inputs. Beyond parameterizations used in hybrid ML-physics systems, the approach
+  holds promise for other climate applications such as statistical downscaling.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

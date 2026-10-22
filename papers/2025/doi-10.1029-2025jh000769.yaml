@@ -1,0 +1,55 @@
+id: doi-10.1029-2025jh000769
+title: Leveraging Sparse Autoencoders to Reveal Interpretable Features in Geophysical Models
+authors:
+- Fraser King
+- Claire Pettersen
+- Derek J. Posselt
+- Sarah E. Ringerud
+- Yan Xie
+date: '2025-09-26'
+year: 2025
+venue: Journal of Geophysical Research Machine Learning and Computation
+venue_type: journal
+ids:
+  doi: 10.1029/2025jh000769
+  openalex: W4414561732
+links:
+  paper: https://doi.org/10.1029/2025jh000769
+orgs:
+- nasa
+- caltech
+topic: xai-uq-physics
+type: model
+method:
+- other
+- physics-constrained
+data:
+- radar
+status: research
+summary: Regularized sparse autoencoders disentangle precipitation-classification network neurons into
+  monosemantic features tied to temperature and fall-speed thresholds, cutting sensitive inputs per neuron
+  by 33%.
+abstract: Abstract Machine learning is an increasingly popular tool in the geosciences, offering new approaches
+  to numerical weather prediction and complex data set analysis. However, as reliance on these techniques
+  grows, pressing questions about model transparency, internal biases, and trust emerge. Although post
+  hoc explainability analyses can provide insights on how neural network (NN) outputs are generated, a
+  robust framework for interpreting internal decision‐making remains underdeveloped. We address this challenge
+  by exploring a framework to better understand the inner structure of NNs using sparse autoencoders (SAEs).
+  With simplified multilayer perceptrons (MLPs), we demonstrate that hidden layer neurons often exhibit
+  polysemantic behavior where each feature is mapped to a linear combination of neurons, creating an overcomplete
+  representation. This phenomenon, known as superposition, arises when networks encode more features than
+  available neurons, causing neurons to respond to multiple, seemingly unrelated inputs. By introducing
+  a regularized SAE that learns from the original MLP's activations, we can disentangle these representations
+  resulting in a 33% reduction in the average number of sensitive inputs per neuron. Applied to a precipitation
+  classification model, this framework reveals evidence of monosemantic behavior in which neurons respond
+  to a single meaningful concept tied to specific physical phenomena such as temperature and fall speed
+  thresholds for precipitation phase partitioning. We observe similar monosemantic behavior in SAE activations
+  from a snowfall rate regressor related to particle concentration intensity and vertical radar structures.
+  This framework supports the development of more physically consistent interpretations of hidden neuron
+  activations and improved trust in operational ML models across the geosciences.
+significance: 3
+cited_by: 1
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

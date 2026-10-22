@@ -1,0 +1,48 @@
+id: openalex-W7162352985
+title: Χωρική υποκλιμάκωση δεδομένων θερμοκρασίας αέρος 2 μέτρων ERA5-Land στην Ελλάδα, χρησιμοποιώντας
+  αλγορίθμους μηχανικής μάθησης βασισμένους σε δέντρα αποφάσεων
+authors:
+- Ιωάννης Καΐτσας
+date: '2025-06-20'
+year: 2025
+venue: Νημερτής
+venue_type: preprint
+ids:
+  openalex: W7162352985
+links:
+  paper: https://hdl.handle.net/10889/29706
+topic: downscaling
+type: application
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- era5
+- stations
+status: research
+summary: Downscales ERA5-Land 2 m temperature over Greece to finer resolution using Extremely Randomized
+  Trees with topographic predictors, validated against HNMS stations.
+abstract: This thesis presents a spatial downscaling method for gridded ERA5-Land 2-meter air temperature
+  data over Greece using a tree-based machine learning regression approach. High-resolution air temperature
+  estimates are crucial for regional climate impact assessments and environmental modeling at regional
+  or local scales. The ERA5-Land reanalysis dataset is a promising source, offering high-quality climate
+  data at a relatively coarse, 0.1° (~9 km) resolutio. However, many applications require finer spatial
+  detail. Given the relatively sparse station coverage and the highly variable terrain across much of
+  Greece, spatial refinement (i.e. spatial downscaling) of the ERA5-Land temperatures fields presents
+  a compelling opportunity for generating high-resolution datasets. The proposed framework uses an Extremely
+  Randomized Trees algorithm as the baseline statistical regression model, leveraging the principle of
+  scaleinvariance between the ERA5-Land temperature field and topographic predictors, such as elevation
+  and land cover. The scale-invariance principle assumes that the relationships between temperature and
+  selected environmental predictors remain consistent across spatial scales, which enhances model generalizability
+  and robustness in areas with sparse station data or complex topography. Model validation was performed
+  using observational data from the HNMS meteorological stations across Greece. The results demonstrate
+  moderate improvements in capturing local temperature variability, particularly in complex terrain (e.g.
+  valleys), highlighting the effectiveness of statistical regression techniques, especially machine learning
+  methods, in refining climate reanalysis products in data-sparse regions.
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

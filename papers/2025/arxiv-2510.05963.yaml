@@ -1,0 +1,51 @@
+id: arxiv-2510.05963
+title: 'Representing Subgrid-Scale Cloud Effects in a Radiation Parameterization using Machine Learning:
+  MLe-radiation v1.0'
+authors:
+- Katharina Hafner
+- Sara Shamekh
+- Guillaume Bertoli
+- Axel Lauer
+- Robert Pincus
+- Julien Savre
+- Veronika Eyring
+date: '2025-10-07'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2510.05963'
+links:
+  paper: https://arxiv.org/abs/2510.05963
+  pdf: https://arxiv.org/pdf/2510.05963
+topic: hybrid-parameterization
+type: model
+method:
+- other
+spatial:
+- global
+data:
+- km-scale-sim
+status: research
+summary: ML learns subgrid cloud radiative effects from coarse-grained 5 km simulations, cutting radiation
+  heating-rate errors by 4-10 times relative to a conventional coarse-scale scheme.
+abstract: Improvements of Machine Learning (ML)-based radiation emulators remain constrained by the underlying
+  assumptions to represent horizontal and vertical subgrid-scale cloud distributions, which continue to
+  introduce substantial uncertainties. In this study, we introduce a method to represent the impact of
+  subgrid-scale clouds by applying ML to learn processes from high-resolution model output with a horizontal
+  grid spacing of 5km. In global storm resolving models, clouds begin to be explicitly resolved. Coarse-graining
+  these high-resolution simulations to the resolution of coarser Earth System Models yields radiative
+  heating rates that implicitly include subgrid-scale cloud effects, without assumptions about their horizontal
+  or vertical distributions. We define the cloud radiative impact as the difference between all-sky and
+  clear-sky radiative fluxes, and train the ML component solely on this cloud-induced contribution to
+  heating rates. The clear-sky tendencies remain being computed with a conventional physics-based radiation
+  scheme. This hybrid design enhances generalization, since the machine-learned part addresses only subgrid-scale
+  cloud effects, while the clear-sky component remains responsive to changes in greenhouse gas or aerosol
+  concentrations. Applied to coarse-grained data offline, the ML-enhanced radiation scheme reduces errors
+  by a factor of 4-10 compared with a conventional coarse-scale radiation scheme. This shows the potential
+  of representing subgrid-scale cloud effects in radiation schemes with ML for the next generation of
+  Earth System Models.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

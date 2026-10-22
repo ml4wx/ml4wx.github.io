@@ -1,0 +1,49 @@
+id: arxiv-2507.05753
+title: 'Jigsaw: Training Multi-Billion-Parameter AI Weather Models with Optimized Model Parallelism'
+authors:
+- Deifilia Kieckhefen
+- Markus Götz
+- Lars H. Heyen
+- Achim Streit
+- Charlotte Debus
+date: '2025-07-08'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2507.05753'
+  openalex: W4416060975
+links:
+  paper: https://arxiv.org/abs/2507.05753
+  pdf: https://arxiv.org/pdf/2507.05753
+topic: infra-software
+topics:
+- global-medium-range
+type: model
+method:
+- other
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Introduces WeatherMixer, an MLP-based AI weather model, and Jigsaw, a model-parallel scheme training
+  multi-billion-parameter models on 256 GPUs at 72% scaling efficiency.
+abstract: AI-based methods have revolutionized atmospheric forecasting, with recent successes in medium-range
+  forecasting spurring the development of climate foundation models. Accurate modeling of complex atmospheric
+  dynamics at high spatial resolutions and longer lead times requires large neural networks and gigabyte-sized
+  data samples, making accelerator memory and I/O-bandwidth the bottlenecks for model training. We introduce
+  WeatherMixer, a multi-layer-perceptron-based architecture whose workload scales linearly with input
+  size, allowing the model to learn global weather phenomena at accuracies similar to numerical weather
+  prediction. To cope with the computational demand, we propose Jigsaw, a novel model parallelization
+  scheme that employs both domain and tensor parallelism, eliminating memory redundancy. Jigsaw exceeds
+  state-of-the-art performance in strong scaling in compute-communication-limited systems and achieves
+  superscalar weak scaling in I/O-bandwidth-limited systems. We scale training to 256 GPUs, reaching peak
+  performances of 9 and 11 PFLOPs, 23% and 28% of theoretical peaks, achieving 68% and 72% scaling efficiency
+  versus 51% without model parallelism.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

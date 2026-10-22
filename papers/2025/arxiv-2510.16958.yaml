@@ -1,0 +1,62 @@
+id: arxiv-2510.16958
+title: 'Quantile Regression, Variational Autoencoders, and Diffusion Models for Uncertainty Quantification:
+  A Spatial Analysis of Sub-seasonal Wind Speed Prediction'
+authors:
+- Ganglin Tian
+- Anastase Alexandre Charantonis
+- Camille Le Coz
+- Alexis Tantet
+- Riwal Plougonven
+date: '2025-10-19'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2510.16958'
+  openalex: W4415961027
+links:
+  paper: https://arxiv.org/abs/2510.16958
+  pdf: https://arxiv.org/pdf/2510.16958
+topic: downscaling
+topics:
+- s2s-seasonal
+- probabilistic-ensembles
+type: evaluation
+method:
+- gan-vae
+- diffusion
+- classical-ml
+timescale:
+- s2s
+spatial:
+- regional
+data:
+- era5
+- nwp-analysis
+status: research
+summary: Compares quantile regression, VAEs and diffusion models for probabilistic downscaling of sub-seasonal
+  surface wind from Z500 predictors; diffusion and VAE give more realistic spatial uncertainty than residual
+  perturbations.
+abstract: 'This study aims to improve the spatial representation of uncertainties when regressing surface
+  wind speeds from large-scale atmospheric predictors for sub-seasonal forecasting. Sub-seasonal forecasting
+  often relies on large-scale atmospheric predictors such as 500 hPa geopotential height (Z500), which
+  exhibit higher predictability than surface variables and can be downscaled to obtain more localised
+  information. Previous work by Tian et al. (2024) demonstrated that stochastic perturbations based on
+  model residuals can improve ensemble dispersion representation in statistical downscaling frameworks,
+  but this method fails to represent spatial correlations and physical consistency adequately. More sophisticated
+  approaches are needed to capture the complex relationships between large-scale predictors and local-scale
+  predictands while maintaining physical consistency. Probabilistic deep learning models offer promising
+  solutions for capturing complex spatial dependencies. This study evaluates three probabilistic methods
+  with distinct uncertainty quantification mechanisms: Quantile Regression Neural Network that directly
+  models distribution quantiles, Variational Autoencoders that leverage latent space sampling, and Diffusion
+  Models that utilise iterative denoising. These models are trained on ERA5 reanalysis data and applied
+  to ECMWF sub-seasonal hindcasts to regress probabilistic wind speed ensembles. Our results show that
+  probabilistic downscaling approaches provide more realistic spatial uncertainty representations compared
+  to simpler stochastic methods, with each probabilistic model offering different strengths in terms of
+  ensemble dispersion, deterministic skill, and physical consistency. These findings establish probabilistic
+  downscaling as an effective enhancement to operational sub-seasonal wind forecasts for renewable energy
+  planning and risk assessment.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

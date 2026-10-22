@@ -1,0 +1,49 @@
+id: arxiv-2510.19110
+title: 'Signature Kernel Scoring Rule: A Spatio-Temporal Diagnostic for Probabilistic Weather Forecasting'
+authors:
+- Archer Dodson
+- Ritabrata Dutta
+date: '2025-10-21'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2510.19110'
+  openalex: W7220922673
+links:
+  paper: https://arxiv.org/abs/2510.19110
+  pdf: https://arxiv.org/pdf/2510.19110
+topic: probabilistic-ensembles
+topics:
+- benchmarks-data-eval
+type: model
+method:
+- other
+- classical-ml
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Signature kernel scoring rule is proposed as a strictly proper, path-aware metric and training
+  loss for probabilistic weather forecasts, outperforming climatology up to fifteen timesteps on ERA5.
+abstract: Modern weather forecasting has increasingly transitioned from numerical weather prediction (NWP)
+  to data-driven machine learning forecasting techniques. While these new models produce probabilistic
+  forecasts to quantify uncertainty, their training and evaluation may remain hindered by conventional
+  scoring rules, primarily MSE, which are designed for single time point predictions and ignore the highly
+  correlated data structures present in weather behaviour. This work introduces the signature kernel scoring
+  rule to the domain of weather forecasting, which reframes weather variables as continuous paths to encode
+  temporal and spatial dependencies through iterated integrals. Validated as strictly proper through the
+  use of path augmentations to guarantee uniqueness, the signature kernel provides a theoretically robust
+  metric for forecast verification and model training. Empirical evaluations through weather scorecards
+  on WeatherBench 2 models demonstrate the signature kernel scoring rule's high discriminative power and
+  unique capacity to capture path-dependent interactions. Following previous demonstration of successful
+  adversarial-free probabilistic training, we train sliding window generative neural networks using a
+  predictive-sequential scoring rule on ERA5 reanalysis weather data. Using a lightweight model, we demonstrate
+  that signature kernel based training outperforms climatology for forecast paths of up to fifteen timesteps.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

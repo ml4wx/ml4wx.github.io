@@ -1,0 +1,57 @@
+id: doi-10.1002-qj.5063
+title: Evaluating machine‐learning models for wind‐speed downscaling from ECMWF‐IFS data
+authors:
+- William Ericson
+- Florian Achermann
+- Nicholas Lawrance
+- Julie Thérèse Pasquier
+- Olov Andersson
+- Roland Siegwart
+date: '2025-08-15'
+year: 2025
+venue: Quarterly Journal of the Royal Meteorological Society
+venue_type: journal
+ids:
+  doi: 10.1002/qj.5063
+  openalex: W4413416105
+links:
+  paper: https://doi.org/10.1002/qj.5063
+orgs:
+- eth-zurich
+topic: downscaling
+topics:
+- global-medium-range
+type: model
+method:
+- transformer
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- km-scale-sim
+status: research
+summary: Transformer-based Windflow-SRnet downscales ECMWF-IFS winds to a high-resolution Swiss model,
+  cutting wind-speed error 35% versus linear interpolation.
+abstract: Abstract Accurate weather forecasts rely on computationally intensive high‐resolution models
+  solving partial differential equations (PDEs) explicitly on a fine grid. Traditionally, downscaling
+  is used to achieve a reduction of the computational cost by first solving a lower‐resolution weather
+  model, providing the boundary conditions for a regional high‐resolution weather model. In recent years,
+  the use of machine learning has been investigated to accelerate weather prediction further through learning
+  the mapping from low‐resolution inputs to high‐resolution predictions—known as super‐resolution methods.
+  In this work, we benchmark recent super‐resolution approaches used previously for downscaling wind predictions
+  as well as new transformer‐based architecture on a novel dataset, with a large variety of input variables,
+  consisting of European Centre for Medium‐Range Weather Forecasts Integrated Forecasting System (ECMWF‐IFS)
+  data and predictions from a high‐resolution regional weather model over Switzerland, and test the generalization
+  performance on weather forecasts from additional locations across Europe. We investigate the relevance
+  of each input variable when downscaling wind further and propose Windflow‐SRnet, a transformer‐based
+  neural network. Using the high‐resolution model as label, the proposed (and best‐performing) machine‐learning
+  model resulted in an average wind‐speed prediction error of on a held‐out test set, a 35% reduction
+  compared with the error for downscaling using linear interpolation.
+significance: 4
+cited_by: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

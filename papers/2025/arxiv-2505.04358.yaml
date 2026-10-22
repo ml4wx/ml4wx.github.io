@@ -1,0 +1,53 @@
+id: arxiv-2505.04358
+title: Reduced Cloud Cover Errors in a Hybrid AI-Climate Model Through Equation Discovery And Automatic
+  Tuning
+authors:
+- Arthur Grundner
+- Tom Beucler
+- Julien Savre
+- Axel Lauer
+- Manuel Schlund
+- Veronika Eyring
+date: '2025-05-07'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2505.04358'
+  openalex: W4416013165
+links:
+  paper: https://arxiv.org/abs/2505.04358
+  pdf: https://arxiv.org/pdf/2505.04358
+topic: hybrid-parameterization
+topics:
+- climate-emulation
+type: model
+method:
+- classical-ml
+- physics-constrained
+timescale:
+- climate
+spatial:
+- global
+data:
+- km-scale-sim
+- satellite
+status: pre-operational
+summary: A symbolic-regression cloud cover parameterization in ICON, tuned with Nelder-Mead, cuts Southern
+  Ocean cloud biases by 75% and subtropical stratocumulus biases by 44%.
+abstract: Cloud-related parameterizations remain a leading source of uncertainty in climate projections.
+  Although machine learning holds promise for Earth system models (ESMs), many data-driven parameterizations
+  lack interpretability, physical consistency, and smooth integration into ESMs. Here, a two-step method
+  is presented to improve a climate model with data-driven parameterizations. First, we incorporate a
+  physically consistent cloud cover parameterization -- derived from storm-resolving simulations via symbolic
+  regression, preserving interpretability while enhancing accuracy -- into the ICON global atmospheric
+  model. Second, we apply the gradient-free Nelder-Mead optimizer to automatically recalibrate the hybrid
+  model against Earth observations, tuning in nested stages (2-, 7-, 30- and 365-day runs) to ensure stability
+  and tractability. The tuned hybrid model substantially reduces long-standing biases in cloud cover --
+  particularly over the Southern Ocean (by 75%) and subtropical stratocumulus regions (by 44%) -- and
+  remains robust under +4K surface warming. These results demonstrate that interpretable machine-learned
+  parameterizations, paired with practical tuning, can efficiently and transparently strengthen ESM fidelity.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

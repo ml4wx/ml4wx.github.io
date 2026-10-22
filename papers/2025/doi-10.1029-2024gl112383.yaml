@@ -1,0 +1,51 @@
+id: doi-10.1029-2024gl112383
+title: 'WoFSCast: A Machine Learning Model for Predicting Thunderstorms at Watch‐to‐Warning Scales'
+authors:
+- Montgomery L. Flora
+- Corey K. Potvin
+date: '2025-05-19'
+year: 2025
+venue: Geophysical Research Letters
+venue_type: journal
+ids:
+  doi: 10.1029/2024gl112383
+  openalex: W4410496915
+links:
+  paper: https://doi.org/10.1029/2024gl112383
+orgs:
+- noaa
+- university-of-oklahoma
+topic: regional-km-scale
+topics:
+- nowcasting
+- extremes-hazards
+type: model
+method:
+- gnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- km-scale-sim
+- nwp-analysis
+status: research
+summary: Adapts GraphCast to storm-scale domains trained on Warn-on-Forecast output, matching 70–80% of
+  storms out to 2 hours at low cost.
+abstract: Abstract Developing AI models that match or exceed the forecast skill of numerical weather prediction
+  (NWP) systems but run much more quickly is a burgeoning area of research. Most AI‐NWP models, however,
+  have been trained on global ECMWF Reanalysis version 5 data, which does not resolve storm‐scale evolution.
+  We have therefore adapted Google's GraphCast framework for limited‐area, storm‐scale domains, then trained
+  on archived forecasts from the Warn‐on‐Forecast System (WoFS), a convection‐allowing ensemble with 5‐min
+  forecast output. We evaluate the WoFSCast predictions using object‐based verification, grid‐based verification,
+  spatial storm structure assessments, and spectra analysis. The WoFSCast closely emulates the WoFS environment
+  fields, matches 70%–80% of WoFS storms out to 2‐hr forecast times, and suffers only modest blurring.
+  When verified against observed storms, WoFSCast produces contingency table statistics and fractions
+  skill scores similar to WoFS. WoFSCast demonstrates that AI‐NWP can be extended to rapidly evolving,
+  small‐scale phenomena like thunderstorms.
+significance: 5
+cited_by: 6
+score: 55
+highlight: false
+added: '2026-10-22'
+source: backfill

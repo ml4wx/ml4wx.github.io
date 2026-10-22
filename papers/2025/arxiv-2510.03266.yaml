@@ -1,0 +1,50 @@
+id: arxiv-2510.03266
+title: Variational Autoencoders-based Detection of Extremes in Plant Productivity in an Earth System Model
+authors:
+- Bharat Sharma
+- Jitendra Kumar
+date: '2025-09-26'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2510.03266'
+links:
+  paper: https://arxiv.org/abs/2510.03266
+  pdf: https://arxiv.org/pdf/2510.03266
+topic: extremes-hazards
+topics:
+- climate-analysis-attribution
+type: application
+method:
+- gan-vae
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+status: research
+summary: Variational autoencoders detect gross primary productivity extremes in CESM2 across US regions
+  and match singular spectral analysis while needing no preset periodicity.
+abstract: 'Climate anomalies significantly impact terrestrial carbon cycle dynamics, necessitating robust
+  methods for detecting and analyzing anomalous behavior in plant productivity. This study presents a
+  novel application of variational autoencoders (VAE) for identifying extreme events in gross primary
+  productivity (GPP) from Community Earth System Model version 2 simulations across four AR6 regions in
+  the Continental United States. We compare VAE-based anomaly detection with traditional singular spectral
+  analysis (SSA) methods across three time periods: 1850-80, 1950-80, and 2050-80 under the SSP585 scenario.
+  The VAE architecture employs three dense layers and a latent space with an input sequence length of
+  12 months, trained on a normalized GPP time series to reconstruct the GPP and identifying anomalies
+  based on reconstruction errors. Extreme events are defined using 5th percentile thresholds applied to
+  both VAE and SSA anomalies. Results demonstrate strong regional agreement between VAE and SSA methods
+  in spatial patterns of extreme event frequencies, despite VAE producing higher threshold values (179-756
+  GgC for VAE vs. 100-784 GgC for SSA across regions and periods). Both methods reveal increasing magnitudes
+  and frequencies of negative carbon cycle extremes toward 2050-80, particularly in Western and Central
+  North America. The VAE approach shows comparable performance to established SSA techniques, while offering
+  computational advantages and enhanced capability for capturing non-linear temporal dependencies in carbon
+  cycle variability. Unlike SSA, the VAE method does not require one to define the periodicity of the
+  signals in the data; it discovers them from the data.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

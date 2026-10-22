@@ -1,0 +1,60 @@
+id: arxiv-2509.00017
+title: Observation-guided Interpolation Using Graph Neural Networks for High-Resolution Nowcasting in
+  Switzerland
+authors:
+- Ophélia Miralles
+- Daniele Nerini
+- Jonas Bhend
+- Baudouin Raoult
+- Christoph Spirig
+date: '2025-08-16'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2509.00017'
+  doi: 10.1175/aies-d-25-0081.1
+links:
+  paper: https://arxiv.org/abs/2509.00017
+  pdf: https://arxiv.org/pdf/2509.00017
+topic: nowcasting
+topics:
+- regional-km-scale
+type: model
+method:
+- gnn
+timescale:
+- nowcast
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+- radar
+status: pre-operational
+summary: Anemoi-based GNN fuses surface observations with NWP states for 1 km, 10-minute Swiss nowcasts
+  that beat ICON-CH1 and match or exceed INCA beyond 2 hours.
+abstract: Recent advances in neural weather forecasting have shown significant potential for accurate
+  short-term forecasts. However, adapting such gridded approaches to smaller, topographically complex
+  regions like Switzerland introduces computational challenges, especially when aiming for high spatial
+  (1km) and temporal (10 min) resolution. This paper presents a Graph Neural Network (GNN)-based approach
+  for high-resolution nowcasting in Switzerland using the Anemoi framework and observational inputs. The
+  proposed architecture combines surface observations with selected past and future numerical weather
+  prediction (NWP) states, enabling an observation-guided interpolation strategy that enhances short-term
+  accuracy while preserving physical consistency. We evaluate two models, one trained using local nowcasting
+  analyses and one trained without, on multiple surface variables and compare it against operational high-resolution
+  NWP (ICON-CH1) and nowcasting (INCA) baselines. Results over the test period show that both GNNs consistently
+  outperform ICON-CH1 when verified against INCA analyses across most variables and lead times. Relative
+  to the INCA forecast system, scores against INCA analyses show AI gains beyond 2h (with early-lead disadvantages
+  attributable to INCA's warm start from the analysis), while verification against held-out stations shows
+  no systematic degradation at short lead-times for AI models and frequent outperformance across surface
+  variables. A comprehensive verification procedure, including spatial skill scores for precipitation,
+  pairwise significance testing and event-based evaluation, demonstrates the operational relevance of
+  the approach for mountainous domains. These results indicate that high-resolution, observation-guided
+  GNNs can match or exceed the skill of established forecasting systems for short lead times, including
+  when they are trained without nowcasting analyses.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,50 @@
+id: arxiv-2506.11968
+title: A unified neural background-error covariance model for midlatitude and tropical atmospheric data
+  assimilation
+authors:
+- Boštjan Melinc
+- Uroš Perkan
+- Žiga Zaplotnik
+date: '2025-06-13'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2506.11968'
+links:
+  paper: https://arxiv.org/abs/2506.11968
+  pdf: https://arxiv.org/pdf/2506.11968
+topic: data-assimilation
+type: model
+method:
+- other
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Autoencoder latent-space background-error covariances trained on 40 years of ERA5 yield balanced
+  tropical and midlatitude analysis increments and realistic forecasts.
+abstract: Estimating background-error covariances remains a core challenge in variational data assimilation
+  (DA). Operational systems typically approximate these covariances by transformations that separate geostrophically
+  balanced components from unbalanced inertio-gravity modes - an approach well-suited for the midlatitudes
+  but less applicable in the tropics, where different physical balances prevail. This study estimates
+  background-error covariances in a reduced-dimension latent space learned by a neural-network autoencoder
+  (AE). The AE was trained using 40 years of ERA5 reanalysis data, enabling it to capture flow-dependent
+  atmospheric balances from a diverse set of weather states. We demonstrate that performing DA in the
+  latent space yields analysis increments that preserve multivariate horizontal and vertical physical
+  balances in both tropical and midlatitude atmosphere. Assimilating a single 500 hPa geopotential height
+  observation in the midlatitudes produces increments consistent with geostrophic and thermal wind balance,
+  while assimilating a total column water vapor observation with a positive departure in the nearly-saturated
+  tropical atmosphere generates an increment resembling the tropical response to (latent) heat-induced
+  perturbations. The resulting increments are localized and flow-dependent, and shaped by orography and
+  land-sea contrasts. Forecasts initialized from these analyses exhibit realistic weather evolution, including
+  the excitation of an eastward-propagating Kelvin wave in the tropics. Finally, we explore the transition
+  from using synthetic ensembles and a climatology-based background error covariance matrix to an operational
+  ensemble of data assimilations. Despite significant compression-induced variance loss in some variables,
+  latent-space assimilation produces balanced, flow-dependent increments - highlighting its potential
+  for ensemble-based latent-space 4D-Var.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

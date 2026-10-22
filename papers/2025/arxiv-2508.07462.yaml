@@ -1,0 +1,54 @@
+id: arxiv-2508.07462
+title: 'Forecasting solar power output in Ibadan: A machine learning approach leveraging weather data
+  and system specifications'
+authors:
+- Obarotu Peter Urhuerhi
+- Christopher Godwin Udomboso
+- Caston Sigauke
+date: '2025-08-10'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2508.07462'
+  openalex: W4416242307
+links:
+  paper: http://arxiv.org/abs/2508.07462
+  pdf: https://arxiv.org/pdf/2508.07462
+topic: applications-impacts
+type: application
+method:
+- classical-ml
+- cnn
+- rnn
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Random Forest best predicts hourly solar irradiance in Ibadan from weather variables, with nRMSE
+  0.19 for GHI annually, feeding a PV energy output estimate.
+abstract: 'This study predicts hourly solar irradiance components, Global Horizontal Irradiance (GHI),
+  Direct Normal Irradiance (DNI), and Diffuse Horizontal Irradiance (DHI) using meteorological data to
+  forecast solar energy output in Ibadan, Nigeria. The forecasting process follows a two-stage approach:
+  first, clear-sky irradiance values are predicted using weather variables only (e.g., temperature, humidity,
+  wind speed); second, actual (cloudy-sky) irradiance values are forecasted by integrating the predicted
+  clear-sky irradiance with weather variables and cloud type. Historical meteorological data were preprocessed
+  and used to train Random Forest, Convolutional Neural Network (CNN), and Long Short-Term Memory (LSTM)
+  models, with Random Forest demonstrating the best performance. Models were developed for annual and
+  seasonal forecasting, capturing variations between the wet and dry seasons. The annual Random Forest
+  model''s normalised Root Mean Square Error (nRMSE) values were 0.22 for DHI, 0.33 for DNI, and 0.19
+  for GHI. For seasonal forecasts, wet season nRMSE values were 0.27 for DHI, 0.50 for DNI, and 0.27 for
+  GHI, while dry season nRMSE values were 0.15 for DHI, 0.22 for DNI, and 0.12 for GHI. The predicted
+  actual irradiance values were combined with solar system specifications (e.g., maximum power (Pmax),
+  open-circuit voltage (Voc), short-circuit current (Isc), and AC power (Pac)) using PVLib Python to estimate
+  the final energy output. This methodology provides a cost-effective alternative to pyranometer-based
+  measurements, enhances grid stability for solar energy integration, and supports efficient planning
+  for off-grid and grid-connected photovoltaic systems.'
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

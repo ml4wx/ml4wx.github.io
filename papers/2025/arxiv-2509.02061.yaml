@@ -1,0 +1,55 @@
+id: arxiv-2509.02061
+title: 'LUCIE-3D: A three-dimensional climate emulator for forced responses'
+authors:
+- Haiwen Guan
+- Troy Arcomano
+- Ashesh Chattopadhyay
+- Romit Maulik
+date: '2025-09-02'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2509.02061'
+  doi: 10.5194/egusphere-2025-4305
+  openalex: W4414204236
+links:
+  paper: https://arxiv.org/abs/2509.02061
+  pdf: https://arxiv.org/pdf/2509.02061
+orgs:
+- ai2
+- argonne
+topic: climate-emulation
+topics:
+- global-medium-range
+type: model
+method:
+- neural-operator
+timescale:
+- climate
+spatial:
+- global
+data:
+- era5
+status: research
+summary: LUCIE-3D is a lightweight SFNO-based 3D climate emulator trained on 30 years of ERA5 that responds
+  to CO2 forcing and reproduces MJO, Kelvin waves and climate change signals.
+abstract: We introduce LUCIE-3D, a lightweight three-dimensional climate emulator designed to capture
+  the vertical structure of the atmosphere, respond to climate change forcings, and maintain computational
+  efficiency with long-term stability. Building on the original LUCIE-2D framework, LUCIE-3D employs a
+  Spherical Fourier Neural Operator (SFNO) backbone and is trained on 30 years of ERA5 reanalysis data
+  spanning eight vertical σ-levels. The model incorporates atmospheric CO2 as a forcing variable and optionally
+  integrates prescribed sea surface temperature (SST) to simulate coupled ocean--atmosphere dynamics.
+  Results demonstrate that LUCIE-3D successfully reproduces climatological means, variability, and long-term
+  climate change signals, including surface warming and stratospheric cooling under increasing CO2 concentrations.
+  The model further captures key dynamical processes such as equatorial Kelvin waves, the Madden--Julian
+  Oscillation, and annular modes, while showing credible behavior in the statistics of extreme events.
+  Despite requiring longer training than its 2D predecessor, LUCIE-3D remains efficient, training in under
+  five hours on four GPUs. Its combination of stability, physical consistency, and accessibility makes
+  it a valuable tool for rapid experimentation, ablation studies, and the exploration of coupled climate
+  dynamics, with potential applications extending to paleoclimate research and future Earth system emulation.
+significance: 5
+cited_by: 2
+score: 55
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,51 @@
+id: arxiv-2507.03094
+title: 'NeuralDMD: Interpretable Neural Representation of Dynamics from Sparse and Noisy Measurements'
+authors:
+- Ali SaraerToosi
+- Renbo Tu
+- Esther Y. H. Lin
+- Kamyar Azizzadenesheli
+- Aviad Levis
+date: '2025-07-03'
+year: 2025
+venue: Computer Vision - ECCV 2026, Lecture Notes in Computer Science, vol. 17038, pp. 1-20 (2026)
+venue_type: journal
+ids:
+  arxiv: '2507.03094'
+  doi: 10.1007/978-3-032-37447-9_1
+links:
+  paper: https://arxiv.org/abs/2507.03094
+  pdf: https://arxiv.org/pdf/2507.03094
+topic: data-assimilation
+type: model
+method:
+- other
+timescale:
+- short
+data:
+- stations
+- other
+status: research
+summary: Untrained neural-field DMD reconstructs spatio-temporal dynamics from sparse data, including
+  weather assimilation from station observations, and outperforms baselines in several tasks.
+abstract: 'Many challenges in scientific imaging involve solving ill-posed inverse problems, where the
+  goal is to recover spatio-temporal fields from indirect, noisy, and highly sparse measurements - often
+  without access to ground truth data or reliable simulators. To address this challenging scenario, we
+  present NeuralDMD, an interpretable, untrained (per-instance) reconstruction framework that combines
+  neural implicit representations with Dynamic Mode Decomposition (DMD) to reconstruct continuous spatio-temporal
+  dynamics directly from measurements. NeuralDMD parameterizes DMD modes as continuous neural fields,
+  and imposes a low-rank linear dynamics prior with spectral time evolution to enforce temporal continuity.
+  This formulation enables both forecasting under sparsity, and yields interpretable modes and spectra.
+  We find that NeuralDMD outperforms baselines on a wide variety of tasks: from weather data assimilation
+  from sparse station observations to interferometric (Fourier domain) observations of Sagittarius A,
+  the black hole at the center of our galaxy. Moreover, NeuralDMD remains stable when extrapolating into
+  the future. While this framework is most naturally suited to linear dynamics, we show that it can be
+  applied to nonlinear regimes, though with extrapolation performance that degrades with increasing nonlinearity.
+  Together, these results show that NeuralDMD enables interpretable reconstruction and forecasting of
+  spatio-temporal dynamics directly from sparse and indirect measurements without relying on numerical
+  simulators or training data.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

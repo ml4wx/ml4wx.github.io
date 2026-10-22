@@ -1,0 +1,58 @@
+id: arxiv-2508.06859
+title: 'MeteorPred: A Meteorological Multimodal Large Model and Dataset for Severe Weather Event Prediction'
+authors:
+- Shuo Tang
+- Jian Xu
+- Jiadong Zhang
+- Yi Chen
+- Qizhao Jin
+- Lingdong Shen
+- Chenglin Liu
+- Shiming Xiang
+date: '2025-08-09'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2508.06859'
+links:
+  paper: https://arxiv.org/abs/2508.06859
+  pdf: https://arxiv.org/pdf/2508.06859
+topic: llms-agents
+topics:
+- extremes-hazards
+type: model
+method:
+- transformer
+- llm
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+- other
+status: pre-operational
+summary: Multimodal large model MMLM ingests 4D meteorological fields with a new 421k-pair severe weather
+  dataset (MP-Bench) to generate severe-weather warnings and forecasts.
+abstract: 'Timely and accurate forecasts of severe weather events are essential for early warning and
+  for constraining downstream analysis and decision-making. Since severe weather events prediction still
+  depends on subjective, time-consuming expert interpretation, end-to-end "AI weather station" systems
+  are emerging but face three major challenges: (1) scarcity of severe weather event samples; (2) imperfect
+  alignment between high-dimensional meteorological data and textual warnings; (3) current multimodal
+  language models cannot effectively process high-dimensional meteorological inputs or capture their complex
+  spatiotemporal dependencies. To address these challenges, we introduce MP-Bench, the first large-scale
+  multimodal dataset for severe weather events prediction, comprising 421,363 pairs of raw multi-year
+  meteorological data and corresponding text caption, covering a wide range of severe weather scenarios.
+  On top of this dataset, we develop a Meteorology Multimodal Large Model (MMLM) that directly ingests
+  4D meteorological inputs. In addition, it is designed to accommodate the unique characteristics of 4D
+  meteorological data flow, incorporating three plug-and-play adaptive fusion modules that enable dynamic
+  feature extraction and integration across temporal sequences, vertical pressure layers, and spatial
+  dimensions. Extensive experiments on MP-Bench show that MMLM achieves strong performance across multiple
+  tasks, demonstrating effective severe weather understanding and representing a key step toward automated,
+  AI-driven severe weather events forecasting systems. Our source code and dataset will be made publicly
+  available.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

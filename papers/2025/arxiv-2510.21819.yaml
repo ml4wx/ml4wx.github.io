@@ -1,0 +1,42 @@
+id: arxiv-2510.21819
+title: Geographic Transferability of Machine Learning Models for Short-Term Airport Fog Forecasting
+authors:
+- Marcelo Cerda Castillo
+date: '2025-10-21'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2510.21819'
+links:
+  paper: https://arxiv.org/abs/2510.21819
+  pdf: https://arxiv.org/pdf/2510.21819
+topic: local-forecasting
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: XGBoost airport fog classifier trained in Santiago transfers zero-shot to sites up to 11,650
+  km away, with AUC 0.923-0.947 using coordinate-free physical features.
+abstract: Short-term forecasting of airport fog (visibility < 1.0 km) presents challenges in geographic
+  generalization because many machine learning models rely on location-specific features and fail to transfer
+  across sites. This study investigates whether fundamental thermodynamic and radiative processes can
+  be encoded in a coordinate-free (location-independent) feature set to enable geographic transferability.
+  A gradient boosting classifier (XGBoost) trained on Santiago, Chile (SCEL, 33S) data from 2002-2009
+  was evaluated on a 2010-2012 holdout set and under strict zero-shot tests at Puerto Montt (SCTE), San
+  Francisco (KSFO), and London (EGLL). The model achieved AUC values of 0.923-0.947 across distances up
+  to 11,650 km and different fog regimes (radiative, advective, marine). Consistent SHAP feature rankings
+  show that visibility persistence, solar angle, and thermal gradients dominate predictions, suggesting
+  the model learned transferable physical relationships rather than site-specific patterns. Results suggest
+  that physics-informed, coordinate-free feature engineering can yield geographically transferable atmospheric
+  forecasting tools.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

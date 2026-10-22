@@ -1,0 +1,47 @@
+id: arxiv-2505.02506
+title: Exploring Design Choices for Autoregressive Deep Learning Climate Models
+authors:
+- Florian Gallusser
+- Simon Hentschel
+- Anna Krause
+- Andreas Hotho
+date: '2025-05-05'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2505.02506'
+  openalex: W4415031776
+links:
+  paper: https://arxiv.org/abs/2505.02506
+  pdf: https://arxiv.org/pdf/2505.02506
+topic: climate-emulation
+topics:
+- benchmarks-data-eval
+type: evaluation
+method:
+- neural-operator
+- transformer
+timescale:
+- climate
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Compares FourCastNet, SFNO and ClimaX on ERA5 and finds SFNO most robust in stable 10-year autoregressive
+  rollouts, with design choices that govern stability.
+abstract: Deep Learning models have achieved state-of-the-art performance in medium-range weather prediction
+  but often fail to maintain physically consistent rollouts beyond 14 days. In contrast, a few atmospheric
+  models demonstrate stability over decades, though the key design choices enabling this remain unclear.
+  This study quantitatively compares the long-term stability of three prominent DL-MWP architectures -
+  FourCastNet, SFNO, and ClimaX - trained on ERA5 reanalysis data at 5.625° resolution. We systematically
+  assess the impact of autoregressive training steps, model capacity, and choice of prognostic variables,
+  identifying configurations that enable stable 10-year rollouts while preserving the statistical properties
+  of the reference dataset. Notably, rollouts with SFNO exhibit the greatest robustness to hyperparameter
+  choices, yet all models can experience instability depending on the random seed and the set of prognostic
+  variables
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

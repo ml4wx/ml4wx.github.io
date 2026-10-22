@@ -1,0 +1,43 @@
+id: arxiv-2510.23632
+title: 'LLMComp: A Language Modeling Paradigm for Error-Bounded Scientific Data Compression (Technical
+  Report)'
+authors:
+- Guozhong Li
+- Muhannad Alhumaidi
+- Spiros Skiadopoulos
+- Panos Kalnis
+date: '2025-10-24'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2510.23632'
+links:
+  paper: https://arxiv.org/abs/2510.23632
+  pdf: https://arxiv.org/pdf/2510.23632
+topic: infra-software
+type: model
+method:
+- llm
+- transformer
+data:
+- era5
+status: research
+summary: LLMComp compresses scientific fields such as reanalysis data with an autoregressive LLM, reporting
+  up to 30% higher ratios than state-of-the-art compressors under strict error bounds.
+abstract: The rapid growth of high-resolution scientific simulations and observation systems is generating
+  massive spatiotemporal datasets, making efficient, error-bounded compression increasingly important.
+  Meanwhile, decoder-only large language models (LLMs) have demonstrated remarkable capabilities in modeling
+  complex sequential data. In this paper, we propose LLMCOMP, a novel lossy compression paradigm that
+  leverages decoder-only large LLMs to model scientific data. LLMCOMP first quantizes 3D fields into discrete
+  tokens, arranges them via Z-order curves to preserve locality, and applies coverage-guided sampling
+  to enhance training efficiency. An autoregressive transformer is then trained with spatial-temporal
+  embeddings to model token transitions. During compression, the model performs top-k prediction, storing
+  only rank indices and fallback corrections to ensure strict error bounds. Experiments on multiple reanalysis
+  datasets show that LLMCOMP consistently outperforms state-of-the-art compressors, achieving up to 30%
+  higher compression ratios under strict error bounds. These results highlight the potential of LLMs as
+  general-purpose compressors for high-fidelity scientific data.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

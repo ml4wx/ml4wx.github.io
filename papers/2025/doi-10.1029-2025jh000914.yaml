@@ -1,0 +1,62 @@
+id: doi-10.1029-2025jh000914
+title: Three‐Dimensional Full Variables Bias Correction of CMA‐GFS Analysis Field Using Spatial Convolutional
+  Long Short‐Term Memory Network
+authors:
+- Haoyuan Huang
+- Jun Yang
+- Yang Han
+- Hao Hu
+- Yi‐Ning Shi
+- Fuzhong Weng
+date: '2025-10-24'
+year: 2025
+venue: Journal of Geophysical Research Machine Learning and Computation
+venue_type: journal
+ids:
+  doi: 10.1029/2025jh000914
+  openalex: W4415505149
+links:
+  paper: https://doi.org/10.1029/2025jh000914
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2025JH000914
+orgs:
+- cma
+topic: post-processing
+topics:
+- global-medium-range
+type: model
+method:
+- cnn
+- rnn
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: Spatial convolutional LSTM corrects CMA-GFS analysis biases, cutting atmospheric bias by 20%
+  or more and raising Pangu-Weather 500 hPa ACC by 0.07.
+abstract: Abstract Numerical weather prediction models are essential for modern meteorological forecasting,
+  with accuracy critically hinging on the precision of initial analysis fields. Compared to the ERA5 global
+  reanalysis data, the analysis fields produced by the China Meteorological Administration Global Forecast
+  System (CMA‐GFS) exhibit notable biases in both atmospheric and surface variables, significantly impacting
+  the forecast accuracy of CMA‐GFS. This paper introduces a deep learning model, termed spatial convolutional
+  long short‐term memory network (SCL‐net), designed for correcting these biases in CMA‐GFS analysis fields.
+  SCL‐net employs an image‐to‐image translation approach with a patch‐based processing pipeline, enabling
+  an efficient correction of three‐dimensional biases in CMA‐GFS analysis fields while handling high‐resolution
+  global data. Experimental results reveal that SCL‐net achieves a bias reduction of 20% or more for atmospheric
+  variables such as geopotential, specific humidity, and temperature, as well as for the surface variable
+  of sea level pressure. Notably, the improvements are particularly pronounced in the upper levels of
+  the atmosphere for geopotential and specific humidity. Furthermore, the application of SCL‐net within
+  the Pangu Weather Model has further validated the enhanced forecast skill following data correction,
+  indicating its effectiveness in improving the medium‐range forecast capability of the analysis field.
+  Specifically, for 500 hPa medium‐range forecasts, the average anomaly correlation coefficient (ACC)
+  improved by 0.07, with the most significant improvement in geopotential, where the ACC increased by
+  0.1 on average, is twice that of the anomaly‐based numerical correction method, thus highlighting the
+  substantial potential of the SCL‐net in bias correction research for analysis fields.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

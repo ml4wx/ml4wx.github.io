@@ -1,0 +1,50 @@
+id: arxiv-2510.14962
+title: 'RainDiff: End-to-end Precipitation Nowcasting Via Token-wise Attention Diffusion'
+authors:
+- Thao Nguyen
+- Jiaqi Ma
+- Fahad Shahbaz Khan
+- Souhaib Ben Taieb
+- Salman Khan
+date: '2025-10-16'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2510.14962'
+links:
+  paper: https://arxiv.org/abs/2510.14962
+  pdf: https://arxiv.org/pdf/2510.14962
+topic: nowcasting
+type: model
+method:
+- diffusion
+- transformer
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: RainDiff integrates token-wise attention into a pixel-space U-Net diffusion model for radar precipitation
+  nowcasting without a separate autoencoder, improving fidelity and generalization.
+abstract: 'Precipitation nowcasting, predicting future radar echo sequences from current observations,
+  is a critical yet challenging task due to the inherently chaotic and tightly coupled spatio-temporal
+  dynamics of the atmosphere. While recent advances in diffusion-based models attempt to capture both
+  large-scale motion and fine-grained stochastic variability, they often suffer from scalability issues:
+  latent-space approaches require a separately trained autoencoder, adding complexity and limiting generalization,
+  while pixel-space approaches are computationally intensive and often omit attention mechanisms, reducing
+  their ability to model long-range spatio-temporal dependencies. To address these limitations, we propose
+  a Token-wise Attention integrated into not only the U-Net diffusion model but also the spatio-temporal
+  encoder that dynamically captures multi-scale spatial interactions and temporal evolution. Unlike prior
+  approaches, our method natively integrates attention into the architecture without incurring the high
+  resource cost typical of pixel-space diffusion, thereby eliminating the need for separate latent modules.
+  Our extensive experiments and visual evaluations across diverse datasets demonstrate that the proposed
+  method significantly outperforms state-of-the-art approaches, yielding superior local fidelity, generalization,
+  and robustness in complex precipitation forecasting scenarios.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

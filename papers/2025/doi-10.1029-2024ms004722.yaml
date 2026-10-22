@@ -1,0 +1,54 @@
+id: doi-10.1029-2024ms004722
+title: Stable Simulation of the Community Atmosphere Model Using Machine‐Learning Physical Parameterization
+  Trained With Experience Replay
+authors:
+- Jianda Chen
+- Minghua Zhang
+- Tao Zhang
+- Wuyin Lin
+- Wei Xue
+date: '2025-06-01'
+year: 2025
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2024ms004722
+  openalex: W4411191222
+links:
+  paper: https://doi.org/10.1029/2024ms004722
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2024MS004722
+orgs:
+- tsinghua-university
+topic: hybrid-parameterization
+type: model
+timescale:
+- climate
+spatial:
+- global
+data:
+- km-scale-sim
+status: research
+summary: Experience-replay multistep training makes an ML physics parameterization stable in CAM5 for
+  six-year online simulations, improving precipitation and temperature without extra constraints.
+abstract: Abstract In recent years, machine learning (ML) models have been used to improve physical parameterizations
+  of general circulation models (GCMs). A significant challenge of integrating ML models into GCMs is
+  the online instability when they are coupled for long‐term simulation. We present a new strategy that
+  demonstrates robust online stability when the physical parameterization package of an atmospheric GCM
+  is replaced by a deep ML model. The method uses experience replay with a multistep training scheme of
+  the ML model in which the model's own output at the previous time step is used in the training. Predicted
+  physics tendencies in the replay buffer with the most recent errors in the training iterations are reused,
+  making the ML model learn from its own errors. The training method reduces the gap between the offline
+  and online environments of the ML model. The method is used to train the ML model as the physical parameterization
+  of the Community Atmosphere Model (CAM5) with training data from the Multi‐scale Modeling Framework
+  high resolution simulations. Three 6‐year online simulations of the CAM5 are carried out by using the
+  ML physics package. The simulated spatial distributions of precipitation, surface temperature and zonally
+  averaged atmospheric fields demonstrate overall better accuracy than that of the standard CAM5 and benchmark
+  model even without the use of additional physical constraints or tuning. This work is the first to demonstrate
+  a solution to address the online instability problem in climate modeling with ML physics by using experience
+  replay.
+significance: 5
+cited_by: 6
+score: 30
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,53 @@
+id: doi-10.3390-cli13100211
+title: 'Development of Automatic Labels for Cold Front Detection in South America: A 2009 Case Study for
+  Deep Learning Applications'
+authors:
+- Dejanira Ferreira Braz
+- Luana Albertani Pampuch
+- Michelle Simões Reboita
+- Tércio Ambrizzi
+- Tristan Pryer
+date: '2025-10-08'
+year: 2025
+venue: Climate
+venue_type: journal
+ids:
+  doi: 10.3390/cli13100211
+  openalex: W4414960441
+links:
+  paper: https://doi.org/10.3390/cli13100211
+  pdf: https://www.mdpi.com/2225-1154/13/10/211/pdf?version=1759931789
+topic: benchmarks-data-eval
+topics:
+- extremes-hazards
+type: benchmark
+method:
+- other
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: Automatic ERA5-based cold front labelling combining thermal front parameter and advection yields
+  spatially aligned training labels for South America, detecting 58% more fronts over the South Atlantic.
+abstract: Deep learning models for atmospheric pattern recognition require spatially consistent training
+  labels that align precisely with input meteorological fields. This study introduces an automatic cold
+  front detection method using the ERA5 reanalysis dataset from the European Centre for Medium-Range Weather
+  Forecasts (ECMWF) at 850 hPa, specifically designed to generate physically consistent labels for machine
+  learning applications. The approach combines the Thermal Front Parameter (TFP) with temperature advection
+  (AdvT), applying optimized thresholds (TFP < 5 × 10−11 K m−2; AdvT < −1 × 10−4 K s−1), morphological
+  filtering, and polynomial smoothing. Comparison against 1426 manual charts from 2009 revealed systematic
+  spatial displacement, with mean offsets of ~502 km. Although pixel-level overlap was low, with Intersection
+  over Union (IoU) = 0.013 and Dice coefficient (Dice) = 0.034, spatial concordance exceeded 99%, confirming
+  both methods identify the same synoptic systems. The automatic method detects 58% more fronts over the
+  South Atlantic and 44% fewer over the Andes compared to manual charts. Seasonal variability shows maximum
+  activity in austral winter (31.3%) and minimum in summer (20.1%). This is the first automatic front
+  detection system calibrated for South America that maintains direct correspondence between training
+  labels and reanalysis input fields, addressing the spatial misalignment problem that limits deep learning
+  applications in atmospheric sciences.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

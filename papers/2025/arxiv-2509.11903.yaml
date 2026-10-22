@@ -1,0 +1,51 @@
+id: arxiv-2509.11903
+title: 'Wavelet-SARIMA-Transformer: A Hybrid Model for Rainfall Forecasting'
+authors:
+- Junmoni Saikia
+- Kuldeep Goswami
+- Sarat C. Kakaty
+date: '2025-09-15'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2509.11903'
+links:
+  paper: https://arxiv.org/abs/2509.11903
+  pdf: https://arxiv.org/pdf/2509.11903
+topic: local-forecasting
+topics:
+- post-processing
+type: model
+method:
+- transformer
+- classical-ml
+spatial:
+- regional
+data:
+- stations
+status: research
+summary: A wavelet-SARIMA-Transformer hybrid forecasts monthly rainfall for Northeast India subdivisions,
+  with the Haar-based variant giving the lowest errors across regions.
+abstract: This study develops and evaluates a novel hybridWavelet SARIMA Transformer, WST framework to
+  forecast using monthly rainfall across five meteorological subdivisions of Northeast India over the
+  1971 to 2023 period. The approach employs the Maximal Overlap Discrete Wavelet Transform, MODWT with
+  four wavelet families such as, Haar, Daubechies, Symlet, Coiflet etc. to achieve shift invariant, multiresolution
+  decomposition of the rainfall series. Linear and seasonal components are modeled using Seasonal ARIMA,
+  SARIMA, while nonlinear components are modeled by a Transformer network, and forecasts are reconstructed
+  via inverse MODWT. Comprehensive validation using an 80 is to 20 train test split and multiple performance
+  indices such as, RMSE, MAE, SMAPE, Willmotts d, Skill Score, Percent Bias, Explained Variance, and Legates
+  McCabes E1 demonstrates the superiority of the Haar-based hybrid model, WHST. Across all subdivisions,
+  WHST consistently achieved lower forecast errors, stronger agreement with observed rainfall, and unbiased
+  predictions compared with stand alone SARIMA, stand-alone Transformer, and two-stage wavelet hybrids.
+  Residual adequacy was confirmed through the Ljung Box test, while Taylor diagrams provided an integrated
+  assessment of correlation, variance fidelity, and RMSE, further reinforcing the robustness of the proposed
+  approach. The results highlight the effectiveness of integrating multiresolution signal decomposition
+  with complementary linear and deep learning models for hydroclimatic forecasting. Beyond rainfall, the
+  proposed WST framework offers a scalable methodology for forecasting complex environmental time series,
+  with direct implications for flood risk management, water resources planning, and climate adaptation
+  strategies in data-sparse and climate-sensitive regions.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

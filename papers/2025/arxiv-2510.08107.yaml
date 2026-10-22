@@ -1,0 +1,59 @@
+id: arxiv-2510.08107
+title: 'Beyond the Training Data: Confidence-Guided Mixing of Parameterizations in a Hybrid AI-Climate
+  Model'
+authors:
+- Helge Heuer
+- Tom Beucler
+- Mierk Schwabe
+- Julien Savre
+- Manuel Schlund
+- Veronika Eyring
+date: '2025-10-09'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2510.08107'
+  openalex: W4416383138
+links:
+  paper: https://arxiv.org/abs/2510.08107
+  pdf: https://arxiv.org/pdf/2510.08107
+topic: hybrid-parameterization
+topics:
+- climate-emulation
+type: model
+method:
+- physics-constrained
+timescale:
+- climate
+spatial:
+- global
+data:
+- other
+status: research
+summary: A ClimSim-trained physics-informed convection scheme transfers to ICON-A, and confidence-based
+  mixing with a conventional scheme improves AMIP precipitation statistics.
+abstract: Persistent systematic errors in Earth system models (ESMs) arise from difficulties in representing
+  the full diversity of subgrid, multiscale atmospheric convection and turbulence. Machine learning (ML)
+  parameterizations trained on short high-resolution simulations show strong potential to reduce these
+  errors. However, stable long-term atmospheric simulations with hybrid (physics + ML) ESMs remain difficult,
+  as neural networks (NNs) trained offline often destabilize online runs. Training convection parameterizations
+  directly on coarse-grained data is challenging, notably because scales cannot be cleanly separated.
+  This issue is mitigated using data from superparameterized simulations, which provide clearer scale
+  separation. Yet, transferring a parameterization from one ESM to another remains difficult due to distribution
+  shifts that induce large inference errors. Here, we present a proof-of-concept where a ClimSim-trained,
+  physics-informed NN convection parameterization is successfully transferred to ICON-A. The scheme is
+  (a) trained on adjusted ClimSim data with subtracted radiative tendencies, and (b) integrated into ICON-A.
+  The NN parameterization predicts its own error, enabling mixing with a conventional convection scheme
+  when confidence is low, thus making the hybrid AI-physics model tunable with respect to observations
+  and reanalysis through mixing parameters. This improves process understanding by constraining convective
+  tendencies across column water vapor, lower-tropospheric stability, and geographical conditions, yielding
+  interpretable regime behavior. In AMIP-style setups, several hybrid configurations outperform the default
+  convection scheme (e.g., improved precipitation statistics). With additive input noise during training,
+  both hybrid and pure-ML schemes lead to stable simulations and remain physically consistent for at least
+  20 years.
+significance: 5
+cited_by: 1
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

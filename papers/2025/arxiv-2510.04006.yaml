@@ -1,0 +1,57 @@
+id: arxiv-2510.04006
+title: Learning more physically realistic dynamics in machine-learning based weather forecasting with
+  latent-space constraints
+authors:
+- Hang Fan
+- Yi Xiao
+- Yongquan Qu
+- Juan Nathaniel
+- Fenghua Ling
+- Ben Fei
+- Lei Bai
+- Pierre Gentine
+date: '2025-10-05'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2510.04006'
+  openalex: W4417098205
+links:
+  paper: https://arxiv.org/abs/2510.04006
+  pdf: https://arxiv.org/pdf/2510.04006
+topic: global-medium-range
+topics:
+- data-assimilation
+type: model
+method:
+- other
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Trains forecast models with a 4DVar-inspired loss in an autoencoder latent space, giving better
+  long-range skill and more physically realistic fine-scale structure than model-space losses.
+abstract: Data-driven machine learning (ML) models are reshaping weather forecasting and have shown the
+  potential to accelerate and surpass traditional physics-based approaches, leading to a second revolution
+  in the field after data assimilation. However, most ML forecast models are trained with weighted variable-wise
+  losses on rollout forecasts that neglect cross-variable and spatial error covariance induced by physical
+  coupling, often yielding overly smooth and physically unrealistic long-range forecasts. To address this,
+  we reformulate model training as a four-dimensional variational data assimilation (4DVar) problem that
+  treats reanalysis data as imperfect observations. This enables the loss function to incorporate cross-variable
+  error covariance structures that capture multivariate dependencies and their associated errors. In practice,
+  we approximate this objective by computing the loss in an autoencoder-learned latent space of global
+  atmospheric states. By encoding complex nonlinear couplings among atmospheric variables, this representation
+  allows the high-dimensional, complex error covariance matrix in model space to be approximated as nearly
+  diagonal in latent space, substantially simplifying implementation. We show that rollout training with
+  latent-space constraints improves long-term forecast skill, while better preserving fine-scale structures
+  and physical realism than the widely used model-space loss. Finally, we extend this framework to accommodate
+  heterogeneous data sources, enabling the forecast model to be trained jointly on reanalysis and multi-source
+  observations within a unified theoretical formulation.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,59 @@
+id: arxiv-2510.15978
+title: 'DAWP: A framework for global observation forecasting via Data Assimilation and Weather Prediction
+  in satellite observation space'
+authors:
+- Junchao Gong
+- Jingyi Xu
+- Ben Fei
+- Fenghua Ling
+- Wenlong Zhang
+- Kun Chen
+- Wanghan Xu
+- Weidong Yang
+- Xiaokang Yang
+- Lei Bai
+date: '2025-10-13'
+year: 2025
+venue: https://neurips.cc/virtual/2025/poster/120074
+venue_type: journal
+ids:
+  arxiv: '2510.15978'
+links:
+  paper: https://arxiv.org/abs/2510.15978
+  pdf: https://arxiv.org/pdf/2510.15978
+topic: data-assimilation
+topics:
+- global-medium-range
+- observations-remote-sensing
+type: model
+method:
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- satellite
+status: research
+summary: DAWP assimilates irregular satellite observation tokens with a masked autoencoder and forecasts
+  in observation space, removing reliance on reanalysis for global weather prediction.
+abstract: Weather prediction is a critical task for human society, where impressive progress has been
+  made by training artificial intelligence weather prediction (AIWP) methods with reanalysis data. However,
+  reliance on reanalysis data limits the AIWPs with shortcomings, including data assimilation biases and
+  temporal discrepancies. To liberate AIWPs from the reanalysis data, observation forecasting emerges
+  as a transformative paradigm for weather prediction. One of the key challenges in observation forecasting
+  is learning spatiotemporal dynamics across disparate measurement systems with irregular high-resolution
+  observation data, which constrains the design and prediction of AIWPs. To this end, we propose our DAWP
+  as an innovative framework to enable AIWPs to operate in a complete observation space by initialization
+  with an artificial intelligence data assimilation (AIDA) module. Specifically, our AIDA module applies
+  a mask multi-modality autoencoder(MMAE)for assimilating irregular satellite observation tokens encoded
+  by mask ViT-VAEs. For AIWP, we introduce a spatiotemporal decoupling transformer with cross-regional
+  boundary conditioning (CBC), learning the dynamics in observation space, to enable sub-image-based global
+  observation forecasting. Comprehensive experiments demonstrate that AIDA initialization significantly
+  improves the roll out and efficiency of AIWP. Additionally, we show that DAWP holds promising potential
+  to be applied in global precipitation forecasting.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

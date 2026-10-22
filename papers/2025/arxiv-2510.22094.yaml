@@ -1,0 +1,47 @@
+id: arxiv-2510.22094
+title: Hierarchical Graph Networks for Accurate Weather Forecasting via Lightweight Training
+authors:
+- Thomas Bailie
+- S. Karthik Mukkavilli
+- Varvara Vetrova
+- Yun Sing Koh
+date: '2025-10-25'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2510.22094'
+links:
+  paper: https://arxiv.org/abs/2510.22094
+  pdf: https://arxiv.org/pdf/2510.22094
+topic: global-medium-range
+type: model
+method:
+- gnn
+- physics-constrained
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Hierarchical graph networks with latent memory retention forecast weather to 13 days with over
+  5% lower error, converging in one epoch from pretrained weights.
+abstract: 'Climate events arise from intricate, multivariate dynamics governed by global-scale drivers,
+  profoundly impacting food, energy, and infrastructure. Yet, accurate weather prediction remains elusive
+  due to physical processes unfolding across diverse spatio-temporal scales, which fixed-resolution methods
+  cannot capture. Hierarchical Graph Neural Networks (HGNNs) offer a multiscale representation, but nonlinear
+  downward mappings often erase global trends, weakening the integration of physics into forecasts. We
+  introduce HiFlowCast and its ensemble variant HiAntFlow, HGNNs that embed physics within a multiscale
+  prediction framework. Two innovations underpin their design: a Latent-Memory-Retention mechanism that
+  preserves global trends during downward traversal, and a Latent-to-Physics branch that integrates PDE
+  solution fields across diverse scales. Our Flow models cut errors by over 5% at 13-day lead times and
+  by 5-8% under 1st and 99th quantile extremes, improving reliability for rare events. Leveraging pretrained
+  model weights, they converge within a single epoch, reducing training cost and their carbon footprint.
+  Such efficiency is vital as the growing scale of machine learning challenges sustainability and limits
+  research accessibility. Code and model weights are in the supplementary materials.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

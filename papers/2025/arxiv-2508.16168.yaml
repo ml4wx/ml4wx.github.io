@@ -1,0 +1,59 @@
+id: arxiv-2508.16168
+title: 'FuXi-TC: A generative framework integrating deep learning and physics-based models for improved
+  tropical cyclone forecasts'
+authors:
+- Shan Guo
+- Lei Chen
+- Yangyang Zhao
+- Yuetan Lin
+- Zeyi Niu
+- Xinyan Zhang
+- Ziyao Sun
+- Xiaohui Zhong
+- Hao Li
+date: '2025-08-22'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2508.16168'
+links:
+  paper: https://arxiv.org/abs/2508.16168
+  pdf: https://arxiv.org/pdf/2508.16168
+topic: extremes-hazards
+topics:
+- downscaling
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+- transformer
+timescale:
+- short
+- medium
+spatial:
+- regional
+data:
+- era5
+- nwp-analysis
+status: pre-operational
+summary: Diffusion model conditioned on FuXi forecasts downscales tropical cyclone fields, matching ECMWF
+  intensity skill in 2024 with better precipitation and zero-shot transfer to Atlantic hurricanes.
+abstract: Tropical cyclones (TCs) are among the most devastating natural hazards, yet their intensity
+  remains notoriously difficult to predict. NWP models are constrained by both computational demands and
+  intrinsic predictability, while state-of-the-art deep learning-based weather forecasting models tend
+  to underestimate TC intensity due to biases in reanalysis-based training data. Here, we present FuXi-TC,
+  a diffusion-based generative forecasting framework that combines the track prediction strength of the
+  FuXi model with the intensity representation of NWP simulations. By conditioning a diffusion model on
+  the large-scale forecasts of the global FuXi model, FuXi-TC effectively downscales and delivers higher-accuracy
+  forecasts of fine-grained variable fields such as wind speed and precipitation. In evaluations across
+  the 2024 Western North Pacific, our approach matches the TC intensity forecast skill of the operational
+  ECMWF deterministic model while delivering superior precipitation forecasts. Meanwhile this is achieved
+  with significantly higher inference speeds and lower computational costs. Moreover, FuXi-TC demonstrates
+  robust zero-shot generalization directly when applied to North Atlantic hurricanes without any fine-tuning.
+  When applied to the FuXi ensemble model, this framework effectively yields well-dispersed probabilistic
+  forecasts and refines the ensemble intensity predictions.
+significance: 6
+score: 24
+highlight: false
+added: '2026-10-22'
+source: backfill

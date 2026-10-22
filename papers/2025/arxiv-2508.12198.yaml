@@ -1,0 +1,53 @@
+id: arxiv-2508.12198
+title: Exploring Multimodal AI Reasoning for Meteorological Forecasting from Skew-T Diagrams
+authors:
+- ChangJae Lee
+- Heecheol Yang
+- Jonghak Choi
+date: '2025-08-17'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2508.12198'
+links:
+  paper: https://arxiv.org/abs/2508.12198
+  pdf: https://arxiv.org/pdf/2508.12198
+topic: llms-agents
+topics:
+- nowcasting
+type: model
+method:
+- llm
+- transformer
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Fine-tuned small vision-language model reads Skew-T diagrams and estimates precipitation probability
+  with skill comparable to an operational NWP model.
+abstract: Forecasting from atmospheric soundings is a fundamental task in operational meteorology, often
+  requiring structured visual reasoning over Skew-T log-P diagrams by human forecasters. While recent
+  advances in Vision-Language Models (VLMs) have shown promise in other scientific domains, their application
+  to meteorological diagram interpretation remains largely unexplored. In this study, we present a lightweight
+  AI assistant that interprets Skew-T diagrams using a small language model (LM) and a small VLM fine-tuned
+  to emulate human forecasters. Using a curriculum learning framework, we first train the models to identify
+  key atmospheric features from diagrams through visual question answering, followed by chain-of-thought
+  reasoning tasks that estimate precipitation probability based on the derived visual groundings. Model
+  inputs include either textual summaries or generated Skew-T diagrams derived from operational Numerical
+  Weather Prediction (NWP) forecasts, paired with three-hour precipitation observations from South Korea's
+  Auto Weather Stations network. Evaluation results demonstrate that the fine-tuned VLM achieves skill
+  comparable to an operational NWP model, despite relying solely on static atmospheric profiles. Ablation
+  studies reveal that visual grounding and reasoning supervision are critical for performance, while attention
+  map analysis confirms that the model learns to focus on relevant meteorological features. These findings
+  highlight the potential of compact, interpretable multimodal models to support weather forecasting tasks.
+  The approach offers a computationally efficient alternative to large-scale systems, and future work
+  could extend it to more complex applications.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

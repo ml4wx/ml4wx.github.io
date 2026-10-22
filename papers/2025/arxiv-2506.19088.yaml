@@ -1,0 +1,54 @@
+id: arxiv-2506.19088
+title: Finetuning a Weather Foundation Model with Lightweight Decoders for Unseen Physical Processes
+authors:
+- Fanny Lehmann
+- Firat Ozdemir
+- Benedikt Soja
+- Torsten Hoefler
+- Siddhartha Mishra
+- Sebastian Schemm
+date: '2025-06-23'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2506.19088'
+links:
+  paper: https://arxiv.org/abs/2506.19088
+  pdf: https://arxiv.org/pdf/2506.19088
+topic: foundation-models
+topics:
+- downscaling
+type: model
+method:
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Shallow decoders on frozen Aurora latents predict unseen hydrological variables with 50% less
+  training time and 35% less memory than full fine-tuning, preserving autoregressive stability.
+abstract: Recent advances in AI weather forecasting have led to the emergence of so-called "foundation
+  models", typically defined by expensive pretraining and minimal fine-tuning for downstream tasks. However,
+  in the natural sciences, a desirable foundation model should also encode meaningful statistical relationships
+  between the underlying physical variables. This study evaluates the performance of the state-of-the-art
+  Aurora foundation model in predicting hydrological variables, which were not considered during pretraining.
+  We introduce a lightweight approach using shallow decoders trained on the latent representations of
+  the pretrained model to predict these new variables. As a baseline, we compare this to fine-tuning the
+  full model, which allows further optimization of the latent space while incorporating new variables
+  into both inputs and outputs. The decoder-based approach requires 50% less training time and 35% less
+  memory, while achieving strong accuracy across various hydrological variables and preserving desirable
+  properties of the foundation model, such as autoregressive stability. Notably, decoder accuracy depends
+  on the physical correlation between the new variables and those used during pretraining, indicating
+  that Aurora's latent space captures meaningful physical relationships. In this sense, we argue that
+  an important quality metric for foundation models in Earth sciences is their ability to be extended
+  to new variables without a full fine-tuning. This provides a new perspective for making foundation models
+  more accessible to communities with limited computational resources, while supporting broader adoption
+  in Earth sciences.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

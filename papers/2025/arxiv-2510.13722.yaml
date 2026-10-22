@@ -1,0 +1,60 @@
+id: arxiv-2510.13722
+title: Assessing the Geographic Generalization and Physical Consistency of Generative Models for Climate
+  Downscaling
+authors:
+- Carlo Saccardi
+- Maximilian Pierzyna
+- Haitz Sáez de Ocáriz Borde
+- Simone Monaco
+- Cristian Meo
+- Pietro Liò
+- Rudolf Saathof
+- Geethu Joseph
+- Justin Dauwels
+date: '2025-10-15'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2510.13722'
+  openalex: W4415277366
+links:
+  paper: https://arxiv.org/abs/2510.13722
+  pdf: https://arxiv.org/pdf/2510.13722
+  code: https://github.com/CarloSaccardi/PSD-Downscaling
+orgs:
+- university-of-cambridge
+topic: downscaling
+topics:
+- xai-uq-physics
+- benchmarks-data-eval
+type: evaluation
+method:
+- diffusion
+- physics-constrained
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Shows CorrDiff-type generative downscaling fails to generalize across European regions and misrepresents
+  divergence and vorticity; a PSD loss improves geographic generalization.
+abstract: 'Kilometer-scale weather data is crucial for real-world applications but remains computationally
+  intensive to produce using traditional weather simulations. An emerging solution is to use deep learning
+  models, which offer a faster alternative for climate downscaling. However, their reliability is still
+  in question, as they are often evaluated using standard machine learning metrics rather than insights
+  from atmospheric and weather physics. This paper benchmarks recent state-of-the-art deep learning models
+  and introduces physics-inspired diagnostics to evaluate their performance and reliability, with a particular
+  focus on geographic generalization and physical consistency. Our experiments show that, despite the
+  seemingly strong performance of models such as CorrDiff, when trained on a limited set of European geographies
+  (e.g., central Europe), they struggle to generalize to other regions such as Iberia, Morocco in the
+  south, or Scandinavia in the north. They also fail to accurately capture second-order variables such
+  as divergence and vorticity derived from predicted velocity fields. These deficiencies appear even in
+  in-distribution geographies, indicating challenges in producing physically consistent predictions. We
+  propose a simple initial solution: introducing a power spectral density loss function that empirically
+  improves geographic generalization by encouraging the reconstruction of small-scale physical structures.
+  The code for reproducing the experimental results can be found at https://github.com/CarloSaccardi/PSD-Downscaling'
+significance: 4
+score: 36
+highlight: false
+added: '2026-10-22'
+source: backfill

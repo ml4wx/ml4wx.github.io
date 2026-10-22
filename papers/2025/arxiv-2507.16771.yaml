@@ -1,0 +1,49 @@
+id: arxiv-2507.16771
+title: A Partitioned Sparse Variational Gaussian Process for Fast, Distributed Spatial Modeling
+authors:
+- Michael Grosskopf
+- Kellin Rumsey
+- Ayan Biswas
+- Earl Lawrence
+date: '2025-07-22'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2507.16771'
+  openalex: W4414427293
+links:
+  paper: https://arxiv.org/abs/2507.16771
+  pdf: https://arxiv.org/pdf/2507.16771
+topic: infra-software
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- cmip
+- other
+status: research
+summary: Partitioned sparse variational GP with neighbor communication yields smoother distributed spatial
+  predictions on E3SM Earth system model output, with no memory overhead.
+abstract: The next generation of Department of Energy supercomputers will be capable of exascale computation.
+  For these machines, far more computation will be possible than that which can be saved to disk. As a
+  result, users will be unable to rely on post-hoc access to data for uncertainty quantification and other
+  statistical analyses and there will be an urgent need for sophisticated machine learning algorithms
+  which can be trained in situ. Algorithms deployed in this setting must be highly scalable, memory efficient
+  and capable of handling data which is distributed across nodes as spatially contiguous partitions. One
+  suitable approach involves fitting a sparse variational Gaussian process (SVGP) model independently
+  and in parallel to each spatial partition. The resulting model is scalable, efficient and generally
+  accurate, but produces the undesirable effect of constructing discontinuous response surfaces due to
+  the disagreement between neighboring models at their shared boundary. In this paper, we extend this
+  idea by allowing for a small amount of communication between neighboring spatial partitions which encourages
+  better alignment of the local models, leading to smoother spatial predictions and a better fit in general.
+  Due to our decentralized communication scheme, the proposed extension remains highly scalable and adds
+  very little overhead in terms of computation (and none, in terms of memory). We demonstrate this Partitioned
+  SVGP (PSVGP) approach for the Energy Exascale Earth System Model (E3SM) and compare the results to the
+  independent SVGP case.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

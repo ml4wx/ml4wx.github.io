@@ -1,0 +1,53 @@
+id: doi-10.1002-solr.202500365
+title: 'HelioNet‐IR: Combining Infrared and Visible Satellite Images for Solar Irradiance Forecasting
+  in the Early‐Morning Hours'
+authors:
+- Nils Straub
+- Wiebke Herzberg
+- Elke Lorenz
+date: '2025-07-11'
+year: 2025
+venue: Solar RRL
+venue_type: journal
+ids:
+  doi: 10.1002/solr.202500365
+  openalex: W4412188095
+links:
+  paper: https://doi.org/10.1002/solr.202500365
+topic: nowcasting
+topics:
+- observations-remote-sensing
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+- nwp-analysis
+status: research
+summary: HelioNet-IR, a UNet CNN on Meteosat infrared and visible images, extends satellite cloud-index
+  forecast availability from 22% to 100% before 8 AM.
+abstract: Forecasting of solar irradiance is crucial for integrating large shares of photovoltaics into
+  the electricity grid. On timescales up to a few hours ahead, satellite‐based (SAT) forecasts can significantly
+  improve upon numerical weather predictions (NWPs). Conventional SAT methods derive cloud motion vectors
+  (CMV) from consecutive images and extrapolate these to forecast future cloud situations. A semi‐empirical
+  version of the Heliosat method is widely used to retrieve global horizontal irradiance from visible‐range
+  satellite images via the cloud index (CI) as key parameter. When derived from the visible spectrum,
+  CI computation is restricted to daylight hours, and before sunrise, no SAT forecast is available for
+  the early morning. Here, we present HelioNetIR, a convolutional neural network with UNet architecture
+  to forecast CI derived from Meteosat second generation images without strictly relying on sun illumination.
+  To do so, input CI is complemented with two additional infrared channels. Forecasts of HelioNetIR are
+  benchmarked against different CMV and NWP models and its purely CI‐based predecessor HelioNetVIS over
+  one full year (2024) with lead times (LTs) up to 4 hr and 15‐min resolution. HelioNetIR can increase
+  SAT‐forecast availability from 22% to 100% for forecasts initiated before 8 AM. It notably outperforms
+  NWP for , reducing root mean square error by over 40% within the first hour. During daytime, reference
+  SAT models are outperformed for all LTs considered.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

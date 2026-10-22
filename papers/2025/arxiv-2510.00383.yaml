@@ -1,0 +1,43 @@
+id: arxiv-2510.00383
+title: Generative AI for subgrid turbulence in large-eddy simulations
+authors:
+- Yu Cheng
+- Tianle Liu
+date: '2025-10-01'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2510.00383'
+  openalex: W4414806779
+links:
+  paper: https://arxiv.org/abs/2510.00383
+  pdf: https://arxiv.org/pdf/2510.00383
+topic: hybrid-parameterization
+type: model
+method:
+- diffusion
+spatial:
+- local
+data:
+- km-scale-sim
+status: research
+summary: A denoising diffusion model reconstructs subgrid stresses in atmospheric boundary-layer LES from
+  coarse velocity fields, beating Smagorinsky and prior DNN models on correlations and distributions.
+abstract: Turbulence governs the transport of momentum, energy, and scalars in many geophysical and engineering
+  flows. In large-eddy simulations (LES), parameterizing subgrid-scale (SGS) stresses remains a central
+  challenge, as unresolved physical processes strongly influence turbulent transport. Traditional SGS
+  models, such as the Smagorinsky-type models and deep neural networks (DNNs), are deterministic and cannot
+  capture the stochastic nature of turbulence. Despite its wide application in computer vision and natural
+  language processing, generative artificial intelligence (AI) has not previously been applied to directly
+  compute SGS stresses in three-dimensional turbulent boundary layers at high Reynolds numbers. Here we
+  introduce a denoising diffusion probabilistic model (DDPM) to reconstruct SGS stresses from coarse-grained
+  velocity fields in direct numerical simulations of the atmospheric boundary layer. The DDPM consistently
+  outperforms Smagorinsky-type models and previous deep neural networks in terms of spatial correlations
+  and probability distributions for deviatoric stresses, and can be applied to unseen convective stability
+  conditions and resolutions. By learning conditional distributions rather than pointwise values, this
+  generative approach opens a new direction for SGS turbulence modeling at high Reynolds numbers.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

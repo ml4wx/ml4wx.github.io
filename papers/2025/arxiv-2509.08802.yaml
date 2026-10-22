@@ -1,0 +1,52 @@
+id: arxiv-2509.08802
+title: Using machine learning to downscale coarse-resolution environmental variables for understanding
+  the spatial frequency of convective storms
+authors:
+- Hungjui Yu
+- Lander Ver Hoef
+- Kristen L. Rasmussen
+- Imme Ebert-Uphoff
+date: '2025-09-10'
+year: 2025
+venue: Artificial Intelligence for the Earth Systems (2026)
+venue_type: journal
+ids:
+  arxiv: '2509.08802'
+  doi: 10.1175/aies-d-25-0085.1
+links:
+  paper: https://arxiv.org/abs/2509.08802
+  pdf: https://arxiv.org/pdf/2509.08802
+topic: downscaling
+topics:
+- climate-analysis-attribution
+type: model
+method:
+- other
+spatial:
+- regional
+data:
+- km-scale-sim
+status: research
+summary: Pixel-based neural networks map coarse environmental variables to convection-permitting storm
+  frequency with SSIM above 0.8, capturing diurnal and orographic patterns.
+abstract: Global climate models (GCMs), typically run at ~100-km resolution, capture large-scale environmental
+  conditions but cannot resolve convection and cloud processes at kilometer scales. Convection-permitting
+  models offer higher-resolution simulations that explicitly simulate convection but are computationally
+  expensive and impractical for large ensemble runs. This study explores machine learning (ML) as a bridge
+  between these approaches. We train simple, pixel-based neural networks to predict convective storm frequency
+  from environmental variables produced by a regional convection-permitting model. The ML models achieve
+  promising results, with structural similarity index measure (SSIM) values exceeding 0.8, capturing the
+  diurnal cycle and orographic convection without explicit temporal or spatial coordinates as input. Model
+  performance declines when fewer input features are used or specific regions are excluded, underscoring
+  the role of diverse physical mechanisms in convective activity. These findings highlight ML potential
+  as a computationally efficient tool for representing convection and as a means of scientific discovery,
+  offering insights into convective processes. Unlike convolutional neural networks, which depend on spatial
+  structure and grid size, the pixel-based model treats each grid point independently, enabling value-to-value
+  prediction without spatial context. This design enhances adaptability to resolution changes and supports
+  generalization to unseen environmental regimes, making it particularly suited for linking environmental
+  conditions to convective features and for application across diverse model grids or climate scenarios.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

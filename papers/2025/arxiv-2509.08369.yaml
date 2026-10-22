@@ -1,0 +1,49 @@
+id: arxiv-2509.08369
+title: Stop using root-mean-square error as a precipitation target!
+authors:
+- Kieran M. R. Hunt
+date: '2025-09-10'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2509.08369'
+links:
+  paper: https://arxiv.org/abs/2509.08369
+  pdf: https://arxiv.org/pdf/2509.08369
+topic: nowcasting
+topics:
+- downscaling
+type: position
+method:
+- diffusion
+- rnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Argues for Tweedie deviance loss over RMSE for precipitation models; shows gains in diffusion
+  downscaling and ConvLSTM nowcasting, with up to 16% MAE improvement.
+abstract: Root-mean-square error (RMSE) remains the default training loss for data-driven precipitation
+  models, despite precipitation being semi-continuous, zero-inflated, strictly non-negative, and heavy-tailed.
+  This Gaussian-implied objective misspecifies the data-generating process because it tolerates negative
+  predictions, underpenalises rare heavy events, and ignores the mass at zero. We propose replacing RMSE
+  with the Tweedie deviance, a likelihood-based and differentiable loss from the exponential--dispersion
+  family with variance function $V(μ)=μ^p$. For $1<p<2$ it yields a compound Poisson--Gamma distribution
+  with a point mass at zero and a continuous density for $y>0$, matching observed precipitation characteristics.
+  We (i) estimate $p$ from the variance--mean power law and show that precipitation across temporal aggregations
+  is far from Gaussian, with the Tweedie power $p$ increasing with accumulation length towards a Gamma
+  limit; and (ii) demonstrate consistent skill gains when training deep data-driven models with Tweedie
+  deviance in place of RMSE. In diffusion-model downscaling over Beijing, Tweedie loss improves wet-pixel
+  MAE and extreme recall ($\sim0.60$ vs $0.50$ at the 99th percentile). In ConvLSTM nowcasting over Kolkata,
+  Tweedie loss yields improved wet-pixel MAE and dry-pixel hit rates, with improvements that compound
+  autoregressively with lead time (for MAE, $\sim2%$ at $t{+}1$ growing to $\sim16%$ at $t{+}4$). Because
+  the Tweedie deviance is continuous in $p$, it adapts smoothly across scales, offering a statistically
+  justified, practical replacement for RMSE in precipitation-based learning tasks.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

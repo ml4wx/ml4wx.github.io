@@ -1,0 +1,54 @@
+id: doi-10.1038-s41467-025-62761-3
+title: Skillful subseasonal soil moisture drought forecasts with deep learning-dynamic models
+authors:
+- Kyle Lesinger
+- Di Tian
+date: '2025-08-12'
+year: 2025
+venue: Nature Communications
+venue_type: journal
+ids:
+  doi: 10.1038/s41467-025-62761-3
+  openalex: W4413102631
+links:
+  paper: https://doi.org/10.1038/s41467-025-62761-3
+  pdf: https://www.nature.com/articles/s41467-025-62761-3.pdf
+topic: s2s-seasonal
+topics:
+- extremes-hazards
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- s2s
+spatial:
+- global
+- regional
+data:
+- era5
+- nwp-analysis
+status: research
+summary: Hybrid RISE-UNet plus ECMWF and GEFS subseasonal forecasts skillfully predicts root-zone soil
+  moisture and flash droughts up to four weeks ahead, beating dynamic models.
+abstract: Deep neural networks that learn from climate reanalysis data have produced skillful weather
+  forecasts within ten days. However, it is still a great challenge for dynamic models to predict soil
+  moisture, droughts, and other extreme events with lead times beyond two weeks. Here, we combine a recursive
+  deep learning model (namely RISE-UNet) and subseasonal forecasts from dynamic models and achieve skillful
+  forecasts of root zone soil moisture up to four weeks in advance. Our hybrid model, combining RISE-UNet
+  and dynamic model forecasts, outperforms reanalysis-driven RISE-UNet models, while both methods show
+  significantly higher performance than the latest European Centre for Medium-Range Weather Forecasts
+  (ECMWF) and Global Ensemble Forecast System (GEFS) dynamic models, the postprocessed ECMWF or GEFS subseasonal
+  forecasts by RISE-UNet, or ensemble model output statistics. The hybrid model shows skill in predicting
+  flash droughts, which is higher than ECMWF and GEFS models in most cases, as demonstrated for major
+  events in the United States, China, and Australia. The forecast skill of the hybrid modeling approach
+  from weeks three to four is mainly due to the inclusion of the first two-week dynamic model forecasts
+  and antecedent root zone soil moisture reanalysis. Our results indicate that combining deep learning
+  with dynamic model forecasts can substantially improve the skill of subseasonal predictions beyond two
+  weeks, particularly for root zone soil moisture and flash drought events.
+significance: 6
+cited_by: 26
+score: 44
+highlight: false
+added: '2026-10-22'
+source: backfill

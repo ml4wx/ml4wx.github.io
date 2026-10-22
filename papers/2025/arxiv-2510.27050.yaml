@@ -1,0 +1,42 @@
+id: arxiv-2510.27050
+title: Accelerating Radiative Transfer for Planetary Atmospheres by Orders of Magnitude with a Transformer-Based
+  Machine Learning Model
+authors:
+- Isaac Malsky
+- Tiffany Kataria
+- Natasha E. Batalha
+- Matthew Graham
+date: '2025-10-30'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2510.27050'
+  openalex: W4415914386
+links:
+  paper: https://arxiv.org/abs/2510.27050
+  pdf: https://arxiv.org/pdf/2510.27050
+topic: hybrid-parameterization
+type: model
+method:
+- transformer
+data:
+- other
+status: research
+summary: An encoder-only transformer emulates radiative transfer for hot Jupiter atmospheres with about
+  1% error and 100x speedup, aimed at faster GCM radiation routines.
+abstract: 'Radiative transfer calculations are essential for modeling planetary atmospheres. However,
+  standard methods are computationally demanding and impose accuracy-speed trade-offs. High computational
+  costs force numerical simplifications in large models (e.g., General Circulation Models) that degrade
+  the accuracy of the simulation. Radiative transfer calculations are an ideal candidate for machine learning
+  emulation: fundamentally, it is a well-defined physical mapping from a static atmospheric profile to
+  the resulting fluxes, and high-fidelity training data can be created from first principles calculations.
+  We developed a radiative transfer emulator using an encoder-only transformer neural network architecture,
+  trained on 1D profiles representative of solar-composition hot Jupiter atmospheres. Our emulator reproduced
+  bolometric two-stream layer fluxes with mean test set errors of ~1% compared to the traditional method
+  and achieved speedups of 100x. Emulating radiative transfer with machine learning opens up the possibility
+  for faster and more accurate routines within planetary atmospheric models such as GCMs.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,51 @@
+id: arxiv-2509.10501
+title: 'From Noise to Precision: A Diffusion-Driven Approach to Zero-Inflated Precipitation Prediction'
+authors:
+- Wentao Gao
+- Jiuyong Li
+- Lin Liu
+- Thuc Duy Le
+- Xiongren Chen
+- Xiaojing Du
+- Jixue Liu
+- Yanchang Zhao
+- Yun Chen
+date: '2025-09-01'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2509.10501'
+links:
+  paper: https://arxiv.org/abs/2509.10501
+  pdf: https://arxiv.org/pdf/2509.10501
+topic: local-forecasting
+topics:
+- extremes-hazards
+type: model
+method:
+- transformer
+- diffusion
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Diffusion-based framework (ZIDF) for zero-inflated precipitation series from South Australia
+  cuts MSE by up to 56.7% versus a Non-stationary Transformer baseline.
+abstract: Zero-inflated data pose significant challenges in precipitation forecasting due to the predominance
+  of zeros with sparse non-zero events. To address this, we propose the Zero Inflation Diffusion Framework
+  (ZIDF), which integrates Gaussian perturbation for smoothing zero-inflated distributions, Transformer-based
+  prediction for capturing temporal patterns, and diffusion-based denoising to restore the original data
+  structure. In our experiments, we use observational precipitation data collected from South Australia
+  along with synthetically generated zero-inflated data. Results show that ZIDF demonstrates significant
+  performance improvements over multiple state-of-the-art precipitation forecasting models, achieving
+  up to 56.7\% reduction in MSE and 21.1\% reduction in MAE relative to the baseline Non-stationary Transformer.
+  These findings highlight ZIDF's ability to robustly handle sparse time series data and suggest its potential
+  generalizability to other domains where zero inflation is a key challenge.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

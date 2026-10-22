@@ -1,0 +1,49 @@
+id: arxiv-2510.10702
+title: Attention-Enhanced LSTM Modeling for Improved Temperature and Rainfall Forecasting in Bangladesh
+authors:
+- Usman Gani Joy
+- Shahadat kabir
+- Tasnim Niger
+date: '2025-10-12'
+year: 2025
+venue: Theor Appl Climatol 156, 613 (2025)
+venue_type: journal
+ids:
+  arxiv: '2510.10702'
+  doi: 10.1007/s00704-025-05858-5
+links:
+  paper: https://arxiv.org/abs/2510.10702
+  pdf: https://arxiv.org/pdf/2510.10702
+topic: local-forecasting
+type: model
+method:
+- rnn
+timescale:
+- seasonal
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Attention-augmented LSTM forecasts Bangladesh monthly temperature and rainfall from 1901-2023
+  records, reporting R^2 of 0.983 for temperature and 0.964 for rainfall.
+abstract: Accurate climate forecasting is vital for Bangladesh, a region highly susceptible to climate
+  change impacts on temperature and rainfall. Existing models often struggle to capture long-range dependencies
+  and complex temporal patterns in climate data. This study introduces an advanced Long Short-Term Memory
+  (LSTM) model integrated with an attention mechanism to enhance the prediction of temperature and rainfall
+  dynamics. Utilizing comprehensive datasets from 1901-2023, sourced from NASA's POWER Project for temperature
+  and the Humanitarian Data Exchange for rainfall, the model effectively captures seasonal and long-term
+  trends. It outperforms baseline models, including XGBoost, Simple LSTM, and GRU, achieving a test MSE
+  of 0.2411 (normalized units), MAE of 0.3860 degrees C, R^2 of 0.9834, and NRMSE of 0.0370 for temperature,
+  and MSE of 1283.67 mm^2, MAE of 22.91 mm, R^2 of 0.9639, and NRMSE of 0.0354 for rainfall on monthly
+  forecasts. The model demonstrates improved robustness with only a 20 percent increase in MSE under simulated
+  climate trends (compared to an approximately 2.2-fold increase in baseline models without trend features)
+  and a 50 percent degradation under regional variations (compared to an approximately 4.8-fold increase
+  in baseline models without enhancements). These results highlight the model's ability to improve forecasting
+  precision and offer potential insights into the physical processes governing climate variability in
+  Bangladesh, supporting applications in climate-sensitive sectors.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,52 @@
+id: doi-10.1002-met.70074
+title: Operational Machine Learning Post‐Processing of Short‐Range Temperature, Humidity, Wind Speed and
+  Gust Forecasts
+authors:
+- Leila Hieta
+- Mikko Partio
+date: '2025-07-01'
+year: 2025
+venue: Meteorological Applications
+venue_type: journal
+ids:
+  doi: 10.1002/met.70074
+  openalex: W4413372491
+links:
+  paper: https://doi.org/10.1002/met.70074
+  code: https://github.com/fmidev/snwc_bc
+topic: post-processing
+topics:
+- nowcasting
+type: operational
+method:
+- classical-ml
+timescale:
+- nowcast
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: operational
+summary: XGBoost bias correction of FMI's NWP nowcast for temperature, humidity and wind cuts RMSE by
+  24–29% and runs operationally.
+abstract: 'ABSTRACT Statistical methods can be used to create bias correction models that learn from past
+  forecast errors and reduce systematic errors in real‐time forecasts. This study presents a machine learning
+  (ML) approach using extreme gradient‐boosted (XGBoost) trees to address biases in a numerical weather
+  prediction (NWP) nowcast model for key meteorological parameters: 2‐m temperature, 2‐m relative humidity,
+  10‐m wind speed, and 10‐m wind gust. These ML models have been integrated into the Finnish Meteorological
+  Institute''s (FMI) operational nowcasting framework, Smartmet nowcast. Results show that, even with
+  a relatively modest set of meteorological predictors, the ML bias correction method significantly improves
+  forecast accuracy, reducing the root mean square error (RMSE) by 24%–29% compared to the direct NWP
+  model output. The implementation of this new bias correction method not only improves the quality of
+  FMI''s short‐range forecasts, but also extends the availability of bias‐corrected data for longer forecast
+  lead times, offering substantial improvements over the previously implemented bias correction method.
+  The codebase for this machine learning bias correction is available at ( https://github.com/fmidev/snwc_bc
+  ).'
+significance: 4
+cited_by: 8
+score: 36
+highlight: false
+added: '2026-10-22'
+source: backfill

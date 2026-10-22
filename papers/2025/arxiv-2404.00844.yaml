@@ -1,0 +1,67 @@
+id: arxiv-2404.00844
+title: 'Nonlinear Ensemble Filtering with Diffusion Models: Application to the Surface Quasigeostrophic
+  Dynamics'
+authors:
+- Feng Bao
+- Hristo Georgiev Chipilski
+- Siming Liang
+- Guannan Zhang
+- Jeffrey S. Whitaker
+date: '2025-05-14'
+year: 2025
+venue: Monthly Weather Review
+venue_type: journal
+ids:
+  arxiv: '2404.00844'
+  doi: 10.1175/mwr-d-24-0069.1
+  openalex: W4410364351
+links:
+  paper: https://doi.org/10.1175/mwr-d-24-0069.1
+  pdf: https://arxiv.org/pdf/2404.00844
+orgs:
+- noaa
+- ornl
+topic: data-assimilation
+topics:
+- xai-uq-physics
+type: model
+method:
+- diffusion
+spatial:
+- global
+data:
+- other
+status: research
+summary: Training-free diffusion-based ensemble score filter outperforms LETKF on nonlinear observations
+  in a surface quasi-geostrophic model, with gains at large scales.
+abstract: Abstract The intersection between classical data assimilation methods and novel machine learning
+  techniques has attracted significant interest in recent years. Here, we explore another promising solution
+  in which diffusion models are used to formulate a robust nonlinear ensemble filter for sequential data
+  assimilation. Unlike standard machine learning methods, the proposed ensemble score filter (EnSF) is
+  completely training free and can efficiently generate a set of analysis ensemble members. In this study,
+  we apply the EnSF to a surface quasigeostrophic model and compare its performance against the popular
+  local ensemble transform Kalman filter (LETKF), which makes Gaussian assumptions in the analysis step.
+  Numerical tests demonstrate that EnSF maintains stable performance in the absence of localization and
+  for a variety of experimental settings. We find that while LETKF maintains optimal performance in the
+  case of linear observations of the entire state and a perfect model, EnSF shows improvements over LETKF
+  when nonlinear observations are assimilated and the system is subject to unexpected model errors. A
+  spectral decomposition of the analysis results in this nonlinear observation regime shows that the largest
+  improvements over LETKF occur at large scales (small wavenumbers), where LETKF lacks sufficient ensemble
+  spread. Overall, this initial application of EnSF to a geophysical model of intermediate complexity
+  motivates further development of the algorithm for more realistic problems. Significance Statement It
+  is hard to overstate the crucial role that the field of artificial intelligence (AI) has played in the
+  weather and climate enterprise. Considerable progress in the last few years has come from a particular
+  area known as generative AI (GenAI). In this work, we borrow ideas from a popular GenAI technique known
+  as diffusion models to explore a new data assimilation (DA) method which can extract useful information
+  from complex (nonlinear) observation types like satellite data. We implement an efficient (training
+  free) version of the resulting algorithm [ensemble score filter (EnSF)] in a benchmark model of geophysical
+  turbulence. In the case of assimilating nonlinear observations and dealing with unknown model errors,
+  EnSF demonstrates improvements against a popular DA method used in operations [local ensemble transform
+  Kalman filter (LETKF)]. These improvements in EnSF occur without any additional fine-tuning efforts
+  or the application of standard regularization techniques such as localization.
+significance: 4
+cited_by: 11
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,56 @@
+id: doi-10.3390-w17091381
+title: Precipitation Spatio-Temporal Forecasting in China via DC-CNN-BiLSTM
+authors:
+- Peng Shu
+- Xiaoqi Duan
+- Chenming Shao
+- Jie Liu
+- Youliang Tian
+- Sheng Li
+date: '2025-05-04'
+year: 2025
+venue: Water
+venue_type: journal
+ids:
+  doi: 10.3390/w17091381
+  openalex: W4410068836
+links:
+  paper: https://doi.org/10.3390/w17091381
+  pdf: https://www.mdpi.com/2073-4441/17/9/1381/pdf?version=1746341576
+topic: local-forecasting
+topics:
+- nowcasting
+type: model
+method:
+- cnn
+- rnn
+timescale:
+- short
+- medium
+spatial:
+- regional
+data:
+- stations
+- other
+status: research
+summary: DC-CNN-BiLSTM combines dilated causal convolutions with a BiLSTM for China precipitation forecasting,
+  cutting RMSE by 9% versus ConvLSTM.
+abstract: Accurate and reliable precipitation prediction remains a significant challenge due to an incomplete
+  understanding of regional meteorological dynamics and limitations in forecasting routine weather events.
+  To overcome these challenges, we propose a novel model, DC-CNN-BiLSTM, which integrates a dilation causal
+  convolutional neural network (DC-CNN) with a Bidirectional Long Short-Term Memory (BiLSTM) network.
+  The DC-CNN component, by fusing causal and dilated convolutions, extracts multi-scale spatial features
+  from time series data. In parallel, the BiLSTM module leverages bidirectional memory cells to capture
+  long-term temporal dependencies. This integrated approach effectively links localized meteorological
+  inputs with broader hydrological responses. Experimental evaluation demonstrates that the DC-CNN-BiLSTM
+  model significantly outperforms traditional models. Specifically, the model improves the Root Mean Square
+  Error (RMSE) by 9.05% compared to ConvLSTM and by 32.3% compared to ConvGRU, particularly in forecasting
+  medium- to long-term precipitation. In conclusion, our results validate the benefits of incorporating
+  advanced spatio-temporal feature extraction techniques for precipitation forecasting, ultimately improving
+  disaster preparedness and resource management.
+significance: 2
+cited_by: 3
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

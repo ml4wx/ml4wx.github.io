@@ -1,0 +1,54 @@
+id: doi-10.1029-2024ms004833
+title: Vertically Recurrent Neural Networks for Sub‐Grid Parameterization
+authors:
+- Peter Ukkonen
+- Matthew Chantry
+date: '2025-06-01'
+year: 2025
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2024ms004833
+  openalex: W4411235847
+links:
+  paper: https://doi.org/10.1029/2024ms004833
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2024MS004833
+orgs:
+- ecmwf
+- university-of-oxford
+topic: hybrid-parameterization
+type: model
+method:
+- rnn
+spatial:
+- global
+data:
+- nwp-analysis
+- other
+status: research
+summary: Shows recurrent networks emulate IFS radiation, gravity waves and moist physics with stable autoregressive
+  runs, matching ResNets offline and running more efficiently.
+abstract: Abstract Machine learning has the potential to improve the physical realism and/or computational
+  efficiency of parameterizations. A typical approach has been to feed concatenated vertical profiles
+  to a dense neural network. However, feed‐forward networks lack the connections to propagate information
+  sequentially through the vertical column. Here we examine if predictions can be improved by instead
+  traversing the column with recurrent neural networks (RNNs) such as Long Short‐Term Memory (LSTMs).
+  This method encodes physical priors (locality) and uses parameters more efficiently. Firstly, we test
+  RNN‐based radiation emulators in the Integrated Forecasting System. We achieve near‐perfect offline
+  accuracy, and the forecast skill of a suite of global weather simulations using the emulator are for
+  the most part statistically indistinguishable from reference runs. But can radiation emulators provide
+  both high accuracy and a speed‐up? We find optimized, state‐of‐the‐art radiation code on CPU generally
+  faster than RNN‐based emulators on GPU, although the latter can be more energy efficient. To test the
+  method more broadly, and explore recent challenges in parameterization, we also adapt it to data sets
+  from other studies. RNNs outperform reference feed‐forward networks in emulating gravity waves, and
+  when combined with horizontal convolutions, for non‐local unified parameterization. In emulation of
+  moist physics with memory, the RNNs have similar offline accuracy as ResNets, the previous state‐of‐the‐art.
+  However, the RNNs are more efficient, and more stable in autoregressive semi‐prognostic tests. Multi‐step
+  autoregressive training improves performance in these tests and enables a latent representation of convective
+  memory. Recently proposed linearly recurrent models achieve similar performance to LSTMs.
+significance: 4
+cited_by: 1
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

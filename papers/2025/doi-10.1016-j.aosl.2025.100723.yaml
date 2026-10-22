@@ -1,0 +1,60 @@
+id: doi-10.1016-j.aosl.2025.100723
+title: Improving hail nowcasting using multi-source data and a WMHDA-enhanced DIFF-Transformer
+authors:
+- Wenda Zhu
+- Zhenyu Lu
+- Yuan Zhang
+- Zhongfeng Chen
+- Bingjian Lu
+date: '2025-10-04'
+year: 2025
+venue: Atmospheric and Oceanic Science Letters
+venue_type: journal
+ids:
+  doi: 10.1016/j.aosl.2025.100723
+  openalex: W4414804055
+links:
+  paper: https://doi.org/10.1016/j.aosl.2025.100723
+orgs:
+- nuist
+topic: extremes-hazards
+topics:
+- nowcasting
+type: model
+method:
+- transformer
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- satellite
+- stations
+- other
+status: pre-operational
+summary: HailPre, a DIFF-Transformer fusing radar, Himawari satellite and lightning data, nowcasts hail
+  60 minutes ahead in Guizhou with CSI 0.46.
+abstract: HailPre is a deep learning framework developed for accurate 60-minute hail nowcasting at 10-minute
+  intervals, tailored for regions with complex terrain and imbalanced hail event distributions. It integrates
+  multi-source remote sensing data, including weather radar mosaics, Himawari-8/9 satellite infrared imagery,
+  lightning strike records, gridded precipitation, topographic elevation, and land cover, fused with expert-verified
+  ground-based hail observations from 2022–2024 in Guizhou. The framework employs a DIFF-Transformer architecture,
+  enhanced with a Weighted Multi-Head Differential Attention (WMHDA) mechanism, to capture complex spatiotemporal
+  patterns in hail nowcasting. A composite loss function, combining binary cross-entropy, Dice, and focal
+  losses, addresses class imbalance by emphasizing rare hail events. Ablation experiments on the model
+  confirm the contribution of the WMHDA module. Experimental evaluation demonstrates HailPre’s superior
+  performance, achieving an average 60-minute CSI (Critical Success Index) of 0.4617 and POD (Probability
+  of Detection) of 0.6406, outperforming baseline models by 6%–39% in neighborhood-based metrics. Ablation
+  studies on data sources and SHAP (SHapley Additive exPlanations) analysis reveal that satellite-derived
+  predictors play the dominant role, followed by static and radar data. These findings highlight HailPre’s
+  ability to leverage diverse data and specialized architecture for robust hail nowcasting, offering practical
+  value for operational weather forecasting and disaster preparedness in hail-prone regions. HailPre模型旨在解决复杂地形下的类不平衡冰雹临近预报问题.以人工标注的冰雹观测为真值,
+  多源数据作为输入, 模型采用DIFF-Transformer结合加权多头差分注意力机制 (WMHDA) 作为编码器, 有效建模多源时空关系及长时依赖.复合损失函数增强了对冰雹稀疏特征的适应性, 模块消融实验证实WMHDA在冰雹临近预报中的贡献.HailPre在测试集上的邻域CSI和POD分别达到0.4617和0.6406,
+  较对比模型提升6–39%, 且表现稳定.数据源消融实验和SHAP分析显示, 卫星数据贡献最大, 其次为静态和雷达数据.实验结果表明, 多源融合与WMHDA机制均显著提升了冰雹预报性能.
+significance: 3
+cited_by: 1
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

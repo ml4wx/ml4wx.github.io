@@ -1,0 +1,55 @@
+id: arxiv-2509.22465
+title: Model Training, Data Assimilation, and Forecast Experiments with a Hybrid Atmospheric Model that
+  Incorporates Machine Learning
+authors:
+- Dylan Elliott
+- Troy Arcomano
+- Istvan Szunyogh
+- Brian R. Hunt
+date: '2025-09-26'
+year: 2025
+venue: Monthly Weather Review, 154, 1931-1947, 2026
+venue_type: journal
+ids:
+  arxiv: '2509.22465'
+  doi: 10.1175/mwr-d-25-0232.1
+links:
+  paper: https://arxiv.org/abs/2509.22465
+  pdf: https://arxiv.org/pdf/2509.22465
+topic: hybrid-parameterization
+topics:
+- data-assimilation
+type: model
+method:
+- other
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: A SPEEDY model with an ML component, trained on ERA5 and run with LETKF assimilation, improves
+  analyses and 10-day forecasts; training on ERA5 removes most analysis bias.
+abstract: The hybrid model combines the physics-based primitive-equations model SPEEDY with a machine
+  learning-based (ML-based) model component, while ERA5 reanalyses provide the presumed true states of
+  the atmosphere. Six-hourly simulated noisy observations are generated for a 30-year ML training period
+  and a one-year testing period. These observations are assimilated with a Local Ensemble Transform Kalman
+  Filter (LETKF), and a 10-day deterministic forecast is also started from each ensemble mean analysis
+  of the testing period. In the first experiment, the physics-based model provides the background ensemble
+  members and the 10-day deterministic forecasts. In the other three experiments, the hybrid model plays
+  the same role as the physics-based model in the first experiment, but it is trained on a different data
+  set in each experiment. These training data sets are analyses obtained by using the physics-based model
+  (second experiment), the hybrid model of the previous experiment (third experiment), and for comparison,
+  ERA5 reanalyses (fourth experiment). The results of the experiments show that hybridizing the model
+  can substantially improve the accuracy of the analyses and forecasts. When the model is trained on ERA5
+  reanalyses, the biases of the analyses are negligible and the magnitude of the flow-dependent part of
+  the analysis errors is greatly reduced. While the gains in analysis accuracy are distinctly more modest
+  in the other two hybrid model experiments, the gains in forecast accuracy tend to be larger in those
+  experiments after 1-3 forecast days. However, these extra gains of forecast accuracy are achieved, in
+  part, by a modest gradual reduction of the spatial variability of the forecasts.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

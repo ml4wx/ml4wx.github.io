@@ -1,0 +1,54 @@
+id: arxiv-2508.07428
+title: 'Lightning Prediction under Uncertainty: DeepLight with Hazy Loss'
+authors:
+- Md Sultanul Arifin
+- Abu Nowshed Sakib
+- Yeasir Rayhan
+- Tanzima Hashem
+date: '2025-08-10'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2508.07428'
+  doi: 10.1016/j.eswa.2026.131586
+links:
+  paper: https://arxiv.org/abs/2508.07428
+  pdf: https://arxiv.org/pdf/2508.07428
+topic: extremes-hazards
+topics:
+- nowcasting
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- satellite
+status: research
+summary: DeepLight predicts lightning from radar, cloud and lightning history with a new Hazy Loss, improving
+  Equitable Threat Score by 18-30% over prior methods.
+abstract: 'Lightning, a common feature of severe meteorological conditions, poses significant risks, from
+  direct human injuries to substantial economic losses. These risks are further exacerbated by climate
+  change. Early and accurate prediction of lightning would enable preventive measures to safeguard people,
+  protect property, and minimize economic losses. In this paper, we present DeepLight, a novel deep learning
+  architecture for predicting lightning occurrences. Existing prediction models face several critical
+  limitations: i) they often struggle to capture the dynamic spatial context and the inherent randomness
+  of lightning events, including whether lightning occurs and its variability in location and timing even
+  under similar meteorological conditions; ii) they underutilize key observational data, such as radar
+  reflectivity and cloud properties; and iii) they rely heavily on Numerical Weather Prediction (NWP)
+  systems, which are both computationally expensive and highly sensitive to parameter settings. To overcome
+  these challenges, DeepLight leverages multi-source meteorological data, including radar reflectivity,
+  cloud properties, and historical lightning occurrences through a dual-encoder architecture. By employing
+  multi-branch convolution techniques, it dynamically captures spatial correlations across varying extents.
+  Furthermore, its novel Hazy Loss function explicitly addresses the spatio-temporal uncertainty of lightning
+  by penalizing deviations based on proximity to true events, enabling the model to better learn patterns
+  amidst randomness. Extensive experiments show that DeepLight improves the Equitable Threat Score (ETS)
+  by 18\%--30\% over state-of-the-art methods, establishing it as a robust solution for lightning prediction.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

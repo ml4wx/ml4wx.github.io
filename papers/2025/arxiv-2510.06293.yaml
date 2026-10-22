@@ -1,0 +1,53 @@
+id: arxiv-2510.06293
+title: 'BlockGPT: Spatio-Temporal Modelling of Rainfall via Frame-Level Autoregression'
+authors:
+- Cristian Meo
+- Varun Sarathchandran
+- Avijit Majhi
+- Shao Hung
+- Carlo Saccardi
+- Ruben Imhoff
+- Roberto Deidda
+- Remko Uijlenhoet
+- Justin Dauwels
+date: '2025-10-07'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2510.06293'
+  openalex: W4415314687
+links:
+  paper: https://arxiv.org/abs/2510.06293
+  pdf: https://arxiv.org/pdf/2510.06293
+topic: nowcasting
+type: model
+method:
+- transformer
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- satellite
+status: research
+summary: BlockGPT autoregressively predicts full precipitation frames with factorized space-time attention,
+  running up to 31x faster than token-based and diffusion nowcasting baselines on KNMI and SEVIR.
+abstract: Predicting precipitation maps is a highly complex spatiotemporal modeling task, critical for
+  mitigating the impacts of extreme weather events. Short-term precipitation forecasting, or nowcasting,
+  requires models that are not only accurate but also computationally efficient for real-time applications.
+  Current methods, such as token-based autoregressive models, often suffer from flawed inductive biases
+  and slow inference, while diffusion models can be computationally intensive. To address these limitations,
+  we introduce BlockGPT, a generative autoregressive transformer using batched tokenization (Block) method
+  that predicts full two-dimensional fields (frames) at each time step. Conceived as a model-agnostic
+  paradigm for video prediction, BlockGPT factorizes space-time by using self-attention within each frame
+  and causal attention across frames; in this work, we instantiate it for precipitation nowcasting. We
+  evaluate BlockGPT on two precipitation datasets, viz. KNMI (Netherlands) and SEVIR (U.S.), comparing
+  it to state-of-the-art baselines including token-based (NowcastingGPT) and diffusion-based (DiffCast+Phydnet)
+  models. The results show that BlockGPT achieves superior accuracy, event localization as measured by
+  categorical metrics, and inference speeds up to 31x faster than comparable baselines.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

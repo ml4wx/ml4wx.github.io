@@ -1,0 +1,54 @@
+id: arxiv-2505.13873
+title: 'Utilizing Strategic Pre-training to Reduce Overfitting: Baguan -- A Pre-trained Weather Forecasting
+  Model'
+authors:
+- Peisong Niu
+- Ziqing Ma
+- Tian Zhou
+- Weiqi Chen
+- Lefei Shen
+- Rong Jin
+- Liang Sun
+date: '2025-05-20'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2505.13873'
+links:
+  paper: https://arxiv.org/abs/2505.13873
+  pdf: https://arxiv.org/pdf/2505.13873
+topic: global-medium-range
+topics:
+- foundation-models
+type: model
+method:
+- transformer
+timescale:
+- medium
+- s2s
+spatial:
+- global
+- regional
+data:
+- era5
+status: research
+summary: Baguan pretrains a Siamese autoencoder with a locality-biased task to reduce overfitting, outperforming
+  baselines on medium-range forecasts and transferring to S2S and regional tasks.
+abstract: Weather forecasting has long posed a significant challenge for humanity. While recent AI-based
+  models have surpassed traditional numerical weather prediction (NWP) methods in global forecasting tasks,
+  overfitting remains a critical issue due to the limited availability of real-world weather data spanning
+  only a few decades. Unlike fields like computer vision or natural language processing, where data abundance
+  can mitigate overfitting, weather forecasting demands innovative strategies to address this challenge
+  with existing data. In this paper, we explore pre-training methods for weather forecasting, finding
+  that selecting an appropriately challenging pre-training task introduces locality bias, effectively
+  mitigating overfitting and enhancing performance. We introduce Baguan, a novel data-driven model for
+  medium-range weather forecasting, built on a Siamese Autoencoder pre-trained in a self-supervised manner
+  and fine-tuned for different lead times. Experimental results show that Baguan outperforms traditional
+  methods, delivering more accurate forecasts. Additionally, the pre-trained Baguan demonstrates robust
+  overfitting control and excels in downstream tasks, such as subseasonal-to-seasonal (S2S) modeling and
+  regional forecasting, after fine-tuning.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

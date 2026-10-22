@@ -1,0 +1,82 @@
+id: arxiv-2505.19432
+title: Advanced Long-term Earth System Forecasting
+authors:
+- Hao Wu
+- Yuan Gao
+- Ruijian Gou
+- Xian Wu
+- Chuhan Wu
+- Huahui Yi
+- Johannes Brandstetter
+- Fan Xu
+- Kun Wang
+- Penghao Zhao
+- Hao Jia
+- Qi Song
+- Xinliang Liu
+- Juncai He
+- Shuhao Cao
+- Huanshuo Dong
+- Yanfei Xiang
+- Fan Zhang
+- Haixin Wang
+- Xingjian Shi
+- Qiufeng Wang
+- Shuaipeng Li
+- Ruobing Xie
+- Feng Tao
+- Yuxu Lu
+- Yu Guo
+- Yuntian Chen
+- Yuxuan Liang
+- Qingsong Wen
+- Wanli Ouyang
+- Deliang Chen
+- Niklas Boers
+- Xiaomeng Huang
+date: '2025-05-26'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2505.19432'
+links:
+  paper: https://arxiv.org/abs/2505.19432
+  pdf: https://arxiv.org/pdf/2505.19432
+topic: climate-emulation
+topics:
+- global-medium-range
+type: model
+method:
+- other
+timescale:
+- medium
+- climate
+spatial:
+- global
+data:
+- era5
+status: research
+summary: TritonCast uses a latent dynamical core to curb spectral bias, reaching WeatherBench 2 state-of-the-art
+  and drift-free 2500-day rollouts.
+abstract: 'Reliable long-term forecasting of Earth system dynamics is fundamentally limited by instabilities
+  in current artificial intelligence (AI) models during extended autoregressive simulations. These failures
+  often originate from inherent spectral bias, leading to inadequate representation of critical high-frequency,
+  small-scale processes and subsequent uncontrolled error amplification. Inspired by the nested grids
+  in numerical models used to resolve small scales, we present TritonCast. At the core of its design is
+  a dedicated latent dynamical core, which ensures the long-term stability of the macro-evolution at a
+  coarse scale. An outer structure then fuses this stable trend with fine-grained local details. This
+  design effectively mitigates the spectral bias caused by cross-scale interactions. In atmospheric science,
+  it achieves state-of-the-art accuracy on the WeatherBench 2 benchmark while demonstrating exceptional
+  long-term stability: executing year-long autoregressive global forecasts and completing multi-year climate
+  simulations that span the entire available $2500$-day test period without drift. In oceanography, it
+  extends skillful eddy forecast to $120$ days and exhibits unprecedented zero-shot cross-resolution generalization.
+  Ablation studies reveal that this performance stems from the synergistic interplay of the architecture''s
+  core components. TritonCast thus offers a promising pathway towards a new generation of trustworthy,
+  AI-driven simulations. This significant advance has the potential to accelerate discovery in climate
+  and Earth system science, enabling more reliable long-term forecasting and deeper insights into complex
+  geophysical dynamics.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

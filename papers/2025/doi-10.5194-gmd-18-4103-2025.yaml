@@ -1,0 +1,58 @@
+id: doi-10.5194-gmd-18-4103-2025
+title: 'ELM2.1-XGBfire1.0: improving wildfire prediction by integrating a machine learning fire model
+  in a land surface model'
+authors:
+- Ye Liu
+- Huilin Huang
+- Sing‐Chun Wang
+- Tao Zhang
+- Donghui Xu
+- Yang Chen
+date: '2025-07-04'
+year: 2025
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-18-4103-2025
+  openalex: W4412033706
+links:
+  paper: https://doi.org/10.5194/gmd-18-4103-2025
+  pdf: https://gmd.copernicus.org/articles/18/4103/2025/gmd-18-4103-2025.pdf
+topic: extremes-hazards
+topics:
+- hybrid-parameterization
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Couples a pretrained XGBoost fire model online with the E3SM land model, improving CONUS burned-area
+  simulation over process-based fire models for 2001–2020.
+abstract: Abstract. Wildfires have shown increasing trends in both frequency and severity across the Contiguous
+  United States (CONUS). However, process-based fire models have difficulties in accurately simulating
+  the burned area over the CONUS due to a simplification of the physical process and cannot capture the
+  interplay among fire, ignition, climate, and human activities. The deficiency of burned area simulation
+  deteriorates the description of fire impact on energy balance, water budget, and carbon fluxes in the
+  Earth System Models (ESMs). Alternatively, machine learning (ML) based fire models, which capture statistical
+  relationships between the burned area and environmental factors, have shown promising burned area predictions
+  and corresponding fire impact simulation. We develop a hybrid framework (ML4Fire-XGB) that integrates
+  a pretrained eXtreme Gradient Boosting (XGBoost) wildfire model with the Energy Exascale Earth System
+  Model (E3SM) land model (ELM) version 2.1. A Fortran-C-Python deep learning bridge is adapted to support
+  online communication between ELM and the ML fire model. Specifically, the burned area predicted by the
+  ML-based wildfire model is directly passed to ELM to adjust the carbon pool and vegetation dynamics
+  after disturbance, which are then used as predictors in the ML-based fire model in the next time step.
+  Evaluated against the historical burned area from Global Fire Emissions Database 5 from 2001–2020, the
+  ML4Fire-XGB model outperforms process-based fire models in terms of spatial distribution and seasonal
+  variations. Sensitivity analysis confirms that the ML4Fire-XGB well captures the responses of the burned
+  area to rising temperatures. The ML4Fire-XGB model has proved to be a new tool for studying vegetation-fire
+  interactions, and more importantly, enables seamless exploration of climate-fire feedback, working as
+  an active component in E3SM.
+significance: 3
+cited_by: 9
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

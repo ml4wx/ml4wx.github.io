@@ -1,0 +1,55 @@
+id: arxiv-2509.26258
+title: 'EnScale: Temporally-consistent multivariate generative downscaling via proper scoring rules'
+authors:
+- Maybritt Schillinger
+- Maxim Samarin
+- Xinwei Shen
+- Reto Knutti
+- Nicolai Meinshausen
+date: '2025-09-30'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2509.26258'
+links:
+  paper: https://arxiv.org/abs/2509.26258
+  pdf: https://arxiv.org/pdf/2509.26258
+topic: downscaling
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- other
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+status: research
+summary: EnScale is an energy-score generative downscaling framework mapping GCM to RCM fields for multiple
+  variables, with temporally consistent variant and about 10x lower cost.
+abstract: The practical use of future climate projections from global circulation models (GCMs) is often
+  limited by their coarse spatial resolution, requiring downscaling to generate high-resolution data.
+  Regional climate models (RCMs) provide this refinement, but are computationally expensive. To address
+  this issue, machine learning (ML) models can learn the downscaling function, mapping coarse GCM outputs
+  to high-resolution fields. Among these, generative approaches aim to capture the full conditional distribution
+  of RCM data given coarse-scale GCM data, which is characterized by large variability and thus challenging
+  to model accurately. We introduce EnScale, a generative ML framework emulating the full GCM-to-RCM map
+  by training on multiple pairs of GCM and corresponding RCM data. It first adjusts large-scale mismatches
+  between GCM and coarsened RCM data, followed by a super-resolution step to generate high-resolution
+  fields. To efficiently model the high-dimensional output, the super-resolution step employs a novel
+  class of sparse local stochastic layers. Both steps employ generative models optimized with the energy
+  score, a proper scoring rule. Compared to state-of-the-art ML downscaling approaches, our setup reduces
+  computational cost by about one order of magnitude. EnScale jointly emulates multiple variables -- temperature,
+  precipitation, solar radiation, and wind -- spatially consistent over Central Europe. In addition, we
+  propose a variant EnScale-t that enables temporally consistent downscaling. We establish a comprehensive
+  evaluation framework across various categories including calibration, spatial and temporal structure,
+  extremes, and multivariate dependencies. Comparison with diverse benchmarks demonstrates EnScale(-t)'s
+  competitive performance and computational efficiency, offering a promising approach for accurate and
+  temporally consistent RCM emulation.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

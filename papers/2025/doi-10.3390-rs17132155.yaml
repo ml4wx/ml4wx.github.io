@@ -1,0 +1,67 @@
+id: doi-10.3390-rs17132155
+title: Ensemble Learning for Spatial Modeling of Icing Fields from Multi-Source Remote Sensing Data
+authors:
+- Shaohui Zhou
+- Zhiqiu Gao
+- Bo Gong
+- Hourong Zhang
+- Haipeng Zhang
+- Jinqiang He
+- Xingya Xi
+date: '2025-06-23'
+year: 2025
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs17132155
+  openalex: W4411611512
+links:
+  paper: https://doi.org/10.3390/rs17132155
+  pdf: https://www.mdpi.com/2072-4292/17/13/2155/pdf?version=1750856830
+orgs:
+- nuist
+- cma
+topic: observations-remote-sensing
+topics:
+- applications-impacts
+type: model
+method:
+- classical-ml
+- transformer
+- cnn
+spatial:
+- regional
+data:
+- stations
+- nwp-analysis
+- other
+status: research
+summary: Stacking ensemble fusing kriging and meteorological data maps icing thickness from 1339 grid
+  stations, with validation R of 0.893 on the test set.
+abstract: 'Accurate real-time icing grid fields are critical for preventing ice-related disasters during
+  winter and protecting property. These fields are essential for both mapping ice distribution and predicting
+  icing using physical models combined with numerical weather prediction systems. However, developing
+  precise real-time icing grids is challenging due to the uneven distribution of monitoring stations,
+  data confidentiality restrictions, and the limitations of existing interpolation methods. In this study,
+  we propose a new approach for constructing real-time icing grid fields using 1339 online terminal monitoring
+  datasets provided by the China Southern Power Grid Research Institute Co., Ltd. (CSPGRI) during the
+  winter of 2023. Our method integrates static geographic information, dynamic meteorological factors,
+  and ice_kriging values derived from parameter-optimized Empirical Bayesian Kriging Interpolation (EBKI)
+  to create a spatiotemporally matched, multi-source fused icing thickness grid dataset. We applied five
+  machine learning algorithms—Random Forest, XGBoost, LightGBM, Stacking, and Convolutional Neural Network
+  Transformers (CNNT)—and evaluated their performance using six metrics: R, RMSE, CSI, MAR, FAR, and fbias,
+  on both validation and testing sets. The stacking model performed best, achieving an R-value of 0.634
+  (0.893), RMSE of 3.424 mm (2.834 mm), CSI of 0.514 (0.774), MAR of 0.309 (0.091), FAR of 0.332 (0.161),
+  and fbias of 1.034 (1.084), respectively, when comparing predicted icing values with actual measurements
+  on pylons. Additionally, we employed the SHAP model to provide a physical interpretation of the stacking
+  model, confirming the independence of selected features. Meteorological factors such as relative humidity
+  (RH), 10 m wind speed (WS10), 2 m temperature (T2), and precipitation (PRE) demonstrated a range of
+  positive and negative contributions consistent with the observed growth of icing. Thus, our multi-source
+  remote-sensing data-fusion approach, combined with the stacking model, offers a highly accurate and
+  interpretable solution for generating real-time icing grid fields.'
+significance: 2
+cited_by: 4
+score: 18
+highlight: false
+added: '2026-10-22'
+source: backfill

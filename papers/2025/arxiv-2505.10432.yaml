@@ -1,0 +1,54 @@
+id: arxiv-2505.10432
+title: 'How to use score-based diffusion in earth system science: A satellite nowcasting example'
+authors:
+- Randy J. Chase
+- Katherine Haynes
+- Lander Ver Hoef
+- Imme Ebert-Uphoff
+date: '2025-05-15'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2505.10432'
+links:
+  paper: https://arxiv.org/abs/2505.10432
+  pdf: https://arxiv.org/pdf/2505.10432
+topic: nowcasting
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Score-based diffusion models, with a CorrDiff variant best, improve geostationary satellite cloud
+  nowcasts over U-Net and persistence and yield calibrated ensembles.
+abstract: 'Machine learning (ML) is used for many earth science applications; however, traditional ML
+  methods trained with squared errors often create blurry forecasts. Diffusion models are an emerging
+  generative ML technique with the ability to produce sharper, more realistic images by learning the underlying
+  data distribution. Diffusion models are becoming more prevalent, yet adapting them for earth science
+  applications can be challenging because most articles focus on theoretical aspects of the approach,
+  rather than making the method widely accessible. This work illustrates score-based diffusion models
+  with a well-known problem in atmospheric science: cloud nowcasting (zero-to-three-hour forecast). After
+  discussing the background and intuition of score-based diffusion models using examples from geostationary
+  satellite infrared imagery, we experiment with three types of diffusion models: a standard score-based
+  diffusion model (Diff); a residual correction diffusion model (CorrDiff); and a latent diffusion model
+  (LDM). Our results show that the diffusion models not only advect existing clouds, but also generate
+  and decay clouds, including convective initiation. A case study qualitatively shows the preservation
+  of high-resolution features longer into the forecast than a conventional U-Net. The best of the three
+  diffusion models tested was the CorrDiff approach, outperforming all other diffusion models, the conventional
+  U-Net, and persistence. The diffusion models also enable out-of-the-box ensemble generation with skillful
+  calibration. By explaining and exploring diffusion models for a common problem and ending with lessons
+  learned from adapting diffusion models for our task, this work provides a starting point for the community
+  to utilize diffusion models for a variety of earth science applications.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

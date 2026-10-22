@@ -1,0 +1,49 @@
+id: arxiv-2508.07659
+title: Discovering Spatial Correlations of Earth Observations for weather forecasting by using Graph Structure
+  Learning
+authors:
+- Hyeon-Ju Jeon
+- Jeon-Ho Kang
+- In-Hyuk Kwon
+- O-Joun Lee
+date: '2025-08-11'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2508.07659'
+  doi: 10.1145/3769002.3769956
+links:
+  paper: https://arxiv.org/abs/2508.07659
+  pdf: https://arxiv.org/pdf/2508.07659
+topic: data-assimilation
+type: model
+method:
+- gnn
+spatial:
+- regional
+data:
+- nwp-analysis
+- satellite
+status: research
+summary: CloudNine-v2 uses graph structure learning with edge sampling to model shifting observation correlations
+  for East Asia forecasts, cutting RMSE up to 15% versus STGNNs.
+abstract: This study aims to improve the accuracy of weather predictions by discovering spatial correlations
+  between Earth observations and atmospheric states. Existing numerical weather prediction (NWP) systems
+  predict future atmospheric states at fixed locations, which are called NWP grid points, by analyzing
+  previous atmospheric states and newly acquired Earth observations. However, the shifting locations of
+  observations and the surrounding meteorological context induce complex, dynamic spatial correlations
+  that are difficult for traditional NWP systems to capture, since they rely on strict statistical and
+  physical formulations. To handle complicated spatial correlations, which change dynamically, we employ
+  a spatiotemporal graph neural networks (STGNNs) with structure learning. However, structure learning
+  has an inherent limitation that this can cause structural information loss and over-smoothing problem
+  by generating excessive edges. To solve this problem, we regulate edge sampling by adaptively determining
+  node degrees and considering the spatial distances between NWP grid points and observations. We validated
+  the effectiveness of the proposed method (CloudNine-v2) using real-world atmospheric state and observation
+  data from East Asia, achieving up to 15\% reductions in RMSE over existing STGNN models. Even in areas
+  with high atmospheric variability, CloudNine-v2 consistently outperformed baselines with and without
+  structure learning.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

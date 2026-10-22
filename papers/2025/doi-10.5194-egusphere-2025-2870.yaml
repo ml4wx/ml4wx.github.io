@@ -1,0 +1,57 @@
+id: doi-10.5194-egusphere-2025-2870
+title: Covariance-informed spatiotemporal clustering improves the detection of hazardous weather events
+authors:
+- Hunter C. Quintal
+- Antonia Sebastian
+- Marc L. Serre
+- W. Jäger
+- Marleen de Ruiter
+date: '2025-07-01'
+year: 2025
+venue_type: other
+ids:
+  doi: 10.5194/egusphere-2025-2870
+  openalex: W4411880657
+links:
+  paper: https://doi.org/10.5194/egusphere-2025-2870
+topic: extremes-hazards
+topics:
+- benchmarks-data-eval
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: Derives a space-time resolution for unbiased DBSCAN clustering of ERA5 data, improving heat wave
+  and severe storm detection in the Southeastern US, 1940–2023.
+abstract: Abstract. Spatiotemporal clustering can be used to detect weather events in multi-dimensional
+  datasets. This method requires that the resolution of a dataset equivalently resolves fluctuations across
+  space and time, thereby normalizing the dataset for unbiased clustering across three dimensions. Yet,
+  few studies test whether a dataset meets this requirement as there is no standard approach to do so.
+  To address this methodological gap, we present a framework to quantify the relationship between space
+  and time using space time separable covariance modelling. We demonstrate that, by defining a temporal
+  resolution of interest (e.g. hours, days), the equivalent spatial resolution can be empirically derived
+  using a space time metric. We present an application using the unsupervised machine learning method
+  Density-Based Spatial Clustering of Applications with Noise (DBSCAN) to detect heat waves and severe
+  storms across the Southeastern US from 1940 to 2023 from ECMWF Reanalysis version 5 (ERA5) data. We
+  analyse the seasonal behaviour of space time metrics for precipitation and heat index before selecting
+  representative values. We find that both ERA5-derived daily heat index and hourly precipitation are
+  insufficiently resolved for unbiased clustering at their native resolutions (i.e., 0.25 spatial degrees
+  [degree] per day for heat index and 0.25 degree per hour for precipitation). We show that a resolution
+  of 0.39 degree per day (0.05 degree per hour) prevents preferential clustering in either the spatial
+  or temporal dimension for heat index (precipitation). We hypothesize that event identification will
+  improve by resampling the data by the space time metric. Heat wave clusters that were produced using
+  the unbiased resolution were compared against the NOAA Storm Events Database from 2019 to 2023. Recall
+  of heat waves increased from 0.92 to 0.94 using the covariance-informed resolution, demonstrating the
+  importance of normalization prior to weather event reconstruction. Ultimately, the inclusion of temporal
+  geostatistics leads to improved reconstruction of historical weather events and enables evaluation of
+  their scale and variability.
+significance: 3
+cited_by: 2
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

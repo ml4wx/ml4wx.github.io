@@ -1,0 +1,49 @@
+id: arxiv-2508.21109
+title: An Explainable, Attention-Enhanced, Bidirectional Long Short-Term Memory Neural Network for Joint
+  48-Hour Forecasting of Temperature, Irradiance, and Relative Humidity
+authors:
+- Georgios Vamvouras
+- Konstantinos Braimakis
+- Christos Tzivanidis
+date: '2025-08-28'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2508.21109'
+  openalex: W4415987632
+links:
+  paper: https://arxiv.org/abs/2508.21109
+  pdf: https://arxiv.org/pdf/2508.21109
+topic: local-forecasting
+topics:
+- applications-impacts
+type: model
+method:
+- rnn
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Attention-based BiLSTM jointly forecasts temperature, irradiance and humidity 48 hours ahead,
+  beating NWP benchmarks in MAE for HVAC control.
+abstract: This paper presents a Deep Learning (DL) framework for 48-hour forecasting of temperature, solar
+  irradiance, and relative humidity to support Model Predictive Control (MPC) in smart HVAC systems. The
+  approach employs a stacked Bidirectional Long Short-Term Memory (BiLSTM) network with attention, capturing
+  temporal and cross-feature dependencies by jointly predicting all three variables. Historical meteorological
+  data (2019-2022) with encoded cyclical time features were used for training, while 2023 data evaluated
+  generalization. The model achieved Mean Absolute Errors of 1.3 degrees Celsius (temperature), 31 W/m2
+  (irradiance), and 6.7 percentage points (humidity), outperforming state-of-the-art numerical weather
+  prediction and machine learning benchmarks. Integrated Gradients quantified feature contributions, and
+  attention weights revealed temporal patterns, enhancing interpretability. By combining multivariate
+  forecasting, attention-based DL, and explainability, this work advances data-driven weather prediction.
+  The demonstrated accuracy and transparency highlight the framework's potential for energy-efficient
+  building control through reliable short-term meteorological forecasting.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

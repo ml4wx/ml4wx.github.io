@@ -1,0 +1,48 @@
+id: doi-10.1029-2024gl113907
+title: 'CPrecNet: Enhanced Nowcast of High‐Resolution Short‐Term Precipitation Using Deep Learning'
+authors:
+- Jun Park
+- Changhoon Lee
+date: '2025-07-05'
+year: 2025
+venue: Geophysical Research Letters
+venue_type: journal
+ids:
+  doi: 10.1029/2024gl113907
+  openalex: W4412055744
+links:
+  paper: https://doi.org/10.1029/2024gl113907
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2024GL113907
+topic: nowcasting
+topics:
+- regional-km-scale
+type: model
+method:
+- transformer
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: CPrecNet uses a Swin Transformer on 500 m, 5 min radar data with regional tiling, beating Pysteps
+  in RMSE for high-resolution precipitation nowcasts.
+abstract: Abstract Accurate short‐term precipitation nowcasting is essential for disaster prevention and
+  water resource management. Traditional numerical weather prediction faces challenges in delivering high‐resolution
+  nowcasts due to computational limitations. We presents CPrecNet, a deep learning model utilizing a Swin
+  Transformer‐based architecture and high‐resolution radar data (500 m and 5 min) to improve nowcasting
+  accuracy. Based on an observation that precipitation fields rapidly decorrelate in space, we divide
+  the whole domain into smaller 128 × 128 km regions and train on adjacent areas, addressing network size
+  and data scarcity issues. The model uses a residual add method to enhance rainfall prediction accuracy
+  by focusing on the evolution of small‐scale components. Test results show that CPrecNet outperforms
+  existing models such as Pysteps in root‐mean‐squared error (RMSE) and maintains competitive critical
+  success index performance for various precipitation thresholds. These findings highlight the potential
+  of deep learning based on physical considerations to enhance high‐resolution precipitation nowcasting
+  for better decision‐making in weather‐sensitive applications.
+significance: 4
+cited_by: 6
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

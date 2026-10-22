@@ -1,0 +1,50 @@
+id: arxiv-2509.15706
+title: 'SGMAGNet: A Baseline Model for 3D Cloud Phase Structure Reconstruction on a New Passive Active
+  Satellite Benchmark'
+authors:
+- Chi Yang
+- Fu Wang
+- Xiaofei Yang
+- Hao Huang
+- Weijia Cao
+- Xiaowen Chu
+date: '2025-09-19'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2509.15706'
+links:
+  paper: https://arxiv.org/abs/2509.15706
+  pdf: https://arxiv.org/pdf/2509.15706
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- satellite
+- other
+status: research
+summary: Baseline SGMAGNet maps geostationary VIS/TIR imagery to 3D cloud phase profiles from CALIPSO/CloudSat,
+  reaching F1 0.763 and IoU 0.617 with a new benchmark.
+abstract: 'Cloud phase profiles are critical for numerical weather prediction (NWP), as they directly
+  affect radiative transfer and precipitation processes. In this study, we present a benchmark dataset
+  and a baseline framework for transforming multimodal satellite observations into detailed 3D cloud phase
+  structures, aiming toward operational cloud phase profile retrieval and future integration with NWP
+  systems to improve cloud microphysics parameterization. The multimodal observations consist of (1) high--spatiotemporal--resolution,
+  multi-band visible (VIS) and thermal infrared (TIR) imagery from geostationary satellites, and (2) accurate
+  vertical cloud phase profiles from spaceborne lidar (CALIOP\slash CALIPSO) and radar (CPR\slash CloudSat).
+  The dataset consists of synchronized image--profile pairs across diverse cloud regimes, defining a supervised
+  learning task: given VIS/TIR patches, predict the corresponding 3D cloud phase structure. We adopt SGMAGNet
+  as the main model and compare it with several baseline architectures, including UNet variants and SegNet,
+  all designed to capture multi-scale spatial patterns. Model performance is evaluated using standard
+  classification metrics, including Precision, Recall, F1-score, and IoU. The results demonstrate that
+  SGMAGNet achieves superior performance in cloud phase reconstruction, particularly in complex multi-layer
+  and boundary transition regions. Quantitatively, SGMAGNet attains a Precision of 0.922, Recall of 0.858,
+  F1-score of 0.763, and an IoU of 0.617, significantly outperforming all baselines across these key metrics.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

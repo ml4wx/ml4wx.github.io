@@ -1,0 +1,85 @@
+id: arxiv-2509.17601
+title: 'FastNet: Improving the physical consistency of machine-learning weather prediction models through
+  loss function design'
+authors:
+- Tom Dunstan
+- Oliver Strickson
+- Thusal Bennett
+- Jack Bowyer
+- Matthew Burnand
+- James Chappell
+- Alejandro Coca-Castro
+- Kirstine Ida Dale
+- Eric G. Daub
+- Noushin Eftekhari
+- Manvendra Janmaijaya
+- Jon Lillis
+- David Salvador-Jasin
+- Nathan Simpson
+- Ryan Sze-Yin Chan
+- Mohamad Elmasri
+- Lydia Allegranza France
+- Sam Madge
+- Levan Bokeria
+- Hannah Brown
+- Tom Dodds
+- Anna-Louise Ellis
+- David Llewellyn-Jones
+- Theo McCaie
+- Sophia Moreton
+- Tom Potter
+- James Robinson
+- Adam A. Scaife
+- Iain Stenson
+- David Walters
+- Karina Bett-Williams
+- Louisa van Zeeland
+- Peter Yatsyshin
+- J. Scott Hosking
+date: '2025-09-22'
+year: 2025
+venue: Artif. Intell. Earth Syst., 5, 250090, 2006
+venue_type: journal
+ids:
+  arxiv: '2509.17601'
+  doi: 10.1175/aies-d-25-0090.1
+links:
+  paper: https://arxiv.org/abs/2509.17601
+  pdf: https://arxiv.org/pdf/2509.17601
+topic: global-medium-range
+topics:
+- xai-uq-physics
+type: model
+method:
+- gnn
+- physics-constrained
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: FastNet tests loss designs (spectral MSH loss, gradient terms, speed-direction wind) that keep
+  MSE skill while improving spectral fidelity and physical consistency of GNN weather forecasts.
+abstract: 'Machine learning weather prediction (MLWP) models have demonstrated remarkable potential in
+  delivering accurate forecasts at significantly reduced computational cost compared to traditional numerical
+  weather prediction (NWP) systems. However, challenges remain in ensuring the physical consistency of
+  MLWP outputs, particularly in deterministic settings. This study presents FastNet, a graph neural network
+  (GNN)-based global prediction model, and investigates the impact of alternative loss function designs
+  on improving the physical realism of its forecasts. We explore three key modifications to the standard
+  mean squared error (MSE) loss: (1) a modified spherical harmonic (MSH) loss that penalises spectral
+  amplitude errors to reduce blurring and enhance small-scale structure retention; (2) inclusion of horizontal
+  gradient terms in the loss to suppress non-physical artefacts; and (3) an alternative wind representation
+  that decouples speed and direction to better capture extreme wind events. Results show that while the
+  MSH and gradient-based losses \textit{alone} may slightly degrade RMSE scores, when trained in combination
+  the model exhibits very similar MSE performance to an MSE-trained model while at the same time significantly
+  improving spectral fidelity and physical consistency. The alternative wind representation further improves
+  wind speed accuracy and reduces directional bias. Collectively, these findings highlight the importance
+  of loss function design as a mechanism for embedding domain knowledge into MLWP models and advancing
+  their operational readiness.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

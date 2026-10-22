@@ -1,0 +1,54 @@
+id: doi-10.3390-jmse13061026
+title: The Application of a Marine Weather Data Reconstruction Model Based on Deep Super-Resolution in
+  Ship Route Optimization
+authors:
+- LI Shang-fu
+- Junfu Yuan
+- Zhizheng Wu
+date: '2025-05-23'
+year: 2025
+venue: Journal of Marine Science and Engineering
+venue_type: journal
+ids:
+  doi: 10.3390/jmse13061026
+  openalex: W4410641098
+links:
+  paper: https://doi.org/10.3390/jmse13061026
+  pdf: https://www.mdpi.com/2077-1312/13/6/1026/pdf?version=1748015811
+topic: downscaling
+topics:
+- applications-impacts
+type: model
+method:
+- cnn
+- transformer
+spatial:
+- regional
+data:
+- nwp-analysis
+- other
+status: research
+summary: SRResNet-based attention model super-resolves marine wind and wave fields, reaching 41.5 dB PSNR
+  for wind, and improves ship route planning.
+abstract: Accurate weather data are very important for the navigation of ships. However, due to the insufficient
+  coverage of the maritime network, the high cost of satellite communication, and the limited bandwidth,
+  it is difficult for ships to obtain high-resolution weather data during route planning. This challenge
+  greatly limits the accuracy and effectiveness of ship navigation. To solve this problem, this paper
+  proposes a marine weather data reconstruction model based on deep super-resolution. Firstly, the model
+  uses a convolutional neural network to extract features from wind speed and wave height data. Secondly,
+  the model uses SRResNet as the reconstruction framework and effectively captures the complex nonlinear
+  feature relationship in weather data through the residual block structure to realize the fine reconstruction
+  of low-resolution weather data. In addition, the attention mechanism is integrated into the model to
+  dynamically adjust the weights of different weather features, which further enhances the attention to
+  key features. The results show that the model has a good effect on the super-resolution reconstruction
+  of weather data. The PSNR, SSIM, GMSD, and FSIM of wave height reconstruction are 49.73 dB, 0.9949,
+  0.0082, and 0.9999, respectively, and the PSNR, SSIM, GMSD, and FSIM of wind speed reconstruction are
+  41.52 dB, 0.9797, 0.0400, and 0.9997, respectively. Based on the reconstructed data, route planning
+  can effectively reduce the navigation distance of the ship and avoid unnecessary detours, thus saving
+  fuel consumption and reducing operating costs.
+significance: 2
+cited_by: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

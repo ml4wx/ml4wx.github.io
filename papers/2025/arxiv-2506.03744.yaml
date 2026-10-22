@@ -1,0 +1,55 @@
+id: arxiv-2506.03744
+title: Probabilistic measures afford fair comparisons of AIWP and NWP model output
+authors:
+- Tilmann Gneiting
+- Tobias Biegert
+- Kristof Kraus
+- Eva-Maria Walz
+- Alexander I. Jordan
+- Sebastian Lerch
+date: '2025-06-04'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2506.03744'
+links:
+  paper: https://arxiv.org/abs/2506.03744
+  pdf: https://arxiv.org/pdf/2506.03744
+topic: benchmarks-data-eval
+topics:
+- post-processing
+type: evaluation
+method:
+- classical-ml
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: Proposes a potential CRPS measure applying isotonic distributional regression to deterministic
+  AI and NWP outputs, enabling fair comparison; GraphCast beats ECMWF HRES on WeatherBench 2.
+abstract: We introduce a new measure for fair and meaningful comparisons of single-valued output from
+  artificial intelligence based weather prediction (AIWP) and numerical weather prediction (NWP) models,
+  called potential continuous ranked probability score (PC). In a nutshell, we subject the deterministic
+  backbone of physics-based and data-driven models post hoc to the same statistical postprocessing technique,
+  namely, isotonic distributional regression (IDR). Then we find PC as the mean continuous ranked probability
+  score (CRPS) of the postprocessed probabilistic forecasts. The nonnegative PC measure quantifies potential
+  predictive performance and is invariant under strictly increasing transformations of the model output.
+  PC attains its most desirable value of zero if, and only if, the weather outcome Y is a fixed, non-decreasing
+  function of the model output X. The PC measure is recorded in the unit of the outcome, has an upper
+  bound of one half times the mean absolute difference between outcomes, and serves as a proxy for the
+  mean CRPS of real-time, operational probabilistic products. When applied to WeatherBench 2 data, our
+  approach demonstrates that the data-driven GraphCast model outperforms the leading, physics-based European
+  Centre for Medium Range Weather Forecasts (ECMWF) high-resolution (HRES) model. Furthermore, the PC
+  measure for the HRES model aligns exceptionally well with the mean CRPS of the operational ECMWF ensemble.
+  Across application domains, our approach affords comparisons of single-valued forecasts in settings
+  where the pre-specification of a loss function -- which is the usual, and principally superior, procedure
+  in forecast contests, administrative, and benchmarks settings -- places competitors on unequal footings.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

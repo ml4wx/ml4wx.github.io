@@ -1,0 +1,50 @@
+id: arxiv-2507.18937
+title: CNN-based Surface Temperature Forecasts with Ensemble Numerical Weather Prediction
+authors:
+- Takuya Inoue
+- Takuya Kawabata
+date: '2025-07-25'
+year: 2025
+venue: Mon. Wea. Rev. 154 (2026) 1527-1547
+venue_type: journal
+ids:
+  arxiv: '2507.18937'
+  doi: 10.1175/mwr-d-26-0003.1
+links:
+  paper: https://arxiv.org/abs/2507.18937
+  pdf: https://arxiv.org/pdf/2507.18937
+topic: post-processing
+topics:
+- downscaling
+type: model
+method:
+- cnn
+timescale:
+- medium
+spatial:
+- regional
+data:
+- nwp-analysis
+status: pre-operational
+summary: A CNN applied to each of 51 ensemble members downscales 40-km NWP to 5-km surface temperature
+  forecasts up to 5.5 days, improving reliability and spread-skill ratio.
+abstract: Due to limited computational resources, medium-range temperature forecasts typically rely on
+  low-resolution numerical weather prediction (NWP) models, which are prone to systematic and random errors.
+  We propose a method that integrates a convolutional neural network (CNN) with an ensemble of low-resolution
+  NWP models (40-km horizontal resolution) to produce high-resolution (5-km) surface temperature forecasts
+  with lead times extending up to 5.5 days (132 h). First, CNN-based post-processing (bias correction
+  and spatial downscaling) is applied to individual ensemble members to reduce systematic errors and perform
+  downscaling, which improves the deterministic forecast accuracy. Second, this member-wise correction
+  is applied to all 51 ensemble members to construct a new high-resolution ensemble forecasting system
+  with an improved probabilistic reliability and spread-skill ratio that differs from the simple error
+  reduction mechanism of ensemble averaging. Whereas averaging reduces forecast errors by smoothing spatial
+  fields, our member-wise CNN correction reduces error from noise while maintaining forecast information
+  at a level comparable to that of other high-resolution forecasts. Experimental results indicate that
+  the proposed method provides a practical and scalable solution for improving medium-range temperature
+  forecasts, which is particularly valuable for use in operational centers with limited computational
+  resources.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,55 @@
+id: arxiv-2510.10140
+title: 'Adversarial Attacks on Downstream Weather Forecasting Models: Application to Tropical Cyclone
+  Trajectory Prediction'
+authors:
+- Yue Deng
+- Francisco Santos
+- Pang-Ning Tan
+- Lifeng Luo
+date: '2025-10-11'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2510.10140'
+links:
+  paper: https://arxiv.org/abs/2510.10140
+  pdf: https://arxiv.org/pdf/2510.10140
+topic: extremes-hazards
+topics:
+- xai-uq-physics
+type: model
+method:
+- differentiable
+timescale:
+- short
+spatial:
+- global
+data:
+- other
+status: research
+summary: Cyc-Attack perturbs upstream forecasts of deep weather models, using a differentiable TC detector
+  surrogate, to steer downstream cyclone trajectories toward attacker-chosen paths.
+abstract: Deep learning-based weather forecasting (DLWF) models leverage past weather observations to
+  generate future forecasts, supporting a wide range of downstream applications, including tropical cyclone
+  (TC) prediction. In this paper, we investigate their vulnerability to adversarial attacks, where subtle
+  perturbations to the upstream forecasts can alter the downstream TC trajectory predictions. Although
+  research into adversarial attacks on DLWF models has grown recently, it remains challenging to craft
+  perturbed upstream forecasts that steer the downstream outputs toward attacker-specified trajectories.
+  First, conventional TC detection systems are opaque, non-differentiable black boxes, making standard
+  gradient-based attacks infeasible. Second, the extreme rarity of TC events leads to severe class imbalance
+  problem, making it difficult to develop attack methods for perturbing upstream forecasts that produce
+  realistic-looking cyclone paths aligned with attacker's target trajectories. To overcome these limitations,
+  we propose Cyc-Attack, a novel method for perturbing the upstream forecasts of DLWF models to generate
+  adversarial trajectories. The proposed method uses a differentiable surrogate model to approximate the
+  TC detector's output, enabling the application of gradient-based attacks. Cyc-Attack also employs a
+  skewness-aware loss function with kernel dilation strategy to address the imbalance problem. Finally,
+  a distance-based gradient weighting scheme and regularization are used to constrain the perturbations
+  and eliminate unrealistic-looking trajectories, thereby making the adversarial upstream forecasts less
+  easily detectable. Our experiments show that Cyc-Attack achieves a higher true positive rate in matching
+  the attacker's target trajectories, along with lower false alarm rates and stealthier perturbations
+  than conventional attack methods.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

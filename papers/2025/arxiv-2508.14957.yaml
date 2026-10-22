@@ -1,0 +1,45 @@
+id: arxiv-2508.14957
+title: 'CuMoLoS-MAE: A Masked Autoencoder for Remote Sensing Data Reconstruction'
+authors:
+- Anurup Naskar
+- Nathanael Zhixin Wong
+- Sara Shamekh
+date: '2025-08-20'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2508.14957'
+  openalex: W4416050249
+links:
+  paper: https://arxiv.org/abs/2508.14957
+  pdf: https://arxiv.org/pdf/2508.14957
+topic: observations-remote-sensing
+type: model
+method:
+- transformer
+spatial:
+- local
+data:
+- radar
+- other
+status: research
+summary: Monte Carlo masked autoencoder fills gaps in lidar and radar atmospheric profiles, restoring
+  fine convective structures and providing per-pixel uncertainty maps.
+abstract: Accurate atmospheric profiles from remote sensing instruments such as Doppler Lidar, Radar,
+  and radiometers are frequently corrupted by low-SNR (Signal to Noise Ratio) gates, range folding, and
+  spurious discontinuities. Traditional gap filling blurs fine-scale structures, whereas deep models lack
+  confidence estimates. We present CuMoLoS-MAE, a Curriculum-Guided Monte Carlo Stochastic Ensemble Masked
+  Autoencoder designed to (i) restore fine-scale features such as updraft and downdraft cores, shear lines,
+  and small vortices, (ii) learn a data-driven prior over atmospheric fields, and (iii) quantify pixel-wise
+  uncertainty. During training, CuMoLoS-MAE employs a mask-ratio curriculum that forces a ViT decoder
+  to reconstruct from progressively sparser context. At inference, we approximate the posterior predictive
+  by Monte Carlo over random mask realisations, evaluating the MAE multiple times and aggregating the
+  outputs to obtain the posterior predictive mean reconstruction together with a finely resolved per-pixel
+  uncertainty map. Together with high-fidelity reconstruction, this novel deep learning-based workflow
+  enables enhanced convection diagnostics, supports real-time data assimilation, and improves long-term
+  climate reanalysis.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,52 @@
+id: arxiv-2506.17609
+title: 'TyphoFormer: Language-Augmented Transformer for Accurate Typhoon Track Forecasting'
+authors:
+- Lincan Li
+- Eren Erman Ozguven
+- Yue Zhao
+- Guang Wang
+- Yiqun Xie
+- Yushun Dong
+date: '2025-06-21'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2506.17609'
+links:
+  paper: https://arxiv.org/abs/2506.17609
+  pdf: https://arxiv.org/pdf/2506.17609
+topic: extremes-hazards
+topics:
+- llms-agents
+type: model
+method:
+- transformer
+- llm
+timescale:
+- short
+spatial:
+- global
+data:
+- other
+status: research
+summary: TyphoFormer prepends LLM-generated textual descriptions as tokens to a Transformer, improving
+  typhoon track forecasts on HURDAT2 especially during nonlinear path shifts.
+abstract: Accurate typhoon track forecasting is crucial for early system warning and disaster response.
+  While Transformer-based models have demonstrated strong performance in modeling the temporal dynamics
+  of dense trajectories of humans and vehicles in smart cities, they usually lack access to broader contextual
+  knowledge that enhances the forecasting reliability of sparse meteorological trajectories, such as typhoon
+  tracks. To address this challenge, we propose TyphoFormer, a novel framework that incorporates natural
+  language descriptions as auxiliary prompts to improve typhoon trajectory forecasting. For each time
+  step, we use Large Language Model (LLM) to generate concise textual descriptions based on the numerical
+  attributes recorded in the North Atlantic hurricane database. The language descriptions capture high-level
+  meteorological semantics and are embedded as auxiliary special tokens prepended to the numerical time
+  series input. By integrating both textual and sequential information within a unified Transformer encoder,
+  TyphoFormer enables the model to leverage contextual cues that are otherwise inaccessible through numerical
+  features alone. Extensive experiments are conducted on HURDAT2 benchmark, results show that TyphoFormer
+  consistently outperforms other state-of-the-art baseline methods, particularly under challenging scenarios
+  involving nonlinear path shifts and limited historical observations.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

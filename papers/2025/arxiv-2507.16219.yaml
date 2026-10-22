@@ -1,0 +1,57 @@
+id: arxiv-2507.16219
+title: Bayesian Deep Learning for Convective Initiation Nowcasting Uncertainty Estimation
+authors:
+- Da Fan
+- David John Gagne
+- Steven J. Greybush
+- Eugene E. Clothiaux
+- John S. Schreck
+- Chaopeng Shen
+date: '2025-07-22'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2507.16219'
+links:
+  paper: https://arxiv.org/abs/2507.16219
+  pdf: https://arxiv.org/pdf/2507.16219
+topic: nowcasting
+topics:
+- probabilistic-ensembles
+type: evaluation
+method:
+- cnn
+- classical-ml
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Compares five Bayesian deep learning methods for 0-1 h convective initiation nowcasting from
+  GOES-16; the initial-weights ensemble with MC dropout gives the most skillful, well-calibrated forecasts.
+abstract: This study evaluated the probability and uncertainty forecasts of five recently proposed Bayesian
+  deep learning methods relative to a deterministic residual neural network (ResNet) baseline for 0-1
+  h convective initiation (CI) nowcasting using GOES-16 satellite infrared observations. Uncertainty was
+  assessed by how well probabilistic forecasts were calibrated and how well uncertainty separated forecasts
+  with large and small errors. Most of the Bayesian deep learning methods produced probabilistic forecasts
+  that outperformed the deterministic ResNet, with one, the initial-weights ensemble + Monte Carlo (MC)
+  dropout, an ensemble of deterministic ResNets with different initial weights to start training and dropout
+  activated during inference, producing the most skillful and well-calibrated forecasts. The initial-weights
+  ensemble + MC dropout benefited from generating multiple solutions that more thoroughly sampled the
+  hypothesis space. The Bayesian ResNet ensemble was the only one that performed worse than the deterministic
+  ResNet at longer lead times, likely due to the challenge of optimizing a larger number of parameters.
+  To address this issue, the Bayesian-MOPED (MOdel Priors with Empirical Bayes using Deep neural network)
+  ResNet ensemble was adopted, and it enhanced forecast skill by constraining the hypothesis search near
+  the deterministic ResNet hypothesis. All Bayesian methods demonstrated well-calibrated uncertainty and
+  effectively separated cases with large and small errors. In case studies, the initial-weights ensemble
+  + MC dropout demonstrated better forecast skill than the Bayesian-MOPED ensemble and the deterministic
+  ResNet on selected CI events in clear-sky regions. However, the initial-weights ensemble + MC dropout
+  exhibited poorer generalization in clear-sky and anvil cloud regions without CI occurrence compared
+  to the deterministic ResNet and Bayesian-MOPED ensemble.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,47 @@
+id: arxiv-2509.10399
+title: A Deep Learning Model of Lightning Stroke Density
+authors:
+- Randall Jones
+- Joel A. Thornton
+- Chris J. Wright
+- Robert Holzworth
+date: '2025-09-12'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2509.10399'
+links:
+  paper: https://arxiv.org/abs/2509.10399
+  pdf: https://arxiv.org/pdf/2509.10399
+topic: hybrid-parameterization
+topics:
+- extremes-hazards
+type: model
+method:
+- cnn
+spatial:
+- global
+data:
+- era5
+- other
+status: research
+summary: U-Net CNN lightning parameterizations trained on WWLLN data reduce domain mean bias by an order
+  of magnitude and outperform CAPE times precipitation over oceans.
+abstract: Lightning plays a crucial role in the Earth's climate system, yet existing parameterizations
+  for use in forecasting and earth system models show room for improvement in capturing spatial and temporal
+  variations in its frequency. This study develops deep learning-based parameterizations of lightning
+  stroke density using meteorological variables from the ERA and IMERG datasets. Convolutional neural
+  networks (CNNs) with U-Net architectures are trained using World Wide Lightning Location Network (WWLLN)
+  data from 2010 to 2021 and evaluated on WWLLN lightning observations from 2022 and 2023. The CNNs reduce
+  the average domain mean bias by an order of magnitude and produce significantly higher Fractions Skill
+  Score (FSS) values across all lightning regimes compared to the multiplicative product of CAPE and precipitation.
+  The CNNs show skill relative to previously published parameterizations over the oceans especially, with
+  r2 values as high as 0.93 achieved between the best performing modeled and observed lightning stroke
+  density climatologies. The CNNs are also able to accurately capture the 12-hourly evolution of lightning
+  spatial patterns on an event-scale with high skill. These results show the potential for deep learning
+  to improve on lightning parameterizations in weather and earth system models.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,50 @@
+id: arxiv-2505.03034
+title: Modeling Spatial Extremes using Non-Gaussian Spatial Autoregressive Models via Convolutional Neural
+  Networks
+authors:
+- Sweta Rai
+- Douglas W. Nychka
+- Soutir Bandyopadhyay
+date: '2025-05-05'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2505.03034'
+links:
+  paper: https://arxiv.org/abs/2505.03034
+  pdf: https://arxiv.org/pdf/2505.03034
+topic: extremes-hazards
+topics:
+- climate-analysis-attribution
+type: model
+method:
+- classical-ml
+- cnn
+spatial:
+- regional
+data:
+- era5
+- km-scale-sim
+status: research
+summary: Uses a CNN to fit a non-Gaussian spatial autoregressive GEV model for WRF annual maximum precipitation
+  over North America, enabling fast parameter estimation.
+abstract: Data derived from remote sensing or numerical simulations often have a regular gridded structure
+  and are large in volume, making it challenging to find accurate spatial models that can fill in missing
+  grid cells or simulate the process effectively, especially in the presence of spatial heterogeneity
+  and heavy-tailed marginal distributions. To overcome this issue, we present a spatial autoregressive
+  modeling framework, which maps observations at a location and its neighbors to independent random variables.
+  This is a highly flexible modeling approach and well-suited for non-Gaussian fields, providing simpler
+  interpretability. In particular, we consider the SAR model with Generalized Extreme Value distribution
+  innovations to combine the observation at a central grid location with its neighbors, capturing extreme
+  spatial behavior based on the heavy-tailed innovations. While these models are fast to simulate by exploiting
+  the sparsity of the key matrices in the computations, the maximum likelihood estimation of the parameters
+  is prohibitive due to the intractability of the likelihood, making optimization challenging. To overcome
+  this, we train a convolutional neural network on a large training set that covers a useful parameter
+  space, and then use the trained network for fast parameter estimation. Finally, we apply this model
+  to analyze annual maximum precipitation data from ERA-Interim-driven Weather Research and Forecasting
+  (WRF) simulations, allowing us to explore its spatial extreme behavior across North America.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

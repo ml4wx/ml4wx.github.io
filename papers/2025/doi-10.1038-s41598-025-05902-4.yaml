@@ -1,0 +1,58 @@
+id: doi-10.1038-s41598-025-05902-4
+title: 'STVMamba: precipitation nowcasting with spatiotemporal prediction model'
+authors:
+- Maoyang Zou
+- Longrui Wen
+- Yuanyuan Huang
+- Yuan He
+- Jingzhong Xiao
+date: '2025-07-01'
+year: 2025
+venue: Scientific Reports
+venue_type: journal
+ids:
+  doi: 10.1038/s41598-025-05902-4
+  openalex: W4411852304
+links:
+  paper: https://doi.org/10.1038/s41598-025-05902-4
+  pdf: https://www.nature.com/articles/s41598-025-05902-4.pdf
+  code: https://github.com/CUITMIR/STVMamba
+topic: nowcasting
+type: model
+method:
+- other
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- satellite
+status: pre-operational
+summary: STVMamba, a linear-time Mamba-based model, reaches state of the art on Sichuan and HKO-7 radar
+  and IMERG precipitation nowcasting benchmarks.
+abstract: 'A lightweight rainfall nowcasting model is required by Sichuan provincial meteorological bureaus.
+  Deep learning methods such as recurrent, convolutional, and Transformer models have been applied to
+  precipitation prediction. However, recurrent models struggle with suboptimal parallel computational
+  efficiency and error accumulation, convolutional models face challenges in capturing long-range dependencies,
+  and Transformer models are limited by their quadratic time complexity. The Spatial-Temporal Vision Mamba
+  (STVMamba) is proposed, a novel spatiotemporal prediction model specifically designed for precipitation
+  nowcasting. STVMamba achieves high parallel computational efficiency, operates with linear time complexity,
+  and excels at modeling long-range dependencies, overcoming the shortcomings of previous deep learning
+  methods. Specifically, the STVMamba utilises a Spatial-Temporal Selective Scan (STSS) module to capture
+  global spatiotemporal relationships, while a Spatial-Temporal Depthwise Separable Convolution (STDSConv)
+  module is used to learn local spatiotemporal relationships. Furthermore, the two-tier architecture of
+  the STVMamba explicitly learns spatiotemporal relationships across both small and large spatial scales
+  within meteorological data. We evaluate STVMamba on three benchmark datasets: the Sichuan radar echo
+  dataset, the HKO-7 radar echo dataset, and the satellite-based IMERG dataset. On the Sichuan dataset,
+  STVMamba achieves state-of-the-art performance across MSE, SSIM, and CSI-10 metrics. On the HKO-7 dataset,
+  it outperforms existing models in terms of MSE, CSI-10, and CSI-20. On the IMERG dataset, it achieves
+  superior results in SSIM and CSI-0.5, demonstrating its robustness and effectiveness across diverse
+  geoclimatic conditions and data modalities. The code is available at https://github.com/CUITMIR/STVMamba
+  .'
+significance: 4
+cited_by: 7
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

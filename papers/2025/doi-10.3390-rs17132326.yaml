@@ -1,0 +1,60 @@
+id: doi-10.3390-rs17132326
+title: 'A Spatiotemporal Sequence Prediction Framework Based on Mask Reconstruction: Application to Short-Duration
+  Precipitation Radar Echoes'
+authors:
+- Zhi Wei Yang
+- Changzheng Liu
+- Ping Mei
+- Lei Wang
+date: '2025-07-07'
+year: 2025
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs17132326
+  openalex: W4412088091
+links:
+  paper: https://doi.org/10.3390/rs17132326
+  pdf: https://www.mdpi.com/2072-4292/17/13/2326/pdf?version=1751892354
+orgs:
+- nuist
+- cma
+topic: nowcasting
+type: model
+method:
+- transformer
+- rnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Proposes a mask-reconstruction pretraining framework with MAE-RNN and transformer STMT for radar
+  echo prediction, improving CSI and HSS by 3.73% and 2.39%.
+abstract: 'Short-term precipitation forecasting is a core task in meteorological science, aiming to achieve
+  accurate predictions by modeling the spatiotemporal evolution of radar echo sequences, thereby supporting
+  meteorological services and disaster warning systems. However, existing spatiotemporal sequence prediction
+  methods still struggle to disentangle complex spatiotemporal dependencies effectively and fail to capture
+  the nonlinear chaotic characteristics of precipitation systems. This often results in ambiguous predictions,
+  attenuation of echo intensity, and spatial localization errors. To address these challenges, this paper
+  proposes a unified spatiotemporal sequence prediction framework based on spatiotemporal masking, which
+  comprises two stages: self-supervised pre-training and task-oriented fine-tuning. During pre-training,
+  the model learns global structural features of meteorological systems from sparse contexts by randomly
+  masking local spatiotemporal regions of radar images. In the fine-tuning stage, considering the importance
+  of the temporal dimension in short-term precipitation forecasting and the complex long-range dependencies
+  in spatiotemporal evolution of precipitation systems, we design an RNN-based cyclic temporal mask self-encoder
+  model (MAE-RNN) and a transformer-based spatiotemporal attention model (STMT). The former focuses on
+  capturing short-term temporal dynamics, while the latter simultaneously models long-range dependencies
+  across space and time via a self-attention mechanism, thereby avoiding the smoothing effects on high-frequency
+  details that are typical of conventional convolutional or recurrent structures. The experimental results
+  show that STMT improves 3.73% and 2.39% in CSI and HSS key indexes compared with the existing advanced
+  models, and generates radar echo sequences that are closer to the real data in terms of air mass morphology
+  evolution and reflection intensity grading.'
+significance: 3
+cited_by: 1
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

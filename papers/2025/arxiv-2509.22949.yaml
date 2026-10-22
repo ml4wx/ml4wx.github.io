@@ -1,0 +1,39 @@
+id: arxiv-2509.22949
+title: Meta-Learning Fourier Neural Operators for Hessian Inversion and Enhanced Variational Data Assimilation
+authors:
+- Hamidreza Moazzami
+- Asma Jamali
+- Nicholas Kevlahan
+- Rodrigo A. Vargas-Hernández
+date: '2025-09-26'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2509.22949'
+links:
+  paper: https://arxiv.org/abs/2509.22949
+  pdf: https://arxiv.org/pdf/2509.22949
+topic: data-assimilation
+type: model
+method:
+- neural-operator
+data:
+- other
+status: research
+summary: Meta-learned Fourier neural operator approximates the inverse Hessian for variational data assimilation,
+  cutting conjugate-gradient iterations by 17% on a linear advection test.
+abstract: Data assimilation (DA) is crucial for enhancing solutions to partial differential equations
+  (PDEs), such as those in numerical weather prediction, by optimizing initial conditions using observational
+  data. Variational DA methods are widely used in oceanic and atmospheric forecasting, but become computationally
+  expensive, especially when Hessian information is involved. To address this challenge, we propose a
+  meta-learning framework that employs the Fourier Neural Operator (FNO) to approximate the inverse Hessian
+  operator across a family of DA problems, thereby providing an effective initialization for the conjugate
+  gradient (CG) method. Numerical experiments on a linear advection equation demonstrate that the resulting
+  FNO-CG approach reduces the average relative error by $62\%$ and the number of iterations by $17\%$
+  compared to the standard CG. These improvements are most pronounced in ill-conditioned scenarios, highlighting
+  the robustness and efficiency of FNO-CG for challenging DA problems.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

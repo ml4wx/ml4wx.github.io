@@ -1,0 +1,49 @@
+id: arxiv-2510.07971
+title: 'Climate Surrogates for Scalable Multi-Agent Reinforcement Learning: A Case Study with CICERO-SCM'
+authors:
+- Oskar Bohn Lassen
+- Serio Angelo Maria Agriesti
+- Filipe Rodrigues
+- Blaz Kurnik
+- Francisco Camara Pereira
+date: '2025-10-09'
+year: 2025
+venue: Proceedings of the Thirty-Fifth International Joint Conference on Artificial Intelligence (IJCAI-ECAI
+  2026), pp. 7084-7092, 2026
+venue_type: journal
+ids:
+  arxiv: '2510.07971'
+  doi: 10.24963/ijcai.2026/788
+links:
+  paper: https://arxiv.org/abs/2510.07971
+  pdf: https://arxiv.org/pdf/2510.07971
+topic: climate-emulation
+type: model
+method:
+- rnn
+- reinforcement-learning
+timescale:
+- climate
+spatial:
+- global
+data:
+- other
+status: research
+summary: A recurrent surrogate emulates the CICERO-SCM multi-gas climate model with about 1000x faster
+  inference, enabling over 100x faster multi-agent RL for climate policy.
+abstract: Climate policy analysis requires models that capture multi-gas climate effects, but such models
+  are too slow to embed in reinforcement learning loops at scale. In collaboration with the European Environment
+  Agency, we develop a multi-agent reinforcement learning (MARL) framework that integrates a higher-fidelity
+  climate surrogate as the environment transition, enabling regional agents to learn policies under multi-gas
+  dynamics. We train a recurrent surrogate on $20{,}000$ multi-gas emission pathways to emulate CICERO-SCM.
+  The surrogate achieves near-simulator accuracy (global-mean temperature RMSE $\approx\!4\!\times \!10^{-4}\,\mathrm{K}$)
+  with $\sim\!1000\times$ faster one-step inference and yields $>\!100\times$ end-to-end MARL training
+  speed-up. We show policy agreement with the simulator in tractable settings and propose a replay- and
+  rank-consistency test (Kendall's $τ$) for assessing policy fidelity when simulator-in-the-loop training
+  is infeasible. This enables large-scale multi-agent policy experiments while retaining high-fidelity
+  multi-gas climate response.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,58 @@
+id: arxiv-2510.27388
+title: Using data assimilation tools to dissect GraphDOP
+authors:
+- Patrick Laloyaux
+- Mihai Alexe
+- Eulalie Boucher
+- Peter Lean
+- Ewan Pinnington
+- Simon Lang
+- Tobias Necker
+- Anthony McNally
+date: '2025-10-31'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2510.27388'
+  openalex: W4415923636
+links:
+  paper: https://arxiv.org/abs/2510.27388
+  pdf: https://arxiv.org/pdf/2510.27388
+topic: xai-uq-physics
+topics:
+- data-assimilation
+type: evaluation
+method:
+- gnn
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- satellite
+- stations
+- nwp-analysis
+status: research
+summary: Applies data assimilation sensitivity diagnostics (FSOI) via automatic differentiation to ECMWF's
+  GraphDOP, showing it learns storm movement and combines conventional and satellite observations.
+abstract: The Data Assimilation (DA) community has been developing various diagnostics to understand the
+  importance of the observing system in accurately forecasting the weather. They usually rely on the ability
+  to compute the derivatives of the physical model output with respect to its initial condition. For example,
+  the Forecast Sensitivity-based Observation Impact (FSOI) estimates the impact on the forecast error
+  of each observation processed in the DA system. This paper presents how these DA diagnostic tools are
+  transferred to Machine Learning (ML) models, as their derivatives are readily available through automatic
+  differentiation. We specifically explore the interpretability and explainability of the observation-driven
+  GraphDOP model developed at the European Centre for Medium-Range Weather Forecasts (ECMWF). The interpretability
+  study demonstrates the effectiveness of GraphDOP's sliding attention window to learn the meteorological
+  features present in the observation datasets and to learn the spatial relationships between different
+  regions. Making these relationships more transparent confirms that GraphDOP captures real, physically
+  meaningful processes, such as the movement of storm systems. The explainability of GraphDOP is explored
+  by applying the FSOI tool to study the impact of the different observations on the forecast error. This
+  inspection reveals that GraphDOP creates an internal representation of the Earth system by combining
+  the information from conventional and satellite observations.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

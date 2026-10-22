@@ -1,0 +1,62 @@
+id: doi-10.22541-essoar.176087128.81306828-v1
+title: Short-term forecasting of 3D wind field based on deep learning and water vapor
+authors:
+- Yuchen Ye
+- Chaoxia Yuan
+- Mingyu Li
+- Aoqi Zhou
+- Chunqing Shang
+- Kezuan Wang
+- Yifeng Zheng
+- Cong Chen
+date: '2025-10-19'
+year: 2025
+venue_type: other
+ids:
+  doi: 10.22541/essoar.176087128.81306828/v1
+  openalex: W4415341402
+links:
+  paper: https://doi.org/10.22541/essoar.176087128.81306828/v1
+orgs:
+- huawei
+- nuist
+topic: regional-km-scale
+type: model
+method:
+- cnn
+- transformer
+timescale:
+- nowcast
+- short
+spatial:
+- regional
+data:
+- other
+status: research
+summary: A CNN-Transformer fusion using multi-level water vapor and precipitation forecasts 3D wind for
+  1–6 hours with RMSPE below 8%, and beats ECMWF S2S on vertical wind at longer leads.
+abstract: Short-term wind field forecasting is critical for various applications, including renewable
+  energy and aviation safety, but traditional numerical models often face challenges in computational
+  efficiency and timeliness. This study proposes a Deep Learning Model Framework for Wind Field Prediction
+  using Multi-level Water Vapor (DLMF4-WFPMWV) to improve short-term wind field prediction by utilizing
+  multi-level atmospheric water vapor, surface precipitation and evaporation data. We investigated multiple
+  deep learning architectures, including Artificial Neural Networks (ANN), UNet, Transformer, and a CNN-Transformer
+  fusion model. Our findings indicate that an optimized CNN-Transformer fusion model, enhanced with prior
+  physical knowledge, precipitation, evaporation data, and temporal information from preceding time steps,
+  achieves superior performance in predicting U, V, and W wind components. This is evidenced by a resulting
+  RMSPE below 8% and a correlation coefficient exceeding 0.61. This fusion model demonstrated robust predictive
+  capabilities across different atmospheric levels and weather conditions (clear vs. rainy days) and maintained
+  accuracy even with significantly fewer spatial input points. Furthermore, the framework is highly effective
+  for its primary goal of short-term prediction (1-6 hours). Furthermore, when benchmarked against traditional
+  numerical weather prediction, it also demonstrated competitive, and in some cases superior, performance
+  at longer lead times compared to the ECMWF S2S model, particularly for the vertical wind component,
+  while offering substantial advantages in inference speed and reduced computational resource requirements.
+  This research highlights the feasibility and effectiveness of deep learning for accurate and efficient
+  short-term wind field prediction from water vapor data, providing a valuable foundation for advanced
+  meteorological forecasting.
+significance: 2
+cited_by: 1
+score: 43
+highlight: false
+added: '2026-10-22'
+source: backfill

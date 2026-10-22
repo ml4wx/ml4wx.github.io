@@ -1,0 +1,57 @@
+id: doi-10.1016-j.atmosres.2025.108395
+title: Evaluating station, satellite, & combined data for XGBoost-based visibility forecast
+authors:
+- Michaela Schütz
+- Adrian Schütz
+- Jörg Bendix
+- Jonas Müller und Boris Thies
+date: '2025-07-31'
+year: 2025
+venue: Atmospheric Research
+venue_type: journal
+ids:
+  doi: 10.1016/j.atmosres.2025.108395
+  openalex: W4412791349
+links:
+  paper: https://doi.org/10.1016/j.atmosres.2025.108395
+topic: local-forecasting
+topics:
+- observations-remote-sensing
+type: model
+method:
+- classical-ml
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- satellite
+- stations
+status: research
+summary: XGBoost visibility nowcasts for a German station show Meteosat-derived predictors match station-based
+  skill, predicting 50% of fog formations within 30 minutes.
+abstract: 'Radiation fog poses challenges for the very short-term weather forecasting due to its complex
+  atmospheric dynamics. Accurate and spatially available visibility predictions are crucial for sectors
+  where visibility conditions directly impact safety and operational efficiency. Traditional numerical
+  weather prediction models lack real-time forecasting capabilities, so this study investigates a machine-learning-based
+  visibility forecast with XGBoost for a station in Germany. Two data sources were used and compared:
+  high-resolution station data and nationwide available Meteosat Second Generation (MSG) satellite data.
+  The analysis investigates how the coarser spatial resolution of MSG data compares to finer station data
+  in predicting fog formation and dissipation. Therefore, station-based predictors were substituted with
+  MSG satellite data. Additionally, the study addresses data imbalances during training and evaluation
+  by focusing on critical low-visibility conditions and specifically fog formation and dissipation. XGBoost
+  significantly outperforms the three baseline models – pure visibility driven forecast, Persistence Model
+  and Linear Regression. The mean absolute error (MAE) is less than 150 m in the low visibility range.
+  For the predominantly MSG-variable-based model only 3 % of fog formations and 6 % of fog dissipations
+  are completely missed. Furthermore, the MSG-model predicts 50 % of fog formations and 60 % of dissipations
+  within the 30-min window of their actual occurrence. The model utilizing MSG data as substitutes for
+  station-based predictors delivers comparable performance to the purely station-data-based forecast highlighting
+  the potential of area-wide accessible MSG data. However, visibility measurements remain necessary for
+  forecasting. Therefore, future research should develop satellite-derived products to replace visibility,
+  enabling fully spatial forecasts.'
+significance: 2
+cited_by: 5
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

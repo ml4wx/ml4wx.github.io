@@ -1,0 +1,46 @@
+id: doi-10.54254-2753-8818-2025.dl27105
+title: Comparing Machine Learning Methods for Offline Applications with Short Lookback and Limited Input
+authors:
+- Hongyi Lai
+date: '2025-09-24'
+year: 2025
+venue: Theoretical and Natural Science
+venue_type: journal
+ids:
+  doi: 10.54254/2753-8818/2025.dl27105
+  openalex: W4414452299
+links:
+  paper: https://doi.org/10.54254/2753-8818/2025.dl27105
+  pdf: https://www.ewadirect.com/proceedings/tns/article/view/27105/pdf
+topic: local-forecasting
+type: evaluation
+method:
+- classical-ml
+- transformer
+- rnn
+timescale:
+- medium
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Compares linear regression, XGBoost, GRU and Transformers for 15-day single-station forecasts
+  of temperature, precipitation, wind and visibility; linear regression is a strong baseline.
+abstract: This study focuses on a comparative study of machine learning methods on offline weather forecasting
+  with short lookback windows and limited computational resources. Using 90 days of single-station GSOD
+  inputs, models predict 15-day horizons for temperature, precipitation, wind speed, and visibility. Evaluation
+  with Nash–Sutcliffe efficiency, RMSE, and inference time shows that Linear Regression is a surprisingly
+  strong and stable baseline, excelling in wind speed and remaining competitive across variables. Transformer
+  models perform best for temperature by capturing long-range dependencies, while sequence-to-sequence
+  GRUs outperform others on precipitation and visibility. In contrast, XGBoost and persistence baselines
+  consistently underperform in this constrained setup. In inference time, LR outperform all other methods
+  due to its simplicity. The results indicate that simple linear models can excel in this scenario compare
+  to deep learning approaches, while specialized neural architectures provide targeted gains, suggesting
+  a combination of models could be the most effective for practical low-resource forecasting.
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

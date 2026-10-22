@@ -1,0 +1,55 @@
+id: arxiv-2510.03582
+title: 'Deep learning the sources of MJO predictability: a spectral view of learned features'
+authors:
+- Lin Yao
+- Da Yang
+- James P. C. Duncan
+- Ashesh Chattopadhyay
+- Pedram Hassanzadeh
+- Wahid Bhimji
+- Bin Yu
+date: '2025-10-04'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2510.03582'
+  openalex: W4414969289
+links:
+  paper: https://arxiv.org/abs/2510.03582
+  pdf: https://arxiv.org/pdf/2510.03582
+topic: s2s-seasonal
+topics:
+- xai-uq-physics
+type: model
+method:
+- cnn
+timescale:
+- s2s
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: A CNN forecasts MJO indices up to 21 (RMM) and 33 (ROMI) days ahead, and spectral analysis shows
+  large-scale patterns dominate the predictability.
+abstract: 'The Madden-Julian oscillation (MJO) is a planetary-scale, intraseasonal tropical rainfall phenomenon
+  crucial for global weather and climate; however, its dynamics and predictability remain poorly understood.
+  Here, we leverage deep learning (DL) to investigate the sources of MJO predictability, motivated by
+  a central difference in MJO theories: which spatial scales are essential for driving the MJO? We first
+  develop a deep convolutional neural network (DCNN) to forecast the MJO indices (RMM and ROMI). Our model
+  predicts RMM and ROMI up to 21 and 33 days, respectively, achieving skills comparable to leading subseasonal-to-seasonal
+  models such as NCEP. To identify the spatial scales most relevant for MJO forecasting, we conduct spectral
+  analysis of the latent feature space and find that large-scale patterns dominate the learned signals.
+  Additional experiments show that models using only large-scale signals as the input have the same skills
+  as those using all the scales, supporting the large-scale view of the MJO. Meanwhile, we find that small-scale
+  signals remain informative: surprisingly, models using only small-scale input can still produce skillful
+  forecasts up to 1-2 weeks ahead. We show that this is achieved by reconstructing the large-scale envelope
+  of the small-scale activities, which aligns with the multi-scale view of the MJO. Altogether, our findings
+  support that large-scale patterns--whether directly included or reconstructed--may be the primary source
+  of MJO predictability.'
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

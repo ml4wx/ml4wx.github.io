@@ -1,0 +1,60 @@
+id: arxiv-2505.18179
+title: 'GAIA: A Foundation Model for Operational Atmospheric Dynamics'
+authors:
+- Ata Akbari Asanjan
+- Olivia Alexander
+- Tom Berg
+- Stephen Peng
+- Jad Makki
+- Clara Zhang
+- Matt Yang
+- Disha Shidham
+- Srija Chakraborty
+- William Bender
+- Cara Crawford
+- Arun Ravindran
+- Olivier Raiman
+- David Potere
+- David Bell
+date: '2025-05-15'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2505.18179'
+links:
+  paper: https://arxiv.org/abs/2505.18179
+  pdf: https://arxiv.org/pdf/2505.18179
+topic: foundation-models
+topics:
+- observations-remote-sensing
+- extremes-hazards
+type: model
+method:
+- transformer
+spatial:
+- global
+data:
+- satellite
+status: research
+summary: Hybrid MAE-DINO foundation model trained on 15 years of geostationary infrared imagery, improving
+  atmospheric river and tropical cyclone detection over MAE-only baselines.
+abstract: 'We introduce GAIA (Geospatial Artificial Intelligence for Atmospheres), a hybrid self-supervised
+  geospatial foundation model that fuses Masked Autoencoders (MAE) with self-distillation with no labels
+  (DINO) to generate semantically rich representations from global geostationary satellite imagery. Pre-trained
+  on 15 years of globally-merged infrared observations (2001-2015), GAIA learns disentangled representations
+  that capture atmospheric dynamics rather than trivial diurnal patterns, as evidenced by distributed
+  principal component structure and temporal coherence analysis. We demonstrate robust reconstruction
+  capabilities across varying data availability (30-95% masking), achieving superior gap-filling performance
+  on real missing data patterns. When transferred to downstream tasks, GAIA consistently outperforms an
+  MAE-only baseline: improving atmospheric river segmentation (F1: 0.58 vs 0.52), enhancing tropical cyclone
+  detection (storm-level recall: 81% vs 75%, early detection: 29% vs 17%), and maintaining competitive
+  precipitation estimation performance. Analysis reveals that GAIA''s hybrid objectives encourage learning
+  of spatially coherent, object-centric features distributed across multiple principal components rather
+  than concentrated representations focused on reconstruction. This work demonstrates that combining complementary
+  self-supervised objectives yields more transferable representations for diverse atmospheric modeling
+  tasks. Model weights and code are available at: https://huggingface.co/bcg-usra-nasa-gaia/GAIA-v1.'
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

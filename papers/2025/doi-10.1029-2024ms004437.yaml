@@ -1,0 +1,58 @@
+id: doi-10.1029-2024ms004437
+title: A Four‐Dimensional Variational Informed Generative Adversarial Network for Data Assimilation
+authors:
+- Wuxin Wang
+- Boheng Duan
+- Weicheng Ni
+- Jingze Lu
+- Taikang Yuan
+- Dawei Li
+- Juan Zhao
+- Kaijun Ren
+date: '2025-05-31'
+year: 2025
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2024ms004437
+  openalex: W4410918807
+links:
+  paper: https://doi.org/10.1029/2024ms004437
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2024MS004437
+topic: data-assimilation
+topics:
+- global-medium-range
+type: model
+method:
+- gan-vae
+timescale:
+- short
+spatial:
+- global
+data:
+- era5
+status: research
+summary: 4DVarGAN uses a conditional GAN to solve the 4DVar cost function on WeatherBench 500 hPa fields,
+  running 73 times faster than 4DVar.
+abstract: Abstract Data‐driven weather prediction (DDWP) has made significant advancements in recent years.
+  However, weather prediction using DDWPs still requires an accurate initial field as the input. To fulfill
+  this requirement, the four‐dimensional variational (4DVar) approach can offer initial fields. Recent
+  studies have demonstrated the potential of deep learning (DL)‐based methods in accelerating 4DVar. In
+  this study, we propose a novel model called the 4DVar‐informed generative adversarial network (4DVarGAN),
+  which combines prior knowledge from 4DVar with the conditional generative network (CGAN). We employ
+  a CGAN to non‐iteratively solve the 4DVar cost function and utilize a cycle‐consistent adversarial learning
+  framework for data augmentation. Additionally, we incorporate a 4DVar‐based adaptive adjustment to the
+  output of the proposed model's analysis increment‐generating component, which promotes reasonable stabilization.
+  Experimental results using 500 hPa geopotential fields from the WeatherBench data set demonstrate that
+  our approach achieves a 73‐fold acceleration compared to the 4DVar implemented by the DDWP model. Furthermore,
+  our model exhibits the lowest initial and forecast errors, outperforming state‐of‐the‐art DL‐based data
+  assimilation (DA) methods. Moreover, our method demonstrates effective performance when starting from
+  background fields of varying qualities, consistently achieving stable results. These findings highlight
+  the potential of CGANs in enhancing the reliability of data‐driven DA by incorporating the prior knowledge
+  of the 4DVar method.
+significance: 3
+cited_by: 6
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

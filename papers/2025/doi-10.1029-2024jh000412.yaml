@@ -1,0 +1,51 @@
+id: doi-10.1029-2024jh000412
+title: 'A Deep Learning‐Based Long‐Term ENSO Forecasting Model: 3D‐STransformer'
+authors:
+- Jie Lian
+- Xinjiao Wu
+- Sirong Huang
+- Zhanyuan Chang
+date: '2025-07-28'
+year: 2025
+venue: Journal of Geophysical Research Machine Learning and Computation
+venue_type: journal
+ids:
+  doi: 10.1029/2024jh000412
+  openalex: W4413268489
+links:
+  paper: https://doi.org/10.1029/2024jh000412
+topic: s2s-seasonal
+type: model
+method:
+- transformer
+timescale:
+- seasonal
+spatial:
+- global
+data:
+- cmip
+- other
+status: research
+summary: 3D-STransformer forecasts Niño3.4 SST anomalies up to 20 months ahead after CMIP6 pretraining
+  and SODA/GODA transfer learning, maintaining high correlation.
+abstract: Abstract The El Niño‐Southern Oscillation (ENSO) significantly impacts global climate variability,
+  causing extreme events like droughts, floods, and heatwaves. Accurate prediction of ENSO is critical
+  for managing agriculture, water resources, disaster prevention, and economic planning. Despite advances
+  in understanding ENSO's mechanisms and developing prediction models, forecasting its timing, intensity,
+  and duration precisely continues to be a significant obstacle because of the nonlinear and complex characteristics
+  of the phenomenon. In this study, we introduce a 3D‐STransformer model, with the aim of improving the
+  accuracy and reliability of long‐term prediction by integrating multiple local and remote factors affecting
+  ENSO dynamics, such as wind stress and upper‐ocean temperature at different depths. In addition, the
+  model employs a multi‐head spatiotemporal attention mechanism to capture long‐range dependencies and
+  complex interactions across time and space. We pre‐train the proposed model on the CMIP6 data set, then
+  perform the transfer learning on the SODA data set, and finally validate the model on the GODA data
+  set. The model employs an end‐to‐end, multistep rolling prediction strategy. It takes 12 months of input
+  data and produces forecasts for the following 20 months. The experiment demonstrates that the model
+  has superior performance, maintaining a high correlation in the Niño3.4 SST anomaly predictions up to
+  20 months ahead.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

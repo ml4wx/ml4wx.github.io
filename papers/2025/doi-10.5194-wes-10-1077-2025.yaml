@@ -1,0 +1,70 @@
+id: doi-10.5194-wes-10-1077-2025
+title: A new gridded offshore wind profile product for US coasts using machine learning and satellite
+  observations
+authors:
+- James Frech
+- Korak Saha
+- Paige D. Lavin
+- Huai‐Min Zhang
+- James Reagan
+- Brandon Fung
+date: '2025-06-12'
+year: 2025
+venue: Wind energy science
+venue_type: journal
+ids:
+  doi: 10.5194/wes-10-1077-2025
+  openalex: W4411252199
+links:
+  paper: https://doi.org/10.5194/wes-10-1077-2025
+  pdf: https://wes.copernicus.org/articles/10/1077/2025/wes-10-1077-2025.pdf
+orgs:
+- noaa
+topic: observations-remote-sensing
+topics:
+- applications-impacts
+type: benchmark
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- stations
+status: research
+summary: A random forest extrapolates satellite-derived US coastal winds to 200 m, producing a 0.25° gridded
+  offshore wind profile product from 1987 to 2022 trained on 276,577 lidar profiles.
+abstract: Abstract. Offshore wind farms are a low-cost, efficient technology for green energy. They deliver
+  significant economic benefits through their manufacturing and operation, and can be readily deployed
+  at scale. Offshore wind also offers a route to opening up access to renewable energy for a global population,
+  40 % of whom live within 100 km of the coast. Presently, offshore wind speed data around wind turbine
+  hub heights are fairly limited, available either through in situ observations from wind masts and floating
+  Light Detection and Ranging (lidar) buoys at selected locations or as forecasting-model based output
+  such as from the 2023 National Renewable Energy Laboratory (NREL) National Offshore Wind (NOW-23) and
+  the European Centre for Medium-Range Weather Forecasts (ECMWF) Reanalysis v5 (ERA5). In situ wind profiles
+  are very sparse and costly to obtain en masse, whereas satellite-derived 10 m wind speeds have vast
+  coverage at high resolution. In this study, we show the improvement of deploying machine learning techniques,
+  in particular random forest regression (RFR), over conventional methods for accurately estimating offshore
+  wind speed profiles on a high-resolution (0.25°) grid at 6-hourly resolution from 1987 to 2022 using
+  satellite-derived surface wind speeds from the National Oceanic and Atmospheric Administration (NOAA)
+  National Centers for Environmental Information’s (NCEI) Blended Seawinds version 2.0 (NBSv2.0) product.
+  We use 276,577 wind profiles from five publicly available lidar datasets over the Northeast US and California
+  coasts to train and validate a RFR model to extrapolate wind speed profiles up to 200 m. A single extrapolation
+  model applicable to the coastal regions of the contiguous US and Hawai’i is developed, instead of site-specific
+  ones attempted in previous studies. Our RFR outperforms conventional extrapolation methods at the five
+  training stations under cross validation (where each station is held out from the training once and
+  used for validation), especially under conditions of high vertical wind shear and at wind turbine hub
+  heights (~100 m). This model is then tested on two lidar stations that were not used in the training
+  data and profiles from six NOW-23 station locations to evaluate its performance on unseen data. The
+  final model is applied to the NBSv2.0 data from 1987–2022 to create publicly available wind speed profiles
+  over the coastal regions of the contiguous US and Hawai’i on a 0.25° grid, which are shown to outperform
+  NOW-23 and ERA-5 reanalysis at 100 m using a correlated triple collocation method over five years of
+  matchup data (2015–2019). Gridded maps of wind profiles in the marine boundary layer over US coastal
+  waters will enable the development of a suite of wind energy resources and will help stakeholders in
+  their decision making related to wind-based renewable energy development.
+significance: 3
+cited_by: 4
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

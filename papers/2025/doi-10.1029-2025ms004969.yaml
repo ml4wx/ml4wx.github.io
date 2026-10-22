@@ -1,0 +1,59 @@
+id: doi-10.1029-2025ms004969
+title: 'PseudospectralNet: Toward Hybrid Atmospheric Models for Climate Simulations'
+authors:
+- Maximilian Gelbrecht
+- Milan Klöwer
+- Niklas Boers
+date: '2025-10-01'
+year: 2025
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2025ms004969
+  openalex: W4415322531
+links:
+  paper: https://doi.org/10.1029/2025ms004969
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2025MS004969
+orgs:
+- university-of-oxford
+- mit
+- tum
+- pik
+topic: hybrid-parameterization
+topics:
+- climate-emulation
+type: model
+method:
+- cnn
+- physics-constrained
+- differentiable
+timescale:
+- medium
+- climate
+spatial:
+- global
+data:
+- era5
+- other
+status: research
+summary: PseudospectralNet couples a quasi-geostrophic dynamical core with a UNet in spectral and grid
+  space, improving short-term skill and long-term stability over pure ML models.
+abstract: Abstract Recent machine learning (ML) models have shown great success for weather prediction
+  tasks, suggesting that atmospheric dynamics can in principle be learned from data. However, such approaches
+  suffer from instability or drift in long integrations and are hence usually not suited for climate simulations.
+  Incorporating physical knowledge promises to alleviate such shortcomings. Here, we present PseudospectralNet
+  (PSN), an architecture for a hybrid atmospheric model that combines a quasi‐geostrophic physics‐based
+  dynamical core with a data‐driven core based on an UNet. Our architecture transforms between grid and
+  spectral space at every time step and therefore mimics the pseudospectral solution approach many intermediate‐complexity
+  atmospheric models follow. Neural networks are separately defined in the spectral and grid space and
+  are combined with physics‐based dynamical cores in each of these spaces. We train PSN separately on
+  data from quasi‐geostrophic models, primitive equation models, and reanalysis data. We use this model
+  to study the effect of adding physics‐based cores to ML models on forecast error and numerical stability.
+  We find in both regards that adding the physics‐based dynamical core to our model helps short‐term predictability
+  and long‐term numerical stability of the hybrid model.
+significance: 4
+cited_by: 3
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

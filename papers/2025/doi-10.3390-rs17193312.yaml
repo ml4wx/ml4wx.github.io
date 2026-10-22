@@ -1,0 +1,57 @@
+id: doi-10.3390-rs17193312
+title: An Evaluation of Radiation Parameterizations in a Meso-Scale Weather Prediction Model Using Satellite
+  Flux Observations
+authors:
+- Jihee Choi
+- Soonyoung Roh
+- Hwan‐Jin Song
+- Sunghye Baek
+- Minjin Choi
+- Won-Jun Choi
+date: '2025-09-26'
+year: 2025
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs17193312
+  openalex: W4414611247
+links:
+  paper: https://doi.org/10.3390/rs17193312
+  pdf: https://www.mdpi.com/2072-4292/17/19/3312/pdf?version=1758986542
+topic: hybrid-parameterization
+topics:
+- observations-remote-sensing
+type: evaluation
+method:
+- other
+timescale:
+- short
+spatial:
+- regional
+data:
+- satellite
+- nwp-analysis
+status: research
+summary: Evaluates a neural-network emulator of the RRTMG radiation scheme in a mesoscale NWP model against
+  CERES satellite fluxes, with about 60-fold speedup at similar accuracy.
+abstract: This study evaluates the forecast performance of four radiation parameterization schemes—the
+  Rapid Radiative Transfer Model for General Circulation Models (RRTMG), its improved version RRTMG-K,
+  the infrequently applied variant, RRTMG-K60x, and the neural network emulator, RRTMG-KNN, within a high-resolution
+  numerical weather prediction (NWP) model. The evaluation uses satellite-derived observations of Outgoing
+  Longwave Radiation (OLR) and Outgoing Shortwave Radiation (OSR) from the Clouds and the Earth’s Radiant
+  Energy System (CERES) over the Korean Peninsula during 2020, including an extreme case study of Typhoon
+  Haishen. Results show that RRTMG-K reduces RMSEs by 4.8% for OLR and 17.5% for OSR relative to RRTMG,
+  primarily due to substantial bias reduction (42.3% for OLR, 60.4% for OSR). The RRTMG-KNN scheme achieves
+  approximately 60-fold computational speedup while maintaining similar or slightly better accuracy than
+  RRTMG-K; specifically, it reduces OLR errors by 1.2% and OSR errors by 1.6% compared to the infrequently
+  applied RRTMG-K60x. In contrast, the infrequent application of RRTMG-K (RRTMG-K60x) slightly increases
+  errors, underscoring the trade-off between computational efficiency and accuracy. These findings demonstrate
+  the value of integrating advanced satellite flux observations and machine learning techniques into the
+  evaluation and optimization of radiation schemes, providing a robust framework for improving cloud–radiation
+  interaction representation in NWP models.
+significance: 3
+cited_by: 2
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

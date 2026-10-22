@@ -1,0 +1,56 @@
+id: doi-10.3390-e27101034
+title: A Two-Step Machine Learning Approach Integrating GNSS-Derived PWV for Improved Precipitation Forecasting
+authors:
+- Laura Profetto
+- Andrea Antonini
+- Luca Fibbi
+- Alberto Ortolani
+- Giovanna Maria Dimitri
+date: '2025-10-02'
+year: 2025
+venue: Entropy
+venue_type: journal
+ids:
+  doi: 10.3390/e27101034
+  openalex: W4414745328
+links:
+  paper: https://doi.org/10.3390/e27101034
+  pdf: https://www.mdpi.com/1099-4300/27/10/1034/pdf?version=1759385862
+topic: nowcasting
+topics:
+- observations-remote-sensing
+type: model
+method:
+- classical-ml
+- rnn
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- satellite
+- stations
+status: research
+summary: Random Forest estimates current rainfall from GNSS precipitable water vapour, then LSTM predicts
+  the next hour, improving intense rainfall and thunderstorm forecasts.
+abstract: Global Navigation Satellite System (GNSS) meteorology has emerged as a valuable tool for atmospheric
+  monitoring, providing high-resolution, near-real-time data that can significantly improve precipitation
+  nowcasting. This study aims to enhance short-term precipitation forecasting by integrating GNSS-derived
+  Precipitable Water Vapor (PWV)-a key indicator of atmospheric moisture-with traditional meteorological
+  observations. A novel two-step machine learning framework is proposed that combines a Random Forest
+  (RF) model and a Long Short-Term Memory (LSTM) neural network. The RF model first estimates current
+  precipitation based on PWV, surface weather parameters, and auxiliary atmospheric variables. Then, the
+  LSTM network leverages temporal dependencies within the data to predict precipitation for the subsequent
+  hour. This hybrid method capitalizes on the RF's ability to model complex nonlinear relationships and
+  the LSTM's strength in handling time series data. The results demonstrate that the proposed approach
+  improves forecasting accuracy, particularly during extreme weather events such as intense rainfall and
+  thunderstorms, outperforming conventional models. By integrating GNSS meteorology with advanced machine
+  learning techniques, this study offers a promising tool for meteorological services, early warning systems,
+  and disaster risk management. The findings highlight the potential of GNSS-based nowcasting for real-time
+  decision-making in weather-sensitive applications.
+significance: 2
+cited_by: 7
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,51 @@
+id: doi-10.25560-127500
+title: Short-term ensemble prediction of convective cells using data-driven methods
+authors:
+- Shu, Zhou
+date: '2025-07-08'
+year: 2025
+venue_type: other
+ids:
+  doi: 10.25560/127500
+  openalex: W7137056150
+links:
+  paper: https://doi.org/10.25560/127500
+topic: nowcasting
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- classical-ml
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Analogue-based ensemble nowcasting of convective cell properties from radar, with random-forest
+  track-type filtering improving ensemble calibration.
+abstract: Very short-term forecasting (nowcasting) of convective rainfall remains a challenge due to the
+  highly localised and intense nature of convective storms. Capturing swift changes in convective cells
+  continues to stretch operational systems. This thesis introduces an ensemble nowcasting framework for
+  predicting key cell properties, namely size, major axis length and reflectivity, using radar data processed
+  by an enhanced TITAN algorithm. An initial assessment exposes the limitations of existing field-based
+  methods for isolated, fast growing storms and motivates the development of an analogue-based approach.
+  A basic analogue model is first constructed and then refined by applying adaptive spatial thresholds
+  to the process of selecting analogues. Further analysis demonstrates that accurate prediction of a cell’s
+  track type is essential for modelling its temporal evolution. To forecast track type, a range of machine
+  learning classifiers are evaluated, with random forests being the most effective. Track type predictions
+  from these classifiers are then incorpo- rated into the analogue framework so that only historical cells
+  sharing the predicted category are retained as analogues. This combined method improves the reliability
+  of categorical forecasts, enhances the accuracy of deterministic forecasts and yields ensembles with
+  better calibration than those based on simple persistence or unfiltered analogue methods. The resulting
+  system strikes a practical balance between forecast skill, calibration and computational efficiency,
+  making it well suited for urban surface-water flooding applications. Future work will develop automated
+  parameter-tuning routines, integrate higher-resolution environmental predictors and reconstruct full
+  gridded rainfall fields for hydrological modelling.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

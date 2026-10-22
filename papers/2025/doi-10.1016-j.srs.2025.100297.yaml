@@ -1,0 +1,63 @@
+id: doi-10.1016-j.srs.2025.100297
+title: Automated night-time fog detection and masking using machine learning from near real-time satellite
+  observations
+authors:
+- Narendra Nelli
+- Diana Francis
+- Charfeddine Cherif
+- Ricardo Fonseca
+- Hosni Ghedira
+date: '2025-10-11'
+year: 2025
+venue: Science of Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1016/j.srs.2025.100297
+  openalex: W4415071506
+links:
+  paper: https://doi.org/10.1016/j.srs.2025.100297
+topic: observations-remote-sensing
+topics:
+- nowcasting
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- stations
+status: pre-operational
+summary: XGBoost fusing station and k-means labels detects night fog from SEVIRI infrared channels over
+  the UAE, reaching detection probability near 0.73 at Abu Dhabi.
+abstract: 'Fog significantly reduces visibility, impacting transportation and safety, especially in United
+  Arab Emirates (UAE) during winter months. This study develops a machine learning (ML) approach for automated
+  fog detection and masking from near real-time SEVIRI Satellite observations. We evaluate six ML models
+  across four training strategies: (1) supervised training using SEVIRI nighttime microphysics Red-Green-Blue
+  (RGB) pixels with Meteorological Aerodrome Reports (METAR) station labels; (2) as (1) but adding the
+  three infrared channels; (3) k-means labels derived from Night Microphysics RGB; and (4) a fusion of
+  station-labeled and k-means-labeled data. Among the models, the eXtreme Gradient Boosting (XGBoost)
+  performs best overall. Using the same fog events analyzed by Weston & Temimi (2020), the fusion approach
+  (Approach 4) with XGBoost more sharply delineates fog boundaries, accurately captures “fog holes”, and
+  reduces false alarms and missed detections—including during marginal/light-mist episodes—relative to
+  the thresholding method, with notable improvements over inland deserts and along the coast. At Abu Dhabi,
+  station-trained models achieve a Probability of Detection of ∼0.73 with a False Alarm Ratio of ∼0.11;
+  the fusion approach maintains strong detection skill with competitive false-alarm rates while improving
+  spatial coherence. Regional case studies over Qatar and Saudi Arabia demonstrate that the trained model
+  generalizes across the Arabian Peninsula. The workflow executes in seconds and relies only on three
+  infrared channels, avoiding auxiliary reanalysis inputs and supporting near-real-time operations. These
+  results show that combining complementary labels from stations and clustering substantially enhances
+  satellite-based fog masking, providing a practical pathway for operational monitoring and a foundation
+  for short-term nowcasting in arid environments. • A ML framework for nighttime fog masking from near-real-time
+  SEVIRI observations over the UAE. • Six ML models evaluated across four training strategies; the fusion
+  of METAR and k-means labels with XGBoost performs best. • Outperforms conventional methods with sharper
+  fog boundaries, accurate detection of “fog holes” and light mist, and fewer false alarms and missed
+  detections, especially inland and along the coast. • Uses only three IR channels (no ERA5), runs in
+  seconds, and generalizes to Qatar and Saudi Arabia, enabling near-real-time monitoring and short-term
+  nowcasting.'
+significance: 3
+cited_by: 4
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

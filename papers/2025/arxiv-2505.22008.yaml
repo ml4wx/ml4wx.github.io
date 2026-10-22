@@ -1,0 +1,50 @@
+id: arxiv-2505.22008
+title: 'Align-DA: Align Score-based Atmospheric Data Assimilation with Multiple Preferences'
+authors:
+- Jing-An Sun
+- Hang Fan
+- Junchao Gong
+- Ben Fei
+- Kun Chen
+- Fenghua Ling
+- Wenlong Zhang
+- Wanghan Xu
+- Li Yan
+- Pierre Gentine
+- Lei Bai
+date: '2025-05-28'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2505.22008'
+links:
+  paper: https://arxiv.org/abs/2505.22008
+  pdf: https://arxiv.org/pdf/2505.22008
+topic: data-assimilation
+type: model
+method:
+- diffusion
+data:
+- other
+status: research
+summary: Align-DA frames atmospheric data assimilation as score-based generation and aligns the background
+  prior with reward signals for accuracy, forecast skill, and physical consistency.
+abstract: 'Data assimilation (DA) aims to estimate the full state of a dynamical system by combining partial
+  and noisy observations with a prior model forecast, commonly referred to as the background. In atmospheric
+  applications, this problem is fundamentally ill-posed due to the sparsity of observations relative to
+  the high-dimensional state space. Traditional methods address this challenge by simplifying background
+  priors to regularize the solution, which are empirical and require continual tuning for application.
+  Inspired by alignment techniques in text-to-image diffusion models, we propose Align-DA, which formulates
+  DA as a generative process and uses reward signals to guide background priors, replacing manual tuning
+  with data-driven alignment. Specifically, we train a score-based model in the latent space to approximate
+  the background-conditioned prior, and align it using three complementary reward signals for DA: (1)
+  assimilation accuracy, (2) forecast skill initialized from the assimilated state, and (3) physical adherence
+  of the analysis fields. Experiments with multiple reward signals demonstrate consistent improvements
+  in analysis quality across different evaluation metrics and observation-guidance strategies. These results
+  show that preference alignment, implemented as a soft constraint, can automatically adapt complex background
+  priors tailored to DA, offering a promising new direction for advancing the field.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

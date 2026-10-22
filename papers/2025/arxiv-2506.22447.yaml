@@ -1,0 +1,53 @@
+id: arxiv-2506.22447
+title: 'Vision Transformers for Multi-Variable Climate Downscaling: Emulating Regional Climate Models
+  with a Shared Encoder and Multi-Decoder Architecture'
+authors:
+- Fabio Merizzi
+- Harilaos Loukos
+date: '2025-06-12'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2506.22447'
+links:
+  paper: https://arxiv.org/abs/2506.22447
+  pdf: https://arxiv.org/pdf/2506.22447
+topic: downscaling
+topics:
+- climate-emulation
+type: model
+method:
+- transformer
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+status: research
+summary: A multi-variable ViT with shared encoder and variable-specific decoders emulates RCM downscaling
+  over Europe, cutting MSE about 5.5% versus single-variable ViTs and inference cost 29-32%.
+abstract: 'Global Climate Models (GCMs) are critical for simulating large-scale climate dynamics, but
+  their coarse spatial resolution limits their applicability in regional studies. Regional Climate Models
+  (RCMs) address this limitation through dynamical downscaling, albeit at considerable computational cost
+  and with limited flexibility. Deep learning has emerged as an efficient data-driven alternative; however,
+  most existing approaches focus on single-variable models that downscale one variable at a time. This
+  paradigm can lead to redundant computation, limited contextual awareness, and weak cross-variable interactions.To
+  address these limitations, we propose a multi-variable Vision Transformer (ViT) architecture with a
+  shared encoder and variable-specific decoders (1EMD). The proposed model jointly predicts six key climate
+  variables: surface temperature, wind speed, 500 hPa geopotential height, total precipitation, surface
+  downwelling shortwave radiation, and surface downwelling longwave radiation, directly from GCM-resolution
+  inputs, emulating RCM-scale downscaling over Europe. Compared to single-variable ViT models, the 1EMD
+  architecture improves performance across all six variables, achieving an average MSE reduction of approximately
+  5.5% under a fair and controlled comparison. It also consistently outperforms alternative multi-variable
+  baselines, including a single-decoder ViT and a multi-variable U-Net. Moreover, multi-variable models
+  substantially reduce computational cost, yielding a 29-32% lower inference time per variable compared
+  to single-variable approaches. Overall, our results demonstrate that multi-variable modeling provides
+  systematic advantages for high-resolution climate downscaling in terms of both accuracy and efficiency.
+  Among the evaluated architectures, the proposed 1EMD ViT achieves the most favorable trade-off between
+  predictive performance and computational cost.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

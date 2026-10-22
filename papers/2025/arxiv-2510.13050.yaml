@@ -1,0 +1,67 @@
+id: arxiv-2510.13050
+title: An Operational Deep Learning System for Satellite-Based High-Resolution Global Nowcasting
+authors:
+- Shreya Agrawal
+- Mohammed Alewi Hassen
+- Emmanuel Asiedu Brempong
+- Boris Babenko
+- Fred Zyda
+- Olivia Graham
+- Di Li
+- Samier Merchant
+- Santiago Hincapie Potes
+- Tyler Russell
+- Danny Cheresnick
+- Aditya Prakash Kakkirala
+- Stephan Rasp
+- Avinatan Hassidim
+- Yossi Matias
+- Nal Kalchbrenner
+- Pramod Gupta
+- Jason Hickey
+- Aaron Bell
+date: '2025-10-15'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2510.13050'
+  openalex: W4415274413
+links:
+  paper: https://arxiv.org/abs/2510.13050
+  pdf: https://arxiv.org/pdf/2510.13050
+topic: nowcasting
+type: model
+timescale:
+- nowcast
+spatial:
+- global
+data:
+- satellite
+- nwp-analysis
+- radar
+status: operational
+summary: Global MetNet, an operational ML nowcaster using satellite, CORRA and NWP data, gives 5 km, 15-minute
+  precipitation forecasts to 12 h globally, deployed on Google Search.
+abstract: Precipitation nowcasting, which predicts rainfall up to a few hours ahead, is a critical tool
+  for vulnerable communities in the Global South frequently exposed to intense, rapidly developing storms.
+  Timely forecasts provide a crucial window to protect lives and livelihoods. Traditional numerical weather
+  prediction (NWP) methods suffer from high latency, low spatial and temporal resolution, and significant
+  gaps in accuracy across the world. Recent machine learning-based nowcasting methods, common in the Global
+  North, cannot be extended to the Global South due to extremely sparse radar coverage. We present Global
+  MetNet, an operational global machine learning nowcasting model. It leverages the Global Precipitation
+  Mission's CORRA dataset, geostationary satellite data, and global NWP data to predict precipitation
+  for the next 12 hours. The model operates at a high resolution of approximately 0.05° (~5km) spatially
+  and 15 minutes temporally. Global MetNet significantly outperforms industry-standard hourly forecasts
+  and achieves significantly higher skill, making forecasts useful over a much larger area of the world
+  than previously available. Our model demonstrates better skill in data-sparse regions than even the
+  best high-resolution NWP models achieve in the US. Validated using ground radar and satellite data,
+  it shows significant improvements across key metrics like the critical success index and fractions skill
+  score for all precipitation rates and lead times. Crucially, our model generates forecasts in under
+  a minute, making it readily deployable for real-time applications. It is already deployed for millions
+  of users on Google Search. This work represents a key step in reducing global disparities in forecast
+  quality and integrating sparse, high-resolution satellite observations into weather forecasting.
+significance: 6
+score: 34
+highlight: false
+added: '2026-10-22'
+source: backfill
