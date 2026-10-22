@@ -1,0 +1,50 @@
+id: arxiv-2312.07112
+title: Generating High-Resolution Regional Precipitation Using Conditional Diffusion Model
+authors:
+- Naufal Shidqi
+- Chaeyoon Jeong
+- Sungwon Park
+- Elke Zeller
+- Arjun Babu Nellikkattil
+- Karandeep Singh
+date: '2023-12-12'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2312.07112'
+  openalex: W4389755589
+links:
+  paper: https://arxiv.org/abs/2312.07112
+  pdf: https://arxiv.org/pdf/2312.07112
+topic: downscaling
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+status: research
+summary: A conditional DDPM conditioned on multiple low-resolution variables downscales CESM regional
+  precipitation by 4x and 8x, improving over existing deep learning baselines.
+abstract: Climate downscaling is a crucial technique within climate research, serving to project low-resolution
+  (LR) climate data to higher resolutions (HR). Previous research has demonstrated the effectiveness of
+  deep learning for downscaling tasks. However, most deep learning models for climate downscaling may
+  not perform optimally for high scaling factors (i.e., 4x, 8x) due to their limited ability to capture
+  the intricate details required for generating HR climate data. Furthermore, climate data behaves differently
+  from image data, necessitating a nuanced approach when employing deep generative models. In response
+  to these challenges, this paper presents a deep generative model for downscaling climate data, specifically
+  precipitation on a regional scale. We employ a denoising diffusion probabilistic model (DDPM) conditioned
+  on multiple LR climate variables. The proposed model is evaluated using precipitation data from the
+  Community Earth System Model (CESM) v1.2.2 simulation. Our results demonstrate significant improvements
+  over existing baselines, underscoring the effectiveness of the conditional diffusion model in downscaling
+  climate data.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

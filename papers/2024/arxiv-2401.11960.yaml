@@ -1,0 +1,57 @@
+id: arxiv-2401.11960
+title: 'Observation-Guided Meteorological Field Downscaling at Station Scale: A Benchmark and a New Method'
+authors:
+- Zili Liu
+- Hao Chen
+- Lei Bai
+- Wenyuan Li
+- Keyan Chen
+- Zhengyi Wang
+- Wanli Ouyang
+- Zhengxia Zou
+- Zhenwei Shi
+date: '2024-01-22'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2401.11960'
+  openalex: W4391158859
+links:
+  paper: https://arxiv.org/abs/2401.11960
+  pdf: https://arxiv.org/pdf/2401.11960
+topic: downscaling
+topics:
+- post-processing
+type: benchmark
+spatial:
+- local
+- regional
+data:
+- nwp-analysis
+- stations
+- era5
+status: research
+summary: HyperDS, a hypernetwork downscaler with station observations and a new benchmark, retrieves station-scale
+  surface states; wind speed MSE improves 67%.
+abstract: Downscaling (DS) of meteorological variables involves obtaining high-resolution states from
+  low-resolution meteorological fields and is an important task in weather forecasting. Previous methods
+  based on deep learning treat downscaling as a super-resolution task in computer vision and utilize high-resolution
+  gridded meteorological fields as supervision to improve resolution at specific grid scales. However,
+  this approach has struggled to align with the continuous distribution characteristics of meteorological
+  fields, leading to an inherent systematic bias between the downscaled results and the actual observations
+  at meteorological stations. In this paper, we extend meteorological downscaling to arbitrary scattered
+  station scales, establish a brand new benchmark and dataset, and retrieve meteorological states at any
+  given station location from a coarse-resolution meteorological field. Inspired by data assimilation
+  techniques, we integrate observational data into the downscaling process, providing multi-scale observational
+  priors. Building on this foundation, we propose a new downscaling model based on hypernetwork architecture,
+  namely HyperDS, which efficiently integrates different observational information into the model training,
+  achieving continuous scale modeling of the meteorological field. Through extensive experiments, our
+  proposed method outperforms other specially designed baseline models on multiple surface variables.
+  Notably, the mean squared error (MSE) for wind speed and surface pressure improved by 67% and 19.5%
+  compared to other methods. We will release the dataset and code subsequently.
+significance: 4
+cited_by: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

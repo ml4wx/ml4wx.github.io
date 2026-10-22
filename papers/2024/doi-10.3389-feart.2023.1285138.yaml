@@ -1,0 +1,56 @@
+id: doi-10.3389-feart.2023.1285138
+title: Tropical cyclone intensity estimation through convolutional neural network transfer learning using
+  two geostationary satellite datasets
+authors:
+- Hyeyoon Jung
+- You-Hyun Baek
+- Il‐Ju Moon
+- Juhyun Lee
+- Eun-Ha Sohn
+date: '2024-01-19'
+year: 2024
+venue: Frontiers in Earth Science
+venue_type: journal
+ids:
+  doi: 10.3389/feart.2023.1285138
+  openalex: W4391034813
+links:
+  paper: https://doi.org/10.3389/feart.2023.1285138
+  pdf: https://www.frontiersin.org/articles/10.3389/feart.2023.1285138/pdf?isPublishedV2=False
+orgs:
+- kma
+topic: extremes-hazards
+topics:
+- observations-remote-sensing
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: CNN transfer learning from COMS to GK2A geostationary imagery cuts tropical cyclone intensity
+  RMSE by 20% compared with training on GK2A data alone.
+abstract: Accurate prediction and monitoring of tropical cyclone (TC) intensity are crucial for saving
+  lives, mitigating damages, and improving disaster response measures. In this study, we used a convolutional
+  neural network (CNN) model to estimate TC intensity in the western North Pacific using Geo-KOMPSAT-2A
+  (GK2A) satellite data. Given that the GK2A data cover only the period since 2019, we applied transfer
+  learning to the model using information learned from previous Communication, Ocean, and Meteorological
+  Satellite (COMS) data, which cover a considerably longer period (2011–2019). Transfer learning is a
+  powerful technique that can improve the performance of a model even if the target task is based on a
+  small amount of data. Experiments with various transfer learning methods using the GK2A and COMS data
+  showed that the frozen–fine-tuning method had the best performance due to the high similarity between
+  the two datasets. The test results for 2021 showed that employing transfer learning led to a 20% reduction
+  in the root mean square error (RMSE) compared to models using only GK2A data. For the operational model,
+  which additionally used TC images and intensities from 6 h earlier, transfer learning reduced the RMSE
+  by 5.5%. These results suggest that transfer learning may represent a new breakthrough in geostationary
+  satellite image–based TC intensity estimation, for which continuous long-term data are not always available.
+significance: 3
+cited_by: 8
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

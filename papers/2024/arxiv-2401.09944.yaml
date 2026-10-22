@@ -1,0 +1,49 @@
+id: arxiv-2401.09944
+title: 'WindSeer: Real-time volumetric wind prediction over complex terrain aboard a small UAV'
+authors:
+- Florian Achermann
+- Thomas Stastny
+- Bogdan Danciu
+- Andrey Kolobov
+- Jen Jen Chung
+- Roland Siegwart
+- Nicholas Lawrance
+date: '2024-01-18'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2401.09944'
+links:
+  paper: https://arxiv.org/abs/2401.09944
+  pdf: https://arxiv.org/pdf/2401.09944
+topic: regional-km-scale
+topics:
+- applications-impacts
+type: model
+timescale:
+- nowcast
+spatial:
+- local
+- regional
+data:
+- km-scale-sim
+- stations
+status: pre-operational
+summary: WindSeer, a neural network trained only on CFD simulations, predicts real volumetric low-altitude
+  wind over terrain in real time from sparse measurements, running on a small UAV.
+abstract: Real-time high-resolution wind predictions are beneficial for various applications including
+  safe manned and unmanned aviation. Current weather models require too much compute and lack the necessary
+  predictive capabilities as they are valid only at the scale of multiple kilometers and hours - much
+  lower spatial and temporal resolutions than these applications require. Our work, for the first time,
+  demonstrates the ability to predict low-altitude wind in real-time on limited-compute devices, from
+  only sparse measurement data. We train a neural network, WindSeer, using only synthetic data from computational
+  fluid dynamics simulations and show that it can successfully predict real wind fields over terrain with
+  known topography from just a few noisy and spatially clustered wind measurements. WindSeer can generate
+  accurate predictions at different resolutions and domain sizes on previously unseen topography without
+  retraining. We demonstrate that the model successfully predicts historical wind data collected by weather
+  stations and wind measured onboard drones.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

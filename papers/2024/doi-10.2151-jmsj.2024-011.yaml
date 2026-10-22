@@ -1,0 +1,62 @@
+id: doi-10.2151-jmsj.2024-011
+title: Retrieval of High-Frequency Temperature Profiles by FY-4A/GIIRS Based on Generalized Ensemble Learning
+authors:
+- Gen Wang
+- Wei HAN
+- Song Yuan
+- Jing WANG
+- Ruoying Yin
+- Ye Song
+- Feng XIE
+date: '2024-01-01'
+year: 2024
+venue: Journal of the Meteorological Society of Japan Ser II
+venue_type: journal
+ids:
+  doi: 10.2151/jmsj.2024-011
+  openalex: W4390871088
+links:
+  paper: https://doi.org/10.2151/jmsj.2024-011
+  pdf: https://www.jstage.jst.go.jp/article/jmsj/advpub/0/advpub_2024-011/_pdf
+orgs:
+- cma
+topic: observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- era5
+status: research
+summary: Ensemble of random forest, XGBoost and LightGBM retrieves FY-4A GIIRS temperature profiles, with
+  test RMSE under 1.4 K against ERA5.
+abstract: 'The temperature profile is an important parameter of the atmospheric thermal state in atmospheric
+  monitoring and weather forecasting. The hyperspectral infrared sounder of a geostationary satellite
+  provides abundant spectral information and can retrieve the temperature profile. Based on the mediumwave
+  channel data (independent variable and model input data) of FY-4A/GIIRS (geosynchronous interferometric
+  infrared sounder) and ERA5 reanalysis data (dependent variable and model output data), the atmospheric
+  temperature profile is retrieved by generalized ensemble learning. Firstly, the feature variables of
+  the model are constructed. Because there are many GIIRS channels, a two-step feature selection method
+  is adopted: step 1—establish a blacklist of GIIRS channels; step 2—select feature variables by using
+  the method of importance permutation. Secondly, they are integrated based on optimizing and adjusting
+  the hyperparameters of three basic machine learning models (Random Forest, XGBoost and LightGBM). Generalized
+  ensemble learning nonlinear convex optimization is used to optimize the weight of each basic model.
+  Finally, based on high-frequency GIIRS observations of Typhoon Lekima and Typhoon Higos, testing and
+  method evaluation of the temperature profile retrievals are carried out. The results show that LightGBM
+  achieves the best retrieval result among the three basic models, followed by Random Forest and finally
+  XGBoost. The root-mean-square error of the whole temperature profile in the training dataset of generalized
+  ensemble learning is less than 0.3 K, while that of the testing dataset is less than 1.4 K, and that
+  between 150 and 925 hPa is less than 1 K. The retrieval results correlate well with the radiosonde temperature
+  profile. The performance of generalized ensemble learning is better than the performances of the three
+  basic models, but it depends on the retrieval results of LightGBM. In the Lekima experimental case,
+  compared to other channels selected for temperature retrieval models, the importance of mediumwave channels
+  9 and 307 of GIIRS ranks first and second, respectively. The method in this paper provides a new solution
+  and technical support for retrieving atmospheric parameters from hyperspectral and other satellite data.'
+significance: 3
+cited_by: 7
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

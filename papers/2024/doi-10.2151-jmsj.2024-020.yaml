@@ -1,0 +1,49 @@
+id: doi-10.2151-jmsj.2024-020
+title: Development of a Temperature Prediction Method Combining Deep Neural Networks and a Kalman Filter
+authors:
+- Takuya INOUE
+- Tsuyoshi Thomas Sekiyama
+- Atsushi KUDO
+date: '2024-01-01'
+year: 2024
+venue: Journal of the Meteorological Society of Japan Ser II
+venue_type: journal
+ids:
+  doi: 10.2151/jmsj.2024-020
+  openalex: W4393184177
+links:
+  paper: https://doi.org/10.2151/jmsj.2024-020
+  pdf: https://www.jstage.jst.go.jp/article/jmsj/advpub/0/advpub_2024-020/_pdf
+orgs:
+- jma
+topic: post-processing
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Combines a CNN bias-correction scheme with JMA's Kalman filter for surface temperature, outperforming
+  either method alone and fixing coastal front and heat wave biases.
+abstract: Numerical weather forecast models have biases caused by insufficient grid resolution and incomplete
+  physical processes, especially near the land surface. Therefore, the Japan Meteorological Agency (JMA)
+  has been operationally post-processing the forecast model outputs to correct biases. The operational
+  post-processing method uses a Kalman filter (KF) algorithm for surface temperature prediction. Recent
+  reports have shown that deep convolutional neural networks (CNNs) outperform the JMA operational method
+  in correcting temperature forecast biases. This study combined the CNN-based bias correction scheme
+  with the JMA operational KF algorithm. We expected that the combination of CNNs and a KF would improve
+  the post-processing performance, as the CNNs modify large horizontal structures, and then, the KF corrects
+  minor spatiotemporal deviations. As expected, we confirmed that the combination outperformed both CNNs
+  and the KF alone. This study demonstrated the advantages of the new method in correcting coastal fronts,
+  heat waves, and radiative cooling biases.
+significance: 4
+cited_by: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

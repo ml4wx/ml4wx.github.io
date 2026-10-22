@@ -1,0 +1,47 @@
+id: arxiv-2312.01197
+title: 'Short-term Precipitation Forecasting in The Netherlands: An Application of Convolutional LSTM
+  neural networks to weather radar data'
+authors:
+- Petros Demetrakopoulos
+date: '2023-12-02'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2312.01197'
+  openalex: W4389363509
+links:
+  paper: https://arxiv.org/abs/2312.01197
+  pdf: https://arxiv.org/pdf/2312.01197
+topic: nowcasting
+type: application
+method:
+- rnn
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: A ConvLSTM autoencoder trained on KNMI radar sequences predicts Dutch precipitation 1.5 hours
+  ahead, capturing movement and intensity of rain systems.
+abstract: This work addresses the challenge of short-term precipitation forecasting by applying Convolutional
+  Long Short-Term Memory (ConvLSTM) neural networks to weather radar data from the Royal Netherlands Meteorological
+  Institute (KNMI). The research exploits the combination of Convolutional Neural Networks (CNNs) layers
+  for spatial pattern recognition and LSTM network layers for modelling temporal sequences, integrating
+  these strengths into a ConvLSTM architecture. The model was trained and validated on weather radar data
+  from the Netherlands. The model is an autoencoder consisting of nine layers, uniquely combining convolutional
+  operations with LSTMs temporal processing, enabling it to capture the movement and intensity of precipitation
+  systems. The training set comprised of sequences of radar images, with the model being tasked to predict
+  precipitation patterns 1.5 hours ahead using the preceding data. Results indicate high accuracy in predicting
+  the direction and intensity of precipitation movements. The findings of this study underscore the significant
+  potential of ConvLSTM networks in meteorological forecasting, particularly in regions with complex weather
+  patterns. It contributes to the field by offering a more accurate, data-driven approach to weather prediction,
+  highlighting the broader applicability of ConvLSTM networks in meteorological tasks.
+significance: 3
+cited_by: 2
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

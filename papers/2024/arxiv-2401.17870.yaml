@@ -1,0 +1,49 @@
+id: arxiv-2401.17870
+title: Efficient Subseasonal Weather Forecast using Teleconnection-informed Transformers
+authors:
+- Shan Zhao
+- Zhitong Xiong
+- Xiao Xiang Zhu
+date: '2024-01-31'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2401.17870'
+links:
+  paper: https://arxiv.org/abs/2401.17870
+  pdf: https://arxiv.org/pdf/2401.17870
+topic: s2s-seasonal
+topics:
+- foundation-models
+type: model
+method:
+- transformer
+timescale:
+- s2s
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Teleconnection-informed transformer fine-tunes 1.1% of Pangu parameters to extend skill to two-week
+  atmospheric forecasts, with physically meaningful teleconnection-filtered features.
+abstract: Subseasonal forecasting, which is pivotal for agriculture, water resource management, and early
+  warning of disasters, faces challenges due to the chaotic nature of the atmosphere. Recent advances
+  in machine learning (ML) have revolutionized weather forecasting by achieving competitive predictive
+  skills to numerical models. However, training such foundation models requires thousands of GPU days,
+  which causes substantial carbon emissions and limits their broader applicability. Moreover, ML models
+  tend to fool the pixel-wise error scores by producing smoothed results which lack physical consistency
+  and meteorological meaning. To deal with the aforementioned problems, we propose a teleconnection-informed
+  transformer. Our architecture leverages the pretrained Pangu model to achieve good initial weights and
+  integrates a teleconnection-informed temporal module to improve predictability in an extended temporal
+  range. Remarkably, by adjusting 1.1% of the Pangu model's parameters, our method enhances predictability
+  on four surface and five upper-level atmospheric variables at a two-week lead time. Furthermore, the
+  teleconnection-filtered features improve the spatial granularity of outputs significantly, indicating
+  their potential physical consistency. Our research underscores the importance of atmospheric and oceanic
+  teleconnections in driving future weather conditions. Besides, it presents a resource-efficient pathway
+  for researchers to leverage existing foundation models on versatile downstream tasks.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

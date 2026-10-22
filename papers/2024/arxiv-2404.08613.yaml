@@ -1,0 +1,61 @@
+id: arxiv-2404.08613
+title: Using Explainable AI and Transfer Learning to understand and predict the maintenance of Atlantic
+  blocking with limited observational data
+authors:
+- Huan Zhang
+- Justin Finkel
+- Dorian S. Abbot
+- Edwin P. Gerber
+- Jonathan Weare
+date: '2024-04-12'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2404.08613'
+  openalex: W4394839170
+links:
+  paper: https://arxiv.org/abs/2404.08613
+  pdf: https://arxiv.org/pdf/2404.08613
+orgs:
+- mit
+- nyu-m2lines
+- university-of-chicago
+topic: climate-analysis-attribution
+topics:
+- xai-uq-physics
+type: model
+method:
+- cnn
+timescale:
+- medium
+spatial:
+- regional
+data:
+- era5
+- other
+status: research
+summary: SHAP-explained CNN identifies precursors of persistent Atlantic blocking in a quasigeostrophic
+  model, then transfers pretraining to ERA5 for better predictions with limited data.
+abstract: Blocking events are an important cause of extreme weather, especially long-lasting blocking
+  events that trap weather systems in place. The duration of blocking events is, however, underestimated
+  in climate models. Explainable Artificial Intelligence are a class of data analysis methods that can
+  help identify physical causes of prolonged blocking events and diagnose model deficiencies. We demonstrate
+  this approach on an idealized quasigeostrophic model developed by Marshall and Molteni (1993). We train
+  a convolutional neural network (CNN), and subsequently, build a sparse predictive model for the persistence
+  of Atlantic blocking, conditioned on an initial high-pressure anomaly. Shapley Additive ExPlanation
+  (SHAP) analysis reveals that high-pressure anomalies in the American Southeast and North Atlantic, separated
+  by a trough over Atlantic Canada, contribute significantly to prediction of sustained blocking events
+  in the Atlantic region. This agrees with previous work that identified precursors in the same regions
+  via wave train analysis. When we apply the same CNN to blockings in the ERA5 atmospheric reanalysis,
+  there is insufficient data to accurately predict persistent blocks. We partially overcome this limitation
+  by pre-training the CNN on the plentiful data of the Marshall-Molteni model, and then using Transfer
+  Learning to achieve better predictions than direct training. SHAP analysis before and after transfer
+  learning allows a comparison between the predictive features in the reanalysis and the quasigeostrophic
+  model, quantifying dynamical biases in the idealized model. This work demonstrates the potential for
+  machine learning methods to extract meaningful precursors of extreme weather events and achieve better
+  prediction using limited observational data.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

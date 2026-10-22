@@ -1,0 +1,57 @@
+id: doi-10.3390-rs16061096
+title: Joint Retrieval of Multiple Species of Ice Hydrometeor Parameters from Millimeter and Submillimeter
+  Wave Brightness Temperature Based on Convolutional Neural Networks
+authors:
+- Ke Chen
+- Jiasheng Wu
+- Ying‐Ying Chen
+date: '2024-03-20'
+year: 2024
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs16061096
+  openalex: W4392983914
+links:
+  paper: https://doi.org/10.3390/rs16061096
+  pdf: https://www.mdpi.com/2072-4292/16/6/1096/pdf?version=1710950590
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- satellite
+- nwp-analysis
+status: research
+summary: A CNN retrieves ice, snow and graupel profiles from submillimeter brightness temperatures for
+  EPS-SG ICI, cutting GWP, IWP and SWP errors by 11-25% versus U-Net.
+abstract: Submillimeter wave radiometers are promising remote sensing tools for sounding ice cloud parameters.
+  The Ice Cloud Imager (ICI) aboard the second generation of the EUMETSAT Polar System (EPS−SG) is the
+  first operational submillimeter wave radiometer used for ice cloud remote sensing. Ice clouds simultaneously
+  contain three species of ice hydrometeors—ice, snow, and graupel—the physical distributions and submillimeter
+  wave radiation characteristics of which differ. Therefore, jointly retrieving the mass parameters of
+  the three ice hydrometeors from submillimeter brightness temperatures is very challenging. In this paper,
+  we propose a multiple species of ice hydrometeor parameters retrieval algorithm based on convolutional
+  neural networks (CNNs) that can jointly retrieve the total content and vertical profiles of ice, snow,
+  and graupel particles from submillimeter brightness temperatures. The training dataset is generated
+  by a numerical weather prediction (NWP) model and a submillimeter wave radiative transfer (RT) model.
+  In this study, an end to end ICI simulation experiment involving forward modeling of the brightness
+  temperature and retrieval of ice cloud parameters was conducted to verify the effectiveness of the proposed
+  CNN retrieval algorithm. Compared with the classical Unet, the average relative errors of the improved
+  RCNN–ResUnet are reduced by 11%, 25%, and 18% in GWP, IWP, and SWP retrieval, respectively. Compared
+  with Bayesian Monte Carlo integration algorithm, the average relative error of the total content retrieved
+  by RCNN–ResUnet is reduced by 71%. Compared with BP neural network algorithm, the average relative error
+  of the vertical profiles retrieved by RCNN–ResUnet is reduced by 69%. In addition, this algorithm was
+  applied to actual Advanced Technology Microwave Sounder (ATMS) 183 GHz observed brightness temperatures
+  to retrieve graupel particle parameters with a relative error in the total content of less than 25%
+  and a relative error in the profile of less than 35%. The results show that the proposed CNN algorithm
+  can be applied to future space borne submillimeter wave radiometers to jointly retrieve mass parameters
+  of ice, snow, and graupel.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

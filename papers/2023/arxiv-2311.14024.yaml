@@ -1,0 +1,59 @@
+id: arxiv-2311.14024
+title: Creating and Leveraging a Synthetic Dataset of Cloud Optical Thickness Measures for Cloud Detection
+  in MSI
+authors:
+- Aleksis Pirinen
+- Nosheen Abid
+- Nuria Agues Paszkowsky
+- Thomas Ohlson Timoudas
+- Ronald Scheirer
+- Chiara Ceccobello
+- György Kovács
+- Anders Persson
+date: '2023-11-23'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2311.14024'
+links:
+  paper: https://arxiv.org/abs/2311.14024
+  pdf: https://arxiv.org/pdf/2311.14024
+  code: https://github.com/aleksispi/ml-cloud-opt-thick
+topic: observations-remote-sensing
+topics:
+- benchmarks-data-eval
+type: benchmark
+method:
+- classical-ml
+spatial:
+- global
+data:
+- satellite
+- km-scale-sim
+status: research
+summary: Creates a synthetic Sentinel-2 dataset of simulated radiances with cloud optical thickness labels,
+  enabling ML models to produce reliable cloud masks on real imagery.
+abstract: Cloud formations often obscure optical satellite-based monitoring of the Earth's surface, thus
+  limiting Earth observation (EO) activities such as land cover mapping, ocean color analysis, and cropland
+  monitoring. The integration of machine learning (ML) methods within the remote sensing domain has significantly
+  improved performance on a wide range of EO tasks, including cloud detection and filtering, but there
+  is still much room for improvement. A key bottleneck is that ML methods typically depend on large amounts
+  of annotated data for training, which is often difficult to come by in EO contexts. This is especially
+  true when it comes to cloud optical thickness (COT) estimation. A reliable estimation of COT enables
+  more fine-grained and application-dependent control compared to using pre-specified cloud categories,
+  as is commonly done in practice. To alleviate the COT data scarcity problem, in this work we propose
+  a novel synthetic dataset for COT estimation, that we subsequently leverage for obtaining reliable and
+  versatile cloud masks on real data. In our dataset, top-of-atmosphere radiances have been simulated
+  for 12 of the spectral bands of the Multispectral Imagery (MSI) sensor onboard Sentinel-2 platforms.
+  These data points have been simulated under consideration of different cloud types, COTs, and ground
+  surface and atmospheric profiles. Extensive experimentation of training several ML models to predict
+  COT from the measured reflectivity of the spectral bands demonstrates the usefulness of our proposed
+  dataset. In particular, by thresholding COT estimates from our ML models, we show on two satellite image
+  datasets (one that is publicly available, and one which we have collected and annotated) that reliable
+  cloud masks can be obtained. The synthetic data, the collected real dataset, code and models have been
+  made publicly available at https://github.com/aleksispi/ml-cloud-opt-thick.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

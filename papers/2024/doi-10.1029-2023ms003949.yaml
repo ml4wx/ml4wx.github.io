@@ -1,0 +1,61 @@
+id: doi-10.1029-2023ms003949
+title: A Machine Learning Parameterization of Clouds in a Coarse‐Resolution Climate Model for Unbiased
+  Radiation
+authors:
+- Brian Henn
+- Yakelyn R. Jauregui
+- Spencer Koncius Clark
+- Noah Brenowitz
+- Jeremy McGibbon
+- Oliver Watt‐Meyer
+- Andrew George Pauling
+- Christopher S. Bretherton
+date: '2024-03-01'
+year: 2024
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2023ms003949
+  openalex: W4392361851
+links:
+  paper: https://doi.org/10.1029/2023ms003949
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2023MS003949
+orgs:
+- nvidia
+- ai2
+- noaa
+- university-of-washington
+topic: hybrid-parameterization
+topics:
+- climate-emulation
+type: model
+method:
+- other
+spatial:
+- global
+data:
+- km-scale-sim
+status: research
+summary: Machine-learned cloud parameterization for FV3GFS trained on a 3 km reference run gives unbiased
+  radiative fluxes, far more accurate than the existing scheme in the coarse model.
+abstract: Abstract Coarse‐grid weather and climate models rely particularly on parameterizations of cloud
+  fields, and coarse‐grained cloud fields from a fine‐grid reference model are a natural target for a
+  machine‐learned parameterization. We machine‐learn the coarsened‐fine cloud properties as a function
+  of coarse‐grid model state in each grid cell of NOAA's FV3GFS global atmosphere model with 200 km grid
+  spacing, trained using a 3 km fine‐grid reference simulation with a modified version of FV3GFS. The
+  ML outputs are coarsened‐fine fractional cloud cover and liquid and ice cloud condensate mixing ratios,
+  and the inputs are coarse model temperature, pressure, relative humidity, and ice cloud condensate.
+  The predicted fields are skillful and unbiased, but somewhat under‐dispersed, resulting in too many
+  partially cloudy model columns. When the predicted fields are applied diagnostically (offline) in FV3GFS's
+  radiation scheme, they lead to small biases in global‐mean top‐of‐atmosphere (TOA) and surface radiative
+  fluxes. An unbiased global‐mean TOA net radiative flux is obtained by setting to zero any predicted
+  cloud with grid‐cell mean cloud fraction less than a threshold of 6.5%; this does not significantly
+  degrade the ML prediction of cloud properties. The diagnostic, ML‐derived radiative fluxes are far more
+  accurate than those obtained with the existing cloud parameterization in the nudged coarse‐grid model,
+  as they leverage the accuracy of the fine‐grid reference simulation's cloud properties.
+significance: 4
+cited_by: 10
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

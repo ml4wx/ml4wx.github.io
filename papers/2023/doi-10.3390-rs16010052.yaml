@@ -1,0 +1,54 @@
+id: doi-10.3390-rs16010052
+title: 'STPF-Net: Short-Term Precipitation Forecast Based on a Recurrent Neural Network'
+authors:
+- Jingnan Wang
+- Xiaodong Wang
+- Jiping Guan
+- Lifeng Zhang
+- Fuhan Zhang
+- Tao Chang
+date: '2023-12-22'
+year: 2023
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs16010052
+  openalex: W4390113403
+links:
+  paper: https://doi.org/10.3390/rs16010052
+  pdf: https://www.mdpi.com/2072-4292/16/1/52/pdf?version=1703229232
+topic: nowcasting
+type: model
+method:
+- rnn
+- transformer
+timescale:
+- nowcast
+- short
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: STPF-Net, a multi-tier recurrent network with a transformer module, extends radar precipitation
+  forecasting to 6 and 12 h, beating deep learning and NWP baselines.
+abstract: Accurate and timely precipitation forecasts are critical in modern society, influencing both
+  economic activity and daily life. While deep learning methods leveraging remotely sensed radar data
+  have become prevalent for precipitation nowcasting, longer-term forecasting remains challenging. This
+  is due to accumulated errors in deep learning models and insufficient information about precipitation
+  systems over longer time horizons. To address these challenges, we introduce the Short-Term Precipitation
+  Forecast Network (STPF-Net), a recurrent neural network designed for longer-term precipitation prediction.
+  STPF-Net uses a multi-tier structure with varying temporal resolutions to mitigate the accumulated errors
+  during longer forecasts. Additionally, its transformer-based module incorporates larger spatial contexts,
+  providing more complete information about precipitation systems. We evaluated STPF-Net on radar data
+  from southeastern China, training separate models for 6 and 12 h forecasts. Quantitative results demonstrate
+  STPF-Net achieved superior accuracy and lower errors compared to benchmark deep learning and numerical
+  weather prediction models. Visualized case studies indicate reasonably coherent 6 h predictions from
+  STPF-Net versus other methods. For 12 h forecasts, while STPF-Net outperformed other models, it still
+  struggled with storm initiation over longer forecasting time.
+significance: 3
+cited_by: 17
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,64 @@
+id: doi-10.1029-2023ms003668
+title: Neural Network Parameterization of Subgrid‐Scale Physics From a Realistic Geography Global Storm‐Resolving
+  Simulation
+authors:
+- Oliver Watt‐Meyer
+- Noah Brenowitz
+- Spencer Koncius Clark
+- Brian Henn
+- Anna Kwa
+- Jeremy McGibbon
+- W. A. Perkins
+- Lucas Harris
+- Christopher S. Bretherton
+date: '2024-02-01'
+year: 2024
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2023ms003668
+  openalex: W4391536222
+links:
+  paper: https://doi.org/10.1029/2023ms003668
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2023MS003668
+orgs:
+- nvidia
+- ai2
+- noaa
+topic: hybrid-parameterization
+topics:
+- benchmarks-data-eval
+type: model
+method:
+- other
+spatial:
+- global
+data:
+- km-scale-sim
+- era5
+status: research
+summary: Neural network trained on storm-resolving simulation replaces convective heating and moistening
+  parameterization in a coarse model, giving stable 35-day online runs with R² of 0.4–0.8.
+abstract: Abstract Parameterization of subgrid‐scale processes is a major source of uncertainty in global
+  atmospheric model simulations. Global storm‐resolving simulations use a finer grid (less than 5 km)
+  to reduce this uncertainty by explicitly resolving deep convection and details of orography. This study
+  uses machine learning to replace the physical parameterizations of heating and moistening rates, but
+  not wind tendencies, in a coarse‐grid (200 km) global atmosphere model, using training data obtained
+  by spatially coarse‐graining a 40‐day realistic geography global storm‐resolving simulation. The training
+  targets are the three‐dimensional fields of effective heating and moistening rates, including the effect
+  of grid‐scale motions that are resolved but imperfectly simulated by the coarse model. A neural network
+  is trained to predict the time‐dependent heating and moistening rates in each grid column using the
+  coarse‐grained temperature, specific humidity, surface turbulent heat fluxes, cosine of solar zenith
+  angle, land‐sea mask and surface geopotential of that grid column as inputs. The coefficient of determination
+  R2 for offline prediction ranges from 0.4 to 0.8 at most vertical levels and latitudes. Online, we achieve
+  stable 35‐day simulations, with metrics of skill such as the time‐mean pattern of near‐surface temperature
+  and precipitation comparable or slightly better than a baseline simulation with conventional physical
+  parameterizations. However, the structure of tropical circulation and relative humidity in the upper
+  troposphere are unrealistic. Overall, this study shows potential for the replacement of human‐designed
+  parameterizations with data‐driven ones in a realistic setting.
+significance: 5
+cited_by: 23
+score: 55
+highlight: false
+added: '2026-10-22'
+source: backfill

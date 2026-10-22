@@ -1,0 +1,51 @@
+id: arxiv-2403.03702
+title: Development of an offline and online hybrid model for the Integrated Forecasting System
+authors:
+- Alban Farchi
+- Marcin Chrust
+- Marc Bocquet
+- Massimo Bonavita
+date: '2024-03-06'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2403.03702'
+  doi: 10.1002/qj.4934
+links:
+  paper: https://arxiv.org/abs/2403.03702
+  pdf: https://arxiv.org/pdf/2403.03702
+topic: hybrid-parameterization
+topics:
+- data-assimilation
+type: model
+method:
+- other
+timescale:
+- medium
+spatial:
+- global
+data:
+- nwp-analysis
+status: pre-operational
+summary: Neural network model-error correction, pre-trained offline on IFS analysis increments and then
+  trained online via weak-constraint 4D-Var, reduces forecast errors in the operational IFS.
+abstract: 'In recent years, there has been significant progress in the development of fully data-driven
+  global numerical weather prediction models. These machine learning weather prediction models have their
+  strength, notably accuracy and low computational requirements, but also their weakness: they struggle
+  to represent fundamental dynamical balances, and they are far from being suitable for data assimilation
+  experiments. Hybrid modelling emerges as a promising approach to address these limitations. Hybrid models
+  integrate a physics-based core component with a statistical component, typically a neural network, to
+  enhance prediction capabilities. In this article, we propose to develop a model error correction for
+  the operational Integrated Forecasting System (IFS) of the European Centre for Medium-Range Weather
+  Forecasts using a neural network. The neural network is initially pre-trained offline using a large
+  dataset of operational analyses and analysis increments. Subsequently, the trained network is integrated
+  into the IFS within the Object-Oriented Prediction System (OOPS) so as to be used in data assimilation
+  and forecast experiments. It is then further trained online using a recently developed variant of weak-constraint
+  4D-Var. The results show that the pre-trained neural network already provides a reliable model error
+  correction, which translates into reduced forecast errors in many conditions and that the online training
+  further improves the accuracy of the hybrid model in many conditions.'
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

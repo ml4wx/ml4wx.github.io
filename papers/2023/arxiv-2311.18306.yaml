@@ -1,0 +1,50 @@
+id: arxiv-2311.18306
+title: 'PAUNet: Precipitation Attention-based U-Net for rain prediction from satellite radiance data'
+authors:
+- P. Jyoteeshkumar Reddy
+- Harish Baki
+- Sandeep Chinta
+- Richard Matear
+- John Taylor
+date: '2023-11-30'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2311.18306'
+  openalex: W4389260967
+links:
+  paper: https://arxiv.org/abs/2311.18306
+  pdf: https://arxiv.org/pdf/2311.18306
+orgs:
+- mit
+topic: nowcasting
+type: model
+method:
+- cnn
+- transformer
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: PAUNet, an attention U-Net trained with a focal precipitation loss, predicts rain from multi-band
+  satellite radiances for the Weather4cast 2023 challenge with higher CSI than baseline.
+abstract: This paper introduces Precipitation Attention-based U-Net (PAUNet), a deep learning architecture
+  for predicting precipitation from satellite radiance data, addressing the challenges of the Weather4cast
+  2023 competition. PAUNet is a variant of U-Net and Res-Net, designed to effectively capture the large-scale
+  contextual information of multi-band satellite images in visible, water vapor, and infrared bands through
+  encoder convolutional layers with center cropping and attention mechanisms. We built upon the Focal
+  Precipitation Loss including an exponential component (e-FPL), which further enhanced the importance
+  across different precipitation categories, particularly medium and heavy rain. Trained on a substantial
+  dataset from various European regions, PAUNet demonstrates notable accuracy with a higher Critical Success
+  Index (CSI) score than the baseline model in predicting rainfall over multiple time slots. PAUNet's
+  architecture and training methodology showcase improvements in precipitation forecasting, crucial for
+  sectors like emergency services and retail and supply chain management.
+significance: 2
+cited_by: 3
+score: 18
+highlight: false
+added: '2026-10-22'
+source: backfill

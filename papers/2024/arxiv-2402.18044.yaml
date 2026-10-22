@@ -1,0 +1,53 @@
+id: arxiv-2402.18044
+title: 'SFTformer: A Spatial-Frequency-Temporal Correlation-Decoupling Transformer for Radar Echo Extrapolation'
+authors:
+- Liangyu Xu
+- Wanxuan Lu
+- Hongfeng Yu
+- Fanglong Yao
+- Xian Sun
+- Kun Fu
+date: '2024-01-01'
+year: 2024
+venue: IEEE Transactions on Geoscience and Remote Sensing
+venue_type: journal
+ids:
+  arxiv: '2402.18044'
+  doi: 10.1109/tgrs.2024.3367857
+  openalex: W4391986437
+links:
+  paper: https://doi.org/10.1109/tgrs.2024.3367857
+  pdf: https://arxiv.org/pdf/2402.18044
+topic: nowcasting
+type: model
+method:
+- transformer
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: SFTformer decouples spatial, frequency and temporal radar-echo modeling in a transformer, improving
+  1-3 h precipitation nowcasting on HKO-7 and ChinaNorth-2021.
+abstract: Extrapolating future weather radar echoes from past observations is a complex task vital for
+  precipitation nowcasting. The spatial morphology and temporal evolution of radar echoes exhibit a certain
+  degree of correlation, yet they also possess independent characteristics. Existing methods learn unified
+  spatial and temporal representations in a highly coupled feature space, emphasizing the correlation
+  between spatial and temporal features but neglecting the explicit modeling of their independent characteristics,
+  which may result in mutual interference between them. To effectively model the spatiotemporal dynamics
+  of radar echoes, we propose a spatial-frequency-temporal correlation-decoupling transformer (SFTformer).
+  The model leverages stacked multiple SFT-Blocks to not only mine the correlation of the spatiotemporal
+  dynamics of echo cells but also avoid the mutual interference between the temporal modeling and the
+  spatial morphology refinement by decoupling them. Furthermore, inspired by the practice that weather
+  forecast experts effectively review historical echo evolution to make accurate predictions, SFTfomer
+  incorporates a joint training paradigm for historical echo sequence reconstruction and future echo sequence
+  prediction. Experimental results on the HKO-7 dataset and ChinaNorth-2021 dataset demonstrate the superior
+  performance of SFTfomer in short-term (1 h), mid-term (2 h), and long-term (3 h) precipitation nowcasting.
+significance: 4
+cited_by: 11
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

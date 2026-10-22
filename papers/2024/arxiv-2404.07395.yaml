@@ -1,0 +1,43 @@
+id: arxiv-2404.07395
+title: 'Global versus Local: Evaluating AlexNet Architectures for Tropical Cyclone Intensity Estimation'
+authors:
+- Vikas Dwivedi
+date: '2024-04-11'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2404.07395'
+  doi: 10.1007/978-3-031-78186-5_27
+links:
+  paper: https://arxiv.org/abs/2404.07395
+  pdf: https://arxiv.org/pdf/2404.07395
+topic: extremes-hazards
+type: evaluation
+method:
+- cnn
+spatial:
+- global
+data:
+- satellite
+status: research
+summary: Ensemble AlexNet models estimate tropical cyclone intensity from visible satellite images, reaching
+  9.03-knot RMSE versus 13.62 for a deep learning benchmark.
+abstract: Given the destructive impacts of tropical cyclones, it is critical to have a reliable system
+  for cyclone intensity detection. Various techniques are available for this purpose, each with differing
+  levels of accuracy. In this paper, we introduce two ensemble-based models based on AlexNet architecture
+  to estimate tropical cyclone intensity using visible satellite images. The first model, trained on the
+  entire dataset, is called the global AlexNet model. The second model is a distributed version of AlexNet
+  in which multiple AlexNets are trained separately on subsets of the training data categorized according
+  to the Saffir-Simpson wind speed scale prescribed by the meterologists. We evaluated the performance
+  of both models against a deep learning benchmark model called \textit{Deepti} using a publicly available
+  cyclone image dataset. Results indicate that both the global model (with a root mean square error (RMSE)
+  of 9.03 knots) and the distributed model (with a RMSE of 9.3 knots) outperform the benchmark model (with
+  a RMSE of 13.62 knots). We provide a thorough discussion of our solution approach, including an explanantion
+  of the AlexNet's performance using gradient class activation maps (grad-CAM). Our proposed solution
+  strategy allows future experimentation with various deep learning models in both single and multi-channel
+  settings.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

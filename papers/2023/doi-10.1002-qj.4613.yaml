@@ -1,0 +1,60 @@
+id: doi-10.1002-qj.4613
+title: Machine learning based post‐processing of model‐derived near‐surface air temperature – A multimodel
+  approach
+authors:
+- Gabriel Stachura
+- Zbigniew Ustrnul
+- Piotr Sekuła
+- Bogdan Bochenek
+- Marcin Kolonko
+- Małgorzata Szczęch‐Gajewska
+date: '2023-11-06'
+year: 2023
+venue: Quarterly Journal of the Royal Meteorological Society
+venue_type: journal
+ids:
+  doi: 10.1002/qj.4613
+  openalex: W4388418828
+links:
+  paper: https://doi.org/10.1002/qj.4613
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/qj.4613
+topic: post-processing
+topics:
+- regional-km-scale
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Random Forest post-processing of three limited-area NWP models cuts near-surface temperature
+  RMSE 27% versus the best model over Poland; an ANN edges it by 2.5%.
+abstract: Abstract In this article, a machine‐learning‐based tool for calibrating numerical forecasts
+  of near‐surface air temperature is proposed. The study area covers Poland representing a temperate type
+  of climate with transitional features and highly variable weather. The direct output of numerical weather
+  prediction (NWP) models is often biased and needs to be adjusted to observed values. Forecasters have
+  to reconcile forecasts from several NWP models during their operational work. As the proposed method
+  is based on deterministic forecasts from three short‐range limited‐area models (ALARO, AROME and COSMO),
+  it can support them in their decision‐making process. Predictors include forecasts of weather elements
+  produced by the NWP models at synoptic weather stations across Poland and station‐embedded data on ambient
+  orography. The Random Forests algorithm (RF) has been used to produce bias‐corrected forecasts on a
+  test set spanning one year. Its performance was evaluated against the NWP models, a linear combination
+  of all predictors (multiple linear regression, MLR) as well as a basic Artificial Neural Network (ANN).
+  Detailed evaluation was done to identify potential strengths and weaknesses of the model at the temporal
+  and spatial scale. The value of RMSE of a forecast obtained by the RF model was 11% and 27% lower compared
+  to the MLR model and the best‐performing NWP model respectively. The ANN model turned out to be even
+  superior, outperforming RF by around 2.5%. The greatest improvement occurred for warm bias during the
+  nighttime from July to September. The largest difference in forecast accuracy between RF and ANN appeared
+  for temperature drops inApril nights. Poor performance of RF for extreme temperature ranges may be suppressed
+  by training the model on forecast error instead of observed values of the variable.
+significance: 3
+cited_by: 11
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

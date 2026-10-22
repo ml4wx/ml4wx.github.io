@@ -1,0 +1,56 @@
+id: arxiv-2404.10135
+title: Using Long Short-term Memory (LSTM) to merge precipitation data over mountainous area in Sierra
+  Nevada
+authors:
+- Yihan Wang
+- Lujun Zhang
+date: '2024-04-15'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2404.10135'
+  openalex: W4394907046
+links:
+  paper: https://arxiv.org/abs/2404.10135
+  pdf: https://arxiv.org/pdf/2404.10135
+orgs:
+- university-of-oklahoma
+topic: observations-remote-sensing
+type: application
+method:
+- rnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- satellite
+- stations
+status: research
+summary: LSTM merges radar and satellite GPM IMERG precipitation over the Sierra Nevada, capturing temporal
+  trends better than MRMS but underestimating gauge observations.
+abstract: Obtaining reliable precipitation estimation with high resolutions in time and space is of great
+  importance to hydrological studies. However, accurately estimating precipitation is a challenging task
+  over high mountainous complex terrain. The three widely used precipitation measurement approaches, namely
+  rainfall gauge, precipitation radars, and satellite-based precipitation sensors, have their own pros
+  and cons in producing reliable precipitation products over complex areas. One way to decrease the detection
+  error probability and improve data reliability is precipitation data merging. With the rapid advancements
+  in computational capabilities and the escalating volume and diversity of earth observational data, Deep
+  Learning (DL) models have gained considerable attention in geoscience. In this study, a deep learning
+  technique, namely Long Short-term Memory (LSTM), was employed to merge a radar-based and a satellite-based
+  Global Precipitation Measurement (GPM) precipitation product Integrated Multi-Satellite Retrievals for
+  GPM (IMERG) precipitation product at hourly scale. The merged results are compared with the widely used
+  reanalysis precipitation product, Multi-Radar Multi-Sensor (MRMS), and assessed against gauge observational
+  data from the California Data Exchange Center (CDEC). The findings indicated that the LSTM-based merged
+  precipitation notably underestimated gauge observations and, at times, failed to provide meaningful
+  estimates, showing predominantly near-zero values. Relying solely on individual Quantitative Precipitation
+  Estimates (QPEs) without additional meteorological input proved insufficient for generating reliable
+  merged QPE. However, the merged results effectively captured the temporal trends of the observations,
+  outperforming MRMS in this aspect. This suggested that incorporating bias correction techniques could
+  potentially enhance the accuracy of the merged product.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

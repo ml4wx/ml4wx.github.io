@@ -1,0 +1,47 @@
+id: arxiv-2402.10747
+title: Fully Differentiable Lagrangian Convolutional Neural Network for Physics-Informed Precipitation
+  Nowcasting
+authors:
+- Peter Pavlík
+- Martin Výboh
+- Anna Bou Ezzeddine
+- Viera Rozinajová
+date: '2024-02-16'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2402.10747'
+links:
+  paper: https://arxiv.org/abs/2402.10747
+  pdf: https://arxiv.org/pdf/2402.10747
+topic: nowcasting
+type: model
+method:
+- cnn
+- physics-constrained
+- differentiable
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: LUPIN couples a U-Net advection module with a differentiable semi-Lagrangian operator for end-to-end
+  precipitation nowcasting, matching or exceeding AI benchmarks in an extreme-event case.
+abstract: This paper presents a convolutional neural network model for precipitation nowcasting that combines
+  data-driven learning with physics-informed domain knowledge. We propose LUPIN, a Lagrangian Double U-Net
+  for Physics-Informed Nowcasting, that draws from existing extrapolation-based nowcasting methods. It
+  consists of a U-Net that dynamically produces mesoscale advection motion fields, a differentiable semi-Lagrangian
+  extrapolation operator, and an advection-free U-Net capturing the growth and decay of precipitation
+  over time. Using our approach, we successfully implement the Lagrangian convolutional neural network
+  for precipitation nowcasting in a fully differentiable and GPU-accelerated manner. This allows for end-to-end
+  training and inference, including the data-driven Lagrangian coordinate system transformation of the
+  data at runtime. We evaluate the model and compare it with other related AI-based models both quantitatively
+  and qualitatively in an extreme event case study. Based on our evaluation, LUPIN matches and even exceeds
+  the performance of the chosen benchmarks, opening the door for other Lagrangian machine learning models.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

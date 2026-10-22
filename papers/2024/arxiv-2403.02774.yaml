@@ -1,0 +1,46 @@
+id: arxiv-2403.02774
+title: Fast, Scale-Adaptive, and Uncertainty-Aware Downscaling of Earth System Model Fields with Generative
+  Machine Learning
+authors:
+- Philipp Hess
+- Michael Aich
+- Baoxiang Pan
+- Niklas Boers
+date: '2024-03-05'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2403.02774'
+  openalex: W4392538147
+links:
+  paper: https://arxiv.org/abs/2403.02774
+  pdf: https://arxiv.org/pdf/2403.02774
+topic: downscaling
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+timescale:
+- climate
+data:
+- cmip
+status: research
+summary: A zero-shot consistency model downscales arbitrary Earth system model output without retraining,
+  beating diffusion models at lower cost and generalizing to unseen climates.
+abstract: Accurate and high-resolution Earth system model (ESM) simulations are essential to assess the
+  ecological and socio-economic impacts of anthropogenic climate change, but are computationally too expensive
+  to be run at sufficiently high spatial resolution. Recent machine learning approaches have shown promising
+  results in downscaling ESM simulations, outperforming state-of-the-art statistical approaches. However,
+  existing methods require computationally costly retraining for each ESM and extrapolate poorly to climates
+  unseen during training. We address these shortcomings by learning a consistency model (CM) that efficiently
+  and accurately downscales arbitrary ESM simulations without retraining in a zero-shot manner. Our approach
+  yields probabilistic downscaled fields at a resolution only limited by the observational reference data.
+  We show that the CM outperforms state-of-the-art diffusion models at a fraction of computational cost
+  while maintaining high controllability on the downscaling task. Further, our method generalizes to climate
+  states unseen during training without explicitly formulated physical constraints.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

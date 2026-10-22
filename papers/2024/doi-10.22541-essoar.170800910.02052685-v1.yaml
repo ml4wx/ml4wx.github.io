@@ -1,0 +1,95 @@
+id: doi-10.22541-essoar.170800910.02052685-v1
+title: Using Grouped Features to Improve Explainable AI Results for Atmospheric AI Models that use Gridded
+  Spatial Data and Complex Machine Learning Technique
+authors:
+- Evan Krell
+- Philippe E. Tissot
+- Antonios Mamalakis
+- Waylon G. Collins
+- Imme Ebert‐Uphoff
+- Scott A. King
+date: '2024-02-15'
+year: 2024
+venue_type: other
+ids:
+  doi: 10.22541/essoar.170800910.02052685/v1
+  openalex: W4391844407
+links:
+  paper: https://doi.org/10.22541/essoar.170800910.02052685/v1
+  pdf: https://essopenarchive.org/doi/pdf/10.22541/essoar.170800910.02052685
+topic: xai-uq-physics
+type: model
+method:
+- other
+data:
+- other
+status: research
+summary: Proposes grouping correlated input features to make explainable-AI attributions for gridded atmospheric
+  deep learning models more interpretable; the abstract is only an introduction.
+abstract: 'Atmospheric AI modeling is increasingly reliant on complex machine learning (ML) techniques
+  and high-dimensional gridded inputs to develop models that achieve high predictive skill. Complex deep
+  learning architectures such as convolutional neural networks and transformers are trained to model highly
+  non-linear atmospheric phenomena such as coastal fog [1], tornadoes [2], and severe hail [3]. The input
+  data is typically in the form of gridded spatial data composed of multiple channels of satellite imagery,
+  numerical weather prediction output, reanalysis products, etc. In many studies, the use of complex architectures
+  and high-dimensional inputs were shown to substantially outperform simpler alternatives. A major challenge
+  when using complex ML techniques is that it is very difficult to understand how the trained model works.
+  The complexity of the model obfuscates the relationship between the input and prediction. It is often
+  of interest to understand a model’s decision-making process. By exposing the model’s behavior, users
+  could verify that the model has learned physically realistic predictive patterns. This information can
+  be used to calibrate trust in the model. The model may have also learned novel patterns within the data
+  that could be used to gain new insights into the atmospheric process. Extracting learned patterns could
+  be used to generate hypotheses for scientific discovery. The rapid adoption of complex ML models and
+  the need to understand how they work has led to the development of a broad class of techniques called
+  eXplainable Artificial Intelligence (XAI). These methods probe the models in various ways to reveal
+  insights into how they work. Correlations among input features can make it challenging to produce meaningful
+  explanations. The gridded spatial data common in atmospheric modeling applications typically have extensive
+  correlation. Spatial autocorrelation is present among the cells of each spatial grid, but autocorrelation
+  may exist across the gridded data volume due to spatial or temporal relationships between adjacent channels.
+  In addition, there may be correlations between distant locations due to teleconnections between them.
+  Correlated input features may cause high variance among the trained models. If grid cells are highly
+  correlated, then the target function that the network is attempting to learn is ill-defined and an infinite
+  number of models can be generated that achieve approximately equal performance. Even assuming a perfect
+  XAI method exists, the attribution reflects only the patterns learned for a given model. It is arbitrary
+  which of the correlated features are used by a given model. This can lead to a misleading understanding
+  of the actual relationship between the input features and target. A potential solution is to group the
+  correlated features before applying XAI. Attribution can be assigned to each group rather than to individual
+  cells. In this case, all the correlated cells will be permuted at the same time to analyze their collective
+  impact on the output. The purpose is to reveal the contribution of each group of related cells toward
+  the model output. Ideally, the explanations are insensitive to the random choice among correlated features
+  learned by the model. Without grouping, the user can be misled to consider a feature as not being related
+  to the target because of the presence of correlated features. With grouping, the explanations should
+  better reveal the learned patterns. Grouping features based on correlation can be challenging. The correlation
+  rarely equals one and the strength of the correlation influences the variance among trained models.
+  Calculating the correlation can be difficult because of partial correlations and fuzzy, continuous boundaries.
+  The choice of groups can greatly influence the explanations. Another challenge is that it is not straight-forward
+  to assess the quantitative accuracy of an XAI technique. This is because there is rarely a ground truth
+  explanation to compare to. If we knew the attribution, we would not need XAI methods. Synthetic benchmarks
+  for analyzing XAI have been proposed as a solution [4]. It is possible to define a non-linear function
+  such that the contribution of each grid cell’s value to the function output can be derived. This attribution
+  map represents the ground truth for comparison the the output of XAI methods that are applied to a model
+  that very closely approximates the hand-crafted function. In this research, we develop a set of benchmarks
+  to investigate the influence of correlated features on the variation in XAI outputs for a set of trained
+  models. We then explore how features can be grouped to reduce the explanation variance so that users
+  have improved insight into the learned patterns. First, we create a set of very simple mathematical
+  demonstrations that precisely demonstrate the influence of correlated features and how grouping features
+  provides a solution. Using insights from these experiments, we develop a tool for detecting when correlated
+  features are likely to cause misleading explanations. We then create a set of more realistic benchmarks
+  that are based on atmospheric modeling problems such as sea surface temperature and coastal fog prediction.
+  By defining benchmarks with known ground truth explanations, we can analyze various techniques for grouping
+  the grid cells based on their correlations. Based on our findings, we offer recommendations for strategies
+  to group correlated data so that users can better leverage XAI results toward model development and
+  scientific insights. [1] Kamangir, H., Collins, W., Tissot, P., King, S. A., Dinh, H. T. H., Durham,
+  N., & Rizzo, J. (2021). FogNet: A multiscale 3D CNN with double-branch dense block and attention mechanism
+  for fog prediction. Machine Learning with Applications, 5, 100038. [2] Lagerquist, R. (2020). Using
+  Deep Learning to Improve Prediction and Understanding of High-impact Weather. [3] Gagne II, D. J., Haupt,
+  S. E., Nychka, D. W., & Thompson, G. (2019). Interpretable deep learning for spatial analysis of severe
+  hailstorms. Monthly Weather Review, 147(8), 2827-2845. [4] Mamalakis, A., Ebert-Uphoff, I., & Barnes,
+  E. A. (2022). Neural network attribution methods for problems in geoscience: A novel synthetic benchmark
+  dataset. Environmental Data Science, 1, e8.'
+significance: 2
+cited_by: 1
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

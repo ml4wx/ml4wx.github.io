@@ -1,0 +1,61 @@
+id: doi-10.3390-w16050671
+title: Enhanced Tropical Cyclone Precipitation Prediction in the Northwest Pacific Using Deep Learning
+  Models and Ensemble Techniques
+authors:
+- Lunkai He
+- Qinglan Li
+- Jiali Zhang
+- Xiaowei Deng
+- Zhijian Wu
+- Yaoming Wang
+- Pak Wai Chan
+- Na Li
+date: '2024-02-25'
+year: 2024
+venue: Water
+venue_type: journal
+ids:
+  doi: 10.3390/w16050671
+  openalex: W4392169717
+links:
+  paper: https://doi.org/10.3390/w16050671
+  pdf: https://www.mdpi.com/2073-4441/16/5/671/pdf?version=1708941857
+topic: post-processing
+topics:
+- extremes-hazards
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- satellite
+status: research
+summary: U-Net variants post-process GFS tropical cyclone rainfall forecasts in the Northwest Pacific,
+  cutting RMSE by 9-12% and raising threat scores.
+abstract: This study focuses on optimizing precipitation forecast induced by tropical cyclones (TCs) in
+  the Northwest Pacific region, with lead times ranging from 6 to 72 h. The research employs deep learning
+  models, such as U-Net, UNet3+, SE-Net, and SE-UNet3+, which utilize precipitation forecast data from
+  the Global Forecast System (GFS) and real-time GFS environmental background data using a U-Net structure.
+  To comprehensively make use of the precipitation forecasts from these models, we additionally use probabilistic
+  matching (PM) and simple averaging (AVR) in rainfall prediction. The precipitation data from the Global
+  Precipitation Measurement (GPM) Mission serves as the rainfall observation. The results demonstrate
+  that the root mean squared errors (RMSEs) of U-Net, UNet3+, SE-UNet, SE-UNet3+, AVR, and PM are lowered
+  by 8.7%, 10.1%, 9.7%, 10.0%, 11.4%, and 11.5%, respectively, when compared with the RMSE of the GFS
+  TC precipitation forecasts, while the mean absolute errors are reduced by 9.6%, 11.3%, 9.0%, 12.0%,
+  12.8%, and 13.0%, respectively. Furthermore, the neural network model improves the precipitation threat
+  scores (TSs). On average, the TSs of U-Net, UNet3+, SE-UNet, SE-UNet3+, AVR, and PM are raised by 12.8%,
+  21.3%, 19.3%, 20.7%, 22.5%, and 22.9%, respectively, compared with the GFS model. Notably, AVR and PM
+  outperform all other individual models, with PM’s performance slightly better than AVR’s. The most important
+  feature variables in optimizing TC precipitation forecast in the Northwest Pacific region based on the
+  UNet-based neural network include GFS precipitation forecast data, land and sea masks, latitudinal winds
+  at 500 hPa, and vertical winds at 500 hPa.
+significance: 3
+cited_by: 4
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

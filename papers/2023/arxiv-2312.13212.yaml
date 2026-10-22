@@ -1,0 +1,50 @@
+id: arxiv-2312.13212
+title: A 3D super-resolution of wind fields via physics-informed pixel-wise self-attention generative
+  adversarial network
+authors:
+- Takuya Kurihana
+- Kyongmin Yeo
+- Daniela Szwarcman
+- Bruce Elmegreen
+- Karthik Mukkavilli
+- Johannes Schmude
+- Levente Klein
+date: '2023-12-20'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2312.13212'
+links:
+  paper: https://arxiv.org/abs/2312.13212
+  pdf: https://arxiv.org/pdf/2312.13212
+topic: downscaling
+topics:
+- regional-km-scale
+type: model
+method:
+- gan-vae
+- physics-constrained
+- transformer
+spatial:
+- regional
+data:
+- other
+status: pre-operational
+summary: Physics-informed pixel-wise self-attention SR-GAN upscales 3D low-resolution wind fields 9x,
+  cutting high-resolution wind simulation cost by about 90 times.
+abstract: To mitigate global warming, greenhouse gas sources need to be resolved at a high spatial resolution
+  and monitored in time to ensure the reduction and ultimately elimination of the pollution source. However,
+  the complexity of computation in resolving high-resolution wind fields left the simulations impractical
+  to test different time lengths and model configurations. This study presents a preliminary development
+  of a physics-informed super-resolution (SR) generative adversarial network (GAN) that super-resolves
+  the three-dimensional (3D) low-resolution wind fields by upscaling x9 times. We develop a pixel-wise
+  self-attention (PWA) module that learns 3D weather dynamics via a self-attention computation followed
+  by a 2D convolution. We also employ a loss term that regularizes the self-attention map during pretraining,
+  capturing the vertical convection process from input wind data. The new PWA SR-GAN shows the high-fidelity
+  super-resolved 3D wind data, learns a wind structure at the high-frequency domain, and reduces the computational
+  cost of a high-resolution wind simulation by x89.7 times.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

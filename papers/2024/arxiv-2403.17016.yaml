@@ -1,0 +1,53 @@
+id: arxiv-2403.17016
+title: 'HEAL-ViT: Vision Transformers on a spherical mesh for medium-range weather forecasting'
+authors:
+- Vivek Ramavajjala
+date: '2024-02-14'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2403.17016'
+  openalex: W4393247809
+links:
+  paper: https://arxiv.org/abs/2403.17016
+  pdf: https://arxiv.org/pdf/2403.17016
+orgs:
+- excarta
+topic: global-medium-range
+topics:
+- infra-software
+type: model
+method:
+- transformer
+- gnn
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: HEAL-ViT applies vision transformers on a spherical mesh for medium-range forecasts that outperform
+  ECMWF IFS on key metrics at a lower compute footprint.
+abstract: In recent years, a variety of ML architectures and techniques have seen success in producing
+  skillful medium range weather forecasts. In particular, Vision Transformer (ViT)-based models (e.g.
+  Pangu-Weather, FuXi) have shown strong performance, working nearly "out-of-the-box" by treating weather
+  data as a multi-channel image on a rectilinear grid. While a rectilinear grid is appropriate for 2D
+  images, weather data is inherently spherical and thus heavily distorted at the poles on a rectilinear
+  grid, leading to disproportionate compute being used to model data near the poles. Graph-based methods
+  (e.g. GraphCast) do not suffer from this problem, as they map the longitude-latitude grid to a spherical
+  mesh, but are generally more memory intensive and tend to need more compute resources for training and
+  inference. While spatially homogeneous, the spherical mesh does not lend itself readily to be modeled
+  by ViT-based models that implicitly rely on the rectilinear grid structure. We present HEAL-ViT, a novel
+  architecture that uses ViT models on a spherical mesh, thus benefiting from both the spatial homogeneity
+  enjoyed by graph-based models and efficient attention-based mechanisms exploited by transformers. HEAL-ViT
+  produces weather forecasts that outperform the ECMWF IFS on key metrics, and demonstrate better bias
+  accumulation and blurring than other ML weather prediction models. Further, the lowered compute footprint
+  of HEAL-ViT makes it attractive for operational use as well, where other models in addition to a 6-hourly
+  prediction model may be needed to produce the full set of operational forecasts required.
+significance: 5
+cited_by: 2
+score: 30
+highlight: false
+added: '2026-10-22'
+source: backfill

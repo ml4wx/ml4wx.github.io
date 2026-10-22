@@ -1,0 +1,62 @@
+id: doi-10.3390-app14072950
+title: Improving Weather Forecasts for Sailing Events Using a Combination of a Numerical Forecast Model
+  and Machine Learning Postprocessing
+authors:
+- Stav Beimel
+- Yair Suari
+- Freddy Gabbay
+date: '2024-03-31'
+year: 2024
+venue: Applied Sciences
+venue_type: journal
+ids:
+  doi: 10.3390/app14072950
+  openalex: W4393353077
+links:
+  paper: https://doi.org/10.3390/app14072950
+  pdf: https://www.mdpi.com/2076-3417/14/7/2950/pdf?version=1711874395
+topic: post-processing
+topics:
+- applications-impacts
+type: application
+method:
+- cnn
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: research
+summary: CNN and MLP models post-process 1 km WRF wind forecasts for Lake Kinneret sailing, correcting
+  biases against station observations.
+abstract: Accurate predictions of wind and other weather phenomena are essential for making informed strategic
+  and tactical decisions in sailing. Sailors worldwide utilize current state-of-the-art forecasts, yet
+  such forecasts are often insufficient because they do not offer the high temporal and geographic resolution
+  required by sailors. This paper examines wind forecasting in competitive sailing and demonstrates that
+  traditional wind forecasts can be improved for sailing events by using an integration of traditional
+  numerical modeling and machine learning (ML) methods. Our primary objective is to provide practical
+  and more precise wind forecasts that will give sailors a competitive edge. As a case study, we demonstrate
+  the capabilities of our proposed methods to improve wind forecasting at Lake Kinneret, a popular sailing
+  site. The lake wind pattern is highly influenced by the area’s topographic features and is characterized
+  by unique local and mesoscale phenomena at different times of the day. In this research, we simulate
+  the Kinneret wind during the summers of 2015–2021 in up to one-kilometer resolution using the Weather
+  Research and Forecasting (WRF) atmospheric model. The results are used as input for convolutional neural
+  network (CNN) and multilayer perceptron (MLP) ML models to postprocess and improve the WRF model accuracy.
+  These advanced ML models are trained using training datasets based on the WRF data as well as real data
+  measured by the meteorological service, and subsequently, a validation process of the trained ML model
+  is performed on unseen datasets against site-specific meteorological service observations. Through our
+  experimental analysis, we demonstrate the limitations of the WRF model. It uncovers notable biases in
+  wind direction and velocity, particularly a persistent northern bias in direction and an overestimation
+  of wind strength. Despite its inherent limitations, this study demonstrates that the integration of
+  ML models can potentially improve wind forecasting due to the remarkable prediction accuracy rate achieved
+  by the CNN model, surpassing 95%, while achieving partial success for the MLP model. Furthermore, a
+  successful CNN-based preliminary forecast was effectively generated, suggesting its potential contribution
+  to the future development of a user-friendly tool for sailors.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

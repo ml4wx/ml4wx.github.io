@@ -1,0 +1,57 @@
+id: doi-10.1029-2023ms003851
+title: Emulation of Cloud Microphysics in a Climate Model
+authors:
+- W. A. Perkins
+- Noah Brenowitz
+- Christopher S. Bretherton
+- Jacqueline M Nugent
+date: '2024-03-28'
+year: 2024
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2023ms003851
+  openalex: W4393314715
+links:
+  paper: https://doi.org/10.1029/2023ms003851
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2023MS003851
+orgs:
+- nvidia
+- ai2
+- university-of-washington
+topic: hybrid-parameterization
+type: model
+method:
+- other
+spatial:
+- global
+data:
+- km-scale-sim
+status: pre-operational
+summary: Neural emulator of the Zhao-Carr microphysics scheme in FV3GFS reaches over 94% skill and under
+  4% global bias for a year-long run, with physics-based design choices.
+abstract: Abstract We present a machine learning based emulator of a microphysics scheme for condensation
+  and precipitation processes (Zhao‐Carr) used operationally in a global atmospheric forecast model (FV3GFS).
+  Our tailored emulator architecture achieves high skill (≥94%) in predicting condensate and precipitation
+  amounts and maintains low global‐average bias (≤4%) for 1 year of continuous simulation when replacing
+  the Fortran scheme. The stability and success of this emulator stems from key design decisions. By separating
+  the emulation of condensation and precipitation processes, we can better enforce physical priors such
+  as mass conservation and locality of condensation, and the vertical dependence of precipitation falling
+  downward, using specific network architectures. An activity classifier for condensation imitates the
+  discrete‐continuous nature of the Fortran microphysics outputs (i.e., tendencies are identically zero
+  where the scheme is inactive, and condensate is zero where clouds are fully evaporated). A temperature‐scaled
+  conditional loss function ensures accurate condensate adjustments for a high dynamic range of cloud
+  types (e.g., cold, low‐condensate cirrus clouds or warm, condensate‐rich clouds). Despite excellent
+  overall performance, the emulator exhibits some deficiencies in the uppermost model levels, leading
+  to biases in the stratosphere. The emulator also has short episodic skill dropouts in isolated grid
+  columns and is computationally slower than the original Fortran scheme. Nonetheless, our challenges
+  and strategies should be applicable to the emulation of other microphysical schemes. More broadly, our
+  work demonstrates that with suitable physically motivated architectural choices, ML techniques can accurately
+  emulate complex human‐designed parameterizations of fast physical processes central to weather and climate
+  models.
+significance: 4
+cited_by: 12
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,56 @@
+id: arxiv-2401.02098
+title: Stress-testing the coupled behavior of hybrid physics-machine learning climate simulations on an
+  unseen, warmer climate
+authors:
+- Jerry Lin
+- Mohamed Aziz Bhouri
+- Tom Beucler
+- Sungduk Yu
+- Michael Pritchard
+date: '2024-01-04'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2401.02098'
+  openalex: W4390647709
+links:
+  paper: https://arxiv.org/abs/2401.02098
+  pdf: https://arxiv.org/pdf/2401.02098
+topic: hybrid-parameterization
+topics:
+- climate-emulation
+type: evaluation
+method:
+- other
+timescale:
+- climate
+spatial:
+- global
+data:
+- km-scale-sim
+- cmip
+status: research
+summary: Stress-tests ML cloud and turbulence parameterizations in coupled warmer climates, finding design
+  fixes help but multi-climate training data remains necessary for out-of-distribution generalization.
+abstract: Accurate and computationally-viable representations of clouds and turbulence are a long-standing
+  challenge for climate model development. Traditional parameterizations that crudely but efficiently
+  approximate these processes are a leading source of uncertainty in long-term projected warming and precipitation
+  patterns. Machine Learning (ML)-based parameterizations have long been hailed as a promising alternative
+  with the potential to yield higher accuracy at a fraction of the cost of more explicit simulations.
+  However, these ML variants are often unpredictably unstable and inaccurate in \textit{coupled} testing
+  (i.e. in a downstream hybrid simulation task where they are dynamically interacting with the large-scale
+  climate model). These issues are exacerbated in out-of-distribution climates. Certain design decisions
+  such as ``climate-invariant" feature transformation for moisture inputs, input vector expansion, and
+  temporal history incorporation have been shown to improve coupled performance, but they may be insufficient
+  for coupled out-of-distribution generalization. If feature selection and transformations can inoculate
+  hybrid physics-ML climate models from non-physical, out-of-distribution extrapolation in a changing
+  climate, there is far greater potential in extrapolating from observational data. Otherwise, training
+  on multiple simulated climates becomes an inevitable necessity. While our results show generalization
+  benefits from these design decisions, the obtained improvment does not sufficiently preclude the necessity
+  of using multi-climate simulated training data.
+significance: 4
+cited_by: 2
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

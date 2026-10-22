@@ -1,0 +1,58 @@
+id: doi-10.3389-fclim.2024.1289332
+title: 'Temperature forecasts for the continental United States: a deep learning approach using multidimensional
+  features'
+authors:
+- Jahangir Ali
+- Linyin Cheng
+date: '2024-03-14'
+year: 2024
+venue: Frontiers in Climate
+venue_type: journal
+ids:
+  doi: 10.3389/fclim.2024.1289332
+  openalex: W4392814918
+links:
+  paper: https://doi.org/10.3389/fclim.2024.1289332
+topic: global-medium-range
+topics:
+- extremes-hazards
+type: model
+method:
+- cnn
+timescale:
+- medium
+- s2s
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: A CNN using multi-level geopotential heights forecasts CONUS surface temperature to 30 days,
+  with z500 giving the lowest RMSE among the inputs tested.
+abstract: Accurate weather forecasts are critical for saving lives, emergency services, and future developments.
+  Climate models such as numerical weather prediction models have made significant advancements in weather
+  forecasts, but these models are computationally expensive and can be subject to inaccurate representations
+  of complex natural interconnections. Alternatively, data-driven machine learning methods have provided
+  new dimensions in assisting weather forecasts. In this study, we used convolutional neural networks
+  (CNN) to assess how geopotential height at different levels of the troposphere may affect the predictability
+  of extreme surface temperature (t2m) via two cases. Specifically, we analyzed temperature forecasts
+  over the continental United States at lead times from 1 day to 30 days by incorporating z100, z200,
+  z500, z700, and z925 hPa levels as inputs to the CNN. In the first case, we applied the framework to
+  predict summer temperatures of 2012, which contributed to one of the extreme heatwave events in the
+  U.S. history. The results show that z500 leads to t2m forecasts with relatively less root mean squared
+  errors (RMSE) than other geopotential heights at most of the lead time under consideration, while the
+  inclusion of more atmospheric pressure levels improves t2m forecasts to a limited extent. At the same
+  lead time, we also predicted the z500 patterns with different levels of geopotential height and temperature
+  as the inputs. We found that the combination of z500, t2m, and t850 (temperature at 850 hPa) is associated
+  with less RMSE for the z500 forecasts compared to other inputs. In contrast to the 2012 summer, our
+  second case examined the wintertime temperature of 2014 when the upper Midwest and Great Lakes regions
+  experienced the coldest winter on record. We found that z200 contributes to better t2m predictions for
+  up to 7-days lead times whereas z925 gives better results for z500 forecasts during this cold event.
+  Collectively, the results suggest that for long-range temperature forecasts based on the CNN, including
+  various levels of geopotential heights could be beneficial.
+significance: 3
+cited_by: 8
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

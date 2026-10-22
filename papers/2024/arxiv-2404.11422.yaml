@@ -1,0 +1,44 @@
+id: arxiv-2404.11422
+title: Short-term wind speed forecasting model based on an attention-gated recurrent neural network and
+  error correction strategy
+authors:
+- Haojian Huang
+date: '2024-04-17'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2404.11422'
+links:
+  paper: https://arxiv.org/abs/2404.11422
+  pdf: https://arxiv.org/pdf/2404.11422
+topic: local-forecasting
+type: model
+method:
+- rnn
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Hybrid attention-GRU predictor with GRU error corrector and signal decomposition forecasts short-term
+  wind speed at three sites, outperforming compared models in case studies.
+abstract: The accurate wind speed series forecast is very pivotal to security of grid dispatching and
+  the application of wind power. Nevertheless, on account of their nonlinear and non-stationary nature,
+  their short-term forecast is extremely challenging. Therefore, this dissertation raises one short-term
+  wind speed forecast pattern on the foundation of attention with an improved gated recurrent neural network
+  (AtGRU) and a tactic of error correction. That model uses the AtGRU model as the preliminary predictor
+  and the GRU model as the error corrector. At the beginning, SSA (singular spectrum analysis) is employed
+  in previous wind speed series for lessening the noise. Subsequently, historical wind speed series is
+  going to be used for the predictor training. During this process, the prediction can have certain errors.
+  The sequence of these errors processed by variational modal decomposition (VMD) is used to train the
+  corrector of error. The eventual forecast consequence is just the sum of predictor forecast and error
+  corrector. The proposed SSA-AtGRU-VMD-GRU model outperforms the compared models in three case studies
+  on Woodburn, St. Thomas, and Santa Cruz. It is indicated that the model evidently enhances the correction
+  of the wind speed forecast.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

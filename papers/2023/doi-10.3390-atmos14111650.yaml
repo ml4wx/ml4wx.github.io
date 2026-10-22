@@ -1,0 +1,68 @@
+id: doi-10.3390-atmos14111650
+title: An Ensemble Forecast Wind Field Correction Model with Multiple Factors and Spatio-Temporal Features
+authors:
+- Min Chen
+- Hao Yang
+- Bo Mao
+- Kaiwen Xie
+- Chao Ping Chen
+- Yuanchang Dong
+date: '2023-11-03'
+year: 2023
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos14111650
+  openalex: W4388304583
+links:
+  paper: https://doi.org/10.3390/atmos14111650
+  pdf: https://www.mdpi.com/2073-4433/14/11/1650/pdf?version=1699019653
+orgs:
+- cma
+topic: post-processing
+type: model
+method:
+- rnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- era5
+status: research
+summary: A ConvLSTM with attention corrects systematic errors in CMA regional ensemble 10 m wind forecasts
+  over North China, using ECMWF reanalysis as the reference.
+abstract: Accurate wind speed prediction is significantly important for the full utilization of wind energy
+  resources and the improvement in the economic benefits of wind farms. Because the ensemble forecast
+  takes into account the uncertainty of information about the atmospheric motion, domestic and foreign
+  weather service forecast centers often choose to use the ensemble numerical forecast to achieve the
+  fine forecast of wind speed. However, due to the unavoidable systematic errors of the ensemble numerical
+  forecast model, it is necessary to correct the deviation in the ensemble numerical forecast wind speed.
+  Considering the typical spatio-temporal characteristics of the grid prediction data of the wind field,
+  based on Convolutional Long–Short Term Memory (ConvLSTM) units and attention mechanism, this paper takes
+  the complex and representative North China region as the research area, aiming to reveal the shortcomings
+  of existing deep learning integrated prediction correction models in extracting temporal features of
+  grid prediction data. We propose a new ensemble prediction wind field correction model integrating multi-factor
+  and spatio-temporal characteristics. This model uses reanalyzed land data provided by the European Center
+  for Medium-Range Weather Forecasts as the real data to correct the deviation in the near-surface 10
+  m wind field data predicted by the regional ensemble numerical prediction model of the China Meteorological
+  Administration. We used the reanalyzed land data provided by the European Centre for Medium-Range Weather
+  Forecasts (ECMWF) as the live data to correct the deviation in the near-surface 10 m wind field data
+  predicted by the regional ensemble numerical forecast model of the China Meteorological Administration
+  (CMA). At the same time, Root Mean Square Error (RMSE) and Mean Absolute Error (MAE) were used as the
+  scoring indicators, and the results of the China Meteorological Administration–Regional Ensemble Prediction
+  System (CMA–REPS) ensemble average, multiple linear regression method correction, Long–Short Term Memory
+  (LSTM) method correction, and U-net (UNET) method correction were compared. Compared with the UNET model
+  method, the experimental results show that when processing the 10 m zonal wind data, 10 m meridional
+  wind data, and 10 m average wind speed data of CMA–REPS 24 h forecasts, the correction results of our
+  model can reduce the RMSE score index by 9.15%, 4.83%, and 7.79%. At the same time, when processing
+  the 48 h and 72 h near-surface 10 m wind field data of the CMA–REPS forecast, our model can improve
+  the prediction accuracy of CMA–REPS near-surface wind forecast data. Therefore, the correction effect
+  of the proposed model in a complex terrain area is evidently better compared to other methods.
+significance: 3
+cited_by: 6
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

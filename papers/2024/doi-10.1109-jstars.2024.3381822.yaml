@@ -1,0 +1,55 @@
+id: doi-10.1109-jstars.2024.3381822
+title: Spatiotemporal Enhanced Adversarial Network for Precipitation Nowcasting
+authors:
+- Yunlong Zhou
+- Renlong Hang
+- Fanfan Ji
+- Zefeng Pan
+- Qingshan Liu
+- Xiao–Tong Yuan
+date: '2024-01-01'
+year: 2024
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2024.3381822
+  openalex: W4393185820
+links:
+  paper: https://doi.org/10.1109/jstars.2024.3381822
+orgs:
+- nuist
+topic: nowcasting
+type: model
+method:
+- rnn
+- gan-vae
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: STEAN combines a halo-attention spatiotemporal LSTM with an adversarial discriminator to produce
+  sharper high-resolution precipitation nowcasts on KNMI and CIKM data.
+abstract: Precipitation nowcasting is a critical aspect of meteorological services, which helps people
+  make reasonable arrangements. Nowadays the methods based on recurrent neural networks are widely employed
+  as the primary solution for precipitation nowcasting. However, the predictive unit of these methods
+  has a narrow temporal receptive field that fails to provide sufficient temporal variation information
+  for accurate prediction of the subsequent frame. In addition, they do not adequately model the spatial
+  deformation of visual appearance, which leads to the predicted frames lack of fine-grained spatial appearances.
+  To address these deficiencies, we propose a spatiotemporal enhanced adversarial network (STEAN), a deep
+  learning model for high-resolution precipitation nowcasting. STEAN incorporates a feature extraction
+  module and an adaptive fusion module to refine the spatial appearance of prediction results. Further,
+  it leverages a specialized Halo Attention Spatiotemporal Long Short-Term Memory (HAST-LSTM) unit to
+  model temporal variation information. In order to improve the realism of the predicted sequences, STEAN
+  is combined with a temporal discriminator during the training stage to reduce the blur of prediction
+  results caused by the loss function. STEAN has been assessed on the Moving MNIST, KNMI, and CIKM datasets
+  and the experimental results show that its prediction performance is superior to several other state-of-the-art
+  models.
+significance: 3
+cited_by: 8
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

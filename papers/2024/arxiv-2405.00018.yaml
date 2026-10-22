@@ -1,0 +1,50 @@
+id: arxiv-2405.00018
+title: 'Proof-of-concept: Using ChatGPT to Translate and Modernize an Earth System Model from Fortran
+  to Python/JAX'
+authors:
+- Anthony Zhou
+- Linnia Hawkins
+- Pierre Gentine
+date: '2024-02-13'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2405.00018'
+  openalex: W4396600977
+links:
+  paper: https://arxiv.org/abs/2405.00018
+  pdf: https://arxiv.org/pdf/2405.00018
+orgs:
+- columbia-leap
+topic: infra-software
+topics:
+- llms-agents
+type: model
+method:
+- llm
+spatial:
+- local
+data:
+- other
+status: research
+summary: GPT-4 translates a CESM photosynthesis component from Fortran to Python/JAX, yielding up to 100x
+  GPU speedup and automatic differentiation for hybrid climate modelling.
+abstract: Earth system models (ESMs) are vital for understanding past, present, and future climate, but
+  they suffer from legacy technical infrastructure. ESMs are primarily implemented in Fortran, a language
+  that poses a high barrier of entry for early career scientists and lacks a GPU runtime, which has become
+  essential for continued advancement as GPU power increases and CPU scaling slows. Fortran also lacks
+  differentiability - the capacity to differentiate through numerical code - which enables hybrid models
+  that integrate machine learning methods. Converting an ESM from Fortran to Python/JAX could resolve
+  these issues. This work presents a semi-automated method for translating individual model components
+  from Fortran to Python/JAX using a large language model (GPT-4). By translating the photosynthesis model
+  from the Community Earth System Model (CESM), we demonstrate that the Python/JAX version results in
+  up to 100x faster runtimes using GPU parallelization, and enables parameter estimation via automatic
+  differentiation. The Python code is also easy to read and run and could be used by instructors in the
+  classroom. This work illustrates a path towards the ultimate goal of making climate models fast, inclusive,
+  and differentiable.
+significance: 3
+cited_by: 5
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

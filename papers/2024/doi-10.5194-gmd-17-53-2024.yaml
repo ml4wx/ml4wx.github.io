@@ -1,0 +1,52 @@
+id: doi-10.5194-gmd-17-53-2024
+title: Deep learning model based on multi-scale feature fusion for precipitation nowcasting
+authors:
+- Jinkai Tan
+- Qiqiao Huang
+- Sheng Chen
+date: '2024-01-04'
+year: 2024
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-17-53-2024
+  openalex: W4390602394
+links:
+  paper: https://doi.org/10.5194/gmd-17-53-2024
+  pdf: https://gmd.copernicus.org/articles/17/53/2024/gmd-17-53-2024.pdf
+topic: nowcasting
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Multi-scale feature fusion network for 3-hour precipitation nowcasting from radar echoes, which
+  better forecasts high-intensity rainfall than optical flow, UNet and TSRC baselines.
+abstract: 'Abstract. Accurate forecast of heavy precipitation remains a challenging task in most deep
+  learning (DL)-based models. This study proposes a novel DL architecture named ''Multi-scale Feature
+  Fusion'' (MFF) for precipitation nowcasting for a lead time of up to 3 h. The basic idea is to apply
+  convolution kernels with various sizes to achieve multi-scale receptive fields and then capture the
+  movement features of the precipitation system (e.g. shape, movement direction, and moving speed). Meanwhile,
+  the architecture implants the mechanism of discrete probability to reduce uncertainties and forecast
+  errors, so that heavy precipitations can be produced even at longer lead time. The model uses four year’s
+  radar echo data from 2018 to 2021 for model training and one year’s data of 2022 for model testing.
+  The model is compared with three existing extrapolative models: time series residual convolution (TSRC),
+  optical flow (OF), and UNet. Results show that MFF obtains relatively superior forecast skills with
+  a high probability of detection (POD), low false alarm rate (FAR), small mean absolute error (MAE),
+  and high structural similarity index (SSIM). The most commendable result is that MFF can predict high-intensity
+  precipitation fields at 3 h lead time while the other three models can not. Additionally, it can be
+  found from the results of radially averaged power spectral (RAPS) that MFF shows improvement in the
+  smoothing effect of the forecast field. Future works will pay more attention to multi-source meteorological
+  variables, the structural adjustments of the network, and the combinations with numerical models to
+  further improve the forecast skills of heavy precipitations at longer lead times.'
+significance: 3
+cited_by: 27
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,60 @@
+id: arxiv-2311.03251
+title: Interpretable multiscale Machine Learning-Based Parameterizations of Convection for ICON
+authors:
+- Helge Heuer
+- Mierk Schwabe
+- Pierre Gentine
+- Marco A. Giorgetta
+- Veronika Eyring
+date: '2023-11-06'
+year: 2023
+venue: Journal of Advances in Modeling Earth Systems, 16, e2024MS004398
+venue_type: journal
+ids:
+  arxiv: '2311.03251'
+  doi: 10.1029/2024ms004398
+  openalex: W4388482200
+links:
+  paper: https://arxiv.org/abs/2311.03251
+  pdf: https://arxiv.org/pdf/2311.03251
+orgs:
+- columbia-leap
+- mpi-meteorology
+topic: hybrid-parameterization
+topics:
+- xai-uq-physics
+type: model
+method:
+- cnn
+- classical-ml
+spatial:
+- regional
+data:
+- km-scale-sim
+status: research
+summary: Trains U-Net and gradient-boosted tree convection parameterizations for ICON from filtered high-resolution
+  data; ablated U-Net runs stably for 180 days online with better precipitation extremes.
+abstract: Machine learning (ML)-based parameterizations have been developed for Earth System Models (ESMs)
+  with the goal to better represent subgrid-scale processes or to accelerate computations. ML-based parameterizations
+  within hybrid ESMs have successfully learned subgrid-scale processes from short high-resolution simulations.
+  However, most studies used a particular ML method to parameterize the subgrid tendencies or fluxes originating
+  from the compound effect of various small-scale processes (e.g., radiation, convection, gravity waves)
+  in mostly idealized settings or from superparameterizations. Here, we use a filtering technique to explicitly
+  separate convection from these processes in simulations with the Icosahedral Non-hydrostatic modelling
+  framework (ICON) in a realistic setting and benchmark various ML algorithms against each other offline.
+  We discover that an unablated U-Net, while showing the best offline performance, learns reverse causal
+  relations between convective precipitation and subgrid fluxes. While we were able to connect the learned
+  relations of the U-Net to physical processes this was not possible for the non-deep learning-based Gradient
+  Boosted Trees. The ML algorithms are then coupled online to the host ICON model. Our best online performing
+  model, an ablated U-Net excluding precipitating tracer species, indicates higher agreement for simulated
+  precipitation extremes and mean with the high-resolution simulation compared to the traditional scheme.
+  However, a smoothing bias is introduced both in water vapor path and mean precipitation. Online, the
+  ablated U-Net significantly improves stability compared to the non-ablated U-Net and runs stable for
+  the full simulation period of 180 days. Our results hint to the potential to significantly reduce systematic
+  errors with hybrid ESMs.
+significance: 4
+cited_by: 1
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

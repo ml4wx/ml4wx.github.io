@@ -1,0 +1,54 @@
+id: arxiv-2404.06665
+title: Deep Generative Data Assimilation in Multimodal Setting
+authors:
+- Yongquan Qu
+- Juan Nathaniel
+- Shuolin Li
+- Pierre Gentine
+date: '2024-04-10'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2404.06665'
+links:
+  paper: https://arxiv.org/abs/2404.06665
+  pdf: https://arxiv.org/pdf/2404.06665
+  code: https://github.com/yongquan-qu/SLAMS
+topic: data-assimilation
+topics:
+- observations-remote-sensing
+type: model
+method:
+- diffusion
+spatial:
+- global
+data:
+- stations
+- satellite
+status: research
+summary: Score-based latent diffusion assimilates in-situ weather stations and satellite imagery to calibrate
+  global vertical temperature profiles, claimed as the first multimodal generative assimilation on real
+  data.
+abstract: 'Robust integration of physical knowledge and data is key to improve computational simulations,
+  such as Earth system models. Data assimilation is crucial for achieving this goal because it provides
+  a systematic framework to calibrate model outputs with observations, which can include remote sensing
+  imagery and ground station measurements, with uncertainty quantification. Conventional methods, including
+  Kalman filters and variational approaches, inherently rely on simplifying linear and Gaussian assumptions,
+  and can be computationally expensive. Nevertheless, with the rapid adoption of data-driven methods in
+  many areas of computational sciences, we see the potential of emulating traditional data assimilation
+  with deep learning, especially generative models. In particular, the diffusion-based probabilistic framework
+  has large overlaps with data assimilation principles: both allows for conditional generation of samples
+  with a Bayesian inverse framework. These models have shown remarkable success in text-conditioned image
+  generation or image-controlled video synthesis. Likewise, one can frame data assimilation as observation-conditioned
+  state calibration. In this work, we propose SLAMS: Score-based Latent Assimilation in Multimodal Setting.
+  Specifically, we assimilate in-situ weather station data and ex-situ satellite imagery to calibrate
+  the vertical temperature profiles, globally. Through extensive ablation, we demonstrate that SLAMS is
+  robust even in low-resolution, noisy, and sparse data settings. To our knowledge, our work is the first
+  to apply deep generative framework for multimodal data assimilation using real-world datasets; an important
+  step for building robust computational simulators, including the next-generation Earth system models.
+  Our code is available at: https://github.com/yongquan-qu/SLAMS'
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

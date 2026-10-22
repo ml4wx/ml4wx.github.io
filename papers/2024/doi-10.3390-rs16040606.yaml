@@ -1,0 +1,55 @@
+id: doi-10.3390-rs16040606
+title: Probabilistic Estimation of Tropical Cyclone Intensity Based on Multi-Source Satellite Remote Sensing
+  Images
+authors:
+- Tao Song
+- Kunlin Yang
+- Xin Li
+- Shiqiu Peng
+- Fan Meng
+date: '2024-02-06'
+year: 2024
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs16040606
+  openalex: W4391567085
+links:
+  paper: https://doi.org/10.3390/rs16040606
+  pdf: https://www.mdpi.com/2072-4292/16/4/606/pdf?version=1707210622
+orgs:
+- nuist
+topic: observations-remote-sensing
+topics:
+- extremes-hazards
+type: model
+method:
+- transformer
+spatial:
+- global
+data:
+- satellite
+status: research
+summary: Dual-branch self-attention network MTCIE estimates tropical cyclone intensity from multi-satellite
+  images with 7.42 kt MAE and uncertainty bounds.
+abstract: Estimating the intensity of tropical cyclones (TCs) is beneficial for preventing and reducing
+  the impact of natural disasters. Most existing methods for estimating TC intensity utilize single-satellite
+  or single-band remote sensing images, but they lack the ability to quantify the uncertainty of the estimation
+  results. However, TC, as a typical chaotic system, often requires confidence intervals for intensity
+  estimates in real-world emergency decision-making scenarios. Additionally, the use of multi-source image
+  inputs contributes to the uncertainty of the model. Consequently, this study introduces a neural network
+  (MTCIE) that utilizes multi-source satellite images to provide probabilistic estimates of TC intensity.
+  The model utilizes infrared and microwave images from multiple satellites as inputs. It uses a dual-branch
+  self-attention encoder to extract TC image features and provides uncertainty estimates for TC intensity.
+  Furthermore, a dataset for estimating the intensity of multi-source TC remote sensing images (MTCID)
+  is constructed through the registration of latitude, longitude, and time, along with data augmentation.
+  The proposed method achieves a MAE of 7.42 kt in deterministic estimation, comparable to mainstream
+  networks like TCIENet. In uncertain estimation, it outperforms methods like MC Dropout in the PICP metric,
+  providing reliable probability estimates. This supports TC disaster emergency decision making, enhancing
+  risk mitigation in real-world applications.
+significance: 3
+cited_by: 6
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

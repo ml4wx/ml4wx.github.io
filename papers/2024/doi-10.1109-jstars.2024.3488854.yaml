@@ -1,0 +1,56 @@
+id: doi-10.1109-jstars.2024.3488854
+title: Multiscale Attention-UNet-Based Near-Real-Time Precipitation Estimation From FY-4A/AGRI and Doppler
+  Radar Observations
+authors:
+- Dongling Wang
+- Shanmin Yang
+- Xiaojie Li
+- Jing Peng
+- Hongjiang Ma
+- Xi Wu
+date: '2024-01-01'
+year: 2024
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2024.3488854
+  openalex: W4403977317
+links:
+  paper: https://doi.org/10.1109/jstars.2024.3488854
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+- transformer
+spatial:
+- regional
+data:
+- radar
+- satellite
+status: research
+summary: An attention U-Net fuses FY-4A satellite and Doppler radar to estimate hourly precipitation,
+  reaching CSI 0.60 and RMSE 0.59 mm/h against CMPAS.
+abstract: Extreme precipitation events greatly threaten people's daily lives and safety, making accurate
+  and timely precipitation estimation especially critical. However, common methods like radar and satellite
+  remote sensing have limitations due to coverage and environmental factors. Existing deep learning models
+  struggle with complex scenarios and multisource data correlations. These make the precipitation estimation
+  tasks challenging. This article proposes a Multiscale Dual Cross-Attention UNet (MS-DCA-UNet) model
+  for near-real-time precipitation estimation. It integrates Doppler weather radar and FY-4A satellite
+  data to overcome single-source data limitations. To narrow the semantic gap among the encoder feature
+  maps, the MS-DCA-UNet model introduces a dual-cross attention (DCA) module at the skip connections of
+  the backbone network U-Net. The DCA module mainly employs a channel cross-attention and a spatial cross-attention
+  to capture remote dependencies and enable multiscale feature fusion. A multiscale convolution module
+  is designed to reduce the risk of the model falling into local optima. It is a multibranch upsampling
+  strategy that runs parallel to the decoder. Experimental results show that the Critical Success Index
+  (CSI), Root Mean Square Error (RMSE), and Pearson's Correlation Coefficient (CC) of MS-DCA-UNet are
+  0.6033, 0.5949 mm/h, and 0.8460, respectively, with the hourly CMPAS precipitation as the benchmark.
+  These outperform the other comparisons, such as FY-4A QPE, GPM IMERG, U-Net, Attention-UNet, and DCA-UNet
+  on the CSI, RMSE, and CC metrics. MS-DCA-UNet reduces the RMSE of Attention-UNet, UNet, and DCA-UNet
+  by a margin of 34.68% (0.5949 mm/h versus 0.9107 mm/h), 10.24% (0.5949 mm/h versus 0.6628 mm/h), 6.96%
+  (0.5949 mm/h versus 0.6394 mm/h), respectively.
+significance: 3
+cited_by: 10
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

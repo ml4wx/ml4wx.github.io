@@ -1,0 +1,62 @@
+id: doi-10.1109-tgrs.2024.3371577
+title: Temporal Super-Resolution, Ground Adjustment, and Advection Correction of Radar Rainfall Using
+  3-D-Convolutional Neural Networks
+authors:
+- Julius Polz
+- Luca Glawion
+- Hiob Gebisso
+- Lukas Altenstrasser
+- Maximilian Graf
+- Harald Günter Kunstmann
+- Stefanie Vogl
+- Christian Chwala
+date: '2024-01-01'
+year: 2024
+venue: IEEE Transactions on Geoscience and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/tgrs.2024.3371577
+  openalex: W4392309200
+links:
+  paper: https://doi.org/10.1109/tgrs.2024.3371577
+  pdf: https://ieeexplore.ieee.org/ielx7/36/4358825/10453974.pdf
+orgs:
+- kit
+topic: observations-remote-sensing
+topics:
+- nowcasting
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- stations
+status: research
+summary: A 3D residual CNN (ResRadNet) corrects German radar composites and upsamples to 1-minute steps,
+  raising gauge correlation from 0.63 to 0.74.
+abstract: Weather radars are highly sophisticated tools for quantitative precipitation estimation and
+  provide observations with unmatched spatial representativeness. However, their indirect measurement
+  of precipitation high above ground leads to strong systematic errors compared to direct rain gauge measurements.
+  Additionally, the temporal undersampling from 5-minute instantaneous radar measurements requires advection
+  correction. We present ResRadNet, a 3D-convolutional residual neural network approach, to reduce these
+  errors and, at the same time, increase the temporal resolution of the radar rainfall fields by a 5-minute
+  short-range prediction of 1-minute time-steps. The network is trained to process spatiotemporal sequences
+  of radar rainfall estimates from a composite product derived from 17 C-band weather radars in Germany.
+  In contrast to previous approaches, we present a method that emphasizes the generation of spatiotemporally
+  consistent and advection-corrected country-wide rainfall maps. Our approach significantly increased
+  the Pearson correlation coefficient of the radar product (from 0.63 to 0.74) and decreased the root
+  mean squared error by 22 percent when compared to 247 rain gauges at a 5-minute resolution. An additional
+  large-scale comparison to 8 years of data from 1138 independent manual daily gauges confirmed that the
+  improvement is robust and transferable to new locations. Overall, our study shows the benefits of using
+  3D convolutional neural networks for weather radar rainfall estimation to provide 1-minute, ground-adjusted,
+  that is, bias-corrected with respect to on-ground sensors, and advection-corrected radar rainfall estimates.
+significance: 4
+cited_by: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

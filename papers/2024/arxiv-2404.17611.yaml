@@ -1,0 +1,52 @@
+id: arxiv-2404.17611
+title: 'MetaSD: A Unified Framework for Scalable Downscaling of Meteorological Variables in Diverse Situations'
+authors:
+- Jing Hu
+- Honghu Zhang
+- Peng Zheng
+- Jialin Mu
+- Xiaomeng Huang
+- Xi Wu
+date: '2024-04-26'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2404.17611'
+links:
+  paper: https://arxiv.org/abs/2404.17611
+  pdf: https://arxiv.org/pdf/2404.17611
+topic: downscaling
+type: model
+method:
+- other
+spatial:
+- regional
+data:
+- era5
+- nwp-analysis
+- cmip
+status: research
+summary: MetaSD uses meta-learning to downscale multiple meteorological variables across ERA5, GFS, CFS
+  and CMIP6 with one unified model, outperforming variable-specific methods.
+abstract: Addressing complex meteorological processes at a fine spatial resolution requires substantial
+  computational resources. To accelerate meteorological simulations, researchers have utilized neural
+  networks to downscale meteorological variables from low-resolution simulations. Despite notable advancements,
+  contemporary cutting-edge downscaling algorithms tailored to specific variables. Addressing meteorological
+  variables in isolation overlooks their interconnectedness, leading to an incomplete understanding of
+  atmospheric dynamics. Additionally, the laborious processes of data collection, annotation, and computational
+  resources required for individual variable downscaling are significant hurdles. Given the limited versatility
+  of existing models across different meteorological variables and their failure to account for inter-variable
+  relationships, this paper proposes a unified downscaling approach leveraging meta-learning. This framework
+  aims to facilitate the downscaling of diverse meteorological variables derived from various numerical
+  models and spatiotemporal scales. Trained at variables consisted of temperature, wind, surface pressure
+  and total precipitation from ERA5 and GFS, the proposed method can be extended to downscale convective
+  precipitation, potential energy, height, humidity and ozone from CFS, S2S and CMIP6 at different spatiotemporal
+  scales, which demonstrating its capability to capture the interconnections among diverse variables.
+  Our approach represents the initial effort to create a generalized downscaling model. Experimental evidence
+  demonstrates that the proposed model outperforms existing top downscaling methods in both quantitative
+  and qualitative assessments.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

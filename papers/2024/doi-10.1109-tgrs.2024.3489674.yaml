@@ -1,0 +1,55 @@
+id: doi-10.1109-tgrs.2024.3489674
+title: 'FHDTIE: Fine-Grained Heterogeneous Data Fusion for Tropical Cyclone Intensity Estimation'
+authors:
+- Guangning Xu
+- Michael K. Ng
+- Yunming Ye
+- Bowen Zhang
+date: '2024-01-01'
+year: 2024
+venue: IEEE Transactions on Geoscience and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/tgrs.2024.3489674
+  openalex: W4403977195
+links:
+  paper: https://doi.org/10.1109/tgrs.2024.3489674
+  code: https://github.com/xuguangning1218/FHDTIE
+topic: extremes-hazards
+topics:
+- observations-remote-sensing
+type: model
+method:
+- cnn
+- gnn
+spatial:
+- regional
+data:
+- satellite
+- era5
+status: research
+summary: FHDTIE fuses satellite imagery with reanalysis data using U-Net and graph neural network fine-grained
+  clustering to improve tropical cyclone intensity estimation.
+abstract: A tropical cyclone is a highly destructive extreme weather phenomenon. Estimating the intensity
+  of a tropical cyclone can help provide early warnings, guiding specific disaster defense measures. However,
+  two main challenges hinder performance improvement. The first challenge is how to combine heterogeneous
+  tropical cyclone data into a latent space so that the model can leverage the cloud structure of satellite
+  imagery and the comprehensive meteorological information from reanalysis or forecast data for intensity
+  estimation. The second challenge lies in detecting multiple pseudo-fine-grained areas for the final
+  estimation since tropical cyclones are highly diverse extreme weather phenomena. Neglecting any pseudo-fine-grained
+  areas or relying solely on a single one can potentially result in subpar estimation performance. To
+  address the challenges mentioned above, a fine-grained heterogeneous data fusion framework named FHDTIE
+  is proposed. Two key components in this framework can address the aforementioned challenges. One component
+  is the HDF, which offers shape matching and channel fusing strategies for heterogeneous data fusion.
+  The other component is called the fine-grained cluster features integrator (FCFI). It utilizes a clustering
+  method to identify multiple pseudo-fine-grained areas. Within these areas, the U-Net is used to automatically
+  learn pseudo-fine-grained area representations, and then the graph neural network handles information
+  interaction across these representations. Extensive experiments were conducted to demonstrate the robustness
+  and superiority of the proposed fine-grained heterogeneous data fusion framework. The code is available
+  at GitHub:https://github.com/xuguangning1218/FHDTIE.
+significance: 3
+cited_by: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

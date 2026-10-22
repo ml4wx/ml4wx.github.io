@@ -1,0 +1,55 @@
+id: arxiv-2403.10567
+title: Ensemble learning for uncertainty estimation with application to the correction of satellite precipitation
+  products
+authors:
+- Georgia Papacharalampous
+- Hristos Tyralis
+- Nikolaos Doulamis
+- Anastasios Doulamis
+date: '2024-03-14'
+year: 2024
+venue: 'Machine Learning: Earth 1 (2025) 015004'
+venue_type: journal
+ids:
+  arxiv: '2403.10567'
+  doi: 10.1088/3049-4753/add93b
+links:
+  paper: https://arxiv.org/abs/2403.10567
+  pdf: https://arxiv.org/pdf/2403.10567
+topic: observations-remote-sensing
+topics:
+- post-processing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- stations
+status: research
+summary: Nine quantile-based ensemble learners merge satellite and gauge precipitation over CONUS, with
+  QR and QRNN ensembles outperforming the reference quantile regression.
+abstract: 'Predictions in the form of probability distributions are crucial for effective decision-making.
+  Quantile regression enables such predictions within spatial prediction settings that aim to create improved
+  precipitation datasets by merging remote sensing and gauge data. However, ensemble learning of quantile
+  regression algorithms remains unexplored in this context and, at the same time, it has not been substantially
+  developed so far in the broader machine learning research landscape. Here, we introduce nine quantile-based
+  ensemble learners and address the aforementioned gap in precipitation dataset creation by presenting
+  the first application of these learners to large precipitation datasets. We employed a novel feature
+  engineering strategy, which reduces the number of predictors by using distance-weighted satellite precipitation
+  at relevant locations, combined with location elevation. Our ensemble learners include six that are
+  based on stacking ideas and three simple methods (mean, median, best combiner). Each of them combines
+  the following six individual algorithms: quantile regression (QR), quantile regression forests (QRF),
+  generalized random forests (GRF), gradient boosting machines (GBM), light gradient boosting machines
+  (LightGBM), and quantile regression neural networks (QRNN). These algorithms serve as both base learners
+  and combiners within different ensemble learning methods. We evaluated performance against a reference
+  method (i.e., QR) using quantile scoring functions and a large dataset. The latter comprises 15 years
+  of monthly gauge-measured and satellite precipitation in the contiguous United States (CONUS). Ensemble
+  learning with QR and QRNN yielded the best results across the various investigated quantile levels,
+  which range from 0.025 to 0.975, outperforming the reference method by 3.91% to 8.95%...'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

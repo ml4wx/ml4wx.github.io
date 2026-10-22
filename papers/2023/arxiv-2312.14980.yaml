@@ -1,0 +1,44 @@
+id: arxiv-2312.14980
+title: 'TPTNet: A Data-Driven Temperature Prediction Model Based on Turbulent Potential Temperature'
+authors:
+- Jun Park
+- Changhoon Lee
+date: '2023-12-22'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2312.14980'
+links:
+  paper: https://arxiv.org/abs/2312.14980
+  pdf: https://arxiv.org/pdf/2312.14980
+topic: local-forecasting
+type: model
+method:
+- cnn
+- transformer
+- gnn
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: TPTNet predicts station turbulent potential temperature in South Korea from station data alone,
+  outperforming NWP for forecast hours up to 12.
+abstract: A data-driven model for predicting the surface temperature using neural networks was proposed
+  to alleviate the computational burden of numerical weather prediction (NWP). Our model, named TPTNet
+  uses only 2m temperature measured at the weather stations of the South Korean Peninsula as input to
+  predict the local temperature at finite forecast hours. The turbulent fluctuation component of the temperature
+  was extracted from the station measurements by separating the climatology component accounting for the
+  yearly and daily variations. The effect of station altitude was then compensated by introducing a potential
+  temperature. The resulting turbulent potential temperature data at irregularly distributed stations
+  were used as input for predicting the turbulent potential temperature at forecast hours through three
+  trained networks based on convolutional neural network (CNN), Swin Transformer, and a graphic neural
+  network (GNN). The prediction performance of our network was compared with that of persistence and NWP,
+  confirming that our model outperformed NWP for up to 12 forecast hours.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

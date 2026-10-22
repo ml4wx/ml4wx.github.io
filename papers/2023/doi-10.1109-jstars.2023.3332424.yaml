@@ -1,0 +1,54 @@
+id: doi-10.1109-jstars.2023.3332424
+title: Machine Learning-Based Wind Direction Retrieval From Quad-Polarized Gaofen-3 SAR Images
+authors:
+- Weizeng Shao
+- Yuhang Zhou
+- Qingjun Zhang
+- Xingwei Jiang
+date: '2023-11-16'
+year: 2023
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2023.3332424
+  openalex: W4388739214
+links:
+  paper: https://doi.org/10.1109/jstars.2023.3332424
+  pdf: https://ieeexplore.ieee.org/ielx7/4609443/4609444/10319675.pdf
+topic: observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- era5
+status: research
+summary: Machine learning retrieves wind direction from quad-polarized Gaofen-3 SAR images with 17.7°
+  RMSE against ASCAT, using ERA5 priors.
+abstract: In our study, an intelligent method for inverting wind direction from quad-polarized Gaofen-3
+  (GF-3) synthetic aperture radar (SAR) images is proposed. Specifically, 11300 acquired in wave (WAV)
+  mode are used to retrieve the wind directions using a spectrum-transformation approach and prior information
+  from European Centre for Medium-Range Weather Forecasts (ECMWF) reanalysis at version 5 (ERA-5) data
+  at 1-hour intervals with 0.25° grids. The dependence of the wind direction on the polarimetric correlation
+  coefficient (PCC) between the co- (vertical-vertical (VV) and horizontal-horizontal (HH)) and cross-polarization
+  (vertical-horizontal (VH) and horizontal-vertical (HV)) channels is studied. It is found that the PCCs
+  in four combination polarizations have asymmetric characteristics with respect to the wind direction
+  with correlation coefficients (CORs) of greater than 0.4 or less than −0.4. Following this rationale,
+  the scheme for inverting wind direction from quad-polarized SAR is trained according to machine learning,
+  in which the matrix PCCs, wind directions, azimuthal angles, and slopes from SAR intensity spectra at
+  the peaks are used as inputs. Subsequently, this intelligent approach is applied to 1300 images in quad-polarization
+  stripmap (QPS) mode, and the retrieval results are validated against advanced scatterometer (ASCAT)
+  measurements. The statistical analysis shows that the root mean squared error (RMSE) of the wind direction
+  is 17.7°, the COR is 0.98, and the scatter index (SI) is 0.11. In addition, the wind speeds inverted
+  using a geophysical model function (GMF) CSARMOD-GF are compared with well-calibrated ASCAT products,
+  resulting in an RMSE of 1.85 m/s, a COR of 0.78, and an SI of 0.28 for the wind speed. Thus, this work
+  provides an automatic scheme for inverting wind from quad-polarized GF-3 SAR images without any external
+  information.
+significance: 2
+cited_by: 14
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,54 @@
+id: doi-10.1017-jfm.2024.81
+title: A machine learning model for reconstructing skin-friction drag over ocean surface waves
+authors:
+- Kianoosh Yousefi
+- Gurpreet S. Hora
+- Hongshuo Yang
+- Fabrice Véron
+- Marco G. Giometto
+date: '2024-03-14'
+year: 2024
+venue: Journal of Fluid Mechanics
+venue_type: journal
+ids:
+  doi: 10.1017/jfm.2024.81
+  openalex: W4392812645
+links:
+  paper: https://doi.org/10.1017/jfm.2024.81
+  pdf: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/66B05CD637BE197C754A0FD6A19B6B57/S0022112024000818a.pdf/div-class-title-a-machine-learning-model-for-reconstructing-skin-friction-drag-over-ocean-surface-waves-div.pdf
+orgs:
+- columbia-leap
+topic: hybrid-parameterization
+topics:
+- xai-uq-physics
+type: model
+method:
+- cnn
+spatial:
+- local
+data:
+- other
+status: research
+summary: CNN predicts ocean-wave skin-friction drag from wave elevation and wave age, matching laboratory
+  measurements, for use in wind stress parameterizations in weather and climate models.
+abstract: In order to improve the predictive abilities of weather and climate models, it is essential
+  to understand the behaviour of wind stress at the ocean surface. Wind stress is contingent on small-scale
+  interfacial dynamics typically not directly resolved in numerical models. Although skin friction contributes
+  considerably to the total stress up to moderate wind speeds, it is notoriously challenging to measure
+  and predict using physics-based approaches. This work proposes a supervised machine learning (ML) model
+  that estimates the spatial distribution of the skin-friction drag over wind waves using solely wave
+  elevation and wave age, which are relatively easy to acquire. The input–output pairs are high-resolution
+  wave profiles and their corresponding surface viscous stresses collected from laboratory experiments.
+  The ML model is built upon a convolutional neural network architecture that incorporates the Mish nonlinearity
+  as its activation function. Results show that the model can accurately predict the overall distribution
+  of viscous stresses; it captures the peak of viscous stress at/near the crest and its dramatic drop
+  to almost null just past the crest in cases of intermittent airflow separation. The predicted area-aggregate
+  skin friction is also in excellent agreement with the corresponding measurements. The proposed method
+  offers a practical pathway for estimating both local and area-aggregate skin friction and can be easily
+  integrated into existing numerical models for the study of air–sea interactions.
+significance: 3
+cited_by: 15
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

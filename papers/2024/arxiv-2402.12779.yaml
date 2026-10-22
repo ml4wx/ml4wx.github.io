@@ -1,0 +1,48 @@
+id: arxiv-2402.12779
+title: Two-stage Rainfall-Forecasting Diffusion Model
+authors:
+- XuDong Ling
+- ChaoRong Li
+- FengQing Qin
+- LiHong Zhu
+- Yuanyuan Huang
+date: '2024-02-20'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2402.12779'
+links:
+  paper: https://arxiv.org/abs/2402.12779
+  pdf: https://arxiv.org/pdf/2402.12779
+  code: https://github.com/clearlyzerolxd/TRDM
+topic: nowcasting
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: A two-stage diffusion model forecasts rainfall from radar, first capturing temporal dynamics
+  at low resolution, then upscaling to high resolution, with state-of-the-art results on MRMS and Swedish
+  radar.
+abstract: 'Deep neural networks have made great achievements in rainfall prediction.However, the current
+  forecasting methods have certain limitations, such as with blurry generated images and incorrect spatial
+  positions. To overcome these challenges, we propose a Two-stage Rainfall-Forecasting Diffusion Model
+  (TRDM) aimed at improving the accuracy of long-term rainfall forecasts and addressing the imbalance
+  in performance between temporal and spatial modeling. TRDM is a two-stage method for rainfall prediction
+  tasks. The task of the first stage is to capture robust temporal information while preserving spatial
+  information under low-resolution conditions. The task of the second stage is to reconstruct the low-resolution
+  images generated in the first stage into high-resolution images. We demonstrate state-of-the-art results
+  on the MRMS and Swedish radar datasets. Our project is open source and available on GitHub at: \href{https://github.com/clearlyzerolxd/TRDM}{https://github.com/clearlyzerolxd/TRDM}.'
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

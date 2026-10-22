@@ -1,0 +1,47 @@
+id: arxiv-2404.02631
+title: Two-Stage Super-Resolution Simulation Method of Three-Dimensional Street-Scale Atmospheric Flows
+  for Real-Time Urban Micrometeorology Prediction
+authors:
+- Yuki Yasuda
+- Ryo Onishi
+date: '2024-04-03'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2404.02631'
+links:
+  paper: https://arxiv.org/abs/2404.02631
+  pdf: https://arxiv.org/pdf/2404.02631
+topic: downscaling
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- km-scale-sim
+status: research
+summary: Two-stage CNN super-resolution reconstructs street-scale urban air temperature and wind, cutting
+  errors about 50% and runtime to 3.32% of high-resolution simulation.
+abstract: A two-stage super-resolution simulation method is proposed for street-scale air temperature
+  and wind velocity, which considerably reduces computation time while maintaining accuracy. The first
+  stage employs a convolutional neural network (CNN) to correct large-scale flows above buildings in the
+  input low-resolution simulation results. The second stage uses another CNN to reconstruct small-scale
+  flows between buildings from the output of the first stage, resulting in high-resolution inferences.
+  The CNNs are trained using high-resolution simulation data for the second stage and their coarse-grained
+  version for the first stage as the ground truth, where the high-resolution simulations are conducted
+  independently of the low-resolution simulations used as input. This learning approach separates the
+  spatial scales of inference in each stage. The effectiveness of the proposed method was evaluated using
+  micrometeorological simulations in an actual urban area around Tokyo Station in Japan. The super-resolution
+  simulation successfully inferred high-resolution atmospheric flows, reducing errors by approximately
+  50% compared to the low-resolution simulations. Furthermore, the two-stage approach enabled localized
+  high-resolution inferences, reducing GPU memory usage to as low as 12% during training. The total wall-clock
+  time for 60-min predictions was reduced to 6.83 min, which was 3.32% of the high-resolution simulation
+  time.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

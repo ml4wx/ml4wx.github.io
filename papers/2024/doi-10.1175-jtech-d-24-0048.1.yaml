@@ -1,0 +1,60 @@
+id: doi-10.1175-jtech-d-24-0048.1
+title: A Machine Learning Approach to Mitigate Ground Clutter Effects in the GPM Combined Radar–Radiometer
+  Algorithm (CORRA) Precipitation Estimates
+authors:
+- Mircea Grecu
+- Gerald M. Heymsfield
+- S. Nicholls
+- Stephen E. Lang
+- William S. Olson
+date: '2024-01-01'
+year: 2024
+venue: Journal of Atmospheric and Oceanic Technology
+venue_type: journal
+ids:
+  doi: 10.1175/jtech-d-24-0048.1
+  openalex: W4404337034
+links:
+  paper: https://doi.org/10.1175/jtech-d-24-0048.1
+  pdf: https://mdsoar.org/bitstreams/3e03737d-977f-45da-bc0c-623aef8d6c8e/download
+orgs:
+- nasa
+topic: observations-remote-sensing
+type: model
+method:
+- other
+spatial:
+- global
+data:
+- satellite
+- radar
+status: research
+summary: A neural network removes ground clutter from GPM CORRA precipitation, giving unbiased estimates
+  but only modest random-error gains beyond simple bias correction.
+abstract: Abstract In this study, a machine learning–based methodology is developed to mitigate the effects
+  of ground clutter on precipitation estimates from the Global Precipitation Measurement Combined Radar–Radiometer
+  Algorithm. Ground clutter can corrupt and obscure the precipitation echo in radar observations, leading
+  to inaccuracies in precipitation estimates. To improve upon previous work, this study introduces a general
+  machine learning (ML) approach that enables a systematic investigation and a better understanding of
+  uncertainties in clutter mitigation. To allow for a less restrictive exploration of conditional relations
+  between precipitation above the lowest clutter-free bin and surface precipitation, reflectivity observations
+  above the clutter are included in a fixed-size set of predictors along with the precipitation type,
+  surface type, and freezing level to estimate surface precipitation rates, and several ML-based estimation
+  methods are investigated. A neural network (NN) model is ultimately identified as the best candidate
+  for systematic evaluations, as it is computationally fast to apply while effective in applications.
+  The NN provides unbiased estimates; however, it does not significantly outperform a simple bias correction
+  approach in reducing random errors in the estimates. The similar performance of other ML approaches
+  suggests that the NN’s limited improvement beyond bias removal is due to indeterminacies in the data
+  rather than limitations in the ML approach itself. Significance Statement Ground clutter can obscure
+  and corrupt the precipitation echo in the reflectivity observations by spaceborne radar, leading to
+  inaccuracies and biases in the surface precipitation estimates. In this study, a machine learning approach
+  is developed to mitigate the effects of ground clutter on precipitation estimates from the Global Precipitation
+  Measurement (GPM) Combined Radar–Radiometer Algorithm (CORRA). The approach is shown to be effective
+  in removing the biases associated with the simplest ground clutter mitigation approach and reducing
+  the random errors associated with more complex climatologically based bias-removal approaches.
+significance: 3
+cited_by: 6
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

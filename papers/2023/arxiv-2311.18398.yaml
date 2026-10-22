@@ -1,0 +1,47 @@
+id: arxiv-2311.18398
+title: RainAI -- Precipitation Nowcasting from Satellite Data
+authors:
+- Rafael Pablos Sarabia
+- Joachim Nyborg
+- Morten Birk
+- Ira Assent
+date: '2023-11-30'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2311.18398'
+links:
+  paper: https://arxiv.org/abs/2311.18398
+  pdf: https://arxiv.org/pdf/2311.18398
+  code: https://github.com/rafapablos/w4c23-rainai
+topic: nowcasting
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+- short
+spatial:
+- regional
+data:
+- satellite
+- radar
+status: research
+summary: A 2D U-Net with importance sampling and cross-entropy loss forecasts 8-hour precipitation from
+  satellite radiances, outperforming the official 3D U-Net baseline.
+abstract: This paper presents a solution to the Weather4Cast 2023 competition, where the goal is to forecast
+  high-resolution precipitation with an 8-hour lead time using lower-resolution satellite radiance images.
+  We propose a simple, yet effective method for spatiotemporal feature learning using a 2D U-Net model,
+  that outperforms the official 3D U-Net baseline in both performance and efficiency. We place emphasis
+  on refining the dataset, through importance sampling and dataset preparation, and show that such techniques
+  have a significant impact on performance. We further study an alternative cross-entropy loss function
+  that improves performance over the standard mean squared error loss, while also enabling models to produce
+  probabilistic outputs. Additional techniques are explored regarding the generation of predictions at
+  different lead times, specifically through Conditioning Lead Time. Lastly, to generate high-resolution
+  forecasts, we evaluate standard and learned upsampling methods. The code and trained parameters are
+  available at https://github.com/rafapablos/w4c23-rainai.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,55 @@
+id: doi-10.5194-npg-30-503-2023
+title: Robust weather-adaptive post-processing using model output statistics random forests
+authors:
+- Thomas Muschinski
+- Georg Johann Mayr
+- Achim Zeileis
+- Thorsten Simon
+date: '2023-11-20'
+year: 2023
+venue: Nonlinear processes in geophysics
+venue_type: journal
+ids:
+  doi: 10.5194/npg-30-503-2023
+  openalex: W4388829910
+links:
+  paper: https://doi.org/10.5194/npg-30-503-2023
+  pdf: https://npg.copernicus.org/articles/30/503/2023/npg-30-503-2023.pdf
+orgs:
+- kit
+topic: post-processing
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: research
+summary: MOS random forests fuse traditional MOS with random forests for daily precipitation postprocessing,
+  outperforming reference ML methods at most stations with under 100 training cases.
+abstract: Abstract. Physical numerical weather prediction models have biases and miscalibrations that
+  can depend on the weather situation, which makes it difficult to postprocess them effectively using
+  the traditional model output statistics (MOS) framework based on parametric regression models. Consequently,
+  much recent work has focused on using flexible machine learning methods that are able to take additional
+  weather-related predictors into account during postprocessing, beyond the forecast of the variable of
+  interest only. Some of these methods have achieved impressive results, but they typically require significantly
+  more training data than traditional MOS and are less straightforward to implement and interpret. We
+  propose MOS random forests, a new postprocessing method that avoids these problems by fusing traditional
+  MOS with a powerful ML method called random forests to estimate "weather-adapted" MOS coefficients from
+  a set of predictors. Since the assumed parametric base model contains valuable prior knowledge, much
+  smaller training data sizes are required to obtain skillful forecasts and model results are easy to
+  interpret. MOS forests are straightforward to implement and typically work well, even with no or very
+  little hyperparameter tuning. For the difficult task of postprocessing daily precipitation sums in complex
+  terrain, MOS forests outperform reference machine learning methods at most of the stations considered.
+  Additionally, they are highly robust to changes in the data size and work well even when less than a
+  hundred observations are available for training.
+significance: 4
+cited_by: 5
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

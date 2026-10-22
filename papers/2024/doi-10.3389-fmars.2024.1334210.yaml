@@ -1,0 +1,52 @@
+id: doi-10.3389-fmars.2024.1334210
+title: Enhancing ENSO predictions with self-attention ConvLSTM and temporal embeddings
+authors:
+- Chuang Rui
+- Zhengya Sun
+- Wensheng Zhang
+- An-An Liu
+- Zhiqiang Wei
+date: '2024-02-11'
+year: 2024
+venue: Frontiers in Marine Science
+venue_type: journal
+ids:
+  doi: 10.3389/fmars.2024.1334210
+  openalex: W4391750093
+links:
+  paper: https://doi.org/10.3389/fmars.2024.1334210
+  pdf: https://www.frontiersin.org/articles/10.3389/fmars.2024.1334210/pdf?isPublishedV2=False
+topic: s2s-seasonal
+type: model
+method:
+- rnn
+- transformer
+timescale:
+- seasonal
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Two-stage self-attention ConvLSTM predicts meteorological fields and then ENSO indices up to
+  24 months ahead, outperforming prior ENSO deep learning models.
+abstract: El Niño-Southern Oscillation (ENSO), a cyclic climate phenomenon spanning interannual and decadal
+  timescales, exerts substantial impacts on the global weather patterns and ecosystems. Recently, deep
+  learning has brought considerable advances in the accurate prediction of ENSO occurrence. However, the
+  current models are insufficient to characterize the evolutionary behavior of the ENSO, particularly
+  lacking comprehensive modeling of local-range and longrange spatiotemporal interdependencies, and the
+  incorporation of calendar monthly and seasonal properties. To make up this gap, we propose a Two-Stage
+  SpatioTemporal (TSST) autoregressive model that couples the meteorological factor prediction with ENSO
+  indicator prediction. The first stage predicts the meteorological time series by leveraging self-attention
+  ConvLSTM network which captures both the local and the global spatial-temporal dependencies. The temporal
+  embeddings of calendar months and seasonal information are further incorporated to preserves repeatedly-occurring-yet-hidden
+  patterns in meteorological series. The second stage uses multiple layers to extract higher level of
+  features from predicted meteorological factors progressively to generate ENSO indicators. The results
+  demonstrate that our model outperforms the state-of-the-art ENSO prediction models, effectively predicting
+  ENSO up to 24 months and mitigating the spring predictability barrier.
+significance: 4
+cited_by: 5
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

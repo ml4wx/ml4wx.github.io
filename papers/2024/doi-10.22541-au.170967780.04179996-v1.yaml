@@ -1,0 +1,62 @@
+id: doi-10.22541-au.170967780.04179996-v1
+title: Postprocessing East African rainfall forecasts using a generative machine learning model
+authors:
+- Bobby Antonio
+- Andrew T. T. McRae
+- David A. MacLeod
+- Fenwick Cooper
+- John H. Marsham
+- Laurence Aitchison
+- T. N. Palmer
+- Peter A. G. Watson
+date: '2024-03-05'
+year: 2024
+venue_type: other
+ids:
+  doi: 10.22541/au.170967780.04179996/v1
+  openalex: W4392446001
+links:
+  paper: https://doi.org/10.22541/au.170967780.04179996/v1
+  pdf: https://www.authorea.com/doi/pdf/10.22541/au.170967780.04179996
+orgs:
+- university-of-oxford
+topic: post-processing
+topics:
+- extremes-hazards
+type: model
+method:
+- gan-vae
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: A conditional GAN postprocesses ECMWF hourly East African rainfall, improving the diurnal cycle
+  and extremes up to the 99.9th percentile.
+abstract: Existing weather models are known to have poor skill at forecasting rainfall over East Africa,
+  where there are regular threats of drought and floods. Improved forecasts could reduce the effects of
+  these extreme weather events and provide significant socioeconomic benefits to the region. We present
+  a novel machine learning-based method to improve precipitation forecasts in East Africa, using postprocessing
+  based on a conditional generative adversarial network (cGAN). This addresses the challenge of realistically
+  representing tropical rainfall, where convection dominates and is poorly simulated in conventional global
+  forecast models. We postprocess hourly forecasts made by the European Centre for Medium-Range Weather
+  Forecasts Integrated Forecast System at 6-18h lead times, at $0.1^{\circ}$ resolution. We combine the
+  cGAN predictions with a novel neighbourhood version of quantile mapping, to integrate the strengths
+  of machine learning and conventional postprocessing. Our results indicate that the cGAN substantially
+  improves the diurnal cycle of rainfall, and improves predictions up to the $99.9^{\text{th}}$ percentile
+  ($\sim 10 \text{mm}/\text{hr}$). This improvement extends to the 2018 March–May season, which had extremely
+  high rainfall, indicating that the approach has some ability to generalise to more extreme conditions.
+  We explore the potential for the cGAN to produce probabilistic forecasts and find that the spread of
+  this ensemble broadly reflects the predictability of the observations, but is also characterised by
+  a mixture of under- and over-dispersion. Overall our results demonstrate how the strengths of machine
+  learning and conventional postprocessing methods can be combined, and illuminate what benefits machine
+  learning approaches can bring to this region.
+significance: 4
+cited_by: 0
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

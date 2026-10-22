@@ -1,0 +1,51 @@
+id: doi-10.21203-rs.3.rs-4093387-v1
+title: 'Cyclone Intensity Estimation: A Studyof Neural Architecture Search andTransfer Learning in CNNs'
+authors:
+- Kancharagunta Kishan Babu
+- Ajay Dilip Kumar Marapatla
+- Harikesh Manchala
+- Uday Kiran Pillalamarri
+- Danush Kanthala
+- Sai Ritish Reddy Musku
+- Charan Sai Kamsani
+date: '2024-03-18'
+year: 2024
+venue: Research Square
+venue_type: preprint
+ids:
+  doi: 10.21203/rs.3.rs-4093387/v1
+  openalex: W4392923201
+links:
+  paper: https://doi.org/10.21203/rs.3.rs-4093387/v1
+  pdf: https://www.researchsquare.com/article/rs-4093387/latest.pdf
+topic: extremes-hazards
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: CNN transfer learning with neural architecture search estimates tropical cyclone intensity from
+  infrared images, reaching R² of 0.945.
+abstract: Abstract Tropical cyclones (TCs) are severe weather phenomena that can significantly affect
+  human lives. These events can lead to calamities characterized by strong sustainable winds and enormous
+  waves. We proposed an architecture based on convolutional neural networks (CNNs) to tackle this problem.
+  This method makes use of cyclone infrared images. Using customized FCL architectures, we used transfer
+  learning and fine-tuning on CNN architectures such as VGG16, VGG19, and ResNet50, both with and without
+  data augmentation. Fine-tuning involved 4 layers of VGG16, 8 layers of VGG19, and 12 layers of ResNet50
+  to capture cyclone features effectively. The CNN models were used to these architectures to extract
+  features, and the resulting feature maps were fed to various combinations of Fully Connected Networks
+  (FCL). The most optimistic results were achieved with the VGG16 + FCL (128 x 64 x 1) architecture through
+  transfer learning, producing a Mean Absolute Error (MAE) of 7.51 kts, Root Mean Square Error (RMSE)
+  of 9.63 kts, and an R2 Score of 0.92. Consequently, we identified this model as the foundational basis
+  for Neural Architecture Search (NAS) to enhance the FCL architecture. The NAS process generated various
+  architectures, among which the VGG16 + FCL (128 x 128 x 1) architecture stood out with notable performance,
+  featuring a Mean Squared Error (MSE) of 6.77 kts, RMSE of 8.88 kts, and an impressive R2-Score of 0.945.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

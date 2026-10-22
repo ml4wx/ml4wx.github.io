@@ -1,0 +1,56 @@
+id: doi-10.3390-atmos15010040
+title: 'Radar-SR3: A Weather Radar Image Super-Resolution Generation Model Based on SR3'
+authors:
+- Zhanpeng Shi
+- Huantong Geng
+- Fangli Wu
+- Liangchao Geng
+- Xiaoran Zhuang
+date: '2023-12-29'
+year: 2023
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos15010040
+  openalex: W4390405091
+links:
+  paper: https://doi.org/10.3390/atmos15010040
+  pdf: https://www.mdpi.com/2073-4433/15/1/40/pdf?version=1703846503
+orgs:
+- nuist
+- cma
+topic: downscaling
+topics:
+- nowcasting
+type: model
+method:
+- diffusion
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: A diffusion-based SR3 model super-resolves weather radar images, improving PSNR by 52% over SRGAN
+  at 8x magnification.
+abstract: To solve the problems of the current deep learning radar extrapolation model consuming many
+  resources and the final prediction result lacking details, a weather radar image super-resolution weather
+  model based on SR3 (super-resolution via image restoration and recognition) for radar images is proposed.
+  This model uses a diffusion model to super-resolve weather radar images to generate high-definition
+  images and optimizes the performance of the U-Net denoising network on the basis of SR3 to further improve
+  image quality. The model receives high-resolution images with Gaussian noise added and performs channel
+  splicing with low-resolution images for conditional generation. The experimental results showed that
+  the introduction of the diffusion model significantly improved the spatial resolution of weather radar
+  images, providing new technical means for applications in related fields; when the amplification factor
+  was 8, Radar-SR3, compared with the image super-resolution model based on the generative adversarial
+  network (SRGAN) and the bicubic interpolation algorithm, the peak signal-to-noise ratio (PSNR) increased
+  by 146% and 52% on average. According to this model, it is possible to train radar extrapolation models
+  with limited computing resources with high-resolution images.
+significance: 2
+cited_by: 10
+score: 18
+highlight: false
+added: '2026-10-22'
+source: backfill

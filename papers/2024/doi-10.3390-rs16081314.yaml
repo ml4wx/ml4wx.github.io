@@ -1,0 +1,54 @@
+id: doi-10.3390-rs16081314
+title: Comparing ML Methods for Downscaling Near-Surface Air Temperature over the Eastern Mediterranean
+authors:
+- Amit Blizer
+- Oren Glickman
+- Itamar M. Lensky
+date: '2024-04-09'
+year: 2024
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs16081314
+  openalex: W4394621810
+links:
+  paper: https://doi.org/10.3390/rs16081314
+  pdf: https://www.mdpi.com/2072-4292/16/8/1314/pdf?version=1712656682
+topic: downscaling
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- era5
+- cmip
+- satellite
+- stations
+status: research
+summary: Compares XGBoost and deep learning for downscaling ERA5 and CMIP6 air temperature to 1 km over
+  Israel, reaching 0.98 °C RMSE for daily ERA5 output.
+abstract: Near-surface air temperature (Ta) is a key variable in global climate studies. Global climate
+  models such as ERA5 and CMIP6 predict various parameters at coarse spatial resolution (>9 km). As a
+  result, local phenomena such as the urban heat islands are not reflected in the model’s outputs. In
+  this study, we address this limitation by downscaling the resolution of ERA5 (9 km) and CMIP6 (27 km)
+  Ta to 1 km, employing two different machine learning algorithms (XGBoost and Deep Learning). Our models
+  leverage a diverse set of features, including data from satellites (land surface temperature and normalized
+  difference vegetation index), from ERA5 and CMIP6 climate models (e.g., solar and thermal radiation,
+  wind), and from digital elevation models to develop accurate machine learning prediction models. These
+  models were rigorously validated against observations from 98 meteorological stations in the East Mediterranean
+  (Israel) using a standard cross-validation technique as well as a leave-one-group-out on the station
+  ID evaluation methodology to avoid overfitting and dependence on geographic location. We demonstrate
+  the sensitivity of the downscaled Ta to local land cover and topography, which is missing in the climate
+  models. Our results demonstrate impressive accuracy with the Deep Learning-based models, obtaining Root
+  Mean Squared Error (RMSE) values of 0.98 °C (ERA5) and 1.86 °C (CMIP6) for daily Ta and 2.20 °C (ERA5)
+  for hourly Ta. Additionally, we explore the impact of the various input features and offer an extended
+  application for future climate predictions. Finally, we propose an enhanced evaluation framework, which
+  addresses the problem of model overfitting. This work provides practical tools and insights for building
+  and evaluating Ta downscaling models. The code and data are publicly shared online.
+significance: 3
+cited_by: 11
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

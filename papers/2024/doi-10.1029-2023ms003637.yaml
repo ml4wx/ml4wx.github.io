@@ -1,0 +1,53 @@
+id: doi-10.1029-2023ms003637
+title: Prediction of Tropical Cyclogenesis Based on Machine Learning Methods and Its SHAP Interpretation
+authors:
+- Chi Lok Loi
+- Chun‐Chieh Wu
+- Yu‐Chiao Liang
+date: '2024-02-27'
+year: 2024
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2023ms003637
+  openalex: W4392234708
+links:
+  paper: https://doi.org/10.1029/2023ms003637
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2023MS003637
+topic: extremes-hazards
+topics:
+- xai-uq-physics
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Random forest, SVM and neural networks predict 24-hour tropical cyclogenesis with F1 near 0.8,
+  and SHAP identifies 500 hPa vorticity as the dominant factor.
+abstract: Abstract This study trains three machine learning models with varying complexity—Random Forest,
+  Support Vector Machine, and Neural Network—to predict cyclogenesis at a forecast lead time of 24 hr
+  for given tropical disturbances identified by an optimized Kalman Filter algorithm. The overall performance
+  is competent in terms of f1‐scores (∼0.8) compared to previous research of the same kind. An assessment
+  by SHapley Additive exPlanations (SHAP) values reveals that mid‐level (500 hPa) vorticity is the most
+  influential factor in deciding if a tropical disturbance is developing or non‐developing for all three
+  models. Wind shear and tilting are found to hold a certain level of importance as well. These results
+  encourage further experiments that use physical models to explore the dynamical, mid‐level pathway to
+  tropical cyclogenesis. Another usage of SHAP values in this work is to explain how a machine learning
+  model decides if an individual tropical disturbance case will develop, by listing the contribution of
+  each feature to the output genesis probability, illustrated by a case study of Typhoon Halong. This
+  increases the reliability of the machine learning models, and forecasters can take advantage of such
+  information to issue tropical cyclone formation warnings more accurately. Several caveats of the current
+  machine learning application in the studies of tropical cyclogenesis are discussed and can be considered
+  for future research. These can benefit the interpretation and emphasis of certain output fields in the
+  operational dynamical prediction system, which can contribute to more timely cyclogenesis forecasts.
+significance: 3
+cited_by: 28
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

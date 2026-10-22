@@ -1,0 +1,49 @@
+id: arxiv-2401.09881
+title: 'GA-SmaAt-GNet: Generative Adversarial Small Attention GNet for Extreme Precipitation Nowcasting'
+authors:
+- Eloy Reulen
+- Siamak Mehrkanoon
+date: '2024-01-18'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2401.09881'
+links:
+  paper: https://arxiv.org/abs/2401.09881
+  pdf: https://arxiv.org/pdf/2401.09881
+topic: nowcasting
+topics:
+- extremes-hazards
+type: model
+method:
+- gan-vae
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: GA-SmaAt-GNet, a generative adversarial U-Net variant with precipitation masks, improves extreme
+  precipitation nowcasting over Dutch radar data.
+abstract: In recent years, data-driven modeling approaches have gained significant attention across various
+  meteorological applications, particularly in weather forecasting. However, these methods often face
+  challenges in handling extreme weather conditions. In response, we present the GA-SmaAt-GNet model,
+  a novel generative adversarial framework for extreme precipitation nowcasting. This model features a
+  unique SmaAt-GNet generator, an extension of the successful SmaAt-UNet architecture, capable of integrating
+  precipitation masks (binarized precipitation maps) to enhance predictive accuracy. Additionally, GA-SmaAt-GNet
+  incorporates an attention-augmented discriminator inspired by the Pix2Pix architecture. This innovative
+  framework paves the way for generative precipitation nowcasting using multiple data sources. We evaluate
+  the performance of SmaAt-GNet and GA-SmaAt-GNet using real-life precipitation data from the Netherlands,
+  revealing notable improvements in overall performance and for extreme precipitation events compared
+  to other models. Specifically, our proposed architecture demonstrates its main performance gain in summer
+  and autumn, when precipitation intensity is typically at its peak. Furthermore, we conduct uncertainty
+  analysis on the GA-SmaAt-GNet model and the precipitation dataset, providing insights into its predictive
+  capabilities. Finally, we employ Grad-CAM to offer visual explanations of our model's predictions, generating
+  activation heatmaps that highlight areas of input activation throughout the network.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

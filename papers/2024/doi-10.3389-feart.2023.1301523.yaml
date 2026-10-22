@@ -1,0 +1,53 @@
+id: doi-10.3389-feart.2023.1301523
+title: Advancing very short-term rainfall prediction with blended U-Net and partial differential approaches
+authors:
+- Ji‐Hoon Ha
+- Junsang Park
+date: '2024-01-11'
+year: 2024
+venue: Frontiers in Earth Science
+venue_type: journal
+ids:
+  doi: 10.3389/feart.2023.1301523
+  openalex: W4390745371
+links:
+  paper: https://doi.org/10.3389/feart.2023.1301523
+  pdf: https://www.frontiersin.org/articles/10.3389/feart.2023.1301523/pdf?isPublishedV2=False
+orgs:
+- kma
+topic: nowcasting
+type: model
+method:
+- cnn
+- physics-constrained
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: pre-operational
+summary: Blending a U-Net with a fluid-dynamics PDE model reduces blurring in 0-3 h rainfall nowcasts,
+  giving sharper and more accurate predictions than U-Net or PDE alone.
+abstract: Accurate and timely prediction of short-term rainfall is crucial for reducing the damages caused
+  by heavy rainfall events. Therefore, various precipitation nowcasting models have been proposed. However,
+  the performance of these models still remains limited. In particular, the current operational precipitation
+  nowcasting method, which is based on radar echo tracking, such as the McGill Algorithm for Precipitation
+  Nowcasting by Lagrangian Extrapolation (MAPLE), has a critical drawback when predicting newly developed
+  or decayed precipitation fields. Recently proposed deep learning models, such as the U-Net convolutional
+  neural network outperform the models based on radar echo tracking. However, these models are unsuitable
+  for operational precipitation nowcasting due to their blurry predictions over longer lead times. To
+  address these blurry effects and enhance the performance of U-Net-based rainfall prediction, we propose
+  a blended model that combines a partial differential equation (PDE) model based on fluid dynamics with
+  the U-Net model. The evaluation of the forecast skill, based on both qualitative and quantitative methods
+  for 0–3-h lead times, demonstrates that the blended model provides less blurry and more accurate rainfall
+  predictions compared with the U-Net and partial differential equation models. This indicates the potential
+  to enhance the field of very short-term rainfall prediction. Additionally, we also evaluated the monthly-averaged
+  forecast skills for different seasons, and confirmed the operational feasibility of the blended model,
+  which contributes to the performance enhancement of operational nowcasting.
+significance: 3
+cited_by: 4
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

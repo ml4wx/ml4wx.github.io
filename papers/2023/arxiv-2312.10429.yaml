@@ -1,0 +1,53 @@
+id: arxiv-2312.10429
+title: 'ResoNet: Robust and Explainable ENSO Forecasts with Hybrid Convolution and Transformer Networks'
+authors:
+- Pumeng Lyu
+- Tao Tang
+- Fenghua Ling
+- Jing-Jia Luo
+- Niklas Boers
+- Wanli Ouyang
+- Lei Bai
+date: '2023-12-16'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2312.10429'
+links:
+  paper: https://arxiv.org/abs/2312.10429
+  pdf: https://arxiv.org/pdf/2312.10429
+topic: s2s-seasonal
+topics:
+- xai-uq-physics
+type: model
+method:
+- cnn
+- transformer
+timescale:
+- seasonal
+- s2s
+spatial:
+- global
+data:
+- era5
+status: research
+summary: ResoNet hybrid CNN-Transformer predicts ENSO skillfully at 19 to 26 month lead times, with explainability
+  tied to recharge oscillator and other physical mechanisms.
+abstract: Recent studies have shown that deep learning (DL) models can skillfully predict the El Niño-Southern
+  Oscillation (ENSO) forecasts over 1.5 years ahead. However, concerns regarding the reliability of predictions
+  made by DL methods persist, including potential overfitting issues and lack of interpretability. Here,
+  we propose ResoNet, a DL model that combines convolutional neural network (CNN) and Transformer architectures.
+  This hybrid architecture design enables our model to adequately capture local SSTA as well as long-range
+  inter-basin interactions across oceans. We show that ResoNet can robustly predict ESNO at lead times
+  between 19 and 26 months, thus outperforming existing approaches in terms of the forecast horizon. According
+  to an explainability method applied to ResoNet predictions of El Niño and La Niña events from 1- to
+  18-month lead, we find that it predicts the Niño3.4 index based on multiple physically reasonable mechanisms,
+  such as the Recharge Oscillator concept, Seasonal Footprint Mechanism, and Indian Ocean capacitor effect.
+  Moreover, we demonstrate that for the first time, the asymmetry between El Niño and La Niña development
+  can be captured by ResoNet. Our results could help alleviate skepticism about applying DL models for
+  ENSO prediction and encourage more attempts to discover and predict climate phenomena using AI methods.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

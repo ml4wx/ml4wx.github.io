@@ -1,0 +1,61 @@
+id: doi-10.5194-gmd-17-399-2024
+title: 'GAN-argcPredNet v2.0: a radar echo extrapolation model based on spatiotemporal process enhancement'
+authors:
+- Kun Zheng
+- Qiya Tan
+- Huihua Ruan
+- Jinbiao Zhang
+- Cong Luo
+- Siyu Tang
+- Yunlei Yi
+- Yugang Tian
+- Jianmei Cheng
+date: '2024-01-16'
+year: 2024
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-17-399-2024
+  openalex: W4390914969
+links:
+  paper: https://doi.org/10.5194/gmd-17-399-2024
+  pdf: https://gmd.copernicus.org/articles/17/399/2024/gmd-17-399-2024.pdf
+topic: nowcasting
+type: model
+method:
+- gan-vae
+- rnn
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: GAN-based recurrent radar echo extrapolation curbs echo attenuation; heavy-rain POD rises 18.8%
+  and CSI 17.0% over baseline.
+abstract: Abstract. Precipitation nowcasting has important implications for urban operation and flood
+  prevention. Radar echo extrapolation is a common method in precipitation nowcasting. Using deep learning
+  models to extrapolate radar echo data has great potential. The increase of lead time leads to a weaker
+  correlation between the real rainfall evolution and the generated images. The evolution information
+  is easily lost during extrapolation, which is reflected as echo attenuation. Existing models, including
+  generative adversarial network (GAN)-based models, have difficulty curbing attenuation, resulting in
+  insufficient accuracy in rainfall prediction. To solve this issue, a spatiotemporal process enhancement
+  network (GAN-argcPredNet v2.0) based on GAN-argcPredNet v1.0 has been designed. GAN-argcPredNet v2.0
+  curbs attenuation by avoiding blurring or maintaining the intensity. A spatiotemporal image correlation
+  (STIC) prediction network is designed as the generator. By suppressing the blurring effect of rain distribution
+  and reducing the negative bias by STIC attention, the generator generates more accurate images. Furthermore,
+  the discriminator is a channel–spatial (CS) convolution network. The discriminator enhances the discrimination
+  of echo information and provides better guidance to the generator in image generation by CS attention.
+  The experiments are based on the radar dataset of southern China. The results show that GAN-argcPredNet
+  v2.0 performs better than other models. In heavy rainfall prediction, compared with the baseline, the
+  probability of detection (POD), the critical success index (CSI), the Heidke skill score (HSS) and bias
+  score increase by 18.8 %, 17.0 %, 17.2 % and 26.3 %, respectively. The false alarm ratio (FAR) decreases
+  by 3.0 %.
+significance: 4
+cited_by: 11
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

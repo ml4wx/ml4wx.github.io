@@ -1,0 +1,58 @@
+id: doi-10.1109-tgrs.2024.3466952
+title: Optimizing Satellite-Based Latent Heating Rate Profiling Using a Convolutional Neural Network Heating
+  (CNNH) Algorithm
+authors:
+- Hongwei Zhao
+- Shuping Yang
+- Qiong Wu
+- Lin Chen
+- Peng Zhang
+- Rui Si Li
+date: '2024-01-01'
+year: 2024
+venue: IEEE Transactions on Geoscience and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/tgrs.2024.3466952
+  openalex: W4402831851
+links:
+  paper: https://doi.org/10.1109/tgrs.2024.3466952
+orgs:
+- cma
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- satellite
+- km-scale-sim
+status: research
+summary: CNN heating algorithm retrieves satellite latent heating profiles from GPM observations, outperforming
+  selected AI and physics-based algorithms in WRF-based tests.
+abstract: Precise spatial distribution of latent heat released during precipitation formation is crucial
+  to enhance weather forecasting and climate prediction accuracy. This study introduces an innovative
+  convolutional neural network heating (CNNH) algorithm. The algorithm incorporates the vertical gradient
+  of precipitation rate and air temperature at different altitudes as key inputs. It combines additional
+  information from adjacent vertical layers and neighboring horizontal areas. To mitigate possible misjudgments
+  of negative heating, a punishing mechanism was introduced with a latent heating (LH)-structure loss
+  function within the optimization framework. By employing the adaptive differential evolution (ADE) algorithm,
+  the optimal configuration of the network structure optimizes accurate LH retrieval. To evaluate the
+  CNNH algorithm’s efficacy, a self-consistency check using weather research and forecasting (WRF) model
+  simulation data was conducted. Furthermore, an inter-comparison study with four other algorithms using
+  real satellite observations was undertaken. Evaluations found that the CNNH algorithm could precisely
+  retrieve the primary characteristics of the horizontal and vertical structure, along with the temporal
+  evolution process and statistical information of WRF simulated LH, in eastern China in August 2017.
+  It effectively addressed the issues of overestimation of near-surface cooling and mixing layer heating,
+  thereby outperforming selected artificial intelligence (AI) and physics-based LH algorithms. The intercomparison
+  study between LHCNNH with four other published LH products based on the same GPM observations reveals
+  that CNNH got comparable performance among them. However, specific differences among these algorithms
+  highlight considerable uncertainties in multiple LH satellite remote sensing products and underscore
+  the necessity for further improvements in satellite LH algorithms.
+significance: 3
+cited_by: 4
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

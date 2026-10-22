@@ -1,0 +1,55 @@
+id: doi-10.1007-s13143-023-00349-x
+title: Potential Improvement of GK2A Clear-Sky Atmospheric Motion Vectors Using the Convolutional Neural
+  Network Model
+authors:
+- Hwayon Choi
+- Yong‐Sang Choi
+- Hyo‐Jong Song
+- Hyoji Kang
+- Gyuyeon Kim
+date: '2024-02-08'
+year: 2024
+venue: Asia-Pacific Journal of Atmospheric Sciences
+venue_type: journal
+ids:
+  doi: 10.1007/s13143-023-00349-x
+  openalex: W4391655340
+links:
+  paper: https://doi.org/10.1007/s13143-023-00349-x
+  pdf: https://link.springer.com/content/pdf/10.1007/s13143-023-00349-x.pdf
+topic: observations-remote-sensing
+topics:
+- nowcasting
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+- era5
+status: research
+summary: CNN optical flow derives GK2A clear-sky wind vectors over Korea with lower error than operational
+  AMVs (12.3 vs 15.9 m/s RMSVD).
+abstract: Abstract In this study, we propose a new approach to improve the accuracy of the horizontal
+  atmospheric motion vector (AMV) in cloud-free skies and its forecasting. We adapted the optical flow
+  of the convolutional neural network (CNN) framework model using two 10-min interval infrared images
+  at water vapor channels (centered at 6.3, 7.0, and 7.3 $$\mu m$$ μ m ) from the Korean geostationary
+  satellite GEO-KOMPSAT-2A (GK2A). Since all pixels had seamless AMVs calculated by CNN (CNN AMVs), we
+  could also predict AMVs using the linear regression method. The tracking performance of the CNN-based
+  algorithm was validated using AMVs retrieved from GK2A (GK2A AMVs) by estimating the difference between
+  those values and the ECMWF (European Centre for Medium-Range Weather Forecasts) Reanalysis v5 (ERA5)
+  wind data over Korea in 2022. CNN AMVs showed similar or better root-mean-square vector differences
+  (RMSVDs) than GK2A AMVs (12.33–12.86 vs. 15.89–19.96 m/s). The RMSVDs of the forecasted AMVs were 2.74,
+  2.95, 3.41, and 4.79 m/s at lead times of 10, 20, 30, and 60 min, respectively. Consequently, our method
+  showed higher accuracy for tracking motion in the production of AMVs and succeeded in forecasting AMVs.
+  We expect that such potential improvements in computational accuracy for operational GK2A AMVs will
+  contribute to increased accuracy when forecasting meteorological phenomena related to wind.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

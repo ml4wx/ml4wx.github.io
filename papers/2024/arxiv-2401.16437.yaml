@@ -1,0 +1,54 @@
+id: arxiv-2401.16437
+title: A Benchmark Dataset for Tornado Detection and Prediction using Full-Resolution Polarimetric Weather
+  Radar Data
+authors:
+- Mark S. Veillette
+- James M. Kurdzo
+- Phillip M. Stepanian
+- John Y. N. Cho
+- Siddharth Samsi
+- Joseph McDonald
+date: '2024-01-26'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2401.16437'
+links:
+  paper: https://arxiv.org/abs/2401.16437
+  pdf: https://arxiv.org/pdf/2401.16437
+topic: benchmarks-data-eval
+topics:
+- extremes-hazards
+- observations-remote-sensing
+type: benchmark
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: TorNet releases a decade of full-resolution polarimetric WSR-88D radar data with a CNN baseline
+  that beats operational tornado detection baselines.
+abstract: Weather radar is the primary tool used by forecasters to detect and warn for tornadoes in near-real
+  time. In order to assist forecasters in warning the public, several algorithms have been developed to
+  automatically detect tornadic signatures in weather radar observations. Recently, Machine Learning (ML)
+  algorithms, which learn directly from large amounts of labeled data, have been shown to be highly effective
+  for this purpose. Since tornadoes are extremely rare events within the corpus of all available radar
+  observations, the selection and design of training datasets for ML applications is critical for the
+  performance, robustness, and ultimate acceptance of ML algorithms. This study introduces a new benchmark
+  dataset, TorNet to support development of ML algorithms in tornado detection and prediction. TorNet
+  contains full-resolution, polarimetric, Level-II WSR-88D data sampled from 10 years of reported storm
+  events. A number of ML baselines for tornado detection are developed and compared, including a novel
+  deep learning (DL) architecture capable of processing raw radar imagery without the need for manual
+  feature extraction required for existing ML algorithms. Despite not benefiting from manual feature engineering
+  or other preprocessing, the DL model shows increased detection performance compared to non-DL and operational
+  baselines. The TorNet dataset, as well as source code and model weights of the DL baseline trained in
+  this work, are made freely available.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

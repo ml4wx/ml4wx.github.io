@@ -1,0 +1,51 @@
+id: arxiv-2311.10665
+title: Online Calibration of Deep Learning Sub-Models for Hybrid Numerical Modeling Systems
+authors:
+- Said Ouala
+- Bertrand Chapron
+- Fabrice Collard
+- Lucile Gaultier
+- Ronan Fablet
+date: '2023-11-17'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2311.10665'
+links:
+  paper: https://arxiv.org/abs/2311.10665
+  pdf: https://arxiv.org/pdf/2311.10665
+topic: hybrid-parameterization
+topics:
+- data-assimilation
+type: model
+method:
+- physics-constrained
+data:
+- other
+status: research
+summary: Proposes EGA, an Euler gradient approximation that trains neural sub-models end-to-end inside
+  non-differentiable hybrid numerical models, tested on ocean-atmosphere dynamics.
+abstract: Artificial intelligence and deep learning are currently reshaping numerical simulation frameworks
+  by introducing new modeling capabilities. These frameworks are extensively investigated in the context
+  of model correction and parameterization where they demonstrate great potential and often outperform
+  traditional physical models. Most of these efforts in defining hybrid dynamical systems follow {offline}
+  learning strategies in which the neural parameterization (called here sub-model) is trained to output
+  an ideal correction. Yet, these hybrid models can face hard limitations when defining what should be
+  a relevant sub-model response that would translate into a good forecasting performance. End-to-end learning
+  schemes, also referred to as online learning, could address such a shortcoming by allowing the deep
+  learning sub-models to train on historical data. However, defining end-to-end training schemes for the
+  calibration of neural sub-models in hybrid systems requires working with an optimization problem that
+  involves the solver of the physical equations. Online learning methodologies thus require the numerical
+  model to be differentiable, which is not the case for most modeling systems. To overcome this difficulty
+  and bypass the differentiability challenge of physical models, we present an efficient and practical
+  online learning approach for hybrid systems. The method, called EGA for Euler Gradient Approximation,
+  assumes an additive neural correction to the physical model, and an explicit Euler approximation of
+  the gradients. We demonstrate that the EGA converges to the exact gradients in the limit of infinitely
+  small time steps. Numerical experiments are performed on various case studies, including prototypical
+  ocean-atmosphere dynamics. Results show significant improvements over offline learning, highlighting
+  the potential of end-to-end online learning for hybrid modeling.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

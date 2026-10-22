@@ -1,0 +1,59 @@
+id: arxiv-2402.06542
+title: Improving forecasts of precipitation extremes over Northern and Central Italy using machine learning
+authors:
+- Federico Grazzini
+- Joshua Dorrington
+- Christian M. Grams
+- George C. Craig
+- Linus Magnusson
+- Frederic Vitart
+date: '2024-02-09'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2402.06542'
+  openalex: W4391767020
+links:
+  paper: https://arxiv.org/abs/2402.06542
+  pdf: https://arxiv.org/pdf/2402.06542
+orgs:
+- ecmwf
+- kit
+topic: extremes-hazards
+topics:
+- post-processing
+type: application
+method:
+- classical-ml
+timescale:
+- medium
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: operational
+summary: A random forest pipeline (MaLCoX) identifies synoptic conditions for precipitation extremes over
+  Northern and Central Italy and runs daily at ARPAE Emilia-Romagna.
+abstract: The accurate prediction of intense precipitation events is one of the main objectives of operational
+  weather services. This task is even more relevant nowadays, with the rapid progression of global warming
+  which intensifies these events. Numerical weather prediction models have improved continuously over
+  time, providing uncertainty estimation with dynamical ensembles. However, direct precipitation forecasting
+  is still challenging. Greater availability of machine learning tools paves the way to a hybrid forecasting
+  approach, with the optimal combination of physical models, event statistics, and user-oriented post-processing.
+  Here we describe a specific chain, based on a random forest pipeline, specialised in recognizing favourable
+  synoptic conditions leading to precipitation extremes and subsequently classifying extremes into predefined
+  types. The application focuses on Northern and Central Italy, taken as a testbed region, but is seamlessly
+  extensible to other regions and timescales. The system is called MaLCoX (Machine Learning model predicting
+  Conditions for eXtreme precipitation) and is running daily at the Italian regional weather service of
+  ARPAE Emilia-Romagna. MalCoX has been trained with the ARCIS gridded high-resolution precipitation dataset
+  as the target truth, using the last 20 years of the ECMWF re-forecast dataset as input predictors. We
+  show that, with a long enough training period, the optimal blend of larger-scale information with direct
+  model output improves the probabilistic forecast accuracy of extremes in the medium range. In addition,
+  with specific methods, we provide a useful diagnostic to convey to forecasters the underlying physical
+  storyline which makes a meteorological event extreme.
+significance: 4
+score: 61
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,52 @@
+id: arxiv-2312.16046
+title: 'AdaNAS: Adaptively Post-processing with Self-supervised Neural Architecture Search for Ensemble
+  Rainfall Forecasts'
+authors:
+- Yingpeng Wen
+- Weijiang Yu
+- Fudan Zheng
+- Dan Huang
+- Nong Xiao
+date: '2023-12-26'
+year: 2023
+venue_type: preprint
+ids:
+  arxiv: '2312.16046'
+links:
+  paper: https://arxiv.org/abs/2312.16046
+  pdf: https://arxiv.org/pdf/2312.16046
+topic: post-processing
+type: model
+method:
+- cnn
+- other
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: AdaNAS uses self-supervised neural architecture search to post-process TIGGE ensemble rainfall
+  forecasts, reporting MAE 0.98 mm/day and about 80% gains over manual models.
+abstract: Previous post-processing studies on rainfall forecasts using numerical weather prediction (NWP)
+  mainly focus on statistics-based aspects, while learning-based aspects are rarely investigated. Although
+  some manually-designed models are proposed to raise accuracy, they are customized networks, which need
+  to be repeatedly tried and verified, at a huge cost in time and labor. Therefore, a self-supervised
+  neural architecture search (NAS) method without significant manual efforts called AdaNAS is proposed
+  in this study to perform rainfall forecast post-processing and predict rainfall with high accuracy.
+  In addition, we design a rainfall-aware search space to significantly improve forecasts for high-rainfall
+  areas. Furthermore, we propose a rainfall-level regularization function to eliminate the effect of noise
+  data during the training. Validation experiments have been performed under the cases of \emph{None},
+  \emph{Light}, \emph{Moderate}, \emph{Heavy} and \emph{Violent} on a large-scale precipitation benchmark
+  named TIGGE. Finally, the average mean-absolute error (MAE) and average root-mean-square error (RMSE)
+  of the proposed AdaNAS model are 0.98 and 2.04 mm/day, respectively. Additionally, the proposed AdaNAS
+  model is compared with other neural architecture search methods and previous studies. Compared results
+  reveal the satisfactory performance and superiority of the proposed AdaNAS model in terms of precipitation
+  amount prediction and intensity classification. Concretely, the proposed AdaNAS model outperformed previous
+  best-performing manual methods with MAE and RMSE improving by 80.5\% and 80.3\%, respectively.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

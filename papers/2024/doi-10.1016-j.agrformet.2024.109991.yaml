@@ -1,0 +1,56 @@
+id: doi-10.1016-j.agrformet.2024.109991
+title: Compiling an hourly gridded dataset for surface air temperature at 50-m resolution using radiative
+  cooling scale and numerical weather prediction model outputs
+authors:
+- Hideki Ueyama
+date: '2024-04-06'
+year: 2024
+venue: Agricultural and Forest Meteorology
+venue_type: journal
+ids:
+  doi: 10.1016/j.agrformet.2024.109991
+  openalex: W4394018992
+links:
+  paper: https://doi.org/10.1016/j.agrformet.2024.109991
+topic: post-processing
+topics:
+- downscaling
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: pre-operational
+summary: Produces 50 m hourly air temperature grids by correcting global spectral model errors with regression;
+  stepwise regression beats lasso, random forest, SVR and DNN.
+abstract: 'Meteorological data are essential components of decision-making systems for agriculture. Fine-resolution
+  meteorological datasets are important where crops are grown in hilly areas with variable microclimates.
+  A method for compiling daily surface air temperature (SAT) with 50 m resolution was previously developed.
+  The compiled daily air temperature forecasts are available to farmers who produce Ujicha, tea via a
+  web application. However, the complex terrain affects the accuracy of these forecasts. Our goal was
+  to develop a practical system to provide hourly SAT data with 50 m resolution for a day-to-day decision-making
+  system for agriculture. We applied two methods: a method for developing forecast models to forecast
+  potential temperature differences between each grid and an observation site to compile 50 m resolution
+  grid data; and a method for correcting SAT differences between the global spectral model output and
+  observations (referred to as GSM_error). In both these methods, SAT was continuously forecast using
+  the radiative cooling scale (RCS) computed near a public observation site. The RCS is a meteorological
+  factor defined as the difference in potential temperature between an upper air pressure level and that
+  at ground level. Forecast models for GSM_error were developed from observation data using a stepwise
+  multiple regression (SMR), with geographic factors as independent variables in each group classified
+  by the RCS. Statistical techniques were used for observation data to develop forecast models using machine
+  learning, including lasso, ridge, random forest, support vector and deep neural network regression techniques.
+  The SMR produced better forecast models for GSM_error than the other techniques. We found that SMR was
+  better because it selected features relevant to GSM_error compared with machine learning, which fitted
+  all features. Our grid data were compiled for hourly SAT with 50 m resolution and had a root mean square
+  error of 1.67 °C.'
+significance: 2
+cited_by: 4
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill
