@@ -71,13 +71,33 @@ jobs:
           END: ${{ inputs.end }}
           MAX_MONTHS: ${{ inputs.max_months }}
         run: |
+          # Save the data to the branch after every chunk, so a failure loses at most one chunk.
+          checkpoint() {
+            git add -A -- $(ls -d papers parked state 2>/dev/null)
+            git diff --cached --quiet && return 0
+            n=$(git diff --cached --name-only --diff-filter=A -- papers | wc -l | tr -d ' ')
+            git commit -q -m "Backfill ($TASK$1): +$n papers"
+            git push -q origin backfill
+          }
           case "$TASK" in
             seed)     uv run ml4wx seed config/seeds.json ;;
-            backfill) uv run ml4wx backfill --start "$START" ${END:+--end "$END"} --max-months "$MAX_MONTHS" --max-minutes 300 ;;
+            backfill)
+              deadline=$((SECONDS + 300 * 60))
+              done_months=0
+              while [ "$SECONDS" -lt "$deadline" ] && [ "$done_months" -lt "$MAX_MONTHS" ]; do
+                before=$(cat state/backfill.json 2>/dev/null || echo "[]")
+                uv run ml4wx backfill --start "$START" ${END:+--end "$END"} --max-months 6 \
+                  --max-minutes $(( (deadline - SECONDS) / 60 ))
+                after=$(cat state/backfill.json 2>/dev/null || echo "[]")
+                checkpoint " $(python3 -c 'import json,sys; d=json.loads(sys.argv[1]); print(d[-1] if d else "")' "$after")"
+                [ "$before" = "$after" ] && break   # nothing new: done, or months keep failing
+                done_months=$((done_months + 6))
+              done ;;
             snowball) uv run ml4wx snowball --max-minutes 300 ;;
             enrich)   uv run ml4wx enrich ;;
             judge)    uv run ml4wx judge ;;
           esac
+          checkpoint ""
 
       - name: Export, commit, push, open PR
         if: always()
@@ -85,12 +105,14 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           TASK: ${{ inputs.task }}
         run: |
+          # Data first, so a failing export cannot lose it.
+          git add -A -- $(ls -d papers parked state 2>/dev/null)
+          git diff --cached --quiet || { git commit -q -m "Backfill ($TASK): data"; git push -q origin backfill; }
           uv run ml4wx export
           uv run ml4wx validate || echo "::warning::validation errors, see log"
           git add -A
           if git diff --cached --quiet; then echo "Nothing new."; exit 0; fi
-          n=$(git diff --cached --name-only --diff-filter=A -- papers | wc -l | tr -d ' ')
-          git commit -q -m "Backfill ($TASK): +$n papers"
+          git commit -q -m "Backfill ($TASK): export README, lists, BibTeX, CSV"
           git push -q origin backfill
           if [ -z "$(gh pr list --head backfill --state open --json url -q '.[0].url')" ]; then
             gh pr create --base main --head backfill --title "Backfill: historical papers" \

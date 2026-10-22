@@ -21,6 +21,15 @@ def test_archive_roundtrip_and_find(root):
     assert b.find(make_candidate(ids=Ids(arxiv="2301.00001"), title="Something else entirely about rain")) is None
 
 
+def test_paper_without_authors_roundtrips_and_bad_file_is_skipped(root):
+    a = Archive()
+    a.save_paper(make_paper(authors=[]))
+    (root / "papers" / "2022" / "broken.yaml").write_text("id: broken\ntitle: x\n")
+    b = Archive()
+    assert b.papers["arxiv-2212.12794"].authors == []
+    assert [p.name for p, _ in b.invalid] == ["broken.yaml"]
+
+
 def test_park_and_reject_persist(root):
     a = Archive()
     a.park(make_candidate(ids=Ids(arxiv="2301.00001"), title="Ocean model"), "ocean-seaice")

@@ -55,7 +55,7 @@ class Paper(BaseModel):
 
     id: str
     title: str
-    authors: list[str]
+    authors: list[str] = []  # empty for a few records; the YAML then has no authors key
     date: dt.date
     year: int
     venue: str | None = None

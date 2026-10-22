@@ -6,6 +6,10 @@ def test_norm_arxiv():
     assert ids.norm_arxiv("https://doi.org/10.48550/arXiv.2212.12794") == "2212.12794"
     assert ids.norm_arxiv("physics/0601001v1") == "physics/0601001"
     assert ids.norm_arxiv("nothing here") is None
+    # Journal DOIs and impossible months are not arXiv ids
+    assert ids.norm_arxiv("https://doi.org/10.1098/rsta.2020.0782") is None
+    assert ids.norm_arxiv("1098.0782") is None
+    assert ids.norm_arxiv("arXiv:2410.12345v3") == "2410.12345"
 
 
 def test_norm_doi():
