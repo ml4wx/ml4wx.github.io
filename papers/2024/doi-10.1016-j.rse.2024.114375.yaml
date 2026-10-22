@@ -1,0 +1,58 @@
+id: doi-10.1016-j.rse.2024.114375
+title: Deep residual fully connected network for GNSS-R wind speed retrieval and its interpretation
+authors:
+- Hao Du
+- Weiqiang Li
+- Estel Cardellach
+- Serni Ribó
+- Antonio Rius
+- Yang Nan
+date: '2024-08-22'
+year: 2024
+venue: Remote Sensing of Environment
+venue_type: journal
+ids:
+  doi: 10.1016/j.rse.2024.114375
+  openalex: W4401743433
+links:
+  paper: https://doi.org/10.1016/j.rse.2024.114375
+topic: observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- global
+data:
+- satellite
+- era5
+status: research
+summary: Deep residual fully connected network retrieves GNSS-R ocean wind speed with 1.03 m/s RMSE against
+  ERA5, improving CYGNSS V1.2 by 6%, with interpretation analysis.
+abstract: 'Global navigation satellite system reflectometry (GNSS-R) has emerged as a new technique to
+  provide L-band bistatic measurements for ocean wind speed retrieval, in which traditional geophysical
+  model functions (GMFs) or shallow neural networks (NNs) are normally used. However, it is still challenging
+  to identify and consider all relevant parameters in the GMF. Meanwhile, NN models face limitations due
+  to the degradation problem, which restricts their depth and consequently their performance. Furthermore,
+  the interpretation of NN models for GNSS-R wind retrieval is another issue. To this end, we propose
+  a residual fully connected network (RFCN) fusing auxiliary information such as geometry, receiver gain,
+  significant wave height, and current speed with track-wise corrected σ0. Referred to the European Centre
+  for Medium-Range Weather Forecast (ECMWF) ERA5 wind product, the root mean square error (RMSE) and bias
+  of RFCN winds are 1.031 m/s and -0.0003 m/s, respectively, with a 6% improvement in RMSE compared to
+  debiased NOAA Cyclone Global Navigation Satellite System (CYGNSS) Version 1.2 (V1.2) wind speed retrieval.
+  Moreover, in an intertropical convergence zone (ITCZ) area with large current speeds, the RMSE and bias
+  are 1.006 m/s and -0.022 m/s: an improvement of 11.6% and 87.9% compared to debiased NOAA CYGNSS V1.2
+  winds. The bias ‘strips’ in these areas are nearly eliminated. Daily averaged error analyses also demonstrate
+  that RFCN winds are more robust and consistent with ECMWF winds. For wind speeds larger than 20 m/s,
+  referred to Soil Moisture Active Passive (SMAP) Level 3 final wind products, the RMSE and bias of fine-tuning
+  RFCN (FT_RFCN) winds are reduced by 25.7% and 91.5% compared to NOAA winds. Finally, the RMSE and bias
+  of retrievals in tropical cyclones, measured by Stepped Frequency Microwave Radiometer (SFMR) during
+  2021-2022, reveal an improvement of 3.5% and 21.2% compared to NOAA winds. Through SHapley Additive
+  exPlanations (SHAP) models developed for RFCN and FT_RFCN, the contribution of each feature is quantitatively
+  evaluated, while providing insights into their interactions within the ‘black-box’ NN models with clear
+  physical meanings.'
+significance: 4
+cited_by: 35
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

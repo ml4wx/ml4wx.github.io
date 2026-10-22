@@ -1,0 +1,54 @@
+id: doi-10.1016-j.renene.2024.121055
+title: Hybrid solar irradiance nowcasting and forecasting with the SCOPE method and convolutional neural
+  networks
+authors:
+- Zhouyi Liao
+- Carlos F.M. Coimbra
+date: '2024-07-22'
+year: 2024
+venue: Renewable Energy
+venue_type: journal
+ids:
+  doi: 10.1016/j.renene.2024.121055
+  openalex: W4400871093
+links:
+  paper: https://doi.org/10.1016/j.renene.2024.121055
+orgs:
+- tsinghua-university
+topic: nowcasting
+topics:
+- applications-impacts
+type: model
+method:
+- cnn
+- rnn
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- satellite
+- stations
+status: research
+summary: CNNs with SCOPE cloud-property features nowcast surface solar irradiance from GOES imagery, cutting
+  RMSE from 68.9 to 44.7 W/m².
+abstract: 'We use a full year (2018) of GOES-R satellite data to produce 5-minute resolved information
+  on cloud coverage for 7 Surface Radiation Budget Network (SURFRAD). The remote sensing images are then
+  processed using the Spectral Cloud Optical Property Estimation (SCOPE) method in conjunction with Convolution
+  Neural Networks (CNNs) for nowcasts and 1-hour ahead forecasts. We propose and compare two CNN based
+  models for GHI now-casting with a 1-hour forecast horizon and a time resolution that processes data
+  every 5 minutes: one enhanced with the SCOPE method for cloud estimation and another without it. The
+  inclusion of SCOPE-derived information significantly improves model performance, yielding an average
+  RMSE of 44.7 versus 68.9 W/m 2 for the model without SCOPE information. The present work underscores
+  the efficacy of even basic CNNs in interpreting satellite imagery combined with atmospheric models of
+  the atmosphere to estimate ground irradiance accurately. The hybrid SCOPE-CNN model outperforms the
+  basic CNN model that relies solely on 10 longwave channels, indicating the relevance of SCOPE’s physical
+  features in enhancing predictions across various solar micro-climates. Further advancements using Convolutional
+  Long Short-Time Memory (ConvLSTM) schemes lead to the development of a SCOPE-CNN-ConvLSTM model, showcasing
+  significant enhancements over smart persistence across all conditions.'
+significance: 3
+cited_by: 17
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

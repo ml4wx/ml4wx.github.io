@@ -1,0 +1,59 @@
+id: doi-10.3390-rs16193597
+title: 'MAFNet: Multimodal Asymmetric Fusion Network for Radar Echo Extrapolation'
+authors:
+- Yanle Pei
+- Qian Li
+- Yayi Wu
+- Xuan Peng
+- Shiqing Guo
+- Chengzhi Ye
+- Tianying Wang
+date: '2024-09-26'
+year: 2024
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs16193597
+  openalex: W4402859986
+links:
+  paper: https://doi.org/10.3390/rs16193597
+orgs:
+- cma
+topic: nowcasting
+type: model
+method:
+- other
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- satellite
+- stations
+status: research
+summary: Multimodal fusion of radar with satellite and ground observations improves radar echo extrapolation,
+  gaining 1.9% CSI on MeteoNet and 4.8% on RAIN-F.
+abstract: Radar echo extrapolation (REE) is a crucial method for convective nowcasting, and current deep
+  learning (DL)-based methods for REE have shown significant potential in severe weather forecasting tasks.
+  Existing DL-based REE methods use extensive historical radar data to learn the evolution patterns of
+  echoes, they tend to suffer from low accuracy. This is because data of radar modality face difficulty
+  adequately representing the state of weather systems. Inspired by multimodal learning and traditional
+  numerical weather prediction (NWP) methods, we propose a Multimodal Asymmetric Fusion Network (MAFNet)
+  for REE, which uses data from radar modality to model echo evolution, and data from satellite and ground
+  observation modalities to model the background field of weather systems, collectively guiding echo extrapolation.
+  In the MAFNet, we first extract overall convective features through a global shared encoder (GSE), followed
+  by two branches of local modality encoder (LME) and local correlation encoders (LCEs) that extract convective
+  features from radar, satellite, and ground observation modalities. We employ an multimodal asymmetric
+  fusion module (MAFM) to fuse multimodal features at different scales and feature levels, enhancing radar
+  echo extrapolation performance. Additionally, to address the temporal resolution differences in multimodal
+  data, we design a time alignment module based on dynamic time warping (DTW), which aligns multimodal
+  feature sequences temporally. Experimental results demonstrate that compared to state-of-the-art (SOTA)
+  models, the MAFNet achieves average improvements of 1.86% in CSI and 3.18% in HSS on the MeteoNet dataset,
+  and average improvements of 4.84% in CSI and 2.38% in HSS on the RAIN-F dataset.
+significance: 3
+cited_by: 2
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

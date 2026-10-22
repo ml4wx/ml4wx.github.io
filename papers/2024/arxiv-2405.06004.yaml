@@ -1,0 +1,49 @@
+id: arxiv-2405.06004
+title: 'EWMoE: An effective model for global weather forecasting with mixture-of-experts'
+authors:
+- Lihao Gan
+- Xin Man
+- Chenghong Zhang
+- Jie Shao
+date: '2024-05-09'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2405.06004'
+links:
+  paper: https://arxiv.org/abs/2405.06004
+  pdf: https://arxiv.org/pdf/2405.06004
+  code: https://github.com/Tomoyi/EWMoE
+topic: global-medium-range
+type: model
+method:
+- transformer
+- other
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: EWMoE adds a mixture-of-experts layer and 3D position embedding to a global forecaster, matching
+  Pangu-Weather and GraphCast skill with only two years of ERA5 training data.
+abstract: 'Weather forecasting is a crucial task for meteorologic research, with direct social and economic
+  impacts. Recently, data-driven weather forecasting models based on deep learning have shown great potential,
+  achieving superior performance compared with traditional numerical weather prediction methods. However,
+  these models often require massive training data and computational resources. In this paper, we propose
+  EWMoE, an effective model for accurate global weather forecasting, which requires significantly less
+  training data and computational resources. Our model incorporates three key components to enhance prediction
+  accuracy: 3D absolute position embedding, a core Mixture-of-Experts (MoE) layer, and two specific loss
+  functions. We conduct our evaluation on the ERA5 dataset using only two years of training data. Extensive
+  experiments demonstrate that EWMoE outperforms current models such as FourCastNet and ClimaX at all
+  forecast time, achieving competitive performance compared with the state-of-the-art models Pangu-Weather
+  and GraphCast in evaluation metrics such as Anomaly Correlation Coefficient (ACC) and Root Mean Square
+  Error (RMSE). Additionally, ablation studies indicate that applying the MoE architecture to weather
+  forecasting offers significant advantages in improving accuracy and resource efficiency. Code is available
+  at https://github.com/Tomoyi/EWMoE.'
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

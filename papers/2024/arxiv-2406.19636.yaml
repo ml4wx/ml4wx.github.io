@@ -1,0 +1,50 @@
+id: arxiv-2406.19636
+title: Enforcing Equity in Neural Climate Emulators
+authors:
+- William Yik
+- Sam J. Silva
+date: '2024-06-28'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2406.19636'
+links:
+  paper: https://arxiv.org/abs/2406.19636
+  pdf: https://arxiv.org/pdf/2406.19636
+topic: climate-emulation
+topics:
+- benchmarks-data-eval
+type: model
+method:
+- physics-constrained
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: A custom fairness loss penalizes unequal climate emulator skill across Human Development Index
+  groups, trading small accuracy losses for more equitable predictions.
+abstract: Neural network emulators have become an invaluable tool for a wide variety of climate and weather
+  prediction tasks. While showing incredibly promising results, these networks do not have an inherent
+  ability to produce equitable predictions. That is, they are not guaranteed to provide a uniform quality
+  of prediction along any particular class or group of people. This potential for inequitable predictions
+  motivates the need for explicit representations of fairness in these neural networks. To that end, we
+  draw on methods for enforcing analytical physical constraints in neural networks to bias networks towards
+  more equitable predictions. We demonstrate the promise of this methodology using the task of climate
+  model emulation. Specifically, we propose a custom loss function which punishes emulators with unequal
+  quality of predictions across any prespecified regions or category, here defined using human development
+  index (HDI). This loss function weighs a standard loss metric such as mean squared error against another
+  metric which captures inequity along the equity category (HDI), allowing us to adjust the priority of
+  each term before training. Importantly, the loss function does not specify a particular definition of
+  equity to bias the neural network towards, opening the door for custom fairness metrics. Our results
+  show that neural climate emulators trained with our loss function provide more equitable predictions
+  and that the equity metric improves with greater weighting in the loss function. We empirically demonstrate
+  that while there is a tradeoff between accuracy and equity when prioritizing the latter during training,
+  an appropriate selection of the equity priority hyperparameter can minimize loss of performance.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,51 @@
+id: arxiv-2409.13934
+title: On the Extrapolation of Generative Adversarial Networks for downscaling precipitation extremes
+  in warmer climates
+authors:
+- Neelesh Rampal
+- Peter B. Gibson
+- Steven Sherwood
+- Gab Abramowitz
+date: '2024-09-20'
+year: 2024
+venue: Geophysical Research Letters, 51, e2024GL112492 (2024)
+venue_type: journal
+ids:
+  arxiv: '2409.13934'
+  doi: 10.1029/2024gl112492
+links:
+  paper: https://arxiv.org/abs/2409.13934
+  pdf: https://arxiv.org/pdf/2409.13934
+  code: https://github.com/nram812/On-the-Extrapolation-of-Generative-Adversarial-Networks-for-downscaling-precipitation-extremes
+topic: downscaling
+topics:
+- extremes-hazards
+type: evaluation
+method:
+- gan-vae
+- cnn
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+status: research
+summary: GANs downscaling RCM precipitation extrapolate to warmer climates better than a CNN baseline,
+  capturing 97% versus 65% of the extreme precipitation warming signal when trained on future climate.
+abstract: While deep-learning downscaling algorithms can generate fine-scale climate projections cost-effectively,
+  it is still unclear how well they will extrapolate to unobserved climates. We assess the extrapolation
+  capabilities of a deterministic Convolutional Neural Network baseline and a Generative Adversarial Network
+  (GAN) built with this baseline, trained to predict daily precipitation simulated by a Regional Climate
+  Model (RCM). Both approaches emulate future changes in annual mean precipitation well, even when trained
+  on historical data, though training on a future climate improves performance. For extreme precipitation
+  (99.5th percentile), RCM simulations predict a robust end-of-century increase with future warming (~5.8%/°C
+  on average from five simulations). When trained on a future climate, GANs capture 97% of the warming-driven
+  increase in extreme precipitation compared to 65% in a deterministic baseline. Even GANs trained historically
+  capture 77% of this increase. Overall, GANs offer better generalization for downscaling extremes, which
+  is important in applications relying on historical data.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

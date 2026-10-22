@@ -1,0 +1,51 @@
+id: arxiv-2410.21657
+title: 'A-UTE: Advection Informed, Uncertainty Aware Temperature Emulator'
+authors:
+- Hira Saleem
+- Flora Salim
+- Cormac Purcell
+date: '2024-10-29'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2410.21657'
+  openalex: W4404342103
+links:
+  paper: https://arxiv.org/abs/2410.21657
+  pdf: https://arxiv.org/pdf/2410.21657
+topic: climate-emulation
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- other
+- physics-constrained
+timescale:
+- climate
+- decadal
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: A-UTE combines an advection-consistent ODE with a learned neural SDE to emulate 10-year temperature
+  fields across 20 climate models with stable roll-outs and uncertainty.
+abstract: 'Physics-based Earth system models (ESMs) are essential for attributing climate change and generating
+  scenario projections, yet their reliance on high-resolution numerical integration makes multi-decadal
+  experiments expensive. In parallel, deep learning has delivered strong gains in short-range weather
+  forecasting; however, auto-regressive roll-outs can accumulate error and become unstable when extended
+  to decade-scale climate emulation. We introduce A-UTE: Advection Informed, Uncertainty Aware Temperature
+  Emulator, aimed at stable multi-year emulation across heterogeneous climate models and grid resolutions.
+  A-UTE is trained on various physics-based models at varying spatial resolutions to emulate temperature
+  fields over a 10-year horizon. A-UTE formulates climate emulation as a forward-time stochastic dynamical
+  system. We propose an auto-regressive ODE-SDE surrogate in which transport dynamics are constrained
+  by an advection consistent ODE component, while a learned neural SDE term models coarse-grained variability
+  and cross-model discrepancy at monthly resolution. We train A-UTE under negative log-likelihood objective
+  for principled uncertainty estimates and probabilistic evaluation. Experiments across 20 climate models
+  show that A-UTE improves long roll-out stability and accuracy relative to relevant baselines, advancing
+  data-driven climate emulation with explicit physical structure and uncertainty-aware predictions.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,52 @@
+id: arxiv-2409.16319
+title: A Generative Diffusion Model for Probabilistic Ensembles of Precipitation Maps Conditioned on Multisensor
+  Satellite Observations
+authors:
+- Clement Guilloteau
+- Gavin Kerrigan
+- Kai Nelson
+- Giosue Migliorini
+- Padhraic Smyth
+- Runze Li
+- Efi Foufoula-Georgiou
+date: '2024-09-18'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2409.16319'
+links:
+  paper: https://arxiv.org/abs/2409.16319
+  pdf: https://arxiv.org/pdf/2409.16319
+topic: observations-remote-sensing
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+spatial:
+- regional
+data:
+- satellite
+- radar
+- stations
+status: research
+summary: Conditional diffusion model generates 128-member ensembles of 5-km hourly precipitation maps
+  from GOES and DMSP satellite data, with 0.82 correlation to gauge-radar reference.
+abstract: A generative diffusion model is used to produce probabilistic ensembles of precipitation intensity
+  maps at the 1-hour 5-km resolution. The generation is conditioned on infrared and microwave radiometric
+  measurements from the GOES and DMSP satellites and is trained with merged ground radar and gauge data
+  over southeastern United States. The generated precipitation maps reproduce the spatial autocovariance
+  and other multiscale statistical properties of the gauge-radar reference fields on average. Conditioning
+  the generation on the satellite measurements allows us to constrain the magnitude and location of each
+  generated precipitation feature. The mean of the 128- member ensemble shows high spatial coherence with
+  the reference fields with 0.82 linear correlation between the two. On average, the coherence between
+  any two ensemble members is approximately the same as the coherence between any ensemble member and
+  the ground reference, attesting that the ensemble dispersion is a proper measure of the estimation uncertainty.
+  From the generated ensembles we can easily derive the probability of the precipitation intensity exceeding
+  any given intensity threshold, at the 5-km resolution of the generation or at any desired aggregated
+  resolution.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

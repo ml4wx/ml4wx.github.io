@@ -1,0 +1,50 @@
+id: arxiv-2407.08556
+title: Enhancing 3D Planetary Atmosphere Simulations with a Surrogate Radiative Transfer Model
+authors:
+- Tara P. A. Tahseen
+- João M. Mendonça
+- Kai Hou Yip
+- Ingo P. Waldmann
+date: '2024-07-11'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2407.08556'
+  doi: 10.1093/mnras/stae2461
+links:
+  paper: https://arxiv.org/abs/2407.08556
+  pdf: https://arxiv.org/pdf/2407.08556
+topic: hybrid-parameterization
+type: model
+method:
+- rnn
+spatial:
+- global
+data:
+- other
+status: research
+summary: An RNN surrogate replaces radiative transfer in a GCM for the Venusian atmosphere, giving 147x
+  GPU speed-up with above 99% accuracy relative to the original model.
+abstract: This work introduces an approach to enhancing the computational efficiency of 3D atmospheric
+  simulations by integrating a machine-learned surrogate model into the OASIS global circulation model
+  (GCM). Traditional GCMs, which are based on repeatedly numerically integrating physical equations governing
+  atmospheric processes across a series of time-steps, are time-intensive, leading to compromises in spatial
+  and temporal resolution of simulations. This research improves upon this limitation, enabling higher
+  resolution simulations within practical timeframes. Speeding up 3D simulations holds significant implications
+  in multiple domains. Firstly, it facilitates the integration of 3D models into exoplanet inference pipelines,
+  allowing for robust characterisation of exoplanets from a previously unseen wealth of data anticipated
+  from JWST and post-JWST instruments. Secondly, acceleration of 3D models will enable higher resolution
+  atmospheric simulations of Earth and Solar System planets, enabling more detailed insights into their
+  atmospheric physics and chemistry. Our method replaces the radiative transfer module in OASIS with a
+  recurrent neural network-based model trained on simulation inputs and outputs. Radiative transfer is
+  typically one of the slowest components of a GCM, thus providing the largest scope for overall model
+  speed-up. The surrogate model was trained and tested on the specific test case of the Venusian atmosphere,
+  to benchmark the utility of this approach in the case of non-terrestrial atmospheres. This approach
+  yields promising results, with the surrogate-integrated GCM demonstrating above 99.0% accuracy and 147
+  factor GPU speed-up of the entire simulation compared to using the matched original GCM under Venus-like
+  conditions.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

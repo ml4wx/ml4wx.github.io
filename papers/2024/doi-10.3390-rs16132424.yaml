@@ -1,0 +1,58 @@
+id: doi-10.3390-rs16132424
+title: A GRNN-Based Model for ERA5 PWV Adjustment with GNSS Observations Considering Seasonal and Geographic
+  Variations
+authors:
+- Haoyun Pang
+- Lulu Zhang
+- Wen Liu
+- Xin Wang
+- Yuefeng Wang
+- Liangke Huang
+date: '2024-07-01'
+year: 2024
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs16132424
+  openalex: W4400197171
+links:
+  paper: https://doi.org/10.3390/rs16132424
+  pdf: https://www.mdpi.com/2072-4292/16/13/2424/pdf?version=1720601534
+topic: post-processing
+topics:
+- observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- era5
+- stations
+status: research
+summary: General Regression Neural Network corrects ERA5 precipitable water vapour against GNSS in China,
+  cutting RMSE to about 0.6–1 mm, better than a linear model.
+abstract: 'Precipitation water vapor (PWV) is an important parameter in numerical weather forecasting
+  and climate research. However, existing PWV adjustment models lack comprehensive consideration of seasonal
+  and geographic factors. This study utilized the General Regression Neural Network (GRNN) algorithm and
+  Global Navigation Satellite System (GNSS) PWV in China to construct and evaluate European Centre for
+  Medium-Range Weather Forecasts (ECMWF) Atmospheric Reanalysis (ERA5) PWV adjustment models for various
+  seasons and subregions based on meteorological parameters (GMPW model) and non-meteorological parameters
+  (GFPW model). A linear model (GLPW model) was established for model accuracy comparison. The results
+  show that: (1) taking GNSS PWV as a reference, the Bias and root mean square error (RMSE) of the GLPW,
+  GFPW, and GMPW models are about 0/1 mm, which better weakens the systematic error of ERA5 PWV. The overall
+  Bias of the GLPW, GFPW, and GMPW models in the Northwest (NWC), North China (NC), Tibetan Plateau (TP),
+  and South China (SC) subregions is approximately 0 mm after adjustment. The adjusted overall RMSE of
+  the GLPW, GFPW, and GMPW models of the four subregions are 0.81/0.71/0.62 mm, 1.15/0.95/0.77 mm, 1.66/1.26/1.05
+  mm, and 2.11/1.35/0.96 mm, respectively. (2) The accuracy of the three models is tested using GNSS PWV,
+  which is not involved in the modeling. The adjusted overall RMSE of the GLPW, GFPW, and GMPW models
+  in the four subregions are 0.89/0.85/0.83 mm, 1.61/1.58/1.27 mm, 2.11/1.75/1.68 mm and 3.65/2.48/1.79
+  mm, respectively. As a result, the GFPW and GMPW models have better accuracy in adjusting ERA5 PWV than
+  the linear model GLPW. Therefore, the GFPW and GMPW models can effectively contribute to water vapor
+  monitoring and the integration of multiple PWV datasets.'
+significance: 3
+cited_by: 8
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

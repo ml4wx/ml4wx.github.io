@@ -1,0 +1,66 @@
+id: arxiv-2407.15586
+title: Data driven weather forecasts trained and initialised directly from observations
+authors:
+- Anthony McNally
+- Christian Lessig
+- Peter Lean
+- Eulalie Boucher
+- Mihai Alexe
+- Ewan Pinnington
+- Matthew Chantry
+- Simon Lang
+- Chris Burrows
+- Marcin Chrust
+- Florian Pinault
+- Ethel Villeneuve
+- Niels Bormann
+- Sean Healy
+date: '2024-07-22'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2407.15586'
+  openalex: W4406073321
+links:
+  paper: https://arxiv.org/abs/2407.15586
+  pdf: https://arxiv.org/pdf/2407.15586
+topic: data-assimilation
+topics:
+- global-medium-range
+type: model
+method:
+- other
+timescale:
+- short
+spatial:
+- global
+data:
+- stations
+status: research
+summary: Trains a neural network to forecast 12 hours ahead directly from raw surface observations, avoiding
+  reanalysis and analysis products; results are preliminary.
+abstract: Skilful Machine Learned weather forecasts have challenged our approach to numerical weather
+  prediction, demonstrating competitive performance compared to traditional physics-based approaches.
+  Data-driven systems have been trained to forecast future weather by learning from long historical records
+  of past weather such as the ECMWF ERA5. These datasets have been made freely available to the wider
+  research community, including the commercial sector, which has been a major factor in the rapid rise
+  of ML forecast systems and the levels of accuracy they have achieved. However, historical reanalyses
+  used for training and real-time analyses used for initial conditions are produced by data assimilation,
+  an optimal blending of observations with a physics-based forecast model. As such, many ML forecast systems
+  have an implicit and unquantified dependence on the physics-based models they seek to challenge. Here
+  we propose a new approach, training a neural network to predict future weather purely from historical
+  observations with no dependence on reanalyses. We use raw observations to initialise a model of the
+  atmosphere (in observation space) learned directly from the observations themselves. Forecasts of crucial
+  weather parameters (such as surface temperature and wind) are obtained by predicting weather parameter
+  observations (e.g. SYNOP surface data) at future times and arbitrary locations. We present preliminary
+  results on forecasting observations 12-hours into the future. These already demonstrate successful learning
+  of time evolutions of the physical processes captured in real observations. We argue that this new approach,
+  by staying purely in observation space, avoids many of the challenges of traditional data assimilation,
+  can exploit a wider range of observations and is readily expanded to simultaneous forecasting of the
+  full Earth system (atmosphere, land, ocean and composition).
+significance: 5
+cited_by: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

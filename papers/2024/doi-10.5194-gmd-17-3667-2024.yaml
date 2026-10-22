@@ -1,0 +1,54 @@
+id: doi-10.5194-gmd-17-3667-2024
+title: Machine learning parameterization of the multi-scale Kain–Fritsch (MSKF) convection scheme and
+  stable simulation coupled in the Weather Research and Forecasting (WRF) model using WRF–ML v1.0
+authors:
+- Xiaohui Zhong
+- Xing Yu
+- Hao Li
+date: '2024-05-07'
+year: 2024
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-17-3667-2024
+  openalex: W4396705724
+links:
+  paper: https://doi.org/10.5194/gmd-17-3667-2024
+orgs:
+- fudan-university
+topic: hybrid-parameterization
+topics:
+- regional-km-scale
+type: model
+method:
+- rnn
+spatial:
+- regional
+data:
+- km-scale-sim
+status: research
+summary: A Bi-LSTM replaces the multi-scale Kain-Fritsch convection scheme in WRF at 5 km over South China
+  and runs stably when coupled.
+abstract: Abstract. Warm-sector heavy rainfall often occurs along the coast of South China, and it is
+  usually localized and long-lasting, making it challenging to predict. High-resolution numerical weather
+  prediction (NWP) models are increasingly used to better resolve topographic features and forecast such
+  high-impact weather events. However, when the grid spacing becomes comparable to the length scales of
+  convection, known as the gray zone, the turbulent eddies in the atmospheric boundary layer are only
+  partially resolved and parameterized to some extent. Whether using a convection parameterization (CP)
+  scheme in the gray zone remains controversial. Scale-aware CP schemes are developed to enhance the representation
+  of convective transport within the gray zone. The multi-scale Kain-Fritsch (MSKF) scheme includes modifications
+  that allow for its effective implementation at a grid resolution as high as 2 km. In recent years, there
+  has been an increasing application of machine learning (ML) models to various domains of atmospheric
+  sciences, including the replacement of physical parameterizations with ML models. This work proposes
+  a multi-output bidirectional long short-term memory (Bi-LSTM) model as a replace the scale-aware MSKF
+  CP scheme. The Weather Research and Forecast (WRF) model is used to generate training and testing data
+  over South China at a horizontal resolution of 5 km. Furthermore, the WRF model is coupled with the
+  ML based CP scheme and compared with WRF simulations with original MSKF scheme. The results demonstrate
+  that the Bi-LSTM model can achieve high accuracy, indicating the potential use of ML models to substitute
+  the MSKF scheme in the gray zone.
+significance: 4
+cited_by: 11
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

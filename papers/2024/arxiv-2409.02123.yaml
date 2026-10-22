@@ -1,0 +1,56 @@
+id: arxiv-2409.02123
+title: 'PuYun: Medium-Range Global Weather Forecasting Using Large Kernel Attention Convolutional Networks'
+authors:
+- Shengchen Zhu
+- Yiming Chen
+- Peiying Yu
+- Xiang Qu
+- Yuxiao Zhou
+- Yiming Ma
+- Zhizhan Zhao
+- Yukai Liu
+- Hao Mi
+- Bin Wang
+date: '2024-09-01'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2409.02123'
+links:
+  paper: https://arxiv.org/abs/2409.02123
+  pdf: https://arxiv.org/pdf/2409.02123
+topic: global-medium-range
+type: model
+method:
+- cnn
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: PuYun, a large-kernel-attention convolutional cascade, beats GraphCast and FuXi-Short on 10-day
+  forecasts, cutting Z500 RMSE at day 10 to 638 m2/s2 with cascade.
+abstract: Accurate weather forecasting is essential for understanding and mitigating weather-related impacts.
+  In this paper, we present PuYun, an autoregressive cascade model that leverages large kernel attention
+  convolutional networks. The model's design inherently supports extended weather prediction horizons
+  while broadening the effective receptive field. The integration of large kernel attention mechanisms
+  within the convolutional layers enhances the model's capacity to capture fine-grained spatial details,
+  thereby improving its predictive accuracy for meteorological phenomena. We introduce PuYun, comprising
+  PuYun-Short for 0-5 day forecasts and PuYun-Medium for 5-10 day predictions. This approach enhances
+  the accuracy of 10-day weather forecasting. Through evaluation, we demonstrate that PuYun-Short alone
+  surpasses the performance of both GraphCast and FuXi-Short in generating accurate 10-day forecasts.
+  Specifically, on the 10th day, PuYun-Short reduces the RMSE for Z500 to 720 $m^2/s^2$, compared to 732
+  $m^2/s^2$ for GraphCast and 740 $m^2/s^2$ for FuXi-Short. Additionally, the RMSE for T2M is reduced
+  to 2.60 K, compared to 2.63 K for GraphCast and 2.65 K for FuXi-Short. Furthermore, when employing a
+  cascaded approach by integrating PuYun-Short and PuYun-Medium, our method achieves superior results
+  compared to the combined performance of FuXi-Short and FuXi-Medium. On the 10th day, the RMSE for Z500
+  is further reduced to 638 $m^2/s^2$, compared to 641 $m^2/s^2$ for FuXi. These findings underscore the
+  effectiveness of our model ensemble in advancing medium-range weather prediction. Our training code
+  and model will be open-sourced.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

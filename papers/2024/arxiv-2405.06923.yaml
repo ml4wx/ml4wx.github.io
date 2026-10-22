@@ -1,0 +1,53 @@
+id: arxiv-2405.06923
+title: Machine learning disentangles bias causes of shortwave cloud radiative effect in a climate model
+authors:
+- Hongtao Yang
+- Guoxing Chen
+- Wei-Chyung Wang
+- Qing Bao
+- Jiandong Li
+date: '2024-05-11'
+year: 2024
+venue: Geophysical Research Letters, 52 (2025), e2024GL114203
+venue_type: journal
+ids:
+  arxiv: '2405.06923'
+  doi: 10.1029/2024gl114203
+links:
+  paper: https://arxiv.org/abs/2405.06923
+  pdf: https://arxiv.org/pdf/2405.06923
+topic: climate-analysis-attribution
+topics:
+- climate-emulation
+type: evaluation
+method:
+- classical-ml
+spatial:
+- global
+data:
+- cmip
+- satellite
+status: research
+summary: A random forest surrogate of shortwave cloud radiative effect attributes GCM bias to cloud fraction,
+  liquid and ice water paths, and diurnal concurrence in FGOALS-f3-L.
+abstract: Large bias exists in shortwave cloud radiative effect (SWCRE) of general circulation models
+  (GCMs), attributed mainly to the combined effect of cloud fraction and water contents, whose representations
+  in models remain challenging. Here we show an effective machine-learning approach to dissect the individual
+  bias of relevant cloud parameters determining SWCRE. A surrogate model for calculating SWCRE was developed
+  based on random forest using observations and FGOALS-f3-L simulation data of cloud fraction (CFR), cloud-solar
+  concurrence ratio (CSC), cloud liquid and ice water paths (LWP and IWP), TOA upward clear-sky solar
+  flux (SUC), and solar zenith angle. The model, which achieves high determination coefficient > 0.96
+  in the validation phase, was then used to quantify SWCRE bias associated with these parameters following
+  the partial radiation perturbation method. The global-mean SWCRE bias (in W m-2) is contributed by CFR
+  (+5.11), LWP (-6.58), IWP (-1.67), and CSC (+4.38), while SUC plays a minor role; the large CSC contribution
+  highlights the importance of cloud diurnal variation. Regionally, the relative importance varies according
+  to climate regimes. In Tropics, overestimated LWP and IWP exist over lands, while oceans exhibit underestimated
+  CFR and CSC. In contrast, the extratropical lands and oceans have, respectively, too-small CSC and the
+  'too few, too bright' low-level clouds. We thus suggest that machine learning, in addition for developing
+  GCM physical parameterizations, can also be utilized for diagnosing and understanding complex cloud-climate
+  interactions.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

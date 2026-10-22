@@ -1,0 +1,51 @@
+id: arxiv-2410.14103
+title: Extreme Precipitation Nowcasting using Multi-Task Latent Diffusion Models
+authors:
+- Li Chaorong
+- Ling Xudong
+- Yang Qiang
+- Qin Fengqing
+- Huang Yuanyuan
+date: '2024-10-18'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2410.14103'
+  openalex: W4404312771
+links:
+  paper: https://arxiv.org/abs/2410.14103
+  pdf: https://arxiv.org/pdf/2410.14103
+topic: nowcasting
+topics:
+- extremes-hazards
+type: model
+method:
+- diffusion
+- gan-vae
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Multi-task latent diffusion splits MRMS radar into intensity components, improving extreme precipitation
+  nowcast CSI by 13-26% over prior methods.
+abstract: Deep learning models have achieved remarkable progress in precipitation prediction. However,
+  they still face significant challenges in accurately capturing spatial details of radar images, particularly
+  in regions of high precipitation intensity. This limitation results in reduced spatial localization
+  accuracy when predicting radar echo images across varying precipitation intensities. To address this
+  challenge, we propose an innovative precipitation prediction approach termed the Multi-Task Latent Diffusion
+  Model (MTLDM). The core idea of MTLDM lies in the recognition that precipitation radar images represent
+  a combination of multiple components, each corresponding to different precipitation intensities. Thus,
+  we adopt a divide-and-conquer strategy, decomposing radar images into several sub-images based on their
+  precipitation intensities and individually modeling these components. During the prediction stage, MTLDM
+  integrates these sub-image representations by utilizing a trained latent-space rainfall diffusion model,
+  followed by decoding through a multi-task decoder to produce the final precipitation prediction. Experimental
+  evaluations conducted on the MRMS dataset demonstrate that the proposed MTLDM method surpasses state-of-the-art
+  techniques, achieving a Critical Success Index (CSI) improvement of 13-26%.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

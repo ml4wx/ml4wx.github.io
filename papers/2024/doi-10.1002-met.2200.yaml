@@ -1,0 +1,61 @@
+id: doi-10.1002-met.2200
+title: Machine learning bias correction and downscaling of urban heatwave temperature predictions from
+  kilometre to hectometre scale
+authors:
+- Lewis Blunn
+- Flynn Ames
+- Hannah L. Croad
+- Adam Gainford
+- Ieuan Higgs
+- Mathew J. Lipson
+- Chun Hay Brian Lo
+date: '2024-05-01'
+year: 2024
+venue: Meteorological Applications
+venue_type: journal
+ids:
+  doi: 10.1002/met.2200
+  openalex: W4397004377
+links:
+  paper: https://doi.org/10.1002/met.2200
+orgs:
+- met-office
+- university-of-reading
+- bom-australia
+topic: downscaling
+topics:
+- post-processing
+- extremes-hazards
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Random forest, XGBoost and MLP bias-correct and downscale Met Office UKV urban temperatures over
+  London to 100 m, cutting UHI profile error from 0.64°C to 0.15°C.
+abstract: Abstract The urban heat island (UHI) effect exacerbates near‐surface air temperature (T) extremes
+  in cities, with negative impacts for human health, building energy consumption and infrastructure. Using
+  conventional weather models, it is both difficult and computationally expensive to simulate the complex
+  processes controlling neighbourhood‐scale variation of T. We use machine learning (ML) to bias correct
+  and downscale T predictions made by the Met Office operational regional forecast model (UKV) to 100
+  m horizontal grid length over London, UK. A set of ML models (random forest, XGBoost, multiplayer perceptron)
+  are trained using citizen weather station observations and UKV variables from eight heatwaves, along
+  with high‐resolution land cover data. The ML models improve the T mean absolute error (MAE) by up to
+  0.12°C (11%) relative to the UKV. They also improve the UHI diurnal and spatial representation, reducing
+  the UHI profile MAE from 0.64°C (UKV) to 0.15°C. A multiple linear regression performs almost as well
+  as the ML models in terms of T MAE, but cannot match the UHI bias correction performance of the ML models,
+  only reducing the UHI profile MAE to 0.49°C. UKV latent heat flux is found to be the most important
+  predictor of T bias. It is demonstrated that including more heatwaves and observation sites in training
+  would reduce overfitting and improve ML model performance.
+significance: 4
+cited_by: 23
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,48 @@
+id: arxiv-2407.02125
+title: Distributional Regression U-Nets for the Postprocessing of Precipitation Ensemble Forecasts
+authors:
+- Romain Pic
+- Clément Dombry
+- Philippe Naveau
+- Maxime Taillardat
+date: '2024-07-02'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2407.02125'
+links:
+  paper: https://arxiv.org/abs/2407.02125
+  pdf: https://arxiv.org/pdf/2407.02125
+  code: https://github.com/pic-romain/unet-pp
+topic: post-processing
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: U-Net distributional regression post-processes AROME-EPS precipitation ensembles, matching quantile
+  regression forests in CRPS and beating them on heavy precipitation.
+abstract: Accurate precipitation forecasts have a high socio-economic value due to their role in decision-making
+  in various fields such as transport networks and farming. We propose a global statistical postprocessing
+  method for grid-based precipitation ensemble forecasts. This U-Net-based distributional regression method
+  predicts marginal distributions in the form of parametric distributions inferred by scoring rule minimization.
+  Distributional regression U-Nets are compared to state-of-the-art postprocessing methods for daily 21-h
+  forecasts of 3-h accumulated precipitation over the South of France. Training data comes from the Météo-France
+  weather model AROME-EPS and spans 3 years. A practical challenge appears when consistent data or reforecasts
+  are not available. Distributional regression U-Nets compete favorably with the raw ensemble. In terms
+  of continuous ranked probability score, they reach a performance comparable to quantile regression forests
+  (QRF). However, they are unable to provide calibrated forecasts in areas associated with high climatological
+  precipitation. In terms of predictive power for heavy precipitation events, they outperform both QRF
+  and semi-parametric QRF with tail extensions.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

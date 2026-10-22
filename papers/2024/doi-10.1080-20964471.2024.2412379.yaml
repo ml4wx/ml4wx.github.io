@@ -1,0 +1,51 @@
+id: doi-10.1080-20964471.2024.2412379
+title: Enhanced oceanic fog nowcasting through satellite-based recurrent neural networks
+authors:
+- Sahel Mahdavi
+- Meisam Amani
+- Terry W. Bullock
+- Steven Beale
+date: '2024-10-10'
+year: 2024
+venue: Big Earth Data
+venue_type: journal
+ids:
+  doi: 10.1080/20964471.2024.2412379
+  openalex: W4403315861
+links:
+  paper: https://doi.org/10.1080/20964471.2024.2412379
+topic: nowcasting
+topics:
+- observations-remote-sensing
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+- stations
+status: pre-operational
+summary: ConvLSTM on GOES-16 fog maps nowcasts offshore fog 2 to 6 hours ahead, achieving PoD 0.70 to
+  0.75 against platform in-situ data.
+abstract: The presence of fog in offshore regions poses significant hazards to navigation and aviation,
+  making fog nowcasting indispensable for various industries, including oil and gas. This study presented
+  a novel approach utilizing Recurrent Neural Networks (RNN) within a deep learning framework to address
+  this need. Leveraging geostationary GOES-16 satellite data from the summers of 2018 and 2019, fog maps
+  were generated as input. The model incorporated Convolutional Long Short-Term Memory (ConvLSTM) layers
+  and was trained with a unique loss function combining Minimum Squared Error (MSE) and structural DISSIMilarity
+  (DSSIM) metrics. Validation results demonstrated an approximate 60% accuracy for both two-hour and three-hour
+  nowcasting. Furthermore, evaluation against in-situ data from an offshore platform revealed a Probability
+  of Detection (PoD) of 0.75 and False Alarm Rate (FAR) of 0.14 for two-hour nowcasting, PoD of 0.75 and
+  FAR of 0.20 for three-hour nowcasting, and PoD of 0.70 and FAR of 0.20 for six-hour nowcasting. These
+  findings suggested the operational viability of the proposed method for short-term fog forecasting in
+  offshore environments.
+significance: 3
+cited_by: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

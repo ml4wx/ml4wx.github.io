@@ -1,0 +1,56 @@
+id: arxiv-2409.11601
+title: 'DiffESM: Conditional Emulation of Temperature and Precipitation in Earth System Models with 3D
+  Diffusion Models'
+authors:
+- Seth Bassetti
+- Brian Hutchinson
+- Claudia Tebaldi
+- Ben Kravitz
+date: '2024-09-17'
+year: 2024
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  arxiv: '2409.11601'
+  doi: 10.1029/2023ms004194
+  openalex: W4403513981
+links:
+  paper: https://doi.org/10.1029/2023ms004194
+  pdf: https://arxiv.org/pdf/2409.11601
+topic: downscaling
+topics:
+- climate-emulation
+- extremes-hazards
+type: model
+method:
+- diffusion
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: DiffESM uses 3D diffusion models to downscale monthly ESM temperature and precipitation to daily
+  values, reproducing heatwave and rainfall extreme statistics at a fraction of the cost.
+abstract: Earth System Models (ESMs) are essential for understanding the interaction between human activities
+  and the Earth's climate. However, the computational demands of ESMs often limit the number of simulations
+  that can be run, hindering the robust analysis of risks associated with extreme weather events. While
+  low-cost climate emulators have emerged as an alternative to emulate ESMs and enable rapid analysis
+  of future climate, many of these emulators only provide output on at most a monthly frequency. This
+  temporal resolution is insufficient for analyzing events that require daily characterization, such as
+  heat waves or heavy precipitation. We propose using diffusion models, a class of generative deep learning
+  models, to effectively downscale ESM output from a monthly to a daily frequency. Trained on a handful
+  of ESM realizations, reflecting a wide range of radiative forcings, our DiffESM model takes monthly
+  mean precipitation or temperature as input, and is capable of producing daily values with statistical
+  characteristics close to ESM output. Combined with a low-cost emulator providing monthly means, this
+  approach requires only a small fraction of the computational resources needed to run a large ensemble.
+  We evaluate model behavior using a number of extreme metrics, showing that DiffESM closely matches the
+  spatio-temporal behavior of the ESM output it emulates in terms of the frequency and spatial characteristics
+  of phenomena such as heat waves, dry spells, or rainfall intensity.
+significance: 4
+cited_by: 22
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

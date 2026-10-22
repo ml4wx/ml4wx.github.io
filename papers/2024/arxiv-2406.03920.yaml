@@ -1,0 +1,53 @@
+id: arxiv-2406.03920
+title: Towards Physically Consistent Deep Learning For Climate Model Parameterizations
+authors:
+- Birgit Kühbacher
+- Fernando Iglesias-Suarez
+- Niki Kilbertus
+- Veronika Eyring
+date: '2024-06-06'
+year: 2024
+venue: 2024 International Conference on Machine Learning and Applications (ICMLA), Miami, FL, USA, 2024,
+  pp. 280-287
+venue_type: journal
+ids:
+  arxiv: '2406.03920'
+  doi: 10.1109/icmla61862.2024.00044
+links:
+  paper: https://arxiv.org/abs/2406.03920
+  pdf: https://arxiv.org/pdf/2406.03920
+topic: hybrid-parameterization
+topics:
+- climate-analysis-attribution
+type: model
+method:
+- physics-constrained
+timescale:
+- climate
+spatial:
+- global
+data:
+- km-scale-sim
+status: research
+summary: A feature-selection step followed by fine-tuning yields interpretable climate-model parameterizations
+  that keep only physical drivers while matching black-box predictive skill.
+abstract: Climate models play a critical role in understanding and projecting climate change. Due to their
+  complexity, their horizontal resolution of about 40-100 km remains too coarse to resolve processes such
+  as clouds and convection, which need to be approximated via parameterizations. These parameterizations
+  are a major source of systematic errors and large uncertainties in climate projections. Deep learning
+  (DL)-based parameterizations, trained on data from computationally expensive short, high-resolution
+  simulations, have shown great promise for improving climate models in that regard. However, their lack
+  of interpretability and tendency to learn spurious non-physical correlations result in reduced trust
+  in the climate simulation. We propose an efficient supervised learning framework for DL-based parameterizations
+  that leads to physically consistent models with improved interpretability and negligible computational
+  overhead compared to standard supervised training. First, key features determining the target physical
+  processes are uncovered. Subsequently, the neural network is fine-tuned using only those relevant features.
+  We show empirically that our method robustly identifies a small subset of the inputs as actual physical
+  drivers, therefore removing spurious non-physical relationships. This results in by design physically
+  consistent and interpretable neural networks while maintaining the predictive performance of unconstrained
+  black-box DL-based parameterizations.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

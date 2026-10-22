@@ -1,0 +1,58 @@
+id: arxiv-2408.02688
+title: A probabilistic framework for learning non-intrusive corrections to long-time climate simulations
+  from short-time training data
+authors:
+- Benedikt Barthel Sorensen
+- Leonardo Zepeda-Núñez
+- Ignacio Lopez-Gomez
+- Zhong Yi Wan
+- Rob Carver
+- Fei Sha
+- Themistoklis Sapsis
+date: '2024-08-02'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2408.02688'
+links:
+  paper: https://arxiv.org/abs/2408.02688
+  pdf: https://arxiv.org/pdf/2408.02688
+topic: hybrid-parameterization
+topics:
+- climate-emulation
+type: model
+method:
+- transformer
+- cnn
+timescale:
+- climate
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Probabilistic neural networks learn non-intrusive corrections to under-resolved chaotic simulations,
+  extrapolating quasi-geostrophic flow statistics over 30 times longer than the training data.
+abstract: Chaotic systems, such as turbulent flows, are ubiquitous in science and engineering. However,
+  their study remains a challenge due to the large range scales, and the strong interaction with other,
+  often not fully understood, physics. As a consequence, the spatiotemporal resolution required for accurate
+  simulation of these systems is typically computationally infeasible, particularly for applications of
+  long-term risk assessment, such as the quantification of extreme weather risk due to climate change.
+  While data-driven modeling offers some promise of alleviating these obstacles, the scarcity of high-quality
+  simulations results in limited available data to train such models, which is often compounded by the
+  lack of stability for long-horizon simulations. As such, the computational, algorithmic, and data restrictions
+  generally imply that the probability of rare extreme events is not accurately captured. In this work
+  we present a general strategy for training neural network models to non-intrusively correct under-resolved
+  long-time simulations of chaotic systems. The approach is based on training a post-processing correction
+  operator on under-resolved simulations nudged towards a high-fidelity reference. This enables us to
+  learn the dynamics of the underlying system directly, which allows us to use very little training data,
+  even when the statistics thereof are far from converged. Additionally, through the use of probabilistic
+  network architectures we are able to leverage the uncertainty due to the limited training data to further
+  improve extrapolation capabilities. We apply our framework to severely under-resolved simulations of
+  quasi-geostrophic flow and demonstrate its ability to accurately predict the anisotropic statistics
+  over time horizons more than 30 times longer than the data seen in training.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

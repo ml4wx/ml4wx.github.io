@@ -1,0 +1,51 @@
+id: arxiv-2405.07395
+title: 'CaFA: Global Weather Forecasting with Factorized Attention on Sphere'
+authors:
+- Zijie Li
+- Anthony Zhou
+- Saurabh Patil
+- Amir Barati Farimani
+date: '2024-05-12'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2405.07395'
+  openalex: W4396913632
+links:
+  paper: https://arxiv.org/abs/2405.07395
+  pdf: https://arxiv.org/pdf/2405.07395
+topic: global-medium-range
+type: model
+method:
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Factorized-attention transformer on the sphere matches state-of-the-art data-driven global forecasts
+  at 1.5° for 0-7 days with lower computational cost.
+abstract: Accurate weather forecasting is crucial in various sectors, impacting decision-making processes
+  and societal events. Data-driven approaches based on machine learning models have recently emerged as
+  a promising alternative to numerical weather prediction models given their potential to capture physics
+  of different scales from historical data and the significantly lower computational cost during the prediction
+  stage. Renowned for its state-of-the-art performance across diverse domains, the Transformer model has
+  also gained popularity in machine learning weather prediction. Yet applying Transformer architectures
+  to weather forecasting, particularly on a global scale is computationally challenging due to the quadratic
+  complexity of attention and the quadratic increase in spatial points as resolution increases. In this
+  work, we propose a factorized-attention-based model tailored for spherical geometries to mitigate this
+  issue. More specifically, it utilizes multi-dimensional factorized kernels that convolve over different
+  axes where the computational complexity of the kernel is only quadratic to the axial resolution instead
+  of overall resolution. The deterministic forecasting accuracy of the proposed model on $1.5^\circ$ and
+  0-7 days' lead time is on par with state-of-the-art purely data-driven machine learning weather prediction
+  models. We also showcase the proposed model holds great potential to push forward the Pareto front of
+  accuracy-efficiency for Transformer weather models, where it can achieve better accuracy with less computational
+  cost compared to Transformer based models with standard attention.
+significance: 4
+cited_by: 1
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

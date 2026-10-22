@@ -1,0 +1,56 @@
+id: arxiv-2408.16349
+title: Machine learning models for daily rainfall forecasting in Northern Tropical Africa using tropical
+  wave predictors
+authors:
+- Athul Rasheeda Satheesh
+- Peter Knippertz
+- Andreas H. Fink
+date: '2024-08-29'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2408.16349'
+links:
+  paper: https://arxiv.org/abs/2408.16349
+  pdf: https://arxiv.org/pdf/2408.16349
+topic: post-processing
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- classical-ml
+- cnn
+timescale:
+- medium
+spatial:
+- regional
+data:
+- satellite
+- nwp-analysis
+status: research
+summary: Gamma regression and CNN models using tropical wave predictors with EasyUQ calibration outperform
+  ECMWF ensemble and climatology benchmarks for daily rainfall over northern tropical Africa.
+abstract: 'Numerical weather prediction (NWP) models often underperform compared to simpler climatology-based
+  precipitation forecasts in northern tropical Africa, even after statistical postprocessing. AI-based
+  forecasting models show promise but have avoided precipitation due to its complexity. Synoptic-scale
+  forcings like African easterly waves and other tropical waves (TWs) are important for predictability
+  in tropical Africa, yet their value for predicting daily rainfall remains unexplored. This study uses
+  two machine-learning models--gamma regression and a convolutional neural network (CNN)--trained on TW
+  predictors from satellite-based GPM IMERG data to predict daily rainfall during the July-September monsoon
+  season. Predictor variables are derived from the local amplitude and phase information of seven TW from
+  the target and up-and-downstream neighboring grids at 1-degree spatial resolution. The ML models are
+  combined with Easy Uncertainty Quantification (EasyUQ) to generate calibrated probabilistic forecasts
+  and are compared with three benchmarks: Extended Probabilistic Climatology (EPC15), ECMWF operational
+  ensemble forecast (ENS), and a probabilistic forecast from the ENS control member using EasyUQ (CTRL
+  EasyUQ). The study finds that downstream predictor variables offer the highest predictability, with
+  downstream tropical depression (TD)-type wave-based predictors being most important. Other waves like
+  mixed-Rossby gravity (MRG), Kelvin, and inertio-gravity waves also contribute significantly but show
+  regional preferences. ENS forecasts exhibit poor skill due to miscalibration. CTRL EasyUQ shows improvement
+  over ENS and marginal enhancement over EPC15. Both gamma regression and CNN forecasts significantly
+  outperform benchmarks in tropical Africa. This study highlights the potential of ML models trained on
+  TW-based predictors to improve daily precipitation forecasts in tropical Africa.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

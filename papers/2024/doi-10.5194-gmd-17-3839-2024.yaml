@@ -1,0 +1,60 @@
+id: doi-10.5194-gmd-17-3839-2024
+title: 'DEUCE v1.0: a neural network for probabilistic precipitation nowcasting with aleatoric and epistemic
+  uncertainties'
+authors:
+- Bent Harnist
+- Seppo Pulkkinen
+- Terhi Mäkinen
+date: '2024-05-14'
+year: 2024
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-17-3839-2024
+  openalex: W4396898111
+links:
+  paper: https://doi.org/10.5194/gmd-17-3839-2024
+topic: nowcasting
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- cnn
+- physics-constrained
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: DEUCE is a Bayesian U-Net for probabilistic radar precipitation nowcasts with epistemic and aleatoric
+  uncertainty, improving ROC AUC 1–5% over STEPS and LINDA-P.
+abstract: Abstract. Precipitation nowcasting (forecasting locally for 0–6 h) serves both public security
+  and industries, facilitating the mitigation of losses incurred due to e.g. flash floods, and is usually
+  done by predicting weather radar echoes, which provides better performance than NWP at that scale. Probabilistic
+  nowcasts are especially useful as they provide a desirable framework for operational decision-making.
+  Many extrapolation-based statistical nowcasting methods exist, but they all suffer from a limited ability
+  to capture the nonlinear growth and decay of precipitation, leading to a recent paradigm shift towards
+  deep learning methods, more capable of representing these patterns. Despite of its potential advantages,
+  the application of deep learning in probabilistic nowcasting has only recently started to be explored.
+  Here we develop a novel probabilistic precipitation nowcasting method, based on Bayesian neural networks
+  with variational inference and the U-Net architecture, named DEUCE. The method estimates the total predictive
+  uncertainty of precipitation by combining estimates of the epistemic (knowledge-related, reducible)
+  and heteroscedastic aleatoric (data-dependent, irreducible) uncertainties, and produces an ensemble
+  of development scenarios for the following 60 minutes. DEUCE is trained and verified using Finnish Meteorological
+  Institute radar composites against established classical models. Our model is found to produce both
+  skillful and reliable probabilistic nowcasts based on various evaluation criteria. It improves ROC Area
+  Under the Curve scores 1–5 % over STEPS and LINDA-P baselines, and comes close to the best-performer
+  STEPS on a CRPS metric. The reliability of DEUCE is demonstrated with, e.g., having the lowest Expected
+  Calibration Error at 20 and 25 dBZ reflectivity thresholds, and coming second at 35 dBZ. On the other
+  hand, deterministic performance of ensemble means is found to be worse than that of extrapolation and
+  LINDA-D baselines. Lastly, the composition of the predictive uncertainty is analysed and described,
+  with the conclusion that aleatoric uncertainty is more significant and informative than epistemic uncertainty
+  in the DEUCE model.
+significance: 5
+cited_by: 15
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

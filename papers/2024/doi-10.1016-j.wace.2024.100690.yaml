@@ -1,0 +1,59 @@
+id: doi-10.1016-j.wace.2024.100690
+title: Improved freezing rain forecast using machine learning
+authors:
+- Qiuzi Han Wen
+- Dingyu Wan
+- Qin apos ge Dong
+- Yan Yan
+- Pingwen Zhang
+date: '2024-05-14'
+year: 2024
+venue: Weather and Climate Extremes
+venue_type: journal
+ids:
+  doi: 10.1016/j.wace.2024.100690
+  openalex: W4396887125
+links:
+  paper: https://doi.org/10.1016/j.wace.2024.100690
+topic: extremes-hazards
+topics:
+- post-processing
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+- stations
+- nwp-analysis
+status: pre-operational
+summary: LightGBM model DDFR forecasts freezing rain from ERA5 profiles, improving threat score by 120–258%
+  over ECMWF IFS and running in a Chinese operational NWP system.
+abstract: Freezing rain is one of the most damaging weather phenomena in winter or early spring in many
+  parts of the world, affecting traffic, power lines and agriculture. Thus, reliable and computationally
+  efficient prediction of its occurrence is urgently needed in weather forecast operations. However, there
+  are different thermodynamic processes that can lead to freezing rain, resulting in unsatisfactory forecasting
+  performance of the state-of-the-art Numerical Weather Prediction (NWP) models. Here a data-driven forecasting
+  method for freezing rain using machine learning technologies is proposed. Observations of weather phenomenon
+  collected from 2515 national weather stations of China for winter of 2016 to 2019 and the corresponding
+  atmospheric predictors derived from ERA5 reanalysis are used. The prediction function is constructed
+  based on the classification and regression tree, and the predicting variables include temporal and vertical
+  profiles of fundamental thermodynamic and kinematic parameters from 500hPa to 1000hPa, with a total
+  dimension of 2304. The LightGBM (Light Gradient Boosting Machine) framework is adopted to train our
+  prediction model and an algorithm-level approach of modifying the loss function is used to address the
+  imbalance of classes to improve forecasting skill. Results show that the data-driven prediction model,
+  namely DDFR (data driven forecast of freezing rain), out-performs the benchmark NWP, i.e., ECMWF IFS
+  product. It’s improvements in terms of TS score range from 120% to 258% depending on different forecast
+  leading times, which range from 0-12 hours. In addition, DDFR is applied in an operational NWP model
+  of China. The problem of domain adaptation is tackled and transfer learning method is employed to adapt
+  the original DDFR to this NWP model. The effectiveness of such adaptation has been demonstrated by its
+  performance on both training and testing datasets.
+significance: 4
+cited_by: 10
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

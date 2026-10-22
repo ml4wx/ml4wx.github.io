@@ -1,0 +1,52 @@
+id: arxiv-2407.01598
+title: Long-Term Prediction Accuracy Improvement of Data-Driven Medium-Range Global Weather Forecast
+authors:
+- Yifan Hu
+- Fukang Yin
+- Weimin Zhang
+- Kaijun Ren
+- Junqiang Song
+- Kefeng Deng
+- Di Zhang
+date: '2024-06-26'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2407.01598'
+  openalex: W4400373543
+links:
+  paper: https://arxiv.org/abs/2407.01598
+  pdf: https://arxiv.org/pdf/2407.01598
+topic: global-medium-range
+topics:
+- hybrid-parameterization
+type: model
+method:
+- neural-operator
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Spherical Harmonic Neural Operator (SHNO) reduces error growth in long autoregressive medium-range
+  global weather forecasts by replacing conventional convolutions on spherical data.
+abstract: Long-term stability stands as a crucial requirement in data-driven medium-range global weather
+  forecasting. Spectral bias is recognized as the primary contributor to instabilities, as data-driven
+  methods difficult to learn small-scale dynamics. In this paper, we reveal that the universal mechanism
+  for these instabilities is not only related to spectral bias but also to distortions brought by processing
+  spherical data using conventional convolution. These distortions lead to a rapid amplification of errors
+  over successive long-term iterations, resulting in a significant decline in forecast accuracy. To address
+  this issue, a universal neural operator called the Spherical Harmonic Neural Operator (SHNO) is introduced
+  to improve long-term iterative forecasts. SHNO uses the spherical harmonic basis to mitigate distortions
+  for spherical data and uses gated residual spectral attention (GRSA) to correct spectral bias caused
+  by spurious correlations across different scales. The effectiveness and merit of the proposed method
+  have been validated through its application for spherical Shallow Water Equations (SWEs) and medium-range
+  global weather forecasting. Our findings highlight the benefits and potential of SHNO to improve the
+  accuracy of long-term prediction.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

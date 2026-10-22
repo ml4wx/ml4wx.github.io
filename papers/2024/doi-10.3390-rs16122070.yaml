@@ -1,0 +1,48 @@
+id: doi-10.3390-rs16122070
+title: Methodology for Severe Convective Cloud Identification Using Lightweight Neural Network Model Ensembling
+authors:
+- Jie Zhang
+- Mingyuan He
+date: '2024-06-07'
+year: 2024
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs16122070
+  openalex: W4399430071
+links:
+  paper: https://doi.org/10.3390/rs16122070
+topic: observations-remote-sensing
+topics:
+- extremes-hazards
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: pre-operational
+summary: Lightweight ensemble network EFNet identifies severe convective clouds in FY-4B imagery with
+  0.9941 accuracy at about 0.06 s per 512x512 image.
+abstract: 'This study introduces an advanced ensemble methodology employing lightweight neural network
+  models for identifying severe convective clouds from FY-4B geostationary meteorological satellite imagery.
+  We have constructed a FY-4B based severe convective cloud dataset by a combination of algorithms and
+  expert judgment. Through the ablation study of a model ensembling combination of multiple specialized
+  lightweight architectures—ENet, ESPNet, Fast-SCNN, ICNet, and MobileNetV2—the optimal EFNet (ENet- and
+  Fast-SCNN-based network) not only achieves real-time processing capabilities but also ensures high accuracy
+  in severe weather detection. EFNet consistently outperformed traditional, heavier models across several
+  key performance indicators: achieving an accuracy of 0.9941, precision of 0.9391, recall of 0.9201,
+  F1 score of 0.9295, and computing time of 18.65 s over the test dataset of 300 images (~0.06 s per 512
+  × 512 pic). ENet shows high precision but misses subtle clouds, while Fast-SCNN has high sensitivity
+  but lower precision, leading to misclassifications. EFNet’s ensemble approach balances these traits,
+  enhancing overall predictive accuracy. The ensemble method of lightweight models effectively aggregates
+  the diverse strengths of the individual models, optimizing both speed and predictive performance.'
+significance: 3
+cited_by: 7
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

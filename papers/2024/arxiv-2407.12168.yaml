@@ -1,0 +1,59 @@
+id: arxiv-2407.12168
+title: A Scalable Real-Time Data Assimilation Framework for Predicting Turbulent Atmosphere Dynamics
+authors:
+- Junqi Yin
+- Siming Liang
+- Siyan Liu
+- Feng Bao
+- Hristo G. Chipilski
+- Dan Lu
+- Guannan Zhang
+date: '2024-07-16'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2407.12168'
+  openalex: W4402345612
+links:
+  paper: https://arxiv.org/abs/2407.12168
+  pdf: https://arxiv.org/pdf/2407.12168
+orgs:
+- ornl
+topic: data-assimilation
+topics:
+- infra-software
+type: model
+method:
+- transformer
+- diffusion
+spatial:
+- global
+data:
+- other
+status: research
+summary: An ensemble score filter outperforms LETKF, and a ViT surrogate adapts in real time; the framework
+  scales to 1024 GPUs on Frontier, tested on a surface quasi-geostrophic turbulence benchmark.
+abstract: 'The weather and climate domains are undergoing a significant transformation thanks to advances
+  in AI-based foundation models such as FourCastNet, GraphCast, ClimaX and Pangu-Weather. While these
+  models show considerable potential, they are not ready yet for operational use in weather forecasting
+  or climate prediction. This is due to the lack of a data assimilation method as part of their workflow
+  to enable the assimilation of incoming Earth system observations in real time. This limitation affects
+  their effectiveness in predicting complex atmospheric phenomena such as tropical cyclones and atmospheric
+  rivers. To overcome these obstacles, we introduce a generic real-time data assimilation framework and
+  demonstrate its end-to-end performance on the Frontier supercomputer. This framework comprises two primary
+  modules: an ensemble score filter (EnSF), which significantly outperforms the state-of-the-art data
+  assimilation method, namely, the Local Ensemble Transform Kalman Filter (LETKF); and a vision transformer-based
+  surrogate capable of real-time adaptation through the integration of observational data. The ViT surrogate
+  can represent either physics-based models or AI-based foundation models. We demonstrate both the strong
+  and weak scaling of our framework up to 1024 GPUs on the Exascale supercomputer, Frontier. Our results
+  not only illustrate the framework''s exceptional scalability on high-performance computing systems,
+  but also demonstrate the importance of supercomputers in real-time data assimilation for weather and
+  climate predictions. Even though the proposed framework is tested only on a benchmark surface quasi-geostrophic
+  (SQG) turbulence system, it has the potential to be combined with existing AI-based foundation models,
+  making it suitable for future operational implementations.'
+significance: 4
+cited_by: 2
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

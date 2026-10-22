@@ -1,0 +1,44 @@
+id: arxiv-2410.03266
+title: Predictability of Global AI Weather Models
+authors:
+- Chanh Kieu
+date: '2024-10-04'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2410.03266'
+  openalex: W4403894882
+links:
+  paper: https://arxiv.org/abs/2410.03266
+  pdf: https://arxiv.org/pdf/2410.03266
+topic: global-medium-range
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: ConvLSTM trained on ERA5 shows big-step direct forecasting beats small-step recursive forecasting
+  in skill and predictability range, and is robust to fewer input channels.
+abstract: This study examines the predictability of artificial intelligence (AI) models for weather prediction.
+  Using a simple deep-learning architecture based on convolutional long short-term memory and the ERA5
+  data for training, we show that different time-stepping techniques can have a strong influence on the
+  model performance and weather predictability. Specifically, a small-step approach for which the future
+  state is predicted by recursively iterating an AI model over a small time increment displays strong
+  sensitivity to the type of input channels, the number of data frames, or forecast lead times. In contrast,
+  a big-step approach for which a current state is directly projected to a future state at each corresponding
+  lead time provides much better forecast skill and a longer predictability range. In particular, the
+  big-step approach is very resilient to different input channels, or data frames. In this regard, our
+  results present a different method for implementing global AI models for weather prediction, which can
+  optimize the model performance even with minimum input channels or data frames.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,48 @@
+id: arxiv-2410.06560
+title: 'Mitigating Time Discretization Challenges with WeatherODE: A Sandwich Physics-Driven Neural ODE
+  for Weather Forecasting'
+authors:
+- Peiyuan Liu
+- Tian Zhou
+- Liang Sun
+- Rong Jin
+date: '2024-10-09'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2410.06560'
+links:
+  paper: https://arxiv.org/abs/2410.06560
+  pdf: https://arxiv.org/pdf/2410.06560
+  code: https://github.com/DAMO-DI-ML/WeatherODE
+topic: global-medium-range
+type: model
+method:
+- transformer
+- physics-constrained
+timescale:
+- medium
+spatial:
+- global
+- regional
+data:
+- era5
+status: research
+summary: A physics-driven neural ODE with a CNN-ViT-CNN sandwich improves global and regional forecasts,
+  beating prior methods by over 40% in RMSE.
+abstract: In the field of weather forecasting, traditional models often grapple with discretization errors
+  and time-dependent source discrepancies, which limit their predictive performance. In this paper, we
+  present WeatherODE, a novel one-stage, physics-driven ordinary differential equation (ODE) model designed
+  to enhance weather forecasting accuracy. By leveraging wave equation theory and integrating a time-dependent
+  source model, WeatherODE effectively addresses the challenges associated with time-discretization error
+  and dynamic atmospheric processes. Moreover, we design a CNN-ViT-CNN sandwich structure, facilitating
+  efficient learning dynamics tailored for distinct yet interrelated tasks with varying optimization biases
+  in advection equation estimation. Through rigorous experiments, WeatherODE demonstrates superior performance
+  in both global and regional weather forecasting tasks, outperforming recent state-of-the-art approaches
+  by significant margins of over 40.0\% and 31.8\% in root mean square error (RMSE), respectively. The
+  source code is available at \url{https://github.com/DAMO-DI-ML/WeatherODE}.
+significance: 5
+score: 30
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,46 @@
+id: arxiv-2408.14587
+title: Efficient fine-tuning of 37-level GraphCast with the Canadian global deterministic analysis
+authors:
+- Christopher Subich
+date: '2024-08-26'
+year: 2024
+venue: Artificial Intelligence for the Earth Systems 4(3) Jul. 2025
+venue_type: journal
+ids:
+  arxiv: '2408.14587'
+  doi: 10.1175/aies-d-24-0101.1
+links:
+  paper: https://arxiv.org/abs/2408.14587
+  pdf: https://arxiv.org/pdf/2408.14587
+topic: global-medium-range
+topics:
+- foundation-models
+type: model
+method:
+- gnn
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: pre-operational
+summary: Fine-tuning 37-level GraphCast on two years of ECCC GDPS analyses in 37 GPU-days beats both the
+  original GraphCast and the operational forecast for 1 to 10 day lead times.
+abstract: This work describes a process for efficiently fine-tuning the GraphCast data-driven forecast
+  model to simulate another analysis system, here the Global Deterministic Prediction System (GDPS) of
+  Environment and Climate Change Canada (ECCC). Using two years of training data (July 2019 -- December
+  2021) and 37 GPU-days of computation to tune the 37-level, quarter-degree version of GraphCast, the
+  resulting model significantly outperforms both the unmodified GraphCast and operational forecast, showing
+  significant forecast skill in the troposphere over lead times from 1 to 10 days. This fine-tuning is
+  accomplished through abbreviating DeepMind's original training curriculum for GraphCast, relying on
+  a shorter single-step forecast stage to accomplish the bulk of the adaptation work and consolidating
+  the autoregressive stages into separate 12hr, 1d, 2d, and 3d stages with larger learning rates. Additionally,
+  training over 3d forecasts is split into two sub-steps to conserve host memory while maintaining a strong
+  correlation with training over the full period.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

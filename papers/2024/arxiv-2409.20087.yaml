@@ -1,0 +1,56 @@
+id: arxiv-2409.20087
+title: 'Inferring Thunderstorm Occurrence from Vertical Profiles of Convection-Permitting Simulations:
+  Physical Insights from a Physical Deep Learning Model'
+authors:
+- Kianusch Vahid Yousefnia
+- Christoph Metzl
+- Tobias Bölle
+date: '2024-09-30'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2409.20087'
+  doi: 10.1175/aies-d-24-0096.1
+links:
+  paper: https://arxiv.org/abs/2409.20087
+  pdf: https://arxiv.org/pdf/2409.20087
+topic: extremes-hazards
+topics:
+- xai-uq-physics
+type: model
+method:
+- physics-constrained
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- km-scale-sim
+- stations
+status: research
+summary: SALAMA 1D physically structured network infers thunderstorm probability from convection-permitting
+  vertical profiles, beating single-level baselines up to 11-hour lead times.
+abstract: 'Thunderstorms have significant social and economic impacts due to heavy precipitation, hail,
+  lightning, and strong winds, necessitating reliable forecasts. Thunderstorm forecasts based on numerical
+  weather prediction (NWP) often rely on single-level surrogate predictors, like convective available
+  potential energy and convective inhibition, derived from vertical profiles of three-dimensional atmospheric
+  variables. In this study, we develop SALAMA 1D, a deep neural network which directly infers the probability
+  of thunderstorm occurrence from vertical profiles of ten atmospheric variables, bypassing single-level
+  predictors. By training the model on convection-permitting NWP forecasts, we allow SALAMA 1D to flexibly
+  identify convective patterns, with the goal of enhancing forecast accuracy. The model''s architecture
+  is physically motivated: sparse connections encourage interactions at similar height levels while keeping
+  model size and inference times computationally efficient, whereas a shuffling mechanism prevents the
+  model from learning non-physical patterns tied to the vertical grid. SALAMA 1D is trained over Central
+  Europe with lightning observations as the ground truth. Comparative analysis against a baseline machine
+  learning model that uses single-level predictors shows SALAMA 1D''s superior skill across various metrics
+  and lead times of up to at least 11 hours. Moreover, expanding the archive of forecasts from which training
+  examples are sampled improves skill, even when training set size remains constant. Finally, a sensitivity
+  analysis using saliency maps indicates that our model relies on physically interpretable patterns consistent
+  with established theoretical understanding, such as ice particle content near the tropopause, cloud
+  cover, conditional instability, and low-level moisture.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

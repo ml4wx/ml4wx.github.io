@@ -1,0 +1,54 @@
+id: arxiv-2407.17781
+title: 'Ensemble data assimilation to diagnose AI-based weather prediction model: A case with ClimaX version
+  0.3.1'
+authors:
+- Shunji Kotsuki
+- Kenta Shiraishi
+- Atsushi Okazaki
+date: '2024-07-25'
+year: 2024
+venue: Geoscientific Model Development, 18, 7215-7225, 2025
+venue_type: journal
+ids:
+  arxiv: '2407.17781'
+  doi: 10.5194/gmd-18-7215-2025
+links:
+  paper: https://arxiv.org/abs/2407.17781
+  pdf: https://arxiv.org/pdf/2407.17781
+topic: data-assimilation
+topics:
+- foundation-models
+- xai-uq-physics
+type: evaluation
+method:
+- transformer
+- classical-ml
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: First ensemble Kalman filter cycling with an AI weather model (ClimaX), showing it captures weaker
+  error growth than NWP and can diagnose physical consistency.
+abstract: Artificial intelligence (AI)-based weather prediction research is growing rapidly and has shown
+  to be competitive with the advanced dynamic numerical weather prediction models. However, research combining
+  AI-based weather prediction models with data assimilation remains limited partially because long-term
+  sequential data assimilation cycles are required to evaluate data assimilation systems. This study proposes
+  using ensemble data assimilation for diagnosing AI-based weather prediction models, and marked the first
+  successful implementation of ensemble Kalman filter with AI-based weather prediction models. Our experiments
+  with an AI-based model ClimaX demonstrated that the ensemble data assimilation cycled stably for the
+  AI-based weather prediction model using covariance inflation and localization techniques within the
+  ensemble Kalman filter. While ClimaX showed some limitations in capturing flow-dependent error covariance
+  compared to dynamical models, the AI-based ensemble forecasts provided reasonable and beneficial error
+  covariance in sparsely observed regions. In addition, ensemble data assimilation revealed that error
+  growth based on ensemble ClimaX predictions was weaker than that of dynamical NWP models, leading to
+  higher inflation factors. A series of experiments demonstrated that ensemble data assimilation can be
+  used to diagnose properties of AI weather prediction models such as physical consistency and accurate
+  error growth representation.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

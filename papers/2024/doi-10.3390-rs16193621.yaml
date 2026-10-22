@@ -1,0 +1,52 @@
+id: doi-10.3390-rs16193621
+title: Supervised Learning-Based Prediction of Lightning Probability in the Warm Season
+authors:
+- Kyuhee Shin
+- Kwonil Kim
+- GyuWon Lee
+date: '2024-09-28'
+year: 2024
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs16193621
+  openalex: W4402992655
+links:
+  paper: https://doi.org/10.3390/rs16193621
+  pdf: https://www.mdpi.com/2072-4292/16/19/3621/pdf?version=1727513032
+topic: extremes-hazards
+topics:
+- nowcasting
+type: model
+method:
+- classical-ml
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- nwp-analysis
+status: pre-operational
+summary: Random forest trained on NWP thermodynamic predictors gives probabilistic warm-season lightning
+  forecasts up to about 6 hours ahead.
+abstract: The accurate prediction of lightning is crucial for forecasters to respond effectively to its
+  related hazards. The rapid development and confined spatial extent of convective storms, in which lightning
+  frequently occurs, pose considerable challenges for accurately predicting their locations using numerical
+  weather prediction (NWP) models. Lightning occurrence is often prognosed using thermodynamic parameters,
+  convective available potential energy (CAPE), the severe weather threat index (SWEAT), the lifted index
+  (LI), etc. A high-resolution NWP model provides a prediction of these thermodynamic parameters at high
+  spatiotemporal resolution with high accuracy for a few hours. However, a complicated algorithm is required
+  to handle all the useful high-resolution variables from the NWP model. The recently emerging machine
+  learning technique can solve this issue by properly handling these “big data” without any model distributional
+  assumption. In this study, we developed a random forest algorithm for nowcasting and very short-range
+  forecasting (useful for ~6 h), named LightningRF. LightningRF was trained by using lightning occurrence
+  as a response variable and characteristic parameters from the NWP as predictors. It was also applied
+  to analysis and forecast fields, showing a high probability of lightning within the observed lightning
+  regions. This highlights the potential of helping forecasters improve their lightning forecasting skills
+  using real-time probabilistic forecasts from a trained model.
+significance: 3
+cited_by: 5
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

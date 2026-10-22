@@ -1,0 +1,48 @@
+id: arxiv-2406.09551
+title: Embedding machine-learnt sub-grid variability improves climate model biases
+authors:
+- Daniel Giles
+- James Briant
+- Cyril J. Morcrette
+- Serge Guillas
+date: '2024-06-13'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2406.09551'
+links:
+  paper: https://arxiv.org/abs/2406.09551
+  pdf: https://arxiv.org/pdf/2406.09551
+topic: hybrid-parameterization
+topics:
+- climate-emulation
+type: model
+method:
+- classical-ml
+timescale:
+- climate
+spatial:
+- global
+data:
+- other
+status: research
+summary: Gaussian process embedded in the SPEEDY model to perturb humidity and temperature; cuts global
+  precipitation bias by 18% over ten-year runs.
+abstract: The under-representation of cloud formation is a long-standing bias associated with climate
+  simulations. Parameterisation schemes are required to capture cloud processes within current climate
+  models but have known biases. We overcome these biases by embedding a Multi-Output Gaussian Process
+  (MOGP) trained on high resolution Unified Model simulations to represent the variability of temperature
+  and specific humidity within a climate model. A trained MOGP model is coupled in-situ with a simplified
+  Atmospheric General Circulation Model named SPEEDY. The temperature and specific humidity profiles of
+  SPEEDY are perturbed at fixed intervals according to the variability predicted from the MOGP. Ten-year
+  predictions are generated for both control and ML-hybrid models. The hybrid model reduces the global
+  precipitation bias by 18\% and over the tropics by 22\%. To further understand the drivers of these
+  improvements, physical quantities of interest are explored, such as the distribution of lifted index
+  values and the alteration of the Hadley cell. The control and hybrid set-ups are also run in a plus
+  4K sea-surface temperature experiment to explore the effects of the approach on patterns relating to
+  cloud cover and precipitation in a warmed climate setting.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

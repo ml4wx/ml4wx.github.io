@@ -1,0 +1,46 @@
+id: arxiv-2407.19187
+title: Efficiently improving key weather variables forecasting by performing the guided iterative prediction
+  in latent space
+authors:
+- Shuangliang Li
+- Siwei Li
+date: '2024-07-27'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2407.19187'
+  openalex: W4401201469
+links:
+  paper: https://arxiv.org/abs/2407.19187
+  pdf: https://arxiv.org/pdf/2407.19187
+  code: https://github.com/rs-lsl/Kvp-lsi
+topic: global-medium-range
+type: model
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Encoding-prediction-decoding network iterates in latent space to forecast key ERA5 variables
+  using many input variables, with an improved HTA-based loss for multi-lead-time accuracy.
+abstract: Weather forecasting refers to learning evolutionary patterns of some key upper-air and surface
+  variables which is of great significance. Recently, deep learning-based methods have been increasingly
+  applied in the field of weather forecasting due to their powerful feature learning capabilities. However,
+  prediction methods based on the original space iteration struggle to effectively and efficiently utilize
+  large number of weather variables. Therefore, we propose an 'encoding-prediction-decoding' prediction
+  network. This network can efficiently benefit to more related input variables with key variables, that
+  is, it can adaptively extract key variable-related low-dimensional latent feature from much more input
+  atmospheric variables for iterative prediction. And we construct a loss function to guide the iteration
+  of latent feature by utilizing multiple atmospheric variables in corresponding lead times. The obtained
+  latent features through iterative prediction are then decoded to obtain the predicted values of key
+  variables in multiple lead times. In addition, we improve the HTA algorithm in \cite{bi2023accurate}
+  by inputting more time steps to enhance the temporal correlation between the prediction results and
+  input variables. Both qualitative and quantitative prediction results on ERA5 dataset validate the superiority
+  of our method over other methods. (The code will be available at https://github.com/rs-lsl/Kvp-lsi)
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

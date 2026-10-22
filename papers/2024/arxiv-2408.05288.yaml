@@ -1,0 +1,54 @@
+id: arxiv-2408.05288
+title: The impact of internal variability on benchmarking deep learning climate emulators
+authors:
+- Björn Lütjens
+- Raffaele Ferrari
+- Duncan Watson-Parris
+- Noelle Selin
+date: '2024-08-09'
+year: 2024
+venue: (2025) Journal of Advances in Modeling Earth Systems, 17
+venue_type: journal
+ids:
+  arxiv: '2408.05288'
+  doi: 10.1029/2024ms004619
+links:
+  paper: https://arxiv.org/abs/2408.05288
+  pdf: https://arxiv.org/pdf/2408.05288
+topic: benchmarks-data-eval
+topics:
+- climate-emulation
+type: evaluation
+method:
+- classical-ml
+- cnn
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: Linear pattern scaling beats the ClimaX foundation model on 3 of 4 ClimateBench variables; ensemble
+  targets reduce deep emulator overfitting to internal variability.
+abstract: Full-complexity Earth system models (ESMs) are computationally very expensive, limiting their
+  use in exploring the climate outcomes of multiple emission pathways. More efficient emulators that approximate
+  ESMs can directly map emissions onto climate outcomes, and benchmarks are being used to evaluate their
+  accuracy on standardized tasks and datasets. We investigate a popular benchmark in data-driven climate
+  emulation, ClimateBench, on which deep learning-based emulators are currently achieving the best performance.
+  We compare these deep learning emulators with a linear regression-based emulator, akin to pattern scaling,
+  and show that it outperforms the incumbent 100M-parameter deep learning foundation model, ClimaX, on
+  3 out of 4 regionally-resolved climate variables, notably surface temperature and precipitation. While
+  emulating surface temperature is expected to be predominantly linear, this result is surprising for
+  emulating precipitation. Precipitation is a much more noisy variable, and we show that deep learning
+  emulators can overfit to internal variability noise at low frequencies, degrading their performance
+  in comparison to a linear emulator. We address the issue of overfitting by increasing the number of
+  climate simulations per emission pathway (from 3 to 50) and updating the benchmark targets with the
+  respective ensemble averages from the MPI-ESM1.2-LR model. Using the new targets, we show that linear
+  pattern scaling continues to be more accurate on temperature, but can be outperformed by a deep learning-based
+  technique for emulating precipitation. We publish our code and data at github.com/blutjens/climate-emulator.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

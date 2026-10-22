@@ -1,0 +1,49 @@
+id: arxiv-2410.09109
+title: Compressing high-resolution data through latent representation encoding for downscaling large-scale
+  AI weather forecast model
+authors:
+- Qian Liu
+- Bing Gong
+- Xiaoran Zhuang
+- Xiaohui Zhong
+- Zhiming Kang
+- Hao Li
+date: '2024-10-10'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2410.09109'
+links:
+  paper: https://arxiv.org/abs/2410.09109
+  pdf: https://arxiv.org/pdf/2410.09109
+topic: infra-software
+topics:
+- downscaling
+type: model
+method:
+- gan-vae
+spatial:
+- regional
+data:
+- other
+status: research
+summary: A VAE compresses three years of 1 km HRCLDAS data from 8.61 TB to 204 GB, and a downscaling model
+  trained on compressed data matches original-data accuracy.
+abstract: The rapid advancement of artificial intelligence (AI) in weather research has been driven by
+  the ability to learn from large, high-dimensional datasets. However, this progress also poses significant
+  challenges, particularly regarding the substantial costs associated with processing extensive data and
+  the limitations of computational resources. Inspired by the Neural Image Compression (NIC) task in computer
+  vision, this study seeks to compress weather data to address these challenges and enhance the efficiency
+  of downstream applications. Specifically, we propose a variational autoencoder (VAE) framework tailored
+  for compressing high-resolution datasets, specifically the High Resolution China Meteorological Administration
+  Land Data Assimilation System (HRCLDAS) with a spatial resolution of 1 km. Our framework successfully
+  reduced the storage size of 3 years of HRCLDAS data from 8.61 TB to just 204 GB, while preserving essential
+  information. In addition, we demonstrated the utility of the compressed data through a downscaling task,
+  where the model trained on the compressed dataset achieved accuracy comparable to that of the model
+  trained on the original data. These results highlight the effectiveness and potential of the compressed
+  data for future weather research.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

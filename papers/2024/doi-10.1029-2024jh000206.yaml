@@ -1,0 +1,54 @@
+id: doi-10.1029-2024jh000206
+title: A Systematic Framework for Data Augmentation for Tropical Cyclone Intensity Estimation Using Deep
+  Learning
+authors:
+- Guido Ascenso
+- Giulio Palcic
+- Enrico Scoccimarro
+- Andrea Francesco Castelletti
+date: '2024-09-01'
+year: 2024
+venue: Journal of Geophysical Research Machine Learning and Computation
+venue_type: journal
+ids:
+  doi: 10.1029/2024jh000206
+  openalex: W4402838395
+links:
+  paper: https://doi.org/10.1029/2024jh000206
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2024JH000206
+topic: extremes-hazards
+topics:
+- observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- global
+data:
+- satellite
+status: research
+summary: Gini-based augmentation framework sets an upper bound of 50 augmentations per image and identifies
+  random erasing as useful for satellite-based tropical cyclone intensity estimation.
+abstract: Abstract Given the exponential relationship between the intensity and the expected damage of
+  tropical cyclones, accurately estimating their intensity from satellite images is a crucially important
+  area of research. Yet, the imbalance and limited size of available data sets significantly hinder model
+  training and generalization capabilities, especially for state‐of‐the‐art deep learning models. Therefore,
+  it is standard in this field to use data augmentation, a family of transformations to increase the size
+  and variety of a given data set. However, the principles behind the usage of these techniques for the
+  estimation of the intensity of tropical cyclones has been largely unexamined. In this paper, we introduce
+  a framework for establishing how much augmentation to apply and which techniques to use. To determine
+  the ideal amount of augmentation, we use a modified Gini coefficient to understand how the augmentation
+  will affect the imbalance in the data set, and we find that there is an upper bound on how much augmentation
+  should be done (for our data set, 50 times per image). Our results also indicate that data augmentation
+  works best when used to reduce the amount of imbalance in a data set rather than uniformly over the
+  entire data set, as is typically done in the tropical cyclone intensity estimation literature. We then
+  devise a backward elimination feature selection algorithm to determine which augmentation techniques
+  work best. Our findings suggest that all augmentation techniques are effective for the estimation of
+  tropical cyclones intensity, including random erasing, which we were the first to implement in this
+  context.
+significance: 3
+cited_by: 5
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

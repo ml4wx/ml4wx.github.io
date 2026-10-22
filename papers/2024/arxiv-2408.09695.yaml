@@ -1,0 +1,52 @@
+id: arxiv-2408.09695
+title: 'On the Integration of Spatial-Temporal Knowledge: A Lightweight Approach to Atmospheric Time Series
+  Forecasting'
+authors:
+- Yisong Fu
+- Fei Wang
+- Zezhi Shao
+- Boyu Diao
+- Lin Wu
+- Zhulin An
+- Chengqing Yu
+- Yujie Li
+- Yongjun Xu
+date: '2024-08-19'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2408.09695'
+links:
+  paper: https://arxiv.org/abs/2408.09695
+  pdf: https://arxiv.org/pdf/2408.09695
+  code: https://github.com/GestaltCogTeam/STELLA
+topic: global-medium-range
+type: model
+method:
+- transformer
+timescale:
+- short
+spatial:
+- global
+data:
+- era5
+status: research
+summary: STELLA replaces Transformer layers with spatial-temporal position embeddings and an MLP, using
+  about 10k parameters to outperform advanced methods on five atmospheric datasets.
+abstract: 'Transformers have gained attention in atmospheric time series forecasting (ATSF) for their
+  ability to capture global spatial-temporal correlations. However, their complex architectures lead to
+  excessive parameter counts and extended training times, limiting their scalability to large-scale forecasting.
+  In this paper, we revisit ATSF from a theoretical perspective of atmospheric dynamics and uncover a
+  key insight: spatial-temporal position embedding (STPE) can inherently model spatial-temporal correlations
+  even without attention mechanisms. Its effectiveness arises from the integration of geographical coordinates
+  and temporal features, which are intrinsically linked to atmospheric dynamics. Based on this, we propose
+  STELLA, a Spatial-Temporal knowledge Embedded Lightweight modeL for ASTF, utilizing only STPE and an
+  MLP architecture in place of Transformer layers. With 10k parameters and one hour of training, STELLA
+  achieves superior performance on five datasets compared to other advanced methods. The paper emphasizes
+  the effectiveness of spatial-temporal knowledge integration over complex architectures, providing novel
+  insights for ATSF. The code is available at https://github.com/GestaltCogTeam/STELLA.'
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,55 @@
+id: doi-10.1016-j.wace.2024.100724
+title: Downscaling, bias correction, and spatial adjustment of extreme tropical cyclone rainfall in ERA5
+  using deep learning
+authors:
+- Guido Ascenso
+- Andrea Ficchì
+- Matteo Giuliani
+- Enrico Scoccimarro
+- Andrea Francesco Castelletti
+date: '2024-09-30'
+year: 2024
+venue: Weather and Climate Extremes
+venue_type: journal
+ids:
+  doi: 10.1016/j.wace.2024.100724
+  openalex: W4402968318
+links:
+  paper: https://doi.org/10.1016/j.wace.2024.100724
+topic: post-processing
+topics:
+- downscaling
+- extremes-hazards
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: U-Net with a compound MSE plus fractions-skill loss bias-corrects ERA5 tropical cyclone rainfall,
+  improving it by 3-28% where other models worsen total bias.
+abstract: Hydrological models that are used to analyse flood risk induced by tropical cyclones often input
+  ERA5 reanalysis data. However, ERA5 precipitation has large systematic biases, especially over heavy
+  precipitation events like Tropical Cyclones, compromising its usefulness in such scenarios. Few studies
+  to date have performed bias correction of ERA5 precipitation and none of them for extreme rainfall induced
+  by tropical cyclones. Additionally, most existing works on bias adjustment focus on adjusting pixel-wise
+  metrics of bias, such as the Mean Squared Error (MSE). However, it is equally important to ensure that
+  the rainfall peaks are correctly located within the rainfall maps, especially if these maps are then
+  used as input to hydrological models. In this paper, we describe a novel machine learning model that
+  addresses both gaps, RA-U c m p d , based on the popular U-Net model. The key novelty of RA-U c m p
+  d is its loss function, the compound loss , which optimizes both a pixel-wise bias metric (the MSE)
+  and a spatial verification metric (a modified version of the Fractions Skill Score). Our results show
+  how RA-U c m p d improves ERA5 in almost all metrics by 3-28%—more than the other models we used for
+  comparison which actually worsen the total rainfall bias of ERA5—at the cost of a slightly increased
+  (3%) error on the magnitude of the peak. We analyse the behaviour of RA-U c m p d by visualizing accumulated
+  maps of four particularly wet tropical cyclones and by dividing our data according to the Saffir-Simpson
+  scale and to whether they made landfall, and we perform an error analysis to understand under what conditions
+  our model performs best.
+significance: 4
+cited_by: 11
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

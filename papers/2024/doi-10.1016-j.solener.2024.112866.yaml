@@ -1,0 +1,63 @@
+id: doi-10.1016-j.solener.2024.112866
+title: Solar radiation nowcasting based on geostationary satellite images and deep learning models
+authors:
+- Yang Cui
+- Ping Wang
+- Jan Fokke Meirink
+- Nikolaos Ntantis
+- Jasper S. Wijnands
+date: '2024-09-05'
+year: 2024
+venue: Solar Energy
+venue_type: journal
+ids:
+  doi: 10.1016/j.solener.2024.112866
+  openalex: W4402284828
+links:
+  paper: https://doi.org/10.1016/j.solener.2024.112866
+  code: https://github.com/Yangcherry2024/SolarRadiation-nowcast-DGMR-SO
+orgs:
+- knmi
+topic: nowcasting
+topics:
+- applications-impacts
+type: evaluation
+method:
+- gan-vae
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Applies the DGMR generative radar nowcasting model to 0–4 h solar radiation forecasts from satellite
+  cloud data, finding UNet best on errors and DGMR-SO better qualitatively after about 45 min.
+abstract: '• Six types of solar radiation nowcasting models are explored. • UNet and DGMR-SO are utilized
+  as deep learning models. • Satellite images are utilized for cloud properties and solar radiation forecast.
+  • Deep learning models and blurred optical flow outperforms the other comparison methods. • Enable auxiliary
+  decision-making for power systems. Reliable solar radiation and photovoltaic power prediction is essential
+  for the safe and stable operation of electric power systems. Cloud cover is highly related with solar
+  radiation, but existing extrapolation-based cloud forecast methods have difficulties in capturing cloud
+  development. Therefore, we applied two deep learning models and a physical method for solar radiation
+  forecast. First, for the first time we applied the novel Deep Generative Model of Radar (originally
+  developed for radar precipitation nowcasting) to predict solar radiation (named as DGMR-SO). Second,
+  the well-known UNet model was used for comparison. Third, we developed a physical method based on cloud
+  physical properties forecasting. An optical flow model was used to predict the five cloud properties
+  from satellite measurements, followed by a Cloud Physical Properties algorithm to compute solar radiation
+  from the advected cloud properties. A spatial blurring strategy was also applied to the optical flow
+  results in order to reduce the forecast errors. Finally, the smart persistence model and the HARMONIE
+  numerical weather prediction model forecast were utilized as benchmark methods. The forecast horizon
+  was 0–4 h with 15 min temporal resolution. All methods have been calibrated and tested using data from
+  the Netherlands. In general, UNet shows the lowest errors, while DGMR-SO outperforms the competitors
+  on qualitative performance after around 45 min. The forecast accuracy of each method also depends on
+  sky conditions. The study findings are expected to encourage the inclusion of satellite data in solar
+  radiation nowcasting, and can provide scientific guidance for power systems and solar power plants.Our
+  code is open-sourced at: https://github.com/Yangcherry2024/SolarRadiation-nowcast-DGMR-SO/ .'
+significance: 4
+cited_by: 27
+score: 61
+highlight: false
+added: '2026-10-22'
+source: backfill

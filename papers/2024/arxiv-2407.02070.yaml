@@ -1,0 +1,48 @@
+id: arxiv-2407.02070
+title: Latent Diffusion Model for Generating Ensembles of Climate Simulations
+authors:
+- Johannes Meuer
+- Maximilian Witte
+- Tobias Sebastian Finn
+- Claudia Timmreck
+- Thomas Ludwig
+- Christopher Kadow
+date: '2024-07-02'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2407.02070'
+  openalex: W4400374165
+links:
+  paper: https://arxiv.org/abs/2407.02070
+  pdf: https://arxiv.org/pdf/2407.02070
+topic: probabilistic-ensembles
+topics:
+- climate-emulation
+type: model
+method:
+- diffusion
+- gan-vae
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: Combines a VAE with a latent diffusion model to generate climate ensemble members trained on
+  the MPI Grand Ensemble, matching original variability at much lower memory cost.
+abstract: 'Obtaining accurate estimates of uncertainty in climate scenarios often requires generating
+  large ensembles of high-resolution climate simulations, a computationally expensive and memory intensive
+  process. To address this challenge, we train a novel generative deep learning approach on extensive
+  sets of climate simulations. The model consists of two components: a variational autoencoder for dimensionality
+  reduction and a denoising diffusion probabilistic model that generates multiple ensemble members. We
+  validate our model on the Max Planck Institute Grand Ensemble and show that it achieves good agreement
+  with the original ensemble in terms of variability. By leveraging the latent space representation, our
+  model can rapidly generate large ensembles on-the-fly with minimal memory requirements, which can significantly
+  improve the efficiency of uncertainty quantification in climate simulations.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

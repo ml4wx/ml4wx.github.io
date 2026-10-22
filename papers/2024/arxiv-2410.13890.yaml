@@ -1,0 +1,52 @@
+id: arxiv-2410.13890
+title: Machine Learning-Based Estimation of Superdroplet Growth Rates Using DNS Data
+authors:
+- Divyaprakash
+- Nikita N. Makwana
+- Amitabh Bhattacharya
+- Bipin Kumar
+date: '2024-10-12'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2410.13890'
+  openalex: W4403995268
+links:
+  paper: https://arxiv.org/abs/2410.13890
+  pdf: https://arxiv.org/pdf/2410.13890
+topic: hybrid-parameterization
+type: model
+method:
+- classical-ml
+spatial:
+- local
+data:
+- km-scale-sim
+status: research
+summary: A machine-learning parameterization maps DNS-derived effective supersaturation to superdroplet
+  growth rates in LES, reaching R² near 0.9 on preliminary tests.
+abstract: Droplet growth and size spectra play a crucial role in the microphysics of atmospheric clouds.
+  However, it is challenging to represent droplet growth rate accurately in cloud-resolving models such
+  as Large Eddy Simulations (LESs). The assumption of "well-mixed" condition within each grid cell, often
+  made by traditional LES solvers, typically falls short near the edges of clouds, where sharp gradients
+  in water vapor supersaturation occur. This under-resolution of supersaturation gradients can lead to
+  significant errors in prediction of droplet growth rate, which in turn affects the prediction of buoyancy
+  at cloud edges, as well as forecast of precipitation. In "superdroplet" based LES model, a Lagrangian
+  coarse-graining approach groups multiple droplets into superdroplets, each encompassing a specific number
+  and size of actual droplets. The superdroplets are advected by the underlying LES velocity field, and
+  the growth rate of these superdroplets is based on the filtered supersaturation field represented by
+  the LES. To overcome the limitations of the "well-mixed" assumption, we propose a parameterization for
+  superdroplet growth using high-fidelity Direct Numerical Simulation (DNS) data. We introduce a novel
+  clustering algorithm to map droplets in DNS fields to superdroplets. The effective supersaturation at
+  each superdroplet location is computed by averaging the unfiltered supersaturation of the associated
+  droplets, which may differ from the value of filtered supersaturation at the superdroplet location.
+  We then develop a machine learning-based parameterization to relate the effective growth rate of superdroplets
+  to other filtered DNS flow variables. Preliminary results show a promising $R^2$ value of nearly 0.9
+  between the predicted and true effective supersaturation values for the superdroplets, for a range of
+  superdroplet multiplicities.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

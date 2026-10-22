@@ -1,0 +1,61 @@
+id: doi-10.5194-amt-17-3103-2024
+title: 'Atmospheric motion vector (AMV) error characterization and bias correction by leveraging independent
+  lidar data: a simulation using an observing system simulation experiment (OSSE) and optical flow AMVs'
+authors:
+- Hai Nguyen
+- Derek J. Posselt
+- Igor Yanovsky
+- Longtao Wu
+- Svetla M. Hristova‐Veleva
+date: '2024-05-23'
+year: 2024
+venue: Atmospheric measurement techniques
+venue_type: journal
+ids:
+  doi: 10.5194/amt-17-3103-2024
+  openalex: W4398237640
+links:
+  paper: https://doi.org/10.5194/amt-17-3103-2024
+  pdf: https://amt.copernicus.org/articles/17/3103/2024/amt-17-3103-2024.pdf
+orgs:
+- nasa
+- caltech
+topic: observations-remote-sensing
+topics:
+- data-assimilation
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- other
+status: research
+summary: A supervised model uses sparse lidar winds to correct bias in passive-sensor atmospheric motion
+  vectors and gives prediction intervals, tested in an OSSE with WRF.
+abstract: Abstract. Accurate estimation of global winds is crucial for various scientific and practical
+  applications, such as global chemical transport modeling and numerical weather prediction. One valuable
+  source of wind measurements is Atmospheric Motion Vectors (AMVs), which play a vital role in the global
+  observing system and numerical weather prediction models. However, errors in AMV retrievals need to
+  be addressed before their assimilation into data assimilation systems, as they can affect the accuracy
+  of outputs. An assessment of the bias and uncertainty in passive-sensor AMVs can be done by comparing
+  them with information from independent sources such as active-sensor winds. In this paper, we examine
+  the benefit and performance of a colocation scheme using independent and sparse lidar wind observations
+  as a dependent variable in a supervised machine learning model. We demonstrate the feasibility and performance
+  of this approach in an Observing System Simulation Experiment (OSSE) framework, with reference geophysical
+  state data obtained from high resolution Weather Research and Forecasting (WRF) Model simulations of
+  three different weather events. Lidar wind data are typically available in only one direction, and our
+  study demonstrates that this single component of wind in high-precision active-sensor data can be leveraged
+  (via a machine learning algorithm to model the conditional mean) to reduce the bias in the passive-sensor
+  winds. Further, this active-sensor wind information can be leveraged through an algorithm that models
+  the conditional quantiles to produce stable estimates of the prediction intervals, which are helpful
+  in design and application of error analysis. We also found that the uncertainty prediction of this single-component
+  wind has a positive linear relationship with the total-vector root-mean-squared-vector-difference (RMSVD),
+  which can aid in design of quality indicators and filters.
+significance: 3
+cited_by: 1
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

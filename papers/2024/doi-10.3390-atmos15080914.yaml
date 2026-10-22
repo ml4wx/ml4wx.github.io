@@ -1,0 +1,53 @@
+id: doi-10.3390-atmos15080914
+title: Spatiotemporal Predictive Learning for Radar-Based Precipitation Nowcasting
+authors:
+- Xiaoying Wang
+- Haixiang Zhao
+- Guojing Zhang
+- Qin Guan
+- Yu Zhu
+date: '2024-07-31'
+year: 2024
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos15080914
+  openalex: W4401212097
+links:
+  paper: https://doi.org/10.3390/atmos15080914
+  pdf: https://www.mdpi.com/2073-4433/15/8/914/pdf?version=1722416978
+topic: nowcasting
+type: evaluation
+method:
+- cnn
+- rnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Benchmarks 15 deep learning radar nowcasting models and proposes SimVP-GMA, which improves MSE
+  and LPIPS over SimVP and better captures heavy rainfall.
+abstract: Based on C-band weather radar and ground precipitation data from the Helan Mountain area in
+  Yinchuan between 2017 to 2020, we evaluated the forecasting performances of 15 mainstream deep learning
+  models used in recent years, including recurrent-based and recurrent-free models. The critical success
+  index (CSI), probability of detection (POD), false alarm rate (FAR), mean square error (MSE), mean absolute
+  error (MAE), and learned perceptual image patch similarity (LPIPS), were used to evaluate the forecasting
+  abilities. The results showed that (1) recurrent-free models have significant parameter quantity and
+  computing power advantages, especially the SimVP model. Among the recurrent-based models, PredRNN and
+  PredRNN++ demonstrate good predictive capabilities for changes in echolocation and intensity, PredRNN++
+  performs better in predicting long sequences (1 h); (2) SimVP uses Inception to extract temporal features,
+  which cannot capture the complex physical changes in radar echo images and fails to extract spatial–temporal
+  correlations and accurately predict heavy rainfall areas effectively. Therefore, we constructed the
+  SimVP-GMA model, replacing the temporal prediction module in SimVP and modifying the spatial encoder
+  part. Compared with SimVP, the MSE and LPIPS indicators were improved by 0.55 and 0.0193, respectively.
+  It can be seen from the forecast images that the forecast details have been significantly improved,
+  especially in the forecasting of heavy rainfall weather.
+significance: 3
+cited_by: 7
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

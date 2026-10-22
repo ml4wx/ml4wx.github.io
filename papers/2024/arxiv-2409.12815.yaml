@@ -1,0 +1,47 @@
+id: arxiv-2409.12815
+title: Graph Convolutional Neural Networks as Surrogate Models for Climate Simulation
+authors:
+- Kevin Potter
+- Carianne Martinez
+- Reina Pradhan
+- Samantha Brozak
+- Steven Sleder
+- Lauren Wheeler
+date: '2024-09-19'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2409.12815'
+  openalex: W4403747993
+links:
+  paper: https://arxiv.org/abs/2409.12815
+  pdf: https://arxiv.org/pdf/2409.12815
+topic: climate-emulation
+type: model
+method:
+- gnn
+timescale:
+- climate
+spatial:
+- global
+data:
+- other
+status: research
+summary: Graph convolutional and fully connected networks emulate an Earth system model, simulating 80
+  years in about 310 seconds on one GPU with mean temperature error below 0.1 C.
+abstract: Many climate processes are characterized using large systems of nonlinear differential equations;
+  this, along with the immense amount of data required to parameterize complex interactions, means that
+  Earth-System Model (ESM) simulations may take weeks to run on large clusters. Uncertainty quantification
+  may require thousands of runs, making ESM simulations impractical for preliminary assessment. Alternatives
+  may include simplifying the processes in the model, but recent efforts have focused on using machine
+  learning to complement these models or even act as full surrogates. \textit{We leverage machine learning,
+  specifically fully-connected neural networks (FCNNs) and graph convolutional neural networks (GCNNs),
+  to enable rapid simulation and uncertainty quantification in order to inform more extensive ESM simulations.}
+  Our surrogate simulated 80 years in approximately 310 seconds on a single A100 GPU, compared to weeks
+  for the ESM model while having mean temperature errors below $0.1^{\circ}C$ and maximum errors below
+  $2^{\circ}C$.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

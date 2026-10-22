@@ -1,0 +1,66 @@
+id: doi-10.1038-s41612-024-00769-0
+title: Evaluation of five global AI models for predicting weather in Eastern Asia and Western Pacific
+authors:
+- Cheng-Chin Liu
+- Kathryn Hsu
+- Melinda S. Peng
+- Der-Song Chen
+- Pao‐Liang Chang
+- Ling‐Feng Hsiao
+- Chin–Tzu Fong
+- Jing‐Shan Hong
+- Chia-Ping Cheng
+- Kuo-Chen Lu
+- Chia-Rong Chen
+- Hung‐Chi Kuo
+date: '2024-09-28'
+year: 2024
+venue: npj Climate and Atmospheric Science
+venue_type: journal
+ids:
+  doi: 10.1038/s41612-024-00769-0
+  openalex: W4402938066
+links:
+  paper: https://doi.org/10.1038/s41612-024-00769-0
+  pdf: https://www.nature.com/articles/s41612-024-00769-0.pdf
+topic: global-medium-range
+topics:
+- benchmarks-data-eval
+- extremes-hazards
+type: evaluation
+method:
+- transformer
+- gnn
+timescale:
+- medium
+spatial:
+- regional
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: Compares Pangu-Weather, FourCastNet v2, GraphCast, FuXi and FengWu over East Asia; FengWu performs
+  best and a five-model ensemble rivals it.
+abstract: 'Abstract Recently, the development of artificial intelligence (AI) has led to the fruition
+  of machine-learning (ML) based weather prediction (MLWP) systems. Five global models have emerged as
+  notable contenders: Pangu-Weather, FourCastNet v2 (FCN2), GraphCast, FuXi, and FengWu. Despite utilizing
+  different AI/ML methodologies, all five systems rely on the ECMWF Reanalysis v5 (ERA5), as their training
+  dataset. This study evaluates the performance of these five models in the Eastern Asia region from June
+  to November 2023 with our own simulations using identical initial conditions from ERA5. The evaluation
+  comprises three key metrics: 1) Synoptic-scale prediction assessment with Root Mean Square Error and
+  Anomaly Correlation Coefficients, 2) Typhoon predictions as extreme weather cases, and 3) Local rainfalls
+  induced by a typhoon. Results indicate that FengWu emerges as the best-performing model, followed by
+  FuXi and GraphCast, with FCN2 and Pangu-Weather ranking lower. Notably, performance of the ECMWF IFS
+  lies within the MLWP model range. A multi-model ensemble, formed by averaging predictions from all five
+  models, demonstrates superior performance, rivaling that of FengWu. For the 11 typhoons in 2023, FengWu
+  demonstrates the most accurate track prediction. While Pangu-Weather displays the largest overall track
+  error, it still excels in predicting the tracks of 3 typhoons. Meanwhile, FengWu has the largest intensity
+  errors. In addition, both GraphCast and FuXi demonstrate some encouraging precipitation predictions
+  associated with typhoons. Suggestions for future improvements in MLWP models are discussed.'
+significance: 5
+cited_by: 39
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

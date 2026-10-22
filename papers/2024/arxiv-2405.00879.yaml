@@ -1,0 +1,47 @@
+id: arxiv-2405.00879
+title: Machine Learning Techniques for Data Reduction of Climate Applications
+authors:
+- Xiao Li
+- Qian Gong
+- Jaemoon Lee
+- Scott Klasky
+- Anand Rangarajan
+- Sanjay Ranka
+date: '2024-05-01'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2405.00879'
+links:
+  paper: https://arxiv.org/abs/2405.00879
+  pdf: https://arxiv.org/pdf/2405.00879
+topic: infra-software
+topics:
+- observations-remote-sensing
+type: model
+method:
+- gan-vae
+- cnn
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: Neural-network-guided, error-bounded autoencoder compression that spends low error only on regions
+  where tropical cyclones or atmospheric rivers occur in E3SM climate data, giving high compression ratios.
+abstract: Scientists conduct large-scale simulations to compute derived quantities-of-interest (QoI) from
+  primary data. Often, QoI are linked to specific features, regions, or time intervals, such that data
+  can be adaptively reduced without compromising the integrity of QoI. For many spatiotemporal applications,
+  these QoI are binary in nature and represent presence or absence of a physical phenomenon. We present
+  a pipelined compression approach that first uses neural-network-based techniques to derive regions where
+  QoI are highly likely to be present. Then, we employ a Guaranteed Autoencoder (GAE) to compress data
+  with differential error bounds. GAE uses QoI information to apply low-error compression to only these
+  regions. This results in overall high compression ratios while still achieving downstream goals of simulation
+  or data collections. Experimental results are presented for climate data generated from the E3SM Simulation
+  model for downstream quantities such as tropical cyclone and atmospheric river detection and tracking.
+  These results show that our approach is superior to comparable methods in the literature.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

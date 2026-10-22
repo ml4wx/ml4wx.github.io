@@ -1,0 +1,76 @@
+id: doi-10.1175-aies-d-23-0035.1
+title: Identifying Climate Patterns Using Clustering Autoencoder Techniques
+authors:
+- Takuya Kurihana
+- Ilijana Mastilovic
+- Lijing Wang
+- Aurelien O. Meray
+- Satyarth Praveen
+- Zexuan Xu
+- Milad Memarzadeh
+- Alexander Lavin
+- Haruko Murakami Wainwright
+date: '2024-06-18'
+year: 2024
+venue: Artificial Intelligence for the Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1175/aies-d-23-0035.1
+  openalex: W4399775800
+links:
+  paper: https://doi.org/10.1175/aies-d-23-0035.1
+orgs:
+- nasa
+- mit
+- lbnl-nersc
+- university-of-chicago
+topic: climate-analysis-attribution
+topics:
+- benchmarks-data-eval
+type: model
+method:
+- cnn
+- classical-ml
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+status: research
+summary: Convolutional clustering autoencoders compress 70 years of GFDL-ESM2G CONUS projections by a
+  factor of 660,000 and identify five physically reasonable climate zones, with clustering up to 9.2 times
+  faster.
+abstract: Abstract The complexity of growing spatiotemporal resolution of climate simulations produces
+  a variety of climate patterns under different projection scenarios. This paper proposes a new data-driven
+  climate classification workflow via an unsupervised deep learning technique that can dimensionally reduce
+  the vast volume of spatiotemporal numerical climate projection data into a compact representation. We
+  aim to identify distinct zones that capture multiple climate variables as well as their future changes
+  under different climate change scenarios. Our approach leverages convolutional autoencoders combined
+  with k-means clustering (standard autoencoder) and online clustering based on the Sinkhorn–Knopp algorithm
+  (clustering autoencoder) across the conterminous United States (CONUS) to capture unique climate patterns
+  in a data-driven fashion from the Geophysical Fluid Dynamics Laboratory Earth System Model with GOLD
+  component (GFDL-ESM2G). The developed approach compresses 70 years of GFDL-ESM2G simulation at 0.125°
+  spatial resolution across the CONUS under multiple warming scenarios to a lower-dimensional space by
+  a factor of 660 000 and then tested on 150 years of GFDL-ESM2G simulation data. The results show that
+  five climate clusters capture physically reasonable and spatially stable climatological patterns matched
+  to known climate classes defined by human experts. Results also show that using a clustering autoencoder
+  can reduce the computational time for clustering by up to 9.2 times when compared to using a standard
+  autoencoder. Our five unique climate patterns resulting from the deep learning–based clustering of the
+  lower-dimensional space thereby enable us to provide insights on hydrometeorology and its spatial heterogeneity
+  across the conterminous United States immediately without downloading large climate datasets. Significance
+  Statement This paper presents a data-driven climate classification approach using unsupervised deep
+  learning to dimensionally reduce climate model outputs and to identify distinct climate regions for
+  their future changes. Our approach compresses climate information for 70 years of Geophysical Fluid
+  Dynamics Laboratory Earth System Model data across the conterminous United States (CONUS) at 0.125°
+  spatial resolution. The results reveal that five climate clusters capture reasonable and stable climatological
+  patterns matched to known climate patterns. The embedded clustering process in deep learning provides
+  ×9.2 times faster execution than the k-means clustering technique. These results give us insight about
+  climate spatial patterns and heterogeneity of hydrological patterns across the conterminous United States
+  without downloading large climate datasets.
+significance: 3
+cited_by: 9
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

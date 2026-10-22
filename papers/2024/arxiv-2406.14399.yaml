@@ -1,0 +1,53 @@
+id: arxiv-2406.14399
+title: Benchmarking Physics-Informed Time-Series Models for Operational Global Station Weather Forecasting
+authors:
+- Tao Han
+- Zhibin Wen
+- Zhenghao Chen
+- Dazhao Du
+- Song Guo
+- Lei Bai
+date: '2024-06-20'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2406.14399'
+  openalex: W4399911799
+links:
+  paper: https://arxiv.org/abs/2406.14399
+  pdf: https://arxiv.org/pdf/2406.14399
+  code: https://github.com/taohan10200/WEATHER-5K
+topic: benchmarks-data-eval
+topics:
+- local-forecasting
+type: benchmark
+method:
+- transformer
+- physics-constrained
+timescale:
+- short
+spatial:
+- global
+- local
+data:
+- stations
+status: research
+summary: WEATHER-5K is a large station observation dataset, and PhysicsFormer, a physics-informed transformer,
+  is benchmarked against operational NWP for station weather forecasting.
+abstract: 'The development of Time-Series Forecasting (TSF) models is often constrained by the lack of
+  comprehensive datasets, especially in Global Station Weather Forecasting (GSWF), where existing datasets
+  are small, temporally short, and spatially sparse. To address this, we introduce WEATHER-5K, a large-scale
+  observational weather dataset that better reflects real-world conditions, supporting improved model
+  training and evaluation. While recent TSF methods perform well on benchmarks, they lag behind operational
+  Numerical Weather Prediction systems in capturing complex weather dynamics and extreme events. We propose
+  PhysicsFormer, a physics-informed forecasting model combining a dynamic core with a Transformer residual
+  to predict future weather states. Physical consistency is enforced via pressure-wind alignment and energy-aware
+  smoothness losses, ensuring plausible dynamics while capturing complex temporal patterns. We benchmark
+  PhysicsFormer and other TSF models against operational systems across several weather variables, extreme
+  event prediction, and model complexity, providing a comprehensive assessment of the gap between academic
+  TSF models and operational forecasting. The dataset and benchmark implementation are available at: https://github.com/taohan10200/WEATHER-5K.'
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

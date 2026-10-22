@@ -1,0 +1,62 @@
+id: doi-10.3390-rs16111867
+title: Enhanced Wind Field Spatial Downscaling Method Using UNET Architecture and Dual Cross-Attention
+  Mechanism
+authors:
+- Jieli Liu
+- Chunxiang Shi
+- Lingling Ge
+- Ruian Tie
+- Xiaojian Chen
+- Tao Zhou
+- Xiang Gu
+- Zhanfei Shen
+date: '2024-05-23'
+year: 2024
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs16111867
+  openalex: W4398251381
+links:
+  paper: https://doi.org/10.3390/rs16111867
+orgs:
+- nuist
+topic: downscaling
+type: model
+method:
+- cnn
+- transformer
+spatial:
+- regional
+data:
+- other
+status: research
+summary: UNET with dual cross-attention downscales 10 m wind from 6.25 km to 1 km over China, reaching
+  RMSE 0.40 m/s, outperforming SNCA-CLDASSD.
+abstract: Before 2008, China lacked high-coverage regional surface observation data, making it difficult
+  for the China Meteorological Administration Land Data Assimilation System (CLDAS) to directly backtrack
+  high-resolution, high-quality land assimilation products. To address this issue, this paper proposes
+  a deep learning model named UNET_DCA, based on the UNET architecture, which incorporates a Dual Cross-Attention
+  module (DCA) for multiscale feature fusion by introducing Channel Cross-Attention (CCA) and Spatial
+  Cross-Attention (SCA) mechanisms. This model focuses on the near-surface 10-m wind field and achieves
+  spatial downscaling from 6.25 km to 1 km. We conducted training and validation using data from 2020–2021,
+  tested with data from 2019, and performed ablation experiments to validate the effectiveness of each
+  module. We compared the results with traditional bilinear interpolation methods and the SNCA-CLDASSD
+  model. The experimental results show that the UNET-based model outperforms SNCA-CLDASSD, indicating
+  that the UNET-based model captures richer information in wind field downscaling compared to SNCA-CLDASSD,
+  which relies on sequentially stacked CNN convolution modules. UNET_CCA and UNET_SCA, incorporating cross-attention
+  mechanisms, outperform UNET without attention mechanisms. Furthermore, UNET_DCA, incorporating both
+  Channel Cross-Attention and Spatial Cross-Attention mechanisms, outperforms UNET_CCA and UNET_SCA, which
+  only incorporate one attention mechanism. UNET_DCA performs best on the RMSE, MAE, and COR metrics (0.40
+  m/s, 0.28 m/s, 0.93), while UNET_DCA_ars, incorporating more auxiliary information, performs best on
+  the PSNR and SSIM metrics (29.006, 0.880). Evaluation across different methods indicates that the optimal
+  model performs best in valleys, followed by mountains, and worst in plains; it performs worse during
+  the day and better at night; and as wind speed levels increase, accuracy decreases. Overall, among various
+  downscaling methods, UNET_DCA and UNET_DCA_ars effectively reconstruct the spatial details of wind fields,
+  providing a deeper exploration for the inversion of high-resolution historical meteorological grid data.
+significance: 3
+cited_by: 11
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

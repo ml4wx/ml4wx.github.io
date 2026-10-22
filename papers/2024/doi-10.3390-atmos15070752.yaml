@@ -1,0 +1,68 @@
+id: doi-10.3390-atmos15070752
+title: Improvement in the Forecasting of Low Visibility over Guizhou, China, Based on a Multi-Variable
+  Deep Learning Model
+authors:
+- Dongpo He
+- Yuetong Wang
+- Yuanzhi Tang
+- Dexuan Kong
+- Jing Yang
+- Wenyu Zhou
+- Haishan Li
+- Fen Wang
+date: '2024-06-24'
+year: 2024
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos15070752
+  openalex: W4399968958
+links:
+  paper: https://doi.org/10.3390/atmos15070752
+orgs:
+- cma
+topic: post-processing
+topics:
+- local-forecasting
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- regional
+- local
+data:
+- nwp-analysis
+- stations
+status: research
+summary: U2net-based deep learning model improves hourly visibility forecasts up to 72 h over Guizhou,
+  roughly doubling threat score versus the CMA-GD NWP model and eightfold below 200 m.
+abstract: High-quality visibility forecasting benefits traffic transportation safety, public services,
+  and tourism. For a more accurate forecast of the visibility in the Guizhou region of China, we constructed
+  several visibility forecasting models via progressive refinements in different compositions of input
+  observational variables and the adoption of the Unet architecture to perform hourly visibility forecasts
+  with lead times ranging from 0 to 72 h over Guizhou, China. Three Unet-based visibility forecasting
+  models were constructed according to different inputs of meteorological variables. The model training
+  via multiple observational variables and visibility forecasts of a high-spatiotemporal-resolution numerical
+  weather prediction model (China Meteorological Administration, Guangdong, CMA-GD) produced a higher
+  threat score (TS), which led to substantial improvements for different thresholds of visibility compared
+  to CMA-GD. However, the Unet-based models had a larger bias score (BS) than the CMA-GD model. By introducing
+  the U2net architecture, there was a further improvement in the TS of the model by approximately a factor
+  of two compared to the Unet model, along with a significant reduction in the BS, which enhanced the
+  stability of the model forecast. In particular, the U2net-based model performed the best in terms of
+  the TS below the visibility threshold of 200 m, with a more than eightfold increase over the CMA-GD
+  model. Furthermore, the U2net-based model had some improvements in the TS, BS, and RMSE (root-mean-square
+  error) compared to the LSTM_Attention model. The spatial distribution of the TS showed that the U2net-based
+  model performed better at the model grid scale of 3 km than at the scale of individual weather stations.
+  In summary, the visibility forecasting model based on the U2net algorithm, multiple observational variables,
+  and visibility data from the CMA-GD model performed the best. The compositions of input observational
+  variables were the key factor in improving the deep learning model’s forecasting capability, and these
+  improvements could improve the value of forecasts and support the socioeconomic needs of sectors reliant
+  on visibility forecasting.
+significance: 3
+cited_by: 4
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

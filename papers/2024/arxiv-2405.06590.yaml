@@ -1,0 +1,53 @@
+id: arxiv-2405.06590
+title: Decomposing weather forecasting into advection and convection with neural networks
+authors:
+- Mengxuan Chen
+- Ziqi Yuan
+- Jinxiao Zhang
+- Runmin Dong
+- Haohuan Fu
+date: '2024-05-10'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2405.06590'
+  openalex: W4396907066
+links:
+  paper: https://arxiv.org/abs/2405.06590
+  pdf: https://arxiv.org/pdf/2405.06590
+orgs:
+- tsinghua-university
+topic: global-medium-range
+topics:
+- hybrid-parameterization
+type: model
+method:
+- gnn
+- other
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Separates a graph attention network for advection from an MLP for convection in a data-driven
+  global forecaster, outperforming prior data-driven models at 5.625 degrees with fewer parameters.
+abstract: Operational weather forecasting models have advanced for decades on both the explicit numerical
+  solvers and the empirical physical parameterization schemes. However, the involved high computational
+  costs and uncertainties in these existing schemes are requiring potential improvements through alternative
+  machine learning methods. Previous works use a unified model to learn the dynamics and physics of the
+  atmospheric model. Contrarily, we propose a simple yet effective machine learning model that learns
+  the horizontal movement in the dynamical core and vertical movement in the physical parameterization
+  separately. By replacing the advection with a graph attention network and the convection with a multi-layer
+  perceptron, our model provides a new and efficient perspective to simulate the transition of variables
+  in atmospheric models. We also assess the model's performance over a 5-day iterative forecasting. Under
+  the same input variables and training methods, our model outperforms existing data-driven methods with
+  a significantly-reduced number of parameters with a resolution of 5.625 deg. Overall, this work aims
+  to contribute to the ongoing efforts that leverage machine learning techniques for improving both the
+  accuracy and efficiency of global weather forecasting.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

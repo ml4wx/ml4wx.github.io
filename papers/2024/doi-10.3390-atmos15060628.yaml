@@ -1,0 +1,55 @@
+id: doi-10.3390-atmos15060628
+title: Residual Spatiotemporal Convolutional Neural Network Based on Multisource Fusion Data for Approaching
+  Precipitation Forecasting
+authors:
+- Tianpeng Zhang
+- Donghai Wang
+- Lindong Huang
+- Yihao Chen
+- Enguang Li
+date: '2024-05-24'
+year: 2024
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos15060628
+  openalex: W4398768160
+links:
+  paper: https://doi.org/10.3390/atmos15060628
+topic: nowcasting
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- era5
+- stations
+status: research
+summary: A residual spatiotemporal CNN fuses surface and reanalysis data with radar echoes to improve
+  0–3 h heavy rainfall nowcasts over baselines.
+abstract: Approaching precipitation forecast refers to the prediction of precipitation within a short
+  time scale, which is usually regarded as a spatiotemporal sequence prediction problem based on radar
+  echo maps. However, due to its reliance on single-image prediction, it lacks good capture of sudden
+  severe convective events and physical constraints, which may lead to prediction ambiguities and issues
+  such as false alarms and missed alarms. Therefore, this study dynamically combines meteorological elements
+  from surface observations with upper-air reanalysis data to establish complex nonlinear relationships
+  among meteorological variables based on multisource data. We design a Residual Spatiotemporal Convolutional
+  Network (ResSTConvNet) specifically for this purpose. In this model, data fusion is achieved through
+  the channel attention mechanism, which assigns weights to different channels. Feature extraction is
+  conducted through simultaneous three-dimensional and two-dimensional convolution operations using a
+  pure convolutional structure, allowing the learning of spatiotemporal feature information. Finally,
+  feature fitting is accomplished through residual connections, enhancing the model’s predictive capability.
+  Furthermore, we evaluate the performance of our model in 0–3 h forecasting. The results show that compared
+  with baseline methods, this network exhibits significantly better performance in predicting heavy rainfall.
+  Moreover, as the forecast lead time increases, the spatial features of the forecast results from our
+  network are richer than those of other baseline models, leading to more accurate predictions of precipitation
+  intensity and coverage area.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

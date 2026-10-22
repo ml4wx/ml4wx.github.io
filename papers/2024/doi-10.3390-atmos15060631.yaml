@@ -1,0 +1,64 @@
+id: doi-10.3390-atmos15060631
+title: 'Deep-Learning Correction Methods for Weather Research and Forecasting (WRF) Model Precipitation
+  Forecasting: A Case Study over Zhengzhou, China'
+authors:
+- Jianbin Zhang
+- Zhiqiu Gao
+- Yubin Li
+date: '2024-05-24'
+year: 2024
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos15060631
+  openalex: W4398783871
+links:
+  paper: https://doi.org/10.3390/atmos15060631
+orgs:
+- nuist
+topic: post-processing
+topics:
+- regional-km-scale
+type: model
+method:
+- rnn
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: research
+summary: A PBT-GRU model corrects hourly WRF precipitation over Zhengzhou, cutting RMSE by 63% relative
+  to raw WRF and beating RF, SVM, KNN and GBDT.
+abstract: 'Systematic biases and coarse resolutions are major limitations of current precipitation datasets.
+  Many studies have been conducted for precipitation bias correction and downscaling. However, it is still
+  challenging for the current approaches to handle the complex features of hourly precipitation, resulting
+  in the incapability of reproducing small-scale features, such as extreme events. In this study, we proposed
+  a deep-learning model called PBT (Population-Based Training)-GRU (Gate Recurrent Unit) based on numerical
+  model NWP gridded forecast data and observation data and employed machine-learning (ML) methods, such
+  as Random Forest (RF), Support Vector Machine (SVM), K-Nearest Neighbor (KNN), and Gradient-Boosted
+  Decision Tree (GBDT), to correct the WRF hourly precipitation forecasts. To select the evaluation method,
+  we conducted a sample balance experiment and found that when the proportion of positive and negative
+  samples was 1:1, the Threat Score (TS) and accuracy scores were the highest, while the Probability of
+  Detection (POD) score was slightly lower. The results showed that: (1) the overall errors of the PBT-GRU
+  model were relatively smaller, and its root mean square error (RMSE) was only 1.12 mm, which was reduced
+  by 63.04%, 51.72%, 58.36%, 37.43%, and 26.32% compared to the RMSE of WRF, SVM, KNN, GBDT, and RF, respectively;
+  and (2) according to the Taylor diagram, the standard deviation (σn) and correlation coefficient (r)
+  of PBT-GRU were 1.02 and 0.99, respectively, while the σn and r of RF were 1.12 and 0.98, respectively.
+  Furthermore, the σn and r of the SVM, GBDT, and KNN models were between those of the above models, with
+  values of 1.24 and 0.95, 1.15 and 0.97, and 1.26 and 0.93, respectively. Based on a comprehensive analysis
+  of the TS, accuracy, RMSE, r and σn, the PBT-GRU model performed the best, with a significantly better
+  correction effect than that of the ML methods, resulting in an overall performance ranking of PBT-GRU
+  > RF > GBDT > SVM > KNN. This study provides a hint of the possibility that the proposed PBT-GRU model
+  can outperform model precipitation correction based on a small sample of one-station data. Thus, due
+  to its promising performance and excellent robustness, we recommend adopting the proposed PBT-GRU model
+  for precipitation correction in business applications.'
+significance: 3
+cited_by: 12
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

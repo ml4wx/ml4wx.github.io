@@ -1,0 +1,59 @@
+id: doi-10.3390-s24154895
+title: Improving Nowcasting of Intense Convective Precipitation by Incorporating Dual-Polarization Radar
+  Variables into Generative Adversarial Networks
+authors:
+- Pengjie Cai
+- He Huang
+- Taoli Liu
+date: '2024-07-28'
+year: 2024
+venue: Sensors
+venue_type: journal
+ids:
+  doi: 10.3390/s24154895
+  openalex: W4401074689
+links:
+  paper: https://doi.org/10.3390/s24154895
+topic: nowcasting
+type: model
+method:
+- gan-vae
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Adversarial Autoregressive Network uses two-stage generators and SSIM loss to nowcast intense
+  convective precipitation from dual-polarization radar, targeting blurring and error accumulation.
+abstract: 'The nowcasting of strong convective precipitation is highly demanded and presents significant
+  challenges, as it offers meteorological services to diverse socio-economic sectors to prevent catastrophic
+  weather events accompanied by strong convective precipitation from causing substantial economic losses
+  and human casualties. With the accumulation of dual-polarization radar data, deep learning models based
+  on data have been widely applied in the nowcasting of precipitation. Deep learning models exhibit certain
+  limitations in the nowcasting approach: The evolutionary method is prone to accumulate errors throughout
+  the iterative process (where multiple autoregressive models generate future motion fields and intensity
+  residuals and then implicitly iterate to yield predictions), and the "regression to average" issue of
+  autoregressive model leads to the "blurring" phenomenon. The evolution method''s generator is a two-stage
+  model: In the initial stage, the generator employs the evolution method to generate the provisional
+  forecasted data; in the subsequent stage, the generator reprocesses the provisional forecasted data.
+  Although the evolution method''s generator is a generative adversarial network, the adversarial strategy
+  adopted by this model ignores the significance of temporary prediction data. Therefore, this study proposes
+  an Adversarial Autoregressive Network (AANet): Firstly, the forecasted data are generated via the two-stage
+  generators (where FURENet directly produces the provisional forecasted data, and the Semantic Synthesis
+  Model reprocesses the provisional forecasted data); Subsequently, structural similarity loss (SSIM loss)
+  is utilized to mitigate the influence of the "regression to average" issue; Finally, the two-stage adversarial
+  (Tadv) strategy is adopted to assist the two-stage generators to generate more realistic and highly
+  similar generated data. It has been experimentally verified that AANet outperforms NowcastNet in the
+  nowcasting of the next 1 h, with a reduction of 0.0763 in normalized error (NE), 0.377 in root mean
+  square error (RMSE), and 4.2% in false alarm rate (FAR), as well as an enhancement of 1.45 in peak signal-to-noise
+  ratio (PSNR), 0.0208 in SSIM, 5.78% in critical success index (CSI), 6.25% in probability of detection
+  (POD), and 5.7% in F1.'
+significance: 3
+cited_by: 2
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

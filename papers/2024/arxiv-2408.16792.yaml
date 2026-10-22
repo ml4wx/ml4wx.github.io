@@ -1,0 +1,49 @@
+id: arxiv-2408.16792
+title: Uncertainty-aware segmentation for rainfall prediction post processing
+authors:
+- Simone Monaco
+- Luca Monaco
+- Daniele Apiletti
+date: '2024-08-28'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2408.16792'
+  openalex: W4402951149
+links:
+  paper: https://arxiv.org/abs/2408.16792
+  pdf: https://arxiv.org/pdf/2408.16792
+topic: post-processing
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- cnn
+- gan-vae
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Proposes SDE U-Net, an uncertainty-aware segmentation model for post-processing daily NWP precipitation
+  forecasts, giving the best accuracy-reliability trade-off against NWP and other deep learning baselines.
+abstract: Accurate precipitation forecasts are crucial for applications such as flood management, agricultural
+  planning, water resource allocation, and weather warnings. Despite advances in numerical weather prediction
+  (NWP) models, they still exhibit significant biases and uncertainties, especially at high spatial and
+  temporal resolutions. To address these limitations, we explore uncertainty-aware deep learning models
+  for post-processing daily cumulative quantitative precipitation forecasts to obtain forecast uncertainties
+  that lead to a better trade-off between accuracy and reliability. Our study compares different state-of-the-art
+  models, and we propose a variant of the well-known SDE-Net, called SDE U-Net, tailored to segmentation
+  problems like ours. We evaluate its performance for both typical and intense precipitation events. Our
+  results show that all deep learning models significantly outperform the average baseline NWP solution,
+  with our implementation of the SDE U-Net showing the best trade-off between accuracy and reliability.
+  Integrating these models, which account for uncertainty, into operational forecasting systems can improve
+  decision-making and preparedness for weather-related events.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

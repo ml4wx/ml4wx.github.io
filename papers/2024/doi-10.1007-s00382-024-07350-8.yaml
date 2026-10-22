@@ -1,0 +1,57 @@
+id: doi-10.1007-s00382-024-07350-8
+title: On the suitability of a convolutional neural network based RCM-emulator for fine spatio-temporal
+  precipitation
+authors:
+- Antoine Doury
+- Samuel Somot
+- Sébastien Gadat
+date: '2024-07-26'
+year: 2024
+venue: Climate Dynamics
+venue_type: journal
+ids:
+  doi: 10.1007/s00382-024-07350-8
+  openalex: W4401057144
+links:
+  paper: https://doi.org/10.1007/s00382-024-07350-8
+orgs:
+- meteo-france
+topic: downscaling
+topics:
+- climate-emulation
+type: model
+method:
+- cnn
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+- km-scale-sim
+status: research
+summary: CNN RCM-emulator with an asymmetric loss reproduces 12 km precipitation distributions and extremes,
+  transferring across driving GCMs.
+abstract: Abstract High resolution climate models are necessary to capture local precipitation but are
+  too expensive to explore the uncertainties associated with future projections. To solve this resolution-uncertainty
+  dilemma, Doury et al (2022) proposed a neural network based RCM-emulator for the near-surface temperature,
+  at a daily and 12km-resolution. It uses existing RCM simulations to learn the relationship between low-resolution
+  predictors and high resolution surface variables. When trained the emulator can be applied to any GCM
+  simulation to produce ensembles of high resolution emulated simulations. This study assess the suitability
+  of applying the RCM-emulator for precipitation thanks to a novel asymmetric loss function targeting
+  to reproduce the entire precipitation distribution over any grid point. In perfect model evaluation,
+  the resulting emulator shows striking ability to reproduce the RCM original series with an excellent
+  spatio-temporal correlation. In particular, a very good behaviour is obtained for the two tails of the
+  distribution, measured by the number of dry days and the 99th quantile. Moreover, it creates consistent
+  precipitation objects with a slight lack of precision. The emulator quality holds for all simulations
+  of the same RCM, with any driving GCM, ensuring transferability of the tool to GCMs never downscaled
+  by the RCM. A first showcase of downscaling GCM simulations showed that the RCMemulator brings significant
+  added-value with respect to the GCM as it produces adequate high resolution spatial structure and extremes’
+  intensity. Nevertheless, further work is needed to understand the differences that occur with the RCM
+  and establish a relevant evaluation framework for GCM applications.
+significance: 4
+cited_by: 29
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,61 @@
+id: doi-10.3390-atmos15101229
+title: 'A Method Based on Deep Learning for Severe Convective Weather Forecast: CNN-BiLSTM-AM (Version
+  1.0)'
+authors:
+- Jianbin Zhang
+- Meng Yin
+- Pu Perry Wang
+- Zhiqiu Gao
+date: '2024-10-15'
+year: 2024
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos15101229
+  openalex: W4403406713
+links:
+  paper: https://doi.org/10.3390/atmos15101229
+  pdf: https://www.mdpi.com/2073-4433/15/10/1229/pdf?version=1728974428
+orgs:
+- nuist
+topic: extremes-hazards
+topics:
+- nowcasting
+type: model
+method:
+- cnn
+- rnn
+- transformer
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+- stations
+status: research
+summary: CNN-BiLSTM with attention forecasts severe convective and heavy precipitation from ERA5 and observations,
+  outperforming ConvLSTM and PredRNN++ and highlighting PWAT and CAPE as drivers.
+abstract: In this study, we propose a model called CNN-BiLSTM-AM that utilizes deep learning techniques
+  to forecast severe convective weather based on ERA5 hourly data and observations. The model integrates
+  a CNN with a Bidirectional Long Short-Term Memory (BiLSTM) system and an Attention Mechanism (AM). The
+  CNN is tasked with extracting features from the input data, while the BiLSTM effectively captures temporal
+  dependencies. The AM enhances the results by considering the impact of past feature states on severe
+  weather phenomena. Additionally, we assess the performance of our model in comparison to traditional
+  network architectures, including ConvLSTM, Predrnn++, CNN, FC-LSTM, and LSTM. Our results indicate that
+  the CNN-BiLSTM-AM model exhibits superior accuracy in precipitation forecasting. Especially with the
+  extension of the forecast time, the model performs well across multiple evaluation metrics. Furthermore,
+  an interpretability analysis of the convective weather mechanisms utilizing machine learning highlights
+  the critical role of total precipitable water (PWAT) in short-term heavy precipitation forecasts. It
+  also emphasizes the significant impact of regional variables on convective weather patterns and the
+  role of convective available potential energy (CAPE) in fostering conditions conducive to convection.
+  These findings not only confirm the effectiveness of deep learning in the automatic identification of
+  severe weather features but also validate the suitability of the sample dataset employed. Given its
+  remarkable performance and robustness, we advocate for the adoption of this model to enhance the forecast
+  of severe convective weather across various business applications.
+significance: 3
+cited_by: 19
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

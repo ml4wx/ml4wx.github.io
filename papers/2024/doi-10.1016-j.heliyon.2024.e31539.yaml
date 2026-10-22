@@ -1,0 +1,51 @@
+id: doi-10.1016-j.heliyon.2024.e31539
+title: A CNN-LSTM model using elliptical constraints for temporally consistent sun position estimation
+authors:
+- Mpabulungi Mark
+- Kyeongmin Yu
+- Hyun-Ki Hong
+date: '2024-05-01'
+year: 2024
+venue: Heliyon
+venue_type: journal
+ids:
+  doi: 10.1016/j.heliyon.2024.e31539
+  openalex: W4397030398
+links:
+  paper: https://doi.org/10.1016/j.heliyon.2024.e31539
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+- rnn
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- other
+status: research
+summary: A ResNet-LSTM with elliptical constraints estimates sun position from image sequences under cloud
+  occlusion, reaching R² of 0.98 on sky-camera datasets.
+abstract: More accurate sun position estimation could transform the design and operation of solar power
+  systems, weather forecasting services, and outdoor augmented reality systems. Although several image-based
+  approaches to sun position estimation have been proposed, their performance is significantly affected
+  by momentary disruptions in cloud cover because they use only a single image as input. This study proposes
+  a deep learning-based sun position estimation system that leverages spatial, temporal, and geometric
+  features to accurately regress sun positions even when the sun is partially or entirely occluded. In
+  the proposed approach, spatial features are extracted from an input image sequence by applying a separate
+  Resnet-based convolution network to each frame. To ensure that the temporal changes in the brightness
+  distribution across frames are considered, the spatial features are concatenated and passed on to a
+  stack of LSTM layers prior to regressing the final sun position. The proposed network is also trained
+  with elliptical (geometric) constraints to ensure that predicted sun positions are consistent with the
+  natural elliptical path of the sun in the sky. The proposed approach's performance was evaluated on
+  the Sirta and Laval datasets along with a custom dataset, and an R 2 Score of 0.98 was achieved, which
+  is at least 0.1 higher than that of previous approaches. The proposed approach is capable of identifying
+  the position of the sun even when occluded and was employed in a novel sky imaging system consisting
+  of only a camera and fisheye lens in place of a complex array of sensors
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

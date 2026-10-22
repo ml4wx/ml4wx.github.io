@@ -1,0 +1,59 @@
+id: arxiv-2410.12938
+title: Local Off-Grid Weather Forecasting with Multi-Modal Earth Observation Data
+authors:
+- Qidong Yang
+- Jonathan Giezendanner
+- Daniel Salles Civitarese
+- Johannes Jakubik
+- Eric Schmitt
+- Anirban Chandra
+- Jeremy Vila
+- Detlef Hohl
+- Chris Hill
+- Campbell Watson
+- Sherrie Wang
+date: '2024-10-16'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2410.12938'
+  doi: 10.1029/2025ms005207
+links:
+  paper: https://arxiv.org/abs/2410.12938
+  pdf: https://arxiv.org/pdf/2410.12938
+topic: local-forecasting
+topics:
+- downscaling
+type: model
+method:
+- transformer
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+- nwp-analysis
+status: research
+summary: Multimodal transformer fuses station observations with gridded forecasts for off-grid locations,
+  cutting error by up to 80% versus gridded-only models.
+abstract: Urgent applications like wildfire management and renewable energy generation require precise,
+  localized weather forecasts near the Earth's surface. However, forecasts produced by machine learning
+  models or numerical weather prediction systems are typically generated on large-scale regular grids,
+  where direct downscaling fails to capture fine-grained, near-surface weather patterns. In this work,
+  we propose a multi-modal transformer model trained end-to-end to downscale gridded forecasts to off-grid
+  locations of interest. Our model directly combines local historical weather observations (e.g., wind,
+  temperature, dewpoint) with gridded forecasts to produce locally accurate predictions at various lead
+  times. Multiple data modalities are collected and concatenated at station-level locations, treated as
+  a token at each station. Using self-attention, the token corresponding to the target location aggregates
+  information from its neighboring tokens. Experiments using weather stations across the Northeastern
+  United States show that our model outperforms a range of data-driven and non-data-driven off-grid forecasting
+  methods. They also reveal that direct input of station data provides a phase shift in local weather
+  forecasting accuracy, reducing the prediction error by up to 80% compared to pure gridded data based
+  models. This approach demonstrates how to bridge the gap between large-scale weather models and locally
+  accurate forecasts to support high-stakes, location-sensitive decision-making.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,59 @@
+id: doi-10.22541-essoar.172070530.05098424-v1
+title: Inferring parameters in a complex land surface model by combining data assimilation and machine
+  learning
+authors:
+- Lasse Torben Keetz
+- Kristoffer Aalstad
+- Rosie A. Fisher
+- Christian Poppe Terán
+- Bibi S. Naz
+- Norbert Pirk
+- Yeliz A. Yılmaz
+- Olav Skarpaas
+date: '2024-07-11'
+year: 2024
+venue_type: other
+ids:
+  doi: 10.22541/essoar.172070530.05098424/v1
+  openalex: W4400541933
+links:
+  paper: https://doi.org/10.22541/essoar.172070530.05098424/v1
+orgs:
+- juelich
+topic: data-assimilation
+type: model
+method:
+- classical-ml
+spatial:
+- local
+data:
+- stations
+- other
+status: research
+summary: Combines an ensemble Kalman smoother, ML emulator and MCMC to calibrate CLM-FATES land surface
+  parameters, reducing GPP errors by 10–30% at a boreal site.
+abstract: 'Complex Land Surface Models (LSMs) rely on a plethora of parameters. These parameters and the
+  associated process formulations are often poorly constrained, which hampers reliable predictions of
+  ecosystem dynamics and climate feedbacks. Robust and uncertainty-aware parameter estimation with observations
+  is complicated by, for example, the high dimensionality of the model parameter space and the computational
+  cost of LSM simulations. Herein, we adapt a novel Bayesian data assimilation and machine learning framework
+  termed ‘calibrate, emulate, sample‘ (CES) to infer parameters in a widely-used LSM coupled with a demographic
+  vegetation model (CLM-FATES). First, an iterative ensemble Kalman smoother provides an initial estimate
+  of the posterior distribution (‘calibrate‘). Subsequently, a machine-learning-based emulator is trained
+  on the resulting model-observation mismatches to predict outcomes for unseen parameter combinations
+  (‘emulate‘). Finally, this emulator replaces CLM-FATES simulations in an adaptive Markov Chain Monte
+  Carlo approach enabling computationally feasible posterior sampling with enhanced uncertainty quantification
+  (‘sample‘). We test our implementation with synthetic and real observations representing a boreal forest
+  site in southern Finland. We estimate a total of six plant-functional-type-specific photosynthetic parameters
+  by assimilating evapotranspiration (ET) and gross primary production (GPP) flux data. CES provided the
+  best estimates of the synthetic truth parameters when compared to data-blind emulator sampling designs
+  while all approaches reduced model-observation errors compared to a default parameter simulation (GPP:
+  -10% to -30%, ET: -4% to -6%). Although errors were also consistently reduced with real data, comparing
+  the emulator designs was less conclusive, which we mainly attribute to equifinality and insufficient
+  experiment complexity.'
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,53 @@
+id: arxiv-2410.08218
+title: A Visual-Analytical Approach for Automatic Detection of Cyclonic Events in Satellite Observations
+authors:
+- Akash Agrawal
+- Mayesh Mohapatra
+- Abhinav Raja
+- Paritosh Tiwari
+- Vishwajeet Pattanaik
+- Neeru Jaiswal
+- Arpit Agarwal
+- Punit Rathore
+date: '2024-09-25'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2410.08218'
+links:
+  paper: https://arxiv.org/abs/2410.08218
+  pdf: https://arxiv.org/pdf/2410.08218
+topic: extremes-hazards
+topics:
+- observations-remote-sensing
+type: model
+method:
+- cnn
+- rnn
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Two-stage CNN and CNN-LSTM pipeline detects cyclones in INSAT-3D imagery over the North Indian
+  Ocean and estimates intensity from image input alone.
+abstract: Estimating the location and intensity of tropical cyclones holds crucial significance for predicting
+  catastrophic weather events. In this study, we approach this task as a detection and regression challenge,
+  specifically over the North Indian Ocean (NIO) region where best tracks location and wind speed information
+  serve as the labels. The current process for cyclone detection and intensity estimation involves physics-based
+  simulation studies which are time-consuming, only using image features will automate the process for
+  significantly faster and more accurate predictions. While conventional methods typically necessitate
+  substantial prior knowledge for training, we are exploring alternative approaches to enhance efficiency.
+  This research aims to focus specifically on cyclone detection, intensity estimation and related aspects
+  using only image input and data-driven approaches and will lead to faster inference time and automate
+  the process as opposed to current NWP models being utilized at SAC. In context to algorithm development,
+  a novel two stage detection and intensity estimation module is proposed. In the first level detection
+  we try to localize the cyclone over an entire image as captured by INSAT3D over the NIO (North Indian
+  Ocean). For the intensity estimation task, we propose a CNN-LSTM network, which works on the cyclone
+  centered images, utilizing a ResNet-18 backbone, by which we are able to capture both temporal and spatial
+  characteristics.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

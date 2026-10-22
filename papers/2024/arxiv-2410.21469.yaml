@@ -1,0 +1,52 @@
+id: arxiv-2410.21469
+title: Hybrid Bayesian Smoothing on Surfaces
+authors:
+- Matthew Hofkes
+- Douglas W. Nychka
+date: '2024-10-28'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2410.21469'
+  openalex: W4404340756
+links:
+  paper: http://arxiv.org/abs/2410.21469
+  pdf: https://arxiv.org/pdf/2410.21469
+topic: climate-emulation
+type: model
+method:
+- classical-ml
+- other
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: Hybrid Bayesian model with scaled-mixture priors emulates CESM large-ensemble climate sensitivity
+  fields, capturing abrupt ocean-land transitions that Gaussian processes miss.
+abstract: Modeling spatial processes that exhibit both smooth and rough features poses a significant challenge.
+  This is especially true in fields where complex physical variables are observed across spatial domains.
+  Traditional spatial techniques, such as Gaussian processes (GPs), are ill-suited to capture sharp transitions
+  and discontinuities in spatial fields. In this paper, we propose a new approach incorporating non-Gaussian
+  processes (NGPs) into a hybrid model which identifies both smooth and rough components. Specifically,
+  we model the rough process using scaled mixtures of Gaussian distributions in a Bayesian hierarchical
+  model (BHM). Our motivation comes from the Community Earth System Model Large Ensemble (CESM-LE), where
+  we seek to emulate climate sensitivity fields that exhibit complex spatial patterns, including abrupt
+  transitions at ocean-land boundaries. We demonstrate that traditional GP models fail to capture such
+  abrupt changes and that our proposed hybrid model, implemented through a full Gibbs sampler. This significantly
+  improves model interpretability and accurate recovery of process parameters. Through a multi-factor
+  simulation study, we evaluate the performance of several scaled mixtures designed to model the rough
+  process. The results highlight the advantages of using these heavier tailed priors as a replacement
+  to the Bayesian fused LASSO. One prior in particular, the normal Jeffrey's prior stands above the rest.
+  We apply our model to the CESM-LE dataset, demonstrating its ability to better represent the mean function
+  and its uncertainty in climate sensitivity fields. This work combines the strengths of GPs for smooth
+  processes with the flexibility of NGPs for abrupt changes. We provide a computationally efficient Gibbs
+  sampler and include additional strategies for accelerating Monte Carlo Markov Chain (MCMC) sampling.
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

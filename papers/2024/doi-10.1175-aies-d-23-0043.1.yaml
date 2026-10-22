@@ -1,0 +1,62 @@
+id: doi-10.1175-aies-d-23-0043.1
+title: 'Spatially Local Surrogate Modeling of Subgrid-Scale Effects in Idealized Atmospheric Flows: A
+  Deep Learned Approach Using High-Resolution Simulation Data'
+authors:
+- Muralikrishnan Gopalakrishnan Meena
+- Matthew Ross Norman
+- David Matthew Hall
+- Michael S. Pritchard
+date: '2024-09-24'
+year: 2024
+venue: Artificial Intelligence for the Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1175/aies-d-23-0043.1
+  openalex: W4402758161
+links:
+  paper: https://doi.org/10.1175/aies-d-23-0043.1
+  pdf: https://essopenarchive.org/doi/pdf/10.22541/essoar.167591085.58653689
+orgs:
+- nvidia
+- ornl
+topic: hybrid-parameterization
+type: model
+method:
+- other
+spatial:
+- regional
+data:
+- km-scale-sim
+status: research
+summary: Neural networks learn spatially local subgrid corrections from high-resolution simulations of
+  idealized stratified flow, improving coarse simulation accuracy until instability after about 90 steps.
+abstract: Abstract We introduce a machine learned surrogate model from high-resolution simulation data
+  to capture the subgrid-scale effects in dry, stratified atmospheric flows. We use deep neural networks
+  (NNs) to model the spatially local state differences between a coarse-resolution simulation and a high-resolution
+  simulation. The setup enables the capture of both dissipative and antidissipative effects in the state
+  differences. The NN model is able to accurately capture the state differences in offline tests outside
+  the training regime. In online tests intended for production use, the NN-coupled coarse simulation has
+  higher accuracy over a significant period of time compared to the coarse-resolution simulation without
+  any correction. We provide evidence of the capability of the NN model to accurately capture high-gradient
+  regions in the flow field. With the accumulation of the errors, the NN-coupled simulation becomes computationally
+  unstable after approximately 90 coarse simulation time steps. Insights gained from these surrogate models
+  further pave the way for formulating stable, complex, physics-based spatially local NN models which
+  are driven by traditional subgrid-scale turbulence closure models. Significance Statement Flows in the
+  atmosphere are highly chaotic and turbulent, comprising flow structures of broad scales. For effective
+  computational modeling of atmospheric flows, the effects of the small- and large-scale structures need
+  to be captured by the simulations. Capturing the small-scale structures requires fine-resolution simulations.
+  Even with the current state-of-the-art supercomputers, it can be prohibitively expensive to simulate
+  these flows when computed for the entire earth over climate time scales. Thus, it is necessary to focus
+  on the larger-scale structures using a coarse-resolution simulation while capturing the effects of the
+  smaller-scale structures using some parameterization (approximation) scheme and incorporating it into
+  the coarse-resolution simulation. We use machine learning to model the effects of the small-scale structures
+  (subgrid-scale effects) in atmospheric flows. Data from a fine-resolution simulation is used to compute
+  the missing subgrid-scale effects in coarse-resolution simulations. We then use machine learning models
+  to approximate these differences between the coarse- and fine-resolution simulations. We see improved
+  accuracy for the coarse-resolution simulations when corrected using these machine learned models.
+significance: 3
+cited_by: 2
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

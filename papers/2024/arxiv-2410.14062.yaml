@@ -1,0 +1,50 @@
+id: arxiv-2410.14062
+title: 'Data-driven rainfall prediction at a regional scale: a case study with Ghana'
+authors:
+- Indrajit Kalita
+- Lucia Vilallonga
+- Yves Atchade
+date: '2024-10-17'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2410.14062'
+links:
+  paper: https://arxiv.org/abs/2410.14062
+  pdf: https://arxiv.org/pdf/2410.14062
+topic: regional-km-scale
+topics:
+- post-processing
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+- satellite
+status: research
+summary: U-Net models trained on ERA5 and GPM-IMERG predict 24h Ghana rainfall at 12h and 30h leads, matching
+  ECMWF's 18h forecasts at 12h lead.
+abstract: With a warming planet, tropical regions are expected to experience the brunt of climate change,
+  with more intense and more volatile rainfall events. Currently, state-of-the-art numerical weather prediction
+  (NWP) models are known to struggle to produce skillful rainfall forecasts in tropical regions of Africa.
+  There is thus a pressing need for improved rainfall forecasting in these regions. Over the last decade
+  or so, the increased availability of large-scale meteorological datasets and the development of powerful
+  machine learning models have opened up new opportunities for data-driven weather forecasting. Focusing
+  on Ghana in this study, we use these tools to develop two U-Net convolutional neural network (CNN) models,
+  to predict 24h rainfall at 12h and 30h lead-time. The models were trained using data from the ERA5 reanalysis
+  dataset, and the GPM-IMERG dataset. A special attention was paid to interpretability. We developed a
+  novel statistical methodology that allowed us to probe the relative importance of the meteorological
+  variables input in our model, offering useful insights into the factors that drive precipitation in
+  the Ghana region. Empirically, we found that our 12h lead-time model has performances that match, and
+  in some accounts are better than the 18h lead-time forecasts produced by the ECMWF (as available in
+  the TIGGE dataset). We also found that combining our data-driven model with classical NWP further improves
+  forecast accuracy.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

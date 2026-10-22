@@ -1,0 +1,43 @@
+id: arxiv-2408.02767
+title: 4D-Var using Hessian approximation and backpropagation applied to automatically-differentiable
+  numerical and machine learning models
+authors:
+- Kylen Solvik
+- Stephen G. Penny
+- Stephan Hoyer
+date: '2024-08-05'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2408.02767'
+links:
+  paper: https://arxiv.org/abs/2408.02767
+  pdf: https://arxiv.org/pdf/2408.02767
+topic: data-assimilation
+topics:
+- hybrid-parameterization
+type: model
+method:
+- differentiable
+data:
+- other
+status: research
+summary: Uses automatic differentiation with Hessian approximation for 4D-Var, applicable to ML surrogate
+  models, and tests it on Lorenz-96 and quasi-geostrophic systems.
+abstract: Constraining a numerical weather prediction (NWP) model with observations via 4D variational
+  (4D-Var) data assimilation is often difficult to implement in practice due to the need to develop and
+  maintain a software-based tangent linear model and adjoint model. One of the most common 4D-Var algorithms
+  uses an incremental update procedure, which has been shown to be an approximation of the Gauss-Newton
+  method. Here we demonstrate that when using a forecast model that supports automatic differentiation,
+  an efficient and in some cases more accurate alternative approximation of the Gauss-Newton method can
+  be applied by combining backpropagation of errors with Hessian approximation. This approach can be used
+  with either a conventional numerical model implemented within a software framework that supports automatic
+  differentiation, or a machine learning (ML) based surrogate model. We test the new approach on a variety
+  of Lorenz-96 and quasi-geostrophic models. The results indicate potential for a deeper integration of
+  modeling, data assimilation, and new technologies in a next-generation of operational forecast systems
+  that leverage weather models designed to support automatic differentiation.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill
