@@ -5,21 +5,21 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/nowcasting/)
 
-13 papers (2 ⭐). Newest first.
+13 papers (4 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
 | 2023-12-11 | [DiffCast: A Unified Framework via Residual Diffusion for Precipitation Nowcasting](https://arxiv.org/abs/2312.06734)<br><sub>Demin Yu, Xutao Li, Yunming Ye et al. · 2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</sub> |  | [code](https://github.com/DeminYu98/DiffCast) |
-| 2023-07-05 | ⭐ [Skilful nowcasting of extreme precipitation with NowcastNet](https://doi.org/10.1038/s41586-023-06184-4)<br><sub>Yuchen Zhang, Mingsheng Long, Kaiyuan Chen et al. · Nature</sub> |  |  |
-| 2023-06-06 | [Deep Learning for Day Forecasts from Sparse Observations](https://arxiv.org/abs/2306.06079)<br><sub>Marcin Andrychowicz, Lasse Espeholt, Di Li et al.</sub> |  |  |
-| 2023-04-25 | [Latent diffusion models for generative precipitation nowcasting with accurate uncertainty quantification](https://arxiv.org/abs/2304.12891)<br><sub>Jussi Leinonen, Ulrich Hamann, Daniele Nerini et al.</sub> |  |  |
+| 2023-07-05 | ⭐ [Skilful nowcasting of extreme precipitation with NowcastNet](https://doi.org/10.1038/s41586-023-06184-4)<br><sub>Yuchen Zhang, Mingsheng Long, Kaiyuan Chen et al. · Nature</sub> | China Meteorological Administration (CMA), Tsinghua University (NowcastNet), University of California, Berkeley |  |
+| 2023-06-06 | ⭐ [Deep Learning for Day Forecasts from Sparse Observations](https://arxiv.org/abs/2306.06079)<br><sub>Marcin Andrychowicz, Lasse Espeholt, Di Li et al.</sub> | Google Research |  |
+| 2023-04-25 | [Latent diffusion models for generative precipitation nowcasting with accurate uncertainty quantification](https://arxiv.org/abs/2304.12891)<br><sub>Jussi Leinonen, Ulrich Hamann, Daniele Nerini et al.</sub> | MeteoSwiss |  |
 | 2023-01-01 | [PreDiff: Precipitation Nowcasting with Latent Diffusion Models](https://arxiv.org/abs/2307.10422)<br><sub>Zhihan Gao, Xingjian Shi, Boran Han et al. · Advances in Neural Information Processing Systems 36</sub> |  |  |
 | 2022-01-01 | [Earthformer: Exploring Space-Time Transformers for Earth System Forecasting](https://arxiv.org/abs/2207.05833)<br><sub>Zhihan Gao, Xingjian Shi, Hao Wang et al. · Advances in Neural Information Processing Systems 35</sub> |  | [code](https://github.com/amazon-science/earth-forecasting-transformer) |
-| 2021-11-14 | [Skillful Twelve Hour Precipitation Forecasts using Large Context Neural Networks](https://arxiv.org/abs/2111.07470)<br><sub>Lasse Espeholt, Shreya Agrawal, Casper Sønderby et al. · Nature Communications</sub> |  |  |
-| 2021-04-02 | ⭐ [Skillful Precipitation Nowcasting using Deep Generative Models of Radar](https://arxiv.org/abs/2104.00954)<br><sub>Suman Ravuri, Karel Lenc, Matthew Willson et al. · Nature</sub> |  |  |
+| 2021-11-14 | [Skillful Twelve Hour Precipitation Forecasts using Large Context Neural Networks](https://arxiv.org/abs/2111.07470)<br><sub>Lasse Espeholt, Shreya Agrawal, Casper Sønderby et al. · Nature Communications</sub> | Google Research |  |
+| 2021-04-02 | ⭐ [Skillful Precipitation Nowcasting using Deep Generative Models of Radar](https://arxiv.org/abs/2104.00954)<br><sub>Suman Ravuri, Karel Lenc, Matthew Willson et al. · Nature</sub> | Google DeepMind, Met Office, University of Reading |  |
 | 2020-06-11 | [RainNet v1.0: a convolutional neural network for radar-based precipitation nowcasting](https://doi.org/10.5194/gmd-13-2631-2020)<br><sub>Georgy Ayzel, Tobias Scheffer, Maik Heistermann · Geoscientific Model Development</sub> |  |  |
-| 2020-03-24 | [MetNet: A Neural Weather Model for Precipitation Forecasting](https://arxiv.org/abs/2003.12140)<br><sub>Casper Kaae Sønderby, Lasse Espeholt, Jonathan Heek et al.</sub> |  |  |
-| 2019-12-11 | [Machine Learning for Precipitation Nowcasting from Radar Images](https://arxiv.org/abs/1912.12132)<br><sub>Shreya Agrawal, Luke Barrington, Carla Bromberg et al.</sub> |  |  |
+| 2020-03-24 | ⭐ [MetNet: A Neural Weather Model for Precipitation Forecasting](https://arxiv.org/abs/2003.12140)<br><sub>Casper Kaae Sønderby, Lasse Espeholt, Jonathan Heek et al.</sub> | Google Research |  |
+| 2019-12-11 | [Machine Learning for Precipitation Nowcasting from Radar Images](https://arxiv.org/abs/1912.12132)<br><sub>Shreya Agrawal, Luke Barrington, Carla Bromberg et al.</sub> | Google Research |  |
 | 2017-06-12 | [Deep Learning for Precipitation Nowcasting: A Benchmark and A New Model](https://arxiv.org/abs/1706.03458)<br><sub>Xingjian Shi, Zhihan Gao, Leonard Lausen et al.</sub> |  |  |
 | 2015-06-13 | [Convolutional LSTM Network: A Machine Learning Approach for Precipitation Nowcasting](https://arxiv.org/abs/1506.04214)<br><sub>Xingjian Shi, Zhourong Chen, Hao Wang et al.</sub> |  |  |
 

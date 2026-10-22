@@ -9,7 +9,7 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
-| 2022-09-02 | [GPROF-NN: a neural-network-based implementation of the Goddard Profiling Algorithm](https://doi.org/10.5194/amt-15-5033-2022)<br><sub>Simon Pfreundschuh, Paula J. Brown, Christian D. Kummerow et al. · Atmospheric Measurement Techniques</sub> |  |  |
+| 2022-09-02 | [GPROF-NN: a neural-network-based implementation of the Goddard Profiling Algorithm](https://doi.org/10.5194/amt-15-5033-2022)<br><sub>Simon Pfreundschuh, Paula J. Brown, Christian D. Kummerow et al. · Atmospheric Measurement Techniques</sub> | Colorado State University (incl. CIRA) |  |
 | 2022-05-02 | [Machine-learned cloud classes from satellite data for process-oriented climate model evaluation](https://arxiv.org/abs/2205.00743)<br><sub>A. Kaps, A. Lauer, G. Camps-Valls et al. · IEEE Transactions on Geoscience and Remote Sensing</sub> | Columbia University (LEAP, Lamont-Doherty) |  |
 | 2020-04-16 | [Development and Interpretation of a Neural Network-Based Synthetic Radar Reflectivity Estimator Using GOES-R Satellite Observations](https://arxiv.org/abs/2004.07906)<br><sub>Kyle A. Hilburn, Imme Ebert-Uphoff, Steven D. Miller · Journal of Applied Meteorology and Climatology</sub> | Colorado State University (incl. CIRA) |  |
 | 2019-12-01 | [Leveraging Modern Artificial Intelligence for Remote Sensing and NWP: Benefits and Challenges](https://doi.org/10.1175/bams-d-18-0324.1)<br><sub>Sid-Ahmed Boukabara, Vladimir Krasnopolsky, Jebb Q. Stewart et al. · Bulletin of the American Meteorological Society</sub> | Colorado State University (incl. CIRA), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |

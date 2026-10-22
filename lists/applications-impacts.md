@@ -9,14 +9,14 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
-| 2020-05-19 | [Comparative assessment of environmental variables and machine learning algorithms for maize yield prediction in the US Midwest](https://doi.org/10.1088/1748-9326/ab7df9)<br><sub>Yanghui Kang, Mutlu Ozdogan, Xiaojin Zhu et al. · Environmental Research Letters</sub> |  |  |
+| 2020-05-19 | [Comparative assessment of environmental variables and machine learning algorithms for maize yield prediction in the US Midwest](https://doi.org/10.1088/1748-9326/ab7df9)<br><sub>Yanghui Kang, Mutlu Ozdogan, Xiaojin Zhu et al. · Environmental Research Letters</sub> | NASA |  |
 | 2019-10-01 | [A review of deep learning for renewable energy forecasting](https://doi.org/10.1016/j.enconman.2019.111799)<br><sub>Huaizhi Wang, Zhenxing Lei, Xian Zhang et al. · Energy Conversion and Management</sub> |  |  |
 | 2019-09-09 | [The future of forecasting for renewable energy](https://doi.org/10.1002/wene.365)<br><sub>Conor Sweeney, Ricardo J. Bessa, Jethro Browell et al. · WIREs Energy and Environment</sub> |  |  |
-| 2019-08-01 | [Short-term solar power forecast with deep learning: Exploring optimal input and output configuration](https://doi.org/10.1016/j.solener.2019.06.041)<br><sub>Yuchi Sun, Vignesh Venugopal, Adam R. Brandt · Solar Energy</sub> |  |  |
+| 2019-08-01 | [Short-term solar power forecast with deep learning: Exploring optimal input and output configuration](https://doi.org/10.1016/j.solener.2019.06.041)<br><sub>Yuchi Sun, Vignesh Venugopal, Adam R. Brandt · Solar Energy</sub> | Stanford University |  |
 | 2019-06-10 | ⭐ [Tackling Climate Change with Machine Learning](https://arxiv.org/abs/1906.05433)<br><sub>David Rolnick, Priya L. Donti, Lynn H. Kaack et al. · ACM Computing Surveys</sub> | ETH Zurich, Google DeepMind, Google Research, Lawrence Berkeley National Laboratory / NERSC, Massachusetts Institute of Technology (MIT), New York University (M2LInES), Stanford University, University of California, Berkeley |  |
 | 2018-10-26 | [Machine learning methods for crop yield prediction and climate change impact assessment in agriculture](https://doi.org/10.1088/1748-9326/aae159)<br><sub>Andrew Crane-Droesch · Environmental Research Letters</sub> |  |  |
 | 2017-05-01 | [Machine learning methods for solar radiation forecasting: A review](https://doi.org/10.1016/j.renene.2016.12.095)<br><sub>Cyril Voyant, Gilles Notton, Soteris Kalogirou et al. · Renewable Energy</sub> |  |  |
-| 2017-02-12 | [Deep Gaussian Process for Crop Yield Prediction Based on Remote Sensing Data](https://doi.org/10.1609/aaai.v31i1.11172)<br><sub>Jiaxuan You, Xiaocheng Li, Melvin Low et al. · Proceedings of the AAAI Conference on Artificial Intelligence</sub> |  |  |
+| 2017-02-12 | [Deep Gaussian Process for Crop Yield Prediction Based on Remote Sensing Data](https://doi.org/10.1609/aaai.v31i1.11172)<br><sub>Jiaxuan You, Xiaocheng Li, Melvin Low et al. · Proceedings of the AAAI Conference on Artificial Intelligence</sub> | Stanford University |  |
 | 2016-10-01 | [Deep Learning for solar power forecasting — An approach using AutoEncoder and LSTM Neural Networks](https://doi.org/10.1109/smc.2016.7844673)<br><sub>André Gensler, Janosch Henze, Bernhard Sick et al. · 2016 IEEE International Conference on Systems, Man, and Cybernetics (SMC)</sub> |  |  |
 
 ## Also relevant
