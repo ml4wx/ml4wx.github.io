@@ -1,0 +1,65 @@
+id: doi-10.5194-gmd-15-1467-2022
+title: 'GAN–argcPredNet v1.0: a generative adversarial model for radar echo extrapolation based on convolutional
+  recurrent units'
+authors:
+- Kun Zheng
+- Yan Liu
+- Jinbiao Zhang
+- Cong Luo
+- Siyu Tang
+- Huihua Ruan
+- Qiya Tan
+- Yunlei Yi
+- Xiutao Ran
+date: '2022-02-18'
+year: 2022
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-15-1467-2022
+  openalex: W4213020131
+links:
+  paper: https://doi.org/10.5194/gmd-15-1467-2022
+  pdf: https://gmd.copernicus.org/articles/15/1467/2022/gmd-15-1467-2022.pdf
+orgs:
+- cma
+topic: nowcasting
+type: model
+method:
+- gan-vae
+- rnn
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: A GAN with convolutional recurrent units extrapolates Shenzhen radar echoes, raising POD and
+  CSI by 5.5% and 10.4% over rgcPredNet.
+abstract: Abstract. Precipitation nowcasting play a vital role in preventing meteorological disasters
+  and doppler radar data acts as an important input for nowcasting models. The traditional extrapolation
+  method is difficult to model highly nonlinear echo movements. The key challenge of the nowcasting mission
+  lies in achieving high-precision radar echo extrapolation. In recent years, machine learning has made
+  a great progress in the extrapolation of weather radar echoes. However, most of models neglect the multi-modal
+  characteristics of radar echo data, resulting in blurred and unrealistic prediction images. This paper
+  aims to solve this problem by utilizing the feature of the GAN that can enhance the multi-modal distribution
+  modelling, and design the radar echo extrapolation model of GAN-argcPredNet. The model composed of argcPredNet
+  generator and a convolutional neural network discriminator. In generator, a gate control data memory
+  and output are designed in the rgcLSTM prediction unit of the generator, thereby reducing the loss of
+  spatiotemporal information. In discriminator, model uses a dual-channel input method, which enables
+  it to strictly score according to the true echo distribution, and has a more powerful discrimination
+  ability. Through experiments on the radar data set of Shenzhen, China, the results show that the radar
+  echo hit rate (POD) and critical success index (CSI) increased by 5.5 % and %10.4 % compared with rgcPredNet,
+  the false alarm rate (FAR) is reduced by 15 %~20 %. From the comparison of the result graph and the
+  evaluation index, we also found a problem. The recursive prediction method will produce the phenomenon
+  that the prediction result will gradually deviate from the true value over time. In addition, the accuracy
+  of high-intensity echo extrapolation is relatively low. This is a question worthy of further investigation.
+  In the future, we will continue to conduct research from these two directions.
+significance: 3
+cited_by: 28
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

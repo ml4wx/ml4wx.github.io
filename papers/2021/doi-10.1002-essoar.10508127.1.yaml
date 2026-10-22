@@ -1,0 +1,47 @@
+id: doi-10.1002-essoar.10508127.1
+title: Detecting the presence of Tropical Cyclones using Deep Learning Techniques
+authors:
+- Daniel Galea
+- Bryan Lawrence
+- Julian Martin Kunkel
+date: '2021-10-04'
+year: 2021
+venue_type: other
+ids:
+  doi: 10.1002/essoar.10508127.1
+  openalex: W4250077267
+links:
+  paper: https://doi.org/10.1002/essoar.10508127.1
+orgs:
+- university-of-reading
+topic: extremes-hazards
+type: model
+method:
+- cnn
+spatial:
+- global
+data:
+- era5
+status: research
+summary: A lightweight deep learning filter detects tropical cyclones in running simulations with 92%
+  recall and 36% precision, so models save only relevant output.
+abstract: Tropical cyclones are severe weather events which have massive human and economic effect, so
+  it is important to be able to understand how their location, frequency and structure might change in
+  future climate. Here, a lightweight Deep Learning model is presented which is intended for detecting
+  the presence or absence of tropical cyclones in running numerical simulations. This model has been developed
+  to investigate the avoidance of saving vast amounts of data for analysis by filtering data during simulations
+  so as to save only relevant data. Subsequent analysis workflow can target that data, avoiding the need
+  to save all simulation outputs for cyclone analysis. The model was trained on ERA-Interim reanalysis
+  data from 1979 to 2017 and the training concentrated on delivering the highest possible recall rate
+  (successful detection of cyclones) while rejecting enough data to make a difference in outputs. When
+  tested using data from the two subsequent years, the recall rate was 92% and the precision was 36%.
+  For the desired filtration application, if the desired target included relevant meteorological events,
+  the effective precision was 85%. The recall rate compares favourably with other methods of cyclone identification
+  having the best Area Under Curve for the Precision/Recall (AUC-PR) and using the smallest number of
+  parameters for both training and inference.
+significance: 3
+cited_by: 1
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

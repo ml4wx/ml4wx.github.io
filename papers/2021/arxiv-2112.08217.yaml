@@ -1,0 +1,53 @@
+id: arxiv-2112.08217
+title: Probabilistic Forecasting with Generative Networks via Scoring Rule Minimization
+authors:
+- Lorenzo Pacchiardi
+- Rilwan Adewoyin
+- Peter Dueben
+- Ritabrata Dutta
+date: '2021-12-15'
+year: 2021
+venue: Journal of Machine Learning Research, 25(45), 2024
+venue_type: journal
+ids:
+  arxiv: '2112.08217'
+  openalex: W4308788288
+links:
+  paper: https://arxiv.org/abs/2112.08217
+  pdf: https://arxiv.org/pdf/2112.08217
+topic: probabilistic-ensembles
+topics:
+- global-medium-range
+type: model
+method:
+- other
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Generative networks trained with prequential scoring rules, avoiding adversarial training, improve
+  probabilistic calibration on chaotic models and a global weather benchmark.
+abstract: Probabilistic forecasting relies on past observations to provide a probability distribution
+  for a future outcome, which is often evaluated against the realization using a scoring rule. Here, we
+  perform probabilistic forecasting with generative neural networks, which parametrize distributions on
+  high-dimensional spaces by transforming draws from a latent variable. Generative networks are typically
+  trained in an adversarial framework. In contrast, we propose to train generative networks to minimize
+  a predictive-sequential (or prequential) scoring rule on a recorded temporal sequence of the phenomenon
+  of interest, which is appealing as it corresponds to the way forecasting systems are routinely evaluated.
+  Adversarial-free minimization is possible for some scoring rules; hence, our framework avoids the cumbersome
+  hyperparameter tuning and uncertainty underestimation due to unstable adversarial training, thus unlocking
+  reliable use of generative networks in probabilistic forecasting. Further, we prove consistency of the
+  minimizer of our objective with dependent data, while adversarial training assumes independence. We
+  perform simulation studies on two chaotic dynamical models and a benchmark data set of global weather
+  observations; for this last example, we define scoring rules for spatial data by drawing from the relevant
+  literature. Our method outperforms state-of-the-art adversarial approaches, especially in probabilistic
+  calibration, while requiring less hyperparameter tuning.
+significance: 4
+cited_by: 5
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

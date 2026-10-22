@@ -1,0 +1,61 @@
+id: doi-10.1007-s13351-022-1174-7
+title: Deep Learning for Seasonal Precipitation Prediction over China
+authors:
+- Weixin Jin
+- Yong Ming Luo
+- Tongwen Wu
+- Xiaomeng Huang
+- Wei Xue
+- Chaoqing Yu
+date: '2022-04-01'
+year: 2022
+venue: 气象学报：英文版
+venue_type: journal
+ids:
+  doi: 10.1007/s13351-022-1174-7
+  openalex: W4228999327
+links:
+  paper: https://doi.org/10.1007/s13351-022-1174-7
+  pdf: https://link.springer.com/content/pdf/10.1007/s13351-022-1174-7.pdf
+orgs:
+- tsinghua-university
+- cma
+topic: s2s-seasonal
+topics:
+- post-processing
+type: model
+method:
+- other
+timescale:
+- seasonal
+spatial:
+- regional
+data:
+- cmip
+- era5
+- stations
+status: pre-operational
+summary: A deep learning model pre-trained on GCM hindcasts and transfer-learned on ERA5 raises seasonal
+  China precipitation correlation by 0.10-0.13 over raw GCM output; used operationally for guidance.
+abstract: Despite significant progress having been made in recent years, the forecast skill for seasonal
+  precipitation over China remains limited. In this study, a deep-learning-based statistical prediction
+  model for seasonal precipitation over China was developed. The model was trained to learn the distribution
+  of the seasonal precipitation using simultaneous general circulation data. First, it was pre-trained
+  with the hindcasts of several general circulation models (GCMs), and evaluation of the test set suggested
+  that the pre-trained model could basically reproduce the GCM-predicted precipitation, with the anomaly
+  pattern correlation coefficients (PCCs) greater than 0.80. Then, transfer learning was applied by using
+  ECMWF Reanalysis v5 (ERA5) data and gridded precipitation observational data over China, to further
+  correct the systemic errors in the model. As a result, using general circulation fields from reanalysis
+  as the input, this hybrid model performed reasonably well in simulating the seasonal precipitation over
+  China, with the PCC reaching 0.71. In addition, the results using the circulation fields predicted by
+  GCMs as the input were also assessed. In general, the proposed model improves the PCC over China by
+  0.10–0.13, as compared to the raw GCM outputs, for lead times of 1–4 months. This deep learning model
+  has been used at the National Climate Center of China Meteorological Administration for the past two
+  years to provide guidance for summer precipitation prediction over China and has performed extremely
+  well.
+significance: 4
+cited_by: 39
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

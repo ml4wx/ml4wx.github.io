@@ -1,0 +1,67 @@
+id: doi-10.5194-essd-2021-418
+title: Deep-Learning-Based Harmonization and Super-Resolution of Near-Surface Air Temperature from CMIP6
+  Models (1850–2100)
+authors:
+- Xikun Wei
+- Guojie Wang
+- Donghan Feng
+- Zheng Duan
+- Daniel Fiifi Tawia Hagan
+- Liangliang Tao
+- Lijuan Miao
+- Buda Su
+- Tong Jiang
+date: '2021-12-10'
+year: 2021
+venue_type: other
+ids:
+  doi: 10.5194/essd-2021-418
+  openalex: W4200489093
+links:
+  paper: https://doi.org/10.5194/essd-2021-418
+orgs:
+- nuist
+topic: downscaling
+topics:
+- post-processing
+type: benchmark
+method:
+- cnn
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+- other
+status: research
+summary: Super-resolution deep learning merges 31 CMIP6 models into a 0.5° monthly near-surface temperature
+  dataset (1850–2100) with bias correction and downscaling.
+abstract: Abstract. Future global temperature change would have significant effects on society and ecosystems.
+  Earth system models (ESM) are the primary tools to explore the future climate change. However, ESMs
+  still exist great uncertainty and often run at a coarse spatial resolution (The majority of ESMs at
+  about 2 degree). Accurate temperature data at high spatial resolution are needed to improve our understanding
+  of the temperature variation and for many applications. We innovatively apply the deep-learning(DL)
+  method from the Super resolution (SR) in the computer vision to merge 31 ESMs data and the proposed
+  method can perform data merge, bias-correction and spatial-downscaling simultaneously. The SR algorithms
+  are designed to enhance image quality and outperform much better than the traditional methods. The CRU
+  TS (Climate Research Unit gridded Time Series) is considered as reference data in the model training
+  process. In order to find a suitable DL method for our work, we choose five SR methodologies made by
+  different structures. Those models are compared based on multiple evaluation metrics (Mean square error(MSE),
+  mean absolute error(MAE) and Pearson correlation coefficient(R)) and the optimal model is selected and
+  used to merge the monthly historical data during 1850–1900 and monthly future scenarios data (SSP1-2.6,
+  SSP2-4.5, SSP3-7.0, SSP5-8.5) during 2015–2100 at the high spatial resolution of 0.5 degree. Results
+  showed that the merged data have considerably improved performance than any of the individual ESM data
+  and the ensemble mean (EM) of all ESM data in terms of both spatial and temporal aspects. The MAE displays
+  a great improvement and the spatial distribution of the MAE become larger and larger along the latitudes
+  in north hemisphere, presenting like a ‘tertiary class echelon’ condition. The merged product also presents
+  excellent performance when the observation data is smooth with few fluctuations in time series. Additionally,
+  this work proves that the DL model can be transferred to deal with the data merge, bias-correction and
+  spatial-downscaling successfully when enough training data are available. Data can be accessed at https://doi.org/10.5281/zenodo.5746632
+  (Wei et al., 2021).
+significance: 3
+cited_by: 6
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

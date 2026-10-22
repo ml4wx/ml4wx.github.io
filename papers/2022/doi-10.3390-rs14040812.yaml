@@ -1,0 +1,53 @@
+id: doi-10.3390-rs14040812
+title: Tropical Cyclone Intensity Estimation Using Himawari-8 Satellite Cloud Products and Deep Learning
+authors:
+- Jinkai Tan
+- Qidong Yang
+- Junjun Hu
+- Qiqiao Huang
+- Sheng Chen
+date: '2022-02-09'
+year: 2022
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs14040812
+  openalex: W4211173294
+links:
+  paper: https://doi.org/10.3390/rs14040812
+orgs:
+- columbia-leap
+topic: extremes-hazards
+topics:
+- observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: CNN with residual and attention blocks estimates tropical cyclone intensity from Himawari-8 cloud
+  products, reaching RMSE 4.06 m/s on independent tests.
+abstract: This study develops an objective deep-learning-based model for tropical cyclone (TC) intensity
+  estimation. The model’s basic structure is a convolutional neural network (CNN), which is a widely used
+  technology in computer vision tasks. In order to optimize the model’s structure and to improve the feature
+  extraction ability, both residual learning and attention mechanisms are embedded into the model. Five
+  cloud products, including cloud optical thickness, cloud top temperature, cloud top height, cloud effective
+  radius, and cloud type, which are level-2 products from the geostationary satellite Himawari-8, are
+  used as the model training inputs. We sampled the cloud products under the 13 rotational angles of each
+  TC to augment the training dataset. For the independent test data, the model shows improvement, with
+  a relatively low RMSE of 4.06 m/s and a mean absolute error (MAE) of 3.23 m/s, which are comparable
+  to the results seen in previous studies. Various cloud organization patterns, storm whirling patterns,
+  and TC structures from the feature maps are presented to interpret the model training process. An analysis
+  of the overestimated bias and underestimated bias shows that the model’s performance is highly affected
+  by the initial cloud products. Moreover, several controlled experiments using other deep learning architectures
+  demonstrate that our designed model is conducive to estimating TC intensity, thus providing insight
+  into the forecasting of other TC metrics.
+significance: 3
+cited_by: 42
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,50 @@
+id: arxiv-2111.02736
+title: Deep Learning Methods for Daily Wildfire Danger Forecasting
+authors:
+- Ioannis Prapas
+- Spyros Kondylatos
+- Ioannis Papoutsis
+- Gustau Camps-Valls
+- Michele Ronco
+- Miguel-Ángel Fernández-Torres
+- Maria Piles Guillem
+- Nuno Carvalhais
+date: '2021-11-04'
+year: 2021
+venue_type: preprint
+ids:
+  arxiv: '2111.02736'
+links:
+  paper: https://arxiv.org/abs/2111.02736
+  pdf: https://arxiv.org/pdf/2111.02736
+topic: extremes-hazards
+type: application
+method:
+- cnn
+- rnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+- satellite
+status: research
+summary: ConvLSTM on harmonized Earth observation and weather covariates forecasts next-day national fire
+  danger with AUC 0.926, beating a random forest baseline.
+abstract: Wildfire forecasting is of paramount importance for disaster risk reduction and environmental
+  sustainability. We approach daily fire danger prediction as a machine learning task, using historical
+  Earth observation data from the last decade to predict next-day's fire danger. To that end, we collect,
+  pre-process and harmonize an open-access datacube, featuring a set of covariates that jointly affect
+  the fire occurrence and spread, such as weather conditions, satellite-derived products, topography features
+  and variables related to human activity. We implement a variety of Deep Learning (DL) models to capture
+  the spatial, temporal or spatio-temporal context and compare them against a Random Forest (RF) baseline.
+  We find that either spatial or temporal context is enough to surpass the RF, while a ConvLSTM that exploits
+  the spatio-temporal context performs best with a test Area Under the Receiver Operating Characteristic
+  of 0.926. Our DL-based proof-of-concept provides national-scale daily fire danger maps at a much higher
+  spatial resolution than existing operational solutions.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

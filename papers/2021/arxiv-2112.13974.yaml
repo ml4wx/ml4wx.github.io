@@ -1,0 +1,53 @@
+id: arxiv-2112.13974
+title: 'A Moment in the Sun: Solar Nowcasting from Multispectral Satellite Data using Self-Supervised
+  Learning'
+authors:
+- Akansha Singh Bansal
+- Trapit Bansal
+- David Irwin
+date: '2021-12-28'
+year: 2021
+venue_type: preprint
+ids:
+  arxiv: '2112.13974'
+links:
+  paper: https://arxiv.org/abs/2112.13974
+  pdf: https://arxiv.org/pdf/2112.13974
+topic: nowcasting
+topics:
+- applications-impacts
+type: model
+method:
+- cnn
+- rnn
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- satellite
+- stations
+status: research
+summary: Self-supervised CNN-LSTM models forecast GOES-R satellite irradiance to nowcast solar PV output,
+  reaching errors close to ground-truth-based models at 25 sites.
+abstract: Solar energy is now the cheapest form of electricity in history. Unfortunately, significantly
+  increasing the grid's fraction of solar energy remains challenging due to its variability, which makes
+  balancing electricity's supply and demand more difficult. While thermal generators' ramp rate -- the
+  maximum rate that they can change their output -- is finite, solar's ramp rate is essentially infinite.
+  Thus, accurate near-term solar forecasting, or nowcasting, is important to provide advance warning to
+  adjust thermal generator output in response to solar variations to ensure a balanced supply and demand.
+  To address the problem, this paper develops a general model for solar nowcasting from abundant and readily
+  available multispectral satellite data using self-supervised learning. Specifically, we develop deep
+  auto-regressive models using convolutional neural networks (CNN) and long short-term memory networks
+  (LSTM) that are globally trained across multiple locations to predict raw future observations of the
+  spatio-temporal data collected by the recently launched GOES-R series of satellites. Our model estimates
+  a location's future solar irradiance based on satellite observations, which we feed to a regression
+  model trained on smaller site-specific solar data to provide near-term solar photovoltaic (PV) forecasts
+  that account for site-specific characteristics. We evaluate our approach for different coverage areas
+  and forecast horizons across 25 solar sites and show that our approach yields errors close to that of
+  a model using ground-truth observations.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

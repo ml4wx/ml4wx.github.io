@@ -1,0 +1,57 @@
+id: doi-10.3390-rs14010104
+title: 'UATNet: U-Shape Attention-Based Transformer Net for Meteorological Satellite Cloud Recognition'
+authors:
+- Zhanjie Wang
+- Jianghua Zhao
+- Ran Zhang
+- Zheng Li
+- Qinghui Lin
+- Xuezhi Wang
+date: '2021-12-26'
+year: 2021
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs14010104
+  openalex: W4200604770
+links:
+  paper: https://doi.org/10.3390/rs14010104
+  pdf: https://www.mdpi.com/2072-4292/14/1/104/pdf?version=1640670544
+topic: observations-remote-sensing
+type: model
+method:
+- transformer
+- cnn
+spatial:
+- regional
+data:
+- satellite
+- other
+status: research
+summary: UATNet, a Swin-transformer U-shaped network, classifies cloud types in Chinese meteorological
+  satellite images on a new nine-class dataset (CRMSCD).
+abstract: Cloud recognition is a basic task in ground meteorological observation. It is of great significance
+  to accurately identify cloud types from long-time-series satellite cloud images for improving the reliability
+  and accuracy of weather forecasting. However, different from ground-based cloud images with a small
+  observation range and easy operation, satellite cloud images have a wider cloud coverage area and contain
+  more surface features. Hence, it is difficult to effectively extract the structural shape, area size,
+  contour shape, hue, shadow and texture of clouds through traditional deep learning methods. In order
+  to analyze the regional cloud type characteristics effectively, we construct a China region meteorological
+  satellite cloud image dataset named CRMSCD, which consists of nine cloud types and the clear sky (cloudless).
+  In this paper, we propose a novel neural network model, UATNet, which can realize the pixel-level classification
+  of meteorological satellite cloud images. Our model efficiently integrates the spatial and multi-channel
+  information of clouds. Specifically, several transformer blocks with modified self-attention computation
+  (swin transformer blocks) and patch merging operations are used to build a hierarchical transformer,
+  and spatial displacement is introduced to construct long-distance cross-window connections. In addition,
+  we introduce a Channel Cross fusion with Transformer (CCT) to guide the multi-scale channel fusion,
+  and design an Attention-based Squeeze and Excitation (ASE) to effectively connect the fused multi-scale
+  channel information to the decoder features. The experimental results demonstrate that the proposed
+  model achieved 82.33% PA, 67.79% MPA, 54.51% MIoU and 70.96% FWIoU on CRMSCD. Compared with the existing
+  models, our method produces more precise segmentation performance, which demonstrates its superiority
+  on meteorological satellite cloud recognition tasks.
+significance: 3
+cited_by: 49
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

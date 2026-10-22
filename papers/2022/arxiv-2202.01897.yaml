@@ -1,0 +1,45 @@
+id: arxiv-2202.01897
+title: 'AtmoDist: Self-supervised Representation Learning for Atmospheric Dynamics'
+authors:
+- Sebastian Hoffmann
+- Christian Lessig
+date: '2022-02-02'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2202.01897'
+links:
+  paper: https://arxiv.org/abs/2202.01897
+  pdf: https://arxiv.org/pdf/2202.01897
+topic: downscaling
+topics:
+- observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Self-supervised network learns atmospheric dynamics by predicting temporal distance between ERA5
+  fields; the resulting distance loss improves downscaling and missing-data interpolation.
+abstract: Representation learning has proven to be a powerful methodology in a wide variety of machine
+  learning applications. For atmospheric dynamics, however, it has so far not been considered, arguably
+  due to the lack of large-scale, labeled datasets that could be used for training. In this work, we show
+  that the difficulty is benign and introduce a self-supervised learning task that defines a categorical
+  loss for a wide variety of unlabeled atmospheric datasets. Specifically, we train a neural network on
+  the simple yet intricate task of predicting the temporal distance between atmospheric fields from distinct
+  but nearby times. We demonstrate that training with this task on ERA5 reanalysis leads to internal representations
+  capturing intrinsic aspects of atmospheric dynamics. We do so by introducing a data-driven distance
+  metric for atmospheric states. When employed as a loss function in other machine learning applications,
+  this Atmodist distance leads to improved results compared to the classical $\ell_2$-loss. For example,
+  for downscaling one obtains higher resolution fields that match the true statistics more closely than
+  previous approaches and for the interpolation of missing or occluded data the AtmoDist distance leads
+  to results that contain more realistic fine scale features. Since it is derived from observational data,
+  AtmoDist also provides a novel perspective on atmospheric predictability.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

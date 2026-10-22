@@ -1,0 +1,56 @@
+id: doi-10.21203-rs.3.rs-1308502-v1
+title: Merging multisatellite precipitation products using stacking and EMOS-CSG methods
+authors:
+- Tuantuan Zhang
+- Zhongmin Liang
+- Haijun Wang
+- Jun Wang
+- Yiming Hu
+- Binquan Li
+date: '2022-02-21'
+year: 2022
+venue: Research Square
+venue_type: preprint
+ids:
+  doi: 10.21203/rs.3.rs-1308502/v1
+  openalex: W4213227129
+links:
+  paper: https://doi.org/10.21203/rs.3.rs-1308502/v1
+  pdf: https://www.researchsquare.com/article/rs-1308502/latest.pdf
+topic: observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- stations
+status: research
+summary: Stacking and EMOS-CSG merge four satellite precipitation products with gauges into a 1 km daily
+  product with RMSE 4.33 mm in a basin study.
+abstract: Abstract Precipitation is a fundamental element of hydrological analyses, water resource management,
+  and drought monitoring. To obtain high-spatiotemporal-resolution precipitation information, in this
+  study, we proposed a merging method to integrate four satellite precipitation products (i.e., the Tropical
+  Rainfall Measuring Mission (TRMM) Multisatellite Precipitation 3B42 in Real-Time (TMPA-3B42RT), Climate
+  Precipitation Center Morphing Technique (CMORPH), Global Satellite Mapping of Precipitation Near-Real-Time
+  (GSMaP_NRT) and Precipitation Estimation from Remotely Sensed Information using Artificial Neural Networks
+  (PERSIANN) products) with gauge observations. First, geographically weighted regression (GWR) was adopted
+  to downscale the four original satellite products. Second, six base learners of stacking algorithm were
+  used to correct the deviation in each downscaled satellite product. Third, the six corrected results
+  of each downscaled product were integrated by a secondary learner of stacking algorithm. Fourth, the
+  ensemble model output statistics-censored, shifted gamma (EMOS-CSG) method was adopted to produce the
+  final precipitation product by merging the four satellite product-stacking results. The merging method
+  was applied to the Beimiaoji basin from April to October in the 2016–2019 period. The results showed
+  that (1) the daily merged precipitation product had a better performance than the original satellite
+  products in terms of the six considered statistical indexes, with the lowest root mean square error
+  (RMSE) at 4.33 mm and the highest correlation coefficient (CC) at 0.64; (2) the utilized merging method
+  not only increased the spatial resolution to 1 km but also captured more detailed precipitation distribution
+  information; and (3) considering the influence of the gauge density, the quality of the merged product
+  was not further influenced after the number of gauge stations surpassed 16.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

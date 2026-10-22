@@ -1,0 +1,53 @@
+id: arxiv-2203.11141
+title: Can we integrate spatial verification methods into neural-network loss functions for atmospheric
+  science?
+authors:
+- Ryan Lagerquist
+- Imme Ebert-Uphoff
+date: '2022-03-21'
+year: 2022
+venue: Artificial Intelligence for the Earth Systems (2022), 1 (4), pg. e220021
+venue_type: journal
+ids:
+  arxiv: '2203.11141'
+  doi: 10.1175/aies-d-22-0021.1
+links:
+  paper: https://arxiv.org/abs/2203.11141
+  pdf: https://arxiv.org/pdf/2203.11141
+topic: benchmarks-data-eval
+topics:
+- extremes-hazards
+- post-processing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Spatially enhanced loss functions using neighbourhood and spectral filters improve neural network
+  convection forecasts, with spectral-filter models giving better-calibrated probabilities than pixelwise
+  training.
+abstract: 'In the last decade, much work in atmospheric science has focused on spatial verification (SV)
+  methods for gridded prediction, which overcome serious disadvantages of pixelwise verification. However,
+  neural networks (NN) in atmospheric science are almost always trained to optimize pixelwise loss functions,
+  even when ultimately assessed with SV methods. This establishes a disconnect between model verification
+  during vs. after training. To address this issue, we develop spatially enhanced loss functions (SELF)
+  and demonstrate their use for a real-world problem: predicting the occurrence of thunderstorms (henceforth,
+  "convection") with NNs. In each SELF we use either a neighbourhood filter, which highlights convection
+  at scales larger than a threshold, or a spectral filter (employing Fourier or wavelet decomposition),
+  which is more flexible and highlights convection at scales between two thresholds. We use these filters
+  to spatially enhance common verification scores, such as the Brier score. We train each NN with a different
+  SELF and compare their performance at many scales of convection, from discrete storm cells to tropical
+  cyclones. Among our many findings are that (a) for a low (high) risk threshold, the ideal SELF focuses
+  on small (large) scales; (b) models trained with a pixelwise loss function perform surprisingly well;
+  (c) however, models trained with a spectral filter produce much better-calibrated probabilities than
+  a pixelwise model. We provide a general guide to using SELFs, including technical challenges and the
+  final Python code, as well as demonstrating their use for the convection problem. To our knowledge this
+  is the most in-depth guide to SELFs in the geosciences.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

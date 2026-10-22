@@ -1,0 +1,50 @@
+id: arxiv-2202.04152
+title: Multi-model Ensemble Analysis with Neural Network Gaussian Processes
+authors:
+- Trevor Harris
+- Bo Li
+- Ryan Sriver
+date: '2022-02-08'
+year: 2022
+venue_type: preprint
+ids:
+  arxiv: '2202.04152'
+links:
+  paper: https://arxiv.org/abs/2202.04152
+  pdf: https://arxiv.org/pdf/2202.04152
+topic: downscaling
+topics:
+- post-processing
+type: model
+method:
+- classical-ml
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+- era5
+status: research
+summary: NN-GPR combines multiple climate models into a 50 km projection without regional models, rivaling
+  RCMs for temperature and precipitation tails.
+abstract: Multi-model ensemble analysis integrates information from multiple climate models into a unified
+  projection. However, existing integration approaches based on model averaging can dilute fine-scale
+  spatial information and incur bias from rescaling low-resolution climate models. We propose a statistical
+  approach, called NN-GPR, using Gaussian process regression (GPR) with an infinitely wide deep neural
+  network based covariance function. NN-GPR requires no assumptions about the relationships between models,
+  no interpolation to a common grid, no stationarity assumptions, and automatically downscales as part
+  of its prediction algorithm. Model experiments show that NN-GPR can be highly skillful at surface temperature
+  and precipitation forecasting by preserving geospatial signals at multiple scales and capturing inter-annual
+  variability. Our projections particularly show improved accuracy and uncertainty quantification skill
+  in regions of high variability, which allows us to cheaply assess tail behavior at a 0.44$^\circ$/50
+  km spatial resolution without a regional climate model (RCM). Evaluations on reanalysis data and SSP245
+  forced climate models show that NN-GPR produces similar, overall climatologies to the model ensemble
+  while better capturing fine scale spatial patterns. Finally, we compare NN-GPR's regional predictions
+  against two RCMs and show that NN-GPR can rival the performance of RCMs using only global model data
+  as input.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,56 @@
+id: doi-10.3390-ai2040036
+title: 'MSG-GAN-SD: A Multi-Scale Gradients GAN for Statistical Downscaling of 2-Meter Temperature over
+  the EURO-CORDEX Domain'
+authors:
+- Gabriele Accarino
+- Marco Chiarelli
+- Francesco Immorlano
+- Valeria Aloisi
+- Andrea Gatto
+- Giovanni Aloisio
+date: '2021-11-19'
+year: 2021
+venue: AI
+venue_type: journal
+ids:
+  doi: 10.3390/ai2040036
+  openalex: W3215607457
+links:
+  paper: https://doi.org/10.3390/ai2040036
+  pdf: https://www.mdpi.com/2673-2688/2/4/36/pdf?version=1638260477
+topic: downscaling
+type: model
+method:
+- gan-vae
+- cnn
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: MSG-GAN-SD, a multi-scale gradient GAN, downscales ERA-Interim 2-m temperature from 83 km to
+  14 km over the EURO-CORDEX domain.
+abstract: One of the most important open challenges in climate science is downscaling. It is a procedure
+  that allows making predictions at local scales, starting from climatic field information available at
+  large scale. Recent advances in deep learning provide new insights and modeling solutions to tackle
+  downscaling-related tasks by automatically learning the coarse-to-fine grained resolution mapping. In
+  particular, deep learning models designed for super-resolution problems in computer vision can be exploited
+  because of the similarity between images and climatic fields maps. For this reason, a new architecture
+  tailored for statistical downscaling (SD), named MSG-GAN-SD, has been developed, allowing interpretability
+  and good stability during training, due to multi-scale gradient information. The proposed architecture,
+  based on a Generative Adversarial Network (GAN), was applied to downscale ERA-Interim 2-m temperature
+  fields, from 83.25 to 13.87 km resolution, covering the EURO-CORDEX domain within the 1979–2018 period.
+  The training process involves seasonal and monthly dataset arrangements, in addition to different training
+  strategies, leading to several models. Furthermore, a model selection framework is introduced in order
+  to mathematically select the best models during the training. The selected models were then tested on
+  the 2015–2018 period using several metrics to identify the best training strategy and dataset arrangement,
+  which finally produced several evaluation maps. This work is the first attempt to use the MSG-GAN architecture
+  for statistical downscaling. The achieved results demonstrate that the models trained on seasonal datasets
+  performed better than those trained on monthly datasets. This study presents an accurate and cost-effective
+  solution that is able to perform downscaling of 2 m temperature climatic maps.
+significance: 3
+cited_by: 11
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

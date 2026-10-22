@@ -1,0 +1,58 @@
+id: arxiv-2203.10114
+title: Seamless lightning nowcasting with recurrent-convolutional deep learning
+authors:
+- Jussi Leinonen
+- Ulrich Hamann
+- Urs Germann
+date: '2022-03-14'
+year: 2022
+venue: Artif. Intell. Earth Syst., 1, e220043 (2022)
+venue_type: journal
+ids:
+  arxiv: '2203.10114'
+  doi: 10.1175/aies-d-22-0043.1
+  openalex: W4221161511
+links:
+  paper: https://arxiv.org/abs/2203.10114
+  pdf: https://arxiv.org/pdf/2203.10114
+orgs:
+- meteoswiss
+topic: nowcasting
+topics:
+- extremes-hazards
+type: model
+method:
+- cnn
+- rnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- satellite
+- nwp-analysis
+- other
+status: research
+summary: A recurrent-convolutional network nowcasts lightning occurrence over Switzerland for 60 minutes,
+  reaching CSI 0.75 at 5 minutes and 0.32 at 60 minutes.
+abstract: A deep learning model is presented to nowcast the occurrence of lightning at a five-minute time
+  resolution 60 minutes into the future. The model is based on a recurrent-convolutional architecture
+  that allows it to recognize and predict the spatiotemporal development of convection, including the
+  motion, growth and decay of thunderstorm cells. The predictions are performed on a stationary grid,
+  without the use of storm object detection and tracking. The input data, collected from an area in and
+  surrounding Switzerland, comprise ground-based radar data, visible/infrared satellite data and derived
+  cloud products, lightning detection, numerical weather prediction and digital elevation model data.
+  We analyze different alternative loss functions, class weighting strategies and model features, providing
+  guidelines for future studies to select loss functions optimally and to properly calibrate the probabilistic
+  predictions of their model. Based on these analyses, we use focal loss in this study, but conclude that
+  it only provides a small benefit over cross entropy, which is a viable option if recalibration of the
+  model is not practical. The model achieves a pixel-wise critical success index (CSI) of 0.45 to predict
+  lightning occurrence within 8 km over the 60-min nowcast period, ranging from a CSI of 0.75 at a 5-min
+  lead time to a CSI of 0.32 at a 60-min lead time.
+significance: 4
+cited_by: 7
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

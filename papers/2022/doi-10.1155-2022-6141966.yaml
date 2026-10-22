@@ -1,0 +1,62 @@
+id: doi-10.1155-2022-6141966
+title: The NAO Variability Prediction and Forecasting with Multiple Time Scales Driven by ENSO Using Machine
+  Learning Approaches
+authors:
+- Bin Mu
+- Jing Li
+- Shijin Yuan
+- Xiaodan Luo
+date: '2022-04-15'
+year: 2022
+venue: Computational Intelligence and Neuroscience
+venue_type: journal
+ids:
+  doi: 10.1155/2022/6141966
+  openalex: W4223999067
+links:
+  paper: https://doi.org/10.1155/2022/6141966
+  pdf: https://downloads.hindawi.com/journals/cin/2022/6141966.pdf
+topic: s2s-seasonal
+topics:
+- climate-analysis-attribution
+type: model
+method:
+- rnn
+timescale:
+- seasonal
+- short
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: ENSO-driven machine learning predicts the NAO index about three months ahead at 68% accuracy,
+  and a TrajGRU network improves short-term NAO forecasts.
+abstract: Machine learning methods have now become an optional technique in Earth science research, and
+  such data-driven solutions have also made tremendous progress in weather forecasting and climate prediction
+  in recent years. Since climate data are typically time series, the neural network layers, which can
+  identify the intrinsic connections between the points of the sequence and features in two-dimensional
+  data, perform particularly well for climate prediction. The North Atlantic Oscillation (NAO) is a prominent
+  atmospherical mode in the northern hemisphere, with the frequency change characteristic of sea level
+  pressure (SLP) in the North Atlantic sector. One of the reasons why NAO prediction is still challenging
+  is that NAO is also proven to be influenced by other climate circulations, the most significant of which
+  is the interaction between El Niño-Southern Oscillation (ENSO) and NAO. Therefore, sea surface temperature
+  (SST) in the Pacific Ocean used to characterize ENSO is also one of the factors that contribute to the
+  evolution of NAO and can be used as an input factor to predict the NAO. In this paper, the seasonal
+  lag correlation between ENSO and NAO is explored and analyzed. The interaction has been considered in
+  both short-term forecasting and midterm prediction of the NAO variability. The monthly NAO index (NAOI)
+  fluctuation is predicted using the Niño indices based on the RF-Var model, and the accuracy achieves
+  68% when the lead time is about three months. In addition, integrating multiple physical variables directly
+  related to the NAO and Pacific SST, the short-term NAO forecasting is conducted using a multi-channel
+  neural network named AccNet with trajectory gated recursive unit (TrajGRU) layer. AccNet has the ability
+  to identify the mechanism of the high-frequency variation in several days, and the NAO variability is
+  indicated by SLP. The loss function of AccNet is set to anomaly correlation coefficient (ACC), which
+  is the indicator that verifies spatial correlation in geoscience. Forecasting extreme events of NAO
+  between 2010 and 2021, AccNet presents higher flexibility compared against other structures that can
+  capture spatial-temporal features.
+significance: 3
+cited_by: 5
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

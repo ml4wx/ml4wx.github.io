@@ -1,0 +1,48 @@
+id: arxiv-2111.08626
+title: Adjoint-Matching Neural Network Surrogates for Fast 4D-Var Data Assimilation
+authors:
+- Austin Chennault
+- Andrey A. Popov
+- Amit N. Subrahmanya
+- Rachel Cooper
+- Ali Haisam Muhammad Rafid
+- Anuj Karpatne
+- Adrian Sandu
+date: '2021-11-16'
+year: 2021
+venue_type: preprint
+ids:
+  arxiv: '2111.08626'
+  openalex: W3214050492
+links:
+  paper: https://arxiv.org/abs/2111.08626
+  pdf: https://arxiv.org/pdf/2111.08626
+topic: data-assimilation
+type: model
+method:
+- other
+data:
+- other
+status: research
+summary: Trains neural surrogates using adjoint information to speed up 4D-Var assimilation, showing better
+  results than forward-only surrogates on Lorenz-63.
+abstract: Data assimilation is the process of fusing information from imperfect computer simulations with
+  noisy, sparse measurements of reality to obtain improved estimates of the state or parameters of a dynamical
+  system of interest. The data assimilation procedures used in many geoscience applications, such as numerical
+  weather forecasting, are variants of the our-dimensional variational (4D-Var) algorithm. The cost of
+  solving the underlying 4D-Var optimization problem is dominated by the cost of repeated forward and
+  adjoint model runs. This motivates substituting the evaluations of the physical model and its adjoint
+  by fast, approximate surrogate models. Neural networks offer a promising approach for the data-driven
+  creation of surrogate models. The accuracy of the surrogate 4D-Var solution depends on the accuracy
+  with each the surrogate captures both the forward and the adjoint model dynamics. We formulate and analyze
+  several approaches to incorporate adjoint information into the construction of neural network surrogates.
+  The resulting networks are tested on unseen data and in a sequential data assimilation problem using
+  the Lorenz-63 system. Surrogates constructed using adjoint information demonstrate superior performance
+  on the 4D-Var data assimilation problem compared to a standard neural network surrogate that uses only
+  forward dynamics information.
+significance: 3
+cited_by: 10
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

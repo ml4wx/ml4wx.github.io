@@ -1,0 +1,52 @@
+id: doi-10.1016-j.solener.2021.09.073
+title: 'IrradianceNet: Spatiotemporal deep learning model for satellite-derived solar irradiance short-term
+  forecasting'
+authors:
+- Andreas Holm Nielsen
+- Alexandros Iosifidis
+- Henrik Karstoft
+date: '2021-10-11'
+year: 2021
+venue: Solar Energy
+venue_type: journal
+ids:
+  doi: 10.1016/j.solener.2021.09.073
+  openalex: W3206368551
+links:
+  paper: https://doi.org/10.1016/j.solener.2021.09.073
+  pdf: https://www.sciencedirect.com/science/article/pii/S0038092X21008306/pdf
+topic: nowcasting
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+- era5
+status: research
+summary: IrradianceNet is a satellite-based deep network forecasting surface solar irradiance up to 4
+  h over Europe, beating persistence, TV-L1 and ERA5 baselines via fewer cloud errors.
+abstract: The presence of clouds is widely identified as the primary uncertainty in current surface solar
+  global horizontal irradiance (GHI) forecasts. Despite a wealth of historical satellite-derived irradiance
+  observations, only limited research has investigated this problem from a purely data-driven perspective,
+  something that has seen tremendous success in related domains such as radar- and satellite-based precipitation
+  short-term forecasting. This paper presents IrradianceNet, a novel satellite-based neural network for
+  spatiotemporal forecasting of surface solar irradiance up to 4 h in the future over Europe. Our method
+  is fully data-driven and needs no post-processing or calibration based on sparse ground-based measurements
+  of irradiance. We demonstrate superior forecasting performance compared to several persistence models,
+  the TV-L1 algorithm, and ERA5 reanalysis data for satellite-derived solar irradiance using the European
+  SARAH-2.1 dataset. We also validate these results using ground-based pyranometer observations from the
+  Baseline Surface Radiation Network. Our conclusions remain unchanged when we account for hourly and
+  monthly seasonality. Finally, applying a simple cloud mask scheme, we demonstrate that our performance
+  improvement arises due to a considerable reduction in cloudy pixel errors. This is initial evidence
+  that purely data-driven methods might better approximate and infer future cloud dynamics and their impact
+  on surface solar irradiance.
+significance: 4
+cited_by: 72
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

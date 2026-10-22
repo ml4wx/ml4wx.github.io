@@ -1,0 +1,51 @@
+id: doi-10.3390-atmos13050721
+title: Usefulness of Automatic Hyperparameter Optimization in Developing Radiation Emulator in a Numerical
+  Weather Prediction Model
+authors:
+- Park Sa Kim
+- Hwan‐Jin Song
+date: '2022-04-30'
+year: 2022
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos13050721
+  openalex: W4225258117
+links:
+  paper: https://doi.org/10.3390/atmos13050721
+  pdf: https://www.mdpi.com/2073-4433/13/5/721/pdf?version=1652668245
+orgs:
+- kma
+topic: hybrid-parameterization
+type: model
+method:
+- other
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: Automatic learning-rate tuning with Sherpa improves a neural radiation emulator in a Korean NWP
+  model, reducing one-week flux and precipitation errors.
+abstract: To improve the forecasting accuracy of a radiation emulator in a weather prediction model over
+  the Korean peninsula, the learning rate used in neural network training was automatically optimized
+  using the Sherpa. The Sherpa experiment results were compared with two control simulation results using
+  learning rates of 0.0001 and 1 for different batch sizes (full to 500). In the offline evaluation, the
+  Sherpa results showed significant improvements in predicting longwave/shortwave heating rates and fluxes
+  compared to the lowest learning rate results, whereas the improvements compared to the highest learning
+  rate were relatively small because the optimized values by the Sherpa were 0.4756–0.6656. The online
+  evaluation results over one month, which were linked with the weather prediction model, demonstrated
+  the usefulness of Sherpa on a universal performance for the radiation emulator. In particular, at the
+  full batch size, Sherpa contributed to reducing the one-week forecast errors for longwave/shortwave
+  fluxes, skin temperature, and precipitation by 39–125%, 137–159%, and 24–26%, respectively, compared
+  with the two control simulations. Considering the widespread use of parallel learning based on full
+  batch, Sherpa can contribute to producing robust results regardless of batch sizes used in neural network
+  training for developing radiation emulators.
+significance: 3
+cited_by: 11
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

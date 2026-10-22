@@ -1,0 +1,58 @@
+id: doi-10.5194-gmd-14-6977-2021
+title: 'ENSO-ASC 1.0.0: ENSO deep learning forecast model with a multivariate air–sea coupler'
+authors:
+- Bin Mu
+- Bo Qin
+- Shijin Yuan
+date: '2021-11-17'
+year: 2021
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-14-6977-2021
+  openalex: W3192776183
+links:
+  paper: https://doi.org/10.5194/gmd-14-6977-2021
+topic: s2s-seasonal
+type: model
+method:
+- gnn
+- transformer
+timescale:
+- seasonal
+spatial:
+- global
+data:
+- era5
+- other
+status: research
+summary: A graph-based air-sea coupler inside an ENSO deep learning model reaches Niño3.4 correlation
+  of 0.78 at 6-month lead and outperforms other ENSO forecast models.
+abstract: Abstract. ENSO is an extremely sophisticated air-sea coupling phenomenon, the development and
+  decay of which are usually modulated by the energy interactions between multiple physical variables.
+  In this paper, we design a multivariate air-sea coupler (ASC) based on graph using features of multiple
+  physical variables. On the basis of the coupler, an ENSO deep learning forecast model (named ENSO-ASC)
+  is proposed, whose structure is adapted to the characteristics of the ENSO dynamics, including the encoder/decoder
+  for capturing/restoring the multi-scale spatial-temporal correlations, and two attention components
+  for grasping the different air-sea coupling strength on different start calendar month and varied contributions
+  of physical variables in ENSO amplitudes. In addition, two datasets at different resolutions are used
+  to train the model. We firstly tune the model performance to optimal and compare it with the other state-of-the-art
+  ENSO deep learning forecast models. Then, we evaluate the ENSO forecast skill from the contributions
+  of different predictors, the effective lead time with the different start calendar months, and the forecast
+  spatial uncertainties, further analyze the underlying ENSO mechanisms. Finally, we make ENSO predictions
+  over the validation period from 2014 to 2020. Experiment results demonstrate that ENSO-ASC outperforms
+  the other models. Sea surface temperature (SST) and zonal wind are two crucial predictors. The correlation
+  skill of Niño3.4 index is over 0.78/0.65/0.5 within the lead time of 6/12/18 months. From two heat map
+  analyses, we also discover the common challenges in ENSO predictability, such as the forecasting skills
+  declining faster when making forecasts through June-July-August and the forecast errors more likely
+  showing up in the western-central equatorial Pacific with a longer lead time. ENSO-ASC can simulate
+  El Niño and La Niña events with different strengths. The forecasted SST and wind patterns reflect obvious
+  Bjerknes positive feedback mechanism. These results indicate the eﬀectiveness and superiority of our
+  model with the multivariate air-sea coupler in predicting sophisticated ENSO and analyzing the underlying
+  dynamic mechanisms.
+significance: 4
+cited_by: 71
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill
