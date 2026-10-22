@@ -8,7 +8,7 @@ updated every week from arXiv, journals and lab blogs.
 
 | Papers | ⭐ Highlights | Topics | Last update |
 |---:|---:|---:|---|
-| 9922 | 156 | 20 | 2026-10-22 |
+| 9922 | 158 | 20 | 2026-10-22 |
 
 ## Topics
 
@@ -29,7 +29,7 @@ updated every week from arXiv, journals and lab blogs.
 | Topic | Papers | ⭐ |
 |---|---:|---:|
 | [Hybrid physics-ML & parameterization](lists/hybrid-parameterization.md) | 424 | 33 |
-| [Data assimilation](lists/data-assimilation.md) | 249 | 11 |
+| [Data assimilation](lists/data-assimilation.md) | 249 | 13 |
 | [Downscaling & super-resolution](lists/downscaling.md) | 832 | 5 |
 | [Post-processing & calibration](lists/post-processing.md) | 679 | 6 |
 | [Foundation models](lists/foundation-models.md) | 51 | 3 |
@@ -68,10 +68,10 @@ classified when the topics are switched on.
 | 2026-09-03 | [WeatherNext 3: Increasing resolution and performance of global weather models with raw observations](https://arxiv.org/abs/2609.03582) | arXiv |
 | 2026-09-02 | [Improving global precipitation forecasts with an AI weather model trained on satellite observations](https://arxiv.org/abs/2609.03210) | California Institute of Technology (Caltech), Google Research, Stanford University |
 | 2026-09-02 | [Online Reinforcement Learning in the Met Office Unified Model through Distributed Model-Agent Coupling](https://arxiv.org/abs/2609.02566) | Met Office, University of Cambridge (Aardvark) |
+| 2026-08-12 | [Long-window 4DVar for reanalysis using a differentiable weather model](https://arxiv.org/abs/2608.11515) | NSF NCAR / UCAR, NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), University of Washington |
 | 2026-08-10 | [Stochastic Emulation of a Fully Coupled Preindustrial E3SMv3 Simulation](https://arxiv.org/abs/2608.10277) | Allen Institute for AI (Ai2, ACE) |
 | 2026-08-06 | [Operational tropical cyclone forecasting with AI](https://doi.org/10.1038/s41586-026-10953-2) | Colorado State University (incl. CIRA), Google DeepMind, Google Research, Met Office, NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |
 | 2026-08-04 | [Prithvi-Precip: Integrating Satellite Observations into an Atmospheric AI Foundation Model for Precipitation Forecasting](https://arxiv.org/abs/2608.03959) | Colorado State University (incl. CIRA), IBM Research, NASA, Oak Ridge National Laboratory |
-| 2026-07-24 | [AIFS-TC: A simple correction competitive with the operational frontier for tropical cyclone intensity forecasting](https://arxiv.org/abs/2608.09959) | ECMWF, University of Cambridge (Aardvark) |
 
 ## How it works
 
