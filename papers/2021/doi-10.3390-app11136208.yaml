@@ -1,0 +1,56 @@
+id: doi-10.3390-app11136208
+title: 'DR-Transformer: A Multi-Features Fusion Framework for Tropical Cyclones Intensity Estimation'
+authors:
+- Yicheng Luo
+- Yajing Xu
+- Si Li
+- Qifeng Qian
+- Bo Xiao
+date: '2021-07-05'
+year: 2021
+venue: Applied Sciences
+venue_type: journal
+ids:
+  doi: 10.3390/app11136208
+  openalex: W3194052222
+links:
+  paper: https://doi.org/10.3390/app11136208
+  pdf: https://www.mdpi.com/2076-3417/11/13/6208/pdf?version=1625467215
+orgs:
+- cma
+topic: extremes-hazards
+topics:
+- observations-remote-sensing
+type: model
+method:
+- transformer
+- cnn
+timescale:
+- nowcast
+spatial:
+- global
+data:
+- satellite
+status: research
+summary: DR-Transformer estimates tropical cyclone intensity from satellite images with rotation and distance-consistency
+  features, reaching 7.76-knot RMSE on the TCIR dataset.
+abstract: Convolutional neural networks have achieved great success in analyzing potential features inside
+  tropical cyclones (TCs) using satellite images for intensity estimation. However, due to the high similarity
+  of visual features in TC images, it is still a challenge to learn the accurate mapping between TC images
+  and numerical intensity. Existing works mainly focus on the visual features of a single TC, ignoring
+  the impact of intensity continuity and time evolution among TCs on decision making. Therefore, we propose
+  a DR-transformer framework for temporal TC intensity estimation. Inside DR-transformers, a novel DR-extractor
+  can extract Distance-consistency(DC) and Rotation-invariance (RI) features between TC images, and therefore
+  can better learn the contours, structures, and other visual features of each TC image. DC features can
+  reduce the estimation error between adjacent intensities, and RI features can eliminate feature deviation
+  caused by shooting angles and TC rotation. Additionally, a transformer with a DR-extractor as the backbone
+  is applied to aggregate the temporal correlation in a series of TC images, which can learn the evolution
+  from intensity to the visual features of TC. Experiments show that the final result, an RMSE of 7.76
+  knots, outperforms the baseline, and is better than any previously reported method trained on the TCIR
+  dataset.
+significance: 3
+cited_by: 6
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

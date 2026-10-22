@@ -1,0 +1,52 @@
+id: arxiv-2106.12045
+title: Deep learning for improved global precipitation in numerical weather prediction systems
+authors:
+- Manmeet Singh
+- Bipin Kumar
+- Suryachandra Rao
+- Sukhpal Singh Gill
+- Rajib Chattopadhyay
+- Ravi S Nanjundiah
+- Dev Niyogi
+date: '2021-06-20'
+year: 2021
+venue_type: preprint
+ids:
+  arxiv: '2106.12045'
+  openalex: W3174473821
+links:
+  paper: https://arxiv.org/abs/2106.12045
+  pdf: https://arxiv.org/pdf/2106.12045
+topic: hybrid-parameterization
+topics:
+- post-processing
+type: model
+method:
+- cnn
+spatial:
+- global
+data:
+- era5
+status: pre-operational
+summary: A residual U-Net trained on reanalysis, with cubed-sphere inputs, learns global precipitation
+  that doubles grid-point skill versus the operational IMD NWP model, as a proof of concept.
+abstract: The formation of precipitation in state-of-the-art weather and climate models is an important
+  process. The understanding of its relationship with other variables can lead to endless benefits, particularly
+  for the world's monsoon regions dependent on rainfall as a support for livelihood. Various factors play
+  a crucial role in the formation of rainfall, and those physical processes are leading to significant
+  biases in the operational weather forecasts. We use the UNET architecture of a deep convolutional neural
+  network with residual learning as a proof of concept to learn global data-driven models of precipitation.
+  The models are trained on reanalysis datasets projected on the cubed-sphere projection to minimize errors
+  due to spherical distortion. The results are compared with the operational dynamical model used by the
+  India Meteorological Department. The theoretical deep learning-based model shows doubling of the grid
+  point, as well as area averaged skill measured in Pearson correlation coefficients relative to operational
+  system. This study is a proof-of-concept showing that residual learning-based UNET can unravel physical
+  relationships to target precipitation, and those physical constraints can be used in the dynamical operational
+  models towards improved precipitation forecasts. Our results pave the way for the development of online,
+  hybrid models in the future.
+significance: 3
+cited_by: 20
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

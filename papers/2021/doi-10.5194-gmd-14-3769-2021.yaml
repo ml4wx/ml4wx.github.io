@@ -1,0 +1,58 @@
+id: doi-10.5194-gmd-14-3769-2021
+title: 'Development of a large-eddy simulation subgrid model based on artificial neural networks: a case
+  study of turbulent channel flow'
+authors:
+- Robin Stoffer
+- Caspar M. van Leeuwen
+- Damian Podareanu
+- Valeriu Codreanu
+- Menno Veerman
+- Martin Janssens
+- Oscar Hartogensis
+- Chiel C. van Heerwaarden
+date: '2021-06-24'
+year: 2021
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-14-3769-2021
+  openalex: W3099395817
+links:
+  paper: https://doi.org/10.5194/gmd-14-3769-2021
+  pdf: https://gmd.copernicus.org/articles/14/3769/2021/gmd-14-3769-2021.pdf
+topic: hybrid-parameterization
+type: model
+method:
+- classical-ml
+spatial:
+- local
+data:
+- km-scale-sim
+status: research
+summary: Develops an ANN subgrid-scale model for LES of atmospheric-type wall turbulence, tested on channel
+  flow, but finds instability when coupled into simulations.
+abstract: Abstract. Atmospheric boundary layers and other wall-bounded flows are often simulated with
+  the large-eddy simulation (LES) technique, which relies on subgrid-scale (SGS) models to parameterize
+  the smallest scales. These SGS models often make strong simplifying assumptions. Also, they tend to
+  interact with the discretization errors introduced by the popular LES approach where a staggered finite-volume
+  grid acts as an implicit filter. We therefore developed an alternative LES SGS model based on artificial
+  neural networks (ANNs) for the computational fluid dynamics code MicroHH (v2.0), which can be run in
+  direct numerical simulation (DNS) and LES mode. We used a turbulent channel flow (with a friction Reynolds
+  number Reτ = 590) as a test case. The developed SGS model has been designed to require fewer simplifying
+  assumptions, and to compensate for the instantaneous discretization errors introduced by the staggered
+  finite-volume grid. We trained the ANNs based on instantaneous flow fields from a direct numerical simulation
+  (DNS) of the selected channel flow. In general, we found excellent agreement between the ANN predicted
+  SGS fluxes and the SGS fluxes derived from DNS for flow fields not used during training (with the correlation
+  coefficient ρ mostly varying between 0.6 and 1.0), showing the potential ANNs may have to construct
+  highly accurate SGS models. However, we observed an artificial build-up of turbulence kinetic energy
+  at high wave modes when we directly incorporated our ANN SGS model into a LES simulation of the selected
+  channel flow, eventually resulting in numeric instability. We hypothesized that error accumulation and
+  aliasing errrors, were both important contributors to the observed instability. Several obstacles therefore
+  remain before the a priori promise of our ANN LES SGS model, can be successfully leveraged in practical
+  applications.
+significance: 3
+cited_by: 25
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

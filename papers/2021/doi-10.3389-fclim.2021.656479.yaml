@@ -1,0 +1,57 @@
+id: doi-10.3389-fclim.2021.656479
+title: Spatio-Temporal Downscaling of Climate Data Using Convolutional and Error-Predicting Neural Networks
+authors:
+- Agon Serifi
+- Tobias Günther
+- Nikolina Ban
+date: '2021-04-12'
+year: 2021
+venue: Frontiers in Climate
+venue_type: journal
+ids:
+  doi: 10.3389/fclim.2021.656479
+  openalex: W3154123501
+links:
+  paper: https://doi.org/10.3389/fclim.2021.656479
+  pdf: https://www.frontiersin.org/articles/10.3389/fclim.2021.656479/pdf
+orgs:
+- eth-zurich
+topic: downscaling
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- era5
+- cmip
+- km-scale-sim
+status: research
+summary: Deep convolutional networks reconstruct high-resolution weather and climate fields from low-resolution
+  simulations, and generalize to observed data for precipitation and other variables.
+abstract: 'Numerical weather and climate simulations nowadays produce terabytes of data, and the data
+  volume continues to increase rapidly since an increase in resolution greatly benefits the simulation
+  of weather and climate. In practice, however, data is often available at lower resolution only, for
+  which there are many practical reasons, such as data coarsening to meet memory constraints, limited
+  computational resources, favoring multiple low-resolution ensemble simulations over few high-resolution
+  simulations, as well as limits of sensing instruments in observations. In order to enable a more insightful
+  analysis, we investigate the capabilities of neural networks to reconstruct high-resolution data from
+  given low-resolution simulations. For this, we phrase the data reconstruction as a super-resolution
+  problem from multiple data sources, tailored toward meteorological and climatological data. We therefore
+  investigate supervised machine learning using multiple deep convolutional neural network architectures
+  to test the limits of data reconstruction for various spatial and temporal resolutions, low-frequent
+  and high-frequent input data, and the generalization to numerical and observed data. Once such downscaling
+  networks are trained, they serve two purposes: First, legacy low-resolution simulations can be downscaled
+  to reconstruct high-resolution detail. Second, past observations that have been taken at lower resolutions
+  can be increased to higher resolutions, opening new analysis possibilities. For the downscaling of high-frequent
+  fields like precipitation, we show that error-predicting networks are far less suitable than deconvolutional
+  neural networks due to the poor learning performance. We demonstrate that deep convolutional downscaling
+  has the potential to become a building block of modern weather and climate analysis in both research
+  and operational forecasting, and show that the ideal choice of the network architecture depends on the
+  type of data to predict, i.e., there is no single best architecture for all variables.'
+significance: 4
+cited_by: 80
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,66 @@
+id: doi-10.5194-gmd-14-4977-2021
+title: 'Latent Linear Adjustment Autoencoder v1.0: a novel method for estimating and emulating dynamic
+  precipitation at high resolution'
+authors:
+- Christina Heinze‐Deml
+- Sebastian Sippel
+- Angeline Greene Pendergrass
+- Flavio Lehner
+- Nicolai Meinshausen
+date: '2021-08-12'
+year: 2021
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-14-4977-2021
+  openalex: W3095433008
+links:
+  paper: https://doi.org/10.5194/gmd-14-4977-2021
+  pdf: https://gmd.copernicus.org/articles/14/4977/2021/gmd-14-4977-2021.pdf
+orgs:
+- ncar
+- eth-zurich
+topic: climate-analysis-attribution
+topics:
+- downscaling
+type: model
+method:
+- gan-vae
+spatial:
+- regional
+data:
+- cmip
+status: research
+summary: A variational autoencoder with a linear latent penalty separates circulation-driven daily precipitation
+  at 12 km over Europe, enabling dynamical adjustment of high-resolution fields.
+abstract: A key challenge in climate science is to quantify the forced response in impact-relevant variables
+  such as precipitation against the background of internal variability, both in models and observations.
+  Dynamical adjustment techniques aim to remove unforced variability from a target variable by identifying
+  patterns associated with circulation, thus effectively acting as a filter for dynamically induced variability.
+  The forced contributions are interpreted as the variation that is unexplained by circulation. However,
+  dynamical adjustment of precipitation at local scales remains challenging because of large natural variability
+  and the complex, nonlinear relationship between precipitation and circulation particularly in heterogeneous
+  terrain. Building on variational autoencoders, we introduce a novel statistical model – the Latent Linear
+  Adjustment Autoencoder (LLAAE) – that enables estimation of the contribution of a coarse-scale atmospheric
+  circulation proxy to daily precipitation at high resolution and in a spatially coherent manner. To predict
+  circulation-induced precipitation, the Latent Linear Adjustment Autoencoder combines a linear component,
+  which models the relationship between circulation and the latent space of an autoencoder, with the autoencoder's
+  nonlinear decoder. The combination is achieved by imposing an additional penalty in the cost function
+  that encourages linearity between the circulation field and the autoencoder's latent space, hence leveraging
+  robustness advantages of linear models as well as the flexibility of deep neural networks. We show that
+  our model predicts realistic daily winter precipitation fields at high resolution based on a 50-member
+  ensemble of the Canadian Regional Climate Model at 12 km resolution over Europe, capturing, for instance,
+  key orographic features and geographical gradients. Using the Latent Linear Adjustment Autoencoder to
+  remove the dynamic component of precipitation variability, forced thermodynamic components are expected
+  to remain in the residual, which enables the uncovering of forced precipitation patterns of change from
+  just a few ensemble members. We extend this to quantify the forced pattern of change conditional on
+  specific circulation regimes. Future applications could include, for instance, weather generators emulating
+  climate model simulations of regional precipitation, detection and attribution at subcontinental scales,
+  or statistical downscaling and transfer learning between models and observations to exploit the typically
+  much larger sample size in models compared to observations.
+significance: 3
+cited_by: 20
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

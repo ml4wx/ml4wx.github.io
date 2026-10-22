@@ -1,0 +1,59 @@
+id: doi-10.3389-fmars.2021.717184
+title: Multi-Year ENSO Forecasts Using Parallel Convolutional Neural Networks With Heterogeneous Architecture
+authors:
+- Min Ye
+- Jie Nie
+- An-An Liu
+- Zhigang Wang
+- Lei Huang
+- Hao Tian
+- Dehai Song
+- Zhiqiang Wei
+date: '2021-08-19'
+year: 2021
+venue: Frontiers in Marine Science
+venue_type: journal
+ids:
+  doi: 10.3389/fmars.2021.717184
+  openalex: W3194009275
+links:
+  paper: https://doi.org/10.3389/fmars.2021.717184
+  pdf: https://www.frontiersin.org/articles/10.3389/fmars.2021.717184/pdf
+topic: s2s-seasonal
+type: model
+method:
+- cnn
+timescale:
+- seasonal
+spatial:
+- global
+data:
+- cmip
+- other
+status: research
+summary: Parallel CNNs with lead-time-specific architectures extend ENSO forecasts multiple years ahead
+  with better skill than prior deep learning baselines.
+abstract: The El Niño-Southern Oscillation (ENSO) is one of the main drivers of the interannual climate
+  variability of Earth and can cause a wide range of climate anomalies, so multi year ENSO forecasts are
+  a paramount scientific issue. However, most existing works rely on the conventional iterative mechanism
+  and, thus, fail to provide reliable long-term predictions due to error accumulation. Although methods
+  based on deep learning (DL) apply the parallel modeling scheme for different lead times instead of a
+  single iteration model, they leverage the same DL model for prediction, which can not fully mine the
+  variability of different lead times, resulting in a decrease of prediction accuracy. To solve this problem,
+  we propose a novel parallel deep convolutional neural network (CNN) with a heterogeneous architecture.
+  In this study, by adaptively selecting network architectures for different lead times, we realize variability
+  modeling of different tasks (lead times) and thereby improve the reliability of long-term predictions.
+  Furthermore, we propose a relationship between different prediction lead times and neural network architecture
+  from a unique perspective, namely, the receptive field originally proposed in computer vision. According
+  to the spatio-temporal correlated area and sampling scale of lead times, the size of the convolution
+  kernel and the mesh size of sampling are adjusted as the lead time increases. The Coupled Model Intercomparison
+  Project phase 5 (CMIP5) from 1861 to 2004 and the Simple Ocean Data Assimilation (SODA) from 1871 to
+  1973 were used for model training, and the GODAS from 1982 to 2017 were used for testing the forecast
+  skill of the model. Experimental results demonstrate that the proposed method outperforms the other
+  well-known methods, especially for long-term predictions.
+significance: 4
+cited_by: 25
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

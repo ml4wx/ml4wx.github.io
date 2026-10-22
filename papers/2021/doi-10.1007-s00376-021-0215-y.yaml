@@ -1,0 +1,62 @@
+id: doi-10.1007-s00376-021-0215-y
+title: A Deep Learning Method for Bias Correction of ECMWF 24–240 h Forecasts
+authors:
+- Lei Han
+- Mingxuan Chen
+- Kangkai Chen
+- Haonan Chen
+- Yanbiao Zhang
+- Bing Lu
+- Linye Song
+- Rui Qin
+date: '2021-07-10'
+year: 2021
+venue: Advances in Atmospheric Sciences
+venue_type: journal
+ids:
+  doi: 10.1007/s00376-021-0215-y
+  openalex: W3171394698
+links:
+  paper: https://doi.org/10.1007/s00376-021-0215-y
+  pdf: https://link.springer.com/content/pdf/10.1007/s00376-021-0215-y.pdf
+orgs:
+- colorado-state-university
+- cma
+topic: post-processing
+type: model
+method:
+- cnn
+timescale:
+- medium
+spatial:
+- regional
+data:
+- nwp-analysis
+- era5
+status: research
+summary: CU-net, a CNN, corrects gridded ECMWF-IFS 24–240 h forecasts of four surface variables over North
+  China, beating the ANO correction at all lead times.
+abstract: 'Abstract Correcting the forecast bias of numerical weather prediction models is important for
+  severe weather warnings. The refined grid forecast requires direct correction on gridded forecast products,
+  as opposed to correcting forecast data only at individual weather stations. In this study, a deep learning
+  method called CU-net is proposed to correct the gridded forecasts of four weather variables from the
+  European Centre for Medium-Range Weather Forecast Integrated Forecasting System global model (ECMWF-IFS):
+  2-m temperature, 2-m relative humidity, 10-m wind speed, and 10-m wind direction, with a forecast lead
+  time of 24 h to 240 h in North China. First, the forecast correction problem is transformed into an
+  image-to-image translation problem in deep learning under the CU-net architecture, which is based on
+  convolutional neural networks. Second, the ECMWF-IFS forecasts and ECMWF reanalysis data (ERA5) from
+  2005 to 2018 are used as training, validation, and testing datasets. The predictors and labels (ground
+  truth) of the model are created using the ECMWF-IFS and ERA5, respectively. Finally, the correction
+  performance of CU-net is compared with a conventional method, anomaly numerical correction with observations
+  (ANO). Results show that forecasts from CU-net have lower root mean square error, bias, mean absolute
+  error, and higher correlation coefficient than those from ANO for all forecast lead times from 24 h
+  to 240 h. CU-net improves upon the ECMWF-IFS forecast for all four weather variables in terms of the
+  above evaluation metrics, whereas ANO improves upon ECMWF-IFS performance only for 2-m temperature and
+  relative humidity. For the correction of the 10-m wind direction forecast, which is often difficult
+  to achieve, CU-net also improves the correction performance.'
+significance: 4
+cited_by: 165
+score: 36
+highlight: false
+added: '2026-10-22'
+source: backfill

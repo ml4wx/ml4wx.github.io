@@ -1,0 +1,56 @@
+id: arxiv-2012.13262
+title: Calibration and Uncertainty Quantification of Convective Parameters in an Idealized GCM
+authors:
+- Oliver R. A. Dunbar
+- Tapio Schneider
+- Andrew M. Stuart
+- Alfredo Garbuno-Iñigo
+date: '2021-08-19'
+year: 2021
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  arxiv: '2012.13262'
+  doi: 10.1029/2020ms002454
+  openalex: W3113646778
+links:
+  paper: https://doi.org/10.1029/2020ms002454
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2020MS002454
+orgs:
+- caltech
+topic: xai-uq-physics
+topics:
+- hybrid-parameterization
+type: model
+method:
+- classical-ml
+spatial:
+- global
+data:
+- other
+status: research
+summary: Calibrate-emulate-sample with Gaussian process emulators and ensemble Kalman inversion quantifies
+  convective parameter uncertainty in an idealized GCM at a fraction of MCMC cost.
+abstract: 'Abstract Parameters in climate models are usually calibrated manually, exploiting only small
+  subsets of the available data. This precludes both optimal calibration and quantification of uncertainties.
+  Traditional Bayesian calibration methods that allow uncertainty quantification are too expensive for
+  climate models; they are also not robust in the presence of internal climate variability. For example,
+  Markov chain Monte Carlo (MCMC) methods typically require model runs and are sensitive to internal variability
+  noise, rendering them infeasible for climate models. Here we demonstrate an approach to model calibration
+  and uncertainty quantification that requires only model runs and can accommodate internal climate variability.
+  The approach consists of three stages: (a) a calibration stage uses variants of ensemble Kalman inversion
+  to calibrate a model by minimizing mismatches between model and data statistics; (b) an emulation stage
+  emulates the parameter‐to‐data map with Gaussian processes (GP), using the model runs in the calibration
+  stage for training; (c) a sampling stage approximates the Bayesian posterior distributions by sampling
+  the GP emulator with MCMC. We demonstrate the feasibility and computational efficiency of this calibrate‐emulate‐sample
+  (CES) approach in a perfect‐model setting. Using an idealized general circulation model, we estimate
+  parameters in a simple convection scheme from synthetic data generated with the model. The CES approach
+  generates probability distributions of the parameters that are good approximations of the Bayesian posteriors,
+  at a fraction of the computational cost usually required to obtain them. Sampling from this approximate
+  posterior allows the generation of climate predictions with quantified parametric uncertainties.'
+significance: 3
+cited_by: 88
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

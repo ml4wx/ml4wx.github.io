@@ -1,0 +1,60 @@
+id: doi-10.1029-2021gl092555
+title: Correcting Weather and Climate Models by Machine Learning Nudged Historical Simulations
+authors:
+- Oliver Watt‐Meyer
+- Noah Brenowitz
+- Spencer Koncius Clark
+- Brian Henn
+- Anna Kwa
+- Jeremy McGibbon
+- W. A. Perkins
+- Christopher S. Bretherton
+date: '2021-07-15'
+year: 2021
+venue: Geophysical Research Letters
+venue_type: journal
+ids:
+  doi: 10.1029/2021gl092555
+  openalex: W3150028748
+links:
+  paper: https://doi.org/10.1029/2021gl092555
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2021GL092555
+orgs:
+- ai2
+- noaa
+- university-of-washington
+- princeton-university
+topic: hybrid-parameterization
+topics:
+- global-medium-range
+type: model
+method:
+- classical-ml
+timescale:
+- short
+- climate
+spatial:
+- global
+data:
+- nwp-analysis
+- era5
+status: research
+summary: A random forest learns nudging tendencies and is coupled to FV3GFS, reducing 500 hPa height forecast
+  error and annual-mean precipitation RMSE by about 20% in year-long runs.
+abstract: Abstract Due to limited resolution and inaccurate physical parameterizations, weather and climate
+  models consistently develop biases compared to the observed atmosphere. Using the FV3GFS model at coarse
+  resolution, we propose a method of machine learning corrective tendencies from a hindcast simulation
+  nudged toward observational analysis. We show that a random forest can predict the nudging tendencies
+  from this hindcast simulation with moderate skill using only the model state as input. This random forest
+  is then coupled to FV3GFS, adding corrective tendencies of temperature, specific humidity and horizontal
+  winds at each timestep. The coupled model shows no signs of instability in year‐long simulations and
+  has significant reductions in short‐term forecast error for 500 hPa height, surface pressure and near‐surface
+  temperature. Furthermore, the root mean square error of the annual‐mean precipitation is reduced by
+  about 20%. Biases of other variables remain similar or in some cases, like upper‐atmospheric temperature,
+  increase in the year‐long simulations.
+significance: 5
+cited_by: 135
+score: 65
+highlight: false
+added: '2026-10-22'
+source: backfill

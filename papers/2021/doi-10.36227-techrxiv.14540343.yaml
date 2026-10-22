@@ -1,0 +1,52 @@
+id: doi-10.36227-techrxiv.14540343
+title: Precipitation Nowcasting using Data-driven Reduced-order Model
+authors:
+- Divya S Vidyadharan
+- Aaron Xavier
+- Blossom Treesa Bastian
+- Ajay Ragh
+- Naveen Chittilapilly
+date: '2021-05-13'
+year: 2021
+venue_type: other
+ids:
+  doi: 10.36227/techrxiv.14540343
+  openalex: W4256585467
+links:
+  paper: https://doi.org/10.36227/techrxiv.14540343
+  pdf: https://www.techrxiv.org/articles/preprint/Precipitation_Nowcasting_using_Data-driven_Reduced-order_Model/14540343/1/files/27895341.pdf
+topic: nowcasting
+type: model
+method:
+- other
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Radar nowcasting combines TVL1 optical flow with SINDy sparse dynamics to produce ensemble precipitation
+  forecasts that beat benchmarks on typhoon and squall-line cases.
+abstract: Radar-based precipitation nowcasting refers to predicting rain for a short period of time using
+  radar reflectivity images. For dynamic nowcasting, motion fields can be extrapolated using an approximate
+  and localized reduced-order model. Motion field estimation based on traditional Horn-Schunck (HS) algorithm
+  suffers from over-smoothing at discontinuities in non-rigid and dissolving texture present in precipitation
+  nowcasting products. An attempt to preserve the discontinuities using an L1 norm formulation in HS led
+  to the use of Total Variation L1 norm (TVL1). In this paper, we propose a radar-based precipitation
+  nowcasting model with TVL1-based estimation of motion field and Sparse Identification of Non-linear
+  Dynamics (SINDy)-based estimation of non-linear dynamics. TVL1 is effective in preserving the edges
+  especially in the case of the eye of typhoons and squall lines while estimating motion vectors. SINDy
+  captures the non-linear dynamics and generates the subsequent update values for the motion field based
+  on a reduced-order representation. Finally, the SINDy-generated ensemble of motion field is used along
+  with the radar reflectivity image for generating precipitation nowcasts. We evaluated the effectiveness
+  of TVL1 in preserving edges while capturing the motion field from non-rigid surfaces. The performance
+  of the proposed TVL1-SINDy model in nowcasting weather events such as Typhoons and Squall lines are
+  evaluated using performance metrics such as Mean Absolute Error (MAE), and Critical Success Index (CSI).
+  Experimental results show that the proposed nowcasting system demonstrates better performance compared
+  to the benchmark nowcasting models with lower MAE, higher CSI at higher lead times.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

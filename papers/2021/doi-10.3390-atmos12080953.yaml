@@ -1,0 +1,54 @@
+id: doi-10.3390-atmos12080953
+title: Machine Learning Emulation of Spatial Deposition from a Multi-Physics Ensemble of Weather and Atmospheric
+  Transport Models
+authors:
+- Nipun Gunawardena
+- Giuliana Pallotta
+- Matthew D. Simpson
+- Donald D. Lucas
+date: '2021-07-24'
+year: 2021
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos12080953
+  openalex: W3184659341
+links:
+  paper: https://doi.org/10.3390/atmos12080953
+  pdf: https://www.mdpi.com/2073-4433/12/8/953/pdf?version=1627372149
+topic: applications-impacts
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- nwp-analysis
+- other
+status: research
+summary: Linear and logistic regression emulate spatial deposition from a multi-physics atmospheric dispersion
+  ensemble, about 10,000 times faster per run but 24 times faster overall.
+abstract: In the event of an accidental or intentional hazardous material release in the atmosphere, researchers
+  often run physics-based atmospheric transport and dispersion models to predict the extent and variation
+  of the contaminant spread. These predictions are imperfect due to propagated uncertainty from atmospheric
+  model physics (or parameterizations) and weather data initial conditions. Ensembles of simulations can
+  be used to estimate uncertainty, but running large ensembles is often very time consuming and resource
+  intensive, even using large supercomputers. In this paper, we present a machine-learning-based method
+  which can be used to quickly emulate spatial deposition patterns from a multi-physics ensemble of dispersion
+  simulations. We use a hybrid linear and logistic regression method that can predict deposition in more
+  than 100,000 grid cells with as few as fifty training examples. Logistic regression provides probabilistic
+  predictions of the presence or absence of hazardous materials, while linear regression predicts the
+  quantity of hazardous materials. The coefficients of the linear regressions also open avenues of exploration
+  regarding interpretability—the presented model can be used to find which physics schemes are most important
+  over different spatial areas. A single regression prediction is on the order of 10,000 times faster
+  than running a weather and dispersion simulation. However, considering the number of weather and dispersion
+  simulations needed to train the regressions, the speed-up achieved when considering the whole ensemble
+  is about 24 times. Ultimately, this work will allow atmospheric researchers to produce potential contamination
+  scenarios with uncertainty estimates faster than previously possible, aiding public servants and first
+  responders.
+significance: 3
+cited_by: 22
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

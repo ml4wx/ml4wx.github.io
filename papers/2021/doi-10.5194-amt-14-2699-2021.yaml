@@ -1,0 +1,64 @@
+id: doi-10.5194-amt-14-2699-2021
+title: Applying machine learning methods to detect convection using Geostationary Operational Environmental
+  Satellite-16 (GOES-16) advanced baseline imager (ABI) data
+authors:
+- Yoonjin Lee
+- Christian D. Kummerow
+- Imme Ebert‐Uphoff
+date: '2021-04-08'
+year: 2021
+venue: Atmospheric measurement techniques
+venue_type: journal
+ids:
+  doi: 10.5194/amt-14-2699-2021
+  openalex: W3147008637
+links:
+  paper: https://doi.org/10.5194/amt-14-2699-2021
+  pdf: https://amt.copernicus.org/articles/14/2699/2021/amt-14-2699-2021.pdf
+orgs:
+- colorado-state-university
+topic: observations-remote-sensing
+topics:
+- nowcasting
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+- radar
+status: research
+summary: A convolutional network on one-minute GOES-16 visible and infrared imagery detects convection,
+  trained against MRMS radar precipitation types as a proof of concept.
+abstract: 'Abstract. An ability to accurately detect convective regions is essential for initializing
+  models for short term precipitation forecasts. Radar data are commonly used to detect convection, but
+  radars that provide high temporal resolution data are mostly available over land and the quality of
+  the data tends to degrade over mountainous regions. On the other hand, geostationary satellite data
+  are available nearly anywhere and in near-real time. Current operational geostationary satellites, the
+  Geostationary Operational Environmental Satellite-16 (GOES-16) and -17 provide high spatial and temporal
+  resolution data, but only of cloud top properties. One-minute data, however, allow us to observe convection
+  from visible and infrared data even without vertical information of the convective system. Existing
+  detection algorithms using visible and infrared data look for static features of convective clouds such
+  as overshooting top or lumpy cloud top surface, or cloud growth that occurs over periods of 30 minutes
+  to an hour. This study represents a proof-of-concept that Artificial Intelligence (AI) is able, when
+  given high spatial and temporal resolution data from GOES-16, to learn physical properties of convective
+  clouds and automate the detection process. A neural network model with convolutional layers is proposed
+  to identify convection from the high-temporal resolution GOES-16 data. The model takes five temporal
+  images from channel 2 (0.65 μm) and 14 (11.2 μm) as inputs and produces a map of convective regions.
+  In order to provide products comparable to the radar products, it is trained against Multi-Radar Multi-Sensor
+  (MRMS), which is a radar-based product that uses rather sophisticated method to classify precipitation
+  types. Two channels from GOES-16, each related to cloud optical depth (channel 2) and cloud top height
+  (channel 14), are expected to best represent features of convective clouds: high reflectance, lumpy
+  cloud top surface, and low cloud top temperature. The model has correctly learned those features of
+  convective clouds, and resulted reasonably low false alarm ratio (FAR) and high probability of detection
+  (POD). However, FAR and POD can vary depending on the threshold, and a proper threshold needs to be
+  chosen based on the purpose.'
+significance: 3
+cited_by: 50
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

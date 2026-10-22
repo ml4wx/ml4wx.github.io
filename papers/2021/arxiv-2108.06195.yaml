@@ -1,0 +1,44 @@
+id: arxiv-2108.06195
+title: 'Two-Dimensional Convective Boundary Layer: Numerical Analysis and Echo State Network model'
+authors:
+- Florian Heyder
+- Juan Pedro Mellado
+- Jörg Schumacher
+date: '2021-08-13'
+year: 2021
+venue_type: preprint
+ids:
+  arxiv: '2108.06195'
+  openalex: W3195378709
+links:
+  paper: http://arxiv.org/pdf/2108.06195.pdf
+topic: hybrid-parameterization
+type: model
+method:
+- rnn
+spatial:
+- local
+data:
+- km-scale-sim
+status: research
+summary: Echo state network trained on direct numerical simulations reproduces convective boundary-layer
+  buoyancy flux statistics and generalizes to unseen flux ratios without solving the equations of motion.
+abstract: The numerical study of global atmospheric circulation processes requires the parametrization
+  of turbulent buoyancy fluxes in the lower convective boundary layer which typically cannot be resolved
+  by the coarse-scale computational grids. In the present work, a two-dimensional model of a shallow convective
+  boundary layer in the Boussinesq limit is investigated by direct numerical simulations. A series of
+  simulation runs evaluates the turbulent transport properties as a function of the ratio between the
+  prescribed buoyancy fluxes at the top and the bottom of the layer. Our model is able to reproduce essential
+  properties of the lower convective boundary layer. The resulting data records are subsequently used
+  to train and test a recurrent neural network which is realized by an echo state network with a high-dimensional
+  reservoir. It is shown that the echo state network reproduces the turbulence dynamics and the statistical
+  properties of the buoyancy flux across the layer very well and is thus able to model these transport
+  processes without solving the underlying highly nonlinear equations of motion. Focus is given to the
+  generalization properties of the echo state network, i.e., its ability to model unseen data records
+  with a different flux ratio.
+significance: 2
+cited_by: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

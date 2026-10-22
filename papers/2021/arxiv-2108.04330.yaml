@@ -1,0 +1,42 @@
+id: arxiv-2108.04330
+title: Creating synthetic night-time visible-light meteorological satellite images using the GAN method
+authors:
+- Wencong Cheng
+date: '2021-07-21'
+year: 2021
+venue_type: preprint
+ids:
+  arxiv: '2108.04330'
+links:
+  paper: https://arxiv.org/abs/2108.04330
+  pdf: https://arxiv.org/pdf/2108.04330
+topic: observations-remote-sensing
+type: model
+method:
+- gan-vae
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+- nwp-analysis
+status: research
+summary: GAN with channel attention synthesizes night-time visible satellite images from infrared data
+  and ECMWF NWP fields, using FY-4A observations.
+abstract: Meteorology satellite visible light images is critical for meteorology support and forecast.
+  However, there is no such kind of data during night time. To overcome this, we propose a method based
+  on deep learning to create synthetic satellite visible light images during night. Specifically, to produce
+  more realistic products, we train a Generative Adversarial Networks (GAN) model to generate visible
+  light images given the corresponding satellite infrared images and numerical weather prediction(NWP)
+  products. To better model the nonlinear relationship from infrared data and NWP products to visible
+  light images, we propose to use the channel-wise attention mechanics, e.g., SEBlock to quantitative
+  weight the input channels. The experiments based on the ECMWF NWP products and FY-4A meteorology satellite
+  visible light and infrared channels date show that the proposed methods can be effective to create realistic
+  synthetic satellite visible light images during night.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

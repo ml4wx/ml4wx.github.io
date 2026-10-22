@@ -1,0 +1,51 @@
+id: doi-10.1029-2020ea001621
+title: Application of a Radar Echo Extrapolation‐Based Deep Learning Method in Strong Convection Nowcasting
+authors:
+- Jian Yin
+- Zhiqiu Gao
+- Wei Han
+date: '2021-07-21'
+year: 2021
+venue: Earth and Space Science
+venue_type: journal
+ids:
+  doi: 10.1029/2020ea001621
+  openalex: W3186404120
+links:
+  paper: https://doi.org/10.1029/2020ea001621
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2020EA001621
+orgs:
+- nuist
+- iap-cas
+- cma
+topic: nowcasting
+type: model
+method:
+- rnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Trains ConvGRU radar echo extrapolation with SSIM and MS-SSIM losses to reduce blurring; MS-SSIM
+  gives the most realistic strong-echo forecasts out to 2 hours.
+abstract: Abstract Strong convection nowcasting has been gaining importance in operational weather forecasting.
+  Recently, deep learning methods have been used to meet the increasing requirement for precise and timely
+  nowcasting. One of the promising deep learning models is the convolutional gated recurrent unit (ConvGRU),
+  which has been proven to perform better than traditional methods in strong convection nowcasting. Despite
+  its encouraging performance, ConvGRU tends to produce blurry radar echo images and fails to model radar
+  echo intensities that have multi‐modal and skewed distributions. To overcome these disadvantages, we
+  tested the structural similarity (SSIM) and multiscale structural similarity (MS‐SSIM) indexes as loss
+  functions. The SSIM and MS‐SSIM loss functions are composed of luminance, contrast, and structure and
+  provide more information about the intensity, grade, and shape of the radar echo, which can reduce blurring.
+  Due to multi‐layer downscaling, MS‐SSIM extracted more radar echo characteristics, and its extrapolation
+  was the most realistic and accurate among all of the loss function schemes. Only the MS‐SSIM scheme
+  successfully predicted strong radar echoes after 2 h, especially those at the rainstorm level.
+significance: 4
+cited_by: 31
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,50 @@
+id: arxiv-2107.11114
+title: A comparison of combined data assimilation and machine learning methods for offline and online
+  model error correction
+authors:
+- Alban Farchi
+- Marc Bocquet
+- Patrick Laloyaux
+- Massimo Bonavita
+- Quentin Malartic
+date: '2021-07-23'
+year: 2021
+venue_type: preprint
+ids:
+  arxiv: '2107.11114'
+links:
+  paper: https://arxiv.org/abs/2107.11114
+  pdf: https://arxiv.org/pdf/2107.11114
+topic: data-assimilation
+type: model
+method:
+- differentiable
+- other
+timescale:
+- medium
+data:
+- other
+status: research
+summary: Compares resolvent and tendency ML error corrections within data assimilation on a two-scale
+  Lorenz model; tendency correction wins in assimilation and enables online learning.
+abstract: Recent studies have shown that it is possible to combine machine learning methods with data
+  assimilation to reconstruct a dynamical system using only sparse and noisy observations of that system.
+  The same approach can be used to correct the error of a knowledge-based model. The resulting surrogate
+  model is hybrid, with a statistical part supplementing a physical part. In practice, the correction
+  can be added as an integrated term (i.e. in the model resolvent) or directly inside the tendencies of
+  the physical model. The resolvent correction is easy to implement. The tendency correction is more technical,
+  in particular it requires the adjoint of the physical model, but also more flexible. We use the two-scale
+  Lorenz model to compare the two methods. The accuracy in long-range forecast experiments is somewhat
+  similar between the surrogate models using the resolvent correction and the tendency correction. By
+  contrast, the surrogate models using the tendency correction significantly outperform the surrogate
+  models using the resolvent correction in data assimilation experiments. Finally, we show that the tendency
+  correction opens the possibility to make online model error correction, i.e. improving the model progressively
+  as new observations become available. The resulting algorithm can be seen as a new formulation of weak-constraint
+  4D-Var. We compare online and offline learning using the same framework with the two-scale Lorenz system,
+  and show that with online learning, it is possible to extract all the information from sparse and noisy
+  observations.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

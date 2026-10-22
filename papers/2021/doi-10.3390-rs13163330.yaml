@@ -1,0 +1,60 @@
+id: doi-10.3390-rs13163330
+title: Reconstruction of the Radar Reflectivity of Convective Storms Based on Deep Learning and Himawari-8
+  Observations
+authors:
+- Mingshan Duan
+- Jiangjiang Xia
+- Zhongwei Yan
+- Lei Han
+- Lejian Zhang
+- Hanmeng Xia
+- Shuang Yu
+date: '2021-08-23'
+year: 2021
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs13163330
+  openalex: W3195543658
+links:
+  paper: https://doi.org/10.3390/rs13163330
+  pdf: https://www.mdpi.com/2072-4292/13/16/3330/pdf
+orgs:
+- iap-cas
+- cma
+topic: observations-remote-sensing
+topics:
+- nowcasting
+type: model
+method:
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+- radar
+status: research
+summary: U-Net-style CNN reconstructs 35 dBZ radar reflectivity from Himawari-8 infrared channels over
+  North China, a proxy product for regions without radar.
+abstract: Radar reflectivity (RR) greater than 35 dBZ usually indicates the presence of severe convective
+  weather, which affects a variety of human activities, including aviation. However, RR data are scarce,
+  especially in regions with poor radar coverage or substantial terrain obstructions. Fortunately, the
+  radiance data of space-based satellites with universal coverage can be converted into a proxy field
+  of RR. In this study, a convolutional neural network-based data-driven model is developed to convert
+  the radiance data (infrared bands 07, 09, 13, 16, and 16–13) of Himawari-8 into the radar combined reflectivity
+  factor (CREF). A weighted loss function is designed to solve the data imbalance problem due to the sparse
+  convective pixels in the sample. The developed model demonstrates an overall reconstruction capability
+  and performs well in terms of classification scores with 35 dBZ as the threshold. A five-channel input
+  is more efficient in reconstructing the CREF than the commonly used one-channel input. In a case study
+  of a convective event over North China in the summer using the test dataset, U-Net reproduces the location,
+  shape and strength of the convective storm well. The present RR reconstruction technology based on deep
+  learning and Himawari-8 radiance data is shown to be an efficient tool for producing high-resolution
+  RR products, which are especially needed for regions without or with poor radar coverage.
+significance: 3
+cited_by: 37
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

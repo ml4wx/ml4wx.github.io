@@ -1,0 +1,44 @@
+id: arxiv-2104.08236
+title: Controlled abstention neural networks for identifying skillful predictions for regression problems
+authors:
+- Elizabeth A. Barnes
+- Randal J. Barnes
+date: '2021-04-16'
+year: 2021
+venue_type: preprint
+ids:
+  arxiv: '2104.08236'
+  doi: 10.1029/2021ms002575
+links:
+  paper: https://arxiv.org/abs/2104.08236
+  pdf: https://arxiv.org/pdf/2104.08236
+topic: xai-uq-physics
+type: model
+method:
+- other
+data:
+- other
+status: research
+summary: An abstention loss lets regression networks flag low-confidence samples during training, outperforming
+  a standard uncertainty baseline on synthetic climate tasks.
+abstract: 'The earth system is exceedingly complex and often chaotic in nature, making prediction incredibly
+  challenging: we cannot expect to make perfect predictions all of the time. Instead, we look for specific
+  states of the system that lead to more predictable behavior than others, often termed "forecasts of
+  opportunity". When these opportunities are not present, scientists need prediction systems that are
+  capable of saying "I don''t know." We introduce a novel loss function, termed "abstention loss", that
+  allows neural networks to identify forecasts of opportunity for regression problems. The abstention
+  loss works by incorporating uncertainty in the network''s prediction to identify the more confident
+  samples and abstain (say "I don''t know") on the less confident samples. The abstention loss is designed
+  to determine the optimal abstention fraction, or abstain on a user-defined fraction via a PID controller.
+  Unlike many methods for attaching uncertainty to neural network predictions post-training, the abstention
+  loss is applied during training to preferentially learn from the more confident samples. The abstention
+  loss is built upon a standard computer science method. While the standard approach is itself a simple
+  yet powerful tool for incorporating uncertainty in regression problems, we demonstrate that the abstention
+  loss outperforms this more standard method for the synthetic climate use cases explored here. The implementation
+  of proposed loss function is straightforward in most network architectures designed for regression,
+  as it only requires modification of the output layer and loss function.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill
