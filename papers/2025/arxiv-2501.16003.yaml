@@ -1,0 +1,49 @@
+id: arxiv-2501.16003
+title: Improving Tropical Cyclone Forecasting With Video Diffusion Models
+authors:
+- Zhibo Ren
+- Pritthijit Nath
+- Pancham Shukla
+date: '2025-01-27'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2501.16003'
+  openalex: W4406884877
+links:
+  paper: https://arxiv.org/abs/2501.16003
+  pdf: https://arxiv.org/pdf/2501.16003
+  code: https://github.com/Ren-creater/forecast-video-diffmodels
+topic: extremes-hazards
+topics:
+- nowcasting
+type: model
+method:
+- diffusion
+- transformer
+timescale:
+- short
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Video diffusion with temporal layers extends reliable tropical cyclone forecast lead time from
+  36 to 50 hours and beats prior frame-by-frame methods by 19% in MAE.
+abstract: Tropical cyclone (TC) forecasting is crucial for disaster preparedness and mitigation. While
+  recent deep learning approaches have shown promise, existing methods often treat TC evolution as a series
+  of independent frame-to-frame predictions, limiting their ability to capture long-term dynamics. We
+  present a novel application of video diffusion models for TC forecasting that explicitly models temporal
+  dependencies through additional temporal layers. Our approach enables the model to generate multiple
+  frames simultaneously, better capturing cyclone evolution patterns. We introduce a two-stage training
+  strategy that significantly improves individual-frame quality and performance in low-data regimes. Experimental
+  results show our method outperforms the previous approach of Nath et al. by 19.3% in MAE, 16.2% in PSNR,
+  and 36.1% in SSIM. Most notably, we extend the reliable forecasting horizon from 36 to 50 hours. Through
+  comprehensive evaluation using both traditional metrics and Fréchet Video Distance (FVD), we demonstrate
+  that our approach produces more temporally coherent forecasts while maintaining competitive single-frame
+  quality. Code accessible at https://github.com/Ren-creater/forecast-video-diffmodels.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,58 @@
+id: arxiv-2502.01550
+title: 'FireCastNet: Earth-as-a-Graph for Seasonal Fire Prediction'
+authors:
+- Dimitrios Michail
+- Charalampos Davalas
+- Konstantinos Chafis
+- Lefki-Ioanna Panagiotou
+- Ioannis Prapas
+- Spyros Kondylatos
+- Nikolaos Ioannis Bountos
+- Ioannis Papoutsis
+date: '2025-02-03'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2502.01550'
+links:
+  paper: https://arxiv.org/abs/2502.01550
+  pdf: https://arxiv.org/pdf/2502.01550
+topic: extremes-hazards
+topics:
+- s2s-seasonal
+type: model
+method:
+- gnn
+- cnn
+- transformer
+timescale:
+- seasonal
+spatial:
+- global
+data:
+- era5
+- satellite
+status: research
+summary: FireCastNet combines 3D CNN encoding with GraphCast-style GNNs to forecast global burned area
+  up to six months ahead on SeasFire data, outperforming GRU, ConvLSTM and TeleViT baselines.
+abstract: With climate change intensifying fire weather conditions globally, accurate seasonal wildfire
+  forecasting has become critical for disaster preparedness and ecosystem management. We introduce FireCastNet,
+  a novel deep learning architecture that combines 3D convolutional encoding with GraphCast-based Graph
+  Neural Networks (GNNs) to model complex spatio-temporal dependencies for global wildfire prediction.
+  Our approach leverages the SeasFire dataset, a comprehensive multivariate Earth system datacube containing
+  climate, vegetation, and human-related variables, to forecast burned area patterns up to six months
+  in advance. FireCastNet treats the Earth as an interconnected graph, enabling it to capture both local
+  fire dynamics and long-range teleconnections that influence wildfire behavior across different spatial
+  and temporal scales. Through comprehensive benchmarking against state-of-the-art models including GRU,
+  Conv-GRU, Conv-LSTM, U-TAE, and TeleViT, we demonstrate that FireCastNet achieves superior performance
+  in global burned area forecasting, with particularly strong results in fire-prone regions such as Africa,
+  South America, and Southeast Asia. Our analysis reveals that longer input time-series significantly
+  improve prediction robustness, while spatial context integration enhances model performance across extended
+  forecasting horizons. Additionally, we implement local area modeling techniques that provide enhanced
+  spatial resolution and accuracy for region-specific predictions. These findings highlight the importance
+  of modeling Earth system interactions for long-term wildfire prediction.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

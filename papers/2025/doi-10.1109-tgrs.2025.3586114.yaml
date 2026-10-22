@@ -1,0 +1,63 @@
+id: doi-10.1109-tgrs.2025.3586114
+title: KAN-Enhanced Transformer for Wind Profile Retrieval From Lidar Spectra
+authors:
+- Ran Tao
+- Chong Wang
+- Hao Chen
+- Mingjiao Jia
+- Xiang Shang
+- Luoyuan Qu
+- Guo-Liang Shentu
+- Yanyu Lu
+- Yanfeng Huo
+- Lei Bai
+- Xianghui Xue
+- Xiankang Dou
+date: '2025-01-01'
+year: 2025
+venue: IEEE Transactions on Geoscience and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/tgrs.2025.3586114
+  openalex: W4412030666
+links:
+  paper: https://doi.org/10.1109/tgrs.2025.3586114
+orgs:
+- shanghai-ai-lab
+topic: observations-remote-sensing
+type: model
+method:
+- transformer
+spatial:
+- local
+data:
+- other
+- stations
+status: research
+summary: A Transformer with Kolmogorov-Arnold network retrieves lidar wind profiles at higher altitudes
+  than conventional methods, validated against radiosondes with better accuracy than its training labels.
+abstract: Accurate detection of wind profiles within the troposphere is essential for atmospheric dynamics
+  research and extreme weather forecasting. Coherent Doppler wind lidar (CDWL) is widely regarded as the
+  most suitable technique for high spatial and temporal resolution wind profile detection. However, since
+  coherent detection relies heavily on the concentration of aerosol particles, which cause Mie scattering,
+  the received backscattering lidar signal exhibits significantly low intensity at high altitudes. As
+  a result, conventional methods, such as spectral centroid estimator, often fail to produce credible
+  and accurate wind retrieval results in these regions. To address this issue, we introduce a deep learning
+  model for lidar wind profile retrieval, which integrates Transformer architecture with the Kolmogorov-Arnold
+  network. Our model is trained solely on targets derived from the traditional wind retrieval algorithm
+  and utilizes radiosonde measurements as the ground truth for test results evaluation. Experimental results
+  demonstrate that our model not only extends the maximum vertical wind profile detection range but also
+  produces more accurate results, exhibiting a level of precision that surpasses the labeled targets.
+  This phenomenon, which we refer to assuper-accuracy, is explored by investigating the potential underlying
+  factors that contribute to this intriguing occurrence. In addition, we compare the performance of our
+  method with other state-of-the-art (SOTA) models, highlighting its superior effectiveness and capability
+  in high-resolution wind retrieval. In the future, our proposed model could potentially be extended to
+  other remote sensing spectrum signal processing applications (e.g., microwave Doppler lidar), thereby
+  establishing a benchmark for future research and driving the advancement of deep learning models in
+  this domain.
+significance: 3
+cited_by: 9
+score: 47
+highlight: false
+added: '2026-10-22'
+source: backfill

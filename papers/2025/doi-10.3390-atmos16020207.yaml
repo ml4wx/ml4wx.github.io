@@ -1,0 +1,54 @@
+id: doi-10.3390-atmos16020207
+title: Adjusting Soil Temperatures with a Physics-Informed Deep Learning Model for a High-Resolution Numerical
+  Weather Prediction System
+authors:
+- Qiufan Wang
+- Yubao Liu
+- Yueqin Shi
+- Shaofeng Hua
+date: '2025-02-12'
+year: 2025
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos16020207
+  openalex: W4407414537
+links:
+  paper: https://doi.org/10.3390/atmos16020207
+orgs:
+- nuist
+- cma
+topic: post-processing
+topics:
+- regional-km-scale
+type: model
+method:
+- cnn
+- physics-constrained
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: A U-Net estimates soil temperature from WRF 2 m temperature forecasts with MAE under 0.8 K, and
+  boundary-layer physics-guided training cuts error a further 8.8%.
+abstract: Soil temperature (ST) plays an important role in the surface heat energy balance, and an accurate
+  description of soil temperatures is critical for numerical weather prediction; however, it is difficult
+  to consistently measure soil temperatures. We developed a U-Net-based deep learning model to derive
+  soil temperatures (designated as ST-U-Net) primarily based on 2 m air temperature (T2) forecasts. The
+  model, the domain of which covers the Mt. Lushan region, was trained and tested by utilizing the high-resolution
+  forecast archive of an operational weather research and forecasting four-dimensional data assimilation
+  (WRF-FDDA) system. The results showed that ST-U-Net can accurately estimate soil temperatures based
+  on T2 inputs, achieving a mean absolute error (MAE) of less than 0.8 K on the testing set of 5055 samples.
+  The performance of ST-U-Net varied diurnally, with smaller errors at night and slightly larger errors
+  in the daytime. Incorporating additional inputs such as land uses, terrain height, radiation flux, surface
+  heat flux, and coded time further reduced the MAE for ST by 26.7%. By developing a boundary-layer physics-guided
+  training strategy, the error was further reduced by 8.8%.
+significance: 3
+cited_by: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

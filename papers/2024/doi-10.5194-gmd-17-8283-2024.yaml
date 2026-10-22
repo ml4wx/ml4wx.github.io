@@ -1,0 +1,67 @@
+id: doi-10.5194-gmd-17-8283-2024
+title: 'Introducing the MESMER-M-TPv0.1.0 module: spatially explicit Earth system model emulation for
+  monthly precipitation and temperature'
+authors:
+- Sarah Schöngart
+- Lukas Gudmundsson
+- Mathias Hauser
+- Peter Pfleiderer
+- Quentin Lejeune
+- Shruti Nath
+- Sonia Isabelle Seneviratne
+- Carl‐Friedrich Schleussner
+date: '2024-11-25'
+year: 2024
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-17-8283-2024
+  openalex: W4404702052
+links:
+  paper: https://doi.org/10.5194/gmd-17-8283-2024
+orgs:
+- eth-zurich
+topic: climate-emulation
+topics:
+- downscaling
+type: model
+method:
+- classical-ml
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: MESMER-M-TP emulates spatially explicit monthly precipitation from temperature using GLMs and
+  KDE across 24 CMIP6 models.
+abstract: Abstract. Emulators of Earth System Models (ESMs) are statistical models that approximate selected
+  outputs of ESMs. Owing to their runtime-efficiency, emulators are especially useful whenever vast amounts
+  of data are required, for example, for thoroughly exploring the emission space, for investigating high-impact
+  low-probability events, or for estimating uncertainties and variability. This paper introduces an emulation
+  framework that allows to emulate spatially explicit monthly mean precipitation fields using spatially
+  explicit monthly mean temperature fields as forcing. The emulator is designed as an additional module
+  within the MESMER(-M) emulation framework and its core relies on the concepts of Generalised Linear
+  Models (GLMs). Precipitation at each (land-)grid point and for each month is approximated as a multiplicative
+  model with two factors. The first factor entails the temperature-driven precipitation response and is
+  assumed to follow a Gamma distribution with a logarithmic link function. The second factor is the residual
+  variability of the precipitation field. The residual variability is assumed to be independent of temperature,
+  but may still possess spatial precipitation correlations. Therefore, the monthly residual field is decomposed
+  into independent Principal Components and subsequently approximated and sampled using a Kernel Density
+  Estimation with a Gaussian kernel. The emulation framework is tested and validated using 24 ESMs from
+  the Sixth Phase of the Coupled Model Intercomparison Project (CMIP6). For each ESM, we train on a single
+  ensemble member across scenarios and evaluate the emulator performance using simulations with historical
+  and SSP5-8.5 forcing. We show that the framework captures grid point specific precipitation characteristics,
+  such as variability, trend and temporal auto-correlations. In addition, we find that emulated spatial
+  (cross-variable) characteristics are consistent with that of ESMs. The framework is also able to capture
+  compound hot-dry and cold-wet extremes, although it systematically underestimates their occurrence probabilities.
+  The emulation of spatially explicit, coherent monthly temperature and precipitation timeseries is a
+  major step towards the representation of impact-relevant variables of the climate system in a computational
+  efficient manner.
+significance: 4
+cited_by: 6
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

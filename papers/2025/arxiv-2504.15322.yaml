@@ -1,0 +1,50 @@
+id: arxiv-2504.15322
+title: How to systematically develop an effective AI-based bias correction model?
+authors:
+- Xiao Zhou
+- Yuze Sun
+- Jie Wu
+- Xiaomeng Huang
+date: '2025-04-21'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2504.15322'
+links:
+  paper: https://arxiv.org/abs/2504.15322
+  pdf: https://arxiv.org/pdf/2504.15322
+topic: post-processing
+topics:
+- global-medium-range
+type: model
+method:
+- rnn
+- transformer
+timescale:
+- short
+- medium
+spatial:
+- global
+data:
+- nwp-analysis
+- era5
+status: research
+summary: ReSA-ConvLSTM with residual self-attention corrects ECMWF forecast biases toward ERA5, reducing
+  1-7 day RMSE by up to 20% with a lightweight 10.6M-parameter model.
+abstract: This study introduces ReSA-ConvLSTM, an artificial intelligence (AI) framework for systematic
+  bias correction in numerical weather prediction (NWP). We propose three innovations by integrating dynamic
+  climatological normalization, ConvLSTM with temporal causality constraints, and residual self-attention
+  mechanisms. The model establishes a physics-aware nonlinear mapping between ECMWF forecasts and ERA5
+  reanalysis data. Using 41 years (1981-2021) of global atmospheric data, the framework reduces systematic
+  biases in 2-m air temperature (T2m), 10-m winds (U10/V10), and sea-level pressure (SLP), achieving up
+  to 20% RMSE reduction over 1-7 day forecasts compared to operational ECMWF outputs. The lightweight
+  architecture (10.6M parameters) enables efficient generalization to multiple variables and downstream
+  applications, reducing retraining time by 85% for cross-variable correction while improving ocean model
+  skill through bias-corrected boundary conditions. The ablation experiments demonstrate that our innovations
+  significantly improve the model's correction performance, suggesting that incorporating variable characteristics
+  into the model helps enhance forecasting skills.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,58 @@
+id: arxiv-2411.16807
+title: 'ADAF: An Artificial Intelligence Data Assimilation Framework for Weather Forecasting'
+authors:
+- Yanfei Xiang
+- Weixin Jin
+- Haiyu Dong
+- Mingliang Bai
+- Zuliang Fang
+- Pengcheng Zhao
+- Hongyu Sun
+- Kit Thambiratnam
+- Qi Zhang
+- Xiaomeng Huang
+date: '2024-11-25'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2411.16807'
+links:
+  paper: https://arxiv.org/abs/2411.16807
+  pdf: https://arxiv.org/pdf/2411.16807
+topic: data-assimilation
+topics:
+- regional-km-scale
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- stations
+- satellite
+- nwp-analysis
+status: pre-operational
+summary: ADAF, an AI data assimilation framework, produces kilometer-scale CONUS analyses 16-33% more
+  accurate than HRRR DA in about two seconds per cycle on a GPU.
+abstract: The forecasting skill of numerical weather prediction (NWP) models critically depends on the
+  accurate initial conditions, also known as analysis, provided by data assimilation (DA). Traditional
+  DA methods often face a trade-off between computational cost and accuracy due to complex linear algebra
+  computations and the high dimensionality of the model, especially in nonlinear systems. Moreover, processing
+  massive data in real-time requires substantial computational resources. To address this, we introduce
+  an artificial intelligence-based data assimilation framework (ADAF) to generate high-quality kilometer-scale
+  analysis. This study is the pioneering work using real-world observations from varied locations and
+  multiple sources to verify the AI method's efficacy in DA, including sparse surface weather observations
+  and satellite imagery. We implemented ADAF for four near-surface variables in the Contiguous United
+  States (CONUS). The results indicate that ADAF surpasses the High Resolution Rapid Refresh Data Assimilation
+  System (HRRRDAS) in accuracy by 16% to 33% for near-surface atmospheric conditions, aligning more closely
+  with actual observations, and can effectively reconstruct extreme events, such as tropical cyclone wind
+  fields. Sensitivity experiments reveal that ADAF can generate high-quality analysis even with low-accuracy
+  backgrounds and extremely sparse surface observations. ADAF can assimilate massive observations within
+  a three-hour window at low computational cost, taking about two seconds on an AMD MI200 graphics processing
+  unit (GPU). ADAF has been shown to be efficient and effective in real-world DA, underscoring its potential
+  role in operational weather forecasting.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

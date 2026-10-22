@@ -1,0 +1,46 @@
+id: arxiv-2411.05331
+title: Discovering Latent Causal Graphs from Spatiotemporal Data
+authors:
+- Kun Wang
+- Sumanth Varambally
+- Duncan Watson-Parris
+- Yi-An Ma
+- Rose Yu
+date: '2024-11-08'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2411.05331'
+links:
+  paper: https://arxiv.org/abs/2411.05331
+  pdf: https://arxiv.org/pdf/2411.05331
+  code: https://github.com/Rose-STL-Lab/SPACY
+topic: climate-analysis-attribution
+type: model
+method:
+- other
+data:
+- other
+status: research
+summary: SPACY uses variational inference to discover latent causal graphs in gridded spatiotemporal data,
+  recovering known phenomena in real climate data. Climate is one of several target domains.
+abstract: Many important phenomena in scientific fields like climate, neuroscience, and epidemiology are
+  naturally represented as spatiotemporal gridded data with complex interactions. Inferring causal relationships
+  from these data is a challenging problem compounded by the high dimensionality of such data and the
+  correlations between spatially proximate points. We present SPACY (SPAtiotemporal Causal discoverY),
+  a novel framework based on variational inference, designed to model latent time series and their causal
+  relationships from spatiotemporal data. SPACY alleviates the high-dimensional challenge by discovering
+  causal structures in the latent space. To aggregate spatially proximate, correlated grid points, we
+  use spatial factors, parametrized by spatial kernel functions, to map observational time series to latent
+  representations. Theoretically, we generalize the problem to a continuous spatial domain and establish
+  identifiability when the observations arise from a nonlinear, invertible function of the product of
+  latent series and spatial factors. Using this approach, we avoid assumptions that are often unverifiable,
+  including those about instantaneous effects or sufficient variability. Empirically, SPACY outperforms
+  state-of-the-art baselines on synthetic data, even in challenging settings where existing methods struggle,
+  while remaining scalable for large grids. SPACY also identifies key known phenomena from real-world
+  climate data. An implementation of SPACY is available at https://github.com/Rose-STL-Lab/SPACY/
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,52 @@
+id: doi-10.1016-j.rsase.2025.101536
+title: 'BSANet: A Bilateral Segregation and Aggregation Network for Real-time Cloud Segmentation'
+authors:
+- Yijie Li
+- Hewei Wang
+- Shaofan Wang
+- Jinfeng Xu
+- Yee Hui Lee
+- Soumyabrata Dev
+date: '2025-04-01'
+year: 2025
+venue: Remote Sensing Applications Society and Environment
+venue_type: journal
+ids:
+  doi: 10.1016/j.rsase.2025.101536
+  openalex: W4409388135
+links:
+  paper: https://doi.org/10.1016/j.rsase.2025.101536
+  code: https://github.com/Att100/BSANet-cloudseg
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- local
+data:
+- other
+status: research
+summary: BSANet, a real-time network for ground-based sky and cloud segmentation, reaches 1390 fps with
+  90K parameters for its lite version.
+abstract: 'Segmenting clouds from intensity images is an essential research topic at the intersection
+  of atmospheric science and computer vision , which plays a vital role in weather forecasts and climate
+  evolution analysis. The ground-based sky/cloud image segmentation can help extract the cloud from the
+  original image and analyze the shape or additional features. With the development of deep learning ,
+  neural network-based cloud segmentation models can have better performance. In this paper, we introduced
+  a novel sky/cloud segmentation network named Bilateral Segregation and Aggregation Network (BSANet)
+  large version with 4.29 million parameters, which benefits from our designed BSAM, achieving almost
+  the same performance compared with the state-of-the-art method. BSAM uses the rough segmentation map
+  from the previous stage to produce two new weighted feature maps representing the sky and cloud features,
+  and two network branches are utilized to process the features separately. After the deployment via TensorRT,
+  the BSANet-large configuration can achieve 392 fps in FP16 while BSANet-lite with only 90K parameters
+  can achieve 1390 fps, which all exceed real-time standards. Additionally, we proposed a novel and efficient
+  pre-training strategy for sky/cloud segmentation, which can improve segmentation performance when ImageNet
+  pre-training is not available. In the spirit of reproducible research, the model code, dataset, and
+  results of the experiments in this paper are available at: https://github.com/Att100/BSANet-cloudseg
+  .'
+significance: 2
+cited_by: 4
+score: 18
+highlight: false
+added: '2026-10-22'
+source: backfill

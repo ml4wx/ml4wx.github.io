@@ -1,0 +1,65 @@
+id: doi-10.1080-15481603.2024.2440506
+title: Application of deep learning in cloud cover prediction using geostationary satellite images
+authors:
+- Yeonjin Lee
+- Seyun Min
+- Jihyun Yoon
+- Jongsung Ha
+- Seungtaek Jeong
+- Seonghyun Ryu
+- Myoung‐Hwan Ahn
+date: '2024-12-13'
+year: 2024
+venue: GIScience & Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1080/15481603.2024.2440506
+  openalex: W4405398715
+links:
+  paper: https://doi.org/10.1080/15481603.2024.2440506
+topic: nowcasting
+topics:
+- observations-remote-sensing
+type: model
+method:
+- cnn
+- rnn
+- transformer
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: ConvLSTM gave the most stable 4-hour GK2A geostationary cloud-cover forecasts, outperforming
+  3D CNN, LSTM and transformer models in August 2021.
+abstract: Predicting cloud cover is essential in fields, such as agriculture, climatology, and meteorology,
+  where accurate weather forecasting can significantly impact decision-making. Traditional methods for
+  cloud cover prediction encounter significant limitations in capturing complete spatial and temporal
+  cloud dynamics. To address the problem, this study employs high-resolution data from the new-generation
+  geostationary satellite Geostationary Korea Multi-Purpose Satellite 2A (GEO-KOMPSAT-2A; GK2A) and enables
+  more accurate and timely predictions when combined with advanced deep learning techniques. We explore
+  the effectiveness of advanced deep learning techniques – specifically 3D Convolutional Neural Networks,
+  Long Short-Term Memory networks, and Convolutional Long Short-Term Memory (ConvLSTM) – using GK2A cloud
+  detection data, which provides updates every 10 minutes at 2 km spatial resolution. Our model utilizes
+  training sequences of four past hourly images to predict cloud cover up to 4 hours ahead. For improved
+  computational efficiency, each image is divided into four patches during training. Notably, this research
+  incorporates a dynamic learning model, continuously updating with the most recent data, in contrast
+  with static models which do not update their parameters with new data once trained. Results show that
+  ConvLSTM tends to exhibit stable and relatively higher performance across prediction times compared
+  to the other models in August 2021. While transformer models, such as Video Swin Transformer and TimeSformer,
+  showed strong training performance, they struggled with overfitting, particularly on smaller datasets.
+  In contrast, ConvLSTM demonstrated better generalization to test data, highlighting its suitability
+  for tasks with limited training data and simpler structures. Year-long validation demonstrates the robustness
+  of the ConvLSTM model, which consistently outperforms the other models in all major metrics, including
+  a precision of 0.79, recall of 0.80, F1-score of 0.80 (which balances precision and recall), and accuracy
+  of 0.78 throughout 2021. However, results show that the model’s performance in terms of F1-score, recall,
+  and precision is positively correlated with cloud fraction, with a slight tendency for higher accuracy
+  during the summer compared to winter, indicating sensitivity to seasonal cloud cover variations.
+significance: 3
+cited_by: 14
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

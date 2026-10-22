@@ -1,0 +1,45 @@
+id: arxiv-2412.00451
+title: A conditional Generative Adversarial network model for the Weather4Cast 2024 Challenge
+authors:
+- Atharva Deshpande
+- Kaushik Gopalan
+- Jeet Shah
+- Hrishikesh Simu
+date: '2024-11-30'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2412.00451'
+links:
+  paper: https://arxiv.org/abs/2412.00451
+  pdf: https://arxiv.org/pdf/2412.00451
+topic: nowcasting
+topics:
+- observations-remote-sensing
+type: model
+method:
+- gan-vae
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+- radar
+status: research
+summary: Conditional GAN converts optical-flow-extrapolated SEVIRI radiances into 4-hour cumulative rainfall,
+  placing first on the Weather4Cast 2024 core leaderboard with CRPS about 7.5.
+abstract: This study explores the application of deep learning for rainfall prediction, leveraging the
+  Spinning Enhanced Visible and Infrared Imager (SEVIRI) High rate information transmission (HRIT) data
+  as input and the Operational Program on the Exchange of weather RAdar information (OPERA) ground-radar
+  reflectivity data as ground truth. We use the mean of 4 InfraRed frequency channels as the input. The
+  radiance images are forecasted up to 4 hours into the future using a dense optical flow algorithm. A
+  conditional generative adversarial network (GAN) model is employed to transform the predicted radiance
+  images into rainfall images which are aggregated over the 4 hour forecast period to generate cumulative
+  rainfall values. This model scored a value of approximately 7.5 as the Continuous Ranked Probability
+  Score (CRPS) in the Weather4Cast 2024 competition and placed 1st on the core challenge leaderboard.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

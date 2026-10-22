@@ -1,0 +1,51 @@
+id: doi-10.1109-jstars.2025.3556475
+title: Boost Cyclone Intensity Estimation via Processing Motion Information and Embedding Rotation Invariance
+authors:
+- Xiaoping Cheng
+- Xinxin Kong
+- Jianfang Fei
+- Xiaogang Huang
+date: '2025-01-01'
+year: 2025
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2025.3556475
+  openalex: W4409076874
+links:
+  paper: https://doi.org/10.1109/jstars.2025.3556475
+topic: extremes-hazards
+topics:
+- observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- satellite
+- other
+status: research
+summary: Rotation-invariant CNN with motion branches estimates tropical cyclone intensity from infrared
+  satellite imagery, improving MAE and RMSE by over 10%.
+abstract: Tropical cyclones (TCs) in tropical and subtropical regions often evolve into severe natural
+  disasters, causing significant economic and human losses. Accurate and timely TC intensity information
+  can better initialize TC numerical prediction models, thereby improving the accuracy of TC intensity
+  and path forecasts. To this end, we propose a TC intensity estimation model based on convolutional neural
+  networks. To enhance the accuracy of estimating TC intensity from satellite remote sensing channels,
+  such as far-infrared (IR) and mid-IR, the model attempts to learn and process cloud and water vapor
+  motion information and incorporate rotation invariance. In the motion information processing module,
+  we employ a dual-branch design. One branch directly processes motion information from the pixel space,
+  while the other branch first computes motion matrices between different time steps to map the features
+  from the pixel space to the motion space, then cascades multiple downsampling modules for encoding and
+  compressing the information. To ensure that the feature extraction module of the network possesses rotation
+  invariance, each basic convolution operation is replaced with a rotation invariant convolution operation.
+  In terms of mean absolute error and root-mean-square error, our model shows an improvement of over 10%
+  compared to previous “state-of-the-art” models. Notably, in terms of MedAE, our model achieves an improvement
+  of up to 17% .
+significance: 3
+cited_by: 2
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

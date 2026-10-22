@@ -1,0 +1,53 @@
+id: arxiv-2412.06958
+title: 'Enhancing operational wind downscaling capabilities over Canada: Application of a Conditional
+  Wasserstein GAN methodology'
+authors:
+- Jorge Guevara
+- Victor Nascimento
+- Johannes Schmude
+- Daniel Salles
+- Simon Corbeil-Létourneau
+- Madalina Surcel
+- Dominique Brunet
+date: '2024-12-09'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2412.06958'
+links:
+  paper: https://arxiv.org/abs/2412.06958
+  pdf: https://arxiv.org/pdf/2412.06958
+topic: downscaling
+type: model
+method:
+- gan-vae
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+status: pre-operational
+summary: Conditional Wasserstein GAN with UNet generator downscales operational Canadian GDPS forecasts
+  to 2.5 km HRDPS wind, beating the original DownGAN on RMSE and spectral distance.
+abstract: Wind downscaling is essential for improving the spatial resolution of weather forecasts, particularly
+  in operational Numerical Weather Prediction (NWP). This study advances wind downscaling by extending
+  the DownGAN framework introduced by Annau et al.,to operational datasets from the Global Deterministic
+  Prediction System (GDPS) and High-Resolution Deterministic Prediction System (HRDPS), covering the entire
+  Canadian domain. We enhance the model by incorporating high-resolution static covariates, such as HRDPS-derived
+  topography, into a Conditional Wasserstein Generative Adversarial Network with Gradient Penalty, implemented
+  using a UNET-based generator. Following the DownGAN framework, our methodology integrates low-resolution
+  GDPS forecasts (15 km, 10-day horizon) and high-resolution HRDPS forecasts (2.5 km, 48-hour horizon)
+  with Frequency Separation techniques adapted from computer vision. Through robust training and inference
+  over the Canadian region, we demonstrate the operational scalability of our approach, achieving significant
+  improvements in wind downscaling accuracy. Statistical validation highlights reductions in root mean
+  square error (RMSE) and log spectral distance (LSD) metrics compared to the original DownGAN. High-resolution
+  conditioning covariates and Frequency Separation strategies prove instrumental in enhancing model performance.
+  This work underscores the potential for extending high-resolution wind forecasts beyond the 48-hour
+  horizon, bridging the gap to the 10-day low resolution global forecast window.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

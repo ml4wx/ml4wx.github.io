@@ -1,0 +1,50 @@
+id: doi-10.1038-s41598-025-96208-y
+title: Spherical multigrid neural operator for improving autoregressive global weather forecasting
+authors:
+- Yifan Hu
+- Fukang Yin
+- Weimin Zhang
+- Kaijun Ren
+- Junqiang Song
+- Kefeng Deng
+- Di Zhang
+date: '2025-04-04'
+year: 2025
+venue: Scientific Reports
+venue_type: journal
+ids:
+  doi: 10.1038/s41598-025-96208-y
+  openalex: W4409150548
+links:
+  paper: https://doi.org/10.1038/s41598-025-96208-y
+  pdf: https://www.nature.com/articles/s41598-025-96208-y.pdf
+topic: global-medium-range
+type: model
+method:
+- neural-operator
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Spherical multigrid neural operator improves autoregressive global forecasts, achieving 9.31%
+  better 7-day Z500 anomaly correlation than IFS T42 using about 10% of SFNO's FLOPs.
+abstract: Data-driven approaches for global weather forecasting have shown great potential. However, conventional
+  architectures of these models struggle with spherical distortions, leading to unstable autoregressive
+  forecasts. Although methods such as spherical Fourier neural operator (SFNO) based on spherical harmonic
+  convolution can alleviate these problems, they face the challenge of high computational cost. Here,
+  we introduce a spherical multigrid neural operator (SMgNO) that integrates spherical harmonic convolution
+  and low resolution SFNO in the multigrid framework, effectively alleviating data distortions while requiring
+  few computational resources. Experiments for spherical shallow water equations and medium-range global
+  weather forecasting demonstrate the effectiveness and robustness of SMgNO. For 500 hPa geopotential
+  height with a 7 days lead time, SMgNO achieves a 9.31% and 6.83% improvement in anomaly correlation
+  coefficient over IFS T42 and SFNO, respectively. Furthermore, SMgNO requires only 10% floating-point
+  operations of SFNO for forward propagation and 30.90% less GPU memory than SFNO during training.
+significance: 3
+cited_by: 5
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

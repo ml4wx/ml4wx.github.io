@@ -1,0 +1,56 @@
+id: doi-10.1109-jstars.2025.3543386
+title: A Patch-Wise Mechanism for Enhancing Sparse Radar Echo Extrapolation in Precipitation Nowcasting
+authors:
+- Yueting Wang
+- Hou Jiang
+- Tang Liu
+- Ling Yao
+- Chenghu Zhou
+date: '2025-01-01'
+year: 2025
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2025.3543386
+  openalex: W4407690755
+links:
+  paper: https://doi.org/10.1109/jstars.2025.3543386
+topic: nowcasting
+topics:
+- regional-km-scale
+type: model
+method:
+- transformer
+- cnn
+- rnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Patch-wise attention and multiscale convolutions added to PredRNN improve sparse radar echo extrapolation,
+  raising CSI by up to 12.59% for 45 dBZ over China.
+abstract: Precipitation nowcasting is pivotal for disaster prevention, urban planning, and various societal
+  applications. Although deep learning-based radar echo extrapolation methods are widely adopted, their
+  effectiveness is limited by challenges in handling sparse echo sequences with low pixel proportions.
+  This limitation hinders accurate predictions of low-frequency heavy rainfall and localized precipitation
+  events. To address these issues, a novel Patch-wise (PW) mechanism is proposed in this study. Specifically,
+  radar echo frames are divided into patches, which are then encoded into sequences and processed using
+  a local attention mechanism to enhance critical regional information extraction. Furthermore, multiscale
+  convolutions tailored to the patch scale are employed to expand the receptive field, and a convolutional
+  block attention module is introduced to capture the spatiotemporal dynamics of sparse echoes and intense
+  rainfall. These improvements enable extraction of sparse spatiotemporal features in a PW manner, enhancing
+  prediction accuracy for regional sparse precipitation. Experiments across Chinese regions demonstrate
+  the effectiveness of the PW mechanism. Notably, integrating the PW into PredRNN model yields improvements
+  in the critical success index by 1.24%, 1.37%, and 12.59% for precipitation intensity thresholds of
+  20, 30, and 45 dBZ, respectively. Spatial visualizations of radar echoes reveal PW's superior in predicting
+  localized and intense precipitation. This study is expected to advance regional precipitation nowcasting
+  by offering both practical insights and methodological innovations.
+significance: 3
+cited_by: 7
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

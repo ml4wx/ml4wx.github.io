@@ -1,0 +1,67 @@
+id: doi-10.5194-amt-18-241-2025
+title: Retrieving the atmospheric concentrations of carbon dioxide and methane from the European Copernicus
+  CO2M satellite mission using artificial neural networks
+authors:
+- Maximilian Reuter
+- M. Hilker
+- Stefan Noël
+- Antonio Di Noia
+- Michael Weimer
+- Oliver Schneising
+- Michael Buchwitz
+- H. Bovensmann
+- John P. Burrows
+- Hartmut Boesch
+- Ruediger Lang
+date: '2025-01-15'
+year: 2025
+venue: Atmospheric measurement techniques
+venue_type: journal
+ids:
+  doi: 10.5194/amt-18-241-2025
+  openalex: W4406392315
+links:
+  paper: https://doi.org/10.5194/amt-18-241-2025
+  pdf: https://amt.copernicus.org/articles/18/241/2025/amt-18-241-2025.pdf
+topic: observations-remote-sensing
+type: model
+method:
+- classical-ml
+spatial:
+- global
+data:
+- satellite
+status: research
+summary: Neural networks retrieve XCO2 and XCH4 from simulated CO2M radiances with minimal computation,
+  designed to meet mission accuracy requirements.
+abstract: Abstract. Carbon dioxide (CO2) and methane (CH4) are the most important anthropogenic greenhouse
+  gases and the main drivers of climate change. Monitoring their concentrations from space helps to detect
+  and quantify anthropogenic emissions, supporting the mitigation efforts urgently needed to meet the
+  primary objective of the United Nations Framework Convention on Climate Change (UNFCCC) Paris Agreement
+  to limit the global average temperature increase to well below 2 °C above pre-industrial levels. In
+  addition, satellite observations can be used to quantify natural sources and sinks improving our understanding
+  of the carbon cycle. Advancing these goals is the motivation for the European Copernicus CO2 monitoring
+  mission CO2M. The necessary accuracy and precision requirements for the measured quantities XCO2 and
+  XCH4 (the column-averaged dry-air mixing ratios of CO2 and CH4) are demanding. According to the CO2M
+  mission requirements, the spatial and temporal variability of the systematic errors of XCO2 and XCH4
+  shall not exceed 0.5 ppm and 5 ppb, respectively. The stochastic errors due to instrument noise shall
+  not exceed 0.7 ppm for XCO2 and 10 ppb for XCH4. Conventional so-called full-physics algorithms for
+  retrieving XCO2 and/or XCH4 from satellite-based measurements of reflected solar radiation are typically
+  computationally intensive and still usually require empirical bias corrections based on supervised machine
+  learning methods. Here we present the retrieval algorithm NRG-CO2M (Neural networks for Remote sensing
+  of Greenhouse gases from CO2M), which derives XCO2 and XCH4 from CO2M radiance measurements with minimal
+  computational effort using artificial neural networks (ANNs). Since CO2M will not be launched until
+  2026, our study is based on simulated measurements over land surfaces from a comprehensive observing
+  system simulation experiment (OSSE). We employ a hybrid learning approach that combines advantages of
+  simulation-based and measurement-based training data to ensure coverage of a wide range of XCO2 and
+  XCH4 values making the training data also representative of future concentrations. The algorithm's postprocessing
+  is designed to achieve a high data yield of about 80 % of all cloud-free soundings. The spatio-temporal
+  systematic errors of XCO2 and XCH4 amount 0.44 ppm and 2.45 ppb, respectively. The average single sounding
+  precision is 0.41 ppm for XCO2 and 2.74 ppb for XCH4. Therefore, the presented retrieval method has
+  the potential to meet the demanding CO2M mission requirements for XCO2 and XCH4.
+significance: 3
+cited_by: 10
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

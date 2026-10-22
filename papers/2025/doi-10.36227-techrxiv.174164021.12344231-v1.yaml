@@ -1,0 +1,54 @@
+id: doi-10.36227-techrxiv.174164021.12344231-v1
+title: Deep Learning-based Fusion and Downscaling of Analysis and SAR Measurements for Ocean Surface Wind
+  for Tropical Cyclones
+authors:
+- Enze Zhang
+- Hui Su
+- Pak Wai Chan
+- Wensheng Zhou
+date: '2025-03-10'
+year: 2025
+venue_type: other
+ids:
+  doi: 10.36227/techrxiv.174164021.12344231/v1
+  openalex: W4408285856
+links:
+  paper: https://doi.org/10.36227/techrxiv.174164021.12344231/v1
+  pdf: https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.174164021.12344231
+topic: downscaling
+topics:
+- extremes-hazards
+type: model
+method:
+- transformer
+- cnn
+spatial:
+- global
+data:
+- satellite
+- nwp-analysis
+status: research
+summary: Deep learning fuses and downscales CCMP winds using SAR observations; TransUNet improves tropical
+  cyclone wind RMSD by 45% above 20 m/s.
+abstract: Accurate forecasting of tropical cyclones is crucial for coastal regions to reduce the loss
+  of life and property. Nearreal-time analysis data, such as the Cross-Calibrated Multi-Platform Ocean
+  Surface Wind Vector (CCMP), can serve as guidance for tropical cyclone forecasting. Its gap-free coverage
+  with uniform temporal and spatial resolutions is particularly useful for studies on air-sea interactions
+  and ocean dynamics. However, its spatial resolution is 25 kilometers and is prone to significant underestimation
+  of wind speeds for tropical cyclones due to rain contamination. Conversely, Synthetic Aperture Radar
+  (SAR) can provide all-weather ocean surface wind measurements with a resolution of approximately 0.5
+  kilometers, but its temporal and spatial coverage is limited. We develop a novel deep learningbased
+  method to fuse CCMP and SAR-derived ocean surface winds, integrating the strengths of both datasets.
+  We utilize SARderived OSW associated with tropical cyclones worldwide as ground truth and incorporate
+  corresponding CCMP as input to train the deep learning network to statistically downscale CCMP. We have
+  evaluated various deep learning architectures, including U-Net, DeepLabV3+, and TransUNet. Our results
+  show that TransUNet achieves superior performance, improving CCMP by 45% in root mean square deviation
+  (RMSD) for wind speeds above 20 m/s, 20% in overall RMSD, 56% in maximum wind speed, and 65% in the
+  radius of maximum wind for tropical cyclones. Our method produces uniformly distributed, gap-free, high-accuracy,
+  and fine-resolution ocean surface wind data for tropical cyclones and has wide applications for downscaling
+  spatiotemporal data.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

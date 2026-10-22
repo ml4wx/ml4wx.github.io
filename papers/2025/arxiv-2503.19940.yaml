@@ -1,0 +1,53 @@
+id: arxiv-2503.19940
+title: 'FuXi-RTM: A Physics-Guided Prediction Framework with Radiative Transfer Modeling'
+authors:
+- Qiusheng Huang
+- Xiaohui Zhong
+- Xu Fan
+- Lei Chen
+- Hao Li
+date: '2025-03-25'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2503.19940'
+  openalex: W4409023141
+links:
+  paper: https://arxiv.org/abs/2503.19940
+  pdf: https://arxiv.org/pdf/2503.19940
+topic: hybrid-parameterization
+topics:
+- global-medium-range
+type: model
+method:
+- physics-constrained
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: FuXi-RTM couples FuXi with a deep-learning radiative transfer surrogate, improving forecasts
+  in 88.51% of variable-lead combinations while enforcing physical consistency.
+abstract: Similar to conventional video generation, current deep learning-based weather prediction frameworks
+  often lack explicit physical constraints, leading to unphysical outputs that limit their reliability
+  for operational forecasting. Among various physical processes requiring proper representation, radiation
+  plays a fundamental role as it drives Earth's weather and climate systems. However, accurate simulation
+  of radiative transfer processes remains challenging for traditional numerical weather prediction (NWP)
+  models due to their inherent complexity and high computational costs. Here, we propose FuXi-RTM, a hybrid
+  physics-guided deep learning framework designed to enhance weather forecast accuracy while enforcing
+  physical consistency. FuXi-RTM integrates a primary forecasting model (FuXi) with a fixed deep learning-based
+  radiative transfer model (DLRTM) surrogate that efficiently replaces conventional radiation parameterization
+  schemes. This represents the first deep learning-based weather forecasting framework to explicitly incorporate
+  physical process modeling. Evaluated over a comprehensive 5-year dataset, FuXi-RTM outperforms its unconstrained
+  counterpart in 88.51% of 3320 variable and lead time combinations, with improvements in radiative flux
+  predictions. By incorporating additional physical processes, FuXi-RTM paves the way for next-generation
+  weather forecasting systems that are both accurate and physically consistent.
+significance: 5
+cited_by: 1
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

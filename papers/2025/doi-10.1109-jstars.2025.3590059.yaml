@@ -1,0 +1,64 @@
+id: doi-10.1109-jstars.2025.3590059
+title: Joint Intensity and Spatio-Temporal Representation Learning for Extreme Precipitation Nowcasting
+authors:
+- Zefeng Pan
+- Renlong Hang
+- Qingshan Liu
+- Chunxiang Shi
+- Zhiqiang Xu
+- Xiao–Tong Yuan
+date: '2025-01-01'
+year: 2025
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2025.3590059
+  openalex: W4412972699
+links:
+  paper: https://doi.org/10.1109/jstars.2025.3590059
+orgs:
+- nuist
+- cma
+topic: nowcasting
+topics:
+- extremes-hazards
+type: model
+method:
+- rnn
+- transformer
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Introduces an intensity trend module and spatio-temporal coherence module to improve extreme
+  precipitation nowcasting over LSTM and ViT baselines.
+abstract: As a result of global warming, the intensity and frequency of extreme precipitation events have
+  increased, posing significant threats to human life and property. Currently, precipitation nowcasting
+  methods based on long short-term memory (LSTM) or Vision Transformers (ViT) are becoming mainstream.
+  While they accurately predict ordinary precipitation events, these methods often fall short in nowcasting
+  extreme precipitation events. This discrepancy can be attributed to the substantially higher intensity
+  of extreme precipitation relative to ordinary precipitation, which presents greater challenges for accurate
+  nowcasting. However, the existing methods tend to inadequately weigh precipitation intensity features
+  by only implicitly learning and modeling these features within the spatial distribution. To address
+  this issue, we design an Intensity Trend Module (ITM) to explicitly learn and model the intensity features
+  of extreme precipitation events. ITM employs intensity trend factors to capture the intensity features
+  of extreme precipitation, thereby mitigating intensity misestimation. Moreover, the current architectures
+  of LSTM and ViT often compromise the spatial structure of precipitation, thereby contributing to the
+  inadequate performance in the nowcasting of extreme precipitation events. Hence, we also design a Spatio-Temporal
+  Coherence Module (STCM), which exploits voxel flow to capture spatio-temporal coherence features. Subsequently,
+  by processing multitemporal state features and integrating coherence features, STCM can preserve the
+  spatio-temporal structure of extreme precipitation events. Finally, building upon ITM and STCM, we propose
+  a framework of Joint Intensity and Spatio-Temporal Representation Learning for Extreme Precipitation
+  Nowcasting. Experimental results indicate that our method is capable of nowcasting up to 4 hours. Across
+  three datasets, our method surpasses state-of-the-art methods by achieving an average increase of 10.28%
+  in the Critical Success Index at the highest threshold, and an average improvement of 81.7% in Structural
+  Similarity.
+significance: 3
+cited_by: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

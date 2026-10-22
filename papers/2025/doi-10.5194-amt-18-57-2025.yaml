@@ -1,0 +1,69 @@
+id: doi-10.5194-amt-18-57-2025
+title: Global Navigation Satellite System (GNSS) radio occultation climatologies mapped by machine learning
+  and Bayesian interpolation
+authors:
+- Endrit Shehaj
+- S. S. Leroy
+- Kerri Cahoy
+- Alain Geiger
+- Laura Crocetti
+- Gregor Möller
+- Benedikt S. Soja
+- Markus Rothacher
+date: '2025-01-07'
+year: 2025
+venue: Atmospheric measurement techniques
+venue_type: journal
+ids:
+  doi: 10.5194/amt-18-57-2025
+  openalex: W4406145129
+links:
+  paper: https://doi.org/10.5194/amt-18-57-2025
+  pdf: https://amt.copernicus.org/articles/18/57/2025/amt-18-57-2025.pdf
+orgs:
+- eth-zurich
+- mit
+topic: observations-remote-sensing
+topics:
+- climate-analysis-attribution
+type: model
+method:
+- classical-ml
+spatial:
+- global
+data:
+- satellite
+- nwp-analysis
+status: research
+summary: A neural network mapping COSMIC-2 radio occultation refractivity, combined with Bayesian interpolation,
+  improves climatology maps relative to ECMWF analyses.
+abstract: Abstract. Global Navigation Satellite Systems (GNSS) radio occultation (RO) is a space-based
+  remote sensing technique that measures the bending angle of GNSS signals as they traverse the Earth's
+  atmosphere. Profiles of the microwave index of refraction can be calculated from the bending angles.
+  High accuracy, long-term stability, and all-weather capability make this technique attractive to meteorologists
+  and climatologists. Meteorologists routinely assimilate RO observations into numerical weather models.
+  RO-based climatologies, however, are complicated to construct as their sampling density is highly non-uniform
+  and too sparse to resolve synoptic variability in the atmosphere. In this work, we investigate the potential
+  of machine learning (ML) to construct RO climatologies and compare the results of a ML construction
+  with Bayesian interpolation (BI), a state-of-the-art method to generate maps of RO products. We develop
+  a feed-forward neural network applied to COSMIC-2 RO observations and simulate data taken from the atmospheric
+  analyses produced by the European Centre for Medium-Range Weather Forecasts (ECMWF). Atmospheric temperature,
+  pressure and water vapor are used to calculate microwave refractivity at 2, 3, 5, 8, 15, and 20 km geopotential
+  height, with each level representing a different dynamical regime of the atmosphere. The simulated data
+  are the values of microwave refractivity produced by ECMWF at the geolocations of the COSMIC-2 RO constellation,
+  which fall equatorward of 46 latitude. The maps of refractivity produced using the neural networks
+  better match the true maps produced by ECMWF than maps using BI. The best results are obtained when
+  fusing BI and ML, specifically when applying ML to the post-fit residuals of BI. At the six iso-heights,
+  we obtain post-fit residuals of 10.9, 9.1, 5.3, 1.6, 0.6 and 0.3 N-units for BI and 8.7, 6.6, 3.6, 1.1,
+  0.3 and 0.2 N-units for the fused BI&ML, respectively. These results are independent of season. The
+  BI&ML method improves the effective horizontal resolution of the posterior longitude-latitude refractivity
+  maps. By projecting the original and the inferred maps at 2 km iso-height onto spherical harmonics,
+  we find that the BI-only technique can resolve refractivity in the horizontal up to spherical harmonic
+  degree 8 while BI&ML can resolve maps of refractivity using the same input data up to spherical harmonic
+  degree 14.
+significance: 3
+cited_by: 7
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

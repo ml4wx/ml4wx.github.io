@@ -1,0 +1,59 @@
+id: doi-10.1029-2024ms004668
+title: A Reliable Generative Adversarial Network Approach for Climate Downscaling and Weather Generation
+authors:
+- Neelesh Rampal
+- Peter B. Gibson
+- Steven C. Sherwood
+- Gab Abramowitz
+- Sanaa Hobeichi
+date: '2025-01-01'
+year: 2025
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2024ms004668
+  openalex: W4405996640
+links:
+  paper: https://doi.org/10.1029/2024ms004668
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2024MS004668
+topic: downscaling
+topics:
+- extremes-hazards
+- probabilistic-ensembles
+type: model
+method:
+- gan-vae
+- cnn
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+status: research
+summary: A conditional GAN with an intensity constraint downscales daily precipitation from a regional
+  climate model, reliably capturing extremes across adversarial loss weights spanning two orders of magnitude.
+abstract: Abstract Anticipating climate impacts and risks in present or future climates requires predicting
+  the statistics of high‐impact weather events at fine‐scales. Direct numerical simulations of fine‐scale
+  weather are computationally too expensive for many applications. While deterministic‐based (deep‐learning
+  or statistical) downscaling of low‐resolution climate simulations are several orders of magnitude faster
+  than direct numerical simulations, it suffers from several limitations. These limitations include the
+  tendency to regress to the mean, which produces excessively smooth predictions and underestimates the
+  magnitude of extreme events. They also fail to preserve statistical measures that are key for climate
+  research. We use a conditional GAN (cGAN) architecture to downscale daily precipitation as a Regional
+  Climate Model (RCM) emulator. The cGAN generates plausible residuals on top of the predictable expectation
+  state produced by a deterministic deep learning algorithm. The skill of cGANs is highly sensitive to
+  a hyperparameter known as the weight of the adversarial loss (), where the value of required for accurate
+  results varies with season and performance metric, casting doubt on the reliability of cGANs as usually
+  implemented. However, by applying a simple intensity constraint to the loss function, it is possible
+  to obtain reliable performance results across spanning two orders of magnitude. CGANs are considerably
+  more skillful in capturing climatological statistics, including the distribution and spatial characteristics
+  of extreme events. With this modification, we expect cGANs to be readily transferable to other applications
+  and time periods, making them a useful weather generator for representing extreme event statistics in
+  present and future climates.
+significance: 4
+cited_by: 53
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

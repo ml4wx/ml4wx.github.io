@@ -1,0 +1,73 @@
+id: doi-10.1016-j.agwat.2024.109268
+title: Estimating and forecasting daily reference crop evapotranspiration in China with temperature-driven
+  deep learning models
+authors:
+- Jia Zhang
+- Yimin Ding
+- Lei Zhu
+- Yukuai Wan
+- Mingtang Chai
+- Pengpeng Ding
+date: '2024-12-24'
+year: 2024
+venue: Agricultural Water Management
+venue_type: journal
+ids:
+  doi: 10.1016/j.agwat.2024.109268
+  openalex: W4405743967
+links:
+  paper: https://doi.org/10.1016/j.agwat.2024.109268
+topic: applications-impacts
+topics:
+- post-processing
+type: model
+method:
+- rnn
+- cnn
+timescale:
+- medium
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Temperature-driven LSTM, GRU and CNN-BiLSTM models forecast daily reference evapotranspiration
+  over 15 days across China; location and season features improve accuracy.
+abstract: Accurately estimating and forecasting short-term daily reference crop evapotranspiration (ET
+  o ) is crucial for real-time irrigation decision-making and regional agricultural water management.
+  Although the Penman-Monteith formula shows high accuracy, the requirement for excessive meteorological
+  factors by this formula restricts its practical application. Previous studies have developed many ET
+  o estimation models using deep learning (DL) algorithm, which only require temperature data as input.
+  Subsequently, temperature forecast data is used to drive these models for ET o forecasting. However,
+  these models are often limited to the specific locations of their training sets due to significant climatic
+  variations across regions. Besides, weather forecasts at different lead days typically exhibit different
+  biases. It remains unclear whether train ET o forecasting models for different lead times will enhance
+  the overall forecasting accuracy. Hence, in this study, we innovatively utilized an extensive array
+  of weather forecast data to develop customized ET o forecasting models for each day of the next 15 days,
+  while incorporating both location and seasonal features into the model training procedure. Five deep
+  learning (DL) models were employed in this study, namely Long Short-Term Memory (LSTM), Bidirectional
+  LSTM (Bi-LSTM), Gated Recurrent Unit (GRU), Convolutional Neural Networks Bi-LSTM (CNN-BiLSTM), and
+  CNN-BiLSTM-Attention. The results revealed that the differences in the performance of estimating ET
+  o among the DL models were less pronounced compared to the variations that existed between diverse training
+  strategies. By integrating location and seasonality information into the training set, we found a notable
+  improvement in the accuracy of ET o estimating, with the average Root Mean Square Error (RMSE) of the
+  five DL models decreasing from 0.55 mm d −1 to 0.48 mm d −1 . Furthermore, when we directly employed
+  a larger volume of weather forecast data to train the models, the forecasting accuracy of ET o was significantly
+  improved, and among the five DL models, GRU performs the best. Specifically, the RMSE values for the
+  ET o forecasts made by GRU model for the 1st, 4th, 7th, and 15th days in the future have decreased from
+  0.70, 0.87, 1.00 and 1.33 mm d −1 to 0.51, 0.56, 0.61 and 0.67 mm d −1 , respectively. Additionally,
+  compared to previous studies, we have successfully extended the lead time of ET o forecasts from 7 days
+  to 15 days. These results indicate that the ET o estimating and forecasting models developed in this
+  study demonstrate strong applicability across the entire country, which can provide effective support
+  for irrigation water resource management. • Massive temperature forecast data were directly used in
+  ET o forecasting. • Location and seasonal information were included in the training set. • Over 400
+  independent stations were used to test the accuracy of the model. • The model is applicable to main
+  agricultural production regions across China. • The RMSE of the forecasted ET o with a lead time of
+  15 days is 0.67 mm d −1 .
+significance: 3
+cited_by: 24
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

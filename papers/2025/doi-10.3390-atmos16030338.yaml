@@ -1,0 +1,61 @@
+id: doi-10.3390-atmos16030338
+title: Enhancing Kármán Vortex Street Detection via Auxiliary Networks Incorporating Key Atmospheric Parameters
+authors:
+- Yihan Zhang
+- Zhi Zhang
+- Qiao Su
+- Chaoyue Wu
+- Yuqi Zhang
+- Daoyi Chen
+date: '2025-03-17'
+year: 2025
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos16030338
+  openalex: W4408520698
+links:
+  paper: https://doi.org/10.3390/atmos16030338
+orgs:
+- tsinghua-university
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- era5
+- satellite
+status: research
+summary: A YOLOv8s detector with an auxiliary branch fed ERA5 atmospheric variables improves Kármán vortex
+  street detection in satellite imagery, reaching mAP50 of 0.865.
+abstract: 'Kármán vortex streets are quintessential phenomena in fluid dynamics, manifested by the periodic
+  shedding of vortices as airflow interacts with obstacles. The genesis and characteristics of these vortex
+  structures are significantly influenced by various atmospheric parameters, including temperature, humidity,
+  pressure, and wind velocities, which collectively dictate their formation conditions, spatial arrangement,
+  and dynamic behavior. Although deep learning methodologies have advanced the automated detection of
+  Kármán vortex streets in remote sensing imagery, existing approaches largely emphasize visual feature
+  extraction without adequately incorporating critical atmospheric variables. To overcome this limitation,
+  this study presents an innovative auxiliary network framework that integrates essential atmospheric
+  physical parameters to bolster the detection performance of Kármán vortex streets. Utilizing reanalysis
+  data from the European Centre for Medium-Range Weather Forecasts (ECMWF-ERA5), representative atmospheric
+  features are extracted and subjected to feature permutation importance (PFI) analysis to quantitatively
+  evaluate the influence of each parameter on the detection task. This analysis identifies five pivotal
+  variables: geopotential, specific humidity, temperature, horizontal wind speed, and vertical air velocity,
+  which are subsequently employed as inputs for the auxiliary task. Building upon the YOLOv8s object detection
+  model, the proposed auxiliary network systematically examines the impact of various atmospheric variable
+  combinations on detection efficacy. Experimental results demonstrate that the integration of horizontal
+  wind speed and vertical air velocity achieves the highest detection metrics (precision of 0.838, recall
+  of 0.797, mAP50 of 0.865, and mAP50-95 of 0.413) in precision-critical scenarios, outperforming traditional
+  image-only detection method (precision of 0.745, recall of 0.745, mAP50 of 0.759, and mAP50-95 of 0.372).
+  The optimized selection of atmospheric parameters markedly improves the detection metrics and reliability
+  of Kármán vortex streets, underscoring the efficacy and practicality of the proposed methodological
+  framework. This advancement paves the way for more robust automated analysis of atmospheric fluid dynamics
+  phenomena.'
+significance: 2
+cited_by: 2
+score: 18
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,59 @@
+id: arxiv-2502.07814
+title: Satellite Observations Guided Diffusion Model for Accurate Meteorological States at Arbitrary Resolution
+authors:
+- Siwei Tu
+- Ben Fei
+- Weidong Yang
+- Fenghua Ling
+- Hao Chen
+- Zili Liu
+- Kun Chen
+- Hang Fan
+- Wanli Ouyang
+- Lei Bai
+date: '2025-02-09'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2502.07814'
+links:
+  paper: https://arxiv.org/abs/2502.07814
+  pdf: https://arxiv.org/pdf/2502.07814
+topic: downscaling
+topics:
+- observations-remote-sensing
+type: model
+method:
+- diffusion
+- transformer
+spatial:
+- regional
+- local
+data:
+- era5
+- satellite
+- stations
+status: research
+summary: Satellite-guided conditional diffusion model downscales ERA5 fields to 6.25 km at arbitrary resolution,
+  using GridSat and station guidance to better match observations.
+abstract: Accurate acquisition of surface meteorological conditions at arbitrary locations holds significant
+  importance for weather forecasting and climate simulation. Due to the fact that meteorological states
+  derived from satellite observations are often provided in the form of low-resolution grid fields, the
+  direct application of spatial interpolation to obtain meteorological states for specific locations often
+  results in significant discrepancies when compared to actual observations. Existing downscaling methods
+  for acquiring meteorological state information at higher resolutions commonly overlook the correlation
+  with satellite observations. To bridge the gap, we propose Satellite-observations Guided Diffusion Model
+  (SGD), a conditional diffusion model pre-trained on ERA5 reanalysis data with satellite observations
+  (GridSat) as conditions, which is employed for sampling downscaled meteorological states through a zero-shot
+  guided sampling strategy and patch-based methods. During the training process, we propose to fuse the
+  information from GridSat satellite observations into ERA5 maps via the attention mechanism, enabling
+  SGD to generate atmospheric states that align more accurately with actual conditions. In the sampling,
+  we employed optimizable convolutional kernels to simulate the upscale process, thereby generating high-resolution
+  ERA5 maps using low-resolution ERA5 maps as well as observations from weather stations as guidance.
+  Moreover, our devised patch-based method promotes SGD to generate meteorological states at arbitrary
+  resolutions. Experiments demonstrate SGD fulfills accurate meteorological states downscaling to 6.25km.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

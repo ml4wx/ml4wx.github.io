@@ -1,0 +1,56 @@
+id: doi-10.3390-rs16234545
+title: A Lightweight Transformer-Based Spatiotemporal Analysis Prediction Algorithm for High-Dimensional
+  Meteorological Data
+authors:
+- Y. H. Tan
+- Junfeng Wu
+- Yihang Liu
+- Shiyu Shen
+- Xia Xu
+- Bin Pan
+date: '2024-12-04'
+year: 2024
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs16234545
+  openalex: W4404999977
+links:
+  paper: https://doi.org/10.3390/rs16234545
+  pdf: https://www.mdpi.com/2072-4292/16/23/4545/pdf?version=1733335017
+topic: regional-km-scale
+topics:
+- global-medium-range
+type: model
+method:
+- transformer
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: SA-Fit uses a lightweight Transformer with lasso-penalised fitting to predict regional ERA5 fields
+  for Shanghai and Xi'an, cutting training time and parameters while matching deep baselines.
+abstract: High-dimensional meteorological data offer a comprehensive overview of meteorological conditions.
+  Nevertheless, predicting regional high-dimensional meteorological data poses challenges due to the vast
+  scale and rapid changes. Apart from slow conventional numerical weather prediction methods, recently
+  developed deep learning methods often fail to fully integrate spatial information of the high-dimensional
+  data and require a significant amount of computational resources. This paper presents the spatiotemporal
+  analysis fitting prediction algorithm (SA-Fit), an approximation algorithm for regional high-dimensional
+  meteorological data prediction. SA-Fit proposes two key designs to achieve efficient prediction of the
+  high-dimensional data. SA-Fit introduces a lightweight Transformer-based spatiotemporal analysis network
+  to encode spatiotemporal information, which can integrate the interaction information between different
+  coordinates in the data. Furthermore, SA-Fit introduces explicit functions with a lasso penalty to fit
+  variations in high-dimensional meteorological data, achieving the prediction of a large amount of data
+  with minimal prediction values. We performed experiments using the ERA5 dataset from the Shanghai and
+  Xi’an regions. The experimental results show that SA-Fit is comparable to other advanced deep learning
+  prediction methods in overall prediction performance. SA-Fit shortens training time and significantly
+  reduces model parameters while using the Transformer structure to ensure prediction accuracy.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,54 @@
+id: arxiv-2411.16098
+title: Global spatio-temporal downscaling of ERA5 precipitation through generative AI
+authors:
+- Luca Glawion
+- Julius Polz
+- Harald Kunstmann
+- Benjamin Fersch
+- Christian Chwala
+date: '2024-11-22'
+year: 2024
+venue: npj Clim Atmos Sci 8 (2025) 219
+venue_type: journal
+ids:
+  arxiv: '2411.16098'
+  doi: 10.1038/s41612-025-01103-y
+links:
+  paper: https://arxiv.org/abs/2411.16098
+  pdf: https://arxiv.org/pdf/2411.16098
+topic: downscaling
+topics:
+- extremes-hazards
+type: model
+method:
+- gan-vae
+spatial:
+- global
+data:
+- era5
+- radar
+status: research
+summary: spateGAN-ERA5 is a conditional GAN that downscales ERA5 precipitation from 24 km hourly to 2
+  km 10-minute fields globally, with realistic extremes and ensembles.
+abstract: The spatial and temporal distribution of precipitation has a significant impact on human lives
+  by determining freshwater resources and agricultural yield, but also rainfall-driven hazards like flooding
+  or landslides. While the ERA5 reanalysis dataset provides consistent long-term global precipitation
+  information that allows investigations of these impacts, it lacks the resolution to capture the high
+  spatio-temporal variability of precipitation. ERA5 misses intense local rainfall events that are crucial
+  drivers of devastating flooding - a critical limitation since extreme weather events become increasingly
+  frequent. Here, we introduce spateGAN-ERA5, the first deep learning based spatio-temporal downscaling
+  of precipitation data on a global scale. SpateGAN-ERA5 uses a conditional generative adversarial neural
+  network (cGAN) that enhances the resolution of ERA5 precipitation data from 24 km and 1 hour to 2 km
+  and 10 minutes, delivering high-resolution rainfall fields with realistic spatio-temporal patterns and
+  accurate rain rate distribution including extremes. Its computational efficiency enables the generation
+  of a large ensemble of solutions, addressing uncertainties inherent to the challenges of downscaling.
+  Trained solely on data from Germany and validated in the US and Australia considering diverse climate
+  zones, spateGAN-ERA5 demonstrates strong generalization indicating a robust global applicability. SpateGAN-ERA5
+  fulfils a critical need for high-resolution precipitation data in hydrological and meteorological research,
+  offering new capabilities for flood risk assessment, AI-enhanced weather forecasting, and impact modelling
+  to address climate-driven challenges worldwide.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

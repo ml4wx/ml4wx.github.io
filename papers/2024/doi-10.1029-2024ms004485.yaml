@@ -1,0 +1,61 @@
+id: doi-10.1029-2024ms004485
+title: Online Learning of Entrainment Closures in a Hybrid Machine Learning Parameterization
+authors:
+- Costa Christopoulos
+- Ignacio Lopez‐Gomez
+- Tom Beucler
+- Yair Cohen
+- Charles Kawczynski
+- Oliver R. A. Dunbar
+- Tapio Schneider
+date: '2024-11-01'
+year: 2024
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2024ms004485
+  openalex: W4404430509
+links:
+  paper: https://doi.org/10.1029/2024ms004485
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2024MS004485
+orgs:
+- google-research
+- nvidia
+- caltech
+topic: hybrid-parameterization
+type: model
+method:
+- classical-ml
+- physics-constrained
+timescale:
+- climate
+spatial:
+- global
+data:
+- km-scale-sim
+status: research
+summary: Data-driven lateral mixing closures embedded in an EDMF scheme are calibrated online by ensemble
+  Kalman inversion in a single-column GCM, outperforming existing schemes in tropical and subtropical
+  regions.
+abstract: 'Abstract This work integrates machine learning into an atmospheric parameterization to target
+  uncertain mixing processes while maintaining interpretable, predictive, and well‐established physical
+  equations. We adopt an eddy‐diffusivity mass‐flux (EDMF) parameterization for the unified modeling of
+  various convective and turbulent regimes. To avoid drift and instability that plague offline‐trained
+  machine learning parameterizations that are subsequently coupled with climate models, we frame learning
+  as an inverse problem: Data‐driven models are embedded within the EDMF parameterization and trained
+  online in a one‐dimensional vertical global climate model (GCM) column. Training is performed against
+  output from large‐eddy simulations (LES) forced with GCM‐simulated large‐scale conditions in the Pacific.
+  Rather than optimizing subgrid‐scale tendencies, our framework directly targets climate variables of
+  interest, such as the vertical profiles of entropy and liquid water path. Specifically, we use ensemble
+  Kalman inversion to simultaneously calibrate both the EDMF parameters and the parameters governing data‐driven
+  lateral mixing rates. The calibrated parameterization outperforms existing EDMF schemes, particularly
+  in tropical and subtropical locations of the present climate, and maintains high fidelity in simulating
+  shallow cumulus and stratocumulus regimes under increased sea surface temperatures from AMIP4K experiments.
+  The results showcase the advantage of physically constraining data‐driven models and directly targeting
+  relevant variables through online learning to build robust and stable machine learning parameterizations.'
+significance: 4
+cited_by: 13
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

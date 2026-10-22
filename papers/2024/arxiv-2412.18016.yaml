@@ -1,0 +1,54 @@
+id: arxiv-2412.18016
+title: Assimilating Observed Surface Pressure into ML Weather Prediction Models
+authors:
+- Laura C. Slivinski
+- Jeffrey S. Whitaker
+- Sergey Frolov
+- Timothy A. Smith
+- Niraj Agarwal
+date: '2024-12-23'
+year: 2024
+venue: Geophysical Research Letters
+venue_type: journal
+ids:
+  arxiv: '2412.18016'
+  doi: 10.1029/2024gl114396
+  openalex: W4408458608
+links:
+  paper: https://doi.org/10.1029/2024gl114396
+  pdf: https://arxiv.org/pdf/2412.18016
+orgs:
+- noaa
+topic: data-assimilation
+topics:
+- global-medium-range
+type: evaluation
+method:
+- other
+timescale:
+- short
+spatial:
+- global
+data:
+- era5
+- stations
+status: research
+summary: Assimilates real surface pressure observations into ML weather models with an ensemble Kalman
+  filter; deterministic models accumulate noise and diverge unless spectrally filtered, with larger errors
+  than traditional models.
+abstract: There has been a recent surge in development of accurate machine learning (ML) weather prediction
+  models, but evaluation of these models has mainly been focused on medium-range forecasts, not their
+  performance in cycling data assimilation (DA) systems. Cycling DA provides a statistically optimal estimate
+  of model initial conditions, given observations and previous model forecasts. Here, real surface pressure
+  observations are assimilated into several popular ML models using an ensemble Kalman filter, where accurate
+  ensemble covariance estimation is essential to constrain unobserved state variables from sparse observations.
+  In this cycling DA system, deterministic ML models accumulate small-scale noise until they diverge.
+  Mitigating this noise with a spectral filter can stabilize the system, but with larger errors than traditional
+  models. Perturbation experiments illustrate that these models do not accurately represent short-term
+  error growth, leading to poor estimation of cross-variable covariances.
+significance: 5
+cited_by: 16
+score: 55
+highlight: false
+added: '2026-10-22'
+source: backfill

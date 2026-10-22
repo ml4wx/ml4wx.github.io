@@ -1,0 +1,56 @@
+id: doi-10.5194-gmd-18-1017-2025
+title: Explaining neural networks for detection of tropical cyclones and atmospheric rivers in gridded
+  atmospheric simulation data
+authors:
+- Tim Radke
+- Susanne Fuchs
+- Christian Wilms
+- Iuliia Polkova
+- Marc Rautenhaus
+date: '2025-02-24'
+year: 2025
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-18-1017-2025
+  openalex: W4407892781
+links:
+  paper: https://doi.org/10.5194/gmd-18-1017-2025
+orgs:
+- dwd
+topic: xai-uq-physics
+topics:
+- extremes-hazards
+type: evaluation
+method:
+- cnn
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Layer-wise relevance propagation shows CG-Net and U-Net detectors of tropical cyclones and atmospheric
+  rivers use plausible input patterns, though bias neurons limit explanations.
+abstract: Abstract. Detection of atmospheric features in gridded datasets from numerical simulation models
+  is typically done by means of rule-based algorithms. Recently, also the feasibility of learning feature
+  detection tasks using supervised learning with convolutional neural networks (CNNs) has been demonstrated.
+  This approach corresponds to semantic segmentation tasks widely investigated in computer vision. However,
+  while in recent studies the performance of CNNs was shown to be comparable to human experts, CNNs are
+  largely treated as a “black box”, and it remains unclear whether they learn the features for the correct
+  reasons. Here we build on the recently published “ClimateNet” dataset that contains features of tropical
+  cyclones and atmospheric rivers as detected by human experts. We adapt the explainable artificial intelligence
+  technique “Layer-wise Relevance Propagation” (LRP) to the feature detection task and investigate which
+  input information CNNs with the Context-Guided Network (CG-Net) and U-Net architectures use for feature
+  detection. We find that both CNNs indeed consider plausible patterns in the input fields of atmospheric
+  variables, which helps to build trust in the approach. We also demonstrate application of the approach
+  for finding the most relevant input variables and evaluating detection robustness when changing the
+  input domain. However, LRP in its current form cannot explain shape information used by the CNNs, and
+  care needs to be taken regarding the normalization of input values, as LRP cannot explain the contribution
+  of bias neurons, accounting for inputs close to zero. These shortcomings need to be addressed by future
+  work to obtain a more complete explanation of CNNs for geoscientific feature detection.
+significance: 4
+cited_by: 2
+score: 51
+highlight: false
+added: '2026-10-22'
+source: backfill

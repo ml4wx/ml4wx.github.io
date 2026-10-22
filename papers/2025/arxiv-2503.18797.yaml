@@ -1,0 +1,58 @@
+id: arxiv-2503.18797
+title: Local wind speed forecasting at short time horizons based on Numerical Weather Prediction and observations
+  from surrounding stations
+authors:
+- Roberta Baggio
+- Killian Pujol
+- Florian Pantillon
+- Dominique Lambert
+- Jean-Baptiste Filippi
+- Jean-François Muzy
+date: '2025-03-24'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2503.18797'
+  doi: 10.22541/essoar.174526084.49431892/v1
+  openalex: W4409630003
+links:
+  paper: https://arxiv.org/abs/2503.18797
+  pdf: https://arxiv.org/pdf/2503.18797
+topic: post-processing
+topics:
+- local-forecasting
+type: model
+method:
+- other
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: research
+summary: A hybrid network combining AROME and ARPEGE forecasts with nearby station observations cuts 1-6
+  hour wind speed RMSE by up to 30% versus AROME.
+abstract: This study presents a hybrid neural network model for short-term (1-6 hours ahead) surface wind
+  speed forecasting, combining Numerical Weather Prediction (NWP) with observational data from ground
+  weather stations. It relies on the MeteoNet dataset, which includes data from global (ARPEGE) and regional
+  (AROME) NWP models of the French weather service and meteorological observations from ground stations
+  in the French Mediterranean. The proposed neural network architecture integrates recent past station
+  observations (over last few hours) and AROME and ARPEGE predictions on a small subgrid around the target
+  location. The model is designed to provide both deterministic and probabilistic forecasts, with the
+  latter predicting the parameters of a suitable probability distribution that notably allows us to capture
+  extreme wind events. Our results demonstrate that the hybrid model significantly outperforms baseline
+  methods, including raw NWP predictions, persistence models, and linear regression, across all forecast
+  horizons. For instance, the model reduces RMSE by up 30\% compared to AROME predictions. Probabilistic
+  forecasting further enhances performance, particularly for extreme quantiles, by estimating conditional
+  quantiles rather than relying solely on the conditional mean. Fine-tuning the model for specific stations,
+  such as those in the Mediterranean island of Corsica, further improves forecasting accuracy. Our study
+  highlights the importance of integrating multiple data sources and probabilistic approaches to improve
+  short-term wind speed forecasting. It defines an effective approach, even in a complex terrain like
+  Corsica where localized wind variations are significant
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

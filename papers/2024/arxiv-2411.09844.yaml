@@ -1,0 +1,48 @@
+id: arxiv-2411.09844
+title: Deep Autoencoders for Unsupervised Anomaly Detection in Wildfire Prediction
+authors:
+- İrem Üstek
+- Miguel Arana-Catania
+- Alexander Farr
+- Ivan Petrunin
+date: '2024-11-14'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2411.09844'
+links:
+  paper: https://arxiv.org/abs/2411.09844
+  pdf: https://arxiv.org/pdf/2411.09844
+topic: extremes-hazards
+type: model
+method:
+- rnn
+- classical-ml
+- gan-vae
+spatial:
+- regional
+data:
+- era5
+- other
+status: research
+summary: Unsupervised autoencoders with anomaly detectors flag Australian wildfire conditions from weather
+  and NDVI data, reaching 0.71 accuracy and 0.74 F1 without labels.
+abstract: Wildfires pose a significantly increasing hazard to global ecosystems due to the climate crisis.
+  Due to its complex nature, there is an urgent need for innovative approaches to wildfire prediction,
+  such as machine learning. This research took a unique approach, differentiating from classical supervised
+  learning, and addressed the gap in unsupervised wildfire prediction using autoencoders and clustering
+  techniques for anomaly detection. Historical weather and normalised difference vegetation index datasets
+  of Australia for 2005 - 2021 were utilised. Two main unsupervised approaches were analysed. The first
+  used a deep autoencoder to obtain latent features, which were then fed into clustering models, isolation
+  forest, local outlier factor and one-class SVM for anomaly detection. The second approach used a deep
+  autoencoder to reconstruct the input data and use reconstruction errors to identify anomalies. Long
+  Short-Term Memory (LSTM) autoencoders and fully connected (FC) autoencoders were employed in this part,
+  both in an unsupervised way learning only from nominal data. The FC autoencoder outperformed its counterparts,
+  achieving an accuracy of 0.71, an F1-score of 0.74, and an MCC of 0.42. These findings highlight the
+  practicality of this method, as it effectively predicts wildfires in the absence of ground truth, utilising
+  an unsupervised learning technique.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

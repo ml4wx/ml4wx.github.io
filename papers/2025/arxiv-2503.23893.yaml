@@ -1,0 +1,55 @@
+id: arxiv-2503.23893
+title: 'DiffScale: Continuous Downscaling and Bias Correction of Subseasonal Wind Speed Forecasts using
+  Diffusion Models'
+authors:
+- Maximilian Springenberg
+- Noelia Otero
+- Yuxin Xue
+- Jackie Ma
+date: '2025-03-31'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2503.23893'
+  openalex: W4417051761
+links:
+  paper: https://arxiv.org/abs/2503.23893
+  pdf: https://arxiv.org/pdf/2503.23893
+topic: downscaling
+topics:
+- s2s-seasonal
+type: model
+method:
+- diffusion
+timescale:
+- s2s
+spatial:
+- regional
+data:
+- nwp-analysis
+- era5
+status: research
+summary: DiffScale uses classifier-free guided diffusion to downscale and bias-correct ECMWF subseasonal
+  wind forecasts to ERA5 resolution, improving skill up to week 3.
+abstract: Renewable resources are strongly dependent on local and large-scale weather situations. Skillful
+  subseasonal to seasonal (S2S) forecasts -- beyond two weeks and up to two months -- can offer significant
+  socioeconomic advantages to the energy sector. This study aims to enhance wind speed predictions using
+  a diffusion model with classifier-free guidance to downscale S2S forecasts of surface wind speed. We
+  propose DiffScale, a diffusion model that super-resolves spatial information for continuous downscaling
+  factors and lead times. Leveraging weather priors as guidance for the generative process of diffusion
+  models, we adopt the perspective of conditional probabilities on sampling super-resolved S2S forecasts.
+  We aim to directly estimate the density associated with the target S2S forecasts at different spatial
+  resolutions and lead times without auto-regression or sequence prediction, resulting in an efficient
+  and flexible model. Synthetic experiments were designed to super-resolve wind speed S2S forecasts from
+  the European Center for Medium-Range Weather Forecast (ECMWF) from a coarse resolution to a finer resolution
+  of ERA5 reanalysis data, which serves as a high-resolution target. The innovative aspect of DiffScale
+  lies in its flexibility to downscale arbitrary scaling factors, enabling it to generalize across various
+  grid resolutions and lead times -without retraining the model- while correcting model errors, making
+  it a versatile tool for improving S2S wind speed forecasts. We achieve a significant improvement in
+  prediction quality, outperforming baselines up to week 3.
+significance: 4
+cited_by: 2
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,42 @@
+id: arxiv-2501.08513
+title: Physically Interpretable Emulation of a Moist Convecting Atmosphere with a Recurrent Neural Network
+authors:
+- Qiyu Song
+- Zhiming Kuang
+date: '2025-01-15'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2501.08513'
+links:
+  paper: https://arxiv.org/abs/2501.08513
+  pdf: https://arxiv.org/pdf/2501.08513
+topic: hybrid-parameterization
+type: model
+method:
+- rnn
+- physics-constrained
+spatial:
+- local
+data:
+- km-scale-sim
+status: research
+summary: A physically interpretable recurrent network emulates cumulus convection from cloud-resolving
+  simulations, staying stable in long coupled runs with gravity waves.
+abstract: Data-driven convective parameterization aims to accurately represent convective adjustments
+  to large-scale forcings in a computationally economic manner. While previous studies have demonstrated
+  success using various model architectures, challenges persist in developing physically interpretable
+  models and assessing generalizability and confidence level. In this study, we develop a recurrent neural
+  network to predict time series of temperature, moisture, and precipitation of a cumulus ensemble in
+  response to large-scale forcings. The recurrent cell combines a linear component, pre-identified as
+  a time-invariant state-space model within the linear limit of the problem, and a multilayer neural network
+  for the nonlinear component. Trained on ensembles of limited-domain cloud-resolving model simulation
+  data, the model exhibits stable and realistic performance in long-term emulations, both with prescribed
+  large-scale forcings and when coupled with two-dimensional gravity waves. We further calculate linear
+  responses to perturbations for the coupled emulation, revealing physically interpretable, state-dependent
+  properties of the convectively coupled gravity wave system.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

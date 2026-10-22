@@ -1,0 +1,53 @@
+id: doi-10.1080-27669645.2025.2472559
+title: Higher accuracy estimation of the weighted mean temperature (tm) with the aid of machine learning
+  and NWP model
+authors:
+- Mingyun Hu
+- Junyu Li
+- Chaolong Yao
+- Feijuan Li
+- Lilong Liu
+- Liangke Huang
+- Yuxin Wang
+date: '2025-02-27'
+year: 2025
+venue: All Earth
+venue_type: journal
+ids:
+  doi: 10.1080/27669645.2025.2472559
+  openalex: W4407997431
+links:
+  paper: https://doi.org/10.1080/27669645.2025.2472559
+topic: observations-remote-sensing
+topics:
+- post-processing
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: XGBoost model using GRAPES_MESO NWP inputs estimates GNSS weighted mean temperature, improving
+  RMSE by 29.7% over NWP and 57.6% over GPT3 against radiosondes.
+abstract: An accurate calculation of weighted mean temperature (Tm) is highly critical for global navigation
+  satellite system (GNSS) based precipitable water vapour retrieval. The widely used empirical models
+  have drawbacks in capturing the fast-changing peaks in Tm, and their achievements are limited. To overcome
+  this drawback, we utilise the advantage of machine learning and numerical weather prediction (NWP) forecasts,
+  which is able to regularly update the modelling data to reflect the latest weather situation, to estimate
+  Tm more precisely. We propose a Tm model using the NWP products of the mesoscale version of the Global/Regional
+  Assimilation and PrEdiction System (GRAPES_MESO) as the input and the eXtreme Gradient Boosting (XGBoost)
+  as the frame, namely CGTm. The CGTm model is then assessed with radiosonde (RS) observations and compared
+  with the GPT3 model (the exemplary model worldwide) and GRAPES_MESO model. The CGTm exhibits a mean
+  bias close to 0, and an RMSE improvement of 29.71% and 57.64% compared to GRAPES_MESO and GPT3, respectively.
+  The CGTm Tm agrees well with RS Tm especially for the fast-changing peaks, which is the key source of
+  the higher accuracy. In summary, the CGTm model manifests high accuracy and behaves in a much more stable
+  manner in Tm estimating.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

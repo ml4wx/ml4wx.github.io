@@ -1,0 +1,50 @@
+id: arxiv-2504.03133
+title: Joint Retrieval of Cloud properties using Attention-based Deep Learning Models
+authors:
+- Zahid Hassan Tushar
+- Adeleke Ademakinwa
+- Jianwu Wang
+- Zhibo Zhang
+- Sanjay Purushotham
+date: '2025-04-04'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2504.03133'
+  openalex: W4417237988
+links:
+  paper: https://arxiv.org/abs/2504.03133
+  pdf: https://arxiv.org/pdf/2504.03133
+topic: observations-remote-sensing
+topics:
+- climate-analysis-attribution
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- km-scale-sim
+status: research
+summary: CloudUNet with attention jointly retrieves cloud optical thickness and effective radius from
+  LES data, cutting MAE 76-86% versus the independent pixel approximation.
+abstract: Accurate cloud property retrieval is vital for understanding cloud behavior and its impact on
+  climate, including applications in weather forecasting, climate modeling, and estimating Earth's radiation
+  balance. The Independent Pixel Approximation (IPA), a widely used physics-based approach, simplifies
+  radiative transfer calculations by assuming each pixel is independent of its neighbors. While computationally
+  efficient, IPA has significant limitations, such as inaccuracies from 3D radiative effects, errors at
+  cloud edges, and ineffectiveness for overlapping or heterogeneous cloud fields. Recent AI/ML-based deep
+  learning models have improved retrieval accuracy by leveraging spatial relationships across pixels.
+  However, these models are often memory-intensive, retrieve only a single cloud property, or struggle
+  with joint property retrievals. To overcome these challenges, we introduce CloudUNet with Attention
+  Module (CAM), a compact UNet-based model that employs attention mechanisms to reduce errors in thick,
+  overlapping cloud regions and a specialized loss function for joint retrieval of Cloud Optical Thickness
+  (COT) and Cloud Effective Radius (CER). Experiments on a Large Eddy Simulation (LES) dataset show that
+  our CAM model outperforms state-of-the-art deep learning methods, reducing mean absolute errors (MAE)
+  by 34% for COT and 42% for CER, and achieving 76% and 86% lower MAE for COT and CER retrievals compared
+  to the IPA method.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

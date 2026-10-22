@@ -1,0 +1,57 @@
+id: doi-10.1109-jstars.2025.3625629
+title: Machine Learning-Based Algorithm for Gaofen-3 Wind Vector Retrieval With Assimilation by COAWST
+  in China Seas
+authors:
+- Lu Liu
+- Jiale Chen
+- Weizeng Shao
+- Maurizio Migliaccio
+- Xingwei Jiang
+- Song Hu
+date: '2025-01-01'
+year: 2025
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2025.3625629
+  openalex: W4415594234
+links:
+  paper: https://doi.org/10.1109/jstars.2025.3625629
+topic: observations-remote-sensing
+topics:
+- data-assimilation
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+data:
+- satellite
+- nwp-analysis
+status: research
+summary: XGBoost retrieves Gaofen-3 SAR wind vectors (speed RMSE 1.26 m/s) and assimilating them into
+  COAWST reduces wind speed error to 1.69 m/s.
+abstract: This study develops a novel machine learning-based algorithm for retrieving wind vectors from
+  Gaofen-3 (GF-3) synthetic aperture radar (SAR) imagery. Additionally, we explore the assimilation of
+  SAR-derived wind fields with the Coupled Ocean-Atmosphere-Wave-Sediment Transport (COAWST) model. Our
+  dataset comprises 3000 GF-3 quad-polarized stripmap (QPS) images collected over the China Seas during
+  the past eight years, collocated with European Centre for Medium-Range Weather Forecasts (ECMWF) data.
+  The proposed methodology utilizes SAR intensity spectra and polarimetric correlation coefficients (PCCs)
+  between dual-polarization channels (HH/HV) for wind direction retrieval using eXtreme Gradient Boosting
+  (XGBoost). For wind speed retrieval, the XGBoost model incorporates co-polarized normalized radar cross
+  section (NRCS), retrieved wind direction, incidence angle, and azimuth angle as input features. Validation
+  of the wind vector against the measurements from Haiyang-2 (HY-2) measurements confirms the robustness
+  of XGBoost-based algorithms, i.e., a root mean squared error (RMSE) of 22.99° for wind direction with
+  a correlation (COR) of 0.97 and a scatter index (SI) of 0.20°, and an RMSE of 1.26 m/s for wind speed
+  with a COR of 0.89 and a SI of 2.26 m/s. The XGBoost-retrieved SAR wind vectors derived from 180 fine
+  stripmap (FS) images were applied to assimilate COAWST ocean models. Assimilation using wind components
+  (u, v) outperformed using wind speed/direction (U, ϕ) and non-assimilation, validated against HY-2 measurements.
+  The (u, v)-based method achieved superior accuracy for wind speed (RMSE 1.69 m/s) and significant wave
+  height (SWH) (RMSE 0.41 m), which showed improvements in wind speed and SWH of 0.15 m/s and 0.1 m respectively,
+  compared to the (U, ϕ)-based assimilation, demonstrating SAR's effectiveness in refining ocean simulations.
+significance: 3
+cited_by: 4
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

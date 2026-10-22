@@ -1,0 +1,52 @@
+id: arxiv-2503.22235
+title: 'WeatherMesh-3: Fast and accurate operational global weather forecasting'
+authors:
+- Haoxing Du
+- Lyna Kim
+- Joan Creus-Costa
+- Jack Michaels
+- Anuj Shetty
+- Todd Hutchinson
+- Christopher Riedel
+- John Dean
+date: '2025-03-28'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2503.22235'
+  openalex: W4416422465
+links:
+  paper: https://arxiv.org/abs/2503.22235
+  pdf: https://arxiv.org/pdf/2503.22235
+topic: global-medium-range
+topics:
+- infra-software
+type: model
+method:
+- transformer
+timescale:
+- medium
+- short
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: operational
+summary: WeatherMesh-3 uses latent rollouts and blended initial conditions to produce 14-day global forecasts
+  in 12 seconds on one GPU, with up to 37.7% RMSE gains over operational models.
+abstract: 'We present WeatherMesh-3 (WM-3), an operational transformer-based global weather forecasting
+  system that improves the state of the art in both accuracy and computational efficiency. We introduce
+  the following advances: 1) a latent rollout that enables arbitrary-length predictions in latent space
+  without intermediate encoding or decoding; and 2) a modular architecture that flexibly utilizes mixed-horizon
+  processors and encodes multiple real-time analyses to create blended initial conditions. WM-3 generates
+  14-day global forecasts at 0.25-degree resolution in 12 seconds on a single RTX 4090. This represents
+  a >100,000-fold speedup over traditional NWP approaches while achieving superior accuracy with up to
+  37.7% improvement in RMSE over operational models, requiring only a single consumer-grade GPU for deployment.
+  We aim for WM-3 to democratize weather forecasting by providing an accessible, lightweight model for
+  operational use while pushing the performance boundaries of machine learning-based weather prediction.'
+significance: 6
+score: 34
+highlight: false
+added: '2026-10-22'
+source: backfill

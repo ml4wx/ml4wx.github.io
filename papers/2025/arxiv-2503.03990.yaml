@@ -1,0 +1,46 @@
+id: arxiv-2503.03990
+title: Data-Driven Probabilistic Air-Sea Flux Parameterization
+authors:
+- Jiarong Wu
+- Pavel Perezhogin
+- David John Gagne
+- Brandon Reichl
+- Aneesh C. Subramanian
+- Elizabeth Thompson
+- Laure Zanna
+date: '2025-03-06'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2503.03990'
+links:
+  paper: https://arxiv.org/abs/2503.03990
+  pdf: https://arxiv.org/pdf/2503.03990
+topic: hybrid-parameterization
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- classical-ml
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Neural networks trained on eddy-covariance data predict Gaussian air-sea flux distributions,
+  offering stochastic alternatives to deterministic bulk flux algorithms.
+abstract: Accurately quantifying air-sea fluxes is important for understanding air-sea interactions and
+  improving coupled weather and climate systems. This study introduces a probabilistic framework to represent
+  the highly variable nature of air-sea fluxes, which is missing in deterministic bulk algorithms. Assuming
+  Gaussian distributions conditioned on the input variables, we use artificial neural networks and eddy-covariance
+  measurement data to estimate the mean and variance by minimizing negative log-likelihood loss. The trained
+  neural networks provide alternative mean flux estimates to existing bulk algorithms, and quantify the
+  uncertainty around the mean estimates. Stochastic parameterization of air-sea turbulent fluxes can be
+  constructed by sampling from the predicted distributions. Tests in a single-column forced upper-ocean
+  model suggest that changes in flux algorithms influence sea surface temperature and mixed layer depth
+  seasonally. The ensemble spread in stochastic runs is most pronounced during spring restratification.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

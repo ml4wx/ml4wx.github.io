@@ -1,0 +1,60 @@
+id: doi-10.1109-jstars.2025.3544865
+title: Multimodal Fusion Learning for Predicting Tropical Cyclone Intensity Over Western North Pacific
+authors:
+- Jie Lian
+- Jiahao Shao
+- Hui Yu
+- Ruirong Chen
+- Sirong Huang
+- Guomin Chen
+- Qin Zhao
+date: '2025-01-01'
+year: 2025
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2025.3544865
+  openalex: W4407900566
+links:
+  paper: https://doi.org/10.1109/jstars.2025.3544865
+orgs:
+- cma
+topic: extremes-hazards
+topics:
+- observations-remote-sensing
+type: model
+method:
+- transformer
+timescale:
+- short
+spatial:
+- regional
+data:
+- satellite
+- era5
+status: research
+summary: TCIque fuses satellite imagery, meteorological variables and expert features with self-attention,
+  improving 24-hour Western North Pacific intensity forecasts by 1.8%.
+abstract: Tropical cyclones (TCs) are highly destructive weather phenomena that cause extensive human
+  and economic losses in affected regions. Accurate prediction of tropical cyclone intensity (TCI) is
+  crucial for disaster preparedness and mitigation. Traditional TCI forecasting methods fail to extract
+  nonlinear features and suffer from high computation costs. In recent years, deep learning methods have
+  been increasingly used to address this challenge. However, current approaches often underutilize meteorological
+  variables and satellite cloud imagery, and fail to capture correlations between multimodal data. In
+  this article, we propose TCIque, a sequence-to-sequence model specifically designed for TCI forecasting.
+  TCIque is designed to integrate multimodal data and retrieve correlational features between them based
+  on the Wide and Deep concept. The “Wide” component leverages domain knowledge to extract statistical
+  features, while the “Deep” component captures nonlinear correlations and spatio-temporal dynamics based
+  on self-attention mechanisms. This unique combination allows the model to fully utilize diverse data
+  sources, such as meteorological variables, satellite imagery, and expert-driven features, ensuring robust
+  feature fusion. Furthermore, a predictive encoder–decoder architecture associated with the self-attention
+  mechanism is employed to address the challenge of long-term dependency decay. Experimental results demonstrate
+  that the TCIque model outperforms existing methods, achieving more accurate performance in TCI prediction
+  by 60.9%, 51.6%, 39.2%, and 1.8% compared to the best performance of baselines, which includes ConvLSTM,
+  PredRNN, TC-Pred, SCSTque, SAF-Net, TCI-Net, Tint, and Pred_3d at 6h, 12h, 18h, and 24h forecast, respectively.
+significance: 3
+cited_by: 7
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

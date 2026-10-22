@@ -1,0 +1,50 @@
+id: arxiv-2411.12640
+title: 'Leadsee-Precip: A Deep Learning Diagnostic Model for Precipitation'
+authors:
+- Weiwen Ji
+- Jin Feng
+- Yueqi Liu
+- Yulu Qiu
+- Hua Gao
+date: '2024-11-19'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2411.12640'
+  openalex: W4404574119
+links:
+  paper: https://arxiv.org/abs/2411.12640
+  pdf: https://arxiv.org/pdf/2411.12640
+topic: post-processing
+topics:
+- extremes-hazards
+type: model
+timescale:
+- short
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+- satellite
+- radar
+status: pre-operational
+summary: Leadsee-Precip generates global precipitation from circulation fields with a balanced loss, improving
+  heavy-precipitation consistency with observations over AI weather models.
+abstract: Recently, deep-learning weather forecasting models have surpassed traditional numerical models
+  in terms of the accuracy of meteorological variables. However, there is considerable potential for improvements
+  in precipitation forecasts, especially for heavy precipitation events. To address this deficiency, we
+  propose Leadsee-Precip, a global deep learning model to generate precipitation from meteorological circulation
+  fields. The model utilizes an information balance scheme to tackle the challenges of predicting heavy
+  precipitation caused by the long-tail distribution of precipitation data. Additionally, more accurate
+  satellite and radar-based precipitation retrievals are used as training targets. Compared to artificial
+  intelligence global weather models, the heavy precipitation from Leadsee-Precip is more consistent with
+  observations and shows competitive performance against global numerical weather prediction models. Leadsee-Precip
+  can be integrated with any global circulation model to generate precipitation forecasts. But the deviations
+  between the predicted and the ground-truth circulation fields may lead to a weakened precipitation forecast,
+  which could potentially be mitigated by further fine-tuning based on the predicted circulation fields.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

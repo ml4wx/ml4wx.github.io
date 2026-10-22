@@ -1,0 +1,64 @@
+id: arxiv-2412.10450
+title: Regional Weather Variable Predictions by Machine Learning with Near-Surface Observational and Atmospheric
+  Numerical Data
+authors:
+- Yihe Zhang
+- Bryce Turney
+- Purushottam Sigdel
+- Xu Yuan
+- Eric Rappin
+- Adrian Lago
+- Sytske Kimball
+- Li Chen
+- Paul Darby
+- Lu Peng
+- Sercan Aygun
+- Yazhou Tu
+- M. Hassan Najafi
+- Nian-Feng Tzeng
+date: '2024-12-11'
+year: 2024
+venue: IEEE Transactions on Geoscience and Remote Sensing
+venue_type: journal
+ids:
+  arxiv: '2412.10450'
+  doi: 10.1109/tgrs.2025.3541545
+  openalex: W4407451392
+links:
+  paper: https://doi.org/10.1109/tgrs.2025.3541545
+  pdf: https://arxiv.org/pdf/2412.10450
+topic: local-forecasting
+type: model
+method:
+- transformer
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+- nwp-analysis
+status: research
+summary: MiMa is an encoder-decoder transformer that fuses Kentucky Mesonet station data with hourly numerical
+  outputs, and Re-MiMa extends predictions to ungauged locations.
+abstract: Accurate and timely regional weather prediction is vital for sectors dependent on weather-related
+  decisions. Traditional prediction methods, based on atmospheric equations, often struggle with coarse
+  temporal resolutions and inaccuracies. This paper presents a novel machine learning (ML) model, called
+  MiMa (short for Micro-Macro), that integrates both near-surface observational data from Kentucky Mesonet
+  stations (collected every five minutes, known as Micro data) and hourly atmospheric numerical outputs
+  (termed as Macro data) for fine-resolution weather forecasting. The MiMa model employs an encoder-decoder
+  transformer structure, with two encoders for processing multivariate data from both datasets and a decoder
+  for forecasting weather variables over short time horizons. Each instance of the MiMa model, called
+  a modelet, predicts the values of a specific weather parameter at an individual Mesonet station. The
+  approach is extended with Re-MiMa modelets, which are designed to predict weather variables at ungauged
+  locations by training on multivariate data from a few representative stations in a region, tagged with
+  their elevations. Re-MiMa (short for Regional-MiMa) can provide highly accurate predictions across an
+  entire region, even in areas without observational stations. Experimental results show that MiMa significantly
+  outperforms current models, with Re-MiMa offering precise short-term forecasts for ungauged locations,
+  marking a significant advancement in weather forecasting accuracy and applicability.
+significance: 3
+cited_by: 6
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

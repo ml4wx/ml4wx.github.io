@@ -1,0 +1,53 @@
+id: doi-10.3390-s24237837
+title: Spatiotemporal Multivariate Weather Prediction Network Based on CNN-Transformer
+authors:
+- Ruowu Wu
+- Yandan Liang
+- Lianlei Lin
+- Zongwei Zhang
+date: '2024-12-07'
+year: 2024
+venue: Sensors
+venue_type: journal
+ids:
+  doi: 10.3390/s24237837
+  openalex: W4405184853
+links:
+  paper: https://doi.org/10.3390/s24237837
+topic: global-medium-range
+type: model
+method:
+- transformer
+- cnn
+timescale:
+- short
+spatial:
+- global
+data:
+- era5
+status: research
+summary: CNN-Transformer spatiotemporal network forecasts multivariate ERA5 fields globally, with a composite
+  MSE and SSIM loss improving hotspot prediction.
+abstract: Weather prediction is of great significance for human daily production activities, global extreme
+  climate prediction, and environmental protection of the Earth. However, the existing data-based weather
+  prediction methods cannot adequately capture the spatial and temporal evolution characteristics of the
+  target region, which makes it difficult for the existing methods to meet practical application requirements
+  in terms of efficiency and accuracy. Changes in weather involve both strongly correlated spatial and
+  temporal continuation relationships, and at the same time, the variables interact with each other, so
+  capturing the dynamic correlations among space, time, and variables is particularly important for accurate
+  weather prediction. Therefore, we designed a spatiotemporal coupled prediction network based on convolution
+  and Transformer for weather prediction from the perspective of multivariate spatiotemporal fields. First,
+  we designed a spatial attention encoder-decoder to comprehensively explore spatial representations for
+  extracting and reconstructing spatial features. Then, we designed a multi-scale spatiotemporal evolution
+  module to obtain the spatiotemporal evolution patterns of weather using inter- and intra-frame computations.
+  After that, in order to ensure that the model has better prediction ability for global and local hotspot
+  areas, we designed a composite loss function based on MSE and SSIM to focus on the global and structural
+  distribution of weather to achieve more accurate multivariate weather prediction. Finally, we demonstrated
+  the excellent effect of STWPM in multivariate spatiotemporal field weather prediction by comprehensively
+  evaluating the proposed algorithm with classical algorithms on the ERA5 dataset in a global region.
+significance: 3
+cited_by: 18
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

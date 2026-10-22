@@ -1,0 +1,52 @@
+id: doi-10.1017-eds.2025.10014
+title: 'MoTiF: a self-supervised model for multi-source forecasting with application to tropical cyclones'
+authors:
+- Clément Dauvilliers
+- Claire Monteleoni
+date: '2025-01-01'
+year: 2025
+venue: Environmental Data Science
+venue_type: journal
+ids:
+  doi: 10.1017/eds.2025.10014
+  openalex: W4412585195
+links:
+  paper: https://doi.org/10.1017/eds.2025.10014
+  pdf: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/489085C5B41E673D1480273C2F55D01C/S2634460225100149a.pdf/div-class-title-motif-a-self-supervised-model-for-multi-source-forecasting-with-application-to-tropical-cyclones-div.pdf
+orgs:
+- inria
+topic: extremes-hazards
+type: model
+method:
+- transformer
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+- satellite
+status: research
+summary: MoTiF self-supervised factorized transformer fuses multiple data sources to reconstruct and forecast
+  tropical cyclone fields and wind intensity.
+abstract: 'Abstract We present a deep learning architecture that reconstructs a source of data at given
+  spatio-temporal coordinates using other sources. The model can be applied to multiple sources in a broad
+  sense: the number of sources may vary between samples, the sources can differ in dimensionality and
+  sizes, and cover distinct geographical areas at irregular time intervals. The network takes as input
+  a set of sources that each include values (e.g., the pixels for two-dimensional sources), spatio-temporal
+  coordinates, and source characteristics. The model is based on the Vision Transformer, but separately
+  embeds the values and coordinates and uses the embedded coordinates as relative positional embedding
+  in the computation of the attention. To limit the cost of computing the attention between many sources,
+  we employ a multi-source factorized attention mechanism, introducing an anchor-points-based cross-source
+  attention block. We name the architecture MoTiF (multi-source transformer via factorized attention).
+  We present a self-supervised setting to train the network, in which one source chosen randomly is masked
+  and the model is tasked to reconstruct it from the other sources. We test this self-supervised task
+  on tropical cyclone (TC) remote-sensing images, ERA5 states, and best-track data. We show that the model
+  is able to perform TC ERA5 fields and wind intensity forecasting from multiple sources, and that using
+  more sources leads to an improvement in forecasting accuracy.'
+significance: 3
+cited_by: 1
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

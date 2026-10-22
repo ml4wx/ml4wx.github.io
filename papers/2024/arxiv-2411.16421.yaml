@@ -1,0 +1,51 @@
+id: arxiv-2411.16421
+title: 'Machine Learning for the Digital Typhoon Dataset: Extensions to Multiple Basins and New Developments
+  in Representations and Tasks'
+authors:
+- Asanobu Kitamoto
+- Erwan Dzik
+- Gaspar Faure
+date: '2024-11-25'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2411.16421'
+  openalex: W4404987797
+links:
+  paper: https://arxiv.org/abs/2411.16421
+  pdf: https://arxiv.org/pdf/2411.16421
+  code: https://github.com/kitamoto-lab/digital-typhoon
+topic: benchmarks-data-eval
+topics:
+- extremes-hazards
+type: benchmark
+method:
+- rnn
+- transformer
+timescale:
+- short
+spatial:
+- global
+data:
+- satellite
+status: research
+summary: Digital Typhoon Dataset V2 adds southern-hemisphere cyclone imagery, with self-supervised LSTM
+  intensity forecasting and cross-hemisphere generalization tests.
+abstract: This paper presents the Digital Typhoon Dataset V2, a new version of the longest typhoon satellite
+  image dataset for 40+ years aimed at benchmarking machine learning models for long-term spatio-temporal
+  data. The new addition in Dataset V2 is tropical cyclone data from the southern hemisphere, in addition
+  to the northern hemisphere data in Dataset V1. Having data from two hemispheres allows us to ask new
+  research questions about regional differences across basins and hemispheres. We also discuss new developments
+  in representations and tasks of the dataset. We first introduce a self-supervised learning framework
+  for representation learning. Combined with the LSTM model, we discuss performance on intensity forecasting
+  and extra-tropical transition forecasting tasks. We then propose new tasks, such as the typhoon center
+  estimation task. We show that an object detection-based model performs better for stronger typhoons.
+  Finally, we study how machine learning models can generalize across basins and hemispheres, by training
+  the model on the northern hemisphere data and testing it on the southern hemisphere data. The dataset
+  is publicly available at \url{http://agora.ex.nii.ac.jp/digital-typhoon/dataset/} and \url{https://github.com/kitamoto-lab/digital-typhoon/}.
+significance: 4
+cited_by: 1
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

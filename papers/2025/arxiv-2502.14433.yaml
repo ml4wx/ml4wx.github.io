@@ -1,0 +1,54 @@
+id: arxiv-2502.14433
+title: Daily Land Surface Temperature Reconstruction in Landsat Cross-Track Areas Using Deep Ensemble
+  Learning With Uncertainty Quantification
+authors:
+- Shengjie Liu
+- Siqin Wang
+- Lu Zhang
+date: '2025-02-20'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2502.14433'
+  doi: 10.1109/tgrs.2025.3643985
+links:
+  paper: https://arxiv.org/abs/2502.14433
+  pdf: https://arxiv.org/pdf/2502.14433
+topic: observations-remote-sensing
+topics:
+- downscaling
+type: model
+method:
+- classical-ml
+- physics-constrained
+spatial:
+- local
+- regional
+data:
+- satellite
+- stations
+status: research
+summary: DELAG, a deep ensemble with Gaussian processes, reconstructs daily 100 m Landsat land surface
+  temperature under clouds in three cities, with uncertainty and air-temperature estimates.
+abstract: Many real-world applications rely on land surface temperature (LST) data at high spatiotemporal
+  resolution. In complex urban areas, LST exhibits significant variations, fluctuating dramatically within
+  and across city blocks. Landsat provides high spatial resolution data at 100 meters but is limited by
+  long revisit time, with cloud cover further disrupting data collection. Here, we propose DELAG, a deep
+  ensemble learning method that integrates annual temperature cycles and Gaussian processes, to reconstruct
+  Landsat LST in complex urban areas. Leveraging the cross-track characteristics and dual-satellite operation
+  of Landsat since 2021, we further enhance data availability to 4 scenes every 16 days. We select New
+  York City, London and Hong Kong from three different continents as study areas. Experiments show that
+  DELAG successfully reconstructed LST in the three cities under clear-sky (RMSE = 0.73-0.96 K) and heavily-cloudy
+  (RMSE = 0.84-1.62 K) situations, superior to existing methods. Additionally, DELAG can quantify uncertainty
+  that enhances LST reconstruction reliability. We further tested the reconstructed LST to estimate near-surface
+  air temperature, achieving results (RMSE = 1.48-2.11 K) comparable to those derived from clear-sky LST
+  (RMSE = 1.63-2.02 K). The results demonstrate the successful reconstruction through DELAG and highlight
+  the broader applications of LST reconstruction for estimating accurate air temperature. Our study thus
+  provides a novel and practical method for Landsat LST reconstruction, particularly suited for complex
+  urban areas within Landsat cross-track areas, taking one step toward addressing complex climate events
+  at high spatiotemporal resolution. Code and data are available at https://skrisliu.com/delag
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

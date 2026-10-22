@@ -1,0 +1,52 @@
+id: arxiv-2501.12419
+title: Ensemble score filter with image inpainting for data assimilation in tracking surface quasi-geostrophic
+  dynamics with partial observations
+authors:
+- Siming Liang
+- Hoang Tran
+- Feng Bao
+- Hristo G. Chipilski
+- Peter Jan van Leeuwen
+- Guannan Zhang
+date: '2025-01-20'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2501.12419'
+links:
+  paper: https://arxiv.org/abs/2501.12419
+  pdf: https://arxiv.org/pdf/2501.12419
+topic: data-assimilation
+type: model
+method:
+- diffusion
+spatial:
+- regional
+data:
+- other
+status: research
+summary: An ensemble score filter with image inpainting handles partial observations for data assimilation
+  of surface quasi-geostrophic dynamics, a proof-of-concept on a toy atmospheric model.
+abstract: Data assimilation plays a pivotal role in understanding and predicting turbulent systems within
+  geoscience and weather forecasting, where data assimilation is used to address three fundamental challenges,
+  i.e., high-dimensionality, nonlinearity, and partial observations. Recent advances in machine learning
+  (ML)-based data assimilation methods have demonstrated encouraging results. In this work, we develop
+  an ensemble score filter (EnSF) that integrates image inpainting to solve the data assimilation problems
+  with partial observations. The EnSF method exploits an exclusively designed training-free diffusion
+  models to solve high-dimensional nonlinear data assimilation problems. Its performance has been successfully
+  demonstrated in the context of having full observations, i.e., all the state variables are directly
+  or indirectly observed. However, because the EnSF does not use a covariance matrix to capture the dependence
+  between the observed and unobserved state variables, it is nontrivial to extend the original EnSF method
+  to the partial observation scenario. In this work, we incorporate various image inpainting techniques
+  into the EnSF to predict the unobserved states during data assimilation. At each filtering step, we
+  first use the diffusion model to estimate the observed states by integrating the likelihood information
+  into the score function. Then, we use image inpainting methods to predict the unobserved state variables.
+  We demonstrate the performance of the EnSF with inpainting by tracking the Surface Quasi-Geostrophic
+  (SQG) model dynamics under a variety of scenarios. The successful proof of concept paves the way to
+  more in-depth investigations on exploiting modern image inpainting techniques to advance data assimilation
+  methodology for practical geoscience and weather forecasting problems.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

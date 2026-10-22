@@ -1,0 +1,50 @@
+id: arxiv-2412.02723
+title: 'DYffCast: Regional Precipitation Nowcasting Using IMERG Satellite Data. A case study over South
+  America'
+authors:
+- Daniel Seal
+- Rossella Arcucci
+- Salva Rühling-Cachay
+- César Quilodrán-Casas
+date: '2024-12-02'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2412.02723'
+links:
+  paper: https://arxiv.org/abs/2412.02723
+  pdf: https://arxiv.org/pdf/2412.02723
+  code: https://github.com/Dseal95/DYffcast
+topic: nowcasting
+topics:
+- observations-remote-sensing
+type: model
+method:
+- diffusion
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Adapts DYffusion with a new MSE/MAE/LPIPS loss for 4-hour IMERG satellite precipitation nowcasting
+  over South America, achieving the highest CSI scores at weak, moderate and heavy thresholds.
+abstract: 'Climate change is increasing the frequency of extreme precipitation events, making weather
+  disasters such as flooding and landslides more likely. The ability to accurately nowcast precipitation
+  is therefore becoming more critical for safeguarding society by providing immediate, accurate information
+  to decision makers. Motivated by the recent success of generative models at precipitation nowcasting,
+  this paper: extends the DYffusion framework to this task and evaluates its performance at forecasting
+  IMERG satellite precipitation data up to a 4-hour horizon; modifies the DYffusion framework to improve
+  its ability to model rainfall data; and introduces a novel loss function that combines MSE, MAE and
+  the LPIPS perceptual score. In a quantitative evaluation of forecasts up to a 4-hour horizon, the modified
+  DYffusion framework trained with the novel loss outperforms four competitor models. It has the highest
+  CSI scores for weak, moderate, and heavy rain thresholds and retains an LPIPS score $<$ 0.2 for the
+  entire roll-out, degrading the least as lead-time increases. The proposed nowcasting model demonstrates
+  visually stable and sharp forecasts up to a 2-hour horizon on a heavy rain case study. Code is available
+  at https://github.com/Dseal95/DYffcast.'
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

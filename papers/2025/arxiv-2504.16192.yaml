@@ -1,0 +1,48 @@
+id: arxiv-2504.16192
+title: Probabilistic Emulation of the Community Radiative Transfer Model Using Machine Learning
+authors:
+- Lucas Howard
+- Aneesh C. Subramanian
+- Gregory Thompson
+- Benjamin Johnson
+- Thomas Auligne
+date: '2025-04-22'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2504.16192'
+  doi: 10.1175/aies-d-24-0109.1
+links:
+  paper: https://arxiv.org/abs/2504.16192
+  pdf: https://arxiv.org/pdf/2504.16192
+topic: data-assimilation
+topics:
+- observations-remote-sensing
+type: model
+method:
+- other
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: A probabilistic neural network emulates CRTM brightness temperatures for GOES ABI with 0.3 K
+  mean RMSE and predicts its own error, speeding up satellite observation operators.
+abstract: The continuous improvement in weather forecast skill over the past several decades is largely
+  due to the increasing quantity of available satellite observations and their assimilation into operational
+  forecast systems. Assimilating these observations requires observation operators in the form of radiative
+  transfer models. Significant efforts have been dedicated to enhancing the computational efficiency of
+  these models. Computational cost remains a bottleneck, and a large fraction of available data goes unused
+  for assimilation. To address this, we used machine learning to build an efficient neural network based
+  probabilistic emulator of the Community Radiative Transfer Model (CRTM), applied to the GOES Advanced
+  Baseline Imager. The trained NN emulator predicts brightness temperatures output by CRTM and the corresponding
+  error with respect to CRTM. RMSE of the predicted brightness temperature is 0.3 K averaged across all
+  channels. For clear sky conditions, the RMSE is less than 0.1 K for 9 out of 10 infrared channels. The
+  error predictions are generally reliable across a wide range of conditions. Explainable AI methods demonstrate
+  that the trained emulator reproduces the relevant physics, increasing confidence that the model will
+  perform well when presented with new data.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

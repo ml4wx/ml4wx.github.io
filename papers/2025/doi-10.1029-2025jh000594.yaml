@@ -1,0 +1,57 @@
+id: doi-10.1029-2025jh000594
+title: Evaluating Global Machine Learning Models for Tropical Cyclone Dynamics and Thermodynamics
+authors:
+- Pankaj Lal Sahu
+- S. Sandeep
+- Hariprasad Kodamana
+date: '2025-04-30'
+year: 2025
+venue: Journal of Geophysical Research Machine Learning and Computation
+venue_type: journal
+ids:
+  doi: 10.1029/2025jh000594
+  openalex: W4409981386
+links:
+  paper: https://doi.org/10.1029/2025jh000594
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2025JH000594
+topic: extremes-hazards
+topics:
+- global-medium-range
+type: evaluation
+method:
+- transformer
+- gnn
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+- nwp-analysis
+status: research
+summary: Compares GraphCast, Pangu, Aurora and FourCastNet on tropical cyclones; tracks stay under 200
+  km at 96 h, but all underestimate winds, with Aurora performing best.
+abstract: Abstract Machine Learning Weather Prediction (MLWP) models have recently demonstrated remarkable
+  potential to rival physics‐based Numerical Weather Prediction (NWP) models, offering global weather
+  forecasts at a fraction of the computational cost. However, thorough evaluations are essential before
+  considering MLWP models as replacements for NWP models. This study presents a comprehensive evaluation
+  of four leading MLWP models—GraphCast, PanguWeather, Aurora, and FourCastNet—against observations and
+  three state‐of‐the‐art NWP models in predicting tropical cyclones (TCs) across all tropical ocean basins.
+  All MLWP models exhibited strong skill in forecasting TC tracks, achieving an average track error of
+  less than 200 km at a 96‐hr forecast lead time. However, they consistently underestimated maximum sustained
+  wind speeds compared to NWP models and observations. The low bias in TC intensity forecasts by MLWP
+  models is linked to similar bias in their training data, along with the double penalization effect.
+  MLWP models realistically captured the absolute vorticity patterns and their advection, demonstrating
+  their ability to represent the dynamics underlying TC translation. They also captured the low‐level
+  convergence and vertical warm core structure of TCs, although the magnitudes were weaker than observed,
+  highlighting the linkage between dynamical and thermodynamical processes. The consistency in magnitude
+  between various physical fields in the MLWP models suggests that they intuitively learn the interrelationships
+  among different physical fields during the evolution of weather systems, demonstrating their ability
+  to capture complex physical interactions. Among the MLWP models, Aurora showed superior performance,
+  surpassing GraphCast, PanguWeather, and FourCastNet.
+significance: 4
+cited_by: 8
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

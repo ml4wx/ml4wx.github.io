@@ -1,0 +1,51 @@
+id: arxiv-2503.12956
+title: Development of a Data-driven weather forecasting system over India with Pangu-Weather architecture
+  and IMDAA reanalysis Data
+authors:
+- Animesh Choudhury
+- Jagabandhu Panda
+date: '2025-03-17'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2503.12956'
+links:
+  paper: https://arxiv.org/abs/2503.12956
+  pdf: https://arxiv.org/pdf/2503.12956
+topic: regional-km-scale
+topics:
+- global-medium-range
+type: model
+method:
+- transformer
+timescale:
+- medium
+spatial:
+- regional
+data:
+- era5
+- other
+status: research
+summary: Pangu-Weather architecture is adapted and trained on IMDAA reanalysis for India; hierarchical
+  rollout performs best and tracks cyclones comparably to reanalysis.
+abstract: Numerical Weather Prediction (NWP) has advanced significantly in recent decades but still faces
+  challenges in accuracy, computational efficiency, and scalability. Data-driven weather models have shown
+  great promise, sometimes surpassing operational NWP systems. However, training these models on massive
+  datasets incurs high computational costs. A regional data-driven approach offers a cost-effective alternative
+  for localized forecasts. This study develops a regional weather forecasting model for India by efficiently
+  modifying the Pangu-Weather (PW) architecture. The model is trained using the Indian Monsoon Data Assimilation
+  and Analysis (IMDAA) reanalysis dataset with limited computational resources. Prediction results are
+  evaluated using Root Mean Square Error (RMSE), Anomaly Correlation Coefficient (ACC), Mean Absolute
+  Percentage Error (MAPE), and Fractional Skill Score (FSS). At a 6-hour lead time, MAPE remains below
+  5%, FSS exceeds 0.86, and ACC stays above 0.94, demonstrating robustness. Three forecasting approaches,
+  static, autoregressive, and hierarchical, are compared. Errors increase with lead time in all cases.
+  The static approach exhibits periodic fluctuations in error metrics, which are absent in the autoregressive
+  method. The hierarchical approach also shows fluctuations, though with reduced intensity after three
+  days. Among these, the hierarchical approach performs best while maintaining computational efficiency.
+  Furthermore, the model effectively predicts cyclone tracks using the hierarchical approach, achieving
+  results comparable to observational and reanalysis datasets.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

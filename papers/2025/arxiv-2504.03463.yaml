@@ -1,0 +1,48 @@
+id: arxiv-2504.03463
+title: Generating ensembles of spatially-coherent in-situ forecasts using flow matching
+authors:
+- David Landry
+- Claire Monteleoni
+- Anastase Charantonis
+date: '2025-04-04'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2504.03463'
+links:
+  paper: https://arxiv.org/abs/2504.03463
+  pdf: https://arxiv.org/pdf/2504.03463
+topic: post-processing
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+- transformer
+timescale:
+- medium
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: research
+summary: FMAP applies flow-matching generative postprocessing with a spatial attention transformer to
+  produce spatially coherent station ensembles of temperature and wind gusts up to five days.
+abstract: We propose a machine-learning-based methodology for in-situ weather forecast postprocessing
+  that is both spatially coherent and multivariate. Compared to previous work, our Flow MAtching Postprocessing
+  (FMAP) better represents the correlation structures of the observations distribution, while also improving
+  marginal performance at the stations. FMAP generates forecasts that are not bound to what is already
+  modeled by the underlying gridded prediction and can infer new correlation structures from data. The
+  resulting model can generate an arbitrary number of forecasts from a limited number of numerical simulations,
+  allowing for low-cost forecasting systems. A single training is sufficient to perform postprocessing
+  at multiple lead times, in contrast with other methods which use multiple trained networks at generation
+  time. This work details our methodology, including a spatial attention transformer backbone trained
+  within a flow matching generative modeling framework. FMAP shows promising performance in experiments
+  on the EUPPBench dataset, forecasting surface temperature and wind gust values at station locations
+  in western Europe up to five-day lead times.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

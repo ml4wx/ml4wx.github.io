@@ -1,0 +1,50 @@
+id: arxiv-2412.14539
+title: Downscaling Precipitation with Bias-informed Conditional Diffusion Model
+authors:
+- Ran Lyu
+- Linhan Wang
+- Yanshen Sun
+- Hedanqiu Bai
+- Chang-Tien Lu
+date: '2024-12-19'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2412.14539'
+links:
+  paper: https://arxiv.org/abs/2412.14539
+  pdf: https://arxiv.org/pdf/2412.14539
+  code: https://github.com/RoseLV/research_super-resolution
+topic: downscaling
+topics:
+- extremes-hazards
+type: model
+method:
+- diffusion
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+- other
+status: research
+summary: A bias-informed conditional diffusion model downscales precipitation 8x with gamma correction
+  and guided sampling, outperforming previous deterministic downscaling methods.
+abstract: Climate change is intensifying rainfall extremes, making high-resolution precipitation projections
+  crucial for society to better prepare for impacts such as flooding. However, current Global Climate
+  Models (GCMs) operate at spatial resolutions too coarse for localized analyses. To address this limitation,
+  deep learning-based statistical downscaling methods offer promising solutions, providing high-resolution
+  precipitation projections with a moderate computational cost. In this work, we introduce a bias-informed
+  conditional diffusion model for statistical downscaling of precipitation. Specifically, our model leverages
+  a conditional diffusion approach to learn distribution priors from large-scale, high-resolution precipitation
+  datasets. The long-tail distribution of precipitation poses a unique challenge for training diffusion
+  models; to address this, we apply gamma correction during preprocessing. Additionally, to correct biases
+  in the downscaled results, we employ a guided-sampling strategy to enhance bias correction. Our experiments
+  demonstrate that the proposed model achieves highly accurate results in an 8 times downscaling setting,
+  outperforming previous deterministic methods. The code and dataset are available at https://github.com/RoseLV/research_super-resolution
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

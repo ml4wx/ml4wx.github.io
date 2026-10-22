@@ -1,0 +1,54 @@
+id: arxiv-2411.17000
+title: 'SatVision-TOA: A Geospatial Foundation Model for Coarse-Resolution All-Sky Remote Sensing Imagery'
+authors:
+- Caleb S. Spradlin
+- Jordan A. Caraballo-Vega
+- Jian Li
+- Mark L. Carroll
+- Jie Gong
+- Paul M. Montesano
+date: '2024-11-26'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2411.17000'
+links:
+  paper: https://arxiv.org/abs/2411.17000
+  pdf: https://arxiv.org/pdf/2411.17000
+topic: observations-remote-sensing
+topics:
+- foundation-models
+type: model
+method:
+- transformer
+spatial:
+- global
+data:
+- satellite
+status: research
+summary: A 3-billion-parameter SwinV2 foundation model pretrained on 100M MODIS all-sky top-of-atmosphere
+  images improves 3D cloud retrieval, with mIoU 0.46 versus 0.22 baseline.
+abstract: Foundation models have the potential to transform the landscape of remote sensing (RS) data
+  analysis by enabling large computer vision models to be pre-trained on vast amounts of remote sensing
+  data. These models can then be fine-tuned with small amounts of labeled training and applied to a variety
+  of applications. Most existing foundation models are designed for high spatial resolution, cloud-free
+  satellite imagery or photos, limiting their applicability in scenarios that require frequent temporal
+  monitoring or broad spectral profiles. As a result, foundation models trained solely on cloud-free images
+  have limited utility for applications that involve atmospheric variables or require atmospheric corrections.
+  We introduce SatVision-TOA, a novel foundation model pre-trained on 14-band MODIS L1B Top-Of-Atmosphere
+  (TOA) radiance imagery, addressing the need for models pre-trained to handle moderate- and coarse-resolution
+  all-sky remote sensing data. The SatVision-TOA model is pre-trained using a Masked-Image-Modeling (MIM)
+  framework and the SwinV2 architecture, and learns detailed contextual representations through self-supervised
+  learning without the need for labels. It is a 3 billion parameter model that is trained on 100 million
+  images. To our knowledge this is the largest foundation model trained solely on satellite RS imagery.
+  Results show that SatVision-TOA achieves superior performance over baseline methods on downstream tasks
+  such as 3D cloud retrieval. Notably, the model achieves a mean intersection over union (mIOU) of 0.46,
+  a substantial improvement over the baseline mIOU of 0.22. Additionally, the rate of false negative results
+  in the fine-tuning task were reduced by over 50% compared to the baseline. Our work advances pre-trained
+  vision modeling for multispectral RS by learning from a variety of atmospheric and aerosol conditions
+  to improve cloud and land surface monitoring.
+significance: 5
+score: 20
+highlight: false
+added: '2026-10-22'
+source: backfill

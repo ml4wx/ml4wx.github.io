@@ -1,0 +1,46 @@
+id: arxiv-2412.13504
+title: Urban Air Temperature Prediction using Conditional Diffusion Models
+authors:
+- Siyang Dai
+- Jun Liu
+- Ngai-Man Cheung
+date: '2024-12-18'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2412.13504'
+links:
+  paper: https://arxiv.org/abs/2412.13504
+  pdf: https://arxiv.org/pdf/2412.13504
+topic: downscaling
+topics:
+- observations-remote-sensing
+type: model
+method:
+- diffusion
+spatial:
+- local
+data:
+- satellite
+- stations
+status: research
+summary: Conditional diffusion model generates 100 m urban air temperature maps from satellite land surface
+  temperature and land-cover features, outperforming prior methods, with a new benchmark dataset.
+abstract: Urbanization as a global trend has led to many environmental challenges, including the urban
+  heat island (UHI) effect. The increase in temperature has a significant impact on the well-being of
+  urban residents. Air temperature ($T_a$) at 2m above the surface is a key indicator of the UHI effect.
+  How land use land cover (LULC) affects $T_a$ is a critical research question which requires high-resolution
+  (HR) $T_a$ data at neighborhood scale. However, weather stations providing $T_a$ measurements are sparsely
+  distributed e.g. more than 10km apart; and numerical models are impractically slow and computationally
+  expensive. In this work, we propose a novel method to predict HR $T_a$ at 100m ground separation distance
+  (gsd) using land surface temperature (LST) and other LULC related features which can be easily obtained
+  from satellite imagery. Our method leverages diffusion models for the first time to generate accurate
+  and visually realistic HR $T_a$ maps, which outperforms prior methods. We pave the way for meteorological
+  research using computer vision techniques by providing a dataset of an extended spatial and temporal
+  coverage, and a high spatial resolution as a benchmark for future research. Furthermore, we show that
+  our model can be applied to urban planning by simulating the impact of different urban designs on $T_a$.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

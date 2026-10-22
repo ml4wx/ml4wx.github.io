@@ -1,0 +1,56 @@
+id: doi-10.5194-gmd-17-8873-2024
+title: Architectural insights into and training methodology optimization of Pangu-Weather
+authors:
+- Deifilia To
+- Julian Quinting
+- Gholam Ali Hoshyaripour
+- Markus Götz
+- Achim Streit
+- Charlotte Debus
+date: '2024-12-13'
+year: 2024
+venue: Geoscientific model development
+venue_type: journal
+ids:
+  doi: 10.5194/gmd-17-8873-2024
+  openalex: W4405376708
+links:
+  paper: https://doi.org/10.5194/gmd-17-8873-2024
+  pdf: https://gmd.copernicus.org/articles/17/8873/2024/gmd-17-8873-2024.pdf
+orgs:
+- kit
+topic: global-medium-range
+type: model
+method:
+- transformer
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Ablation of Pangu-Weather shows a 2D-Transformer converges faster, cuts compute 20–30%, and works
+  better than the 3D version, with 30% faster convergence from a new training procedure.
+abstract: 'Abstract. Data-driven medium-range weather forecasts have recently outperformed classical numerical
+  weather prediction models, with Pangu-Weather (PGW) being the first breakthrough model to achieve this.
+  The Transformer-based PGW introduced novel architectural components including the three-dimensional
+  attention mechanism (3D-Transformer) in the Transformer blocks and an Earth-specific positional bias
+  term which accounts for weather states being related to the absolute position on Earth. However, the
+  effectiveness of different architectural components is not yet well understood. Here, we reproduce the
+  24-hour forecast model of PGW based on subsampled 6-hourly data. We then present an ablation study of
+  PGW to better understand the sensitivity to the model architecture and training procedure. We find that
+  using a two-dimensional attention mechanism (2D-Transformer) yields a model that is more robust to training,
+  converges faster, and produces better forecasts than with the 3D-Transformer. The 2D-Transformer reduces
+  the overall computational requirements by 20–30 %. Further, the Earth-specific positional bias term
+  can be replaced with a relative bias, reducing the model size by nearly 40 %. A sensitivity study comparing
+  the convergence of the PGW model and the 2D-Transformer model shows large batch effects: however, the
+  2D-Transformer model is more robust to such effects. Lastly, we propose a new training procedure that
+  increases the speed of convergence for the 2D-Transformer model model by 30 % without any further hyperparameter
+  tuning.'
+significance: 4
+cited_by: 5
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

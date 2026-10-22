@@ -1,0 +1,48 @@
+id: arxiv-2502.04018
+title: 'PINT: Physics-Informed Neural Time Series Models with Applications to Long-term Inference on WeatherBench
+  2m-Temperature Data'
+authors:
+- Keonvin Park
+- Jisu Kim
+- Jaemin Seo
+date: '2025-02-06'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2502.04018'
+links:
+  paper: https://arxiv.org/abs/2502.04018
+  pdf: https://arxiv.org/pdf/2502.04018
+topic: s2s-seasonal
+type: model
+method:
+- rnn
+- physics-constrained
+timescale:
+- seasonal
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Physics-informed RNN/LSTM/GRU using a harmonic-oscillator prior forecasts ERA5 2m temperature
+  for two years from 90 days of data; modest benchmark-scale contribution.
+abstract: 'This paper introduces PINT (Physics-Informed Neural Time Series Models), a framework that integrates
+  physical constraints into neural time series models to improve their ability to capture complex dynamics.
+  We apply PINT to the ERA5 WeatherBench dataset, focusing on long-term forecasting of 2m-temperature
+  data. PINT incorporates the Simple Harmonic Oscillator Equation as a physics-informed prior, embedding
+  its periodic dynamics into RNN, LSTM, and GRU architectures. This equation''s analytical solutions (sine
+  and cosine functions) facilitate rigorous evaluation of the benefits of incorporating physics-informed
+  constraints. By benchmarking against a linear regression baseline derived from its exact solutions,
+  we quantify the impact of embedding physical principles in data-driven models. Unlike traditional time
+  series models that rely on future observations, PINT is designed for practical forecasting. Using only
+  the first 90 days of observed data, it iteratively predicts the next two years, addressing challenges
+  posed by limited real-time updates. Experiments on the WeatherBench dataset demonstrate PINT''s ability
+  to generalize, capture periodic trends, and align with physical principles. This study highlights the
+  potential of physics-informed neural models in bridging machine learning and interpretable climate applications.
+  Our models and datasets are publicly available on GitHub: https://github.com/KV-Park.'
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

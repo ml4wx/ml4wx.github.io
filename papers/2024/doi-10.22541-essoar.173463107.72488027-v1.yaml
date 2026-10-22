@@ -1,0 +1,62 @@
+id: doi-10.22541-essoar.173463107.72488027-v1
+title: Towards Improved Patch Embeddings for Geospatial Vision Transformers
+authors:
+- Nathan Clark
+- Jirius Abdallah
+- Cassandra Sperow
+- Lisa Miller
+- Ayesha Shaheen
+date: '2024-12-19'
+year: 2024
+venue_type: other
+ids:
+  doi: 10.22541/essoar.173463107.72488027/v1
+  openalex: W4405611462
+links:
+  paper: https://doi.org/10.22541/essoar.173463107.72488027/v1
+  pdf: https://essopenarchive.org/doi/pdf/10.22541/essoar.173463107.72488027
+topic: foundation-models
+topics:
+- global-medium-range
+type: model
+method:
+- transformer
+timescale:
+- medium
+spatial:
+- regional
+- global
+data:
+- era5
+status: research
+summary: Proposes cylindrical wrap-around and spherical rotation patch embeddings for ERA5 vision transformers,
+  reducing seam and warping artefacts near the 180° meridian in regional fine-tuning.
+abstract: Accurate weather forecasts are crucial to planning disaster management, protecting existing
+  infrastructure, and sustaining federal mission areas. Geospatial foundation models (GFMs) have recently
+  been developed as impactful tools for various stakeholders as vision transformers increasingly outperform
+  numerical weather prediction (NWP) models. The state-of-the-art for machine learning-based weather foundation
+  models has been recently fueled by the vision transformer architecture and may be finetuned for regional
+  or local weather predictions. The vision transformer architecture uses patches representing regions
+  of space and time over the input data. However, weather reanalysis datasets, such as ERA5, provide weather
+  data as projections of the Earth’s spheroidal topology onto a rectangle. This introduces both position-dependent
+  warping and an arbitrary seam at the 180° line of longitude. This may be eliminated by considering the
+  topology of the ERA5 dataset as a cylinder, padding certain longitudes to effectively achieve a wrap-around
+  patch embedding that is not affected by a seam, analogous to previous work developing cylindrical convolutional
+  layers. We demonstrate promising results on smaller vision transformers and propose that this method
+  improves performance on regional finetuning tasks in the vicinity of the 180° line of longitude. To
+  mitigate the warping effect of projection and reduce overreliance on positional embedding, we employ
+  an inverse projection of the source data back to spherical coordinates. We then rotate the sphere so
+  that data are projected back onto the source projection, where the patches are centered and minimally
+  warped. This ensures consistent patch representation across latitudes. By selecting patches in spherical
+  coordinates, the model weights geospatial weather data equally across the globe. We propose these techniques
+  to improve the model’s generalization and are likely to scale to larger models. Further work is required
+  to fully evaluate the impact on state-of-the-art GFMs. We implement these techniques on Microsoft’s
+  ClimaX foundation model, finetuning to make forecasts local to government installations in the Pacific,
+  working towards improved mitigation of weather uncertainty for operational assets near the 180° line
+  of longitude.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,56 @@
+id: doi-10.1109-jstars.2025.3544200
+title: Retrieval of Sea Surface Wind Speed From CYGNSS Data in Tropical Cyclone Conditions Using Physics-Guided
+  Artificial Neural Network and Storm-Centric Coordinate Information
+authors:
+- Tong Jia
+- Jing Xu
+- Fuzhong Weng
+- Feixiong Huang
+date: '2025-01-01'
+year: 2025
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2025.3544200
+  openalex: W4407782705
+links:
+  paper: https://doi.org/10.1109/jstars.2025.3544200
+orgs:
+- cma
+topic: observations-remote-sensing
+topics:
+- extremes-hazards
+type: model
+method:
+- classical-ml
+- physics-constrained
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Physics-guided neural network retrieves tropical cyclone sea surface winds from CYGNSS, cutting
+  baseline RMSE by 20% using storm-centric inputs.
+abstract: A novel artificial neural network (ANN) model is introduced for the retrieval of tropical cyclone
+  (TC) sea surface wind speed from the Cyclone Global Navigation Satellite System (CYGNSS) Level 1 data.
+  WindSat TC wind data serves as the “truth” information for the ANN training. Compared to conventional
+  machine learning approaches, the proposed model incorporates specialized information including the storm-centric
+  coordinate information of CYGNSS observations and physical-guided scattering azimuth angle. In addition,
+  a feature selection process is employed, utilizing both XGBoost regressor and Pearson correlation coefficient,
+  to identify the most pertinent input variables for wind speed retrieval. The results show that the proposed
+  model with storm-centric coordinate information and first-order cosine form of scattering azimuth angle
+  as additional inputs demonstrates good retrieval performance. It achieves a bias of -0.59 m/s and an
+  root mean square error (RMSE) of 3.43 m/s, corresponding to a decrease of 60.93% and 20.05% compared
+  to the current CYGNSS baseline wind products for young seas with limited fetch (YSLF). Especially above
+  35 m/s, the proposed model outperforms the CYGNSS YSLF product, illustrating its advantages under high
+  wind speeds. Moreover, the effects of two special inputs on the model performance are explored. It is
+  found that the RMSEs are reduced by about 25.43% and 9.50%, respectively, after incorporating the two
+  specific inputs, suggesting that considering TC-related inputs is more effective than the physics-guided
+  initialization in improving model performance. Our retrieval results provide valuable guidance for improving
+  the use of GNSS-R data for near real-time retrieval of TC winds.
+significance: 3
+cited_by: 6
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

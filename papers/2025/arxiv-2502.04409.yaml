@@ -1,0 +1,54 @@
+id: arxiv-2502.04409
+title: Learning low-dimensional representations of ensemble forecast fields using autoencoder-based methods
+authors:
+- Jieyu Chen
+- Kevin Höhlein
+- Sebastian Lerch
+date: '2025-02-06'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2502.04409'
+  openalex: W4407308599
+links:
+  paper: https://arxiv.org/abs/2502.04409
+  pdf: https://arxiv.org/pdf/2502.04409
+orgs:
+- kit
+topic: infra-software
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- gan-vae
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: Autoencoder methods compress NWP ensemble forecast fields into compact probabilistic representations,
+  either member-wise distribution fitting or a joint ensemble VAE, preserving ensemble character.
+abstract: Large-scale numerical simulations often produce high-dimensional gridded data that is challenging
+  to process for downstream applications. A prime example is numerical weather prediction, where atmospheric
+  processes are modeled using discrete gridded representations of the physical variables and dynamics.
+  Uncertainties are assessed by running the simulations multiple times, yielding ensembles of simulated
+  fields as a high-dimensional stochastic representation of the forecast distribution. The high-dimensionality
+  and large volume of ensemble datasets poses major computing challenges for subsequent forecasting stages.
+  Data-driven dimensionality reduction techniques could help to reduce the data volume before further
+  processing by learning meaningful and compact representations. However, existing dimensionality reduction
+  methods are typically designed for deterministic and single-valued inputs, and thus cannot handle ensemble
+  data from multiple randomized simulations. In this study, we propose novel dimensionality reduction
+  approaches specifically tailored to the format of ensemble forecast fields. We present two alternative
+  frameworks, which yield low-dimensional representations of ensemble forecasts while respecting their
+  probabilistic character. The first approach derives a distribution-based representation of an input
+  ensemble by applying standard dimensionality reduction techniques in a member-by-member fashion and
+  merging the member representations into a joint parametric distribution model. The second approach achieves
+  a similar representation by encoding all members jointly using a tailored variational autoencoder. We
+  evaluate and compare both approaches in a case study using 10 years of temperature and wind speed forecasts
+  over Europe. The approaches preserve key spatial and statistical characteristics of the ensemble and
+  enable probabilistic reconstructions of the forecast fields.
+significance: 2
+score: 18
+highlight: false
+added: '2026-10-22'
+source: backfill

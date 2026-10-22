@@ -1,0 +1,55 @@
+id: doi-10.3390-rs17091550
+title: 'SwinNowcast: A Swin Transformer-Based Model for Radar-Based Precipitation Nowcasting'
+authors:
+- Zhuang Li
+- Zhenyu Lu
+- Yizhe Li
+- Xuan Liu
+date: '2025-04-27'
+year: 2025
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs17091550
+  openalex: W4409869147
+links:
+  paper: https://doi.org/10.3390/rs17091550
+orgs:
+- nuist
+topic: nowcasting
+type: model
+method:
+- transformer
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: SwinNowcast is a Swin Transformer radar nowcasting model with multi-scale fusion that beats six
+  baselines on KNMI precipitation CSI and HSS, with fewer false alarms.
+abstract: Precipitation nowcasting is pivotal in monitoring extreme weather events and issuing early warnings
+  for meteorological disasters. However, the inherent complexity of precipitation systems, coupled with
+  their nonlinear spatiotemporal evolution, poses significant challenges for traditional numerical weather
+  prediction methods in capturing multi-scale details effectively. Existing deep learning models similarly
+  struggle to simultaneously capture local multi-scale features and global long-term spatiotemporal dependencies.
+  To tackle this challenge, we propose SwinNowcast, a deep learning model based on the Swin Transformer
+  architecture. Through the novel design of a multi-scale feature balancing module (M-FBM), the model
+  dynamically integrates local-scale features with global spatiotemporal dependencies. Specifically, the
+  multi-scale convolutional block attention module (MSCBAM) captures local multi-scale features, while
+  the gated attention feature fusion unit (GAFFU) adaptively regulates the fusion intensity, thereby enhancing
+  spatial structure and temporal continuity in a synergistic manner. Experiments were performed on the
+  precipitation dataset from the Royal Netherlands Meteorological Institute (KNMI) under thresholds of
+  0.5 mm, 5 mm, and 10 mm. The results indicate that SwinNowcast surpasses six state-of-the-art approaches
+  regarding the critical success index (CSI) and the Heidke skill score (HSS), while markedly reducing
+  the false alarm rate (FAR). The proposed model holds substantial practical value in applications such
+  as short-term heavy rainfall monitoring and urban flood early warning, offering effective technological
+  support for meteorological disaster mitigation.
+significance: 3
+cited_by: 13
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

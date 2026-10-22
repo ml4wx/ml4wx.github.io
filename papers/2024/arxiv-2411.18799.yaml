@@ -1,0 +1,54 @@
+id: arxiv-2411.18799
+title: Density correction for multivariate spatial fields of global climate model output using deep learning
+authors:
+- Reetam Majumder
+- Shiqi Fang
+- A. Sankarasubramanian
+- Emily C. Hector
+- Brian J. Reich
+date: '2024-11-27'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2411.18799'
+  openalex: W4405029671
+links:
+  paper: https://arxiv.org/abs/2411.18799
+  pdf: https://arxiv.org/pdf/2411.18799
+topic: post-processing
+topics:
+- climate-analysis-attribution
+type: model
+method:
+- classical-ml
+timescale:
+- climate
+spatial:
+- regional
+data:
+- cmip
+status: research
+summary: A semi-parametric conditional density method with Vecchia approximation corrects joint daily
+  precipitation and temperature biases in gridded GCM output, better calibrated than quantile mapping.
+abstract: Global Climate Models (GCMs) are numerical models that simulate complex physical processes within
+  the Earth's climate system and are essential for understanding and predicting climate change. However,
+  GCMs suffer from systemic biases due to simplifications made to the underlying physical processes. GCM
+  output therefore needs to be bias corrected before it can be used for future climate projections. Most
+  common bias correction methods, however, cannot preserve spatial, temporal, or inter-variable dependencies.
+  We propose a new semi-parametric estimation of conditional densities (SPECD) approach for density correction
+  of the joint distribution of daily precipitation and maximum temperature data obtained from gridded
+  GCM spatial fields. The Vecchia approximation is employed to preserve dependencies in the observed field
+  during the density correction process, which is carried out using semi-parametric quantile regression.
+  The ability to calibrate joint distributions of GCM projections has potential advantages not only in
+  estimating extremes, but also in better estimating compound hazards, like heat waves and drought, under
+  potential climate change. Illustration on historical data from 1951-2014 over two 5 x 5 spatial grids
+  in the US indicate that SPECD can preserve key marginal and joint distribution properties of precipitation
+  and maximum temperature, and predictions obtained using SPECD are better calibrated compared to predictions
+  using asynchronous quantile mapping and canonical correlation analysis, two commonly used bias correction
+  approaches.
+significance: 4
+cited_by: 1
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

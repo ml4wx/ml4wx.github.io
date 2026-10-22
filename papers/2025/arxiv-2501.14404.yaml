@@ -1,0 +1,54 @@
+id: arxiv-2501.14404
+title: Kolmogorov Arnold Neural Interpolator for Downscaling and Correcting Meteorological Fields from
+  In-Situ Observations
+authors:
+- Zili Liu
+- Hao Chen
+- Lei Bai
+- Wenyuan Li
+- Zhengxia Zou
+- Zhenwei Shi
+date: '2025-01-24'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2501.14404'
+  openalex: W4406840999
+links:
+  paper: https://arxiv.org/abs/2501.14404
+  pdf: https://arxiv.org/pdf/2501.14404
+topic: downscaling
+topics:
+- post-processing
+type: model
+method:
+- other
+spatial:
+- regional
+- local
+data:
+- stations
+- other
+status: research
+summary: Kolmogorov Arnold Neural Interpolator represents meteorological fields as continuous neural functions,
+  correcting station biases and enabling zero-shot topography-guided downscaling, with 40% temperature
+  and 67% wind-speed accuracy gains.
+abstract: Obtaining accurate weather forecasts at station locations is a critical challenge due to systematic
+  biases arising from the mismatch between multi-scale, continuous atmospheric characteristic and their
+  discrete, gridded representations. Previous works have primarily focused on modeling gridded meteorological
+  data, inherently neglecting the off-grid, continuous nature of atmospheric states and leaving such biases
+  unresolved. To address this, we propose the Kolmogorov Arnold Neural Interpolator (KANI), a novel framework
+  that redefines meteorological field representation as continuous neural functions derived from discretized
+  grids. Grounded in the Kolmogorov Arnold theorem, KANI captures the inherent continuity of atmospheric
+  states and leverages sparse in-situ observations to correct these biases systematically. Furthermore,
+  KANI introduces an innovative zero-shot downscaling capability, guided by high-resolution topographic
+  textures without requiring high-resolution meteorological fields for supervision. Experimental results
+  across three sub-regions of the continental United States indicate that KANI achieves an accuracy improvement
+  of 40.28% for temperature and 67.41% for wind speed, highlighting its significant improvement over traditional
+  interpolation methods. This enables continuous neural representation of meteorological variables through
+  neural networks, transcending the limitations of conventional grid-based representations.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,62 @@
+id: doi-10.3390-rs16244792
+title: 'ResTUnet: A Novel Neural Network Model for Nowcasting Using Radar Echo Sequences by Ground-Based
+  Remote Sensing'
+authors:
+- Lei Zhang
+- Ruoyang Zhang
+- Yu Wu
+- Yadong Wang
+- Yanfeng Zhang
+- Lijuan Zheng
+- Chongbin Xu
+- Xin Zuo
+- Zeyu Wang
+date: '2024-12-23'
+year: 2024
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs16244792
+  openalex: W4405723321
+links:
+  paper: https://doi.org/10.3390/rs16244792
+  pdf: https://www.mdpi.com/2072-4292/16/24/4792/pdf?version=1734938235
+topic: nowcasting
+type: model
+method:
+- transformer
+- cnn
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- radar
+status: research
+summary: ResTUnet combines residual Transformer and U-Net for radar echo extrapolation, improving CSI
+  and POD by about 17% and 11% over ConvLSTM and PredRNN++.
+abstract: 'Radar echo extrapolation by ground-based remote sensing is essential for weather prediction
+  and flight guiding. Existing radar echo extrapolation methods can hardly capture complex spatiotemporal
+  features, resulting in the low accuracy of predictions, and, therefore, severely restrict their use
+  in extreme weather situations. A deep learning method was recently applied for extrapolating radar echoes;
+  however, its accuracy declines too quickly over a short time. In this study, we introduce a solution:
+  Residual Transformer and Unet (ResTUnet), a novel model that improves prediction accuracy and exhibits
+  good stability with a slow rate of accuracy decline. This presented Rest-Net model is designed to solve
+  the issue of declining prediction accuracy by integrating a 1*1 convolution to diminish the neural network
+  parameters. We constructed an observed dataset by Zhengzhou East Airport radar observation from July
+  2022 to August 2022 and performed 90 min experiments comprising five aspects, including extrapolation
+  images, the Probability of Detection (POD) index, the Critical Success Index (CSI), the False Alarm
+  Rate (FAR) index, and the Heidke Skill Score (HSS) index. The experimental results show that the ResTUnet
+  model improved the CSI, HSS index, and the POD index by 17.20%, 11.97%, and 11.35%, compared to current
+  models, including Convolutional Long Short-Term Memory (convLSTM), the Convolutional Gated Recurrent
+  Unit (convGRU), the Trajectory Gated Recurrent Unit (TrajGRU), and the improved recurrent network for
+  video predictive learning, the Predictive Recurrent Neural Network++ (predRNN++). In addition, the mean
+  squared error of the ResTUnet model remains stable at 15% between 0 and 60 min and starts to increase
+  after 60–90 min, which is 12% better than the current models. This enhancement in prediction accuracy
+  has practical applications in meteorological services and decision making.'
+significance: 3
+cited_by: 2
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,54 @@
+id: doi-10.1109-jstars.2025.3557931
+title: Ordinal METAR Cloud Cover Classification in Sentinel-2 Satellite Data
+authors:
+- Markus Götz
+- Erik Wessel
+- Uğur Çayoğlu
+- Babak Jahani
+- Charlotte Debus
+- Jan Čermák
+- Achim Streit
+date: '2025-01-01'
+year: 2025
+venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/jstars.2025.3557931
+  openalex: W4409154911
+links:
+  paper: https://doi.org/10.1109/jstars.2025.3557931
+orgs:
+- kit
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- satellite
+- stations
+status: research
+summary: Trains an EfficientNet with ordinal rank loss on METAR station cloud labels to classify Sentinel-2
+  cloud cover, reaching F1 0.75 with visual label correction.
+abstract: Accurate cloud cover assessment is crucial in several fields such as weather forecasting, climate
+  science, agriculture, or energy system planning, precipitation pattern forecasting and aiding in early
+  detection of extreme weather events. Despite the crucial data that weather stations provide about sky
+  cloud coverage, their measurements are geographically localized and thus lack spatial coverage. Meteorological
+  satellites on the other hand offer great potential to address this limitation by continuously scanning
+  large areas in short periods of time. This work proposes a novel approach for predicting cloud cover
+  in global satellite images by leveraging ordinal point labels from ground-based weather stations (METAR),
+  rather than relying on spatially resolved cloud masks, and demonstrates the effectiveness of this approach
+  using a rank loss-based convolutional neural network of the EfficientNet family. The model is trained
+  in transfer learning approach on a custom-collected data set across selected regions in the continental
+  United States of America. Using station measurements only, we achieve an$F_{1}$-score of up to 0.6 and
+  a ranked-within-1-accuracy ranging from 93.5% to 99.1%. Supplementing the data with labels created by
+  visual inspection to correct for station-satellite mismatches improves scores to 0.75 and 98.4% to 100%.
+  The results imply significantly improved cloud cover assessment in regions without weather stations,
+  extending the capabilities to monitor localized cloud patterns.
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

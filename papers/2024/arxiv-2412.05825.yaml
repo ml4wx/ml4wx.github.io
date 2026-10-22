@@ -1,0 +1,48 @@
+id: arxiv-2412.05825
+title: Self-Supervised Learning with Probabilistic Density Labeling for Rainfall Probability Estimation
+authors:
+- Junha Lee
+- Sojung An
+- Sujeong You
+- Namik Cho
+date: '2024-12-08'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2412.05825'
+links:
+  paper: https://arxiv.org/abs/2412.05825
+  pdf: https://arxiv.org/pdf/2412.05825
+  code: https://github.com/joonha425/SSLPDL
+topic: post-processing
+type: model
+method:
+- other
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: Self-supervised masked pretraining on NWP atmospheric variables, transferred to precipitation
+  segmentation, improves rainfall probability post-processing and extends lead time.
+abstract: Numerical weather prediction (NWP) models are fundamental in meteorology for simulating and
+  forecasting the behavior of various atmospheric variables. The accuracy of precipitation forecasts and
+  the acquisition of sufficient lead time are crucial for preventing hazardous weather events. However,
+  the performance of NWP models is limited by the nonlinear and unpredictable patterns of extreme weather
+  phenomena driven by temporal dynamics. In this regard, we propose a \textbf{S}elf-\textbf{S}upervised
+  \textbf{L}earning with \textbf{P}robabilistic \textbf{D}ensity \textbf{L}abeling (SSLPDL) for estimating
+  rainfall probability by post-processing NWP forecasts. Our post-processing method uses self-supervised
+  learning (SSL) with masked modeling for reconstructing atmospheric physics variables, enabling the model
+  to learn the dependency between variables. The pre-trained encoder is then utilized in transfer learning
+  to a precipitation segmentation task. Furthermore, we introduce a straightforward labeling approach
+  based on probability density to address the class imbalance in extreme weather phenomena like heavy
+  rain events. Experimental results show that SSLPDL surpasses other precipitation forecasting models
+  in regional precipitation post-processing and demonstrates competitive performance in extending forecast
+  lead times. Our code is available at https://github.com/joonha425/SSLPDL
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,55 @@
+id: arxiv-2502.10957
+title: Skillful Nowcasting of Convective Clouds With a Cascade Diffusion Model
+authors:
+- Haoming Chen
+- Xiaohui Zhong
+- Qiang Zhai
+- Xiaomeng Li
+- Ying Wa Chan
+- Pak Wai Chan
+- Yuanyuan Huang
+- Hao Li
+- Xiaoming Shi
+date: '2025-02-16'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2502.10957'
+  openalex: W4407690065
+links:
+  paper: https://arxiv.org/abs/2502.10957
+  pdf: https://arxiv.org/pdf/2502.10957
+topic: nowcasting
+topics:
+- observations-remote-sensing
+type: model
+method:
+- diffusion
+timescale:
+- nowcast
+- short
+spatial:
+- regional
+data:
+- satellite
+- nwp-analysis
+status: research
+summary: SATcast cascade diffusion model nowcasts convective cloud fields from satellite imagery using
+  FuXi predictions, keeping skill up to 24 hours and beating conventional methods.
+abstract: Accurate nowcasting of convective clouds from satellite imagery is essential for mitigating
+  the impacts of meteorological disasters, especially in developing countries and remote regions with
+  limited ground-based observations. Recent advances in deep learning have shown promise in video prediction;
+  however, existing models frequently produce blurry results and exhibit reduced accuracy when forecasting
+  physical fields. Here, we introduce SATcast, a diffusion model that leverages a cascade architecture
+  and multimodal inputs for nowcasting cloud fields in satellite imagery. SATcast incorporates physical
+  fields predicted by FuXi, a deep-learning weather model, alongside past satellite observations as conditional
+  inputs to generate high-quality future cloud fields. Through comprehensive evaluation, SATcast outperforms
+  conventional methods on multiple metrics, demonstrating its superior accuracy and robustness. Ablation
+  studies underscore the importance of its multimodal design and the cascade architecture in achieving
+  reliable predictions. Notably, SATcast maintains predictive skill for up to 24 hours, underscoring its
+  potential for operational nowcasting applications.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

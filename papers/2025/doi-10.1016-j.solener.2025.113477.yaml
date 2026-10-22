@@ -1,0 +1,60 @@
+id: doi-10.1016-j.solener.2025.113477
+title: Intrahour solar radiation forecasting based on sun visibility for different cloud types
+authors:
+- Xinyuan Hou
+- Ilias Fountoulakis
+- Philippe Blanc
+- Christine Aebi
+- Stelios Kazadzis
+date: '2025-04-14'
+year: 2025
+venue: Solar Energy
+venue_type: journal
+ids:
+  doi: 10.1016/j.solener.2025.113477
+  openalex: W4409429777
+links:
+  paper: https://doi.org/10.1016/j.solener.2025.113477
+orgs:
+- eth-zurich
+topic: nowcasting
+topics:
+- applications-impacts
+type: model
+method:
+- rnn
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- other
+status: research
+summary: LSTM forecasts intrahour sun visibility from sky-camera cloud features, reaching 96% accuracy
+  at 15 minutes and a 47% skill gain for solar irradiance.
+abstract: Given certain cloud fractions in the sky, derived from satellite observations or sky images,
+  surface solar radiation (SSR) attenuated by clouds can differ when the sun is visible (based on sunshine
+  duration threshold defined by World Meteorological Organization) or shaded by clouds. Sun visibility
+  is among the most uncertain factors in solar forecasting. With sky images taken by sky cameras and solar
+  radiation measurements at the World Radiation Center (Davos, Switzerland), this work examines the relationship
+  between cloud cover and sun visibility. By integrating sun visibility into a forecasting system, an
+  improvement in accuracy and reliability of the SSR forecast is aimed. A multivariate deep learning model
+  based on a Long- and Short-term Time-series network is used. The model is trained with extensive cloud
+  information including cloud fraction and cloud types extracted from sky images taken at a ground station,
+  and predicts intrahour (15 min- to 1 hr-ahead) sun visibility and cloud modification factor (CMF). With
+  the distinct patterns of visible and occulted sun, initial CMF forecasts are post-processed based on
+  the prediction bias. Next, we derive all-sky global horizontal irradiance (GHI) from both CMF and clear-sky
+  GHI obtained from radiative transfer modeling. The experimental results show a high accuracy of 96%
+  for the 15-min ahead prediction of sun visibility. The SSR forecasts are validated using ground-based
+  measurements. Compared with the persistence reference, our forecast method achieved a significant skill
+  score of 47% for the 15-min ahead prediction. Higher skill scores are found for certain cloud types,
+  e.g., 55% for stratus-altostratus. • Sky image-derived cloud cover and ground-based irradiance measurements
+  are used. • A forecasting method with regime-switching bias correction is developed. • 96% accuracy
+  for sun visibility prediction and 47% forecast skill are achieved. • Considering sun visibility in addition
+  to cloud cover improves solar forecasts.
+significance: 3
+cited_by: 6
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

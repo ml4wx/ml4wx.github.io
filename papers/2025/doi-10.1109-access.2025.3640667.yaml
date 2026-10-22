@@ -1,0 +1,61 @@
+id: doi-10.1109-access.2025.3640667
+title: Multi-Scale Weather Forecasting Using Deep Learning Architectures With Chennai Climate Data
+authors:
+- M. S. Pavithran
+- B Sreeram
+- Adwait V. Pillai
+- R. Jothi
+date: '2025-01-01'
+year: 2025
+venue: IEEE Access
+venue_type: journal
+ids:
+  doi: 10.1109/access.2025.3640667
+  openalex: W4417052130
+links:
+  paper: https://doi.org/10.1109/access.2025.3640667
+topic: local-forecasting
+type: evaluation
+method:
+- rnn
+- transformer
+- cnn
+timescale:
+- short
+- medium
+spatial:
+- local
+data:
+- stations
+- other
+status: research
+summary: Compares LSTM, LSTM-CNN and LSTM-Transformer for daily, weekly and monthly temperature, humidity
+  and rainfall in Chennai; LSTM-CNN is best short-term, LSTM-Transformer long-range.
+abstract: Weather forecasting is an essential aspect of climate-sensitive industries like agriculture,
+  water resources management, and disaster risk management. Short-range forecasts enable prompt decision-making,
+  whereas medium-range and long-range predictions are imperative for strategic decision-making and policy
+  formulation. Traditional forecasting models have a tendency to fail in detecting the intricate, non-linear,
+  and scale-dependent processes inherent in meteorological records. Although classical models are capable
+  of providing some level of predictability, they tend to lack in describing temporal dynamics and nonlinear
+  relationships of meteorological information. Deep learning is increasingly becoming an influential alternative
+  because it has the capability of sequence dependency modelling and spatial-temporal patterns modelling.
+  This research deals with the issue of enhancing multi-scale weather forecasts using sophisticated neural
+  architectures. Particularly, it compares and examines LSTM, LSTM-CNN, and LSTM-Transformer models for
+  temperature, humidity, and rainfall forecasting at different time resolutions. Real-time weather data
+  for Chennai between 2000 and 2025 were retrieved through the Open-Meteo API. The data were resampled
+  into daily, weekly, and monthly scales, normalized, and fed into awalk-forward validation process. Each
+  model was tuned with Keras Tuner and tested with different metrics. Findings indicate that LSTM-CNN
+  has the best performance for short-term forecasting because it can learn local patterns, and LSTM-Transformer
+  is best suited for long-range forecasting with global attention mechanisms. Rainfall, because it’s bursty,
+  still proves to be the hardest parameter to accurately model. The research finds that architecture choice
+  should be dependent on the forecast horizon, and that hybrid models are promising candidates for improving
+  accuracy and scalability. These results support the creation of intelligent, geographically specific
+  climate forecasting systems for climate-resilient decision-making. These insights can directly support
+  agricultural scheduling and water resource planning, offering region-specific decision support for climate
+  resilience.
+significance: 2
+cited_by: 1
+score: 8
+highlight: false
+added: '2026-10-22'
+source: backfill

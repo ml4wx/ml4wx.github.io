@@ -1,0 +1,42 @@
+id: arxiv-2501.04369
+title: State-dependent preconditioning for the inner-loop in Variational Data Assimilation using Machine
+  Learning
+authors:
+- Victor Trappler
+- Arthur Vidard
+date: '2025-01-08'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2501.04369'
+  openalex: W4402823283
+links:
+  paper: http://arxiv.org/abs/2501.04369
+  pdf: https://arxiv.org/pdf/2501.04369
+orgs:
+- inria
+topic: data-assimilation
+type: model
+status: research
+summary: Trains a deep neural network surrogate as a preconditioner for the inner loop of variational
+  data assimilation, aiming to cut the cost of large ill-conditioned solves.
+abstract: Data Assimilation is the process in which we improve the representation of the state of a physical
+  system by combining information coming from a numerical model, real-world observations, and some prior
+  modelling. It is widely used to model and to improve forecast systems in Earth science fields such as
+  meteorology, oceanography and environmental sciences. One key aspect of Data assimilation is the analysis
+  step, where the output of the numerical model is adjusted in order to account for the observational
+  data. In Variational Data Assimilation and under Gaussian assumptions, the analysis step comes down
+  to solving a high-dimensional non-linear least-square problem. In practice, this minimization involves
+  successive inversions of large, and possibly ill-conditioned matrices constructed using linearizations
+  of the forward model. In order to improve the convergence rate of these methods, and thus reduce the
+  computational burden, preconditioning techniques are often used to get better-conditioned matrices,
+  but require either the sparsity pattern of the matrix to inverse, or some spectral information. We propose
+  to use Deep Neural Networks in order to construct a preconditioner. This surrogate is trained using
+  some properties of the singular value decomposition, and is based on a dataset which can be constructed
+  online to reduce the storage requirements.
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

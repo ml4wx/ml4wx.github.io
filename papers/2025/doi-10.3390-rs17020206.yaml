@@ -1,0 +1,55 @@
+id: doi-10.3390-rs17020206
+title: 'DRAF-Net: Dual-Branch Residual-Guided Multi-View Attention Fusion Network for Station-Level Numerical
+  Weather Prediction Correction'
+authors:
+- Kaixin Chen
+- Jiaxin Chen
+- Mengqiu Xu
+- Ming Wu
+- Chuang Zhang
+date: '2025-01-08'
+year: 2025
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs17020206
+  openalex: W4406172887
+links:
+  paper: https://doi.org/10.3390/rs17020206
+  pdf: https://www.mdpi.com/2072-4292/17/2/206/pdf?version=1736405246
+topic: post-processing
+type: model
+method:
+- transformer
+- cnn
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: research
+summary: DRAF-Net dual-branch attention network corrects station-level NWP forecasts, reducing RMSE by
+  83.44% across eight variables on Chinese station data.
+abstract: 'Accurate station-level numerical weather predictions are critical for disaster prevention and
+  mitigation, with error correction playing an essential role. However, existing correction models struggle
+  to effectively handle the high-dimensional features and complex dependencies inherent in meteorological
+  data. To address these challenges, this paper proposes the dual-branch residual-guided multi-view attention
+  fusion network (DRAF-Net), a novel deep learning-based correction model. DRAF-Net introduces two key
+  innovations: (1) a dual-branch residual structure that enhances the spatial sensitivity of deep high-dimensional
+  features and improves output stability by connecting raw data and shallow features to deep features,
+  respectively; and (2) a multi-view attention fusion mechanism that models spatiotemporal influences,
+  temporal dynamics, and spatial associations, significantly improving the representation of complex dependencies.
+  The effectiveness of DRAF-Net was validated on two real-world datasets comprising observations and predictions
+  from Chinese meteorological stations. It achieved an average RMSE reduction of 83.44% and an average
+  MAE reduction of 84.21% across all eight variables, significantly outperforming other methods. Moreover,
+  extensive studies confirmed the critical contributions of each key component, while visualization results
+  highlighted the model’s ability to eliminate anomalous values and improve prediction consistency. The
+  code will be made publicly available to support future research and development.'
+significance: 3
+cited_by: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

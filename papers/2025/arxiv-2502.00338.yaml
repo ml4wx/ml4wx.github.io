@@ -1,0 +1,64 @@
+id: arxiv-2502.00338
+title: 'OneForecast: A Universal Framework for Global and Regional Weather Forecasting'
+authors:
+- Yuan Gao
+- Hao Wu
+- Ruiqi Shu
+- Huanshuo Dong
+- Fan Xu
+- Rui Ray Chen
+- Yibo Yan
+- Qingsong Wen
+- Xuming Hu
+- Kun Wang
+- Jiahao Wu
+- Qing Li
+- Hui Xiong
+- Xiaomeng Huang
+date: '2025-02-01'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2502.00338'
+  openalex: W4407123508
+links:
+  paper: https://arxiv.org/abs/2502.00338
+  pdf: https://arxiv.org/pdf/2502.00338
+  code: https://github.com/YuanGao-YG/OneForecast
+topic: global-medium-range
+topics:
+- regional-km-scale
+type: model
+method:
+- gnn
+timescale:
+- short
+- medium
+spatial:
+- global
+- regional
+data:
+- era5
+status: research
+summary: OneForecast uses multi-scale graph neural networks with neural nested grids to link global and
+  high-resolution regional forecasts, improving extreme event prediction across scales.
+abstract: Accurate weather forecasts are important for disaster prevention, agricultural planning, etc.
+  Traditional numerical weather prediction (NWP) methods offer physically interpretable high-accuracy
+  predictions but are computationally expensive and fail to fully leverage rapidly growing historical
+  data. In recent years, deep learning models have made significant progress in weather forecasting, but
+  challenges remain, such as balancing global and regional high-resolution forecasts, excessive smoothing
+  in extreme event predictions, and insufficient dynamic system modeling. To address these issues, this
+  paper proposes a global-regional nested weather forecasting framework (OneForecast) based on graph neural
+  networks. By combining a dynamic system perspective with multi-grid theory, we construct a multi-scale
+  graph structure and densify the target region to capture local high-frequency features. We introduce
+  an adaptive messaging mechanism, using dynamic gating units to deeply integrate node and edge features
+  for more accurate extreme event forecasting. For high-resolution regional forecasts, we propose a neural
+  nested grid method to mitigate boundary information loss. Experimental results show that OneForecast
+  performs excellently across global to regional scales and short-term to long-term forecasts, especially
+  in extreme event predictions. Codes link https://github.com/YuanGao-YG/OneForecast.
+significance: 3
+cited_by: 1
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

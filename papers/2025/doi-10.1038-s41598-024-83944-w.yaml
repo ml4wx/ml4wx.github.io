@@ -1,0 +1,55 @@
+id: doi-10.1038-s41598-024-83944-w
+title: Downscaling of ERA5 reanalysis land surface temperature based on attention mechanism and Google
+  Earth Engine
+authors:
+- Shiyu Li
+- Hong Wan
+- Qun Yu
+- Xinyuan Wang
+date: '2025-01-03'
+year: 2025
+venue: Scientific Reports
+venue_type: journal
+ids:
+  doi: 10.1038/s41598-024-83944-w
+  openalex: W4406021728
+links:
+  paper: https://doi.org/10.1038/s41598-024-83944-w
+  pdf: https://www.nature.com/articles/s41598-024-83944-w.pdf
+topic: downscaling
+topics:
+- observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- era5
+- satellite
+status: research
+summary: AMUN, an attention U-Net, downscales ERA5-Land land surface temperature over China from 0.1°
+  to 0.01°, cutting RMSE by 32–51% versus random forest.
+abstract: Land Surface Temperature (LST) is widely recognized as a sensitive indicator of climate change,
+  and it plays a significant role in ecological research. The ERA5-Land LST dataset, developed and managed
+  by the European Centre for Medium-Range Weather Forecasts (ECMWF), is extensively used for global or
+  regional LST studies. However, its fine-scale application is limited by its low spatial resolution.
+  Therefore, to improve the spatial resolution of ERA5-Land LST data, this study proposes an Attention
+  Mechanism U-Net (AMUN) method, which combines data acquisition and preprocessing on the Google Earth
+  Engine (GEE) cloud computing platform, to downscale the hourly monthly mean reanalysis LST data of ERA5-Land
+  across China's territory from 0.1° to 0.01°. This method comprehensively considers the relationship
+  between the LST and surface features, organically combining multiple deep learning modules, includes
+  the Global Multi-Factor Cross-Attention (GMFCA) module, the Feature Fusion Residual Dense Block (FFRDB)
+  connection module, and the U-Net module. In addition, the Bayesian global optimization algorithm is
+  used to select the optimal hyperparameters of the network in order to enhance the predictive performance
+  of the model. Finally, the downscaling accuracy of the network was evaluated through simulated data
+  experiments and real data experiments and compared with the Random Forest (RF) method. The results show
+  that the network proposed in this study outperforms the RF method, with RMSE reduced by approximately
+  32-51%. The downscaling method proposed in this study can effectively improve the accuracy of ERA5-Land
+  LST downscaling, providing new insights for LST downscaling research.
+significance: 3
+cited_by: 21
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

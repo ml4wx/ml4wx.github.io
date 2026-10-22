@@ -1,0 +1,60 @@
+id: doi-10.22541-essoar.173671231.11835703-v1
+title: EMULATION OF A NUMERICAL URBAN MODEL TO CREATE HIGH-RESOLUTION NEAR SURFACE AIR TEMPERATURE OVER
+  EUROPEAN CITIES
+authors:
+- Sara M. Top
+- Jonas Blancke
+- Andrei Covaci
+- Steven Caluwaerts
+- Rafiq Hamdi
+- Lesley De Cruz
+date: '2025-01-12'
+year: 2025
+venue_type: other
+ids:
+  doi: 10.22541/essoar.173671231.11835703/v1
+  openalex: W4406292964
+links:
+  paper: https://doi.org/10.22541/essoar.173671231.11835703/v1
+topic: downscaling
+topics:
+- regional-km-scale
+type: model
+method:
+- classical-ml
+spatial:
+- regional
+- local
+data:
+- era5
+- other
+status: research
+summary: Eu-RaFUCE random forest downscales ERA5 2 m temperature to 100 m over European cities, running
+  more than 10^6 times faster than the UrbClim model.
+abstract: Sub-kilometer climate data over a limited amount of cities are currently available or being
+  produced by numerical models. Using numerical models to resolve processes at such a fine resolution
+  is computationally very expensive, which complicates the generation of high-resolution data for long
+  periods and large areas. Statistical models, including machine learning techniques, built on data-driven
+  relationships are a cost-effective alternative. Current statistical models for urban climate simulations
+  are typically tuned for a single city or limited region, resulting in poor performance for cities with
+  different characteristics. Therefore, we explored the potential to simulate near surface temperature
+  over European cities with the newly developed machine learning model European Random Forest Urban Climate
+  Emulator (Eu-RaFUCE). As visualized in the figure below, the Eu-RaFUCE model uses both spatial and temporal
+  variables as input and was trained on hectometer 2 m-temperature output of the urban climate model UrbClim,
+  which is developed and maintained by the Flemish Institute for Technological Research (VITO) \cite{Lauwaet_2024}
+  . Next, hourly ERA5 reanalysis data with a horizontal resolution of about 30 km by 30 km was directly
+  downscaled to 100 m by 100 m with Eu-RaFUCE for unseen cities and unseen years during the training.
+  Validation shows that downscaled 2 m-temperatures with Eu-RaFUCE accurately capture spatial and temporal
+  urban heat island patterns. A simulation for one year over an average city (300 pixels × 197 pixels)
+  takes approximately 8 minutes on a single Central Processing Unit (CPU) core with Eu-RaFUCE, which is
+  more than 6 orders of magnitude faster than the UrbClim model. This shows that Eu-RaFUCE is a powerful
+  tool to produce hectometer resolution data for long time periods over large domains. The development
+  of a generic European urban climate model emulator was only possible thanks to the available large dataset
+  of UrbClim model data over a diverse set of cities. Such large datasets are not yet globally available
+  since they are computationally expensive to create, which unveils the main limitation of the proposed
+  method.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

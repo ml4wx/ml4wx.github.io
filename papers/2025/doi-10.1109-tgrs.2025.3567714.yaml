@@ -1,0 +1,58 @@
+id: doi-10.1109-tgrs.2025.3567714
+title: 'RainScaler: A Physics-Inspired Network for Precipitation Correction and Downscaling'
+authors:
+- Shan Zhao
+- Zhitong Xiong
+- Xiao Xiang Zhu
+date: '2025-01-01'
+year: 2025
+venue: IEEE Transactions on Geoscience and Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.1109/tgrs.2025.3567714
+  openalex: W4410153169
+links:
+  paper: https://doi.org/10.1109/tgrs.2025.3567714
+  code: https://github.com/zhu-xlab/RainScaler.git
+orgs:
+- tum
+topic: downscaling
+type: model
+method:
+- cnn
+- gnn
+- physics-constrained
+spatial:
+- regional
+data:
+- satellite
+status: research
+summary: Physics-inspired RainScaler denoises and downscales precipitation maps using a graph module and
+  multi-scale physical constraints, tested on over 60,000 map pairs.
+abstract: Spatial downscaling of precipitation, in which finegrained regional precipitation patterns are
+  recovered from coarse-resolution images, plays a crucial role in various weather and meteorological
+  analyses. However, the intricate noise information presented in the observation data intertwines with
+  the fine-scale characteristics, which poses challenges for subsequent feature extraction. Regional precipitation
+  suffers from complex spatial patterns. Moreover, the real observatory data contains information inconsistent
+  with the established physical principle, due either to inaccurate or incomplete physical models or limited
+  data quality, thus making the implementation of physicallyinformed deep learning more difficult. For
+  example, strong physical constraints may lead to over-regularization, in which the model becomes too
+  rigid and fails to capture certain complexities in the data. In this work, we propose RainScaler, a
+  physicsinspired deep neural network, to tackle these issues. First, to remove the noise and preserve
+  the vital precipitation patterns effectively, the proposed RainScaler exploits an Inconsistencyaware
+  Denoising Net to explicitly model the spatial variability of noise in the input. In addition, a graph
+  module is designed to learn the geographical-dependent fine-grained patterns in high dimensional feature
+  space at a moderate computation cost. Finally, multi-scale physical constraints are skillfully embedded
+  to incorporate additional insights into the data-driven framework. We test our approach on a public
+  dataset consisting of over 60,000 real low-resolution and high-resolution precipitation map pairs collected
+  by different sensors. Our method produces realisticlooking precipitation maps with better discernment
+  capability and corrects the structural error of precipitation distribution, especially for extreme events.
+  Moreover, we evaluate the potential risks of incorporating physical constraints in real-world data applications.
+  Our method unveils opportunities for multi-source data fusion and provides possible solutions to improve
+  the physical feasibility of data-driven models. The codes are available in https://github.com/zhu-xlab/RainScaler.git.
+significance: 3
+cited_by: 3
+score: 32
+highlight: false
+added: '2026-10-22'
+source: backfill

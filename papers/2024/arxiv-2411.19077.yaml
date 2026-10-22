@@ -1,0 +1,59 @@
+id: arxiv-2411.19077
+title: Improving sub-seasonal wind-speed forecasts in Europe with a non-linear model
+authors:
+- Ganglin Tian
+- Camille Le Coz
+- Anastase Alexandre Charantonis
+- Alexis Tantet
+- Naveen Goutham
+- Riwal Plougonven
+date: '2024-11-28'
+year: 2024
+venue: Monthly Weather Review, vol. 153, no. 9, 2025, pp. 1761-1779
+venue_type: journal
+ids:
+  arxiv: '2411.19077'
+  doi: 10.1175/mwr-d-24-0248.1
+links:
+  paper: https://arxiv.org/abs/2411.19077
+  pdf: https://arxiv.org/pdf/2411.19077
+orgs:
+- inria
+topic: s2s-seasonal
+topics:
+- post-processing
+type: model
+method:
+- cnn
+- classical-ml
+timescale:
+- s2s
+spatial:
+- regional
+data:
+- era5
+- nwp-analysis
+status: research
+summary: A CNN regressing European surface wind speed from Z500, with stochastic perturbations, improves
+  ECMWF sub-seasonal wind forecasts beyond two weeks.
+abstract: Sub-seasonal wind speed forecasts provide valuable guidance for wind power system planning and
+  operations, yet the forecast skills of surface winds decrease sharply after two weeks. However, large-scale
+  variables exhibit greater predictability on this time scale. This study explores the potential of leveraging
+  non-linear relationships between 500 hPa geopotential height (Z500) and surface wind speed to improve
+  sub-seasonal wind speed forecast skills in Europe. Our proposed framework uses a Multiple Linear Regression
+  (MLR) or a Convolutional Neural Network (CNN) to regress surface wind speed from Z500. Evaluations on
+  ERA5 reanalysis indicate that the CNN performs better due to its non-linearity. Applying these models
+  to sub-seasonal forecasts from the European Centre for Medium-Range Weather Forecasts, various verification
+  metrics demonstrate the advantages of non-linearity. Yet, this is partly explained by the fact that
+  these statistical models are under-dispersive since they explain only a fraction of the target variable
+  variance. Introducing stochastic perturbations to represent the stochasticity of the unexplained part
+  from the signal helps compensate for this issue. Results show that the perturbed CNN performs better
+  than the perturbed MLR only in the first weeks, while the perturbed MLR's performance converges towards
+  that of the perturbed CNN after two weeks. The study finds that introducing stochastic perturbations
+  can address the issue of insufficient spread in these statistical models, with improvements from the
+  non-linearity varying with the lead time of the forecasts.
+significance: 3
+score: 22
+highlight: false
+added: '2026-10-22'
+source: backfill

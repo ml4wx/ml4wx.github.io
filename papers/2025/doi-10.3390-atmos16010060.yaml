@@ -1,0 +1,55 @@
+id: doi-10.3390-atmos16010060
+title: Utilization of a Lightweight 3D U-Net Model for Reducing Execution Time of Numerical Weather Prediction
+  Models
+authors:
+- H. W. Park
+- Sungwook Chung
+date: '2025-01-08'
+year: 2025
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos16010060
+  openalex: W4406155402
+links:
+  paper: https://doi.org/10.3390/atmos16010060
+  pdf: https://www.mdpi.com/2073-4433/16/1/60/pdf?version=1736336306
+topic: hybrid-parameterization
+topics:
+- infra-software
+type: model
+method:
+- cnn
+- physics-constrained
+spatial:
+- regional
+data:
+- nwp-analysis
+status: pre-operational
+summary: Lightweight CH-UNet replaces a costly Helmholtz solver hotspot in the Low GloSea6 NWP model,
+  cutting execution time by 2.6% on average.
+abstract: Conventional weather forecasting relies on numerical weather prediction (NWP), which solves
+  atmospheric equations using numerical methods. The Korea Meteorological Administration (KMA) adopted
+  the Met Office Global Seasonal Forecasting System version 6 (GloSea6) NWP model from the UK and runs
+  it on a supercomputer. However, due to high task demands, the limited resources of the supercomputer
+  have caused job queue delays. To address this, the KMA developed a low-resolution version, Low GloSea6,
+  for smaller-scale servers at universities and research institutions. Despite its ability to run on less
+  powerful servers, Low GloSea6 still requires significant computational resources like those of high-performance
+  computing (HPC) clusters. We integrated deep learning with Low GloSea6 to reduce execution time and
+  improve meteorological research efficiency. Through profiling, we confirmed that deep learning models
+  can be integrated without altering the original configuration of Low GloSea6 or complicating physical
+  interpretation. The profiling identified “tri_sor.F90” as the main CPU time hotspot. By combining the
+  biconjugate gradient stabilized (BiCGStab) method, used for solving the Helmholtz problem, with a deep
+  learning model, we reduced unnecessary hotspot calls, shortening execution time. We also propose a convolutional
+  block attention module-based Half-UNet (CH-UNet), a lightweight 3D-based U-Net architecture, for faster
+  deep-learning computations. In experiments, CH-UNet showed 10.24% lower RMSE than Half-UNet, which has
+  fewer FLOPs. Integrating CH-UNet into Low GloSea6 reduced execution time by up to 71 s per timestep,
+  averaging a 2.6% reduction compared to the original Low GloSea6, and 6.8% compared to using Half-UNet.
+  This demonstrates that CH-UNet, with balanced FLOPs and high predictive accuracy, offers more significant
+  execution time reductions than models with fewer FLOPs.
+significance: 3
+cited_by: 1
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

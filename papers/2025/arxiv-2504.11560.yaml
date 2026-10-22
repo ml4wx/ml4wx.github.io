@@ -1,0 +1,55 @@
+id: arxiv-2504.11560
+title: Enhancing Deterministic Freezing Level Predictions in the Northern Sierra Nevada Through Deep Neural
+  Networks
+authors:
+- Vesta Afzali Gorooh
+- Agniv Sengupta
+- Shawn Roj
+- Rachel Weihs
+- Brian Kawzenuk
+- Luca Delle Monache
+- F. Martin Ralph
+date: '2025-04-15'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2504.11560'
+links:
+  paper: https://arxiv.org/abs/2504.11560
+  pdf: https://arxiv.org/pdf/2504.11560
+topic: post-processing
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+status: pre-operational
+summary: A U-Net postprocessor for WRF freezing level forecasts in the Sierra Nevada cuts centered RMSE
+  by up to 20% and raises correlation by about 10% over raw output.
+abstract: Accurate prediction of the freezing level is essential for hydrometeorological forecasting systems,
+  with direct implications for runoff generation and reservoir management. In this study, we develop a
+  deep learning based postprocessing framework using the Unet convolutional neural network architecture
+  to refine the FZL forecasts from the West Weather Research and Forecasting West WRF model. The proposed
+  framework leverages reforecast data from West WRF and FZL estimates from the California Nevada River
+  Forecast Center to develop Unet models over the northern Sierra Nevada watersheds, such as the hydrologically
+  critical Yuba Feather watershed. We introduce two Unet model variants, Unet_log and Unet_GMM, that employ
+  specialized loss functions beyond the standard benchmarks to enhance forecast skill. Unet_log utilizes
+  the cosine of Error, and Unet_MM uses Gaussian Mixture Model loss functions, to enhance FZL forecasts.
+  Results show that Unet based postprocessing reduces centered root mean squared errors by up to 20% and
+  increases forecast observation correlation by about 10% compared to raw WestWRF. Evaluation using the
+  continuous ranked probability score for Unet_GMM further demonstrates consistent improvements across
+  lead times. While performance fluctuates with forecast horizon, storm variability, and diurnal forcing,
+  Unet_GMM and Unet_log consistently outperform the baseline. The models capture the spatiotemporal variability
+  of the FZL across different elevations, mitigating biases from the West WRF model. This novel deep learning
+  based postprocessing approach demonstrates a promising pathway for integrating machine learning into
+  hydrometeorological forecasting and decision support within the Forecast Informed Reservoir Operations
+  framework.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,52 @@
+id: arxiv-2501.16642
+title: 'FlowDAS: A Stochastic Interpolant-based Framework for Data Assimilation'
+authors:
+- Siyi Chen
+- Yixuan Jia
+- Qing Qu
+- He Sun
+- Jeffrey A Fessler
+date: '2025-01-13'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2501.16642'
+links:
+  paper: https://arxiv.org/abs/2501.16642
+  pdf: https://arxiv.org/pdf/2501.16642
+topic: data-assimilation
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+- physics-constrained
+spatial:
+- global
+data:
+- era5
+- other
+status: research
+summary: FlowDAS uses stochastic interpolants to learn step-by-step state transitions for data assimilation,
+  outperforming score-based and neural-operator baselines on Lorenz-63, Navier-Stokes and weather tests.
+abstract: Data assimilation (DA) integrates observations with a dynamical model to estimate states of
+  PDE-governed systems. Model-driven methods (e.g., Kalman, particle) presuppose full knowledge of the
+  true dynamics, which is not always satisfied in practice, while purely data-driven solvers learn a deterministic
+  mapping between observations and states and therefore miss the intrinsic stochasticity of real processes.
+  Recently, score-based diffusion models learn a global diffusion prior and provide a good modeling of
+  the stochastic dynamics, showing new potential for DA. However, their all-at-once generation rather
+  than step-by-step transition limits their performance when dealing with highly complex stochastic processes
+  and lacks physical interpretability. To tackle these drawbacks, we introduce FlowDAS, a generative DA
+  framework that uses stochastic interpolants to directly learn state transition dynamics and achieve
+  step-by-step transition to better model the real dynamics. We also improve the framework by combining
+  the observation, better suiting the DA settings. Directly learning the underlying dynamics from collected
+  data removes restrictive dynamical assumptions, and conditioning on observations at each interpolation
+  step yields stable, measurement-consistent forecasts. Experiments on Lorenz-63, Navier-Stokes super-resolution/sparse-observation
+  scenarios, and large-scale weather forecasting -- where dynamics are partly or wholly unknown -- show
+  that FlowDAS surpasses model-driven methods, neural operators, and score-based baselines in accuracy
+  and physical plausibility.
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-22'
+source: backfill

@@ -1,0 +1,44 @@
+id: arxiv-2411.06714
+title: 'DiffSR: Learning Radar Reflectivity Synthesis via Diffusion Model from Satellite Observations'
+authors:
+- Xuming He
+- Zhiwang Zhou
+- Wenlong Zhang
+- Xiangyu Zhao
+- Hao Chen
+- Shiqi Chen
+- Lei Bai
+date: '2024-11-11'
+year: 2024
+venue_type: preprint
+ids:
+  arxiv: '2411.06714'
+links:
+  paper: https://arxiv.org/abs/2411.06714
+  pdf: https://arxiv.org/pdf/2411.06714
+topic: observations-remote-sensing
+type: model
+method:
+- diffusion
+spatial:
+- global
+data:
+- satellite
+- radar
+status: research
+summary: DiffSR uses a two-stage diffusion model to synthesize weather radar reflectivity from satellite
+  data, capturing convective high-value details that MSE methods smooth out.
+abstract: Weather radar data synthesis can fill in data for areas where ground observations are missing.
+  Existing methods often employ reconstruction-based approaches with MSE loss to reconstruct radar data
+  from satellite observation. However, such methods lead to over-smoothing, which hinders the generation
+  of high-frequency details or high-value observation areas associated with convective weather. To address
+  this issue, we propose a two-stage diffusion-based method called DiffSR. We first pre-train a reconstruction
+  model on global-scale data to obtain radar estimation and then synthesize radar reflectivity by combining
+  radar estimation results with satellite data as conditions for the diffusion model. Extensive experiments
+  show that our method achieves state-of-the-art (SOTA) results, demonstrating the ability to generate
+  high-frequency details and high-value areas.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill

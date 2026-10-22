@@ -1,0 +1,56 @@
+id: doi-10.1029-2024ms004308
+title: 'Exploring Optimal Complexity for Water Stress Representation in Terrestrial Carbon Models: A Hybrid‐Machine
+  Learning Model Approach'
+authors:
+- Jianing Fang
+- Pierre Gentine
+date: '2024-12-01'
+year: 2024
+venue: Journal of Advances in Modeling Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1029/2024ms004308
+  openalex: W4405137148
+links:
+  paper: https://doi.org/10.1029/2024ms004308
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2024MS004308
+orgs:
+- columbia-leap
+topic: hybrid-parameterization
+type: model
+method:
+- differentiable
+- physics-constrained
+spatial:
+- global
+- local
+data:
+- other
+status: research
+summary: DifferLand embeds neural networks in a differentiable land carbon model to learn soil water stress,
+  finding a piecewise linear water limitation across 16 FLUXNET sites.
+abstract: Abstract Terrestrial biosphere models offer a comprehensive view of the global carbon cycle
+  by integrating ecological processes across scales, yet they introduce significant uncertainties in climate
+  and biogeochemical projections due to diverse process representations and parameter variations. For
+  instance, different soil water limitation functions lead to wide productivity ranges across models.
+  To address this, we propose the Differentiable Land Model (DifferLand), a novel hybrid machine learning
+  approach replacing unknown water limitation functions in models with neural networks (NNs) to learn
+  from data. Using automatic differentiation, we calibrated the embedded NN and the physical model parameters
+  against daily observations of evapotranspiration, gross primary productivity, ecosystem respiration,
+  and leaf area index across 16 FLUXNET sites. We evaluated six model configurations where NNs simulate
+  increasingly complex soil water and photosynthesis interactions against test data sets to find the optimal
+  structure‐performance tradeoff. Our findings show that a simple hybrid model with a univariate NN effectively
+  captures site‐level water and carbon fluxes on a monthly timescale. Across a global aridity gradient,
+  the magnitude of water stress limitation varies, but its functional form consistently converges to a
+  piecewise linear relationship with saturation at high water levels. While models incorporating more
+  interactions between soil water and meteorological drivers better fit observations at finer time scales,
+  they risk overfitting and equifinality issues. Our study demonstrates that hybrid models have great
+  potential in learning unknown parameterizations and testing ecological hypotheses. Nevertheless, careful
+  structure‐performance tradeoffs are warranted in light of observational constraints to translate the
+  retrieved relationships into robust process understanding.
+significance: 4
+cited_by: 20
+score: 26
+highlight: false
+added: '2026-10-22'
+source: backfill

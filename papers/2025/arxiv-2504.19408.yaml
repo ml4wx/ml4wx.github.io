@@ -1,0 +1,44 @@
+id: arxiv-2504.19408
+title: 'Axial-UNet: A Neural Weather Model for Precipitation Nowcasting'
+authors:
+- Sumit Mamtani
+- Maitreya Sonawane
+date: '2025-04-28'
+year: 2025
+venue_type: preprint
+ids:
+  arxiv: '2504.19408'
+links:
+  paper: https://arxiv.org/abs/2504.19408
+  pdf: https://arxiv.org/pdf/2504.19408
+topic: nowcasting
+type: model
+method:
+- cnn
+- transformer
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: Axial-UNet adds axial attention to a UNet for radar-based precipitation nowcasting, reaching
+  PSNR 47.67 on HKO-7 but without meteorological skill scores.
+abstract: Accurately predicting short-term precipitation is critical for weather-sensitive applications
+  such as disaster management, aviation, and urban planning. Traditional numerical weather prediction
+  can be computationally intensive at high resolution and short lead times. In this work, we propose a
+  lightweight UNet-based encoder-decoder augmented with axial-attention blocks that attend along image
+  rows and columns to capture long-range spatial interactions, while temporal context is provided by conditioning
+  on multiple past radar frames. Our hybrid architecture captures both local and long-range spatio-temporal
+  dependencies from radar image sequences, enabling fixed lead-time precipitation nowcasting with modest
+  compute. Experimental results on a preprocessed subset of the HKO-7 radar dataset demonstrate that our
+  model outperforms ConvLSTM, pix2pix-style cGANs, and a plain UNet in pixel-fidelity metrics, reaching
+  PSNR 47.67 and SSIM 0.9943. We report PSNR/SSIM here; extending evaluation to meteorology-oriented skill
+  measures (e.g., CSI/FSS) is left to future work. The approach is simple, scalable, and effective for
+  resource-constrained, real-time forecasting scenarios.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-22'
+source: backfill
