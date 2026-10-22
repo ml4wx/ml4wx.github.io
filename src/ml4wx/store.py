@@ -59,7 +59,7 @@ class Archive:
     def _index(self, p: Paper) -> None:
         for k in p.ids.keys():
             self._by_key[k] = p.id
-        self._by_title.setdefault(ids.norm_title(p.title)[:40], []).append(p.id)
+        self._by_title.setdefault(ids.title_key(p.title), []).append(p.id)
         if p.authors:
             self._by_first.setdefault(ids.surname(p.authors[0]), []).append(p.id)
 
@@ -70,7 +70,7 @@ class Archive:
             if k in self._by_key:
                 return self.papers[self._by_key[k]]
         first = ids.surname(c.authors[0]) if c.authors else ""
-        for pid in self._by_title.get(ids.norm_title(c.title)[:40], []):
+        for pid in self._by_title.get(ids.title_key(c.title), []):
             p = self.papers[pid]
             if ids.same_title(p.title, c.title):
                 return p

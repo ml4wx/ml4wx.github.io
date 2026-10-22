@@ -51,7 +51,7 @@ def dedupe(cands: list[Candidate]) -> list[Candidate]:
     for c in cands:
         hit = next((by_key[k] for k in c.ids.keys() if k in by_key), None)
         if hit is None:
-            hit = by_title.get(ids.norm_title(c.title))
+            hit = by_title.get(ids.title_key(c.title))
         if hit is None:
             out.append(c)
             hit = len(out) - 1
@@ -59,7 +59,7 @@ def dedupe(cands: list[Candidate]) -> list[Candidate]:
             out[hit] = merge(out[hit], c)
         for k in out[hit].ids.keys():
             by_key[k] = hit
-        by_title[ids.norm_title(out[hit].title)] = hit
+        by_title[ids.title_key(out[hit].title)] = hit
     return out
 
 
@@ -265,6 +265,9 @@ def ingest(
                 rep.known += 1
         elif archive.status(c) and c.key not in force_topic:
             rep.known += 1
+        elif c.retracted or ids.is_retracted_title(c.title):
+            archive.reject(c)
+            rep.rejected += 1
         elif use_prefilter and not prefilter(c, cfg):
             rep.filtered += 1
         else:

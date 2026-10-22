@@ -43,6 +43,7 @@ class Candidate(BaseModel):
     affiliations: list[str] = []  # raw affiliation strings
     comment: str | None = None  # arXiv comment field (often has code links / venue)
     cited_by: int | None = None
+    retracted: bool = False
     source: str = ""  # arxiv:<query> | openalex:<query> | seed | snowball | feed
 
     @property
