@@ -67,11 +67,12 @@ def columns(data: list[tuple[str, float]], *, unit: str = "", partial_last: bool
     for i, (name, v) in enumerate(data):
         x = left + band * i + (band - bw) / 2
         last = i == len(data) - 1
-        cls = "viz-bar partial' opacity='0.55" if last and partial_last else "viz-bar"
+        partial = last and partial_last
+        cls, extra = ("viz-bar partial", " opacity='0.55'") if partial else ("viz-bar", "")
         tip = f"{name}: {fmt(v, unit)}" + (" (so far)" if last and partial_last else "")
         out.append(f"<g class='viz-hit'><title>{escape(tip)}</title>"
                    f"<rect x='{left + band * i:.1f}' y='{top}' width='{band:.1f}' height='{base - top}' fill='transparent'/>"
-                   f"<path class='{cls}' fill='#0b6aa2' d='{_bar_path(x, y_of(v), bw, base)}'/></g>")  # fmt: skip
+                   f"<path class='{cls}'{extra} fill='#0b6aa2' d='{_bar_path(x, y_of(v), bw, base)}'/></g>")  # fmt: skip
         if len(data) <= 12 or i % 2 == 0 or last:
             out.append(f"<text class='viz-tick' font-size='11' fill='#5b6878' x='{x + bw / 2:.1f}' y='{h - 8}' text-anchor='middle'>{escape(name)}</text>")
         if last:
