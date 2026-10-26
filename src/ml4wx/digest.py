@@ -76,6 +76,7 @@ def build(
         intro=intro(papers, cfg) if write_intro else "",
         papers=papers,
         highlights=sorted((p for p in papers if p.highlight), key=lambda p: -p.score),
+        datasets=[p for p in papers if p.type == "benchmark"],
         by_topic=[(t, by_topic[t.slug]) for t in cfg.topics if by_topic.get(t.slug)],
         orgs=cfg.org_by_slug,
         releases=releases or [],

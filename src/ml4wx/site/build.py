@@ -17,6 +17,7 @@ from xml.sax.saxutils import escape
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from markdown_it import MarkdownIt
 
+from .. import resources
 from ..config import Config
 from ..export import authors_short, sorted_papers, stats
 from ..models import Paper
@@ -102,6 +103,15 @@ def build(archive: Archive, cfg: Config, out: Path, index: bool = True) -> None:
     digests = _digests(archive.root)
     latest_added = max((p.added for p in papers), default=None)
 
+    # Resources catalog: kind/slug -> archived paper id, and the reverse for paper pages.
+    catalog = resources.Catalog(archive.root)
+    key_to_paper = {k: p.id for p in papers for k in p.ids.keys()}
+    res_by_paper = catalog.for_papers(key_to_paper)
+    paper_ids = {f"{r.kind}/{r.slug}": pid for pid, rs in res_by_paper.items() for r in rs}
+    res_vocab = resources.vocabulary()
+    e.globals.update(res_vocab=res_vocab, github=catalog.github, paper_ids=paper_ids)
+    res_by_topic = catalog.by_topic()
+
     def render(rel: str, tpl: str, **kw) -> None:
         _write(out, rel, e.get_template(tpl).render(**kw))
 
@@ -118,9 +128,13 @@ def build(archive: Archive, cfg: Config, out: Path, index: bool = True) -> None:
             ps = by_topic.get(t.slug, [])
             also = [p for p in papers if t.slug in p.topics]
             years = sorted(Counter(p.year for p in ps).items())
-            render(f"topics/{t.slug}/index.html", "topic.html", topic=t, papers=ps, also=also, years=years)
+            render(f"topics/{t.slug}/index.html", "topic.html", topic=t, papers=ps, also=also, years=years,
+                   resources=res_by_topic.get(t.slug, []))  # fmt: skip
     for p in papers:
-        render(f"papers/{p.id}/index.html", "paper.html", p=p)
+        render(f"papers/{p.id}/index.html", "paper.html", p=p, resources=res_by_paper.get(p.id, []))
+    by_kind = catalog.by_kind()
+    render("resources/index.html", "resources.html", by_kind=by_kind, total=len(catalog.items),
+           categories_json=json.dumps({k: v["categories"] for k, v in res_vocab["kinds"].items()}))  # fmt: skip
     org_list = sorted(
         (o for o in cfg.orgs if by_org.get(o.slug)), key=lambda o: (o.tier, -len(by_org[o.slug]))
     )
@@ -141,6 +155,11 @@ def build(archive: Archive, cfg: Config, out: Path, index: bool = True) -> None:
         p.model_dump(mode="json", exclude={"abstract"}, exclude_none=True) for p in papers
     ]
     _write(out, "data/papers.json", json.dumps(data, ensure_ascii=False, separators=(",", ":")))
+    res_data = [
+        r.model_dump(mode="json", exclude_none=True) | {"github": catalog.github.get(r.repo)}
+        for r in catalog.items.values()
+    ]
+    _write(out, "data/resources.json", json.dumps(res_data, ensure_ascii=False, separators=(",", ":")))
     log.info("site: %d papers, %d topics, %d orgs, %d digests", len(papers), len(by_topic), len(org_list), len(digests))
 
     if index:

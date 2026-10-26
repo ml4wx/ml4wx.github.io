@@ -1,0 +1,24 @@
+slug: ace2-som
+name: ACE2-SOM
+kind: model
+category: climate-emulator
+description: ACE2 coupled to a simple slab-ocean model and trained on equilibrium physics-based simulations
+  at several CO2 levels; the first ACE model that emulates the climate response to large CO2 changes.
+provider: Ai2
+url: https://huggingface.co/allenai/ACE2-SOM
+repo: ai2cm/ace
+paper:
+  arxiv: '2412.04418'
+  doi: 10.1029/2024JH000575
+license: Apache-2.0
+topics:
+- climate-emulation
+added: '2026-10-26'
+org: ai2
+weights: https://huggingface.co/allenai/ACE2-SOM
+lead_time: 6-hourly steps, multi-decade runs
+training_data: Physics-based slab-ocean climate simulations at 1x-4x CO2
+open:
+- code
+- weights
+operational: false

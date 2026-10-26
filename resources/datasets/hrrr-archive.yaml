@@ -1,0 +1,24 @@
+slug: hrrr-archive
+name: HRRR archive on AWS
+kind: dataset
+category: forecast-archive
+description: The archive of NOAA's 3 km, hourly-updated, convection-allowing High-Resolution Rapid Refresh
+  model, with a Zarr copy. It is widely used for regional ML forecasting, downscaling and nowcasting baselines
+  over the US.
+provider: NOAA (Zarr copy by University of Utah)
+url: https://registry.opendata.aws/noaa-hrrr-pds/
+docs: https://rapidrefresh.noaa.gov/hrrr/
+repo: blaylockbk/Herbie
+paper:
+  doi: 10.1175/WAF-D-21-0151.1
+license: NOAA open data (no restrictions; attribution requested)
+topics:
+- regional-km-scale
+- nowcasting
+- downscaling
+added: '2026-10-26'
+coverage: CONUS, 3 km, hourly-updated forecasts, July 2014–present
+formats:
+- GRIB2
+- Zarr
+access: open

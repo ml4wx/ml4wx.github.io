@@ -1,0 +1,27 @@
+slug: credit-wxformer
+name: CREDIT WXFormer
+kind: model
+category: global-deterministic
+description: NSF NCAR's CREDIT framework for training and running global ML models; WXFormer is a vision
+  transformer on ERA5 hybrid sigma-pressure levels (6-hour and 1-hour versions), and CREDIT also ships
+  a FuXi re-implementation and the CAMulator climate emulator.
+provider: NSF NCAR
+url: https://github.com/NCAR/miles-credit
+repo: NCAR/miles-credit
+paper:
+  arxiv: '2411.07814'
+  doi: 10.1038/s41612-025-01125-6
+license: Apache-2.0
+topics:
+- global-medium-range
+- infra-software
+added: '2026-10-26'
+org: ncar
+weights: https://huggingface.co/djgagne2/wxformer_6h
+resolution: ~0.28° (N320 grid), 16 model levels
+lead_time: 10 days, 6-hourly (also a 1-hourly version)
+training_data: ERA5
+open:
+- code
+- weights
+operational: false

@@ -167,6 +167,30 @@ code { font-family: var(--mono); font-size: .9em; background: var(--surface-2); 
 .sort select { font: inherit; padding: 8px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); color: var(--text); }
 #more { margin: 16px 0; }
 
+/* resources */
+.res-tabs { display: flex; gap: 6px; flex-wrap: wrap; margin: 8px 0 4px; }
+.res-tabs button { font: inherit; border: 1px solid var(--border); background: var(--surface); color: var(--text);
+  padding: 6px 12px; border-radius: 999px; cursor: pointer; }
+.res-tabs button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+.res-tabs .n { opacity: .75; font-variant-numeric: tabular-nums; margin-left: 2px; }
+.res-filters input { flex: 1 1 260px; }
+.res-filters .sort select { max-width: 220px; }
+.res-section h2 { margin-top: 28px; }
+.res-grid { grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); }
+.res .card-title { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.res-kind { font-size: .72rem; font-weight: 600; padding: 2px 8px; border-radius: 999px; white-space: nowrap;
+  background: var(--surface-2); color: var(--muted); }
+.res-kind.kind-dataset { background: var(--accent-soft); color: var(--accent); }
+.res-kind.kind-model { background: var(--tier1-soft); color: var(--tier1); }
+.res-kind.kind-software { background: var(--code-soft); color: var(--code); }
+.res-facts { font-size: .86rem; color: var(--muted); margin: 0 0 8px; overflow-wrap: anywhere; }
+.res-facts code { font-size: .82rem; }
+.res-links { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: .88rem; margin: 0 0 8px; align-items: baseline; }
+.res-links .gh { color: var(--muted); font-size: .82rem; font-variant-numeric: tabular-nums; }
+.res-paper { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--tier1);
+  border-radius: var(--radius); padding: 10px 14px; margin: 12px 0; font-size: .95rem; }
+.res-topic summary { cursor: pointer; color: var(--accent); margin-bottom: 12px; }
+
 @media (max-width: 760px) {
   .top-inner { gap: 4px 12px; padding-top: 8px; }
   .brand { flex: 1; }
@@ -176,5 +200,5 @@ code { font-family: var(--mono); font-size: .9em; background: var(--surface-2); 
   .explore { grid-template-columns: 1fr; }
   .facets-panel { position: static; max-height: none; }
   .hero { padding-top: 28px; }
-  .grid { grid-template-columns: 1fr; }
+  .grid, .res-grid { grid-template-columns: 1fr; }
 }

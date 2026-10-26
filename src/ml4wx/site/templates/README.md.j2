@@ -32,6 +32,13 @@ classified when the topics are switched on.
 | {{ p.date }} | [{{ p.title | md_escape }}]({{ p.links.paper or "" }}) | {{ p.orgs | org_names if p.orgs else (p.venue or "arXiv") }} |
 {%- endfor %}
 {% endif %}
+## Resources
+
+Datasets ({{ resources.get("dataset", 0) }}), models with public code or weights ({{ resources.get("model", 0) }}) and
+open-source tools ({{ resources.get("software", 0) }}), each linked to the topics where they are used:
+[on the site]({{ cfg.settings.site.url }}/resources/) · [as a list](lists/resources.md).
+GitHub stars and releases are updated every week.
+
 ## How it works
 
 1. **Every week** (Monday morning, Zurich time) a GitHub Action searches arXiv and OpenAlex for

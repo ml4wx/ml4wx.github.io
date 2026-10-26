@@ -1,0 +1,22 @@
+slug: earthformer
+name: Earthformer
+kind: model
+category: nowcasting
+description: Space-time transformer with "cuboid attention" that splits the data into local 3D blocks;
+  training code and configs for SEVIR precipitation nowcasting, ICAR-ENSO and EarthNet2021. The pretrained
+  checkpoints linked in the README (Amazon S3) return Access Denied as of Oct 2026.
+provider: Amazon
+url: https://github.com/amazon-science/earth-forecasting-transformer
+repo: amazon-science/earth-forecasting-transformer
+paper:
+  arxiv: '2207.05833'
+  doi: ''
+license: Apache-2.0
+topics:
+- nowcasting
+added: '2026-10-26'
+lead_time: 'SEVIR: 60 min, 5-min steps'
+training_data: SEVIR (also ICAR-ENSO, EarthNet2021)
+open:
+- code
+operational: false

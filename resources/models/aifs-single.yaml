@@ -1,0 +1,30 @@
+slug: aifs-single
+name: AIFS Single
+kind: model
+category: global-deterministic
+description: 'ECMWF''s operational deterministic ML model: graph-network encoder and decoder around a
+  sliding-window transformer, built with the open Anemoi framework. Version 2 (operational since May 2026)
+  adds ocean-wave variables.'
+provider: ECMWF
+url: https://huggingface.co/ecmwf/aifs-single-2.0
+repo: ecmwf/anemoi-core
+paper:
+  arxiv: '2406.01465'
+  doi: ''
+license: Apache-2.0
+topics:
+- global-medium-range
+added: '2026-10-26'
+org: ecmwf
+weights: https://huggingface.co/ecmwf/aifs-single-2.0
+resolution: ~31 km (N320), 14 pressure levels
+lead_time: 15 days, 6-hourly
+training_data: ERA5; fine-tuned on ECMWF operational analyses
+open:
+- code
+- weights
+license_weights: CC-BY-4.0
+operational: true
+runs_in:
+- anemoi
+- earth2studio

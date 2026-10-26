@@ -1,0 +1,30 @@
+slug: atlas
+name: Atlas
+kind: model
+category: global-ensemble
+description: NVIDIA Earth-2 latent diffusion transformer (2.5B parameters) for global ensemble forecasts;
+  the release has a stochastic-interpolant version and a much faster CRPS-trained version. No paper yet;
+  inference code is in Earth2Studio.
+provider: NVIDIA
+url: https://huggingface.co/nvidia/atlas-era5
+repo: NVIDIA/earth2studio
+paper:
+  arxiv: ''
+  doi: ''
+license: Apache-2.0
+topics:
+- probabilistic-ensembles
+- global-medium-range
+added: '2026-10-26'
+org: nvidia
+weights: https://huggingface.co/nvidia/atlas-era5
+resolution: 0.25°, 75 variables (13 levels)
+lead_time: 6-hourly steps
+training_data: ERA5 (1980-2019)
+open:
+- code
+- weights
+license_weights: NVIDIA-Open-Model-License
+operational: false
+runs_in:
+- earth2studio

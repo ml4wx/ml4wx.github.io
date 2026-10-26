@@ -1,0 +1,29 @@
+slug: ace2
+name: ACE2
+kind: model
+category: climate-emulator
+description: 'Ai2 Climate Emulator v2: a 450M-parameter SFNO-based emulator that exactly conserves dry
+  air mass and moisture and runs stably for decades (about 1500 simulated years per day), forced by SST
+  and CO2.'
+provider: Ai2
+url: https://ai2-climate-emulator.readthedocs.io/en/stable/
+repo: ai2cm/ace
+paper:
+  arxiv: '2411.11268'
+  doi: 10.1038/s41612-025-01090-0
+license: Apache-2.0
+topics:
+- climate-emulation
+- s2s-seasonal
+added: '2026-10-26'
+org: ai2
+weights: https://huggingface.co/allenai/ACE2-ERA5
+resolution: 1°, 8 vertical layers
+lead_time: 6-hourly steps, days to decades
+training_data: ERA5 (1940-2022)
+open:
+- code
+- weights
+operational: false
+runs_in:
+- earth2studio

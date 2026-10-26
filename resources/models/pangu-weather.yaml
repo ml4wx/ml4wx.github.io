@@ -1,0 +1,29 @@
+slug: pangu-weather
+name: Pangu-Weather
+kind: model
+category: global-deterministic
+description: 3D Earth-Specific Transformer that treats pressure levels as a third spatial dimension; four
+  models with 1, 3, 6 and 24-hour steps are combined to limit error growth. It was the first ML model
+  reported to beat the ECMWF IFS deterministic forecast; released as ONNX inference models.
+provider: Huawei Cloud
+url: https://github.com/198808xc/Pangu-Weather
+repo: 198808xc/Pangu-Weather
+paper:
+  arxiv: '2211.02556'
+  doi: 10.1038/s41586-023-06185-3
+topics:
+- global-medium-range
+added: '2026-10-26'
+org: huawei
+weights: https://github.com/198808xc/Pangu-Weather#downloading-trained-models
+resolution: 0.25°, 13 levels
+lead_time: 1 hour to 7 days (1, 3, 6 and 24 h models)
+training_data: ERA5
+open:
+- code
+- weights
+license_weights: CC-BY-NC-SA-4.0
+operational: false
+runs_in:
+- earth2studio
+- ai-models

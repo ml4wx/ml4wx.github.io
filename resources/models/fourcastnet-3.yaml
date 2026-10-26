@@ -1,0 +1,29 @@
+slug: fourcastnet-3
+name: FourCastNet 3
+kind: model
+category: global-ensemble
+description: Probabilistic spherical neural-operator model trained with a CRPS objective; ensembles stay
+  well calibrated with realistic spectra out to 60 days, and a 60-day 0.25° forecast takes minutes on
+  one GPU.
+provider: NVIDIA
+url: https://research.nvidia.com/publication/2025-07_fourcastnet-3-geometric-approach-probabilistic-machine-learning-weather
+repo: NVIDIA/makani
+paper:
+  arxiv: '2507.12144'
+  doi: ''
+license: Apache-2.0
+topics:
+- probabilistic-ensembles
+- global-medium-range
+added: '2026-10-26'
+org: nvidia
+weights: https://huggingface.co/nvidia/fourcastnet3
+resolution: 0.25°
+lead_time: up to 60 days, 6-hourly
+training_data: ERA5
+open:
+- code
+- weights
+operational: false
+runs_in:
+- earth2studio

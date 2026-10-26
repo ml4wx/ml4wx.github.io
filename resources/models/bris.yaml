@@ -1,0 +1,29 @@
+slug: bris
+name: Bris
+kind: model
+category: regional
+description: 'MET Norway''s Anemoi-based graph model on a global stretched grid: 2.5 km over the Nordics
+  and 31 km elsewhere, so no separate boundary model is needed. Public checkpoints include deterministic
+  and CRPS-trained ensemble versions plus an hourly interpolator.'
+provider: MET Norway
+url: https://github.com/metno/bris-inference
+repo: metno/bris-inference
+paper:
+  arxiv: '2409.02891'
+  doi: 10.1175/AIES-D-25-0001.1
+license: Apache-2.0
+topics:
+- regional-km-scale
+- local-forecasting
+added: '2026-10-26'
+org: met-norway
+weights: https://huggingface.co/met-no/bris_cloudy-skies
+resolution: 2.5 km (Nordics), 31 km elsewhere (stretched grid)
+lead_time: 6-hourly steps (hourly with the interpolator)
+training_data: ERA5 (pre-training); MEPS and IFS analyses (fine-tuning)
+open:
+- code
+- weights
+operational: false
+runs_in:
+- anemoi

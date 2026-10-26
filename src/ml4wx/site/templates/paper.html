@@ -49,6 +49,12 @@
     {% if p.links.project %}<a class="btn" href="{{ p.links.project }}">Project</a>{% endif %}
   </p>
 
+  {% if resources %}
+  <div class="res-paper" data-pagefind-ignore>
+    <b>Resources from this paper:</b>
+    {% for r in resources %}<a href="/resources/#{{ r.kind }}-{{ r.slug }}">{{ r.name }}</a> <span class="muted">({{ res_vocab.kinds[r.kind].name | lower }}{% if r.get("weights") %}, weights{% endif %})</span>{{ " · " if not loop.last }}{% endfor %}
+  </div>
+  {% endif %}
   {% if p.highlight and p.highlight_reason %}
   <p class="why"><b data-pagefind-ignore>Why it matters.</b> {{ p.highlight_reason }}</p>
   {% endif %}

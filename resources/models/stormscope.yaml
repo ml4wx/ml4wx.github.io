@@ -1,0 +1,30 @@
+slug: stormscope
+name: StormScope
+kind: model
+category: nowcasting
+description: Transformer diffusion models that forecast GOES satellite imagery and MRMS radar directly
+  from observations, without an NWP model, at 6 km / 1 h and 3 km / 10 min; competitive with mesoscale
+  NWP up to 6 hours. Inference code is in Earth2Studio.
+provider: NVIDIA
+url: https://huggingface.co/nvidia/stormscope-goes-mrms
+repo: NVIDIA/earth2studio
+paper:
+  arxiv: '2601.17268'
+  doi: ''
+license: Apache-2.0
+topics:
+- nowcasting
+- observations-remote-sensing
+added: '2026-10-26'
+org: nvidia
+weights: https://huggingface.co/nvidia/stormscope-goes-mrms
+resolution: 6 km (1 h steps) and 3 km (10 min steps), CONUS
+lead_time: up to 6 h
+training_data: GOES, MRMS and ERA5 (2018-2023)
+open:
+- code
+- weights
+license_weights: NVIDIA-Open-Model-License
+operational: false
+runs_in:
+- earth2studio

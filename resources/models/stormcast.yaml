@@ -1,0 +1,29 @@
+slug: stormcast
+name: StormCast
+kind: model
+category: regional
+description: Generative diffusion model that emulates NOAA's 3 km HRRR convection-allowing model with
+  a 1-hour step, conditioned on the ERA5 large-scale state; it reproduces realistic convective storm structure.
+  Training recipe in PhysicsNeMo, inference in Earth2Studio.
+provider: NVIDIA
+url: https://huggingface.co/nvidia/stormcast-v1-era5-hrrr
+repo: NVIDIA/physicsnemo
+paper:
+  arxiv: '2408.10958'
+  doi: 10.1126/sciadv.adv0423
+license: Apache-2.0
+topics:
+- regional-km-scale
+- probabilistic-ensembles
+added: '2026-10-26'
+org: nvidia
+weights: https://huggingface.co/nvidia/stormcast-v1-era5-hrrr
+resolution: 3 km (HRRR grid), US
+lead_time: 1-hour steps
+training_data: HRRR analyses and ERA5 (2018-2021)
+open:
+- code
+- weights
+operational: false
+runs_in:
+- earth2studio

@@ -1,0 +1,24 @@
+slug: stormer
+name: Stormer
+kind: model
+category: global-deterministic
+description: Plain vision transformer with a weather-specific embedding and a randomized-interval training
+  objective; at inference, forecasts made with different step sizes are combined. It is strong beyond
+  7 days on WeatherBench 2 with much less training data and compute.
+provider: UCLA and Argonne National Laboratory
+url: https://github.com/tung-nd/stormer
+repo: tung-nd/stormer
+paper:
+  arxiv: '2312.03876'
+  doi: ''
+license: MIT
+topics:
+- global-medium-range
+added: '2026-10-26'
+weights: https://huggingface.co/tungnd/stormer
+resolution: 1.40625°
+training_data: ERA5 (WeatherBench 2)
+open:
+- code
+- weights
+operational: false

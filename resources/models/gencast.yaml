@@ -1,0 +1,31 @@
+slug: gencast
+name: GenCast
+kind: model
+category: global-ensemble
+description: Conditional diffusion model that samples each ensemble member as a full 15-day trajectory;
+  in the Nature paper it beat the ECMWF ENS on most targets. Checkpoints at 0.25° (ERA5 and HRES-fine-tuned
+  "operational") and 1° (including a small "Mini" model).
+provider: Google DeepMind
+url: https://deepmind.google/blog/gencast-predicts-weather-and-the-risks-of-extreme-conditions-with-sota-accuracy/
+repo: google-deepmind/weathernext
+paper:
+  arxiv: '2312.15796'
+  doi: 10.1038/s41586-024-08252-9
+license: Apache-2.0
+topics:
+- probabilistic-ensembles
+- global-medium-range
+added: '2026-10-26'
+org: google-deepmind
+weights: https://console.cloud.google.com/storage/browser/dm_graphcast
+resolution: 0.25° and 1°, 13 levels
+lead_time: 15 days, 12-hourly
+training_data: ERA5 (operational version fine-tuned on ECMWF HRES analyses)
+open:
+- code
+- weights
+license_weights: CC-BY-4.0
+operational: false
+runs_in:
+- earth2studio
+- ai-models

@@ -59,10 +59,32 @@ def cmd_validate(args) -> int:
             keys[k] = p.id
         if archive.paper_path(p).name != f"{p.id}.yaml":
             errors.append(f"{where}: file name does not match id")
+    from . import resources
+
+    catalog = resources.Catalog(archive.root)
+    errors += catalog.validate(cfg, resources.vocabulary())
     for e in errors:
         print(f"ERROR {e}")
-    print(f"{len(archive.papers)} papers, {len(archive.parked)} parked, {len(errors)} errors")
+    print(f"{len(archive.papers)} papers, {len(archive.parked)} parked, {len(catalog.items)} resources, "
+          f"{len(errors)} errors")  # fmt: skip
     return 1 if errors else 0
+
+
+def cmd_resources(args) -> int:
+    from . import resources
+
+    catalog = resources.Catalog()
+    if args.action == "refresh":
+        print(f"resources: GitHub metadata for {catalog.refresh_github()} repos")
+    elif args.action == "import":
+        added, skipped = resources.import_list(Path(args.file), catalog)
+        print(f"resources: +{added} added, {skipped} already there")
+    else:
+        for kind, items in catalog.by_kind().items():
+            print(f"{kind}: {len(items)}")
+            for r in items:
+                print(f"  {r.category:28s} {r.slug}")
+    return 0
 
 
 def cmd_fetch(args) -> int:
@@ -351,7 +373,14 @@ def cmd_weekly(args) -> int:
 
     dedupe.run(archive, cfg)  # journal versions of preprints that slipped through matching
     export.write_all(archive, cfg)
-    rels = feeds.releases(cfg, today - dt.timedelta(days=7))
+    # Releases: watched lab repos plus every model and tool in the resources catalog.
+    from . import resources
+
+    week_ago = today - dt.timedelta(days=7)
+    rels = {r["url"]: r for r in feeds.releases(cfg, week_ago)}
+    for r in resources.Catalog(archive.root).releases_since(week_ago):
+        rels.setdefault(r["url"], r)
+    rels = sorted(rels.values(), key=lambda r: r["date"], reverse=True)
     path, _ = digest.build(
         archive, cfg, since=today, today=today, releases=rels, pr_url=args.pr_url, window_start=since
     )
@@ -459,6 +488,11 @@ def main(argv: list[str] | None = None) -> int:
     p.set_defaults(fn=cmd_alerts)
 
     sub.add_parser("export", help="write README, lists/ and exports/").set_defaults(fn=cmd_export)
+
+    p = sub.add_parser("resources", help="datasets, models and software catalog")
+    p.add_argument("action", choices=["list", "refresh", "import"], help="refresh: GitHub stars/releases")
+    p.add_argument("file", nargs="?", help="import: YAML list of resources")
+    p.set_defaults(fn=cmd_resources)
 
     p = sub.add_parser("digest", help="write the digest for papers added since a date")
     p.add_argument("--since", type=_date, default=dt.date.today() - dt.timedelta(days=6))

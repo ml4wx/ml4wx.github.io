@@ -1,0 +1,29 @@
+slug: sfno
+name: SFNO (FourCastNet v2)
+kind: model
+category: global-deterministic
+description: 'Spherical Fourier Neural Operator: does the global mixing in spherical-harmonic space, which
+  respects the geometry of the sphere and keeps long autoregressive rollouts stable. Trained with NVIDIA''s
+  Makani library; the 73-channel checkpoint is on NGC.'
+provider: NVIDIA
+url: https://github.com/NVIDIA/makani
+repo: NVIDIA/makani
+paper:
+  arxiv: '2306.03838'
+  doi: ''
+license: Apache-2.0
+topics:
+- global-medium-range
+added: '2026-10-26'
+org: nvidia
+weights: https://catalog.ngc.nvidia.com/orgs/nvidia/teams/modulus/models/sfno_73ch_small
+resolution: 0.25°, 73 channels
+lead_time: 6-hourly steps
+training_data: ERA5
+open:
+- code
+- weights
+operational: false
+runs_in:
+- earth2studio
+- ai-models

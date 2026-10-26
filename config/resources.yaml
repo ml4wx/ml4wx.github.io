@@ -1,0 +1,50 @@
+# Vocabulary for resources/ (datasets, models with public code or weights, software).
+# One YAML file per resource: resources/<kind>s/<slug>.yaml. Category slugs are stable ids.
+
+kinds:
+  dataset:
+    name: Datasets
+    description: Reanalyses, climate model output, observations and ML-ready benchmarks.
+    categories:
+      reanalysis: Reanalysis
+      climate-model-output: Climate model output
+      forecast-archive: Forecast archives
+      observations-satellite: Satellite observations
+      observations-radar: Radar observations
+      observations-in-situ: In-situ observations
+      gridded-observations: Gridded observations
+      ml-benchmark: ML benchmarks & ML-ready data
+      km-scale-simulation: km-scale simulations
+      tracks-and-events: Tracks & event catalogs
+  model:
+    name: Models
+    description: ML weather and climate models with public code or weights.
+    categories:
+      global-deterministic: Global, deterministic
+      global-ensemble: Global, ensemble
+      regional: Regional
+      nowcasting: Nowcasting
+      s2s: Sub-seasonal to seasonal
+      climate-emulator: Climate emulators
+      foundation: Foundation models
+      downscaling: Downscaling
+      data-assimilation: Data assimilation
+  software:
+    name: Software
+    description: Open-source tools to get data, train and run models, evaluate and visualize.
+    categories:
+      ml-framework: ML frameworks & model runners
+      data-access: Data access & formats
+      processing: Processing
+      visualization: Visualization
+      verification: Verification & evaluation
+      nowcasting: Nowcasting
+      downscaling-bias-correction: Downscaling & bias correction
+      climate-analysis: Climate analysis
+      cloud-and-hpc: Cloud & HPC
+
+access:
+  open: Open
+  registration: Free registration
+  restricted: Restricted
+  commercial: Commercial

@@ -1,0 +1,27 @@
+slug: samudrace
+name: SamudrACE
+kind: model
+category: climate-emulator
+description: Coupled emulator that joins the ACE2 atmosphere with the Samudra 3D ocean emulator (plus
+  sea ice); it runs centuries-long stable simulations with realistic ENSO, which uncoupled emulators cannot.
+provider: Ai2 with NYU / M2LInES
+url: https://huggingface.co/allenai/SamudrACE-CM4-piControl
+repo: ai2cm/ace
+paper:
+  arxiv: '2509.12490'
+  doi: 10.1029/2025GL119340
+license: Apache-2.0
+topics:
+- climate-emulation
+added: '2026-10-26'
+org: ai2
+weights: https://huggingface.co/allenai/SamudrACE-CM4-piControl
+resolution: 1°; 8 atmosphere and 19 ocean levels
+lead_time: 6-hourly atmosphere, 5-daily ocean; centuries
+training_data: GFDL CM4 pre-industrial control simulation
+open:
+- code
+- weights
+operational: false
+runs_in:
+- earth2studio

@@ -73,6 +73,13 @@ classified when the topics are switched on.
 | 2026-09-02 | [Improving global precipitation forecasts with an AI weather model trained on satellite observations](https://arxiv.org/abs/2609.03210) | California Institute of Technology (Caltech), Google Research, Stanford University |
 | 2026-08-12 | [Long-window 4DVar for reanalysis using a differentiable weather model](https://arxiv.org/abs/2608.11515) | NSF NCAR / UCAR, NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), University of Washington |
 
+## Resources
+
+Datasets (70), models with public code or weights (45) and
+open-source tools (65), each linked to the topics where they are used:
+[on the site](https://ml4wx.github.io/resources/) · [as a list](lists/resources.md).
+GitHub stars and releases are updated every week.
+
 ## How it works
 
 1. **Every week** (Monday morning, Zurich time) a GitHub Action searches arXiv and OpenAlex for

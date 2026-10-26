@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% from "macros.html" import resource_card %}
+{% set nav = "resources" %}
+{% block title %}Resources · {{ site.title }}{% endblock %}
+{% block description %}Datasets, ML weather and climate models with public weights, and open-source tools.{% endblock %}
+{% block main %}
+<h1 class="page-title">Resources</h1>
+<p class="lede">Datasets, models with public code or weights, and open-source tools for ML in weather and
+  climate. Each one is linked to the topics where it is used. GitHub stars and releases are updated
+  every week. Missing something? <a href="https://github.com/{{ site.repo }}/issues/new?template=resource.yml">Suggest a resource</a>.</p>
+
+<nav class="res-tabs" aria-label="Kind">
+  <button type="button" data-kind="" aria-pressed="true">All <span class="n">{{ total }}</span></button>
+  {% for kind, spec in res_vocab.kinds.items() %}
+  <button type="button" data-kind="{{ kind }}" aria-pressed="false">{{ spec.name }} <span class="n">{{ by_kind.get(kind, []) | length }}</span></button>
+  {% endfor %}
+</nav>
+
+<form class="search-row res-filters" role="search" onsubmit="return false">
+  <label class="sr-only" for="rq">Search resources</label>
+  <input id="rq" type="search" placeholder="Search, e.g. ERA5, radar, Zarr, ensemble, visualization…" autocomplete="off">
+  <label class="sort">Topic
+    <select id="rtopic">
+      <option value="">All topics</option>
+      {% for t in topics.values() if t.enabled %}<option value="{{ t.slug }}">{{ t.name }}</option>{% endfor %}
+    </select>
+  </label>
+  <label class="sort">Category
+    <select id="rcat"><option value="">All categories</option></select>
+  </label>
+  <label class="sort">Sort
+    <select id="rsort"><option value="name">Name</option><option value="stars">GitHub stars</option></select>
+  </label>
+</form>
+<p id="rcount" class="muted"></p>
+
+{% for kind, spec in res_vocab.kinds.items() %}
+<section class="res-section" data-section="{{ kind }}">
+  <h2>{{ spec.name }}</h2>
+  <p class="muted">{{ spec.description }}</p>
+  <div class="grid res-grid">
+    {% for r in by_kind.get(kind, []) %}{{ resource_card(r) }}{% endfor %}
+  </div>
+</section>
+{% endfor %}
+<script type="application/json" id="rcats">{{ categories_json | safe }}</script>
+{% endblock %}
+{% block scripts %}
+<script src="/static/resources.js" defer></script>
+{% endblock %}

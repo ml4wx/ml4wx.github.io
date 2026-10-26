@@ -139,6 +139,17 @@ def write_all(archive: Archive, cfg: Config) -> list[Path]:
         )
         written.append(path)
 
+    from . import resources
+
+    catalog = resources.Catalog(root)
+    path = root / "lists" / "resources.md"
+    path.write_text(
+        e.get_template("resources.md.j2").render(
+            cfg=cfg, vocab=resources.vocabulary(), by_kind=catalog.by_kind(), github=catalog.github
+        )
+    )
+    written.append(path)
+
     (root / "exports").mkdir(exist_ok=True)
     (root / "exports" / "papers.bib").write_text(bibtex(papers))
     (root / "exports" / "papers.csv").write_text(csv_text(papers))
@@ -150,6 +161,7 @@ def write_all(archive: Archive, cfg: Config) -> list[Path]:
         groups=groups,
         topics=cfg.topics,
         highlights=[p for p in papers if p.highlight][:12],
+        resources={k: len(v) for k, v in catalog.by_kind().items()},
         orgs=cfg.org_by_slug,
     )
     (root / "README.md").write_text(readme)

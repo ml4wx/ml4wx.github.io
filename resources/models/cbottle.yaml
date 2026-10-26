@@ -1,0 +1,30 @@
+slug: cbottle
+name: cBottle (Climate in a Bottle)
+kind: model
+category: climate-emulator
+description: 'Cascaded diffusion model that generates global atmospheric states on a HEALPix grid: a coarse
+  generator conditioned on SST and solar position, then a 16x super-resolution stage to ~5 km. It can
+  also do infilling, tropical-cyclone-guided generation and downscaling.'
+provider: NVIDIA
+url: https://nvlabs.github.io/cBottle/
+repo: NVlabs/cBottle
+paper:
+  arxiv: '2505.06474'
+  doi: ''
+license: Apache-2.0
+topics:
+- climate-emulation
+- foundation-models
+- downscaling
+added: '2026-10-26'
+org: nvidia
+weights: https://huggingface.co/nvidia/cbottle
+resolution: ~5 km (HEALPix 1024) from a HEALPix 64 base
+training_data: ERA5 (1980-2017) and ICON km-scale simulations
+open:
+- code
+- weights
+license_weights: NVIDIA-Software-and-Model-Evaluation-License
+operational: false
+runs_in:
+- earth2studio

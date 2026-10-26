@@ -1,0 +1,28 @@
+slug: fuxi
+name: FuXi
+kind: model
+category: global-deterministic
+description: Cascade of three U-Transformer models, each fine-tuned for a different lead-time window (short,
+  medium, long), to reduce error accumulation over a 15-day forecast. A newer, sharper FuXi-2.1 is on
+  Hugging Face (tpys/fuxi-2.1).
+provider: Fudan University
+url: https://github.com/tpys/FuXi
+repo: tpys/FuXi
+paper:
+  arxiv: '2306.12873'
+  doi: 10.1038/s41612-023-00512-1
+topics:
+- global-medium-range
+added: '2026-10-26'
+org: fudan-university
+weights: https://doi.org/10.5281/zenodo.10401602
+resolution: 0.25°, 13 levels
+lead_time: 15 days, 6-hourly
+training_data: ERA5
+open:
+- code
+- weights
+license_weights: CC-BY-4.0
+operational: false
+runs_in:
+- earth2studio
