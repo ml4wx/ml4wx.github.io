@@ -5,10 +5,13 @@ ML for climate science questions: causal discovery, teleconnections, pattern det
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/climate-analysis-attribution/)
 
-562 papers (4 ⭐). Newest first.
+565 papers (4 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-10-21 | [Evaluation of vegetation above-ground biomass carbon from CMIP6 ESMs using global satellite-based estimates](https://doi.org/10.1088/2515-7620/aeb7c9)<br><sub>Jun Zhang, Hui Yang, Philippe Ciais et al. · Environmental Research Communications</sub> |  |  |
+| 2026-10-20 | [Disentangling forced and internal components in observed climate evolution using spatiotemporal deep learning](https://arxiv.org/abs/2610.28219)<br><sub>Parvathi Kooloth, Wenyu Zhou, L. Ruby Leung et al.</sub> |  |  |
+| 2026-10-16 | [Interpretable Machine Learning Reveals Global Nonlinear Responses of Soil Respiration to Climate](https://doi.org/10.1029/2026gl124051)<br><sub>Benjamin Laffitte, Zhihan Yang, Tao Zhou et al. · Geophysical Research Letters</sub> |  |  |
 | 2026-10-15 | [A Machine Learning Framework for Objective Definition and Projection of Meteorological Seasons: An Application to the Indian Subcontinent](https://doi.org/10.1029/2025jd045869)<br><sub>Jacopo Grassi, Elisa Palazzi, Jost von Hardenberg et al. · Journal of Geophysical Research Atmospheres</sub> |  |  |
 | 2026-10-11 | [Climate change prediction and sustainable climate risk management using a hybrid DenseNet121–MobileNet deep learning model](https://doi.org/10.1007/s13762-026-07499-1)<br><sub>A. M. Mostafa, A. Khwaldeh, A. Imran et al. · International Journal of Environmental Science and Technology</sub> |  |  |
 | 2026-10-09 | [Forest and bioenergy expansion amplifies climate warming by accelerating regional cloud loss](https://doi.org/10.5194/acp-26-14133-2026)<br><sub>Nanjian Liu, Zhixin Hao, Siyou Xia et al. · Atmospheric chemistry and physics</sub> |  |  |
@@ -574,6 +577,9 @@ ML for climate science questions: causal discovery, teleconnections, pattern det
 
 ## Also relevant
 
+- [Divergent responses of cropland GPP and SIF to compound drought and heatwave across China's climatic zones](https://doi.org/10.1016/j.ecolind.2026.115711) (2026)
+- [Declining Surface Solar Radiation Resources in Polar Regions Under Global Warming](https://doi.org/10.1029/2026gl125763) (2026)
+- [Large Projected Increase in Cloud-to-Ground Lightning Under Future Climate](https://doi.org/10.22541/essoar.15010629/v1) (2026)
 - [Deteriorating climate conditions for Australian wheat production](https://doi.org/10.31223/x5d818) (2026)
 - [SciExam for ENSO: Can AI Agents Build Climate Models?](https://arxiv.org/abs/2610.10513) (2026)
 - [Mechanistic Interpretability of Atmospheric Rivers in GraphCast](https://arxiv.org/abs/2610.07583) (2026)

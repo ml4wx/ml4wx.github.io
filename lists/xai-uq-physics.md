@@ -5,11 +5,12 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/xai-uq-physics/)
 
-192 papers (4 ⭐). Newest first.
+193 papers (4 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
-| 2026-10-20 | [Tropical Cyclone Attributes in Sparse Autoencoder Features of an AI Weather Model](https://arxiv.org/abs/2610.28904)<br><sub>Jia-Pei Liu, Rui-Dong Li, Ting Sun et al.</sub> |  |  |
+| 2026-10-21 | [Certified OOD Detection for Artificial Intelligence Climate Emulators Under Unseen Forcing Scenarios: Score Bounds and Seasonal Forecast Safety](https://doi.org/10.5281/zenodo.23545447)<br><sub>Achieng Kevin Otieno, Halima Abdille Dida · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
+| 2026-10-20 | [Tropical Cyclone Attributes in Sparse Autoencoder Features of an AI Weather Model](https://arxiv.org/abs/2610.28904)<br><sub>Jia-Pei Liu, Rui-Dong Li, Ting Sun et al.</sub> | Tsinghua University (NowcastNet) |  |
 | 2026-10-16 | [Interpretability of AI weather models via intermediate decoding](https://arxiv.org/abs/2610.24110)<br><sub>M. Beylich, K. Tempest, T. Selz et al.</sub> |  |  |
 | 2026-10-16 | [Evaluating Predictor-Corrector Dependence in Hard-Constrained Climate Emulators](https://arxiv.org/abs/2610.23561)<br><sub>Tian-Yu Zhang, Xin-Yu Wang, Zheng-Han Tai et al.</sub> |  |  |
 | 2026-10-14 | [Unmasking Compensating Errors in Numerical Weather Models: A Process-Additive Neural Network Approach](https://arxiv.org/abs/2610.19772)<br><sub>Yuiko Ichikawa, Edward Groot, Jack Atkinson</sub> | NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), University of Cambridge (Aardvark), University of Oxford |  |
@@ -205,6 +206,7 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 ## Also relevant
 
 - [From prediction to resilience: transferable and equitable AI for climate extremes in a data-unequal Anthropocene](https://doi.org/10.1016/j.cosust.2026.101734) (2026)
+- [Spatiotemporal Graph Neural Network Emulation of Regional Climate Models at Convection-Permitting Resolution: Spectral Fidelity Bounds and Downstream Flood-Exposure Equity Across West African River Basins](https://doi.org/10.5281/zenodo.23545305) (2026)
 - [Application of physically interpretable deep learning in ENSO prediction: status, challenges, and future directions](https://doi.org/10.1007/s12145-026-02273-w) (2026)
 - [Spatiotemporal coherent displacements for ensemble-based neural data assimilation](https://doi.org/10.1017/eds.2026.10058) (2026)
 - [Forest and bioenergy expansion amplifies climate warming by accelerating regional cloud loss](https://doi.org/10.5194/acp-26-14133-2026) (2026)

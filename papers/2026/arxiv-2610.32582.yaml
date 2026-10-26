@@ -1,0 +1,60 @@
+id: arxiv-2610.32582
+title: 'Batched NN 4D-Var: a performant hybrid model framework for the Integrated Forecasting System'
+authors:
+- Alban Farchi
+- Marcin Chrust
+- Massimo Bonavita
+- Marc Bocquet
+- Wei Pan
+- Patrick Laloyaux
+date: '2026-10-23'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.32582'
+links:
+  paper: https://arxiv.org/abs/2610.32582
+  pdf: https://arxiv.org/pdf/2610.32582
+orgs:
+- ecmwf
+topic: data-assimilation
+topics:
+- hybrid-parameterization
+type: model
+method:
+- other
+timescale:
+- medium
+spatial:
+- global
+data:
+- nwp-analysis
+status: research
+summary: Batched online learning of neural model-error corrections within ECMWF's IFS 4D-Var improves
+  out-of-sample hybrid forecast skill, where sequential training did not generalize.
+abstract: Hybrid forecasting systems combining machine learning and numerical weather prediction offer
+  a promising route toward improved forecast skill while preserving physical consistency. In this study,
+  we investigate online learning of state-dependent model-error corrections within the Integrated Forecasting
+  System using 4D-Var. Building on previous work, we represent model error using a neural network embedded
+  within the forecast model and trained from observations through the data assimilation cycle. First,
+  we introduce a targeted variant of neural-network 4D-Var in which only the neural-network parameters
+  are estimated, while the atmospheric state is provided by a precomputed analysis. We then propose a
+  batched extension that processes assimilation windows in random order and averages parameter increments
+  over multiple windows, drawing inspiration from mini-batch stochastic optimization. Experiments are
+  conducted with the Integrated Forecasting System of the European Centre for Medium-Range Weather Forecasts
+  at an intermediate resolution. Sequential online learning substantially improves forecasts within the
+  training period, with error reductions exceeding 10%in some cases. However, these improvements fail
+  to generalize to unseen data. In contrast, the proposed batched formulation produces hybrid models that
+  consistently improve forecast skill in out-of-sample experiments. Larger batch sizes accelerate convergence
+  and improve robustness by reducing the noise of parameter updates. Diagnostics further show that the
+  online-trained corrections preserve realistic forecast variability and do not improve skill through
+  artificial smoothing. These results demonstrate that the formulation of the online learning problem
+  is critical for generalisation and establish batched online training as a promising framework for hybrid
+  machine-learning/data-assimilation systems.
+significance: 6
+score: 59
+highlight: true
+highlight_reason: Batched online NN 4D-Var in ECMWF IFS gives hybrid model-error corrections that generalize
+  out of sample, a meaningful step for hybrid ML-NWP.
+added: '2026-10-26'
+source: weekly

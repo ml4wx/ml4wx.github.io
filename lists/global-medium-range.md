@@ -5,10 +5,12 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/global-medium-range/)
 
-306 papers (18 ⭐). Newest first.
+308 papers (18 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-10-20 | [GraphCast-Mamba: Learning Non-Markovian Corrections for Weather Forecasting](https://arxiv.org/abs/2610.28512)<br><sub>Ilya Vilkoviskiy, Liang-Hong Mo, Suozhi Huang et al.</sub> | Google Research, Princeton University |  |
+| 2026-10-18 | [UtoMe: Observation-Uncertainty-Guided Token Merging for Weather Foundation Models](https://arxiv.org/abs/2610.25001)<br><sub>Yunbei Zhang, Janet Wang, Xi Xiao et al.</sub> | ECMWF, Oak Ridge National Laboratory |  |
 | 2026-10-07 | [SoftSEEPS improves ML-based precipitation forecasting](https://arxiv.org/abs/2610.09752)<br><sub>Jost Arndt, Utku Isil, Noelia Otero et al.</sub> |  |  |
 | 2026-10-05 | [WaveGSSM: Graph Wave State Space Models for Propagating Spatio-Temporal Patterns](https://arxiv.org/abs/2610.06540)<br><sub>Junyou Zhu, Fenying Cai, Ping Xiong et al.</sub> |  |  |
 | 2026-10-04 | [FlexCast: Adaptive Weather Forecasting from Arbitrary Field Sets](https://arxiv.org/abs/2610.05296)<br><sub>Yuang Zhang, Chen Hui, Weisi Lin et al.</sub> | Nanjing University of Information Science & Technology (NUIST), Princeton University |  |
@@ -318,6 +320,7 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 
 ## Also relevant
 
+- [Pangu-Weather underestimates the 2019 European summer heatwave: A storyline comparison with ICON](https://doi.org/10.1175/jcli-d-26-0093.1) (2026)
 - [Advanced meteorological modeling framework integrating quantum computing and machine learning for hurricane track prediction beyond traditional forecasting limitations](https://doi.org/10.3389/fenvs.2026.1939822) (2026)
 - [Interpretability of AI weather models via intermediate decoding](https://arxiv.org/abs/2610.24110) (2026)
 - [DIAL: Dynamic and Informed Adjustment of the Native Stochastic Law for Reliable Weather Ensembles](https://arxiv.org/abs/2610.21639) (2026)

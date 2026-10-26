@@ -1,0 +1,51 @@
+id: doi-10.1002-qj.70331
+title: Data‐driven emulation of flow‐dependent background‐error variance in variational data assimilation
+authors:
+- Wei Pan
+- Massimo Bonavita
+- Marcin Chrust
+- Elías Valur Hólm
+date: '2026-10-21'
+year: 2026
+venue: Quarterly Journal of the Royal Meteorological Society
+venue_type: journal
+ids:
+  doi: 10.1002/qj.70331
+  openalex: W7223088012
+links:
+  paper: https://doi.org/10.1002/qj.70331
+orgs:
+- ecmwf
+topic: data-assimilation
+type: model
+method:
+- classical-ml
+spatial:
+- global
+data:
+- nwp-analysis
+status: pre-operational
+summary: ML emulates 50-member ECMWF EDA background-error variances from 5-member ensembles and runs in
+  operational cycling, matching full-ensemble analysis impact.
+abstract: Abstract Accurate representation of flow‐dependent background‐error covariance is essential
+  for modern ensemble–variational data assimilation systems, but estimating ensemble covariance from sufficiently
+  large ensembles remains computationally expensive. In this work, we propose a machine‐learning approach
+  to emulate ensemble‐derived background‐error variance fields from severely undersampled ensembles. Machine‐learning
+  models are trained to map variance estimates derived from five‐member ensembles to those obtained from
+  operational 50‐member European Centre for Medium‐Range Weather Forecasts (ECMWF) ensemble of data assimilations
+  (EDA). The trained models are deployed within a hybrid ensemble four‐dimensional variational data assimilation
+  system and evaluated over an independent three‐month period in an operational numerical weather prediction
+  environment. In these experiments, the full ensemble is retained for the non‐variance components of
+  the background‐error covariance, so the study tests machine‐learning emulation of the variance component
+  rather than finding a complete low‐cost replacement for the operational ensemble system. Results show
+  that the machine‐learning‐emulated variance fields reproduce much of the structure and analysis impact
+  of the full 50‐member variance estimate, yielding comparable observation‐space diagnostics and forecast‐error
+  characteristics for this component while using only a small fraction of the ensemble size. To our knowledge,
+  this represents the first demonstration in an operational environment of machine‐learning emulation
+  of ensemble‐derived background‐error variance statistics within a fully cycled numerical weather prediction
+  data assimilation framework.
+significance: 5
+score: 55
+highlight: false
+added: '2026-10-26'
+source: weekly

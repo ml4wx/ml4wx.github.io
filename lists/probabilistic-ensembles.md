@@ -115,6 +115,7 @@ ML models that produce ensembles or full forecast distributions: generative mode
 
 ## Also relevant
 
+- [TC-ANet 1: A temporally joint model for post-processing ensemble weather forecasts for in-situ locations and multiple target variables](https://doi.org/10.5194/egusphere-2026-3490) (2026)
 - [Beyond the record: evaluating probabilistic AI weather forecasts deep in the tail](https://arxiv.org/abs/2610.25545) (2026)
 - [Can AI Forecast the Extremes? Evaluating Probabilistic Weather Models on Tropical Cyclones](https://arxiv.org/abs/2610.22077) (2026)
 - [Spatiotemporal Conditional Diffusion with a Vision-Language Model: Spatial Quality Modeling for Adaptive Fusion of Radar Forecasts](https://doi.org/10.3390/atmos17101005) (2026)

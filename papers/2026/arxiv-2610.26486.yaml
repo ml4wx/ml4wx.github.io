@@ -1,0 +1,54 @@
+id: arxiv-2610.26486
+title: Wet-Biased Data Pipelines Mislead the Training and Evaluation of Generative Precipitation Nowcasting
+authors:
+- Christoph Metzl
+- Stefan Kapsreiter
+- Kianusch Vahid Yousefnia
+- Virginia Poli
+- Richard Müller
+- Frank Krüger
+- Tobias Bölle
+date: '2026-10-19'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.26486'
+  openalex: W7223019946
+links:
+  paper: https://arxiv.org/abs/2610.26486
+  pdf: https://arxiv.org/pdf/2610.26486
+orgs:
+- dwd
+topic: nowcasting
+topics:
+- benchmarks-data-eval
+type: evaluation
+method:
+- diffusion
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- satellite
+status: research
+summary: Shows wet-biased test sampling can reverse calibration conclusions for a satellite-to-radar diffusion
+  nowcasting model, and that matched training and test sampling hides training bias.
+abstract: Generative models for precipitation nowcasting are trained and evaluated predominantly on wet-biased
+  datasets, which over-represent precipitation events to emphasize rare extremes. Selecting test cases
+  based on target observations is known to favor forecasts that match the selected distribution rather
+  than the intended deployment distribution. We show analytically how this target-dependent sampling also
+  shifts the conditional distribution learned by generative models. When training and test sampling match,
+  even an ideal model learns precisely the distribution favored by evaluation, allowing the evaluation
+  bias to conceal the training bias. Using a fixed satellite-to-radar diffusion model, we demonstrate
+  that target-dependent test sampling can reverse the calibration assessment. The model appears under-predictive
+  on a wet-biased test set but over-predictive on a deployment-representative test set. This result is
+  replicated outside the model's training domain after a seven-year gap. Utilizing classifier-free guidance
+  as an example, we demonstrate how the contradictory calibration assessment can misdirect downstream
+  model development.
+significance: 5
+score: 55
+highlight: false
+added: '2026-10-26'
+source: weekly

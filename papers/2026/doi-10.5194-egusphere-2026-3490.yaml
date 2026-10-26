@@ -1,0 +1,52 @@
+id: doi-10.5194-egusphere-2026-3490
+title: 'TC-ANet 1: A temporally joint model for post-processing ensemble weather forecasts for in-situ
+  locations and multiple target variables'
+authors:
+- Peter Mlakar
+- Jana Faganeli Pucer
+date: '2026-10-19'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.5194/egusphere-2026-3490
+  openalex: W7222972052
+links:
+  paper: https://doi.org/10.5194/egusphere-2026-3490
+  pdf: https://egusphere.copernicus.org/preprints/2026/egusphere-2026-3490/egusphere-2026-3490.pdf
+topic: post-processing
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+- classical-ml
+timescale:
+- medium
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Combines normalizing spline flows and flow matching to jointly post-process temperature, precipitation
+  and gusts at in-situ sites on EUPPBench, rivaling state-of-the-art methods.
+abstract: 'Abstract. Ensemble forecast post-processing techniques are often applied to improve the reliability
+  of the weather forecast. These methods issue a future predictive distribution which is better calibrated
+  and as sharp as possible. While the field of forecast post-processing has been rapidly advancing, especially
+  with the advent of machine learning, many challenges remain: post-processing models often assume the
+  target distribution or require specialised distributions for each target variable, they require separate
+  models for each lead time or location, and frequently forgo the explicit modelling of the temporal correlation
+  structure in the target variable. In this work, we aim to address the outlined shortcomings by proposing
+  a novel post-processing method which combines normalising spline flows and flow matching. This combination
+  allows us to efficiently estimate marginal distributions and generate temporally correlated post-processed
+  forecasts, useful for downstream applications. We evaluate our model on the openly available EUPPBench
+  dataset, post-processing three target weather variables: temperature, precipitation, and wind gusts.
+  Our method achieves competitive results for both marginal and joint distribution post-processing for
+  all considered weather variables, rivalling current state-of-the-art techniques. Furthermore, we show
+  that our joint lead-time post-processing approach extends its performance margin in a predictor-limited
+  environment compared to per-lead-time methods.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-10-26'
+source: weekly

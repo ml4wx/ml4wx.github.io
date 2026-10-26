@@ -1,0 +1,55 @@
+id: arxiv-2610.30940
+title: Vision Transformers for Estimating Irradiance Using Data Scarce Sky Images
+authors:
+- David Hamlyn
+- Sunny Chaudhary
+- Tasmiat Rahman
+date: '2026-10-22'
+year: 2026
+venue: Energy and AI 21 (2025), 100560
+venue_type: journal
+ids:
+  arxiv: '2610.30940'
+  doi: 10.1016/j.egyai.2025.100560
+links:
+  paper: https://arxiv.org/abs/2610.30940
+  pdf: https://arxiv.org/pdf/2610.30940
+topic: observations-remote-sensing
+topics:
+- applications-impacts
+type: model
+method:
+- transformer
+- cnn
+spatial:
+- local
+data:
+- other
+- stations
+status: research
+summary: Dual-branch vision transformers estimate diffuse horizontal irradiance from fisheye sky images
+  in data-scarce settings, within 1-6 W/m² of a full-data ViT.
+abstract: Accurate estimation of diffuse horizontal irradiance (DHI) is critical for optimising photovoltaic
+  system performance and energy forecasting yet remains challenging in regions lacking comprehensive ground-based
+  instrumentation. Recent advancements using Vision Transformers (ViTs) trained on extensive sky image
+  datasets have shown promise in replacing costly irradiance measurement equipment, but the scarcity of
+  long-term, high-quality sky imagery significantly restricts practical implementation. Addressing this
+  critical gap, this study proposes a novel dual-framework approach designed for data-scarce scenarios.
+  First, calculated atmospheric parameters, including extraterrestrial irradiance and cyclic time encodings,
+  are integrated to represent sky conditions without utilising any instrumentation. Next, a sequential
+  pipeline initially predicts synthetic global horizontal irradiance (GHI) and uses it as a feature, to
+  refine DHI estimation. Finally, a dual-parallel architecture simultaneously processes raw and overlay-enhanced
+  fisheye sky images. Overlays are generated through unsupervised, physics-informed cloud segmentation
+  to highlight dynamic sky features. Empirical validation is performed using data from the Chilbolton
+  Observatory, chosen for its temperate climate and frequent cloud variability. To simulate data-scarce
+  conditions, models are trained on a single month (e.g., January) and evaluated across a temporally disjoint,
+  full-year test set. Under this setup, the sequential and dual-parallel frameworks achieve RMSE values
+  within 2-3 W/m^2 and 1-6 W/m^2, respectively, of a state-of-the-art ViT trained on the complete dataset.
+  By combining physics-informed modelling with unsupervised segmentation, the proposed method provides
+  a scalable and cost-effective solution for DHI estimation, advancing solar resource assessment in data-constrained
+  environments.
+significance: 2
+score: 8
+highlight: false
+added: '2026-10-26'
+source: weekly

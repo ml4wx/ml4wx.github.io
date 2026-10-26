@@ -5,12 +5,17 @@ Prediction and detection of extremes: tropical cyclones, heatwaves, heavy rain, 
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/extremes-hazards/)
 
-1366 papers (10 ⭐). Newest first.
+1371 papers (10 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
 | 2026-12-01 | [From prediction to resilience: transferable and equitable AI for climate extremes in a data-unequal Anthropocene](https://doi.org/10.1016/j.cosust.2026.101734)<br><sub>Sevim Gökalp, Cavit Yeşilyurt · Current Opinion in Environmental Sustainability</sub> |  |  |
+| 2026-10-21 | [Pangu-Weather underestimates the 2019 European summer heatwave: A storyline comparison with ICON](https://doi.org/10.1175/jcli-d-26-0093.1)<br><sub>Prabhakar Namdev, Antonio Sánchez Benítez, Charlotte Debus et al. · Journal of Climate</sub> | Karlsruhe Institute of Technology (KIT) |  |
+| 2026-10-21 | [Future Changes in Early-Season Severe Weather: A Comparison of Machine Learning and Convection-Permitting Dynamical Downscaling](https://doi.org/10.1175/aies-d-25-0122.1)<br><sub>Nathan Erickson, Christina M. Patricola · Artificial Intelligence for the Earth Systems</sub> | Lawrence Berkeley National Laboratory / NERSC |  |
+| 2026-10-21 | [Detection of East Asian Atmospheric Rivers Based on Physically Constrained Dual‐Threshold Methods and Deep Learning Algorithms](https://doi.org/10.1029/2026jd047067)<br><sub>Wenhao Li, keyi Wu, C. K. Shum et al. · Journal of Geophysical Research Atmospheres</sub> |  |  |
 | 2026-10-19 | [Advanced meteorological modeling framework integrating quantum computing and machine learning for hurricane track prediction beyond traditional forecasting limitations](https://doi.org/10.3389/fenvs.2026.1939822)<br><sub>Yun-Jia Hu · Frontiers in Environmental Science</sub> | Met Office |  |
+| 2026-10-17 | [Large Projected Increase in Cloud-to-Ground Lightning Under Future Climate](https://doi.org/10.22541/essoar.15010629/v1)<br><sub>Andreas Krause, Konstantin Gregor, Yuquan Qu et al.</sub> | Technical University of Munich (TUM) |  |
+| 2026-10-16 | [Accelerating Wildfire Hazard Mapping Across Canada with an AI Surrogate Modelling Framework](https://arxiv.org/abs/2610.30170)<br><sub>Hager Radi Abdelwahed, Toluwaleke Olutayo, Chirag Goel et al.</sub> | Environment and Climate Change Canada (ECCC) |  |
 | 2026-10-15 | [Can AI Forecast the Extremes? Evaluating Probabilistic Weather Models on Tropical Cyclones](https://arxiv.org/abs/2610.22077)<br><sub>Nathan Chalumeau, Xavier Renard, Remi Meynadier et al.</sub> | Inria |  |
 | 2026-10-14 | [Advancing Global Short-Term Wildfire Forecasting with Wildfire-Specific Spatiotemporal Deep Learning](https://doi.org/10.1021/acsestair.6c00313)<br><sub>Tong Wu, Zhi-Jiong Huang, Jia-Shu Ye et al. · ACS ES&T Air</sub> |  |  |
 | 2026-10-14 | [Probabilistic AI models outperform numerical weather prediction models on record breaking heat extremes](https://arxiv.org/abs/2610.20519)<br><sub>Jakob Benjamin Wessel, Fiona Spuler, Christopher A. T. Ferro et al.</sub> |  |  |
@@ -1378,9 +1383,15 @@ Prediction and detection of extremes: tropical cyclones, heatwaves, heavy rain, 
 
 ## Also relevant
 
+- [Physics-informed neural networks for downscaling convective-permitting rainfall extremes under sparse radiosonde initialization: a climate-analytics evaluation of tail-index distortion in dam-safety analytics](https://doi.org/10.5281/zenodo.23606783) (2026)
+- [Leveraging Machine Learning and Climate Phase Analysis to Enhance Seasonal Forecasts of Cold Extremes](https://doi.org/10.1088/2515-7620/aeb8ea) (2026)
+- [Interpretable Machine-Learning Warning of Tropical-Cyclone-Induced Port Service Disruption Using Automatic Identification System and Forecast Advisories](https://doi.org/10.1177/03611981261491700) (2026)
+- [Physics-Informed Neural Network Emulation of Convective Storm Initiation over the Sahel: Calibration Bounds and Warning-Lead-Time Equity for Climate Analytics](https://doi.org/10.5281/zenodo.23545314) (2026)
+- [Investigating the Use of Geostationary Satellites to Identify Thunderstorm Initiation with the LightningCast and ThunderCast Machine Learning Models](https://doi.org/10.1175/waf-d-25-0250.1) (2026)
 - [Identification of Atmospheric Dynamics of a Tropical Hail Event and Application of Radar Reflectivity Nowcasting Using a UNet-ConvLSTM2D Deep Learning Model](https://doi.org/10.26877/lpt.v5i3.1087) (2026)
 - [Spatio-temporal precipitation downscaling at hourly resolution based on km-scale regional simulations](https://arxiv.org/abs/2610.26145) (2026)
 - [Beyond the record: evaluating probabilistic AI weather forecasts deep in the tail](https://arxiv.org/abs/2610.25545) (2026)
+- [A Simple Climatology Benchmark Outperforms Machine-Learning Lightning Parameterizations](https://doi.org/10.22541/essoar.15010630/v1) (2026)
 - [Digital Typhoon Dataset V3: Benchmarking for Multi-spectral Extension and Analyzing Systematic Bias in Intensity Regression](https://arxiv.org/abs/2610.21654) (2026)
 - [Forecast lead time and the timing of crew deployment for weather-driven power outages using AI weather models](https://arxiv.org/abs/2610.20918) (2026)
 - [PrecipCorrDiff: A Deep Learning Framework for Generating 0.0625$^\circ$ High-Resolution IMD Gridded Precipitation Data](https://arxiv.org/abs/2610.19994) (2026)

@@ -5,10 +5,16 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/applications-impacts/)
 
-828 papers (1 ⭐). Newest first.
+834 papers (1 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-10-23 | [Projected Global Mortality and Economic Burden from Wildfire Smoke under Climate Change](https://doi.org/10.1021/ehp.6c00085)<br><sub>Wenhua Yu, Zhikang Wang, Rongbin Xu et al. · Environmental Health Perspectives</sub> | Nanjing University of Information Science & Technology (NUIST) |  |
+| 2026-10-22 | [Interpretable Machine-Learning Warning of Tropical-Cyclone-Induced Port Service Disruption Using Automatic Identification System and Forecast Advisories](https://doi.org/10.1177/03611981261491700)<br><sub>Rong Rong, Yuncheng Shen, Yongcui Wang · Transportation Research Record Journal of the Transportation Research Board</sub> |  |  |
+| 2026-10-19 | [Divergent responses of cropland GPP and SIF to compound drought and heatwave across China's climatic zones](https://doi.org/10.1016/j.ecolind.2026.115711)<br><sub>Kefan Yi, Haixia Lin, Tehseen Javed et al. · Ecological Indicators</sub> |  |  |
+| 2026-10-18 | [Multi-site Learning for Forecasting Day-Ahead Wind-Power Production for Onshore Wind Farms in Great Britain with Deep Neural Networks](https://arxiv.org/abs/2610.25370)<br><sub>James Kean, Aidan O'Sullivan</sub> |  |  |
+| 2026-10-17 | [Integrating Agrometeorology, Agronomy and Artificial Intelligence for Climate-Resilient Sustainable Food Production: A Critical Narrative Review](https://doi.org/10.9734/jeai/2026/v48i114583)<br><sub>Vindya Sabbineni, Venkata Ramana Rao Puram, Sandeep Chadalavada et al. · Journal of Experimental Agriculture International</sub> |  |  |
+| 2026-10-16 | [Leveraging satellite products and machine learning/deep learning models for the upgrading of agro-advisory systems in India: A bibliometric and systematic narrative review](https://doi.org/10.14719/pst.16505)<br><sub>Fawaz Parapurath, S. Kokilavani, Ga Dheebakaran et al. · Plant Science Today</sub> |  |  |
 | 2026-10-14 | [Deteriorating climate conditions for Australian wheat production](https://doi.org/10.31223/x5d818)<br><sub>Matthew O. Grant, Elisabeth Vogel, Anna Ukkola et al.</sub> | Met Office |  |
 | 2026-10-14 | [Forecast lead time and the timing of crew deployment for weather-driven power outages using AI weather models](https://arxiv.org/abs/2610.20918)<br><sub>Mohammad Kian Golkar, Luciano Alves de Oliveira, Mohamad Alipour</sub> |  |  |
 | 2026-10-13 | [Electrostatic and Surfactant-Enhanced Cellulose Nanocrystal Cloud Seeding With Machine Learning-Based Spatiotemporal Targeting](https://doi.org/10.5281/zenodo.23340953)<br><sub>Aahan Sachdeva · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
@@ -840,6 +846,8 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 
 ## Also relevant
 
+- [Vision Transformers for Estimating Irradiance Using Data Scarce Sky Images](https://arxiv.org/abs/2610.30940) (2026)
+- [Accelerating Wildfire Hazard Mapping Across Canada with an AI Surrogate Modelling Framework](https://arxiv.org/abs/2610.30170) (2026)
 - [PING: physics informed graph neural network for advection-diffusion processes with applications to solar power forecasting](https://arxiv.org/abs/2610.18280) (2026)
 - [Unlocking wind energy potential in data-scarce regions: a deep learning framework for strategic climate action in Vietnam’s Central Highlands](https://doi.org/10.1108/ijccsm-09-2025-0332) (2026)
 - [GIS-Integrated Machine Learning for Wildfire Susceptibility Mapping Under Temperature Increase Scenarios: A Bayesian-Optimized ANN Approach](https://doi.org/10.3390/ijgi15100456) (2026)

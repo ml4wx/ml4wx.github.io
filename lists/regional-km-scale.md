@@ -5,10 +5,11 @@ Limited-area and regional ML weather models, convection-permitting and km-scale 
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/regional-km-scale/)
 
-84 papers (6 ⭐). Newest first.
+85 papers (6 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-10-21 | [Spatiotemporal Graph Neural Network Emulation of Regional Climate Models at Convection-Permitting Resolution: Spectral Fidelity Bounds and Downstream Flood-Exposure Equity Across West African River Basins](https://doi.org/10.5281/zenodo.23545305)<br><sub>Nourhan Ahmed Fathy El-Sayed, Karim Mostafa Abdel-Rahman, Salma Ahmed El-Badry · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
 | 2026-10-08 | [Learning Kilometer-Scale Weather Prediction with Global-Regional Alignment](https://arxiv.org/abs/2610.12401)<br><sub>Guowen Li, Yang Liu, Yujie Wang et al.</sub> |  |  |
 | 2026-10-08 | [Event-Aware Spatiotemporal Precipitation Forecasting with Geographic Context and Physics-Guided Regularization](https://arxiv.org/abs/2610.11211)<br><sub>Yiping Hong, Xinyu Wang, Sameh Abdulah</sub> |  |  |
 | 2026-10-04 | [Shaping the Wind: Nested Potentials for Kinematically Admissible Urban Wind Prediction](https://arxiv.org/abs/2610.07033)<br><sub>Yidi Wang, Yunhe Zhang, Jiawei Gu et al.</sub> |  |  |

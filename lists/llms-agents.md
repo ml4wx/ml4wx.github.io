@@ -5,10 +5,11 @@ Language models and agents for weather and climate science: QA, data analysis, m
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/llms-agents/)
 
-87 papers (0 ⭐). Newest first.
+88 papers (0 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-10-23 | [Ontology-Guided Knowledge Graph Construction from Structured Metadata and Climate Science Publications](https://arxiv.org/abs/2610.32725)<br><sub>Aayush Acharya, Qi Zhang, Eduard Dragut et al.</sub> |  | [code](https://github.com/aayushacharya/climatekg) |
 | 2026-10-19 | [Zephyrus-R1: Agentic Reinforcement Learning for Weather Reporting](https://arxiv.org/abs/2610.25625)<br><sub>Feng-Fei Yu, Marshall Fisher, Isadora White et al.</sub> |  |  |
 | 2026-10-10 | [EarthAlign: Learning Language-Aligned Representations of Earth System Data](https://arxiv.org/abs/2610.14624)<br><sub>Fadillah Adamsyah Maani, Numan Saeed, Jiaqi Ma et al.</sub> |  | [code](https://github.com/mbzuai-oryx/EarthAlign) |
 | 2026-10-07 | [SciExam for ENSO: Can AI Agents Build Climate Models?](https://arxiv.org/abs/2610.10513)<br><sub>Yinling Zhang, Langchen Liu, Dongbin Xiu et al.</sub> | Princeton University, Stanford University | [code](https://github.com/ylzhang2447/SciExam-ENSO-code) |

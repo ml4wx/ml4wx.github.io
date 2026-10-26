@@ -1,0 +1,49 @@
+id: doi-10.5281-zenodo.23545447
+title: 'Certified OOD Detection for Artificial Intelligence Climate Emulators Under Unseen Forcing Scenarios:
+  Score Bounds and Seasonal Forecast Safety'
+authors:
+- Achieng Kevin Otieno
+- Halima Abdille Dida
+date: '2026-10-21'
+year: 2026
+venue: Zenodo (CERN European Organization for Nuclear Research)
+venue_type: preprint
+ids:
+  doi: 10.5281/zenodo.23545447
+  openalex: W7223089597
+links:
+  paper: https://doi.org/10.5281/zenodo.23545447
+topic: xai-uq-physics
+topics:
+- climate-emulation
+type: model
+method:
+- other
+timescale:
+- seasonal
+spatial:
+- local
+data:
+- era5
+status: research
+summary: Certified out-of-distribution detector for neural climate emulators using a latent-space score
+  and conformal calibration, with bounds on silent acceptance under unseen forcings.
+abstract: Neural climate emulators are increasingly used to produce seasonal forecasts, yet their reliability
+  collapses when forced by radiative or land-surface conditions outside the training distribution. The
+  framework combines a Mahalanobis-style score in a learned latent space with a conformal calibration
+  layer, producing a certified threshold that controls the probability of silently accepting an OOD input.
+  We derive high-probability bounds on the score gap between in-distribution and OOD regimes, and show
+  that the certified threshold is achievable with a calibration sample whose size scales logarithmically
+  in the confidence level. The framework is illustrated on a reanalysis-derived temperature series for
+  Nairobi, Kenya (2000–2023, 312 monthly observations, mean 20.146 °C, warming trend 0.2477 °C per decade),
+  where the emulator's latent score exhibits a clear separation between historical and perturbed forcing
+  regimes. The certified detector attains a bounded false-negative rate under a range of computed forcing
+  perturbations while preserving in-distribution coverage. The analysis clarifies when OOD certification
+  is feasible for climate emulators and when it is not, and it identifies the calibration budget as the
+  binding constraint on seasonal forecast safety.
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-10-26'
+source: weekly

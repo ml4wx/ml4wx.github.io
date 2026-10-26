@@ -5,10 +5,13 @@ ML forecasts for a point, station, city or small area, mostly from observed time
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/local-forecasting/)
 
-1143 papers (0 ⭐). Newest first.
+1146 papers (0 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-10-23 | [INTELLIGENT WEATHER PREDICTION SYSTEM USING MACHINE LEARNING AND ARTIFICIAL INTELLIGENCE](https://doi.org/10.5281/zenodo.23586598)<br><sub>Indhuprakash M, Gokul R, Harishragavendra M et al. · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
+| 2026-10-21 | [Probabilistic Machine Learning for Short-Term Atmospheric Seeing Forecasting](https://arxiv.org/abs/2610.29654)<br><sub>Mary-Joe Medlej, Rahul Srinivasan, Simon Prunet et al. · Proc. of SPIE Vol. 14152, 141520J (2026)</sub> |  |  |
+| 2026-10-16 | [COMPARATIVE EVALUATION OF MACHINE LEARNING AND DEEP LEARNING MODELS FOR WEATHER PREDICTION IN NIGERIA USING SPATIAL ANALYSIS](https://doi.org/10.70382/caijmasr.v13i9.056)<br><sub>Oladoyin Idris Atolagbe, Tayo Peter Ogundunmade · International Journal of Modeling and Applied Science Research</sub> |  |  |
 | 2026-10-12 | [A Model for Weather Prediction Using Hybrid Machine Learning Algorithms](https://doi.org/10.56201/ijcsmt.vol.11.no11.2025.pg91.104)<br><sub>Justice. Ordu · INTERNATIONAL JOURNAL OF COMPUTER SCIENCE AND MATHEMATICAL THEORY E-ISSN</sub> |  |  |
 | 2026-10-09 | [Comparison of data-driven and numerical weather prediction models for rainfall nowcasting in major cities of Bangladesh](https://doi.org/10.1371/journal.pclm.0001088)<br><sub>Sumia Akter, Jayeef Rahman Muaz, Rabiul Awal · PLOS Climate</sub> |  |  |
 | 2026-10-07 | [WxFM-XL: Adapting Univariate Foundation Models to Multi-Station Weather Forecasting](https://arxiv.org/abs/2610.10057)<br><sub>Xiao Wang, Changjian Chen, Zhuo Tang et al.</sub> |  |  |

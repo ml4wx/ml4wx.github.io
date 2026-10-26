@@ -5,11 +5,14 @@ ML for data assimilation and state estimation, learned observation operators, an
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/data-assimilation/)
 
-249 papers (14 ⭐). Newest first.
+252 papers (15 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
-| 2026-10-20 | [Observation Assimilation Transformer: Probabilistic Weather Analysis from Sparse Station Observations](https://arxiv.org/abs/2610.28327)<br><sub>Christian Donner, Michele Cattaneo, M. Samarin et al.</sub> |  |  |
+| 2026-10-23 | ⭐ [Batched NN 4D-Var: a performant hybrid model framework for the Integrated Forecasting System](https://arxiv.org/abs/2610.32582)<br><sub>Alban Farchi, Marcin Chrust, Massimo Bonavita et al.</sub> | ECMWF |  |
+| 2026-10-23 | [Covariance-Informed Ensemble Score Filtering: Embedding Localized Covariance Geometry into Score-Based Transport](https://arxiv.org/abs/2610.32148)<br><sub>Siming Liang, Peter Jan van Leeuwen, Hristo G. Chipilski et al.</sub> | Oak Ridge National Laboratory, Colorado State University (incl. CIRA) |  |
+| 2026-10-21 | [Data‐driven emulation of flow‐dependent background‐error variance in variational data assimilation](https://doi.org/10.1002/qj.70331)<br><sub>Wei Pan, Massimo Bonavita, Marcin Chrust et al. · Quarterly Journal of the Royal Meteorological Society</sub> | ECMWF |  |
+| 2026-10-20 | [Observation Assimilation Transformer: Probabilistic Weather Analysis from Sparse Station Observations](https://arxiv.org/abs/2610.28327)<br><sub>Christian Donner, Michele Cattaneo, M. Samarin et al.</sub> | ETH Zurich, MeteoSwiss, Swiss Data Science Center (SDSC) |  |
 | 2026-10-16 | [Spatiotemporal coherent displacements for ensemble-based neural data assimilation](https://doi.org/10.1017/eds.2026.10058)<br><sub>S. Roy, R. Fablet · Environmental Data Science</sub> |  |  |
 | 2026-10-12 | [Accounting for model error in ensemble variational data assimilation through learned generative dynamics](https://arxiv.org/abs/2610.17333)<br><sub>Marc Bocquet, Tobias S. Finn, Sibo Cheng</sub> |  |  |
 | 2026-10-10 | [WeatherBridge: Forecast-Aware Multi-Source Input Adaptation for Pretrained Weather Forecasting Models](https://arxiv.org/abs/2610.14863)<br><sub>Mutian Xi, Xinyu Su, Xiaohui Zhong et al.</sub> | Fudan University (FuXi) |  |
@@ -261,6 +264,7 @@ ML for data assimilation and state estimation, learned observation operators, an
 
 ## Also relevant
 
+- [UDL-RT: A unified differentiable all-sky microwave radiative transfer model with learnable parameterizations](https://arxiv.org/abs/2610.24627) (2026)
 - [Diffusion‐Based Reconstruction of Western North Pacific Surface Winds From CYGNSS for Tropical Cyclone Analysis](https://doi.org/10.1029/2026ms005911) (2026)
 - [WeatherNext 3: Increasing resolution and performance of global weather models with raw observations](https://arxiv.org/abs/2609.03582) (2026)
 - [Uncertainty-Aware End-to-End AI Weather Forecasting: Disentangling Observation and Model Contributions](https://arxiv.org/abs/2608.30795) (2026)
