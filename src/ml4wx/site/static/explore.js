@@ -10,6 +10,8 @@ const FACETS = [
   ["timescale", "Time scale"],
   ["type", "Paper type"],
   ["venue", "Venue"],
+  ["data", "Training data"],
+  ["domain", "Domain"],
   ["open", "Open"],
 ];
 const PAGE = 20;
@@ -104,10 +106,23 @@ async function showMore() {
 }
 
 // --- search ------------------------------------------------------------------
+// Datasets, models and tools whose name matches the query are shown above the papers.
+const resIndex = fetch("/data/resources-index.json").then((r) => r.json()).catch(() => []);
+const resEl = $("#resmatch");
+async function showResources(term) {
+  const words = (term || "").toLowerCase().split(/\s+/).filter((w) => w.length > 1);
+  const items = !words.length ? [] : (await resIndex).filter((r) =>
+    words.some((w) => r.key.split(" ").some((k) => k.startsWith(w) || (w.length > 3 && k.includes(w)))));
+  resEl.hidden = !items.length;
+  resEl.innerHTML = items.length ? `<b>Datasets, models &amp; tools:</b> ` + items.slice(0, 8).map((r) =>
+    `<a href="${esc(r.url)}">${esc(r.name)} <span class="muted">${esc(r.kind)}</span></a>`).join("") : "";
+}
+
 async function run() {
   const id = ++runId;
   writeUrl();
   const term = qInput.value.trim() || null;
+  showResources(term);
   const filters = { kind: "paper" };
   for (const [k] of FACETS) if (selected[k].size) filters[k] = { any: [...selected[k]] };
   const sort = sortSel.value === "relevance" && term ? undefined : { [sortSel.value === "score" ? "score" : "date"]: "desc" };

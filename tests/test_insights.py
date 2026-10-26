@@ -1,0 +1,69 @@
+import datetime as dt
+
+from conftest import make_paper
+
+from ml4wx import insights
+from ml4wx.config import load
+from ml4wx.models import Ids, Links
+from ml4wx.site import charts
+from ml4wx.store import Archive
+
+TODAY = dt.date(2026, 10, 26)
+
+
+def _papers():
+    ps = []
+    for i in range(30):  # 20 in the last 12 months, 10 in the 12 months before
+        d = TODAY - dt.timedelta(days=30 + 10 * i) if i < 20 else TODAY - dt.timedelta(days=400 + 5 * i)
+        ps.append(make_paper(id=f"arxiv-2501.{i:05d}", ids=Ids(arxiv=f"2501.{i:05d}"), date=d, year=d.year,
+                             title=f"Diffusion ensemble paper {i}", method=["diffusion"] if i % 2 else ["cnn"],
+                             links=Links(code="https://github.com/x/y") if i < 6 else Links(),
+                             cited_by=i, type="review" if i == 3 else "model", highlight=i == 5))  # fmt: skip
+    return ps
+
+
+def test_topic_stats_growth_and_lists():
+    st = insights.topic_stats(_papers(), TODAY)["global-medium-range"]
+    assert (st.total, st.last12, st.prev12) == (30, 20, 10) and st.growth == 100
+    assert [p.id for p in st.start_here] == ["arxiv-2501.00003"]
+    assert st.most_cited_recent[0].cited_by == 19 and st.key_papers[0].id == "arxiv-2501.00005"
+    assert st.per_year[2018] == 0 and st.per_year[2026] > 0
+
+
+def test_trends_and_related():
+    tr = insights.trends(_papers(), TODAY)
+    assert tr.last12 == 20 and tr.prev12 == 10
+    assert round(sum(tr.method_share["diffusion"][y] * tr.per_year[y] for y in tr.years) / 100) == 15
+    radar = make_paper(id="arxiv-2502.00001", ids=Ids(arxiv="2502.00001"),
+                       title="Radar nowcasting with optical flow", summary="Radar echoes extrapolated.")
+    ps = _papers() + [radar]
+    rel = insights.related(ps)
+    assert "arxiv-2502.00001" not in rel["arxiv-2501.00001"]  # unrelated text is not "related"
+    assert rel["arxiv-2501.00001"] and "arxiv-2501.00001" not in rel["arxiv-2501.00001"]
+
+
+def test_charts_render():
+    svg = charts.columns([("2025", 10), ("2026", 4)], partial_last=True, label="x")
+    assert svg.startswith("<svg") and "viz-bar partial" in svg and "2026: 4 (so far)" in svg
+    assert "<title>A: 50%</title>" in charts.hbars([("A", 50, None)], unit="%")
+    assert "viz-line" in charts.mini_line({2024: 1, 2025: 3}, ymax=5) and "viz-dot" in charts.sparkline([1, 2, 3])
+    assert charts.nice_ticks(23) == [0, 10, 20, 30]
+
+
+def test_new_pages_build(root):
+    from ml4wx.site.build import build
+
+    a = Archive()
+    for p in _papers():
+        a.save_paper(p)
+    build(a, load(), root / "_site", index=False)
+    site = root / "_site"
+    trends = (site / "trends" / "index.html").read_text()
+    assert "Which methods papers use" in trends and "<svg class='viz" in trends and "Table view" in trends
+    topic = (site / "topics" / "global-medium-range" / "index.html").read_text()
+    assert "Start here" in topic and "Most cited, last 12 months" in topic and "+100%" in topic
+    assert (site / "topics" / "global-medium-range" / "feed.xml").read_text().startswith("<?xml")
+    paper = (site / "papers" / "arxiv-2501.00001" / "index.html").read_text()
+    assert "Copy BibTeX" in paper and "@misc{" in paper and "Related papers" in paper
+    assert (site / "models" / "compare" / "index.html").exists()
+    assert "Fastest-growing topics" in (site / "index.html").read_text()

@@ -59,6 +59,11 @@ jobs:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
         run: uv run ml4wx enrich --days 35 --missing-orgs
 
+      - name: Citation counts of the last two years (for "most cited" lists and trends)
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+        run: uv run ml4wx citations --years 2
+
       - name: GitHub stars, releases and paper citations of datasets, models and tools
         env:
           GITHUB_TOKEN: ${{ github.token }}

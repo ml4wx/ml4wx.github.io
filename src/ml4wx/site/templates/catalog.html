@@ -57,6 +57,9 @@
 <p class="lede">{{ pg.intro }} Most used first.
   Missing one? <a href="https://github.com/{{ site.repo }}/issues/new?template=resource.yml">Suggest it</a>.</p>
 
+{% if pg.kind == "model" %}
+<p class="actions"><a class="btn" href="/models/compare/">Compare all {{ pg.rows | length }} models in one table →</a></p>
+{% endif %}
 {% if pg.popular %}
 <p class="quick"><b>Popular:</b>
   {% for x in pg.popular %}<a href="#{{ x.r.slug }}">{{ x.r.name }}</a>{% endfor %}

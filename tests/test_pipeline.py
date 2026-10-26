@@ -109,3 +109,13 @@ def test_alert_issue_mentions_notify_users(root):
 
     _, body = alerts.paper_issue(make_paper(highlight=True, highlight_reason="Big."), load())
     assert "cc @salmanmohebi" in body and "<!-- ml4wx:id=arxiv-2212.12794 -->" in body
+
+
+def test_openalex_html_entities_are_decoded():
+    from ml4wx.sources import openalex
+
+    source = {"display_name": "Communications Earth &amp; Environment", "type": "journal"}
+    w = {"id": "https://openalex.org/W1", "title": "Rain &amp; snow", "publication_date": "2025-01-02",
+         "primary_location": {"source": source}}
+    c = openalex.parse_work(w, "test")
+    assert c.title == "Rain & snow" and c.venue == "Communications Earth & Environment"

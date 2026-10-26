@@ -6,6 +6,7 @@ With a key the limit is 1 request per second; without one, a busy shared pool.
 from __future__ import annotations
 
 import datetime as dt
+import html
 import logging
 import os
 from collections.abc import Iterator
@@ -52,13 +53,14 @@ def parse_paper(p: dict, source: str) -> Candidate | None:
     pv = p.get("publicationVenue") or {}
     vtype = {"journal": "journal", "conference": "conference"}.get(pv.get("type") or "", "")
     venue = (p.get("journal") or {}).get("name") or pv.get("name") or p.get("venue") or None
+    venue = html.unescape(venue) if venue else None
     if not vtype:
         vtype = "preprint" if arxiv and (not venue or "arxiv" in venue.lower()) else "other"
     if vtype == "preprint":
         venue = None
     return Candidate(
         ids=Ids(arxiv=arxiv, doi=doi),
-        title=" ".join(p["title"].split()),
+        title=" ".join(html.unescape(p["title"]).split()),
         authors=[a.get("name") or "" for a in p.get("authors") or []],
         date=dt.date.fromisoformat(date),
         abstract=p.get("abstract"),

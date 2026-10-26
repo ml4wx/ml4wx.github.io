@@ -3,48 +3,73 @@
 {% set nav = "topics" %}
 {% block title %}{{ topic.name }} · {{ site.title }}{% endblock %}
 {% block description %}{{ topic.description }}{% endblock %}
+{% block head %}<link rel="alternate" type="application/rss+xml" title="ML4WX: {{ topic.name }}" href="/topics/{{ topic.slug }}/feed.xml">{% endblock %}
+
+{% macro mini(p) %}
+<li><a href="/papers/{{ p.id }}/">{{ p.title }}</a>
+  <span class="muted">· {{ p.authors | authors_short(1) }} · {{ p.year }}{% if p.venue %} · {{ p.venue }}{% endif %}{% if p.cited_by %} · {{ "{:,}".format(p.cited_by) }} citations{% endif %}</span></li>
+{% endmacro %}
+
 {% block main %}
 <p class="crumbs"><a href="/topics/">Topics</a></p>
 <h1 class="page-title">{{ topic.name }}</h1>
 <p class="lede">{{ topic.description }}</p>
+
+<div class="tiles">
+  <div class="tile"><span class="tile-label">Papers</span><span class="tile-value">{{ "{:,}".format(st.total) }}</span>
+    <span class="tile-delta">since {{ st.per_year | first }}{% if also %}, plus {{ also | length }} as a side topic{% endif %}</span></div>
+  <div class="tile"><span class="tile-label">Last 12 months</span><span class="tile-value">{{ st.last12 }}</span>
+    {% if st.growth is not none %}<span class="tile-delta {{ 'up' if st.growth >= 0 else 'down' }}">{{ "%+.0f" % st.growth }}% vs the 12 months before</span>{% endif %}</div>
+  <div class="tile tile-chart"><span class="tile-label">Papers per year</span>{{ chart | safe }}</div>
+</div>
+
 <p class="actions">
-  <a class="btn" href="/explore/?topic={{ topic.name | urlencode }}">Search and filter this topic</a>
+  <a class="btn" href="/explore/?topic={{ topic.name | urlencode }}">Search and filter all {{ "{:,}".format(st.total) }} papers</a>
+  <a class="btn" href="/topics/{{ topic.slug }}/feed.xml">RSS for this topic</a>
   <a class="btn" href="https://github.com/{{ site.repo }}/blob/main/lists/{{ topic.slug }}.md">Plain list on GitHub</a>
 </p>
-{% if years %}
-{% set peak = years | map(attribute=1) | max %}
-<figure class="years" aria-label="Papers per year">
-  {% for y, n in years %}
-  <div class="bar" title="{{ y }}: {{ n }} papers"><span style="height: {{ (100 * n / peak) | round(1) }}%"></span><small>{{ "'" ~ (y % 100) if years | length > 6 else y }}</small></div>
-  {% endfor %}
-  <figcaption class="muted">{{ papers | length }} papers per year</figcaption>
-</figure>
-{% endif %}
-{% if resources %}
-<h2>Datasets, models &amp; tools</h2>
-<div class="res-topic-cols">
-  {% for kind in ["dataset", "model", "software"] if resources.get(kind) %}
-  {% set items = resources[kind] %}
-  <div>
-    <h3>{{ "Tools" if kind == "software" else res_vocab.kinds[kind].name }} <span class="muted">({{ items | length }})</span></h3>
-    <ul class="res-topic-list">
-      {% for r in items[:6] %}<li><a href="/{{ res_pages[kind] }}/#{{ r.slug }}">{{ r.name }}</a>
-        <span class="muted">· {{ res_vocab.kinds[kind].categories.get(r.category, r.category) }}</span></li>{% endfor %}
-    </ul>
-    {% if items | length > 6 %}<a href="/{{ res_pages[kind] }}/?use={{ topic.slug }}">All {{ items | length }} →</a>{% endif %}
-  </div>
-  {% endfor %}
+
+<div class="kit">
+  <section class="kit-card">
+    <h2>Start here</h2>
+    {% if st.start_here %}
+    <p class="muted">Reviews and surveys, most cited first.</p>
+    <ol class="kit-list">{% for p in st.start_here %}{{ mini(p) }}{% endfor %}</ol>
+    {% else %}<p class="muted">No review paper yet; see the key papers.</p>{% endif %}
+  </section>
+  <section class="kit-card">
+    <h2>Most cited, last 12 months</h2>
+    {% if st.most_cited_recent %}
+    <ol class="kit-list">{% for p in st.most_cited_recent %}{{ mini(p) }}{% endfor %}</ol>
+    {% else %}<p class="muted">Not enough citation data yet.</p>{% endif %}
+  </section>
 </div>
+
+{% if resources %}
+<section class="kit-card kit-wide">
+  <h2>Data, models &amp; tools to start with</h2>
+  <div class="res-topic-cols">
+    {% for kind in ["dataset", "model", "software"] if resources.get(kind) %}
+    {% set items = resources[kind] %}
+    <div>
+      <h3>{{ "Tools" if kind == "software" else res_vocab.kinds[kind].name }} <span class="muted">({{ items | length }})</span></h3>
+      <ul class="res-topic-list">
+        {% for r in items[:6] %}<li><a href="/{{ res_pages[kind] }}/#{{ r.slug }}">{{ r.name }}</a>
+          <span class="muted">· {{ res_vocab.kinds[kind].categories.get(r.category, r.category) }}</span></li>{% endfor %}
+      </ul>
+      {% if items | length > 6 %}<a href="/{{ res_pages[kind] }}/?use={{ topic.slug }}">All {{ items | length }} →</a>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</section>
 {% endif %}
-{% set hl = papers | selectattr("highlight") | list %}
-{% if hl %}
-<h2>★ Highlights</h2>
-<div class="grid">{% for p in hl[:9] %}{{ card(p, show_topic=False) }}{% endfor %}</div>
+
+{% if st.key_papers %}
+<h2>★ Key papers</h2>
+<div class="grid">{% for p in st.key_papers %}{{ card(p, show_topic=False) }}{% endfor %}</div>
 {% endif %}
-<h2>All papers <span class="muted">({{ papers | length }})</span></h2>
-<div class="list">{% for p in papers %}{{ card(p, show_topic=False) }}{% endfor %}</div>
-{% if also %}
-<h2>Also relevant <span class="muted">({{ also | length }})</span></h2>
-<div class="list">{% for p in also %}{{ card(p) }}{% endfor %}</div>
-{% endif %}
+
+<h2>Newest</h2>
+<div class="list">{% for p in st.newest %}{{ card(p, show_topic=False) }}{% endfor %}</div>
+<p class="more-link"><a class="btn" href="/explore/?topic={{ topic.name | urlencode }}&sort=date">All {{ "{:,}".format(st.total) }} papers, newest first →</a></p>
 {% endblock %}

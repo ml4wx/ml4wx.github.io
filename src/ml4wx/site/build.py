@@ -9,7 +9,7 @@ import re
 import shutil
 import subprocess
 import sys
-from collections import Counter, defaultdict
+from collections import defaultdict
 from email.utils import format_datetime
 from pathlib import Path
 from xml.sax.saxutils import escape
@@ -17,12 +17,13 @@ from xml.sax.saxutils import escape
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from markdown_it import MarkdownIt
 
-from .. import resources
+from .. import insights, resources
 from ..config import Config
-from ..export import authors_short, sorted_papers, stats
+from ..export import authors_short, bibtex, sorted_papers, stats
 from ..models import Paper
 from ..store import Archive
 from . import catalog as catalog_page
+from . import charts
 
 log = logging.getLogger(__name__)
 
@@ -65,6 +66,18 @@ def _digests(root: Path) -> list[dict]:
             text = text[m.end():]
         out.append({"week": f.stem, "meta": meta, "html": md.render(text)})
     return out
+
+
+# Data facet values -> where the matching datasets are on the Datasets tab.
+DATA_LINKS = {
+    "era5": "/datasets/#era5",
+    "cmip": "/datasets/#cmip6",
+    "radar": "/datasets/?type=observations-radar",
+    "satellite": "/datasets/?type=observations-satellite",
+    "stations": "/datasets/?type=observations-in-situ",
+    "nwp-analysis": "/datasets/?type=forecast-archive",
+    "km-scale-sim": "/datasets/?type=km-scale-simulation",
+}
 
 
 def _rss(cfg: Config, papers: list[Paper], title: str, path: str) -> str:
@@ -124,25 +137,88 @@ def build(archive: Archive, cfg: Config, out: Path, index: bool = True) -> None:
     def render(rel: str, tpl: str, **kw) -> None:
         _write(out, rel, e.get_template(tpl).render(**kw))
 
+    # Numbers for the home page, topic starter kits and Trends.
+    today = latest_added or dt.date.today()
+    first_year = cfg.settings["start_year"]
+    tstats = insights.topic_stats(papers, today, first_year)
+    tr = insights.trends(papers, today, first_year)
+    enabled = [t for t in cfg.topics if t.enabled]
+    growing = sorted(
+        (tstats[t.slug] for t in enabled if t.slug in tstats and tstats[t.slug].growth is not None),
+        key=lambda s: -s.growth,
+    )
+    year_ago = today - dt.timedelta(days=365)
+    n_res = {k: len(catalog_page.page(k, catalog, res_vocab, cfg)["rows"]) for k in resources.DIRS}
+
     render(
         "index.html", "index.html",
-        st=st, highlights=highlights[:6], latest=[p for p in papers if not p.classic][:12],
-        groups=groups, by_topic=by_topic, latest_added=latest_added,
-        digest=digests[0] if digests else None,
+        st=st, tr=tr, highlights=highlights[:6], n_res=n_res, latest_added=latest_added, groups=groups,
+        by_topic=by_topic, digest=digests[0] if digests else None, growing=growing[:6],
+        week=sorted((p for p in papers if p.date > today - dt.timedelta(days=14) and not p.classic),
+                    key=lambda p: (-p.score, p.id)),
+        cited=sorted((p for p in papers if p.date > year_ago and p.cited_by), key=lambda p: -p.cited_by)[:8],
     )  # fmt: skip
     render("explore/index.html", "explore.html")
     render("topics/index.html", "topics.html", groups=groups, by_topic=by_topic, st=st)
-    for t in cfg.topics:
-        if t.enabled:
-            ps = by_topic.get(t.slug, [])
-            also = [p for p in papers if t.slug in p.topics]
-            years = sorted(Counter(p.year for p in ps).items())
-            render(f"topics/{t.slug}/index.html", "topic.html", topic=t, papers=ps, also=also, years=years,
-                   resources=res_by_topic.get(t.slug, []))  # fmt: skip
+    for t in enabled:
+        ts = tstats.get(t.slug) or insights.TopicStats(slug=t.slug)
+        chart = charts.columns([(f"'{y % 100:02d}", n) for y, n in ts.per_year.items()], partial_last=True,
+                               label=f"{t.name}: papers per year")  # fmt: skip
+        render(f"topics/{t.slug}/index.html", "topic.html", topic=t, st=ts, chart=chart,
+               also=[p for p in papers if t.slug in p.topics], resources=res_by_topic.get(t.slug, []))  # fmt: skip
+        _write(out, f"topics/{t.slug}/feed.xml",
+               _rss(cfg, [p for p in by_topic.get(t.slug, []) if not p.classic], f"ML4WX: {t.name}", ""))  # fmt: skip
+
+    # Paper pages: related papers, BibTeX, and links from the data used to the Datasets tab.
+    try:
+        related = insights.related(papers)
+    except ImportError:  # scikit-learn is in the `site` extra
+        log.warning("scikit-learn missing: no related papers")
+        related = {}
+    by_id = {p.id: p for p in papers}
     for p in papers:
-        render(f"papers/{p.id}/index.html", "paper.html", p=p, resources=res_by_paper.get(p.id, []))
+        render(f"papers/{p.id}/index.html", "paper.html", p=p, resources=res_by_paper.get(p.id, []),
+               related=[by_id[i] for i in related.get(p.id, []) if i in by_id], bibtex=bibtex([p]).strip(),
+               data_links=DATA_LINKS)  # fmt: skip
+
     for kind, path in resources.PAGES.items():
         render(f"{path}/index.html", "catalog.html", pg=catalog_page.page(kind, catalog, res_vocab, cfg))
+    model_rows = catalog_page.page("model", catalog, res_vocab, cfg)["rows"]
+    render("models/compare/index.html", "compare.html", rows=model_rows)
+    _write(out, "data/resources-index.json", json.dumps([
+        {"name": r.name, "kind": "tool" if r.kind == "software" else r.kind,
+         "url": f"/{resources.PAGES[r.kind]}/#{r.slug}", "key": f"{r.name} {r.slug}".lower().replace("-", " ")}
+        for k in resources.DIRS for r in catalog.ordered(k)
+    ], separators=(",", ":")))  # fmt: skip
+
+    # Trends page charts.
+    labels = {"cnn": "CNN / U-Net", "rnn": "RNN / LSTM", "transformer": "Transformer", "gnn": "Graph neural network",
+              "diffusion": "Diffusion / flow matching", "neural-operator": "Neural operator", "llm": "Language model",
+              "classical-ml": "Classical ML"}  # fmt: skip
+    ymax = charts.nice_ticks(max(max(v.values()) for v in tr.method_share.values()), 3)[-1]
+    trend_charts = {
+        "per_year": charts.columns([(str(y), n) for y, n in tr.per_year.items()], partial_last=True,
+                                   label="Papers per year") + charts.table(["Year", "Papers"],
+                                   [[y, n] for y, n in tr.per_year.items()], "Papers per year"),
+        "methods": [{"label": labels[m], "svg": charts.mini_line(tr.method_share[m], ymax=ymax, unit="%",
+                                                                 label=f"{labels[m]}: share of papers per year",
+                                                                 partial_last=True)}
+                    for m in sorted(insights.METHODS, key=lambda m: -tr.method_share[m][tr.years[-1]])],
+        "methods_table": charts.table(["Method"] + [str(y) for y in tr.years],
+                                      [[labels[m]] + [f"{tr.method_share[m][y]:.1f}%" for y in tr.years]
+                                       for m in insights.METHODS], "Share of papers per method and year"),
+        "labs": charts.hbars([(cfg.org_by_slug[o].name, n, f"/orgs/{o}/") for o, n in tr.top_labs
+                              if o in cfg.org_by_slug], label="Most active labs"),
+        "venues": charts.hbars([(v, n, None) for v, n in tr.top_venues], label="Top venues"),
+    }  # fmt: skip
+    growth_tiles = []
+    for t in sorted(enabled, key=lambda t: -(tstats[t.slug].last12 if t.slug in tstats else 0)):
+        ts = tstats.get(t.slug)
+        if ts:
+            growth_tiles.append({"slug": t.slug, "last12": ts.last12, "growth": ts.growth,
+                                 "spark": charts.sparkline(list(ts.per_year.values()), label=f"{t.name} per year")})
+    render("trends/index.html", "trends.html", tr=tr, charts=trend_charts, growth=growth_tiles, total=len(papers),
+           fastest=growing[0] if growing else None)
     render("resources/index.html", "redirect.html", target="/datasets/")  # old URL of the combined page
     org_list = sorted(
         (o for o in cfg.orgs if by_org.get(o.slug)), key=lambda o: (o.tier, -len(by_org[o.slug]))
