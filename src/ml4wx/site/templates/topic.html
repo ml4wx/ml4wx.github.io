@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "macros.html" import card %}
+{% from "macros.html" import card, resource_card %}
 {% set nav = "topics" %}
 {% block title %}{{ topic.name }} · {{ site.title }}{% endblock %}
 {% block description %}{{ topic.description }}{% endblock %}
@@ -19,6 +19,14 @@
   {% endfor %}
   <figcaption class="muted">{{ papers | length }} papers per year</figcaption>
 </figure>
+{% endif %}
+{% if resources %}
+<h2>Datasets, models &amp; tools <span class="muted">({{ resources | length }})</span></h2>
+<details class="res-topic"{% if resources | length <= 6 %} open{% endif %}>
+  <summary>Show {{ resources | length }} resources for {{ topic.name | lower }}</summary>
+  <div class="grid res-grid">{% for r in resources %}{{ resource_card(r, show_topics=False) }}{% endfor %}</div>
+  <p><a href="/resources/?topic={{ topic.slug }}">All resources for this topic →</a></p>
+</details>
 {% endif %}
 {% set hl = papers | selectattr("highlight") | list %}
 {% if hl %}

@@ -1,0 +1,36 @@
+name: Suggest a resource
+description: Propose a dataset, a model with public code or weights, or a tool for the Resources page.
+title: "Resource: "
+labels: [resource]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      options: [Dataset, Model (public code or weights), Software / tool]
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      placeholder: e.g. ERA5, GraphCast, Earth2Studio
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Main link (website, docs or repository)
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What is it, and which tasks is it used for?
+      description: One or two sentences. For example "radar mosaics for precipitation nowcasting".
+    validations:
+      required: true
+  - type: input
+    id: paper
+    attributes:
+      label: Reference paper (arXiv id or DOI), if any

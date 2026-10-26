@@ -1,0 +1,28 @@
+slug: dlesym
+name: DLESyM
+kind: model
+category: climate-emulator
+description: 'Deep Learning Earth System Model: coupled atmosphere and ocean U-Nets on the HEALPix grid
+  that simulate today''s climate for 1000 years without drift, with realistic tropical cyclones, monsoon
+  and blocking.'
+provider: University of Washington
+url: https://github.com/AtmosSci-DLESM/DLESyM
+repo: AtmosSci-DLESM/DLESyM
+paper:
+  arxiv: '2409.16247'
+  doi: 10.1029/2025AV001706
+license: MIT
+topics:
+- climate-emulation
+added: '2026-10-26'
+weights: https://huggingface.co/nvidia/dlesym-v1-era5
+resolution: HEALPix 64 (~1°)
+lead_time: 1000-year simulations
+training_data: ERA5
+open:
+- code
+- weights
+license_weights: NVIDIA-Community-Model-License
+operational: false
+runs_in:
+- earth2studio

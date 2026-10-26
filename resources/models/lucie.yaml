@@ -1,0 +1,25 @@
+slug: lucie
+name: LUCIE
+kind: model
+category: climate-emulator
+description: Lightweight SFNO climate emulator that trains in a few hours on one GPU, from as little as
+  2 years of data, and stays stable and physically consistent for 100-year ensemble runs.
+provider: Penn State University
+url: https://github.com/ISCLPennState/LUCIE
+repo: ISCLPennState/LUCIE
+paper:
+  arxiv: '2405.16297'
+  doi: 10.1029/2025MS005152
+license: MIT
+topics:
+- climate-emulation
+added: '2026-10-26'
+weights: https://zenodo.org/records/15164648
+resolution: T30 (~3.75°)
+lead_time: 6-hourly steps, 100-year runs
+training_data: ERA5 (regridded)
+open:
+- code
+- weights
+license_weights: CC-BY-4.0
+operational: false

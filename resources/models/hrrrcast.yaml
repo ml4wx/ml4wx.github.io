@@ -1,0 +1,27 @@
+slug: hrrrcast
+name: HRRRCast
+kind: model
+category: regional
+description: 'NOAA GSL emulator of the HRRR convection-allowing model over CONUS: a ResNet-based model
+  with optional diffusion (DDIM) ensembles that uses GFS forecasts as boundary forcing. The repo has a
+  live real-time pipeline and the model files (Git LFS).'
+provider: NOAA Global Systems Laboratory
+url: https://github.com/NOAA-GSL/HRRRCast-live
+repo: NOAA-GSL/HRRRCast-live
+paper:
+  arxiv: '2507.05658'
+  doi: 10.1175/AIES-D-25-0061.1
+license: MIT
+topics:
+- regional-km-scale
+- probabilistic-ensembles
+added: '2026-10-26'
+org: noaa
+weights: https://github.com/NOAA-GSL/HRRRCast-live/tree/master/net-diffusion
+resolution: 6 km, CONUS
+lead_time: up to 48 h, hourly
+training_data: HRRR analyses and GFS (2021-2024)
+open:
+- code
+- weights
+operational: false

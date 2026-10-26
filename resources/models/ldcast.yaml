@@ -1,0 +1,28 @@
+slug: ldcast
+name: LDCast
+kind: model
+category: nowcasting
+description: Latent diffusion model for probabilistic precipitation nowcasting; compared with DGMR and
+  pySTEPS it gives more diverse and better calibrated ensembles. Trained on Swiss radar and also tested
+  on German data.
+provider: MeteoSwiss
+url: https://github.com/MeteoSwiss/ldcast
+repo: MeteoSwiss/ldcast
+paper:
+  arxiv: '2304.12891'
+  doi: ''
+license: Apache-2.0
+topics:
+- nowcasting
+- probabilistic-ensembles
+added: '2026-10-26'
+org: meteoswiss
+weights: https://doi.org/10.5281/zenodo.7780914
+resolution: 1 km radar, Switzerland
+lead_time: up to 100 min, 5-min steps
+training_data: MeteoSwiss operational radar composite
+open:
+- code
+- weights
+license_weights: CC-BY-NC-SA-4.0
+operational: false

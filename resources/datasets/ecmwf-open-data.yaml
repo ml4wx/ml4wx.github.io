@@ -1,0 +1,24 @@
+slug: ecmwf-open-data
+name: ECMWF open data (IFS and AIFS real-time forecasts)
+kind: dataset
+category: forecast-archive
+description: Free real-time forecasts from ECMWF's physics-based IFS (deterministic and ensemble) and
+  its AIFS machine learning models. ML users use it to initialise models, compare against AIFS and build
+  operational demos.
+provider: ECMWF
+url: https://www.ecmwf.int/en/forecasts/datasets/open-data
+docs: https://confluence.ecmwf.int/display/DAC/ECMWF+open+data%3A+real-time+forecasts+from+IFS+and+AIFS
+repo: ecmwf/ecmwf-opendata
+license: CC-BY-4.0
+topics:
+- global-medium-range
+- probabilistic-ensembles
+- foundation-models
+added: '2026-10-26'
+access_url: https://registry.opendata.aws/ecmwf-forecasts/
+coverage: global, 0.25° (IFS also 0.1° from October 2026), 00/06/12/18 UTC runs up to 15 days; rolling
+  archive of recent runs (AWS mirror keeps older data)
+formats:
+- GRIB2
+- BUFR
+access: open

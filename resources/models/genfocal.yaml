@@ -1,0 +1,25 @@
+slug: genfocal
+name: GenFocal
+kind: model
+category: downscaling
+description: 'Two-stage generative downscaling of climate projections: debias coarse CESM2 large-ensemble
+  output, then super-resolve to 0.25° with diffusion, without paired training data; it reproduces heat
+  waves and tropical cyclones. Code only.'
+provider: Google Research
+url: https://github.com/google-research/swirl-dynamics/tree/main/swirl_dynamics/projects/genfocal
+repo: google-research/swirl-dynamics
+paper:
+  arxiv: '2412.08079'
+  doi: 10.1038/s42256-026-01308-7
+license: Apache-2.0
+topics:
+- downscaling
+- extremes-hazards
+- climate-analysis-attribution
+added: '2026-10-26'
+org: google-research
+resolution: 1.5° → 0.25° (CONUS, North Atlantic)
+training_data: CESM2 LENS2 and ERA5
+open:
+- code
+operational: false

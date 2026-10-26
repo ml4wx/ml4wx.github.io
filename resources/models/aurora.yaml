@@ -1,0 +1,30 @@
+slug: aurora
+name: Aurora
+kind: model
+category: foundation
+description: 1.3B-parameter 3D Swin-transformer foundation model pretrained on over a million hours of
+  diverse Earth-system data, then fine-tuned for 0.25° and 0.1° weather, air quality, ocean waves and
+  cyclone tracks.
+provider: Microsoft Research
+url: https://microsoft.github.io/aurora/
+repo: microsoft/aurora
+paper:
+  arxiv: '2405.13063'
+  doi: 10.1038/s41586-025-09005-y
+license: MIT
+topics:
+- foundation-models
+- global-medium-range
+added: '2026-10-26'
+org: microsoft-research
+weights: https://huggingface.co/microsoft/aurora
+resolution: 0.25° and 0.1° (fine-tuned versions)
+lead_time: 6-hourly steps, 10 days (weather)
+training_data: ERA5, CMIP6, GFS, IFS forecasts and analyses, CAMS and more
+open:
+- code
+- weights
+operational: false
+runs_in:
+- earth2studio
+- ai-models

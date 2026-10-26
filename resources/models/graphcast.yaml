@@ -1,0 +1,31 @@
+slug: graphcast
+name: GraphCast
+kind: model
+category: global-deterministic
+description: Graph neural network that steps the global atmosphere forward 6 hours at a time on a multi-scale
+  icosahedral mesh; in the Science paper it beat ECMWF HRES on 90% of 1380 verification targets. The code
+  now lives in the WeatherNext repo, with 0.25° (37-level and HRES-fine-tuned 13-level "operational")
+  and 1° "small" checkpoints.
+provider: Google DeepMind
+url: https://deepmind.google/blog/graphcast-ai-model-for-faster-and-more-accurate-global-weather-forecasting/
+repo: google-deepmind/weathernext
+paper:
+  arxiv: '2212.12794'
+  doi: 10.1126/science.adi2336
+license: Apache-2.0
+topics:
+- global-medium-range
+added: '2026-10-26'
+org: google-deepmind
+weights: https://console.cloud.google.com/storage/browser/dm_graphcast
+resolution: 0.25°, 37 levels (also 13-level and 1° versions)
+lead_time: 10 days, 6-hourly
+training_data: ERA5 (operational version fine-tuned on ECMWF HRES analyses)
+open:
+- code
+- weights
+license_weights: CC-BY-4.0
+operational: false
+runs_in:
+- earth2studio
+- ai-models

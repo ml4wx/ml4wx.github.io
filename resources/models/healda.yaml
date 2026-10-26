@@ -1,0 +1,29 @@
+slug: healda
+name: HealDA
+kind: model
+category: data-assimilation
+description: ML data assimilation that maps a window of satellite and conventional observations directly
+  to a global analysis for initialising ML forecast models (e.g. FourCastNet 3, Aurora, FengWu). v2 uses
+  48-hour observation sequences and outputs 0.25° fields.
+provider: NVIDIA
+url: https://huggingface.co/nvidia/healda-v2
+repo: NVlabs/HealDA
+paper:
+  arxiv: '2601.17636'
+  doi: ''
+license: Apache-2.0
+topics:
+- data-assimilation
+- observations-remote-sensing
+added: '2026-10-26'
+org: nvidia
+weights: https://huggingface.co/nvidia/healda-v2
+resolution: 0.25° (v2); ~1° HEALPix (v1)
+training_data: Satellite and conventional observations (NOAA archives); ERA5 targets
+open:
+- code
+- weights
+license_weights: OpenMDW-1.1
+operational: false
+runs_in:
+- earth2studio

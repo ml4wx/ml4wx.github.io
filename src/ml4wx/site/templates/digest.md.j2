@@ -24,8 +24,17 @@ highlights: {{ highlights | length }}
   {{ p.summary }}
 {%- endfor %}
 {% endfor %}
+{%- if datasets %}
+## 🗂️ New datasets & benchmarks
+
+Candidates for the [Resources]({{ site }}/resources/) page:
+{% for p in datasets %}
+- **[{{ p.title }}]({{ p.links.paper or (site ~ "/papers/" ~ p.id ~ "/") }})**{% if p.links.code %} · [code]({{ p.links.code }}){% endif %}
+  {{ p.summary }}
+{%- endfor %}
+{% endif %}
 {%- if releases %}
-## 📦 Software releases
+## 📦 Software & model releases
 {% for r in releases %}
 - [{{ r.repo }} {{ r.tag }}]({{ r.url }}) ({{ r.date }}){% if r.name and r.name != r.tag %}: {{ r.name }}{% endif %}
 {%- endfor %}

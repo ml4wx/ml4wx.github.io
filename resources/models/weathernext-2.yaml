@@ -1,0 +1,33 @@
+slug: weathernext-2
+name: WeatherNext 2 (FGN)
+kind: model
+category: global-ensemble
+description: 'Functional Generative Network: an ensemble of models with learned noise perturbations, trained
+  only on per-location CRPS yet producing realistic joint spatial structure and skilful cyclone tracks.
+  Google runs it for daily forecast feeds; code and checkpoints (including the WeatherNext Cyclones and
+  a 1° Mini model) are public.'
+provider: Google DeepMind and Google Research
+url: https://developers.google.com/weathernext/guides/models
+repo: google-deepmind/weathernext
+paper:
+  arxiv: '2506.10772'
+  doi: 10.1038/s41586-026-10953-2
+license: Apache-2.0
+topics:
+- probabilistic-ensembles
+- global-medium-range
+- extremes-hazards
+added: '2026-10-26'
+org: google-deepmind
+weights: https://console.cloud.google.com/storage/browser/dm_graphcast
+resolution: 0.25° (1° Mini version)
+lead_time: 6-hourly steps, medium range
+training_data: ERA5; fine-tuned on ECMWF HRES analyses
+open:
+- code
+- weights
+license_weights: CC-BY-4.0
+operational: false
+runs_in:
+- earth2studio
+- ai-models

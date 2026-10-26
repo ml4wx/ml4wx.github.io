@@ -1,0 +1,31 @@
+slug: aifs-ens
+name: AIFS ENS
+kind: model
+category: global-ensemble
+description: Stochastic ensemble version of AIFS trained with an "almost fair" CRPS loss instead of diffusion;
+  it can generate any number of members. ECMWF runs it operationally with 51 members four times a day
+  (v2 since May 2026).
+provider: ECMWF
+url: https://huggingface.co/ecmwf/aifs-ens-2.0
+repo: ecmwf/anemoi-core
+paper:
+  arxiv: '2412.15832'
+  doi: ''
+license: Apache-2.0
+topics:
+- probabilistic-ensembles
+- global-medium-range
+added: '2026-10-26'
+org: ecmwf
+weights: https://huggingface.co/ecmwf/aifs-ens-2.0
+resolution: ~31 km (N320), 14 pressure levels
+lead_time: 15 days, 6-hourly
+training_data: ERA5; fine-tuned on ECMWF operational analyses
+open:
+- code
+- weights
+license_weights: CC-BY-4.0
+operational: true
+runs_in:
+- anemoi
+- earth2studio

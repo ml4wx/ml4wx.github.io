@@ -1,0 +1,26 @@
+slug: spherical-dyffusion
+name: Spherical DYffusion
+kind: model
+category: climate-emulator
+description: Combines the dynamics-informed DYffusion framework with an SFNO backbone for probabilistic
+  climate emulation; it gives stable 100-year runs at 6-hourly steps at a cost close to deterministic
+  models.
+provider: UC San Diego (Rose STL Lab) and Ai2
+url: https://github.com/Rose-STL-Lab/spherical-dyffusion
+repo: Rose-STL-Lab/spherical-dyffusion
+paper:
+  arxiv: '2406.14798'
+  doi: ''
+license: Apache-2.0
+topics:
+- climate-emulation
+- probabilistic-ensembles
+added: '2026-10-26'
+weights: https://huggingface.co/salv47/spherical-dyffusion
+resolution: 1°
+lead_time: 6-hourly steps, 100-year runs
+training_data: FV3GFS climate simulations (ACE dataset)
+open:
+- code
+- weights
+operational: false

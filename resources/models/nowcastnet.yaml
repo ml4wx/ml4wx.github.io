@@ -1,0 +1,26 @@
+slug: nowcastnet
+name: NowcastNet
+kind: model
+category: nowcasting
+description: Combines a physics-conditioned evolution network (advection) with a generative network for
+  small-scale detail, to nowcast extreme precipitation up to 3 hours ahead; professional forecasters ranked
+  it first in 71% of cases. Code and weights are on Code Ocean (no GitHub repo).
+provider: Tsinghua University
+url: https://www.nature.com/articles/s41586-023-06184-4
+paper:
+  arxiv: ''
+  doi: 10.1038/s41586-023-06184-4
+license: MIT
+topics:
+- nowcasting
+- extremes-hazards
+added: '2026-10-26'
+org: tsinghua-university
+weights: https://doi.org/10.24433/CO.0832447.v1
+resolution: radar, 2048 × 2048 km regions
+lead_time: up to 3 h
+training_data: Radar observations from the USA and China
+open:
+- code
+- weights
+operational: false

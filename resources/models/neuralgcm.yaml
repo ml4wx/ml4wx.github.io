@@ -1,0 +1,29 @@
+slug: neuralgcm
+name: NeuralGCM
+kind: model
+category: climate-emulator
+description: 'Hybrid model: a differentiable dynamical core for large-scale dynamics plus learned physics,
+  trained end-to-end in JAX. The same model family covers medium-range weather (deterministic and stochastic)
+  and multi-year climate runs.'
+provider: Google Research
+url: https://neuralgcm.readthedocs.io/
+repo: neuralgcm/neuralgcm
+paper:
+  arxiv: '2311.07222'
+  doi: 10.1038/s41586-024-07744-y
+license: Apache-2.0
+topics:
+- hybrid-parameterization
+- climate-emulation
+- global-medium-range
+added: '2026-10-26'
+org: google-research
+weights: https://console.cloud.google.com/storage/browser/neuralgcm/models
+resolution: 0.7°, 1.4° and 2.8°
+lead_time: days (weather) to years (climate)
+training_data: ERA5
+open:
+- code
+- weights
+license_weights: CC-BY-SA-4.0
+operational: false

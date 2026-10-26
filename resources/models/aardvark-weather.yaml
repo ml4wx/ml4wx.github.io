@@ -1,0 +1,29 @@
+slug: aardvark-weather
+name: Aardvark Weather
+kind: model
+category: data-assimilation
+description: 'End-to-end model that replaces the whole NWP pipeline: it encodes raw satellite, station
+  and other observations into a gridded state, then predicts global fields and local station forecasts
+  up to 10 days.'
+provider: University of Cambridge with the Alan Turing Institute, Microsoft Research and ECMWF
+url: https://www.nature.com/articles/s41586-025-08897-0
+repo: anna-allen/aardvark-weather-public
+paper:
+  arxiv: '2404.00411'
+  doi: 10.1038/s41586-025-08897-0
+license: CC0-1.0
+topics:
+- data-assimilation
+- observations-remote-sensing
+- global-medium-range
+added: '2026-10-26'
+org: university-of-cambridge
+weights: https://huggingface.co/datasets/av555/aardvark-weather/tree/main/trained_model
+resolution: 1.41° global grid + station forecasts
+lead_time: 1-10 days, 24-hour steps
+training_data: Raw observations (satellite, in situ, etc.); ERA5 targets
+open:
+- code
+- weights
+license_weights: CC-BY-NC-ND-4.0
+operational: false

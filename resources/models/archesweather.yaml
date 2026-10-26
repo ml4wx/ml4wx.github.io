@@ -1,0 +1,25 @@
+slug: archesweather
+name: ArchesWeather
+kind: model
+category: global-deterministic
+description: Transformer model that improves on Pangu-Weather's 3D Swin design by removing over-restrictive
+  inductive priors; it trains in a few GPU-days at 1.5°, so it fits academic compute budgets. Code is
+  in the geoarches library.
+provider: INRIA
+url: https://github.com/INRIA/geoarches
+repo: INRIA/geoarches
+paper:
+  arxiv: '2405.14527'
+  doi: ''
+license: BSD-3-Clause
+topics:
+- global-medium-range
+added: '2026-10-26'
+weights: https://huggingface.co/gcouairon/ArchesWeather
+resolution: 1.5°
+lead_time: 24-hour steps
+training_data: ERA5
+open:
+- code
+- weights
+operational: false

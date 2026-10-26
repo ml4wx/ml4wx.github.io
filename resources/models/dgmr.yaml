@@ -1,0 +1,28 @@
+slug: dgmr
+name: DGMR
+kind: model
+category: nowcasting
+description: 'Deep Generative Model of Radar: a conditional GAN that produces sharp, realistic probabilistic
+  precipitation nowcasts; in a study with over 50 expert meteorologists it ranked first in 89% of cases.
+  TF-Hub snapshots and a UK radar dataset are public.'
+provider: Google DeepMind with the Met Office
+url: https://github.com/google-deepmind/deepmind-research/tree/master/nowcasting
+repo: google-deepmind/deepmind-research
+paper:
+  arxiv: '2104.00954'
+  doi: 10.1038/s41586-021-03854-z
+license: Apache-2.0
+topics:
+- nowcasting
+- probabilistic-ensembles
+added: '2026-10-26'
+org: google-deepmind
+weights: https://console.cloud.google.com/storage/browser/dm-nowcasting-example-data/tfhub_snapshots
+resolution: 1 km UK radar, up to 1536 × 1280 km
+lead_time: 5-90 min
+training_data: UK Met Office radar (Nimrod)
+open:
+- code
+- weights
+license_weights: CC-BY-4.0
+operational: false
