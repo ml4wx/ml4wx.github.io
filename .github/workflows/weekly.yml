@@ -1,12 +1,20 @@
 name: Weekly update
 
 # Monday morning: crawl the last days, classify, open a PR with the new papers,
-# and post the digest as an issue (watchers get it by email).
+# and post the digest as an issue that mentions the people in settings.yaml `notify`.
 on:
   schedule:
-    - cron: "30 7 * * 1"
-      timezone: "Europe/Zurich"
+    # Plain UTC at odd minutes: with the `timezone:` key and full hours the runs started 3-5 h late.
+    # 05:37 UTC = 06:37 Zurich in winter, 07:37 in summer. The second time is a fallback in case
+    # GitHub drops the first run; the guard job skips it when this week's digest already exists.
+    - cron: "37 5 * * 1"
+    - cron: "37 8 * * 1"
   workflow_dispatch:
+    inputs:
+      force:
+        description: Run even if this week's digest issue already exists
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -18,7 +26,26 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  guard:
+    runs-on: ubuntu-latest
+    outputs:
+      skip: ${{ steps.check.outputs.skip }}
+    steps:
+      - id: check
+        env:
+          GH_TOKEN: ${{ github.token }}
+          FORCE: ${{ inputs.force }}
+        run: |
+          week=$(date -u +%G-W%V)
+          if [ "$FORCE" != "true" ] && gh issue list -R "$GITHUB_REPOSITORY" --label digest --state all \
+              --search "\"$week\" in:title" --json number -q '.[0].number' | grep -q .; then
+            echo "Digest for $week exists; nothing to do."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+
   weekly:
+    needs: guard
+    if: needs.guard.outputs.skip != 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 120
     steps:
@@ -50,6 +77,7 @@ jobs:
           WEEK: ${{ steps.run.outputs.week }}
           ADDED: ${{ steps.run.outputs.added }}
           DIGEST: ${{ steps.run.outputs.digest }}
+          REVIEWERS: ${{ steps.run.outputs.reviewers }}
         run: |
           branch="weekly/$WEEK"
           git config user.name "ml4wx-bot"
@@ -65,7 +93,8 @@ jobs:
           awk 'NR==1 && /^---$/ {fm=1; next} fm && /^---$/ {fm=0; next} !fm' "$DIGEST" | head -c 60000 > /tmp/pr-body.md
           url=$(gh pr view "$branch" --json url -q .url 2>/dev/null || true)
           if [ -z "$url" ]; then
-            url=$(gh pr create --base main --head "$branch" \
+            # A review request notifies the reviewers even if they do not watch the repo.
+            url=$(gh pr create --base main --head "$branch" ${REVIEWERS:+--reviewer "$REVIEWERS"} \
               --title "Weekly update $WEEK: +$ADDED papers" --body-file /tmp/pr-body.md)
           fi
           echo "url=$url" >> "$GITHUB_OUTPUT"
@@ -77,6 +106,7 @@ jobs:
           WEEK: ${{ steps.run.outputs.week }}
           DIGEST: ${{ steps.run.outputs.digest }}
           PR_URL: ${{ steps.pr.outputs.url }}
+          MENTIONS: ${{ steps.run.outputs.mentions }}
         run: |
           gh label create digest --color 0b6aa2 --description "Weekly digest" --force
           title="🌦️ Weekly digest $WEEK"
@@ -85,6 +115,8 @@ jobs:
             exit 0
           fi
           # Drop the YAML front matter (first block between --- lines), keep the Markdown.
+          # The cc line mentions the readers, so GitHub notifies them by email.
           { awk 'NR==1 && /^---$/ {fm=1; next} fm && /^---$/ {fm=0; next} !fm' "$DIGEST" | head -c 60000; \
-            printf '\n\n**Review and merge:** %s\n' "$PR_URL"; } > /tmp/issue-body.md
+            printf '\n\n**Review and merge:** %s\n' "$PR_URL"; \
+            [ -n "$MENTIONS" ] && printf '\ncc %s\n' "$MENTIONS"; } > /tmp/issue-body.md
           gh issue create --title "$title" --label digest --body-file /tmp/issue-body.md

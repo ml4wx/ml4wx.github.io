@@ -1,10 +1,14 @@
 name: Daily alerts
 
-# Every morning: important new papers and lab blog posts become `highlight` issues.
+# Every morning: important new papers and lab blog posts become `highlight` issues that
+# mention the people in settings.yaml `notify`.
 on:
   schedule:
-    - cron: "0 8 * * *"
-      timezone: "Europe/Zurich"
+    # Plain UTC at odd minutes (the `timezone:` key made runs 3-5 h late).
+    # 06:07 UTC = 07:07 Zurich in winter, 08:07 in summer. The second time is a fallback in case
+    # GitHub drops the first run; the guard job skips it when today's run already succeeded.
+    - cron: "7 6 * * *"
+    - cron: "7 9 * * *"
   workflow_dispatch:
     inputs:
       days:
@@ -14,9 +18,29 @@ on:
 permissions:
   contents: read
   issues: write
+  actions: read
 
 jobs:
+  guard:
+    runs-on: ubuntu-latest
+    outputs:
+      skip: ${{ steps.check.outputs.skip }}
+    steps:
+      - id: check
+        if: github.event_name == 'schedule'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          done_today=$(gh run list -R "$GITHUB_REPOSITORY" --workflow daily.yml --status success \
+            --created ">=$(date -u +%F)" --json databaseId -q 'length')
+          if [ "$done_today" -gt 0 ]; then
+            echo "Already ran today; nothing to do."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+
   alerts:
+    needs: guard
+    if: needs.guard.outputs.skip != 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:

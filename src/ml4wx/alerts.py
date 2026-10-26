@@ -37,6 +37,12 @@ def alerted_ids(repo: str) -> set[str]:
     return {m for issue in json.loads(out) for m in MARK.findall(issue.get("body") or "")}
 
 
+def cc_line(cfg: Config) -> str:
+    """'cc @user' for settings.yaml `notify`: a mention makes GitHub email them."""
+    users = cfg.settings.get("notify") or []
+    return f"cc {' '.join('@' + u for u in users)}\n" if users else ""
+
+
 def paper_issue(p: Paper, cfg: Config) -> tuple[str, str]:
     orgs = ", ".join(cfg.org_by_slug[o].name for o in p.orgs if o in cfg.org_by_slug)
     links = [f"[Paper]({p.links.paper})"] if p.links.paper else []
@@ -56,19 +62,19 @@ def paper_issue(p: Paper, cfg: Config) -> tuple[str, str]:
 Topic: {topic} · Score: {p.score}/100 · {" · ".join(links)}
 
 <sub>Daily alert from ML4WX. The paper is added to the archive in the next weekly update.</sub>
-<!-- ml4wx:id={p.id} -->
+{cc_line(cfg)}<!-- ml4wx:id={p.id} -->
 """
     return title[:250], body
 
 
-def post_issue(post: dict) -> tuple[str, str]:
+def post_issue(post: dict, cfg: Config) -> tuple[str, str]:
     title = f"📰 {post['org_name']}: {post['title']}"
     body = f"""**[{post['title']}]({post['url']})**
 {post['org_name']} blog · {post['date']}
 
 {post['summary']}
 
-<!-- ml4wx:id={post['url']} -->
+{cc_line(cfg)}<!-- ml4wx:id={post['url']} -->
 """
     return title[:250], body
 
@@ -98,7 +104,7 @@ def run(cfg: Config, archive: Archive, days: int, dry_run: bool = False) -> int:
     repo = cfg.settings["site"]["repo"]
     since = dt.date.today() - dt.timedelta(days=days)
     issues = [(p.id, *paper_issue(p, cfg)) for p in find(cfg, archive, days)]
-    issues += [(post["url"], *post_issue(post)) for post in feeds.blog_posts(cfg, since)]
+    issues += [(post["url"], *post_issue(post, cfg)) for post in feeds.blog_posts(cfg, since)]
     done = set() if dry_run else alerted_ids(repo)
     n = 0
     for key, title, body in issues:

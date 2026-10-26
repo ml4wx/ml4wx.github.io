@@ -357,8 +357,10 @@ def cmd_weekly(args) -> int:
     )
     n_hl = sum(p.highlight for p in rep.added)
     print(f"weekly: +{len(rep.added)} papers ({n_hl} ★), {len(rep.updated)} updated, digest {path.name}")
+    notify = cfg.settings.get("notify") or []
     _gh_output(added=len(rep.added), highlights=n_hl, updated=len(rep.updated),
-               digest=str(path.relative_to(archive.root)), week=digest.week_id(today))  # fmt: skip
+               digest=str(path.relative_to(archive.root)), week=digest.week_id(today),
+               mentions=" ".join(f"@{u}" for u in notify), reviewers=",".join(notify))  # fmt: skip
     return 0
 
 

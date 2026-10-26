@@ -102,3 +102,10 @@ def test_site_build(root):
     assert (root / "_site" / "topics" / "global-medium-range" / "index.html").exists()
     assert (root / "_site" / "orgs" / "google-deepmind" / "index.html").exists()
     assert "<h1>Digest</h1>" in (root / "_site" / "digests" / "2026-W43" / "index.html").read_text()
+
+
+def test_alert_issue_mentions_notify_users(root):
+    from ml4wx import alerts
+
+    _, body = alerts.paper_issue(make_paper(highlight=True, highlight_reason="Big."), load())
+    assert "cc @salmanmohebi" in body and "<!-- ml4wx:id=arxiv-2212.12794 -->" in body
