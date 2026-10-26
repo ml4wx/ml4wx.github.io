@@ -283,6 +283,28 @@ def cmd_enrich(args) -> int:
     return 0
 
 
+def cmd_citations(args) -> int:
+    """Refresh citation counts (OpenAlex) for papers published in the last N years."""
+    cfg, archive = load(), Archive()
+    since = dt.date.today() - dt.timedelta(days=365 * args.years)
+    papers = [p for p in archive.papers.values() if p.date >= since]
+    keys = [k for p in papers for k in (f"doi:{p.ids.doi}" if p.ids.doi else None,
+                                        f"arxiv:{p.ids.arxiv}" if p.ids.arxiv else None) if k]  # fmt: skip
+    changed = 0
+    try:
+        for c in openalex.lookup(keys, source="citations"):
+            p = archive.find(c)
+            if p and c.cited_by and c.cited_by > (p.cited_by or 0):
+                p.cited_by = c.cited_by
+                ingest.finalize(p, cfg)
+                archive.save_paper(p)
+                changed += 1
+    except BudgetExceeded as e:
+        log.warning("stopped early: %s", e)
+    print(f"citations: {len(papers)} papers looked up, {changed} updated")
+    return 0
+
+
 def cmd_reclassify(args) -> int:
     """Classify papers again with abstracts fetched from OpenAlex and arXiv.
 
@@ -465,6 +487,10 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--days", type=int, default=None, help="only papers added in the last N days")
     p.add_argument("--missing-orgs", action="store_true", help="only papers without labs")
     p.set_defaults(fn=cmd_enrich)
+
+    p = sub.add_parser("citations", help="refresh citation counts of recent papers (OpenAlex)")
+    p.add_argument("--years", type=float, default=2)
+    p.set_defaults(fn=cmd_citations)
 
     p = sub.add_parser("reclassify", help="classify again with abstracts (title-only papers)")
     p.add_argument("--source", nargs="+", default=["snowball"])

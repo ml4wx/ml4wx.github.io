@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% set nav = "models" %}
+{% block title %}Compare models · {{ site.title }}{% endblock %}
+{% block description %}ML weather and climate models with public code or weights, side by side.{% endblock %}
+{% block main %}
+<p class="crumbs"><a href="/models/">Models</a></p>
+<h1 class="page-title">Compare models</h1>
+<p class="lede">All {{ rows | length }} models with public code or weights in one table. Click a column to sort; type to
+  filter. "Runs in" names the tools that can run a model without its own code.</p>
+<form class="search-row" role="search" onsubmit="return false">
+  <label class="sr-only" for="mq">Filter models</label>
+  <input id="mq" type="search" placeholder="Filter, e.g. ensemble, 0.25°, ERA5, NVIDIA, CC-BY…" autocomplete="off">
+</form>
+<div class="table-wrap">
+<table class="compare" id="mtable">
+  <thead><tr>
+    <th data-sort="text" scope="col">Model</th>
+    <th data-sort="text" scope="col">Type</th>
+    <th data-sort="text" scope="col">Lab</th>
+    <th data-sort="text" scope="col">Resolution</th>
+    <th data-sort="text" scope="col">Lead time</th>
+    <th data-sort="text" scope="col">Trained on</th>
+    <th data-sort="text" scope="col">Weights</th>
+    <th data-sort="text" scope="col">License (weights)</th>
+    <th data-sort="text" scope="col">Runs in</th>
+    <th data-sort="num" scope="col">★ Stars</th>
+    <th data-sort="num" scope="col">Citations</th>
+  </tr></thead>
+  <tbody>
+    {% for x in rows %}{% set r = x.r %}
+    <tr>
+      <td><a href="/models/#{{ r.slug }}"><b>{{ r.name }}</b></a>{% if r.get("operational") %} <span class="row-flag">Operational</span>{% endif %}</td>
+      <td>{{ res_vocab.kinds.model.categories.get(r.category, r.category) }}</td>
+      <td>{{ r.provider }}</td>
+      <td>{{ r.get("resolution") or "–" }}</td>
+      <td>{{ r.get("lead_time") or "–" }}</td>
+      <td>{{ r.get("training_data") or "–" }}</td>
+      <td>{% if r.get("weights") %}<a href="{{ r.get('weights') }}">yes</a>{% else %}code only{% endif %}</td>
+      <td>{{ r.get("license_weights") or r.license or "–" }}</td>
+      <td>{% for x2 in r.get("runs_in") or [] %}{{ res_vocab.runners.get(x2, x2) }}{{ ", " if not loop.last }}{% else %}–{% endfor %}</td>
+      <td data-v="{{ x.stars }}">{{ x.stars | compact if x.stars else "–" }}</td>
+      <td data-v="{{ x.citations }}">{{ "{:,}".format(x.citations) if x.citations else "–" }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+{% endblock %}
+{% block scripts %}
+<script>
+  (() => {
+    const t = document.getElementById("mtable"), body = t.tBodies[0], q = document.getElementById("mq");
+    let col = -1, dir = 1;
+    for (const [i, th] of [...t.tHead.rows[0].cells].entries()) {
+      th.tabIndex = 0;
+      const go = () => {
+        dir = col === i ? -dir : (th.dataset.sort === "num" ? -1 : 1); col = i;
+        const val = (tr) => th.dataset.sort === "num" ? Number(tr.cells[i].dataset.v || 0) : tr.cells[i].textContent.trim().toLowerCase();
+        const rows = [...body.rows].sort((a, b) => (val(a) > val(b) ? 1 : val(a) < val(b) ? -1 : 0) * dir);
+        body.append(...rows);
+        for (const h of t.tHead.rows[0].cells) h.removeAttribute("aria-sort");
+        th.setAttribute("aria-sort", dir > 0 ? "ascending" : "descending");
+      };
+      th.addEventListener("click", go);
+      th.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); go(); } });
+    }
+    q.addEventListener("input", () => {
+      const words = q.value.toLowerCase().split(/\s+/).filter(Boolean);
+      for (const tr of body.rows) tr.hidden = !words.every((w) => tr.textContent.toLowerCase().includes(w));
+    });
+  })();
+</script>
+{% endblock %}

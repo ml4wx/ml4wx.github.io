@@ -4,23 +4,34 @@
 <section class="hero">
   <h1>Machine learning for weather&nbsp;&amp;&nbsp;climate</h1>
   <p class="lede">A living archive of ML and AI research for weather and climate, from nowcasting to
-    climate emulation. Searchable, filterable, and updated every week.</p>
+    climate emulation, with the datasets, models and tools to work with. Updated every week.</p>
   <form class="hero-search" action="/explore/" role="search">
-    <label class="sr-only" for="q">Search papers</label>
-    <input id="q" name="q" type="search" placeholder="Search papers, e.g. diffusion ensemble, tropical cyclone, GraphCast" autocomplete="off">
+    <label class="sr-only" for="q">Search papers, datasets, models and tools</label>
+    <input id="q" name="q" type="search" placeholder="Search, e.g. diffusion ensemble, tropical cyclone, ERA5, GraphCast" autocomplete="off">
     <button type="submit">Search</button>
   </form>
   <dl class="stats">
-    <div><dt>Papers</dt><dd>{{ st.n_papers }}</dd></div>
+    <div><dt>Papers</dt><dd>{{ "{:,}".format(st.n_papers) }}</dd></div>
+    <div><dt>Last 12 months</dt><dd>{{ "{:,}".format(tr.last12) }}</dd></div>
     <div><dt>Highlights</dt><dd>{{ st.n_highlights }}</dd></div>
-    <div><dt>Topics</dt><dd>{{ by_topic | length }}</dd></div>
     <div><dt>Last update</dt><dd>{{ latest_added.strftime("%d %b %Y") if latest_added else "–" }}</dd></div>
   </dl>
 </section>
 
-{% if digest %}
-<p class="notice">This week: <a href="/digests/{{ digest.week }}/">digest {{ digest.week }}</a>
-  ({{ digest.meta.papers or "?" }} new papers, {{ digest.meta.highlights or 0 }} highlights)</p>
+<nav class="jump" aria-label="Sections">
+  <a href="/datasets/"><b>Datasets</b><span>{{ n_res.dataset }} public datasets, ERA5 to radar</span></a>
+  <a href="/models/"><b>Models</b><span>{{ n_res.model }} models with public code or weights</span></a>
+  <a href="/tools/"><b>Tools</b><span>{{ n_res.software }} tools to load, train, run, plot</span></a>
+  <a href="/trends/"><b>Trends</b><span>Topics, methods and labs over time</span></a>
+</nav>
+
+{% if week %}
+<section>
+  <div class="sec-head"><h2>New papers <span class="muted">· last two weeks</span></h2>{% if digest %}<a href="/digests/{{ digest.week }}/">Weekly digest {{ digest.week }} →</a>{% endif %}</div>
+  <div class="grid">
+    {% for p in week[:6] %}{{ card(p) }}{% endfor %}
+  </div>
+</section>
 {% endif %}
 
 {% if highlights %}
@@ -32,6 +43,27 @@
 </section>
 {% endif %}
 
+<div class="kit">
+  {% if cited %}
+  <section class="kit-card">
+    <h2>Most cited, last 12 months</h2>
+    <ol class="kit-list">
+      {% for p in cited %}<li><a href="/papers/{{ p.id }}/">{{ p.title }}</a>
+        <span class="muted">· {{ p.authors | authors_short(1) }}{% if p.venue %} · {{ p.venue }}{% endif %} · {{ "{:,}".format(p.cited_by) }} citations</span></li>{% endfor %}
+    </ol>
+  </section>
+  {% endif %}
+  <section class="kit-card">
+    <h2>Fastest-growing topics</h2>
+    <p class="muted">Papers in the last 12 months vs the 12 months before.</p>
+    <ul class="grow-list">
+      {% for t in growing %}<li><a href="/topics/{{ t.slug }}/">{{ topics[t.slug].name }}</a>
+        <span class="tile-delta up">{{ "%+.0f" % t.growth }}%</span> <span class="muted">{{ t.last12 }} papers</span></li>{% endfor %}
+    </ul>
+    <a href="/trends/">More trends →</a>
+  </section>
+</div>
+
 <section>
   <div class="sec-head"><h2>Topics</h2><a href="/topics/">All topics →</a></div>
   {% for gslug, gname in groups.items() if gslug != "later" %}
@@ -42,12 +74,5 @@
     {% endfor %}
   </ul>
   {% endfor %}
-</section>
-
-<section>
-  <div class="sec-head"><h2>Newest papers</h2><a href="/explore/">Explore all →</a></div>
-  <div class="list">
-    {% for p in latest %}{{ card(p) }}{% endfor %}
-  </div>
 </section>
 {% endblock %}

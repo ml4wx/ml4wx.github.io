@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% set nav = "trends" %}
+{% block title %}Trends · {{ site.title }}{% endblock %}
+{% block description %}How ML research for weather and climate is changing: topics, methods, open code and labs.{% endblock %}
+{% block main %}
+<h1 class="page-title">Trends</h1>
+<p class="lede">How the field is moving, computed from the {{ "{:,}".format(total) }} papers in the archive (full coverage
+  from {{ tr.years[0] }}). Updated every week. {{ tr.years[-1] }} is the year so far.</p>
+
+<div class="tiles">
+  <div class="tile"><span class="tile-label">Papers, last 12 months</span><span class="tile-value">{{ "{:,}".format(tr.last12) }}</span>
+    {% if tr.prev12 %}{% set g = 100 * (tr.last12 - tr.prev12) / tr.prev12 %}<span class="tile-delta {{ 'up' if g >= 0 else 'down' }}">{{ "%+.0f" % g }}% vs the 12 months before</span>{% endif %}</div>
+  <div class="tile"><span class="tile-label">Transformers, {{ tr.years[-1] }}</span><span class="tile-value">{{ "%.0f" % tr.method_share["transformer"][tr.years[-1]] }}%</span>
+    <span class="tile-delta">of papers (from {{ "%.0f" % tr.method_share["transformer"][tr.years[0]] }}% in {{ tr.years[0] }})</span></div>
+  <div class="tile"><span class="tile-label">Diffusion models, {{ tr.years[-1] }}</span><span class="tile-value">{{ "%.0f" % tr.method_share["diffusion"][tr.years[-1]] }}%</span>
+    <span class="tile-delta">of papers (from {{ "%.0f" % tr.method_share["diffusion"][2022] }}% in 2022)</span></div>
+  {% if fastest %}<div class="tile"><span class="tile-label">Fastest-growing topic</span><span class="tile-value tile-text"><a href="/topics/{{ fastest.slug }}/">{{ topics[fastest.slug].name }}</a></span>
+    <span class="tile-delta up">{{ "%+.0f" % fastest.growth }}% papers in the last 12 months</span></div>{% endif %}
+</div>
+
+<section class="viz-card">
+  <h2>Papers per year</h2>
+  <p class="muted">All topics. * = {{ tr.years[-1] }} so far.</p>
+  {{ charts.per_year | safe }}
+</section>
+
+<section class="viz-card">
+  <h2>Which methods papers use</h2>
+  <p class="muted">Share of each year's papers that use a method (a paper can use several). Same scale in every panel.</p>
+  <div class="multiples">
+    {% for m in charts.methods %}
+    <figure class="multiple"><figcaption>{{ m.label }}</figcaption>{{ m.svg | safe }}</figure>
+    {% endfor %}
+  </div>
+  {{ charts.methods_table | safe }}
+</section>
+
+<section class="viz-card">
+  <h2>Topics: size and growth</h2>
+  <p class="muted">Papers in the last 12 months, change vs the 12 months before, and papers per year since {{ tr.years[0] }}.</p>
+  <div class="topic-tiles">
+    {% for t in growth %}
+    <a class="ttile" href="/topics/{{ t.slug }}/">
+      <span class="ttile-name">{{ topics[t.slug].name }}</span>
+      <span class="ttile-row"><span class="ttile-value">{{ t.last12 }}</span>
+        {% if t.growth is not none %}<span class="tile-delta {{ 'up' if t.growth >= 0 else 'down' }}">{{ "%+.0f" % t.growth }}%</span>{% endif %}</span>
+      {{ t.spark | safe }}
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<div class="viz-two">
+  <section class="viz-card">
+    <h2>Most active labs</h2>
+    <p class="muted">Papers in the last 12 months, labs on the watchlist.</p>
+    {{ charts.labs | safe }}
+  </section>
+  <section class="viz-card">
+    <h2>Top venues</h2>
+    <p class="muted">Journal and conference papers in the last 12 months.</p>
+    {{ charts.venues | safe }}
+  </section>
+</div>
+{% endblock %}

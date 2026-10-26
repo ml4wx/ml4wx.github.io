@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import datetime as dt
+import html
 import logging
 import re
 from collections.abc import Iterator
@@ -28,7 +29,7 @@ def _date(m: dict) -> dt.date | None:
 
 def parse(m: dict, source: str) -> Candidate | None:
     doi = ids.norm_doi(m.get("DOI"))
-    title = " ".join(" ".join(m.get("title") or []).split())
+    title = " ".join(html.unescape(" ".join(m.get("title") or [])).split())
     date = _date(m)
     if not (doi and title and date):
         return None
@@ -44,7 +45,7 @@ def parse(m: dict, source: str) -> Candidate | None:
         date=date,
         abstract=abstract,
         abstract_license_ok=any("creativecommons.org/licenses/by" in u or "publicdomain" in u for u in licenses),
-        venue=" ".join(m.get("container-title") or []) or None,
+        venue=html.unescape(" ".join(m.get("container-title") or [])) or None,
         venue_type="conference" if "proceedings" in kind else "journal" if "journal" in kind else "other",
         links=Links(paper=f"https://doi.org/{doi}"),
         affiliations=[a.get("name", "") for au in m.get("author") or [] for a in au.get("affiliation") or []],

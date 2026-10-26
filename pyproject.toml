@@ -15,7 +15,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-site = ["pagefind[extended]>=1.5"]
+site = ["pagefind[extended]>=1.5", "scikit-learn>=1.5"]
 
 [project.scripts]
 ml4wx = "ml4wx.cli:main"
@@ -36,6 +36,9 @@ target-version = "py312"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.per-file-ignores]
+"src/ml4wx/site/charts.py" = ["E501"]  # SVG markup reads better on one line
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

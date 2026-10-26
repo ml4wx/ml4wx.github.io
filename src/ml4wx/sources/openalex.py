@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import datetime as dt
+import html
 import logging
 import os
 from collections.abc import Iterator
@@ -51,7 +52,7 @@ def _arxiv_from_locations(w: dict) -> str | None:
 
 
 def parse_work(w: dict, source: str) -> Candidate | None:
-    title = " ".join((w.get("title") or "").split())
+    title = " ".join(html.unescape(w.get("title") or "").split())  # OpenAlex keeps some HTML entities
     date = w.get("publication_date")
     if not title or not date:
         return None
@@ -62,7 +63,7 @@ def parse_work(w: dict, source: str) -> Candidate | None:
     loc = w.get("primary_location") or {}
     src = loc.get("source") or {}
     src_type = src.get("type")
-    venue = src.get("display_name")
+    venue = html.unescape(src["display_name"]) if src.get("display_name") else None
     venue_type = {"journal": "journal", "conference": "conference", "repository": "preprint"}.get(
         src_type or "", "other"
     )

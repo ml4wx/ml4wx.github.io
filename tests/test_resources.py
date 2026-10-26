@@ -67,7 +67,7 @@ def test_releases_since_and_site(root):
     paper = (root / "_site" / "papers" / "arxiv-2212.12794" / "index.html").read_text()
     assert "Resources from this paper" in paper and "/models/#graphcast" in paper
     topic = (root / "_site" / "topics" / "global-medium-range" / "index.html").read_text()
-    assert "Datasets, models &amp; tools" in topic and "/datasets/#era5" in topic
+    assert "Data, models &amp; tools to start with" in topic and "/datasets/#era5" in topic
 
 
 def test_catalog_order_public_only_and_tasks(root):
