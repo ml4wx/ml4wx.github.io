@@ -1,0 +1,56 @@
+id: arxiv-2610.32148
+title: 'Covariance-Informed Ensemble Score Filtering: Embedding Localized Covariance Geometry into Score-Based
+  Transport'
+authors:
+- Siming Liang
+- Peter Jan van Leeuwen
+- Hristo G. Chipilski
+- Zezhong Zhang
+- Feng Bao
+- Guannan Zhang
+date: '2026-10-23'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.32148'
+links:
+  paper: https://arxiv.org/abs/2610.32148
+  pdf: https://arxiv.org/pdf/2610.32148
+orgs:
+- ornl
+- colorado-state-university
+topic: data-assimilation
+type: model
+method:
+- diffusion
+spatial:
+- global
+data:
+- other
+status: research
+summary: Covariance-shaped forward diffusion embeds localized error covariance into score-based ensemble
+  filtering, outperforming LETKF under strongly nonlinear observations in Lorenz-96 and SQG tests.
+abstract: Background-error covariance models are central to atmospheric data assimilation because they
+  spread partial observational information across space, variables, and dynamically coupled scales. Ensemble
+  and variational methods exploit this covariance geometry efficiently, but their standard analysis formulations
+  are largely built around Gaussian or locally quadratic approximations. Score-based ensemble filtering
+  provides a framework for nonlinear distributional transport, but existing Ensemble Score Filter (EnSF)
+  formulations lack an intrinsic covariance-mediated pathway for propagating likelihood information from
+  observed to unobserved state components. We introduce a covariance-informed ensemble score filter (CI-EnSF)
+  that embeds localized forecast-error covariance geometry directly into the forward diffusion and reverse
+  transport. The proposed forward diffusion is covariance-shaped in standardized state space and becomes
+  isotropic under the corresponding control-variable transformation. This covariance structure continuously
+  propagates observational information from observed to unobserved state components throughout the reverse
+  transport analysis trajectory. Experiments with Lorenz-96 and surface quasi-geostrophic (SQG) dynamics
+  show a clear regime dependence. For linear observations, a well-tuned LETKF is more accurate, while
+  CI-EnSF maintains stable cycling and effective covariance-mediated information propagation. Under strongly
+  nonlinear observations and under climatological initialization, CI-EnSF achieves lower analysis error
+  and greater cycling robustness than Gaussian ensemble benchmarks such as the LETKF, with improvements
+  extending across spatial scales in the nonlinear SQG experiment. These results suggest that the principal
+  benefit of CI-EnSF arises from combining nonlinear distributional transport with the mature covariance
+  geometry used in conventional data assimilation.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-26'
+source: weekly

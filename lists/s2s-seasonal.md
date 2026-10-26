@@ -5,10 +5,11 @@ Forecasts from 2 weeks to about a year: sub-seasonal, seasonal and ENSO/MJO pred
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/s2s-seasonal/)
 
-521 papers (17 ⭐). Newest first.
+522 papers (17 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-10-23 | [Leveraging Machine Learning and Climate Phase Analysis to Enhance Seasonal Forecasts of Cold Extremes](https://doi.org/10.1088/2515-7620/aeb8ea)<br><sub>Maxwell R.W. Beal, Upmanu Lall, Paul Block · Environmental Research Communications</sub> |  |  |
 | 2026-10-17 | [Application of physically interpretable deep learning in ENSO prediction: status, challenges, and future directions](https://doi.org/10.1007/s12145-026-02273-w)<br><sub>Hao-Lin Jiang, Wei Fang, Yi-Jing Li et al. · Earth Science Informatics</sub> | China Meteorological Administration (CMA), Nanjing University of Information Science & Technology (NUIST) |  |
 | 2026-10-15 | ⭐ [MJO Predictability: Its Sources and Limits](https://doi.org/10.1175/bams-d-25-0345.1)<br><sub>Meriem Krouma, Yakelyn R. Jauregui, Boualem Khouider et al. · Bulletin of the American Meteorological Society</sub> | ECMWF, Fudan University (FuXi), NSF NCAR / UCAR, NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), University of Washington |  |
 | 2026-10-12 | [Recovering climate predictability from sparse observations via dynamical system deep learning](https://doi.org/10.1007/s00382-026-08413-8)<br><sub>Hao Li, Jianping Li, Zixiang Wu et al. · Climate Dynamics</sub> |  |  |
@@ -144,7 +145,7 @@ Forecasts from 2 weeks to about a year: sub-seasonal, seasonal and ENSO/MJO pred
 | 2025-11-13 | [A Case Study on Targeting a Practically Simple Pre-Training Method to Enhance Machine Learning-Based Climate Prediction Models](https://doi.org/10.20944/preprints202511.0988.v1)<br><sub>Xiangjun Shi, Ping Zhou, Nanzhu Qin et al. · Preprints.org</sub> | Nanjing University of Information Science & Technology (NUIST) |  |
 | 2025-11-04 | [A deep learning approach for exploring the physical mechanisms of an flood event](https://doi.org/10.1088/3049-4753/ae1b07)<br><sub>Qifeng Qian, Xiaohui Zhong, Bo Lu et al. · Machine Learning Earth</sub> | China Meteorological Administration (CMA), Fudan University (FuXi), Nanjing University of Information Science & Technology (NUIST), University of Reading |  |
 | 2025-11-04 | [Feature selection for data-driven seasonal forecasts of European heatwaves](https://doi.org/10.1038/s43247-025-02863-4)<br><sub>Ronan McAdam, Jorge Pérez-Aracil, Antonello Squintu et al. · Communications Earth & Environment</sub> |  |  |
-| 2025-11-04 | [Machine learning prediction of summer extreme precipitation days in the middle and lower Yangtze River with SHAP explanation](https://doi.org/10.1016/j.atmosres.2025.108614)<br><sub>Chunyan Xiao, Anmin Duan, Yuheng Tang et al. · Atmospheric Research</sub> |  |  |
+| 2025-11-04 | [Machine learning prediction of summer extreme precipitation days in the middle and lower Yangtze River with SHAP explanation](https://doi.org/10.1016/j.atmosres.2025.108614)<br><sub>Chunyan Xiao, Anmin Duan, Yuheng Tang et al. · Atmospheric Research</sub> | Institute of Atmospheric Physics, Chinese Academy of Sciences, Nanjing University of Information Science & Technology (NUIST) |  |
 | 2025-11-03 | [Diffusion Models Bridge Deep Learning and Physics in ENSO Forecasting](https://arxiv.org/abs/2511.01214)<br><sub>Weifeng Xu, Xiang Zhu, Xiaoyong Li et al.</sub> |  |  |
 | 2025-11-01 | [Sub-seasonal prediction of extreme high temperature over the Yangtze River Basin based on deep learning](https://doi.org/10.1016/j.atmosres.2025.108602)<br><sub>Shifeng Pan, Zhicong Yin, Yi Fan et al. · Atmospheric Research</sub> | Institute of Atmospheric Physics, Chinese Academy of Sciences, Nanjing University of Information Science & Technology (NUIST) |  |
 | 2025-10-30 | [AI-Driven Climate Forecasting: Performance Assessment and Hybrid Modeling Using AIML](https://doi.org/10.1109/iccica67008.2025.11337338)<br><sub>Kamini Tanwar, K. Agarwal, Suman Mann · 2025 2nd International Conference on Computational Intelligence and Computing Applications (ICCICA)</sub> |  |  |

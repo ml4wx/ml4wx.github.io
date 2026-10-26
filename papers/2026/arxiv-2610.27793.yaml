@@ -1,0 +1,61 @@
+id: arxiv-2610.27793
+title: 'TerraNostra-Bench: Benchmarking Spatial Downscaling and Temporal Rollout for Global 1-km Land-Use
+  Reconstruction'
+authors:
+- Amirpasha Mozaffari
+- Marina Castaño
+- Stefano Materia
+- Joan Vedrí
+- Jordi Varela-Agrelo
+- Dario Garcia-Gasulla
+- Etienne Tourigny
+- Mario Acosta
+- Amanda Duarte
+date: '2026-10-20'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.27793'
+  openalex: W7223133573
+links:
+  paper: https://arxiv.org/abs/2610.27793
+  pdf: https://arxiv.org/pdf/2610.27793
+topic: benchmarks-data-eval
+topics:
+- downscaling
+type: benchmark
+method:
+- cnn
+- transformer
+timescale:
+- climate
+spatial:
+- global
+data:
+- other
+status: research
+summary: Introduces TerraNostra-Bench, a change-aware benchmark for 1-km annual land-use maps, showing
+  autoregressive U-Net and Swin rollouts lose 5.7-7.2 accuracy points over 13 years.
+abstract: 'Uncertainty in the terrestrial carbon cycle remains a major constraint in climate projections,
+  partly due to imperfect land surface representations in Earth system models. We propose a data-driven
+  framework for high-resolution land-use reconstruction, treated as a semantic-segmentation task, that
+  combines coarse-resolution scenario data and climate classification with static geophysical features
+  to produce annual land-use maps at 1 km resolution. We introduce TerraNostra-Bench, a change-aware evaluation
+  protocol that separates spatial downscaling from autoregressive temporal rollout and scores models on
+  the rare land-use-change pixels rather than the dominant static background. Using it, we compare convolutional
+  (U-Net) and transformer (Swin) backbones in autoregressive and non-autoregressive schemes against persistence,
+  linear, and shallow convolutional baselines. The autoregressive prior is the most informative input
+  yet accumulates error over long rollouts: autoregressive models lose 5.7-7.2 accuracy points over 13
+  years, against 2.2-2.8 for non-autoregressive models. This trade-off is governed by the autoregressive
+  choice rather than the backbone. It can be tuned by an inference-time prior-trust threshold that requires
+  no retraining and by the training-time weighting of reconstruction and change objectives; the two levers
+  trace complementary frontiers, with calibration recovering up to 10 accuracy points while keeping change
+  sensitivity above the persistence floor. Extrapolating beyond the training window, backward to 1955-1959
+  and forward to 2015-2019 under scenario forcing, the models retain most of their in-window skill and
+  show the same trade-off, indicating it is intrinsic to the design. This work provides the methodological
+  foundation and evaluation surface for a forthcoming temporally continuous land-use product.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-26'
+source: weekly

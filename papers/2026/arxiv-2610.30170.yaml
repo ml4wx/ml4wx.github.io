@@ -1,0 +1,59 @@
+id: arxiv-2610.30170
+title: Accelerating Wildfire Hazard Mapping Across Canada with an AI Surrogate Modelling Framework
+authors:
+- Hager Radi Abdelwahed
+- Toluwaleke Olutayo
+- Chirag Goel
+- Jana Osea
+- Aldo Zaimi
+- Tom Swystun
+- Sandy Erni
+- Francisco Emiliano Lopez Saavedra
+- Yan Boulanger
+- Gaétan Marceau Caron
+date: '2026-10-16'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.30170'
+links:
+  paper: https://arxiv.org/abs/2610.30170
+  pdf: https://arxiv.org/pdf/2610.30170
+orgs:
+- eccc
+topic: extremes-hazards
+topics:
+- applications-impacts
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Multi-task deep surrogate emulates BurnP3+ wildfire burn probability and intensity across Canada,
+  giving 806-fold CPU speedup while preserving hazard classifications.
+abstract: 'Canada''s increasing wildfire activity requires frequent national hazard mapping to guide proactive
+  mitigation, including fuel management, land-use planning, infrastructure protection, and evacuation
+  routing. However, process-based wildfire simulation frameworks (e.g., BurnP3 and BurnP3+) rely on computationally
+  intensive Monte Carlo simulations to model burn probability, fire intensity, and rate of spread. These
+  workflows can take days to weeks to process a single regional modelling unit. To overcome these computational
+  bottlenecks, we present three contributions developed through collaboration between AI researchers and
+  wildfire modelling experts: (a) a standardized framework for training, fine-tuning, and evaluating AI
+  surrogate models against process-based wildfire simulators; (b) a multi-task deep learning surrogate
+  trained on national-scale data to emulate burn probability, mean fire intensity, and mean rate of spread
+  at a fraction of the computational cost (seconds); and (c) domain-specific metrics and counterfactual
+  evaluation protocols to probe out-of-distribution generalization. Integrating geospatial data (fuel,
+  terrain, ignition likelihood) and regional weather, our model approximates BurnP3+ simulation outputs,
+  achieving strong performance across agreement, rank-correlation, error, and spatial-overlap metrics.
+  It preserves downstream hazard classifications and produces physically plausible responses to expert-informed
+  counterfactual interventions. Furthermore, we demonstrate zero-shot transfer to a separate regional
+  BurnP3+ study and show that lightweight fine-tuning can substantially improve regional calibration and
+  predictive agreement. On a representative region, the surrogate achieves 806-fold end-to-end CPU acceleration
+  and uses 13% of BurnP3+''s host memory, facilitating rapid scenario analysis.'
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-26'
+source: weekly

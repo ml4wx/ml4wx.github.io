@@ -5,11 +5,14 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/benchmarks-data-eval/)
 
-196 papers (9 ⭐). Newest first.
+199 papers (10 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-10-22 | ⭐ [NNJA—a curated archive of Earth system observations from 1970s to present for reanalysis and data-driven model development](https://doi.org/10.1175/bams-d-25-0157.1)<br><sub>Frolov Sergey, Jessica Knezha, Jeff Whitaker et al. · Bulletin of the American Meteorological Society</sub> | NASA, NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), NSF NCAR / UCAR, Brightband |  |
+| 2026-10-20 | [TerraNostra-Bench: Benchmarking Spatial Downscaling and Temporal Rollout for Global 1-km Land-Use Reconstruction](https://arxiv.org/abs/2610.27793)<br><sub>Amirpasha Mozaffari, Marina Castaño, Stefano Materia et al.</sub> |  |  |
 | 2026-10-18 | [Beyond the record: evaluating probabilistic AI weather forecasts deep in the tail](https://arxiv.org/abs/2610.25545)<br><sub>Bas van Velthoven, Cas Decancq, Diego G. Miralles et al.</sub> |  |  |
+| 2026-10-17 | [A Simple Climatology Benchmark Outperforms Machine-Learning Lightning Parameterizations](https://doi.org/10.22541/essoar.15010630/v1)<br><sub>Andreas Krause, Anja Rammig</sub> | Technical University of Munich (TUM) |  |
 | 2026-10-15 | [Digital Typhoon Dataset V3: Benchmarking for Multi-spectral Extension and Analyzing Systematic Bias in Intensity Regression](https://arxiv.org/abs/2610.21654)<br><sub>Asanobu Kitamoto, Victor Le Louarn, Noelia Falczuk et al.</sub> |  | [code](https://github.com/kitamoto-lab/digital-typhoon) |
 | 2026-10-13 | [Physics vs. AI in weather prediction: evaluating GraphCast, AIFS, and FuXi against an observation-corrected WRF model for flash floods](https://doi.org/10.5194/gmd-19-9831-2026)<br><sub>Haseeb ur Rehman, Felix Norman Teferle · Geoscientific model development</sub> |  |  |
 | 2026-10-03 | ⭐ [ClimateBench v2.0: Probabilistic Climate Model Benchmarking](https://arxiv.org/abs/2610.04558)<br><sub>Duncan Watson-Parris, Willa Tobin, Aytaç Paçal et al.</sub> | Allen Institute for AI (Ai2, ACE), California Institute of Technology (Caltech), Columbia University (LEAP, Lamont-Doherty), Google Research, Lawrence Berkeley National Laboratory / NERSC, MET Norway (Norwegian Meteorological Institute), Met Office, NASA, NSF NCAR / UCAR, NVIDIA, New York University (M2LInES), University of California, Los Angeles (UCLA), University of Chicago |  |
@@ -208,6 +211,9 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 
 ## Also relevant
 
+- [Evaluation of vegetation above-ground biomass carbon from CMIP6 ESMs using global satellite-based estimates](https://doi.org/10.1088/2515-7620/aeb7c9) (2026)
+- [Detection of East Asian Atmospheric Rivers Based on Physically Constrained Dual‐Threshold Methods and Deep Learning Algorithms](https://doi.org/10.1029/2026jd047067) (2026)
+- [Wet-Biased Data Pipelines Mislead the Training and Evaluation of Generative Precipitation Nowcasting](https://arxiv.org/abs/2610.26486) (2026)
 - [MJO Predictability: Its Sources and Limits](https://doi.org/10.1175/bams-d-25-0345.1) (2026)
 - [Spatio-temporal graph foundation models for earth system intelligence: an end-to-end, continual, and multimodal learning framework](https://doi.org/10.1007/s12145-026-02264-x) (2026)
 - [EarthAlign: Learning Language-Aligned Representations of Earth System Data](https://arxiv.org/abs/2610.14624) (2026)

@@ -5,11 +5,14 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/nowcasting/)
 
-841 papers (6 ⭐). Newest first.
+844 papers (6 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-10-21 | [Physics-Informed Neural Network Emulation of Convective Storm Initiation over the Sahel: Calibration Bounds and Warning-Lead-Time Equity for Climate Analytics](https://doi.org/10.5281/zenodo.23545314)<br><sub>Omar Abdelaziz Hegazy · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
+| 2026-10-21 | [Investigating the Use of Geostationary Satellites to Identify Thunderstorm Initiation with the LightningCast and ThunderCast Machine Learning Models](https://doi.org/10.1175/waf-d-25-0250.1)<br><sub>Stephanie M. Ortland, Michael J. Pavolonis, Lena Heuscher · Weather and Forecasting</sub> | NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), Colorado State University (incl. CIRA) |  |
 | 2026-10-19 | [Identification of Atmospheric Dynamics of a Tropical Hail Event and Application of Radar Reflectivity Nowcasting Using a UNet-ConvLSTM2D Deep Learning Model](https://doi.org/10.26877/lpt.v5i3.1087)<br><sub>Muhizzadin Abdul Adzan, Deni Septiadi, A. Mulsandi et al. · Lontar Physics Today</sub> |  |  |
+| 2026-10-19 | [Wet-Biased Data Pipelines Mislead the Training and Evaluation of Generative Precipitation Nowcasting](https://arxiv.org/abs/2610.26486)<br><sub>Christoph Metzl, Stefan Kapsreiter, Kianusch Vahid Yousefnia et al.</sub> | Deutscher Wetterdienst (DWD) |  |
 | 2026-10-13 | [Spatiotemporal Conditional Diffusion with a Vision-Language Model: Spatial Quality Modeling for Adaptive Fusion of Radar Forecasts](https://doi.org/10.3390/atmos17101005)<br><sub>Xin-Wei Qian, Yun-Fei Zhang, Lu Peng et al. · Atmosphere</sub> | China Meteorological Administration (CMA) |  |
 | 2026-10-13 | [Physics-informed deep learning for short-term precipitation prediction using GNSS radio occultation wet-profile retrievals](https://doi.org/10.1016/j.jastp.2026.106993)<br><sub>Freidoon Keshavarz Hedayati, Masoud Mashhadi-Hossainali, Mehdi Eshagh · Journal of Atmospheric and Solar-Terrestrial Physics</sub> |  |  |
 | 2026-10-13 | [PING: physics informed graph neural network for advection-diffusion processes with applications to solar power forecasting](https://arxiv.org/abs/2610.18280)<br><sub>Jelena Simeunović, Baptiste Schubnel, Pierre-Jean Alet et al.</sub> |  |  |

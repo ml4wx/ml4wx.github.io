@@ -1,0 +1,52 @@
+id: arxiv-2610.25370
+title: Multi-site Learning for Forecasting Day-Ahead Wind-Power Production for Onshore Wind Farms in Great
+  Britain with Deep Neural Networks
+authors:
+- James Kean
+- Aidan O'Sullivan
+date: '2026-10-18'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.25370'
+  openalex: W7223032397
+links:
+  paper: https://arxiv.org/abs/2610.25370
+  pdf: https://arxiv.org/pdf/2610.25370
+topic: applications-impacts
+type: application
+method:
+- rnn
+- classical-ml
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+- nwp-analysis
+status: research
+summary: Multi-site bidirectional RNN for Great Britain day-ahead wind power forecasts cuts MAE 17.94%
+  relative to NESO using NWP weather trajectories across 88 wind farms.
+abstract: Accurate day-ahead wind-power production forecasting is increasingly important for energy system
+  operations, market activity and balancing Great Britain's grid as wind generation grows. In this study,
+  we train multi-site deep neural networks (DNNs) using pooled historical production and reanalysis weather
+  data from 88 onshore wind Balancing Mechanism Units (BMUs). Forecasts are produced at 09:00 UK time
+  for the following midnight-to-midnight delivery day, matching NESO's operational day-ahead forecasting
+  schedule. We use reanalysis weather as future covariates during training and numerical weather prediction
+  (NWP) forecasts during inference, extending training beyond the available historical NWP archive. Our
+  multi-site recurrent neural network outperforms site-specific RNNs and a multi-site XGBoost model, while
+  processing the full future-weather trajectory for the forecast horizon further improves accuracy relative
+  to hour-aligned approaches. Our best model, an RNN with a bidirectional weather encoder (BiRNN) for
+  NWP trajectory processing, reduces MW mean absolute error and root mean squared error relative to NESO
+  by 17.94% and 12.51%, respectively, across 638,246 matched BMU-hour observations under conditions approximating
+  unconstrained wind farm operations. In 40 leave-one-out trials, the BiRNN achieves lower MAE than NESO
+  at 32 excluded sites, indicating transferable forecasting ability despite reduced accuracy when sites
+  are omitted from training. Our capacity-estimation, data-cleaning and reanalysis-based training approach
+  provides a basis for scaling NWP-aware multi-site forecasting to additional wind farms, longer production
+  histories, and increased forecast accuracy beyond that seen in this study.
+significance: 3
+score: 12
+highlight: false
+added: '2026-10-26'
+source: weekly

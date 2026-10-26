@@ -5,11 +5,13 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/observations-remote-sensing/)
 
-1135 papers (0 ⭐). Newest first.
+1137 papers (0 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-10-22 | [Vision Transformers for Estimating Irradiance Using Data Scarce Sky Images](https://arxiv.org/abs/2610.30940)<br><sub>David Hamlyn, Sunny Chaudhary, Tasmiat Rahman · Energy and AI 21 (2025), 100560</sub> |  |  |
 | 2026-10-21 | [Huayu-Global: Skillful real-time quasi-global precipitation retrieval](https://arxiv.org/abs/2610.29213)<br><sub>Zi-Jiang Song, Shuang Yang, Yu-Ying Li et al.</sub> |  |  |
+| 2026-10-17 | [UDL-RT: A unified differentiable all-sky microwave radiative transfer model with learnable parameterizations](https://arxiv.org/abs/2610.24627)<br><sub>Zeting Li, Wei Han, Jie Peng et al.</sub> | Nanjing University of Information Science & Technology (NUIST), China Meteorological Administration (CMA) |  |
 | 2026-10-14 | [Integrated Novelty Detection Systems: From Sensor Networks to Multi-Novelty Computer Vision](https://arxiv.org/abs/2610.19347)<br><sub>Irené Tematelewo</sub> |  |  |
 | 2026-10-09 | [Enhancing FY-3E/VASS Humidity Profiles During a Cloudy Atmospheric River Event Using Clear-Sky FY-4B/GIIRS Guidance](https://doi.org/10.3390/rs18203447)<br><sub>Hanzhen Yan, Jieying He, Yang Guo · Remote Sensing</sub> | China Meteorological Administration (CMA) |  |
 | 2026-10-08 | [Bias Assessment and Correction of Atmospheric Temperature and Vapor Density Profiles from Six Ground-Based Microwave Radiometers over Wuhan](https://doi.org/10.3390/rs18193445)<br><sub>Aning Gou, Weifa Yang, Kangyi Zhu et al. · Remote Sensing</sub> | China Meteorological Administration (CMA) |  |
@@ -1147,6 +1149,9 @@ ML on satellite, radar and in-situ observations for weather and climate: retriev
 
 ## Also relevant
 
+- [NNJA—a curated archive of Earth system observations from 1970s to present for reanalysis and data-driven model development](https://doi.org/10.1175/bams-d-25-0157.1) (2026)
+- [A Downscaling–Calibration Framework for GPM Precipitation Data Based on Geographically Weighted Machine Learning: A Case Study of the Yellow River Basin, China](https://doi.org/10.3390/rs18203597) (2026)
+- [Leveraging satellite products and machine learning/deep learning models for the upgrading of agro-advisory systems in India: A bibliometric and systematic narrative review](https://doi.org/10.14719/pst.16505) (2026)
 - [Electrostatic and Surfactant-Enhanced Cellulose Nanocrystal Cloud Seeding With Machine Learning-Based Spatiotemporal Targeting](https://doi.org/10.5281/zenodo.23340953) (2026)
 - [Physics-informed deep learning for short-term precipitation prediction using GNSS radio occultation wet-profile retrievals](https://doi.org/10.1016/j.jastp.2026.106993) (2026)
 - [Precipitation nowcasting model based on multi-source data fusion and efficient additive attention](https://doi.org/10.1038/s41598-026-72326-z) (2026)

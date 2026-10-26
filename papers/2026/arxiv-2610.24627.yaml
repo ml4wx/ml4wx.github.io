@@ -1,0 +1,60 @@
+id: arxiv-2610.24627
+title: 'UDL-RT: A unified differentiable all-sky microwave radiative transfer model with learnable parameterizations'
+authors:
+- Zeting Li
+- Wei Han
+- Jie Peng
+- Xuewei Zhang
+- Xiaofeng Wang
+- Xueshun Shen
+date: '2026-10-17'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.24627'
+  openalex: W7223007227
+links:
+  paper: https://arxiv.org/abs/2610.24627
+  pdf: https://arxiv.org/pdf/2610.24627
+orgs:
+- nuist
+- cma
+topic: observations-remote-sensing
+topics:
+- data-assimilation
+- hybrid-parameterization
+type: model
+method:
+- differentiable
+- physics-constrained
+spatial:
+- global
+data:
+- satellite
+status: research
+summary: Differentiable PyTorch microwave radiative transfer model with NN gas-absorption and snow scattering
+  parameterizations; cuts water-vapour brightness-temperature error spread 60-85% versus linear regression.
+abstract: Radiance-based retrievals and data assimilation require radiative transfer models (RTMs) to
+  simulate radiances and quantify their sensitivities to atmospheric and surface conditions. Conventional
+  RTMs often rely on separately maintained forward, tangent-linear, and adjoint codes, complicating model
+  development and extension. Here, we present the Unified Differentiable and Learnable Radiative Transfer
+  model (UDL-RT), a PyTorch-based framework for all-sky microwave radiative transfer that couples neural-network
+  (NN) parameterizations of gaseous absorption, hydrometeor bulk scattering properties (BSPs), and ocean
+  surface emissivity with an explicit radiative transfer solver in a unified differentiable computational
+  graph. Automatic differentiation directly computes Jacobians with respect to input variables, reducing
+  the model maintenance burden. The NN parameterizations offer flexible representations of complex nonlinear
+  relationships. For example, the NN gas-absorption parameterization reduces the standard deviation of
+  brightness-temperature (TB) errors by approximately 60-85% in the water-vapour channels compared with
+  linear regression. Moreover, UDL-RT propagates loss gradients to trainable parameters to optimize physical
+  parameterizations against observations, with GPU-accelerated batched computation supporting efficient
+  iterative learning. Using Microwave Humidity Sounder-2 (MWHS-2) observations, we optimize the snow BSP
+  parameterization through gradient-based learning. The optimized parameterization improves agreement
+  between simulated and observed TB distributions and reduces the systematic bias and skewness of observation-minus-background
+  (O-B) departures. Overall, UDL-RT integrates radiance simulation, sensitivity analysis, and parameterization
+  optimization within a unified framework, supporting future remote sensing retrieval and data assimilation
+  applications.
+significance: 4
+score: 26
+highlight: false
+added: '2026-10-26'
+source: weekly

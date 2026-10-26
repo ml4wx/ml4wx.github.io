@@ -5,15 +5,17 @@ Statistical post-processing of NWP or ML forecasts: bias correction, ensemble ca
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/post-processing/)
 
-679 papers (3 ⭐). Newest first.
+681 papers (3 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-10-19 | [TC-ANet 1: A temporally joint model for post-processing ensemble weather forecasts for in-situ locations and multiple target variables](https://doi.org/10.5194/egusphere-2026-3490)<br><sub>Peter Mlakar, Jana Faganeli Pucer</sub> |  |  |
+| 2026-10-18 | [Declining Surface Solar Radiation Resources in Polar Regions Under Global Warming](https://doi.org/10.1029/2026gl125763)<br><sub>Liangke Huang, Xiong Ling, Zhaoliang Zeng et al. · Geophysical Research Letters</sub> | China Meteorological Administration (CMA) |  |
 | 2026-10-09 | [Diffusion Precipitation Generation with Medium-range Weather Forecasting](https://arxiv.org/abs/2610.12976)<br><sub>Guowen Li, Yang Liu, Mengxuan Chen et al.</sub> |  |  |
 | 2026-10-06 | [Model output statistics for enhancing dynamically downscaled temperature prediction from FuXi-ENS over South Korea](https://doi.org/10.1038/s41598-026-72015-x)<br><sub>Zeqing Huang, Eun‐Soon Im, Subin Ha et al. · Scientific Reports</sub> | Fudan University (FuXi) |  |
 | 2026-10-02 | [Spatial Data Fusion and Machine Learning Bias Correction for Convection-Permitting Atmospheric Downscaling and Multi-Criteria Site Feasibility Mapping in Complex Coastal Terrains](https://doi.org/10.3390/technologies14100634)<br><sub>Andres Valle-Gonzalez, Maryam Carrillo-Reales, Adalberto José Ospino Castro et al. · Technologies</sub> |  |  |
 | 2026-10-01 | [Regime-Aware Deep Learning Post-Processing of NWP Rainfall Forecasts over India](https://doi.org/10.5281/zenodo.23084473)<br><sub>Priyani Sabde, Karan Rathod, Pooja Aaglave et al. · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
-| 2026-10-01 | [Using a U-Net-Based Correction Model to Improve CWRF Subseasonal Prediction of Summer Rainfall over China](https://doi.org/10.1007/s13351-026-5291-6)<br><sub>Yu-Nuo Li, Qing-Quan Li, Meng-Chu Zhao et al. · Journal of Meteorological Research</sub> |  |  |
+| 2026-10-01 | [Using a U-Net-Based Correction Model to Improve CWRF Subseasonal Prediction of Summer Rainfall over China](https://doi.org/10.1007/s13351-026-5291-6)<br><sub>Yu-Nuo Li, Qing-Quan Li, Meng-Chu Zhao et al. · Journal of Meteorological Research</sub> | China Meteorological Administration (CMA), Nanjing University of Information Science & Technology (NUIST) |  |
 | 2026-09-29 | [From Empirical Error Dynamics to Cross-Domain Operational NWP Post-Processing: A Process-Disentangled Dual-Axis Attention Framework for Diurnal Hysteresis, Leptokurtic Busts, and Arid Climate Transfer](https://doi.org/10.5281/zenodo.23037477)<br><sub>lilia mokhtari · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
 | 2026-09-29 | [Methodological Changes to the Attention ResUNet Hourly Precipitation Postprocessor](https://arxiv.org/abs/2609.38609)<br><sub>Thomas M. Hamill</sub> |  |  |
 | 2026-09-25 | [TaiJi: State-Conditional Adaptive Combination of Machine-Learning and Physics-Based Global Weather Forecasts](https://arxiv.org/abs/2609.31972)<br><sub>Jiale Wang, Yining Li, Guihua Wang</sub> | Fudan University (FuXi) |  |
@@ -691,6 +693,7 @@ Statistical post-processing of NWP or ML forecasts: bias correction, ensemble ca
 
 ## Also relevant
 
+- [GraphCast-Mamba: Learning Non-Markovian Corrections for Weather Forecasting](https://arxiv.org/abs/2610.28512) (2026)
 - [Observation Assimilation Transformer: Probabilistic Weather Analysis from Sparse Station Observations](https://arxiv.org/abs/2610.28327) (2026)
 - [Advancing Global Short-Term Wildfire Forecasting with Wildfire-Specific Spatiotemporal Deep Learning](https://doi.org/10.1021/acsestair.6c00313) (2026)
 - [Bias Assessment and Correction of Atmospheric Temperature and Vapor Density Profiles from Six Ground-Based Microwave Radiometers over Wuhan](https://doi.org/10.3390/rs18193445) (2026)

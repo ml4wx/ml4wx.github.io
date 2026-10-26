@@ -1,0 +1,52 @@
+id: arxiv-2610.28512
+title: 'GraphCast-Mamba: Learning Non-Markovian Corrections for Weather Forecasting'
+authors:
+- Ilya Vilkoviskiy
+- Liang-Hong Mo
+- Suozhi Huang
+- Dmitry A. Abanin
+date: '2026-10-20'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.28512'
+links:
+  paper: https://arxiv.org/abs/2610.28512
+  pdf: https://arxiv.org/pdf/2610.28512
+orgs:
+- google-research
+- princeton-university
+topic: global-medium-range
+topics:
+- post-processing
+type: model
+method:
+- gnn
+- other
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Adds a trainable Mamba and graph correction branch to a frozen GraphCast, cutting ten-day forecast
+  MSE by 14.4% and day-10 MSE by 21.7%.
+abstract: Unresolved atmospheric processes can introduce history dependence beyond the short input windows
+  used by many weather forecasting models. We introduce GraphCast--Mamba, which augments a frozen, pretrained
+  $1^\circ$ GraphCast backbone with a trainable Mamba correction branch combining graph message passing
+  and Mamba layers. The branch retains a temporal memory state across successive six-hour forecast steps,
+  learning corrections informed by temporal context beyond GraphCast's two-frame input. Training is confined
+  to the correction branch, using ERA5 data from 2015--2021. After 2,500 optimizer updates, including
+  warm-up, the selected model achieves substantial improvements relative to the uncorrected GraphCast
+  backbone. It reduces the GraphCast loss (normalized weighted mean-squared error; MSE) by 14.42% when
+  aggregated over the full ten-day forecast and by 21.66% at day 10 (240 h after forecast initialization).
+  At this final forecast lead time, root-mean-square error (RMSE) decreases by 7.09--14.60% across all
+  11 evaluated variable groups, spanning temperature, wind, pressure, geopotential, specific humidity,
+  and precipitation. These results demonstrate broad improvements in ten-day weather forecasts through
+  a short correction-training schedule while retaining the pretrained backbone.
+significance: 4
+score: 51
+highlight: false
+added: '2026-10-26'
+source: weekly

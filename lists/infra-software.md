@@ -97,6 +97,7 @@ Frameworks, training and inference at scale, HPC, and compression of weather and
 
 ## Also relevant
 
+- [UtoMe: Observation-Uncertainty-Guided Token Merging for Weather Foundation Models](https://arxiv.org/abs/2610.25001) (2026)
 - [Building AI–Physics Digital Twins for Hurricanes With FourCastNet v2 and ERF](https://doi.org/10.5281/zenodo.23327490) (2026)
 - [AIGFS v1.1 Development and Performance](https://doi.org/10.25923/ypcz-c273) (2026)
 - [HeatPre: Efficient Diffusion-Inspired Precipitation Nowcasting for Edge Weather Intelligence](https://doi.org/10.1109/jiot.2026.3718038) (2026)

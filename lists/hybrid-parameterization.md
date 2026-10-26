@@ -5,11 +5,13 @@ ML inside physical models: subgrid parameterizations (convection, clouds, radiat
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/hybrid-parameterization/)
 
-424 papers (28 ⭐). Newest first.
+426 papers (29 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
-| 2026-10-14 | [Improved Precipitation Variability in the Community Atmosphere Model through Implementation of a Neural-Network Deep Convection Scheme](https://arxiv.org/abs/2610.20405)<br><sub>Xavier J. Levine, Griffin Mooers, Judith Berner et al.</sub> |  |  |
+| 2026-10-19 | [From Physics-Based Parameterization to Data-Driven Emulation of Planetary Boundary Layer Turbulence in BAM- 1D](https://doi.org/10.21203/rs.3.rs-10620663/v1)<br><sub>Antonio Vicente Pereira Neto, Enver Manuel Amador, Ramirez Gutierrez et al. · Research Square</sub> |  |  |
+| 2026-10-19 | [Physics-anchored residual quantum neural networks for cloud-cover parameterization](https://arxiv.org/abs/2610.26279)<br><sub>Zhuo Wang, Ce Yu, Bin Yang</sub> |  |  |
+| 2026-10-14 | ⭐ [Improved Precipitation Variability in the Community Atmosphere Model through Implementation of a Neural-Network Deep Convection Scheme](https://arxiv.org/abs/2610.20405)<br><sub>Xavier J. Levine, Griffin Mooers, Judith Berner et al.</sub> | Columbia University (LEAP, Lamont-Doherty), Google Research, Massachusetts Institute of Technology (MIT), NSF NCAR / UCAR, University of Cambridge (Aardvark) |  |
 | 2026-10-10 | [A Machine Learning Framework Toward the Parameterization of Mesoscale Ocean-Atmosphere Interactions](https://doi.org/10.22541/essoar.15010198/v1)<br><sub>Nicolas Ernout, Lionel Renault, Ehouarn Simon et al.</sub> |  |  |
 | 2026-10-02 | [AEGIS: Differentiable Mars Climate Model with Neural Closures](https://arxiv.org/abs/2610.04081)<br><sub>Sameera S Kashyap, Victor Cruz, Angel Yepez et al.</sub> |  |  |
 | 2026-09-28 | [Su\^etes: An end-to-end differentiable non-hydrostatic limited-area dynamical core](https://arxiv.org/abs/2609.36381)<br><sub>Tim Whittaker, Seth Taylor, E. Cardoso-Bihlo et al.</sub> |  |  |
@@ -436,6 +438,8 @@ ML inside physical models: subgrid parameterizations (convection, clouds, radiat
 
 ## Also relevant
 
+- [Batched NN 4D-Var: a performant hybrid model framework for the Integrated Forecasting System](https://arxiv.org/abs/2610.32582) (2026)
+- [UDL-RT: A unified differentiable all-sky microwave radiative transfer model with learnable parameterizations](https://arxiv.org/abs/2610.24627) (2026)
 - [Unmasking Compensating Errors in Numerical Weather Models: A Process-Additive Neural Network Approach](https://arxiv.org/abs/2610.19772) (2026)
 - [Evaluating LLMs for Translating Legacy Fortran Atmospheric Physics to GPU-Accelerated JAX](https://arxiv.org/abs/2610.12662) (2026)
 - [legoESM: a modular, differentiable, multiscale, AI-ready Earth system model built with AI agents](https://arxiv.org/abs/2610.11883) (2026)

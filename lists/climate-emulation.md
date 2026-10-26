@@ -5,10 +5,11 @@ Emulators of climate models and long stable rollouts (decades to centuries), sce
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/climate-emulation/)
 
-238 papers (9 ⭐). Newest first.
+239 papers (9 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-10-24 | [Sparse Gaussian-process emulation of regional climate projections with active budget allocation: a computer-science evaluation of tail-quantile fidelity in adaptation screening](https://doi.org/10.5281/zenodo.23606751)<br><sub>Hery Andrianirina, Fanja Rakotomalala Rasoanaivo, Tahina Randrianasolo · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
 | 2026-10-15 | [CLAIMA: AI emulators trained to run climate models for a new generation of AI driven Digital Twins](https://doi.org/10.5281/zenodo.23399795)<br><sub>Claudia d'Onofrio, Roberta Fabrizi, Nikolay Koldunov · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
 | 2026-10-15 | [Global temperature forecasting using multimodal machine learning: An empirical study integrating CO](https://doi.org/10.1051/epjconf/202639101005/pdf)<br><sub>Neeraj Choudhary, Sheetal Abhijit Kulkarni · Springer Link (Chiba Institute of Technology)</sub> |  |  |
 | 2026-10-14 | [Variable Masking for Climate Emulation in ACE](https://arxiv.org/abs/2610.21012)<br><sub>Alexey Yermakov, Troy Arcomano, Jeremy McGibbon et al.</sub> | Allen Institute for AI (Ai2, ACE), University of Washington | [code](https://github.com/ai2cm/ace) |
@@ -250,6 +251,7 @@ Emulators of climate models and long stable rollouts (decades to centuries), sce
 
 ## Also relevant
 
+- [Certified OOD Detection for Artificial Intelligence Climate Emulators Under Unseen Forcing Scenarios: Score Bounds and Seasonal Forecast Safety](https://doi.org/10.5281/zenodo.23545447) (2026)
 - [Evaluating Predictor-Corrector Dependence in Hard-Constrained Climate Emulators](https://arxiv.org/abs/2610.23561) (2026)
 - [Atmospheric Chemistry-Climate Modeling with an AI Foundation Model](https://arxiv.org/abs/2610.22555) (2026)
 - [Improved Precipitation Variability in the Community Atmosphere Model through Implementation of a Neural-Network Deep Convection Scheme](https://arxiv.org/abs/2610.20405) (2026)
