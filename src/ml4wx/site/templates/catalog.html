@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+{% set nav = pg.path %}
+{% block title %}{{ pg.title }} · {{ site.title }}{% endblock %}
+{% block description %}{{ pg.intro }}{% endblock %}
+
+{% macro row(x) %}
+{% set r = x.r %}
+<li class="row" id="{{ r.slug }}" data-order="{{ x.order }}" data-stars="{{ x.stars }}"
+  data-release="{{ x.release.date or x.pushed or '' }}" data-name="{{ r.name | lower }}"
+  data-text="{{ (r.name ~ ' ' ~ r.provider ~ ' ' ~ r.description ~ ' ' ~ (r.get('coverage') or '') ~ ' ' ~ (r.get('training_data') or '')) | lower }}"
+  {% for k, vals in x.facets.items() %}data-f-{{ k }}="{{ vals | join(' ') }}" {% endfor %}>
+  <div class="row-main">
+    <div class="row-head">
+      <a class="row-name" href="{{ r.url or r.docs or ('https://github.com/' ~ r.repo) }}">{{ r.name }}</a>
+      {% if r.rank and r.rank <= 10 %}<span class="pop" title="One of the most used">Popular</span>{% endif %}
+      <span class="row-type">{{ res_vocab.kinds[r.kind].categories.get(r.category, r.category) }}</span>
+      {% if r.kind == "model" and r.get("operational") %}<span class="row-flag">Operational</span>{% endif %}
+      {% if x.archived %}<span class="row-flag warn">Archived</span>{% endif %}
+    </div>
+    <p class="row-desc">{{ x.summary }}</p>
+    <p class="row-meta">
+      {{ r.provider }}
+      {% if r.kind == "dataset" %}{% if r.get("coverage") %} · {{ r.get("coverage") | truncate(90, True, "…") }}{% endif %}{% if r.get("access") == "registration" %} · free registration{% endif %}
+      {% elif r.kind == "model" %}{% if r.get("resolution") %} · {{ r.get("resolution") | truncate(40, True, "…") }}{% endif %}{% if r.get("lead_time") %} · {{ r.get("lead_time") | truncate(40, True, "…") }}{% endif %}
+      {% else %}{% if r.get("tasks") %} · {% for t in r.get("tasks") %}{{ res_vocab.tasks.get(t, t) | lower }}{{ ", " if not loop.last }}{% endfor %}{% endif %}{% endif %}
+    </p>
+  </div>
+  <div class="row-links">
+    {% if r.docs %}<a href="{{ r.docs }}">Docs</a>{% elif r.url %}<a href="{{ r.url }}">Website</a>{% endif %}
+    {% if r.get("access_url") %}<a href="{{ r.get('access_url') }}">Data</a>{% endif %}
+    {% if r.repo %}<a href="https://github.com/{{ r.repo }}">Code{% if x.stars %} <span class="stars">★ {{ x.stars | compact }}</span>{% endif %}</a>{% endif %}
+    {% if r.get("weights") %}<a href="{{ r.get('weights') }}">Weights</a>{% endif %}
+    {% if r.paper %}{% set pid = paper_ids.get(r.kind ~ '/' ~ r.slug) %}<a href="{{ '/papers/' ~ pid ~ '/' if pid else ('https://arxiv.org/abs/' ~ r.paper.arxiv if r.paper.arxiv else 'https://doi.org/' ~ r.paper.doi) }}">Paper</a>{% endif %}
+  </div>
+  <details class="row-more">
+    <summary>Details</summary>
+    <p>{{ r.description }}</p>
+    <dl>
+      {% if r.get("coverage") %}<dt>Coverage</dt><dd>{{ r.get("coverage") }}</dd>{% endif %}
+      {% if r.get("formats") %}<dt>Formats</dt><dd>{{ r.get("formats") | join(", ") }}</dd>{% endif %}
+      {% if r.get("resolution") %}<dt>Resolution</dt><dd>{{ r.get("resolution") }}</dd>{% endif %}
+      {% if r.get("lead_time") %}<dt>Lead time</dt><dd>{{ r.get("lead_time") }}</dd>{% endif %}
+      {% if r.get("training_data") %}<dt>Trained on</dt><dd>{{ r.get("training_data") }}</dd>{% endif %}
+      {% if r.get("runs_in") %}<dt>Runs in</dt><dd>{% set tool_slug = {"earth2studio": "earth2studio", "anemoi": "anemoi-inference"} %}{% for x2 in r.get("runs_in") %}{% if x2 in tool_slug %}<a href="/tools/#{{ tool_slug[x2] }}">{{ res_vocab.runners.get(x2, x2) }}</a>{% else %}{{ res_vocab.runners.get(x2, x2) }}{% endif %}{{ ", " if not loop.last }}{% endfor %}</dd>{% endif %}
+      {% if r.get("install") %}<dt>Install</dt><dd><code>{{ r.get("install") }}</code></dd>{% endif %}
+      {% if r.license %}<dt>License</dt><dd>{{ r.license }}{% if r.get("license_weights") and r.get("license_weights") != r.license %}; weights: {{ r.get("license_weights") }}{% endif %}</dd>{% endif %}
+      {% if x.release.tag %}<dt>Latest release</dt><dd><a href="{{ x.release.url }}">{{ x.release.tag }}</a> ({{ x.release.date }})</dd>{% elif x.pushed %}<dt>Last activity</dt><dd>{{ x.pushed }}</dd>{% endif %}
+      {% if x.citations %}<dt>Paper citations</dt><dd>{{ x.citations }}</dd>{% endif %}
+      <dt>Used for</dt><dd>{% for t in r.topics if t in topics %}<a href="/topics/{{ t }}/">{{ topics[t].name }}</a>{{ ", " if not loop.last }}{% endfor %}</dd>
+    </dl>
+  </details>
+</li>
+{% endmacro %}
+
+{% block main %}
+<h1 class="page-title">{{ pg.title }}</h1>
+<p class="lede">{{ pg.intro }} Most used first.
+  Missing one? <a href="https://github.com/{{ site.repo }}/issues/new?template=resource.yml">Suggest it</a>.</p>
+
+{% if pg.popular %}
+<p class="quick"><b>Popular:</b>
+  {% for x in pg.popular %}<a href="#{{ x.r.slug }}">{{ x.r.name }}</a>{% endfor %}
+</p>
+{% endif %}
+
+<form class="search-row cat-search" role="search" onsubmit="return false">
+  <label class="sr-only" for="cq">Search {{ pg.title | lower }}</label>
+  <input id="cq" type="search" placeholder="Search {{ pg.title | lower }}…" autocomplete="off">
+  <label class="sort">Sort
+    <select id="csort">
+      <option value="order">Most important</option>
+      <option value="name">Name</option>
+      {% if pg.kind != "dataset" %}<option value="stars">GitHub stars</option><option value="release">Recently updated</option>{% endif %}
+    </select>
+  </label>
+</form>
+
+<div class="cat-layout">
+  <aside class="cat-filters" aria-label="Filters">
+    <details open class="cat-filters-box">
+      <summary>Filters <button type="button" class="link" id="cclear" hidden>Clear</button></summary>
+      {% for f in pg.facets %}
+      <div class="fgroup" data-facet="{{ f.key }}">
+        <h3>{{ f.label }}</h3>
+        <div class="fchips">
+          {% for v, label, n in f["values"] %}
+          <button type="button" class="fchip{{ ' extra' if loop.index > 8 and f['values'] | length > 10 }}" data-value="{{ v }}" aria-pressed="false">{{ label }} <span class="n">{{ n }}</span></button>
+          {% endfor %}
+        </div>
+        {% if f["values"] | length > 10 %}<button type="button" class="link fmore">Show all {{ f["values"] | length }}</button>{% endif %}
+      </div>
+      {% endfor %}
+    </details>
+  </aside>
+  <section class="cat-results" aria-live="polite">
+    <p id="ccount" class="muted">{{ pg.rows | length }} {{ pg.title | lower }}</p>
+    <ol class="rows" id="crows">
+      {% for x in pg.rows %}{{ row(x) }}{% endfor %}
+    </ol>
+    <p id="cnone" class="muted" hidden>Nothing matches. Try fewer filters.</p>
+  </section>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="/static/catalog.js" defer></script>
+{% endblock %}

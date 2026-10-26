@@ -59,9 +59,10 @@ jobs:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
         run: uv run ml4wx enrich --days 35 --missing-orgs
 
-      - name: GitHub stars and releases of the resources catalog
+      - name: GitHub stars, releases and paper citations of datasets, models and tools
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          S2_API_KEY: ${{ secrets.S2_API_KEY }}
         run: uv run ml4wx resources refresh
 
       - name: Crawl, classify, export, write digest

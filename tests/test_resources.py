@@ -60,9 +60,32 @@ def test_releases_since_and_site(root):
     a = Archive()
     a.save_paper(make_paper())
     build(a, load(), root / "_site", index=False)
-    page = (root / "_site" / "resources" / "index.html").read_text()
-    assert 'id="model-graphcast"' in page and "★ 6,000" in page and 'href="/papers/arxiv-2212.12794/"' in page
+    page = (root / "_site" / "models" / "index.html").read_text()
+    assert 'id="graphcast"' in page and "★ 6k" in page and 'href="/papers/arxiv-2212.12794/"' in page
+    assert 'data-f-open="weights"' in page and 'data-f-type="global-deterministic"' in page
+    assert "/datasets/" in (root / "_site" / "resources" / "index.html").read_text()  # old URL redirects
     paper = (root / "_site" / "papers" / "arxiv-2212.12794" / "index.html").read_text()
-    assert "Resources from this paper" in paper and "/resources/#model-graphcast" in paper
+    assert "Resources from this paper" in paper and "/models/#graphcast" in paper
     topic = (root / "_site" / "topics" / "global-medium-range" / "index.html").read_text()
-    assert "Datasets, models &amp; tools" in topic and "ERA5" in topic
+    assert "Datasets, models &amp; tools" in topic and "/datasets/#era5" in topic
+
+
+def test_catalog_order_public_only_and_tasks(root):
+    from ml4wx.site import catalog as catalog_page
+
+    extra = [
+        {"slug": "hko-7", "name": "HKO-7", "kind": "dataset", "category": "ml-benchmark", "description": "Radar.",
+         "url": "https://example.org/hko", "access": "restricted", "topics": ["nowcasting"]},
+        {"slug": "zz-popular", "name": "ZZ", "kind": "dataset", "category": "reanalysis", "description": "A. B.",
+         "url": "https://example.org/zz", "rank": 1, "topics": ["downscaling"]},
+        {"slug": "earth2studio", "name": "Earth2Studio", "kind": "software", "category": "ml-framework",
+         "description": "Runs models.", "repo": "NVIDIA/earth2studio", "language": "Python",
+         "tasks": ["inference", "data-access"], "topics": ["infra-software"]},
+    ]  # fmt: skip
+    _setup(root, ITEMS + extra)
+    cat = resources.Catalog(root)
+    ds = catalog_page.page("dataset", cat, resources.vocabulary(), load())
+    assert [x["r"].slug for x in ds["rows"]] == ["zz-popular", "era5"]  # ranked first; restricted hidden
+    assert ds["rows"][0]["summary"] == "A."
+    tools = catalog_page.page("software", cat, resources.vocabulary(), load())
+    assert tools["rows"][0]["facets"]["task"] == ["inference", "data-access"]

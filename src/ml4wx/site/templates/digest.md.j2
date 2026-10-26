@@ -27,7 +27,7 @@ highlights: {{ highlights | length }}
 {%- if datasets %}
 ## 🗂️ New datasets & benchmarks
 
-Candidates for the [Resources]({{ site }}/resources/) page:
+Candidates for the [Datasets]({{ site }}/datasets/) page:
 {% for p in datasets %}
 - **[{{ p.title }}]({{ p.links.paper or (site ~ "/papers/" ~ p.id ~ "/") }})**{% if p.links.code %} · [code]({{ p.links.code }}){% endif %}
   {{ p.summary }}

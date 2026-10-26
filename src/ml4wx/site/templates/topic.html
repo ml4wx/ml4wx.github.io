@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "macros.html" import card, resource_card %}
+{% from "macros.html" import card %}
 {% set nav = "topics" %}
 {% block title %}{{ topic.name }} · {{ site.title }}{% endblock %}
 {% block description %}{{ topic.description }}{% endblock %}
@@ -21,12 +21,20 @@
 </figure>
 {% endif %}
 {% if resources %}
-<h2>Datasets, models &amp; tools <span class="muted">({{ resources | length }})</span></h2>
-<details class="res-topic"{% if resources | length <= 6 %} open{% endif %}>
-  <summary>Show {{ resources | length }} resources for {{ topic.name | lower }}</summary>
-  <div class="grid res-grid">{% for r in resources %}{{ resource_card(r, show_topics=False) }}{% endfor %}</div>
-  <p><a href="/resources/?topic={{ topic.slug }}">All resources for this topic →</a></p>
-</details>
+<h2>Datasets, models &amp; tools</h2>
+<div class="res-topic-cols">
+  {% for kind in ["dataset", "model", "software"] if resources.get(kind) %}
+  {% set items = resources[kind] %}
+  <div>
+    <h3>{{ "Tools" if kind == "software" else res_vocab.kinds[kind].name }} <span class="muted">({{ items | length }})</span></h3>
+    <ul class="res-topic-list">
+      {% for r in items[:6] %}<li><a href="/{{ res_pages[kind] }}/#{{ r.slug }}">{{ r.name }}</a>
+        <span class="muted">· {{ res_vocab.kinds[kind].categories.get(r.category, r.category) }}</span></li>{% endfor %}
+    </ul>
+    {% if items | length > 6 %}<a href="/{{ res_pages[kind] }}/?use={{ topic.slug }}">All {{ items | length }} →</a>{% endif %}
+  </div>
+  {% endfor %}
+</div>
 {% endif %}
 {% set hl = papers | selectattr("highlight") | list %}
 {% if hl %}

@@ -1,7 +1,8 @@
 """Resources catalog: datasets, models with public code or weights, and software.
 
 Curated by hand: one YAML file per resource in resources/<kind dir>/<slug>.yaml.
-Generated: resources/_github.json (stars, activity, latest release), refreshed weekly.
+Generated weekly: resources/_github.json (stars, activity, latest release) and
+resources/_citations.json (citations of each reference paper). Both feed the importance order.
 """
 
 from __future__ import annotations
@@ -9,6 +10,7 @@ from __future__ import annotations
 import datetime as dt
 import json
 import logging
+import math
 import os
 import re
 import shutil
@@ -28,6 +30,8 @@ log = logging.getLogger(__name__)
 
 DIRS = {"dataset": "datasets", "model": "models", "software": "software"}
 GITHUB_FILE = "_github.json"
+CITATIONS_FILE = "_citations.json"
+PAGES = {"dataset": "datasets", "model": "models", "software": "tools"}  # site paths
 
 
 class PaperRef(BaseModel):
@@ -55,6 +59,7 @@ class Resource(BaseModel):
     paper: PaperRef | None = None
     license: str = ""
     topics: list[str] = []
+    rank: int | None = None  # curated: 1 = most important; unranked ones follow by popularity
     added: dt.date | None = None
 
     def get(self, field: str, default=None):
@@ -81,6 +86,21 @@ class Catalog:
             self.items[f"{r.kind}/{r.slug}"] = r
         gh = self.root / GITHUB_FILE
         self.github: dict[str, dict] = json.loads(gh.read_text()) if gh.exists() else {}
+        cit = self.root / CITATIONS_FILE
+        self.citations: dict[str, int] = json.loads(cit.read_text()) if cit.exists() else {}
+
+    # --- importance -----------------------------------------------------------------
+    def stars(self, r: Resource) -> int:
+        return (self.github.get(r.repo) or {}).get("stars", 0) if r.repo else 0
+
+    def popularity(self, r: Resource) -> float:
+        """GitHub stars and reference-paper citations, on a log scale (each 10x counts the same)."""
+        return math.log10(1 + self.stars(r)) + math.log10(1 + self.citations.get(f"{r.kind}/{r.slug}", 0))
+
+    def ordered(self, kind: str) -> list[Resource]:
+        """Most important first: curated rank, then popularity, then name."""
+        items = [r for r in self.items.values() if r.kind == kind]
+        return sorted(items, key=lambda r: (r.rank or 10_000, -self.popularity(r), r.name.lower()))
 
     # --- lookups ------------------------------------------------------------------
     def by_kind(self) -> dict[str, list[Resource]]:
@@ -169,6 +189,33 @@ class Catalog:
             out[repo] = info
         (self.root / GITHUB_FILE).write_text(json.dumps(out, indent=1, sort_keys=True) + "\n")
         self.github = out
+        return len(out)
+
+    def refresh_citations(self) -> int:
+        """Citation counts of reference papers: Crossref for DOIs, Semantic Scholar for arXiv-only
+        papers (needs $S2_API_KEY). Returns how many resources have a count."""
+        from .sources import crossref, s2
+
+        out = dict(self.citations)
+        arxiv_only: dict[str, str] = {}
+        for key, r in self.items.items():
+            if not r.paper:
+                continue
+            if doi := ids.norm_doi(r.paper.doi):
+                c = next(iter(crossref.lookup([doi], source="citations")), None)
+                if c and c.cited_by is not None:
+                    out[key] = c.cited_by
+            elif arxiv := ids.norm_arxiv(r.paper.arxiv):
+                arxiv_only[f"arxiv:{arxiv}"] = key
+        if arxiv_only and os.environ.get("S2_API_KEY"):
+            try:
+                for k, raw in s2.batch(list(arxiv_only), source="citations"):
+                    if raw and raw.get("citationCount") is not None:
+                        out[arxiv_only[k]] = raw["citationCount"]
+            except RuntimeError as e:
+                log.warning("Semantic Scholar: %s", e)
+        (self.root / CITATIONS_FILE).write_text(json.dumps(out, indent=1, sort_keys=True) + "\n")
+        self.citations = out
         return len(out)
 
     def releases_since(self, since: dt.date) -> list[dict]:

@@ -145,7 +145,8 @@ def write_all(archive: Archive, cfg: Config) -> list[Path]:
     path = root / "lists" / "resources.md"
     path.write_text(
         e.get_template("resources.md.j2").render(
-            cfg=cfg, vocab=resources.vocabulary(), by_kind=catalog.by_kind(), github=catalog.github
+            cfg=cfg, vocab=resources.vocabulary(), github=catalog.github,
+            by_kind={k: catalog.ordered(k) for k in resources.DIRS},
         )
     )
     written.append(path)

@@ -22,6 +22,7 @@ from ..config import Config
 from ..export import authors_short, sorted_papers, stats
 from ..models import Paper
 from ..store import Archive
+from . import catalog as catalog_page
 
 log = logging.getLogger(__name__)
 
@@ -36,6 +37,7 @@ def _env(cfg: Config) -> Environment:
         lstrip_blocks=True,
     )
     e.filters["authors_short"] = authors_short
+    e.filters["compact"] = lambda n: f"{n / 1000:.1f}k".replace(".0k", "k") if n >= 1000 else str(n)
     e.globals.update(
         site=cfg.settings["site"],
         topics=cfg.topic_by_slug,
@@ -109,8 +111,15 @@ def build(archive: Archive, cfg: Config, out: Path, index: bool = True) -> None:
     res_by_paper = catalog.for_papers(key_to_paper)
     paper_ids = {f"{r.kind}/{r.slug}": pid for pid, rs in res_by_paper.items() for r in rs}
     res_vocab = resources.vocabulary()
-    e.globals.update(res_vocab=res_vocab, github=catalog.github, paper_ids=paper_ids)
-    res_by_topic = catalog.by_topic()
+    e.globals.update(res_vocab=res_vocab, github=catalog.github, paper_ids=paper_ids, res_pages=resources.PAGES)
+    # Topic pages: the most important resources of each kind for that topic.
+    res_by_topic: dict[str, dict[str, list]] = defaultdict(lambda: defaultdict(list))
+    for kind in resources.DIRS:
+        for r in catalog.ordered(kind):
+            if kind == "dataset" and (r.get("access") or "open") not in catalog_page.PUBLIC_ACCESS:
+                continue
+            for t in r.topics:
+                res_by_topic[t][kind].append(r)
 
     def render(rel: str, tpl: str, **kw) -> None:
         _write(out, rel, e.get_template(tpl).render(**kw))
@@ -132,9 +141,9 @@ def build(archive: Archive, cfg: Config, out: Path, index: bool = True) -> None:
                    resources=res_by_topic.get(t.slug, []))  # fmt: skip
     for p in papers:
         render(f"papers/{p.id}/index.html", "paper.html", p=p, resources=res_by_paper.get(p.id, []))
-    by_kind = catalog.by_kind()
-    render("resources/index.html", "resources.html", by_kind=by_kind, total=len(catalog.items),
-           categories_json=json.dumps({k: v["categories"] for k, v in res_vocab["kinds"].items()}))  # fmt: skip
+    for kind, path in resources.PAGES.items():
+        render(f"{path}/index.html", "catalog.html", pg=catalog_page.page(kind, catalog, res_vocab, cfg))
+    render("resources/index.html", "redirect.html", target="/datasets/")  # old URL of the combined page
     org_list = sorted(
         (o for o in cfg.orgs if by_org.get(o.slug)), key=lambda o: (o.tier, -len(by_org[o.slug]))
     )

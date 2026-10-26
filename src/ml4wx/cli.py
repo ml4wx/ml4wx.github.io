@@ -76,6 +76,7 @@ def cmd_resources(args) -> int:
     catalog = resources.Catalog()
     if args.action == "refresh":
         print(f"resources: GitHub metadata for {catalog.refresh_github()} repos")
+        print(f"resources: citations for {catalog.refresh_citations()} reference papers")
     elif args.action == "import":
         added, skipped = resources.import_list(Path(args.file), catalog)
         print(f"resources: +{added} added, {skipped} already there")
