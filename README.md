@@ -77,7 +77,8 @@ classified when the topics are switched on.
 
 Datasets (70), models with public code or weights (45) and
 open-source tools (65), each linked to the topics where they are used:
-[on the site](https://ml4wx.github.io/resources/) · [as a list](lists/resources.md).
+on the site: [Datasets](https://ml4wx.github.io/datasets/) · [Models](https://ml4wx.github.io/models/) ·
+[Tools](https://ml4wx.github.io/tools/), or [as one list](lists/resources.md).
 GitHub stars and releases are updated every week.
 
 ## How it works

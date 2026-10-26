@@ -52,7 +52,7 @@
   {% if resources %}
   <div class="res-paper" data-pagefind-ignore>
     <b>Resources from this paper:</b>
-    {% for r in resources %}<a href="/resources/#{{ r.kind }}-{{ r.slug }}">{{ r.name }}</a> <span class="muted">({{ res_vocab.kinds[r.kind].name | lower }}{% if r.get("weights") %}, weights{% endif %})</span>{{ " · " if not loop.last }}{% endfor %}
+    {% for r in resources %}<a href="/{{ res_pages[r.kind] }}/#{{ r.slug }}">{{ r.name }}</a> <span class="muted">({{ res_vocab.kinds[r.kind].name | lower }}{% if r.get("weights") %}, weights{% endif %})</span>{{ " · " if not loop.last }}{% endfor %}
   </div>
   {% endif %}
   {% if p.highlight and p.highlight_reason %}
