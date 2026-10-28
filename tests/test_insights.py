@@ -96,3 +96,22 @@ def test_new_pages_build(root):
     quick = json.loads((site / "data" / "quick.json").read_text())
     assert quick[0]["k"] == "paper" and quick[0]["u"].startswith("/papers/") and quick[0]["s"] == quick[0]["s"].lower()
     assert 'class="badge-ess"' in paper and "Essentials for this topic" in topic
+
+
+def test_charts_read_without_stylesheet():
+    """Fallback presentation attributes: no black filled lines or giant text if CSS is missing."""
+    line = charts.mini_line({2024: 10, 2025: 30}, ymax=50, unit="%")
+    assert "<polyline class='viz-line' fill='none'" in line and "font-size='11'" in line
+    assert "fill='#0b6aa2'" in charts.columns([("2025", 3)])
+    assert "<polyline class='viz-spark-line' fill='none'" in charts.sparkline([1, 2])
+
+
+def test_static_links_are_versioned(root):
+    from ml4wx.site.build import build
+
+    a = Archive()
+    a.save_paper(_papers()[0])
+    build(a, load(), root / "_site", index=False)
+    html = (root / "_site" / "index.html").read_text()
+    assert '/static/style.css?v=' in html and 'href="/static/style.css"' not in html
+    assert '/static/quick.js?v=' in html

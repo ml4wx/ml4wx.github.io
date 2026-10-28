@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import datetime as dt
+import hashlib
 import json
 import logging
 import re
@@ -111,6 +112,12 @@ def build(archive: Archive, cfg: Config, out: Path, index: bool = True) -> None:
     out.mkdir(parents=True)
     shutil.copytree(HERE / "static", out / "static")
     e = _env(cfg)
+    # Cache busting: static files are linked as /static/<file>?v=<content hash>, so browsers fetch the
+    # new version right after a deploy instead of using a cached old one (Pages caches for 10 min).
+    versions = {
+        f.name: hashlib.sha256(f.read_bytes()).hexdigest()[:10] for f in (HERE / "static").iterdir() if f.is_file()
+    }
+    e.globals["asset"] = lambda name: f"/static/{name}?v={versions.get(name, '0')}"
     papers = sorted_papers(archive.papers.values())
     st = stats(archive, cfg)
     highlights = [p for p in papers if p.highlight]

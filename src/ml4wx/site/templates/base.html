@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% block title %}{{ site.title }}{% endblock %}</title>
   <meta name="description" content="{% block description %}{{ site.tagline }}{% endblock %}">
-  <link rel="icon" href="/static/icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/static/style.css">
+  <link rel="icon" href="{{ asset("icon.svg") }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ asset("style.css") }}">
   <link rel="alternate" type="application/rss+xml" title="ML4WX new papers" href="/feed.xml">
   <link rel="alternate" type="application/rss+xml" title="ML4WX highlights" href="/highlights.xml">
   <script>
@@ -19,7 +19,7 @@
   <header class="top">
     <div class="wrap top-inner">
       <a class="brand" href="/">
-        <img src="/static/icon.svg" alt="" width="26" height="26">
+        <img src="{{ asset("icon.svg") }}" alt="" width="26" height="26">
         <span>ML4WX</span>
       </a>
       <nav class="nav" aria-label="Main">
@@ -77,7 +77,7 @@
       if (box) { e.preventDefault(); box.focus(); }
     });
   </script>
-  <script type="module" src="/static/quick.js"></script>
+  <script type="module" src="{{ asset("quick.js") }}"></script>
   {% block scripts %}{% endblock %}
 </body>
 </html>
