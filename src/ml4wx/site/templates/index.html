@@ -5,7 +5,7 @@
   <h1>Machine learning for weather&nbsp;&amp;&nbsp;climate</h1>
   <p class="lede">A living archive of ML and AI research for weather and climate, from nowcasting to
     climate emulation, with the datasets, models and tools to work with. Updated every week.</p>
-  <form class="hero-search" action="/explore/" role="search">
+  <form class="hero-search" action="/explore/" role="search" data-quick>
     <label class="sr-only" for="q">Search papers, datasets, models and tools</label>
     <input id="q" name="q" type="search" placeholder="Search, e.g. diffusion ensemble, tropical cyclone, ERA5, GraphCast" autocomplete="off">
     <button type="submit">Search</button>
@@ -18,12 +18,20 @@
   </dl>
 </section>
 
-<nav class="jump" aria-label="Sections">
-  <a href="/datasets/"><b>Datasets</b><span>{{ n_res.dataset }} public datasets, ERA5 to radar</span></a>
-  <a href="/models/"><b>Models</b><span>{{ n_res.model }} models with public code or weights</span></a>
-  <a href="/tools/"><b>Tools</b><span>{{ n_res.software }} tools to load, train, run, plot</span></a>
-  <a href="/trends/"><b>Trends</b><span>Topics, methods and labs over time</span></a>
-</nav>
+<section class="ess-band" aria-labelledby="ess-h">
+  <div class="sec-head"><h2 id="ess-h">Essentials</h2><a href="/essentials/">All essentials, by topic →</a></div>
+  <div class="ess-cols">
+    {% for col in band %}
+    <div class="ess-col">
+      <h3>{{ col.title }}</h3>
+      <ol class="ess-list">
+        {% for it in col["items"] %}<li><a href="{{ it.u }}">{{ it.n }}</a><span class="muted">{{ it.d }}</span></li>{% endfor %}
+      </ol>
+      <a class="ess-all" href="{{ col.more[1] }}">{{ col.more[0] }} →</a>
+    </div>
+    {% endfor %}
+  </div>
+</section>
 
 {% if week %}
 <section>

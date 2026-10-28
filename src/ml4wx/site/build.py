@@ -11,6 +11,7 @@ import subprocess
 import sys
 from collections import defaultdict
 from email.utils import format_datetime
+from itertools import zip_longest
 from pathlib import Path
 from xml.sax.saxutils import escape
 
@@ -66,6 +67,11 @@ def _digests(root: Path) -> list[dict]:
             text = text[m.end():]
         out.append({"week": f.stem, "meta": meta, "html": md.render(text)})
     return out
+
+
+def _norm(s: str) -> str:
+    """Lower case words without punctuation: the search key of a suggestion (same rule in quick.js)."""
+    return " ".join(re.sub(r"[\W_]+", " ", s.lower()).split())
 
 
 # Data facet values -> where the matching datasets are on the Datasets tab.
@@ -148,11 +154,58 @@ def build(archive: Archive, cfg: Config, out: Path, index: bool = True) -> None:
         key=lambda s: -s.growth,
     )
     year_ago = today - dt.timedelta(days=365)
-    n_res = {k: len(catalog_page.page(k, catalog, res_vocab, cfg)["rows"]) for k in resources.DIRS}
+    pages = {k: catalog_page.page(k, catalog, res_vocab, cfg) for k in resources.DIRS}
+
+    # Essentials: the most important papers (rules in settings.yaml) and the first datasets, models and tools
+    # in catalog order. They fill the band on the home page, /essentials/ and the search suggestions.
+    rules = cfg.settings["essentials"]
+    ess, earlier = insights.essential_papers(papers, today, rules)
+    e.globals["essential_ids"] = {p.id for p in ess[: rules["size"]]}
+
+    def paper_item(p: Paper) -> dict:
+        rs = res_by_paper.get(p.id, [])
+        r = next((r for r in rs if r.kind == "model"), rs[0] if rs else None)  # "GraphCast", not the long title
+        name = r.name if r else p.title
+        venue = p.venue or ("arXiv" if p.ids.arxiv else "preprint")
+        return {"n": name, "k": "paper", "u": f"/papers/{p.id}/", "d": f"{p.year} · {venue}",
+                "s": _norm(f"{name} {p.title} {p.authors[0] if p.authors else ''}")}  # fmt: skip
+
+    def res_item(r: resources.Resource) -> dict:
+        cats = res_vocab["kinds"][r.kind]["categories"]
+        return {"n": r.name, "k": "tool" if r.kind == "software" else r.kind,
+                "u": f"/{resources.PAGES[r.kind]}/#{r.slug}",
+                "d": r.provider if r.kind == "model" else cats.get(r.category, r.category),
+                "s": _norm(f"{r.name} {r.slug} {r.provider}")}  # fmt: skip
+
+    tools, seen = [], set()
+    for x in pages["software"]["rows"]:  # one tool per category, so the band is not three Anemoi packages
+        if x["r"].category not in seen:
+            seen.add(x["r"].category)
+            tools.append(x["r"])
+    band = [
+        {"title": f"Papers since {rules['since']}", "items": [paper_item(p) for p in ess[:5]],
+         "more": (f"All {rules['size']} essential papers", "/essentials/#papers")},
+        {"title": "Models", "items": [res_item(x["r"]) for x in pages["model"]["rows"][:5]],
+         "more": (f"All {len(pages['model']['rows'])} models", "/models/")},
+        {"title": "Datasets", "items": [res_item(x["r"]) for x in pages["dataset"]["rows"][:5]],
+         "more": (f"All {len(pages['dataset']['rows'])} datasets", "/datasets/")},
+        {"title": "Tools", "items": [res_item(r) for r in tools[:5]],
+         "more": (f"All {len(pages['software']['rows'])} tools", "/tools/")},
+    ]  # fmt: skip
+    # Suggestions, the most important of each kind first (paper, model, dataset, tool, paper, ...): the
+    # first few are the picks shown before you type.
+    kinds = [[paper_item(p) for p in ess[: rules["size"]]]] + [
+        [res_item(x["r"]) for x in pages[k]["rows"]] for k in ("model", "dataset", "software")
+    ]
+    quick = [it for row in zip_longest(*kinds) for it in row if it]
+    _write(out, "data/quick.json", json.dumps(quick, ensure_ascii=False, separators=(",", ":")))
+    render("essentials/index.html", "essentials.html", papers=ess, earlier=earlier, rules=rules, pages=pages,
+           groups=groups, enabled=enabled, res_by_paper=res_by_paper,
+           bib={p.id: bibtex([p]).strip() for p in ess})  # fmt: skip
 
     render(
         "index.html", "index.html",
-        st=st, tr=tr, highlights=highlights[:6], n_res=n_res, latest_added=latest_added, groups=groups,
+        st=st, tr=tr, highlights=highlights[:6], band=band, latest_added=latest_added, groups=groups,
         by_topic=by_topic, digest=digests[0] if digests else None, growing=growing[:6],
         week=sorted((p for p in papers if p.date > today - dt.timedelta(days=14) and not p.classic),
                     key=lambda p: (-p.score, p.id)),
@@ -182,8 +235,8 @@ def build(archive: Archive, cfg: Config, out: Path, index: bool = True) -> None:
                data_links=DATA_LINKS)  # fmt: skip
 
     for kind, path in resources.PAGES.items():
-        render(f"{path}/index.html", "catalog.html", pg=catalog_page.page(kind, catalog, res_vocab, cfg))
-    model_rows = catalog_page.page("model", catalog, res_vocab, cfg)["rows"]
+        render(f"{path}/index.html", "catalog.html", pg=pages[kind])
+    model_rows = pages["model"]["rows"]
     render("models/compare/index.html", "compare.html", rows=model_rows)
     _write(out, "data/resources-index.json", json.dumps([
         {"name": r.name, "kind": "tool" if r.kind == "software" else r.kind,

@@ -23,6 +23,7 @@
         <span>ML4WX</span>
       </a>
       <nav class="nav" aria-label="Main">
+        <a href="/essentials/" {% if nav == "essentials" %}aria-current="page"{% endif %}>Essentials</a>
         <a href="/explore/" {% if nav == "explore" %}aria-current="page"{% endif %}>Explore</a>
         <a href="/topics/" {% if nav == "topics" %}aria-current="page"{% endif %}>Topics</a>
         <a href="/highlights/" {% if nav == "highlights" %}aria-current="page"{% endif %}>Highlights</a>
@@ -34,7 +35,7 @@
         <a href="/about/" {% if nav == "about" %}aria-current="page"{% endif %}>About</a>
       </nav>
       {% if nav != "explore" %}
-      <form class="top-search" action="/explore/" role="search">
+      <form class="top-search" action="/explore/" role="search" data-quick>
         <label class="sr-only" for="top-q">Search papers, datasets, models and tools</label>
         <input id="top-q" name="q" type="search" placeholder="Search  /" autocomplete="off">
       </form>
@@ -76,6 +77,7 @@
       if (box) { e.preventDefault(); box.focus(); }
     });
   </script>
+  <script type="module" src="/static/quick.js"></script>
   {% block scripts %}{% endblock %}
 </body>
 </html>

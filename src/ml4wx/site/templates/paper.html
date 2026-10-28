@@ -21,6 +21,7 @@
     {% for s in p.spatial %}<span data-pagefind-filter="domain">{{ facets.spatial.get(s, s) }}</span>{% endfor %}
     {% if p.links.code %}<span data-pagefind-filter="open">Code available</span>{% endif %}
     {% if p.highlight %}<span data-pagefind-filter="highlight">★ Highlight</span>{% endif %}
+    {% if p.id in essential_ids %}<span data-pagefind-filter="highlight">Essential</span>{% endif %}
     <span data-pagefind-sort="date">{{ p.date }}</span>
     <span data-pagefind-sort="score">{{ '%03d' % p.score }}</span>
     <span data-pagefind-meta="date">{{ p.date.strftime('%b %Y') }}</span>
@@ -33,6 +34,7 @@
 
   <p class="crumbs" data-pagefind-ignore>
     {% if p.topic in topics %}<a href="/topics/{{ p.topic }}/">{{ topics[p.topic].name }}</a>{% endif %}
+    {% if p.id in essential_ids %}<a class="badge-ess" href="/essentials/">Essential</a>{% endif %}
     {% if p.highlight %}<span class="badge-hl">★ Highlight</span>{% endif %}
     {% if p.classic %}<span class="badge">Classic</span>{% endif %}
   </p>

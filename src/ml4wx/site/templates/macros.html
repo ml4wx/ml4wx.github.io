@@ -21,3 +21,14 @@
   </p>
 </article>
 {% endmacro %}
+
+{% macro res_card(x, hidden=False) %}
+{% set r = x.r %}
+<article class="card res-card" data-topics="{{ r.topics | join(' ') }}"{% if hidden %} hidden{% endif %}>
+  <h3 class="card-title"><a href="/{{ res_pages[r.kind] }}/#{{ r.slug }}">{{ r.name }}</a>
+    {% if r.kind == "model" and r.get("operational") %}<span class="row-flag">Operational</span>{% endif %}</h3>
+  <p class="card-meta">{% if r.provider %}{{ r.provider }} · {% endif %}{{ res_vocab.kinds[r.kind].categories.get(r.category, r.category) }}</p>
+  <p class="card-summary">{{ x.summary }}</p>
+  {% if x.facts or x.stars %}<p class="row-meta">{{ (x.facts + (["★ " ~ (x.stars | compact)] if x.stars else [])) | join(" · ") }}</p>{% endif %}
+</article>
+{% endmacro %}

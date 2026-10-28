@@ -1,4 +1,4 @@
-"""Numbers behind the topic starter kits, the Trends page and the home page, plus related papers."""
+"""Numbers behind the topic starter kits, Trends, Essentials and the home page, plus related papers."""
 
 from __future__ import annotations
 
@@ -88,6 +88,32 @@ def trends(papers: list[Paper], today: dt.date, first_year: int = 2018) -> Trend
         last12=len(recent),
         prev12=sum(two_years_ago < p.date <= year_ago for p in papers),
     )
+
+
+def citations_per_year(p: Paper, today: dt.date) -> float:
+    """Citations per year since publication; the age counts as at least one year."""
+    return _cited(p) / max(1.0, (today - p.date).days / 365.25)
+
+
+def essential_papers(papers: list[Paper], today: dt.date, rules: dict) -> tuple[list[Paper], list[Paper]]:
+    """(recent, earlier) candidates, most important first. The first rules["size"] recent ones are the
+    essentials for all topics; earlier ones (before rules["since"]) are the foundations.
+
+    Candidates: highlights, classics and papers with significance >= landmark, all with significance
+    >= min_significance; sorted by citations per year. `pin` adds papers, `exclude` removes them."""
+    pin, exclude = set(rules.get("pin") or []), set(rules.get("exclude") or [])
+    floor, landmark = rules.get("min_significance", 0), rules.get("landmark", 11)
+    ranked = sorted(
+        (p for p in papers if p.id not in exclude and (p.id in pin or (
+            p.significance >= floor and (p.highlight or p.classic or p.significance >= landmark)))),
+        key=lambda p: (-citations_per_year(p, today), p.id),
+    )  # fmt: skip
+    recent = [p for p in ranked if p.year >= rules.get("since", 0) or p.id in pin]
+    earlier = [p for p in ranked if p.year < rules.get("since", 0) and p.id not in pin]
+    # Pinned papers are always in the top `size`; they keep their place by citations per year.
+    free = rules.get("size", 50) - len(pin & {p.id for p in recent})
+    top = pin | set([p.id for p in recent if p.id not in pin][: max(0, free)])
+    return [p for p in recent if p.id in top] + [p for p in recent if p.id not in top], earlier
 
 
 def related(papers: list[Paper], k: int = 6) -> dict[str, list[str]]:

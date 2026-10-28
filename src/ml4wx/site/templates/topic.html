@@ -25,6 +25,7 @@
 
 <p class="actions">
   <a class="btn" href="/explore/?topic={{ topic.name | urlencode }}">Search and filter all {{ "{:,}".format(st.total) }} papers</a>
+  <a class="btn" href="/essentials/?topic={{ topic.slug }}">Essentials for this topic</a>
   <a class="btn" href="/topics/{{ topic.slug }}/feed.xml">RSS for this topic</a>
   <a class="btn" href="https://github.com/{{ site.repo }}/blob/main/lists/{{ topic.slug }}.md">Plain list on GitHub</a>
 </p>

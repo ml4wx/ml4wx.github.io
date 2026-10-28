@@ -35,6 +35,19 @@ highlight:
   # [min citations, points]: the first matching row (highest) counts. Mostly for the backfill.
   citations: [[100, 10], [500, 20]]
 
+# Essentials (/essentials/, the home page and the search suggestions). Candidates are highlights,
+# classics and papers with significance >= landmark, all with significance >= min_significance.
+# Most citations per year first (age counts as at least one year). Papers from `since` on are the
+# essentials (the first `size` for all topics); older candidates are listed apart, "Before <since>".
+# pin / exclude: paper ids to add or remove by hand (a pinned paper counts as recent).
+essentials:
+  since: 2021
+  size: 50
+  min_significance: 5
+  landmark: 8
+  pin: []
+  exclude: []
+
 # Exact venue names (case-insensitive), as arXiv journal-refs or OpenAlex write them.
 top_venues:
   - Nature
