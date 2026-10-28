@@ -1,4 +1,5 @@
 import datetime as dt
+import json
 
 from conftest import make_paper
 
@@ -28,6 +29,28 @@ def test_topic_stats_growth_and_lists():
     assert [p.id for p in st.start_here] == ["arxiv-2501.00003"]
     assert st.most_cited_recent[0].cited_by == 19 and st.key_papers[0].id == "arxiv-2501.00005"
     assert st.per_year[2018] == 0 and st.per_year[2026] > 0
+
+
+def test_essential_papers():
+    rules = {"size": 2, "min_significance": 5, "landmark": 8, "pin": [], "exclude": []}
+
+    def paper(id, age, **kw):  # age in years
+        d = TODAY - dt.timedelta(days=round(365.25 * age))
+        return make_paper(id=id, date=d, year=d.year, **kw)
+
+    ps = [
+        paper("a", 4, cited_by=400, highlight=True, significance=6),  # 100 per year
+        paper("b", 0.2, cited_by=50, significance=8),  # landmark; the age counts as 1 year
+        paper("c", 2, cited_by=60, highlight=True, significance=6),  # 30 per year
+        paper("d", 4, cited_by=4000, classic=True, significance=3),  # below the floor
+        paper("e", 4, cited_by=4000, significance=7),  # not a highlight, classic or landmark
+        paper("f", 1, cited_by=0, significance=2),
+    ]
+    ids = lambda rules: [[p.id for p in ps] for ps in insights.essential_papers(ps, TODAY, rules)]  # noqa: E731
+    assert ids(rules) == [["a", "b", "c"], []]
+    assert ids(rules | {"exclude": ["a"]}) == [["b", "c"], []]
+    assert ids(rules | {"pin": ["f"]}) == [["a", "f", "b", "c"], []]  # pinned: always in the top `size`
+    assert ids(rules | {"since": TODAY.year - 2}) == [["b", "c"], ["a"]]  # older ones are listed apart
 
 
 def test_trends_and_related():
@@ -66,7 +89,13 @@ def test_new_pages_build(root):
     paper = (site / "papers" / "arxiv-2501.00001" / "index.html").read_text()
     assert "Copy BibTeX" in paper and "@misc{" in paper and "Related papers" in paper
     assert (site / "models" / "compare" / "index.html").exists()
-    assert "Fastest-growing topics" in (site / "index.html").read_text()
+    home = (site / "index.html").read_text()
+    assert "Fastest-growing topics" in home and 'class="ess-band"' in home and "data-quick" in home
+    ess = (site / "essentials" / "index.html").read_text()
+    assert 'id="ess-topic"' in ess and 'href="/papers/arxiv-2501.00005/"' in ess and '"arxiv-2501.00005": "@' in ess
+    quick = json.loads((site / "data" / "quick.json").read_text())
+    assert quick[0]["k"] == "paper" and quick[0]["u"].startswith("/papers/") and quick[0]["s"] == quick[0]["s"].lower()
+    assert 'class="badge-ess"' in paper and "Essentials for this topic" in topic
 
 
 def test_charts_read_without_stylesheet():
@@ -85,3 +114,4 @@ def test_static_links_are_versioned(root):
     build(a, load(), root / "_site", index=False)
     html = (root / "_site" / "index.html").read_text()
     assert '/static/style.css?v=' in html and 'href="/static/style.css"' not in html
+    assert '/static/quick.js?v=' in html

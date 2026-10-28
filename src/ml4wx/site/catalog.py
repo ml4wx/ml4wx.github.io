@@ -36,9 +36,22 @@ PAGE_TEXT = {
 PUBLIC_ACCESS = {"open", "registration"}
 
 
+def _clip(text: str, limit: int) -> str:
+    return text if len(text) <= limit else text[: limit - 1].rsplit(" ", 1)[0] + "…"
+
+
 def first_sentence(text: str, limit: int = 170) -> str:
-    s = re.split(r"(?<=[.!?])\s+", text.strip(), maxsplit=1)[0]
-    return s if len(s) <= limit else s[: limit - 1].rsplit(" ", 1)[0] + "…"
+    return _clip(re.split(r"(?<=[.!?])\s+", text.strip(), maxsplit=1)[0], limit)
+
+
+def facts(r: Resource) -> list[str]:
+    """A few short facts for the compact cards on the Essentials page."""
+    if r.kind == "dataset":
+        return [_clip(r.get("coverage"), 70)] if r.get("coverage") else []
+    if r.kind == "model":
+        out = [_clip(r.get(k), 40) for k in ("resolution", "lead_time") if r.get(k)]
+        return out + (["open weights"] if "weights" in (r.get("open") or []) or r.get("weights") else [])
+    return [r.get("language")] if r.get("language") else []
 
 
 def facet_values(r: Resource, vocab: dict, cfg: Config) -> dict[str, list[tuple[str, str]]]:
@@ -93,7 +106,7 @@ def page(kind: str, catalog: Catalog, vocab: dict, cfg: Config) -> dict:
         gh = catalog.github.get(r.repo, {}) if r.repo else {}
         rows.append({
             "r": r, "order": order, "facets": {k: [v for v, _ in vals] for k, vals in values.items()},
-            "summary": first_sentence(r.description), "stars": gh.get("stars", 0),
+            "summary": first_sentence(r.description), "facts": facts(r), "stars": gh.get("stars", 0),
             "release": (gh.get("release") or {}), "pushed": gh.get("pushed_at", ""), "archived": gh.get("archived"),
             "citations": catalog.citations.get(f"{r.kind}/{r.slug}", 0),
         })  # fmt: skip

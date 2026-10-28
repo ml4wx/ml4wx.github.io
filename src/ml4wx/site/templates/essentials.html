@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+{% from "macros.html" import res_card %}
+{% set nav = "essentials" %}
+{% set show = 20 %}{# papers shown before "Show all" #}
+{% set size, since = rules.size, rules.since %}
+{% block title %}Essentials · {{ site.title }}{% endblock %}
+{% block description %}The most important papers, models, datasets and tools in machine learning for weather and climate.{% endblock %}
+
+{% macro ess_paper(p, hidden) %}
+<li class="ess-paper" data-id="{{ p.id }}" data-topics="{{ ([p.topic] + p.topics) | join(' ') }}"{% if hidden %} hidden{% endif %}>
+  <a class="ess-title" href="/papers/{{ p.id }}/">{{ p.title }}</a>
+  <p class="card-meta">{{ p.authors | authors_short(1) }} <span class="dot">·</span> {{ p.venue or ("arXiv" if p.ids.arxiv else "preprint") }}
+    <span class="dot">·</span> {{ p.year }}{% if p.cited_by %} <span class="dot">·</span> {{ "{:,}".format(p.cited_by) }} citations{% endif %}</p>
+  <p class="ess-why">{{ p.highlight_reason or p.summary }}</p>
+  <p class="chips">
+    {% if p.topic in topics %}<a class="chip chip-topic" href="/topics/{{ p.topic }}/">{{ topics[p.topic].name }}</a>{% endif %}
+    {% for r in res_by_paper.get(p.id, []) %}<a class="chip chip-res" href="/{{ res_pages[r.kind] }}/#{{ r.slug }}">{{ "Tool" if r.kind == "software" else r.kind | capitalize }}: {{ r.name }}</a>{% endfor %}
+    {% if p.links.code %}<a class="chip chip-code" href="{{ p.links.code }}">code</a>{% endif %}
+  </p>
+</li>
+{% endmacro %}
+
+{% block main %}
+<h1 class="page-title">Essentials</h1>
+<p class="lede">The papers, models, datasets and tools to know first in machine learning for weather and climate,
+  most important first. Papers are from {{ since }} on; older landmark papers are at the
+  <a href="#earlier">bottom</a>. Pick a topic to see its essentials. <a href="/about/#essentials">How we choose them</a>.</p>
+
+<div class="ess-bar">
+  <label class="sort">Topic
+    <select id="ess-topic">
+      <option value="">All topics</option>
+      {% for gslug, gname in groups.items() if gslug != "later" %}
+      <optgroup label="{{ gname }}">
+        {% for t in enabled if t.group == gslug %}<option value="{{ t.slug }}">{{ t.name }}</option>{% endfor %}
+      </optgroup>
+      {% endfor %}
+    </select>
+  </label>
+  <nav class="quick" aria-label="Sections"><a href="#papers">Papers</a><a href="#models">Models</a><a href="#datasets">Datasets</a><a href="#tools">Tools</a><a href="#earlier">Before {{ since }}</a></nav>
+</div>
+<p id="ess-note" class="notice" hidden></p>
+
+<section id="papers" class="ess-sec" data-limit="{{ size }}" data-papers>
+  <div class="sec-head"><h2>Papers since {{ since }} <span class="muted" data-count>({{ size }})</span></h2>
+    <button type="button" class="btn" id="ess-copy">Copy BibTeX</button></div>
+  <ol class="ess-papers">
+    {% for p in papers %}{{ ess_paper(p, loop.index > show) }}{% endfor %}
+  </ol>
+  <p class="muted" data-empty hidden>No essential papers for this topic yet. The topic page lists its key papers.</p>
+  <button type="button" class="btn ess-more" data-more>Show all {{ size }}</button>
+</section>
+
+{% for kind, label in [("model", "Models"), ("dataset", "Datasets"), ("software", "Tools")] %}
+{% set rows = pages[kind].rows %}
+<section id="{{ res_pages[kind] }}" class="ess-sec" data-limit="12">
+  <div class="sec-head"><h2>{{ label }} <span class="muted" data-count>({{ [12, rows | length] | min }})</span></h2>
+    <a data-all data-base="/{{ res_pages[kind] }}/" data-text="All {{ rows | length }} {{ label | lower }} →" href="/{{ res_pages[kind] }}/">All {{ rows | length }} {{ label | lower }} →</a></div>
+  <div class="grid">
+    {% for x in rows %}{{ res_card(x, hidden=loop.index > 12) }}{% endfor %}
+  </div>
+  <p class="muted" data-empty hidden>None for this topic yet.</p>
+</section>
+{% endfor %}
+
+{% if earlier %}
+<section id="earlier" class="ess-sec" data-limit="10" data-papers>
+  <div class="sec-head"><h2>Before {{ since }} <span class="muted" data-count>({{ [10, earlier | length] | min }})</span></h2></div>
+  <p class="muted">Older landmark papers that much of the recent work builds on, chosen by the same rule.</p>
+  <ol class="ess-papers">
+    {% for p in earlier %}{{ ess_paper(p, loop.index > 10) }}{% endfor %}
+  </ol>
+  <p class="muted" data-empty hidden>None for this topic.</p>
+</section>
+{% endif %}
+<script type="application/json" id="ess-bibtex">{{ bib | tojson }}</script>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  // Topic filter (?topic=slug), "Show all" for papers, and BibTeX of the papers in the list.
+  (() => {
+    const SHOW = {{ show }};
+    const sel = document.getElementById("ess-topic"), note = document.getElementById("ess-note");
+    const copy = document.getElementById("ess-copy");
+    const bib = JSON.parse(document.getElementById("ess-bibtex").textContent);
+    let showAll = false, paperIds = [];
+
+    function apply() {
+      const t = sel.value;
+      for (const sec of document.querySelectorAll(".ess-sec")) {
+        const items = [...sec.querySelectorAll("[data-topics]")];
+        const match = items.filter((el) => !t || el.dataset.topics.split(" ").includes(t));
+        const papers = "papers" in sec.dataset, more = sec.querySelector("[data-more]");
+        // All topics: the top `limit`. One topic: every matching paper, the top 12 of each resource kind.
+        const list = match.slice(0, t && papers ? match.length : Number(sec.dataset.limit));
+        const shown = new Set(more && !showAll ? list.slice(0, SHOW) : list);
+        for (const el of items) el.hidden = !shown.has(el);
+        sec.querySelector("[data-count]").textContent = `(${list.length})`;
+        sec.querySelector("[data-empty]").hidden = list.length > 0;
+        if (more) { more.hidden = shown.size === list.length; more.textContent = `Show all ${list.length}`; }
+        const all = sec.querySelector("[data-all]");
+        if (all) {
+          all.href = t ? `${all.dataset.base}?use=${t}` : all.dataset.base;
+          all.textContent = t ? `All ${match.length} for this topic →` : all.dataset.text;
+        }
+        if (sec.id === "papers") paperIds = list.map((el) => el.dataset.id);
+      }
+      copy.hidden = !paperIds.length;
+      copy.textContent = `Copy BibTeX (${paperIds.length})`;
+      const name = sel.selectedOptions[0].textContent.replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" })[c]);
+      note.hidden = !t;
+      note.innerHTML = t ? `Essentials for <b>${name}</b>: papers with this as their main or side topic, and the
+        models, datasets and tools used for it. <a href="/topics/${t}/">Topic page →</a>` : "";
+      history.replaceState(null, "", (t ? `?topic=${t}` : location.pathname) + location.hash);
+    }
+
+    const start = new URLSearchParams(location.search).get("topic");
+    if (start && [...sel.options].some((o) => o.value === start)) sel.value = start;
+    sel.addEventListener("change", () => { showAll = false; apply(); });
+    document.querySelector("[data-more]").addEventListener("click", () => { showAll = true; apply(); });
+    copy.addEventListener("click", async () => {
+      try { await navigator.clipboard.writeText(paperIds.map((id) => bib[id]).join("\n\n")); copy.textContent = "Copied ✓"; }
+      catch { copy.textContent = "Copy failed"; }
+      setTimeout(() => (copy.textContent = `Copy BibTeX (${paperIds.length})`), 2000);
+    });
+    apply();
+    if (location.hash) document.getElementById(location.hash.slice(1))?.scrollIntoView();
+  })();
+</script>
+{% endblock %}

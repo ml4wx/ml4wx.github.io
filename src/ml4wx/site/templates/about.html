@@ -34,6 +34,17 @@
   {{ cfg.settings.highlight.always_significance }} or more. So a big lab alone is not enough, and landmark
   work from anywhere is included.</p>
 
+{% set ess = cfg.settings.essentials %}
+<h2 id="essentials">How essentials are chosen</h2>
+<p>The <a href="/essentials/">Essentials</a> are the papers, models, datasets and tools to know first.
+  Candidate papers are highlights, classics and papers with a significance of {{ ess.landmark }} or more; all
+  need a significance of at least {{ ess.min_significance }}. They are ordered by citations per year since
+  publication. The age counts as at least one year, so a paper from last month does not jump ahead with a few
+  early citations. The essentials are papers from {{ ess.since }} on, and the first {{ ess.size }} of them are
+  the essentials for all topics; older candidates are listed apart as "Before {{ ess.since }}". Maintainers can
+  add or remove a paper by hand. Models, datasets and tools keep the order of their own pages: a curated rank for the most
+  used ones, then GitHub stars and the citations of their paper.</p>
+
 <h2>Data and reuse</h2>
 <ul>
   <li>One YAML file per paper in <a href="https://github.com/{{ site.repo }}/tree/main/papers">papers/</a>.</li>

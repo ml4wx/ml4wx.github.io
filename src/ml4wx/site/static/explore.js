@@ -2,7 +2,7 @@
 // State lives in the URL (?q=...&topic=...&lab=...&sort=...) so every view can be shared.
 
 const FACETS = [
-  ["highlight", "Highlights"],
+  ["highlight", "Importance"],
   ["topic", "Topic"],
   ["lab", "Lab / organization"],
   ["year", "Year"],
