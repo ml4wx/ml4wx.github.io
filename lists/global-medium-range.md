@@ -5,10 +5,12 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/global-medium-range/)
 
-308 papers (18 ⭐). Newest first.
+310 papers (18 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-10-30 | [Machine learning weather prediction at the operational threshold: architectures, data, evaluation, and the observation-interface frontier](https://doi.org/10.5281/zenodo.23788895)<br><sub>Qia Kang, Weiyu Ren, Boyu Gao · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
+| 2026-10-29 | [Machine Learning Weather Prediction: Models, Verification and Limits](https://doi.org/10.63090/ijitrs/3139.3209.0040)<br><sub>N Raji · International Journal of Information Technology Research Studies (IJITRS)</sub> |  |  |
 | 2026-10-20 | [GraphCast-Mamba: Learning Non-Markovian Corrections for Weather Forecasting](https://arxiv.org/abs/2610.28512)<br><sub>Ilya Vilkoviskiy, Liang-Hong Mo, Suozhi Huang et al.</sub> | Google Research, Princeton University |  |
 | 2026-10-18 | [UtoMe: Observation-Uncertainty-Guided Token Merging for Weather Foundation Models](https://arxiv.org/abs/2610.25001)<br><sub>Yunbei Zhang, Janet Wang, Xi Xiao et al.</sub> | ECMWF, Oak Ridge National Laboratory |  |
 | 2026-10-07 | [SoftSEEPS improves ML-based precipitation forecasting](https://arxiv.org/abs/2610.09752)<br><sub>Jost Arndt, Utku Isil, Noelia Otero et al.</sub> |  |  |
@@ -320,6 +322,7 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 
 ## Also relevant
 
+- [Artificial Intelligence Applications in Climate Change Prediction](https://doi.org/10.5281/zenodo.23791670) (2026)
 - [Pangu-Weather underestimates the 2019 European summer heatwave: A storyline comparison with ICON](https://doi.org/10.1175/jcli-d-26-0093.1) (2026)
 - [Advanced meteorological modeling framework integrating quantum computing and machine learning for hurricane track prediction beyond traditional forecasting limitations](https://doi.org/10.3389/fenvs.2026.1939822) (2026)
 - [Interpretability of AI weather models via intermediate decoding](https://arxiv.org/abs/2610.24110) (2026)
@@ -393,7 +396,7 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 - [Cast3: Translating numerical weather prediction principles into data-driven forecasting](https://arxiv.org/abs/2605.01599) (2026)
 - [Operational experience of using artificial intelligence global models for tropical cyclone forecasting in the western north Pacific and the South China Sea](https://doi.org/10.1016/j.tcrr.2026.05.001) (2026)
 - [Physics-based models outperform AI weather forecasts of record-breaking extremes](https://doi.org/10.1126/sciadv.aec1433) (2026)
-- [Evaluating machine-learning weather prediction for UK windstorm weather warnings](https://doi.org/10.22541/essoar.15002446/v1) (2026)
+- [Evaluating machine-learning weather prediction for UK windstorm weather warnings](https://doi.org/10.1002/met.70261) (2026)
 - [Explanation of Dynamic Physical Field Predictions using WassersteinGrad: Application to Autoregressive Weather Forecasting](https://arxiv.org/abs/2604.22580) (2026)
 - [AI-Driven Meteorology for Weather Detection, Classification, Nowcasting and Forecasting (1991–2025): A Comprehensive Review of Deep Learning and Machine Learning Approaches](https://doi.org/10.1007/s40009-026-02154-2) (2026)
 - [On the Representation of Convectively Coupled Kelvin Waves in Operational Forecast Models: An Object-Tracking Perspective](https://doi.org/10.1175/waf-d-25-0182.1) (2026)
@@ -488,7 +491,7 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 - [MoWE : A Mixture of Weather Experts](https://arxiv.org/abs/2509.09052) (2025)
 - [Data-driven solar forecasting enables near-optimal economic decisions](https://arxiv.org/abs/2509.06925) (2025)
 - [LUCIE-3D: A three-dimensional climate emulator for forced responses](https://arxiv.org/abs/2509.02061) (2025)
-- [MAUSAM: An Observations-focused assessment of Global AI Weather Prediction Models During the South Asian Monsoon](https://arxiv.org/abs/2509.01879) (2025)
+- [MAUSAM: An Observations-focused assessment of Global AI Weather Prediction Models During the South Asian Monsoon](https://doi.org/10.1029/2025ms005568) (2025)
 - [Advancing Hurricane Forecasting With AI Models for Track and Intensity Prediction](https://doi.org/10.1029/2024ms004822) (2025)
 - [FS-STFNet: a few-shot adaptive spatiotemporal fusion network for short-term tropical cyclone intensity forecasting](https://doi.org/10.3389/fmars.2025.1632410) (2025)
 - [Typhoon science meets artificial intelligence: A roundtable on bridging physics-based and data-driven paradigms](https://doi.org/10.1016/j.tcrr.2025.08.006) (2025)

@@ -5,10 +5,12 @@ Emulators of climate models and long stable rollouts (decades to centuries), sce
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/climate-emulation/)
 
-239 papers (9 ⭐). Newest first.
+241 papers (10 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-10-31 | [Artificial Intelligence Applications in Climate Change Prediction](https://doi.org/10.5281/zenodo.23791670)<br><sub>S Suren Babu, K Sakthi, K Vinotha et al. · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
+| 2026-10-26 | ⭐ [FASST: A Compact Stateless Atmosphere Model for Long-Term Ocean Coupling](https://arxiv.org/abs/2610.36297)<br><sub>Pratham Aggarwal, Duncan Watson-Parris, William E. Chapman</sub> | NVIDIA |  |
 | 2026-10-24 | [Sparse Gaussian-process emulation of regional climate projections with active budget allocation: a computer-science evaluation of tail-quantile fidelity in adaptation screening](https://doi.org/10.5281/zenodo.23606751)<br><sub>Hery Andrianirina, Fanja Rakotomalala Rasoanaivo, Tahina Randrianasolo · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
 | 2026-10-15 | [CLAIMA: AI emulators trained to run climate models for a new generation of AI driven Digital Twins](https://doi.org/10.5281/zenodo.23399795)<br><sub>Claudia d'Onofrio, Roberta Fabrizi, Nikolay Koldunov · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
 | 2026-10-15 | [Global temperature forecasting using multimodal machine learning: An empirical study integrating CO](https://doi.org/10.1051/epjconf/202639101005/pdf)<br><sub>Neeraj Choudhary, Sheetal Abhijit Kulkarni · Springer Link (Chiba Institute of Technology)</sub> |  |  |

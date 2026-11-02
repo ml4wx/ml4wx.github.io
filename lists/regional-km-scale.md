@@ -5,10 +5,12 @@ Limited-area and regional ML weather models, convection-permitting and km-scale 
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/regional-km-scale/)
 
-85 papers (6 ⭐). Newest first.
+87 papers (7 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-10-27 | [Scale-aware and spatially-localised optimisation of kilometre-scale MLWP models](https://arxiv.org/abs/2610.37325)<br><sub>James Chappell, Sophie Luise Arana, Jack Bowyer et al.</sub> | Met Office, The Alan Turing Institute |  |
+| 2026-10-26 | ⭐ [Towards operational data-driven regional weather forecasting: extreme-event skill and near-real-time verification with HRRRCast](https://arxiv.org/abs/2610.36186)<br><sub>Daniel Abdi, Isidora Jankov, Vanderlei Vargas et al.</sub> | NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), Colorado State University (incl. CIRA) |  |
 | 2026-10-21 | [Spatiotemporal Graph Neural Network Emulation of Regional Climate Models at Convection-Permitting Resolution: Spectral Fidelity Bounds and Downstream Flood-Exposure Equity Across West African River Basins](https://doi.org/10.5281/zenodo.23545305)<br><sub>Nourhan Ahmed Fathy El-Sayed, Karim Mostafa Abdel-Rahman, Salma Ahmed El-Badry · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
 | 2026-10-08 | [Learning Kilometer-Scale Weather Prediction with Global-Regional Alignment](https://arxiv.org/abs/2610.12401)<br><sub>Guowen Li, Yang Liu, Yujie Wang et al.</sub> |  |  |
 | 2026-10-08 | [Event-Aware Spatiotemporal Precipitation Forecasting with Geographic Context and Physics-Guided Regularization](https://arxiv.org/abs/2610.11211)<br><sub>Yiping Hong, Xinyu Wang, Sameh Abdulah</sub> |  |  |

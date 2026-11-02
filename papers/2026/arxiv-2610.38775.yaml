@@ -1,0 +1,64 @@
+id: arxiv-2610.38775
+title: Skillful and realistic precipitation forecasting with reinforced diffusion
+authors:
+- Ozan Sener
+- Anand Avati
+- David Hafner
+- Jierui Lin
+- Laura Manduchi
+- Xiaoying Pang
+- Langwen Huang
+- Torsten Hoefler
+- Russ Schumacher
+- Vladlen Koltun
+date: '2026-10-28'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.38775'
+  openalex: W7224812271
+links:
+  paper: https://arxiv.org/abs/2610.38775
+  pdf: https://arxiv.org/pdf/2610.38775
+orgs:
+- ecmwf
+- noaa
+- met-office
+- eth-zurich
+- colorado-state-university
+topic: probabilistic-ensembles
+topics:
+- extremes-hazards
+type: model
+method:
+- diffusion
+- reinforcement-learning
+timescale:
+- short
+spatial:
+- regional
+data:
+- other
+status: pre-operational
+summary: FitzRoy refines a conditional discrete diffusion precipitation model with reinforcement learning,
+  matching or beating state-of-the-art skill up to 24 h over the US while producing realistic extremes
+  and running in low-latency.
+abstract: Accurate precipitation forecasting remains elusive as physics-based models struggle to resolve
+  mesoscale convection and machine learning often yields physically inconsistent, blurred results that
+  consistently underestimate extreme events. We present FitzRoy, the first system that simultaneously
+  achieves state-of-the-art predictive skill and physical realism over the continental United States.
+  Through a reinforced diffusion framework, where a conditional discrete diffusion model is refined via
+  reinforcement learning, FitzRoy effectively resolves the long-standing trade-off between pointwise accuracy
+  and structural fidelity. Across lead times up to 24 hours, FitzRoy consistently matches or exceeds state-of-the-art
+  models while preserving structural realism and capturing extreme events. Its low-latency inference further
+  enables deployment in real-time operational settings. In case studies such as the 2025 Texas Hill Country
+  floods and the 2026 Missouri floods, FitzRoy signals record-breaking accumulations that existing models
+  largely missed. By bridging the gap between realism and skill, FitzRoy establishes a new frontier for
+  high-fidelity precipitation forecasting.
+significance: 6
+score: 59
+highlight: true
+highlight_reason: Reinforcement-learning-refined diffusion for US precipitation claims both skill and
+  realism, with real-time deployment and flood case studies; the claims need independent checking.
+added: '2026-11-02'
+source: weekly

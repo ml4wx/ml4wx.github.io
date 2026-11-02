@@ -5,10 +5,11 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/nowcasting/)
 
-844 papers (6 ⭐). Newest first.
+845 papers (6 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-10-27 | [STGAF-Net: A Multi-Source Spatiotemporal Gated Adaptive Fusion Network for Wind Speed Nowcasting](https://doi.org/10.3390/rs18213692)<br><sub>Huantong Geng, Meijing Shi, Shaoqiang Ma et al. · Remote Sensing</sub> | Nanjing University of Information Science & Technology (NUIST), China Meteorological Administration (CMA) |  |
 | 2026-10-21 | [Physics-Informed Neural Network Emulation of Convective Storm Initiation over the Sahel: Calibration Bounds and Warning-Lead-Time Equity for Climate Analytics](https://doi.org/10.5281/zenodo.23545314)<br><sub>Omar Abdelaziz Hegazy · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
 | 2026-10-21 | [Investigating the Use of Geostationary Satellites to Identify Thunderstorm Initiation with the LightningCast and ThunderCast Machine Learning Models](https://doi.org/10.1175/waf-d-25-0250.1)<br><sub>Stephanie M. Ortland, Michael J. Pavolonis, Lena Heuscher · Weather and Forecasting</sub> | NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), Colorado State University (incl. CIRA) |  |
 | 2026-10-19 | [Identification of Atmospheric Dynamics of a Tropical Hail Event and Application of Radar Reflectivity Nowcasting Using a UNet-ConvLSTM2D Deep Learning Model](https://doi.org/10.26877/lpt.v5i3.1087)<br><sub>Muhizzadin Abdul Adzan, Deni Septiadi, A. Mulsandi et al. · Lontar Physics Today</sub> |  |  |
@@ -856,6 +857,7 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 
 ## Also relevant
 
+- [IMPACT: Inverter-Informed Multimodal Learning for Photovoltaic Generation Forecasting](https://arxiv.org/abs/2610.40418) (2026)
 - [Huayu-Global: Skillful real-time quasi-global precipitation retrieval](https://arxiv.org/abs/2610.29213) (2026)
 - [Comparison of data-driven and numerical weather prediction models for rainfall nowcasting in major cities of Bangladesh](https://doi.org/10.1371/journal.pclm.0001088) (2026)
 - [Research on deep learning-based missing echo restoration method for weather radar mosaic data](https://doi.org/10.5194/amt-19-6341-2026) (2026)

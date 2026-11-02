@@ -63,6 +63,7 @@ Large pretrained models for the atmosphere or Earth system that are fine-tuned f
 
 ## Also relevant
 
+- [Machine learning weather prediction at the operational threshold: architectures, data, evaluation, and the observation-interface frontier](https://doi.org/10.5281/zenodo.23788895) (2026)
 - [Generative modelling for multivariate spatio-temporal downscaling of monthly climate fields](https://arxiv.org/abs/2610.19885) (2026)
 - [WxFM-XL: Adapting Univariate Foundation Models to Multi-Station Weather Forecasting](https://arxiv.org/abs/2610.10057) (2026)
 - [Xaurora: Generative Weather Forecasting with Denoising Stochastic Interpolants from a Foundation Model Prior](https://arxiv.org/abs/2610.06509) (2026)

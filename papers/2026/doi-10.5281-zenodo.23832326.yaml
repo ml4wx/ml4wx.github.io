@@ -1,0 +1,44 @@
+id: doi-10.5281-zenodo.23832326
+title: A Machine Learning-Based Weather Forecasting System with Live Data Anchoring and Uncertainty Estimation
+authors:
+- Dinesh Singh
+date: '2026-10-31'
+year: 2026
+venue: Zenodo (CERN European Organization for Nuclear Research)
+venue_type: preprint
+ids:
+  doi: 10.5281/zenodo.23832326
+  openalex: W7225018275
+links:
+  paper: https://doi.org/10.5281/zenodo.23832326
+  code: https://github.com/Yokiatch/weather-forecasting
+topic: local-forecasting
+topics:
+- post-processing
+type: model
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+- other
+status: research
+summary: XGBoost with live Open-Meteo anchoring produces recursive 7-day temperature forecasts with 95%
+  intervals, cutting Day 1 RMSE from 2.45 to 1.12 for Greater Noida.
+abstract: 'This preprint presents a machine learning weather forecasting system that combines historical
+  pattern learning with live data anchoring and uncertainty estimation. An XGBoost regression model is
+  trained on lag-based temperature features and anchored to real-time observations from the Open-Meteo
+  API. It produces recursive 7-day forecasts with residual-based 95% confidence intervals, so users can
+  see how forecast reliability decreases with horizon. The system is served through a FastAPI backend
+  and Streamlit frontend. Evaluated on Greater Noida, India data against a persistence baseline, the model
+  reduced RMSE at every horizon tested (Day 1: 1.12 vs 2.45, Day 7: 3.15 vs 5.50). Unpublished manuscript;
+  code and reproduction instructions are available at https://github.com/Yokiatch/weather-forecasting.'
+significance: 1
+cited_by: 0
+score: 14
+highlight: false
+added: '2026-11-02'
+source: weekly

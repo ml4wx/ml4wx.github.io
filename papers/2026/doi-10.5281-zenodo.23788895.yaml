@@ -1,0 +1,62 @@
+id: doi-10.5281-zenodo.23788895
+title: 'Machine learning weather prediction at the operational threshold: architectures, data, evaluation,
+  and the observation-interface frontier'
+authors:
+- Qia Kang
+- Weiyu Ren
+- Boyu Gao
+date: '2026-10-30'
+year: 2026
+venue: Zenodo (CERN European Organization for Nuclear Research)
+venue_type: preprint
+ids:
+  doi: 10.5281/zenodo.23788895
+  openalex: W7224741917
+links:
+  paper: https://doi.org/10.5281/zenodo.23788895
+topic: global-medium-range
+topics:
+- foundation-models
+- data-assimilation
+type: review
+method:
+- transformer
+- gnn
+- diffusion
+- differentiable
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Review of operational-stage ML weather prediction covering six architecture families, ERA5 dependence,
+  a four-tier verification protocol, and end-to-end observation-based systems.
+abstract: 'Machine learning weather prediction (MLWP) has moved from research demonstration into operational
+  practice in roughly five years. Global models trained on reanalysis now produce ten- to fifteen-day
+  forecasts at 0.25 degree resolution in seconds, and several match or exceed established numerical weather
+  prediction (NWP) systems on standard verification metrics. This review examines what has been built,
+  what it has been built on, and how it is being evaluated. Six architectural families are distinguished:
+  spherical graph networks, three-dimensional transformers, cascaded multi-horizon systems, diffusion
+  and flow-based generative ensembles, geometric mesh-based ensemble systems, and hybrid models that couple
+  a differentiable dynamical core to learned physics. The data substrate receives detailed treatment,
+  because ERA5 is a model-dependent product rather than a neutral training set, and every model trained
+  on it inherits the analysis increments, parameterised tendencies, and changing observational coverage
+  of that reanalysis. The verification stack is examined with equal care. Root-mean-square error and anomaly
+  correlation are dominated by planetary-scale, slowly evolving flow, which makes them least sensitive
+  to the failures that matter most: spectral deficit, over-smoothing of extremes, displacement error,
+  and regime-dependent breakdown. A four-tier experimental protocol is proposed, combining reforecast
+  benchmarking, out-of-distribution and regime-conditional testing, spectral and conservation diagnostics,
+  and block bootstrap inference. The review then documents the frontier that emerged in 2025 and 2026,
+  in which end-to-end systems ingest observations directly and bypass conventional data assimilation,
+  and foundation models share one backbone across atmosphere, ocean, cryosphere, and atmospheric composition.
+  The argument throughout is that the field''s bottleneck has shifted from architecture to the observation
+  interface and to evaluation practice, and that the credibility of MLWP over the next five years will
+  rest on whether its claims survive out-of-distribution, conservation-aware, and statistically defensible
+  scrutiny.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-11-02'
+source: weekly

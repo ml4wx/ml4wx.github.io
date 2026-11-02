@@ -101,7 +101,7 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 | 2025-09-14 | [California Wildfire Inventory (CAWFI): An Extensive Dataset for Predictive Techniques based on Artificial Intelligence](https://arxiv.org/abs/2509.11015)<br><sub>Rohan Tan Bhowmik, Youn Soo Jung, Juan Aguilera et al.</sub> |  |  |
 | 2025-09-10 | [A Benchmark Dataset for Satellite-Based Estimation and Detection of Rain](https://arxiv.org/abs/2509.08816)<br><sub>Simon Pfreundschuh, Malarvizhi Arulraj, Ali Behrangi et al.</sub> |  |  |
 | 2025-09-08 | [An extension of WeatherBench 2 to binary hydroclimatic forecasts](https://doi.org/10.5194/gmd-18-5781-2025)<br><sub>Tongtiegang Zhao, Qiang Li, Tongbi Tu et al. · Geoscientific model development</sub> |  |  |
-| 2025-09-02 | [MAUSAM: An Observations-focused assessment of Global AI Weather Prediction Models During the South Asian Monsoon](https://arxiv.org/abs/2509.01879)<br><sub>Aman Gupta, Aditi Sheshadri, Dhruv Suri</sub> |  |  |
+| 2025-09-02 | [MAUSAM: An Observations-focused assessment of Global AI Weather Prediction Models During the South Asian Monsoon](https://doi.org/10.1029/2025ms005568)<br><sub>Aman Gupta, Aditi Sheshadri, Dhruv Suri · Journal of Advances in Modeling Earth Systems</sub> | Stanford University |  |
 | 2025-08-31 | [IndiaWeatherBench: A Dataset and Benchmark for Data-Driven Regional Weather Forecasting over India](https://arxiv.org/abs/2509.00653)<br><sub>Tung Nguyen, Harkanwar Singh, Nilay Naharas et al.</sub> |  | [code](https://github.com/tung-nd/IndiaWeatherBench) |
 | 2025-08-09 | [Setting the Standard: Recommended Practices for Data Preprocessing in Data-Driven Climate Prediction](https://doi.org/10.1175/bams-d-24-0292.1)<br><sub>Jason C. Furtado, Maria J. Molina, Marybeth C. Arcodia et al. · Bulletin of the American Meteorological Society</sub> | Colorado State University (incl. CIRA), NSF NCAR / UCAR, NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), University of Oklahoma (AI2ES) |  |
 | 2025-08-06 | [An Object-Based Evaluation of Output from a Deep Learning Model for Thunderstorm Nowcasting](https://doi.org/10.1175/aies-d-24-0071.1)<br><sub>Stephanie M. Ortland, Michael J. Pavolonis · Artificial Intelligence for the Earth Systems</sub> | Colorado State University (incl. CIRA), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
@@ -211,6 +211,7 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 
 ## Also relevant
 
+- [RainCheck: Harnessing Historical Weather Data with Machine Learning for Rainfall Forecasting in Bangladesh](https://arxiv.org/abs/2610.38211) (2026)
 - [Evaluation of vegetation above-ground biomass carbon from CMIP6 ESMs using global satellite-based estimates](https://doi.org/10.1088/2515-7620/aeb7c9) (2026)
 - [Detection of East Asian Atmospheric Rivers Based on Physically Constrained Dual‐Threshold Methods and Deep Learning Algorithms](https://doi.org/10.1029/2026jd047067) (2026)
 - [Wet-Biased Data Pipelines Mislead the Training and Evaluation of Generative Precipitation Nowcasting](https://arxiv.org/abs/2610.26486) (2026)

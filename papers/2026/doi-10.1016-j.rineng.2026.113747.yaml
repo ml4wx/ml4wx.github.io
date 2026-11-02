@@ -1,0 +1,70 @@
+id: doi-10.1016-j.rineng.2026.113747
+title: Day-ahead BOCNN-LSTM PV prediction based on input of NWP forecasting reconstruction by VMD and
+  CNN-BiGRU-AM network
+authors:
+- Jian-Hong Zhu
+- Jun Zhang
+- Jinpei Tang
+- Xinsong Zhang
+- Qingfa Zhang
+- Kai Luo
+- Yonghua Ge
+- Chenghong Gu
+date: '2026-10-26'
+year: 2026
+venue: Results in Engineering
+venue_type: journal
+ids:
+  doi: 10.1016/j.rineng.2026.113747
+  openalex: W7223670783
+links:
+  paper: https://doi.org/10.1016/j.rineng.2026.113747
+topic: post-processing
+topics:
+- applications-impacts
+type: model
+method:
+- cnn
+- rnn
+timescale:
+- short
+spatial:
+- local
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Two-stage VMD and CNN-BiGRU-attention NWP correction feeds a BO-CNN-LSTM day-ahead PV forecaster;
+  corrected irradiance and temperature reach R² above 0.95.
+abstract: Accurate day-ahead photovoltaic (PV) power forecasting is essential for renewable energy scheduling,
+  while the performance is limited by both prediction model and the quality of numerical weather prediction
+  (NWP) information. To address this issue, an integrated two-stage framework is proposed by explicitly
+  coupling NWP error correction with downstream PV power forecasting. The framework separates the correction
+  of meteorological input errors from the learning of the NWP-to-power mapping and generates corrected
+  meteorological variables as intermediate outputs before PV power prediction. This design allows the
+  quality of the corrected NWP inputs and the downstream PV forecasting performance to be evaluated separately,
+  rather than implying universal superiority over end-to-end forecasting architectures. In the first stage,
+  a station-scale NWP correction system based on variational mode decomposition (VMD) and a Convolutional
+  Neural Network Bidirectional Gated Recurrent Unit Attention Mechanism (CNN-BiGRU-AM) network is developed.
+  The errors sequence between NWP variables and measured meteorological data are decomposed into multiple
+  intrinsic mode functions, which are individually predicted and reconstructed to obtain corrected high-resolution
+  NWP inputs. In the second stage, a Bayesian Optimization Convolutional Neural Network Long Short-Term
+  Memory (BO-CNN-LSTM) model is established for day-ahead PV power forecasting, where Bayesian optimization
+  is used to adaptively determine key hyper-parameters. Four one-month samples that are randomly selected
+  from different seasons are used for validation. The results show that the corrected global horizontal
+  irradiance and temperature both achieve regression coefficient above 0.95, while the corrected wind
+  speed reaches 0.75. Using corrected NWP data as inputs, the proposed framework is evaluated on a 20
+  MW PV station with a 15 min temporal resolution, corresponding to 96 forecasting points per day. The
+  average RMSE, MAE, and ME are 0.0759 p.u., 0.0580 p.u., and 0.0201 p.u., respectively, where p.u. denotes
+  the normalized value relative to the installed capacity. These values are approximately equivalent to
+  1.518 MW, 1.160 MW, and 0.402 MW, respectively. The correlation coefficient, accuracy, and qualification
+  rate are 0.9823, 92.41%, and 99.44%, respectively. Further ablation experiments and baseline comparisons
+  indicate that the proposed explicit correction–forecasting framework improves the quality of meteorological
+  inputs and achieves lower day-ahead PV forecasting errors across the four representative seasonal samples
+  considered in this study.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-11-02'
+source: weekly

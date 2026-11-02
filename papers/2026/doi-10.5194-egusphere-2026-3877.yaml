@@ -1,0 +1,56 @@
+id: doi-10.5194-egusphere-2026-3877
+title: Explaining patterns learned by neural networks for detection of atmospheric surface fronts in gridded
+  atmospheric data
+authors:
+- Tim Radke
+- Johanna Baehr
+- Marc Rautenhaus
+date: '2026-10-30'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.5194/egusphere-2026-3877
+  openalex: W7224897699
+links:
+  paper: https://doi.org/10.5194/egusphere-2026-3877
+  pdf: https://egusphere.copernicus.org/preprints/2026/egusphere-2026-3877/egusphere-2026-3877.pdf
+orgs:
+- mpi-meteorology
+topic: xai-uq-physics
+type: evaluation
+method:
+- cnn
+- other
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: Layer-wise relevance analysis of a U-Net front detector in ERA5 shows implausible patterns and
+  tropical over-detection, so it should be used with care outside training regions.
+abstract: Abstract. Atmospheric surface fronts (SFs) strongly influence midlatitude weather through storms,
+  precipitation, and abrupt temperature changes, motivating reliable detection. Here, we reproduce a U-Net,
+  a type of artificial neural network, to detect SFs in ERA5 reanalysis data with labelled datasets over
+  North America and Europe. The goal of this study is to apply Layer-wise Relevance Propagation (LRP)
+  to interpret the learned patterns. To reduce computational cost, we introduce a, compared to previous
+  studies, reduced U-Net variant and a reduced input set of six variables - temperature, specific humidity,
+  and horizontal wind - without reducing detection quality. Relevance analysis shows that U-Net focuses
+  partly on physically meaningful regions near detected SFs, consistent with rule-based methods, but also
+  noisy patterns and spurious correlations far from the detected fronts. Moreover, U-Net employs two nearly
+  inverted relevance patterns for different parts of a front, which we see as not physically plausible.
+  Using a simplified synthetic dataset of a 1-D field with SF labels placed at the minimum of the second
+  derivative, we can link the pattern to the front position relative to the frontal zone. Increasing the
+  label resolution enables the U-Net to learn a more plausible pattern without the split in the synthetic
+  case. When evaluated over a larger region (Pacific to Europe, equator to Arctic), U-Net performs well
+  in midlatitudes but over-detects SFs in the Tropics and Arctic, for example regularly detecting SFs
+  within tropical cyclones. Together with the partially implausible relevance patterns, this indicates
+  that ANN-based SF detection should be used with care outside the training regions. Retraining on the
+  larger domain improves detection skill and the plausibility of relevance patterns, but the split pattern
+  persists. Overall, the results highlight the value of explainable AI for identifying physically implausible
+  shortcuts and the need for a global SF dataset to enable reliable detection worldwide.
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-11-02'
+source: weekly
