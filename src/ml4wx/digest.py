@@ -29,6 +29,11 @@ INTRO_SCHEMA = {
 
 
 def week_id(d: dt.date) -> str:
+    """ISO week of the digest made on day d. A Sunday run makes the digest of the coming week: the
+    weekly workflow starts on Sunday evening so the PR is ready on Monday morning (same rule in the
+    guard job of .github/workflows/weekly.yml)."""
+    if d.isoweekday() == 7:
+        d += dt.timedelta(days=1)
     y, w, _ = d.isocalendar()
     return f"{y}-W{w:02d}"
 

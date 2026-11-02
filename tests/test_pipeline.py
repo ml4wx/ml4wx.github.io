@@ -2,7 +2,7 @@ import datetime as dt
 
 from conftest import make_candidate, make_paper
 
-from ml4wx import export, ingest
+from ml4wx import digest, export, ingest
 from ml4wx.config import load
 from ml4wx.models import Ids
 from ml4wx.store import Archive
@@ -119,3 +119,12 @@ def test_openalex_html_entities_are_decoded():
          "primary_location": {"source": source}}
     c = openalex.parse_work(w, "test")
     assert c.title == "Rain & snow" and c.venue == "Communications Earth & Environment"
+
+
+def test_week_id_sunday_run_makes_the_coming_week():
+    # The weekly workflow starts on Sunday evening (UTC) so the PR is ready on Monday morning.
+    assert digest.week_id(dt.date(2026, 11, 2)) == "2026-W45"  # Monday
+    assert digest.week_id(dt.date(2026, 11, 7)) == "2026-W45"  # Saturday
+    assert digest.week_id(dt.date(2026, 11, 1)) == "2026-W45"  # Sunday: the coming week
+    assert digest.week_id(dt.date(2026, 12, 27)) == "2026-W53"  # Sunday before ISO week 53
+    assert digest.week_id(dt.date(2027, 1, 3)) == "2027-W01"  # Sunday before the first week of 2027

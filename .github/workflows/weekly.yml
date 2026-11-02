@@ -1,18 +1,23 @@
 name: Weekly update
 
-# Monday morning: crawl the last days, classify, open a PR with the new papers,
+# By Monday morning: crawl the last days, classify, open a PR with the new papers,
 # and post the digest as an issue that mentions the people in settings.yaml `notify`.
 on:
   schedule:
-    # Plain UTC at odd minutes: with the `timezone:` key and full hours the runs started 3-5 h late.
-    # 05:37 UTC = 06:37 Zurich in winter, 07:37 in summer. The second time is a fallback in case
-    # GitHub drops the first run; the guard job skips it when this week's digest already exists.
-    - cron: "37 5 * * 1"
-    - cron: "37 8 * * 1"
+    # GitHub starts scheduled runs of this repo 6-7 h late (Oct-Nov 2026: daily cron 06:07 UTC ran at
+    # 12:00-13:10, 09:07 at 15:15-16:05; the weekly 08:37 run at 15:25). So the first slot is Sunday
+    # evening: with the usual delay it runs early Monday (UTC), without delay late Sunday. A Sunday
+    # run makes the digest of the coming week (digest.week_id). The Monday slots are fallbacks in
+    # case GitHub drops a run; the guard job skips them once this week's PR or digest exists.
+    # Odd minutes, plain UTC: full hours are the busiest times, and the `timezone:` key was later still.
+    - cron: "37 21 * * 0"
+    - cron: "37 0 * * 1"
+    - cron: "37 3 * * 1"
+    - cron: "37 6 * * 1"
   workflow_dispatch:
     inputs:
       force:
-        description: Run even if this week's digest issue already exists
+        description: Run even if this week's PR or digest issue already exists
         type: boolean
         default: false
 
@@ -36,10 +41,16 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           FORCE: ${{ inputs.force }}
         run: |
-          week=$(date -u +%G-W%V)
-          if [ "$FORCE" != "true" ] && gh issue list -R "$GITHUB_REPOSITORY" --label digest --state all \
-              --search "\"$week\" in:title" --json number -q '.[0].number' | grep -q .; then
-            echo "Digest for $week exists; nothing to do."
+          # The digest week, same rule as digest.week_id: a Sunday run makes the coming week's digest.
+          if [ "$(date -u +%u)" = 7 ]; then day=tomorrow; else day=today; fi
+          week=$(date -u -d "$day" +%G-W%V)
+          [ "$FORCE" = "true" ] && exit 0
+          # The PR lookup does not use the search index, so it also sees a PR made minutes ago.
+          pr=$(gh pr list -R "$GITHUB_REPOSITORY" --head "weekly/$week" --state all --json number -q '.[0].number')
+          issue=$(gh issue list -R "$GITHUB_REPOSITORY" --label digest --state all \
+            --search "\"$week\" in:title" --json number -q '.[0].number')
+          if [ -n "$pr$issue" ]; then
+            echo "Weekly update for $week exists (PR ${pr:-none}, digest issue ${issue:-none}); nothing to do."
             echo "skip=true" >> "$GITHUB_OUTPUT"
           fi
 
