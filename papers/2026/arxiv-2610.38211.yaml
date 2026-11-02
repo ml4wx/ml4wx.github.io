@@ -1,0 +1,56 @@
+id: arxiv-2610.38211
+title: 'RainCheck: Harnessing Historical Weather Data with Machine Learning for Rainfall Forecasting in
+  Bangladesh'
+authors:
+- Shahran Rahman Alve
+- Muhammad Zawad Mahmud
+- Samiha Islam
+- Al Jubayer Pial
+date: '2026-10-28'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.38211'
+links:
+  paper: https://arxiv.org/abs/2610.38211
+  pdf: https://arxiv.org/pdf/2610.38211
+topic: local-forecasting
+topics:
+- benchmarks-data-eval
+type: evaluation
+method:
+- classical-ml
+- rnn
+timescale:
+- short
+- seasonal
+spatial:
+- local
+- regional
+data:
+- stations
+status: research
+summary: Leakage-aware evaluation of 618,650 Bangladesh station-days shows climatology rivals ML rainfall
+  models, with lagged rainfall adding only modest next-day Brier skill of 0.074.
+abstract: 'Machine-learning rainfall forecasts are often evaluated by shuffling station records into random
+  training and test sets. For rainfall, this lets a model see what happened at neighbouring stations on
+  the very day it is asked to forecast, and it hides the fact that a seasonal lookup table already explains
+  most of the variance. We quantify both effects on 618,650 station-days from 35 Bangladesh Meteorological
+  Department stations (1948-2014). We compare random, temporal (train <=1999, test 2005-2014) and spatio-temporal
+  (unseen stations and unseen years) evaluation, calendar-only versus antecedent-rainfall features, and
+  six learners against climatology, persistence and SARIMA. Three findings stand out. First, a station-month
+  climatology alone classifies high-rainfall months with 88.4% accuracy (AUC 0.950), and no learner improved
+  on it by more than 0.8 points under temporal evaluation. Second, a calendar-only random forest reached
+  a next-day wet-day AUC of 0.889 under a random split, higher than any model with real predictors under
+  temporal evaluation, yet fell to 0.835, below climatology (0.859), on future years. Third, models with
+  lagged rainfall add genuine but modest skill for next-day forecasts: a Brier skill score of 0.074 (95%
+  CI 0.064-0.088) over climatology, rising to 0.091 when station and year inputs are removed and to 0.131
+  when other stations'' same-day observations are added. A GRU sequence model matches but does not exceed
+  gradient boosting, and skill disappears beyond a two-day lead. For monthly totals, no learner beat climatology
+  significantly. We release a leakage-aware protocol and code so that future station-based studies report
+  skill against climatology on held-out years.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-11-02'
+source: weekly

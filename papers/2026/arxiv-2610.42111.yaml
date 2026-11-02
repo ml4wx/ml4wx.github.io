@@ -1,0 +1,54 @@
+id: arxiv-2610.42111
+title: 'SATFRONT: Detecting Atmospheric Fronts with Satellite Data using Machine Learning'
+authors:
+- Ioannis Dravilas
+- Miruna Stoicescu
+- Roope Tervo
+- Carlos Horn
+- Oriol Hinojo Comellas
+- Sina Montazeri
+- Andrea Meraner
+- Ana Lucic
+date: '2026-10-30'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.42111'
+links:
+  paper: https://arxiv.org/abs/2610.42111
+  pdf: https://arxiv.org/pdf/2610.42111
+orgs:
+- ecmwf
+- noaa
+- met-office
+- dwd
+topic: observations-remote-sensing
+type: model
+spatial:
+- regional
+data:
+- satellite
+- era5
+status: research
+summary: SATFRONT detects cold, warm and occluded fronts over Europe from geostationary satellite data,
+  reaching CSI 0.428 without reanalysis and 0.591 with ERA5, beating an operational rule-based detector.
+abstract: Atmospheric fronts are associated with much of the high-impact weather in the mid-latitudes,
+  yet their identification and classification remain largely manual and subjective. Existing deep learning
+  approaches rely primarily on gridded reanalysis or forecast data, limiting their applicability to satellite
+  observations available for time-critical applications. We introduce SATFRONT, a machine learning framework
+  for detecting cold, warm, and occluded fronts over Europe from geostationary satellite observations,
+  with reanalysis data as an optional additional input. The model is trained on frontal analyses from
+  five European national meteorological services and evaluated against UK Met Office analyses for 2024.
+  Using satellite observations alone, SATFRONT achieves a Critical Success Index (CSI) of 0.428 at a 150
+  km tolerance, within the range of agreement between analyses from different meteorological services
+  (0.277-0.501) and higher than that of an operational rule-based front detector that uses satellite data
+  (0.133). Adding ERA5 reanalysis increases the CSI to 0.591. ERA5 substantially improves the placement
+  of individual fronts, although its effect on their annual spatial distribution varies by front type.
+  These results demonstrate that cold, warm, and occluded fronts can be detected directly from geostationary
+  satellite observations, providing a basis for automated frontal analyses at the high temporal frequency
+  required for time-critical applications.
+significance: 4
+score: 51
+highlight: false
+added: '2026-11-02'
+source: weekly

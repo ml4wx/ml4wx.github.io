@@ -1,0 +1,56 @@
+id: doi-10.3390-rs18213692
+title: 'STGAF-Net: A Multi-Source Spatiotemporal Gated Adaptive Fusion Network for Wind Speed Nowcasting'
+authors:
+- Huantong Geng
+- Meijing Shi
+- Shaoqiang Ma
+- Fangli Wu
+- Jinzhong Min
+date: '2026-10-27'
+year: 2026
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs18213692
+  openalex: W7223853141
+links:
+  paper: https://doi.org/10.3390/rs18213692
+orgs:
+- nuist
+- cma
+topic: nowcasting
+topics:
+- observations-remote-sensing
+type: model
+method:
+- transformer
+- cnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+- stations
+status: research
+summary: STGAF-Net fuses radar reflectivity and surface wind with gated spatiotemporal attention for 2-hour
+  wind speed nowcasts, strongest at high-wind thresholds and later leads.
+abstract: Accurate wind speed nowcasting is critical for wind-risk assessment, traffic management, and
+  emergency response. However, existing deep learning methods still suffer from inadequate multi-source
+  meteorological data fusion, multi-step error accumulation, and performance decay at high-wind-speed
+  thresholds. To address these issues, this paper proposes STGAF-Net, a multi-source spatiotemporal gated
+  adaptive fusion network. It uses radar reflectivity and surface wind speed as complementary inputs,
+  employs collaborative local–global encoding to capture local details and long-range spatial dependencies,
+  and adaptively integrates multi-source features through stage-wise gating. Temporally, non-recurrent
+  spatiotemporal modeling dynamically adjusts the contribution of each historical time step based on sequence
+  evolution and time intervals, enabling parallel prediction of future wind fields. This end-to-end framework
+  effectively bolsters spatial structure preservation and long-range dependency modeling for severe winds.
+  The experimental results demonstrate that STGAF-Net achieves the strongest overall performance among
+  seven learning-based baselines and a non-learning persistence forecast on two datasets, particularly
+  at high-wind-speed thresholds and at later lead times within the 2-h nowcasting horizon.
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-11-02'
+source: weekly

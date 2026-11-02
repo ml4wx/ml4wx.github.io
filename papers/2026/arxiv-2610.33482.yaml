@@ -1,0 +1,44 @@
+id: arxiv-2610.33482
+title: Climate downscaling with likelihood functional flow matching
+authors:
+- Zhi-Song Liu
+- Helmi Toropainen
+- Ammar Kheder
+- Michael Boy
+date: '2026-10-24'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.33482'
+links:
+  paper: https://arxiv.org/abs/2610.33482
+  pdf: https://arxiv.org/pdf/2610.33482
+topic: downscaling
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+- neural-operator
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: CD-FFM, a functional flow-matching downscaler, cuts CRPS of 1 km daily temperature over Fennoscandia
+  by 12-18% versus a neural operator and sampling about 50 times faster than a CorrDiff-style model.
+abstract: Decisions about heat, frost and flooding are made locally, yet reanalyses and climate models
+  resolve tens of kilometres. Generative downscalers add kilometre-scale detail with uncertainty, but
+  are tied to a grid, costly to sample and lack a tractable likelihood. Here we introduce CD-FFM, a functional
+  flow-matching model that treats the high-resolution field as a continuous random field that one model
+  can query at any location and resolution. Its velocity acts pointwise, so spatial variability comes
+  from a noise prior fitted to the observed spectrum and every observation has an exact likelihood. Downscaling
+  ERA5 to 1 km daily temperature over Fennoscandia, CD-FFM lowers the continuous ranked probability score
+  by 27-31% against regression and 12-18% against a forty-times larger neural operator in each of three
+  test years, and outperforms a CorrDiff-style diffusion model while sampling about fifty times faster.
+  The same model transfers to precipitation and makes large kilometre-scale ensembles affordable.
+significance: 5
+score: 20
+highlight: false
+added: '2026-11-02'
+source: weekly

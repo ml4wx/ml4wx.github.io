@@ -5,11 +5,14 @@ Statistical and generative downscaling of weather or climate fields to higher re
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/downscaling/)
 
-834 papers (8 ⭐). Newest first.
+837 papers (8 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-10-29 | [Operator-Aware Posterior Sampling for Multivariate Weather Downscaling](https://arxiv.org/abs/2610.39592)<br><sub>Carlo Saccardi, Rudolf Saathof, Geethu Joseph et al.</sub> |  | [code](https://github.com/CarloSaccardi/operator-aware-weather-downscaling) |
+| 2026-10-25 | [High-resolution mapping of urban wet-bulb temperature and its intra-urban variability: A London case study](https://doi.org/10.1016/j.jag.2026.105649)<br><sub>Zitong Wen, Lu Zhuo, Jiao Wang et al. · International Journal of Applied Earth Observation and Geoinformation</sub> |  |  |
 | 2026-10-24 | [Physics-informed neural networks for downscaling convective-permitting rainfall extremes under sparse radiosonde initialization: a climate-analytics evaluation of tail-index distortion in dam-safety analytics](https://doi.org/10.5281/zenodo.23606783)<br><sub>Akosua Serwaa Amankwah, Efua Abena Owusu-Boateng, Kojo Nkrumah-Bonsu · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
+| 2026-10-24 | [Climate downscaling with likelihood functional flow matching](https://arxiv.org/abs/2610.33482)<br><sub>Zhi-Song Liu, Helmi Toropainen, Ammar Kheder et al.</sub> |  |  |
 | 2026-10-20 | [A Downscaling–Calibration Framework for GPM Precipitation Data Based on Geographically Weighted Machine Learning: A Case Study of the Yellow River Basin, China](https://doi.org/10.3390/rs18203597)<br><sub>Xuan Wang, Qisheng He, Yuanlong Jiao et al. · Remote Sensing</sub> |  |  |
 | 2026-10-19 | [Spatio-temporal precipitation downscaling at hourly resolution based on km-scale regional simulations](https://arxiv.org/abs/2610.26145)<br><sub>Henry Addison, Elizabeth J. Kendon, Peter A. G. Watson</sub> | Met Office |  |
 | 2026-10-14 | [PrecipCorrDiff: A Deep Learning Framework for Generating 0.0625$^\circ$ High-Resolution IMD Gridded Precipitation Data](https://arxiv.org/abs/2610.19994)<br><sub>Bipin Kumar, Rajib Chattopadhyay, Harsh P. Bachhav et al.</sub> | NVIDIA |  |
@@ -113,7 +116,7 @@ Statistical and generative downscaling of weather or climate fields to higher re
 | 2026-05-29 | [Flow Matching for Convective-Scale Precipitation Downscaling](https://arxiv.org/abs/2606.00281)<br><sub>Tom Wetherell</sub> |  |  |
 | 2026-05-26 | [Deep learning-based downscaling of ERA5-Land temperature to 250 m resolution over the Trentino–South Tyrol Alpine region](https://doi.org/10.1016/j.aiig.2026.100226)<br><sub>Ihcene Djouama, Nabil Kadache, Rachid Seghir · Artificial Intelligence in Geosciences</sub> |  |  |
 | 2026-05-25 | [Sea surface wind fields downscaling Using SwinIR and a two-stage learning approach](https://doi.org/10.3389/fmars.2026.1813336)<br><sub>Shuai Song, Shuo Wang, Xiangyu Chen et al. · Frontiers in Marine Science</sub> |  |  |
-| 2026-05-22 | [Precipitation diffusion downscaling and application to out-of-distribution simulations with and without stratospheric aerosol injection](https://arxiv.org/abs/2605.23776)<br><sub>Cameron Dong, James W. Hurrell, Elizabeth A. Barnes</sub> | Colorado State University (incl. CIRA) |  |
+| 2026-05-22 | [Precipitation diffusion downscaling and application to out-of-distribution simulations with and without stratospheric aerosol injection](https://doi.org/10.1088/3049-4753/aeba91)<br><sub>Cameron Dong, James W. Hurrell, Elizabeth A. Barnes · Machine Learning Earth</sub> | Colorado State University (incl. CIRA) |  |
 | 2026-05-22 | [Hybrid Quantum-Classical Corrective Diffusion Modeling for Meteorological Downscaling](https://arxiv.org/abs/2605.23403)<br><sub>Rui Wang, Edoardo Pasetto, Amer Delilbasic et al.</sub> | Forschungszentrum Jülich / Jülich Supercomputing Centre |  |
 | 2026-05-21 | [How far can we downscale? Resolution limits and physical interpretability of diffusion models for African precipitation](https://doi.org/10.1088/3049-4753/ae7114)<br><sub>Jangho Lee, Sara Shamekh · Machine Learning Earth</sub> | New York University (M2LInES) |  |
 | 2026-05-20 | [3DcGanAE: a residual conditional generative model for high‑resolution geospatial data processing and downscaling](https://doi.org/10.1186/s40537-026-01466-w)<br><sub>Amir Aieb, Antonio Liotta, Alexander W. Jacob et al. · Journal Of Big Data</sub> |  |  |
@@ -280,7 +283,7 @@ Statistical and generative downscaling of weather or climate fields to higher re
 | 2025-08-27 | [A rapid downscaling approach for meteorological wind fields using diffusion models and attention mechanisms](https://doi.org/10.1016/j.jweia.2025.106215)<br><sub>Xuedong Wang, Yaqi Li, Yinghong Zuo et al. · Journal of Wind Engineering and Industrial Aerodynamics</sub> |  |  |
 | 2025-08-22 | [Generative artificial intelligence improves projections of climate extremes](https://arxiv.org/abs/2508.16396)<br><sub>Ruian Tie, Xiaohui Zhong, Zhengyu Shi et al.</sub> |  |  |
 | 2025-08-21 | [Learning optimal CNN architectures for Precipitation Downscaling with Differentiable Architecture Search](https://doi.org/10.22541/au.175580225.56700263/v1)<br><sub>Leonardo Alessandro Lüder, Mikhail Ivanov, Ramón Fuentes‐Franco</sub> |  |  |
-| 2025-08-21 | [Multidimensional Distributional Neural Network Output Demonstrated in Super-Resolution of Surface Wind Speed](https://arxiv.org/abs/2508.16686)<br><sub>Harrison J. Goldwyn, Mitchell Krock, Johann Rudi et al.</sub> |  |  |
+| 2025-08-21 | [Multidimensional Distributional Neural Network Output Demonstrated in Super-Resolution of Surface Wind Speed](https://doi.org/10.1029/2025jh000964)<br><sub>Harrison J. Goldwyn, Mitchell Krock, Johann Rudi et al. · Journal of Geophysical Research Machine Learning and Computation</sub> |  |  |
 | 2025-08-17 | [Limitation of super-resolution machine learning approach to precipitation downscaling](https://doi.org/10.1038/s41598-025-05880-7)<br><sub>P. Jyoteeshkumar Reddy, Richard J. Matear, John Taylor et al. · Scientific Reports</sub> |  |  |
 | 2025-08-15 | [Evaluating machine‐learning models for wind‐speed downscaling from ECMWF‐IFS data](https://doi.org/10.1002/qj.5063)<br><sub>William Ericson, Florian Achermann, Nicholas Lawrance et al. · Quarterly Journal of the Royal Meteorological Society</sub> | ETH Zurich |  |
 | 2025-08-14 | [High-resolution GNSS troposphere tomography through explainable deep learning-based downscaling framework](https://doi.org/10.1186/s43020-025-00177-6)<br><sub>Saeid Haji-Aghajany, S. Izanlou, Melika Tasan et al. · Satellite Navigation</sub> |  |  |
@@ -293,7 +296,7 @@ Statistical and generative downscaling of weather or climate fields to higher re
 | 2025-07-30 | [Physics-constrained generative machine learning-based high-resolution downscaling of Greenland's surface mass balance and surface temperature](https://doi.org/10.5194/tc-20-1841-2026)<br><sub>Nils Bochow, Philipp Hess, Alexander Robinson · The cryosphere</sub> | Potsdam Institute for Climate Impact Research (PIK) |  |
 | 2025-07-28 | [Integrating Bayesian methods with neural networks for enhanced climatology models](https://doi.org/10.1088/1402-4896/adf51f)<br><sub>Charu Awasthi, Indrajit De, Deepak Chaudhary et al. · Physica Scripta</sub> |  |  |
 | 2025-07-28 | [Spatial downscaling of daily precipitation using convolutional neural network-based model in complex mountainous terrain: Trentino and South Tyrol, Northern Italy](https://doi.org/10.1016/j.ejrh.2025.102591)<br><sub>Sudheer Bhakare, Michael Matiu, Dino Zardi · Journal of Hydrology Regional Studies</sub> |  |  |
-| 2025-07-26 | [Discrete Gaussian Vector Fields On Meshes](https://arxiv.org/abs/2507.20024)<br><sub>Michael Gillan, Stefan Siegert, Ben Youngman</sub> |  |  |
+| 2025-07-26 | [Discrete Gaussian Vector Fields On Meshes](https://doi.org/10.1007/s00477-026-03292-1)<br><sub>Michael Gillan, Stefan Siegert, Ben Youngman · Stochastic Environmental Research and Risk Assessment</sub> |  |  |
 | 2025-07-23 | [Wasserstein GAN-Based Precipitation Downscaling with Optimal Transport for Enhancing Perceptual Realism](https://arxiv.org/abs/2507.17798)<br><sub>Kenta Shiraishi, Yuka Muto, Atsushi Okazaki et al. · Progress in Earth and Planetary Science, 13, 29, 2026</sub> |  |  |
 | 2025-07-22 | [Global spatio-temporal ERA5 precipitation downscaling to km and sub-hourly scale using generative AI](https://doi.org/10.5445/ir/1000183370)<br><sub>Luca Glawion, Julius Polz, Harald Günter Kunstmann et al. · Repository KITopen (Karlsruhe Institute of Technology)</sub> | Karlsruhe Institute of Technology (KIT) |  |
 | 2025-07-21 | [Probabilistic precipitation downscaling for ungauged mountain sites: a pilot study for the Hindu Kush Himalaya](https://doi.org/10.5194/hess-29-3073-2025)<br><sub>Marc Girona‐Mata, Andrew Orr, Martin Widmann et al. · Hydrology and earth system sciences</sub> | The Alan Turing Institute, University of California, Los Angeles (UCLA), University of Cambridge (Aardvark) |  |
@@ -348,7 +351,7 @@ Statistical and generative downscaling of weather or climate fields to higher re
 | 2025-03-24 | [Future Growing Seasons: Bias Correction with SVR and QDM for Indonesian Temperature Projection under RCP 2.6 and RCP 8.5](https://doi.org/10.59796/jcst.v15n2.2025.100)<br><sub>Brina Miftahurrohmah, Irvan Adhin Cholilie, Sekarsari Utami Wijaya et al. · Journal of Current Science and Technology</sub> |  |  |
 | 2025-03-20 | [Cluster-based downscaling of precipitation using Kolmogorov-Arnold Neural Networks and CMIP6 models: Insights from Oman](https://doi.org/10.1016/j.jenvman.2025.124971)<br><sub>Ali Mardy, Mohammad Reza Nikoo, Mohammad Ghadir Zamani et al. · Journal of Environmental Management</sub> |  |  |
 | 2025-03-19 | [Global projections of heat stress at high temporal resolution using machine learning](https://doi.org/10.5194/essd-17-1153-2025)<br><sub>Pantelis Georgiades, Theo Economou, Yiannis Proestos et al. · Earth system science data</sub> |  |  |
-| 2025-03-17 | [RainScaleGAN: a Conditional Generative Adversarial Network for Rainfall Downscaling](https://arxiv.org/abs/2503.13316)<br><sub>Marcello Iotti, Paolo Davini, Jost von Hardenberg et al.</sub> |  |  |
+| 2025-03-17 | [RainScaleGAN: a Conditional Generative Adversarial Network for Rainfall Downscaling](https://doi.org/10.1175/aies-d-24-0074.1)<br><sub>Marcello Iotti, Paolo Davini, Jost von Hardenberg et al. · Artificial Intelligence for the Earth Systems</sub> |  |  |
 | 2025-03-14 | [A new conditional generative adversarial neural network approach for statistical downscaling of the ERA5 reanalysis over the Italian Peninsula](https://doi.org/10.1016/j.envsoft.2025.106427)<br><sub>Ilenia Manco, Walter Riviera, Andrea Zanetti et al. · Environmental Modelling & Software</sub> |  |  |
 | 2025-03-10 | [Deep Learning-based Fusion and Downscaling of Analysis and SAR Measurements for Ocean Surface Wind for Tropical Cyclones](https://doi.org/10.36227/techrxiv.174164021.12344231/v1)<br><sub>Enze Zhang, Hui Su, Pak Wai Chan et al.</sub> |  |  |
 | 2025-03-01 | [Downscaling of the surface temperature forecasts based on deep learning approaches](https://doi.org/10.1002/met.70042)<br><sub>Guangdi Chen, Xiefei Zhi, Shuyan Ding et al. · Meteorological Applications</sub> | Nanjing University of Information Science & Technology (NUIST) |  |
@@ -846,6 +849,7 @@ Statistical and generative downscaling of weather or climate fields to higher re
 
 ## Also relevant
 
+- [Seasonal hydropower forecast framework using a combination of deep learning and physics-based methods](https://doi.org/10.31223/x50b98) (2026)
 - [Future Changes in Early-Season Severe Weather: A Comparison of Machine Learning and Convection-Permitting Dynamical Downscaling](https://doi.org/10.1175/aies-d-25-0122.1) (2026)
 - [Observation Assimilation Transformer: Probabilistic Weather Analysis from Sparse Station Observations](https://arxiv.org/abs/2610.28327) (2026)
 - [TerraNostra-Bench: Benchmarking Spatial Downscaling and Temporal Rollout for Global 1-km Land-Use Reconstruction](https://arxiv.org/abs/2610.27793) (2026)
@@ -873,7 +877,7 @@ Statistical and generative downscaling of weather or climate fields to higher re
 - [Deep Learning-Based Temperature Forecast Postprocessing Model Integrating Temporal Bias Correction and Spatial Downscaling](https://doi.org/10.1016/j.dte.2026.100138) (2026)
 - [CORDEX-ML-Bench: A Benchmark for Data-Driven Regional Climate Downscaling -Experiment Design and Overview](https://arxiv.org/abs/2606.29172) (2026)
 - [Unveiling Future Individual and Compound Heat and Air Pollution Extremes in China: Insights for Mitigation](https://doi.org/10.1175/bams-d-25-0333.1) (2026)
-- [HiResCastNet: A 3D Deep Learning Model for Probabilistic Regional High-Resolution Subseasonal Forecasting through Downscaling](https://doi.org/10.22541/essoar.15004477/v1) (2026)
+- [HiResCastNet: A 3D Deep Learning Model for Probabilistic Regional High-Resolution Subseasonal Forecasting through Downscaling](https://doi.org/10.1029/2026jh001400) (2026)
 - [Bridge Your Fields: Meteonet for Efficient Non-Uniform Meteorological Field Reconstruction](https://doi.org/10.1109/cvprf71909.2026.00159) (2026)
 - [A downscaling-fusion framework based on machine learning to improve daily precipitation estimates in the dry-hot valley of southwest China](https://doi.org/10.1016/j.ejrh.2026.103537) (2026)
 - [GPU-Accelerated Deep Learning for Heatwave Prediction and Urban Heat Risk Assessment](https://arxiv.org/abs/2605.16435) (2026)

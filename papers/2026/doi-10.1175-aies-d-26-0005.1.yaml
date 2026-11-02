@@ -1,0 +1,56 @@
+id: doi-10.1175-aies-d-26-0005.1
+title: Progress toward forecasting excessive rainfall with random forests based on a deterministic convection-allowing
+  model
+authors:
+- Eric P. James
+- Russ S. Schumacher
+date: '2026-10-26'
+year: 2026
+venue: Artificial Intelligence for the Earth Systems
+venue_type: journal
+ids:
+  doi: 10.1175/aies-d-26-0005.1
+  openalex: W7106664629
+links:
+  paper: https://doi.org/10.1175/aies-d-26-0005.1
+orgs:
+- noaa
+- colorado-state-university
+topic: extremes-hazards
+topics:
+- post-processing
+type: evaluation
+method:
+- classical-ml
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+status: pre-operational
+summary: Random forests on HRRR convection-allowing forecasts improve excessive rainfall prediction with
+  gridpoint aggregation, but trail the GEFS-based forest and the operational outlook.
+abstract: Abstract Machine learning applied to high-resolution numerical weather prediction forecasts
+  is gaining popularity for prediction of high-impact weather events, but questions remain on how to design
+  such systems. Building off prior work, we describe sensitivity experiments using a random forest (RF)
+  system for excessive rainfall prediction using the deterministic High-Resolution Rapid Refresh (HRRR).
+  We find that applying an RF trained on HRRRv3 to daily forecasts from HRRRv4 does not significantly
+  degrade results. In terms of the spatial aggregation of predictor information for the RF, we find that
+  forecasts are significantly improved when the system uses data from all nearby model gridpoints, rather
+  than just sparse input points, particularly for events featuring small-scale precipitation maxima. Forecasts
+  are also improved when predictors are averaged across multiple HRRR initializations rather than taken
+  from a single HRRR initialization, as the RF is better able to learn relationships with the reduced
+  uncertainty of the time-lagged ensemble mean predictors. The HRRR-based RF was evaluated during the
+  Flash Flood and Intense Rainfall (FFaIR) Experiment over three consecutive years, with year-over-year
+  improvements in the system. The HRRR-based RF exhibits an underprediction bias, partially attributable
+  to using a more comprehensive dataset of excessive rainfall for verification than for RF training. Evaluation
+  of RF skill during more than four years of real-time forecasts reveals that RFs based on deterministic
+  convection allowing models continue to underperform relative to a Global Ensemble Forecast System based
+  RF, and neither RF is as skillful as the operational excessive rainfall outlook for the day one period.
+significance: 4
+cited_by: 0
+score: 51
+highlight: false
+added: '2026-11-02'
+source: weekly

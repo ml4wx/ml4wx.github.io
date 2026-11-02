@@ -1,0 +1,46 @@
+id: arxiv-2610.39592
+title: Operator-Aware Posterior Sampling for Multivariate Weather Downscaling
+authors:
+- Carlo Saccardi
+- Rudolf Saathof
+- Geethu Joseph
+- Justin Dauwels
+date: '2026-10-29'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.39592'
+links:
+  paper: https://arxiv.org/abs/2610.39592
+  pdf: https://arxiv.org/pdf/2610.39592
+  code: https://github.com/CarloSaccardi/operator-aware-weather-downscaling
+topic: downscaling
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+spatial:
+- regional
+data:
+- era5
+- nwp-analysis
+status: research
+summary: Learns the forward operator from paired data and normalizes guidance gradients per channel for
+  diffusion-based downscaling, so one prior adapts across reanalysis sources and variables.
+abstract: 'Statistical downscaling is the task of reconstructing high-resolution meteorological fields
+  from coarse inputs. A principled approach formulates downscaling as a Bayesian inverse problem, using
+  a diffusion prior over high-resolution fields and incorporating the coarse field only at inference through
+  a likelihood. This decouples the prior from the coarse source, allowing one pretrained model to adapt
+  to different sources. However, two challenges limit this flexibility: (1) when coarse and target fields
+  come from different reanalysis systems, no fixed coarsening operator can capture their relationship;
+  and (2) guidance gradients can differ by orders of magnitude across variables, making a single guidance
+  strength ineffective. This paper addresses both challenges within the guidance loop, leaving the prior
+  unchanged. We learn the forward operator from paired data and normalize the gradient per channel. We
+  show that this normalization corresponds to steepest descent under a block-max norm, allowing a single
+  guidance strength across variables. Our code is publicly available at https://github.com/CarloSaccardi/operator-aware-weather-downscaling.'
+significance: 4
+score: 26
+highlight: false
+added: '2026-11-02'
+source: weekly

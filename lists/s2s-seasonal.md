@@ -5,10 +5,12 @@ Forecasts from 2 weeks to about a year: sub-seasonal, seasonal and ENSO/MJO pred
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/s2s-seasonal/)
 
-522 papers (17 ⭐). Newest first.
+524 papers (17 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-10-30 | [Skillful subseasonal-to-seasonal ensemble forecasting with a multi-sphere coupled probabilistic model](https://doi.org/10.1038/s41612-026-01572-9)<br><sub>Bin Mu, Yuxuan Chen, Shijin Yuan et al. · npj Climate and Atmospheric Science</sub> |  |  |
+| 2026-10-27 | [Seasonal Prediction of Summer Accumulated Cyclone Energy over the Western North Pacific Using Causality-Informed Predictor Selection and a Convolutional Neural Network](https://doi.org/10.21203/rs.3.rs-11313293/v1)<br><sub>Chuhan Zheng, Li Tao, Guoqing Dong · Research Square</sub> | Nanjing University of Information Science & Technology (NUIST) |  |
 | 2026-10-23 | [Leveraging Machine Learning and Climate Phase Analysis to Enhance Seasonal Forecasts of Cold Extremes](https://doi.org/10.1088/2515-7620/aeb8ea)<br><sub>Maxwell R.W. Beal, Upmanu Lall, Paul Block · Environmental Research Communications</sub> |  |  |
 | 2026-10-17 | [Application of physically interpretable deep learning in ENSO prediction: status, challenges, and future directions](https://doi.org/10.1007/s12145-026-02273-w)<br><sub>Hao-Lin Jiang, Wei Fang, Yi-Jing Li et al. · Earth Science Informatics</sub> | China Meteorological Administration (CMA), Nanjing University of Information Science & Technology (NUIST) |  |
 | 2026-10-15 | ⭐ [MJO Predictability: Its Sources and Limits](https://doi.org/10.1175/bams-d-25-0345.1)<br><sub>Meriem Krouma, Yakelyn R. Jauregui, Boualem Khouider et al. · Bulletin of the American Meteorological Society</sub> | ECMWF, Fudan University (FuXi), NSF NCAR / UCAR, NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), University of Washington |  |
@@ -53,7 +55,7 @@ Forecasts from 2 weeks to about a year: sub-seasonal, seasonal and ENSO/MJO pred
 | 2026-07-01 | [Improving subseasonal Indian summer monsoon rainfall forecasts with U-Net calibration](https://doi.org/10.1007/s00382-026-08286-x)<br><sub>Emile D. Esmaili, Andrew W. Robertson, Muhammad Azhar Ehsan et al. · Climate Dynamics</sub> | Columbia University (LEAP, Lamont-Doherty), NASA, NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
 | 2026-06-30 | [Prediction of rainfall through a ML/DL approach over major metro cities of Uttar Pradesh, India](https://doi.org/10.54302/mausam.v77i3.6766)<br><sub>Mayank Pandey, Shailendra Rai · MAUSAM</sub> |  |  |
 | 2026-06-24 | [Evaluation of medium range machine learning models for sub-seasonal prediction](https://arxiv.org/abs/2606.25417)<br><sub>Catherine de Burgh-Day, Chen Li, Debra Hudson et al.</sub> | Bureau of Meteorology (Australia), ECMWF |  |
-| 2026-06-08 | [HiResCastNet: A 3D Deep Learning Model for Probabilistic Regional High-Resolution Subseasonal Forecasting through Downscaling](https://doi.org/10.22541/essoar.15004477/v1)<br><sub>Sofien Resifi, Elissar Al Aawar, Thang M. Luong et al.</sub> |  |  |
+| 2026-06-08 | [HiResCastNet: A 3D Deep Learning Model for Probabilistic Regional High-Resolution Subseasonal Forecasting through Downscaling](https://doi.org/10.1029/2026jh001400)<br><sub>Sofien Resifi, Elissar Al Aawar, Thang M. Luong et al. · Journal of Geophysical Research Machine Learning and Computation</sub> |  |  |
 | 2026-06-03 | [Forecasting of Macroclimatic Phases Through Stochastic Modeling and Machine Learning: Implications for Regional Hydrological Analysis](https://doi.org/10.3390/w18111358)<br><sub>Fernando Oñate-Valdivieso, Paúl Piedra Faicán, Arianna Oñate-Paladines · Water</sub> |  |  |
 | 2026-06-01 | [An effective deep learning model for the Pacific decadal oscillation prediction](https://doi.org/10.1088/2515-7620/ae7b04)<br><sub>Wenbo Liu, Jianqi Sun, Kai Wang et al. · Environmental Research Communications</sub> | Institute of Atmospheric Physics, Chinese Academy of Sciences, Nanjing University of Information Science & Technology (NUIST) |  |
 | 2026-06-01 | [LSTA-Swin: a long- and short-term aggregated spatio-temporal neural network for enhanced ENSO forecasting](https://doi.org/10.1007/s00382-026-08210-3)<br><sub>Wei Fang, Xiao-Zhi Zhang, Yijing Li et al. · Climate Dynamics</sub> | China Meteorological Administration (CMA), Nanjing University of Information Science & Technology (NUIST) |  |
@@ -534,6 +536,8 @@ Forecasts from 2 weeks to about a year: sub-seasonal, seasonal and ENSO/MJO pred
 
 ## Also relevant
 
+- [Seasonal hydropower forecast framework using a combination of deep learning and physics-based methods](https://doi.org/10.31223/x50b98) (2026)
+- [Teleconnection-aware machine learning calibration of multi-model seasonal forecasts for drought prediction over India](https://doi.org/10.1007/s00382-026-08419-2) (2026)
 - [A Machine Learning Framework for Objective Definition and Projection of Meteorological Seasons: An Application to the Indian Subcontinent](https://doi.org/10.1029/2025jd045869) (2026)
 - [Sensitivity Fidelity Reveals Physical Dependencies Beyond Forecast Accuracy in Deep-Learning Earth-System Models](https://arxiv.org/abs/2610.15540) (2026)
 - [Using a U-Net-Based Correction Model to Improve CWRF Subseasonal Prediction of Summer Rainfall over China](https://doi.org/10.1007/s13351-026-5291-6) (2026)

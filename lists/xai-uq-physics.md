@@ -5,10 +5,12 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/xai-uq-physics/)
 
-193 papers (4 ⭐). Newest first.
+195 papers (4 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-10-30 | [Explaining patterns learned by neural networks for detection of atmospheric surface fronts in gridded atmospheric data](https://doi.org/10.5194/egusphere-2026-3877)<br><sub>Tim Radke, Johanna Baehr, Marc Rautenhaus</sub> | Max Planck Institute for Meteorology |  |
+| 2026-10-26 | [GNN-VIEW: Visual Inspection and Explanation of Graph-based Earth-System Models](https://arxiv.org/abs/2610.35693)<br><sub>Alessandro Lucatelli, Ferdinand Unterhuber, Katharina Krenzer et al.</sub> | ETH Zurich |  |
 | 2026-10-21 | [Certified OOD Detection for Artificial Intelligence Climate Emulators Under Unseen Forcing Scenarios: Score Bounds and Seasonal Forecast Safety](https://doi.org/10.5281/zenodo.23545447)<br><sub>Achieng Kevin Otieno, Halima Abdille Dida · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
 | 2026-10-20 | [Tropical Cyclone Attributes in Sparse Autoencoder Features of an AI Weather Model](https://arxiv.org/abs/2610.28904)<br><sub>Jia-Pei Liu, Rui-Dong Li, Ting Sun et al.</sub> | Tsinghua University (NowcastNet) |  |
 | 2026-10-16 | [Interpretability of AI weather models via intermediate decoding](https://arxiv.org/abs/2610.24110)<br><sub>M. Beylich, K. Tempest, T. Selz et al.</sub> |  |  |
@@ -85,7 +87,7 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 | 2025-11-11 | [Physical Consistency of Aurora's Encoder: A Quantitative Study](https://arxiv.org/abs/2511.07787)<br><sub>Benjamin Richards, Pushpa Kumar Balan</sub> |  |  |
 | 2025-11-01 | [Sensitivity Analysis for Climate Science with Generative Flow Models](https://arxiv.org/abs/2511.00663)<br><sub>Alex Dobra, Jakiw Pidstrigach, Tim Reichelt et al.</sub> |  | [code](https://github.com/Kwartzl8/cbottle_adjoint_sensitivity) |
 | 2025-10-31 | [Using data assimilation tools to dissect GraphDOP](https://arxiv.org/abs/2510.27388)<br><sub>Patrick Laloyaux, Mihai Alexe, Eulalie Boucher et al.</sub> |  |  |
-| 2025-10-29 | [Predictability of Storms in an Idealized Climate Revealed by Machine Learning](https://arxiv.org/abs/2510.25633)<br><sub>Wuqiushi Yao, Or Hadas, Yohai Kaspi</sub> |  |  |
+| 2025-10-29 | [Predictability of Storms in an Idealized Climate Revealed by Machine Learning](https://doi.org/10.1029/2025gl118886)<br><sub>Wuqiushi Yao, Or Hadas, Yohai Kaspi · Geophysical Research Letters</sub> | Institute of Atmospheric Physics, Chinese Academy of Sciences |  |
 | 2025-09-26 | [Leveraging Sparse Autoencoders to Reveal Interpretable Features in Geophysical Models](https://doi.org/10.1029/2025jh000769)<br><sub>Fraser King, Claire Pettersen, Derek J. Posselt et al. · Journal of Geophysical Research Machine Learning and Computation</sub> | California Institute of Technology (Caltech), NASA |  |
 | 2025-09-18 | [Unsupervised concept discovery for deep weather forecast models with high-resolution radar data](https://doi.org/10.1371/journal.pclm.0000633)<br><sub>Soyeon Kim, Junho Choi, Junho Choi et al. · PLOS Climate</sub> |  |  |
 | 2025-09-12 | [How does an AI Weather Model Learn to Forecast Extreme Weather?](https://arxiv.org/abs/2509.10639)<br><sub>Rebecca Baiman, Elizabeth A. Barnes, Ankur Mahesh</sub> |  |  |
@@ -206,6 +208,7 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 ## Also relevant
 
 - [From prediction to resilience: transferable and equitable AI for climate extremes in a data-unequal Anthropocene](https://doi.org/10.1016/j.cosust.2026.101734) (2026)
+- [Multistep and Multivariate Time Series Explainability with GradientSHAP: A Wind Power Case Study](https://arxiv.org/abs/2610.40330) (2026)
 - [Spatiotemporal Graph Neural Network Emulation of Regional Climate Models at Convection-Permitting Resolution: Spectral Fidelity Bounds and Downstream Flood-Exposure Equity Across West African River Basins](https://doi.org/10.5281/zenodo.23545305) (2026)
 - [Application of physically interpretable deep learning in ENSO prediction: status, challenges, and future directions](https://doi.org/10.1007/s12145-026-02273-w) (2026)
 - [Spatiotemporal coherent displacements for ensemble-based neural data assimilation](https://doi.org/10.1017/eds.2026.10058) (2026)
@@ -370,7 +373,7 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 - [Multi-horizon prediction of tropical cyclone intensity and its interpretability with temporal fusion transformer](https://doi.org/10.1038/s41598-025-15522-7) (2025)
 - [Enhanced predictions of the Madden-Julian oscillation using the FuXi-S2S machine learning model: Insights into physical mechanisms](https://arxiv.org/abs/2508.16041) (2025)
 - [STAT-X: short-term atmospheric temperature forecasting using machine learning models with explainable-AI](https://doi.org/10.1007/s00704-025-05693-8) (2025)
-- [Multidimensional Distributional Neural Network Output Demonstrated in Super-Resolution of Surface Wind Speed](https://arxiv.org/abs/2508.16686) (2025)
+- [Multidimensional Distributional Neural Network Output Demonstrated in Super-Resolution of Surface Wind Speed](https://doi.org/10.1029/2025jh000964) (2025)
 - [Detection and attribution of heat waves with the Multivariate Autoencoder Flow-Analogue Method (MvAE-AM)](https://doi.org/10.1016/j.atmosres.2025.108409) (2025)
 - [Applying XAI to Optimized XGBoost Models: Elucidating Multi-type Predictor Impacts for Short-Term Precipitation Forecast](https://doi.org/10.3724/j.1006-8775.2025.040) (2025)
 - [Impact of Physical Constraints on Deep Learning-Based Downscaling Prediction of Temperature](https://doi.org/10.1007/s13351-025-4061-1) (2025)

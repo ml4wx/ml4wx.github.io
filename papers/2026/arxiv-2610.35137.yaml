@@ -1,0 +1,51 @@
+id: arxiv-2610.35137
+title: Dynamic conditional density network of wind vectors
+authors:
+- Keigo Sato
+- Yasumasa Matsuda
+date: '2026-10-26'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.35137'
+  openalex: W7223785974
+links:
+  paper: https://arxiv.org/abs/2610.35137
+  pdf: https://arxiv.org/pdf/2610.35137
+orgs:
+- ecmwf
+- jma
+topic: post-processing
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- other
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- stations
+status: research
+summary: Neural-network-driven B-spline correction of bivariate normal ensemble wind densities improves
+  log, energy and variogram scores at 154 Tohoku sites.
+abstract: We propose the dynamic conditional density network (DCDN) to correct the bivariate normal predictive
+  distribution commonly used to postprocess ensemble forecasts of wind vectors. The conditional distribution
+  of the observed wind vector given the ensemble forecast may depart from the bivariate normal distribution.
+  DCDN multiplies a bivariate normal reference density by a correction density. The correction density
+  is a B-spline mixture on the probability integral transform scale of the reference density, and a neural
+  network predicts its weights. DCDN equals its reference density when the correction density is uniform.
+  We apply DCDN to ensemble forecasts of the European Centre for Medium-Range Weather Forecasts and observations
+  at 154 sites in the Tohoku region of Japan. DCDN significantly improved the logarithmic score, energy
+  score, and variogram score over the bivariate normal distribution predicted by a neural network. The
+  improvement in the logarithmic score was large near zero wind speed and at higher wind speeds. This
+  is consistent with non-normal features of the conditional distribution that the bivariate normal distribution
+  misses.
+significance: 3
+cited_by: 0
+score: 47
+highlight: false
+added: '2026-11-02'
+source: weekly

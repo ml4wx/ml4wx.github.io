@@ -5,10 +5,11 @@ Language models and agents for weather and climate science: QA, data analysis, m
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/llms-agents/)
 
-88 papers (0 ⭐). Newest first.
+89 papers (0 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-10-29 | [From extreme weather to agricultural consequences with agentic AI](https://arxiv.org/abs/2610.40641)<br><sub>Minghan Yu, Mengyu Dai, Yixin Wen et al.</sub> | NASA |  |
 | 2026-10-23 | [Ontology-Guided Knowledge Graph Construction from Structured Metadata and Climate Science Publications](https://arxiv.org/abs/2610.32725)<br><sub>Aayush Acharya, Qi Zhang, Eduard Dragut et al.</sub> |  | [code](https://github.com/aayushacharya/climatekg) |
 | 2026-10-19 | [Zephyrus-R1: Agentic Reinforcement Learning for Weather Reporting](https://arxiv.org/abs/2610.25625)<br><sub>Feng-Fei Yu, Marshall Fisher, Isadora White et al.</sub> |  |  |
 | 2026-10-10 | [EarthAlign: Learning Language-Aligned Representations of Earth System Data](https://arxiv.org/abs/2610.14624)<br><sub>Fadillah Adamsyah Maani, Numan Saeed, Jiaqi Ma et al.</sub> |  | [code](https://github.com/mbzuai-oryx/EarthAlign) |
@@ -50,7 +51,7 @@ Language models and agents for weather and climate science: QA, data analysis, m
 | 2025-11-26 | [EWE: An Agentic Framework for Extreme Weather Analysis](https://arxiv.org/abs/2511.21444)<br><sub>Zhe Jiang, Jiong Wang, Xiaoyu Yue et al.</sub> | Fudan University (FuXi), Shanghai Artificial Intelligence Laboratory |  |
 | 2025-11-25 | [CLIMATEAGENT: Multi-Agent Orchestration for Complex Climate Data Science Workflows](https://arxiv.org/abs/2511.20109)<br><sub>Chenyue Li, Hyeonjae Kim, Wen Deng et al.</sub> |  | [code](https://github.com/Relaxed-System-Lab/ClimateAgent) |
 | 2025-10-29 | [CLINB: A Climate Intelligence Benchmark for Foundational Models](https://arxiv.org/abs/2511.11597)<br><sub>Michelle Chen Huebscher, Katharine Mach, Aleksandar Stanić et al.</sub> |  |  |
-| 2025-10-16 | [From Binary to Bilingual: How the National Weather Service is Using Artificial Intelligence to Develop a Comprehensive Translation Program](https://arxiv.org/abs/2510.14369)<br><sub>Joseph E. Trujillo-Falcon, Monica L. Bozeman, Liam E. Llewellyn et al.</sub> |  |  |
+| 2025-10-16 | [From Binary to Bilingual: How the National Weather Service is Using Artificial Intelligence to Develop a Comprehensive Translation Program](https://doi.org/10.1175/aies-d-25-0102.1)<br><sub>Joseph E. Trujillo-Falcon, Monica L. Bozeman, Liam E. Llewellyn et al. · Artificial Intelligence for the Earth Systems</sub> | Colorado State University (incl. CIRA), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), University of Oklahoma (AI2ES) |  |
 | 2025-10-09 | [Climate Knowledge in Large Language Models](https://doi.org/10.1175/aies-d-26-0017.1)<br><sub>Ivan Kuznetsov, Jacopo Grassi, Dmitrii Pantiukhin et al. · Artificial Intelligence for the Earth Systems</sub> |  |  |
 | 2025-10-06 | [WeatherArchive-Bench: Benchmarking Retrieval-Augmented Reasoning for Historical Weather Archives](https://arxiv.org/abs/2510.05336)<br><sub>Yongan Yu, Xianda Du, Qingchen Hu et al.</sub> | ETH Zurich |  |
 | 2025-10-05 | [Zephyrus: An Agentic Framework for Weather Science](https://arxiv.org/abs/2510.04017)<br><sub>Sumanth Varambally, Marshall Fisher, Jas Thakker et al.</sub> |  | [code](https://github.com/Rose-STL-Lab/Zephyrus) |

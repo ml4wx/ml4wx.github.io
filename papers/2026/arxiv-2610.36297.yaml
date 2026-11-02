@@ -1,0 +1,47 @@
+id: arxiv-2610.36297
+title: 'FASST: A Compact Stateless Atmosphere Model for Long-Term Ocean Coupling'
+authors:
+- Pratham Aggarwal
+- Duncan Watson-Parris
+- William E. Chapman
+date: '2026-10-26'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.36297'
+  openalex: W7224107834
+links:
+  paper: https://arxiv.org/abs/2610.36297
+  pdf: https://arxiv.org/pdf/2610.36297
+orgs:
+- nvidia
+topic: climate-emulation
+type: model
+method:
+- cnn
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+status: research
+summary: FASST replaces the atmosphere and sea ice in a coupled climate model with U-Net emulators, achieving
+  stable 140-year free runs with global SST close to CESM2 piControl.
+abstract: Coupled climate simulations are computationally expensive, largely because of the atmosphere.
+  We introduce FASST, a coupled climate model that retains the prognostic POP2 ocean while replacing the
+  atmosphere and sea ice with lightweight U-Net emulators. The atmospheric emulator is diagnostic, predicting
+  surface fluxes from the evolving ocean-ice state every $6$ simulated hours, while the sea-ice emulator
+  advances the ice state monthly. For $140$ years of unforced integration, FASST maintains a stable global-mean
+  climate without SST restoring, with post-transient global-mean SST of $291.30 \pm 0.22\mathrm{K}$ compared
+  with $291.25 \pm 0.10\mathrm{K}$ in CESM$2$ piControl. FASST also captures interannual Niño-$3.4$ variability,
+  although with weaker amplitude than CESM ($0.62\mathrm{K}$ versus $1.02\mathrm{K}$). These results demonstrate
+  that a stateless learned atmosphere can sustain stable, free-running coupled climate simulations over
+  century-scale integrations.
+significance: 6
+score: 59
+highlight: true
+highlight_reason: Stable 140-year coupled run with POP2 ocean and a stateless U-Net atmosphere emulator;
+  ENSO amplitude is weak but it's a promising cheap coupled-climate approach.
+added: '2026-11-02'
+source: weekly

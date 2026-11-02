@@ -1,0 +1,65 @@
+id: arxiv-2610.36186
+title: 'Towards operational data-driven regional weather forecasting: extreme-event skill and near-real-time
+  verification with HRRRCast'
+authors:
+- Daniel Abdi
+- Isidora Jankov
+- Vanderlei Vargas
+- Paul Madden
+- Emily Carpenter
+- Travis Wilson
+- Jeff Hamilton
+- Molly Smith
+- Lindsay Blank
+- Linlin Cui
+- Jun Wang
+- Matthew Mahalik
+date: '2026-10-26'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2610.36186'
+  openalex: W7224115159
+links:
+  paper: https://arxiv.org/abs/2610.36186
+  pdf: https://arxiv.org/pdf/2610.36186
+orgs:
+- noaa
+- colorado-state-university
+topic: regional-km-scale
+type: evaluation
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+- radar
+status: pre-operational
+summary: HRRRCast, a data-driven 3-km convection-allowing emulator, improves extreme-reflectivity skill
+  via native-resolution training and weighted loss, and beats operational HRRR near-surface metrics in
+  seven months of real-time verification.
+abstract: Improving convective-scale skill in data-driven regional weather models requires better representing
+  rare high-impact events, training at native resolution, broadening variable output, and demonstrating
+  performance in real-time settings. Here, we evaluate these challenges using HRRRCast, a data-driven
+  convection-allowing emulator trained on the High-Resolution Rapid Refresh (HRRR) analysis data. HRRRCast
+  combines native 3-km training, moderate sigmoid-weighted loss reweighting for reflectivity and precipitation,
+  and broader system improvements including expansion of the training archive from 3 to 9 years (2016--2025),
+  increased vertical resolution, expanded outputs, and architectural upgrades. The weighted loss improves
+  high-threshold skill while preserving common-event behavior. Native-resolution training avoids aliasing
+  from 6-km subsampling and substantially improves fractions skill score at convective scales, with gains
+  that persist across pooling windows. HRRRCast has also been running in near-real-time mode for the past
+  year. In seven months of independent observation-based verification, HRRRCast ensemble means improve
+  several near-surface metrics relative to operational HRRR and maintain strong precipitation and reflectivity
+  performance. Single-member reflectivity skill is strongest at 20--30 dBZ; at 40 dBZ, skill is near parity
+  at 6-km pooling and better at pooling radii $\geq$30 km. Precipitation skill remains competitive through
+  1 in/h and extends to about 3 in/h in the best recent configuration. A focused comparison with HREF
+  further shows useful low-cost probabilistic guidance for 3-h precipitation. At storm scale, HRRRCast
+  exhibits a displacement--structure trade-off, with generally better storm placement than storm morphology.
+significance: 6
+score: 59
+highlight: true
+highlight_reason: Year-long near-real-time verification of a 3-km data-driven regional emulator against
+  operational HRRR, with native-resolution training and extreme-event loss gains; useful operational evidence.
+added: '2026-11-02'
+source: weekly

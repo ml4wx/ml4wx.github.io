@@ -10,7 +10,7 @@ ML for data assimilation and state estimation, learned observation operators, an
 | Date | Paper | From | Code |
 |---|---|---|:-:|
 | 2026-10-23 | ⭐ [Batched NN 4D-Var: a performant hybrid model framework for the Integrated Forecasting System](https://arxiv.org/abs/2610.32582)<br><sub>Alban Farchi, Marcin Chrust, Massimo Bonavita et al.</sub> | ECMWF |  |
-| 2026-10-23 | [Covariance-Informed Ensemble Score Filtering: Embedding Localized Covariance Geometry into Score-Based Transport](https://arxiv.org/abs/2610.32148)<br><sub>Siming Liang, Peter Jan van Leeuwen, Hristo G. Chipilski et al.</sub> | Oak Ridge National Laboratory, Colorado State University (incl. CIRA) |  |
+| 2026-10-23 | [Covariance-Informed Ensemble Score Filtering: Embedding Localized Covariance Geometry into Score-Based Transport](https://arxiv.org/abs/2610.32148)<br><sub>Siming Liang, Peter Jan van Leeuwen, Hristo G. Chipilski et al.</sub> | Colorado State University (incl. CIRA), Oak Ridge National Laboratory |  |
 | 2026-10-21 | [Data‐driven emulation of flow‐dependent background‐error variance in variational data assimilation](https://doi.org/10.1002/qj.70331)<br><sub>Wei Pan, Massimo Bonavita, Marcin Chrust et al. · Quarterly Journal of the Royal Meteorological Society</sub> | ECMWF |  |
 | 2026-10-20 | [Observation Assimilation Transformer: Probabilistic Weather Analysis from Sparse Station Observations](https://arxiv.org/abs/2610.28327)<br><sub>Christian Donner, Michele Cattaneo, M. Samarin et al.</sub> | ETH Zurich, MeteoSwiss, Swiss Data Science Center (SDSC) |  |
 | 2026-10-16 | [Spatiotemporal coherent displacements for ensemble-based neural data assimilation](https://doi.org/10.1017/eds.2026.10058)<br><sub>S. Roy, R. Fablet · Environmental Data Science</sub> |  |  |
@@ -264,6 +264,7 @@ ML for data assimilation and state estimation, learned observation operators, an
 
 ## Also relevant
 
+- [Machine learning weather prediction at the operational threshold: architectures, data, evaluation, and the observation-interface frontier](https://doi.org/10.5281/zenodo.23788895) (2026)
 - [UDL-RT: A unified differentiable all-sky microwave radiative transfer model with learnable parameterizations](https://arxiv.org/abs/2610.24627) (2026)
 - [Diffusion‐Based Reconstruction of Western North Pacific Surface Winds From CYGNSS for Tropical Cyclone Analysis](https://doi.org/10.1029/2026ms005911) (2026)
 - [WeatherNext 3: Increasing resolution and performance of global weather models with raw observations](https://arxiv.org/abs/2609.03582) (2026)

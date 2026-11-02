@@ -8,7 +8,7 @@ updated every week from arXiv, journals and lab blogs.
 
 | Papers | ⭐ Highlights | Topics | Last update |
 |---:|---:|---:|---|
-| 9963 | 162 | 20 | 2026-10-26 |
+| 10006 | 165 | 20 | 2026-11-02 |
 
 ## Topics
 
@@ -16,13 +16,13 @@ updated every week from arXiv, journals and lab blogs.
 
 | Topic | Papers | ⭐ |
 |---|---:|---:|
-| [Nowcasting](lists/nowcasting.md) | 844 | 6 |
-| [Global medium-range NWP](lists/global-medium-range.md) | 308 | 18 |
-| [Probabilistic & ensemble forecasting](lists/probabilistic-ensembles.md) | 103 | 16 |
-| [Regional & km-scale models](lists/regional-km-scale.md) | 85 | 6 |
-| [Local & station forecasting](lists/local-forecasting.md) | 1146 | 0 |
-| [Sub-seasonal to seasonal](lists/s2s-seasonal.md) | 522 | 17 |
-| [Climate emulation](lists/climate-emulation.md) | 239 | 9 |
+| [Nowcasting](lists/nowcasting.md) | 845 | 6 |
+| [Global medium-range NWP](lists/global-medium-range.md) | 310 | 18 |
+| [Probabilistic & ensemble forecasting](lists/probabilistic-ensembles.md) | 104 | 17 |
+| [Regional & km-scale models](lists/regional-km-scale.md) | 87 | 7 |
+| [Local & station forecasting](lists/local-forecasting.md) | 1151 | 0 |
+| [Sub-seasonal to seasonal](lists/s2s-seasonal.md) | 524 | 17 |
+| [Climate emulation](lists/climate-emulation.md) | 241 | 10 |
 
 **Modelling chain**
 
@@ -30,36 +30,39 @@ updated every week from arXiv, journals and lab blogs.
 |---|---:|---:|
 | [Hybrid physics-ML & parameterization](lists/hybrid-parameterization.md) | 426 | 29 |
 | [Data assimilation](lists/data-assimilation.md) | 252 | 15 |
-| [Downscaling & super-resolution](lists/downscaling.md) | 834 | 8 |
-| [Post-processing & calibration](lists/post-processing.md) | 681 | 3 |
+| [Downscaling & super-resolution](lists/downscaling.md) | 837 | 8 |
+| [Post-processing & calibration](lists/post-processing.md) | 686 | 3 |
 | [Foundation models](lists/foundation-models.md) | 51 | 2 |
 
 **Hazards & observations**
 
 | Topic | Papers | ⭐ |
 |---|---:|---:|
-| [Extremes & hazards](lists/extremes-hazards.md) | 1371 | 10 |
-| [Observations & remote sensing](lists/observations-remote-sensing.md) | 1137 | 0 |
+| [Extremes & hazards](lists/extremes-hazards.md) | 1377 | 10 |
+| [Observations & remote sensing](lists/observations-remote-sensing.md) | 1141 | 0 |
 
 **Science & cross-cutting**
 
 | Topic | Papers | ⭐ |
 |---|---:|---:|
-| [Climate analysis & attribution](lists/climate-analysis-attribution.md) | 565 | 4 |
-| [Explainability, uncertainty & physics](lists/xai-uq-physics.md) | 193 | 4 |
+| [Climate analysis & attribution](lists/climate-analysis-attribution.md) | 568 | 4 |
+| [Explainability, uncertainty & physics](lists/xai-uq-physics.md) | 195 | 4 |
 | [Benchmarks, datasets & evaluation](lists/benchmarks-data-eval.md) | 199 | 10 |
 | [Software, scaling & compression](lists/infra-software.md) | 85 | 4 |
-| [Applications & impacts](lists/applications-impacts.md) | 834 | 1 |
-| [LLMs & agents](lists/llms-agents.md) | 88 | 0 |
+| [Applications & impacts](lists/applications-impacts.md) | 838 | 1 |
+| [LLMs & agents](lists/llms-agents.md) | 89 | 0 |
 
 Coming later: Ocean & sea ice, Hydrology & floods, Atmospheric composition & air quality.
-Papers for these topics are collected in [`parked/`](parked/) (3344 so far) and will be
+Papers for these topics are collected in [`parked/`](parked/) (3359 so far) and will be
 classified when the topics are switched on.
 
 ## Latest highlights
 
 | Date | Paper | From |
 |---|---|---|
+| 2026-10-28 | [Skillful and realistic precipitation forecasting with reinforced diffusion](https://arxiv.org/abs/2610.38775) | ECMWF, NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), Met Office, ETH Zurich, Colorado State University (incl. CIRA) |
+| 2026-10-26 | [FASST: A Compact Stateless Atmosphere Model for Long-Term Ocean Coupling](https://arxiv.org/abs/2610.36297) | NVIDIA |
+| 2026-10-26 | [Towards operational data-driven regional weather forecasting: extreme-event skill and near-real-time verification with HRRRCast](https://arxiv.org/abs/2610.36186) | NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), Colorado State University (incl. CIRA) |
 | 2026-10-23 | [Batched NN 4D-Var: a performant hybrid model framework for the Integrated Forecasting System](https://arxiv.org/abs/2610.32582) | ECMWF |
 | 2026-10-22 | [NNJA—a curated archive of Earth system observations from 1970s to present for reanalysis and data-driven model development](https://doi.org/10.1175/bams-d-25-0157.1) | NASA, NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), NSF NCAR / UCAR, Brightband |
 | 2026-10-15 | [MJO Predictability: Its Sources and Limits](https://doi.org/10.1175/bams-d-25-0345.1) | ECMWF, Fudan University (FuXi), NSF NCAR / UCAR, NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), University of Washington |
@@ -69,9 +72,6 @@ classified when the topics are switched on.
 | 2026-10-01 | [Varda-single-1.0: deterministic data-driven weather forecasting at 1 km resolution over Switzerland's complex topography](https://arxiv.org/abs/2610.01835) | ECMWF, ETH Zurich, KNMI (Royal Netherlands Meteorological Institute), MET Norway (Norwegian Meteorological Institute), MeteoSwiss, Swiss Data Science Center (SDSC) |
 | 2026-09-23 | [Convection-permitting scales break climate invariance in machine-learned precipitation downscaling](https://doi.org/10.21203/rs.3.rs-10899014/v1) | Massachusetts Institute of Technology (MIT), NSF NCAR / UCAR |
 | 2026-09-22 | [Skillful Seasonal Tropical Cyclone Prediction with AI Weather--Climate Models Forced by Dynamically Predicted SSTs](https://doi.org/10.31223/x5880n) | NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |
-| 2026-09-11 | [4D Parallelism Unlocks Exascale Bayesian Neural Networks for High-Fidelity Atmospheric Modeling](https://arxiv.org/abs/2609.12815) | Forschungszentrum Jülich / Jülich Supercomputing Centre, Karlsruhe Institute of Technology (KIT), NVIDIA |
-| 2026-09-02 | [Improving global precipitation forecasts with an AI weather model trained on satellite observations](https://arxiv.org/abs/2609.03210) | California Institute of Technology (Caltech), Google Research, Stanford University |
-| 2026-08-12 | [Long-window 4DVar for reanalysis using a differentiable weather model](https://arxiv.org/abs/2608.11515) | NSF NCAR / UCAR, NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), University of Washington |
 
 ## Resources
 
