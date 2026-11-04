@@ -22,17 +22,30 @@
         <img src="{{ asset("icon.svg") }}" alt="" width="26" height="26">
         <span>ML4WX</span>
       </a>
+      {# Main menu: the most used pages, two small menus for the rest. <details> opens without JS. #}
+      {% macro item(href, key, label) %}<a href="{{ href }}"{% if nav == key %} aria-current="page"{% endif %}>{{ label }}</a>{% endmacro %}
+      {% macro menu(label, links) %}{% set keys = links | map(attribute=1) | list %}
+      <details class="navmenu{{ ' is-current' if nav in keys }}">
+        <summary>{{ label }}</summary>
+        <div class="navmenu-list">
+          {% for href, key, name, desc in links %}<a href="{{ href }}"{% if nav == key %} aria-current="page"{% endif %}><b>{{ name }}</b><span>{{ desc }}</span></a>{% endfor %}
+        </div>
+      </details>
+      {% endmacro %}
       <nav class="nav" aria-label="Main">
-        <a href="/essentials/" {% if nav == "essentials" %}aria-current="page"{% endif %}>Essentials</a>
-        <a href="/explore/" {% if nav == "explore" %}aria-current="page"{% endif %}>Explore</a>
-        <a href="/topics/" {% if nav == "topics" %}aria-current="page"{% endif %}>Topics</a>
-        <a href="/highlights/" {% if nav == "highlights" %}aria-current="page"{% endif %}>Highlights</a>
-        <a href="/trends/" {% if nav == "trends" %}aria-current="page"{% endif %}>Trends</a>
-        <a href="/datasets/" {% if nav == "datasets" %}aria-current="page"{% endif %}>Datasets</a>
-        <a href="/models/" {% if nav == "models" %}aria-current="page"{% endif %}>Models</a>
-        <a href="/benchmarks/" {% if nav == "benchmarks" %}aria-current="page"{% endif %}>Benchmarks</a>
-        <a href="/events/" {% if nav == "events" %}aria-current="page"{% endif %}>Events</a>
-        <a href="/tools/" {% if nav == "tools" %}aria-current="page"{% endif %}>Tools</a>
+        {{ item("/essentials/", "essentials", "Essentials") }}
+        {{ item("/explore/", "explore", "Explore") }}
+        {{ menu("Papers", [("/topics/", "topics", "Topics", "The 20 research areas"),
+                           ("/highlights/", "highlights", "Highlights", "Important new papers"),
+                           ("/trends/", "trends", "Trends", "How the field is changing"),
+                           ("/orgs/", "orgs", "Labs", "Papers by lab and organization")]) }}
+        {{ menu("Resources", [("/datasets/", "datasets", "Datasets", "Reanalyses, observations, ML-ready data"),
+                              ("/models/", "models", "Models", "With public code or weights"),
+                              ("/models/compare/", "compare", "Compare models", "All models side by side"),
+                              ("/tools/", "tools", "Tools", "Load, train, run, evaluate, plot")]) }}
+        {{ item("/benchmarks/", "benchmarks", "Benchmarks") }}
+        {{ item("/events/", "events", "Events") }}
+        {{ item("/digests/", "digests", "Digests") }}
       </nav>
       {% if nav != "explore" %}
       <form class="top-search" action="/explore/" role="search" data-quick>
@@ -80,6 +93,18 @@
     });
   </script>
   <script type="module" src="{{ asset("quick.js") }}"></script>
+  <script>
+    // Menus: one open at a time; a click outside or Escape closes them.
+    const menus = document.querySelectorAll(".navmenu");
+    menus.forEach((m) => m.addEventListener("toggle", () => {
+      if (m.open) menus.forEach((o) => { if (o !== m) o.open = false; });
+    }));
+    document.addEventListener("click", (e) => menus.forEach((m) => { if (m.open && !m.contains(e.target)) m.open = false; }));
+    document.addEventListener("keydown", (e) => {
+      if (e.key !== "Escape") return;
+      menus.forEach((m) => { if (m.open) { m.open = false; m.querySelector("summary").focus(); } });
+    });
+  </script>
   {% block scripts %}{% endblock %}
 </body>
 </html>

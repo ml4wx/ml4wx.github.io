@@ -91,6 +91,9 @@ def test_new_pages_build(root):
     assert (site / "models" / "compare" / "index.html").exists()
     home = (site / "index.html").read_text()
     assert "Fastest-growing topics" in home and 'class="ess-band"' in home and "data-quick" in home
+    # Top bar: the main pages, Digests at the top level, the rest in two small menus.
+    assert home.count('<details class="navmenu') == 2 and '<a href="/digests/">Digests</a>' in home
+    assert 'class="navmenu is-current"' in topic and 'href="/topics/" aria-current="page"' in topic
     ess = (site / "essentials" / "index.html").read_text()
     assert 'id="ess-topic"' in ess and 'href="/papers/arxiv-2501.00005/"' in ess and '"arxiv-2501.00005": "@' in ess
     quick = json.loads((site / "data" / "quick.json").read_text())
