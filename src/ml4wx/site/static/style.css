@@ -59,6 +59,19 @@ code { font-family: var(--mono); font-size: .9em; background: var(--surface-2); 
 .nav { display: flex; gap: 2px; flex-wrap: wrap; flex: 1; }
 .nav a { color: var(--muted); padding: 6px 7px; border-radius: 6px; font-size: .95rem; }
 .nav a:hover, .nav a[aria-current] { color: var(--text); background: var(--surface-2); text-decoration: none; }
+.navmenu { position: relative; }
+.navmenu > summary { list-style: none; cursor: pointer; color: var(--muted); padding: 6px 7px; border-radius: 6px;
+  font-size: .95rem; user-select: none; }
+.navmenu > summary::-webkit-details-marker { display: none; }
+.navmenu > summary::after { content: "▾"; font-size: .75em; margin-left: 4px; }
+.navmenu > summary:hover, .navmenu[open] > summary, .navmenu.is-current > summary { color: var(--text); background: var(--surface-2); }
+.navmenu-list { position: absolute; top: calc(100% + 6px); left: 0; z-index: 20; min-width: 260px; display: flex;
+  flex-direction: column; gap: 2px; padding: 6px; background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); box-shadow: var(--shadow-pop); }
+.nav .navmenu-list a { display: flex; flex-direction: column; padding: 6px 10px; color: var(--text); white-space: normal; }
+.nav .navmenu-list a b { font-weight: 600; }
+.nav .navmenu-list a span { color: var(--muted); font-size: .8rem; }
+.nav .navmenu-list a:hover, .nav .navmenu-list a[aria-current] { background: var(--accent-soft); }
 .theme { background: none; border: 1px solid var(--border); color: var(--muted); border-radius: 8px; padding: 6px 8px; cursor: pointer; display: flex; }
 .foot { border-top: 1px solid var(--border); margin-top: 64px; padding: 24px 0; color: var(--muted); font-size: .9rem; }
 .foot-inner { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
@@ -401,7 +414,9 @@ form[data-quick] { position: relative; }
 @media (max-width: 760px) {
   .top-inner { gap: 4px 12px; padding-top: 8px; }
   .brand { flex: 1; }
-  .nav { order: 3; flex: 0 0 100%; flex-wrap: nowrap; overflow-x: auto; margin: 0 -8px; padding-bottom: 6px; }
+  .nav { order: 3; flex: 0 0 100%; flex-wrap: wrap; margin: 0 -8px; padding-bottom: 6px; }
+  .navmenu[open] { flex-basis: 100%; }
+  .navmenu[open] .navmenu-list { position: static; box-shadow: none; margin-top: 4px; min-width: 0; }
   .nav a { white-space: nowrap; }
   .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .explore { grid-template-columns: 1fr; }
