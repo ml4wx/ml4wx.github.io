@@ -1,0 +1,33 @@
+slug: operational-weatherbench
+name: Operational WeatherBench
+provider: Brightband
+topics:
+- global-medium-range
+- probabilistic-ensembles
+task: Live, daily verification of operational AI and physics forecast models, global and by region, out to
+  15 days.
+truth: Each model's own analysis (WeatherNext against the IFS analysis); precipitation against ERA5.
+metrics: [RMSE, ACC, SEEPS, CRPS, spread-skill ratio]
+url: https://owb.brightband.com/
+docs: https://owb.brightband.com/methodology
+status: live
+leaderboard:
+  source: owb
+  url: https://owb.brightband.com/
+  license: CC BY 4.0, scores by Brightband (Operational WeatherBench)
+  models:
+    wn3-ens-mean: {name: WeatherNext 3 (ens. mean)}
+    fgn-ens-mean: {name: WeatherNext 2 (ens. mean), model: weathernext-2}
+    aifs-ens-mean: {name: AIFS ENS (ens. mean), model: aifs-ens}
+    aurora-v1p5-ens-mean: {name: Aurora 1.5 (ens. mean), model: aurora}
+    atlas-crps-ens-mean: {name: Atlas (ens. mean), model: atlas}
+    graphcast-hres: {name: GraphCast, model: graphcast}
+    aigfs: {name: AIGFS}
+    aigefs-mean: {name: AIGEFS (ens. mean)}
+    ifs-ens-mean: {name: IFS ENS (ens. mean), kind: physics}
+    hres: {name: IFS HRES, kind: physics}
+    gefs-mean: {name: GEFS (ens. mean), kind: physics}
+    gfs: {name: GFS, kind: physics}
+    climatology: {name: Climatology, kind: baseline}
+rank: 1
+added: '2026-11-04'

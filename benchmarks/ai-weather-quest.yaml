@@ -1,0 +1,24 @@
+slug: ai-weather-quest
+name: AI Weather Quest
+provider: ECMWF
+topics:
+- s2s-seasonal
+task: Live competition for sub-seasonal forecasts. Teams submit weekly-mean quintile probabilities of 2 m
+  temperature, sea-level pressure and precipitation for days 19-25 and 26-32.
+truth: ERA5T (IBTrACS for tropical storms).
+metrics: [RPSS]
+url: https://aiweatherquest.ecmwf.int/
+docs: https://ecmwf-ai-weather-quest.readthedocs.io/en/latest/
+paper:
+  doi: 10.1088/3049-4753/adf649
+status: live
+leaderboard:
+  source: aiwq
+  url: https://aiweatherquest.ecmwf.int/leaderboards/
+  license: CC BY 4.0, ECMWF AI Weather Quest
+  models:  # ids are team/model; the S2S database entries are the physics references
+    Dynamical_S2SDatabase/ECMWF: {name: ECMWF (S2S database), kind: physics}
+    Dynamical_S2SDatabase/JMA: {name: JMA (S2S database), kind: physics}
+    Dynamical_S2SDatabase/KMA: {name: KMA (S2S database), kind: physics}
+rank: 4
+added: '2026-11-04'

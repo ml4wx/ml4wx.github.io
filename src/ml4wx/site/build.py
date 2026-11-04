@@ -19,7 +19,7 @@ from xml.sax.saxutils import escape
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from markdown_it import MarkdownIt
 
-from .. import insights, resources
+from .. import benchmarks, insights, resources
 from ..config import Config
 from ..export import authors_short, bibtex, sorted_papers, stats
 from ..models import Paper
@@ -163,6 +163,9 @@ def build(archive: Archive, cfg: Config, out: Path, index: bool = True) -> None:
     year_ago = today - dt.timedelta(days=365)
     pages = {k: catalog_page.page(k, catalog, res_vocab, cfg) for k in resources.DIRS}
 
+    def listed(kind: str) -> list[str]:  # slugs shown on a catalog page
+        return [x["r"].slug for x in pages[kind]["rows"]]
+
     # Essentials: the most important papers (rules in settings.yaml) and the first datasets, models and tools
     # in catalog order. They fill the band on the home page, /essentials/ and the search suggestions.
     rules = cfg.settings["essentials"]
@@ -201,9 +204,14 @@ def build(archive: Archive, cfg: Config, out: Path, index: bool = True) -> None:
     ]  # fmt: skip
     # Suggestions, the most important of each kind first (paper, model, dataset, tool, paper, ...): the
     # first few are the picks shown before you type.
+    # Benchmarks: the catalog, the leaderboards copied from their sources, the newest benchmark papers.
+    bcat = benchmarks.Catalog(archive.root)
+    bench_items = [{"n": b.name, "k": "benchmark", "u": f"/benchmarks/#{b.slug}",
+                    "d": cfg.topic_by_slug[b.topics[0]].name if b.topics[0] in cfg.topic_by_slug else "",
+                    "s": _norm(f"{b.name} {b.slug} {b.provider}")} for b in bcat.ordered()]  # fmt: skip
     kinds = [[paper_item(p) for p in ess[: rules["size"]]]] + [
         [res_item(x["r"]) for x in pages[k]["rows"]] for k in ("model", "dataset", "software")
-    ]
+    ] + [bench_items]
     quick = [it for row in zip_longest(*kinds) for it in row if it]
     _write(out, "data/quick.json", json.dumps(quick, ensure_ascii=False, separators=(",", ":")))
     render("essentials/index.html", "essentials.html", papers=ess, earlier=earlier, rules=rules, pages=pages,
@@ -217,6 +225,19 @@ def build(archive: Archive, cfg: Config, out: Path, index: bool = True) -> None:
         week=sorted((p for p in papers if p.date > today - dt.timedelta(days=14) and not p.classic),
                     key=lambda p: (-p.score, p.id)),
         cited=sorted((p for p in papers if p.date > year_ago and p.cited_by), key=lambda p: -p.cited_by)[:8],
+    )  # fmt: skip
+    by_group: dict[str, list] = defaultdict(list)  # catalog sections, in taxonomy topic order
+    for b in bcat.ordered():
+        by_group[b.topics[0]].append(b)
+    render(
+        "benchmarks/index.html", "benchmarks.html",
+        boards=benchmarks.page(bcat, {s: f"/models/#{s}" for s in listed("model")}, today),
+        sections=[(t, by_group[t.slug]) for t in cfg.topics if by_group.get(t.slug)],
+        paper_of={b.slug: next((key_to_paper[k] for k in b.paper.keys() if k in key_to_paper), None)
+                  for b in bcat.items.values() if b.paper},
+        changes=bcat.snapshot.get("changes", [])[:12],
+        new_papers=sorted((p for p in papers if p.type == "benchmark" and not p.classic),
+                          key=lambda p: (p.date, p.id), reverse=True)[:8],
     )  # fmt: skip
     render("explore/index.html", "explore.html")
     render("topics/index.html", "topics.html", groups=groups, by_topic=by_topic, st=st)

@@ -1,0 +1,31 @@
+slug: chaosbench
+name: ChaosBench
+provider: LEAP (Columbia University)
+topics:
+- s2s-seasonal
+- benchmarks-data-eval
+task: Sub-seasonal to seasonal forecasts up to 44 days, ML weather models against the S2S systems of four
+  weather centres.
+truth: ERA5.
+metrics: [RMSE, ACC, MS-SSIM, spectral divergence, CRPSS]
+url: https://leap-stc.github.io/ChaosBench/
+repo: leap-stc/ChaosBench
+paper:
+  arxiv: '2402.00712'
+dataset: chaosbench
+status: active
+leaderboard:
+  source: chaosbench
+  url: https://leap-stc.github.io/ChaosBench/leaderboard.html
+  license: Repository GPL-3.0 (LEAP)
+  models:
+    graphcast: {name: GraphCast, model: graphcast}
+    fourcastnetv2: {name: FourCastNet v2 (SFNO), model: sfno}
+    panguweather: {name: Pangu-Weather, model: pangu-weather}
+    ecmwf: {name: ECMWF (S2S), kind: physics}
+    ncep: {name: NCEP (S2S), kind: physics}
+    ukmo: {name: UKMO (S2S), kind: physics}
+    cma: {name: CMA (S2S), kind: physics}
+    climatology: {name: Climatology, kind: baseline}
+rank: 5
+added: '2026-11-04'

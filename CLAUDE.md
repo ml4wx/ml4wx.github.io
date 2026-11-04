@@ -24,6 +24,11 @@ static site (`src/ml4wx/site/`), GitHub Actions (`.github/workflows/`).
 - Essentials (`/essentials/`, the band on the home page, search suggestions in `static/quick.js`):
   the paper rule and the hand-picked `pin` / `exclude` lists are under `essentials:` in
   `config/settings.yaml`; models, datasets and tools follow the curated `rank` in `resources/`.
+- Benchmarks (`/benchmarks/`): one YAML per benchmark in `benchmarks/<slug>.yaml` (schema and the
+  leaderboard readers in `src/ml4wx/benchmarks.py`). `benchmarks/_leaderboards.json` is generated weekly
+  (`ml4wx benchmarks refresh`, needs `--extra site` for scipy): never edit it by hand. We only copy
+  leaderboards from their official sources; a source's model ids map to names and catalog models in the
+  benchmark's YAML (`leaderboard.models`; `contender: false` = shown but never the leader).
 - LLM calls go through the Claude Code CLI (`claude -p`, see `src/ml4wx/llm.py`) because the
   project runs on a Claude subscription token (`CLAUDE_CODE_OAUTH_TOKEN`), not an API key. Keep
   calls batched; every call counts against the subscription limits.

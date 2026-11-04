@@ -1,0 +1,191 @@
+{% extends "base.html" %}
+{% set nav = "benchmarks" %}
+{% set show = 15 %}{# rows shown before "Show all" #}
+{% block title %}Benchmarks · {{ site.title }}{% endblock %}
+{% block description %}Benchmarks and leaderboards for ML weather and climate models: who is winning, copied every week from the official sources.{% endblock %}
+
+{% macro num(v, c) -%}
+{%- if v is none %}–{% else %}{{ ("%." ~ c.digits ~ "f") | format(v) }}{% if c.unit == "%" %}%{% endif %}{% endif -%}
+{%- endmacro %}
+{% macro unit(c) %}{% if c.unit and c.unit != "%" %} {{ c.unit }}{% endif %}{% endmacro %}
+{% macro col(board, key) %}{% for c in board.columns if c.key == key %}{{ caller(c) }}{% endfor %}{% endmacro %}
+
+{% block main %}
+<h1 class="page-title">Benchmarks</h1>
+<p class="lede">Benchmarks for ML weather and climate models, and who leads them. Leaderboards are copied every week
+  from their official sources; we do not run or re-score any model. <a href="/about/#benchmarks">How it works</a>.</p>
+<nav class="quick" aria-label="Sections"><a href="#winning">Who is winning</a><a href="#leaderboards">Leaderboards</a>
+  <a href="#all">All {{ sections | map(attribute="1") | map("length") | sum }} benchmarks</a><a href="#new">New benchmark papers</a></nav>
+
+{% if boards %}
+<section id="winning">
+  <h2>Who is winning</h2>
+  <div class="lead-grid">
+    {% for x in boards %}{% for board in x.cards %}{% set r = board.leader_row %}
+    <a class="lead-card" href="#lb-{{ x.b.slug }}" data-board-link="{{ x.b.slug }}:{{ board.id }}">
+      <span class="lead-ctx">{{ x.b.name }} · {{ board.title }}</span>
+      <span class="lead-name">{{ r.name }}</span>
+      <span class="lead-val">{% for k in board.card if r["values"].get(k) is not none %}{% call(c) col(board, k) %}{{ c.label }}: <b>{{ num(r["values"][k], c) }}</b>{{ unit(c) }}{% endcall %}{{ " · " if not loop.last }}{% endfor %}</span>
+      {% if board.baseline_row %}{% set br = board.baseline_row %}
+      <span class="lead-note">{{ br.name }} does better: {% call(c) col(board, board.sort) %}{{ num(br["values"][board.sort], c) }}{{ unit(c) }}{% endcall %}</span>
+      {% endif %}
+    </a>
+    {% endfor %}{% endfor %}
+  </div>
+</section>
+
+<section id="leaderboards">
+  {% for x in boards %}{% set lb = x.b.leaderboard %}
+  <section class="lb" id="lb-{{ x.b.slug }}">
+    <div class="sec-head"><h2>{{ x.b.name }}{% if x.b.status == "live" %} <span class="badge-live">Live</span>{% endif %}</h2>
+      <a href="{{ lb.url }}">Official leaderboard ↗</a></div>
+    <p class="lb-task">{{ x.b.task }}</p>
+    {% if x.boards | length > 1 %}
+    <div class="fchips lb-tabs" role="group" aria-label="{{ x.b.name }} boards">
+      {% for board in x.boards %}<button type="button" class="fchip" data-tab="{{ board.id }}" aria-pressed="{{ 'true' if loop.first else 'false' }}">{{ board.title }}</button>{% endfor %}
+    </div>
+    {% endif %}
+    {% for board in x.boards %}
+    <div class="lb-board" data-board="{{ board.id }}"{% if not loop.first %} hidden{% endif %}>
+      <p class="lb-note">{{ board.note }}{% if board.as_of %} Source data from {{ board.as_of }}.{% endif %}</p>
+      <div class="table-wrap">
+        <table class="compare lb-table">
+          <thead><tr>
+            <th scope="col" class="rank">#</th>
+            <th scope="col" data-sort="text">Model</th>
+            {% for c in board.columns %}<th scope="col" data-sort="num" data-better="{{ c.better }}"{% if c.key == board.sort %} aria-sort="{{ 'descending' if c.better == 'higher' else 'ascending' }}"{% endif %}{% if c.help %} title="{{ c.help }}"{% endif %}>{{ c.label }}{% if c.unit and c.unit != "%" %} <span class="unit">{{ c.unit }}</span>{% endif %} <span class="better" aria-label="{{ c.better }} is better">{{ "↓" if c.better == "lower" else "↑" }}</span></th>{% endfor %}
+          </tr></thead>
+          <tbody>
+            {% set ns = namespace(rank=0) %}
+            {% for r in board.rows %}{% if r.ranked %}{% set ns.rank = ns.rank + 1 %}{% endif %}
+            <tr class="kind-{{ r.kind }}{{ ' unranked' if not r.ranked }}"{% if not r.ranked %} data-unranked{% endif %}{% if loop.index > show %} hidden{% endif %}>
+              <td class="rank">{{ ns.rank if r.ranked else "·" }}</td>
+              <td class="lb-model">{% if r.link %}<a href="{{ r.link }}">{{ r.name }}</a>{% else %}{{ r.name }}{% endif %}
+                {% if r.kind != "ml" %}<span class="row-flag warn">{{ r.kind }}</span>{% endif %}
+                {% if not r.ranked and r.kind != "baseline" and not r.note %}<span class="row-flag warn" title="Shown for reference, not ranked">not ranked</span>{% endif %}
+                {% if r.new %}<span class="pop">New</span>{% endif %}
+                {% if r.note %}<span class="lb-rownote">{{ r.note }}</span>{% endif %}</td>
+              {% for c in board.columns %}{% set v = r["values"].get(c.key) %}
+              <td data-v="{{ v if v is not none else '' }}"{% if v is not none and v == board.best.get(c.key) %} class="best"{% endif %}>{{ num(v, c) }}</td>{% endfor %}
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {% if board.rows | length > show %}<button type="button" class="btn lb-more" data-more>Show all {{ board.rows | length }}</button>{% endif %}
+    </div>
+    {% endfor %}
+    <p class="fineprint">Source: <a href="{{ lb.url }}">{{ x.b.name }}</a>{% if lb.license %} · {{ lb.license }}{% endif %}
+      · copied {{ x.fetched }}{% if x.error %} · <b>the last update failed</b>, this is the previous copy{% endif %}.
+      Best value per column in bold; ↓ lower is better, ↑ higher is better; rows marked · are shown but not ranked.</p>
+  </section>
+  {% endfor %}
+</section>
+{% endif %}
+
+<section id="all">
+  <div class="sec-head"><h2>All benchmarks</h2><a href="https://github.com/{{ site.repo }}/issues/new">Suggest a benchmark</a></div>
+  {% for t, items in sections %}
+  <h3 class="group">{{ t.name }}</h3>
+  <div class="grid">
+    {% for b in items %}
+    <article class="card bench-card" id="{{ b.slug }}">
+      <h3 class="card-title"><a href="{{ b.url or ('https://github.com/' ~ b.repo) }}">{{ b.name }}</a>
+        {% if b.status == "live" %}<span class="badge-live">Live</span>{% elif b.status == "archived" %}<span class="row-flag warn">No longer updated</span>{% endif %}</h3>
+      {% if b.provider %}<p class="card-meta">{{ b.provider }}</p>{% endif %}
+      <p class="card-summary">{{ b.task }}</p>
+      {% if b.truth or b.metrics %}<p class="row-meta">{% if b.truth %}Truth: {{ b.truth | trim(".") }}{% endif %}{% if b.truth and b.metrics %} · {% endif %}{% if b.metrics %}{{ b.metrics | join(", ") }}{% endif %}</p>{% endif %}
+      <p class="chips bench-links">
+        {% if b.leaderboard %}<a class="chip chip-topic" href="#lb-{{ b.slug }}">Leaderboard ↑</a>{% endif %}
+        {% if b.paper %}{% set pid = paper_of.get(b.slug) %}<a class="chip" href="{{ '/papers/' ~ pid ~ '/' if pid else ('https://arxiv.org/abs/' ~ b.paper.arxiv if b.paper.arxiv else 'https://doi.org/' ~ b.paper.doi) }}">Paper</a>{% endif %}
+        {% if b.repo %}<a class="chip" href="https://github.com/{{ b.repo }}">Code</a>{% endif %}
+        {% if b.dataset %}<a class="chip" href="/datasets/#{{ b.dataset }}">Data</a>{% endif %}
+        {% if b.docs %}<a class="chip" href="{{ b.docs }}">Docs</a>{% endif %}
+      </p>
+    </article>
+    {% endfor %}
+  </div>
+  {% endfor %}
+</section>
+
+<div class="kit" id="new">
+  <section class="kit-card">
+    <h2>New benchmark papers</h2>
+    <p class="muted">Found by the weekly update; candidates for this page.</p>
+    <ol class="kit-list">
+      {% for p in new_papers %}<li><a href="/papers/{{ p.id }}/">{{ p.title }}</a>
+        <span class="muted">· {{ p.authors | authors_short(1) }} · {{ p.date.strftime("%b %Y") }}</span></li>{% endfor %}
+    </ol>
+    <a href="/explore/?type={{ facets.type.benchmark | urlencode }}&sort=date">All benchmark papers →</a>
+  </section>
+  <section class="kit-card">
+    <h2>Leaderboard changes</h2>
+    {% if changes %}
+    <ul class="kit-list lb-changes">
+      {% for c in changes %}<li>{{ c.text }} <span class="muted">· {{ c.date }}</span></li>{% endfor %}
+    </ul>
+    {% else %}<p class="muted">New models and new leaders appear here after each weekly update.</p>{% endif %}
+  </section>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  // Board tabs, sortable columns (the # column follows the order), and "Show all" rows.
+  (() => {
+    const show = (lb, id) => {
+      lb.querySelectorAll("[data-tab]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.tab === id)));
+      lb.querySelectorAll("[data-board]").forEach((d) => (d.hidden = d.dataset.board !== id));
+    };
+    for (const lb of document.querySelectorAll(".lb")) {
+      lb.querySelectorAll("[data-tab]").forEach((b) => b.addEventListener("click", () => show(lb, b.dataset.tab)));
+    }
+    // A "Who is winning" card opens its board.
+    document.querySelectorAll("[data-board-link]").forEach((a) => a.addEventListener("click", () => {
+      const [slug, id] = a.dataset.boardLink.split(":");
+      const lb = document.getElementById(`lb-${slug}`);
+      if (lb) show(lb, id);
+    }));
+    const SHOW = {{ show }};
+    // Number the rows in their current order; until "Show all" is used, only the first SHOW are visible.
+    const renumber = (body) => {
+      const all = !body.closest(".lb-board").querySelector("[data-more]");
+      let n = 0;
+      [...body.rows].forEach((tr, i) => {
+        tr.cells[0].textContent = tr.hasAttribute("data-unranked") ? "·" : ++n;
+        tr.hidden = !all && i >= SHOW;
+      });
+    };
+    for (const t of document.querySelectorAll(".lb-table")) {
+      const body = t.tBodies[0];
+      for (const [i, th] of [...t.tHead.rows[0].cells].entries()) {
+        if (!th.dataset.sort) continue;
+        th.tabIndex = 0;
+        const go = () => {
+          const num = th.dataset.sort === "num";
+          const asc = th.getAttribute("aria-sort") === "ascending" ? false : th.getAttribute("aria-sort") === "descending"
+            ? true : !(num && th.dataset.better === "higher");
+          const val = (tr) => (num ? tr.cells[i].dataset.v : tr.cells[i].textContent.trim().toLowerCase());
+          const rows = [...body.rows].sort((a, b) => {
+            const x = val(a), y = val(b);
+            if (num && (x === "" || y === "")) return (x === "") - (y === "");  // missing values last
+            const d = num ? Number(x) - Number(y) : x.localeCompare(y);
+            return asc ? d : -d;
+          });
+          body.append(...rows);
+          renumber(body);
+          for (const h of t.tHead.rows[0].cells) h.removeAttribute("aria-sort");
+          th.setAttribute("aria-sort", asc ? "ascending" : "descending");
+        };
+        th.addEventListener("click", go);
+        th.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); go(); } });
+      }
+    }
+    document.querySelectorAll("[data-more]").forEach((b) => b.addEventListener("click", () => {
+      const board = b.closest(".lb-board");
+      b.remove();
+      board.querySelectorAll("tbody").forEach(renumber);
+    }));
+  })();
+</script>
+{% endblock %}

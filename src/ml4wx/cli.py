@@ -63,10 +63,15 @@ def cmd_validate(args) -> int:
 
     catalog = resources.Catalog(archive.root)
     errors += catalog.validate(cfg, resources.vocabulary())
+    from . import benchmarks
+
+    bench = benchmarks.Catalog(archive.root)
+    slugs_of = lambda kind: {r.slug for r in catalog.items.values() if r.kind == kind}  # noqa: E731
+    errors += bench.validate(cfg, slugs_of("model"), slugs_of("dataset"))
     for e in errors:
         print(f"ERROR {e}")
     print(f"{len(archive.papers)} papers, {len(archive.parked)} parked, {len(catalog.items)} resources, "
-          f"{len(errors)} errors")  # fmt: skip
+          f"{len(bench.items)} benchmarks, {len(errors)} errors")  # fmt: skip
     return 1 if errors else 0
 
 
@@ -85,6 +90,24 @@ def cmd_resources(args) -> int:
             print(f"{kind}: {len(items)}")
             for r in items:
                 print(f"  {r.category:28s} {r.slug}")
+    return 0
+
+
+def cmd_benchmarks(args) -> int:
+    from . import benchmarks
+
+    bench = benchmarks.Catalog()
+    if args.action == "refresh":
+        changes = bench.refresh(only=args.only)
+        errors = {k: v["error"] for k, v in bench.snapshot["benchmarks"].items() if v.get("error")}
+        print(f"benchmarks: {len(bench.snapshot['benchmarks']) - len(errors)} leaderboards up to date")
+        for slug, e in errors.items():
+            print(f"  not updated, kept the last version: {slug} ({e})")
+        for c in changes:
+            print(f"  change: {c}")
+    else:
+        for b in bench.ordered():
+            print(f"  {b.slug:28s} {b.leaderboard.source if b.leaderboard else '-':12s} {', '.join(b.topics)}")
     return 0
 
 
@@ -404,8 +427,12 @@ def cmd_weekly(args) -> int:
     for r in resources.Catalog(archive.root).releases_since(week_ago):
         rels.setdefault(r["url"], r)
     rels = sorted(rels.values(), key=lambda r: r["date"], reverse=True)
+    from . import benchmarks  # the leaderboards were copied by `ml4wx benchmarks refresh` just before
+
+    changes = [c for c in benchmarks.Catalog(archive.root).snapshot.get("changes", []) if c["date"] >= str(week_ago)]
     path, _ = digest.build(
-        archive, cfg, since=today, today=today, releases=rels, pr_url=args.pr_url, window_start=since
+        archive, cfg, since=today, today=today, releases=rels, pr_url=args.pr_url, window_start=since,
+        leaderboard_changes=changes,
     )
     n_hl = sum(p.highlight for p in rep.added)
     print(f"weekly: +{len(rep.added)} papers ({n_hl} ★), {len(rep.updated)} updated, digest {path.name}")
@@ -520,6 +547,11 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("action", choices=["list", "refresh", "import"], help="refresh: GitHub stars/releases")
     p.add_argument("file", nargs="?", help="import: YAML list of resources")
     p.set_defaults(fn=cmd_resources)
+
+    p = sub.add_parser("benchmarks", help="benchmarks catalog and leaderboards")
+    p.add_argument("action", choices=["list", "refresh"], help="refresh: copy the leaderboards from their sources")
+    p.add_argument("--only", help="refresh one benchmark (slug)")
+    p.set_defaults(fn=cmd_benchmarks)
 
     p = sub.add_parser("digest", help="write the digest for papers added since a date")
     p.add_argument("--since", type=_date, default=dt.date.today() - dt.timedelta(days=6))
