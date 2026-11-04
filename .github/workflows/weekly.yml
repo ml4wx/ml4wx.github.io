@@ -86,6 +86,9 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}  # dates of the source files, without the anonymous rate limit
         run: uv run --extra site ml4wx benchmarks refresh
 
+      - name: Events, from ccf-deadlines and the dates on each event page (once a week)
+        run: uv run ml4wx events refresh
+
       - name: Crawl, classify, export, write digest
         id: run
         env:

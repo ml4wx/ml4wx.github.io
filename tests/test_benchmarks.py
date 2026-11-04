@@ -249,7 +249,7 @@ def test_page_search_and_digest(bench_root, sources):
     cat = benchmarks.Catalog(bench_root)
     cat.refresh(today=TODAY, client=client)
     state["owb"] = _owb(wn3_t2m_wins=5, extra_model=True)
-    cat.refresh(today=TODAY, client=client)
+    cat.refresh(today=TODAY, client=client, force=True)  # a second copy the same week needs force
     a = Archive()
     a.save_paper(make_paper(type="benchmark", title="NewBench: a benchmark", added=TODAY, date=TODAY, year=2026))
     build(a, load(), bench_root / "_site", index=False)

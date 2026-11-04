@@ -68,10 +68,14 @@ def cmd_validate(args) -> int:
     bench = benchmarks.Catalog(archive.root)
     slugs_of = lambda kind: {r.slug for r in catalog.items.values() if r.kind == kind}  # noqa: E731
     errors += bench.validate(cfg, slugs_of("model"), slugs_of("dataset"))
+    from . import events
+
+    event_cat = events.Catalog(archive.root)
+    errors += event_cat.validate(cfg)
     for e in errors:
         print(f"ERROR {e}")
     print(f"{len(archive.papers)} papers, {len(archive.parked)} parked, {len(catalog.items)} resources, "
-          f"{len(bench.items)} benchmarks, {len(errors)} errors")  # fmt: skip
+          f"{len(bench.items)} benchmarks, {len(event_cat.items)} events, {len(errors)} errors")  # fmt: skip
     return 1 if errors else 0
 
 
@@ -98,7 +102,7 @@ def cmd_benchmarks(args) -> int:
 
     bench = benchmarks.Catalog()
     if args.action == "refresh":
-        changes = bench.refresh(only=args.only)
+        changes = bench.refresh(only=args.only, force=args.force)
         errors = {k: v["error"] for k, v in bench.snapshot["benchmarks"].items() if v.get("error")}
         print(f"benchmarks: {len(bench.snapshot['benchmarks']) - len(errors)} leaderboards up to date")
         for slug, e in errors.items():
@@ -108,6 +112,25 @@ def cmd_benchmarks(args) -> int:
     else:
         for b in bench.ordered():
             print(f"  {b.slug:28s} {b.leaderboard.source if b.leaderboard else '-':12s} {', '.join(b.topics)}")
+    return 0
+
+
+def cmd_events(args) -> int:
+    from . import events
+
+    cat = events.Catalog()
+    if args.action == "refresh":
+        changes = cat.refresh(force=args.force)
+        pages = cat.status.get("pages", {})
+        blocked = sorted(u for u, p in pages.items() if p.get("status") == "blocked")
+        print(f"events: {len(cat.status.get('ccf', {}))} conferences from ccf-deadlines, {len(pages)} pages checked "
+              f"(blocked for robots: {len(blocked)}), last check {cat.status.get('checked')}")  # fmt: skip
+        for c in changes:
+            print(f"  change: {c}")
+    else:
+        for e in sorted(cat.items.values(), key=lambda e: (e.start or dt.date.max, e.slug)):
+            what = e.start or ("ccf-deadlines" if e.ccf else "series")
+            print(f"  {e.slug:34s} {e.kind:12s} {what}")
     return 0
 
 
@@ -430,9 +453,11 @@ def cmd_weekly(args) -> int:
     from . import benchmarks  # the leaderboards were copied by `ml4wx benchmarks refresh` just before
 
     changes = [c for c in benchmarks.Catalog(archive.root).snapshot.get("changes", []) if c["date"] >= str(week_ago)]
+    from . import events  # checked by `ml4wx events refresh` just before
+
     path, _ = digest.build(
         archive, cfg, since=today, today=today, releases=rels, pr_url=args.pr_url, window_start=since,
-        leaderboard_changes=changes,
+        leaderboard_changes=changes, events=events.Catalog(archive.root).digest(today),
     )
     n_hl = sum(p.highlight for p in rep.added)
     print(f"weekly: +{len(rep.added)} papers ({n_hl} ★), {len(rep.updated)} updated, digest {path.name}")
@@ -551,7 +576,13 @@ def main(argv: list[str] | None = None) -> int:
     p = sub.add_parser("benchmarks", help="benchmarks catalog and leaderboards")
     p.add_argument("action", choices=["list", "refresh"], help="refresh: copy the leaderboards from their sources")
     p.add_argument("--only", help="refresh one benchmark (slug)")
+    p.add_argument("--force", action="store_true", help="copy again even if done in the last 6 days")
     p.set_defaults(fn=cmd_benchmarks)
+
+    p = sub.add_parser("events", help="conferences, workshops and deadlines")
+    p.add_argument("action", choices=["list", "refresh"], help="refresh: ccf-deadlines and the dates on event pages")
+    p.add_argument("--force", action="store_true", help="check again even if done in the last 6 days")
+    p.set_defaults(fn=cmd_events)
 
     p = sub.add_parser("digest", help="write the digest for papers added since a date")
     p.add_argument("--since", type=_date, default=dt.date.today() - dt.timedelta(days=6))

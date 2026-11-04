@@ -32,6 +32,18 @@ Copied this week from the official sources ([Benchmarks]({{ site }}/benchmarks/)
 - {{ c.text }}
 {%- endfor %}
 {% endif %}
+{%- if events and (events.deadlines or events.changes) %}
+## 📅 Events
+{% if events.deadlines %}
+Deadlines in the next 30 days ([Events]({{ site }}/events/)):
+{% for d in events.deadlines %}
+- **{{ d.when }}**: {{ d.event.name }}, {{ d.label | lower }}
+{%- endfor %}
+{% endif %}
+{%- for c in events.changes %}
+- {{ c.text }}
+{%- endfor %}
+{% endif %}
 {%- if datasets %}
 ## 🗂️ New datasets & benchmarks
 

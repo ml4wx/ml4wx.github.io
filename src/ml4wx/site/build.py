@@ -19,7 +19,7 @@ from xml.sax.saxutils import escape
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from markdown_it import MarkdownIt
 
-from .. import benchmarks, insights, resources
+from .. import benchmarks, events, insights, resources
 from ..config import Config
 from ..export import authors_short, bibtex, sorted_papers, stats
 from ..models import Paper
@@ -209,9 +209,16 @@ def build(archive: Archive, cfg: Config, out: Path, index: bool = True) -> None:
     bench_items = [{"n": b.name, "k": "benchmark", "u": f"/benchmarks/#{b.slug}",
                     "d": cfg.topic_by_slug[b.topics[0]].name if b.topics[0] in cfg.topic_by_slug else "",
                     "s": _norm(f"{b.name} {b.slug} {b.provider}")} for b in bcat.ordered()]  # fmt: skip
+    # Events: conferences, workshops and deadlines, as of the build day (not the last paper's day).
+    ecat, now = events.Catalog(archive.root), dt.date.today()
+    ev_page = ecat.page(now)
+    event_items = [{"n": x["name"], "k": "event", "u": f"/events/#{x['slug']}", "d": x["dates_text"],
+                    "s": _norm(f"{x['name']} {x['location']}")} for x in ev_page["upcoming"]] + [
+        {"n": s["e"].name, "k": "event", "u": f"/events/#{s['e'].slug}", "d": "Series to watch",
+         "s": _norm(s["e"].name)} for s in ev_page["series"]]  # fmt: skip
     kinds = [[paper_item(p) for p in ess[: rules["size"]]]] + [
         [res_item(x["r"]) for x in pages[k]["rows"]] for k in ("model", "dataset", "software")
-    ] + [bench_items]
+    ] + [bench_items, event_items]
     quick = [it for row in zip_longest(*kinds) for it in row if it]
     _write(out, "data/quick.json", json.dumps(quick, ensure_ascii=False, separators=(",", ":")))
     render("essentials/index.html", "essentials.html", papers=ess, earlier=earlier, rules=rules, pages=pages,
@@ -239,6 +246,8 @@ def build(archive: Archive, cfg: Config, out: Path, index: bool = True) -> None:
         new_papers=sorted((p for p in papers if p.type == "benchmark" and not p.classic),
                           key=lambda p: (p.date, p.id), reverse=True)[:8],
     )  # fmt: skip
+    render("events/index.html", "events.html", ev=ev_page, now=now)
+    _write(out, "events/events.ics", events.ics(ecat.editions(now), now))
     render("explore/index.html", "explore.html")
     render("topics/index.html", "topics.html", groups=groups, by_topic=by_topic, st=st)
     for t in enabled:

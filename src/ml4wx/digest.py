@@ -64,6 +64,7 @@ def build(
     write_intro: bool = True,
     window_start: dt.date | None = None,
     leaderboard_changes: list[dict] | None = None,
+    events: dict | None = None,
 ) -> tuple[Path, str]:
     """Write the digest for papers added on or after `since`. Returns (path, markdown).
 
@@ -87,6 +88,7 @@ def build(
         orgs=cfg.org_by_slug,
         releases=releases or [],
         leaderboard_changes=leaderboard_changes or [],
+        events=events,
         pr_url=pr_url,
         site=cfg.settings["site"]["url"],
     )
