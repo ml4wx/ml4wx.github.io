@@ -1,0 +1,4606 @@
+{
+ "benchmarks": {
+  "operational-weatherbench": {
+   "fetched": "2026-11-04",
+   "boards": [
+    {
+     "id": "global",
+     "title": "Global",
+     "as_of": "2026-10-27",
+     "columns": [
+      {
+       "key": "wins",
+       "label": "Days won",
+       "unit": "",
+       "better": "higher",
+       "digits": 0,
+       "help": "Runs in which the model was #1, summed over the 7 variables (30 runs each)"
+      },
+      {
+       "key": "led",
+       "label": "Variables led",
+       "unit": "",
+       "better": "higher",
+       "digits": 0,
+       "help": "Variables where the model is the 30-day champion"
+      },
+      {
+       "key": "2m_temperature",
+       "label": "T2m",
+       "unit": "K",
+       "better": "lower",
+       "digits": 2,
+       "help": "RMSE"
+      },
+      {
+       "key": "temperature_850",
+       "label": "T850",
+       "unit": "K",
+       "better": "lower",
+       "digits": 2,
+       "help": "RMSE"
+      },
+      {
+       "key": "geopotential_500",
+       "label": "Z500",
+       "unit": "m²/s²",
+       "better": "lower",
+       "digits": 1,
+       "help": "RMSE"
+      },
+      {
+       "key": "mean_sea_level_pressure",
+       "label": "MSLP",
+       "unit": "hPa",
+       "better": "lower",
+       "digits": 2,
+       "help": "RMSE"
+      },
+      {
+       "key": "10m_wind_speed",
+       "label": "10 m wind",
+       "unit": "m/s",
+       "better": "lower",
+       "digits": 2,
+       "help": "RMSE"
+      },
+      {
+       "key": "wind_vector_850",
+       "label": "Wind 850",
+       "unit": "m/s",
+       "better": "lower",
+       "digits": 2,
+       "help": "RMSE"
+      },
+      {
+       "key": "specific_humidity_700",
+       "label": "Q700",
+       "unit": "g/kg",
+       "better": "lower",
+       "digits": 3,
+       "help": "RMSE"
+      }
+     ],
+     "sort": "wins",
+     "card": [
+      "wins",
+      "led"
+     ],
+     "rows": [
+      {
+       "id": "wn3-ens-mean",
+       "values": {
+        "wins": 171,
+        "led": 7,
+        "2m_temperature": 1.12282,
+        "temperature_850": 1.29776,
+        "geopotential_500": 230.897,
+        "mean_sea_level_pressure": 2.36012,
+        "10m_wind_speed": 1.47763,
+        "wind_vector_850": 3.76134,
+        "specific_humidity_700": 1.02323
+       }
+      },
+      {
+       "id": "fgn-ens-mean",
+       "values": {
+        "wins": 34,
+        "led": 0,
+        "2m_temperature": 1.16303,
+        "temperature_850": 1.33377,
+        "geopotential_500": 242.937,
+        "mean_sea_level_pressure": 2.44625,
+        "10m_wind_speed": 1.50998,
+        "wind_vector_850": 3.86269,
+        "specific_humidity_700": 1.04232
+       }
+      },
+      {
+       "id": "ifs-ens-mean",
+       "values": {
+        "wins": 0,
+        "led": 0,
+        "2m_temperature": 1.22971,
+        "temperature_850": 1.48668,
+        "geopotential_500": 269.005,
+        "mean_sea_level_pressure": 2.74314,
+        "10m_wind_speed": 1.61166,
+        "wind_vector_850": 4.22529,
+        "specific_humidity_700": 1.14762
+       }
+      },
+      {
+       "id": "aifs-ens-mean",
+       "values": {
+        "wins": 1,
+        "led": 0,
+        "2m_temperature": 1.23115,
+        "temperature_850": 1.39339,
+        "geopotential_500": 260.871,
+        "mean_sea_level_pressure": 2.6021,
+        "10m_wind_speed": 1.53677,
+        "wind_vector_850": 4.03003,
+        "specific_humidity_700": 1.05478
+       }
+      },
+      {
+       "id": "aurora-v1p5-ens-mean",
+       "values": {
+        "wins": 4,
+        "led": 0,
+        "2m_temperature": 1.35362,
+        "temperature_850": 1.44971,
+        "geopotential_500": 275.598,
+        "mean_sea_level_pressure": 2.71905,
+        "10m_wind_speed": 1.60612,
+        "wind_vector_850": 4.12809,
+        "specific_humidity_700": 1.10678
+       }
+      },
+      {
+       "id": "gefs-mean",
+       "values": {
+        "wins": 0,
+        "led": 0,
+        "2m_temperature": 1.38462,
+        "temperature_850": 1.67965,
+        "geopotential_500": 317.037,
+        "mean_sea_level_pressure": 3.18702,
+        "10m_wind_speed": 1.87891,
+        "wind_vector_850": 4.53648,
+        "specific_humidity_700": 1.14437
+       }
+      },
+      {
+       "id": "graphcast-hres",
+       "values": {
+        "wins": 0,
+        "led": 0,
+        "2m_temperature": 1.39085,
+        "temperature_850": 1.63516,
+        "geopotential_500": 298.969,
+        "mean_sea_level_pressure": 3.0595,
+        "10m_wind_speed": 1.87535,
+        "wind_vector_850": 4.62265,
+        "specific_humidity_700": 1.17592
+       }
+      },
+      {
+       "id": "hres",
+       "values": {
+        "wins": 0,
+        "led": 0,
+        "2m_temperature": 1.47125,
+        "temperature_850": 1.75133,
+        "geopotential_500": 306.323,
+        "mean_sea_level_pressure": 3.18438,
+        "10m_wind_speed": 1.99453,
+        "wind_vector_850": 5.09838,
+        "specific_humidity_700": 1.41566
+       }
+      },
+      {
+       "id": "atlas-crps-ens-mean",
+       "values": {
+        "wins": 0,
+        "led": 0,
+        "2m_temperature": 1.55591,
+        "temperature_850": 1.66127,
+        "geopotential_500": 298.53,
+        "mean_sea_level_pressure": 3.05481,
+        "10m_wind_speed": 1.75925,
+        "wind_vector_850": 4.45973,
+        "specific_humidity_700": 1.17407
+       }
+      },
+      {
+       "id": "gfs",
+       "values": {
+        "wins": 0,
+        "led": 0,
+        "2m_temperature": 1.64944,
+        "temperature_850": 1.94197,
+        "geopotential_500": 356.228,
+        "mean_sea_level_pressure": 3.66021,
+        "10m_wind_speed": 2.22242,
+        "wind_vector_850": 5.50338,
+        "specific_humidity_700": 1.45629
+       }
+      }
+     ],
+     "note": "Last 30 daily 12 UTC runs, up to 2026-10-27. Variable columns: RMSE pooled over the ranked lead times; each model against its own analysis (WeatherNext against the IFS analysis).",
+     "leader": "wn3-ens-mean"
+    },
+    {
+     "id": "northern-hemisphere",
+     "title": "N. Hemisphere",
+     "as_of": "2026-10-27",
+     "columns": [
+      {
+       "key": "wins",
+       "label": "Days won",
+       "unit": "",
+       "better": "higher",
+       "digits": 0,
+       "help": "Runs in which the model was #1, summed over the 7 variables (30 runs each)"
+      },
+      {
+       "key": "led",
+       "label": "Variables led",
+       "unit": "",
+       "better": "higher",
+       "digits": 0,
+       "help": "Variables where the model is the 30-day champion"
+      },
+      {
+       "key": "2m_temperature",
+       "label": "T2m",
+       "unit": "K",
+       "better": "lower",
+       "digits": 2,
+       "help": "RMSE"
+      },
+      {
+       "key": "temperature_850",
+       "label": "T850",
+       "unit": "K",
+       "better": "lower",
+       "digits": 2,
+       "help": "RMSE"
+      },
+      {
+       "key": "geopotential_500",
+       "label": "Z500",
+       "unit": "m²/s²",
+       "better": "lower",
+       "digits": 1,
+       "help": "RMSE"
+      },
+      {
+       "key": "mean_sea_level_pressure",
+       "label": "MSLP",
+       "unit": "hPa",
+       "better": "lower",
+       "digits": 2,
+       "help": "RMSE"
+      },
+      {
+       "key": "10m_wind_speed",
+       "label": "10 m wind",
+       "unit": "m/s",
+       "better": "lower",
+       "digits": 2,
+       "help": "RMSE"
+      },
+      {
+       "key": "wind_vector_850",
+       "label": "Wind 850",
+       "unit": "m/s",
+       "better": "lower",
+       "digits": 2,
+       "help": "RMSE"
+      },
+      {
+       "key": "specific_humidity_700",
+       "label": "Q700",
+       "unit": "g/kg",
+       "better": "lower",
+       "digits": 3,
+       "help": "RMSE"
+      }
+     ],
+     "sort": "wins",
+     "card": [
+      "wins",
+      "led"
+     ],
+     "rows": [
+      {
+       "id": "wn3-ens-mean",
+       "values": {
+        "wins": 162,
+        "led": 7,
+        "2m_temperature": 1.30096,
+        "temperature_850": 1.41084,
+        "geopotential_500": 271.815,
+        "mean_sea_level_pressure": 2.67173,
+        "10m_wind_speed": 1.52193,
+        "wind_vector_850": 4.05973,
+        "specific_humidity_700": 0.9798
+       }
+      },
+      {
+       "id": "fgn-ens-mean",
+       "values": {
+        "wins": 36,
+        "led": 0,
+        "2m_temperature": 1.36517,
+        "temperature_850": 1.47074,
+        "geopotential_500": 288.928,
+        "mean_sea_level_pressure": 2.80582,
+        "10m_wind_speed": 1.56392,
+        "wind_vector_850": 4.19579,
+        "specific_humidity_700": 1.0048
+       }
+      },
+      {
+       "id": "ifs-ens-mean",
+       "values": {
+        "wins": 5,
+        "led": 0,
+        "2m_temperature": 1.4141,
+        "temperature_850": 1.65583,
+        "geopotential_500": 329.281,
+        "mean_sea_level_pressure": 3.231,
+        "10m_wind_speed": 1.64647,
+        "wind_vector_850": 4.61791,
+        "specific_humidity_700": 1.08005
+       }
+      },
+      {
+       "id": "aifs-ens-mean",
+       "values": {
+        "wins": 1,
+        "led": 0,
+        "2m_temperature": 1.44548,
+        "temperature_850": 1.57197,
+        "geopotential_500": 316.801,
+        "mean_sea_level_pressure": 3.04376,
+        "10m_wind_speed": 1.59186,
+        "wind_vector_850": 4.44296,
+        "specific_humidity_700": 1.02724
+       }
+      },
+      {
+       "id": "gefs-mean",
+       "values": {
+        "wins": 0,
+        "led": 0,
+        "2m_temperature": 1.55889,
+        "temperature_850": 1.87091,
+        "geopotential_500": 385.985,
+        "mean_sea_level_pressure": 3.73377,
+        "10m_wind_speed": 1.96308,
+        "wind_vector_850": 4.96148,
+        "specific_humidity_700": 1.14953
+       }
+      },
+      {
+       "id": "aurora-v1p5-ens-mean",
+       "values": {
+        "wins": 6,
+        "led": 0,
+        "2m_temperature": 1.56372,
+        "temperature_850": 1.60091,
+        "geopotential_500": 329.482,
+        "mean_sea_level_pressure": 3.14781,
+        "10m_wind_speed": 1.66162,
+        "wind_vector_850": 4.51277,
+        "specific_humidity_700": 1.05553
+       }
+      },
+      {
+       "id": "graphcast-hres",
+       "values": {
+        "wins": 0,
+        "led": 0,
+        "2m_temperature": 1.64529,
+        "temperature_850": 1.84393,
+        "geopotential_500": 365.126,
+        "mean_sea_level_pressure": 3.57131,
+        "10m_wind_speed": 1.96962,
+        "wind_vector_850": 5.1374,
+        "specific_humidity_700": 1.17185
+       }
+      },
+      {
+       "id": "hres",
+       "values": {
+        "wins": 0,
+        "led": 0,
+        "2m_temperature": 1.67356,
+        "temperature_850": 1.93387,
+        "geopotential_500": 368.182,
+        "mean_sea_level_pressure": 3.68064,
+        "10m_wind_speed": 2.03555,
+        "wind_vector_850": 5.56716,
+        "specific_humidity_700": 1.36533
+       }
+      },
+      {
+       "id": "gfs",
+       "values": {
+        "wins": 0,
+        "led": 0,
+        "2m_temperature": 1.84328,
+        "temperature_850": 2.14389,
+        "geopotential_500": 434.113,
+        "mean_sea_level_pressure": 4.25986,
+        "10m_wind_speed": 2.31832,
+        "wind_vector_850": 6.03723,
+        "specific_humidity_700": 1.47776
+       }
+      },
+      {
+       "id": "atlas-crps-ens-mean",
+       "values": {
+        "wins": 0,
+        "led": 0,
+        "2m_temperature": 1.87367,
+        "temperature_850": 1.8649,
+        "geopotential_500": 361.907,
+        "mean_sea_level_pressure": 3.58089,
+        "10m_wind_speed": 1.86261,
+        "wind_vector_850": 4.95261,
+        "specific_humidity_700": 1.12517
+       }
+      }
+     ],
+     "note": "Last 30 daily 12 UTC runs, up to 2026-10-27. Variable columns: RMSE pooled over the ranked lead times; each model against its own analysis (WeatherNext against the IFS analysis).",
+     "leader": "wn3-ens-mean"
+    },
+    {
+     "id": "tropics",
+     "title": "Tropics",
+     "as_of": "2026-10-27",
+     "columns": [
+      {
+       "key": "wins",
+       "label": "Days won",
+       "unit": "",
+       "better": "higher",
+       "digits": 0,
+       "help": "Runs in which the model was #1, summed over the 7 variables (30 runs each)"
+      },
+      {
+       "key": "led",
+       "label": "Variables led",
+       "unit": "",
+       "better": "higher",
+       "digits": 0,
+       "help": "Variables where the model is the 30-day champion"
+      },
+      {
+       "key": "2m_temperature",
+       "label": "T2m",
+       "unit": "K",
+       "better": "lower",
+       "digits": 2,
+       "help": "RMSE"
+      },
+      {
+       "key": "temperature_850",
+       "label": "T850",
+       "unit": "K",
+       "better": "lower",
+       "digits": 2,
+       "help": "RMSE"
+      },
+      {
+       "key": "geopotential_500",
+       "label": "Z500",
+       "unit": "m²/s²",
+       "better": "lower",
+       "digits": 1,
+       "help": "RMSE"
+      },
+      {
+       "key": "mean_sea_level_pressure",
+       "label": "MSLP",
+       "unit": "hPa",
+       "better": "lower",
+       "digits": 2,
+       "help": "RMSE"
+      },
+      {
+       "key": "10m_wind_speed",
+       "label": "10 m wind",
+       "unit": "m/s",
+       "better": "lower",
+       "digits": 2,
+       "help": "RMSE"
+      },
+      {
+       "key": "wind_vector_850",
+       "label": "Wind 850",
+       "unit": "m/s",
+       "better": "lower",
+       "digits": 2,
+       "help": "RMSE"
+      },
+      {
+       "key": "specific_humidity_700",
+       "label": "Q700",
+       "unit": "g/kg",
+       "better": "lower",
+       "digits": 3,
+       "help": "RMSE"
+      }
+     ],
+     "sort": "wins",
+     "card": [
+      "wins",
+      "led"
+     ],
+     "rows": [
+      {
+       "id": "wn3-ens-mean",
+       "values": {
+        "wins": 177,
+        "led": 7,
+        "2m_temperature": 0.80294,
+        "temperature_850": 0.76595,
+        "geopotential_500": 45.6827,
+        "mean_sea_level_pressure": 0.645,
+        "10m_wind_speed": 1.06739,
+        "wind_vector_850": 2.39321,
+        "specific_humidity_700": 1.2242
+       }
+      },
+      {
+       "id": "aifs-ens-mean",
+       "values": {
+        "wins": 10,
+        "led": 0,
+        "2m_temperature": 0.83466,
+        "temperature_850": 0.79627,
+        "geopotential_500": 49.6397,
+        "mean_sea_level_pressure": 0.6861,
+        "10m_wind_speed": 1.09868,
+        "wind_vector_850": 2.56417,
+        "specific_humidity_700": 1.24902
+       }
+      },
+      {
+       "id": "fgn-ens-mean",
+       "values": {
+        "wins": 23,
+        "led": 0,
+        "2m_temperature": 0.84489,
+        "temperature_850": 0.78523,
+        "geopotential_500": 48.5465,
+        "mean_sea_level_pressure": 0.68371,
+        "10m_wind_speed": 1.08334,
+        "wind_vector_850": 2.44458,
+        "specific_humidity_700": 1.23924
+       }
+      },
+      {
+       "id": "ifs-ens-mean",
+       "values": {
+        "wins": 0,
+        "led": 0,
+        "2m_temperature": 0.912,
+        "temperature_850": 0.88203,
+        "geopotential_500": 62.8866,
+        "mean_sea_level_pressure": 0.89201,
+        "10m_wind_speed": 1.23442,
+        "wind_vector_850": 2.88487,
+        "specific_humidity_700": 1.40086
+       }
+      },
+      {
+       "id": "graphcast-hres",
+       "values": {
+        "wins": 0,
+        "led": 0,
+        "2m_temperature": 0.91948,
+        "temperature_850": 0.86379,
+        "geopotential_500": 58.8333,
+        "mean_sea_level_pressure": 0.78986,
+        "10m_wind_speed": 1.32429,
+        "wind_vector_850": 2.78264,
+        "specific_humidity_700": 1.35486
+       }
+      },
+      {
+       "id": "gefs-mean",
+       "values": {
+        "wins": 0,
+        "led": 0,
+        "2m_temperature": 0.95104,
+        "temperature_850": 0.9733,
+        "geopotential_500": 80.788,
+        "mean_sea_level_pressure": 1.00119,
+        "10m_wind_speed": 1.39075,
+        "wind_vector_850": 3.07175,
+        "specific_humidity_700": 1.31893
+       }
+      },
+      {
+       "id": "aurora-v1p5-ens-mean",
+       "values": {
+        "wins": 0,
+        "led": 0,
+        "2m_temperature": 1.02808,
+        "temperature_850": 0.84931,
+        "geopotential_500": 96.337,
+        "mean_sea_level_pressure": 0.79583,
+        "10m_wind_speed": 1.16351,
+        "wind_vector_850": 2.60906,
+        "specific_humidity_700": 1.32935
+       }
+      },
+      {
+       "id": "hres",
+       "values": {
+        "wins": 0,
+        "led": 0,
+        "2m_temperature": 1.12327,
+        "temperature_850": 1.03149,
+        "geopotential_500": 72.8064,
+        "mean_sea_level_pressure": 1.0179,
+        "10m_wind_speed": 1.50693,
+        "wind_vector_850": 3.32108,
+        "specific_humidity_700": 1.69582
+       }
+      },
+      {
+       "id": "atlas-crps-ens-mean",
+       "values": {
+        "wins": 0,
+        "led": 0,
+        "2m_temperature": 1.12841,
+        "temperature_850": 1.00446,
+        "geopotential_500": 96.9475,
+        "mean_sea_level_pressure": 1.01606,
+        "10m_wind_speed": 1.30812,
+        "wind_vector_850": 2.94749,
+        "specific_humidity_700": 1.41031
+       }
+      },
+      {
+       "id": "gfs",
+       "values": {
+        "wins": 0,
+        "led": 0,
+        "2m_temperature": 1.13588,
+        "temperature_850": 1.11501,
+        "geopotential_500": 82.6306,
+        "mean_sea_level_pressure": 1.12123,
+        "10m_wind_speed": 1.65547,
+        "wind_vector_850": 3.64898,
+        "specific_humidity_700": 1.66673
+       }
+      }
+     ],
+     "note": "Last 30 daily 12 UTC runs, up to 2026-10-27. Variable columns: RMSE pooled over the ranked lead times; each model against its own analysis (WeatherNext against the IFS analysis).",
+     "leader": "wn3-ens-mean"
+    },
+    {
+     "id": "southern-hemisphere",
+     "title": "S. Hemisphere",
+     "as_of": "2026-10-27",
+     "columns": [
+      {
+       "key": "wins",
+       "label": "Days won",
+       "unit": "",
+       "better": "higher",
+       "digits": 0,
+       "help": "Runs in which the model was #1, summed over the 7 variables (30 runs each)"
+      },
+      {
+       "key": "led",
+       "label": "Variables led",
+       "unit": "",
+       "better": "higher",
+       "digits": 0,
+       "help": "Variables where the model is the 30-day champion"
+      },
+      {
+       "key": "2m_temperature",
+       "label": "T2m",
+       "unit": "K",
+       "better": "lower",
+       "digits": 2,
+       "help": "RMSE"
+      },
+      {
+       "key": "temperature_850",
+       "label": "T850",
+       "unit": "K",
+       "better": "lower",
+       "digits": 2,
+       "help": "RMSE"
+      },
+      {
+       "key": "geopotential_500",
+       "label": "Z500",
+       "unit": "m²/s²",
+       "better": "lower",
+       "digits": 1,
+       "help": "RMSE"
+      },
+      {
+       "key": "mean_sea_level_pressure",
+       "label": "MSLP",
+       "unit": "hPa",
+       "better": "lower",
+       "digits": 2,
+       "help": "RMSE"
+      },
+      {
+       "key": "10m_wind_speed",
+       "label": "10 m wind",
+       "unit": "m/s",
+       "better": "lower",
+       "digits": 2,
+       "help": "RMSE"
+      },
+      {
+       "key": "wind_vector_850",
+       "label": "Wind 850",
+       "unit": "m/s",
+       "better": "lower",
+       "digits": 2,
+       "help": "RMSE"
+      },
+      {
+       "key": "specific_humidity_700",
+       "label": "Q700",
+       "unit": "g/kg",
+       "better": "lower",
+       "digits": 3,
+       "help": "RMSE"
+      }
+     ],
+     "sort": "wins",
+     "card": [
+      "wins",
+      "led"
+     ],
+     "rows": [
+      {
+       "id": "wn3-ens-mean",
+       "values": {
+        "wins": 122,
+        "led": 7,
+        "2m_temperature": 1.21106,
+        "temperature_850": 1.58439,
+        "geopotential_500": 292.487,
+        "mean_sea_level_pressure": 3.0565,
+        "10m_wind_speed": 1.77,
+        "wind_vector_850": 4.52896,
+        "specific_humidity_700": 0.81805
+       }
+      },
+      {
+       "id": "fgn-ens-mean",
+       "values": {
+        "wins": 56,
+        "led": 0,
+        "2m_temperature": 1.22438,
+        "temperature_850": 1.61079,
+        "geopotential_500": 304.903,
+        "mean_sea_level_pressure": 3.12763,
+        "10m_wind_speed": 1.80462,
+        "wind_vector_850": 4.6342,
+        "specific_humidity_700": 0.83729
+       }
+      },
+      {
+       "id": "ifs-ens-mean",
+       "values": {
+        "wins": 4,
+        "led": 0,
+        "2m_temperature": 1.31328,
+        "temperature_850": 1.77704,
+        "geopotential_500": 326.852,
+        "mean_sea_level_pressure": 3.39825,
+        "10m_wind_speed": 1.8951,
+        "wind_vector_850": 4.92162,
+        "specific_humidity_700": 0.8956
+       }
+      },
+      {
+       "id": "aifs-ens-mean",
+       "values": {
+        "wins": 16,
+        "led": 0,
+        "2m_temperature": 1.3364,
+        "temperature_850": 1.66184,
+        "geopotential_500": 321.5,
+        "mean_sea_level_pressure": 3.28207,
+        "10m_wind_speed": 1.8387,
+        "wind_vector_850": 4.76745,
+        "specific_humidity_700": 0.84226
+       }
+      },
+      {
+       "id": "aurora-v1p5-ens-mean",
+       "values": {
+        "wins": 10,
+        "led": 0,
+        "2m_temperature": 1.4206,
+        "temperature_850": 1.75064,
+        "geopotential_500": 334.771,
+        "mean_sea_level_pressure": 3.44178,
+        "10m_wind_speed": 1.91418,
+        "wind_vector_850": 4.92813,
+        "specific_humidity_700": 0.88172
+       }
+      },
+      {
+       "id": "graphcast-hres",
+       "values": {
+        "wins": 0,
+        "led": 0,
+        "2m_temperature": 1.51125,
+        "temperature_850": 1.98442,
+        "geopotential_500": 366.085,
+        "mean_sea_level_pressure": 3.86944,
+        "10m_wind_speed": 2.23026,
+        "wind_vector_850": 5.51577,
+        "specific_humidity_700": 0.96259
+       }
+      },
+      {
+       "id": "gefs-mean",
+       "values": {
+        "wins": 1,
+        "led": 0,
+        "2m_temperature": 1.56404,
+        "temperature_850": 2.01924,
+        "geopotential_500": 385.952,
+        "mean_sea_level_pressure": 3.97674,
+        "10m_wind_speed": 2.20371,
+        "wind_vector_850": 5.29662,
+        "specific_humidity_700": 0.92526
+       }
+      },
+      {
+       "id": "hres",
+       "values": {
+        "wins": 1,
+        "led": 0,
+        "2m_temperature": 1.56698,
+        "temperature_850": 2.11251,
+        "geopotential_500": 378.677,
+        "mean_sea_level_pressure": 4.01518,
+        "10m_wind_speed": 2.36089,
+        "wind_vector_850": 6.03827,
+        "specific_humidity_700": 1.11702
+       }
+      },
+      {
+       "id": "atlas-crps-ens-mean",
+       "values": {
+        "wins": 0,
+        "led": 0,
+        "2m_temperature": 1.58524,
+        "temperature_850": 1.9623,
+        "geopotential_500": 359.759,
+        "mean_sea_level_pressure": 3.79419,
+        "10m_wind_speed": 2.03675,
+        "wind_vector_850": 5.17826,
+        "specific_humidity_700": 0.92827
+       }
+      },
+      {
+       "id": "gfs",
+       "values": {
+        "wins": 0,
+        "led": 0,
+        "2m_temperature": 1.87465,
+        "temperature_850": 2.35697,
+        "geopotential_500": 434.913,
+        "mean_sea_level_pressure": 4.60088,
+        "10m_wind_speed": 2.60259,
+        "wind_vector_850": 6.45487,
+        "specific_humidity_700": 1.17701
+       }
+      }
+     ],
+     "note": "Last 30 daily 12 UTC runs, up to 2026-10-27. Variable columns: RMSE pooled over the ranked lead times; each model against its own analysis (WeatherNext against the IFS analysis).",
+     "leader": "wn3-ens-mean"
+    },
+    {
+     "id": "europe",
+     "title": "Europe",
+     "as_of": "2026-10-27",
+     "columns": [
+      {
+       "key": "wins",
+       "label": "Days won",
+       "unit": "",
+       "better": "higher",
+       "digits": 0,
+       "help": "Runs in which the model was #1, summed over the 7 variables (30 runs each)"
+      },
+      {
+       "key": "led",
+       "label": "Variables led",
+       "unit": "",
+       "better": "higher",
+       "digits": 0,
+       "help": "Variables where the model is the 30-day champion"
+      },
+      {
+       "key": "2m_temperature",
+       "label": "T2m",
+       "unit": "K",
+       "better": "lower",
+       "digits": 2,
+       "help": "RMSE"
+      },
+      {
+       "key": "temperature_850",
+       "label": "T850",
+       "unit": "K",
+       "better": "lower",
+       "digits": 2,
+       "help": "RMSE"
+      },
+      {
+       "key": "geopotential_500",
+       "label": "Z500",
+       "unit": "m²/s²",
+       "better": "lower",
+       "digits": 1,
+       "help": "RMSE"
+      },
+      {
+       "key": "mean_sea_level_pressure",
+       "label": "MSLP",
+       "unit": "hPa",
+       "better": "lower",
+       "digits": 2,
+       "help": "RMSE"
+      },
+      {
+       "key": "10m_wind_speed",
+       "label": "10 m wind",
+       "unit": "m/s",
+       "better": "lower",
+       "digits": 2,
+       "help": "RMSE"
+      },
+      {
+       "key": "wind_vector_850",
+       "label": "Wind 850",
+       "unit": "m/s",
+       "better": "lower",
+       "digits": 2,
+       "help": "RMSE"
+      },
+      {
+       "key": "specific_humidity_700",
+       "label": "Q700",
+       "unit": "g/kg",
+       "better": "lower",
+       "digits": 3,
+       "help": "RMSE"
+      }
+     ],
+     "sort": "wins",
+     "card": [
+      "wins",
+      "led"
+     ],
+     "rows": [
+      {
+       "id": "wn3-ens-mean",
+       "values": {
+        "wins": 124,
+        "led": 7,
+        "2m_temperature": 1.15626,
+        "temperature_850": 1.45403,
+        "geopotential_500": 347.749,
+        "mean_sea_level_pressure": 2.96125,
+        "10m_wind_speed": 1.56084,
+        "wind_vector_850": 4.45848,
+        "specific_humidity_700": 0.90565
+       }
+      },
+      {
+       "id": "fgn-ens-mean",
+       "values": {
+        "wins": 34,
+        "led": 0,
+        "2m_temperature": 1.23868,
+        "temperature_850": 1.53506,
+        "geopotential_500": 378.908,
+        "mean_sea_level_pressure": 3.29349,
+        "10m_wind_speed": 1.62442,
+        "wind_vector_850": 4.6934,
+        "specific_humidity_700": 0.92508
+       }
+      },
+      {
+       "id": "aifs-ens-mean",
+       "values": {
+        "wins": 7,
+        "led": 0,
+        "2m_temperature": 1.24685,
+        "temperature_850": 1.64753,
+        "geopotential_500": 413.368,
+        "mean_sea_level_pressure": 3.56334,
+        "10m_wind_speed": 1.66242,
+        "wind_vector_850": 4.93595,
+        "specific_humidity_700": 0.94467
+       }
+      },
+      {
+       "id": "ifs-ens-mean",
+       "values": {
+        "wins": 7,
+        "led": 0,
+        "2m_temperature": 1.2984,
+        "temperature_850": 1.69425,
+        "geopotential_500": 427.905,
+        "mean_sea_level_pressure": 3.7275,
+        "10m_wind_speed": 1.68908,
+        "wind_vector_850": 5.07931,
+        "specific_humidity_700": 0.97247
+       }
+      },
+      {
+       "id": "aurora-v1p5-ens-mean",
+       "values": {
+        "wins": 15,
+        "led": 0,
+        "2m_temperature": 1.37592,
+        "temperature_850": 1.69039,
+        "geopotential_500": 430.151,
+        "mean_sea_level_pressure": 3.67921,
+        "10m_wind_speed": 1.72069,
+        "wind_vector_850": 5.05582,
+        "specific_humidity_700": 0.967
+       }
+      },
+      {
+       "id": "gefs-mean",
+       "values": {
+        "wins": 4,
+        "led": 0,
+        "2m_temperature": 1.48252,
+        "temperature_850": 1.93662,
+        "geopotential_500": 491.275,
+        "mean_sea_level_pressure": 4.1239,
+        "10m_wind_speed": 2.04345,
+        "wind_vector_850": 5.38703,
+        "specific_humidity_700": 1.05803
+       }
+      },
+      {
+       "id": "graphcast-hres",
+       "values": {
+        "wins": 8,
+        "led": 0,
+        "2m_temperature": 1.50207,
+        "temperature_850": 1.89184,
+        "geopotential_500": 468.009,
+        "mean_sea_level_pressure": 3.94095,
+        "10m_wind_speed": 2.07377,
+        "wind_vector_850": 5.58465,
+        "specific_humidity_700": 1.10232
+       }
+      },
+      {
+       "id": "atlas-crps-ens-mean",
+       "values": {
+        "wins": 4,
+        "led": 0,
+        "2m_temperature": 1.51595,
+        "temperature_850": 1.79837,
+        "geopotential_500": 448.357,
+        "mean_sea_level_pressure": 3.98471,
+        "10m_wind_speed": 1.94547,
+        "wind_vector_850": 5.3607,
+        "specific_humidity_700": 1.02668
+       }
+      },
+      {
+       "id": "hres",
+       "values": {
+        "wins": 3,
+        "led": 0,
+        "2m_temperature": 1.51609,
+        "temperature_850": 1.97908,
+        "geopotential_500": 451.013,
+        "mean_sea_level_pressure": 3.94777,
+        "10m_wind_speed": 2.08287,
+        "wind_vector_850": 5.98942,
+        "specific_humidity_700": 1.23511
+       }
+      },
+      {
+       "id": "gfs",
+       "values": {
+        "wins": 4,
+        "led": 0,
+        "2m_temperature": 1.65564,
+        "temperature_850": 2.13283,
+        "geopotential_500": 535.758,
+        "mean_sea_level_pressure": 4.52914,
+        "10m_wind_speed": 2.40317,
+        "wind_vector_850": 6.36819,
+        "specific_humidity_700": 1.32291
+       }
+      }
+     ],
+     "note": "Last 30 daily 12 UTC runs, up to 2026-10-27. Variable columns: RMSE pooled over the ranked lead times; each model against its own analysis (WeatherNext against the IFS analysis).",
+     "leader": "wn3-ens-mean"
+    },
+    {
+     "id": "north-america",
+     "title": "North America",
+     "as_of": "2026-10-27",
+     "columns": [
+      {
+       "key": "wins",
+       "label": "Days won",
+       "unit": "",
+       "better": "higher",
+       "digits": 0,
+       "help": "Runs in which the model was #1, summed over the 7 variables (30 runs each)"
+      },
+      {
+       "key": "led",
+       "label": "Variables led",
+       "unit": "",
+       "better": "higher",
+       "digits": 0,
+       "help": "Variables where the model is the 30-day champion"
+      },
+      {
+       "key": "2m_temperature",
+       "label": "T2m",
+       "unit": "K",
+       "better": "lower",
+       "digits": 2,
+       "help": "RMSE"
+      },
+      {
+       "key": "temperature_850",
+       "label": "T850",
+       "unit": "K",
+       "better": "lower",
+       "digits": 2,
+       "help": "RMSE"
+      },
+      {
+       "key": "geopotential_500",
+       "label": "Z500",
+       "unit": "m²/s²",
+       "better": "lower",
+       "digits": 1,
+       "help": "RMSE"
+      },
+      {
+       "key": "mean_sea_level_pressure",
+       "label": "MSLP",
+       "unit": "hPa",
+       "better": "lower",
+       "digits": 2,
+       "help": "RMSE"
+      },
+      {
+       "key": "10m_wind_speed",
+       "label": "10 m wind",
+       "unit": "m/s",
+       "better": "lower",
+       "digits": 2,
+       "help": "RMSE"
+      },
+      {
+       "key": "wind_vector_850",
+       "label": "Wind 850",
+       "unit": "m/s",
+       "better": "lower",
+       "digits": 2,
+       "help": "RMSE"
+      },
+      {
+       "key": "specific_humidity_700",
+       "label": "Q700",
+       "unit": "g/kg",
+       "better": "lower",
+       "digits": 3,
+       "help": "RMSE"
+      }
+     ],
+     "sort": "wins",
+     "card": [
+      "wins",
+      "led"
+     ],
+     "rows": [
+      {
+       "id": "wn3-ens-mean",
+       "values": {
+        "wins": 92,
+        "led": 5,
+        "2m_temperature": 1.53587,
+        "temperature_850": 1.63256,
+        "geopotential_500": 240.628,
+        "mean_sea_level_pressure": 2.30709,
+        "10m_wind_speed": 1.18987,
+        "wind_vector_850": 4.02726,
+        "specific_humidity_700": 1.06729
+       }
+      },
+      {
+       "id": "aifs-ens-mean",
+       "values": {
+        "wins": 26,
+        "led": 1,
+        "2m_temperature": 1.59604,
+        "temperature_850": 1.87699,
+        "geopotential_500": 276.864,
+        "mean_sea_level_pressure": 2.65138,
+        "10m_wind_speed": 1.19627,
+        "wind_vector_850": 4.35083,
+        "specific_humidity_700": 1.12304
+       }
+      },
+      {
+       "id": "ifs-ens-mean",
+       "values": {
+        "wins": 24,
+        "led": 1,
+        "2m_temperature": 1.6626,
+        "temperature_850": 1.98472,
+        "geopotential_500": 279.25,
+        "mean_sea_level_pressure": 2.77371,
+        "10m_wind_speed": 1.21303,
+        "wind_vector_850": 4.57036,
+        "specific_humidity_700": 1.18499
+       }
+      },
+      {
+       "id": "fgn-ens-mean",
+       "values": {
+        "wins": 42,
+        "led": 0,
+        "2m_temperature": 1.67658,
+        "temperature_850": 1.72483,
+        "geopotential_500": 257.67,
+        "mean_sea_level_pressure": 2.3939,
+        "10m_wind_speed": 1.23172,
+        "wind_vector_850": 4.1052,
+        "specific_humidity_700": 1.09506
+       }
+      },
+      {
+       "id": "gefs-mean",
+       "values": {
+        "wins": 8,
+        "led": 0,
+        "2m_temperature": 1.69647,
+        "temperature_850": 2.25688,
+        "geopotential_500": 345.161,
+        "mean_sea_level_pressure": 3.35497,
+        "10m_wind_speed": 1.5087,
+        "wind_vector_850": 5.00472,
+        "specific_humidity_700": 1.27829
+       }
+      },
+      {
+       "id": "aurora-v1p5-ens-mean",
+       "values": {
+        "wins": 2,
+        "led": 0,
+        "2m_temperature": 1.77252,
+        "temperature_850": 1.91087,
+        "geopotential_500": 282.439,
+        "mean_sea_level_pressure": 2.74031,
+        "10m_wind_speed": 1.3428,
+        "wind_vector_850": 4.53136,
+        "specific_humidity_700": 1.16164
+       }
+      },
+      {
+       "id": "hres",
+       "values": {
+        "wins": 7,
+        "led": 0,
+        "2m_temperature": 1.93525,
+        "temperature_850": 2.28822,
+        "geopotential_500": 328.878,
+        "mean_sea_level_pressure": 3.25948,
+        "10m_wind_speed": 1.48496,
+        "wind_vector_850": 5.41312,
+        "specific_humidity_700": 1.49465
+       }
+      },
+      {
+       "id": "gfs",
+       "values": {
+        "wins": 1,
+        "led": 0,
+        "2m_temperature": 1.94511,
+        "temperature_850": 2.61644,
+        "geopotential_500": 401.639,
+        "mean_sea_level_pressure": 3.9418,
+        "10m_wind_speed": 1.70823,
+        "wind_vector_850": 6.0363,
+        "specific_humidity_700": 1.57982
+       }
+      },
+      {
+       "id": "graphcast-hres",
+       "values": {
+        "wins": 5,
+        "led": 0,
+        "2m_temperature": 2.00975,
+        "temperature_850": 2.27536,
+        "geopotential_500": 326.702,
+        "mean_sea_level_pressure": 3.04772,
+        "10m_wind_speed": 1.4683,
+        "wind_vector_850": 5.05532,
+        "specific_humidity_700": 1.30751
+       }
+      },
+      {
+       "id": "atlas-crps-ens-mean",
+       "values": {
+        "wins": 3,
+        "led": 0,
+        "2m_temperature": 2.1187,
+        "temperature_850": 2.1542,
+        "geopotential_500": 325.811,
+        "mean_sea_level_pressure": 3.19672,
+        "10m_wind_speed": 1.42134,
+        "wind_vector_850": 4.92519,
+        "specific_humidity_700": 1.23151
+       }
+      }
+     ],
+     "note": "Last 30 daily 12 UTC runs, up to 2026-10-27. Variable columns: RMSE pooled over the ranked lead times; each model against its own analysis (WeatherNext against the IFS analysis).",
+     "leader": "wn3-ens-mean"
+    }
+   ],
+   "error": null
+  },
+  "weatherbench2": {
+   "fetched": "2026-11-04",
+   "boards": [
+    {
+     "id": "det-2020",
+     "as_of": "2026-10-27",
+     "title": "Deterministic · 2020",
+     "columns": [
+      {
+       "key": "z500_d3",
+       "label": "Z500 day 3",
+       "unit": "m²/s²",
+       "better": "lower",
+       "digits": 1,
+       "help": ""
+      },
+      {
+       "key": "z500_d5",
+       "label": "Z500 day 5",
+       "unit": "m²/s²",
+       "better": "lower",
+       "digits": 1,
+       "help": ""
+      },
+      {
+       "key": "z500_d10",
+       "label": "Z500 day 10",
+       "unit": "m²/s²",
+       "better": "lower",
+       "digits": 1,
+       "help": ""
+      },
+      {
+       "key": "t850_d5",
+       "label": "T850 day 5",
+       "unit": "K",
+       "better": "lower",
+       "digits": 2,
+       "help": ""
+      },
+      {
+       "key": "q700_d5",
+       "label": "Q700 day 5",
+       "unit": "g/kg",
+       "better": "lower",
+       "digits": 3,
+       "help": ""
+      },
+      {
+       "key": "t2m_d5",
+       "label": "T2m day 5",
+       "unit": "K",
+       "better": "lower",
+       "digits": 2,
+       "help": ""
+      },
+      {
+       "key": "ws10_d5",
+       "label": "10 m wind day 5",
+       "unit": "m/s",
+       "better": "lower",
+       "digits": 2,
+       "help": ""
+      },
+      {
+       "key": "mslp_d5",
+       "label": "MSLP day 5",
+       "unit": "hPa",
+       "better": "lower",
+       "digits": 2,
+       "help": ""
+      },
+      {
+       "key": "skill",
+       "label": "vs IFS HRES",
+       "unit": "%",
+       "better": "lower",
+       "digits": 1,
+       "help": "Mean RMSE change against IFS HRES over the columns shown (negative = better); computed by ML4WX from the WeatherBench 2 numbers"
+      }
+     ],
+     "sort": "z500_d5",
+     "card": [
+      "z500_d5",
+      "skill"
+     ],
+     "rows": [
+      {
+       "id": "arches_weather_gen_mean",
+       "values": {}
+      },
+      {
+       "id": "arches_weather_mx4",
+       "values": {}
+      },
+      {
+       "id": "arches_weather",
+       "values": {}
+      },
+      {
+       "id": "astra_mean",
+       "values": {
+        "z500_d3": 122.47262,
+        "z500_d5": 263.79217,
+        "z500_d10": 609.54221,
+        "t850_d5": 1.48451,
+        "q700_d5": 1.01711,
+        "t2m_d5": 1.16197,
+        "ws10_d5": 1.51038,
+        "mslp_d5": 2.63783,
+        "skill": -18.78
+       }
+      },
+      {
+       "id": "baguan",
+       "values": {
+        "z500_d3": 127.78871,
+        "z500_d5": 273.49809,
+        "z500_d10": 625.75513,
+        "t850_d5": 1.5431,
+        "q700_d5": 1.05528,
+        "t2m_d5": 1.21782,
+        "ws10_d5": 1.71538,
+        "mslp_d5": 2.74114,
+        "skill": -14.67
+       }
+      },
+      {
+       "id": "climatology",
+       "values": {
+        "z500_d3": 820.05355,
+        "z500_d5": 820.87296,
+        "z500_d10": 821.76201,
+        "t850_d5": 3.44147,
+        "q700_d5": 1.59943,
+        "t2m_d5": 2.61002,
+        "ws10_d5": 2.43967,
+        "mslp_d5": 7.25796,
+        "skill": 126.33
+       }
+      },
+      {
+       "id": "ens_mean",
+       "values": {
+        "z500_d3": 133.41276,
+        "z500_d5": 278.59801,
+        "z500_d10": 623.11028,
+        "t850_d5": 1.62202,
+        "q700_d5": 1.11644,
+        "t2m_d5": 1.38469,
+        "ws10_d5": 1.61317,
+        "mslp_d5": 2.81081,
+        "skill": -11.88
+       }
+      },
+      {
+       "id": "era5_forecast",
+       "values": {
+        "z500_d3": 142.42119,
+        "z500_d5": 316.0837,
+        "z500_d10": 811.28121,
+        "t850_d5": 1.8789,
+        "q700_d5": 1.33294,
+        "t2m_d5": 1.51402,
+        "ws10_d5": 1.96405,
+        "mslp_d5": 3.21084,
+        "skill": 2.16
+       }
+      },
+      {
+       "id": "excarta",
+       "values": {
+        "z500_d3": 117.53379,
+        "z500_d5": 271.44539,
+        "z500_d10": 763.38046,
+        "t850_d5": 1.60008,
+        "t2m_d5": 1.27367,
+        "ws10_d5": 1.70322,
+        "skill": -11.83
+       }
+      },
+      {
+       "id": "fuxi",
+       "values": {
+        "z500_d3": 125.37677,
+        "z500_d5": 277.07109,
+        "z500_d10": 631.65487,
+        "t850_d5": 1.59605,
+        "t2m_d5": 1.27472,
+        "ws10_d5": 1.72551,
+        "mslp_d5": 2.77049,
+        "skill": -12.76
+       }
+      },
+      {
+       "id": "gencast_mean",
+       "values": {
+        "z500_d3": 123.48659,
+        "z500_d5": 262.36628,
+        "z500_d10": 606.52427,
+        "t850_d5": 1.48456,
+        "q700_d5": 1.02502,
+        "t2m_d5": 1.16727,
+        "ws10_d5": 1.51569,
+        "mslp_d5": 2.6407,
+        "skill": -18.62
+       }
+      },
+      {
+       "id": "gencast_operational_mean",
+       "values": {
+        "z500_d3": 129.99678,
+        "z500_d5": 273.38101,
+        "z500_d10": 617.29839,
+        "t850_d5": 1.54317,
+        "q700_d5": 1.04081,
+        "t2m_d5": 1.33663,
+        "ws10_d5": 1.55798,
+        "mslp_d5": 2.73531,
+        "skill": -14.81
+       }
+      },
+      {
+       "id": "graphcast_hres_init",
+       "values": {
+        "z500_d3": 125.89184,
+        "z500_d5": 277.7367,
+        "z500_d10": 755.09344,
+        "t850_d5": 1.59386,
+        "q700_d5": 1.06858,
+        "t2m_d5": 1.37712,
+        "ws10_d5": 1.73702,
+        "mslp_d5": 2.80717,
+        "skill": -10.47
+       }
+      },
+      {
+       "id": "graphcast",
+       "values": {
+        "z500_d3": 124.19222,
+        "z500_d5": 274.25089,
+        "z500_d10": 731.90301,
+        "t850_d5": 1.55915,
+        "q700_d5": 1.06093,
+        "t2m_d5": 1.25172,
+        "ws10_d5": 1.74536,
+        "mslp_d5": 2.76177,
+        "skill": -12.6
+       }
+      },
+      {
+       "id": "hres",
+       "values": {
+        "z500_d3": 137.21015,
+        "z500_d5": 305.47683,
+        "z500_d10": 802.74709,
+        "t850_d5": 1.83609,
+        "q700_d5": 1.31583,
+        "t2m_d5": 1.52091,
+        "ws10_d5": 1.92465,
+        "mslp_d5": 3.09497,
+        "skill": 0.0
+       }
+      },
+      {
+       "id": "keisler",
+       "values": {
+        "z500_d3": 174.68366,
+        "z500_d5": 345.97452,
+        "z500_d10": 787.01367,
+        "t850_d5": 1.87229,
+        "q700_d5": 1.1925
+       }
+      },
+      {
+       "id": "neuralgcm_ens_mean",
+       "values": {
+        "z500_d3": 126.19267,
+        "z500_d5": 266.20466,
+        "z500_d10": 606.84435,
+        "t850_d5": 1.53617,
+        "q700_d5": 1.02147
+       }
+      },
+      {
+       "id": "neuralgcm_hres",
+       "values": {
+        "z500_d3": 115.69607,
+        "z500_d5": 267.1336,
+        "z500_d10": 751.41302,
+        "t850_d5": 1.58735,
+        "q700_d5": 1.12934
+       }
+      },
+      {
+       "id": "pangu_hres_init",
+       "values": {
+        "z500_d3": 137.45595,
+        "z500_d5": 301.04479,
+        "z500_d10": 786.87143,
+        "t850_d5": 1.73488,
+        "q700_d5": 1.18979,
+        "t2m_d5": 1.44896,
+        "ws10_d5": 1.81826,
+        "mslp_d5": 3.02098,
+        "skill": -3.87
+       }
+      },
+      {
+       "id": "pangu",
+       "values": {
+        "z500_d3": 133.84863,
+        "z500_d5": 294.30815,
+        "z500_d10": 778.23081,
+        "t850_d5": 1.71327,
+        "q700_d5": 1.19092,
+        "t2m_d5": 1.39442,
+        "ws10_d5": 1.80287,
+        "mslp_d5": 2.97202,
+        "skill": -5.49
+       }
+      },
+      {
+       "id": "persistence",
+       "values": {
+        "z500_d3": 956.04212,
+        "z500_d5": 1049.57912,
+        "z500_d10": 1127.54284,
+        "t850_d5": 4.58681,
+        "q700_d5": 2.1516,
+        "t2m_d5": 3.21466,
+        "ws10_d5": 3.37386,
+        "mslp_d5": 9.50067,
+        "skill": 185.97
+       }
+      },
+      {
+       "id": "stormer_ens_mean",
+       "values": {}
+      },
+      {
+       "id": "weathermesh4",
+       "values": {
+        "z500_d3": 113.8266,
+        "z500_d5": 250.7011,
+        "z500_d10": 608.09767,
+        "t850_d5": 1.43469,
+        "q700_d5": 0.97284,
+        "t2m_d5": 1.12497,
+        "ws10_d5": 1.67153,
+        "mslp_d5": 2.52519,
+        "skill": -20.59
+       }
+      }
+     ],
+     "note": "Global RMSE, test year 2020, 1.5° grid, against ERA5. Lower is better.",
+     "leader": "neuralgcm_hres"
+    },
+    {
+     "id": "prob-2020",
+     "as_of": "2026-10-27",
+     "title": "Ensembles · 2020",
+     "columns": [
+      {
+       "key": "z500_d5",
+       "label": "Z500 day 5",
+       "unit": "m²/s²",
+       "better": "lower",
+       "digits": 1,
+       "help": ""
+      },
+      {
+       "key": "z500_d10",
+       "label": "Z500 day 10",
+       "unit": "m²/s²",
+       "better": "lower",
+       "digits": 1,
+       "help": ""
+      },
+      {
+       "key": "z500_d15",
+       "label": "Z500 day 15",
+       "unit": "m²/s²",
+       "better": "lower",
+       "digits": 1,
+       "help": ""
+      },
+      {
+       "key": "t850_d5",
+       "label": "T850 day 5",
+       "unit": "K",
+       "better": "lower",
+       "digits": 2,
+       "help": ""
+      },
+      {
+       "key": "q700_d5",
+       "label": "Q700 day 5",
+       "unit": "g/kg",
+       "better": "lower",
+       "digits": 3,
+       "help": ""
+      },
+      {
+       "key": "t2m_d5",
+       "label": "T2m day 5",
+       "unit": "K",
+       "better": "lower",
+       "digits": 2,
+       "help": ""
+      },
+      {
+       "key": "ws10_d5",
+       "label": "10 m wind day 5",
+       "unit": "m/s",
+       "better": "lower",
+       "digits": 2,
+       "help": ""
+      },
+      {
+       "key": "mslp_d5",
+       "label": "MSLP day 5",
+       "unit": "hPa",
+       "better": "lower",
+       "digits": 2,
+       "help": ""
+      },
+      {
+       "key": "skill",
+       "label": "vs IFS ENS",
+       "unit": "%",
+       "better": "lower",
+       "digits": 1,
+       "help": "Mean CRPS change against IFS ENS over the columns shown (negative = better); computed by ML4WX from the WeatherBench 2 numbers"
+      }
+     ],
+     "sort": "z500_d5",
+     "card": [
+      "z500_d5",
+      "skill"
+     ],
+     "rows": [
+      {
+       "id": "arches_weather_gen",
+       "values": {}
+      },
+      {
+       "id": "astra",
+       "values": {
+        "z500_d5": 107.85182,
+        "z500_d10": 253.45373,
+        "z500_d15": 316.31,
+        "t850_d5": 0.68371,
+        "q700_d5": 0.47714,
+        "t2m_d5": 0.47989,
+        "ws10_d5": 0.72037,
+        "mslp_d5": 1.08332,
+        "skill": -9.51
+       }
+      },
+      {
+       "id": "ens",
+       "values": {
+        "z500_d5": 116.29232,
+        "z500_d10": 263.83947,
+        "z500_d15": 325.37333,
+        "t850_d5": 0.77541,
+        "q700_d5": 0.54235,
+        "t2m_d5": 0.60999,
+        "ws10_d5": 0.78446,
+        "mslp_d5": 1.18719,
+        "skill": 0.0
+       }
+      },
+      {
+       "id": "gencast_operational",
+       "values": {
+        "z500_d5": 113.83018,
+        "z500_d10": 258.73109,
+        "z500_d15": 319.69923,
+        "t850_d5": 0.72248,
+        "q700_d5": 0.49123,
+        "t2m_d5": 0.59007,
+        "ws10_d5": 0.75763,
+        "mslp_d5": 1.15627,
+        "skill": -3.92
+       }
+      },
+      {
+       "id": "gencast",
+       "values": {
+        "z500_d5": 108.30681,
+        "z500_d10": 253.63638,
+        "z500_d15": 317.63893,
+        "t850_d5": 0.68738,
+        "q700_d5": 0.48006,
+        "t2m_d5": 0.48207,
+        "ws10_d5": 0.72529,
+        "mslp_d5": 1.09612,
+        "skill": -9.02
+       }
+      },
+      {
+       "id": "neuralgcm_ens",
+       "values": {
+        "z500_d5": 108.37835,
+        "z500_d10": 253.4627,
+        "z500_d15": 318.89667,
+        "t850_d5": 0.71495,
+        "q700_d5": 0.48456
+       }
+      },
+      {
+       "id": "probabilistic_climatology",
+       "values": {
+        "z500_d5": 369.95001,
+        "z500_d10": 370.26223,
+        "z500_d15": 370.0503,
+        "t850_d5": 1.69353,
+        "q700_d5": 0.81185,
+        "t2m_d5": 1.12287,
+        "ws10_d5": 1.25011,
+        "mslp_d5": 3.21869,
+        "skill": 94.36
+       }
+      }
+     ],
+     "note": "Global CRPS, test year 2020, 1.5° grid, against ERA5. Lower is better.",
+     "leader": "astra"
+    },
+    {
+     "id": "det-2022",
+     "as_of": "2026-03-22",
+     "title": "Deterministic · 2022",
+     "columns": [
+      {
+       "key": "z500_d3",
+       "label": "Z500 day 3",
+       "unit": "m²/s²",
+       "better": "lower",
+       "digits": 1,
+       "help": ""
+      },
+      {
+       "key": "z500_d5",
+       "label": "Z500 day 5",
+       "unit": "m²/s²",
+       "better": "lower",
+       "digits": 1,
+       "help": ""
+      },
+      {
+       "key": "z500_d10",
+       "label": "Z500 day 10",
+       "unit": "m²/s²",
+       "better": "lower",
+       "digits": 1,
+       "help": ""
+      },
+      {
+       "key": "t850_d5",
+       "label": "T850 day 5",
+       "unit": "K",
+       "better": "lower",
+       "digits": 2,
+       "help": ""
+      },
+      {
+       "key": "q700_d5",
+       "label": "Q700 day 5",
+       "unit": "g/kg",
+       "better": "lower",
+       "digits": 3,
+       "help": ""
+      },
+      {
+       "key": "t2m_d5",
+       "label": "T2m day 5",
+       "unit": "K",
+       "better": "lower",
+       "digits": 2,
+       "help": ""
+      },
+      {
+       "key": "ws10_d5",
+       "label": "10 m wind day 5",
+       "unit": "m/s",
+       "better": "lower",
+       "digits": 2,
+       "help": ""
+      },
+      {
+       "key": "mslp_d5",
+       "label": "MSLP day 5",
+       "unit": "hPa",
+       "better": "lower",
+       "digits": 2,
+       "help": ""
+      },
+      {
+       "key": "skill",
+       "label": "vs IFS HRES",
+       "unit": "%",
+       "better": "lower",
+       "digits": 1,
+       "help": "Mean RMSE change against IFS HRES over the columns shown (negative = better); computed by ML4WX from the WeatherBench 2 numbers"
+      }
+     ],
+     "sort": "z500_d5",
+     "card": [
+      "z500_d5",
+      "skill"
+     ],
+     "rows": [
+      {
+       "id": "arcana",
+       "values": {
+        "z500_d3": 112.35106,
+        "z500_d5": 250.32519,
+        "z500_d10": 599.37939,
+        "t850_d5": 1.42374,
+        "q700_d5": 0.96546,
+        "t2m_d5": 1.13083,
+        "ws10_d5": 1.69828,
+        "mslp_d5": 2.50761,
+        "skill": -21.24
+       }
+      },
+      {
+       "id": "aurora",
+       "values": {
+        "z500_d3": 121.10058,
+        "z500_d5": 264.18118,
+        "z500_d10": 671.29105,
+        "t850_d5": 1.53308,
+        "q700_d5": 1.02191,
+        "t2m_d5": 1.35051,
+        "ws10_d5": 1.71557,
+        "mslp_d5": 2.66886,
+        "skill": -14.95
+       }
+      },
+      {
+       "id": "climatology",
+       "values": {
+        "z500_d3": 809.5077,
+        "z500_d5": 810.29641,
+        "z500_d10": 813.04105,
+        "t850_d5": 3.41269,
+        "q700_d5": 1.59035,
+        "t2m_d5": 2.54572,
+        "ws10_d5": 2.4322,
+        "mslp_d5": 7.17726,
+        "skill": 122.04
+       }
+      },
+      {
+       "id": "ens_mean",
+       "values": {
+        "z500_d3": 134.36498,
+        "z500_d5": 280.36919,
+        "z500_d10": 624.52895,
+        "t850_d5": 1.62485,
+        "q700_d5": 1.07421,
+        "t2m_d5": 1.374,
+        "ws10_d5": 1.61309,
+        "mslp_d5": 2.82441,
+        "skill": -12.55
+       }
+      },
+      {
+       "id": "fgn_operational_mean",
+       "values": {
+        "z500_d3": 106.26385,
+        "z500_d5": 234.50235,
+        "z500_d10": 585.27872,
+        "t850_d5": 1.37814,
+        "q700_d5": 0.93039,
+        "t2m_d5": 1.22339,
+        "ws10_d5": 1.41284,
+        "mslp_d5": 2.35493,
+        "skill": -25.01
+       }
+      },
+      {
+       "id": "graphcast_hres_init",
+       "values": {
+        "z500_d3": 122.25954,
+        "z500_d5": 271.53253,
+        "z500_d10": 749.22298,
+        "t850_d5": 1.57501,
+        "q700_d5": 1.0321,
+        "t2m_d5": 1.36116,
+        "ws10_d5": 1.70704,
+        "mslp_d5": 2.73455,
+        "skill": -12.67
+       }
+      },
+      {
+       "id": "graphcast",
+       "values": {
+        "z500_d3": 122.41265,
+        "z500_d5": 270.46171,
+        "z500_d10": 732.71263,
+        "t850_d5": 1.5464,
+        "q700_d5": 1.03082,
+        "t2m_d5": 1.24341,
+        "ws10_d5": 1.72306,
+        "mslp_d5": 2.72983,
+        "skill": -14.04
+       }
+      },
+      {
+       "id": "hres",
+       "values": {
+        "z500_d3": 138.85586,
+        "z500_d5": 307.91813,
+        "z500_d10": 811.00753,
+        "t850_d5": 1.853,
+        "q700_d5": 1.30137,
+        "t2m_d5": 1.52452,
+        "ws10_d5": 1.921,
+        "mslp_d5": 3.12163,
+        "skill": 0.0
+       }
+      },
+      {
+       "id": "pangu_hres_init",
+       "values": {
+        "z500_d3": 138.98035,
+        "z500_d5": 305.0387,
+        "z500_d10": 801.10941,
+        "t850_d5": 1.746,
+        "q700_d5": 1.17946,
+        "t2m_d5": 1.45555,
+        "ws10_d5": 1.82232,
+        "mslp_d5": 3.05647,
+        "skill": -3.62
+       }
+      },
+      {
+       "id": "pangu",
+       "values": {
+        "z500_d3": 134.40477,
+        "z500_d5": 295.6893,
+        "z500_d10": 789.27658,
+        "t850_d5": 1.71288,
+        "q700_d5": 1.16843,
+        "t2m_d5": 1.40245,
+        "ws10_d5": 1.79483,
+        "mslp_d5": 2.96532,
+        "skill": -5.9
+       }
+      },
+      {
+       "id": "persistence",
+       "values": {
+        "z500_d3": 958.35566,
+        "z500_d5": 1049.3727,
+        "z500_d10": 1117.46509,
+        "t850_d5": 4.53303,
+        "q700_d5": 2.1158,
+        "t2m_d5": 3.1804,
+        "ws10_d5": 3.35484,
+        "mslp_d5": 9.4369,
+        "skill": 182.69
+       }
+      }
+     ],
+     "note": "Global RMSE, test year 2022, 1.5° grid, against ERA5. Lower is better.",
+     "leader": "arcana"
+    },
+    {
+     "id": "prob-2022",
+     "as_of": "2026-03-22",
+     "title": "Ensembles · 2022",
+     "columns": [
+      {
+       "key": "z500_d5",
+       "label": "Z500 day 5",
+       "unit": "m²/s²",
+       "better": "lower",
+       "digits": 1,
+       "help": ""
+      },
+      {
+       "key": "z500_d10",
+       "label": "Z500 day 10",
+       "unit": "m²/s²",
+       "better": "lower",
+       "digits": 1,
+       "help": ""
+      },
+      {
+       "key": "z500_d15",
+       "label": "Z500 day 15",
+       "unit": "m²/s²",
+       "better": "lower",
+       "digits": 1,
+       "help": ""
+      },
+      {
+       "key": "t850_d5",
+       "label": "T850 day 5",
+       "unit": "K",
+       "better": "lower",
+       "digits": 2,
+       "help": ""
+      },
+      {
+       "key": "q700_d5",
+       "label": "Q700 day 5",
+       "unit": "g/kg",
+       "better": "lower",
+       "digits": 3,
+       "help": ""
+      },
+      {
+       "key": "t2m_d5",
+       "label": "T2m day 5",
+       "unit": "K",
+       "better": "lower",
+       "digits": 2,
+       "help": ""
+      },
+      {
+       "key": "ws10_d5",
+       "label": "10 m wind day 5",
+       "unit": "m/s",
+       "better": "lower",
+       "digits": 2,
+       "help": ""
+      },
+      {
+       "key": "mslp_d5",
+       "label": "MSLP day 5",
+       "unit": "hPa",
+       "better": "lower",
+       "digits": 2,
+       "help": ""
+      },
+      {
+       "key": "skill",
+       "label": "vs IFS ENS",
+       "unit": "%",
+       "better": "lower",
+       "digits": 1,
+       "help": "Mean CRPS change against IFS ENS over the columns shown (negative = better); computed by ML4WX from the WeatherBench 2 numbers"
+      }
+     ],
+     "sort": "z500_d5",
+     "card": [
+      "z500_d5",
+      "skill"
+     ],
+     "rows": [
+      {
+       "id": "ens",
+       "values": {
+        "z500_d5": 115.47986,
+        "z500_d10": 262.50319,
+        "z500_d15": 323.63397,
+        "t850_d5": 0.77143,
+        "q700_d5": 0.51316,
+        "t2m_d5": 0.61171,
+        "ws10_d5": 0.78725,
+        "mslp_d5": 1.19307,
+        "skill": 0.0
+       }
+      },
+      {
+       "id": "fgn_operational",
+       "values": {
+        "z500_d5": 95.19928,
+        "z500_d10": 243.53046,
+        "z500_d15": 314.27509,
+        "t850_d5": 0.64119,
+        "q700_d5": 0.4379,
+        "t2m_d5": 0.53998,
+        "ws10_d5": 0.67536,
+        "mslp_d5": 0.97264,
+        "skill": -12.96
+       }
+      },
+      {
+       "id": "probabilistic_climatology",
+       "values": {
+        "z500_d5": 352.2303,
+        "z500_d10": 353.35819,
+        "z500_d15": 353.63452,
+        "t850_d5": 1.67188,
+        "q700_d5": 0.80753,
+        "t2m_d5": 1.10887,
+        "ws10_d5": 1.24464,
+        "mslp_d5": 3.16851,
+        "skill": 90.99
+       }
+      }
+     ],
+     "note": "Global CRPS, test year 2022, 1.5° grid, against ERA5. Lower is better.",
+     "leader": "fgn_operational"
+    }
+   ],
+   "error": null
+  },
+  "ai-weather-quest": {
+   "fetched": "2026-11-04",
+   "boards": [
+    {
+     "id": "window-1",
+     "title": "SON 2026 · Days 19–25",
+     "as_of": "2026-10-23",
+     "columns": [
+      {
+       "key": "avg",
+       "label": "RPSS, mean",
+       "unit": "",
+       "better": "higher",
+       "digits": 3,
+       "help": ""
+      },
+      {
+       "key": "tas",
+       "label": "2 m temperature",
+       "unit": "",
+       "better": "higher",
+       "digits": 3,
+       "help": ""
+      },
+      {
+       "key": "mslp",
+       "label": "Sea-level pressure",
+       "unit": "",
+       "better": "higher",
+       "digits": 3,
+       "help": ""
+      },
+      {
+       "key": "pr",
+       "label": "Precipitation",
+       "unit": "",
+       "better": "higher",
+       "digits": 3,
+       "help": ""
+      }
+     ],
+     "sort": "avg",
+     "card": [
+      "avg"
+     ],
+     "rows": [
+      {
+       "id": "Arcana/ArcanaSphericalBeta",
+       "name": "ArcanaSphericalBeta (Arcana)",
+       "values": {
+        "avg": 0.24,
+        "tas": 0.201,
+        "mslp": 0.388,
+        "pr": 0.132
+       }
+      },
+      {
+       "id": "Arcana/ArcanaSpherical",
+       "name": "ArcanaSpherical (Arcana)",
+       "values": {
+        "avg": 0.232,
+        "tas": 0.201,
+        "mslp": 0.376,
+        "pr": 0.119
+       }
+      },
+      {
+       "id": "Arcana/ArcanaSphericalv2",
+       "name": "ArcanaSphericalv2 (Arcana)",
+       "values": {
+        "avg": 0.221,
+        "tas": 0.175,
+        "mslp": 0.36,
+        "pr": 0.129
+       }
+      },
+      {
+       "id": "LP/LPM",
+       "name": "LPM (LP)",
+       "values": {
+        "avg": 0.24,
+        "tas": 0.236,
+        "mslp": 0.342,
+        "pr": 0.14
+       }
+      },
+      {
+       "id": "VD/SPQRnow",
+       "name": "SPQRnow (VD)",
+       "values": {
+        "avg": 0.239,
+        "tas": 0.23,
+        "mslp": 0.349,
+        "pr": 0.137
+       }
+      },
+      {
+       "id": "VD/SPQR",
+       "name": "SPQR (VD)",
+       "values": {
+        "avg": 0.235,
+        "tas": 0.229,
+        "mslp": 0.339,
+        "pr": 0.137
+       }
+      },
+      {
+       "id": "CMAandFDU/FengshunHybrid",
+       "name": "FengshunHybrid (CMAandFDU)",
+       "values": {
+        "avg": 0.222,
+        "tas": 0.21,
+        "mslp": 0.342,
+        "pr": 0.113
+       }
+      },
+      {
+       "id": "CMAandFDU/FengshunAdjust",
+       "name": "FengshunAdjust (CMAandFDU)",
+       "values": {
+        "avg": 0.206,
+        "tas": 0.187,
+        "mslp": 0.333,
+        "pr": 0.099
+       }
+      },
+      {
+       "id": "CMAandFDU/Fengshun",
+       "name": "Fengshun (CMAandFDU)",
+       "values": {
+        "avg": 0.175,
+        "tas": 0.162,
+        "mslp": 0.338,
+        "pr": 0.024
+       }
+      },
+      {
+       "id": "AIFS/AIFSthalassa",
+       "name": "AIFSthalassa (AIFS)",
+       "values": {
+        "avg": 0.217,
+        "tas": 0.198,
+        "mslp": 0.338,
+        "pr": 0.114
+       }
+      },
+      {
+       "id": "AIFS/AIFSgaia",
+       "name": "AIFSgaia (AIFS)",
+       "values": {
+        "avg": 0.204,
+        "tas": 0.192,
+        "mslp": 0.317,
+        "pr": 0.103
+       }
+      },
+      {
+       "id": "AIFS/AIFShera",
+       "name": "AIFShera (AIFS)",
+       "values": {
+        "avg": 0.202,
+        "tas": 0.184,
+        "mslp": 0.32,
+        "pr": 0.103
+       }
+      },
+      {
+       "id": "Fahamu/fp16FahamuAIFSv2",
+       "name": "fp16FahamuAIFSv2 (Fahamu)",
+       "values": {
+        "avg": 0.215,
+        "tas": 0.157,
+        "mslp": 0.365,
+        "pr": 0.124
+       }
+      },
+      {
+       "id": "CLINT/CLINTMF",
+       "name": "CLINTMF (CLINT)",
+       "values": {
+        "avg": 0.214,
+        "tas": 0.196,
+        "mslp": 0.33,
+        "pr": 0.116
+       }
+      },
+      {
+       "id": "MetaCarbon3060/PuyunEnsemble",
+       "name": "PuyunEnsemble (MetaCarbon3060)",
+       "values": {
+        "avg": 0.202,
+        "tas": 0.206,
+        "mslp": 0.321,
+        "pr": 0.079
+       }
+      },
+      {
+       "id": "MetaCarbon3060/PuyunLDM",
+       "name": "PuyunLDM (MetaCarbon3060)",
+       "values": {
+        "avg": 0.195,
+        "tas": 0.184,
+        "mslp": 0.319,
+        "pr": 0.083
+       }
+      },
+      {
+       "id": "MetaCarbon3060/PuyunWeather",
+       "name": "PuyunWeather (MetaCarbon3060)",
+       "values": {
+        "avg": 0.194,
+        "tas": 0.206,
+        "mslp": 0.306,
+        "pr": 0.07
+       }
+      },
+      {
+       "id": "Dynamical_S2SDatabase/ECMWF",
+       "name": "ECMWF (Dynamical_S2SDatabase)",
+       "values": {
+        "avg": 0.199,
+        "tas": 0.19,
+        "mslp": 0.301,
+        "pr": 0.106
+       }
+      },
+      {
+       "id": "NMCBridge/QuintCal",
+       "name": "QuintCal (NMCBridge)",
+       "values": {
+        "avg": 0.199,
+        "tas": 0.203,
+        "mslp": 0.3,
+        "pr": 0.093
+       }
+      },
+      {
+       "id": "NMCBridge/shrinkcal",
+       "name": "shrinkcal (NMCBridge)",
+       "values": {
+        "avg": 0.198,
+        "tas": 0.203,
+        "mslp": 0.298,
+        "pr": 0.093
+       }
+      },
+      {
+       "id": "NMCBridge/multical",
+       "name": "multical (NMCBridge)",
+       "values": {
+        "avg": 0.192,
+        "tas": 0.187,
+        "mslp": 0.296,
+        "pr": 0.094
+       }
+      },
+      {
+       "id": "SBUHybrid/HybridStillDeveloping",
+       "name": "HybridStillDeveloping (SBUHybrid)",
+       "values": {
+        "avg": 0.173,
+        "tas": 0.155,
+        "mslp": 0.263,
+        "pr": 0.101
+       }
+      },
+      {
+       "id": "SBUHybrid/HybridPPx",
+       "name": "HybridPPx (SBUHybrid)",
+       "values": {
+        "avg": 0.172,
+        "tas": 0.138,
+        "mslp": 0.282,
+        "pr": 0.095
+       }
+      },
+      {
+       "id": "SBUHybrid/HybridAC",
+       "name": "HybridAC (SBUHybrid)",
+       "values": {
+        "avg": 0.17,
+        "tas": 0.152,
+        "mslp": 0.266,
+        "pr": 0.092
+       }
+      },
+      {
+       "id": "JR/slowMamba",
+       "name": "slowMamba (JR)",
+       "values": {
+        "avg": 0.137,
+        "tas": 0.1,
+        "mslp": 0.312,
+        "pr": 0.0
+       }
+      },
+      {
+       "id": "CliMA/CliMAWeather2",
+       "name": "CliMAWeather2 (CliMA)",
+       "values": {
+        "avg": 0.126,
+        "tas": 0.146,
+        "mslp": 0.206,
+        "pr": 0.024
+       }
+      },
+      {
+       "id": "CliMA/CliMAWeather",
+       "name": "CliMAWeather (CliMA)",
+       "values": {
+        "avg": 0.115,
+        "tas": 0.144,
+        "mslp": 0.2,
+        "pr": 0.0
+       }
+      },
+      {
+       "id": "Dynamical_S2SDatabase/KMA",
+       "name": "KMA (Dynamical_S2SDatabase)",
+       "values": {
+        "avg": 0.117,
+        "tas": 0.022,
+        "mslp": 0.288,
+        "pr": 0.042
+       }
+      },
+      {
+       "id": "Dynamical_S2SDatabase/JMA",
+       "name": "JMA (Dynamical_S2SDatabase)",
+       "values": {
+        "avg": 0.111,
+        "tas": 0.046,
+        "mslp": 0.273,
+        "pr": 0.016
+       }
+      },
+      {
+       "id": "IgnisNeuralis42/GCast42",
+       "name": "GCast42 (IgnisNeuralis42)",
+       "values": {
+        "avg": 0.057,
+        "tas": 0.088,
+        "mslp": 0.046,
+        "pr": 0.037
+       }
+      },
+      {
+       "id": "HAPPY/AZN",
+       "name": "AZN (HAPPY)",
+       "values": {
+        "avg": -0.084,
+        "tas": -0.086,
+        "mslp": 0.113,
+        "pr": -0.279
+       }
+      },
+      {
+       "id": "NSFNCAR/subCESMulator",
+       "name": "subCESMulator (NSFNCAR)",
+       "values": {
+        "avg": -0.341,
+        "tas": -0.528,
+        "mslp": -0.189,
+        "pr": -0.306
+       }
+      },
+      {
+       "id": "TAICHI/TAICHIAI",
+       "name": "TAICHIAI (TAICHI)",
+       "values": {
+        "avg": -0.475,
+        "tas": -0.526,
+        "mslp": -0.308,
+        "pr": -0.593
+       }
+      },
+      {
+       "id": "XindaL/ISOX",
+       "name": "ISOX (XindaL)",
+       "values": {
+        "avg": -0.569,
+        "tas": -0.174,
+        "mslp": -0.289,
+        "pr": -1.244
+       }
+      }
+     ],
+     "note": "SON 2026, scores aggregated over the period up to week 6 (Thu 17-Sep-2026). RPSS of weekly-mean quintile forecasts; 0 = climatology, higher is better.",
+     "leader": "Arcana/ArcanaSphericalBeta"
+    },
+    {
+     "id": "window-2",
+     "title": "SON 2026 · Days 26–32",
+     "as_of": "2026-10-23",
+     "columns": [
+      {
+       "key": "avg",
+       "label": "RPSS, mean",
+       "unit": "",
+       "better": "higher",
+       "digits": 3,
+       "help": ""
+      },
+      {
+       "key": "tas",
+       "label": "2 m temperature",
+       "unit": "",
+       "better": "higher",
+       "digits": 3,
+       "help": ""
+      },
+      {
+       "key": "mslp",
+       "label": "Sea-level pressure",
+       "unit": "",
+       "better": "higher",
+       "digits": 3,
+       "help": ""
+      },
+      {
+       "key": "pr",
+       "label": "Precipitation",
+       "unit": "",
+       "better": "higher",
+       "digits": 3,
+       "help": ""
+      }
+     ],
+     "sort": "avg",
+     "card": [
+      "avg"
+     ],
+     "rows": [
+      {
+       "id": "VD/SPQRnow",
+       "name": "SPQRnow (VD)",
+       "values": {
+        "avg": 0.212,
+        "tas": 0.197,
+        "mslp": 0.326,
+        "pr": 0.112
+       }
+      },
+      {
+       "id": "VD/SPQR",
+       "name": "SPQR (VD)",
+       "values": {
+        "avg": 0.208,
+        "tas": 0.196,
+        "mslp": 0.315,
+        "pr": 0.112
+       }
+      },
+      {
+       "id": "Arcana/ArcanaSphericalBeta",
+       "name": "ArcanaSphericalBeta (Arcana)",
+       "values": {
+        "avg": 0.208,
+        "tas": 0.17,
+        "mslp": 0.349,
+        "pr": 0.107
+       }
+      },
+      {
+       "id": "Arcana/ArcanaSpherical",
+       "name": "ArcanaSpherical (Arcana)",
+       "values": {
+        "avg": 0.207,
+        "tas": 0.171,
+        "mslp": 0.351,
+        "pr": 0.1
+       }
+      },
+      {
+       "id": "Arcana/ArcanaSphericalv2",
+       "name": "ArcanaSphericalv2 (Arcana)",
+       "values": {
+        "avg": 0.204,
+        "tas": 0.158,
+        "mslp": 0.346,
+        "pr": 0.107
+       }
+      },
+      {
+       "id": "LP/LPM",
+       "name": "LPM (LP)",
+       "values": {
+        "avg": 0.207,
+        "tas": 0.2,
+        "mslp": 0.31,
+        "pr": 0.111
+       }
+      },
+      {
+       "id": "CMAandFDU/FengshunHybrid",
+       "name": "FengshunHybrid (CMAandFDU)",
+       "values": {
+        "avg": 0.186,
+        "tas": 0.168,
+        "mslp": 0.315,
+        "pr": 0.076
+       }
+      },
+      {
+       "id": "CMAandFDU/FengshunAdjust",
+       "name": "FengshunAdjust (CMAandFDU)",
+       "values": {
+        "avg": 0.175,
+        "tas": 0.152,
+        "mslp": 0.305,
+        "pr": 0.068
+       }
+      },
+      {
+       "id": "CMAandFDU/Fengshun",
+       "name": "Fengshun (CMAandFDU)",
+       "values": {
+        "avg": 0.136,
+        "tas": 0.122,
+        "mslp": 0.312,
+        "pr": -0.025
+       }
+      },
+      {
+       "id": "AIFS/AIFSthalassa",
+       "name": "AIFSthalassa (AIFS)",
+       "values": {
+        "avg": 0.185,
+        "tas": 0.166,
+        "mslp": 0.307,
+        "pr": 0.083
+       }
+      },
+      {
+       "id": "AIFS/AIFShera",
+       "name": "AIFShera (AIFS)",
+       "values": {
+        "avg": 0.18,
+        "tas": 0.156,
+        "mslp": 0.298,
+        "pr": 0.087
+       }
+      },
+      {
+       "id": "AIFS/AIFSgaia",
+       "name": "AIFSgaia (AIFS)",
+       "values": {
+        "avg": 0.174,
+        "tas": 0.161,
+        "mslp": 0.29,
+        "pr": 0.072
+       }
+      },
+      {
+       "id": "CLINT/CLINTMF",
+       "name": "CLINTMF (CLINT)",
+       "values": {
+        "avg": 0.185,
+        "tas": 0.162,
+        "mslp": 0.301,
+        "pr": 0.093
+       }
+      },
+      {
+       "id": "Fahamu/fp16FahamuAIFSv2",
+       "name": "fp16FahamuAIFSv2 (Fahamu)",
+       "values": {
+        "avg": 0.179,
+        "tas": 0.085,
+        "mslp": 0.356,
+        "pr": 0.095
+       }
+      },
+      {
+       "id": "MetaCarbon3060/PuyunEnsemble",
+       "name": "PuyunEnsemble (MetaCarbon3060)",
+       "values": {
+        "avg": 0.178,
+        "tas": 0.169,
+        "mslp": 0.31,
+        "pr": 0.055
+       }
+      },
+      {
+       "id": "MetaCarbon3060/PuyunWeather",
+       "name": "PuyunWeather (MetaCarbon3060)",
+       "values": {
+        "avg": 0.172,
+        "tas": 0.168,
+        "mslp": 0.294,
+        "pr": 0.054
+       }
+      },
+      {
+       "id": "MetaCarbon3060/PuyunLDM",
+       "name": "PuyunLDM (MetaCarbon3060)",
+       "values": {
+        "avg": 0.169,
+        "tas": 0.137,
+        "mslp": 0.309,
+        "pr": 0.06
+       }
+      },
+      {
+       "id": "Dynamical_S2SDatabase/ECMWF",
+       "name": "ECMWF (Dynamical_S2SDatabase)",
+       "values": {
+        "avg": 0.174,
+        "tas": 0.16,
+        "mslp": 0.281,
+        "pr": 0.08
+       }
+      },
+      {
+       "id": "NMCBridge/QuintCal",
+       "name": "QuintCal (NMCBridge)",
+       "values": {
+        "avg": 0.172,
+        "tas": 0.168,
+        "mslp": 0.276,
+        "pr": 0.07
+       }
+      },
+      {
+       "id": "NMCBridge/shrinkcal",
+       "name": "shrinkcal (NMCBridge)",
+       "values": {
+        "avg": 0.171,
+        "tas": 0.168,
+        "mslp": 0.275,
+        "pr": 0.07
+       }
+      },
+      {
+       "id": "NMCBridge/multical",
+       "name": "multical (NMCBridge)",
+       "values": {
+        "avg": 0.151,
+        "tas": 0.168,
+        "mslp": 0.207,
+        "pr": 0.077
+       }
+      },
+      {
+       "id": "SBUHybrid/HybridPPx",
+       "name": "HybridPPx (SBUHybrid)",
+       "values": {
+        "avg": 0.154,
+        "tas": 0.122,
+        "mslp": 0.266,
+        "pr": 0.073
+       }
+      },
+      {
+       "id": "SBUHybrid/HybridStillDeveloping",
+       "name": "HybridStillDeveloping (SBUHybrid)",
+       "values": {
+        "avg": 0.152,
+        "tas": 0.132,
+        "mslp": 0.245,
+        "pr": 0.079
+       }
+      },
+      {
+       "id": "SBUHybrid/HybridAC",
+       "name": "HybridAC (SBUHybrid)",
+       "values": {
+        "avg": 0.142,
+        "tas": 0.131,
+        "mslp": 0.23,
+        "pr": 0.066
+       }
+      },
+      {
+       "id": "JR/slowMamba",
+       "name": "slowMamba (JR)",
+       "values": {
+        "avg": 0.129,
+        "tas": 0.081,
+        "mslp": 0.305,
+        "pr": 0.0
+       }
+      },
+      {
+       "id": "CliMA/CliMAWeather2",
+       "name": "CliMAWeather2 (CliMA)",
+       "values": {
+        "avg": 0.117,
+        "tas": 0.124,
+        "mslp": 0.203,
+        "pr": 0.025
+       }
+      },
+      {
+       "id": "CliMA/CliMAWeather",
+       "name": "CliMAWeather (CliMA)",
+       "values": {
+        "avg": 0.107,
+        "tas": 0.122,
+        "mslp": 0.197,
+        "pr": 0.0
+       }
+      },
+      {
+       "id": "Dynamical_S2SDatabase/KMA",
+       "name": "KMA (Dynamical_S2SDatabase)",
+       "values": {
+        "avg": 0.102,
+        "tas": 0.011,
+        "mslp": 0.258,
+        "pr": 0.036
+       }
+      },
+      {
+       "id": "Dynamical_S2SDatabase/JMA",
+       "name": "JMA (Dynamical_S2SDatabase)",
+       "values": {
+        "avg": 0.074,
+        "tas": -0.02,
+        "mslp": 0.249,
+        "pr": -0.008
+       }
+      },
+      {
+       "id": "IgnisNeuralis42/GCast42",
+       "name": "GCast42 (IgnisNeuralis42)",
+       "values": {
+        "avg": 0.052,
+        "tas": 0.074,
+        "mslp": 0.05,
+        "pr": 0.032
+       }
+      },
+      {
+       "id": "HAPPY/AZN",
+       "name": "AZN (HAPPY)",
+       "values": {
+        "avg": -0.112,
+        "tas": -0.103,
+        "mslp": 0.084,
+        "pr": -0.316
+       }
+      },
+      {
+       "id": "NSFNCAR/subCESMulator",
+       "name": "subCESMulator (NSFNCAR)",
+       "values": {
+        "avg": -0.327,
+        "tas": -0.554,
+        "mslp": -0.134,
+        "pr": -0.294
+       }
+      },
+      {
+       "id": "TAICHI/TAICHIAI",
+       "name": "TAICHIAI (TAICHI)",
+       "values": {
+        "avg": -0.496,
+        "tas": -0.561,
+        "mslp": -0.336,
+        "pr": -0.591
+       }
+      },
+      {
+       "id": "XindaL/ISOX",
+       "name": "ISOX (XindaL)",
+       "values": {
+        "avg": -0.568,
+        "tas": -0.22,
+        "mslp": -0.251,
+        "pr": -1.232
+       }
+      }
+     ],
+     "note": "SON 2026, scores aggregated over the period up to week 6 (Thu 17-Sep-2026). RPSS of weekly-mean quintile forecasts; 0 = climatology, higher is better.",
+     "leader": "VD/SPQRnow"
+    }
+   ],
+   "error": null
+  },
+  "chaosbench": {
+   "fetched": "2026-11-04",
+   "boards": [
+    {
+     "id": "control",
+     "title": "Control forecasts · weeks 3–4",
+     "rows": [
+      {
+       "id": "climatology",
+       "values": {
+        "rmse-t-850": 3.38819,
+        "rmse-z-500": 81.02575,
+        "rmse-q-700": 0.00163,
+        "acc-t-850": 0.0,
+        "acc-z-500": 0.0,
+        "acc-q-700": 0.0
+       }
+      },
+      {
+       "id": "panguweather",
+       "values": {
+        "rmse-t-850": 4.71298,
+        "rmse-z-500": 111.62309,
+        "rmse-q-700": 0.00213,
+        "acc-t-850": 0.04664,
+        "acc-z-500": 0.0417,
+        "acc-q-700": 0.05304
+       }
+      },
+      {
+       "id": "graphcast",
+       "values": {
+        "rmse-t-850": 4.60032,
+        "rmse-z-500": 108.19907,
+        "rmse-q-700": 0.00207,
+        "acc-t-850": 0.05829,
+        "acc-z-500": 0.09375,
+        "acc-q-700": 0.04766
+       }
+      },
+      {
+       "id": "fourcastnetv2",
+       "values": {
+        "rmse-t-850": 4.49442,
+        "rmse-z-500": 108.3765,
+        "acc-t-850": 0.03737,
+        "acc-z-500": 0.05517,
+        "acc-q-700": 0.0
+       }
+      },
+      {
+       "id": "ecmwf",
+       "values": {
+        "rmse-t-850": 4.64733,
+        "rmse-z-500": 112.09637,
+        "rmse-q-700": 0.00224,
+        "acc-t-850": 0.06043,
+        "acc-z-500": 0.07358,
+        "acc-q-700": 0.06981
+       }
+      },
+      {
+       "id": "ncep",
+       "values": {
+        "rmse-t-850": 4.80754,
+        "rmse-z-500": 111.17942,
+        "rmse-q-700": 0.00227,
+        "acc-t-850": 0.0109,
+        "acc-z-500": 0.04086,
+        "acc-q-700": 0.04247
+       }
+      },
+      {
+       "id": "ukmo",
+       "values": {
+        "rmse-t-850": 4.91311,
+        "rmse-z-500": 113.12617,
+        "rmse-q-700": 0.00229,
+        "acc-t-850": 0.05061,
+        "acc-z-500": 0.05186,
+        "acc-q-700": 0.04568
+       }
+      },
+      {
+       "id": "cma",
+       "values": {
+        "rmse-t-850": 4.96997,
+        "rmse-z-500": 114.24815,
+        "rmse-q-700": 0.00245,
+        "acc-t-850": 0.04985,
+        "acc-z-500": 0.06173,
+        "acc-q-700": 0.04138
+       }
+      }
+     ],
+     "as_of": "2024-11-13",
+     "columns": [
+      {
+       "key": "rmse-z-500",
+       "label": "Z500 RMSE",
+       "unit": "",
+       "better": "lower",
+       "digits": 1,
+       "help": ""
+      },
+      {
+       "key": "rmse-t-850",
+       "label": "T850 RMSE",
+       "unit": "",
+       "better": "lower",
+       "digits": 2,
+       "help": ""
+      },
+      {
+       "key": "rmse-q-700",
+       "label": "Q700 RMSE",
+       "unit": "",
+       "better": "lower",
+       "digits": 5,
+       "help": ""
+      },
+      {
+       "key": "acc-z-500",
+       "label": "Z500 ACC",
+       "unit": "",
+       "better": "higher",
+       "digits": 3,
+       "help": ""
+      },
+      {
+       "key": "acc-t-850",
+       "label": "T850 ACC",
+       "unit": "",
+       "better": "higher",
+       "digits": 3,
+       "help": ""
+      },
+      {
+       "key": "acc-q-700",
+       "label": "Q700 ACC",
+       "unit": "",
+       "better": "higher",
+       "digits": 3,
+       "help": ""
+      }
+     ],
+     "sort": "rmse-z-500",
+     "card": [
+      "rmse-z-500",
+      "acc-z-500"
+     ],
+     "note": "Mean over lead days 15–28 of the 2022 test year, against ERA5. Units as in ChaosBench.",
+     "leader": "graphcast"
+    }
+   ],
+   "error": null
+  },
+  "climatebench": {
+   "fetched": "2026-11-04",
+   "boards": [
+    {
+     "id": "nrmse",
+     "title": "Total NRMSE · 2080–2100",
+     "rows": [
+      {
+       "id": "Neural Network",
+       "values": {
+        "tas": 0.327429,
+        "diurnal_temperature_range": 16.7783,
+        "pr": 3.1746,
+        "pr90": 4.33876,
+        "mean": 6.15477
+       }
+      },
+      {
+       "id": "Gaussian Process",
+       "values": {
+        "tas": 0.478225,
+        "diurnal_temperature_range": 22.5819,
+        "pr": 4.04818,
+        "pr90": 4.70167,
+        "mean": 7.95249
+       }
+      },
+      {
+       "id": "Random Forest",
+       "values": {
+        "tas": 0.399602,
+        "diurnal_temperature_range": 22.4571,
+        "pr": 5.03494,
+        "pr90": 5.39896,
+        "mean": 8.32265
+       }
+      }
+     ],
+     "as_of": "2024-01-17",
+     "columns": [
+      {
+       "key": "mean",
+       "label": "Mean",
+       "unit": "",
+       "better": "lower",
+       "digits": 3,
+       "help": ""
+      },
+      {
+       "key": "tas",
+       "label": "Temperature",
+       "unit": "",
+       "better": "lower",
+       "digits": 3,
+       "help": ""
+      },
+      {
+       "key": "diurnal_temperature_range",
+       "label": "Diurnal range",
+       "unit": "",
+       "better": "lower",
+       "digits": 3,
+       "help": ""
+      },
+      {
+       "key": "pr",
+       "label": "Precipitation",
+       "unit": "",
+       "better": "lower",
+       "digits": 3,
+       "help": ""
+      },
+      {
+       "key": "pr90",
+       "label": "Extreme precip. (pr90)",
+       "unit": "",
+       "better": "lower",
+       "digits": 3,
+       "help": ""
+      }
+     ],
+     "sort": "mean",
+     "card": [
+      "mean"
+     ],
+     "note": "Emulating NorESM2 under SSP2-4.5. Lower is better; ranked by the mean total NRMSE, as in the README.",
+     "leader": "Neural Network"
+    }
+   ],
+   "error": null
+  },
+  "weatherreal": {
+   "fetched": "2026-11-04",
+   "boards": [
+    {
+     "id": "weatherreal-isd",
+     "title": "WeatherReal-ISD",
+     "as_of": "2024-10-01",
+     "columns": [
+      {
+       "key": "2-m-temperature",
+       "label": "2-m temperature",
+       "unit": "K",
+       "better": "lower",
+       "digits": 3,
+       "help": "RMSE"
+      },
+      {
+       "key": "10-m-wind-speed",
+       "label": "10-m wind speed",
+       "unit": "m/s",
+       "better": "lower",
+       "digits": 3,
+       "help": "RMSE"
+      },
+      {
+       "key": "mean-sea-level-pressure",
+       "label": "mean sea-level pressure",
+       "unit": "hPa",
+       "better": "lower",
+       "digits": 3,
+       "help": "RMSE"
+      },
+      {
+       "key": "total-cloud-cover",
+       "label": "total cloud cover",
+       "unit": "okta",
+       "better": "lower",
+       "digits": 3,
+       "help": "RMSE"
+      },
+      {
+       "key": "6-hour-precipitation-1-mm",
+       "label": "6-hour precipitation > 1 mm (ETS)",
+       "unit": "",
+       "better": "higher",
+       "digits": 3,
+       "help": "ETS"
+      }
+     ],
+     "rows": [
+      {
+       "id": "Microsoft-Point",
+       "values": {
+        "2-m-temperature": 2.258,
+        "10-m-wind-speed": 1.753,
+        "total-cloud-cover": 2.723
+       }
+      },
+      {
+       "id": "Aurora-9km",
+       "values": {
+        "2-m-temperature": 2.417,
+        "10-m-wind-speed": 2.186,
+        "mean-sea-level-pressure": 2.939
+       }
+      },
+      {
+       "id": "ECMWF",
+       "values": {
+        "2-m-temperature": 2.766,
+        "10-m-wind-speed": 2.251,
+        "mean-sea-level-pressure": 3.098,
+        "total-cloud-cover": 3.319,
+        "6-hour-precipitation-1-mm": 0.248
+       }
+      },
+      {
+       "id": "GFS",
+       "values": {
+        "2-m-temperature": 3.168,
+        "10-m-wind-speed": 2.455,
+        "mean-sea-level-pressure": 3.48
+       }
+      }
+     ],
+     "sort": "2-m-temperature",
+     "card": [
+      "2-m-temperature"
+     ],
+     "note": "[Provisional] Global medium-range weather forecasting, against quality-controlled station observations; scores as published in the README (mean over all forecasts and lead times).",
+     "leader": "Microsoft-Point"
+    }
+   ],
+   "error": null
+  },
+  "weather-5k": {
+   "fetched": "2026-11-04",
+   "boards": [
+    {
+     "id": "lead-24",
+     "title": "24 h ahead",
+     "as_of": "2026-01-30",
+     "rows": [
+      {
+       "id": "Pyraformer",
+       "values": {
+        "temperature": 1.75,
+        "dewpoint": 1.83,
+        "wind_speed": 1.3,
+        "wind_direction": 61.8,
+        "slp": 1.9,
+        "overall": 13.7
+       }
+      },
+      {
+       "id": "iTransformer",
+       "values": {
+        "temperature": 1.82,
+        "dewpoint": 1.93,
+        "wind_speed": 1.32,
+        "wind_direction": 63.2,
+        "slp": 1.99,
+        "overall": 14.1
+       }
+      },
+      {
+       "id": "Informer",
+       "values": {
+        "temperature": 1.88,
+        "dewpoint": 1.94,
+        "wind_speed": 1.3,
+        "wind_direction": 60.7,
+        "slp": 2.01,
+        "overall": 13.6
+       }
+      },
+      {
+       "id": "Autoformer",
+       "values": {
+        "temperature": 1.93,
+        "dewpoint": 2.06,
+        "wind_speed": 1.42,
+        "wind_direction": 66.5,
+        "slp": 2.26,
+        "overall": 15.2
+       }
+      },
+      {
+       "id": "FEDformer",
+       "values": {
+        "temperature": 1.98,
+        "dewpoint": 2.02,
+        "wind_speed": 1.36,
+        "wind_direction": 66.0,
+        "slp": 2.13,
+        "overall": 14.7
+       }
+      },
+      {
+       "id": "Dlinear",
+       "values": {
+        "temperature": 2.71,
+        "dewpoint": 2.47,
+        "wind_speed": 1.44,
+        "wind_direction": 66.6,
+        "slp": 3.09,
+        "overall": 15.3
+       }
+      },
+      {
+       "id": "PatchTST",
+       "values": {
+        "temperature": 2.05,
+        "dewpoint": 2.16,
+        "wind_speed": 1.4,
+        "wind_direction": 66.2,
+        "slp": 2.19,
+        "overall": 14.8
+       }
+      },
+      {
+       "id": "Corrformer",
+       "values": {
+        "temperature": 1.99,
+        "dewpoint": 2.09,
+        "wind_speed": 1.38,
+        "wind_direction": 66.7,
+        "slp": 2.19,
+        "overall": 14.9
+       }
+      },
+      {
+       "id": "Mamba",
+       "values": {
+        "temperature": 1.98,
+        "dewpoint": 2.01,
+        "wind_speed": 1.37,
+        "wind_direction": 66.0,
+        "slp": 2.21,
+        "overall": 14.7
+       }
+      }
+     ],
+     "columns": [
+      {
+       "key": "temperature",
+       "label": "Temperature",
+       "unit": "K",
+       "better": "lower",
+       "digits": 2,
+       "help": "MAE"
+      },
+      {
+       "key": "dewpoint",
+       "label": "Dew point",
+       "unit": "K",
+       "better": "lower",
+       "digits": 2,
+       "help": "MAE"
+      },
+      {
+       "key": "wind_speed",
+       "label": "Wind speed",
+       "unit": "m/s",
+       "better": "lower",
+       "digits": 2,
+       "help": "MAE"
+      },
+      {
+       "key": "wind_direction",
+       "label": "Wind direction",
+       "unit": "°",
+       "better": "lower",
+       "digits": 2,
+       "help": "MAE"
+      },
+      {
+       "key": "slp",
+       "label": "Sea-level pressure",
+       "unit": "hPa",
+       "better": "lower",
+       "digits": 2,
+       "help": "MAE"
+      },
+      {
+       "key": "overall",
+       "label": "Overall",
+       "unit": "",
+       "better": "lower",
+       "digits": 2,
+       "help": "MAE"
+      }
+     ],
+     "sort": "overall",
+     "card": [
+      "overall"
+     ],
+     "note": "MAE at 24 h lead time from a 48 h input window, over 5,672 stations; as in the README.",
+     "leader": "Informer"
+    },
+    {
+     "id": "lead-72",
+     "title": "72 h ahead",
+     "as_of": "2026-01-30",
+     "rows": [
+      {
+       "id": "Pyraformer",
+       "values": {
+        "temperature": 2.47,
+        "dewpoint": 2.67,
+        "wind_speed": 1.52,
+        "wind_direction": 72.0,
+        "slp": 3.76,
+        "overall": 16.5
+       }
+      },
+      {
+       "id": "iTransformer",
+       "values": {
+        "temperature": 2.6,
+        "dewpoint": 2.84,
+        "wind_speed": 1.52,
+        "wind_direction": 73.2,
+        "slp": 4.14,
+        "overall": 16.9
+       }
+      },
+      {
+       "id": "Informer",
+       "values": {
+        "temperature": 2.75,
+        "dewpoint": 2.86,
+        "wind_speed": 1.53,
+        "wind_direction": 71.5,
+        "slp": 4.24,
+        "overall": 16.4
+       }
+      },
+      {
+       "id": "Autoformer",
+       "values": {
+        "temperature": 2.72,
+        "dewpoint": 2.97,
+        "wind_speed": 1.54,
+        "wind_direction": 75.4,
+        "slp": 4.25,
+        "overall": 17.8
+       }
+      },
+      {
+       "id": "FEDformer",
+       "values": {
+        "temperature": 2.87,
+        "dewpoint": 3.01,
+        "wind_speed": 1.59,
+        "wind_direction": 76.2,
+        "slp": 4.15,
+        "overall": 17.6
+       }
+      },
+      {
+       "id": "Dlinear",
+       "values": {
+        "temperature": 3.55,
+        "dewpoint": 3.48,
+        "wind_speed": 1.62,
+        "wind_direction": 75.0,
+        "slp": 4.64,
+        "overall": 17.7
+       }
+      },
+      {
+       "id": "PatchTST",
+       "values": {
+        "temperature": 2.82,
+        "dewpoint": 3.06,
+        "wind_speed": 1.6,
+        "wind_direction": 75.2,
+        "slp": 4.28,
+        "overall": 17.4
+       }
+      },
+      {
+       "id": "Corrformer",
+       "values": {
+        "temperature": 2.74,
+        "dewpoint": 2.99,
+        "wind_speed": 1.56,
+        "wind_direction": 75.6,
+        "slp": 4.27,
+        "overall": 17.8
+       }
+      },
+      {
+       "id": "Mamba",
+       "values": {
+        "temperature": 2.79,
+        "dewpoint": 2.9,
+        "wind_speed": 1.55,
+        "wind_direction": 75.1,
+        "slp": 4.29,
+        "overall": 17.3
+       }
+      }
+     ],
+     "columns": [
+      {
+       "key": "temperature",
+       "label": "Temperature",
+       "unit": "K",
+       "better": "lower",
+       "digits": 2,
+       "help": "MAE"
+      },
+      {
+       "key": "dewpoint",
+       "label": "Dew point",
+       "unit": "K",
+       "better": "lower",
+       "digits": 2,
+       "help": "MAE"
+      },
+      {
+       "key": "wind_speed",
+       "label": "Wind speed",
+       "unit": "m/s",
+       "better": "lower",
+       "digits": 2,
+       "help": "MAE"
+      },
+      {
+       "key": "wind_direction",
+       "label": "Wind direction",
+       "unit": "°",
+       "better": "lower",
+       "digits": 2,
+       "help": "MAE"
+      },
+      {
+       "key": "slp",
+       "label": "Sea-level pressure",
+       "unit": "hPa",
+       "better": "lower",
+       "digits": 2,
+       "help": "MAE"
+      },
+      {
+       "key": "overall",
+       "label": "Overall",
+       "unit": "",
+       "better": "lower",
+       "digits": 2,
+       "help": "MAE"
+      }
+     ],
+     "sort": "overall",
+     "card": [
+      "overall"
+     ],
+     "note": "MAE at 72 h lead time from a 48 h input window, over 5,672 stations; as in the README.",
+     "leader": "Informer"
+    },
+    {
+     "id": "lead-120",
+     "title": "120 h ahead",
+     "as_of": "2026-01-30",
+     "rows": [
+      {
+       "id": "Pyraformer",
+       "values": {
+        "temperature": 2.77,
+        "dewpoint": 3.0,
+        "wind_speed": 1.59,
+        "wind_direction": 75.1,
+        "slp": 4.43,
+        "overall": 17.4
+       }
+      },
+      {
+       "id": "iTransformer",
+       "values": {
+        "temperature": 2.97,
+        "dewpoint": 3.24,
+        "wind_speed": 1.59,
+        "wind_direction": 76.4,
+        "slp": 4.95,
+        "overall": 17.8
+       }
+      },
+      {
+       "id": "Informer",
+       "values": {
+        "temperature": 3.11,
+        "dewpoint": 3.25,
+        "wind_speed": 1.6,
+        "wind_direction": 75.7,
+        "slp": 5.15,
+        "overall": 18.3
+       }
+      },
+      {
+       "id": "Autoformer",
+       "values": {
+        "temperature": 3.21,
+        "dewpoint": 3.34,
+        "wind_speed": 1.58,
+        "wind_direction": 79.2,
+        "slp": 4.83,
+        "overall": 18.1
+       }
+      },
+      {
+       "id": "FEDformer",
+       "values": {
+        "temperature": 3.19,
+        "dewpoint": 3.36,
+        "wind_speed": 1.66,
+        "wind_direction": 79.0,
+        "slp": 4.81,
+        "overall": 18.4
+       }
+      },
+      {
+       "id": "Dlinear",
+       "values": {
+        "temperature": 3.9,
+        "dewpoint": 3.89,
+        "wind_speed": 1.67,
+        "wind_direction": 77.3,
+        "slp": 5.19,
+        "overall": 18.4
+       }
+      },
+      {
+       "id": "PatchTST",
+       "values": {
+        "temperature": 3.15,
+        "dewpoint": 3.43,
+        "wind_speed": 1.66,
+        "wind_direction": 77.8,
+        "slp": 5.09,
+        "overall": 18.2
+       }
+      },
+      {
+       "id": "Corrformer",
+       "values": {
+        "temperature": 3.06,
+        "dewpoint": 3.34,
+        "wind_speed": 1.61,
+        "wind_direction": 78.0,
+        "slp": 5.08,
+        "overall": 18.1
+       }
+      },
+      {
+       "id": "Mamba",
+       "values": {
+        "temperature": 3.03,
+        "dewpoint": 3.18,
+        "wind_speed": 1.58,
+        "wind_direction": 76.7,
+        "slp": 4.93,
+        "overall": 17.9
+       }
+      }
+     ],
+     "columns": [
+      {
+       "key": "temperature",
+       "label": "Temperature",
+       "unit": "K",
+       "better": "lower",
+       "digits": 2,
+       "help": "MAE"
+      },
+      {
+       "key": "dewpoint",
+       "label": "Dew point",
+       "unit": "K",
+       "better": "lower",
+       "digits": 2,
+       "help": "MAE"
+      },
+      {
+       "key": "wind_speed",
+       "label": "Wind speed",
+       "unit": "m/s",
+       "better": "lower",
+       "digits": 2,
+       "help": "MAE"
+      },
+      {
+       "key": "wind_direction",
+       "label": "Wind direction",
+       "unit": "°",
+       "better": "lower",
+       "digits": 2,
+       "help": "MAE"
+      },
+      {
+       "key": "slp",
+       "label": "Sea-level pressure",
+       "unit": "hPa",
+       "better": "lower",
+       "digits": 2,
+       "help": "MAE"
+      },
+      {
+       "key": "overall",
+       "label": "Overall",
+       "unit": "",
+       "better": "lower",
+       "digits": 2,
+       "help": "MAE"
+      }
+     ],
+     "sort": "overall",
+     "card": [
+      "overall"
+     ],
+     "note": "MAE at 120 h lead time from a 48 h input window, over 5,672 stations; as in the README.",
+     "leader": "Pyraformer"
+    },
+    {
+     "id": "lead-168",
+     "title": "168 h ahead",
+     "as_of": "2026-01-30",
+     "rows": [
+      {
+       "id": "Pyraformer",
+       "values": {
+        "temperature": 2.95,
+        "dewpoint": 3.2,
+        "wind_speed": 1.61,
+        "wind_direction": 76.4,
+        "slp": 4.77,
+        "overall": 17.8
+       }
+      },
+      {
+       "id": "iTransformer",
+       "values": {
+        "temperature": 3.18,
+        "dewpoint": 3.48,
+        "wind_speed": 1.64,
+        "wind_direction": 78.0,
+        "slp": 5.36,
+        "overall": 18.3
+       }
+      },
+      {
+       "id": "Informer",
+       "values": {
+        "temperature": 3.24,
+        "dewpoint": 3.43,
+        "wind_speed": 1.63,
+        "wind_direction": 76.2,
+        "slp": 5.26,
+        "overall": 18.1
+       }
+      },
+      {
+       "id": "Autoformer",
+       "values": {
+        "temperature": 3.43,
+        "dewpoint": 3.56,
+        "wind_speed": 1.64,
+        "wind_direction": 79.8,
+        "slp": 5.32,
+        "overall": 18.5
+       }
+      },
+      {
+       "id": "FEDformer",
+       "values": {
+        "temperature": 3.35,
+        "dewpoint": 3.54,
+        "wind_speed": 1.68,
+        "wind_direction": 79.7,
+        "slp": 5.01,
+        "overall": 18.7
+       }
+      },
+      {
+       "id": "Dlinear",
+       "values": {
+        "temperature": 4.11,
+        "dewpoint": 4.11,
+        "wind_speed": 1.69,
+        "wind_direction": 78.4,
+        "slp": 5.48,
+        "overall": 18.8
+       }
+      },
+      {
+       "id": "PatchTST",
+       "values": {
+        "temperature": 3.33,
+        "dewpoint": 3.63,
+        "wind_speed": 1.69,
+        "wind_direction": 79.0,
+        "slp": 5.51,
+        "overall": 18.6
+       }
+      },
+      {
+       "id": "Corrformer",
+       "values": {
+        "temperature": 3.09,
+        "dewpoint": 3.36,
+        "wind_speed": 1.63,
+        "wind_direction": 78.9,
+        "slp": 5.34,
+        "overall": 18.4
+       }
+      },
+      {
+       "id": "Mamba",
+       "values": {
+        "temperature": 3.16,
+        "dewpoint": 3.32,
+        "wind_speed": 1.59,
+        "wind_direction": 77.4,
+        "slp": 5.21,
+        "overall": 18.1
+       }
+      }
+     ],
+     "columns": [
+      {
+       "key": "temperature",
+       "label": "Temperature",
+       "unit": "K",
+       "better": "lower",
+       "digits": 2,
+       "help": "MAE"
+      },
+      {
+       "key": "dewpoint",
+       "label": "Dew point",
+       "unit": "K",
+       "better": "lower",
+       "digits": 2,
+       "help": "MAE"
+      },
+      {
+       "key": "wind_speed",
+       "label": "Wind speed",
+       "unit": "m/s",
+       "better": "lower",
+       "digits": 2,
+       "help": "MAE"
+      },
+      {
+       "key": "wind_direction",
+       "label": "Wind direction",
+       "unit": "°",
+       "better": "lower",
+       "digits": 2,
+       "help": "MAE"
+      },
+      {
+       "key": "slp",
+       "label": "Sea-level pressure",
+       "unit": "hPa",
+       "better": "lower",
+       "digits": 2,
+       "help": "MAE"
+      },
+      {
+       "key": "overall",
+       "label": "Overall",
+       "unit": "",
+       "better": "lower",
+       "digits": 2,
+       "help": "MAE"
+      }
+     ],
+     "sort": "overall",
+     "card": [
+      "overall"
+     ],
+     "note": "MAE at 168 h lead time from a 48 h input window, over 5,672 stations; as in the README.",
+     "leader": "Pyraformer"
+    }
+   ],
+   "error": null
+  },
+  "climatebench-2": {
+   "fetched": "2026-11-04",
+   "boards": [
+    {
+     "id": "test",
+     "title": "2015–2024 · SSP2-4.5",
+     "as_of": "2025-08-25",
+     "rows": [
+      {
+       "id": "ACCESS-CM2",
+       "values": {
+        "clt": 2.08128,
+        "pr": 0.48856,
+        "tas": 0.28007,
+        "tos": 0.25568,
+        "skill": -0.78
+       }
+      },
+      {
+       "id": "CESM2-WACCM",
+       "values": {
+        "clt": 3.58171,
+        "od550aer": 0.02801,
+        "pr": 0.26425,
+        "tas": 0.39155,
+        "tos": 0.53611,
+        "skill": 12.16
+       }
+      },
+      {
+       "id": "CanESM5",
+       "values": {
+        "clt": 1.78821,
+        "od550aer": 0.03927,
+        "pr": 0.24208,
+        "tas": 0.4287,
+        "tos": 0.20589,
+        "skill": -17.27
+       }
+      },
+      {
+       "id": "EC-Earth3-Veg",
+       "values": {
+        "pr": 0.26638,
+        "tas": 0.3068,
+        "tos": 0.99524
+       }
+      },
+      {
+       "id": "EC-Earth3-Veg-LR",
+       "values": {
+        "clt": 2.78272,
+        "pr": 0.1951,
+        "tas": 0.48786,
+        "tos": 0.63416,
+        "skill": 24.74
+       }
+      },
+      {
+       "id": "FGOALS-g3",
+       "values": {
+        "clt": 12.98376,
+        "pr": 0.10958,
+        "tas": 0.956,
+        "tos": 0.267,
+        "skill": 78.61
+       }
+      },
+      {
+       "id": "FIO-ESM-2-0",
+       "values": {
+        "clt": 2.25009,
+        "pr": 0.37578,
+        "tas": 0.30532,
+        "tos": 0.13496,
+        "skill": -20.13
+       }
+      },
+      {
+       "id": "GFDL-ESM4",
+       "values": {
+        "pr": 0.27777,
+        "tas": 0.60641,
+        "tos": 0.15567
+       }
+      },
+      {
+       "id": "IPSL-CM6A-LR",
+       "values": {
+        "clt": 5.64991,
+        "od550aer": 0.07192,
+        "pr": 0.35218,
+        "tas": 0.76603,
+        "tos": 0.18864,
+        "skill": 42.81
+       }
+      },
+      {
+       "id": "KACE-1-0-G",
+       "values": {
+        "clt": 1.62181,
+        "od550aer": 0.03773,
+        "pr": 0.38122,
+        "tas": 0.47495,
+        "skill": -3.13
+       }
+      },
+      {
+       "id": "MIROC6",
+       "values": {
+        "clt": 6.94328,
+        "pr": 0.49527,
+        "tas": 1.06677,
+        "tos": 0.16866,
+        "skill": 68.55
+       }
+      },
+      {
+       "id": "MPI-ESM1-2-LR",
+       "values": {
+        "clt": 4.35363,
+        "od550aer": 0.04861,
+        "pr": 0.17832,
+        "tas": 0.49388,
+        "tos": 0.63045,
+        "skill": 32.56
+       }
+      },
+      {
+       "id": "MRI-ESM2-0",
+       "values": {
+        "pr": 0.32767,
+        "tas": 0.37372
+       }
+      },
+      {
+       "id": "NorESM2-LM",
+       "values": {
+        "clt": 5.16684,
+        "od550aer": 0.01293,
+        "pr": 0.18878,
+        "tas": 0.43772,
+        "tos": 0.69505,
+        "skill": 21.82
+       }
+      }
+     ],
+     "columns": [
+      {
+       "key": "skill",
+       "label": "vs median model",
+       "unit": "%",
+       "better": "lower",
+       "digits": 1,
+       "help": "Mean RMSE change against the median model over the variables shown (negative = better); computed by ML4WX"
+      },
+      {
+       "key": "tas",
+       "label": "Air temperature",
+       "unit": "K",
+       "better": "lower",
+       "digits": 3,
+       "help": "RMSE of the zonal mean"
+      },
+      {
+       "key": "pr",
+       "label": "Precipitation",
+       "unit": "mm/day",
+       "better": "lower",
+       "digits": 3,
+       "help": "RMSE of the zonal mean"
+      },
+      {
+       "key": "tos",
+       "label": "Sea surface temp.",
+       "unit": "K",
+       "better": "lower",
+       "digits": 3,
+       "help": "RMSE of the zonal mean"
+      },
+      {
+       "key": "clt",
+       "label": "Cloud fraction",
+       "unit": "%",
+       "better": "lower",
+       "digits": 3,
+       "help": "RMSE of the zonal mean"
+      },
+      {
+       "key": "od550aer",
+       "label": "Aerosol optical depth",
+       "unit": "",
+       "better": "lower",
+       "digits": 3,
+       "help": "RMSE of the zonal mean"
+      }
+     ],
+     "sort": "skill",
+     "card": [
+      "skill",
+      "tas"
+     ],
+     "note": "Preview scorecard of the ClimateBench 2.0 app: CMIP6 models against observations, global RMSE of monthly zonal means.",
+     "leader": "FIO-ESM-2-0"
+    },
+    {
+     "id": "hist",
+     "title": "2005–2014",
+     "as_of": "2025-08-25",
+     "rows": [
+      {
+       "id": "ACCESS-CM2",
+       "values": {
+        "clt": 2.64573,
+        "pr": 0.4532,
+        "tas": 0.32821,
+        "tos": 0.26056,
+        "skill": 9.95
+       }
+      },
+      {
+       "id": "CESM2-WACCM",
+       "values": {
+        "clt": 3.76081,
+        "od550aer": 0.03241,
+        "pr": 0.24497,
+        "tas": 0.41701,
+        "tos": 0.63656,
+        "skill": 26.68
+       }
+      },
+      {
+       "id": "CanESM5",
+       "values": {
+        "clt": 1.50873,
+        "od550aer": 0.03334,
+        "pr": 0.20626,
+        "tas": 0.32784,
+        "tos": 0.20564,
+        "skill": -28.75
+       }
+      },
+      {
+       "id": "EC-Earth3-Veg",
+       "values": {
+        "pr": 0.24081,
+        "tas": 0.35465
+       }
+      },
+      {
+       "id": "EC-Earth3-Veg-LR",
+       "values": {
+        "clt": 2.5692,
+        "pr": 0.17043,
+        "tas": 0.44356,
+        "tos": 0.74858,
+        "skill": 40.71
+       }
+      },
+      {
+       "id": "FGOALS-g3",
+       "values": {
+        "clt": 13.05131,
+        "pr": 0.09493,
+        "tas": 0.91646,
+        "tos": 0.197,
+        "skill": 70.31
+       }
+      },
+      {
+       "id": "FIO-ESM-2-0",
+       "values": {
+        "clt": 1.95699,
+        "pr": 0.35682,
+        "tas": 0.30357,
+        "tos": 0.14257,
+        "skill": -18.13
+       }
+      },
+      {
+       "id": "GFDL-ESM4",
+       "values": {
+        "pr": 0.2592,
+        "tas": 0.56313,
+        "tos": 0.20731
+       }
+      },
+      {
+       "id": "IPSL-CM6A-LR",
+       "values": {
+        "clt": 5.26138,
+        "od550aer": 0.06632,
+        "pr": 0.33469,
+        "tas": 0.7264,
+        "tos": 0.16548,
+        "skill": 30.11
+       }
+      },
+      {
+       "id": "KACE-1-0-G",
+       "values": {
+        "clt": 1.8596,
+        "od550aer": 0.05986,
+        "pr": 0.34401,
+        "tas": 0.26603,
+        "skill": -7.52
+       }
+      },
+      {
+       "id": "MIROC6",
+       "values": {
+        "clt": 6.7423,
+        "pr": 0.48353,
+        "tas": 1.23945,
+        "tos": 0.32372,
+        "skill": 102.17
+       }
+      },
+      {
+       "id": "MPI-ESM1-2-LR",
+       "values": {
+        "clt": 4.0864,
+        "od550aer": 0.04978,
+        "pr": 0.16312,
+        "tas": 0.37342,
+        "tos": 0.44972,
+        "skill": 10.7
+       }
+      },
+      {
+       "id": "MRI-ESM2-0",
+       "values": {
+        "clt": 4.67887,
+        "pr": 0.29959,
+        "tas": 0.39134,
+        "tos": 0.11281,
+        "skill": -4.21
+       }
+      },
+      {
+       "id": "NorESM2-LM",
+       "values": {
+        "clt": 5.01996,
+        "pr": 0.16389,
+        "tas": 0.45891,
+        "tos": 0.75225,
+        "skill": 57.02
+       }
+      }
+     ],
+     "columns": [
+      {
+       "key": "skill",
+       "label": "vs median model",
+       "unit": "%",
+       "better": "lower",
+       "digits": 1,
+       "help": "Mean RMSE change against the median model over the variables shown (negative = better); computed by ML4WX"
+      },
+      {
+       "key": "tas",
+       "label": "Air temperature",
+       "unit": "K",
+       "better": "lower",
+       "digits": 3,
+       "help": "RMSE of the zonal mean"
+      },
+      {
+       "key": "pr",
+       "label": "Precipitation",
+       "unit": "mm/day",
+       "better": "lower",
+       "digits": 3,
+       "help": "RMSE of the zonal mean"
+      },
+      {
+       "key": "tos",
+       "label": "Sea surface temp.",
+       "unit": "K",
+       "better": "lower",
+       "digits": 3,
+       "help": "RMSE of the zonal mean"
+      },
+      {
+       "key": "clt",
+       "label": "Cloud fraction",
+       "unit": "%",
+       "better": "lower",
+       "digits": 3,
+       "help": "RMSE of the zonal mean"
+      },
+      {
+       "key": "od550aer",
+       "label": "Aerosol optical depth",
+       "unit": "",
+       "better": "lower",
+       "digits": 3,
+       "help": "RMSE of the zonal mean"
+      }
+     ],
+     "sort": "skill",
+     "card": [
+      "skill",
+      "tas"
+     ],
+     "note": "Preview scorecard of the ClimateBench 2.0 app: CMIP6 models against observations, global RMSE of monthly zonal means.",
+     "leader": "CanESM5"
+    }
+   ],
+   "error": null
+  }
+ },
+ "seen": {
+  "operational-weatherbench": {
+   "wn3-ens-mean": "initial",
+   "fgn-ens-mean": "initial",
+   "ifs-ens-mean": "initial",
+   "aifs-ens-mean": "initial",
+   "aurora-v1p5-ens-mean": "initial",
+   "gefs-mean": "initial",
+   "graphcast-hres": "initial",
+   "hres": "initial",
+   "atlas-crps-ens-mean": "initial",
+   "gfs": "initial"
+  },
+  "weatherbench2": {
+   "arches_weather_gen_mean": "initial",
+   "arches_weather_mx4": "initial",
+   "arches_weather": "initial",
+   "astra_mean": "initial",
+   "baguan": "initial",
+   "climatology": "initial",
+   "ens_mean": "initial",
+   "era5_forecast": "initial",
+   "excarta": "initial",
+   "fuxi": "initial",
+   "gencast_mean": "initial",
+   "gencast_operational_mean": "initial",
+   "graphcast_hres_init": "initial",
+   "graphcast": "initial",
+   "hres": "initial",
+   "keisler": "initial",
+   "neuralgcm_ens_mean": "initial",
+   "neuralgcm_hres": "initial",
+   "pangu_hres_init": "initial",
+   "pangu": "initial",
+   "persistence": "initial",
+   "stormer_ens_mean": "initial",
+   "weathermesh4": "initial",
+   "arches_weather_gen": "initial",
+   "astra": "initial",
+   "ens": "initial",
+   "gencast_operational": "initial",
+   "gencast": "initial",
+   "neuralgcm_ens": "initial",
+   "probabilistic_climatology": "initial",
+   "arcana": "initial",
+   "aurora": "initial",
+   "fgn_operational_mean": "initial",
+   "fgn_operational": "initial"
+  },
+  "ai-weather-quest": {
+   "Arcana/ArcanaSphericalBeta": "initial",
+   "Arcana/ArcanaSpherical": "initial",
+   "Arcana/ArcanaSphericalv2": "initial",
+   "LP/LPM": "initial",
+   "VD/SPQRnow": "initial",
+   "VD/SPQR": "initial",
+   "CMAandFDU/FengshunHybrid": "initial",
+   "CMAandFDU/FengshunAdjust": "initial",
+   "CMAandFDU/Fengshun": "initial",
+   "AIFS/AIFSthalassa": "initial",
+   "AIFS/AIFSgaia": "initial",
+   "AIFS/AIFShera": "initial",
+   "Fahamu/fp16FahamuAIFSv2": "initial",
+   "CLINT/CLINTMF": "initial",
+   "MetaCarbon3060/PuyunEnsemble": "initial",
+   "MetaCarbon3060/PuyunLDM": "initial",
+   "MetaCarbon3060/PuyunWeather": "initial",
+   "Dynamical_S2SDatabase/ECMWF": "initial",
+   "NMCBridge/QuintCal": "initial",
+   "NMCBridge/shrinkcal": "initial",
+   "NMCBridge/multical": "initial",
+   "SBUHybrid/HybridStillDeveloping": "initial",
+   "SBUHybrid/HybridPPx": "initial",
+   "SBUHybrid/HybridAC": "initial",
+   "JR/slowMamba": "initial",
+   "CliMA/CliMAWeather2": "initial",
+   "CliMA/CliMAWeather": "initial",
+   "Dynamical_S2SDatabase/KMA": "initial",
+   "Dynamical_S2SDatabase/JMA": "initial",
+   "IgnisNeuralis42/GCast42": "initial",
+   "HAPPY/AZN": "initial",
+   "NSFNCAR/subCESMulator": "initial",
+   "TAICHI/TAICHIAI": "initial",
+   "XindaL/ISOX": "initial"
+  },
+  "chaosbench": {
+   "climatology": "initial",
+   "panguweather": "initial",
+   "graphcast": "initial",
+   "fourcastnetv2": "initial",
+   "ecmwf": "initial",
+   "ncep": "initial",
+   "ukmo": "initial",
+   "cma": "initial"
+  },
+  "climatebench": {
+   "Neural Network": "initial",
+   "Gaussian Process": "initial",
+   "Random Forest": "initial"
+  },
+  "weatherreal": {
+   "Microsoft-Point": "initial",
+   "Aurora-9km": "initial",
+   "ECMWF": "initial",
+   "GFS": "initial"
+  },
+  "weather-5k": {
+   "Pyraformer": "initial",
+   "iTransformer": "initial",
+   "Informer": "initial",
+   "Autoformer": "initial",
+   "FEDformer": "initial",
+   "Dlinear": "initial",
+   "PatchTST": "initial",
+   "Corrformer": "initial",
+   "Mamba": "initial"
+  },
+  "climatebench-2": {
+   "ACCESS-CM2": "initial",
+   "CESM2-WACCM": "initial",
+   "CanESM5": "initial",
+   "EC-Earth3-Veg": "initial",
+   "EC-Earth3-Veg-LR": "initial",
+   "FGOALS-g3": "initial",
+   "FIO-ESM-2-0": "initial",
+   "GFDL-ESM4": "initial",
+   "IPSL-CM6A-LR": "initial",
+   "KACE-1-0-G": "initial",
+   "MIROC6": "initial",
+   "MPI-ESM1-2-LR": "initial",
+   "MRI-ESM2-0": "initial",
+   "NorESM2-LM": "initial"
+  }
+ },
+ "changes": []
+}

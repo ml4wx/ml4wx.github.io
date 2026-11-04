@@ -302,6 +302,7 @@ dependencies = [
 site = [
     { name = "pagefind", extra = ["extended"] },
     { name = "scikit-learn" },
+    { name = "scipy" },
 ]
 
 [package.dev-dependencies]
@@ -320,6 +321,7 @@ requires-dist = [
     { name = "pydantic", specifier = ">=2.7" },
     { name = "pyyaml", specifier = ">=6.0" },
     { name = "scikit-learn", marker = "extra == 'site'", specifier = ">=1.5" },
+    { name = "scipy", marker = "extra == 'site'", specifier = ">=1.11" },
 ]
 provides-extras = ["site"]
 

@@ -45,6 +45,17 @@
   add or remove a paper by hand. Models, datasets and tools keep the order of their own pages: a curated rank for the most
   used ones, then GitHub stars and the citations of their paper.</p>
 
+<h2 id="benchmarks">Benchmarks and leaderboards</h2>
+<p>The <a href="/benchmarks/">Benchmarks</a> page lists benchmarks by application. When a benchmark publishes its
+  scores in a form a program can read, the weekly update copies its leaderboard: Operational WeatherBench (its
+  rankings API), WeatherBench 2 (the result files in its public bucket), WeatherReal and WEATHER-5K (the tables in
+  their READMEs), the AI Weather Quest (the data behind its leaderboard page), ChaosBench (the data in its
+  interactive leaderboard), ClimateBench v1.0 (the table in its README) and ClimateBench 2.0 (the scorecard data
+  of its app). Each table says when its source last changed. We do not run or re-score models; the only numbers
+  we compute are the averages marked as such, for example the mean change against IFS HRES in WeatherBench 2. If a source cannot be read, the page keeps the
+  last copy and says so. New benchmark papers found by the weekly update are listed on the page and in the
+  digest as candidates; a maintainer adds them to the catalog after checking the links.</p>
+
 <h2>Data and reuse</h2>
 <ul>
   <li>One YAML file per paper in <a href="https://github.com/{{ site.repo }}/tree/main/papers">papers/</a>.</li>

@@ -1,0 +1,61 @@
+slug: weatherbench2
+name: WeatherBench 2
+provider: Google Research
+topics:
+- global-medium-range
+- probabilistic-ensembles
+- benchmarks-data-eval
+task: Global medium-range forecasts of research models on fixed test years, 1-10 days for single forecasts
+  and 1-15 days for ensembles.
+truth: ERA5 (operational models also against the IFS analysis).
+metrics: [RMSE, ACC, bias, SEEPS, CRPS, spread-skill ratio]
+url: https://sites.research.google/weatherbench/
+docs: https://weatherbench-x.readthedocs.io/en/latest/benchmark.html
+repo: google-research/weatherbench2
+paper:
+  arxiv: '2308.15560'
+dataset: weatherbench2
+status: active
+leaderboard:
+  source: wb2
+  url: https://sites.research.google/weatherbench/
+  license: Results files in the public weatherbench2 bucket (Google Research)
+  cards: [det-2020, prob-2020]
+  models:
+    graphcast: {name: GraphCast, model: graphcast}
+    graphcast_hres_init: {name: "GraphCast (operational, HRES init)", model: graphcast}
+    pangu: {name: Pangu-Weather, model: pangu-weather}
+    pangu_hres_init: {name: "Pangu-Weather (operational, HRES init)", model: pangu-weather}
+    fuxi: {name: FuXi, model: fuxi}
+    keisler: {name: Keisler (2022)}
+    excarta: {name: Excarta (HEAL-ViT)}
+    baguan: {name: Baguan}
+    weathermesh4: {name: WeatherMesh 4, contender: false,
+                   note: 'Not ranked: WeatherBench 2 notes that it was trained on future years'}
+    neuralgcm_hres: {name: NeuralGCM 0.7°, model: neuralgcm}
+    neuralgcm_ens: {name: NeuralGCM ENS, model: neuralgcm}
+    neuralgcm_ens_mean: {name: NeuralGCM ENS (ens. mean), model: neuralgcm, contender: false}
+    gencast: {name: GenCast, model: gencast}
+    gencast_mean: {name: GenCast (ens. mean), model: gencast, contender: false}
+    gencast_operational: {name: GenCast (operational), model: gencast}
+    gencast_operational_mean: {name: "GenCast (operational, ens. mean)", model: gencast, contender: false}
+    stormer_ens_mean: {name: Stormer (ens. mean), model: stormer, contender: false}
+    arches_weather: {name: ArchesWeather, model: archesweather}
+    arches_weather_mx4: {name: ArchesWeather-Mx4, model: archesweather}
+    arches_weather_gen: {name: ArchesWeatherGen, model: archesweathergen}
+    arches_weather_gen_mean: {name: ArchesWeatherGen (ens. mean), model: archesweathergen, contender: false}
+    astra: {name: Astra}
+    astra_mean: {name: Astra (ens. mean), contender: false}
+    arcana: {name: Arcana}
+    aurora: {name: Aurora, model: aurora}
+    fgn_operational: {name: "WeatherNext 2 (FGN, operational)", model: weathernext-2}
+    fgn_operational_mean: {name: "WeatherNext 2 (FGN, ens. mean)", model: weathernext-2, contender: false}
+    hres: {name: IFS HRES, kind: physics}
+    ens: {name: IFS ENS, kind: physics}
+    ens_mean: {name: IFS ENS (ens. mean), kind: physics, contender: false}
+    era5_forecast: {name: ERA5 forecasts, kind: physics}
+    climatology: {name: Climatology, kind: baseline}
+    probabilistic_climatology: {name: Probabilistic climatology, kind: baseline}
+    persistence: {name: Persistence, kind: baseline}
+rank: 2
+added: '2026-11-04'

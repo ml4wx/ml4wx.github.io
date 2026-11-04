@@ -1,0 +1,26 @@
+slug: weatherreal
+name: WeatherReal
+provider: Microsoft
+topics:
+- global-medium-range
+- local-forecasting
+- benchmarks-data-eval
+task: Scores weather models against quality-controlled near-surface station observations instead of
+  reanalysis, for global medium-range forecasts; short-range, nowcasting and S2S tasks are proposed.
+truth: Station observations (ISD, Synoptic and weather reports), quality-controlled.
+metrics: [RMSE, ETS]
+url: https://github.com/microsoft/WeatherReal-Benchmark
+repo: microsoft/WeatherReal-Benchmark
+paper:
+  arxiv: '2409.09371'
+status: active
+leaderboard:
+  source: weatherreal
+  url: https://github.com/microsoft/WeatherReal-Benchmark#leaderboards
+  license: MIT (WeatherReal-Benchmark repository)
+  models:
+    Aurora-9km: {name: Aurora 9 km, model: aurora}
+    ECMWF: {name: ECMWF, kind: physics}
+    GFS: {name: GFS, kind: physics}
+rank: 3
+added: '2026-11-04'

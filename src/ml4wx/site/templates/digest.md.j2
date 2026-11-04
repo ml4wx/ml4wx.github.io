@@ -24,10 +24,18 @@ highlights: {{ highlights | length }}
   {{ p.summary }}
 {%- endfor %}
 {% endfor %}
+{%- if leaderboard_changes %}
+## 🏁 Leaderboards
+
+Copied this week from the official sources ([Benchmarks]({{ site }}/benchmarks/)):
+{% for c in leaderboard_changes %}
+- {{ c.text }}
+{%- endfor %}
+{% endif %}
 {%- if datasets %}
 ## 🗂️ New datasets & benchmarks
 
-Candidates for the [Datasets]({{ site }}/datasets/) page:
+Candidates for the [Datasets]({{ site }}/datasets/) and [Benchmarks]({{ site }}/benchmarks/) pages:
 {% for p in datasets %}
 - **[{{ p.title }}]({{ p.links.paper or (site ~ "/papers/" ~ p.id ~ "/") }})**{% if p.links.code %} · [code]({{ p.links.code }}){% endif %}
   {{ p.summary }}

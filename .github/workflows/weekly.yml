@@ -81,6 +81,11 @@ jobs:
           S2_API_KEY: ${{ secrets.S2_API_KEY }}
         run: uv run ml4wx resources refresh
 
+      - name: Benchmark leaderboards, copied from their official sources (a failing source keeps its last copy)
+        env:
+          GITHUB_TOKEN: ${{ github.token }}  # dates of the source files, without the anonymous rate limit
+        run: uv run --extra site ml4wx benchmarks refresh
+
       - name: Crawl, classify, export, write digest
         id: run
         env:
