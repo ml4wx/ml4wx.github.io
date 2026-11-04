@@ -2,7 +2,7 @@
 // before you type, then matching papers, models, datasets and tools. Enter without a pick searches
 // all papers on Explore, as before. Data: /data/quick.json, most important of each kind first.
 
-const KIND = { paper: "Paper", model: "Model", dataset: "Dataset", tool: "Tool", benchmark: "Benchmark" };
+const KIND = { paper: "Paper", model: "Model", dataset: "Dataset", tool: "Tool", benchmark: "Benchmark", event: "Event" };
 const POPULAR = 8, MAX = 7;
 
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);

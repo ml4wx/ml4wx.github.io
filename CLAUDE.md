@@ -29,6 +29,10 @@ static site (`src/ml4wx/site/`), GitHub Actions (`.github/workflows/`).
   (`ml4wx benchmarks refresh`, needs `--extra site` for scipy): never edit it by hand. We only copy
   leaderboards from their official sources; a source's model ids map to names and catalog models in the
   benchmark's YAML (`leaderboard.models`; `contender: false` = shown but never the leader).
+- Events (`/events/`): one YAML per event in `events/<slug>.yaml` (schema in `src/ml4wx/events.py`): an edition
+  with `start` and deadlines (copied from the official page), a big ML conference read from ccf-deadlines (`ccf`),
+  or a series to watch (`usual`). `events/_status.json` is generated weekly (`ml4wx events refresh`). Leaderboards
+  and events are fetched at most once a week (both refreshes skip a rerun within 6 days unless `--force`).
 - LLM calls go through the Claude Code CLI (`claude -p`, see `src/ml4wx/llm.py`) because the
   project runs on a Claude subscription token (`CLAUDE_CODE_OAUTH_TOKEN`), not an API key. Keep
   calls batched; every call counts against the subscription limits.

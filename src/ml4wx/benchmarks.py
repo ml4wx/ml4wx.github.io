@@ -32,6 +32,7 @@ log = logging.getLogger(__name__)
 
 LEADERBOARDS_FILE = "_leaderboards.json"
 NEW_DAYS = 28  # a model is "new" on a leaderboard this many days after it first appears
+MIN_DAYS_BETWEEN_CHECKS = 6  # leaderboards are copied once a week (weekly workflow); a rerun the same week skips
 MAX_CHANGES = 40
 
 
@@ -119,9 +120,15 @@ class Catalog:
                            if m.model and m.model not in model_slugs]  # fmt: skip
         return errors
 
-    def refresh(self, today: dt.date | None = None, only: str | None = None, client: Client | None = None) -> list[str]:
-        """Fetch every leaderboard, keep the last good one when a source fails. Returns this run's changes."""
+    def refresh(self, today: dt.date | None = None, only: str | None = None, client: Client | None = None,
+                force: bool = False) -> list[str]:  # fmt: skip
+        """Fetch every leaderboard, at most once a week; keep the last good one when a source fails.
+        Returns this run's changes. `only` (one benchmark, for debugging) always fetches."""
         today = today or dt.date.today()
+        last = self.snapshot.get("checked")
+        if not (force or only) and last and (today - dt.date.fromisoformat(last)).days < MIN_DAYS_BETWEEN_CHECKS:
+            log.info("benchmarks: already copied on %s; once a week is enough (use force to copy again)", last)
+            return []
         client = client or Client(min_interval=0.5, max_retries=3)
         old = self.snapshot
         boards_by = dict(old.get("benchmarks", {}))
@@ -146,7 +153,8 @@ class Catalog:
             boards_by[b.slug] = {"fetched": today.isoformat(), "boards": boards, "error": None}
             log.info("%s: %d boards", b.slug, len(boards))
         log_ = (changes + old.get("changes", []))[:MAX_CHANGES]
-        out = {"benchmarks": boards_by, "seen": seen, "changes": log_}
+        out = {"checked": today.isoformat() if not only else old.get("checked"), "benchmarks": boards_by, "seen": seen,
+               "changes": log_}  # fmt: skip
         (self.root / LEADERBOARDS_FILE).write_text(json.dumps(out, indent=1, ensure_ascii=False) + "\n")
         self.snapshot = out
         return [c["text"] for c in changes]

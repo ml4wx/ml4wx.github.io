@@ -31,8 +31,8 @@
         <a href="/datasets/" {% if nav == "datasets" %}aria-current="page"{% endif %}>Datasets</a>
         <a href="/models/" {% if nav == "models" %}aria-current="page"{% endif %}>Models</a>
         <a href="/benchmarks/" {% if nav == "benchmarks" %}aria-current="page"{% endif %}>Benchmarks</a>
+        <a href="/events/" {% if nav == "events" %}aria-current="page"{% endif %}>Events</a>
         <a href="/tools/" {% if nav == "tools" %}aria-current="page"{% endif %}>Tools</a>
-        <a href="/digests/" {% if nav == "digests" %}aria-current="page"{% endif %}>Digests</a>
       </nav>
       {% if nav != "explore" %}
       <form class="top-search" action="/explore/" role="search" data-quick>
@@ -53,6 +53,7 @@
       <span>ML4WX · machine learning for weather &amp; climate</span>
       <span>
         <a href="/about/">About</a> ·
+        <a href="/digests/">Weekly digests</a> ·
         <a href="https://github.com/{{ site.repo }}">GitHub</a> ·
         <a href="/orgs/">Labs</a> ·
         <a href="/models/compare/">Compare models</a> ·
