@@ -1,0 +1,58 @@
+id: doi-10.1029-2026jh001372
+title: A Super‐Resolution Model for Enhancing the Intensity and Structure of Tropical Cyclone Predictions
+authors:
+- Zhiyu Zhao
+- Yanlong Ao
+- Wei Zhang
+- Lili Lei
+- Zhe‐Min Tan
+- Qifeng Qian
+date: '2026-11-04'
+year: 2026
+venue: Journal of Geophysical Research Machine Learning and Computation
+venue_type: journal
+ids:
+  doi: 10.1029/2026jh001372
+  openalex: W7225251872
+links:
+  paper: https://doi.org/10.1029/2026jh001372
+  pdf: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2026JH001372
+orgs:
+- cma
+topic: downscaling
+topics:
+- extremes-hazards
+type: model
+method:
+- transformer
+timescale:
+- medium
+spatial:
+- regional
+data:
+- nwp-analysis
+- km-scale-sim
+status: research
+summary: HybSR-TC uses a Swin Transformer to super-resolve Pangu-Weather forecasts to 2 km, improving
+  tropical cyclone intensity and structure up to about 10 days lead.
+abstract: Abstract Accurate predictions of intensity and structure of tropical cyclones (TCs) are crucial
+  for disaster warning, prevention and mitigation. Traditional dynamical models with coarse horizontal
+  resolutions suffer from systematic underprediction of TC intensity, whereas those with fine horizontal
+  resolutions require intensive computations. Deep learning (DL)‐based models are computationally efficient
+  yet substantially underpredict the TC intensity. To enhance the prediction of DL‐based weather models
+  for TC intensities and structures, a hybrid framework (HybSR‐TC) is proposed here. By integrating a
+  Swin Transformer backbone with multi‐variable processing and meta‐upsampling techniques, HybSR‐TC is
+  trained based on low‐resolution (0.25°) forecasts of Pangu‐Weather and high‐resolution (2 km) weather
+  research and forecasting forecasts with accurate TC tracks and well simulated intensities and structures.
+  For TC predictions, HybSR‐TC maps the 6‐hr Pangu‐Weather forecasts of surface pressure and wind fields
+  at 0.25° resolution to 2‐km resolution fields without the requirement for massive computational costs.
+  HybSR‐TC can better capture the rapid intensification and temporal evolution of TCs than Pangu‐Weather
+  and bilinear interpolation. HybSR‐TC produces significantly smaller errors of TC intensity and structure
+  than Pangu‐Weather and bilinear interpolation, until approximately 10‐day lead times. Thus, the ability
+  of HybSR‐TC to enhance the forecasts of TC intensity and structure based on the low‐resolution forecasts
+  from AI models has been demonstrated.
+significance: 3
+score: 22
+highlight: false
+added: '2026-11-09'
+source: weekly

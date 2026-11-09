@@ -1,0 +1,53 @@
+id: arxiv-2611.07094
+title: A Deep-Learning Framework for the Generalized Emulation of Atmospheric Radiative Transfer at Microwave
+  Frequencies
+authors:
+- Spencer R. Jones
+- Simon Pfreundschuh
+- Christian D. Kummerow
+date: '2026-11-04'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2611.07094'
+links:
+  paper: https://arxiv.org/abs/2611.07094
+  pdf: https://arxiv.org/pdf/2611.07094
+topic: observations-remote-sensing
+topics:
+- infra-software
+type: model
+method:
+- other
+spatial:
+- global
+data:
+- satellite
+- other
+status: research
+summary: A fully connected network emulates microwave radiative transfer over 1-300 GHz, running more
+  than 1000 times faster than CRTM with RMSE below 0.05 K.
+abstract: This paper presents an application of machine learning to the problem of the computational expense
+  of atmospheric radiative transfer calculations from physics-based models. While in recent studies individual
+  emulators have been created that emulate certain radiative transfer schemes for different sensors, we
+  show that a general framework can be applied to emulate the radiative transfer method itself. A fully
+  connected deep neural network has been trained to predict top-of-atmosphere microwave radiances in all-sky
+  conditions over various land, ocean and sea ice surfaces at all frequencies from 1 to 300 GHz, and for
+  all incidence angles from 0 to 65 degrees. The reference models against which the emulator has been
+  trained include an Eddington two-stream radiative transfer model for one-dimensional and pseudo-three-dimensional
+  microwave brightness temperature simulations. This neural network architecture has also been separately
+  trained to reproduce the explicit calculations of the Community Radiative Transfer Model (CRTM) for
+  a single microwave imager. In all cases, the model architecture is successfully able predict microwave
+  brightness temperatures by being trained directly on the optical properties of the atmosphere and surface
+  and therefore directly emulating the radiative transfer method. Compared to the explicit schemes used
+  to produce the training data, the GPU-enabled emulator is able to produce brightness temperature simulations
+  more than three orders of magnitude faster and with a root-mean-squared-error less than 0.0348 K, 0.0531
+  K, and 0.0246 K against the independent test data for the two Eddington models and CRTM, respectively.
+  Additionally, preliminary training using a full 3D Monte Carlo scheme for high-resolution simulations
+  shows promising results for the application of this method to "exact" radiative transfer methods, and
+  these results are discussed in Section IV.
+significance: 4
+score: 16
+highlight: false
+added: '2026-11-09'
+source: weekly

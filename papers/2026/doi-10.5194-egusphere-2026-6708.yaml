@@ -1,0 +1,50 @@
+id: doi-10.5194-egusphere-2026-6708
+title: How Much Lossy Compression of Training Data Can An Atmosphere Emulator Tolerate?
+authors:
+- Finn O'neill Rebassoo
+- Peter Caldwell
+- Peter Lindström
+- Allison H. Baker
+- Elynn Wu
+date: '2026-11-05'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.5194/egusphere-2026-6708
+  openalex: W7225335510
+links:
+  paper: https://doi.org/10.5194/egusphere-2026-6708
+  pdf: https://egusphere.copernicus.org/preprints/2026/egusphere-2026-6708/egusphere-2026-6708.pdf
+orgs:
+- ai2
+- ncar
+topic: infra-software
+topics:
+- climate-emulation
+type: evaluation
+timescale:
+- climate
+spatial:
+- global
+data:
+- other
+status: research
+summary: Tests ZFP lossy compression of E3SMv3 training data for the ACE2 emulator, finding about 5x compression
+  leaves predictions unaffected while 11x degrades metrics.
+abstract: Abstract. Training machine learning (ML) emulators on km-scale Earth system models (ESMs) would
+  require more data than is practical to store. Lossy data compression is a natural solution to this problem,
+  but adoption by the ESM community has been slow, partly because of the fear of negatively impacting
+  scientific conclusions. In this study, we demonstrate what level of lossy compression is acceptable
+  for an ML-based emulator of the E3SMv3 atmospheric model at 1° resolution. We specifically use the ZFP
+  compressor, which provides state-of-the-art performance and is integrated into NetCDF4. Thus, ZFP can
+  be applied to the E3SM data output directly and the compressed data read easily with Python tools. We
+  measure lossy compression impact by looking at the skill of the ACE2-emulator for AMIP-like runs. We
+  find that a compression rate of roughly 5x does not affect the physics predictions of the ACE2-emulator.
+  As we compress the data more aggressively, some metrics start to degrade, and at a compression rate
+  of 11x many metrics have become unacceptable.
+significance: 5
+cited_by: 0
+score: 55
+highlight: false
+added: '2026-11-09'
+source: weekly

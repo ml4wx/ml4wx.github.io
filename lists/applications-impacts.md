@@ -5,10 +5,14 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/applications-impacts/)
 
-838 papers (1 ⭐). Newest first.
+841 papers (1 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-11-07 | [Multi-scale assessment of wavelet-guided deep learning for reference evapotranspiration forecasting to support vineyard water management](https://doi.org/10.1016/j.agwat.2026.110892)<br><sub>Rui Gao, Mohammad Safeeq, John T. Abatzoglou et al. · Agricultural Water Management</sub> |  |  |
+| 2026-11-05 | [Robust Ranking of Port Impacts from Impending Tropical Cyclones: A Two-Stage Recommendation System](https://arxiv.org/abs/2611.07296)<br><sub>Chenchen Kuai, Shixuan Tang, Chaolun Ma et al.</sub> |  |  |
+| 2026-11-04 | [Mapping microclimatic spring frost risk through high-resolution spatial modeling in STYRIAN fruit- and winegrowing regions](https://doi.org/10.1016/j.cliser.2026.100757)<br><sub>Manuel Strohmaier, Sabrina Dreisiebner-Lanz, Michael Kernitzkyi et al. · Climate Services</sub> |  |  |
+| 2026-11-04 | [Short-Term Forecasting of Heterogeneous Wind Power Fleets: Global Temporal Fusion Transformer Leveraging Static Covariates](https://arxiv.org/abs/2611.06130)<br><sub>Viktor Walter, Andreas Wagner</sub> | ECMWF, Deutscher Wetterdienst (DWD) |  |
 | 2026-10-29 | [Seasonal hydropower forecast framework using a combination of deep learning and physics-based methods](https://doi.org/10.31223/x50b98)<br><sub>Goutam Konapala, Cameron Bracken, Nathalie Voisin</sub> |  |  |
 | 2026-10-29 | [A weather integrated neural symbolic dispatch framework for power system operational security](https://doi.org/10.1038/s41598-026-73702-5)<br><sub>Swaechchha Dahal, Sambeet Mishra, Gunne John Hegglid et al. · Scientific Reports</sub> |  |  |
 | 2026-10-29 | [IMPACT: Inverter-Informed Multimodal Learning for Photovoltaic Generation Forecasting](https://arxiv.org/abs/2610.40418)<br><sub>Anushka Katiyar, Cong Feng, Jing Wang et al.</sub> |  |  |
@@ -33,7 +37,7 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 | 2026-09-29 | [An Input-Frugal Deep Learning Framework for Weather-Driven National Crop-Yield Forecasting: A Case Study of Brazilian Soybean](https://arxiv.org/abs/2609.38447)<br><sub>Fernando Dupin da Cunha Mello, Prashant Kumar, Erick G. Sperandio Nascimento</sub> |  |  |
 | 2026-09-28 | [Distributed photovoltaic power forecasting based on dynamic fusion of physical priors and numerical weather prediction](https://doi.org/10.1088/1361-6501/aeacbb)<br><sub>Shuyan Liu, Wei Huang, mingkang li et al. · Measurement Science and Technology</sub> |  |  |
 | 2026-09-28 | [Geospatial modeling of urban lake cooling based on morphometric and urban contexts using tree ensembles and SHAP interpretability](https://doi.org/10.1007/s44327-026-00373-2)<br><sub>Nhat‐Duc Hoang · Discover Cities</sub> |  |  |
-| 2026-09-28 | [A neural network-based Universal Thermal Climate Index for reliable global thermal-stress classification across extreme weather](https://arxiv.org/abs/2609.35949)<br><sub>Bikem Pastine, Milan Klöwer, Tianning Tang et al.</sub> |  |  |
+| 2026-09-28 | [A neural network-based Universal Thermal Climate Index for reliable global thermal-stress classification across extreme weather](https://arxiv.org/abs/2609.35949)<br><sub>Bikem Pastine, Milan Klöwer, Tianning Tang et al.</sub> | University of Oxford |  |
 | 2026-09-23 | [Predicting meteorological-disaster-induced damage to melon crops in Taiwan by using decision-tree-based algorithms](https://doi.org/10.1038/s41598-026-73093-7)<br><sub>Shih-Lun Fang, Yi-Lung Chang, Sheng-Chih Chang et al. · Scientific Reports</sub> |  |  |
 | 2026-09-22 | [Physics-Guided Deep Learning for Short-Term Probabilistic Offshore Wind Power Forecasting](https://doi.org/10.3390/atmos17100915)<br><sub>Xiuyong Zhao, Haichuan Long, Kaize Liu et al. · Atmosphere</sub> | China Meteorological Administration (CMA), Nanjing University of Information Science & Technology (NUIST) |  |
 | 2026-09-22 | [Artificial Intelligence for Climate Adaptation Decision Support in Data-Poor Developing Regions](https://doi.org/10.22541/essoar.15009304/v1)<br><sub>H Heuristics, Hunter Hughes</sub> |  |  |
@@ -67,7 +71,7 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 | 2026-07-31 | [A Machine-Learning-Based Global Thermospheric Density Forecasting Model](https://arxiv.org/abs/2608.00352)<br><sub>Ruochen Wang, Xiaoli Bai · Space Weather, 24(6), e2026SW000000 (2026)</sub> |  |  |
 | 2026-07-28 | [Analytical and AI-based approaches to weather events in business: a survey](https://doi.org/10.1186/s43093-026-00933-3)<br><sub>Shereen A. Taie, Farah Yasser ElSayed, Menna Ibrahim Gabr · Future Business Journal</sub> |  |  |
 | 2026-07-28 | [Physics-guided neural network integrating uncertainty evolution for spatiotemporal wind speed prediction](https://doi.org/10.1038/s43247-026-03844-x)<br><sub>Junkai Wang, Yu Zhang, Yiming Ren et al. · Communications Earth & Environment</sub> |  |  |
-| 2026-07-28 | [From Heat Stress to Perception: Interpretable Data-Driven Models of Human Thermal Sensation](https://arxiv.org/abs/2607.25850)<br><sub>Abed Hammoud, Xinjie Huang, Qinqin Kong et al.</sub> |  |  |
+| 2026-07-28 | [From Heat Stress to Perception: Interpretable Data-Driven Models of Human Thermal Sensation](https://arxiv.org/abs/2607.25850)<br><sub>Abed Hammoud, Xinjie Huang, Qinqin Kong et al.</sub> | Princeton University, Stanford University |  |
 | 2026-07-27 | [SIREN: Towards End-to-End Extreme-Weather Early Warning with Experience-Grounded LLM Agents](https://arxiv.org/abs/2607.24588)<br><sub>Hang Ni, Weijia Zhang, Fan Liu et al.</sub> |  |  |
 | 2026-07-26 | [Comparison of Physical and Deep Learning Weather Forecast Models for Agricultural Decision-Making in Belgium](https://doi.org/10.3390/atmos17080728)<br><sub>Valérian Authelet, Sébastien Dandrifosse, Valéry Michaud et al. · Atmosphere</sub> |  |  |
 | 2026-07-22 | [Scalable machine learning for urban thermal morphology classification: clustering high-resolution microclimate and dynamic mapping of radiant temperature](https://doi.org/10.1007/s43762-026-00278-1)<br><sub>Michele Baia, Carla Balocco, Franco Bagnoli · Computational Urban Science</sub> |  |  |
@@ -144,7 +148,7 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 | 2026-04-10 | [OTProf: estimating high-resolution profiles of optical turbulence ($C_n^2$) from reanalysis using deep learning](https://arxiv.org/abs/2604.09346)<br><sub>Maximilian Pierzyna, Sukanta Basu, Rudolf Saathof</sub> |  |  |
 | 2026-04-07 | [Regimes of Scale in AI Meteorology](https://arxiv.org/abs/2604.06000)<br><sub>Anya Martin, Cindy Lin</sub> |  |  |
 | 2026-04-06 | [Empowering Power Outage Prediction with Spatially Aware Hybrid Graph Neural Networks and Contrastive Learning](https://arxiv.org/abs/2604.04916)<br><sub>Xuyang Shen, Zijie Pan, Diego Cerrai et al.</sub> |  |  |
-| 2026-04-05 | [Solar-VLM: Multimodal Vision-Language Models for Augmented Solar Power Forecasting](https://arxiv.org/abs/2604.04145)<br><sub>Hang Fan, Haoran Pei, Runze Liang et al.</sub> |  | [code](https://github.com/rhp413/Solar-VLM) |
+| 2026-04-05 | [Solar-VLM: Multimodal Vision-Language Models for Augmented Solar Power Forecasting](https://arxiv.org/abs/2604.04145)<br><sub>Hang Fan, Haoran Pei, Runze Liang et al.</sub> | Tsinghua University (NowcastNet) | [code](https://github.com/rhp413/Solar-VLM) |
 | 2026-04-01 | [Spatiotemporal drought drivers in rainfed agroecosystems: A hybrid geospatial and machine learning approach for LULC-specific Vegetation Health Index (VHI) trends and yield loss assessment in the Eastern Ghats region (Odisha), India](https://doi.org/10.1016/j.rsase.2026.102072)<br><sub>Rajkumar Guria, Manoranjan Mishra, Celso Augusto Guimarães Santos et al. · Remote Sensing Applications Society and Environment</sub> |  |  |
 | 2026-04-01 | [A data-driven framework for typhoon fatality risk assessment in data-scarce regions: implications for risk management and (re)insurance](https://doi.org/10.1016/j.cliser.2026.100666)<br><sub>Imee V. Necesito, Junhyeong Lee, Soojun Kim et al. · Climate Services</sub> |  |  |
 | 2026-04-01 | [Statistical and machine learning-based development of future typical meteorological years using city-specific GCMs for major cities in Indonesia](https://doi.org/10.1016/j.cacint.2026.100367)<br><sub>Vinayak Nitin Bhanage, Han Soo Lee, Tetsu Kubota et al. · City and Environment Interactions</sub> |  |  |
@@ -175,7 +179,7 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 | 2026-03-05 | [A Review Paper on Solar Power Prediction Using AQI And Weather Forecasting](https://doi.org/10.5281/zenodo.18876475)<br><sub>Prem Suryawanshi, Asst.  Prof.  F. I.  Khandwani, Apurva Kulkarni et al. · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
 | 2026-03-05 | [A Short-Term Photovoltaic Power Prediction Based on Multidimensional Feature Fusion of Satellite Cloud Images](https://doi.org/10.3390/pr14050846)<br><sub>Lingling Xie, Chunhui Li, Yanjing Luo et al. · Processes</sub> |  |  |
 | 2026-03-05 | [Sustainability of Oilseed Production Under Climate Change in the Canadian Prairies: A Machine-Learning-Enhanced Land Suitability Assessment for Canola and Flax](https://doi.org/10.3390/agriculture16050604)<br><sub>Zahra Noorisameleh, David Sauchyn, Mohammad Zare · Agriculture</sub> |  |  |
-| 2026-03-05 | [The Rise of AI in Weather and Climate Information and its Impact on Global Inequality](https://arxiv.org/abs/2603.05710)<br><sub>Amirpasha Mozaffari, Amanda Duarte, Lina Teckentrup et al.</sub> |  |  |
+| 2026-03-05 | [The Rise of AI in Weather and Climate Information and its Impact on Global Inequality](https://doi.org/10.1038/s44168-026-00412-z)<br><sub>Amirpasha Mozaffari, Amanda Duarte, Lina Teckentrup et al. · npj Climate Action</sub> |  |  |
 | 2026-03-01 | [Short-term photovoltaic output prediction based on spatial downscaling NWP data and CNN-iTransformer-LSTM model](https://doi.org/10.23919/ien.2026.0008)<br><sub>Zhewen Hu, Ligang Du, Xin Zhang et al. · iEnergy</sub> | Tsinghua University (NowcastNet) |  |
 | 2026-03-01 | [Photovoltaic power short-term forecasting method based on similar days and bi-layer correction LSTM model](https://doi.org/10.12158/j.2096-3203.2026.03.010)<br><sub>Yulong Shi, Qiao PENG, Tianqi LIU et al. · DOAJ (DOAJ: Directory of Open Access Journals)</sub> |  |  |
 | 2026-03-01 | [A meta-analysis of solar forecasting based on skill score](https://doi.org/10.1063/5.0300682)<br><sub>Thi Ngoc Nguyen, Felix Müsgens · Journal of Renewable and Sustainable Energy</sub> |  |  |
@@ -187,12 +191,12 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 | 2026-02-24 | [Deep-learning surrogate crop modelling for scalable seasonal-to-climate crop-risk assessment](https://arxiv.org/abs/2602.20928)<br><sub>Odysseas Vlachopoulos, Andrej Ceglar, Juerg Luterbacher et al.</sub> |  |  |
 | 2026-02-18 | [Closing Africa's Early Warning Gap: AI Weather Forecasting for Disaster Prevention](https://arxiv.org/abs/2602.17726)<br><sub>Qness Ndlovu</sub> |  |  |
 | 2026-02-17 | [Data-driven Approaches based on Cross-scale Dense Convolutional Network for Detecting Climate Change Effects on Crop Yield and Farming Patterns](https://doi.org/10.22266/ijies2026.0331.47)<br><sub>Prathusha.Perugu, Meena Chavan, Dr Kandukuri Geetha et al. · International journal of intelligent engineering and systems</sub> |  |  |
-| 2026-02-17 | [R$^2$Energy: A Large-Scale Benchmark for Robust Renewable Energy Forecasting under Diverse and Extreme Conditions](https://arxiv.org/abs/2602.15961)<br><sub>Zhi Sheng, Yuan Yuan, Guozhen Zhang et al.</sub> |  |  |
+| 2026-02-17 | [R$^2$Energy: A Large-Scale Benchmark for Robust Renewable Energy Forecasting under Diverse and Extreme Conditions](https://arxiv.org/abs/2602.15961)<br><sub>Zhi Sheng, Yuan Yuan, Guozhen Zhang et al.</sub> | New York University (M2LInES), Tsinghua University (NowcastNet) |  |
 | 2026-02-17 | [Meteorological data and Sky Images meets Neural Models for Photovoltaic Power Forecasting](https://arxiv.org/abs/2602.15782)<br><sub>Ines Montoya-Espinagosa, Antonio Agudo</sub> |  |  |
 | 2026-02-14 | [Variable renewable energy forecasting in Germany: Reassessing simplicity with Bayesian-optimised multilayer perceptrons](https://doi.org/10.1016/j.renene.2026.125409)<br><sub>Milan Wanek · Renewable Energy</sub> |  |  |
 | 2026-02-14 | [Evaluating the impact of Numerical Weather Prediction variables on wind power forecasting: A case study of the Alpha Ventus offshore wind farm](https://doi.org/10.1016/j.egyai.2026.100695)<br><sub>Eloy Insunza, Carlos de los Santos Jiménez, Antonio Muñoz San Roque et al. · Energy and AI</sub> |  |  |
 | 2026-02-13 | [Probabilistic Wind Power Forecasting with Tree-Based Machine Learning and Weather Ensembles](https://doi.org/10.1016/j.epsr.2026.113847)<br><sub>Max Bruninx, Diederik van Binsbergen, Timothy Verstraeten et al. · Electric Power Systems Research</sub> |  |  |
-| 2026-02-03 | [Decision-oriented benchmarking to transform AI weather forecast access: Application to the Indian monsoon](https://arxiv.org/abs/2602.03767)<br><sub>Rajat Masiwal, Colin Aitken, Adam Marchakitus et al.</sub> |  |  |
+| 2026-02-03 | [Decision-oriented benchmarking to transform AI weather forecast access: Application to the Indian monsoon](https://arxiv.org/abs/2602.03767)<br><sub>Rajat Masiwal, Colin Aitken, Adam Marchakitus et al.</sub> | Lawrence Berkeley National Laboratory / NERSC, University of California, Berkeley, University of Chicago |  |
 | 2026-02-01 | [AI-Driven Solar Radiation Modeling: A Multivariate Benchmark of Statistical and Machine Learning Models for Concurrent Estimation and Multi-Horizon Prediction Using Real-World Data](https://doi.org/10.3103/s0003701x25603783)<br><sub>Moein Jazayeri, Kian Jazayeri · Applied Solar Energy</sub> |  |  |
 | 2026-02-01 | [A Case Study of the Yeongam F1 Solar Power Plant](https://doi.org/10.14191/atmos.2026.36.1.001)<br><sub>Jeongwoo Shim, Yelim Kim, Seok‐Woo Son et al. · Seoul National University Open Repository (Seoul National University)</sub> |  |  |
 | 2026-02-01 | [AI-enhanced no-regret decision-making for Black Swan climate events.](https://doi.org/10.1016/j.scib.2026.01.068)<br><sub>Jiajie Lyu, Zhan Tian, Laixiang Sun et al. · Science bulletin</sub> |  |  |
@@ -257,7 +261,7 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 | 2026-01-01 | [Economic and Reliability Value of Improved Offshore Wind Forecasting in Bulk Power Grid Operation: A Case Study of the New York Power Grid](https://doi.org/10.1109/access.2026.3737067)<br><sub>Khaled Bin Walid, Feng Ye, Jiaxiang Ji et al. · IEEE Access</sub> |  |  |
 | 2025-12-30 | [Day-Ahead PV Power Probability Density Forecasting With GAN-QRCNLSTM Based on High-Resolution Data Reconstruction](https://doi.org/10.1109/tii.2025.3627108)<br><sub>Yaoyao He, Xiaolin Chen, Yan Zhang et al. · IEEE Transactions on Industrial Informatics</sub> |  |  |
 | 2025-12-23 | [A Hybrid Machine Learning Framework for Predicting Hurricane Losses in Parametric Insurance with Highly Imbalanced Data](https://doi.org/10.3390/a19010015)<br><sub>Yangchongyi Men, Roberto Guidotti, Javier A. Cuartas-Micieces et al. · Algorithms</sub> |  |  |
-| 2025-12-23 | [NeuralCrop: Combining physics and machine learning for improved crop yield projections](https://arxiv.org/abs/2512.20177)<br><sub>Yunan Lin, Sebastian Bathiany, Maha Badri et al.</sub> |  |  |
+| 2025-12-23 | [NeuralCrop: Combining physics and machine learning for improved crop yield projections](https://arxiv.org/abs/2512.20177)<br><sub>Yunan Lin, Sebastian Bathiany, Maha Badri et al.</sub> | Potsdam Institute for Climate Impact Research (PIK), Technical University of Munich (TUM) |  |
 | 2025-12-19 | [Assessing the predictive capability of several machine learning algorithms to forecast snow avalanches using numerical weather prediction model in eastern Canada](https://doi.org/10.5194/nhess-25-5033-2025)<br><sub>Francis Gauthier, Jacob Laliberté, Francis Meloche · Natural hazards and earth system sciences</sub> |  |  |
 | 2025-12-19 | [DOMAIN-ADAPTED WIND POWER FORECASTING FOR MAINTENANCE SCHEDULING](https://doi.org/10.36227/techrxiv.176617699.97995135/v1)<br><sub>Seyyed Ahmad Hosseini, François Vallée</sub> |  |  |
 | 2025-12-17 | [An Application of Image Processing Techniques in the Calibration of Catastrophe Models](https://doi.org/10.66573/001c.146426)<br><sub>T. Rotich, Artur Hambardzumyan, Eliud Koech et al. · Variance</sub> |  |  |
@@ -312,7 +316,7 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 | 2025-09-12 | [LEVERAGING REMOTE SENSING, GIS, AND AI-BASED URBAN CLIMATE MODELLING TO MITIGATE URBAN HEAT ISLAND EFFECTS IN RAPIDLY EXPANDING TROPICAL MEGACITIES](https://doi.org/10.70382/mejnsar.v9i9.063)<br><sub>O.S. Afolabi, O.A. Adeoye, DIKE GOODLUCK EBERECHI et al. · International Journal of Nature and Science Advance Research</sub> |  |  |
 | 2025-09-11 | [Analysis of Changes in Rice Harvest Timing Using Deep Learning- Based Climate Prediction](https://doi.org/10.21203/rs.3.rs-7354648/v1)<br><sub>Sung Kook Kim¹, Jae Hyun Park · Research Square</sub> |  |  |
 | 2025-09-08 | [CROMES v1.0: a flexible CROp Model Emulator Suite for climate impact assessment](https://doi.org/10.5194/gmd-18-5759-2025)<br><sub>Christian Folberth, Artem Baklanov, Nikolay Khabarov et al. · Geoscientific model development</sub> |  |  |
-| 2025-09-08 | [Data-driven solar forecasting enables near-optimal economic decisions](https://arxiv.org/abs/2509.06925)<br><sub>Zhixiang Dai, Ming-Hao Yin, Xuanhong Chen et al.</sub> |  |  |
+| 2025-09-08 | [Data-driven solar forecasting enables near-optimal economic decisions](https://arxiv.org/abs/2509.06925)<br><sub>Zhixiang Dai, Ming-Hao Yin, Xuanhong Chen et al.</sub> | China Meteorological Administration (CMA), Max Planck Institute for Biogeochemistry, NVIDIA, Princeton University |  |
 | 2025-09-08 | [WindFM: An Open-Source Foundation Model for Zero-Shot Wind Power Forecasting](https://arxiv.org/abs/2509.06311)<br><sub>Hang Fan, Yu Shi, Zongliang Fu et al.</sub> |  | [code](https://github.com/shiyu-coder/WindFM) |
 | 2025-09-03 | [Inverted Transformers for Effective Post‐Calibration in Multisite Wind Power Forecasting](https://doi.org/10.1002/we.70057)<br><sub>Joseph Cohen, Tianyi Xu, Youngchan Jang et al. · Wind Energy</sub> |  |  |
 | 2025-09-01 | [Spatiotemporal solar radiation forecasting driven by satellite-based and reanalysis data for distributed PV integration using fully-convolutional neural network](https://doi.org/10.1016/j.renene.2025.124556)<br><sub>Zhaohui Ruan, Lang Wu, Hongrong Shi et al. · Renewable Energy</sub> |  |  |
@@ -329,9 +333,9 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 | 2025-08-09 | [Climate change impacts livestock carrying capacity in East Africa](https://doi.org/10.1007/s10113-025-02440-7)<br><sub>Confidence Duku, Gulilat Tefera Diro, Teferi D. Demissie et al. · Regional Environmental Change</sub> | Environment and Climate Change Canada (ECCC) |  |
 | 2025-08-07 | [Machine learning assessment of CMIP6 projected maximum temperature and precipitation impacts on crop yields and rangeland productivity in Pakistan](https://doi.org/10.1007/s10708-025-11454-x)<br><sub>Wilayat Shah, Junfei Chen · GeoJournal</sub> |  |  |
 | 2025-08-05 | [Integrating computational fluid dynamics (CFD) and machine learning to improve urban green infrastructure for heat mitigation and air quality: A systematic review](https://doi.org/10.1016/j.buildenv.2025.113516)<br><sub>Zhu Tao, Hao Sun, Bowen Deng et al. · Building and Environment</sub> |  |  |
-| 2025-08-05 | [SolarSeer: Ultrafast and accurate 24-hour solar irradiance forecasts outperforming numerical weather prediction across the USA](https://arxiv.org/abs/2508.03590)<br><sub>Mingliang Bai, Zuliang Fang, Shengyu Tao et al.</sub> |  |  |
+| 2025-08-05 | [SolarSeer: Ultrafast and accurate 24-hour solar irradiance forecasts outperforming numerical weather prediction across the USA](https://doi.org/10.1016/j.xcrp.2025.102996)<br><sub>Mingliang Bai, Zuliang Fang, Shengyu Tao et al. · Cell Reports Physical Science</sub> | Microsoft Research (AI for Science), Tsinghua University (NowcastNet), University of California, Berkeley |  |
 | 2025-08-05 | [VITA: Variational Pretraining of Transformers for Climate-Robust Crop Yield Forecasting](https://arxiv.org/abs/2508.03589)<br><sub>Adib Hasan, Mardavij Roozbehani, Munther Dahleh</sub> |  |  |
-| 2025-07-30 | [Planning for Cooler Cities: A Multimodal AI Framework for Predicting and Mitigating Urban Heat Stress through Urban Landscape Transformation](https://arxiv.org/abs/2507.23000)<br><sub>Shengao Yi, Xiaojiang Li, Wei Tu et al.</sub> |  |  |
+| 2025-07-30 | [Planning for Cooler Cities: A Multimodal AI Framework for Predicting and Mitigating Urban Heat Stress through Urban Landscape Transformation](https://doi.org/10.1016/j.ufug.2025.129101)<br><sub>Shengao Yi, Xiaojiang Li, Wei Tu et al. · Urban forestry & urban greening</sub> |  |  |
 | 2025-07-27 | [Enterprise AI Systems for Climate-Resilient Infrastructure Planning and Disaster Preparedness](https://doi.org/10.32996/jeas.2025.6.2.2)<br><sub>Mohammed Nazmul Islam Miah, Md Joshim Uddin, M. Daud Ahmed · Journal of Environmental and Agricultural Studies</sub> |  |  |
 | 2025-07-25 | [Risk of rice production failure in India under climate change](https://doi.org/10.1088/1748-9326/adf459)<br><sub>Christopher Bowden, Timothy Foster, Ben Parkes · Environmental Research Letters</sub> |  |  |
 | 2025-07-25 | [Heat wave risk assessment in Bologna using Spatio-temporal artificial intelligence: Leveraging LSTM enhanced by the hippopotamus optimization algorithm](https://doi.org/10.1016/j.scs.2025.106671)<br><sub>Aniseh Saber, Claudia De Luca, Ali Pourzangbar et al. · Sustainable Cities and Society</sub> | Karlsruhe Institute of Technology (KIT) |  |
@@ -405,7 +409,7 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 | 2025-02-20 | [The Implications of Long-Term Local Climate Change for the Energy Performance of an nZEB Residential Building in Volos, Greece](https://doi.org/10.3390/en18051032)<br><sub>Antiopi-Malvina Stamatellou, A. M. Stamatelos · Energies</sub> |  |  |
 | 2025-02-20 | [AI Meets the Eye of the Storm: Machine Learning-Driven Insights for Hurricane Damage Risk Assessment in Florida](https://doi.org/10.1007/s41748-025-00571-9)<br><sub>Sameera Maha Arachchige, Biswajeet Pradhan · Earth Systems and Environment</sub> |  |  |
 | 2025-02-19 | [Perceiver Model Ensemble for Solar Power Forecasting: A Winning Solution for ClimateHack.AI 2023-2024](https://doi.org/10.15353/jcvis.v10i1.10018)<br><sub>Trevor Yu, Carter Demars, Areel Khan · Journal of Computational Vision and Imaging Systems</sub> |  |  |
-| 2025-02-18 | [An improved wind power prediction via a novel wind ramp identification algorithm](https://arxiv.org/abs/2502.12807)<br><sub>Yifan Xu</sub> |  |  |
+| 2025-02-18 | [An improved wind power prediction via a novel wind ramp identification algorithm](https://doi.org/10.3390/pr14091478)<br><sub>Yifan Xu · Processes</sub> | Nanjing University of Information Science & Technology (NUIST) |  |
 | 2025-02-17 | [An Assessment of How Domain Experts Evaluate Machine Learning in Operational Meteorology](https://doi.org/10.1175/waf-d-24-0144.1)<br><sub>David R. Harrison, Amy McGovern, Christopher D. Karstens et al. · Weather and Forecasting</sub> | NSF NCAR / UCAR, NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), University of Oklahoma (AI2ES), University of Washington |  |
 | 2025-02-17 | [Machine Learning‐Driven Skillful Decadal Predictions of German Bight Storm Surges](https://doi.org/10.1029/2024gl111558)<br><sub>Daniel Krieger, Ralf Weiße, Johanna Baehr et al. · Geophysical Research Letters</sub> |  |  |
 | 2025-02-12 | [Integrating Spatiotemporal Vision Transformer into Digital Twins for High-Resolution Heat Stress Forecasting in Campus Environments](https://doi.org/10.1177/0739456x251391121)<br><sub>Wenjing Gong, Xinyue Ye, Keshu Wu et al. · Journal of Planning Education and Research</sub> |  |  |
@@ -417,7 +421,7 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 | 2025-01-10 | [A novel framework for multi-hazard loss assessment of tropical cyclones: A county-level interpretable machine learning model](https://doi.org/10.1016/j.ijdrr.2025.105204)<br><sub>Jinli Zheng, Weihua Fang, Jinyan Shao · International Journal of Disaster Risk Reduction</sub> |  |  |
 | 2025-01-09 | [The Impact of Machine Learning on Climate Change Modeling and Environmental Sustainability](https://scipublication.com/index.php/AIMLR/article/view/99)<br><sub>Omar Farooq, Ahmed Khan · Artificial Intelligence and Machine Learning Review</sub> |  |  |
 | 2025-01-08 | [Application of Artificial Intelligence in Climate Change Prediction and Environmental Sustainability](https://doi.org/10.5281/zenodo.18182424)<br><sub>Rahul Dev Sharma¹, Meenakshi Rawat², Saurabh Mishra³, Priyanka Joshi⁴ · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
-| 2025-01-08 | [Data fusion of complementary data sources using Machine Learning enables higher accuracy Solar Resource Maps](https://arxiv.org/abs/2501.04381)<br><sub>J Rabault, ML Sætra, A Dobler et al.</sub> |  |  |
+| 2025-01-08 | [Data fusion of complementary data sources using Machine Learning enables higher accuracy Solar Resource Maps](https://doi.org/10.1016/j.solener.2025.113337)<br><sub>J Rabault, ML Sætra, A Dobler et al. · Solar Energy</sub> | MET Norway (Norwegian Meteorological Institute) |  |
 | 2025-01-03 | [Using AI And Machine Learning to Realize Information System Engineering of Smart Cities: Accurate Weather Forecasting and Emergency Response](https://doi.org/10.53759/7669/jmc202505050)<br><sub>Jiahao Ye, Nurulkamal Masseran · Journal of Machine and Computing</sub> |  |  |
 | 2025-01-01 | [AI-Driven Climate Analysis for Sustainable Urban Planning](https://doi.org/10.67228/30715628/ijmiet-2025pi4gv3)<br><sub>Narendra Karmarkar, Iyengar P.K · International Journal of Modern Innovations and Emerging Trends</sub> |  |  |
 | 2025-01-01 | [Assessing the Impact of Climate-Change & Developing A Predictive Model for Heatstroke Incidents in Pune, India](https://doi.org/10.64149/j.carcinog.24.3.688-697)<br><sub>AVINASH BHUTE, Harsha Bhute, Bharati P. Vasgi et al. · Journal of Carcinogenesis</sub> |  |  |
@@ -429,7 +433,6 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 | 2025-01-01 | [Implementation of Long-Term Forecasting Models in Sugarcane for Agricultural Planning and Yield Goals Setting](https://doi.org/10.1109/access.2025.3645705)<br><sub>Joel Morales Lemus, David Mera, José Luis Quemé et al. · IEEE Access</sub> |  |  |
 | 2025-01-01 | [Advanced Techniques for Joint Weather and Electricity Demand Prediction Survey](https://doi.org/10.1109/access.2025.3629613)<br><sub>Omair Ashraf, Luciano Bononi, Usman Adeel et al. · IEEE Access</sub> |  |  |
 | 2025-01-01 | [A Probabilistic Model Predictive Control Approach for PV-Diesel Hybrid Systems in Ghana’s Health Sector Using Seamless State Prediction Methods](https://doi.org/10.1109/access.2025.3556980)<br><sub>Samer Chaaraoui, Stefanie Meilinger, Sebastian Houben et al. · IEEE Access</sub> |  |  |
-| 2025-01-01 | [WindDragon: automated deep learning for regional wind power forecasting](https://doi.org/10.1017/eds.2025.10)<br><sub>Julie Keisler, Étienne Le Naour · Environmental Data Science</sub> | Inria |  |
 | 2025-01-01 | [Soft computing paradigm for climate change adaptation and mitigation in Iran, Pakistan, and Turkey: A systematic review](https://doi.org/10.1016/j.heliyon.2025.e41974)<br><sub>Muhammad Talha, Amir Pouyan Nejadhashemi, Kieron Moller · Heliyon</sub> |  |  |
 | 2024-12-27 | [Hybrid Approaches for Irrigation Optimization Based on Weather Forecast: a Study on Reference Evapotranspiration Prediction in Beni Mellal](https://doi.org/10.7160/aol.2024.160407)<br><sub>Hamza Jdi, Khalid El Moutaouakil, Noureddine Falih et al. · Agris on-line Papers in Economics and Informatics</sub> |  |  |
 | 2024-12-24 | [Estimating and forecasting daily reference crop evapotranspiration in China with temperature-driven deep learning models](https://doi.org/10.1016/j.agwat.2024.109268)<br><sub>Jia Zhang, Yimin Ding, Lei Zhu et al. · Agricultural Water Management</sub> |  |  |
@@ -447,7 +450,7 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 | 2024-11-28 | [Estimating Rainfall Erosivity in North Korea Using Automated Machine Learning: Insights into Regional Soil Erosion Risks](https://doi.org/10.3390/land13122038)<br><sub>Jeongho Han, Seoro Lee · Land</sub> |  |  |
 | 2024-11-27 | [Impact of climate change on snow avalanche activity in the Swiss Alps](https://doi.org/10.5194/tc-18-5495-2024)<br><sub>Stephanie Mayer, Martin Hendrick, Adrien Michel et al. · The cryosphere</sub> | ETH Zurich, MeteoSwiss |  |
 | 2024-11-18 | [Neural and Time-Series Approaches for Pricing Weather Derivatives: Performance and Regime Adaptation Using Satellite Data](https://arxiv.org/abs/2411.12013)<br><sub>Marco Hening Tallarico, Pablo Olivares</sub> |  |  |
-| 2024-11-13 | [Data-driven Surface Solar Irradiance Estimation using Neural Operators at Global Scale](https://arxiv.org/abs/2411.08843)<br><sub>Alberto Carpentieri, Jussi Leinonen, Jeff Adie et al.</sub> |  |  |
+| 2024-11-13 | [Data-driven Surface Solar Irradiance Estimation using Neural Operators at Global Scale](https://arxiv.org/abs/2411.08843)<br><sub>Alberto Carpentieri, Jussi Leinonen, Jeff Adie et al.</sub> | ETH Zurich, NVIDIA |  |
 | 2024-11-08 | [Tackling extreme urban heat: a machine learning approach to assess the impacts of climate change and the efficacy of climate adaptation strategies in urban microclimates](https://doi.org/10.1016/j.uclim.2025.102603)<br><sub>Grant Buster, Jordan Cox, Brandon N. Benton et al. · Urban Climate</sub> |  |  |
 | 2024-11-05 | [Human Adaption to Climate Change: Marine Disaster Risk Reduction in the Era of Intelligence](https://doi.org/10.3390/su16229647)<br><sub>Junyao Luo, Aihua Yang · Sustainability</sub> |  |  |
 | 2024-11-01 | [A tropical cyclone risk prediction framework using flood susceptibility and tree-based machine learning models: County-level direct economic loss prediction in Guangdong Province](https://doi.org/10.1016/j.ijdrr.2024.104955)<br><sub>Jian Ming Yang, Sixiao Chen, Yanan Tang et al. · International Journal of Disaster Risk Reduction</sub> |  |  |
@@ -460,13 +463,13 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 | 2024-10-18 | [Predicting the influence of extreme temperatures on grain production in the Middle-Lower Yangtze Plains using a spatially-aware deep learning model](https://doi.org/10.7717/peerj.18234)<br><sub>Zijun Mu, Junfei Xia · PeerJ</sub> |  |  |
 | 2024-10-17 | [Ensemble-based, large-eddy reconstruction of wind turbine inflow in a near-stationary atmospheric boundary layer through generative artificial intelligence](https://doi.org/10.1002/we.70020)<br><sub>Alex Rybchuk, Luis A. Martínez-Tossas, Stefano Letizia et al. · Wind Energy</sub> |  |  |
 | 2024-10-10 | [How Climate Change Will Shape Pesticide Application in Quebec’s Golf Courses: Insights with Deep Learning Based on Assessing CMIP5 and CMIP6](https://doi.org/10.3390/app14209209)<br><sub>Isa Ebtehaj, Josée Fortin, Hossein Bonakdari et al. · Applied Sciences</sub> |  |  |
-| 2024-10-09 | [Crafting Desirable Climate Trajectories with RL Explored Socio-Environmental Simulations](https://arxiv.org/abs/2410.07287)<br><sub>James Rudd-Jones, Fiona Thendean, María Pérez-Ortiz</sub> |  |  |
+| 2024-10-09 | [Crafting Desirable Climate Trajectories with RL Explored Socio-Environmental Simulations](https://doi.org/10.1017/eds.2025.10019)<br><sub>James Rudd-Jones, Fiona Thendean, María Pérez-Ortiz · Environmental Data Science</sub> |  |  |
 | 2024-10-02 | [Explainable Earth Surface Forecasting under Extreme Events](https://doi.org/10.1029/2024ef005446)<br><sub>Oscar J. Pellicer-Valero, Miguel-Ángel Fernández-Torres, Chaonan Ji et al. · Earth s Future</sub> |  | [code](https://github.com/DeepExtremes/txyXAI) |
 | 2024-09-30 | [D2.4 Data fusion and AI driven innovations for RKBs](https://doi.org/10.5281/zenodo.22099208)<br><sub>Iván Cester, G. Vilella-Rojo, Víctor Estella-Pérez et al. · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
 | 2024-09-25 | [User Friendly Weather Forecast Site with Machine Learning](https://doi.org/10.69980/redvet.v25i1s.1057)<br><sub>Dr. G. Indumathi, Ms. E. Saraswathi, I. Ashok et al. · Revista Electronica de Veterinaria</sub> |  |  |
 | 2024-09-25 | [Machine learning forecast of surface solar irradiance from meteo satellite data](https://doi.org/10.1016/j.rse.2024.114431)<br><sub>Alessandro Sebastianelli, Federico Serva, Andrea Ceschini et al. · Remote Sensing of Environment</sub> |  |  |
 | 2024-09-23 | [Automated Spatio-Temporal Weather Modeling for Load Forecasting](https://arxiv.org/abs/2409.16326)<br><sub>Julie Keisler, Margaux Bregere · International Ruhr Energy Conference, Aug 2024, Essen, University Duisburg-Essen, Germany</sub> |  |  |
-| 2024-09-21 | [Developing a Thailand solar irradiance map using Himawari-8 satellite imageries and deep learning models](https://arxiv.org/abs/2409.16320)<br><sub>Suwichaya Suwanwimolkul, Natanon Tongamrak, Nuttamon Thungka et al.</sub> |  |  |
+| 2024-09-21 | [Developing a Thailand solar irradiance map using Himawari-8 satellite imageries and deep learning models](https://doi.org/10.1016/j.solener.2025.113262)<br><sub>Suwichaya Suwanwimolkul, Natanon Tongamrak, Nuttamon Thungka et al. · Solar Energy</sub> |  |  |
 | 2024-09-16 | [AI-Driven Weather Pattern Recognition for Safe Route Planning In Autonomous Aerial Vehicles](https://doi.org/10.37622/acst/17.2.2024.61-75)<br><sub>S. Ojha, Rajeev Yadav · Advances in Computational Sciences and Technology</sub> |  |  |
 | 2024-09-15 | [Weather Dataset Classification Using Deep Learning Algorithms](https://ijisae.org/index.php/IJISAE/article/view/7262)<br><sub>Navita · International Journal of Intelligent Systems and Applications in Engineering</sub> |  |  |
 | 2024-09-14 | [Operational Wind Speed Forecasts for Chile's Electric Power Sector Using a Hybrid ML Model](https://arxiv.org/abs/2409.09263)<br><sub>Dhruv Suri, Praneet Dutta, Flora Xue et al.</sub> | Google DeepMind, Stanford University |  |
@@ -527,7 +530,7 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 | 2024-02-27 | [Machine Learning-Based Forecasting of Temperature and Solar Irradiance for Photovoltaic Systems](https://doi.org/10.3390/en17051124)<br><sub>Wassila Tercha, Sid Ahmed Tadjer, Fathia Chekired et al. · Energies</sub> |  |  |
 | 2024-02-26 | [High-resolution multi-scaling of outdoor human thermal comfort and its intra-urban variability based on machine learning](https://doi.org/10.5194/gmd-17-1667-2024)<br><sub>Ferdinand Briegel, Jonas Wehrle, Dirk Schindler et al. · Geoscientific model development</sub> |  |  |
 | 2024-02-23 | [Deep Learning for Wind and Solar Energy Forecasting in Hydrogen Production](https://doi.org/10.3390/en17051053)<br><sub>Artūrs Ņikuļins, Kaspars Sudars, Edgars Edelmers et al. · Energies</sub> |  |  |
-| 2024-02-22 | [WindDragon: Enhancing wind power forecasting with Automated Deep Learning](https://arxiv.org/abs/2402.14385)<br><sub>Julie Keisler, Etienne Le Naour</sub> |  |  |
+| 2024-02-22 | [WindDragon: Enhancing wind power forecasting with Automated Deep Learning](https://doi.org/10.1017/eds.2025.10)<br><sub>Julie Keisler, Etienne Le Naour · Environmental Data Science</sub> | Inria |  |
 | 2024-02-19 | [Solar Energy Forecasting With Performance Optimization Using Machine Learning Techniques](https://doi.org/10.1080/15325008.2024.2316245)<br><sub>S. Murugesan, M Mahasree, F. Kavin et al. · Electric Power Components and Systems</sub> |  |  |
 | 2024-02-12 | [Towards an intelligent malaria outbreak warning model based intelligent malaria outbreak warning in the northern part of Benin, West Africa](https://doi.org/10.1186/s12889-024-17847-w)<br><sub>Gouvidé Jean Gbaguidi, Nikita Topanou, Walter Leal Filho et al. · BMC Public Health</sub> |  |  |
 | 2024-02-01 | [Climate projections of human thermal comfort for indoor workplaces](https://doi.org/10.1007/s10584-024-03685-7)<br><sub>Markus Sulzer, Andreas Christen · Climatic Change</sub> |  |  |
@@ -581,7 +584,7 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 | 2023-10-27 | [Hybrid Optical Turbulence Models Using Machine Learning and Local Measurements](https://arxiv.org/abs/2310.17829)<br><sub>Christopher Jellen, Charles Nelson, John Burkhardt et al. · Applied Optics 62, no. 18 (2023): 4880-4890</sub> |  |  |
 | 2023-10-24 | [Overview of Day-Ahead Solar Power Forecasts Based on Weather Classifications and a Case Study in Taiwan](https://doi.org/10.1109/tia.2023.3327035)<br><sub>Yuan‐Kang Wu, Quoc‐Thang Phan, You-Jing Zhong · IEEE Transactions on Industry Applications</sub> |  |  |
 | 2023-10-24 | [Climate Change Impact on Agricultural Land Suitability: An Interpretable Machine Learning-Based Eurasia Case Study](https://doi.org/10.1109/access.2024.3358865)<br><sub>Valeriy Shevchenko, Daria Taniushkina, Aleksander Lukashevich et al. · IEEE Access</sub> |  |  |
-| 2023-10-13 | [Quantum Machine Learning in Climate Change and Sustainability: a Review](https://arxiv.org/abs/2310.09162)<br><sub>Amal Nammouchi, Andreas Kassler, Andreas Theorachis</sub> |  |  |
+| 2023-10-13 | [Quantum Machine Learning in Climate Change and Sustainability: a Review](https://doi.org/10.1609/aaaiss.v2i1.27657)<br><sub>Amal Nammouchi, Andreas Kassler, Andreas Theorachis · Proceedings of the AAAI Symposium Series</sub> |  |  |
 | 2023-10-11 | [Empowering Greenhouse Cultivation: Dynamic Factors and Machine Learning Unite for Advanced Microclimate Prediction](https://doi.org/10.3390/w15203548)<br><sub>Wei Sun, Fi‐John Chang · Water</sub> |  |  |
 | 2023-10-09 | [Climate-sensitive Urban Planning through Optimization of Tree Placements](https://arxiv.org/abs/2310.05691)<br><sub>Simon Schrodi, Ferdinand Briegel, Max Argus et al.</sub> |  |  |
 | 2023-10-05 | [Climate Change and Future Food Security: Predicting the Extent of Cropland Gain or Degradation](https://arxiv.org/abs/2310.03261)<br><sub>Tanushkina Daria, Shevchenko Valeriy, Lukashevich Aleksander et al.</sub> |  |  |
@@ -850,6 +853,10 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 
 ## Also relevant
 
+- [A Digital Twin Framework Integrating Multiscale Signal Decomposition and Hybrid Deep Learning for Intelligent Water Storage Control on Remote Islands](https://doi.org/10.3390/su182111291) (2026)
+- [Two-stage residual learning for calibrated uncertainty in solar irradiance forecasts](https://arxiv.org/abs/2611.07444) (2026)
+- [False Reassurance in LLM Severe-Weather Guidance: A Replayable Evaluation Against Real NWS Alerts](https://arxiv.org/abs/2611.05290) (2026)
+- [RATSIFT: Resolution-Adaptive Transformer for Solar Irradiance Forecasting and Temporal Downscaling](https://arxiv.org/abs/2611.03738) (2026)
 - [Global warming intensifies compound renewable energy droughts](https://doi.org/10.1038/s43247-026-04183-7) (2026)
 - [From extreme weather to agricultural consequences with agentic AI](https://arxiv.org/abs/2610.40641) (2026)
 - [Value of Aerosol Information for Day-Ahead Solar Irradiance Forecasting in a Dust-Prone Climate: A Multi-Site Evaluation of Machine-Learning Post-Processing in Iraq](https://doi.org/10.32870/2961bn58) (2026)
@@ -929,7 +936,7 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 - [Generative spatial downscaling of global ocean wind speed profiles via a diffusion model](https://doi.org/10.1016/j.neucom.2026.134068) (2026)
 - [Data-driven climatic zoning and future trend forecasting in Chad using artificial neural networks](https://doi.org/10.1038/s41598-026-49381-7) (2026)
 - [A hybrid deep learning model for cross-seasonal forecasting of forest fire occurrence from long-term survey data](https://doi.org/10.1016/j.tfp.2026.101275) (2026)
-- [Agentic AI-Enabled Framework for Thermal Comfort and Building Energy Assessment in Tropical Urban Neighborhoods](https://arxiv.org/abs/2604.21787) (2026)
+- [Agentic AI-Enabled Framework for Thermal Comfort and Building Energy Assessment in Tropical Urban Neighborhoods](https://doi.org/10.1051/e3sconf/202671606004) (2026)
 - [A Wasserstein GAN-based climate scenario generator for risk management and insurance: the case of soil subsidence](https://arxiv.org/abs/2605.06678) (2026)
 - [Outperforming Self-Attention Mechanisms in Solar Irradiance Forecasting via Physics-Guided Neural Networks](https://arxiv.org/abs/2604.13455) (2026)
 - [Utilizing deep learning techniques in operational system of geo-KOMPSAT-2A satellite for estimating solar radiation and aerosol optical depth](https://doi.org/10.1080/15481603.2026.2658318) (2026)
@@ -1018,7 +1025,7 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 - [Micro-scale modelling of the urban heat island hazard during heatwaves: a case study in Turin](https://doi.org/10.1098/rsta.2024.0574) (2025)
 - [A Comparative Study of LSTM and GRU Models for Wind Forecasting](https://doi.org/10.32520/stmsi.v14i6.5639) (2025)
 - [A fully convolutional neural network to interpolate solar irradiation NWP ensemble forecasts](https://doi.org/10.1016/j.solener.2025.113865) (2025)
-- [Physiologically Active Vegetation Reverses Its Cooling Effect in Humid Urban Climates](https://arxiv.org/abs/2511.00134) (2025)
+- [Physiologically Active Vegetation Reverses Its Cooling Effect in Humid Urban Climates](https://doi.org/10.1038/s41467-026-72636-w) (2025)
 - [Emulating the expansion of Antarctic perennial firn aquifers in the 21st century](https://doi.org/10.5194/tc-19-5157-2025) (2025)
 - [Physics-constrained deep learning bias correction of CMIP6 solar radiation over Africa and its implications for solar power planning in a changing climate](https://doi.org/10.1016/j.renene.2025.124658) (2025)
 - [Sensitivity of WRF Operational Forecasting to AIFS Initialisation: A Case Study on the Implications for Air Pollutant Dispersion](https://doi.org/10.3390/earth6040132) (2025)
@@ -1057,7 +1064,7 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 - [Artificial Intelligence Techniques for Environmental Weather Monitoring and Prediction System Using IoT and Multi-Model Progressive Dense Self-Attention: Trends and Challenges](https://doi.org/10.65521/ijacect.v14i1.2739) (2025)
 - [Next-generation hybrid precipitation forecasts that integrate Indigenous knowledge](https://doi.org/10.1088/1748-9326/ade4e2) (2025)
 - [A new gridded offshore wind profile product for US coasts using machine learning and satellite observations](https://doi.org/10.5194/wes-10-1077-2025) (2025)
-- [Retrieval of Surface Solar Radiation through Implicit Albedo Recovery from Temporal Context](https://arxiv.org/abs/2506.10174) (2025)
+- [Retrieval of Surface Solar Radiation through Implicit Albedo Recovery from Temporal Context](https://doi.org/10.1016/j.solener.2025.114188) (2025)
 - [Ensemble of Artificial Neural Networks for Seasonal Forecasting of Wind Speed in Eastern Canada](https://doi.org/10.3390/en18112975) (2025)
 - [Impact assessment of land-use and land-cover on urban heat waves using remote sensing and machine learning algorithms](https://doi.org/10.1007/s13762-025-06569-0) (2025)
 - [Ultra-short-term prediction of spatio-temporal wind speed based on a hybrid deep learning model](https://doi.org/10.3389/feart.2025.1580945) (2025)
@@ -1100,7 +1107,7 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 - [Foundation Models as Assistive Tools in Hydrometeorology: Opportunities, Challenges, and Perspectives](https://doi.org/10.1029/2024wr039553) (2025)
 - [Deep learning-based identification of precipitation clouds from all-sky camera data for observatory safety](https://arxiv.org/abs/2503.18670) (2025)
 - [Global projections of heat stress at high temporal resolution using machine learning](https://doi.org/10.5194/essd-17-1153-2025) (2025)
-- [Diagnosing syndromes of biosphere-atmosphere-socioeconomic change](https://arxiv.org/abs/2503.08874) (2025)
+- [Diagnosing syndromes of biosphere-atmosphere-socioeconomic change](https://doi.org/10.1016/j.oneear.2025.101559) (2025)
 - [Statistical evaluation of a diversified surface solar irradiation data repository and forecasting using a recurrent neural network-hybrid model: A case study in Bhutan](https://doi.org/10.1016/j.renene.2025.122706) (2025)
 - [Application of Seq2Seq models for predicting the development of thunderstorm activity to enhance the pilot’s situational awareness in flight](https://doi.org/10.26467/2079-0619-2025-28-1-20-38) (2025)
 - [Weather Monitoring and Prediction System for Rice Cultivation in Mandalay Using IoT and Machine Learning](https://doi.org/10.33022/ijcs.v14i1.4749) (2025)
@@ -1180,7 +1187,7 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 - [Exploring super-resolution spatial downscaling of several meteorological variables and potential applications for photovoltaic power](https://doi.org/10.1038/s41598-024-57759-8) (2024)
 - [Operational wind and turbulence nowcasting capability for advanced air mobility](https://doi.org/10.1007/s00521-024-09614-0) (2024)
 - [Automated Classification of Atmospheric Circulation Types for Compound Flood Risk Assessment: CMIP6 Model Analysis Utilising a Deep Learning Ensemble](https://doi.org/10.1088/1748-9326/adddcb) (2024)
-- [Spatio-seasonal risk assessment of upward lightning at tall objects using meteorological reanalysis data](https://arxiv.org/abs/2403.18853) (2024)
+- [Spatio-seasonal risk assessment of upward lightning at tall objects using meteorological reanalysis data](https://doi.org/10.1029/2024ea003706) (2024)
 - [Machine learning motivated data imputation of storm data used in coastal hazard assessments](https://doi.org/10.1016/j.coastaleng.2024.104505) (2024)
 - [Improving the operational forecasts of outdoor Universal Thermal Climate Index with post-processing](https://doi.org/10.1007/s00484-024-02640-6) (2024)
 - [Rapid natural hazard extent estimation from twitter data: investigation for hurricane impact areas](https://doi.org/10.1007/s11069-024-06488-2) (2024)
@@ -1198,7 +1205,7 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 - [Leveraging multisource data for accurate agricultural drought monitoring: A hybrid deep learning model](https://doi.org/10.1016/j.agwat.2024.108692) (2024)
 - [Agricultural Recommendation System based on Deep Learning: A Multivariate Weather Forecasting Approach](https://arxiv.org/abs/2401.11410) (2024)
 - [Blending of a novel all sky imager model with persistence and a satellite based model for high-resolution irradiance nowcasting](https://doi.org/10.1016/j.solener.2024.112319) (2024)
-- [WindSeer: Real-time volumetric wind prediction over complex terrain aboard a small UAV](https://arxiv.org/abs/2401.09944) (2024)
+- [WindSeer: Real-time volumetric wind prediction over complex terrain aboard a small UAV](https://doi.org/10.1038/s41467-024-47778-4) (2024)
 - [Multivariate time series convolutional neural networks for long-term agricultural drought prediction under global warming](https://doi.org/10.1016/j.agwat.2024.108683) (2024)
 - [Bias correction of wind power forecasts with SCADA data and continuous learning](https://arxiv.org/abs/2402.13916) (2024)
 - [Learning Skillful Short Term Solar Radiation Forecasting](https://doi.org/10.2139/ssrn.5002074) (2024)
@@ -1245,7 +1252,6 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 - [Early warning of low visibility using the ensembling of machine learning approaches for aviation services at Jay Prakash Narayan International (JPNI) Airport Patna](https://doi.org/10.1007/s42452-023-05350-7) (2023)
 - [Improving risk reduction potential of weather index insurance by spatially downscaling gridded climate data - a machine learning approach](https://doi.org/10.1080/20964471.2023.2196830) (2023)
 - [BMAE-Net: A Data-Driven Weather Prediction Network for Smart Agriculture](https://doi.org/10.3390/agronomy13030625) (2023)
-- [Omnivision forecasting: Combining satellite and sky images for improved deterministic and probabilistic intra-hour solar energy predictions](https://doi.org/10.1016/j.apenergy.2023.120818) (2023)
 - [A simplified multi-model statistical approach for predicting the effects of forest management on land surface temperature in Fennoscandia](https://doi.org/10.1016/j.agrformet.2023.109362) (2023)
 - [Renewable Energy Potential Estimation Using Climatic-Weather-Forecasting Machine Learning Algorithms](https://doi.org/10.3390/en16041603) (2023)
 - [Diffusion Models for High-Resolution Solar Forecasts](https://arxiv.org/abs/2302.00170) (2023)
@@ -1271,14 +1277,14 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 - [Automated Identification of “Dunkelflaute” Events: A Convolutional Neural Network–Based Autoencoder Approach](https://doi.org/10.1175/aies-d-22-0015.1) (2022)
 - [Comparison of different forecasting tools for short-range lightning strike risk assessment](https://doi.org/10.1007/s11069-022-05546-x) (2022)
 - [Machine learning forecasts of Scandinavian numerical weather prediction wind model residuals with control theory for wind energy](https://doi.org/10.1016/j.egyr.2022.08.105) (2022)
-- [A Multi-Modal Wildfire Prediction and Personalized Early-Warning System Based on a Novel Machine Learning Framework](https://arxiv.org/abs/2208.09079) (2022)
-- [Simulation of Atlantic Hurricane Tracks and Features: A Deep Learning Approach](https://arxiv.org/abs/2209.06901) (2022)
-- [Site adaptation with machine learning for a Northern Europe gridded solar radiation product](https://arxiv.org/abs/2208.04127) (2022)
+- [A Multi-Modal Wildfire Prediction and Personalized Early-Warning System Based on a Novel Machine Learning Framework](https://doi.org/10.1016/j.jenvman.2023.117908) (2022)
+- [Simulation of Atlantic Hurricane Tracks and Features: A Deep Learning Approach](https://doi.org/10.1175/aies-d-22-0060.1) (2022)
+- [Site adaptation with machine learning for a Northern Europe gridded solar radiation product](https://doi.org/10.1016/j.egyai.2023.100331) (2022)
 - [Application of extreme gradient boosting and Shapley Additive explanations to predict temperature regimes inside forests from standard open-field meteorological data](https://doi.org/10.1016/j.envsoft.2022.105466) (2022)
 - [Sentimental wildfire: a social-physics machine learning model for wildfire nowcasting](https://doi.org/10.1007/s42001-022-00174-8) (2022)
 - [A two-step machine learning approach to statistical post-processing of weather forecasts for power generation](https://arxiv.org/abs/2207.07589) (2022)
 - [Bayesian neural networks for the probabilistic forecasting of wind direction and speed using ocean data](https://arxiv.org/abs/2206.08953) (2022)
-- [Omnivision forecasting: combining satellite observations with sky images for improved intra-hour solar energy predictions](https://arxiv.org/abs/2206.03207) (2022)
+- [Omnivision forecasting: combining satellite observations with sky images for improved intra-hour solar energy predictions](https://doi.org/10.1016/j.apenergy.2023.120818) (2022)
 - [Improvement in Solar-Radiation Forecasting Based on Evolutionary KNEA Method and Numerical Weather Prediction](https://doi.org/10.3390/su14116824) (2022)
 - [A Smart Post-Processing System for Forecasting the Climate Precipitation Based on Machine Learning Computations](https://doi.org/10.3390/su14116624) (2022)
 - [GLObal Building heights for Urban Studies (UT-GLOBUS) for city- and street- scale urban simulations: Development and first applications](https://arxiv.org/abs/2205.12224) (2022)
@@ -1350,7 +1356,7 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 - [An Accurate, Light-Weight Wind Speed Predictor for Renewable Energy Management Systems](https://doi.org/10.3390/en12224355) (2019)
 - [Short-term forecasting of solar irradiance without local telemetry: a generalized model using satellite data](https://arxiv.org/abs/1911.04932) (2019)
 - [Applying Machine Learning Methods to the Assessment of Tropical Cyclone Impacts](https://doi.org/10.3929/ethz-b-000398592) (2019)
-- [Data-based wind disaster climate identification algorithm and extreme wind speed prediction](https://arxiv.org/abs/1908.11051) (2019)
+- [Data-based wind disaster climate identification algorithm and extreme wind speed prediction](https://doi.org/10.1061/(asce)st.1943-541x.0002954) (2019)
 - [A gated recurrent unit neural networks based wind speed error correction model for short-term wind power forecasting](https://doi.org/10.1016/j.neucom.2019.07.058) (2019)
 - [Data‐driven wind speed forecasting using deep feature extraction and LSTM](https://doi.org/10.1049/iet-rpg.2018.5917) (2019)
 - [Stratospheric Aerosol Injection as a Deep Reinforcement Learning Problem](https://arxiv.org/abs/1905.07366) (2019)
@@ -1366,6 +1372,6 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 - [24-hours wind speed forecasting and wind power generation in La Serena (Chile)](https://doi.org/10.1177/0309524x18780381) (2018)
 - [Forecasting Seasonal Rainfall in Zambia – An Artificial Neural Network Approach](https://doi.org/10.33260/zictjournal.v2i1.46) (2018)
 - [Ensemble empirical mode decomposition based adaptive wavelet neural network method for wind speed prediction](https://doi.org/10.1016/j.enconman.2018.04.099) (2018)
-- [An Unsupervised Clustering-Based Short-Term Solar Forecasting Methodology Using Multi-Model Machine Learning Blending](https://arxiv.org/abs/1805.04193) (2018)
+- [An Unsupervised Clustering-Based Short-Term Solar Forecasting Methodology Using Multi-Model Machine Learning Blending](https://doi.org/10.1109/tste.2018.2881531) (2018)
 - [Using Artificial Intelligence to Improve Real-Time Decision-Making for High-Impact Weather](https://doi.org/10.1175/bams-d-16-0123.1) (2017)
 

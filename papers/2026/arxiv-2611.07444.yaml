@@ -1,0 +1,52 @@
+id: arxiv-2611.07444
+title: Two-stage residual learning for calibrated uncertainty in solar irradiance forecasts
+authors:
+- RR Flanagan
+- E Kasha
+- PW Talbot
+- AS Epiny
+- MR Deinert
+date: '2026-11-05'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2611.07444'
+links:
+  paper: https://arxiv.org/abs/2611.07444
+  pdf: https://arxiv.org/pdf/2611.07444
+topic: local-forecasting
+topics:
+- applications-impacts
+type: model
+method:
+- rnn
+- classical-ml
+timescale:
+- short
+spatial:
+- local
+data:
+- other
+status: research
+summary: Two-stage LSTM and Gaussian process error model gives calibrated solar irradiance uncertainty,
+  cutting standard-deviation mismatch by 56.5% versus the LSTM alone.
+abstract: Accurate forecasting of renewable generation requires not only point predictions but also reliable
+  estimates of the uncertainty attached to them, particularly at extended horizons. Machine learning models
+  are increasingly used to predict solar output, but they typically report a single value and capture
+  the associated uncertainty poorly. The standard remedy is to train a model to predict the parameters
+  of an assumed probability distribution directly. Here we develop an alternative two-stage method, motivated
+  by synthetic solar signal generation, in which the forecast error is modeled separately from the expected
+  irradiance. A first long short-term memory (LSTM) network predicts the expected global horizontal irradiance,
+  and a second network models the distribution of the forecast error, which is added back to the mean
+  to give both the forecast and its uncertainty. Using historical weather data from the National Solar
+  Radiation Database and a probability integral transform evaluation, we show that explicitly modeling
+  the error brings the predicted standard deviation markedly closer to the historical value, reducing
+  the deviation between the two by 34.6 percent for a standalone LSTM and by 56.5 percent when the LSTM
+  is coupled to Gaussian process regression, the most reliable of the configurations tested. Because the
+  method models the total forecast error directly, it captures the full predictive uncertainty that matters
+  for decisions, rather than only the model contribution that dropout-based approaches estimate.
+significance: 3
+score: 12
+highlight: false
+added: '2026-11-09'
+source: weekly

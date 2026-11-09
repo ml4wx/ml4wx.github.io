@@ -1,12 +1,13 @@
 {
+ "checked": "2026-11-09",
  "benchmarks": {
   "operational-weatherbench": {
-   "fetched": "2026-11-04",
+   "fetched": "2026-11-09",
    "boards": [
     {
      "id": "global",
      "title": "Global",
-     "as_of": "2026-10-27",
+     "as_of": "2026-10-31",
      "columns": [
       {
        "key": "wins",
@@ -90,243 +91,15 @@
       {
        "id": "wn3-ens-mean",
        "values": {
-        "wins": 171,
+        "wins": 167,
         "led": 7,
-        "2m_temperature": 1.12282,
-        "temperature_850": 1.29776,
-        "geopotential_500": 230.897,
-        "mean_sea_level_pressure": 2.36012,
-        "10m_wind_speed": 1.47763,
-        "wind_vector_850": 3.76134,
-        "specific_humidity_700": 1.02323
-       }
-      },
-      {
-       "id": "fgn-ens-mean",
-       "values": {
-        "wins": 34,
-        "led": 0,
-        "2m_temperature": 1.16303,
-        "temperature_850": 1.33377,
-        "geopotential_500": 242.937,
-        "mean_sea_level_pressure": 2.44625,
-        "10m_wind_speed": 1.50998,
-        "wind_vector_850": 3.86269,
-        "specific_humidity_700": 1.04232
-       }
-      },
-      {
-       "id": "ifs-ens-mean",
-       "values": {
-        "wins": 0,
-        "led": 0,
-        "2m_temperature": 1.22971,
-        "temperature_850": 1.48668,
-        "geopotential_500": 269.005,
-        "mean_sea_level_pressure": 2.74314,
-        "10m_wind_speed": 1.61166,
-        "wind_vector_850": 4.22529,
-        "specific_humidity_700": 1.14762
-       }
-      },
-      {
-       "id": "aifs-ens-mean",
-       "values": {
-        "wins": 1,
-        "led": 0,
-        "2m_temperature": 1.23115,
-        "temperature_850": 1.39339,
-        "geopotential_500": 260.871,
-        "mean_sea_level_pressure": 2.6021,
-        "10m_wind_speed": 1.53677,
-        "wind_vector_850": 4.03003,
-        "specific_humidity_700": 1.05478
-       }
-      },
-      {
-       "id": "aurora-v1p5-ens-mean",
-       "values": {
-        "wins": 4,
-        "led": 0,
-        "2m_temperature": 1.35362,
-        "temperature_850": 1.44971,
-        "geopotential_500": 275.598,
-        "mean_sea_level_pressure": 2.71905,
-        "10m_wind_speed": 1.60612,
-        "wind_vector_850": 4.12809,
-        "specific_humidity_700": 1.10678
-       }
-      },
-      {
-       "id": "gefs-mean",
-       "values": {
-        "wins": 0,
-        "led": 0,
-        "2m_temperature": 1.38462,
-        "temperature_850": 1.67965,
-        "geopotential_500": 317.037,
-        "mean_sea_level_pressure": 3.18702,
-        "10m_wind_speed": 1.87891,
-        "wind_vector_850": 4.53648,
-        "specific_humidity_700": 1.14437
-       }
-      },
-      {
-       "id": "graphcast-hres",
-       "values": {
-        "wins": 0,
-        "led": 0,
-        "2m_temperature": 1.39085,
-        "temperature_850": 1.63516,
-        "geopotential_500": 298.969,
-        "mean_sea_level_pressure": 3.0595,
-        "10m_wind_speed": 1.87535,
-        "wind_vector_850": 4.62265,
-        "specific_humidity_700": 1.17592
-       }
-      },
-      {
-       "id": "hres",
-       "values": {
-        "wins": 0,
-        "led": 0,
-        "2m_temperature": 1.47125,
-        "temperature_850": 1.75133,
-        "geopotential_500": 306.323,
-        "mean_sea_level_pressure": 3.18438,
-        "10m_wind_speed": 1.99453,
-        "wind_vector_850": 5.09838,
-        "specific_humidity_700": 1.41566
-       }
-      },
-      {
-       "id": "atlas-crps-ens-mean",
-       "values": {
-        "wins": 0,
-        "led": 0,
-        "2m_temperature": 1.55591,
-        "temperature_850": 1.66127,
-        "geopotential_500": 298.53,
-        "mean_sea_level_pressure": 3.05481,
-        "10m_wind_speed": 1.75925,
-        "wind_vector_850": 4.45973,
-        "specific_humidity_700": 1.17407
-       }
-      },
-      {
-       "id": "gfs",
-       "values": {
-        "wins": 0,
-        "led": 0,
-        "2m_temperature": 1.64944,
-        "temperature_850": 1.94197,
-        "geopotential_500": 356.228,
-        "mean_sea_level_pressure": 3.66021,
-        "10m_wind_speed": 2.22242,
-        "wind_vector_850": 5.50338,
-        "specific_humidity_700": 1.45629
-       }
-      }
-     ],
-     "note": "Last 30 daily 12 UTC runs, up to 2026-10-27. Variable columns: RMSE pooled over the ranked lead times; each model against its own analysis (WeatherNext against the IFS analysis).",
-     "leader": "wn3-ens-mean"
-    },
-    {
-     "id": "northern-hemisphere",
-     "title": "N. Hemisphere",
-     "as_of": "2026-10-27",
-     "columns": [
-      {
-       "key": "wins",
-       "label": "Days won",
-       "unit": "",
-       "better": "higher",
-       "digits": 0,
-       "help": "Runs in which the model was #1, summed over the 7 variables (30 runs each)"
-      },
-      {
-       "key": "led",
-       "label": "Variables led",
-       "unit": "",
-       "better": "higher",
-       "digits": 0,
-       "help": "Variables where the model is the 30-day champion"
-      },
-      {
-       "key": "2m_temperature",
-       "label": "T2m",
-       "unit": "K",
-       "better": "lower",
-       "digits": 2,
-       "help": "RMSE"
-      },
-      {
-       "key": "temperature_850",
-       "label": "T850",
-       "unit": "K",
-       "better": "lower",
-       "digits": 2,
-       "help": "RMSE"
-      },
-      {
-       "key": "geopotential_500",
-       "label": "Z500",
-       "unit": "m²/s²",
-       "better": "lower",
-       "digits": 1,
-       "help": "RMSE"
-      },
-      {
-       "key": "mean_sea_level_pressure",
-       "label": "MSLP",
-       "unit": "hPa",
-       "better": "lower",
-       "digits": 2,
-       "help": "RMSE"
-      },
-      {
-       "key": "10m_wind_speed",
-       "label": "10 m wind",
-       "unit": "m/s",
-       "better": "lower",
-       "digits": 2,
-       "help": "RMSE"
-      },
-      {
-       "key": "wind_vector_850",
-       "label": "Wind 850",
-       "unit": "m/s",
-       "better": "lower",
-       "digits": 2,
-       "help": "RMSE"
-      },
-      {
-       "key": "specific_humidity_700",
-       "label": "Q700",
-       "unit": "g/kg",
-       "better": "lower",
-       "digits": 3,
-       "help": "RMSE"
-      }
-     ],
-     "sort": "wins",
-     "card": [
-      "wins",
-      "led"
-     ],
-     "rows": [
-      {
-       "id": "wn3-ens-mean",
-       "values": {
-        "wins": 162,
-        "led": 7,
-        "2m_temperature": 1.30096,
-        "temperature_850": 1.41084,
-        "geopotential_500": 271.815,
-        "mean_sea_level_pressure": 2.67173,
-        "10m_wind_speed": 1.52193,
-        "wind_vector_850": 4.05973,
-        "specific_humidity_700": 0.9798
+        "2m_temperature": 1.11942,
+        "temperature_850": 1.29282,
+        "geopotential_500": 230.791,
+        "mean_sea_level_pressure": 2.35106,
+        "10m_wind_speed": 1.48099,
+        "wind_vector_850": 3.76467,
+        "specific_humidity_700": 1.02249
        }
       },
       {
@@ -334,41 +107,55 @@
        "values": {
         "wins": 36,
         "led": 0,
-        "2m_temperature": 1.36517,
-        "temperature_850": 1.47074,
-        "geopotential_500": 288.928,
-        "mean_sea_level_pressure": 2.80582,
-        "10m_wind_speed": 1.56392,
-        "wind_vector_850": 4.19579,
-        "specific_humidity_700": 1.0048
+        "2m_temperature": 1.15623,
+        "temperature_850": 1.32547,
+        "geopotential_500": 241.802,
+        "mean_sea_level_pressure": 2.43409,
+        "10m_wind_speed": 1.51097,
+        "wind_vector_850": 3.85991,
+        "specific_humidity_700": 1.04279
        }
       },
       {
        "id": "ifs-ens-mean",
        "values": {
-        "wins": 5,
+        "wins": 0,
         "led": 0,
-        "2m_temperature": 1.4141,
-        "temperature_850": 1.65583,
-        "geopotential_500": 329.281,
-        "mean_sea_level_pressure": 3.231,
-        "10m_wind_speed": 1.64647,
-        "wind_vector_850": 4.61791,
-        "specific_humidity_700": 1.08005
+        "2m_temperature": 1.2183,
+        "temperature_850": 1.47322,
+        "geopotential_500": 266.574,
+        "mean_sea_level_pressure": 2.71283,
+        "10m_wind_speed": 1.60661,
+        "wind_vector_850": 4.1946,
+        "specific_humidity_700": 1.14528
        }
       },
       {
        "id": "aifs-ens-mean",
        "values": {
-        "wins": 1,
+        "wins": 3,
         "led": 0,
-        "2m_temperature": 1.44548,
-        "temperature_850": 1.57197,
-        "geopotential_500": 316.801,
-        "mean_sea_level_pressure": 3.04376,
-        "10m_wind_speed": 1.59186,
-        "wind_vector_850": 4.44296,
-        "specific_humidity_700": 1.02724
+        "2m_temperature": 1.22457,
+        "temperature_850": 1.3825,
+        "geopotential_500": 257.614,
+        "mean_sea_level_pressure": 2.5722,
+        "10m_wind_speed": 1.53559,
+        "wind_vector_850": 4.00859,
+        "specific_humidity_700": 1.05465
+       }
+      },
+      {
+       "id": "aurora-v1p5-ens-mean",
+       "values": {
+        "wins": 4,
+        "led": 0,
+        "2m_temperature": 1.35641,
+        "temperature_850": 1.4491,
+        "geopotential_500": 274.707,
+        "mean_sea_level_pressure": 2.71138,
+        "10m_wind_speed": 1.6066,
+        "wind_vector_850": 4.12265,
+        "specific_humidity_700": 1.10839
        }
       },
       {
@@ -376,13 +163,227 @@
        "values": {
         "wins": 0,
         "led": 0,
-        "2m_temperature": 1.55889,
-        "temperature_850": 1.87091,
-        "geopotential_500": 385.985,
-        "mean_sea_level_pressure": 3.73377,
-        "10m_wind_speed": 1.96308,
-        "wind_vector_850": 4.96148,
-        "specific_humidity_700": 1.14953
+        "2m_temperature": 1.36371,
+        "temperature_850": 1.66649,
+        "geopotential_500": 315.067,
+        "mean_sea_level_pressure": 3.15551,
+        "10m_wind_speed": 1.86517,
+        "wind_vector_850": 4.50223,
+        "specific_humidity_700": 1.14091
+       }
+      },
+      {
+       "id": "graphcast-hres",
+       "values": {
+        "wins": 0,
+        "led": 0,
+        "2m_temperature": 1.38819,
+        "temperature_850": 1.62408,
+        "geopotential_500": 297.455,
+        "mean_sea_level_pressure": 3.03366,
+        "10m_wind_speed": 1.87119,
+        "wind_vector_850": 4.60485,
+        "specific_humidity_700": 1.17107
+       }
+      },
+      {
+       "id": "hres",
+       "values": {
+        "wins": 0,
+        "led": 0,
+        "2m_temperature": 1.46116,
+        "temperature_850": 1.73451,
+        "geopotential_500": 305.23,
+        "mean_sea_level_pressure": 3.16106,
+        "10m_wind_speed": 1.98873,
+        "wind_vector_850": 5.06559,
+        "specific_humidity_700": 1.41106
+       }
+      },
+      {
+       "id": "atlas-crps-ens-mean",
+       "values": {
+        "wins": 0,
+        "led": 0,
+        "2m_temperature": 1.54546,
+        "temperature_850": 1.64912,
+        "geopotential_500": 296.453,
+        "mean_sea_level_pressure": 3.0259,
+        "10m_wind_speed": 1.75207,
+        "wind_vector_850": 4.4399,
+        "specific_humidity_700": 1.17057
+       }
+      },
+      {
+       "id": "gfs",
+       "values": {
+        "wins": 0,
+        "led": 0,
+        "2m_temperature": 1.63286,
+        "temperature_850": 1.93538,
+        "geopotential_500": 359.65,
+        "mean_sea_level_pressure": 3.66177,
+        "10m_wind_speed": 2.2168,
+        "wind_vector_850": 5.49223,
+        "specific_humidity_700": 1.45507
+       }
+      }
+     ],
+     "note": "Last 30 daily 12 UTC runs, up to 2026-10-31. Variable columns: RMSE pooled over the ranked lead times; each model against its own analysis (WeatherNext against the IFS analysis).",
+     "leader": "wn3-ens-mean"
+    },
+    {
+     "id": "northern-hemisphere",
+     "title": "N. Hemisphere",
+     "as_of": "2026-10-31",
+     "columns": [
+      {
+       "key": "wins",
+       "label": "Days won",
+       "unit": "",
+       "better": "higher",
+       "digits": 0,
+       "help": "Runs in which the model was #1, summed over the 7 variables (30 runs each)"
+      },
+      {
+       "key": "led",
+       "label": "Variables led",
+       "unit": "",
+       "better": "higher",
+       "digits": 0,
+       "help": "Variables where the model is the 30-day champion"
+      },
+      {
+       "key": "2m_temperature",
+       "label": "T2m",
+       "unit": "K",
+       "better": "lower",
+       "digits": 2,
+       "help": "RMSE"
+      },
+      {
+       "key": "temperature_850",
+       "label": "T850",
+       "unit": "K",
+       "better": "lower",
+       "digits": 2,
+       "help": "RMSE"
+      },
+      {
+       "key": "geopotential_500",
+       "label": "Z500",
+       "unit": "m²/s²",
+       "better": "lower",
+       "digits": 1,
+       "help": "RMSE"
+      },
+      {
+       "key": "mean_sea_level_pressure",
+       "label": "MSLP",
+       "unit": "hPa",
+       "better": "lower",
+       "digits": 2,
+       "help": "RMSE"
+      },
+      {
+       "key": "10m_wind_speed",
+       "label": "10 m wind",
+       "unit": "m/s",
+       "better": "lower",
+       "digits": 2,
+       "help": "RMSE"
+      },
+      {
+       "key": "wind_vector_850",
+       "label": "Wind 850",
+       "unit": "m/s",
+       "better": "lower",
+       "digits": 2,
+       "help": "RMSE"
+      },
+      {
+       "key": "specific_humidity_700",
+       "label": "Q700",
+       "unit": "g/kg",
+       "better": "lower",
+       "digits": 3,
+       "help": "RMSE"
+      }
+     ],
+     "sort": "wins",
+     "card": [
+      "wins",
+      "led"
+     ],
+     "rows": [
+      {
+       "id": "wn3-ens-mean",
+       "values": {
+        "wins": 160,
+        "led": 7,
+        "2m_temperature": 1.32549,
+        "temperature_850": 1.4158,
+        "geopotential_500": 269.436,
+        "mean_sea_level_pressure": 2.64149,
+        "10m_wind_speed": 1.53321,
+        "wind_vector_850": 4.0657,
+        "specific_humidity_700": 0.97375
+       }
+      },
+      {
+       "id": "fgn-ens-mean",
+       "values": {
+        "wins": 38,
+        "led": 0,
+        "2m_temperature": 1.38653,
+        "temperature_850": 1.47419,
+        "geopotential_500": 286.003,
+        "mean_sea_level_pressure": 2.77283,
+        "10m_wind_speed": 1.57011,
+        "wind_vector_850": 4.19457,
+        "specific_humidity_700": 0.99845
+       }
+      },
+      {
+       "id": "ifs-ens-mean",
+       "values": {
+        "wins": 5,
+        "led": 0,
+        "2m_temperature": 1.43524,
+        "temperature_850": 1.66928,
+        "geopotential_500": 327.945,
+        "mean_sea_level_pressure": 3.2093,
+        "10m_wind_speed": 1.65699,
+        "wind_vector_850": 4.61472,
+        "specific_humidity_700": 1.07006
+       }
+      },
+      {
+       "id": "aifs-ens-mean",
+       "values": {
+        "wins": 1,
+        "led": 0,
+        "2m_temperature": 1.47561,
+        "temperature_850": 1.57654,
+        "geopotential_500": 311.876,
+        "mean_sea_level_pressure": 2.99345,
+        "10m_wind_speed": 1.59979,
+        "wind_vector_850": 4.42764,
+        "specific_humidity_700": 1.01897
+       }
+      },
+      {
+       "id": "gefs-mean",
+       "values": {
+        "wins": 0,
+        "led": 0,
+        "2m_temperature": 1.59053,
+        "temperature_850": 1.8943,
+        "geopotential_500": 386.911,
+        "mean_sea_level_pressure": 3.74381,
+        "10m_wind_speed": 1.97037,
+        "wind_vector_850": 4.96946,
+        "specific_humidity_700": 1.14037
        }
       },
       {
@@ -390,13 +391,13 @@
        "values": {
         "wins": 6,
         "led": 0,
-        "2m_temperature": 1.56372,
-        "temperature_850": 1.60091,
-        "geopotential_500": 329.482,
-        "mean_sea_level_pressure": 3.14781,
-        "10m_wind_speed": 1.66162,
-        "wind_vector_850": 4.51277,
-        "specific_humidity_700": 1.05553
+        "2m_temperature": 1.59138,
+        "temperature_850": 1.60993,
+        "geopotential_500": 327.327,
+        "mean_sea_level_pressure": 3.11255,
+        "10m_wind_speed": 1.66773,
+        "wind_vector_850": 4.50078,
+        "specific_humidity_700": 1.04592
        }
       },
       {
@@ -404,13 +405,13 @@
        "values": {
         "wins": 0,
         "led": 0,
-        "2m_temperature": 1.64529,
-        "temperature_850": 1.84393,
-        "geopotential_500": 365.126,
-        "mean_sea_level_pressure": 3.57131,
-        "10m_wind_speed": 1.96962,
-        "wind_vector_850": 5.1374,
-        "specific_humidity_700": 1.17185
+        "2m_temperature": 1.68536,
+        "temperature_850": 1.84802,
+        "geopotential_500": 362.943,
+        "mean_sea_level_pressure": 3.52941,
+        "10m_wind_speed": 1.97617,
+        "wind_vector_850": 5.12794,
+        "specific_humidity_700": 1.15917
        }
       },
       {
@@ -418,27 +419,13 @@
        "values": {
         "wins": 0,
         "led": 0,
-        "2m_temperature": 1.67356,
-        "temperature_850": 1.93387,
-        "geopotential_500": 368.182,
-        "mean_sea_level_pressure": 3.68064,
-        "10m_wind_speed": 2.03555,
-        "wind_vector_850": 5.56716,
-        "specific_humidity_700": 1.36533
-       }
-      },
-      {
-       "id": "gfs",
-       "values": {
-        "wins": 0,
-        "led": 0,
-        "2m_temperature": 1.84328,
-        "temperature_850": 2.14389,
-        "geopotential_500": 434.113,
-        "mean_sea_level_pressure": 4.25986,
-        "10m_wind_speed": 2.31832,
-        "wind_vector_850": 6.03723,
-        "specific_humidity_700": 1.47776
+        "2m_temperature": 1.70641,
+        "temperature_850": 1.95578,
+        "geopotential_500": 371.846,
+        "mean_sea_level_pressure": 3.70291,
+        "10m_wind_speed": 2.05616,
+        "wind_vector_850": 5.59512,
+        "specific_humidity_700": 1.35105
        }
       },
       {
@@ -446,23 +433,37 @@
        "values": {
         "wins": 0,
         "led": 0,
-        "2m_temperature": 1.87367,
-        "temperature_850": 1.8649,
-        "geopotential_500": 361.907,
-        "mean_sea_level_pressure": 3.58089,
-        "10m_wind_speed": 1.86261,
-        "wind_vector_850": 4.95261,
-        "specific_humidity_700": 1.12517
+        "2m_temperature": 1.88082,
+        "temperature_850": 1.86745,
+        "geopotential_500": 357.757,
+        "mean_sea_level_pressure": 3.52961,
+        "10m_wind_speed": 1.86279,
+        "wind_vector_850": 4.94611,
+        "specific_humidity_700": 1.11823
+       }
+      },
+      {
+       "id": "gfs",
+       "values": {
+        "wins": 0,
+        "led": 0,
+        "2m_temperature": 1.89836,
+        "temperature_850": 2.19662,
+        "geopotential_500": 448.17,
+        "mean_sea_level_pressure": 4.37806,
+        "10m_wind_speed": 2.35061,
+        "wind_vector_850": 6.12169,
+        "specific_humidity_700": 1.47197
        }
       }
      ],
-     "note": "Last 30 daily 12 UTC runs, up to 2026-10-27. Variable columns: RMSE pooled over the ranked lead times; each model against its own analysis (WeatherNext against the IFS analysis).",
+     "note": "Last 30 daily 12 UTC runs, up to 2026-10-31. Variable columns: RMSE pooled over the ranked lead times; each model against its own analysis (WeatherNext against the IFS analysis).",
      "leader": "wn3-ens-mean"
     },
     {
      "id": "tropics",
      "title": "Tropics",
-     "as_of": "2026-10-27",
+     "as_of": "2026-10-31",
      "columns": [
       {
        "key": "wins",
@@ -546,43 +547,43 @@
       {
        "id": "wn3-ens-mean",
        "values": {
-        "wins": 177,
+        "wins": 185,
         "led": 7,
-        "2m_temperature": 0.80294,
-        "temperature_850": 0.76595,
-        "geopotential_500": 45.6827,
-        "mean_sea_level_pressure": 0.645,
-        "10m_wind_speed": 1.06739,
-        "wind_vector_850": 2.39321,
-        "specific_humidity_700": 1.2242
+        "2m_temperature": 0.79987,
+        "temperature_850": 0.74163,
+        "geopotential_500": 44.6845,
+        "mean_sea_level_pressure": 0.63631,
+        "10m_wind_speed": 1.06193,
+        "wind_vector_850": 2.37807,
+        "specific_humidity_700": 1.2219
        }
       },
       {
        "id": "aifs-ens-mean",
        "values": {
-        "wins": 10,
+        "wins": 8,
         "led": 0,
-        "2m_temperature": 0.83466,
-        "temperature_850": 0.79627,
-        "geopotential_500": 49.6397,
-        "mean_sea_level_pressure": 0.6861,
-        "10m_wind_speed": 1.09868,
-        "wind_vector_850": 2.56417,
-        "specific_humidity_700": 1.24902
+        "2m_temperature": 0.83237,
+        "temperature_850": 0.77167,
+        "geopotential_500": 48.6638,
+        "mean_sea_level_pressure": 0.67185,
+        "10m_wind_speed": 1.09207,
+        "wind_vector_850": 2.53924,
+        "specific_humidity_700": 1.24984
        }
       },
       {
        "id": "fgn-ens-mean",
        "values": {
-        "wins": 23,
+        "wins": 17,
         "led": 0,
-        "2m_temperature": 0.84489,
-        "temperature_850": 0.78523,
-        "geopotential_500": 48.5465,
-        "mean_sea_level_pressure": 0.68371,
-        "10m_wind_speed": 1.08334,
-        "wind_vector_850": 2.44458,
-        "specific_humidity_700": 1.23924
+        "2m_temperature": 0.84195,
+        "temperature_850": 0.76038,
+        "geopotential_500": 47.6413,
+        "mean_sea_level_pressure": 0.67943,
+        "10m_wind_speed": 1.08028,
+        "wind_vector_850": 2.43626,
+        "specific_humidity_700": 1.24112
        }
       },
       {
@@ -590,13 +591,13 @@
        "values": {
         "wins": 0,
         "led": 0,
-        "2m_temperature": 0.912,
-        "temperature_850": 0.88203,
-        "geopotential_500": 62.8866,
-        "mean_sea_level_pressure": 0.89201,
-        "10m_wind_speed": 1.23442,
-        "wind_vector_850": 2.88487,
-        "specific_humidity_700": 1.40086
+        "2m_temperature": 0.90463,
+        "temperature_850": 0.86305,
+        "geopotential_500": 61.9965,
+        "mean_sea_level_pressure": 0.86693,
+        "10m_wind_speed": 1.21906,
+        "wind_vector_850": 2.84071,
+        "specific_humidity_700": 1.40095
        }
       },
       {
@@ -604,13 +605,13 @@
        "values": {
         "wins": 0,
         "led": 0,
-        "2m_temperature": 0.91948,
-        "temperature_850": 0.86379,
-        "geopotential_500": 58.8333,
-        "mean_sea_level_pressure": 0.78986,
-        "10m_wind_speed": 1.32429,
-        "wind_vector_850": 2.78264,
-        "specific_humidity_700": 1.35486
+        "2m_temperature": 0.91499,
+        "temperature_850": 0.83973,
+        "geopotential_500": 59.1547,
+        "mean_sea_level_pressure": 0.77739,
+        "10m_wind_speed": 1.31408,
+        "wind_vector_850": 2.75342,
+        "specific_humidity_700": 1.35199
        }
       },
       {
@@ -618,13 +619,13 @@
        "values": {
         "wins": 0,
         "led": 0,
-        "2m_temperature": 0.95104,
-        "temperature_850": 0.9733,
-        "geopotential_500": 80.788,
-        "mean_sea_level_pressure": 1.00119,
-        "10m_wind_speed": 1.39075,
-        "wind_vector_850": 3.07175,
-        "specific_humidity_700": 1.31893
+        "2m_temperature": 0.94485,
+        "temperature_850": 0.9609,
+        "geopotential_500": 80.7115,
+        "mean_sea_level_pressure": 0.97278,
+        "10m_wind_speed": 1.36409,
+        "wind_vector_850": 2.99494,
+        "specific_humidity_700": 1.31765
        }
       },
       {
@@ -632,13 +633,13 @@
        "values": {
         "wins": 0,
         "led": 0,
-        "2m_temperature": 1.02808,
-        "temperature_850": 0.84931,
-        "geopotential_500": 96.337,
-        "mean_sea_level_pressure": 0.79583,
-        "10m_wind_speed": 1.16351,
-        "wind_vector_850": 2.60906,
-        "specific_humidity_700": 1.32935
+        "2m_temperature": 1.02962,
+        "temperature_850": 0.82152,
+        "geopotential_500": 97.2598,
+        "mean_sea_level_pressure": 0.79585,
+        "10m_wind_speed": 1.1549,
+        "wind_vector_850": 2.58568,
+        "specific_humidity_700": 1.33266
        }
       },
       {
@@ -646,13 +647,13 @@
        "values": {
         "wins": 0,
         "led": 0,
-        "2m_temperature": 1.12327,
-        "temperature_850": 1.03149,
-        "geopotential_500": 72.8064,
-        "mean_sea_level_pressure": 1.0179,
-        "10m_wind_speed": 1.50693,
-        "wind_vector_850": 3.32108,
-        "specific_humidity_700": 1.69582
+        "2m_temperature": 1.11638,
+        "temperature_850": 1.00766,
+        "geopotential_500": 71.3661,
+        "mean_sea_level_pressure": 0.98214,
+        "10m_wind_speed": 1.48524,
+        "wind_vector_850": 3.25518,
+        "specific_humidity_700": 1.6954
        }
       },
       {
@@ -660,13 +661,13 @@
        "values": {
         "wins": 0,
         "led": 0,
-        "2m_temperature": 1.12841,
-        "temperature_850": 1.00446,
-        "geopotential_500": 96.9475,
-        "mean_sea_level_pressure": 1.01606,
-        "10m_wind_speed": 1.30812,
-        "wind_vector_850": 2.94749,
-        "specific_humidity_700": 1.41031
+        "2m_temperature": 1.12028,
+        "temperature_850": 0.98234,
+        "geopotential_500": 92.9142,
+        "mean_sea_level_pressure": 0.98488,
+        "10m_wind_speed": 1.28923,
+        "wind_vector_850": 2.89618,
+        "specific_humidity_700": 1.40489
        }
       },
       {
@@ -674,23 +675,23 @@
        "values": {
         "wins": 0,
         "led": 0,
-        "2m_temperature": 1.13588,
-        "temperature_850": 1.11501,
-        "geopotential_500": 82.6306,
-        "mean_sea_level_pressure": 1.12123,
-        "10m_wind_speed": 1.65547,
-        "wind_vector_850": 3.64898,
-        "specific_humidity_700": 1.66673
+        "2m_temperature": 1.13467,
+        "temperature_850": 1.10451,
+        "geopotential_500": 82.4824,
+        "mean_sea_level_pressure": 1.09656,
+        "10m_wind_speed": 1.63039,
+        "wind_vector_850": 3.58067,
+        "specific_humidity_700": 1.66596
        }
       }
      ],
-     "note": "Last 30 daily 12 UTC runs, up to 2026-10-27. Variable columns: RMSE pooled over the ranked lead times; each model against its own analysis (WeatherNext against the IFS analysis).",
+     "note": "Last 30 daily 12 UTC runs, up to 2026-10-31. Variable columns: RMSE pooled over the ranked lead times; each model against its own analysis (WeatherNext against the IFS analysis).",
      "leader": "wn3-ens-mean"
     },
     {
      "id": "southern-hemisphere",
      "title": "S. Hemisphere",
-     "as_of": "2026-10-27",
+     "as_of": "2026-10-31",
      "columns": [
       {
        "key": "wins",
@@ -774,71 +775,71 @@
       {
        "id": "wn3-ens-mean",
        "values": {
-        "wins": 122,
+        "wins": 107,
         "led": 7,
-        "2m_temperature": 1.21106,
-        "temperature_850": 1.58439,
-        "geopotential_500": 292.487,
-        "mean_sea_level_pressure": 3.0565,
-        "10m_wind_speed": 1.77,
-        "wind_vector_850": 4.52896,
-        "specific_humidity_700": 0.81805
+        "2m_temperature": 1.17651,
+        "temperature_850": 1.57964,
+        "geopotential_500": 294.579,
+        "mean_sea_level_pressure": 3.06341,
+        "10m_wind_speed": 1.77216,
+        "wind_vector_850": 4.53962,
+        "specific_humidity_700": 0.82613
        }
       },
       {
        "id": "fgn-ens-mean",
        "values": {
-        "wins": 56,
-        "led": 0,
-        "2m_temperature": 1.22438,
-        "temperature_850": 1.61079,
-        "geopotential_500": 304.903,
-        "mean_sea_level_pressure": 3.12763,
-        "10m_wind_speed": 1.80462,
-        "wind_vector_850": 4.6342,
-        "specific_humidity_700": 0.83729
+        "wins": 63,
+        "led": 1,
+        "2m_temperature": 1.18219,
+        "temperature_850": 1.59912,
+        "geopotential_500": 305.065,
+        "mean_sea_level_pressure": 3.12912,
+        "10m_wind_speed": 1.80351,
+        "wind_vector_850": 4.63225,
+        "specific_humidity_700": 0.84397
        }
       },
       {
        "id": "ifs-ens-mean",
        "values": {
-        "wins": 4,
+        "wins": 8,
         "led": 0,
-        "2m_temperature": 1.31328,
-        "temperature_850": 1.77704,
-        "geopotential_500": 326.852,
-        "mean_sea_level_pressure": 3.39825,
-        "10m_wind_speed": 1.8951,
-        "wind_vector_850": 4.92162,
-        "specific_humidity_700": 0.8956
+        "2m_temperature": 1.2624,
+        "temperature_850": 1.73973,
+        "geopotential_500": 322.29,
+        "mean_sea_level_pressure": 3.35123,
+        "10m_wind_speed": 1.883,
+        "wind_vector_850": 4.87058,
+        "specific_humidity_700": 0.89852
        }
       },
       {
        "id": "aifs-ens-mean",
        "values": {
-        "wins": 16,
+        "wins": 21,
         "led": 0,
-        "2m_temperature": 1.3364,
-        "temperature_850": 1.66184,
-        "geopotential_500": 321.5,
-        "mean_sea_level_pressure": 3.28207,
-        "10m_wind_speed": 1.8387,
-        "wind_vector_850": 4.76745,
-        "specific_humidity_700": 0.84226
+        "2m_temperature": 1.28559,
+        "temperature_850": 1.64186,
+        "geopotential_500": 318.488,
+        "mean_sea_level_pressure": 3.25974,
+        "10m_wind_speed": 1.83282,
+        "wind_vector_850": 4.74016,
+        "specific_humidity_700": 0.85078
        }
       },
       {
        "id": "aurora-v1p5-ens-mean",
        "values": {
-        "wins": 10,
+        "wins": 9,
         "led": 0,
-        "2m_temperature": 1.4206,
-        "temperature_850": 1.75064,
-        "geopotential_500": 334.771,
-        "mean_sea_level_pressure": 3.44178,
-        "10m_wind_speed": 1.91418,
-        "wind_vector_850": 4.92813,
-        "specific_humidity_700": 0.88172
+        "2m_temperature": 1.39654,
+        "temperature_850": 1.75454,
+        "geopotential_500": 334.384,
+        "mean_sea_level_pressure": 3.45532,
+        "10m_wind_speed": 1.91533,
+        "wind_vector_850": 4.93746,
+        "specific_humidity_700": 0.89421
        }
       },
       {
@@ -846,13 +847,13 @@
        "values": {
         "wins": 0,
         "led": 0,
-        "2m_temperature": 1.51125,
-        "temperature_850": 1.98442,
-        "geopotential_500": 366.085,
-        "mean_sea_level_pressure": 3.86944,
-        "10m_wind_speed": 2.23026,
-        "wind_vector_850": 5.51577,
-        "specific_humidity_700": 0.96259
+        "2m_temperature": 1.46166,
+        "temperature_850": 1.96346,
+        "geopotential_500": 364.451,
+        "mean_sea_level_pressure": 3.84862,
+        "10m_wind_speed": 2.21989,
+        "wind_vector_850": 5.49376,
+        "specific_humidity_700": 0.96437
        }
       },
       {
@@ -860,13 +861,13 @@
        "values": {
         "wins": 1,
         "led": 0,
-        "2m_temperature": 1.56404,
-        "temperature_850": 2.01924,
-        "geopotential_500": 385.952,
-        "mean_sea_level_pressure": 3.97674,
-        "10m_wind_speed": 2.20371,
-        "wind_vector_850": 5.29662,
-        "specific_humidity_700": 0.92526
+        "2m_temperature": 1.47797,
+        "temperature_850": 1.96993,
+        "geopotential_500": 380.1,
+        "mean_sea_level_pressure": 3.89745,
+        "10m_wind_speed": 2.17877,
+        "wind_vector_850": 5.2451,
+        "specific_humidity_700": 0.92576
        }
       },
       {
@@ -874,13 +875,13 @@
        "values": {
         "wins": 1,
         "led": 0,
-        "2m_temperature": 1.56698,
-        "temperature_850": 2.11251,
-        "geopotential_500": 378.677,
-        "mean_sea_level_pressure": 4.01518,
-        "10m_wind_speed": 2.36089,
-        "wind_vector_850": 6.03827,
-        "specific_humidity_700": 1.11702
+        "2m_temperature": 1.5069,
+        "temperature_850": 2.06154,
+        "geopotential_500": 372.64,
+        "mean_sea_level_pressure": 3.94712,
+        "10m_wind_speed": 2.34208,
+        "wind_vector_850": 5.96425,
+        "specific_humidity_700": 1.11748
        }
       },
       {
@@ -888,13 +889,13 @@
        "values": {
         "wins": 0,
         "led": 0,
-        "2m_temperature": 1.58524,
-        "temperature_850": 1.9623,
-        "geopotential_500": 359.759,
-        "mean_sea_level_pressure": 3.79419,
-        "10m_wind_speed": 2.03675,
-        "wind_vector_850": 5.17826,
-        "specific_humidity_700": 0.92827
+        "2m_temperature": 1.55124,
+        "temperature_850": 1.94022,
+        "geopotential_500": 359.796,
+        "mean_sea_level_pressure": 3.78032,
+        "10m_wind_speed": 2.03015,
+        "wind_vector_850": 5.16218,
+        "specific_humidity_700": 0.93193
        }
       },
       {
@@ -902,23 +903,23 @@
        "values": {
         "wins": 0,
         "led": 0,
-        "2m_temperature": 1.87465,
-        "temperature_850": 2.35697,
-        "geopotential_500": 434.913,
-        "mean_sea_level_pressure": 4.60088,
-        "10m_wind_speed": 2.60259,
-        "wind_vector_850": 6.45487,
-        "specific_humidity_700": 1.17701
+        "2m_temperature": 1.77377,
+        "temperature_850": 2.29642,
+        "geopotential_500": 429.171,
+        "mean_sea_level_pressure": 4.49839,
+        "10m_wind_speed": 2.57514,
+        "wind_vector_850": 6.38468,
+        "specific_humidity_700": 1.18119
        }
       }
      ],
-     "note": "Last 30 daily 12 UTC runs, up to 2026-10-27. Variable columns: RMSE pooled over the ranked lead times; each model against its own analysis (WeatherNext against the IFS analysis).",
+     "note": "Last 30 daily 12 UTC runs, up to 2026-10-31. Variable columns: RMSE pooled over the ranked lead times; each model against its own analysis (WeatherNext against the IFS analysis).",
      "leader": "wn3-ens-mean"
     },
     {
      "id": "europe",
      "title": "Europe",
-     "as_of": "2026-10-27",
+     "as_of": "2026-10-31",
      "columns": [
       {
        "key": "wins",
@@ -1002,43 +1003,43 @@
       {
        "id": "wn3-ens-mean",
        "values": {
-        "wins": 124,
+        "wins": 128,
         "led": 7,
-        "2m_temperature": 1.15626,
-        "temperature_850": 1.45403,
-        "geopotential_500": 347.749,
-        "mean_sea_level_pressure": 2.96125,
-        "10m_wind_speed": 1.56084,
-        "wind_vector_850": 4.45848,
-        "specific_humidity_700": 0.90565
+        "2m_temperature": 1.12563,
+        "temperature_850": 1.4443,
+        "geopotential_500": 343.079,
+        "mean_sea_level_pressure": 2.79516,
+        "10m_wind_speed": 1.53303,
+        "wind_vector_850": 4.36465,
+        "specific_humidity_700": 0.86876
        }
       },
       {
        "id": "fgn-ens-mean",
        "values": {
-        "wins": 34,
+        "wins": 43,
         "led": 0,
-        "2m_temperature": 1.23868,
-        "temperature_850": 1.53506,
-        "geopotential_500": 378.908,
-        "mean_sea_level_pressure": 3.29349,
-        "10m_wind_speed": 1.62442,
-        "wind_vector_850": 4.6934,
-        "specific_humidity_700": 0.92508
+        "2m_temperature": 1.20495,
+        "temperature_850": 1.52525,
+        "geopotential_500": 373.539,
+        "mean_sea_level_pressure": 3.12812,
+        "10m_wind_speed": 1.59216,
+        "wind_vector_850": 4.59235,
+        "specific_humidity_700": 0.8868
        }
       },
       {
        "id": "aifs-ens-mean",
        "values": {
-        "wins": 7,
+        "wins": 4,
         "led": 0,
-        "2m_temperature": 1.24685,
-        "temperature_850": 1.64753,
-        "geopotential_500": 413.368,
-        "mean_sea_level_pressure": 3.56334,
-        "10m_wind_speed": 1.66242,
-        "wind_vector_850": 4.93595,
-        "specific_humidity_700": 0.94467
+        "2m_temperature": 1.22676,
+        "temperature_850": 1.64143,
+        "geopotential_500": 403.865,
+        "mean_sea_level_pressure": 3.3299,
+        "10m_wind_speed": 1.63272,
+        "wind_vector_850": 4.80917,
+        "specific_humidity_700": 0.91064
        }
       },
       {
@@ -1046,27 +1047,27 @@
        "values": {
         "wins": 7,
         "led": 0,
-        "2m_temperature": 1.2984,
-        "temperature_850": 1.69425,
-        "geopotential_500": 427.905,
-        "mean_sea_level_pressure": 3.7275,
-        "10m_wind_speed": 1.68908,
-        "wind_vector_850": 5.07931,
-        "specific_humidity_700": 0.97247
+        "2m_temperature": 1.26582,
+        "temperature_850": 1.70026,
+        "geopotential_500": 426.935,
+        "mean_sea_level_pressure": 3.5764,
+        "10m_wind_speed": 1.67587,
+        "wind_vector_850": 5.03284,
+        "specific_humidity_700": 0.9394
        }
       },
       {
        "id": "aurora-v1p5-ens-mean",
        "values": {
-        "wins": 15,
+        "wins": 8,
         "led": 0,
-        "2m_temperature": 1.37592,
-        "temperature_850": 1.69039,
-        "geopotential_500": 430.151,
-        "mean_sea_level_pressure": 3.67921,
-        "10m_wind_speed": 1.72069,
-        "wind_vector_850": 5.05582,
-        "specific_humidity_700": 0.967
+        "2m_temperature": 1.35277,
+        "temperature_850": 1.68063,
+        "geopotential_500": 428.34,
+        "mean_sea_level_pressure": 3.53307,
+        "10m_wind_speed": 1.69738,
+        "wind_vector_850": 4.97332,
+        "specific_humidity_700": 0.93158
        }
       },
       {
@@ -1074,13 +1075,13 @@
        "values": {
         "wins": 4,
         "led": 0,
-        "2m_temperature": 1.48252,
-        "temperature_850": 1.93662,
-        "geopotential_500": 491.275,
-        "mean_sea_level_pressure": 4.1239,
-        "10m_wind_speed": 2.04345,
-        "wind_vector_850": 5.38703,
-        "specific_humidity_700": 1.05803
+        "2m_temperature": 1.45347,
+        "temperature_850": 1.93448,
+        "geopotential_500": 493.466,
+        "mean_sea_level_pressure": 4.00958,
+        "10m_wind_speed": 2.03889,
+        "wind_vector_850": 5.35488,
+        "specific_humidity_700": 1.02086
        }
       },
       {
@@ -1088,13 +1089,13 @@
        "values": {
         "wins": 8,
         "led": 0,
-        "2m_temperature": 1.50207,
-        "temperature_850": 1.89184,
-        "geopotential_500": 468.009,
-        "mean_sea_level_pressure": 3.94095,
-        "10m_wind_speed": 2.07377,
-        "wind_vector_850": 5.58465,
-        "specific_humidity_700": 1.10232
+        "2m_temperature": 1.474,
+        "temperature_850": 1.89138,
+        "geopotential_500": 464.035,
+        "mean_sea_level_pressure": 3.7736,
+        "10m_wind_speed": 2.05037,
+        "wind_vector_850": 5.51796,
+        "specific_humidity_700": 1.05813
        }
       },
       {
@@ -1102,27 +1103,27 @@
        "values": {
         "wins": 4,
         "led": 0,
-        "2m_temperature": 1.51595,
-        "temperature_850": 1.79837,
-        "geopotential_500": 448.357,
-        "mean_sea_level_pressure": 3.98471,
-        "10m_wind_speed": 1.94547,
-        "wind_vector_850": 5.3607,
-        "specific_humidity_700": 1.02668
+        "2m_temperature": 1.48365,
+        "temperature_850": 1.78529,
+        "geopotential_500": 444.909,
+        "mean_sea_level_pressure": 3.77609,
+        "10m_wind_speed": 1.90179,
+        "wind_vector_850": 5.2718,
+        "specific_humidity_700": 0.98967
        }
       },
       {
        "id": "hres",
        "values": {
-        "wins": 3,
+        "wins": 0,
         "led": 0,
-        "2m_temperature": 1.51609,
-        "temperature_850": 1.97908,
-        "geopotential_500": 451.013,
-        "mean_sea_level_pressure": 3.94777,
-        "10m_wind_speed": 2.08287,
-        "wind_vector_850": 5.98942,
-        "specific_humidity_700": 1.23511
+        "2m_temperature": 1.49475,
+        "temperature_850": 1.99504,
+        "geopotential_500": 457.188,
+        "mean_sea_level_pressure": 3.90797,
+        "10m_wind_speed": 2.06965,
+        "wind_vector_850": 5.98824,
+        "specific_humidity_700": 1.19149
        }
       },
       {
@@ -1130,23 +1131,23 @@
        "values": {
         "wins": 4,
         "led": 0,
-        "2m_temperature": 1.65564,
-        "temperature_850": 2.13283,
-        "geopotential_500": 535.758,
-        "mean_sea_level_pressure": 4.52914,
-        "10m_wind_speed": 2.40317,
-        "wind_vector_850": 6.36819,
-        "specific_humidity_700": 1.32291
+        "2m_temperature": 1.65783,
+        "temperature_850": 2.19552,
+        "geopotential_500": 551.933,
+        "mean_sea_level_pressure": 4.53351,
+        "10m_wind_speed": 2.41185,
+        "wind_vector_850": 6.44344,
+        "specific_humidity_700": 1.28705
        }
       }
      ],
-     "note": "Last 30 daily 12 UTC runs, up to 2026-10-27. Variable columns: RMSE pooled over the ranked lead times; each model against its own analysis (WeatherNext against the IFS analysis).",
+     "note": "Last 30 daily 12 UTC runs, up to 2026-10-31. Variable columns: RMSE pooled over the ranked lead times; each model against its own analysis (WeatherNext against the IFS analysis).",
      "leader": "wn3-ens-mean"
     },
     {
      "id": "north-america",
      "title": "North America",
-     "as_of": "2026-10-27",
+     "as_of": "2026-10-31",
      "columns": [
       {
        "key": "wins",
@@ -1230,71 +1231,71 @@
       {
        "id": "wn3-ens-mean",
        "values": {
-        "wins": 92,
-        "led": 5,
-        "2m_temperature": 1.53587,
-        "temperature_850": 1.63256,
-        "geopotential_500": 240.628,
-        "mean_sea_level_pressure": 2.30709,
-        "10m_wind_speed": 1.18987,
-        "wind_vector_850": 4.02726,
-        "specific_humidity_700": 1.06729
+        "wins": 87,
+        "led": 6,
+        "2m_temperature": 1.55511,
+        "temperature_850": 1.66367,
+        "geopotential_500": 251.12,
+        "mean_sea_level_pressure": 2.38633,
+        "10m_wind_speed": 1.20156,
+        "wind_vector_850": 4.13974,
+        "specific_humidity_700": 1.07177
        }
       },
       {
        "id": "aifs-ens-mean",
        "values": {
-        "wins": 26,
-        "led": 1,
-        "2m_temperature": 1.59604,
-        "temperature_850": 1.87699,
-        "geopotential_500": 276.864,
-        "mean_sea_level_pressure": 2.65138,
-        "10m_wind_speed": 1.19627,
-        "wind_vector_850": 4.35083,
-        "specific_humidity_700": 1.12304
-       }
-      },
-      {
-       "id": "ifs-ens-mean",
-       "values": {
-        "wins": 24,
-        "led": 1,
-        "2m_temperature": 1.6626,
-        "temperature_850": 1.98472,
-        "geopotential_500": 279.25,
-        "mean_sea_level_pressure": 2.77371,
-        "10m_wind_speed": 1.21303,
-        "wind_vector_850": 4.57036,
-        "specific_humidity_700": 1.18499
+        "wins": 28,
+        "led": 0,
+        "2m_temperature": 1.63042,
+        "temperature_850": 1.90793,
+        "geopotential_500": 280.463,
+        "mean_sea_level_pressure": 2.7003,
+        "10m_wind_speed": 1.20579,
+        "wind_vector_850": 4.44556,
+        "specific_humidity_700": 1.13092
        }
       },
       {
        "id": "fgn-ens-mean",
        "values": {
-        "wins": 42,
+        "wins": 46,
         "led": 0,
-        "2m_temperature": 1.67658,
-        "temperature_850": 1.72483,
-        "geopotential_500": 257.67,
-        "mean_sea_level_pressure": 2.3939,
-        "10m_wind_speed": 1.23172,
-        "wind_vector_850": 4.1052,
-        "specific_humidity_700": 1.09506
+        "2m_temperature": 1.67967,
+        "temperature_850": 1.75022,
+        "geopotential_500": 266.216,
+        "mean_sea_level_pressure": 2.45214,
+        "10m_wind_speed": 1.23646,
+        "wind_vector_850": 4.18956,
+        "specific_humidity_700": 1.10019
+       }
+      },
+      {
+       "id": "ifs-ens-mean",
+       "values": {
+        "wins": 23,
+        "led": 1,
+        "2m_temperature": 1.69268,
+        "temperature_850": 2.03177,
+        "geopotential_500": 285.927,
+        "mean_sea_level_pressure": 2.8339,
+        "10m_wind_speed": 1.22275,
+        "wind_vector_850": 4.61856,
+        "specific_humidity_700": 1.18576
        }
       },
       {
        "id": "gefs-mean",
        "values": {
-        "wins": 8,
+        "wins": 7,
         "led": 0,
-        "2m_temperature": 1.69647,
-        "temperature_850": 2.25688,
-        "geopotential_500": 345.161,
-        "mean_sea_level_pressure": 3.35497,
-        "10m_wind_speed": 1.5087,
-        "wind_vector_850": 5.00472,
-        "specific_humidity_700": 1.27829
+        "2m_temperature": 1.74531,
+        "temperature_850": 2.29238,
+        "geopotential_500": 357.298,
+        "mean_sea_level_pressure": 3.43858,
+        "10m_wind_speed": 1.52204,
+        "wind_vector_850": 5.11037,
+        "specific_humidity_700": 1.28004
        }
       },
       {
@@ -1302,13 +1303,13 @@
        "values": {
         "wins": 2,
         "led": 0,
-        "2m_temperature": 1.77252,
-        "temperature_850": 1.91087,
-        "geopotential_500": 282.439,
-        "mean_sea_level_pressure": 2.74031,
-        "10m_wind_speed": 1.3428,
-        "wind_vector_850": 4.53136,
-        "specific_humidity_700": 1.16164
+        "2m_temperature": 1.80277,
+        "temperature_850": 1.94922,
+        "geopotential_500": 288.886,
+        "mean_sea_level_pressure": 2.81128,
+        "10m_wind_speed": 1.34636,
+        "wind_vector_850": 4.63099,
+        "specific_humidity_700": 1.16677
        }
       },
       {
@@ -1316,13 +1317,27 @@
        "values": {
         "wins": 7,
         "led": 0,
-        "2m_temperature": 1.93525,
-        "temperature_850": 2.28822,
-        "geopotential_500": 328.878,
-        "mean_sea_level_pressure": 3.25948,
-        "10m_wind_speed": 1.48496,
-        "wind_vector_850": 5.41312,
-        "specific_humidity_700": 1.49465
+        "2m_temperature": 1.98427,
+        "temperature_850": 2.36781,
+        "geopotential_500": 348.749,
+        "mean_sea_level_pressure": 3.39453,
+        "10m_wind_speed": 1.51516,
+        "wind_vector_850": 5.58197,
+        "specific_humidity_700": 1.501
+       }
+      },
+      {
+       "id": "graphcast-hres",
+       "values": {
+        "wins": 7,
+        "led": 0,
+        "2m_temperature": 2.00717,
+        "temperature_850": 2.25389,
+        "geopotential_500": 329.721,
+        "mean_sea_level_pressure": 3.01265,
+        "10m_wind_speed": 1.47811,
+        "wind_vector_850": 5.11639,
+        "specific_humidity_700": 1.3122
        }
       },
       {
@@ -1330,56 +1345,42 @@
        "values": {
         "wins": 1,
         "led": 0,
-        "2m_temperature": 1.94511,
-        "temperature_850": 2.61644,
-        "geopotential_500": 401.639,
-        "mean_sea_level_pressure": 3.9418,
-        "10m_wind_speed": 1.70823,
-        "wind_vector_850": 6.0363,
-        "specific_humidity_700": 1.57982
-       }
-      },
-      {
-       "id": "graphcast-hres",
-       "values": {
-        "wins": 5,
-        "led": 0,
-        "2m_temperature": 2.00975,
-        "temperature_850": 2.27536,
-        "geopotential_500": 326.702,
-        "mean_sea_level_pressure": 3.04772,
-        "10m_wind_speed": 1.4683,
-        "wind_vector_850": 5.05532,
-        "specific_humidity_700": 1.30751
+        "2m_temperature": 2.02593,
+        "temperature_850": 2.67457,
+        "geopotential_500": 428.194,
+        "mean_sea_level_pressure": 4.1546,
+        "10m_wind_speed": 1.75811,
+        "wind_vector_850": 6.26314,
+        "specific_humidity_700": 1.5868
        }
       },
       {
        "id": "atlas-crps-ens-mean",
        "values": {
-        "wins": 3,
+        "wins": 2,
         "led": 0,
-        "2m_temperature": 2.1187,
-        "temperature_850": 2.1542,
-        "geopotential_500": 325.811,
-        "mean_sea_level_pressure": 3.19672,
-        "10m_wind_speed": 1.42134,
-        "wind_vector_850": 4.92519,
-        "specific_humidity_700": 1.23151
+        "2m_temperature": 2.13973,
+        "temperature_850": 2.19938,
+        "geopotential_500": 330.704,
+        "mean_sea_level_pressure": 3.23617,
+        "10m_wind_speed": 1.42601,
+        "wind_vector_850": 5.00622,
+        "specific_humidity_700": 1.23057
        }
       }
      ],
-     "note": "Last 30 daily 12 UTC runs, up to 2026-10-27. Variable columns: RMSE pooled over the ranked lead times; each model against its own analysis (WeatherNext against the IFS analysis).",
+     "note": "Last 30 daily 12 UTC runs, up to 2026-10-31. Variable columns: RMSE pooled over the ranked lead times; each model against its own analysis (WeatherNext against the IFS analysis).",
      "leader": "wn3-ens-mean"
     }
    ],
    "error": null
   },
   "weatherbench2": {
-   "fetched": "2026-11-04",
+   "fetched": "2026-11-09",
    "boards": [
     {
      "id": "det-2020",
-     "as_of": "2026-10-27",
+     "as_of": "2026-11-05",
      "title": "Deterministic · 2020",
      "columns": [
       {
@@ -1711,6 +1712,20 @@
        }
       },
       {
+       "id": "sonny_ens_mean",
+       "values": {
+        "z500_d3": 127.28076,
+        "z500_d5": 268.59758,
+        "z500_d10": 608.3849,
+        "t850_d5": 1.50167,
+        "q700_d5": 1.01579,
+        "t2m_d5": 1.22127,
+        "ws10_d5": 1.57539,
+        "mslp_d5": 2.71201,
+        "skill": -16.84
+       }
+      },
+      {
        "id": "stormer_ens_mean",
        "values": {}
       },
@@ -1734,7 +1749,7 @@
     },
     {
      "id": "prob-2020",
-     "as_of": "2026-10-27",
+     "as_of": "2026-11-05",
      "title": "Ensembles · 2020",
      "columns": [
       {
@@ -1898,6 +1913,20 @@
         "ws10_d5": 1.25011,
         "mslp_d5": 3.21869,
         "skill": 94.36
+       }
+      },
+      {
+       "id": "sonny_ens",
+       "values": {
+        "z500_d5": 109.85162,
+        "z500_d10": 254.4813,
+        "z500_d15": 319.36102,
+        "t850_d5": 0.69033,
+        "q700_d5": 0.47627,
+        "t2m_d5": 0.51096,
+        "ws10_d5": 0.77041,
+        "mslp_d5": 1.12207,
+        "skill": -7.2
        }
       }
      ],
@@ -2280,12 +2309,12 @@
    "error": null
   },
   "ai-weather-quest": {
-   "fetched": "2026-11-04",
+   "fetched": "2026-11-09",
    "boards": [
     {
      "id": "window-1",
      "title": "SON 2026 · Days 19–25",
-     "as_of": "2026-10-23",
+     "as_of": "2026-11-06",
      "columns": [
       {
        "key": "avg",
@@ -2326,252 +2355,252 @@
      ],
      "rows": [
       {
-       "id": "Arcana/ArcanaSphericalBeta",
-       "name": "ArcanaSphericalBeta (Arcana)",
-       "values": {
-        "avg": 0.24,
-        "tas": 0.201,
-        "mslp": 0.388,
-        "pr": 0.132
-       }
-      },
-      {
-       "id": "Arcana/ArcanaSpherical",
-       "name": "ArcanaSpherical (Arcana)",
-       "values": {
-        "avg": 0.232,
-        "tas": 0.201,
-        "mslp": 0.376,
-        "pr": 0.119
-       }
-      },
-      {
-       "id": "Arcana/ArcanaSphericalv2",
-       "name": "ArcanaSphericalv2 (Arcana)",
-       "values": {
-        "avg": 0.221,
-        "tas": 0.175,
-        "mslp": 0.36,
-        "pr": 0.129
-       }
-      },
-      {
-       "id": "LP/LPM",
-       "name": "LPM (LP)",
-       "values": {
-        "avg": 0.24,
-        "tas": 0.236,
-        "mslp": 0.342,
-        "pr": 0.14
-       }
-      },
-      {
        "id": "VD/SPQRnow",
        "name": "SPQRnow (VD)",
        "values": {
-        "avg": 0.239,
-        "tas": 0.23,
-        "mslp": 0.349,
-        "pr": 0.137
+        "avg": 0.231,
+        "tas": 0.227,
+        "mslp": 0.335,
+        "pr": 0.13
        }
       },
       {
        "id": "VD/SPQR",
        "name": "SPQR (VD)",
        "values": {
-        "avg": 0.235,
-        "tas": 0.229,
-        "mslp": 0.339,
-        "pr": 0.137
+        "avg": 0.228,
+        "tas": 0.226,
+        "mslp": 0.327,
+        "pr": 0.13
+       }
+      },
+      {
+       "id": "LP/LPM",
+       "name": "LPM (LP)",
+       "values": {
+        "avg": 0.229,
+        "tas": 0.227,
+        "mslp": 0.333,
+        "pr": 0.127
+       }
+      },
+      {
+       "id": "Arcana/ArcanaSpherical",
+       "name": "ArcanaSpherical (Arcana)",
+       "values": {
+        "avg": 0.227,
+        "tas": 0.208,
+        "mslp": 0.357,
+        "pr": 0.115
+       }
+      },
+      {
+       "id": "Arcana/ArcanaSphericalBeta",
+       "name": "ArcanaSphericalBeta (Arcana)",
+       "values": {
+        "avg": 0.226,
+        "tas": 0.201,
+        "mslp": 0.354,
+        "pr": 0.123
+       }
+      },
+      {
+       "id": "Arcana/ArcanaSphericalv2",
+       "name": "ArcanaSphericalv2 (Arcana)",
+       "values": {
+        "avg": 0.212,
+        "tas": 0.182,
+        "mslp": 0.335,
+        "pr": 0.119
        }
       },
       {
        "id": "CMAandFDU/FengshunHybrid",
        "name": "FengshunHybrid (CMAandFDU)",
        "values": {
-        "avg": 0.222,
-        "tas": 0.21,
-        "mslp": 0.342,
-        "pr": 0.113
+        "avg": 0.215,
+        "tas": 0.207,
+        "mslp": 0.332,
+        "pr": 0.107
        }
       },
       {
        "id": "CMAandFDU/FengshunAdjust",
        "name": "FengshunAdjust (CMAandFDU)",
        "values": {
-        "avg": 0.206,
-        "tas": 0.187,
-        "mslp": 0.333,
-        "pr": 0.099
+        "avg": 0.204,
+        "tas": 0.192,
+        "mslp": 0.318,
+        "pr": 0.101
        }
       },
       {
        "id": "CMAandFDU/Fengshun",
        "name": "Fengshun (CMAandFDU)",
        "values": {
-        "avg": 0.175,
-        "tas": 0.162,
-        "mslp": 0.338,
-        "pr": 0.024
+        "avg": 0.171,
+        "tas": 0.165,
+        "mslp": 0.321,
+        "pr": 0.028
        }
       },
       {
        "id": "AIFS/AIFSthalassa",
        "name": "AIFSthalassa (AIFS)",
        "values": {
-        "avg": 0.217,
-        "tas": 0.198,
-        "mslp": 0.338,
-        "pr": 0.114
-       }
-      },
-      {
-       "id": "AIFS/AIFSgaia",
-       "name": "AIFSgaia (AIFS)",
-       "values": {
-        "avg": 0.204,
-        "tas": 0.192,
-        "mslp": 0.317,
-        "pr": 0.103
+        "avg": 0.214,
+        "tas": 0.206,
+        "mslp": 0.326,
+        "pr": 0.111
        }
       },
       {
        "id": "AIFS/AIFShera",
        "name": "AIFShera (AIFS)",
        "values": {
-        "avg": 0.202,
-        "tas": 0.184,
-        "mslp": 0.32,
+        "avg": 0.201,
+        "tas": 0.193,
+        "mslp": 0.307,
         "pr": 0.103
        }
       },
       {
-       "id": "Fahamu/fp16FahamuAIFSv2",
-       "name": "fp16FahamuAIFSv2 (Fahamu)",
+       "id": "AIFS/AIFSgaia",
+       "name": "AIFSgaia (AIFS)",
        "values": {
-        "avg": 0.215,
-        "tas": 0.157,
-        "mslp": 0.365,
-        "pr": 0.124
+        "avg": 0.2,
+        "tas": 0.2,
+        "mslp": 0.307,
+        "pr": 0.094
        }
       },
       {
        "id": "CLINT/CLINTMF",
        "name": "CLINTMF (CLINT)",
        "values": {
-        "avg": 0.214,
-        "tas": 0.196,
-        "mslp": 0.33,
-        "pr": 0.116
+        "avg": 0.206,
+        "tas": 0.192,
+        "mslp": 0.319,
+        "pr": 0.108
        }
       },
       {
        "id": "MetaCarbon3060/PuyunEnsemble",
        "name": "PuyunEnsemble (MetaCarbon3060)",
        "values": {
-        "avg": 0.202,
+        "avg": 0.203,
         "tas": 0.206,
-        "mslp": 0.321,
-        "pr": 0.079
-       }
-      },
-      {
-       "id": "MetaCarbon3060/PuyunLDM",
-       "name": "PuyunLDM (MetaCarbon3060)",
-       "values": {
-        "avg": 0.195,
-        "tas": 0.184,
-        "mslp": 0.319,
-        "pr": 0.083
+        "mslp": 0.32,
+        "pr": 0.084
        }
       },
       {
        "id": "MetaCarbon3060/PuyunWeather",
        "name": "PuyunWeather (MetaCarbon3060)",
        "values": {
-        "avg": 0.194,
-        "tas": 0.206,
-        "mslp": 0.306,
-        "pr": 0.07
+        "avg": 0.199,
+        "tas": 0.207,
+        "mslp": 0.309,
+        "pr": 0.081
+       }
+      },
+      {
+       "id": "MetaCarbon3060/PuyunLDM",
+       "name": "PuyunLDM (MetaCarbon3060)",
+       "values": {
+        "avg": 0.197,
+        "tas": 0.185,
+        "mslp": 0.321,
+        "pr": 0.084
+       }
+      },
+      {
+       "id": "Fahamu/fp16FahamuAIFSv2",
+       "name": "fp16FahamuAIFSv2 (Fahamu)",
+       "values": {
+        "avg": 0.196,
+        "tas": 0.141,
+        "mslp": 0.336,
+        "pr": 0.111
        }
       },
       {
        "id": "Dynamical_S2SDatabase/ECMWF",
        "name": "ECMWF (Dynamical_S2SDatabase)",
        "values": {
-        "avg": 0.199,
-        "tas": 0.19,
-        "mslp": 0.301,
-        "pr": 0.106
+        "avg": 0.193,
+        "tas": 0.191,
+        "mslp": 0.294,
+        "pr": 0.095
        }
       },
       {
        "id": "NMCBridge/QuintCal",
        "name": "QuintCal (NMCBridge)",
        "values": {
-        "avg": 0.199,
-        "tas": 0.203,
-        "mslp": 0.3,
-        "pr": 0.093
+        "avg": 0.193,
+        "tas": 0.2,
+        "mslp": 0.292,
+        "pr": 0.087
        }
       },
       {
        "id": "NMCBridge/shrinkcal",
        "name": "shrinkcal (NMCBridge)",
        "values": {
-        "avg": 0.198,
-        "tas": 0.203,
-        "mslp": 0.298,
-        "pr": 0.093
+        "avg": 0.193,
+        "tas": 0.198,
+        "mslp": 0.291,
+        "pr": 0.088
        }
       },
       {
        "id": "NMCBridge/multical",
        "name": "multical (NMCBridge)",
        "values": {
-        "avg": 0.192,
-        "tas": 0.187,
-        "mslp": 0.296,
-        "pr": 0.094
-       }
-      },
-      {
-       "id": "SBUHybrid/HybridStillDeveloping",
-       "name": "HybridStillDeveloping (SBUHybrid)",
-       "values": {
-        "avg": 0.173,
-        "tas": 0.155,
-        "mslp": 0.263,
-        "pr": 0.101
-       }
-      },
-      {
-       "id": "SBUHybrid/HybridPPx",
-       "name": "HybridPPx (SBUHybrid)",
-       "values": {
-        "avg": 0.172,
-        "tas": 0.138,
-        "mslp": 0.282,
-        "pr": 0.095
+        "avg": 0.187,
+        "tas": 0.186,
+        "mslp": 0.289,
+        "pr": 0.088
        }
       },
       {
        "id": "SBUHybrid/HybridAC",
        "name": "HybridAC (SBUHybrid)",
        "values": {
-        "avg": 0.17,
-        "tas": 0.152,
-        "mslp": 0.266,
-        "pr": 0.092
+        "avg": 0.163,
+        "tas": 0.151,
+        "mslp": 0.256,
+        "pr": 0.081
+       }
+      },
+      {
+       "id": "SBUHybrid/HybridPPx",
+       "name": "HybridPPx (SBUHybrid)",
+       "values": {
+        "avg": 0.162,
+        "tas": 0.137,
+        "mslp": 0.264,
+        "pr": 0.084
+       }
+      },
+      {
+       "id": "SBUHybrid/HybridStillDeveloping",
+       "name": "HybridStillDeveloping (SBUHybrid)",
+       "values": {
+        "avg": 0.161,
+        "tas": 0.149,
+        "mslp": 0.251,
+        "pr": 0.082
        }
       },
       {
        "id": "JR/slowMamba",
        "name": "slowMamba (JR)",
        "values": {
-        "avg": 0.137,
-        "tas": 0.1,
-        "mslp": 0.312,
+        "avg": 0.128,
+        "tas": 0.101,
+        "mslp": 0.283,
         "pr": 0.0
        }
       },
@@ -2580,18 +2609,18 @@
        "name": "CliMAWeather2 (CliMA)",
        "values": {
         "avg": 0.126,
-        "tas": 0.146,
-        "mslp": 0.206,
-        "pr": 0.024
+        "tas": 0.143,
+        "mslp": 0.203,
+        "pr": 0.032
        }
       },
       {
        "id": "CliMA/CliMAWeather",
        "name": "CliMAWeather (CliMA)",
        "values": {
-        "avg": 0.115,
-        "tas": 0.144,
-        "mslp": 0.2,
+        "avg": 0.113,
+        "tas": 0.141,
+        "mslp": 0.199,
         "pr": 0.0
        }
       },
@@ -2599,80 +2628,80 @@
        "id": "Dynamical_S2SDatabase/KMA",
        "name": "KMA (Dynamical_S2SDatabase)",
        "values": {
-        "avg": 0.117,
-        "tas": 0.022,
-        "mslp": 0.288,
-        "pr": 0.042
+        "avg": 0.114,
+        "tas": 0.042,
+        "mslp": 0.269,
+        "pr": 0.032
        }
       },
       {
        "id": "Dynamical_S2SDatabase/JMA",
        "name": "JMA (Dynamical_S2SDatabase)",
        "values": {
-        "avg": 0.111,
-        "tas": 0.046,
-        "mslp": 0.273,
-        "pr": 0.016
+        "avg": 0.109,
+        "tas": 0.052,
+        "mslp": 0.256,
+        "pr": 0.018
        }
       },
       {
        "id": "IgnisNeuralis42/GCast42",
        "name": "GCast42 (IgnisNeuralis42)",
        "values": {
-        "avg": 0.057,
-        "tas": 0.088,
-        "mslp": 0.046,
-        "pr": 0.037
+        "avg": 0.066,
+        "tas": 0.091,
+        "mslp": 0.066,
+        "pr": 0.041
        }
       },
       {
        "id": "HAPPY/AZN",
        "name": "AZN (HAPPY)",
        "values": {
-        "avg": -0.084,
-        "tas": -0.086,
-        "mslp": 0.113,
-        "pr": -0.279
+        "avg": -0.096,
+        "tas": -0.077,
+        "mslp": 0.077,
+        "pr": -0.288
        }
       },
       {
        "id": "NSFNCAR/subCESMulator",
        "name": "subCESMulator (NSFNCAR)",
        "values": {
-        "avg": -0.341,
-        "tas": -0.528,
-        "mslp": -0.189,
-        "pr": -0.306
+        "avg": -0.335,
+        "tas": -0.535,
+        "mslp": -0.174,
+        "pr": -0.294
        }
       },
       {
        "id": "TAICHI/TAICHIAI",
        "name": "TAICHIAI (TAICHI)",
        "values": {
-        "avg": -0.475,
-        "tas": -0.526,
-        "mslp": -0.308,
-        "pr": -0.593
+        "avg": -0.477,
+        "tas": -0.519,
+        "mslp": -0.337,
+        "pr": -0.576
        }
       },
       {
        "id": "XindaL/ISOX",
        "name": "ISOX (XindaL)",
        "values": {
-        "avg": -0.569,
-        "tas": -0.174,
-        "mslp": -0.289,
-        "pr": -1.244
+        "avg": -0.573,
+        "tas": -0.186,
+        "mslp": -0.291,
+        "pr": -1.241
        }
       }
      ],
-     "note": "SON 2026, scores aggregated over the period up to week 6 (Thu 17-Sep-2026). RPSS of weekly-mean quintile forecasts; 0 = climatology, higher is better.",
-     "leader": "Arcana/ArcanaSphericalBeta"
+     "note": "SON 2026, scores aggregated over the period up to week 8 (Thu 01-Oct-2026). RPSS of weekly-mean quintile forecasts; 0 = climatology, higher is better.",
+     "leader": "VD/SPQRnow"
     },
     {
      "id": "window-2",
      "title": "SON 2026 · Days 26–32",
-     "as_of": "2026-10-23",
+     "as_of": "2026-11-06",
      "columns": [
       {
        "key": "avg",
@@ -2716,260 +2745,250 @@
        "id": "VD/SPQRnow",
        "name": "SPQRnow (VD)",
        "values": {
-        "avg": 0.212,
-        "tas": 0.197,
-        "mslp": 0.326,
-        "pr": 0.112
+        "avg": 0.206,
+        "tas": 0.196,
+        "mslp": 0.315,
+        "pr": 0.108
        }
       },
       {
        "id": "VD/SPQR",
        "name": "SPQR (VD)",
        "values": {
-        "avg": 0.208,
-        "tas": 0.196,
-        "mslp": 0.315,
-        "pr": 0.112
-       }
-      },
-      {
-       "id": "Arcana/ArcanaSphericalBeta",
-       "name": "ArcanaSphericalBeta (Arcana)",
-       "values": {
-        "avg": 0.208,
-        "tas": 0.17,
-        "mslp": 0.349,
-        "pr": 0.107
+        "avg": 0.203,
+        "tas": 0.195,
+        "mslp": 0.305,
+        "pr": 0.108
        }
       },
       {
        "id": "Arcana/ArcanaSpherical",
        "name": "ArcanaSpherical (Arcana)",
        "values": {
-        "avg": 0.207,
-        "tas": 0.171,
-        "mslp": 0.351,
-        "pr": 0.1
+        "avg": 0.199,
+        "tas": 0.174,
+        "mslp": 0.325,
+        "pr": 0.097
+       }
+      },
+      {
+       "id": "Arcana/ArcanaSphericalBeta",
+       "name": "ArcanaSphericalBeta (Arcana)",
+       "values": {
+        "avg": 0.193,
+        "tas": 0.165,
+        "mslp": 0.315,
+        "pr": 0.098
        }
       },
       {
        "id": "Arcana/ArcanaSphericalv2",
        "name": "ArcanaSphericalv2 (Arcana)",
        "values": {
-        "avg": 0.204,
-        "tas": 0.158,
-        "mslp": 0.346,
-        "pr": 0.107
+        "avg": 0.188,
+        "tas": 0.154,
+        "mslp": 0.312,
+        "pr": 0.098
        }
       },
       {
        "id": "LP/LPM",
        "name": "LPM (LP)",
        "values": {
-        "avg": 0.207,
-        "tas": 0.2,
-        "mslp": 0.31,
-        "pr": 0.111
-       }
-      },
-      {
-       "id": "CMAandFDU/FengshunHybrid",
-       "name": "FengshunHybrid (CMAandFDU)",
-       "values": {
-        "avg": 0.186,
-        "tas": 0.168,
-        "mslp": 0.315,
-        "pr": 0.076
-       }
-      },
-      {
-       "id": "CMAandFDU/FengshunAdjust",
-       "name": "FengshunAdjust (CMAandFDU)",
-       "values": {
-        "avg": 0.175,
-        "tas": 0.152,
-        "mslp": 0.305,
-        "pr": 0.068
-       }
-      },
-      {
-       "id": "CMAandFDU/Fengshun",
-       "name": "Fengshun (CMAandFDU)",
-       "values": {
-        "avg": 0.136,
-        "tas": 0.122,
-        "mslp": 0.312,
-        "pr": -0.025
-       }
-      },
-      {
-       "id": "AIFS/AIFSthalassa",
-       "name": "AIFSthalassa (AIFS)",
-       "values": {
-        "avg": 0.185,
-        "tas": 0.166,
-        "mslp": 0.307,
-        "pr": 0.083
-       }
-      },
-      {
-       "id": "AIFS/AIFShera",
-       "name": "AIFShera (AIFS)",
-       "values": {
-        "avg": 0.18,
-        "tas": 0.156,
-        "mslp": 0.298,
-        "pr": 0.087
-       }
-      },
-      {
-       "id": "AIFS/AIFSgaia",
-       "name": "AIFSgaia (AIFS)",
-       "values": {
-        "avg": 0.174,
-        "tas": 0.161,
-        "mslp": 0.29,
-        "pr": 0.072
+        "avg": 0.197,
+        "tas": 0.192,
+        "mslp": 0.301,
+        "pr": 0.1
        }
       },
       {
        "id": "CLINT/CLINTMF",
        "name": "CLINTMF (CLINT)",
        "values": {
-        "avg": 0.185,
-        "tas": 0.162,
-        "mslp": 0.301,
-        "pr": 0.093
+        "avg": 0.179,
+        "tas": 0.161,
+        "mslp": 0.294,
+        "pr": 0.083
        }
       },
       {
-       "id": "Fahamu/fp16FahamuAIFSv2",
-       "name": "fp16FahamuAIFSv2 (Fahamu)",
+       "id": "CMAandFDU/FengshunHybrid",
+       "name": "FengshunHybrid (CMAandFDU)",
        "values": {
         "avg": 0.179,
-        "tas": 0.085,
-        "mslp": 0.356,
-        "pr": 0.095
+        "tas": 0.166,
+        "mslp": 0.298,
+        "pr": 0.073
+       }
+      },
+      {
+       "id": "CMAandFDU/FengshunAdjust",
+       "name": "FengshunAdjust (CMAandFDU)",
+       "values": {
+        "avg": 0.168,
+        "tas": 0.154,
+        "mslp": 0.278,
+        "pr": 0.072
+       }
+      },
+      {
+       "id": "CMAandFDU/Fengshun",
+       "name": "Fengshun (CMAandFDU)",
+       "values": {
+        "avg": 0.128,
+        "tas": 0.121,
+        "mslp": 0.28,
+        "pr": -0.016
        }
       },
       {
        "id": "MetaCarbon3060/PuyunEnsemble",
        "name": "PuyunEnsemble (MetaCarbon3060)",
        "values": {
-        "avg": 0.178,
-        "tas": 0.169,
-        "mslp": 0.31,
-        "pr": 0.055
+        "avg": 0.177,
+        "tas": 0.173,
+        "mslp": 0.296,
+        "pr": 0.061
        }
       },
       {
        "id": "MetaCarbon3060/PuyunWeather",
        "name": "PuyunWeather (MetaCarbon3060)",
        "values": {
-        "avg": 0.172,
-        "tas": 0.168,
-        "mslp": 0.294,
-        "pr": 0.054
+        "avg": 0.174,
+        "tas": 0.174,
+        "mslp": 0.283,
+        "pr": 0.066
        }
       },
       {
        "id": "MetaCarbon3060/PuyunLDM",
        "name": "PuyunLDM (MetaCarbon3060)",
        "values": {
-        "avg": 0.169,
-        "tas": 0.137,
-        "mslp": 0.309,
-        "pr": 0.06
+        "avg": 0.165,
+        "tas": 0.146,
+        "mslp": 0.287,
+        "pr": 0.062
        }
       },
       {
-       "id": "Dynamical_S2SDatabase/ECMWF",
-       "name": "ECMWF (Dynamical_S2SDatabase)",
+       "id": "AIFS/AIFSthalassa",
+       "name": "AIFSthalassa (AIFS)",
        "values": {
         "avg": 0.174,
-        "tas": 0.16,
-        "mslp": 0.281,
-        "pr": 0.08
+        "tas": 0.17,
+        "mslp": 0.278,
+        "pr": 0.073
+       }
+      },
+      {
+       "id": "AIFS/AIFShera",
+       "name": "AIFShera (AIFS)",
+       "values": {
+        "avg": 0.166,
+        "tas": 0.161,
+        "mslp": 0.262,
+        "pr": 0.076
+       }
+      },
+      {
+       "id": "AIFS/AIFSgaia",
+       "name": "AIFSgaia (AIFS)",
+       "values": {
+        "avg": 0.157,
+        "tas": 0.161,
+        "mslp": 0.255,
+        "pr": 0.056
        }
       },
       {
        "id": "NMCBridge/QuintCal",
        "name": "QuintCal (NMCBridge)",
        "values": {
-        "avg": 0.172,
-        "tas": 0.168,
-        "mslp": 0.276,
-        "pr": 0.07
+        "avg": 0.169,
+        "tas": 0.166,
+        "mslp": 0.275,
+        "pr": 0.065
        }
       },
       {
        "id": "NMCBridge/shrinkcal",
        "name": "shrinkcal (NMCBridge)",
        "values": {
-        "avg": 0.171,
-        "tas": 0.168,
-        "mslp": 0.275,
-        "pr": 0.07
+        "avg": 0.168,
+        "tas": 0.166,
+        "mslp": 0.273,
+        "pr": 0.065
        }
       },
       {
        "id": "NMCBridge/multical",
        "name": "multical (NMCBridge)",
        "values": {
-        "avg": 0.151,
-        "tas": 0.168,
-        "mslp": 0.207,
-        "pr": 0.077
+        "avg": 0.148,
+        "tas": 0.165,
+        "mslp": 0.209,
+        "pr": 0.069
+       }
+      },
+      {
+       "id": "Dynamical_S2SDatabase/ECMWF",
+       "name": "ECMWF (Dynamical_S2SDatabase)",
+       "values": {
+        "avg": 0.168,
+        "tas": 0.161,
+        "mslp": 0.278,
+        "pr": 0.067
+       }
+      },
+      {
+       "id": "Fahamu/fp16FahamuAIFSv2",
+       "name": "fp16FahamuAIFSv2 (Fahamu)",
+       "values": {
+        "avg": 0.161,
+        "tas": 0.063,
+        "mslp": 0.343,
+        "pr": 0.078
        }
       },
       {
        "id": "SBUHybrid/HybridPPx",
        "name": "HybridPPx (SBUHybrid)",
        "values": {
-        "avg": 0.154,
-        "tas": 0.122,
-        "mslp": 0.266,
-        "pr": 0.073
+        "avg": 0.145,
+        "tas": 0.124,
+        "mslp": 0.249,
+        "pr": 0.06
        }
       },
       {
        "id": "SBUHybrid/HybridStillDeveloping",
        "name": "HybridStillDeveloping (SBUHybrid)",
        "values": {
-        "avg": 0.152,
-        "tas": 0.132,
-        "mslp": 0.245,
-        "pr": 0.079
+        "avg": 0.14,
+        "tas": 0.129,
+        "mslp": 0.228,
+        "pr": 0.064
        }
       },
       {
        "id": "SBUHybrid/HybridAC",
        "name": "HybridAC (SBUHybrid)",
        "values": {
-        "avg": 0.142,
-        "tas": 0.131,
-        "mslp": 0.23,
-        "pr": 0.066
-       }
-      },
-      {
-       "id": "JR/slowMamba",
-       "name": "slowMamba (JR)",
-       "values": {
-        "avg": 0.129,
-        "tas": 0.081,
-        "mslp": 0.305,
-        "pr": 0.0
+        "avg": 0.131,
+        "tas": 0.127,
+        "mslp": 0.213,
+        "pr": 0.054
        }
       },
       {
        "id": "CliMA/CliMAWeather2",
        "name": "CliMAWeather2 (CliMA)",
        "values": {
-        "avg": 0.117,
-        "tas": 0.124,
-        "mslp": 0.203,
-        "pr": 0.025
+        "avg": 0.121,
+        "tas": 0.131,
+        "mslp": 0.197,
+        "pr": 0.034
        }
       },
       {
@@ -2977,8 +2996,18 @@
        "name": "CliMAWeather (CliMA)",
        "values": {
         "avg": 0.107,
-        "tas": 0.122,
-        "mslp": 0.197,
+        "tas": 0.13,
+        "mslp": 0.193,
+        "pr": 0.0
+       }
+      },
+      {
+       "id": "JR/slowMamba",
+       "name": "slowMamba (JR)",
+       "values": {
+        "avg": 0.112,
+        "tas": 0.085,
+        "mslp": 0.252,
         "pr": 0.0
        }
       },
@@ -2986,81 +3015,81 @@
        "id": "Dynamical_S2SDatabase/KMA",
        "name": "KMA (Dynamical_S2SDatabase)",
        "values": {
-        "avg": 0.102,
-        "tas": 0.011,
-        "mslp": 0.258,
-        "pr": 0.036
+        "avg": 0.096,
+        "tas": 0.033,
+        "mslp": 0.234,
+        "pr": 0.02
        }
       },
       {
        "id": "Dynamical_S2SDatabase/JMA",
        "name": "JMA (Dynamical_S2SDatabase)",
        "values": {
-        "avg": 0.074,
-        "tas": -0.02,
-        "mslp": 0.249,
-        "pr": -0.008
+        "avg": 0.085,
+        "tas": 0.009,
+        "mslp": 0.248,
+        "pr": -0.001
        }
       },
       {
        "id": "IgnisNeuralis42/GCast42",
        "name": "GCast42 (IgnisNeuralis42)",
        "values": {
-        "avg": 0.052,
-        "tas": 0.074,
-        "mslp": 0.05,
-        "pr": 0.032
+        "avg": 0.06,
+        "tas": 0.077,
+        "mslp": 0.067,
+        "pr": 0.038
        }
       },
       {
        "id": "HAPPY/AZN",
        "name": "AZN (HAPPY)",
        "values": {
-        "avg": -0.112,
-        "tas": -0.103,
-        "mslp": 0.084,
-        "pr": -0.316
+        "avg": -0.115,
+        "tas": -0.091,
+        "mslp": 0.056,
+        "pr": -0.308
        }
       },
       {
        "id": "NSFNCAR/subCESMulator",
        "name": "subCESMulator (NSFNCAR)",
        "values": {
-        "avg": -0.327,
-        "tas": -0.554,
-        "mslp": -0.134,
-        "pr": -0.294
+        "avg": -0.318,
+        "tas": -0.549,
+        "mslp": -0.122,
+        "pr": -0.285
        }
       },
       {
        "id": "TAICHI/TAICHIAI",
        "name": "TAICHIAI (TAICHI)",
        "values": {
-        "avg": -0.496,
-        "tas": -0.561,
-        "mslp": -0.336,
-        "pr": -0.591
+        "avg": -0.507,
+        "tas": -0.571,
+        "mslp": -0.379,
+        "pr": -0.572
        }
       },
       {
        "id": "XindaL/ISOX",
        "name": "ISOX (XindaL)",
        "values": {
-        "avg": -0.568,
-        "tas": -0.22,
-        "mslp": -0.251,
-        "pr": -1.232
+        "avg": -0.593,
+        "tas": -0.234,
+        "mslp": -0.266,
+        "pr": -1.278
        }
       }
      ],
-     "note": "SON 2026, scores aggregated over the period up to week 6 (Thu 17-Sep-2026). RPSS of weekly-mean quintile forecasts; 0 = climatology, higher is better.",
+     "note": "SON 2026, scores aggregated over the period up to week 8 (Thu 01-Oct-2026). RPSS of weekly-mean quintile forecasts; 0 = climatology, higher is better.",
      "leader": "VD/SPQRnow"
     }
    ],
    "error": null
   },
   "chaosbench": {
-   "fetched": "2026-11-04",
+   "fetched": "2026-11-09",
    "boards": [
     {
      "id": "control",
@@ -3217,7 +3246,7 @@
    "error": null
   },
   "climatebench": {
-   "fetched": "2026-11-04",
+   "fetched": "2026-11-09",
    "boards": [
     {
      "id": "nrmse",
@@ -3308,7 +3337,7 @@
    "error": null
   },
   "weatherreal": {
-   "fetched": "2026-11-04",
+   "fetched": "2026-11-09",
    "boards": [
     {
      "id": "weatherreal-isd",
@@ -3403,7 +3432,7 @@
    "error": null
   },
   "weather-5k": {
-   "fetched": "2026-11-04",
+   "fetched": "2026-11-09",
    "boards": [
     {
      "id": "lead-24",
@@ -4057,7 +4086,7 @@
    "error": null
   },
   "climatebench-2": {
-   "fetched": "2026-11-04",
+   "fetched": "2026-11-09",
    "boards": [
     {
      "id": "test",
@@ -4515,7 +4544,9 @@
    "arcana": "initial",
    "aurora": "initial",
    "fgn_operational_mean": "initial",
-   "fgn_operational": "initial"
+   "fgn_operational": "initial",
+   "sonny_ens_mean": "2026-11-09",
+   "sonny_ens": "2026-11-09"
   },
   "ai-weather-quest": {
    "Arcana/ArcanaSphericalBeta": "initial",
@@ -4602,5 +4633,21 @@
    "NorESM2-LM": "initial"
   }
  },
- "changes": []
+ "changes": [
+  {
+   "date": "2026-11-09",
+   "benchmark": "weatherbench2",
+   "text": "Sonny ens mean is new on WeatherBench 2 (Deterministic · 2020)"
+  },
+  {
+   "date": "2026-11-09",
+   "benchmark": "weatherbench2",
+   "text": "Sonny ens is new on WeatherBench 2 (Ensembles · 2020)"
+  },
+  {
+   "date": "2026-11-09",
+   "benchmark": "ai-weather-quest",
+   "text": "SPQRnow (VD) leads AI Weather Quest (SON 2026 · Days 19–25), ahead of ArcanaSphericalBeta (Arcana)"
+  }
+ ]
 }

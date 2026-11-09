@@ -1,0 +1,51 @@
+id: arxiv-2611.03411
+title: Low-Rank Clebsch--Gordan Coupling for Equivariant Spherical Forecasting
+authors:
+- Yaojun Li
+- Zhixuan Zhao
+- Dongzhe Zheng
+- Christine Allen-Blanchette
+date: '2026-11-02'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2611.03411'
+links:
+  paper: https://arxiv.org/abs/2611.03411
+  pdf: https://arxiv.org/pdf/2611.03411
+orgs:
+- nvidia
+- princeton-university
+topic: global-medium-range
+type: model
+method:
+- neural-operator
+- other
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Equivariant spherical neural operator with low-rank Clebsch-Gordan coupling cuts rotational error
+  to numerical precision on WeatherBench and improves forecast skill over SFNO.
+abstract: Spherical-harmonic neural operators provide an efficient representation for global forecasting,
+  but their discretized pointwise nonlinearities can break rotational equivariance through aliasing. Clebsch-Gordan
+  (CG) tensor products provide exactly equivariant interactions between spherical-harmonic representations,
+  but their computational cost grows rapidly with spectral bandwidth and has limited their use at forecasting
+  scale. We introduce LCG-SFNO, which combines low-rank CG interactions within a controlled low-degree
+  band with coefficient-space residual propagation and an exactly projected quadratic nonlinearity, preserving
+  SO(3) equivariance throughout the learned operator. To make the CG interaction practical, we further
+  develop SSHCG, a sparse GPU implementation with a factorized alternative for wider coupled bands. On
+  spherical shallow-water dynamics and the ERA5-based WeatherBench benchmark, LCG-SFNO reduces rotational
+  error to numerical precision (more than three orders of magnitude below SFNO on shallow water and five
+  orders of magnitude below it on WeatherBench), while matching SFNO on shallow-water forecasting and
+  substantially improving forecast skill relative to SFNO on WeatherBench. Matched ablations show that
+  CG coupling accelerates convergence, while SSHCG keeps the coupling to about 10 percent of a training
+  step at the operating bandwidth, making exact equivariant coupling practical at forecasting scale.
+significance: 5
+score: 55
+highlight: false
+added: '2026-11-09'
+source: weekly

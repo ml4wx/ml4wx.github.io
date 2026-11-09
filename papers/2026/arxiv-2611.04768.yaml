@@ -1,0 +1,63 @@
+id: arxiv-2611.04768
+title: 'RadarFill: Observation-Constrained Gap Filling of Systematic Blind Zones in 3-D Weather Radar
+  Reflectivity Mosaics'
+authors:
+- Xin Huang
+- Haofei Sun
+- Wei Han
+- Yunfan Yang
+- Huaguan Chen
+- Xingtao Song
+- Dong Xiao
+date: '2026-11-03'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2611.04768'
+links:
+  paper: https://arxiv.org/abs/2611.04768
+  pdf: https://arxiv.org/pdf/2611.04768
+orgs:
+- fudan-university
+- nuist
+- iap-cas
+- cma
+topic: observations-remote-sensing
+topics:
+- nowcasting
+type: model
+method:
+- diffusion
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: RadarFill, an observation-constrained conditional diffusion model, fills low-level radar blind
+  zones and improves downstream nowcasts at short lead times.
+abstract: Ground-based weather radar mosaics contain systematic blind zones, especially at low altitudes,
+  where missing reflectivity lacks corresponding complete observations for direct verification. We present
+  RadarFill, an observation-constrained conditional diffusion framework for gap filling in three-dimensional
+  radar reflectivity mosaics. RadarFill conditions on partially observed reflectivity and an observation
+  mask, enforces available observations throughout reverse sampling, and preserves valid measurements
+  in the final field. For training and controlled evaluation, structured synthetic missingness is designed
+  from altitude-dependent missing-data statistics and the vertical nesting of blind zones in an operational
+  3-D radar mosaic product. Across 4,384 held-out test times and representative convective and typhoon
+  cases, RadarFill recovers principal precipitation structures and moderate-to-strong echoes under extensive
+  low-level missingness and generally outperforms conventional interpolation and a learning-based reference
+  model. For real blind-zone evaluation, RadarFill model is applied directly to Fujian Province and compared
+  with 90 matched volume scans from an independent phased-array radar. Within the principal 1-2 km low-level
+  blind zones, RadarFill yields lower reflectivity errors than conventional interpolation, and the gap-filled
+  precipitation structures show broad agreement with independent observations. In two controlled nowcasting
+  experiments, improvements in RadarFill-initialized fields persist into subsequent forecasts, with the
+  largest benefits at low altitudes and short lead times. These results provide complementary evidence
+  from controlled synthetic missingness, independent radar observations, and downstream nowcasting, supporting
+  the potential of observation-constrained conditional generation for gap filling in real 3-D radar blind
+  zones.
+significance: 3
+score: 47
+highlight: false
+added: '2026-11-09'
+source: weekly

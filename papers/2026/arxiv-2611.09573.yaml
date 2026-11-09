@@ -1,0 +1,62 @@
+id: arxiv-2611.09573
+title: 'Half-precision inference of AI weather prediction models: negligible loss of skill at a fraction
+  of the cost'
+authors:
+- Stefan Siegert
+date: '2026-11-06'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2611.09573'
+links:
+  paper: https://arxiv.org/abs/2611.09573
+  pdf: https://arxiv.org/pdf/2611.09573
+  code: https://github.com/sieste/ai-nwp-fp16
+orgs:
+- google-deepmind
+- nvidia
+- microsoft-research
+- ecmwf
+- met-office
+- meteoswiss
+- alan-turing-institute
+topic: infra-software
+topics:
+- global-medium-range
+type: evaluation
+method:
+- other
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Running AI weather models Aurora, Pangu, FourCastNet, SFNO and FastNet in fp16 with fp32 state
+  changes RMSE by at most 1.4% and gives 1.3-3.5x speedup.
+abstract: 'AI weather prediction models are released with 32-bit (fp32) weights and run in fp32 by default,
+  although current GPUs compute much faster in 16-bit formats. We run five publicly available models --
+  Aurora, Pangu-Weather, FourCastNet, SFNO and FastNet -- on a single 16 GB GPU from 52 initial dates
+  in 2024, in fp32 and with their networks in half precision (fp16), and verify the forecasts against
+  ERA5. The physical state must stay in fp32: converting the whole model rounds it in physical units,
+  which in fp16 overflows and in bf16 discards meaningful information. With the state, its normalisation
+  and denormalisation in fp32, running the network in fp16 changes the global RMSE by at most 1.4%, and
+  by about 0.5% or less for four of the five models, equivalent to less than one hour of lead time up
+  to day 8 and at most two hours at day 10. The differences show no systematic pattern by region, scale
+  or for tropical and extratropical storms, apart from a small tropical penalty in FourCastNet, and fp16
+  leaves the CRPS, spread and calibration of Aurora''s ensemble almost unchanged. No value overflowed
+  fp16''s numeric range (+/-65,504); the largest stay 38 to 544 times below it. A 10-day forecast in fp16
+  is 1.3-3.5 times faster than in fp32 and uses 1.4-3.7 times less energy. Sensitivity experiments show
+  that rules of thumb from other applications of reduced precision carry over only partly: the first and
+  last layers dominate for some models but not for others, and no type of layer is sensitive on its own.
+  For running AI weather models on a single GPU, fp16 with the state in fp32 is practically lossless at
+  a fraction of the cost. bf16, often preferred for its wider range, is as fast but less accurate than
+  fp16 for every model, and simple 8-bit quantisation costs far more skill.'
+significance: 7
+score: 73
+highlight: true
+highlight_reason: Multi-centre study showing fp16 inference of five major AI weather models costs under
+  1.4% RMSE while giving up to 3.5x speedup and 3.7x energy savings; practical guidance.
+added: '2026-11-09'
+source: weekly

@@ -1,0 +1,46 @@
+id: arxiv-2611.07160
+title: A Survey of Nonlinear Filtering Methods for Data Assimilation and Recent Advances in Generative
+  AI-Enabled Score Filters
+authors:
+- Cath Pham
+- Kadesha Reynolds
+date: '2026-11-04'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2611.07160'
+links:
+  paper: https://arxiv.org/abs/2611.07160
+  pdf: https://arxiv.org/pdf/2611.07160
+topic: data-assimilation
+type: review
+method:
+- diffusion
+- other
+data:
+- other
+status: research
+summary: Survey of nonlinear filtering for data assimilation, tracing the training-free Ensemble Score
+  Filter and fourteen extensions for high-dimensional chaotic systems.
+abstract: 'Many real-world applications, such as numerical weather prediction or wildfire tracking, involve
+  modeling highly nonlinear dynamical systems that are chaotic and influenced by various sources of uncertainty.
+  To improve model prediction accuracy and reduce such uncertainties, data assimilation (DA) combines
+  the dynamical model with partial, noisy observations to estimate the evolution of the system''s state.
+  Doing so depends on solving the optimal filtering problem: computing the conditional distribution of
+  a hidden state given a sequence of observations. Classical approaches fail along three distinct axes:
+  Kalman-based methods assume Gaussian posteriors and produce biased estimates under nonlinear observation
+  operators; particle-based methods represent distributions with weighted samples and collapse in high
+  dimensions due to the curse of dimensionality; and kernel-based methods move beyond discrete particle
+  representations but cannot maintain their density approximation affordably as dimension grows. The Ensemble
+  Score Filter (EnSF) avoids all three constraints by encoding the filtering density in a score function
+  and approximating that score with a training-free Monte Carlo estimator, enabling stable filtering in
+  high-dimensional, chaotic systems. This survey traces EnSF''s mathematical foundations, establishes
+  it as the state of the art for non-Gaussian, high-dimensional filtering, and examines fourteen extensions
+  that expand its operational reach. Twelve of the fourteen extensions preserve this training-free Monte
+  Carlo estimator at the core of the update, with only two departing from it to achieve planetary-scale
+  deployment.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-11-09'
+source: weekly

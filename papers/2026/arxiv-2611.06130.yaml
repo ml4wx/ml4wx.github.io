@@ -1,0 +1,57 @@
+id: arxiv-2611.06130
+title: 'Short-Term Forecasting of Heterogeneous Wind Power Fleets: Global Temporal Fusion Transformer
+  Leveraging Static Covariates'
+authors:
+- Viktor Walter
+- Andreas Wagner
+date: '2026-11-04'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2611.06130'
+  openalex: W7225337667
+links:
+  paper: https://arxiv.org/abs/2611.06130
+  pdf: https://arxiv.org/pdf/2611.06130
+orgs:
+- ecmwf
+- dwd
+topic: applications-impacts
+topics:
+- global-medium-range
+type: application
+method:
+- transformer
+timescale:
+- short
+spatial:
+- regional
+data:
+- nwp-analysis
+status: research
+summary: Global temporal fusion transformer over 11 German wind farms, using ICON-D2 and ECMWF HRES inputs,
+  beats local models at 87% of synthetic and 77% of real sites for 48-h power forecasts.
+abstract: 'Accurate short-term wind power forecasting is critical for grid stability and electricity trading.
+  While transformer-based deep learning is state of the art, industry practice relies mostly on local
+  models trained for individual assets. This study investigates whether a global temporal fusion transformer
+  (TFT), trained jointly on a heterogeneous portfolio of wind farms across Germany, outperforms site-specific
+  local models in 48-hour-ahead forecasting. Using numerical weather prediction (NWP) data from the regional
+  ICON-D2 and the global ECMWF HRES models, we compare the global TFT against local models and a linear
+  regression baseline. The global model leverages static covariates, such as farm age, altitude above
+  sea level, hub height, rotor diameter and power curve parameters, to learn shared representations across
+  sites. We evaluate on 100 synthetic wind farm profiles and a real portfolio of 11 German wind farms,
+  across two seasonal test periods with intermediate retraining. The global TFT outperforms the local
+  models for 87% of the synthetic and 77% of the real wind farms and clearly surpasses the linear baseline.
+  Wilcoxon signed-rank tests confirm that these gains are significant across both seasons and datasets.
+  Crucially, this superiority depends on static covariates: without asset-specific context, the global
+  model fails to generalize. The TFT''s variable selection network (VSN) reveals the learned feature selection.
+  Altitude emerges as a relevant static discriminator on both datasets, while hub height is decisive on
+  the real portfolio. For dynamic inputs, the encoder prioritizes historical power, whereas the decoder
+  combines upper-level wind speeds from both NWP models, consistent with averaging out model-specific
+  errors. These findings support a shift from single-site to scalable multi-site forecasting, reducing
+  operational complexity while improving accuracy in large portfolios.'
+significance: 3
+score: 47
+highlight: false
+added: '2026-11-09'
+source: weekly

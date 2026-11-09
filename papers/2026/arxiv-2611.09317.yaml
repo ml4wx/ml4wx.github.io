@@ -1,0 +1,53 @@
+id: arxiv-2611.09317
+title: Stable probabilistic emulation of partially observed dynamical systems
+authors:
+- Mario Massy
+- Sara Shamekh
+- Fabrizio Falasca
+- Matthieu Blanke
+date: '2026-11-06'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2611.09317'
+links:
+  paper: https://arxiv.org/abs/2611.09317
+  pdf: https://arxiv.org/pdf/2611.09317
+orgs:
+- nyu-m2lines
+topic: climate-emulation
+topics:
+- xai-uq-physics
+type: model
+method:
+- diffusion
+- physics-constrained
+timescale:
+- climate
+spatial:
+- global
+data:
+- other
+status: research
+summary: Forced-dissipative stochastic interpolants give a stochastic climate emulator with proven geometric
+  ergodicity and forcing stability, tested on two-timescale Lorenz-96.
+abstract: 'Predicting the long-term behavior of partially observed dynamical systems such as the coupled
+  atmosphere-ocean system is central to societal decision-making. Motivated by the success of deep learning
+  emulators in weather forecasting, data-driven climate models represent a promising approach. However,
+  climate emulation poses distinct challenges: models must account for unresolved fast variables introduced
+  by unavoidable coarse-graining, reproduce long-term statistics, and remain stable over arbitrarily long
+  rollouts and under external perturbations. These requirements motivate stochastic data-driven emulators,
+  but modern generative models lack stability guarantees. We introduce forced-dissipative stochastic interpolants,
+  a generative framework for learning stochastic reduced dynamics. Its architecture uses structural constraints
+  inspired by turbulent dynamics, which provide stability by design while retaining the flexibility of
+  stochastic interpolants to represent complex probabilistic dynamics. Building on the theory of Markov-chain
+  stability, we establish a Foster--Lyapunov drift condition and prove geometric ergodicity for our emulator,
+  together with stability under steady external forcing. We evaluate the framework on the two-timescale
+  Lorenz-96 system, a prototype of partially observed multiscale turbulence. The resulting emulator remains
+  stable over long integrations and under finite-amplitude forcing, with accurate prediction of forced
+  responses of both the mean and variance.'
+significance: 4
+score: 26
+highlight: false
+added: '2026-11-09'
+source: weekly
