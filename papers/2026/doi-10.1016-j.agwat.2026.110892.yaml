@@ -1,0 +1,69 @@
+id: doi-10.1016-j.agwat.2026.110892
+title: Multi-scale assessment of wavelet-guided deep learning for reference evapotranspiration forecasting
+  to support vineyard water management
+authors:
+- Rui Gao
+- Mohammad Safeeq
+- John T. Abatzoglou
+- Joshua H. Viers
+date: '2026-11-07'
+year: 2026
+venue: Agricultural Water Management
+venue_type: journal
+ids:
+  doi: 10.1016/j.agwat.2026.110892
+  openalex: W7163714740
+links:
+  paper: https://doi.org/10.1016/j.agwat.2026.110892
+topic: applications-impacts
+topics:
+- local-forecasting
+type: model
+method:
+- cnn
+- rnn
+timescale:
+- medium
+- s2s
+spatial:
+- regional
+- local
+data:
+- stations
+- other
+status: research
+summary: A CNN-LSTM forecasts daily reference evapotranspiration over 56 days in California's Madera County,
+  with a 120-day input window giving the most stable skill, guided by a 93-day wavelet timescale.
+abstract: Accurate forecasting of grass reference evapotranspiration (ETo), a climate-driven indicator
+  of atmospheric evaporative demand, can support crop water requirement estimation, irrigation planning,
+  water allocation, and agricultural water management. However, most previous studies have focused on
+  ETo forecasting at single locations or over short lead times, with limited attention to how intrinsic
+  ETo timescales can inform model design for multi-week forecasting or how forecast performance changes
+  across regional and field scales. Here, we developed and tested a convolutional neural network-long
+  short-term memory (CNN-LSTM) framework for multi-lead daily ETo forecasting in Madera County, California.
+  Forecasted ETo was also coupled with empirically derived and forecasted actual crop coefficient (Kc
+  act) to estimate actual crop evapotranspiration (ETa) using the crop coefficient approach. Continuous
+  wavelet transform (CWT) analysis identified a dominant ETo timescale of approximately 93 days across
+  the agricultural area, representing a stable subseasonal feature in regional ETo variability. Sensitivity
+  experiments showed that this dominant timescale did not directly correspond to the optimal input sequence
+  length (Lin); instead, Lin = 120 days provided the most stable performance and lowest overall error
+  across the 56-day forecast horizon. These findings suggest that the CWT-derived dominant timescale can
+  serve as a physically informed lower reference point for Lin selection, although the optimal value still
+  requires sensitivity testing. At the regional scale, ETo forecast skill remained strong throughout the
+  56-day forecast horizon. At the vineyard scale, ETo extracted from the California Irrigation Management
+  Information System (CIMIS) did not fully represent local atmospheric conditions, highlighting the need
+  for site-level correction before field application. After correction, ETo forecasts remained highly
+  skillful during the first 11 forecast days at both vineyard sites, with R2 > 0.90 and RMSE < 0.41 mm
+  day-1, but declined substantially after approximately two weeks. As an extension beyond ETo, the coupled
+  ETa framework showed that empirical Kc act forecasting was substantially weaker and more site dependent,
+  thereby constraining ETa forecasting despite strong ETo forecasting performance. Overall, this study
+  demonstrates that wavelet-guided deep learning can provide skillful multi-week ETo forecasts across
+  regional and vineyard scales, offering a practical atmospheric-demand input for vineyard water management
+  while identifying local ETo representation and Kc act uncertainty as the main constraints on crop-coefficient-based
+  ETa forecasting.
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-11-09'
+source: weekly

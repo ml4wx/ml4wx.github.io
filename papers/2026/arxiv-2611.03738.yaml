@@ -1,0 +1,52 @@
+id: arxiv-2611.03738
+title: 'RATSIFT: Resolution-Adaptive Transformer for Solar Irradiance Forecasting and Temporal Downscaling'
+authors:
+- Jesto Peter
+- Timothy M. Hansen
+- Hossein Moradi Rekabdarkolaee
+date: '2026-11-01'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2611.03738'
+links:
+  paper: https://arxiv.org/abs/2611.03738
+  pdf: https://arxiv.org/pdf/2611.03738
+orgs:
+- colorado-state-university
+topic: local-forecasting
+topics:
+- applications-impacts
+type: model
+method:
+- transformer
+timescale:
+- nowcast
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Transformer forecasts and temporally downscales Dallas solar irradiance to 5-minute resolution
+  with RMSE about 29-32 W/m2 and uncertainty intervals, using a genetic algorithm for tuning.
+abstract: Accurate forecasting and temporal downscaling of solar irradiance is critical for reliable renewable
+  energy integration and grid management. Traditional methods often struggle to capture rapid irradiance
+  variability. In this work, we develop a Transformer-based architecture for simultaneous forecasting
+  and temporal downscaling. The model takes input data at arbitrary resolutions and generates outputs
+  at any resolutions represented within the training data, leveraging both global and local contextual
+  information. To improve training efficiency, a genetic algorithm-based optimization framework is implemented
+  to identify suitable model hyperparameters, while reducing the computational cost of exhaustive grid
+  search. The effectiveness of the proposed model is shown by analyzing real data in Dallas, Texas. The
+  proposed model achieved root mean square error (RMSE) values of 28.785, 29.544, 30.157, 32.132~W/m\(^2\)
+  for 15-, 30-, 60-minute, and irregularly spaced global input and producing forecast at 5-minutes resolution,
+  respectively. Furthermore, this model produced reliable uncertainty estimates, exhibiting wider prediction
+  intervals for high-resolution inputs during volatile solar conditions, whereas coarser-resolution inputs
+  result in narrower intervals and significantly lower training time and computational cost. Our approach
+  provides a scalable and efficient framework for multi-resolution solar irradiance forecasting and temporal
+  downscaling, suitable for practical energy forecasting and grid management applications.
+significance: 2
+score: 18
+highlight: false
+added: '2026-11-09'
+source: weekly

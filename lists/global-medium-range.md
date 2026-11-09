@@ -5,32 +5,35 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/global-medium-range/)
 
-310 papers (18 ⭐). Newest first.
+313 papers (21 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-11-06 | [Leveraging transport theory to advance machine learning for weather forecasting](https://doi.org/10.14288/1.0457075)<br><sub>Siddharth Rout · Open Collections</sub> |  |  |
+| 2026-11-04 | [Regional Evaluation of Pangu-Weather Driven by Multiple NWP Initial Fields over Shandong Province, China](https://doi.org/10.3390/atmos17111087)<br><sub>Cheng Zhou, Chengfang Yang, Junjian Guo et al. · Atmosphere</sub> |  |  |
+| 2026-11-02 | [Low-Rank Clebsch--Gordan Coupling for Equivariant Spherical Forecasting](https://arxiv.org/abs/2611.03411)<br><sub>Yaojun Li, Zhixuan Zhao, Dongzhe Zheng et al.</sub> | NVIDIA, Princeton University |  |
 | 2026-10-30 | [Machine learning weather prediction at the operational threshold: architectures, data, evaluation, and the observation-interface frontier](https://doi.org/10.5281/zenodo.23788895)<br><sub>Qia Kang, Weiyu Ren, Boyu Gao · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
 | 2026-10-29 | [Machine Learning Weather Prediction: Models, Verification and Limits](https://doi.org/10.63090/ijitrs/3139.3209.0040)<br><sub>N Raji · International Journal of Information Technology Research Studies (IJITRS)</sub> |  |  |
 | 2026-10-20 | [GraphCast-Mamba: Learning Non-Markovian Corrections for Weather Forecasting](https://arxiv.org/abs/2610.28512)<br><sub>Ilya Vilkoviskiy, Liang-Hong Mo, Suozhi Huang et al.</sub> | Google Research, Princeton University |  |
 | 2026-10-18 | [UtoMe: Observation-Uncertainty-Guided Token Merging for Weather Foundation Models](https://arxiv.org/abs/2610.25001)<br><sub>Yunbei Zhang, Janet Wang, Xi Xiao et al.</sub> | ECMWF, Oak Ridge National Laboratory |  |
 | 2026-10-07 | [SoftSEEPS improves ML-based precipitation forecasting](https://arxiv.org/abs/2610.09752)<br><sub>Jost Arndt, Utku Isil, Noelia Otero et al.</sub> |  |  |
-| 2026-10-05 | [WaveGSSM: Graph Wave State Space Models for Propagating Spatio-Temporal Patterns](https://arxiv.org/abs/2610.06540)<br><sub>Junyou Zhu, Fenying Cai, Ping Xiong et al.</sub> |  |  |
+| 2026-10-05 | [WaveGSSM: Graph Wave State Space Models for Propagating Spatio-Temporal Patterns](https://arxiv.org/abs/2610.06540)<br><sub>Junyou Zhu, Fenying Cai, Ping Xiong et al.</sub> | Potsdam Institute for Climate Impact Research (PIK) |  |
 | 2026-10-04 | [FlexCast: Adaptive Weather Forecasting from Arbitrary Field Sets](https://arxiv.org/abs/2610.05296)<br><sub>Yuang Zhang, Chen Hui, Weisi Lin et al.</sub> | Nanjing University of Information Science & Technology (NUIST), Princeton University |  |
 | 2026-10-03 | [A Comparative Review of Machine Learning Algorithms for Weather Prediction: Performance, Challenges, and Future Perspectives](https://doi.org/10.32628/ijsraiml2624111)<br><sub>Harsh Bariya, Sheshang Degadwala · International Journal of Scientific Research in Artificial Intelligence and Machine Learning</sub> |  |  |
 | 2026-10-03 | [S$^3$N: A Spherical Spiral Scanning Network for Weather Forecasting](https://arxiv.org/abs/2610.04338)<br><sub>Fan Yan, Chen Hui, Weisi Lin et al.</sub> | Nanjing University of Information Science & Technology (NUIST), Princeton University |  |
 | 2026-10-02 | [AIGFS v1.1 Development and Performance](https://doi.org/10.25923/ypcz-c273)<br><sub>Linlin Cui, Jun Wang, Jianjun Liu et al. · NOAA Institutional Repository</sub> |  |  |
 | 2026-09-30 | [Sensitivity analysis of fine-tuning GraphCast with adjusted mean squared error using GDAS data: A case study of Hurricane Ian](https://doi.org/10.25923/3whq-ee74)<br><sub>Xiao Luo, Jun Wang, Linlin Cui et al. · NOAA Institutional Repository</sub> |  |  |
 | 2026-09-09 | [Aries: A Proprietary Medium-Range Weather Prediction Model for the Energy Industry](https://arxiv.org/abs/2609.13292)<br><sub>Lukas Hedegaard Morsing, Arian Bakhtiarnia, Jonas Lynge Olesen et al.</sub> |  |  |
-| 2026-09-03 | [WeatherNext 3: Increasing resolution and performance of global weather models with raw observations](https://arxiv.org/abs/2609.03582)<br><sub>Stephan Rasp, Boris Babenko, Dominic Masters et al.</sub> |  |  |
+| 2026-09-03 | ⭐ [WeatherNext 3: Increasing resolution and performance of global weather models with raw observations](https://arxiv.org/abs/2609.03582)<br><sub>Stephan Rasp, Boris Babenko, Dominic Masters et al.</sub> | Google Research |  |
 | 2026-09-02 | ⭐ [Improving global precipitation forecasts with an AI weather model trained on satellite observations](https://arxiv.org/abs/2609.03210)<br><sub>Julian F. Schmitt, Bertrand Delorme, Robert C. King et al.</sub> | California Institute of Technology (Caltech), Google Research, Stanford University |  |
 | 2026-09-01 | [Skill assessment of AI-based weather model in heavy precipitation prediction over South Korea](https://doi.org/10.1007/s00704-026-06536-w)<br><sub>Seong-Ho Hong, Kyeongjoo Park, Dong-Hwi Kim et al. · Theoretical and Applied Climatology</sub> |  |  |
 | 2026-08-27 | [Climate Physics Dynamic Matching](https://arxiv.org/abs/2608.26907)<br><sub>Gurjeet Sangra Singh, Frantzeska Lavda, Alexandros Kalousis</sub> |  |  |
-| 2026-08-27 | [Bridging short- and medium-range weather forecasting with machine learning](https://arxiv.org/abs/2608.26822)<br><sub>Timothy A. Smith, Mariah Pope, Sergey Frolov et al.</sub> |  |  |
-| 2026-08-25 | [A Station-Based Evaluation of Machine Learning-based Weather Forecasting Models in Northern Norway](https://arxiv.org/abs/2609.10564)<br><sub>Siyan Chen, Lars Uebbing, Eirik Mikal Samuelsen et al.</sub> |  |  |
-| 2026-08-25 | [AICON: An operational global machine learning weather forecasting model](https://arxiv.org/abs/2608.24651)<br><sub>Tobias Goecke, Marek Jacob, Florian Prill et al.</sub> |  |  |
+| 2026-08-27 | [Bridging short- and medium-range weather forecasting with machine learning](https://arxiv.org/abs/2608.26822)<br><sub>Timothy A. Smith, Mariah Pope, Sergey Frolov et al.</sub> | NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
+| 2026-08-25 | [A Station-Based Evaluation of Machine Learning-based Weather Forecasting Models in Northern Norway](https://arxiv.org/abs/2609.10564)<br><sub>Siyan Chen, Lars Uebbing, Eirik Mikal Samuelsen et al.</sub> | MET Norway (Norwegian Meteorological Institute) |  |
+| 2026-08-25 | ⭐ [AICON: An operational global machine learning weather forecasting model](https://arxiv.org/abs/2608.24651)<br><sub>Tobias Goecke, Marek Jacob, Florian Prill et al.</sub> | Deutscher Wetterdienst (DWD), University of Reading |  |
 | 2026-08-13 | [Mamba-Stormer v1.0: A Bidirectional Vision Mamba Backbone for Accurate and Scalable Global Weather Forecasting](https://doi.org/10.5194/egusphere-2026-3398)<br><sub>Jiayou Chao, Guanchao Tong, Zhenhua Liu et al.</sub> | New York University (M2LInES) |  |
 | 2026-08-12 | [SWIFT: Spatiotemporal Weather Integration and Forecasting Transformer](https://doi.org/10.5281/zenodo.21898449)<br><sub>Matthew Altenburg, Adam Ahammed Basheer, Dylan Han et al. · Zenodo (CERN European Organization for Nuclear Research)</sub> | Bureau of Meteorology (Australia) |  |
-| 2026-08-10 | [VeinCast: Physics-Guided Dynamic Field Graphs with Graph-Conditioned Fusion for Global Medium-Range Weather Forecasting](https://arxiv.org/abs/2608.09286)<br><sub>Zhisheng Chen, Jinhan Li, Yuxuan Li et al.</sub> |  |  |
+| 2026-08-10 | [VeinCast: Physics-Guided Dynamic Field Graphs with Graph-Conditioned Fusion for Global Medium-Range Weather Forecasting](https://arxiv.org/abs/2608.09286)<br><sub>Zhisheng Chen, Jinhan Li, Yuxuan Li et al.</sub> | Tsinghua University (NowcastNet) |  |
 | 2026-08-09 | [Improving Global Precipitation Forecast using NASA Imerg in a Deep Learning Framework](https://doi.org/10.1109/igarss60577.2026.11730956)<br><sub>Tian-Yi Xiong, Hao-Nan Chen · IGARSS 2026 - 2026 IEEE International Geoscience and Remote Sensing Symposium</sub> | Colorado State University (incl. CIRA) |  |
 | 2026-08-06 | [Timestep-Conditioned Transformers for Global Weather Forecasting](https://arxiv.org/abs/2608.06241)<br><sub>Sam Levang, Fran Bartolic, Ty Dickinson et al.</sub> |  |  |
 | 2026-08-05 | [Assessing the Accuracy of ECMWF Operational Atmospheric Forecasts with Tropospheric Delays from Ray Tracing](https://doi.org/10.3390/app16157799)<br><sub>Özgür Özel, Kamil Teke · Applied Sciences</sub> |  |  |
@@ -46,10 +49,10 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 | 2026-06-30 | [GraphCast Skill and Systematic Biases in Indian Summer Monsoon Forecasts: Evaluation Against ERA5 and IMERG](https://arxiv.org/abs/2607.11905)<br><sub>Somnath Luitel, Parthasarathi Mukhopadhyay, Manmeet Singh et al.</sub> |  |  |
 | 2026-06-24 | [CANet: Global Weather Forecast Network with Climatology-Aware Prior Constraints](https://doi.org/10.1145/3833907.3833927)<br><sub>Fan Yan, Yuang Zhang, Qin-Tong Wang et al. · Proceedings of the 2026 10th International Conference on High Performance Compilation, Computing and Communications</sub> | Nanjing University of Information Science & Technology (NUIST) |  |
 | 2026-06-24 | [PMFormer: Physics-guided Multi-scale Transformer for Global Weather Forecasting](https://doi.org/10.1145/3833907.3833922)<br><sub>Kai Geng, Chen Hui, Xian-Zhu Liu et al. · Proceedings of the 2026 10th International Conference on High Performance Compilation, Computing and Communications</sub> | Nanjing University of Information Science & Technology (NUIST) |  |
-| 2026-06-24 | [Otter Weather: Skillful and Computationally Efficient Medium-Range Weather Forecasting](https://arxiv.org/abs/2606.26421)<br><sub>Cristiana Diaconu, Jonas Scholz, Aliaksandra Shysheya et al.</sub> |  |  |
+| 2026-06-24 | [Otter Weather: Skillful and Computationally Efficient Medium-Range Weather Forecasting](https://arxiv.org/abs/2606.26421)<br><sub>Cristiana Diaconu, Jonas Scholz, Aliaksandra Shysheya et al.</sub> | University of Cambridge (Aardvark) |  |
 | 2026-06-22 | [Graph-Based Learning for Multi-Horizon Martian Atmospheric Forecasting](https://doi.org/10.21203/rs.3.rs-9943010/v1)<br><sub>Gary Myler, James Andrew Holmes, M I and Ansari Patel et al.</sub> |  |  |
 | 2026-06-17 | [Weather Forecasting using Hybrid Machine Learning Framework](https://doi.org/10.55041/ijcope.v2i6.235)<br><sub>Pradip Paithane Pradip Paithane, Deepika Dombe Deepika Dombe, Maithili Huske Maithili Huske et al. · International Journal of Creative and Open Research in Engineering and Management</sub> |  |  |
-| 2026-06-17 | [Investigating Inductive Biases for Machine Learning Emulation of Sudden Stratospheric Warmings in Idealised Isca Simulations](https://arxiv.org/abs/2606.18857)<br><sub>Oskar Bohn Lassen, Simon Driscoll, Stephen I. Thomson et al.</sub> |  |  |
+| 2026-06-17 | [Investigating Inductive Biases for Machine Learning Emulation of Sudden Stratospheric Warmings in Idealised Isca Simulations](https://arxiv.org/abs/2606.18857)<br><sub>Oskar Bohn Lassen, Simon Driscoll, Stephen I. Thomson et al.</sub> | University of Cambridge (Aardvark) |  |
 | 2026-06-14 | [Aircast-Mars: A Mars Foundation Model for Global Weather Forecasting with HEALPix-Aware Convolutions](https://arxiv.org/abs/2607.19370)<br><sub>Manmeet Singh, Saptarishi Dhanuka, Naveen Sudharsan et al.</sub> | California Institute of Technology (Caltech), NASA |  |
 | 2026-06-10 | [Machine Learning and Data Analytics for Weather Prediction Systems: A Review](https://doi.org/10.5281/zenodo.20687586)<br><sub>Mr. Sukhdeep Singh, Er. Sukhwinder Kaur, Dr. Rajinder Kumar · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
 | 2026-06-10 | [Next-Generation Weather Prediction](https://doi.org/10.17148/ijarcce.2026.15629)<br><sub>Ayush Chandel, Manjeet Kaur · IJARCCE</sub> |  |  |
@@ -69,26 +72,26 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 | 2026-05-01 | [AI weather prediction toward multi-scale earth system prediction: status and pathways.](https://doi.org/10.1016/j.scib.2026.05.045)<br><sub>Jing-Lin Zhang, Qing-Hui Chen, Feng Zhang et al. · Science bulletin</sub> | China Meteorological Administration (CMA), Fudan University (FuXi), Shanghai Artificial Intelligence Laboratory |  |
 | 2026-04-30 | [PINN-Cast: Exploring the Role of Continuous-Depth NODE in Transformers and Physics Informed Loss as Soft Physical Constraints in Short-term Weather Forecasting](https://arxiv.org/abs/2604.27313)<br><sub>Hira Saleem, Flora Salim, Cormac Purcell</sub> |  |  |
 | 2026-04-28 | ⭐ [Representing the Surface Ocean in ECMWF's data-driven forecasting system AIFS](https://arxiv.org/abs/2604.25559)<br><sub>Sara Hahner, Lorenzo Zampieri, Jean-Raymond Bidlot et al.</sub> | ECMWF |  |
-| 2026-04-24 | [Hybrid weather prediction using spectral nudging toward machine-learning forecasts](https://arxiv.org/abs/2604.22522)<br><sub>I. Polichtchouk, M. C. A. Clare, M. Chantry et al.</sub> |  |  |
+| 2026-04-24 | [Hybrid weather prediction using spectral nudging toward machine-learning forecasts](https://arxiv.org/abs/2604.22522)<br><sub>I. Polichtchouk, M. C. A. Clare, M. Chantry et al.</sub> | ECMWF |  |
 | 2026-04-14 | [Enhancing Data-Driven Weather Forecasting via Gated Relative Position Encoding and Spatial-Aware Feed-Forward Network](https://doi.org/10.5194/egusphere-2026-1990)<br><sub>Leyi Wang, D Zhang, Jerry Zhijian Yang et al.</sub> | Institute of Atmospheric Physics, Chinese Academy of Sciences |  |
 | 2026-04-08 | [Options for framing NOAA weather and water modeling as a foundational component of the broader US weather and water enterprise](https://doi.org/10.25923/9arp-jx60)<br><sub>Environmental Information Services Working Group · NOAA Institutional Repository</sub> |  |  |
 | 2026-04-06 | [Towards Scaling Law Analysis For Spatiotemporal Weather Data](https://arxiv.org/abs/2604.05068)<br><sub>Alexander Kiefer, Prasanna Balaprakash, Xiao Wang</sub> | Oak Ridge National Laboratory |  |
 | 2026-04-02 | [The Primacy of Physical Simulation in the Age of AI: A Critique of ML for Weather Forecasting](https://doi.org/10.1175/bams-d-25-0214.1)<br><sub>Leonard A. Smith, Alan J. Thorpe · Bulletin of the American Meteorological Society</sub> | University of Reading |  |
 | 2026-04-01 | [The Recipe Matters More Than the Kitchen:Mathematical Foundations of the AI Weather Prediction Pipeline](https://arxiv.org/abs/2604.01215)<br><sub>Piyush Garg, Diana R. Gergel, Andrew E. Shao et al.</sub> |  |  |
-| 2026-03-28 | [StretchCast: Global-Regional AI Weather Forecasting on Stretched Cubed-Sphere Mesh](https://arxiv.org/abs/2603.27288)<br><sub>Jin Feng</sub> |  |  |
+| 2026-03-28 | [StretchCast: Global-Regional AI Weather Forecasting on Stretched Cubed-Sphere Mesh](https://arxiv.org/abs/2603.27288)<br><sub>Jin Feng</sub> | China Meteorological Administration (CMA) |  |
 | 2026-03-26 | [On Neural Scaling Laws for Weather Emulation through Continual Training](https://arxiv.org/abs/2603.25687)<br><sub>Shashank Subramanian, Alexander Kiefer, Arnur Nigmetov et al.</sub> | Lawrence Berkeley National Laboratory / NERSC, Oak Ridge National Laboratory, University of California, Berkeley |  |
 | 2026-03-23 | [Evaluating Machine Learning and Numerical Models for Wintertime Atmospheric Blocking Prediction](https://doi.org/10.1175/aies-d-25-0067.1)<br><sub>Bo Huang, Yongli He, Binrui Ni et al. · Artificial Intelligence for the Earth Systems</sub> |  |  |
 | 2026-03-23 | [SIGMAformer: a spatiotemporal Gaussian mixture correlation transformer for global weather forecasting](https://doi.org/10.1038/s41612-026-01385-w)<br><sub>D. H. Kim, Heung‐Il Suk · npj Climate and Atmospheric Science</sub> |  |  |
 | 2026-03-22 | [Sonny: Breaking the Compute Wall in Medium-Range Weather Forecasting](https://arxiv.org/abs/2603.21284)<br><sub>Minjong Cheon</sub> |  |  |
 | 2026-03-20 | [A hybrid framework for global weather forecasting via low-resolution dynamical core and multigrid neural operator](https://doi.org/10.1038/s41612-026-01374-z)<br><sub>Yifan HU, Fukang Yin, Weimin Zhang et al. · npj Climate and Atmospheric Science</sub> |  |  |
-| 2026-03-16 | [AGCD: Agent-Guided Cross-Modal Decoding for Weather Forecasting](https://arxiv.org/abs/2603.15260)<br><sub>Jing Wu, Yang Liu, Lin Zhang et al.</sub> |  |  |
+| 2026-03-16 | [AGCD: Agent-Guided Cross-Modal Decoding for Weather Forecasting](https://arxiv.org/abs/2603.15260)<br><sub>Jing Wu, Yang Liu, Lin Zhang et al.</sub> | China Meteorological Administration (CMA), Tsinghua University (NowcastNet) |  |
 | 2026-03-15 | [Climavision: Deep Learning for Short-Term Atmospheric Forecasting](https://doi.org/10.26634/jit.15.1.1348)<br><sub>Sai Charani Sannapureddy, Vutukuru Sathya Sai Harshit, Harshita Handa et al. · i-manager s Journal on Information Technology</sub> |  |  |
 | 2026-03-11 | [Improving multi-variable weather forecasting with spatiotemporal feature interaction and large-kernel modeling](https://doi.org/10.1038/s41598-026-42553-5)<br><sub>Yuankang Ye, Jiaen Fei, Feng Gao · Scientific Reports</sub> |  |  |
 | 2026-03-11 | [Improving renewable energy forecasting with FuXi-Energy](https://doi.org/10.1016/j.apenergy.2026.127657)<br><sub>Xiaohui Zhong, Lei Chen, Hao Li et al. · Applied Energy</sub> | Fudan University (FuXi) |  |
 | 2026-03-03 | [A physics-guided machine learning framework for enhancing dust storm visibility prediction in arid and semi-arid regions](https://doi.org/10.1038/s41598-026-39766-z)<br><sub>Chang Xu, Henggang Zhang, Kaiyue Luo et al. · Scientific Reports</sub> |  |  |
 | 2026-02-27 | [Data-driven forecasts of extreme weather in East Asia: feasibility of operational use](https://doi.org/10.1016/j.wace.2026.100875)<br><sub>Seok-Geun Oh, Young-Jun Bae, Seok‐Woo Son et al. · Weather and Climate Extremes</sub> | Korea Meteorological Administration (KMA) |  |
 | 2026-02-26 | [Scaling Laws of Global Weather Models](https://arxiv.org/abs/2602.22962)<br><sub>Yuejiang Yu, Langwen Huang, Alexandru Calotoiu et al.</sub> |  |  |
-| 2026-02-25 | [AviaSafe: A Physics-Informed Data-Driven Model for Aviation Safety-Critical Cloud Forecasts](https://arxiv.org/abs/2602.22298)<br><sub>Zijian Zhu, Qiusheng Huang, Anboyu Guo et al.</sub> |  |  |
+| 2026-02-25 | [AviaSafe: A Physics-Informed Data-Driven Model for Aviation Safety-Critical Cloud Forecasts](https://arxiv.org/abs/2602.22298)<br><sub>Zijian Zhu, Qiusheng Huang, Anboyu Guo et al.</sub> | Fudan University (FuXi) |  |
 | 2026-02-19 | [Physics-Informed spatiotemporal deep learning for multivariate atmospheric forecasting](https://doi.org/10.1016/j.eswa.2026.131721)<br><sub>Hangyi Yu, Lianlei Lin, Zongwei Zhang et al. · Expert Systems with Applications</sub> |  |  |
 | 2026-02-18 | [Comparative evaluation of data‐driven weather forecast models performance for medium‐ to extended‐range weather forecasting and tropical cyclone genesis in 2024](https://doi.org/10.1002/wea.70043)<br><sub>Chun Kit Ho, Marco Y. T. Leung, Y. H. He et al. · Weather</sub> |  |  |
 | 2026-02-17 | [Land surface information from satellites boost near-surface temperature forecast skill](https://doi.org/10.1038/s43247-026-03298-1)<br><sub>Melissa Ruiz‐Vásquez, O Sungmin, Alexander Brenning et al. · Communications Earth & Environment</sub> | ECMWF, Max Planck Institute for Biogeochemistry |  |
@@ -96,8 +99,8 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 | 2026-02-01 | [EMFormer: Efficient Multi-Scale Transformer for Accumulative Context Weather Forecasting](https://arxiv.org/abs/2602.01194)<br><sub>Hao Chen, Tao Han, Jie Zhang et al.</sub> |  | [code](https://github.com/chenhao-zju/emformer) |
 | 2026-01-31 | [Multi-Scale Temporal Contrastive Learning for Accurate Weather Forecasting](https://doi.org/10.1109/sceecs68810.2026.11429752)<br><sub>K. Madhavan, V. Revathy, V. Govarthanan · 2026 IEEE International Students' Conference on Electrical, Electronics and Computer Science (SCEECS)</sub> |  |  |
 | 2026-01-30 | [Track‐Dependent Links Between Tropical Cyclones and Extratropical Predictability in Physical and AI Models](https://arxiv.org/abs/2601.22540)<br><sub>Gan Zhang · Geophysical Research Letters</sub> |  |  |
-| 2026-01-29 | [UniPhy: Unifying Riemannian-Clifford Geometry and Biorthogonal Dynamics for Planetary-Scale Continuous Weather Modeling](https://arxiv.org/abs/2602.09030)<br><sub>Ruiqing Yan, Haoyu Deng, Yuhang Shao et al.</sub> |  | [code](https://github.com/yrqUni/UniPhy) |
-| 2026-01-29 | [Learning to Advect: A Neural Semi-Lagrangian Architecture for Weather Forecasting](https://arxiv.org/abs/2601.21151)<br><sub>Carlos A. Pereira, Stéphane Gaudreault, Valentin Dallerit et al.</sub> |  |  |
+| 2026-01-29 | [UniPhy: Unifying Riemannian-Clifford Geometry and Biorthogonal Dynamics for Planetary-Scale Continuous Weather Modeling](https://arxiv.org/abs/2602.09030)<br><sub>Ruiqing Yan, Haoyu Deng, Yuhang Shao et al.</sub> | Institute of Atmospheric Physics, Chinese Academy of Sciences | [code](https://github.com/yrqUni/UniPhy) |
+| 2026-01-29 | [Learning to Advect: A Neural Semi-Lagrangian Architecture for Weather Forecasting](https://arxiv.org/abs/2601.21151)<br><sub>Carlos A. Pereira, Stéphane Gaudreault, Valentin Dallerit et al.</sub> | Environment and Climate Change Canada (ECCC) |  |
 | 2026-01-28 | [AI for atmosphere–ocean sciences: advancements, challenges and ways forward](https://doi.org/10.1093/nsr/nwag063)<br><sub>Jing‐Jia Luo, Jiangjiang Xia, Baoxiang Pan et al. · National Science Review</sub> | Allen Institute for AI (Ai2, ACE), China Meteorological Administration (CMA), Columbia University (LEAP, Lamont-Doherty), Fudan University (FuXi), Institute of Atmospheric Physics, Chinese Academy of Sciences, Nanjing University of Information Science & Technology (NUIST), Potsdam Institute for Climate Impact Research (PIK), Shanghai Artificial Intelligence Laboratory, Tsinghua University (NowcastNet), Technical University of Munich (TUM) |  |
 | 2026-01-14 | [Searth Transformer: A Transformer Architecture Incorporating Earth's Geospheric Physical Priors for Global Mid-Range Weather Forecasting](https://arxiv.org/abs/2601.09467)<br><sub>Tianye Li, Qi Liu, Hao Li et al.</sub> | Fudan University (FuXi), Institute of Atmospheric Physics, Chinese Academy of Sciences, Nanjing University of Information Science & Technology (NUIST) |  |
 | 2026-01-01 | [Self-Organizing Deep Learning Architectures For Scalable Data Analysis In Environmental Climate Prediction Applications](https://doi.org/10.51483/ijaiml.6.5s.2026.564-571)<br><sub>Dr.K.R Sowmya, V Sivasankari, K Samundeeswari et al. · International Journal of Artificial Intelligence and Machine Learning</sub> |  |  |
@@ -130,12 +133,12 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 | 2025-10-26 | [Quantum Fusion Forecasting: A Multi-Layer System for Precision Storm Prediction and Early Warning](https://osf.io/d8h52)<br><sub>Jackson Hamiter · OSF Preprints (OSF Preprints)</sub> |  |  |
 | 2025-10-25 | [Hierarchical Graph Networks for Accurate Weather Forecasting via Lightweight Training](https://arxiv.org/abs/2510.22094)<br><sub>Thomas Bailie, S. Karthik Mukkavilli, Varvara Vetrova et al.</sub> |  |  |
 | 2025-10-10 | [ARROW: An Adaptive Rollout and Routing Method for Global Weather Forecasting](https://arxiv.org/abs/2510.09734)<br><sub>Jindong Tian, Yifei Ding, Ronghui Xu et al.</sub> |  |  |
-| 2025-10-05 | [Learning more physically realistic dynamics in machine-learning based weather forecasting with latent-space constraints](https://arxiv.org/abs/2510.04006)<br><sub>Hang Fan, Yi Xiao, Yongquan Qu et al.</sub> |  |  |
+| 2025-10-05 | [Learning more physically realistic dynamics in machine-learning based weather forecasting with latent-space constraints](https://arxiv.org/abs/2510.04006)<br><sub>Hang Fan, Yi Xiao, Yongquan Qu et al.</sub> | Columbia University (LEAP, Lamont-Doherty), Shanghai Artificial Intelligence Laboratory, Tsinghua University (NowcastNet) |  |
 | 2025-10-02 | [Hybrid Approaches in Weather Forecasting: From Numerical Models to Deep Learning](https://doi.org/10.54254/2753-8818/2025.dl27256)<br><sub>Yuding Wu · Theoretical and Natural Science</sub> |  |  |
 | 2025-09-25 | [Mesh Interpolation Graph Network for Dynamic and Spatially Irregular Global Weather Forecasting](https://arxiv.org/abs/2509.20911)<br><sub>Zinan Zheng, Yang Liu, Jia Li · ArXiv</sub> | Tsinghua University (NowcastNet) |  |
 | 2025-09-23 | [Beyond the horizon: A comprehensive analysis of artificial intelligence-based weather forecasting models](https://doi.org/10.1016/j.engappai.2025.112335)<br><sub>Saeid Haji-Aghajany, Witold Rohm, Piotr Lipiński et al. · Engineering Applications of Artificial Intelligence</sub> |  |  |
 | 2025-09-23 | ⭐ [An update to ECMWF's machine-learned weather forecast model AIFS](https://arxiv.org/abs/2509.18994)<br><sub>Gabriel Moldovan, Ewan Pinnington, Ana Prieto Nemesio et al. · Geoscientific Model Development</sub> | ECMWF |  |
-| 2025-09-22 | [Technical overview and architecture of the FastNet Machine Learning weather prediction model, version 1.0](https://arxiv.org/abs/2509.17658)<br><sub>Eric G. Daub, Tom Dunstan, Thusal Bennett et al.</sub> |  |  |
+| 2025-09-22 | [Technical overview and architecture of the FastNet Machine Learning weather prediction model, version 1.0](https://arxiv.org/abs/2509.17658)<br><sub>Eric G. Daub, Tom Dunstan, Thusal Bennett et al.</sub> | The Alan Turing Institute, Met Office |  |
 | 2025-09-22 | [FastNet: Improving the physical consistency of machine-learning weather prediction models through loss function design](https://arxiv.org/abs/2509.17601)<br><sub>Tom Dunstan, Oliver Strickson, Thusal Bennett et al. · Artif. Intell. Earth Syst., 5, 250090, 2006</sub> | The Alan Turing Institute, Met Office |  |
 | 2025-09-18 | [AI-DRIVEN ENHANCEMENTS IN WEATHER FORECASTING: A COMPREHENSIVE ANALYSIS FOR THE LAST 5 YEARS](https://policyrj.com/1/article/view/1043)<br><sub>Muhammad Kashif Hanif, Zohaib Ahmed Khan, Rabia Asif et al. · Policy Research Journal</sub> |  |  |
 | 2025-09-18 | [FlowCast-ODE: Continuous Hourly Weather Forecasting with Dynamic Flow Matching and ODE Solver](https://arxiv.org/abs/2509.14775)<br><sub>Shuangshuang He, Yuanting Zhang, Hongli Liang et al.</sub> |  |  |
@@ -148,7 +151,7 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 | 2025-07-01 | [An Interpretable Weather Forecasting Model With Separately‐Learned Dynamics and Physics Neural Networks](https://doi.org/10.1029/2024gl114310)<br><sub>Mengxuan Chen, Jinxiao Zhang, Runmin Dong et al. · Geophysical Research Letters</sub> | China Meteorological Administration (CMA), Tsinghua University (NowcastNet) |  |
 | 2025-06-26 | [GDOSphere: A spherical graph neural network framework with neural operators for weather forecasting](https://doi.org/10.1016/j.physa.2025.130772)<br><sub>Zhewen Xu, Baoxiang Pan, Xiaohui Wei et al. · Physica A Statistical Mechanics and its Applications</sub> | Institute of Atmospheric Physics, Chinese Academy of Sciences |  |
 | 2025-06-11 | [AtmosMJ: Revisiting Gating Mechanism for AI Weather Forecasting Beyond the Year Scale](https://arxiv.org/abs/2506.09733)<br><sub>Minjong Cheon</sub> |  |  |
-| 2025-06-09 | [Imposing the Fundamental Dynamical Constraint of Hydrostatic Balance to Improve Global ML Weather Prediction](https://arxiv.org/abs/2506.08285)<br><sub>Akshay Subramaniam, Dale Durran, David Pruitt et al.</sub> |  |  |
+| 2025-06-09 | [Imposing the Fundamental Dynamical Constraint of Hydrostatic Balance to Improve Global ML Weather Prediction](https://arxiv.org/abs/2506.08285)<br><sub>Akshay Subramaniam, Dale Durran, David Pruitt et al.</sub> | NVIDIA, University of Washington |  |
 | 2025-06-01 | [Fifty years of ‘taking the weather’](https://doi.org/10.1088/2058-7058/38/06/07)<br><sub>Joe McEntee · Physics World</sub> |  |  |
 | 2025-05-28 | [Leveraging AI Models for Regional Weather Prediction: A Data Pipeline for Africa](https://doi.org/10.23919/ist-africa67297.2025.11060571)<br><sub>Teofilo Ligawa, Austin Kaburia, C. Maina · 2025 IST-Africa Conference (IST-Africa)</sub> |  |  |
 | 2025-05-23 | [Martian Climatology Simulation and Weather Forecasting Based on Generative Deep Learning](http://hdl.handle.net/10138/598093)<br><sub>Xinqyu Ge · Työväentutkimus Vuosikirja</sub> |  |  |
@@ -158,7 +161,7 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 | 2025-05-08 | [Physics-Assisted and Topology-Informed Deep Learning for Weather Prediction](https://arxiv.org/abs/2505.04918)<br><sub>Jiaqi Zheng, Qing Ling, Yerong Feng</sub> |  | [code](https://github.com/Yumenomae/PASSAT_5p625) |
 | 2025-04-28 | [Evaluation of precipitation forecasting base on GraphCast over mainland China](https://doi.org/10.1038/s41598-025-98944-7)<br><sub>Zihuang Yan, Xianghui Lu, Lifeng Wu et al. · Scientific Reports</sub> |  |  |
 | 2025-04-04 | [Spherical multigrid neural operator for improving autoregressive global weather forecasting](https://doi.org/10.1038/s41598-025-96208-y)<br><sub>Yifan Hu, Fukang Yin, Weimin Zhang et al. · Scientific Reports</sub> |  |  |
-| 2025-03-28 | [WeatherMesh-3: Fast and accurate operational global weather forecasting](https://arxiv.org/abs/2503.22235)<br><sub>Haoxing Du, Lyna Kim, Joan Creus-Costa et al.</sub> |  |  |
+| 2025-03-28 | [WeatherMesh-3: Fast and accurate operational global weather forecasting](https://arxiv.org/abs/2503.22235)<br><sub>Haoxing Du, Lyna Kim, Joan Creus-Costa et al.</sub> | WindBorne Systems |  |
 | 2025-03-25 | [AI-Based Predictive Weather Modeling Using Neural Networks](https://doi.org/10.5281/zenodo.21451692)<br><sub>Dr. Surender Singh · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
 | 2025-03-14 | [GMG: A Video Prediction Method Based on Global Focus and Motion Guided](https://doi.org/10.1109/tcsvt.2026.3657055)<br><sub>Yuhao Du, Hui Liu, Haoxiang Peng et al. · IEEE Transactions on Circuits and Systems for Video Technology</sub> |  |  |
 | 2025-03-10 | [REVOLUTIONIZING NUMERICAL WEATHER PREDICTION MODELS WITH MACHINE LEARNING INNOVATIONS](https://doi.org/10.48047/7gy3es52)<br><sub>Atagara Jayasree Rani, Y. Narasimha Reddy · Cuestiones de Fisioterapia</sub> |  |  |
@@ -169,7 +172,7 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 | 2025-02-10 | [Optimized Symmetric Positive Definite Neural Networks: A Novel Approach to Weather Prediction](https://doi.org/10.63503/j.ijcma.2025.47)<br><sub>Rohan Vaghela, Jigar Subodhchandra Sarda · International Journal on Computational Modelling Applications</sub> |  |  |
 | 2025-02-09 | [Scientific Analysis of Various Computational Intelligence Methods used for Weather Forecasting](https://doi.org/10.52783/jisem.v10i9s.1246)<br><sub>Umesh Kumar · Journal of Information Systems Engineering & Management</sub> |  |  |
 | 2025-02-02 | [Utilising machine learning for improved weather forecasting and analysis](https://doi.org/10.71097/ijsat.v16.i1.1637)<br><sub>Sunny kumar -, Prince raj -, Chandan Kumar · International Journal on Science and Technology</sub> |  |  |
-| 2025-02-01 | [OneForecast: A Universal Framework for Global and Regional Weather Forecasting](https://arxiv.org/abs/2502.00338)<br><sub>Yuan Gao, Hao Wu, Ruiqi Shu et al.</sub> |  | [code](https://github.com/YuanGao-YG/OneForecast) |
+| 2025-02-01 | [OneForecast: A Universal Framework for Global and Regional Weather Forecasting](https://arxiv.org/abs/2502.00338)<br><sub>Yuan Gao, Hao Wu, Ruiqi Shu et al.</sub> | Tsinghua University (NowcastNet) | [code](https://github.com/YuanGao-YG/OneForecast) |
 | 2025-01-31 | [Fixing the Double Penalty in Data-Driven Weather Forecasting Through a Modified Spherical Harmonic Loss Function](https://arxiv.org/abs/2501.19374)<br><sub>Christopher Subich, Syed Zahid Husain, Leo Separovic et al.</sub> |  |  |
 | 2025-01-26 | [Enhancing spatiotemporal weather forecasting accuracy with 3D convolutional kernel through the sequence to sequence model](https://doi.org/10.11591/ijece.v15i2.pp2022-2030)<br><sub>Renaldy Fredyan, Karli Eka Setiawan, Kelvin Asclepius Minor · International Journal of Power Electronics and Drive Systems/International Journal of Electrical and Computer Engineering</sub> |  |  |
 | 2025-01-14 | [Machine Learning Methods for Weather Forecasting: A Survey](https://doi.org/10.3390/atmos16010082)<br><sub>Huijun Zhang, Yaxin Liu, Chongyu Zhang et al. · Atmosphere</sub> |  |  |
@@ -195,7 +198,7 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 | 2024-10-24 | [Deep Learning Model for Weather Prediction](https://doi.org/10.1109/iccsc62048.2024.10830369)<br><sub>Shubhanshi Singh, Neha Tyagi · 2024 International Conference on Computing, Sciences and Communications (ICCSC)</sub> |  |  |
 | 2024-10-21 | [Spatio-Temporal Transformer Network with Physical Knowledge Distillation for Weather Forecasting](https://doi.org/10.1145/3627673.3679841)<br><sub>Jing He, Junzhong Ji, Minglong Lei · Proceedings of the 33rd ACM International Conference on Information and Knowledge Management</sub> |  |  |
 | 2024-10-19 | [EPT-1.5 Technical Report](https://arxiv.org/abs/2410.15076)<br><sub>Roberto Molinaro, Jordan Dane Daubinet, Alexander Jakob Dautel et al.</sub> |  |  |
-| 2024-10-09 | [Mitigating Time Discretization Challenges with WeatherODE: A Sandwich Physics-Driven Neural ODE for Weather Forecasting](https://arxiv.org/abs/2410.06560)<br><sub>Peiyuan Liu, Tian Zhou, Liang Sun et al.</sub> |  | [code](https://github.com/DAMO-DI-ML/WeatherODE) |
+| 2024-10-09 | [Mitigating Time Discretization Challenges with WeatherODE: A Sandwich Physics-Driven Neural ODE for Weather Forecasting](https://arxiv.org/abs/2410.06560)<br><sub>Peiyuan Liu, Tian Zhou, Liang Sun et al.</sub> | Alibaba (DAMO Academy), Tsinghua University (NowcastNet) | [code](https://github.com/DAMO-DI-ML/WeatherODE) |
 | 2024-10-04 | [Predictability of Global AI Weather Models](https://arxiv.org/abs/2410.03266)<br><sub>Chanh Kieu</sub> |  |  |
 | 2024-09-30 | [STFM: Accurate Spatio-Temporal Fusion Model for Weather Forecasting](https://doi.org/10.3390/atmos15101176)<br><sub>Jun Liu, Li Wu, Tao Zhang et al. · Atmosphere</sub> |  |  |
 | 2024-09-30 | [Masked Autoregressive Model for Weather Forecasting](https://arxiv.org/abs/2409.20117)<br><sub>Doyi Kim, Minseok Seo, Hakjin Lee et al.</sub> |  |  |
@@ -218,7 +221,7 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 | 2024-06-06 | [Data-Driven Weather Forecasting and Climate Modeling from the Perspective of Development](https://doi.org/10.3390/atmos15060689)<br><sub>Yuting Wu, Wei Xue · Atmosphere</sub> | Tsinghua University (NowcastNet) |  |
 | 2024-06-03 | ⭐ [AIFS -- ECMWF's data-driven forecasting system](https://arxiv.org/abs/2406.01465)<br><sub>Simon Lang, Mihai Alexe, Matthew Chantry et al.</sub> |  |  |
 | 2024-06-01 | [Spherical Neural Operator Network for Global Weather Prediction](https://doi.org/10.1109/tcsvt.2023.3337857)<br><sub>Keng-Hong Lin, Xu-Tao Li, Yun-Ming Ye et al. · IEEE Transactions on Circuits and Systems for Video Technology</sub> |  |  |
-| 2024-05-23 | [ArchesWeather: An efficient AI weather forecasting model at 1.5° resolution](https://arxiv.org/abs/2405.14527)<br><sub>Guillaume Couairon, Christian Lessig, Anastase Charantonis et al.</sub> |  | [code](https://github.com/gcouairon/ArchesWeather) |
+| 2024-05-23 | ⭐ [ArchesWeather: An efficient AI weather forecasting model at 1.5° resolution](https://arxiv.org/abs/2405.14527)<br><sub>Guillaume Couairon, Christian Lessig, Anastase Charantonis et al.</sub> | ECMWF, Inria | [code](https://github.com/gcouairon/ArchesWeather) |
 | 2024-05-22 | [Generalizing Weather Forecast to Fine-grained Temporal Scales via Physics-AI Hybrid Modeling](https://arxiv.org/abs/2405.13796)<br><sub>Wanghan Xu, Fenghua Ling, Wenlong Zhang et al.</sub> |  |  |
 | 2024-05-21 | [Beyond the Horizon: A Critical Analysis of AI-based Weather Forecasting Models](https://doi.org/10.22541/essoar.171632600.06154714/v1)<br><sub>Saeid Haji-Aghajany, Witold Rohm, Piotr Lipiński et al.</sub> |  |  |
 | 2024-05-12 | [CaFA: Global Weather Forecasting with Factorized Attention on Sphere](https://arxiv.org/abs/2405.07395)<br><sub>Zijie Li, Anthony Zhou, Saurabh Patil et al.</sub> |  |  |
@@ -296,7 +299,7 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 | 2021-05-04 | [Physics-informed generative neural network: an application to troposphere temperature prediction](https://doi.org/10.1088/1748-9326/abfde9)<br><sub>Zhihao Chen, Jie Gao, Weikai Wang et al. · Environmental Research Letters</sub> | Shanghai Artificial Intelligence Laboratory |  |
 | 2021-04-01 | [Physics-informed neural networks for the shallow-water equations on the sphere](https://arxiv.org/abs/2104.00615)<br><sub>Alex Bihlo, Roman O. Popovych · J. Comp. Phys. 456 (2022), 111024</sub> |  |  |
 | 2021-02-15 | [Can deep learning beat numerical weather prediction?](https://doi.org/10.1098/rsta.2020.0097)<br><sub>M. G. Schultz, C. Betancourt, B. Gong et al. · Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences</sub> | Forschungszentrum Jülich / Jülich Supercomputing Centre |  |
-| 2021-02-13 | [Data-driven geophysical forecasting: Simple, low-cost, and accurate baselines with kernel methods](https://arxiv.org/abs/2103.10935)<br><sub>Boumediene Hamzi, Romit Maulik, Houman Owhadi</sub> |  |  |
+| 2021-02-13 | [Data-driven geophysical forecasting: Simple, low-cost, and accurate baselines with kernel methods](https://doi.org/10.1098/rspa.2021.0326)<br><sub>Boumediene Hamzi, Romit Maulik, Houman Owhadi · Proceedings of the Royal Society A Mathematical Physical and Engineering Sciences</sub> | Argonne National Laboratory, California Institute of Technology (Caltech) |  |
 | 2021-02-01 | [Numerical Weather Forecasting using Convolutional-LSTM with Attention and Context Matcher Mechanisms](https://doi.org/10.1109/tgrs.2024.3409084)<br><sub>Selim Furkan Tekin, Oğuzhan Karaahmetoğlu, Fatih İlhan et al. · IEEE Transactions on Geoscience and Remote Sensing</sub> |  |  |
 | 2021-01-31 | [Application of Artificial Intelligence Technology to Numerical Weather Prediction](https://doi.org/10.11898/1001-7313.20210101)<br><sub>Sun Jian, Zhuo Cao, Heng Li et al. · DOAJ (DOAJ: Directory of Open Access Journals)</sub> |  |  |
 | 2021-01-01 | [Enhancing geophysical flow machine learning performance via scale separation](https://doi.org/10.5194/npg-28-423-2021)<br><sub>Davide Faranda, M. Vrac, P. Yiou et al. · Nonlinear Processes in Geophysics</sub> |  |  |
@@ -322,6 +325,10 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 
 ## Also relevant
 
+- [Half-precision inference of AI weather prediction models: negligible loss of skill at a fraction of the cost](https://arxiv.org/abs/2611.09573) (2026)
+- [Short-Term Forecasting of Heterogeneous Wind Power Fleets: Global Temporal Fusion Transformer Leveraging Static Covariates](https://arxiv.org/abs/2611.06130) (2026)
+- [Distinguishing Initial-Condition and Model Error Using Machine-Learning Weather Models](https://arxiv.org/abs/2611.05592) (2026)
+- [Sonny-ENS: demystifying machine-learning ensemble weather forecasting](https://arxiv.org/abs/2611.01614) (2026)
 - [Artificial Intelligence Applications in Climate Change Prediction](https://doi.org/10.5281/zenodo.23791670) (2026)
 - [Pangu-Weather underestimates the 2019 European summer heatwave: A storyline comparison with ICON](https://doi.org/10.1175/jcli-d-26-0093.1) (2026)
 - [Advanced meteorological modeling framework integrating quantum computing and machine learning for hurricane track prediction beyond traditional forecasting limitations](https://doi.org/10.3389/fenvs.2026.1939822) (2026)
@@ -332,7 +339,6 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 - [Multivariate phase-space interpretation of ensemble forecasts: A comparison of physical and AI models](https://arxiv.org/abs/2610.16422) (2026)
 - [WeatherBridge: Forecast-Aware Multi-Source Input Adaptation for Pretrained Weather Forecasting Models](https://arxiv.org/abs/2610.14863) (2026)
 - [Learning Kilometer-Scale Weather Prediction with Global-Regional Alignment](https://arxiv.org/abs/2610.12401) (2026)
-- [Predicting regional gray swans via translocation: AI weather models and Dubai’s unprecedented 2024 rainfall](https://doi.org/10.1126/sciadv.ady9406) (2026)
 - [Artificial intelligence pathways from weather to climate](https://arxiv.org/abs/2610.09770) (2026)
 - [SDECast: Probabilistic Weather Forecasting in Continuous Time with Neural SDEs](https://arxiv.org/abs/2610.03313) (2026)
 - [Domain-Adaptive Data Assimilation for Global AI Weather Forecasting](https://arxiv.org/abs/2610.03172) (2026)
@@ -416,7 +422,6 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 - [Physics‐informed ensemble forecasts in data‐driven models](https://doi.org/10.1002/qj.70183) (2026)
 - [Marchuk: Efficient Global Weather Forecasting from Mid-Range to Sub-Seasonal Scales via Flow Matching](https://arxiv.org/abs/2603.24428) (2026)
 - [Enhancing AI-Based Tropical Cyclone Track and Intensity Forecasting via Systematic Bias Correction](https://arxiv.org/abs/2603.22314) (2026)
-- [Comparing and Contrasting Deep Learning Weather Prediction Backbones on Navier-Stokes and Atmospheric Dynamics](https://doi.org/10.1080/26941899.2026.2638055) (2026)
 - [A spectral test of the butterfly effect and physical consistency in the diffusion-based GenCast’s ensembles](https://doi.org/10.1038/s41612-026-01380-1) (2026)
 - [Predictability of precipitation extremes in the Western United States and the U.S. Gulf Coast using AI weather models](https://doi.org/10.1088/3049-4753/ae52fd) (2026)
 - [Evaluating data-driven background ensembles covariances from Graphcast: a case study for Hurricane Lee (2023)](https://arxiv.org/abs/2603.26703) (2026)
@@ -459,7 +464,6 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 - [Controllable Probabilistic Forecasting with Stochastic Decomposition Layers](https://arxiv.org/abs/2512.18815) (2025)
 - [Performance of a machine‐learning‐physics hybrid model on 2024 typhoons and land precipitations](https://doi.org/10.1002/qj.70101) (2025)
 - [Forecasting Fails: Unveiling Evasion Attacks in Weather Prediction Models](https://arxiv.org/abs/2512.08832) (2025)
-- [Accurate tropical cyclone intensity forecasts using a non-iterative spatiotemporal transformer model](https://doi.org/10.1038/s41612-025-01279-3) (2025)
 - [Foundation Models of Ocean and Atmosphere in 2025: Milestones and Perspectives](https://doi.org/10.3103/s0027134925703084) (2025)
 - [Tropical Cyclone Forecasting Based on Cross-modal Fusion and Multi-generators](https://doi.org/10.11896/jsjkx.250100030) (2025)
 - [Robustness Test for AI Forecasting of Hurricane Florence Using FourCastNetv2 and Random Perturbations of the Initial Condition](https://arxiv.org/abs/2512.05323) (2025)
@@ -484,7 +488,7 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 - [STCast: Adaptive Boundary Alignment for Global and Regional Weather Forecasting](https://arxiv.org/abs/2509.25210) (2025)
 - [Artificial intelligence in meteorological observation and forecasting: a survey](https://doi.org/10.1117/12.3077439) (2025)
 - [Severe Typhoon Danas (2025)—A Tropical Cyclone with Erratic Track over the Northern Part of the South China Sea and Adjacent Sea of Taiwan](https://doi.org/10.3390/atmos16091099) (2025)
-- [Accurate typhoon intensity forecasts using a non-iterative spatiotemporal transformer model](https://arxiv.org/abs/2509.21349) (2025)
+- [Accurate typhoon intensity forecasts using a non-iterative spatiotemporal transformer model](https://doi.org/10.1038/s41612-025-01279-3) (2025)
 - [Evaluating the Shanghai Typhoon Model against State-of-the-Art Machine-Learning Weather Prediction Models: A Case Study for Typhoon Danas (2025)](https://doi.org/10.1007/s00376-025-5464-8) (2025)
 - [AERIS: Argonne Earth Systems Model for Reliable and Skillful Predictions](https://arxiv.org/abs/2509.13523) (2025)
 - [S$^2$Transformer: Scalable Structured Transformers for Global Station Weather Forecasting](https://arxiv.org/abs/2509.19648) (2025)
@@ -499,7 +503,6 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 - [Equivariant and Invariant Message Passing for Global Subseasonal-to-seasonal Forecasting](https://doi.org/10.1145/3711896.3736939) (2025)
 - [Beyond the Backbone: A Quantitative Review of Deep-Learning Architectures for Tropical Cyclone Track Forecasting](https://doi.org/10.3390/rs17152675) (2025)
 - [UniExtreme: A Universal Foundation Model for Extreme Weather Forecasting](https://arxiv.org/abs/2508.01426) (2025)
-- [AI‐Driven Weather Forecasts to Accelerate Climate Change Attribution of Heatwaves](https://doi.org/10.1029/2025ef006453) (2025)
 - [Fast and Flexible Probabilistic Forecasting of Dynamical Systems using Flow Matching and Physical Perturbation](https://arxiv.org/abs/2508.01101) (2025)
 - [Data-driven global ocean model resolving ocean-atmosphere coupling dynamics](https://arxiv.org/abs/2508.10908) (2025)
 - [A comparison of stretched-grid and limited-area modelling for data-driven regional weather forecasting](https://doi.org/10.1016/j.mlwa.2026.100887) (2025)
@@ -529,12 +532,12 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 - [Enhancing short-term solar radiation forecasting with hybrid VMD and GraphCast-based machine learning models](https://doi.org/10.1016/j.eswa.2025.128042) (2025)
 - [Spatiotemporal inhomogeneity of accuracy degradation in AI weather forecast foundation models: A GNSS perspective](https://doi.org/10.1016/j.jag.2025.104473) (2025)
 - [Evaluating Global Machine Learning Models for Tropical Cyclone Dynamics and Thermodynamics](https://doi.org/10.1029/2025jh000594) (2025)
-- [Turning Up the Heat: Assessing 2-m Temperature Forecast Errors in AI Weather Prediction Models During Heat Waves](https://arxiv.org/abs/2504.21195) (2025)
+- [Turning Up the Heat: Assessing 2-m Temperature Forecast Errors in AI Weather Prediction Models During Heat Waves](https://doi.org/10.1002/met.70249) (2025)
 - [Machine Learning (ML)-Physics Fusion Model Outperforms Both Physics-Only and ML-Only Models in Typhoon Predictions](https://arxiv.org/abs/2504.20852) (2025)
 - [Atmospheric Predictability Beyond 30 Days with Machine Learning](https://doi.org/10.1175/aies-d-26-0009.1) (2025)
 - [Appa: Bending Weather Dynamics with Latent Diffusion Models for Global Data Assimilation](https://arxiv.org/abs/2504.18720) (2025)
 - [Democracy of AI Numerical Weather Models: An Example of Global Forecasting with FourCastNetv2 Made by a University Research Lab Using GPU](https://arxiv.org/abs/2504.17028) (2025)
-- [How to systematically develop an effective AI-based bias correction model?](https://arxiv.org/abs/2504.15322) (2025)
+- [How to systematically develop an effective AI-based bias correction model?](https://doi.org/10.1016/j.aosl.2026.100794) (2025)
 - [Statistical post-processing yields accurate probabilistic forecasts from Artificial Intelligence weather models](https://doi.org/10.1175/aies-d-25-0037.1) (2025)
 - [TianQuan-S2S: A Subseasonal-to-Seasonal Global Weather Model via Incorporate Climatology State](https://arxiv.org/abs/2504.09940) (2025)
 - [Building Machine Learning Limited Area Models: Kilometer-Scale Weather Forecasting in Realistic Settings](https://arxiv.org/abs/2504.09340) (2025)
@@ -588,17 +591,17 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 - [CoDiCast: Conditional Diffusion Model for Global Weather Prediction with Uncertainty Quantification](https://arxiv.org/abs/2409.05975) (2024)
 - [Evaluation of Tropical Cyclone Track and Intensity Forecasts from Artificial Intelligence Weather Prediction (AIWP) Models](https://doi.org/10.1175/aies-d-24-0085.1) (2024)
 - [Regional data-driven weather modeling with a global stretched-grid](https://arxiv.org/abs/2409.02891) (2024)
-- [AI-driven weather forecasts enable anticipated attribution of extreme events to human-made climate change](https://arxiv.org/abs/2408.16433) (2024)
+- [AI-driven weather forecasts enable anticipated attribution of extreme events to human-made climate change](https://doi.org/10.1029/2025ef006453) (2024)
 - [Improving Typhoon Predictions by Integrating Data-Driven Machine Learning Models with Physics Models Based on the Spectral Nudging and Data Assimilation](https://doi.org/10.1029/2024ea003952) (2024)
 - [High-Resolution Early Warning Systems Using DL: Part II - Combining FourCastNet and E-TEPS for High-Resolution Climate Forecasting](https://doi.org/10.20944/preprints202408.1322.v1) (2024)
 - [MetMamba: Regional Weather Forecasting with Spatial-Temporal Mamba Model](https://arxiv.org/abs/2408.06400) (2024)
-- [DUNE: A Machine Learning Deep UNet++ based Ensemble Approach to Monthly, Seasonal and Annual Climate Forecasting](https://arxiv.org/abs/2408.06262) (2024)
+- [DUNE: A Machine Learning Deep UNet++ based Ensemble Approach to Monthly, Seasonal and Annual Climate Forecasting](https://doi.org/10.1175/aies-d-24-0073.1) (2024)
 - [FuXi Weather: A data-to-forecast machine learning system for global weather](https://arxiv.org/abs/2408.05472) (2024)
 - [Huge Ensembles Part I: Design of Ensemble Weather Forecasts using Spherical Fourier Neural Operators](https://arxiv.org/abs/2408.03100) (2024)
 - [Huge Ensembles Part II: Properties of a Huge Ensemble of Hindcasts Generated with Spherical Fourier Neural Operators](https://doi.org/10.5194/gmd-18-5605-2025) (2024)
 - [Data driven weather forecasts trained and initialised directly from observations](https://arxiv.org/abs/2407.15586) (2024)
 - [A Hybrid Machine Learning/Physics‐Based Modeling Framework for 2‐Week Extended Prediction of Tropical Cyclones](https://doi.org/10.1029/2024jh000207) (2024)
-- [Comparing and Contrasting DLWP Backbones on Navier-Stokes and Atmospheric Dynamics](https://arxiv.org/abs/2407.14129) (2024)
+- [Comparing and Contrasting DLWP Backbones on Navier-Stokes and Atmospheric Dynamics](https://doi.org/10.1080/26941899.2026.2638055) (2024)
 - [Leveraging data-driven weather models for improving numerical weather prediction skill through large-scale spectral nudging](https://arxiv.org/abs/2407.06100) (2024)
 - [Solarcast-ML: Per Node GraphCast Extension for Solar Energy Production](https://arxiv.org/abs/2406.13559) (2024)
 - [A Global Probability‐Of‐Fire (PoF) Forecast](https://doi.org/10.1029/2023gl107929) (2024)
@@ -637,7 +640,6 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 - [Data-Driven Global Subseasonal Forecast for Intraseasonal Oscillation Components](https://doi.org/10.3390/atmos14111682) (2023)
 - [Neural General Circulation Models for Weather and Climate](https://arxiv.org/abs/2311.07222) (2023)
 - [Can Artificial Intelligence‐Based Weather Prediction Models Simulate the Butterfly Effect?](https://doi.org/10.1029/2023gl105747) (2023)
-- [Constraining chaos: Enforcing dynamical invariants in the training of reservoir computers](https://doi.org/10.1063/5.0156999) (2023)
 - [Graph-based Neural Weather Prediction for Limited Area Modeling](https://arxiv.org/abs/2309.17370) (2023)
 - [AI Foundation Models for Weather and Climate: Applications, Design, and Implementation](https://arxiv.org/abs/2309.10808) (2023)
 - [On some limitations of data-driven weather forecasting models](https://arxiv.org/abs/2309.08473) (2023)

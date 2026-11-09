@@ -1,0 +1,56 @@
+id: arxiv-2611.05592
+title: Distinguishing Initial-Condition and Model Error Using Machine-Learning Weather Models
+authors:
+- P. Trent Vonich
+- Gregory J. Hakim
+date: '2026-11-03'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2611.05592'
+links:
+  paper: https://arxiv.org/abs/2611.05592
+  pdf: https://arxiv.org/pdf/2611.05592
+orgs:
+- ecmwf
+- university-of-washington
+topic: data-assimilation
+topics:
+- global-medium-range
+- xai-uq-physics
+type: model
+method:
+- differentiable
+- other
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Differentiable optimization of GraphCast initial conditions and LoRA weights, gated by Pangu-Weather,
+  separates initial-condition from model error in reanalysis-shadowing forecasts.
+abstract: Differentiable weather models allow atmospheric initial conditions to be directly optimized
+  to shadow a known trajectory, which we take from a reanalysis dataset. Here, we extend this optimization
+  to include the forecast model, GraphCast, using low-rank adaptation (LoRA). We compare model optimization
+  with initial-condition (IC) optimization, and then joint optimization, where both are tuned simultaneously.
+  When compared against a control forecast initialized with reanalysis data, LoRA and IC optimization
+  individually produce similar improvements. We find similar results when IC and LoRA are jointly optimized
+  across a spectrum of solutions where a tuning coefficient smoothly shifts the weight of the joint optimization
+  from all-LoRA to all-IC; forecast improvement is not unique to the relative contributions of model and
+  IC corrections. To better discriminate the source of error, we introduce a second model, Pangu-Weather,
+  as a supervisor that gates IC updates during joint optimization. This gated optimization is the same
+  as before, except that IC updates at each epoch are accepted only when they improve the forecasts of
+  both models; otherwise, only the LoRA update is accepted. Results show that this cross-model constraint
+  substantially improves agreement between the two models in their response to the same optimized ICs,
+  narrowing the gap in mean forecast error reduction from 64% to 10%. Moreover, when used together, the
+  LoRA and IC corrections from the gated optimization yield GraphCast forecast improvements similar to
+  those from the ungated optimization. These results imply that model error that is encoded in the ungated
+  ICs is shifted to the LoRA corrections via gating, yielding IC corrections that may provide better analysis
+  estimates.
+significance: 5
+score: 55
+highlight: false
+added: '2026-11-09'
+source: weekly

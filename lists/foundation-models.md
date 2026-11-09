@@ -5,11 +5,11 @@ Large pretrained models for the atmosphere or Earth system that are fine-tuned f
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/foundation-models/)
 
-51 papers (2 ⭐). Newest first.
+51 papers (5 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
-| 2026-10-15 | [Atmospheric Chemistry-Climate Modeling with an AI Foundation Model](https://arxiv.org/abs/2610.22555)<br><sub>James Weber, Makoto Kelp</sub> |  |  |
+| 2026-10-15 | [Atmospheric Chemistry-Climate Modeling with an AI Foundation Model](https://arxiv.org/abs/2610.22555)<br><sub>James Weber, Makoto Kelp</sub> | University of Reading |  |
 | 2026-10-10 | [Spatio-temporal graph foundation models for earth system intelligence: an end-to-end, continual, and multimodal learning framework](https://doi.org/10.1007/s12145-026-02264-x)<br><sub>Mohit Sheode, Saurabh Kumar Anuragi, D. Kishan · Earth Science Informatics</sub> |  |  |
 | 2026-09-24 | [LoRA Adaptation Strength in Aurora-WRF: Trade-offs in Regional Heavy-Rainfall Forecasting](https://arxiv.org/abs/2610.03747)<br><sub>Boyan Liu, Xiaoyuan Zhang</sub> |  |  |
 | 2026-09-12 | [Physically Typed and Geometry-Aware Representations for Earth Foundation Models](https://arxiv.org/abs/2609.13868)<br><sub>Rajiv Ranjan</sub> |  |  |
@@ -21,16 +21,16 @@ Large pretrained models for the atmosphere or Earth system that are fine-tuned f
 | 2026-07-31 | [TerraNova: A Foundation Model for the Anthropocene](https://arxiv.org/abs/2607.29527)<br><sub>Carlos Rodriguez-Pardo, Massimo Tavoni</sub> |  |  |
 | 2026-07-17 | [Monkey King Bang: A Unified Scientific Multimodal Foundation Model](https://arxiv.org/abs/2607.20557)<br><sub>Hesen Chen, Xinyu Su, Xiaomeng Yang et al.</sub> |  | [code](https://github.com/Shanghai-Academy-of-AI-For-Science/MKB) |
 | 2026-07-13 | [Perspective on Self-Supervised Transformers for Scalable Data Analysis, Retrievals, and Discovery in Geosciences](https://doi.org/10.1175/aies-d-25-0069.1)<br><sub>Bhupendra Raut, Siddhant Gupta, Robert C. Jackson et al. · Artificial Intelligence for the Earth Systems</sub> | Allen Institute for AI (Ai2, ACE), Argonne National Laboratory |  |
-| 2026-07-06 | [Integrating GNSS-Derived Zenith Wet Delay into a Weather Foundation Model Improves Precipitation Forecasting](https://arxiv.org/abs/2607.05658)<br><sub>Leonardo Trentini, Fanny Lehmann, Laura Crocetti et al.</sub> |  |  |
+| 2026-07-06 | [Integrating GNSS-Derived Zenith Wet Delay into a Weather Foundation Model Improves Precipitation Forecasting](https://arxiv.org/abs/2607.05658)<br><sub>Leonardo Trentini, Fanny Lehmann, Laura Crocetti et al.</sub> | ETH Zurich |  |
 | 2026-06-26 | [NIVA: A Multimodal Foundation Model for Actionable Earth System Intelligence](https://arxiv.org/abs/2606.28546)<br><sub>Anisha Pal, Aodhan Sweeney, Kyle Heyblom et al.</sub> |  |  |
-| 2026-05-16 | [Towards a Foundation Model for the Martian Atmosphere](https://arxiv.org/abs/2605.28851)<br><sub>Sujit Roy, Udayshankar Nair, Yuling Wu et al. · Digital Repository at the University of Maryland (University of Maryland College Park)</sub> |  |  |
-| 2026-05-09 | [Earth Science Foundation Models: From Perception to Reasoning and Discovery](https://arxiv.org/abs/2605.12542)<br><sub>Xiangyu Zhao, Bo Liu, Yuehan Zhang et al.</sub> |  |  |
-| 2026-04-20 | [Earth System Foundation Model (ESFM): A unified framework for heterogeneous data integration and forecasting](https://arxiv.org/abs/2605.00850)<br><sub>Firat Ozdemir, Yun Cheng, Salman Mohebi et al.</sub> |  | [code](https://github.com/swiss-ai/ESFM) |
+| 2026-05-16 | [Towards a Foundation Model for the Martian Atmosphere](https://arxiv.org/abs/2605.28851)<br><sub>Sujit Roy, Udayshankar Nair, Yuling Wu et al. · Digital Repository at the University of Maryland (University of Maryland College Park)</sub> | Colorado State University (incl. CIRA), IBM Research, NASA |  |
+| 2026-05-09 | [Earth Science Foundation Models: From Perception to Reasoning and Discovery](https://arxiv.org/abs/2605.12542)<br><sub>Xiangyu Zhao, Bo Liu, Yuehan Zhang et al.</sub> | Shanghai Artificial Intelligence Laboratory |  |
+| 2026-04-20 | ⭐ [Earth System Foundation Model (ESFM): A unified framework for heterogeneous data integration and forecasting](https://arxiv.org/abs/2605.00850)<br><sub>Firat Ozdemir, Yun Cheng, Salman Mohebi et al.</sub> | ETH Zurich, MeteoSwiss, Swiss Data Science Center (SDSC), University of Cambridge (Aardvark) | [code](https://github.com/swiss-ai/ESFM) |
 | 2026-03-25 | [Contrastive Learning Boosts Deterministic and Generative Models for Weather Data](https://arxiv.org/abs/2603.24744)<br><sub>Nathan Bailey</sub> |  |  |
 | 2026-03-04 | [ICL Characterization of Climate Foundation Models: When Can Transformers Learn Weather and Climate?](https://doi.org/10.65737/airmcs2026405)<br><sub>Mosab Hawarey</sub> |  |  |
 | 2026-02-16 | [PDE foundation models are skillful AI weather emulators for the Martian atmosphere](https://arxiv.org/abs/2602.15004)<br><sub>Johannes Schmude, Sujit Roy, Liping Wang et al.</sub> | Colorado State University (incl. CIRA), IBM Research, NASA |  |
 | 2026-02-03 | [WIND: Weather Inverse Diffusion for Zero-Shot Atmospheric Modeling](https://arxiv.org/abs/2602.03924)<br><sub>Michael Aich, Andreas Fürst, Florian Sestak et al.</sub> |  |  |
-| 2026-01-04 | [A unified multimodal understanding and generation model for cross-disciplinary scientific research](https://arxiv.org/abs/2601.01363)<br><sub>Xiaomeng Yang, Zhiyu Tan, Xiaohui Zhong et al.</sub> |  |  |
+| 2026-01-04 | ⭐ [A unified multimodal understanding and generation model for cross-disciplinary scientific research](https://arxiv.org/abs/2601.01363)<br><sub>Xiaomeng Yang, Zhiyu Tan, Xiaohui Zhong et al.</sub> | Fudan University (FuXi) |  |
 | 2026-01-01 | [Foundation models in Earth system science: advances, challenges, and future paths](https://doi.org/10.59717/j.tirv.2026.100014)<br><sub>Fen-Zhen Su, Yin-Xia Cao, Xin Li et al. · The Innovation Reviews</sub> | Institute of Atmospheric Physics, Chinese Academy of Sciences, Nanjing University of Information Science & Technology (NUIST) |  |
 | 2025-12-01 | [Foundation Models of Ocean and Atmosphere in 2025: Milestones and Perspectives](https://doi.org/10.3103/s0027134925703084)<br><sub>Mikhail Krinitskiy · Moscow University Physics Bulletin</sub> |  |  |
 | 2025-11-14 | [Artificial Intelligence-Driven Weather Forecasting: A Deep Learning Foundation Model with Physics-Informed Attention for High-Resolution Meteorological Prediction](https://doi.org/10.1109/ricai68060.2025.11385305)<br><sub>Jiedi Chen · 2025 7th International Conference on Robotics, Intelligent Control and Artificial Intelligence (RICAI)</sub> |  |  |
@@ -46,11 +46,11 @@ Large pretrained models for the atmosphere or Earth system that are fine-tuned f
 | 2025-01-12 | [Deep Learning and Foundation Models for Weather Prediction: A Survey](https://arxiv.org/abs/2501.06907)<br><sub>Jimeng Shi, Azam Shirali, Bowen Jin et al.</sub> |  |  |
 | 2024-12-19 | [Towards Improved Patch Embeddings for Geospatial Vision Transformers](https://doi.org/10.22541/essoar.173463107.72488027/v1)<br><sub>Nathan Clark, Jirius Abdallah, Cassandra Sperow et al.</sub> |  |  |
 | 2024-11-08 | [WeatherGFM: Learning A Weather Generalist Foundation Model via In-context Learning](https://arxiv.org/abs/2411.05420)<br><sub>Xiangyu Zhao, Zhiwang Zhou, Wenlong Zhang et al.</sub> | Shanghai Artificial Intelligence Laboratory |  |
-| 2024-09-20 | [Prithvi WxC: Foundation Model for Weather and Climate](https://arxiv.org/abs/2409.13598)<br><sub>Johannes Schmude, Sujit Roy, Will Trojak et al.</sub> |  |  |
+| 2024-09-20 | ⭐ [Prithvi WxC: Foundation Model for Weather and Climate](https://arxiv.org/abs/2409.13598)<br><sub>Johannes Schmude, Sujit Roy, Will Trojak et al.</sub> | Colorado State University (incl. CIRA), IBM Research, NASA, Oak Ridge National Laboratory, Stanford University |  |
 | 2024-07-18 | [Transfer Learning in Weather Prediction: Why, How, and What Should](https://doi.org/10.47852/bonviewjcce42022817)<br><sub>Sankar Kumar Pal, Debashree Dutta · Journal of Computational and Cognitive Engineering</sub> |  |  |
 | 2024-05-24 | [Personalized Adapter for Large Meteorology Model on Devices: Towards Weather Foundation Models](https://arxiv.org/abs/2405.20348)<br><sub>Shengchao Chen, Guodong Long, Jing Jiang et al.</sub> |  |  |
 | 2024-05-20 | ⭐ [A Foundation Model for the Earth System](https://arxiv.org/abs/2405.13063)<br><sub>Cristian Bodnar, Wessel P. Bruinsma, Ana Lucic et al. · Nature</sub> | The Alan Turing Institute, Microsoft Research (AI for Science), Silurian AI, University of Cambridge (Aardvark) |  |
-| 2024-05-07 | [On the Foundations of Earth and Climate Foundation Models](https://arxiv.org/abs/2405.04285)<br><sub>Xiao Xiang Zhu, Zhitong Xiong, Yi Wang et al.</sub> |  |  |
+| 2024-05-07 | [On the Foundations of Earth and Climate Foundation Models](https://doi.org/10.1038/s43247-025-03127-x)<br><sub>Xiao Xiang Zhu, Zhitong Xiong, Yi Wang et al. · Communications Earth & Environment</sub> | Technical University of Munich (TUM) |  |
 | 2024-04-23 | [ORBIT: Oak Ridge Base Foundation Model for Earth System Predictability](https://arxiv.org/abs/2404.14712)<br><sub>Xiao Wang, Siyan Liu, Aristeidis Tsaris et al. · SC24: International Conference for High Performance Computing, Networking, Storage and Analysis</sub> | Oak Ridge National Laboratory |  |
 | 2023-12-05 | [Foundation Models for Weather and Climate Data Understanding: A Comprehensive Survey](https://arxiv.org/abs/2312.03014)<br><sub>Shengchao Chen, Guodong Long, Jing Jiang et al.</sub> |  |  |
 | 2023-09-19 | [AI Foundation Models for Weather and Climate: Applications, Design, and Implementation](https://arxiv.org/abs/2309.10808)<br><sub>S. Karthik Mukkavilli, Daniel Salles Civitarese, Johannes Schmude et al.</sub> | IBM Research, Karlsruhe Institute of Technology (KIT), NASA |  |
@@ -83,7 +83,7 @@ Large pretrained models for the atmosphere or Earth system that are fine-tuned f
 - [Skillful seasonal forecasts with a freely evolving AI weather model](https://doi.org/10.21203/rs.3.rs-10406658/v1) (2026)
 - [An Integrated Adaptive Neuro-Fuzzy Inference with Attention Mechanism for Enhancing Performance of Time-Series Weather Forecasting Through Transformer](https://doi.org/10.1142/s0218488526500285) (2026)
 - [From Surface Forecasting to Observability Forecasting: A Latent World Model for Cloud-Aware EO Monitoring](https://arxiv.org/abs/2607.13651) (2026)
-- [A harmonised dataset for Earth system foundation models](https://arxiv.org/abs/2607.03298) (2026)
+- [A harmonised dataset for Earth system foundation models](https://doi.org/10.1038/s41597-026-07913-w) (2026)
 - [From Global to Local: Efficient Regional Weather Downscaling with Global Weather Foundation Model](https://arxiv.org/abs/2607.03279) (2026)
 - [STARGPT: A spatiotemporal transformer foundation model for geostationary satellite-based solar radiation nowcasting](https://doi.org/10.1016/j.egyr.2026.109479) (2026)
 - [Does Aurora Encode Atmospheric Structure? Latent Regime Analysis and Attribution](https://arxiv.org/abs/2606.26361) (2026)
@@ -131,7 +131,7 @@ Large pretrained models for the atmosphere or Earth system that are fine-tuned f
 - [Early warning of complex climate risk with integrated artificial intelligence](https://doi.org/10.1038/s41467-025-57640-w) (2025)
 - [Multimodal Deep Learning for Two-Year ENSO Forecast](https://doi.org/10.1007/s11269-025-04128-3) (2025)
 - [A mathematical comparison of data assimilation and machine learning in Earth system state estimation from a Bayesian inference viewpoint](https://doi.org/10.1016/j.infgeo.2025.100001) (2025)
-- [WxC-Bench: A Novel Dataset for Weather and Climate Downstream Tasks](https://arxiv.org/abs/2412.02780) (2024)
+- [WxC-Bench: A Novel Dataset for Weather and Climate Downstream Tasks](https://doi.org/10.1038/s41597-026-06839-7) (2024)
 - [SatVision-TOA: A Geospatial Foundation Model for Coarse-Resolution All-Sky Remote Sensing Imagery](https://arxiv.org/abs/2411.17000) (2024)
 - [Resolution-Agnostic Transformer-based Climate Downscaling](https://arxiv.org/abs/2411.14774) (2024)
 - [Spatio-Temporal Transformer Network with Physical Knowledge Distillation for Weather Forecasting](https://doi.org/10.1145/3627673.3679841) (2024)

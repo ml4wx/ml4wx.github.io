@@ -1,0 +1,55 @@
+id: doi-10.3390-cli14110233
+title: AI-Based Super-Resolution Approaches to Reconstruct Temperature Fields of Climatic Data Using Deep
+  Neural Networks
+authors:
+- Eleonora Amato
+- Lorenzo Basile
+- Vito Zago
+- Davide Zanchettin
+- Ciro Del Negro
+date: '2026-11-01'
+year: 2026
+venue: Climate
+venue_type: journal
+ids:
+  doi: 10.3390/cli14110233
+  openalex: W7225142871
+links:
+  paper: https://doi.org/10.3390/cli14110233
+topic: downscaling
+type: model
+method:
+- cnn
+- rnn
+spatial:
+- global
+data:
+- era5
+- cmip
+status: research
+summary: ResNet, RNN and ConvRNN super-resolution upscales ERA5 2 m temperature from 1.0° to 0.25° with
+  errors below 0.5 K and similarity above 0.97.
+abstract: 'High-fidelity climate analysis is heavily constrained both by the computational costs of high-resolution
+  dynamical simulations and by the general scarcity of fine-scale observational data for model evaluation.
+  To address these limitations, in this work we propose a deep learning framework for spatial climate
+  downscaling using an AI-based super-resolution (SR) approach. We develop Deep Neural Network architectures
+  designed to upscale 2 m surface temperature fields, bridging the gap between gridded global reanalysis
+  data at lower scale (1.0°) and higher scale (0.25°). We developed three DNN models, specifically ResNet,
+  RNN, and ConvRNN, trained and validated on ECMWF ERA5 data from the early years of the current millennium
+  (i.e., 01/01,01/04,01/07,01/10 of 2001,2003,2005 at 00:00) and evaluated over various periods, including
+  1992, a historical period influenced by the 1991 Mount Pinatubo eruption (a large volcanic eruption
+  which is known to have had impacts on the climate due to the massive stratospheric injections of sulfur
+  dioxide). The framework is tested also on the Berkeley Earth global observational dataset and on outputs
+  from a MPI-ESM1-2-LR historical global climate simulation and compared with traditional interpolation
+  methods, to verify the models generalization capability. The models reached high levels of accuracy,
+  with errors lower than 0.5 K and a similarity index higher than 0.97, successfully capturing the spatio-temporal
+  dynamics of temperature fields. Overall, the novelty of this work is in three main aspects: the implementation
+  of DNN capable to capture the spatio-temporal dynamics and not only the static frame-by-frame processes,
+  the combination of conventional pixel-based error metrics with morphological validation frameworks based
+  on isoline pattern and gradient orientation comparison, and the introduction of optimized training strategies
+  (i.e., early stopping), to improve learning mechanisms and balance computational costs.'
+significance: 3
+score: 12
+highlight: false
+added: '2026-11-09'
+source: weekly

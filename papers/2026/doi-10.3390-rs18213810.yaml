@@ -1,0 +1,64 @@
+id: doi-10.3390-rs18213810
+title: Machine Learning-Based Bias Correction Scheme for FY-4A AGRI Radiance Assimilation and Its Impact
+  on Typhoon Forecasting
+authors:
+- Jiyu Gao
+- Jiping Guan
+- Mingyang Zhang
+- Yudi Liu
+- Zeming Zhou
+- Lifeng Zhang
+date: '2026-11-06'
+year: 2026
+venue: Remote Sensing
+venue_type: journal
+ids:
+  doi: 10.3390/rs18213810
+  openalex: W7225430080
+links:
+  paper: https://doi.org/10.3390/rs18213810
+orgs:
+- cma
+topic: data-assimilation
+topics:
+- observations-remote-sensing
+type: model
+method:
+- classical-ml
+- other
+timescale:
+- short
+spatial:
+- regional
+data:
+- satellite
+- nwp-analysis
+status: research
+summary: Kolmogorov-Arnold network bias correction of FY-4A water-vapour radiances beats variational bias
+  correction, giving the smallest analysis errors and lowest track error for Typhoon In-Fa.
+abstract: Data assimilation generally assumes that observation-minus-background (OMB) departures follow
+  an unbiased Gaussian distribution. Therefore, bias correction (BC) is essential for the effective assimilation
+  of satellite radiances. This study applies four machine learning (ML) approaches to reduce systematic
+  biases in clear-sky observations from the water-vapor-sensitive channels 9 and 10 of the Fengyun-4A
+  (FY-4A) Advanced Geosynchronous Radiation Imager (AGRI). These methods include random forest (RF), extreme
+  gradient boosting (XGBoost), multilayer perceptron (MLP), and the Kolmogorov–Arnold network (KAN). The
+  machine-learning-based bias correction (MLBC) methods are evaluated for Typhoon In-Fa (2021) using the
+  Weather Research and Forecasting Data Assimilation (WRFDA) system. Experiments without BC and with conventional
+  variational bias correction (VarBC) are designed for comparison. Compared with VARBC, the four MLBC
+  methods better capture nonlinear OMB biases and improve the statistical distributions of the departures.
+  They produce more symmetric OMB distributions for channel 9 and distributions closer to the Gaussian
+  distribution for channel 10, with smaller OMB STDVs and RMSEs than VARBC over both land and ocean for
+  channel 10. After assimilation, KANBC produces the smallest OMA STDV and RMSE for both channels. For
+  the Typhoon In-Fa case examined here, KANBC yields the smallest track errors among the experiments.
+  In particular, KAN-based BC reduces the anomalously strong positive 500 hPa geopotential height increments
+  over the continental high pressure and western North Pacific subtropical high pressure. The resulting
+  initial conditions improve the environmental steering flow and reduce the northwestward track bias.
+  Channel sensitivity experiments were further conducted for water-vapor-sensitive channels 9 and 10 of
+  the FY-4A AGRI using the KAN-based BC method. The results show that single-channel assimilation performs
+  better than dual-channel assimilation. Assimilating channel 10 alone produces the smallest track errors
+  and lower analysis RMSEs relative to ERA5 than assimilating both channels.
+significance: 3
+score: 22
+highlight: false
+added: '2026-11-09'
+source: weekly

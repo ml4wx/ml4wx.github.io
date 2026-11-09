@@ -5,10 +5,14 @@ ML forecasts for a point, station, city or small area, mostly from observed time
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/local-forecasting/)
 
-1151 papers (0 ⭐). Newest first.
+1155 papers (0 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-11-05 | [A Digital Twin Framework Integrating Multiscale Signal Decomposition and Hybrid Deep Learning for Intelligent Water Storage Control on Remote Islands](https://doi.org/10.3390/su182111291)<br><sub>Xubin Wu, Tao Chen, Yurun Chen et al. · Sustainability</sub> |  |  |
+| 2026-11-05 | [Two-stage residual learning for calibrated uncertainty in solar irradiance forecasts](https://arxiv.org/abs/2611.07444)<br><sub>RR Flanagan, E Kasha, PW Talbot et al.</sub> |  |  |
+| 2026-11-02 | [Effectiveness and Limitations of Machine Learning for Predicting Lower Atmosphere Temperature Profiles](https://doi.org/10.1175/aies-d-26-0049.1)<br><sub>Kip F. Nielsen, David A. Rahn, N. A. Brunsell et al. · Artificial Intelligence for the Earth Systems</sub> |  |  |
+| 2026-11-01 | [RATSIFT: Resolution-Adaptive Transformer for Solar Irradiance Forecasting and Temporal Downscaling](https://arxiv.org/abs/2611.03738)<br><sub>Jesto Peter, Timothy M. Hansen, Hossein Moradi Rekabdarkolaee</sub> | Colorado State University (incl. CIRA) |  |
 | 2026-10-31 | [A Machine Learning-Based Weather Forecasting System with Live Data Anchoring and Uncertainty Estimation](https://doi.org/10.5281/zenodo.23832326)<br><sub>Dinesh Singh · Zenodo (CERN European Organization for Nuclear Research)</sub> |  | [code](https://github.com/Yokiatch/weather-forecasting) |
 | 2026-10-28 | [QLFHNet: quantum long short-term memory forward harmonic network for weather forecasting utilizing time series data](https://doi.org/10.1080/02331888.2026.2744896)<br><sub>Hima Keerthi Sagiraju, Sekharamahanti S. Nandini, S. Sumahasan et al. · Statistics</sub> |  |  |
 | 2026-10-28 | [RainCheck: Harnessing Historical Weather Data with Machine Learning for Rainfall Forecasting in Bangladesh](https://arxiv.org/abs/2610.38211)<br><sub>Shahran Rahman Alve, Muhammad Zawad Mahmud, Samiha Islam et al.</sub> |  |  |
@@ -40,7 +44,7 @@ ML forecasts for a point, station, city or small area, mostly from observed time
 | 2026-09-04 | [Online Weather Prediction Model](https://ijerst.org/index.php/ijerst/article/view/4530)<br><sub>1Yamini Chouhan, 2 K Yashwanth reddy, 3 K Shweetha Reddy, 4 A Kalyani, 5 S Vamshi · International Journal of Engineering Research and Science & Technology</sub> |  |  |
 | 2026-09-03 | [EFFECTIVE WEATHER PREDICTION FRAMEWORK FROM IOT SENSOR THROUGH MACHINE LEARNING](https://jiml-iea.com/index.php/ml/article/view/83)<br><sub>S.M. Mustafa Nawaz, K. Maharajan · Journal of Intelligent Machine Learning and IoT Enabled Applications</sub> |  |  |
 | 2026-09-03 | [Hybrid Machine Learning–Deep Learning Framework for Time-Series Rainfall Prediction in Tamil Nadu](https://indianengineeringjournal.com/index.php/journal/article/view/251)<br><sub>S Prema, M. Menaka, S Dhamodharavadhani, M. Meenaga · Indian Engineering Journal</sub> |  |  |
-| 2026-09-02 | [UniGIO: Unified Generative Global In-situ Weather Modeling from Spatiotemporal Incomplete Observations](https://arxiv.org/abs/2609.22217)<br><sub>Songru Yang, Zili Liu, Tao Han et al.</sub> |  |  |
+| 2026-09-02 | [UniGIO: Unified Generative Global In-situ Weather Modeling from Spatiotemporal Incomplete Observations](https://arxiv.org/abs/2609.22217)<br><sub>Songru Yang, Zili Liu, Tao Han et al.</sub> | Shanghai Artificial Intelligence Laboratory |  |
 | 2026-09-01 | [Comprehensive Performance Evaluation of Deep Learning Algorithms for Multi-Variable Climate Prediction: RNN, LSTM, and GRU Analysis](https://doi.org/10.70470/edraak/2026/011)<br><sub>Mustafa Mahmood Akawee, Raed Abdulkareem Hasan, Munif Ahmed Abdullah et al. · EDRAAK</sub> |  |  |
 | 2026-09-01 | [Research on precise precipitation forecasting in small areas based on BeiDou/GNSS CORS station data and deep learning algorithms](https://doi.org/10.1016/j.asr.2026.09.030)<br><sub>Jian Zhang, Qiuying Guo, Shukai Wang et al. · Advances in Space Research</sub> |  |  |
 | 2026-08-31 | [AI-Driven Smart Farming and Weather Prediction System](https://doi.org/10.5281/zenodo.23079822)<br><sub>Nitin Ingle, Sandhya Phegde, Lalit P. Patil · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
@@ -298,7 +302,7 @@ ML forecasts for a point, station, city or small area, mostly from observed time
 | 2025-10-31 | [Intelligent Prediction of Surface Turbulent Fluxes: An Innovative Approach Based on the iTransformer Model](https://doi.org/10.1029/2025ms005029)<br><sub>Dan-Dan Li, Xing-Wang Dong, Minxin Jing et al. · Journal of Advances in Modeling Earth Systems</sub> | Institute of Atmospheric Physics, Chinese Academy of Sciences |  |
 | 2025-10-30 | [Penerapan Machine Learning dalam Estimasi Kecepatan Angin](https://doi.org/10.31539/4dt9ch86)<br><sub>Marina Ayu Sulastri, N. M. Dharma Putra, Djuniadi Djuniadi et al. · Jurnal Pendidikan Matematika (JUDIKA EDUCATION)</sub> |  |  |
 | 2025-10-28 | [An Efficient Algorithm for Weather Forecasting Using Causal Graph Neural Network](https://doi.org/10.62762/tacs.2025.619794)<br><sub>Ahmad Ali, Hafiz Muhammad Yasir Naeem, Riaz Ali et al. · ICCK Transactions on Advanced Computing and Systems</sub> |  |  |
-| 2025-10-28 | [Forecasting precipitation in the Arctic using probabilistic machine learning informed by causal climate drivers](https://arxiv.org/abs/2510.24254)<br><sub>Madhurima Panja, Dhiman Das, Tanujit Chakraborty et al.</sub> |  |  |
+| 2025-10-28 | [Forecasting precipitation in the Arctic using probabilistic machine learning informed by causal climate drivers](https://doi.org/10.1063/5.0297336)<br><sub>Madhurima Panja, Dhiman Das, Tanujit Chakraborty et al. · Chaos An Interdisciplinary Journal of Nonlinear Science</sub> |  |  |
 | 2025-10-27 | [A hybrid fusion of the recurrent neural network and bidirectional long short-term memory for wind speed prediction in the South China Sea](https://doi.org/10.7717/peerj-cs.3303)<br><sub>Hafiza Zoya Mojahid, Abdul Basit, Abdul Kadir Jumaat et al. · PeerJ Computer Science</sub> |  |  |
 | 2025-10-27 | [Multi-step strategies on short-term stratospheric wind prediction using neural networks](https://doi.org/10.21203/rs.3.rs-7699720/v1)<br><sub>Z.Y. Liu, Junfeng Yang, Dan Liu et al. · Research Square</sub> |  |  |
 | 2025-10-25 | [Temperature Prediction Using BP-RVM with RBF and Polynomial Kernel Combination](https://doi.org/10.23887/jst-undiksha.v14i3.95242)<br><sub>Alfian Rahman, Syaharuddin, Vera Mandailina et al. · JST (Jurnal Sains dan Teknologi)</sub> |  |  |
@@ -333,7 +337,7 @@ ML forecasts for a point, station, city or small area, mostly from observed time
 | 2025-09-18 | [Solar Forecasting with Causality: A Graph-Transformer Approach to Spatiotemporal Dependencies](https://arxiv.org/abs/2509.15481)<br><sub>Yanan Niu, Demetri Psaltis, Christophe Moser et al. · Proceedings of the 34th ACM International Conference on Information and Knowledge Management (CIKM '25), November 10--14, 2025, Seoul, Republic of Korea</sub> |  |  |
 | 2025-09-15 | [Wavelet-SARIMA-Transformer: A Hybrid Model for Rainfall Forecasting](https://doi.org/10.1007/s00704-026-06032-1)<br><sub>Junmoni Saikia, Kuldeep Goswami, Sarat C. Kakaty · Theoretical and Applied Climatology</sub> |  |  |
 | 2025-09-12 | [LSTCN Approaches for Self-Adaptive Real-Time Weather Forecasting](https://doi.org/10.20944/preprints202509.1092.v1)<br><sub>Mba Tene Salomon, Kamla Vivient Corneille · Preprints.org</sub> |  |  |
-| 2025-09-10 | [S$^2$Transformer: Scalable Structured Transformers for Global Station Weather Forecasting](https://arxiv.org/abs/2509.19648)<br><sub>Hongyi Chen, Xiucheng Li, Xinyang Chen et al.</sub> |  |  |
+| 2025-09-10 | [S$^2$Transformer: Scalable Structured Transformers for Global Station Weather Forecasting](https://arxiv.org/abs/2509.19648)<br><sub>Hongyi Chen, Xiucheng Li, Xinyang Chen et al.</sub> | Swiss Data Science Center (SDSC) |  |
 | 2025-09-06 | [Development of a machine learning model for precipitation forecasting in Kenya](https://doi.org/10.30574/gjeta.2025.24.3.0261)<br><sub>Damaris Muthoki Mulinge, John Mwaniki Kihoro, Shadrack Stephen Madila et al. · Global Journal of Engineering and Technology Advances</sub> |  |  |
 | 2025-09-04 | [Predictive Weather Analysis and Forecasting System](https://doi.org/10.55041/ijsrem52446)<br><sub>Dr. Md. Irshad Hussain B, R H Akshata · INTERANTIONAL JOURNAL OF SCIENTIFIC RESEARCH IN ENGINEERING AND MANAGEMENT</sub> |  |  |
 | 2025-09-04 | [Integrated IoT Based Weather Monitoring and Machine Learning Weather Prediction System](https://doi.org/10.22214/ijraset.2025.73964)<br><sub>Prof. V. N. Kukre · International Journal for Research in Applied Science and Engineering Technology</sub> |  |  |
@@ -660,7 +664,7 @@ ML forecasts for a point, station, city or small area, mostly from observed time
 | 2024-04-15 | [Street-level temperature estimation using Graph Neural Networks: Performance, feature embedding and interpretability](https://doi.org/10.1016/j.uclim.2024.102003)<br><sub>Yu Yin, Peiyuan Li, Daning Huang et al. · Urban Climate</sub> | Argonne National Laboratory |  |
 | 2024-04-11 | [Near Real-Time Forecasting of Temperature Using Machine Learning Algorithms](https://doi.org/10.21203/rs.3.rs-4214036/v1)<br><sub>Om Abhinav Ramagalla, Kandula Venkata Subrahmanyam, Srinivasa Rao G · Research Square</sub> |  |  |
 | 2024-04-05 | [Prognostication of Weather Patterns using Meteorological Data and ML Techniques](https://doi.org/10.4108/ew.5648)<br><sub>Saksham Mathur, Sanjeev Kumar, Tanupriya Choudhury · EAI Endorsed Transactions on Energy Web</sub> |  |  |
-| 2024-04-01 | [Enhanced Precision in Rainfall Forecasting for Mumbai: Utilizing Physics Informed ConvLSTM2D Models for Finer Spatial and Temporal Resolution](https://arxiv.org/abs/2404.01122)<br><sub>Ajay Devda, Akshay Sunil, Murthy R et al.</sub> |  |  |
+| 2024-04-01 | [Enhanced Precision in Rainfall Forecasting for Mumbai: Utilizing Physics Informed ConvLSTM2D Models for Finer Spatial and Temporal Resolution](https://doi.org/10.1007/s11069-025-07267-3)<br><sub>Ajay Devda, Akshay Sunil, Murthy R et al. · Natural Hazards</sub> |  |  |
 | 2024-03-30 | [Machine learning approaches for improving precipitation forecasting in the Ambica River basin of Navsari District, Gujarat](https://doi.org/10.2166/wpt.2024.079)<br><sub>Divyang Baudhanwala, Darshan Mehta, Vijendra Kumar · Water Practice & Technology</sub> |  |  |
 | 2024-03-28 | [Machine Learning Techniques to Predict Rainfall of Vidarbh Region](https://doi.org/10.52783/jes.839)<br><sub>Jayshri Shinde Nirmal Mungale · Journal of Electrical Systems</sub> |  |  |
 | 2024-03-26 | [MSTL-NNAR: a new hybrid model of machine learning and time series decomposition for wind speed forecasting](https://doi.org/10.1007/s00477-024-02701-7)<br><sub>Mohammed Elseidi · Stochastic Environmental Research and Risk Assessment</sub> |  |  |
@@ -982,7 +986,7 @@ ML forecasts for a point, station, city or small area, mostly from observed time
 | 2021-06-28 | [TENT: Tensorized Encoder Transformer for Temperature Forecasting](https://arxiv.org/abs/2106.14742)<br><sub>Onur Bilgin, Paweł Mąka, Thomas Vergutz et al.</sub> |  |  |
 | 2021-06-17 | [An Improved Multivariate Weather Prediction Model Using Deep Neural Networks and Particle Swarm Optimisation](https://doi.org/10.1142/s0219649221500295)<br><sub>K U Jaseena, Binsu C. Kovoor · Journal of Information & Knowledge Management</sub> |  |  |
 | 2021-06-14 | [Prediksi Curah Hujan Wilayah Provinsi Yogyakarta dengan Algoritma Neural Network](https://doi.org/10.26905/jasiek.v3i1.6204)<br><sub>Rubangi Rubangi, Arief Hermawan, Donny Avianto · JASIEK (Jurnal Aplikasi Sains Informasi Elektronika dan Komputer)</sub> |  |  |
-| 2021-06-12 | [Short-term forecasting of global solar irradiance with incomplete data](https://arxiv.org/abs/2106.06868)<br><sub>Laura S. Hoyos-Gómez, Jose F. Ruiz-Muñoz, Belizza J. Ruiz-Mendoza</sub> |  |  |
+| 2021-06-12 | [Short-term forecasting of global solar irradiance with incomplete data](https://doi.org/10.1016/j.apenergy.2021.118192)<br><sub>Laura S. Hoyos-Gómez, Jose F. Ruiz-Muñoz, Belizza J. Ruiz-Mendoza · Applied Energy</sub> |  |  |
 | 2021-06-05 | [Predicting Weather Forecasting State Based on Data Mining Classification Algorithms](https://doi.org/10.9734/ajrcos/2021/v9i330222)<br><sub>Fairoz Q. Kareem, Adnan Mohsin Abdulazeez, Dathar Abas Hasan · Asian Journal of Research in Computer Science</sub> |  |  |
 | 2021-05-24 | [Ensemble Empirical Mode Decomposition with Adaptive Noise with Convolution Based Gated Recurrent Neural Network: A New Deep Learning Model for South Asian High Intensity Forecasting](https://doi.org/10.3390/sym13060931)<br><sub>Kecheng Peng, Xiaoqun Cao, Bainian Liu et al. · Symmetry</sub> |  |  |
 | 2021-05-22 | [An ANN Model Trained on Regional Data in the Prediction of Particular Weather Conditions](https://doi.org/10.3390/app11114757)<br><sub>Aleksandra Bączkiewicz, Jarosław Wątróbski, Wojciech Sałabun et al. · Applied Sciences</sub> |  |  |
@@ -1145,7 +1149,7 @@ ML forecasts for a point, station, city or small area, mostly from observed time
 | 2018-06-20 | [Rainfall prediction for the Kerala state of India using artificial intelligence approaches](https://doi.org/10.1016/j.compeleceng.2018.06.004)<br><sub>Yajnaseni Dash, Saroj K. Mishra, Bijaya Ketan Panigrahi · Computers & Electrical Engineering</sub> |  |  |
 | 2018-05-21 | [Rainfall prediction methodology with binary multilayer perceptron neural networks](https://doi.org/10.1007/s00382-018-4252-x)<br><sub>João Trevizoli Esteves, Glauco de Souza Rolim, Antônio Sérgio Ferraudo · Climate Dynamics</sub> |  |  |
 | 2018-05-12 | [Ensemble empirical mode decomposition based adaptive wavelet neural network method for wind speed prediction](https://doi.org/10.1016/j.enconman.2018.04.099)<br><sub>Santhosh Madasthu, Chintham Venkaiah, D. M. Vinod Kumar · Energy Conversion and Management</sub> |  |  |
-| 2018-05-10 | [An Unsupervised Clustering-Based Short-Term Solar Forecasting Methodology Using Multi-Model Machine Learning Blending](https://arxiv.org/abs/1805.04193)<br><sub>Cong Feng, Mingjian Cui, Bri-Mathias Hodge et al.</sub> |  |  |
+| 2018-05-10 | [An Unsupervised Clustering-Based Short-Term Solar Forecasting Methodology Using Multi-Model Machine Learning Blending](https://doi.org/10.1109/tste.2018.2881531)<br><sub>Cong Feng, Mingjian Cui, Bri-Mathias Hodge et al. · IEEE Transactions on Sustainable Energy</sub> | IBM Research |  |
 | 2018-04-24 | [Weather Forecasting using Neural Network](https://www.ijert.org/research/weather-forecasting-using-neural-network-IJERTCONV5IS01197.pdf)<br><sub>Priyanka Mahajan, Chhaya Nawale, Siddheshwar Kini et al.</sub> |  |  |
 | 2018-04-14 | [Predictability of daily precipitation using data from newly established automated weather stations over Notwane catchment in Botswana](https://doi.org/10.7809/b-e.00304)<br><sub>Ditiro B. Moalafhi, Piet Kebuang Kenabatho, Bhagabat Prasad Parida et al. · Biodiversity & Ecology</sub> |  |  |
 | 2018-04-10 | [Regional Forecasting of Wind Speeds during Typhoon Landfall in Taiwan: A Case Study of Westward-Moving Typhoons](https://doi.org/10.3390/atmos9040141)<br><sub>Chih‐Chiang Wei, Po-Chun Peng, Cheng‐Han Tsai et al. · Atmosphere</sub> | University of California, Los Angeles (UCLA) |  |
@@ -1163,6 +1167,7 @@ ML forecasts for a point, station, city or small area, mostly from observed time
 
 ## Also relevant
 
+- [Multi-scale assessment of wavelet-guided deep learning for reference evapotranspiration forecasting to support vineyard water management](https://doi.org/10.1016/j.agwat.2026.110892) (2026)
 - [Characterisation and forecasting of heatwaves using HWMId: Change-point based time series intervention modelling with machine learning for Western Maharashtra, India](https://doi.org/10.1007/s00704-026-06698-7) (2026)
 - [Planetary Boundary Layer Height Prediction over Karst Plateau: A Study Integrating Multi-Source Remote Sensing and Machine Learning](https://doi.org/10.3390/atmos17100917) (2026)
 - [A non-stationary and explainable machine learning framework for adaptive rainfall modelling](https://doi.org/10.1007/s00704-026-06583-3) (2026)
@@ -1236,7 +1241,7 @@ ML forecasts for a point, station, city or small area, mostly from observed time
 - [Optimized Ensemble ML Models for Accurate Solar Radiation Prediction in Arid Regions](https://doi.org/10.22214/ijraset.2025.74785) (2025)
 - [Analyzing the Indonesian Monsoon Index: A Combined Statistical and Machine Learning Approach](https://doi.org/10.18517/ijaseit.15.5.20539) (2025)
 - [AI in Climate Prediction: Using Machine Learning to Model Extreme Weather Events](https://doi.org/10.71097/ijsat.v16.i4.8912) (2025)
-- [Leveraging Teleconnections with Physics-Informed Graph Attention Networks for Long-Range Extreme Rainfall Forecasting in Thailand](https://arxiv.org/abs/2510.12328) (2025)
+- [Leveraging Teleconnections with Physics-Informed Graph Attention Networks for Long-Range Extreme Rainfall Forecasting in Thailand](https://doi.org/10.1016/j.array.2026.101364) (2025)
 - [Day-Ahead Photovoltaic Power Forecasting Using Multi-Source Data Fusion](https://doi.org/10.54097/1554g234) (2025)
 - [A Review of Predictive Models for Agro-Meteorological Data Using Machine Learning](https://doi.org/10.17148/iarjset.2025.121005) (2025)
 - [Assessment of the ZJWARMS Forecast Model’s Adaptability and AI-Based Bias Correction over Complex Terrain](https://doi.org/10.3390/atmos16101151) (2025)
@@ -1266,7 +1271,7 @@ ML forecasts for a point, station, city or small area, mostly from observed time
 - [A Real-time Multimodal Transformer Neural Network-powered Wildfire Forecasting System](https://arxiv.org/abs/2503.05971) (2025)
 - [Evaluating Large Language Models in Code Generation: INFINITE Methodology for Defining the Inference Index](https://arxiv.org/abs/2503.05852) (2025)
 - [ANALYSING AND PREDICTING WEATHER CONDITIONS FOR PLANNING FLIGHTS OF UNMANNED AERIAL VEHICLES USING BIG DATA](https://doi.org/10.53364/24138614_2025_36_1_2) (2025)
-- [An improved wind power prediction via a novel wind ramp identification algorithm](https://arxiv.org/abs/2502.12807) (2025)
+- [An improved wind power prediction via a novel wind ramp identification algorithm](https://doi.org/10.3390/pr14091478) (2025)
 - [Advanced Deep Learning Approaches for Forecasting High-Resolution Fire Weather Index (FWI) over CONUS: Integration of GNN-LSTM, GNN-TCNN, and GNN-DeepAR](https://doi.org/10.3390/rs17030515) (2025)
 - [Intra-day Solar and Power Forecast for Optimization of Intraday Market Participation](https://arxiv.org/abs/2501.09551) (2025)
 - [Skillful bias correction of offshore near-surface wind field forecasting based on a multi-task machine learning model](https://doi.org/10.1016/j.aosl.2025.100590) (2025)

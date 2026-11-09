@@ -1,0 +1,53 @@
+id: doi-10.54254-2755-2721-2026.38487
+title: Machine-Learning Classification of Next-Day Extreme Precipitation in Guangzhou
+authors:
+- Yueze Hua
+- Jiaying Li
+- Jieyao Shi
+- Liyue Xiao
+date: '2026-11-03'
+year: 2026
+venue: Applied and Computational Engineering
+venue_type: journal
+ids:
+  doi: 10.54254/2755-2721/2026.38487
+  openalex: W7225163809
+links:
+  paper: https://doi.org/10.54254/2755-2721/2026.38487
+  pdf: https://ace.ewapub.com/article/view/38487.pdf
+topic: extremes-hazards
+topics:
+- nowcasting
+type: evaluation
+method:
+- rnn
+- classical-ml
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+- other
+status: research
+summary: ConvLSTM detects 34 of 58 next-day extreme precipitation days in Guangzhou with highest recall
+  and CSI, but produces 104 false alarms.
+abstract: This study retrospectively evaluates one-day-ahead classification of daily extreme precipitation
+  in Guangzhou. Seven consecutive days of ERA5 atmospheric fields over a 41×65 regional grid are used
+  to predict whether precipitation on the following day exceeds the 95th percentile of training-period
+  daily IMERG precipitation. A no-event baseline, logistic regression, random forest, and a convolutional
+  long short-term memory network (ConvLSTM) are compared with a chronological 70%/15%/15% split. On the
+  held-out test period, ConvLSTM attained the highest recall (0.586), F1 score (0.347), receiver operating
+  characteristic area under the curve (0.888), and Critical Success Index (0.210), detecting 34 of 58
+  extreme days. It also generated 104 false alarms and had a precision of 0.246. The observed results
+  therefore show a detection–false-alarm tradeoff rather than an operationally reliable warning system.
+  Because the comparison changes both model architecture and feature representation, and because it uses
+  one temporal split without uncertainty intervals, the results do not isolate the causal benefit of spatial
+  learning or establish statistical superiority. The study provides a reproducible framework for further
+  evaluation, calibration, and physically informed analysis of extreme-precipitation forecasts in the
+  Pearl River Delta.
+significance: 2
+score: 8
+highlight: false
+added: '2026-11-09'
+source: weekly

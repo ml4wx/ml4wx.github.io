@@ -5,13 +5,16 @@ Frameworks, training and inference at scale, HPC, and compression of weather and
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/infra-software/)
 
-85 papers (4 ⭐). Newest first.
+88 papers (5 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-11-06 | ⭐ [Half-precision inference of AI weather prediction models: negligible loss of skill at a fraction of the cost](https://arxiv.org/abs/2611.09573)<br><sub>Stefan Siegert</sub> | Google DeepMind, NVIDIA, Microsoft Research (AI for Science), ECMWF, Met Office, MeteoSwiss, The Alan Turing Institute | [code](https://github.com/sieste/ai-nwp-fp16) |
+| 2026-11-05 | [How Much Lossy Compression of Training Data Can An Atmosphere Emulator Tolerate?](https://doi.org/10.5194/egusphere-2026-6708)<br><sub>Finn O'neill Rebassoo, Peter Caldwell, Peter Lindström et al.</sub> | Allen Institute for AI (Ai2, ACE), NSF NCAR / UCAR |  |
+| 2026-11-02 | [Reproducibility Challenges and Provenance in a Multi-Machine Learning Workflow for Climate Downscaling](https://doi.org/10.5281/zenodo.23879132)<br><sub>Christian Pagé · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
 | 2026-10-08 | [Lossy compression by dimension reduction – Evaluation of methods applied to 2-d meteorological fields for data-based modeling](https://doi.org/10.5194/egusphere-2026-4514)<br><sub>Uwe Ehret, Jieyu Chen, Fedor Scholz et al.</sub> | Karlsruhe Institute of Technology (KIT), Nanjing University of Information Science & Technology (NUIST) |  |
 | 2026-10-08 | [Evaluating LLMs for Translating Legacy Fortran Atmospheric Physics to GPU-Accelerated JAX](https://arxiv.org/abs/2610.12662)<br><sub>Iris Linck, John Dennis, John Schreck et al.</sub> | NSF NCAR / UCAR |  |
-| 2026-10-08 | [legoESM: a modular, differentiable, multiscale, AI-ready Earth system model built with AI agents](https://arxiv.org/abs/2610.11883)<br><sub>Pierre Gentine, Dhruv Balwada, Aytaç Paçal et al.</sub> |  |  |
+| 2026-10-08 | [legoESM: a modular, differentiable, multiscale, AI-ready Earth system model built with AI agents](https://arxiv.org/abs/2610.11883)<br><sub>Pierre Gentine, Dhruv Balwada, Aytaç Paçal et al.</sub> | Columbia University (LEAP, Lamont-Doherty), NSF NCAR / UCAR, Princeton University |  |
 | 2026-10-01 | [Machine Learning in Climate Model Workflows: A Comprehensive Review](https://doi.org/10.1016/j.nexres.2026.102572)<br><sub>Kayode Popoola, Muheeb Ahmed, Stuart Nicholson et al. · Next research.</sub> |  |  |
 | 2026-10-01 | [Post-Training Quantization of Autoregressive Weather Models](https://arxiv.org/abs/2610.02511)<br><sub>Ananyo Bhattacharya, Swastik Bhattacharya, Christiane Jablonowski</sub> |  |  |
 | 2026-09-01 | [A Checklist to assess the energy and carbon impacts of ML/AI applications in Earth System Modeling](https://arxiv.org/abs/2609.00847)<br><sub>Filippo Dainelli, Amirpasha Mozaffari, Marina Castaño et al.</sub> |  |  |
@@ -35,18 +38,18 @@ Frameworks, training and inference at scale, HPC, and compression of weather and
 | 2025-12-17 | [Reflections on cross-cutting software tools born out of project work](https://doi.org/10.5281/zenodo.17968146)<br><sub>Wallwork, Joe, Atkinson, Jack, Meltzer, Tom et al. · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
 | 2025-11-24 | [Climate science data can be compressed efficiently by dual-stage extreme compression with a variational auto-encoder transformer](https://doi.org/10.1038/s43247-025-02903-z)<br><sub>Tao Han, Zhenghao Chen, Song Guo et al. · Communications Earth & Environment</sub> | Shanghai Artificial Intelligence Laboratory |  |
 | 2025-10-24 | [LLMComp: A Language Modeling Paradigm for Error-Bounded Scientific Data Compression (Technical Report)](https://arxiv.org/abs/2510.23632)<br><sub>Guozhong Li, Muhannad Alhumaidi, Spiros Skiadopoulos et al.</sub> |  |  |
-| 2025-10-14 | [Deploying Atmospheric and Oceanic AI Models on Chinese Hardware and Framework: Migration Strategies, Performance Optimization and Analysis](https://arxiv.org/abs/2510.17852)<br><sub>Yuze Sun, Wentao Luo, Yanfei Xiang et al.</sub> |  |  |
+| 2025-10-14 | [Deploying Atmospheric and Oceanic AI Models on Chinese Hardware and Framework: Migration Strategies, Performance Optimization and Analysis](https://arxiv.org/abs/2510.17852)<br><sub>Yuze Sun, Wentao Luo, Yanfei Xiang et al.</sub> | Huawei (Huawei Cloud), Tsinghua University (NowcastNet) |  |
 | 2025-09-30 | [Machine Learning Workflows in Climate Modeling: Design Patterns and Insights from Case Studies](https://doi.org/10.1098/rsta.2025.0254)<br><sub>Tian Zheng, Subashree Venkatasubramanian, Shuolin Li et al. · Philosophical Transactions of the Royal Society A Mathematical Physical and Engineering Sciences</sub> | Columbia University (LEAP, Lamont-Doherty), NASA |  |
 | 2025-09-25 | [Platform for integration of meteodates processing tools and services using artificial intelligence](https://doi.org/10.30837/2522-9818.2025.3.073)<br><sub>Tetyana Petrenko, Anton Zadorozhnyi · Innovative technologies and scientific solutions for industries</sub> |  |  |
 | 2025-09-16 | ⭐ [AERIS: Argonne Earth Systems Model for Reliable and Skillful Predictions](https://arxiv.org/abs/2509.13523)<br><sub>Väinö Hatanpää, Eugene Ku, Jason Stock et al. · Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis</sub> | Allen Institute for AI (Ai2, ACE), Argonne National Laboratory, University of California, Los Angeles (UCLA), University of Chicago |  |
 | 2025-08-12 | [Decentralized Weather Forecasting via Distributed Machine Learning and Blockchain-Based Model Validation](https://arxiv.org/abs/2508.09299)<br><sub>Rilwan Umar, Aydin Abadi, Basil Aldali et al.</sub> |  |  |
 | 2025-07-22 | [A Partitioned Sparse Variational Gaussian Process for Fast, Distributed Spatial Modeling](https://arxiv.org/abs/2507.16771)<br><sub>Michael Grosskopf, Kellin Rumsey, Ayan Biswas et al.</sub> |  |  |
-| 2025-07-08 | [Jigsaw: Training Multi-Billion-Parameter AI Weather Models with Optimized Model Parallelism](https://arxiv.org/abs/2507.05753)<br><sub>Deifilia Kieckhefen, Markus Götz, Lars H. Heyen et al.</sub> |  |  |
+| 2025-07-08 | [Jigsaw: Training Multi-Billion-Parameter AI Weather Models with Optimized Model Parallelism](https://arxiv.org/abs/2507.05753)<br><sub>Deifilia Kieckhefen, Markus Götz, Lars H. Heyen et al.</sub> | Karlsruhe Institute of Technology (KIT) |  |
 | 2025-06-30 | [Atmospheric Data Compression and Reconstruction Using Spherical GANs](https://doi.org/10.1109/ijcnn64981.2025.11227156)<br><sub>O.M. Feitosa, H. F. de Campos Velho, S. R. Freitas et al. · 2025 International Joint Conference on Neural Networks (IJCNN)</sub> |  |  |
 | 2025-06-26 | [Distributed Cross-Channel Hierarchical Aggregation for Foundation Models](https://arxiv.org/abs/2506.21411)<br><sub>Aristeidis Tsaris, Isaac Lyngaas, John Lagregren et al.</sub> | Oak Ridge National Laboratory |  |
 | 2025-06-19 | [Artificial Intelligence for Atmospheric Sciences: A Research Roadmap](https://arxiv.org/abs/2506.16281)<br><sub>Martha Arbayani Zaidan, Naser Hossein Motlagh, Petteri Nurmi et al.</sub> |  |  |
 | 2025-04-29 | [MACHINE LEARNING-DRIVEN OPTIMIZATION OF NUMERICAL WEATHER PREDICTION MODELS](https://doi.org/10.51470/ijcnwc.2025.v15.i02.pp889-899)<br><sub>MACHINE LEARNING-DRIVEN OPTIMIZATION OF NUMERICAL WEATHER PREDICTION MODELS, Pinjari Akbar Basha Sri Lakshmi Prasanna</sub> |  |  |
-| 2025-04-23 | [Democracy of AI Numerical Weather Models: An Example of Global Forecasting with FourCastNetv2 Made by a University Research Lab Using GPU](https://arxiv.org/abs/2504.17028)<br><sub>Iman Khadir, Shane Stevenson, Henry Li et al.</sub> |  |  |
+| 2025-04-23 | [Democracy of AI Numerical Weather Models: An Example of Global Forecasting with FourCastNetv2 Made by a University Research Lab Using GPU](https://arxiv.org/abs/2504.17028)<br><sub>Iman Khadir, Shane Stevenson, Henry Li et al.</sub> | NVIDIA |  |
 | 2025-04-12 | [Big Data Analytics for Climate Change Prediction using Hadoop and ML Models](https://doi.org/10.36948/ijfmr.2025.v07i02.40876)<br><sub>ARIN KUMAR, ANSHU KANSAL, Umesh Saini et al. · International Journal For Multidisciplinary Research</sub> |  |  |
 | 2025-03-26 | [TerraTorch: The Geospatial Foundation Models Toolkit](https://arxiv.org/abs/2503.20563)<br><sub>Carlos Gomes, Benedikt Blumenstiel, Joao Lucas de Sousa Almeida et al.</sub> | IBM Research | [code](https://github.com/IBM/terratorch) |
 | 2025-03-24 | [A Fortran–Python interface for integrating machine learning parameterization into earth system models](https://doi.org/10.5194/gmd-18-1917-2025)<br><sub>Tao Zhang, Cyril Julien Morcrette, Meng Zhang et al. · Geoscientific model development</sub> | Met Office |  |
@@ -97,6 +100,7 @@ Frameworks, training and inference at scale, HPC, and compression of weather and
 
 ## Also relevant
 
+- [A Deep-Learning Framework for the Generalized Emulation of Atmospheric Radiative Transfer at Microwave Frequencies](https://arxiv.org/abs/2611.07094) (2026)
 - [GNN-VIEW: Visual Inspection and Explanation of Graph-based Earth-System Models](https://arxiv.org/abs/2610.35693) (2026)
 - [UtoMe: Observation-Uncertainty-Guided Token Merging for Weather Foundation Models](https://arxiv.org/abs/2610.25001) (2026)
 - [Building AI–Physics Digital Twins for Hurricanes With FourCastNet v2 and ERF](https://doi.org/10.5281/zenodo.23327490) (2026)
