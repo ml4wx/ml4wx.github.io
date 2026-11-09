@@ -38,8 +38,11 @@ def _rank(p: Paper) -> tuple:
 
 
 def groups(archive: Archive, min_overlap: float = 0.85, max_years: int = 2) -> list[list[Paper]]:
-    """Groups of papers that are the same work: same title key, or same first author with a
-    very similar title and close years."""
+    """Groups of papers that are the same work: a shared id (DOI, arXiv, OpenAlex), the same title
+    key, or the same first author with a very similar title and close years.
+
+    Shared ids catch preprints whose journal version got a new title: OpenAlex links the two, and
+    enrichment then gives the arXiv record the journal DOI that another record already has."""
     papers = list(archive.papers.values())
     parent = {p.id: p.id for p in papers}
 
@@ -52,6 +55,13 @@ def groups(archive: Archive, min_overlap: float = 0.85, max_years: int = 2) -> l
     def union(a: str, b: str) -> None:
         parent[find(a)] = find(b)
 
+    owner: dict[str, str] = {}
+    for p in papers:
+        for k in p.ids.keys():
+            if k in owner:
+                union(p.id, owner[k])
+            else:
+                owner[k] = p.id
     by_key: dict[str, list[Paper]] = defaultdict(list)
     by_first: dict[str, list[Paper]] = defaultdict(list)
     for p in papers:

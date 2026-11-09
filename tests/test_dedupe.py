@@ -48,3 +48,24 @@ def test_dedupe_drops_retracted_work_with_its_copies(root):
     assert dedupe.run(a, load()) == (0, 2)
     b = Archive()
     assert not b.papers and "doi:10.1/x" in b.rejected
+
+
+def test_dedupe_merges_records_that_share_an_id(root):
+    # A preprint renamed in the journal: titles differ, but enrichment gave the arXiv record the DOI
+    # of the journal record (validate fails on a shared id).
+    a = Archive()
+    a.save_paper(make_paper(
+        id="arxiv-2505.10241", ids=Ids(arxiv="2505.10241", doi="10.1126/sciadv.ady9406"), venue=None,
+        venue_type="preprint", orgs=[], date=dt.date(2025, 5, 15), year=2025,
+        title="Predicting Beyond Training Data via Extrapolation versus Translocation: AI Weather Models",
+    ))  # fmt: skip
+    a.save_paper(make_paper(
+        id="doi-10.1126-sciadv.ady9406", ids=Ids(doi="10.1126/sciadv.ady9406"), venue="Science Advances",
+        venue_type="journal", cited_by=12, date=dt.date(2026, 2, 1), year=2026,
+        title="Predicting regional gray swans via translocation: AI weather models and Dubai's 2024 rainfall",
+    ))  # fmt: skip
+    assert dedupe.run(a, load()) == (1, 0)
+    b = Archive()
+    assert list(b.papers) == ["arxiv-2505.10241"]
+    p = b.papers["arxiv-2505.10241"]
+    assert p.venue == "Science Advances" and p.cited_by == 12 and p.date == dt.date(2025, 5, 15)
