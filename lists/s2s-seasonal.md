@@ -5,10 +5,11 @@ Forecasts from 2 weeks to about a year: sub-seasonal, seasonal and ENSO/MJO pred
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/s2s-seasonal/)
 
-520 papers (19 ⭐). Newest first.
+521 papers (19 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-11-13 | [Extending weather forecasts from hours to weeks with teleconnection-aware graph neural networks](https://doi.org/10.21203/rs.3.rs-11430274/v1)<br><sub>Shan Zhao, Zhitiong Xiong, Xiao Xiang Zhu · Research Square</sub> | Technical University of Munich (TUM) |  |
 | 2026-11-01 | [Subseasonal prediction of tropical cyclone activity in the machine-learning model FuXi-S2S](https://doi.org/10.1016/j.atmosres.2026.109427)<br><sub>Bowen Zhao, Rui Jin, Hui Yu et al. · Atmospheric Research</sub> | Fudan University (FuXi), China Meteorological Administration (CMA) |  |
 | 2026-10-27 | [Seasonal Prediction of Summer Accumulated Cyclone Energy over the Western North Pacific Using Causality-Informed Predictor Selection and a Convolutional Neural Network](https://doi.org/10.21203/rs.3.rs-11313293/v1)<br><sub>Chuhan Zheng, Li Tao, Guoqing Dong · Research Square</sub> | Nanjing University of Information Science & Technology (NUIST) |  |
 | 2026-10-23 | [Leveraging Machine Learning and Climate Phase Analysis to Enhance Seasonal Forecasts of Cold Extremes](https://doi.org/10.1088/2515-7620/aeb8ea)<br><sub>Maxwell R.W. Beal, Upmanu Lall, Paul Block · Environmental Research Communications</sub> |  |  |
@@ -61,7 +62,7 @@ Forecasts from 2 weeks to about a year: sub-seasonal, seasonal and ENSO/MJO pred
 | 2026-06-01 | [LSTA-Swin: a long- and short-term aggregated spatio-temporal neural network for enhanced ENSO forecasting](https://doi.org/10.1007/s00382-026-08210-3)<br><sub>Wei Fang, Xiao-Zhi Zhang, Yijing Li et al. · Climate Dynamics</sub> | China Meteorological Administration (CMA), Nanjing University of Information Science & Technology (NUIST) |  |
 | 2026-05-28 | [Seasonal forecast of sea surface temperatures via Neural ODEs](https://doi.org/10.1088/3049-4753/ae7447)<br><sub>Jonghang Lee, Woosok Moon, Y. Ham · Machine Learning Earth</sub> |  |  |
 | 2026-05-24 | [Exascale Hybrid Numerical-AI Ensembles for Operational Flood-Season Forecasting in East Asia: 15-km Decadal Hindcasts and 1-km High-Resolution Capability](https://arxiv.org/abs/2605.24896)<br><sub>Mengxuan Chen, Yunpu Xu, Qiuyan Sun et al.</sub> | NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), Shanghai Artificial Intelligence Laboratory, Tsinghua University (NowcastNet) |  |
-| 2026-05-22 | [Deep learning identification of SST teleconnections driving early-winter North Atlantic climate](https://doi.org/10.31223/x5519q)<br><sub>Víctor Galván Fraile, Irene Polo, Marta Martín‐Rey et al.</sub> |  |  |
+| 2026-05-22 | [Deep learning identification of SST teleconnections driving early-winter North Atlantic climate](https://doi.org/10.1038/s41598-026-78245-3)<br><sub>Víctor Galván Fraile, Irene Polo, Marta Martín‐Rey et al. · Scientific Reports</sub> | ECMWF, University of Reading |  |
 | 2026-05-20 | [Tropical basin interactions reduce spring predictability barrier of ENSO in a deep learning model](https://doi.org/10.1126/sciadv.aeb0901)<br><sub>Lu Zhou, Rong‐Hua Zhang · Science Advances</sub> | Nanjing University of Information Science & Technology (NUIST) |  |
 | 2026-05-19 | [Impacts of tropical forecast errors on two extreme precipitation events: insights from relaxation experiments using machine-learning weather prediction models](https://doi.org/10.5194/wcd-7-787-2026)<br><sub>Siyu Li, Juliana Dias, Benjamin Moore et al. · Weather and Climate Dynamics</sub> | Karlsruhe Institute of Technology (KIT), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
 | 2026-05-09 | [PnP-Corrector: A Universal Correction Framework for Coupled Spatiotemporal Forecasting](https://arxiv.org/abs/2605.08935)<br><sub>Hao Wu, Fan Xu, Yuxu Lu et al.</sub> | Tencent, Tsinghua University (NowcastNet) |  |
@@ -532,6 +533,7 @@ Forecasts from 2 weeks to about a year: sub-seasonal, seasonal and ENSO/MJO pred
 
 ## Also relevant
 
+- [Exploration of the northern stratospheric polar vortex extremes via archetype analysis and tropospheric imprint](https://doi.org/10.21203/rs.3.rs-11367588/v1) (2026)
 - [Combined climate-mode regimes and South American precipitation anomalies: statistical inference and interpretable machine learning](https://doi.org/10.1007/s00382-026-08447-y) (2026)
 - [Seasonal hydropower forecast framework using a combination of deep learning and physics-based methods](https://doi.org/10.31223/x50b98) (2026)
 - [Teleconnection-aware machine learning calibration of multi-model seasonal forecasts for drought prediction over India](https://doi.org/10.1007/s00382-026-08419-2) (2026)

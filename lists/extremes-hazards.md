@@ -5,11 +5,14 @@ Prediction and detection of extremes: tropical cyclones, heatwaves, heavy rain, 
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/extremes-hazards/)
 
-1372 papers (11 ⭐). Newest first.
+1375 papers (11 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
 | 2026-12-01 | [From prediction to resilience: transferable and equitable AI for climate extremes in a data-unequal Anthropocene](https://doi.org/10.1016/j.cosust.2026.101734)<br><sub>Sevim Gökalp, Cavit Yeşilyurt · Current Opinion in Environmental Sustainability</sub> |  |  |
+| 2026-11-13 | [A Novel Deep Learning Approach for Tropical Cyclone Path Prediction Based on LSTM-BiLSTM](https://doi.org/10.5750/ijme.v168ia6(s).2062)<br><sub>Karthikeyan S, M. Kannan · The International Journal of Maritime Engineering</sub> |  |  |
+| 2026-11-13 | [Physics-informed and data-efficient machine learning for storm surge forecasting during typhoons](https://doi.org/10.1126/sciadv.aeh5673)<br><sub>Huarong Xie, Changming Dong, Yuli Liu et al. · Science Advances</sub> | Nanjing University of Information Science & Technology (NUIST) |  |
+| 2026-11-12 | [Physics-guided deep learning with spatial decoupling for tropical cyclone convective precipitation prediction](https://doi.org/10.1016/j.oceaneng.2026.129445)<br><sub>Mengjiao Qin, Wuxia Lin, Shoujuan Shu et al. · Ocean Engineering</sub> |  |  |
 | 2026-11-03 | [Machine-Learning Classification of Next-Day Extreme Precipitation in Guangzhou](https://doi.org/10.54254/2755-2721/2026.38487)<br><sub>Yueze Hua, Jiaying Li, Jieyao Shi et al. · Applied and Computational Engineering</sub> |  |  |
 | 2026-11-02 | [A Data-Driven Tropical Cyclone Model Based on Lagrangian Limited-Area Transformers: Investigating Physical Fidelity through Real-Case Simulations and Idealized Experiments](https://doi.org/10.1175/jas-d-26-0056.1)<br><sub>Buo‐Fu Chen, Hao-Hsuan Lo, Wei-Hua Hsu et al. · Journal of the Atmospheric Sciences</sub> |  |  |
 | 2026-10-30 | [Improving extreme Fire Radiative Power forecasting with Gaussian loss-based transformer and LSTM models](https://doi.org/10.1080/01431161.2026.2749622)<br><sub>Ziheng Sun, Yunyao Li, Li Zhang et al. · International Journal of Remote Sensing</sub> | NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
@@ -1384,6 +1387,10 @@ Prediction and detection of extremes: tropical cyclones, heatwaves, heavy rain, 
 
 ## Also relevant
 
+- [Deep-learning downscaling of CMIP6 heatwave projections for Greece and comparison with a regional climate model](https://doi.org/10.5194/egusphere-2026-6743) (2026)
+- [Advancing spatial hurricane storm surge risk assessment using machine learning and simulations under changing climate scenarios](https://doi.org/10.1080/10106049.2026.2756760) (2026)
+- [Trade-offs in deep learning approaches for precipitation downscaling across weather regimes](https://doi.org/10.1038/s41598-026-80185-x) (2026)
+- [A hybrid machine learning-analog framework for downscaling unprecedented climate extremes](https://arxiv.org/abs/2611.15284) (2026)
 - [Three-way circulation–soil moisture–temperature feedbacks amplify the most extreme mid-latitudinal heat waves](https://doi.org/10.1126/sciadv.aeh9111) (2026)
 - [Nowcasting of Tropical Cyclone Wind Fields and Intensity from Geostationary Imagery](https://arxiv.org/abs/2611.08255) (2026)
 - [Robust Ranking of Port Impacts from Impending Tropical Cyclones: A Two-Stage Recommendation System](https://arxiv.org/abs/2611.07296) (2026)
@@ -1666,10 +1673,10 @@ Prediction and detection of extremes: tropical cyclones, heatwaves, heavy rain, 
 - [Physics Encoded Spatial and Temporal Generative Adversarial Network for Tropical Cyclone Image Super‐Resolution](https://doi.org/10.1049/ipr2.70438) (2026)
 - [Physics-guided deep learning for radar rainfall nowcasting in flash-flood early warning: Lead-time skill and an illustrative utility proxy](https://doi.org/10.1016/j.nhres.2026.01.003) (2026)
 - [From raw to reliable: machine learning bias correction of reanalysis data for improved drought severity classification](https://doi.org/10.1016/j.jhydrol.2025.134892) (2025)
-- [Technical note: Expanding ensemble forecasts with generative AI: application to volcanic clouds](https://doi.org/10.5194/egusphere-2025-6097) (2025)
+- [Technical note: Expanding ensemble forecasts with generative AI: application to volcanic clouds](https://doi.org/10.5194/acp-26-15953-2026) (2025)
 - [Leveraging Machine Learning for Accurate Prediction of Extreme Temperature Events](https://doi.org/10.56220/uwjcs.v7i.125) (2025)
 - [Detection of Long-Term Trend Shifts in Tropical Cyclones Using Multi-Architecture Deep Learning in the Western North Pacific](https://doi.org/10.9765/kscoe.2025.37.6.272) (2025)
-- [The Global Kilometric Tropical Cyclone Wind Database (CyclObs) Enabling High-Resolution Data-Driven Studies](https://doi.org/10.22541/essoar.176676860.01253431/v1) (2025)
+- [The Global Kilometric Tropical Cyclone Wind Database (CyclObs) Enabling High-Resolution Data-Driven Studies](https://doi.org/10.1175/bams-d-25-0144.1) (2025)
 - [Postprocessing for 24-Hour Advanced Forecasting of Extreme Precipitation Using Deep Learning Generative Models](https://doi.org/10.1175/waf-d-24-0199.1) (2025)
 - [Northern Hemisphere Midlatitude Cyclone Intensity Biases in Machine Learning Weather Prediction Models](https://doi.org/10.1175/bams-d-25-0129.1) (2025)
 - [Assessing the predictive capability of several machine learning algorithms to forecast snow avalanches using numerical weather prediction model in eastern Canada](https://doi.org/10.5194/nhess-25-5033-2025) (2025)

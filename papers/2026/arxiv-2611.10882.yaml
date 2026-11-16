@@ -1,0 +1,59 @@
+id: arxiv-2611.10882
+title: Guiding future global temperature distributions with simulations and observations
+authors:
+- Francesco Immorlano
+- ELIJAH TAVARES
+- Felix Draxler
+- Juan Nathaniel
+- Violette Launeau
+- Duncan Watson-Parris
+- Padhraic Smyth
+- Pierre Gentine
+- Stephan Mandt
+date: '2026-11-07'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2611.10882'
+  openalex: W7225718727
+links:
+  paper: https://arxiv.org/abs/2611.10882
+  pdf: https://arxiv.org/pdf/2611.10882
+orgs:
+- columbia-leap
+topic: climate-emulation
+topics:
+- probabilistic-ensembles
+type: model
+method:
+- diffusion
+timescale:
+- climate
+spatial:
+- global
+data:
+- cmip
+- era5
+status: research
+summary: A conditional diffusion emulator trained on 17 CMIP6 models and ERA5 uses guidance toward observations,
+  halving bias in extreme temperature percentiles and enabling large ensembles.
+abstract: Assessing climate risks requires projections of daily temperature distributions, including rare
+  and spatially widespread extremes. Climate simulations are costly and biased, while correcting them
+  toward observations risks suppressing inter-model differences. We train a single machine-learning emulator,
+  a conditional diffusion model, on seventeen CMIP6 models and ERA5 reanalysis to generate spatially coherent
+  daily temperature fields conditioned on model identity, date, and CO2-equivalent concentration. At sampling
+  time, diffusion guidance reduces model biases by steering each emulated climate-model distribution toward
+  observations, with its strength selected through perfect-model experiments using withheld simulated
+  futures. Observational influence decreases with projection horizon and forcing. Across seventeen synthetic
+  targets, guidance more than halves median biases in the 1st and 99th percentiles of daily temperature,
+  improves probabilistic scores and reliability, and reduces median annual global-mean temperature RMSE
+  by 32-57% across three emission scenarios. In a detailed benchmark, guidance also outperforms established
+  bias corrections on daily-field probabilistic scores. Efficient sampling generates large ensembles without
+  further climate simulations. For example, our framework corrects CMIP6's roughly threefold historical
+  overestimate of extreme-heat coverage, yet projects that concurrent extremes will affect nearly half
+  of global land on a typical day in the 2080s under SSP3-7.0.
+significance: 6
+score: 34
+highlight: false
+added: '2026-11-16'
+source: weekly

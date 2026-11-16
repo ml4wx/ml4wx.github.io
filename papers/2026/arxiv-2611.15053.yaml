@@ -1,0 +1,54 @@
+id: arxiv-2611.15053
+title: 'PhysXAI: A Theoretical Framework for Diagnosing Physical Hallucinations in Weather Foundation
+  Models'
+authors:
+- Anjan Mahapatra
+- Nikhil Raj
+date: '2026-11-11'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2611.15053'
+  openalex: W7225989891
+links:
+  paper: https://arxiv.org/abs/2611.15053
+  pdf: https://arxiv.org/pdf/2611.15053
+topic: xai-uq-physics
+topics:
+- global-medium-range
+type: model
+method:
+- physics-constrained
+- other
+spatial:
+- global
+data:
+- era5
+- other
+status: research
+summary: PhysXAI learns to detect, localise and attribute physical violations such as mass and hydrostatic
+  imbalance in GraphCast, Pangu-Weather and NeuralGCM forecasts.
+abstract: Modern machine learning models for global weather forecasting achieve remarkable predictive
+  accuracy, yet they frequently produce states that violate fundamental physical laws, including conservation
+  of mass, hydrostatic balance, or spectral energy scaling. We term these outputs physical hallucinations
+  and propose PhysXAI, a rigorous diagnostic framework that detects, localises, and attributes such inconsistencies.
+  Unlike existing post-hoc metric suites, PhysXAI is a learnable system that explicitly decouples forecast
+  error from physical plausibility. We formalise the problem through a novel joint condition on numerical
+  and physical residuals, and introduce a multi-branch encoder that extracts representations from conservation,
+  dynamical, spectral, cross-variable, and spatiotemporal residuals. A key innovation is a physics-consistency
+  contrastive learning objective, which we theoretically show the latent representation to be approximately
+  isometric to the physical residual space, ensuring that diagnostic decisions remain grounded in physically
+  meaningful deviations. We further derive an adaptive multi-objective loss with gradient-based weighting
+  to balance competing diagnostic objectives. The framework produces spatially resolved hallucination
+  maps, violation-type classifications, and calibrated Bayesian uncertainty, enabling both detection and
+  interpretable attribution of physical inconsistencies. We conduct a comprehensive comparative evaluation
+  of PhysXAI across ERA5, WeatherBench 2, and MERRA-2, using forecasts from GraphCast, Pangu-Weather,
+  and NeuralGCM, with Python-written code and a fully reproducible experimental protocol. Our theoretical
+  analysis and empirical evaluation establish PhysXAI as a principled framework for diagnosing physical
+  hallucinations and advancing trustworthy AI for weather forecasting.
+significance: 4
+cited_by: 0
+score: 16
+highlight: false
+added: '2026-11-16'
+source: weekly

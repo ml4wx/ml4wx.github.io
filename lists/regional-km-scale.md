@@ -100,6 +100,7 @@ Limited-area and regional ML weather models, convection-permitting and km-scale 
 
 ## Also relevant
 
+- [Physics-constrained transformer for medium-to-low altitude wind speed and precipitation short-range forecasting](https://doi.org/10.1016/j.engappai.2026.116680) (2026)
 - [A Data-Driven Tropical Cyclone Model Based on Lagrangian Limited-Area Transformers: Investigating Physical Fidelity through Real-Case Simulations and Idealized Experiments](https://doi.org/10.1175/jas-d-26-0056.1) (2026)
 - [Tropical Cyclone-Following Dataset for Limited-Area Machine Learning Applications](https://arxiv.org/abs/2611.03925) (2026)
 - [Spatio-temporal precipitation downscaling at hourly resolution based on km-scale regional simulations](https://arxiv.org/abs/2610.26145) (2026)

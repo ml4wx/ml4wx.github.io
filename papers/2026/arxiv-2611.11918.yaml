@@ -1,0 +1,51 @@
+id: arxiv-2611.11918
+title: Ensemble Covariance Propagation with Machine Learning Weather Prediction Models in a Realistic
+  Data Assimilation System
+authors:
+- Simon Toedtli
+- David Ahijevych
+- Wei Wang
+- Chris Snyder
+date: '2026-11-09'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2611.11918'
+  openalex: W7225707723
+links:
+  paper: https://arxiv.org/abs/2611.11918
+  pdf: https://arxiv.org/pdf/2611.11918
+orgs:
+- ncar
+topic: data-assimilation
+topics:
+- global-medium-range
+type: model
+method:
+- gnn
+spatial:
+- global
+data:
+- nwp-analysis
+- satellite
+status: research
+summary: Shows GraphCast can propagate ensemble covariances in a cycled EnVar/EnKF system assimilating
+  real observations, with spread comparable to a fully physics-based reference.
+abstract: Integrating machine learning weather prediction (MLWP) models into classical data assimilation
+  (DA) workflows requires that they accurately evolve ensemble covariances. We evaluate this capability
+  in a two-way coupled DA system, where an ensemble variational (EnVar) component evolves the mean and
+  an ensemble Kalman filter (EnKF) evolves the covariances. The system is cycled over one month and assimilates
+  a wide range of real-world observations, including microwave radiances. Using the MLWP model GraphCast
+  for the EnKF and the physics-based MPAS model for the EnVar yields ensemble spread and covariances comparable
+  to a reference configuration in which MPAS evolves both components. The resulting EnVar mean achieves
+  consistently lower RMSE against GFS analyses, except near the model top, where spurious correlations
+  degrade performance. These results demonstrate that MLWP models can propagate covariance information
+  in a realistic DA cycling system and provide a proof of concept for their integration into future operational
+  ensemble systems.
+significance: 6
+score: 59
+highlight: true
+highlight_reason: Shows GraphCast can propagate EnKF covariances in a realistic cycled DA system with
+  real observations, a useful step toward ML in operational ensemble DA.
+added: '2026-11-16'
+source: weekly

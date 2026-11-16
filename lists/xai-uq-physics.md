@@ -5,10 +5,11 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/xai-uq-physics/)
 
-194 papers (4 ⭐). Newest first.
+195 papers (4 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-11-11 | [PhysXAI: A Theoretical Framework for Diagnosing Physical Hallucinations in Weather Foundation Models](https://arxiv.org/abs/2611.15053)<br><sub>Anjan Mahapatra, Nikhil Raj</sub> |  |  |
 | 2026-10-30 | [Explaining patterns learned by neural networks for detection of atmospheric surface fronts in gridded atmospheric data](https://doi.org/10.5194/egusphere-2026-3877)<br><sub>Tim Radke, Johanna Baehr, Marc Rautenhaus</sub> | Max Planck Institute for Meteorology |  |
 | 2026-10-26 | [GNN-VIEW: Visual Inspection and Explanation of Graph-based Earth-System Models](https://arxiv.org/abs/2610.35693)<br><sub>Alessandro Lucatelli, Ferdinand Unterhuber, Katharina Krenzer et al.</sub> | ETH Zurich |  |
 | 2026-10-21 | [Certified OOD Detection for Artificial Intelligence Climate Emulators Under Unseen Forcing Scenarios: Score Bounds and Seasonal Forecast Safety](https://doi.org/10.5281/zenodo.23545447)<br><sub>Achieng Kevin Otieno, Halima Abdille Dida · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
@@ -266,7 +267,7 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 - [Pattern Recognition of West African Monsoon Extreme Rainfall Events Using Convolutional Neural Networks](https://doi.org/10.1029/2026gl124425) (2026)
 - [A trustworthy deep learning framework for urban climate downscaling via physics-informed diffusion and topology-aware graph neural operators](https://doi.org/10.1016/j.eswa.2026.133361) (2026)
 - [Investigating Inductive Biases for Machine Learning Emulation of Sudden Stratospheric Warmings in Idealised Isca Simulations](https://arxiv.org/abs/2606.18857) (2026)
-- [Disentangling the effects of sea surface temperature and CO$_2$ in global machine learned weather-climate emulators](https://arxiv.org/abs/2606.07928) (2026)
+- [Disentangling the effects of sea surface temperature and CO$_2$ in global machine learned weather-climate emulators](https://doi.org/10.1029/2026jh001571) (2026)
 - [Machine-learning-based approach for solar radiation model uncertainty identification, attribution and bias correction](https://doi.org/10.5194/egusphere-2026-2743) (2026)
 - [iTCTSL: Interpretable Tropical Cyclone Track and Intensity Forecasting via Task Sensitive Learning](https://doi.org/10.1109/cvprf71909.2026.00157) (2026)
 - [An Interpretable Deep Learning Model for Detecting Tropical Cyclone Genesis Through Incorporation of the Dynamic and Thermodynamic Environment](https://doi.org/10.1029/2025jh001152) (2026)

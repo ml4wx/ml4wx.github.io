@@ -435,6 +435,9 @@ ML inside physical models: subgrid parameterizations (convection, clouds, radiat
 
 ## Also relevant
 
+- [Physics-informed and data-efficient machine learning for storm surge forecasting during typhoons](https://doi.org/10.1126/sciadv.aeh5673) (2026)
+- [The calibration deficit: a challenge for Earth system simulation and emulation](https://doi.org/10.5194/egusphere-2026-6437) (2026)
+- [Rescene-ESM: an Earth system model built around a frozen AI weather model](https://arxiv.org/abs/2611.11066) (2026)
 - [Can LLM Agents Improve Imperfect Earth System Model Parameterizations?](https://arxiv.org/abs/2611.03543) (2026)
 - [Batched NN 4D-Var: a performant hybrid model framework for the Integrated Forecasting System](https://arxiv.org/abs/2610.32582) (2026)
 - [UDL-RT: A unified differentiable all-sky microwave radiative transfer model with learnable parameterizations](https://arxiv.org/abs/2610.24627) (2026)

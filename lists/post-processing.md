@@ -5,10 +5,11 @@ Statistical post-processing of NWP or ML forecasts: bias correction, ensemble ca
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/post-processing/)
 
-685 papers (3 ⭐). Newest first.
+686 papers (3 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-11-14 | [Monthly model-adaptive machine-learning ensemble of CMIP6 models for global land temperature and precipitation projections](https://doi.org/10.1007/s00704-026-06716-8)<br><sub>Jianzhong Lu, Piaoyin Zhang, Zhiyu Ye et al. · Theoretical and Applied Climatology</sub> |  |  |
 | 2026-11-02 | [Six-hourly Probabilistic Precipitation Forecasts Created From Hourly Probabilities](https://arxiv.org/abs/2611.03326)<br><sub>Thomas M Hamill</sub> | NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
 | 2026-10-30 | [Value of Adding AI Weather Model Ensembles to a Multi-model Probabilistic Blend](https://arxiv.org/abs/2610.42130)<br><sub>Harris Sop Nkuiate, Gavin Evans, Christopher A. T. Ferro et al.</sub> | ECMWF, Met Office |  |
 | 2026-10-27 | [Value of Aerosol Information for Day-Ahead Solar Irradiance Forecasting in a Dust-Prone Climate: A Multi-Site Evaluation of Machine-Learning Post-Processing in Iraq](https://doi.org/10.32870/2961bn58)<br><sub>Omar Gheyath Ibrahim, Mohammed Tariq Majeed, Abdulla Mohannad Habbib · RECIBE REVISTA ELECTRÓNICA DE COMPUTACIÓN INFORMÁTICA BIOMÉDICA Y ELECTRÓNICA</sub> |  |  |
@@ -632,7 +633,7 @@ Statistical post-processing of NWP or ML forecasts: bias correction, ensemble ca
 | 2020-09-01 | [Application of machine learning to improving numerical weather prediction](https://doi.org/10.15407/pp2020.02-03.375)<br><sub>А.Yu. Doroshenko, Vitalii Shpyg, Roman Kushnirenko · PROBLEMS IN PROGRAMMING</sub> |  |  |
 | 2020-08-22 | [A Model Output Deep Learning Method for Grid Temperature Forecasts in Tianjin Area](https://doi.org/10.3390/app10175808)<br><sub>Keran Chen, Ping Wang, Xiaojun Yang et al. · Applied Sciences</sub> | China Meteorological Administration (CMA) |  |
 | 2020-08-14 | [A Deep Convolutional Neural Network Model for improving WRF Forecasts](https://doi.org/10.1109/tnnls.2021.3100902)<br><sub>Alqamah Sayeed, Yunsoo Choi, Jia Jung et al. · IEEE Transactions on Neural Networks and Learning Systems</sub> |  |  |
-| 2020-08-04 | [Prediction Skill of Extended Range 2-m Maximum Air Temperature Probabilistic Forecasts Using Machine Learning Post-Processing Methods](https://doi.org/10.3390/atmos11080823)<br><sub>Ting Peng, Xiefei Zhi, Yan Ji et al. · Atmosphere</sub> |  |  |
+| 2020-08-04 | [Prediction Skill of Extended Range 2-m Maximum Air Temperature Probabilistic Forecasts Using Machine Learning Post-Processing Methods](https://doi.org/10.3390/atmos11080823)<br><sub>Ting Peng, Xiefei Zhi, Yan Ji et al. · Atmosphere</sub> | Nanjing University of Information Science & Technology (NUIST) |  |
 | 2020-08-01 | [Using Artificial Neural Networks for Generating Probabilistic Subseasonal Precipitation Forecasts over California](https://doi.org/10.1175/mwr-d-20-0096.1)<br><sub>Michael Scheuerer, Matthew B. Switanek, Rochelle P. Worsnop et al. · Monthly Weather Review</sub> | NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
 | 2020-07-23 | [Development of Stacked Long Short-Term Memory Neural Networks with Numerical Solutions for Wind Velocity Predictions](https://doi.org/10.1155/2020/5462040)<br><sub>Chih‐Chiang Wei · Advances in Meteorology</sub> |  |  |
 | 2020-07-23 | [Improving Wind Forecasts in the Lower Stratosphere by Distilling an Analog Ensemble Into a Deep Neural Network](https://doi.org/10.1029/2020gl089098)<br><sub>Salvatore Candido, Aakanksha Singh, Luca Delle Monache · Geophysical Research Letters</sub> |  |  |
@@ -697,6 +698,7 @@ Statistical post-processing of NWP or ML forecasts: bias correction, ensemble ca
 
 ## Also relevant
 
+- [Reconstructing Boundary Layer Wind Profiles with Machine Learning: A Comparative Study on IGRA Radiosonde Data](https://arxiv.org/abs/2611.13359) (2026)
 - [A Machine Learning-Based Weather Forecasting System with Live Data Anchoring and Uncertainty Estimation](https://doi.org/10.5281/zenodo.23832326) (2026)
 - [A two‑stage deep learning framework for multi‑source precipitation fusion to optimize seasonal, extreme and precipitation event estimation](https://doi.org/10.1016/j.ejrh.2026.104139) (2026)
 - [Machine learning framework for the reconstruction of missing daily rainfall time series from multisource satellite and in situ observation in Burkina Faso](https://doi.org/10.1007/s40808-026-02949-8) (2026)

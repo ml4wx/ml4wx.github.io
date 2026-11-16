@@ -1,0 +1,55 @@
+id: doi-10.21203-rs.3.rs-11430274-v1
+title: Extending weather forecasts from hours to weeks with teleconnection-aware graph neural networks
+authors:
+- Shan Zhao
+- Zhitiong Xiong
+- Xiao Xiang Zhu
+date: '2026-11-13'
+year: 2026
+venue: Research Square
+venue_type: preprint
+ids:
+  doi: 10.21203/rs.3.rs-11430274/v1
+  openalex: W7226038988
+links:
+  paper: https://doi.org/10.21203/rs.3.rs-11430274/v1
+  pdf: https://www.researchsquare.com/article/rs-11430274/latest.pdf
+orgs:
+- tum
+topic: s2s-seasonal
+topics:
+- global-medium-range
+type: model
+method:
+- transformer
+- gnn
+timescale:
+- s2s
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Reuses a pretrained medium-range model with lightweight temporal attention and a teleconnection-index
+  graph module to extend forecasts to four weeks, updating only 10.9% of parameters.
+abstract: Abstract Subseasonal forecasting is essential for agricultural planning, water-resource management,
+  and early warning of natural hazards, yet remains challenging because forecast errors grow rapidly with
+  lead time. Recent machine-learning models have achieved remarkable foresting skills, but training such
+  models requires substantial computational resources and associated energy consumption. Here, we propose
+  a parameter-efficient framework that reuses a pretrained medium-range weather model and extends its
+  forecast horizon from 24 hours to four weeks. The architecture retains the pretrained spatial-attention
+  modules while introducing lightweight temporal attention to model dependencies across multiple atmospheric
+  states. To account for the influence of large-scale boundary conditions at subseasonal timescales, we
+  further incorporate climate teleconnection indices through a difference-based graph module. This physically
+  motivated component learns how large-scale teleconnection patterns modulate the temporal evolution of
+  geographically remote areas. Experiments show that the proposed framework reduces root-mean-square error
+  for most evaluated atmospheric variables from the two-week forecast horizon onward. The framework requires
+  updating only 10.9% of the total model parameters while enabling the processing of substantially longer
+  temporal sequences. These results further indicate the transferability of spatial representations learned
+  from medium-range forecasting to extended-range prediction.
+significance: 4
+score: 26
+highlight: false
+added: '2026-11-16'
+source: weekly
