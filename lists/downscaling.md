@@ -5,10 +5,14 @@ Statistical and generative downscaling of weather or climate fields to higher re
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/downscaling/)
 
-836 papers (7 ⭐). Newest first.
+840 papers (7 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-11-11 | [Deep-learning downscaling of CMIP6 heatwave projections for Greece and comparison with a regional climate model](https://doi.org/10.5194/egusphere-2026-6743)<br><sub>Georgios Fragkoulidis, Giorgos Kyros, Petros Kyriakou et al.</sub> |  |  |
+| 2026-11-11 | [Joint near-surface wind downscaling and hub-height estimation for wind power projections](https://doi.org/10.1186/s40537-026-01569-4)<br><sub>Antigoni Moira, Stelios Karozis, Effrosyni Karakitsou et al. · Journal Of Big Data</sub> |  |  |
+| 2026-11-11 | [Trade-offs in deep learning approaches for precipitation downscaling across weather regimes](https://doi.org/10.1038/s41598-026-80185-x)<br><sub>Alessandro Damiani, Noriko N. Ishizaki, Raúl R. Cordero et al. · Scientific Reports</sub> |  |  |
+| 2026-11-11 | [A hybrid machine learning-analog framework for downscaling unprecedented climate extremes](https://arxiv.org/abs/2611.15284)<br><sub>Nina Effenberger, Florian E. Roemer, Maybritt Schillinger et al.</sub> | Météo-France (incl. CNRM), ETH Zurich, Swiss Data Science Center (SDSC) |  |
 | 2026-11-06 | [Comparative assessment of deep learning techniques for spatial downscaling of GPM IMERG satellite precipitation data for Jeju Island in South Korea](https://doi.org/10.1016/j.jher.2026.100741)<br><sub>YeonJi Chung, Juyoung Shin, Myoung‐Jin Um · Journal of Hydro-environment Research</sub> |  |  |
 | 2026-11-04 | [A Super‐Resolution Model for Enhancing the Intensity and Structure of Tropical Cyclone Predictions](https://doi.org/10.1029/2026jh001372)<br><sub>Zhiyu Zhao, Yanlong Ao, Wei Zhang et al. · Journal of Geophysical Research Machine Learning and Computation</sub> | China Meteorological Administration (CMA) |  |
 | 2026-11-01 | [AI-Based Super-Resolution Approaches to Reconstruct Temperature Fields of Climatic Data Using Deep Neural Networks](https://doi.org/10.3390/cli14110233)<br><sub>Eleonora Amato, Lorenzo Basile, Vito Zago et al. · Climate</sub> |  |  |

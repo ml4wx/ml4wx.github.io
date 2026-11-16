@@ -325,6 +325,10 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 
 ## Also relevant
 
+- [A Novel Deep Learning Approach for Tropical Cyclone Path Prediction Based on LSTM-BiLSTM](https://doi.org/10.5750/ijme.v168ia6(s).2062) (2026)
+- [Extending weather forecasts from hours to weeks with teleconnection-aware graph neural networks](https://doi.org/10.21203/rs.3.rs-11430274/v1) (2026)
+- [PhysXAI: A Theoretical Framework for Diagnosing Physical Hallucinations in Weather Foundation Models](https://arxiv.org/abs/2611.15053) (2026)
+- [Ensemble Covariance Propagation with Machine Learning Weather Prediction Models in a Realistic Data Assimilation System](https://arxiv.org/abs/2611.11918) (2026)
 - [Half-precision inference of AI weather prediction models: negligible loss of skill at a fraction of the cost](https://arxiv.org/abs/2611.09573) (2026)
 - [Short-Term Forecasting of Heterogeneous Wind Power Fleets: Global Temporal Fusion Transformer Leveraging Static Covariates](https://arxiv.org/abs/2611.06130) (2026)
 - [Distinguishing Initial-Condition and Model Error Using Machine-Learning Weather Models](https://arxiv.org/abs/2611.05592) (2026)
@@ -432,7 +436,7 @@ Data-driven global weather models for 1 to 15 days, usually trained on reanalysi
 - [Verification of AI–based environmental forecasting systems: What can we do, what do we need to do, and what are the challenges?](https://doi.org/10.1016/j.jemets.2026.100032) (2026)
 - [An Integrated Model for Tropical Cyclone Track Forecasting Based on Deep Learning Techniques](https://doi.org/10.1175/waf-d-25-0159.1) (2026)
 - [Evaluating the Predictability of Selected Weather Extremes with Aurora, an AI Weather Forecast Model](https://arxiv.org/abs/2603.06516) (2026)
-- [Hybrid ensemble forecasting combining physics-based and machine-learning predictions through spectral nudging](https://arxiv.org/abs/2603.05570) (2026)
+- [Hybrid ensemble forecasting combining physics-based and machine-learning predictions through spectral nudging](https://doi.org/10.1002/qj.70352) (2026)
 - [Phys-Diff: A Physics-Inspired Latent Diffusion Model for Tropical Cyclone Forecasting](https://arxiv.org/abs/2603.00521) (2026)
 - [Rapid radiative transfer neural network for weather forecasting acceleration](https://doi.org/10.1016/j.cnsns.2026.109840) (2026)
 - [Closing Africa's Early Warning Gap: AI Weather Forecasting for Disaster Prevention](https://arxiv.org/abs/2602.17726) (2026)

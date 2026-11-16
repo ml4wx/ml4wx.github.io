@@ -1,0 +1,54 @@
+id: arxiv-2611.13359
+title: 'Reconstructing Boundary Layer Wind Profiles with Machine Learning: A Comparative Study on IGRA
+  Radiosonde Data'
+authors:
+- Fedor Buzaev
+- Dmitry Efremenko
+- Daria Pugacheva
+- Fedor Ratnikov
+- Egor Bugaev
+- Vladimir Gordin
+- D. Derkach
+date: '2026-11-09'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2611.13359'
+  openalex: W7225797890
+links:
+  paper: https://arxiv.org/abs/2611.13359
+  pdf: https://arxiv.org/pdf/2611.13359
+orgs:
+- ecmwf
+- noaa
+topic: observations-remote-sensing
+topics:
+- post-processing
+type: evaluation
+method:
+- classical-ml
+- neural-operator
+spatial:
+- regional
+data:
+- stations
+status: research
+summary: Tabular learners cut boundary-layer wind RMSE from about 3 to 1.3-1.6 m/s on 158k radiosondes,
+  with predictors, not architecture, setting accuracy.
+abstract: Wind profiles in the atmospheric boundary layer (ABL) drive short-range forecasting and wind-energy
+  siting, yet sparse radiosonde coverage forces practitioners to interpolate them from a handful of physical
+  predictors. We benchmark modern tabular learners against analytical parameterizations on 158,097 IGRA
+  soundings. CatBoost, TabM, and FT-Transformer reduce RMSE to 1.3-1.6 m/s, against approximately 3 m/s
+  for power-law and Monin-Obukhov fits; once the predictor set is fixed the three architectures differ
+  by less than 0.05 m/s, so accuracy is driven by predictors rather than architecture. A cohort analysis
+  of within-bin profile dispersion places an empirical floor of approximately 1.77 m/s on any point-wise
+  predictor that uses standard radiosonde features, consistent with prior eddy-viscosity inversions. A
+  one-dimensional Fourier Neural Operator applied as a post-hoc corrector to frozen tabular predictions
+  reduces near-surface RMSE on U.S. stations from 1.5 to 1.2 m/s, while leaving upper-layer error unchanged.
+  Further gains should come from new predictors rather than larger models.
+significance: 2
+cited_by: 0
+score: 43
+highlight: false
+added: '2026-11-16'
+source: weekly

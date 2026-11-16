@@ -1,0 +1,54 @@
+id: arxiv-2611.11066
+title: 'Rescene-ESM: an Earth system model built around a frozen AI weather model'
+authors:
+- Minjong Cheon
+- Kaoru Kakinuma
+date: '2026-11-08'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2611.11066'
+  openalex: W7225727350
+links:
+  paper: https://arxiv.org/abs/2611.11066
+  pdf: https://arxiv.org/pdf/2611.11066
+orgs:
+- nvidia
+topic: climate-emulation
+topics:
+- hybrid-parameterization
+type: model
+timescale:
+- climate
+spatial:
+- global
+data:
+- era5
+- cmip
+status: research
+summary: Rescene-ESM couples a frozen AI weather model to physical ocean, sea-ice, land and river components,
+  running about 1,000 simulated years per day and reproducing El Niño.
+abstract: 'Earth system models underpin climate projections, but their cost limits how many scenarios,
+  ensemble members and impact pathways can be explored. Machine-learning weather models forecast as skillfully
+  as physics-based models at a fraction of the cost, yet coupled to an ocean they have produced weak El
+  Nino variability or have learned it from climate-model output, and none carries the climate through
+  rivers to the people exposed to it. Here we present Rescene-ESM, an Earth system model whose coupler,
+  YAHO, yokes a frozen 20.8-million-parameter AI weather model to physically formulated ocean, sea-ice,
+  land, river, carbon and energy components constrained by observations. Adding the couplings one at a
+  time shows what each contributes: over a climatological ocean the AI atmosphere varies from year to
+  year by a third of the observed amount over the oceans, and an interactive mixed layer, an equatorial
+  wave ocean, the residual of the observed sea surface temperature (SST) equation as stochastic forcing
+  and the land''s moisture flux raise this step by step and bring El Nino and its teleconnections, leaving
+  the mean climate almost unchanged. The full model simulates about 1,000 years per day on one graphics
+  processing unit, holds the observed climate for a thousand years without drift, reproduces the observed
+  1979-2022 global warming, carries forced change with a physically based structure around the frozen
+  network (transient climate response 1.60 K), routes runoff to 212 river gauges with a median seasonal-cycle
+  correlation of 0.79 and, driven by emissions, separates the heatwave exposure of an SSP1 and an SSP3
+  world by a factor of 4.7 in 2081-2100, three-quarters of it through the warmer climate.'
+significance: 7
+score: 63
+highlight: true
+highlight_reason: Couples a frozen AI weather model to physical ocean, land and river components, giving
+  a fast ESM with ENSO and about 1000 years per day on one GPU.
+added: '2026-11-16'
+source: weekly

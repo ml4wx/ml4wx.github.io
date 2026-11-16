@@ -1,0 +1,51 @@
+id: doi-10.5194-egusphere-2026-6840
+title: Reconstructing catchment precipitation with deep learning and a large network of streamflow gauges
+authors:
+- Min Wang
+- Haiyang Shi
+date: '2026-11-12'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.5194/egusphere-2026-6840
+  openalex: W7225858327
+links:
+  paper: https://doi.org/10.5194/egusphere-2026-6840
+  pdf: https://egusphere.copernicus.org/preprints/2026/egusphere-2026-6840/egusphere-2026-6840.pdf
+topic: observations-remote-sensing
+type: model
+method:
+- rnn
+spatial:
+- regional
+data:
+- stations
+- other
+status: research
+summary: EA-LSTM reconstructs daily precipitation for 906 US catchments from streamflow and weather, reaching
+  median KGE 0.771 with runoff included.
+abstract: Abstract. Global precipitation estimates are uncertain, particularly in sparsely gauged forested
+  areas and mountainous terrain. Improving precipitation estimates in such regions is important for studies
+  of the global water cycle. Previous studies in individual catchments have demonstrated the potential
+  of inferring precipitation from streamflow. Using the Multi-Attribute Catchment Hydrometeorological
+  (MACH) dataset, we shared the parameters of an entity-aware long short-term memory network (EA-LSTM)
+  across catchments and used local weather and streamflow records to reconstruct daily areal precipitation
+  for 906 catchments in the conterminous United States. Each reconstruction used observations through
+  seven days after the target date, with no daily precipitation input. The reference precipitation and
+  weather variables came from Daymet. With runoff included, adding relative humidity, vapour pressure
+  deficit and downward shortwave radiation to temperature improved daily Kling–Gupta efficiency (KGE)
+  in 895 catchments and raised its median from 0.626 to 0.771. Median KGE reached 0.834 and 0.845 for
+  three- and five-day totals. The median fraction of reference events with a correctly identified peak
+  date was 73.3 %. Median amount bias on reference heavy days was −32.0 %, indicating that the magnitude
+  of extreme precipitation remains more difficult to reconstruct. Grouped by the relative size of the
+  two surface-flow components, median exact peak-date success was 73.8 % in infiltration-excess catchments
+  and 67.5 % in saturation-excess catchments. The median paired gain from adding runoff was 1.9 and 4.5
+  percentage points, respectively. These results show that learning across catchments can recover multi-day
+  precipitation totals from streamflow and weather records. Future research could improve transfer across
+  catchments and the representation of extreme precipitation amounts.
+significance: 3
+cited_by: 0
+score: 12
+highlight: false
+added: '2026-11-16'
+source: weekly

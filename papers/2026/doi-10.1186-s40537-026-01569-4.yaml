@@ -1,0 +1,50 @@
+id: doi-10.1186-s40537-026-01569-4
+title: Joint near-surface wind downscaling and hub-height estimation for wind power projections
+authors:
+- Antigoni Moira
+- Stelios Karozis
+- Effrosyni Karakitsou
+- Ioannis Zarikos
+- Nikolaos Gounaris
+- Athanasios Sfetsos
+date: '2026-11-11'
+year: 2026
+venue: Journal Of Big Data
+venue_type: journal
+ids:
+  doi: 10.1186/s40537-026-01569-4
+  openalex: W7225770275
+links:
+  paper: https://doi.org/10.1186/s40537-026-01569-4
+topic: downscaling
+topics:
+- applications-impacts
+type: model
+method:
+- cnn
+timescale:
+- climate
+spatial:
+- regional
+data:
+- era5
+- other
+status: research
+summary: A ResUNet downscales ERA5 winds to 0.25° at 10 m and 100 m, cutting hub-height speed RMSE by
+  24% versus the power-law extrapolation for wind power.
+abstract: Climate projections are widely used to estimate future wind power production and assess the
+  impacts of climate change on wind energy resources. However, these models typically operate at coarse
+  spatial resolutions ( \(\sim\) 100 km) and provide wind components only at 10 m above the surface, rather
+  than at typical wind turbine hub heights (100 m). This study presents a deep learning framework to simultaneously
+  downscale near-surface wind components and estimate hub-height wind fields, avoiding the use of the
+  conventional wind power law for vertical extrapolation. A ResUNet-based architecture is trained on coarsened
+  ERA5 reanalysis data over the area of Greece, together with static features such as elevation and land
+  use, to reconstruct high-resolution (0.25 \(^{\circ }\) ) wind fields at both 10 m and 100 m. The proposed
+  method shows improved performance compared to the power-law approach, reducing RMSE (24.38%) and MAE
+  (42.78%) in hub-height wind speed estimation. By jointly learning spatial and vertical dependencies,
+  the model helps reduce biases associated with empirical extrapolation.
+significance: 3
+score: 12
+highlight: false
+added: '2026-11-16'
+source: weekly

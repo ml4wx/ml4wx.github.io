@@ -5,10 +5,13 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/applications-impacts/)
 
-841 papers (1 ⭐). Newest first.
+844 papers (1 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-11-11 | [Advancing spatial hurricane storm surge risk assessment using machine learning and simulations under changing climate scenarios](https://doi.org/10.1080/10106049.2026.2756760)<br><sub>Sameera Maha Arachchige, Biswajeet Pradhan · Geocarto International</sub> |  |  |
+| 2026-11-10 | [A hybrid BAG–CARIMA–GPM model for climate-induced shifts in the solar power potential based on PV and CPV technologies](https://doi.org/10.1016/j.nxener.2026.101195)<br><sub>Samuel Chukwujindu Nwokolo, Prince Chigozie Iwuji, Anthony Umunnakwe Obiwulu et al. · Next Energy</sub> |  |  |
+| 2026-11-09 | [Perils and opportunities of AI for public climate services](https://arxiv.org/abs/2611.12106)<br><sub>Francesca Larosa, Sandro Calmanti, Matteo De Felice et al.</sub> |  |  |
 | 2026-11-07 | [Multi-scale assessment of wavelet-guided deep learning for reference evapotranspiration forecasting to support vineyard water management](https://doi.org/10.1016/j.agwat.2026.110892)<br><sub>Rui Gao, Mohammad Safeeq, John T. Abatzoglou et al. · Agricultural Water Management</sub> |  |  |
 | 2026-11-05 | [Robust Ranking of Port Impacts from Impending Tropical Cyclones: A Two-Stage Recommendation System](https://arxiv.org/abs/2611.07296)<br><sub>Chenchen Kuai, Shixuan Tang, Chaolun Ma et al.</sub> |  |  |
 | 2026-11-04 | [Mapping microclimatic spring frost risk through high-resolution spatial modeling in STYRIAN fruit- and winegrowing regions](https://doi.org/10.1016/j.cliser.2026.100757)<br><sub>Manuel Strohmaier, Sabrina Dreisiebner-Lanz, Michael Kernitzkyi et al. · Climate Services</sub> |  |  |
@@ -853,6 +856,7 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 
 ## Also relevant
 
+- [Joint near-surface wind downscaling and hub-height estimation for wind power projections](https://doi.org/10.1186/s40537-026-01569-4) (2026)
 - [A Digital Twin Framework Integrating Multiscale Signal Decomposition and Hybrid Deep Learning for Intelligent Water Storage Control on Remote Islands](https://doi.org/10.3390/su182111291) (2026)
 - [Two-stage residual learning for calibrated uncertainty in solar irradiance forecasts](https://arxiv.org/abs/2611.07444) (2026)
 - [False Reassurance in LLM Severe-Weather Guidance: A Replayable Evaluation Against Real NWS Alerts](https://arxiv.org/abs/2611.05290) (2026)
@@ -863,7 +867,7 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 - [Day-ahead BOCNN-LSTM PV prediction based on input of NWP forecasting reconstruction by VMD and CNN-BiGRU-AM network](https://doi.org/10.1016/j.rineng.2026.113747) (2026)
 - [Vision Transformers for Estimating Irradiance Using Data Scarce Sky Images](https://arxiv.org/abs/2610.30940) (2026)
 - [Accelerating Wildfire Hazard Mapping Across Canada with an AI Surrogate Modelling Framework](https://arxiv.org/abs/2610.30170) (2026)
-- [PING: physics informed graph neural network for advection-diffusion processes with applications to solar power forecasting](https://arxiv.org/abs/2610.18280) (2026)
+- [PING: physics informed graph neural network for advection-diffusion processes with applications to solar power forecasting](https://doi.org/10.1016/j.ijforecast.2026.10.004) (2026)
 - [Unlocking wind energy potential in data-scarce regions: a deep learning framework for strategic climate action in Vietnam’s Central Highlands](https://doi.org/10.1108/ijccsm-09-2025-0332) (2026)
 - [GIS-Integrated Machine Learning for Wildfire Susceptibility Mapping Under Temperature Increase Scenarios: A Bayesian-Optimized ANN Approach](https://doi.org/10.3390/ijgi15100456) (2026)
 - [From scores to causality and confidence: operational acceptance of AI weather forecasts](https://doi.org/10.1002/wea.70151) (2026)
@@ -888,7 +892,7 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 - [AI-Driven Smart Farming and Weather Prediction System](https://doi.org/10.5281/zenodo.23079822) (2026)
 - [A Spatiotemporal XGBoost Framework for Segment-Level Lightning Nowcasting Along a High-Speed Railway Corridor](https://doi.org/10.3390/atmos17090856) (2026)
 - [Assessing spatially explicit sensitivities to scenario uncertainty through climate emulation](https://doi.org/10.22541/essoar.15008111/v1) (2026)
-- [Multi-Step Forecasting of Grape Berry Temperature based on LSTM Model with Feed-Forward Attention](https://arxiv.org/abs/2608.29008) (2026)
+- [Multi-Step Forecasting of Grape Berry Temperature based on LSTM Model with Feed-Forward Attention](https://doi.org/10.1016/j.compag.2026.112603) (2026)
 - [Deep learning models for reliable weather forecasting in crowded regions performing traditional or religious activities](https://doi.org/10.7717/peerj-cs.4043) (2026)
 - [High-resolution air temperature projection for civil infrastructure: A two-stage deep learning-driven downscaling framework](https://doi.org/10.1016/j.engappai.2026.116014) (2026)
 - [Data-Driven Evaluation of Climate Projections Using Statistical and Deep-Learning Methods for Pavement ME Design](https://doi.org/10.1061/jpeodx.pveng-2111) (2026)
@@ -920,7 +924,7 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 - [Machine Learning-Based Weather Classification over Morocco Using Multi-Station METAR Observations](https://doi.org/10.3390/earth7030104) (2026)
 - [Predictive Modeling of High-Altitude Clear Air Turbulence in the United States: A Machine Learning Approach](https://arxiv.org/abs/2607.11899) (2026)
 - [Application of LSTM neural networks with multivariate numerical analysis to aviation wind gust forecasting](https://doi.org/10.3846/aviation.2026.26809) (2026)
-- [Uncertainty-Aware Graph Neural Reconstruction of Urban Temperature Fields from Sparse Sensors under Deployment Constraints](https://arxiv.org/abs/2606.02038) (2026)
+- [Uncertainty-Aware Graph Neural Reconstruction of Urban Temperature Fields from Sparse Sensors under Deployment Constraints](https://doi.org/10.1016/j.scs.2026.108085) (2026)
 - [AtmosGen: Condition-Aware Synthetic Atmospheric Data and Image Generation for Aviation Applications](https://doi.org/10.51583/ijltemas.2026.1501300004) (2026)
 - [Winter flowering by keystone desert perennials explained using climate change attribution](https://doi.org/10.64898/2026.05.22.727294) (2026)
 - [Nonlinear impacts of extreme climate on ecosystem health along China's terrestrial Borders: Threshold effects and multi-pathway transmission mechanisms](https://doi.org/10.1016/j.ecolind.2026.114987) (2026)
@@ -948,7 +952,7 @@ ML weather or climate models applied to a sector: renewable energy, agriculture,
 - [Optimizing Multi-Agent Weather Captioning via Text Gradient Descent: A Training-Free Approach with Consensus-Aware Gradient Fusion](https://arxiv.org/abs/2603.21673) (2026)
 - [Added Value for Urban Heat Island Quantification from Machine Learning Downscaling of Air Temperatures](https://doi.org/10.3390/urbansci10030171) (2026)
 - [Adaptive LSR fusion of multi-scale 3-branch CNN-BiLSTM, LSTM and CNN-BiLSTM models for robust multi-seasonal and multi-horizon weather forecasting in renewable energy management](https://doi.org/10.1016/j.uncres.2026.100386) (2026)
-- [Machine Learning-Based Prediction and Analysis of Atmospheric Refractivity (N -Unit) Profiles over Ikeja, Nigeria: A Comprehensive Study with Implications for Radio Wave Propagation](https://doi.org/10.21203/rs.3.rs-9141822/v1) (2026)
+- [Machine Learning-Based Prediction and Analysis of Atmospheric Refractivity (N -Unit) Profiles over Ikeja, Nigeria: A Comprehensive Study with Implications for Radio Wave Propagation](https://doi.org/10.64980/ujees.v8i2.033) (2026)
 - [End-to-end data-driven prediction of urban airflow and pollutant dispersion](https://arxiv.org/abs/2603.17606) (2026)
 - [Improving renewable energy forecasting with FuXi-Energy](https://doi.org/10.1016/j.apenergy.2026.127657) (2026)
 - [Heatwave Effects of Emerging Industry Clustering in Chinese Urban Agglomerations](https://doi.org/10.3390/su18062697) (2026)

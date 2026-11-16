@@ -5,10 +5,12 @@ ML for climate science questions: causal discovery, teleconnections, pattern det
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/climate-analysis-attribution/)
 
-572 papers (4 ⭐). Newest first.
+574 papers (4 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-11-10 | [Towards ML-Based Weather-Dependent Diagnostic Index for Urban Heat Island Intensity in the Arctic Cities](https://doi.org/10.3390/cli14110245)<br><sub>Kamil Nazmutdinov, Mikhail I. Varentsov, Alexander A. Baklanov · Climate</sub> |  |  |
+| 2026-11-09 | [Exploration of the northern stratospheric polar vortex extremes via archetype analysis and tropospheric imprint](https://doi.org/10.21203/rs.3.rs-11367588/v1)<br><sub>Dino Jeričević, Abdel Hannachi, Didier Paolo Monselesan et al. · Research Square</sub> |  |  |
 | 2026-11-06 | [Projected changes in precipitation and temperature over the KKSD river basin using a machine-learning-based selective CMIP6 multimodel ensemble](https://doi.org/10.2166/wcc.2026.649)<br><sub>Gaurav Patel, Subhasish Das, D. Nagesh Kumar · Journal of Water and Climate Change</sub> |  |  |
 | 2026-11-06 | [Three-way circulation–soil moisture–temperature feedbacks amplify the most extreme mid-latitudinal heat waves](https://doi.org/10.1126/sciadv.aeh9111)<br><sub>Yinglin Tian, Jiangong Liu, Y. Huang et al. · Science Advances</sub> | Columbia University (LEAP, Lamont-Doherty), Potsdam Institute for Climate Impact Research (PIK) |  |
 | 2026-11-06 | [Dynamical Drivers of Interannual Variability in OMI Stratospheric NO 2 Revealed by Machine Learning](https://doi.org/10.1029/2026jd047752)<br><sub>Junhua Liu, Luke D. Oman, Sergey V. Marchenko et al. · Journal of Geophysical Research Atmospheres</sub> | NASA |  |
@@ -325,7 +327,7 @@ ML for climate science questions: causal discovery, teleconnections, pattern det
 | 2024-07-01 | [A Machine Learning Framework to Evaluate Vegetation Modeling in Earth System Models](https://doi.org/10.1029/2023ms004097)<br><sub>Ranjini Swaminathan, Tristan L. Quaife, Richard Philip Allan · Journal of Advances in Modeling Earth Systems</sub> | University of Reading |  |
 | 2024-06-30 | [Augmenting Efficacy of Global Climate Model Forecasts: Machine Learning Appraisal of Remote Sensing Data](https://doi.org/10.14445/22315381/ijett-v72i6p139)<br><sub>Soumyajit Koley · International Journal of Engineering Trends and Technology</sub> |  |  |
 | 2024-06-28 | [Development and research of methods for classifying territories according to precipitation intensity](https://doi.org/10.61527/1684-7016-2024-2-52-56)<br><sub>Dmitry Lebedev, Anton Romanov · Вестник Ульяновского государственного технического университета</sub> |  |  |
-| 2024-06-26 | [Analyzing the Relationship Between Cosmic Rays and Total Cloud Cover with LSTM Networks](https://doi.org/10.5281/zenodo.12174801)<br><sub>Ahmet POLATOĞLU · DergiPark (Istanbul University)</sub> |  |  |
+| 2024-06-26 | [Analyzing the Relationship Between Cosmic Rays and Total Cloud Cover with LSTM Networks](https://doi.org/10.5281/zenodo.12174801)<br><sub>Ahmet POLATOĞLU · Journal of Anatolian Physics and Astronomy</sub> |  |  |
 | 2024-06-18 | [Identifying Climate Patterns Using Clustering Autoencoder Techniques](https://doi.org/10.1175/aies-d-23-0035.1)<br><sub>Takuya Kurihana, Ilijana Mastilovic, Lijing Wang et al. · Artificial Intelligence for the Earth Systems</sub> | Lawrence Berkeley National Laboratory / NERSC, Massachusetts Institute of Technology (MIT), NASA, University of Chicago |  |
 | 2024-06-12 | [On the archetypal `flavours', indices and teleconnections of ENSO revealed by global sea surface temperatures](https://arxiv.org/abs/2406.08694)<br><sub>Didier P. Monselesan, James S. Risbey, Benoit Legresy et al.</sub> |  |  |
 | 2024-06-06 | [Global expansion of tropical cyclone precipitation footprint](https://doi.org/10.1038/s41467-024-49115-1)<br><sub>Lianjie Qin, Laiyin Zhu, Baoyin Liu et al. · Nature Communications</sub> | Tsinghua University (NowcastNet) |  |
@@ -584,6 +586,7 @@ ML for climate science questions: causal discovery, teleconnections, pattern det
 
 ## Also relevant
 
+- [A hybrid BAG–CARIMA–GPM model for climate-induced shifts in the solar power potential based on PV and CPV technologies](https://doi.org/10.1016/j.nxener.2026.101195) (2026)
 - [Loss of snow persistence during late season drives snow-season shortening in Northeast China under global warming](https://doi.org/10.1038/s43247-026-04156-w) (2026)
 - [Detecting Weather Fronts from Satellite Observations: What Does Reanalysis Add?](https://arxiv.org/abs/2611.08148) (2026)
 - [Divergent responses of cropland GPP and SIF to compound drought and heatwave across China's climatic zones](https://doi.org/10.1016/j.ecolind.2026.115711) (2026)
@@ -653,7 +656,7 @@ ML for climate science questions: causal discovery, teleconnections, pattern det
 - [Artificial intelligence for climate change mitigation and adaptation: A domain-structured review of methods, applications, and research gaps for seven high-impact domains](https://doi.org/10.1016/j.psep.2026.109102) (2026)
 - [Modeling future climate change effects on teff (Eragrostis tef) yield under CMIP6 scenarios in Horro Guduru Wallaga zone, northwestern Ethiopia](https://doi.org/10.1007/s43621-026-03554-6) (2026)
 - [Leveraging deep neural networks for long-term temperature forecasting in climate-vulnerable Bangladesh](https://doi.org/10.1016/j.nxener.2026.100678) (2026)
-- [Deep learning identification of SST teleconnections driving early-winter North Atlantic climate](https://doi.org/10.31223/x5519q) (2026)
+- [Deep learning identification of SST teleconnections driving early-winter North Atlantic climate](https://doi.org/10.1038/s41598-026-78245-3) (2026)
 - [Precipitation diffusion downscaling and application to out-of-distribution simulations with and without stratospheric aerosol injection](https://doi.org/10.1088/3049-4753/aeba91) (2026)
 - [Compounding hazards increase flood economic losses across Europe](https://doi.org/10.1038/s41467-026-73248-0) (2026)
 - [Longwang: Zero-Shot Global Spatiotemporal Precipitation Downscaling with a Latent Generative Prior](https://arxiv.org/abs/2605.17603) (2026)

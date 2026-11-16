@@ -5,10 +5,11 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/benchmarks-data-eval/)
 
-200 papers (14 ⭐). Newest first.
+201 papers (14 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-11-12 | [A Validation Framework for Machine Learning Emulation of Integrated Assessment Models](https://doi.org/10.5281/zenodo.24157785)<br><sub>Georgia Ray, Rossella Arcucci, Hamish Beath et al. · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
 | 2026-11-02 | [Tropical Cyclone-Following Dataset for Limited-Area Machine Learning Applications](https://arxiv.org/abs/2611.03925)<br><sub>Minh-Khanh Luong, Chanh Kieu</sub> | Google DeepMind |  |
 | 2026-10-31 | [AI for Climate Change Prediction and Environmental Monitoring: A Systematic Review 2018-2026](https://doi.org/10.5281/zenodo.23971438)<br><sub>Nidhi Raghav, Meenakshi Singh · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
 | 2026-10-22 | ⭐ [NNJA—a curated archive of Earth system observations from 1970s to present for reanalysis and data-driven model development](https://doi.org/10.1175/bams-d-25-0157.1)<br><sub>Frolov Sergey, Jessica Knezha, Jeff Whitaker et al. · Bulletin of the American Meteorological Society</sub> | NASA, NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), NSF NCAR / UCAR, Brightband |  |
@@ -78,7 +79,7 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 | 2026-01-01 | [Artificial Intelligence Techniques for Climate Change Prediction and Mitigation: A Systematic Review](https://doi.org/10.47001/irjiet/2026.103014)<br><sub>Prestone Jeremaih Simiyu, Gitonga Stephen Ngure · International Research Journal of Innovations in Engineering and Technology</sub> |  |  |
 | 2026-01-01 | [Machine Learning and Deep Learning in Weather Forecasting: A Systematic Review of Models, Data Sources, Validation Practices, and Operational Challenges](https://doi.org/10.17605/osf.io/9sbgz)<br><sub>Fikadu Wayesa Gemeda, Bekele,, Gizaw Tadele, Jingming Xia</sub> |  |  |
 | 2026-01-01 | [A Regional Benchmark for Deep Learning-Based Hourly Precipitation Nowcasting in Latin America](https://doi.org/10.1109/access.2026.3670767)<br><sub>Adriano Pereira Almeida, Henrique M. J. Barbosa, Sâmia R. Garcia et al. · IEEE Access</sub> | China Meteorological Administration (CMA), Colorado State University (incl. CIRA), NSF NCAR / UCAR |  |
-| 2025-12-26 | [The Global Kilometric Tropical Cyclone Wind Database (CyclObs) Enabling High-Resolution Data-Driven Studies](https://doi.org/10.22541/essoar.176676860.01253431/v1)<br><sub>Arthur Avenas, Taiga Tsukada, Théo Cévaër et al.</sub> | Colorado State University (incl. CIRA), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
+| 2025-12-26 | [The Global Kilometric Tropical Cyclone Wind Database (CyclObs) Enabling High-Resolution Data-Driven Studies](https://doi.org/10.1175/bams-d-25-0144.1)<br><sub>Arthur Avenas, Taiga Tsukada, Théo Cévaër et al. · Bulletin of the American Meteorological Society</sub> | Colorado State University (incl. CIRA), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
 | 2025-12-16 | [Forecast Skill Is Not Decision Skill: Evidence from Weather-Dependent Decision Tasks](https://doi.org/10.1002/met.70260)<br><sub>Kornelius Raeth, Nicole Ludwig · Meteorological Applications</sub> |  |  |
 | 2025-12-08 | [A curated UK rain radar data set for training and benchmarking nowcasting models](https://arxiv.org/abs/2512.17924)<br><sub>Viv Atureta, Rifki Priansyah Jasin, Stefan Siegert</sub> |  |  |
 | 2025-12-01 | [A Workflow for Benchmarking Added Value by New Statistical Downscaling Methods](https://doi.org/10.1142/s2345737625400020)<br><sub>Robert Leonard Wilby, Biljana Basarin, Daniel Boateng et al. · Journal of Extreme Events</sub> |  |  |
@@ -212,6 +213,7 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 
 ## Also relevant
 
+- [Trade-offs in deep learning approaches for precipitation downscaling across weather regimes](https://doi.org/10.1038/s41598-026-80185-x) (2026)
 - [Can Large Language Models Review the Scientific Literature? A Test Against a 102-Article Benchmark](https://arxiv.org/abs/2611.05459) (2026)
 - [RainCheck: Harnessing Historical Weather Data with Machine Learning for Rainfall Forecasting in Bangladesh](https://arxiv.org/abs/2610.38211) (2026)
 - [Evaluation of vegetation above-ground biomass carbon from CMIP6 ESMs using global satellite-based estimates](https://doi.org/10.1088/2515-7620/aeb7c9) (2026)
@@ -263,7 +265,7 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 - [GraphCast Skill and Systematic Biases in Indian Summer Monsoon Forecasts: Evaluation Against ERA5 and IMERG](https://arxiv.org/abs/2607.11905) (2026)
 - [Comparison of Deep Learning, Machine Learning, and Statistical Models for Precipitation and Temperature Forecasting Performance: A Case Study of Hakkari Province](https://doi.org/10.62520/fujece.1915506) (2026)
 - [Machine Learning-Based Fusion of Multi-Source Daily Precipitation Products for the Tibetan Plateau Rainy Season](https://doi.org/10.5194/essd-2026-278) (2026)
-- [Optimal scenario design for climate emulation](https://arxiv.org/abs/2606.19302) (2026)
+- [Optimal scenario design for climate emulation](https://doi.org/10.1073/pnas.2620731123) (2026)
 - [Unprecedented ongoing shrinkage of European winters revealed by a six-century snow cover reconstruction](https://doi.org/10.1038/s43247-026-03719-1) (2026)
 - [Application of machine learning to improve reanalysis soil temperatures over the extratropical northern hemisphere](https://doi.org/10.1007/s00704-026-06338-0) (2026)
 - [Can Deep Neural Networks Improve Compression of Very Large Scientific Data?](https://arxiv.org/abs/2606.14353) (2026)

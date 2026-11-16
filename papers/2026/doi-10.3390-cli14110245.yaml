@@ -1,0 +1,48 @@
+id: doi-10.3390-cli14110245
+title: Towards ML-Based Weather-Dependent Diagnostic Index for Urban Heat Island Intensity in the Arctic
+  Cities
+authors:
+- Kamil Nazmutdinov
+- Mikhail I. Varentsov
+- Alexander A. Baklanov
+date: '2026-11-10'
+year: 2026
+venue: Climate
+venue_type: journal
+ids:
+  doi: 10.3390/cli14110245
+  openalex: W7225698492
+links:
+  paper: https://doi.org/10.3390/cli14110245
+topic: climate-analysis-attribution
+type: model
+method:
+- classical-ml
+spatial:
+- local
+data:
+- era5
+- stations
+status: research
+summary: CatBoost captures up to 64% of Arctic urban heat island variance from weather, and a universal
+  index generalizes to unseen cities with average R² of 0.49.
+abstract: The urban heat island (UHI) effect in Arctic cities remains poorly understood, and its dependence
+  on weather conditions has never been systematically analyzed for this region. This study examines the
+  extent to which large-scale meteorology can explain UHI variability and whether a universal, weather-driven
+  index representing such dependencies can be developed. Using data from the UHIARC observational network
+  and ERA5 reanalysis for seven Russian Arctic cities, we evaluated several classical semi-empirical parameterizations
+  (Wind Factor, Weather Factor, Cloud Factor, Diurnal Factor) alongside a suite of machine learning models,
+  namely linear regression, MLP, LSTM, and CatBoost (version 1.2.10). The empirical baselines showed near-zero
+  predictive skill, whereas CatBoost with explicit temporal features representing delayed connections
+  captured up to 64% of the local UHI variance. A universal index was then constructed by training CatBoost
+  on standardized UHI data from four cities and deriving local statistics (mean and standard deviation)
+  from a 30-year ERA5 climatology. This index had an average R2 = 0.49 on the training cities, generalized
+  successfully to unseen cities, and substantially outperformed the empirical baselines. Our results demonstrate
+  the feasibility of a universal UHI index that generalizes across diverse Arctic settings, enabling climatological
+  assessments of urban heat potential and supporting territorial planning from regional to pan-Arctic
+  scales, including future climate projections.
+significance: 2
+score: 8
+highlight: false
+added: '2026-11-16'
+source: weekly

@@ -5,10 +5,12 @@ ML for data assimilation and state estimation, learned observation operators, an
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/data-assimilation/)
 
-255 papers (20 ⭐). Newest first.
+257 papers (21 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-11-09 | ⭐ [Ensemble Covariance Propagation with Machine Learning Weather Prediction Models in a Realistic Data Assimilation System](https://arxiv.org/abs/2611.11918)<br><sub>Simon Toedtli, David Ahijevych, Wei Wang et al.</sub> | NSF NCAR / UCAR |  |
+| 2026-11-08 | [Analysis increments for model bias diagnosis and correction: Theoretical foundations](https://arxiv.org/abs/2611.11162)<br><sub>Eviatar Bach</sub> | University of Reading |  |
 | 2026-11-06 | [Machine Learning-Based Bias Correction Scheme for FY-4A AGRI Radiance Assimilation and Its Impact on Typhoon Forecasting](https://doi.org/10.3390/rs18213810)<br><sub>Jiyu Gao, Jiping Guan, Mingyang Zhang et al. · Remote Sensing</sub> | China Meteorological Administration (CMA) |  |
 | 2026-11-04 | [A Survey of Nonlinear Filtering Methods for Data Assimilation and Recent Advances in Generative AI-Enabled Score Filters](https://arxiv.org/abs/2611.07160)<br><sub>Cath Pham, Kadesha Reynolds</sub> |  |  |
 | 2026-11-03 | [Distinguishing Initial-Condition and Model Error Using Machine-Learning Weather Models](https://arxiv.org/abs/2611.05592)<br><sub>P. Trent Vonich, Gregory J. Hakim</sub> | ECMWF, University of Washington |  |
@@ -35,7 +37,7 @@ ML for data assimilation and state estimation, learned observation operators, an
 | 2026-07-08 | ⭐ [Global reanalysis from observations alone with machine learning](https://arxiv.org/abs/2607.07879)<br><sub>Peter Lean, Ewan Pinnington, Patrick Laloyaux et al.</sub> | ECMWF |  |
 | 2026-07-01 | [Machine Learning for Adaptive Sampling and Uncertainty Estimation of Satellite Observations](https://doi.org/10.1175/aies-d-25-0087.1)<br><sub>Hui W. Christophersen, D. Sidoti, W. Campbell · Artificial Intelligence for the Earth Systems</sub> |  |  |
 | 2026-07-01 | [Integration of Deep Neural Network‐Based Boundary Layer Subgrid Frictional Effects Into the Momentum Equation Constraint of WRFDA EnVar to Improve Tropical Cyclone Forecasts](https://doi.org/10.1029/2025ms005605)<br><sub>Xin Li, Jian‐Feng Gu, Yi Li et al. · Journal of Advances in Modeling Earth Systems</sub> | China Meteorological Administration (CMA) |  |
-| 2026-06-25 | [Sparse Sensor Placement for Reducing Forecast Errors in Ensemble Kalman Filtering](https://arxiv.org/abs/2606.27267)<br><sub>Takumi Saito, Shunji Kotsuki</sub> | Japan Meteorological Agency (JMA) |  |
+| 2026-06-25 | [Sparse Sensor Placement for Reducing Forecast Errors in Ensemble Kalman Filtering](https://doi.org/10.1002/qj.70357)<br><sub>Takumi Saito, Shunji Kotsuki · Quarterly Journal of the Royal Meteorological Society</sub> | Japan Meteorological Agency (JMA) |  |
 | 2026-06-17 | ⭐ [AIFS-DOP: End-to-End Medium-Range Weather Prediction from Observations Alone with Machine Learning](https://arxiv.org/abs/2606.19093)<br><sub>Ewan Pinnington, Peter Lean, Mihai Alexe et al.</sub> | ECMWF |  |
 | 2026-06-01 | [Strongly Coupled Data Assimilation for Paleoclimate Reconstruction Using Deep Learning‐Based Models](https://doi.org/10.1029/2025ms005686)<br><sub>Lili Lei, Haohao Sun, Zhe-Min Tan et al. · Journal of Advances in Modeling Earth Systems</sub> |  |  |
 | 2026-05-30 | [Optimal Initial Error and Targeted Observation Sensitive Area for Predicting the Northeast China Cold Vortex Revealed by a Deep Learning Model](https://doi.org/10.3390/atmos17060567)<br><sub>Chen Zhang, Junkai Qian, Q L Wang · Atmosphere</sub> |  |  |
@@ -99,7 +101,7 @@ ML for data assimilation and state estimation, learned observation operators, an
 | 2025-09-01 | [A nudging-based data assimilation method coupled with bidirectional gated neural networks for error correction](https://doi.org/10.1016/j.envsoft.2025.106670)<br><sub>Qing-He Yu, Yu-Long Bai, Manhong Fan et al. · Environ. Model. Softw.</sub> |  |  |
 | 2025-08-25 | [Huracan: A skillful end-to-end data-driven system for ensemble data assimilation and weather prediction](https://arxiv.org/abs/2508.18486)<br><sub>Zekun Ni, Jonathan Weyn, Hang Zhang et al.</sub> |  |  |
 | 2025-08-11 | [Discovering Spatial Correlations of Earth Observations for weather forecasting by using Graph Structure Learning](https://arxiv.org/abs/2508.07659)<br><sub>Hyeon-Ju Jeon, Jeon-Ho Kang, In-Hyuk Kwon et al.</sub> |  |  |
-| 2025-08-09 | [Assimilation of S‐Band Radar Echo Extrapolation Data—Based on the GAN‐rcLSTM Model](https://doi.org/10.1029/2024jd043132)<br><sub>Yujie Cao, Liangchao Geng, Jinzhong Min et al. · Journal of Geophysical Research Atmospheres</sub> |  |  |
+| 2025-08-09 | [Assimilation of S‐Band Radar Echo Extrapolation Data—Based on the GAN‐rcLSTM Model](https://doi.org/10.1029/2024jd043132)<br><sub>Yujie Cao, Liangchao Geng, Jinzhong Min et al. · Journal of Geophysical Research Atmospheres</sub> | Nanjing University of Information Science & Technology (NUIST) |  |
 | 2025-08-07 | [Neural Operator-Based Nonlinear Nudging for Chaotic Dynamical Systems](https://arxiv.org/abs/2508.05778)<br><sub>Jaemin Oh, Jinsil Lee, Youngjoon Hong</sub> |  |  |
 | 2025-08-03 | [Investigation of Impact of Satellite Remote Sensing Data on the AI Weather Prediction Coupling with Physics-Based Data Assimilation](https://doi.org/10.1109/igarss55030.2025.11242424)<br><sub>Peiming Dong, Sai Zhang, Wan-Lin Kan et al. · IGARSS 2025 - 2025 IEEE International Geoscience and Remote Sensing Symposium</sub> | China Meteorological Administration (CMA) |  |
 | 2025-08-01 | [PnP-DA: Towards Principled Plug-and-Play Integration of Variational Data Assimilation and Generative Models](https://arxiv.org/abs/2508.00325)<br><sub>Yongquan Qu, Matthieu Blanke, Sara Shamekh et al.</sub> | Columbia University (LEAP, Lamont-Doherty), New York University (M2LInES) |  |

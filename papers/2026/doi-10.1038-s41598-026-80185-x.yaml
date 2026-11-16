@@ -1,0 +1,57 @@
+id: doi-10.1038-s41598-026-80185-x
+title: Trade-offs in deep learning approaches for precipitation downscaling across weather regimes
+authors:
+- Alessandro Damiani
+- Noriko N. Ishizaki
+- Raúl R. Cordero
+- Sarah C. Feron
+date: '2026-11-11'
+year: 2026
+venue: Scientific Reports
+venue_type: journal
+ids:
+  doi: 10.1038/s41598-026-80185-x
+  openalex: W7225815794
+links:
+  paper: https://doi.org/10.1038/s41598-026-80185-x
+  pdf: https://www.nature.com/articles/s41598-026-80185-x_reference.pdf
+topic: downscaling
+topics:
+- benchmarks-data-eval
+- extremes-hazards
+type: evaluation
+method:
+- cnn
+- diffusion
+timescale:
+- short
+spatial:
+- regional
+data:
+- other
+status: research
+summary: Benchmarks CNN, U-Net and diffusion precipitation downscaling over Japan, finding trade-offs
+  by metric and an asymmetric-loss U-Net most robust during typhoons.
+abstract: 'Abstract Accurate high-resolution precipitation information is critical for assessing hydrological
+  extremes and climate change impacts in complex topographic regions. While machine learning-based downscaling
+  provides a computationally efficient alternative to dynamical models, its performance can depend on
+  regional climate characteristics and terrain complexity. In this study, we systematically benchmarked
+  representative deep learning approaches for daily statistical downscaling over Japan, including quantile-based
+  and stochastic CNN formulations, two- (2D) and three-dimensional (3D) U-Net variants, and a diffusion-based
+  generative model, alongside conventional baselines. Model performance was evaluated using comprehensive
+  statistical and spatial metrics under both climatological and typhoon-affected conditions, enabling
+  us to assess model robustness under extreme precipitation regimes. We further developed a proof-of-concept
+  forecasting configuration for 3D U-Net prediction of next-day precipitation from short predictor sequences,
+  together with an extreme super-resolution experiment to assess scalability to very high target resolutions.
+  The results revealed clear trade-offs: quantile mapping best reproduced distributional properties, deterministic
+  CNNs performed particularly well for standard deterministic metrics, the stochastic CNN achieved the
+  highest average neighborhood-scale skill, and the diffusion model best reproduced the spatial power
+  spectrum, while U-Nets tended to smooth small scales. Nevertheless, the asymmetric-loss U-Net provided
+  the most robust performance during typhoon conditions. These findings provide practical guidance for
+  model selection in complex climatic regions and illustrate how inductive biases interact with regional
+  climate dynamics.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-11-16'
+source: weekly

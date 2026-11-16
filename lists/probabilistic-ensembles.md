@@ -41,14 +41,14 @@ ML models that produce ensembles or full forecast distributions: generative mode
 | 2026-04-06 | [(Sparse) Attention to the Details: Preserving Spectral Fidelity in ML-based Weather Forecasting Models](https://arxiv.org/abs/2604.16429)<br><sub>Maksim Zhdanov, Ana Lucic, Max Welling et al.</sub> |  | [code](https://github.com/maxxxzdn/mosaic) |
 | 2026-03-27 | [Physics‐informed ensemble forecasts in data‐driven models](https://doi.org/10.1002/qj.70183)<br><sub>Bo Qin, G. Dai, M. Mu et al. · Quarterly Journal of the Royal Meteorological Society</sub> | China Meteorological Administration (CMA), Fudan University (FuXi), Institute of Atmospheric Physics, Chinese Academy of Sciences |  |
 | 2026-03-25 | [Marchuk: Efficient Global Weather Forecasting from Mid-Range to Sub-Seasonal Scales via Flow Matching](https://arxiv.org/abs/2603.24428)<br><sub>Arsen Kuzhamuratov, Mikhail Zhirnov, Andrey Kuznetsov et al.</sub> |  |  |
-| 2026-03-05 | ⭐ [Hybrid ensemble forecasting combining physics-based and machine-learning predictions through spectral nudging](https://arxiv.org/abs/2603.05570)<br><sub>Inna Polichtchouk, Simon Lang, Sarah-Jane Lock et al.</sub> | ECMWF |  |
+| 2026-03-05 | ⭐ [Hybrid ensemble forecasting combining physics-based and machine-learning predictions through spectral nudging](https://doi.org/10.1002/qj.70352)<br><sub>Inna Polichtchouk, Simon Lang, Sarah-Jane Lock et al. · Quarterly Journal of the Royal Meteorological Society</sub> | ECMWF |  |
 | 2026-02-26 | [A Synergistic Approach: Dynamics-AI Ensemble in Tropical Cyclone Forecasting](https://arxiv.org/abs/2602.22533)<br><sub>Yonghui Li, Wansuo Duan, Hao Li et al.</sub> | China Meteorological Administration (CMA), Fudan University (FuXi), Institute of Atmospheric Physics, Chinese Academy of Sciences |  |
 | 2026-02-12 | [PuYun-LDM: A Latent Diffusion Model for High-Resolution Ensemble Weather Forecasts](https://arxiv.org/abs/2602.11807)<br><sub>Lianjun Wu, Shengchen Zhu, Yuxuan Liu et al.</sub> |  |  |
 | 2026-02-04 | [Large-ensemble generation based on mesoscale ensemble prediction system using machine learning](https://doi.org/10.1016/j.egyr.2025.109002)<br><sub>Shuntaro Nakayama, Hideaki Ohtake, Takahiro Takamatsu et al. · Energy Reports</sub> |  |  |
 | 2026-01-28 | [Predict-Project-Renoise: Sampling Diffusion Models under Hard Constraints](https://arxiv.org/abs/2601.21033)<br><sub>Omer Rochman-Sharabi, Gilles Louppe</sub> |  |  |
 | 2026-01-26 | [Demystifying Data-Driven Probabilistic Medium-Range Weather Forecasting](https://arxiv.org/abs/2601.18111)<br><sub>Jean Kossaifi, Nikola Kovachki, Morteza Mardani et al.</sub> |  |  |
 | 2026-01-07 | [Probabilistic Transformers for Joint Modeling of Global Weather Dynamics and Decision-Centric Variables](https://arxiv.org/abs/2601.03753)<br><sub>Paulius Rauba, Viktor Cikojevic, Fran Bartolic et al.</sub> |  |  |
-| 2025-12-30 | [Technical note: Expanding ensemble forecasts with generative AI: application to volcanic clouds](https://doi.org/10.5194/egusphere-2025-6097)<br><sub>Leonardo A. Mingari, Arnau Folch, Heribert Pascual et al.</sub> |  |  |
+| 2025-12-30 | [Technical note: Expanding ensemble forecasts with generative AI: application to volcanic clouds](https://doi.org/10.5194/acp-26-15953-2026)<br><sub>Leonardo A. Mingari, Arnau Folch, Heribert Pascual et al. · Atmospheric chemistry and physics</sub> |  |  |
 | 2025-12-27 | [AI-Enabled conditional nonlinear optimal perturbation enhances ensemble prediction of extreme El Niño events](https://doi.org/10.1038/s41612-025-01303-6)<br><sub>Lu Zhou, Rong‐Hua Zhang, Lingjiang Tao · npj Climate and Atmospheric Science</sub> | Nanjing University of Information Science & Technology (NUIST) |  |
 | 2025-12-21 | [Controllable Probabilistic Forecasting with Stochastic Decomposition Layers](https://arxiv.org/abs/2512.18815)<br><sub>John S. Schreck, William E. Chapman, Charlie Becker et al.</sub> | NSF NCAR / UCAR |  |
 | 2025-12-01 | [Ensemble Experiments in an AI-NWP Coupled Framework: A Typhoon Case](https://doi.org/10.1007/s13351-025-5038-9)<br><sub>Yangjinxi Ge, Donghai Wang, Zhengyi Yang et al. · Journal of Meteorological Research</sub> |  |  |
@@ -118,6 +118,7 @@ ML models that produce ensembles or full forecast distributions: generative mode
 
 ## Also relevant
 
+- [Guiding future global temperature distributions with simulations and observations](https://arxiv.org/abs/2611.10882) (2026)
 - [Leveraging transport theory to advance machine learning for weather forecasting](https://doi.org/10.14288/1.0457075) (2026)
 - [Six-hourly Probabilistic Precipitation Forecasts Created From Hourly Probabilities](https://arxiv.org/abs/2611.03326) (2026)
 - [Value of Adding AI Weather Model Ensembles to a Multi-model Probabilistic Blend](https://arxiv.org/abs/2610.42130) (2026)

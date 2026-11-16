@@ -1,0 +1,42 @@
+id: arxiv-2611.11162
+title: 'Analysis increments for model bias diagnosis and correction: Theoretical foundations'
+authors:
+- Eviatar Bach
+date: '2026-11-08'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2611.11162'
+  openalex: W7225743027
+links:
+  paper: https://arxiv.org/abs/2611.11162
+  pdf: https://arxiv.org/pdf/2611.11162
+orgs:
+- university-of-reading
+topic: data-assimilation
+type: model
+spatial:
+- global
+data:
+- other
+status: research
+summary: Theory shows what analysis-increment-based bias correction measures and proves iterating it removes
+  all observable bias in a Kalman filter, with Lorenz '96 tests including a learned correction.
+abstract: 'A common method for diagnosing and correcting model bias in weather and climate prediction
+  is based on analysis increments: the difference between the analysis and the forecast at each data assimilation
+  cycle. Their time average is used to estimate and correct the bias, and machine learning is increasingly
+  used to map the forecast state to the increments, giving a state-dependent correction. Despite its widespread
+  use, the method lacks theoretical foundations. We first analyse a Kalman filter whose forecast model
+  has a constant bias. We show what the averaged increment measures, and prove that iterating the correction
+  removes all of the bias seen through the observations; for linear dynamics, no method can identify the
+  rest. We then extend the analysis to state-dependent biases. For linear dynamics, each increment records
+  the model error over the filter''s memory, as seen through the observations. We use this to determine
+  what the increments measure when averaged over a long period, averaged over periods with similar slowly
+  varying conditions, and used without averaging, as in machine-learned corrections. Numerical experiments
+  confirm the theory for a linear model and suggest that its main conclusions carry over to the nonlinear
+  Lorenz ''96 model, including for a correction learned by a neural network.'
+significance: 4
+score: 26
+highlight: false
+added: '2026-11-16'
+source: weekly
