@@ -27,7 +27,7 @@ Large pretrained models for the atmosphere or Earth system that are fine-tuned f
 | 2026-05-09 | [Earth Science Foundation Models: From Perception to Reasoning and Discovery](https://arxiv.org/abs/2605.12542)<br><sub>Xiangyu Zhao, Bo Liu, Yuehan Zhang et al.</sub> | Shanghai Artificial Intelligence Laboratory |  |
 | 2026-04-20 | ⭐ [Earth System Foundation Model (ESFM): A unified framework for heterogeneous data integration and forecasting](https://arxiv.org/abs/2605.00850)<br><sub>Firat Ozdemir, Yun Cheng, Salman Mohebi et al.</sub> | ETH Zurich, MeteoSwiss, Swiss Data Science Center (SDSC), University of Cambridge (Aardvark) | [code](https://github.com/swiss-ai/ESFM) |
 | 2026-03-25 | [Contrastive Learning Boosts Deterministic and Generative Models for Weather Data](https://arxiv.org/abs/2603.24744)<br><sub>Nathan Bailey</sub> |  |  |
-| 2026-03-04 | [ICL Characterization of Climate Foundation Models: When Can Transformers Learn Weather and Climate?](https://doi.org/10.65737/airmcs2026405)<br><sub>Mosab Hawarey</sub> |  |  |
+| 2026-03-04 | [ICL Characterization of Climate Foundation Models: When Can Transformers Learn Weather and Climate?](https://doi.org/10.65737/airmcs2026405)<br><sub>Mosab Hawarey · AIR Journal of Mathematics & Computational Sciences</sub> |  |  |
 | 2026-02-16 | [PDE foundation models are skillful AI weather emulators for the Martian atmosphere](https://arxiv.org/abs/2602.15004)<br><sub>Johannes Schmude, Sujit Roy, Liping Wang et al.</sub> | Colorado State University (incl. CIRA), IBM Research, NASA |  |
 | 2026-02-03 | [WIND: Weather Inverse Diffusion for Zero-Shot Atmospheric Modeling](https://arxiv.org/abs/2602.03924)<br><sub>Michael Aich, Andreas Fürst, Florian Sestak et al.</sub> |  |  |
 | 2026-01-04 | ⭐ [A unified multimodal understanding and generation model for cross-disciplinary scientific research](https://arxiv.org/abs/2601.01363)<br><sub>Xiaomeng Yang, Zhiyu Tan, Xiaohui Zhong et al.</sub> | Fudan University (FuXi) |  |
@@ -63,6 +63,7 @@ Large pretrained models for the atmosphere or Earth system that are fine-tuned f
 
 ## Also relevant
 
+- [Enabling joint chemical and meteorological data assimilation with an atmospheric foundation model](https://arxiv.org/abs/2611.24020) (2026)
 - [Machine learning weather prediction at the operational threshold: architectures, data, evaluation, and the observation-interface frontier](https://doi.org/10.5281/zenodo.23788895) (2026)
 - [Generative modelling for multivariate spatio-temporal downscaling of monthly climate fields](https://arxiv.org/abs/2610.19885) (2026)
 - [WxFM-XL: Adapting Univariate Foundation Models to Multi-Station Weather Forecasting](https://arxiv.org/abs/2610.10057) (2026)

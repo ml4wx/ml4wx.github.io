@@ -466,7 +466,7 @@ ML inside physical models: subgrid parameterizations (convection, clouds, radiat
 - [ACE2-NEMO: Coupling an ML atmospheric emulator to a full-depth dynamical ocean model](https://arxiv.org/abs/2603.28704) (2026)
 - [TianJi:An autonomous AI meteorologist for discovering physical mechanisms in atmospheric science](https://arxiv.org/abs/2603.27738) (2026)
 - [Toward Artificial Intelligence Enabled Earth System Coupling](https://arxiv.org/abs/2604.03289) (2026)
-- [Do Climate Models Need Microphysical and Convective Parameterizations to Generate Accurate Precipitation Fields?](https://arxiv.org/abs/2603.25936) (2026)
+- [Do Climate Models Need Microphysical and Convective Parameterizations to Generate Accurate Precipitation Fields?](https://doi.org/10.1175/aies-d-26-0035.1) (2026)
 - [A hybrid framework for global weather forecasting via low-resolution dynamical core and multigrid neural operator](https://doi.org/10.1038/s41612-026-01374-z) (2026)
 - [On the role of radiative forcing in inference of tropical convection using a neural operator climate emulator](https://doi.org/10.22541/essoar.177024078.89023797/v1) (2026)
 - [Achieving Explainable ENSO Prediction Using Small Data Training](https://doi.org/10.1029/2025gl117573) (2026)

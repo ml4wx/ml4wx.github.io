@@ -5,11 +5,16 @@ Prediction and detection of extremes: tropical cyclones, heatwaves, heavy rain, 
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/extremes-hazards/)
 
-1375 papers (11 ⭐). Newest first.
+1380 papers (11 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
 | 2026-12-01 | [From prediction to resilience: transferable and equitable AI for climate extremes in a data-unequal Anthropocene](https://doi.org/10.1016/j.cosust.2026.101734)<br><sub>Sevim Gökalp, Cavit Yeşilyurt · Current Opinion in Environmental Sustainability</sub> |  |  |
+| 2026-11-18 | [Improving extreme rainfall forecasts over the Western Ghats through terrain-aware WRF ensembles and machine learning](https://doi.org/10.1007/s00704-026-06743-5)<br><sub>K. Athira, Sarmistha Singh, Akhil Srivastava et al. · Theoretical and Applied Climatology</sub> |  |  |
+| 2026-11-18 | [Evaluation of machine-learning and deep-learning SPEI drought forecasts against persistence across timescales and lead times in Bangladesh](https://arxiv.org/abs/2611.25075)<br><sub>Mahir Ahnaf, Showmitra Kumar Sarkar</sub> |  | [code](https://github.com/mahirahnaf1727/bangladesh-spei-drought-forecasting) |
+| 2026-11-18 | [Comparing Data-Driven and Numerical Weather Prediction Forecasts of Extreme Weather: A Review](https://arxiv.org/abs/2611.23863)<br><sub>Gabriele Messori, Hiu-Wang Lau, Chenyu Dong et al.</sub> |  |  |
+| 2026-11-16 | [Quantifying the added value of human forecaster discussions for tropical cyclone intensity prediction](https://arxiv.org/abs/2611.21602)<br><sub>Ilia Azizi, Frederick Iat-Hin Tam, Marc-Olivier Boldi et al.</sub> | NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
+| 2026-11-15 | [Improving Tropical Cyclone Forecasts through Objective Ensemble Track-Error Reduction](https://arxiv.org/abs/2611.20251)<br><sub>Shuochen Wang, Mark S. Allen, Auroop R. Ganguly</sub> | ECMWF, NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), Met Office |  |
 | 2026-11-13 | [A Novel Deep Learning Approach for Tropical Cyclone Path Prediction Based on LSTM-BiLSTM](https://doi.org/10.5750/ijme.v168ia6(s).2062)<br><sub>Karthikeyan S, M. Kannan · The International Journal of Maritime Engineering</sub> |  |  |
 | 2026-11-13 | [Physics-informed and data-efficient machine learning for storm surge forecasting during typhoons](https://doi.org/10.1126/sciadv.aeh5673)<br><sub>Huarong Xie, Changming Dong, Yuli Liu et al. · Science Advances</sub> | Nanjing University of Information Science & Technology (NUIST) |  |
 | 2026-11-12 | [Physics-guided deep learning with spatial decoupling for tropical cyclone convective precipitation prediction](https://doi.org/10.1016/j.oceaneng.2026.129445)<br><sub>Mengjiao Qin, Wuxia Lin, Shoujuan Shu et al. · Ocean Engineering</sub> |  |  |
@@ -100,7 +105,7 @@ Prediction and detection of extremes: tropical cyclones, heatwaves, heavy rain, 
 | 2026-07-31 | [Spatiotemporal storm surge forecasting with a deep learning model using an augmented typhoon track dataset and meteorological updates](https://doi.org/10.1016/j.coastaleng.2026.105129)<br><sub>Zaiyang Zhou, Zejun Wu, D.S. van Maren et al. · Coastal Engineering</sub> |  |  |
 | 2026-07-31 | [Storm training set selection for landfalling tropical cyclone surge surrogate modeling](https://doi.org/10.1016/j.coastaleng.2026.105125)<br><sub>Jennifer L. Irish, Michelle Bensi, Constantinos Frantzis et al. · Coastal Engineering</sub> |  |  |
 | 2026-07-30 | [Compound climate hazards revealed by global modeling of drought, heatwaves, and land degradation](https://doi.org/10.1016/j.gloplacha.2026.105637)<br><sub>Jinping Liu, Yanqun Ren, Qingfeng Hu et al. · Global and Planetary Change</sub> |  |  |
-| 2026-07-30 | [Weather Emulators at the Frontier of Heat Extremes Predictability](https://arxiv.org/abs/2607.28220)<br><sub>Cas Decancq, Thomas Mortier, Jessica Keune et al.</sub> |  |  |
+| 2026-07-30 | [Weather Emulators at the Frontier of Heat Extremes Predictability](https://arxiv.org/abs/2607.28220)<br><sub>Cas Decancq, Thomas Mortier, Jessica Keune et al.</sub> | ECMWF |  |
 | 2026-07-29 | [Seasonal prediction of Western North Pacific tropical cyclone formation using convolutional neural network](https://doi.org/10.1007/s00382-026-08203-2)<br><sub>Ziyu Jiang, Ming Wang, Kai Liu et al. · Climate Dynamics</sub> | Potsdam Institute for Climate Impact Research (PIK) |  |
 | 2026-07-28 | [Forecasting extreme temperature events by Hankel-augmented contrastive learning](https://doi.org/10.1093/nsr/nwag456)<br><sub>Chengyang Qin, Yueyang Ding, Peng Tao et al. · National Science Review</sub> |  |  |
 | 2026-07-27 | [DOWNPOUR: An Extended-Range Flood Precursor System for a Southern Appalachian Watershed Using Continuous Day-of-Year Composite Matching and a Temporal Convolutional Network](https://doi.org/10.22541/essoar.15006620/v1)<br><sub>Olin Redmon</sub> |  |  |
@@ -453,7 +458,7 @@ Prediction and detection of extremes: tropical cyclones, heatwaves, heavy rain, 
 | 2025-09-21 | [A light multimodal neural network for tropical cyclone path prediction with single time step](https://doi.org/10.1007/s12650-025-01084-3)<br><sub>Xiaoxian Tian, Lu Yang, Chongke Bi et al. · Journal of Visualization</sub> |  |  |
 | 2025-09-20 | [An In-Depth Analysis of Approaches for Forecasting Extreme Rainfall Events Leveraging Artificial Intelligence, Machine Learning, and Deep Learning Techniques](https://doi.org/10.1007/s41748-025-00813-w)<br><sub>Gamal El Afandi, Amira Moustafa, Salem Ibrahim et al. · Earth Systems and Environment</sub> |  |  |
 | 2025-09-20 | [DPSformer: A long-tail-aware model for improving heavy rainfall prediction](https://arxiv.org/abs/2509.25208)<br><sub>Zenghui Huang, Ting Shu, Zhonglei Wang et al.</sub> |  |  |
-| 2025-09-19 | [Present and future trends of extreme short-term rainfall events in Germany, by downscaling convective environments of ERA5 and a CMIP6 ensemble](https://doi.org/10.5194/egusphere-2025-3584)<br><sub>Gerd Bürger, Maik Heistermann</sub> |  |  |
+| 2025-09-19 | [Present and future trends of extreme short-term rainfall events in Germany, by downscaling convective environments of ERA5 and a CMIP6 ensemble](https://doi.org/10.5194/nhess-26-5897-2026)<br><sub>Gerd Bürger, Maik Heistermann · Natural hazards and earth system sciences</sub> |  |  |
 | 2025-09-18 | [Severe Typhoon Danas (2025)—A Tropical Cyclone with Erratic Track over the Northern Part of the South China Sea and Adjacent Sea of Taiwan](https://doi.org/10.3390/atmos16091099)<br><sub>Chun-Wing Choy, Pak Wai Chan, Ping Cheung et al. · Atmosphere</sub> |  |  |
 | 2025-09-18 | [Spatio-temporal wildfire forecasting in Australia using deep learning and explainable AI](https://doi.org/10.1007/s40808-025-02621-7)<br><sub>Rufai Yusuf Zakari, Owais Ahmed Malik, Wee-Hong Ong · Modeling Earth Systems and Environment</sub> |  |  |
 | 2025-09-18 | [Accurate typhoon intensity forecasts using a non-iterative spatiotemporal transformer model](https://doi.org/10.1038/s41612-025-01279-3)<br><sub>Hongyu Qu, Hongxiong Xu, Lin Dong et al. · npj Climate and Atmospheric Science</sub> | China Meteorological Administration (CMA) |  |
@@ -522,7 +527,7 @@ Prediction and detection of extremes: tropical cyclones, heatwaves, heavy rain, 
 | 2025-07-04 | [ELM2.1-XGBfire1.0: improving wildfire prediction by integrating a machine learning fire model in a land surface model](https://doi.org/10.5194/gmd-18-4103-2025)<br><sub>Ye Liu, Huilin Huang, Sing‐Chun Wang et al. · Geoscientific model development</sub> |  |  |
 | 2025-07-03 | [Deep Learning Atmospheric Models Reliably Simulate Out-of-Sample Land Heat and Cold Wave Frequencies](https://doi.org/10.1029/2025gl117990)<br><sub>Zilu Meng, Gregory J. Hakim, Wenchang Yang et al. · Geophysical Research Letters</sub> | Princeton University, University of Washington |  |
 | 2025-07-02 | [Stormsense: A Multi-Model Cloudburst Prediction System Using ML And Deep Image Processing](https://doi.org/10.64252/a1d4kx29)<br><sub>Tanaya Handore, Dr. Shubhangi Handore, Prof. Mahendra Handore · International Journal of Environmental Sciences</sub> |  |  |
-| 2025-07-01 | [Covariance-informed spatiotemporal clustering improves the detection of hazardous weather events](https://doi.org/10.5194/egusphere-2025-2870)<br><sub>Hunter C. Quintal, Antonia Sebastian, Marc L. Serre et al.</sub> |  |  |
+| 2025-07-01 | [Covariance-informed spatiotemporal clustering improves the detection of hazardous weather events](https://doi.org/10.5194/hess-30-7083-2026)<br><sub>Hunter C. Quintal, Antonia Sebastian, Marc L. Serre et al. · Hydrology and earth system sciences</sub> |  |  |
 | 2025-07-01 | [Enhancing Convective Wind Prediction: Two Machine Learning Approach with Multi-Regime Flow Analysis and Adaptive Model Integration](https://doi.org/10.3724/j.1006-8775.2025.031)<br><sub>Hua-long ZHANG, Zhi-fang WU, Liu-si XIAO et al. · Journal of Tropical Meteorology</sub> |  |  |
 | 2025-07-01 | [Sharp Increase in rapid intensification of Arabian Sea tropical cyclones over the past decade](https://doi.org/10.1038/s43247-025-02477-w)<br><sub>Xiaojing Li, Yi Li, Youmin Tang · Communications Earth & Environment</sub> |  |  |
 | 2025-07-01 | [Comparative analysis of machine learning approaches for heatwave event prediction in India](https://doi.org/10.1038/s41598-025-04634-9)<br><sub>R. Choudary, Anita Christaline Johnvictor, Prem Sankar N · Scientific Reports</sub> |  |  |
@@ -1119,7 +1124,7 @@ Prediction and detection of extremes: tropical cyclones, heatwaves, heavy rain, 
 | 2022-03-28 | [Wildfire risk forecast: An optimizable fire danger index](https://arxiv.org/abs/2203.15558)<br><sub>Eduardo Rodrigues, Bianca Zadrozny, Campbell Watson</sub> | IBM Research |  |
 | 2022-03-24 | [ATDNNS: An adaptive time–frequency decomposition neural network-based system for tropical cyclone wave height real-time forecasting](https://doi.org/10.1016/j.future.2022.03.029)<br><sub>Fan Meng, Danya Xu, Tao Song · Future Generation Computer Systems</sub> | Alibaba (DAMO Academy) |  |
 | 2022-03-22 | [Machine learning–based observation-constrained projections reveal elevated global socioeconomic risks from wildfire](https://doi.org/10.1038/s41467-022-28853-0)<br><sub>Yan Yu, Jiafu Mao, Stan D. Wullschleger et al. · Nature Communications</sub> | Colorado State University (incl. CIRA), Oak Ridge National Laboratory |  |
-| 2022-03-10 | [Annual Frequency of Tropical Cyclones Directly Affecting Guangdong Province:Prediction Based on LSTM-FC](https://doi.org/10.46267/j.1006-8775.2022.004)<br><sub>Yamin Hu, CHEN Yun-zhu, HE Jian et al. · Journal of Tropical Meteorology</sub> |  |  |
+| 2022-03-10 | [Annual Frequency of Tropical Cyclones Directly Affecting Guangdong Province:Prediction Based on LSTM-FC](https://doi.org/10.46267/j.1006-8775.2022.004)<br><sub>Yamin Hu, CHEN Yun-zhu, HE Jian et al. · Journal of Tropical Meteorology</sub> | Institute of Atmospheric Physics, Chinese Academy of Sciences |  |
 | 2022-03-07 | [Combining LSTM statistical analysis with dynamical models to investigate Typhoon Mangkhut (2018)](https://doi.org/10.1002/essoar.10510756.1)<br><sub>Clifford Evan Watkins, Sue Chen</sub> |  |  |
 | 2022-03-03 | [A Machine-Learning Based Tool for Diagnosing Inland Tropical Cyclone Maintenance or Intensification Events](https://doi.org/10.3389/feart.2022.818671)<br><sub>Andrew Michael Thomas, James Marshall Shepherd · Frontiers in Earth Science</sub> |  |  |
 | 2022-03-02 | [Hail disaster recognition method based on artificial intelligence with Doppler radar data](https://doi.org/10.1117/1.jrs.16.014519)<br><sub>Xia Chen, Haijiang Wang, Fudong Zhen et al. · Journal of Applied Remote Sensing</sub> |  |  |
@@ -1323,7 +1328,7 @@ Prediction and detection of extremes: tropical cyclones, heatwaves, heavy rain, 
 | 2019-09-19 | [Knowledge-enhanced deep learning for simulation of tropical cyclone boundary-layer winds](https://doi.org/10.1016/j.jweia.2019.103983)<br><sub>Reda Snaiki, Teng Wu · Journal of Wind Engineering and Industrial Aerodynamics</sub> |  |  |
 | 2019-09-16 | [Towards Unsupervised Segmentation of Extreme Weather Events](https://arxiv.org/abs/1909.07520)<br><sub>Adam Rupe, Karthik Kashinath, Nalini Kumar et al.</sub> | Lawrence Berkeley National Laboratory / NERSC |  |
 | 2019-09-10 | [Deep Learning-Based Tropical Cyclone Intensity Estimation Portal](https://ntrs.nasa.gov/api/citations/20190030780/downloads/20190030780.pdf)<br><sub>Brian M. Freitag, Manil Maskey, Rahul Ramachandran et al. · NASA Technical Reports Server (NASA)</sub> | NASA |  |
-| 2019-08-30 | [Applying Machine Learning Methods to the Assessment of Tropical Cyclone Impacts](https://doi.org/10.3929/ethz-b-000398592)<br><sub>Samuel Lüthi · Repository for Publications and Research Data (ETH Zurich)</sub> |  |  |
+| 2019-08-30 | [Applying Machine Learning Methods to the Assessment of Tropical Cyclone Impacts](https://doi.org/10.3929/ethz-b-000398592)<br><sub>Samuel Lüthi · Repository for Publications and Research Data (ETH Zurich)</sub> | ETH Zurich |  |
 | 2019-08-29 | [Data-based wind disaster climate identification algorithm and extreme wind speed prediction](https://doi.org/10.1061/(asce)st.1943-541x.0002954)<br><sub>Wei Cui, Teng Ma, Lin Zhao et al. · Journal of Structural Engineering</sub> |  |  |
 | 2019-08-11 | [Predicting Maximum Wind Speed of Typhoons based on Convolutional Recurrent Neural Network via COMS Satellite Data](https://doi.org/10.7232/jkiie.2019.45.4.349)<br><sub>Minhyung Lee, Soobong Lee, Jung-Hwan Lee et al. · Journal of Korean Institute of Industrial Engineers</sub> |  |  |
 | 2019-08-09 | [Deep-PHURIE: deep learning based hurricane intensity estimation from infrared satellite imagery](https://doi.org/10.1007/s00521-019-04410-7)<br><sub>Muhammad Dawood, Amina Asif, Fayyaz Minhas · Neural Computing and Applications</sub> |  |  |
@@ -1387,6 +1392,11 @@ Prediction and detection of extremes: tropical cyclones, heatwaves, heavy rain, 
 
 ## Also relevant
 
+- [Urbanization Doubles Future Compound Heatwave Risk in the Yangtze River Delta Urban Agglomeration Based on a Machine Learning‐Statistical Hybrid Framework](https://doi.org/10.1029/2026gl123497) (2026)
+- [A data-driven machine learning approach to typhoon evacuation decision-making and system reliability evaluation of stochastic evacuation networks](https://doi.org/10.1007/s10479-026-07484-4) (2026)
+- [Explainable Machine Learning for Rare Fog Prediction at Ivato Airport](https://doi.org/10.5281/zenodo.24362147) (2026)
+- [HM-SimVP: Hyperedge Interaction and Intensity Refinement for Heavy Precipitation Nowcasting](https://doi.org/10.3390/atmos17111129) (2026)
+- [Run it Back: Autoregression vs. Video Diffusion for Final-Conditioned Weather Trajectories](https://arxiv.org/abs/2611.21521) (2026)
 - [Deep-learning downscaling of CMIP6 heatwave projections for Greece and comparison with a regional climate model](https://doi.org/10.5194/egusphere-2026-6743) (2026)
 - [Advancing spatial hurricane storm surge risk assessment using machine learning and simulations under changing climate scenarios](https://doi.org/10.1080/10106049.2026.2756760) (2026)
 - [Trade-offs in deep learning approaches for precipitation downscaling across weather regimes](https://doi.org/10.1038/s41598-026-80185-x) (2026)
@@ -1578,7 +1588,7 @@ Prediction and detection of extremes: tropical cyclones, heatwaves, heavy rain, 
 - [Advanced Tropical Cyclone Intensity Estimation Using EfficientNetV2S with Spatiotemporal Geospatial Fusion and Transfer Learning](https://doi.org/10.38124/ijisrt/26mar2136) (2026)
 - [A novel deep learning semi-observational analog framework for diagnosing convection over Morocco using satellite imagery and ERA5-reanalysis](https://doi.org/10.1016/j.atmosres.2026.108969) (2026)
 - [Global asymmetries in the moisture origins of atmospheric river precipitation](https://doi.org/10.1038/s41612-026-01408-6) (2026)
-- [Empowering Power Outage Prediction with Spatially Aware Hybrid Graph Neural Networks and Contrastive Learning](https://arxiv.org/abs/2604.04916) (2026)
+- [Empowering Power Outage Prediction with Spatially Aware Hybrid Graph Neural Networks and Contrastive Learning](https://openreview.net/forum?id=Vf5FDYrOiU) (2026)
 - [HighFM: Towards a Foundation Model for Learning Representations from High-Frequency Earth Observation Data](https://arxiv.org/abs/2604.04306) (2026)
 - [Deep Learning Reveals Circulation-Driven Intensification of Extreme Precipitation in the Lower Yangtze River Basin](https://doi.org/10.1007/s00376-025-5333-5) (2026)
 - [Three-dimensional cloud radar reflectivity reconstruction from geostationary multispectral imagery using a context-aware Transformer](https://doi.org/10.1016/j.jag.2026.105275) (2026)

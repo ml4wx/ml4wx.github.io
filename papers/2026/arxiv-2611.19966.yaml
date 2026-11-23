@@ -1,0 +1,54 @@
+id: arxiv-2611.19966
+title: 'Towards GPROF V08: A Machine-Learning Framework for Simulating Passive Microwave Observations
+  of Precipitation'
+authors:
+- Simon Pfreundschuh
+- Christian D. Kummerow
+- Paula J. Brown
+date: '2026-11-15'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2611.19966'
+links:
+  paper: https://arxiv.org/abs/2611.19966
+  pdf: https://arxiv.org/pdf/2611.19966
+orgs:
+- nasa
+- colorado-state-university
+topic: observations-remote-sensing
+type: model
+method:
+- transformer
+- cnn
+spatial:
+- global
+data:
+- satellite
+status: pre-operational
+summary: Satformer translates passive microwave observations between GPM sensors to generate synthetic
+  training data, improving CNN precipitation retrievals for the full GPM constellation.
+abstract: Spatially resolved precipitation retrievals based on convolutional neural networks (CNNs) can
+  improve precipitation estimates from passive microwave (PMW) observations and will be used to implement
+  the next operational PMW retrieval algorithm for the Global Precipitation Measurement (GPM) mission.
+  However, the conventional radiative transfer simulations used to extend the retrieval algorithm to the
+  various sensors of the GPM constellation do not provide the spatial coverage required to train CNN-based
+  retrievals. To address this, we introduce a machine-learning-based simulation framework that enables
+  the training of the CNN-based GPROF-NN 3D retrieval algorithm for the full GPM constellation. At the
+  core of this framework is Satformer, a new neural-network architecture that can translate PMW observations
+  between any pair of GPM sensors. The resulting synthetic observations exhibit lower errors than conventional
+  radiative transfer simulations and lead to more accurate precipitation retrievals when used to train
+  GPROF-NN precipitation retrievals. We further demonstrate the applicability of the framework to new
+  instruments by developing GPROF-NN retrievals for the Microwave Imager aboard the Weather System Follow-on
+  Microwave satellite. While GPROF-NN retrievals based on the new simulation framework achieve lower instantaneous
+  retrieval errors and higher correlations compared to independent reference data than conventional retrievals,
+  residual simulation errors can introduce systematic biases in the resulting retrievals. The proposed
+  simulation framework provides a key component for extending GPROF-NN to the full GPM constellation as
+  part of the upcoming operational GPROF V08 retrieval algorithm. The results demonstrate the potential
+  of machine-learning-based simulations to support spatially resolved precipitation retrievals across
+  heterogeneous satellite constellations.
+significance: 5
+score: 55
+highlight: false
+added: '2026-11-23'
+source: weekly

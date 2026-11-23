@@ -1,0 +1,56 @@
+id: doi-10.3390-atmos17111129
+title: 'HM-SimVP: Hyperedge Interaction and Intensity Refinement for Heavy Precipitation Nowcasting'
+authors:
+- Yongjie Ma
+- Xuan Liu
+- Bingjian Lu
+- Zhenyu Lu
+date: '2026-11-16'
+year: 2026
+venue: Atmosphere
+venue_type: journal
+ids:
+  doi: 10.3390/atmos17111129
+  openalex: W7233822579
+links:
+  paper: https://doi.org/10.3390/atmos17111129
+orgs:
+- nuist
+topic: nowcasting
+topics:
+- extremes-hazards
+type: model
+method:
+- cnn
+- gnn
+timescale:
+- nowcast
+spatial:
+- regional
+data:
+- radar
+status: research
+summary: HM-SimVP adds hypergraph interaction and gated intensity refinement to SimVPv2, raising CSI at
+  20 mm/h by 30% on CMPAS for heavy rainfall nowcasting.
+abstract: As lead time increases, deterministic precipitation forecasts often underestimate localized
+  rainfall peaks and become spatially smoother. We propose HM-SimVP, a precipitation nowcasting framework
+  built on SimVPv2. The framework combines dual-scale spatial encoding, latent hyperedge interaction,
+  and gated mean–contrast output refinement. The dual-scale encoder supplies local and contextual features
+  for latent spatiotemporal prediction. In latent space, an adaptive hypergraph groups spatial locations
+  by feature similarity. Neighboring hyperedges exchange information according to the overlap of their
+  soft memberships, combining spatial adjacency with membership compatibility. After decoding, mean–contrast
+  refinement adjusts patch-level means and within-patch contrast in the log-normalized precipitation field,
+  with a learned gate controlling the correction magnitude. On CMPAS and MeteoNet, HM-SimVP achieves higher
+  critical success index (CSI) values than eight deep learning methods and an optical-flow extrapolation
+  baseline at all four evaluated rain-rate thresholds. At 20 mm h−1, CSI is 30.0% and 16.6% higher than
+  that of the best-performing comparator on CMPAS and MeteoNet, respectively. Lead-time analysis shows
+  that high-threshold CSI advantages persist at later forecast steps. Component and internal ablations
+  support the contributions of latent hyperedge interaction and gated output refinement. These results
+  show that combining latent hyperedge interaction with gated intensity refinement improves the retention
+  of high-intensity precipitation in multistep forecasts.
+significance: 3
+cited_by: 0
+score: 22
+highlight: false
+added: '2026-11-23'
+source: weekly

@@ -1,0 +1,47 @@
+id: arxiv-2611.25119
+title: Auditing Learned Dynamics in Weather Models
+authors:
+- Skylar Gu
+- Christina Last
+date: '2026-11-18'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2611.25119'
+links:
+  paper: https://arxiv.org/abs/2611.25119
+  pdf: https://arxiv.org/pdf/2611.25119
+orgs:
+- google-deepmind
+topic: xai-uq-physics
+type: evaluation
+method:
+- gnn
+- other
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Sparse autoencoder features in GraphCast show causal use; amplifying convection features cuts
+  tropical cyclone intensity error by a median 51%.
+abstract: Learned weather models are experimentally accessible computational systems whose internal representations
+  can be inspected and manipulated. Using sparse autoencoder features from GraphCast, DeepMind's autoregressive
+  weather forecasting model, we test whether causal relevance requires physical semantics, a question
+  that matters for auditing whether AI forecasters used in high-assurance settings rely on reliable mechanisms.
+  We also look at whether physically associated latent directions can be steered to improve extreme-event
+  forecasts, where interventions are applied to the model's internal activations during the rollout. We
+  find that ablating a feature locked to GraphCast's computational mesh increases global geopotential
+  height error despite lacking conventional physical semantics. Second, suppressing convection- and low-level-vorticity-associated
+  features weakens predicted tropical-cyclone deepening (the fall in central pressure during intensification),
+  while amplifying them reduces intensity error, with amplification of convection features through feature
+  scaling achieving a median of 51\% error reduction over seven storms. Together, these results separate
+  interpretable, physical association from causal utility and establish sparse features as experimental
+  coordinates for auditing and intervening on learned weather dynamics.
+significance: 5
+score: 55
+highlight: false
+added: '2026-11-23'
+source: weekly

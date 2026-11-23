@@ -1,0 +1,52 @@
+id: arxiv-2611.19385
+title: Does a completed simulation run mean a usable urban wind result for AI agents?
+authors:
+- Zhongke Qu
+- Yunwei Zhang
+- Junwei Su
+- Yabin Zhang
+- Chengwei Li
+- Qingxiang Shui
+- Hailong Qu
+- Zhaolin Gu
+date: '2026-11-14'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2611.19385'
+links:
+  paper: https://arxiv.org/abs/2611.19385
+  pdf: https://arxiv.org/pdf/2611.19385
+topic: llms-agents
+type: model
+method:
+- llm
+spatial:
+- local
+data:
+- other
+status: research
+summary: Introduces UrbanWind-AgentBench and WindPilot, showing LLM-run urban wind CFD needs raw-evidence
+  checks; WindPilot raises mean task score from 62.5 to 72.5.
+abstract: AI agents based on large language models (LLMs) can now configure and run computational fluid
+  dynamics (CFD) solvers, but a completed run does not ensure that delivered metrics can be recomputed
+  from raw outputs. This gap was examined for urban wind simulation, where multi-case comparisons must
+  hold non-target conditions fixed and reported values must be traceable to raw samples. UrbanWind-AgentBench,
+  comprising 200 tasks and 367 cases in 10 engineering task families, was constructed. Public task contracts
+  specify variable factors, fixed conditions, numerical thresholds and deliverable requirements, and two-layer
+  scoring separates a structural score for deliverables, run provenance and raw evidence from a numerical
+  score obtained by independent recomputation against references. WindPilot was then proposed as an execution
+  framework that incorporates contract parsing, execution provenance, deterministic verification and bounded
+  acceptance review into the LLM execution loop. On 30 OpenFOAM tasks with independent references, at
+  least the structural maximum of 60 points was reached by a base agent on 28 tasks, but numerical credit
+  was obtained on only 6. With the same model name and budget, WindPilot increased the number of tasks
+  with numerical credit to 17, full-score tasks from 0 to 3 and the mean task score from 62.5 to 72.5.
+  Mean action steps fell from 130.4 to 104.9, and mean token consumption decreased by 12.9%. The mean
+  gain for atmospheric boundary layer (ABL) tasks was 18.5 points. A completed simulation run is therefore
+  not sufficient for a usable urban wind result; usability depends on checks that tie reported metrics
+  to raw evidence during execution.
+significance: 3
+score: 12
+highlight: false
+added: '2026-11-23'
+source: weekly

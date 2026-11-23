@@ -1,0 +1,56 @@
+id: arxiv-2611.19978
+title: 'GPROF V08: Improving Satellite Precipitation Estimates Across a Heterogeneous Constellation of
+  Passive-Microwave Sensors'
+authors:
+- Simon Pfreundschuh
+- Paula J. Brown
+- Christian D. Kummerow
+date: '2026-11-15'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2611.19978'
+links:
+  paper: https://arxiv.org/abs/2611.19978
+  pdf: https://arxiv.org/pdf/2611.19978
+orgs:
+- nasa
+- noaa
+- colorado-state-university
+topic: observations-remote-sensing
+type: operational
+method:
+- cnn
+spatial:
+- global
+data:
+- satellite
+status: operational
+summary: Operational GPROF V08 replaces Bayesian precipitation retrieval with a CNN fine-tuned on synthetic
+  data, improving accuracy across GPM passive microwave sensors.
+abstract: Precipitation estimates from the passive microwave observations (PMW) of the Global Precipitation
+  Measurement (GPM) mission serve a wide range of scientific, societal, and economic applications. The
+  Goddard Profiling Algorithm (GPROF) is the operational precipitation retrieval used to produce the level-two
+  precipitation estimates for the GPM mission. This study presents GPROF V08 - the most recent version
+  of GPROF and a major update aimed at improving the accuracy of precipitation estimates from the GPM
+  constellation. GPROF V08 replaces the single-pixel Bayesian retrieval scheme used by earlier GPROF versions
+  with a convolutional neural network (CNN). Implementing the algorithm for the full GPM constellation
+  required addressing several challenges such as the generation of synthetic observations suitable for
+  training CNN retrievals, which has been described in the first part of this two-part study. This second
+  part describes the final, operational implementation of GPROF V08, which adds a finetuning stage to
+  the training to overcome remaining uncertainties in the synthetic training data. We extensively validate
+  the new GPROF V08 algorithm for principal GPM sensors against reference precipitation estimates from
+  combined radar and radiometer retrievals from GPM and TRMM as well as independent ground-based reference
+  measurements. While the magnitude of improvements varies by sensor and surface type, the retrieval accuracy
+  for all assessed sensors is improved. Although challenges such as the persistence of climatological
+  biases (which remain of the same order as for GPROF V07) persist, GPROF V08 constitutes a substantial
+  advancement in spaceborne precipitation monitoring. Since the improvements are robust across all assessed
+  GPM sensors, the update is expected to improve the full historical GPM precipitation record and thus
+  benefit a wide range of downstream datasets and applications.
+significance: 6
+score: 69
+highlight: true
+highlight_reason: Operational GPROF V08 replaces Bayesian retrieval with CNN across the GPM constellation;
+  a notable operational ML deployment for satellite precipitation.
+added: '2026-11-23'
+source: weekly

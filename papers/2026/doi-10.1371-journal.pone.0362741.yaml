@@ -1,0 +1,56 @@
+id: doi-10.1371-journal.pone.0362741
+title: 'DTCN-RevIN: A Densely Temporal Causal Network with reversible instance normalization for enhanced
+  weather forecasting via multi-scale feature integration'
+authors:
+- Xixiang Yin
+- Sheng Shu
+- Minglei Yuan
+date: '2026-11-18'
+year: 2026
+venue: PLoS ONE
+venue_type: journal
+ids:
+  doi: 10.1371/journal.pone.0362741
+  openalex: W7236048316
+links:
+  paper: https://doi.org/10.1371/journal.pone.0362741
+  pdf: https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0362741&type=printable
+topic: local-forecasting
+type: model
+method:
+- cnn
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: Causal dilated convolutions with RevIN forecast station weather over 32-to-6 steps; performance
+  is comparable to TCN, with lower variance.
+abstract: 'Accurate weather forecasting is of paramount importance for disaster prevention, agriculture,
+  and resource management, yet traditional Numerical Weather Prediction (NWP) systems such as the Weather
+  Research and Forecasting (WRF) model face inherent limitations in temporal resolution and computational
+  efficiency when capturing rapidly evolving atmospheric dynamics. Meanwhile, existing deep learning approaches-including
+  Long Short-Term Memory (LSTM) networks, Temporal Convolutional Networks (TCN), and Transformers-struggle
+  with long-range temporal dependencies, distribution shift, and scalability. To address these challenges,
+  this study proposes the Densely Temporal Causal Network with Reversible Instance Normalization (DTCN),
+  a deep learning architecture that combines: (1) causal dilated convolutions for efficient temporal modeling,
+  (2) dense inter-layer connections for enhanced feature propagation, (3) multi-scale feature integration,
+  and critically, (4) RevIN standardization to address distribution shift in meteorological time series.
+  Through 250 independent station-level model training runs (5 architectures × 10 stations × 5 random
+  seeds), we systematically evaluate DTCN against four deep learning baseline architectures (TCN, LSTM,
+  Transformer, and LSTM-Attention) for the 32→6 short-range forecasting configuration. Results show that:
+  (i) DTCN achieves competitive top-tier overall performance, with RMSE of 0.0052 ± 0.0004 and R2 of 0.37
+  ± 0.06; (ii) DTCN matches TCN in rounded overall RMSE and R2, while showing slightly lower variance
+  than TCN; (iii) all evaluated architectures achieve positive overall R2 with RevIN standardization (0.22-0.37);
+  and (iv) per-variable results indicate variable-dependent advantages, with LSTM/LSTM-Attention performing
+  best for temperature, TCN performing best for humidity, and DTCN remaining competitive across all three
+  meteorological variables. These findings establish DTCN as a competitive data-driven alternative for
+  short-range weather forecasting rather than an unambiguous winner across every metric and variable.'
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-11-23'
+source: weekly

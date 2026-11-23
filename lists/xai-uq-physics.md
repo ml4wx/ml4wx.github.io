@@ -5,10 +5,12 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/xai-uq-physics/)
 
-195 papers (4 ⭐). Newest first.
+197 papers (4 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-11-18 | [Auditing Learned Dynamics in Weather Models](https://arxiv.org/abs/2611.25119)<br><sub>Skylar Gu, Christina Last</sub> | Google DeepMind |  |
+| 2026-11-18 | [Distribution-Free Uncertainty Quantification for Weather Forecasting: Conformal Prediction Under Spatiotemporal Dependence](https://arxiv.org/abs/2611.24329)<br><sub>Mariya</sub> | ECMWF | [code](https://github.com/Mariyaaleem/conformal-wx) |
 | 2026-11-11 | [PhysXAI: A Theoretical Framework for Diagnosing Physical Hallucinations in Weather Foundation Models](https://arxiv.org/abs/2611.15053)<br><sub>Anjan Mahapatra, Nikhil Raj</sub> |  |  |
 | 2026-10-30 | [Explaining patterns learned by neural networks for detection of atmospheric surface fronts in gridded atmospheric data](https://doi.org/10.5194/egusphere-2026-3877)<br><sub>Tim Radke, Johanna Baehr, Marc Rautenhaus</sub> | Max Planck Institute for Meteorology |  |
 | 2026-10-26 | [GNN-VIEW: Visual Inspection and Explanation of Graph-based Earth-System Models](https://arxiv.org/abs/2610.35693)<br><sub>Alessandro Lucatelli, Ferdinand Unterhuber, Katharina Krenzer et al.</sub> | ETH Zurich |  |
@@ -208,6 +210,10 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 ## Also relevant
 
 - [From prediction to resilience: transferable and equitable AI for climate extremes in a data-unequal Anthropocene](https://doi.org/10.1016/j.cosust.2026.101734) (2026)
+- [Interpretable Prototype-Conditioned Adaptation for Weather Forecasting](https://arxiv.org/abs/2611.25848) (2026)
+- [TRACE: Spatial Transferability of Explainable Machine-Learning Bias Correction of ERA5-Land Daily Temperature and Precipitation from Station-Rich Lowlands to High-Mountain Terrain](https://doi.org/10.1175/jhm-d-26-0122.1) (2026)
+- [An AI-Based OSSE Framework to Evaluate Learned Physical Consistency: A Multi-Model Study Using FourCastNet, Aurora, Prithvi WxC, and GraphCast](https://arxiv.org/abs/2611.22024) (2026)
+- [Tracing Uncertainties of Extreme El Niño Prediction to Mesoscale Ocean Currents](https://arxiv.org/abs/2611.17854) (2026)
 - [Three-way circulation–soil moisture–temperature feedbacks amplify the most extreme mid-latitudinal heat waves](https://doi.org/10.1126/sciadv.aeh9111) (2026)
 - [Combined climate-mode regimes and South American precipitation anomalies: statistical inference and interpretable machine learning](https://doi.org/10.1007/s00382-026-08447-y) (2026)
 - [Stable probabilistic emulation of partially observed dynamical systems](https://arxiv.org/abs/2611.09317) (2026)
@@ -268,7 +274,7 @@ Explainable AI for weather/climate, uncertainty quantification, and tests of phy
 - [A trustworthy deep learning framework for urban climate downscaling via physics-informed diffusion and topology-aware graph neural operators](https://doi.org/10.1016/j.eswa.2026.133361) (2026)
 - [Investigating Inductive Biases for Machine Learning Emulation of Sudden Stratospheric Warmings in Idealised Isca Simulations](https://arxiv.org/abs/2606.18857) (2026)
 - [Disentangling the effects of sea surface temperature and CO$_2$ in global machine learned weather-climate emulators](https://doi.org/10.1029/2026jh001571) (2026)
-- [Machine-learning-based approach for solar radiation model uncertainty identification, attribution and bias correction](https://doi.org/10.5194/egusphere-2026-2743) (2026)
+- [Machine-learning-based approach for solar radiation model uncertainty identification, attribution and bias correction](https://doi.org/10.5194/amt-19-7627-2026) (2026)
 - [iTCTSL: Interpretable Tropical Cyclone Track and Intensity Forecasting via Task Sensitive Learning](https://doi.org/10.1109/cvprf71909.2026.00157) (2026)
 - [An Interpretable Deep Learning Model for Detecting Tropical Cyclone Genesis Through Incorporation of the Dynamic and Thermodynamic Environment](https://doi.org/10.1029/2025jh001152) (2026)
 - [Observational Uncertainty in Deep Learning Climate Downscaling and Projections](https://doi.org/10.1029/2025ea004973) (2026)

@@ -1,0 +1,57 @@
+id: arxiv-2611.25075
+title: Evaluation of machine-learning and deep-learning SPEI drought forecasts against persistence across
+  timescales and lead times in Bangladesh
+authors:
+- Mahir Ahnaf
+- Showmitra Kumar Sarkar
+date: '2026-11-18'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2611.25075'
+links:
+  paper: https://arxiv.org/abs/2611.25075
+  pdf: https://arxiv.org/pdf/2611.25075
+  code: https://github.com/mahirahnaf1727/bangladesh-spei-drought-forecasting
+topic: extremes-hazards
+topics:
+- local-forecasting
+type: evaluation
+method:
+- classical-ml
+- cnn
+- rnn
+timescale:
+- s2s
+spatial:
+- regional
+data:
+- era5
+- stations
+status: research
+summary: Across Bangladesh, ML drought forecasts at SPEI-6 beat persistence at 1-3 month leads, but skill
+  and drought detection often disagree, so persistence-based evaluation is recommended.
+abstract: 'Bangladesh, home to nearly 178 million people, is highly vulnerable to recurring droughts that
+  threaten food security and rural livelihoods. Machine-learning and deep-learning models are increasingly
+  used to forecast drought indices such as the Standardized Precipitation Evapotranspiration Index (SPEI).
+  Most studies report accuracy without a persistence reference, although accumulated indices are strongly
+  autocorrelated, and seldom test drought detection, longer leads or variation between training runs.
+  This study forecast SPEI at 3-, 6- and 12-month timescales one to three months ahead for the eight divisions
+  of Bangladesh, using ERA5 reanalysis checked against 35 Bangladesh Meteorological Department stations.
+  Five models, XGBoost, CNN, Bi-LSTM, CNN-BiLSTM and CEEMDAN-BiLSTM, were trained with five seeds each,
+  scored on accuracy, skill against persistence and drought detection, and interpreted with Shapley values.
+  At a one-month lead, the CNN-BiLSTM and Bi-LSTM beat persistence clearly at SPEI-3 and SPEI-6 (skill
+  0.408 and 0.350), while at SPEI-12 a Nash-Sutcliffe efficiency of 0.872 barely exceeded persistence
+  (0.850). Skill and detection could disagree: at SPEI-3 and a three-month lead, XGBoost had the highest
+  skill (0.439) yet detected none of the 119 drought months. Only at SPEI-6 did the forecasts beat persistence
+  significantly and match its detection at all three leads, with fewer false alarms. At SPEI-12, gains
+  were small or absent and varied between seeds. The forecasts kept 76-80% of their correlation against
+  station-derived SPEI and relied mainly on precipitation and lagged SPEI. Forecasts should therefore
+  be judged on skill against persistence and detection across several seeds, not on accuracy alone. In
+  Bangladesh, SPEI-6 forecasts can support early warning up to three months ahead and SPEI-3 forecasts
+  one month ahead, while SPEI-12 is better suited to monitoring.'
+significance: 3
+score: 22
+highlight: false
+added: '2026-11-23'
+source: weekly

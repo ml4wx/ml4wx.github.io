@@ -1,0 +1,59 @@
+id: doi-10.21203-rs.3.rs-11322350-v1
+title: Forecasting precipitable water vapor at unmonitored coastal sites using a sparse GNSS network and
+  NWP forecasts
+authors:
+- Peng Min
+- Jie Zhao
+- Linrui Liu
+- You Yin
+- GanZhi Luo
+- Han Su
+date: '2026-11-19'
+year: 2026
+venue: Research Square
+venue_type: preprint
+ids:
+  doi: 10.21203/rs.3.rs-11322350/v1
+  openalex: W7236600078
+links:
+  paper: https://doi.org/10.21203/rs.3.rs-11322350/v1
+  pdf: https://www.researchsquare.com/article/rs-11322350/latest.pdf
+topic: post-processing
+topics:
+- observations-remote-sensing
+type: model
+method:
+- gnn
+timescale:
+- short
+spatial:
+- regional
+data:
+- stations
+- nwp-analysis
+status: research
+summary: Graph attention couples sparse GNSS precipitable water vapour stations with NWP to calibrate
+  unmonitored coastal sites, cutting 1-24 h NWP error by 12.8% in China and 6.1% in the US.
+abstract: 'Ground-based Global Navigation Satellite System (GNSS) precipitable water vapor (PWV) provides
+  essential observational constraints for coastal convective forecasting. However, existing statistical
+  and deep-learning models rely on multi-year single-station archives, restricting utility to permanently
+  instrumented locations and leaving unmonitored coastal zones dependent on uncorrected numerical weather
+  prediction (NWP). Here, we establish a sparse-GNSS-backbone regional forecasting framework that projects
+  observation-informed calibration beyond sensor footprints by coupling GNSS anchors with continuous NWP
+  tendencies through geographically biased graph attention. Trained with stochastic whole-station history
+  dropout, the architecture operates across a two-tier service paradigm: Level 1 regional coverage projecting
+  calibration across unmonitored footprints without local GNSS hardware or archives, and Level 2 local
+  enhancement providing precision upgrades where receivers exist. In China, Level 1 reduces raw NWP 1–24
+  h mean absolute error across 19 unmonitored targets by 12.8% (7.0% over calibrated NWP), where on-site
+  GNSS records yield a 9.7% precision upgrade; across the instrumented source backbone, Level 2 reduces
+  error by 7.5% over local fusion. An independent 138-station benchmark along the US coast confirms cross-continental
+  portability: a 30-station backbone reliably projects calibration across 108 verification targets (reducing
+  error by 6.1% over calibrated NWP), with skill sustained across 200–300 km. Under severe sensing disruptions,
+  the architecture maintains a 9.9% error reduction during tropical cyclones, and its advantage increases
+  to 19.9% (China) and 30.7% (US) during extended telemetry outages. This framework demonstrates observational
+  leverage, transforming sparse GNSS arrays into regional predictive assets.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-11-23'
+source: weekly

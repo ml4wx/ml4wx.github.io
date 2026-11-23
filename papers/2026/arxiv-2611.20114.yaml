@@ -1,0 +1,55 @@
+id: arxiv-2611.20114
+title: A plug-in energy-balance freezing module for transformer frost nowcasting without leaf-sensor inputs
+authors:
+- Juyeon Kim
+- Chaeyeon Yi
+- Yun Am Seo
+date: '2026-11-15'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2611.20114'
+  openalex: W7235110190
+links:
+  paper: https://arxiv.org/abs/2611.20114
+  pdf: https://arxiv.org/pdf/2611.20114
+topic: local-forecasting
+topics:
+- post-processing
+type: model
+method:
+- transformer
+- physics-constrained
+timescale:
+- short
+spatial:
+- local
+data:
+- stations
+status: research
+summary: A transformer module embedding leaf energy-balance physics improves hourly frost-probability
+  forecasts at 19 Korean stations without leaf-sensor inputs, beating LightGBM at all 12 leads.
+abstract: 'Frost protection requires local warnings where leaf-sensor inputs are unavailable. In the frost
+  literature we surveyed, physics entered machine-learning models through inputs, numerical-model coupling,
+  or losses, rather than model structure. We develop a transformer-compatible module that embeds leaf
+  energy-balance physics in freezing-probability forecasts: an energy-balance temperature reference and
+  a learned residual predict leaf temperature, which drives a multiplicative gate imposing a temperature-dependent
+  probability cap. We mathematically prove conditional monotonicity and an alarm boundary, and test whether
+  placing the same information in the output pathway or in attention yields different benefits. We evaluated
+  12 hourly leads at 19 Korean stations over five frost seasons, with and without leaf-sensor inputs.
+  In the 2025-2026 hold-out season without these inputs, our time-token transformer (PET-E) achieved a
+  lead-mean critical success index (CSI) of 0.516 versus 0.478 for fixed-configuration, joint-lead LightGBM,
+  with significant gains at all 12 leads, and the fraction of alarms at observed leaf temperatures of
+  at least 2 degrees C fell from 0.087 to 0.051 relative to the unmodified backbone. Across the hold-out
+  and a retrospective 2024-2025 evaluation, the module reduced Brier scores and warm-surface alarm fractions
+  in both the time-token transformer and iTransformer, with no significant CSI decrease at any lead. At
+  held-out stations without static or leaf-sensor inputs, both module-equipped backbones exceeded LightGBM
+  at all 12 leads (CSI 0.468 and 0.467 versus 0.437). In the time-token backbone, the temperature pathway
+  reduced this alarm fraction in all four settings, whereas the attention prior increased CSI in three.
+  These findings link an explicit temperature-dependent probability cap to improved forecasts and distinguish
+  output-side from attention-based embedding.'
+significance: 4
+score: 16
+highlight: false
+added: '2026-11-23'
+source: weekly

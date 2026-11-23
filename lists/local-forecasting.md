@@ -5,10 +5,14 @@ ML forecasts for a point, station, city or small area, mostly from observed time
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/local-forecasting/)
 
-1156 papers (0 ⭐). Newest first.
+1160 papers (0 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-11-20 | [Optimized Deep Learning Ensembles for Urban Air Temperature Forecasting Using SLSQP](https://doi.org/10.1007/s42979-026-05441-3)<br><sub>Aditya Kumar, Ravi Patel, Niharika Koch et al. · SN Computer Science</sub> |  |  |
+| 2026-11-19 | [Explainable Machine Learning for Rare Fog Prediction at Ivato Airport](https://doi.org/10.5281/zenodo.24362147)<br><sub>Valisoa Nantenaina Iangotiana Andriafalimanana · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
+| 2026-11-18 | [DTCN-RevIN: A Densely Temporal Causal Network with reversible instance normalization for enhanced weather forecasting via multi-scale feature integration](https://doi.org/10.1371/journal.pone.0362741)<br><sub>Xixiang Yin, Sheng Shu, Minglei Yuan · PLoS ONE</sub> |  |  |
+| 2026-11-15 | [A plug-in energy-balance freezing module for transformer frost nowcasting without leaf-sensor inputs](https://arxiv.org/abs/2611.20114)<br><sub>Juyeon Kim, Chaeyeon Yi, Yun Am Seo</sub> |  |  |
 | 2026-11-13 | [Probabilistic high-temporal resolution surface wind nowcasting with deep learning models](https://doi.org/10.1175/aies-d-26-0063.1)<br><sub>Mengmeng Han, Brad Murphy, Tennessee Leeuwenburg · Artificial Intelligence for the Earth Systems</sub> | Bureau of Meteorology (Australia) |  |
 | 2026-11-05 | [A Digital Twin Framework Integrating Multiscale Signal Decomposition and Hybrid Deep Learning for Intelligent Water Storage Control on Remote Islands](https://doi.org/10.3390/su182111291)<br><sub>Xubin Wu, Tao Chen, Yurun Chen et al. · Sustainability</sub> |  |  |
 | 2026-11-05 | [Two-stage residual learning for calibrated uncertainty in solar irradiance forecasts](https://arxiv.org/abs/2611.07444)<br><sub>RR Flanagan, E Kasha, PW Talbot et al.</sub> |  |  |
@@ -1023,7 +1027,7 @@ ML forecasts for a point, station, city or small area, mostly from observed time
 | 2021-01-04 | [Conditional Local Convolution for Spatio-temporal Meteorological Forecasting](https://arxiv.org/abs/2101.01000)<br><sub>Haitao Lin, Zhangyang Gao, Yongjie Xu et al.</sub> |  |  |
 | 2021-01-01 | [Weather Forecasting for Batu Pahat Using Neural Network](https://doi.org/10.54216/fpa.060204)<br><sub>Chan Weng, Rozaida Binti Ghazali, Salama A. Mustafa et al. · Fusion Practice and Applications</sub> |  |  |
 | 2021-01-01 | [Rainfall forecasting using advanced machine learning models](https://doi.org/10.33545/2707661x.2021.v2.i1a.96)<br><sub>Sanjaikanth E Vadakkethil Somanathan Pillai, Kiran Polimetla, Rajiv Avacharmal et al. · International Journal of Communication and Information Technology</sub> |  |  |
-| 2021-01-01 | [Method of Bidirectional LSTM Modelling for the Atmospheric Temperature](https://doi.org/10.32604/iasc.2021.020010)<br><sub>Shuo Peng Liang, Dingcheng Wang, Jingrong Wu et al. · Intelligent Automation & Soft Computing</sub> |  |  |
+| 2021-01-01 | [Method of Bidirectional LSTM Modelling for the Atmospheric Temperature](https://doi.org/10.32604/iasc.2021.020010)<br><sub>Shuo Peng Liang, Dingcheng Wang, Jingrong Wu et al. · Intelligent Automation & Soft Computing</sub> | Nanjing University of Information Science & Technology (NUIST) |  |
 | 2021-01-01 | [Prediction of Weather Forecasting by Using Machine Learning](https://doi.org/10.21276/ijircst.2021.9.4.7)<br><sub>N. Lakshmi, P. Ajimunnisa ., V. Lakshmi Prasanna et al. · International Journal of Innovative Research in Computer Science & Technology</sub> |  |  |
 | 2021-01-01 | [Development of Surface Weather Forecast Model by using LSTM Machine Learning Method](https://doi.org/10.14191/atmos.2021.31.1.073)<br><sub>Sungjae Hong, Jae Hwan Kim, Dae Sung Choi et al.</sub> |  |  |
 | 2021-01-01 | [Precise Weather Parameter Predictions for Target Regions via Neural Networks](https://doi.org/10.1007/978-3-030-86517-7_10)<br><sub>Yihe Zhang, Xu Yuan, S. Kimball et al. · ECML/PKDD</sub> |  |  |
@@ -1168,6 +1172,8 @@ ML forecasts for a point, station, city or small area, mostly from observed time
 
 ## Also relevant
 
+- [Observation-Free Representation Learning for Aerodrome Forecasting: The STATTCast and STATTTAF Pipeline](https://doi.org/10.22541/essoar.15012534/v1) (2026)
+- [Evaluation of machine-learning and deep-learning SPEI drought forecasts against persistence across timescales and lead times in Bangladesh](https://arxiv.org/abs/2611.25075) (2026)
 - [Multi-scale assessment of wavelet-guided deep learning for reference evapotranspiration forecasting to support vineyard water management](https://doi.org/10.1016/j.agwat.2026.110892) (2026)
 - [Characterisation and forecasting of heatwaves using HWMId: Change-point based time series intervention modelling with machine learning for Western Maharashtra, India](https://doi.org/10.1007/s00704-026-06698-7) (2026)
 - [Planetary Boundary Layer Height Prediction over Karst Plateau: A Study Integrating Multi-Source Remote Sensing and Machine Learning](https://doi.org/10.3390/atmos17100917) (2026)

@@ -5,7 +5,7 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/benchmarks-data-eval/)
 
-201 papers (14 ⭐). Newest first.
+200 papers (14 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
@@ -73,7 +73,6 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 | 2026-02-28 | [An AI Training Dataset for Thunderstorm Monitoring and Forecasting over China](https://doi.org/10.3390/rs18050724)<br><sub>Na Liu, Wenming Xiao, Anyuan Xiong et al. · Remote Sensing</sub> | China Meteorological Administration (CMA) |  |
 | 2026-02-08 | [Forecast verification using information and noise](https://doi.org/10.1002/qj.70109)<br><sub>Massimo Bonavita, Alan Geer · Quarterly Journal of the Royal Meteorological Society</sub> | ECMWF |  |
 | 2026-01-30 | [TCBench: A Benchmark for Tropical Cyclone Track and Intensity Forecasting at the Global Scale](https://arxiv.org/abs/2601.23268)<br><sub>Milton S. Gomez, Marie C. McGraw, S. Saranya Ganesh et al.</sub> | Colorado State University (incl. CIRA), Columbia University (LEAP, Lamont-Doherty), ETH Zurich, University of California, Berkeley, University of Oxford |  |
-| 2026-01-27 | [Benchmarking the geographic generalization of deep learning models for precipitation downscaling](https://doi.org/10.1038/s41598-025-34557-4)<br><sub>Paula Harder, Luca Schmidt, Francis Pelletier et al. · Scientific Reports</sub> | ECMWF |  |
 | 2026-01-26 | [Machine Learning as a Lens on NWP ICON Configurations Validation over Southern Italy in Winter 2022–2023—Part I: Empirical Orthogonal Functions](https://doi.org/10.3390/atmos17020132)<br><sub>Davide Cinquegrana, Edoardo Bucchignani · Atmosphere</sub> |  |  |
 | 2026-01-08 | ⭐ [Error in ERA5 2m Temperature identified using GraphCast](https://doi.org/10.1002/qj.70309)<br><sub>Hannah M. Christensen, Jack Barker, Bobby Antonio et al. · Quarterly Journal of the Royal Meteorological Society</sub> | ECMWF, University of Oxford |  |
 | 2026-01-01 | [Artificial Intelligence Techniques for Climate Change Prediction and Mitigation: A Systematic Review](https://doi.org/10.47001/irjiet/2026.103014)<br><sub>Prestone Jeremaih Simiyu, Gitonga Stephen Ngure · International Research Journal of Innovations in Engineering and Technology</sub> |  |  |
@@ -109,7 +108,7 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 | 2025-08-06 | [An Object-Based Evaluation of Output from a Deep Learning Model for Thunderstorm Nowcasting](https://doi.org/10.1175/aies-d-24-0071.1)<br><sub>Stephanie M. Ortland, Michael J. Pavolonis · Artificial Intelligence for the Earth Systems</sub> | Colorado State University (incl. CIRA), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
 | 2025-08-05 | [Operational convection-permitting COSMO/ICON ensemble predictions at observation sites (CIENS)](https://doi.org/10.1002/gdj3.70051)<br><sub>Sebastian Lerch, Benedikt Schulz, Reinhold Hess et al. · Geoscience Data Journal</sub> | Deutscher Wetterdienst (DWD), Karlsruhe Institute of Technology (KIT) |  |
 | 2025-07-17 | [MoHiPr-TB: A Monthly Gridded Multi-Source Merged Precipitation Dataset for the Tarim Basin Based on Machine Learning](https://doi.org/10.3390/rs17142483)<br><sub>Ping Chen, Junqiang Yao, Jing Chen et al. · Remote Sensing</sub> | China Meteorological Administration (CMA), Nanjing University of Information Science & Technology (NUIST) |  |
-| 2025-07-04 | [SciVid: Cross-Domain Evaluation of Video Models in Scientific Applications](https://arxiv.org/abs/2507.03578)<br><sub>Yana Hasson, Pauline Luc, Liliane Momeni et al.</sub> |  | [code](https://github.com/google-deepmind/scivid) |
+| 2025-07-04 | [SciVid: Cross-Domain Evaluation of Video Models in Scientific Applications](https://arxiv.org/abs/2507.03578)<br><sub>Yana Hasson, Pauline Luc, Liliane Momeni et al.</sub> | Google DeepMind | [code](https://github.com/google-deepmind/scivid) |
 | 2025-07-01 | [TEEMLEAP—A New Testbed for Exploring Machine Learning in Atmospheric Prediction for Research and Education](https://doi.org/10.1029/2024ms004881)<br><sub>Jannik Wilhelm, Julian Quinting, Mareike Burba et al. · Journal of Advances in Modeling Earth Systems</sub> | Deutscher Wetterdienst (DWD), Karlsruhe Institute of Technology (KIT) |  |
 | 2025-06-20 | [UT-GraphCast Hindcast Dataset: A Global AI Forecast Archive from UT Austin for Weather and Climate Applications](https://arxiv.org/abs/2506.17453)<br><sub>Naveen Sudharsan, Manmeet Singh, Harsh Kamath et al.</sub> |  |  |
 | 2025-06-17 | [Comparative Analysis of Precipitation Forecasts between the ECMWF Artificial Intelligence System (AIFS) and Its Integrated Forecast System (IFS)](https://doi.org/10.1175/waf-d-24-0227.1)<br><sub>Pan Liujie, Hongfang Zhang, Mian Liang et al. · Weather and Forecasting</sub> |  |  |
@@ -213,6 +212,8 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 
 ## Also relevant
 
+- [Comparing Data-Driven and Numerical Weather Prediction Forecasts of Extreme Weather: A Review](https://arxiv.org/abs/2611.23863) (2026)
+- [SeasonRainBench: Global Seasonal Precipitation](https://arxiv.org/abs/2611.22281) (2026)
 - [Trade-offs in deep learning approaches for precipitation downscaling across weather regimes](https://doi.org/10.1038/s41598-026-80185-x) (2026)
 - [Can Large Language Models Review the Scientific Literature? A Test Against a 102-Article Benchmark](https://arxiv.org/abs/2611.05459) (2026)
 - [RainCheck: Harnessing Historical Weather Data with Machine Learning for Rainfall Forecasting in Bangladesh](https://arxiv.org/abs/2610.38211) (2026)
@@ -322,12 +323,12 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 - [Applying a Standardized Benchmarking Framework to Evaluate AI Methods for Precipitation Downscaling over Australia](https://doi.org/10.1175/aies-d-25-0048.1) (2025)
 - [Performance and Efficiency of Climate In-Situ Data Reconstruction: Why Optimized IDW Outperforms kriging and Implicit Neural Representation](https://doi.org/10.1109/tgrs.2026.3701545) (2025)
 - [Crowdsourcing the Frontier: Advancing Hybrid Physics-ML Climate Simulation via a $50,000 Kaggle Competition](https://doi.org/10.1029/2025ms005643) (2025)
-- [CLIMATEAGENT: Multi-Agent Orchestration for Complex Climate Data Science Workflows](https://arxiv.org/abs/2511.20109) (2025)
+- [CLIMATEAGENT: Multi-Agent Orchestration for Complex Climate Data Science Workflows](https://openreview.net/forum?id=XLWvXNumGa) (2025)
 - [Using artificial intelligence to identify CMIP6 models from daily SLP maps](https://doi.org/10.1038/s41612-025-01246-y) (2025)
 - [BCWildfire: A Long-term Multi-factor Dataset and Deep Learning Benchmark for Boreal Wildfire Risk Prediction](https://arxiv.org/abs/2511.17597) (2025)
 - [Climate modeling for South Asia: statistical and deep learning for rainfall and temperature prediction](https://doi.org/10.1038/s41598-025-22149-1) (2025)
 - [CLINB: A Climate Intelligence Benchmark for Foundational Models](https://arxiv.org/abs/2511.11597) (2025)
-- [Signature Kernel Scoring Rule: A Spatio-Temporal Diagnostic for Probabilistic Weather Forecasting](https://arxiv.org/abs/2510.19110) (2025)
+- [Signature Kernel Scoring Rule: A Spatio-Temporal Diagnostic for Probabilistic Weather Forecasting](https://openreview.net/pdf?id=LOLXpt4E5D) (2025)
 - [Assessing the Geographic Generalization and Physical Consistency of Generative Models for Climate Downscaling](https://arxiv.org/abs/2510.13722) (2025)
 - [Climate Knowledge in Large Language Models](https://doi.org/10.1175/aies-d-26-0017.1) (2025)
 - [Metrics matters: A deep assessment of deep learning CNN method for ENSO forecast](https://doi.org/10.1016/j.atmosres.2025.108545) (2025)
@@ -350,8 +351,8 @@ Benchmarks, ML-ready datasets, verification methods and model intercomparisons.
 - [Deep Learning and NWP: An Evaluation for Accurate Weather Forecasting](https://doi.org/10.17485/ijst/v18i28.861) (2025)
 - [The Chinese Air-Sea heat Flux (CASFlux) gridded dataset: description and validation](https://doi.org/10.1080/20964471.2025.2530852) (2025)
 - [Unraveling deep-learning detection of atmospheric Kármán vortex streets: dataset, baseline benchmarking, and optimization](https://doi.org/10.1080/20964471.2025.2522492) (2025)
-- [RainShift: A Benchmark for Precipitation Downscaling Across Geographies](https://arxiv.org/abs/2507.04930) (2025)
-- [Covariance-informed spatiotemporal clustering improves the detection of hazardous weather events](https://doi.org/10.5194/egusphere-2025-2870) (2025)
+- [RainShift: A Benchmark for Precipitation Downscaling Across Geographies](https://doi.org/10.1038/s41598-025-34557-4) (2025)
+- [Covariance-informed spatiotemporal clustering improves the detection of hazardous weather events](https://doi.org/10.5194/hess-30-7083-2026) (2025)
 - [Benchmark dataset and deep learning method for global tropical cyclone forecasting](https://doi.org/10.1038/s41467-025-61087-4) (2025)
 - [Atmospheric Data Compression and Reconstruction Using Spherical GANs](https://doi.org/10.1109/ijcnn64981.2025.11227156) (2025)
 - [AIR-VIEW: The Aviation Image Repository for Visibility Estimation of Weather, A Dataset and Benchmark](https://arxiv.org/abs/2506.20939) (2025)

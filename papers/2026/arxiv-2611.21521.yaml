@@ -1,0 +1,53 @@
+id: arxiv-2611.21521
+title: 'Run it Back: Autoregression vs. Video Diffusion for Final-Conditioned Weather Trajectories'
+authors:
+- Jerry Lin
+- Elizabeth A. Barnes
+date: '2026-11-16'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2611.21521'
+  openalex: W7235010526
+links:
+  paper: https://arxiv.org/abs/2611.21521
+  pdf: https://arxiv.org/pdf/2611.21521
+topic: probabilistic-ensembles
+topics:
+- extremes-hazards
+type: model
+method:
+- other
+timescale:
+- short
+spatial:
+- regional
+data:
+- era5
+status: research
+summary: Rewind-AR, a backward probabilistic autoregressive model on FourCastNet 3, generates final-conditioned
+  extreme-event ensembles that better match ERA5 than cBottle-video, though up to 22% of members become
+  unstable.
+abstract: 'Low-likelihood, high-impact extremes are projected to increase in severity and frequency in
+  a warming climate. Sampling the precursors that lead to these events traditionally requires massive
+  ensembles that scale poorly with lead time and rarity, and typical rare-event sampling and ensemble-boosting
+  methods do not show how a single extreme might arise from diverse synoptic precursors. Recently, Lin
+  et al.\ (2026) showed this is possible with final-conditioned 66-hour trajectories (trajectories constrained
+  to end at an observed state) from cBottle-video, a pre-trained, off-the-shelf video diffusion climate
+  emulator not explicitly fine-tuned for this task (Brenowitz et al., 2025). However, its ensembles were
+  underdispersed and geostrophically inconsistent, and it reproduces conditioned frames only approximately,
+  hindering autoregressive rollout. Here, we train Rewind-AR, a backward-in-time probabilistic autoregressive
+  model with a FourCastNet~3 backbone (Bonev et al., 2025), and generate final-conditioned ensembles for
+  the same three cases: the 2021 Pacific Northwest heatwave, Hurricane Ian, and Superstorm Sandy (in the
+  Supplementary Information). The leading modes of Rewind-AR''s antecedent 500 hPa geopotential height
+  explain far more of the across-member variance than cBottle-video''s for both hurricane position and
+  heatwave surface temperature, and Rewind-AR better reproduces the day-over-day heatwave intensification
+  observed in ERA5. Finally, geostrophic inconsistencies close to the conditioning frame seen in cBottle-video
+  are not reproduced by Rewind-AR. Nevertheless, up to 22\% of Rewind-AR members become numerically unstable
+  within 66 hours, so improving rollout physical consistency and stability over long lead times is a natural
+  next step.'
+significance: 5
+score: 20
+highlight: false
+added: '2026-11-23'
+source: weekly

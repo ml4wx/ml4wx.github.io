@@ -5,10 +5,14 @@ Statistical post-processing of NWP or ML forecasts: bias correction, ensemble ca
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/post-processing/)
 
-686 papers (3 ⭐). Newest first.
+690 papers (3 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-11-20 | [Observation-Free Representation Learning for Aerodrome Forecasting: The STATTCast and STATTTAF Pipeline](https://doi.org/10.22541/essoar.15012534/v1)<br><sub>Quenton Hurdal</sub> | Environment and Climate Change Canada (ECCC) |  |
+| 2026-11-19 | [Forecasting precipitable water vapor at unmonitored coastal sites using a sparse GNSS network and NWP forecasts](https://doi.org/10.21203/rs.3.rs-11322350/v1)<br><sub>Peng Min, Jie Zhao, Linrui Liu et al. · Research Square</sub> |  |  |
+| 2026-11-18 | [TRACE: Spatial Transferability of Explainable Machine-Learning Bias Correction of ERA5-Land Daily Temperature and Precipitation from Station-Rich Lowlands to High-Mountain Terrain](https://doi.org/10.1175/jhm-d-26-0122.1)<br><sub>Ertuğrul Gül · Journal of Hydrometeorology</sub> |  |  |
+| 2026-11-17 | [CorrectCast: Selective Multimodal Context for Scale-Aware Residual Correction in Precipitation Nowcasting](https://arxiv.org/abs/2611.22178)<br><sub>Henan Wang, Shengwu Xiong, Yifang Zhang et al.</sub> |  |  |
 | 2026-11-14 | [Monthly model-adaptive machine-learning ensemble of CMIP6 models for global land temperature and precipitation projections](https://doi.org/10.1007/s00704-026-06716-8)<br><sub>Jianzhong Lu, Piaoyin Zhang, Zhiyu Ye et al. · Theoretical and Applied Climatology</sub> |  |  |
 | 2026-11-02 | [Six-hourly Probabilistic Precipitation Forecasts Created From Hourly Probabilities](https://arxiv.org/abs/2611.03326)<br><sub>Thomas M Hamill</sub> | NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
 | 2026-10-30 | [Value of Adding AI Weather Model Ensembles to a Multi-model Probabilistic Blend](https://arxiv.org/abs/2610.42130)<br><sub>Harris Sop Nkuiate, Gavin Evans, Christopher A. T. Ferro et al.</sub> | ECMWF, Met Office |  |
@@ -89,7 +93,7 @@ Statistical post-processing of NWP or ML forecasts: bias correction, ensemble ca
 | 2026-06-07 | [Improving the sharpness in neural network-based parametric post-processing of ensemble forecasts](https://arxiv.org/abs/2606.08587)<br><sub>Ágnes Baran, Máté Mihalina</sub> |  |  |
 | 2026-06-05 | [Relative Robustness of Machine Learning (ML) Postprocessing Schemes in Forecasting Wintertime Precipitation Types: A CONUS-Wide Comparison](https://doi.org/10.1175/waf-d-25-0205.1)<br><sub>Prabal Das, Yu Zhang, Nachiketa Acharya et al. · Weather and Forecasting</sub> | NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
 | 2026-06-05 | [Machine-learning-enhanced multi-model climate ensemble for future rainfall, temperature and drought assessment in the semi-arid Papagni River Basin, India](https://doi.org/10.1016/j.pce.2026.104555)<br><sub>Chinthu Naresh, Aneesh Mathew · Physics and Chemistry of the Earth Parts A/B/C</sub> |  |  |
-| 2026-06-03 | [Machine-learning-based approach for solar radiation model uncertainty identification, attribution and bias correction](https://doi.org/10.5194/egusphere-2026-2743)<br><sub>Antti Lipponen, Jorge Lezaca, Yves-Marie Saint-Drenan et al.</sub> |  |  |
+| 2026-06-03 | [Machine-learning-based approach for solar radiation model uncertainty identification, attribution and bias correction](https://doi.org/10.5194/amt-19-7627-2026)<br><sub>Antti Lipponen, Jorge Lezaca, Yves-Marie Saint-Drenan et al. · Atmospheric measurement techniques</sub> |  |  |
 | 2026-06-03 | [A merged hurricane boundary layer height dataset in the western Atlantic based on dropsonde measurements and ERA5 reanalysis](https://doi.org/10.5194/egusphere-2026-1778)<br><sub>Xiangyu Pi, Yuanjie Zhang, Xiaoze Xu et al.</sub> | China Meteorological Administration (CMA), Nanjing University of Information Science & Technology (NUIST) |  |
 | 2026-06-01 | [HYBRID DATA DRIVEN WEATHER PREDICTION USING NEAR SURFACE MEASUREMENTS AND ATMOSPHERIC NUMERICAL MODELS](https://doi.org/10.5281/zenodo.20483187)<br><sub>International Journal of Sustainable Intelligent Technologies · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
 | 2026-06-01 | [Physics‐Informed Bias Correction Using a Convolution‐Based Multivariate Gaussian Process](https://doi.org/10.1029/2026ms005765)<br><sub>Taereem Kim, C K Wang, Gabriele Villarini et al. · Journal of Advances in Modeling Earth Systems</sub> | ETH Zurich, NSF NCAR / UCAR, Princeton University |  |
@@ -698,6 +702,10 @@ Statistical post-processing of NWP or ML forecasts: bias correction, ensemble ca
 
 ## Also relevant
 
+- [Improving extreme rainfall forecasts over the Western Ghats through terrain-aware WRF ensembles and machine learning](https://doi.org/10.1007/s00704-026-06743-5) (2026)
+- [Distribution-Free Uncertainty Quantification for Weather Forecasting: Conformal Prediction Under Spatiotemporal Dependence](https://arxiv.org/abs/2611.24329) (2026)
+- [Improving Tropical Cyclone Forecasts through Objective Ensemble Track-Error Reduction](https://arxiv.org/abs/2611.20251) (2026)
+- [A plug-in energy-balance freezing module for transformer frost nowcasting without leaf-sensor inputs](https://arxiv.org/abs/2611.20114) (2026)
 - [Reconstructing Boundary Layer Wind Profiles with Machine Learning: A Comparative Study on IGRA Radiosonde Data](https://arxiv.org/abs/2611.13359) (2026)
 - [A Machine Learning-Based Weather Forecasting System with Live Data Anchoring and Uncertainty Estimation](https://doi.org/10.5281/zenodo.23832326) (2026)
 - [A two‑stage deep learning framework for multi‑source precipitation fusion to optimize seasonal, extreme and precipitation event estimation](https://doi.org/10.1016/j.ejrh.2026.104139) (2026)

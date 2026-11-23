@@ -5,10 +5,11 @@ Limited-area and regional ML weather models, convection-permitting and km-scale 
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/regional-km-scale/)
 
-88 papers (7 ⭐). Newest first.
+89 papers (7 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-11-17 | [Artificial Intelligence Applications in Earth System Modeling and Geoscience: A Hybrid Deep Learning Framework for Precipitation and Soil Moisture Prediction](https://doi.org/10.59075/tamsaal.v4i11.280)<br><sub>Zohair Aman Khan, Faizan Ur Rehman Qaiser, Sami Ullah Tahir · TAMSAAL</sub> |  |  |
 | 2026-11-03 | [Towards Rapid and Data-Efficient Urban Climate Assessment using Machine Learning Frameworks](https://doi.org/10.21203/rs.3.rs-11241479/v1)<br><sub>Nisha Patel, Lester W. Mackey, Jian Zhong et al. · Research Square</sub> | Microsoft Research (AI for Science) |  |
 | 2026-10-27 | [Scale-aware and spatially-localised optimisation of kilometre-scale MLWP models](https://arxiv.org/abs/2610.37325)<br><sub>James Chappell, Sophie Luise Arana, Jack Bowyer et al.</sub> | Met Office, The Alan Turing Institute |  |
 | 2026-10-26 | ⭐ [Towards operational data-driven regional weather forecasting: extreme-event skill and near-real-time verification with HRRRCast](https://arxiv.org/abs/2610.36186)<br><sub>Daniel Abdi, Isidora Jankov, Vanderlei Vargas et al.</sub> | NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), Colorado State University (incl. CIRA) |  |
@@ -100,6 +101,7 @@ Limited-area and regional ML weather models, convection-permitting and km-scale 
 
 ## Also relevant
 
+- [Resolution-adaptive generative ensemble prediction with integrated global-to-regional modelling on unstructured meshes](https://doi.org/10.1038/s41612-026-01579-2) (2026)
 - [Physics-constrained transformer for medium-to-low altitude wind speed and precipitation short-range forecasting](https://doi.org/10.1016/j.engappai.2026.116680) (2026)
 - [A Data-Driven Tropical Cyclone Model Based on Lagrangian Limited-Area Transformers: Investigating Physical Fidelity through Real-Case Simulations and Idealized Experiments](https://doi.org/10.1175/jas-d-26-0056.1) (2026)
 - [Tropical Cyclone-Following Dataset for Limited-Area Machine Learning Applications](https://arxiv.org/abs/2611.03925) (2026)
