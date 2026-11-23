@@ -1,0 +1,68 @@
+id: doi-10.5194-egusphere-2026-6594
+title: A physically constrained framework for reconstructing high-resolution solar irradiance from accumulated
+  radiation in machine-learning weather forecasts
+authors:
+- Zekai Dai
+- Man Wang
+- Yongwei Wang
+- Yuanjian Yang
+- Xindin Li
+- Xiaoying Jiang
+- Yajun Wang
+- Jiangwei Ji
+date: '2026-11-16'
+year: 2026
+venue_type: other
+ids:
+  doi: 10.5194/egusphere-2026-6594
+  openalex: W7234322764
+links:
+  paper: https://doi.org/10.5194/egusphere-2026-6594
+  pdf: https://egusphere.copernicus.org/preprints/2026/egusphere-2026-6594/egusphere-2026-6594.pdf
+orgs:
+- nuist
+- cma
+topic: downscaling
+topics:
+- applications-impacts
+type: model
+method:
+- diffusion
+- physics-constrained
+timescale:
+- medium
+spatial:
+- regional
+- local
+data:
+- era5
+- nwp-analysis
+- satellite
+- stations
+status: research
+summary: SolarFINE downscales accumulated AIFS and ERA5 radiation to 0.05 degree, 10-min irradiance with
+  conditional diffusion, cutting hourly RMSE 29.9%.
+abstract: Machine-learning weather prediction (MLWP) supports global forecasting, but solar radiation
+  is often provided on coarse grids as multihour accumulations, creating a scale mismatch with local applications.
+  We present SolarFINE, a physically constrained hierarchical framework that converts 0.25° six-hour accumulated
+  radiation and concurrent meteorological states to surface solar irradiance at 0.05° and 10-min resolution.
+  It reconstructs hourly coarse-grid irradiance from solar geometry and meteorological states under a
+  six-hour integral-consistency constraint, then constructs an hourly high-resolution spatial background
+  and generates subhourly variability using conditional diffusion. The temporal stage was trained on ERA5,
+  the high-resolution stage was supervised with a satellite radiation product, and SolarFINE-T was adapted
+  to Artificial Intelligence Forecasting System (AIFS) inputs. Evaluation covered hourly reconstruction,
+  high-resolution spatial structure, and AIFS-driven end-to-end station performance. In controlled ERA5
+  experiments, SolarFINE-T achieved a daytime hourly root-mean-square error (RMSE) of 40.37 W m−2, 29.9
+  % lower than with solar-geometry allocation. At 0.05° and 10-min resolution, SolarFINE-J achieved an
+  RMSE of 132.42 W m−2 and more closely reproduced the spatial power spectrum, spatial variability, and
+  high-irradiance tail of the high-resolution reference product. In the independent station evaluation,
+  RMSE skill scores relative to solar-geometry allocation were positive on forecast days 1–15, rising
+  from 0.084 to 0.174. Improvements were largest and most consistent at intermediate clear-sky index.
+  Adapting to AIFS inputs improved skill, whereas forcing hourly fields to match the original six-hour
+  accumulation reduced it. The results indicate that MLWP-driven solar-irradiance downscaling requires
+  exploiting atmospheric information beyond solar geometry while accounting for upstream forecast errors.
+significance: 4
+score: 26
+highlight: false
+added: '2026-11-23'
+source: weekly

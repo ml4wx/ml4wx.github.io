@@ -5,10 +5,11 @@ ML for climate science questions: causal discovery, teleconnections, pattern det
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/climate-analysis-attribution/)
 
-574 papers (4 ⭐). Newest first.
+575 papers (4 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-11-19 | [The Dynamics of the Southern African Droughts Under ENSO and IOD Impacts in ERA5 and CMIP6](https://doi.org/10.1002/joc.70663)<br><sub>Nkongho Ayuketang Arreyndip, Cedric Pizina, Vincent Kongo et al. · International Journal of Climatology</sub> |  |  |
 | 2026-11-10 | [Towards ML-Based Weather-Dependent Diagnostic Index for Urban Heat Island Intensity in the Arctic Cities](https://doi.org/10.3390/cli14110245)<br><sub>Kamil Nazmutdinov, Mikhail I. Varentsov, Alexander A. Baklanov · Climate</sub> |  |  |
 | 2026-11-09 | [Exploration of the northern stratospheric polar vortex extremes via archetype analysis and tropospheric imprint](https://doi.org/10.21203/rs.3.rs-11367588/v1)<br><sub>Dino Jeričević, Abdel Hannachi, Didier Paolo Monselesan et al. · Research Square</sub> |  |  |
 | 2026-11-06 | [Projected changes in precipitation and temperature over the KKSD river basin using a machine-learning-based selective CMIP6 multimodel ensemble](https://doi.org/10.2166/wcc.2026.649)<br><sub>Gaurav Patel, Subhasish Das, D. Nagesh Kumar · Journal of Water and Climate Change</sub> |  |  |
@@ -586,6 +587,7 @@ ML for climate science questions: causal discovery, teleconnections, pattern det
 
 ## Also relevant
 
+- [China’s carbon neutrality strengthens its photovoltaic potential: Co-benefits for climate action and energy security](https://doi.org/10.1088/1748-9326/aec4f2) (2026)
 - [A hybrid BAG–CARIMA–GPM model for climate-induced shifts in the solar power potential based on PV and CPV technologies](https://doi.org/10.1016/j.nxener.2026.101195) (2026)
 - [Loss of snow persistence during late season drives snow-season shortening in Northeast China under global warming](https://doi.org/10.1038/s43247-026-04156-w) (2026)
 - [Detecting Weather Fronts from Satellite Observations: What Does Reanalysis Add?](https://arxiv.org/abs/2611.08148) (2026)
@@ -646,7 +648,7 @@ ML for climate science questions: causal discovery, teleconnections, pattern det
 - [Investigating LST evolution and heatwave patterns using machine learning in the Beijing-Tianjin-Hebei Urban agglomeration](https://doi.org/10.1016/j.isci.2026.116545) (2026)
 - [Machine-learning-based regionalization and CMIP6 ensemble projections of precipitation extremes across Pakistan](https://doi.org/10.1016/j.ejrh.2026.103675) (2026)
 - [Modelling convective cell occurrence in proximity to cold fronts using extreme gradient boosting](https://arxiv.org/abs/2606.26699) (2026)
-- [Cloud occurrence, properties, and ice crystal effective dimension parameterization from nine years of far-infrared observations on the Antarctic Plateau](https://doi.org/10.5194/egusphere-2026-2806) (2026)
+- [Cloud occurrence, properties, and ice crystal effective dimension parameterization from nine years of far-infrared observations on the Antarctic Plateau](https://doi.org/10.5194/acp-26-16441-2026) (2026)
 - [Diagnosing Optimal Forcing of the Western North Pacific Anomalous Anticyclone in a Deep‐Learning Model](https://doi.org/10.1029/2026gl123658) (2026)
 - [Strong dependence of tropical cyclone initial size on its genesis position](https://doi.org/10.1038/s41612-026-01448-y) (2026)
 - [Forecasting of Macroclimatic Phases Through Stochastic Modeling and Machine Learning: Implications for Regional Hydrological Analysis](https://doi.org/10.3390/w18111358) (2026)
@@ -813,7 +815,7 @@ ML for climate science questions: causal discovery, teleconnections, pattern det
 - [Mesoscale Cellular Convection Detection and Classification Using Convolutional Neural Networks: Insights From Long‐Term Observations at ARM Eastern North Atlantic Site](https://doi.org/10.1029/2024jh000486) (2025)
 - [Regional climate projections using a deep-learning-based model-ranking and downscaling framework: Application to European climate zones](https://doi.org/10.1007/s11356-025-36872-9) (2025)
 - [Artificial intelligence for modeling and understanding extreme weather and climate events](https://doi.org/10.1038/s41467-025-56573-8) (2025)
-- [Multi-Year-to-Decadal Temperature Prediction using a Machine Learning Model-Analog Framework](https://arxiv.org/abs/2502.17583) (2025)
+- [Multi-Year-to-Decadal Temperature Prediction using a Machine Learning Model-Analog Framework](https://doi.org/10.1088/3049-4753/aec452) (2025)
 - [Projected increases in tropical cyclone-induced U.S. electric power outage risk](https://doi.org/10.1088/1748-9326/adad85) (2025)
 - [Climate Change Analysis in Malaysia Using Machine Learning](https://doi.org/10.33093/jiwe.2025.4.1.22) (2025)
 - [Moving beyond post hoc explainable artificial intelligence: a perspective paper on lessons learned from dynamical climate modeling](https://doi.org/10.5194/gmd-18-787-2025) (2025)

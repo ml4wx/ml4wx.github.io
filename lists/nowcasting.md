@@ -5,10 +5,12 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/nowcasting/)
 
-842 papers (8 ⭐). Newest first.
+844 papers (8 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-11-16 | [HM-SimVP: Hyperedge Interaction and Intensity Refinement for Heavy Precipitation Nowcasting](https://doi.org/10.3390/atmos17111129)<br><sub>Yongjie Ma, Xuan Liu, Bingjian Lu et al. · Atmosphere</sub> | Nanjing University of Information Science & Technology (NUIST) |  |
+| 2026-11-16 | [ForeSay: Tell the Future in Words, Branch the Details in Noise for Precipitation Nowcasting](https://arxiv.org/abs/2611.20815)<br><sub>Xudong Ling, Wenjie Luo, Chaorong Li et al.</sub> |  |  |
 | 2026-11-11 | [Physics-constrained transformer for medium-to-low altitude wind speed and precipitation short-range forecasting](https://doi.org/10.1016/j.engappai.2026.116680)<br><sub>Wenwei Zhang, Shu Chen, Chao Wang et al. · Engineering Applications of Artificial Intelligence</sub> |  |  |
 | 2026-10-27 | [STGAF-Net: A Multi-Source Spatiotemporal Gated Adaptive Fusion Network for Wind Speed Nowcasting](https://doi.org/10.3390/rs18213692)<br><sub>Huantong Geng, Meijing Shi, Shaoqiang Ma et al. · Remote Sensing</sub> | Nanjing University of Information Science & Technology (NUIST), China Meteorological Administration (CMA) |  |
 | 2026-10-21 | [Physics-Informed Neural Network Emulation of Convective Storm Initiation over the Sahel: Calibration Bounds and Warning-Lead-Time Equity for Climate Analytics](https://doi.org/10.5281/zenodo.23545314)<br><sub>Omar Abdelaziz Hegazy · Zenodo (CERN European Organization for Nuclear Research)</sub> |  |  |
@@ -179,7 +181,7 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 | 2026-01-01 | [Deep learning-based radar–gauge fusion for 6–18 min surface rainfall nowcasting in Mexico City: an event-based evaluation for urban flood monitoring](https://doi.org/10.2139/ssrn.7518762)<br><sub>Jose Antonio Romero, Fernando Jorge González Villarreal · SSRN Electronic Journal</sub> |  |  |
 | 2026-01-01 | [A Diffusion Transformer-Based Radar Echo Nowcasting Model for Flash-Flood-Prone Mountainous Watersheds](https://doi.org/10.2139/ssrn.7471544)<br><sub>Tao Peng, junchao wang, hedi ma et al. · SSRN Electronic Journal</sub> |  |  |
 | 2026-01-01 | [A Bin-Aware Deep Learning Framework for Precipitation Nowcasting from Disdrometer Spectra](https://doi.org/10.2139/ssrn.7069618)<br><sub>Wenqian Mao, Menggang Kou, Peiyuan Guo et al. · SSRN Electronic Journal</sub> |  |  |
-| 2026-01-01 | [Meteorology-Aware Deep Learning for Severe-Echo Preservation in Convective Radar Nowcasting](https://doi.org/10.1016/j.atmosres.2026.109442)<br><sub>Haofei Cui, Guangxin He, Juanzhen Sun et al. · Atmospheric Research</sub> |  |  |
+| 2026-01-01 | [Meteorology-Aware Deep Learning for Severe-Echo Preservation in Convective Radar Nowcasting](https://doi.org/10.1016/j.atmosres.2026.109442)<br><sub>Haofei Cui, Guangxin He, Juanzhen Sun et al. · Atmospheric Research</sub> | China Meteorological Administration (CMA), Colorado State University (incl. CIRA), NSF NCAR / UCAR, Nanjing University of Information Science & Technology (NUIST) |  |
 | 2026-01-01 | [GarjanCast v1.0: A Multimodal and Multivariate Time-Series Deep Learning Model for Severe Weather Classification & Nowcasting using Remote Observations](https://doi.org/10.2139/ssrn.6508230)<br><sub>Shweta Shukla, Shivangi Mishra, Deepak Mishra · SSRN Electronic Journal</sub> |  |  |
 | 2026-01-01 | [Holowave: A Continuous Spherical Neural Operator For The Efficient Mesh-Free Meteorological Nowcasting](https://doi.org/10.2139/ssrn.6442398)<br><sub>Vladimer Khasia · SSRN Electronic Journal</sub> |  |  |
 | 2026-01-01 | [Turbulence Before Rain: A GNSS Early Warning Signal for Convective Storms](https://doi.org/10.15488/21619)<br><sub>Gaël Kermarrec, Xavier Calbet, Zhiguo Deng · Leibniz Universität Hannover</sub> |  |  |
@@ -214,7 +216,7 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 | 2025-12-26 | [SII-NowNet: A Machine Learning Tool for Nowcasting Convection Initiation and Intensification in the Tropics](https://doi.org/10.1175/aies-d-25-0043.1)<br><sub>Joseph Smith, Cathryn E. Birch, John H. Marsham et al. · Artificial Intelligence for the Earth Systems</sub> | Met Office |  |
 | 2025-12-26 | [LangPrecip: Language-Aware Multimodal Precipitation Nowcasting](https://arxiv.org/abs/2512.22317)<br><sub>Xudong Ling, Chaorong Li, Tianxi Huang et al.</sub> |  |  |
 | 2025-12-24 | [Improving multi-scale short-term precipitation forecasting through frequency domain analysis and attention mechanisms.](https://doi.org/10.1016/j.watres.2025.125276)<br><sub>Shu-Yuan Pan, Wei Zhang, Yufang Shen et al. · Water research</sub> |  |  |
-| 2025-12-24 | [STLDM: Spatio-Temporal Latent Diffusion Model for Precipitation Nowcasting](https://arxiv.org/abs/2512.21118)<br><sub>Shi Quan Foo, Chi-Ho Wong, Zhihan Gao et al.</sub> |  | [code](https://github.com/sqfoo/stldm_official) |
+| 2025-12-24 | [STLDM: Spatio-Temporal Latent Diffusion Model for Precipitation Nowcasting](https://openreview.net/pdf?id=f4oJwXn3qg)<br><sub>Shi Quan Foo, Chi-Ho Wong, Zhihan Gao et al. · Transactions on machine learning research</sub> |  | [code](https://github.com/sqfoo/stldm_official) |
 | 2025-12-23 | [CastDiffuser: Cascaded latent diffusion framework for high-resolution precipitation nowcasting via multi source fusion](https://doi.org/10.1016/j.neucom.2025.132435)<br><sub>Dan Niu, Dan Niu, Daben Niu et al. · Neurocomputing</sub> | China Meteorological Administration (CMA) |  |
 | 2025-12-16 | [Enhancing Machine Learning Models for Nowcasting and Short‐Term Forecasting of Precipitation With a Novel Probability‐Matching Loss Function](https://doi.org/10.1029/2025gl119442)<br><sub>Yuan Cao, Shuaiyi Li, Jie Feng et al. · Geophysical Research Letters</sub> | China Meteorological Administration (CMA), Fudan University (FuXi) |  |
 | 2025-12-15 | [A physics-embedded deep learning method for short-term precipitation prediction using infrared image and atmospheric vertical profile](https://doi.org/10.1117/12.3073979)<br><sub>Jia-Lu Xu, Guo-Rui Jia, Hui-Jie Zhao et al. · Future Sensing Technologies</sub> |  |  |
@@ -854,6 +856,7 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 
 ## Also relevant
 
+- [CorrectCast: Selective Multimodal Context for Scale-Aware Residual Correction in Precipitation Nowcasting](https://arxiv.org/abs/2611.22178) (2026)
 - [Probabilistic high-temporal resolution surface wind nowcasting with deep learning models](https://doi.org/10.1175/aies-d-26-0063.1) (2026)
 - [Evaluation of a Multi-Link Machine Learning Approach for Rainfall Detection Using Satellite Microwave Links](https://arxiv.org/abs/2611.09156) (2026)
 - [Machine-Learning Classification of Next-Day Extreme Precipitation in Guangzhou](https://doi.org/10.54254/2755-2721/2026.38487) (2026)
@@ -1031,7 +1034,7 @@ Forecasts from minutes to about 6 hours, mostly precipitation and convection, le
 - [Xây dựng công cụ ước lượng mưa từ độ phản hồi radar bằng công nghệ AI](https://doi.org/10.36335/vnjhm.2023(747).70-80) (2023)
 - [Photovoltaic power electricity generation nowcasting combining sky camera images and learning supervised algorithms in the Southern Spain](https://doi.org/10.1016/j.renene.2023.01.111) (2023)
 - [Tools for Extracting Spatio-Temporal Patterns in Meteorological Image Sequences: From Feature Engineering to Attention-Based Neural Networks](https://arxiv.org/abs/2210.12310) (2022)
-- [Inference from Real-World Sparse Measurements](https://arxiv.org/abs/2210.11269) (2022)
+- [Inference from Real-World Sparse Measurements](https://openreview.net/pdf?id=y9IDfODRns) (2022)
 - [Machine Learning-Based Fog Nowcasting for Aviation with the Aid of Camera Observations](https://doi.org/10.3390/atmos13101684) (2022)
 - [Comparing the carbon costs and benefits of low-resource solar nowcasting](https://arxiv.org/abs/2210.04554) (2022)
 - [Adaptive Blending of Probabilistic Precipitation Forecasts with Emphasis on Calibration and Temporal Forecast Consistency](https://doi.org/10.1175/aies-d-22-0020.1) (2022)

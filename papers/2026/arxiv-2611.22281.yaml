@@ -1,0 +1,61 @@
+id: arxiv-2611.22281
+title: 'SeasonRainBench: Global Seasonal Precipitation'
+authors:
+- Qiuyan Sun
+- Mengxuan Chen
+- Haoyuan Liang
+- Guowen Li
+- Zhen Huang
+- Jianhao Lin
+- Juepeng Zheng
+- Haohuan Fu
+date: '2026-11-17'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2611.22281'
+  openalex: W7235953177
+links:
+  paper: https://arxiv.org/abs/2611.22281
+  pdf: https://arxiv.org/pdf/2611.22281
+orgs:
+- tsinghua-university
+topic: s2s-seasonal
+topics:
+- benchmarks-data-eval
+type: benchmark
+method:
+- other
+timescale:
+- seasonal
+spatial:
+- global
+data:
+- satellite
+- cmip
+status: research
+summary: SeasonRainBench is a global 1-5 month precipitation benchmark with 310,944 simulated months,
+  plus a simulation-trained model improving CRPS by 3.6% over operational systems.
+abstract: 'Accurate seasonal precipitation forecasts help societies prepare for drought, flooding, and
+  crop failure months in advance. While data-driven methods have made rapid progress in weather and subseasonal
+  forecasting, operational seasonal precipitation prediction still relies on numerical ensemble systems.
+  These systems are computationally expensive and exhibit biases and drift that increase with lead time,
+  motivating more efficient data-driven alternatives. Yet this transition faces three linked challenges:
+  comparing data-driven forecasts with operational ones requires (1) a global benchmark that does not
+  exist, scoring them requires (2) metrics that capture operational priorities beyond anomaly correlation
+  (ACC) and RMSE, and training them must (3) rely on a single, short observational record. To address
+  the first two challenges, we introduce \BenchName, the first such benchmark, covering monthly precipitation
+  forecasts 1--5 months ahead. It pairs global $1^\circ$ satellite precipitation with oceanic and atmospheric
+  predictors, includes seven operational centers, and provides 310,944 simulated months from 52 climate
+  models for training. Beyond standard scores, we introduce two operationally motivated metrics for anomaly
+  strength and monthly rain-belt position. To address the third challenge, we develop \MODEL, which learns
+  from simulations what the record lacks and transfers it to Earth through three modules: SimForced aligns
+  the climate background, SimMemory transfers a history encoder pretrained on simulations, and SimAnalog
+  supplements Earth labels with simulated analog outcomes. Extensive experiments show that \MODEL{} improves
+  ACC, CRPS, anomaly strength, and rain-belt position by 12.0\%, 3.6\%, 2.9\%, and 0.3\% over the strongest
+  operational or data-driven model, opening a path from simulated worlds to Earth system prediction.'
+significance: 5
+score: 30
+highlight: false
+added: '2026-11-23'
+source: weekly

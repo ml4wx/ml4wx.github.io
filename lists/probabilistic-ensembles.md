@@ -5,10 +5,13 @@ ML models that produce ensembles or full forecast distributions: generative mode
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/probabilistic-ensembles/)
 
-106 papers (19 ⭐). Newest first.
+109 papers (19 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-11-19 | [Resolution-adaptive generative ensemble prediction with integrated global-to-regional modelling on unstructured meshes](https://doi.org/10.1038/s41612-026-01579-2)<br><sub>Meixia Ren, Tao Wu, Wei Sun et al. · npj Climate and Atmospheric Science</sub> | Nanjing University of Information Science & Technology (NUIST), China Meteorological Administration (CMA) |  |
+| 2026-11-19 | [Reinforcement-Aligned Probabilistic Weather Forecasting with Discrete Tokens](https://arxiv.org/abs/2611.25570)<br><sub>Jinhan Li, Zhisheng Chen, Yuxuan Li et al.</sub> | Tsinghua University (NowcastNet) | [code](https://github.com/Jinhan-Li/WeatherCraft) |
+| 2026-11-16 | [Run it Back: Autoregression vs. Video Diffusion for Final-Conditioned Weather Trajectories](https://arxiv.org/abs/2611.21521)<br><sub>Jerry Lin, Elizabeth A. Barnes</sub> |  |  |
 | 2026-11-01 | ⭐ [Sonny-ENS: demystifying machine-learning ensemble weather forecasting](https://arxiv.org/abs/2611.01614)<br><sub>Minjong Cheon</sub> | ECMWF |  |
 | 2026-10-30 | [Physics-Informed Stochastic Neural Operators for Climate and Earth-System Prediction](https://doi.org/10.62311/nesx/rp2oct-30102026)<br><sub>Murali Krishna Pasupuleti · International Journal of Academic and Industrial Research Innovations(IJAIRI)</sub> |  |  |
 | 2026-10-28 | ⭐ [Skillful and realistic precipitation forecasting with reinforced diffusion](https://arxiv.org/abs/2610.38775)<br><sub>Ozan Sener, Anand Avati, David Hafner et al.</sub> | ECMWF, NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), Met Office, ETH Zurich, Colorado State University (incl. CIRA) |  |
@@ -56,7 +59,7 @@ ML models that produce ensembles or full forecast distributions: generative mode
 | 2025-11-18 | [Resolving sources of uncertainty in AI weather forecasting](https://arxiv.org/abs/2511.14218)<br><sub>Wenbo Hu, Xinlei Xiong, Shuxun Zhou et al.</sub> | Huawei (Huawei Cloud), Tsinghua University (NowcastNet) |  |
 | 2025-10-30 | [Efficient Generative AI Boosts Probabilistic Forecasting of Sudden Stratospheric Warmings](https://arxiv.org/abs/2510.26376)<br><sub>Ningning Tao, Fei Xie, Baoxiang Pan et al.</sub> |  |  |
 | 2025-10-23 | [CSU-PCAST: A Dual-Branch Transformer Framework for medium-range ensemble Precipitation Forecasting](https://doi.org/10.1038/s41612-026-01475-9)<br><sub>Tianyi Xiong, Haonan Chen, Kelly Mahoney et al. · npj Climate and Atmospheric Science</sub> | Colorado State University (incl. CIRA), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC) |  |
-| 2025-10-21 | [Signature Kernel Scoring Rule: A Spatio-Temporal Diagnostic for Probabilistic Weather Forecasting](https://arxiv.org/abs/2510.19110)<br><sub>Archer Dodson, Ritabrata Dutta</sub> |  |  |
+| 2025-10-21 | [Signature Kernel Scoring Rule: A Spatio-Temporal Diagnostic for Probabilistic Weather Forecasting](https://openreview.net/pdf?id=LOLXpt4E5D)<br><sub>Archer Dodson, Ritabrata Dutta · Transactions on machine learning research</sub> |  |  |
 | 2025-10-20 | [OmniCast: A Masked Latent Diffusion Model for Weather Forecasting Across Time Scales](https://arxiv.org/abs/2510.18707)<br><sub>Tung Nguyen, Tuan Pham, Troy Arcomano et al.</sub> | Argonne National Laboratory, University of California, Los Angeles (UCLA), University of Chicago | [code](https://github.com/tung-nd/omnicast) |
 | 2025-10-15 | [AtmoNeuro: A Hybrid 3D-Spatio-Temporal Neural Framework for High-Resolution Probabilistic Global Weather Forecasting](https://doi.org/10.1109/icscn67106.2025.11308166)<br><sub>Koteswararao B, K. Sailaja · 2025 International Conference on Sustainable Communication Networks and Application (ICSCN)</sub> |  |  |
 | 2025-10-02 | [Fine-Tuning Flow Matching via Maximum Likelihood Estimation of Reconstructions](https://arxiv.org/abs/2510.02081)<br><sub>Zhaoyi Li, Jingtao Ding, Yong Li et al.</sub> | Tsinghua University (NowcastNet) |  |
@@ -118,6 +121,8 @@ ML models that produce ensembles or full forecast distributions: generative mode
 
 ## Also relevant
 
+- [ForeSay: Tell the Future in Words, Branch the Details in Noise for Precipitation Nowcasting](https://arxiv.org/abs/2611.20815) (2026)
+- [WeatherDreamer: Learning a World Model from Multimodal Earth Observations](https://arxiv.org/abs/2611.18393) (2026)
 - [Guiding future global temperature distributions with simulations and observations](https://arxiv.org/abs/2611.10882) (2026)
 - [Leveraging transport theory to advance machine learning for weather forecasting](https://doi.org/10.14288/1.0457075) (2026)
 - [Six-hourly Probabilistic Precipitation Forecasts Created From Hourly Probabilities](https://arxiv.org/abs/2611.03326) (2026)
@@ -245,7 +250,7 @@ ML models that produce ensembles or full forecast distributions: generative mode
 - [Latent-Constrained Conditional VAEs for Augmenting Large-Scale Climate Ensembles](https://arxiv.org/abs/2601.00915) (2026)
 - [Improved rainfall forecasts in daily use over East Africa](https://arxiv.org/abs/2512.24525) (2025)
 - [An Improved Typhoon Track Prediction Method Based on Conditional Diffusion Model](https://doi.org/10.1109/eiecc67963.2025.11409481) (2025)
-- [STLDM: Spatio-Temporal Latent Diffusion Model for Precipitation Nowcasting](https://arxiv.org/abs/2512.21118) (2025)
+- [STLDM: Spatio-Temporal Latent Diffusion Model for Precipitation Nowcasting](https://openreview.net/pdf?id=f4oJwXn3qg) (2025)
 - [Huge Ensembles Heatwave Forecasting over North Africa: Case Study of 3 Low-Likelihood, High-Impact Events.](https://doi.org/10.22541/au.176599423.36287665/v1) (2025)
 - [Bridging Artificial Intelligence and Data Assimilation: The Data-driven Ensemble Forecasting System ClimaX-LETKF](https://doi.org/10.1002/asl2.70062) (2025)
 - [An intercomparison of generative machine learning methods for downscaling precipitation at fine spatial scales](https://arxiv.org/abs/2512.13987) (2025)

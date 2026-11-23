@@ -5,10 +5,11 @@ Language models and agents for weather and climate science: QA, data analysis, m
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/llms-agents/)
 
-92 papers (0 ⭐). Newest first.
+93 papers (0 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-11-14 | [Does a completed simulation run mean a usable urban wind result for AI agents?](https://arxiv.org/abs/2611.19385)<br><sub>Zhongke Qu, Yunwei Zhang, Junwei Su et al.</sub> |  |  |
 | 2026-11-03 | [Can Large Language Models Review the Scientific Literature? A Test Against a 102-Article Benchmark](https://arxiv.org/abs/2611.05459)<br><sub>Abdullah Al Kalbani, David M. Schultz, Alexandra K. Anderson-Frey et al.</sub> | Google Research, University of Washington | [code](https://github.com/abx40/spanish-plume-llm-literature-review) |
 | 2026-11-03 | [False Reassurance in LLM Severe-Weather Guidance: A Replayable Evaluation Against Real NWS Alerts](https://arxiv.org/abs/2611.05290)<br><sub>Kadharmoideen Fadurudeen</sub> |  |  |
 | 2026-11-02 | [Can LLM Agents Improve Imperfect Earth System Model Parameterizations?](https://arxiv.org/abs/2611.03543)<br><sub>Kara D. Lamb</sub> | Columbia University (LEAP, Lamont-Doherty) |  |
@@ -52,7 +53,7 @@ Language models and agents for weather and climate science: QA, data analysis, m
 | 2025-12-01 | [CAIRNS: Balancing Readability and Scientific Accuracy in Climate Adaptation Question Answering](https://arxiv.org/abs/2512.02251)<br><sub>Liangji Kong, Aditya Joshi, Sarvnaz Karimi</sub> |  |  |
 | 2025-11-28 | [Hierarchical AI-Meteorologist: LLM-Agent System for Multi-Scale and Explainable Weather Forecast Reporting](https://arxiv.org/abs/2511.23387)<br><sub>Daniil Sukhorukov, Andrei Zakharov, Nikita Glazkov et al.</sub> |  |  |
 | 2025-11-26 | [EWE: An Agentic Framework for Extreme Weather Analysis](https://arxiv.org/abs/2511.21444)<br><sub>Zhe Jiang, Jiong Wang, Xiaoyu Yue et al.</sub> | Fudan University (FuXi), Shanghai Artificial Intelligence Laboratory |  |
-| 2025-11-25 | [CLIMATEAGENT: Multi-Agent Orchestration for Complex Climate Data Science Workflows](https://arxiv.org/abs/2511.20109)<br><sub>Chenyue Li, Hyeonjae Kim, Wen Deng et al.</sub> |  | [code](https://github.com/Relaxed-System-Lab/ClimateAgent) |
+| 2025-11-25 | [CLIMATEAGENT: Multi-Agent Orchestration for Complex Climate Data Science Workflows](https://openreview.net/forum?id=XLWvXNumGa)<br><sub>Chenyue Li, Hyeonjae Kim, Wen Deng et al. · Transactions on machine learning research</sub> |  | [code](https://github.com/Relaxed-System-Lab/ClimateAgent) |
 | 2025-10-29 | [CLINB: A Climate Intelligence Benchmark for Foundational Models](https://arxiv.org/abs/2511.11597)<br><sub>Michelle Chen Huebscher, Katharine Mach, Aleksandar Stanić et al.</sub> | ETH Zurich, Google DeepMind |  |
 | 2025-10-16 | [From Binary to Bilingual: How the National Weather Service is Using Artificial Intelligence to Develop a Comprehensive Translation Program](https://doi.org/10.1175/aies-d-25-0102.1)<br><sub>Joseph E. Trujillo-Falcon, Monica L. Bozeman, Liam E. Llewellyn et al. · Artificial Intelligence for the Earth Systems</sub> | Colorado State University (incl. CIRA), NOAA (incl. GFDL, PSL, GSL, NCEP/EMC), University of Oklahoma (AI2ES) |  |
 | 2025-10-09 | [Climate Knowledge in Large Language Models](https://doi.org/10.1175/aies-d-26-0017.1)<br><sub>Ivan Kuznetsov, Jacopo Grassi, Dmitrii Pantiukhin et al. · Artificial Intelligence for the Earth Systems</sub> |  |  |

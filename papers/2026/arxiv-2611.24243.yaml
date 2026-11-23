@@ -1,0 +1,44 @@
+id: arxiv-2611.24243
+title: End-to-End Landsat Land Surface Temperature Reconstruction with AlphaEarth Embeddings
+authors:
+- Shengjie Liu
+date: '2026-11-18'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2611.24243'
+  doi: 10.1109/lgrs.2026.3754195
+links:
+  paper: https://arxiv.org/abs/2611.24243
+  pdf: https://arxiv.org/pdf/2611.24243
+orgs:
+- nvidia
+topic: observations-remote-sensing
+type: model
+method:
+- cnn
+spatial:
+- regional
+data:
+- satellite
+- other
+status: research
+summary: U-Net fuses annual temperature cycle, coarse model LST and AlphaEarth embeddings to fill cloud
+  gaps in Landsat LST, reaching 0.78 K MAE.
+abstract: Land surface temperature (LST) data at Landsat's 30 m resolution is important for many applications,
+  but cloud contamination prevents its spatially continuous observations. Here, we propose A$^2$E$^2$,
+  an end-to-end U-Net that integrates annual temperature cycle (ATC), coarse LST from Earth system modeling,
+  and AlphaEarth embeddings for Landsat LST reconstruction. The ATC supplies a physics-guided thermal
+  prior, the coarse LST provides a temporal background, and the U-Net converts the embedding field into
+  day-specific fine-scale correction using observed pixels. Experimental results on four seasonally distributed
+  Landsat 8/9 scenes over New York City in 2022 show that A$^2$E$^2$ achieves 0.78 K mean absolute error
+  and 1.01 K root mean squared error, reducing error by 60.1% relative to baseline method without spatial
+  correction and by 3.7% relative to the same U-Net guided by annual mean spectral reflectance. Sensitivity
+  analysis shows stable performance regardless of distance to clear pixels and percentage of blocked pixels.
+  Independent validation with ECOSTRESS LST shows that Earth foundation model embeddings have better performance
+  than annual mean spectral bands for LST reconstruction.
+significance: 2
+score: 43
+highlight: false
+added: '2026-11-23'
+source: weekly

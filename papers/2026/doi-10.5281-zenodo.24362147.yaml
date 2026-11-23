@@ -1,0 +1,48 @@
+id: doi-10.5281-zenodo.24362147
+title: Explainable Machine Learning for Rare Fog Prediction at Ivato Airport
+authors:
+- Valisoa Nantenaina Iangotiana Andriafalimanana
+date: '2026-11-19'
+year: 2026
+venue: Zenodo (CERN European Organization for Nuclear Research)
+venue_type: preprint
+ids:
+  doi: 10.5281/zenodo.24362147
+  openalex: W7236679198
+links:
+  paper: https://doi.org/10.5281/zenodo.24362147
+topic: local-forecasting
+topics:
+- extremes-hazards
+type: application
+method:
+- classical-ml
+timescale:
+- nowcast
+spatial:
+- local
+data:
+- stations
+status: research
+summary: XGBoost on METAR observations predicts airport fog three hours ahead with CSI 0.17 against 0.09
+  for persistence; SHAP shows pre-dawn humidity drivers.
+abstract: 'Fog is a serious hazard for aviation, as it reduces visibility and causes delays and diversions
+  at airports. At Ivato International Airport (FMMI), Madagascar, fog forecasting relies on forecaster
+  experience and general Numerical Weather Prediction (NWP), and fog remains difficult to predict. This
+  study aims to predict fog three hours ahead using only routine Meteorological Aerodrome Report (METAR)
+  observations. The dataset contains 96,067 hourly reports from 2015 to 2025. Fog was observed in only
+  0.4% of them. Four methods were compared: a persistence baseline, Logistic Regression, Random Forest,
+  and XGBoost. The years 2015 to 2021 were used for training, 2022 for selecting the decision thresholds,
+  and 2023 to 2025 for testing. XGBoost performed best, with a Critical Success Index (CSI) of 0.17 compared
+  with 0.09 for persistence, a Probability of Detection (POD) of 0.53 and a False Alarm Ratio (FAR) of
+  0.80. It also detected 46% of fog onsets, when no fog was present at forecast time but fog formed three
+  hours later. SHapley Additive exPlanations (SHAP) analysis showed that the model relies mostly on pre-dawn
+  hours, high humidity, low temperature and winter months, which are the conditions in which radiation
+  fog forms. Because the method uses only free public METAR data, it could be applied at other airports
+  with limited resources.'
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-11-23'
+source: weekly

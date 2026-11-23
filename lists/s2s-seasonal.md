@@ -5,11 +5,13 @@ Forecasts from 2 weeks to about a year: sub-seasonal, seasonal and ENSO/MJO pred
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/s2s-seasonal/)
 
-521 papers (19 ⭐). Newest first.
+523 papers (19 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-11-17 | [SeasonRainBench: Global Seasonal Precipitation](https://arxiv.org/abs/2611.22281)<br><sub>Qiuyan Sun, Mengxuan Chen, Haoyuan Liang et al.</sub> | Tsinghua University (NowcastNet) |  |
 | 2026-11-13 | [Extending weather forecasts from hours to weeks with teleconnection-aware graph neural networks](https://doi.org/10.21203/rs.3.rs-11430274/v1)<br><sub>Shan Zhao, Zhitiong Xiong, Xiao Xiang Zhu · Research Square</sub> | Technical University of Munich (TUM) |  |
+| 2026-11-13 | [Tracing Uncertainties of Extreme El Niño Prediction to Mesoscale Ocean Currents](https://arxiv.org/abs/2611.17854)<br><sub>Bo Qin, Zeyun Yang, Qiaofei Xue et al.</sub> |  |  |
 | 2026-11-01 | [Subseasonal prediction of tropical cyclone activity in the machine-learning model FuXi-S2S](https://doi.org/10.1016/j.atmosres.2026.109427)<br><sub>Bowen Zhao, Rui Jin, Hui Yu et al. · Atmospheric Research</sub> | Fudan University (FuXi), China Meteorological Administration (CMA) |  |
 | 2026-10-27 | [Seasonal Prediction of Summer Accumulated Cyclone Energy over the Western North Pacific Using Causality-Informed Predictor Selection and a Convolutional Neural Network](https://doi.org/10.21203/rs.3.rs-11313293/v1)<br><sub>Chuhan Zheng, Li Tao, Guoqing Dong · Research Square</sub> | Nanjing University of Information Science & Technology (NUIST) |  |
 | 2026-10-23 | [Leveraging Machine Learning and Climate Phase Analysis to Enhance Seasonal Forecasts of Cold Extremes](https://doi.org/10.1088/2515-7620/aeb8ea)<br><sub>Maxwell R.W. Beal, Upmanu Lall, Paul Block · Environmental Research Communications</sub> |  |  |
@@ -118,7 +120,7 @@ Forecasts from 2 weeks to about a year: sub-seasonal, seasonal and ENSO/MJO pred
 | 2026-01-01 | [Applications of Machine Learning for Evaluating Downward-Coupled Stratosphere-Troposphere Interactions and Subseasonal Forecasts of Opportunity](https://scholarsarchive.library.albany.edu/etd/385)<br><sub>Elena M. Fernández · Scholars Archive - University at Albany (University at Albany, State University of New York)</sub> |  |  |
 | 2026-01-01 | [Predicting Rainfall Variability and Cereal Crop Yields Using Climate Oscillation Indices and Machine Learning in Northwestern Nigeria](https://doi.org/10.47514/kjg.2026.08.01.033)<br><sub>Isah Abdullahi Tanko, Tayo Iyanda Yahaya, Aishetu Abdulkadir et al. · Kaduna Journal of Geography</sub> |  |  |
 | 2026-01-01 | [The AI Weather Quest: spotlighting the best of machine learning sub-seasonal prediction](https://doi.org/10.21957/0fddea4898)<br><sub>Joshua Talib, Olga Loegel, Frédéric Vitart et al. · European Centre for Medium-Range Weather Forecasts</sub> |  |  |
-| 2026-01-01 | [Integrating Swin Transformer and LSTM with Coupled Model Forecasts for 3D Temperature Prediction in the Tropical Pacific: Implications for ENSO](https://doi.org/10.2139/ssrn.7085294)<br><sub>Chunyang Song, Xuefeng Zhang, Xingrong Chen et al. · SSRN Electronic Journal</sub> |  |  |
+| 2026-01-01 | [Integrating Swin Transformer and LSTM with Coupled Model Forecasts for 3D Temperature Prediction in the Tropical Pacific: Implications for ENSO](https://doi.org/10.1016/j.jmarsys.2026.104343)<br><sub>Chunyang Song, Xuefeng Zhang, Xingrong Chen et al. · Journal of Marine Systems</sub> |  |  |
 | 2026-01-01 | [A Patch-Aware Transformer with Efficient Probabilistic Mechanism for Improving ENSO’s Prediction](https://doi.org/10.2139/ssrn.6442880)<br><sub>Chundi Hu, Chunhui Xu, Guanchao Tong · SSRN Electronic Journal</sub> |  |  |
 | 2026-01-01 | [Spatio-Temporal Dynamic Hypergraph Neural Network for Large-Scale Long-Term Online Precipitation Forecasting](https://doi.org/10.1109/tgrs.2026.3673143)<br><sub>Zhenghong Wang, Wei Xiao Huang, Zhan Lin et al. · IEEE Transactions on Geoscience and Remote Sensing</sub> |  |  |
 | 2026-01-01 | [Machine learning-based 1 year-lead summer precipitation prediction over the DPRK using regionally optimized spatial-contrast indices](https://doi.org/10.1039/d6ea00029k)<br><sub>Yong‐Sik Ham, Hyon Su Ri, Kyong-Bok Sonu et al. · Environmental Science Atmospheres</sub> |  |  |
@@ -222,7 +224,7 @@ Forecasts from 2 weeks to about a year: sub-seasonal, seasonal and ENSO/MJO pred
 | 2025-02-28 | [Assessment of machine learning-based approaches to improve sub-seasonal to seasonal forecasting of precipitation in Senegal](https://doi.org/10.5194/egusphere-2024-4040)<br><sub>Dioumacor Faye, Felipe Marques de Andrade, Roberto Suárez-Moreno et al.</sub> | Forschungszentrum Jülich / Jülich Supercomputing Centre, University of Reading |  |
 | 2025-02-27 | [CirT: Global Subseasonal-to-Seasonal Forecasting with Geometry-inspired Transformer](https://arxiv.org/abs/2502.19750)<br><sub>Yang Liu, Zinan Zheng, Jiashun Cheng et al.</sub> | Alibaba (DAMO Academy) |  |
 | 2025-02-26 | [An Enhanced Neural Network Forecasting System for July Precipitation over the Middle-Lower Reaches of the Yangtze River](https://doi.org/10.3390/atmos16030272)<br><sub>Wen-Yang Liu, Xiangjun Shi · Atmosphere</sub> | Nanjing University of Information Science & Technology (NUIST) |  |
-| 2025-02-24 | [Multi-Year-to-Decadal Temperature Prediction using a Machine Learning Model-Analog Framework](https://arxiv.org/abs/2502.17583)<br><sub>M. A. Fernandez, Elizabeth A. Barnes</sub> | Colorado State University (incl. CIRA) |  |
+| 2025-02-24 | [Multi-Year-to-Decadal Temperature Prediction using a Machine Learning Model-Analog Framework](https://doi.org/10.1088/3049-4753/aec452)<br><sub>M. A. Fernandez, Elizabeth A. Barnes · Machine Learning Earth</sub> | Colorado State University (incl. CIRA) |  |
 | 2025-02-13 | [Multimodal Deep Learning for Two-Year ENSO Forecast](https://doi.org/10.1007/s11269-025-04128-3)<br><sub>Mohammad Naisipour, Iraj Saeedpanah, Arash Adib · Water Resources Management</sub> |  |  |
 | 2025-02-06 | [PINT: Physics-Informed Neural Time Series Models with Applications to Long-term Inference on WeatherBench 2m-Temperature Data](https://arxiv.org/abs/2502.04018)<br><sub>Keonvin Park, Jisu Kim, Jaemin Seo</sub> |  |  |
 | 2025-02-01 | [ENSO-Former: spatiotemporal fusion network based on multivariate and dual-branch transformer for ENSO prediction](https://doi.org/10.1007/s00382-024-07566-8)<br><sub>Wei Fang, Yu Sha · Climate Dynamics</sub> | China Meteorological Administration (CMA), Nanjing University of Information Science & Technology (NUIST) |  |
@@ -535,7 +537,7 @@ Forecasts from 2 weeks to about a year: sub-seasonal, seasonal and ENSO/MJO pred
 
 - [Exploration of the northern stratospheric polar vortex extremes via archetype analysis and tropospheric imprint](https://doi.org/10.21203/rs.3.rs-11367588/v1) (2026)
 - [Combined climate-mode regimes and South American precipitation anomalies: statistical inference and interpretable machine learning](https://doi.org/10.1007/s00382-026-08447-y) (2026)
-- [Seasonal hydropower forecast framework using a combination of deep learning and physics-based methods](https://doi.org/10.31223/x50b98) (2026)
+- [Seasonal hydropower forecast framework using a combination of deep learning and physics-based methods](https://doi.org/10.1029/2026wr044598) (2026)
 - [Teleconnection-aware machine learning calibration of multi-model seasonal forecasts for drought prediction over India](https://doi.org/10.1007/s00382-026-08419-2) (2026)
 - [A Machine Learning Framework for Objective Definition and Projection of Meteorological Seasons: An Application to the Indian Subcontinent](https://doi.org/10.1029/2025jd045869) (2026)
 - [Sensitivity Fidelity Reveals Physical Dependencies Beyond Forecast Accuracy in Deep-Learning Earth-System Models](https://arxiv.org/abs/2610.15540) (2026)

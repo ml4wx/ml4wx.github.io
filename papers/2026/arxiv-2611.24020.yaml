@@ -1,0 +1,60 @@
+id: arxiv-2611.24020
+title: Enabling joint chemical and meteorological data assimilation with an atmospheric foundation model
+authors:
+- Eliot J. Kim
+- Eric J. Mei
+- Peter D. Ivatt
+- Lee T. Murray
+- Alexander J. Turner
+date: '2026-11-18'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2611.24020'
+links:
+  paper: https://arxiv.org/abs/2611.24020
+  pdf: https://arxiv.org/pdf/2611.24020
+orgs:
+- nvidia
+- ecmwf
+- university-of-washington
+topic: data-assimilation
+topics:
+- foundation-models
+type: model
+method:
+- transformer
+timescale:
+- seasonal
+spatial:
+- global
+data:
+- era5
+- satellite
+status: research
+summary: AuroraChem fine-tunes Aurora to jointly simulate meteorology and OH-relevant chemistry, showing
+  chemical and meteorological observations can constrain each other in idealized data assimilation.
+abstract: The hydroxyl radical (OH) is the main oxidant in the troposphere and accounts for 88% of the
+  methane sink, yet its abundance and trends remain poorly constrained. Satellites observe many of the
+  chemical and meteorological drivers of OH, but assimilating both requires a model that represents chemistry
+  and meteorology together. Existing chemistry-climate models are too expensive for joint data assimilation.
+  Here, we present AuroraChem, a fine-tuned version of the Aurora atmospheric foundation model that jointly
+  simulates meteorology and the GEOS-Chem chemical fields needed to constrain OH. A one-year AuroraChem
+  rollout takes 12 minutes on one GPU. Free rollouts remain stable for one year but do not fully capture
+  seasonal cycles. Using idealized data assimilation, we find that chemical observations can constrain
+  the meteorological state and meteorological observations can constrain the chemical state. Inserting
+  only the chemical fields raises the annual mean spatial correlation of 500 hPa temperature from 0.89
+  to 0.92 and recovers the moisture and circulation pattern of the Indian summer monsoon. Inserting only
+  the meteorological fields raises the 500 hPa OH correlation from 0.89 to 0.93, close to the 0.94 from
+  inserting the chemical fields themselves, and recovers the OH seasonal cycle. Inserting only NO2 columns
+  sampled at TROPOMI pixels gives an OH correlation of 0.93. These relationships likely reflect learned
+  covariances rather than physical coupling, and covariances are what data assimilation uses to let an
+  observation of one variable update the others. AuroraChem therefore provides a new pathway to joint
+  chemical and meteorological data assimilation.
+significance: 6
+score: 59
+highlight: true
+highlight_reason: Fine-tunes Aurora for joint chemistry-meteorology simulation and idealized DA for OH;
+  promising direction for coupled chemical data assimilation.
+added: '2026-11-23'
+source: weekly

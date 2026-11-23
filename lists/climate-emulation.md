@@ -5,10 +5,11 @@ Emulators of climate models and long stable rollouts (decades to centuries), sce
 
 [← All topics](../README.md) · [Search this topic on the site](https://ml4wx.github.io/topics/climate-emulation/)
 
-246 papers (13 ⭐). Newest first.
+247 papers (14 ⭐). Newest first.
 
 | Date | Paper | From | Code |
 |---|---|---|:-:|
+| 2026-11-16 | ⭐ [FASTMIP-CMIP7: A Coordinated Multi-Emulator Ensemble for Rapid, Spatially Resolved Climate Projections under CMIP7 Scenarios](https://doi.org/10.5194/egusphere-2026-6328)<br><sub>Sarah Schöngart, Marit Sandstad, Christopher B. Womack et al.</sub> | Met Office, ETH Zurich, Massachusetts Institute of Technology (MIT), University of Washington |  |
 | 2026-11-09 | [The calibration deficit: a challenge for Earth system simulation and emulation](https://doi.org/10.5194/egusphere-2026-6437)<br><sub>Peter M. Cox, Dale R. Durran, Veronika Eyring et al.</sub> | California Institute of Technology (Caltech), University of Washington |  |
 | 2026-11-08 | ⭐ [Rescene-ESM: an Earth system model built around a frozen AI weather model](https://arxiv.org/abs/2611.11066)<br><sub>Minjong Cheon, Kaoru Kakinuma</sub> | NVIDIA |  |
 | 2026-11-07 | [Guiding future global temperature distributions with simulations and observations](https://arxiv.org/abs/2611.10882)<br><sub>Francesco Immorlano, ELIJAH TAVARES, Felix Draxler et al.</sub> | Columbia University (LEAP, Lamont-Doherty) |  |
@@ -89,7 +90,7 @@ Emulators of climate models and long stable rollouts (decades to centuries), sce
 | 2026-01-01 | [Latent-Constrained Conditional VAEs for Augmenting Large-Scale Climate Ensembles](https://arxiv.org/abs/2601.00915)<br><sub>Jacquelyn Shelton, Przemyslaw Polewski, Alexander Robel et al.</sub> |  |  |
 | 2025-12-23 | [Quantum Bayesian Optimization for the Automatic Tuning of Lorenz-96 as a Surrogate Climate Model](https://arxiv.org/abs/2512.20437)<br><sub>Paul J. Christiansen, Daniel Ohl de Mello, Cedric Brügmann et al.</sub> |  |  |
 | 2025-12-18 | [An emulator-based modelling framework for studying astronomical controls on ocean anoxia with an application to the Devonian](https://doi.org/10.5194/gmd-18-10095-2025)<br><sub>Loïc Sablon, Pierre Maffre, Yves Goddéris et al. · Geoscientific model development</sub> |  |  |
-| 2025-12-17 | [Using a Gaussian Process Emulator to approximate the climate response patterns to greenhouse gas and aerosol forcings](https://doi.org/10.5194/egusphere-2025-6046)<br><sub>Laura Mansfield, Peer Johannes Nowack, Edmund Ryan et al.</sub> | Karlsruhe Institute of Technology (KIT), University of Oxford, University of Reading |  |
+| 2025-12-17 | [Using a Gaussian Process Emulator to approximate the climate response patterns to greenhouse gas and aerosol forcings](https://doi.org/10.5194/gmd-19-11001-2026)<br><sub>Laura Mansfield, Peer Johannes Nowack, Edmund Ryan et al. · Geoscientific model development</sub> | Karlsruhe Institute of Technology (KIT), University of Oxford, University of Reading |  |
 | 2025-12-04 | [Extending Integrated Assessment Model scenarios until 2150 using an emulation Framework](https://doi.org/10.1088/2515-7620/ae661b)<br><sub>Weiwei Xiong, Katsumasa Tanaka · Environmental Research Communications</sub> |  |  |
 | 2025-12-03 | [Meta-modelling paths of simple climate models using neural networks and dirichlet polynomials: an application to DICE](https://doi.org/10.1007/s13385-025-00438-3)<br><sub>Emmanuel Gobet A, Yushan Liu, Gauthier Vermandel · European Actuarial Journal</sub> |  |  |
 | 2025-12-02 | [Lessons for multi-model ensemble design drawn from emulator experiments: application to a large ensemble for 2100 sea level contributions of the Greenland ice sheet](https://doi.org/10.5194/tc-19-6421-2025)<br><sub>Jérémy Rohmer, Heiko Goelzer, Tamsin Edwards et al. · The cryosphere</sub> |  |  |
@@ -258,6 +259,7 @@ Emulators of climate models and long stable rollouts (decades to centuries), sce
 
 ## Also relevant
 
+- [Multivariate deep-learning based regional climate model emulators and the impact of temporal awareness](https://doi.org/10.1175/aies-d-26-0008.1) (2026)
 - [How Much Lossy Compression of Training Data Can An Atmosphere Emulator Tolerate?](https://doi.org/10.5194/egusphere-2026-6708) (2026)
 - [Towards Rapid and Data-Efficient Urban Climate Assessment using Machine Learning Frameworks](https://doi.org/10.21203/rs.3.rs-11241479/v1) (2026)
 - [Certified OOD Detection for Artificial Intelligence Climate Emulators Under Unseen Forcing Scenarios: Score Bounds and Seasonal Forecast Safety](https://doi.org/10.5281/zenodo.23545447) (2026)
@@ -348,7 +350,7 @@ Emulators of climate models and long stable rollouts (decades to centuries), sce
 - [Artificial Intelligence in Climate Science: A State-of-the-Art Review (2020–2025)](https://doi.org/10.31223/x5m73j) (2025)
 - [Optimus Climas - Optimising the consideration of tipping points in regionalised Climate Simulations with Deep Learning](https://doi.org/10.21203/rs.3.rs-7041645/v1) (2025)
 - [Deep Learning Atmospheric Models Reliably Simulate Out-of-Sample Land Heat and Cold Wave Frequencies](https://doi.org/10.1029/2025gl117990) (2025)
-- [Generate the Forest before the Trees -- A Hierarchical Diffusion model for Climate Downscaling](https://arxiv.org/abs/2506.19391) (2025)
+- [Generate the Forest before the Trees -- A Hierarchical Diffusion model for Climate Downscaling](https://openreview.net/forum?id=OhTYgFpMU2) (2025)
 - [Probabilistic Data Assimilation for Ensemble Distribution Projections With Generative Machine Learning: A Lorenz ’96 Proof‐of‐Concept](https://doi.org/10.1029/2024gl112523) (2025)
 - [Vision Transformers for Multi-Variable Climate Downscaling: Emulating Regional Climate Models with a Shared Encoder and Multi-Decoder Architecture](https://doi.org/10.1007/s00521-026-12066-3) (2025)
 - [AtmosMJ: Revisiting Gating Mechanism for AI Weather Forecasting Beyond the Year Scale](https://arxiv.org/abs/2506.09733) (2025)

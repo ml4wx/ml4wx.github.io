@@ -1,0 +1,59 @@
+id: arxiv-2611.25570
+title: Reinforcement-Aligned Probabilistic Weather Forecasting with Discrete Tokens
+authors:
+- Jinhan Li
+- Zhisheng Chen
+- Yuxuan Li
+- Yuan Gao
+- Fan Xu
+- Hao Wu
+- Jinlong Du
+- Kun Wang
+date: '2026-11-19'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2611.25570'
+  openalex: W7237148160
+links:
+  paper: https://arxiv.org/abs/2611.25570
+  pdf: https://arxiv.org/pdf/2611.25570
+  code: https://github.com/Jinhan-Li/WeatherCraft
+orgs:
+- tsinghua-university
+topic: probabilistic-ensembles
+topics:
+- global-medium-range
+type: model
+method:
+- transformer
+- reinforcement-learning
+timescale:
+- medium
+spatial:
+- global
+data:
+- era5
+status: research
+summary: Discrete-token transformer generates ensembles and uses GRPO reward alignment; cuts day-15 RMSE
+  17.6% and runs about 18 times faster than GenCast.
+abstract: Global medium-range weather forecasting must not only generate ensembles efficiently to characterize
+  uncertainty in future states, but also serve downstream applications such as extreme-event warnings
+  and cross-sphere coupled simulations. We introduce WeatherCraft, a framework that unifies probabilistic
+  generation and reinforcement learning alignment through discrete weather tokens, bringing the GPT-style
+  pretraining--post-training paradigm to global medium-range weather forecasting. A multiscale tokenizer
+  represents atmospheric states as a coarse-to-fine token hierarchy, while a Transformer models causal
+  dependencies across time and scale and predicts tokens within each scale in parallel. Direct sampling
+  generates diverse ensembles, and exact token log-probabilities enable Group Relative Policy Optimization
+  (GRPO) to maximize downstream task rewards without differentiating through evaluators or coupled models.
+  On the ERA5 benchmark, WeatherCraft's eight-member ensemble mean reduces day-15 normalized RMSE by 17.6%
+  relative to the strongest evaluated deterministic baseline and, with KV caching, achieves an approximately
+  $18\times$ inference speedup over GenCast. Direct fair-CRPS adaptation improves ensemble probabilistic
+  skill, while reward-based post-training improves forecasts of persistent land temperature extremes and
+  coupled ocean heat extremes. This work establishes discrete autoregressive modeling as a general foundation
+  for scalable, task-alignable Earth system foundation models.
+significance: 6
+score: 44
+highlight: false
+added: '2026-11-23'
+source: weekly

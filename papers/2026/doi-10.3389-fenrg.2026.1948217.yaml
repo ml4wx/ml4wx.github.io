@@ -1,0 +1,56 @@
+id: doi-10.3389-fenrg.2026.1948217
+title: Temporally partitioned wind power forecasting with validation-calibrated residual diagnostics for
+  PHM-oriented interpretation
+authors:
+- Dionysios Alexopoulos
+- Christos Emexidis
+- Kyriaki Saiti
+date: '2026-11-17'
+year: 2026
+venue: Frontiers in Energy Research
+venue_type: journal
+ids:
+  doi: 10.3389/fenrg.2026.1948217
+  openalex: W7235245755
+links:
+  paper: https://doi.org/10.3389/fenrg.2026.1948217
+  pdf: https://www.frontiersin.org/journals/energy-research/articles/10.3389/fenrg.2026.1948217/pdf
+topic: applications-impacts
+type: evaluation
+method:
+- classical-ml
+- rnn
+- transformer
+timescale:
+- short
+data:
+- nwp-analysis
+- other
+status: research
+summary: Benchmarks XGBoost, LSTM, GRU, TCN and PatchTST on synthetic wind-power data with day-ahead NWP
+  covariates; XGBoost gives the lowest test MAE of 0.0657.
+abstract: Introduction Accurate wind-power forecasting is critical for the reliable integration of renewable
+  energy into power grids, but reproducible evaluation requires explicit temporal partitioning and clearly
+  defined feature-availability assumptions. This study presents a temporally partitioned, forecasting-first
+  workflow utilizing the DaKS/Kassel synthetic wind-power dataset. Methods The canonical tabular benchmark
+  establishes a target-time-aligned baseline by combining DaKS day-ahead numerical weather prediction
+  covariates with recent observed-power history constructed relative to target valid time. Preprocessing
+  parameters are fitted on the training partition, model and warning-threshold selection use validation
+  data, and the test partition is reserved for final evaluation. For comparison, controlled subset experiments
+  on four parks evaluated several advanced neural and sequential architectures, including a multilayer
+  perceptron (MLP), a gated recurrent unit (GRU), a long short-term memory (LSTM) network, a temporal
+  convolutional network (TCN), and PatchTST-Lite (Patch Time Series Transformer). Furthermore, we developed
+  a validation-calibrated residual diagnostic layer that analyzes prediction errors across spatial, temporal,
+  and operating-regime dimensions. Results Within the canonical comparable full-dataset benchmark, XGBoost
+  achieved the lowest test mean absolute error (MAE) of 0.0657, a root mean squared error (RMSE) of 0.1134,
+  and a coefficient of determination (R²) of 0.860. The strong-model diagnostic run achieved a test MAE
+  of 0.0662 while retaining structured candidate warning episodes. Discussion These residual patterns
+  are interpreted as structured deviations in forecast behavior rather than as confirmed physical equipment
+  faults. This framework provides a reproducible forecasting and residual-screening foundation for future
+  research in wind-energy digital twins and prognostics and health management (PHM).
+significance: 2
+cited_by: 0
+score: 8
+highlight: false
+added: '2026-11-23'
+source: weekly

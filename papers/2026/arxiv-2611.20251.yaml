@@ -1,0 +1,57 @@
+id: arxiv-2611.20251
+title: Improving Tropical Cyclone Forecasts through Objective Ensemble Track-Error Reduction
+authors:
+- Shuochen Wang
+- Mark S. Allen
+- Auroop R. Ganguly
+date: '2026-11-15'
+year: 2026
+venue_type: preprint
+ids:
+  arxiv: '2611.20251'
+  openalex: W7235177467
+links:
+  paper: https://arxiv.org/abs/2611.20251
+  pdf: https://arxiv.org/pdf/2611.20251
+orgs:
+- ecmwf
+- noaa
+- met-office
+topic: extremes-hazards
+topics:
+- post-processing
+type: evaluation
+method:
+- classical-ml
+timescale:
+- medium
+spatial:
+- global
+data:
+- nwp-analysis
+status: research
+summary: Comparing six objective ensemble-trimming and ML methods on 138 tropical cyclones, dynamic trimming
+  reduces track error 8-16%, while gradient boosting gives the largest medium-range gain.
+abstract: Accurate tropical cyclone (TC) track guidance is essential for warnings, evacuation planning,
+  and risk communication, but outlying members and distinct track scenarios can degrade raw ensemble forecasts.
+  Statistical and machine-learning (ML) methods proposed to improve ensemble guidance are difficult to
+  compare because previous studies often use different forecast systems, basins, periods, and verification
+  methods. Using a common verification framework, this study compares six objective methods (four statistical
+  trimming and two ML methods) with the full ensemble mean for 138 TCs forecast by GEFS, MOGREPS-G, and
+  IFS during 2016-2024. Dynamic trimming (DT) is the most consistent statistical method, reducing mean
+  total track error by 8.0%, 13.4%, and 16.1% at short, medium, and long ranges. Its largest benefits
+  occur in high-spread cases, where it can reach 70% of the low-error bound. Short-lead-error trimming
+  (SLET) provides useful delayed guidance after early observations become available, but its improvement
+  decreases with lead time. Regression-mixture clustering (RC) shows potential in low-spread cases and
+  provides the largest improvement over the control run. The gradient boosted tree (GBT) produces the
+  largest medium-range improvement and exceeds the theoretical trimming bound, suggesting strong potential,
+  particularly when the observed track is poorly represented by the ensemble family. However, its 12.8%
+  short-range degradation and gains concentrated in a small subset of cases indicate overcorrection when
+  the ensemble mean is already accurate, highlighting the need for additional constraints. These results
+  provide a consistent basis for using objective error-reduction methods to strengthen TC track guidance
+  for operational decision-making.
+significance: 5
+score: 55
+highlight: false
+added: '2026-11-23'
+source: weekly
